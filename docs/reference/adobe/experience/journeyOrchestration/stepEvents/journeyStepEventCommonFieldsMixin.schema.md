@@ -64,6 +64,9 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/processingTime`| integer | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/reactionActionID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/reactionChannel`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reentrance`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/stepID`| string | Optional |
@@ -689,6 +692,69 @@ Total time in milliseconds from the instance step entrance to the end of the pro
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/reactionActionID
+##### reactionActionID
+
+Message action ID referenced by the reaction in a journey. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/reactionActionID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/reactionActionID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/reactionChannel
+##### reactionChannel
+
+Message channel referenced by the reaction (email, push) in a journey. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/reactionChannel`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/reactionChannel Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType
+##### reactionInteractionType
+
+Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. 
+
+`https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType Type
+
+
+`string`
 
 
 

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-privacy
 ```
 
-Experience event privacy schema captures consent information on the hit.
+Use for consent information such as consent format and consent to personal data.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

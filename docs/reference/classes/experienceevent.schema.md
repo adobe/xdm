@@ -106,7 +106,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-23456782",
+  "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
@@ -117,16 +117,77 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       {
         "xdm:id": "92312748749128"
       }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/9": [
+      {
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+      }
     ]
   },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+  },
   "xdm:environment": {
-    "xdm:type": "application",
-    "xdm:operatingSystem": "iOS",
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
     "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "mobile_lte"
+    "xdm:connectionType": "cable"
+  },
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
+    }
   },
   "xdm:placeContext": {
-    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
       "@id": "https://data.adobe.io/entities/geo/tokyo",
       "xdm:countryCode": "JP",
@@ -135,131 +196,72 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       "xdm:postalCode": "141-0032",
       "schema:latitude": 35.6185,
       "schema:longitude": 139.73237
-    },
-    "xdm:POIinteraction": {
-      "xdm:poiEntries": {
-        "xdm:value": 1
-      },
-      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-      "xdm:name": "Acme Hotel Tokyo Lobby",
-      "xdm:category": "Resorts",
-      "xdm:type": "Hotel",
-      "xdm:locatingType": "beacon",
-      "xdm:beaconInteractionDetails": {
-        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
-        "xdm:beaconMajor": 300,
-        "xdm:beaconMinor": 34
-      }
-    },
-    "xdm:activePOIs": [
-      {
-        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
-        "xdm:name": "Acme Hotel Tokyo",
-        "xdm:category": "Resorts",
-        "xdm:type": "Hotel",
-        "xdm:locatingType": "beacon",
-        "xdm:beaconInteractionDetails": {
-          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
-          "xdm:beaconMajor": 100,
-          "xdm:beaconMinor": 23
-        }
-      },
-      {
-        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-        "xdm:name": "Acme Hotel Tokyo Lobby",
-        "xdm:category": "Resorts",
-        "xdm:type": "Hotel",
-        "xdm:locatingType": "beacon",
-        "xdm:beaconInteractionDetails": {
-          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
-          "xdm:beaconMajor": 300,
-          "xdm:beaconMinor": 34
-        }
-      },
-      {
-        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-        "xdm:name": "Tokyo City",
-        "xdm:locatingType": "gps",
-        "xdm:geoInteractionDetails": {
-          "xdm:distanceToCenter": 320,
-          "xdm:accuracy": 30,
-          "xdm:geoShape": {
-            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
-            "schema:circle": {
-              "@id": "https://data.adobe.io/entities/geo/circleid123",
-              "schema:description": "Tokyo Metro",
-              "schema:coordinates": {
-                "@id": "https://data.adobe.io/entities/geo/111",
-                "schema:description": "Tokyo",
-                "schema:latitude": 37.3308953,
-                "schema:longitude": -121.8939894,
-                "schema:elevation": 31.0896
-              },
-              "schema:radius": 80000
-            }
-          }
-        }
-      }
-    ],
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
         "xdm:value": 1
       }
     },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
     }
-  }
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
+  },
+  "xdm:profileStitch": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identityMap": {
+        "ECID": [
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+          }
+        ]
+      }
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
 }
 ```
 
@@ -471,167 +473,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/9": [
-      {
-        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-      }
-    ]
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
-    }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  },
-  "xdm:profileStitch": [
-    {
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:version": "1.0",
-      "xdm:identityMap": {
-        "ECID": [
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
-          }
-        ]
-      }
-    }
-  ],
-  "xdm:segmentMemberships": [
-    {
-      "xdm:segmentID": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        },
-        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
-        "xdm:version": "1.0",
-        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
-        "xdm:status": "realized"
-      }
-    }
-  ]
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
@@ -738,6 +579,165 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     },
     "xdm:federated": {
       "xdm:value": 0
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-23456782",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:operatingSystem": "iOS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "mobile_lte"
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    },
+    "xdm:POIinteraction": {
+      "xdm:poiEntries": {
+        "xdm:value": 1
+      },
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:locatingType": "beacon",
+      "xdm:beaconInteractionDetails": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    },
+    "xdm:activePOIs": [
+      {
+        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+        "xdm:name": "Acme Hotel Tokyo",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+          "xdm:beaconMajor": 100,
+          "xdm:beaconMinor": 23
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Acme Hotel Tokyo Lobby",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+          "xdm:beaconMajor": 300,
+          "xdm:beaconMinor": 34
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Tokyo City",
+        "xdm:locatingType": "gps",
+        "xdm:geoInteractionDetails": {
+          "xdm:distanceToCenter": 320,
+          "xdm:accuracy": 30,
+          "xdm:geoShape": {
+            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+            "schema:circle": {
+              "@id": "https://data.adobe.io/entities/geo/circleid123",
+              "schema:description": "Tokyo Metro",
+              "schema:coordinates": {
+                "@id": "https://data.adobe.io/entities/geo/111",
+                "schema:description": "Tokyo",
+                "schema:latitude": 37.3308953,
+                "schema:longitude": -121.8939894,
+                "schema:elevation": 31.0896
+              },
+              "schema:radius": 80000
+            }
+          }
+        }
+      }
+    ],
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
     }
   }
 }
@@ -921,30 +921,30 @@ The primary event type for this time-series record.
 ### xdm:eventType Known Values
 | Value | Description |
 |-------|-------------|
-| `advertising.completes` | Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead. |
-| `advertising.timePlayed` | Describes the amount of time spent by a user on a specific timed media asset. |
-| `advertising.federated` | Indicates if an experience event was created through data federation (data sharing between customers). |
-| `advertising.clicks` | Click(s) actions on an advertisement. |
-| `advertising.conversions` | A customer pre-defined action(s) which triggers an event for performance evaluation. |
-| `advertising.firstQuartiles` | A digital video ad has played through 25% of its duration at normal speed. |
-| `advertising.impressions` | Impression(s) of an advertisement to an end-user with the potential of being viewed. |
-| `advertising.midpoints` | A digital video ad has played through 50% of its duration at normal speed. |
-| `advertising.starts` | A digital video ad has started playing. |
-| `advertising.thirdQuartiles` | A digital video ad has played through 75% of its duration at normal speed. |
-| `web.webpagedetails.pageViews` | View(s) of a webpage has occurred. |
-| `web.webinteraction.linkClicks` | Click of a web-link has occurred. |
-| `commerce.checkouts` | An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order. |
-| `commerce.productListAdds` | Addition of a product to the product list. Example a product is added to a shopping cart. |
-| `commerce.productListOpens` | Initializations of a new product list. Example a shopping cart is created. |
-| `commerce.productListRemovals` | Removal(s) of a product entry from a product list. Example a product is removed from a shopping cart. |
-| `commerce.productListReopens` | A product list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity. |
-| `commerce.productListViews` | View(s) of a product-list has occurred. |
-| `commerce.productViews` | View(s) of a product have occurred. |
-| `commerce.purchases` | An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. |
-| `commerce.saveForLaters` | Product list is saved for future use. Example a product wish list. |
-| `delivery.feedback` | Feedback events for a delivery. Example feedback events for an email delivery. |
-| `message.feedback` | Feedback events like sent/bounce/error for messages sent to a user. |
-| `message.tracking` | Tracking events like open/click/custom action on messages sent to a user. |
+| `advertising.completes` | Advertising Completes |
+| `advertising.timePlayed` | Advertising Time Played |
+| `advertising.federated` | Advertising Federated |
+| `advertising.clicks` | Advertising Clicks |
+| `advertising.conversions` | Advertising Conversions |
+| `advertising.firstQuartiles` | Advertising First Quartiles |
+| `advertising.impressions` | Advertising Impressions |
+| `advertising.midpoints` | Advertising Midpoints |
+| `advertising.starts` | Advertising Starts |
+| `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
+| `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
+| `commerce.checkouts` | Commerce Checkouts |
+| `commerce.productListAdds` | Commerce Product List Adds |
+| `commerce.productListOpens` | Commerce Product List Opens |
+| `commerce.productListRemovals` | Commerce Product List Removals |
+| `commerce.productListReopens` | Commerce Product List Reopens |
+| `commerce.productListViews` | Commerce Product List Views |
+| `commerce.productViews` | Commerce Product Views |
+| `commerce.purchases` | Commerce Purchases |
+| `commerce.saveForLaters` | Commerce Save For Laters |
+| `delivery.feedback` | Delivery Feedback |
+| `message.feedback` | Message Feedback |
+| `message.tracking` | Message Tracking |
 
 
 

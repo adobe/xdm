@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-personal-details
 ```
 
-This mixin is used to capture information regarding home address, home phone, mobile phone, fax, and personal email.
+Use for information about an individual person such as home address, phone number, fax, and email.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-application
 ```
 
-Application related data from  ExperienceEvent observations.
+Use for application related data such as crashes, feature usage, launches, and upgrades.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

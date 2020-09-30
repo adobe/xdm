@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-directmarketing
 ```
 
-This mixin is used to capture information regarding direct marketing details related to an ExperienceEvent. This includes opens, clicks, impressions, and unsubscribes.
+Use for information related to direct marketing events such as opens, clicks, impressions, and unsubscribes.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

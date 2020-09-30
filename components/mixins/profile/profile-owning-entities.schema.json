@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This mixin is used to capture information regarding a particular organization or geographical unit to which the individual belongs.",
+  "description": "Use for geographical unit information such as labels, organization name, and geographical unit name.",
   "definitions": {
     "profile-owning-entities": {
       "properties": {

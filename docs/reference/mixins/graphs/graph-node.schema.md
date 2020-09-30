@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/graph-node
 ```
 
-XDM Schema for a graph Node/Vertex.
+Use for node information such as data source, type, and label.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

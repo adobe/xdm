@@ -123,7 +123,7 @@ function validateSchemas(files) {
     files.forEach(function (file) {
         console.log('Validate schema -->' + file);
         var schema = JSON.parse(fs.readFileSync(file).toString());
-        if (schema.hasOwnProperty('definitions')) {//for special cases such as definitions referred in the schema outside of allOf section
+        if (schema.hasOwnProperty('definitions')) {//for special cases such as definitions referenced in the schema outside of allOf section
             for (var i in schema.definitions) {
                 if (schema.definitions[i] && schema.definitions[i].hasOwnProperty('properties') && !(schema.definitions[i].type == 'object'))
                     schema.definitions[i].type = 'object'

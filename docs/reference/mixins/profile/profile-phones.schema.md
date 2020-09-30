@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-phones
 ```
 
-Contains the various phone numbers a single profile can contain
+Use for phone numbers details such as fax, mobile, home, and work.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

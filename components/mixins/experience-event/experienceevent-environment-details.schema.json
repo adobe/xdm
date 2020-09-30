@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "This mixin is used to capture information regarding environment details related to an ExperienceEvent, such as device details, browser information, local time, and other geographical information.",
+  "description": "Use for information regarding environment details such as device details, browser information, local time, and other geographical information.",
   "definitions": {
     "experienceevent-environment-details": {
       "properties": {

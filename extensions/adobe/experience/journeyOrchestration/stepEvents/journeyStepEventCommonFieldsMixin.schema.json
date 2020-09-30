@@ -158,9 +158,9 @@
               "description": "If the instance has been triggered from a batch instance, unitary branch ID.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeName": {
-              "title": "journeyNodeName",
-              "description": "Name of the Journey Node being processed.",
+            "https://ns.adobe.com/experience/journeyOrchestration/nodeName": {
+              "title": "nodeName",
+              "description": "Name of the Journey Step Node being processed.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": {
@@ -201,6 +201,21 @@
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID": {
               "title": "previousJumpJourneyInstanceID",
               "description": "Journey instance ID of the previous journey in a journey jump scenario. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": {
+              "title": "reactionActionID",
+              "description": "Message action ID referenced by the reaction in a journey. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": {
+              "title": "reactionChannel",
+              "description": "Message channel referenced by the reaction (email, push) in a journey. ",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": {
+              "title": "reactionInteractionType",
+              "description": "Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. ",
               "type": "string"
             }
           }

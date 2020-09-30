@@ -10,13 +10,7 @@
     "title": "External Source System Audit Details Mixin",
     "type": "object",
     "meta:extensible": true,
-    "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/opportunity",
-        "https://ns.adobe.com/xdm/context/account",
-        "https://ns.adobe.com/xdm/context/opportunity-contactrole",
-        "https://ns.adobe.com/xdm/context/activitylog",
-        "https://ns.adobe.com/xdm/context/profile"
-    ],
+    "meta:intendedToExtend": [],
     "description": "Mixin which defines a set a audit properties for extenal sources.",
     "definitions": {
         "externalSourceSystemAuditDetails": {

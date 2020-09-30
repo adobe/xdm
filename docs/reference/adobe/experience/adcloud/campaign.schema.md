@@ -15,6 +15,20 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
+  "xdm:accountId": "123456",
+  "xdm:dspId": "2",
+  "xdm:campaignId": "987654",
+  "xdm:placementId": "7656467",
+  "xdm:packageId": "98766172",
+  "xdm:advertiserId": "87612391",
+  "xdm:experimentId": "9812987",
+  "xdm:sampleGroupId": "8676378",
+  "xdm:currency": "USD"
+}
+```
+
+```json
+{
   "@id": "12",
   "dsp:campaignKey": "QEr8RnlYHwnG4KbFSQor",
   "dsp:campaignName": "News At Cisco",
@@ -33,37 +47,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
-  "xdm:id": "100001061",
-  "xdm:campaignId": "10001234",
-  "xdm:campaignName": "My First Campaign",
-  "xdm:campaignDescription": "Branded Mobile Campaign",
-  "xdm:campaignStatus": "Active",
-  "xdm:channelType": "Search",
-  "xdm:budget": 123.45,
-  "xdm:budgetType": "Monthly",
-  "xdm.adDeliveryType": "Standard",
-  "xdm.CampaignObjective": "visit_web",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
-  "xdm:accountId": "123456",
-  "xdm:dspId": "2",
-  "xdm:campaignId": "987654",
-  "xdm:placementId": "7656467",
-  "xdm:packageId": "98766172",
-  "xdm:advertiserId": "87612391",
-  "xdm:experimentId": "9812987",
-  "xdm:sampleGroupId": "8676378",
-  "xdm:currency": "USD"
-}
-```
-
-```json
-{
   "@id": "100001061",
   "searchads:campaignId": "10001234",
   "searchads:accountId": "10001456",
@@ -75,6 +58,23 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "searchads:budgetType": "Monthly",
   "searchads.adDeliveryType": "Standard",
   "searchads.CampaignObjective": "visit_web",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+}
+```
+
+```json
+{
+  "xdm:id": "100001061",
+  "xdm:campaignId": "10001234",
+  "xdm:campaignName": "My First Campaign",
+  "xdm:campaignDescription": "Branded Mobile Campaign",
+  "xdm:campaignStatus": "Active",
+  "xdm:channelType": "Search",
+  "xdm:budget": 123.45,
+  "xdm:budgetType": "Monthly",
+  "xdm.adDeliveryType": "Standard",
+  "xdm.CampaignObjective": "visit_web",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

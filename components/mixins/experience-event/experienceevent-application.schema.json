@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Application related data from  ExperienceEvent observations.",
+  "description": "Use for application related data such as crashes, feature usage, launches, and upgrades.",
   "definitions": {
     "experienceevent-application": {
       "properties": {

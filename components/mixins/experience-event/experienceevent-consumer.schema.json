@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consumer ExperienceEvent mixin",
   "type": "object",
-  "description": "This mixin groups a set of standard fields to describe the behavior of an individual as it relates to digital content consumption (web, mobile app) as well as online or off-line purchases. Using this standard mixin allows data producers and consumers to have a consistent representation of individual behavior across Experience Platform.",
+  "description": "Use for digital content consumption data from web and mobile applications as well as online and offline purchase data such as channel, commerce, and device information.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],

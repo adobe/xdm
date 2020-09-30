@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "This mixin is used to capture information regarding interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
+  "description": "Use to track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
   "definitions": {
     "experienceevent-media": {
       "properties": {

@@ -15,7 +15,7 @@
         }
       },
       "xdm:personalizationPreferences": {
-        "xdm:any": {
+        "xdm:anyPersonalization": {
           "xdm:choice": "yes",
           "xdm:timestamp": "2019-01-01T15:52:25+00:00",
           "xdm:basisOfProcessing": "consent"
@@ -23,7 +23,7 @@
       },
       "xdm:marketingPreferences": {
         "xdm:preferredChannel": "email",
-        "xdm:any": {
+        "xdm:anyMarketing": {
           "xdm:choice": "unknown"
         },
         "xdm:iotMessages": {

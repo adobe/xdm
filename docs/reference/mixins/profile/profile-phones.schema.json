@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Contains the various phone numbers a single profile can contain",
+    "description": "Use for phone numbers details such as fax, mobile, home, and work.",
     "definitions": {
         "profile-phones": {
             "properties": {

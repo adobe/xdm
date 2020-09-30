@@ -22,12 +22,12 @@
           "description": "Lead member unique identifier",
           "type": "string"
         },
-        "xdm:campaignMemberStatus": {
+        "xdm:memberStatus": {
           "title": "Campaign Member Status",
           "description": "",
           "type": "string"
         },
-        "xdm:statusReason": {
+        "xdm:memberStatusReason": {
           "title": "Status Reason",
           "description": "",
           "type": "string"

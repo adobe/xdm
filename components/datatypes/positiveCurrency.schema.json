@@ -10,7 +10,7 @@
   "title": "Currency",
   "type": "object",
   "meta:extensible": true,
-  "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
+  "description": "This datatype is used where ever you want to store any specifically positive amount in combination of currency code.",
   "definitions": {
     "positiveCurrency": {
       "properties": {

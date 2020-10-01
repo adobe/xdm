@@ -13,17 +13,17 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
-  "description": "This mixin is used to capture properties related to business campaign details",
+  "description": "This mixin is used to capture properties related to business campaign details.",
   "definitions": {
     "campaign-details": {
       "properties": {
         "xdm:parentCampaignID": {
           "title": "Parent Campaign ID",
-          "description": "Member type and associated reference ID",
+          "description": "Member type and associated reference ID.",
           "type": "string"
         },
         "xdm:campaignOwnerID": {
-          "title": "Campaign Owner ID",
+          "title": "Campaign Owner ID.",
           "description": "",
           "type": "string"
         },

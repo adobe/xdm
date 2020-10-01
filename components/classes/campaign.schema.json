@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "This class is used to capture minimum properties that are required to define xdm business bampaign concept",
+  "description": "This class is used to capture minimum properties that are required to define xdm business bampaign concept.",
   "definitions": {
     "campaign": {
       "properties": {
@@ -41,9 +41,6 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     },

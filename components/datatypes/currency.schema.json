@@ -32,16 +32,38 @@
           "type": "string",
           "format": "date-time"
         }
+      },
+    "positiveCurrency": {
+      "properties": {
+        "xdm:amount": {
+          "title": "Amount",
+          "description": "Amount represented by the currencyCode",
+          "type": "number",
+          "minimum":0
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
+        "xdm:conversionDate": {
+          "title": "Conversion Date",
+          "description": "Date when currency conversion was made.",
+          "type": "string",
+          "format": "date-time"
+        }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "#/definitions/currency"
     },
     {
-      "$ref": "#/definitions/currency"
-    }
+      "$ref": "#/definitions/positiveCurrency"
+    },
   ],
   "meta:status": "experimental"
 }

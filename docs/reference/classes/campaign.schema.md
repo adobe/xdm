@@ -13,6 +13,7 @@ This class is used to capture minimum properties that are required to define xdm
 ## Schema Hierarchy
 
 * XDM Business Campaign `https://ns.adobe.com/xdm/classes/campaign`
+  * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 

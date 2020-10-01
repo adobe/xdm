@@ -5,29 +5,29 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/opportunity-components",
+  "$id": "https://ns.adobe.com/xdm/mixins/campaign-components",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Business Opportunity Components",
+  "title": "XDM Business Campaign Components",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "This Mixin is used to capture B2B Opportunity specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed ",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
+  "description": "This mixin is used to capture b2b campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
   "definitions": {
-    "opportunity-components": {
+    "campaign-components": {
       "properties": {
-        "xdm:opportunityComponents": {
+        "xdm:campaignComponents": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "xdm:sourceOpportunityID": {
-                "title": "Source Opportunity ID",
-                "description": "Opportunity unique identifier at source.",
+              "xdm:sourceCampaignID": {
+                "title": "Source Campaign ID",
+                "description": "Campaign unique identifier at source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
-              "xdm:sourceAccountID": {
-                "title": "Source Account ID",
+              "xdm:sourceParentCampaignID": {
+                "title": "Source Parent Campaign ID",
                 "description": "Account unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
@@ -36,14 +36,9 @@
                 "description": "External unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
-              "xdm:sourceOpportunityOwnerID": {
-                "title": "Source Opportunity Owner ID",
-                "description": "Opportunity owner unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-              },
-              "xdm:sourceCampaignID": {
-                "title": "Source Campaign ID",
-                "description": "Campaign unique identifier at the source.",
+              "xdm:sourceCampaignOwnerID": {
+                "title": "Source Campaign Owner ID",
+                "description": "Campaign owner unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               }
             }
@@ -54,7 +49,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/opportunity-components"
+      "$ref": "#/definitions/campaign-components"
     }
   ],
   "meta:status": "experimental"

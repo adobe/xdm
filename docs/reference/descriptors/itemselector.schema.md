@@ -18,18 +18,6 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 
 ```json
 {
-  "xdm:id": "https://example.com/objects/12345"
-}
-```
-
-```json
-{
-  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
-}
-```
-
-```json
-{
   "xdm:type": "https://ns.adobe.com/experience/mcid"
 }
 ```
@@ -37,6 +25,18 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 ```json
 {
   "xdm:index": 0
+}
+```
+
+```json
+{
+  "xdm:id": "https://example.com/objects/12345"
+}
+```
+
+```json
+{
+  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
 }
 ```
 

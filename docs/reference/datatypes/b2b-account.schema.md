@@ -29,7 +29,6 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | B2B Account (this schema) |
-| [xdm:accountCurrencyCode](#xdmaccountcurrencycode) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountFax](#xdmaccountfax) | Phone number | Optional | B2B Account (this schema) |
 | [xdm:accountName](#xdmaccountname) | `string` | Optional | B2B Account (this schema) |
@@ -47,6 +46,7 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:accountTerritoryID](#xdmaccountterritoryid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | B2B Account (this schema) |
+| [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | B2B Account (this schema) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | B2B Account (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -65,45 +65,6 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 * [Postal address](address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
-
-
-
-## xdm:accountCurrencyCode
-### Currency Code
-
-The ISO 4217 currency code.
-
-`xdm:accountCurrencyCode`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountCurrencyCode Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-```regex
-^[A-Z]{3}$
-```
-
-* test example: [USD](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=USD)
-* test example: [EUR](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=EUR)
-
-
-
-
-### xdm:accountCurrencyCode Examples
-
-```json
-"USD"
-```
-
-```json
-"EUR"
-```
 
 
 
@@ -433,6 +394,45 @@ Account Type.
 
 
 
+
+
+
+## xdm:defaultCurrencyCode
+### Default Currency Code
+
+The ISO 4217 currency code.
+
+`xdm:defaultCurrencyCode`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:defaultCurrencyCode Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+^[A-Z]{3}$
+```
+
+* test example: [USD](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=USD)
+* test example: [EUR](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=EUR)
+
+
+
+
+### xdm:defaultCurrencyCode Examples
+
+```json
+"USD"
+```
+
+```json
+"EUR"
+```
 
 
 

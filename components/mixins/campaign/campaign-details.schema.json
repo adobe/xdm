@@ -51,13 +51,13 @@
           "title": "Campaign Start Date",
           "description": "",
           "type": "string",
-          "format":"date-time"
+          "format": "date-time"
         },
         "xdm:campaignEndDate": {
           "title": "Campaign End Date",
           "description": "",
           "type": "string",
-          "format":"date-time"
+          "format": "date-time"
         },
         "xdm:timeZone": {
           "title": "Timezone",

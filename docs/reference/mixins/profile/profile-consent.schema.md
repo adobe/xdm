@@ -10,6 +10,11 @@ This schema captures privacy, personalization and marketing preferences (consent
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-consent.schema.json](mixins/profile/profile-consent.schema.json) |
+## Schema Hierarchy
+
+* Privacy/Marketing Preferences (Consent) `https://ns.adobe.com/xdm/mixins/profile-consent`
+  * [Privacy/Marketing Preferences (Consent)](../../datatypes/consentpreferences.schema.md) `https://ns.adobe.com/xdm/datatypes/consent-preferences`
+
 
 ## Privacy/Marketing Preferences (Consent) Example
 ```json
@@ -71,7 +76,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consentsAndPreferences](#xdmconsentsandpreferences) | complex | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
+| [xdm:consentsAndPreferences](#xdmconsentsandpreferences) | Privacy/Marketing Preferences (Consent) | Optional | Privacy/Marketing Preferences (Consent) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentsAndPreferences
@@ -81,21 +86,13 @@ Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.
 
 `xdm:consentsAndPreferences`
 * is optional
-* type: complex
+* type: Privacy/Marketing Preferences (Consent)
 * defined in this schema
 
 ### xdm:consentsAndPreferences Type
 
-Unknown type ``.
 
-```json
-{
-  "title": "Global Privacy/Marketing Preference Values",
-  "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-  "ref": "https://ns.adobe.com/xdm/datatypes/consent-preferences",
-  "simpletype": "complex"
-}
-```
+* [Privacy/Marketing Preferences (Consent)](../../datatypes/consentpreferences.schema.md) – `https://ns.adobe.com/xdm/datatypes/consent-preferences`
 
 
 

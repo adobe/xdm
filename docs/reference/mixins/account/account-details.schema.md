@@ -27,7 +27,6 @@ XDM business account details.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountbillingaddress) |
-| [xdm:accountCurrencyCode](#xdmaccountcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountcurrencycode) |
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountdescription) |
 | [xdm:accountFax](#xdmaccountfax) | Phone number | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountfax) |
 | [xdm:accountName](#xdmaccountname) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountname) |
@@ -45,6 +44,7 @@ XDM business account details.
 | [xdm:accountTerritoryID](#xdmaccountterritoryid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountterritoryid) |
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttradestyle) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttype) |
+| [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmdefaultcurrencycode) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmexternalid) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -63,45 +63,6 @@ XDM business account details.
 * [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
-
-
-
-## xdm:accountCurrencyCode
-### Currency Code
-
-The ISO 4217 currency code.
-
-`xdm:accountCurrencyCode`
-* is optional
-* type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountcurrencycode)
-
-### xdm:accountCurrencyCode Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-```regex
-^[A-Z]{3}$
-```
-
-* test example: [USD](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=USD)
-* test example: [EUR](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=EUR)
-
-
-
-
-### xdm:accountCurrencyCode Examples
-
-```json
-"USD"
-```
-
-```json
-"EUR"
-```
 
 
 
@@ -431,6 +392,45 @@ Account Type.
 
 
 
+
+
+
+## xdm:defaultCurrencyCode
+### Default Currency Code
+
+The ISO 4217 currency code.
+
+`xdm:defaultCurrencyCode`
+* is optional
+* type: `string`
+* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmdefaultcurrencycode)
+
+### xdm:defaultCurrencyCode Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+```regex
+^[A-Z]{3}$
+```
+
+* test example: [USD](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=USD)
+* test example: [EUR](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24&text=EUR)
+
+
+
+
+### xdm:defaultCurrencyCode Examples
+
+```json
+"USD"
+```
+
+```json
+"EUR"
+```
 
 
 

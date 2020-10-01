@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/positive-currency",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Currency",
+  "title": "Positive Currency",
   "type": "object",
   "meta:extensible": true,
   "description": "This datatype is used where ever you want to store any specifically positive amount in combination of currency code.",

@@ -68,16 +68,12 @@
         "xdm:opportunityAmount": {
           "title": "Opportunity Amount",
           "description": "Estimated total sale amount.",
-          "type": "number",
-          "minimum": 0,
-          "default": 0
+          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
         },
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "Calculated revenue based on the Amount and Probability.",
-          "type": "number",
-          "minimum": 0,
-          "default": 0
+          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
         },
         "xdm:opportunityQuantity": {
           "title": "Opportunity Quantity",

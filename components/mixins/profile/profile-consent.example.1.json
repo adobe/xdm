@@ -1,0 +1,52 @@
+{
+  "xdm:consentsAndPreferences": {
+    "xdm:choices": {
+      "xdm:consents": {
+        "xdm:dataCollection": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "consent"
+        },
+        "xdm:deviceLinking": {
+          "xdm:basisOfProcessing": "vital_interest"
+        },
+        "xdm:pseudonymousAnalysis": {
+          "xdm:choice": "no"
+        }
+      },
+      "xdm:personalizationPreferences": {
+        "xdm:anyPersonalization": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "consent"
+        }
+      },
+      "xdm:marketingPreferences": {
+        "xdm:preferredChannel": "email",
+        "xdm:anyMarketing": {
+          "xdm:choice": "unknown"
+        },
+        "xdm:iotMessages": {
+          "xdm:choice": "yes",
+          "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+          "xdm:basisOfProcessing": "legitimate_interest"
+        },
+        "xdm:pushNotifications": {
+          "xdm:choice": "yes",
+          "xdm:source": "OurApp"
+        },
+        "xdm:email": {
+          "xdm:choice": "no",
+          "xdm:reason": "Too Frequent"
+        }
+      }
+    },
+    "xdm:choicesMetadata": {
+      "xdm:version": "1.0.0",
+      "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+      "xdm:userCountryRegionCode": "US",
+      "xdm:countryRegionSource": "ip",
+      "xdm:source": "CJM"
+    }
+  }
+}

@@ -11,8 +11,8 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign-member"],
-  "description": "This mixin is used to capture b2b campaign member specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed ",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
+  "description": "This mixin is used to capture B2B campaign member specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
   "definitions": {
     "campaign-member-components": {
       "properties": {

@@ -24,17 +24,6 @@ A decision proposition detail is used to capture the output of a decisioning act
 ```json
 {
   "xdm:activity": {
-    "xdm:id": "xcore:offer-activity:f203512e02542b5"
-  },
-  "xdm:fallback": {
-    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-  }
-}
-```
-
-```json
-{
-  "xdm:activity": {
     "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
     "xdm:name": "Online College Counseler",
     "xdm:startDate": "2018-10-13T05:59:18.914Z",
@@ -78,6 +67,17 @@ A decision proposition detail is used to capture the output of a decisioning act
       }
     }
   ]
+}
+```
+
+```json
+{
+  "xdm:activity": {
+    "xdm:id": "xcore:offer-activity:f203512e02542b5"
+  },
+  "xdm:fallback": {
+    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+  }
 }
 ```
 

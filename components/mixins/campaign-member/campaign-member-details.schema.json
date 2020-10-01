@@ -19,7 +19,7 @@
       "properties": {
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Lead member unique identifier",
+          "description": "Person unique identifier",
           "type": "string"
         },
         "xdm:memberStatus": {

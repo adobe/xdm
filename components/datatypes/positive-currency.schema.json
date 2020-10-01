@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "This datatype is used where ever you want to store any specifically positive amount in combination of currency code.",
   "definitions": {
-    "positiveCurrency": {
+    "positive-currency": {
       "properties": {
         "xdm:amount": {
           "title": "Amount",

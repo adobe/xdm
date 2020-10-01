@@ -1,5 +1,5 @@
 
-# Account Details Schema
+# XDM Business Account Details Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/account-details
@@ -12,17 +12,16 @@ XDM business account details.
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/account/account-details.schema.json](mixins/account/account-details.schema.json) |
 ## Schema Hierarchy
 
-* Account Details `https://ns.adobe.com/xdm/mixins/account-details`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* XDM Business Account Details `https://ns.adobe.com/xdm/mixins/account-details`
   * [B2B Account](../../datatypes/b2b-account.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account`
 
 
-## Account Details Example
+## XDM Business Account Details Example
 ```json
 {}
 ```
 
-# Account Details Properties
+# XDM Business Account Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

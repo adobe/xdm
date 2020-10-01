@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/campaign-member-components",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "B2B Campaign Member Components",
+  "title": "B2B Business Campaign Member Components",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -41,27 +41,27 @@
                 "description": "Campaign owner unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
               },
-              "xdm:sourceCampaignMemberStatus": {
+              "xdm:sourceAcquiredByCampaignID": {
+                "title": "Source Acquired By CampaignID",
+                "description": "",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              },
+              "xdm:memberStatus": {
                 "title": "Source Campaign Member Status",
                 "description": "",
                 "type": "string"
               },
-              "xdm:sourceStatusReason": {
+              "xdm:memberStatusReason": {
                 "title": "Source Status Reason",
                 "description": "",
                 "type": "string"
               },
-              "xdm:sourceAcquiredByCampaignID": {
-                "title": "Source Acquired By CampaignID",
-                "description": "",
-                "type": "string"
-              },
-              "xdm:sourceHasReachedSuccess": {
+              "xdm:hasReachedSuccess": {
                 "title": "Source Has Reached Success",
                 "description": "",
                 "type": "boolean"
               },
-              "xdm:sourceReachedSuccessDate": {
+              "xdm:reachedSuccessDate": {
                 "title": "Source Reached Success Date",
                 "description": "",
                 "type": "string",

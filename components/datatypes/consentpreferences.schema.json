@@ -143,11 +143,6 @@
               "description": "Sharing of user's Data with 2nd or 3rd parties is permitted",
               "$ref": "#/definitions/consent-fields"
             },
-            "xdm:anonymousAnalysis": {
-              "title": "Anonymous Analysis",
-              "description": "Data can be used for analysis that does not require the use of any type of ID, whether it can be tied to an actual person or not",
-              "$ref": "#/definitions/consent-fields"
-            },
             "xdm:pseudonymousAnalysis": {
               "title": "Pseudonymous Analysis",
               "description": "Data can be used for analysis that may include an ID that may or may not be tied to an actual person",

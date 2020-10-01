@@ -15,18 +15,6 @@ Adobe Advertising Cloud Ad Details.
 
 ```json
 {
-  "xdm:creativeID": "301404063528",
-  "xdm:keywordID": "147741280",
-  "xdm:audienceID": "257600311580",
-  "xdm:adGroupID": "32345812783",
-  "xdm:campaignID": "663049855",
-  "xdm:networkType": "search",
-  "xdm:matchType": "broad"
-}
-```
-
-```json
-{
   "@id": "14",
   "dsp:adKey": "yyyy029YLCDvseo8QhTE",
   "dsp:adStatus": "Active",
@@ -48,6 +36,18 @@ Adobe Advertising Cloud Ad Details.
   "xdm:adClass": "video",
   "xdm:adUnitType": "HTML5",
   "xdm:promotedAssetId": "4116761052"
+}
+```
+
+```json
+{
+  "xdm:creativeID": "301404063528",
+  "xdm:keywordID": "147741280",
+  "xdm:audienceID": "257600311580",
+  "xdm:adGroupID": "32345812783",
+  "xdm:campaignID": "663049855",
+  "xdm:networkType": "search",
+  "xdm:matchType": "broad"
 }
 ```
 

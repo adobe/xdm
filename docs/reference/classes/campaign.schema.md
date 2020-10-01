@@ -15,6 +15,7 @@ This class is used to capture minimum properties that are required to define xdm
 * XDM Business Campaign `https://ns.adobe.com/xdm/classes/campaign`
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
 
 ## XDM Business Campaign Example
@@ -26,12 +27,34 @@ This class is used to capture minimum properties that are required to define xdm
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:campaignDescription](#xdmcampaigndescription) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignName](#xdmcampaignname) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignType](#xdmcampaigntype) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## @id
+### Identifier
+
+A unique identifier for the record.
+
+`@id`
+* is optional
+* type: `string`
+* defined in [Record Schema](../behaviors/record.schema.md#id)
+
+### @id Type
+
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
 
 ## xdm:campaignDescription
 ### Campaign Description

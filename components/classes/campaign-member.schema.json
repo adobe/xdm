@@ -13,27 +13,29 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign",
+  "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.",
   "definitions": {
     "campaign-member": {
       "properties": {
         "xdm:campaignMemberID": {
           "title": "Campaign Member ID",
-          "description": "Campaign Member unique identifer",
+          "description": "Campaign Member unique identifer.",
           "type": "string"
         },
         "xdm:campaignID": {
           "title": "Campaign ID",
-          "description": "Campaign Unique Identifer",
+          "description": "Campaign Unique Identifer.",
+          "type": "string"
+        },
+        "xdm:personID": {
+          "title": "Person ID",
+          "description": "Person unique identifier.",
           "type": "string"
         }
       }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },

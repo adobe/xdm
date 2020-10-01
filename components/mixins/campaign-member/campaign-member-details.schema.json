@@ -17,11 +17,6 @@
   "definitions": {
     "campaign-member-details": {
       "properties": {
-        "xdm:personID": {
-          "title": "Person ID",
-          "description": "Person unique identifier",
-          "type": "string"
-        },
         "xdm:memberStatus": {
           "title": "Campaign Member Status",
           "description": "",

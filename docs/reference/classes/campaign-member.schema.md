@@ -1,5 +1,5 @@
 
-# XDM Business Campaign Member Schema
+# XDM Business Campaign Members Schema
 
 ```
 https://ns.adobe.com/xdm/context/campaign-member
@@ -12,12 +12,12 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/campaign-member.schema.json](classes/campaign-member.schema.json) |
 ## Schema Hierarchy
 
-* XDM Business Campaign Member `https://ns.adobe.com/xdm/context/campaign-member`
+* XDM Business Campaign Members `https://ns.adobe.com/xdm/context/campaign-member`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
-## XDM Business Campaign Member Example
+## XDM Business Campaign Members Example
 ```json
 {
   "xdm:campaignMemberID": "1",
@@ -37,15 +37,15 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 }
 ```
 
-# XDM Business Campaign Member Properties
+# XDM Business Campaign Members Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign Member (this schema) |
-| [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Member (this schema) |
+| [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign Members (this schema) |
+| [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Campaign Member (this schema) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

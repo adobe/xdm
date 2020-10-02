@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/classes/campaign
 ```
 
-This class is used to capture minimum properties that are required to define xdm business bampaign concept.
+This class is used to capture minimum properties that are required to define xdm business campaign concept.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

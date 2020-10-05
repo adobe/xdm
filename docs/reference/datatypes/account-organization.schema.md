@@ -10,6 +10,11 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/account-organization.schema.json](datatypes/account-organization.schema.json) |
+## Schema Hierarchy
+
+* Account Organization `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+  * [Positive Currency](positive-currency.schema.md) `https://ns.adobe.com/xdm/datatypes/positive-currency`
+
 
 ## Account Organization Example
 ```json
@@ -25,7 +30,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Organization (this schema) |
 | [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Organization (this schema) |
 | [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:annualRevenue](#xdmannualrevenue) | `number` | Optional | Account Organization (this schema) |
+| [xdm:annualRevenue](#xdmannualrevenue) | Positive Currency | Optional | Account Organization (this schema) |
 | [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Organization (this schema) |
 | [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Organization (this schema) |
 | [xdm:industry](#xdmindustry) | `string` | Optional | Account Organization (this schema) |
@@ -149,14 +154,13 @@ Estimated amount of annual revenue of the organization.
 
 `xdm:annualRevenue`
 * is optional
-* type: `number`
+* type: Positive Currency
 * defined in this schema
 
 ### xdm:annualRevenue Type
 
 
-`number`
-
+* [Positive Currency](positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
 
 
 

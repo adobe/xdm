@@ -14,7 +14,7 @@ An XDM Business Account.
 
 * XDM Business Account `https://ns.adobe.com/xdm/context/account-crm`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Organization](../../datatypes/organization.schema.md) `https://ns.adobe.com/xdm/common/organization`
+  * [Account Organization](../../datatypes/account-organization.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 ## XDM Business Account Example
@@ -121,7 +121,7 @@ An XDM Business Account.
 |----------|------|----------|------------|
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | XDM Business Account (this schema) |
 | [xdm:accountName](#xdmaccountname) | `string` | Optional | XDM Business Account (this schema) |
-| [xdm:accountOrganization](#xdmaccountorganization) | Organization | Optional | XDM Business Account (this schema) |
+| [xdm:accountOrganization](#xdmaccountorganization) | Account Organization | Optional | XDM Business Account (this schema) |
 | [xdm:accountSite](#xdmaccountsite) | `string` | Optional | XDM Business Account (this schema) |
 | [xdm:annualRevenue](#xdmannualrevenue) | `number` | Optional | XDM Business Account (this schema) |
 | [xdm:billingAddress](#xdmbillingaddress) | Postal address | Optional | XDM Business Account (this schema) |
@@ -189,13 +189,13 @@ Account details like number of employees, market segment, industry, and location
 
 `xdm:accountOrganization`
 * is optional
-* type: Organization
+* type: Account Organization
 * defined in this schema
 
 ### xdm:accountOrganization Type
 
 
-* [Organization](../../datatypes/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
+* [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 

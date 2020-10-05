@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Technical details extension for ExperienceEvent.",
+    "description": "Use for technical details including data source code, tags, and timestamps.",
     "definitions": {
         "experienceevent-technical-details": {
             "properties": {

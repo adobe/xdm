@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-consumer
 ```
 
-This mixin groups a set of standard fields to describe the behavior of an individual as it relates to digital content consumption (web, mobile app) as well as online or off-line purchases. Using this standard mixin allows data producers and consumers to have a consistent representation of individual behavior across Experience Platform.
+Use for digital content consumption data from web and mobile applications as well as online and offline purchase data such as channel, commerce, and device information.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

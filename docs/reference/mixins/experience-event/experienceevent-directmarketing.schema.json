@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This mixin is used to capture information regarding direct marketing details related to an ExperienceEvent. This includes opens, clicks, impressions, and unsubscribes.",
+    "description": "Use for information related to direct marketing events such as opens, clicks, impressions, and unsubscribes.",
     "definitions": {
         "experienceevent-directmarketing": {
             "properties": {

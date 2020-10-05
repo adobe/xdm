@@ -12,7 +12,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "A decision attribution mixin is used to link an experience event that is a response to one or more prior decision/proposition events. Each decision output has a unique ID that can be echo'ed back with an experience event. The decision is assumed to have contributed to the experience event and is now attributed with by it.",
+  "description": "This mixin is used capture information regarding a response to one or more prior decision propositions. Each decision output has a unique ID that can be echo'ed back with an experience event. The decision is assumed to have contributed to the experience event and is now attributed with by it.",
   "definitions": {
     "proposition-attribution-mixin": {
       "type": "object",

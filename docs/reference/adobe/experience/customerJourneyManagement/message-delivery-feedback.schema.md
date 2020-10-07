@@ -59,7 +59,6 @@ The value of this property **must** be equal to one of the [known values below](
 | `sent` | Messages such as Email, SMS, Push that have been dispatched to a person&#39;s account, address, or device. |
 | `bounce` | Message failed to deliver, and no longer will be retried. |
 | `delay` | message failed to deliver, but will be retry after next schedule time. |
-| `send` |  |
 
 
 

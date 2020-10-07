@@ -9,7 +9,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.json](adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.json](adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.json) |
 ## Schema Hierarchy
 
 * Adobe CJM ExperienceEvent - Message Delivery Feedback Details `https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback`
@@ -56,9 +56,10 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `error` | Mesage processing failed. |
 | `exclude` | Messageprofile is filtered out for sending the message |
-| `send` | Messages such as Email, SMS, Push that have been dispatched to a person&#39;s account, address, or device. |
+| `sent` | Messages such as Email, SMS, Push that have been dispatched to a person&#39;s account, address, or device. |
 | `bounce` | Message failed to deliver, and no longer will be retried. |
 | `delay` | message failed to deliver, but will be retry after next schedule time. |
+| `send` |  |
 
 
 

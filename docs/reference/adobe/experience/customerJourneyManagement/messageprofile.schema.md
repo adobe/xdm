@@ -9,7 +9,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/messageprofile.schema.json](adobe/experience/customerJourneyManagement/messageprofile.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/messageprofile.schema.json](adobe/experience/customerJourneyManagement/messageprofile.schema.json) |
 ## Schema Hierarchy
 
 * Adobe CJM ExperienceEvent - Message Profile Details `https://ns.adobe.com/experience/customerJourneyManagement/messageprofile`

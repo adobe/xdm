@@ -21,7 +21,7 @@
           "title": "Feedback Status",
           "type": "string",
           "description": "Provide status of a delivery attempt.",
-          "enum": ["error", "exclude", "send", "bounce", "delay"],
+          "enum": ["error", "exclude", "sent", "bounce", "delay"],
           "meta:enum": {
             "error": "Mesage processing failed.",
             "exclude": "Messageprofile is filtered out for sending the message",

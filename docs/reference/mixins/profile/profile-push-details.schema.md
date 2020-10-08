@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-push-details
 ```
 
-This mixin is used to capture information regarding push notifications including device details and registration date. Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.
+Use for information regarding push notifications such as device details and registration date. Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

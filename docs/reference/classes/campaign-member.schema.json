@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/campaign-member",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "XDM Business Campaign Member",
+    "title": "XDM Business Campaign Members",
     "type": "object",
     "auditable": true,
     "meta:extensible": true,
@@ -15,46 +15,29 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign",
+    "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.",
     "definitions": {
         "campaign-member": {
             "properties": {
                 "xdm:campaignMemberID": {
                     "title": "Campaign Member ID",
-                    "description": "Campaign Member unique identifer",
+                    "description": "Campaign Member unique identifer.",
                     "type": "string"
                 },
-                "xdm:campaign": {
-                    "type": "object",
-                    "title": "Campaign",
-                    "description": "Campaign ID and Type associated as a key-value pair",
-                    "properties": {
-                        "xdm:ID": {
-                            "title": "Campaign ID",
-                            "description": "Campaign Unique Identifer",
-                            "type": "string"
-                        },
-                        "xdm:type": {
-                            "title": "Campaign Type",
-                            "description": "Campaign Type",
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "xdm:ID",
-                        "xdm:type"
-                    ]
+                "xdm:campaignID": {
+                    "title": "Campaign ID",
+                    "description": "Campaign Unique Identifer.",
+                    "type": "string"
+                },
+                "xdm:personID": {
+                    "title": "Person ID",
+                    "description": "Person unique identifier.",
+                    "type": "string"
                 }
-            },
-            "required": [
-                "xdm:campaignMemberID"
-            ]
+            }
         }
     },
     "allOf": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-        },
         {
             "$ref": "https://ns.adobe.com/xdm/data/record"
         },

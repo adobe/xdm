@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/graph
 ```
 
-XDM graph schema to host graph data.
+Use for host graph data such as label, type, and creation timestamps.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

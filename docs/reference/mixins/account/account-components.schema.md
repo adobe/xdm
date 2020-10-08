@@ -1,5 +1,5 @@
 
-# Account Components Schema
+# XDM Business Account Components Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/account-components
@@ -10,22 +10,17 @@ XDM Business Account relationships for one data source.
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/account/account-components.schema.json](mixins/account/account-components.schema.json) |
-## Schema Hierarchy
 
-* Account Components `https://ns.adobe.com/xdm/mixins/account-components`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-
-
-## Account Components Example
+## XDM Business Account Components Example
 ```json
 {}
 ```
 
-# Account Components Properties
+# XDM Business Account Components Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:accountComponents](#xdmaccountcomponents) | `object[]` | Optional | Account Components (this schema) |
+| [xdm:accountComponents](#xdmaccountcomponents) | `object[]` | Optional | XDM Business Account Components (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:accountComponents

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-search
 ```
 
-This mixin is used to capture search-related information for an ExperienceEvent, such as search engine, paid search (boolean), keywords, and position.
+Use for search related information such as search engine, paid search, keywords, and position.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

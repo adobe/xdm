@@ -157,9 +157,9 @@ Captured privacy information for identities in profile.
 
 
 ## xdm:optOutConsentLevel
-### Opt-out consent level
+### Opt-out consent level (deprecated)
 
-Opt-out consent level.
+Opt-out consent level (deprecated).
 
 `xdm:optOutConsentLevel`
 * is optional
@@ -179,9 +179,9 @@ Opt-out consent level.
 
 
 #### xdm:privacyOptOuts
-##### Privacy opt-outs
+##### Privacy opt-outs (deprecated)
 
-Encapsulates different opt-out types for data privacy.
+Encapsulates different opt-out types for data privacy (deprecated).
 
 `xdm:privacyOptOuts`
 * is optional

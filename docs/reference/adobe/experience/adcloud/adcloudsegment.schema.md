@@ -294,7 +294,7 @@ Name of the segment.
 ## xdm:segmentStatus
 ### Segment status
 
-Current status of segment from external system normalized to active or inactive.
+Current status of segment from external system normalized to active, inactive, deleted or draft.
 
 `xdm:segmentStatus`
 * is optional
@@ -309,6 +309,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `ACTIVE` |  |
 | `INACTIVE` |  |
 | `DELETED` |  |
+| `DRAFT` |  |
 
 
 

@@ -95,8 +95,8 @@
           "description": "Source type for the account.",
           "type": "string"
         },
-        "xdm:accountCurrencyCode": {
-          "title": "Currency Code",
+        "xdm:defaultCurrencyCode": {
+          "title": "Default Currency Code",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",

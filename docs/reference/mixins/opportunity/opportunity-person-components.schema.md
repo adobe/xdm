@@ -1,5 +1,5 @@
 
-# Opportunity Person Relation Components Schema
+# XDM Business Opportunity Person Relation Components Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/opportunity-person-components
@@ -10,22 +10,17 @@ XDM business opportunity person relation component details.
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity/opportunity-person-components.schema.json](mixins/opportunity/opportunity-person-components.schema.json) |
-## Schema Hierarchy
 
-* Opportunity Person Relation Components `https://ns.adobe.com/xdm/mixins/opportunity-person-components`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-
-
-## Opportunity Person Relation Components Example
+## XDM Business Opportunity Person Relation Components Example
 ```json
 {}
 ```
 
-# Opportunity Person Relation Components Properties
+# XDM Business Opportunity Person Relation Components Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:opportunityPersonComponents](#xdmopportunitypersoncomponents) | `object[]` | Optional | Opportunity Person Relation Components (this schema) |
+| [xdm:opportunityPersonComponents](#xdmopportunitypersoncomponents) | `object[]` | Optional | XDM Business Opportunity Person Relation Components (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:opportunityPersonComponents

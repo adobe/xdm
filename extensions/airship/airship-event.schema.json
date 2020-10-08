@@ -1,0 +1,28 @@
+{
+  "$id": "https://ns.airship.com/airship-event",
+  "title": "Airship Event Mixin",
+  "description": "Airship gathers engagement data that can help you better understand how your audience uses and reacts to your apps and messages. This mixin groups standard mixins that can be used describe Airship's standard engagement events. Any non-standard fields should be added as needed.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "meta:extends": [
+     "https://ns.airship.com/airship-event-extension",
+    "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
+    "https://ns.adobe.com/xdm/context/experienceevent-channel",
+    "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+    "https://ns.adobe.com/xdm/context/experienceevent-application",
+    "https://ns.adobe.com/xdm/context/device",
+  ],
+  "definitions": {},
+  "allOf": [
+    "https://ns.airship.com/airship-event-extension",
+    "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
+    "https://ns.adobe.com/xdm/context/experienceevent-channel",
+    "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+    "https://ns.adobe.com/xdm/context/experienceevent-application",
+    "https://ns.adobe.com/xdm/context/device"
+  ],
+  "meta:status": "experimental"
+}

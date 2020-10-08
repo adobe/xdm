@@ -14,6 +14,11 @@
   "definitions": {
     "environment": {
       "properties": {
+        "xdm:sessionID": {
+          "title": "Session ID",
+          "type": "string",
+          "description": "Unique ID for user activity session."
+        },
         "xdm:type": {
           "title": "Type",
           "type": "string",
@@ -64,6 +69,22 @@
           "type": "integer",
           "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
           "minimum": 0
+        },
+        "xdm:duration": {
+          "title": "Duration",
+          "type": "integer",
+          "description": "The number of milliseconds that the user was on the screen.",
+          "minimum": 0
+        },
+        "xdm:viewedScreen": {
+          "title": "Viewed Screen",
+          "type": "string",
+          "description": "The friendly name assigned to the screen that the user was on."
+        },
+        "xdm:previousScreen": {
+          "title": "Previous Screen",
+          "type": "string",
+          "description": "The frinedly name assigned to the screen the user was on prior to the viewedScreen."
         },
         "xdm:connectionType": {
           "title": "Connection type",

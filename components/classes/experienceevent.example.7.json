@@ -9,9 +9,9 @@
     ]
   },
   "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushTracking": {
-    "xdm:applicationOpened": true,
-    "xdm:messageId": "unique msgID from ios",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageId": "unique msgID from ios",
     "xdm:customAction": {
       "xdm:actionId": "GAME_INVITATION",
       "xdm:value": 500

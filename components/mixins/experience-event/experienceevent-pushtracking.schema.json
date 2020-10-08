@@ -37,13 +37,13 @@
                 }
               }
             },
-            "xdm:messageId": {
-              "title": "message ID",
+            "xdm:pushProviderMessageId": {
+              "title": "Push Provider message ID",
               "type": "string",
-              "description": "ID associated with this message"
+              "description": "ID assigned to this notification as assigned by the push provider"
             },
-            "xdm:platform": {
-              "title": "Push Platform",
+            "xdm:pushProvider": {
+              "title": "Push Provider",
               "type": "string",
               "description": "Push provider, e.g. apns or fcm"
             }

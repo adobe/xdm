@@ -164,7 +164,7 @@ Marketo specific Account fields.
 | [marketo:org](#marketoorg) | `object` | Optional | Marketo Account (this schema) |
 | [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountdescription) |
 | [xdm:accountName](#xdmaccountname) | `string` | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountname) |
-| [xdm:accountOrganization](#xdmaccountorganization) | Organization | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountorganization) |
+| [xdm:accountOrganization](#xdmaccountorganization) | Account Organization | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountorganization) |
 | [xdm:accountSite](#xdmaccountsite) | `string` | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountsite) |
 | [xdm:annualRevenue](#xdmannualrevenue) | `number` | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmannualrevenue) |
 | [xdm:billingAddress](#xdmbillingaddress) | Postal address | Optional | [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmbillingaddress) |
@@ -592,13 +592,13 @@ Account details like number of employees, market segment, industry, and location
 
 `xdm:accountOrganization`
 * is optional
-* type: Organization
+* type: Account Organization
 * defined in [XDM Business Account](../../../mixins/account/account-crm.schema.md#xdmaccountorganization)
 
 ### xdm:accountOrganization Type
 
 
-* [Organization](../../../datatypes/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization`
+* [Account Organization](../../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 

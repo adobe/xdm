@@ -5,40 +5,45 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/proposition-attribution-detail",
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Proposition Acceptance Details",
+  "title": "Experience Event - Proposition Interaction Detail",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "A decision response is used to link an experience event that is a response to a prior decision/proposition events. Each decision output has a unique ID that can be echo'ed back with an experience event. The decision is assumed to have contributed to the experience event and is now attributed with by it.",
+  "description": "A proposition interaction is used to link an experience event to a prior decision proposition. Each decision output has a unique event ID that can be sent back with an experience event. The decision proposition is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
-    "proposition-attribution-detail-datatype": {
+    "proposition-interaction-detail-datatype": {
       "type": "object",
       "properties": {
         "xdm:items": {
           "type": "array",
-          "title": "Attributed Items",
-          "description": "One or more of the items that this experience event is attributed to. Those items  were returned as results of the decision for a requested scope. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" action, then this experience event may record the user's reaction with an event type \"custom.savedToWatchLater\". ",
+          "title": "Selected Options",
+          "description": "One or more of the decision options that this experience event is related to. Those items were returned as output of the decision for a requested scope. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event would record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array. ",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail",
-            "description": "An item from the decision proposition's options. See 'selections' of the 'Decision Proposition Detail'."
+            "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in."
           }
         },
         "xdm:decisionEventID": {
           "type": "string",
           "title": "Decision Event Identifier",
-          "description": "The unique identifier of the decision event. For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique propositionID. See https://ns.adobe.com/experience/decisioning/proposition."
+          "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition."
+        },
+        "xdm:decisionEventDetails": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
+          "title": "Decision Event Details",
+          "description": "A snapshot of properties from the decision event when it occured."
         },
         "xdm:decisionScope": {
           "type": "string",
           "title": "Decision Event Scope",
-          "description": "The scope that is associated with the decision's items reported in the 'xdm:selection' property. This is the same scope that was in effect when the decision was made that proposed the selected items."
+          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
         },
         "xdm:decisionScopeDetails": {
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
           "title": "Decision Event Scope Details",
-          "description": "A snapshot of properties from the scope of the decision when it was made.."
+          "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
         }
       }
     }
@@ -48,7 +53,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/proposition-attribution-detail-datatype"
+      "$ref": "#/definitions/proposition-interaction-detail-datatype"
     }
   ]
 }

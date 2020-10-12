@@ -54,11 +54,13 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus Known Values
 | Value | Description |
 |-------|-------------|
-| `error` | Mesage processing failed. |
-| `exclude` | Messageprofile is filtered out for sending the message |
-| `sent` | Messages such as Email, SMS, Push that have been dispatched to a person&#39;s account, address, or device. |
-| `bounce` | Message failed to deliver, and no longer will be retried. |
-| `delay` | message failed to deliver, but will be retry after next schedule time. |
+| `error` | Message processing failed |
+| `exclude` | Message profile filtered out |
+| `sent` | Message sent |
+| `bounce` | Message bounced |
+| `delay` | Message delayed |
+| `duplicate` | Duplicate message skipped |
+| `denylist` | Invalid destination skipped |
 
 
 

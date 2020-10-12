@@ -8,7 +8,7 @@
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-privacy",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Experience event privacy mixin",
-    "description": "Experience event privacy schema captures consent information on the hit.",
+    "description": "Use for consent information such as consent format and consent to personal data.",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,

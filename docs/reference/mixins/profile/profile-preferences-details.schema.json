@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "This mixin is used to capture information regarding individual preferences in the profile, such as time zone, preferred language, and email format (rich text or plain text).",
+    "description": "Use for information regarding preferences such as opt-in or opt-out, time zone, preferred language, and email format.",
     "definitions": {
         "profile-preferences-details": {
             "properties": {

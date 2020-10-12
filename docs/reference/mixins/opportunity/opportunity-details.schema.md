@@ -1,5 +1,5 @@
 
-# Opportunity Details Schema
+# XDM Business Opportunity Details Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/opportunity-details
@@ -12,35 +12,35 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity/opportunity-details.schema.json](mixins/opportunity/opportunity-details.schema.json) |
 ## Schema Hierarchy
 
-* Opportunity Details `https://ns.adobe.com/xdm/mixins/opportunity-details`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* XDM Business Opportunity Details `https://ns.adobe.com/xdm/mixins/opportunity-details`
+  * [Positive Currency](../../datatypes/positive-currency.schema.md) `https://ns.adobe.com/xdm/datatypes/positive-currency`
 
 
-## Opportunity Details Example
+## XDM Business Opportunity Details Example
 ```json
 {}
 ```
 
-# Opportunity Details Properties
+# XDM Business Opportunity Details Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
-| [xdm:campaignID](#xdmcampaignid) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:closeDate](#xdmclosedate) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:expectedRevenue](#xdmexpectedrevenue) | `number` | Optional | `0` | Opportunity Details (this schema) |
-| [xdm:fiscalQuarter](#xdmfiscalquarter) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:fiscalYear](#xdmfiscalyear) | `integer` | Optional |  | Opportunity Details (this schema) |
-| [xdm:forecastCategory](#xdmforecastcategory) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:forecastCategoryName](#xdmforecastcategoryname) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:isClosed](#xdmisclosed) | `boolean` | Optional |  | Opportunity Details (this schema) |
-| [xdm:isWon](#xdmiswon) | `boolean` | Optional |  | Opportunity Details (this schema) |
-| [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:leadSource](#xdmleadsource) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:nextStep](#xdmnextstep) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:opportunityAmount](#xdmopportunityamount) | `number` | Optional | `0` | Opportunity Details (this schema) |
-| [xdm:opportunityOwnerID](#xdmopportunityownerid) | `string` | Optional |  | Opportunity Details (this schema) |
-| [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | Opportunity Details (this schema) |
-| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | Opportunity Details (this schema) |
+| [xdm:campaignID](#xdmcampaignid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:closeDate](#xdmclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:expectedRevenue](#xdmexpectedrevenue) | Positive Currency | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:fiscalQuarter](#xdmfiscalquarter) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:fiscalYear](#xdmfiscalyear) | `integer` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:forecastCategory](#xdmforecastcategory) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:forecastCategoryName](#xdmforecastcategoryname) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:isClosed](#xdmisclosed) | `boolean` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:isWon](#xdmiswon) | `boolean` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:leadSource](#xdmleadsource) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:nextStep](#xdmnextstep) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:opportunityAmount](#xdmopportunityamount) | Positive Currency | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:opportunityOwnerID](#xdmopportunityownerid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | XDM Business Opportunity Details (this schema) |
+| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | XDM Business Opportunity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:campaignID
@@ -91,16 +91,13 @@ Calculated revenue based on the Amount and Probability.
 
 `xdm:expectedRevenue`
 * is optional
-* type: `number`
-* default: `0`
+* type: Positive Currency
 * defined in this schema
 
 ### xdm:expectedRevenue Type
 
 
-`number`
-* minimum value: `0`
-
+* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
 
 
 
@@ -299,16 +296,13 @@ Estimated total sale amount.
 
 `xdm:opportunityAmount`
 * is optional
-* type: `number`
-* default: `0`
+* type: Positive Currency
 * defined in this schema
 
 ### xdm:opportunityAmount Type
 
 
-`number`
-* minimum value: `0`
-
+* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
 
 
 

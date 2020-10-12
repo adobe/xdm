@@ -33,7 +33,7 @@
           "meta:enum": {
             "error": "Mesage processing failed.",
             "exclude": "Messageprofile is filtered out for sending the message",
-            "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
+            "sent": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
             "bounce": "Message failed to deliver, and no longer will be retried.",
             "delay": "message failed to deliver, but will be retry after next schedule time.",
             "duplicate": "message is skipped since it's a duplicate for this groupID/pushtoken pairing ",
@@ -97,5 +97,5 @@
       "$ref": "#/definitions/messageDeliveryfeedback"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

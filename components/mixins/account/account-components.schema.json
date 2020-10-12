@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/account-components",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Account Components",
+  "title": "XDM Business Account Components",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -57,9 +57,6 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/account-components"
     }

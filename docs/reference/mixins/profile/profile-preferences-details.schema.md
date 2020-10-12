@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-preferences-details
 ```
 
-This mixin is used to capture information regarding individual preferences in the profile, such as time zone, preferred language, and email format (rich text or plain text).
+Use for information regarding preferences such as opt-in or opt-out, time zone, preferred language, and email format.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

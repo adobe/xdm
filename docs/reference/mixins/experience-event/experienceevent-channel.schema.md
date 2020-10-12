@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/experienceevent-channel
 ```
 
-This mixin is used to capture channel information related to an ExperienceEvent, including the channel ID, channel type, media type, and location type.
+Use for channel information such as ID, channel type, media type, and location type.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

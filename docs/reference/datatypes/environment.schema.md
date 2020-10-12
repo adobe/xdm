@@ -53,12 +53,15 @@ Information about the surrounding situation the event observation occurred, spec
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | Environment (this schema) |
 | [xdm:connectionType](#xdmconnectiontype) | `enum` | Optional | Environment (this schema) |
 | [xdm:domain](#xdmdomain) | `string` | Optional | Environment (this schema) |
+| [xdm:duration](#xdmduration) | `integer` | Optional | Environment (this schema) |
 | [xdm:ipV4](#xdmipv4) | `string` | Optional | Environment (this schema) |
 | [xdm:ipV6](#xdmipv6) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystem](#xdmoperatingsystem) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVendor](#xdmoperatingsystemvendor) | `string` | Optional | Environment (this schema) |
 | [xdm:operatingSystemVersion](#xdmoperatingsystemversion) | `string` | Optional | Environment (this schema) |
+| [xdm:previousScreen](#xdmpreviousscreen) | `string` | Optional | Environment (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Environment (this schema) |
+| [xdm:viewedScreen](#xdmviewedscreen) | `string` | Optional | Environment (this schema) |
 | [xdm:viewportHeight](#xdmviewportheight) | `integer` | Optional | Environment (this schema) |
 | [xdm:viewportWidth](#xdmviewportwidth) | `integer` | Optional | Environment (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -244,6 +247,27 @@ The domain of the users ISP.
 
 
 
+## xdm:duration
+### Duration
+
+The number of milliseconds that the user was on the screen.
+
+`xdm:duration`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:duration Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
 ## xdm:ipV4
 ### IPv4
 
@@ -346,6 +370,26 @@ The full version identifier for the operating system used when the observation w
 
 
 
+## xdm:previousScreen
+### Previous Screen
+
+The frinedly name assigned to the screen the user was on prior to the viewedScreen.
+
+`xdm:previousScreen`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:previousScreen Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:type
 ### Type
 
@@ -366,6 +410,26 @@ The value of this property **must** be equal to one of the [known values below](
 | `iot` | Internet of things |
 | `external` | External system |
 | `widget` | Application extension |
+
+
+
+
+## xdm:viewedScreen
+### Viewed Screen
+
+The friendly name assigned to the screen that the user was on.
+
+`xdm:viewedScreen`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:viewedScreen Type
+
+
+`string`
+
+
 
 
 

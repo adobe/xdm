@@ -14,11 +14,6 @@
   "definitions": {
     "environment": {
       "properties": {
-        "xdm:sessionID": {
-          "title": "Session ID",
-          "type": "string",
-          "description": "Unique ID for user activity session."
-        },
         "xdm:type": {
           "title": "Type",
           "type": "string",

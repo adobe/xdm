@@ -1,0 +1,58 @@
+{
+  "xdm:choices": {
+    "xdm:consents": {
+      "xdm:dataCollection": {
+        "xdm:choice": "yes",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "consent"
+      },
+      "xdm:deviceLinking": {
+        "xdm:basisOfProcessing": "vital_interest"
+      },
+      "xdm:pseudonymousAnalysis": {
+        "xdm:choice": "no"
+      }
+    },
+    "xdm:personalizationPreferences": {
+      "xdm:anyPersonalization": {
+        "xdm:choice": "unknown",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "consent"
+      },
+      "xdm:email": {
+        "xdm:choice": "yes"
+      },
+      "xdm:pushNotifications": {
+        "xdm:choice": "no",
+        "xdm:basisOfProcessing": "legitimate_interest",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00"
+      }
+    },
+    "xdm:marketingPreferences": {
+      "xdm:preferredChannel": "email",
+      "xdm:anyMarketing": {
+        "xdm:choice": "yes"
+      },
+      "xdm:email": {
+        "xdm:choice": "yes"
+      },
+      "xdm:pushNotifications": {
+        "xdm:choice": "no",
+        "xdm:reason": "not relevant"
+      },
+      "xdm:iot": {
+        "xdm:choice": "yes",
+        "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+        "xdm:basisOfProcessing": "legitimate_interest"
+      }
+    }
+  },
+  "xdm:choicesMetadata": {
+    "xdm:version": "1.0.0",
+    "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+    "xdm:source": "BestCMP",
+    "xdm:userIDfromSource": "12F5B902C89EA592",
+    "xdm:userCountryRegionCode": "US-CA",
+    "xdm:countryRegionSource": "ip"
+  }
+}

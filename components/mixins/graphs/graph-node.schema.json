@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Graph Node/Vertex Schema",
   "type": "object",
-  "description": "XDM Schema for a graph Node/Vertex.",
+  "description": "Use for node information such as data source, type, and label.",
   "meta:auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,

@@ -1,5 +1,5 @@
 
-# Opportunity Components Schema
+# XDM Business Opportunity Components Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/opportunity-components
@@ -10,13 +10,8 @@ This Mixin is used to capture B2B Opportunity specific relationship attributes t
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity/opportunity-components.schema.json](mixins/opportunity/opportunity-components.schema.json) |
-## Schema Hierarchy
 
-* Opportunity Components `https://ns.adobe.com/xdm/mixins/opportunity-components`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-
-
-## Opportunity Components Example
+## XDM Business Opportunity Components Example
 ```json
 {
   "xdm:sourceOpportunityID": "1234trbkg8",
@@ -27,11 +22,11 @@ This Mixin is used to capture B2B Opportunity specific relationship attributes t
 }
 ```
 
-# Opportunity Components Properties
+# XDM Business Opportunity Components Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:opportunityComponents](#xdmopportunitycomponents) | `object[]` | Optional | Opportunity Components (this schema) |
+| [xdm:opportunityComponents](#xdmopportunitycomponents) | `object[]` | Optional | XDM Business Opportunity Components (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:opportunityComponents

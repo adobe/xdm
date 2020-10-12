@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Field to capture the details of the software used to collect the ExperienceEvent.",
+    "description": "Use to capture information related to the software used to collect an ExperienceEvent such as environment, name, and version.",
     "definitions": {
         "experienceevent-implementation-details": {
             "properties": {

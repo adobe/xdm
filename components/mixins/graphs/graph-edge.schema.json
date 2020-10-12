@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Graph Edge",
   "type": "object",
-  "description": "XDM graph schema for edge/relationship between two nodes/vertices.",
+  "description": "Use for information regarding the relationship between two nodes or vertices such as data provider, and edge information.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],

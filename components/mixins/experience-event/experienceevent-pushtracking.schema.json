@@ -25,7 +25,7 @@
               "type": "object",
               "description": "End user clicked custom action in the push notification",
               "properties": {
-                "xdm:actionId": {
+                "xdm:actionID": {
                   "title": "action ID",
                   "type": "string",
                   "description": "user clicked custom action identifier"
@@ -37,7 +37,7 @@
                 }
               }
             },
-            "xdm:pushProviderMessageId": {
+            "xdm:pushProviderMessageID": {
               "title": "Push Provider message ID",
               "type": "string",
               "description": "ID assigned to this notification as assigned by the push provider"

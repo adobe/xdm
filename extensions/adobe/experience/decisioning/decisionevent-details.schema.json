@@ -19,6 +19,24 @@
           "title": "Experience Reference",
           "type": "string",
           "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
+        },
+        "xdm:algorithmID": {
+          "title": "Algorithm Reference",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Unique identifier for the algorithm used to make the decision, if applicable."
+        },
+        "xdm:trafficType": {
+          "title": "Traffic Type",
+          "type": "string",
+          "description": "Type of traffic for which the decision was made.",
+          "meta:enum": {
+            "testing": "Testing Traffic",
+            "targeted": "Targeted Traffic",
+            "random": "Random Traffic",
+            "contextual": "Contextual Traffic",
+            "noncontextual": "Non-Contextual Traffic"
+          }
         }
       }
     }

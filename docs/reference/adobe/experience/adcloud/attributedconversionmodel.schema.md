@@ -557,6 +557,8 @@ The primary event type for this time-series record.
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
+| `pushTracking.applicationOpened` | Push Tracking Application Opened |
+| `pushTracking.customAction` | Push Tracking Custom Action |
 
 
 

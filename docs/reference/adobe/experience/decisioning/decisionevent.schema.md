@@ -17,7 +17,7 @@ A decision event is used to capture observations about the outcome and context o
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
   * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Decision Proposition Reference](proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
-  * [Decision Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
+  * [Decision Event - Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
 
 
 ## XDM Decision Event Example
@@ -96,8 +96,9 @@ A decision event is used to capture observations about the outcome and context o
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | **Required** | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
-| [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey) |
-| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
+| [https://ns.adobe.com/experience/decisioning/experienceID](#httpsnsadobecomexperiencedecisioningexperienceid) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningexperienceid) |
+| [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey) |
+| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
 | [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | **Required** | [Decision Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
@@ -125,15 +126,35 @@ A unique identifier for the time-series event.
 
 
 
-## https://ns.adobe.com/experience/decisioning/propositionContentKey
-### Proposition Content Key
+## https://ns.adobe.com/experience/decisioning/experienceID
+### Experience Reference
 
-Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.
+Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value.
+
+`https://ns.adobe.com/experience/decisioning/experienceID`
+* is optional
+* type: `string`
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningexperienceid)
+
+### https://ns.adobe.com/experience/decisioning/experienceID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/decisioning/propositionContentKey
+### DEPRECATED: Proposition Content Key
+
+DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.
 
 `https://ns.adobe.com/experience/decisioning/propositionContentKey`
 * is optional
 * type: `string`
-* defined in [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey)
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey)
 
 ### https://ns.adobe.com/experience/decisioning/propositionContentKey Type
 
@@ -154,7 +175,7 @@ Details about the results of the decision. An array providing the output of a si
 * is optional
 * type: Decision Proposition Detail
 
-* defined in [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails)
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails)
 
 ### https://ns.adobe.com/experience/decisioning/propositionDetails Type
 

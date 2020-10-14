@@ -1,5 +1,5 @@
 
-# Decision Reporting Dimensions Schema
+# Decision Event - Reporting Dimensions Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/decisionevent-all
@@ -12,11 +12,11 @@ Mixin for Decision Events that adds dimensions for rollup by organization, conta
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent-all.schema.json](adobe/experience/decisioning/decisionevent-all.schema.json) |
 ## Schema Hierarchy
 
-* Decision Reporting Dimensions `https://ns.adobe.com/experience/decisioning/decisionevent-all`
+* Decision Event - Reporting Dimensions `https://ns.adobe.com/experience/decisioning/decisionevent-all`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Decision Reporting Dimensions Example
+## Decision Event - Reporting Dimensions Example
 ```json
 {
   "https://ns.adobe.com/adobecloudplatform/ims/organizationID": "0D8E32C65A8A91520A494008@AdobeOrg",
@@ -24,14 +24,14 @@ Mixin for Decision Events that adds dimensions for rollup by organization, conta
 }
 ```
 
-# Decision Reporting Dimensions Properties
+# Decision Event - Reporting Dimensions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/adobecloudplatform/ims/organizationID](#httpsnsadobecomadobecloudplatformimsorganizationid) | `string` | Optional | Decision Reporting Dimensions (this schema) |
-| [https://ns.adobe.com/experience/decisioning/batchID](#httpsnsadobecomexperiencedecisioningbatchid) | `string` | Optional | Decision Reporting Dimensions (this schema) |
-| [https://ns.adobe.com/experience/decisioning/containerID](#httpsnsadobecomexperiencedecisioningcontainerid) | `string` | Optional | Decision Reporting Dimensions (this schema) |
-| [https://ns.adobe.com/experience/decisioning/decisionRequestID](#httpsnsadobecomexperiencedecisioningdecisionrequestid) | `string` | Optional | Decision Reporting Dimensions (this schema) |
+| [https://ns.adobe.com/adobecloudplatform/ims/organizationID](#httpsnsadobecomadobecloudplatformimsorganizationid) | `string` | Optional | Decision Event - Reporting Dimensions (this schema) |
+| [https://ns.adobe.com/experience/decisioning/batchID](#httpsnsadobecomexperiencedecisioningbatchid) | `string` | Optional | Decision Event - Reporting Dimensions (this schema) |
+| [https://ns.adobe.com/experience/decisioning/containerID](#httpsnsadobecomexperiencedecisioningcontainerid) | `string` | Optional | Decision Event - Reporting Dimensions (this schema) |
+| [https://ns.adobe.com/experience/decisioning/decisionRequestID](#httpsnsadobecomexperiencedecisioningdecisionrequestid) | `string` | Optional | Decision Event - Reporting Dimensions (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/adobecloudplatform/ims/organizationID

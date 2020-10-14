@@ -14,23 +14,12 @@ A decision proposition detail is used to capture the output of a decisioning act
 
 * Decision Proposition Detail `https://ns.adobe.com/experience/decisioning/proposition-detail`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Decision Activity Snapshot](activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
+  * [Decision Activity Detail](activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
   * [Decision Placement Detail](placement-detail.schema.md) `https://ns.adobe.com/experience/decisioning/placement-detail`
   * [Decision Option Detail](option-detail.schema.md) `https://ns.adobe.com/experience/decisioning/option-detail`
 
 
 ## Decision Proposition Detail Examples
-
-```json
-{
-  "xdm:activity": {
-    "xdm:id": "xcore:offer-activity:f203512e02542b5"
-  },
-  "xdm:fallback": {
-    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-  }
-}
-```
 
 ```json
 {
@@ -81,12 +70,23 @@ A decision proposition detail is used to capture the output of a decisioning act
 }
 ```
 
+```json
+{
+  "xdm:activity": {
+    "xdm:id": "xcore:offer-activity:f203512e02542b5"
+  },
+  "xdm:fallback": {
+    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+  }
+}
+```
+
 
 # Decision Proposition Detail Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:activity](#xdmactivity) | Decision Activity Snapshot | Optional | Decision Proposition Detail (this schema) |
+| [xdm:activity](#xdmactivity) | Decision Activity Detail | Optional | Decision Proposition Detail (this schema) |
 | [xdm:channel](#xdmchannel) | `string` | Optional | Decision Proposition Detail (this schema) |
 | [xdm:fallback](#xdmfallback) | Decision Option Detail | Optional | Decision Proposition Detail (this schema) |
 | [xdm:placement](#xdmplacement) | Decision Placement Detail | Optional | Decision Proposition Detail (this schema) |
@@ -100,13 +100,13 @@ Snapshot of the activity for which the proposition was made. The object contains
 
 `xdm:activity`
 * is optional
-* type: Decision Activity Snapshot
+* type: Decision Activity Detail
 * defined in this schema
 
 ### xdm:activity Type
 
 
-* [Decision Activity Snapshot](activity-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/activity-detail`
+* [Decision Activity Detail](activity-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/activity-detail`
 
 
 

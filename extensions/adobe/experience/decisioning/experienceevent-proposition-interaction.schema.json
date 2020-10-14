@@ -1,0 +1,42 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-interaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Experience Event - Proposition Interaction",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "This mixin is used capture information regarding an interaction, response or reaction to one or more prior propositions. Each decision output has a unique ID that can be sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
+  "definitions": {
+    "decisioning-experienceevent-all": {
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositions": {
+          "title": "Involved Propositions",
+          "type": "array",
+          "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "#/definitions/decisioning-experienceevent-all"
+    }
+  ]
+}

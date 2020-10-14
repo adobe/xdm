@@ -2,6 +2,7 @@
   "$id": "https://ns.adobe.com/airship/airship-event-extension",
   "title": "Airship Event Extension",
   "description": "This mixin adds Airship specific event fields.",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

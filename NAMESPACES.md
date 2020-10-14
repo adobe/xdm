@@ -45,6 +45,9 @@ XDM uses the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) syntax to assig
 			},
 			"customerA:internalSku": { //customera is the namespace (tenantId), internalSku is the field name
 				"type": "number"
+			},
+			"https://ns.thirdparty.com/color": { //https://ns.thirdparty.com is the namespace, color is the fieldname
+				"type": "string"
 			}
 		}
 	}
@@ -115,6 +118,25 @@ The use of JSON-LD within XDM was put in place before AEP started using XDM for 
 					"type": "number"
 				}
 			}
+		},
+		"_ns": {
+			"type": "object",
+			"properties": {
+				"thirdparty": { 
+					"type": "object"
+					"properties": {
+						"com": {
+							"type": "object",
+							"properties": {
+								"color": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
 		}
+
 	}
 

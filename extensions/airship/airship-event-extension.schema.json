@@ -1,5 +1,6 @@
 {
   "$id": "https://ns.airship.com/airship-event-extension",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Airship Event Extension",
   "description": "This mixin adds Airship specific event fields.",
   "type": "object",

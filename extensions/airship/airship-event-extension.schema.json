@@ -111,7 +111,8 @@
             "https://ns.airship.com/pushTime": {
               "title": "Push Time",
               "description": "The UTC time when the push occurred.",
-              "type": "date-time"
+              "type": "string",
+              "format": "date-time"
             }
           }
         },
@@ -164,7 +165,8 @@
             "https://ns.airship.com/pushTime": {
               "title": "Push Time",
               "description": "The UTC time when the push occurred.",
-              "type": "date-time"
+              "type": "string",
+              "format": "date-time"
             }
           }
         },
@@ -242,7 +244,8 @@
             "https://ns.airship.com/commercialOptedIn": {
               "title": "Commercial Opted In Date",
               "description": "The date and time when the user opted into commercial email messages.",
-              "type": "date-time"
+              "type": "string",
+              "format": "date-time"
             },
             "https://ns.airship.com/bounceClass": {
               "title": "Bounce Class",

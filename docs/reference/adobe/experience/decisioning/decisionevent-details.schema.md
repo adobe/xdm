@@ -86,8 +86,6 @@ The class of algorithm/policy that was used to serve this decision. Contextual i
 ### xdm:trafficType Known Values
 | Value | Description |
 |-------|-------------|
-| `testing` | Testing Traffic |
-| `targeted` | Targeted Traffic |
 | `random` | Random Traffic |
 | `contextual` | Contextual Traffic |
 | `noncontextual` | Non-Contextual Traffic |

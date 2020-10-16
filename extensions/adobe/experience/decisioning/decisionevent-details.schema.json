@@ -31,8 +31,6 @@
           "type": "string",
           "description": "The class of algorithm/policy that was used to serve this decision. Contextual indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
           "meta:enum": {
-            "testing": "Testing Traffic",
-            "targeted": "Targeted Traffic",
             "random": "Random Traffic",
             "contextual": "Contextual Traffic",
             "noncontextual": "Non-Contextual Traffic"

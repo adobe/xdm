@@ -41,10 +41,6 @@
             "$ref": "#/definitions/b2b-source"
         }
     ],
-    "required": [
-        "xdm:systemID",
-        "xdm:ID"
-    ],
     "meta:status": "experimental",
     "examples": [
         {

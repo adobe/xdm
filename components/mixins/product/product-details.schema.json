@@ -27,71 +27,6 @@
           "type": "string",
           "description": "Global Trade Item Number of the product."
         },
-        "xdm:department": {
-          "title": "Department",
-          "type": "string",
-          "description": "Primary department the product is associated with."
-        },
-        "xdm:brand": {
-          "title": "Brand",
-          "type": "string",
-          "description": "The brand of the product."
-        },
-        "xdm:material": {
-          "title": "Material",
-          "type": "string",
-          "description": "Primary material of the product construction."
-        },
-        "xdm:gender": {
-          "title": "Gender",
-          "type": "string",
-          "description": "Gender the product is marketed to.",
-          "meta:enum": {
-            "male": "For men",
-            "female": "For women",
-            "unisex": "For both men and women",
-            "unknown": "Unknown"
-          }
-        },
-        "xdm:size": {
-          "title": "Size",
-          "type": "number",
-          "description": "Standard product size for the product."
-        },
-        "xdm:unitOfMeasure": {
-          "title": "Unit of measure",
-          "type": "string",
-          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
-        },
-        "xdm:countryOfOrigin": {
-          "title": "Country of origin",
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements."
-        },
-        "xdm:listPrice": {
-          "title": "List price",
-          "type": "number",
-          "description": "Default price of the product before sales and discounting, in the `currencyCode` currency."
-        },
-        "xdm:currencyCode": {
-          "title": "Currency code",
-          "type": "string",
-          "examples": ["USD", "EUR"],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
-        },
-        "xdm:originalSaleDate": {
-          "title": "Original sale date",
-          "type": "string",
-          "format": "date-time",
-          "description": "First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-        },
-        "xdm:productURL": {
-          "title": "Product URL",
-          "type": "string",
-          "description": "The URL for the primary product view of the product page."
-        },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
@@ -101,36 +36,6 @@
           "title": "Product Search Keywords",
           "type": "string",
           "description": "The search keywords associated with the product."
-        },
-        "xdm:manufacturerName": {
-          "title": "Manufacturer name",
-          "type": "string",
-          "description": "Manufacturer of the product."
-        },
-        "xdm:supplierName": {
-          "title": "Supplier name",
-          "type": "string",
-          "description": "The distributor of the product."
-        },
-        "xdm:productCategoryName": {
-          "title": "Product Category Name",
-          "type": "string",
-          "description": "friendly name of the product category."
-        },
-        "xdm:productCategoryDescription": {
-          "title": "Product Catelog Description",
-          "type": "string",
-          "description": "Catelog description of the product."
-        },
-        "xdm:productCatelogName": {
-          "title": "Product Catelog Name",
-          "type": "string",
-          "description": "friendly name of the product catelog."
-        },
-        "xdm:productCatelogDescription": {
-          "title": "Product Catelog Description",
-          "type": "string",
-          "description": "Catelog description of the product."
         },
         "xdm:productCreateDate": {
           "title": "Product creation date",

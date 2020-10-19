@@ -33,7 +33,13 @@
         "xdm:blocklisted": {
           "title": "Blocklist Flag",
           "type": "boolean",
-          "description": "Indicates whether the push token is blocked by the push provider. "
+          "meta:status": "deprecated",
+          "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead."
+        },
+        "xdm:denylisted": {
+          "title": "Denylist Flag",
+          "type": "boolean",
+          "description": "Indicates whether the push token is blocked by the push provider."
         },
         "xdm:appID": {
           "title": "Application Identifier",

@@ -1,4 +1,10 @@
 {
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],  
   "$id": "https://ns.airship.com/airship-event-extension",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Airship Event Extension",
@@ -8,7 +14,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "properties": {
-    "airship:offsetId": {
+    "airship:offsetID": {
       "title": "Event Offset Id",
       "type": "string",
       "description": "An identifier that represents the events location in the Airship event stream and can be used for troubleshooting or handling duplicate events."
@@ -42,17 +48,17 @@
       "description": "Contains Airship specific event body fields.",
       "type": "object",
       "properties": {
-        "airship:pushId": {
+        "airship:pushID": {
           "title": "Push ID",
           "description": "A unique identifier for a push operation.",
           "type": "string"
         },
-        "airship:groupId": {
+        "airship:groupID": {
           "title": "Airship Group ID",
           "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
           "type": "string"
         },
-        "airship:variantId": {
+        "airship:variantID": {
           "title": "Airship Variant ID",
           "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
           "type": "string"
@@ -93,17 +99,17 @@
                 }
               }
             },
-            "airship:pushId": {
+            "airship:pushID": {
               "title": "Push ID",
               "description": "A unique identifier for a push operation.",
               "type": "string"
             },
-            "airship:groupId": {
+            "airship:groupID": {
               "title": "Airship Group ID",
               "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
               "type": "string"
             },
-            "airship:variantId": {
+            "airship:variantID": {
               "title": "Airship Variant ID",
               "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
               "type": "string"
@@ -147,17 +153,17 @@
                 }
               }
             },
-            "airship:pushId": {
+            "airship:pushID": {
               "title": "Push ID",
               "description": "A unique identifier for a push operation.",
               "type": "string"
             },
-            "airship:groupId": {
+            "airship:groupID": {
               "title": "Airship Group ID",
               "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
               "type": "string"
             },
-            "airship:variantId": {
+            "airship:variantID": {
               "title": "Airship Variant ID",
               "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
               "type": "string"
@@ -215,7 +221,23 @@
             "mobile_terminated_message",
             "opted_out",
             "uninstall"
-          ]
+          ],
+          "meta:enum": {
+            "bounce": "bounce",
+            "create_and_send": "Create and send",
+            "registration": "Registration",
+            "api_initiate_opt_in": "API initiate opt in",
+            "carrier_deactivation": "Carrier deactivation",
+            "custom_keyword_response": "Custom keyword response",
+            "mobile_create_channel": "Mobile create channel",
+            "mobile_keyword_matched": "Mobile keyword matched",
+            "mobile_keyword_unmatched": "Mobile keyword unmatched",
+            "mobile_opt_in": "Mobile opt in",
+            "mobile_opt_out": "Mobile opt out",
+            "mobile_terminated_message": "Mobile terminated message",
+            "opted_out": "Opted out",
+            "uninstall": "Uninstall"
+          }
         },
         "airship:complianceProperties": {
           "title": "Compliance Event Properties",
@@ -239,7 +261,12 @@
                 "create",
                 "update",
                 "unsubscribe"
-              ]
+              ],
+              "meta:enum": {
+                "create": "Create",
+                "update": "Update",
+                "unsubscribe": "Unsubscribe"
+              }
             },
             "airship:commercialOptedIn": {
               "title": "Commercial Opted In Date",
@@ -283,7 +310,7 @@
           "description": "A friendly name for the region or geofence; may be provided from a third-party location partner.",
           "type": "string"
         },
-        "airship:regionId": {
+        "airship:regionID": {
           "title": "Region/Geofence Identifier",
           "description": "The unique region identifier from the originating system or location partner.",
           "type": "string"

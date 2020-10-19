@@ -8,27 +8,27 @@
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "properties": {
-    "https://ns.airship.com/offsetId": {
+    "airship:offsetId": {
       "title": "Event Offset Id",
       "type": "string",
       "description": "An identifier that represents the events location in the Airship event stream and can be used for troubleshooting or handling duplicate events."
     },
-    "https://ns.airship.com/device": {
+    "airship:device": {
       "title": "Airship Device",
       "description": "Contains Airship specific device attributes.",
       "type": "object",
       "properties": {
-        "https://ns.airship.com/attributes": {
+        "airship:attributes": {
           "title": "Airship Device Attributes",
           "description": "Attributes specific to devices in Airship.",
           "type": "object",
           "properties": {
-            "https://ns.airship.com/localeVariant": {
+            "airship:localeVariant": {
               "title": "Airship Locale Variant",
               "description": "The language locale variant if one is reported for the device..",
               "type": "string"
             },
-            "https://ns.airship.com/uaSdkVersion": {
+            "airship:uaSdkVersion": {
               "title": "Airship SDK Version",
               "description": "The version of the Airship SDK used in the app.",
               "type": "string"
@@ -37,48 +37,48 @@
         }
       }
     },
-    "https://ns.airship.com/body": {
+    "airship:body": {
       "title": "Airship Event Body",
       "description": "Contains Airship specific event body fields.",
       "type": "object",
       "properties": {
-        "https://ns.airship.com/pushId": {
+        "airship:pushId": {
           "title": "Push ID",
           "description": "A unique identifier for a push operation.",
           "type": "string"
         },
-        "https://ns.airship.com/groupId": {
+        "airship:groupId": {
           "title": "Airship Group ID",
           "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
           "type": "string"
         },
-        "https://ns.airship.com/variantId": {
+        "airship:variantId": {
           "title": "Airship Variant ID",
           "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
           "type": "string"
         },
-        "https://ns.airship.com/alerting": {
+        "airship:alerting": {
           "title": "Alerting Push",
           "description": "If true, the send event was alerting. Alerting send event has notification text, badge, or sound.",
           "type": "boolean"
         },
-        "https://ns.airship.com/triggeringPush": {
+        "airship:triggeringPush": {
           "title": "Triggering Push",
           "description": "The specific push notification details associated with an event. An associated push helps you trace an event to the original notification or operation.An associated push object may specify a `time`, if the push was a singular operation sent at a defined time. Otherwise, the object will include a `group_id` if the push was sent at a relative time (`best_time` or `local_time`) an automation pipeline, or another operation resulting in multiple `push_id`s.",
           "type": "object",
           "properties": {
-            "https://ns.airship.com/campaign": {
+            "airship:campaign": {
               "title": "Airship Campaigns",
               "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
               "type": "object",
               "properties": {
-                "https://ns.airship.com/campaigns": {
+                "airship:campaigns": {
                   "title": "Airship Campaigns",
                   "description": "An object listing the campaigns a push specification is associated with.",
                   "type": "object",
                   "isRequired": false,
                   "properties": {
-                    "https://ns.airship.com/categories": {
+                    "airship:categories": {
                       "title": "Airship Campaign Categories",
                       "description": "An array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                       "type": "array",
@@ -93,22 +93,22 @@
                 }
               }
             },
-            "https://ns.airship.com/pushId": {
+            "airship:pushId": {
               "title": "Push ID",
               "description": "A unique identifier for a push operation.",
               "type": "string"
             },
-            "https://ns.airship.com/groupId": {
+            "airship:groupId": {
               "title": "Airship Group ID",
               "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
               "type": "string"
             },
-            "https://ns.airship.com/variantId": {
+            "airship:variantId": {
               "title": "Airship Variant ID",
               "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
               "type": "string"
             },
-            "https://ns.airship.com/pushTime": {
+            "airship:pushTime": {
               "title": "Push Time",
               "description": "The UTC time when the push occurred.",
               "type": "string",
@@ -116,23 +116,23 @@
             }
           }
         },
-        "https://ns.airship.com/lastDelivered": {
+        "airship:lastDelivered": {
           "title": "Last Delivered",
           "description": "Identifies the last push notification the audience received before the event. Absent if the last push occurred more than 12 hours ago.",
           "type": "object",
           "properties": {
-            "https://ns.airship.com/campaign": {
+            "airship:campaign": {
               "title": "Airship Campaigns",
               "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
               "type": "object",
               "properties": {
-                "https://ns.airship.com/campaigns": {
+                "airship:campaigns": {
                   "title": "Airship Campaigns",
                   "description": "An object listing the campaigns a push specification is associated with.",
                   "type": "object",
                   "isRequired": false,
                   "properties": {
-                    "https://ns.airship.com/categories": {
+                    "airship:categories": {
                       "title": "Airship Campaign Categories",
                       "description": "An array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                       "type": "array",
@@ -147,22 +147,22 @@
                 }
               }
             },
-            "https://ns.airship.com/pushId": {
+            "airship:pushId": {
               "title": "Push ID",
               "description": "A unique identifier for a push operation.",
               "type": "string"
             },
-            "https://ns.airship.com/groupId": {
+            "airship:groupId": {
               "title": "Airship Group ID",
               "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
               "type": "string"
             },
-            "https://ns.airship.com/variantId": {
+            "airship:variantId": {
               "title": "Airship Variant ID",
               "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
               "type": "string"
             },
-            "https://ns.airship.com/pushTime": {
+            "airship:pushTime": {
               "title": "Push Time",
               "description": "The UTC time when the push occurred.",
               "type": "string",
@@ -170,18 +170,18 @@
             }
           }
         },
-        "https://ns.airship.com/campaign": {
+        "airship:campaign": {
           "title": "Airship Campaigns",
           "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
           "type": "object",
           "properties": {
-            "https://ns.airship.com/campaigns": {
+            "airship:campaigns": {
               "title": "Airship Campaigns",
               "description": "An object listing the campaigns a push specification is associated with.",
               "type": "object",
               "isRequired": false,
               "properties": {
-                "https://ns.airship.com/categories": {
+                "airship:categories": {
                   "title": "Airship Campaign Categories",
                   "description": "An array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                   "type": "array",
@@ -196,7 +196,7 @@
             }
           }
         },
-        "https://ns.airship.com/complianceEventType": {
+        "airship:complianceEventType": {
           "title": "Compliance Event Type",
           "description": "The type of compliance event for proving data-safety regulation compliance for email and SMS channel-related events.",
           "type": "string",
@@ -217,7 +217,7 @@
             "uninstall"
           ]
         },
-        "https://ns.airship.com/complianceProperties": {
+        "airship:complianceProperties": {
           "title": "Compliance Event Properties",
           "description": "Additional properties for a compliance event.",
           "type": "object",
@@ -231,7 +231,7 @@
                 "commercial"
               ]
             },
-            "https://ns.airship.com/registrationType": {
+            "airship:registrationType": {
               "title": "Registration Type",
               "description": "The type of change to a registration status.",
               "type": "string",
@@ -241,7 +241,7 @@
                 "unsubscribe"
               ]
             },
-            "https://ns.airship.com/commercialOptedIn": {
+            "airship:commercialOptedIn": {
               "title": "Commercial Opted In Date",
               "description": "The date and time when the user opted into commercial email messages.",
               "type": "string",
@@ -252,24 +252,24 @@
               "description": "The bounce classification as provided by Airship email partners.",
               "type": "number"
             },
-            "https://ns.airship.com/bounceEmail": {
+            "airship:bounceEmail": {
               "title": "Bounce Email Address",
               "description": "The email address that bounced.",
               "type": "string"
             },
-            "https://ns.airship.com/bounceSender": {
+            "airship:bounceSender": {
               "title": "Bounce Sender",
               "description": "The address that the bounced email came from (typically the sender address for your project in Airship).",
               "type": "string"
             },
-            "https://ns.airship.com/bounceSubject": {
+            "airship:bounceSubject": {
               "title": "Bounce Subject",
               "description": "The subject line of the bounced email.",
               "type": "string"
             }
           }
         },
-        "https://ns.airship.com/regionAction": {
+        "airship:regionAction": {
           "title": "Region/Geofence Action",
           "description": "Indicates whether the event was the result of a user entering or exiting the region.",
           "type": "string",
@@ -278,12 +278,12 @@
             "exit"
           ]
         },
-        "https://ns.airship.com/regionName": {
+        "airship:regionName": {
           "title": "Region/Geofence Name",
           "description": "A friendly name for the region or geofence; may be provided from a third-party location partner.",
           "type": "string"
         },
-        "https://ns.airship.com/regionId": {
+        "airship:regionId": {
           "title": "Region/Geofence Identifier",
           "description": "The unique region identifier from the originating system or location partner.",
           "type": "string"

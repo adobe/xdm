@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product details.",
+  "description": "This mixin is used to capture properties related to product details generic to all industries.",
   "definitions": {
     "product-details": {
       "properties": {
@@ -39,15 +39,15 @@
         },
         "xdm:productCreateDate": {
           "title": "Product creation date",
-          "format": "date",
           "type": "string",
+          "format": "date-time",
           "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
         "xdm:productLastModified": {
           "title": "Product last modified",
-          "format": "date",
           "type": "string",
-          "description": "The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+          "format": "date-time",
+          "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         }
       }
     }

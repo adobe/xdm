@@ -62,7 +62,7 @@
             "$ref": "#/definitions/experienceevent-pushtracking"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:pushProviderMessageID": "unique msgID from ios/android",

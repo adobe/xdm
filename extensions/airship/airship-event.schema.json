@@ -9,7 +9,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "meta:extends": [
-     "https://ns.airship.com/airship-event-extension",
+    "https://ns.airship.com/airship-event-extension",
     "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",

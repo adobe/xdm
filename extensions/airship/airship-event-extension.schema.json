@@ -222,7 +222,7 @@
           "description": "Additional properties for a compliance event.",
           "type": "object",
           "properties": {
-            "https://ns.airship.com/messageType": {
+            "airship:messageType": {
               "title": "Message Type",
               "description": "The message type that the user unsubscribed from",
               "type": "string",
@@ -247,7 +247,7 @@
               "type": "string",
               "format": "date-time"
             },
-            "https://ns.airship.com/bounceClass": {
+            "airship:bounceClass": {
               "title": "Bounce Class",
               "description": "The bounce classification as provided by Airship email partners.",
               "type": "number"

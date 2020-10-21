@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -18,7 +18,7 @@
           "type": "string",
           "description": "Unique Identifier for namespace"
         },
-        "namespaceName": {
+        "xdm:namespaceName": {
           "title": "Namespace Name",
           "type": "string",
           "description": "This is human readable name for the namespace"
@@ -28,12 +28,12 @@
           "type": "string",
           "description": "This code is a human readable identifier for the namespace"
         },
-        "description": {
+        "xdm:namespaceDescription": {
           "title": "Namespace Description",
           "type": "string",
           "description": "Description for the namespace"
         },
-        "idType": {
+        "xdm:namespaceIdType": {
           "title": "Namespace Id Type",
           "type": "string",
           "description": "Identity identifier type for the namespace",
@@ -44,26 +44,38 @@
             "COOKIE",
             "CROSS_DEVICE",
             "NON_PEOPLE"
-          ]
+          ],
+          "meta:enum": {
+            "EMAIL": "Email",
+            "PHONE_NUMBER": "Phone number",
+            "DEVICE": "Device ID",
+            "COOKIE": "Cookie ID",
+            "CROSS_DEVICE": "Cross-device ID",
+            "NON_PEOPLE": "Non-people identifier"
+          }
         },
-        "xdm:createTime": {
-          "title": "Create Time",
+        "xdm:createDate": {
+          "title": "Create Date Time",
+          "format": "date-time",
           "type": "string",
-          "description": "The date and UTC Time when the namespace was created"
+          "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
+          "description": "The date and time when the namespace was created in ISO 8601 format"
         },
-        "updateTime": {
-          "title": "Update Time",
+        "xdm:modifyDate": {
+          "title": "Update Date Time",
+          "format": "date-time",
           "type": "string",
-          "description": "The date and UTC Time when the namespace was updated"
+          "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
+          "description": "The date and time when the namespace was updated in ISO 8601 format"
         }
-      }
-    },
-    "required": [
-      "xdm:id",
-      "xdm:namespaceCode",
-      "namespaceName",
-      "idType"
-    ]
+      },
+      "required": [
+        "xdm:id",
+        "xdm:namespaceCode",
+        "xdm:namespaceName",
+        "xdm:namespaceIdType"
+      ]
+    }
   },
   "allOf": [
     {

@@ -13,7 +13,7 @@
   "definitions": {
     "identity-namespace": {
       "properties": {
-        "xdm:id": {
+        "xdm:namespaceId": {
           "title": "Unique Namespace Id",
           "type": "string",
           "description": "Unique Identifier for namespace"
@@ -70,7 +70,7 @@
         }
       },
       "required": [
-        "xdm:id",
+        "xdm:namespaceId",
         "xdm:namespaceCode",
         "xdm:namespaceName",
         "xdm:namespaceIdType"

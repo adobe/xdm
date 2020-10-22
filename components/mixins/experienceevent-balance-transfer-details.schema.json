@@ -1,0 +1,36 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfer-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Balance Transfer Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Balance transfer details such as ID, type, and amount.",
+  "definitions": {
+    "balance-transfer-details": {
+      "properties": {
+        "xdm:balanceTransfer": {
+          "title": "Balance Transfer",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/Transaction",
+          "description": "Extension of transaction data type."
+        },
+        "xdm:balanceTransferAccount": {
+          "title": "Balance Transfer Account",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/financialAccount",
+          "description": "Extension of financialAccount data type."
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/balance-transfer-details"
+  }],
+  "meta:status": "experimental"
+}

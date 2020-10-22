@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-phones",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile Phones",
+  "title": "Phone Number Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Use for phone numbers details such as fax, mobile, home, and work.",
+  "description": "Phone numbers details such as fax, mobile, home, and work.",
   "definitions": {
     "profile-phones": {
       "properties": {

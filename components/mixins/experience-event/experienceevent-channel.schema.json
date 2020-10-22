@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-channel",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent channel details",
+  "title": "Channel Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Use for channel information such as ID, channel type, media type, and location type.",
+  "description": "Channel information such as ID, channel type, media type, and location type.",
   "definitions": {
     "experienceevent-channel": {
       "properties": {

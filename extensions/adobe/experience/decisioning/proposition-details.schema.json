@@ -7,12 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Proposition Details",
+  "title": "Decision Event - Proposition Details",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
   "description": "Decision proposition is used to capture the results of a decisioning process.",
@@ -27,10 +26,16 @@
           },
           "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
         },
-        "https://ns.adobe.com/experience/decisioning/propositionContentKey": {
-          "title": "Proposition Content Key",
+        "https://ns.adobe.com/experience/decisioning/experienceID": {
+          "title": "Experience Reference",
           "type": "string",
-          "description": "Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value."
+          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionContentKey": {
+          "meta:status": "deprecated",
+          "title": "DEPRECATED: Proposition Content Key",
+          "type": "string",
+          "description": "DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value."
         }
       }
     }

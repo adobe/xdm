@@ -1,0 +1,50 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Event Details",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "description": "Decision Event Details is used to capture additional information of a decisioning process. The details contain properties that are important to record but are not the proposed options. For instance the experience that is composed from the proposition or information about how the decision was made. ",
+  "definitions": {
+    "decisionevent-details-datatype": {
+      "properties": {
+        "xdm:experienceID": {
+          "title": "Experience Reference",
+          "type": "string",
+          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
+        },
+        "xdm:algorithmID": {
+          "title": "Algorithm Reference",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Unique identifier for the algorithm used to make the decision, if applicable."
+        },
+        "xdm:trafficType": {
+          "title": "Traffic Type",
+          "type": "string",
+          "description": "The class of algorithm/policy that was used to serve this decision. Contextual indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
+          "meta:enum": {
+            "random": "Random Traffic",
+            "contextual": "Contextual Traffic",
+            "noncontextual": "Non-Contextual Traffic"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/decisionevent-details-datatype"
+    }
+  ]
+}

@@ -22,6 +22,7 @@ Destinations Segment Mapping Schema.
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
   "xdm:segmentID": "0b12f30c-2260-442e-9120-2b12e96c0c40",
+  "xdm:segmentNamespace": "aepsegments",
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhak"
 }
@@ -36,6 +37,7 @@ Destinations Segment Mapping Schema.
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | `string` | Optional | Destinations Segment Mapping (this schema) |
+| [xdm:segmentNamespace](#xdmsegmentnamespace) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -130,6 +132,26 @@ Identity of the segment in the related namespace
 * defined in this schema
 
 ### xdm:segmentID Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:segmentNamespace
+### Segment Namespace
+
+Namespace to which the segment belongs
+
+`xdm:segmentNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:segmentNamespace Type
 
 
 `string`

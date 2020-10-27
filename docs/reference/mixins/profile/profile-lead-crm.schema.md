@@ -17,9 +17,9 @@ This mixin is used to capture information regarding a B2B Lead.
   * [B2B Lead](../../datatypes/b2b-lead.schema.md) `https://ns.adobe.com/xdm/common/b2b-lead`
   * [IdentityMap](../shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
-  * [Profile person details](profile-person-details.schema.md) `https://ns.adobe.com/xdm/context/profile-person-details`
-  * [Profile personal details](profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
-  * [Profile work details](profile-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-work-details`
+  * [Demographic Details](profile-person-details.schema.md) `https://ns.adobe.com/xdm/context/profile-person-details`
+  * [Personal Contact Details](profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
+  * [Work Contact Details](profile-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-work-details`
   * [Profile Other Work Details](profile-other-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-other-work-details`
   * [Profile owning entity details](profile-owning-entities.schema.md) `https://ns.adobe.com/xdm/context/profile-owning-entities`
 
@@ -193,22 +193,22 @@ This mixin is used to capture information regarding a B2B Lead.
 |----------|------|----------|------------|
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:extendedWorkDetails](#xdmextendedworkdetails) | `object` | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmextendedworkdetails) |
-| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | [Profile personal details](profile-personal-details.schema.md#xdmfaxphone) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmfaxphone) |
 | [xdm:geoUnit](#xdmgeounit) | Geographical unit | Optional | [Profile owning entity details](profile-owning-entities.schema.md#xdmgeounit) |
-| [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | [Profile personal details](profile-personal-details.schema.md#xdmhomeaddress) |
-| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | [Profile personal details](profile-personal-details.schema.md#xdmhomephone) |
+| [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomeaddress) |
+| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomephone) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:lead](#xdmlead) | B2B Lead | Optional | XDM Business Lead  (this schema) |
-| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Profile personal details](profile-personal-details.schema.md#xdmmobilephone) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmmobilephone) |
 | [xdm:orgUnit](#xdmorgunit) | Organizational unit | Optional | [Profile owning entity details](profile-owning-entities.schema.md#xdmorgunit) |
-| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Profile work details](profile-work-details.schema.md#xdmorganizations) |
+| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Work Contact Details](profile-work-details.schema.md#xdmorganizations) |
 | [xdm:otherAddress](#xdmotheraddress) | Postal address | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotheraddress) |
 | [xdm:otherPhone](#xdmotherphone) | Phone number | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotherphone) |
-| [xdm:person](#xdmperson) | Person | Optional | [Profile person details](profile-person-details.schema.md#xdmperson) |
-| [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | [Profile personal details](profile-personal-details.schema.md#xdmpersonalemail) |
-| [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | [Profile work details](profile-work-details.schema.md#xdmworkaddress) |
-| [xdm:workEmail](#xdmworkemail) | Email address | Optional | [Profile work details](profile-work-details.schema.md#xdmworkemail) |
-| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | [Profile work details](profile-work-details.schema.md#xdmworkphone) |
+| [xdm:person](#xdmperson) | Person | Optional | [Demographic Details](profile-person-details.schema.md#xdmperson) |
+| [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmpersonalemail) |
+| [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkaddress) |
+| [xdm:workEmail](#xdmworkemail) | Email address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkemail) |
+| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkphone) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:extSourceSystemAudit
@@ -396,7 +396,7 @@ Fax phone number.
 `xdm:faxPhone`
 * is optional
 * type: Phone number
-* defined in [Profile personal details](profile-personal-details.schema.md#xdmfaxphone)
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmfaxphone)
 
 ### xdm:faxPhone Type
 
@@ -434,7 +434,7 @@ A home postal address.
 `xdm:homeAddress`
 * is optional
 * type: Postal address
-* defined in [Profile personal details](profile-personal-details.schema.md#xdmhomeaddress)
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmhomeaddress)
 
 ### xdm:homeAddress Type
 
@@ -453,7 +453,7 @@ Home phone number.
 `xdm:homePhone`
 * is optional
 * type: Phone number
-* defined in [Profile personal details](profile-personal-details.schema.md#xdmhomephone)
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmhomephone)
 
 ### xdm:homePhone Type
 
@@ -513,7 +513,7 @@ Mobile phone number.
 `xdm:mobilePhone`
 * is optional
 * type: Phone number
-* defined in [Profile personal details](profile-personal-details.schema.md#xdmmobilephone)
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmmobilephone)
 
 ### xdm:mobilePhone Type
 
@@ -550,7 +550,7 @@ The unit within the organization owning the profile. This can be used to referen
 * is optional
 * type: `string[]`
 
-* defined in [Profile work details](profile-work-details.schema.md#xdmorganizations)
+* defined in [Work Contact Details](profile-work-details.schema.md#xdmorganizations)
 
 ### xdm:organizations Type
 
@@ -614,7 +614,7 @@ An individual actor, contact, or owner.
 `xdm:person`
 * is optional
 * type: Person
-* defined in [Profile person details](profile-person-details.schema.md#xdmperson)
+* defined in [Demographic Details](profile-person-details.schema.md#xdmperson)
 
 ### xdm:person Type
 
@@ -633,7 +633,7 @@ A personal email address.
 `xdm:personalEmail`
 * is optional
 * type: Email address
-* defined in [Profile personal details](profile-personal-details.schema.md#xdmpersonalemail)
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmpersonalemail)
 
 ### xdm:personalEmail Type
 
@@ -652,7 +652,7 @@ A work postal address.
 `xdm:workAddress`
 * is optional
 * type: Postal address
-* defined in [Profile work details](profile-work-details.schema.md#xdmworkaddress)
+* defined in [Work Contact Details](profile-work-details.schema.md#xdmworkaddress)
 
 ### xdm:workAddress Type
 
@@ -671,7 +671,7 @@ A work email address.
 `xdm:workEmail`
 * is optional
 * type: Email address
-* defined in [Profile work details](profile-work-details.schema.md#xdmworkemail)
+* defined in [Work Contact Details](profile-work-details.schema.md#xdmworkemail)
 
 ### xdm:workEmail Type
 
@@ -690,7 +690,7 @@ Work phone number.
 `xdm:workPhone`
 * is optional
 * type: Phone number
-* defined in [Profile work details](profile-work-details.schema.md#xdmworkphone)
+* defined in [Work Contact Details](profile-work-details.schema.md#xdmworkphone)
 
 ### xdm:workPhone Type
 

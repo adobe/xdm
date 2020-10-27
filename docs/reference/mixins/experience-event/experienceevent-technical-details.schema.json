@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent technical details",
+    "title": "Technical Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for technical details including data source code, tags, and timestamps.",
+    "description": "Technical details including data source code, tags, and timestamps.",
     "definitions": {
         "experienceevent-technical-details": {
             "properties": {

@@ -1,23 +1,23 @@
 
-# Profile preferences details Schema
+# Preference Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-preferences-details
 ```
 
-Use for information regarding preferences such as opt-in or opt-out, time zone, preferred language, and email format.
+Preferences such as opt-in and opt-out, time zone, preferred language, and email format.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-preferences-details.schema.json](mixins/profile/profile-preferences-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile preferences details `https://ns.adobe.com/xdm/context/profile-preferences-details`
+* Preference Details `https://ns.adobe.com/xdm/context/profile-preferences-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [OptInOut](../../datatypes/optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
 
 
-## Profile preferences details Example
+## Preference Details Example
 ```json
 {
   "xdm:optInOut": {
@@ -32,15 +32,15 @@ Use for information regarding preferences such as opt-in or opt-out, time zone, 
 }
 ```
 
-# Profile preferences details Properties
+# Preference Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Profile preferences details (this schema) |
-| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Profile preferences details (this schema) |
-| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Profile preferences details (this schema) |
-| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Profile preferences details (this schema) |
-| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Profile preferences details (this schema) |
+| [xdm:emailFormat](#xdmemailformat) | `string` | Optional | Preference Details (this schema) |
+| [xdm:optInOut](#xdmoptinout) | OptInOut | Optional | Preference Details (this schema) |
+| [xdm:preferredLanguage](#xdmpreferredlanguage) | `string` | Optional | Preference Details (this schema) |
+| [xdm:profilePictureLink](#xdmprofilepicturelink) | `string` | Optional | Preference Details (this schema) |
+| [xdm:timeZone](#xdmtimezone) | `string` | Optional | Preference Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:emailFormat

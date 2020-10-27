@@ -88,10 +88,10 @@
             "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
-            "xdm:index": 0
+            "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
         },
         {
-            "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+            "xdm:index": 0
         }
     ]
 }

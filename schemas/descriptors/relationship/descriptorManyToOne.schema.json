@@ -10,7 +10,7 @@
   "title": "Many to One Relationship Descriptor",
   "meta:extensible": false,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor",
+    "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor",
     "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor"
   ],
   "meta:abstract": false,

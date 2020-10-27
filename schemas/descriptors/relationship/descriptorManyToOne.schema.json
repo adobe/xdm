@@ -34,7 +34,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor#/definitions/relationshipdescriptor"
     },
     {
-      "$ref": "#/definitions/ManyToOne"
+      "$ref": "#/definitions/descriptorManyToOne"
     }
   ],
   "meta:status": "stable"

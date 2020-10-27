@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profile-personal-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Profile personal details",
+    "title": "Personal Contact Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Use for information about an individual person such as home address, phone number, fax, and email.",
+    "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
     "definitions": {
         "profile-personal-details": {
             "properties": {

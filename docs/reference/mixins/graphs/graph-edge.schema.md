@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/graph-edge
 ```
 
-Use for information regarding the relationship between two nodes or vertices such as data provider, and edge information.
+Information regarding the relationship between two nodes or vertices such as data provider, and edge information.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

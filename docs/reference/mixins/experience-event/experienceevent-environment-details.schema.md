@@ -1,25 +1,25 @@
 
-# ExperienceEvent environment details Schema
+# Environment Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-environment-details
 ```
 
-Use for information regarding environment details such as device details, browser information, local time, and other geographical information.
+Environment details such as device details, browser info, local time, and other geographical information.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-environment-details.schema.json](mixins/experience-event/experienceevent-environment-details.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent environment details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+* Environment Details `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Environment](../../datatypes/environment.schema.md) `https://ns.adobe.com/xdm/context/environment`
   * [Device](../../datatypes/device.schema.md) `https://ns.adobe.com/xdm/context/device`
   * [Place context](../../datatypes/placecontext.schema.md) `https://ns.adobe.com/xdm/context/placecontext`
 
 
-## ExperienceEvent environment details Example
+## Environment Details Example
 ```json
 {
   "xdm:environment": {
@@ -67,13 +67,13 @@ Use for information regarding environment details such as device details, browse
 }
 ```
 
-# ExperienceEvent environment details Properties
+# Environment Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:device](#xdmdevice) | Device | Optional | ExperienceEvent environment details (this schema) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | ExperienceEvent environment details (this schema) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | ExperienceEvent environment details (this schema) |
+| [xdm:device](#xdmdevice) | Device | Optional | Environment Details (this schema) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | Environment Details (this schema) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | Environment Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:device

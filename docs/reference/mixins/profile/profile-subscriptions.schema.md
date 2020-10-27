@@ -1,22 +1,22 @@
 
-# Profile subscriptions Schema
+# Subscription Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-subscriptions
 ```
 
-This mixin is used to capture information regarding an individual's subscriptions, such as the billing period, contract ID, start date, and end date. Profile subscriptions include commercial or licensed services, and entitlements.
+Subscription information such as device, environment, and subscriber data.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-subscriptions.schema.json](mixins/profile/profile-subscriptions.schema.json) |
 ## Schema Hierarchy
 
-* Profile subscriptions `https://ns.adobe.com/xdm/context/profile-subscriptions`
+* Subscription Details `https://ns.adobe.com/xdm/context/profile-subscriptions`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile subscriptions Example
+## Subscription Details Example
 ```json
 {
   "xdm:subscriptions": [
@@ -60,11 +60,11 @@ This mixin is used to capture information regarding an individual's subscription
 }
 ```
 
-# Profile subscriptions Properties
+# Subscription Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Profile subscriptions (this schema) |
+| [xdm:subscriptions](#xdmsubscriptions) | Subscription | Optional | Subscription Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:subscriptions

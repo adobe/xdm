@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-search",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent details for search",
+    "title": "Search Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for search related information such as search engine, paid search, keywords, and position.",
+    "description": "Search related information such as search engine, paid search, keywords, and position.",
     "definitions": {
         "experienceevent-search": {
             "properties": {

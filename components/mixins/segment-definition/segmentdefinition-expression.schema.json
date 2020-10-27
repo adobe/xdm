@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/segmentdefinition-expression",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Segment expression",
+  "title": "Segment Expression Details ",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/segmentdefinition"
   ],
-  "description": "This mixin helps capture the qualifying expression for a segment.",
+  "description": "Segment expression data such as expression type, mime type, and expression value.",
   "definitions": {
     "segmentdefinition-expression": {
       "properties": {

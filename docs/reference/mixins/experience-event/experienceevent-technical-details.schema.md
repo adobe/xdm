@@ -1,23 +1,23 @@
 
-# ExperienceEvent technical details Schema
+# Technical Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-technical-details
 ```
 
-Use for technical details including data source code, tags, and timestamps.
+Technical details including data source code, tags, and timestamps.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-technical-details.schema.json](mixins/experience-event/experienceevent-technical-details.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent technical details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
+* Technical Details `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Data Source](../../datatypes/data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
 
 
-## ExperienceEvent technical details Example
+## Technical Details Example
 ```json
 {
   "xdm:dataSource": {
@@ -28,12 +28,12 @@ Use for technical details including data source code, tags, and timestamps.
 }
 ```
 
-# ExperienceEvent technical details Properties
+# Technical Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | ExperienceEvent technical details (this schema) |
-| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | ExperienceEvent technical details (this schema) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | Technical Details (this schema) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | Technical Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:dataSource

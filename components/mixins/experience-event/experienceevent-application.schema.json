@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-application",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent application details",
+  "title": "Application Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Use for application related data such as crashes, feature usage, launches, and upgrades.",
+  "description": "Application related data such as crashes, feature usage, launches, and upgrades.",
   "definitions": {
     "experienceevent-application": {
       "properties": {

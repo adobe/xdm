@@ -1,22 +1,22 @@
 
-# ExperienceEvent Segment Membership Details Schema
+# Segment Membership Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-segmentmembership
 ```
 
-Use for segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.
+Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-segmentmembership.schema.json](mixins/experience-event/experienceevent-segmentmembership.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent Segment Membership Details `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
+* Segment Membership Details `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## ExperienceEvent Segment Membership Details Example
+## Segment Membership Details Example
 ```json
 {
   "xdm:segmentMembership": {
@@ -46,12 +46,12 @@ Use for segment membership data such as which segments an individual belongs to,
 }
 ```
 
-# ExperienceEvent Segment Membership Details Properties
+# Segment Membership Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | ExperienceEvent Segment Membership Details (this schema) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | ExperienceEvent Segment Membership Details (this schema) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | Segment Membership Details (this schema) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | Segment Membership Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentMembership

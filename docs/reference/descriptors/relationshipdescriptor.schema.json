@@ -46,7 +46,13 @@
                 },
                 "xdm:label": {
                     "title": "Label",
-                    "type": "string"
+                    "type": "string",
+                    "description": "Provides a user friendly name or label to this relationship"
+                },
+                "xdm:description": {
+                    "title": "Relationship Description",
+                    "type": "string",
+                    "description": "Provides a user friendly description of this relationship"
                 }
             },
             "oneOf": [

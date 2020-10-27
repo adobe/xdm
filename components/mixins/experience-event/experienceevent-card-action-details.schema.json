@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-card-action-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Card Action Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Card action details such as card type as well as activation and lock status.",
+  "definitions": {
+    "card-action-details": {
+      "properties": {
+        "xdm:cardType": {
+          "title": "Card Type",
+          "enum":["credit", "debit", "prepaid", "paypal", "atm", "virtual", "hsa", "fsa"],
+          "description": "Tracks the type of card associated with an event."
+        },
+        "xdm:cardActivated": {
+          "title": "Card Activated Success",
+          "type": "measure",
+          "description": "Tracks when a card has been successfully activated."
+        },
+        "xdm:cardActivationStart": {
+          "title": "Card Activation Started",
+          "type": "measure",
+          "description": "Tracks when a card activation process has been started."
+        },
+        "xdm:cardLocked": {
+          "title": "Card Locked",
+          "type": "measure",
+          "description": "Tracks when a card has been locked."
+        },
+        "xdm:cardUnlocked": {
+          "title": "Card Unlocked",
+          "type": "measure",
+          "description": "Tracks when a card has been unlocked."
+        },
+        "xdm:cardControlsLocked": {
+          "title": "Card Controls Locked",
+          "type": "measure",
+          "description": "Tracks when a card controls have been locked."
+        },
+        "xdm:cardControlsUnlocked": {
+          "title": "Card Controls Unlocked",
+          "type": "measure",
+          "description": "Tracks when a card controls have been unlocked."
+        },
+        "xdm:cardCancelled": {
+          "title": "Card Cancelled",
+          "type": "measure",
+          "description": "Tracks when a card has been cancelled."
+        },
+        "xdm:cardOrderNew": {
+          "title": "Order New Card",
+          "type": "measure",
+          "description": "Tracks when a card has been requested."
+        },
+        "xdm:cardOrderType": {
+          "title": "Card Order Type",
+          "enum":["new", "lost", "stolen", "never received", "damaged"],
+          "description": "Tracks the type of card order associated with a card order event."
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/card-action-details"
+  }],
+  "meta:status": "experimental"
+}

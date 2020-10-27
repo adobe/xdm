@@ -1,0 +1,46 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-quote-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Quote Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Quote details such as premium, discount, and bind, as well as quote creation steps.",
+  "definitions": {
+    "quote-details": {
+      "properties": {
+        "xdm:quoteSteps": {
+          "title": "Quote Steps",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+          "description": "Extension of toolUsage data type."
+        },
+        "xdm:quotePremium": {
+          "title": "Quote Premium",
+          "type": "number",
+          "description": "Records the premium amount for a quote displayed to a visitor."
+        },
+        "xdm:quoteDiscount": {
+          "title": "Quote Discount",
+          "type": "number",
+          "description": "Records the discount amount for a quote displayed to a visitor."
+        },
+        "xdm:quoteBind": {
+          "title": "Quote Bind",
+          "type": "measure",
+          "description": "Records when quote coverage has been confirmed for a visitor."
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/quote-details"
+  }],
+  "meta:status": "experimental"
+}

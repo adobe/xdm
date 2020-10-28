@@ -28,9 +28,9 @@ This Data Type is used to capture B2B/CRM Source identifiers.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:ID](#xdmid) | `string` | **Required** | B2B Source (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | B2B Source (this schema) |
 | [xdm:key](#xdmkey) | `string` | Optional | B2B Source (this schema) |
-| [xdm:systemID](#xdmsystemid) | `string` | **Required** | B2B Source (this schema) |
+| [xdm:systemID](#xdmsystemid) | `string` | Optional | B2B Source (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
@@ -39,7 +39,7 @@ This Data Type is used to capture B2B/CRM Source identifiers.
 This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc.
 
 `xdm:ID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -79,7 +79,7 @@ This is concatination of systemId and id. The concatenated value is created by t
 This is an identifier for the source system itself and potentially includes the object type.
 
 `xdm:systemID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

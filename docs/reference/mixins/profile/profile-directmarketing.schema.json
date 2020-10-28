@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "This mixin is used to capture information regarding addresses, emails, and phone numbers to be used for direct marketing activities.",
+    "description": "Use for direct marketing activities such as addresses, emails, and phone numbers.",
     "definitions": {
         "profile-directmarketing": {
             "properties": {

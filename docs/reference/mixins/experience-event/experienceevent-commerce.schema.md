@@ -1,23 +1,23 @@
 
-# ExperienceEvent commerce details Schema
+# Commerce Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-commerce
 ```
 
-This mixin is used to capture information regarding commerce activities related to an ExperienceEvent such as standard cart operations (order, checkout, abandon) and product details (SKU, product name, quantity).
+Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon).
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-commerce.schema.json](mixins/experience-event/experienceevent-commerce.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent commerce details `https://ns.adobe.com/xdm/context/experienceevent-commerce`
+* Commerce Details `https://ns.adobe.com/xdm/context/experienceevent-commerce`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Commerce](../../datatypes/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
 
 
-## ExperienceEvent commerce details Example
+## Commerce Details Example
 ```json
 {
   "xdm:productListItems": [
@@ -58,12 +58,12 @@ This mixin is used to capture information regarding commerce activities related 
 }
 ```
 
-# ExperienceEvent commerce details Properties
+# Commerce Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | ExperienceEvent commerce details (this schema) |
-| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | ExperienceEvent commerce details (this schema) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional | Commerce Details (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | Commerce Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:commerce

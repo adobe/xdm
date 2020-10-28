@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/profile-work-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Profile work details",
+  "title": "Work Contact Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This mixin is used to capture information regarding work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
+  "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
   "definitions": {
     "profile-work-details": {
       "properties": {

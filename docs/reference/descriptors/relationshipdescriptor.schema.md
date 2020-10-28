@@ -180,6 +180,7 @@ This changes child.json to:
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#id) |
 | [@type](#type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#type) |
+| [xdm:description](#xdmdescription) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | Relationship Descriptor (this schema) |
@@ -233,6 +234,26 @@ The type of descriptor this object represents.
 ### @type Known Values
 | Value | Description |
 |-------|-------------|
+
+
+
+
+## xdm:description
+### Relationship Description
+
+Provides a user friendly description of this relationship
+
+`xdm:description`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:description Type
+
+
+`string`
+
+
 
 
 
@@ -336,6 +357,8 @@ Major version being referenced.
 
 ## xdm:label
 ### Label
+
+Provides a user friendly name or label to this relationship
 
 `xdm:label`
 * is optional

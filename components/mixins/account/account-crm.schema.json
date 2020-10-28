@@ -64,7 +64,7 @@
         "xdm:accountOrganization": {
           "title": "Account Details",
           "description": "Account details like number of employees, market segment, industry, and location.",
-          "$ref": "https://ns.adobe.com/xdm/common/organization"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
         },
         "xdm:naicsDescription": {
           "title": "NAICS Description",

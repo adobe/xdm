@@ -25,16 +25,20 @@
                     "enum": [
                         "error",
                         "exclude",
-                        "send",
+                        "sent",
                         "bounce",
-                        "delay"
+                        "delay",
+                        "duplicate",
+                        "denylist"
                     ],
                     "meta:enum": {
-                        "error": "Mesage processing failed.",
-                        "exclude": "Messageprofile is filtered out for sending the message",
-                        "send": "Messages such as Email, SMS, Push that have been dispatched to a person's account, address, or device.",
-                        "bounce": "Message failed to deliver, and no longer will be retried.",
-                        "delay": "message failed to deliver, but will be retry after next schedule time."
+                        "error": "Message processing failed",
+                        "exclude": "Message profile filtered out",
+                        "sent": "Message sent",
+                        "bounce": "Message bounced",
+                        "delay": "Message delayed",
+                        "duplicate": "Duplicate message skipped",
+                        "denylist": "Invalid destination skipped"
                     }
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
@@ -94,7 +98,7 @@
             "$ref": "#/definitions/messageDeliveryfeedback"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": "bounce",

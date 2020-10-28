@@ -17,7 +17,7 @@ A decision event is used to capture observations about the outcome and context o
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
   * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Decision Proposition Reference](proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
-  * [Decision Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
+  * [Decision Event - Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
 
 
 ## XDM Decision Event Example
@@ -96,8 +96,9 @@ A decision event is used to capture observations about the outcome and context o
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | **Required** | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
-| [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey) |
-| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
+| [https://ns.adobe.com/experience/decisioning/experienceID](#httpsnsadobecomexperiencedecisioningexperienceid) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningexperienceid) |
+| [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey) |
+| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
 | [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | **Required** | [Decision Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
@@ -125,15 +126,35 @@ A unique identifier for the time-series event.
 
 
 
-## https://ns.adobe.com/experience/decisioning/propositionContentKey
-### Proposition Content Key
+## https://ns.adobe.com/experience/decisioning/experienceID
+### Experience Reference
 
-Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.
+Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value.
+
+`https://ns.adobe.com/experience/decisioning/experienceID`
+* is optional
+* type: `string`
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningexperienceid)
+
+### https://ns.adobe.com/experience/decisioning/experienceID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/decisioning/propositionContentKey
+### DEPRECATED: Proposition Content Key
+
+DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.
 
 `https://ns.adobe.com/experience/decisioning/propositionContentKey`
 * is optional
 * type: `string`
-* defined in [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey)
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey)
 
 ### https://ns.adobe.com/experience/decisioning/propositionContentKey Type
 
@@ -154,7 +175,7 @@ Details about the results of the decision. An array providing the output of a si
 * is optional
 * type: Decision Proposition Detail
 
-* defined in [Decision Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails)
+* defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails)
 
 ### https://ns.adobe.com/experience/decisioning/propositionDetails Type
 
@@ -212,30 +233,32 @@ The primary event type for this time-series record.
 ### xdm:eventType Known Values
 | Value | Description |
 |-------|-------------|
-| `advertising.completes` | Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead. |
-| `advertising.timePlayed` | Describes the amount of time spent by a user on a specific timed media asset. |
-| `advertising.federated` | Indicates if an experience event was created through data federation (data sharing between customers). |
-| `advertising.clicks` | Click(s) actions on an advertisement. |
-| `advertising.conversions` | A customer pre-defined action(s) which triggers an event for performance evaluation. |
-| `advertising.firstQuartiles` | A digital video ad has played through 25% of its duration at normal speed. |
-| `advertising.impressions` | Impression(s) of an advertisement to an end-user with the potential of being viewed. |
-| `advertising.midpoints` | A digital video ad has played through 50% of its duration at normal speed. |
-| `advertising.starts` | A digital video ad has started playing. |
-| `advertising.thirdQuartiles` | A digital video ad has played through 75% of its duration at normal speed. |
-| `web.webpagedetails.pageViews` | View(s) of a webpage has occurred. |
-| `web.webinteraction.linkClicks` | Click of a web-link has occurred. |
-| `commerce.checkouts` | An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order. |
-| `commerce.productListAdds` | Addition of a product to the product list. Example a product is added to a shopping cart. |
-| `commerce.productListOpens` | Initializations of a new product list. Example a shopping cart is created. |
-| `commerce.productListRemovals` | Removal(s) of a product entry from a product list. Example a product is removed from a shopping cart. |
-| `commerce.productListReopens` | A product list that was no longer accessible(abandoned) has been re-activated by the user. Example via a re-marketing activity. |
-| `commerce.productListViews` | View(s) of a product-list has occurred. |
-| `commerce.productViews` | View(s) of a product have occurred. |
-| `commerce.purchases` | An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced. |
-| `commerce.saveForLaters` | Product list is saved for future use. Example a product wish list. |
-| `delivery.feedback` | Feedback events for a delivery. Example feedback events for an email delivery. |
-| `message.feedback` | Feedback events like sent/bounce/error for messages sent to a user. |
-| `message.tracking` | Tracking events like open/click/custom action on messages sent to a user. |
+| `advertising.completes` | Advertising Completes |
+| `advertising.timePlayed` | Advertising Time Played |
+| `advertising.federated` | Advertising Federated |
+| `advertising.clicks` | Advertising Clicks |
+| `advertising.conversions` | Advertising Conversions |
+| `advertising.firstQuartiles` | Advertising First Quartiles |
+| `advertising.impressions` | Advertising Impressions |
+| `advertising.midpoints` | Advertising Midpoints |
+| `advertising.starts` | Advertising Starts |
+| `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
+| `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
+| `commerce.checkouts` | Commerce Checkouts |
+| `commerce.productListAdds` | Commerce Product List Adds |
+| `commerce.productListOpens` | Commerce Product List Opens |
+| `commerce.productListRemovals` | Commerce Product List Removals |
+| `commerce.productListReopens` | Commerce Product List Reopens |
+| `commerce.productListViews` | Commerce Product List Views |
+| `commerce.productViews` | Commerce Product Views |
+| `commerce.purchases` | Commerce Purchases |
+| `commerce.saveForLaters` | Commerce Save For Laters |
+| `delivery.feedback` | Delivery Feedback |
+| `message.feedback` | Message Feedback |
+| `message.tracking` | Message Tracking |
+| `pushTracking.applicationOpened` | Push Tracking Application Opened |
+| `pushTracking.customAction` | Push Tracking Custom Action |
 
 
 

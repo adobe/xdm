@@ -1,0 +1,20 @@
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}

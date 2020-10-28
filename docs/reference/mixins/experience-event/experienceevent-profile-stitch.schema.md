@@ -1,22 +1,22 @@
 
-# ExperienceEvent profile stitch details Schema
+# Profile Stitch Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-profile-stitch
 ```
 
-ExperienceEvent profile stitch describes details about the IDs that were joined by profile stitching.
+Profile stitching details such as identity and profile IDs.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-profile-stitch.schema.json](mixins/experience-event/experienceevent-profile-stitch.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent profile stitch details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
+* Profile Stitch Details `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## ExperienceEvent profile stitch details Example
+## Profile Stitch Details Example
 ```json
 {
   "xdm:profileStitch": [
@@ -66,11 +66,11 @@ ExperienceEvent profile stitch describes details about the IDs that were joined 
 }
 ```
 
-# ExperienceEvent profile stitch details Properties
+# Profile Stitch Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | ExperienceEvent profile stitch details (this schema) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | Profile Stitch Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:profileStitch

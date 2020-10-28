@@ -1,23 +1,23 @@
 
-# ExperienceEvent details for search Schema
+# Search Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-search
 ```
 
-This mixin is used to capture search-related information for an ExperienceEvent, such as search engine, paid search (boolean), keywords, and position.
+Search related information such as search engine, paid search, keywords, and position.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-search.schema.json](mixins/experience-event/experienceevent-search.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent details for search `https://ns.adobe.com/xdm/context/experienceevent-search`
+* Search Details `https://ns.adobe.com/xdm/context/experienceevent-search`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Search](../../datatypes/search.schema.md) `https://ns.adobe.com/xdm/context/search`
 
 
-## ExperienceEvent details for search Example
+## Search Details Example
 ```json
 {
   "xdm:search": {
@@ -30,11 +30,11 @@ This mixin is used to capture search-related information for an ExperienceEvent,
 }
 ```
 
-# ExperienceEvent details for search Properties
+# Search Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:search](#xdmsearch) | Search | Optional | ExperienceEvent details for search (this schema) |
+| [xdm:search](#xdmsearch) | Search | Optional | Search Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:search

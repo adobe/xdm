@@ -1,22 +1,22 @@
 
-# Experience event privacy mixin Schema
+# Privacy Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-privacy
 ```
 
-Experience event privacy schema captures consent information on the hit.
+Consent information such as consent format, and consent to personal data.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-privacy.schema.json](mixins/experience-event/experienceevent-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Experience event privacy mixin `https://ns.adobe.com/xdm/context/experienceevent-privacy`
+* Privacy Details `https://ns.adobe.com/xdm/context/experienceevent-privacy`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Experience event privacy mixin Example
+## Privacy Details Example
 ```json
 {
   "xdm:consentStrings": [
@@ -31,11 +31,11 @@ Experience event privacy schema captures consent information on the hit.
 }
 ```
 
-# Experience event privacy mixin Properties
+# Privacy Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | Experience event privacy mixin (this schema) |
+| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | Privacy Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentStrings

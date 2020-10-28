@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/profile-person-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Profile person details",
+    "title": "Demographic Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "This mixin is used to capture information regarding name, gender, and birth date of an individual.",
+    "description": "Demographic information such as name, gender, and birth date of an individual.",
     "definitions": {
         "profile-person-details": {
             "properties": {

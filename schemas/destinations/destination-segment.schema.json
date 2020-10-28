@@ -26,6 +26,11 @@
           "type": "string",
           "description": "Identity of the segment in the related namespace"
         },
+        "xdm:segmentNamespace": {
+          "title": "Segment Namespace",
+          "type": "string",
+          "description": "Namespace to which the segment belongs"
+        },
         "xdm:createTime": {
           "title": "Create Time",
           "type": "string",

@@ -1,23 +1,23 @@
 
-# ExperienceEvent application details Schema
+# Application Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-application
 ```
 
-Application related data from  ExperienceEvent observations.
+Application related data such as crashes, feature usage, launches, and upgrades.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-application.schema.json](mixins/experience-event/experienceevent-application.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent application details `https://ns.adobe.com/xdm/context/experienceevent-application`
+* Application Details `https://ns.adobe.com/xdm/context/experienceevent-application`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Application](../../datatypes/application.schema.md) `https://ns.adobe.com/xdm/context/application`
 
 
-## ExperienceEvent application details Example
+## Application Details Example
 ```json
 {
   "xdm:application": {
@@ -31,11 +31,11 @@ Application related data from  ExperienceEvent observations.
 }
 ```
 
-# ExperienceEvent application details Properties
+# Application Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:application](#xdmapplication) | Application | Optional | ExperienceEvent application details (this schema) |
+| [xdm:application](#xdmapplication) | Application | Optional | Application Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:application

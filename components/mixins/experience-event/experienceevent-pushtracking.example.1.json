@@ -1,0 +1,8 @@
+{
+  "xdm:pushProviderMessageID": "unique msgID from ios/android",
+  "xdm:pushProvider": "apns",
+  "xdm:customAction": {
+    "xdm:actionID": "GAME_INVITATION",
+    "xdm:value": 500
+  }
+}

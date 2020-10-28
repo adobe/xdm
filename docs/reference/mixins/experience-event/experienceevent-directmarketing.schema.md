@@ -1,23 +1,23 @@
 
-# ExperienceEvent direct marketing details Schema
+# Direct Marketing Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-directmarketing
 ```
 
-This mixin is used to capture information regarding direct marketing details related to an ExperienceEvent. This includes opens, clicks, impressions, and unsubscribes.
+Direct marketing events such as opens, clicks, impressions, and unsubscribes.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-directmarketing.schema.json](mixins/experience-event/experienceevent-directmarketing.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent direct marketing details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
+* Direct Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Direct marketing](../../datatypes/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
-## ExperienceEvent direct marketing details Example
+## Direct Marketing Details Example
 ```json
 {
   "xdm:directMarketing": {
@@ -28,11 +28,11 @@ This mixin is used to capture information regarding direct marketing details rel
 }
 ```
 
-# ExperienceEvent direct marketing details Properties
+# Direct Marketing Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | ExperienceEvent direct marketing details (this schema) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | Direct Marketing Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:directMarketing

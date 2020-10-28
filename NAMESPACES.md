@@ -45,6 +45,9 @@ XDM uses the [JSON-LD](https://json-ld.org/spec/latest/json-ld/) syntax to assig
 			},
 			"customerA:internalSku": { //customera is the namespace (tenantId), internalSku is the field name
 				"type": "number"
+			},
+			"https://ns.thirdparty.com/color": { //https://ns.thirdparty.com is the namespace, color is the fieldname
+				"type": "string"
 			}
 		}
 	}
@@ -81,16 +84,16 @@ The use of JSON-LD within XDM was put in place before AEP started using XDM for 
 	       	"_channels": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
 		       	"type": "object",
 		       	"properties": {
-			       	"application": { //member of the "repo" namespace
+			       	"application": { //member of the "https://ns.adobe.com/xdm/channels" namespace
 				       	"type": "string"
 				    }
 				}
 	       	},
-	       	"_schema": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
+	       	"_schema": { //schema namespace is exposed as a parent field named _schema
 		       	"type": "object",
 		       	"properties": {
-			       	"application": { //member of the "repo" namespace
-				       	"type": "string"
+			       	"latitude": { //member of the "schema" namespace
+				       	"type": "number"
 				    }
 				}
 	       	},
@@ -108,13 +111,32 @@ The use of JSON-LD within XDM was put in place before AEP started using XDM for 
 				}
 			}
 		},
-		"_customera": {//customera namespace (tenantId) converted into a physical field named _customera
+		"_customerA": {//customerA namespace (tenantId) converted into a physical field named _customerA
 			"type": "object",
 			"properties": {
 				"internalSku": { 
 					"type": "number"
 				}
 			}
+		},
+		"_ns": {
+			"type": "object",
+			"properties": {
+				"thirdparty": { 
+					"type": "object"
+					"properties": {
+						"com": {
+							"type": "object",
+							"properties": {
+								"color": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
 		}
+
 	}
 

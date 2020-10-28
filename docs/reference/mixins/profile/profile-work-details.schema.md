@@ -1,25 +1,25 @@
 
-# Profile work details Schema
+# Work Contact Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-work-details
 ```
 
-This mixin is used to capture information regarding work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.
+Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-work-details.schema.json](mixins/profile/profile-work-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile work details `https://ns.adobe.com/xdm/context/profile-work-details`
+* Work Contact Details `https://ns.adobe.com/xdm/context/profile-work-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email address](../../datatypes/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
-## Profile work details Example
+## Work Contact Details Example
 ```json
 {
   "xdm:workAddress": {
@@ -70,14 +70,14 @@ This mixin is used to capture information regarding work-related details of the 
 }
 ```
 
-# Profile work details Properties
+# Work Contact Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Profile work details (this schema) |
-| [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | Profile work details (this schema) |
-| [xdm:workEmail](#xdmworkemail) | Email address | Optional | Profile work details (this schema) |
-| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Profile work details (this schema) |
+| [xdm:organizations](#xdmorganizations) | `string[]` | Optional | Work Contact Details (this schema) |
+| [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | Work Contact Details (this schema) |
+| [xdm:workEmail](#xdmworkemail) | Email address | Optional | Work Contact Details (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Work Contact Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:organizations

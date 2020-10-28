@@ -13,7 +13,7 @@ Airship gathers engagement data that can help you better understand how your aud
 ## Schema Hierarchy
 
 * Airship Event Mixin `https://ns.airship.com/airship-event`
-  * [Airship Event Extension](airship-event-extension.schema.md) `https://ns.airship.com/airship-event-extension`
+  * [IdentityMap](../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
   * [Channel Details](../mixins/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
   * [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
@@ -25,15 +25,16 @@ Airship gathers engagement data that can help you better understand how your aud
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [airship:body](#airshipbody) | `object` | Optional | [Airship Event Extension](airship-event-extension.schema.md#airshipbody) |
-| [airship:device](#airshipdevice) | `object` | Optional | [Airship Event Extension](airship-event-extension.schema.md#airshipdevice) |
-| [airship:offsetID](#airshipoffsetid) | `string` | Optional | [Airship Event Extension](airship-event-extension.schema.md#airshipoffsetid) |
+| [airship:body](#airshipbody) | `object` | Optional | Airship Event Mixin (this schema) |
+| [airship:device](#airshipdevice) | `object` | Optional | Airship Event Mixin (this schema) |
+| [airship:offsetID](#airshipoffsetid) | `string` | Optional | Airship Event Mixin (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
 | [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmcolordepth) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:isBackgroundPushEnabled](#xdmisbackgroundpushenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmisbackgroundpushenabled) |
 | [xdm:isLocationEnabled](#xdmislocationenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmislocationenabled) |
 | [xdm:isPushOptIn](#xdmispushoptin) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmispushoptin) |
@@ -58,7 +59,7 @@ Contains Airship specific event body fields.
 `airship:body`
 * is optional
 * type: `object`
-* defined in [Airship Event Extension](airship-event-extension.schema.md#airshipbody)
+* defined in this schema
 
 ### airship:body Type
 
@@ -558,7 +559,7 @@ Contains Airship specific device attributes.
 `airship:device`
 * is optional
 * type: `object`
-* defined in [Airship Event Extension](airship-event-extension.schema.md#airshipdevice)
+* defined in this schema
 
 ### airship:device Type
 
@@ -623,7 +624,7 @@ An identifier that represents the events location in the Airship event stream an
 `airship:offsetID`
 * is optional
 * type: `string`
-* defined in [Airship Event Extension](airship-event-extension.schema.md#airshipoffsetid)
+* defined in this schema
 
 ### airship:offsetID Type
 
@@ -745,6 +746,28 @@ Audit attributes for external sources.
 
 
 * [External Source System Audit Attributes](../datatypes/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+
+
+
+
+
+## xdm:identityMap
+
+
+`xdm:identityMap`
+* is optional
+* type: `object`
+* defined in [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap)
+
+### xdm:identityMap Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
 
 
 

@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "meta:extends": [
-    "https://ns.airship.com/airship-event-extension",
+    "https://ns.adobe.com/xdm/context/identitymap",
     "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
@@ -332,7 +332,7 @@
       }
     },
     {
-      "$ref": "https://ns.airship.com/airship-event-extension"
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"

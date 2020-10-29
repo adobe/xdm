@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-consumer",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Content Consumption Details",
+    "title": "Consumer Experience Event",
     "type": "object",
     "description": "Digital content consumption data from web and mobile applications as well as online and offline purchase data such as channel, commerce, and device information.",
     "meta:extensible": true,

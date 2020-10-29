@@ -1,5 +1,5 @@
 
-# Push Notification Details Schema
+# Push Notification Token Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-push-details
@@ -12,11 +12,11 @@ Information regarding push notifications, such as mobile application and device 
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-push-details.schema.json](mixins/profile/profile-push-details.schema.json) |
 ## Schema Hierarchy
 
-* Push Notification Details `https://ns.adobe.com/xdm/context/profile-push-details`
+* Push Notification Token Details `https://ns.adobe.com/xdm/context/profile-push-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Push Notification Details Example
+## Push Notification Token Details Example
 ```json
 {
   "xdm:pushNotificationTokens": [
@@ -66,11 +66,11 @@ Information regarding push notifications, such as mobile application and device 
 }
 ```
 
-# Push Notification Details Properties
+# Push Notification Token Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push notification token | Optional | Push Notification Details (this schema) |
+| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push notification token | Optional | Push Notification Token Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:pushNotificationTokens

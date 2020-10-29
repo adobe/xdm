@@ -1,5 +1,5 @@
 
-# Content Consumption Details Schema
+# Consumer Experience Event Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-consumer
@@ -12,7 +12,7 @@ Digital content consumption data from web and mobile applications as well as onl
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-consumer.schema.json](mixins/experience-event/experienceevent-consumer.schema.json) |
 ## Schema Hierarchy
 
-* Content Consumption Details `https://ns.adobe.com/xdm/context/experienceevent-consumer`
+* Consumer Experience Event `https://ns.adobe.com/xdm/context/experienceevent-consumer`
   * [Application Details](experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
   * [Channel Details](experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
   * [Environment Details](experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
@@ -25,7 +25,7 @@ Digital content consumption data from web and mobile applications as well as onl
   * [Commerce Details](experienceevent-commerce.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-commerce`
 
 
-## Content Consumption Details Example
+## Consumer Experience Event Example
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -140,7 +140,7 @@ Digital content consumption data from web and mobile applications as well as onl
 }
 ```
 
-# Content Consumption Details Properties
+# Consumer Experience Event Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

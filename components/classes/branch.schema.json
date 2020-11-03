@@ -24,10 +24,10 @@
           },
           "xdm:branchAddress": {
             "title": "Branch Address",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/address",
+            "$ref": "https://ns.adobe.com/xdm/common/address",
             "description": "Physical address where the branch is located."
           },
-          "xdm:branchId": {
+          "xdm:id": {
             "title": "Branch ID",
             "type": "string",
             "description": "ID associated with the branch. "
@@ -54,7 +54,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordbranch"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/branch"
   }],

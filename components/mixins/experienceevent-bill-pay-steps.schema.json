@@ -23,7 +23,7 @@
         },
         "xdm:billPayAccount": {
           "title": "Bill Pay Account",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/financialAccount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
           "description": "Extension of financialAccount data type."
         }
       }

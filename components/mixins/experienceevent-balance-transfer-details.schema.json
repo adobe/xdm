@@ -18,7 +18,7 @@
       "properties": {
         "xdm:balanceTransfer": {
           "title": "Balance Transfer",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/Transaction",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
           "description": "Extension of transaction data type."
         },
         "xdm:balanceTransferAccount": {

@@ -22,7 +22,7 @@
             "type": "string",
             "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc."
           },
-          "xdm:carProductId": {
+          "xdm:id": {
             "title": "Car Product ID",
             "type": "string",
             "description": "Product ID associated with the car. "
@@ -57,7 +57,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordvehicle-product"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/vehicle-product"
   }],

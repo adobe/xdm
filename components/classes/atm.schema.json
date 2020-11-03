@@ -27,8 +27,8 @@
             "$ref": "https://ns.adobe.com/xdm/datatypes/address",
             "description": "Physicial address where the ATM is located."
           },
-          "xdm:atmId": {
-            "title": "ATM ID",
+          "xdm:id": {
+            "title": "ID",
             "type": "string",
             "description": "ID associated with the ATM."
           },
@@ -42,7 +42,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordatm"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/atm"
   }],

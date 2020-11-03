@@ -28,7 +28,7 @@
             "type": "string",
             "description": "Details of the promotion such as percentage off, or other restrictions."
           },
-          "xdm:promotionId": {
+          "xdm:id": {
             "title": "Promotion ID",
             "type": "string",
             "description": "The ID associated with the promotion."
@@ -44,7 +44,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordpromotion"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/promotion"
   }],

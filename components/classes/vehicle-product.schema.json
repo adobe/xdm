@@ -1,0 +1,65 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/vehicle-product",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Vehicle Product",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For vehicle product information such as category, number of doors, capacity, and ownership. ",
+  "definitions": {
+    "vehicle-product": {
+      "properties": {
+        "vehicle-product": {
+          "xdm:carCategory": {
+            "title": "Car Category",
+            "type": "string",
+            "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc."
+          },
+          "xdm:carProductId": {
+            "title": "Car Product ID",
+            "type": "string",
+            "description": "Product ID associated with the car. "
+          },
+          "xdm:luggageCapacity": {
+            "title": "Luggage Capacity",
+            "type": "string",
+            "description": "Number of pieces of luggage that fit in the car."
+          },
+          "xdm:numberOfDoors": {
+            "title": "Number of Doors",
+            "type": "integer",
+            "description": "How many operating doors the car has."
+          },
+          "xdm:ownership": {
+            "title": "Ownership",
+            "type": "string",
+            "description": "Parent company of the car."
+          },
+          "xdm:passengerCapacity": {
+            "title": "Passenger Capacity",
+            "type": "integer",
+            "description": "Number of passengers that fit in the car."
+          },
+          "xdm:starRating": {
+            "title": "Star Rating",
+            "type": "string",
+            "description": "Star rating associated with the car."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/data/recordvehicle-product"
+  }, {
+    "$ref": "#/definitions/vehicle-product"
+  }],
+  "meta:status": "experimental"
+}

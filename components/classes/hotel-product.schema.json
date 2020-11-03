@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/hotel-product",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Hotel Product",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For hotel product information such as ID, rooms, ownership, and type.",
+  "definitions": {
+    "hotel-product": {
+      "properties": {
+        "hotel-product": {
+          "xdm:city": {
+            "title": "City",
+            "type": "string",
+            "description": "City where the hotel is located."
+          },
+          "xdm:country": {
+            "title": "Country",
+            "type": "string",
+            "description": "Country where the hotel is located. "
+          },
+          "xdm:hotelProductId": {
+            "title": "Hotel Product ID",
+            "type": "string",
+            "description": "ID associated with the hotel."
+          },
+          "xdm:name": {
+            "title": "Name",
+            "type": "string",
+            "description": "Name of the hotel."
+          },
+          "xdm:ownership": {
+            "title": "Ownership",
+            "type": "string",
+            "description": "Parent company of the hotel."
+          },
+          "xdm:serviceLevel": {
+            "title": "Service Level",
+            "type": "string",
+            "description": "Service level associated with the hotel such as luxury, budget, mid-range, etc."
+          },
+          "xdm:starRating": {
+            "title": "Star Rating",
+            "type": "string",
+            "description": "Star rating associated with the hotel."
+          },
+          "xdm:totalRooms": {
+            "title": "Total Rooms",
+            "type": "integer",
+            "description": "Total rooms in the hotel."
+          },
+          "xdm:type": {
+            "title": "Type",
+            "type": "string",
+            "description": "Type of hotel such as homestay, resort, capsule, lodge, service apartment, boathouse, etc."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/data/recordhotel-product"
+  }, {
+    "$ref": "#/definitions/hotel-product"
+  }],
+  "meta:status": "experimental"
+}

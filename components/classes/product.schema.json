@@ -1,0 +1,60 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/product",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For CPG or retail product information such as name, category, sub-category, and rating.",
+  "definitions": {
+    "product": {
+      "properties": {
+        "product": {
+          "xdm:productCategory": {
+            "title": "Product Category",
+            "type": "string",
+            "description": "The category the product belongs to."
+          },
+          "xdm:productId": {
+            "title": "Product ID",
+            "type": "string",
+            "description": "The ID associated with the product."
+          },
+          "xdm:productName": {
+            "title": "Product Name",
+            "type": "string",
+            "description": "The name of the product."
+          },
+          "xdm:productRating": {
+            "title": "Product Rating",
+            "type": "string",
+            "description": "The rating for the product."
+          },
+          "xdm:productSubCategory": {
+            "title": "Product Sub Category",
+            "type": "string",
+            "description": "The sub category the product belongs to."
+          },
+          "xdm:productUnitPrice": {
+            "title": "Product Unit Price",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+            "description": "The price of one unit of the product."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/data/recordproduct"
+  }, {
+    "$ref": "#/definitions/product"
+  }],
+  "meta:status": "experimental"
+}

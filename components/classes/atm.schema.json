@@ -24,7 +24,7 @@
           },
           "xdm:atmAddress": {
             "title": "ATM Address",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/address",
+            "$ref": "https://ns.adobe.com/xdm/common/address",
             "description": "Physicial address where the ATM is located."
           },
           "xdm:id": {

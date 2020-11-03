@@ -22,7 +22,7 @@
             "type": "string",
             "description": "The category the product belongs to."
           },
-          "xdm:productId": {
+          "xdm:id": {
             "title": "Product ID",
             "type": "string",
             "description": "The ID associated with the product."
@@ -52,7 +52,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordproduct"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/product"
   }],

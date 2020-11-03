@@ -27,7 +27,7 @@
             "type": "string",
             "description": "Country where the hotel is located. "
           },
-          "xdm:hotelProductId": {
+          "xdm:id": {
             "title": "Hotel Product ID",
             "type": "string",
             "description": "ID associated with the hotel."
@@ -67,7 +67,7 @@
     }
   },
   "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/data/recordhotel-product"
+    "$ref": "https://ns.adobe.com/xdm/data/record"
   }, {
     "$ref": "#/definitions/hotel-product"
   }],

@@ -1,0 +1,40 @@
+{
+  "xdm:consents": {
+    "xdm:collect": {
+      "xdm:v": "y"
+    },
+    "xdm:link": {
+      "xdm:v": "VI"
+    },
+    "xdm:share": {
+      "xdm:v": "n"
+    },
+    "xdm:personalization": {
+      "xdm:any": {
+        "xdm:v": "u"
+      },
+      "xdm:offers": {
+        "xdm:v": "y"
+      },
+      "xdm:ads": {
+        "xdm:v": "n"
+      }
+    },
+    "xdm:marketing": {
+      "xdm:preferred": "email",
+      "xdm:any": {
+        "xdm:v": "y"
+      },
+      "xdm:email": {
+        "xdm:v": "y"
+      },
+      "xdm:push": {
+        "xdm:v": "n",
+        "xdm:reason": "Too Frequent"
+      }
+    },
+    "xdm:metadata": {
+      "xdm:t": "2019-01-01T15:52:25+00:00"
+    }
+  }
+}

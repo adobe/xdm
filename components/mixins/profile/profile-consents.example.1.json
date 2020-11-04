@@ -1,0 +1,70 @@
+{
+  "xdm:consents": {
+    "xdm:collect": {
+      "xdm:v": "y"
+    },
+    "xdm:link": {
+      "xdm:v": "VI"
+    },
+    "xdm:share": {
+      "xdm:v": "n"
+    },
+    "xdm:personalization": {
+      "xdm:any": {
+        "xdm:v": "u"
+      },
+      "xdm:offers": {
+        "xdm:v": "y"
+      },
+      "xdm:ads": {
+        "xdm:v": "n"
+      }
+    },
+    "xdm:marketing": {
+      "xdm:preferred": "email",
+      "xdm:any": {
+        "xdm:v": "y"
+      },
+      "xdm:email": {
+        "xdm:v": "y"
+      }
+    },
+    "xdm:idSpecific": {
+      "ECID": {
+        "12345678-abcdef09-87654321-fedcba90": {
+          "xdm:share": {
+            "xdm:v": "n"
+          },
+          "xdm:marketing": {
+            "xdm:push": {
+              "xdm:v": "n",
+              "xdm:reason": "not relevant"
+            }
+          }
+        },
+        "11112222-33334444-55556666-77778888": {
+          "xdm:adID": {
+            "xdm:v": "n"
+          },
+          "xdm:personalization": {
+            "xdm:offers": {
+              "xdm:v": "n"
+            }
+          }
+        }
+      },
+      "email": {
+        "john@xyz.com": {
+          "xdm:marketing": {
+            "xdm:email": {
+              "xdm:v": "y"
+            }
+          }
+        }
+      }
+    },
+    "xdm:metadata": {
+      "xdm:t": "2019-01-01T15:52:25+00:00"
+    }
+  }
+}

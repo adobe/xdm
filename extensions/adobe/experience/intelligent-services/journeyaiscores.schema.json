@@ -1,0 +1,34 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/journeyaiscores",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey AI Scores",
+  "type": "object",
+  "description": "Journey AI scores provided by the Journey AI intelligent service",
+  "definitions": {
+    "journeyaiscores": {
+      "properties": {
+        "xdm:engagementScores": {
+          "title": "Journey AI Engagement Scores",
+          "description": "Journey AI Engagement Scores provide likelihoods of a customer engaging with a newly delivered message.",
+          "$ref": "https://ns.adobe.com/experience/intelligent-services/journeyai-engagementscores"
+        },
+        "xdm:sendTimeOptimization": {
+          "title": "Journey AI Send Time Optimization",
+          "description": "Journey AI Send Time Optimization scores provides the time preferences for message deliveries. Higher score means a better outcome (for example email got clicked) is expected if message sent at the corresponding hour.",
+          "$ref": "https://ns.adobe.com/experience/intelligent-services/journeyai-sendtimeoptimization"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyaiscores"
+    }
+  ]
+}

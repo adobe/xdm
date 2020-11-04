@@ -3,21 +3,18 @@
     "xdm:collect": {
       "xdm:v": "y"
     },
-    "xdm:link": {
+    "xdm:adID": {
       "xdm:v": "VI"
     },
     "xdm:share": {
       "xdm:v": "n"
     },
-    "xdm:personalization": {
+    "xdm:personalize": {
       "xdm:any": {
         "xdm:v": "u"
       },
       "xdm:offers": {
         "xdm:v": "y"
-      },
-      "xdm:ads": {
-        "xdm:v": "n"
       }
     },
     "xdm:marketing": {

@@ -88,17 +88,12 @@
           "description": "Sharing of user's Data with 2nd or 3rd parties is permitted",
           "$ref": "#/definitions/consent-fields"
         },
-        "xdm:link": {
-          "title": "Device Linking",
-          "description": "Attempts to link multiple devices belonging to an individual or household are permitted",
-          "$ref": "#/definitions/consent-fields"
-        },
         "xdm:adID": {
           "title": "Use Advertiser ID",
           "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
           "$ref": "#/definitions/consent-fields"
         },
-        "xdm:personalization": {
+        "xdm:personalize": {
           "title": "Personalization Preferences",
           "description": "User's Personalization Preferences",
           "type": "object",
@@ -111,16 +106,6 @@
             "xdm:offers": {
               "title": "Personalize Offers",
               "description": "Allow personalization of 1st-party offers displayed on this site or with this app",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:offers3p": {
-              "title": "Personalize third-party Offers",
-              "description": "Personalization of third-party offers/ads displayed on this brand's sites or apps is permitted",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:ads": {
-              "title": "Personalize Ads",
-              "description": "Personalization of this brand's ads on third-party sites/apps is permitted",
               "$ref": "#/definitions/personalization-fields"
             }
           }

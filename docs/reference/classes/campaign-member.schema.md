@@ -1,24 +1,23 @@
 
-# XDM Business Campaign Member Schema
+# XDM Business Campaign Members Schema
 
 ```
 https://ns.adobe.com/xdm/context/campaign-member
 ```
 
-An XDM Business Campaign Member,which relates members such as contact/lead to a campaign
+An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/campaign-member.schema.json](classes/campaign-member.schema.json) |
 ## Schema Hierarchy
 
-* XDM Business Campaign Member `https://ns.adobe.com/xdm/context/campaign-member`
-  * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* XDM Business Campaign Members `https://ns.adobe.com/xdm/context/campaign-member`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
-## XDM Business Campaign Member Example
+## XDM Business Campaign Members Example
 ```json
 {
   "xdm:campaignMemberID": "1",
@@ -38,14 +37,15 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 }
 ```
 
-# XDM Business Campaign Member Properties
+# XDM Business Campaign Members Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
-| [xdm:campaign](#xdmcampaign) | `object` | Optional | XDM Business Campaign Member (this schema) |
-| [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Member (this schema) |
+| [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign Members (this schema) |
+| [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -69,68 +69,20 @@ A unique identifier for the record.
 
 
 
-## xdm:campaign
-### Campaign
+## xdm:campaignID
+### Campaign ID
 
-Campaign ID and Type associated as a key-value pair
+Campaign Unique Identifer.
 
-`xdm:campaign`
+`xdm:campaignID`
 * is optional
-* type: `object`
+* type: `string`
 * defined in this schema
 
-### xdm:campaign Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-| `xdm:ID`| string | **Required** |
-| `xdm:type`| string | **Required** |
-
-
-
-#### xdm:ID
-##### Campaign ID
-
-Campaign Unique Identifer
-
-`xdm:ID`
-* is **required**
-* type: `string`
-
-##### xdm:ID Type
+### xdm:campaignID Type
 
 
 `string`
-
-
-
-
-
-
-
-
-#### xdm:type
-##### Campaign Type
-
-Campaign Type
-
-`xdm:type`
-* is **required**
-* type: `string`
-
-##### xdm:type Type
-
-
-`string`
-
-
-
-
-
 
 
 
@@ -140,7 +92,7 @@ Campaign Type
 ## xdm:campaignMemberID
 ### Campaign Member ID
 
-Campaign Member unique identifer
+Campaign Member unique identifer.
 
 `xdm:campaignMemberID`
 * is optional
@@ -171,6 +123,26 @@ Audit attributes for external sources.
 
 
 * [External Source System Audit Attributes](../datatypes/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+
+
+
+
+
+## xdm:personID
+### Person ID
+
+Person unique identifier.
+
+`xdm:personID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:personID Type
+
+
+`string`
+
 
 
 

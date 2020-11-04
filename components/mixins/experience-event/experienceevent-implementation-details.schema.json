@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent implementation details",
+  "title": "Implementation Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Use to capture information related to the software used to collect an ExperienceEvent such as environment, name, and version.",
+  "description": "Information related to the software used to collect an ExperienceEvent such as environment, name, and version.",
   "definitions": {
     "experienceevent-implementation-details": {
       "properties": {

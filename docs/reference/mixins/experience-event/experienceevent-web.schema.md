@@ -1,23 +1,23 @@
 
-# ExperienceEvent web details Schema
+# Web Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-web
 ```
 
-Use for information regarding web details events such as interaction, page details, and referrer.
+Web events such as interaction, page details, and referrer.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-web.schema.json](mixins/experience-event/experienceevent-web.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent web details `https://ns.adobe.com/xdm/context/experienceevent-web`
+* Web Details `https://ns.adobe.com/xdm/context/experienceevent-web`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Web information](../../datatypes/webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
 
 
-## ExperienceEvent web details Example
+## Web Details Example
 ```json
 {
   "xdm:web": {
@@ -40,11 +40,11 @@ Use for information regarding web details events such as interaction, page detai
 }
 ```
 
-# ExperienceEvent web details Properties
+# Web Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:web](#xdmweb) | Web information | Optional | ExperienceEvent web details (this schema) |
+| [xdm:web](#xdmweb) | Web information | Optional | Web Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:web

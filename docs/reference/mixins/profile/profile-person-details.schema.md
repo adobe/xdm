@@ -1,23 +1,23 @@
 
-# Profile person details Schema
+# Demographic Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-person-details
 ```
 
-Use for demographic information such as name, gender, and birth date of an individual.
+Demographic information such as name, gender, and birth date of an individual.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-person-details.schema.json](mixins/profile/profile-person-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile person details `https://ns.adobe.com/xdm/context/profile-person-details`
+* Demographic Details `https://ns.adobe.com/xdm/context/profile-person-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](../../datatypes/person.schema.md) `https://ns.adobe.com/xdm/context/person`
 
 
-## Profile person details Example
+## Demographic Details Example
 ```json
 {
   "xdm:person": {
@@ -33,11 +33,11 @@ Use for demographic information such as name, gender, and birth date of an indiv
 }
 ```
 
-# Profile person details Properties
+# Demographic Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:person](#xdmperson) | Person | Optional | Profile person details (this schema) |
+| [xdm:person](#xdmperson) | Person | Optional | Demographic Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:person

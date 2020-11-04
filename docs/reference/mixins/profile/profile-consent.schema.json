@@ -1,0 +1,89 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-consent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Privacy/Marketing Preferences (Consent)",
+    "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "definitions": {
+        "profile-consents": {
+            "properties": {
+                "xdm:consentsAndPreferences": {
+                    "title": "Global Privacy/Marketing Preference Values",
+                    "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/consent-preferences"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-consents"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:consentsAndPreferences": {
+                "xdm:choices": {
+                    "xdm:consents": {
+                        "xdm:dataCollection": {
+                            "xdm:choice": "yes",
+                            "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+                            "xdm:basisOfProcessing": "consent"
+                        },
+                        "xdm:deviceLinking": {
+                            "xdm:basisOfProcessing": "vital_interest"
+                        },
+                        "xdm:pseudonymousAnalysis": {
+                            "xdm:choice": "no"
+                        }
+                    },
+                    "xdm:personalizationPreferences": {
+                        "xdm:anyPersonalization": {
+                            "xdm:choice": "yes",
+                            "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+                            "xdm:basisOfProcessing": "consent"
+                        }
+                    },
+                    "xdm:marketingPreferences": {
+                        "xdm:preferredChannel": "email",
+                        "xdm:anyMarketing": {
+                            "xdm:choice": "unknown"
+                        },
+                        "xdm:iotMessages": {
+                            "xdm:choice": "yes",
+                            "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+                            "xdm:basisOfProcessing": "legitimate_interest"
+                        },
+                        "xdm:pushNotifications": {
+                            "xdm:choice": "yes",
+                            "xdm:source": "OurApp"
+                        },
+                        "xdm:email": {
+                            "xdm:choice": "no",
+                            "xdm:reason": "Too Frequent"
+                        }
+                    }
+                },
+                "xdm:choicesMetadata": {
+                    "xdm:version": "1.0.0",
+                    "xdm:timestamp": "2019-01-01T15:52:25+00:00",
+                    "xdm:userCountryRegionCode": "US",
+                    "xdm:countryRegionSource": "ip",
+                    "xdm:source": "CJM"
+                }
+            }
+        }
+    ]
+}

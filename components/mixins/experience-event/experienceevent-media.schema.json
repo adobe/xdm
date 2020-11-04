@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-media",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "ExperienceEvent details for media",
+  "title": "Media Interaction Details ",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Use to track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
+  "description": "Track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
   "definitions": {
     "experienceevent-media": {
       "properties": {

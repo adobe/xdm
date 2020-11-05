@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey AI Scores",
   "type": "object",
-  "description": "Journey AI scores provided by the Journey AI intelligent service",
+  "description": "Journey AI scores provided by the Journey AI intelligent service. The service provides engagement scores for email channel and send-time-optimization scores for both email channel and push notification channel.",
   "definitions": {
     "journeyaiscores": {
       "properties": {
@@ -20,7 +20,7 @@
         },
         "xdm:sendTimeOptimization": {
           "title": "Journey AI Send Time Optimization",
-          "description": "Journey AI Send Time Optimization scores provides the time preferences for message deliveries. Higher score means a better outcome (for example email got clicked) is expected if message sent at the corresponding hour.",
+          "description": "Journey AI Send Time Optimization scores provide the time preferences for message deliveries. Higher score means a better outcome (for example email got clicked) is expected, if a message sent at the corresponding hour.",
           "$ref": "https://ns.adobe.com/experience/intelligent-services/journeyai-sendtimeoptimization"
         }
       }

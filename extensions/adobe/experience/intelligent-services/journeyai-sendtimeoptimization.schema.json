@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey AI Send Time Optimization",
   "type": "object",
-  "description": "Journey AI Send Time Optimization scores provides the time preferences for message deliveries. Higher score means a better outcome (for example email got clicked) is expected if message sent at the corresponding hour.",
+  "description": "Journey AI Send Time Optimization scores provide the time preferences for message deliveries. Higher score means a better outcome (for example email got clicked) is expected, if a message sent at the corresponding hour.",
   "definitions": {
     "journeyaisendtimeoptimization": {
       "properties": {
@@ -21,7 +21,7 @@
           "properties": {
             "xdm:sendTimeScoreForClick": {
               "title": "sendTimeScoreForClick",
-              "description": "score for 7*24 hours from GMT Monday hour 0 to Sunday hour 23",
+              "description": "scores for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer clicking on an email's link if it's sent at that hour",
               "type": "array",
               "isRequired": false,
               "minItems": 168,
@@ -34,7 +34,7 @@
             },
             "xdm:sendTimeScoreForOpen": {
               "title": "sendTimeScoreForOpen",
-              "description": "score for 7*24 hours from GMT Monday hour 0 to Sunday hour 23",
+              "description": "scores for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer opening an email if it's sent at that hour",
               "type": "array",
               "isRequired": false,
               "minItems": 168,
@@ -50,13 +50,13 @@
         },
         "xdm:pushChannel": {
           "title": "pushChannel",
-          "description": "Send Time Optimization scores for email channel",
+          "description": "Send Time Optimization scores for push channel",
           "type": "object",
           "isRequired": false,
           "properties": {
             "xdm:sendTimeScoreForOpen": {
               "title": "sendTimeScoreForOpen",
-              "description": "score for 7*24 hours from GMT Monday hour 0 to Sunday hour 23",
+              "description": "score for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer opening a push notification if it's sent at that hour",
               "type": "array",
               "isRequired": false,
               "minItems": 168,
@@ -72,7 +72,7 @@
         },
         "xdm:scoreInfo": {
           "title": "scoreInfo",
-          "description": "record model version and score date as a concatenated string",
+          "description": "model version and score date as a concatenated string",
           "type": "string",
           "isRequired": false,
           "meta:xdmType": "string"

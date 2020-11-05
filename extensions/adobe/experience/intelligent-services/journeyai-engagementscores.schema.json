@@ -35,21 +35,21 @@
             },
             "xdm:retentionLevel": {
               "title": "retentionLevel",
-              "description": "",
+              "description": "the qualitative categorization of customer's likelihood of staying subscribed to email list",
               "type": "string",
               "isRequired": false,
               "meta:xdmType": "string"
             },
             "xdm:retentionPercentRank": {
               "title": "retentionPercentRank",
-              "description": "",
+              "description": "percentile rank of the likelihood of staying subscribed to email list",
               "type": "number",
               "isRequired": false,
               "meta:xdmType": "number"
             },
             "xdm:unsubscriptionProbability": {
               "title": "unsubscriptionProbability",
-              "description": "",
+              "description": "the probability for recipient to unsubscribe from email channel given one email opened",
               "type": "number",
               "isRequired": false,
               "meta:xdmType": "number"
@@ -59,7 +59,7 @@
         },
         "xdm:scoreInfo": {
           "title": "scoreInfo",
-          "description": "record model version and score date as a concatenated string",
+          "description": "model version and score date as a concatenated string",
           "type": "string",
           "isRequired": false,
           "meta:xdmType": "string"

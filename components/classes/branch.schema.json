@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/branch",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Branch",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For branch information such as ID, name, and open and close times.",
+  "definitions": {
+    "branch": {
+      "properties": {
+        "branch": {
+          "xdm:active": {
+            "title": "Active",
+            "type": "boolean",
+            "description": "Yes/no if the branch is currently active."
+          },
+          "xdm:branchAddress": {
+            "title": "Branch Address",
+            "$ref": "https://ns.adobe.com/xdm/common/address",
+            "description": "Physical address where the branch is located."
+          },
+          "xdm:id": {
+            "title": "Branch ID",
+            "type": "string",
+            "description": "ID associated with the branch. "
+          },
+          "xdm:branchName": {
+            "title": "Branch Name",
+            "type": "string",
+            "description": "Name of the branch."
+          },
+          "xdm:closeTime": {
+            "title": "Close Time",
+            "type": "string",
+            "format": "date-time",
+            "description": "Time of day the branch closes."
+          },
+          "xdm:openTime": {
+            "title": "Open Time",
+            "type": "string",
+            "format": "date-time",
+            "description": "Time of day the branch opens."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+    "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "meta:status": "experimental"
+}

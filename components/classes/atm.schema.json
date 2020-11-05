@@ -1,0 +1,50 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/atm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ATM",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For ATM information such as active status, addrerss, ID and name. ",
+  "definitions": {
+    "atm": {
+      "properties": {
+        "atm": {
+          "xdm:active": {
+            "title": "Active",
+            "type": "boolean",
+            "description": "Yes/no if the ATM is currently active."
+          },
+          "xdm:atmAddress": {
+            "title": "ATM Address",
+            "$ref": "https://ns.adobe.com/xdm/common/address",
+            "description": "Physicial address where the ATM is located."
+          },
+          "xdm:id": {
+            "title": "ATM ID",
+            "type": "string",
+            "description": "ID associated with the ATM."
+          },
+          "xdm:atmName": {
+            "title": "ATM Name",
+            "type": "string",
+            "description": "Name associated with the ATM."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+    "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "meta:status": "experimental"
+}

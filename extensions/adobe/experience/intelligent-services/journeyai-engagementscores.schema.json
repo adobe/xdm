@@ -35,14 +35,14 @@
             },
             "xdm:retentionLevel": {
               "title": "retentionLevel",
-              "description": "the qualitative categorization of customer's likelihood of staying subscribed to email list",
+              "description": "qualitative categorization of customer's likelihood of staying subscribed to the email list",
               "type": "string",
               "isRequired": false,
               "meta:xdmType": "string"
             },
             "xdm:retentionPercentRank": {
               "title": "retentionPercentRank",
-              "description": "percentile rank of the likelihood of staying subscribed to email list",
+              "description": "percentile rank of the likelihood of staying subscribed to the email list",
               "type": "number",
               "isRequired": false,
               "meta:xdmType": "number"

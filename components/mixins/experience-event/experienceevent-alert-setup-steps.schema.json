@@ -28,7 +28,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/alert-setup-steps"
+      "$ref": "#/definitions/alert-setup-steps"
     }
   ],
   "meta:status": "experimental"

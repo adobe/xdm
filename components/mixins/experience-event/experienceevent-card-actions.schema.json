@@ -73,7 +73,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/card-actions"
+      "$ref": "#/definitions/card-actions"
     }
   ],
   "meta:status": "experimental"

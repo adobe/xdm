@@ -33,7 +33,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/bill-pay"
+      "$ref": "#/definitions/bill-pay"
     }
   ],
   "meta:status": "experimental"

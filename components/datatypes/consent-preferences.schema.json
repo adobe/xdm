@@ -103,9 +103,9 @@
               "description": "Is permission granted to perform any type of personalization",
               "$ref": "#/definitions/personalization-fields"
             },
-            "xdm:offers": {
-              "title": "Personalize Offers",
-              "description": "Allow personalization of 1st-party offers displayed on this site or with this app",
+            "xdm:content": {
+              "title": "Personalize Content",
+              "description": "Allow personalization of the content on my site or in my apps",
               "$ref": "#/definitions/personalization-fields"
             }
           }
@@ -182,7 +182,8 @@
           "type": "string",
           "format": "date-time"
         }
-      }
+      },
+      "required": ["xdm:t"]
     },
     "consent-preferences": {
       "properties": {
@@ -200,7 +201,8 @@
                   "description": "Metadata that applies to all consents and preferences that don't specify a different value",
                   "$ref": "#/definitions/metadata"
                 }
-              }
+              },
+              "required": ["xdm:metadata"]
             }
           ]
         }
@@ -242,7 +244,8 @@
                   "description": "Metadata that applies to all consents and preferences that don't specify a different value",
                   "$ref": "#/definitions/metadata"
                 }
-              }
+              },
+              "required": ["xdm:metadata"]
             }
           ]
         }

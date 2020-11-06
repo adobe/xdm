@@ -1,0 +1,15 @@
+{
+  "xdm:name": "My App",
+  "xdm:id": "com.example.app",
+  "xdm:version": "1.0.0",
+  "xdm:isLaunch": true,
+  "xdm:launchType": "launch",
+  "xdm:isDailyEngUser": true,
+  "xdm:daysSinceFirstUse": 6,
+  "xdm:daysSinceLastUse": 1,
+  "xdm:daysSinceLastUpgrade": 1,
+  "xdm:launchesSinceLastUpgrade": 1,
+  "xdm:launches": 20,
+  "xdm:dayOfWeek": 4,
+  "xdm:hourOfDay": 14
+}

@@ -1,0 +1,133 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/mobile-application",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Mobile Application",
+  "type": "object",
+  "description": "Details related to mobile application generated interactions. Mobile Application refers to a mobile software experience that can be installed, run, closed, or uninstalled by an end user. Details additionally include session and application lifecycle metrics reported by the application at the time of the experience.",
+  "meta:extensible": true,
+  "definitions": {
+    "mobileApplication": {
+      "properties": {
+        "xdm:id": {
+          "title": "Application identifier",
+          "type": "string",
+          "description": "Identifier of the application."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name of the application."
+        },
+        "xdm:version": {
+          "title": "Version",
+          "type": "string",
+          "description": "Version of the application."
+        },
+        "xdm:isLaunch": {
+          "title": "Is launch event",
+          "type": "boolean",
+          "description": "Indicates whether or not this is an application launch event."
+        },
+        "xdm:launchType": {
+          "type": "string",
+          "description": "Specifies the launch event type. Install indicates this is the first application launch after the application was installed. Upgrade indicates this is the first application launch after the application was upgraded. Launch is an application launch which is not after an application install or upgrade.",
+          "enum": ["launch", "install", "upgrade"],
+          "meta:enum": {
+            "launch": "Launch",
+            "install": "Install",
+            "upgrade": "Upgrade"
+          }
+        },
+        "xdm:isClose": {
+          "title": "Is close event",
+          "type": "boolean",
+          "description": "Indicates whether or not this is an application close event and contains details of the previous session."
+        },
+        "xdm:closeType": {
+          "type": "string",
+          "description": "Specifies the close event type. A value of close means the application signaled that it has closed, either by a user action or by the device. Unknown means the application did not signal that it closed, which could indicate an application crash, a system failure, or an improperly configured application.",
+          "enum": ["close", "unknown"],
+          "meta:enum": {
+            "close": "Close",
+            "unknown": "Unknown"
+          }
+        },
+        "xdm:isDailyEngUser": {
+          "title": "Is daily engaged user event",
+          "type": "boolean",
+          "description": "Indicates whether or not this is the first application launch of the day."
+        },
+        "xdm:isMonthlyEngUser": {
+          "title": "Is monthly engaged user event",
+          "type": "boolean",
+          "description": "Indicates whether or not this is the first application launch of the month."
+        },
+        "xdm:sessionLength": {
+          "title": "Session length",
+          "type": "integer",
+          "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Included with close event."
+        },
+        "xdm:ignoredSessionLength": {
+          "title": "Ignored session length",
+          "type": "integer",
+          "description": "If the previous session lasts longer than the maxSessionLength, that session length is ignored and recorded here. Included with close event."
+        },
+        "xdm:daysSinceFirstUse": {
+          "title": "Days since first use",
+          "type": "integer",
+          "description": "Number of days since first launch event."
+        },
+        "xdm:daysSinceLastUse": {
+          "title": "Days since last use",
+          "type": "integer",
+          "description": "Number of days since last launch event."
+        },
+        "xdm:daysSinceLastUpgrade": {
+          "title": "Days since last upgrade",
+          "type": "integer",
+          "description": "Number of days since last upgrade event."
+        },
+        "xdm:launchesSinceLastUpgrade": {
+          "title": "Launches since last upgrade",
+          "type": "integer",
+          "description": "Number of launch events since last upgrade event."
+        },
+        "xdm:installDate": {
+          "title": "Install date",
+          "type": "string",
+          "description": "Date of first launch after installation."
+        },
+        "xdm:launches": {
+          "title": "Launches",
+          "type": "integer",
+          "description": "Total number of launch events for this application."
+        },
+        "xdm:dayOfWeek": {
+          "title": "Day of week",
+          "type": "integer",
+          "description": "Measures the day of the week the app was launched."
+        },
+        "xdm:hourOfDay": {
+          "title": "Hour of day",
+          "type": "integer",
+          "description": "Measures the hour the app was launched and uses the 24-hour numerical format. Used for time parting to determine peak usage times."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/mobile-application"
+    }
+  ],
+  "meta:status": "experimental"
+}

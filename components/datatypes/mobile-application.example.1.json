@@ -1,0 +1,13 @@
+{
+  "xdm:name": "My App",
+  "xdm:id": "com.example.app",
+  "xdm:version": "1.0.0",
+  "xdm:isLaunch": true,
+  "xdm:launchType": "install",
+  "xdm:isDailyEngUser": true,
+  "xdm:isMonthlyEngUser": true,
+  "xdm:installDate": "2020-10-21",
+  "xdm:launches": 1,
+  "xdm:dayOfWeek": 4,
+  "xdm:hourOfDay": 14
+}

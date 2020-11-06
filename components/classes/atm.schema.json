@@ -14,36 +14,34 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "For ATM information such as active status, addrerss, ID and name. ",
   "definitions": {
-    "atm": {
-      "properties": {
-        "atm": {
-          "xdm:active": {
-            "title": "Active",
-            "type": "boolean",
-            "description": "Yes/no if the ATM is currently active."
-          },
-          "xdm:atmAddress": {
-            "title": "ATM Address",
-            "$ref": "https://ns.adobe.com/xdm/common/address",
-            "description": "Physicial address where the ATM is located."
-          },
-          "xdm:id": {
-            "title": "ATM ID",
-            "type": "string",
-            "description": "ID associated with the ATM."
-          },
-          "xdm:atmName": {
-            "title": "ATM Name",
-            "type": "string",
-            "description": "Name associated with the ATM."
-          }
+    "properties": {
+      "atm": {
+        "xdm:active": {
+          "title": "Active",
+          "type": "boolean",
+          "description": "Yes/no if the ATM is currently active."
+        },
+        "xdm:atmAddress": {
+          "title": "ATM Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Physicial address where the ATM is located."
+        },
+        "xdm:id": {
+          "title": "ATM ID",
+          "type": "string",
+          "description": "ID associated with the ATM."
+        },
+        "xdm:atmName": {
+          "title": "ATM Name",
+          "type": "string",
+          "description": "Name associated with the ATM."
         }
       }
     }
   },
   "allOf": [
     {
-    "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
   "meta:status": "experimental"

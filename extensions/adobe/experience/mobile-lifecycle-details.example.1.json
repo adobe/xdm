@@ -1,0 +1,36 @@
+{
+  "xdm:mobileApplication": {
+    "xdm:name": "My App",
+    "xdm:id": "com.example.app",
+    "xdm:version": "1.0.0",
+    "xdm:isLaunch": true,
+    "xdm:launchType": "launch",
+    "xdm:isDailyEngUser": true,
+    "xdm:isMonthlyEngUser": true,
+    "xdm:daysSinceFirstUse": 6,
+    "xdm:daysSinceLastUse": 1,
+    "xdm:daysSinceLastUpgrade": 1,
+    "xdm:launchesSinceLastUpgrade": 1,
+    "xdm:launches": 20,
+    "xdm:dayOfWeek": 4,
+    "xdm:hourOfDay": 14
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6",
+    "xdm:modelNumber": "A1586",
+    "xdm:screenHeight": 667,
+    "xdm:screenWidth": 375,
+    "xdm:screenOrientation": "portrait"
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:carrier": "Verizon",
+    "xdm:operatingSystem": "iOS",
+    "xdm:operatingSystemVersion": "14.2",
+    "xdm:operatingSystemVendor": "Apple",
+    "dc:language": "en-US"
+  },
+  "xdm:eventType": "mobile.lifecycle.launch"
+}

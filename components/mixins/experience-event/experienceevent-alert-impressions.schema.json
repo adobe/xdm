@@ -41,7 +41,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/alert-impressions"
+      "$ref": "#/definitions/alert-impressions"
     }
   ],
   "meta:status": "experimental"

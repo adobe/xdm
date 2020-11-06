@@ -117,7 +117,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/internal-search"
+      "$ref": "#/definitions/internal-search"
     }
   ],
   "meta:status": "experimental"

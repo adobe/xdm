@@ -33,7 +33,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/balance-transfers"
+      "$ref": "#/definitions/balance-transfers"
     }
   ],
   "meta:status": "experimental"

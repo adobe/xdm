@@ -80,12 +80,12 @@
 			"description": "Captures the encrypted/hashed version of the visitor's email address.",
 			"type": "string"
 		},
-		"xdm:emailVisitorId": {
+		"xdm:emailVisitorID": {
 			"title": "Email Recipient ID",
 			"description": "Captures the email recipient ID.",
 			"type": "string"
 		},
-		"xdm:messageId": {
+		"xdm:messageID": {
 			"title": "Email Message ID",
 			"description": "Captures the email message ID.",
 			"type": "string"

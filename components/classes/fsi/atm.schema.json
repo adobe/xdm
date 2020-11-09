@@ -16,8 +16,8 @@
   "definitions": {
     "properties": {
       "atm": {
-        "xdm:active": {
-          "title": "Active",
+        "xdm:isAtmActive": {
+          "title": "Is ATM Active",
           "type": "boolean",
           "description": "Yes/no if the ATM is currently active."
         },
@@ -26,7 +26,7 @@
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Physicial address where the ATM is located."
         },
-        "xdm:id": {
+        "xdm:atmID": {
           "title": "ATM ID",
           "type": "string",
           "description": "ID associated with the ATM."

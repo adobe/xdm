@@ -16,7 +16,7 @@
   "definitions": {
     "balance-transfers": {
       "properties": {
-        "xdm:balance-transfers": {
+        "xdm:balanceTransfers": {
           "xdm:balanceTransfer": {
             "title": "Balance Transfer",
             "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
@@ -33,7 +33,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/balance-transfers"
+      "$ref": "#/definitions/balance-transfers"
     }
   ],
   "meta:status": "experimental"

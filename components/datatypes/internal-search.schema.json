@@ -16,12 +16,12 @@
       "properties": {
         "xdm:autocompleteSearch": {
           "title": "Search Autocomplete Value",
-          "type": "integer",
+          "type": "string",
           "description": "Tracks when a visitor uses a suggested/autocompleted search value to execute the search"
         },
         "xdm:numberofSearchResults": {
           "title": "Number of Results",
-          "type": "string",
+          "type": "integer",
           "description": "Count of the total number of search results returned."
         },
         "xdm:productFindingMethods": {
@@ -31,25 +31,22 @@
         },
         "xdm:refineSearch": {
           "title": "Refinement Value",
-          "type": "integer",
+          "type": "string",
           "description": "Number of times an internal search refinement has occurred."
         },
         "xdm:refineType": {
           "title": "Search Refinement Type",
           "type": "array",
-          "items": {
-            "type": "string"
-          },
           "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)"
         },
         "xdm:resultsPageNumber": {
           "title": "Search Results Page Number",
-          "type": "string",
+          "type": "integer",
           "description": "For paginated search results, tracks the page of results the visitor is viewing."
         },
         "xdm:search": {
           "title": "Search Event",
-          "type": "integer",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
           "description": "Number of times an internal search has occurred."
         },
         "xdm:searchLocation": {
@@ -59,7 +56,7 @@
         },
         "xdm:searchNullSearch": {
           "title": "Null Search Event",
-          "type": "integer",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
           "description": "Number of times an internal search has occurred that provided zero results."
         },
         "xdm:searchPostalCode": {
@@ -79,7 +76,7 @@
         },
         "xdm:searchTermClick": {
           "title": "Search Autocomplete Clicked",
-          "type": "integer",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This event tracks when a search term in clicked instead of when a search is executed"
         },
         "xdm:searchTermClicked": {
@@ -89,7 +86,7 @@
         },
         "xdm:searchTermTyped": {
           "title": "Search Autocomplete Typed Value",
-          "type": "integer",
+          "type": "string",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms"
         },
         "xdm:searchType": {
@@ -99,7 +96,7 @@
         },
         "xdm:sort": {
           "title": "Search Sort Value",
-          "type": "integer",
+          "type": "string",
           "description": "Capture when a sort value has been applied to the list of search results."
         },
         "xdm:sortType": {
@@ -109,7 +106,7 @@
         },
         "xdm:typeAhead": {
           "title": "Search Type Ahead Value",
-          "type": "integer",
+          "type": "string",
           "description": "Tracks the suggested/autocompleted search value to execute the search"
         }
       }
@@ -117,7 +114,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/internal-search"
+      "$ref": "#/definitions/internal-search"
     }
   ],
   "meta:status": "experimental"

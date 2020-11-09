@@ -57,7 +57,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/comparisons"
+      "$ref": "#/definitions/comparisons"
     }
   ],
   "meta:status": "experimental"

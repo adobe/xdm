@@ -16,7 +16,7 @@
   "definitions": {
     "alert-impressions": {
       "properties": {
-        "xdm:alert-impressions": {
+        "xdm:alertImpressions": {
           "xdm:alertClicks": {
             "title": "Alert Clicks",
             "type": "integer",
@@ -33,7 +33,7 @@
             "items": {
               "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
             },
-            "description": "An array of advertisements that have been displayed to a customer."
+            "description": "An array of alerts that have been displayed to a customer."
           }
         }
       }

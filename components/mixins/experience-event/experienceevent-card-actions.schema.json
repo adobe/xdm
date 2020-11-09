@@ -16,7 +16,7 @@
   "definitions": {
     "card-actions": {
       "properties": {
-        "xdm:card-actions": {
+        "xdm:cardActions": {
           "xdm:cardActivated": {
             "title": "Card Activated Success",
             "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
@@ -55,11 +55,28 @@
           "xdm:cardOrderType": {
             "title": "Card Order Type",
             "enum": ["new", "lost", "stolen", "never received", "damaged"],
+            "meta:enum": {
+              "new": "New",
+              "lost": "Lost",
+              "stolen": "Stolen",
+              "never received": "Never Recieved",
+              "damaged": "Damaged"
+            },
             "description": "Tracks the type of card order associated with a card order event."
           },
           "xdm:cardType": {
             "title": "Card Type",
             "enum": ["credit", "debit", "prepaid", "paypal", "atm", "virtual", "hsa", "fsa"],
+            "meta:enum": {
+              "credit": "Credit",
+              "debit": "Debit",
+              "prepaid": "Prepaid",
+              "paypal": "PayPal",
+              "atm": "ATM",
+              "virtual": "Virtual",
+              "hsa": "HSA",
+              "fsa": "FSA"
+            },
             "description": "Tracks the type of card associated with an event."
           },
           "xdm:cardUnlocked": {
@@ -71,10 +88,8 @@
       }
     }
   },
-  "allOf": [
-    {
+  "allOf": [{
     "$ref": "#/definitions/card-actions"
-    }
-  ],
+  }],
   "meta:status": "experimental"
 }

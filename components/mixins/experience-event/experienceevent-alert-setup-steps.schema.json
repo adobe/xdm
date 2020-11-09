@@ -16,7 +16,7 @@
   "definitions": {
     "alert-setup-steps": {
       "properties": {
-        "xdm:alert-setup-steps": {
+        "xdm:alertSetupSteps": {
           "xdm:alertSetup": {
             "title": "Alert Setup",
             "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
@@ -28,7 +28,7 @@
   },
   "allOf": [
     {
-    "$ref": "#/definitions/alert-setup-steps"
+      "$ref": "#/definitions/alert-setup-steps"
     }
   ],
   "meta:status": "experimental"

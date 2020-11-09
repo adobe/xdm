@@ -67,6 +67,9 @@
         "xdm:v": {
           "$ref": "#/definitions/choice-value"
         },
+        "xdm:t": {
+          "$ref": "#/definitions/timestamp"
+        },
         "xdm:reason": {
           "title": "Opt out reason",
           "type": "string",
@@ -182,8 +185,7 @@
           "type": "string",
           "format": "date-time"
         }
-      },
-      "required": ["xdm:t"]
+      }
     },
     "consent-preferences": {
       "properties": {
@@ -201,8 +203,7 @@
                   "description": "Metadata that applies to all consents and preferences that don't specify a different value",
                   "$ref": "#/definitions/metadata"
                 }
-              },
-              "required": ["xdm:metadata"]
+              }
             }
           ]
         }
@@ -244,8 +245,7 @@
                   "description": "Metadata that applies to all consents and preferences that don't specify a different value",
                   "$ref": "#/definitions/metadata"
                 }
-              },
-              "required": ["xdm:metadata"]
+              }
             }
           ]
         }

@@ -33,7 +33,11 @@
   },
   "allOf": [
     {
+<<<<<<< HEAD:components/mixins/experience-event/experienceevent-bill-pay-steps.schema.json
       "$ref": "#/definitions/bill-pay-steps"
+=======
+      "$ref": "#/definitions/bill-pay"
+>>>>>>> 0a94c987cf2bc393940fe93c57a3c16951fb9612:components/mixins/experience-event/experienceevent-bill-pay.schema.json
     }
   ],
   "meta:status": "experimental"

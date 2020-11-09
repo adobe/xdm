@@ -88,8 +88,16 @@
       }
     }
   },
+<<<<<<< HEAD
   "allOf": [{
     "$ref": "#/definitions/card-actions"
   }],
+=======
+  "allOf": [
+    {
+      "$ref": "#/definitions/card-actions"
+    }
+  ],
+>>>>>>> 0a94c987cf2bc393940fe93c57a3c16951fb9612
   "meta:status": "experimental"
 }

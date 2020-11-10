@@ -268,20 +268,7 @@
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    { "$ref": "#/definitions/person" },
-    { "$ref": "#/definitions/person-birthDate" },
-    { "$ref": "#/definitions/person-birthDayAndMonth" },
-    { "$ref": "#/definitions/person-birthYear" },
-    { "$ref": "#/definitions/person-gender" },
-    { "$ref": "#/definitions/person-maritalStatus" },
-    { "$ref": "#/definitions/person-name-courtesyTitle" },
-    { "$ref": "#/definitions/person-name-firstName" },
-    { "$ref": "#/definitions/person-name-fullName" },
-    { "$ref": "#/definitions/person-name-lastName" },
-    { "$ref": "#/definitions/person-name-middleName" },
-    { "$ref": "#/definitions/person-name-suffix" },
-    { "$ref": "#/definitions/person-nationality" },
-    { "$ref": "#/definitions/person-taxId" }
+    { "$ref": "#/definitions/person" }
   ],
   "meta:status": "experimental"
 }

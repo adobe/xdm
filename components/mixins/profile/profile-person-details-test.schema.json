@@ -17,9 +17,74 @@
     "profile-person-details-test": {
       "properties": {
         "xdm:person": {
-          "title": "Person",
-          "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "An individual actor, contact, or owner."
+          "xdm:name": {
+            "title": "Full name",
+            "$ref": "https://ns.adobe.com/xdm/context/person-name",
+            "description": "The person's full name."
+          },
+          "xdm:birthDate": {
+            "title": "Birth date",
+            "type": "string",
+            "format": "date",
+            "description": "The full date a person was born."
+          },
+          "xdm:birthDayAndMonth": {
+            "title": "Birth date",
+            "type": "string",
+            "pattern": "[0-1][0-9]-[0-9][0-9]",
+            "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
+          },
+          "xdm:birthYear": {
+            "title": "Birth year",
+            "type": "integer",
+            "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
+            "minimum": 1,
+            "maximum": 32767
+          },
+          "xdm:gender": {
+            "title": "Gender",
+            "type": "string",
+            "enum": ["male", "female", "not_specified", "non_specific"],
+            "meta:enum": {
+              "male": "Male",
+              "female": "Female",
+              "not_specified": "Not Specified",
+              "non_specific": "Non-specific"
+            },
+            "description": "Gender identity of the person.\n",
+            "default": "not_specified"
+          },
+          "xdm:maritalStatus": {
+            "title": "Marital Status",
+            "type": "string",
+            "enum": [
+              "married",
+              "single",
+              "divorced",
+              "widowed",
+              "not_specified"
+            ],
+            "meta:enum": {
+              "married": "Married",
+              "single": "Single",
+              "divorced": "Divorced",
+              "widowed": "Widowed",
+              "not_specified": "Not Specified"
+            },
+            "description": "Describes a person's relationship with a significant other.",
+            "default": "not_specified"
+          },
+          "xdm:nationality": {
+            "title": "Nationality",
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
+          },
+          "xdm:taxId": {
+            "title": "Tax ID",
+            "type": "string",
+            "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain."
+          }
         }
       }
     }

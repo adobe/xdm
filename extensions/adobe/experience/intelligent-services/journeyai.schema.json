@@ -5,13 +5,13 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/campaign/journeyaiscores",
+  "$id": "https://ns.adobe.com/experience/intelligent-services/journeyai",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Journey AI Scores",
   "type": "object",
   "description": "Journey AI scores provided by the Journey AI intelligent service. The service provides engagement scores for email channel and send-time-optimization scores for both email channel and push notification channel.",
   "definitions": {
-    "journeyaiscores": {
+    "journeyai": {
       "properties": {
         "xdm:engagementScores": {
           "title": "Journey AI Engagement Scores",
@@ -28,7 +28,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyaiscores"
+      "$ref": "#/definitions/journeyai"
     }
   ]
 }

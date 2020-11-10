@@ -18,7 +18,7 @@
       "properties": {
         "xdm:namespaceID": {
           "title": "Unique Namespace ID",
-          "type": "string",
+          "type": "integer",
           "description": "Unique Identifier for namespace"
         },
         "xdm:namespaceName": {
@@ -72,12 +72,7 @@
           "description": "The date and time when the namespace was updated in ISO 8601 format"
         }
       },
-      "required": [
-        "xdm:namespaceID",
-        "xdm:namespaceCode",
-        "xdm:namespaceName",
-        "xdm:namespaceIdType"
-      ]
+      "required": ["xdm:namespaceID", "xdm:namespaceCode"]
     }
   },
   "allOf": [

@@ -64,6 +64,11 @@
                     "type": "string",
                     "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language."
                 },
+                "xdm:state": {
+                    "title": "State",
+                    "type": "string",
+                    "description": "The name of the State. This is a free-form field."
+                },
                 "xdm:status": {
                     "title": "Status",
                     "type": "string",

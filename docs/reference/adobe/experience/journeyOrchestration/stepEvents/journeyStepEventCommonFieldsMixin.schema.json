@@ -228,8 +228,8 @@
                             "description": "Type of the Journey Step Node being processed.",
                             "type": "string"
                         },
-                        "https://ns.adobe.com/experience/journeyOrchestration/parentNodeId": {
-                            "title": "parentNodeId",
+                        "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": {
+                            "title": "parentNodeID",
                             "description": "Node ID of the parent of the current processed node in the instance.",
                             "type": "string"
                         },

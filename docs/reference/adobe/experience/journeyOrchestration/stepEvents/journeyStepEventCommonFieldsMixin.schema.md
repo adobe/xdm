@@ -59,7 +59,7 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/parentNodeId`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentNodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentNodeType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentStepID`| string | Optional |
@@ -601,16 +601,16 @@ Journey version ID of the initial journey in a journey jump scenario.
 
 
 
-#### https://ns.adobe.com/experience/journeyOrchestration/parentNodeId
-##### parentNodeId
+#### https://ns.adobe.com/experience/journeyOrchestration/parentNodeID
+##### parentNodeID
 
 Node ID of the parent of the current processed node in the instance.
 
-`https://ns.adobe.com/experience/journeyOrchestration/parentNodeId`
+`https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/journeyOrchestration/parentNodeId Type
+##### https://ns.adobe.com/experience/journeyOrchestration/parentNodeID Type
 
 
 `string`

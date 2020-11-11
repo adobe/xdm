@@ -19,12 +19,12 @@
         "xdm:alertImpressions": {
           "xdm:alertClicks": {
             "title": "Alert Clicks",
-            "type": "integer",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
             "description": "Counts the number of times an alert has been clicked."
           },
           "xdm:alertDismissals": {
             "title": "Alert Dismissals",
-            "type": "integer",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
             "description": "Counts the number of times an alert has been dismissed."
           },
           "xdm:alertImpressions": {

@@ -14,8 +14,8 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "For ATM information such as active status, addrerss, ID and name. ",
   "definitions": {
-    "properties": {
-      "atm": {
+    "atm": {
+      "properties": {
         "xdm:isAtmActive": {
           "title": "Is ATM Active",
           "type": "boolean",
@@ -42,6 +42,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/atm"
     }
   ],
   "meta:status": "experimental"

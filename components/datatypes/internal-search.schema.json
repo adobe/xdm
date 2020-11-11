@@ -39,13 +39,18 @@
           "type": "array",
           "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)"
         },
+        "xdm:refinementInstances": {
+          "title": "Search Refinement Instances",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "description": "Captures when a search refinement action occurs."
+        },
         "xdm:resultsPageNumber": {
           "title": "Search Results Page Number",
           "type": "integer",
           "description": "For paginated search results, tracks the page of results the visitor is viewing."
         },
-        "xdm:search": {
-          "title": "Search Event",
+        "xdm:searchInstances": {
+          "title": "Search Instances",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
           "description": "Number of times an internal search has occurred."
         },
@@ -54,8 +59,8 @@
           "type": "string",
           "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search"
         },
-        "xdm:searchNullSearch": {
-          "title": "Null Search Event",
+        "xdm:searchNullSearchInstances": {
+          "title": "Null Search Instances",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
           "description": "Number of times an internal search has occurred that provided zero results."
         },

@@ -63,6 +63,7 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:otherPhone](#xdmotherphone) | Phone number | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotherphone) |
 | [xdm:person](#xdmperson) | Person | Optional | [Demographic Details](profile-person-details.schema.md#xdmperson) |
 | [xdm:personGroupID](#xdmpersongroupid) | `string` | Optional | XDM Business Person Details (this schema) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personOptInOut](#xdmpersonoptinout) | OptInOut | Optional | XDM Business Person Details (this schema) |
 | [xdm:personOwnerID](#xdmpersonownerid) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personScore](#xdmpersonscore) | `number` | Optional | XDM Business Person Details (this schema) |
@@ -777,6 +778,26 @@ Group identifier for the person.
 * defined in this schema
 
 ### xdm:personGroupID Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:personID
+### Person ID
+
+Unique identifier of B2B person.
+
+`xdm:personID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:personID Type
 
 
 `string`

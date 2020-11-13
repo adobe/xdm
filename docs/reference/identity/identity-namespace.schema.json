@@ -20,7 +20,7 @@
             "properties": {
                 "xdm:namespaceID": {
                     "title": "Unique Namespace ID",
-                    "type": "string",
+                    "type": "integer",
                     "description": "Unique Identifier for namespace"
                 },
                 "xdm:namespaceName": {
@@ -80,9 +80,7 @@
             },
             "required": [
                 "xdm:namespaceID",
-                "xdm:namespaceCode",
-                "xdm:namespaceName",
-                "xdm:namespaceIdType"
+                "xdm:namespaceCode"
             ]
         }
     },
@@ -101,14 +99,14 @@
     "examples": [
         {
             "xdm:namespaceCode": "ECID",
-            "xdm:namespaceID": "4657",
+            "xdm:namespaceID": 4657,
             "xdm:namespaceName": "ECID",
             "xdm:namespaceDescription": "Experience Cloud ID",
             "xdm:namespaceIdType": "COOKIE"
         },
         {
             "xdm:namespaceCode": "ECID",
-            "xdm:namespaceID": "4657",
+            "xdm:namespaceID": 4657,
             "xdm:namespaceName": "ECID",
             "xdm:namespaceDescription": "Experience Cloud ID",
             "xdm:namespaceIdType": "COOKIE",

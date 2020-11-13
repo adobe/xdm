@@ -1,0 +1,297 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Demographic Details v2",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Demographic information such as name, gender, and birth date of an individual.",
+    "definitions": {
+        "person": {
+            "properties": {
+                "xdm:person": {
+                    "title": "Person",
+                    "$ref": "https://ns.adobe.com/xdm/context/person",
+                    "description": "An individual actor, contact, or owner."
+                }
+            }
+        },
+        "person-name-firstName": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:firstName": {
+                                    "title": "First name",
+                                    "type": "string",
+                                    "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-name-lastName": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:lastName": {
+                                    "title": "Last name",
+                                    "type": "string",
+                                    "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-name-middleName": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:middleName": {
+                                    "title": "Middle name",
+                                    "type": "string",
+                                    "description": "Middle, alternative, or additional names supplied between the first name and last name."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-name-courtesyTitle": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:courtesyTitle": {
+                                    "title": "Courtesy title",
+                                    "type": "string",
+                                    "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-name-suffix": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:suffix": {
+                                    "title": "Suffix",
+                                    "type": "string",
+                                    "description": "A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-name-fullName": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:fullName": {
+                                    "title": "Full name",
+                                    "type": "string",
+                                    "description": "The full name of the person, in writing order most commonly accepted in the language of the name."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "person-birthDate": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:birthDate": {
+                            "title": "Birth date",
+                            "type": "string",
+                            "format": "date",
+                            "description": "The full date a person was born."
+                        }
+                    }
+                }
+            }
+        },
+        "person-birthDayAndMonth": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:birthDayAndMonth": {
+                            "title": "Birth date",
+                            "type": "string",
+                            "pattern": "[0-1][0-9]-[0-9][0-9]",
+                            "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
+                        }
+                    }
+                }
+            }
+        },
+        "person-birthYear": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:birthYear": {
+                            "title": "Birth year",
+                            "type": "integer",
+                            "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
+                            "minimum": 1,
+                            "maximum": 32767
+                        }
+                    }
+                }
+            }
+        },
+        "person-gender": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:gender": {
+                            "title": "Gender",
+                            "type": "string",
+                            "enum": [
+                                "male",
+                                "female",
+                                "not_specified",
+                                "non_specific"
+                            ],
+                            "meta:enum": {
+                                "male": "Male",
+                                "female": "Female",
+                                "not_specified": "Not Specified",
+                                "non_specific": "Non-specific"
+                            },
+                            "description": "Gender identity of the person.\n",
+                            "default": "not_specified"
+                        }
+                    }
+                }
+            }
+        },
+        "person-maritalStatus": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:maritalStatus": {
+                            "title": "Marital Status",
+                            "type": "string",
+                            "enum": [
+                                "married",
+                                "single",
+                                "divorced",
+                                "widowed",
+                                "not_specified"
+                            ],
+                            "meta:enum": {
+                                "married": "Married",
+                                "single": "Single",
+                                "divorced": "Divorced",
+                                "widowed": "Widowed",
+                                "not_specified": "Not Specified"
+                            },
+                            "description": "Describes a person's relationship with a significant other.",
+                            "default": "not_specified"
+                        }
+                    }
+                }
+            }
+        },
+        "person-nationality": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:nationality": {
+                            "title": "Nationality",
+                            "type": "string",
+                            "pattern": "^[A-Z]{2}$",
+                            "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
+                        }
+                    }
+                }
+            }
+        },
+        "person-taxId": {
+            "properties": {
+                "xdm:person": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:taxId": {
+                            "title": "Tax ID",
+                            "type": "string",
+                            "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/person"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:person": {
+                "xdm:name": {
+                    "xdm:firstName": "Jane",
+                    "xdm:middleName": "F",
+                    "xdm:lastName": "Doe",
+                    "xdm:fullName": "Jane F. Doe"
+                },
+                "xdm:birthDayAndMonth": "01-03",
+                "xdm:gender": "female"
+            }
+        }
+    ]
+}

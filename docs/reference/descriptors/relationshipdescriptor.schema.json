@@ -49,6 +49,11 @@
                     "type": "string",
                     "description": "Provides a user friendly name or label to this relationship"
                 },
+                "xdm:apiLabel": {
+                    "title": "API Label",
+                    "type": "string",
+                    "description": "Provides a user friendly name or label which is used in PQL/SQL or other needs"
+                },
                 "xdm:description": {
                     "title": "Relationship Description",
                     "type": "string",

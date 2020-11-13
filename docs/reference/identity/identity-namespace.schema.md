@@ -22,7 +22,7 @@ Identity Namespace Schema.
 ```json
 {
   "xdm:namespaceCode": "ECID",
-  "xdm:namespaceID": "4657",
+  "xdm:namespaceID": 4657,
   "xdm:namespaceName": "ECID",
   "xdm:namespaceDescription": "Experience Cloud ID",
   "xdm:namespaceIdType": "COOKIE"
@@ -32,7 +32,7 @@ Identity Namespace Schema.
 ```json
 {
   "xdm:namespaceCode": "ECID",
-  "xdm:namespaceID": "4657",
+  "xdm:namespaceID": 4657,
   "xdm:namespaceName": "ECID",
   "xdm:namespaceDescription": "Experience Cloud ID",
   "xdm:namespaceIdType": "COOKIE",
@@ -51,7 +51,7 @@ Identity Namespace Schema.
 | [xdm:modifyDate](#xdmmodifydate) | `string` | Optional | Identity Namespace (this schema) |
 | [xdm:namespaceCode](#xdmnamespacecode) | `string` | Optional | Identity Namespace (this schema) |
 | [xdm:namespaceDescription](#xdmnamespacedescription) | `string` | Optional | Identity Namespace (this schema) |
-| [xdm:namespaceID](#xdmnamespaceid) | `string` | Optional | Identity Namespace (this schema) |
+| [xdm:namespaceID](#xdmnamespaceid) | `integer` | Optional | Identity Namespace (this schema) |
 | [xdm:namespaceIdType](#xdmnamespaceidtype) | `enum` | Optional | Identity Namespace (this schema) |
 | [xdm:namespaceName](#xdmnamespacename) | `string` | Optional | Identity Namespace (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -176,13 +176,13 @@ Unique Identifier for namespace
 
 `xdm:namespaceID`
 * is optional
-* type: `string`
+* type: `integer`
 * defined in this schema
 
 ### xdm:namespaceID Type
 
 
-`string`
+`integer`
 
 
 

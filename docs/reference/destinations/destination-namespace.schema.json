@@ -31,6 +31,7 @@
                 "xdm:createTime": {
                     "title": "Create Time",
                     "type": "string",
+                    "format": "date-time",
                     "description": "The date and UTC time when the activation flow to the destination-namespace mapping was createdByID"
                 },
                 "xdm:createdByID": {

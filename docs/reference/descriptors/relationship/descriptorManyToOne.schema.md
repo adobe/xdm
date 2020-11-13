@@ -36,6 +36,7 @@ Describes many to one relationship descriptor.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | Many to One Relationship Descriptor (this schema) |
+| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel) |
 | [xdm:description](#xdmdescription) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
@@ -83,6 +84,26 @@ The value of this property **must** be equal to:
 ```json
 "xdm:descriptorManyToOne"
 ```
+
+
+
+
+
+## xdm:apiLabel
+### API Label
+
+Provides a user friendly name or label which is used in PQL/SQL or other needs
+
+`xdm:apiLabel`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel)
+
+### xdm:apiLabel Type
+
+
+`string`
+
 
 
 

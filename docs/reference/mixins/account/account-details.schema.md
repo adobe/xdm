@@ -44,7 +44,6 @@ XDM business account details.
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttradestyle) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttype) |
 | [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmdefaultcurrencycode) |
-| [xdm:externalID](#xdmexternalid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmexternalid) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -430,26 +429,6 @@ All instances must conform to this regular expression
 ```json
 "EUR"
 ```
-
-
-
-## xdm:externalID
-### External ID
-
-External ID.
-
-`xdm:externalID`
-* is optional
-* type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmexternalid)
-
-### xdm:externalID Type
-
-
-`string`
-
-
-
 
 
 

@@ -47,7 +47,6 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountType](#xdmaccounttype) | `string` | Optional | B2B Account (this schema) |
 | [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | B2B Account (this schema) |
-| [xdm:externalID](#xdmexternalid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | B2B Account (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -433,26 +432,6 @@ All instances must conform to this regular expression
 ```json
 "EUR"
 ```
-
-
-
-## xdm:externalID
-### External ID
-
-External ID.
-
-`xdm:externalID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:externalID Type
-
-
-`string`
-
-
-
 
 
 

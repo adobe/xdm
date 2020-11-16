@@ -32,7 +32,7 @@
     },
     "timestamp": {
       "title": "Preference timestamp",
-      "description": "Time this specific preference was collected.",
+      "description": "Time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
       "type": "string",
       "format": "date-time"
     },
@@ -181,7 +181,7 @@
       "properties": {
         "xdm:time": {
           "title": "Consent/Preferences timestamp",
-          "description": "Timestamp of this complete set of user consents and preferences",
+          "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
           "type": "string",
           "format": "date-time"
         }

@@ -18,6 +18,11 @@
     "definitions": {
         "b2b-person-segment-traits": {
             "properties": {
+                "xdm:personID": {
+                    "title": "Person ID",
+                    "description": "Unique identifier of B2B person.",
+                    "type": "string"
+                },
                 "xdm:personType": {
                     "title": "Person Type",
                     "description": "Type of the B2B person.",

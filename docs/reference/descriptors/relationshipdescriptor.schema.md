@@ -180,6 +180,7 @@ This changes child.json to:
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#id) |
 | [@type](#type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#type) |
+| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:description](#xdmdescription) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | Relationship Descriptor (this schema) |
@@ -234,6 +235,26 @@ The type of descriptor this object represents.
 ### @type Known Values
 | Value | Description |
 |-------|-------------|
+
+
+
+
+## xdm:apiLabel
+### API Label
+
+Provides a user friendly name or label which is used in PQL/SQL or other needs
+
+`xdm:apiLabel`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:apiLabel Type
+
+
+`string`
+
+
 
 
 

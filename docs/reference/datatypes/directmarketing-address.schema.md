@@ -48,6 +48,7 @@ Postal address information used to contact a user.
 | [xdm:primary](#xdmprimary) | `boolean` | Optional |  | [Postal address](address.schema.md#xdmprimary) |
 | [xdm:quality](#xdmquality) | `string` | Optional |  | Direct marketing postal address (this schema) |
 | [xdm:region](#xdmregion) | `string` | Optional |  | [Postal address](address.schema.md#xdmregion) |
+| [xdm:state](#xdmstate) | `string` | Optional |  | [Postal address](address.schema.md#xdmstate) |
 | [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | [Postal address](address.schema.md#xdmstatus) |
 | [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | [Postal address](address.schema.md#xdmstatusreason) |
 | [xdm:street1](#xdmstreet1) | `string` | Optional |  | [Postal address](address.schema.md#xdmstreet1) |
@@ -218,6 +219,26 @@ The region, county, or district portion of the address.
 * defined in [Postal address](address.schema.md#xdmregion)
 
 ### xdm:region Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:state
+### State
+
+The name of the State. This is a free-form field.
+
+`xdm:state`
+* is optional
+* type: `string`
+* defined in [Postal address](address.schema.md#xdmstate)
+
+### xdm:state Type
 
 
 `string`

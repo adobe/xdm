@@ -1,37 +1,37 @@
 {
   "xdm:consents": {
     "xdm:collect": {
-      "xdm:v": "y"
+      "xdm:val": "y"
     },
     "xdm:adID": {
-      "xdm:v": "VI"
+      "xdm:val": "VI"
     },
     "xdm:share": {
-      "xdm:v": "n"
+      "xdm:val": "n"
     },
     "xdm:personalize": {
       "xdm:any": {
-        "xdm:v": "u"
+        "xdm:val": "u"
       },
       "xdm:content": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       }
     },
     "xdm:marketing": {
       "xdm:preferred": "email",
       "xdm:any": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       },
       "xdm:push": {
-        "xdm:v": "n",
+        "xdm:val": "n",
         "xdm:reason": "Too Frequent"
       }
     },
     "xdm:metadata": {
-      "xdm:t": "2019-01-01T15:52:25+00:00"
+      "xdm:time": "2019-01-01T15:52:25+00:00"
     }
   }
 }

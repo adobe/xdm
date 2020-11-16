@@ -45,29 +45,29 @@
     "consent-fields": {
       "type": "object",
       "properties": {
-        "xdm:v": {
+        "xdm:val": {
           "description": "The value specified by the user as their consent choice or the basis of processing that precludes the need for user consent",
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": ["xdm:v"]
+      "required": ["xdm:val"]
     },
     "personalization-fields": {
       "type": "object",
       "properties": {
-        "xdm:v": {
+        "xdm:val": {
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": ["xdm:v"]
+      "required": ["xdm:val"]
     },
     "marketing-fields": {
       "type": "object",
       "properties": {
-        "xdm:v": {
+        "xdm:val": {
           "$ref": "#/definitions/choice-value"
         },
-        "xdm:t": {
+        "xdm:time": {
           "$ref": "#/definitions/timestamp"
         },
         "xdm:reason": {
@@ -77,7 +77,7 @@
           "maxLength": 16
         }
       },
-      "required": ["xdm:v"]
+      "required": ["xdm:val"]
     },
     "choices": {
       "properties": {
@@ -88,7 +88,7 @@
         },
         "xdm:share": {
           "title": "Share Data",
-          "description": "Sharing of user's Data with 2nd or 3rd parties is permitted",
+          "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
           "$ref": "#/definitions/consent-fields"
         },
         "xdm:adID": {
@@ -179,7 +179,7 @@
     },
     "metadata": {
       "properties": {
-        "xdm:t": {
+        "xdm:time": {
           "title": "Consent/Preferences timestamp",
           "description": "Timestamp of this complete set of user consents and preferences",
           "type": "string",

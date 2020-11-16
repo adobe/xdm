@@ -1,54 +1,54 @@
 {
   "xdm:consents": {
     "xdm:collect": {
-      "xdm:v": "VI"
+      "xdm:val": "VI"
     },
     "xdm:share": {
-      "xdm:v": "n"
+      "xdm:val": "n"
     },
     "xdm:personalize": {
       "xdm:any": {
-        "xdm:v": "u"
+        "xdm:val": "u"
       },
       "xdm:content": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       }
     },
     "xdm:marketing": {
       "xdm:preferred": "email",
       "xdm:any": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:v": "y"
+        "xdm:val": "y"
       }
     },
     "xdm:idSpecific": {
       "ECID": {
         "12345678-abcdef09-87654321-fedcba90": {
           "xdm:share": {
-            "xdm:v": "n"
+            "xdm:val": "n"
           },
           "xdm:marketing": {
             "xdm:push": {
-              "xdm:v": "n",
-              "xdm:t": "2020-09-30T01:02:33+00:00",
+              "xdm:val": "n",
+              "xdm:time": "2020-09-30T01:02:33+00:00",
               "xdm:reason": "not relevant"
             }
           }
         },
         "11112222-33334444-55556666-77778888": {
           "xdm:adID": {
-            "xdm:v": "n"
+            "xdm:val": "n"
           },
           "xdm:personalize": {
             "xdm:content": {
-              "xdm:v": "n"
+              "xdm:val": "n"
             }
           },
           "xdm:marketing": {
             "xdm:push": {
-              "xdm:v": "y"
+              "xdm:val": "y"
             }
           }
         }
@@ -57,14 +57,14 @@
         "john@xyz.com": {
           "xdm:marketing": {
             "xdm:email": {
-              "xdm:v": "y"
+              "xdm:val": "y"
             }
           }
         }
       }
     },
     "xdm:metadata": {
-      "xdm:t": "2019-01-01T15:52:25+00:00"
+      "xdm:time": "2019-01-01T15:52:25+00:00"
     }
   }
 }

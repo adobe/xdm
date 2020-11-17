@@ -30,7 +30,7 @@
             "xdm:requestSource": {
               "title": "Request Source",
               "type": "string",
-              "description": "Request source."
+              "description": "Name of the source this request came from."
             }
           }
         }

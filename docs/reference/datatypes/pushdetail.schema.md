@@ -23,12 +23,12 @@ Push notification detail required to send mobile push notification to a specific
   "xdm:appID": "75eafb7e-fa44-4514-86fc-221e32c5aef9",
   "xdm:token": "99156313-c9df-4e54-9c6c-5740f940c3ca",
   "xdm:platform": "apns",
-  "xdm:blocklisted": false,
+  "xdm:denylisted": false,
   "xdm:identity": {
     "xdm:namespace": {
       "xdm:code": "ECID"
     },
-    "xdm:xid": "92312748749128"
+    "xdm:id": "92312748749128"
   }
 }
 ```
@@ -40,6 +40,7 @@ Push notification detail required to send mobile push notification to a specific
 | [xdm:appID](#xdmappid) | `string` | Optional | Push notification detail (this schema) |
 | [xdm:blacklisted](#xdmblacklisted) | `boolean` | Optional | Push notification detail (this schema) |
 | [xdm:blocklisted](#xdmblocklisted) | `boolean` | Optional | Push notification detail (this schema) |
+| [xdm:denylisted](#xdmdenylisted) | `boolean` | Optional | Push notification detail (this schema) |
 | [xdm:identity](#xdmidentity) | Identity | Optional | Push notification detail (this schema) |
 | [xdm:identiy](#xdmidentiy) | Identity | Optional | Push notification detail (this schema) |
 | [xdm:platform](#xdmplatform) | `string` | Optional | Push notification detail (this schema) |
@@ -88,7 +89,7 @@ Indicates whether the push token is blacklisted. Deprecated due to new guidance 
 ## xdm:blocklisted
 ### Blocklist Flag
 
-Indicates whether the push token is blocked by the push provider. 
+Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.
 
 `xdm:blocklisted`
 * is optional
@@ -96,6 +97,25 @@ Indicates whether the push token is blocked by the push provider.
 * defined in this schema
 
 ### xdm:blocklisted Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:denylisted
+### Denylist Flag
+
+Indicates whether the push token is blocked by the push provider.
+
+`xdm:denylisted`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:denylisted Type
 
 
 `boolean`

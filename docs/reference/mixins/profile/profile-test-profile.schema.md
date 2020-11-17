@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-test-profile
 ```
 
-This mixin is used for indicating that the profile record is in use for testing/verification purposes and should not be automatically included in normal operations.
+Use to indicate that the profile record is in use for testing, verification, and should not be automatically included in normal operations.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

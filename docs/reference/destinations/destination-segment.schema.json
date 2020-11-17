@@ -28,9 +28,15 @@
                     "type": "string",
                     "description": "Identity of the segment in the related namespace"
                 },
+                "xdm:segmentNamespace": {
+                    "title": "Segment Namespace",
+                    "type": "string",
+                    "description": "Namespace to which the segment belongs"
+                },
                 "xdm:createTime": {
                     "title": "Create Time",
                     "type": "string",
+                    "format": "date-time",
                     "description": "The date and UTC time when the activation flow to the destination-segment mapping was createdByID"
                 },
                 "xdm:createdByID": {
@@ -57,6 +63,7 @@
         {
             "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
             "xdm:segmentID": "0b12f30c-2260-442e-9120-2b12e96c0c40",
+            "xdm:segmentNamespace": "aepsegments",
             "xdm:createTime": "2019-01-01T15:52:25+00:00",
             "xdm:createdByID": "mprabhak"
         }

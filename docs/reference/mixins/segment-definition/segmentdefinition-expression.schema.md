@@ -1,22 +1,22 @@
 
-# Segment expression Schema
+# Segment Expression Details  Schema
 
 ```
 https://ns.adobe.com/xdm/context/segmentdefinition-expression
 ```
 
-This mixin helps capture the qualifying expression for a segment.
+Segment expression data such as expression type, mime type, and expression value.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/segment-definition/segmentdefinition-expression.schema.json](mixins/segment-definition/segmentdefinition-expression.schema.json) |
 ## Schema Hierarchy
 
-* Segment expression `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
+* Segment Expression Details  `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Segment expression Example
+## Segment Expression Details  Example
 ```json
 {
   "xdm:segmentExpression": {
@@ -27,11 +27,11 @@ This mixin helps capture the qualifying expression for a segment.
 }
 ```
 
-# Segment expression Properties
+# Segment Expression Details  Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | Segment expression (this schema) |
+| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | Segment Expression Details  (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:segmentExpression

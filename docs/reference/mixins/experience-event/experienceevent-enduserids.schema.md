@@ -1,23 +1,23 @@
 
-# ExperienceEvent EndUserIDs Schema
+# End User ID Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-enduserids
 ```
 
-This mixin provides a condensed, normalized encapsulation of end-user identifiers asserted for an ExperienceEvent. These IDs could include phone numbers, email addresses, or other identifiers related to an individual.
+End user IDs such as AAID, ACID, MCIDs, email, and phone numbers.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-enduserids.schema.json](mixins/experience-event/experienceevent-enduserids.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent EndUserIDs `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
+* End User ID Details `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [End user IDs](../../datatypes/enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
 
 
-## ExperienceEvent EndUserIDs Example
+## End User ID Details Example
 ```json
 {
   "xdm:endUserIDs": {
@@ -43,11 +43,11 @@ This mixin provides a condensed, normalized encapsulation of end-user identifier
 }
 ```
 
-# ExperienceEvent EndUserIDs Properties
+# End User ID Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | ExperienceEvent EndUserIDs (this schema) |
+| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | End User ID Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:endUserIDs

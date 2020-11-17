@@ -35,6 +35,7 @@ ID for a journey triggering event.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:eventID`| string | Optional |
+| `xdm:originJourneyID`| string | Optional |
 
 
 
@@ -48,6 +49,27 @@ ID that identifies the event sent by the data source. This is used by Campaign o
 * type: `string`
 
 ##### xdm:eventID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:originJourneyID
+##### Origin Journey ID
+
+In case of jump between 2 journeys, ID of the journey where the event comes from.
+
+`xdm:originJourneyID`
+* is optional
+* type: `string`
+
+##### xdm:originJourneyID Type
 
 
 `string`

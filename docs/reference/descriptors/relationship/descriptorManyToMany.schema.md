@@ -36,6 +36,8 @@ Describes many to many relationship descriptor.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | Many to Many Relationship Descriptor (this schema) |
+| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel) |
+| [xdm:description](#xdmdescription) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
@@ -82,6 +84,46 @@ The value of this property **must** be equal to:
 ```json
 "xdm:descriptorManyToMany"
 ```
+
+
+
+
+
+## xdm:apiLabel
+### API Label
+
+Provides a user friendly name or label which is used in PQL/SQL or other needs
+
+`xdm:apiLabel`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel)
+
+### xdm:apiLabel Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:description
+### Relationship Description
+
+Provides a user friendly description of this relationship
+
+`xdm:description`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription)
+
+### xdm:description Type
+
+
+`string`
+
 
 
 
@@ -186,6 +228,8 @@ Major version being referenced.
 
 ## xdm:label
 ### Label
+
+Provides a user friendly name or label to this relationship
 
 `xdm:label`
 * is optional

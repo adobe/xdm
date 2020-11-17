@@ -55,11 +55,6 @@
                     "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
                     "type": "string"
                 },
-                "xdm:externalID": {
-                    "title": "External ID",
-                    "description": "External ID.",
-                    "type": "string"
-                },
                 "xdm:partnerAccountID": {
                     "title": "Partner Account Id",
                     "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",

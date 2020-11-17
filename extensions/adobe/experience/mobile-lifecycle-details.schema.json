@@ -44,16 +44,8 @@
           "properties": {
             "xdm:type": {
               "title": "Type",
-              "type": "string",
-              "description": "The type of the application environment.",
-              "enum": ["browser", "application", "iot", "external", "widget"],
-              "meta:enum": {
-                "browser": "Browser",
-                "application": "Application",
-                "iot": "Internet of things",
-                "external": "External system",
-                "widget": "Application extension"
-              }
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/type",
+              "description": "The type of the application environment."
             }
           }
         }
@@ -66,7 +58,7 @@
           "properties": {
             "xdm:operatingSystem": {
               "title": "Operating system",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/operatingSystem",
               "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'."
             }
           }
@@ -80,7 +72,7 @@
           "properties": {
             "xdm:operatingSystemVersion": {
               "title": "Operating system version",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/operatingSystemVersion",
               "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format."
             }
           }
@@ -94,7 +86,7 @@
           "properties": {
             "xdm:operatingSystemVendor": {
               "title": "Operating system vendor",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/operatingSystemVendor",
               "description": "The name of the operating system vendor used when the observation was made."
             }
           }
@@ -108,9 +100,8 @@
           "properties": {
             "xdm:colorDepth": {
               "title": "Color depth",
-              "type": "integer",
-              "description": "The number of bits used for each color component of a single pixel.",
-              "minimum": 0
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/colorDepth",
+              "description": "The number of bits used for each color component of a single pixel."
             }
           }
         }
@@ -123,9 +114,8 @@
           "properties": {
             "xdm:viewportHeight": {
               "title": "Viewport height",
-              "type": "integer",
-              "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-              "minimum": 0
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/viewportHeight",
+              "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height."
             }
           }
         }
@@ -138,9 +128,8 @@
           "properties": {
             "xdm:viewportWidth": {
               "title": "Viewport width",
-              "type": "integer",
-              "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
-              "minimum": 0
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/viewportWidth",
+              "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width."
             }
           }
         }
@@ -153,9 +142,8 @@
           "properties": {
             "xdm:duration": {
               "title": "Duration",
-              "type": "integer",
-              "description": "The number of milliseconds that the user was on the screen.",
-              "minimum": 0
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/duration",
+              "description": "The number of milliseconds that the user was on the screen."
             }
           }
         }
@@ -168,7 +156,7 @@
           "properties": {
             "xdm:viewedScreen": {
               "title": "Viewed Screen",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/viewedScreen",
               "description": "The friendly name assigned to the screen that the user was on."
             }
           }
@@ -182,7 +170,7 @@
           "properties": {
             "xdm:previousScreen": {
               "title": "Previous Screen",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/previousScreen",
               "description": "The frinedly name assigned to the screen the user was on prior to the viewedScreen."
             }
           }
@@ -196,45 +184,8 @@
           "properties": {
             "xdm:connectionType": {
               "title": "Connection type",
-              "type": "string",
-              "description": "Internet connection type.",
-              "enum": [
-                "dialup",
-                "isdn",
-                "bisdn",
-                "dsl",
-                "cable",
-                "wireless_wifi",
-                "mobile",
-                "mobile_edge",
-                "mobile_2g",
-                "mobile_3g",
-                "mobile_lte",
-                "t1",
-                "t3",
-                "oc3",
-                "lan",
-                "modem"
-              ],
-              "meta:enum": {
-                "dialup": "Dial-up",
-                "isdn": "ISDN",
-                "bisdn": "BISDN",
-                "dsl": "DSL",
-                "cable": "Cable",
-                "wireless_wifi": "Wireless wifi",
-                "mobile": "Mobile",
-                "mobile_edge": "Mobile Edge",
-                "mobile_gprs": "Mobile GPRS",
-                "mobile_2g": "Mobile 2G",
-                "mobile_3g": "Mobile 3G",
-                "mobile_lte": "Mobile LTE",
-                "t1": "T1",
-                "t3": "T3",
-                "oc3": "OC3",
-                "lan": "LAN",
-                "modem": "Modem"
-              }
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/connectionType",
+              "description": "Internet connection type."
             }
           }
         }
@@ -247,7 +198,7 @@
           "properties": {
             "xdm:carrier": {
               "title": "Mobile network carrier",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/carrier",
               "description": "A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user."
             }
           }
@@ -261,8 +212,7 @@
           "properties": {
             "xdm:ipV4": {
               "title": "IPv4",
-              "type": "string",
-              "format": "ipv4",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV4",
               "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
             }
           }
@@ -276,8 +226,7 @@
           "properties": {
             "xdm:ipV6": {
               "title": "IPv6",
-              "type": "string",
-              "format": "ipv6",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV6",
               "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
             }
           }
@@ -291,7 +240,7 @@
           "properties": {
             "xdm:domain": {
               "title": "Domain",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/domain",
               "description": "The domain of the users ISP."
             }
           }
@@ -305,7 +254,7 @@
           "properties": {
             "xdm:ISP": {
               "title": "Internet service provider",
-              "type": "string",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ISP",
               "description": "The name of the user's internet service provider."
             }
           }
@@ -318,12 +267,9 @@
           "type": "object",
           "properties": {
             "dc:language": {
-              "meta:usereditable": false,
               "title": "Language",
-              "type": "string",
-              "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
-              "description": "The language of the environment to represent the user's linguistic, geographical, or cultural preferences for data presentation.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
-              "examples": ["en-US", "pt-BR", "es-ES"]
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/dc:language",
+              "description": "The language of the environment to represent the user's linguistic, geographical, or cultural preferences for data presentation.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM."
             }
           }
         }
@@ -335,8 +281,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/mobile-lifecycle-details",
-      "$ref": "#/definitions/environment"
+      "$ref": "#/definitions/mobile-lifecycle-details"
     }
   ],
   "meta:status": "experimental"

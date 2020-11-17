@@ -13,16 +13,16 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 ## Schema Hierarchy
 
 * Consumer ExperienceEvent  Mixin `https://ns.adobe.com/experience/consumer-experienceevent`
-  * [ExperienceEvent application details](../../mixins/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
-  * [ExperienceEvent channel details](../../mixins/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
-  * [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [ExperienceEvent details for marketing](../../mixins/experience-event/experienceevent-marketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-marketing`
-  * [ExperienceEvent details for media](../../mixins/experience-event/experienceevent-media.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-media`
-  * [ExperienceEvent details for search](../../mixins/experience-event/experienceevent-search.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-search`
-  * [ExperienceEvent Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
-  * [ExperienceEvent technical details](../../mixins/experience-event/experienceevent-technical-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
-  * [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
-  * [ExperienceEvent commerce details](../../mixins/experience-event/experienceevent-commerce.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-commerce`
+  * [Application Details](../../mixins/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
+  * [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
+  * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-marketing`
+  * [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-media`
+  * [Search Details](../../mixins/experience-event/experienceevent-search.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-search`
+  * [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
+  * [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
+  * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
+  * [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-commerce`
 
 
 ## Consumer ExperienceEvent  Mixin Example
@@ -144,21 +144,21 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:application](#xdmapplication) | Application | Optional | [ExperienceEvent application details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [ExperienceEvent channel details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | [ExperienceEvent commerce details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce) |
-| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [ExperienceEvent technical details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
-| [xdm:device](#xdmdevice) | Device | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | [ExperienceEvent details for marketing](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
-| [xdm:media](#xdmmedia) | Media information | Optional | [ExperienceEvent details for media](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
-| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | [ExperienceEvent commerce details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems) |
-| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [ExperienceEvent technical details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
-| [xdm:search](#xdmsearch) | Search | Optional | [ExperienceEvent details for search](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [ExperienceEvent Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [ExperienceEvent Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
-| [xdm:web](#xdmweb) | Web information | Optional | [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
+| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
+| [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
+| [xdm:search](#xdmsearch) | Search | Optional | [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
+| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:application
@@ -169,7 +169,7 @@ This mixin is used to capture application information related to an ExperienceEv
 `xdm:application`
 * is optional
 * type: Application
-* defined in [ExperienceEvent application details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication)
+* defined in [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication)
 
 ### xdm:application Type
 
@@ -188,7 +188,7 @@ Experience channel related to the ExperienceEvent.
 `xdm:channel`
 * is optional
 * type: Experience Channel
-* defined in [ExperienceEvent channel details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel)
+* defined in [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel)
 
 ### xdm:channel Type
 
@@ -207,7 +207,7 @@ Commerce specific data related to this event.
 `xdm:commerce`
 * is optional
 * type: Commerce
-* defined in [ExperienceEvent commerce details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce)
+* defined in [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce)
 
 ### xdm:commerce Type
 
@@ -226,7 +226,7 @@ Globally unique identification of a data source.
 `xdm:dataSource`
 * is optional
 * type: Data Source
-* defined in [ExperienceEvent technical details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource)
+* defined in [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource)
 
 ### xdm:dataSource Type
 
@@ -245,7 +245,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -264,7 +264,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -283,7 +283,7 @@ The information related to marketing activities that are active with the touchpo
 `xdm:marketing`
 * is optional
 * type: Marketing
-* defined in [ExperienceEvent details for marketing](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing)
+* defined in [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing)
 
 ### xdm:marketing Type
 
@@ -302,7 +302,7 @@ Media activity information related to the experience event.
 `xdm:media`
 * is optional
 * type: Media information
-* defined in [ExperienceEvent details for media](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia)
+* defined in [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia)
 
 ### xdm:media Type
 
@@ -321,7 +321,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 
@@ -341,7 +341,7 @@ A list of items representing a product selected by a customer with specific opti
 * is optional
 * type: Product list item
 
-* defined in [ExperienceEvent commerce details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems)
+* defined in [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems)
 
 ### xdm:productListItems Type
 
@@ -366,7 +366,7 @@ The time at which this interaction was received by a server.
 `xdm:receivedTimestamp`
 * is optional
 * type: `string`
-* defined in [ExperienceEvent technical details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp)
+* defined in [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp)
 
 ### xdm:receivedTimestamp Type
 
@@ -387,7 +387,7 @@ The information related to web or mobile search.
 `xdm:search`
 * is optional
 * type: Search
-* defined in [ExperienceEvent details for search](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch)
+* defined in [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch)
 
 ### xdm:search Type
 
@@ -404,7 +404,7 @@ The information related to web or mobile search.
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [ExperienceEvent Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -429,7 +429,7 @@ The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentM
 * is optional
 * type: Segment membership item
 
-* defined in [ExperienceEvent Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
+* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
 
 ### xdm:segmentMemberships Type
 
@@ -454,7 +454,7 @@ The information related to web page and link of the ExperienceEvent.
 `xdm:web`
 * is optional
 * type: Web information
-* defined in [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
+* defined in [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
 
 ### xdm:web Type
 

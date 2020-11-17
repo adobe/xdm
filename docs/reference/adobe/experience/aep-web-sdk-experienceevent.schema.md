@@ -14,10 +14,10 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 
 * AEP Web SDK ExperienceEvent Mixin `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [ExperienceEvent implementation details](../../mixins/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
+  * [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
-  * [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
+  * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
 
 
 ## AEP Web SDK ExperienceEvent Mixin Example
@@ -75,12 +75,12 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:device](#xdmdevice) | Device | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | [ExperienceEvent implementation details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
-| [xdm:web](#xdmweb) | Web information | Optional | [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
+| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:device
@@ -91,7 +91,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -110,7 +110,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -129,7 +129,7 @@ The details of the software used to collect the ExperienceEvent.
 `xdm:implementationDetails`
 * is optional
 * type: Implementation details
-* defined in [ExperienceEvent implementation details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails)
+* defined in [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails)
 
 ### xdm:implementationDetails Type
 
@@ -148,7 +148,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [ExperienceEvent environment details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 
@@ -382,7 +382,7 @@ The information related to web page and link of the ExperienceEvent.
 `xdm:web`
 * is optional
 * type: Web information
-* defined in [ExperienceEvent web details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
+* defined in [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
 
 ### xdm:web Type
 

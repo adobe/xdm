@@ -33,14 +33,20 @@ The events and properties related to direct and outbound marketing such as email
 | [xdm:bounces](#xdmbounces) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:clicks](#xdmclicks) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:customActions](#xdmcustomactions) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:emailDelivered](#xdmemaildelivered) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:emailVisitorID](#xdmemailvisitorid) | `string` | Optional | Direct marketing (this schema) |
 | [xdm:excludes](#xdmexcludes) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:hashedEmail](#xdmhashedemail) | `string` | Optional | Direct marketing (this schema) |
 | [xdm:impressions](#xdmimpressions) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:marketingSubscription](#xdmmarketingsubscription) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:messageID](#xdmmessageid) | `string` | Optional | Direct marketing (this schema) |
 | [xdm:mirrorPages](#xdmmirrorpages) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:nonDeliverables](#xdmnondeliverables) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:notSent](#xdmnotsent) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:offerOpens](#xdmofferopens) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:opens](#xdmopens) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:sends](#xdmsends) | Measure | Optional | Direct marketing (this schema) |
+| [xdm:unsubscribeReason](#xdmunsubscribereason) | `string` | Optional | Direct marketing (this schema) |
 | [xdm:unsubscriptions](#xdmunsubscriptions) | Measure | Optional | Direct marketing (this schema) |
 | [xdm:userComplaints](#xdmusercomplaints) | Measure | Optional | Direct marketing (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -99,6 +105,44 @@ Action(s) that users can take on custom objects sent as part of a direct marketi
 
 
 
+## xdm:emailDelivered
+
+Counts the total number of email messages delivered.
+
+`xdm:emailDelivered`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:emailDelivered Type
+
+
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:emailVisitorID
+### Email Recipient ID
+
+Captures the email recipient ID.
+
+`xdm:emailVisitorID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:emailVisitorID Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:excludes
 
 The recipient of the direct marketing message such as email or push has been excluded due to some typology rules configured like fatigue/blacklisted.
@@ -117,6 +161,26 @@ The recipient of the direct marketing message such as email or push has been exc
 
 
 
+## xdm:hashedEmail
+### Visitor Hashed Email Address
+
+Captures the encrypted/hashed version of the visitor's email address.
+
+`xdm:hashedEmail`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:hashedEmail Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:impressions
 
 The direct marketing message such as push notifications or in-app message has been seen by the end user.
@@ -130,6 +194,44 @@ The direct marketing message such as push notifications or in-app message has be
 
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:marketingSubscription
+
+Counter event when a visitor opts-in/subscribes for a direct marketing service.
+
+`xdm:marketingSubscription`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:marketingSubscription Type
+
+
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:messageID
+### Email Message ID
+
+Captures the email message ID.
+
+`xdm:messageID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:messageID Type
+
+
+`string`
+
 
 
 
@@ -238,6 +340,26 @@ Asynchronous messages such as email, SMS, and MMS that have been dispatched to a
 
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:unsubscribeReason
+### Marketing Service Unsubscribe
+
+Tracks the visitor feedback provided when unsubscribing form a direct marketing service.
+
+`xdm:unsubscribeReason`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:unsubscribeReason Type
+
+
+`string`
+
 
 
 

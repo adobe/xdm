@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "Use for geographical unit information such as labels, organization name, and geographical unit name.",
+    "description": "Geographical unit information such as labels, organization name, and geographical unit name.",
     "definitions": {
         "profile-owning-entities": {
             "properties": {

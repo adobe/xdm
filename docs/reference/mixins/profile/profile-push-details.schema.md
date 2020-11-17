@@ -1,22 +1,22 @@
 
-# Profile push details Schema
+# Push Notification Token Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-push-details
 ```
 
-Use for information regarding push notifications such as device details and registration date. Push addressing details are used to communicate with applications that are installed on devices or SaaS application accounts.
+Information regarding push notifications, such as mobile application and device details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-push-details.schema.json](mixins/profile/profile-push-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile push details `https://ns.adobe.com/xdm/context/profile-push-details`
+* Push Notification Token Details `https://ns.adobe.com/xdm/context/profile-push-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile push details Example
+## Push Notification Token Details Example
 ```json
 {
   "xdm:pushNotificationTokens": [
@@ -66,11 +66,11 @@ Use for information regarding push notifications such as device details and regi
 }
 ```
 
-# Profile push details Properties
+# Push Notification Token Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push notification token | Optional | Profile push details (this schema) |
+| [xdm:pushNotificationTokens](#xdmpushnotificationtokens) | Push notification token | Optional | Push Notification Token Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:pushNotificationTokens

@@ -1,22 +1,22 @@
 
-# Profile privacy Schema
+# Privacy Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-privacy
 ```
 
-Profile privacy schema captures general and sales sharing opt-out signals.
+Privacy data such as opt-out type, value, and timing.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-privacy.schema.json](mixins/profile/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Profile privacy `https://ns.adobe.com/xdm/context/profile-privacy`
+* Privacy Details `https://ns.adobe.com/xdm/context/profile-privacy`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Profile privacy Example
+## Privacy Details Example
 ```json
 {
   "xdm:optOutConsentLevel": {
@@ -47,12 +47,12 @@ Profile privacy schema captures general and sales sharing opt-out signals.
 }
 ```
 
-# Profile privacy Properties
+# Privacy Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Profile privacy (this schema) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Profile privacy (this schema) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Privacy Details (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Privacy Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityPrivacyInfo

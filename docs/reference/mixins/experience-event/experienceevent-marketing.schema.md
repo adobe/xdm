@@ -1,23 +1,23 @@
 
-# ExperienceEvent details for marketing Schema
+# Campaign Marketing Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-marketing
 ```
 
-This mixin is used to capture information regarding marketing campaigns details related to an ExperienceEvent, including campaign group, campaign name, and tracking code.
+Marketing campaign information such as campaign group, name, and tracking code.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-marketing.schema.json](mixins/experience-event/experienceevent-marketing.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent details for marketing `https://ns.adobe.com/xdm/context/experienceevent-marketing`
+* Campaign Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-marketing`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Marketing](../../datatypes/marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
 
 
-## ExperienceEvent details for marketing Example
+## Campaign Marketing Details Example
 ```json
 {
   "xdm:marketing": {
@@ -26,11 +26,11 @@ This mixin is used to capture information regarding marketing campaigns details 
 }
 ```
 
-# ExperienceEvent details for marketing Properties
+# Campaign Marketing Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | ExperienceEvent details for marketing (this schema) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional | Campaign Marketing Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:marketing

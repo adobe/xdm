@@ -1,23 +1,23 @@
 
-# ExperienceEvent details for media Schema
+# Media Interaction Details  Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-media
 ```
 
-Use to track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.
+Track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-media.schema.json](mixins/experience-event/experienceevent-media.schema.json) |
 ## Schema Hierarchy
 
-* ExperienceEvent details for media `https://ns.adobe.com/xdm/context/experienceevent-media`
+* Media Interaction Details  `https://ns.adobe.com/xdm/context/experienceevent-media`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Media information](../../datatypes/media.schema.md) `https://ns.adobe.com/xdm/context/media`
 
 
-## ExperienceEvent details for media Example
+## Media Interaction Details  Example
 ```json
 {
   "xdm:media": {
@@ -204,11 +204,11 @@ Use to track interactions with media such as progress (how much was consumed), t
 }
 ```
 
-# ExperienceEvent details for media Properties
+# Media Interaction Details  Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:media](#xdmmedia) | Media information | Optional | ExperienceEvent details for media (this schema) |
+| [xdm:media](#xdmmedia) | Media information | Optional | Media Interaction Details  (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:media

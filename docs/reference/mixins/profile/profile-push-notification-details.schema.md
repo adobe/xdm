@@ -1,22 +1,22 @@
 
-# Push notification details Schema
+# Push Notification Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-push-notification-details
 ```
 
-Use for information regarding push notifications, such as mobile application and device details.
+Information regarding push notifications, such as mobile application and device details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-push-notification-details.schema.json](mixins/profile/profile-push-notification-details.schema.json) |
 ## Schema Hierarchy
 
-* Push notification details `https://ns.adobe.com/xdm/context/profile-push-notification-details`
+* Push Notification Details `https://ns.adobe.com/xdm/context/profile-push-notification-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Push notification details Example
+## Push Notification Details Example
 ```json
 {
   "xdm:pushNotificationDetails": [
@@ -36,11 +36,11 @@ Use for information regarding push notifications, such as mobile application and
 }
 ```
 
-# Push notification details Properties
+# Push Notification Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:pushNotificationDetails](#xdmpushnotificationdetails) | Push notification detail | Optional | Push notification details (this schema) |
+| [xdm:pushNotificationDetails](#xdmpushnotificationdetails) | Push notification detail | Optional | Push Notification Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:pushNotificationDetails

@@ -5,46 +5,26 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/product-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/product-audit",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product Details",
+  "title": "Product Audit",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product details generic to all industries.",
+  "description": "This mixin is used to capture properties related to product Audit properties.",
   "definitions": {
-    "product-details": {
+    "product-audit": {
       "properties": {
-        "xdm:sku": {
-          "title": "SKU",
-          "type": "string",
-          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
-        },
-        "xdm:gtin": {
-          "title": "GTIN",
-          "type": "string",
-          "description": "Global Trade Item Number of the product."
-        },
-        "xdm:productImageURL": {
-          "title": "Product Image URL",
-          "type": "string",
-          "description": "The URL for the primary product image of the product."
-        },
-        "xdm:productSearchKeywords": {
-          "title": "Product Search Keywords",
-          "type": "string",
-          "description": "The search keywords associated with the product."
-        },
         "xdm:productCreateDate": {
           "title": "Product creation date",
           "type": "string",
           "format": "date-time",
           "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
-        "xdm:productLastModified": {
-          "title": "Product last modified",
+        "xdm:productLastModifiedDate": {
+          "title": "Product last modified Date",
           "type": "string",
           "format": "date-time",
           "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
@@ -54,7 +34,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/product-details"
+      "$ref": "#/definitions/product-audit"
     }
   ],
   "meta:status": "experimental"

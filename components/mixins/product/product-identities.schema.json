@@ -1,0 +1,64 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/product-identies",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Identities",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
+  "description": "This mixin is used to capture properties related to product details generic to all industries.",
+  "definitions": {
+    "product-identities": {
+      "properties": {
+        "xdm:productID": {
+          "title": "Product ID",
+          "description": "Product unique identifer",
+          "type": "string"
+        },
+        "xdm:productName": {
+          "title": "Product Name",
+          "description": "Name of the product.",
+          "type": "string"
+        },
+        "xdm:productDescription": {
+          "title": "Product Description",
+          "description": "Description of the product.",
+          "type": "string"
+        },
+        "xdm:sku": {
+          "title": "SKU",
+          "type": "string",
+          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
+        },
+        "xdm:gtin": {
+          "title": "GTIN",
+          "type": "string",
+          "description": "Global Trade Item Number of the product."
+        },
+        "xdm:productImageURL": {
+          "title": "Product Image URL",
+          "type": "string",
+          "description": "The URL for the primary product image of the product."
+        },
+        "xdm:productSearchKeywords": {
+          "title": "Product Search Keywords",
+          "type": "string",
+          "description": "The search keywords associated with the product."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/product-identities"
+    }
+  ],
+  "meta:status": "experimental"
+}

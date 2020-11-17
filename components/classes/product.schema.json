@@ -16,8 +16,7 @@
   "description": "This class is used to capture minimum set of properties that define a product.",
   "definitions": {
     "product": {
-      "properties": {
-      }
+      "properties": {}
     }
   },
   "allOf": [

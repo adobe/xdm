@@ -27,10 +27,10 @@
               "type": "string",
               "description": "Marketing list unique identifier."
             },
-            "xdm:source": {
-              "title": "Source",
+            "xdm:requestSource": {
+              "title": "Request Source",
               "type": "string",
-              "description": "Marketing list Source."
+              "description": "Request source."
             }
           }
         }

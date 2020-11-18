@@ -16,7 +16,23 @@
   "description": "This class is used to capture minimum set of properties that define a product.",
   "definitions": {
     "product": {
-      "properties": {}
+      "properties": {
+        "xdm:productID": {
+          "title": "Product ID",
+          "description": "Product unique identifer",
+          "type": "string"
+        },
+        "xdm:productName": {
+          "title": "Product Name",
+          "description": "Name of the product.",
+          "type": "string"
+        },
+        "xdm:productDescription": {
+          "title": "Product Description",
+          "description": "Description of the product.",
+          "type": "string"
+        }
+      }
     }
   },
   "allOf": [

@@ -17,21 +17,6 @@
   "definitions": {
     "product-identities": {
       "properties": {
-        "xdm:productID": {
-          "title": "Product ID",
-          "description": "Product unique identifer",
-          "type": "string"
-        },
-        "xdm:productName": {
-          "title": "Product Name",
-          "description": "Name of the product.",
-          "type": "string"
-        },
-        "xdm:productDescription": {
-          "title": "Product Description",
-          "description": "Description of the product.",
-          "type": "string"
-        },
         "xdm:sku": {
           "title": "SKU",
           "type": "string",

@@ -25,7 +25,7 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Captures the amount of the transaction."
         },
-        "xdm:transactionId": {
+        "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
           "description": "Identifier for the transaction."
@@ -34,6 +34,12 @@
           "title": "Transaction Type",
           "type": "string",
           "description": "Records the type of transaction utilized by the visitor."
+        },
+        "xdm:transactionDate": {
+          "title": "Transaction Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Records the date/time of the transaction."
         }
       }
     }

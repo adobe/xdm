@@ -35,10 +35,15 @@ class Converter extends EventEmitter {
   convert(refBase) {
 
     function shortenField(id) { //change $id $refkept uri value to shortened schema file location
-      if (id.indexOf(".com/experience") != -1) id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","") //more logic here needed to extract other domains in the future
+      if (id.indexOf(".com/experience") != -1 || id.indexOf(".com/b2b") != -1) {
+        //more logic here needed to extract other domains in the future
+        id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","");
+      }
+
       return id.replace("https://ns.adobe.com/xdm/", "").replace("http://ns.adobe.com/xdm/", "")
                .replace("http://schema.org/", "external/schema/").replace("http://www.iptc.org/","external/iptc/")
-               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
+               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon")
+               .replace("https://ns.airship.com/", "").toLowerCase();
     };
 
 

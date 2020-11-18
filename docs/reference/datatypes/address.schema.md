@@ -62,6 +62,7 @@ A postal address. Address could relate to a person's home, work, or preferred st
 | [xdm:region](#xdmregion) | `string` | Optional |  | Postal address (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional |  | [Audit trail](auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:state](#xdmstate) | `string` | Optional |  | Postal address (this schema) |
 | [xdm:stateProvince](#xdmstateprovince) | `string` | Optional |  | [Geo](geo.schema.md#xdmstateprovince) |
 | [xdm:status](#xdmstatus) | `string` | Optional | `"active"` | Postal address (this schema) |
 | [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Postal address (this schema) |
@@ -525,6 +526,26 @@ User ID of who last modified the record. At creation time, `modifiedByUser` is s
 * defined in [Audit trail](auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:state
+### State
+
+The name of the State. This is a free-form field.
+
+`xdm:state`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:state Type
 
 
 `string`

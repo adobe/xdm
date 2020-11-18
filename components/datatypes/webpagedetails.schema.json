@@ -54,6 +54,48 @@
           "title": "Page Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View(s) of a webpage has occurred."
+        },
+        "xdm:primarySiteSection": {
+          "title": "Primary Site Section",
+          "type": "string",
+          "description": "The first level/section of the site hierarchy."
+        },
+        "xdm:primarySiteSectionId": {
+          "title": "Primary Site Section ID",
+          "type": "string",
+          "description": "The identifier of the Primary level of the site hierarchy, if applicable."
+        },
+        "xdm:secondarySiteSectionId": {
+          "title": "Secondary Site Section ID",
+          "type": "string",
+          "description": "The identifier of the Second level of the site hierarchy, if applicable."
+        },
+        "xdm:secondarySiteSection": {
+          "title": "Secondary Site Section",
+          "type": "string",
+          "description": "The second level/section of the site hierarchy."
+        },
+        "xdm:pageType": {
+          "title": "Page Type",
+          "type": "string",
+          "enum": ["error_page", "landing_page", "home_page"],
+          "meta:enum": {
+            "error_page": "Error Page",
+            "landing_page": "Landing Page",
+            "home_page": "Home Page"
+          },
+          "description": "Tracks if a page belongs to a certain generic category, such an error page, landing page, or home page."
+        },
+        "xdm:previousPageType": {
+          "title": "Previous Page Type",
+          "type": "string",
+          "enum": ["error_page", "landing_page", "home_page"],
+          "meta:enum": {
+            "error_page": "Error Page",
+            "landing_page": "Landing Page",
+            "home_page": "Home Page"
+          },
+          "description": "Tracks if previous page belongs to a certain generic category, such an error page, landing page, or home page."
         }
       }
     }

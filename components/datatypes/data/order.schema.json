@@ -42,6 +42,125 @@
           "title": "Price Total",
           "type": "number",
           "description": "The total price of this order after all discounts and taxes have been applied."
+        },
+        "xdm:promoCode": {
+          "title": "Promotional Code",
+          "type": "array",
+          "description": "Captures any promotional code(s) that have successfully been applied during the checkout process."
+        },
+        "xdm:discountAmount": {
+          "title": "Order Discount",
+          "type": "number",
+          "description": "Total discount associated with the transaction."
+        },
+        "xdm:tipAmount": {
+          "title": "Order Tip",
+          "type": "number",
+          "description": "Total tip applied to an order, if applicable."
+        },
+        "xdm:deliveryFee": {
+          "title": "Delivery Fee",
+          "type": "number",
+          "description": "Delivery fee for an order, if applicable."
+        },
+        "xdm:activationFee": {
+          "title": "Activation Fee",
+          "type": "number",
+          "description": "Activation fee for an order, if applicable."
+        },
+        "xdm:depositAmount": {
+          "title": "Deposit Amount",
+          "type": "number",
+          "description": "Deposit amount applied to an order, if applicable."
+        },
+        "xdm:revenueDue": {
+          "title": "Revenue Due",
+          "type": "number",
+          "description": "Portion of order revenue total due when the order is placed."
+        },
+        "xdm:recurringCharge": {
+          "title": "Recurring Charge",
+          "type": "number",
+          "description": "Portion of the order revenue that is due on a recurring basis."
+        },
+        "xdm:reorder": {
+          "title": "Reorder",
+          "type": "boolean",
+          "description": "Tracked when a visitor reorders from a list of previous orders."
+        },
+        "xdm:itemTotalAmount  ": {
+          "title": "Order Item Total",
+          "type": "number",
+          "description": "Revenue ($) before discounts and coupons are added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied."
+        },
+        "xdm:subtotalAmount": {
+          "title": "Order Subtotal",
+          "type": "number",
+          "description": "Counter double indicating a successful visitor."
+        },
+        "xdm:taxAmount": {
+          "title": "Order Tax",
+          "type": "number",
+          "description": "Total tax associated with the transaction."
+        },
+        "xdm:shippingAmount": {
+          "title": "Order Shipping Amount",
+          "type": "number",
+          "description": "Shipping cost associated with the transaction."
+        },
+        "xdm:costOfGoodsSold": {
+          "title": "Order Cost of Goods Sold",
+          "type": "number",
+          "description": "Wholesale price of an item at the time the order is placed. Typically only collected with server-side code."
+        },
+        "xdm:shippingMethod": {
+          "title": "Order Shipping Method",
+          "type": "string",
+          "description": "String representing the shipping the method chosen."
+        },
+        "xdm:shipBOPIS": {
+          "title": "Order Buy Online Pickup in Store",
+          "type": "string",
+          "description": "Buy online pickup in store."
+        },
+        "xdm:shipBOSS": {
+          "title": "Order Buy Online Ship to Store",
+          "type": "string",
+          "description": "Buy online ship to store."
+        },
+        "xdm:storeID": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Store ID of BOPIS or BOSS store."
+        },
+        "xdm:deliveryType": {
+          "title": "Order Delivery Type",
+          "type": "string",
+          "description": "Order Delivery Type."
+        },
+        "xdm:shipToHome": {
+          "title": "Order Ship to Home",
+          "type": "string",
+          "description": "Ship to home? Yes/No."
+        },
+        "xdm:saveBillingInformation": {
+          "title": "Save Billing Information",
+          "type": "string",
+          "description": "Tracks if a visitor chooses to have their billing information stored for future orders."
+        },
+        "xdm:splitPaymentMethods": {
+          "title": "Split Payment Methods",
+          "type": "string",
+          "description": "Captured if a visitor chooses to use multiple payment methods (i.e. credit card & points) to complete a purchase."
+        },
+        "xdm:checkoutStep": {
+          "title": "Checkout Step",
+          "type": "string",
+          "description": "Tracks the name of a single step in the checkout, if applicable."
+        },
+        "xdm:paymentMethodAdded": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Captured if a visitor adds a payment method to their account."
         }
       }
     }

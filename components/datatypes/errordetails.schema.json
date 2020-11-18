@@ -1,0 +1,46 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/weberrordetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Web error details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "",
+  "definitions": {
+    "weberrordetails": {
+      "properties": {
+        "xdm:errorMessage": {
+          "title": "Error Message",
+          "type": "string",
+          "description": "Tracks the error message presented to the visitor."
+        },
+        "xdm:errorType": {
+          "title": "Error Type",
+          "type": "string",
+          "description": "Tracks the error type presented to the visitor, if applicable."
+        },
+        "xdm:errorCode": {
+          "title": "Error Code",
+          "type": "string",
+          "description": "Tracks the error code presented to the visitor, if applicable."
+        },
+        "xdm:errorEvent": {
+          "title": "Error Event",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when the error event occurs."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/weberrordetails"
+    }
+  ],
+  "meta:status": "stable"
+}

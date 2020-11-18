@@ -29,6 +29,11 @@
           "title": "Web referrer",
           "$ref": "https://ns.adobe.com/xdm/context/webreferrer",
           "description": "The referrer of a web interaction, which is the URL a visitor came from immediately before the current web interaction was recorded."
+        },
+        "xdm:webError": {
+          "title": "Web error details",
+          "$ref": "https://ns.adobe.com/xdm/context/weberrordetails",
+          "description": "Details about the web errors where the web interaction occurred."
         }
       }
     }

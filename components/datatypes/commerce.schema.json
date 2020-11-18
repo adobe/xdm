@@ -62,6 +62,114 @@
         "xdm:inStorePurchase": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "'inStore' purchase is saved for analytics use."
+        },
+        "xdm:oneClickPay": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times the visitor used the single click to pay method to checkout."
+        },
+        "xdm:quickView": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times a product was selected for quick viewing in a modal or other scaled down product view."
+        },
+        "xdm:orderReview": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counted when a customer views their order review screen before completing their order."
+        },
+        "xdm:saveForLaterAdd": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when a visitor adds a product or item to their save for later list."
+        },
+        "xdm:saveForLaterView ": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when a visitor removes a product or item to their save for later list."
+        },
+        "xdm:saveForLaterRemove": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when a visitor views their save for later list."
+        },
+        "xdm:checkout": {
+          "xdm:checkoutStart": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "The number of times a checkout was initiated."
+          },
+          "xdm:checkoutComplete": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "The number of times a checkout was completed."
+          },
+          "xdm:expressCheckoutStart": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "The number of times an express checkout was initiated."
+          },
+          "xdm:expressCheckoutComplete": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "The number of times an express checkout was completed."
+          }
+        },
+        "xdm:backorderValue": {
+          "$ref": "https://ns.adobe.com/xdm/data/currency",
+          "description": "Tracks the total value of backordered items in a visitor's shopping cart."
+        },
+        "xdm:productCompare": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counts if a given product was included in a comparison view."
+        },
+        "xdm:productListTotalItems": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Count of total items currently in the shopping cart."
+        },
+        "xdm:productListTotalValue": {
+          "$ref": "https://ns.adobe.com/xdm/data/currency",
+          "description": "Count of total value of items currently in the shopping cart. "
+        },
+        "xdm:productListPageView": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counted when a category or product listing page has been viewed."
+        },
+        "xdm:wishList": {
+          "xdm:wishListAdd": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "Tracks when a visitor adds a product or item to their wish list."
+          },
+          "xdm:wishListView": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "Tracks when a visitor views a product or item to their wish list."
+          },
+          "xdm:wishListSave": {
+            "$ref": "https://ns.adobe.com/xdm/data/measure",
+            "description": "Tracks when a visitor saves a product or item to their wish list."
+          }
+        },
+        "xdm:productReviewed": {
+          "xdm:productId": {
+            "title": "Product ID",
+            "description": "The SKU/ID of the product.",
+            "type": "string"
+          },
+          "xdm:rating": {
+            "title": "Product Review Rating",
+            "description": "Tracks the rating of a product review.",
+            "type": "string"
+          },
+          "xdm:reviewBody": {
+            "title": "Product Review Comments",
+            "description": "Tracks the text content of a product review.",
+            "type": "string"
+          },
+          "xdm:reviewId": {
+            "title": "Product Review ID",
+            "description": "Tracks the ID of a product review.",
+            "type": "string"
+          }
+        },
+        "xdm:cartId": {
+          "title": "Cart ID",
+          "type": "string",
+          "description": "If applicable, tracks a persistent cart identifier string that would expire upon a successful order event."
+        },
+        "xdm:crossSellProduct": {
+          "title": "Cross-Sell Product",
+          "type": "array",
+          "description": "Array of product IDs displayed as related products."
         }
       }
     }

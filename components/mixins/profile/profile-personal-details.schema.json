@@ -40,6 +40,47 @@
           "title": "Fax phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number."
+        },
+        "xdm:shippingAddress": {
+          "title": "Shipping address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Shipping address."
+        },
+        "xdm:billingAddress": {
+          "title": "Billing address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Billing address."
+        },
+        "xdm:landmark": {
+          "title": "Landmark",
+          "type": "string",
+          "description": "Feature of a landscape or town that is easily seen and recognized from a distance."
+        },
+        "xdm:primaryAddress": {
+          "title": "Primary Address",
+          "type": "string",
+          "enum": ["home_address", "work_address"],
+          "meta:enum": {
+            "home_address": "Home Address",
+            "work_address": "Work Address"
+          },
+          "description": "This is a field to indicate yes/no if the address listed is primary or not."
+        },
+        "xdm:primaryPhone": {
+          "title": "Primary Phone number",
+          "type": "string",
+          "enum": ["cell", "home", "work"],
+          "meta:enum": {
+            "cell": "Cell",
+            "home": "Home",
+            "work": "Work"
+          },
+          "description": "This is a field to indicate yes/no if the phone number listed is primary or not."
+        },
+        "xdm:knownId": {
+          "title": "Known Id",
+          "type": "string",
+          "description": "This is support for legacy analytics solution."
         }
       }
     }

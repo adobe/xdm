@@ -126,48 +126,6 @@
         }
       }
     },
-    "environment-duration": {
-      "properties": {
-        "xdm:environment": {
-          "type": "object",
-          "properties": {
-            "xdm:duration": {
-              "title": "Duration",
-              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/duration",
-              "description": "The number of milliseconds that the user was on the screen."
-            }
-          }
-        }
-      }
-    },
-    "environment-viewedScreen": {
-      "properties": {
-        "xdm:environment": {
-          "type": "object",
-          "properties": {
-            "xdm:viewedScreen": {
-              "title": "Viewed Screen",
-              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/viewedScreen",
-              "description": "The friendly name assigned to the screen that the user was on."
-            }
-          }
-        }
-      }
-    },
-    "environment-previousScreen": {
-      "properties": {
-        "xdm:environment": {
-          "type": "object",
-          "properties": {
-            "xdm:previousScreen": {
-              "title": "Previous Screen",
-              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/previousScreen",
-              "description": "The frinedly name assigned to the screen the user was on prior to the viewedScreen."
-            }
-          }
-        }
-      }
-    },
     "environment-connectionType": {
       "properties": {
         "xdm:environment": {

@@ -14,20 +14,24 @@
   "meta:industry": ["financial_services"],
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Bill pay steps such as start, save, failure, and complete.",
-  "properties": {
-    "xdm:financialServices": {
-      "type": "object",
+  "definitions": {
+    "billPaySteps": {
       "properties": {
-        "xdm:billPaySteps": {
-          "xdm:billPay": {
-            "title": "Bill Pay Steps",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
-            "description": "Extension of toolUsage data type."
-          },
-          "xdm:billPayAccount": {
-            "title": "Bill Pay Account",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
-            "description": "Extension of financialAccount data type."
+        "xdm:financialServices": {
+          "type": "object",
+          "properties": {
+            "xdm:billPaySteps": {
+              "xdm:billPay": {
+                "title": "Bill Pay Steps",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+                "description": "Extension of toolUsage data type."
+              },
+              "xdm:billPayAccount": {
+                "title": "Bill Pay Account",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
+                "description": "Extension of financialAccount data type."
+              }
+            }
           }
         }
       }

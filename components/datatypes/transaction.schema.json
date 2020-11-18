@@ -10,24 +10,38 @@
   "title": "Transaction",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": ["financial_services", "travel_and_hospitality", "telecom", "health_and_life_sciences"],
+  "meta:industry": [
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "health_and_life_sciences"
+  ],
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
-  "properties": {
-    "xdm:transactionAmount": {
-      "title": "Transaction Amount",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-      "description": "Captures the amount of the transaction."
-    },
-    "xdm:transactionId": {
-      "title": "Transaction ID",
-      "type": "string",
-      "description": "Identifier for the transaction."
-    },
-    "xdm:transactionType": {
-      "title": "Transaction Type",
-      "type": "string",
-      "description": "Records the type of transaction utilized by the visitor."
+  "definitions": {
+    "transaction": {
+      "properties": {
+        "xdm:transactionAmount": {
+          "title": "Transaction Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Captures the amount of the transaction."
+        },
+        "xdm:transactionId": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "Identifier for the transaction."
+        },
+        "xdm:transactionType": {
+          "title": "Transaction Type",
+          "type": "string",
+          "description": "Records the type of transaction utilized by the visitor."
+        }
+      }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/transaction"
+    }
+  ],
   "meta:status": "experimental"
 }

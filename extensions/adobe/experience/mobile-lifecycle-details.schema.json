@@ -28,15 +28,6 @@
         }
       }
     },
-    "environment": {
-      "properties": {
-        "xdm:environment": {
-          "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Information about the surrounding situation the application lifeycyle event observation occurred in, specifically detailing transitory information such as the network or software versions."
-        }
-      }
-    },
     "environment-type": {
       "properties": {
         "xdm:environment": {

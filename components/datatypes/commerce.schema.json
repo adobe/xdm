@@ -109,7 +109,7 @@
           }
         },
         "xdm:backorderValue": {
-          "$ref": "https://ns.adobe.com/xdm/data/currency",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Tracks the total value of backordered items in a visitor's shopping cart."
         },
         "xdm:productCompare": {
@@ -124,7 +124,7 @@
               "description": "Count of total items currently in the shopping cart."
             },
             "xdm:productListTotalValue": {
-              "$ref": "https://ns.adobe.com/xdm/data/currency",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Count of total value of items currently in the shopping cart. "
             },
             "xdm:productListPageViews": {
@@ -183,6 +183,7 @@
         "xdm:crossSellProduct": {
           "title": "Cross-Sell Product",
           "type": "array",
+          "items": {"type": "string"},
           "description": "Array of product IDs displayed as related products."
         }
       }

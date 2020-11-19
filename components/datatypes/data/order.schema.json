@@ -46,41 +46,42 @@
         "xdm:promoCode": {
           "title": "Promotional Code",
           "type": "array",
+          "items": {"type": "string"},
           "description": "Captures any promotional code(s) that have successfully been applied during the checkout process."
         },
         "xdm:discountAmount": {
           "title": "Order Discount",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total discount associated with the transaction."
         },
         "xdm:tipAmount": {
           "title": "Order Tip",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total tip applied to an order, if applicable."
         },
         "xdm:deliveryFee": {
           "title": "Delivery Fee",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Delivery fee for an order, if applicable."
         },
         "xdm:activationFee": {
           "title": "Activation Fee",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Activation fee for an order, if applicable."
         },
         "xdm:depositAmount": {
           "title": "Deposit Amount",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Deposit amount applied to an order, if applicable."
         },
         "xdm:revenueDue": {
           "title": "Revenue Due",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Portion of order revenue total due when the order is placed."
         },
         "xdm:recurringCharge": {
           "title": "Recurring Charge",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Portion of the order revenue that is due on a recurring basis."
         },
         "xdm:reorder": {
@@ -90,27 +91,27 @@
         },
         "xdm:itemTotalAmount  ": {
           "title": "Order Item Total",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Revenue ($) before discounts and coupons are added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied."
         },
         "xdm:subtotalAmount": {
           "title": "Order Subtotal",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Counter double indicating a successful visitor."
         },
         "xdm:taxAmount": {
           "title": "Order Tax",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total tax associated with the transaction."
         },
         "xdm:shippingAmount": {
           "title": "Order Shipping Amount",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Shipping cost associated with the transaction."
         },
         "xdm:costOfGoodsSold": {
           "title": "Order Cost of Goods Sold",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Wholesale price of an item at the time the order is placed. Typically only collected with server-side code."
         },
         "xdm:shippingMethod": {

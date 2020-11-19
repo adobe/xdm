@@ -60,6 +60,7 @@
         "xdm:itemsInProductList": {
           "title": "Items in Product List",
           "type": "array",
+          "items": {"type": "string"},
           "description": "An array of all product IDs/SKUs in the list of products. Used outside of a shopping cart."
         },
         "xdm:productImpression": {
@@ -109,12 +110,12 @@
         },
         "xdm:listPrice": {
           "title": "Product List Price",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Tracks the wholesale/list price for an individual product."
         },
         "xdm:taxAmount": {
           "title": "Order Taxes",
-          "type": "number",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Tracks the total amount of taxes applied to a successful order."
         },
         "xdm:thumbnailUrl": {

@@ -16,20 +16,24 @@
   "description": "Bill pay steps such as start, save, failure, and complete.",
   "definitions": {
     "billPaySteps": {
+      "type": "object",
       "properties": {
         "xdm:personalFinance": {
           "type": "object",
           "properties": {
             "xdm:billPaySteps": {
-              "xdm:billPay": {
-                "title": "Bill Pay Steps",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
-                "description": "Extension of toolUsage data type."
-              },
-              "xdm:billPayAccount": {
-                "title": "Bill Pay Account",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
-                "description": "Extension of financialAccount data type."
+              "type": "object",
+              "properties": {
+                "xdm:billPay": {
+                  "title": "Bill Pay Steps",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+                  "description": "Extension of toolUsage data type."
+                },
+                "xdm:billPayAccount": {
+                  "title": "Bill Pay Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
+                  "description": "Extension of financialAccount data type."
+                }
               }
             }
           }

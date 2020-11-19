@@ -1,0 +1,134 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/visitwebpage",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Visit WebPage",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "web.webpagedetails.pageViews",  
+  "meta:intendedToExtend": [
+  "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
+  "definitions": {
+    "visitwebpage": {
+      "properties": {
+        "xdm:web": {
+          "title": "Web",
+          "type": "object",
+          "properties": {
+            "xdm:webPageDetails": {
+              "title": "Web Page Details",
+              "type": "object",
+              "properties": {
+                "xdm:name": {
+                  "title": "Name",
+                  "type": "string",
+                  "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                },
+                "xdm:URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "format": "uri",
+                  "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+                },
+                "xdm:queryParamaters": {
+                  "title": "Query Paramaters",
+                  "type": "string",
+                  "description": "Query Paramters used for the web page."
+                },
+                "xdm:personalizedURL": {
+                  "title": "Personalized URL",
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+                }
+              }
+            },
+            "xdm:webReferrer": {
+              "title": "Web Referrer",
+              "type": "object",
+              "properties": {
+                "xdm:URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "description": "The referrer URL."
+                }
+              }
+            }
+          }
+        },
+        "xdm:environment": {
+          "title": "Environment",
+          "type": "object",
+          "description": "The information related to web page and link of the ExperienceEvent.",
+          "properties": {
+            "xdm:ipV4": {
+              "title": "IPv4",
+              "type": "string",
+              "format": "ipv4",
+              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+            },
+            "xdm:browserDetails": {
+              "title": "Browser details",
+              "type": "object",
+              "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+              "properties": {
+                "xdm:userAgent": {
+                  "title": "User agent",
+                  "type": "string",
+                  "description": "The HTTP user-agent string from the client request."
+                }
+              }
+            }
+          }
+        },
+        "xdm:search": {
+          "title": "Search",
+          "type": "object",
+          "description": "The information related to web or mobile search.",
+          "properties": {
+            "xdm:searchEngine": {
+              "title": "Search engine",
+              "type": "string",
+              "description": "The search engine used by the search."
+            },
+            "xdm:keywords": {
+              "title": "Keywords",
+              "type": "string",
+              "description": "Keywords for the search."
+            }
+          }
+        },
+        "xdm:marketing": {
+          "title": "Marketing",
+          "type": "object",
+          "description": "The information related to marketing activities that are active with the touchpoint.",
+          "properties": {
+            "xdm:campaignName": {
+              "title": "Campaign name",
+              "type": "string",
+              "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
+            },
+            "xdm:campaignType": {
+              "title": "Campaign Type",
+              "type": "string",
+              "description": "Name of the campaign type where multiple campaigns are grouped together."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/visitwebpage"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -37,8 +37,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-  }],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    }
+  ],
   "meta:status": "experimental"
 }

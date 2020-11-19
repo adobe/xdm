@@ -16,9 +16,9 @@
   "description": "Card action details such as card type as well as activation and lock status.",
   "definitions": {
     "card-actions": {
+      "type": "object",
       "properties": {
         "xdm:personalFinances": {
-          "type": "object",
           "properties": {
             "xdm:cardActions": {
               "xdm:cardActivated": {

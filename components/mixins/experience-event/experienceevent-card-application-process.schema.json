@@ -16,9 +16,9 @@
   "description": "Card comparison details such as count, addition, removal, and view.",
   "definitions": {
     "card-application-process": {
+      "type": "object",
       "properties": {
         "xdm:personalFinances": {
-          "type": "object",
           "properties": {
             "xdm:cardApplicationProcess": {
               "xdm:cardApplicationComparisons": {

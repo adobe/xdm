@@ -5,17 +5,17 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/product-identies",
+  "$id": "https://ns.adobe.com/xdm/mixins/product-identifiers",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product Identities",
+  "title": "Product Identifiers",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product details generic to all industries.",
+  "description": "This mixin is used to capture properties related to product identifiers generic to all industries.",
   "definitions": {
-    "product-identities": {
+    "product-identifiers": {
       "properties": {
         "xdm:sku": {
           "title": "SKU",
@@ -34,7 +34,10 @@
         },
         "xdm:productSearchKeywords": {
           "title": "Product Search Keywords",
-          "type": "string",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
           "description": "The search keywords associated with the product."
         }
       }
@@ -42,7 +45,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/product-identities"
+      "$ref": "#/definitions/product-identifiers"
     }
   ],
   "meta:status": "experimental"

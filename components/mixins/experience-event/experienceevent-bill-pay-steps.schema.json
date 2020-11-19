@@ -17,7 +17,7 @@
   "definitions": {
     "billPaySteps": {
       "properties": {
-        "xdm:financialServices": {
+        "xdm:personalFinance": {
           "type": "object",
           "properties": {
             "xdm:billPaySteps": {

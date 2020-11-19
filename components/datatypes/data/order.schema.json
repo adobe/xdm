@@ -46,7 +46,7 @@
         "xdm:promoCode": {
           "title": "Promotional Code",
           "type": "array",
-          "items": {"type": "string"},
+          "items": { "type": "string" },
           "description": "Captures any promotional code(s) that have successfully been applied during the checkout process."
         },
         "xdm:discountAmount": {

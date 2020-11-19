@@ -183,7 +183,7 @@
         "xdm:crossSellProduct": {
           "title": "Cross-Sell Product",
           "type": "array",
-          "items": {"type": "string"},
+          "items": { "type": "string" },
           "description": "Array of product IDs displayed as related products."
         }
       }

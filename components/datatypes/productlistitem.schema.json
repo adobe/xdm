@@ -60,7 +60,7 @@
         "xdm:itemsInProductList": {
           "title": "Items in Product List",
           "type": "array",
-          "items": {"type": "string"},
+          "items": { "type": "string" },
           "description": "An array of all product IDs/SKUs in the list of products. Used outside of a shopping cart."
         },
         "xdm:productImpression": {

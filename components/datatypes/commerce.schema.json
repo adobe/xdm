@@ -23,10 +23,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product list has been identified as no longer accessible or purchasable by the user."
         },
-        "xdm:checkouts": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
-        },
         "xdm:productListAdds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Addition of a product to the product list, for example a product is added to a shopping cart."
@@ -87,22 +83,29 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Tracks when a visitor views their save for later list."
         },
-        "xdm:checkout": {
-          "xdm:checkoutStart": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "The number of times a checkout was initiated."
-          },
-          "xdm:checkoutComplete": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "The number of times a checkout was completed."
-          },
-          "xdm:expressCheckoutStart": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "The number of times an express checkout was initiated."
-          },
-          "xdm:expressCheckoutComplete": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "The number of times an express checkout was completed."
+        "xdm:checkouts": {
+          "type": "object",
+          "properties": {
+            "xdm:totalCheckouts": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
+            },
+            "xdm:checkoutStart": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "The number of times a checkout was initiated."
+            },
+            "xdm:checkoutComplete": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "The number of times a checkout was completed."
+            },
+            "xdm:expressCheckoutStart": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "The number of times an express checkout was initiated."
+            },
+            "xdm:expressCheckoutComplete": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "The number of times an express checkout was completed."
+            }
           }
         },
         "xdm:backorderValue": {
@@ -113,55 +116,66 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Counts if a given product was included in a comparison view."
         },
-        "xdm:productListTotalItems": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Count of total items currently in the shopping cart."
-        },
-        "xdm:productListTotalValue": {
-          "$ref": "https://ns.adobe.com/xdm/data/currency",
-          "description": "Count of total value of items currently in the shopping cart. "
-        },
-        "xdm:productListPageView": {
-          "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Counted when a category or product listing page has been viewed."
+        "xdm:productListTotal": {
+          "type": "object",
+          "properties": {
+            "xdm:productListTotalItems": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Count of total items currently in the shopping cart."
+            },
+            "xdm:productListTotalValue": {
+              "$ref": "https://ns.adobe.com/xdm/data/currency",
+              "description": "Count of total value of items currently in the shopping cart. "
+            },
+            "xdm:productListPageViews": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Counted when a category or product listing page has been viewed."
+            }
+          }
         },
         "xdm:wishList": {
-          "xdm:wishListAdd": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "Tracks when a visitor adds a product or item to their wish list."
-          },
-          "xdm:wishListView": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "Tracks when a visitor views a product or item to their wish list."
-          },
-          "xdm:wishListSave": {
-            "$ref": "https://ns.adobe.com/xdm/data/measure",
-            "description": "Tracks when a visitor saves a product or item to their wish list."
+          "type": "object",
+          "properties": {
+            "xdm:wishListAdd": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Tracks when a visitor adds a product or item to their wish list."
+            },
+            "xdm:wishListView": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Tracks when a visitor views a product or item to their wish list."
+            },
+            "xdm:wishListSave": {
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Tracks when a visitor saves a product or item to their wish list."
+            }
           }
         },
         "xdm:productReviewed": {
-          "xdm:productId": {
-            "title": "Product ID",
-            "description": "The SKU/ID of the product.",
-            "type": "string"
-          },
-          "xdm:rating": {
-            "title": "Product Review Rating",
-            "description": "Tracks the rating of a product review.",
-            "type": "string"
-          },
-          "xdm:reviewBody": {
-            "title": "Product Review Comments",
-            "description": "Tracks the text content of a product review.",
-            "type": "string"
-          },
-          "xdm:reviewId": {
-            "title": "Product Review ID",
-            "description": "Tracks the ID of a product review.",
-            "type": "string"
-          }
+          "type": "object",
+          "properties": {
+            "xdm:productID": {
+              "title": "Product ID",
+              "description": "The SKU/ID of the product.",
+              "type": "string"
+            },
+            "xdm:rating": {
+              "title": "Product Review Rating",
+              "description": "Tracks the rating of a product review.",
+              "type": "string"
+            },
+            "xdm:reviewBody": {
+              "title": "Product Review Comments",
+              "description": "Tracks the text content of a product review.",
+              "type": "string"
+            },
+            "xdm:reviewId": {
+              "title": "Product Review ID",
+              "description": "Tracks the ID of a product review.",
+              "type": "string"
+            }
+          } 
         },
-        "xdm:cartId": {
+        "xdm:cartID": {
           "title": "Cart ID",
           "type": "string",
           "description": "If applicable, tracks a persistent cart identifier string that would expire upon a successful order event."

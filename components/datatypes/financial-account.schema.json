@@ -5,61 +5,54 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/financial-account",
+  "$id": "https://ns.adobe.com/xdm/datatypes/financial-account",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Financial Account",
   "type": "object",
   "meta:extensible": true,
+  "meta:industry": ["financial_services"],
   "description": "Financial account details, such as owners, balances, and types.",
   "definitions": {
     "financialAccount": {
       "type": "object",
       "properties": {
-        "xdm:accountID": {
-          "title": "Account ID",
+        "xdm:currentAccountBalance": {
+          "title": "Current Financial Account Balance",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Balance in the account."
+        },
+        "xdm:financialAccountID": {
+          "title": "Financial Account ID",
           "type": "string",
           "description": "Current account balance for a single user account."
         },
-        "xdm:accountName": {
-          "title": "Account Name",
+        "xdm:financialAccountName": {
+          "title": "Financial Account Name",
           "type": "string",
           "description": "Name assigned to the financial account."
         },
-        "xdm:accountType": {
-          "title": "Account Type",
+        "xdm:financialAccountOwner": {
+          "title": "Financial Account Owners",
+          "type": "array",
+          "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type.",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-profile-personal-details"
+          }
+        },
+        "xdm:financialAccountType": {
+          "title": "Financial Account Type",
+          "enum": ["checking", "savings", "retirement", "investment"],
           "type": "string",
-          "enum": ["checking", "savings", "retirement", "investment", "other"],
-          "meta:enum": {
-            "checking": "Checking",
-            "savings": "Savings",
-            "retirement": "Retirement",
-            "investment": "Investment",
-            "other": "Other"
-          },
           "description": "Describes the type of finanical account, such as checking, savings, or retirement."
         },
-        "xdm:currentAccountTotal": {
-          "title": "Current Account Total",
-          "type": "double",
-          "description": "Total amount of money in the account."
-        },
         "xdm:openedDate": {
-          "title": "Account Open Date",
-          "type": "date",
+          "title": "Financial Account Open Date",
+          "type": "string",
+          "format": "date-time",
           "description": "Date which the account was opened."
-        },
-        "xdm:accountOwner": {
-          "title": "Account Owners",
-          "type": "data type: personal profile details",
-          "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
         }
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    }
-  ],
   "meta:status": "experimental"
 }

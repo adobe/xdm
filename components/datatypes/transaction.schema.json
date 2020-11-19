@@ -5,17 +5,29 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/transaction",
+  "$id": "https://ns.adobe.com/xdm/datatypes/transaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Transaction",
   "type": "object",
   "meta:extensible": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "health_and_life_sciences"
+  ],
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
   "definitions": {
     "transaction": {
       "type": "object",
       "properties": {
-        "xdm:transactionId": {
+        "xdm:transactionAmount": {
+          "title": "Transaction Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Captures the amount of the transaction."
+        },
+        "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
           "description": "Identifier for the transaction."
@@ -25,17 +37,18 @@
           "type": "string",
           "description": "Records the type of transaction utilized by the visitor."
         },
-        "xdm:transactionAmount": {
-          "title": "Transaction Amount",
-          "type": "double",
-          "description": "Captures the amount of the transaction."
+        "xdm:transactionDate": {
+          "title": "Transaction Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Records the date/time of the transaction."
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "#/definitions/transaction"
     }
   ],
   "meta:status": "experimental"

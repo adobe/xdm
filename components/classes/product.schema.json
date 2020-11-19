@@ -19,18 +19,23 @@
       "properties": {
         "xdm:productID": {
           "title": "Product ID",
-          "description": "Product unique identifer",
-          "type": "string"
+          "type": "string",
+          "description": "Product unique identifer."
         },
         "xdm:productName": {
           "title": "Product Name",
-          "description": "Name of the product.",
-          "type": "string"
+          "type": "string",
+          "description": "Name of the product."
         },
         "xdm:productDescription": {
           "title": "Product Description",
-          "description": "Description of the product.",
-          "type": "string"
+          "type": "string",
+          "description": "Description of the product."
+        },
+        "xdm:productRating": {
+          "title": "Product Rating",
+          "type": "string",
+          "description": "Customer review rating of the product.",
         },
         "xdm:productListPrice": {
           "title": "Product List price",

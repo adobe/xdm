@@ -259,6 +259,7 @@ The primary event type for this time-series record.
 | `message.tracking` | Message Tracking |
 | `pushTracking.applicationOpened` | Push Tracking Application Opened |
 | `pushTracking.customAction` | Push Tracking Custom Action |
+| `listOpearation.removeFromList` | List Operation Remove From List |
 
 
 

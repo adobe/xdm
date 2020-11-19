@@ -65,6 +65,34 @@
         "xdm:customActions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Action(s) that users can take on custom objects sent as part of a direct marketing message like push notification."
+        },
+        "xdm:marketingSubscription": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counter event when a visitor opts-in/subscribes for a direct marketing service."
+        },
+        "xdm:unsubscribeReason": {
+          "title": "Marketing Service Unsubscribe",
+          "description": "Tracks the visitor feedback provided when unsubscribing form a direct marketing service.",
+          "type": "string"
+        },
+        "xdm:hashedEmail": {
+          "title": "Visitor Hashed Email Address",
+          "description": "Captures the encrypted/hashed version of the visitor's email address.",
+          "type": "string"
+        },
+        "xdm:emailVisitorID": {
+          "title": "Email Recipient ID",
+          "description": "Captures the email recipient ID.",
+          "type": "string"
+        },
+        "xdm:messageID": {
+          "title": "Email Message ID",
+          "description": "Captures the email message ID.",
+          "type": "string"
+        },
+        "xdm:emailDelivered": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counts the total number of email messages delivered."
         }
       }
     }

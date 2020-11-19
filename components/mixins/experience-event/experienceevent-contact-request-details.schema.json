@@ -31,8 +31,10 @@
       "type": "object",
       "properties": {
         "xdm:customerFeedback": {
+          "type": "object",
           "properties": {
             "xdm:contactRequestDetails": {
+              "type": "object",
               "xdm:chatDeclined": {
                 "title": "Chat Declined",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

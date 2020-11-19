@@ -15,8 +15,7 @@
   "definitions": {
     "policy-details": {
       "type": "object",
-      "properties": {
-
+      "properties": {        
         "xdm:policyEndDate": {
           "title": "Policy End Date",
           "type": "string",

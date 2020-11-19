@@ -231,6 +231,48 @@
     },
     {
       "$ref": "#/definitions/mobile-lifecycle-details"
+    },
+    {
+      "$ref": "#/definitions/environment-type"
+    },
+    {
+      "$ref": "#/definitions/environment-operatingSystem"
+    },
+    {
+      "$ref": "#/definitions/environment-operatingSystemVersion"
+    },
+    {
+      "$ref": "#/definitions/environment-operatingSystemVendor"
+    },
+    {
+      "$ref": "#/definitions/environment-colorDepth"
+    },
+    {
+      "$ref": "#/definitions/environment-viewportHeight"
+    },
+    {
+      "$ref": "#/definitions/environment-viewportWidth"
+    },
+    {
+      "$ref": "#/definitions/environment-connectionType"
+    },
+    {
+      "$ref": "#/definitions/environment-carrier"
+    },
+    {
+      "$ref": "#/definitions/environment-ipV4"
+    },
+    {
+      "$ref": "#/definitions/environment-ipV6"
+    },
+    {
+      "$ref": "#/definitions/environment-domain"
+    },
+    {
+      "$ref": "#/definitions/environment-ISP"
+    },
+    {
+      "$ref": "#/definitions/environment-language"
     }
   ],
   "meta:status": "experimental"

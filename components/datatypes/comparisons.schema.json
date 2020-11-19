@@ -23,8 +23,8 @@
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
   "definitions": {
     "comparison": {
+      "type": "object",
       "properties": {
-        "type": "object",
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

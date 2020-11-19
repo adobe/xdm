@@ -26,8 +26,8 @@
   "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
   "definitions": {
     "impression": {
+      "type": "object",
       "properties": {
-        "type": "object",
         "xdm:impressionDisplays": {
           "title": "Impression Displays",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

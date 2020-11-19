@@ -19,8 +19,8 @@
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
   "definitions": {
     "form-application": {
-      "properties": {
-        "type": "object",
+      "type": "object",
+      "properties": {        
         "xdm:formApplicationApproved": {
           "title": "Form Application Approved",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

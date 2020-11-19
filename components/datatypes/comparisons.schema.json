@@ -24,6 +24,7 @@
   "definitions": {
     "comparison": {
       "properties": {
+        "type": "object",
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

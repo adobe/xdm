@@ -27,6 +27,7 @@
   "definitions": {
     "impression": {
       "properties": {
+        "type": "object",
         "xdm:impressionDisplays": {
           "title": "Impression Displays",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

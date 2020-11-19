@@ -1,0 +1,39 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/transaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Transaction",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
+  "definitions": {
+    "transaction": {
+      "properties": {
+        "xdm:transactionId": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "Identifier for the transaction."
+        },
+        "xdm:transactionType": {
+          "title": "Transaction Type",
+          "type": "string",
+          "description": "Records the type of transaction utilized by the visitor."
+        },
+        "xdm:transactionAmount": {
+          "title": "Transaction Amount",
+          "type": "double",
+          "description": "Captures the amount of the transaction."
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+  }],
+  "meta:status": "experimental"
+}

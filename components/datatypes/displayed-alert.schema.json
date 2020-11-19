@@ -1,0 +1,44 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/displayed-alert",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Displayed Alert",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Tracks details & responses of alerts presented to visitors.",
+  "definitions": {
+    "displayedAlert": {
+      "properties": {
+        "xdm:displayedAlertImpression": {
+          "title": "Displayed Alert Impressions",
+          "type": "array",
+          "description": "Count of the total number of times an alert has been displayed."
+        },
+        "xdm:displayedAlertClickThrough": {
+          "title": "Displayed Alert Click Through",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when a visitor clicks through on an alert message presented to them."
+        },
+        "xdm:displayedAlertID": {
+          "title": "Displayed Alert ID",
+          "type": "array",
+          "description": "Identfier for the alert(s) displayed to the visitor."
+        },
+        "xdm:displayedAlertDismissal": {
+          "title": "Displayed Alert Dismissal",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Tracks when a visitor dismisses an an alert message presented to them."
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+  }],
+  "meta:status": "experimental"
+}

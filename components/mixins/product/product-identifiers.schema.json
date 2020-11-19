@@ -17,13 +17,13 @@
   "definitions": {
     "product-identifiers": {
       "properties": {
-        "xdm:sku": {
-          "title": "SKU",
+        "xdm:productSku": {
+          "title": "Product SKU",
           "type": "string",
           "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
         },
-        "xdm:gtin": {
-          "title": "GTIN",
+        "xdm:productGtin": {
+          "title": "Product GTIN",
           "type": "string",
           "description": "Global Trade Item Number of the product."
         },

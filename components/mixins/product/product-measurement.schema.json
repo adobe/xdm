@@ -17,8 +17,8 @@
   "definitions": {
     "product-measurement": {
       "properties": {
-        "xdm:size": {
-          "title": "Size",
+        "xdm:productSize": {
+          "title": "Product Size",
           "type": "number",
           "description": "Standard product size for the product."
         },

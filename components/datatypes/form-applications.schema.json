@@ -20,7 +20,7 @@
   "definitions": {
     "form-application": {
       "type": "object",
-      "properties": {        
+      "properties": {
         "xdm:formApplicationApproved": {
           "title": "Form Application Approved",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

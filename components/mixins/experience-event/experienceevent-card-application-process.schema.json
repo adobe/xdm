@@ -14,24 +14,28 @@
   "meta:industry": ["financial_services"],
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Card comparison details such as count, addition, removal, and view.",
-  "properties": {
-    "xdm:personalFinances": {
-      "type": "object",
+  "definitions": {
+    "card-application-process": {
       "properties": {
-        "xdm:cardApplicationProcess": {
-          "xdm:cardApplicationComparisons": {
-            "title": "Card Comparisons",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-            "description": "Extension of comparison data type."
-          },
-          "xdm:cardApplicationSteps": {
-            "title": "Card Application Steps",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
-            "description": "Extension of form application data type."
+        "xdm:personalFinances": {
+          "type": "object",
+          "properties": {
+            "xdm:cardApplicationProcess": {
+              "xdm:cardApplicationComparisons": {
+                "title": "Card Comparisons",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                "description": "Extension of comparison data type."
+              },
+              "xdm:cardApplicationSteps": {
+                "title": "Card Application Steps",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
+                "description": "Extension of form application data type."
+              }
+            }
           }
         }
-      }
+      },
+      "meta:status": "experimental"
     }
-  },
-  "meta:status": "experimental"
+  }
 }

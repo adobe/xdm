@@ -21,9 +21,9 @@
     "manufacturing"
   ],
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
-  "properties": {
-    "definitions": {
-      "comparison": {
+  "definitions": {
+    "comparison": {
+      "properties": {
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",
           "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",

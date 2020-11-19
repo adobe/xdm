@@ -13,6 +13,7 @@
   "description": "Financial account details, such as owners, balances, and types.",
   "definitions": {
     "financialAccount": {
+      "type":"object",
       "properties": {
         "xdm:accountID": {
           "title": "Account ID",

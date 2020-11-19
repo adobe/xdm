@@ -13,6 +13,7 @@
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
   "definitions": {
     "transaction": {
+      "type":"object",
       "properties": {
         "xdm:transactionId": {
           "title": "Transaction ID",

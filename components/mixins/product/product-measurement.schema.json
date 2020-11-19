@@ -7,13 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/product-measurement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product Unit Of Measure",
+  "title": "Product Measurement",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product catelog.",
+  "description": "This mixin is used to capture properties related to product measurements.",
   "definitions": {
     "product-measurement": {
       "properties": {

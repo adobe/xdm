@@ -12,7 +12,7 @@
   "description": "Details related to mobile application generated interactions. Mobile Application refers to a mobile software experience that can be installed, run, closed, or uninstalled by an end user. Details additionally include session and application lifecycle metrics reported by the application at the time of the experience.",
   "meta:extensible": true,
   "definitions": {
-    "mobileApplication": {
+    "mobile-application": {
       "properties": {
         "xdm:ID": {
           "title": "Application identifier",

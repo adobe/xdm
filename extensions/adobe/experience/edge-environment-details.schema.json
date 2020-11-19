@@ -1,0 +1,94 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/mixins/edge-environment-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Edge Environment Details",
+  "type": "object",
+  "description": "Information automatically collected and added to each experience event received by the AEP Edge orchestration service as part of its XDM requenst enhancing feature.",
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "placeContext-geo": {
+      "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
+            "xdm:geo": {
+              "title": "Geo",
+              "$ref": "https://ns.adobe.com/xdm/context/placecontext#/definitions/geo",
+              "description": "The geographic location where the experience was delivered based on the IP address from the client request."
+            }
+          }
+        }
+      }
+    },
+    "environment-ipV4": {
+      "properties": {
+        "xdm:environment": {
+          "type": "object",
+          "properties": {
+            "xdm:ipV4": {
+              "title": "IPv4",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV4",
+              "description": "The Internet Protocol address version 4 from the client request."
+            }
+          }
+        }
+      }
+    },
+    "environment-ipV6": {
+      "properties": {
+        "xdm:environment": {
+          "type": "object",
+          "properties": {
+            "xdm:ipV6": {
+              "title": "IPv6",
+              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV6",
+              "description": "The Internet Protocol address version 6 from the client request."
+            }
+          }
+        }
+      }
+    },
+    "environment-browserDetails-userAgent": {
+      "properties": {
+        "xdm:environment": {
+          "type": "object",
+          "properties": {
+            "xdm:browserDetails": {
+              "type": "object",
+              "xdm:userAgent": {
+                "title": "User agent",
+                "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/userAgent",
+                "description": "The HTTP user-agent string from the client request."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/placeContext-geo"
+    },
+    {
+      "$ref": "#/definitions/environment-ipV4"
+    },
+    {
+      "$ref": "#/definitions/environment-ipV6"
+    },
+    {
+      "$ref": "#/definitions/environment-browserDetails-userAgent"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -10,7 +10,7 @@
   "title": "Visit WebPage",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "visitwebpage",  
+  "meta:conditionalValue": "web.webpagedetails.pageViews",  
   "meta:intendedToExtend": [
   "https://ns.adobe.com/xdm/context/experienceevent"
   ],

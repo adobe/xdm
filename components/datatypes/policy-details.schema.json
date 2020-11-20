@@ -14,7 +14,6 @@
   "description": "Details for the insurance policy such as type, start date, and ID.",
   "definitions": {
     "policy-details": {
-      "type": "object",
       "properties": {
         "xdm:policyEndDate": {
           "title": "Policy End Date",

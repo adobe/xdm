@@ -20,12 +20,12 @@
   "definitions": {
     "profile": {
       "properties": {
-	    "xdm:personID": {
-		  "title": "Person Identifier",
-		  "type": "string",
-		  "description": "A unique identifier for the person or profile fragment."
-		}
-	  }
+        "xdm:personID": {
+          "title": "Person Identifier",
+          "type": "string",
+          "description": "A unique identifier for the person or profile fragment."
+        }
+      }
     }
   },
   "allOf": [

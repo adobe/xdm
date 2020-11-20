@@ -25,7 +25,7 @@
   ],
   "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
   "definitions": {
-    "toolUsage": {      
+    "toolUsage": {
       "properties": {
         "xdm:toolUsageCancelled": {
           "title": "Tool Usage Cancelled",

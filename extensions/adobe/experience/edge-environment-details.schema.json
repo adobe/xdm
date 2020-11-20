@@ -20,7 +20,7 @@
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "https://ns.adobe.com/xdm/context/placecontext#/definitions/geo",
+              "$ref": "https://ns.adobe.com/xdm/common/geo",
               "description": "The geographic location where the experience was delivered based on the IP address from the client request."
             }
           }
@@ -34,8 +34,9 @@
           "properties": {
             "xdm:ipV4": {
               "title": "IPv4",
-              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV4",
-              "description": "The Internet Protocol address version 4 from the client request."
+              "type": "string",
+              "format": "ipv4",
+              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
             }
           }
         }
@@ -48,8 +49,9 @@
           "properties": {
             "xdm:ipV6": {
               "title": "IPv6",
-              "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipV6",
-              "description": "The Internet Protocol address version 6 from the client request."
+              "type": "string",
+              "format": "ipv6",
+              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
             }
           }
         }
@@ -64,7 +66,7 @@
               "type": "object",
               "xdm:userAgent": {
                 "title": "User agent",
-                "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/userAgent",
+                "type": "string",
                 "description": "The HTTP user-agent string from the client request."
               }
             }

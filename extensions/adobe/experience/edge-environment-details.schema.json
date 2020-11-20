@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Edge Environment Details",
   "type": "object",
-  "description": "Information automatically collected and added to each experience event received by the AEP Edge orchestration service as part of its XDM requenst enhancing feature.",
+  "description": "Information automatically collected by the AEP Edge Orchestration Service to enrich each received XDM Experience event.",
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {

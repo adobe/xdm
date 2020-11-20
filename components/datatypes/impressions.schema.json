@@ -26,7 +26,6 @@
   "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
   "definitions": {
     "impression": {
-      "type": "object",
       "properties": {
         "xdm:impressionDisplays": {
           "title": "Impression Displays",

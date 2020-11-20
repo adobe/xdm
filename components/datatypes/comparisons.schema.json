@@ -23,7 +23,6 @@
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
   "definitions": {
     "comparison": {
-      "type": "object",
       "properties": {
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",

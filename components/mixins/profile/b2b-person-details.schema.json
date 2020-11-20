@@ -16,11 +16,6 @@
   "definitions": {
     "b2b-person-segment-traits": {
       "properties": {
-        "xdm:personID": {
-          "title": "Person ID",
-          "description": "Unique identifier of B2B person.",
-          "type": "string"
-        },
         "xdm:personType": {
           "title": "Person Type",
           "description": "Type of the B2B person.",
@@ -49,36 +44,6 @@
         "xdm:leadOrganization": {
           "title": "Lead Organization Properties",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-        },
-        "xdm:anonymousHostname": {
-          "title": "Anonymous Hostname",
-          "description": "Anonymous hostname.",
-          "type": "string"
-        },
-        "xdm:inferredAddress": {
-          "title": "Inferred Address",
-          "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
-        },
-        "xdm:inferredCompany": {
-          "title": "Inferred Company",
-          "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
-        },
-        "xdm:inferredCompanyStatus": {
-          "title": "Inferred Company Status",
-          "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
-        },
-        "xdm:inferredMetropolitanArea": {
-          "title": "Inferred Metropolitan Area",
-          "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
-        },
-        "xdm:inferredPhoneAreaCode": {
-          "title": "Inferred Phone Area Code",
-          "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
         }
       }
     },
@@ -173,6 +138,9 @@
     {
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/profile-inferred-person"	
+    },	
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }

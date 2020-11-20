@@ -23,7 +23,12 @@
           "title": "ExperienceEvent merge ID",
           "type": "string",
           "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion."
-        }
+        },
+        "xdm:eventID": {
+          "title": "Event ID",
+          "type": "string",
+          "description": "A unique idenfier for the event."
+        }		
       }
     }
   },

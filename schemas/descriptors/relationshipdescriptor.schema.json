@@ -26,7 +26,17 @@
         },
         "xdm:destinationProperty": {
           "title": "Destination Property",
-          "type": ["string", "array"],
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
           "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
         },
         "xdm:destinationItem": {

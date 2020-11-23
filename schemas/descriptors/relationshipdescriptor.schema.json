@@ -18,22 +18,6 @@
   "definitions": {
     "relationshipdescriptor": {
       "properties": {
-        "xdm:sourceProperty": {
-          "title": "Source Property",
-          "type": "string",
-          "oneOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            }
-          ],
-          "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
-        },
         "xdm:destinationSchema": {
           "title": "Destination Schema",
           "type": "string",

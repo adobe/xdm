@@ -1,0 +1,116 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-sendtimeoptimization",
+  "title": "Intelligent Services JourneyAI Send Time Optimization",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "This mixin contains JourneyAI Send Time Optimization scores, which provides the time preferences for message deliveries.",
+  "definitions": {
+    "journeyai-send-time-optimization": {
+      "properties": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
+          "title": "journeyAI",
+          "description": "JourneyAI intelligent services provides various insights about message deliveries along customer's journey",
+          "type": "object",
+          "isRequired": false,
+          "properties": {
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeOptimization": {
+              "title": "sendTimeOptimization",
+              "description": "Journey AI Send Time Optimization scores provide the time preferences for message deliveries. Higher score means a better outcome is expected, if a message sent at the corresponding hour.",
+              "type": "object",
+              "isRequired": false,
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeOptimization": {
+                  "title": "emailSendTimeOptimization",
+                  "description": "Send Time Optimization scores for email channel",
+                  "type": "object",
+                  "isRequired": false,
+                  "properties": {
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeScoreForClick": {
+                      "title": "emailSendTimeScoreForClick",
+                      "description": "scores for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer clicking on an email's link if it's sent at that hour",
+                      "type": "array",
+                      "isRequired": false,
+                      "minItems": 168,
+                      "maxItems": 168,
+                      "items": {
+                        "type": "number",
+                        "meta:xdmType": "number"
+                      },
+                      "meta:xdmType": "array"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeScoreForOpen": {
+                      "title": "emailSendTimeScoreForOpen",
+                      "description": "scores for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer opening an email if it's sent at that hour",
+                      "type": "array",
+                      "isRequired": false,
+                      "minItems": 168,
+                      "maxItems": 168,
+                      "items": {
+                        "type": "number",
+                        "meta:xdmType": "number"
+                      },
+                      "meta:xdmType": "array"
+                    }
+                  },
+                  "meta:xdmType": "object"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/pushSendTimeOptimization": {
+                  "title": "pushSendTimeOptimization",
+                  "description": "Send Time Optimization scores for push channel",
+                  "type": "object",
+                  "isRequired": false,
+                  "properties": {
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/pushSendTimeScoreForOpen": {
+                      "title": "pushSendTimeScoreForOpen",
+                      "description": "score for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of the customer opening a push notification if it's sent at that hour",
+                      "type": "array",
+                      "isRequired": false,
+                      "minItems": 168,
+                      "maxItems": 168,
+                      "items": {
+                        "type": "number",
+                        "meta:xdmType": "number"
+                      },
+                      "meta:xdmType": "array"
+                    }
+                  },
+                  "meta:xdmType": "object"
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeOptimizationScoreInfo": {
+                  "title": "sendTimeOptimizationScoreInfo",
+                  "description": "model version and score date as a concatenated string",
+                  "type": "string",
+                  "isRequired": false,
+                  "meta:xdmType": "string"
+                }
+              },
+              "meta:xdmType": "object"
+            }
+          },
+          "meta:xdmType": "object"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile",
+      "type": "object",
+      "meta:xdmType": "object"
+    },
+    {
+      "$ref": "#/definitions/journeyai-send-time-optimization",
+      "type": "object",
+      "meta:xdmType": "object"
+    }
+  ]
+}

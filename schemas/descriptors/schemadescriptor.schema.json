@@ -35,7 +35,6 @@
         },
         "xdm:sourceProperty": {
           "title": "Source Property",
-          "type": "string",
           "oneOf": [
             {
               "type": "string"

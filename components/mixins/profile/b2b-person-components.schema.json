@@ -58,7 +58,14 @@
               "xdm:personSegmentTraits": {
                 "title": "Person Segmentation Attributes",
                 "description": "These attributes are required to build predicates for person segmentation.",
-                "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits"
+                "allOf": [
+                  {
+                    "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits"
+                  },
+                  {
+                    "$ref": "https://ns.adobe.com/xdm/mixins/profile-inferred-person#/definitions/profile-inferred-person"
+                  }
+                ]
               }
             }
           }

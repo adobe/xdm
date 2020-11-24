@@ -1,0 +1,13 @@
+{
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceProperty": [
+    "/identityPrivacyInfo",
+    "/identityPrivacyInfo/identityIABConsent/consentTimestamp"
+  ],
+  "xdm:sourceVersion": 1,
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/destination-namespace",
+  "xdm:destinationProperty": ["/destinationID", "/createTime"],
+  "xdm:destinationVersion": 1,
+  "version": "1"
+}

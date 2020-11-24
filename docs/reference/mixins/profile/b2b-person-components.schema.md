@@ -53,6 +53,7 @@ All items must be of the type:
 | `xdm:sourceConvertedAccountID`|  | Optional |
 | `xdm:sourceConvertedContactID`|  | Optional |
 | `xdm:sourceConvertedOpportunityID`|  | Optional |
+| `xdm:sourceExternalID`|  | Optional |
 | `xdm:sourcePersonID`|  | Optional |
 | `xdm:sourcePersonOwnerID`|  | Optional |
 | `xdm:workEmail`|  | Optional |
@@ -66,12 +67,25 @@ These attributes are required to build predicates for person segmentation.
 
 `xdm:personSegmentTraits`
 * is optional
-* type: reference
+* type: complex
 
 ##### xdm:personSegmentTraits Type
 
 
+**All** of the following *requirements* need to be fulfilled.
+
+
+#### Requirement 1
+
+
 * []() – `https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits`
+
+
+#### Requirement 2
+
+
+* []() – `https://ns.adobe.com/xdm/mixins/profile-inferred-person#/definitions/profile-inferred-person`
+
 
 
 
@@ -149,6 +163,26 @@ Source converted opportunity ID.
 * type: reference
 
 ##### xdm:sourceConvertedOpportunityID Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
+
+
+#### xdm:sourceExternalID
+##### Source External ID
+
+External source unique identifier at the source.
+
+`xdm:sourceExternalID`
+* is optional
+* type: reference
+
+##### xdm:sourceExternalID Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`

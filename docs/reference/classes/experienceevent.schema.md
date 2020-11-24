@@ -22,6 +22,90 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "AVID": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -289,90 +373,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     },
     "xdm:federated": {
       "xdm:value": 0
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "AVID": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
     }
   }
 }
@@ -877,6 +877,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | **Required** | [Time-series Schema](../behaviors/time-series.schema.md#id) |
+| [xdm:eventID](#xdmeventid) | `string` | Optional | XDM ExperienceEvent (this schema) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | XDM ExperienceEvent (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
@@ -898,6 +899,26 @@ A unique identifier for the time-series event.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:eventID
+### ExperienceEvent ID
+
+An ID to uniquely identify an event.
+
+`xdm:eventID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:eventID Type
+
+
+`string`
 
 
 
@@ -970,6 +991,7 @@ The primary event type for this time-series record.
 | `message.tracking` | Message Tracking |
 | `pushTracking.applicationOpened` | Push Tracking Application Opened |
 | `pushTracking.customAction` | Push Tracking Custom Action |
+| `listOpearation.removeFromList` | List Operation Remove From List |
 
 
 

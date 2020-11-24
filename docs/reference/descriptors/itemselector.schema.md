@@ -24,13 +24,13 @@ Matching may be done based on array index, `@id`, `@type`, or schema URI.
 
 ```json
 {
-  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+  "xdm:type": "https://ns.adobe.com/experience/mcid"
 }
 ```
 
 ```json
 {
-  "xdm:type": "https://ns.adobe.com/experience/mcid"
+  "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
 }
 ```
 

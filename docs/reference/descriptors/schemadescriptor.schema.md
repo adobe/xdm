@@ -38,7 +38,7 @@ A descriptor that contains metadata about an XDM schema, including an optional p
 | [@id](#id) | `string` | Optional | Schema Descriptor (this schema) |
 | [@type](#type) | `string` | Optional | Schema Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | Schema Descriptor (this schema) |
-| [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | Schema Descriptor (this schema) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | Schema Descriptor (this schema) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | Schema Descriptor (this schema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | Schema Descriptor (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -131,13 +131,33 @@ When present, the property of the source schema to which this descriptor applies
 
 `xdm:sourceProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in this schema
 
 ### xdm:sourceProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 

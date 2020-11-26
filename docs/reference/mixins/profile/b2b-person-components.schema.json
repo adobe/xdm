@@ -65,14 +65,68 @@
                             "xdm:personSegmentTraits": {
                                 "title": "Person Segmentation Attributes",
                                 "description": "These attributes are required to build predicates for person segmentation.",
-                                "allOf": [
-                                    {
-                                        "$ref": "https://ns.adobe.com/xdm/mixins/b2b-person-details#/definitions/b2b-person-segment-traits"
+                                "type": "object",
+                                "properties": {
+                                    "xdm:personType": {
+                                        "title": "Person Type",
+                                        "description": "Type of the B2B person.",
+                                        "type": "string"
                                     },
-                                    {
-                                        "$ref": "https://ns.adobe.com/xdm/mixins/profile-inferred-person#/definitions/profile-inferred-person"
+                                    "xdm:personStatus": {
+                                        "title": "Person Status",
+                                        "description": "Field recording the current marketing/sales status of the Person.",
+                                        "type": "string"
+                                    },
+                                    "xdm:personSource": {
+                                        "title": "Person Source",
+                                        "description": "Source from where the information regarding the person was received.",
+                                        "type": "string"
+                                    },
+                                    "xdm:personScore": {
+                                        "title": "Person Score",
+                                        "description": "A Score generated for a person by the CRM system.",
+                                        "type": "number"
+                                    },
+                                    "xdm:personGroupID": {
+                                        "title": "Person Group ID",
+                                        "description": "Group identifier for the person.",
+                                        "type": "string"
+                                    },
+                                    "xdm:leadOrganization": {
+                                        "title": "Lead Organization Properties",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+                                    },
+                                    "xdm:anonymousHostname": {
+                                        "title": "Anonymous Hostname",
+                                        "description": "Anonymous hostname.",
+                                        "type": "string"
+                                    },
+                                    "xdm:inferredAddress": {
+                                        "title": "Inferred Address",
+                                        "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                                        "$ref": "https://ns.adobe.com/xdm/common/address"
+                                    },
+                                    "xdm:inferredCompany": {
+                                        "title": "Inferred Company",
+                                        "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                                        "type": "string"
+                                    },
+                                    "xdm:inferredCompanyStatus": {
+                                        "title": "Inferred Company Status",
+                                        "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                                        "type": "string"
+                                    },
+                                    "xdm:inferredMetropolitanArea": {
+                                        "title": "Inferred Metropolitan Area",
+                                        "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
+                                        "type": "string"
+                                    },
+                                    "xdm:inferredPhoneAreaCode": {
+                                        "title": "Inferred Phone Area Code",
+                                        "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
+                                        "type": "string"
                                     }
-                                ]
+                                }
                             }
                         }
                     }

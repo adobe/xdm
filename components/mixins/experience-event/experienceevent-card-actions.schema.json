@@ -16,7 +16,6 @@
   "description": "Card action details such as card type as well as activation and lock status.",
   "definitions": {
     "card-actions": {
-      "type": "object",
       "properties": {
         "xdm:personalFinances": {
           "properties": {
@@ -58,11 +57,13 @@
               },
               "xdm:cardOrderType": {
                 "title": "Card Order Type",
+                "type": "string",
                 "enum": ["new", "lost", "stolen", "never received", "damaged"],
                 "description": "Tracks the type of card order associated with a card order event."
               },
               "xdm:cardType": {
                 "title": "Card Type",
+                "type": "string",
                 "enum": [
                   "credit",
                   "debit",

@@ -52,6 +52,7 @@ Adobe Advertising Cloud Creative Management Platform Event extension.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/adcloud/creative](#httpsnsadobecomexperienceadcloudcreative) | Advertising Creative Management Platform Details | Optional | Adobe Advertising Cloud Creative Management Platform Event Extension (this schema) |
+| [xdm:eventID](#xdmeventid) | `string` | Optional | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventid) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventmergeid) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -69,6 +70,26 @@ Advertising Creative Management Platform Details.
 
 
 * [Advertising Creative Management Platform Details](creative.schema.md) – `https://ns.adobe.com/experience/adcloud/creative`
+
+
+
+
+
+## xdm:eventID
+### ExperienceEvent ID
+
+An ID to uniquely identify an event.
+
+`xdm:eventID`
+* is optional
+* type: `string`
+* defined in [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventid)
+
+### xdm:eventID Type
+
+
+`string`
+
 
 
 

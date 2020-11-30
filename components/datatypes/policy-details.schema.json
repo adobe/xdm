@@ -17,12 +17,12 @@
         "xdm:policyType": {
           "title": "Policy Type",
           "type": "string",
-          "enum": ["home","automobile","renter","boat"],
-          "meta:enum":{
-            "home":"Home",
-            "automobile":"Automobile",
-            "renter":"Renter",
-            "boat":"Boat"
+          "enum": ["home", "automobile", "renter", "boat"],
+          "meta:enum": {
+            "home": "Home",
+            "automobile": "Automobile",
+            "renter": "Renter",
+            "boat": "Boat"
           },
           "description": "Type of insurance policy, such as home, automobile, renter, or boat."
         },
@@ -49,8 +49,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-  }],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    }
+  ],
   "meta:status": "experimental"
 }

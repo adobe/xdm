@@ -265,8 +265,12 @@
     }
   },
   "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/context/profile-person-details#/properties/xdm:person/properties/xdm:name/properties/xdm:firstName"},
-    { "$ref": "https://ns.adobe.com/xdm/context/profile-person-details#/properties/xdm:person/properties/xdm:name/properties/xdm:lastName"}
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details#/properties/xdm:person/properties/xdm:name/properties/xdm:firstName"
+    },
+    { 
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details#/properties/xdm:person/properties/xdm:name/properties/xdm:lastName"
+    }
   ],
   "meta:status": "experimental"
 }

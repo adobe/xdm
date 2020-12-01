@@ -20,43 +20,45 @@
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
     "claim-process": {
-      "type": "object",
       "properties": {
         "xdm:disputes": {
           "type": "object",
           "properties": {
             "xdm:claimProcess": {
               "type": "object",
-              "xdm:claimID": {
-                "title": "Claim ID",
-                "type": "string",
-                "description": "ID of the claim being submitted."
-              },
-              "xdm:claimStartDate": {
-                "title": "Claim Start Date",
-                "type": "string",
-                "format": "date-time",
-                "description": "Date the claim was successfully submitted."
-              },
-              "xdm:claimStatus": {
-                "title": "Claim Status",
-                "enum": ["initiated", "in progress", "approved", "declined"],
-                "description": "Captures the status of the claim for any given point in the application process."
-              },
-              "xdm:claimSteps": {
-                "title": "Claim Steps",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
-                "description": "Extension of toolUsage data type."
-              },
-              "xdm:claimType": {
-                "title": "Claim Type",
-                "type": "string",
-                "description": "Type of claim submitted."
-              },
-              "xdm:policy": {
-                "title": "Policy",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/policy",
-                "description": "Extension of Policy data type."
+              "properties": {
+                "xdm:claimID": {
+                  "title": "Claim ID",
+                  "type": "string",
+                  "description": "ID of the claim being submitted."
+                },
+                "xdm:claimStartDate": {
+                  "title": "Claim Start Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date the claim was successfully submitted."
+                },
+                "xdm:claimStatus": {
+                  "title": "Claim Status",
+                  "type": "string",
+                  "enum": ["initiated", "in progress", "approved", "declined"],
+                  "description": "Captures the status of the claim for any given point in the application process."
+                },
+                "xdm:claimSteps": {
+                  "title": "Claim Steps",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+                  "description": "Extension of toolUsage data type."
+                },
+                "xdm:claimType": {
+                  "title": "Claim Type",
+                  "type": "string",
+                  "description": "Type of claim submitted."
+                },
+                "xdm:policy": {
+                  "title": "Policy",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/policy",
+                  "description": "Extension of Policy data type."
+                }
               }
             }
           }

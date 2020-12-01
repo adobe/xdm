@@ -28,72 +28,73 @@
   "description": "Visitor contact details such as chat start and end, as well as click to email, text, and call counts. ",
   "definitions": {
     "contact-request-details": {
-      "type": "object",
       "properties": {
         "xdm:customerFeedback": {
           "type": "object",
           "properties": {
             "xdm:contactRequestDetails": {
               "type": "object",
-              "xdm:chatDeclined": {
-                "title": "Chat Declined",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Captured when an offered chat is declined by a visitor."
-              },
-              "xdm:chatEnd": {
-                "title": "Chat End",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Captured when a chat is ended with a visitor."
-              },
-              "xdm:chatOffered": {
-                "title": "Chat Offered",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Captures the number of times a chat session has been offered to a visitor."
-              },
-              "xdm:chatSessionId": {
-                "title": "Chat Session ID",
-                "type": "string",
-                "description": "Captures the chat session identifier, if available."
-              },
-              "xdm:chatStart": {
-                "title": "Chat Start",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Captured when a chat is initiated with a visitor."
-              },
-              "xdm:clickToCall": {
-                "title": "Click to Call",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Visitor initiates a call to the client from a telephone number link on the site/app."
-              },
-              "xdm:clickToDirectMessage": {
-                "title": "Click to Direct Message",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app."
-              },
-              "xdm:clickToEmail": {
-                "title": "Click to Email",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Visitor initiates an email to the client from an email link on the site/app."
-              },
-              "xdm:clickToText": {
-                "title": "Click to Text",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app."
-              },
-              "xdm:contactRequestSubject": {
-                "title": "Contact Request Subject",
-                "type": "string",
-                "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc."
-              },
-              "xdm:callBackNumber": {
-                "title": "Call Back Contact Information",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/phonenumber",
-                "description": "The contact phone number the visitor uses for responses to contact requests."
-              },
-              "xdm:replyToEmailAddress": {
-                "title": "Reply to Email Address",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/emailaddress",
-                "description": "The email address the visitor uses for responses to contact requests."
+              "properties": {
+                "xdm:chatDeclined": {
+                  "title": "Chat Declined",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Captured when an offered chat is declined by a visitor."
+                },
+                "xdm:chatEnd": {
+                  "title": "Chat End",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Captured when a chat is ended with a visitor."
+                },
+                "xdm:chatOffered": {
+                  "title": "Chat Offered",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Captures the number of times a chat session has been offered to a visitor."
+                },
+                "xdm:chatSessionId": {
+                  "title": "Chat Session ID",
+                  "type": "string",
+                  "description": "Captures the chat session identifier, if available."
+                },
+                "xdm:chatStart": {
+                  "title": "Chat Start",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Captured when a chat is initiated with a visitor."
+                },
+                "xdm:clickToCall": {
+                  "title": "Click to Call",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Visitor initiates a call to the client from a telephone number link on the site/app."
+                },
+                "xdm:clickToDirectMessage": {
+                  "title": "Click to Direct Message",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app."
+                },
+                "xdm:clickToEmail": {
+                  "title": "Click to Email",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Visitor initiates an email to the client from an email link on the site/app."
+                },
+                "xdm:clickToText": {
+                  "title": "Click to Text",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app."
+                },
+                "xdm:contactRequestSubject": {
+                  "title": "Contact Request Subject",
+                  "type": "string",
+                  "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc."
+                },
+                "xdm:callBackNumber": {
+                  "title": "Call Back Contact Information",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/phonenumber",
+                  "description": "The contact phone number the visitor uses for responses to contact requests."
+                },
+                "xdm:replyToEmailAddress": {
+                  "title": "Reply to Email Address",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/emailaddress",
+                  "description": "The email address the visitor uses for responses to contact requests."
+                }
               }
             }
           }

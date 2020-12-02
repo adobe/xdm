@@ -122,6 +122,7 @@ An XDM Individual Profile forms a singular representation of the attributes and 
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../datatypes/auditable.schema.md#repomodifydate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Individual Profile (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../datatypes/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../datatypes/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -233,6 +234,26 @@ The last dataset files in Catalog which has modified the record. At creation tim
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:personID
+### Person ID
+
+Unique identifier of Person/Profile fragment.
+
+`xdm:personID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:personID Type
+
+
+`string`
 
 
 

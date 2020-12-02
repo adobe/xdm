@@ -31,7 +31,7 @@
           "title": "Browser details",
           "$ref": "https://ns.adobe.com/xdm/context/browserdetails",
           "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
-		  "meta:status": "deprecated"
+          "meta:status": "deprecated"
         },
         "xdm:operatingSystem": {
           "title": "Operating system",

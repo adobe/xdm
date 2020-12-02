@@ -24,11 +24,9 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
-  "xdm:title": {
-    "en_us": "friendly title for browser details"
-  },
   "xdm:description": {
-    "en_us": "friendly description for browser details"
+    "en_us": "friendly description for browser details",
+    "fr_ca": "description conviviale pour les détails du navigateur"
   }
 }
 ```
@@ -52,9 +50,11 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
+  "xdm:title": {
+    "en_us": "friendly title for browser details"
+  },
   "xdm:description": {
-    "en_us": "friendly description for browser details",
-    "fr_ca": "description conviviale pour les détails du navigateur"
+    "en_us": "friendly description for browser details"
   }
 }
 ```
@@ -70,7 +70,7 @@ Allows to modify the "title" and "description" values of the core library schema
 | [xdm:description](#xdmdescription) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:note](#xdmnote) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
-| [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
 | [xdm:title](#xdmtitle) | `object` | Optional | Friendly Name Descriptor (this schema) |
@@ -228,13 +228,33 @@ When present, the property of the source schema to which this descriptor applies
 
 `xdm:sourceProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 

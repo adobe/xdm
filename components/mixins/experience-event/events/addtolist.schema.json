@@ -5,21 +5,21 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/removefromlist",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/addtolist",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Remove From List",
+  "title": "Visit WebPage",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "listOpearation.removeFromList",  
+  "meta:conditionalValue": "listoperation.addToList",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Remove from list.",
+  "description": "Use for information regarding list operation add to list events.",
   "definitions": {
-    "removefromlist": {
-      "properties":{
+    "addtolist": {
+      "properties": {        
         "xdm:listOperations":{
-          "title": "List Opearations",
+          "title": "List Operations",
           "type":"object",
           "properties": {
             "xdm:listID": {
@@ -33,13 +33,30 @@
               "description": "Name of the source this request came from."
             }
           }
+        },
+        "xdm:marketing": {
+          "title": "Marketing",
+          "type": "object",
+          "description": "The information related to marketing activities that are active with the touchpoint.",
+          "properties": {
+            "xdm:campaignName": {
+              "title": "Campaign name",
+              "type": "string",
+              "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
+            },
+            "xdm:campaignType": {
+              "title": "Campaign Type",
+              "type": "string",
+              "description": "Name of the campaign type where multiple campaigns are grouped together."
+            }
+          }
         }
       }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/removefromlist"
+      "$ref": "#/definitions/addtolist"
     }
   ],
   "meta:status": "experimental"

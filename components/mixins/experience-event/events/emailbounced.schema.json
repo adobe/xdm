@@ -1,0 +1,86 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/emailbounced",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Visit WebPage",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "emailinteraction.emailBounced",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use for information regarding email interaction email bounced events.",
+  "definitions": {
+    "emailbounced": {
+      "properties": {
+        "xdm:emailInteraction": {
+          "title": "Email Interaction",
+          "type": "object",
+          "properties": {
+            "xdm:emailAssetName": {
+              "title": "Email Asset Name",
+              "type": "string",
+              "description": "Friendly name for email asset."
+            },
+            "xdm:stepID": {
+              "title": "Step ID",
+              "type": "string",
+              "description": "Unique Identifier for Step."
+            },
+            "xdm:choiceNumber": {
+              "title": "Choice Number",
+              "type": "string",
+              "description": "."
+            },
+            "xdm:failureReasonCategory": {
+              "title": "Failure Reason Category",
+              "type": "string",
+              "description": "Category in which this failure reason belongs."
+            },
+            "xdm:failureReasonMessage": {
+              "title": "Failure Reason Message",
+              "type": "string",
+              "description": "Failure reason description message."
+            },
+            "xdm:failureReasonSubcategory": {
+              "title": "Failure Reason Subcategory",
+              "type": "string",
+              "description": "Subcategory this failure reason belongs to."
+            },
+            "xdm:email": {
+              "title": "email",
+              "type": "string",
+              "description": "."
+            },
+            "xdm:testVariant": {
+              "title": "Test Variant",
+              "type": "string",
+              "description": "."
+            },
+            "xdm:campaignRunID": {
+              "title": "Campaign Run ID",
+              "type": "string",
+              "description": "."
+            },
+            "xdm:hasPredictive": {
+              "title": "Has Predictive",
+              "type": "boolean",
+              "description": "."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/emailbounced"
+    }
+  ],
+  "meta:status": "experimental"
+}

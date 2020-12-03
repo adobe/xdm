@@ -7,8 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/consents-and-preferences",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Privacy/Personalization/Marketing Preferences (Consent)",
-  "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+  "title": "Consent for Privacy, Personalization and Marketing Preferences",
+  "description": "This mixin captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -19,8 +19,8 @@
       "type": "string",
       "enum": ["y", "n", "p", "u", "LI", "CT", "CP", "VI", "PI"],
       "meta:enum": {
-        "y": "Yes",
-        "n": "No",
+        "y": "Yes (opt-in)",
+        "n": "No (opt-out)",
         "p": "Pending verification",
         "u": "Unknown",
         "LI": "Legitimate Interest",
@@ -32,7 +32,7 @@
     },
     "timestamp": {
       "title": "Preference timestamp",
-      "description": "Time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+      "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
       "type": "string",
       "format": "date-time"
     },

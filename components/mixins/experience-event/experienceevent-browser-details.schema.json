@@ -20,9 +20,11 @@
           "title": "Environment Browser",
           "type": "object",
           "properties": {
-            "title": "Browser details",
-            "$ref": "https://ns.adobe.com/xdm/context/browserdetails",
-            "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language."
+            "xdm:browserDetails": {
+			  "title": "Browser details",
+              "$ref": "https://ns.adobe.com/xdm/context/browserdetails",
+              "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language."
+			}
           }
         }
       }

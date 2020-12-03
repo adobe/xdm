@@ -1,13 +1,17 @@
 {
-  "xdm:name": "Chrome",
-  "xdm:vendor": "Google",
-  "xdm:version": "63.0.3239",
-  "xdm:acceptLanguage": "en",
-  "xdm:cookiesEnabled": true,
-  "xdm:javaScriptEnabled": true,
-  "xdm:javaScriptVersion": "1.8.5",
-  "xdm:javaEnabled": true,
-  "xdm:javaVersion": "Java SE 8",
-  "xdm:viewportHeight": 900,
-  "xdm:viewportWidth": 1680
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    }
+  }
 }

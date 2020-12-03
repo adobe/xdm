@@ -74,5 +74,6 @@
     {
       "$ref": "#/definitions/journeyai-engagement-scores"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

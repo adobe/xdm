@@ -14,9 +14,9 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent-application",
-    "https://ns.adobe.com/xdm/context/experienceevent-environment",
-    "https://ns.adobe.com/xdm/context/experienceevent-device"
+    "https://ns.adobe.com/xdm/mixins/experienceevent-application",
+    "https://ns.adobe.com/xdm/mixins/experienceevent-environment",
+    "https://ns.adobe.com/xdm/mixins/experienceevent-device"
   ],
   "definitions": {
     "mobile-lifecycle": {
@@ -25,13 +25,13 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
+      "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-application"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment"
+      "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-device"
+      "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-device"
     },
     {
       "$ref": "#/definitions/mobile-lifecycle"

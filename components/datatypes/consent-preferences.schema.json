@@ -71,7 +71,7 @@
           "$ref": "#/definitions/timestamp"
         },
         "xdm:reason": {
-          "title": "Opt out reason",
+          "title": "Opt-out reason",
           "type": "string",
           "description": "Reason for opting out",
           "maxLength": 16

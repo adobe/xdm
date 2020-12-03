@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/clickemail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit WebPage",
+  "title": "Click Email",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "emailinteraction.clickEmail",
@@ -29,12 +29,12 @@
             },
             "xdm:stepID": {
               "title": "StepID",
-              "type": "string",
+              "type": "integer",
               "description": "Step ID."
             },
             "xdm:choiceNumber": {
               "title": "Choice Number",
-              "type": "string",
+              "type": "integer",
               "description": "Choice Number."
             },
             "xdm:embededURL": {
@@ -49,11 +49,11 @@
             },
             "xdm:campaignRunID": {
               "title": "Campaign Run ID",
-              "type": "string",
+              "type": "integer",
               "description": "Campaign Run ID."
             },
-            "xdm:hasPredictive": {
-              "title": "Has Predictive",
+            "xdm:isPredictive": {
+              "title": "Is Predictive",
               "type": "boolean",
               "description": "."
             }

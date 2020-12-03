@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/campaignstatusinprogression",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit WebPage",
+  "title": "Campaign Status In Progression",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadoperation.campaignStatusInProgression",
@@ -46,14 +46,14 @@
                   "type": "string",
                   "description": "Reason."
                 },
-                "xdm:acquiredBy": {
-                  "title": "Acquired By",
-                  "type": "string",
+                "xdm:isAcquiredBy": {
+                  "title": "Is Acquired By",
+                  "type": "boolean",
                   "description": "Acquired By."
                 },
-                "xdm:success": {
-                  "title": "Success",
-                  "type": "string",
+                "xdm:isSuccess": {
+                  "title": "Is Success",
+                  "type": "boolean",
                   "description": "Success."
                 },
                 "xdm:campaignMemberID": {

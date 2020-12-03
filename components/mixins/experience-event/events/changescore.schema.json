@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/changescore",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit WebPage",
+  "title": "Change Score",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadoperation.changeScore",
@@ -38,12 +38,12 @@
                 },
                 "xdm:newValue": {
                   "title": "New Value",
-                  "type": "string",
+                  "type": "integer",
                   "description": "New Value."
                 },
                 "xdm:oldValue": {
                   "title": "Old Value",
-                  "type": "string",
+                  "type": "integer",
                   "description": "old Value."
                 },
                 "xdm:reason": {
@@ -53,22 +53,22 @@
                 },
                 "xdm:urgency": {
                   "title": "Urgency",
-                  "type": "string",
+                  "type": "number",
                   "description": "Urgency."
                 },
                 "xdm:priority": {
                   "title": "Priority",
-                  "type": "string",
+                  "type": "integer",
                   "description": "Priority."
                 },
                 "xdm:relativeScore": {
                   "title": "Relative Score",
-                  "type": "string",
+                  "type": "integer",
                   "description": "Relative score."
                 },
                 "xdm:relativeUrgency": {
                   "title": "Relative Urgency",
-                  "type": "string",
+                  "type": "integer",
                   "description": "Relative Urgency."
                 }
               }

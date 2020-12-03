@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/removefromopportunity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit WebPage",
+  "title": "Remove From Opportunity",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityevent.removeFromOpportunity",
@@ -29,7 +29,7 @@
             },
             "xdm:isPrimary": {
               "title": "Is Primary",
-              "type": "string",
+              "type": "boolean",
               "description": "Is primary."
             },
             "xdm:role": {

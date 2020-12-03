@@ -42,10 +42,9 @@
                   "type": "string",
                   "description": "Query Paramters used for the web page."
                 },
-                "xdm:personalizedURL": {
-                  "title": "Personalized URL",
-                  "type": "string",
-                  "format": "uri",
+                "xdm:isPersonalizedURL": {
+                  "title": "Is Personalized URL",
+                  "type": "boolean",
                   "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                 }
               }

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/updateopportunity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit WebPage",
+  "title": "Update Opportunity",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityevent.updateOpportunity",
@@ -39,12 +39,12 @@
             },
             "xdm:newValue": {
               "title": "New Value",
-              "type": "string",
+              "type": "integer",
               "description": "."
             },
             "xdm:oldValue": {
               "title": "Old Value",
-              "type": "string",
+              "type": "integer",
               "description": "."
             }
           }

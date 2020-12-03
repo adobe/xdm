@@ -16,7 +16,10 @@
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
-    "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
+    "https://ns.adobe.com/xdm/context/experienceevent-environment",
+	"https://ns.adobe.com/xdm/context/experienceevent-device",
+	"https://ns.adobe.com/xdm/context/experienceevent-browser-details",
+	"https://ns.adobe.com/xdm/context/experienceevent-place-of-context",
     "https://ns.adobe.com/xdm/context/experienceevent-marketing",
     "https://ns.adobe.com/xdm/context/experienceevent-media",
     "https://ns.adobe.com/xdm/context/experienceevent-search",
@@ -34,7 +37,16 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-device"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-browser-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-place-of-context"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"

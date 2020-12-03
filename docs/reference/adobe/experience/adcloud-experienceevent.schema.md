@@ -81,6 +81,7 @@ Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution 
 | [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
 | [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:eventID](#xdmeventid) | `string` | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventid) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventmergeid) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
 | [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
@@ -509,6 +510,26 @@ Information about the surrounding situation the event observation occurred in, s
 
 
 * [Environment](../../datatypes/environment.schema.md) – `https://ns.adobe.com/xdm/context/environment`
+
+
+
+
+
+## xdm:eventID
+### ExperienceEvent ID
+
+An ID to uniquely identify an event.
+
+`xdm:eventID`
+* is optional
+* type: `string`
+* defined in [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventid)
+
+### xdm:eventID Type
+
+
+`string`
+
 
 
 

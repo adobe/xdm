@@ -101,11 +101,6 @@
           "description": "User's Personalization Preferences",
           "type": "object",
           "properties": {
-            "xdm:any": {
-              "title": "General Personalization Preference",
-              "description": "Is permission granted to perform any type of personalization",
-              "$ref": "#/definitions/personalization-fields"
-            },
             "xdm:content": {
               "title": "Personalize Content",
               "description": "Allow personalization of the content on my site or in my apps",

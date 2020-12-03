@@ -66,5 +66,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/claim-process"
+    }
+  ],
   "meta:status": "experimental"
 }

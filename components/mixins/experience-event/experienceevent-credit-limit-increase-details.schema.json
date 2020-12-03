@@ -16,17 +16,18 @@
   "description": "Credit limit increase application details such as ID, type, approval, and status.",
   "definitions": {
     "credit-limit-increase-details": {
-      "type": "object",
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
             "xdm:creditLimitIncreaseDetails": {
               "type": "object",
-              "xdm:creditLimitIncrease": {
-                "title": "Credit Limit Increase",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
-                "description": "Extension of form application data type."
+              "properties": {
+                "xdm:creditLimitIncrease": {
+                  "title": "Credit Limit Increase",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
+                  "description": "Extension of form application data type."
+                }
               }
             }
           }
@@ -34,5 +35,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/credit-limit-increase-details"
+    }
+  ],
   "meta:status": "experimental"
 }

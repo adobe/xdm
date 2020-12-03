@@ -35,5 +35,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/dispute-steps"
+    }
+  ],
   "meta:status": "experimental"
 }

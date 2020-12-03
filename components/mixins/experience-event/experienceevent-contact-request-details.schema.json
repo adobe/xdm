@@ -80,8 +80,8 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
                   "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app."
                 },
-                "xdm:contactRequestSubject": {
-                  "title": "Contact Request Subject",
+                "xdm:Subject": {
+                  "title": "Subject",
                   "type": "string",
                   "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc."
                 },
@@ -102,5 +102,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/contact-request-details"
+    }
+  ],
   "meta:status": "experimental"
 }

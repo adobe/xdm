@@ -16,22 +16,23 @@
   "description": "Deposit details such as ID, type, and amount.",
   "definitions": {
     "deposit-details": {
-      "type": "object",
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
             "xdm:depositDetails": {
               "type": "object",
-              "xdm:deposit": {
-                "title": "Deposit",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                "description": "Extension of transaction data type."
-              },
-              "xdm:depositAccount": {
-                "title": "Deposit Account",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
-                "description": "Extension of financialAccount data type."
+              "properties": {
+                "xdm:deposit": {
+                  "title": "Deposit",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                  "description": "Extension of transaction data type."
+                },
+                "xdm:depositAccount": {
+                  "title": "Deposit Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
+                  "description": "Extension of financialAccount data type."
+                }
               }
             }
           }
@@ -39,5 +40,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/deposit-details"
+    }
+  ],
   "meta:status": "experimental"
 }

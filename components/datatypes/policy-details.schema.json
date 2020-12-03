@@ -51,5 +51,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/policy-details"
+    }
+  ],
   "meta:status": "experimental"
 }

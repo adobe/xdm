@@ -13,7 +13,7 @@
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-    "xdm:device": {
+  "xdm:device": {
     "xdm:typeID": "TypeIdentifier-111",
     "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
     "xdm:type": "mobile",

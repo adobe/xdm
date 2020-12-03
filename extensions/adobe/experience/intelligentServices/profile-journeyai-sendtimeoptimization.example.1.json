@@ -2,7 +2,7 @@
   "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
     "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeOptimization": {
       "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeOptimization": {
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeScoreForClick": [
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeScoreForClick": [
           0.025,
           0.025,
           0.025,
@@ -172,7 +172,7 @@
           0.025,
           0.025
         ],
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailSendTimeScoreForOpen": [
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeScoreForOpen": [
           0.198,
           0.198,
           0.198,
@@ -344,7 +344,7 @@
         ]
       },
       "https://ns.adobe.com/experience/intelligentServices/journeyAI/pushSendTimeOptimization": {
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI/pushSendTimeScoreForOpen": [
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeScoreForOpen": [
           0.022,
           0.022,
           0.022,

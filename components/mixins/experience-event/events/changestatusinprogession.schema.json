@@ -10,7 +10,7 @@
   "title": "Campaign Status In Progression",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadoperation.campaignStatusInProgression",
+  "meta:conditionalValue": "leadOperation.campaignStatusInProgression",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

@@ -10,7 +10,7 @@
   "title": "Open Email",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailinteraction.openEmail",
+  "meta:conditionalValue": "emailInteraction.openEmail",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

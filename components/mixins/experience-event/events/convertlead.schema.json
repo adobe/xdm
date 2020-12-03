@@ -10,7 +10,7 @@
   "title": "Convert Lead",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadoperation.convertLead",
+  "meta:conditionalValue": "leadOperation.convertLead",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

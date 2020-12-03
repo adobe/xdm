@@ -10,7 +10,7 @@
   "title": "Add To List",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "listoperation.addToList",
+  "meta:conditionalValue": "listOperation.addToList",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

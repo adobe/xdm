@@ -10,7 +10,7 @@
   "title": "Click Link",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "web.webinteraction.clickLink",  
+  "meta:conditionalValue": "web.webInteraction.clickLink",  
   "meta:intendedToExtend": [
   "https://ns.adobe.com/xdm/context/experienceevent"
   ],

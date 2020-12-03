@@ -10,7 +10,7 @@
   "title": "Change Score",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadoperation.changeScore",
+  "meta:conditionalValue": "leadOperation.changeScore",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

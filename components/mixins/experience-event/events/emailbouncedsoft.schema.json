@@ -10,7 +10,7 @@
   "title": "Email Bounced Soft",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailinteraction.emailBouncedSoft",
+  "meta:conditionalValue": "emailInteraction.emailBouncedSoft",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

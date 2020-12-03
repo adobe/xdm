@@ -10,7 +10,7 @@
   "title": "Remove From Opportunity",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "opportunityevent.removeFromOpportunity",
+  "meta:conditionalValue": "opportunityEvent.removeFromOpportunity",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

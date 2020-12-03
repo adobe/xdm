@@ -10,7 +10,7 @@
   "title": "New Lead",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadoperation.newLead",
+  "meta:conditionalValue": "leadOperation.newLead",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

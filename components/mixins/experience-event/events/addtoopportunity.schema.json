@@ -7,10 +7,10 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/addtoopportunity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Add To opportunity",
+  "title": "Add To Opportunity",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "opportunityevent.addToOpportunity",
+  "meta:conditionalValue": "opportunityEvent.addToOpportunity",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

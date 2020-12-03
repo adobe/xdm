@@ -10,7 +10,7 @@
   "title": "Interesting Moment",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadoperation.interestingMoment",
+  "meta:conditionalValue": "leadOperation.interestingMoment",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

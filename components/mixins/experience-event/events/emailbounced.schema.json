@@ -10,7 +10,7 @@
   "title": "Email Bounced",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailinteraction.emailBounced",
+  "meta:conditionalValue": "emailInteraction.emailBounced",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
@@ -67,8 +67,8 @@
               "type": "integer",
               "description": "."
             },
-            "xdm:hasPredictive": {
-              "title": "Has Predictive",
+            "xdm:isPredictive": {
+              "title": "Is Predictive",
               "type": "boolean",
               "description": "."
             }

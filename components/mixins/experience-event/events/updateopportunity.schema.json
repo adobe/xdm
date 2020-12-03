@@ -10,7 +10,7 @@
   "title": "Update Opportunity",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "opportunityevent.updateOpportunity",
+  "meta:conditionalValue": "opportunityEvent.updateOpportunity",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],

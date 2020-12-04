@@ -52,7 +52,7 @@ Used to mark a field as an identity.
 | [xdm:namespace](#xdmnamespace) | `string` | Optional | Identity Descriptor (this schema) |
 | [xdm:property](#xdmproperty) | `enum` | Optional | Identity Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
-| [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -199,13 +199,33 @@ When present, the property of the source schema to which this descriptor applies
 
 `xdm:sourceProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 

@@ -46,7 +46,7 @@
                 },
                 "xdm:claimSteps": {
                   "title": "Claim Steps",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                   "description": "Extension of toolUsage data type."
                 },
                 "xdm:claimType": {

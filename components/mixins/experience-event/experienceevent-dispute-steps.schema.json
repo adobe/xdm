@@ -25,7 +25,7 @@
               "properties": {
                 "xdm:dispute": {
                   "title": "Dispute",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                   "description": "Extension of toolUsage data type."
                 }
               }

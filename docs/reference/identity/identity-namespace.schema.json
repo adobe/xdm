@@ -1,0 +1,117 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/identity-namespace",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity Namespace",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Identity Namespace Schema.",
+    "definitions": {
+        "identity-namespace": {
+            "properties": {
+                "xdm:namespaceID": {
+                    "title": "Unique Namespace ID",
+                    "type": "integer",
+                    "description": "Unique Identifier for namespace"
+                },
+                "xdm:namespaceName": {
+                    "title": "Namespace Name",
+                    "type": "string",
+                    "description": "This is human readable name for the namespace"
+                },
+                "xdm:namespaceCode": {
+                    "title": "Namespace Code",
+                    "type": "string",
+                    "description": "This code is a human readable identifier for the namespace"
+                },
+                "xdm:namespaceDescription": {
+                    "title": "Namespace Description",
+                    "type": "string",
+                    "description": "Description for the namespace"
+                },
+                "xdm:namespaceIdType": {
+                    "title": "Namespace Id Type",
+                    "type": "string",
+                    "description": "Identity identifier type for the namespace",
+                    "enum": [
+                        "EMAIL",
+                        "PHONE_NUMBER",
+                        "DEVICE",
+                        "COOKIE",
+                        "CROSS_DEVICE",
+                        "NON_PEOPLE"
+                    ],
+                    "meta:enum": {
+                        "EMAIL": "Email",
+                        "PHONE_NUMBER": "Phone number",
+                        "DEVICE": "Device ID",
+                        "COOKIE": "Cookie ID",
+                        "CROSS_DEVICE": "Cross-device ID",
+                        "NON_PEOPLE": "Non-people identifier"
+                    }
+                },
+                "xdm:createDate": {
+                    "title": "Create Date Time",
+                    "format": "date-time",
+                    "type": "string",
+                    "examples": [
+                        "An example form is \"2004-10-23T12:00:00-06:00\"."
+                    ],
+                    "description": "The date and time when the namespace was created in ISO 8601 format"
+                },
+                "xdm:modifyDate": {
+                    "title": "Update Date Time",
+                    "format": "date-time",
+                    "type": "string",
+                    "examples": [
+                        "An example form is \"2004-10-23T12:00:00-06:00\"."
+                    ],
+                    "description": "The date and time when the namespace was updated in ISO 8601 format"
+                }
+            },
+            "required": [
+                "xdm:namespaceID",
+                "xdm:namespaceCode"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/identity-namespace"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:namespaceCode": "ECID",
+            "xdm:namespaceID": 4657,
+            "xdm:namespaceName": "ECID",
+            "xdm:namespaceDescription": "Experience Cloud ID",
+            "xdm:namespaceIdType": "COOKIE"
+        },
+        {
+            "xdm:namespaceCode": "ECID",
+            "xdm:namespaceID": 4657,
+            "xdm:namespaceName": "ECID",
+            "xdm:namespaceDescription": "Experience Cloud ID",
+            "xdm:namespaceIdType": "COOKIE",
+            "xdm:createDate": "2018-10-23T12:00:00-06:00",
+            "xdm:modifyDate": "2018-10-23T12:00:00-06:00"
+        }
+    ]
+}

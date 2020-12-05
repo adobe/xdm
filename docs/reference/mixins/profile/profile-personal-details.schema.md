@@ -1,25 +1,25 @@
 
-# Profile personal details Schema
+# Personal Contact Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-personal-details
 ```
 
-Use for information about an individual person such as home address, phone number, fax, and email.
+Contact information for an individual person such as home address, phone number, fax, and email.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-personal-details.schema.json](mixins/profile/profile-personal-details.schema.json) |
 ## Schema Hierarchy
 
-* Profile personal details `https://ns.adobe.com/xdm/context/profile-personal-details`
+* Personal Contact Details `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Email address](../../datatypes/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
   * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
-## Profile personal details Example
+## Personal Contact Details Example
 ```json
 {
   "xdm:mobilePhone": {
@@ -30,15 +30,15 @@ Use for information about an individual person such as home address, phone numbe
 }
 ```
 
-# Profile personal details Properties
+# Personal Contact Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Profile personal details (this schema) |
-| [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | Profile personal details (this schema) |
-| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Profile personal details (this schema) |
-| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Profile personal details (this schema) |
-| [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | Profile personal details (this schema) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Personal Contact Details (this schema) |
+| [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | Personal Contact Details (this schema) |
+| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Personal Contact Details (this schema) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Personal Contact Details (this schema) |
+| [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | Personal Contact Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:faxPhone

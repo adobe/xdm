@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "ExperienceEvent EndUserIDs",
+    "title": "End User ID Details",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This mixin provides a condensed, normalized encapsulation of end-user identifiers asserted for an ExperienceEvent. These IDs could include phone numbers, email addresses, or other identifiers related to an individual.",
+    "description": "End user IDs such as AAID, ACID, MCIDs, email, and phone numbers.",
     "definitions": {
         "experienceevent-enduserids": {
             "properties": {

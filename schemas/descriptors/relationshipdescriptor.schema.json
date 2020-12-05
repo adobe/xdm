@@ -26,7 +26,17 @@
         },
         "xdm:destinationProperty": {
           "title": "Destination Property",
-          "type": "string",
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ],
           "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
         },
         "xdm:destinationItem": {
@@ -46,7 +56,18 @@
         },
         "xdm:label": {
           "title": "Label",
-          "type": "string"
+          "type": "string",
+          "description": "Provides a user friendly name or label to this relationship"
+        },
+        "xdm:apiLabel": {
+          "title": "API Label",
+          "type": "string",
+          "description": "Provides a user friendly name or label which is used in PQL/SQL or other needs"
+        },
+        "xdm:description": {
+          "title": "Relationship Description",
+          "type": "string",
+          "description": "Provides a user friendly description of this relationship"
         }
       },
       "oneOf": [

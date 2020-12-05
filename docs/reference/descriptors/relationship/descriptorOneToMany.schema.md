@@ -36,13 +36,15 @@ Describes one to many relationship descriptor.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | One to Many Relationship Descriptor (this schema) |
+| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel) |
+| [xdm:description](#xdmdescription) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
-| [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
+| [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
 | [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationversion) |
 | [xdm:label](#xdmlabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmlabel) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
-| [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcevalue) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
@@ -82,6 +84,46 @@ The value of this property **must** be equal to:
 ```json
 "xdm:descriptorOneToMany"
 ```
+
+
+
+
+
+## xdm:apiLabel
+### API Label
+
+Provides a user friendly name or label which is used in PQL/SQL or other needs
+
+`xdm:apiLabel`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel)
+
+### xdm:apiLabel Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:description
+### Relationship Description
+
+Provides a user friendly description of this relationship
+
+`xdm:description`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription)
+
+### xdm:description Type
+
+
+`string`
+
 
 
 
@@ -130,13 +172,33 @@ When present, the property of the destination schema to which this descriptor ap
 
 `xdm:destinationProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty)
 
 ### xdm:destinationProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 
@@ -186,6 +248,8 @@ Major version being referenced.
 
 ## xdm:label
 ### Label
+
+Provides a user friendly name or label to this relationship
 
 `xdm:label`
 * is optional
@@ -245,13 +309,33 @@ When present, the property of the source schema to which this descriptor applies
 
 `xdm:sourceProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 

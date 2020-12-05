@@ -1,23 +1,23 @@
 
-# Profile Phones Schema
+# Phone Number Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-phones
 ```
 
-Use for phone numbers details such as fax, mobile, home, and work.
+Phone number such as fax, mobile, home, and work.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-phones.schema.json](mixins/profile/profile-phones.schema.json) |
 ## Schema Hierarchy
 
-* Profile Phones `https://ns.adobe.com/xdm/context/profile-phones`
+* Phone Number Details `https://ns.adobe.com/xdm/context/profile-phones`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
-## Profile Phones Example
+## Phone Number Details Example
 ```json
 {
   "xdm:homePhone": {
@@ -43,14 +43,14 @@ Use for phone numbers details such as fax, mobile, home, and work.
 }
 ```
 
-# Profile Phones Properties
+# Phone Number Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Profile Phones (this schema) |
-| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Profile Phones (this schema) |
-| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Profile Phones (this schema) |
-| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Profile Phones (this schema) |
+| [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Phone Number Details (this schema) |
+| [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Phone Number Details (this schema) |
+| [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Phone Number Details (this schema) |
+| [xdm:workPhone](#xdmworkphone) | Phone number | Optional | Phone Number Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:faxPhone

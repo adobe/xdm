@@ -84,16 +84,16 @@ The use of JSON-LD within XDM was put in place before AEP started using XDM for 
 	       	"_channels": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
 		       	"type": "object",
 		       	"properties": {
-			       	"application": { //member of the "repo" namespace
+			       	"application": { //member of the "https://ns.adobe.com/xdm/channels" namespace
 				       	"type": "string"
 				    }
 				}
 	       	},
-	       	"_schema": { //https://ns.adobe.com/xdm/channels namespace is exposed as a parent field named _channels
+	       	"_schema": { //schema namespace is exposed as a parent field named _schema
 		       	"type": "object",
 		       	"properties": {
-			       	"application": { //member of the "repo" namespace
-				       	"type": "string"
+			       	"latitude": { //member of the "schema" namespace
+				       	"type": "number"
 				    }
 				}
 	       	},
@@ -111,7 +111,7 @@ The use of JSON-LD within XDM was put in place before AEP started using XDM for 
 				}
 			}
 		},
-		"_customera": {//customera namespace (tenantId) converted into a physical field named _customera
+		"_customerA": {//customerA namespace (tenantId) converted into a physical field named _customerA
 			"type": "object",
 			"properties": {
 				"internalSku": { 

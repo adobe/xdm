@@ -50,7 +50,7 @@
                   "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Captures the number of times a chat session has been offered to a visitor."
                 },
-                "xdm:chatSessionId": {
+                "xdm:chatSessionID": {
                   "title": "Chat Session ID",
                   "type": "string",
                   "description": "Captures the chat session identifier, if available."

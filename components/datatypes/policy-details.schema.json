@@ -44,6 +44,7 @@
         },
         "xdm:policyType": {
           "title": "Policy Type",
+          "type": "string",
           "enum": ["home", "automobile", "renter", "boat"],
           "description": "Type of insurance policy, such as home, automobile, renter, or boat."
         }

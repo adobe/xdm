@@ -40,6 +40,7 @@
         },
         "xdm:financialAccountType": {
           "title": "Financial Account Type",
+          "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement."
         },

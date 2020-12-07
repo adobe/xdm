@@ -56,7 +56,7 @@
                 },
                 "xdm:policy": {
                   "title": "Policy",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/policy",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
                   "description": "Extension of Policy data type."
                 }
               }

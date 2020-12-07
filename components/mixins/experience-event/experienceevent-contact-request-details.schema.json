@@ -87,12 +87,12 @@
                 },
                 "xdm:callBackNumber": {
                   "title": "Call Back Contact Information",
-                  "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/phonenumber",
                   "description": "The contact phone number the visitor uses for responses to contact requests."
                 },
-                "xdm:replyToEmailAddress": {
+                "xdm:replyToEmailAddress�": {
                   "title": "Reply to Email Address",
-                  "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/emailaddress",
                   "description": "The email address the visitor uses for responses to contact requests."
                 }
               }

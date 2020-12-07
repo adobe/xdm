@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/location",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Location",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "automotive",
+    "telecom",
+    "health_and_life_sciences"
+  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For location  information such as ID, name, and open and close times.",
+  "definitions": {
+    "location": {
+      "properties": {
+        "xdm:isLocationActive": {
+          "title": "Is Location Active",
+          "type": "boolean",
+          "description": "Yes/no if the location is currently active."
+        },
+        "xdm:locationAddress": {
+          "title": "Location Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Physical address where the location is located."
+        },
+        "xdm:locationID": {
+          "title": "Location ID",
+          "type": "string",
+          "description": "ID associated with the location. "
+        },
+        "xdm:locationName": {
+          "title": "Location Name",
+          "type": "string",
+          "description": "Name of the location."
+        },
+        "xdm:locationCloseTime": {
+          "title": "Location Close Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of day the location closes."
+        },
+        "xdm:locationOpenTime": {
+          "title": "Location Open Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Time of day the location opens."
+        },
+        "xdm:locationPhoneNumber": {
+          "title": "Location Phone Number",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Location phone number"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/location"
+    }
+  ],
+  "meta:status": "experimental"
+}

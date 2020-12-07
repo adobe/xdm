@@ -165,21 +165,6 @@
               "description": "Is permission granted to perform any type of personalization",
               "$ref": "#/definitions/personalization-fields"
             },
-            "xdm:content": {
-              "title": "Personalize content",
-              "description": "Allow personalization of the content on my site or in my apps",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:inAppMessages": {
-              "title": "Personalize in-app messages",
-              "description": "Allow personalization of messages displayed within my apps",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:offers": {
-              "title": "Personalize Offers",
-              "description": "Allow personalization of 1st-party offers displayed on this site or with this app",
-              "$ref": "#/definitions/personalization-fields"
-            },
             "xdm:email": {
               "title": "Personalize email",
               "description": "Allow personalization of emails sent to the user",
@@ -188,16 +173,6 @@
             "xdm:physicalMail": {
               "title": "Personalize physical mail",
               "description": "Allow personalization of offers sent via traditional/physical mail",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:phoneCalls": {
-              "title": "Personalize phone calls",
-              "description": "Allow phone calls that the brand initiates to be personalized based on the user's interests or behavior",
-              "$ref": "#/definitions/personalization-fields"
-            },
-            "xdm:customerSupport": {
-              "title": "Personalize customer support",
-              "description": "Allow customer support to personalize responses/suggestions based on user's interests or behavior",
               "$ref": "#/definitions/personalization-fields"
             },
             "xdm:pushNotifications": {
@@ -210,9 +185,24 @@
               "description": "Personalization of text messages is permitted",
               "$ref": "#/definitions/personalization-fields"
             },
-            "xdm:inStore": {
-              "title": "Personalize in-store",
-              "description": "Personalization of in-store experiences is permitted",
+            "xdm:phoneCalls": {
+              "title": "Personalize phone calls",
+              "description": "Allow phone calls that the brand initiates to be personalized based on the user's interests or behavior",
+              "$ref": "#/definitions/personalization-fields"
+            },
+            "xdm:iotDevices": {
+              "title": "Personalize IoT Devices",
+              "description": "Personalization of interactions with IoT devices is permitted",
+              "$ref": "#/definitions/personalization-fields"
+            },
+            "xdm:socialMedia": {
+              "title": "Personalize Social Media",
+              "description": "Personalization of interactions on Social Media sites/apps is permitted",
+              "$ref": "#/definitions/personalization-fields"
+            },
+            "xdm:inAppMessages": {
+              "title": "Personalize in-app messages",
+              "description": "Allow personalization of messages displayed within my apps",
               "$ref": "#/definitions/personalization-fields"
             },
             "xdm:inVehicle": {
@@ -225,14 +215,24 @@
               "description": "Personalization of in-home experiences is permitted",
               "$ref": "#/definitions/personalization-fields"
             },
-            "xdm:iotDevices": {
-              "title": "Personalize IoT Devices",
-              "description": "Personalization of interactions with IoT devices is permitted",
+            "xdm:inStore": {
+              "title": "Personalize in-store",
+              "description": "Personalization of in-store experiences is permitted",
               "$ref": "#/definitions/personalization-fields"
             },
-            "xdm:socialMedia": {
-              "title": "Personalize Social Media",
-              "description": "Personalization of interactions on Social Media sites/apps is permitted",
+            "xdm:content": {
+              "title": "Personalize content",
+              "description": "Allow personalization of the content on my site or in my apps",
+              "$ref": "#/definitions/personalization-fields"
+            },
+            "xdm:offers": {
+              "title": "Personalize Offers",
+              "description": "Allow personalization of 1st-party offers displayed on this site or with this app",
+              "$ref": "#/definitions/personalization-fields"
+            },
+            "xdm:customerSupport": {
+              "title": "Personalize customer support",
+              "description": "Allow customer support to personalize responses/suggestions based on user's interests or behavior",
               "$ref": "#/definitions/personalization-fields"
             },
             "xdm:thirdPartyOffers": {
@@ -302,14 +302,14 @@
               "description": "User agrees to receive email",
               "$ref": "#/definitions/marketing-fields"
             },
+            "xdm:physicalMail": {
+              "title": "Receive physical mail",
+              "description": "User agrees to being contacted via traditional/physical mail.",
+              "$ref": "#/definitions/marketing-fields"
+            },
             "xdm:pushNotifications": {
               "title": "Receive push notifications",
               "description": "User permits receiving push notifications",
-              "$ref": "#/definitions/marketing-fields"
-            },
-            "xdm:inAppMessages": {
-              "title": "Receive in-app messages",
-              "description": "User permits messages to be shown within the brands's apps",
               "$ref": "#/definitions/marketing-fields"
             },
             "xdm:sms": {
@@ -322,9 +322,19 @@
               "description": "The brand may contact the user via phone",
               "$ref": "#/definitions/marketing-fields"
             },
-            "xdm:physicalMail": {
-              "title": "Receive physical mail",
-              "description": "User agrees to being contacted via traditional/physical mail.",
+            "xdm:iotMessages": {
+              "title": "Receive IoT messages",
+              "description": "It is okay to interact with the user via IoT devices",
+              "$ref": "#/definitions/marketing-fields"
+            },
+            "xdm:socialMedia": {
+              "title": "Receive Social Media Messages",
+              "description": "It is okay to send messages to the user on their social media accounts",
+              "$ref": "#/definitions/marketing-fields"
+            },
+            "xdm:inAppMessages": {
+              "title": "Receive in-app messages",
+              "description": "User permits messages to be shown within the brands's apps",
               "$ref": "#/definitions/marketing-fields"
             },
             "xdm:inVehicleMessages": {
@@ -335,16 +345,6 @@
             "xdm:inHomeMessages": {
               "title": "Receive in-home messages",
               "description": "It is okay to interact with the user via technology installed in the user's home",
-              "$ref": "#/definitions/marketing-fields"
-            },
-            "xdm:iotMessages": {
-              "title": "Receive IoT messages",
-              "description": "It is okay to interact with the user via IoT devices",
-              "$ref": "#/definitions/marketing-fields"
-            },
-            "xdm:socialMedia": {
-              "title": "Receive Social Media Messages",
-              "description": "It is okay to send messages to the user on their social media accounts",
               "$ref": "#/definitions/marketing-fields"
             }
           }
@@ -382,7 +382,7 @@
           "description": "ISO 3166 alpha2 country code or ISO 3166-2 country plus state/province code for use in helping to determine how to interpret consent values",
           "type": "string",
           "maxLength": 6,
-          "pattern": "[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}"
+          "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}$"
         },
         "xdm:countryRegionSource": {
           "title": "Country/Region Source",
@@ -427,5 +427,5 @@
       "$ref": "#/definitions/consent-preferences"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

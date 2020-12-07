@@ -29,7 +29,7 @@
       "properties": {
         "xdm:impressionDisplays": {
           "title": "Impression Displays",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Counts the number of times an impression item has been displayed to a visitor."
         },
         "xdm:impressionID": {

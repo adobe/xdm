@@ -26,7 +26,7 @@
       "properties": {
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Tracked when an item is added to a comparison."
         },
         "xdm:comparisonCount": {
@@ -44,7 +44,7 @@
         },
         "xdm:comparisonRemoval": {
           "title": "Comparison Removal",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Tracked when an item is removed from a comparison."
         },
         "xdm:comparisonType": {
@@ -54,7 +54,7 @@
         },
         "xdm:comparisonView": {
           "title": "Comparison View",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Tracked when a comparison page is viewed."
         },
         "xdm:comparisonImpressions": {

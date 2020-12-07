@@ -50,10 +50,8 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/paymentitem"
-    }
-  ],
+  "allOf": [{
+    "$ref": "#/definitions/paymentitem"
+  }],
   "meta:status": "stable"
 }

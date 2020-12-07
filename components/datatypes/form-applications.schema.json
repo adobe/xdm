@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/form-applications",
+  "$id": "https: //ns.adobe.com/xdm/datatypes/form-applications",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Form Applications",
   "type": "object",
@@ -22,12 +22,12 @@
       "properties": {
         "xdm:formApplicationApproved": {
           "title": "Form Application Approved",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when a visitor application has been approved."
         },
         "xdm:formApplicationDeclined": {
           "title": "Form Application Declined",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when a visitor application has been declined."
         },
         "xdm:formApplicationFee": {
@@ -52,7 +52,7 @@
         },
         "xdm:formApplicationStatusUpdate": {
           "title": "Form Application Status Update",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when the status for an application changes, either from an online or offline update."
         },
         "xdm:FormApplicationType": {
@@ -62,21 +62,17 @@
         },
         "xdm:formApplicationUnderReview": {
           "title": "Form Application Under Review",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when a visitor application has been placed under review."
         },
         "xdm:formApplicationUsage": {
           "title": "Form Application Usage",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type."
         }
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/form-applications"
-    }
-  ],
+  "allOf": [{ "$ref": "#/definitions/form-applications" }],
   "meta:status": "experimental"
 }

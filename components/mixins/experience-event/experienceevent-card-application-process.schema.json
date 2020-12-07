@@ -30,7 +30,7 @@
                 },
                 "xdm:cardApplicationSteps": {
                   "title": "Card Application Steps",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
                   "description": "Extension of form application data type."
                 }
               }

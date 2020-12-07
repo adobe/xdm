@@ -25,37 +25,37 @@
               "properties": {
                 "xdm:cardActivated": {
                   "title": "Card Activated Success",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card has been successfully activated."
                 },
                 "xdm:cardActivationStart": {
                   "title": "Card Activation Started",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card activation process has been started."
                 },
                 "xdm:cardCancelled": {
                   "title": "Card Cancelled",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card has been cancelled."
                 },
                 "xdm:cardControlsLocked": {
                   "title": "Card Controls Locked",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card controls have been locked."
                 },
                 "xdm:cardControlsUnlocked": {
                   "title": "Card Controls Unlocked",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card controls have been unlocked."
                 },
                 "xdm:cardLocked": {
                   "title": "Card Locked",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card has been locked."
                 },
                 "xdm:cardOrderNew": {
                   "title": "Order New Card",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card has been requested."
                 },
                 "xdm:cardOrderType": {
@@ -87,7 +87,7 @@
                 },
                 "xdm:cardUnlocked": {
                   "title": "Card Unlocked",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Tracks when a card has been unlocked."
                 }
               }

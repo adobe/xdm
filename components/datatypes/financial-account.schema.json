@@ -13,7 +13,7 @@
   "meta:industry": ["financial_services"],
   "description": "Financial account details, such as owners, balances, and types.",
   "definitions": {
-    "financialAccount": {
+    "financial-account": {
       "properties": {
         "xdm:currentAccountBalance": {
           "title": "Current Financial Account Balance",
@@ -32,16 +32,12 @@
         },
         "xdm:financialAccountOwner": {
           "title": "Financial Account Owners",
-          "type": "array",
-          "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type.",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-profile-personal-details"
-          }
+          "type": "array: mixin",
+          "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
         },
         "xdm:financialAccountType": {
           "title": "Financial Account Type",
           "enum": ["checking", "savings", "retirement", "investment"],
-          "type": "string",
           "description": "Describes the type of finanical account, such as checking, savings, or retirement."
         },
         "xdm:openedDate": {
@@ -53,5 +49,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/financial-account"
+    }
+  ],
   "meta:status": "experimental"
 }

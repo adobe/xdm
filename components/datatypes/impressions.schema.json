@@ -25,7 +25,7 @@
   ],
   "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
   "definitions": {
-    "impression": {
+    "impressions": {
       "properties": {
         "xdm:impressionDisplays": {
           "title": "Impression Displays",
@@ -45,5 +45,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/impressions"
+    }
+  ],
   "meta:status": "experimental"
 }

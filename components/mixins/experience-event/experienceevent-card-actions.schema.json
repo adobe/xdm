@@ -18,68 +18,78 @@
     "card-actions": {
       "properties": {
         "xdm:personalFinances": {
+          "type": "object",
           "properties": {
             "xdm:cardActions": {
-              "xdm:cardActivated": {
-                "title": "Card Activated Success",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card has been successfully activated."
-              },
-              "xdm:cardActivationStart": {
-                "title": "Card Activation Started",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card activation process has been started."
-              },
-              "xdm:cardCancelled": {
-                "title": "Card Cancelled",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card has been cancelled."
-              },
-              "xdm:cardControlsLocked": {
-                "title": "Card Controls Locked",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card controls have been locked."
-              },
-              "xdm:cardControlsUnlocked": {
-                "title": "Card Controls Unlocked",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card controls have been unlocked."
-              },
-              "xdm:cardLocked": {
-                "title": "Card Locked",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card has been locked."
-              },
-              "xdm:cardOrderNew": {
-                "title": "Order New Card",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card has been requested."
-              },
-              "xdm:cardOrderType": {
-                "title": "Card Order Type",
-                "type": "string",
-                "enum": ["new", "lost", "stolen", "never received", "damaged"],
-                "description": "Tracks the type of card order associated with a card order event."
-              },
-              "xdm:cardType": {
-                "title": "Card Type",
-                "type": "string",
-                "enum": [
-                  "credit",
-                  "debit",
-                  "prepaid",
-                  "paypal",
-                  "atm",
-                  "virtual",
-                  "hsa",
-                  "fsa"
-                ],
-                "description": "Tracks the type of card associated with an event."
-              },
-              "xdm:cardUnlocked": {
-                "title": "Card Unlocked",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
-                "description": "Tracks when a card has been unlocked."
+              "type": "object",
+              "properties": {
+                "xdm:cardActivated": {
+                  "title": "Card Activated Success",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card has been successfully activated."
+                },
+                "xdm:cardActivationStart": {
+                  "title": "Card Activation Started",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card activation process has been started."
+                },
+                "xdm:cardCancelled": {
+                  "title": "Card Cancelled",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card has been cancelled."
+                },
+                "xdm:cardControlsLocked": {
+                  "title": "Card Controls Locked",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card controls have been locked."
+                },
+                "xdm:cardControlsUnlocked": {
+                  "title": "Card Controls Unlocked",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card controls have been unlocked."
+                },
+                "xdm:cardLocked": {
+                  "title": "Card Locked",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card has been locked."
+                },
+                "xdm:cardOrderNew": {
+                  "title": "Order New Card",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card has been requested."
+                },
+                "xdm:cardOrderType": {
+                  "title": "Card Order Type",
+                  "type": "string",
+                  "enum": [
+                    "new",
+                    "lost",
+                    "stolen",
+                    "never received",
+                    "damaged"
+                  ],
+                  "description": "Tracks the type of card order associated with a card order event."
+                },
+                "xdm:cardType": {
+                  "title": "Card Type",
+                  "type": "string",
+                  "enum": [
+                    "credit",
+                    "debit",
+                    "prepaid",
+                    "paypal",
+                    "atm",
+                    "virtual",
+                    "hsa",
+                    "fsa"
+                  ],
+                  "description": "Tracks the type of card associated with an event."
+                },
+                "xdm:cardUnlocked": {
+                  "title": "Card Unlocked",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/data/measure",
+                  "description": "Tracks when a card has been unlocked."
+                }
               }
             }
           }
@@ -87,5 +97,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/card-actions"
+    }
+  ],
   "meta:status": "experimental"
 }

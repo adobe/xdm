@@ -18,7 +18,7 @@
   ],
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
   "definitions": {
-    "form-application": {
+    "form-applications": {
       "properties": {
         "xdm:formApplicationApproved": {
           "title": "Form Application Approved",
@@ -47,7 +47,6 @@
         },
         "xdm:formApplicationStatus": {
           "title": "Form Application Status",
-          "type": "string",
           "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the application for any given point in the application process."
         },
@@ -74,5 +73,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/form-applications"
+    }
+  ],
   "meta:status": "experimental"
 }

@@ -22,7 +22,7 @@
   ],
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
   "definitions": {
-    "comparison": {
+    "comparisons": {
       "properties": {
         "xdm:comparisonAddition": {
           "title": "Comparison Addition",
@@ -37,7 +37,9 @@
         "xdm:comparisonItems": {
           "title": "Comparison List Items",
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "An array of all item IDs/SKUs in the list of products.  "
         },
         "xdm:comparisonRemoval": {
@@ -63,5 +65,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/comparisons"
+    }
+  ],
   "meta:status": "experimental"
 }

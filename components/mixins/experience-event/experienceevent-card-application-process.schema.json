@@ -18,17 +18,21 @@
     "card-application-process": {
       "properties": {
         "xdm:personalFinances": {
+          "type": "object",
           "properties": {
             "xdm:cardApplicationProcess": {
-              "xdm:cardApplicationComparisons": {
-                "title": "Card Comparisons",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-                "description": "Extension of comparison data type."
-              },
-              "xdm:cardApplicationSteps": {
-                "title": "Card Application Steps",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
-                "description": "Extension of form application data type."
+              "type": "object",
+              "properties": {
+                "xdm:cardApplicationComparisons": {
+                  "title": "Card Comparisons",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                  "description": "Extension of comparison data type."
+                },
+                "xdm:cardApplicationSteps": {
+                  "title": "Card Application Steps",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/formapplication",
+                  "description": "Extension of form application data type."
+                }
               }
             }
           }
@@ -36,5 +40,10 @@
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/card-application-process"
+    }
+  ],
   "meta:status": "experimental"
 }

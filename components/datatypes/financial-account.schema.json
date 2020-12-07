@@ -34,8 +34,8 @@
           "title": "Financial Account Owners",
           "type": "array",
           "items": {
-           "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
-         },
+            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+          },
           "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
         },
         "xdm:financialAccountType": {
@@ -52,6 +52,10 @@
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/financial-account" }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/financial-account"
+    }
+  ],
   "meta:status": "experimental"
 }

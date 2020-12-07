@@ -67,12 +67,16 @@
         },
         "xdm:formApplicationUsage": {
           "title": "Form Application Usage",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
           "description": "Extension of toolUsage data type."
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/form-applications" }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/form-applications"
+    }
+  ],
   "meta:status": "experimental"
 }

@@ -25,7 +25,7 @@
   ],
   "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
   "definitions": {
-    "toolUsage": {
+    "tool-usage": {
       "properties": {
         "xdm:toolUsageCancelled": {
           "title": "Tool Usage Cancelled",
@@ -79,7 +79,7 @@
         },
         "xdm:toolUsageTransaction": {
           "title": "Tool Usage Transaction",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/Transaction",
           "description": "Extension of Transaction Data Type"
         },
         "xdm:toolUsageType": {

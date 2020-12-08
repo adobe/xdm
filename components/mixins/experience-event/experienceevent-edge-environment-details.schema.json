@@ -18,7 +18,7 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv4"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4"
         }
       }
     },
@@ -26,7 +26,7 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv6"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6"
         }
       }
     },

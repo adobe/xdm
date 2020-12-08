@@ -65,6 +65,7 @@
         "xdm:fileURL": {
           "title": "File URL",
           "type": "string",
+          "format": "uri",
           "description": "URL of file being up/downloaded by the visitor."
         }
       }

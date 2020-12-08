@@ -47,6 +47,7 @@
         },
         "xdm:formApplicationStatus": {
           "title": "Form Application Status",
+          "type": "string",
           "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the application for any given point in the application process."
         },
@@ -73,10 +74,8 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/form-applications"
-    }
-  ],
+  "allOf": [{
+    "$ref": "#/definitions/form-applications"
+  }],
   "meta:status": "experimental"
 }

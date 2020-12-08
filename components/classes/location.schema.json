@@ -60,6 +60,11 @@
           "title": "Location Phone Number",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Location phone number"
+        },
+        "xdm:locationType": {
+          "title": "Location Type",
+          "type": "string",
+          "description": "Location type."
         }
       }
     }

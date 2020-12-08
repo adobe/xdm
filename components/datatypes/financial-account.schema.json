@@ -32,12 +32,14 @@
         },
         "xdm:financialAccountOwner": {
           "title": "Financial Account Owners",
-          "type": "array: mixin",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+          },
           "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
         },
         "xdm:financialAccountType": {
           "title": "Financial Account Type",
-          "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement."
         },

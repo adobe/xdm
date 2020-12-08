@@ -55,7 +55,7 @@
         },
         "xdm:launchCount": {
           "title": "Launch Count",
-		  "type": "integer",
+          "type": "integer",
           "description": "Total number of launch events for this application."
         },
         "xdm:upgrades": {

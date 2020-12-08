@@ -53,6 +53,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded."
         },
+        "xdm:launchCount": {
+          "title": "Launch Count",
+		  "type": "integer",
+          "description": "Total number of launch events for this application."
+        },
         "xdm:upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
@@ -66,11 +71,6 @@
             "background": "Background",
             "detached": "Detached"
           },
-          "xdm:isLaunch": {
-            "title": "Is launch event",
-            "type": "boolean",
-            "description": "Indicates whether or not this is an application launch event."
-          },
           "xdm:launchType": {
             "type": "string",
             "description": "Specifies the launch event type. Install indicates this is the first application launch after the application was installed. Upgrade indicates this is the first application launch after the application was upgraded. Launch is an application launch which is not after an application install or upgrade.",
@@ -81,11 +81,6 @@
               "upgrade": "Upgrade"
             }
           },
-          "xdm:isClose": {
-            "title": "Is close event",
-            "type": "boolean",
-            "description": "Indicates whether or not this is an application close event and contains details of the previous session."
-          },
           "xdm:closeType": {
             "type": "string",
             "description": "Specifies the close event type. A value of close means the application signaled that it has closed, either by a user action or by the device. Unknown means the application did not signal that it closed, which could indicate an application crash, a system failure, or an improperly configured application.",
@@ -94,16 +89,6 @@
               "close": "Close",
               "unknown": "Unknown"
             }
-          },
-          "xdm:isDailyEngUser": {
-            "title": "Is daily engaged user event",
-            "type": "boolean",
-            "description": "Indicates whether or not this is the first application launch of the day."
-          },
-          "xdm:isMonthlyEngUser": {
-            "title": "Is monthly engaged user event",
-            "type": "boolean",
-            "description": "Indicates whether or not this is the first application launch of the month."
           },
           "xdm:sessionLength": {
             "title": "Session length",

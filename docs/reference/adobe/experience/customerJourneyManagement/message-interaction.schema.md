@@ -21,7 +21,11 @@ Describes interaction made by the profile on the message.
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "marketing",
+    "apparel"
+  ]
 }
 ```
 
@@ -30,6 +34,7 @@ Describes interaction made by the profile on the message.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractioninteractiontype) | `enum` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontags) | `string[]` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontrackingtype) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionurlid) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -52,6 +57,33 @@ The value of this property **must** be equal to one of the [known values below](
 | `click` | Link in a message is clicked by the user. |
 | `open` | Either Message is open by the user, or in case of push, clicking the message opened the mobile application. |
 | `action` |  |
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags
+### Link Tags
+
+The tags present on this link.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
 
 
 

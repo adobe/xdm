@@ -29,11 +29,6 @@
           "type": "string",
           "description": "The application or browser version."
         },
-        "xdm:userAgent": {
-          "title": "User agent",
-          "type": "string",
-          "description": "The HTTP user-agent string from the client request."
-        },
         "xdm:acceptLanguage": {
           "title": "Accept language",
           "type": "string",
@@ -87,14 +82,23 @@
           "minimum": 0
         }
       }
+    },
+    "user-agent": {
+      "properties": {
+        "xdm:userAgent": {
+          "title": "User agent",
+          "type": "string",
+          "description": "The HTTP user-agent string from the client request."
+        }
+      }
     }
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "#/definitions/browserdetails"
     },
     {
-      "$ref": "#/definitions/browserdetails"
+      "$ref": "#/definitions/user-agent"
     }
   ],
   "meta:status": "stable"

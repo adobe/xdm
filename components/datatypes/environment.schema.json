@@ -129,18 +129,6 @@
           "type": "string",
           "description": "A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user."
         },
-        "xdm:ipV4": {
-          "title": "IPv4",
-          "type": "string",
-          "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
-        },
-        "xdm:ipV6": {
-          "title": "IPv6",
-          "type": "string",
-          "format": "ipv6",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
-        },
         "xdm:domain": {
           "title": "Domain",
           "type": "string",
@@ -160,6 +148,26 @@
           "examples": ["en-US", "pt-BR", "es-ES"]
         }
       }
+    },
+    "ipv4": {
+      "properties": {
+        "xdm:ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+        }
+      }
+    },
+    "ipv6": {
+      "properties": {
+        "xdm:ipV6": {
+          "title": "IPv6",
+          "type": "string",
+          "format": "ipv6",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+        }
+      }
     }
   },
   "allOf": [
@@ -168,6 +176,12 @@
     },
     {
       "$ref": "#/definitions/environment"
+    },
+    {
+      "$ref": "#/definitions/ipv4"
+    },
+    {
+      "$ref": "#/definitions/ipv6"
     }
   ],
   "meta:status": "stable"

@@ -16,46 +16,46 @@
   "definitions": {
     "edge-environment-ipv4": {
       "properties": {
-	    "xdm:environment": {
-		  "title": "Environment Details",
-		  "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv4",
-		}
-	  }
+        "xdm:environment": {
+          "title": "Environment Details",
+          "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv4"
+        }
+      }
     },
     "edge-environment-ipv6": {
       "properties": {
-	    "xdm:environment": {
-		  "title": "Environment Details",
-		  "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv6",
-		}
-	  }
+        "xdm:environment": {
+          "title": "Environment Details",
+          "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-environment#/definitions/ipv6"
+        }
+      }
     },
     "edge-environment-user-agent": {
       "properties": {
-	    "xdm:environment": {
-		  "type": "object",
-		  "properties": {
+        "xdm:environment": {
+          "type": "object",
+          "properties": {
             "xdm:browserDetails": {
-			  "title": "Browser Details",
-              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent",
+              "title": "Browser Details",
+              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent"
             }
-		  }
-		}
-	  }
+          }
+        }
+      }
     },
     "edge-environment-geo": {
       "properties": {
-		"xdm:placeContext": {
-		  "type": "object",
-		  "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
             "xdm:geo": {
               "title": "Geo",
               "$ref": "https://ns.adobe.com/xdm/common/geo",
               "description": "The geographic location where the experience was delivered based on the IP address from the client request."
             }
-		  }
-		}
-	  }
+          }
+        }
+      }
     }
   },
   "allOf": [

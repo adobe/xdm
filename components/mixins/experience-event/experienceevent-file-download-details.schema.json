@@ -33,14 +33,9 @@
           "type": "object",
           "properties": {
             "xdm:fileDownload": {
-              "type": "object",
-              "properties": {
-                "xdm:fileDownload": {
-                  "title": "File Download",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
-                  "description": "Tracks all details of a file download. Extension of file transfer data type."
-                }
-              }
+              "title": "File Download",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
+              "description": "Tracks all details of a file download. Extension of file transfer data type."
             }
           }
         }

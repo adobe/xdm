@@ -20,15 +20,10 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:financialAccountCreationSteps": {
-              "type": "object",
-              "properties": {
-                "xdm:financialAccount": {
-                  "title": "Financial Account",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                  "description": "Extension of toolUsage data type."
-                }
-              }
+            "xdm:financialAccount": {
+              "title": "Financial Account",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
             }
           }
         }

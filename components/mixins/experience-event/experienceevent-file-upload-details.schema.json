@@ -33,14 +33,9 @@
           "type": "object",
           "properties": {
             "xdm:fileUpload": {
-              "type": "object",
-              "properties": {
-                "xdm:fileUpload": {
-                  "title": "File Upload",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
-                  "description": "Tracks all details of a file upload. Extension of file transfer data type."
-                }
-              }
+              "title": "File Upload",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
+              "description": "Tracks all details of a file upload. Extension of file transfer data type."
             }
           }
         }

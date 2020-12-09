@@ -26,14 +26,9 @@
           "type": "object",
           "properties": {
             "xdm:appointmentRequestSteps": {
-              "type": "object",
-              "properties": {
-                "xdm:appointmentRequestSteps": {
-                  "title": "Appointment Request Steps",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                  "description": "Extension of toolUsage data type."
-                }
-              }
+              "title": "Appointment Request Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
             }
           }
         }

@@ -1,0 +1,23 @@
+{
+  "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
+    "https://ns.adobe.com/experience/intelligentServices/journeyAI/engagementScores": {
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailEngagementScores": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/clickEngagementScore": 0.034,
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/openEnagementScore": 0.23,
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionLevel": "high",
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionPercentRank": 0.953,
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/unsubscriptionProbability": 0.002546
+      },
+      "https://ns.adobe.com/experience/intelligentServices/journeyAI/engagementScoresInfo": "v1.3.0_2020-11-04"
+    }
+  },
+  "xdm:identityMap": {
+    "xdm:key": [
+      {
+        "xdm:authenticatedState": "ambiguous",
+        "xdm:id": "string",
+        "xdm:primary": false
+      }
+    ]
+  }
+}

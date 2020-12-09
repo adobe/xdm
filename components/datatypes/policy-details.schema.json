@@ -5,52 +5,56 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/policy-details",
+  "$id": "https://ns.adobe.com/xdm/datatypes/policy-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Policy Details",
   "type": "object",
   "meta:extensible": true,
-  "description": "Captures insurance policy details, such as type, issued state, and start date.",
+  "meta:industry": ["financial_services"],
+  "description": "Details for the insurance policy such as type, start date, and ID.",
   "definitions": {
-    "policyDetails": {
+    "policy-details": {
       "properties": {
-        "xdm:policyType": {
-          "title": "Policy Type",
+        "xdm:policyEndDate": {
+          "title": "Policy End Date",
           "type": "string",
-          "enum": ["home","automobile","renter","boat"],
-          "meta:enum":{
-            "home":"Home",
-            "automobile":"Automobile",
-            "renter":"Renter",
-            "boat":"Boat"
-          },
-          "description": "Type of insurance policy, such as home, automobile, renter, or boat."
-        },
-        "xdm:policyName": {
-          "title": "Policy Name",
-          "type": "string",
-          "description": "Insurance policy name."
-        },
-        "xdm:policyState": {
-          "title": "Policy State",
-          "type": "string",
-          "description": "State in which the insurance policy is issued."
+          "format": "date-time",
+          "description": "Date which the insurance policy coverage ended."
         },
         "xdm:policyID": {
           "title": "Policy ID",
           "type": "string",
           "description": "Unique insurance policy identifier."
         },
+        "xdm:policyName": {
+          "title": "Policy Name",
+          "type": "string",
+          "description": "Insurance policy name."
+        },
         "xdm:policyStartDate": {
           "title": "Policy Start Date",
-          "type": "date",
+          "type": "string",
+          "format": "date-time",
           "description": "Date which the insurance policy coverage started."
+        },
+        "xdm:policyState": {
+          "title": "Policy State",
+          "type": "string",
+          "description": "State in which the insurance policy is issued."
+        },
+        "xdm:policyType": {
+          "title": "Policy Type",
+          "type": "string",
+          "enum": ["home", "automobile", "renter", "boat"],
+          "description": "Type of insurance policy, such as home, automobile, renter, or boat."
         }
       }
     }
   },
-  "allOf": [{
-    "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/policy-details"
+    }
+  ],
   "meta:status": "experimental"
 }

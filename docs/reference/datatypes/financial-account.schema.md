@@ -9,23 +9,29 @@ Financial account details, such as owners, balances, and types.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/financial-account.schema.json](datatypes/financial-account.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/financial-account.schema.json](datatypes/financial-account.schema.json) |
+## Schema Hierarchy
+
+* Financial Account `https://ns.adobe.com/xdm/datatypes/financial-account`
+  * [Currency](currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
+
 
 ## Financial Account Example
 ```json
 {}
 ```
 
-# Financial Account Definitions
+# Financial Account Properties
 
-| Property | Type | Group |
-|----------|------|-------|
-| [xdm:currentAccountBalance](#xdmcurrentaccountbalance) | reference | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
-| [xdm:financialAccountID](#xdmfinancialaccountid) | `string` | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
-| [xdm:financialAccountName](#xdmfinancialaccountname) | `string` | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
-| [xdm:financialAccountOwner](#xdmfinancialaccountowner) | reference | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
-| [xdm:financialAccountType](#xdmfinancialaccounttype) | `enum` | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
-| [xdm:openedDate](#xdmopeneddate) | `string` | `https://ns.adobe.com/xdm/datatypes/financial-account#/definitions/financialAccount` |
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [xdm:currentAccountBalance](#xdmcurrentaccountbalance) | Currency | Optional | Financial Account (this schema) |
+| [xdm:financialAccountID](#xdmfinancialaccountid) | `string` | Optional | Financial Account (this schema) |
+| [xdm:financialAccountName](#xdmfinancialaccountname) | `string` | Optional | Financial Account (this schema) |
+| [xdm:financialAccountOwner](#xdmfinancialaccountowner) | Personal Contact Details | Optional | Financial Account (this schema) |
+| [xdm:financialAccountType](#xdmfinancialaccounttype) | `enum` | Optional | Financial Account (this schema) |
+| [xdm:openedDate](#xdmopeneddate) | `string` | Optional | Financial Account (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:currentAccountBalance
 ### Current Financial Account Balance
@@ -34,13 +40,13 @@ Balance in the account.
 
 `xdm:currentAccountBalance`
 * is optional
-* type: reference
+* type: Currency
 * defined in this schema
 
 ### xdm:currentAccountBalance Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
+* [Currency](currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -93,17 +99,17 @@ Array of the owner(s) of the selected financial account. Extension of the person
 
 `xdm:financialAccountOwner`
 * is optional
-* type: reference
+* type: Personal Contact Details
 
 * defined in this schema
 
 ### xdm:financialAccountOwner Type
 
 
-Array type: reference
+Array type: Personal Contact Details
 
 All items must be of the type:
-* []() – `https://ns.adobe.com/experience/campaign/experienceevent-profile-personal-details`
+* [Personal Contact Details](../mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
 
 
 

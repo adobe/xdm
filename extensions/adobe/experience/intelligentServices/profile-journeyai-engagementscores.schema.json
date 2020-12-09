@@ -1,0 +1,79 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-engagementscores",
+  "title": "Intelligent Services JourneyAI Engagement Scores",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
+  "definitions": {
+    "journeyai-engagement-scores": {
+      "properties": {
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI": {
+          "title": "Journey AI",
+          "description": "Journey AI intelligent service provides various insights about message deliveries along customer's journey.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/intelligentServices/journeyAI/engagementScores": {
+              "title": "Engagement Scores",
+              "description": "Journey AI engagement scores provide likelihoods of a customer engaging with a newly delivered message.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/emailEngagementScores": {
+                  "title": "Email Engagement Scores",
+                  "description": "Engagement scores here are for email channel messages.",
+                  "type": "object",
+                  "properties": {
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/clickEngagementScore": {
+                      "title": "Click Engagement Score",
+                      "description": "This score represents the probability for a customer to click on links in an email.",
+                      "type": "number"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/openEnagementScore": {
+                      "title": "Open Engagement Score",
+                      "description": "This score represents the probability of a customer to open an email.",
+                      "type": "number"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionLevel": {
+                      "title": "Retention Level",
+                      "description": "Retention level is a qualitative categorization of customer's likelihood of staying subscribed to the email list.",
+                      "type": "string"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionPercentRank": {
+                      "title": "Retention Percent Rank",
+                      "description": "Retention percent rank is a percentile rank of the likelihood of staying subscribed to the email list.",
+                      "type": "number"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/journeyAI/unsubscriptionProbability": {
+                      "title": "Unsubscription Probability",
+                      "description": "Unsubscription probability is the probability of a recipient to unsubscribe from email channel conditioned on email opened.",
+                      "type": "number"
+                    }
+                  }
+                },
+                "https://ns.adobe.com/experience/intelligentServices/journeyAI/engagementScoresInfo": {
+                  "title": "Engagement Scores Info",
+                  "description": "This information contains engagement scores model version and scoring date as a concatenated string, e.g. v1.3.0_2020-11-04.",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyai-engagement-scores"
+    }
+  ],
+  "meta:status": "experimental"
+}

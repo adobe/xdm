@@ -9,29 +9,36 @@ Tool usage comprises the most common steps used in a site tool or utility, such 
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Cannot be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/tool-usage.schema.json](datatypes/tool-usage.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/tool-usage.schema.json](datatypes/tool-usage.schema.json) |
+## Schema Hierarchy
+
+* Tool Usage `https://ns.adobe.com/xdm/datatypes/tool-usage`
+  * [Measure](data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
+  * [Transaction](transaction.schema.md) `https://ns.adobe.com/xdm/datatypes/transaction`
+
 
 ## Tool Usage Example
 ```json
 {}
 ```
 
-# Tool Usage Definitions
+# Tool Usage Properties
 
-| Property | Type | Group |
-|----------|------|-------|
-| [xdm:toolUsageCancelled](#xdmtoolusagecancelled) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageComplete](#xdmtoolusagecomplete) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageFailure](#xdmtoolusagefailure) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageID](#xdmtoolusageid) | `string` | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageName](#xdmtoolusagename) | `string` | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageSaved](#xdmtoolusagesaved) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageStart](#xdmtoolusagestart) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageStep](#xdmtoolusagestep) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageStepName](#xdmtoolusagestepname) | `string` | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageSubmitted](#xdmtoolusagesubmitted) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageTransaction](#xdmtoolusagetransaction) | reference | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
-| [xdm:toolUsageType](#xdmtoolusagetype) | `string` | `https://ns.adobe.com/xdm/datatypes/tool-usage#/definitions/toolUsage` |
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [xdm:toolUsageCancelled](#xdmtoolusagecancelled) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageComplete](#xdmtoolusagecomplete) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageFailure](#xdmtoolusagefailure) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageID](#xdmtoolusageid) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageName](#xdmtoolusagename) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageSaved](#xdmtoolusagesaved) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageStart](#xdmtoolusagestart) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageStep](#xdmtoolusagestep) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageStepName](#xdmtoolusagestepname) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageSubmitted](#xdmtoolusagesubmitted) | Measure | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageTransaction](#xdmtoolusagetransaction) | Transaction | Optional | Tool Usage (this schema) |
+| [xdm:toolUsageType](#xdmtoolusagetype) | `string` | Optional | Tool Usage (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:toolUsageCancelled
 ### Tool Usage Cancelled
@@ -40,13 +47,13 @@ Captured when a visitor cancels out of a tool usage process.
 
 `xdm:toolUsageCancelled`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageCancelled Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -59,13 +66,13 @@ Captured when a visitor successfully finishes using any type of tool or utility 
 
 `xdm:toolUsageComplete`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageComplete Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -78,13 +85,13 @@ Captured when a step in the tool usage process fails.
 
 `xdm:toolUsageFailure`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageFailure Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -137,13 +144,13 @@ Captured when a visitor saves and exits a tool usage process.
 
 `xdm:toolUsageSaved`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageSaved Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -156,13 +163,13 @@ Captured when a visitor initializes using any type of tool or utility on the sit
 
 `xdm:toolUsageStart`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageStart Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -175,13 +182,13 @@ Captured when any intermediary tool step is started on the site/app.
 
 `xdm:toolUsageStep`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageStep Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -214,13 +221,13 @@ Captured when a visitor submits data during a tool step.  Not necessarily synony
 
 `xdm:toolUsageSubmitted`
 * is optional
-* type: reference
+* type: Measure
 * defined in this schema
 
 ### xdm:toolUsageSubmitted Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/data/measure`
+* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
 
 
@@ -233,13 +240,13 @@ Extension of Transaction Data Type
 
 `xdm:toolUsageTransaction`
 * is optional
-* type: reference
+* type: Transaction
 * defined in this schema
 
 ### xdm:toolUsageTransaction Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/Transaction`
+* [Transaction](transaction.schema.md) – `https://ns.adobe.com/xdm/datatypes/transaction`
 
 
 

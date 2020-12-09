@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Financial account creation steps such as start, save, failure, and complete.",
   "definitions": {

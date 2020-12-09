@@ -11,12 +11,14 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": [
-    "financial_services",
-    "health_and_life_sciences",
-    "manufacturing",
-    "public_sector"
-  ],
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "health_and_life_sciences",
+      "manufacturing",
+      "public_sector"
+    ]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Steps for setting up any type of appointment with a company.",
   "definitions": {

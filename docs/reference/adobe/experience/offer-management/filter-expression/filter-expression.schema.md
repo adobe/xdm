@@ -15,6 +15,20 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\""
+    }
+  ]
+}
+```
+
+```json
+{
   "nodeType": "select",
   "variables": [
     {
@@ -81,97 +95,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
     {
       "nodeType": "literal",
       "literalType": "String",
-      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\""
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
-      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\""
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "o",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "quantification",
-        "quantifier": "some",
-        "variables": [
-          {
-            "nodeType": "varDecl",
-            "varName": "p",
-            "from": {
-              "nodeType": "literal",
-              "literalType": "List",
-              "value": [
-                "uri:com:example:placement-1001",
-                "uri:com:example:placement-1002"
-              ]
-            },
-            "where": {
-              "nodeType": "fnApply",
-              "fnName": "in",
-              "params": [
-                {
-                  "nodeType": "varRef",
-                  "varName": "p"
-                },
-                {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:placement",
-                  "object": {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:representations",
-                    "object": {
-                      "nodeType": "varRef",
-                      "varName": "o"
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
       "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\"&property=\"_instance.status=approved\""
     }
   ]
@@ -180,55 +103,13 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "o",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "fnApply",
-        "fnName": "in",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "uri:com:example:tag-0001"
-          },
-          {
-            "nodeType": "fieldLookup",
-            "fieldName": "xdm:tags",
-            "object": {
-              "nodeType": "varRef",
-              "varName": "o"
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
   "nodeType": "fnApply",
   "fnName": "modelInstances",
   "params": [
     {
       "nodeType": "literal",
       "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
+      "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\""
     }
   ]
 }
@@ -346,13 +227,13 @@ Represents an abstract syntax tree comprised of various node types. The expressi
         "variables": [
           {
             "nodeType": "varDecl",
-            "varName": "t",
+            "varName": "p",
             "from": {
               "nodeType": "literal",
               "literalType": "List",
               "value": [
-                "uri:com:example:tag-0001",
-                "uri:com:example:tag-0002"
+                "uri:com:example:placement-1001",
+                "uri:com:example:placement-1002"
               ]
             },
             "where": {
@@ -361,14 +242,18 @@ Represents an abstract syntax tree comprised of various node types. The expressi
               "params": [
                 {
                   "nodeType": "varRef",
-                  "varName": "t"
+                  "varName": "p"
                 },
                 {
                   "nodeType": "fieldLookup",
-                  "fieldName": "xdm:tags",
+                  "fieldName": "xdm:placement",
                   "object": {
-                    "nodeType": "varRef",
-                    "varName": "o"
+                    "nodeType": "fieldLookup",
+                    "fieldName": "xdm:representations",
+                    "object": {
+                      "nodeType": "varRef",
+                      "varName": "o"
+                    }
                   }
                 }
               ]
@@ -389,7 +274,63 @@ Represents an abstract syntax tree comprised of various node types. The expressi
     {
       "nodeType": "literal",
       "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
       "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "in",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "uri:com:example:tag-0001"
+          },
+          {
+            "nodeType": "fieldLookup",
+            "fieldName": "xdm:tags",
+            "object": {
+              "nodeType": "varRef",
+              "varName": "o"
+            }
+          }
+        ]
+      }
     }
   ]
 }
@@ -429,7 +370,7 @@ Represents an abstract syntax tree comprised of various node types. The expressi
       },
       "where": {
         "nodeType": "quantification",
-        "quantifier": "all",
+        "quantifier": "some",
         "variables": [
           {
             "nodeType": "varDecl",
@@ -580,6 +521,65 @@ Represents an abstract syntax tree comprised of various node types. The expressi
           {
             "nodeType": "literal",
             "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "quantification",
+        "quantifier": "all",
+        "variables": [
+          {
+            "nodeType": "varDecl",
+            "varName": "t",
+            "from": {
+              "nodeType": "literal",
+              "literalType": "List",
+              "value": [
+                "uri:com:example:tag-0001",
+                "uri:com:example:tag-0002"
+              ]
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "in",
+              "params": [
+                {
+                  "nodeType": "varRef",
+                  "varName": "t"
+                },
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:tags",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "o"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
             "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
           }
         ]
@@ -618,6 +618,171 @@ Represents an abstract syntax tree comprised of various node types. The expressi
                 }
               ]
             }
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "p",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/xdm/context/profile"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "or",
+        "params": [
+          {
+            "nodeType": "fnApply",
+            "fnName": "=",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:firstName",
+                "object": {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:person",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "p"
+                  }
+                }
+              },
+              {
+                "literalType": "String",
+                "nodeType": "literal",
+                "value": "Dennis"
+              }
+            ]
+          },
+          {
+            "nodeType": "fnApply",
+            "fnName": "=",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:lastName",
+                "object": {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:person",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "p"
+                  }
+                }
+              },
+              {
+                "literalType": "String",
+                "nodeType": "literal",
+                "value": "Kehrig"
+              }
+            ]
+          },
+          {
+            "nodeType": "quantification",
+            "quantifier": "all",
+            "variables": [
+              {
+                "nodeType": "varDecl",
+                "varName": "x",
+                "from": {
+                  "nodeType": "fnApply",
+                  "fnName": "modelInstances",
+                  "params": [
+                    {
+                      "nodeType": "literal",
+                      "literalType": "String",
+                      "value": "https://ns.adobe.com/xdm/context/experienceevent"
+                    }
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "and",
+                  "params": [
+                    {
+                      "nodeType": "quantification",
+                      "quantifier": "some",
+                      "variables": [
+                        {
+                          "nodeType": "varDecl",
+                          "varName": "id",
+                          "from": {
+                            "nodeType": "fieldLookup",
+                            "fieldName": "xdm:endUserIDs",
+                            "object": {
+                              "nodeType": "varRef",
+                              "varName": "x"
+                            }
+                          },
+                          "where": {
+                            "nodeType": "fnApply",
+                            "fnName": "in",
+                            "params": [
+                              {
+                                "nodeType": "varRef",
+                                "varName": "id"
+                              },
+                              {
+                                "nodeType": "fieldLookup",
+                                "fieldName": "xdm:identities",
+                                "object": {
+                                  "nodeType": "varRef",
+                                  "varName": "p"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "nodeType": "fnApply",
+                      "fnName": "=",
+                      "params": [
+                        {
+                          "nodeType": "fieldLookup",
+                          "fieldName": "xdm:city",
+                          "object": {
+                            "nodeType": "fieldLookup",
+                            "fieldName": "xdm:geo",
+                            "object": {
+                              "nodeType": "fieldLookup",
+                              "fieldName": "xdm:placecontext",
+                              "object": {
+                                "nodeType": "varRef",
+                                "varName": "x"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "literalType": "String",
+                          "nodeType": "literal",
+                          "value": "Tōkyō"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ]
       }
@@ -887,171 +1052,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
                 "nodeType": "literal",
                 "literalType": "String",
                 "value": "approved"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "p",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "https://ns.adobe.com/xdm/context/profile"
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "fnApply",
-        "fnName": "or",
-        "params": [
-          {
-            "nodeType": "fnApply",
-            "fnName": "=",
-            "params": [
-              {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:firstName",
-                "object": {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:person",
-                  "object": {
-                    "nodeType": "varRef",
-                    "varName": "p"
-                  }
-                }
-              },
-              {
-                "literalType": "String",
-                "nodeType": "literal",
-                "value": "Dennis"
-              }
-            ]
-          },
-          {
-            "nodeType": "fnApply",
-            "fnName": "=",
-            "params": [
-              {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:lastName",
-                "object": {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:person",
-                  "object": {
-                    "nodeType": "varRef",
-                    "varName": "p"
-                  }
-                }
-              },
-              {
-                "literalType": "String",
-                "nodeType": "literal",
-                "value": "Kehrig"
-              }
-            ]
-          },
-          {
-            "nodeType": "quantification",
-            "quantifier": "all",
-            "variables": [
-              {
-                "nodeType": "varDecl",
-                "varName": "x",
-                "from": {
-                  "nodeType": "fnApply",
-                  "fnName": "modelInstances",
-                  "params": [
-                    {
-                      "nodeType": "literal",
-                      "literalType": "String",
-                      "value": "https://ns.adobe.com/xdm/context/experienceevent"
-                    }
-                  ]
-                },
-                "where": {
-                  "nodeType": "fnApply",
-                  "fnName": "and",
-                  "params": [
-                    {
-                      "nodeType": "quantification",
-                      "quantifier": "some",
-                      "variables": [
-                        {
-                          "nodeType": "varDecl",
-                          "varName": "id",
-                          "from": {
-                            "nodeType": "fieldLookup",
-                            "fieldName": "xdm:endUserIDs",
-                            "object": {
-                              "nodeType": "varRef",
-                              "varName": "x"
-                            }
-                          },
-                          "where": {
-                            "nodeType": "fnApply",
-                            "fnName": "in",
-                            "params": [
-                              {
-                                "nodeType": "varRef",
-                                "varName": "id"
-                              },
-                              {
-                                "nodeType": "fieldLookup",
-                                "fieldName": "xdm:identities",
-                                "object": {
-                                  "nodeType": "varRef",
-                                  "varName": "p"
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "nodeType": "fnApply",
-                      "fnName": "=",
-                      "params": [
-                        {
-                          "nodeType": "fieldLookup",
-                          "fieldName": "xdm:city",
-                          "object": {
-                            "nodeType": "fieldLookup",
-                            "fieldName": "xdm:geo",
-                            "object": {
-                              "nodeType": "fieldLookup",
-                              "fieldName": "xdm:placecontext",
-                              "object": {
-                                "nodeType": "varRef",
-                                "varName": "x"
-                              }
-                            }
-                          }
-                        },
-                        {
-                          "literalType": "String",
-                          "nodeType": "literal",
-                          "value": "Tōkyō"
-                        }
-                      ]
-                    }
-                  ]
-                }
               }
             ]
           }

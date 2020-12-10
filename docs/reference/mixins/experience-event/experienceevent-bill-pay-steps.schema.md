@@ -60,12 +60,12 @@ Unknown type `object`.
   "properties": {
     "xdm:billPay": {
       "title": "Bill Pay Steps",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/toolusage",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
       "description": "Extension of toolUsage data type."
     },
     "xdm:billPayAccount": {
       "title": "Bill Pay Account",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/financialaccount",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
       "description": "Extension of financialAccount data type."
     }
   },

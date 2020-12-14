@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/product-catelog",
+  "$id": "https://ns.adobe.com/xdm/mixins/product-catalog",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Product Catelog",
   "type": "object",
@@ -15,14 +15,14 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
   "description": "This mixin is used to capture properties related to product catelog.",
   "definitions": {
-    "product-catelog": {
+    "product-catalog": {
       "properties": {
-        "xdm:productCatelogName": {
+        "xdm:productCatalogName": {
           "title": "Product Catelog Name",
           "type": "string",
           "description": "friendly name of the product catelog."
         },
-        "xdm:productCatelogDescription": {
+        "xdm:productCatalogDescription": {
           "title": "Product Catelog Description",
           "type": "string",
           "description": "Catelog description of the product."
@@ -32,7 +32,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/product-catelog"
+      "$ref": "#/definitions/product-catalog"
     }
   ],
   "meta:status": "experimental"

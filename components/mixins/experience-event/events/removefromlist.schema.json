@@ -27,10 +27,10 @@
               "type": "string",
               "description": "List unique identifier."
             },
-            "xdm:requestSource": {
-              "title": "Request Source",
+            "xdm:listName": {
+              "title": "List Name",
               "type": "string",
-              "description": "Name of the source this request came from."
+              "description": "Name of the List."
             }
           }
         }

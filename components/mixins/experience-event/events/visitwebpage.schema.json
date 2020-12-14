@@ -26,6 +26,11 @@
               "title": "Web Page Details",
               "type": "object",
               "properties": {
+                "xdm:webPageID": {
+                  "title": "Webpage ID",
+                  "type": "string",
+                  "description": "."
+                },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
@@ -101,23 +106,6 @@
               "title": "Keywords",
               "type": "string",
               "description": "Keywords for the search."
-            }
-          }
-        },
-        "xdm:marketing": {
-          "title": "Marketing",
-          "type": "object",
-          "description": "The information related to marketing activities that are active with the touchpoint.",
-          "properties": {
-            "xdm:campaignName": {
-              "title": "Campaign name",
-              "type": "string",
-              "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
-            },
-            "xdm:campaignType": {
-              "title": "Campaign Type",
-              "type": "string",
-              "description": "Name of the campaign type where multiple campaigns are grouped together."
             }
           }
         }

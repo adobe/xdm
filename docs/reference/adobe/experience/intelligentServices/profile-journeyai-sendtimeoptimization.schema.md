@@ -625,7 +625,7 @@ Unknown type `object`.
       "description": "Send time optimization scores here are for push channel.",
       "type": "object",
       "properties": {
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI/sendTimeScoreForOpen": {
+        "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen": {
           "title": "Send Time Score for Open",
           "description": "Score are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer opening a push notification if it's sent at that hour.",
           "type": "array",

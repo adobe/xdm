@@ -10,14 +10,6 @@
   "title": "Form Applications",
   "type": "object",
   "meta:extensible": true,
-  "meta:tags": {
-    "industry": [
-      "financial_services",
-      "automotive",
-      "education",
-      "public_sector"
-    ]
-  },
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
   "definitions": {
     "form-applications": {

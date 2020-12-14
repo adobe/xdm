@@ -10,7 +10,9 @@
   "title": "Policy Details",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "description": "Details for the insurance policy such as type, start date, and ID.",
   "definitions": {
     "policy-details": {

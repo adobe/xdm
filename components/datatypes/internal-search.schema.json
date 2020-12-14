@@ -1,0 +1,155 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/internal-search",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Internal Search",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment",
+      "public_sector"
+    ]
+  },
+  "description": "Used for internal site searches and includes all related search behaviors and details.",
+  "definitions": {
+    "internal-search": {
+      "properties": {
+        "xdm:autocompleteSearch": {
+          "title": "Search Autocomplete Value",
+          "type": "string",
+          "description": "Tracks when a visitor uses a suggested/autocompleted search value to execute the search"
+        },
+        "xdm:numberofSearchResults": {
+          "title": "Number of Results",
+          "type": "integer",
+          "description": "Count of the total number of search results returned."
+        },
+        "xdm:productFindingMethods": {
+          "title": "Search Product Finding Method",
+          "type": "string",
+          "description": "The internal search term value with merchandising binding. Will show what term was searched for immediately before viewing a product."
+        },
+        "xdm:refineSearch": {
+          "title": "Refinement Value",
+          "type": "string",
+          "description": "Number of times an internal search refinement has occurred."
+        },
+        "xdm:refineType": {
+          "title": "Search Refinement Type",
+          "type": "array",
+          "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)"
+        },
+        "xdm:refinementInstances": {
+          "title": "Search Refinement Instances",
+          "type": "integer",
+          "description": "Captures when a search refinement action occurs."
+        },
+        "xdm:resultsPageNumber": {
+          "title": "Search Results Page Number",
+          "type": "integer",
+          "description": "For paginated search results, tracks the page of results the visitor is viewing."
+        },
+        "xdm:searchInstances": {
+          "title": "Search Instances",
+          "type": "integer",
+          "description": "Number of times an internal search has occurred."
+        },
+        "xdm:searchLocation": {
+          "title": "Search Location in Page",
+          "type": "string",
+          "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search"
+        },
+        "xdm:searchNullSearchInstances": {
+          "title": "Null Search Instances",
+          "type": "integer",
+          "description": "Number of times an internal search has occurred that provided zero results."
+        },
+        "xdm:searchPostalCode": {
+          "title": "Search Postal Code",
+          "type": "string",
+          "description": "Captures the zip code used for a search, if applicable"
+        },
+        "xdm:searchRadius": {
+          "title": "Search Radius",
+          "type": "integer",
+          "description": "Captures the selected distance of the search radius."
+        },
+        "xdm:searchTerm": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Tracks the internal search term entered by the visitor."
+        },
+        "xdm:searchTermClick": {
+          "title": "Search Autocomplete Clicked",
+          "type": "integer",
+          "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This event tracks when a search term in clicked instead of when a search is executed"
+        },
+        "xdm:searchTermClicked": {
+          "title": "Search Autocomplete Clicked Value",
+          "type": "string",
+          "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked"
+        },
+        "xdm:searchTermTyped": {
+          "title": "Search Autocomplete Typed Value",
+          "type": "string",
+          "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms"
+        },
+        "xdm:searchType": {
+          "title": "Search Type",
+          "type": "string",
+          "description": "Captures the method of search being executed, if applicable. Examples could include a type-ahead search, directly-typed search, or any other type of custom search functionalitya site might have."
+        },
+        "xdm:sortInstance": {
+          "title": "Sort Instances",
+          "type": "integer",
+          "description": "Capture when a sort value has been applied to the list of search results."
+        },
+        "xdm:sortOrder": {
+          "title": "Sort Order",
+          "type": "string",
+          "enum": [
+            "ascending",
+            "descending",
+            "price: low to high",
+            "price: high to low",
+            "featured",
+            "best match",
+            "average customer review"
+          ],
+          "description": "ascending/descending"
+        },
+        "xdm:sortType": {
+          "title": "Search Sort Type",
+          "type": "string",
+          "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc."
+        },
+        "xdm:typeAhead": {
+          "title": "Search Type Ahead Value",
+          "type": "string",
+          "description": "Tracks the suggested/autocompleted search value to execute the search"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/internal-search"
+    }
+  ],
+  "meta:status": "experimental"
+}

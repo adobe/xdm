@@ -10,7 +10,9 @@
   "title": "Financial Account",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "description": "Financial account details, such as owners, balances, and types.",
   "definitions": {
     "financial-account": {
@@ -32,10 +34,7 @@
         },
         "xdm:financialAccountOwner": {
           "title": "Financial Account Owners",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
-          },
+          "type": "array: mixin",
           "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
         },
         "xdm:financialAccountType": {

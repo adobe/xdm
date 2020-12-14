@@ -63,12 +63,6 @@
           "type": "string",
           "description": "Type of the application process."
         },
-        "xdm:FormApplicationType": {
-          "title": "Form Application Type",
-          "type": "string",
-          "description": "Type of the application process.",
-          "meta:status": "deprecated"
-        },
         "xdm:formApplicationUnderReview": {
           "title": "Form Application Under Review",
           "$ref": "https://ns.adobe.com/xdm/data/measure",

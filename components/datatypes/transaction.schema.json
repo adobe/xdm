@@ -10,14 +10,6 @@
   "title": "Transaction",
   "type": "object",
   "meta:extensible": true,
-  "meta:tags": {
-    "industry": [
-      "financial_services",
-      "travel_and_hospitality",
-      "telecom",
-      "health_and_life_sciences"
-    ]
-  },
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
   "definitions": {
     "transaction": {

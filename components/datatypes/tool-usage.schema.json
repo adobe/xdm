@@ -81,7 +81,7 @@
         },
         "xdm:toolUsageTransaction": {
           "title": "Tool Usage Transaction",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/Transaction",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
           "description": "Extension of Transaction Data Type"
         },
         "xdm:toolUsageType": {

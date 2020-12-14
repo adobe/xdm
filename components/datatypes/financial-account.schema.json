@@ -53,8 +53,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/financial-account"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/financial-account"
+    }
+  ],
   "meta:status": "experimental"
 }

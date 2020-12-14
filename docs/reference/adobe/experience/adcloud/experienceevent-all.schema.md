@@ -36,7 +36,6 @@ Adobe Advertising Cloud ExperienceEvent full extension. Contains all Solution ad
 | [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
 | [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
 | [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [xdm:eventID](#xdmeventid) | `string` | Optional | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventid) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventmergeid) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -204,26 +203,6 @@ ID from the ad servers through Adobe Advertising Cloud STATS to track click-thro
 * defined in this schema
 
 ### https://ns.adobe.com/experience/adcloud/stitchId Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:eventID
-### ExperienceEvent ID
-
-An ID to uniquely identify an event.
-
-`xdm:eventID`
-* is optional
-* type: `string`
-* defined in [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventid)
-
-### xdm:eventID Type
 
 
 `string`

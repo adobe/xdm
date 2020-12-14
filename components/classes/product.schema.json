@@ -34,7 +34,7 @@
         },
         "xdm:productRating": {
           "title": "Product Rating",
-          "type": "string",
+          "type": "number",
           "description": "Customer review rating of the product."
         },
         "xdm:productListPrice": {

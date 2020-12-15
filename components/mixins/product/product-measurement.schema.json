@@ -19,7 +19,7 @@
       "properties": {
         "xdm:productSize": {
           "title": "Product Size",
-          "type": "number",
+          "type": "string",
           "description": "Standard product size for the product."
         },
         "xdm:unitOfMeasureCode": {

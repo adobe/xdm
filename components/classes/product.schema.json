@@ -39,15 +39,8 @@
         },
         "xdm:productListPrice": {
           "title": "Product List price",
-          "type": "number",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Default price of the product before sales and discounting."
-        },
-        "xdm:currencyCode": {
-          "title": "Currency code",
-          "type": "string",
-          "examples": ["USD", "EUR"],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 alphabetic currency code used for cost and pricing"
         },
         "xdm:productManufacturedDate": {
           "title": "Product Manufactured date",

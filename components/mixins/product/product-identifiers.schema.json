@@ -30,6 +30,7 @@
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
+          "format":"uri",
           "description": "The URL for the primary product image of the product."
         },
         "xdm:productSearchKeywords": {

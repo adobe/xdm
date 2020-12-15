@@ -5,25 +5,25 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/product-catelog-category",
+  "$id": "https://ns.adobe.com/xdm/mixins/product-catalog-category",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product Catelog Category",
+  "title": "Product Catalog Category",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product catelog category.",
+  "description": "This mixin is used to capture properties related to product catalog category.",
   "definitions": {
-    "product-catelog-category": {
+    "product-catalog-category": {
       "properties": {
-        "xdm:productCatelogCategoryName": {
+        "xdm:productCatalogCategoryName": {
           "title": "Product Category Name",
           "type": "string",
           "description": "friendly name of the product category."
         },
-        "xdm:parentProductCatelogCategoryName": {
-          "title": "Parent Product Catelog Category Name",
+        "xdm:parentProductCatalogCategoryName": {
+          "title": "Parent Product Catalog Category Name",
           "type": "string",
           "description": "Parent product category name used to build hierarchy."
         }
@@ -32,7 +32,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/product-catelog-category"
+      "$ref": "#/definitions/product-catalog-category"
     }
   ],
   "meta:status": "experimental"

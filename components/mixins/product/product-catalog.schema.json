@@ -7,25 +7,25 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/product-catalog",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product Catelog",
+  "title": "Product Catalog",
   "type": "object",
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product catelog.",
+  "description": "This mixin is used to capture properties related to product catalog.",
   "definitions": {
     "product-catalog": {
       "properties": {
         "xdm:productCatalogName": {
-          "title": "Product Catelog Name",
+          "title": "Product Catalog Name",
           "type": "string",
-          "description": "friendly name of the product catelog."
+          "description": "friendly name of the product catalog."
         },
         "xdm:productCatalogDescription": {
-          "title": "Product Catelog Description",
+          "title": "Product Catalog Description",
           "type": "string",
-          "description": "Catelog description of the product."
+          "description": "Catalog description of the product."
         }
       }
     }

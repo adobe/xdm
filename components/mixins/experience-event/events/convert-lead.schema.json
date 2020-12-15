@@ -29,17 +29,17 @@
                 "xdm:assignTo": {
                   "title": "Assign To",
                   "type": "string",
-                  "description": "assignTo."
+                  "description": "."
                 },
-                "xdm:isSendNotificationEmail": {
-                  "title": "Send Notification Email",
+                "xdm:isSentNotificationEmail": {
+                  "title": "Is Sent Notification Email",
                   "type": "boolean",
-                  "description": "send notification email."
+                  "description": "Sent notification email."
                 },
                 "xdm:convertedStatus": {
                   "title": "Converted Status",
                   "type": "string",
-                  "description": "converted status."
+                  "description": "Converted status."
                 }
               }
             }

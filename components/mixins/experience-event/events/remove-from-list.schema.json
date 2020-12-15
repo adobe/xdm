@@ -26,11 +26,6 @@
               "title": "List ID",
               "type": "string",
               "description": "List unique identifier."
-            },
-            "xdm:listName": {
-              "title": "List Name",
-              "type": "string",
-              "description": "Name of the List."
             }
           }
         }

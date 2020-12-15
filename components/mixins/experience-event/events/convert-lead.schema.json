@@ -31,9 +31,9 @@
                   "type": "string",
                   "description": "assignTo."
                 },
-                "xdm:sendNotificationEmail": {
+                "xdm:isSendNotificationEmail": {
                   "title": "Send Notification Email",
-                  "type": "string",
+                  "type": "boolean",
                   "description": "send notification email."
                 },
                 "xdm:convertedStatus": {

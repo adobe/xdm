@@ -27,11 +27,6 @@
               "type": "string",
               "description": "Opportunity ID"
             },
-            "xdm:opportunityName": {
-              "title": "Opportunity Name",
-              "type": "string",
-              "description": "Friendly name for opportunity."
-            },
             "xdm:isPrimary": {
               "title": "Is Primary",
               "type": "boolean",

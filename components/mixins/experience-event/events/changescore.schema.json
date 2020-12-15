@@ -1,0 +1,87 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/changescore",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Change Score",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.changeScore",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use for information regarding lead operation change score events.",
+  "definitions": {
+    "changescore": {
+      "properties": {
+        "xdm:leadOpearation": {
+          "title": "lead Operation",
+          "type": "object",
+          "properties": {
+            "xdm:changeScore": {
+              "title": "Change Score",
+              "type": "object",
+              "properties": {
+                "xdm:scoreName": {
+                  "title": "Score Name",
+                  "type": "string",
+                  "description": "score name."
+                },
+                "xdm:changeValue": {
+                  "title": "Change Value",
+                  "type": "string",
+                  "description": "change value."
+                },
+                "xdm:newValue": {
+                  "title": "New Value",
+                  "type": "integer",
+                  "description": "New Value."
+                },
+                "xdm:oldValue": {
+                  "title": "Old Value",
+                  "type": "integer",
+                  "description": "old Value."
+                },
+                "xdm:reason": {
+                  "title": "Reason",
+                  "type": "string",
+                  "description": "Reason."
+                },
+                "xdm:urgency": {
+                  "title": "Urgency",
+                  "type": "number",
+                  "description": "Urgency."
+                },
+                "xdm:priority": {
+                  "title": "Priority",
+                  "type": "integer",
+                  "description": "Priority."
+                },
+                "xdm:relativeScore": {
+                  "title": "Relative Score",
+                  "type": "integer",
+                  "description": "Relative score."
+                },
+                "xdm:relativeUrgency": {
+                  "title": "Relative Urgency",
+                  "type": "integer",
+                  "description": "Relative Urgency."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/changescore"
+    }
+  ],
+  "meta:status": "experimental"
+}

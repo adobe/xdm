@@ -5,27 +5,32 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/add-to-list",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/removefromlist",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Add To List",
+  "title": "Remove From List",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "listOperation.addToList",
+  "meta:conditionalValue": "listOpearation.removeFromList",  
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding list operation add to list events.",
+  "description": "Remove from list.",
   "definitions": {
-    "addtolist": {
-      "properties": {        
+    "removefromlist": {
+      "properties":{
         "xdm:listOperations":{
-          "title": "List Operations",
+          "title": "List Opearations",
           "type":"object",
           "properties": {
             "xdm:listID": {
               "title": "List ID",
               "type": "string",
-              "description": "List unique identifier."
+              "description": "Marketing list unique identifier."
+            },
+            "xdm:requestSource": {
+              "title": "Request Source",
+              "type": "string",
+              "description": "Name of the source this request came from."
             }
           }
         }
@@ -34,7 +39,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/addtolist"
+      "$ref": "#/definitions/removefromlist"
     }
   ],
   "meta:status": "experimental"

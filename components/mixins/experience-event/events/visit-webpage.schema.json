@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/visitwebpage",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/visit-webpage",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Visit WebPage",
   "type": "object",
@@ -26,6 +26,11 @@
               "title": "Web Page Details",
               "type": "object",
               "properties": {
+                "xdm:webPageID": {
+                  "title": "Webpage ID",
+                  "type": "string",
+                  "description": "."
+                },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
@@ -42,10 +47,9 @@
                   "type": "string",
                   "description": "Query Paramters used for the web page."
                 },
-                "xdm:personalizedURL": {
-                  "title": "Personalized URL",
-                  "type": "string",
-                  "format": "uri",
+                "xdm:isPersonalizedURL": {
+                  "title": "Is Personalized URL",
+                  "type": "boolean",
                   "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                 }
               }
@@ -102,23 +106,6 @@
               "title": "Keywords",
               "type": "string",
               "description": "Keywords for the search."
-            }
-          }
-        },
-        "xdm:marketing": {
-          "title": "Marketing",
-          "type": "object",
-          "description": "The information related to marketing activities that are active with the touchpoint.",
-          "properties": {
-            "xdm:campaignName": {
-              "title": "Campaign name",
-              "type": "string",
-              "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
-            },
-            "xdm:campaignType": {
-              "title": "Campaign Type",
-              "type": "string",
-              "description": "Name of the campaign type where multiple campaigns are grouped together."
             }
           }
         }

@@ -19,7 +19,7 @@
   "definitions": {
     "alert-setup-steps": {
       "properties": {
-        "xdm:marketing ": {
+        "xdm:alerts": {
           "type": "object",
           "properties": {
             "xdm:alertSetup": {

@@ -25,7 +25,7 @@
   "definitions": {
     "alert-impressions": {
       "properties": {
-        "xdm:marketing ": {
+        "xdm:alerts": {
           "type": "object",
           "properties": {
             "xdm:alertClicks": {

@@ -31,6 +31,7 @@ diff -rq tempmaster/bin/xed-validation/xed xed/ | sed -E "s/: /\\//g" > schemaCh
 (echo "++++++++++Start XED schema validation..... ++++++++++"; sleep 1)
 ./compile.sh
 returnCode=$?
+#
 
 if [ $returnCode -ne 0 ]; then
   echo "There are schema validation errors!"

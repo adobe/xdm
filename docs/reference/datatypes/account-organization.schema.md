@@ -13,7 +13,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 ## Schema Hierarchy
 
 * Account Organization `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-  * [Positive Currency](positive-currency.schema.md) `https://ns.adobe.com/xdm/datatypes/positive-currency`
+  * [Currency](currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 ## Account Organization Example
@@ -30,7 +30,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Organization (this schema) |
 | [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Organization (this schema) |
 | [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:annualRevenue](#xdmannualrevenue) | Positive Currency | Optional | Account Organization (this schema) |
+| [xdm:annualRevenue](#xdmannualrevenue) | Currency | Optional | Account Organization (this schema) |
 | [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Organization (this schema) |
 | [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Organization (this schema) |
 | [xdm:industry](#xdmindustry) | `string` | Optional | Account Organization (this schema) |
@@ -154,13 +154,13 @@ Estimated amount of annual revenue of the organization.
 
 `xdm:annualRevenue`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:annualRevenue Type
 
 
-* [Positive Currency](positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 

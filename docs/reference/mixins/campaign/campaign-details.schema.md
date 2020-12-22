@@ -13,7 +13,7 @@ This mixin is used to capture properties related to business campaign details.
 ## Schema Hierarchy
 
 * XDM Business Campaign Details `https://ns.adobe.com/xdm/mixins/campaign-details`
-  * [Positive Currency](../../datatypes/positive-currency.schema.md) `https://ns.adobe.com/xdm/datatypes/positive-currency`
+  * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 ## XDM Business Campaign Details Example
@@ -25,8 +25,8 @@ This mixin is used to capture properties related to business campaign details.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:actualCost](#xdmactualcost) | Positive Currency | Optional | XDM Business Campaign Details (this schema) |
-| [xdm:budgetedCost](#xdmbudgetedcost) | Positive Currency | Optional | XDM Business Campaign Details (this schema) |
+| [xdm:actualCost](#xdmactualcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
+| [xdm:budgetedCost](#xdmbudgetedcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignEndDate](#xdmcampaignenddate) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignOwnerID](#xdmcampaignownerid) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignProgressionName](#xdmcampaignprogressionname) | `string` | Optional | XDM Business Campaign Details (this schema) |
@@ -34,7 +34,7 @@ This mixin is used to capture properties related to business campaign details.
 | [xdm:campaignStatus](#xdmcampaignstatus) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:channelName](#xdmchannelname) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:expectedResponse](#xdmexpectedresponse) | `string` | Optional | XDM Business Campaign Details (this schema) |
-| [xdm:expectedRevenue](#xdmexpectedrevenue) | Positive Currency | Optional | XDM Business Campaign Details (this schema) |
+| [xdm:expectedRevenue](#xdmexpectedrevenue) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:integrationPartnerName](#xdmintegrationpartnername) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | XDM Business Campaign Details (this schema) |
@@ -53,13 +53,13 @@ This mixin is used to capture properties related to business campaign details.
 
 `xdm:actualCost`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:actualCost Type
 
 
-* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -70,13 +70,13 @@ This mixin is used to capture properties related to business campaign details.
 
 `xdm:budgetedCost`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:budgetedCost Type
 
 
-* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -215,13 +215,13 @@ This mixin is used to capture properties related to business campaign details.
 
 `xdm:expectedRevenue`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:expectedRevenue Type
 
 
-* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 

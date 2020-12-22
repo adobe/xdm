@@ -100,6 +100,9 @@ class Converter extends EventEmitter {
           }
         };
 
+        //special fixes for mergeAllof resolver, can also be fixed in schema level
+        if (i == "xdm:probabilityPercentage") o[i].type = "number";
+
         if (o[i] !== null && typeof(o[i]) == "object") {
           //going one step down in the object tree!!
           traverse(o[i]);

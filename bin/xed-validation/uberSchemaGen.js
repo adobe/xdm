@@ -28,7 +28,7 @@ glob(tempInputFolder + "**/*.schema.json", function(er, files) {
 
     for (let ind in classes) {//generate uber schemas for each class
         let uberSchemaFile = uberSchemaFolder+ind.split("/").pop() + "-generated.schema.json"
-        console.log("Generate uber schema: " + uberSchemaFile);
+        //console.log("Generate uber schema: " + uberSchemaFile);
 
         let xdmObj = {};
         xdmObj.$id = ind + "-generated";

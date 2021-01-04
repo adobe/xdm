@@ -53,11 +53,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded."
         },
-        "xdm:launchCount": {
-          "title": "Launch Count",
-          "type": "integer",
-          "description": "Total number of launch events for this application."
-        },
         "xdm:upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade."
@@ -70,71 +65,6 @@
             "foreground": "Foreground",
             "background": "Background",
             "detached": "Detached"
-          },
-          "xdm:launchType": {
-            "type": "string",
-            "description": "Specifies the launch event type. Install indicates this is the first application launch after the application was installed. Upgrade indicates this is the first application launch after the application was upgraded. Launch is an application launch which is not after an application install or upgrade.",
-            "enum": ["launch", "install", "upgrade"],
-            "meta:enum": {
-              "launch": "Launch",
-              "install": "Install",
-              "upgrade": "Upgrade"
-            }
-          },
-          "xdm:closeType": {
-            "type": "string",
-            "description": "Specifies the close event type. A value of close means the application signaled that it has closed, either by a user action or by the device. Unknown means the application did not signal that it closed, which could indicate an application crash, a system failure, or an improperly configured application.",
-            "enum": ["close", "unknown"],
-            "meta:enum": {
-              "close": "Close",
-              "unknown": "Unknown"
-            }
-          },
-          "xdm:sessionLength": {
-            "title": "Session length",
-            "type": "integer",
-            "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Included with close event."
-          },
-          "xdm:ignoredSessionLength": {
-            "title": "Ignored session length",
-            "type": "integer",
-            "description": "If the previous session lasts longer than the maxSessionLength, that session length is ignored and recorded here. Included with close event."
-          },
-          "xdm:daysSinceFirstUse": {
-            "title": "Days since first use",
-            "type": "integer",
-            "description": "Number of days since first launch event."
-          },
-          "xdm:daysSinceLastUse": {
-            "title": "Days since last use",
-            "type": "integer",
-            "description": "Number of days since last launch event."
-          },
-          "xdm:daysSinceLastUpgrade": {
-            "title": "Days since last upgrade",
-            "type": "integer",
-            "description": "Number of days since last upgrade event."
-          },
-          "xdm:launchesSinceLastUpgrade": {
-            "title": "Launches since last upgrade",
-            "type": "integer",
-            "description": "Number of launch events since last upgrade event."
-          },
-          "xdm:installDate": {
-            "title": "Install date",
-            "type": "string",
-            "format": "date",
-            "description": "Date of first launch after installation."
-          },
-          "xdm:dayOfWeek": {
-            "title": "Day of week",
-            "type": "integer",
-            "description": "Measures the day of the week the app was launched."
-          },
-          "xdm:hourOfDay": {
-            "title": "Hour of day",
-            "type": "integer",
-            "description": "Measures the hour the app was launched and uses the 24-hour numerical format. Used for time parting to determine peak usage times."
           }
         }
       }

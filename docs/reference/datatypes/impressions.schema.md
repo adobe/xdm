@@ -19,16 +19,16 @@ Tracks when impressions are presented on a site, along with names, types, and co
 ## Impressions Examples
 
 ```json
-{}
-```
-
-```json
 {
   "schema:name": "metric: impressions",
   "@id": "xdm:impressions",
   "xdm:measurement": "count",
   "xdm:unit": ""
 }
+```
+
+```json
+{}
 ```
 
 

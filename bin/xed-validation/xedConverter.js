@@ -290,7 +290,7 @@ class Converter extends EventEmitter {
 
     var fullSchema = mergeAllOf(deref(rawSchema), { //deref and resolve allOf
         resolvers: {
-            "meta:extends" : function(values) {//resolving conflict
+          "meta:extends" : function(values) {//resolving conflict
               var extendsList = [];
               for (var i in values)
                 if (rawSchema["$id"] != values[i]) //not meta:extends itself
@@ -306,8 +306,8 @@ class Converter extends EventEmitter {
               }
             });
             return newEnum;
-          },
-            "meta:status" : function(values) {//do nothing for now when resolving conflict
+            },
+          "meta:status" : function(values) {//do nothing for now when resolving conflict
               var statusList = [];
               for (var i in values)
                       statusList = statusList.concat(values[i]);
@@ -315,7 +315,7 @@ class Converter extends EventEmitter {
                 //console.log("!!!This schema contains multiple meta:status after resolving allOf!!!")
               return Array.from(new Set(statusList));
             },
-            "meta:extensible" : function(values) {
+          "meta:extensible" : function(values) {
                 var extensibleList = [];
                 for (var i in values)
                     extensibleList = extensibleList.concat(values[i]);
@@ -323,14 +323,21 @@ class Converter extends EventEmitter {
                     //console.log("!!!This schema contains multiple meta:extensible after resolving allOf!!!")
                 return Array.from(new Set(extensibleList));
             },
-            "meta:abstract" : function(values) {
+          "meta:abstract" : function(values) {
                 var abstractList = [];
                 for (var i in values)
                     abstractList = abstractList.concat(values[i]);
                 if (abstractList.length >1 )
                     //console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
                 return Array.from(new Set(abstractList));
-            }
+            },
+          defaultResolver: function(values) {
+            var valueList = [];
+            for (var i in values)
+              valueList = valueList.concat(values[i]);
+            if (valueList.length >1 )
+              return Array.from(new Set(valueList));
+          },
         }
     });
 

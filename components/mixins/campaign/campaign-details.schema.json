@@ -114,17 +114,17 @@
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:budgetedCost": {
           "title": "Budgeted Cost",
           "description": "",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:actualCost": {
           "title": "Actual Cost",
           "description": "",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         }
       }
     }

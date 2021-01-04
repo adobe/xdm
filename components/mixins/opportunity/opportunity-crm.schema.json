@@ -85,7 +85,7 @@
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
           "description": "Likelihood that opportunity will close, stated as a percentage.",
-          "type": "integer",
+          "type": "number",
           "minimum": 0,
           "maximum": 100
         },

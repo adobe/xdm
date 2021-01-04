@@ -10,7 +10,7 @@
   "title": "Person ID",
   "type": "object",
   "meta:intendedToExtend": [],
-  "description": "Used to store Person ID for an experience event.",
+  "description": "Used to store Person ID for an entity.",
   "definitions": {
     "person-id": {
       "properties": {

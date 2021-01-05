@@ -15,8 +15,8 @@
     "financial-account": {
       "properties": {
         "xdm:currentAccountBalance": {
-          "title": "Current Financial Account Balance",         
-          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",  
+          "title": "Current Financial Account Balance",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Balance in the account."
         },
         "xdm:financialAccountID": {

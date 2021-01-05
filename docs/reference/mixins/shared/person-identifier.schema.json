@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/mixins/person-identifier",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Person ID",
+    "title": "Person Identifier",
     "type": "object",
     "meta:intendedToExtend": [],
     "description": "Used to store Person ID for an entity.",

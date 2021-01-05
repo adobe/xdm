@@ -1,5 +1,5 @@
 
-# Person ID Schema
+# Person Identifier Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/person-identifier
@@ -11,18 +11,18 @@ Used to store Person ID for an entity.
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/shared/person-identifier.schema.json](mixins/shared/person-identifier.schema.json) |
 
-## Person ID Example
+## Person Identifier Example
 ```json
 {
   "xdm:personID": "gjukoyi1234"
 }
 ```
 
-# Person ID Properties
+# Person Identifier Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:personID](#xdmpersonid) | `string` | Optional | Person ID (this schema) |
+| [xdm:personID](#xdmpersonid) | `string` | Optional | Person Identifier (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:personID

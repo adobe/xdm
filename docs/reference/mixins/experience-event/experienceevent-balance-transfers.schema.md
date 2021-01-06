@@ -1,26 +1,26 @@
 
-# Bill Pay Steps Schema
+# Balance Transfers Schema
 
 ```
-https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-steps
+https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers
 ```
 
-Bill pay steps such as start, save, failure, and complete.
+Used for financial account balance transfers between accounts.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-bill-pay-steps.schema.json](mixins/experience-event/experienceevent-bill-pay-steps.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-balance-transfers.schema.json](mixins/experience-event/experienceevent-balance-transfers.schema.json) |
 
-## Bill Pay Steps Example
+## Balance Transfers Example
 ```json
 {}
 ```
 
-# Bill Pay Steps Properties
+# Balance Transfers Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:personalFinances](#xdmpersonalfinances) | `object` | Optional | Bill Pay Steps (this schema) |
+| [xdm:personalFinances](#xdmpersonalfinances) | `object` | Optional | Balance Transfers (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:personalFinances
@@ -39,41 +39,41 @@ Bill pay steps such as start, save, failure, and complete.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:billPay`|  | Optional |
-| `xdm:billPayAccount`|  | Optional |
+| `xdm:balanceTransfer`|  | Optional |
+| `xdm:balanceTransferAccount`|  | Optional |
 
 
 
-#### xdm:billPay
-##### Bill Pay Steps
+#### xdm:balanceTransfer
+##### Balance Transfer
 
-Extension of toolUsage data type.
+Extension of transaction data type.
 
-`xdm:billPay`
+`xdm:balanceTransfer`
 * is optional
 * type: reference
 
-##### xdm:billPay Type
+##### xdm:balanceTransfer Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
+* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
 
 
 
 
-#### xdm:billPayAccount
-##### Bill Pay Account
+
+
+
+#### xdm:balanceTransferAccount
+##### Balance Transfer Account
 
 Extension of financialAccount data type.
 
-`xdm:billPayAccount`
+`xdm:balanceTransferAccount`
 * is optional
 * type: reference
 
-##### xdm:billPayAccount Type
+##### xdm:balanceTransferAccount Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/financial-account`

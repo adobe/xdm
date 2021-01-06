@@ -10,12 +10,6 @@
     "title": "Form Applications",
     "type": "object",
     "meta:extensible": true,
-    "meta:industry": [
-        "financial_services",
-        "automotive",
-        "education",
-        "public_sector"
-    ],
     "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
     "definitions": {
         "form-applications": {
@@ -47,6 +41,7 @@
                 },
                 "xdm:formApplicationStatus": {
                     "title": "Form Application Status",
+                    "type": "string",
                     "enum": [
                         "initiated",
                         "in progress",
@@ -60,7 +55,7 @@
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Captured when the status for an application changes, either from an online or offline update."
                 },
-                "xdm:FormApplicationType": {
+                "xdm:formApplicationType": {
                     "title": "Form Application Type",
                     "type": "string",
                     "description": "Type of the application process."

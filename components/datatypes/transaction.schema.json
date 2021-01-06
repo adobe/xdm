@@ -10,13 +10,6 @@
   "title": "Transaction",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": [
-    "retail",
-    "financial_services",
-    "travel_and_hospitality",
-    "telecom",
-    "health_and_life_sciences"
-  ],
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
   "definitions": {
     "transaction": {
@@ -31,16 +24,16 @@
           "type": "string",
           "description": "Identifier for the transaction."
         },
-        "xdm:transactionType": {
-          "title": "Transaction Type",
-          "type": "string",
-          "description": "Records the type of transaction utilized by the visitor."
-        },
         "xdm:transactionDate": {
           "title": "Transaction Date",
           "type": "string",
           "format": "date-time",
           "description": "Records the date/time of the transaction."
+        },
+        "xdm:transactionType": {
+          "title": "Transaction Type",
+          "type": "string",
+          "description": "Records the type of transaction utilized by the visitor."
         }
       }
     }

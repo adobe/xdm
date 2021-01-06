@@ -1,37 +1,37 @@
 
-# Bill Pay Steps Schema
+# Appointment Request Steps Schema
 
 ```
-https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-steps
+https://ns.adobe.com/xdm/mixins/experienceevent-appointment-request-steps
 ```
 
-Bill pay steps such as start, save, failure, and complete.
+Steps for setting up any type of appointment with a company.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-bill-pay-steps.schema.json](mixins/experience-event/experienceevent-bill-pay-steps.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-appointment-request-steps.schema.json](mixins/experience-event/experienceevent-appointment-request-steps.schema.json) |
 
-## Bill Pay Steps Example
+## Appointment Request Steps Example
 ```json
 {}
 ```
 
-# Bill Pay Steps Properties
+# Appointment Request Steps Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:personalFinances](#xdmpersonalfinances) | `object` | Optional | Bill Pay Steps (this schema) |
+| [xdm:userAccount](#xdmuseraccount) | `object` | Optional | Appointment Request Steps (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:personalFinances
+## xdm:userAccount
 
 
-`xdm:personalFinances`
+`xdm:userAccount`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:personalFinances Type
+### xdm:userAccount Type
 
 
 `object` with following properties:
@@ -39,44 +39,23 @@ Bill pay steps such as start, save, failure, and complete.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:billPay`|  | Optional |
-| `xdm:billPayAccount`|  | Optional |
+| `xdm:appointmentRequestSteps`|  | Optional |
 
 
 
-#### xdm:billPay
-##### Bill Pay Steps
+#### xdm:appointmentRequestSteps
+##### Appointment Request Steps
 
 Extension of toolUsage data type.
 
-`xdm:billPay`
+`xdm:appointmentRequestSteps`
 * is optional
 * type: reference
 
-##### xdm:billPay Type
+##### xdm:appointmentRequestSteps Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
-
-
-
-
-#### xdm:billPayAccount
-##### Bill Pay Account
-
-Extension of financialAccount data type.
-
-`xdm:billPayAccount`
-* is optional
-* type: reference
-
-##### xdm:billPayAccount Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
 
 
 

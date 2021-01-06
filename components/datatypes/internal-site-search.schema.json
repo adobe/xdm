@@ -88,18 +88,18 @@
           "type": "string",
           "description": "Tracks the internal site search term entered by the visitor."
         },
-        "xdm:autocompleteClicked": {
-          "title": "Autocomplete Clicked",
+        "xdm:autoCompleteClicked": {
+          "title": "Auto Complete Clicked",
           "type": "boolean",
           "description": "Indicates when a visitor uses a suggested/autocompleted search value to execute the search"
         },
-        "xdm:autocompleteValue": {
-          "title": "Autocomplete Value",
+        "xdm:autoCompleteValue": {
+          "title": "Auto Complete Value",
           "type": "string",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked"
         },
-        "xdm:autocompleteTypedValue": {
-          "title": "Autocomplete Typed Value",
+        "xdm:autoCompleteTypedValue": {
+          "title": "Auto Complete Typed Value",
           "type": "string",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms"
         },

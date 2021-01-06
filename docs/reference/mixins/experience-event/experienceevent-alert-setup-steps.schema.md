@@ -1,37 +1,37 @@
 
-# Bill Pay Steps Schema
+# Alert Setup Steps Schema
 
 ```
-https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-steps
+https://ns.adobe.com/xdm/mixins/experienceevent-alert-setup-steps
 ```
 
-Bill pay steps such as start, save, failure, and complete.
+Alert steps such as start, save, failure, and complete.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-bill-pay-steps.schema.json](mixins/experience-event/experienceevent-bill-pay-steps.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-alert-setup-steps.schema.json](mixins/experience-event/experienceevent-alert-setup-steps.schema.json) |
 
-## Bill Pay Steps Example
+## Alert Setup Steps Example
 ```json
 {}
 ```
 
-# Bill Pay Steps Properties
+# Alert Setup Steps Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:personalFinances](#xdmpersonalfinances) | `object` | Optional | Bill Pay Steps (this schema) |
+| [xdm:alerts](#xdmalerts) | `object` | Optional | Alert Setup Steps (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:personalFinances
+## xdm:alerts
 
 
-`xdm:personalFinances`
+`xdm:alerts`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:personalFinances Type
+### xdm:alerts Type
 
 
 `object` with following properties:
@@ -39,44 +39,23 @@ Bill pay steps such as start, save, failure, and complete.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:billPay`|  | Optional |
-| `xdm:billPayAccount`|  | Optional |
+| `xdm:alertSetup`|  | Optional |
 
 
 
-#### xdm:billPay
-##### Bill Pay Steps
+#### xdm:alertSetup
+##### Alert Setup
 
 Extension of toolUsage data type.
 
-`xdm:billPay`
+`xdm:alertSetup`
 * is optional
 * type: reference
 
-##### xdm:billPay Type
+##### xdm:alertSetup Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
-
-
-
-
-#### xdm:billPayAccount
-##### Bill Pay Account
-
-Extension of financialAccount data type.
-
-`xdm:billPayAccount`
-* is optional
-* type: reference
-
-##### xdm:billPayAccount Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
 
 
 

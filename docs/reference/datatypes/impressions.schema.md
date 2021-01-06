@@ -10,11 +10,6 @@ Tracks when impressions are presented on a site, along with names, types, and co
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/impressions.schema.json](datatypes/impressions.schema.json) |
-## Schema Hierarchy
-
-* Impressions `https://ns.adobe.com/xdm/datatypes/impressions`
-  * [Measure](data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
-
 
 ## Impressions Examples
 
@@ -36,7 +31,7 @@ Tracks when impressions are presented on a site, along with names, types, and co
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:impressionDisplays](#xdmimpressiondisplays) | Measure | Optional | Impressions (this schema) |
+| [xdm:impressionDisplays](#xdmimpressiondisplays) | `integer` | Optional | Impressions (this schema) |
 | [xdm:impressionID](#xdmimpressionid) | `string` | Optional | Impressions (this schema) |
 | [xdm:impressionType](#xdmimpressiontype) | `string` | Optional | Impressions (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -48,13 +43,14 @@ Counts the number of times an impression item has been displayed to a visitor.
 
 `xdm:impressionDisplays`
 * is optional
-* type: Measure
+* type: `integer`
 * defined in this schema
 
 ### xdm:impressionDisplays Type
 
 
-* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`integer`
+
 
 
 

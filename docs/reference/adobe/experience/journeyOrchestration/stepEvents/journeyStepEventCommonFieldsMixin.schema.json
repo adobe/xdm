@@ -133,9 +133,9 @@
                             "description": "indicate the instance type, if it is batch or unitary.",
                             "type": "string"
                         },
-                        "https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex": {
-                            "title": "recurrenceIndex",
-                            "description": "Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).",
+                        "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": {
+                            "title": "batchRecurrenceIndex",
+                            "description": "Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).",
                             "type": "integer"
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary": {

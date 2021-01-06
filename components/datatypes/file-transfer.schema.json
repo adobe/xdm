@@ -1,0 +1,67 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/file-transfer",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "File Transfer",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "",
+  "definitions": {
+    "file-transfer": {
+      "properties": {
+        "xdm:fileName": {
+          "title": "File Name",
+          "type": "string",
+          "description": "Friendly name of the file being up/downloaded by the visitor."
+        },
+        "xdm:fileSize": {
+          "title": "File Size",
+          "type": "number",
+          "description": "File size of file being up/downloaded by the visitor."
+        },
+        "xdm:fileTransferComplete": {
+          "title": "File Transfer Complete",
+          "type": "integer",
+          "description": "Captured when a file transfer is successfully completed."
+        },
+        "xdm:fileTransferStart": {
+          "title": "File Transfer Start",
+          "type": "integer",
+          "description": "Captured when a file transfer is initiated."
+        },
+        "xdm:fileTransferError": {
+          "title": "File Transfer Error",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Captured when an error occurs during the  file transfer process."
+        },
+        "xdm:fileTransferType": {
+          "title": "File Transfer Type",
+          "type": "string",
+          "description": "Type of the file transfer, if applicable."
+        },
+        "xdm:fileType": {
+          "title": "File Type",
+          "type": "string",
+          "description": "Type or category of file being up/downloaded by the visitor."
+        },
+        "xdm:fileURL": {
+          "title": "File URL",
+          "format": "uri",
+          "type": "string",
+          "description": "URL of file being up/downloaded by the visitor."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/file-transfer"
+    }
+  ],
+  "meta:status": "experimental"
+}

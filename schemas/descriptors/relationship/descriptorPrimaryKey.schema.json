@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/common/descriptors/eventRelationship",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Event Relationship Descriptor",
+  "title": "Primary Key Descriptor",
   "meta:extensible": false,
   "meta:extends": [
     "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor"

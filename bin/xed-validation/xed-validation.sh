@@ -7,11 +7,13 @@ git clone https://github.com/adobe/xdm.git tempmaster
 cp -r ../../schemas ./tempinput/
 cp -r ../../components ./tempinput/
 cp -r ../../extensions ./tempinput/
+mkdir ./tempinput/components/uberschemas
 
 (echo "++++++++++Start clean-up for XED conversion of platform schemas only.....++++++++++"; sleep 1)
 ./cleaninput.sh #cleanup non-platform central repo xdms
 
 (echo "++++++++++Start XED conversion pre-processing.....++++++++++"; sleep 1)
+node uberSchemaGen.js
 node schemaLocGen.js
 node tempGen.js -i tempinput/schemas -j xdm
 node tempGen.js -i tempinput/components -j xdm

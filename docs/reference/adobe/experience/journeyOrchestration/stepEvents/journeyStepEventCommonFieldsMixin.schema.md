@@ -36,6 +36,7 @@ This Mixin contains the common Journey Metadata information.
 |----------|------|----------|
 | `https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/entrance`| boolean | Optional |
@@ -74,7 +75,6 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionActionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionChannel`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reentrance`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/stepID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/stepName`| string | Optional |
@@ -117,6 +117,27 @@ This Mixin contains the common Journey Metadata information.
 
 
 `string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex
+##### batchRecurrenceIndex
+
+Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).
+
+`https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex`
+* is optional
+* type: `integer`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex Type
+
+
+`integer`
 
 
 
@@ -908,27 +929,6 @@ Message interaction type referenced by the reaction (click, open, sent, error...
 
 
 `string`
-
-
-
-
-
-
-
-
-#### https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex
-##### recurrenceIndex
-
-Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).
-
-`https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`
-* is optional
-* type: `integer`
-
-##### https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex Type
-
-
-`integer`
 
 
 

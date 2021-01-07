@@ -13,7 +13,6 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 ## Schema Hierarchy
 
 * Comparisons `https://ns.adobe.com/xdm/datatypes/comparisons`
-  * [Measure](data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
   * [Impressions](impressions.schema.md) `https://ns.adobe.com/xdm/datatypes/impressions`
 
 
@@ -26,13 +25,13 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:comparisonAddition](#xdmcomparisonaddition) | Measure | Optional | Comparisons (this schema) |
+| [xdm:comparisonAddition](#xdmcomparisonaddition) | `integer` | Optional | Comparisons (this schema) |
 | [xdm:comparisonCount](#xdmcomparisoncount) | `integer` | Optional | Comparisons (this schema) |
 | [xdm:comparisonImpressions](#xdmcomparisonimpressions) | Impressions | Optional | Comparisons (this schema) |
 | [xdm:comparisonItems](#xdmcomparisonitems) | `string[]` | Optional | Comparisons (this schema) |
-| [xdm:comparisonRemoval](#xdmcomparisonremoval) | Measure | Optional | Comparisons (this schema) |
+| [xdm:comparisonRemoval](#xdmcomparisonremoval) | `integer` | Optional | Comparisons (this schema) |
 | [xdm:comparisonType](#xdmcomparisontype) | `string` | Optional | Comparisons (this schema) |
-| [xdm:comparisonView](#xdmcomparisonview) | Measure | Optional | Comparisons (this schema) |
+| [xdm:comparisonView](#xdmcomparisonview) | `integer` | Optional | Comparisons (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:comparisonAddition
@@ -42,13 +41,14 @@ Tracked when an item is added to a comparison.
 
 `xdm:comparisonAddition`
 * is optional
-* type: Measure
+* type: `integer`
 * defined in this schema
 
 ### xdm:comparisonAddition Type
 
 
-* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`integer`
+
 
 
 
@@ -127,13 +127,14 @@ Tracked when an item is removed from a comparison.
 
 `xdm:comparisonRemoval`
 * is optional
-* type: Measure
+* type: `integer`
 * defined in this schema
 
 ### xdm:comparisonRemoval Type
 
 
-* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`integer`
+
 
 
 
@@ -166,13 +167,14 @@ Tracked when a comparison page is viewed.
 
 `xdm:comparisonView`
 * is optional
-* type: Measure
+* type: `integer`
 * defined in this schema
 
 ### xdm:comparisonView Type
 
 
-* [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`integer`
+
 
 
 

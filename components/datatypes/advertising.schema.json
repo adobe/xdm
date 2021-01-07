@@ -77,6 +77,11 @@
         "xdm:thirdQuartiles": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A digital video ad has played through 75% of its duration at normal speed."
+        },
+        "xdm:advertisingSpend": {
+          "title": "Advertising Spend",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Spend of the advertisment placements displayed."
         }
       }
     }

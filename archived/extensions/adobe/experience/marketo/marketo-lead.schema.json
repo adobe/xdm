@@ -1,0 +1,75 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/marketo-lead",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Lead",
+  "type": "object",
+  "description": "Marketo Lead schema. Includes other Profile mixins like person/work details, opt in/out etc.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/profile-lead-crm"],
+  "definitions": {
+    "marketo-lead": {
+      "properties": {
+        "marketo:leadID": {
+          "title": "Marketo Lead ID",
+          "description": "Unique identifier for Marketo lead.",
+          "type": "string"
+        },
+        "marketo:instanceID": {
+          "title": "Instance Id",
+          "description": "Identifier of the Marketo instance.",
+          "type": "string"
+        },
+        "marketo:contactID": {
+          "title": "Marketo Contact Id",
+          "description": "Unique identifier for Marketo contact.",
+          "type": "string"
+        },
+        "marketo:accountID": {
+          "title": "Marketo Account Id",
+          "description": "Unique identifier for Marketo account.",
+          "type": "string"
+        },
+        "marketo:abmProposedNameID": {
+          "title": "ABM Proposed Name Id",
+          "description": "Account based marketing proposed name id.",
+          "type": "string"
+        },
+        "marketo:count": {
+          "title": "Count",
+          "type": "integer"
+        },
+        "marketo:totalProposedNameCount": {
+          "title": "Total Proposed Name Count",
+          "type": "integer"
+        },
+        "marketo:leadScore": {
+          "title": "Lead Score",
+          "description": "Computed score associated with the lead.",
+          "type": "number"
+        },
+        "marketo:extendedLead": {
+          "title": "Extended Marketo Lead Attributes",
+          "$ref": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-lead-crm"
+    },
+    {
+      "$ref": "#/definitions/marketo-lead"
+    }
+  ],
+  "required": ["marketo:leadID"],
+  "meta:status": "deprecated"
+}

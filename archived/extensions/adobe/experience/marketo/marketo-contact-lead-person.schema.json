@@ -1,0 +1,170 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/marketo-contact-lead-person",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Contact/Lead Person Schema",
+  "type": "object",
+  "description": "Marketo Person schema for use within  B2B space. Includes other Profile mixins like person/work details, opt in/out etc.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "definitions": {
+    "marketo-contact-lead-person": {
+      "properties": {
+        "marketo:marketoIntegrationLogID": {
+          "title": "Marketo Integration Log Id",
+          "description": "Marketo integration log id.",
+          "type": "string"
+        },
+        "marketo:anonymousHostname": {
+          "title": "Anonymous Hostname",
+          "type": "string"
+        },
+        "marketo:isBlocked": {
+          "title": "Blocked Indicator",
+          "type": "boolean"
+        },
+        "marketo:blockedCause": {
+          "title": "Blocked Cause",
+          "type": "string"
+        },
+        "marketo:isEmailInvalid": {
+          "title": "Invalid Email Indicator",
+          "description": "Indicator whether the email is valid or not.",
+          "type": "boolean"
+        },
+        "marketo:emailInvalidCause": {
+          "title": "Email Invalid Cause",
+          "description": "Reason for invalidity of email.",
+          "type": "string"
+        },
+        "marketo:employeePositionID": {
+          "title": "Employee Position Id",
+          "type": "string"
+        },
+        "marketo:inferredAddress": {
+          "title": "Inferred Address",
+          "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "marketo:inferredCompany": {
+          "title": "Inferred Company",
+          "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+          "type": "string"
+        },
+        "marketo:inferredCompanyStatus": {
+          "title": "Inferred Company Status",
+          "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+          "type": "string"
+        },
+        "marketo:inferredMetropolitanArea": {
+          "title": "Inferred Metropolitan Area",
+          "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
+          "type": "string"
+        },
+        "marketo:inferredPhoneAreaCode": {
+          "title": "Inferred Phone Area Code",
+          "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
+          "type": "string"
+        },
+        "marketo:isAnonymous": {
+          "title": "Anonymous Indicator",
+          "description": "Anonymous status of lead record. System managed.",
+          "type": "boolean"
+        },
+        "marketo:isCustomer": {
+          "title": "Customer Indicator",
+          "type": "boolean"
+        },
+        "marketo:isEmployee": {
+          "title": "Employee Indicator",
+          "description": "Indicator if the contact/lead is an employee or not.",
+          "type": "boolean"
+        },
+        "marketo:isPartner": {
+          "title": "Partner Indicator",
+          "description": "Indicator if the contact/lead is a partner or not.",
+          "type": "boolean"
+        },
+        "marketo:isPrivate": {
+          "title": "Private Indicator",
+          "type": "boolean"
+        },
+        "marketo:accountID": {
+          "title": "Marketo Account id",
+          "description": "Unique indentier for Marketo account.",
+          "type": "string"
+        },
+        "marketo:marketingSuspended": {
+          "title": "Marketing Suspended",
+          "type": "boolean"
+        },
+        "marketo:marketingSuspendedCause": {
+          "title": "Marketing Suspended Cause",
+          "type": "string"
+        },
+        "marketo:notes": {
+          "title": "Notes",
+          "type": "string"
+        },
+        "marketo:orgID": {
+          "title": "Organization ID",
+          "description": "Identifier of the Organization.",
+          "type": "string"
+        },
+        "marketo:primaryLeadInterestID": {
+          "title": "Primary Lead Interest Id",
+          "type": "boolean"
+        },
+        "marketo:registerSourceInfo": {
+          "title": "Register Source Info",
+          "type": "string"
+        },
+        "marketo:registerSourceType": {
+          "title": "Register Source Type",
+          "type": "string"
+        },
+        "marketo:salesContactOwnerID": {
+          "title": "Sales Contact Owner Id",
+          "type": "string"
+        },
+        "marketo:originalReferrer": {
+          "title": "Original Referrer",
+          "description": "The original referrer is typically the page that leads to a form fill out.",
+          "type": "string"
+        },
+        "marketo:originalSearchEngine": {
+          "title": "Original Search Engine",
+          "description": "Search engine that the original referrer used.",
+          "type": "string"
+        },
+        "marketo:originalSearchPhrase": {
+          "title": "Original Search Phrase",
+          "description": "Search phrase used by the original referrer.",
+          "type": "string"
+        },
+        "marketo:originalSourceInfo": {
+          "title": "Original Source Info",
+          "type": "string"
+        },
+        "marketo:originalSourceType": {
+          "title": "Original Source Type",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/marketo-contact-lead-person"
+    }
+  ],
+  "meta:status": "deprecated"
+}

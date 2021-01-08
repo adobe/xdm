@@ -73,6 +73,7 @@ The date and UTC time when the activation flow to the destination-namespace mapp
 
 
 `string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

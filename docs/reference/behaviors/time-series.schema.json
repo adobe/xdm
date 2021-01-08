@@ -44,6 +44,7 @@
                         "advertising.thirdQuartiles": "Advertising Third Quartiles",
                         "web.webpagedetails.pageViews": "Web Webpagedetails Page Views",
                         "web.webinteraction.linkClicks": "Web Webinteraction Link Clicks",
+                        "web.fillOutForm": "Web Fill Out Form",
                         "commerce.checkouts": "Commerce Checkouts",
                         "commerce.productListAdds": "Commerce Product List Adds",
                         "commerce.productListOpens": "Commerce Product List Opens",
@@ -57,7 +58,23 @@
                         "message.feedback": "Message Feedback",
                         "message.tracking": "Message Tracking",
                         "pushTracking.applicationOpened": "Push Tracking Application Opened",
-                        "pushTracking.customAction": "Push Tracking Custom Action"
+                        "pushTracking.customAction": "Push Tracking Custom Action",
+                        "listOpearation.removeFromList": "List Operation Remove From List",
+                        "listOperation.addToList": "List Operation Add To List",
+                        "leadOperation.changeScore": "Lead Operation Change Score",
+                        "leadOperation.campaignStatusInProgression": "Lead Operation Campaign Status In Progression",
+                        "leadOperation.interestingMoment": "Lead Operation Interesting Moment",
+                        "leadOperation.newLead": "Lead Operation New Lead",
+                        "leadoperation.convertLead": "Lead Operation Convert Lead",
+                        "emailInteraction.emailBounced": "Email Interaction Email Bounced",
+                        "emailInteraction.emailBouncedSoft": "Email Interaction Email Bounced Soft",
+                        "emailInteraction.emailDelivered": "Email Interaction Email Delivered",
+                        "emailInteraction.unSubscribeEmail": "Email Interaction Unsubscribe Email",
+                        "emailInteraction.openEmail": "Email Interaction Open Email",
+                        "emailInteraction.clickEmail": "Email Interaction Click Email",
+                        "opportunityEvent.removeFromOpportunity": "Opportunity Event Remove From Opportunity",
+                        "opportunityEvent.addToOpportunity": "Opportunity Event Add To Opportunity",
+                        "opportunityEvent.updateOpportunity": "Opportunity Event Update Opportunity"
                     }
                 }
             }

@@ -157,7 +157,27 @@ This changes child.json to:
   * [Item Selector](itemselector.schema.md) `https://ns.adobe.com/xdm/common/descriptors/itemselector`
 
 
-## Relationship Descriptor Example
+## Relationship Descriptor Examples
+
+```json
+{
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceProperty": [
+    "/identityPrivacyInfo",
+    "/identityPrivacyInfo/identityIABConsent/consentTimestamp"
+  ],
+  "xdm:sourceVersion": 1,
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/destination-namespace",
+  "xdm:destinationProperty": [
+    "/destinationID",
+    "/createTime"
+  ],
+  "xdm:destinationVersion": 1,
+  "version": "1"
+}
+```
+
 ```json
 {
   "@id": "https://example.com/descriptors/1",
@@ -174,20 +194,22 @@ This changes child.json to:
 }
 ```
 
+
 # Relationship Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#id) |
 | [@type](#type) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#type) |
+| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:description](#xdmdescription) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | Relationship Descriptor (this schema) |
-| [xdm:destinationProperty](#xdmdestinationproperty) | `string` | Optional | Relationship Descriptor (this schema) |
+| [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | Relationship Descriptor (this schema) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceitem) |
-| [xdm:sourceProperty](#xdmsourceproperty) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional | Relationship Descriptor (this schema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceversion) |
@@ -234,6 +256,26 @@ The type of descriptor this object represents.
 ### @type Known Values
 | Value | Description |
 |-------|-------------|
+
+
+
+
+## xdm:apiLabel
+### API Label
+
+Provides a user friendly name or label which is used in PQL/SQL or other needs
+
+`xdm:apiLabel`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:apiLabel Type
+
+
+`string`
+
+
 
 
 
@@ -301,13 +343,33 @@ When present, the property of the destination schema to which this descriptor ap
 
 `xdm:destinationProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in this schema
 
 ### xdm:destinationProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 
@@ -418,13 +480,33 @@ When present, the property of the source schema to which this descriptor applies
 
 `xdm:sourceProperty`
 * is optional
-* type: `string`
+* type: complex
 * defined in [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty)
 
 ### xdm:sourceProperty Type
 
 
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
 `string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 

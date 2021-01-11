@@ -66,7 +66,7 @@ B2B specific opportunity properties.
 | [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional |  | B2B Opportunity Additional Properties (this schema) |
 | [xdm:opportunityName](#xdmopportunityname) | `string` | Optional |  | B2B Opportunity Additional Properties (this schema) |
 | [xdm:ownerID](#xdmownerid) | `string` | Optional |  | B2B Opportunity Additional Properties (this schema) |
-| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `integer` | Optional |  | B2B Opportunity Additional Properties (this schema) |
+| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | B2B Opportunity Additional Properties (this schema) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | `0` | B2B Opportunity Additional Properties (this schema) |
 | [xdm:sourceType](#xdmsourcetype) | `string` | Optional |  | B2B Opportunity Additional Properties (this schema) |
 | [xdm:stage](#xdmstage) | `string` | **Required** |  | B2B Opportunity Additional Properties (this schema) |
@@ -473,13 +473,13 @@ Likelihood that opportunity will close, stated as a percentage.
 
 `xdm:probabilityPercentage`
 * is optional
-* type: `integer`
+* type: `number`
 * defined in this schema
 
 ### xdm:probabilityPercentage Type
 
 
-`integer`
+`number`
 * minimum value: `0`
 * maximum value: `100`
 

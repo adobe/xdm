@@ -10,36 +10,23 @@
     "title": "Tool Usage",
     "type": "object",
     "meta:extensible": true,
-    "meta:industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality",
-        "telecom",
-        "automotive",
-        "education",
-        "health_and_life_sciences",
-        "high_tech",
-        "manufacturing",
-        "media_and_entertainment",
-        "public_sector"
-    ],
     "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
     "definitions": {
         "tool-usage": {
             "properties": {
                 "xdm:toolUsageCancelled": {
                     "title": "Tool Usage Cancelled",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a visitor cancels out of a tool usage process."
                 },
                 "xdm:toolUsageComplete": {
                     "title": "Tool Usage Complete",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app."
                 },
                 "xdm:toolUsageFailure": {
                     "title": "Tool Usage Failed",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a step in the tool usage process fails."
                 },
                 "xdm:toolUsageID": {
@@ -54,17 +41,17 @@
                 },
                 "xdm:toolUsageSaved": {
                     "title": "Tool Usage Saved",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a visitor saves and exits a tool usage process."
                 },
                 "xdm:toolUsageStart": {
                     "title": "Tool Usage Start",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a visitor initializes using any type of tool or utility on the site/app."
                 },
                 "xdm:toolUsageStep": {
                     "title": "Tool Usage Step",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when any intermediary tool step is started on the site/app."
                 },
                 "xdm:toolUsageStepName": {
@@ -74,7 +61,7 @@
                 },
                 "xdm:toolUsageSubmitted": {
                     "title": "Tool Usage Submitted",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "integer",
                     "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
                 },
                 "xdm:toolUsageTransaction": {

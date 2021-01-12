@@ -29,12 +29,12 @@
                 "xdm:scoreName": {
                   "title": "Score Name",
                   "type": "string",
-                  "description": "score name."
+                  "description": "friendly name for the score."
                 },
                 "xdm:changeValue": {
                   "title": "Change Value",
                   "type": "string",
-                  "description": "change value."
+                  "description": "changed value."
                 },
                 "xdm:newValue": {
                   "title": "New Value",
@@ -49,17 +49,17 @@
                 "xdm:reason": {
                   "title": "Reason",
                   "type": "string",
-                  "description": "Reason."
+                  "description": "Reason for the change."
                 },
                 "xdm:urgency": {
                   "title": "Urgency",
                   "type": "number",
-                  "description": "Urgency."
+                  "description": "Urgency for this change."
                 },
                 "xdm:priority": {
                   "title": "Priority",
                   "type": "integer",
-                  "description": "Priority."
+                  "description": "Priority for this change."
                 },
                 "xdm:relativeScore": {
                   "title": "Relative Score",
@@ -69,7 +69,7 @@
                 "xdm:relativeUrgency": {
                   "title": "Relative Urgency",
                   "type": "integer",
-                  "description": "Relative Urgency."
+                  "description": "Relative Urgency for this change."
                 }
               }
             }

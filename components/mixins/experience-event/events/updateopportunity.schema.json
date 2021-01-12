@@ -29,23 +29,24 @@
             },
             "xdm:dataValueChanges": {
               "title": "Data Value Changes",
-              "type": "string",
-              "description": "."
-            },
-            "xdm:attributeName": {
-              "title": "Attribute Name",
-              "type": "string",
-              "description": "."
-            },
-            "xdm:newValue": {
-              "title": "New Value",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:oldValue": {
-              "title": "Old Value",
-              "type": "integer",
-              "description": "."
+              "type": "array",
+              "items": [
+                {
+                  "title": "Attribute Name",
+                  "type": "string",
+                  "description": "Name of the attribute"
+                },
+                {
+                  "title": "New Value",
+                  "type": "integer",
+                  "description": "New value of the attribute"
+                },
+                {
+                  "title": "Old Value",
+                  "type": "integer",
+                  "description": "Old value of the attribute"
+                }
+              ]
             }
           }
         }

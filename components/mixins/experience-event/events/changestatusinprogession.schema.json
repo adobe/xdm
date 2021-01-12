@@ -29,37 +29,42 @@
                 "xdm:campaignID": {
                   "title": "Campaign ID",
                   "type": "string",
-                  "description": "Campaign ID."
+                  "description": "Unique identifier for campaign."
                 },
                 "xdm:newStatusID": {
                   "title": "New Status ID",
+                  "type": "integer",
+                  "description": "Unique identifier for new status."
+                },
+                "xdm:newStatusName": {
+                  "title": "New Status Name",
                   "type": "string",
-                  "description": "New Status ID."
+                  "description": "Friendly name for new status."
                 },
                 "xdm:oldStatusID": {
                   "title": "Old Status ID",
+                  "type": "integer",
+                  "description": "Unique identifier for old status."
+                },
+                "xdm:oldStatusName": {
+                  "title": "Old Status Name",
                   "type": "string",
-                  "description": "Old Status ID."
+                  "description": "Friendly name for old status."
                 },
                 "xdm:reason": {
                   "title": "Reason",
                   "type": "string",
-                  "description": "Reason."
+                  "description": "Reason for status change."
                 },
                 "xdm:isAcquiredBy": {
                   "title": "Is Acquired By",
                   "type": "boolean",
-                  "description": "Acquired By."
+                  "description": "Change acquired by user."
                 },
-                "xdm:isSuccess": {
-                  "title": "Is Success",
+                "xdm:isSuccessful": {
+                  "title": "Is Successful",
                   "type": "boolean",
-                  "description": "Success."
-                },
-                "xdm:campaignMemberID": {
-                  "title": "Campaign Member ID",
-                  "type": "string",
-                  "description": "Campaign Member ID."
+                  "description": "Is the change successful or failed in process."
                 }
               }
             }

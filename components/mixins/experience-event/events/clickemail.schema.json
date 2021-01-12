@@ -10,52 +10,42 @@
   "title": "Click Email",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailInteraction.clickEmail",
+  "meta:conditionalValue": "directMarketing.clickEmail",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding email interaction click email events.",
+  "description": "Use for information regarding direct marketing click email events.",
   "definitions": {
     "clickemail": {
       "properties": {
-        "xdm:emailInteraction": {
-          "title": "email Interaction",
+        "xdm:directMarketing": {
+          "title": "Direct marketing",
           "type": "object",
           "properties": {
-            "xdm:emailAssetName": {
-              "title": "Email AssetName",
-              "type": "string",
-              "description": "."
-            },
-            "xdm:stepID": {
-              "title": "StepID",
+            "xdm:mailingID": {
+              "title": "Mailing ID",
               "type": "integer",
-              "description": "Step ID."
+              "description": "Unique identifier of the mailing."
             },
-            "xdm:choiceNumber": {
-              "title": "Choice Number",
-              "type": "integer",
-              "description": "Choice Number."
-            },
-            "xdm:embededURL": {
-              "title": "Embeded URL",
+            "xdm:mailingName": {
+              "title": "Mailing Name",
               "type": "string",
-              "description": "Embeded URL."
+              "description": "Friendly name for the mailing."
             },
-            "xdm:testVariant": {
-              "title": "Test Variant",
+            "xdm:linkURL": {
+              "title": "Link URL",
               "type": "string",
-              "description": "Test Variant."
+              "description": "The link URL."
             },
-            "xdm:campaignRunID": {
-              "title": "Campaign Run ID",
+            "xdm:testVariantID": {
+              "title": "Test Variant ID",
               "type": "integer",
-              "description": "Campaign Run ID."
+              "description": "Unique identifier for the test variant."
             },
-            "xdm:isPredictive": {
-              "title": "Is Predictive",
-              "type": "boolean",
-              "description": "."
+            "xdm:testVariantName": {
+              "title": "Test Variant Name",
+              "type": "string",
+              "description": "Friendly name for the test variant."
             }
           }
         },
@@ -108,7 +98,12 @@
                 "xdm:linkID": {
                   "title": "Link ID",
                   "type": "string",
-                  "description": "Link ID."
+                  "description": "Unique identifier to link."
+                },
+                "xdm:linkName": {
+                  "title": "Link Name",
+                  "type": "string",
+                  "description": "Friendly name to link"
                 }
               }
             }

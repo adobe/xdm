@@ -10,47 +10,37 @@
   "title": "Unsubscribe Email",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailInteraction.unSubscribeEmail",
+  "meta:conditionalValue": "directMarketing.unSubscribeEmail",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding unsubscribe email events.",
+  "description": "Use for information regarding direct marketing unsubscribe email events.",
   "definitions": {
     "unsubscribeemail": {
       "properties": {
-        "xdm:emailInteraction": {
-          "title": "email Interaction",
+        "xdm:directMarketing": {
+          "title": "Direct marketing",
           "type": "object",
           "properties": {
-            "xdm:emailAssetName": {
-              "title": "Email Asset Name",
+            "xdm:mailingID": {
+              "title": "Mailing ID",
+              "type": "integer",
+              "description": "Unique identifier of the mailing."
+            },
+            "xdm:mailingName": {
+              "title": "Mailing Name",
               "type": "string",
-              "description": "."
+              "description": "Friendly name for the mailing."
             },
-            "xdm:stepID": {
-              "title": "Step ID",
+            "xdm:testVariantID": {
+              "title": "Test Variant ID",
               "type": "integer",
-              "description": "Unique identifier for Step."
+              "description": "Unique identifier for the test variant."
             },
-            "xdm:choiceNumber": {
-              "title": "Choice Number",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:testVariant": {
-              "title": "Test Variant",
+            "xdm:testVariantName": {
+              "title": "Test Variant Name",
               "type": "string",
-              "description": "."
-            },
-            "xdm:campaignRunID": {
-              "title": "Campaign Run ID",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:isPredictive": {
-              "title": "Is Predictive",
-              "type": "boolean",
-              "description": "."
+              "description": "Friendly name for the test variant."
             }
           }
         },
@@ -62,15 +52,15 @@
               "title": "Fill Out Form",
               "type": "object",
               "properties": {
-                "xdm:WebformID": {
-                  "title": "Webform ID",
-                  "type": "string",
-                  "description": "Unique identifier for webform."
+                "xdm:webFormID": {
+                  "title": "Web Form ID",
+                  "type": "integer",
+                  "description": "Unique Identifier for web form."
                 },
-                "xdm:formFields": {
-                  "title": "Form Fields",
+                "xdm:webFormName": {
+                  "title": "Web Form Name",
                   "type": "string",
-                  "description": "."
+                  "description": "Friendly name for web form."
                 }
               }
             },
@@ -78,6 +68,11 @@
               "title": "Web Page Details",
               "type": "object",
               "properties": {
+                "xdm:webPageID": {
+                  "title": "Web Page ID",
+                  "type": "integer",
+                  "description": "Unique Identifier for web page."
+                },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",

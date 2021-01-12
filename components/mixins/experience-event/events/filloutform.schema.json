@@ -10,9 +10,9 @@
   "title": "Fill Out Form",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "web.fillOutForm",  
+  "meta:conditionalValue": "web.fillOutForm",
   "meta:intendedToExtend": [
-  "https://ns.adobe.com/xdm/context/experienceevent"
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "Use for information regarding filloutform web details.",
   "definitions": {
@@ -26,15 +26,15 @@
               "title": "Fill Out Form",
               "type": "object",
               "properties": {
-                "xdm:WebformID": {
-                  "title": "Webform ID",
+                "xdm:webFormID": {
+                  "title": "Web Form ID",
                   "type": "string",
-                  "description": "Unique Identifier for Webform."
+                  "description": "Unique Identifier for web form."
                 },
-                "xdm:formFields": {
-                  "title": "Form Fields",
+                "xdm:webFormName": {
+                  "title": "Web Form Name",
                   "type": "string",
-                  "description": "."
+                  "description": "Friendly name for web form."
                 }
               }
             },
@@ -42,6 +42,11 @@
               "title": "Web Page Details",
               "type": "object",
               "properties": {
+                "xdm:webPageID": {
+                  "title": "Web Page ID",
+                  "type": "string",
+                  "description": "Unique Identifier for web page."
+                },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
@@ -89,23 +94,6 @@
                   "description": "The HTTP user-agent string from the client request."
                 }
               }
-            }
-          }
-        },
-        "xdm:marketing": {
-          "title": "Marketing",
-          "type": "object",
-          "description": "The information related to marketing activities that are active with the touchpoint.",
-          "properties": {
-            "xdm:campaignName": {
-              "title": "Campaign name",
-              "type": "string",
-              "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
-            },
-            "xdm:campaignType": {
-              "title": "Campaign Type",
-              "type": "string",
-              "description": "Name of the campaign type where multiple campaigns are grouped together."
             }
           }
         }

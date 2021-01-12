@@ -10,47 +10,37 @@
   "title": "Email Delivered",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailInteraction.emailDelivered",
+  "meta:conditionalValue": "directMarketing.emailDelivered",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding email interaction email delivered events.",
+  "description": "Use for information regarding direct marketing email delivered events.",
   "definitions": {
     "emaildelivered": {
       "properties": {
-        "xdm:emailInteraction": {
-          "title": "email Interaction",
+        "xdm:directMarketing": {
+          "title": "Direct marketing",
           "type": "object",
           "properties": {
-            "xdm:emailAssetName": {
-              "title": "Email AssetName",
+            "xdm:mailingID": {
+              "title": "Mailing ID",
+              "type": "integer",
+              "description": "Unique identifier of the mailing."
+            },
+            "xdm:mailingName": {
+              "title": "Mailing Name",
               "type": "string",
-              "description": "."
+              "description": "Friendly name for the mailing."
             },
-            "xdm:stepID": {
-              "title": "Step ID",
+            "xdm:testVariantID": {
+              "title": "Test Variant ID",
               "type": "integer",
-              "description": "Unique Identifier for Step."
+              "description": "Unique identifier for the test variant."
             },
-            "xdm:choiceNumber": {
-              "title": "Choice Number",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:testVariant": {
-              "title": "Test Variant",
+            "xdm:testVariantName": {
+              "title": "Test Variant Name",
               "type": "string",
-              "description": "."
-            },
-            "xdm:campaignRunID": {
-              "title": "Campaign Run ID",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:isPredictive": {
-              "title": "Is Predictive",
-              "type": "boolean",
-              "description": "."
+              "description": "Friendly name for the test variant."
             }
           }
         }

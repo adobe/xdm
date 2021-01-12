@@ -10,62 +10,57 @@
   "title": "Email Bounced Soft",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "emailInteraction.emailBouncedSoft",
+  "meta:conditionalValue": "directMarketing.emailBouncedSoft",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding email interaction email bounced soft events.",
+  "description": "Use for information regarding direct marketing email bounced soft events.",
   "definitions": {
     "emailbouncedsoft": {
-      "properties": {
-        "xdm:emailInteraction": {
-          "title": "email Interaction",
+       "properties": {
+        "xdm:directMarketing": {
+          "title": "Direct marketing",
           "type": "object",
           "properties": {
-            "xdm:stepID": {
-              "title": "Step ID",
+            "xdm:mailingID": {
+              "title": "Mailing ID",
               "type": "integer",
-              "description": "Unique Identifier for Step."
+              "description": "Unique identifier of the mailing."
             },
-            "xdm:choiceNumber": {
-              "title": "Choice Number",
-              "type": "integer",
-              "description": "."
-            },
-            "xdm:failureReasonCategory": {
-              "title": "Failure Reason Category",
+            "xdm:mailingName": {
+              "title": "Mailing Name",
               "type": "string",
-              "description": "Category in which this failure reason belongs."
+              "description": "Friendly name for the mailing."
             },
-            "xdm:failureReasonMessage": {
-              "title": "Failure Reason Message",
+            "xdm:emailBouncedCategory": {
+              "title": "Email Bounced Category",
               "type": "string",
-              "description": "Failure reason description message."
+              "description": "Category in which this email failure belongs."
             },
-            "xdm:failureReasonSubcategory": {
-              "title": "Failure Reason Subcategory",
+            "xdm:emailBouncedDetails": {
+              "title": "Email Bounced Details",
+              "type": "string",
+              "description": "Email failure reason description message."
+            },
+            "xdm:emailBouncedSubcategory": {
+              "title": "Email Bounced Subcategory",
               "type": "string",
               "description": "Subcategory this failure reason belongs to."
             },
             "xdm:email": {
               "title": "email",
               "type": "string",
-              "description": "."
+              "description": "visitor email ID."
             },
-            "xdm:testVariant": {
-              "title": "Test Variant",
-              "type": "string",
-              "description": "."
-            },
-            "xdm:campaignRunID": {
-              "title": "Campaign Run ID",
+            "xdm:testVariantID": {
+              "title": "Test Variant ID",
               "type": "integer",
-              "description": "."
+              "description": "Unique identifier for the test variant."
             },
-            "xdm:isPredictive": {
-              "title": "Is Predictive",
-              "type": "boolean",
-              "description": "."
+            "xdm:testVariantName": {
+              "title": "Test Variant Name",
+              "type": "string",
+              "description": "Friendly name for the test variant."
             }
           }
         }

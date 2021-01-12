@@ -1,0 +1,48 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/decisioning/fallback-offer",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/decisioning/option",
+    "https://ns.adobe.com/xdm/context/lifecycle-status",
+    "https://ns.adobe.com/xdm/context/taxonomy/tags",
+    "https://ns.adobe.com/xdm/decisioning/contents"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Fallback Offer",
+  "description": "A default offer that is used when there is no personalized offer is left after checking all constraints.",
+  "definitions": {
+    "fallback-offer": {
+      "properties": {}
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/decisioning/option"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/lifecycle-status"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/taxonomy/tags"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/decisioning/contents"
+    },
+    {
+      "$ref": "#/definitions/fallback-offer"
+    }
+  ],
+  "meta:status": "experimental"
+}

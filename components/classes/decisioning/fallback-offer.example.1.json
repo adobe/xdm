@@ -1,0 +1,40 @@
+{
+  "@id": "xcore:fallback-offer:20216ba8e04e44ac",
+  "xdm:name": "Default Offer",
+  "xdm:status": "approved",
+  "xdm:tags": ["xcore:tag:f87c371cd0b20be"],
+  "xdm:contents": [
+    {
+      "xdm:placement": "xcore:offer-placement:f8eb10f058477e3",
+      "xdm:components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["en"],
+          "xdm:content": "text entered directly"
+        }
+      ]
+    },
+    {
+      "xdm:placement": "xcore:offer-placement:f652463157c0ba4",
+      "xdm:components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["en"],
+          "repo:name": "legal_terms_2020.txt",
+          "repo:id": "urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762",
+          "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?id=&quot;urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762&quot;"
+        },
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["es"],
+          "repo:name": "legal_terms_2020.txt",
+          "repo:id": "urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762",
+          "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?id=&quot;urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762&quot;&resource=&quot;api:metadata/application&quot;&name=&quot;legal_terms_2020_es.txt&quot;"
+        }
+      ]
+    }
+  ]
+}

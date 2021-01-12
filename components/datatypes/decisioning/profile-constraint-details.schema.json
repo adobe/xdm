@@ -1,0 +1,53 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/decisioning/profile-constraint-details",
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Profile Constraint Details",
+  "description": "Profile constraints define the policies that ensure a particular decision option qualifies, is relevant and is suitable for a particular profile. Such policy rules determine the eligibility, applicability and suitability of the option. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema.",
+  "definitions": {
+    "profile-constraint-details": {
+      "type": "object",
+      "properties": {
+        "xdm:description": {
+          "type": "string",
+          "title": "Description",
+          "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it."
+        },
+        "xdm:profileConstraintType": {
+          "type": "string",
+          "title": "Profile Constraint Type",
+          "enum": ["none", "rules", "anySegments", "allSegments"],
+          "default": "none",
+          "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships."
+        },
+        "xdm:eligibilityRule": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Eligibility Rule",
+          "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/xdm/decisioning/rule"
+        },
+        "xdm:segmentIdentities": {
+          "title": "Segment Identifiers",
+          "description": "Identifiers of the segments",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/profile-constraint-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,15 @@
+{
+  "xdm:description": "S1:",
+  "xdm:placements": ["xcore:offer-placement:6111463157c2221"],
+  "xdm:optionSelection": {
+    "xdm:description": "Charge_Elite_30 Offer",
+    "xdm:options": ["xcore:offer:f6998eb62ed6f15"]
+  },
+  "xdm:profileConstraints": {
+    "xdm:description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
+    "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b01"
+  },
+  "xdm:ranking": {
+    "xdm:priority": 8
+  }
+}

@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Placement",
-  "description": "A placement describes a location or place in a personalized message. It is used to set technical constraints for content that the personalization decision supplies. The placement also represents a request to produce certain types of metrics when an experience event is produced where this placement is involved. For instance the placement facilitates a personalized clickable image inside an email shown to an end-user. The placement may for instance request from the assembled experience that the click on its image gets reported in an experience event with a metric `https://ns.adobe.com/xdm/data/metrics/web/linkclicks` and a reference to this placement. ",
+  "title": "Placement (deprecated)",
+  "description": "A placement describes a location or place in a personalized message. It is used to set technical constraints for content that the personalization decision supplies. The placement also represents a request to produce certain types of metrics when an experience event is produced where this placement is involved. For instance the placement facilitates a personalized clickable image inside an email shown to an end-user. The placement may for instance request from the assembled experience that the click on its image gets reported in an experience event with a metric `https://ns.adobe.com/xdm/data/metrics/web/linkclicks` and a reference to this placement. (deprecated)",
   "definitions": {
     "offer-placement": {
       "properties": {
@@ -62,5 +62,6 @@
     {
       "required": ["xdm:name", "xdm:channel", "xdm:componentType"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

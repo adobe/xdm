@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Capping Constraint",
-  "description": "A capping constraint is a component in a personalized offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles.",
+  "title": "Capping Constraint (deprecated)",
+  "description": "A capping constraint is a component in a personalized offer that defines the parameters for capping. Capping is the process of limiting how many times an offer can be proposed, for an individual profile as well as across all profiles. (deprecated)",
   "definitions": {
     "capping-constraint": {
       "type": "object",
@@ -35,5 +35,6 @@
     {
       "$ref": "#/definitions/capping-constraint"
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

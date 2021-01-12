@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/context/taxonomy/tags",
+  "$id": "https://ns.adobe.com/xdm/taxonomy/tags",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/decision/option",
     "https://ns.adobe.com/xdm/context/decision/personalized-offer",
@@ -27,7 +27,7 @@
           "items": {
             "type": "string",
             "format": "uri-reference",
-            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/xdm/context/taxonomy/tag"
+            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/xdm /taxonomy/tag"
           }
         }
       }

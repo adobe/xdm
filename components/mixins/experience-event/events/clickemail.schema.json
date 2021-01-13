@@ -74,6 +74,8 @@
           }
         },
         "xdm:device": {
+          "type": "object",
+          "description": "Device ralted information.",
           "properties": {
             "xdm:isMobileDevice": {
               "title": "Is Mobile Device",

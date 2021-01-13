@@ -26,8 +26,13 @@
               "title": "Change Score",
               "type": "object",
               "properties": {
-                "xdm:scoreName": {
-                  "title": "Score Name",
+                "xdm:scoreAttributeID": {
+                  "title": "Score Atribute ID",
+                  "type": "integer",
+                  "description": "Unique identifier for score attribute."
+                },
+                "xdm:scoreAttributeName": {
+                  "title": "Score Atribute Name",
                   "type": "string",
                   "description": "friendly name for the score."
                 },

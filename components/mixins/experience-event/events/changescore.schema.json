@@ -39,12 +39,12 @@
                 "xdm:newValue": {
                   "title": "New Value",
                   "type": "integer",
-                  "description": "New Value."
+                  "description": "New score Value."
                 },
                 "xdm:oldValue": {
                   "title": "Old Value",
                   "type": "integer",
-                  "description": "old Value."
+                  "description": "old score Value."
                 },
                 "xdm:reason": {
                   "title": "Reason",

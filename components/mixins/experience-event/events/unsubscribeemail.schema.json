@@ -10,7 +10,7 @@
   "title": "Unsubscribe Email",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "directMarketing.unSubscribeEmail",
+  "meta:conditionalValue": "directMarketing.unsubscribeEmail",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
@@ -24,7 +24,7 @@
           "properties": {
             "xdm:mailingID": {
               "title": "Mailing ID",
-              "type": "integer",
+              "type": "string",
               "description": "Unique identifier of the mailing."
             },
             "xdm:mailingName": {
@@ -34,7 +34,7 @@
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
-              "type": "integer",
+              "type": "string",
               "description": "Unique identifier for the test variant."
             },
             "xdm:testVariantName": {
@@ -54,7 +54,7 @@
               "properties": {
                 "xdm:webFormID": {
                   "title": "Web Form ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique Identifier for web form."
                 },
                 "xdm:webFormName": {
@@ -70,7 +70,7 @@
               "properties": {
                 "xdm:webPageID": {
                   "title": "Web Page ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique Identifier for web page."
                 },
                 "xdm:name": {

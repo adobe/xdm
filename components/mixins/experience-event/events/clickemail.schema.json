@@ -24,7 +24,7 @@
           "properties": {
             "xdm:mailingID": {
               "title": "Mailing ID",
-              "type": "integer",
+              "type": "string",
               "description": "Unique identifier of the mailing."
             },
             "xdm:mailingName": {
@@ -39,7 +39,7 @@
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
-              "type": "integer",
+              "type": "string",
               "description": "Unique identifier for the test variant."
             },
             "xdm:testVariantName": {

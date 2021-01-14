@@ -40,12 +40,12 @@
                   },
                   "xdm:newValue": {
                     "title": "New Value",
-                    "type": "integer",
+                    "type": "string",
                     "description": "New value of the attribute"
                   },
                   "xdm:oldValue": {
                     "title": "Old Value",
-                    "type": "integer",
+                    "type": "string",
                     "description": "Old value of the attribute"
                   }
                 }

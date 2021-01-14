@@ -28,7 +28,7 @@
               "properties": {
                 "xdm:webFormID": {
                   "title": "Web Form ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique Identifier for web form."
                 },
                 "xdm:webFormName": {
@@ -44,7 +44,7 @@
               "properties": {
                 "xdm:webPageID": {
                   "title": "Web Page ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique Identifier for web page."
                 },
                 "xdm:name": {

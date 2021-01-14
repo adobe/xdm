@@ -33,7 +33,7 @@
                 },
                 "xdm:newStatusID": {
                   "title": "New Status ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique identifier for new status."
                 },
                 "xdm:newStatusName": {
@@ -43,7 +43,7 @@
                 },
                 "xdm:oldStatusID": {
                   "title": "Old Status ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique identifier for old status."
                 },
                 "xdm:oldStatusName": {

@@ -28,7 +28,7 @@
               "properties": {
                 "xdm:scoreAttributeID": {
                   "title": "Score Atribute ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique identifier for score attribute."
                 },
                 "xdm:scoreAttributeName": {

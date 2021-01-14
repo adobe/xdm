@@ -10,7 +10,7 @@
   "title": "Click Link",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "web.webInteraction.clickLink",
+  "meta:conditionalValue": "web.webInteraction.linkClicks",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
@@ -28,7 +28,7 @@
               "properties": {
                 "xdm:linkID": {
                   "title": "Link ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "unique identifier to Link."
                 },
                 "xdm:linkName": {
@@ -44,7 +44,7 @@
               "properties": {
                 "xdm:webPageID": {
                   "title": "Web Page ID",
-                  "type": "integer",
+                  "type": "string",
                   "description": "Unique Identifier for web page."
                 },
                 "xdm:name": {

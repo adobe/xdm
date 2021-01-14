@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/interaction-measurement",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Interaction Measurement Details",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "description": "An interaction measurement determines how experience event properties are interpreted as outcomes. In some cases the outcome is provided directly with the event and no additional mapping is required, in other cases a calculation must be applied to test if the event is a measurable outcome and what the measured value should be.",
+  "definitions": {
+    "interaction-measurement-datatype": {
+      "properties": {
+        "xdm:condition": {
+          "type": "string",
+          "title": "Event condition",
+          "description": "A predicate that is evaluated against the experience event to test if a measurable outcome has been achieved. This predicate could check if the value of a property matches a given constant or could be a more complex evaluation. An outcome will be recorded with the event if and only if the predicate evaluates to 'true'."
+        },
+        "xdm:outcome": {
+          "type": "object",
+          "properties" : {
+            "xdm:field": {
+              "type": "string",
+              "title": "Outcome property path",
+              "description": "Property path where the outcome is inserted into the XDM event."
+            },
+            "xdm:value": {
+              "type": "string",
+              "title": "Outcome property value",
+              "description": "Property value that measures the outcome of the interaction. The value is inserted into the current experience event using the proporty specified in 'field'. An outcome can have a nominal value (e.g. success/failure), ordinal value (e.g. 4 star rating value submitted) or numerical value (e.g. a measurable quantity was achieved)."
+            }
+          },
+          "title": "Interaction outcome measurement",
+          "description": "The definition of a measurement for the outcome. A property path and value is specified where a measured outcome for the interaction is recorded."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/interaction-measurement-datatype"
+    }
+  ]
+}

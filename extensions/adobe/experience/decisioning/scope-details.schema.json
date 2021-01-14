@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Decision Scope Details",
   "type": "object",
-  "meta:abstract": true,
   "meta:extensible": true,
   "description": "Decision scope details capture properties that existed to narrow the scope of the decision to a location (the \"Where\"), a the business activity (the \"How\") and the provider of the decision (\"By Whom\"). The location is expressed with the concept of a Placement.",
   "definitions": {
@@ -34,6 +33,14 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail",
           "title": "Activity Detail for the Scope",
           "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
+        },
+        "interactionMeasurements": {
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/interaction-measurement"
+          },
+          "title": "Interaction Measurements used in this Scope",
+          "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity)."
         }
       }
     }

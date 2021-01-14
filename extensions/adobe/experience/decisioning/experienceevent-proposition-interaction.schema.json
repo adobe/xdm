@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-interaction",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Experience Event - Proposition Interaction",
+  "title": "Decision Proposition Interaction",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "This mixin is used capture information regarding an interaction, response or reaction to one or more prior propositions. Each decision output has a unique ID that can be sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
+  "description": "This mixin is used capture information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
     "decisioning-experienceevent-all": {
       "type": "object",

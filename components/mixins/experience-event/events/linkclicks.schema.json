@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/clicklink",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/linkclicks",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Click Link",
   "type": "object",
@@ -14,9 +14,9 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding clicklink web interaction events.",
+  "description": "Use for information regarding linkclicks web interaction events.",
   "definitions": {
-    "clicklink": {
+    "linkclicks": {
       "properties": {
         "xdm:web": {
           "title": "Web",
@@ -102,7 +102,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/clicklink"
+      "$ref": "#/definitions/linkclicks"
     }
   ],
   "meta:status": "experimental"

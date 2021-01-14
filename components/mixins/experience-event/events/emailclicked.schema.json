@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/emailclicked",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Click Email",
+  "title": "Email Clicked",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailClicked",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding direct marketing click email events.",
+  "description": "Use for information regarding direct marketing email clicked events.",
   "definitions": {
     "emailclicked": {
       "properties": {

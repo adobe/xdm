@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/emailopened",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Open Email",
+  "title": "Email Opened",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailOpened",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding direct marketing open email events.",
+  "description": "Use for information regarding direct marketing email opened events.",
   "definitions": {
     "emailopened": {
       "properties": {

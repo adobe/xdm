@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/statusinprogramprogressionchanged",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Campaign Status In Progression",
+  "title": "Status In Program Progression Changed",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.statusInProgramProgressionChanged",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding lead operation campaign status in progression events.",
+  "description": "Use for information regarding lead operation status in program progression changed events.",
   "definitions": {
     "statusinprogramprogressionchanged": {
       "properties": {

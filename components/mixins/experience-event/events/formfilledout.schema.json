@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/formfilledout",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Fill Out Form",
+  "title": "Form Filled Out",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.formFilledOut",

@@ -7,14 +7,14 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/opportunityupdated",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Update Opportunity",
+  "title": "Opportunity Updated",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding opportunity event update opportunity events.",
+  "description": "Use for information regarding opportunity event opportunity updated events.",
   "definitions": {
     "opportunityupdated": {
       "properties": {

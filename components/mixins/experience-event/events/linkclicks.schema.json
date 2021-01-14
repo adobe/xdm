@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/linkclicks",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Click Link",
+  "title": "Link Clicks",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webInteraction.linkClicks",

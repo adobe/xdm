@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/events/scorechanged",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Change Score",
+  "title": "Score Changed",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.scoreChanged",

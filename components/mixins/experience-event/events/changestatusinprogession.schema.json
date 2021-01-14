@@ -10,13 +10,13 @@
   "title": "Campaign Status In Progression",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadOperation.campaignStatusInProgression",
+  "meta:conditionalValue": "leadOperation.changeStatusInProgression",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "Use for information regarding lead operation campaign status in progression events.",
   "definitions": {
-    "campaignstatusinprogression": {
+    "changestatusinprogression": {
       "properties": {
         "xdm:leadOpearation": {
           "title": "Lead Operation",
@@ -75,7 +75,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/campaignstatusinprogression"
+      "$ref": "#/definitions/changestatusinprogression"
     }
   ],
   "meta:status": "experimental"

@@ -45,7 +45,7 @@
             },
             "xdm:quoteRequestPersonalDetails": {
               "title": "Quote Request Personal Details",
-              "type": "mixin",
+              "$ref": "https://ns.adobe.com/xdm/context/profile-person-details",
               "description": "Extension of the Personal Profile data type."
             },
             "xdm:quoteRequestSelectedRetailer": {

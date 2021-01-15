@@ -1,0 +1,29 @@
+{
+  "https://ns.adobe.com/experience/decisioning/criteria": [
+    {
+      "xdm:placements": ["xcore:offer-placement:c652463157c2aa1"],
+      "xdm:optionSelection": {
+        "xdm:filter": "xcore:offer-filter:f6998eb62ed6f15"
+      },
+      "xdm:profileConstraints": {
+        "xdm:description": "Pilot = Y",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+      },
+      "xdm:ranking": {
+        "xdm:priority": 0
+      }
+    },
+    {
+      "xdm:placements": ["xcore:offer-placement:c652463157c2aa2"],
+      "xdm:optionSelection": {
+        "xdm:options": ["xcore:offer:f6998eb62ed6f15"]
+      },
+      "xdm:profileConstraints": {
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0ba3"
+      },
+      "xdm:ranking": {
+        "xdm:priority": 0
+      }
+    }
+  ]
+}

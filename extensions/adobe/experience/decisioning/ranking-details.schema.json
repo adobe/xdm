@@ -1,0 +1,56 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/ranking-details",
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Ranking Details",
+  "description": "A ranking produces the order in which one option is selected over another. A fixed absolute priority can be used in case there is no other function known that maps a decsion option to an ordinal value.",
+  "definitions": {
+    "ranking-details": {
+      "properties": {
+        "xdm:order": {
+          "title": "Order Evaluation",
+          "description": "Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.",
+          "$ref": "#/definitions/order-evaluation"
+        },
+        "xdm:priority": {
+          "type": "integer",
+          "title": "Priority",
+          "description": "The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.",
+          "minimum": 0
+        }
+      }
+    },
+    "order-evaluation": {
+      "properties": {
+        "xdm:function": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Scoring Function",
+          "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function"
+        },
+        "xdm:rankingStrategy": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Ranking Strategy",
+          "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/ranking-details"
+    },
+    {
+      "required": ["xdm:priority"]
+    }
+  ],
+  "meta:status": "experimental"
+}

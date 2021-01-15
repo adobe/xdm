@@ -64,33 +64,33 @@ Unknown type `object`.
     "xdm:sourceType": {
       "title": "Source Type",
       "type": "string",
-      "description": "."
+      "description": "Type of the source."
     },
     "xdm:formName": {
       "title": "Form Name",
       "type": "string",
-      "description": "."
+      "description": "Friendly name to form."
     },
     "xdm:listName": {
       "title": "List Name",
       "type": "string",
-      "description": "."
+      "description": "Name of the list."
     },
     "xdm:sfdcType": {
       "title": "SFDC Type",
       "type": "string",
-      "description": "."
+      "description": "Type defined in salesforce source."
     },
     "xdm:leadSource": {
       "title": "Lead Source",
       "type": "string",
-      "description": "."
+      "description": "Source from where this perticlar lead come from."
     },
     "xdm:createdDate": {
       "title": "Created Date",
       "type": "string",
       "format": "date-time",
-      "description": "."
+      "description": "Date when this lead is created."
     }
   },
   "simpletype": "`object`"

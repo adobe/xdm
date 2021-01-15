@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/decisioning/ranked-content-option",
+  "$id": "https://ns.adobe.com/experience/decisioning/personalized-content-option",
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/experience/decisioning/option",
@@ -20,10 +20,10 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Personalized Offer",
-  "description": "A personalized offer is the conceptual entity that is chosen during a decisioning process. The objective for decisioning is to take a large inventory of decision items and apply numerous constraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals.",
+  "title": "Personalized Content Decision Option",
+  "description": "Personalized decision options form the set of choices for any decision actvity. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.",
   "definitions": {
-    "ranked-content-option": {
+    "personalized-content-option": {
       "properties": {}
     }
   },

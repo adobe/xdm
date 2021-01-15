@@ -17,7 +17,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Fallback Offer",
+  "title": "Fallback Content Decision Option",
   "description": "A default offer that is used when there is no personalized offer is left after checking all constraints.",
   "definitions": {
     "fallback-offer": {

@@ -53,7 +53,7 @@
       "$ref": "https://ns.adobe.com/experience/decisioning/ranking"
     },
     {
-      "$ref": "#/definitions/ranked-content-option"
+      "$ref": "#/definitions/personalized-content-option"
     }
   ],
   "meta:status": "stable"

@@ -9,7 +9,7 @@ This mixin captures consumer consent for collection and use of data related to p
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/consent-preferences.schema.json](datatypes/consent-preferences.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/consent-preferences.schema.json](datatypes/consent-preferences.schema.json) |
 
 ## Consent for Privacy, Personalization and Marketing Preferences Example
 ```json

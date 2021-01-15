@@ -18,7 +18,7 @@
   "definitions": {
     "scorechanged": {
       "properties": {
-        "xdm:leadOpearation": {
+        "xdm:leadOperation": {
           "title": "Lead Operation",
           "type": "object",
           "properties": {

@@ -88,7 +88,7 @@
                     "title": "Close Date",
                     "description": "Date of closure for this opportunity.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date"
                 },
                 "xdm:lastActivityDate": {
                     "title": "Last Activity Date",

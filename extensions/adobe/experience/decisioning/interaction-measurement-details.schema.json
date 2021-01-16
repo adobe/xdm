@@ -22,7 +22,7 @@
         },
         "xdm:outcome": {
           "type": "object",
-          "properties" : {
+          "properties": {
             "xdm:field": {
               "type": "string",
               "title": "Outcome property path",

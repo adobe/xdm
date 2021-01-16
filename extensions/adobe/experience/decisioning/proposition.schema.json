@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event.",
+  "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event. For a given decision request and profile identity the response of the request is a unique proposition. If a decision is requested again for the same profile and the output happens to be the same options, it is still considered a different proposition with a unique ID. Multiple scopes and item lists can be returned with the same proposition.",
   "definitions": {
     "proposition-mixin": {
       "properties": {
@@ -23,7 +23,7 @@
           "title": "Proposition Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the proposition event referenced by an \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers."
+          "description": "A unique identifier for the proposition event referenced by another \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers."
         }
       }
     }

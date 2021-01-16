@@ -19,7 +19,7 @@
         "xdm:id": {
           "type": "string",
           "title": "Decision Proposition Identifier",
-          "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition."
+          "description": "The unique identifier of the proposition that originally contained the decision options that are being acted upon (see the corresponding 'items' field in this object). When this identifier is present, direct attribution is given to a unique proposition. If the identifier is missing, the action for the items could not be assiciated with a unique proposition."
         },
         "xdm:scope": {
           "type": "string",
@@ -54,12 +54,13 @@
         "xdm:decisionScope": {
           "meta:status": "deprecated",
           "type": "string",
-          "title": "Decision Event Scope (deprecated)",
+          "title": "Decision Scope (deprecated)",
           "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details. (deprecated)"
         },
         "xdm:decisionScopeDetails": {
+          "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
-          "title": "Decision Event Scope Details",
+          "title": "Decision Scope Details",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
         }
       }

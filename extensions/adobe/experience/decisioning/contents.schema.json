@@ -8,9 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/contents",
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/option",
-    "https://ns.adobe.com/experience/decisioning/personalized-offer",
-    "https://ns.adobe.com/experience/decisioning/fallback-offer"
+    "https://ns.adobe.com/experience/decisioning/option"
   ],
   "meta:abstract": true,
   "meta:extensible": true,
@@ -39,5 +37,5 @@
       "$ref": "#/definitions/contents-mixin"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

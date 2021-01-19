@@ -7,9 +7,10 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/fallback-content-option",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/experience/decisioning/option",
     "https://ns.adobe.com/experience/decisioning/lifecycle-status",
     "https://ns.adobe.com/experience/decisioning/tags",
     "https://ns.adobe.com/experience/decisioning/contents"
@@ -18,19 +19,13 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Fallback Content Decision Option",
-  "description": "A default offer that is used when there is no personalized offer is left after checking all constraints.",
+  "description": "A default decision option that is used when there is no personalized content is left after checking all constraints. The Fallback content mixin cannot be combined with mixins that express constraint because a fallback option must be remain applicable for any use in a given context.",
   "definitions": {
-    "fallback-offer": {
+    "fallback-content-option": {
       "properties": {}
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/option"
-    },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status"
     },
@@ -41,8 +36,8 @@
       "$ref": "https://ns.adobe.com/experience/decisioning/contents"
     },
     {
-      "$ref": "#/definitions/fallback-offer"
+      "$ref": "#/definitions/fallback-content-option"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

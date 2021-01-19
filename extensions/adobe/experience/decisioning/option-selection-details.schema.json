@@ -41,7 +41,7 @@
           "type": "string",
           "format": "uri-reference",
           "title": "Option Filter",
-          "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/option-filter ."
+          "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter ."
         }
       }
     }
@@ -51,5 +51,5 @@
       "$ref": "#/definitions/option-selection-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

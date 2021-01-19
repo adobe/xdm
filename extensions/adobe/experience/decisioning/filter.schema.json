@@ -14,7 +14,7 @@
   "title": "Decision Option Filter",
   "description": "Filters are used to specify criteria for option selection by topic or theme. The most common filter mechanism is by the tags that are associated with an option. In general the option filter selects a subset of option from the overall inventory.",
   "definitions": {
-    "option-filter": {
+    "filter": {
       "properties": {
         "xdm:name": {
           "type": "string",
@@ -34,7 +34,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/option-filter"
+      "$ref": "#/definitions/filter"
     },
     {
       "required": ["xdm:name"]

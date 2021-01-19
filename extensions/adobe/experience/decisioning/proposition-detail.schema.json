@@ -33,7 +33,7 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail"
         },
         "xdm:selections": {
-          "title": "Selected Options' Snapshot",
+          "title": "Selected Option Snapshots",
           "description": "Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
           "type": "array",
           "items": {
@@ -57,5 +57,6 @@
     {
       "$ref": "#/definitions/proposition-detail-datatype"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

@@ -8,8 +8,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/calendar-constraints",
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/decisioning/option",
-    "https://ns.adobe.com/experience/decisioning/personalized-offer"
+    "https://ns.adobe.com/experience/decisioning/option"
   ],
   "meta:abstract": true,
   "meta:extensible": true,
@@ -33,5 +32,5 @@
       "$ref": "#/definitions/calendar-constraints"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

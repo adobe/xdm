@@ -15,7 +15,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event.",
+  "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event. By using the same value in differnt events direct attribution is established between the events for the same proposition.",
   "definitions": {
     "proposition-mixin": {
       "properties": {
@@ -38,5 +38,6 @@
     {
       "$ref": "#/definitions/proposition-mixin"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

@@ -333,12 +333,12 @@ class Converter extends EventEmitter {
             },
           "type" : function(values) {
             if (values.length > 1 ) {
-              throw("!!!This schema " + rawSchema["$id"] + " contains field type conflicts after resolving allOf!!!")
+              console.log("!!!This schema " + rawSchema["$id"] + " contains field type conflicts after resolving allOf!!!")
             }
           },
           "format" : function(values) {
             if (values.length > 1 ) {
-              throw("!!!This schema " + rawSchema["$id"] + " contains field with format conflicts after resolving allOf!!!")
+              console.log("!!!This schema " + rawSchema["$id"] + " contains field with format conflicts after resolving allOf!!!")
             }
           },
           defaultResolver: function(values) {

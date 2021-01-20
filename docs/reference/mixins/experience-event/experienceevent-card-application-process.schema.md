@@ -13,7 +13,38 @@ Card comparison details such as count, addition, removal, and view.
 
 ## Card Application Process Example
 ```json
-{}
+{
+  "xdm:personalFinances": {
+    "xdm:cardApplicationComparisons": {
+      "xdm:comparisons": {
+        "xdm:comparisonAddition": 1,
+        "xdm:comparisonCount": 3,
+        "xdm:comparisonItems": [
+          "TF0021",
+          "WCAT102340P11BN",
+          "DEL45CCP"
+        ],
+        "xdm:comparisonRemoval": 1,
+        "xdm:comparisonType": "product",
+        "xdm:comparisonView": 1,
+        "xdm:comparisonImpressions": ""
+      }
+    },
+    "xdm:cardApplicationSteps": {
+      "xdm:form-applications": {
+        "xdm:formApplicationApproved": "",
+        "xdm:formApplicationDeclined": "",
+        "xdm:formApplicationID": "F102931032",
+        "xdm:formApplicationRequestedAmount": "2000.00",
+        "xdm:formApplicationStatus": "initiated",
+        "xdm:formApplicationStatusUpdate": "",
+        "xdm:formApplicationType": "loan",
+        "xdm:formApplicationUnderReview": "",
+        "xdm:formApplicationUsage": ""
+      }
+    }
+  }
+}
 ```
 
 # Card Application Process Properties
@@ -39,40 +70,44 @@ Card comparison details such as count, addition, removal, and view.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:cardApplicationProcess`| object | Optional |
+| `xdm:cardApplicationComparisons`|  | Optional |
+| `xdm:cardApplicationSteps`|  | Optional |
 
 
 
-#### xdm:cardApplicationProcess
+#### xdm:cardApplicationComparisons
+##### Card Comparisons
 
-undefined
+Extension of comparison data type.
 
-`xdm:cardApplicationProcess`
+`xdm:cardApplicationComparisons`
 * is optional
-* type: `object`
+* type: reference
 
-##### xdm:cardApplicationProcess Type
+##### xdm:cardApplicationComparisons Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:cardApplicationComparisons": {
-      "title": "Card Comparisons",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-      "description": "Extension of comparison data type."
-    },
-    "xdm:cardApplicationSteps": {
-      "title": "Card Application Steps",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-      "description": "Extension of form application data type."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/datatypes/comparisons`
+
+
+
+
+
+
+
+#### xdm:cardApplicationSteps
+##### Card Application Steps
+
+Extension of form application data type.
+
+`xdm:cardApplicationSteps`
+* is optional
+* type: reference
+
+##### xdm:cardApplicationSteps Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/form-applications`
 
 
 

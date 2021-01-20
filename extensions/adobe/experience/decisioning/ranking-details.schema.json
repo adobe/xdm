@@ -49,7 +49,7 @@
       "$ref": "#/definitions/ranking-details"
     },
     {
-      "required": ["xdm:priority"]
+      "required": ["https://ns.adobe.com/experience/decisioning/priority"]
     }
   ],
   "meta:status": "experimental"

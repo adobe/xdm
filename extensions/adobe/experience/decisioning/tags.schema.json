@@ -25,7 +25,7 @@
           "items": {
             "type": "string",
             "format": "uri-reference",
-            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/xdm /taxonomy/tag"
+            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag"
           }
         }
       }

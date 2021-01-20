@@ -1,1 +1,28 @@
-{}
+{
+  "xdm:personalFinances": {
+    "xdm:cardApplicationComparisons": {
+      "xdm:comparisons": {
+        "xdm:comparisonAddition": 1,
+        "xdm:comparisonCount": 3,
+        "xdm:comparisonItems": ["TF0021", "WCAT102340P11BN", "DEL45CCP"],
+        "xdm:comparisonRemoval": 1,
+        "xdm:comparisonType": "product",
+        "xdm:comparisonView": 1,
+        "xdm:comparisonImpressions": ""
+      }
+    },
+    "xdm:cardApplicationSteps": {
+      "xdm:form-applications": {
+        "xdm:formApplicationApproved": "",
+        "xdm:formApplicationDeclined": "",
+        "xdm:formApplicationID": "F102931032",
+        "xdm:formApplicationRequestedAmount": "2000.00",
+        "xdm:formApplicationStatus": "initiated",
+        "xdm:formApplicationStatusUpdate": "",
+        "xdm:formApplicationType": "loan",
+        "xdm:formApplicationUnderReview": "",
+        "xdm:formApplicationUsage": ""
+      }
+    }
+  }
+}

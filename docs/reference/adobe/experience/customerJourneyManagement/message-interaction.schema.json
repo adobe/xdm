@@ -50,6 +50,11 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
+                    "title": "Tracker URL Label",
+                    "type": "string",
+                    "description": "Human-Friendly label"
                 }
             }
         }
@@ -71,7 +76,8 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
                 "marketing",
                 "apparel"
-            ]
+            ],
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com"
         }
     ]
 }

@@ -331,6 +331,16 @@ class Converter extends EventEmitter {
                     //console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
                 return Array.from(new Set(abstractList));
             },
+          "type" : function(values) {
+            if (values.length > 1 ) {
+              throw("!!!This schema " + rawSchema["$id"] + " contains field type conflicts after resolving allOf!!!")
+            }
+          },
+          "format" : function(values) {
+            if (values.length > 1 ) {
+              throw("!!!This schema " + rawSchema["$id"] + " contains field with format conflicts after resolving allOf!!!")
+            }
+          },
           defaultResolver: function(values) {
             var valueList = [];
             for (var i in values)

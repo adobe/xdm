@@ -108,7 +108,7 @@
           "title": "Close Date",
           "description": "Date of closure for this opportunity.",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "xdm:nextStep": {
           "title": "Next Step",

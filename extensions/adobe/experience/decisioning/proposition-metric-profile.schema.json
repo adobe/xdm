@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-metric-profile",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Option Metric - Individual Profile Propositions",
+  "title": "Option propositions to a Profile",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description": "The number of times a particular option was proposed so far to a particular profile. The metric is only applicable in events that calpture the indentity of an individual profile.",
+  "description": "The number of times a particular option was proposed so far to a particular profile.",
   "definitions": {
     "metricdefinition": {
       "properties": {

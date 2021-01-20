@@ -1,7 +1,7 @@
 {
   "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "xdm:profileConstraintType": "anySegments",
-    "xdm:segmentIdentities": [
+    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
+    "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
       {
         "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
         "xdm:namespace": {

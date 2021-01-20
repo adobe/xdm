@@ -16,7 +16,7 @@
   "title": "Decision Option Contents",
   "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
   "definitions": {
-    "contents-mixin": {
+    "contents": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/contents": {
           "type": "array",
@@ -34,7 +34,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/contents-mixin"
+      "$ref": "#/definitions/contents"
     }
   ],
   "meta:status": "stable"

@@ -1,23 +1,25 @@
 {
   "@id": "xcore:fallback-offer:20216ba8e04e44ac",
-  "xdm:name": "Default Offer",
-  "xdm:status": "approved",
-  "xdm:tags": ["xcore:tag:f87c371cd0b20be"],
-  "xdm:contents": [
+  "https://ns.adobe.com/experience/decisioning/name": "Default Offer",
+  "https://ns.adobe.com/experience/decisioning/status": "approved",
+  "https://ns.adobe.com/experience/decisioning/tags": [
+    "xcore:tag:f87c371cd0b20be"
+  ],
+  "https://ns.adobe.com/experience/decisioning/contents": [
     {
-      "xdm:placement": "xcore:offer-placement:f8eb10f058477e3",
-      "xdm:components": [
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:f8eb10f058477e3",
+      "https://ns.adobe.com/experience/decisioning/components": [
         {
           "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
           "dc:format": "text/plain",
           "dc:language": ["en"],
-          "xdm:content": "text entered directly"
+          "https://ns.adobe.com/experience/decisioning/content": "text entered directly"
         }
       ]
     },
     {
-      "xdm:placement": "xcore:offer-placement:f652463157c0ba4",
-      "xdm:components": [
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:f652463157c0ba4",
+      "https://ns.adobe.com/experience/decisioning/components": [
         {
           "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
           "dc:format": "text/plain",

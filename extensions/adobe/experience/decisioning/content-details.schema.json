@@ -14,13 +14,13 @@
   "definitions": {
     "content-details": {
       "properties": {
-        "xdm:placement": {
+        "https://ns.adobe.com/experience/decisioning/placement": {
           "type": "string",
           "format": "uri-reference",
           "title": "Placement",
           "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         },
-        "xdm:components": {
+        "https://ns.adobe.com/experience/decisioning/components": {
           "type": "array",
           "description": "The components of the content representing the decision option, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.",
           "items": {
@@ -35,7 +35,10 @@
       "$ref": "#/definitions/content-details"
     },
     {
-      "required": ["xdm:components", "xdm:placement"]
+      "required": [
+        "https://ns.adobe.com/experience/decisioning/components",
+        "https://ns.adobe.com/experience/decisioning/placement"
+      ]
     }
   ],
   "meta:status": "stable"

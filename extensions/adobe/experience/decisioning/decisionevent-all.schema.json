@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/decisionevent-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Event Reporting Dimensions",
+  "title": "Decision Event - Reporting Dimensions",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
@@ -48,6 +48,5 @@
     {
       "$ref": "#/definitions/decisioning-mixin"
     }
-  ],
-  "meta:status": "stable"
+  ]
 }

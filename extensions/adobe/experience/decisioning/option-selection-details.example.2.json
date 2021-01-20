@@ -1,5 +1,5 @@
 {
-  "xdm:description": "All Premium Credit Cards",
-  "xdm:optionSelectionType": "filter",
-  "xdm:filter": "xcore:offer-filter:f66f792de3c0ba9"
+  "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
+  "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
+  "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
 }

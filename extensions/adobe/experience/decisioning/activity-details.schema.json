@@ -1,21 +1,50 @@
 {
   "meta:license": [
-    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/activity-detail",
+  "$id": "https://ns.adobe.com/experience/decisioning/activity-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Activity Detail",
+  "title": "Decision Activity Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Snapshot of the properties of the decision activity. A decision activity is an entity that controls a decisioning process. Decisions are made in the context of an activity. See definition of decision activty for more details.",
   "definitions": {
-    "activity-detail-datatype": {
+    "activity-details": {
+      "type": "object",
       "properties": {
-        "xdm:id": {
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "title": "Activity Name",
+          "type": "string",
+          "description": "Activity name. The name is displayed in various user interfaces."
+        },
+        "https://ns.adobe.com/experience/decisioning/startTime": {
+          "title": "Activity Start Date and Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+        },
+        "https://ns.adobe.com/experience/decisioning/endTime": {
+          "title": "Activity End Date and Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+        },
+        "https://ns.adobe.com/experience/decisioning/fallback": {
+          "title": "Fallback Option",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced."
+        }
+      }
+    },
+    "activity-snapshot-identifier": {
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/id": {
           "title": "Activity Identifier",
           "type": "string",
           "format": "uri-reference",
@@ -25,29 +54,6 @@
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken."
-        },
-        "xdm:name": {
-          "title": "Activity Name",
-          "type": "string",
-          "description": "Activity name. The name is displayed in various user interfaces."
-        },
-        "xdm:startTime": {
-          "title": "Activity Start Date and Time",
-          "type": "string",
-          "format": "date-time",
-          "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
-        },
-        "xdm:endTime": {
-          "title": "Activity End Date and Time",
-          "type": "string",
-          "format": "date-time",
-          "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
-        },
-        "xdm:fallback": {
-          "title": "Fallback Option",
-          "type": "string",
-          "format": "uri-reference",
-          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced."
         }
       }
     }
@@ -57,10 +63,11 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/activity-detail-datatype"
+      "$ref": "#/definitions/activity-snapshot-identifier"
     },
     {
-      "required": ["xdm:id"]
+      "$ref": "#/definitions/activity-details"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

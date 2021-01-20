@@ -1,12 +1,12 @@
 {
   "https://ns.adobe.com/experience/decisioning/contents": [
     {
-      "xdm:placement": "xcore:offer-placement:e51944a87919861",
-      "xdm:components": [
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:e51944a87919861",
+      "https://ns.adobe.com/experience/decisioning/components": [
         {
           "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
           "dc:format": "text/template",
-          "xdm:text": "You can always get what you want!"
+          "https://ns.adobe.com/experience/decisioning/content": "You can always get what you want!"
         }
       ]
     }

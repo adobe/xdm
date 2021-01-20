@@ -1,6 +1,8 @@
 {
   "@id": "xcore:offer-filter:f6704f4d7fc0baa",
-  "xdm:name": "Explore",
-  "xdm:filterType": "anyTags",
-  "xdm:ids": ["xcore:tag:102a75bf408b1de8"]
+  "https://ns.adobe.com/experience/decisioning/name": "Explore",
+  "https://ns.adobe.com/experience/decisioning/filterType": "anyTags",
+  "https://ns.adobe.com/experience/decisioning/ids": [
+    "xcore:tag:102a75bf408b1de8"
+  ]
 }

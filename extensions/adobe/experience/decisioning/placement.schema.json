@@ -15,39 +15,7 @@
   "description": "A content placement describes a location or place where the content of a proposed decision option is rendered into. It is used to set technical constraints for content that the decision supplies.",
   "definitions": {
     "placement": {
-      "properties": {
-        "https://ns.adobe.com/experience/decisioning/name": {
-          "type": "string",
-          "title": "Name",
-          "description": "An assigned name for the placement to refer to it in human interactions"
-        },
-        "https://ns.adobe.com/experience/decisioning/description": {
-          "type": "string",
-          "title": "Description",
-          "description": "Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method."
-        },
-        "https://ns.adobe.com/experience/decisioning/channel": {
-          "type": "string",
-          "format": "uri-reference",
-          "title": "Communication Channel",
-          "description": "A reference to the channel entity. The channel indicates where the placement exists in the hierarchy of locations. See 'https://ns.adobe.com/xdm/channels/channel'"
-        },
-        "https://ns.adobe.com/experience/decisioning/componentType": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details#/definitions/content-component-type",
-          "title": "Content Component Type",
-          "description": "A constraint for the content that can be shown in the place described by this placement. Component Types for example are: image link, html block or plain text."
-        },
-        "https://ns.adobe.com/experience/decisioning/contentTypes": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "title": "MIME Media Type",
-            "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)",
-            "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-            "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format."
-          }
-        }
-      }
+      "properties": {}
     }
   },
   "allOf": [
@@ -58,7 +26,7 @@
       "$ref": "#/definitions/placement"
     },
     {
-      "required": ["https://ns.adobe.com/experience/decisioning/name"]
+      "$ref": "https://ns.adobe.com/experience/decisioning/placement-details#/definitions/placement-details"
     }
   ],
   "meta:status": "stable"

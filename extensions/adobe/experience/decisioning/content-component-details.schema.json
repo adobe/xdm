@@ -54,15 +54,14 @@
             "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
           ]
         },
-        "xdm:content": {
+        "https://ns.adobe.com/experience/decisioning/content": {
           "type": "string",
           "description": "An optional field to hold content directly. Instead of referencing content in an asset repository the component can hold simple content directly. This field is not used for composite, complex and binary content assets.",
           "examples": [""]
         },
-        "xdm:deliveryURL": {
+        "https://ns.adobe.com/experience/decisioning/deliveryURL": {
           "type": "string",
           "format": "uri-reference",
-          "meta:immutable": true,
           "meta:usereditable": false,
           "description": "An optional unique resource locator to obtain the asset from a content delivery network or service endpoint. This URL is used to access the asset publicly by a user agent.",
           "examples": [

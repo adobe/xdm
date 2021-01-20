@@ -1,6 +1,6 @@
 {
-  "xdm:placement": "uri:xcore:placement-0003",
-  "xdm:components": [
+  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0003",
+  "https://ns.adobe.com/experience/decisioning/components": [
     {
       "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
       "dc:format": "text/html",

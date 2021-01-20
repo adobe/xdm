@@ -16,7 +16,7 @@
   "title": "Decision Activity Criteria",
   "description": "One or more constraints that evaluate to lists of \"top N best\" options in the context of a decision activity. Those options satisfy all constraints for a given placement and are ordered by some function.",
   "definitions": {
-    "decision-criteria-mixin": {
+    "decision-criteria": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/criteria": {
           "type": "array",
@@ -31,7 +31,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/decision-criteria-mixin"
+      "$ref": "#/definitions/decision-criteria"
     }
   ],
   "meta:status": "stable"

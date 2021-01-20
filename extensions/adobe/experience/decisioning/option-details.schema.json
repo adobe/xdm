@@ -5,17 +5,36 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/decisioning/option-detail",
+  "$id": "https://ns.adobe.com/experience/decisioning/option-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Decision Option Detail",
+  "title": "Decision Option Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Detail about the entity that represents one of the possible selections or choices for a decision. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
   "definitions": {
-    "option-detail-datatype": {
+    "option-details": {
       "properties": {
-        "xdm:id": {
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "type": "string",
+          "title": "Decision Option Name",
+          "description": "Option name. The name is displayed in various user interfaces."
+        },
+        "https://ns.adobe.com/experience/decisioning/characteristics": {
+          "title": "Decision Option Characteristics",
+          "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "Value of the property."
+          }
+        }
+      }
+    },
+    "option-snapshot-identifier": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/id": {
           "title": "Decision Option Identifier",
           "type": "string",
           "format": "uri-reference",
@@ -25,13 +44,12 @@
           "title": "Decision Option ETag",
           "type": "string",
           "description": "The revision that the decision option object was at when the snapshot was taken."
-        },
-        "xdm:name": {
-          "type": "string",
-          "title": "Decision Option Name",
-          "description": "Option name. The name is displayed in various user interfaces."
-        },
-        "xdm:tags": {
+        }
+      }
+    },
+    "option-snapshot-tags": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/tags": {
           "type": "array",
           "title": "Decision Option Tags",
           "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
@@ -40,17 +58,11 @@
             "format": "uri-reference",
             "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag"
           }
-        },
-        "xdm:characteristics": {
-          "title": "Decision Option Characteristics",
-          "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
-          "type": "object",
-          "meta:xdmType": "map",
-          "additionalProperties": {
-            "type": "string",
-            "description": "Value of the property."
-          }
-        },
+        }
+      }
+    },
+    "option-snapshot-measures": {
+      "properties": {
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles."
@@ -67,10 +79,16 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/option-detail-datatype"
+      "$ref": "#/definitions/option-details"
     },
     {
-      "required": ["xdm:id"]
+      "$ref": "#/definitions/option-snapshot-identifier"
+    },
+    {
+      "$ref": "#/definitions/option-snapshot-tags"
+    },
+    {
+      "$ref": "#/definitions/option-snapshot-measures"
     }
   ]
 }

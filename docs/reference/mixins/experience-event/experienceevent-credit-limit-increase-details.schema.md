@@ -13,7 +13,23 @@ Credit limit increase application details such as ID, type, approval, and status
 
 ## Credit Limit Increase Details Example
 ```json
-{}
+{
+  "xdm:personalFinances": {
+    "xdm:creditLimitIncrease": {
+      "xdm:form-applications": {
+        "xdm:formApplicationApproved": "",
+        "xdm:formApplicationDeclined": "",
+        "xdm:formApplicationID": "F102931032",
+        "xdm:formApplicationRequestedAmount": "2000.00",
+        "xdm:formApplicationStatus": "initiated",
+        "xdm:formApplicationStatusUpdate": "",
+        "xdm:formApplicationType": "loan",
+        "xdm:formApplicationUnderReview": "",
+        "xdm:formApplicationUsage": ""
+      }
+    }
+  }
+}
 ```
 
 # Credit Limit Increase Details Properties
@@ -39,35 +55,23 @@ Credit limit increase application details such as ID, type, approval, and status
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:creditLimitIncreaseDetails`| object | Optional |
+| `xdm:creditLimitIncrease`|  | Optional |
 
 
 
-#### xdm:creditLimitIncreaseDetails
+#### xdm:creditLimitIncrease
+##### Credit Limit Increase
 
-undefined
+Extension of form application data type.
 
-`xdm:creditLimitIncreaseDetails`
+`xdm:creditLimitIncrease`
 * is optional
-* type: `object`
+* type: reference
 
-##### xdm:creditLimitIncreaseDetails Type
+##### xdm:creditLimitIncrease Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:creditLimitIncrease": {
-      "title": "Credit Limit Increase",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-      "description": "Extension of form application data type."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/datatypes/form-applications`
 
 
 

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Credit limit increase application details such as ID, type, approval, and status.",
   "definitions": {
@@ -20,15 +22,10 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:creditLimitIncreaseDetails": {
-              "type": "object",
-              "properties": {
-                "xdm:creditLimitIncrease": {
-                  "title": "Credit Limit Increase",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-                  "description": "Extension of form application data type."
-                }
-              }
+            "xdm:creditLimitIncrease": {
+              "title": "Credit Limit Increase",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
+              "description": "Extension of form application data type."
             }
           }
         }

@@ -14,7 +14,7 @@ Adobe Analytics ExperienceEvent Commerce Mixin.
 
 * Adobe Analytics ExperienceEvent Commerce Mixin `https://ns.adobe.com/experience/analytics/commerce`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Commerce](../../../datatypes/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
+  * [Commerce](../../../datatypes/marketing/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
 
 
 # Adobe Analytics ExperienceEvent Commerce Mixin Properties
@@ -38,7 +38,7 @@ Commerce specific data related to this event.
 ### xdm:commerce Type
 
 
-* [Commerce](../../../datatypes/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Commerce](../../../datatypes/marketing/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
 
 
 

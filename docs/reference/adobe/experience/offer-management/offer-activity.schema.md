@@ -1,28 +1,28 @@
 
-# Activity Schema
+# Activity (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/offer-activity
 ```
 
-An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).
+An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization offers. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-activity.schema.json](adobe/experience/offer-management/offer-activity.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-activity.schema.json](adobe/experience/offer-management/offer-activity.schema.json) |
 
-# Activity Properties
+# Activity (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Activity (this schema) |
-| [xdm:endDate](#xdmenddate) | `string` | Optional | Activity (this schema) |
-| [xdm:fallback](#xdmfallback) | `string` | **Required** | Activity (this schema) |
-| [xdm:filter](#xdmfilter) | `string` | **Required** | Activity (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Activity (this schema) |
-| [xdm:placement](#xdmplacement) | `string` | **Required** | Activity (this schema) |
-| [xdm:startDate](#xdmstartdate) | `string` | Optional | Activity (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | **Required** | Activity (this schema) |
+| [@id](#id) | `string` | Optional | Activity (deprecated) (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Activity (deprecated) (this schema) |
+| [xdm:fallback](#xdmfallback) | `string` | **Required** | Activity (deprecated) (this schema) |
+| [xdm:filter](#xdmfilter) | `string` | **Required** | Activity (deprecated) (this schema) |
+| [xdm:name](#xdmname) | `string` | **Required** | Activity (deprecated) (this schema) |
+| [xdm:placement](#xdmplacement) | `string` | **Required** | Activity (deprecated) (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Activity (deprecated) (this schema) |
+| [xdm:status](#xdmstatus) | `enum` | **Required** | Activity (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

@@ -134,7 +134,7 @@ The details of the software used to collect the ExperienceEvent.
 ### xdm:implementationDetails Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
@@ -387,7 +387,7 @@ The information related to web page and link of the ExperienceEvent.
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

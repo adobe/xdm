@@ -1,31 +1,31 @@
 
-# Fallback Offer Schema
+# Fallback Offer (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/fallback-offer
 ```
 
-Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints.
+Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/fallback-offer.schema.json](adobe/experience/offer-management/fallback-offer.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/fallback-offer.schema.json](adobe/experience/offer-management/fallback-offer.schema.json) |
 ## Schema Hierarchy
 
-* Fallback Offer `https://ns.adobe.com/experience/offer-management/fallback-offer`
-  * [Offer](offer.schema.md) `https://ns.adobe.com/experience/offer-management/offer`
+* Fallback Offer (deprecated) `https://ns.adobe.com/experience/offer-management/fallback-offer`
+  * [Offer (deprecated)](offer.schema.md) `https://ns.adobe.com/experience/offer-management/offer`
 
 
-# Fallback Offer Properties
+# Fallback Offer (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Offer](offer.schema.md#id) |
-| [xdm:customMetadata](#xdmcustommetadata) | `object` | Optional | [Offer](offer.schema.md#xdmcustommetadata) |
-| [xdm:name](#xdmname) | `string` | Optional | [Offer](offer.schema.md#xdmname) |
-| [xdm:representations](#xdmrepresentations) | Representation | Optional | [Offer](offer.schema.md#xdmrepresentations) |
-| [xdm:status](#xdmstatus) | `enum` | Optional | [Offer](offer.schema.md#xdmstatus) |
-| [xdm:tags](#xdmtags) | `string[]` | Optional | [Offer](offer.schema.md#xdmtags) |
+| [@id](#id) | `string` | Optional | [Offer (deprecated)](offer.schema.md#id) |
+| [xdm:customMetadata](#xdmcustommetadata) | `object` | Optional | [Offer (deprecated)](offer.schema.md#xdmcustommetadata) |
+| [xdm:name](#xdmname) | `string` | Optional | [Offer (deprecated)](offer.schema.md#xdmname) |
+| [xdm:representations](#xdmrepresentations) | Representation (deprecated) | Optional | [Offer (deprecated)](offer.schema.md#xdmrepresentations) |
+| [xdm:status](#xdmstatus) | `enum` | Optional | [Offer (deprecated)](offer.schema.md#xdmstatus) |
+| [xdm:tags](#xdmtags) | `string[]` | Optional | [Offer (deprecated)](offer.schema.md#xdmtags) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -36,7 +36,7 @@ The unique identifier of the offer. It must be unique within a repository contai
 `@id`
 * is optional
 * type: `string`
-* defined in [Offer](offer.schema.md#id)
+* defined in [Offer (deprecated)](offer.schema.md#id)
 
 ### @id Type
 
@@ -57,7 +57,7 @@ Custom metadata is a key-value map that allows the end-users to attach propertie
 `xdm:customMetadata`
 * is optional
 * type: `object`
-* defined in [Offer](offer.schema.md#xdmcustommetadata)
+* defined in [Offer (deprecated)](offer.schema.md#xdmcustommetadata)
 
 ### xdm:customMetadata Type
 
@@ -81,7 +81,7 @@ The offer's name. A human readable string to find one or more offers.
 `xdm:name`
 * is optional
 * type: `string`
-* defined in [Offer](offer.schema.md#xdmname)
+* defined in [Offer (deprecated)](offer.schema.md#xdmname)
 
 ### xdm:name Type
 
@@ -100,17 +100,17 @@ Offer representations for different content variants. A single offer can have mu
 
 `xdm:representations`
 * is optional
-* type: Representation
+* type: Representation (deprecated)
 
-* defined in [Offer](offer.schema.md#xdmrepresentations)
+* defined in [Offer (deprecated)](offer.schema.md#xdmrepresentations)
 
 ### xdm:representations Type
 
 
-Array type: Representation
+Array type: Representation (deprecated)
 
 All items must be of the type:
-* [Representation](offer-representation.schema.md) – `https://ns.adobe.com/experience/offer-management/offer-representation`
+* [Representation (deprecated)](offer-representation.schema.md) – `https://ns.adobe.com/experience/offer-management/offer-representation`
 
 
 
@@ -127,7 +127,7 @@ Offer Status allows user workflows to be conducted with offers. The status may a
 `xdm:status`
 * is optional
 * type: `enum`
-* defined in [Offer](offer.schema.md#xdmstatus)
+* defined in [Offer (deprecated)](offer.schema.md#xdmstatus)
 
 The value of this property **must** be equal to one of the [known values below](#xdmstatus-known-values).
 
@@ -152,7 +152,7 @@ The set of tags associated with this offer. The tags are used in offer filter ex
 * is optional
 * type: `string[]`
 
-* defined in [Offer](offer.schema.md#xdmtags)
+* defined in [Offer (deprecated)](offer.schema.md#xdmtags)
 
 ### xdm:tags Type
 

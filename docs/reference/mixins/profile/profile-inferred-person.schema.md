@@ -13,7 +13,7 @@ This mixin is used to capture inferred details about a person where they are not
 ## Schema Hierarchy
 
 * XDM Inferred Person `https://ns.adobe.com/xdm/mixins/profile-inferred-person`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
 
 
 ## XDM Inferred Person Example
@@ -66,7 +66,7 @@ Address details inferred by reverse IP lookup of the lead’s first recorded web
 ### xdm:inferredAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

@@ -1,0 +1,165 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/emailinteraction",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Email Interaction",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Captures information in the context of an email correspondence between persons",
+    "definitions": {
+        "emailinteraction": {
+            "properties": {
+                "xdm:priority": {
+                    "title": "Email's priority",
+                    "type": "string",
+                    "description": "Captures the priority set by the person who sent the email"
+                },
+                "xdm:sentDateTime": {
+                    "title": "Date and time the email was sent",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Captures the date and time the email correspondence was sent to an individual or a group of people"
+                },
+                "xdm:receivedDateTime": {
+                    "title": "Date and time the email was received",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Captures the date and time when the email was received"
+                },
+                "xdm:body": {
+                    "title": "Body of the mail",
+                    "type": "string",
+                    "description": "The contents of the email after substitution of the placeholders in the template"
+                },
+                "xdm:hasAttachments": {
+                    "title": "Email has attachments",
+                    "type": "boolean",
+                    "description": "A flag represent whether any attachment is part of the email message"
+                },
+                "xdm:isQuarantined": {
+                    "title": "quarantine message",
+                    "type": "boolean",
+                    "description": "A flag to represent whether the email message is a spam"
+                },
+                "xdm:sizeInBytes": {
+                    "title": "Email message size",
+                    "type": "number",
+                    "description": "Record the size of the email message in bytes"
+                },
+                "xdm:failureReasonCode": {
+                    "title": "Reason code for failure",
+                    "type": "string",
+                    "description": "Indicates the error code for not able to deliver the email message"
+                },
+                "xdm:failureReasonMessage": {
+                    "title": "Reason Message for failure",
+                    "type": "string",
+                    "description": "Indicates the full message for the error code, for not able to deliver the message"
+                },
+                "xdm:fromAddress": {
+                    "title": "Person sending the email communication",
+                    "type": "string",
+                    "format": "email",
+                    "description": "Person who is sender of the email message"
+                },
+                "xdm:toAddress": {
+                    "type": "array",
+                    "title": "An array of email addresses for the To list",
+                    "description": "Person or list of people who are in the To list of the email message",
+                    "items": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "xdm:ccAddress": {
+                    "type": "array",
+                    "title": "An array of email addresses for the cc list",
+                    "description": "Person or list of people who are in the cc list of the email message",
+                    "items": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "xdm:bccAddress": {
+                    "type": "array",
+                    "title": "An array of email addresses for the bcc list",
+                    "description": "Person or list of people who are in the bcc list of the email message",
+                    "items": {
+                        "type": "string",
+                        "format": "email"
+                    }
+                },
+                "xdm:headers": {
+                    "title": "Email headers",
+                    "type": "string",
+                    "description": "Captures the headers of the email for diagnosis"
+                },
+                "xdm:incomingMessage": {
+                    "title": "Inbound or Outbound Message ",
+                    "type": "boolean",
+                    "description": "A flag to represent whether a message was sent or recieved"
+                },
+                "xdm:firstOpenDate": {
+                    "title": "First time the email was opened by the receiver",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "First date and time when the receiver took the action to open the email"
+                },
+                "xdm:lastOpenDate": {
+                    "title": "Last time when the email was opened by the receiver",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Last time the email was opened, by any receiver"
+                },
+                "xdm:isTracked": {
+                    "title": "Email Tracking flag",
+                    "type": "boolean",
+                    "description": "A flag to capture whether the email was tracked by the sender"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/emailinteraction"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:priority": "high",
+            "xdm:sentDateTime": "2020-05-18T00:00:00+00:00",
+            "xdm:receivedDateTime": "2020-05-18T00:00:28+00:00",
+            "xdm:body": "Mark nice to meet you virtually and welcome back to conversations with Marketo......",
+            "xdm:hasAttachments": false,
+            "xdm:isQuarantined": false,
+            "xdm:sizeInBytes": 2576,
+            "xdm:failureReasonCode": "0-0000",
+            "xdm:failureReasonMessage": "Success",
+            "xdm:fromAddress": "abc@google.com",
+            "xdm:toAddress": [
+                "mark@google.com"
+            ],
+            "xdm:ccAddress": [
+                "p@google.com",
+                "q@yahoo.com"
+            ],
+            "xdm:bccAddress": [
+                "r@google.com"
+            ],
+            "xdm:headers": "Return-Path: <abc@google.com> X-SpamCatcher-Score: 1 [X] Received: from [136.167.40.119]",
+            "xdm:incomingMessage": false,
+            "xdm:firstOpenDate": "2020-05-18T05:00:00+00:00",
+            "xdm:lastOpenDate": "2020-05-20T00:12:28+00:00",
+            "xdm:isTracked": true
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-contact-request-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Contact Request Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "retail",
+            "financial_services",
+            "travel_and_hospitality",
+            "telecom",
+            "automotive",
+            "education",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing",
+            "media_and_entertainment",
+            "public_sector"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Visitor contact details such as chat start and end, as well as click to email, text, and call counts. ",
+    "definitions": {
+        "contact-request-details": {
+            "properties": {
+                "xdm:customerFeedback": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:chatDeclined": {
+                            "title": "Chat Declined",
+                            "type": "integer",
+                            "description": "Captured when an offered chat is declined by a visitor."
+                        },
+                        "xdm:chatEnd": {
+                            "title": "Chat End",
+                            "type": "integer",
+                            "description": "Captured when a chat is ended with a visitor."
+                        },
+                        "xdm:chatOffered": {
+                            "title": "Chat Offered",
+                            "type": "integer",
+                            "description": "Captures the number of times a chat session has been offered to a visitor."
+                        },
+                        "xdm:chatSessionID": {
+                            "title": "Chat Session ID",
+                            "type": "string",
+                            "description": "Captures the chat session identifier, if available."
+                        },
+                        "xdm:chatStart": {
+                            "title": "Chat Start",
+                            "type": "integer",
+                            "description": "Captured when a chat is initiated with a visitor."
+                        },
+                        "xdm:clickToCall": {
+                            "title": "Click to Call",
+                            "type": "integer",
+                            "description": "Visitor initiates a call to the client from a telephone number link on the site/app."
+                        },
+                        "xdm:clickToDirectMessage": {
+                            "title": "Click to Direct Message",
+                            "type": "integer",
+                            "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app."
+                        },
+                        "xdm:clickToEmail": {
+                            "title": "Click to Email",
+                            "type": "integer",
+                            "description": "Visitor initiates an email to the client from an email link on the site/app."
+                        },
+                        "xdm:clickToText": {
+                            "title": "Click to Text",
+                            "type": "integer",
+                            "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app."
+                        },
+                        "xdm:subject": {
+                            "title": "Subject",
+                            "type": "string",
+                            "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc."
+                        },
+                        "xdm:callBackNumber": {
+                            "title": "Call Back Contact Information",
+                            "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                            "description": "The contact phone number the visitor uses for responses to contact requests."
+                        },
+                        "xdm:replyToEmailAddress": {
+                            "title": "Reply to Email Address",
+                            "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                            "description": "The email address the visitor uses for responses to contact requests."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/contact-request-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:customerFeedback": {
+                "xdm:chatDeclined": 1,
+                "xdm:chatEnd": 1,
+                "xdm:chatOffered": 1,
+                "xdm:chatSessionID": "C0192910",
+                "xdm:chatStart": 1,
+                "xdm:clickToCall": 1,
+                "xdm:clickToDirectMessage": 1,
+                "xdm:clickToEmail": 1,
+                "xdm:clickToText": 1,
+                "xdm:subject": "Service Request",
+                "xdm:callBackNumber": {
+                    "xdm:primary": true,
+                    "xdm:number": "1-408-888-8888",
+                    "xdm:status": "active"
+                },
+                "xdm:replyToEmailAddress": {
+                    "xdm:primary": false,
+                    "xdm:address": "jsmith@xyzinc.com",
+                    "xdm:label": "John Smith",
+                    "xdm:type": "work",
+                    "xdm:status": "active"
+                }
+            }
+        }
+    ]
+}

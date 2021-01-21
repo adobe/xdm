@@ -1,0 +1,77 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/opportunity-person",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Opportunity Person Relation",
+    "type": "object",
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
+    "definitions": {
+        "opportunity-person": {
+            "properties": {
+                "xdm:opportunityPersonID": {
+                    "title": "Opportunity Person ID",
+                    "description": "Opportunity person relation unique identifer.",
+                    "type": "string"
+                },
+                "xdm:opportunityID": {
+                    "title": "Opportunity ID",
+                    "description": "Opportunity unique identifier reference.",
+                    "type": "string"
+                },
+                "xdm:personID": {
+                    "title": "Person ID",
+                    "description": "Person unique identifier reference.",
+                    "type": "string"
+                },
+                "xdm:personRole": {
+                    "title": "Person Role",
+                    "description": "Role of the person/contact for this opportunity.",
+                    "type": "string"
+                },
+                "xdm:isPrimary": {
+                    "title": "Primary Flag",
+                    "description": "A flag to signify that this is the primary opportunity contact",
+                    "type": "boolean"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/opportunity-person"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "required": [
+        "xdm:opportunityPersonID"
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:opportunityPersonID": "123456",
+            "xdm:opportunityID": "jkghdiuw68o",
+            "xdm:personID": "6897ihkhf",
+            "xdm:personRole": "Sales",
+            "xdm:isPrimary": true
+        }
+    ]
+}

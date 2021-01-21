@@ -17,6 +17,27 @@ A decision proposition reference is used to link an experience event that is a r
   * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
 
 
+## Decision Proposition Reference Example
+```json
+{
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "68519882713298129995549973016107434638",
+        "xdm:primary": true
+      }
+    ],
+    "CPGN": [
+      {
+        "xdm:id": "https://data.adobe.io/entities/identity/1234567",
+        "xdm:primary": true
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a"
+}
+```
+
 # Decision Proposition Reference Properties
 
 | Property | Type | Required | Defined by |

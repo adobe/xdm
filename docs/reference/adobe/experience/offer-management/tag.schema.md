@@ -1,22 +1,22 @@
 
-# Tag Schema
+# Tag (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/tag
 ```
 
-A tag is a keyword or term assigned to a piece of information. Tags in this domain are reusable, searchable and identifiable keywords, i.e. their identity gets attached to other objects not simply the string that is used for human consumption. Therefore the same tag could have multiple, human readable representations. Tags can also be classified or arranged in an order that conveys additional semantics. This semantics is, however, not specified in this domain.
+A tag is a keyword or term assigned to a piece of information. Tags in this domain are reusable, searchable and identifiable keywords, i.e. their identity gets attached to other objects not simply the string that is used for human consumption. Therefore the same tag could have multiple, human readable representations. Tags can also be classified or arranged in an order that conveys additional semantics. This semantics is, however, not specified in this domain. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/tag.schema.json](adobe/experience/offer-management/tag.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/tag.schema.json](adobe/experience/offer-management/tag.schema.json) |
 
-# Tag Properties
+# Tag (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Tag (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Tag (this schema) |
+| [@id](#id) | `string` | Optional | Tag (deprecated) (this schema) |
+| [xdm:name](#xdmname) | `string` | **Required** | Tag (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

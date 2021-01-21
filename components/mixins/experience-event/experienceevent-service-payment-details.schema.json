@@ -19,7 +19,7 @@
   "definitions": {
     "service-payment-details": {
       "properties": {
-        "xdm:": {
+        "xdm:service-payment-details": {
           "type": "object",
           "properties": {
             "xdm:servicePayment": {

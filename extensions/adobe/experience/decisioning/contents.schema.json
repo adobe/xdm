@@ -1,0 +1,41 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/contents",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Option Contents",
+  "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+  "definitions": {
+    "contents": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/contents": {
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/content-details"
+          },
+          "title": "Content Details",
+          "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/contents"
+    }
+  ],
+  "meta:status": "stable"
+}

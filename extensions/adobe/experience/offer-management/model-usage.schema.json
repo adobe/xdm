@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Used XDM Models and Properties from those Models",
-  "description": "A key-value pair whose key is a reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter.",
+  "title": "Used XDM Models and Properties from those Models (deprecated)",
+  "description": "A key-value pair whose key is a reference to the model, i.e. the model's $id property. The value is an array of strings, each string representing a fully qualified path to an XDM field with dots used as the path delimiter. (deprecated)",
   "definitions": {
     "model-usage": {
       "type": "object",
@@ -40,5 +40,6 @@
     {
       "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

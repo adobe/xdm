@@ -285,9 +285,9 @@ class Converter extends EventEmitter {
       "https://ns.adobe.com/experience/": ""
     };
 
-
+    var err;
+    var errorLog = "xedError.log"
     var rawSchema = JSON.parse(fs.readFileSync(refBase).toString());
-
     var fullSchema = mergeAllOf(deref(rawSchema), { //deref and resolve allOf
         resolvers: {
           "meta:extends" : function(values) {//resolving conflict
@@ -331,6 +331,20 @@ class Converter extends EventEmitter {
                     //console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
                 return Array.from(new Set(abstractList));
             },
+          "type" : function(values) {
+            if (values.length > 1 ) {
+              err = "The schema " + rawSchema["$id"] + " contains field type conflicts after resolving allOf!\n"
+              fs.writeFileSync(errorLog, err, 'utf8')
+              throw(err)
+            }
+          },
+          "format" : function(values) {
+            if (values.length > 1 ) {
+              err = "The schema " + rawSchema["$id"] + " contains field format conflicts after resolving allOf!\n"
+              fs.writeFileSync(errorLog, err, 'utf8')
+              throw(err)
+            }
+          },
           defaultResolver: function(values) {
             var valueList = [];
             for (var i in values)

@@ -26,11 +26,10 @@ A point or place of interest (POI) Details. Used to capture the technical and me
   "xdm:name": "Acme Hotel Tokyo",
   "xdm:category": "Resorts",
   "xdm:type": "Hotel",
-  "xdm:locatingType": "beacon",
-  "xdm:beaconInteractionDetails": {
-    "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
-    "xdm:beaconMajor": 100,
-    "xdm:beaconMinor": 23
+  "xdm:locatingType": "gps",
+  "xdm:geoInteractionDetails": {
+    "xdm:distanceToCenter": 100,
+    "xdm:accuracy": 30
   }
 }
 ```
@@ -41,10 +40,11 @@ A point or place of interest (POI) Details. Used to capture the technical and me
   "xdm:name": "Acme Hotel Tokyo",
   "xdm:category": "Resorts",
   "xdm:type": "Hotel",
-  "xdm:locatingType": "gps",
-  "xdm:geoInteractionDetails": {
-    "xdm:distanceToCenter": 100,
-    "xdm:accuracy": 30
+  "xdm:locatingType": "beacon",
+  "xdm:beaconInteractionDetails": {
+    "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+    "xdm:beaconMajor": 100,
+    "xdm:beaconMinor": 23
   }
 }
 ```

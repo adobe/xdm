@@ -1,5 +1,5 @@
 
-# Capping Constraint Schema
+# Capping Constraint (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/capping-constraint
@@ -16,14 +16,14 @@ A marketer can set both these caps on an offer at the same time.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/capping-constraint.schema.json](adobe/experience/offer-management/capping-constraint.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/capping-constraint.schema.json](adobe/experience/offer-management/capping-constraint.schema.json) |
 
-# Capping Constraint Properties
+# Capping Constraint (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:globalCap](#xdmglobalcap) | `integer` | Optional | Capping Constraint (this schema) |
-| [xdm:profileCap](#xdmprofilecap) | `integer` | Optional | Capping Constraint (this schema) |
+| [xdm:globalCap](#xdmglobalcap) | `integer` | Optional | Capping Constraint (deprecated) (this schema) |
+| [xdm:profileCap](#xdmprofilecap) | `integer` | Optional | Capping Constraint (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:globalCap

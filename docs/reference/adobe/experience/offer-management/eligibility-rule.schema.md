@@ -1,22 +1,22 @@
 
-# Eligibility Rule Schema
+# Eligibility Rule (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/eligibility-rule
 ```
 
-An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The profile query language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning.
+An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The profile query language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/eligibility-rule.schema.json](adobe/experience/offer-management/eligibility-rule.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/eligibility-rule.schema.json](adobe/experience/offer-management/eligibility-rule.schema.json) |
 ## Schema Hierarchy
 
-* Eligibility Rule `https://ns.adobe.com/experience/offer-management/eligibility-rule`
+* Eligibility Rule (deprecated) `https://ns.adobe.com/experience/offer-management/eligibility-rule`
   * [Filter Expression Tree](filter-expression/filter-expression.schema.md) `https://ns.adobe.com/experience/offer-management/filter-expression`
 
 
-## Eligibility Rule Example
+## Eligibility Rule (deprecated) Example
 ```json
 {
   "@id": "https://www.example.com/offers/eligibility-rule/rule-0001",
@@ -190,15 +190,15 @@ An eligibility rule is a named reusable predicate used in the domain of audience
 }
 ```
 
-# Eligibility Rule Properties
+# Eligibility Rule (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Eligibility Rule (this schema) |
-| [xdm:modelUsage](#xdmmodelusage) | Used XDM Models and Properties from those Models | **Required** | Eligibility Rule (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Eligibility Rule (this schema) |
-| [xdm:value](#xdmvalue) | Filter Expression Tree | **Required** | Eligibility Rule (this schema) |
-| [xdm:valueAsText](#xdmvalueastext) | `string` | Optional | Eligibility Rule (this schema) |
+| [@id](#id) | `string` | Optional | Eligibility Rule (deprecated) (this schema) |
+| [xdm:modelUsage](#xdmmodelusage) | Used XDM Models and Properties from those Models (deprecated) | **Required** | Eligibility Rule (deprecated) (this schema) |
+| [xdm:name](#xdmname) | `string` | **Required** | Eligibility Rule (deprecated) (this schema) |
+| [xdm:value](#xdmvalue) | Filter Expression Tree | **Required** | Eligibility Rule (deprecated) (this schema) |
+| [xdm:valueAsText](#xdmvalueastext) | `string` | Optional | Eligibility Rule (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -229,17 +229,17 @@ A list of "model usage" objects, one per model, that lists the fully qualified p
 
 `xdm:modelUsage`
 * is **required**
-* type: Used XDM Models and Properties from those Models
+* type: Used XDM Models and Properties from those Models (deprecated)
 
 * defined in this schema
 
 ### xdm:modelUsage Type
 
 
-Array type: Used XDM Models and Properties from those Models
+Array type: Used XDM Models and Properties from those Models (deprecated)
 
 All items must be of the type:
-* [Used XDM Models and Properties from those Models](model-usage.schema.md) – `https://ns.adobe.com/experience/offer-management/model-usage`
+* [Used XDM Models and Properties from those Models (deprecated)](model-usage.schema.md) – `https://ns.adobe.com/experience/offer-management/model-usage`
 
 
 

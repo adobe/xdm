@@ -11,8 +11,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Adobe Experience Cloud Personalized Offer",
-  "description": "A personalized offer is the conceptual entity that is chosen during the decisioning process. The objective for decisioning is to take a large inventory of content items and apply numerous constraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals.",
+  "title": "Adobe Experience Cloud Personalized Offer (deprecated)",
+  "description": "A personalized offer is the conceptual entity that is chosen during the decisioning process. The objective for decisioning is to take a large inventory of content items and apply numerous constraint rules to that inventory to first narrow it down and then rank the qualifying options. The outcome modifies the overall experience to accommodate specific individuals, sometimes tied to groups or segments of individuals. (deprecated)",
   "definitions": {
     "personalized-offer": {
       "allOf": [
@@ -51,5 +51,6 @@
     {
       "required": ["xdm:rank", "xdm:selectionConstraint"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

@@ -11,8 +11,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Fallback Offer",
-  "description": "Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints.",
+  "title": "Fallback Offer (deprecated)",
+  "description": "Fallback offer is a default offer used when there is no personalization offer left that satisfies all constraints. (deprecated)",
   "definitions": {
     "fallback-offer": {
       "allOf": [
@@ -29,5 +29,6 @@
     {
       "$ref": "https://ns.adobe.com/experience/offer-management/offer"
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

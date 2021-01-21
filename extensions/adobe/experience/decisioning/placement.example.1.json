@@ -1,0 +1,8 @@
+{
+  "@id": "xcore:placement:12345",
+  "https://ns.adobe.com/experience/decisioning/name": "Partner Newsletter Signup Section",
+  "https://ns.adobe.com/experience/decisioning/description": "HTML Fragment that adapts to width between 260px and 560px, embeddable in an HTML formatted email. The content must be viewable by a typical email client. It should only use static, table-based layouts HTML tables and nested tables simple, inline CSS and web safe fonts. It cannot assume JavaScript or XHR requests will be processed. iframes, forms, div layering must not be used and content types like embedded audio, embedded video or flash are not allowed. The metrics to produce during interaction with the widget are: https://ns.adobe.com/xdm/data/metrics/web/linkclicks and the experience containing the placement must be asked to produce an experience event referencing this placement Id and with a metric https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+  "https://ns.adobe.com/experience/decisioning/channelID": "https://ns.adobe.com/xdm/channels/email",
+  "https://ns.adobe.com/experience/decisioning/componentType": "https://ns.adobe.com/experience/offer-management/content-component-html",
+  "https://ns.adobe.com/experience/decisioning/contentTypes": ["text/html"]
+}

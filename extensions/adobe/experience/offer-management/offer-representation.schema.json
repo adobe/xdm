@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Representation",
-  "description": "Offer representation.",
+  "title": "Representation (deprecated)",
+  "description": "Offer representation (deprecated).",
   "definitions": {
     "offer-representation": {
       "properties": {
@@ -122,5 +122,6 @@
     {
       "required": ["xdm:components", "xdm:channel", "xdm:placement"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

@@ -1,0 +1,19 @@
+{
+  "https://ns.adobe.com/experience/decisioning/description": "S1:",
+  "https://ns.adobe.com/experience/decisioning/placements": [
+    "xcore:offer-placement:6111463157c2221"
+  ],
+  "https://ns.adobe.com/experience/decisioning/optionSelection": {
+    "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
+    "https://ns.adobe.com/experience/decisioning/options": [
+      "xcore:offer:f6998eb62ed6f15"
+    ]
+  },
+  "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+    "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
+    "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b01"
+  },
+  "https://ns.adobe.com/experience/decisioning/ranking": {
+    "https://ns.adobe.com/experience/decisioning/priority": 8
+  }
+}

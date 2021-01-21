@@ -21,11 +21,11 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Includes all steps for receiving a quote",
   "definitions": {
     "quote-request-steps": {
       "properties": {
-        "xdm:": {
+        "xdm:quoteRequestSteps": {
           "type": "object",
           "properties": {
             "xdm:quoteDiscount": {

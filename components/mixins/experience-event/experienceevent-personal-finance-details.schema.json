@@ -30,12 +30,15 @@
             "xdm:assignedBeneficiary": {
               "title": "Assigned Beneficiaries",
               "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+              },
               "description": "Captures the beneficiary(s) assigned to the account."
             },
             "xdm:creditScore": {
               "title": "Credit Score",
               "type": "integer",
-              "description": "Refers to a number between 300�850 that depicts a consumer's creditworthiness. "
+              "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. "
             },
             "xdm:employmentStatus": {
               "title": "Employment Status",
@@ -73,10 +76,10 @@
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned."
             },
-            "xdm:headOfHousehold": {
+            "xdm:isHeadOfHousehold": {
               "title": "Head of Household",
               "type": "boolean",
-              "description": "Users designed as head of household if they�pay more than half the cost of supporting and housing a qualifying person."
+              "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person."
             },
             "xdm:householdIncome": {
               "title": "Household Income",

@@ -31,12 +31,15 @@
   "definitions": {
     "survey-response-details": {
       "properties": {
-        "xdm:customerFeedback": {
+        "xdm:surveyResponse": {
           "type": "object",
           "properties": {
             "xdm:surveyAnswers": {
               "title": "Survey Answers",
               "type": "array",
+              "items": {
+                "type": "string"
+              },
               "description": "An array of the answers provided by the visitor within a survey."
             },
             "xdm:surveyID": {
@@ -47,6 +50,9 @@
             "xdm:surveyQuestions": {
               "title": "Survey Questions",
               "type": "array",
+              "items": {
+                "type": "string"
+              },
               "description": "An array of the questions presented to the visitor within a survey."
             },
             "xdm:surveySteps": {

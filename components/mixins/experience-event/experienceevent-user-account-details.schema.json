@@ -41,7 +41,7 @@
             },
             "xdm:userAccountPersonalDetails": {
               "title": "User Account Personal Details",
-              "$ref": "https://ns.adobe.com/xdm/context/profile-person-details",
+              "type": "mixin",
               "description": "Extension of the Personal Profile data type."
             },
             "xdm:userAccountStart": {
@@ -74,6 +74,9 @@
             "xdm:userAccountPreferences": {
               "title": "User Account Preferences",
               "type": "array",
+              "items": {
+                "type": "string"
+              },
               "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. "
             }
           }

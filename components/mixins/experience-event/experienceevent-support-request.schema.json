@@ -15,11 +15,11 @@
     "industry": ["financial_services", "telecom", "high_tech", "public_sector"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Included for any type of support request initiated by the customer.",
   "definitions": {
     "support-request": {
       "properties": {
-        "xdm:": {
+        "xdm:supportRequest": {
           "type": "object",
           "properties": {
             "xdm:supportRequestSteps": {

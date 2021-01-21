@@ -9,17 +9,19 @@
     "xdm:isHeadOfHousehold": true,
     "xdm:singleFiler": false,
     "xdm:taxBracket": "TBD",
-    "xdm:assignedBeneficiary": {
-      "xdm:person": {
-        "xdm:name": {
-          "xdm:firstName": "Jane",
-          "xdm:middleName": "F",
-          "xdm:lastName": "Doe",
-          "xdm:fullName": "Jane F. Doe"
-        },
-        "xdm:birthDayAndMonth": "01-03",
-        "xdm:gender": "female"
+    "xdm:assignedBeneficiary": [
+      {
+        "xdm:person": {
+          "xdm:name": {
+            "xdm:firstName": "Jane",
+            "xdm:middleName": "F",
+            "xdm:lastName": "Doe",
+            "xdm:fullName": "Jane F. Doe"
+          },
+          "xdm:birthDayAndMonth": "01-03",
+          "xdm:gender": "female"
+        }
       }
-    }
+    ]
   }
 }

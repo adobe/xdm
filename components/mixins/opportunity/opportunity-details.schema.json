@@ -83,13 +83,13 @@
           "default": 0
         },
         "xdm:expectedCloseDate": {
-          "title": "Close Date",
+          "title": "Expected Close Date",
           "description": "Expected date of closure for this opportunity.",
           "type": "string",
           "format": "date"
         },
         "xdm:actualCloseDate": {
-          "title": "Close Date",
+          "title": "Actual Close Date",
           "description": "Actual date of closure for this opportunity.",
           "type": "string",
           "format": "date-time"

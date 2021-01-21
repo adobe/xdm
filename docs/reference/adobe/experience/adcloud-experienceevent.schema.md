@@ -356,7 +356,7 @@ Information related to advertising activity in ExperienceEvents.
 ### xdm:advertising Type
 
 
-* [Advertising](../../datatypes/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
+* [Advertising](../../datatypes/marketing/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
 
 
 
@@ -413,7 +413,7 @@ Commerce specific data related to this event.
 ### xdm:commerce Type
 
 
-* [Commerce](../../datatypes/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Commerce](../../datatypes/marketing/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
 
 
 
@@ -470,7 +470,7 @@ Events and properties related to direct and outbound marketing such as email, di
 ### xdm:directMarketing Type
 
 
-* [Direct marketing](../../datatypes/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+* [Direct marketing](../../datatypes/marketing/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 
@@ -547,7 +547,7 @@ The information related to marketing activities that are active with the touchpo
 ### xdm:marketing Type
 
 
-* [Marketing](../../datatypes/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
+* [Marketing](../../datatypes/marketing/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
 
 
 
@@ -566,7 +566,7 @@ Media activity information related to the experience event.
 ### xdm:media Type
 
 
-* [Media information](../../datatypes/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+* [Media information](../../datatypes/media/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
 
 
 
@@ -744,7 +744,7 @@ The information related to web page and link of the ExperienceEvent.
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

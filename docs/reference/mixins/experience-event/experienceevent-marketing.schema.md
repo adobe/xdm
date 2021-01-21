@@ -14,7 +14,7 @@ Marketing campaign information such as campaign group, name, and tracking code.
 
 * Campaign Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-marketing`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Marketing](../../datatypes/marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
+  * [Marketing](../../datatypes/marketing/marketing.schema.md) `https://ns.adobe.com/xdm/context/marketing`
 
 
 ## Campaign Marketing Details Example
@@ -46,7 +46,7 @@ The information related to marketing activities that are active with the touchpo
 ### xdm:marketing Type
 
 
-* [Marketing](../../datatypes/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
+* [Marketing](../../datatypes/marketing/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
 
 
 

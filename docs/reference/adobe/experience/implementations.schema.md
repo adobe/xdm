@@ -14,7 +14,7 @@ Details the type and version of client implementations for data collection inter
 
 * Adobe Experience Platform Implementation Details `https://ns.adobe.com/experience/implementations`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation details](../../datatypes/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 # Adobe Experience Platform Implementation Details Properties
@@ -40,7 +40,7 @@ Client details interacting with Adobe Advertising Cloud.
 ### https://ns.adobe.com/experience/adcloud/implementation Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
@@ -59,7 +59,7 @@ Client details interacting with Adobe Analytics.
 ### https://ns.adobe.com/experience/analytics/implementation Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
@@ -78,7 +78,7 @@ Client details interacting with Adobe Experience Cloud ID Service.
 ### https://ns.adobe.com/experience/idservice/implementation Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
@@ -97,7 +97,7 @@ Client details interacting with Adobe Target.
 ### https://ns.adobe.com/xdm/experience/target/implementation Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

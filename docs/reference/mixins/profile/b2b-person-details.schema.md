@@ -242,7 +242,7 @@ Audit attributes for external sources.
 ### xdm:extSourceSystemAudit Type
 
 
-* [External Source System Audit Attributes](../../datatypes/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+* [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
 
 
 
@@ -419,7 +419,7 @@ Fax phone number.
 ### xdm:faxPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -438,7 +438,7 @@ A home postal address.
 ### xdm:homeAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -457,7 +457,7 @@ Home phone number.
 ### xdm:homePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -498,7 +498,7 @@ Address details inferred by reverse IP lookup of the lead’s first recorded web
 ### xdm:inferredAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -597,7 +597,7 @@ Mobile phone number.
 ### xdm:mobilePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -641,7 +641,7 @@ Other/Alternate postal address of the person.
 ### xdm:otherAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -660,7 +660,7 @@ Other/Alternate phone number of the person.
 ### xdm:otherPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -679,7 +679,7 @@ An individual actor, contact, or owner.
 ### xdm:person Type
 
 
-* [Person](../../datatypes/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Person](../../datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 
 
@@ -698,7 +698,7 @@ A personal email address.
 ### xdm:personalEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
@@ -717,7 +717,7 @@ A work postal address.
 ### xdm:workAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -736,7 +736,7 @@ A work email address.
 ### xdm:workEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
@@ -755,7 +755,7 @@ Work phone number.
 ### xdm:workPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

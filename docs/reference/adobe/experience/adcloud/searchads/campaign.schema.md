@@ -14,7 +14,7 @@ Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) tha
 
 * Search Advertising Campaign `https://ns.adobe.com/xdm/adcloud/searchads/campaign`
   * [Record Schema](../../../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [Audit trail](../../../../datatypes/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
+  * [Audit trail](../../../../datatypes/auditing/auditable.schema.md) `https://ns.adobe.com/xdm/common/auditable`
 
 
 # Search Advertising Campaign Properties
@@ -22,8 +22,8 @@ Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) tha
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../../../behaviors/record.schema.md#id) |
-| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#repocreatedate) |
-| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#repomodifydate) |
+| [repo:createDate](#repocreatedate) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#repocreatedate) |
+| [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#repomodifydate) |
 | [searchads:accountId](#searchadsaccountid) | `string` | Optional | Search Advertising Campaign (this schema) |
 | [searchads:adDeliveryType](#searchadsaddeliverytype) | `enum` | Optional | Search Advertising Campaign (this schema) |
 | [searchads:budget](#searchadsbudget) | `number` | Optional | Search Advertising Campaign (this schema) |
@@ -40,10 +40,10 @@ Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) tha
 | [searchads:objective](#searchadsobjective) | `enum` | Optional | Search Advertising Campaign (this schema) |
 | [searchads:portfolioId](#searchadsportfolioid) | `string` | Optional | Search Advertising Campaign (this schema) |
 | [searchads:searchEngineId](#searchadssearchengineid) | `integer` | Optional | Search Advertising Campaign (this schema) |
-| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#xdmcreatedbybatchid) |
-| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#xdmmodifiedbybatchid) |
-| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#xdmrepositorycreatedby) |
-| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../../../../datatypes/auditable.schema.md#xdmrepositorylastmodifiedby) |
+| [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmcreatedbybatchid) |
+| [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmmodifiedbybatchid) |
+| [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmrepositorycreatedby) |
+| [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmrepositorylastmodifiedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -74,7 +74,7 @@ The server date and time when the resource was created in the repository, such a
 `repo:createDate`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#repocreatedate)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#repocreatedate)
 
 ### repo:createDate Type
 
@@ -99,7 +99,7 @@ The server date and time when the resource was last modified in the repository, 
 `repo:modifyDate`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#repomodifydate)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#repomodifydate)
 
 ### repo:modifyDate Type
 
@@ -485,7 +485,7 @@ The dataset files in Catalog which has been originating the creation of the reco
 `xdm:createdByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#xdmcreatedbybatchid)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmcreatedbybatchid)
 
 ### xdm:createdByBatchID Type
 
@@ -506,7 +506,7 @@ The last dataset files in Catalog which has modified the record. At creation tim
 `xdm:modifiedByBatchID`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#xdmmodifiedbybatchid)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmmodifiedbybatchid)
 
 ### xdm:modifiedByBatchID Type
 
@@ -527,7 +527,7 @@ User ID of who created the record.
 `xdm:repositoryCreatedBy`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#xdmrepositorycreatedby)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmrepositorycreatedby)
 
 ### xdm:repositoryCreatedBy Type
 
@@ -547,7 +547,7 @@ User ID of who last modified the record. At creation time, `modifiedByUser` is s
 `xdm:repositoryLastModifiedBy`
 * is optional
 * type: `string`
-* defined in [Audit trail](../../../../datatypes/auditable.schema.md#xdmrepositorylastmodifiedby)
+* defined in [Audit trail](../../../../datatypes/auditing/auditable.schema.md#xdmrepositorylastmodifiedby)
 
 ### xdm:repositoryLastModifiedBy Type
 

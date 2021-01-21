@@ -16,8 +16,8 @@ Examples include location specific information such as weather, local time, traf
 
 * Place context `https://ns.adobe.com/xdm/context/placecontext`
   * [Extensibility base schema](extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Geo](geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
-  * [Point of interest interaction](poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
+  * [Geo](demographic/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
+  * [Point of interest interaction](interactions/poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
 ## Place context Example
@@ -100,7 +100,7 @@ The point of interest (POI) interaction details.
 ### xdm:POIinteraction Type
 
 
-* [Point of interest interaction](poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
+* [Point of interest interaction](interactions/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
 
@@ -145,7 +145,7 @@ The geographic location where the experience was delivered.
 ### xdm:geo Type
 
 
-* [Geo](geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
+* [Geo](demographic/geo.schema.md) – `https://ns.adobe.com/xdm/common/geo`
 
 
 

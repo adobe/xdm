@@ -13,10 +13,10 @@ Adobe Campaign Profile snapshot contains the recipient of the message. This prop
 ## Schema Hierarchy
 
 * Adobe Campaign Profile Snapshot `https://ns.adobe.com/experience/campaign/profile-snapshot`
-  * [Person](../../../datatypes/person.schema.md) `https://ns.adobe.com/xdm/context/person`
-  * [Direct marketing postal address](../../../datatypes/directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
-  * [Direct marketing email address](../../../datatypes/directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
-  * [Direct marketing phone number](../../../datatypes/directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+  * [Person](../../../datatypes/person/person.schema.md) `https://ns.adobe.com/xdm/context/person`
+  * [Direct marketing postal address](../../../datatypes/marketing/directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
+  * [Direct marketing email address](../../../datatypes/marketing/directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+  * [Direct marketing phone number](../../../datatypes/marketing/directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
 ## Adobe Campaign Profile Snapshot Example
@@ -133,7 +133,7 @@ Direct Marketing postal address.
 ### xdm:directMarketingAddress Type
 
 
-* [Direct marketing postal address](../../../datatypes/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
+* [Direct marketing postal address](../../../datatypes/marketing/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
 
 
 
@@ -152,7 +152,7 @@ Direct Marketing email address.
 ### xdm:directMarketingEmail Type
 
 
-* [Direct marketing email address](../../../datatypes/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+* [Direct marketing email address](../../../datatypes/marketing/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
 
 
 
@@ -171,7 +171,7 @@ Direct Marketing phone number.
 ### xdm:directMarketingPhone Type
 
 
-* [Direct marketing phone number](../../../datatypes/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+* [Direct marketing phone number](../../../datatypes/marketing/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
 
@@ -190,7 +190,7 @@ An individual actor, contact, or owner.
 ### xdm:person Type
 
 
-* [Person](../../../datatypes/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Person](../../../datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 
 

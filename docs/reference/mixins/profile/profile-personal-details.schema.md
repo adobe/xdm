@@ -14,9 +14,9 @@ Contact information for an individual person such as home address, phone number,
 
 * Personal Contact Details `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Email address](../../datatypes/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Email address](../../datatypes/demographic/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
+  * [Phone number](../../datatypes/demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 ## Personal Contact Details Example
@@ -54,7 +54,7 @@ Fax phone number.
 ### xdm:faxPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -73,7 +73,7 @@ A home postal address.
 ### xdm:homeAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -92,7 +92,7 @@ Home phone number.
 ### xdm:homePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -111,7 +111,7 @@ Mobile phone number.
 ### xdm:mobilePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -130,7 +130,7 @@ A personal email address.
 ### xdm:personalEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 

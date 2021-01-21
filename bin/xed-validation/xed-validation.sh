@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+cleanup () {
+  (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json schemaChanges.log tempmaster xedError.log) #cleanup temp folders
+}
+
 git clone https://github.com/adobe/xdm.git tempmaster
 (cd tempmaster/bin/xed-validation; pwd; cp ../../../xed-master-gen.sh ../../../cleaninput.sh ../../../schemaLocGen.js .; ./xed-master-gen.sh) #get master branch xed
 
@@ -23,6 +27,12 @@ node tempGen.js -i tempinput/extensions -j xdm-extensions
 node xedGen.js -i xdm -j tempxed
 node xedGen.js -i xdm-extensions -j tempxed
 
+if [[ -f "xedError.log" ]]; then
+    cat xedError.log
+    cleanup
+    exit 1
+fi
+
 (echo "++++++++++Start XED schemas field tagging..... ++++++++++"; sleep 1)
 echo "{}" > tags.json
 node tag4xed.js -i tempxed -j xed
@@ -36,9 +46,9 @@ returnCode=$?
 
 if [ $returnCode -ne 0 ]; then
   echo "There are schema validation errors!"
-  (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json schemaChanges.log tempmaster) #cleanup temp folders
+  cleanup
   exit 1
 else
   echo "All good"
-  (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json schemaChanges.log tempmaster) #cleanup temp folders
+  cleanup
 fi

@@ -82,11 +82,17 @@
           "minimum": 0,
           "default": 0
         },
-        "xdm:closeDate": {
+        "xdm:expectedCloseDate": {
           "title": "Close Date",
-          "description": "Date of closure for this opportunity.",
+          "description": "Expected date of closure for this opportunity.",
           "type": "string",
           "format": "date"
+        },
+        "xdm:actualCloseDate": {
+          "title": "Close Date",
+          "description": "Actual date of closure for this opportunity.",
+          "type": "string",
+          "format": "date-time"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",

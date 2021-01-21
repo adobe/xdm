@@ -22,6 +22,27 @@ Decisioning criteria specify one or more constraints that evaluate to lists of "
 
 ```json
 {
+  "https://ns.adobe.com/experience/decisioning/placements": [
+    "xcore:offer-placement:c652463157c2aa1"
+  ],
+  "https://ns.adobe.com/experience/decisioning/optionSelection": {
+    "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f6998eb62ed6f15"
+  },
+  "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+    "https://ns.adobe.com/experience/decisioning/description": "Pilot = Y",
+    "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+  },
+  "https://ns.adobe.com/experience/decisioning/ranking": {
+    "https://ns.adobe.com/experience/decisioning/priority": 0,
+    "https://ns.adobe.com/experience/decisioning/order": {
+      "https://ns.adobe.com/experience/decisioning/function": "ml:function:b437a2403cf10e9"
+    }
+  }
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/decisioning/description": "S1:",
   "https://ns.adobe.com/experience/decisioning/placements": [
     "xcore:offer-placement:6111463157c2221"
@@ -38,27 +59,6 @@ Decisioning criteria specify one or more constraints that evaluate to lists of "
   },
   "https://ns.adobe.com/experience/decisioning/ranking": {
     "https://ns.adobe.com/experience/decisioning/priority": 8
-  }
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/placements": [
-    "xcore:offer-placement:c652463157c2aa1"
-  ],
-  "https://ns.adobe.com/experience/decisioning/optionSelection": {
-    "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f6998eb62ed6f15"
-  },
-  "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "https://ns.adobe.com/experience/decisioning/description": "Pilot = Y",
-    "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
-  },
-  "https://ns.adobe.com/experience/decisioning/ranking": {
-    "https://ns.adobe.com/experience/decisioning/priority": 0,
-    "https://ns.adobe.com/experience/decisioning/order": {
-      "https://ns.adobe.com/experience/decisioning/function": "ml:function:b437a2403cf10e9"
-    }
   }
 }
 ```

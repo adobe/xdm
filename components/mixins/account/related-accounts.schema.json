@@ -18,7 +18,7 @@
       "properties": {
         "xdm:relatedAccounts": {
           "title": "Related Accounts",
-          "description": "Related accounts which are linked to a primary Business Account.",
+          "description": "Related accounts which are linked to a primary Business Account. This is an array of Account IDs.",
           "type": "array",
           "items": {
             "type": "string"

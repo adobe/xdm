@@ -14,8 +14,34 @@
   "title": "Decision Option Filter",
   "description": "Filters are used to specify criteria for option selection by topic or theme. The most common filter mechanism is by the tags that are associated with an option. In general the option filter selects a subset of option from the overall inventory.",
   "definitions": {
-    "filter": {
-      "properties": {}
+    "filter-details": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "type": "string",
+          "title": "Name",
+          "description": "Filter name. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "https://ns.adobe.com/experience/decisioning/filterType": {
+          "type": "string",
+          "title": "Decision Option Filter Type",
+          "description": "An indicator to identify the handler of the filter expression to which any parameters will be provided. Parameters will be provided as additional properties in schemas that extend Decision Option Filter."
+        }
+      }
+    },
+    "filter-snapshot-identifier": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/filterID": {
+          "title": "Filter Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "A unique identifier for the decision option filter."
+        },
+        "repo:etag": {
+          "title": "Filter ETag",
+          "type": "string",
+          "description": "The revision that the placement object was at when the snapshot was taken."
+        }
+      }
     }
   },
   "allOf": [
@@ -23,10 +49,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/filter"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/filter-details#/definitions/filter-details"
+      "$ref": "#/definitions/filter-details"
     }
   ],
   "meta:status": "stable"

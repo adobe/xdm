@@ -1,0 +1,69 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/financial-account",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Financial Account",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Financial account details, such as owners, balances, and types.",
+    "definitions": {
+        "financial-account": {
+            "properties": {
+                "xdm:currentAccountBalance": {
+                    "title": "Current Financial Account Balance",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Balance in the account."
+                },
+                "xdm:financialAccountID": {
+                    "title": "Financial Account ID",
+                    "type": "string",
+                    "description": "Current account balance for a single user account."
+                },
+                "xdm:financialAccountName": {
+                    "title": "Financial Account Name",
+                    "type": "string",
+                    "description": "Name assigned to the financial account."
+                },
+                "xdm:financialAccountOwner": {
+                    "title": "Financial Account Owners",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+                    },
+                    "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type."
+                },
+                "xdm:financialAccountType": {
+                    "title": "Financial Account Type",
+                    "type": "string",
+                    "enum": [
+                        "checking",
+                        "savings",
+                        "retirement",
+                        "investment"
+                    ],
+                    "description": "Describes the type of finanical account, such as checking, savings, or retirement."
+                },
+                "xdm:openedDate": {
+                    "title": "Financial Account Open Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date which the account was opened."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/financial-account"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

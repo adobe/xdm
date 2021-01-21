@@ -14,7 +14,7 @@ Track interactions with media such as progress (how much was consumed), total ti
 
 * Media Interaction Details  `https://ns.adobe.com/xdm/context/experienceevent-media`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Media information](../../datatypes/media.schema.md) `https://ns.adobe.com/xdm/context/media`
+  * [Media information](../../datatypes/media/media.schema.md) `https://ns.adobe.com/xdm/context/media`
 
 
 ## Media Interaction Details  Example
@@ -224,7 +224,7 @@ Media activity information related to the experience event.
 ### xdm:media Type
 
 
-* [Media information](../../datatypes/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+* [Media information](../../datatypes/media/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
 
 
 

@@ -1,17 +1,17 @@
 
-# Representation Schema
+# Representation (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/offer-representation
 ```
 
-Offer representation.
+Offer representation (deprecated).
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-representation.schema.json](adobe/experience/offer-management/offer-representation.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-representation.schema.json](adobe/experience/offer-management/offer-representation.schema.json) |
 
-## Representation Examples
+## Representation (deprecated) Examples
 
 ```json
 {
@@ -104,13 +104,13 @@ Offer representation.
 ```
 
 
-# Representation Properties
+# Representation (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:channel](#xdmchannel) | `string` | **Required** | Representation (this schema) |
-| [xdm:components](#xdmcomponents) | reference | **Required** | Representation (this schema) |
-| [xdm:placement](#xdmplacement) | `string` | **Required** | Representation (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | **Required** | Representation (deprecated) (this schema) |
+| [xdm:components](#xdmcomponents) | reference | **Required** | Representation (deprecated) (this schema) |
+| [xdm:placement](#xdmplacement) | `string` | **Required** | Representation (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:channel

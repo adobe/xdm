@@ -14,7 +14,7 @@ Phone number such as fax, mobile, home, and work.
 
 * Phone Number Details `https://ns.adobe.com/xdm/context/profile-phones`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Phone number](../../datatypes/demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 ## Phone Number Details Example
@@ -66,7 +66,7 @@ Fax phone number.
 ### xdm:faxPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -85,7 +85,7 @@ Home phone number.
 ### xdm:homePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -104,7 +104,7 @@ Mobile phone number.
 ### xdm:mobilePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -123,7 +123,7 @@ Work phone number.
 ### xdm:workPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

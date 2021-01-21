@@ -13,8 +13,8 @@ Adobe Campaign mutation event.
 ## Schema Hierarchy
 
 * Adobe Campaign Mutation Event `https://ns.adobe.com/experience/campaign/mutationevent`
-  * [Web information](../../../datatypes/webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
-  * [Direct marketing](../../../datatypes/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
+  * [Web information](../../../datatypes/web/webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Direct marketing](../../../datatypes/marketing/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 # Adobe Campaign Mutation Event Properties
@@ -137,7 +137,7 @@ The events and properties related to direct/outbound marketing such as email, di
 ### xdm:directMarketing Type
 
 
-* [Direct marketing](../../../datatypes/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+* [Direct marketing](../../../datatypes/marketing/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 
@@ -177,7 +177,7 @@ The information related to web page and link of the ExperienceEvent.
 ### xdm:web Type
 
 
-* [Web information](../../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

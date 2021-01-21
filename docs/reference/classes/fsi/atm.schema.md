@@ -14,7 +14,7 @@ For ATM information such as active status, addrerss, ID and name.
 
 * ATM `https://ns.adobe.com/xdm/classes/fsi/atm`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
 
 
 ## ATM Example
@@ -67,7 +67,7 @@ Physicial address where the ATM is located.
 ### xdm:atmAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

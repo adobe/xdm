@@ -1,0 +1,7 @@
+{
+  "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
+  "dc:format": "text/x-handlebars-template+html",
+  "dc:language": ["en"],
+  "repo:name": "firstname.hbs",
+  "https://ns.adobe.com/experience/decisioning/content": "<p> The following text was replaced with a user profile attribute: {{profile.person.firstname}}.</p>"
+}

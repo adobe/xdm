@@ -14,7 +14,7 @@ For branch information such as ID, name, and open and close times.
 
 * Branch `https://ns.adobe.com/xdm/classes/fsi/branch`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
 
 
 ## Branch Example
@@ -69,7 +69,7 @@ Physical address where the branch is located.
 ### xdm:branchAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

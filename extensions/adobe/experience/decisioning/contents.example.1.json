@@ -1,0 +1,14 @@
+{
+  "https://ns.adobe.com/experience/decisioning/contents": [
+    {
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:e51944a87919861",
+      "https://ns.adobe.com/experience/decisioning/components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/template",
+          "https://ns.adobe.com/experience/decisioning/content": "You can always get what you want!"
+        }
+      ]
+    }
+  ]
+}

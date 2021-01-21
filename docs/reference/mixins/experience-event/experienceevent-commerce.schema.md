@@ -14,7 +14,7 @@ Commerce data such as product information (SKU, name, quantity), and standard ca
 
 * Commerce Details `https://ns.adobe.com/xdm/context/experienceevent-commerce`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Commerce](../../datatypes/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
+  * [Commerce](../../datatypes/marketing/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
 
 
 ## Commerce Details Example
@@ -79,7 +79,7 @@ Commerce specific data related to this event.
 ### xdm:commerce Type
 
 
-* [Commerce](../../datatypes/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Commerce](../../datatypes/marketing/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
 
 
 

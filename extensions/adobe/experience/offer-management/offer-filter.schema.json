@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Offer Filter",
-  "description": "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the offer filter selects a subset of offers from the overall inventory, not based on the use case for the decisioning.",
+  "title": "Offer Filter (deprecated)",
+  "description": "Filters are used to specify criteria for offer selection by topic or theme. The most common filter mechanism is by the tags that are associated with an offer. In general the offer filter selects a subset of offers from the overall inventory, not based on the use case for the decisioning. (deprecated)",
   "definitions": {
     "offer-filter": {
       "properties": {
@@ -41,5 +41,6 @@
     {
       "required": ["xdm:name", "xdm:value"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

@@ -1,0 +1,45 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/ranking",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/decisioning/option"
+    ],
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Decision Option Ranking",
+    "description": "A ranking produces the order in which one option is selected over another. A fixed absolute priority can be used in case there is no other function known that maps a decsion option to an ordinal value.",
+    "definitions": {
+        "ranking": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/ranking": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/ranking-details",
+                    "title": "Ranking Details",
+                    "description": "Rank (priority). Defines what is considered the \"best action\" given the context of the decision criterion. Among all the selected options that meet the eligibility constraint, the ranking order will decide the top (or top N) option(s) to be proposed."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/ranking"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/decisioning/ranking": {
+                "https://ns.adobe.com/experience/decisioning/priority": 0,
+                "https://ns.adobe.com/experience/decisioning/order": {
+                    "https://ns.adobe.com/experience/decisioning/function": "ml:function:b437a2403cf10e9"
+                }
+            }
+        }
+    ]
+}

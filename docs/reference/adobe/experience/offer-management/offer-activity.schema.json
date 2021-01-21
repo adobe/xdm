@@ -10,8 +10,8 @@
     "meta:abstract": false,
     "meta:extensible": true,
     "type": "object",
-    "title": "Activity",
-    "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).",
+    "title": "Activity (deprecated)",
+    "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization offers. (deprecated)",
     "definitions": {
         "offer-activity": {
             "properties": {
@@ -89,5 +89,6 @@
                 "xdm:fallback"
             ]
         }
-    ]
+    ],
+    "meta:status": "deprecated"
 }

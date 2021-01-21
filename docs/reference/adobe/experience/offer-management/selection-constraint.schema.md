@@ -1,23 +1,23 @@
 
-# Offer Selection Constraint Schema
+# Offer Selection Constraint (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/selection-constraint
 ```
 
-Offer selection constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time.
+Offer selection constraint specify conditions that have to be met in order for an offer to be included in weighing the best offer. Those constraints can have many aspects, ranging from date constraints over rules applied to the user profile fields to rules checked against contextual data available at decision time. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/selection-constraint.schema.json](adobe/experience/offer-management/selection-constraint.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/selection-constraint.schema.json](adobe/experience/offer-management/selection-constraint.schema.json) |
 
-# Offer Selection Constraint Properties
+# Offer Selection Constraint (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:eligibilityRule](#xdmeligibilityrule) | `string` | Optional | Offer Selection Constraint (this schema) |
-| [xdm:endDate](#xdmenddate) | `string` | **Required** | Offer Selection Constraint (this schema) |
-| [xdm:startDate](#xdmstartdate) | `string` | **Required** | Offer Selection Constraint (this schema) |
+| [xdm:eligibilityRule](#xdmeligibilityrule) | `string` | Optional | Offer Selection Constraint (deprecated) (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | **Required** | Offer Selection Constraint (deprecated) (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | **Required** | Offer Selection Constraint (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:eligibilityRule

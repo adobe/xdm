@@ -61,6 +61,6 @@ else
     git config --global user.name "jwen@adobe.com"
     git add .
     git commit -m "test circleci"
-    git push --set-upstream origin test-circleci
+    git push --set-upstream origin $currentBranch
   fi
 fi

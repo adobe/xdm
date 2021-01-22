@@ -55,8 +55,8 @@ else
     exit
   else
     echo "test circleci" > test.log
-    git status
-    git branch
+    currentBranch=$(git status|grep "On branch"|cut -c11-100)
+    echo $currentBranch
     git config --global user.email "jwen@adobe.com"
     git config --global user.name "jwen@adobe.com"
     git add .

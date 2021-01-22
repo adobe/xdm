@@ -51,10 +51,14 @@ if [ $returnCode -ne 0 ]; then
 else
   echo "All good"
   cleanup
-  echo "test circleci" > test.log
-  git config --global user.email "jwen@adobe.com"
-  git config --global user.name "jwen@adobe.com"
-  git add .
-  git commit -m "test circleci"
-  git push --set-upstream origin test-circleci
+  if [[ -f "test.log" ]]; then
+    exit
+  else
+    echo "test circleci" > test.log
+    git config --global user.email "jwen@adobe.com"
+    git config --global user.name "jwen@adobe.com"
+    git add .
+    git commit -m "test circleci"
+    git push --set-upstream origin test-circleci
+  fi
 fi

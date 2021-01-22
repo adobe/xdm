@@ -47,10 +47,7 @@
           "description": "Rank (priority). Defines how the \"best option\" is determined given the context of the decision criterion. Among all the selected options that meet the profile constraints, the ranking will decide the top (or top N) option(s) to be proposed."
         }
       },
-      "required": [
-        "xdm:placements",
-        "xdm:optionSelection"
-      ]
+      "required": ["xdm:placements", "xdm:optionSelection"]
     }
   },
   "allOf": [

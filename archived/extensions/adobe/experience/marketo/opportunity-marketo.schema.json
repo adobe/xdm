@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/marketo/opportunity-marketo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Opportunity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
+  "meta:extends": ["https://ns.adobe.com/xdm/context/opportunity-crm"],
+  "description": "Marketo specific Opportunity properties.",
+  "definitions": {
+    "opportunity-marketo": {
+      "properties": {
+        "marketo:opportunityID": {
+          "title": "Marketo Opportunity ID",
+          "description": "Marketo opportunity ID.",
+          "type": "string"
+        },
+        "marketo:instanceID": {
+          "title": "Instance ID",
+          "description": "Instance identifier.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/opportunity-crm"
+    },
+    {
+      "$ref": "#/definitions/opportunity-marketo"
+    }
+  ],
+  "required": ["marketo:opportunityID"],
+  "meta:status": "deprecated"
+}

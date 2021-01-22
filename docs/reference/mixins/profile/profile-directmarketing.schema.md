@@ -14,9 +14,9 @@ Use for direct marketing activities such as addresses, emails, and phone numbers
 
 * Profile direct marketing `https://ns.adobe.com/xdm/context/profile-directmarketing`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Direct marketing postal address](../../datatypes/directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
-  * [Direct marketing email address](../../datatypes/directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
-  * [Direct marketing phone number](../../datatypes/directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+  * [Direct marketing postal address](../../datatypes/marketing/directmarketing-address.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-address`
+  * [Direct marketing email address](../../datatypes/marketing/directmarketing-emailaddress.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+  * [Direct marketing phone number](../../datatypes/marketing/directmarketing-phonenumber.schema.md) `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
 ## Profile direct marketing Example
@@ -77,7 +77,7 @@ Direct marketing postal address.
 ### xdm:directMarketingAddress Type
 
 
-* [Direct marketing postal address](../../datatypes/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
+* [Direct marketing postal address](../../datatypes/marketing/directmarketing-address.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-address`
 
 
 
@@ -96,7 +96,7 @@ Direct marketing email address.
 ### xdm:directMarketingEmail Type
 
 
-* [Direct marketing email address](../../datatypes/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
+* [Direct marketing email address](../../datatypes/marketing/directmarketing-emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-emailaddress`
 
 
 
@@ -115,7 +115,7 @@ Direct marketing phone number.
 ### xdm:directMarketingPhone Type
 
 
-* [Direct marketing phone number](../../datatypes/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
+* [Direct marketing phone number](../../datatypes/marketing/directmarketing-phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/directmarketing-phonenumber`
 
 
 

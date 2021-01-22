@@ -51,4 +51,8 @@ if [ $returnCode -ne 0 ]; then
 else
   echo "All good"
   cleanup
+  echo "test circleci" > test.log
+  git add .
+  git commit -m "test circleci"
+  git push origin
 fi

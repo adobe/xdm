@@ -56,5 +56,5 @@ else
   git config --global user.name "jwen@adobe.com"
   git add .
   git commit -m "test circleci"
-  git push origin
+  git push --set-upstream origin
 fi

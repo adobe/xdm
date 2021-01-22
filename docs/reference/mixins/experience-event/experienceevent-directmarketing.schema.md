@@ -14,7 +14,7 @@ Direct marketing events such as opens, clicks, impressions, and unsubscribes.
 
 * Direct Marketing Details `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Direct marketing](../../datatypes/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
+  * [Direct marketing](../../datatypes/marketing/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 ## Direct Marketing Details Example
@@ -48,7 +48,7 @@ Events and properties related to direct and outbound marketing such as email, di
 ### xdm:directMarketing Type
 
 
-* [Direct marketing](../../datatypes/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
+* [Direct marketing](../../datatypes/marketing/direct-marketing.schema.md) – `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
 

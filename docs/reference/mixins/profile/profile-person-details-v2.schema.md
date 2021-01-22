@@ -14,7 +14,7 @@ Demographic information such as name, gender, and birth date of an individual.
 
 * Demographic Details v2 `https://ns.adobe.com/xdm/mixins/profile-person-details-v2`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Person](../../datatypes/person.schema.md) `https://ns.adobe.com/xdm/context/person`
+  * [Person](../../datatypes/person/person.schema.md) `https://ns.adobe.com/xdm/context/person`
 
 
 ## Demographic Details v2 Example
@@ -53,7 +53,7 @@ An individual actor, contact, or owner.
 ### xdm:person Type
 
 
-* [Person](../../datatypes/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
+* [Person](../../datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 
 

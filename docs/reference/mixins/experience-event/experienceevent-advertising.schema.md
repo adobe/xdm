@@ -14,7 +14,7 @@ Advertising data such as clicks, completes, impressions, and conversions.
 
 * Advertising Details `https://ns.adobe.com/xdm/context/experienceevent-advertising`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Advertising](../../datatypes/advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
+  * [Advertising](../../datatypes/marketing/advertising.schema.md) `https://ns.adobe.com/xdm/context/advertising`
 
 
 ## Advertising Details Example
@@ -67,7 +67,7 @@ Information related to advertising activity in ExperienceEvents.
 ### xdm:advertising Type
 
 
-* [Advertising](../../datatypes/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
+* [Advertising](../../datatypes/marketing/advertising.schema.md) – `https://ns.adobe.com/xdm/context/advertising`
 
 
 

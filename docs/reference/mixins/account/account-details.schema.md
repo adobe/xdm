@@ -13,7 +13,7 @@ XDM business account details.
 ## Schema Hierarchy
 
 * XDM Business Account Details `https://ns.adobe.com/xdm/mixins/account-details`
-  * [B2B Account](../../datatypes/b2b-account.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account`
+  * [B2B Account](../../datatypes/b2b/b2b-account.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account`
 
 
 ## XDM Business Account Details Example
@@ -25,26 +25,26 @@ XDM business account details.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountbillingaddress) |
-| [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountdescription) |
-| [xdm:accountFax](#xdmaccountfax) | Phone number | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountfax) |
-| [xdm:accountName](#xdmaccountname) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountname) |
-| [xdm:accountNumber](#xdmaccountnumber) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountnumber) |
-| [xdm:accountOrganization](#xdmaccountorganization) | Account Organization | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountorganization) |
-| [xdm:accountOwnerID](#xdmaccountownerid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownerid) |
-| [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownership) |
-| [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountparentid) |
-| [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphone) |
-| [xdm:accountPhysicalAddress](#xdmaccountphysicaladdress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladdress) |
-| [xdm:accountScore](#xdmaccountscore) | `number` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountscore) |
-| [xdm:accountShippingAddress](#xdmaccountshippingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountshippingaddress) |
-| [xdm:accountSite](#xdmaccountsite) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountsite) |
-| [xdm:accountSourceType](#xdmaccountsourcetype) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountsourcetype) |
-| [xdm:accountTerritoryID](#xdmaccountterritoryid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountterritoryid) |
-| [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttradestyle) |
-| [xdm:accountType](#xdmaccounttype) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttype) |
-| [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmdefaultcurrencycode) |
-| [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid) |
+| [xdm:accountBillingAddress](#xdmaccountbillingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountbillingaddress) |
+| [xdm:accountDescription](#xdmaccountdescription) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountdescription) |
+| [xdm:accountFax](#xdmaccountfax) | Phone number | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountfax) |
+| [xdm:accountName](#xdmaccountname) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountname) |
+| [xdm:accountNumber](#xdmaccountnumber) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountnumber) |
+| [xdm:accountOrganization](#xdmaccountorganization) | Account Organization | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountorganization) |
+| [xdm:accountOwnerID](#xdmaccountownerid) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountownerid) |
+| [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountownership) |
+| [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountparentid) |
+| [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountphone) |
+| [xdm:accountPhysicalAddress](#xdmaccountphysicaladdress) | Postal address | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountphysicaladdress) |
+| [xdm:accountScore](#xdmaccountscore) | `number` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountscore) |
+| [xdm:accountShippingAddress](#xdmaccountshippingaddress) | Postal address | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountshippingaddress) |
+| [xdm:accountSite](#xdmaccountsite) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountsite) |
+| [xdm:accountSourceType](#xdmaccountsourcetype) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountsourcetype) |
+| [xdm:accountTerritoryID](#xdmaccountterritoryid) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountterritoryid) |
+| [xdm:accountTradeStyle](#xdmaccounttradestyle) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccounttradestyle) |
+| [xdm:accountType](#xdmaccounttype) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccounttype) |
+| [xdm:defaultCurrencyCode](#xdmdefaultcurrencycode) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmdefaultcurrencycode) |
+| [xdm:partnerAccountID](#xdmpartneraccountid) | `string` | Optional | [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmpartneraccountid) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:accountBillingAddress
@@ -53,12 +53,12 @@ XDM business account details.
 `xdm:accountBillingAddress`
 * is optional
 * type: Postal address
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountbillingaddress)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountbillingaddress)
 
 ### xdm:accountBillingAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -72,7 +72,7 @@ Text description of the account.
 `xdm:accountDescription`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountdescription)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountdescription)
 
 ### xdm:accountDescription Type
 
@@ -92,12 +92,12 @@ Fax number for the account.
 `xdm:accountFax`
 * is optional
 * type: Phone number
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountfax)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountfax)
 
 ### xdm:accountFax Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -111,7 +111,7 @@ name of company. Up to 255 characters are allowed in this field.
 `xdm:accountName`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountname)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountname)
 
 ### xdm:accountName Type
 
@@ -131,7 +131,7 @@ Tracking or reference number for account. Up to 40 characters are allowed in thi
 `xdm:accountNumber`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountnumber)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountnumber)
 
 ### xdm:accountNumber Type
 
@@ -149,12 +149,12 @@ Tracking or reference number for account. Up to 40 characters are allowed in thi
 `xdm:accountOrganization`
 * is optional
 * type: Account Organization
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountorganization)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountorganization)
 
 ### xdm:accountOrganization Type
 
 
-* [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+* [Account Organization](../../datatypes/b2b/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 
@@ -168,7 +168,7 @@ Account owner ID.
 `xdm:accountOwnerID`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownerid)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountownerid)
 
 ### xdm:accountOwnerID Type
 
@@ -188,7 +188,7 @@ Ownership of company, for example, public or private. Entry is selected from a p
 `xdm:accountOwnership`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountownership)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountownership)
 
 ### xdm:accountOwnership Type
 
@@ -208,7 +208,7 @@ Parent company for companies that are subsidiaries of a larger company or organi
 `xdm:accountParentID`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountparentid)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountparentid)
 
 ### xdm:accountParentID Type
 
@@ -228,12 +228,12 @@ Phone number for the account.
 `xdm:accountPhone`
 * is optional
 * type: Phone number
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphone)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountphone)
 
 ### xdm:accountPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -247,12 +247,12 @@ Actual physical address of the account. Could be the HQ address or any preffered
 `xdm:accountPhysicalAddress`
 * is optional
 * type: Postal address
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountphysicaladdress)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountphysicaladdress)
 
 ### xdm:accountPhysicalAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -264,7 +264,7 @@ Actual physical address of the account. Could be the HQ address or any preffered
 `xdm:accountScore`
 * is optional
 * type: `number`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountscore)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountscore)
 
 ### xdm:accountScore Type
 
@@ -282,12 +282,12 @@ Actual physical address of the account. Could be the HQ address or any preffered
 `xdm:accountShippingAddress`
 * is optional
 * type: Postal address
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountshippingaddress)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountshippingaddress)
 
 ### xdm:accountShippingAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -301,7 +301,7 @@ Information about the account’s location, such as single location, headquarter
 `xdm:accountSite`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountsite)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountsite)
 
 ### xdm:accountSite Type
 
@@ -321,7 +321,7 @@ Source type for the account.
 `xdm:accountSourceType`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountsourcetype)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountsourcetype)
 
 ### xdm:accountSourceType Type
 
@@ -341,7 +341,7 @@ The territory to which the account has been assigned.
 `xdm:accountTerritoryID`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccountterritoryid)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccountterritoryid)
 
 ### xdm:accountTerritoryID Type
 
@@ -361,7 +361,7 @@ A name, different from its legal name, that an organization may use for conducti
 `xdm:accountTradeStyle`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttradestyle)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccounttradestyle)
 
 ### xdm:accountTradeStyle Type
 
@@ -381,7 +381,7 @@ Account Type.
 `xdm:accountType`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmaccounttype)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmaccounttype)
 
 ### xdm:accountType Type
 
@@ -401,7 +401,7 @@ The ISO 4217 currency code.
 `xdm:defaultCurrencyCode`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmdefaultcurrencycode)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmdefaultcurrencycode)
 
 ### xdm:defaultCurrencyCode Type
 
@@ -440,7 +440,7 @@ Partner accounts are accounts that a channel manager uses to manage partner orga
 `xdm:partnerAccountID`
 * is optional
 * type: `string`
-* defined in [B2B Account](../../datatypes/b2b-account.schema.md#xdmpartneraccountid)
+* defined in [B2B Account](../../datatypes/b2b/b2b-account.schema.md#xdmpartneraccountid)
 
 ### xdm:partnerAccountID Type
 

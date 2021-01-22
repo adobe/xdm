@@ -1,0 +1,67 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/policy-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Policy Details",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Details for the insurance policy such as type, start date, and ID.",
+    "definitions": {
+        "policy-details": {
+            "properties": {
+                "xdm:policyEndDate": {
+                    "title": "Policy End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date which the insurance policy coverage ended."
+                },
+                "xdm:policyID": {
+                    "title": "Policy ID",
+                    "type": "string",
+                    "description": "Unique insurance policy identifier."
+                },
+                "xdm:policyName": {
+                    "title": "Policy Name",
+                    "type": "string",
+                    "description": "Insurance policy name."
+                },
+                "xdm:policyStartDate": {
+                    "title": "Policy Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date which the insurance policy coverage started."
+                },
+                "xdm:policyState": {
+                    "title": "Policy State",
+                    "type": "string",
+                    "description": "State in which the insurance policy is issued."
+                },
+                "xdm:policyType": {
+                    "title": "Policy Type",
+                    "type": "string",
+                    "enum": [
+                        "home",
+                        "automobile",
+                        "renter",
+                        "boat"
+                    ],
+                    "description": "Type of insurance policy, such as home, automobile, renter, or boat."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/policy-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

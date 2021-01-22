@@ -212,7 +212,7 @@ Commerce specific data related to this event.
 ### xdm:commerce Type
 
 
-* [Commerce](../../datatypes/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
+* [Commerce](../../datatypes/marketing/commerce.schema.md) – `https://ns.adobe.com/xdm/context/commerce`
 
 
 
@@ -288,7 +288,7 @@ The information related to marketing activities that are active with the touchpo
 ### xdm:marketing Type
 
 
-* [Marketing](../../datatypes/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
+* [Marketing](../../datatypes/marketing/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing`
 
 
 
@@ -307,7 +307,7 @@ Media activity information related to the experience event.
 ### xdm:media Type
 
 
-* [Media information](../../datatypes/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+* [Media information](../../datatypes/media/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
 
 
 
@@ -459,7 +459,7 @@ The information related to web page and link of the ExperienceEvent.
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

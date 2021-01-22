@@ -1,0 +1,101 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/account-person",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Account Person Relation",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "This class is used to capture XDM business account person relationship attributes.",
+    "definitions": {
+        "account-person": {
+            "properties": {
+                "xdm:accountPersonID": {
+                    "title": "Account Person ID",
+                    "description": "Account person relation unique identifer.",
+                    "type": "string"
+                },
+                "xdm:accountID": {
+                    "title": "Account ID",
+                    "description": "Account unique identifier reference.",
+                    "type": "string"
+                },
+                "xdm:personID": {
+                    "title": "Person ID",
+                    "description": "Person unique identifier reference.",
+                    "type": "string"
+                },
+                "xdm:personRole": {
+                    "title": "Person Role",
+                    "description": "Role of the person/contact for this account.",
+                    "type": "string"
+                },
+                "xdm:isDirect": {
+                    "title": "Direct Flag",
+                    "description": "A flag to signify that this is the direct account contact.",
+                    "type": "boolean"
+                },
+                "xdm:isActive": {
+                    "title": "Active Flag",
+                    "description": "A flag to signify that this relation is active or not.",
+                    "type": "boolean"
+                },
+                "xdm:isPrimary": {
+                    "title": "Primary Flag",
+                    "description": "A flag to signify that this relation is primary or not.",
+                    "type": "boolean"
+                },
+                "xdm:relationStartDate": {
+                    "title": "Relationship Start Date",
+                    "description": "The date when this account person relationship was established.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:relationEndDate": {
+                    "title": "Relationship End Date",
+                    "description": "The date when this account person relationship was discontinued.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:currencyCode": {
+                    "title": "Currency Code",
+                    "type": "string",
+                    "examples": [
+                        "USD",
+                        "EUR"
+                    ],
+                    "pattern": "^[A-Z]{3}$",
+                    "description": "The ISO 4217 currency code used for this relation."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/account-person"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "required": [
+        "xdm:accountPersonID"
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:accountPersonID": "AAAPPP111"
+        }
+    ]
+}

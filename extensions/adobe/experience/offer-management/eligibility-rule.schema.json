@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Eligibility Rule",
-  "description": "An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The profile query language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning.",
+  "title": "Eligibility Rule (deprecated)",
+  "description": "An eligibility rule is a named reusable predicate used in the domain of audience segmentation and message personalization. The profile query language forms the foundation of those predicates. The predicate operates not only over profile fields but also over contextual data objects provided at the time of decisioning. (deprecated)",
   "definitions": {
     "eligibility-rule": {
       "properties": {
@@ -54,5 +54,6 @@
     {
       "required": ["xdm:name", "xdm:value", "xdm:modelUsage"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

@@ -1,0 +1,42 @@
+{
+  "@id": "xcore:fallback-offer:20216ba8e04e44ac",
+  "https://ns.adobe.com/experience/decisioning/name": "Default Offer",
+  "https://ns.adobe.com/experience/decisioning/status": "approved",
+  "https://ns.adobe.com/experience/decisioning/tags": [
+    "xcore:tag:f87c371cd0b20be"
+  ],
+  "https://ns.adobe.com/experience/decisioning/contents": [
+    {
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:f8eb10f058477e3",
+      "https://ns.adobe.com/experience/decisioning/components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["en"],
+          "https://ns.adobe.com/experience/decisioning/content": "text entered directly"
+        }
+      ]
+    },
+    {
+      "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:f652463157c0ba4",
+      "https://ns.adobe.com/experience/decisioning/components": [
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["en"],
+          "repo:name": "legal_terms_2020.txt",
+          "repo:id": "urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762",
+          "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?id=&quot;urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762&quot;"
+        },
+        {
+          "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+          "dc:format": "text/plain",
+          "dc:language": ["es"],
+          "repo:name": "legal_terms_2020.txt",
+          "repo:id": "urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762",
+          "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?id=&quot;urn:aaid:sc:VA7:3ae9f3b1-15fe-49bf-9a17-2a5bcd138762&quot;&resource=&quot;api:metadata/application&quot;&name=&quot;legal_terms_2020_es.txt&quot;"
+        }
+      ]
+    }
+  ]
+}

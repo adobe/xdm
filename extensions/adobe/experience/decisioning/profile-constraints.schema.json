@@ -1,0 +1,36 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/profile-constraints",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Option Profile Constraints",
+  "description": "Profile constraints define the policies that ensure a particular decision option qualifies, is relevant and is suitable for a particular profile. Such policy rules determine the eligibility, applicability and suitability of the option. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema.",
+  "definitions": {
+    "profile-constraints": {
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
+          "title": "Profile Constraint Details",
+          "description": "The profile constraints decide if an option is eligible for this profile identity, at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/profile-constraints"
+    }
+  ],
+  "meta:status": "stable"
+}

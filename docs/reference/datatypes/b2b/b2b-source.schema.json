@@ -1,0 +1,51 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "B2B Source",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "This Data Type is used to capture B2B/CRM Source identifiers.",
+    "definitions": {
+        "b2b-source": {
+            "properties": {
+                "xdm:systemID": {
+                    "title": "System ID",
+                    "type": "string",
+                    "description": "This is an identifier for the source system itself and potentially includes the object type."
+                },
+                "xdm:ID": {
+                    "title": "ID",
+                    "type": "string",
+                    "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc."
+                },
+                "xdm:key": {
+                    "title": "System Key",
+                    "description": "This is concatination of systemId and id. The concatenated value is created by the connector in the data pipe, so it’s already in the source.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/b2b-source"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:ID": "1234567",
+            "xdm:systemID": "S123456"
+        }
+    ]
+}

@@ -10,11 +10,6 @@ Bill pay steps such as start, save, failure, and complete.
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-bill-pay-steps.schema.json](mixins/experience-event/experienceevent-bill-pay-steps.schema.json) |
-## Schema Hierarchy
-
-* Bill Pay Steps `https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-steps`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-
 
 ## Bill Pay Steps Example
 ```json
@@ -25,18 +20,18 @@ Bill pay steps such as start, save, failure, and complete.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:personalFinance](#xdmpersonalfinance) | `object` | Optional | Bill Pay Steps (this schema) |
+| [xdm:personalFinances](#xdmpersonalfinances) | `object` | Optional | Bill Pay Steps (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:personalFinance
+## xdm:personalFinances
 
 
-`xdm:personalFinance`
+`xdm:personalFinances`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:personalFinance Type
+### xdm:personalFinances Type
 
 
 `object` with following properties:
@@ -44,40 +39,44 @@ Bill pay steps such as start, save, failure, and complete.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:billPaySteps`| object | Optional |
+| `xdm:billPay`|  | Optional |
+| `xdm:billPayAccount`|  | Optional |
 
 
 
-#### xdm:billPaySteps
+#### xdm:billPay
+##### Bill Pay Steps
 
-undefined
+Extension of toolUsage data type.
 
-`xdm:billPaySteps`
+`xdm:billPay`
 * is optional
-* type: `object`
+* type: reference
 
-##### xdm:billPaySteps Type
+##### xdm:billPay Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:billPay": {
-      "title": "Bill Pay Steps",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-      "description": "Extension of toolUsage data type."
-    },
-    "xdm:billPayAccount": {
-      "title": "Bill Pay Account",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Extension of financialAccount data type."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
+
+
+
+
+
+
+
+#### xdm:billPayAccount
+##### Bill Pay Account
+
+Extension of financialAccount data type.
+
+`xdm:billPayAccount`
+* is optional
+* type: reference
+
+##### xdm:billPayAccount Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
 
 
 

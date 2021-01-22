@@ -1,0 +1,129 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Account Organization",
+    "type": "object",
+    "description": "Commonly used organizational attributes for a B2B account such as number of employees, market segment, industry, rating, tickersymbol etc.",
+    "definitions": {
+        "b2b-account-organization": {
+            "properties": {
+                "xdm:organizationType": {
+                    "title": "Type of Organizations",
+                    "type": "string",
+                    "description": "Label describing the type of organization"
+                },
+                "xdm:numberOfEmployees": {
+                    "title": "Number of employees",
+                    "type": "integer",
+                    "description": "The number of employees at the organization."
+                },
+                "xdm:annualRevenue": {
+                    "title": "Annual Revenue",
+                    "description": "Estimated amount of annual revenue of the organization.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+                },
+                "xdm:industry": {
+                    "title": "Industry",
+                    "type": "string",
+                    "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+                },
+                "xdm:website": {
+                    "title": "Website URL",
+                    "type": "string",
+                    "description": "The URL of the organization's website."
+                },
+                "xdm:marketSegment": {
+                    "title": "Market segment",
+                    "type": "string",
+                    "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
+                },
+                "xdm:rating": {
+                    "title": "Rating",
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
+                },
+                "xdm:tickerSymbol": {
+                    "title": "Ticker Symbol",
+                    "description": "The stock market symbol for this account. Maximum of 20 characters.",
+                    "type": "string"
+                },
+                "xdm:logoUrl": {
+                    "title": "Logo URL",
+                    "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
+                    "type": "string"
+                },
+                "xdm:linkedinPageUrl": {
+                    "title": "Linkedinin Page URL",
+                    "description": "Website link to the Linkedin account of the account",
+                    "type": "string"
+                },
+                "xdm:twitterHandleUrl": {
+                    "title": "Twitter handle URL",
+                    "description": "Website link to the twitter handle of the account",
+                    "type": "string"
+                },
+                "xdm:facebookPageUrl": {
+                    "title": "Facebook Page URL",
+                    "description": "Website link to the Facebook account of the account",
+                    "type": "string"
+                },
+                "xdm:NAICSCode": {
+                    "title": "NAICS Code",
+                    "type": "string",
+                    "description": "A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System."
+                },
+                "xdm:SICCode": {
+                    "title": "SIC Code",
+                    "type": "string",
+                    "description": "The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities."
+                },
+                "xdm:NAICSDescription": {
+                    "title": "NAICS Description",
+                    "description": "A brief description of an organization’s line of business, based on its NAICS code.",
+                    "type": "string"
+                },
+                "xdm:SICDescription": {
+                    "title": "SIC Description",
+                    "description": "A brief description of an organization’s line of business, based on its SIC code.",
+                    "type": "string"
+                },
+                "xdm:DUNSNumber": {
+                    "title": "Dun & Bradstreet D-U-N-S Number",
+                    "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.",
+                    "type": "string"
+                },
+                "xdm:jigsaw": {
+                    "title": "Jigsaw",
+                    "description": "Data.com Key.",
+                    "type": "string"
+                },
+                "xdm:primaryEmailDomain": {
+                    "title": "Primary Email Domain",
+                    "type": "string"
+                },
+                "xdm:companyProductAndServices": {
+                    "title": "Company Product and Services",
+                    "description": "Product and Services the Company is dealing or doing business in.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/b2b-account-organization"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

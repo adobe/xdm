@@ -28,7 +28,6 @@ Used when any application process is started, such as financing, limit changes, 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:FormApplicationType](#xdmformapplicationtype) | `string` | Optional | Form Applications (this schema) |
 | [xdm:formApplicationApproved](#xdmformapplicationapproved) | Measure | Optional | Form Applications (this schema) |
 | [xdm:formApplicationDeclined](#xdmformapplicationdeclined) | Measure | Optional | Form Applications (this schema) |
 | [xdm:formApplicationFee](#xdmformapplicationfee) | Transaction | Optional | Form Applications (this schema) |
@@ -36,29 +35,10 @@ Used when any application process is started, such as financing, limit changes, 
 | [xdm:formApplicationRequestedAmount](#xdmformapplicationrequestedamount) | Currency | Optional | Form Applications (this schema) |
 | [xdm:formApplicationStatus](#xdmformapplicationstatus) | `enum` | Optional | Form Applications (this schema) |
 | [xdm:formApplicationStatusUpdate](#xdmformapplicationstatusupdate) | Measure | Optional | Form Applications (this schema) |
+| [xdm:formApplicationType](#xdmformapplicationtype) | `string` | Optional | Form Applications (this schema) |
 | [xdm:formApplicationUnderReview](#xdmformapplicationunderreview) | Measure | Optional | Form Applications (this schema) |
 | [xdm:formApplicationUsage](#xdmformapplicationusage) | Tool Usage | Optional | Form Applications (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:FormApplicationType
-### Form Application Type
-
-Type of the application process.
-
-`xdm:FormApplicationType`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:FormApplicationType Type
-
-
-`string`
-
-
-
-
-
 
 ## xdm:formApplicationApproved
 ### Form Application Approved
@@ -193,6 +173,26 @@ Captured when the status for an application changes, either from an online or of
 
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:formApplicationType
+### Form Application Type
+
+Type of the application process.
+
+`xdm:formApplicationType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:formApplicationType Type
+
+
+`string`
+
 
 
 

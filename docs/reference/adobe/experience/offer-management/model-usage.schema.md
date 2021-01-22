@@ -1,5 +1,5 @@
 
-# Used XDM Models and Properties from those Models Schema
+# Used XDM Models and Properties from those Models (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/model-usage
@@ -12,14 +12,14 @@ The information is factored out so that clients that cannot or don't want to par
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/model-usage.schema.json](adobe/experience/offer-management/model-usage.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/model-usage.schema.json](adobe/experience/offer-management/model-usage.schema.json) |
 
-# Used XDM Models and Properties from those Models Properties
+# Used XDM Models and Properties from those Models (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:modelPropertyPaths](#xdmmodelpropertypaths) | `string[]` | **Required** | Used XDM Models and Properties from those Models (this schema) |
-| [xdm:modelReference](#xdmmodelreference) | `string` | **Required** | Used XDM Models and Properties from those Models (this schema) |
+| [xdm:modelPropertyPaths](#xdmmodelpropertypaths) | `string[]` | **Required** | Used XDM Models and Properties from those Models (deprecated) (this schema) |
+| [xdm:modelReference](#xdmmodelreference) | `string` | **Required** | Used XDM Models and Properties from those Models (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:modelPropertyPaths

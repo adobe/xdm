@@ -9,7 +9,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-consents.schema.json](mixins/profile/profile-consents.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-consents.schema.json](mixins/profile/profile-consents.schema.json) |
 ## Schema Hierarchy
 
 * Privacy/Personalization/Marketing Preferences (Consents) `https://ns.adobe.com/xdm/mixins/profile-consents`

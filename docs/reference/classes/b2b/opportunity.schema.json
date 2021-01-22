@@ -1,0 +1,82 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/opportunity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Opportunity",
+    "type": "object",
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "This class is used to capture minimum set of properties that define business opportunity.",
+    "definitions": {
+        "opportunity": {
+            "properties": {
+                "xdm:opportunityID": {
+                    "title": "Opportunity ID",
+                    "description": "Opportunity unique identifer",
+                    "type": "string"
+                },
+                "xdm:opportunityName": {
+                    "title": "Opportunity Name",
+                    "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+                    "type": "string"
+                },
+                "xdm:opportunityDescription": {
+                    "title": "Opportunity Description",
+                    "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+                    "type": "string"
+                },
+                "xdm:opportunityType": {
+                    "title": "Opportunity Type",
+                    "description": "Opportunity type such as Existing Business or New Business",
+                    "type": "string"
+                },
+                "xdm:opportunityStage": {
+                    "title": "Opportunity Stage",
+                    "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+                    "type": "string"
+                },
+                "xdm:accountID": {
+                    "title": "Account ID",
+                    "description": "Account unique identifier reference that this opportunity is linked to.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/opportunity"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "required": [
+        "xdm:opportunityID"
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:opportunityID": "12345",
+            "xdm:opportunityName": "Best Buy AEP",
+            "xdm:opportunityDescription": "This opportunity is for Best buy customer to buy AEP product",
+            "xdm:opportunityType": "business",
+            "xdm:stage": "initial"
+        }
+    ]
+}

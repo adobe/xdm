@@ -14,7 +14,7 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 
 * Point of interest details `https://ns.adobe.com/xdm/context/poi-detail`
   * [Extensibility base schema](extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Beacon](beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
+  * [Beacon](interactions/beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
   * [Geo interaction details](geo-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/geo-interaction-details`
 
 
@@ -98,7 +98,7 @@ Beacon details active for the POI interaction.
 ### xdm:beaconInteractionDetails Type
 
 
-* [Beacon](beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details`
+* [Beacon](interactions/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details`
 
 
 

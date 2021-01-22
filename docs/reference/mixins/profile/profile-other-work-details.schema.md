@@ -14,8 +14,8 @@ This mixin is used to capture information regarding additional/other work-relate
 
 * Profile Other Work Details `https://ns.adobe.com/xdm/context/profile-other-work-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Phone number](../../datatypes/demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 ## Profile Other Work Details Example
@@ -245,7 +245,7 @@ Other/Alternate postal address of the person.
 ### xdm:otherAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -264,7 +264,7 @@ Other/Alternate phone number of the person.
 ### xdm:otherPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

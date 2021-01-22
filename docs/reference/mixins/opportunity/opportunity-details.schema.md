@@ -25,8 +25,9 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
+| [xdm:actualCloseDate](#xdmactualclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:closeDate](#xdmclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:expectedCloseDate](#xdmexpectedclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:expectedRevenue](#xdmexpectedrevenue) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:fiscalQuarter](#xdmfiscalquarter) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:fiscalYear](#xdmfiscalyear) | `integer` | Optional |  | XDM Business Opportunity Details (this schema) |
@@ -42,6 +43,27 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 | [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | XDM Business Opportunity Details (this schema) |
 | [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | XDM Business Opportunity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:actualCloseDate
+### Actual Close Date
+
+Actual date of closure for this opportunity.
+
+`xdm:actualCloseDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:actualCloseDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
 
 ## xdm:campaignID
 ### Campaign ID
@@ -63,21 +85,21 @@ Campaign unique identifer reference.
 
 
 
-## xdm:closeDate
-### Close Date
+## xdm:expectedCloseDate
+### Expected Close Date
 
-Date of closure for this opportunity.
+Expected date of closure for this opportunity.
 
-`xdm:closeDate`
+`xdm:expectedCloseDate`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:closeDate Type
+### xdm:expectedCloseDate Type
 
 
 `string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

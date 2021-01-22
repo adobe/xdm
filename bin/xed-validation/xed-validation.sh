@@ -52,6 +52,8 @@ else
   echo "All good"
   cleanup
   echo "test circleci" > test.log
+  git config --global user.email "jwen@adobe.com"
+  git config --global user.name "jwen@adobe.com"
   git add .
   git commit -m "test circleci"
   git push origin

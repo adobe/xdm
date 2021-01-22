@@ -55,6 +55,8 @@ else
     exit
   else
     echo "test circleci" > test.log
+    git status
+    git branch
     git config --global user.email "jwen@adobe.com"
     git config --global user.name "jwen@adobe.com"
     git add .

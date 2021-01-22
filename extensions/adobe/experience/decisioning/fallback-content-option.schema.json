@@ -18,7 +18,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Fallback Content Decision Option",
+  "title": "Decision Option Fallback Contents",
   "description": "A default decision option that is used when there is no personalized content is left after checking all constraints. The Fallback content mixin cannot be combined with mixins that express constraint because a fallback option must be remain applicable for any use in a given context.",
   "definitions": {
     "fallback-content-option": {

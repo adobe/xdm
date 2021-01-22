@@ -17,13 +17,138 @@
   "description": "One or more constraints that evaluate to lists of \"top N best\" options in the context of a decision activity. Those options satisfy all constraints for a given placement and are ordered by some function.",
   "definitions": {
     "decision-criteria": {
+      "type": "object",
       "properties": {
         "https://ns.adobe.com/experience/decisioning/criteria": {
           "type": "array",
           "title": "Criteria",
           "description": "Defines a set of decision criteria where each contains a set of constraints.",
           "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/criterion-details"
+            "title": "Decision Details",
+            "type": "object",
+            "properties": {
+              "https://ns.adobe.com/experience/decisioning/description": {
+                "type": "string",
+                "title": "Description",
+                "description": "Criterion description. It is used to convey human readable intentions on how or why this criterion was constructed and how it is affecting the decision."
+              },
+              "https://ns.adobe.com/experience/decisioning/placements": {
+                "type": "array",
+                "title": "Placement Restrictions",
+                "description": "The placement constraint states that this criterion is only applicable for the listed placements. Only when the targeted placement is in the `xdm:placements` list is the option selection considered. Otherwise the entire decision criteria is skipped. When the 'xdm:placements' list is omitted or empty, the criterion is considered for any targeted placement. The placements listed here impose implicit criteria for the option selection. An option to be considered must have a representation for the targeted placement.",
+                "items": {
+                  "type": "string",
+                  "format": "uri-reference",
+                  "title": "Placement Identifier",
+                  "description": "A reference to a placement entity. The value is the URI (@id) of the placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement"
+                },
+                "minItems": 1
+              },
+              "https://ns.adobe.com/experience/decisioning/optionSelection": {
+                "title": "Option Selection",
+                "description": "The option selection defines the validity/applicability of options in this context.",
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/decisioning/description": {
+                    "type": "string",
+                    "title": "Description",
+                    "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match."
+                  },
+                  "https://ns.adobe.com/experience/decisioning/optionSelectionType": {
+                    "type": "string",
+                    "title": "Profile Constraint Type",
+                    "enum": ["directList", "filter"],
+                    "default": "none",
+                    "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships."
+                  },
+                  "https://ns.adobe.com/experience/decisioning/options": {
+                    "type": "array",
+                    "title": "Option List",
+                    "description": "A list that directly specifies the options without evaluating a filter query. Either an option list or an option filter rule can be specified.",
+                    "items": {
+                      "type": "string",
+                      "format": "uri-reference",
+                      "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option."
+                    }
+                  },
+                  "https://ns.adobe.com/experience/decisioning/filter": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "title": "Option Filter",
+                    "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter ."
+                  }
+                }
+              },
+              "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+                "title": "Profile Constraint",
+                "description": "The profile constraint decides if an option selection is eligible for this profile identity at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection.",
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/decisioning/description": {
+                    "type": "string",
+                    "title": "Description",
+                    "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it."
+                  },
+                  "https://ns.adobe.com/experience/decisioning/profileConstraintType": {
+                    "type": "string",
+                    "title": "Profile Constraint Type",
+                    "enum": ["none", "rules", "anySegments", "allSegments"],
+                    "default": "none",
+                    "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships."
+                  },
+                  "https://ns.adobe.com/experience/decisioning/eligibilityRule": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "title": "Eligibility Rule",
+                    "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule"
+                  },
+                  "https://ns.adobe.com/experience/decisioning/segmentIdentities": {
+                    "title": "Segment Identifiers",
+                    "description": "Identifiers of the segments",
+                    "type": "array",
+                    "items": {
+                      "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
+                    }
+                  }
+                }
+              },
+              "https://ns.adobe.com/experience/decisioning/ranking": {
+                "title": "Ranking Details",
+                "description": "Rank (priority). Defines how the \"best option\" is determined given the context of the decision criterion. Among all the selected options that meet the profile constraints, the ranking will decide the top (or top N) option(s) to be proposed.",
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/decisioning/priority": {
+                    "type": "integer",
+                    "title": "Priority",
+                    "description": "The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.",
+                    "minimum": 0
+                  },
+                  "https://ns.adobe.com/experience/decisioning/order": {
+                    "title": "Order Evaluation",
+                    "description": "Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.",
+                    "type": "object",
+                    "properties": {
+                      "https://ns.adobe.com/experience/decisioning/function": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "title": "Scoring Function",
+                        "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function"
+                      },
+                      "https://ns.adobe.com/experience/decisioning/rankingStrategy": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "title": "Ranking Strategy",
+                        "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "https://ns.adobe.com/experience/decisioning/placements",
+              "https://ns.adobe.com/experience/decisioning/optionSelection"
+            ]
           }
         }
       }

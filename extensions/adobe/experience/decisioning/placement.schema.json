@@ -8,10 +8,10 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/placement",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "meta:abstract": true,
+  "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Content Placement",
+  "title": "Decision Content Placement",
   "description": "A content placement describes a location or place where the content of a proposed decision option is rendered into. It is used to set technical constraints for content that the decision supplies.",
   "definitions": {
     "placement-details": {
@@ -33,9 +33,10 @@
           "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
         },
         "https://ns.adobe.com/experience/decisioning/componentType": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details#/definitions/content-component-type",
+          "type": "string",
+          "format": "uri-reference",
           "title": "Content Component Type",
-          "description": "A constraint for the content that can be shown in the place described by this placement. Component Types for example are: image link, html block or plain text."
+          "description": "Content Component Type. An enumerated set of URIs where each value maps to a type given to the content component. Some consumers of the content representations are expecting the @type value to be a reference to schema that describes additional properties of the content component."
         },
         "https://ns.adobe.com/experience/decisioning/contentTypes": {
           "type": "array",

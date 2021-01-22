@@ -20,9 +20,37 @@
       "type": "object",
       "properties": {
         "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
           "title": "Profile Constraint Details",
-          "description": "The profile constraints decide if an option is eligible for this profile identity, at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection."
+          "description": "The profile constraints decide if an option is eligible for this profile identity, at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/decisioning/description": {
+              "type": "string",
+              "title": "Description",
+              "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it."
+            },
+            "https://ns.adobe.com/experience/decisioning/profileConstraintType": {
+              "type": "string",
+              "title": "Profile Constraint Type",
+              "enum": ["none", "rules", "anySegments", "allSegments"],
+              "default": "none",
+              "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships."
+            },
+            "https://ns.adobe.com/experience/decisioning/eligibilityRule": {
+              "type": "string",
+              "format": "uri-reference",
+              "title": "Eligibility Rule",
+              "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule"
+            },
+            "https://ns.adobe.com/experience/decisioning/segmentIdentities": {
+              "title": "Segment Identifiers",
+              "description": "Identifiers of the segments",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
+              }
+            }
+          }
         }
       }
     }

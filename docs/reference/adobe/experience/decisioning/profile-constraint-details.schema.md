@@ -15,13 +15,6 @@ Profile constraints define the policies that ensure a particular decision option
 
 ```json
 {
-  "https://ns.adobe.com/experience/decisioning/profileConstraintType": "rules",
-  "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
-}
-```
-
-```json
-{
   "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
   "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
     {
@@ -46,28 +39,35 @@ Profile constraints define the policies that ensure a particular decision option
 }
 ```
 
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/profileConstraintType": "rules",
+  "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+}
+```
+
 
 # Profile Constraint Details Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | Profile Constraint Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/eligibilityRule](#httpsnsadobecomexperiencedecisioningeligibilityrule) | `string` | Optional | Profile Constraint Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/profileConstraintType](#httpsnsadobecomexperiencedecisioningprofileconstrainttype) | `enum` | Optional | Profile Constraint Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/segmentIdentities](#httpsnsadobecomexperiencedecisioningsegmentidentities) | Segment identity | Optional | Profile Constraint Details (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:description](#xdmdescription) | `string` | Optional |  | Profile Constraint Details (this schema) |
+| [xdm:eligibilityRule](#xdmeligibilityrule) | `string` | Optional |  | Profile Constraint Details (this schema) |
+| [xdm:profileConstraintType](#xdmprofileconstrainttype) | `enum` | Optional | `"none"` | Profile Constraint Details (this schema) |
+| [xdm:segmentIdentities](#xdmsegmentidentities) | Segment identity | Optional |  | Profile Constraint Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/description
+## xdm:description
 ### Description
 
 Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it.
 
-`https://ns.adobe.com/experience/decisioning/description`
+`xdm:description`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/description Type
+### xdm:description Type
 
 
 `string`
@@ -77,17 +77,17 @@ Profile constraint description. It is used to convey human readable intentions o
 
 
 
-## https://ns.adobe.com/experience/decisioning/eligibilityRule
+## xdm:eligibilityRule
 ### Eligibility Rule
 
 A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule
 
-`https://ns.adobe.com/experience/decisioning/eligibilityRule`
+`xdm:eligibilityRule`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/eligibilityRule Type
+### xdm:eligibilityRule Type
 
 
 `string`
@@ -98,20 +98,20 @@ A reference to a decision rule that evaluates to true or false for a given profi
 
 
 
-## https://ns.adobe.com/experience/decisioning/profileConstraintType
+## xdm:profileConstraintType
 ### Profile Constraint Type
 
 Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships.
 
-`https://ns.adobe.com/experience/decisioning/profileConstraintType`
+`xdm:profileConstraintType`
 * is optional
 * type: `enum`
 * default: `"none"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencedecisioningprofileconstrainttype-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmprofileconstrainttype-known-values).
 
-### https://ns.adobe.com/experience/decisioning/profileConstraintType Known Values
+### xdm:profileConstraintType Known Values
 | Value | Description |
 |-------|-------------|
 | `none` |  |
@@ -122,18 +122,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/experience/decisioning/segmentIdentities
+## xdm:segmentIdentities
 ### Segment Identifiers
 
 Identifiers of the segments
 
-`https://ns.adobe.com/experience/decisioning/segmentIdentities`
+`xdm:segmentIdentities`
 * is optional
 * type: Segment identity
 
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/segmentIdentities Type
+### xdm:segmentIdentities Type
 
 
 Array type: Segment identity

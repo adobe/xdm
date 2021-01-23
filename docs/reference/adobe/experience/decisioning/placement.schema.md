@@ -1,5 +1,5 @@
 
-# Content Placement Schema
+# Decision Content Placement Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/placement
@@ -12,12 +12,12 @@ A content placement describes a location or place where the content of a propose
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/placement.schema.json](adobe/experience/decisioning/placement.schema.json) |
 ## Schema Hierarchy
 
-* Content Placement `https://ns.adobe.com/experience/decisioning/placement`
+* Decision Content Placement `https://ns.adobe.com/experience/decisioning/placement`
   * [Record Schema](../../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Content Component Details](content-component-details.schema.md) `https://ns.adobe.com/experience/decisioning/content-component-details`
 
 
-## Content Placement Example
+## Decision Content Placement Example
 ```json
 {
   "@id": "xcore:placement:12345",
@@ -31,16 +31,16 @@ A content placement describes a location or place where the content of a propose
 }
 ```
 
-# Content Placement Properties
+# Decision Content Placement Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../../behaviors/record.schema.md#id) |
-| [https://ns.adobe.com/experience/decisioning/channelID](#httpsnsadobecomexperiencedecisioningchannelid) | `string` | Optional | Content Placement (this schema) |
-| [https://ns.adobe.com/experience/decisioning/componentType](#httpsnsadobecomexperiencedecisioningcomponenttype) | `string` | Optional | Content Placement (this schema) |
-| [https://ns.adobe.com/experience/decisioning/contentTypes](#httpsnsadobecomexperiencedecisioningcontenttypes) | `string[]` | Optional | Content Placement (this schema) |
-| [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | Content Placement (this schema) |
-| [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | Content Placement (this schema) |
+| [https://ns.adobe.com/experience/decisioning/channelID](#httpsnsadobecomexperiencedecisioningchannelid) | `string` | Optional | Decision Content Placement (this schema) |
+| [https://ns.adobe.com/experience/decisioning/componentType](#httpsnsadobecomexperiencedecisioningcomponenttype) | `string` | Optional | Decision Content Placement (this schema) |
+| [https://ns.adobe.com/experience/decisioning/contentTypes](#httpsnsadobecomexperiencedecisioningcontenttypes) | `string[]` | Optional | Decision Content Placement (this schema) |
+| [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | Decision Content Placement (this schema) |
+| [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | Decision Content Placement (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -181,7 +181,7 @@ An assigned name for the placement to refer to it in human interactions
 
 
 
-# Content Placement Definitions
+# Decision Content Placement Definitions
 
 | Property | Type | Group |
 |----------|------|-------|

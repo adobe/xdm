@@ -15,44 +15,6 @@ Content used to represent a decision option in a particular channel and placemen
 
 ```json
 {
-  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0002",
-  "https://ns.adobe.com/experience/decisioning/components": [
-    {
-      "@type": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
-      "dc:format": "image/png",
-      "dc:language": [
-        "en"
-      ],
-      "repo:name": "holidayOffer.2018.png",
-      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e",
-      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;",
-      "https://ns.adobe.com/experience/decisioning/deliveryURL": "https://www.mycompany.com/product?trackId=12345",
-      "https://ns.adobe.com/experience/decisioning/linkURL": "https://www.mycompany.com/product?trackId=12345"
-    }
-  ]
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0003",
-  "https://ns.adobe.com/experience/decisioning/components": [
-    {
-      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
-      "dc:format": "text/html",
-      "dc:language": [
-        "de"
-      ],
-      "repo:name": "widget_quickbooking.html",
-      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
-      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
-    }
-  ]
-}
-```
-
-```json
-{
   "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0001",
   "https://ns.adobe.com/experience/decisioning/components": [
     {
@@ -94,26 +56,64 @@ Content used to represent a decision option in a particular channel and placemen
 }
 ```
 
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0003",
+  "https://ns.adobe.com/experience/decisioning/components": [
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
+      "dc:format": "text/html",
+      "dc:language": [
+        "de"
+      ],
+      "repo:name": "widget_quickbooking.html",
+      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
+    }
+  ]
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0002",
+  "https://ns.adobe.com/experience/decisioning/components": [
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
+      "dc:format": "image/png",
+      "dc:language": [
+        "en"
+      ],
+      "repo:name": "holidayOffer.2018.png",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;",
+      "https://ns.adobe.com/experience/decisioning/deliveryURL": "https://www.mycompany.com/product?trackId=12345",
+      "https://ns.adobe.com/experience/decisioning/linkURL": "https://www.mycompany.com/product?trackId=12345"
+    }
+  ]
+}
+```
+
 
 # Content Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/components](#httpsnsadobecomexperiencedecisioningcomponents) | Content Component Details | **Required** | Content Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/placement](#httpsnsadobecomexperiencedecisioningplacement) | `string` | **Required** | Content Details (this schema) |
+| [xdm:components](#xdmcomponents) | Content Component Details | Optional | Content Details (this schema) |
+| [xdm:placement](#xdmplacement) | `string` | Optional | Content Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/components
+## xdm:components
 
 The components of the content representing the decision option, including all their language variants. Specific components are found by 'dx:format', 'dc:subject' and 'dc:language' or a combination thereof. This metadata is used to locate or represent the content that is associated with an offer and integrate it according to the placement contract.
 
-`https://ns.adobe.com/experience/decisioning/components`
-* is **required**
+`xdm:components`
+* is optional
 * type: Content Component Details
 
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/components Type
+### xdm:components Type
 
 
 Array type: Content Component Details
@@ -128,17 +128,17 @@ All items must be of the type:
 
 
 
-## https://ns.adobe.com/experience/decisioning/placement
+## xdm:placement
 ### Placement
 
 Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement
 
-`https://ns.adobe.com/experience/decisioning/placement`
-* is **required**
+`xdm:placement`
+* is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/placement Type
+### xdm:placement Type
 
 
 `string`

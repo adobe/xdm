@@ -31,11 +31,12 @@ Content components are the fragments associated with the a particular content re
 | [@type](#type) | `string` | **Required** | Content Component Details (this schema) |
 | [dc:format](#dcformat) | `string` | **Required** | Content Component Details (this schema) |
 | [dc:language](#dclanguage) | `string[]` | Optional | Content Component Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/content](#httpsnsadobecomexperiencedecisioningcontent) | `string` | Optional | Content Component Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/deliveryURL](#httpsnsadobecomexperiencedecisioningdeliveryurl) | `string` | Optional | Content Component Details (this schema) |
 | [repo:id](#repoid) | `string` | Optional | Content Component Details (this schema) |
 | [repo:name](#reponame) | `string` | Optional | Content Component Details (this schema) |
 | [repo:resolveURL](#reporesolveurl) | `string` | Optional | Content Component Details (this schema) |
+| [xdm:content](#xdmcontent) | `string` | Optional | Content Component Details (this schema) |
+| [xdm:deliveryURL](#xdmdeliveryurl) | `string` | Optional | Content Component Details (this schema) |
+| [xdm:linkURL](#xdmlinkurl) | `string` | Optional | Content Component Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @type
@@ -141,56 +142,6 @@ All instances must conform to this regular expression
 
 
 
-## https://ns.adobe.com/experience/decisioning/content
-
-An optional field to hold content directly. Instead of referencing content in an asset repository the component can hold simple content directly. This field is not used for composite, complex and binary content assets.
-
-`https://ns.adobe.com/experience/decisioning/content`
-* is optional
-* type: `string`
-* defined in this schema
-
-### https://ns.adobe.com/experience/decisioning/content Type
-
-
-`string`
-
-
-
-
-
-### https://ns.adobe.com/experience/decisioning/content Example
-
-```json
-""
-```
-
-
-## https://ns.adobe.com/experience/decisioning/deliveryURL
-
-An optional unique resource locator to obtain the asset from a content delivery network or service endpoint. This URL is used to access the asset publicly by a user agent.
-
-`https://ns.adobe.com/experience/decisioning/deliveryURL`
-* is optional
-* type: `string`
-* defined in this schema
-
-### https://ns.adobe.com/experience/decisioning/deliveryURL Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-### https://ns.adobe.com/experience/decisioning/deliveryURL Example
-
-```json
-"https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg"
-```
-
-
 ## repo:id
 
 An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery "repo:resolveUrl" to retrieve the asset.
@@ -257,5 +208,80 @@ An optional unique resource locator to read the asset in a content repository. T
 
 ```json
 "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
+```
+
+
+## xdm:content
+
+An optional field to hold content directly. Instead of referencing content in an asset repository the component can hold simple content directly. This field is not used for composite, complex and binary content assets.
+
+`xdm:content`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:content Type
+
+
+`string`
+
+
+
+
+
+### xdm:content Example
+
+```json
+""
+```
+
+
+## xdm:deliveryURL
+
+An optional unique resource locator to obtain the asset from a content delivery network or service endpoint. This URL is used to access the asset publicly by a user agent.
+
+`xdm:deliveryURL`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:deliveryURL Type
+
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+### xdm:deliveryURL Example
+
+```json
+"https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg"
+```
+
+
+## xdm:linkURL
+
+An optional unique resource locator to link the content to. This URL is used to refer the end user to in a user agent and can be tracked.
+
+`xdm:linkURL`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:linkURL Type
+
+
+`string`
+* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+### xdm:linkURL Example
+
+```json
+"https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
 ```
 

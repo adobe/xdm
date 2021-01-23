@@ -23,21 +23,21 @@ A calendar constraint is a component of a decision option that defines the date 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/endDate](#httpsnsadobecomexperiencedecisioningenddate) | `string` | Optional | Calendar Constraint Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/startDate](#httpsnsadobecomexperiencedecisioningstartdate) | `string` | Optional | Calendar Constraint Details (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Calendar Constraint Details (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Calendar Constraint Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/endDate
+## xdm:endDate
 ### End Date &amp; Time
 
 The end date of a decision options validity. Options that have passed their end date can no longer cannot be proposed in the decisioning process.
 
-`https://ns.adobe.com/experience/decisioning/endDate`
+`xdm:endDate`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/endDate Type
+### xdm:endDate Type
 
 
 `string`
@@ -48,17 +48,17 @@ The end date of a decision options validity. Options that have passed their end 
 
 
 
-## https://ns.adobe.com/experience/decisioning/startDate
+## xdm:startDate
 ### Start Date &amp; Time
 
 The start date of a decision options validity.. Options that have not reached their start date cannot be proposed yet in the decisioning process.
 
-`https://ns.adobe.com/experience/decisioning/startDate`
+`xdm:startDate`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/startDate Type
+### xdm:startDate Type
 
 
 `string`

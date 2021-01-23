@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/decisioning/activity
 ```
 
-An entity that controls a decisioning process and escribes some form of action that is planned to happen, is currently happening, or has already happened. The purpose of the activity is to exeute a number of steps to return an ordered selection of best optionsthat qualify in a given context (time-bound, profile-bound, option-bound, context data) or return or a default option (fallback). A decision activity can be thought of as a kind of https://www.w3.org/ns/activitystreams#Activity or https://schema.org/Action. Those entities imply an actor/agent which is a software construct (service).
+Controls a decisioning process and describes some form of action that is planned to happen, is currently happening, or has already happened. The purpose of the activity is to execute a number of steps to return an ordered selection of best options that qualify in a given context (time-bound, profile-bound, option-bound, context data) or return or a default option (fallback). A decision activity can be thought of as a kind of https://www.w3.org/ns/activitystreams#Activity or https://schema.org/Action. Those entities imply an actor/agent which is a software construct (service).
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

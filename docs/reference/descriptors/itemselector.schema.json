@@ -85,13 +85,13 @@
             "xdm:id": "https://example.com/objects/12345"
         },
         {
-            "xdm:index": 0
+            "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
         },
         {
             "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
-            "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
+            "xdm:index": 0
         }
     ]
 }

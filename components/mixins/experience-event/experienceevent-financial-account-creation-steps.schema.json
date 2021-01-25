@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-financial-account-creation-steps",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Deposit Details",
+  "title": "Financial Account Creation Steps",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -15,22 +15,17 @@
     "industry": ["financial_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Deposit details such as ID, type, and amount.",
+  "description": "Financial account creation steps such as start, save, failure, and complete.",
   "definitions": {
-    "deposit-details": {
+    "financial-account-creation-steps": {
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:deposit": {
-              "title": "Deposit",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-              "description": "Extension of transaction data type."
-            },
-            "xdm:depositAccount": {
-              "title": "Deposit Account",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-              "description": "Extension of financialAccount data type."
+            "xdm:financialAccount": {
+              "title": "Financial Account",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
             }
           }
         }
@@ -39,7 +34,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/deposit-details"
+      "$ref": "#/definitions/financial-account-creation-steps"
     }
   ],
   "meta:status": "experimental"

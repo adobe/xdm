@@ -1,0 +1,53 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "File Upload Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment",
+      "public_sector"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "File upload details such as file name, size, and transfer status.",
+  "definitions": {
+    "file-upload-details": {
+      "properties": {
+        "xdm:fileTransfer": {
+          "type": "object",
+          "properties": {
+            "xdm:fileUpload": {
+              "title": "File Upload",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
+              "description": "Tracks all details of a file upload. Extension of file transfer data type."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/file-upload-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

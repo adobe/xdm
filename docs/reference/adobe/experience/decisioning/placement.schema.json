@@ -10,10 +10,10 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "meta:abstract": true,
+    "meta:abstract": false,
     "meta:extensible": true,
     "type": "object",
-    "title": "Content Placement",
+    "title": "Decision Content Placement",
     "description": "A content placement describes a location or place where the content of a proposed decision option is rendered into. It is used to set technical constraints for content that the decision supplies.",
     "definitions": {
         "placement-details": {

@@ -10,7 +10,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "meta:abstract": true,
+    "meta:abstract": false,
     "meta:extensible": true,
     "type": "object",
     "title": "Decision Option Filter",

@@ -15,12 +15,12 @@
         "option-selection-details": {
             "type": "object",
             "properties": {
-                "https://ns.adobe.com/experience/decisioning/description": {
+                "xdm:description": {
                     "type": "string",
                     "title": "Description",
                     "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match."
                 },
-                "https://ns.adobe.com/experience/decisioning/optionSelectionType": {
+                "xdm:optionSelectionType": {
                     "type": "string",
                     "title": "Profile Constraint Type",
                     "enum": [
@@ -30,7 +30,7 @@
                     "default": "none",
                     "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships."
                 },
-                "https://ns.adobe.com/experience/decisioning/options": {
+                "xdm:options": {
                     "type": "array",
                     "title": "Option List",
                     "description": "A list that directly specifies the options without evaluating a filter query. Either an option list or an option filter rule can be specified.",
@@ -40,7 +40,7 @@
                         "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option."
                     }
                 },
-                "https://ns.adobe.com/experience/decisioning/filter": {
+                "xdm:filter": {
                     "type": "string",
                     "format": "uri-reference",
                     "title": "Option Filter",

@@ -1,0 +1,126 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-process",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Claim Process",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "health_and_life_sciences",
+            "high_tech"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Claim details such as claim policy ID and claim creation steps.",
+    "definitions": {
+        "claim-process": {
+            "properties": {
+                "xdm:disputes": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:claimID": {
+                            "title": "Claim ID",
+                            "type": "string",
+                            "description": "ID of the claim being submitted."
+                        },
+                        "xdm:claimStartDate": {
+                            "title": "Claim Start Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date the claim was successfully submitted."
+                        },
+                        "xdm:claimStatus": {
+                            "title": "Claim Status",
+                            "type": "string",
+                            "enum": [
+                                "initiated",
+                                "in progress",
+                                "approved",
+                                "declined"
+                            ],
+                            "description": "Captures the status of the claim for any given point in the application process."
+                        },
+                        "xdm:claimSteps": {
+                            "title": "Claim Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type."
+                        },
+                        "xdm:claimType": {
+                            "title": "Claim Type",
+                            "type": "string",
+                            "enum": [
+                                "homeowners",
+                                "automobile",
+                                "renters",
+                                "third party automobile",
+                                "third party home",
+                                "life",
+                                "health",
+                                "dental",
+                                "flood",
+                                "earthquake"
+                            ],
+                            "description": "Type of claim submitted."
+                        },
+                        "xdm:policy": {
+                            "title": "Policy",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
+                            "description": "Extension of Policy data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/claim-process"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:disputes": {
+                "xdm:claimID": "P102819201D",
+                "xdm:claimStartDate": "2021-03-04T15:52:25+00:00",
+                "xdm:claimStatus": "approved",
+                "xdm:claimSteps": {
+                    "xdm:tool-usage": {
+                        "xdm:toolUsageCancelled": 1,
+                        "xdm:toolUsageComplete": 1,
+                        "xdm:toolUsageFailure": 1,
+                        "xdm:toolUsageID": "T421",
+                        "xdm:toolUsageName": "calculator",
+                        "xdm:toolUsageSaved": 1,
+                        "xdm:toolUsageStart": 1,
+                        "xdm:toolUsageStep": 1,
+                        "xdm:toolUsageStepName": "enter parameters",
+                        "xdm:toolUsageSubmitted": 1,
+                        "xdm:toolUsageType": "generic"
+                    }
+                },
+                "xdm:claimType": "automobile",
+                "xdm:policy": {
+                    "xdm:policy-details": {
+                        "xdm:policyEndDate": "2021-07-24",
+                        "xdm:policyID": "A10276151",
+                        "xdm:policyName": "Personal Automobile Coverage",
+                        "xdm:policyStartDate": "2021-01-24",
+                        "xdm:policyState": "MO",
+                        "xdm:policyType": "automobile"
+                    }
+                }
+            }
+        }
+    ]
+}

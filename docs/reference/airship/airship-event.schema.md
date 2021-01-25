@@ -745,7 +745,7 @@ Audit attributes for external sources.
 ### xdm:extSourceSystemAudit Type
 
 
-* [External Source System Audit Attributes](../datatypes/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+* [External Source System Audit Attributes](../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
 
 
 

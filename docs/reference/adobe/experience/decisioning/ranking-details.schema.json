@@ -14,12 +14,12 @@
     "definitions": {
         "ranking-details": {
             "properties": {
-                "https://ns.adobe.com/experience/decisioning/order": {
+                "xdm:order": {
                     "title": "Order Evaluation",
                     "description": "Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.",
                     "$ref": "#/definitions/order-evaluation"
                 },
-                "https://ns.adobe.com/experience/decisioning/priority": {
+                "xdm:priority": {
                     "type": "integer",
                     "title": "Priority",
                     "description": "The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.",
@@ -29,13 +29,13 @@
         },
         "order-evaluation": {
             "properties": {
-                "https://ns.adobe.com/experience/decisioning/function": {
+                "xdm:function": {
                     "type": "string",
                     "format": "uri-reference",
                     "title": "Scoring Function",
                     "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function"
                 },
-                "https://ns.adobe.com/experience/decisioning/rankingStrategy": {
+                "xdm:rankingStrategy": {
                     "type": "string",
                     "format": "uri-reference",
                     "title": "Ranking Strategy",
@@ -50,17 +50,10 @@
         },
         {
             "required": [
-                "https://ns.adobe.com/experience/decisioning/priority"
+                "xdm:priority"
             ]
         }
     ],
     "meta:status": "stable",
-    "examples": [
-        {
-            "https://ns.adobe.com/experience/decisioning/priority": 3,
-            "https://ns.adobe.com/experience/decisioning/order": {
-                "https://ns.adobe.com/experience/decisioning/function": "xcore:ranking-function:b437a2403cf10e9"
-            }
-        }
-    ]
+    "examples": []
 }

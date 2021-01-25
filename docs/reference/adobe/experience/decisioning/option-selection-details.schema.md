@@ -34,25 +34,25 @@ A component of a decision criteria that defines option applicability constraints
 
 # Option Selection Details Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | Option Selection Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/filter](#httpsnsadobecomexperiencedecisioningfilter) | `string` | Optional | Option Selection Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/optionSelectionType](#httpsnsadobecomexperiencedecisioningoptionselectiontype) | `enum` | Optional | Option Selection Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/options](#httpsnsadobecomexperiencedecisioningoptions) | `string[]` | Optional | Option Selection Details (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:description](#xdmdescription) | `string` | Optional |  | Option Selection Details (this schema) |
+| [xdm:filter](#xdmfilter) | `string` | Optional |  | Option Selection Details (this schema) |
+| [xdm:optionSelectionType](#xdmoptionselectiontype) | `enum` | Optional | `"none"` | Option Selection Details (this schema) |
+| [xdm:options](#xdmoptions) | `string[]` | Optional |  | Option Selection Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/description
+## xdm:description
 ### Description
 
 Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match.
 
-`https://ns.adobe.com/experience/decisioning/description`
+`xdm:description`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/description Type
+### xdm:description Type
 
 
 `string`
@@ -62,17 +62,17 @@ Option selection description. It is used to convey human readable intentions on 
 
 
 
-## https://ns.adobe.com/experience/decisioning/filter
+## xdm:filter
 ### Option Filter
 
 The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter .
 
-`https://ns.adobe.com/experience/decisioning/filter`
+`xdm:filter`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/filter Type
+### xdm:filter Type
 
 
 `string`
@@ -83,20 +83,20 @@ The reference to a tag based filter that matches options from an inventory using
 
 
 
-## https://ns.adobe.com/experience/decisioning/optionSelectionType
+## xdm:optionSelectionType
 ### Profile Constraint Type
 
 Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.
 
-`https://ns.adobe.com/experience/decisioning/optionSelectionType`
+`xdm:optionSelectionType`
 * is optional
 * type: `enum`
 * default: `"none"`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencedecisioningoptionselectiontype-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmoptionselectiontype-known-values).
 
-### https://ns.adobe.com/experience/decisioning/optionSelectionType Known Values
+### xdm:optionSelectionType Known Values
 | Value | Description |
 |-------|-------------|
 | `directList` |  |
@@ -105,18 +105,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## https://ns.adobe.com/experience/decisioning/options
+## xdm:options
 ### Option List
 
 A list that directly specifies the options without evaluating a filter query. Either an option list or an option filter rule can be specified.
 
-`https://ns.adobe.com/experience/decisioning/options`
+`xdm:options`
 * is optional
 * type: `string[]`
 
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/options Type
+### xdm:options Type
 
 
 Array type: `string[]`

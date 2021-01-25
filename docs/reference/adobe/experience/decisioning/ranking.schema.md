@@ -16,18 +16,6 @@ A ranking produces the order in which one option is selected over another. A fix
   * [Ranking Details](ranking-details.schema.md) `https://ns.adobe.com/experience/decisioning/ranking-details`
 
 
-## Decision Option Ranking Example
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/ranking": {
-    "https://ns.adobe.com/experience/decisioning/priority": 0,
-    "https://ns.adobe.com/experience/decisioning/order": {
-      "https://ns.adobe.com/experience/decisioning/function": "ml:function:b437a2403cf10e9"
-    }
-  }
-}
-```
-
 # Decision Option Ranking Properties
 
 | Property | Type | Required | Defined by |

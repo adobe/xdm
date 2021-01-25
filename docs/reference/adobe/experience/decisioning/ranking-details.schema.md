@@ -11,48 +11,38 @@ A ranking produces the order in which one option is selected over another. A fix
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/ranking-details.schema.json](adobe/experience/decisioning/ranking-details.schema.json) |
 
-## Ranking Details Example
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/priority": 3,
-  "https://ns.adobe.com/experience/decisioning/order": {
-    "https://ns.adobe.com/experience/decisioning/function": "xcore:ranking-function:b437a2403cf10e9"
-  }
-}
-```
-
 # Ranking Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/order](#httpsnsadobecomexperiencedecisioningorder) | complex | Optional | Ranking Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/priority](#httpsnsadobecomexperiencedecisioningpriority) | `integer` | **Required** | Ranking Details (this schema) |
+| [xdm:order](#xdmorder) | complex | Optional | Ranking Details (this schema) |
+| [xdm:priority](#xdmpriority) | `integer` | **Required** | Ranking Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/order
+## xdm:order
 ### Order Evaluation
 
 Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.
 
-`https://ns.adobe.com/experience/decisioning/order`
+`xdm:order`
 * is optional
 * type: complex
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/order Type
+### xdm:order Type
 
 Unknown type ``.
 
 ```json
 {
   "properties": {
-    "https://ns.adobe.com/experience/decisioning/function": {
+    "xdm:function": {
       "type": "string",
       "format": "uri-reference",
       "title": "Scoring Function",
       "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function"
     },
-    "https://ns.adobe.com/experience/decisioning/rankingStrategy": {
+    "xdm:rankingStrategy": {
       "type": "string",
       "format": "uri-reference",
       "title": "Ranking Strategy",
@@ -69,17 +59,17 @@ Unknown type ``.
 
 
 
-## https://ns.adobe.com/experience/decisioning/priority
+## xdm:priority
 ### Priority
 
 The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.
 
-`https://ns.adobe.com/experience/decisioning/priority`
+`xdm:priority`
 * is **required**
 * type: `integer`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/priority Type
+### xdm:priority Type
 
 
 `integer`
@@ -94,20 +84,20 @@ The priority of a single decision option relative to all other options. Options 
 
 | Property | Type | Group |
 |----------|------|-------|
-| [https://ns.adobe.com/experience/decisioning/function](#httpsnsadobecomexperiencedecisioningfunction) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
-| [https://ns.adobe.com/experience/decisioning/rankingStrategy](#httpsnsadobecomexperiencedecisioningrankingstrategy) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
+| [xdm:function](#xdmfunction) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
+| [xdm:rankingStrategy](#xdmrankingstrategy) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
 
-## https://ns.adobe.com/experience/decisioning/function
+## xdm:function
 ### Scoring Function
 
 A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function
 
-`https://ns.adobe.com/experience/decisioning/function`
+`xdm:function`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/function Type
+### xdm:function Type
 
 
 `string`
@@ -118,17 +108,17 @@ A reference to a function that computes a numerical score for this decision opti
 
 
 
-## https://ns.adobe.com/experience/decisioning/rankingStrategy
+## xdm:rankingStrategy
 ### Ranking Strategy
 
 A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy
 
-`https://ns.adobe.com/experience/decisioning/rankingStrategy`
+`xdm:rankingStrategy`
 * is optional
 * type: `string`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/rankingStrategy Type
+### xdm:rankingStrategy Type
 
 
 `string`

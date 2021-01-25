@@ -14,12 +14,12 @@
     "definitions": {
         "criterion-details": {
             "properties": {
-                "https://ns.adobe.com/experience/decisioning/description": {
+                "xdm:description": {
                     "type": "string",
                     "title": "Description",
                     "description": "Criterion description. It is used to convey human readable intentions on how or why this criterion was constructed and how it is affecting the decision."
                 },
-                "https://ns.adobe.com/experience/decisioning/placements": {
+                "xdm:placements": {
                     "type": "array",
                     "title": "Placement Restrictions",
                     "description": "The placement constraint states that this criterion is only applicable for the listed placements. Only when the targeted placement is in the `xdm:placements` list is the option selection considered. Otherwise the entire decision criteria is skipped. When the 'xdm:placements' list is omitted or empty, the criterion is considered for any targeted placement. The placements listed here impose implicit criteria for the option selection. An option to be considered must have a representation for the targeted placement.",
@@ -31,25 +31,25 @@
                     },
                     "minItems": 1
                 },
-                "https://ns.adobe.com/experience/decisioning/optionSelection": {
+                "xdm:optionSelection": {
                     "$ref": "https://ns.adobe.com/experience/decisioning/option-selection-details",
                     "title": "Option Selection",
                     "description": "The option selection defines the validity/applicability of options in this context."
                 },
-                "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+                "xdm:profileConstraints": {
                     "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
                     "title": "Profile Constraint",
                     "description": "The profile constraint decides if an option selection is eligible for this profile identity at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection."
                 },
-                "https://ns.adobe.com/experience/decisioning/ranking": {
+                "xdm:ranking": {
                     "$ref": "https://ns.adobe.com/experience/decisioning/ranking-details",
                     "title": "Ranking Details",
                     "description": "Rank (priority). Defines how the \"best option\" is determined given the context of the decision criterion. Among all the selected options that meet the profile constraints, the ranking will decide the top (or top N) option(s) to be proposed."
                 }
             },
             "required": [
-                "https://ns.adobe.com/experience/decisioning/placements",
-                "https://ns.adobe.com/experience/decisioning/optionSelection"
+                "xdm:placements",
+                "xdm:optionSelection"
             ]
         }
     },
@@ -59,43 +59,5 @@
         }
     ],
     "meta:status": "stable",
-    "examples": [
-        {
-            "https://ns.adobe.com/experience/decisioning/description": "S1:",
-            "https://ns.adobe.com/experience/decisioning/placements": [
-                "xcore:offer-placement:6111463157c2221"
-            ],
-            "https://ns.adobe.com/experience/decisioning/optionSelection": {
-                "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
-                "https://ns.adobe.com/experience/decisioning/options": [
-                    "xcore:offer:f6998eb62ed6f15"
-                ]
-            },
-            "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-                "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
-                "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b01"
-            },
-            "https://ns.adobe.com/experience/decisioning/ranking": {
-                "https://ns.adobe.com/experience/decisioning/priority": 8
-            }
-        },
-        {
-            "https://ns.adobe.com/experience/decisioning/placements": [
-                "xcore:offer-placement:c652463157c2aa1"
-            ],
-            "https://ns.adobe.com/experience/decisioning/optionSelection": {
-                "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f6998eb62ed6f15"
-            },
-            "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-                "https://ns.adobe.com/experience/decisioning/description": "Pilot = Y",
-                "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
-            },
-            "https://ns.adobe.com/experience/decisioning/ranking": {
-                "https://ns.adobe.com/experience/decisioning/priority": 0,
-                "https://ns.adobe.com/experience/decisioning/order": {
-                    "https://ns.adobe.com/experience/decisioning/function": "ml:function:b437a2403cf10e9"
-                }
-            }
-        }
-    ]
+    "examples": []
 }

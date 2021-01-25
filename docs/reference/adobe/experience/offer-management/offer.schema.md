@@ -1,17 +1,17 @@
 
-# Offer Schema
+# Offer (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/offer
 ```
 
-This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context.
+This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context. (deprecated)
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/offer.schema.json](adobe/experience/offer-management/offer.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/offer.schema.json](adobe/experience/offer-management/offer.schema.json) |
 
-## Offer Example
+## Offer (deprecated) Example
 ```json
 {
   "@id": "xcore:personalized-offer:e526a1503bf29e9",
@@ -36,16 +36,16 @@ This is the base concept for offers that are used for personalization and those 
 }
 ```
 
-# Offer Properties
+# Offer (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Offer (this schema) |
-| [xdm:customMetadata](#xdmcustommetadata) | `object` | Optional | Offer (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Offer (this schema) |
-| [xdm:representations](#xdmrepresentations) | Representation | Optional | Offer (this schema) |
-| [xdm:status](#xdmstatus) | `enum` | **Required** | Offer (this schema) |
-| [xdm:tags](#xdmtags) | `string[]` | Optional | Offer (this schema) |
+| [@id](#id) | `string` | Optional | Offer (deprecated) (this schema) |
+| [xdm:customMetadata](#xdmcustommetadata) | `object` | Optional | Offer (deprecated) (this schema) |
+| [xdm:name](#xdmname) | `string` | **Required** | Offer (deprecated) (this schema) |
+| [xdm:representations](#xdmrepresentations) | Representation (deprecated) | Optional | Offer (deprecated) (this schema) |
+| [xdm:status](#xdmstatus) | `enum` | **Required** | Offer (deprecated) (this schema) |
+| [xdm:tags](#xdmtags) | `string[]` | Optional | Offer (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -120,17 +120,17 @@ Offer representations for different content variants. A single offer can have mu
 
 `xdm:representations`
 * is optional
-* type: Representation
+* type: Representation (deprecated)
 
 * defined in this schema
 
 ### xdm:representations Type
 
 
-Array type: Representation
+Array type: Representation (deprecated)
 
 All items must be of the type:
-* [Representation](offer-representation.schema.md) – `https://ns.adobe.com/experience/offer-management/offer-representation`
+* [Representation (deprecated)](offer-representation.schema.md) – `https://ns.adobe.com/experience/offer-management/offer-representation`
 
 
 

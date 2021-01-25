@@ -14,9 +14,9 @@ Work-related details of a person such as work address, work email, work phone nu
 
 * Work Contact Details `https://ns.adobe.com/xdm/context/profile-work-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Email address](../../datatypes/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
-  * [Phone number](../../datatypes/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
+  * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
+  * [Email address](../../datatypes/demographic/emailaddress.schema.md) `https://ns.adobe.com/xdm/context/emailaddress`
+  * [Phone number](../../datatypes/demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 ## Work Contact Details Example
@@ -118,7 +118,7 @@ A work postal address.
 ### xdm:workAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -137,7 +137,7 @@ A work email address.
 ### xdm:workEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
@@ -156,7 +156,7 @@ Work phone number.
 ### xdm:workPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

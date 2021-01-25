@@ -1,0 +1,173 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Internal Site Search",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Used for internal site searches and includes all related search behaviors and details.",
+    "definitions": {
+        "internal-site-search": {
+            "properties": {
+                "xdm:numberOfResults": {
+                    "title": "Number of Results",
+                    "type": "integer",
+                    "description": "Count of the total number of search results returned."
+                },
+                "xdm:productFindingMethods": {
+                    "title": "Product Finding Method",
+                    "type": "string",
+                    "description": "The internal site search term value with merchandising binding. Will show what term was searched for immediately before viewing a product."
+                },
+                "xdm:refinementValue": {
+                    "title": "Refinement Value",
+                    "type": "string",
+                    "description": "Number of times an internal site search refinement has occurred."
+                },
+                "xdm:refinementType": {
+                    "title": "Refinement Type",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)"
+                },
+                "xdm:refinementInstances": {
+                    "title": "Refinement Instances",
+                    "type": "integer",
+                    "description": "Captures when a search refinement action occurs."
+                },
+                "xdm:resultsPageNumber": {
+                    "title": "Results Page Number",
+                    "type": "integer",
+                    "description": "For paginated search results, tracks the page of results the visitor is viewing."
+                },
+                "xdm:resultsPerPage": {
+                    "title": "Results Per Page",
+                    "type": "integer",
+                    "description": "For paginated search results, tracks the number of search results displayed per page."
+                },
+                "xdm:instances": {
+                    "title": "Instances",
+                    "type": "integer",
+                    "description": "Number of times an internal site search has occurred."
+                },
+                "xdm:locationInPage": {
+                    "title": "Location in Page",
+                    "type": "string",
+                    "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search"
+                },
+                "xdm:nullInstances": {
+                    "title": "Null Instances",
+                    "type": "integer",
+                    "description": "Number of times an internal site search has occurred that provided zero results."
+                },
+                "xdm:postalCode": {
+                    "title": "Postal Code",
+                    "type": "string",
+                    "description": "Captures the zip code used for a search, if applicable"
+                },
+                "xdm:radiusDistance": {
+                    "title": "Radius Distance",
+                    "type": "integer",
+                    "description": "Captures the selected distance of the search radius."
+                },
+                "xdm:radiusType": {
+                    "title": "Radius Type",
+                    "type": "string",
+                    "enum": [
+                        "miles",
+                        "kilometers"
+                    ],
+                    "description": "Captures the selected distance type of the search radius in either miles or kilometers."
+                },
+                "xdm:term": {
+                    "title": "Term",
+                    "type": "string",
+                    "description": "Tracks the internal site search term entered by the visitor."
+                },
+                "xdm:autoCompleteClicked": {
+                    "title": "Auto Complete Clicked",
+                    "type": "boolean",
+                    "description": "Indicates when a visitor uses a suggested/autocompleted search value to execute the search"
+                },
+                "xdm:autoCompleteValue": {
+                    "title": "Auto Complete Value",
+                    "type": "string",
+                    "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked"
+                },
+                "xdm:autoCompleteTypedValue": {
+                    "title": "Auto Complete Typed Value",
+                    "type": "string",
+                    "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms"
+                },
+                "xdm:searchType": {
+                    "title": "Search Type",
+                    "type": "string",
+                    "description": "Captures the method of search being executed, if applicable. Examples could include a type-ahead search, directly-typed search, or any other type of custom search functionality a site might have."
+                },
+                "xdm:sortOrder": {
+                    "title": "Sort Order",
+                    "type": "string",
+                    "enum": [
+                        "ascending",
+                        "descending"
+                    ],
+                    "description": "ascending/descending"
+                },
+                "xdm:sortType": {
+                    "title": "Sort Type",
+                    "type": "string",
+                    "enum": [
+                        "price: low to high",
+                        "price: high to low",
+                        "featured",
+                        "best match",
+                        "average customer review",
+                        "discount",
+                        "new items"
+                    ],
+                    "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/internal-site-search"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:numberOfResults": 258,
+            "xdm:productFindingMethods": "pedals",
+            "xdm:refinementValue": "aluminum",
+            "xdm:refinementType": [
+                "Customer Reviews = 5",
+                "Recommended Use = Trail"
+            ],
+            "xdm:refinementInstances": 1,
+            "xdm:resultsPageNumber": 2,
+            "xdm:resultsPerPage": 50,
+            "xdm:instances": 1,
+            "xdm:locationInPage": "top nav",
+            "xdm:nullInstances": 0,
+            "xdm:postalCode": "63141",
+            "xdm:radiusDistance": 25,
+            "xdm:radiusType": "miles",
+            "xdm:term": "shimano pedals",
+            "xdm:autoCompleteClicked": true,
+            "xdm:autoCompleteValue": "shimano pedals",
+            "xdm:autoCompleteTypedValue": "pedal",
+            "xdm:type": "standard",
+            "xdm:sortOrder": "ascending",
+            "xdm:sortType": "price: low to high"
+        }
+    ]
+}

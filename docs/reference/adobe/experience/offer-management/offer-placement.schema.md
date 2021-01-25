@@ -1,5 +1,5 @@
 
-# Placement Schema
+# Placement (deprecated) Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/offer-placement
@@ -14,23 +14,23 @@ The mutual contract does not need to rely on physical properties of the content.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-placement.schema.json](adobe/experience/offer-management/offer-placement.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-placement.schema.json](adobe/experience/offer-management/offer-placement.schema.json) |
 ## Schema Hierarchy
 
-* Placement `https://ns.adobe.com/experience/offer-management/offer-placement`
-  * [Representation](offer-representation.schema.md) `https://ns.adobe.com/experience/offer-management/offer-representation`
+* Placement (deprecated) `https://ns.adobe.com/experience/offer-management/offer-placement`
+  * [Representation (deprecated)](offer-representation.schema.md) `https://ns.adobe.com/experience/offer-management/offer-representation`
 
 
-# Placement Properties
+# Placement (deprecated) Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | Placement (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | **Required** | Placement (this schema) |
-| [xdm:componentType](#xdmcomponenttype) | `enum` | **Required** | Placement (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Placement (this schema) |
-| [xdm:description](#xdmdescription) | `string` | Optional | Placement (this schema) |
-| [xdm:name](#xdmname) | `string` | **Required** | Placement (this schema) |
+| [@id](#id) | `string` | Optional | Placement (deprecated) (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | **Required** | Placement (deprecated) (this schema) |
+| [xdm:componentType](#xdmcomponenttype) | `enum` | **Required** | Placement (deprecated) (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Placement (deprecated) (this schema) |
+| [xdm:description](#xdmdescription) | `string` | Optional | Placement (deprecated) (this schema) |
+| [xdm:name](#xdmname) | `string` | **Required** | Placement (deprecated) (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

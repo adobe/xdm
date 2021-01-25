@@ -1,0 +1,43 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/offer-management/personalized-content-offer",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/option",
+    "https://ns.adobe.com/experience/decisioning/contents",
+    "https://ns.adobe.com/experience/decisioning/lifecycle-status",
+    "https://ns.adobe.com/experience/decisioning/tags",
+    "https://ns.adobe.com/experience/decisioning/calendar-constraints",
+    "https://ns.adobe.com/experience/decisioning/profile-constraints",
+    "https://ns.adobe.com/experience/decisioning/ranking",
+    "https://ns.adobe.com/experience/decisioning/personalized-content-option"
+  ],
+  "meta:abstract": false,
+  "meta:extensible": false,
+  "type": "object",
+  "title": "Personalized Offer",
+  "description": "Personalized offers form the set of choices for an offer decision actvity. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.",
+  "definitions": {
+    "personalized-content-offer": {
+      "properties": {}
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/personalized-content-option"
+    },
+    {
+      "$ref": "#/definitions/personalized-content-offer"
+    }
+  ],
+  "meta:status": "stable"
+}

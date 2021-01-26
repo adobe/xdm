@@ -1,5 +1,5 @@
 echo "triggering visual build"
-git clone https://github.com/adobe/xdmVisualization.git
+git clone git@github.com:adobe/xdmVisualization.git
 cd xdmVisualization
 echo "triggered" > triggeredBuild.log
 currentBranch=$(git status|grep "On branch"|cut -c11-100)

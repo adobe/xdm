@@ -129,7 +129,7 @@
             },
             "xdm:vehicleDetail": {
               "title": "Vehicle Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/vehicle-details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/vehicle-details",
               "description": "Array of all vehicle details in a reservation"
             }
           }

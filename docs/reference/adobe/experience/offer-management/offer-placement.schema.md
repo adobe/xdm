@@ -1,5 +1,5 @@
 
-# Placement (deprecated) Schema
+# Placement Schema
 
 ```
 https://ns.adobe.com/experience/offer-management/offer-placement
@@ -17,13 +17,13 @@ The mutual contract does not need to rely on physical properties of the content.
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-placement.schema.json](adobe/experience/offer-management/offer-placement.schema.json) |
 ## Schema Hierarchy
 
-* Placement (deprecated) `https://ns.adobe.com/experience/offer-management/offer-placement`
+* Placement `https://ns.adobe.com/experience/offer-management/offer-placement`
   * [Record Schema](../../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Decision Content Placement](../decisioning/placement.schema.md) `https://ns.adobe.com/experience/decisioning/placement`
   * [Representation (deprecated)](offer-representation.schema.md) `https://ns.adobe.com/experience/offer-management/offer-representation`
 
 
-# Placement (deprecated) Properties
+# Placement Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
@@ -33,11 +33,11 @@ The mutual contract does not need to rely on physical properties of the content.
 | [https://ns.adobe.com/experience/decisioning/contentTypes](#httpsnsadobecomexperiencedecisioningcontenttypes) | `string[]` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningcontenttypes) |
 | [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningdescription) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningname) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | Placement (deprecated) (this schema) |
-| [xdm:componentType](#xdmcomponenttype) | `enum` | Optional | Placement (deprecated) (this schema) |
-| [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Placement (deprecated) (this schema) |
-| [xdm:description](#xdmdescription) | `string` | Optional | Placement (deprecated) (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Placement (deprecated) (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | Optional | Placement (this schema) |
+| [xdm:componentType](#xdmcomponenttype) | `enum` | Optional | Placement (this schema) |
+| [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Placement (this schema) |
+| [xdm:description](#xdmdescription) | `string` | Optional | Placement (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Placement (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -179,7 +179,7 @@ An assigned name for the placement to refer to it in human interactions
 
 
 ## xdm:channel
-### Communication Channel
+### Communication Channel (deprecated)
 
 A reference to the channel entity. The channel indicates where the dynamic content is intended to be delivered. The channel constraint is used to convey not only where the offer will be used but also to determine the content editor or validator that is used for the experience. See 'https://ns.adobe.com/xdm/channels/channel'
 
@@ -200,7 +200,7 @@ A reference to the channel entity. The channel indicates where the dynamic conte
 
 
 ## xdm:componentType
-### Content Type
+### Content Type (deprecated)
 
 A constraint for the content that can be shown in the place described by this placement. Component Types are: image, html or plain text.
 
@@ -222,7 +222,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 ## xdm:contentTypes
-
+### Media Types (deprecated)
 
 `xdm:contentTypes`
 * is optional
@@ -257,7 +257,7 @@ A constraint for the media type of the components that is expected in that place
 
 
 ## xdm:description
-### Description
+### Description (deprecated)
 
 Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a "Banner" in a web page is often conveyed via the description and not by a formal method.
 
@@ -277,7 +277,7 @@ Placement description. It is used to convey human readable intentions on how dyn
 
 
 ## xdm:name
-### Name
+### Name (deprecated)
 
 An assigned name for the placement to refer to it in human interactions
 

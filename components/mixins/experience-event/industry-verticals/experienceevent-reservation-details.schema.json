@@ -26,7 +26,7 @@
               "title": "Flight Details",
               "type": "array",
               "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/flightdetails"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/flight-details"
               },
               "description": "Array of all flight details in a reservation"
             },
@@ -34,7 +34,7 @@
               "title": "Hotel Details",
               "type": "array",
               "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/hoteldetails"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/hotel-details"
               },
               "description": "Array of all room bookings in a reservation"
             },
@@ -129,7 +129,7 @@
             },
             "xdm:vehicleDetail": {
               "title": "Vehicle Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/vehicledetails",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/vehicle-details",
               "description": "Array of all vehicle details in a reservation"
             }
           }

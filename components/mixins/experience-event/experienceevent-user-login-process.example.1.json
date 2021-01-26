@@ -1,0 +1,20 @@
+{
+  "xdm:userAccount": {
+    "xdm:userCookieConsentAccepted": true,
+    "xdm:userCookieConsentViewed": 1,
+    "xdm:userForgotPassword": 1,
+    "xdm:userForgotUsername": 1,
+    "xdm:userLogin": 1,
+    "xdm:userLoginBiometric": false,
+    "xdm:userLoginFailure": 1,
+    "xdm:userLoginLocation": "homepage login modal",
+    "xdm:userLoginKeychain": true,
+    "xdm:userLoginMultiFactor": true,
+    "xdm:userLoginStatus": "authenticated",
+    "xdm:userLoginType": "keychain",
+    "xdm:userLogout": 1,
+    "xdm:userResetPassword": 1,
+    "xdm:userSessionTimeout": 1,
+    "xdm:userUpdate": 1
+  }
+}

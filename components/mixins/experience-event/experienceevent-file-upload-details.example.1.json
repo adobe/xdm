@@ -1,0 +1,16 @@
+{
+  "xdm:fileTransfer": {
+    "xdm:fileUpload": {
+      "xdm:file-transfer": {
+        "xdm:fileName": "4",
+        "xdm:fileSize": "1024",
+        "xdm:fileTransferComplete": 1,
+        "xdm:fileTransferStart": 1,
+        "xdm:fileTransferError": "1",
+        "xdm:fileTransferType": "catalog download",
+        "xdm:fileType": "PDF",
+        "xdm:fileURL": "https://adobe.com/catalog.pdf"
+      }
+    }
+  }
+}

@@ -34,10 +34,10 @@
           "type": "string",
           "description": "Coupon code associated with the vehicle booking."
         },
-        "xdm:currency": {
-          "title": "Currency",
-          "type": "enum",
-          "description": "Currency used to make the purchase."
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "description": "Currency code (i.e. 'USD' or 'GBP') used to make the purchase."
         },
         "xdm:discountPercent": {
           "title": "Discount Percent",

@@ -2,7 +2,7 @@
   "xdm:reservations": {
     "xdm:reservationAncillaryRevenue": 39.0,
     "xdm:reservationCreated": 1,
-    "xdm:reservationEndDate": "2021-06-30",
+    "xdm:reservationEndDate": "2021-06-30T15:52:25+00:00",
     "xdm:reservationID": "B21FF2021DL",
     "xdm:reservationLength": 12,
     "xdm:reservationNonRefundableAmount": 79.0,
@@ -25,11 +25,11 @@
     },
     "xdm:reservationPurpose": "leisure",
     "xdm:reservationRackRate": 179.0,
-    "xdm:reservationStartDate": "",
+    "xdm:reservationStartDate": "2021-06-18T15:52:25+00:00",
     "xdm:reservationTransaction": {
       "xdm:transactionAmount": "67.85",
       "xdm:transactionID": "T10291832",
-      "xdm:transactionDate": "2021-01-07",
+      "xdm:transactionDate": "2021-01-07T15:52:25+00:00",
       "xdm:transactionType": "transfer"
     },
     "xdm:reservationTripType": "personal",

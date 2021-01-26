@@ -26,7 +26,7 @@
               "title": "Flight Details",
               "type": "array",
               "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/flightdetails"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/flightdetails"
               },
               "description": "Array of all flight details in a reservation"
             },
@@ -34,7 +34,7 @@
               "title": "Hotel Details",
               "type": "array",
               "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/hoteldetails"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/hoteldetails"
               },
               "description": "Array of all room bookings in a reservation"
             },
@@ -45,12 +45,12 @@
             },
             "xdm:reservationCancellation": {
               "title": "Reservation Cancellation",
-              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "type": "integer",
               "description": "Tracked when a reservation has been cancelled."
             },
             "xdm:reservationCreated": {
               "title": "Reservation Created",
-              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "type": "integer",
               "description": "Tracked when a reservation has been created."
             },
             "xdm:reservationEndDate": {
@@ -137,10 +137,8 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/reservation-details"
-    }
-  ],
+  "allOf": [{
+    "$ref": "#/definitions/reservation-details"
+  }],
   "meta:status": "experimental"
 }

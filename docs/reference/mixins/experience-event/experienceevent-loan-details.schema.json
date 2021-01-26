@@ -1,0 +1,65 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-loan-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Loan Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "automotive"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Loan application details such as ID, type, approval, and status.",
+    "definitions": {
+        "loan-details": {
+            "properties": {
+                "xdm:personalFinances": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:loan": {
+                            "title": "Loan",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
+                            "description": "Extension of form application data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/loan-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:personalFinances": {
+                "xdm:loan": {
+                    "xdm:form-applications": {
+                        "xdm:formApplicationApproved": "",
+                        "xdm:formApplicationDeclined": "",
+                        "xdm:formApplicationID": "F102931032",
+                        "xdm:formApplicationRequestedAmount": "2000.00",
+                        "xdm:formApplicationStatus": "initiated",
+                        "xdm:formApplicationStatusUpdate": "",
+                        "xdm:formApplicationType": "loan",
+                        "xdm:formApplicationUnderReview": "",
+                        "xdm:formApplicationUsage": ""
+                    }
+                }
+            }
+        }
+    ]
+}

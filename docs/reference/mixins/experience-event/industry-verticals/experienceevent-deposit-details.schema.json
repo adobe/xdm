@@ -11,9 +11,11 @@
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
-    "meta:industry": [
-        "financial_services"
-    ],
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
@@ -24,20 +26,15 @@
                 "xdm:personalFinances": {
                     "type": "object",
                     "properties": {
-                        "xdm:depositDetails": {
-                            "type": "object",
-                            "properties": {
-                                "xdm:deposit": {
-                                    "title": "Deposit",
-                                    "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                                    "description": "Extension of transaction data type."
-                                },
-                                "xdm:depositAccount": {
-                                    "title": "Deposit Account",
-                                    "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                                    "description": "Extension of financialAccount data type."
-                                }
-                            }
+                        "xdm:deposit": {
+                            "title": "Deposit",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                            "description": "Extension of transaction data type."
+                        },
+                        "xdm:depositAccount": {
+                            "title": "Deposit Account",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                            "description": "Extension of financialAccount data type."
                         }
                     }
                 }
@@ -51,6 +48,31 @@
     ],
     "meta:status": "experimental",
     "examples": [
-        {}
+        {
+            "xdm:personalFinances": {
+                "xdm:deposit": {
+                    "xdm:transaction": {
+                        "xdm:balanceTransfer": "",
+                        "xdm:formApplicationFee": "",
+                        "xdm:toolUsageTransaction": "",
+                        "xdm:transactionAmount": "67.85",
+                        "xdm:transactionID": "T10291832",
+                        "xdm:transactionDate": "2021-01-07",
+                        "xdm:transactionType": "transfer"
+                    }
+                },
+                "xdm:depositAccount": {
+                    "xdm:financial-account": {
+                        "xdm:balanceTransferAccount": "",
+                        "xdm:currentAccountBalance": "678.93",
+                        "xdm:financialAccountID": "1019283724",
+                        "xdm:financialAccountName": "Personal Checking",
+                        "xdm:financialAccountOwner": "TBD",
+                        "xdm:financialAccountType": "checking",
+                        "xdm:openedDate": "2021-02-17"
+                    }
+                }
+            }
+        }
     ]
 }

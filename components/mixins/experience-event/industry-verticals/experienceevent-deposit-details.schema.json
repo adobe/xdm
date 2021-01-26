@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Deposit details such as ID, type, and amount.",
   "definitions": {
@@ -20,20 +22,15 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:depositDetails": {
-              "type": "object",
-              "properties": {
-                "xdm:deposit": {
-                  "title": "Deposit",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                  "description": "Extension of transaction data type."
-                },
-                "xdm:depositAccount": {
-                  "title": "Deposit Account",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Extension of financialAccount data type."
-                }
-              }
+            "xdm:deposit": {
+              "title": "Deposit",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "description": "Extension of transaction data type."
+            },
+            "xdm:depositAccount": {
+              "title": "Deposit Account",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+              "description": "Extension of financialAccount data type."
             }
           }
         }

@@ -131,7 +131,7 @@ All items must be of the type:
 ## xdm:placement
 ### Placement
 
-Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement
+Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement
 
 `xdm:placement`
 * is optional

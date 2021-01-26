@@ -1,0 +1,35 @@
+{
+  "xdm:siteKnowledge": {
+    "xdm:knowledgeBaseArticeID": "",
+    "xdm:knowledgeBaseArticleType": "",
+    "xdm:knowledgeBaseArticleView": 1,
+    "xdm:knowledgeBaseSearch": {
+      "xdm:internal-site-search": {
+        "xdm:campusSearch": "",
+        "xdm:numberOfResults": 258,
+        "xdm:productFindingMethods": "pedals",
+        "xdm:refinementValue": "aluminum",
+        "xdm:refinementType": [
+          "Customer Reviews = 5",
+          "Recommended Use = Trail"
+        ],
+        "xdm:refinementInstances": 1,
+        "xdm:resultsPageNumber": 2,
+        "xdm:resultsPerPage": 50,
+        "xdm:instances": 1,
+        "xdm:locationInPage": "top nav",
+        "xdm:nullInstances": 0,
+        "xdm:postalCode": "63141",
+        "xdm:radiusDistance": 25,
+        "xdm:radiusType": "miles",
+        "xdm:term": "shimano pedals",
+        "xdm:autocompleteClicked": true,
+        "xdm:autocompleteValue": "shimano pedals",
+        "xdm:autocompleteTypedValue": "pedal",
+        "xdm:searchType": "standard",
+        "xdm:sortOrder": "ascending",
+        "xdm:sortType": "price: low to high"
+      }
+    }
+  }
+}

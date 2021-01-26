@@ -19,7 +19,7 @@
     "calendar-constraints": {
       "type": "object",
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/calendarConstaints": {
+        "https://ns.adobe.com/experience/decisioning/calendarConstraints": {
           "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details",
           "title": "Calendar Constraint Details",
           "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed."

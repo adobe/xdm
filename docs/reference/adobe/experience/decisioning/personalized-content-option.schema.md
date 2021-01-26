@@ -25,7 +25,7 @@ Personalized decision options form the set of choices for any decision actvity. 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/calendarConstaints](#httpsnsadobecomexperiencedecisioningcalendarconstaints) | Calendar Constraint Details | Optional | [Decision Option Calendar Constraints](calendar-constraints.schema.md#httpsnsadobecomexperiencedecisioningcalendarconstaints) |
+| [https://ns.adobe.com/experience/decisioning/calendarConstraints](#httpsnsadobecomexperiencedecisioningcalendarconstraints) | Calendar Constraint Details | Optional | [Decision Option Calendar Constraints](calendar-constraints.schema.md#httpsnsadobecomexperiencedecisioningcalendarconstraints) |
 | [https://ns.adobe.com/experience/decisioning/contents](#httpsnsadobecomexperiencedecisioningcontents) | Content Details | Optional | [Decision Option Contents](contents.schema.md#httpsnsadobecomexperiencedecisioningcontents) |
 | [https://ns.adobe.com/experience/decisioning/lifecycleStatus](#httpsnsadobecomexperiencedecisioninglifecyclestatus) | `enum` | Optional | [Decision Option Lifecycle Status](lifecycle-status.schema.md#httpsnsadobecomexperiencedecisioninglifecyclestatus) |
 | [https://ns.adobe.com/experience/decisioning/profileConstraints](#httpsnsadobecomexperiencedecisioningprofileconstraints) | Profile Constraint Details | Optional | [Decision Option Profile Constraints](profile-constraints.schema.md#httpsnsadobecomexperiencedecisioningprofileconstraints) |
@@ -33,17 +33,17 @@ Personalized decision options form the set of choices for any decision actvity. 
 | [https://ns.adobe.com/experience/decisioning/tags](#httpsnsadobecomexperiencedecisioningtags) | `string[]` | Optional | [Decisioning Option Tags](tags.schema.md#httpsnsadobecomexperiencedecisioningtags) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/calendarConstaints
+## https://ns.adobe.com/experience/decisioning/calendarConstraints
 ### Calendar Constraint Details
 
 Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.
 
-`https://ns.adobe.com/experience/decisioning/calendarConstaints`
+`https://ns.adobe.com/experience/decisioning/calendarConstraints`
 * is optional
 * type: Calendar Constraint Details
-* defined in [Decision Option Calendar Constraints](calendar-constraints.schema.md#httpsnsadobecomexperiencedecisioningcalendarconstaints)
+* defined in [Decision Option Calendar Constraints](calendar-constraints.schema.md#httpsnsadobecomexperiencedecisioningcalendarconstraints)
 
-### https://ns.adobe.com/experience/decisioning/calendarConstaints Type
+### https://ns.adobe.com/experience/decisioning/calendarConstraints Type
 
 
 * [Calendar Constraint Details](calendar-constraint-details.schema.md) – `https://ns.adobe.com/experience/decisioning/calendar-constraint-details`

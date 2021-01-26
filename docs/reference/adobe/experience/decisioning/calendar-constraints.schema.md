@@ -30,20 +30,20 @@ Calendar constraints decide if a decision option is valid given a date range. Ou
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/calendarConstaints](#httpsnsadobecomexperiencedecisioningcalendarconstaints) | Calendar Constraint Details | Optional | Decision Option Calendar Constraints (this schema) |
+| [https://ns.adobe.com/experience/decisioning/calendarConstraints](#httpsnsadobecomexperiencedecisioningcalendarconstraints) | Calendar Constraint Details | Optional | Decision Option Calendar Constraints (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/calendarConstaints
+## https://ns.adobe.com/experience/decisioning/calendarConstraints
 ### Calendar Constraint Details
 
 Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.
 
-`https://ns.adobe.com/experience/decisioning/calendarConstaints`
+`https://ns.adobe.com/experience/decisioning/calendarConstraints`
 * is optional
 * type: Calendar Constraint Details
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/calendarConstaints Type
+### https://ns.adobe.com/experience/decisioning/calendarConstraints Type
 
 
 * [Calendar Constraint Details](calendar-constraint-details.schema.md) – `https://ns.adobe.com/experience/decisioning/calendar-constraint-details`

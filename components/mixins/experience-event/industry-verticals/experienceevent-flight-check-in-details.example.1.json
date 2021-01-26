@@ -1,0 +1,22 @@
+{
+  "xdm:flightCheckIn": {
+    "xdm:checkedBags": 2,
+    "xdm:checkedPassengers": 3,
+    "xdm:checkInMethod": "kiosk",
+    "xdm:checkInProcess": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "flight check-in process",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter reservation number",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    }
+  }
+}

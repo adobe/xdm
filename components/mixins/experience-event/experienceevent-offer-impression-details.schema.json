@@ -46,7 +46,7 @@
               "title": "Offer Impression Details",
               "type": "array",
               "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
+                "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details"
               },
               "description": "An array of advertisements that have been displayed to a customer."
             },

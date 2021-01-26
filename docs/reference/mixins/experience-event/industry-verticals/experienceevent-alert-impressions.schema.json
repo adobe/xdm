@@ -60,6 +60,11 @@
     ],
     "meta:status": "experimental",
     "examples": [
-        {}
+        {
+            "xdm:alerts": {
+                "xdm:alertClicks": 4,
+                "xdm:alertDismissals": 2
+            }
+        }
     ]
 }

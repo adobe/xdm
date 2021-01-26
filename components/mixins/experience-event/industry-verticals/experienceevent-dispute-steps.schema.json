@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": ["financial_services"],
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Dispute steps such as start, save, failure, and complete.",
   "definitions": {
@@ -20,15 +22,10 @@
         "xdm:disputes": {
           "type": "object",
           "properties": {
-            "xdm:disputeSteps": {
-              "type": "object",
-              "properties": {
-                "xdm:dispute": {
-                  "title": "Dispute",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                  "description": "Extension of toolUsage data type."
-                }
-              }
+            "xdm:dispute": {
+              "title": "Dispute",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
             }
           }
         }

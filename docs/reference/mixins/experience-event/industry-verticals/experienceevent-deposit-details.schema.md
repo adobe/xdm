@@ -13,7 +13,32 @@ Deposit details such as ID, type, and amount.
 
 ## Deposit Details Example
 ```json
-{}
+{
+  "xdm:personalFinances": {
+    "xdm:deposit": {
+      "xdm:transaction": {
+        "xdm:balanceTransfer": "",
+        "xdm:formApplicationFee": "",
+        "xdm:toolUsageTransaction": "",
+        "xdm:transactionAmount": "67.85",
+        "xdm:transactionID": "T10291832",
+        "xdm:transactionDate": "2021-01-07",
+        "xdm:transactionType": "transfer"
+      }
+    },
+    "xdm:depositAccount": {
+      "xdm:financial-account": {
+        "xdm:balanceTransferAccount": "",
+        "xdm:currentAccountBalance": "678.93",
+        "xdm:financialAccountID": "1019283724",
+        "xdm:financialAccountName": "Personal Checking",
+        "xdm:financialAccountOwner": "TBD",
+        "xdm:financialAccountType": "checking",
+        "xdm:openedDate": "2021-02-17"
+      }
+    }
+  }
+}
 ```
 
 # Deposit Details Properties
@@ -39,40 +64,44 @@ Deposit details such as ID, type, and amount.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:depositDetails`| object | Optional |
+| `xdm:deposit`|  | Optional |
+| `xdm:depositAccount`|  | Optional |
 
 
 
-#### xdm:depositDetails
+#### xdm:deposit
+##### Deposit
 
-undefined
+Extension of transaction data type.
 
-`xdm:depositDetails`
+`xdm:deposit`
 * is optional
-* type: `object`
+* type: reference
 
-##### xdm:depositDetails Type
+##### xdm:deposit Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:deposit": {
-      "title": "Deposit",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-      "description": "Extension of transaction data type."
-    },
-    "xdm:depositAccount": {
-      "title": "Deposit Account",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Extension of financialAccount data type."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
+
+
+
+
+
+
+
+#### xdm:depositAccount
+##### Deposit Account
+
+Extension of financialAccount data type.
+
+`xdm:depositAccount`
+* is optional
+* type: reference
+
+##### xdm:depositAccount Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
 
 
 

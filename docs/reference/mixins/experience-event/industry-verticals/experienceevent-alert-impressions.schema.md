@@ -13,7 +13,12 @@ Alert information such as ad impressions and ad clicks.
 
 ## Alert Impressions Example
 ```json
-{}
+{
+  "xdm:alerts": {
+    "xdm:alertClicks": 4,
+    "xdm:alertDismissals": 2
+  }
+}
 ```
 
 # Alert Impressions Properties

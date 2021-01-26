@@ -18,7 +18,7 @@
                     "type": "string",
                     "format": "uri-reference",
                     "title": "Placement",
-                    "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
+                    "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement"
                 },
                 "xdm:components": {
                     "type": "array",

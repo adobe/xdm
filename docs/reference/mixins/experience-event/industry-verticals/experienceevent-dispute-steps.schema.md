@@ -13,7 +13,25 @@ Dispute steps such as start, save, failure, and complete.
 
 ## Dispute Steps Example
 ```json
-{}
+{
+  "xdm:disputes": {
+    "xdm:dispute": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "calculator",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    }
+  }
+}
 ```
 
 # Dispute Steps Properties
@@ -39,35 +57,23 @@ Dispute steps such as start, save, failure, and complete.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:disputeSteps`| object | Optional |
+| `xdm:dispute`|  | Optional |
 
 
 
-#### xdm:disputeSteps
+#### xdm:dispute
+##### Dispute
 
-undefined
+Extension of toolUsage data type.
 
-`xdm:disputeSteps`
+`xdm:dispute`
 * is optional
-* type: `object`
+* type: reference
 
-##### xdm:disputeSteps Type
+##### xdm:dispute Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:dispute": {
-      "title": "Dispute",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-      "description": "Extension of toolUsage data type."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
 
 
 

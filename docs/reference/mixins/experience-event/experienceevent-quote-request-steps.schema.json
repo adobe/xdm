@@ -1,0 +1,106 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-steps",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Quote Request Steps",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "automotive",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Includes all steps for receiving a quote",
+    "definitions": {
+        "quote-request-steps": {
+            "properties": {
+                "xdm:quoteRequestSteps": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:quoteDiscount": {
+                            "title": "Quote Discount",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Records the discount amount for a quote displayed to a visitor."
+                        },
+                        "xdm:quotePremium": {
+                            "title": "Quote Premium",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Records the premium amount for a quote displayed to a visitor."
+                        },
+                        "xdm:quoteRequestLocation": {
+                            "title": "Quote Request Location",
+                            "type": "string",
+                            "description": "Captures the postal code used for finding retailers near the visitor's location."
+                        },
+                        "xdm:quoteRequestPersonalDetails": {
+                            "title": "Quote Request Personal Details",
+                            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details",
+                            "description": "Extension of the Personal Profile data type."
+                        },
+                        "xdm:quoteRequestSelectedRetailer": {
+                            "title": "Selected Retailer",
+                            "type": "string",
+                            "description": "Captures the selected retailer for a quote request, if applicable. "
+                        },
+                        "xdm:quoteRequestSteps": {
+                            "title": "Quote Request Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/quote-request-steps"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:quoteRequestSteps": {
+                "xdm:quoteRequestLocation": "95110",
+                "xdm:quoteRequestPersonalDetails": {
+                    "xdm:person": {
+                        "xdm:name": {
+                            "xdm:firstName": "Jane",
+                            "xdm:middleName": "F",
+                            "xdm:lastName": "Doe",
+                            "xdm:fullName": "Jane F. Doe"
+                        },
+                        "xdm:birthDayAndMonth": "01-03",
+                        "xdm:gender": "female"
+                    }
+                },
+                "xdm:tool-usage": {
+                    "xdm:toolUsageCancelled": 1,
+                    "xdm:toolUsageComplete": 1,
+                    "xdm:toolUsageFailure": 1,
+                    "xdm:toolUsageID": "T421",
+                    "xdm:toolUsageName": "calculator",
+                    "xdm:toolUsageSaved": 1,
+                    "xdm:toolUsageStart": 1,
+                    "xdm:toolUsageStep": 1,
+                    "xdm:toolUsageStepName": "enter parameters",
+                    "xdm:toolUsageSubmitted": 1,
+                    "xdm:toolUsageType": "generic"
+                }
+            }
+        }
+    ]
+}

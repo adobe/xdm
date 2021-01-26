@@ -1,0 +1,38 @@
+{
+  "xdm:reservations": {
+    "xdm:reservationAncillaryRevenue": 39.0,
+    "xdm:reservationCreated": 1,
+    "xdm:reservationEndDate": "2021-06-30",
+    "xdm:reservationID": "B21FF2021DL",
+    "xdm:reservationLength": 12,
+    "xdm:reservationNonRefundableAmount": 79.0,
+    "xdm:reservationNumberOfAdults": 2,
+    "xdm:reservationNumberOfChildren": 4,
+    "xdm:reservationProcessSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "trip calculator",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    },
+    "xdm:reservationPurpose": "leisure",
+    "xdm:reservationRackRate": 179.0,
+    "xdm:reservationStartDate": "",
+    "xdm:reservationTransaction": {
+      "xdm:transactionAmount": "67.85",
+      "xdm:transactionID": "T10291832",
+      "xdm:transactionDate": "2021-01-07",
+      "xdm:transactionType": "transfer"
+    },
+    "xdm:reservationTripType": "personal",
+    "xdm:reservationType": "mobile"
+  }
+}

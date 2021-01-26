@@ -1,0 +1,118 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/vehicle-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Vehicle Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Details specific to a vehicle reservation.",
+  "definitions": {
+    "vehicle-details": {
+      "properties": {
+        "xdm:agentID": {
+          "title": "Agent ID",
+          "type": "string",
+          "description": "Agent ID associated with the vehicle booking."
+        },
+        "xdm:averageDailyPrice": {
+          "title": "Average Daily Price",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Average daily price of the vehicle."
+        },
+        "xdm:basePrice": {
+          "title": "Base Price",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Base price before any discounts are added. "
+        },
+        "xdm:couponCode": {
+          "title": "Coupon Code",
+          "type": "string",
+          "description": "Coupon code associated with the vehicle booking."
+        },
+        "xdm:currency": {
+          "title": "Currency",
+          "type": "enum",
+          "description": "Currency used to make the purchase."
+        },
+        "xdm:discountPercent": {
+          "title": "Discount Percent",
+          "type": "number",
+          "description": "Discount percentage associated with the booking."
+        },
+        "xdm:dropOffDate": {
+          "title": "Drop-off Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The drop-off date of the for the vehicle reservation."
+        },
+        "xdm:guestID": {
+          "title": "Guest ID",
+          "type": "string",
+          "description": "Guest ID associated with the vehicle booking."
+        },
+        "xdm:pickUpDate": {
+          "title": "Pick-up Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The pick-up date of the for the vehicle reservation."
+        },
+        "xdm:rentersAge": {
+          "title": "Renter's Age",
+          "type": "integer",
+          "description": "Age of the renter on the vehicle reservation."
+        },
+        "xdm:vehicleClass": {
+          "title": "Vehicle Class",
+          "type": "string",
+          "enum": [
+            "economy",
+            "compact",
+            "midsize",
+            "fullsize",
+            "standard",
+            "suv",
+            "premium",
+            "minivan"
+          ],
+          "description": "The class/category of vehicle being reserved."
+        },
+        "xdm:vehicleDropOffLocation": {
+          "title": "Drop-off Location",
+          "type": "string",
+          "description": "Drop-off location of the vehicle."
+        },
+        "xdm:vehicleDropOffLocationCode": {
+          "title": "Drop-off Location Code",
+          "type": "string",
+          "description": "The airport location code for the vehicle drop off. "
+        },
+        "xdm:vehiclePickUpLocation": {
+          "title": "Pick-up Location",
+          "type": "string",
+          "description": "Pick-up location of the vehicle."
+        },
+        "xdm:vehiclePickUpLocationCode": {
+          "title": "Pick-up Location Code",
+          "type": "string",
+          "description": "The airport location code for the vehicle pick up. "
+        },
+        "xdm:vehicleDifferentDropoffLocation": {
+          "title": "Different Drop-off Location",
+          "type": "boolean",
+          "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/vehicle-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,146 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-reservation-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Reservation Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Reservation details such as length, modification, refundable status, and number of rooms.",
+  "definitions": {
+    "reservation-details": {
+      "properties": {
+        "xdm:reservations": {
+          "type": "object",
+          "properties": {
+            "xdm:flightDetail": {
+              "title": "Flight Details",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/flightdetails"
+              },
+              "description": "Array of all flight details in a reservation"
+            },
+            "xdm:hotelDetail": {
+              "title": "Hotel Details",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/hoteldetails"
+              },
+              "description": "Array of all room bookings in a reservation"
+            },
+            "xdm:reservationAncillaryRevenue": {
+              "title": "Reservation Ancillary Revenue",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Protection and equipment revenue associated with a reservation."
+            },
+            "xdm:reservationCancellation": {
+              "title": "Reservation Cancellation",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Tracked when a reservation has been cancelled."
+            },
+            "xdm:reservationCreated": {
+              "title": "Reservation Created",
+              "$ref": "https://ns.adobe.com/xdm/data/measure",
+              "description": "Tracked when a reservation has been created."
+            },
+            "xdm:reservationEndDate": {
+              "title": "Reservation End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "The end drop-off/return/check-out date of the reservation."
+            },
+            "xdm:reservationID": {
+              "title": "Reservation ID",
+              "type": "string",
+              "description": "Tracks the reservation number/identifier."
+            },
+            "xdm:reservationLength": {
+              "title": "Reservation Length",
+              "type": "integer",
+              "description": "Tracks the number of days/nights  for a reservation."
+            },
+            "xdm:reservationModification": {
+              "title": "Reservation Modification",
+              "type": "integer",
+              "description": "Tracked when a reservation has been modified."
+            },
+            "xdm:reservationNonRefundableAmount": {
+              "title": "Reservation Non-Refundable Amount",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Amount of the reservation price that is marked as non-refundable."
+            },
+            "xdm:reservationNumberOfAdults": {
+              "title": "Reservation Number of Adults",
+              "type": "integer",
+              "description": "Captures the number of adults associated with the reservation."
+            },
+            "xdm:reservationNumberOfChildren": {
+              "title": "Reservation Number of Children",
+              "type": "integer",
+              "description": "Captures the number of children associated with the reservation."
+            },
+            "xdm:reservationProcessSteps": {
+              "title": "Reservation Process Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            },
+            "xdm:reservationPurpose": {
+              "title": "Reservation Purpose",
+              "type": "string",
+              "enum": ["business", "personal"],
+              "description": "Tracks the purpose of the reservation, typically either business or personal."
+            },
+            "xdm:reservationRackRate": {
+              "title": "Reservation Rack Rate",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Cost for the same day reservation without prior booking arrangements."
+            },
+            "xdm:reservationStartDate": {
+              "title": "Reservation Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "The start pick-up/outbound/check-in date of the reservation."
+            },
+            "xdm:reservationTransaction": {
+              "title": "Reservation Transaction",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "description": "Extension of transaction data type."
+            },
+            "xdm:reservationTripType": {
+              "title": "Reservation Trip Type",
+              "type": "string",
+              "enum": ["roundtrip", "one-way", "multi-city"],
+              "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+            },
+            "xdm:reservationType": {
+              "title": "Reservation Type",
+              "type": "string",
+              "description": "Records the type of reservation being placed."
+            },
+            "xdm:vehicleDetail": {
+              "title": "Vehicle Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/vehicledetails",
+              "description": "Array of all vehicle details in a reservation"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservation-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

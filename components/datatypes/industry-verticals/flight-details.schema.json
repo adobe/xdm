@@ -22,7 +22,12 @@
         "xdm:fareClass": {
           "title": "Fare Class",
           "type": "string",
-          "enum": ["first class", "business class", "economy"],
+          "enum": [
+            "first class",
+            "business class",
+            "premium economy",
+            "economy"
+          ],
           "description": "The fare class of the flight being reserved."
         },
         "xdm:flightDate": {

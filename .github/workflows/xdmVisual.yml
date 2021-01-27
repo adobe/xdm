@@ -14,9 +14,5 @@ jobs:
           ruby-version: '2.6'
       - run: bundle install
       - run: npm install -g grunt-cli
-      - run: git clone https://github.com/adobe/xdmVisualization.git
-      - run: cd xdmVisualization
-      - run: echo "test"
       - run: npm install
-      - run: ./scripts/xdmVisual4Git.sh master
 

@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6'
-      - run: gem update --system
+      - run: gem install
       - run: bundle install
       - run: npm install -g grunt-cli
       - run: npm install

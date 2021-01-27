@@ -1,0 +1,23 @@
+{
+  "xdm:warrantySteps": {
+    "xdm:warrantyID": "X881Y665",
+    "xdm:warrantyProductID": "Ap12plpro",
+    "xdm:warrantyLength": 24,
+    "xdm:warrantySteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "warranty registration",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "select device",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "self service"
+      }
+    },
+    "xdm:warrantyType": "damage protection"
+  }
+}

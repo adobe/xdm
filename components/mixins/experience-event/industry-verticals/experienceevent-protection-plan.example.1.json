@@ -1,0 +1,20 @@
+{
+  "xdm:protectionPlan": {
+    "xdm:protectionPlanSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "add protection plan",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "select device",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "self service"
+      }
+    },
+    "xdm:protectionPlanProductID": "Ap12plprotect"
+  }
+}

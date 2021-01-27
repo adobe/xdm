@@ -12,8 +12,4 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6'
-      - run: bundle init
-      - run: bundle install
-      - run: npm install -g grunt-cli
-      - run: npm install
       - run: ./bin/visualBuild.sh

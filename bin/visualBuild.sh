@@ -1,4 +1,4 @@
-echo "triggering visual build"
+echo "triggering visual build..."
 git clone https://jwen-adobe:c831bac94b7bd842c7a7fe7c5ab115db4635d888@github.com/adobe/xdmVisualization.git
 cd xdmVisualization
 git remote set-url origin https://jwen-adobe:c831bac94b7bd842c7a7fe7c5ab115db4635d888@github.com/adobe/xdmVisualization.git

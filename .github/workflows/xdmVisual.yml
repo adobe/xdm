@@ -16,4 +16,9 @@ jobs:
       - run: bundle install
       - run: npm install -g grunt-cli
       - run: npm install
+      - run: git clone https://github.com/adobe/xdmVisualization.git
+      - run: cd xdmVisualization
+      - run: pwd
+      - run: npm install
+      - run: ./scripts/xdmVisual4Git.sh master
 

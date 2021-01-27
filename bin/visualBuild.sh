@@ -1,7 +1,7 @@
 echo "triggering visual build..."
-git clone https://jwen-adobe:c831bac94b7bd842c7a7fe7c5ab115db4635d888@github.com/adobe/xdmVisualization.git
+git clone https://jwen-adobe:3e36f0ce62fc84de8553fe9410edcdfb59f000a8@github.com/adobe/xdmVisualization.git
 cd xdmVisualization
-#git remote set-url origin https://jwen-adobe:c831bac94b7bd842c7a7fe7c5ab115db4635d888@github.com/adobe/xdmVisualization.git
+git remote set-url origin https://jwen-adobe:3e36f0ce62fc84de8553fe9410edcdfb59f000a8@github.com/adobe/xdmVisualization.git
 echo "triggered" > triggeredBuild.log
 currentBranch=$(git status|grep "On branch"|cut -c11-100)
 echo $currentBranch

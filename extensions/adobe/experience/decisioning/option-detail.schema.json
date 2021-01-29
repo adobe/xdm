@@ -70,7 +70,10 @@
       "$ref": "#/definitions/option-detail-datatype"
     },
     {
-      "required": ["xdm:id"]
+      "required": [
+        "xdm:id"
+      ]
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

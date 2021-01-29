@@ -56,7 +56,10 @@
         "xdm:currency": {
           "title": "Account Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 billing currency code for the account."
         }
@@ -67,5 +70,6 @@
     {
       "$ref": "#/definitions/campaign"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

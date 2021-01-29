@@ -36,7 +36,10 @@
         "xdm:costCurrency": {
           "title": "Cost Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used to pay partner for in ad opportunity."
         },
@@ -67,5 +70,6 @@
     {
       "$ref": "#/definitions/inventory"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

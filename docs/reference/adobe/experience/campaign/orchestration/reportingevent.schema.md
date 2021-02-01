@@ -33,7 +33,7 @@ This schema (`reportingevent`) represents a data model for capturing events, act
 
 * User journey reporting event `https://ns.adobe.com/experience/campaign/orchestration/reportingevent`
   * [Data Source](../../../../datatypes/data/datasource.schema.md) `https://ns.adobe.com/xdm/data/datasource`
-  * [Organizational unit](../../../../datatypes/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Organizational unit](../../../../datatypes/b2b/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
   * [User journey reporting event metrics](reportingeventmetrics.schema.md) `https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics`
   * [Journey experience event](experienceevent.schema.md) `https://ns.adobe.com/experience/campaign/orchestration/experienceevent`
   * [external event received](reportingexternalevent.schema.md) `https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent`
@@ -402,7 +402,7 @@ The unit within the organization owning this journey version.
 ### xdm:orgUnit Type
 
 
-* [Organizational unit](../../../../datatypes/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
+* [Organizational unit](../../../../datatypes/b2b/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 

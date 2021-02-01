@@ -1,0 +1,308 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/consents-and-preferences",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Consent for Privacy, Personalization and Marketing Preferences",
+    "description": "This mixin captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "choice-value": {
+            "title": "Choice Value",
+            "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+            "type": "string",
+            "enum": [
+                "y",
+                "n",
+                "p",
+                "u",
+                "LI",
+                "CT",
+                "CP",
+                "VI",
+                "PI"
+            ],
+            "meta:enum": {
+                "y": "Yes (opt-in)",
+                "n": "No (opt-out)",
+                "p": "Pending verification",
+                "u": "Unknown",
+                "LI": "Legitimate Interest",
+                "CT": "Contract",
+                "CP": "Compliance with a Legal Obligation",
+                "VI": "Vital Interest of the Individual",
+                "PI": "Public Interest"
+            }
+        },
+        "timestamp": {
+            "title": "Preference timestamp",
+            "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+            "type": "string",
+            "format": "date-time"
+        },
+        "source": {
+            "title": "Preference Source",
+            "description": "Through which interface did the user provide this preference value",
+            "type": "string",
+            "maxLength": 15
+        },
+        "consent-fields": {
+            "type": "object",
+            "properties": {
+                "xdm:val": {
+                    "description": "The value specified by the user as their consent choice or the basis of processing that precludes the need for user consent",
+                    "$ref": "#/definitions/choice-value"
+                }
+            },
+            "required": [
+                "xdm:val"
+            ]
+        },
+        "personalization-fields": {
+            "type": "object",
+            "properties": {
+                "xdm:val": {
+                    "$ref": "#/definitions/choice-value"
+                }
+            },
+            "required": [
+                "xdm:val"
+            ]
+        },
+        "marketing-fields": {
+            "type": "object",
+            "properties": {
+                "xdm:val": {
+                    "$ref": "#/definitions/choice-value"
+                },
+                "xdm:time": {
+                    "$ref": "#/definitions/timestamp"
+                },
+                "xdm:reason": {
+                    "title": "Opt-out reason",
+                    "type": "string",
+                    "description": "Reason for opting out",
+                    "maxLength": 16
+                }
+            },
+            "required": [
+                "xdm:val"
+            ]
+        },
+        "choices": {
+            "properties": {
+                "xdm:collect": {
+                    "title": "Data Collection",
+                    "description": "Data collection is permitted",
+                    "$ref": "#/definitions/consent-fields"
+                },
+                "xdm:share": {
+                    "title": "Share Data",
+                    "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
+                    "$ref": "#/definitions/consent-fields"
+                },
+                "xdm:adID": {
+                    "title": "Use Advertiser ID",
+                    "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
+                    "$ref": "#/definitions/consent-fields"
+                },
+                "xdm:personalize": {
+                    "title": "Personalization Preferences",
+                    "description": "User's Personalization Preferences",
+                    "type": "object",
+                    "properties": {
+                        "xdm:content": {
+                            "title": "Personalize Content",
+                            "description": "Allow personalization of the content on my site or in my apps",
+                            "$ref": "#/definitions/personalization-fields"
+                        }
+                    }
+                },
+                "xdm:marketing": {
+                    "title": "Marketing Preferences",
+                    "description": "User's Direct Marketing Preferences",
+                    "type": "object",
+                    "properties": {
+                        "xdm:preferred": {
+                            "title": "Preferred Channel",
+                            "description": "User's preferred channel for receiving communications",
+                            "type": "string",
+                            "enum": [
+                                "email",
+                                "push",
+                                "inApp",
+                                "sms",
+                                "phone",
+                                "phyMail",
+                                "inVehicle",
+                                "inHome",
+                                "iot",
+                                "social",
+                                "other",
+                                "none",
+                                "unknown"
+                            ],
+                            "meta:enum": {
+                                "email": "email",
+                                "push": "Push Notifications",
+                                "inApp": "In-app Messages",
+                                "sms": "SMS (Text Messages)",
+                                "phone": "Phone Calls",
+                                "phyMail": "Physical Mail",
+                                "inVehicle": "In-vehicle Messages",
+                                "inHome": "In-home Messages",
+                                "iot": "IoT Messages",
+                                "social": "Social Media",
+                                "other": "Other",
+                                "none": "No Preferred Channel",
+                                "unknown": "Unknown"
+                            }
+                        },
+                        "xdm:any": {
+                            "title": "General Direct Marketing Preference",
+                            "description": "Does user permit any type of direct marketing",
+                            "$ref": "#/definitions/marketing-fields"
+                        },
+                        "xdm:email": {
+                            "title": "Receive email",
+                            "description": "User agrees to receive email",
+                            "$ref": "#/definitions/marketing-fields"
+                        },
+                        "xdm:push": {
+                            "title": "Receive push notifications",
+                            "description": "User permits receiving push notifications",
+                            "$ref": "#/definitions/marketing-fields"
+                        },
+                        "xdm:sms": {
+                            "title": "Receive SMS",
+                            "description": "User agrees to receive text messages",
+                            "$ref": "#/definitions/marketing-fields"
+                        }
+                    }
+                }
+            }
+        },
+        "metadata": {
+            "properties": {
+                "xdm:time": {
+                    "title": "Consent/Preferences timestamp",
+                    "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "consent-preferences": {
+            "properties": {
+                "xdm:consents": {
+                    "title": "Consents and Preferences",
+                    "description": "Specific Consent and Preference Options",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/choices"
+                        },
+                        {
+                            "properties": {
+                                "xdm:metadata": {
+                                    "title": "Consent and Preference Metadata",
+                                    "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+                                    "$ref": "#/definitions/metadata"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "profile-consents": {
+            "properties": {
+                "xdm:consents": {
+                    "title": "Consents and Preferences",
+                    "description": "Specific Consent and Preference Options",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/choices"
+                        },
+                        {
+                            "properties": {
+                                "xdm:idSpecific": {
+                                    "title": "Identifier specific",
+                                    "description": "Identifier specific consents and preferences",
+                                    "type": "object",
+                                    "meta:xdmType": "map",
+                                    "additionalProperties": {
+                                        "title": "Identifier Type",
+                                        "type": "object",
+                                        "meta:xdmType": "map",
+                                        "additionalProperties": {
+                                            "type": "object",
+                                            "title": "Identifier",
+                                            "$ref": "#/definitions/choices"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "properties": {
+                                "xdm:metadata": {
+                                    "title": "Consent and Preference Metadata",
+                                    "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+                                    "$ref": "#/definitions/metadata"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/consent-preferences"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:consents": {
+                "xdm:collect": {
+                    "xdm:val": "y"
+                },
+                "xdm:adID": {
+                    "xdm:val": "VI"
+                },
+                "xdm:share": {
+                    "xdm:val": "n"
+                },
+                "xdm:personalize": {
+                    "xdm:content": {
+                        "xdm:val": "y"
+                    }
+                },
+                "xdm:marketing": {
+                    "xdm:preferred": "email",
+                    "xdm:any": {
+                        "xdm:val": "y"
+                    },
+                    "xdm:email": {
+                        "xdm:val": "y"
+                    },
+                    "xdm:push": {
+                        "xdm:val": "n",
+                        "xdm:reason": "Too Frequent"
+                    }
+                },
+                "xdm:metadata": {
+                    "xdm:time": "2019-01-01T15:52:25+00:00"
+                }
+            }
+        }
+    ]
+}

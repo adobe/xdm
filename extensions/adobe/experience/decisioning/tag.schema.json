@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/tag",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Category Tag",
+  "description": "A keyword or term assigned to a decision option. Tags in this domain are reusable, searchable and identifiable keywords, i.e. their identity gets attached to other objects not simply the string that is used for human consumption. Therefore the same tag could have multiple, human readable representations. Tags can also be classified or arranged in an order that conveys additional semantics. This semantics is, however, not specified in this domain.",
+  "definitions": {
+    "tag-details": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "type": "string",
+          "title": "Tag Name",
+          "description": "The tag's external human-readable representation to the clients in the default language."
+        }
+      }
+    },
+    "tag-snapshot-identifier": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/tagID": {
+          "title": "Tag Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "A unique identifier for the tag."
+        },
+        "repo:etag": {
+          "title": "Tag ETag",
+          "type": "string",
+          "description": "The revision that the tag object was at when the snapshot was taken."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/tag-details"
+    }
+  ],
+  "meta:status": "stable"
+}

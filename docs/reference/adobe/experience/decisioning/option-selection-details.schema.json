@@ -1,0 +1,72 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/option-selection-details",
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Option Selection Details",
+    "description": "A component of a decision criteria that defines option applicability constraints that are independent of a profile. The option selection is either a (reusable) filter rule or a list that directly specifies the options. Usually the option is included or excluded based on tags or characteristics of the option. The filter must evaluate to true or false for any given option but independent of user profile. A simplified form of an option selection criteria is an explicit listing of the options without a separate filter query. Either an option list or an option filter rule can be specified.",
+    "definitions": {
+        "option-selection-details": {
+            "type": "object",
+            "properties": {
+                "xdm:description": {
+                    "type": "string",
+                    "title": "Description",
+                    "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match."
+                },
+                "xdm:optionSelectionType": {
+                    "type": "string",
+                    "title": "Profile Constraint Type",
+                    "enum": [
+                        "directList",
+                        "filter"
+                    ],
+                    "default": "none",
+                    "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships."
+                },
+                "xdm:options": {
+                    "type": "array",
+                    "title": "Option List",
+                    "description": "A list that directly specifies the options without evaluating a filter query. Either an option list or an option filter rule can be specified.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option."
+                    }
+                },
+                "xdm:filter": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "title": "Option Filter",
+                    "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter ."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/option-selection-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
+            "https://ns.adobe.com/experience/decisioning/optionSelectionType": "directList",
+            "https://ns.adobe.com/experience/decisioning/options": [
+                "xcore:offer:f6998eb62ed6f15"
+            ]
+        },
+        {
+            "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
+            "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
+            "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
+        }
+    ]
+}

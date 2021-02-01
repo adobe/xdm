@@ -1,0 +1,68 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/events/opportunityupdated",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Opportunity Updated",
+    "type": "object",
+    "meta:conditionalField": "xdm:eventType",
+    "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Use for information regarding opportunity event opportunity updated events.",
+    "definitions": {
+        "opportunityupdated": {
+            "properties": {
+                "xdm:opportunityEvent": {
+                    "title": "Opportunity Event",
+                    "type": "object",
+                    "properties": {
+                        "xdm:opportunityID": {
+                            "title": "Opportunity ID",
+                            "type": "string",
+                            "description": "Unique identifier for opportunity"
+                        },
+                        "xdm:dataValueChanges": {
+                            "title": "Data Value Changes",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:attributeName": {
+                                        "title": "Attribute Name",
+                                        "type": "string",
+                                        "description": "Name of the attribute"
+                                    },
+                                    "xdm:newValue": {
+                                        "title": "New Value",
+                                        "type": "string",
+                                        "description": "New value of the attribute"
+                                    },
+                                    "xdm:oldValue": {
+                                        "title": "Old Value",
+                                        "type": "string",
+                                        "description": "Old value of the attribute"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/opportunityupdated"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

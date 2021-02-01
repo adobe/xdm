@@ -50,16 +50,25 @@
         },
         "xdm:contentTypes": {
           "type": "array",
+          "items": {
+            "type": "string"
+          },
           "const": [],
           "description": "The content types that this channel can deliver."
         },
         "xdm:metricTypes": {
           "type": "array",
+          "items": {
+            "type": "string"
+          },
           "const": [],
           "description": "The metrics that can be collected in this channel."
         },
         "xdm:locationTypes": {
           "type": "array",
+          "items": {
+            "type": "string"
+          },
           "const": [],
           "description": "The types of locations (virtual places) that this channel consists of and can deliver content to."
         }

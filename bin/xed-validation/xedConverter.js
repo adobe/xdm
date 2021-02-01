@@ -35,10 +35,15 @@ class Converter extends EventEmitter {
   convert(refBase) {
 
     function shortenField(id) { //change $id $refkept uri value to shortened schema file location
-      if (id.indexOf(".com/experience") != -1) id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","") //more logic here needed to extract other domains in the future
+      if (id.indexOf(".com/experience") != -1 || id.indexOf(".com/b2b") != -1) {
+        //more logic here needed to extract other domains in the future
+        id = id.replace("https://ns.", "").replace("http://ns.", "").replace(".com","");
+      }
+
       return id.replace("https://ns.adobe.com/xdm/", "").replace("http://ns.adobe.com/xdm/", "")
                .replace("http://schema.org/", "external/schema/").replace("http://www.iptc.org/","external/iptc/")
-               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon").toLowerCase();
+               .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon")
+               .replace("https://ns.airship.com/", "").toLowerCase();
     };
 
 
@@ -280,12 +285,12 @@ class Converter extends EventEmitter {
       "https://ns.adobe.com/experience/": ""
     };
 
-
+    var err;
+    var errorLog = "xedError.log"
     var rawSchema = JSON.parse(fs.readFileSync(refBase).toString());
-
     var fullSchema = mergeAllOf(deref(rawSchema), { //deref and resolve allOf
         resolvers: {
-            "meta:extends" : function(values) {//resolving conflict
+          "meta:extends" : function(values) {//resolving conflict
               var extendsList = [];
               for (var i in values)
                 if (rawSchema["$id"] != values[i]) //not meta:extends itself
@@ -301,8 +306,8 @@ class Converter extends EventEmitter {
               }
             });
             return newEnum;
-          },
-            "meta:status" : function(values) {//do nothing for now when resolving conflict
+            },
+          "meta:status" : function(values) {//do nothing for now when resolving conflict
               var statusList = [];
               for (var i in values)
                       statusList = statusList.concat(values[i]);
@@ -310,7 +315,7 @@ class Converter extends EventEmitter {
                 //console.log("!!!This schema contains multiple meta:status after resolving allOf!!!")
               return Array.from(new Set(statusList));
             },
-            "meta:extensible" : function(values) {
+          "meta:extensible" : function(values) {
                 var extensibleList = [];
                 for (var i in values)
                     extensibleList = extensibleList.concat(values[i]);
@@ -318,14 +323,35 @@ class Converter extends EventEmitter {
                     //console.log("!!!This schema contains multiple meta:extensible after resolving allOf!!!")
                 return Array.from(new Set(extensibleList));
             },
-            "meta:abstract" : function(values) {
+          "meta:abstract" : function(values) {
                 var abstractList = [];
                 for (var i in values)
                     abstractList = abstractList.concat(values[i]);
                 if (abstractList.length >1 )
                     //console.log("!!!This schema contains multiple meta:abstract after resolving allOf!!!")
                 return Array.from(new Set(abstractList));
+            },
+          "type" : function(values) {
+            if (values.length > 1 ) {
+              err = "The schema " + rawSchema["$id"] + " contains field type conflicts after resolving allOf!\n"
+              fs.writeFileSync(errorLog, err, 'utf8')
+              throw(err)
             }
+          },
+          "format" : function(values) {
+            if (values.length > 1 ) {
+              err = "The schema " + rawSchema["$id"] + " contains field format conflicts after resolving allOf!\n"
+              fs.writeFileSync(errorLog, err, 'utf8')
+              throw(err)
+            }
+          },
+          defaultResolver: function(values) {
+            var valueList = [];
+            for (var i in values)
+              valueList = valueList.concat(values[i]);
+            if (valueList.length >1 )
+              return Array.from(new Set(valueList));
+          },
         }
     });
 

@@ -398,6 +398,7 @@ The primary event type for this time-series record.
 | `advertising.thirdQuartiles` | Advertising Third Quartiles |
 | `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
+| `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
 | `commerce.productListAdds` | Commerce Product List Adds |
 | `commerce.productListOpens` | Commerce Product List Opens |
@@ -412,6 +413,22 @@ The primary event type for this time-series record.
 | `message.tracking` | Message Tracking |
 | `pushTracking.applicationOpened` | Push Tracking Application Opened |
 | `pushTracking.customAction` | Push Tracking Custom Action |
+| `listOpearation.removeFromList` | List Operation Remove From List |
+| `listOperation.addToList` | List Operation Add To List |
+| `leadoperation.scoreChanged` | Lead Operation Score Changed |
+| `leadoperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
+| `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
+| `leadOperation.newLead` | Lead Operation New Lead |
+| `leadoperation.convertLead` | Lead Operation Convert Lead |
+| `directMarketing.emailBounced` | Direct Marketing Email Bounced |
+| `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
+| `directMarketing.emailDelivered` | Direct Marketing Email Delivered |
+| `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
+| `directMarketing.emailOpened` | Direct Marketing Email Opened |
+| `directMarketing.emailClicked` | Direct Marketing Email Clicked |
+| `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
+| `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
+| `opportunityevent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 
 
 

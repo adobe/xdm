@@ -1,0 +1,53 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Balance Transfers",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Used for financial account balance transfers between accounts.",
+    "definitions": {
+        "balance-transfers": {
+            "properties": {
+                "xdm:personalFinances": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:balanceTransfer": {
+                            "title": "Balance Transfer",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                            "description": "Extension of transaction data type."
+                        },
+                        "xdm:balanceTransferAccount": {
+                            "title": "Balance Transfer Account",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                            "description": "Extension of financialAccount data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/balance-transfers"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/comparisons",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Comparisons",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
+    "definitions": {
+        "comparisons": {
+            "properties": {
+                "xdm:comparisonAddition": {
+                    "title": "Comparison Addition",
+                    "type": "integer",
+                    "description": "Tracked when an item is added to a comparison."
+                },
+                "xdm:comparisonCount": {
+                    "title": "Comparison Count",
+                    "type": "integer",
+                    "description": "Count of the total number of items being compared."
+                },
+                "xdm:comparisonItems": {
+                    "title": "Comparison List Items",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "An array of all item IDs/SKUs in the list of products.  "
+                },
+                "xdm:comparisonRemoval": {
+                    "title": "Comparison Removal",
+                    "type": "integer",
+                    "description": "Tracked when an item is removed from a comparison."
+                },
+                "xdm:comparisonType": {
+                    "title": "Comparison Type",
+                    "type": "string",
+                    "description": "Type of comparison tool in use."
+                },
+                "xdm:comparisonView": {
+                    "title": "Comparison View",
+                    "type": "integer",
+                    "description": "Tracked when a comparison page is viewed."
+                },
+                "xdm:comparisonImpressions": {
+                    "title": "Comparison Impressions",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
+                    "description": "Extension of the impressions data type."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/comparisons"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

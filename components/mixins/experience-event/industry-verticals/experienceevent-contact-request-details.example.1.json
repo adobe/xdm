@@ -1,0 +1,26 @@
+{
+  "xdm:customerFeedback": {
+    "xdm:chatDeclined": 1,
+    "xdm:chatEnd": 1,
+    "xdm:chatOffered": 1,
+    "xdm:chatSessionID": "C0192910",
+    "xdm:chatStart": 1,
+    "xdm:clickToCall": 1,
+    "xdm:clickToDirectMessage": 1,
+    "xdm:clickToEmail": 1,
+    "xdm:clickToText": 1,
+    "xdm:subject": "Service Request",
+    "xdm:callBackNumber": {
+      "xdm:primary": true,
+      "xdm:number": "1-408-888-8888",
+      "xdm:status": "active"
+    },
+    "xdm:replyToEmailAddress": {
+      "xdm:primary": false,
+      "xdm:address": "jsmith@xyzinc.com",
+      "xdm:label": "John Smith",
+      "xdm:type": "work",
+      "xdm:status": "active"
+    }
+  }
+}

@@ -42,7 +42,7 @@ Marketo specific Opportunity properties.
 | [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmopportunitydescription) |
 | [xdm:opportunityName](#xdmopportunityname) | `string` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmopportunityname) |
 | [xdm:ownerID](#xdmownerid) | `string` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmownerid) |
-| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `integer` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmprobabilitypercentage) |
+| [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmprobabilitypercentage) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | `0` | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmquantity) |
 | [xdm:sourceType](#xdmsourcetype) | `string` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmsourcetype) |
 | [xdm:stage](#xdmstage) | `string` | Optional |  | [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmstage) |
@@ -489,13 +489,13 @@ Likelihood that opportunity will close, stated as a percentage.
 
 `xdm:probabilityPercentage`
 * is optional
-* type: `integer`
+* type: `number`
 * defined in [B2B Opportunity Additional Properties](../../../mixins/opportunity/opportunity-crm.schema.md#xdmprobabilitypercentage)
 
 ### xdm:probabilityPercentage Type
 
 
-`integer`
+`number`
 * minimum value: `0`
 * maximum value: `100`
 

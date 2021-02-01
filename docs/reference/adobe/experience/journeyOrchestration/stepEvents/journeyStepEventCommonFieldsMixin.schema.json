@@ -133,9 +133,9 @@
                             "description": "indicate the instance type, if it is batch or unitary.",
                             "type": "string"
                         },
-                        "https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex": {
-                            "title": "recurrenceIndex",
-                            "description": "Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).",
+                        "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": {
+                            "title": "batchRecurrenceIndex",
+                            "description": "Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).",
                             "type": "integer"
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary": {
@@ -216,6 +216,41 @@
                         "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": {
                             "title": "reactionInteractionType",
                             "description": "Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. ",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": {
+                            "title": "parentTransitionType",
+                            "description": "Type of the transition which has brought the instance to the processed step.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/nodeType": {
+                            "title": "nodeType",
+                            "description": "Type of the Journey Step Node being processed.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": {
+                            "title": "parentNodeID",
+                            "description": "Node ID of the parent of the current processed node in the instance.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": {
+                            "title": "parentNodeType",
+                            "description": "Node Type of the parent of the current processed node in the instance.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": {
+                            "title": "parentNodeName",
+                            "description": "Node Name of the parent of the current processed node in the instance.",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": {
+                            "title": "isExternalEvent",
+                            "description": "Whether the Event being processed, is an external event or not.",
+                            "type": "boolean"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/eventName": {
+                            "title": "eventName",
+                            "description": "Event Name in processing, for the step processing.",
                             "type": "string"
                         }
                     }

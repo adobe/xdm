@@ -1,0 +1,104 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/mobile-lifecycle-details-test",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Test Mobile Lifecycle Details",
+  "type": "object",
+  "description": "Application lifecycle information recorded via an ExperienceEvent that is specific to the Mobile channel. Includes field definitions for automatically collected data by the AEP Edge mobile extension library.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+  ],
+  "definitions": {
+    "mobile-lifecycle": {
+      "properties": {
+        "xdm:application": {
+          "type": "object",
+          "properties": {
+            "xdm:id": {
+              "title": "Application identifier",
+              "type": "string",
+              "description": "Identifier of the application."
+            },
+            "xdm:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Name of the application."
+            },
+            "xdm:version": {
+              "title": "Version",
+              "type": "string",
+              "description": "Version of the application."
+            },
+            "xdm:closeType": {
+              "type": "string",
+              "description": "The type of the close event. A value of 'close' indicates the application signaled the close event. A value of 'unknown' indicates the application was launched without previously signaling it closed.",
+              "enum": ["close", "unknown"],
+              "meta:enum": {
+                "close": "Close",
+                "unknown": "Unknown"
+              }
+            },
+            "xdm:installDate": {
+              "title": "Install Date",
+              "type": "string",
+              "description": "Date of first launch after installation. Format: full-date without time (according to RFC 3339, section 5.6)",
+              "format": "date"
+            },
+            "xdm:isClose": {
+              "title": "Is Close",
+              "type": "boolean",
+              "description": "Indicates whether or not this is an application close event."
+            },
+            "xdm:isInstall": {
+              "title": "Is Install",
+              "type": "boolean",
+              "description": "Indicates whether or not this is an application install event."
+            },
+            "xdm:isLaunch": {
+              "title": "Is Launch",
+              "type": "boolean",
+              "description": "Indicates whether or not this is an application launch event."
+            },
+            "xdm:isUpgrade": {
+              "title": "Is Upgrade",
+              "type": "boolean",
+              "description": "Indicates whether or not this is an application upgrade event."
+            },
+            "xdm:sessionLength": {
+              "title": "Session Length",
+              "type": "integer",
+              "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Session length is a positive value with no max bound (no max session length)"
+            },
+            "xdm:userPerspective": {
+              "type": "string",
+              "description": "The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.",
+              "enum": ["foreground", "background", "detached"],
+              "meta:enum": {
+                "foreground": "Foreground",
+                "background": "Background",
+                "detached": "Detached"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+    },
+    {
+      "$ref": "#/definitions/mobile-lifecycle"
+    }
+  ],
+  "meta:status": "experimental"
+}

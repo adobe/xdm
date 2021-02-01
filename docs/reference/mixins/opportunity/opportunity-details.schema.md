@@ -13,7 +13,7 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 ## Schema Hierarchy
 
 * XDM Business Opportunity Details `https://ns.adobe.com/xdm/mixins/opportunity-details`
-  * [Positive Currency](../../datatypes/positive-currency.schema.md) `https://ns.adobe.com/xdm/datatypes/positive-currency`
+  * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 ## XDM Business Opportunity Details Example
@@ -25,9 +25,10 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
+| [xdm:actualCloseDate](#xdmactualclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:closeDate](#xdmclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:expectedRevenue](#xdmexpectedrevenue) | Positive Currency | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:expectedCloseDate](#xdmexpectedclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:expectedRevenue](#xdmexpectedrevenue) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:fiscalQuarter](#xdmfiscalquarter) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:fiscalYear](#xdmfiscalyear) | `integer` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:forecastCategory](#xdmforecastcategory) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
@@ -37,11 +38,32 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:leadSource](#xdmleadsource) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:nextStep](#xdmnextstep) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:opportunityAmount](#xdmopportunityamount) | Positive Currency | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:opportunityAmount](#xdmopportunityamount) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityOwnerID](#xdmopportunityownerid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | XDM Business Opportunity Details (this schema) |
 | [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | XDM Business Opportunity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:actualCloseDate
+### Actual Close Date
+
+Actual date of closure for this opportunity.
+
+`xdm:actualCloseDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:actualCloseDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
 
 ## xdm:campaignID
 ### Campaign ID
@@ -63,21 +85,21 @@ Campaign unique identifer reference.
 
 
 
-## xdm:closeDate
-### Close Date
+## xdm:expectedCloseDate
+### Expected Close Date
 
-Date of closure for this opportunity.
+Expected date of closure for this opportunity.
 
-`xdm:closeDate`
+`xdm:expectedCloseDate`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:closeDate Type
+### xdm:expectedCloseDate Type
 
 
 `string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
@@ -91,13 +113,13 @@ Calculated revenue based on the Amount and Probability.
 
 `xdm:expectedRevenue`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:expectedRevenue Type
 
 
-* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -296,13 +318,13 @@ Estimated total sale amount.
 
 `xdm:opportunityAmount`
 * is optional
-* type: Positive Currency
+* type: Currency
 * defined in this schema
 
 ### xdm:opportunityAmount Type
 
 
-* [Positive Currency](../../datatypes/positive-currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/positive-currency`
+* [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 

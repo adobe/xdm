@@ -1,0 +1,84 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-card-application-process",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Card Application Process",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Card comparison details such as count, addition, removal, and view.",
+    "definitions": {
+        "card-application-process": {
+            "properties": {
+                "xdm:personalFinances": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:cardApplicationComparisons": {
+                            "title": "Card Comparisons",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                            "description": "Extension of comparison data type."
+                        },
+                        "xdm:cardApplicationSteps": {
+                            "title": "Card Application Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
+                            "description": "Extension of form application data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/card-application-process"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:personalFinances": {
+                "xdm:cardApplicationComparisons": {
+                    "xdm:comparisons": {
+                        "xdm:comparisonAddition": 1,
+                        "xdm:comparisonCount": 3,
+                        "xdm:comparisonItems": [
+                            "TF0021",
+                            "WCAT102340P11BN",
+                            "DEL45CCP"
+                        ],
+                        "xdm:comparisonRemoval": 1,
+                        "xdm:comparisonType": "product",
+                        "xdm:comparisonView": 1,
+                        "xdm:comparisonImpressions": ""
+                    }
+                },
+                "xdm:cardApplicationSteps": {
+                    "xdm:form-applications": {
+                        "xdm:formApplicationApproved": "",
+                        "xdm:formApplicationDeclined": "",
+                        "xdm:formApplicationID": "F102931032",
+                        "xdm:formApplicationRequestedAmount": "2000.00",
+                        "xdm:formApplicationStatus": "initiated",
+                        "xdm:formApplicationStatusUpdate": "",
+                        "xdm:formApplicationType": "loan",
+                        "xdm:formApplicationUnderReview": "",
+                        "xdm:formApplicationUsage": ""
+                    }
+                }
+            }
+        }
+    ]
+}

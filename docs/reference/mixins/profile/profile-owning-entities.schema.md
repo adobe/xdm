@@ -14,8 +14,8 @@ Geographical unit information such as labels, organization name, and geographica
 
 * Profile owning entity details `https://ns.adobe.com/xdm/context/profile-owning-entities`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Organizational unit](../../datatypes/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
-  * [Geographical unit](../../datatypes/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
+  * [Organizational unit](../../datatypes/b2b/orgunit.schema.md) `https://ns.adobe.com/xdm/common/orgunit`
+  * [Geographical unit](../../datatypes/demographic/geounit.schema.md) `https://ns.adobe.com/xdm/common/geounit`
 
 
 ## Profile owning entity details Example
@@ -51,7 +51,7 @@ The geographical unit within the organization owning the profile. This can be us
 ### xdm:geoUnit Type
 
 
-* [Geographical unit](../../datatypes/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
+* [Geographical unit](../../datatypes/demographic/geounit.schema.md) – `https://ns.adobe.com/xdm/common/geounit`
 
 
 
@@ -70,7 +70,7 @@ The unit within the organization owning the profile. This can be used to referen
 ### xdm:orgUnit Type
 
 
-* [Organizational unit](../../datatypes/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
+* [Organizational unit](../../datatypes/b2b/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit`
 
 
 

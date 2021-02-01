@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+	"industry": ["all"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Direct marketing events such as opens, clicks, impressions, and unsubscribes.",
   "definitions": {

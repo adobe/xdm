@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+	"industry": ["all"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Environment details such as device details, browser info, local time, and other geographical information.",
   "definitions": {
@@ -30,6 +33,11 @@
           "title": "Place context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
           "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours."
+        },
+		"xdm:platform": {
+          "title": "Product Review Platform",
+          "type": "string",
+          "description": "Tracks the platform used for the product review."
         }
       }
     }

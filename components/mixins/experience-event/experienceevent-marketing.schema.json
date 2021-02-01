@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+	"industry": ["all"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Marketing campaign information such as campaign group, name, and tracking code.",
   "definitions": {
@@ -20,6 +23,21 @@
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
           "description": "The information related to marketing activities that are active with the touchpoint."
+        },
+		"xdm:internalMarketing": {
+          "title": "Internal Marketing",
+          "$ref": "https://ns.adobe.com/xdm/context/marketing",
+          "description": "Internal Marketing data type that contains group, name, and code."
+        },
+		"xdm:productFindingMethod": {
+          "title": "Product Finding Method",
+          "type": "string",
+          "description": "How the user found a product immediately prior to viewing it. Allows a view of which finding methods were most effective for each product."
+        },
+		"xdm:trackingClick": {
+          "title": "Campaign Click-Through",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Count of the total number of click-throughs for that campaign."
         }
       }
     }

@@ -60,9 +60,7 @@
       "$ref": "#/definitions/activity-detail-datatype"
     },
     {
-      "required": [
-        "xdm:id"
-      ]
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "stable"

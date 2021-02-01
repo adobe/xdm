@@ -45,9 +45,7 @@
       "$ref": "#/definitions/placement-detail-datatype"
     },
     {
-      "required": [
-        "xdm:id"
-      ]
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "stable"

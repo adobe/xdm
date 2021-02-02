@@ -1,0 +1,89 @@
+{
+  "xdm:reservationDetails": {
+    "xdm:reservationCreated": 1,
+    "xdm:reservationEndDate": "2021-06-30T15:52:25+00:00",
+    "xdm:reservationID": "B21FF2021DL",
+    "xdm:reservationLength": 12,
+    "xdm:reservationNumberOfAdults": 2,
+    "xdm:reservationNumberOfChildren": 4,
+    "xdm:reservationPurpose": "personal",
+    "xdm:reservationStartDate": "2021-06-18T15:52:25+00:00",
+    "xdm:reservationTripType": "roundtrip",
+    "xdm:reservationType": "mobile",
+    "xdm:reservationProcessSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "trip calculator",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    },
+    "xdm:flightDetail": {
+      "xdm:destinationAirportCode": "SYD",
+      "xdm:fareClass": "first class",
+      "xdm:flightDate": "2004-09-22T15:52:25+00:00",
+      "xdm:flightNumber": "815",
+      "xdm:originAirportCode": "LAX"
+    },
+    "xdm:lodgingDetaili": {
+      "xdm:checkInDate": "2021-06-13T15:52:25+00:00",
+      "xdm:checkOutDate": "2021-06-20T15:52:25+00:00",
+      "xdm:numberOfRooms": 2,
+      "xdm:propertyID": "H1939T10921",
+      "xdm:propertyName": "Hollywood Tower Hotel",
+      "xdm:roomAccessibilityType": "n/a",
+      "xdm:roomType": "king"
+    },
+    "xdm:vehicleDetail": {
+      "xdm:agentID": "L4FA7J",
+      "xdm:couponCode": "10OFF",
+      "xdm:currency": "USD",
+      "xdm:discountPercent": 0.1,
+      "xdm:dropOffDate": "2021-06-30T15:52:25+00:00",
+      "xdm:guestID": "yk9mb71uj",
+      "xdm:pickUpDate": "2021-06-18T15:52:25+00:00",
+      "xdm:rentersAge": 25,
+      "xdm:vehicleClass": "standard",
+      "xdm:vehicleDropOffLocation": "Phoenix Sky Harbor Airport",
+      "xdm:vehicleDropOffLocationCode": "PHX",
+      "xdm:vehiclePickUpLocation": "Salt Lake City International Airport",
+      "xdm:vehiclePickUpLocationCode": "SLC",
+      "xdm:vehicleDifferentDropoffLocation": false
+    },
+    "xdm:reservationSearch": {
+      "xdm:couponCode": "10OFF",
+      "xdm:flexible": true,
+      "xdm:rateType": "aarp",
+      "xdm:reservationSearch": {
+        "xdm:internal-site-search": {
+          "xdm:numberOfResults": 258,
+          "xdm:refinementValue": "oceanfront",
+          "xdm:refinementType": ["Customer Reviews = 5"],
+          "xdm:refinementInstances": 1,
+          "xdm:resultsPageNumber": 2,
+          "xdm:resultsPerPage": 50,
+          "xdm:instances": 1,
+          "xdm:locationInPage": "top nav",
+          "xdm:nullInstances": 0,
+          "xdm:postalCode": "04871",
+          "xdm:radiusDistance": 25,
+          "xdm:radiusType": "miles",
+          "xdm:term": "acadia national park hotels",
+          "xdm:autocompleteClicked": true,
+          "xdm:autocompleteValue": "acadia national park hotels",
+          "xdm:autocompleteTypedValue": "acadia na",
+          "xdm:searchType": "standard",
+          "xdm:sortOrder": "ascending",
+          "xdm:sortType": "price: low to high"
+        }
+      }
+    }
+  }
+}

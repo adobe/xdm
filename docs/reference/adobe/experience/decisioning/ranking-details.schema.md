@@ -11,12 +11,22 @@ A ranking produces the order in which one option is selected over another. A fix
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/ranking-details.schema.json](adobe/experience/decisioning/ranking-details.schema.json) |
 
+## Ranking Details Example
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/priority": 3,
+  "https://ns.adobe.com/experience/decisioning/order": {
+    "https://ns.adobe.com/experience/decisioning/function": "xcore:ranking-function:b437a2403cf10e9"
+  }
+}
+```
+
 # Ranking Details Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:order](#xdmorder) | complex | Optional | Ranking Details (this schema) |
-| [xdm:priority](#xdmpriority) | `integer` | **Required** | Ranking Details (this schema) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [xdm:order](#xdmorder) | complex | Optional |  | Ranking Details (this schema) |
+| [xdm:priority](#xdmpriority) | `integer` | Optional | `0` | Ranking Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:order
@@ -65,8 +75,9 @@ Unknown type ``.
 The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.
 
 `xdm:priority`
-* is **required**
+* is optional
 * type: `integer`
+* default: `0`
 * defined in this schema
 
 ### xdm:priority Type

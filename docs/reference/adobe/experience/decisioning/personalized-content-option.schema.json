@@ -52,5 +52,37 @@
         }
     ],
     "meta:status": "stable",
-    "examples": []
+    "examples": [
+        {
+            "@id": "xcore:personalized-offer:e526a1503bf29e9",
+            "https://ns.adobe.com/experience/decisioning/name": "Personalized Offer 1",
+            "https://ns.adobe.com/experience/decisioning/status": "approved",
+            "https://ns.adobe.com/experience/decisioning/contents": [
+                {
+                    "https://ns.adobe.com/experience/decisioning/components": [
+                        {
+                            "https://ns.adobe.com/experience/decisioning/content": "You can always get what you want!",
+                            "@type": "https://ns.adobe.com/experience/offer-management/content-component-text",
+                            "dc:format": "text/template"
+                        }
+                    ],
+                    "https://ns.adobe.com/experience/decisioning/placement": "xcore:offer-placement:e51944a87919861"
+                }
+            ],
+            "https://ns.adobe.com/experience/decisioning/tags": [
+                "xcore:tag:e5196f1d9119862"
+            ],
+            "https://ns.adobe.com/experience/decisioning/calendarConstraints": {
+                "https://ns.adobe.com/experience/decisioning/startDate": "2018-03-13T05:59:18.914Z",
+                "https://ns.adobe.com/experience/decisioning/endDate": "2018-12-27T05:59:18.914Z"
+            },
+            "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+                "https://ns.adobe.com/experience/decisioning/profileConstraintType": "rules",
+                "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+            },
+            "https://ns.adobe.com/experience/decisioning/ranking": {
+                "https://ns.adobe.com/experience/decisioning/priority": 1
+            }
+        }
+    ]
 }

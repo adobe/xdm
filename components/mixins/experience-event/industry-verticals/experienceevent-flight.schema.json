@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-check-in-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Flight Check In Details",
   "type": "object",
@@ -17,9 +17,9 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Flight check in details such as passengers, bags, as well as start, save, failure and complete of check in.",
   "definitions": {
-    "flight-check-in-details": {
+    "flight": {
       "properties": {
-        "xdm:flightCheckIn": {
+        "xdm:checkIn": {
           "type": "object",
           "properties": {
             "xdm:checkedBags": {
@@ -44,14 +44,55 @@
               "description": "Extension of toolUsage data type."
             }
           }
+        },
+        "xdm:statusSearch": {
+          "type": "object",
+          "properties": {
+            "xdm:arrivalLocation": {
+              "title": "Arrival Location",
+              "type": "string",
+              "description": "Tracks the arrival city or airport code."
+            },
+            "xdm:date": {
+              "title": "Travel Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the flight departure date."
+            },
+            "xdm:departureLocation": {
+              "title": "Departure Location",
+              "type": "string",
+              "description": "Tracks the departure city or airport code."
+            },
+            "xdm:flightNumber": {
+              "title": "Flight Number",
+              "type": "string",
+              "description": "Tracks the flight number."
+            },
+            "xdm:flightStatusSearch": {
+              "title": "Flight Status Search",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+              "description": "Extension of internalSearch data type."
+            }
+          }
+        },
+        "xdm:seatMapProcess": {
+          "type": "object",
+          "properties": {
+            "xdm:seatMapProcess": {
+              "title": "Seat Map Process",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            }
+          }
         }
       }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/flight-check-in-details"
-    }
-  ],
-  "meta:status": "experimental"
+    },
+    "allOf": [
+      {
+        "$ref": "#/definitions/flight"
+      }
+    ],
+    "meta:status": "experimental"
+  }
 }

@@ -346,7 +346,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/reservation-details"
+      "$ref": "#/definitions/reservation"
     }
   ],
   "meta:status": "experimental"

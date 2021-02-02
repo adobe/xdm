@@ -17,7 +17,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Reservation details such as length, modification, refundable status, and number of guests.",
   "definitions": {
-    "reservations": {
+    "reservation": {
       "properties": {
         "xdm:reservationDetails": {
           "type": "object",

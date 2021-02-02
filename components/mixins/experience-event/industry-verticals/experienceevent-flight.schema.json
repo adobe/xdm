@@ -20,70 +20,61 @@
     "flight": {
       "properties": {
         "xdm:checkIn": {
-          "type": "object",
-          "properties": {
-            "xdm:checkedBags": {
-              "title": "Checked Bags",
-              "type": "integer",
-              "description": "Tracks the number of bags checked for a flight."
-            },
-            "xdm:checkedPassengers": {
-              "title": "Checked Passengers",
-              "type": "integer",
-              "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
-            },
-            "xdm:checkInMethod": {
-              "title": "Check In Method",
-              "type": "string",
-              "enum": ["counter", "mobile", "web", "kiosk"],
-              "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
-            },
-            "xdm:checkInProcess": {
-              "title": "Check In Process",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            }
+          "xdm:checkedBags": {
+            "title": "Checked Bags",
+            "type": "integer",
+            "description": "Tracks the number of bags checked for a flight."
+          },
+          "xdm:checkedPassengers": {
+            "title": "Checked Passengers",
+            "type": "integer",
+            "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
+          },
+          "xdm:checkInMethod": {
+            "title": "Check In Method",
+            "type": "string",
+            "enum": ["counter", "mobile", "web", "kiosk"],
+            "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
+          },
+          "xdm:checkInProcess": {
+            "title": "Check In Process",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+            "description": "Extension of toolUsage data type."
           }
         },
         "xdm:statusSearch": {
-          "type": "object",
-          "properties": {
-            "xdm:arrivalLocation": {
-              "title": "Arrival Location",
-              "type": "string",
-              "description": "Tracks the arrival city or airport code."
-            },
-            "xdm:date": {
-              "title": "Travel Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Tracks the flight departure date."
-            },
-            "xdm:departureLocation": {
-              "title": "Departure Location",
-              "type": "string",
-              "description": "Tracks the departure city or airport code."
-            },
-            "xdm:flightNumber": {
-              "title": "Flight Number",
-              "type": "string",
-              "description": "Tracks the flight number."
-            },
-            "xdm:flightStatusSearch": {
-              "title": "Flight Status Search",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
-              "description": "Extension of internalSearch data type."
-            }
+          "xdm:arrivalLocation": {
+            "title": "Arrival Location",
+            "type": "string",
+            "description": "Tracks the arrival city or airport code."
+          },
+          "xdm:date": {
+            "title": "Travel Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Tracks the flight departure date."
+          },
+          "xdm:departureLocation": {
+            "title": "Departure Location",
+            "type": "string",
+            "description": "Tracks the departure city or airport code."
+          },
+          "xdm:flightNumber": {
+            "title": "Flight Number",
+            "type": "string",
+            "description": "Tracks the flight number."
+          },
+          "xdm:flightStatusSearch": {
+            "title": "Flight Status Search",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+            "description": "Extension of internalSearch data type."
           }
         },
         "xdm:seatMapProcess": {
-          "type": "object",
-          "properties": {
-            "xdm:seatMapProcess": {
-              "title": "Seat Map Process",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            }
+          "xdm:seatMapProcess": {
+            "title": "Seat Map Process",
+            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+            "description": "Extension of toolUsage data type."
           }
         }
       }

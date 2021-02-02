@@ -25,14 +25,14 @@
         "xdm:toolUsageType": "generic"
       }
     },
-    "xdm:flightDetail": {
+    "xdm:flightDetail": [{
       "xdm:destinationAirportCode": "SYD",
       "xdm:fareClass": "first class",
       "xdm:flightDate": "2004-09-22T15:52:25+00:00",
       "xdm:flightNumber": "815",
       "xdm:originAirportCode": "LAX"
-    },
-    "xdm:lodgingDetaili": {
+    }],
+    "xdm:lodgingDetail": [{
       "xdm:checkInDate": "2021-06-13T15:52:25+00:00",
       "xdm:checkOutDate": "2021-06-20T15:52:25+00:00",
       "xdm:numberOfRooms": 2,
@@ -40,8 +40,8 @@
       "xdm:propertyName": "Hollywood Tower Hotel",
       "xdm:roomAccessibilityType": "n/a",
       "xdm:roomType": "king"
-    },
-    "xdm:vehicleDetail": {
+    }],
+    "xdm:vehicleDetail": [{
       "xdm:agentID": "L4FA7J",
       "xdm:couponCode": "10OFF",
       "xdm:currency": "USD",
@@ -56,7 +56,7 @@
       "xdm:vehiclePickUpLocation": "Salt Lake City International Airport",
       "xdm:vehiclePickUpLocationCode": "SLC",
       "xdm:vehicleDifferentDropoffLocation": false
-    },
+    }],
     "xdm:reservationSearch": {
       "xdm:couponCode": "10OFF",
       "xdm:flexible": true,

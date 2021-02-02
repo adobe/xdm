@@ -87,12 +87,12 @@
           }
         }
       }
-    },
-    "allOf": [
-      {
-        "$ref": "#/definitions/flight"
-      }
-    ],
-    "meta:status": "experimental"
-  }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/flight"
+    }
+  ],
+  "meta:status": "experimental"
 }

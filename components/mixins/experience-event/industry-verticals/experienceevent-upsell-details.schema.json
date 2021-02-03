@@ -12,7 +12,15 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "high_tech"
+    ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",

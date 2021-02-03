@@ -12,7 +12,16 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality", "telecom"]
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment"
+    ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",

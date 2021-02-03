@@ -55,6 +55,23 @@ describe("Loading of schemas", () => {
       });
     });
   });
+
+  extensions.forEach(schema => {
+    it("Loading " + schema, (done) => {
+      assert.doesNotThrow(() => {
+        fs.readFile(schema, 'utf8', function (err, data) {
+          if (err) throw err;
+          const mySchema = JSON.parse(data);
+          allSchemas[schema] = mySchema;
+          validator.addSchema(mySchema);
+
+          assert.equal(ajv.validate("https://ns.adobe.com/xdm/meta", mySchema), true, "Schema is not valid according to meta.schema.json: " + ajv.errorsText());
+
+          done();
+        });
+      });
+    });
+  });
 });
 
 describe("Validity of examples", () => {

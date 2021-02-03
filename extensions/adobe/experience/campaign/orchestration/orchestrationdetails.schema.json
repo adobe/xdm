@@ -25,8 +25,15 @@
       "title": "Action associated with a journey",
       "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
       "description": "Action that is executed for an entity when reached a step in in the journey state machine.",
-      "required": ["xdm:actionID"]
+      "required": [
+        "xdm:actionID"
+      ]
     }
   },
-  "required": ["xdm:journey", "xdm:journeyVersion", "xdm:action"]
+  "required": [
+    "xdm:journey",
+    "xdm:journeyVersion",
+    "xdm:action"
+  ],
+  "meta:status": "stable"
 }

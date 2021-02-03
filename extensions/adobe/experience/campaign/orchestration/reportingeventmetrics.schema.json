@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User journey reporting event metrics",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metrics"],
   "description": "For state transitions, we capture certain metrics along with the dimensions. This schema hold the metrics associated with reporting of state transition",
   "definitions": {
     "reportingeventmetrics": {

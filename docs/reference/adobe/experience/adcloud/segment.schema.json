@@ -36,6 +36,7 @@
             "$ref": "#/definitions/segment"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:attributablePartnerId": "13",

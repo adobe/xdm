@@ -9,7 +9,7 @@ XDM Product List Item extension properties specific to Adobe Analytics that impl
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/analytics/productlistitem.schema.json](adobe/experience/analytics/productlistitem.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/analytics/productlistitem.schema.json](adobe/experience/analytics/productlistitem.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Analytics extension to XDM Product List Item `https://ns.adobe.com/experience/analytics/productlistitem`

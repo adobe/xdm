@@ -9,7 +9,7 @@ Adobe Advertising Cloud segmentation traits.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/adcloudsegment.schema.json](adobe/experience/adcloud/adcloudsegment.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/adcloudsegment.schema.json](adobe/experience/adcloud/adcloudsegment.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Advertising Cloud Audience Segment Details `https://ns.adobe.com/experience/adcloud/adcloudsegment`

@@ -9,7 +9,7 @@ Adobe Advertising Cloud inventory traits.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/inventory.schema.json](adobe/experience/adcloud/inventory.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/inventory.schema.json](adobe/experience/adcloud/inventory.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Advertising Cloud Inventory `https://ns.adobe.com/experience/adcloud/inventory`

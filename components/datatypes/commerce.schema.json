@@ -11,10 +11,8 @@
   "type": "object",
   "meta:extensible": true,
   "meta:tags": {
-    "industry":[
-      "all"
-      ]
-    },
+    "industry":["all"]
+  },
   "description": "The records related to buying and selling activity.",
   "definitions": {
     "commerce": {

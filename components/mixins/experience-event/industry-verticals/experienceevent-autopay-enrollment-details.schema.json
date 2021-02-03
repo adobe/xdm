@@ -12,7 +12,15 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["telecom"]
+    "industry": [
+      "retail",
+      "financial_services",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "media_and_entertainment"
+    ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Autopay enrollment details such as autopay status, start, save, and failure.",

@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Product list item",
   "type": "object",
+  "meta:tags": {
+    "industry": ["all"]
+  },  
   "description": "The product list item represents a product selected by a customer with specific options, pricing, usage context for a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.",
   "definitions": {
     "productlistitem": {
@@ -56,6 +59,57 @@
           "title": "Price total",
           "type": "number",
           "description": "The total price for the product line item."
+        },
+        "xdm:itemsInProductList": {
+          "title": "Items in Product List",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "An array of all product IDs/SKUs in the list of products. Used outside of a shopping cart."
+        },
+        "xdm:productImpression": {
+          "title": "Product Impression",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Counted any time a product thumbnail or summary view has been displayed, aside from the product detail page itself or as an item in a cart."
+        },
+        "xdm:skuVariant": {
+          "title": "Product SKU Variant",
+          "type": "string",
+          "description": "Tracks if a product has alternate SKUs or IDs, such as different SKUs for color variants."
+        },
+        "xdm:brand": {
+          "title": "Product Brand",
+          "type": "string",
+          "description": "Tracks the brand of the individual product."
+        },
+        "xdm:inventory": {
+          "title": "Product Inventory Count",
+          "type": "integer",
+          "description": "Tracks the current inventory for the individual product."
+        },
+        "xdm:productType": {
+          "title": "Product Type",
+          "type": "string",
+          "description": "The total price for the product line item."
+        },
+        "xdm:listPrice": {
+          "title": "Product List Price",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Tracks the wholesale/list price for an individual product."
+        },
+        "xdm:taxAmount": {
+          "title": "Order Taxes",
+          "type": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Tracks the total amount of taxes applied to a successful order."
+        },
+        "xdm:thumbnailUrl": {
+          "title": "Product Thumbnail URL",
+          "type": "string",
+          "description": "Tracks the URL for the product thumbnail, when displayed."
+        },
+        "xdm:productListPosition": {
+          "title": "Product List Position",
+          "type": "integer",
+          "description": "Captures the position of the product item in a list of products."
         }
       },
       "required": ["xdm:SKU"]

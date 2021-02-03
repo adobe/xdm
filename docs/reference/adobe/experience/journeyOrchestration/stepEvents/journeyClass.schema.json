@@ -17,11 +17,16 @@
     ],
     "description": "A Record based Journey class for Journey orchestration contains common journey fields",
     "definitions": {
-        "properties": {}
+        "journeyClass": {
+            "properties": {}
+        }
     },
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/journeyClass"
         }
     ],
     "meta:status": "stable",

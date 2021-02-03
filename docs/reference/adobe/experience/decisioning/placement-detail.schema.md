@@ -9,7 +9,7 @@ Detail about the entity defining and controlling the decisioning process. Decisi
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/placement-detail.schema.json](adobe/experience/decisioning/placement-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/placement-detail.schema.json](adobe/experience/decisioning/placement-detail.schema.json) |
 
 # Decision Placement Detail Properties
 

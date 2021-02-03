@@ -9,7 +9,7 @@ Decision scope details capture properties that existed to narrow the scope of th
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/scope-details.schema.json](adobe/experience/decisioning/scope-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/scope-details.schema.json](adobe/experience/decisioning/scope-details.schema.json) |
 ## Schema Hierarchy
 
 * Decision Scope Details `https://ns.adobe.com/experience/decisioning/scope-details`

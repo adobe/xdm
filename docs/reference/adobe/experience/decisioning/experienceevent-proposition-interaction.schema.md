@@ -9,7 +9,7 @@ This mixin is used capture information regarding an interaction, response or rea
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json](adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json](adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json) |
 ## Schema Hierarchy
 
 * Experience Event - Proposition Interaction `https://ns.adobe.com/experience/decisioning/proposition-interaction`

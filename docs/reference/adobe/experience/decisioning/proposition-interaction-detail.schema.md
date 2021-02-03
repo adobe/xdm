@@ -9,7 +9,7 @@ A proposition interaction is used to link an experience event to a prior decisio
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-interaction-detail.schema.json](adobe/experience/decisioning/proposition-interaction-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-interaction-detail.schema.json](adobe/experience/decisioning/proposition-interaction-detail.schema.json) |
 ## Schema Hierarchy
 
 * Experience Event - Proposition Interaction Detail `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`

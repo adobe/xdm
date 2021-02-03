@@ -9,7 +9,7 @@ Decision proposition is used to capture the results of a decisioning process.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-details.schema.json](adobe/experience/decisioning/proposition-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-details.schema.json](adobe/experience/decisioning/proposition-details.schema.json) |
 ## Schema Hierarchy
 
 * Decision Event - Proposition Details `https://ns.adobe.com/experience/decisioning/proposition-details`

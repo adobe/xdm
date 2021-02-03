@@ -9,9 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Order",
   "type": "object",
-  "meta:tags": {
-    "industry": ["all"]
-  },
   "description": "The order placed for a product list.",
   "definitions": {
     "order": {

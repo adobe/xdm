@@ -11,9 +11,6 @@
   "type": "object",
   "description": "The information related to advertising activity in relationship to the experience event.",
   "meta:extensible": true,
-  "meta:tags": {
-    "industry": ["all"]
-  },
   "definitions": {
     "advertising": {
       "properties": {

@@ -26,11 +26,6 @@
           "title": "Decision Scope",
           "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
         },
-        "xdm:responseCode": {
-          "type": "string",
-          "title": "Decision Response Code",
-          "description": "A channel specific element or action that is mapped to a decision outcome. Within a channel, various elements are used to facilitate actions. Those elements range from buttons and links, mobile and web application actions taken, searches and questions in third party channels, but also include non-digital actions such as a visit to a store that can be captured digitally"
-        },
         "xdm:items": {
           "type": "array",
           "title": "Selected Options",
@@ -47,6 +42,7 @@
           "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition. (deprecated)"
         },
         "xdm:decisionEventDetails": {
+          "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
           "title": "Decision Event Details",
           "description": "A snapshot of properties from the decision event when it occured."
@@ -54,13 +50,13 @@
         "xdm:decisionScope": {
           "meta:status": "deprecated",
           "type": "string",
-          "title": "Decision Scope (deprecated)",
+          "title": "Decision Event Scope (deprecated)",
           "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details. (deprecated)"
         },
         "xdm:decisionScopeDetails": {
           "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
-          "title": "Decision Scope Details",
+          "title": "Decision Event Scope Details (deprecated)",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
         }
       }

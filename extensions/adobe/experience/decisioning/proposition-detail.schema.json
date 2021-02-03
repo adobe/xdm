@@ -15,26 +15,6 @@
   "definitions": {
     "proposition-detail-datatype": {
       "properties": {
-        "xdm:scope": {
-          "type": "string",
-          "title": "Decision Scope",
-          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
-        },
-        "xdm:items": {
-          "title": "Decision Options' Snapshot",
-          "description": "Snapshot of the options that were selected by this proposition. The objects contain at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "xdm:scopeDetails": {
-          "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
-          "title": "Decision Scope Snapshot",
-          "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
-        },
         "xdm:activity": {
           "meta:status": "deprecated",
           "title": "Decision Activity Snapshot (deprecated)",
@@ -81,5 +61,6 @@
     {
       "$ref": "#/definitions/proposition-detail-datatype"
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

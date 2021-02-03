@@ -12,8 +12,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent",
-    "https://ns.adobe.com/experience/decisioning/decisionevent"
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event. For a given decision request and profile identity the response of the request is a unique proposition. If a decision is requested again for the same profile and the output happens to be the same options, it is still considered a different proposition with a unique ID. Multiple scopes and item lists can be returned with the same proposition.",
   "definitions": {

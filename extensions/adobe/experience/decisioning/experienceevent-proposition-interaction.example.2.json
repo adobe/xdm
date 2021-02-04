@@ -9,21 +9,8 @@
           "xdm:id": "experience1"
         }
       ],
-      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionEventDetails": {
-        "xdm:experienceID": "experience1"
-      },
-      "xdm:decisionScope": "__view__",
-      "xdm:decisionScopeDetails": {
-        "xdm:id": "__view__",
-        "xdm:decisionProvider": "Target Premium",
-        "xdm:placement": {
-          "xdm:id": "mbox1"
-        },
-        "xdm:activity": {
-          "xdm:id": "actitivty1"
-        }
-      }
+      "xdm:id": "TNT:activity1:experience1:1597208433",
+      "xdm:scope": "__view__"
     },
     {
       "xdm:items": [
@@ -35,21 +22,8 @@
           }
         }
       ],
-      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionEventDetails": {
-        "xdm:experienceID": "8A0FBA334DA23A64AD9D748E58533857B6B5556AB28328DCCC04DAE6E9F35430"
-      },
-      "xdm:decisionScope": "scope:12cfc3fa94281acb",
-      "xdm:decisionScopeDetails": {
-        "xdm:id": "scope:12cfc3fa94281acb",
-        "xdm:decisionProvider": "AEP Decisioning",
-        "xdm:placement": {
-          "xdm:id": "offer-placement:1175009612b0100c"
-        },
-        "xdm:activity": {
-          "xdm:id": "offer-activity:11cfb1fa93381aca"
-        }
-      }
+      "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+      "xdm:scope": "scope:12cfc3fa94281acb"
     }
   ]
 }

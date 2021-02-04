@@ -21,31 +21,6 @@ This mixin is used capture information regarding an interaction, response or rea
 
 ```json
 {
-  "https://ns.adobe.com/experience/decisioning/propositions": [
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "experience1"
-        }
-      ],
-      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionScope": "__view__"
-    },
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "personalized-offer:f67bab756ed6ee4"
-        }
-      ],
-      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionScope": "scope:12cfc3fa94281acb"
-    }
-  ]
-}
-```
-
-```json
-{
   "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
   "xdm:timestamp": "2020-09-26T15:52:25+00:00",
   "xdm:eventType": "web.webinteraction.contentDisplay",
@@ -97,6 +72,31 @@ This mixin is used capture information regarding an interaction, response or rea
           "xdm:id": "offer-activity:11cfb1fa93381aca"
         }
       }
+    }
+  ]
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/propositions": [
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "experience1"
+        }
+      ],
+      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
+      "xdm:decisionScope": "__view__"
+    },
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "personalized-offer:f67bab756ed6ee4"
+        }
+      ],
+      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+      "xdm:decisionScope": "scope:12cfc3fa94281acb"
     }
   ]
 }

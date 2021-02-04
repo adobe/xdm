@@ -1,0 +1,26 @@
+{
+  "xdm:agentID": "",
+  "xdm:averageDailyPrice": {
+    "xdm:amount": 245.0,
+    "xdm:currencyCode": "USD"
+  },
+  "xdm:basePrice": {
+    "xdm:amount": 1275.0,
+    "xdm:currencyCode": "USD"
+  },
+  "xdm:bookingID": "B818172112",
+  "xdm:checkInDate": "2021-06-13T15:52:25+00:00",
+  "xdm:checkOutDate": "2021-06-20T15:52:25+00:00",
+  "xdm:couponCode": "10OFF",
+  "xdm:discountPercent": 0.1,
+  "xdm:freeCancelation": true,
+  "xdm:guestID": "U81665311",
+  "xdm:numberOfRooms": 2,
+  "xdm:propertyID": "H1939T10921",
+  "xdm:propertyName": "Hollywood Tower Hotel",
+  "xdm:ratePlan": "Standard",
+  "xdm:refundable": true,
+  "xdm:roomAccessibilityType": "n/a",
+  "xdm:roomType": "king",
+  "xdm:smoking": false
+}

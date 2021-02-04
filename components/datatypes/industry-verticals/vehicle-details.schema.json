@@ -1,0 +1,152 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/industry-verticals/vehicle-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Vehicle Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Collects all details specific to a vehicle reservation.",
+  "definitions": {
+    "vehicle-details": {
+      "properties": {
+        "xdm:agentID": {
+          "title": "Agent ID",
+          "type": "string",
+          "description": "Agent ID associated with the vehicle booking."
+        },
+        "xdm:averageDailyPrice": {
+          "title": "Average Daily Price",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Average daily price of the vehicle."
+        },
+        "xdm:basePrice": {
+          "title": "Base Price",
+          "type": "string",
+          "description": "Base price before any discounts are added. "
+        },
+        "xdm:couponCode": {
+          "title": "Coupon Code",
+          "type": "string",
+          "description": "Coupon code associated with the vehicle booking."
+        },
+        "xdm:discountPercent": {
+          "title": "Discount Percent",
+          "type": "number",
+          "description": "Discount percentage associated with the booking."
+        },
+        "xdm:dropOffDate": {
+          "title": "Drop-off Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The drop-off date of the for the vehicle reservation."
+        },
+        "xdm:dropOffTime": {
+          "title": "Drop-off Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The drop-off hour of day of the for the vehicle reservation."
+        },
+        "xdm:freeCancelation": {
+          "title": "Free Cancelation",
+          "type": "boolean",
+          "description": "Yes/no if the car booking has a free cancellation."
+        },
+        "xdm:guestID": {
+          "title": "Guest ID",
+          "type": "string",
+          "description": "Guest ID associated with the vehicle booking."
+        },
+        "xdm:payLaterEigible": {
+          "title": "Pay Later Eligible",
+          "type": "boolean",
+          "description": "Yes/no if the booking is eligible to be paid later."
+        },
+        "xdm:pickUpDate": {
+          "title": "Pick-up Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The pick-up date of the for the vehicle reservation."
+        },
+        "xdm:pickUpTime": {
+          "title": "Pick-up Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The pick-up hour of day of the for the vehicle reservation."
+        },
+        "xdm:prePaid": {
+          "title": "Prepaid",
+          "type": "boolean",
+          "description": "Yes/no if the booking is pre-paid"
+        },
+        "xdm:productID": {
+          "title": "Product ID",
+          "type": "string",
+          "description": "The product ID associated with the booking. "
+        },
+        "xdm:refundable": {
+          "title": "Refundable",
+          "type": "boolean",
+          "description": "Yes/no if the car booking is refundable."
+        },
+        "xdm:rentersAge": {
+          "title": "Renter's Age",
+          "type": "integer",
+          "description": "Age of the renter on the vehicle reservation."
+        },
+        "xdm:vehicleClass": {
+          "title": "Vehicle Class",
+          "type": "string",
+          "enum": [
+            "economy",
+            "compact",
+            "midsize",
+            "fullsize",
+            "standard",
+            "suv",
+            "premium",
+            "minivan"
+          ],
+          "description": "The class/category of vehicle being reserved."
+        },
+        "xdm:vehicleDifferentDropoffLocation": {
+          "title": "Different Drop-off Location",
+          "type": "boolean",
+          "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location."
+        },
+        "xdm:vehicleDropOffLocation": {
+          "title": "Drop-off Location",
+          "type": "string",
+          "description": "Drop-off location of the vehicle."
+        },
+        "xdm:vehicleDropOffLocationCode": {
+          "title": "Drop-off Location Code",
+          "type": "string",
+          "description": "The airport location code for the vehicle drop off.",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "xdm:vehiclePickUpLocation": {
+          "title": "Pick-up Location",
+          "type": "string",
+          "description": "Pick-up location of the vehicle."
+        },
+        "xdm:vehiclePickUpLocationCode": {
+          "title": "Pick-up Location Code",
+          "type": "string",
+          "description": "The airport location code for the vehicle pick up. ",
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/vehicle-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

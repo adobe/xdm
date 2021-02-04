@@ -1,0 +1,28 @@
+{
+  "xdm:agentID": "",
+  "xdm:averageDailyPrice": {
+    "xdm:amount": 51.25,
+    "xdm:currencyCode": "USD"
+  },
+  "xdm:basePrice": {
+    "xdm:amount": 405.0,
+    "xdm:currencyCode": "USD"
+  },
+  "xdm:couponCode": "10OFF",
+  "xdm:discountPercent": 0.1,
+  "xdm:dropOffDate": "2021-06-18T15:52:25+00:00",
+  "xdm:freeCancelation": true,
+  "xdm:guestID": "U7716212",
+  "xdm:payLaterEligible": true,
+  "xdm:dropOffDate": "2021-06-11T15:52:25+00:00",
+  "xdm:prePaid": false,
+  "xdm:productID": "FM2019AF4L4GX",
+  "xdm:refundable": true,
+  "xdm:rentersAge": 33,
+  "xdm:vehicleClass": "standard",
+  "xdm:vehicleDifferentDropoffLocation": false,
+  "xdm:vehicleDropOffLocation": "Phoenix Sky Harbor Airport",
+  "xdm:vehicleDropOffLocationCode": "PHX",
+  "xdm:vehiclePickUpLocation": "Phoenix Sky Harbor Airport",
+  "xdm:vehiclePickUpLocationCode": "PHX"
+}

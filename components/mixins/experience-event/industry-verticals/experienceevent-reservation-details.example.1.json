@@ -1,0 +1,59 @@
+{
+  "xdm:reservations": {
+    "xdm:ancillaryRevenue": {
+      "xdm:amount": 27.85,
+      "xdm:currencyCode": "USD"
+    },
+    "xdm:cancellation": 0,
+    "xdm:created": "2021-02-13T15:52:25+00:00",
+    "xdm:currencyCode": "USD",
+    "xdm:endDate": "2021-06-18T15:52:25+00:00",
+    "xdm:ID": "FR12199797",
+    "xdm:itemComparison": {
+      "xdm:comparisonAddition": 1,
+      "xdm:comparisonCount": 3,
+      "xdm:comparisonItems": ["TF0021", "WCAT102340P11BN", "DEL45CCP"],
+      "xdm:comparisonRemoval": 1,
+      "xdm:comparisonType": "product",
+      "xdm:comparisonView": 1,
+      "xdm:comparisonImpressions": ""
+    },
+    "xdm:length": 8,
+    "xdm:modification": 1,
+    "xdm:nonRefundableAmount": {
+      "xdm:amount": 378.58,
+      "xdm:currencyCode": "USD"
+    },
+    "xdm:numberOfAdults": 3,
+    "xdm:numberOfChildren": 3,
+    "xdm:processSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "trip calculator",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    },
+    "xdm:purpose": "personal",
+    "xdm:startDate": "2021-06-10T15:52:25+00:00",
+    "xdm:transaction": {
+      "xdm:transaction": {
+        "xdm:transactionDate": "2021-02-07",
+        "xdm:transactionAmount": {
+          "xdm:amount": 378.58,
+          "xdm:currencyCode": "USD"
+        },
+        "xdm:transactionID": "T10291832",
+        "xdm:transactionType": "deposit"
+      }
+    },
+    "xdm:triptype": "roundtrip"
+  }
+}

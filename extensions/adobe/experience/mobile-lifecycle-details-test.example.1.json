@@ -1,0 +1,28 @@
+{
+  "xdm:application": {
+    "xdm:id": "A123",
+    "xdm:name": "Myapp",
+    "xdm:version": "1.0.1",
+    "xdm:isLaunch": true,
+    "xdm:isInstall": true,
+    "xdm:installDate": "2020-10-21"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:device": {
+    "xdm:typeID": "TypeIdentifier-111",
+    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/deviceatlas",
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6",
+    "xdm:modelNumber": "A1586",
+    "xdm:screenHeight": 667,
+    "xdm:screenWidth": 375,
+    "xdm:colorDepth": 16777216,
+    "xdm:screenOrientation": "portrait"
+  }
+}

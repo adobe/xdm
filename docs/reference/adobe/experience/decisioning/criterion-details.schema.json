@@ -1,0 +1,63 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/criterion-details",
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Decision Criterion Details",
+    "description": "Decisioning criteria specify one or more constraints that evaluate to lists of \"top N best\" options in the context of a decision activity. Those options satisfy all constraints for a given placement and are ordered by some function.",
+    "definitions": {
+        "criterion-details": {
+            "properties": {
+                "xdm:description": {
+                    "type": "string",
+                    "title": "Description",
+                    "description": "Criterion description. It is used to convey human readable intentions on how or why this criterion was constructed and how it is affecting the decision."
+                },
+                "xdm:placements": {
+                    "type": "array",
+                    "title": "Placement Restrictions",
+                    "description": "The placement constraint states that this criterion is only applicable for the listed placements. Only when the targeted placement is in the `xdm:placements` list is the option selection considered. Otherwise the entire decision criteria is skipped. When the 'xdm:placements' list is omitted or empty, the criterion is considered for any targeted placement. The placements listed here impose implicit criteria for the option selection. An option to be considered must have a representation for the targeted placement.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "title": "Placement Identifier",
+                        "description": "A reference to a placement entity. The value is the URI (@id) of the placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement"
+                    },
+                    "minItems": 1
+                },
+                "xdm:optionSelection": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/option-selection-details",
+                    "title": "Option Selection",
+                    "description": "The option selection defines the validity/applicability of options in this context."
+                },
+                "xdm:profileConstraints": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
+                    "title": "Profile Constraint",
+                    "description": "The profile constraint decides if an option selection is eligible for this profile identity at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection."
+                },
+                "xdm:ranking": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/ranking-details",
+                    "title": "Ranking Details",
+                    "description": "Rank (priority). Defines how the \"best option\" is determined given the context of the decision criterion. Among all the selected options that meet the profile constraints, the ranking will decide the top (or top N) option(s) to be proposed."
+                }
+            },
+            "required": [
+                "xdm:placements",
+                "xdm:optionSelection"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/criterion-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": []
+}

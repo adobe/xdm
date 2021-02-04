@@ -18,129 +18,109 @@
     "definitions": {
         "b2b-person-segment-traits": {
             "properties": {
-                "xdm:personType": {
-                    "title": "Person Type",
-                    "description": "Type of the B2B person.",
-                    "type": "string"
-                },
-                "xdm:personStatus": {
-                    "title": "Person Status",
-                    "description": "Field recording the current marketing/sales status of the Person.",
-                    "type": "string"
-                },
-                "xdm:personSource": {
-                    "title": "Person Source",
-                    "description": "Source from where the information regarding the person was received.",
-                    "type": "string"
-                },
-                "xdm:personScore": {
-                    "title": "Person Score",
-                    "description": "A Score generated for a person by the CRM system.",
-                    "type": "number"
-                },
-                "xdm:personGroupID": {
-                    "title": "Person Group ID",
-                    "description": "Group identifier for the person.",
-                    "type": "string"
-                },
-                "xdm:leadOrganization": {
-                    "title": "Lead Organization Properties",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-                },
-                "xdm:anonymousHostname": {
-                    "title": "Anonymous Hostname",
-                    "description": "Anonymous hostname.",
-                    "type": "string"
-                },
-                "xdm:inferredAddress": {
-                    "title": "Inferred Address",
-                    "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
-                },
-                "xdm:inferredCompany": {
-                    "title": "Inferred Company",
-                    "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-                    "type": "string"
-                },
-                "xdm:inferredCompanyStatus": {
-                    "title": "Inferred Company Status",
-                    "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-                    "type": "string"
-                },
-                "xdm:inferredMetropolitanArea": {
-                    "title": "Inferred Metropolitan Area",
-                    "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-                    "type": "string"
-                },
-                "xdm:inferredPhoneAreaCode": {
-                    "title": "Inferred Phone Area Code",
-                    "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-                    "type": "string"
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:personType": {
+                            "title": "Person Type",
+                            "description": "Type of the B2B person.",
+                            "type": "string"
+                        },
+                        "xdm:personStatus": {
+                            "title": "Person Status",
+                            "description": "Field recording the current marketing/sales status of the Person.",
+                            "type": "string"
+                        },
+                        "xdm:personSource": {
+                            "title": "Person Source",
+                            "description": "Source from where the information regarding the person was received.",
+                            "type": "string"
+                        },
+                        "xdm:personScore": {
+                            "title": "Person Score",
+                            "description": "A Score generated for a person by the CRM system.",
+                            "type": "number"
+                        },
+                        "xdm:personGroupID": {
+                            "title": "Person Group ID",
+                            "description": "Group identifier for the person.",
+                            "type": "string"
+                        },
+                        "xdm:leadOrganization": {
+                            "title": "Lead Organization Properties",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+                        }
+                    }
                 }
             }
         },
         "b2b-person-details": {
             "properties": {
-                "xdm:accountID": {
-                    "title": "Contact Account id",
-                    "description": "ID of the account that’s the parent of this person.",
-                    "type": "string"
-                },
-                "xdm:personOwnerID": {
-                    "title": "Person Owner ID",
-                    "description": "Person owner id.",
-                    "type": "string"
-                },
-                "xdm:isBlocked": {
-                    "title": "Blocked Indicator",
-                    "description": "Indicator if the person is blocked or not.",
-                    "type": "boolean"
-                },
-                "xdm:blockedCause": {
-                    "title": "Blocked Cause",
-                    "description": "Reason why the person is blocked.",
-                    "type": "string"
-                },
-                "xdm:isMarketingSuspended": {
-                    "title": "Marketing Suspended Indicator",
-                    "description": "Marketing suspended flag.",
-                    "type": "boolean"
-                },
-                "xdm:marketingSuspendedCause": {
-                    "title": "Marketing Suspended Cause",
-                    "description": "Reason why the person is suspended for any marketing purposes.",
-                    "type": "string"
-                },
-                "xdm:isConverted": {
-                    "title": "Converted Indicator",
-                    "description": "Indicates whether the Lead was successfully converted or not.",
-                    "type": "boolean"
-                },
-                "xdm:convertedDate": {
-                    "title": "Converted Date",
-                    "description": "Date of conversion if the lead was successfully converted.",
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "xdm:convertedAccountID": {
-                    "title": "Converted Account ID",
-                    "description": "Account Id if the lead was successfully converted.",
-                    "type": "string"
-                },
-                "xdm:convertedContactID": {
-                    "title": "Converted Contact ID",
-                    "description": "Contact Id if the lead was successfully converted.",
-                    "type": "string"
-                },
-                "xdm:convertedOpportunityID": {
-                    "title": "Converted Opportunity ID",
-                    "description": "Opportunity Id if the lead was successfully converted.",
-                    "type": "string"
-                },
-                "xdm:personOptInOut": {
-                    "title": "Person Preferences",
-                    "description": "Holds opt out values for different channels as selected by the person.",
-                    "$ref": "https://ns.adobe.com/xdm/context/optinout"
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:accountID": {
+                            "title": "Contact Account id",
+                            "description": "ID of the account that’s the parent of this person.",
+                            "type": "string"
+                        },
+                        "xdm:personOwnerID": {
+                            "title": "Person Owner ID",
+                            "description": "Person owner id.",
+                            "type": "string"
+                        },
+                        "xdm:isBlocked": {
+                            "title": "Blocked Indicator",
+                            "description": "Indicator if the person is blocked or not.",
+                            "type": "boolean"
+                        },
+                        "xdm:blockedCause": {
+                            "title": "Blocked Cause",
+                            "description": "Reason why the person is blocked.",
+                            "type": "string"
+                        },
+                        "xdm:isMarketingSuspended": {
+                            "title": "Marketing Suspended Indicator",
+                            "description": "Marketing suspended flag.",
+                            "type": "boolean"
+                        },
+                        "xdm:marketingSuspendedCause": {
+                            "title": "Marketing Suspended Cause",
+                            "description": "Reason why the person is suspended for any marketing purposes.",
+                            "type": "string"
+                        },
+                        "xdm:isConverted": {
+                            "title": "Converted Indicator",
+                            "description": "Indicates whether the Lead was successfully converted or not.",
+                            "type": "boolean"
+                        },
+                        "xdm:convertedDate": {
+                            "title": "Converted Date",
+                            "description": "Date of conversion if the lead was successfully converted.",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "xdm:convertedAccountID": {
+                            "title": "Converted Account ID",
+                            "description": "Account Id if the lead was successfully converted.",
+                            "type": "string"
+                        },
+                        "xdm:convertedContactID": {
+                            "title": "Converted Contact ID",
+                            "description": "Contact Id if the lead was successfully converted.",
+                            "type": "string"
+                        },
+                        "xdm:convertedOpportunityID": {
+                            "title": "Converted Opportunity ID",
+                            "description": "Opportunity Id if the lead was successfully converted.",
+                            "type": "string"
+                        },
+                        "xdm:personOptInOut": {
+                            "title": "Person Preferences",
+                            "description": "Holds opt out values for different channels as selected by the person.",
+                            "$ref": "https://ns.adobe.com/xdm/context/optinout"
+                        }
+                    }
                 }
             }
         }
@@ -169,6 +149,9 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/profile-inferred-person"
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"

@@ -9,7 +9,7 @@ Campaign offer detail is used to capture the attributes of a Campaign offer in a
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/campaign/offer-detail.schema.json](adobe/experience/campaign/offer-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/campaign/offer-detail.schema.json](adobe/experience/campaign/offer-detail.schema.json) |
 ## Schema Hierarchy
 
 * Campaign Offer Detail `https://ns.adobe.com/experience/campaign/offer-detail`

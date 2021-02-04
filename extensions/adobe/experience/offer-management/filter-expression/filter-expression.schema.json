@@ -77,7 +77,14 @@
       "type": "string",
       "title": "Literal Type Identifier",
       "description": "Literal Type Identifier: String, Number, Integer, Boolean, Date, DateTime, XDMObject.",
-      "enum": ["String", "Number", "Integer", "Boolean", "List", "XDMObject"],
+      "enum": [
+        "String",
+        "Number",
+        "Integer",
+        "Boolean",
+        "List",
+        "XDMObject"
+      ],
       "meta:enum": {
         "String": "A string literal",
         "Number": "A number literal",
@@ -91,7 +98,12 @@
       "type": "string",
       "title": "Quantifier Type Identifier",
       "description": "Quantifier of first order logic. Produce a boolean value from a list of values by applying a predicate to each item and returning true or false based on the quantifier.",
-      "enum": ["all", "some", "none", "one"],
+      "enum": [
+        "all",
+        "some",
+        "none",
+        "one"
+      ],
       "meta:enum": {
         "all": "The All quantifier",
         "some": "The Exists quantifier",
@@ -99,7 +111,6 @@
         "one": "There exists one and only one."
       }
     },
-
     "function-application-content": {
       "type": "object",
       "title": "N-ary Function Application",
@@ -115,7 +126,10 @@
               "$ref": "#/definitions/function-type"
             }
           },
-          "required": ["nodeType", "fnName"]
+          "required": [
+            "nodeType",
+            "fnName"
+          ]
         },
         {
           "oneOf": [
@@ -468,7 +482,6 @@
       },
       "additionalProperties": false
     },
-
     "function-creation-content": {
       "type": "object",
       "title": "Function Creation",
@@ -490,7 +503,9 @@
                     "type": "string"
                   }
                 },
-                "required": ["varName"]
+                "required": [
+                  "varName"
+                ]
               },
               "minItems": 1
             },
@@ -498,11 +513,14 @@
               "$ref": "#/definitions/function-application-content"
             }
           },
-          "required": ["nodeType", "params", "body"]
+          "required": [
+            "nodeType",
+            "params",
+            "body"
+          ]
         }
       ]
     },
-
     "field-lookup-content": {
       "type": "object",
       "title": "Field Accessor",
@@ -522,12 +540,14 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "fieldName"],
+          "required": [
+            "nodeType",
+            "fieldName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "literal-content": {
       "type": "object",
       "title": "Literal",
@@ -544,7 +564,10 @@
               "$ref": "#/definitions/literal-type"
             }
           },
-          "required": ["nodeType", "literalType"]
+          "required": [
+            "nodeType",
+            "literalType"
+          ]
         },
         {
           "oneOf": [
@@ -650,7 +673,11 @@
           "const": "List"
         },
         "value": {
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
         }
       },
       "additionalProperties": false
@@ -689,7 +716,6 @@
       },
       "additionalProperties": false
     },
-
     "quantification-content": {
       "type": "object",
       "title": "Apply a Quantification",
@@ -713,12 +739,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "quantifier", "variables"],
+          "required": [
+            "nodeType",
+            "quantifier",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "select-expression-content": {
       "type": "object",
       "title": "Object Tree Evaluation",
@@ -739,12 +768,14 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "variables"],
+          "required": [
+            "nodeType",
+            "variables"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "variable-domain-content": {
       "type": "object",
       "title": "Define a variable and its domain",
@@ -768,7 +799,11 @@
               "$ref": "#/definitions/node-content"
             }
           },
-          "required": ["nodeType", "varName", "from"],
+          "required": [
+            "nodeType",
+            "varName",
+            "from"
+          ],
           "additionalProperties": false
         }
       ]
@@ -790,12 +825,14 @@
               "pattern": "^[_A-Za-z0-9]+$"
             }
           },
-          "required": ["nodeType", "varName"],
+          "required": [
+            "nodeType",
+            "varName"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "function-content-model-instances": {
       "type": "object",
       "title": "Reference all instances of a given model",
@@ -820,12 +857,15 @@
               "minItems": 1
             }
           },
-          "required": ["nodeType", "fnName", "params"],
+          "required": [
+            "nodeType",
+            "fnName",
+            "params"
+          ],
           "additionalProperties": false
         }
       ]
     },
-
     "node-content": {
       "allOf": [
         {
@@ -835,7 +875,9 @@
               "$ref": "#/definitions/node-type"
             }
           },
-          "required": ["nodeType"]
+          "required": [
+            "nodeType"
+          ]
         },
         {
           "oneOf": [
@@ -869,5 +911,6 @@
     {
       "$ref": "#/definitions/node-content"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

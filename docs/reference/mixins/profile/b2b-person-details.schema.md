@@ -14,14 +14,12 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 
 * XDM Business Person Details `https://ns.adobe.com/xdm/mixins/b2b-person-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [OptInOut](../../datatypes/optinout.schema.md) `https://ns.adobe.com/xdm/context/optinout`
-  * [Account Organization](../../datatypes/account-organization.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-  * [Postal address](../../datatypes/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Personal Contact Details](profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Demographic Details](profile-person-details.schema.md) `https://ns.adobe.com/xdm/context/profile-person-details`
   * [Profile Other Work Details](profile-other-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-other-work-details`
   * [Work Contact Details](profile-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-work-details`
   * [IdentityMap](../shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [XDM Inferred Person](profile-inferred-person.schema.md) `https://ns.adobe.com/xdm/mixins/profile-inferred-person`
   * [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
@@ -34,66 +32,29 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:anonymousHostname](#xdmanonymoushostname) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:blockedCause](#xdmblockedcause) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:convertedAccountID](#xdmconvertedaccountid) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:convertedContactID](#xdmconvertedcontactid) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:convertedDate](#xdmconverteddate) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:convertedOpportunityID](#xdmconvertedopportunityid) | `string` | Optional | XDM Business Person Details (this schema) |
+| [xdm:anonymousHostname](#xdmanonymoushostname) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdmanonymoushostname) |
+| [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Person Details (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:extendedWorkDetails](#xdmextendedworkdetails) | `object` | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmextendedworkdetails) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmfaxphone) |
 | [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomeaddress) |
 | [xdm:homePhone](#xdmhomephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomephone) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../shared/identitymap.schema.md#xdmidentitymap) |
-| [xdm:inferredAddress](#xdminferredaddress) | Postal address | Optional | XDM Business Person Details (this schema) |
-| [xdm:inferredCompany](#xdminferredcompany) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:inferredCompanyStatus](#xdminferredcompanystatus) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:inferredMetropolitanArea](#xdminferredmetropolitanarea) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:inferredPhoneAreaCode](#xdminferredphoneareacode) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:isBlocked](#xdmisblocked) | `boolean` | Optional | XDM Business Person Details (this schema) |
-| [xdm:isConverted](#xdmisconverted) | `boolean` | Optional | XDM Business Person Details (this schema) |
-| [xdm:isMarketingSuspended](#xdmismarketingsuspended) | `boolean` | Optional | XDM Business Person Details (this schema) |
-| [xdm:leadOrganization](#xdmleadorganization) | Account Organization | Optional | XDM Business Person Details (this schema) |
-| [xdm:marketingSuspendedCause](#xdmmarketingsuspendedcause) | `string` | Optional | XDM Business Person Details (this schema) |
+| [xdm:inferredAddress](#xdminferredaddress) | Postal address | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredaddress) |
+| [xdm:inferredCompany](#xdminferredcompany) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompany) |
+| [xdm:inferredCompanyStatus](#xdminferredcompanystatus) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompanystatus) |
+| [xdm:inferredMetropolitanArea](#xdminferredmetropolitanarea) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredmetropolitanarea) |
+| [xdm:inferredPhoneAreaCode](#xdminferredphoneareacode) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredphoneareacode) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmmobilephone) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Work Contact Details](profile-work-details.schema.md#xdmorganizations) |
 | [xdm:otherAddress](#xdmotheraddress) | Postal address | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotheraddress) |
 | [xdm:otherPhone](#xdmotherphone) | Phone number | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotherphone) |
 | [xdm:person](#xdmperson) | Person | Optional | [Demographic Details](profile-person-details.schema.md#xdmperson) |
-| [xdm:personGroupID](#xdmpersongroupid) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:personOptInOut](#xdmpersonoptinout) | OptInOut | Optional | XDM Business Person Details (this schema) |
-| [xdm:personOwnerID](#xdmpersonownerid) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:personScore](#xdmpersonscore) | `number` | Optional | XDM Business Person Details (this schema) |
-| [xdm:personSource](#xdmpersonsource) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:personStatus](#xdmpersonstatus) | `string` | Optional | XDM Business Person Details (this schema) |
-| [xdm:personType](#xdmpersontype) | `string` | Optional | XDM Business Person Details (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmpersonalemail) |
 | [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkaddress) |
 | [xdm:workEmail](#xdmworkemail) | Email address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkemail) |
 | [xdm:workPhone](#xdmworkphone) | Phone number | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkphone) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:accountID
-### Contact Account id
-
-ID of the account that’s the parent of this person.
-
-`xdm:accountID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountID Type
-
-
-`string`
-
-
-
-
-
 
 ## xdm:anonymousHostname
 ### Anonymous Hostname
@@ -103,7 +64,7 @@ Anonymous hostname.
 `xdm:anonymousHostname`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdmanonymoushostname)
 
 ### xdm:anonymousHostname Type
 
@@ -115,17 +76,61 @@ Anonymous hostname.
 
 
 
-## xdm:blockedCause
-### Blocked Cause
+## xdm:b2b
 
-Reason why the person is blocked.
 
-`xdm:blockedCause`
+`xdm:b2b`
 * is optional
-* type: `string`
+* type: `object`
 * defined in this schema
 
-### xdm:blockedCause Type
+### xdm:b2b Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:leadOrganization`|  | Optional |
+| `xdm:personGroupID`| string | Optional |
+| `xdm:personScore`| number | Optional |
+| `xdm:personSource`| string | Optional |
+| `xdm:personStatus`| string | Optional |
+| `xdm:personType`| string | Optional |
+
+
+
+#### xdm:leadOrganization
+##### Lead Organization Properties
+
+undefined
+
+`xdm:leadOrganization`
+* is optional
+* type: reference
+
+##### xdm:leadOrganization Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+
+
+
+
+
+
+
+#### xdm:personGroupID
+##### Person Group ID
+
+Group identifier for the person.
+
+`xdm:personGroupID`
+* is optional
+* type: `string`
+
+##### xdm:personGroupID Type
 
 
 `string`
@@ -135,17 +140,39 @@ Reason why the person is blocked.
 
 
 
-## xdm:convertedAccountID
-### Converted Account ID
 
-Account Id if the lead was successfully converted.
 
-`xdm:convertedAccountID`
+#### xdm:personScore
+##### Person Score
+
+A Score generated for a person by the CRM system.
+
+`xdm:personScore`
+* is optional
+* type: `number`
+
+##### xdm:personScore Type
+
+
+`number`
+
+
+
+
+
+
+
+
+#### xdm:personSource
+##### Person Source
+
+Source from where the information regarding the person was received.
+
+`xdm:personSource`
 * is optional
 * type: `string`
-* defined in this schema
 
-### xdm:convertedAccountID Type
+##### xdm:personSource Type
 
 
 `string`
@@ -155,17 +182,18 @@ Account Id if the lead was successfully converted.
 
 
 
-## xdm:convertedContactID
-### Converted Contact ID
 
-Contact Id if the lead was successfully converted.
 
-`xdm:convertedContactID`
+#### xdm:personStatus
+##### Person Status
+
+Field recording the current marketing/sales status of the Person.
+
+`xdm:personStatus`
 * is optional
 * type: `string`
-* defined in this schema
 
-### xdm:convertedContactID Type
+##### xdm:personStatus Type
 
 
 `string`
@@ -175,41 +203,26 @@ Contact Id if the lead was successfully converted.
 
 
 
-## xdm:convertedDate
-### Converted Date
 
-Date of conversion if the lead was successfully converted.
 
-`xdm:convertedDate`
+#### xdm:personType
+##### Person Type
+
+Type of the B2B person.
+
+`xdm:personType`
 * is optional
 * type: `string`
-* defined in this schema
 
-### xdm:convertedDate Type
+##### xdm:personType Type
 
 
 `string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
 
 
-
-## xdm:convertedOpportunityID
-### Converted Opportunity ID
-
-Opportunity Id if the lead was successfully converted.
-
-`xdm:convertedOpportunityID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:convertedOpportunityID Type
-
-
-`string`
 
 
 
@@ -229,7 +242,7 @@ Audit attributes for external sources.
 ### xdm:extSourceSystemAudit Type
 
 
-* [External Source System Audit Attributes](../../datatypes/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+* [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
 
 
 
@@ -406,7 +419,7 @@ Fax phone number.
 ### xdm:faxPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -425,7 +438,7 @@ A home postal address.
 ### xdm:homeAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -444,7 +457,7 @@ Home phone number.
 ### xdm:homePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -480,12 +493,12 @@ Address details inferred by reverse IP lookup of the lead’s first recorded web
 `xdm:inferredAddress`
 * is optional
 * type: Postal address
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredaddress)
 
 ### xdm:inferredAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -499,7 +512,7 @@ Company name inferred by reverse IP lookup of the lead’s first recorded web vi
 `xdm:inferredCompany`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompany)
 
 ### xdm:inferredCompany Type
 
@@ -519,7 +532,7 @@ Status of the company name inferred by reverse IP lookup of the lead’s first r
 `xdm:inferredCompanyStatus`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompanystatus)
 
 ### xdm:inferredCompanyStatus Type
 
@@ -539,7 +552,7 @@ Metropolitan area inferred by reverse IP lookup of lead’s first recorded web v
 `xdm:inferredMetropolitanArea`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredmetropolitanarea)
 
 ### xdm:inferredMetropolitanArea Type
 
@@ -559,103 +572,9 @@ Phone area code inferred by reverse IP lookup of lead’s first recorded web vis
 `xdm:inferredPhoneAreaCode`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredphoneareacode)
 
 ### xdm:inferredPhoneAreaCode Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:isBlocked
-### Blocked Indicator
-
-Indicator if the person is blocked or not.
-
-`xdm:isBlocked`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isBlocked Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:isConverted
-### Converted Indicator
-
-Indicates whether the Lead was successfully converted or not.
-
-`xdm:isConverted`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isConverted Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:isMarketingSuspended
-### Marketing Suspended Indicator
-
-Marketing suspended flag.
-
-`xdm:isMarketingSuspended`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isMarketingSuspended Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:leadOrganization
-### Lead Organization Properties
-
-`xdm:leadOrganization`
-* is optional
-* type: Account Organization
-* defined in this schema
-
-### xdm:leadOrganization Type
-
-
-* [Account Organization](../../datatypes/account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-
-
-
-
-
-## xdm:marketingSuspendedCause
-### Marketing Suspended Cause
-
-Reason why the person is suspended for any marketing purposes.
-
-`xdm:marketingSuspendedCause`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:marketingSuspendedCause Type
 
 
 `string`
@@ -678,7 +597,7 @@ Mobile phone number.
 ### xdm:mobilePhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -722,7 +641,7 @@ Other/Alternate postal address of the person.
 ### xdm:otherAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -741,7 +660,7 @@ Other/Alternate phone number of the person.
 ### xdm:otherPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 
@@ -760,146 +679,7 @@ An individual actor, contact, or owner.
 ### xdm:person Type
 
 
-* [Person](../../datatypes/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
-
-
-
-
-
-## xdm:personGroupID
-### Person Group ID
-
-Group identifier for the person.
-
-`xdm:personGroupID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:personGroupID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:personOptInOut
-### Person Preferences
-
-Holds opt out values for different channels as selected by the person.
-
-`xdm:personOptInOut`
-* is optional
-* type: OptInOut
-* defined in this schema
-
-### xdm:personOptInOut Type
-
-
-* [OptInOut](../../datatypes/optinout.schema.md) – `https://ns.adobe.com/xdm/context/optinout`
-
-
-
-
-
-## xdm:personOwnerID
-### Person Owner ID
-
-Person owner id.
-
-`xdm:personOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:personOwnerID Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:personScore
-### Person Score
-
-A Score generated for a person by the CRM system.
-
-`xdm:personScore`
-* is optional
-* type: `number`
-* defined in this schema
-
-### xdm:personScore Type
-
-
-`number`
-
-
-
-
-
-
-## xdm:personSource
-### Person Source
-
-Source from where the information regarding the person was received.
-
-`xdm:personSource`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:personSource Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:personStatus
-### Person Status
-
-Field recording the current marketing/sales status of the Person.
-
-`xdm:personStatus`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:personStatus Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:personType
-### Person Type
-
-Type of the B2B person.
-
-`xdm:personType`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:personType Type
-
-
-`string`
-
+* [Person](../../datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person`
 
 
 
@@ -918,7 +698,7 @@ A personal email address.
 ### xdm:personalEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
@@ -937,7 +717,7 @@ A work postal address.
 ### xdm:workAddress Type
 
 
-* [Postal address](../../datatypes/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -956,7 +736,7 @@ A work email address.
 ### xdm:workEmail Type
 
 
-* [Email address](../../datatypes/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+* [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
 
 
 
@@ -975,7 +755,7 @@ Work phone number.
 ### xdm:workPhone Type
 
 
-* [Phone number](../../datatypes/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
+* [Phone number](../../datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber`
 
 
 

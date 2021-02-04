@@ -36,16 +36,19 @@ This Mixin contains the common Journey Metadata information.
 |----------|------|----------|
 | `https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/entrance`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/eventID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/eventName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/eventProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/externalKey`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/inTest`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceEnded`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceType`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersion`| string | Optional |
@@ -53,13 +56,18 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeName`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/nodeType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/parentNodeName`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/parentNodeType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentStepID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentStepName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID`| string | Optional |
@@ -67,7 +75,6 @@ This Mixin contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionActionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionChannel`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/reentrance`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/stepID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/stepName`| string | Optional |
@@ -110,6 +117,27 @@ This Mixin contains the common Journey Metadata information.
 
 
 `string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex
+##### batchRecurrenceIndex
+
+Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).
+
+`https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex`
+* is optional
+* type: `integer`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex Type
+
+
+`integer`
 
 
 
@@ -189,6 +217,27 @@ Event ID in processing, for the step processing.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/eventID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/eventName
+##### eventName
+
+Event Name in processing, for the step processing.
+
+`https://ns.adobe.com/experience/journeyOrchestration/eventName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/eventName Type
 
 
 `string`
@@ -316,6 +365,26 @@ indicate the instance type, if it is batch or unitary.
 
 `string`
 
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent
+##### isExternalEvent
+
+Whether the Event being processed, is an external event or not.
+
+`https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent`
+* is optional
+* type: `boolean`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent Type
+
+
+`boolean`
 
 
 
@@ -469,6 +538,27 @@ Name of the Journey Step Node being processed.
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/nodeType
+##### nodeType
+
+Type of the Journey Step Node being processed.
+
+`https://ns.adobe.com/experience/journeyOrchestration/nodeType`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/nodeType Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID
 ##### originJumpJourneyID
 
@@ -521,6 +611,69 @@ Journey version ID of the initial journey in a journey jump scenario.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/parentNodeID
+##### parentNodeID
+
+Node ID of the parent of the current processed node in the instance.
+
+`https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/parentNodeID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/parentNodeName
+##### parentNodeName
+
+Node Name of the parent of the current processed node in the instance.
+
+`https://ns.adobe.com/experience/journeyOrchestration/parentNodeName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/parentNodeName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/parentNodeType
+##### parentNodeType
+
+Node Type of the parent of the current processed node in the instance.
+
+`https://ns.adobe.com/experience/journeyOrchestration/parentNodeType`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/parentNodeType Type
 
 
 `string`
@@ -605,6 +758,27 @@ Name of the transition which has brought the instance to the processed step.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType
+##### parentTransitionType
+
+Type of the transition which has brought the instance to the processed step.
+
+`https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType Type
 
 
 `string`
@@ -755,27 +929,6 @@ Message interaction type referenced by the reaction (click, open, sent, error...
 
 
 `string`
-
-
-
-
-
-
-
-
-#### https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex
-##### recurrenceIndex
-
-Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).
-
-`https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex`
-* is optional
-* type: `integer`
-
-##### https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex Type
-
-
-`integer`
 
 
 

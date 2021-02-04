@@ -68,12 +68,12 @@
         "xdm:opportunityAmount": {
           "title": "Opportunity Amount",
           "description": "Estimated total sale amount.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "Calculated revenue based on the Amount and Probability.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/positive-currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:opportunityQuantity": {
           "title": "Opportunity Quantity",
@@ -82,9 +82,15 @@
           "minimum": 0,
           "default": 0
         },
-        "xdm:closeDate": {
-          "title": "Close Date",
-          "description": "Date of closure for this opportunity.",
+        "xdm:expectedCloseDate": {
+          "title": "Expected Close Date",
+          "description": "Expected date of closure for this opportunity.",
+          "type": "string",
+          "format": "date"
+        },
+        "xdm:actualCloseDate": {
+          "title": "Actual Close Date",
+          "description": "Actual date of closure for this opportunity.",
           "type": "string",
           "format": "date-time"
         },

@@ -35,7 +35,8 @@ const ignoredForRequiredValidation =
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
     "../components/classes/experienceevent.schema.json",
-    "../components/classes/segmentdefinition.schema.json"
+    "../components/classes/segmentdefinition.schema.json",
+    "../extensions/adobe/experience/decisioning/decisionevent.schema.json"
     ];
 
 shell.rm("-rf", masterCopyLoc); //start

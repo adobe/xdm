@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/personalized-content-option",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "meta:extends": [
+    "https://ns.adobe.com/experience/decisioning/lifecycle-status",
+    "https://ns.adobe.com/experience/decisioning/tags",
+    "https://ns.adobe.com/experience/decisioning/contents",
+    "https://ns.adobe.com/experience/decisioning/calendar-constraints",
+    "https://ns.adobe.com/experience/decisioning/profile-constraints",
+    "https://ns.adobe.com/experience/decisioning/ranking"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Personalized Content Decision Option",
+  "description": "Personalized decision options form the set of choices for any decision actvity. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.",
+  "definitions": {
+    "personalized-content-option": {
+      "properties": {}
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/lifecycle-status"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/tags"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/contents"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraints"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraints"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/ranking"
+    },
+    {
+      "$ref": "#/definitions/personalized-content-option"
+    }
+  ],
+  "meta:status": "stable"
+}

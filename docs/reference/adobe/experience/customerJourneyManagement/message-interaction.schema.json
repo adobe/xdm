@@ -42,6 +42,19 @@
                     "type": "string",
                     "description": "The tracking type of the URL. It may be `subscription`, or a user-defined category.",
                     "meta:enum": {}
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": {
+                    "title": "Link Tags",
+                    "type": "array",
+                    "description": "The tags present on this link.",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
+                    "title": "Tracker URL Label",
+                    "type": "string",
+                    "description": "Human-Friendly label"
                 }
             }
         }
@@ -59,7 +72,12 @@
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription"
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+                "marketing",
+                "apparel"
+            ],
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com"
         }
     ]
 }

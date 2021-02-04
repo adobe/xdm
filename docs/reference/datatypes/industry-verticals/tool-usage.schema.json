@@ -1,0 +1,89 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Tool Usage",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
+    "definitions": {
+        "tool-usage": {
+            "properties": {
+                "xdm:toolUsageCancelled": {
+                    "title": "Tool Usage Cancelled",
+                    "type": "integer",
+                    "description": "Captured when a visitor cancels out of a tool usage process."
+                },
+                "xdm:toolUsageComplete": {
+                    "title": "Tool Usage Complete",
+                    "type": "integer",
+                    "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app."
+                },
+                "xdm:toolUsageFailure": {
+                    "title": "Tool Usage Failed",
+                    "type": "integer",
+                    "description": "Captured when a step in the tool usage process fails."
+                },
+                "xdm:toolUsageID": {
+                    "title": "Tool Usage ID",
+                    "type": "string",
+                    "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc."
+                },
+                "xdm:toolUsageName": {
+                    "title": "Tool Usage Name",
+                    "type": "string",
+                    "description": "Tracks the name of the tool in use."
+                },
+                "xdm:toolUsageSaved": {
+                    "title": "Tool Usage Saved",
+                    "type": "integer",
+                    "description": "Captured when a visitor saves and exits a tool usage process."
+                },
+                "xdm:toolUsageStart": {
+                    "title": "Tool Usage Start",
+                    "type": "integer",
+                    "description": "Captured when a visitor initializes using any type of tool or utility on the site/app."
+                },
+                "xdm:toolUsageStep": {
+                    "title": "Tool Usage Step",
+                    "type": "integer",
+                    "description": "Captured when any intermediary tool step is started on the site/app."
+                },
+                "xdm:toolUsageStepName": {
+                    "title": "Tool Usage Step Name",
+                    "type": "string",
+                    "description": "Tracks the name of the tool step in use."
+                },
+                "xdm:toolUsageSubmitted": {
+                    "title": "Tool Usage Submitted",
+                    "type": "integer",
+                    "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
+                },
+                "xdm:toolUsageTransaction": {
+                    "title": "Tool Usage Transaction",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                    "description": "Extension of Transaction Data Type"
+                },
+                "xdm:toolUsageType": {
+                    "title": "Tool Usage Type",
+                    "type": "string",
+                    "description": "Tracks the type or category of the tool in use."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/tool-usage"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

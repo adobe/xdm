@@ -1,0 +1,45 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details",
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Calendar Constraint Details",
+    "description": "A calendar constraint is a component of a decision option that defines the date range when option is valid. Outside that date range the option cannot be proposed.",
+    "definitions": {
+        "calendar-constraint-details": {
+            "type": "object",
+            "properties": {
+                "xdm:startDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "title": "Start Date & Time",
+                    "description": "The start date of a decision options validity.. Options that have not reached their start date cannot be proposed yet in the decisioning process."
+                },
+                "xdm:endDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "title": "End Date & Time",
+                    "description": "The end date of a decision options validity. Options that have passed their end date can no longer cannot be proposed in the decisioning process."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/calendar-constraint-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/decisioning/startTime": "2018-03-13T05:59:18.914Z",
+            "https://ns.adobe.com/experience/decisioning/endTime": "2018-12-27T05:59:18.914Z"
+        }
+    ]
+}

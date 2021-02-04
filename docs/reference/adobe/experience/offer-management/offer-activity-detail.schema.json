@@ -47,6 +47,7 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:id": "xcore:offer-activity:f66f792de3c0ba9",

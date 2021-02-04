@@ -129,7 +129,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/reservation-details"
+      "$ref": "#/definitions/reservations"
     }
   ],
   "meta:status": "experimental"

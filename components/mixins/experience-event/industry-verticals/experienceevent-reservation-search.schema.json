@@ -60,7 +60,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/reservation-search"
+      "$ref": "#/definitions/reservations"
     }
   ],
   "meta:status": "experimental"

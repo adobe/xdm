@@ -28,6 +28,7 @@ An offer activity is used to control the decisioning process. It specifies the f
 | [https://ns.adobe.com/experience/decisioning/fallback](#httpsnsadobecomexperiencedecisioningfallback) | `string` | Optional | [Decision Activity](../decisioning/activity.schema.md#httpsnsadobecomexperiencedecisioningfallback) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | [Decision Activity](../decisioning/activity.schema.md#httpsnsadobecomexperiencedecisioningname) |
 | [https://ns.adobe.com/experience/decisioning/startTime](#httpsnsadobecomexperiencedecisioningstarttime) | `string` | Optional | [Decision Activity](../decisioning/activity.schema.md#httpsnsadobecomexperiencedecisioningstarttime) |
+| [repo:etag](#repoetag) | `string` | Optional | [Decision Activity](../decisioning/activity.schema.md#repoetag) |
 | [xdm:endDate](#xdmenddate) | `string` | Optional | Activity (this schema) |
 | [xdm:fallback](#xdmfallback) | `string` | Optional | Activity (this schema) |
 | [xdm:filter](#xdmfilter) | `string` | Optional | Activity (this schema) |
@@ -161,6 +162,26 @@ Activity start date and end time. Property has the semantic of schema.org's 'sta
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## repo:etag
+### Activity ETag
+
+The revision that the decision activity object was at when the snapshot was taken.
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in [Decision Activity](../decisioning/activity.schema.md#repoetag)
+
+### repo:etag Type
+
+
+`string`
 
 
 

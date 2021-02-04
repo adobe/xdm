@@ -18,6 +18,11 @@
     "definitions": {
         "placement-details": {
             "properties": {
+                "repo:etag": {
+                    "title": "Placement ETag",
+                    "type": "string",
+                    "description": "The revision that the placement object was at when the snapshot was taken."
+                },
                 "https://ns.adobe.com/experience/decisioning/name": {
                     "title": "Placement Name",
                     "type": "string",

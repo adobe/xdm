@@ -235,6 +235,7 @@ Controls a decisioning process and describes some form of action that is planned
 | [https://ns.adobe.com/experience/decisioning/fallback](#httpsnsadobecomexperiencedecisioningfallback) | `string` | Optional | Decision Activity (this schema) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | Decision Activity (this schema) |
 | [https://ns.adobe.com/experience/decisioning/startTime](#httpsnsadobecomexperiencedecisioningstarttime) | `string` | Optional | Decision Activity (this schema) |
+| [repo:etag](#repoetag) | `string` | Optional | Decision Activity (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -341,12 +342,31 @@ Activity start date and end time. Property has the semantic of schema.org's 'sta
 
 
 
+## repo:etag
+### Activity ETag
+
+The revision that the decision activity object was at when the snapshot was taken.
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:etag Type
+
+
+`string`
+
+
+
+
+
+
 # Decision Activity Definitions
 
 | Property | Type | Group |
 |----------|------|-------|
 | [https://ns.adobe.com/experience/decisioning/activityID](#httpsnsadobecomexperiencedecisioningactivityid) | `string` | `https://ns.adobe.com/experience/decisioning/activity#/definitions/activity-snapshot-identifier` |
-| [repo:etag](#repoetag) | `string` | `https://ns.adobe.com/experience/decisioning/activity#/definitions/activity-snapshot-identifier` |
 
 ## https://ns.adobe.com/experience/decisioning/activityID
 ### Activity Identifier
@@ -363,26 +383,6 @@ A unique, immutable identifier for the decision activity.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## repo:etag
-### Activity ETag
-
-The revision that the decision activity object was at when the snapshot was taken.
-
-`repo:etag`
-* is optional
-* type: `string`
-* defined in this schema
-
-### repo:etag Type
-
-
-`string`
 
 
 

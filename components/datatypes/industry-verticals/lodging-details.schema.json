@@ -121,8 +121,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/lodging-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/lodging-details"
+    }
+  ],
   "meta:status": "experimental"
 }

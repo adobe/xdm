@@ -127,8 +127,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/reservation-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservation-details"
+    }
+  ],
   "meta:status": "experimental"
 }

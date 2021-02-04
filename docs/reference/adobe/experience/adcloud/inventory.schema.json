@@ -71,6 +71,7 @@
             "$ref": "#/definitions/inventory"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:sessionId": "8ba48d0a-dd4a-41fb-a258-80c824186f11.1",

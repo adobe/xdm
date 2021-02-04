@@ -9,7 +9,7 @@ Adobe Analytics custom event fields.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/analytics/events.schema.json](adobe/experience/analytics/events.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/analytics/events.schema.json](adobe/experience/analytics/events.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Analytics Custom Events `https://ns.adobe.com/experience/analytics/events`

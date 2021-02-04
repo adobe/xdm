@@ -49,6 +49,7 @@
             "$ref": "#/definitions/decisioning-mixin"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/adobecloudplatform/ims/organizationID": "0D8E32C65A8A91520A494008@AdobeOrg",

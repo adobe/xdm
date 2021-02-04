@@ -9,7 +9,7 @@ Adobe Analytics ExperienceEvent full extension. Contains all Solution added fiel
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/analytics/experienceevent-all.schema.json](adobe/experience/analytics/experienceevent-all.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/analytics/experienceevent-all.schema.json](adobe/experience/analytics/experienceevent-all.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Analytics ExperienceEvent Full Extension `https://ns.adobe.com/experience/analytics/experienceevent-all`

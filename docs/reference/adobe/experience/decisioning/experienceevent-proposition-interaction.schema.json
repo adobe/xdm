@@ -41,6 +41,7 @@
             "$ref": "#/definitions/decisioning-experienceevent-all"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/experience/decisioning/propositions": [

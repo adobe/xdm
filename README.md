@@ -12,6 +12,10 @@ XDM is at version `1.13.3`.
 
 You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 
+## XDM Visualization
+
+See [visualization of the master branch](https://opensource.adobe.com/xdmVisualization/prod/master/), which is refreshed every 12 hours.
+
 ## Read the XDM Spec
 
 - [Chapter 1: Introduction](docs/introduction.md)

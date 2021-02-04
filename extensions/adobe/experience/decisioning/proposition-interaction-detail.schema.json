@@ -7,56 +7,42 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Proposition Interaction Details",
+  "title": "Experience Event - Proposition Interaction Detail",
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "A proposition interaction is used to report an experience event that relates to a prior decision proposition. The decision proposition is assumed to have contributed to the experience and the unique decision ID is added to the experience event.",
+  "description": "A proposition interaction is used to link an experience event to a prior decision proposition. Each decision output has a unique event ID that can be sent back with an experience event. The decision proposition is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
     "proposition-interaction-detail-datatype": {
       "type": "object",
       "properties": {
-        "xdm:id": {
-          "type": "string",
-          "title": "Decision Proposition Identifier",
-          "description": "The unique identifier of the proposition that originally contained the decision options that are being acted upon (see the corresponding 'items' field in this object). When this identifier is present, direct attribution is given to a unique proposition. If the identifier is missing, the action for the items could not be assiciated with a unique proposition."
-        },
-        "xdm:scope": {
-          "type": "string",
-          "title": "Decision Scope",
-          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
-        },
         "xdm:items": {
           "type": "array",
           "title": "Selected Options",
-          "description": "One or more of the previously proposed options that this experience event is related to. Those items were returned as output of the decision for a requested scope and are now part of an interaction. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event could record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array.",
+          "description": "One or more of the decision options that this experience event is related to. Those items were returned as output of the decision for a requested scope. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event would record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array. ",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail",
             "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in."
           }
         },
         "xdm:decisionEventID": {
-          "meta:status": "deprecated",
           "type": "string",
-          "title": "Decision Event Identifier (deprecated)",
-          "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition. (deprecated)"
+          "title": "Decision Event Identifier",
+          "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition."
         },
         "xdm:decisionEventDetails": {
-          "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
           "title": "Decision Event Details",
           "description": "A snapshot of properties from the decision event when it occured."
         },
         "xdm:decisionScope": {
-          "meta:status": "deprecated",
           "type": "string",
-          "title": "Decision Event Scope (deprecated)",
-          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details. (deprecated)"
+          "title": "Decision Event Scope",
+          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
         },
         "xdm:decisionScopeDetails": {
-          "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
-          "title": "Decision Event Scope Details (deprecated)",
+          "title": "Decision Event Scope Details",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
         }
       }
@@ -70,5 +56,5 @@
       "$ref": "#/definitions/proposition-interaction-detail-datatype"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

@@ -9,7 +9,7 @@ Offer activity detail is used to capture the attributes of an offer activity in 
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-activity-detail.schema.json](adobe/experience/offer-management/offer-activity-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/offer-management/offer-activity-detail.schema.json](adobe/experience/offer-management/offer-activity-detail.schema.json) |
 ## Schema Hierarchy
 
 * Offer Activity Detail `https://ns.adobe.com/experience/offer-management/offer-activity-detail`

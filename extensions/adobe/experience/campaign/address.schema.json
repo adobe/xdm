@@ -9,7 +9,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Address Extensions for Adobe Campaign",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/common/address"],
   "description": "Address extension properties specific to Adobe Campaign.",
   "definitions": {
     "address": {
@@ -39,5 +38,6 @@
     {
       "$ref": "#/definitions/address"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

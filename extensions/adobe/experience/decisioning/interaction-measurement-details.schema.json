@@ -47,5 +47,6 @@
     {
       "$ref": "#/definitions/interaction-measurement-datatype"
     }
-  ]
+  ],
+  "meta:status": "experimental"
 }

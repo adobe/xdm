@@ -35,6 +35,7 @@
           "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
         },
         "interactionMeasurements": {
+          "meta:status": "experimental",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/interaction-measurement"

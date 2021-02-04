@@ -24,7 +24,7 @@
         "xdm:scope": {
           "type": "string",
           "title": "Decision Scope",
-          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
+          "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made."
         },
         "xdm:items": {
           "type": "array",

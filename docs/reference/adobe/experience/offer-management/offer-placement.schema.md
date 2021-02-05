@@ -33,6 +33,7 @@ The mutual contract does not need to rely on physical properties of the content.
 | [https://ns.adobe.com/experience/decisioning/contentTypes](#httpsnsadobecomexperiencedecisioningcontenttypes) | `string[]` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningcontenttypes) |
 | [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningdescription) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningname) |
+| [repo:etag](#repoetag) | `string` | Optional | [Decision Content Placement](../decisioning/placement.schema.md#repoetag) |
 | [xdm:channel](#xdmchannel) | `string` | Optional | Placement (this schema) |
 | [xdm:componentType](#xdmcomponenttype) | `enum` | Optional | Placement (this schema) |
 | [xdm:contentTypes](#xdmcontenttypes) | `string[]` | Optional | Placement (this schema) |
@@ -169,6 +170,26 @@ An assigned name for the placement to refer to it in human interactions
 * defined in [Decision Content Placement](../decisioning/placement.schema.md#httpsnsadobecomexperiencedecisioningname)
 
 ### https://ns.adobe.com/experience/decisioning/name Type
+
+
+`string`
+
+
+
+
+
+
+## repo:etag
+### Placement ETag
+
+The revision that the placement object was at when the snapshot was taken.
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in [Decision Content Placement](../decisioning/placement.schema.md#repoetag)
+
+### repo:etag Type
 
 
 `string`

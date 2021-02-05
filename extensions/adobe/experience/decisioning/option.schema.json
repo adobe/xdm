@@ -16,6 +16,11 @@
   "definitions": {
     "option-details": {
       "properties": {
+        "repo:etag": {
+          "title": "Decision Option ETag",
+          "type": "string",
+          "description": "The revision that the decision option object was at when the snapshot was taken."
+        },
         "https://ns.adobe.com/experience/decisioning/name": {
           "type": "string",
           "title": "Decision Option Name",

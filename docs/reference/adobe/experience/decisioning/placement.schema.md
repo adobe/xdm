@@ -41,6 +41,7 @@ A content placement describes a location or place where the content of a propose
 | [https://ns.adobe.com/experience/decisioning/contentTypes](#httpsnsadobecomexperiencedecisioningcontenttypes) | `string[]` | Optional | Decision Content Placement (this schema) |
 | [https://ns.adobe.com/experience/decisioning/description](#httpsnsadobecomexperiencedecisioningdescription) | `string` | Optional | Decision Content Placement (this schema) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | Decision Content Placement (this schema) |
+| [repo:etag](#repoetag) | `string` | Optional | Decision Content Placement (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -181,12 +182,31 @@ An assigned name for the placement to refer to it in human interactions
 
 
 
+## repo:etag
+### Placement ETag
+
+The revision that the placement object was at when the snapshot was taken.
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:etag Type
+
+
+`string`
+
+
+
+
+
+
 # Decision Content Placement Definitions
 
 | Property | Type | Group |
 |----------|------|-------|
 | [https://ns.adobe.com/experience/decisioning/placementID](#httpsnsadobecomexperiencedecisioningplacementid) | `string` | `https://ns.adobe.com/experience/decisioning/placement#/definitions/placement-snapshot-identifier` |
-| [repo:etag](#repoetag) | `string` | `https://ns.adobe.com/experience/decisioning/placement#/definitions/placement-snapshot-identifier` |
 
 ## https://ns.adobe.com/experience/decisioning/placementID
 ### Placement Identifier
@@ -203,26 +223,6 @@ A unique identifier for the decision placement.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## repo:etag
-### Placement ETag
-
-The revision that the placement object was at when the snapshot was taken.
-
-`repo:etag`
-* is optional
-* type: `string`
-* defined in this schema
-
-### repo:etag Type
-
-
-`string`
 
 
 

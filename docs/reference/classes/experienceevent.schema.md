@@ -22,167 +22,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/9": [
-      {
-        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-      }
-    ]
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
-    }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  },
-  "xdm:profileStitch": [
-    {
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:version": "1.0",
-      "xdm:identityMap": {
-        "ECID": [
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
-          }
-        ]
-      }
-    }
-  ],
-  "xdm:segmentMemberships": [
-    {
-      "xdm:segmentID": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        },
-        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
-        "xdm:version": "1.0",
-        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
-        "xdm:status": "realized"
-      }
-    }
-  ]
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-2345678",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -473,17 +312,178 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123458",
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
       {
-        "xdm:id": "92318731249128"
+        "xdm:id": "92312748749128"
       }
     ],
     "https://data.adobe.io/entities/namespace/10": [
       {
-        "xdm:id": "5492309340-35430470347"
+        "xdm:id": "2394509340-30453470347"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/9": [
+      {
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+      }
+    ]
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
+  },
+  "xdm:profileStitch": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identityMap": {
+        "ECID": [
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+          }
+        ]
+      }
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2392846240-30285628347"
       }
     ]
   },
@@ -503,7 +503,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "tv_highlights",
-          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
+          "iptc4xmpExt:Identifier": "http://mychannel.com/series-identifiers/2613953"
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
@@ -520,12 +520,12 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "iptc4xmpExt:Rating": [
           {
             "iptc4xmpExt:RatingValue": "TV100",
-            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguide.org/ratings.htm"
           }
         ],
         "iptc4xmpExt:Creator": [
           {
-            "iptc4xmpExt:Name": "SportTV"
+            "iptc4xmpExt:Name": "MyChannel"
           }
         ],
         "xdm:firstAirDate": "2016-01-05",
@@ -533,52 +533,44 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       },
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchsport",
-        "xdm:broadcastChannel": "WatchSportTV",
-        "xdm:broadcastContentType": "VOD",
+        "xdm:playerName": "watchmytv",
         "xdm:videoSegment": "3-10",
-        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
+        "xdm:path": "mid:show:episode:cnl.com:12345-4ce7",
+        "xdm:broadcastChannel": "WatchMyTV",
+        "xdm:broadcastContentType": "VOD",
         "xdm:streamFormat": "short",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
         },
         "xdm:broadcastNetwork": "ntwu",
         "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.comFhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
         "xdm:downloadedPlayback": false
+      },
+      "xdm:mediaChapter": {
+        "xdm:chapterAssetReference": {
+          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
+          "dc:title": "Chapter1",
+          "xmpDM:duration": 44
+        },
+        "xdm:chapterAssetViewDetails": {
+          "xdm:index": 0,
+          "xdm:offset": 0
+        },
+        "xdm:impressions": {
+          "xdm:value": 1
+        },
+        "xdm:completes": {
+          "xdm:value": 1
+        },
+        "xdm:timePlayed": {
+          "xdm:value": 44
+        },
+        "xdm:federated": {
+          "xdm:value": 0
+        }
       }
-    }
-  },
-  "xdm:advertising": {
-    "xdm:adAssetReference": {
-      "@id": "https://data.adobe.io/entities/ad-id/AD1",
-      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
-      "dc:title": "adNumber1",
-      "xdm:advertiser": "AdCompany",
-      "xdm:campaign": "731123",
-      "xmpDM:duration": 10
-    },
-    "xdm:adAssetViewDetails": {
-      "xdm:playerName": "miniTestApp",
-      "xdm:index": 0,
-      "xdm:adBreak": {
-        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
-        "dc:title": "Mid-Roll",
-        "xdm:offset": 44
-      }
-    },
-    "xdm:impressions": {
-      "xdm:value": 1
-    },
-    "xdm:completes": {
-      "xdm:value": 1
-    },
-    "xdm:timePlayed": {
-      "xdm:value": 10
-    },
-    "xdm:federated": {
-      "xdm:value": 0
     }
   }
 }
@@ -746,16 +738,39 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
       {
-        "xdm:id": "92312743856228"
+        "xdm:id": "92318731249128"
       }
     ],
     "https://data.adobe.io/entities/namespace/10": [
       {
-        "xdm:id": "2392846240-30285628347"
+        "xdm:id": "5492309340-35430470347"
       }
     ]
   },
@@ -775,7 +790,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "tv_highlights",
-          "iptc4xmpExt:Identifier": "http://mychannel.com/series-identifiers/2613953"
+          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
@@ -792,12 +807,12 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "iptc4xmpExt:Rating": [
           {
             "iptc4xmpExt:RatingValue": "TV100",
-            "iptc4xmpExt:RatingSourceLink": "http://www.tvguide.org/ratings.htm"
+            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
           }
         ],
         "iptc4xmpExt:Creator": [
           {
-            "iptc4xmpExt:Name": "MyChannel"
+            "iptc4xmpExt:Name": "SportTV"
           }
         ],
         "xdm:firstAirDate": "2016-01-05",
@@ -805,67 +820,52 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       },
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchmytv",
-        "xdm:videoSegment": "3-10",
-        "xdm:path": "mid:show:episode:cnl.com:12345-4ce7",
-        "xdm:broadcastChannel": "WatchMyTV",
+        "xdm:playerName": "watchsport",
+        "xdm:broadcastChannel": "WatchSportTV",
         "xdm:broadcastContentType": "VOD",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
         "xdm:streamFormat": "short",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
         },
         "xdm:broadcastNetwork": "ntwu",
         "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.comFhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
         "xdm:downloadedPlayback": false
-      },
-      "xdm:mediaChapter": {
-        "xdm:chapterAssetReference": {
-          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
-          "dc:title": "Chapter1",
-          "xmpDM:duration": 44
-        },
-        "xdm:chapterAssetViewDetails": {
-          "xdm:index": 0,
-          "xdm:offset": 0
-        },
-        "xdm:impressions": {
-          "xdm:value": 1
-        },
-        "xdm:completes": {
-          "xdm:value": 1
-        },
-        "xdm:timePlayed": {
-          "xdm:value": 44
-        },
-        "xdm:federated": {
-          "xdm:value": 0
-        }
       }
     }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
   },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
+  "xdm:advertising": {
+    "xdm:adAssetReference": {
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
+      "dc:title": "adNumber1",
+      "xdm:advertiser": "AdCompany",
+      "xdm:campaign": "731123",
+      "xmpDM:duration": 10
+    },
+    "xdm:adAssetViewDetails": {
+      "xdm:playerName": "miniTestApp",
+      "xdm:index": 0,
+      "xdm:adBreak": {
+        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
+      }
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 10
+    },
+    "xdm:federated": {
+      "xdm:value": 0
     }
   }
 }

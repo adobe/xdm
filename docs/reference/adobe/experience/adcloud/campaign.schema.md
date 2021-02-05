@@ -9,7 +9,7 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
 
 ## Ad Campaign Detail Examples
 
@@ -24,6 +24,24 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "xdm:experimentId": "9812987",
   "xdm:sampleGroupId": "8676378",
   "xdm:currency": "USD"
+}
+```
+
+```json
+{
+  "@id": "100001061",
+  "searchads:campaignId": "10001234",
+  "searchads:accountId": "10001456",
+  "searchads:campaignName": "My First Campaign",
+  "searchads:campaignDescription": "Branded Mobile Campaign",
+  "searchads:campaignStatus": "Active",
+  "searchads:channelType": "Search",
+  "searchads:budget": 123.45,
+  "searchads:budgetType": "Monthly",
+  "searchads.adDeliveryType": "Standard",
+  "searchads.CampaignObjective": "visit_web",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }
 ```
 
@@ -57,24 +75,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "xdm:budgetType": "Monthly",
   "xdm.adDeliveryType": "Standard",
   "xdm.CampaignObjective": "visit_web",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
-  "@id": "100001061",
-  "searchads:campaignId": "10001234",
-  "searchads:accountId": "10001456",
-  "searchads:campaignName": "My First Campaign",
-  "searchads:campaignDescription": "Branded Mobile Campaign",
-  "searchads:campaignStatus": "Active",
-  "searchads:channelType": "Search",
-  "searchads:budget": 123.45,
-  "searchads:budgetType": "Monthly",
-  "searchads.adDeliveryType": "Standard",
-  "searchads.CampaignObjective": "visit_web",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

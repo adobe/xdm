@@ -39,6 +39,7 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",

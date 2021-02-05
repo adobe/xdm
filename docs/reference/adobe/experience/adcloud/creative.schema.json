@@ -43,6 +43,7 @@
             "$ref": "#/definitions/creative"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:experienceId": "1001",

@@ -9,9 +9,21 @@ Adobe Advertising Cloud Ad Details.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/advertisement.schema.json](adobe/experience/adcloud/advertisement.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/advertisement.schema.json](adobe/experience/adcloud/advertisement.schema.json) |
 
 ## Adobe Advertising Cloud Ad Details Examples
+
+```json
+{
+  "xdm:creativeID": "301404063528",
+  "xdm:keywordID": "147741280",
+  "xdm:audienceID": "257600311580",
+  "xdm:adGroupID": "32345812783",
+  "xdm:campaignID": "663049855",
+  "xdm:networkType": "search",
+  "xdm:matchType": "broad"
+}
+```
 
 ```json
 {
@@ -36,18 +48,6 @@ Adobe Advertising Cloud Ad Details.
   "dsp:placementIds": [
     "1"
   ]
-}
-```
-
-```json
-{
-  "xdm:creativeID": "301404063528",
-  "xdm:keywordID": "147741280",
-  "xdm:audienceID": "257600311580",
-  "xdm:adGroupID": "32345812783",
-  "xdm:campaignID": "663049855",
-  "xdm:networkType": "search",
-  "xdm:matchType": "broad"
 }
 ```
 

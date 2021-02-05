@@ -9,7 +9,7 @@ A decision proposition detail is used to capture the output of a decisioning act
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
 ## Schema Hierarchy
 
 * Decision Proposition Detail `https://ns.adobe.com/experience/decisioning/proposition-detail`
@@ -20,6 +20,17 @@ A decision proposition detail is used to capture the output of a decisioning act
 
 
 ## Decision Proposition Detail Examples
+
+```json
+{
+  "xdm:activity": {
+    "xdm:id": "xcore:offer-activity:f203512e02542b5"
+  },
+  "xdm:fallback": {
+    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+  }
+}
+```
 
 ```json
 {
@@ -67,17 +78,6 @@ A decision proposition detail is used to capture the output of a decisioning act
       }
     }
   ]
-}
-```
-
-```json
-{
-  "xdm:activity": {
-    "xdm:id": "xcore:offer-activity:f203512e02542b5"
-  },
-  "xdm:fallback": {
-    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-  }
 }
 ```
 

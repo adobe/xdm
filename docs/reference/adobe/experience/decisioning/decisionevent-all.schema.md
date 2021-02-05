@@ -9,7 +9,7 @@ Mixin for Decision Events that adds dimensions for rollup by organization, conta
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent-all.schema.json](adobe/experience/decisioning/decisionevent-all.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent-all.schema.json](adobe/experience/decisioning/decisionevent-all.schema.json) |
 ## Schema Hierarchy
 
 * Decision Event - Reporting Dimensions `https://ns.adobe.com/experience/decisioning/decisionevent-all`

@@ -9,7 +9,7 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
 
 ## Ad Campaign Detail Examples
 

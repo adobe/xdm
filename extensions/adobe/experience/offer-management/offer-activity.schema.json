@@ -7,11 +7,16 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/offer-management/offer-activity",
-  "meta:abstract": false,
-  "meta:extensible": true,
   "type": "object",
   "title": "Activity",
-  "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization options (offers).",
+  "description": "An offer activity is used to control the decisioning process. It specifies the filter applied to the total inventory to narrow down offers by topic/category, the placement to narrow down the inventory to those offers that technically fit into the reserved space for the offer and specifies a fall back option should the combined constraints disqualify all available personalization offers. (deprecated)",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/experience/decisioning/activity",
+    "https://ns.adobe.com/experience/decisioning/criteria"
+  ],
+  "meta:abstract": false,
+  "meta:extensible": true,
   "definitions": {
     "offer-activity": {
       "properties": {
@@ -22,11 +27,13 @@
           "description": "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. "
         },
         "xdm:name": {
+          "meta:status": "deprecated",
           "type": "string",
           "title": "Name",
           "description": "Activity name. The name is displayed in various user interfaces."
         },
         "xdm:status": {
+          "meta:status": "deprecated",
           "type": "string",
           "title": "Status",
           "description": "Activity Status",
@@ -39,30 +46,35 @@
           }
         },
         "xdm:startDate": {
+          "meta:status": "deprecated",
           "type": "string",
           "format": "date-time",
           "title": "Start Date",
           "description": "Activity Start Date"
         },
         "xdm:endDate": {
+          "meta:status": "deprecated",
           "type": "string",
           "format": "date-time",
           "title": "End Date",
           "description": "Activity End Date"
         },
         "xdm:placement": {
+          "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Offer Placement",
           "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
         },
         "xdm:filter": {
+          "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Offer Filter",
           "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter"
         },
         "xdm:fallback": {
+          "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Fallback Offer",
@@ -73,16 +85,17 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/offer-activity"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "required": [
-        "xdm:name",
-        "xdm:status",
-        "xdm:placement",
-        "xdm:filter",
-        "xdm:fallback"
-      ]
+      "$ref": "https://ns.adobe.com/experience/decisioning/activity"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/criteria"
+    },
+    {
+      "$ref": "#/definitions/offer-activity"
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

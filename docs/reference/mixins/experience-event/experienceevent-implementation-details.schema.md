@@ -14,7 +14,7 @@ Information related to the software used to collect an ExperienceEvent such as e
 
 * Implementation Details `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation details](../../datatypes/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
+  * [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 ## Implementation Details Example
@@ -48,7 +48,7 @@ The details of the software used to collect the ExperienceEvent.
 ### xdm:implementationDetails Type
 
 
-* [Implementation details](../../datatypes/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
+* [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

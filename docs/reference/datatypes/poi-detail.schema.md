@@ -14,11 +14,25 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 
 * Point of interest details `https://ns.adobe.com/xdm/context/poi-detail`
   * [Extensibility base schema](extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Beacon](beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
+  * [Beacon](interactions/beacon-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/beacon-interaction-details`
   * [Geo interaction details](geo-interaction-details.schema.md) `https://ns.adobe.com/xdm/context/geo-interaction-details`
 
 
 ## Point of interest details Examples
+
+```json
+{
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:name": "Acme Hotel Tokyo",
+  "xdm:category": "Resorts",
+  "xdm:type": "Hotel",
+  "xdm:locatingType": "gps",
+  "xdm:geoInteractionDetails": {
+    "xdm:distanceToCenter": 100,
+    "xdm:accuracy": 30
+  }
+}
+```
 
 ```json
 {
@@ -31,20 +45,6 @@ A point or place of interest (POI) Details. Used to capture the technical and me
     "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
     "xdm:beaconMajor": 100,
     "xdm:beaconMinor": 23
-  }
-}
-```
-
-```json
-{
-  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
-  "xdm:name": "Acme Hotel Tokyo",
-  "xdm:category": "Resorts",
-  "xdm:type": "Hotel",
-  "xdm:locatingType": "gps",
-  "xdm:geoInteractionDetails": {
-    "xdm:distanceToCenter": 100,
-    "xdm:accuracy": 30
   }
 }
 ```
@@ -98,7 +98,7 @@ Beacon details active for the POI interaction.
 ### xdm:beaconInteractionDetails Type
 
 
-* [Beacon](beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details`
+* [Beacon](interactions/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details`
 
 
 

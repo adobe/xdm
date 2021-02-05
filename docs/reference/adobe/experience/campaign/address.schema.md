@@ -9,7 +9,7 @@ Address extension properties specific to Adobe Campaign.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/campaign/address.schema.json](adobe/experience/campaign/address.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/campaign/address.schema.json](adobe/experience/campaign/address.schema.json) |
 
 # Address Extensions for Adobe Campaign Properties
 

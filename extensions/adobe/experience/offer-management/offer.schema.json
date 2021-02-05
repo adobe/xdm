@@ -10,8 +10,8 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
-  "title": "Offer",
-  "description": "This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context.",
+  "title": "Offer (deprecated)",
+  "description": "This is the base concept for offers that are used for personalization and those that serve as fallback choices when none of offers for personalization qualify at within the given context. (deprecated)",
   "definitions": {
     "offer": {
       "properties": {
@@ -77,5 +77,6 @@
     {
       "required": ["xdm:name", "xdm:status"]
     }
-  ]
+  ],
+  "meta:status": "deprecated"
 }

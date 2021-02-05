@@ -1,0 +1,26 @@
+{
+  "xdm:personalFinances": {
+    "xdm:balanceTransfer": {
+      "xdm:transaction": {
+        "xdm:balanceTransfer": "",
+        "xdm:formApplicationFee": "",
+        "xdm:toolUsageTransaction": "",
+        "xdm:transactionAmount": "67.85",
+        "xdm:transactionID": "T10291832",
+        "xdm:transactionDate": "2021-01-07",
+        "xdm:transactionType": "transfer"
+      }
+    },
+    "xdm:balanceTransferAccount": {
+      "xdm:financial-account": {
+        "xdm:balanceTransferAccount": "",
+        "xdm:currentAccountBalance": "678.93",
+        "xdm:financialAccountID": "1019283724",
+        "xdm:financialAccountName": "Personal Checking",
+        "xdm:financialAccountOwner": "TBD",
+        "xdm:financialAccountType": "checking",
+        "xdm:openedDate": "2021-02-17"
+      }
+    }
+  }
+}

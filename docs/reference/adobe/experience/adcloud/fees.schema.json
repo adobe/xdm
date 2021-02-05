@@ -101,6 +101,7 @@
             "$ref": "#/definitions/fees"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:DSPMediaFee": 23,

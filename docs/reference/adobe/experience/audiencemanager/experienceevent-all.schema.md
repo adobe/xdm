@@ -9,7 +9,7 @@ Adobe Audience Manager ExperienceEvent full extension. Contains all Solution add
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/audiencemanager/experienceevent-all.schema.json](adobe/experience/audiencemanager/experienceevent-all.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/audiencemanager/experienceevent-all.schema.json](adobe/experience/audiencemanager/experienceevent-all.schema.json) |
 
 # Adobe Audience Manager ExperienceEvent Full Extension Properties
 

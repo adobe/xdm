@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/activity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "title": "Decision Activity",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": false,
+  "description": "Controls a decisioning process and describes some form of action that is planned to happen, is currently happening, or has already happened. The purpose of the activity is to execute a number of steps to return an ordered selection of best options that qualify in a given context (time-bound, profile-bound, option-bound, context data) or return or a default option (fallback). A decision activity can be thought of as a kind of https://www.w3.org/ns/activitystreams#Activity or https://schema.org/Action. Those entities imply an actor/agent which is a software construct (service).",
+  "definitions": {
+    "activity-details": {
+      "type": "object",
+      "properties": {
+        "repo:etag": {
+          "title": "Activity ETag",
+          "type": "string",
+          "description": "The revision that the decision activity object was at when the snapshot was taken."
+        },
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "title": "Activity Name",
+          "type": "string",
+          "description": "Activity name. The name is displayed in various user interfaces."
+        },
+        "https://ns.adobe.com/experience/decisioning/startTime": {
+          "title": "Activity Start Date and Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+        },
+        "https://ns.adobe.com/experience/decisioning/endTime": {
+          "title": "Activity End Date and Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+        },
+        "https://ns.adobe.com/experience/decisioning/fallback": {
+          "title": "Fallback Option",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced."
+        }
+      }
+    },
+    "activity-snapshot-identifier": {
+      "type": "object",
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/activityID": {
+          "title": "Activity Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "A unique, immutable identifier for the decision activity."
+        },
+        "repo:etag": {
+          "title": "Activity ETag",
+          "type": "string",
+          "description": "The revision that the decision activity object was at when the snapshot was taken."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/activity-details"
+    }
+  ],
+  "meta:status": "stable"
+}

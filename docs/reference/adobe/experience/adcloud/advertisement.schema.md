@@ -9,19 +9,9 @@ Adobe Advertising Cloud Ad Details.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/advertisement.schema.json](adobe/experience/adcloud/advertisement.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/advertisement.schema.json](adobe/experience/adcloud/advertisement.schema.json) |
 
 ## Adobe Advertising Cloud Ad Details Examples
-
-```json
-{
-  "xdm:adId": "4116904851",
-  "xdm:runtime": "HTML5",
-  "xdm:adClass": "video",
-  "xdm:adUnitType": "HTML5",
-  "xdm:promotedAssetId": "4116761052"
-}
-```
 
 ```json
 {
@@ -32,6 +22,16 @@ Adobe Advertising Cloud Ad Details.
   "xdm:campaignID": "663049855",
   "xdm:networkType": "search",
   "xdm:matchType": "broad"
+}
+```
+
+```json
+{
+  "xdm:adId": "4116904851",
+  "xdm:runtime": "HTML5",
+  "xdm:adClass": "video",
+  "xdm:adUnitType": "HTML5",
+  "xdm:promotedAssetId": "4116761052"
 }
 ```
 

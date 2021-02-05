@@ -1,0 +1,106 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/option",
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "type": "object",
+    "title": "Decision Option",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "description": "This class is used to capture minimum properties that are required to define the concept of a decision option. A decision option represents one of the possible selections or choices for a decision.",
+    "definitions": {
+        "option-details": {
+            "properties": {
+                "repo:etag": {
+                    "title": "Decision Option ETag",
+                    "type": "string",
+                    "description": "The revision that the decision option object was at when the snapshot was taken."
+                },
+                "https://ns.adobe.com/experience/decisioning/name": {
+                    "type": "string",
+                    "title": "Decision Option Name",
+                    "description": "Option name. The name is displayed in various user interfaces."
+                },
+                "https://ns.adobe.com/experience/decisioning/characteristics": {
+                    "title": "Decision Option Characteristics",
+                    "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "string",
+                        "description": "Value of the property."
+                    }
+                }
+            }
+        },
+        "option-snapshot-identifier": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/optionID": {
+                    "title": "Decision Option Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "A unique identifier for the decision option."
+                },
+                "repo:etag": {
+                    "title": "Decision Option ETag",
+                    "type": "string",
+                    "description": "The revision that the decision option object was at when the snapshot was taken."
+                }
+            }
+        },
+        "option-snapshot-tags": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/tags": {
+                    "type": "array",
+                    "title": "Decision Option Tags",
+                    "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag"
+                    }
+                }
+            }
+        },
+        "option-snapshot-measures": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The total number a particular option was proposed so far across all profiles."
+                },
+                "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/option-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "personalized-offer:e526a1503bf29e9",
+            "https://ns.adobe.com/experience/decisioning/name": "Introduction to machine learning",
+            "https://ns.adobe.com/experience/decisioning/characteristics": {
+                "syllable": "ML001",
+                "duration": "30",
+                "durationUnit": "minutes",
+                "level": "Beginner"
+            }
+        }
+    ]
+}

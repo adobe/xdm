@@ -9,7 +9,7 @@ Adobe Campaign full extension for Profile
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/campaign/profile-all.schema.json](adobe/experience/campaign/profile-all.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/campaign/profile-all.schema.json](adobe/experience/campaign/profile-all.schema.json) |
 
 # Adobe Campaign Profile Full Extension Properties
 

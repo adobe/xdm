@@ -84,7 +84,7 @@ Subscriptions that the profile is entitled to including terminated, expired, or 
 Array type: Subscription
 
 All items must be of the type:
-* [Subscription](../../datatypes/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
+* [Subscription](../../datatypes/industry-verticals/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription`
 
 
 

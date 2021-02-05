@@ -71,6 +71,7 @@
             "$ref": "#/definitions/campaign"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:accountId": "123456",

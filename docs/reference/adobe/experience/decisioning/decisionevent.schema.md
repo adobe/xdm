@@ -9,7 +9,7 @@ A decision event is used to capture observations about the outcome and context o
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent.schema.json](adobe/experience/decisioning/decisionevent.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent.schema.json](adobe/experience/decisioning/decisionevent.schema.json) |
 ## Schema Hierarchy
 
 * XDM Decision Event `https://ns.adobe.com/experience/decisioning/decisionevent`

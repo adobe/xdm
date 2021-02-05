@@ -9,7 +9,7 @@ Snapshot of the properties of the decision activity. A decision activity is an e
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/activity-detail.schema.json](adobe/experience/decisioning/activity-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/activity-detail.schema.json](adobe/experience/decisioning/activity-detail.schema.json) |
 ## Schema Hierarchy
 
 * Decision Activity Detail `https://ns.adobe.com/experience/decisioning/activity-detail`

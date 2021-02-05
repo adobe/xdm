@@ -1,0 +1,95 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/placement",
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "meta:abstract": false,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Decision Content Placement",
+    "description": "A content placement describes a location or place where the content of a proposed decision option is rendered into. It is used to set technical constraints for content that the decision supplies.",
+    "definitions": {
+        "placement-details": {
+            "properties": {
+                "repo:etag": {
+                    "title": "Placement ETag",
+                    "type": "string",
+                    "description": "The revision that the placement object was at when the snapshot was taken."
+                },
+                "https://ns.adobe.com/experience/decisioning/name": {
+                    "title": "Placement Name",
+                    "type": "string",
+                    "description": "An assigned name for the placement to refer to it in human interactions"
+                },
+                "https://ns.adobe.com/experience/decisioning/description": {
+                    "type": "string",
+                    "title": "Placement Description",
+                    "description": "Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method."
+                },
+                "https://ns.adobe.com/experience/decisioning/channelID": {
+                    "title": "Placement's Channel Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+                },
+                "https://ns.adobe.com/experience/decisioning/componentType": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details#/definitions/content-component-type",
+                    "title": "Content Component Type",
+                    "description": "A constraint for the content that can be shown in the place described by this placement. Component Types for example are: image link, html block or plain text."
+                },
+                "https://ns.adobe.com/experience/decisioning/contentTypes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "MIME Media Type",
+                        "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format.",
+                        "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?"
+                    }
+                }
+            }
+        },
+        "placement-snapshot-identifier": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/placementID": {
+                    "title": "Placement Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "A unique identifier for the decision placement."
+                },
+                "repo:etag": {
+                    "title": "Placement ETag",
+                    "type": "string",
+                    "description": "The revision that the placement object was at when the snapshot was taken."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/placement-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "@id": "xcore:placement:12345",
+            "https://ns.adobe.com/experience/decisioning/name": "Partner Newsletter Signup Section",
+            "https://ns.adobe.com/experience/decisioning/description": "HTML Fragment that adapts to width between 260px and 560px, embeddable in an HTML formatted email. The content must be viewable by a typical email client. It should only use static, table-based layouts HTML tables and nested tables simple, inline CSS and web safe fonts. It cannot assume JavaScript or XHR requests will be processed. iframes, forms, div layering must not be used and content types like embedded audio, embedded video or flash are not allowed. The metrics to produce during interaction with the widget are: https://ns.adobe.com/xdm/data/metrics/web/linkclicks and the experience containing the placement must be asked to produce an experience event referencing this placement Id and with a metric https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens",
+            "https://ns.adobe.com/experience/decisioning/channelID": "https://ns.adobe.com/xdm/channels/email",
+            "https://ns.adobe.com/experience/decisioning/componentType": "https://ns.adobe.com/experience/offer-management/content-component-html",
+            "https://ns.adobe.com/experience/decisioning/contentTypes": [
+                "text/html"
+            ]
+        }
+    ]
+}

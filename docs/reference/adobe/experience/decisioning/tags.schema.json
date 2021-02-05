@@ -1,0 +1,50 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/decisioning/tags",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/decisioning/option"
+    ],
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "type": "object",
+    "title": "Decisioning Option Tags",
+    "description": "Tagging information used to form categories of entities.",
+    "definitions": {
+        "tags": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/tags": {
+                    "type": "array",
+                    "title": "Tags",
+                    "description": "The set of tags associated with this entity. The tags are used in filter expressions to constrain the overall inventory to a sub set (category).",
+                    "items": {
+                        "type": "string",
+                        "format": "uri-reference",
+                        "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/tags"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/decisioning/tags": [
+                "xcore:tag:e5196f1d9119862"
+            ]
+        }
+    ]
+}

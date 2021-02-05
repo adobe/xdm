@@ -9,7 +9,7 @@ This mixin is used capture information regarding an interaction, response or rea
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json](adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json](adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json) |
 ## Schema Hierarchy
 
 * Experience Event - Proposition Interaction `https://ns.adobe.com/experience/decisioning/proposition-interaction`
@@ -18,31 +18,6 @@ This mixin is used capture information regarding an interaction, response or rea
 
 
 ## Experience Event - Proposition Interaction Examples
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/propositions": [
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "experience1"
-        }
-      ],
-      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionScope": "__view__"
-    },
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "personalized-offer:f67bab756ed6ee4"
-        }
-      ],
-      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionScope": "scope:12cfc3fa94281acb"
-    }
-  ]
-}
-```
 
 ```json
 {
@@ -97,6 +72,31 @@ This mixin is used capture information regarding an interaction, response or rea
           "xdm:id": "offer-activity:11cfb1fa93381aca"
         }
       }
+    }
+  ]
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/propositions": [
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "experience1"
+        }
+      ],
+      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
+      "xdm:decisionScope": "__view__"
+    },
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "personalized-offer:f67bab756ed6ee4"
+        }
+      ],
+      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+      "xdm:decisionScope": "scope:12cfc3fa94281acb"
     }
   ]
 }

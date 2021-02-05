@@ -9,7 +9,7 @@ A decision proposition reference is used to link an experience event that is a r
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition.schema.json](adobe/experience/decisioning/proposition.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition.schema.json](adobe/experience/decisioning/proposition.schema.json) |
 ## Schema Hierarchy
 
 * Decision Proposition Reference `https://ns.adobe.com/experience/decisioning/proposition`

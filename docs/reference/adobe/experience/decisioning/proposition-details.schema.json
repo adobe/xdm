@@ -47,5 +47,6 @@
         {
             "$ref": "#/definitions/proposition-details-mixin"
         }
-    ]
+    ],
+    "meta:status": "stable"
 }

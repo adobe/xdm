@@ -16,11 +16,16 @@
     ],
     "description": "A time-series based Journey Step Event Class.",
     "definitions": {
-        "properties": {}
+        "journeyStepEventClass": {
+            "properties": {}
+        }
     },
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/data/time-series"
+        },
+        {
+            "$ref": "#/definitions/journeyStepEventClass"
         }
     ],
     "meta:status": "stable",

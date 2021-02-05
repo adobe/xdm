@@ -9,7 +9,7 @@ Journey AI scores for one channel.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/campaign/journeyaiscores.schema.json](adobe/experience/campaign/journeyaiscores.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/campaign/journeyaiscores.schema.json](adobe/experience/campaign/journeyaiscores.schema.json) |
 ## Schema Hierarchy
 
 * Journey AI Scores `https://ns.adobe.com/experience/campaign/journeyaiscores`

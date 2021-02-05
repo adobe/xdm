@@ -7,31 +7,50 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/interaction-measurement",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Interaction Measurement Details",
+  "title": "Interaction Measurement Definition",
   "type": "object",
-  "meta:abstract": true,
   "meta:extensible": true,
   "description": "An interaction measurement determines how experience event properties are interpreted as outcomes. In some cases the outcome is provided directly with the event and no additional mapping is required, in other cases a calculation must be applied to test if the event is a measurable outcome and what the measured value should be.",
   "definitions": {
-    "interaction-measurement-datatype": {
+    "interaction-measurement-definition": {
       "properties": {
-        "xdm:condition": {
-          "type": "string",
-          "title": "Event condition",
-          "description": "A predicate that is evaluated against the experience event to test if a measurable outcome has been achieved. This predicate could check if the value of a property matches a given constant or could be a more complex evaluation. An outcome will be recorded with the event if and only if the predicate evaluates to 'true'."
+        "xdm:observation": {
+          "type": "object",
+          "title": "Event observation",
+          "description": "A qualification that is evaluated against the experience event to test if a measurable outcome has been achieved. This mapping could check if the value of a property matches a given constant or could be a more complex evaluation. An outcome will be recorded with the event if and only if the implied condition evaluates to 'true'",
+          "properties": {
+            "xdm:mapping": {
+              "type": "string",
+              "title": "Mapping type",
+              "description": "Indicator for how the observation is mapped into an outcome value",
+              "enum": ["direct", "eventTypeValue", "fieldValue", "predicate"],
+              "default": "direct"
+            },
+            "xdm:value": {
+              "type": "string",
+              "title": "Observation mapping",
+              "description": "The expression or term that defines how the outcome is derived from the observation. The presence and interpretation of this 'value' is based on the 'mapping' type"
+            },
+            "xdm:field": {
+              "type": "string",
+              "title": "Field name",
+              "description": "The field that contains the observed value.",
+              "default": "xdm:eventType"
+            }
+          }
         },
         "xdm:outcome": {
           "type": "object",
           "properties": {
+            "@id": {
+              "type": "string",
+              "title": "Outcome identifier",
+              "description": "Unique value that identifies the outcome of the interaction (nominal value)."
+            },
             "xdm:field": {
               "type": "string",
               "title": "Outcome property path",
               "description": "Property path where the outcome is inserted into the XDM event."
-            },
-            "xdm:value": {
-              "type": "string",
-              "title": "Outcome property value",
-              "description": "Property value that measures the outcome of the interaction. The value is inserted into the current experience event using the proporty specified in 'field'. An outcome can have a nominal value (e.g. success/failure), ordinal value (e.g. 4 star rating value submitted) or numerical value (e.g. a measurable quantity was achieved)."
             }
           },
           "title": "Interaction outcome measurement",
@@ -45,7 +64,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/interaction-measurement-datatype"
+      "$ref": "#/definitions/interaction-measurement-definition"
     }
   ],
   "meta:status": "experimental"

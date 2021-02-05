@@ -37,6 +37,7 @@ This class is used to capture minimum properties that are required to define the
 | [@id](#id) | `string` | Optional | [Record Schema](../../../behaviors/record.schema.md#id) |
 | [https://ns.adobe.com/experience/decisioning/characteristics](#httpsnsadobecomexperiencedecisioningcharacteristics) | `object` | Optional | Decision Option (this schema) |
 | [https://ns.adobe.com/experience/decisioning/name](#httpsnsadobecomexperiencedecisioningname) | `string` | Optional | Decision Option (this schema) |
+| [repo:etag](#repoetag) | `string` | Optional | Decision Option (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -104,6 +105,26 @@ Option name. The name is displayed in various user interfaces.
 
 
 
+## repo:etag
+### Decision Option ETag
+
+The revision that the decision option object was at when the snapshot was taken.
+
+`repo:etag`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:etag Type
+
+
+`string`
+
+
+
+
+
+
 # Decision Option Definitions
 
 | Property | Type | Group |
@@ -112,7 +133,6 @@ Option name. The name is displayed in various user interfaces.
 | [https://ns.adobe.com/experience/decisioning/propositionsProfile](#httpsnsadobecomexperiencedecisioningpropositionsprofile) | reference | `https://ns.adobe.com/experience/decisioning/option#/definitions/option-snapshot-measures` |
 | [https://ns.adobe.com/experience/decisioning/propositionsTotal](#httpsnsadobecomexperiencedecisioningpropositionstotal) | reference | `https://ns.adobe.com/experience/decisioning/option#/definitions/option-snapshot-measures` |
 | [https://ns.adobe.com/experience/decisioning/tags](#httpsnsadobecomexperiencedecisioningtags) | `string[]` | `https://ns.adobe.com/experience/decisioning/option#/definitions/option-snapshot-tags` |
-| [repo:etag](#repoetag) | `string` | `https://ns.adobe.com/experience/decisioning/option#/definitions/option-snapshot-identifier` |
 
 ## https://ns.adobe.com/experience/decisioning/optionID
 ### Decision Option Identifier
@@ -195,26 +215,6 @@ All items must be of the type:
   
 An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag
 
-
-
-
-
-
-
-## repo:etag
-### Decision Option ETag
-
-The revision that the decision option object was at when the snapshot was taken.
-
-`repo:etag`
-* is optional
-* type: `string`
-* defined in this schema
-
-### repo:etag Type
-
-
-`string`
 
 
 

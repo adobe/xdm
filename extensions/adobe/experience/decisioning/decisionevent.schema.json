@@ -33,22 +33,6 @@
           "title": "Experience Reference",
           "type": "string",
           "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
-        },
-        "https://ns.adobe.com/experience/decisioning/algorithmID": {
-          "title": "Algorithm Reference",
-          "type": "string",
-          "format": "uri-reference",
-          "description": "Unique identifier for the algorithm used to make the decision, if applicable."
-        },
-        "https://ns.adobe.com/experience/decisioning/trafficType": {
-          "title": "Traffic Type",
-          "type": "string",
-          "description": "The class of algorithm/policy that was used to compute this decision. 'Contextual Traffic' indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
-          "meta:enum": {
-            "random": "Random Traffic",
-            "contextual": "Contextual Traffic",
-            "noncontextual": "Non-Contextual Traffic"
-          }
         }
       }
     },

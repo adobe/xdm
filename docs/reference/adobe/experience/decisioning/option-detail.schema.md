@@ -9,7 +9,7 @@ Detail about the entity that represents one of the possible selections or choice
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/option-detail.schema.json](adobe/experience/decisioning/option-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/option-detail.schema.json](adobe/experience/decisioning/option-detail.schema.json) |
 ## Schema Hierarchy
 
 * Decision Option Detail `https://ns.adobe.com/experience/decisioning/option-detail`

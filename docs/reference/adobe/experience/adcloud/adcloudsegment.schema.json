@@ -46,6 +46,7 @@
             "$ref": "#/definitions/adcloudsegment"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:identityMap": {

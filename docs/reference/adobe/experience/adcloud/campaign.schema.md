@@ -9,7 +9,7 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/campaign.schema.json](adobe/experience/adcloud/campaign.schema.json) |
 
 ## Ad Campaign Detail Examples
 
@@ -47,23 +47,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
-  "xdm:id": "100001061",
-  "xdm:campaignId": "10001234",
-  "xdm:campaignName": "My First Campaign",
-  "xdm:campaignDescription": "Branded Mobile Campaign",
-  "xdm:campaignStatus": "Active",
-  "xdm:channelType": "Search",
-  "xdm:budget": 123.45,
-  "xdm:budgetType": "Monthly",
-  "xdm.adDeliveryType": "Standard",
-  "xdm.CampaignObjective": "visit_web",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
   "@id": "100001061",
   "searchads:campaignId": "10001234",
   "searchads:accountId": "10001456",
@@ -75,6 +58,23 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "searchads:budgetType": "Monthly",
   "searchads.adDeliveryType": "Standard",
   "searchads.CampaignObjective": "visit_web",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+}
+```
+
+```json
+{
+  "xdm:id": "100001061",
+  "xdm:campaignId": "10001234",
+  "xdm:campaignName": "My First Campaign",
+  "xdm:campaignDescription": "Branded Mobile Campaign",
+  "xdm:campaignStatus": "Active",
+  "xdm:channelType": "Search",
+  "xdm:budget": 123.45,
+  "xdm:budgetType": "Monthly",
+  "xdm.adDeliveryType": "Standard",
+  "xdm.CampaignObjective": "visit_web",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

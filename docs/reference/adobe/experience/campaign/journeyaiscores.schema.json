@@ -46,6 +46,7 @@
             "$ref": "#/definitions/journeyaiscores"
         }
     ],
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:fatigue": {

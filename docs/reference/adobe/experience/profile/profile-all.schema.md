@@ -9,7 +9,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/profile/profile-all.schema.json](adobe/experience/profile/profile-all.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/profile/profile-all.schema.json](adobe/experience/profile/profile-all.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Unified Profile Service Profile Union Extension `https://ns.adobe.com/experience/profile/profile-all`

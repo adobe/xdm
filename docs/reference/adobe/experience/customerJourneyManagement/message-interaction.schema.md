@@ -59,6 +59,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `click` | Link in a message is clicked by the user. |
 | `open` | Either Message is open by the user, or in case of push, clicking the message opened the mobile application. |
 | `action` |  |
+| `spam_complaint` | Message is marked as spam by the user. |
 
 
 

@@ -77,7 +77,7 @@
             "$ref": "#/definitions/journeyai-engagement-scores"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/experience/intelligentServices/journeyAI": {

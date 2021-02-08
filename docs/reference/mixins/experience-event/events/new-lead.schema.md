@@ -20,18 +20,18 @@ Use for information regarding lead operation new lead events.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:leadOpearation](#xdmleadopearation) | `object` | Optional | New Lead (this schema) |
+| [xdm:leadOperation](#xdmleadoperation) | `object` | Optional | New Lead (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:leadOpearation
+## xdm:leadOperation
 ### Lead Operation
 
-`xdm:leadOpearation`
+`xdm:leadOperation`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:leadOpearation Type
+### xdm:leadOperation Type
 
 
 `object` with following properties:

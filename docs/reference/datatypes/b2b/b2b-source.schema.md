@@ -9,7 +9,7 @@ This Data Type is used to capture B2B/CRM Source identifiers.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/b2b/b2b-source.schema.json](datatypes/b2b/b2b-source.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/b2b/b2b-source.schema.json](datatypes/b2b/b2b-source.schema.json) |
 ## Schema Hierarchy
 
 * B2B Source `https://ns.adobe.com/xdm/datatypes/b2b-source`

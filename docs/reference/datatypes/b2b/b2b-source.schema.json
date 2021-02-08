@@ -41,7 +41,7 @@
             "$ref": "#/definitions/b2b-source"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "xdm:ID": "1234567",

@@ -70,55 +70,28 @@
                 "xdm:identifier": {
                     "title": "Organization identifier",
                     "type": "object",
-                    "meta:keys": {
-                        "https://ns.adobe.com/xdm/external/dnb": "Dun & Bradstreet",
-                        "https://ns.adobe.com/xdm/external/angellist": "Angellist"
-                    },
-                    "properties": {
-                        "://": {
+                    "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID or preferably URI of the organization as defined by the identification service.",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "title": "Organization identifier",
+                        "type": "array",
+                        "items": {
                             "type": "string"
                         }
-                    },
-                    "patternProperties": {
-                        ".+://.+": {
-                            "type": "string",
-                            "description": "ID of the organization according to the service."
-                        }
-                    },
-                    "examples": [
-                        {
-                            "https://ns.adobe.com/xdm/external/dnb": "1234",
-                            "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
-                        }
-                    ],
-                    "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID or preferably URI of the organization as defined by the identification service."
+                    }
                 },
                 "xdm:classifier": {
                     "title": "Market or industry classifier",
                     "type": "object",
-                    "meta:keys": {
-                        "https://ns.adobe.com/xdm/external/isic4": "International Standard of Industrial Classification of All Economic Activities (ISIC)",
-                        "https://ns.adobe.com/xdm/external/sic": "Standard Industrial Classification",
-                        "https://ns.adobe.com/xdm/external/naics": "North American Industry Classification System"
-                    },
-                    "properties": {
-                        "://": {
+                    "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID or preferably URI of the organization as defined by the classification service.",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "title": "Market or industry classifier",
+                        "type": "array",
+                        "items": {
                             "type": "string"
                         }
-                    },
-                    "patternProperties": {
-                        ".+://.+": {
-                            "type": "string",
-                            "description": "ID of the market or industry according to the service."
-                        }
-                    },
-                    "examples": [
-                        {
-                            "https://ns.adobe.com/xdm/external/sic": "1234",
-                            "https://ns.adobe.com/xdm/external/naics": "1234"
-                        }
-                    ],
-                    "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID or preferably URI of the organization as defined by the classification service."
+                    }
                 }
             }
         }
@@ -159,12 +132,24 @@
                 },
                 "schema:telephone": "1-408-800-0000",
                 "xdm:identifier": {
-                    "https://ns.adobe.com/xdm/external/dnb": "1234",
-                    "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
+                    "identifiers": [
+                        {
+                            "https://ns.adobe.com/xdm/external/dnb": "1234"
+                        },
+                        {
+                            "https://ns.adobe.com/xdm/external/angellist": "https://angel.co/adobe"
+                        }
+                    ]
                 },
                 "xdm:classifier": {
-                    "https://ns.adobe.com/xdm/external/sic": "1234",
-                    "https://ns.adobe.com/xdm/external/naics": "1234"
+                    "classifiers": [
+                        {
+                            "https://ns.adobe.com/xdm/external/sic": "1234"
+                        },
+                        {
+                            "https://ns.adobe.com/xdm/external/naics": "1234"
+                        }
+                    ]
                 }
             }
         }

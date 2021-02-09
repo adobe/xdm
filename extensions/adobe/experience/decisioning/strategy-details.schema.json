@@ -29,7 +29,7 @@
         "xdm:strategyID": {
           "type": "string",
           "title": "Step Strategy",
-          "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step reports is performed according to a strategy."
+          "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy and the chosen strategy is recorded to measure its performance."
         },
         "xdm:algorithmID": {
           "title": "Algorithm Reference",

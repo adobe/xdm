@@ -14,5 +14,8 @@
       "xdm:algorithmID": "ts",
       "xdm:trafficType": "noncontextual"
     }
-  ]
+  ],
+  "xdm:experience": {
+    "xdm:id": "ExperienceA"
+  }
 }

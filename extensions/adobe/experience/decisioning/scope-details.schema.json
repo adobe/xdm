@@ -49,8 +49,23 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details"
           },
-          "title": "Execution Strategy Details for the Scope",
-          "description": "The steps that were executed when the decision was made. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
+          "title": "Strategy Step Details",
+          "description": "The steps that were executed when the decision was made."
+        },
+        "xdm:experience": {
+          "title": "Selected Experience Option",
+          "description": "The experience that was selected when the decision was made.",
+          "$ref": "#/definitions/experience-option-details"
+        }
+      }
+    },
+    "experience-option-details": {
+      "properties": {
+        "xdm:id": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Experience Identifier",
+          "description": "A unique identifier for the decision option."
         }
       }
     }

@@ -484,7 +484,6 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 - `meta:conditionalField`
 - `meta:conditionalValue`
 
-
 ##### Soft and Hard Enumerations
 
 XDM uses the notion of hard and soft enumerations.

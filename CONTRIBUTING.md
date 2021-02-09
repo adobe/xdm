@@ -240,7 +240,7 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 			  "type": "string",
 			  "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
 			}
-		  }		
+		  }
 	  }
     }
   },
@@ -526,4 +526,4 @@ Every week, the PRs posted on github are reviewed by the XDM team. They are eith
 
 All approved PRs are deployed to INT/STG environments on the following Monday. They are pushed to PROD a week after.
 
-A global component release summary is sent out every week. 
+A global component release summary is sent out every week.

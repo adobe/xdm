@@ -166,14 +166,16 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 `npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
 
 ### Json file location guidelines.
+
 - All the XDM standard JSON files should be placed under their respective directories on GITHUB.
 - Classes should be placed under xdm/components/classes/
-- Mixins should be placed under xdm/components/mixins/<ClassName>/. If a mixin is extending more than one class then the should be under xdm/components/mixins/shared/ 
+- Mixins should be placed under xdm/components/mixins/<ClassName>/. If a mixin is extending more than one class then the should be under xdm/components/mixins/shared/
 - Data Types should be placed under components/datatypes/
 - Any global Schemas which are not extendable should be under xdm/schemas/
 - Any internal solution specific schemas should be defined under xdm/extensions/
 
 ### Schema design general guidelines
+
 - Always start introducing new properties by mapping them to the existing set of Classes, Mixins and Data types.
 - See if you can enhance existing Mixins and Data types by adding the un-mapped properties from the above step.
 - To itroduce a new entity in XDM, only add a new class if the new business concept could not be added by existing set of XDM classes.
@@ -182,6 +184,7 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 - Think about wrapping the root level attributes in some business context/category.
 
 #### No categorization example
+
 ```json
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
@@ -212,7 +215,9 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
   ]
 }
 ```
+
 #### With categorization
+
 ```json
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
@@ -246,8 +251,9 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
   ]
 }
 ```
---Create Data Types only for the cases where you see re-usability of the properties in multiple MIXINS else, define those properties inline within the MIXINs.
---If a certain data type you create will always be used inside only one MIXIN, then inline the data type properties within the MIXIN itself.
+
+- Create Data Types only for the cases where you see re-usability of the properties in multiple MIXINS else, define those properties inline within the MIXINs.
+- If a certain data type you create will always be used inside only one MIXIN, then inline the data type properties within the MIXIN itself.
 
 ### Re-Use and Modularity
 

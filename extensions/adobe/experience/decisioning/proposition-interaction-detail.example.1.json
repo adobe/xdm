@@ -4,7 +4,7 @@
       "xdm:id": "ExperienceB",
       "xdm:data": {
         "type": "setHtml",
-        "content": "<div class='banner_img d-none d-lg-block'><img n="" src='https://contentviewer.s3.amazonaws.com/helium/women_banner.jpeg?w=780&amp;h=408&amp;crop=1' alt=''>\n</div>",
+        "content": "<div class='banner_img d-none d-lg-block'><img src='https://contentviewer.s3.amazonaws.com/helium/women_banner.jpeg?w=780&amp;h=408&amp;crop=1' alt=''>\n</div>",
         "selector": "#root > DIV.react-spectrum-provider:eq(0) > DIV.app-wrapper:eq(0) > DIV.app-content:eq(0) > DIV:nth-of-type(1) > SECTION.banner_part:eq(0)",
         "prehidingSelector": "#root > DIV:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(2) > DIV:nth-of-type(1) > SECTION:nth-of-type(1)"
       }

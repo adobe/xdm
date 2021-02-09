@@ -9,7 +9,7 @@ This mixin contains JourneyAI Engagement Scores, which provides individual custo
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/intelligentServices/profile-journeyai-engagementscores.schema.json](adobe/experience/intelligentServices/profile-journeyai-engagementscores.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/intelligentServices/profile-journeyai-engagementscores.schema.json](adobe/experience/intelligentServices/profile-journeyai-engagementscores.schema.json) |
 
 ## Intelligent Services JourneyAI Engagement Scores Example
 ```json

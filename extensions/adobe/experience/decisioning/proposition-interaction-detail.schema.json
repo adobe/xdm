@@ -35,6 +35,16 @@
             "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in."
           }
         },
+        "xdm:experienceID": {
+          "title": "Experience Reference",
+          "type": "string",
+          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
+        },
+        "xdm:scopeDetails": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
+          "title": "Decision Scope Snapshot",
+          "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
+        },
         "xdm:decisionEventID": {
           "meta:status": "deprecated",
           "type": "string",

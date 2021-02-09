@@ -34,15 +34,6 @@
           "title": "Activity Detail for the Scope",
           "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity (why and how) that makes the decision, other scopes will use a dynamic strategy determine which activity is used. Those scopes will list executionDetails for steps that were performed during decision-making."
         },
-        "xdm:strategy": {
-          "meta:status": "experimental",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details"
-          },
-          "title": "Execution Strategy Details for the Scope",
-          "description": "The steps that were executed when the decision was made. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
-        },
         "xdm:interactionMeasurements": {
           "meta:status": "experimental",
           "type": "array",
@@ -51,6 +42,15 @@
           },
           "title": "Interaction Measurements used in this Scope",
           "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity)."
+        },
+        "xdm:strategy": {
+          "meta:status": "experimental",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details"
+          },
+          "title": "Execution Strategy Details for the Scope",
+          "description": "The steps that were executed when the decision was made. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
         }
       }
     }

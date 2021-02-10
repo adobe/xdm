@@ -20,7 +20,7 @@
     "xdm:experience": {
       "xdm:id": "ExperienceB"
     },
-    "xdm:strategy": [
+    "xdm:strategies": [
       {
         "xdm:step": "targeting",
         "xdm:algorithmID": "randomuniform",

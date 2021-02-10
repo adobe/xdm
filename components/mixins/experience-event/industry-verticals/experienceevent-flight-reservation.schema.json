@@ -1,0 +1,102 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Flight Reservation",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
+  ],
+  "description": "Collects all details specific to a flight reservation.",
+  "definitions": {
+    "flight-reservation": {
+      "properties": {
+        "xdm:flightReservation": {
+          "type": "object",
+          "properties": {
+            "xdm:arrivalLocation": {
+              "title": "Arrival Location",
+              "type": "string",
+              "description": "Tracks the arrival city airport code.",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "xdm:departureLocation": {
+              "title": "Departure Location",
+              "type": "string",
+              "description": "Tracks the departure city airport code.",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "xdm:fareClass": {
+              "title": "Fare Class",
+              "type": "string",
+              "enum": [
+                "first class",
+                "business class",
+                "premium economy",
+                "economy"
+              ],
+              "description": "The fare class of the flight being reserved."
+            },
+            "xdm:flightDate": {
+              "title": "Flight Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "The date of the flight being reserved."
+            },
+            "xdm:flightNumber": {
+              "title": "Flight Number",
+              "type": "string",
+              "description": "Tracks the flight number."
+            },
+            "xdm:loyaltyID": {
+              "title": "Loyalty ID",
+              "type": "string",
+              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+            },
+            "xdm:passenger": {
+              "title": "Passenger",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/person",
+              "description": "Passenger info associated with the reservation."
+            },
+            "xdm:reservationID": {
+              "title": "Reservation ID",
+              "type": "string",
+              "description": ""
+            },
+            "xdm:seatMapProcess": {
+              "title": "Seat Map Process",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            },
+            "xdm:securityScreening": {
+              "title": "Security Screening",
+              "type": "string",
+              "enum": ["Standard", "PreCheck"],
+              "description": "Type of security screening the passenger is subject to."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/flight-reservation"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
+    }
+  ],
+  "meta:status": "experimental"
+}

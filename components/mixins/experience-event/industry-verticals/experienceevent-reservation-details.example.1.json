@@ -1,0 +1,59 @@
+{
+  "xdm:reservations": {
+    "xdm:ancillaryRevenue": {
+      "xdm:amount": 27.85,
+      "xdm:currencyCode": "USD"
+    },
+    "xdm:cancellation": 0,
+    "xdm:created": "2021-02-13T15:52:25+00:00",
+    "xdm:currencyCode": "USD",
+    "xdm:endDate": "2021-06-18T15:52:25+00:00",
+    "xdm:ID": "8101991J1211X",
+    "xdm:itemComparison": {
+      "xdm:comparisons": {
+        "xdm:comparisonAddition": 1,
+        "xdm:comparisonCount": 3,
+        "xdm:comparisonImpressions": 4,
+        "xdm:comparisonItems": ["TF0021", "WCAT102340P11BN", "DEL45CCP"],
+        "xdm:comparisonRemoval": 1,
+        "xdm:comparisonType": "product",
+        "xdm:comparisonView": 1
+      }
+    },
+    "xdm:length": 8,
+    "xdm:modification": 0,
+    "xdm:nonRefundableAmount": {
+      "xdm:amount": 378.58,
+      "xdm:currencyCode": "USD"
+    },
+    "xdm:numberOfAdults": 2,
+    "xdm:numberOfChildren": 3,
+    "xdm:processSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "trip review",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "reservation confirmation",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    },
+    "xdm:purpose": "personal",
+
+    "xdm:startDate": "2021-06-10T15:52:25+00:00",
+    "xdm:transaction": {
+      "xdm:transaction": {
+        "xdm:transactionAmount": 67.85,
+        "xdm:transactionDate": "2021-01-07",
+        "xdm:transactionID": "T10291832",
+        "xdm:transactionType": "transfer"
+      }
+    },
+    "xdm:triptype": "roundtrip"
+  }
+}

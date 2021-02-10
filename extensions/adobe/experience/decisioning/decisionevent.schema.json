@@ -28,11 +28,6 @@
             "$ref": "#/definitions/proposition-details"
           },
           "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
-        },
-        "https://ns.adobe.com/experience/decisioning/experienceID": {
-          "title": "Experience Reference",
-          "type": "string",
-          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
         }
       }
     },

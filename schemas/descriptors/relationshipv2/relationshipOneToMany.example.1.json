@@ -1,0 +1,11 @@
+{
+  "@type": "xdm:relationshipOneToMany",
+  "xdm:oneSideSchema": "https://ns.adobe.com/tenantA/schemas/1234",
+  "xdm:oneSideVersion": 1,
+  "xdm:manySideSchema": "https://ns.adobe.com/tenantA/schemas/abcd",
+  "xdm:manySideVersion": 1,
+  "xdm:manySideProperty": "/person-ref",
+  "xdm:manySideNamespace": "Person",
+  "xdm:oneToManyDisplayName": "Opportunity Roles",
+  "xdm:manyToOneDispalyName": "Person"
+}

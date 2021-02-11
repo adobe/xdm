@@ -22,84 +22,88 @@
   "definitions": {
     "reservations": {
       "properties": {
-        "xdm:diningReservation": {
-          "type": "object",
+        "xdm:reservations": {
           "properties": {
-            "xdm:cuisine": {
-              "title": "Cuisine",
-              "type": "string",
-              "enum": [
-                "Chinese",
-                "Steak",
-                "Sushi",
-                "Asian",
-                "Vietnamese",
-                "European",
-                "French",
-                "Italian",
-                "Burgers",
-                "Japanese",
-                "Barbecue",
-                "Mediterranean",
-                "Indian",
-                "Grill",
-                "Seafood",
-                "Steakhouse",
-                "Mexican",
-                "Greek",
-                "American",
-                "Thai"
-              ],
-              "description": "Type of restaurant cuisine."
-            },
-            "xdm:deliveryPartners": {
-              "title": "Delivery Partners",
-              "type": "string",
-              "enum": ["GrubHub", "UberEats", "DoorDash", "Other"],
-              "description": "Delivery partners available from the restaurant."
-            },
-            "xdm:location": {
-              "title": "Dining Location",
-              "$ref": "https://ns.adobe.com/xdm/context/place",
-              "description": "Physical location for the restaurant."
-            },
-            "xdm:diningOptions": {
-              "title": "Dining Options",
-              "type": "string",
-              "enum": ["Outdoor Dining", "Delivery", "Curbside", "Takeout"],
-              "description": "Delivery and dining options available from the restaurant."
-            },
-            "xdm:groupReservation": {
-              "title": "Group Reservation",
-              "type": "boolean",
-              "description": "Indicates if the reservation is being made for a group."
-            },
-            "xdm:loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the party listed in the reservation."
-            },
-            "xdm:partySize": {
-              "title": "Party Size",
-              "type": "integer",
-              "description": "Number of individuals in the dining party."
-            },
-            "xdm:priceCategory": {
-              "title": "Price Category",
-              "type": "string",
-              "enum": ["$", "$$", "$$$", "$$$$"],
-              "description": "Price category for the reservation being made."
-            },
-            "xdm:reservationTime": {
-              "title": "Reservation Time",
-              "type": "string",
-              "format": "date-time",
-              "description": "The time for which the dining reservation is booked."
-            },
-            "xdm:specialOccasion": {
-              "title": "Special Occasion",
-              "type": "boolean",
-              "description": "Indicates if the reservation is being made for a special occasion."
+            "xdm:diningReservation": {
+              "type": "object",
+              "properties": {
+                "xdm:cuisine": {
+                  "title": "Cuisine",
+                  "type": "string",
+                  "enum": [
+                    "Chinese",
+                    "Steak",
+                    "Sushi",
+                    "Asian",
+                    "Vietnamese",
+                    "European",
+                    "French",
+                    "Italian",
+                    "Burgers",
+                    "Japanese",
+                    "Barbecue",
+                    "Mediterranean",
+                    "Indian",
+                    "Grill",
+                    "Seafood",
+                    "Steakhouse",
+                    "Mexican",
+                    "Greek",
+                    "American",
+                    "Thai"
+                  ],
+                  "description": "Type of restaurant cuisine."
+                },
+                "xdm:deliveryPartners": {
+                  "title": "Delivery Partners",
+                  "type": "string",
+                  "enum": ["GrubHub", "UberEats", "DoorDash", "Other"],
+                  "description": "Delivery partners available from the restaurant."
+                },
+                "xdm:location": {
+                  "title": "Dining Location",
+                  "$ref": "https://ns.adobe.com/xdm/context/place",
+                  "description": "Physical location for the restaurant."
+                },
+                "xdm:diningOptions": {
+                  "title": "Dining Options",
+                  "type": "string",
+                  "enum": ["Outdoor Dining", "Delivery", "Curbside", "Takeout"],
+                  "description": "Delivery and dining options available from the restaurant."
+                },
+                "xdm:groupReservation": {
+                  "title": "Group Reservation",
+                  "type": "boolean",
+                  "description": "Indicates if the reservation is being made for a group."
+                },
+                "xdm:loyaltyID": {
+                  "title": "Loyalty ID",
+                  "type": "string",
+                  "description": "Includes the loyalty/rewards program ID for the party listed in the reservation."
+                },
+                "xdm:partySize": {
+                  "title": "Party Size",
+                  "type": "integer",
+                  "description": "Number of individuals in the dining party."
+                },
+                "xdm:priceCategory": {
+                  "title": "Price Category",
+                  "type": "string",
+                  "enum": ["$", "$$", "$$$", "$$$$"],
+                  "description": "Price category for the reservation being made."
+                },
+                "xdm:reservationTime": {
+                  "title": "Reservation Time",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "The time for which the dining reservation is booked."
+                },
+                "xdm:specialOccasion": {
+                  "title": "Special Occasion",
+                  "type": "boolean",
+                  "description": "Indicates if the reservation is being made for a special occasion."
+                }
+              }
             }
           }
         }

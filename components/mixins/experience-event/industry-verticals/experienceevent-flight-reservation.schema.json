@@ -22,68 +22,72 @@
   "definitions": {
     "reservations": {
       "properties": {
-        "xdm:flightReservation": {
-          "type": "object",
+        "xdm:reservations": {
           "properties": {
-            "xdm:arrivalLocation": {
-              "title": "Arrival Location",
-              "type": "string",
-              "description": "Tracks the arrival city airport code.",
-              "pattern": "^[A-Z]{3}$"
-            },
-            "xdm:departureLocation": {
-              "title": "Departure Location",
-              "type": "string",
-              "description": "Tracks the departure city airport code.",
-              "pattern": "^[A-Z]{3}$"
-            },
-            "xdm:fareClass": {
-              "title": "Fare Class",
-              "type": "string",
-              "enum": [
-                "first class",
-                "business class",
-                "premium economy",
-                "economy"
-              ],
-              "description": "The fare class of the flight being reserved."
-            },
-            "xdm:flightDate": {
-              "title": "Flight Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The date of the flight being reserved."
-            },
-            "xdm:flightNumber": {
-              "title": "Flight Number",
-              "type": "string",
-              "description": "Tracks the flight number."
-            },
-            "xdm:loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
-            },
-            "xdm:passenger": {
-              "title": "Passenger",
-              "$ref": "https://ns.adobe.com/xdm/context/person",
-              "description": "Passenger info associated with the reservation."
-            },
-            "xdm:reservationID": {
-              "title": "Reservation ID",
-              "type": "string",
-              "description": ""
-            },
-            "xdm:seatMapProcess": {
-              "title": "Seat Map Process",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            },
-            "xdm:securityScreening": {
-              "title": "Security Screening",
-              "type": "string",
-              "enum": ["Standard", "PreCheck"],
-              "description": "Type of security screening the passenger is subject to."
+            "xdm:flightReservation": {
+              "type": "object",
+              "properties": {
+                "xdm:arrivalLocation": {
+                  "title": "Arrival Location",
+                  "type": "string",
+                  "description": "Tracks the arrival city airport code.",
+                  "pattern": "^[A-Z]{3}$"
+                },
+                "xdm:departureLocation": {
+                  "title": "Departure Location",
+                  "type": "string",
+                  "description": "Tracks the departure city airport code.",
+                  "pattern": "^[A-Z]{3}$"
+                },
+                "xdm:fareClass": {
+                  "title": "Fare Class",
+                  "type": "string",
+                  "enum": [
+                    "first class",
+                    "business class",
+                    "premium economy",
+                    "economy"
+                  ],
+                  "description": "The fare class of the flight being reserved."
+                },
+                "xdm:flightDate": {
+                  "title": "Flight Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "The date of the flight being reserved."
+                },
+                "xdm:flightNumber": {
+                  "title": "Flight Number",
+                  "type": "string",
+                  "description": "Tracks the flight number."
+                },
+                "xdm:loyaltyID": {
+                  "title": "Loyalty ID",
+                  "type": "string",
+                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                },
+                "xdm:passenger": {
+                  "title": "Passenger",
+                  "$ref": "https://ns.adobe.com/xdm/context/person",
+                  "description": "Passenger info associated with the reservation."
+                },
+                "xdm:reservationID": {
+                  "title": "Reservation ID",
+                  "type": "string",
+                  "description": ""
+                },
+                "xdm:seatMapProcess": {
+                  "title": "Seat Map Process",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                  "description": "Extension of toolUsage data type."
+                },
+                "xdm:securityScreening": {
+                  "title": "Security Screening",
+                  "type": "string",
+                  "enum": ["Standard", "PreCheck"],
+                  "description": "Type of security screening the passenger is subject to."
+                }
+              }
             }
           }
         }

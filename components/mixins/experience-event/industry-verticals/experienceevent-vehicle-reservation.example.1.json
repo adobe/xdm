@@ -2,7 +2,7 @@
   "xdm:vehicleReservation": {
     "xdm:couponCode": "10OFF",
     "xdm:vehicleDifferentDropoffLocation": false,
-    "xdm:discountPercent": "0.1",
+    "xdm:discountPercent": 0.1,
     "xdm:dropOffDateTime": "2021-06-18T15:52:25+00:00",
     "xdm:vehicleDropOffLocation": "Sydney International Airport",
     "xdm:vehicleDropOffLocationCode": "SYD",

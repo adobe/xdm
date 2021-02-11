@@ -23,6 +23,7 @@
     "reservations": {
       "properties": {
         "xdm:reservations": {
+          "type": "object",
           "properties": {
             "xdm:flightReservation": {
               "type": "object",

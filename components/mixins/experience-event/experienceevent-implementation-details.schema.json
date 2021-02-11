@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:tags": {
     "industry": ["all"]
-  }
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Information related to the software used to collect an ExperienceEvent such as environment, name, and version.",
   "definitions": {

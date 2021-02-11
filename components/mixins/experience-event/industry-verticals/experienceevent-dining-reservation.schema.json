@@ -20,7 +20,7 @@
   ],
   "description": "Collects all details specific to a dining reservation.",
   "definitions": {
-    "dining-reservation": {
+    "reservations": {
       "properties": {
         "xdm:diningReservation": {
           "type": "object",
@@ -111,7 +111,7 @@
       "$ref": "#/definitions/dining-reservation"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

@@ -20,7 +20,7 @@
   ],
   "description": "Collects all details specific to a vehicle reservation.",
   "definitions": {
-    "vehicle-reservation": {
+    "reservations": {
       "properties": {
         "xdm:vehicleReservation": {
           "type": "object",
@@ -139,7 +139,7 @@
       "$ref": "#/definitions/vehicle-reservation"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

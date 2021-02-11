@@ -20,7 +20,7 @@
   ],
   "description": "Collects all details specific to a flight reservation.",
   "definitions": {
-    "flight-reservation": {
+    "reservations": {
       "properties": {
         "xdm:flightReservation": {
           "type": "object",
@@ -95,7 +95,7 @@
       "$ref": "#/definitions/flight-reservation"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

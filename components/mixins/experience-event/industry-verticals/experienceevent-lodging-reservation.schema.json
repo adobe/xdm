@@ -20,7 +20,7 @@
   ],
   "description": "Collects all details specific to a lodging reservation.",
   "definitions": {
-    "lodging-reservation": {
+    "reservations": {
       "properties": {
         "xdm:lodgingReservation": {
           "type": "object",
@@ -144,7 +144,7 @@
       "$ref": "#/definitions/lodging-reservation"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

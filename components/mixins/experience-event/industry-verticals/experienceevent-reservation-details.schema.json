@@ -17,7 +17,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Reservation details such as length, modification, refundable status, and number of rooms.",
   "definitions": {
-    "reservation-details": {
+    "reservations": {
       "properties": {
         "xdm:reservations": {
           "type": "object",

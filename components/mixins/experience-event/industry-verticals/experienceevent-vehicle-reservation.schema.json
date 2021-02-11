@@ -136,7 +136,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/vehicle-reservation"
+      "$ref": "#/definitions/reservations"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"

@@ -92,7 +92,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/flight-reservation"
+      "$ref": "#/definitions/reservations"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"

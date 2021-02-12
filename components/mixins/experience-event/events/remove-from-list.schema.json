@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Remove from list.",
+  "description": "Use to track when a person is removed from a specific list.",
   "definitions": {
     "removefromlist": {
       "properties":{

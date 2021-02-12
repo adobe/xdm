@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding lead operation interesting moments events.",
+  "description": "Use for tracking high value activities by potential customers.",
   "definitions": {
     "interestingmoment": {
       "properties": {

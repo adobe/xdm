@@ -133,28 +133,27 @@ Avoid non-semantic limits – don’t put current resource limits in the data mo
 
 ## Coding Styleguides
 
-- File names for schema files should be lower case and end with `.schema.json`
-- Include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
-- When referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
-- Don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
-- Don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
-- Ensure that there is a `meta:license` at the top of the schema
-- Use JSON Schema `draft-6`
-- Provide a `description` and `title` for each schema and each property
-- Have the `title` at the top of the schema, so that it can be found without scrolling
-- Make sure you have an example for every schema
-- All properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
-- All properties should be defined as singular unless they have an array type(listItems[]) or have a need to have a plural name ("noOfClicks").
-- All boolean properties should be prefixed with "is"/"has" as appropriate and if it gramatically makes sense. Exceptions will be reviewed on case by case basis.
-- Convention is that property names are in camelCase, when they appear in JSON
-- Restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
-- Don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
-- Run `npm test` before you make a pull request
+- file names for schema files should be lower case and end with `.schema.json`
+- include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
+- when referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
+- don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
+- don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
+- ensure that there is a `meta:license` at the top of the schema
+- use JSON Schema `draft-6`
+- provide a `description` and `title` for each schema and each property
+- have the `title` at the top of the schema, so that it can be found without scrolling
+- make sure you have an example for every schema
+- all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
+- restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
+- don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
+- run `npm test` before you make a pull request
+- convention is that property names are in camelCase, when they appear in JSON
 - Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
 - When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
-- Only add your `ID` attributes if neccessary, use the `@id` convention otherwise from the class.
-- When using `enum` in JSON schema, document all values using `meta:enum`
-- When working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
+- don't invent your own `ID` attributes, use the `@id` convention
+- don't invent your own `type` attributes, use the `@type` convention
+- when using `enum` in JSON schema, document all values using `meta:enum`
+- when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -164,96 +163,6 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 - breaks long lines where possible
 
 `npm lint` uses [Prettier](https://prettier.io), which offers integrations for consistent formatting for many editors and IDEs.
-
-### Json file location guidelines.
-
-- All the XDM standard JSON files should be placed under their respective directories on GITHUB.
-- Classes should be placed under xdm/components/classes/
-- Mixins should be placed under xdm/components/mixins/<ClassName>/. If a mixin is extending more than one class then the should be under xdm/components/mixins/shared/
-- Data Types should be placed under components/datatypes/
-- Any global Schemas which are not extendable should be under xdm/schemas/
-- Any internal solution specific schemas should be defined under xdm/extensions/
-
-### Schema design general guidelines
-
-- Always start introducing new properties by mapping them to the existing set of Classes, Mixins and Data types.
-- See if you can enhance existing Mixins and Data types by adding the un-mapped properties from the above step.
-- To itroduce a new entity in XDM, only add a new class if the new business concept could not be added by existing set of XDM classes.
-- If you have to add a new class, then keep all the properties in the class which will always be required. Then start putting mixins for different use cases.
-- Always keep in mind the uber schema of the class when you create mixins and the way you define properties.
-- Think about wrapping the root level attributes in some business context/category.
-
-#### No categorization example
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/example/first",
-  "title": "First",
-  "type": "object",
-  "meta:extensible": true,
-  "definitions": {
-    "first": {
-      "properties": {
-        "xdm:campaignName": {
-          "title": "Campaign name",
-          "type": "string",
-          "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
-        },
-        "xdm:campaignGroup": {
-          "title": "Campaign group",
-          "type": "string",
-          "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
-        }
-      }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/first"
-    }
-  ]
-}
-```
-
-#### With categorization
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/example/first",
-  "title": "First",
-  "type": "object",
-  "meta:extensible": true,
-  "definitions": {
-    "first": {
-	  "properties": {
-	    "xdm:marketing": {
-		  "properties": {
-			"xdm:campaignName": {
-			  "title": "Campaign name",
-			  "type": "string",
-			  "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
-			},
-			"xdm:campaignGroup": {
-			  "title": "Campaign group",
-			  "type": "string",
-			  "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
-			}
-		  }
-	  }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/first"
-    }
-  ]
-}
-```
-
-- Create Data Types only for the cases where you see re-usability of the properties in multiple MIXINS else, define those properties inline within the MIXINs.
-- If a certain data type you create will always be used inside only one MIXIN, then inline the data type properties within the MIXIN itself.
 
 ### Re-Use and Modularity
 
@@ -469,6 +378,7 @@ Namespaces _should not_ be used to organize or group concepts within a grammar. 
 Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
 
 - `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+- `stabilizing` : No further major changes are expected
 - `experimental` : Major changes can be expected
 - `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
 
@@ -480,9 +390,6 @@ XDM is using a couple of custom keywords that are not part of the JSON Schema st
 - `meta:auditable`: for schemas that have created and last modified dates
 - `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
 - `meta:enum`: for known values in enums, strings, and as property keys (see below)
-- `meta:tags`: to tag a Class/Mixin to a industry vertical.
-- `meta:conditionalField`
-- `meta:conditionalValue`
 
 ##### Soft and Hard Enumerations
 
@@ -518,11 +425,3 @@ One of the editors will look at the pull request within one week and flag it as 
 Every week, during the XDM working group meeting, all open pull requests will be reviewed and discussed. All feedback given in the meeting will be logged in GitHub. This real-time discussion will make sure all open pull requests will get attention.
 
 When the editors agree on the pull request, the pull request will either be merged or rejected. Until this is the case, the pull request will remain open. Editors are operating under the assumption of agreement, so that a single editor can authorize a merge.
-
-### Release cycles
-
-Every week, the PRs posted on github are reviewed by the XDM team. They are either proved to comments are posted for further clarifications.
-
-All approved PRs are deployed to INT/STG environments on the following Monday. They are pushed to PROD a week after.
-
-A global component release summary is sent out every week.

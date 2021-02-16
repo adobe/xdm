@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/emailunsubscribed
 ```
 
-Use for information regarding direct marketing unsubscribe email events.
+Use to capture details when a person unsubscribes from an email.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

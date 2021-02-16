@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
+    "description": "Use for tracking the details of a person's visit to a webpage.",
     "definitions": {
         "visitwebpage": {
             "properties": {

@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding opportunity event opportunity updated events.",
+    "description": "Use to capture details when the fields on a sales opportunity are updated.",
     "definitions": {
         "opportunityupdated": {
             "properties": {

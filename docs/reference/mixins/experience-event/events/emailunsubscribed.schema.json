@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding direct marketing unsubscribe email events.",
+    "description": "Use to capture details when a person unsubscribes from an email.",
     "definitions": {
         "emailunsubscribed": {
             "properties": {

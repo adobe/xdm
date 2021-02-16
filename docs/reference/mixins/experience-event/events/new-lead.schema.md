@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/new-lead
 ```
 
-Use for information regarding lead operation new lead events.
+Use to record the creation and details of a new marketing lead.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

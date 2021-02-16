@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/emailbouncedsoft
 ```
 
-Use for information regarding direct marketing email bounced soft events.
+Use to capture details when a marketing email to person soft-bounces.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

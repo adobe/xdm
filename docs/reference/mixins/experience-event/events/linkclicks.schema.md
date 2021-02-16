@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/linkclicks
 ```
 
-Use for information regarding linkclicks web interaction events.
+Use to capture details when a person clicks a link on a webpage.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

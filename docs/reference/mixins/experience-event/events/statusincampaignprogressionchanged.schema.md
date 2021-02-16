@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/statusincampaignprogressionchanged
 ```
 
-Use for information regarding lead operation status in campaign progression changed events.
+Use to capture details when a lead's status in a campaign changes.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

@@ -1,0 +1,120 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-loyalty-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Loyalty Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "retail",
+            "travel_and_hospitality",
+            "automotive",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Loyalty details such as ID, points, join date, program, and status. ",
+    "definitions": {
+        "loyalty-details": {
+            "properties": {
+                "xdm:loyalty": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:accountCreationStep": {
+                            "title": "Account Creation Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Loyalty account creation steps."
+                        },
+                        "xdm:joinDate": {
+                            "title": "Program Join Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date which the visitor registered for the loyalty program."
+                        },
+                        "xdm:loyaltyID": {
+                            "title": "Program ID",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program."
+                        },
+                        "xdm:points": {
+                            "title": "Program Points Balance",
+                            "type": "number",
+                            "description": "Current balance of the loyalty points/awards in a visitor's loyalty account."
+                        },
+                        "xdm:pointsExpiration": {
+                            "title": "Points Expiration",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date on which the loyalty points expire."
+                        },
+                        "xdm:pointsRedeemed": {
+                            "title": "Points Redeemed",
+                            "type": "number",
+                            "description": "Amount of points applied toward a purchase or otherwise redeemed."
+                        },
+                        "xdm:pointsAsOfDate": {
+                            "title": "Points as of date",
+                            "type": "number",
+                            "description": "Point balance on the current date"
+                        },
+                        "xdm:program": {
+                            "title": "Program Name",
+                            "type": "string",
+                            "description": "This should define the loyalty progam in which a visitor is enrolled."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/loyalty-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:loyalty": {
+                "xdm:accountCreationStep": {
+                    "xdm:tool-usage": {
+                        "xdm:toolUsageCancelled": 1,
+                        "xdm:toolUsageComplete": 1,
+                        "xdm:toolUsageFailure": 1,
+                        "xdm:toolUsageID": "T421",
+                        "xdm:toolUsageName": "loyalty redemption",
+                        "xdm:toolUsageSaved": 1,
+                        "xdm:toolUsageStart": 1,
+                        "xdm:toolUsageStep": 1,
+                        "xdm:toolUsageStepName": "select rewards",
+                        "xdm:toolUsageSubmitted": 1,
+                        "xdm:toolUsageType": "loyalty"
+                    }
+                },
+                "xdm:joinDate": "2021-01-26T15:52:25+00:00",
+                "xdm:loyaltyID": [
+                    "L79UH4XR1"
+                ],
+                "xdm:points": 8974,
+                "xdm:pointsExpiration": "2022-01-26T15:52:25+00:00",
+                "xdm:pointsRedeemed": 5148,
+                "xdm:pointsAsOfDate": 3147,
+                "xdm:program": "purchase rewards"
+            }
+        }
+    ]
+}

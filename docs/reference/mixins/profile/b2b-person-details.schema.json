@@ -45,10 +45,6 @@
                             "title": "Person Group ID",
                             "description": "Group identifier for the person.",
                             "type": "string"
-                        },
-                        "xdm:leadOrganization": {
-                            "title": "Lead Organization Properties",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
                         }
                     }
                 }
@@ -62,11 +58,6 @@
                         "xdm:accountID": {
                             "title": "Contact Account id",
                             "description": "ID of the account that’s the parent of this person.",
-                            "type": "string"
-                        },
-                        "xdm:personOwnerID": {
-                            "title": "Person Owner ID",
-                            "description": "Person owner id.",
                             "type": "string"
                         },
                         "xdm:isBlocked": {
@@ -100,19 +91,9 @@
                             "type": "string",
                             "format": "date-time"
                         },
-                        "xdm:convertedAccountID": {
-                            "title": "Converted Account ID",
-                            "description": "Account Id if the lead was successfully converted.",
-                            "type": "string"
-                        },
                         "xdm:convertedContactID": {
                             "title": "Converted Contact ID",
                             "description": "Contact Id if the lead was successfully converted.",
-                            "type": "string"
-                        },
-                        "xdm:convertedOpportunityID": {
-                            "title": "Converted Opportunity ID",
-                            "description": "Opportunity Id if the lead was successfully converted.",
                             "type": "string"
                         },
                         "xdm:personOptInOut": {
@@ -149,9 +130,6 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/context/identitymap"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/profile-inferred-person"
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/opportunityupdated
 ```
 
-Use for information regarding opportunity event opportunity updated events.
+Use to capture details when the fields on a sales opportunity are updated.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

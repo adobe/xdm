@@ -1,0 +1,11 @@
+{
+  "observation": {
+    "mapping": "predicate",
+    "format": "pql/text",
+    "value": "xEvent._tenant.interactionDetails.element = 'btn-acpt-2' AND CHAIN(<some_ridiculously_complex_condition_with_event_lookback>)"
+  },
+  "outcome": {
+    "_id": "custom.offerAccepted",
+    "field": "_tenant.interactionDetails.outcome"
+  }
+}

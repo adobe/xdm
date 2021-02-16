@@ -28,7 +28,7 @@ Campaign ExperienceEvent mixin for use with schemas for Solution data ingestion.
   * [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
   * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
   * [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md) `https://ns.adobe.com/experience/campaign/experienceevent-all`
-  * [Decision Proposition Reference](decisioning/proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
+  * [Experience Event - Proposition Reference](decisioning/proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
   * [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/target/experienceevent-shared`
   * [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/profile/experienceevent-shared`
   * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
@@ -134,7 +134,7 @@ Campaign ExperienceEvent mixin for use with schemas for Solution data ingestion.
 | [https://ns.adobe.com/experience/campaign/offerOpened](#httpsnsadobecomexperiencecampaignofferopened) | Campaign Offer Response Detail | Optional | [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md#httpsnsadobecomexperiencecampaignofferopened) |
 | [https://ns.adobe.com/experience/campaign/offersProposed](#httpsnsadobecomexperiencecampaignoffersproposed) | Campaign Offer Proposition Detail | Optional | [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md#httpsnsadobecomexperiencecampaignoffersproposed) |
 | [https://ns.adobe.com/experience/campaign/orchestration](#httpsnsadobecomexperiencecampaignorchestration) | orchestration.schema | Optional | [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md#httpsnsadobecomexperiencecampaignorchestration) |
-| [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | Optional | [Decision Proposition Reference](decisioning/proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
+| [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | Optional | [Experience Event - Proposition Reference](decisioning/proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
 | [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
@@ -837,12 +837,12 @@ All items must be of the type:
 ## https://ns.adobe.com/experience/decisioning/propositionID
 ### Proposition Identifier
 
-A unique identifier for the proposition event referenced by an "XDM ExperienceEvent". It is the expectation that applications use this "propositionID" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.
+A unique identifier for the proposition event referenced by another "XDM ExperienceEvent". It is the expectation that applications use this "propositionID" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.
 
 `https://ns.adobe.com/experience/decisioning/propositionID`
 * is optional
 * type: `string`
-* defined in [Decision Proposition Reference](decisioning/proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid)
+* defined in [Experience Event - Proposition Reference](decisioning/proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid)
 
 ### https://ns.adobe.com/experience/decisioning/propositionID Type
 

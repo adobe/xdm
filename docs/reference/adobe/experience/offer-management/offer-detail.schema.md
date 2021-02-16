@@ -13,7 +13,7 @@ Offer detail is used to capture the attributes of an offer in a proposition or r
 ## Schema Hierarchy
 
 * Offer Detail `https://ns.adobe.com/experience/offer-management/offer-detail`
-  * [Decision Option Detail](../decisioning/option-detail.schema.md) `https://ns.adobe.com/experience/decisioning/option-detail`
+  * [Decision Option Details](../decisioning/option-detail.schema.md) `https://ns.adobe.com/experience/decisioning/option-detail`
 
 
 ## Offer Detail Example
@@ -37,13 +37,14 @@ Offer detail is used to capture the attributes of an offer in a proposition or r
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/propositionsProfile](#httpsnsadobecomexperiencedecisioningpropositionsprofile) | Measure | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionsprofile) |
-| [https://ns.adobe.com/experience/decisioning/propositionsTotal](#httpsnsadobecomexperiencedecisioningpropositionstotal) | Measure | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionstotal) |
-| [repo:etag](#repoetag) | `string` | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#repoetag) |
-| [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#xdmcharacteristics) |
-| [xdm:id](#xdmid) | `string` | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#xdmid) |
-| [xdm:name](#xdmname) | `string` | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#xdmname) |
-| [xdm:tags](#xdmtags) | `string[]` | Optional | [Decision Option Detail](../decisioning/option-detail.schema.md#xdmtags) |
+| [https://ns.adobe.com/experience/decisioning/propositionsProfile](#httpsnsadobecomexperiencedecisioningpropositionsprofile) | Measure | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionsprofile) |
+| [https://ns.adobe.com/experience/decisioning/propositionsTotal](#httpsnsadobecomexperiencedecisioningpropositionstotal) | Measure | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionstotal) |
+| [repo:etag](#repoetag) | `string` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#repoetag) |
+| [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmcharacteristics) |
+| [xdm:id](#xdmid) | `string` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmid) |
+| [xdm:name](#xdmname) | `string` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmname) |
+| [xdm:score](#xdmscore) | `number` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmscore) |
+| [xdm:tags](#xdmtags) | `string[]` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmtags) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/propositionsProfile
@@ -53,7 +54,7 @@ The number of times a particular option was proposed so far to a particular prof
 `https://ns.adobe.com/experience/decisioning/propositionsProfile`
 * is optional
 * type: Measure
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionsprofile)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionsprofile)
 
 ### https://ns.adobe.com/experience/decisioning/propositionsProfile Type
 
@@ -71,7 +72,7 @@ The total number a particular option was proposed so far across all profiles.
 `https://ns.adobe.com/experience/decisioning/propositionsTotal`
 * is optional
 * type: Measure
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionstotal)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#httpsnsadobecomexperiencedecisioningpropositionstotal)
 
 ### https://ns.adobe.com/experience/decisioning/propositionsTotal Type
 
@@ -90,7 +91,7 @@ The revision that the decision option object was at when the snapshot was taken.
 `repo:etag`
 * is optional
 * type: `string`
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#repoetag)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#repoetag)
 
 ### repo:etag Type
 
@@ -110,7 +111,7 @@ Additional properties or attributes belonging to this particular decision option
 `xdm:characteristics`
 * is optional
 * type: `object`
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#xdmcharacteristics)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmcharacteristics)
 
 ### xdm:characteristics Type
 
@@ -134,7 +135,7 @@ A unique identifier for the decision option.
 `xdm:id`
 * is optional
 * type: `string`
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#xdmid)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmid)
 
 ### xdm:id Type
 
@@ -155,12 +156,33 @@ Option name. The name is displayed in various user interfaces.
 `xdm:name`
 * is optional
 * type: `string`
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#xdmname)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmname)
 
 ### xdm:name Type
 
 
 `string`
+
+
+
+
+
+
+## xdm:score
+### Decision Option Score
+
+Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.
+
+`xdm:score`
+* is optional
+* type: `number`
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmscore)
+
+### xdm:score Type
+
+
+`number`
+* minimum value: `0`
 
 
 
@@ -176,7 +198,7 @@ The set of tags associated with this option. The tags are used indicate catetoeg
 * is optional
 * type: `string[]`
 
-* defined in [Decision Option Detail](../decisioning/option-detail.schema.md#xdmtags)
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmtags)
 
 ### xdm:tags Type
 

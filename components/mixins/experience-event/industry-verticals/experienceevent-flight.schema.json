@@ -51,39 +51,40 @@
           }
         },
         "xdm:statusSearch": {
-          "xdm:arrivalLocation": {
-            "title": "Arrival Location",
-            "type": "string",
-            "description": "Tracks the arrival city or airport code."
-          },
-          "xdm:date": {
-            "title": "Travel Date",
-            "type": "string",
-            "format": "date-time",
-            "description": "Tracks the flight departure date."
-          },
-          "xdm:departureLocation": {
-            "title": "Departure Location",
-            "type": "string",
-            "description": "Tracks the departure city or airport code."
-          },
-          "xdm:flightNumber": {
-            "title": "Flight Number",
-            "type": "string",
-            "description": "Tracks the flight number."
-          },
-          "xdm:flightStatusSearch": {
-            "title": "Flight Status Search",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
-            "description": "Extension of internalSearch data type."
+          "type": "object",
+          "properties": {
+            "xdm:arrivalLocation": {
+              "title": "Arrival Location",
+              "type": "string",
+              "description": "Tracks the arrival city or airport code."
+            },
+            "xdm:date": {
+              "title": "Travel Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the flight departure date."
+            },
+            "xdm:departureLocation": {
+              "title": "Departure Location",
+              "type": "string",
+              "description": "Tracks the departure city or airport code."
+            },
+            "xdm:flightNumber": {
+              "title": "Flight Number",
+              "type": "string",
+              "description": "Tracks the flight number."
+            },
+            "xdm:flightStatusSearch": {
+              "title": "Flight Status Search",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+              "description": "Extension of internalSearch data type."
+            }
           }
         },
         "xdm:seatMapProcess": {
-          "xdm:seatMapProcess": {
-            "title": "Seat Map Process",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-            "description": "Extension of toolUsage data type."
-          }
+          "title": "Seat Map Process",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+          "description": "Extension of toolUsage data type."
         }
       }
     }

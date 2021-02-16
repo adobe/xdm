@@ -86,7 +86,7 @@ Flight check in details such as passengers, bags, as well as start, save, failur
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:checkIn](#xdmcheckin) | complex | Optional | Flight Check In Details (this schema) |
+| [xdm:checkIn](#xdmcheckin) | `object` | Optional | Flight Check In Details (this schema) |
 | [xdm:seatMapProcess](#xdmseatmapprocess) | complex | Optional | Flight Check In Details (this schema) |
 | [xdm:statusSearch](#xdmstatussearch) | complex | Optional | Flight Check In Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -96,44 +96,108 @@ Flight check in details such as passengers, bags, as well as start, save, failur
 
 `xdm:checkIn`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:checkIn Type
 
-Unknown type ``.
 
-```json
-{
-  "xdm:checkedBags": {
-    "title": "Checked Bags",
-    "type": "integer",
-    "description": "Tracks the number of bags checked for a flight."
-  },
-  "xdm:checkedPassengers": {
-    "title": "Checked Passengers",
-    "type": "integer",
-    "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
-  },
-  "xdm:checkInMethod": {
-    "title": "Check In Method",
-    "type": "string",
-    "enum": [
-      "counter",
-      "mobile",
-      "web",
-      "kiosk"
-    ],
-    "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
-  },
-  "xdm:checkInProcess": {
-    "title": "Check In Process",
-    "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-    "description": "Extension of toolUsage data type."
-  },
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:checkInMethod`| string | Optional |
+| `xdm:checkInProcess`|  | Optional |
+| `xdm:checkedBags`| integer | Optional |
+| `xdm:checkedPassengers`| integer | Optional |
+
+
+
+#### xdm:checkInMethod
+##### Check In Method
+
+Tracks the method used to check in i.e. counter, online, kiosk, or self-service.
+
+`xdm:checkInMethod`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmcheckin-known-values).
+
+##### xdm:checkInMethod Known Values
+| Value | Description |
+|-------|-------------|
+| `counter` |  |
+| `mobile` |  |
+| `web` |  |
+| `kiosk` |  |
+
+
+
+
+
+
+#### xdm:checkInProcess
+##### Check In Process
+
+Extension of toolUsage data type.
+
+`xdm:checkInProcess`
+* is optional
+* type: reference
+
+##### xdm:checkInProcess Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
+
+
+
+
+
+
+
+#### xdm:checkedBags
+##### Checked Bags
+
+Tracks the number of bags checked for a flight.
+
+`xdm:checkedBags`
+* is optional
+* type: `integer`
+
+##### xdm:checkedBags Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:checkedPassengers
+##### Checked Passengers
+
+Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.
+
+`xdm:checkedPassengers`
+* is optional
+* type: `integer`
+
+##### xdm:checkedPassengers Type
+
+
+`integer`
+
+
+
+
+
+
 
 
 

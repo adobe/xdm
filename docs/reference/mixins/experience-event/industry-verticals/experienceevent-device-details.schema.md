@@ -81,7 +81,7 @@ Device configuration details such as start, save, failure, and complete.
 |----------|------|----------|------------|
 | [xdm:deviceActivation](#xdmdeviceactivation) | Tool Usage | Optional | Device Configuration Details (this schema) |
 | [xdm:deviceConfiguration](#xdmdeviceconfiguration) | Tool Usage | Optional | Device Configuration Details (this schema) |
-| [xdm:deviceTradeInDetails](#xdmdevicetradeindetails) | complex | Optional | Device Configuration Details (this schema) |
+| [xdm:deviceTradeInDetails](#xdmdevicetradeindetails) | `object` | Optional | Device Configuration Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:deviceActivation
@@ -127,38 +127,104 @@ Extension of toolUsage data type.
 
 `xdm:deviceTradeInDetails`
 * is optional
-* type: complex
+* type: `object`
 * defined in this schema
 
 ### xdm:deviceTradeInDetails Type
 
-Unknown type ``.
 
-```json
-{
-  "xdm:deviceTradeIn": {
-    "title": "Steps",
-    "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-    "description": "Extension of toolUsage data type."
-  },
-  "xdm:deviceTradeInManufacturer": {
-    "title": "Manufacturer",
-    "type": "string",
-    "description": "Manufacturer of the device being traded."
-  },
-  "xdm:deviceTradeInModel": {
-    "title": "Model",
-    "type": "string",
-    "description": "Model of the device being traded."
-  },
-  "xdm:deviceTradeInValue": {
-    "title": "Value",
-    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-    "description": "Value of the device being traded."
-  },
-  "simpletype": "complex"
-}
-```
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:deviceTradeIn`|  | Optional |
+| `xdm:deviceTradeInManufacturer`| string | Optional |
+| `xdm:deviceTradeInModel`| string | Optional |
+| `xdm:deviceTradeInValue`|  | Optional |
+
+
+
+#### xdm:deviceTradeIn
+##### Steps
+
+Extension of toolUsage data type.
+
+`xdm:deviceTradeIn`
+* is optional
+* type: reference
+
+##### xdm:deviceTradeIn Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
+
+
+
+
+
+
+
+#### xdm:deviceTradeInManufacturer
+##### Manufacturer
+
+Manufacturer of the device being traded.
+
+`xdm:deviceTradeInManufacturer`
+* is optional
+* type: `string`
+
+##### xdm:deviceTradeInManufacturer Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:deviceTradeInModel
+##### Model
+
+Model of the device being traded.
+
+`xdm:deviceTradeInModel`
+* is optional
+* type: `string`
+
+##### xdm:deviceTradeInModel Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:deviceTradeInValue
+##### Value
+
+Value of the device being traded.
+
+`xdm:deviceTradeInValue`
+* is optional
+* type: reference
+
+##### xdm:deviceTradeInValue Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/currency`
+
+
+
+
+
 
 
 

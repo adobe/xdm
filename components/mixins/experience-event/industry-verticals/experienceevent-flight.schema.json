@@ -20,26 +20,34 @@
     "flight": {
       "properties": {
         "xdm:checkIn": {
-          "xdm:checkedBags": {
-            "title": "Checked Bags",
-            "type": "integer",
-            "description": "Tracks the number of bags checked for a flight."
-          },
-          "xdm:checkedPassengers": {
-            "title": "Checked Passengers",
-            "type": "integer",
-            "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
-          },
-          "xdm:checkInMethod": {
-            "title": "Check In Method",
-            "type": "string",
-            "enum": ["counter", "mobile", "web", "kiosk"],
-            "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
-          },
-          "xdm:checkInProcess": {
-            "title": "Check In Process",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-            "description": "Extension of toolUsage data type."
+          "type": "object",
+          "properties": {
+            "xdm:checkedBags": {
+              "title": "Checked Bags",
+              "type": "integer",
+              "description": "Tracks the number of bags checked for a flight."
+            },
+            "xdm:checkedPassengers": {
+              "title": "Checked Passengers",
+              "type": "integer",
+              "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
+            },
+            "xdm:checkInMethod": {
+              "title": "Check In Method",
+              "type": "string",
+              "enum": [
+                "counter",
+                "mobile",
+                "web",
+                "kiosk"
+              ],
+              "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
+            },
+            "xdm:checkInProcess": {
+              "title": "Check In Process",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            }
           }
         },
         "xdm:statusSearch": {

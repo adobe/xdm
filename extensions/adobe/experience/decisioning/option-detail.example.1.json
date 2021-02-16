@@ -6,10 +6,11 @@
     "level": "intermediate",
     "format": "Syllable"
   },
-  "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+  "xdm:score": 83,
+  "xdm:propositionsTotal": {
     "xdm:value": 4948
   },
-  "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+  "xdm:propositionsProfile": {
     "xdm:value": 2
   }
 }

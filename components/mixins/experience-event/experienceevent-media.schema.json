@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
   "definitions": {
@@ -18,7 +21,6 @@
       "properties": {
         "xdm:media": {
           "title": "Media",
-          "meta:status": "experimental",
           "$ref": "https://ns.adobe.com/xdm/context/media",
           "description": "Media activity information related to the experience event."
         }

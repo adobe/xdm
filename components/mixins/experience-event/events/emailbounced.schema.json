@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding direct marketing email bounced events.",
+  "description": "Use to capture details when email to person bounces.",
   "definitions": {
     "emailbounced": {
       "properties": {
@@ -25,42 +25,37 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique identifier of the mailing."
+              "description": "Unique ID of the email asset."
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name for the mailing."
+              "description": "Friendly name of the email asset."
             },
-            "xdm:emailBouncedCategory": {
+            "xdm:emailBouncedCode": {
               "title": "Email Bounced Category",
               "type": "string",
-              "description": "Category in which this email failure belongs."
+              "description": "Code denoting the type of bounce received from the mail transfer agent."
             },
             "xdm:emailBouncedDetails": {
               "title": "Email Bounced Details",
               "type": "string",
-              "description": "Email failure reason description message."
-            },
-            "xdm:emailBouncedSubcategory": {
-              "title": "Email Bounced Subcategory",
-              "type": "string",
-              "description": "Subcategory this failure reason belongs to."
+              "description": "Details of email bounce from the Mail Transfer Agent."
             },
             "xdm:email": {
               "title": "email",
               "type": "string",
-              "description": "visitor email ID."
+              "description": "Recipient's email address."
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique identifier for the test variant."
+              "description": "Unique ID of the test variant of the email asset."
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name for the test variant."
+              "description": "Friendly name of the test variant of the email asset ."
             }
           }
         }

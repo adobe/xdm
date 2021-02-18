@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
   "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
+  "description": "Use for tracking the details of a person's visit to a webpage.",
   "definitions": {
     "visitwebpage": {
       "properties": {
@@ -29,7 +29,7 @@
                 "xdm:webPageID": {
                   "title": "Webpage ID",
                   "type": "string",
-                  "description": "."
+                  "description": "Unique ID of the webpage."
                 },
                 "xdm:name": {
                   "title": "Name",
@@ -45,12 +45,12 @@
                 "xdm:queryParamaters": {
                   "title": "Query Paramaters",
                   "type": "string",
-                  "description": "Query Paramters used for the web page."
+                  "description": "Query Paramters used for the web page.This is normally value of a string after ? in the url."
                 },
                 "xdm:isPersonalizedURL": {
                   "title": "Is Personalized URL",
                   "type": "boolean",
-                  "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+                  "description": "Boolean indicating if person accessed the webpage via a personalized URL."
                 }
               }
             },
@@ -61,7 +61,7 @@
                 "xdm:URL": {
                   "title": "URL",
                   "type": "string",
-                  "description": "The referrer URL."
+                  "description": "URL of the referring webpage."
                 }
               }
             }

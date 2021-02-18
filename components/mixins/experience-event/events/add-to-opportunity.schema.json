@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding opportunity event add to opportunity events.",
+  "description": "Use to capture details when a person is added as a point of contact on a sales opportunity.",
   "definitions": {
     "addtoopportunity": {
       "properties": {
@@ -25,17 +25,17 @@
             "xdm:opportunityID": {
               "title": "Opportunity ID",
               "type": "string",
-              "description": "Opportunity ID"
+              "description": "Unique ID of the Opportunity"
             },
             "xdm:isPrimary": {
               "title": "Is Primary",
               "type": "boolean",
-              "description": "Is primary."
+              "description": "Boolean indicating if person is the primary contact on the Opportunity."
             },
             "xdm:role": {
               "title": "Role",
               "type": "string",
-              "description": "Role."
+              "description": "Role of the person on the Opportunity."
             }
           }
         }

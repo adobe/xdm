@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding list operation add to list events.",
+    "description": "Use to track when a person is added to a specific list.",
     "definitions": {
         "addtolist": {
             "properties": {

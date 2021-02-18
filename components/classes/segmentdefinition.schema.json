@@ -43,8 +43,8 @@
         "xdm:segmentStatus": {
           "type": "string",
           "title": "Segment status",
-          "description": "Current status of segment from external system normalized to active, inactive, deleted or draft.",
-          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT"]
+          "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"]
         }
       }
     }

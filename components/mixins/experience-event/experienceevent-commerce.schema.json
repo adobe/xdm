@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon).",
   "definitions": {

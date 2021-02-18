@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding lead operation new lead events.",
+  "description": "Use to record the creation and details of a new marketing lead.",
   "definitions": {
     "newlead": {
       "properties": {

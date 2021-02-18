@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/convert-lead
 ```
 
-Use for information regarding lead operation convert lead events.
+Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

@@ -7,43 +7,62 @@
     ],
     "$id": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Experience Event - Proposition Interaction Detail",
+    "title": "Proposition Interaction Details",
     "type": "object",
     "meta:abstract": true,
     "meta:extensible": true,
-    "description": "A proposition interaction is used to link an experience event to a prior decision proposition. Each decision output has a unique event ID that can be sent back with an experience event. The decision proposition is assumed to have contributed to the experience event and is now associated with it.",
+    "description": "A proposition interaction is used to report an experience event that relates to a prior decision proposition. The decision proposition is assumed to have contributed to the experience and the unique decision ID is added to the experience event.",
     "definitions": {
         "proposition-interaction-detail-datatype": {
             "type": "object",
             "properties": {
+                "xdm:id": {
+                    "type": "string",
+                    "title": "Decision Proposition Identifier",
+                    "description": "The unique identifier of the proposition that originally contained the decision options that are being acted upon (see the corresponding 'items' field in this object). When this identifier is present, direct attribution is given to a unique proposition. If the identifier is missing, the action for the items could not be assiciated with a unique proposition."
+                },
+                "xdm:scope": {
+                    "type": "string",
+                    "title": "Decision Scope",
+                    "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made."
+                },
                 "xdm:items": {
                     "type": "array",
                     "title": "Selected Options",
-                    "description": "One or more of the decision options that this experience event is related to. Those items were returned as output of the decision for a requested scope. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event would record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array. ",
+                    "description": "One or more of the previously proposed options that this experience event is related to. Those items were returned as output of the decision for a requested scope and are now part of an interaction. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event could record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array.",
                     "items": {
                         "$ref": "https://ns.adobe.com/experience/decisioning/option-detail",
                         "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in."
                     }
                 },
+                "xdm:scopeDetails": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
+                    "title": "Decision Scope Snapshot",
+                    "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
+                },
                 "xdm:decisionEventID": {
+                    "meta:status": "deprecated",
                     "type": "string",
-                    "title": "Decision Event Identifier",
-                    "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition."
+                    "title": "Decision Event Identifier (deprecated)",
+                    "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition. (deprecated)"
                 },
                 "xdm:decisionEventDetails": {
+                    "meta:status": "deprecated",
                     "$ref": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
-                    "title": "Decision Event Details",
-                    "description": "A snapshot of properties from the decision event when it occured."
+                    "title": "Decision Event Details (deprecated)",
+                    "description": "A snapshot of properties from the decision event when it occured. (deprecated)"
                 },
                 "xdm:decisionScope": {
+                    "meta:status": "deprecated",
                     "type": "string",
-                    "title": "Decision Event Scope",
-                    "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details."
+                    "title": "Decision Event Scope (deprecated)",
+                    "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details.(deprecated)"
                 },
                 "xdm:decisionScopeDetails": {
+                    "meta:status": "deprecated",
                     "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
-                    "title": "Decision Event Scope Details",
-                    "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
+                    "title": "Decision Event Scope Details (deprecated)",
+                    "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst. (deprecated)"
                 }
             }
         }
@@ -56,5 +75,38 @@
             "$ref": "#/definitions/proposition-interaction-detail-datatype"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:items": [
+                {
+                    "xdm:id": "ExperienceB",
+                    "xdm:data": {
+                        "type": "setHtml",
+                        "content": "<div class='banner_img d-none d-lg-block'><img src='https://contentviewer.s3.amazonaws.com/helium/women_banner.jpeg?w=780&amp;h=408&amp;crop=1' alt=''>\n</div>",
+                        "selector": "#root > DIV.react-spectrum-provider:eq(0) > DIV.app-wrapper:eq(0) > DIV.app-content:eq(0) > DIV:nth-of-type(1) > SECTION.banner_part:eq(0)",
+                        "prehidingSelector": "#root > DIV:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(2) > DIV:nth-of-type(1) > SECTION:nth-of-type(1)"
+                    }
+                }
+            ],
+            "xdm:id": "AT:eyJhY3Rpdml0eUlkIjoiMzg0NDU5IiwiZXhwZXJpZW5jZUlkIjoiMSJ9",
+            "xdm:scope": "home",
+            "xdm:scopeDetails": {
+                "xdm:activity": {
+                    "xdm:id": "384459",
+                    "repo:etag": "8"
+                },
+                "xdm:experience": {
+                    "xdm:id": "ExperienceB"
+                },
+                "xdm:strategies": [
+                    {
+                        "xdm:step": "targeting",
+                        "xdm:algorithmID": "randomuniform",
+                        "xdm:trafficType": "noncontextual"
+                    }
+                ]
+            }
+        }
+    ]
 }

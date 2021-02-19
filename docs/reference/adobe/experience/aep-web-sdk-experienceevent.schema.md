@@ -18,63 +18,14 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
   * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
   * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
+  * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
-
-## AEP Web SDK ExperienceEvent Mixin Example
-```json
-{
-  "xdm:identityMap": {
-    "Email_LC_SHA256": [
-      {
-        "id": "81d1a7135b9722577fb4f094a2004296d6230512d37b68e64b73f050b919f7c4",
-        "authenticatedState": "ambiguous",
-        "primary": true
-      }
-    ],
-    "HYP": [
-      {
-        "id": "1234",
-        "authenticatedState": "ambiguous"
-      }
-    ]
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:URL": "http://localhost:3000/"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": ""
-    }
-  },
-  "xdm:device": {
-    "xdm:screenHeight": 1692,
-    "xdm:screenWidth": 3008,
-    "xdm:screenOrientation": "landscape"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:viewportWidth": 1586,
-      "xdm:viewportHeight": 555
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2020-01-07T15:11:14.143-07:00",
-    "xdm:localTimezoneOffset": 420
-  },
-  "xdm:timestamp": "2020-01-07T22:11:14.143Z",
-  "xdm:implementationDetails": {
-    "xdm:name": "https://ns.adobe.com/experience/alloy",
-    "xdm:version": "0.0.11"
-  },
-  "xdm:eventType": "page-view"
-}
-```
 
 # AEP Web SDK ExperienceEvent Mixin Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
 | [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails) |
@@ -82,6 +33,32 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
 | [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/decisioning/propositions
+### Involved Propositions
+
+An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.
+
+`https://ns.adobe.com/experience/decisioning/propositions`
+* is optional
+* type: Proposition Interaction Details
+
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions)
+
+### https://ns.adobe.com/experience/decisioning/propositions Type
+
+
+Array type: Proposition Interaction Details
+
+All items must be of the type:
+* [Proposition Interaction Details](decisioning/proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`
+
+
+
+
+
+
+
 
 ## xdm:device
 ### Device

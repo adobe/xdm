@@ -1,0 +1,22 @@
+{
+  "xdm:vehicleReservation": {
+    "xdm:couponCode": "10OFF",
+    "xdm:vehicleDifferentDropoffLocation": false,
+    "xdm:discountPercent": 0.1,
+    "xdm:dropOffDateTime": "2021-06-18T15:52:25+00:00",
+    "xdm:vehicleDropOffLocation": "Sydney International Airport",
+    "xdm:vehicleDropOffLocationCode": "SYD",
+    "xdm:freeCancelation": true,
+    "xdm:guestID": "R101921H166",
+    "xdm:loyaltyID": "X112JX123R594",
+    "xdm:payLaterEligible": true,
+    "xdm:pickUpDateTime": "2021-06-25T15:52:25+00:00",
+    "xdm:vehiclePickUpLocation": "Phoenix Sky Harbor International Airport",
+    "xdm:vehiclePickUpLocationCode": "PHX",
+    "xdm:prePaid": false,
+    "xdm:productID": "2021FRDMST",
+    "xdm:refundable": true,
+    "xdm:rentersAge": 33,
+    "xdm:vehicleClass": "premium"
+  }
+}

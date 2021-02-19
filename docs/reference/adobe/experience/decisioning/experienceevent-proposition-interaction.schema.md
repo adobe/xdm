@@ -1,23 +1,23 @@
 
-# Experience Event - Proposition Interaction Schema
+# Experience Event - Proposition Interactions Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/proposition-interaction
 ```
 
-This mixin is used capture information regarding an interaction, response or reaction to one or more prior propositions. Each decision output has a unique ID that can be sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.
+Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json](adobe/experience/decisioning/experienceevent-proposition-interaction.schema.json) |
 ## Schema Hierarchy
 
-* Experience Event - Proposition Interaction `https://ns.adobe.com/experience/decisioning/proposition-interaction`
+* Experience Event - Proposition Interactions `https://ns.adobe.com/experience/decisioning/proposition-interaction`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
 
 
-## Experience Event - Proposition Interaction Examples
+## Experience Event - Proposition Interactions Examples
 
 ```json
 {
@@ -28,23 +28,26 @@ This mixin is used capture information regarding an interaction, response or rea
     {
       "xdm:items": [
         {
-          "xdm:id": "experience1"
+          "xdm:id": "item1"
+        },
+        {
+          "xdm:id": "item2"
         }
       ],
-      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionEventDetails": {
-        "xdm:experienceID": "experience1"
-      },
-      "xdm:decisionScope": "__view__",
-      "xdm:decisionScopeDetails": {
-        "xdm:id": "__view__",
-        "xdm:decisionProvider": "Target Premium",
-        "xdm:placement": {
-          "xdm:id": "mbox1"
-        },
+      "xdm:id": "AT:eyJhY3Rpdml0eUlkIjoiMzg0NDU5IiwiZXhwZXJpZW5jZUlkIjoiMSJ9",
+      "xdm:scope": "home",
+      "xdm:scopeDetails": {
         "xdm:activity": {
-          "xdm:id": "actitivty1"
-        }
+          "xdm:id": "384459",
+          "repo:etag": "8"
+        },
+        "xdm:strategies": [
+          {
+            "xdm:step": "targeting",
+            "xdm:algorithmID": "randomuniform",
+            "xdm:trafficType": "noncontextual"
+          }
+        ]
       }
     },
     {
@@ -57,21 +60,8 @@ This mixin is used capture information regarding an interaction, response or rea
           }
         }
       ],
-      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionEventDetails": {
-        "xdm:experienceID": "8A0FBA334DA23A64AD9D748E58533857B6B5556AB28328DCCC04DAE6E9F35430"
-      },
-      "xdm:decisionScope": "scope:12cfc3fa94281acb",
-      "xdm:decisionScopeDetails": {
-        "xdm:id": "scope:12cfc3fa94281acb",
-        "xdm:decisionProvider": "AEP Decisioning",
-        "xdm:placement": {
-          "xdm:id": "offer-placement:1175009612b0100c"
-        },
-        "xdm:activity": {
-          "xdm:id": "offer-activity:11cfb1fa93381aca"
-        }
-      }
+      "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+      "xdm:scope": "scope:12cfc3fa94281acb"
     }
   ]
 }
@@ -85,29 +75,25 @@ This mixin is used capture information regarding an interaction, response or rea
         {
           "xdm:id": "experience1"
         }
-      ],
-      "xdm:decisionEventID": "TNT:activity1:experience1:1597208433",
-      "xdm:decisionScope": "__view__"
+      ]
     },
     {
       "xdm:items": [
         {
           "xdm:id": "personalized-offer:f67bab756ed6ee4"
         }
-      ],
-      "xdm:decisionEventID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-      "xdm:decisionScope": "scope:12cfc3fa94281acb"
+      ]
     }
   ]
 }
 ```
 
 
-# Experience Event - Proposition Interaction Properties
+# Experience Event - Proposition Interactions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Experience Event - Proposition Interaction Detail | Optional | Experience Event - Proposition Interaction (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | Experience Event - Proposition Interactions (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -118,17 +104,17 @@ An array of decision propositions that contributed to the experience event. The 
 
 `https://ns.adobe.com/experience/decisioning/propositions`
 * is optional
-* type: Experience Event - Proposition Interaction Detail
+* type: Proposition Interaction Details
 
 * defined in this schema
 
 ### https://ns.adobe.com/experience/decisioning/propositions Type
 
 
-Array type: Experience Event - Proposition Interaction Detail
+Array type: Proposition Interaction Details
 
 All items must be of the type:
-* [Experience Event - Proposition Interaction Detail](proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`
+* [Proposition Interaction Details](proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`
 
 
 

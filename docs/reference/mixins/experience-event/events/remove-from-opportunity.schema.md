@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/remove-from-opportunity
 ```
 
-Use for information regarding opportunity event remove from opportunity events.
+Use to capture details when a person is removed as a point of contact on a sales opportunity.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

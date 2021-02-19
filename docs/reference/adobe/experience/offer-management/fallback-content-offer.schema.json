@@ -10,9 +10,6 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record",
         "https://ns.adobe.com/experience/decisioning/option",
-        "https://ns.adobe.com/experience/decisioning/contents",
-        "https://ns.adobe.com/experience/decisioning/lifecycle-status",
-        "https://ns.adobe.com/experience/decisioning/tags",
         "https://ns.adobe.com/experience/decisioning/fallback-content-option"
     ],
     "meta:abstract": false,
@@ -28,6 +25,9 @@
     "allOf": [
         {
             "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/decisioning/option"
         },
         {
             "$ref": "https://ns.adobe.com/experience/decisioning/fallback-content-option"

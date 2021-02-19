@@ -1,0 +1,10 @@
+{
+  "observation": {
+    "mapping": "fieldValue",
+    "field": "_tenant.propositionInteractions.responseCode",
+    "value": "#Btn-14"
+  },
+  "outcome": {
+    "_id": "custom.offerAccepted"
+  }
+}

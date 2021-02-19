@@ -14,11 +14,11 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding lead operation convert lead events.",
+    "description": "Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.",
     "definitions": {
         "convertlead": {
             "properties": {
-                "xdm:leadOpearation": {
+                "xdm:leadOperation": {
                     "title": "Lead Operation",
                     "type": "object",
                     "properties": {

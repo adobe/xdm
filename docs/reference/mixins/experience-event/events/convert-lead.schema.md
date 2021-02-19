@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/convert-lead
 ```
 
-Use for information regarding lead operation convert lead events.
+Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -20,18 +20,18 @@ Use for information regarding lead operation convert lead events.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:leadOpearation](#xdmleadopearation) | `object` | Optional | Convert Lead (this schema) |
+| [xdm:leadOperation](#xdmleadoperation) | `object` | Optional | Convert Lead (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:leadOpearation
+## xdm:leadOperation
 ### Lead Operation
 
-`xdm:leadOpearation`
+`xdm:leadOperation`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:leadOpearation Type
+### xdm:leadOperation Type
 
 
 `object` with following properties:

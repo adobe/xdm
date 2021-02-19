@@ -9,7 +9,7 @@ This mixin contains JourneyAI Send Time Optimization scores, which provides the 
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/intelligentServices/profile-journeyai-sendtimeoptimization.schema.json](adobe/experience/intelligentServices/profile-journeyai-sendtimeoptimization.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/intelligentServices/profile-journeyai-sendtimeoptimization.schema.json](adobe/experience/intelligentServices/profile-journeyai-sendtimeoptimization.schema.json) |
 
 ## Intelligent Services JourneyAI Send Time Optimization Example
 ```json

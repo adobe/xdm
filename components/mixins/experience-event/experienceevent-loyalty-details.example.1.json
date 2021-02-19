@@ -1,0 +1,26 @@
+{
+  "xdm:loyalty": {
+    "xdm:accountCreationStep": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "loyalty redemption",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "select rewards",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "loyalty"
+      }
+    },
+    "xdm:joinDate": "2021-01-26T15:52:25+00:00",
+    "xdm:loyaltyID": ["L79UH4XR1"],
+    "xdm:points": 8974,
+    "xdm:pointsExpiration": "2022-01-26T15:52:25+00:00",
+    "xdm:pointsRedeemed": 5148,
+    "xdm:pointsAsOfDate": 3147,
+    "xdm:program": "purchase rewards"
+  }
+}

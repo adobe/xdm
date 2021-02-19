@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding direct marketing email bounced soft events.",
+  "description": "Use to capture details when a marketing email to person soft-bounces.",
   "definitions": {
     "emailbouncedsoft": {
        "properties": {

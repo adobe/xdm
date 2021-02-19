@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/new-lead
 ```
 
-Use for information regarding lead operation new lead events.
+Use to record the creation and details of a new marketing lead.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -20,18 +20,18 @@ Use for information regarding lead operation new lead events.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:leadOpearation](#xdmleadopearation) | `object` | Optional | New Lead (this schema) |
+| [xdm:leadOperation](#xdmleadoperation) | `object` | Optional | New Lead (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:leadOpearation
+## xdm:leadOperation
 ### Lead Operation
 
-`xdm:leadOpearation`
+`xdm:leadOperation`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:leadOpearation Type
+### xdm:leadOperation Type
 
 
 `object` with following properties:

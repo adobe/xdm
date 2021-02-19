@@ -9,7 +9,7 @@ Decision proposition is used to capture the results of a decisioning process.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-details.schema.json](adobe/experience/decisioning/proposition-details.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-details.schema.json](adobe/experience/decisioning/proposition-details.schema.json) |
 ## Schema Hierarchy
 
 * Decision Event - Proposition Details `https://ns.adobe.com/experience/decisioning/proposition-details`
@@ -22,7 +22,7 @@ Decision proposition is used to capture the results of a decisioning process.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/decisioning/experienceID](#httpsnsadobecomexperiencedecisioningexperienceid) | `string` | Optional | Decision Event - Proposition Details (this schema) |
 | [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | Decision Event - Proposition Details (this schema) |
-| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | Decision Event - Proposition Details (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Details | Optional | Decision Event - Proposition Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/experienceID
@@ -72,17 +72,17 @@ Details about the results of the decision. An array providing the output of a si
 
 `https://ns.adobe.com/experience/decisioning/propositionDetails`
 * is optional
-* type: Decision Proposition Detail
+* type: Decision Proposition Details
 
 * defined in this schema
 
 ### https://ns.adobe.com/experience/decisioning/propositionDetails Type
 
 
-Array type: Decision Proposition Detail
+Array type: Decision Proposition Details
 
 All items must be of the type:
-* [Decision Proposition Detail](proposition-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-detail`
+* [Decision Proposition Details](proposition-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-detail`
 
 
 

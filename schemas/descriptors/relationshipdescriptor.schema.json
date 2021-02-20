@@ -67,12 +67,12 @@
         "xdm:sourceToDestinationTitle": {
           "title": "Source to Destination Title",
           "type": "string",
-          "description": "Provides a user friendly description used in UI"
+          "description": "Provides a user friendly title for the source->destination edge"
         },
         "xdm:destinationToSourceTitle": {
           "title": "Destination to Source Title",
           "type": "string",
-          "description": "Provides a user friendly description used in UI"
+          "description": "Provides a user friendly title for the destination->source edge"
         },
         "xdm:cardinality": {
           "title": "Relationship Cardinality",

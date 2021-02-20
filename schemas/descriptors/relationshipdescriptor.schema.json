@@ -78,10 +78,7 @@
           "title": "Relationship Cardinality",
           "type": "string",
           "description": "Source to Destination cardinality",
-          "enum": [
-            "M:1",
-            "1:1"
-          ],
+          "enum": ["M:1", "1:1"],
           "default": "M:1"
         }
       },

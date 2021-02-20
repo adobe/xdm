@@ -9,7 +9,7 @@ XDM business account person relation component details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/account/account-person-components.schema.json](mixins/account/account-person-components.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/account/account-person-components.schema.json](mixins/account/account-person-components.schema.json) |
 
 ## XDM Business Account Person Relation Components Example
 ```json

@@ -3,7 +3,7 @@
   "@type": "xdm:descriptorOneToOne",
   "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/field"
+  "xdm:sourceProperty": "/field",
   "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:destinationVersion": 1,
   "xdm:cardinality": "M:1"

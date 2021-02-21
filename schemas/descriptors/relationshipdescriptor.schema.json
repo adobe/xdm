@@ -82,7 +82,11 @@
           "default": "M:1"
         }
       },
-      "required": ["xdm:sourceProperty", "xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:sourceProperty", 
+        "xdm:destinationSchema", 
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [

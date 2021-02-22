@@ -42,10 +42,10 @@
                   "format": "uri",
                   "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                 },
-                "xdm:queryParamaters": {
-                  "title": "Query Paramaters",
+                "xdm:queryParameters": {
+                  "title": "Query Parameters",
                   "type": "string",
-                  "description": "Query Paramters used for the web page. This is normally the value of a string after ? in the url."
+                  "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url."
                 },
                 "xdm:isPersonalizedURL": {
                   "title": "Is Personalized URL",

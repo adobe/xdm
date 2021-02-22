@@ -35,7 +35,7 @@
             "xdm:emailBouncedCode": {
               "title": "Email Bounced Code",
               "type": "string",
-              "description": "Code denoting the type of bounce received from the mail transfer agent."
+              "description": "Code denoting the type of bounce received from the Mail Transfer Agent."
             },
             "xdm:emailBouncedDetails": {
               "title": "Email Bounced Details",

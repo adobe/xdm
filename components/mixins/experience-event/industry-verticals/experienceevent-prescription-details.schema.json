@@ -24,7 +24,7 @@
           "properties": {
             "xdm:prescriptionDeliveryEligible": {
               "title": "Prescription Delivery Eligible",
-              "type": "integer",
+              "type": "boolean",
               "description": "Indicates if the prescription available to be delivered."
             },
             "xdm:prescriptionID": {

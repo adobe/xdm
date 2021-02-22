@@ -19,7 +19,6 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
   * [Profile Other Work Details](profile-other-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-other-work-details`
   * [Work Contact Details](profile-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-work-details`
   * [IdentityMap](../shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [XDM Inferred Person](profile-inferred-person.schema.md) `https://ns.adobe.com/xdm/mixins/profile-inferred-person`
   * [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
@@ -32,7 +31,6 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:anonymousHostname](#xdmanonymoushostname) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdmanonymoushostname) |
 | [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Person Details (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:extendedWorkDetails](#xdmextendedworkdetails) | `object` | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmextendedworkdetails) |
@@ -40,11 +38,6 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomeaddress) |
 | [xdm:homePhone](#xdmhomephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomephone) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../shared/identitymap.schema.md#xdmidentitymap) |
-| [xdm:inferredAddress](#xdminferredaddress) | Postal address | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredaddress) |
-| [xdm:inferredCompany](#xdminferredcompany) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompany) |
-| [xdm:inferredCompanyStatus](#xdminferredcompanystatus) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompanystatus) |
-| [xdm:inferredMetropolitanArea](#xdminferredmetropolitanarea) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredmetropolitanarea) |
-| [xdm:inferredPhoneAreaCode](#xdminferredphoneareacode) | `string` | Optional | [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredphoneareacode) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmmobilephone) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Work Contact Details](profile-work-details.schema.md#xdmorganizations) |
 | [xdm:otherAddress](#xdmotheraddress) | Postal address | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotheraddress) |
@@ -55,26 +48,6 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | [xdm:workEmail](#xdmworkemail) | Email address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkemail) |
 | [xdm:workPhone](#xdmworkphone) | Phone number | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkphone) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:anonymousHostname
-### Anonymous Hostname
-
-Anonymous hostname.
-
-`xdm:anonymousHostname`
-* is optional
-* type: `string`
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdmanonymoushostname)
-
-### xdm:anonymousHostname Type
-
-
-`string`
-
-
-
-
-
 
 ## xdm:b2b
 
@@ -92,32 +65,11 @@ Anonymous hostname.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:leadOrganization`|  | Optional |
 | `xdm:personGroupID`| string | Optional |
 | `xdm:personScore`| number | Optional |
 | `xdm:personSource`| string | Optional |
 | `xdm:personStatus`| string | Optional |
 | `xdm:personType`| string | Optional |
-
-
-
-#### xdm:leadOrganization
-##### Lead Organization Properties
-
-undefined
-
-`xdm:leadOrganization`
-* is optional
-* type: reference
-
-##### xdm:leadOrganization Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-
-
-
-
 
 
 
@@ -479,105 +431,6 @@ Home phone number.
 
 | Property | Type | Required |
 |----------|------|----------|
-
-
-
-
-
-
-## xdm:inferredAddress
-### Inferred Address
-
-Address details inferred by reverse IP lookup of the lead’s first recorded web visit.
-
-`xdm:inferredAddress`
-* is optional
-* type: Postal address
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredaddress)
-
-### xdm:inferredAddress Type
-
-
-* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
-
-
-
-
-
-## xdm:inferredCompany
-### Inferred Company
-
-Company name inferred by reverse IP lookup of the lead’s first recorded web visit.
-
-`xdm:inferredCompany`
-* is optional
-* type: `string`
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompany)
-
-### xdm:inferredCompany Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:inferredCompanyStatus
-### Inferred Company Status
-
-Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.
-
-`xdm:inferredCompanyStatus`
-* is optional
-* type: `string`
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredcompanystatus)
-
-### xdm:inferredCompanyStatus Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:inferredMetropolitanArea
-### Inferred Metropolitan Area
-
-Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.
-
-`xdm:inferredMetropolitanArea`
-* is optional
-* type: `string`
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredmetropolitanarea)
-
-### xdm:inferredMetropolitanArea Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:inferredPhoneAreaCode
-### Inferred Phone Area Code
-
-Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.
-
-`xdm:inferredPhoneAreaCode`
-* is optional
-* type: `string`
-* defined in [XDM Inferred Person](profile-inferred-person.schema.md#xdminferredphoneareacode)
-
-### xdm:inferredPhoneAreaCode Type
-
-
-`string`
 
 
 

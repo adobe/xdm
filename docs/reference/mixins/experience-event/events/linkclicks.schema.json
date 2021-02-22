@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding linkclicks web interaction events.",
+    "description": "Use to capture details when a person clicks a link on a webpage.",
     "definitions": {
         "linkclicks": {
             "properties": {

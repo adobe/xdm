@@ -13,7 +13,7 @@ Offer activity detail is used to capture the attributes of an offer activity in 
 ## Schema Hierarchy
 
 * Offer Activity Detail `https://ns.adobe.com/experience/offer-management/offer-activity-detail`
-  * [Decision Activity Detail](../decisioning/activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
+  * [Decision Activity Details](../decisioning/activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
 
 
 ## Offer Activity Detail Example
@@ -31,14 +31,14 @@ Offer activity detail is used to capture the attributes of an offer activity in 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [repo:etag](#repoetag) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#repoetag) |
-| [xdm:endTime](#xdmendtime) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmendtime) |
-| [xdm:fallback](#xdmfallback) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmfallback) |
+| [repo:etag](#repoetag) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#repoetag) |
+| [xdm:endTime](#xdmendtime) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmendtime) |
+| [xdm:fallback](#xdmfallback) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmfallback) |
 | [xdm:filter](#xdmfilter) | `string` | Optional | Offer Activity Detail (this schema) |
-| [xdm:id](#xdmid) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmid) |
-| [xdm:name](#xdmname) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmname) |
+| [xdm:id](#xdmid) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmid) |
+| [xdm:name](#xdmname) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmname) |
 | [xdm:placement](#xdmplacement) | `string` | Optional | Offer Activity Detail (this schema) |
-| [xdm:startTime](#xdmstarttime) | `string` | Optional | [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmstarttime) |
+| [xdm:startTime](#xdmstarttime) | `string` | Optional | [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmstarttime) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:etag
@@ -49,7 +49,7 @@ The revision that the decision activity object was at when the snapshot was take
 `repo:etag`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#repoetag)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#repoetag)
 
 ### repo:etag Type
 
@@ -69,7 +69,7 @@ Activity end date and end time. Property has the semantic of schema.org's 'endTi
 `xdm:endTime`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmendtime)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmendtime)
 
 ### xdm:endTime Type
 
@@ -90,7 +90,7 @@ The reference to a fallback option that is used when decisioning in the context 
 `xdm:fallback`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmfallback)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmfallback)
 
 ### xdm:fallback Type
 
@@ -132,7 +132,7 @@ A unique, immutable identifier for the decision activity.
 `xdm:id`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmid)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmid)
 
 ### xdm:id Type
 
@@ -153,7 +153,7 @@ Activity name. The name is displayed in various user interfaces.
 `xdm:name`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmname)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmname)
 
 ### xdm:name Type
 
@@ -194,7 +194,7 @@ Activity start date and end time. Property has the semantic of schema.org's 'sta
 `xdm:startTime`
 * is optional
 * type: `string`
-* defined in [Decision Activity Detail](../decisioning/activity-detail.schema.md#xdmstarttime)
+* defined in [Decision Activity Details](../decisioning/activity-detail.schema.md#xdmstarttime)
 
 ### xdm:startTime Type
 

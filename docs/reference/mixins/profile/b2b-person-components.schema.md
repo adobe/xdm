@@ -48,100 +48,117 @@ All items must be of the type:
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:personSegmentTraits`| object | Optional |
-| `xdm:sourceAccountID`|  | Optional |
-| `xdm:sourceConvertedAccountID`|  | Optional |
-| `xdm:sourceConvertedContactID`|  | Optional |
-| `xdm:sourceConvertedOpportunityID`|  | Optional |
-| `xdm:sourceExternalID`|  | Optional |
-| `xdm:sourcePersonID`|  | Optional |
-| `xdm:sourcePersonOwnerID`|  | Optional |
+| `xdm:personGroupID`| string | Optional |
+| `xdm:personScore`| number | Optional |
+| `xdm:personSource`| string | Optional |
+| `xdm:personStatus`| string | Optional |
+| `xdm:personType`| string | Optional |
+| `xdm:sourceAccountID`| string | Optional |
+| `xdm:sourceConvertedContactID`| string | Optional |
+| `xdm:sourceExternalID`| string | Optional |
+| `xdm:sourcePersonID`| string | Optional |
 | `xdm:workEmail`|  | Optional |
 
 
 
-#### xdm:personSegmentTraits
-##### Person Segmentation Attributes
+#### xdm:personGroupID
+##### Person Group ID
 
-These attributes are required to build predicates for person segmentation.
+Group identifier for the person.
 
-`xdm:personSegmentTraits`
+`xdm:personGroupID`
 * is optional
-* type: `object`
+* type: `string`
 
-##### xdm:personSegmentTraits Type
+##### xdm:personGroupID Type
 
-Unknown type `object`.
 
-```json
-{
-  "title": "Person Segmentation Attributes",
-  "description": "These attributes are required to build predicates for person segmentation.",
-  "type": "object",
-  "properties": {
-    "xdm:personType": {
-      "title": "Person Type",
-      "description": "Type of the B2B person.",
-      "type": "string"
-    },
-    "xdm:personStatus": {
-      "title": "Person Status",
-      "description": "Field recording the current marketing/sales status of the Person.",
-      "type": "string"
-    },
-    "xdm:personSource": {
-      "title": "Person Source",
-      "description": "Source from where the information regarding the person was received.",
-      "type": "string"
-    },
-    "xdm:personScore": {
-      "title": "Person Score",
-      "description": "A Score generated for a person by the CRM system.",
-      "type": "number"
-    },
-    "xdm:personGroupID": {
-      "title": "Person Group ID",
-      "description": "Group identifier for the person.",
-      "type": "string"
-    },
-    "xdm:leadOrganization": {
-      "title": "Lead Organization Properties",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-    },
-    "xdm:anonymousHostname": {
-      "title": "Anonymous Hostname",
-      "description": "Anonymous hostname.",
-      "type": "string"
-    },
-    "xdm:inferredAddress": {
-      "title": "Inferred Address",
-      "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "https://ns.adobe.com/xdm/common/address"
-    },
-    "xdm:inferredCompany": {
-      "title": "Inferred Company",
-      "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string"
-    },
-    "xdm:inferredCompanyStatus": {
-      "title": "Inferred Company Status",
-      "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string"
-    },
-    "xdm:inferredMetropolitanArea": {
-      "title": "Inferred Metropolitan Area",
-      "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string"
-    },
-    "xdm:inferredPhoneAreaCode": {
-      "title": "Inferred Phone Area Code",
-      "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string"
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+`string`
+
+
+
+
+
+
+
+
+#### xdm:personScore
+##### Person Score
+
+A Score generated for a person by the CRM system.
+
+`xdm:personScore`
+* is optional
+* type: `number`
+
+##### xdm:personScore Type
+
+
+`number`
+
+
+
+
+
+
+
+
+#### xdm:personSource
+##### Person Source
+
+Source from where the information regarding the person was received.
+
+`xdm:personSource`
+* is optional
+* type: `string`
+
+##### xdm:personSource Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:personStatus
+##### Person Status
+
+Field recording the current marketing/sales status of the Person.
+
+`xdm:personStatus`
+* is optional
+* type: `string`
+
+##### xdm:personStatus Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:personType
+##### Person Type
+
+Type of the B2B person.
+
+`xdm:personType`
+* is optional
+* type: `string`
+
+##### xdm:personType Type
+
+
+`string`
+
 
 
 
@@ -156,32 +173,13 @@ Source account ID.
 
 `xdm:sourceAccountID`
 * is optional
-* type: reference
+* type: `string`
 
 ##### xdm:sourceAccountID Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+`string`
 
-
-
-
-
-
-
-#### xdm:sourceConvertedAccountID
-##### Source Converted Account ID
-
-Source converted account ID.
-
-`xdm:sourceConvertedAccountID`
-* is optional
-* type: reference
-
-##### xdm:sourceConvertedAccountID Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -196,32 +194,13 @@ Source converted contact ID.
 
 `xdm:sourceConvertedContactID`
 * is optional
-* type: reference
+* type: `string`
 
 ##### xdm:sourceConvertedContactID Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+`string`
 
-
-
-
-
-
-
-#### xdm:sourceConvertedOpportunityID
-##### Source Converted Opportunity ID
-
-Source converted opportunity ID.
-
-`xdm:sourceConvertedOpportunityID`
-* is optional
-* type: reference
-
-##### xdm:sourceConvertedOpportunityID Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -236,12 +215,13 @@ External source unique identifier at the source.
 
 `xdm:sourceExternalID`
 * is optional
-* type: reference
+* type: `string`
 
 ##### xdm:sourceExternalID Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+`string`
+
 
 
 
@@ -256,32 +236,13 @@ Source person ID.
 
 `xdm:sourcePersonID`
 * is optional
-* type: reference
+* type: `string`
 
 ##### xdm:sourcePersonID Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+`string`
 
-
-
-
-
-
-
-#### xdm:sourcePersonOwnerID
-##### Source Person Owner ID
-
-Source person owner identifier.
-
-`xdm:sourcePersonOwnerID`
-* is optional
-* type: reference
-
-##### xdm:sourcePersonOwnerID Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -290,7 +251,7 @@ Source person owner identifier.
 
 
 #### xdm:workEmail
-##### Email ID of B2B Person
+##### Work Email ID of B2B Person
 
 undefined
 

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/visit-webpage
 ```
 
-Use for information regarding web details events such as interaction, page details, and referrer.
+Use for tracking the details of a person's visit to a webpage.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

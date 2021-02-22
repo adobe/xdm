@@ -1,0 +1,34 @@
+{
+  "xdm:prescriptions": {
+    "xdm:prescriptionDeliveryEligible": true,
+    "xdm:prescriptionID": "",
+    "xdm:prescriptionRefill": true,
+    "xdm:prescriptionRefillsRemaining": 1,
+    "xdm:prescriptionSteps": {
+      "xdm:tool-usage": {
+        "xdm:toolUsageCancelled": 1,
+        "xdm:toolUsageComplete": 1,
+        "xdm:toolUsageFailure": 1,
+        "xdm:toolUsageID": "T421",
+        "xdm:toolUsageName": "prescription",
+        "xdm:toolUsageSaved": 1,
+        "xdm:toolUsageStart": 1,
+        "xdm:toolUsageStep": 1,
+        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageSubmitted": 1,
+        "xdm:toolUsageType": "generic"
+      }
+    },
+    "xdm:prescriptionUpload": {
+      "xdm:file-transfer": {
+        "xdm:fileName": "4",
+        "xdm:fileSize": "1024",
+        "xdm:fileTransferComplete": 1,
+        "xdm:fileTransferError": "1",
+        "xdm:fileTransferStart": 1,
+        "xdm:fileTransferType": "rx upload",
+        "xdm:fileType": "PDF"
+      }
+    }
+  }
+}

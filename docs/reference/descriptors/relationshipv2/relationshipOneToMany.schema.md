@@ -9,7 +9,7 @@ Describes a bi-directional one to many relationship
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | No | Experimental | No | Forbidden | Permitted | [descriptors/relationshipv2/relationshipOneToMany.schema.json](descriptors/relationshipv2/relationshipOneToMany.schema.json) |
+| Can be instantiated | No | Deprecated | No | Forbidden | Permitted | [descriptors/relationshipv2/relationshipOneToMany.schema.json](descriptors/relationshipv2/relationshipOneToMany.schema.json) |
 
 ## One to Many Bi-Directional Relationship Descriptor Example
 ```json

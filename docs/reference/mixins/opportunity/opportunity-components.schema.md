@@ -9,7 +9,7 @@ This Mixin is used to capture B2B Opportunity specific relationship attributes t
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity/opportunity-components.schema.json](mixins/opportunity/opportunity-components.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/opportunity/opportunity-components.schema.json](mixins/opportunity/opportunity-components.schema.json) |
 
 ## XDM Business Opportunity Components Example
 ```json

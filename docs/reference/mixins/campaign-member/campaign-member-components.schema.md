@@ -9,7 +9,7 @@ This mixin is used to capture B2B campaign member specific relationship attribut
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/campaign-member/campaign-member-components.schema.json](mixins/campaign-member/campaign-member-components.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/campaign-member/campaign-member-components.schema.json](mixins/campaign-member/campaign-member-components.schema.json) |
 
 ## XDM Business Campaign Member Components Example
 ```json

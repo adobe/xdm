@@ -1,41 +1,42 @@
 
-# Many to One Relationship Descriptor Schema
+# Relationship Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/descriptorManyToOne
+https://ns.adobe.com/xdm/common/descriptors/descriptorRelationship
 ```
 
-Describes many to one relationship descriptor.
+Describes a general relationship between two schemas
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/relationship/descriptorManyToOne.schema.json](descriptors/relationship/descriptorManyToOne.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [descriptors/relationship/descriptorRelationship.schema.json](descriptors/relationship/descriptorRelationship.schema.json) |
 ## Schema Hierarchy
 
-* Many to One Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorManyToOne`
+* Relationship Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorRelationship`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
   * [Relationship Descriptor](../relationshipdescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor`
 
 
-## Many to One Relationship Descriptor Example
+## Relationship Descriptor Example
 ```json
 {
-  "@id": "https://ns.adobe.com/example/descriptorManyToOne/1",
-  "@type": "xdm:descriptorManyToOne",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "@id": "https://ns.adobe.com/example/descriptorOneToOne/1",
+  "@type": "xdm:descriptorRelationship",
+  "xdm:sourceSchema": "https://ns.adobe.com/experience/aem/user",
   "xdm:sourceVersion": 1,
-  "xdm:destinationSchema": "https://ns.adobe.com/experience/aem/user",
+  "xdm:sourceProperty": "/field",
+  "xdm:destinationSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:destinationVersion": 1,
-  "xdm:label": "UserProfile"
+  "xdm:cardinality": "M:1"
 }
 ```
 
-# Many to One Relationship Descriptor Properties
+# Relationship Descriptor Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
 | [@id](#id) | `string` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional |  | Many to One Relationship Descriptor (this schema) |
+| [@type](#type) | `const` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:cardinality](#xdmcardinality) | `enum` | Optional | `"M:1"` | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmcardinality) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
@@ -84,7 +85,7 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:descriptorManyToOne"
+"xdm:descriptorRelationship"
 ```
 
 

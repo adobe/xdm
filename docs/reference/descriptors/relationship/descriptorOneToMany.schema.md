@@ -32,22 +32,24 @@ Describes one to many relationship descriptor.
 
 # One to Many Relationship Descriptor Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | One to Many Relationship Descriptor (this schema) |
-| [xdm:apiLabel](#xdmapilabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel) |
-| [xdm:description](#xdmdescription) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription) |
-| [xdm:destinationItem](#xdmdestinationitem) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
-| [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
-| [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
-| [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationversion) |
-| [xdm:label](#xdmlabel) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmlabel) |
-| [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
-| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
-| [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
-| [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcevalue) |
-| [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [@id](#id) | `string` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#id) |
+| [@type](#type) | `const` | Optional |  | One to Many Relationship Descriptor (this schema) |
+| [xdm:cardinality](#xdmcardinality) | `enum` | Optional | `"M:1"` | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmcardinality) |
+| [xdm:destinationItem](#xdmdestinationitem) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
+| [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
+| [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
+| [xdm:destinationToSourceTitle](#xdmdestinationtosourcetitle) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationtosourcetitle) |
+| [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationversion) |
+| [xdm:label](#xdmlabel) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmlabel) |
+| [xdm:sourceItem](#xdmsourceitem) | complex | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
+| [xdm:sourceNamespace](#xdmsourcenamespace) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcenamespace) |
+| [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
+| [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
+| [xdm:sourceToDestinationTitle](#xdmsourcetodestinationtitle) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcetodestinationtitle) |
+| [xdm:sourceValue](#xdmsourcevalue) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcevalue) |
+| [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional |  | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -89,42 +91,24 @@ The value of this property **must** be equal to:
 
 
 
-## xdm:apiLabel
-### API Label
+## xdm:cardinality
+### Relationship Cardinality
 
-Provides a user friendly name or label which is used in PQL/SQL or other needs
+Source to Destination cardinality
 
-`xdm:apiLabel`
+`xdm:cardinality`
 * is optional
-* type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmapilabel)
+* type: `enum`
+* default: `"M:1"`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmcardinality)
 
-### xdm:apiLabel Type
+The value of this property **must** be equal to one of the [known values below](#xdmcardinality-known-values).
 
-
-`string`
-
-
-
-
-
-
-## xdm:description
-### Relationship Description
-
-Provides a user friendly description of this relationship
-
-`xdm:description`
-* is optional
-* type: `string`
-* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdescription)
-
-### xdm:description Type
-
-
-`string`
-
-
+### xdm:cardinality Known Values
+| Value | Description |
+|-------|-------------|
+| `M:1` |  |
+| `1:1` |  |
 
 
 
@@ -226,6 +210,26 @@ The destination schema this descriptor applies to
 
 
 
+## xdm:destinationToSourceTitle
+### Destination to Source Title
+
+Provides a user friendly title for the destination->source edge
+
+`xdm:destinationToSourceTitle`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationtosourcetitle)
+
+### xdm:destinationToSourceTitle Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:destinationVersion
 ### Destination Version
 
@@ -302,6 +306,26 @@ When present, the selector used to match a specific item in the array pointed to
 
 
 
+## xdm:sourceNamespace
+### Source Property Namespace
+
+Identity Service namespace associated with the source property
+
+`xdm:sourceNamespace`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcenamespace)
+
+### xdm:sourceNamespace Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:sourceProperty
 ### Source Property
 
@@ -357,6 +381,26 @@ The source schema this descriptor applies to. This property is required when the
 
 `string`
 * format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:sourceToDestinationTitle
+### Source to Destination Title
+
+Provides a user friendly title for the source->destination edge
+
+`xdm:sourceToDestinationTitle`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmsourcetodestinationtitle)
+
+### xdm:sourceToDestinationTitle Type
+
+
+`string`
 
 
 

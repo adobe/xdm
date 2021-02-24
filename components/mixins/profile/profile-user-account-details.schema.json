@@ -34,18 +34,18 @@
             "xdm:userAccountID": {
               "title": "User Account ID",
               "type": "string",
-              "description": "Captures the user account ID.",
+              "description": "Captures the user account ID."
             },
             "xdm:userAccountPersonalDetails": {
               "title": "User Account Personal Details",
               "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
-              "description": "Extension of the Personal Profile data type.",
+              "description": "Extension of the Personal Profile data type."
             },
             "xdm:userAccountStart": {
               "title": "User Account Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date when the account was opened.",
+              "description": "Date when the account was opened."
             },
             "xdm:userAccountStatus": {
               "title": "User Account Status",
@@ -53,17 +53,17 @@
               "enum": [
                 "active", "inactive", "disabled", "other",
               ],
-              "description": "This should describe the current status of the account",
+              "description": "This should describe the current status of the account"
             },
             "xdm:userAccountType": {
               "title": "User Account Type",
               "type": "string",
-              "description": "Captures the user account type, if applicable.",
+              "description": "Captures the user account type, if applicable."
             },
             "xdm:userAccountRegistration": {
               "title": "User Account Registration",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type.",
+              "description": "Extension of toolUsage data type."
             },
             "xdm:userAccountPreferences": {
               "title": "User Account Preferences",
@@ -71,9 +71,9 @@
               "items": {
                 "type": "string"
               },
-              "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
-            },
-          },
+              "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. "
+            }
+          }
         }
       }
     }
@@ -83,5 +83,5 @@
       "$ref": "#/definitions/user-account-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "experimental"
 }

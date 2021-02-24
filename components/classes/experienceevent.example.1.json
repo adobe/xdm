@@ -1,6 +1,5 @@
 {
   "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:eventType": "advertising.impressions",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"

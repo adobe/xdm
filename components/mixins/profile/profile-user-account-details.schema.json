@@ -1,11 +1,8 @@
 {
   "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/",
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-user-account-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User Account Details",
   "type": "object",
@@ -23,10 +20,10 @@
       "high_tech",
       "manufacturing",
       "media_and_entertainment",
-      "public_sector"
+      "public_sector",
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "",
   "definitions": {
     "user-account-details": {
@@ -37,39 +34,36 @@
             "xdm:userAccountID": {
               "title": "User Account ID",
               "type": "string",
-              "description": "Captures the user account ID."
+              "description": "Captures the user account ID.",
             },
             "xdm:userAccountPersonalDetails": {
               "title": "User Account Personal Details",
               "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
-              "description": "Extension of the Personal Profile data type."
+              "description": "Extension of the Personal Profile data type.",
             },
             "xdm:userAccountStart": {
               "title": "User Account Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date when the account was opened."
+              "description": "Date when the account was opened.",
             },
             "xdm:userAccountStatus": {
               "title": "User Account Status",
               "type": "string",
-              "enum": ["active", "inactive", "disabled", "other"],
-              "description": "This should describe the current status of the account"
-            },
-            "xdm:userAccountSwitch": {
-              "title": "Switch User Accounts",
-              "type": "integer",
-              "description": "Captures when a visitor switches their account during a visit."
+              "enum": [
+                "active", "inactive", "disabled", "other",
+              ],
+              "description": "This should describe the current status of the account",
             },
             "xdm:userAccountType": {
               "title": "User Account Type",
               "type": "string",
-              "description": "Captures the user account type, if applicable."
+              "description": "Captures the user account type, if applicable.",
             },
             "xdm:userAccountRegistration": {
               "title": "User Account Registration",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
             },
             "xdm:userAccountPreferences": {
               "title": "User Account Preferences",
@@ -77,9 +71,9 @@
               "items": {
                 "type": "string"
               },
-              "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. "
-            }
-          }
+              "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
+            },
+          },
         }
       }
     }
@@ -89,5 +83,5 @@
       "$ref": "#/definitions/user-account-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
 }

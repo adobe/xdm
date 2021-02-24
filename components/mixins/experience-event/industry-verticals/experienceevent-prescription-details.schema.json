@@ -1,9 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/",
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
@@ -19,36 +16,36 @@
   "definitions": {
     "prescription-details": {
       "properties": {
-        "xdm:prescriptions": {
+        "xdm:s": {
           "type": "object",
           "properties": {
-            "xdm:prescriptionDeliveryEligible": {
-              "title": "Prescription Delivery Eligible",
+            "xdm:deliveryEligible": {
+              "title": "Delivery Eligible",
               "type": "boolean",
               "description": "Indicates if the prescription available to be delivered."
             },
-            "xdm:prescriptionID": {
-              "title": "Prescription ID",
+            "xdm:ID": {
+              "title": "ID",
               "type": "string",
               "description": "ID for the prescription being filled."
             },
-            "xdm:prescriptionRefill": {
-              "title": "Prescription Refill",
+            "xdm:refill": {
+              "title": "Refill",
               "type": "boolean",
               "description": "Indicates if the prescription is new or being refilled."
             },
-            "xdm:prescriptionRefillsRemaining": {
-              "title": "Prescription Refills Remaining",
+            "xdm:refillsRemaining": {
+              "title": "Refills Remaining",
               "type": "integer",
               "description": "Count of the remaining prescription refills available."
             },
-            "xdm:prescriptionSteps": {
-              "title": "Prescription Steps",
+            "xdm:steps": {
+              "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type."
             },
-            "xdm:prescriptionUpload": {
-              "title": "Prescription Upload",
+            "xdm:upload": {
+              "title": "Upload",
               "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
               "description": "Extension of the File Transfer data type."
             }

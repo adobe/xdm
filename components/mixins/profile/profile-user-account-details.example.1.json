@@ -1,0 +1,21 @@
+{
+  "xdm:userAccount": {
+    "xdm:userAccountID": "X87321",
+    "xdm:userAccountType": "personal",
+    "xdm:userAccountRegistration": {
+      "xdm:tool-usage": {
+        "xdm:cancelled": 1,
+        "xdm:complete": 1,
+        "xdm:failure": 1,
+        "xdm:ID": "T421",
+        "xdm:name": "calculator",
+        "xdm:saved": 1,
+        "xdm:start": 1,
+        "xdm:step": 1,
+        "xdm:stepName": "enter parameters",
+        "xdm:submitted": 1,
+        "xdm:type": "generic"
+      }
+    }
+  }
+}

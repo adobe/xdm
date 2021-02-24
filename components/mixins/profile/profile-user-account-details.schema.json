@@ -20,7 +20,7 @@
       "high_tech",
       "manufacturing",
       "media_and_entertainment",
-      "public_sector",
+      "public_sector"
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
@@ -51,7 +51,7 @@
               "title": "User Account Status",
               "type": "string",
               "enum": [
-                "active", "inactive", "disabled", "other",
+                "active", "inactive", "disabled", "other"
               ],
               "description": "This should describe the current status of the account"
             },

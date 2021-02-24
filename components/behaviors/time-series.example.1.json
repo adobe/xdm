@@ -1,4 +1,5 @@
 {
   "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00"
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventType": "advertising.impressions"
 }

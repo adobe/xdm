@@ -64,6 +64,11 @@
                     "type": "string",
                     "description": "Identity Service namespace associated with the source property"
                 },
+                "xdm:destinationNamespace": {
+                    "title": "Source Property Namespace",
+                    "type": "string",
+                    "description": "Identity Service namespace associated with the source property"
+                },
                 "xdm:sourceToDestinationTitle": {
                     "title": "Source to Destination Title",
                     "type": "string",

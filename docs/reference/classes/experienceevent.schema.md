@@ -23,7 +23,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:eventType": "advertising.impressions",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
@@ -179,6 +178,249 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       }
     }
   ]
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-23456782",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "application",
+    "xdm:operatingSystem": "iOS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "mobile_lte"
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2001-07-04T12:08:56+01:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    },
+    "xdm:POIinteraction": {
+      "xdm:poiEntries": {
+        "xdm:value": 1
+      },
+      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+      "xdm:name": "Acme Hotel Tokyo Lobby",
+      "xdm:category": "Resorts",
+      "xdm:type": "Hotel",
+      "xdm:locatingType": "beacon",
+      "xdm:beaconInteractionDetails": {
+        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+        "xdm:beaconMajor": 300,
+        "xdm:beaconMinor": 34
+      }
+    },
+    "xdm:activePOIs": [
+      {
+        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+        "xdm:name": "Acme Hotel Tokyo",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+          "xdm:beaconMajor": 100,
+          "xdm:beaconMinor": 23
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Acme Hotel Tokyo Lobby",
+        "xdm:category": "Resorts",
+        "xdm:type": "Hotel",
+        "xdm:locatingType": "beacon",
+        "xdm:beaconInteractionDetails": {
+          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
+          "xdm:beaconMajor": 300,
+          "xdm:beaconMinor": 34
+        }
+      },
+      {
+        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
+        "xdm:name": "Tokyo City",
+        "xdm:locatingType": "gps",
+        "xdm:geoInteractionDetails": {
+          "xdm:distanceToCenter": 320,
+          "xdm:accuracy": 30,
+          "xdm:geoShape": {
+            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
+            "schema:circle": {
+              "@id": "https://data.adobe.io/entities/geo/circleid123",
+              "schema:description": "Tokyo Metro",
+              "schema:coordinates": {
+                "@id": "https://data.adobe.io/entities/geo/111",
+                "schema:description": "Tokyo",
+                "schema:latitude": 37.3308953,
+                "schema:longitude": -121.8939894,
+                "schema:elevation": 31.0896
+              },
+              "schema:radius": 80000
+            }
+          }
+        }
+      }
+    ],
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "AVID": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
 }
 ```
 
@@ -390,165 +632,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-23456782",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:type": "application",
-    "xdm:operatingSystem": "iOS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "mobile_lte"
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2001-07-04T12:08:56+01:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    },
-    "xdm:POIinteraction": {
-      "xdm:poiEntries": {
-        "xdm:value": 1
-      },
-      "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-      "xdm:name": "Acme Hotel Tokyo Lobby",
-      "xdm:category": "Resorts",
-      "xdm:type": "Hotel",
-      "xdm:locatingType": "beacon",
-      "xdm:beaconInteractionDetails": {
-        "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
-        "xdm:beaconMajor": 300,
-        "xdm:beaconMinor": 34
-      }
-    },
-    "xdm:activePOIs": [
-      {
-        "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
-        "xdm:name": "Acme Hotel Tokyo",
-        "xdm:category": "Resorts",
-        "xdm:type": "Hotel",
-        "xdm:locatingType": "beacon",
-        "xdm:beaconInteractionDetails": {
-          "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
-          "xdm:beaconMajor": 100,
-          "xdm:beaconMinor": 23
-        }
-      },
-      {
-        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-        "xdm:name": "Acme Hotel Tokyo Lobby",
-        "xdm:category": "Resorts",
-        "xdm:type": "Hotel",
-        "xdm:locatingType": "beacon",
-        "xdm:beaconInteractionDetails": {
-          "xdm:proximityUUID": "c6c03ed9-ea23-481c-ab15-833e88cfb22f",
-          "xdm:beaconMajor": 300,
-          "xdm:beaconMinor": 34
-        }
-      },
-      {
-        "xdm:POIID": "d8a5c08c-1e79-4051-8a8b-675fb235e03d",
-        "xdm:name": "Tokyo City",
-        "xdm:locatingType": "gps",
-        "xdm:geoInteractionDetails": {
-          "xdm:distanceToCenter": 320,
-          "xdm:accuracy": 30,
-          "xdm:geoShape": {
-            "@id": "https://data.adobe.io/entities/geoShape/shapeid123",
-            "schema:circle": {
-              "@id": "https://data.adobe.io/entities/geo/circleid123",
-              "schema:description": "Tokyo Metro",
-              "schema:coordinates": {
-                "@id": "https://data.adobe.io/entities/geo/111",
-                "schema:description": "Tokyo",
-                "schema:latitude": 37.3308953,
-                "schema:longitude": -121.8939894,
-                "schema:elevation": 31.0896
-              },
-              "schema:radius": 80000
-            }
-          }
-        }
-      }
-    ],
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-123459",
   "xdm:timestamp": "2020-09-21T15:52:25+00:00",
   "xdm:identityMap": {
@@ -677,90 +760,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "AVID": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
@@ -879,7 +878,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 |----------|------|----------|------------|
 | [@id](#id) | `string` | **Required** | [Time-series Schema](../behaviors/time-series.schema.md#id) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | XDM ExperienceEvent (this schema) |
-| [xdm:eventType](#xdmeventtype) | `string` | Optional | XDM ExperienceEvent (this schema) |
+| [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | **Required** | [Time-series Schema](../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -933,7 +932,7 @@ The primary event type for this time-series record.
 `xdm:eventType`
 * is optional
 * type: `string`
-* defined in this schema
+* defined in [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype)
 
 ### xdm:eventType Type
 

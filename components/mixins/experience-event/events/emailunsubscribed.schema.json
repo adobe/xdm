@@ -65,23 +65,23 @@
               }
             },
             "xdm:webPageDetails": {
-              "title": "Web Page Details",
+              "title": "WebPage Details",
               "type": "object",
               "properties": {
                 "xdm:webPageID": {
-                  "title": "Web Page ID",
+                  "title": "WebPage ID",
                   "type": "string",
                   "description": "Unique ID of the webpage."
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
-                  "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                  "description": "The normative name of the webpage. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
-                  "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+                  "description": "Query Parameters used for the webpage. This is normally the value of a string after `?` in the url."
                 }
               }
             },
@@ -101,7 +101,7 @@
         "xdm:environment": {
           "title": "Environment",
           "type": "object",
-          "description": "The information related to web page and link of the ExperienceEvent.",
+          "description": "The information related to webpage and link of the ExperienceEvent.",
           "properties": {
             "xdm:ipV4": {
               "title": "IPv4",

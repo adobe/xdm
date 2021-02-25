@@ -52,7 +52,7 @@
         "xdm:environment": {
           "title": "Environment",
           "type": "object",
-          "description": "The information related to web page and link of the ExperienceEvent.",
+          "description": "The information related to webpage and link of the ExperienceEvent.",
           "properties": {
             "xdm:operatingSystem": {
               "title": "Operating system",

@@ -60,7 +60,7 @@
         },
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
-          "description": "Probability as a percentage that the opportunity will closed, represented as a number between 0 and 1..",
+          "description": "Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.",
           "type": "number",
           "minimum": 0,
           "maximum": 100

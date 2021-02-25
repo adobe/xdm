@@ -16,102 +16,103 @@
         "xdm:organizationType": {
           "title": "Type of Organizations",
           "type": "string",
-          "description": "Label describing the type of organization"
+          "description": "Label describing the type of organization."
         },
         "xdm:numberOfEmployees": {
           "title": "Number of employees",
           "type": "integer",
-          "description": "The number of employees at the organization."
+          "description": "Number of employees of the account."
         },
         "xdm:annualRevenue": {
           "title": "Annual Revenue",
-          "description": "Estimated amount of annual revenue of the organization.",
+          "description": "Estimated annual revenue of the account.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+          "description": "ndustry of the account."
         },
         "xdm:website": {
           "title": "Website URL",
           "type": "string",
-          "description": "The URL of the organization's website."
+          "description": "The URL of the account's website."
         },
         "xdm:marketSegment": {
           "title": "Market segment",
           "type": "string",
-          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
+          "description": "Market segment of the account."
         },
         "xdm:rating": {
           "title": "Rating",
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
+          "description": "The calculated score or star rating for this account. `1` indicates the maximum possible rating, `0` the minimum possible rating."
         },
         "xdm:tickerSymbol": {
           "title": "Ticker Symbol",
-          "description": "The stock market symbol for this account. Maximum of 20 characters.",
+          "description": "The stock market symbol for this account.",
           "type": "string"
         },
         "xdm:logoUrl": {
           "title": "Logo URL",
-          "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
+          "description": "URL for the image of the account's logo.",
           "type": "string"
         },
         "xdm:linkedinPageUrl": {
           "title": "Linkedinin Page URL",
-          "description": "Website link to the Linkedin account of the account",
+          "description": "The URL of the account's LinkedIn page.",
           "type": "string"
         },
         "xdm:twitterHandleUrl": {
           "title": "Twitter handle URL",
-          "description": "Website link to the twitter handle of the account",
+          "description": "The URL of the account's Twitter profile.",
           "type": "string"
         },
         "xdm:facebookPageUrl": {
           "title": "Facebook Page URL",
-          "description": "Website link to the Facebook account of the account",
+          "description": "The URL of the account's Facebook page.",
           "type": "string"
         },
         "xdm:NAICSCode": {
           "title": "NAICS Code",
           "type": "string",
-          "description": "A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System."
+          "description": "The code for the account's industry within the North American Industry Classification System."
         },
         "xdm:SICCode": {
           "title": "SIC Code",
           "type": "string",
-          "description": "The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities."
+          "description": "The code for the account's industry within the Standard Industrial Classification system."
         },
         "xdm:NAICSDescription": {
           "title": "NAICS Description",
-          "description": "A brief description of an organization’s line of business, based on its NAICS code.",
+          "description": "The description for the account's industry based on its NAICS code.",
           "type": "string"
         },
         "xdm:SICDescription": {
           "title": "SIC Description",
-          "description": "A brief description of an organization’s line of business, based on its SIC code.",
+          "description": "The description for the account's industry based on its SIC code.",
           "type": "string"
         },
         "xdm:DUNSNumber": {
           "title": "Dun & Bradstreet D-U-N-S Number",
-          "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.",
+          "description": "The number for the account in the Dun & Bradstreet database.",
           "type": "string"
         },
         "xdm:jigsaw": {
           "title": "Jigsaw",
-          "description": "Data.com Key.",
+          "description": "The key for the account in Data.com.",
           "type": "string"
         },
         "xdm:primaryEmailDomain": {
           "title": "Primary Email Domain",
-          "type": "string"
+          "type": "string",
+		  "description": "The primary domain of email addresses associated with the account."
         },
         "xdm:companyProductAndServices": {
           "title": "Company Product and Services",
-          "description": "Product and Services the Company is dealing or doing business in.",
+          "description": "Description of the account's product and/or services.",
           "type": "string"
         }
       }

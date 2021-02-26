@@ -25,25 +25,28 @@
           "description": "Extension of toolUsage data type."
         },
         "xdm:deviceTradeInDetails": {
-          "xdm:deviceTradeIn": {
-            "title": "Steps",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-            "description": "Extension of toolUsage data type."
-          },
-          "xdm:deviceTradeInManufacturer": {
-            "title": "Manufacturer",
-            "type": "string",
-            "description": "Manufacturer of the device being traded."
-          },
-          "xdm:deviceTradeInModel": {
-            "title": "Model",
-            "type": "string",
-            "description": "Model of the device being traded."
-          },
-          "xdm:deviceTradeInValue": {
-            "title": "Value",
-            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-            "description": "Value of the device being traded."
+          "type": "object",
+          "properties": {
+            "xdm:deviceTradeIn": {
+              "title": "Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            },
+            "xdm:deviceTradeInManufacturer": {
+              "title": "Manufacturer",
+              "type": "string",
+              "description": "Manufacturer of the device being traded."
+            },
+            "xdm:deviceTradeInModel": {
+              "title": "Model",
+              "type": "string",
+              "description": "Model of the device being traded."
+            },
+            "xdm:deviceTradeInValue": {
+              "title": "Value",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Value of the device being traded."
+            }
           }
         },
         "xdm:deviceActivation": {

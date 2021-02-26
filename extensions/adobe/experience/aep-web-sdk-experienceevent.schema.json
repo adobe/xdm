@@ -17,7 +17,8 @@
     "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
     "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
-    "https://ns.adobe.com/xdm/context/experienceevent-web"
+    "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "https://ns.adobe.com/experience/decisioning/proposition-interaction"
   ],
   "definitions": {
     "aep-web-sdk-experienceevent": {
@@ -39,6 +40,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition-interaction"
     }
   ],
   "meta:status": "stable"

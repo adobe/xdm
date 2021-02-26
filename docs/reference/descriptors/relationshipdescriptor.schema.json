@@ -59,15 +59,35 @@
                     "type": "string",
                     "description": "Provides a user friendly name or label to this relationship"
                 },
-                "xdm:apiLabel": {
-                    "title": "API Label",
+                "xdm:sourceNamespace": {
+                    "title": "Source Property Namespace",
                     "type": "string",
-                    "description": "Provides a user friendly name or label which is used in PQL/SQL or other needs"
+                    "description": "Identity Service namespace associated with the source property"
                 },
-                "xdm:description": {
-                    "title": "Relationship Description",
+                "xdm:destinationNamespace": {
+                    "title": "Source Property Namespace",
                     "type": "string",
-                    "description": "Provides a user friendly description of this relationship"
+                    "description": "Identity Service namespace associated with the source property"
+                },
+                "xdm:sourceToDestinationTitle": {
+                    "title": "Source to Destination Title",
+                    "type": "string",
+                    "description": "Provides a user friendly title for the source->destination edge"
+                },
+                "xdm:destinationToSourceTitle": {
+                    "title": "Destination to Source Title",
+                    "type": "string",
+                    "description": "Provides a user friendly title for the destination->source edge"
+                },
+                "xdm:cardinality": {
+                    "title": "Relationship Cardinality",
+                    "type": "string",
+                    "description": "Source to Destination cardinality",
+                    "enum": [
+                        "M:1",
+                        "1:1"
+                    ],
+                    "default": "M:1"
                 }
             },
             "oneOf": [
@@ -99,6 +119,19 @@
     "meta:status": "stable",
     "examples": [
         {
+            "@id": "https://example.com/descriptors/1",
+            "@type": "xdm:descriptorOneToOne",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+            "xdm:sourceProperty": "/xdm:identities",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceItem": {
+                "xdm:type": "https://example.com/crmID"
+            },
+            "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
+            "xdm:destinationProperty": "/xdm:crmID",
+            "xdm:destinationVersion": 1
+        },
+        {
             "@type": "xdm:descriptorOneToOne",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
             "xdm:sourceProperty": [
@@ -113,19 +146,6 @@
             ],
             "xdm:destinationVersion": 1,
             "version": "1"
-        },
-        {
-            "@id": "https://example.com/descriptors/1",
-            "@type": "xdm:descriptorOneToOne",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-            "xdm:sourceProperty": "/xdm:identities",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceItem": {
-                "xdm:type": "https://example.com/crmID"
-            },
-            "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-            "xdm:destinationProperty": "/xdm:crmID",
-            "xdm:destinationVersion": 1
         }
     ]
 }

@@ -9,7 +9,7 @@ XDM business opportunity person relation component details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity/opportunity-person-components.schema.json](mixins/opportunity/opportunity-person-components.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/opportunity/opportunity-person-components.schema.json](mixins/opportunity/opportunity-person-components.schema.json) |
 
 ## XDM Business Opportunity Person Relation Components Example
 ```json

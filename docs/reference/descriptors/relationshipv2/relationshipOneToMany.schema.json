@@ -62,7 +62,7 @@
         "xdm:manySideVersion",
         "xdm:manySideProperty"
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "@type": "xdm:relationshipOneToMany",

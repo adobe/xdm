@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use to capture details when a person fills out a form on a webpage.",
+  "description": "Use to capture details when a person fills out a form on a web page.",
   "definitions": {
     "formfilledout": {
       "properties": {
@@ -39,23 +39,23 @@
               }
             },
             "xdm:webPageDetails": {
-              "title": "WebPage Details",
+              "title": "Web Page Details",
               "type": "object",
               "properties": {
                 "xdm:webPageID": {
-                  "title": "WebPage ID",
+                  "title": "Web Page ID",
                   "type": "string",
-                  "description": "Unique ID of the webpage."
+                  "description": "Unique ID of the web page."
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
-                  "description": "The normative name of the webpage. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                  "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
-                  "description": "Query Parameters used for the webpage. This is normally the value of a string after `?` in the url."
+                  "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
                 }
               }
             },
@@ -75,7 +75,7 @@
         "xdm:environment": {
           "title": "Environment",
           "type": "object",
-          "description": "The information related to webpage and link of the ExperienceEvent.",
+          "description": "The information related to web page and link of the ExperienceEvent.",
           "properties": {
             "xdm:ipV4": {
               "title": "IPv4",

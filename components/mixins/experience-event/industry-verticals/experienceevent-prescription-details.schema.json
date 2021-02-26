@@ -19,7 +19,7 @@
   "definitions": {
     "prescription-details": {
       "properties": {
-        "xdm:s": {
+        "xdm:prescription": {
           "type": "object",
           "properties": {
             "xdm:deliveryEligible": {

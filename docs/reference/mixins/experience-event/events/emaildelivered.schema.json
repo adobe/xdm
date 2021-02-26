@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding direct marketing email delivered events.",
+    "description": "Use to capture details when an email is successfully delivered to a person.",
     "definitions": {
         "emaildelivered": {
             "properties": {

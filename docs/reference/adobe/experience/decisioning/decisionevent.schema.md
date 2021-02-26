@@ -1,5 +1,5 @@
 
-# XDM Decision Event Schema
+# Decision Event Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/decisionevent
@@ -12,15 +12,15 @@ A decision event is used to capture observations about the outcome and context o
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/decisionevent.schema.json](adobe/experience/decisioning/decisionevent.schema.json) |
 ## Schema Hierarchy
 
-* XDM Decision Event `https://ns.adobe.com/experience/decisioning/decisionevent`
+* Decision Event `https://ns.adobe.com/experience/decisioning/decisionevent`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
   * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [Decision Proposition Reference](proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
+  * [Experience Event - Proposition Reference](proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
   * [Decision Event - Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
 
 
-## XDM Decision Event Example
+## Decision Event Example
 ```json
 {
   "@id": "https://data.adobe.io/entities/propositions/3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
@@ -28,61 +28,69 @@ A decision event is used to capture observations about the outcome and context o
   "xdm:identityMap": {
     "ECID": [
       {
-        "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+        "xdm:id": "33441528584054496761339722935948080609"
       }
     ]
   },
-  "xdm:device": {
-    "xdm:typeID": "IMac",
-    "xdm:typeIDService": "https://ns.adobe.com/xdm/external/adobecampaign",
-    "xdm:type": "desktop",
-    "xdm:manufacturer": "Apple"
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
   "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-  "https://ns.adobe.com/experience/decisioning/propositionDetails": [
+  "https://ns.adobe.com/experience/decisioning/propositions": [
     {
-      "xdm:activity": {
-        "xdm:id": "xcore:offer-activity:ebc48132c26ccfc"
+      "xdm:scopeDetails": {
+        "xdm:placement": {
+          "xdm:id": "xcore:offer-placement:c652463157c2aa1",
+          "repo:etag": "4"
+        },
+        "xdm:activity": {
+          "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
+          "repo:etag": "8"
+        },
+        "xdm:strategies": [
+          {
+            "xdm:step": "ranking",
+            "xdm:strategyID": "ranking-strategy:7251468357c2236",
+            "xdm:algorithmID": "ts",
+            "xdm:trafficType": "noncontextual"
+          }
+        ],
+        "xdm:experience": {
+          "xdm:id": "ExperienceA"
+        }
       },
-      "xdm:selections": [
+      "xdm:items": [
         {
-          "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
-          "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+          "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
+          "repo:etag": "5",
+          "xdm:score": 83,
+          "xdm:propositionsTotal": {
             "xdm:value": 948
           },
-          "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+          "xdm:propositionsProfile": {
             "xdm:value": 2
           }
+        },
+        {
+          "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+          "repo:etag": "3",
+          "xdm:score": 12
         }
       ]
     },
     {
-      "xdm:activity": {
-        "xdm:id": "xcore:offer-activity:f203512e02542b5"
-      },
-      "xdm:fallback": {
-        "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+      "xdm:items": [
+        {
+          "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a",
+          "repo:etag": "5"
+        }
+      ],
+      "xdm:scopeDetails": {
+        "xdm:placement": {
+          "xdm:id": "xcore:offer-placement:c652463157c2aa2",
+          "repo:etag": "6"
+        },
+        "xdm:activity": {
+          "xdm:id": "xcore:offer-activity:f203512e02542b5",
+          "repo:etag": "14"
+        }
       }
     }
   ],
@@ -91,15 +99,16 @@ A decision event is used to capture observations about the outcome and context o
 }
 ```
 
-# XDM Decision Event Properties
+# Decision Event Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | **Required** | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
 | [https://ns.adobe.com/experience/decisioning/experienceID](#httpsnsadobecomexperiencedecisioningexperienceid) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningexperienceid) |
 | [https://ns.adobe.com/experience/decisioning/propositionContentKey](#httpsnsadobecomexperiencedecisioningpropositioncontentkey) | `string` | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositioncontentkey) |
-| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Detail | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
-| [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | **Required** | [Decision Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
+| [https://ns.adobe.com/experience/decisioning/propositionDetails](#httpsnsadobecomexperiencedecisioningpropositiondetails) | Decision Proposition Details | Optional | [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails) |
+| [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | **Required** | [Experience Event - Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
+| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | reference | Optional | Decision Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | **Required** | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -173,17 +182,17 @@ Details about the results of the decision. An array providing the output of a si
 
 `https://ns.adobe.com/experience/decisioning/propositionDetails`
 * is optional
-* type: Decision Proposition Detail
+* type: Decision Proposition Details
 
 * defined in [Decision Event - Proposition Details](proposition-details.schema.md#httpsnsadobecomexperiencedecisioningpropositiondetails)
 
 ### https://ns.adobe.com/experience/decisioning/propositionDetails Type
 
 
-Array type: Decision Proposition Detail
+Array type: Decision Proposition Details
 
 All items must be of the type:
-* [Decision Proposition Detail](proposition-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-detail`
+* [Decision Proposition Details](proposition-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-detail`
 
 
 
@@ -195,18 +204,44 @@ All items must be of the type:
 ## https://ns.adobe.com/experience/decisioning/propositionID
 ### Proposition Identifier
 
-A unique identifier for the proposition event referenced by an "XDM ExperienceEvent". It is the expectation that applications use this "propositionID" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.
+A unique identifier for the proposition event referenced by another "XDM ExperienceEvent". It is the expectation that applications use this "propositionID" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.
 
 `https://ns.adobe.com/experience/decisioning/propositionID`
 * is **required**
 * type: `string`
-* defined in [Decision Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid)
+* defined in [Experience Event - Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid)
 
 ### https://ns.adobe.com/experience/decisioning/propositionID Type
 
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## https://ns.adobe.com/experience/decisioning/propositions
+### Proposition Details
+
+Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.
+
+`https://ns.adobe.com/experience/decisioning/propositions`
+* is optional
+* type: reference
+
+* defined in this schema
+
+### https://ns.adobe.com/experience/decisioning/propositions Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `#/definitions/proposition-details`
+
+
 
 
 
@@ -318,6 +353,58 @@ The time when an event or observation occurred.
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
+
+
+
+
+
+# Decision Event Definitions
+
+| Property | Type | Group |
+|----------|------|-------|
+| [xdm:items](#xdmitems) | reference | `https://ns.adobe.com/experience/decisioning/decisionevent#/definitions/proposition-details` |
+| [xdm:scopeDetails](#xdmscopedetails) | reference | `https://ns.adobe.com/experience/decisioning/decisionevent#/definitions/proposition-details` |
+
+## xdm:items
+### Decision Options&#39; Snapshot
+
+Snapshot of the options that were selected by this proposition. The objects contain at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.
+
+`xdm:items`
+* is optional
+* type: reference
+* at least `1` items in the array
+* defined in this schema
+
+### xdm:items Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/experience/decisioning/option-detail`
+
+
+
+
+
+
+
+
+## xdm:scopeDetails
+### Decision Scope Snapshot
+
+A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.
+
+`xdm:scopeDetails`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:scopeDetails Type
+
+
+* []() – `https://ns.adobe.com/experience/decisioning/scope-details`
 
 
 

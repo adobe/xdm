@@ -1,5 +1,5 @@
 
-# Decision Proposition Detail Schema
+# Decision Proposition Details Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/proposition-detail
@@ -9,17 +9,28 @@ A decision proposition detail is used to capture the output of a decisioning act
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
 ## Schema Hierarchy
 
-* Decision Proposition Detail `https://ns.adobe.com/experience/decisioning/proposition-detail`
+* Decision Proposition Details `https://ns.adobe.com/experience/decisioning/proposition-detail`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Decision Activity Detail](activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
+  * [Decision Activity Details](activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
   * [Decision Placement Detail](placement-detail.schema.md) `https://ns.adobe.com/experience/decisioning/placement-detail`
-  * [Decision Option Detail](option-detail.schema.md) `https://ns.adobe.com/experience/decisioning/option-detail`
+  * [Decision Option Details](option-detail.schema.md) `https://ns.adobe.com/experience/decisioning/option-detail`
 
 
-## Decision Proposition Detail Examples
+## Decision Proposition Details Examples
+
+```json
+{
+  "xdm:activity": {
+    "xdm:id": "xcore:offer-activity:f203512e02542b5"
+  },
+  "xdm:fallback": {
+    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+  }
+}
+```
 
 ```json
 {
@@ -70,52 +81,41 @@ A decision proposition detail is used to capture the output of a decisioning act
 }
 ```
 
-```json
-{
-  "xdm:activity": {
-    "xdm:id": "xcore:offer-activity:f203512e02542b5"
-  },
-  "xdm:fallback": {
-    "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-  }
-}
-```
 
-
-# Decision Proposition Detail Properties
+# Decision Proposition Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:activity](#xdmactivity) | Decision Activity Detail | Optional | Decision Proposition Detail (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | Decision Proposition Detail (this schema) |
-| [xdm:fallback](#xdmfallback) | Decision Option Detail | Optional | Decision Proposition Detail (this schema) |
-| [xdm:placement](#xdmplacement) | Decision Placement Detail | Optional | Decision Proposition Detail (this schema) |
-| [xdm:selections](#xdmselections) | Decision Option Detail | Optional | Decision Proposition Detail (this schema) |
+| [xdm:activity](#xdmactivity) | Decision Activity Details | Optional | Decision Proposition Details (this schema) |
+| [xdm:channel](#xdmchannel) | `string` | Optional | Decision Proposition Details (this schema) |
+| [xdm:fallback](#xdmfallback) | Decision Option Details | Optional | Decision Proposition Details (this schema) |
+| [xdm:placement](#xdmplacement) | Decision Placement Detail | Optional | Decision Proposition Details (this schema) |
+| [xdm:selections](#xdmselections) | Decision Option Details | Optional | Decision Proposition Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:activity
-### Decision Activity Snapshot
+### Decision Activity Snapshot (deprecated)
 
-Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.
+Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. (deprecated), use scopeDetails.activity instead.
 
 `xdm:activity`
 * is optional
-* type: Decision Activity Detail
+* type: Decision Activity Details
 * defined in this schema
 
 ### xdm:activity Type
 
 
-* [Decision Activity Detail](activity-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/activity-detail`
+* [Decision Activity Details](activity-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/activity-detail`
 
 
 
 
 
 ## xdm:channel
-### DEPRECATED - Channel
+### Channel (deprecated)
 
-DEPRECATED, use placement.channel instead. The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'
+The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'. (deprecated), use scope.placement.channel instead. 
 
 `xdm:channel`
 * is optional
@@ -134,28 +134,28 @@ DEPRECATED, use placement.channel instead. The channel in which proposition was 
 
 
 ## xdm:fallback
-### Fallback Option Snapshot
+### Fallback Option Snapshot (deprecated)
 
-Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required.
+Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. (deprecated) use scopeDetails.activity.fallback instead.
 
 `xdm:fallback`
 * is optional
-* type: Decision Option Detail
+* type: Decision Option Details
 * defined in this schema
 
 ### xdm:fallback Type
 
 
-* [Decision Option Detail](option-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/option-detail`
+* [Decision Option Details](option-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/option-detail`
 
 
 
 
 
 ## xdm:placement
-### Placement Snapshot
+### Placement Snapshot (deprecated)
 
-Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement.
+Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. (deprecated), use scopeDetails.placement instead.
 
 `xdm:placement`
 * is optional
@@ -172,23 +172,23 @@ Snapshot of the placement for which the proposition was made. The object contain
 
 
 ## xdm:selections
-### Selected Options&#39; Snapshot
+### Selected Options&#39; Snapshot (deprecated)
 
-Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.
+Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required. (deprecated), use items instead.
 
 `xdm:selections`
 * is optional
-* type: Decision Option Detail
+* type: Decision Option Details
 * at least `1` items in the array
 * defined in this schema
 
 ### xdm:selections Type
 
 
-Array type: Decision Option Detail
+Array type: Decision Option Details
 
 All items must be of the type:
-* [Decision Option Detail](option-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/option-detail`
+* [Decision Option Details](option-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/option-detail`
 
 
 

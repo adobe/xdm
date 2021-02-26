@@ -9,7 +9,7 @@ Relationship attributes for a marketing list and its members from a single data 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/marketing-list/marketing-list-member-components.schema.json](mixins/marketing-list/marketing-list-member-components.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/marketing-list/marketing-list-member-components.schema.json](mixins/marketing-list/marketing-list-member-components.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Marketing List Member Components `https://ns.adobe.com/xdm/mixins/marketing-list-member-components`

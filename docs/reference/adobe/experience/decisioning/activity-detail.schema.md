@@ -1,5 +1,5 @@
 
-# Decision Activity Detail Schema
+# Decision Activity Details Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/activity-detail
@@ -12,11 +12,11 @@ Snapshot of the properties of the decision activity. A decision activity is an e
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/activity-detail.schema.json](adobe/experience/decisioning/activity-detail.schema.json) |
 ## Schema Hierarchy
 
-* Decision Activity Detail `https://ns.adobe.com/experience/decisioning/activity-detail`
+* Decision Activity Details `https://ns.adobe.com/experience/decisioning/activity-detail`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Decision Activity Detail Example
+## Decision Activity Details Example
 ```json
 {
   "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
@@ -26,16 +26,16 @@ Snapshot of the properties of the decision activity. A decision activity is an e
 }
 ```
 
-# Decision Activity Detail Properties
+# Decision Activity Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [repo:etag](#repoetag) | `string` | Optional | Decision Activity Detail (this schema) |
-| [xdm:endTime](#xdmendtime) | `string` | Optional | Decision Activity Detail (this schema) |
-| [xdm:fallback](#xdmfallback) | `string` | Optional | Decision Activity Detail (this schema) |
-| [xdm:id](#xdmid) | `string` | **Required** | Decision Activity Detail (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Decision Activity Detail (this schema) |
-| [xdm:startTime](#xdmstarttime) | `string` | Optional | Decision Activity Detail (this schema) |
+| [repo:etag](#repoetag) | `string` | Optional | Decision Activity Details (this schema) |
+| [xdm:endTime](#xdmendtime) | `string` | Optional | Decision Activity Details (this schema) |
+| [xdm:fallback](#xdmfallback) | `string` | Optional | Decision Activity Details (this schema) |
+| [xdm:id](#xdmid) | `string` | **Required** | Decision Activity Details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Decision Activity Details (this schema) |
+| [xdm:startTime](#xdmstarttime) | `string` | Optional | Decision Activity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## repo:etag

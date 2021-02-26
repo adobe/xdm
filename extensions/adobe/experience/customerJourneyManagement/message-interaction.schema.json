@@ -21,10 +21,11 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "action"],
+          "enum": ["click", "open", "action", "unsubscribe"],
           "meta:enum": {
             "click": "Link in a message is clicked by the user.",
-            "open": "Either Message is open by the user, or in case of push, clicking the message opened the mobile application."
+            "open": "Either Message is open by the user, or in case of push, clicking the message opened the mobile application.",
+            "unsubscribe": "User choose to unsubscribe from receiving messages in the future."
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {

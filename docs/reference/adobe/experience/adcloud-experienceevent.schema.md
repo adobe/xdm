@@ -82,7 +82,6 @@ Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution 
 | [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventmergeid) |
-| [xdm:eventType](#xdmeventtype) | `string` | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventtype) |
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
 | [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
 | [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
@@ -531,73 +530,6 @@ An ID to correlate or merge multiple Experience events together that are essenti
 `string`
 
 
-
-
-
-
-## xdm:eventType
-### Event Type
-
-The primary event type for this time-series record.
-
-`xdm:eventType`
-* is optional
-* type: `string`
-* defined in [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventtype)
-
-### xdm:eventType Type
-
-
-`string`
-
-
-
-### xdm:eventType Known Values
-| Value | Description |
-|-------|-------------|
-| `advertising.completes` | Advertising Completes |
-| `advertising.timePlayed` | Advertising Time Played |
-| `advertising.federated` | Advertising Federated |
-| `advertising.clicks` | Advertising Clicks |
-| `advertising.conversions` | Advertising Conversions |
-| `advertising.firstQuartiles` | Advertising First Quartiles |
-| `advertising.impressions` | Advertising Impressions |
-| `advertising.midpoints` | Advertising Midpoints |
-| `advertising.starts` | Advertising Starts |
-| `advertising.thirdQuartiles` | Advertising Third Quartiles |
-| `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
-| `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
-| `web.formFilledOut` | Web Form Filled Out |
-| `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
-| `commerce.purchases` | Commerce Purchases |
-| `commerce.saveForLaters` | Commerce Save For Laters |
-| `delivery.feedback` | Delivery Feedback |
-| `message.feedback` | Message Feedback |
-| `message.tracking` | Message Tracking |
-| `pushTracking.applicationOpened` | Push Tracking Application Opened |
-| `pushTracking.customAction` | Push Tracking Custom Action |
-| `listOpearation.removeFromList` | List Operation Remove From List |
-| `listOperation.addToList` | List Operation Add To List |
-| `leadoperation.scoreChanged` | Lead Operation Score Changed |
-| `leadoperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
-| `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
-| `leadOperation.newLead` | Lead Operation New Lead |
-| `leadoperation.convertLead` | Lead Operation Convert Lead |
-| `directMarketing.emailBounced` | Direct Marketing Email Bounced |
-| `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
-| `directMarketing.emailDelivered` | Direct Marketing Email Delivered |
-| `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
-| `directMarketing.emailOpened` | Direct Marketing Email Opened |
-| `directMarketing.emailClicked` | Direct Marketing Email Clicked |
-| `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
-| `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
-| `opportunityevent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 
 
 

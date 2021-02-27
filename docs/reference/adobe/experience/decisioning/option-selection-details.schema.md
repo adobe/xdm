@@ -15,19 +15,19 @@ A component of a decision criteria that defines option applicability constraints
 
 ```json
 {
-  "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
-  "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
-  "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
-}
-```
-
-```json
-{
   "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
   "https://ns.adobe.com/experience/decisioning/optionSelectionType": "directList",
   "https://ns.adobe.com/experience/decisioning/options": [
     "xcore:offer:f6998eb62ed6f15"
   ]
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
+  "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
+  "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
 }
 ```
 

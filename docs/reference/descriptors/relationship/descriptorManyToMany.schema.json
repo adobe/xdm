@@ -37,7 +37,7 @@
             "$ref": "#/definitions/descriptorManyToMany"
         }
     ],
-    "meta:status": "stable",
+    "meta:status": "deprecated",
     "examples": [
         {
             "@id": "https://ns.adobe.com/example/descriptorManyToMany/1",

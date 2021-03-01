@@ -21,7 +21,7 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "action", "unsubscribe"],
+          "enum": ["click", "open", "unsubscribe"],
           "meta:enum": {
             "click": "Link in a message is clicked by the user.",
             "open": "Either Message is open by the user, or in case of push, clicking the message opened the mobile application.",

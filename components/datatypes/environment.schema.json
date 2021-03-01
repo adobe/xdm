@@ -150,31 +150,21 @@
     },
     "ipv4": {
       "properties": {
-        "xdm:environment": {
-          "tupe": "object",
-          "properties": {
-            "xdm:ipV4": {
-              "title": "IPv4",
-              "type": "string",
-              "format": "ipv4",
-              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
-            }
-          }
+        "xdm:ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
         }
       }
     },
     "ipv6": {
       "properties": {
-        "xdm:environment": {
-          "type": "object",
-          "properties": {
-            "xdm:ipV6": {
-              "title": "IPv6",
-              "type": "string",
-              "format": "ipv6",
-              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
-            }
-          }
+        "xdm:ipV6": {
+          "title": "IPv6",
+          "type": "string",
+          "format": "ipv6",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
         }
       }
     }

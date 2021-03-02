@@ -28,7 +28,6 @@ This mixin is used to capture properties related to business campaign details.
 | [xdm:actualCost](#xdmactualcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:budgetedCost](#xdmbudgetedcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignEndDate](#xdmcampaignenddate) | `string` | Optional | XDM Business Campaign Details (this schema) |
-| [xdm:campaignOwnerID](#xdmcampaignownerid) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignProgressionName](#xdmcampaignprogressionname) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignStartDate](#xdmcampaignstartdate) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignStatus](#xdmcampaignstatus) | `string` | Optional | XDM Business Campaign Details (this schema) |
@@ -95,24 +94,6 @@ This mixin is used to capture properties related to business campaign details.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## xdm:campaignOwnerID
-### Campaign Owner ID.
-
-`xdm:campaignOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:campaignOwnerID Type
-
-
-`string`
 
 
 

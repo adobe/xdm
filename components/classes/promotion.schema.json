@@ -40,7 +40,7 @@
         "xdm:promoCreative": {
           "title": "Promotion Creative",
           "type": "string",
-          "description": "	The text or creative variation associated with the promotion."
+          "description": "The text or creative variation associated with the promotion."
         },
         "xdm:promotionDetails": {
           "title": "Promotion Details",
@@ -60,7 +60,7 @@
         "xdm:promoPosition": {
           "title": "Promotion Position",
           "type": "string",
-          "description": "	Promotion position on site."
+          "description": "Promotion position on site."
         },
         "xdm:startDate": {
           "title": "Start Date",

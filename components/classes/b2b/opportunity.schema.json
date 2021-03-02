@@ -19,32 +19,32 @@
       "properties": {
         "xdm:opportunityID": {
           "title": "Opportunity ID",
-          "description": "Opportunity unique identifer",
+          "description": "Unique ID of the opportunity.",
           "type": "string"
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
-          "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+          "description": "Name of the opportunity.",
           "type": "string"
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
-          "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+          "description": "Description of the opportunity.",
           "type": "string"
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
-          "description": "Opportunity type such as Existing Business or New Business",
+          "description": "Type of the opportunity.",
           "type": "string"
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
-          "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+          "description": "Sales stage of the opportunity.",
           "type": "string"
         },
         "xdm:accountID": {
           "title": "Account ID",
-          "description": "Account unique identifier reference that this opportunity is linked to.",
+          "description": "Unique ID of the account this opportunity is associated with.",
           "type": "string"
         }
       }

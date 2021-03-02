@@ -266,6 +266,17 @@ function validate(o, file) {
             errLogs.push(file + ' validation error!!! Missing object type definition for "' +'properties"' + '.\n')
         }
 
+        if (o[i] && (typeof(o[i]) == "object") && !(o[i] instanceof Array)
+            && (i != "properties") && (i != "patternProperties") && !(o[i].hasOwnProperty("type"))) {
+            for (j in o[i]) {
+                if (o[i][j] && (typeof(o[i][j]) == "object") && (o[i][j].hasOwnProperty("type"))) {
+                    errLogs.push(file + ' validation error!!! Missing "properties" attribute and "object" type for field ' + JSON.stringify(o,null,2) + '.\n')
+                    break;
+                }
+            }
+        }
+
+
         if (o[i] !== null && typeof(o[i]) == "object") {
             //going one step down in the object tree!!
             validate(o[i], file);

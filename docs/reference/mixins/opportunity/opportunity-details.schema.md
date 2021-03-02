@@ -47,7 +47,7 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 ## xdm:actualCloseDate
 ### Actual Close Date
 
-Actual date of closure for this opportunity.
+Actual date the opportunity was closed.
 
 `xdm:actualCloseDate`
 * is optional
@@ -68,7 +68,7 @@ Actual date of closure for this opportunity.
 ## xdm:campaignID
 ### Campaign ID
 
-Campaign unique identifer reference.
+Unique ID of the campaign related to this opportunity.
 
 `xdm:campaignID`
 * is optional
@@ -88,7 +88,7 @@ Campaign unique identifer reference.
 ## xdm:expectedCloseDate
 ### Expected Close Date
 
-Expected date of closure for this opportunity.
+Expected date the opportunity will close.
 
 `xdm:expectedCloseDate`
 * is optional
@@ -109,7 +109,7 @@ Expected date of closure for this opportunity.
 ## xdm:expectedRevenue
 ### Expected Revenue
 
-Calculated revenue based on the Amount and Probability.
+Expected revenue based on the probability percentage and opportunity amount.
 
 `xdm:expectedRevenue`
 * is optional
@@ -128,7 +128,7 @@ Calculated revenue based on the Amount and Probability.
 ## xdm:fiscalQuarter
 ### Fiscal Quarter
 
-The fiscal quarter this opportunity is targeted.
+The fiscal quarter this opportunity is targeted for.
 
 `xdm:fiscalQuarter`
 * is optional
@@ -155,7 +155,7 @@ All instances must conform to this regular expression
 ## xdm:fiscalYear
 ### Fiscal Year
 
-The fiscal year this opportunity is targeted.
+The fiscal year this opportunity is targeted for.
 
 `xdm:fiscalYear`
 * is optional
@@ -175,7 +175,7 @@ The fiscal year this opportunity is targeted.
 ## xdm:forecastCategory
 ### Forecast Category
 
-Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.
+Forecast category for the opportunity based on the opportunity stage.
 
 `xdm:forecastCategory`
 * is optional
@@ -195,7 +195,7 @@ Forecast Category determined by the opportunity Stage value eg: omitted,pipeline
 ## xdm:forecastCategoryName
 ### Forecast Category Name
 
-Forecast category name that is displayed in reports for a perticular forecast category.
+Name of the forecast category for the opportunity.
 
 `xdm:forecastCategoryName`
 * is optional
@@ -215,7 +215,7 @@ Forecast category name that is displayed in reports for a perticular forecast ca
 ## xdm:isClosed
 ### Closed Flag
 
-Flag indicating if this opportunity is closed.
+Boolean indicating if the opportunity is closed.
 
 `xdm:isClosed`
 * is optional
@@ -234,7 +234,7 @@ Flag indicating if this opportunity is closed.
 ## xdm:isWon
 ### Won Flag
 
-Flag indicating if this opportunity is Won.
+Boolean indicating if the opportunity was won.
 
 `xdm:isWon`
 * is optional
@@ -253,7 +253,7 @@ Flag indicating if this opportunity is Won.
 ## xdm:lastActivityDate
 ### Last Activity Date
 
-Last activity date for this opportunity.
+Date of last activity for the opportunity.
 
 `xdm:lastActivityDate`
 * is optional
@@ -274,7 +274,7 @@ Last activity date for this opportunity.
 ## xdm:leadSource
 ### Lead Source
 
-Source of the opportunity such as Advertisement, Partner, or Web.
+Source that the opportunity originated from.
 
 `xdm:leadSource`
 * is optional
@@ -294,7 +294,7 @@ Source of the opportunity such as Advertisement, Partner, or Web.
 ## xdm:nextStep
 ### Next Step
 
-Description of next task in closing opportunity.
+Description of the next step for the opportunity.
 
 `xdm:nextStep`
 * is optional
@@ -314,7 +314,7 @@ Description of next task in closing opportunity.
 ## xdm:opportunityAmount
 ### Opportunity Amount
 
-Estimated total sale amount.
+Estimated sale amount for the opportunity.
 
 `xdm:opportunityAmount`
 * is optional
@@ -333,7 +333,7 @@ Estimated total sale amount.
 ## xdm:opportunityOwnerID
 ### opportunity Owner Id
 
-Assigned owner for this opportunity.
+Unique ID of the internal owner for this opportunity.
 
 `xdm:opportunityOwnerID`
 * is optional
@@ -353,7 +353,7 @@ Assigned owner for this opportunity.
 ## xdm:opportunityQuantity
 ### Opportunity Quantity
 
-Total of all quantity field values for all products in the Products related list for this opportunity.
+Total quantity of all related products for the opportunity.
 
 `xdm:opportunityQuantity`
 * is optional
@@ -375,7 +375,7 @@ Total of all quantity field values for all products in the Products related list
 ## xdm:probabilityPercentage
 ### Probability Percentage
 
-Likelihood that opportunity will close, stated as a percentage.
+Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.
 
 `xdm:probabilityPercentage`
 * is optional

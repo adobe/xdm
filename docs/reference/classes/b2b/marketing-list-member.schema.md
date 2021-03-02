@@ -79,7 +79,7 @@ Audit attributes for external sources.
 ## xdm:marketingListID
 ### Marketing List Identifier
 
-Unique identifier for the marketing list.
+Unique ID for the marketing list this person is a member of.
 
 `xdm:marketingListID`
 * is optional
@@ -99,7 +99,7 @@ Unique identifier for the marketing list.
 ## xdm:marketingListMemberID
 ### Marketing List Member ID
 
-Marketing list member identifer
+Unique ID for the membership of this person to this marketing list.
 
 `xdm:marketingListMemberID`
 * is **required**
@@ -119,7 +119,7 @@ Marketing list member identifer
 ## xdm:personID
 ### Person Identifier
 
-Person associated with the marketing list.
+Unique ID for the person who is a member of this marketing list.
 
 `xdm:personID`
 * is optional

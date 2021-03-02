@@ -50,7 +50,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 ## xdm:DUNSNumber
 ### Dun &amp; Bradstreet D-U-N-S Number
 
-The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.
+The number for the account in the Dun & Bradstreet database.
 
 `xdm:DUNSNumber`
 * is optional
@@ -70,7 +70,7 @@ The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assig
 ## xdm:NAICSCode
 ### NAICS Code
 
-A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System.
+The code for the account's industry within the North American Industry Classification System.
 
 `xdm:NAICSCode`
 * is optional
@@ -90,7 +90,7 @@ A NAICS (pronounced NAKES) Code is a classification within the North American In
 ## xdm:NAICSDescription
 ### NAICS Description
 
-A brief description of an organization’s line of business, based on its NAICS code.
+The description for the account's industry based on its NAICS code.
 
 `xdm:NAICSDescription`
 * is optional
@@ -110,7 +110,7 @@ A brief description of an organization’s line of business, based on its NAICS 
 ## xdm:SICCode
 ### SIC Code
 
-The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities.
+The code for the account's industry within the Standard Industrial Classification system.
 
 `xdm:SICCode`
 * is optional
@@ -130,7 +130,7 @@ The Standard Industrial Classification (SIC) are four-digit codes that categoriz
 ## xdm:SICDescription
 ### SIC Description
 
-A brief description of an organization’s line of business, based on its SIC code.
+The description for the account's industry based on its SIC code.
 
 `xdm:SICDescription`
 * is optional
@@ -150,7 +150,7 @@ A brief description of an organization’s line of business, based on its SIC co
 ## xdm:annualRevenue
 ### Annual Revenue
 
-Estimated amount of annual revenue of the organization.
+Estimated annual revenue of the account.
 
 `xdm:annualRevenue`
 * is optional
@@ -169,7 +169,7 @@ Estimated amount of annual revenue of the organization.
 ## xdm:companyProductAndServices
 ### Company Product and Services
 
-Product and Services the Company is dealing or doing business in.
+Description of the account's product and/or services.
 
 `xdm:companyProductAndServices`
 * is optional
@@ -189,7 +189,7 @@ Product and Services the Company is dealing or doing business in.
 ## xdm:facebookPageUrl
 ### Facebook Page URL
 
-Website link to the Facebook account of the account
+The URL of the account's Facebook page.
 
 `xdm:facebookPageUrl`
 * is optional
@@ -209,7 +209,7 @@ Website link to the Facebook account of the account
 ## xdm:industry
 ### Industry
 
-The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.
+Industry of the account.
 
 `xdm:industry`
 * is optional
@@ -229,7 +229,7 @@ The industry that this organization is a part of. This is a free-form field, and
 ## xdm:jigsaw
 ### Jigsaw
 
-Data.com Key.
+The key for the account in Data.com.
 
 `xdm:jigsaw`
 * is optional
@@ -249,7 +249,7 @@ Data.com Key.
 ## xdm:linkedinPageUrl
 ### Linkedinin Page URL
 
-Website link to the Linkedin account of the account
+The URL of the account's LinkedIn page.
 
 `xdm:linkedinPageUrl`
 * is optional
@@ -269,7 +269,7 @@ Website link to the Linkedin account of the account
 ## xdm:logoUrl
 ### Logo URL
 
-Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.
+URL for the image of the account's logo.
 
 `xdm:logoUrl`
 * is optional
@@ -289,7 +289,7 @@ Path to be combined with the URL of a Salesforce instance (for example, https://
 ## xdm:marketSegment
 ### Market segment
 
-The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.
+Market segment of the account.
 
 `xdm:marketSegment`
 * is optional
@@ -309,7 +309,7 @@ The named market segment that the organization participates in. This is a free-f
 ## xdm:numberOfEmployees
 ### Number of employees
 
-The number of employees at the organization.
+Number of employees of the account.
 
 `xdm:numberOfEmployees`
 * is optional
@@ -329,7 +329,7 @@ The number of employees at the organization.
 ## xdm:organizationType
 ### Type of Organizations
 
-Label describing the type of organization
+Label describing the type of organization.
 
 `xdm:organizationType`
 * is optional
@@ -349,6 +349,8 @@ Label describing the type of organization
 ## xdm:primaryEmailDomain
 ### Primary Email Domain
 
+The primary domain of email addresses associated with the account.
+
 `xdm:primaryEmailDomain`
 * is optional
 * type: `string`
@@ -367,7 +369,7 @@ Label describing the type of organization
 ## xdm:rating
 ### Rating
 
-The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.
+The calculated score or star rating for this account. `1` indicates the maximum possible rating, `0` the minimum possible rating.
 
 `xdm:rating`
 * is optional
@@ -388,7 +390,7 @@ The calculated score or star rating for this organization. `1` indicates the max
 ## xdm:tickerSymbol
 ### Ticker Symbol
 
-The stock market symbol for this account. Maximum of 20 characters.
+The stock market symbol for this account.
 
 `xdm:tickerSymbol`
 * is optional
@@ -408,7 +410,7 @@ The stock market symbol for this account. Maximum of 20 characters.
 ## xdm:twitterHandleUrl
 ### Twitter handle URL
 
-Website link to the twitter handle of the account
+The URL of the account's Twitter profile.
 
 `xdm:twitterHandleUrl`
 * is optional
@@ -428,7 +430,7 @@ Website link to the twitter handle of the account
 ## xdm:website
 ### Website URL
 
-The URL of the organization's website.
+The URL of the account's website.
 
 `xdm:website`
 * is optional

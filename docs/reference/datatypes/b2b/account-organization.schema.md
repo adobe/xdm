@@ -1,5 +1,5 @@
 
-# Account Organization Schema
+# Account Details Schema
 
 ```
 https://ns.adobe.com/xdm/datatypes/b2b-account-organization
@@ -12,45 +12,45 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/b2b/account-organization.schema.json](datatypes/b2b/account-organization.schema.json) |
 ## Schema Hierarchy
 
-* Account Organization `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+* Account Details `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
   * [Currency](../currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
-## Account Organization Example
+## Account Details Example
 ```json
 {}
 ```
 
-# Account Organization Properties
+# Account Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:DUNSNumber](#xdmdunsnumber) | `string` | Optional | Account Organization (this schema) |
-| [xdm:NAICSCode](#xdmnaicscode) | `string` | Optional | Account Organization (this schema) |
-| [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Organization (this schema) |
-| [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:annualRevenue](#xdmannualrevenue) | Currency | Optional | Account Organization (this schema) |
-| [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Organization (this schema) |
-| [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:industry](#xdmindustry) | `string` | Optional | Account Organization (this schema) |
-| [xdm:jigsaw](#xdmjigsaw) | `string` | Optional | Account Organization (this schema) |
-| [xdm:linkedinPageUrl](#xdmlinkedinpageurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:logoUrl](#xdmlogourl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:marketSegment](#xdmmarketsegment) | `string` | Optional | Account Organization (this schema) |
-| [xdm:numberOfEmployees](#xdmnumberofemployees) | `integer` | Optional | Account Organization (this schema) |
-| [xdm:organizationType](#xdmorganizationtype) | `string` | Optional | Account Organization (this schema) |
-| [xdm:primaryEmailDomain](#xdmprimaryemaildomain) | `string` | Optional | Account Organization (this schema) |
-| [xdm:rating](#xdmrating) | `number` | Optional | Account Organization (this schema) |
-| [xdm:tickerSymbol](#xdmtickersymbol) | `string` | Optional | Account Organization (this schema) |
-| [xdm:twitterHandleUrl](#xdmtwitterhandleurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:website](#xdmwebsite) | `string` | Optional | Account Organization (this schema) |
+| [xdm:DUNSNumber](#xdmdunsnumber) | `string` | Optional | Account Details (this schema) |
+| [xdm:NAICSCode](#xdmnaicscode) | `string` | Optional | Account Details (this schema) |
+| [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Details (this schema) |
+| [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Details (this schema) |
+| [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Details (this schema) |
+| [xdm:annualRevenue](#xdmannualrevenue) | Currency | Optional | Account Details (this schema) |
+| [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Details (this schema) |
+| [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:industry](#xdmindustry) | `string` | Optional | Account Details (this schema) |
+| [xdm:jigsaw](#xdmjigsaw) | `string` | Optional | Account Details (this schema) |
+| [xdm:linkedinPageUrl](#xdmlinkedinpageurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:logoUrl](#xdmlogourl) | `string` | Optional | Account Details (this schema) |
+| [xdm:marketSegment](#xdmmarketsegment) | `string` | Optional | Account Details (this schema) |
+| [xdm:numberOfEmployees](#xdmnumberofemployees) | `integer` | Optional | Account Details (this schema) |
+| [xdm:organizationType](#xdmorganizationtype) | `string` | Optional | Account Details (this schema) |
+| [xdm:primaryEmailDomain](#xdmprimaryemaildomain) | `string` | Optional | Account Details (this schema) |
+| [xdm:rating](#xdmrating) | `number` | Optional | Account Details (this schema) |
+| [xdm:tickerSymbol](#xdmtickersymbol) | `string` | Optional | Account Details (this schema) |
+| [xdm:twitterHandleUrl](#xdmtwitterhandleurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:website](#xdmwebsite) | `string` | Optional | Account Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:DUNSNumber
 ### Dun &amp; Bradstreet D-U-N-S Number
 
-The number for the account in the Dun & Bradstreet database.
+The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.
 
 `xdm:DUNSNumber`
 * is optional
@@ -70,7 +70,7 @@ The number for the account in the Dun & Bradstreet database.
 ## xdm:NAICSCode
 ### NAICS Code
 
-The code for the account's industry within the North American Industry Classification System.
+A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System.
 
 `xdm:NAICSCode`
 * is optional
@@ -90,7 +90,7 @@ The code for the account's industry within the North American Industry Classific
 ## xdm:NAICSDescription
 ### NAICS Description
 
-The description for the account's industry based on its NAICS code.
+A brief description of an organization’s line of business, based on its NAICS code.
 
 `xdm:NAICSDescription`
 * is optional
@@ -110,7 +110,7 @@ The description for the account's industry based on its NAICS code.
 ## xdm:SICCode
 ### SIC Code
 
-The code for the account's industry within the Standard Industrial Classification system.
+The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities.
 
 `xdm:SICCode`
 * is optional
@@ -130,7 +130,7 @@ The code for the account's industry within the Standard Industrial Classificatio
 ## xdm:SICDescription
 ### SIC Description
 
-The description for the account's industry based on its SIC code.
+A brief description of an organization’s line of business, based on its SIC code.
 
 `xdm:SICDescription`
 * is optional
@@ -150,7 +150,7 @@ The description for the account's industry based on its SIC code.
 ## xdm:annualRevenue
 ### Annual Revenue
 
-Estimated annual revenue of the account.
+Estimated amount of annual revenue of the organization.
 
 `xdm:annualRevenue`
 * is optional
@@ -169,7 +169,7 @@ Estimated annual revenue of the account.
 ## xdm:companyProductAndServices
 ### Company Product and Services
 
-Description of the account's product and/or services.
+Product and Services the Company is dealing or doing business in.
 
 `xdm:companyProductAndServices`
 * is optional
@@ -189,7 +189,7 @@ Description of the account's product and/or services.
 ## xdm:facebookPageUrl
 ### Facebook Page URL
 
-The URL of the account's Facebook page.
+Website link to the Facebook account of the account
 
 `xdm:facebookPageUrl`
 * is optional
@@ -209,7 +209,7 @@ The URL of the account's Facebook page.
 ## xdm:industry
 ### Industry
 
-Industry of the account.
+The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.
 
 `xdm:industry`
 * is optional
@@ -229,7 +229,7 @@ Industry of the account.
 ## xdm:jigsaw
 ### Jigsaw
 
-The key for the account in Data.com.
+Data.com Key.
 
 `xdm:jigsaw`
 * is optional
@@ -249,7 +249,7 @@ The key for the account in Data.com.
 ## xdm:linkedinPageUrl
 ### Linkedinin Page URL
 
-The URL of the account's LinkedIn page.
+Website link to the Linkedin account of the account
 
 `xdm:linkedinPageUrl`
 * is optional
@@ -269,7 +269,7 @@ The URL of the account's LinkedIn page.
 ## xdm:logoUrl
 ### Logo URL
 
-URL for the image of the account's logo.
+Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.
 
 `xdm:logoUrl`
 * is optional
@@ -289,7 +289,7 @@ URL for the image of the account's logo.
 ## xdm:marketSegment
 ### Market segment
 
-Market segment of the account.
+The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.
 
 `xdm:marketSegment`
 * is optional
@@ -309,7 +309,7 @@ Market segment of the account.
 ## xdm:numberOfEmployees
 ### Number of employees
 
-Number of employees of the account.
+The number of employees at the organization.
 
 `xdm:numberOfEmployees`
 * is optional
@@ -329,7 +329,7 @@ Number of employees of the account.
 ## xdm:organizationType
 ### Type of Organizations
 
-Label describing the type of organization.
+Label describing the type of organization
 
 `xdm:organizationType`
 * is optional
@@ -349,8 +349,6 @@ Label describing the type of organization.
 ## xdm:primaryEmailDomain
 ### Primary Email Domain
 
-The primary domain of email addresses associated with the account.
-
 `xdm:primaryEmailDomain`
 * is optional
 * type: `string`
@@ -369,7 +367,7 @@ The primary domain of email addresses associated with the account.
 ## xdm:rating
 ### Rating
 
-The calculated score or star rating for this account. `1` indicates the maximum possible rating, `0` the minimum possible rating.
+The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.
 
 `xdm:rating`
 * is optional
@@ -390,7 +388,7 @@ The calculated score or star rating for this account. `1` indicates the maximum 
 ## xdm:tickerSymbol
 ### Ticker Symbol
 
-The stock market symbol for this account.
+The stock market symbol for this account. Maximum of 20 characters.
 
 `xdm:tickerSymbol`
 * is optional
@@ -410,7 +408,7 @@ The stock market symbol for this account.
 ## xdm:twitterHandleUrl
 ### Twitter handle URL
 
-The URL of the account's Twitter profile.
+Website link to the twitter handle of the account
 
 `xdm:twitterHandleUrl`
 * is optional
@@ -430,7 +428,7 @@ The URL of the account's Twitter profile.
 ## xdm:website
 ### Website URL
 
-The URL of the account's website.
+The URL of the organization's website.
 
 `xdm:website`
 * is optional

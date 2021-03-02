@@ -22,11 +22,6 @@
           "description": "Member type and associated reference ID.",
           "type": "string"
         },
-        "xdm:campaignOwnerID": {
-          "title": "Campaign Owner ID.",
-          "description": "",
-          "type": "string"
-        },
         "xdm:campaignStatus": {
           "title": "Campaign Status",
           "description": "",

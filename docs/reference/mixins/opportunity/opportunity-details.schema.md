@@ -39,7 +39,6 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 | [xdm:leadSource](#xdmleadsource) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:nextStep](#xdmnextstep) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityAmount](#xdmopportunityamount) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:opportunityOwnerID](#xdmopportunityownerid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | XDM Business Opportunity Details (this schema) |
 | [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | XDM Business Opportunity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -47,7 +46,7 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 ## xdm:actualCloseDate
 ### Actual Close Date
 
-Actual date the opportunity was closed.
+Actual date of closure for this opportunity.
 
 `xdm:actualCloseDate`
 * is optional
@@ -68,7 +67,7 @@ Actual date the opportunity was closed.
 ## xdm:campaignID
 ### Campaign ID
 
-Unique ID of the campaign related to this opportunity.
+Campaign unique identifer reference.
 
 `xdm:campaignID`
 * is optional
@@ -88,7 +87,7 @@ Unique ID of the campaign related to this opportunity.
 ## xdm:expectedCloseDate
 ### Expected Close Date
 
-Expected date the opportunity will close.
+Expected date of closure for this opportunity.
 
 `xdm:expectedCloseDate`
 * is optional
@@ -109,7 +108,7 @@ Expected date the opportunity will close.
 ## xdm:expectedRevenue
 ### Expected Revenue
 
-Expected revenue based on the probability percentage and opportunity amount.
+Calculated revenue based on the Amount and Probability.
 
 `xdm:expectedRevenue`
 * is optional
@@ -128,7 +127,7 @@ Expected revenue based on the probability percentage and opportunity amount.
 ## xdm:fiscalQuarter
 ### Fiscal Quarter
 
-The fiscal quarter this opportunity is targeted for.
+The fiscal quarter this opportunity is targeted.
 
 `xdm:fiscalQuarter`
 * is optional
@@ -155,7 +154,7 @@ All instances must conform to this regular expression
 ## xdm:fiscalYear
 ### Fiscal Year
 
-The fiscal year this opportunity is targeted for.
+The fiscal year this opportunity is targeted.
 
 `xdm:fiscalYear`
 * is optional
@@ -175,7 +174,7 @@ The fiscal year this opportunity is targeted for.
 ## xdm:forecastCategory
 ### Forecast Category
 
-Forecast category for the opportunity based on the opportunity stage.
+Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.
 
 `xdm:forecastCategory`
 * is optional
@@ -195,7 +194,7 @@ Forecast category for the opportunity based on the opportunity stage.
 ## xdm:forecastCategoryName
 ### Forecast Category Name
 
-Name of the forecast category for the opportunity.
+Forecast category name that is displayed in reports for a perticular forecast category.
 
 `xdm:forecastCategoryName`
 * is optional
@@ -215,7 +214,7 @@ Name of the forecast category for the opportunity.
 ## xdm:isClosed
 ### Closed Flag
 
-Boolean indicating if the opportunity is closed.
+Flag indicating if this opportunity is closed.
 
 `xdm:isClosed`
 * is optional
@@ -234,7 +233,7 @@ Boolean indicating if the opportunity is closed.
 ## xdm:isWon
 ### Won Flag
 
-Boolean indicating if the opportunity was won.
+Flag indicating if this opportunity is Won.
 
 `xdm:isWon`
 * is optional
@@ -253,7 +252,7 @@ Boolean indicating if the opportunity was won.
 ## xdm:lastActivityDate
 ### Last Activity Date
 
-Date of last activity for the opportunity.
+Last activity date for this opportunity.
 
 `xdm:lastActivityDate`
 * is optional
@@ -274,7 +273,7 @@ Date of last activity for the opportunity.
 ## xdm:leadSource
 ### Lead Source
 
-Source that the opportunity originated from.
+Source of the opportunity such as Advertisement, Partner, or Web.
 
 `xdm:leadSource`
 * is optional
@@ -294,7 +293,7 @@ Source that the opportunity originated from.
 ## xdm:nextStep
 ### Next Step
 
-Description of the next step for the opportunity.
+Description of next task in closing opportunity.
 
 `xdm:nextStep`
 * is optional
@@ -314,7 +313,7 @@ Description of the next step for the opportunity.
 ## xdm:opportunityAmount
 ### Opportunity Amount
 
-Estimated sale amount for the opportunity.
+Estimated total sale amount.
 
 `xdm:opportunityAmount`
 * is optional
@@ -330,30 +329,10 @@ Estimated sale amount for the opportunity.
 
 
 
-## xdm:opportunityOwnerID
-### opportunity Owner Id
-
-Unique ID of the internal owner for this opportunity.
-
-`xdm:opportunityOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:opportunityOwnerID Type
-
-
-`string`
-
-
-
-
-
-
 ## xdm:opportunityQuantity
 ### Opportunity Quantity
 
-Total quantity of all related products for the opportunity.
+Total of all quantity field values for all products in the Products related list for this opportunity.
 
 `xdm:opportunityQuantity`
 * is optional
@@ -375,7 +354,7 @@ Total quantity of all related products for the opportunity.
 ## xdm:probabilityPercentage
 ### Probability Percentage
 
-Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.
+Likelihood that opportunity will close, stated as a percentage.
 
 `xdm:probabilityPercentage`
 * is optional

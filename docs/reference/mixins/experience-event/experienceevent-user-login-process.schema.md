@@ -30,7 +30,8 @@ User login details such as login state, location, and type, as well as forgot us
     "xdm:userLogout": 1,
     "xdm:userResetPassword": 1,
     "xdm:userSessionTimeout": 1,
-    "xdm:userUpdate": 1
+    "xdm:userUpdate": 1,
+    "xdm:userAccountSwitch": 0
   }
 }
 ```
@@ -58,6 +59,7 @@ User login details such as login state, location, and type, as well as forgot us
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:userAccountSwitch`| integer | Optional |
 | `xdm:userCookieConsentAccepted`| boolean | Optional |
 | `xdm:userCookieConsentViewed`| integer | Optional |
 | `xdm:userForgotPassword`| integer | Optional |
@@ -76,6 +78,27 @@ User login details such as login state, location, and type, as well as forgot us
 | `xdm:userResetPassword`| integer | Optional |
 | `xdm:userSessionTimeout`| integer | Optional |
 | `xdm:userUpdate`| integer | Optional |
+
+
+
+#### xdm:userAccountSwitch
+##### Switch User Accounts
+
+Captures when a visitor switches their account during a visit.
+
+`xdm:userAccountSwitch`
+* is optional
+* type: `integer`
+
+##### xdm:userAccountSwitch Type
+
+
+`integer`
+
+
+
+
+
 
 
 

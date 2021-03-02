@@ -9,14 +9,14 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/b2b/b2b-account.schema.json](datatypes/b2b/b2b-account.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/b2b/b2b-account.schema.json](datatypes/b2b/b2b-account.schema.json) |
 ## Schema Hierarchy
 
 * B2B Account `https://ns.adobe.com/xdm/datatypes/b2b-account`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Phone number](../demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
   * [Postal address](../demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Account Organization](account-organization.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+  * [Account Details](account-organization.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 ## B2B Account Example
@@ -33,8 +33,7 @@ This Data Type is used to capture B2B Account properties. They are grouped funct
 | [xdm:accountFax](#xdmaccountfax) | Phone number | Optional | B2B Account (this schema) |
 | [xdm:accountName](#xdmaccountname) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountNumber](#xdmaccountnumber) | `string` | Optional | B2B Account (this schema) |
-| [xdm:accountOrganization](#xdmaccountorganization) | Account Organization | Optional | B2B Account (this schema) |
-| [xdm:accountOwnerID](#xdmaccountownerid) | `string` | Optional | B2B Account (this schema) |
+| [xdm:accountOrganization](#xdmaccountorganization) | Account Details | Optional | B2B Account (this schema) |
 | [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | B2B Account (this schema) |
 | [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | B2B Account (this schema) |
@@ -151,33 +150,13 @@ Tracking or reference number for account. Up to 40 characters are allowed in thi
 
 `xdm:accountOrganization`
 * is optional
-* type: Account Organization
+* type: Account Details
 * defined in this schema
 
 ### xdm:accountOrganization Type
 
 
-* [Account Organization](account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
-
-
-
-
-
-## xdm:accountOwnerID
-### Account Owner Id
-
-Account owner ID.
-
-`xdm:accountOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:accountOwnerID Type
-
-
-`string`
-
+* [Account Details](account-organization.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
 
 
 

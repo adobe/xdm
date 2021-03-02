@@ -47,7 +47,7 @@ Use to capture details when the fields on a sales opportunity are updated.
 #### xdm:dataValueChanges
 ##### Data Value Changes
 
-undefined
+Full record of data values updated
 
 `xdm:dataValueChanges`
 * is optional
@@ -74,7 +74,7 @@ All items must be of the type:
 #### xdm:attributeName
 ##### Attribute Name
 
-Name of the attribute
+Attribute that was updated
 
 `xdm:attributeName`
 * is optional
@@ -95,7 +95,7 @@ Name of the attribute
 #### xdm:newValue
 ##### New Value
 
-New value of the attribute
+New value of updated attribute
 
 `xdm:newValue`
 * is optional
@@ -116,7 +116,7 @@ New value of the attribute
 #### xdm:oldValue
 ##### Old Value
 
-Old value of the attribute
+Previous value of updated attribute
 
 `xdm:oldValue`
 * is optional
@@ -145,7 +145,7 @@ Old value of the attribute
 #### xdm:opportunityID
 ##### Opportunity ID
 
-Unique identifier for opportunity
+Unique ID of the Opportunity
 
 `xdm:opportunityID`
 * is optional

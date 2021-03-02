@@ -16,98 +16,93 @@
   "definitions": {
     "opportunity-details": {
       "properties": {
-        "xdm:opportunityOwnerID": {
-          "title": "opportunity Owner Id",
-          "description": "Unique ID of the internal owner for this opportunity.",
-          "type": "string"
-        },
         "xdm:campaignID": {
           "title": "Campaign ID",
-          "description": "Unique ID of the campaign related to this opportunity.",
+          "description": "Campaign unique identifer reference.",
           "type": "string"
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
-          "description": "The fiscal year this opportunity is targeted for.",
+          "description": "The fiscal year this opportunity is targeted.",
           "type": "integer",
           "pattern": "^([0-9]{4})$"
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
-          "description": "The fiscal quarter this opportunity is targeted for.",
+          "description": "The fiscal quarter this opportunity is targeted.",
           "type": "string",
           "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
         },
         "xdm:forecastCategory": {
           "title": "Forecast Category",
-          "description": "Forecast category for the opportunity based on the opportunity stage.",
+          "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
           "type": "string"
         },
         "xdm:forecastCategoryName": {
           "title": "Forecast Category Name",
-          "description": "Name of the forecast category for the opportunity.",
+          "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
           "type": "string"
         },
         "xdm:isClosed": {
           "title": "Closed Flag",
-          "description": "Boolean indicating if the opportunity is closed.",
+          "description": "Flag indicating if this opportunity is closed.",
           "type": "boolean"
         },
         "xdm:isWon": {
           "title": "Won Flag",
-          "description": "Boolean indicating if the opportunity was won.",
+          "description": "Flag indicating if this opportunity is Won.",
           "type": "boolean"
         },
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
-          "description": "Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.",
+          "description": "Likelihood that opportunity will close, stated as a percentage.",
           "type": "number",
           "minimum": 0,
           "maximum": 100
         },
         "xdm:opportunityAmount": {
           "title": "Opportunity Amount",
-          "description": "Estimated sale amount for the opportunity.",
+          "description": "Estimated total sale amount.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
-          "description": "Expected revenue based on the probability percentage and opportunity amount.",
+          "description": "Calculated revenue based on the Amount and Probability.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
         },
         "xdm:opportunityQuantity": {
           "title": "Opportunity Quantity",
-          "description": "Total quantity of all related products for the opportunity.",
+          "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
           "type": "integer",
           "minimum": 0,
           "default": 0
         },
         "xdm:expectedCloseDate": {
           "title": "Expected Close Date",
-          "description": "Expected date the opportunity will close.",
+          "description": "Expected date of closure for this opportunity.",
           "type": "string",
           "format": "date"
         },
         "xdm:actualCloseDate": {
           "title": "Actual Close Date",
-          "description": "Actual date the opportunity was closed.",
+          "description": "Actual date of closure for this opportunity.",
           "type": "string",
           "format": "date-time"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
-          "description": "Date of last activity for the opportunity.",
+          "description": "Last activity date for this opportunity.",
           "type": "string",
           "format": "date-time"
         },
         "xdm:leadSource": {
           "title": "Lead Source",
-          "description": "Source that the opportunity originated from.",
+          "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
           "type": "string"
         },
         "xdm:nextStep": {
           "title": "Next Step",
-          "description": "Description of the next step for the opportunity.",
+          "description": "Description of next task in closing opportunity.",
           "type": "string"
         }
       }

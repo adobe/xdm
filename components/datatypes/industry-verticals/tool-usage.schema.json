@@ -64,12 +64,12 @@
           "type": "integer",
           "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
         },
-        "xdm:Transaction": {
+        "xdm:transaction": {
           "title": "Transaction",
           "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
           "description": "Extension of Transaction Data Type"
         },
-        "xdm:Type": {
+        "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "Tracks the type or category of the tool in use."

@@ -161,22 +161,6 @@ This changes child.json to:
 
 ```json
 {
-  "@id": "https://example.com/descriptors/1",
-  "@type": "xdm:descriptorOneToOne",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-  "xdm:sourceProperty": "/xdm:identities",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceItem": {
-    "xdm:type": "https://example.com/crmID"
-  },
-  "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-  "xdm:destinationProperty": "/xdm:crmID",
-  "xdm:destinationVersion": 1
-}
-```
-
-```json
-{
   "@type": "xdm:descriptorOneToOne",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceProperty": [
@@ -194,6 +178,22 @@ This changes child.json to:
 }
 ```
 
+```json
+{
+  "@id": "https://example.com/descriptors/1",
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceProperty": "/xdm:identities",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceItem": {
+    "xdm:type": "https://example.com/crmID"
+  },
+  "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
+  "xdm:destinationProperty": "/xdm:crmID",
+  "xdm:destinationVersion": 1
+}
+```
+
 
 # Relationship Descriptor Properties
 
@@ -203,6 +203,7 @@ This changes child.json to:
 | [@type](#type) | `string` | Optional |  | [Schema Descriptor](schemadescriptor.schema.md#type) |
 | [xdm:cardinality](#xdmcardinality) | `enum` | Optional | `"M:1"` | Relationship Descriptor (this schema) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional |  | Relationship Descriptor (this schema) |
+| [xdm:destinationNamespace](#xdmdestinationnamespace) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:destinationToSourceTitle](#xdmdestinationtosourcetitle) | `string` | Optional |  | Relationship Descriptor (this schema) |
@@ -314,6 +315,26 @@ When present, the selector used to match a specific item in the array pointed to
 
 #### Condition 4
 
+
+
+
+
+
+
+## xdm:destinationNamespace
+### Source Property Namespace
+
+Identity Service namespace associated with the source property
+
+`xdm:destinationNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:destinationNamespace Type
+
+
+`string`
 
 
 

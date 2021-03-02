@@ -38,6 +38,7 @@ Describes many to one relationship descriptor.
 | [@type](#type) | `const` | Optional |  | Many to One Relationship Descriptor (this schema) |
 | [xdm:cardinality](#xdmcardinality) | `enum` | Optional | `"M:1"` | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmcardinality) |
 | [xdm:destinationItem](#xdmdestinationitem) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationitem) |
+| [xdm:destinationNamespace](#xdmdestinationnamespace) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationnamespace) |
 | [xdm:destinationProperty](#xdmdestinationproperty) | complex | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationproperty) |
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationschema) |
 | [xdm:destinationToSourceTitle](#xdmdestinationtosourcetitle) | `string` | Optional |  | [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationtosourcetitle) |
@@ -143,6 +144,26 @@ When present, the selector used to match a specific item in the array pointed to
 
 #### Condition 4
 
+
+
+
+
+
+
+## xdm:destinationNamespace
+### Source Property Namespace
+
+Identity Service namespace associated with the source property
+
+`xdm:destinationNamespace`
+* is optional
+* type: `string`
+* defined in [Relationship Descriptor](../relationshipdescriptor.schema.md#xdmdestinationnamespace)
+
+### xdm:destinationNamespace Type
+
+
+`string`
 
 
 

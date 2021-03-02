@@ -20,17 +20,17 @@
             "properties": {
                 "xdm:marketingListMemberID": {
                     "title": "Marketing List Member ID",
-                    "description": "Marketing list member identifer",
+                    "description": "Unique ID for the membership of this person to this marketing list.",
                     "type": "string"
                 },
                 "xdm:personID": {
                     "title": "Person Identifier",
-                    "description": "Person associated with the marketing list.",
+                    "description": "Unique ID for the person who is a member of this marketing list.",
                     "type": "string"
                 },
                 "xdm:marketingListID": {
                     "title": "Marketing List Identifier",
-                    "description": "Unique identifier for the marketing list.",
+                    "description": "Unique ID for the marketing list this person is a member of.",
                     "type": "string"
                 }
             }

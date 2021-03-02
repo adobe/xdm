@@ -21,27 +21,27 @@
             "properties": {
                 "xdm:opportunityPersonID": {
                     "title": "Opportunity Person ID",
-                    "description": "Opportunity person relation unique identifer.",
+                    "description": "Unique ID for the relationship between the opportunity and the person.",
                     "type": "string"
                 },
                 "xdm:opportunityID": {
                     "title": "Opportunity ID",
-                    "description": "Opportunity unique identifier reference.",
+                    "description": "Unique ID for the opportunity in this opportunity person relationship.",
                     "type": "string"
                 },
                 "xdm:personID": {
                     "title": "Person ID",
-                    "description": "Person unique identifier reference.",
+                    "description": "Unique ID for the person in this opportunity person relationship.",
                     "type": "string"
                 },
                 "xdm:personRole": {
                     "title": "Person Role",
-                    "description": "Role of the person/contact for this opportunity.",
+                    "description": "Role of the person on this opportunity.",
                     "type": "string"
                 },
                 "xdm:isPrimary": {
                     "title": "Primary Flag",
-                    "description": "A flag to signify that this is the primary opportunity contact",
+                    "description": "Boolean indicating if the person is the primary contact on this opportunity.",
                     "type": "boolean"
                 }
             }

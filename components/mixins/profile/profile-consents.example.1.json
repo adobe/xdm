@@ -17,48 +17,30 @@
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
-      },
-      "xdm:subscriptions-alt": {
-        "daily-mail": {
-          "xdm:val": "s",
-          "xdm:time": "2019-01-01T15:52:25+00:00",
-          "xdm:start": "2021-01-01",
-          "xdm:expiration": "2021-07-01",
-          "xdm:source": "website",
-          "xdm:type": "paid",
-          "xdm:topics": [
-            "sports",
-            "weather",
-            "local news"
-          ],
-          "xdm:subscribers": {
-            "email": [ "john@xyz.com" ]
-          }
-        },
-        "shipped": {
-          "xdm:val": "y",
-          "xdm:time": "2021-01-01T08:32:53+07:00",
-          "xdm:source": "call center",
-          "xdm:subscribers": {
-            "email": [ "john@xyz.com" ]
-          }
-        },
-        "out-for-delivery": {
-          "xdm:val": "y",
-          "xdm:time": "2021-01-01T08:32:53+07:00",
-          "xdm:source": "call center",
-          "xdm:subscribers": {
-            "email": [ "john@xyz.com" ]
-          }
-        },
-        "delivered": {
-          "xdm:val": "y",
-          "xdm:time": "2021-01-01T08:32:53+07:00",
-          "xdm:source": "call center",
-          "xdm:subscribers": {
-            "email": [ "john@xyz.com" ],
-            "sms": [ "408-555-1234" ]
+        "xdm:val": "y",
+        "xdm:subscriptions": {
+          "daily-mail": {
+            "xdm:val": "y",
+            "xdm:type": "paid",
+            "xdm:subscribers": {
+              "john@xyz.com": {
+                "xdm:time": "2019-01-01T15:52:25+00:00",
+                "xdm:source": "website"
+              }
+            }
+          },
+          "shipped": {
+            "xdm:val": "y",
+            "xdm:subscribers": {
+              "john@xyz.com": {
+                "xdm:time": "2021-01-01T08:32:53+07:00",
+                "xdm:source": "website"
+              },
+              "jane@xyz.com": {
+                "xdm:time": "2020-02-03T07:54:21+07:00",
+                "xdm:source": "call center"
+              }
+            }
           }
         }
       }
@@ -98,32 +80,7 @@
           "xdm:marketing": {
             "xdm:email": {
               "xdm:val": "y",
-              "xdm:time": "2019-01-01T15:52:25+00:00",
-              "xdm:subscriptions": {
-                "daily-mail": {
-                  "xdm:val": "y",
-                  "xdm:start": "2021-01-01",
-                  "xdm:expiration": "2021-07-01",
-                  "xdm:time": "2019-01-01T15:52:25+00:00",
-                  "xdm:source": "website",
-                  "xdm:type": "paid",
-                  "xdm:topics": [
-                    "sports",
-                    "weather",
-                    "local news"
-                  ]
-                },
-                "shipping-status": {
-                  "xdm:val": "y",
-                  "xdm:time": "2021-01-01T08:32:53+07:00",
-                  "xdm:source": "call center",
-                  "xdm:topics": [
-                    "shipped",
-                    "out for delivery",
-                    "delivered"
-                  ]
-                }
-              }
+              "xdm:time": "2019-01-01T15:52:25+00:00"
             }
           }
         }
@@ -132,17 +89,7 @@
         "408-555-1234": {
           "xdm:marketing": {
             "xdm:sms": {
-              "xdm:val": "y",
-              "xdm:subscriptions": {
-                "shipping-status": {
-                  "xdm:val": "y",
-                  "xdm:time": "2021-01-01T08:32:53+07:00",
-                  "xdm:source": "call center",
-                  "xdm:topics": [
-                    "delivered"
-                  ]
-                }
-              }
+              "xdm:val": "y"
             }
           }
         }

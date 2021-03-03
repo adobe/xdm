@@ -25,91 +25,31 @@ Tool usage comprises the most common steps used in a site tool or utility, such 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:toolUsageCancelled](#xdmtoolusagecancelled) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageComplete](#xdmtoolusagecomplete) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageFailure](#xdmtoolusagefailure) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageID](#xdmtoolusageid) | `string` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageName](#xdmtoolusagename) | `string` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageSaved](#xdmtoolusagesaved) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageStart](#xdmtoolusagestart) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageStep](#xdmtoolusagestep) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageStepName](#xdmtoolusagestepname) | `string` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageSubmitted](#xdmtoolusagesubmitted) | `integer` | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageTransaction](#xdmtoolusagetransaction) | Transaction | Optional | Tool Usage (this schema) |
-| [xdm:toolUsageType](#xdmtoolusagetype) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:cancelled](#xdmcancelled) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:complete](#xdmcomplete) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:failure](#xdmfailure) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:saved](#xdmsaved) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:start](#xdmstart) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:step](#xdmstep) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:stepName](#xdmstepname) | `string` | Optional | Tool Usage (this schema) |
+| [xdm:submitted](#xdmsubmitted) | `integer` | Optional | Tool Usage (this schema) |
+| [xdm:transaction](#xdmtransaction) | Transaction | Optional | Tool Usage (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Tool Usage (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:toolUsageCancelled
-### Tool Usage Cancelled
-
-Captured when a visitor cancels out of a tool usage process.
-
-`xdm:toolUsageCancelled`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:toolUsageCancelled Type
-
-
-`integer`
-
-
-
-
-
-
-## xdm:toolUsageComplete
-### Tool Usage Complete
-
-Captured when a visitor successfully finishes using any type of tool or utility on the site/app.
-
-`xdm:toolUsageComplete`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:toolUsageComplete Type
-
-
-`integer`
-
-
-
-
-
-
-## xdm:toolUsageFailure
-### Tool Usage Failed
-
-Captured when a step in the tool usage process fails.
-
-`xdm:toolUsageFailure`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:toolUsageFailure Type
-
-
-`integer`
-
-
-
-
-
-
-## xdm:toolUsageID
-### Tool Usage ID
+## xdm:ID
+### ID
 
 Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc.
 
-`xdm:toolUsageID`
+`xdm:ID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:toolUsageID Type
+### xdm:ID Type
 
 
 `string`
@@ -119,17 +59,77 @@ Captures the ID of the tool process utilized, if applicable.  For example, this 
 
 
 
-## xdm:toolUsageName
-### Tool Usage Name
+## xdm:cancelled
+### Cancelled
+
+Captured when a visitor cancels out of a tool usage process.
+
+`xdm:cancelled`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:cancelled Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:complete
+### Complete
+
+Captured when a visitor successfully finishes using any type of tool or utility on the site/app.
+
+`xdm:complete`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:complete Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:failure
+### Failed
+
+Captured when a step in the tool usage process fails.
+
+`xdm:failure`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:failure Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:name
+### Name
 
 Tracks the name of the tool in use.
 
-`xdm:toolUsageName`
+`xdm:name`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:toolUsageName Type
+### xdm:name Type
 
 
 `string`
@@ -139,17 +139,17 @@ Tracks the name of the tool in use.
 
 
 
-## xdm:toolUsageSaved
-### Tool Usage Saved
+## xdm:saved
+### Saved
 
 Captured when a visitor saves and exits a tool usage process.
 
-`xdm:toolUsageSaved`
+`xdm:saved`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:toolUsageSaved Type
+### xdm:saved Type
 
 
 `integer`
@@ -159,17 +159,17 @@ Captured when a visitor saves and exits a tool usage process.
 
 
 
-## xdm:toolUsageStart
-### Tool Usage Start
+## xdm:start
+### Start
 
 Captured when a visitor initializes using any type of tool or utility on the site/app.
 
-`xdm:toolUsageStart`
+`xdm:start`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:toolUsageStart Type
+### xdm:start Type
 
 
 `integer`
@@ -179,17 +179,17 @@ Captured when a visitor initializes using any type of tool or utility on the sit
 
 
 
-## xdm:toolUsageStep
-### Tool Usage Step
+## xdm:step
+### Step
 
 Captured when any intermediary tool step is started on the site/app.
 
-`xdm:toolUsageStep`
+`xdm:step`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:toolUsageStep Type
+### xdm:step Type
 
 
 `integer`
@@ -199,17 +199,17 @@ Captured when any intermediary tool step is started on the site/app.
 
 
 
-## xdm:toolUsageStepName
-### Tool Usage Step Name
+## xdm:stepName
+### Step Name
 
 Tracks the name of the tool step in use.
 
-`xdm:toolUsageStepName`
+`xdm:stepName`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:toolUsageStepName Type
+### xdm:stepName Type
 
 
 `string`
@@ -219,17 +219,17 @@ Tracks the name of the tool step in use.
 
 
 
-## xdm:toolUsageSubmitted
-### Tool Usage Submitted
+## xdm:submitted
+### Submitted
 
 Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event.
 
-`xdm:toolUsageSubmitted`
+`xdm:submitted`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:toolUsageSubmitted Type
+### xdm:submitted Type
 
 
 `integer`
@@ -239,17 +239,17 @@ Captured when a visitor submits data during a tool step.  Not necessarily synony
 
 
 
-## xdm:toolUsageTransaction
-### Tool Usage Transaction
+## xdm:transaction
+### Transaction
 
 Extension of Transaction Data Type
 
-`xdm:toolUsageTransaction`
+`xdm:transaction`
 * is optional
 * type: Transaction
 * defined in this schema
 
-### xdm:toolUsageTransaction Type
+### xdm:transaction Type
 
 
 * [Transaction](transaction.schema.md) – `https://ns.adobe.com/xdm/datatypes/transaction`
@@ -258,17 +258,17 @@ Extension of Transaction Data Type
 
 
 
-## xdm:toolUsageType
-### Tool Usage Type
+## xdm:type
+### Type
 
 Tracks the type or category of the tool in use.
 
-`xdm:toolUsageType`
+`xdm:type`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:toolUsageType Type
+### xdm:type Type
 
 
 `string`

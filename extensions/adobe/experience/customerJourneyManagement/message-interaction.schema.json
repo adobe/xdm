@@ -13,7 +13,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-
   "definitions": {
     "messageInteraction": {
       "properties": {
@@ -21,10 +20,11 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "action", "spam_complaint"],
+          "enum": ["click", "open", "unsubscribe", "spam_complaint"],
           "meta:enum": {
-            "click": "Link in a message is clicked by the user.",
-            "open": "Either Message is open by the user, or in case of push, clicking the message opened the mobile application.",
+            "click": "Message link clicked.",
+            "open": "Message opened.",
+            "unsubscribe": "Unsubscribed from messages.",
             "spam_complaint": "Message is marked as spam by the user."
           }
         },

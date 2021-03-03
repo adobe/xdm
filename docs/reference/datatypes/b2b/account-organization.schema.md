@@ -1,5 +1,5 @@
 
-# Account Organization Schema
+# Account Details Schema
 
 ```
 https://ns.adobe.com/xdm/datatypes/b2b-account-organization
@@ -12,39 +12,39 @@ Commonly used organizational attributes for a B2B account such as number of empl
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/b2b/account-organization.schema.json](datatypes/b2b/account-organization.schema.json) |
 ## Schema Hierarchy
 
-* Account Organization `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+* Account Details `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
   * [Currency](../currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
-## Account Organization Example
+## Account Details Example
 ```json
 {}
 ```
 
-# Account Organization Properties
+# Account Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:DUNSNumber](#xdmdunsnumber) | `string` | Optional | Account Organization (this schema) |
-| [xdm:NAICSCode](#xdmnaicscode) | `string` | Optional | Account Organization (this schema) |
-| [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Organization (this schema) |
-| [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Organization (this schema) |
-| [xdm:annualRevenue](#xdmannualrevenue) | Currency | Optional | Account Organization (this schema) |
-| [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Organization (this schema) |
-| [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:industry](#xdmindustry) | `string` | Optional | Account Organization (this schema) |
-| [xdm:jigsaw](#xdmjigsaw) | `string` | Optional | Account Organization (this schema) |
-| [xdm:linkedinPageUrl](#xdmlinkedinpageurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:logoUrl](#xdmlogourl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:marketSegment](#xdmmarketsegment) | `string` | Optional | Account Organization (this schema) |
-| [xdm:numberOfEmployees](#xdmnumberofemployees) | `integer` | Optional | Account Organization (this schema) |
-| [xdm:organizationType](#xdmorganizationtype) | `string` | Optional | Account Organization (this schema) |
-| [xdm:primaryEmailDomain](#xdmprimaryemaildomain) | `string` | Optional | Account Organization (this schema) |
-| [xdm:rating](#xdmrating) | `number` | Optional | Account Organization (this schema) |
-| [xdm:tickerSymbol](#xdmtickersymbol) | `string` | Optional | Account Organization (this schema) |
-| [xdm:twitterHandleUrl](#xdmtwitterhandleurl) | `string` | Optional | Account Organization (this schema) |
-| [xdm:website](#xdmwebsite) | `string` | Optional | Account Organization (this schema) |
+| [xdm:DUNSNumber](#xdmdunsnumber) | `string` | Optional | Account Details (this schema) |
+| [xdm:NAICSCode](#xdmnaicscode) | `string` | Optional | Account Details (this schema) |
+| [xdm:NAICSDescription](#xdmnaicsdescription) | `string` | Optional | Account Details (this schema) |
+| [xdm:SICCode](#xdmsiccode) | `string` | Optional | Account Details (this schema) |
+| [xdm:SICDescription](#xdmsicdescription) | `string` | Optional | Account Details (this schema) |
+| [xdm:annualRevenue](#xdmannualrevenue) | Currency | Optional | Account Details (this schema) |
+| [xdm:companyProductAndServices](#xdmcompanyproductandservices) | `string` | Optional | Account Details (this schema) |
+| [xdm:facebookPageUrl](#xdmfacebookpageurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:industry](#xdmindustry) | `string` | Optional | Account Details (this schema) |
+| [xdm:jigsaw](#xdmjigsaw) | `string` | Optional | Account Details (this schema) |
+| [xdm:linkedinPageUrl](#xdmlinkedinpageurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:logoUrl](#xdmlogourl) | `string` | Optional | Account Details (this schema) |
+| [xdm:marketSegment](#xdmmarketsegment) | `string` | Optional | Account Details (this schema) |
+| [xdm:numberOfEmployees](#xdmnumberofemployees) | `integer` | Optional | Account Details (this schema) |
+| [xdm:organizationType](#xdmorganizationtype) | `string` | Optional | Account Details (this schema) |
+| [xdm:primaryEmailDomain](#xdmprimaryemaildomain) | `string` | Optional | Account Details (this schema) |
+| [xdm:rating](#xdmrating) | `number` | Optional | Account Details (this schema) |
+| [xdm:tickerSymbol](#xdmtickersymbol) | `string` | Optional | Account Details (this schema) |
+| [xdm:twitterHandleUrl](#xdmtwitterhandleurl) | `string` | Optional | Account Details (this schema) |
+| [xdm:website](#xdmwebsite) | `string` | Optional | Account Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:DUNSNumber

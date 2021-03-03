@@ -59,7 +59,7 @@
             "$ref": "#/definitions/opportunity-components"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "deprecated",
     "examples": [
         {
             "xdm:sourceOpportunityID": "1234trbkg8",

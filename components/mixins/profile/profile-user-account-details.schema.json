@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-user-account-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User Account Details",
   "type": "object",
@@ -26,7 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "",
   "definitions": {
     "user-account-details": {
@@ -55,11 +55,6 @@
               "type": "string",
               "enum": ["active", "inactive", "disabled", "other"],
               "description": "This should describe the current status of the account"
-            },
-            "xdm:userAccountSwitch": {
-              "title": "Switch User Accounts",
-              "type": "integer",
-              "description": "Captures when a visitor switches their account during a visit."
             },
             "xdm:userAccountType": {
               "title": "User Account Type",

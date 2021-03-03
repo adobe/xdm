@@ -56,9 +56,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType Known Values
 | Value | Description |
 |-------|-------------|
-| `click` | Link in a message is clicked by the user. |
-| `open` | Either Message is open by the user, or in case of push, clicking the message opened the mobile application. |
-| `action` |  |
+| `click` | Message link clicked. |
+| `open` | Message opened. |
+| `unsubscribe` | Unsubscribed from messages. |
 
 
 

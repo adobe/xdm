@@ -43,5 +43,23 @@
     "xdm:name": "https://ns.adobe.com/experience/alloy",
     "xdm:version": "0.0.11"
   },
-  "xdm:eventType": "page-view"
+  "xdm:eventType": "page-view",
+  "xdm:_experience": {
+    "xdm:decisioning": {
+      "xdm:propositions": [
+        {
+          "xdm:id": "AT:eyJhY3Rpdml0eUlkIjoiMzg0NDU5IiwiZXhwZXJpZW5jZUlkIjoiMSJ9",
+          "xdm:scope": "home",
+          "xdm:items": [
+            {
+              "xdm:id": "item1"
+            },
+            {
+              "xdm:id": "item2"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }

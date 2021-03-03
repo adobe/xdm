@@ -18,17 +18,17 @@
       "properties": {
         "xdm:marketingListID": {
           "title": "Marketing List ID",
-          "description": "Marketing list unique identifer.",
+          "description": "Unique ID of the marketing list.",
           "type": "string"
         },
         "xdm:marketingListName": {
           "title": "Marketing List Name",
-          "description": "Marketing list name.",
+          "description": "Name of the marketing list.",
           "type": "string"
         },
         "xdm:marketingListDescription": {
           "title": "Marketing List Description",
-          "description": "Marketing list description.",
+          "description": "Description of the marketing list.",
           "type": "string"
         }
       }

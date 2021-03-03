@@ -79,7 +79,7 @@ Audit attributes for external sources.
 ## xdm:marketingListDescription
 ### Marketing List Description
 
-Marketing list description.
+Description of the marketing list.
 
 `xdm:marketingListDescription`
 * is optional
@@ -99,7 +99,7 @@ Marketing list description.
 ## xdm:marketingListID
 ### Marketing List ID
 
-Marketing list unique identifer.
+Unique ID of the marketing list.
 
 `xdm:marketingListID`
 * is **required**
@@ -119,7 +119,7 @@ Marketing list unique identifer.
 ## xdm:marketingListName
 ### Marketing List Name
 
-Marketing list name.
+Name of the marketing list.
 
 `xdm:marketingListName`
 * is optional

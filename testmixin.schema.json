@@ -1,0 +1,51 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixin/testmixin",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Test Mixin",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/profile"
+    ],
+    "description": "This is a test Mixin",
+    "definitions": {
+        "testmixin": {
+            "properties": {
+                "xdm:testprop1": {
+                    "title": "Test Prop",
+                    "type": "string",
+                    "description": "This is a test property"
+                },
+                "xdm:testobject": {
+                    "title": "Test Object",
+                    "type": "object",
+                    "properties": {
+                        "xdm:testprop2": {
+                            "title": "Test property",
+                            "type": "string",
+                            "description": "This is test prop2"
+                        }
+                    }
+                },
+                "xdm:testprop3": {
+                    "title": "Test Property 3",
+                    "type": "string",
+                    "description": "This is a test property 3"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/testmixin"
+        }
+    ],
+    "meta:status": "experimental"
+}

@@ -20,8 +20,8 @@
         "account": {
             "properties": {
                 "xdm:accountID": {
-                    "title": "Account ID",
-                    "description": "Account identifer",
+                    "title": "Account identifer",
+                    "description": "Unique ID for the account.",
                     "type": "string"
                 }
             }

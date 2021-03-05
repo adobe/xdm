@@ -66,7 +66,7 @@ A unique identifier for the record.
 ## xdm:accountID
 ### Account ID
 
-Account unique identifier reference.
+Unique ID for the account in this account person relationship.
 
 `xdm:accountID`
 * is optional
@@ -86,7 +86,7 @@ Account unique identifier reference.
 ## xdm:accountPersonID
 ### Account Person ID
 
-Account person relation unique identifer.
+Unique ID for this relationship between an account and a person.
 
 `xdm:accountPersonID`
 * is **required**
@@ -106,7 +106,7 @@ Account person relation unique identifer.
 ## xdm:currencyCode
 ### Currency Code
 
-The ISO 4217 currency code used for this relation.
+The ISO 4217 currency code used for the relationship between the account and the person.
 
 `xdm:currencyCode`
 * is optional
@@ -164,7 +164,7 @@ Audit attributes for external sources.
 ## xdm:isActive
 ### Active Flag
 
-A flag to signify that this relation is active or not.
+Boolean to indicate if this relationship between the account and the person is active.
 
 `xdm:isActive`
 * is optional
@@ -183,7 +183,7 @@ A flag to signify that this relation is active or not.
 ## xdm:isDirect
 ### Direct Flag
 
-A flag to signify that this is the direct account contact.
+Boolean to indicate if this is a direct relationship between the account and the person.
 
 `xdm:isDirect`
 * is optional
@@ -202,7 +202,7 @@ A flag to signify that this is the direct account contact.
 ## xdm:isPrimary
 ### Primary Flag
 
-A flag to signify that this relation is primary or not.
+Boolean to indicate if the person is the primary contact on the account.
 
 `xdm:isPrimary`
 * is optional
@@ -221,7 +221,7 @@ A flag to signify that this relation is primary or not.
 ## xdm:personID
 ### Person ID
 
-Person unique identifier reference.
+Unique ID for the person in this account person relationship.
 
 `xdm:personID`
 * is optional
@@ -241,7 +241,7 @@ Person unique identifier reference.
 ## xdm:personRole
 ### Person Role
 
-Role of the person/contact for this account.
+Role of the person on this account.
 
 `xdm:personRole`
 * is optional
@@ -261,7 +261,7 @@ Role of the person/contact for this account.
 ## xdm:relationEndDate
 ### Relationship End Date
 
-The date when this account person relationship was discontinued.
+The date when the relationship between the account and the person ended.
 
 `xdm:relationEndDate`
 * is optional
@@ -282,7 +282,7 @@ The date when this account person relationship was discontinued.
 ## xdm:relationStartDate
 ### Relationship Start Date
 
-The date when this account person relationship was established.
+The date when the relationship between the account and the person started.
 
 `xdm:relationStartDate`
 * is optional

@@ -25,22 +25,22 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique identifier of the mailing."
+              "description": "Unique ID of the email asset."
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name for the mailing."
+              "description": "Friendly name of the email asset."
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique identifier for the test variant."
+              "description": "Unique ID of the test variant of the email asset."
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name for the test variant."
+              "description": "Friendly name of the test variant of the email asset."
             }
           }
         },
@@ -75,7 +75,7 @@
             "xdm:isMobileDevice": {
               "title": "Is Mobile Device",
               "type": "boolean",
-              "description": "Is this mobile device."
+              "description": "Boolean that indicates if device used was a mobile device."
             },
             "xdm:model": {
               "title": "Model",

@@ -49,7 +49,7 @@ Use to capture details when a person opens a marketing email.
 #### xdm:isMobileDevice
 ##### Is Mobile Device
 
-Is this mobile device.
+Boolean that indicates if device used was a mobile device.
 
 `xdm:isMobileDevice`
 * is optional
@@ -116,7 +116,7 @@ The name of the model for the device. This is the common, human-readable, or mar
 #### xdm:mailingID
 ##### Mailing ID
 
-Unique identifier of the mailing.
+Unique ID of the email asset.
 
 `xdm:mailingID`
 * is optional
@@ -137,7 +137,7 @@ Unique identifier of the mailing.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name for the mailing.
+Friendly name of the email asset.
 
 `xdm:mailingName`
 * is optional
@@ -158,7 +158,7 @@ Friendly name for the mailing.
 #### xdm:testVariantID
 ##### Test Variant ID
 
-Unique identifier for the test variant.
+Unique ID of the test variant of the email asset.
 
 `xdm:testVariantID`
 * is optional
@@ -179,7 +179,7 @@ Unique identifier for the test variant.
 #### xdm:testVariantName
 ##### Test Variant Name
 
-Friendly name for the test variant.
+Friendly name of the test variant of the email asset.
 
 `xdm:testVariantName`
 * is optional

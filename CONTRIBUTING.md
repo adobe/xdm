@@ -23,31 +23,6 @@ XDM is driven by Adobe, but it is not specific to Adobe products.
 This means that models should capture the universal concepts of digital experiences, not specific implementations, no matter if they are part of an Adobe product or not.
 If you need to express a concept that is specific to an Adobe (or other) product, that is not universal, it should be formulated in an XDM extension instead.
 
-## Copyright and Licensing
-
-XDM is an Open Standard with appropriate open licensing. The [License](LICENSE) is the Creative Commons 4.0 Attribution International license.
-
-Adobe does not require you to assign to Adobe the copyright of your contribution. Contributions must be made by copyright owners, or individuals with the rights to assign the licensing of the contribution on behalf of the copyright owner.
-
-Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
-
-### Contributor License Agreement
-
-All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an [Adobe CLA](http://opensource.adobe.com/cla.html) one time.
-
-### License Inclusion
-
-You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
-
-```
-"meta:license": [
-   "->Your copyright statement here<-",
-   "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-   "you may not use this file except in compliance with the License. You may obtain a copy",
-   "of the License at https://creativecommons.org/licenses/by/4.0/"
- ],
-```
-
 ## How to Contribute
 
 0.  If you haven't done so, sign the [Adobe CLA](http://opensource.adobe.com/cla.html)
@@ -131,29 +106,294 @@ However, for values that need no context to convert, put off conversion by allow
 
 Avoid non-semantic limits – don’t put current resource limits in the data model. Limits (number ranges, choices, string length) should be based on business constraints or expressed independently.
 
+### Json file location guidelines.
+
+- All the XDM standard JSON files should be placed under their respective directories on GITHUB.
+- Classes should be placed under xdm/components/classes/
+- Mixins should be placed under xdm/components/mixins/<ClassName>/. If a mixin is extending more than one class then the should be under xdm/components/mixins/shared/
+- Data Types should be placed under components/datatypes/
+- Any global Schemas which are not extendable should be under xdm/schemas/
+- Any internal solution specific schemas should be defined under xdm/extensions/
+
+### Schema design general guidelines
+
+- Always start introducing new properties by mapping them to the existing set of Classes, Mixins and Data types.
+- See if you can enhance existing Mixins and Data types by adding the un-mapped properties from the above step.
+- To itroduce a new entity in XDM, only add a new class if the new business concept could not be added by existing set of XDM classes.
+- If you have to add a new class, then keep all the properties in the class which will always be required. Then start putting mixins for different use cases.
+- Always keep in mind the uber schema of the class when you create mixins and the way you define properties.
+- Think about wrapping the root level attributes in a MIXIN with in some business context/category.
+
+#### No categorization example (Not recommended)
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/first",
+  "title": "First",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "first": {
+      "properties": {
+        "xdm:campaignName": {
+          "title": "Campaign name",
+          "type": "string",
+          "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
+        },
+        "xdm:campaignGroup": {
+          "title": "Campaign group",
+          "type": "string",
+          "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/first"
+    }
+  ]
+}
+```
+
+#### With categorization (Recommended)
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/example/first",
+  "title": "First",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "first": {
+	  "properties": {
+	    "xdm:marketing": {
+		  "properties": {
+			"xdm:campaignName": {
+			  "title": "Campaign name",
+			  "type": "string",
+			  "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'."
+			},
+			"xdm:campaignGroup": {
+			  "title": "Campaign group",
+			  "type": "string",
+			  "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'."
+			}
+		  }
+	  }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/first"
+    }
+  ]
+}
+```
+
+- Create Data Types only for the cases where you see re-usability of the properties in multiple MIXINS else, define those properties inline within the MIXINs.
+- If a certain data type you create will always be used inside only one MIXIN, then inline the data type properties within the MIXIN itself.
+
+### XDM Json Schema structure - General guidelines
+
+You would generally create following types of JSON schemas while creating pull requests on GITHUB.
+
+- CLASS
+- MIXIN
+- DATA TYPE
+- GLOBAL SCHEMA
+
+In general, all the above XDM schemas are mostly similar in structure with a difference of certain "meta" key words which distinguish one from the another.
+The following sections compose an XDM JSON schema
+
+#### Copyright and Licensing
+
+XDM is an Open Standard with appropriate open licensing. The [License](LICENSE) is the Creative Commons 4.0 Attribution International license.
+
+Adobe does not require you to assign to Adobe the copyright of your contribution. Contributions must be made by copyright owners, or individuals with the rights to assign the licensing of the contribution on behalf of the copyright owner.
+
+Where possible, include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary at the top of each file along with the copyright info.
+
+##### Contributor License Agreement
+
+All third-party contributions to this project must be accompanied by a signed contributor license. This gives Adobe permission to redistribute your contributions as part of the project. Sign our CLA at [http://opensource.adobe.com/cla.html](http://opensource.adobe.com/cla.html). You only need to submit an [Adobe CLA](http://opensource.adobe.com/cla.html) one time.
+
+##### License Inclusion
+
+You can include the Creative Commons Attribution 4.0 International (CC BY 4.0) license summary from below, ensure to update the copyright details.
+
+```
+"meta:license": [
+   "->Your copyright statement here<-",
+   "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+   "you may not use this file except in compliance with the License. You may obtain a copy",
+   "of the License at https://creativecommons.org/licenses/by/4.0/"
+ ],
+```
+
+#### Define the following Schema Properties
+
+- Schema ID - This is a unique ID given to an XDM schema which will never change for the lifetime of the schema.
+- Draft version of the JSON Schema specifications
+- Title - A Short title for the schema. This is apprears on the UI when you compose schemas.
+- type - "object"
+- Description - This should be detailed enough so that the users know when to use these schemas.
+
+```json
+  "$id": "https://ns.adobe.com/xdm/classes/class-name",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Schema Title goes here",
+  "type": "object",
+  "description": "A detailed description of the schema goes here.",
+```
+
+#### Define the "meta:" keywords
+
+- To make a schema extendable, set the below meta keyword to "true"
+
+```json
+  "meta:abstract": true
+```
+
+- To make a schema not extendable, set the below meta keyword to "false"
+
+```json
+  "meta:abstract": false
+```
+
+- To define a CLASS, set the below meta keyword to extend one of the XDM behaviors (record/timeseries)
+
+```json
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"]
+```
+
+- To define a MIXIN, set the below meta keyword to extend one or more XDM Classes
+
+```json
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/class-name"]
+```
+
+- Any JSON schema which does not fall in any onf the above categories is considered a data type.
+
+#### Define Schema properties
+
+- Properties can either be defined inline to this schema or they could also be defined as refrence to an external schema (genrally a data type).
+- Its always recommended to have meta:enums defined for string properties. If required, do specify a pattern as well for string properties.
+- All array properties should have a well defined type of each element of the array.
+
+```json
+  "definitions": {
+    "foo": {
+      "properties": {
+        "xdm:propertyA": {
+          "title": "Tile",
+          "description": "Description",
+          "type": "string"
+        },
+        "xdm:propertyB": {
+          "title": "Tile",
+          "description": "Description",
+          "type": "number"
+        },
+	"xdm:propertyC": {
+          "title": "Tile",
+          "description": "Description",
+          "type": "integer"
+        },
+	"xdm:propertyD": {
+          "title": "Tile",
+          "description": "Description",
+          "type": "boolean"
+        },
+        "xdm:propertyE": {
+          "title": "Tile",
+          "description": "Description",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/datatype-name"
+        },
+        "xdm:propertyArray": {
+          "type": "array",
+          "title": "Title",
+          "description": "Description",
+          "items": {
+            "type": "string",
+          }
+        },
+        "xdm:propertyNested": {
+          "title": "Tile",
+          "description": "Description",
+          "type": "object",
+	  "properties": {
+	    "xdm:nestedPropertyA": {
+	      "title": "Title",
+	      "description": "Description",
+	      "type": "string"
+	    },
+	    "xdm:nestedPropertyB": {
+	      "title": "Title",
+	      "description": "Description",
+	      "type": "integer"
+	    }
+	  }
+        }
+      }
+    }
+  },
+```
+
+#### Define the allOF section
+
+- The allOF section should specify the local definition from the schema as well as any other external schema which needs to be combined with this.
+
+```json
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/foo"
+    }
+  ],
+```
+
+#### Specify the meta:status
+
+Each schema should contain the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
+
+- `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
+- `experimental` : Major changes can be expected
+- `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
+
+```json
+  "meta:status": "experimental"
+}
+```
+
 ## Coding Styleguides
 
-- file names for schema files should be lower case and end with `.schema.json`
-- include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
-- when referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
-- don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
-- don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
-- ensure that there is a `meta:license` at the top of the schema
-- use JSON Schema `draft-6`
-- provide a `description` and `title` for each schema and each property
-- have the `title` at the top of the schema, so that it can be found without scrolling
-- make sure you have an example for every schema
-- all properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
-- restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
-- don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
-- run `npm test` before you make a pull request
-- convention is that property names are in camelCase, when they appear in JSON
+- File names for schema files should be lower case and end with `.schema.json`
+- Include an `"$id"` with a value like `"https://ns.adobe.com/xdm/assets/image"` in the schema (but leave out the `.schema.json`)
+- When referencing schemas, use the absolute `$id`, don't use relative references like `../repo/asset.schema.json`
+- Don't nest schemas too deeply. Break inline type definitions into separate `*.schema.json` files if they have properties with object types themselves.
+- Don't make schemas too fine-grained, only create schemas for `object`s not for simple types like patterned strings
+- Ensure that there is a `meta:license` at the top of the schema
+- Use JSON Schema `draft-6`
+- Provide a `description` and `title` for each schema and each property
+- Have the `title` at the top of the schema, so that it can be found without scrolling
+- Make sure you have an example for every schema
+- All properties must have a specific type, while JSON-Schema does allow variability in types in cases like enumerations, concrete types are required in XDM
+- All properties should be defined as singular unless they have an array type(listItems[]) or have a need to have a plural name ("noOfClicks").
+- All boolean properties should be prefixed with "is"/"has" as appropriate and if it gramatically makes sense. Exceptions will be reviewed on case by case basis.
+- Convention is that property names are in camelCase, when they appear in JSON
+- Restrict the values of `string` properties as much as appropriate for the domain. `minLength`, `maxLength`, `pattern`, and `format` all can help with that.
+- Don't restrict values of `string` properties beyond the constraints of the domain, e.g. don't set a `maxLength` of 255, just because your current database uses a `VARCHAR(255)` default
+- Run `npm test` before you make a pull request
 - Acronyms and abbreviations in camelCase like ID, API, JSON are also capitalized in camelCase, such as `documentID`
 - When combining two acronyms, use lowercase for the first and uppercase for the second, such as `dmaID`
-- don't invent your own `ID` attributes, use the `@id` convention
-- don't invent your own `type` attributes, use the `@type` convention
-- when using `enum` in JSON schema, document all values using `meta:enum`
-- when working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
+- Only add your `ID` attributes if neccessary, use the `@id` convention otherwise from the class.
+- When using `enum` in JSON schema, document all values using `meta:enum`
+- When working with "soft enums" or "open enumerations", use `meta:enum` to document all known values
 
 Run `npm run lint` before committing. The `lint` command is able to fix some easy styling issues, including:
 
@@ -168,48 +408,9 @@ Run `npm run lint` before committing. The `lint` command is able to fix some eas
 
 In order to encourage re-use of definitions and modularity of schema files, avoid putting all property declarations into the root of the schema, instead use a `definitions` object with one sub-key for each semantic unit. Then, at the bottom of your schema definition, `$ref`erence them using the `allOf` construct.
 
-```json
-"allOf":[
-    {"$ref": "#/definitions/mydefinition"},
-    {"$ref": "#/definitions/myotherdefinition"},
-    {"$ref": "https://ns.adobe.com/xdm/assets/image#/definitions/someotherdefinition"},
-  ]
-```
-
 In this example, the definitions `mydefinition` and `myotherdefinition` are pulled from the current schema, while `someotherdefinition` is pulled from `https://ns.adobe.com/xdm/assets/image`
 
 JSON Schema [does not have a built-in inheritance mechanism](https://github.com/json-schema-org/json-schema-spec/issues/348#issuecomment-322940347), so the use of `definitions` is considered [best practice in structuring complex schemas](https://spacetelescope.github.io/understanding-json-schema/structuring.html).
-
-### Extensibility
-
-We use built-in JSON Schema capabilities to provide extensibility.
-These capabilities are augmented by some JSON LD-inspired extensions, without requiring consumers to become full-blown JSON LD processors.
-There are two modes of making XDM extensible: through custom properties and through new schemas.
-Custom properties and deriving new schemas from existing schemas are discussed in the next two sections
-
-#### Custom Properties
-
-In order to allow custom properties, use the `https://ns.adobe.com/xdm/common/extensible` schema as a `$ref` reference to the schema in question. This will make sure validation will mark any extension that uses ad-hoc, unregistered properties that potentially overwrites existing or future XDM core properties, as invalid.
-
-In detail, this schema fragment:
-
-1.  disallows the use of `@context` to define custom namespace prefixes
-2.  if `@context` is used, it enforces the namespace prefix mapping that XDM uses
-3.  it forbids the use of any property name prefix that is not listed in `schemas/common/context.jsonld`
-4.  it allows `patternProperties` that are full URIs, so that customers can add their own extensions, as explained in [the extensibility docs](docs/extensibility.md)
-
-XDM provides this JSON Schema fragment to that express these constraints. The schema fragment that can be added to a given schema, allowing you to validate example documents with extensions.
-
-##### Example
-
-In order to make a schema extensible, add the `https://ns.adobe.com/xdm/common/extensible#/definitions/@context` schema fragment reference to your schema definition.
-
-```json
-"allOf":[
-    {"$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"},
-    {"$ref": "#/definitions/…"}
-  ]
-```
 
 #### New Schemas
 
@@ -219,17 +420,6 @@ When it comes to expressing parent-child relationships between schemas, e.g. in 
 2.  How inheritance relationships are implemented
 
 JSON Schema does not have a built-in concept of schema inheritance, so XDM is using a set of custom properties and conventions to achieve the same semantics.
-
-##### Declaring a Schema to be Extensible
-
-Unless explicitly declared otherwise, XDM schemas cannot be extended.
-The author of a given schema has to declare the ability to extend a schema using the `meta:extensible` property at the root of the schema.
-`meta:extensible` is a `boolean` property, and only the value `true` is of any consequence, as the assumed default is `false`.
-If a schema is not extensible, the `meta:extensible` property can be omitted.
-
-In addition to **declaring** the extensibility, the schema author has to make sure that all properties that constitute the schema are defined in a child node of `definitions`.
-As you can see in the next section, the presence of a `definitions` object is expected, and will be validated by running `npm run lint`.
-The co-occurrence of `"meta:extensible": true` and `definitions` is enforced through rules in the meta-schema under `meta.schema.json`.
 
 ##### Extending a Schema with a new Schema
 
@@ -373,23 +563,12 @@ Namespaces should be used to allow organizations to develop XDM-based grammars i
 
 Namespaces _should not_ be used to organize or group concepts within a grammar. When organizing concepts, schema authors should either define sub-objects for each concept, or consider breaking out the concept into an independent schema, as described in "Re-use and Modularity".
 
-### Schema Stability Status
-
-Each schema should contains the enum property `meta:status` that designates it's stability. The value should be one of the following enumerations:
-
-- `stable` : No open issues and has been in `stabilizing` for 1 month without major changes
-- `stabilizing` : No further major changes are expected
-- `experimental` : Major changes can be expected
-- `deprecated` : Schema is no longer maintained, supported or is superceded by another schema/set of schemas
-
 ### Other Schema Extensions
 
 XDM is using a couple of custom keywords that are not part of the JSON Schema standard. These include:
 
-- `meta:extensible`: see above, to describe schemas that allow custom properties
-- `meta:auditable`: for schemas that have created and last modified dates
-- `meta:descriptors`: to annotate schemas with additional metadata (see Schema Descriptors above)
-- `meta:enum`: for known values in enums, strings, and as property keys (see below)
+- `meta:enum`: Its recommended to define these for known values in enums, strings, These are also used in the UI for segmentation purpose.
+- `meta:tags`: to tag a Class/Mixin to a industry vertical.
 
 ##### Soft and Hard Enumerations
 
@@ -407,21 +586,4 @@ For all writing, please follow the [Adobe I/O style guide](https://github.com/ad
 
 ## How Contributions get Reviewed
 
-The XDM project differentiates between major and minor contributions.
-
-- Minor contributions: contributions that do not change the meaning of the standard, such as corrections to typos, word order or formatting. Contributions to the project's `README.md` or `CONTRIBUTING.md` are also minor contributions.
-- Major contributions: all other contributions.
-
-### Minor Contributions
-
-One of the editors will look at the pull request within one week and flag it as `minor`. The editor will then either merge or reject the pull request. If you haven't heard back from the editors within a week, it is not impolite to send a reminder to [Grp-XDM-CoreWG](mailto:Grp-XDM-CoreWG@adobe.com).
-
-Feedback on the pull request will be given in writing, in GitHub.
-
-### Major Contributions
-
-One of the editors will look at the pull request within one week and flag it as `major`. The editor will then provide feedback on the pull request in GitHub.
-
-Every week, during the XDM working group meeting, all open pull requests will be reviewed and discussed. All feedback given in the meeting will be logged in GitHub. This real-time discussion will make sure all open pull requests will get attention.
-
-When the editors agree on the pull request, the pull request will either be merged or rejected. Until this is the case, the pull request will remain open. Editors are operating under the assumption of agreement, so that a single editor can authorize a merge.
+Every week, the PRs posted on github are reviewed by the XDM team. They are either proved to comments are posted for further clarifications.

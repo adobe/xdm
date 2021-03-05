@@ -32,7 +32,7 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "pattern": "^(\\w+:\\/\\/)([^\\s]+\\.\\w+)([^\\s]*)$",
+          "pattern": "^(\\w+:\\/\\/)([^\\s]+)$",
           "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
         },
         "xdm:server": {

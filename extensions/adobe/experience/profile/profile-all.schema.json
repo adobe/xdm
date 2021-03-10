@@ -28,6 +28,44 @@
           "additionalProperties": {
             "$ref": "https://ns.adobe.com/xdm/context/namespace"
           }
+        },
+        "https://ns.adobe.com/experience/profile/associatedIdentities": {
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "xdm:id": {
+                  "title": "Identifier",
+                  "type": "string",
+                  "description": "Identity of the consumer in the related namespace."
+                },
+                "xdm:associatedTimeRanges": {
+                  "type": "array",
+                  "description": "The list of time ranges to determine association of the identities.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:start": {
+                        "title": "Start time",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "The timestamp for when the identity association started."
+                      },
+                      "xdm:end": {
+                        "title": "End time",
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "The timestamp for when the identity association ended."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

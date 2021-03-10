@@ -59,6 +59,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `click` | Message link clicked. |
 | `open` | Message opened. |
 | `unsubscribe` | Unsubscribed from messages. |
+| `spam_complaint` | Message is marked as spam by the user. |
 
 
 

@@ -20,11 +20,12 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "unsubscribe"],
+          "enum": ["click", "open", "unsubscribe", "spam_complaint"],
           "meta:enum": {
             "click": "Message link clicked.",
             "open": "Message opened.",
-            "unsubscribe": "Unsubscribed from messages."
+            "unsubscribe": "Unsubscribed from messages.",
+            "spam_complaint": "Message is marked as spam by the user."
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {

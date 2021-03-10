@@ -32,7 +32,7 @@
                 "xdm:URL": {
                     "title": "URL",
                     "type": "string",
-                    "pattern": "^(\\w+:\\/\\/)(localhost[^\\s]*|[^\\s]+\\.[^\\s]+)$",
+                    "pattern": "^(\\w+:\\/\\/)(localhost[^\\s\\/]*|[^\\s\\/]+\\.[^\\s\\/]+)([^\\s]*)$",
                     "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                 },
                 "xdm:server": {
@@ -69,10 +69,9 @@
     "meta:status": "stable",
     "examples": [
         {
-            "xdm:siteSection": "Product Details Page",
+            "xdm:siteSection": "Product section",
             "xdm:server": "example.com",
-            "xdm:name": "Scottish Haggis Product Details",
-            "xdm:viewName": "FAQ Tab",
+            "xdm:name": "product home",
             "xdm:URL": "https://www.example.com",
             "xdm:errorPage": false,
             "xdm:homePage": true,
@@ -81,9 +80,10 @@
             }
         },
         {
-            "xdm:siteSection": "Product section",
+            "xdm:siteSection": "Product Details Page",
             "xdm:server": "example.com",
-            "xdm:name": "product home",
+            "xdm:name": "Scottish Haggis Product Details",
+            "xdm:viewName": "FAQ Tab",
             "xdm:URL": "https://www.example.com",
             "xdm:errorPage": false,
             "xdm:homePage": true,

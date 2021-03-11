@@ -60,11 +60,6 @@
           "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
           "type": "string"
         },
-        "xdm:accountOwnerID": {
-          "title": "Account Owner Id",
-          "description": "Account owner ID.",
-          "type": "string"
-        },
         "xdm:accountNumber": {
           "title": "Account Number",
           "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
@@ -131,5 +126,5 @@
       "$ref": "#/definitions/b2b-account-segmentation"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

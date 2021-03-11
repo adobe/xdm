@@ -29,17 +29,17 @@
                                 "xdm:assignTo": {
                                     "title": "Assign To",
                                     "type": "string",
-                                    "description": "."
+                                    "description": "Sales user converted lead is assigned to."
                                 },
                                 "xdm:isSentNotificationEmail": {
                                     "title": "Is Sent Notification Email",
                                     "type": "boolean",
-                                    "description": "Sent notification email."
+                                    "description": "Indicates whether assigned sales user received email notification of the converted lead."
                                 },
                                 "xdm:convertedStatus": {
                                     "title": "Converted Status",
                                     "type": "string",
-                                    "description": "Converted status."
+                                    "description": "Converted status of lead."
                                 }
                             }
                         }

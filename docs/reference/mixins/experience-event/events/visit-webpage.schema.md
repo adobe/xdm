@@ -1,28 +1,28 @@
 
-# Visit WebPage Schema
+# Visit Web Page Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/events/visit-webpage
 ```
 
-Use for tracking the details of a person's visit to a webpage.
+Use for tracking the details of a person's visit to a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/events/visit-webpage.schema.json](mixins/experience-event/events/visit-webpage.schema.json) |
 
-## Visit WebPage Example
+## Visit Web Page Example
 ```json
 {}
 ```
 
-# Visit WebPage Properties
+# Visit Web Page Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:environment](#xdmenvironment) | `object` | Optional | Visit WebPage (this schema) |
-| [xdm:search](#xdmsearch) | `object` | Optional | Visit WebPage (this schema) |
-| [xdm:web](#xdmweb) | `object` | Optional | Visit WebPage (this schema) |
+| [xdm:environment](#xdmenvironment) | `object` | Optional | Visit Web Page (this schema) |
+| [xdm:search](#xdmsearch) | `object` | Optional | Visit Web Page (this schema) |
+| [xdm:web](#xdmweb) | `object` | Optional | Visit Web Page (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:environment
@@ -216,9 +216,9 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:webPageID": {
-      "title": "Webpage ID",
+      "title": "Web Page ID",
       "type": "string",
-      "description": "."
+      "description": "Unique ID of the web page."
     },
     "xdm:name": {
       "title": "Name",
@@ -231,15 +231,15 @@ Unknown type `object`.
       "format": "uri",
       "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
     },
-    "xdm:queryParamaters": {
-      "title": "Query Paramaters",
+    "xdm:queryParameters": {
+      "title": "Query Parameters",
       "type": "string",
-      "description": "Query Paramters used for the web page."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url."
     },
     "xdm:isPersonalizedURL": {
       "title": "Is Personalized URL",
       "type": "boolean",
-      "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+      "description": "Boolean indicating if person accessed the web page via a personalized URL."
     }
   },
   "simpletype": "`object`"
@@ -273,7 +273,7 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "The referrer URL."
+      "description": "URL of the referring web page."
     }
   },
   "simpletype": "`object`"

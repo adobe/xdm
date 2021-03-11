@@ -39,7 +39,6 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 | [xdm:leadSource](#xdmleadsource) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:nextStep](#xdmnextstep) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityAmount](#xdmopportunityamount) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
-| [xdm:opportunityOwnerID](#xdmopportunityownerid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:opportunityQuantity](#xdmopportunityquantity) | `integer` | Optional | `0` | XDM Business Opportunity Details (this schema) |
 | [xdm:probabilityPercentage](#xdmprobabilitypercentage) | `number` | Optional |  | XDM Business Opportunity Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -325,26 +324,6 @@ Estimated total sale amount.
 
 
 * [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
-
-
-
-
-
-## xdm:opportunityOwnerID
-### opportunity Owner Id
-
-Assigned owner for this opportunity.
-
-`xdm:opportunityOwnerID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:opportunityOwnerID Type
-
-
-`string`
-
 
 
 

@@ -81,7 +81,13 @@ The normative or usual URL of the web page.  This may or may not be the actual U
 
 
 `string`
-* format: `uri` – Uniformous Resource Identifier (according to [RFC3986](http://tools.ietf.org/html/rfc3986))
+
+
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E(%5Cw%2B%3A%5C%2F%5C%2F)(localhost%5B%5E%5Cs%5C%2F%5D*%7C%5B%5E%5Cs%5C%2F%5D%2B%5C.%5B%5E%5Cs%5C%2F%5D%2B)(%5B%5E%5Cs%5D*)%24)):
+```regex
+^(\w+:\/\/)(localhost[^\s\/]*|[^\s\/]+\.[^\s\/]+)([^\s]*)$
+```
 
 
 

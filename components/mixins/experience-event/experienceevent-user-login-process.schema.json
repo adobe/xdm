@@ -34,6 +34,11 @@
         "xdm:userAccount": {
           "type": "object",
           "properties": {
+            "xdm:userAccountSwitch": {
+              "title": "Switch User Accounts",
+              "type": "integer",
+              "description": "Captures when a visitor switches their account during a visit."
+            },
             "xdm:userCookieConsentAccepted": {
               "title": "Cookie Consent Accepted",
               "type": "boolean",

@@ -19,20 +19,20 @@
           "title": "Execution Step",
           "description": "Indicator for the step type in the overall decision strategy",
           "meta:enum": {
-            "profile": "Profile",
-            "eligibility": "Eligibility",
-            "ranking": "Ranking",
-            "suppression": "Suppression",
-            "capping": "Capping"
+            "profile": "Profile Merge Policy",
+            "eligibility": "Eligibility Policy",
+            "suppression": "Suppression Policy",
+            "ranking": "Ranking Function",
+            "capping": "Capping Counter"
           }
         },
         "xdm:strategyID": {
           "type": "string",
-          "title": "Step Strategy",
-          "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy and the chosen strategy is recorded to measure its performance."
+          "title": "Step's Strategy Identifier",
+          "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result."
         },
         "xdm:algorithmID": {
-          "title": "Algorithm Reference",
+          "title": "Algorithm Identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "Unique identifier for the algorithm used to make the decision, if applicable."
@@ -57,6 +57,5 @@
     {
       "$ref": "#/definitions/strategy-details-datatype"
     }
-  ],
-  "meta:status": "experimental"
+  ]
 }

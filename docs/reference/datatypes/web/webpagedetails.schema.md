@@ -84,9 +84,9 @@ The normative or usual URL of the web page.  This may or may not be the actual U
 
 
 All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E(%5Cw%2B%3A%5C%2F%5C%2F)(localhost%5B%5E%5Cs%5C%2F%5D*%7C%5B%5E%5Cs%5C%2F%5D%2B%5C.%5B%5E%5Cs%5C%2F%5D%2B)(%5B%5E%5Cs%5D*)%24)):
+(test examples [here](https://regexr.com/?expression=%5E%5Cw%2B%3A%5C%2F%5C%2F(localhost%7C%5B%5E%5Cs%3A%5C%2F%5D%2B%5C.%5B%5E%5Cs%3A%5C%2F%5D%2B)(%3A%5Cd%2B)%3F(%5C%2F%5B%5E%5Cs%5D*)%3F%24)):
 ```regex
-^(\w+:\/\/)(localhost[^\s\/]*|[^\s\/]+\.[^\s\/]+)([^\s]*)$
+^\w+:\/\/(localhost|[^\s:\/]+\.[^\s:\/]+)(:\d+)?(\/[^\s]*)?$
 ```
 
 

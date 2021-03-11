@@ -16,11 +16,6 @@
   "definitions": {
     "opportunity-details": {
       "properties": {
-        "xdm:opportunityOwnerID": {
-          "title": "opportunity Owner Id",
-          "description": "Assigned owner for this opportunity.",
-          "type": "string"
-        },
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Campaign unique identifer reference.",

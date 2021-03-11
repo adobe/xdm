@@ -79,6 +79,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/profile/associatedIdentities](#httpsnsadobecomexperienceprofileassociatedidentities) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/identityNamespaces](#httpsnsadobecomexperienceprofileidentitynamespaces) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [Privacy Details](../../../mixins/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
@@ -87,6 +88,28 @@ Adobe Unified Profile Service required fields for the Profile Union.
 | [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md#xdmsegments) |
 | [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md#xdmtimeseriesevents) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/profile/associatedIdentities
+
+
+`https://ns.adobe.com/experience/profile/associatedIdentities`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/profile/associatedIdentities Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
 
 ## https://ns.adobe.com/experience/profile/identityNamespaces
 

@@ -25,9 +25,7 @@ Identity Namespace Schema.
   "xdm:namespaceID": 4657,
   "xdm:namespaceName": "ECID",
   "xdm:namespaceDescription": "Experience Cloud ID",
-  "xdm:namespaceIdType": "COOKIE",
-  "xdm:createDate": "2018-10-23T12:00:00-06:00",
-  "xdm:modifyDate": "2018-10-23T12:00:00-06:00"
+  "xdm:namespaceIdType": "COOKIE"
 }
 ```
 
@@ -37,7 +35,9 @@ Identity Namespace Schema.
   "xdm:namespaceID": 4657,
   "xdm:namespaceName": "ECID",
   "xdm:namespaceDescription": "Experience Cloud ID",
-  "xdm:namespaceIdType": "COOKIE"
+  "xdm:namespaceIdType": "COOKIE",
+  "xdm:createDate": "2018-10-23T12:00:00-06:00",
+  "xdm:modifyDate": "2018-10-23T12:00:00-06:00"
 }
 ```
 

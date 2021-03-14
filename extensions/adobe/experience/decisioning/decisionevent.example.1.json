@@ -29,11 +29,13 @@
         "xdm:id": "home-page-banner",
         "xdm:placement": {
           "xdm:id": "xcore:offer-placement:c652463157c2aa1",
-          "repo:etag": "4"
+          "repo:etag": "4",
+          "xdm:name": "Home Page Banner"
         },
         "xdm:activity": {
           "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
-          "repo:etag": "8"
+          "repo:etag": "8",
+          "xdm:name": "Spring 21 Campaign Web"
         },
         "xdm:strategies": [
           {
@@ -48,10 +50,7 @@
             "xdm:algorithmID": "ts",
             "xdm:trafficType": "noncontextual"
           }
-        ],
-        "xdm:experience": {
-          "xdm:id": "ExperienceA"
-        }
+        ]
       }
     },
     {

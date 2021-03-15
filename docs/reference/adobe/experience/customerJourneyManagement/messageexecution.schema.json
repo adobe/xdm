@@ -28,6 +28,11 @@
                     "type": "string",
                     "description": "The parent Message ID of a MessageExecution originating this message."
                 },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationId": {
+                    "title": "Message Publication ID",
+                    "type": "string",
+                    "description": "The Publication ID of parent Message ID of a MessageExecution originating this message."
+                },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
                     "title": "JourneyVersion ID",
                     "type": "string",
@@ -67,6 +72,7 @@
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID": "4218b775-bef3-46b2-aee2-7caae052cf94",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": "aa440b96-ce65-4ad2-b95d-8c3b51f89bc2",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationId": "132fa0e5-ce65-4ad2-b95d-740ae29e9c51",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageLabel": "Deal for Gold members",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "b9029525-c33a-40f2-a1c1-95f0b8305078",

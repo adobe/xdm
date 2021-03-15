@@ -129,7 +129,7 @@
                 "xdm:roomType": {
                   "title": "Room Type",
                   "type": "string",
-                  "enum": ["queen", "king", "double"],
+                  "enum": ["queen", "king", "double", "meeting room", "other"],
                   "description": "Captures the type of room being reserved."
                 },
                 "xdm:smoking": {

@@ -33,6 +33,7 @@ Content components are the fragments associated with the a particular content re
 | [dc:language](#dclanguage) | `string[]` | Optional | Content Component Details (this schema) |
 | [repo:id](#repoid) | `string` | Optional | Content Component Details (this schema) |
 | [repo:name](#reponame) | `string` | Optional | Content Component Details (this schema) |
+| [repo:repositoryID](#reporepositoryid) | `string` | Optional | Content Component Details (this schema) |
 | [repo:resolveURL](#reporesolveurl) | `string` | Optional | Content Component Details (this schema) |
 | [xdm:content](#xdmcontent) | `string` | Optional | Content Component Details (this schema) |
 | [xdm:deliveryURL](#xdmdeliveryurl) | `string` | Optional | Content Component Details (this schema) |
@@ -186,6 +187,31 @@ Some hint about where to locate the repository that stores the external asset by
 
 
 
+## repo:repositoryID
+
+An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery "repo:resolveUrl" to retrieve the asset.
+
+`repo:repositoryID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### repo:repositoryID Type
+
+
+`string`
+
+
+
+
+
+### repo:repositoryID Example
+
+```json
+"C87932A55B06F7070A49412D@AdobeOrg"
+```
+
+
 ## repo:resolveURL
 
 An optional unique resource locator to read the asset in a content repository. This will make it easier to obtain the asset whithout the client understanding where the asset is manages and what APIs to call. This is similar to a HAL link but the semantic is simpler and more pursposeful.
@@ -263,7 +289,7 @@ An optional unique resource locator to obtain the asset from a content delivery 
 
 ## xdm:linkURL
 
-An optional unique resource locator to link the content to. This URL is used to refer the end user to in a user agent and can be tracked.
+An optional unique resource locator for user interactions. This URL is used to refer the end user to in a user agent and can be tracked.
 
 `xdm:linkURL`
 * is optional

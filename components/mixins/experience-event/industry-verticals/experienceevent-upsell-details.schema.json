@@ -32,7 +32,7 @@
           "properties": {
             "xdm:upsellSteps": {
               "title": "Upsell Steps",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/toolUsage",
               "description": "Extension of tool usage data type."
             },
             "xdm:upsellOffer": {

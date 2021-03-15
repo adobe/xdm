@@ -46,6 +46,16 @@ Unknown type ``.
 ```json
 {
   "properties": {
+    "xdm:orderEvaluationType": {
+      "type": "string",
+      "title": "Order Evaluation Type",
+      "enum": [
+        "static",
+        "scoringFunction",
+        "rankingStrategy"
+      ],
+      "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it."
+    },
     "xdm:function": {
       "type": "string",
       "format": "uri-reference",
@@ -96,6 +106,7 @@ The priority of a single decision option relative to all other options. Options 
 | Property | Type | Group |
 |----------|------|-------|
 | [xdm:function](#xdmfunction) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
+| [xdm:orderEvaluationType](#xdmorderevaluationtype) | `enum` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
 | [xdm:rankingStrategy](#xdmrankingstrategy) | `string` | `https://ns.adobe.com/experience/decisioning/ranking-details#/definitions/order-evaluation` |
 
 ## xdm:function
@@ -115,6 +126,28 @@ A reference to a function that computes a numerical score for this decision opti
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
 
 
+
+
+
+
+## xdm:orderEvaluationType
+### Order Evaluation Type
+
+Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it.
+
+`xdm:orderEvaluationType`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmorderevaluationtype-known-values).
+
+### xdm:orderEvaluationType Known Values
+| Value | Description |
+|-------|-------------|
+| `static` |  |
+| `scoringFunction` |  |
+| `rankingStrategy` |  |
 
 
 

@@ -35,27 +35,6 @@ A decision event is used to capture observations about the outcome and context o
   "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
   "https://ns.adobe.com/experience/decisioning/propositions": [
     {
-      "xdm:scopeDetails": {
-        "xdm:placement": {
-          "xdm:id": "xcore:offer-placement:c652463157c2aa1",
-          "repo:etag": "4"
-        },
-        "xdm:activity": {
-          "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
-          "repo:etag": "8"
-        },
-        "xdm:strategies": [
-          {
-            "xdm:step": "ranking",
-            "xdm:strategyID": "ranking-strategy:7251468357c2236",
-            "xdm:algorithmID": "ts",
-            "xdm:trafficType": "noncontextual"
-          }
-        ],
-        "xdm:experience": {
-          "xdm:id": "ExperienceA"
-        }
-      },
       "xdm:items": [
         {
           "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
@@ -63,17 +42,44 @@ A decision event is used to capture observations about the outcome and context o
           "xdm:score": 83,
           "xdm:propositionsTotal": {
             "xdm:value": 948
-          },
-          "xdm:propositionsProfile": {
-            "xdm:value": 2
           }
         },
         {
           "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
           "repo:etag": "3",
-          "xdm:score": 12
+          "xdm:score": 12,
+          "xdm:propositionsTotal": {
+            "xdm:value": 221
+          }
         }
-      ]
+      ],
+      "xdm:scopeDetails": {
+        "xdm:id": "home-page-banner",
+        "xdm:placement": {
+          "xdm:id": "xcore:offer-placement:c652463157c2aa1",
+          "repo:etag": "4",
+          "xdm:name": "Home Page Banner"
+        },
+        "xdm:activity": {
+          "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
+          "repo:etag": "8",
+          "xdm:name": "Spring 21 Campaign Web"
+        },
+        "xdm:strategies": [
+          {
+            "xdm:step": "eligibility",
+            "xdm:strategyID": "xcore:eligibility-rule:e5244c22eff29e8",
+            "xdm:algorithmID": "pql-rule",
+            "xdm:trafficType": "contextual"
+          },
+          {
+            "xdm:step": "ranking",
+            "xdm:strategyID": "ranking-strategy:7251468357c2236",
+            "xdm:algorithmID": "ts",
+            "xdm:trafficType": "noncontextual"
+          }
+        ]
+      }
     },
     {
       "xdm:items": [
@@ -83,14 +89,23 @@ A decision event is used to capture observations about the outcome and context o
         }
       ],
       "xdm:scopeDetails": {
+        "xdm:id": "home-page-side-bar",
         "xdm:placement": {
-          "xdm:id": "xcore:offer-placement:c652463157c2aa2",
+          "xdm:id": "xcore:offer-placement:6111463157c2221",
           "repo:etag": "6"
         },
         "xdm:activity": {
-          "xdm:id": "xcore:offer-activity:f203512e02542b5",
+          "xdm:id": "xcore:offer-activity:fd55d033fea4b82",
           "repo:etag": "14"
-        }
+        },
+        "xdm:strategies": [
+          {
+            "xdm:step": "eligibility",
+            "xdm:strategyID": "xcore:eligibility-rule:f65212b6b3c0b01",
+            "xdm:algorithmID": "pql-rule",
+            "xdm:trafficType": "contextual"
+          }
+        ]
       }
     }
   ],

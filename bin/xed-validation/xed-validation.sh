@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-cleanup () {
-  (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json schemaChanges.log tempmaster xedError.log) #cleanup temp folders
+cleanup () { #cleanup temp files
+  (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json industries.json schemaChanges.log tempmaster xedError.log) #cleanup temp folders
 }
 
 git clone https://github.com/adobe/xdm.git tempmaster
@@ -18,6 +18,7 @@ mkdir ./tempinput/components/uberschemas
 
 (echo "++++++++++Start XED conversion pre-processing.....++++++++++"; sleep 1)
 node uberSchemaGen.js
+node uberIndustrySchemaGen.js
 node schemaLocGen.js
 node tempGen.js -i tempinput/schemas -j xdm
 node tempGen.js -i tempinput/components -j xdm

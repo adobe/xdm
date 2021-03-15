@@ -1,12 +1,13 @@
-//This script generate the uber schema.
+//This script generate the uber schemas.
 'use strict';
 const fs = require('fs');
 const glob = require("glob");
 const tempInputFolder = "tempinput/components/"
 const uberSchemaFolder = tempInputFolder + "uberschemas/"
 
-glob(tempInputFolder + "**/*.schema.json", function(er, files) {
+glob(tempInputFolder + "**/*.schema.json", function(er, files) {//uber schemas for all mixins
     let classes = {};
+    let industries = {};
     files.forEach(function(file) {
         try {
             let schema = JSON.parse(fs.readFileSync(file));
@@ -20,11 +21,20 @@ glob(tempInputFolder + "**/*.schema.json", function(er, files) {
                     }
                 }
             }
+
+            if (schema["meta:tags"] && schema["meta:tags"].industry) {//for generating list of industries json
+                for (let i in schema["meta:tags"].industry) {
+                    if (schema["meta:tags"].industry[i] !== "all") {
+                        industries[schema["meta:tags"].industry[i]] = 1;
+                    }
+                }
+            }
         } catch(error) {
             console.log(file.replace(tempInputFolder,"") +": JSON " + error);
         }
     });
     delete classes['https://ns.adobe.com/xdm/data/record']//remove record from uber schemas
+    fs.writeFileSync('industries.json', JSON.stringify(industries,null,2));
 
     for (let ind in classes) {//generate uber schemas for each class
         let uberSchemaFile = uberSchemaFolder+ind.split("/").pop() + "-generated.schema.json"

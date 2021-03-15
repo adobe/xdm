@@ -40,7 +40,7 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversionnodeid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageexecutionid) | `string` | **Required** | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagemessagepublicationid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagepublicationid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID
@@ -160,6 +160,9 @@ The parent Message ID of a MessageExecution originating this message.
 
 
 
+
+
+
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID
 ### Message Publication ID
 
@@ -174,5 +177,8 @@ The Publication ID of parent Message ID of a MessageExecution originating this m
 
 
 `string`
+
+
+
 
 

@@ -9,7 +9,7 @@ Decision strategy details capture data values for a particular step that will be
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/decisioning/strategy-details.schema.json](adobe/experience/decisioning/strategy-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/strategy-details.schema.json](adobe/experience/decisioning/strategy-details.schema.json) |
 ## Schema Hierarchy
 
 * Decision Strategy Details `https://ns.adobe.com/experience/decisioning/strategy-details`
@@ -27,7 +27,7 @@ Decision strategy details capture data values for a particular step that will be
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:algorithmID
-### Algorithm Reference
+### Algorithm Identifier
 
 Unique identifier for the algorithm used to make the decision, if applicable.
 
@@ -67,19 +67,19 @@ Indicator for the step type in the overall decision strategy
 ### xdm:step Known Values
 | Value | Description |
 |-------|-------------|
-| `profile` | Profile |
-| `eligibility` | Eligibility |
-| `ranking` | Ranking |
-| `suppression` | Suppression |
-| `capping` | Capping |
+| `profile` | Profile Merge Policy |
+| `eligibility` | Eligibility Policy |
+| `suppression` | Suppression Policy |
+| `ranking` | Ranking Function |
+| `capping` | Capping Counter |
 
 
 
 
 ## xdm:strategyID
-### Step Strategy
+### Step&#39;s Strategy Identifier
 
-The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy and the chosen strategy is recorded to measure its performance.
+The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result.
 
 `xdm:strategyID`
 * is optional

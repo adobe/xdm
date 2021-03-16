@@ -26,15 +26,13 @@
                         "click",
                         "open",
                         "unsubscribe",
-                        "spam_complaint",
-                        "subscription"
+                        "spam_complaint"
                     ],
                     "meta:enum": {
                         "click": "Message link clicked.",
                         "open": "Message opened.",
                         "unsubscribe": "Unsubscribed from messages.",
-                        "spam_complaint": "Message is marked as spam by the user.",
-                        "subscription": "Subscribe to messages."
+                        "spam_complaint": "Message is marked as spam by the user."
                     }
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {

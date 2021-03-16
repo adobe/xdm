@@ -53,6 +53,7 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:upgradeOffer`|  | Optional |
+| `xdm:upgradeSteps`|  | Optional |
 | `xdm:upgradeTransaction`|  | Optional |
 
 
@@ -70,6 +71,26 @@ Extension of offer details data type.
 
 
 * []() – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details`
+
+
+
+
+
+
+
+#### xdm:upgradeSteps
+##### Upgrade Steps
+
+Extension of toolUsage data type.
+
+`xdm:upgradeSteps`
+* is optional
+* type: reference
+
+##### xdm:upgradeSteps Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
 
 
 

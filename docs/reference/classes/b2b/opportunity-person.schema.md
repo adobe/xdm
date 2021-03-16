@@ -85,7 +85,7 @@ Audit attributes for external sources.
 ## xdm:isPrimary
 ### Primary Flag
 
-A flag to signify that this is the primary opportunity contact
+Boolean indicating if the person is the primary contact on this opportunity.
 
 `xdm:isPrimary`
 * is optional
@@ -104,7 +104,7 @@ A flag to signify that this is the primary opportunity contact
 ## xdm:opportunityID
 ### Opportunity ID
 
-Opportunity unique identifier reference.
+Unique ID for the opportunity in this opportunity person relationship.
 
 `xdm:opportunityID`
 * is optional
@@ -124,7 +124,7 @@ Opportunity unique identifier reference.
 ## xdm:opportunityPersonID
 ### Opportunity Person ID
 
-Opportunity person relation unique identifer.
+Unique ID for the relationship between the opportunity and the person.
 
 `xdm:opportunityPersonID`
 * is **required**
@@ -144,7 +144,7 @@ Opportunity person relation unique identifer.
 ## xdm:personID
 ### Person ID
 
-Person unique identifier reference.
+Unique ID for the person in this opportunity person relationship.
 
 `xdm:personID`
 * is optional
@@ -164,7 +164,7 @@ Person unique identifier reference.
 ## xdm:personRole
 ### Person Role
 
-Role of the person/contact for this opportunity.
+Role of the person on this opportunity.
 
 `xdm:personRole`
 * is optional

@@ -46,7 +46,7 @@ Use to track when a person is added to a specific list.
 #### xdm:listID
 ##### List ID
 
-List unique identifier.
+Unique ID of the Marketing List.
 
 `xdm:listID`
 * is optional

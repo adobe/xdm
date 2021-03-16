@@ -140,7 +140,9 @@
                                     "enum": [
                                         "queen",
                                         "king",
-                                        "double"
+                                        "double",
+                                        "meeting room",
+                                        "other"
                                     ],
                                     "description": "Captures the type of room being reserved."
                                 },

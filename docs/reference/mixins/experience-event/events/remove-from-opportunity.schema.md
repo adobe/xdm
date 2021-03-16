@@ -48,7 +48,7 @@ Use to capture details when a person is removed as a point of contact on a sales
 #### xdm:isPrimary
 ##### Is Primary
 
-Is primary.
+Boolean indicating if the person was the primary contact on the Opportunity.
 
 `xdm:isPrimary`
 * is optional
@@ -68,7 +68,7 @@ Is primary.
 #### xdm:opportunityID
 ##### Opportunity ID
 
-Opportunity ID
+Unique ID of the Opportunity.
 
 `xdm:opportunityID`
 * is optional
@@ -89,7 +89,7 @@ Opportunity ID
 #### xdm:role
 ##### Role
 
-Role.
+Role of the person on the Opportunity.
 
 `xdm:role`
 * is optional

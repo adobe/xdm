@@ -18,48 +18,48 @@
       "properties": {
         "xdm:accountPersonID": {
           "title": "Account Person ID",
-          "description": "Account person relation unique identifer.",
+          "description": "Unique ID for this relationship between an account and a person.",
           "type": "string"
         },
         "xdm:accountID": {
           "title": "Account ID",
-          "description": "Account unique identifier reference.",
+          "description": "Unique ID for the account in this account person relationship.",
           "type": "string"
         },
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Person unique identifier reference.",
+          "description": "Unique ID for the person in this account person relationship.",
           "type": "string"
         },
         "xdm:personRole": {
           "title": "Person Role",
-          "description": "Role of the person/contact for this account.",
+          "description": "Role of the person on this account.",
           "type": "string"
         },
         "xdm:isDirect": {
           "title": "Direct Flag",
-          "description": "A flag to signify that this is the direct account contact.",
+          "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
           "type": "boolean"
         },
         "xdm:isActive": {
           "title": "Active Flag",
-          "description": "A flag to signify that this relation is active or not.",
+          "description": "Boolean to indicate if this relationship between the account and the person is active.",
           "type": "boolean"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
-          "description": "A flag to signify that this relation is primary or not.",
+          "description": "Boolean to indicate if the person is the primary contact on the account.",
           "type": "boolean"
         },
         "xdm:relationStartDate": {
           "title": "Relationship Start Date",
-          "description": "The date when this account person relationship was established.",
+          "description": "The date when the relationship between the account and the person started.",
           "type": "string",
           "format": "date-time"
         },
         "xdm:relationEndDate": {
           "title": "Relationship End Date",
-          "description": "The date when this account person relationship was discontinued.",
+          "description": "The date when the relationship between the account and the person ended.",
           "type": "string",
           "format": "date-time"
         },
@@ -68,7 +68,7 @@
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for this relation."
+          "description": "The ISO 4217 currency code used for the relationship between the account and the person."
         }
       }
     }

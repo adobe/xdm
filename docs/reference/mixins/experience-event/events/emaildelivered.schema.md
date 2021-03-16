@@ -49,7 +49,7 @@ Use to capture details when an email is successfully delivered to a person.
 #### xdm:mailingID
 ##### Mailing ID
 
-Unique identifier of the mailing.
+Unique ID of the email asset.
 
 `xdm:mailingID`
 * is optional
@@ -70,7 +70,7 @@ Unique identifier of the mailing.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name for the mailing.
+Friendly name of the email asset.
 
 `xdm:mailingName`
 * is optional
@@ -91,7 +91,7 @@ Friendly name for the mailing.
 #### xdm:testVariantID
 ##### Test Variant ID
 
-Unique identifier for the test variant.
+Unique ID of the test variant of the email asset.
 
 `xdm:testVariantID`
 * is optional
@@ -112,7 +112,7 @@ Unique identifier for the test variant.
 #### xdm:testVariantName
 ##### Test Variant Name
 
-Friendly name for the test variant.
+Friendly name of the test variant of the email asset.
 
 `xdm:testVariantName`
 * is optional

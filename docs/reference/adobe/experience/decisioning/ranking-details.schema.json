@@ -30,6 +30,16 @@
         },
         "order-evaluation": {
             "properties": {
+                "xdm:orderEvaluationType": {
+                    "type": "string",
+                    "title": "Order Evaluation Type",
+                    "enum": [
+                        "static",
+                        "scoringFunction",
+                        "rankingStrategy"
+                    ],
+                    "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it."
+                },
                 "xdm:function": {
                     "type": "string",
                     "format": "uri-reference",

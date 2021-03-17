@@ -40,28 +40,317 @@
           "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart."
         },
         "xdm:productListReopens": {
+          "title": "Product List Reopens",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity."
         },
         "xdm:productListViews": {
+          "title": "Product List Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View or views of a product-list has occurred."
         },
         "xdm:productViews": {
+          "title": "Product Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View or views of a product have occurred."
         },
         "xdm:purchases": {
+          "title": "Purchases",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced."
         },
         "xdm:saveForLaters": {
+          "title": "Save for Laters",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Product list is saved for future use, for example a product wish list."
         },
         "xdm:inStorePurchase": {
+          "title": "In-store Purchase",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "'inStore' purchase is saved for analytics use."
+        },
+        "xdm:activationFee": {
+          "title": "Activation Fee",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Activation fee for an order, if applicable."
+        },
+        "xdm:backorderAmount": {
+          "title": "Backorder Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Tracks the total value of backordered items in a visitor's shopping cart."
+        },
+        "xdm:productBrand": {
+          "title": "Product Brand",
+          "type": "string",
+          "description": "Tracks the brand of an individual product."
+        },
+        "xdm:cartID": {
+          "title": "Cart ID",
+          "type": "string",
+          "description": "If applicable, tracks a persistent cart identifier string that would expire upon a successful order event."
+        },
+        "xdm:category": {
+          "title": "Category",
+          "type": "string",
+          "description": "Tracks the parent/main category of an individual product."
+        },
+        "xdm:checkoutStart": {
+          "title": "Checkout Start",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times a checkout was initiated."
+        },
+        "xdm:checkoutComplete": {
+          "title": "Checkout Complete",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times a checkout was completed."
+        },
+        "xdm:checkoutStep": {
+          "title": "Checkout Step",
+          "type": "string",
+          "description": "Tracks the name of a single step in the checkout, if applicable."
+        },
+        "xdm:checkoutType": {
+          "title": "Checkout Type",
+          "type": "string",
+          "description": "Different types of checkout types that could be used by the visitor, i.e. 'standard' or 'express'."
+        },
+        "xdm:costOfGoodsSold": {
+          "title": "Cost of Goods Sold",
+          "type": "string",
+          "description": "Wholesale price of an item at the time the order is placed.  Typically only collected with server-side code."
+        },
+        "xdm:crossSellProducts": {
+          "title": "Cross-Sell Products",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Product SKU/ID"
+          },
+          "description": "Array of product SKUs/IDs displayed as related products."
+        },
+        "xdm:deliveryFee": {
+          "title": "Delivery Fee",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Delivery fee for an order, if applicable."
+        },
+        "xdm:depositAmount": {
+          "title": "Deposit Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Deposit amount applied to an order, if applicable."
+        },
+        "xdm:discountAmount": {
+          "title": "Discount Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Total discount associated with the transaction."
+        },
+        "xdm:inventoryCount": {
+          "title": "Inventory Count",
+          "type": "integer",
+          "description": "Tracks the current inventory count for an individual product."
+        },
+        "xdm:itemsInProductList": {
+          "title": "Items in Product List",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Product SKU/ID"
+          },
+          "description": "An array of all product SKUs/IDs in the list of products.  Used outside of a shopping cart."
+        },
+        "xdm:itemTotalAmount": {
+          "title": "Order Item Total",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Revenue before discounts and coupons are added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied."
+        },
+        "xdm:oneClickPay": {
+          "title":"One Click Pay",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times the visitor used the single click to pay method to checkout."
+        },
+        "xdm:orderReview": {
+          "title": "Shopping Cart Order Review",
+          "type": "integer",
+          "description": "Counted when a customer views their order review screen before completing their order."
+        },
+        "xdm:paymentMethodAdded": {
+          "title":"Payment Method Added",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Captured if a visitor adds a payment method to their account."
+        },
+        "xdm:productListPosition": {
+          "title": "Product List Position",
+          "type": "integer",
+          "description": "Captures the position of the product item in a list of products."
+        },
+        "xdm:productID": {
+          "title": "Product ID",
+          "type": "string",
+          "description": "The SKU/ID of the product."
+        },
+        "xdm:productComparison": {
+          "title":"Product Comparison",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+          "description": "Counts if a given product was included in a comparison view.  Extension of comparison data type."
+        },
+        "xdm:productDescription": {
+          "title": "Product Description",
+          "type": "string",
+          "description": "Tracks the description of the individual product."
+        },
+        "xdm:productImpression": {
+          "title":"Product Impression",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
+          "description": "Counted any time a product thumbnail or summary view has been displayed, aside from the product detail page itself or as an item in a cart."
+        },
+        "xdm:productListTotalItems": {
+          "title": "Product List Total Items",
+          "type": "integer",
+          "description": "Count of total items currently in the shopping cart."
+        },
+        "xdm:productListTotalValue": {
+          "title": "Product List Total Value",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Count of total value of items currently in the shopping cart."
+        },
+        "xdm:productRating": {
+          "title": "Product Rating",
+          "type": "number",
+          "description": "Tracks the rating of the individual product."
+        },
+        "xdm:promoCodes": {
+          "title": "Promotional Codes",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Promotional Code"
+          },
+          "description": "Captures any promotional code(s) that have successfully been applied during the checkout process."
+        },
+        "xdm:quickView": {
+          "title":"Product Quick View",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times a product was selected for quick viewing in a modal or other scaled down product view."
+        },
+        "xdm:productReviewRating": {
+          "title": "Product Review Rating",
+          "type": "number",
+          "description": "Tracks the rating of a product review."
+        },
+        "xdm:recurringCharge": {
+          "title": "Recurring Charge",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Portion of the order revenue that is due on a recurring basis."
+        },
+        "xdm:revenueDue": {
+          "title": "Revenue Due",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Portion of order revenue total due when the order is placed."
+        },
+        "xdm:reorder": {
+          "title": "Reorder",
+          "type": "boolean",
+          "description": "Tracked when a visitor reorders from a list of previous orders."
+        },
+        "xdm:productReviewComment": {
+          "title": "Product Review Comment",
+          "type": "string",
+          "description": "Tracks the text content of a product review."
+        },
+        "xdm:productReviewID": {
+          "title": "Product Review ID",
+          "type": "string",
+          "description": "Tracks the ID of a product review."
+        },
+        "xdm:saveBillingInformation": {
+          "title": "Save Billing Information",
+          "type": "boolean",
+          "description": "Tracks if a visitor chooses to have their billing information stored for future orders."
+        },
+        "xdm:saveShippingInformation": {
+          "title": "Save Shipping Information",
+          "type": "boolean",
+          "description": "Tracks if a visitor chooses to have their shipping information stored for future orders."
+        },
+        "xdm:saveForLaterAdd": {
+          "title": "Add to Save for Later",
+          "type": "integer",
+          "description": "Tracks when a visitor adds a product or item to their save for later list."
+        },
+        "xdm:saveForLaterRemove": {
+          "title": "Remove from Save for Later",
+          "type": "integer",
+          "description": "Tracks when a visitor views their save for later list."
+        },
+        "xdm:saveForLaterView": {
+          "title": "View Save for Later",
+          "type": "integer",
+          "description": "Tracks when a visitor removes a product or item to their save for later list."
+        },
+        "xdm:shopBOPIS": {
+          "title": "Order Buy Online Ship to Store",
+          "type": "boolean",
+          "description": "buy online, ship to store"
+        },
+        "xdm:shopBOSS": {
+          "title": "Order Buy Online Pickup in Store",
+          "type": "boolean",
+          "description": "buy online, pickup in store"
+        },
+        "xdm:shippingAmount": {
+          "title": "Order Shipping Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Shipping cost associated with the transaction."
+        },
+        "xdm:shippingMethod": {
+          "title": "Order Shipping Method",
+          "type": "string",
+          "description": "Tracks the type of shipping selected for the order."
+        },
+        "xdm:shipToHome": {
+          "title": "Order Ship to Home",
+          "type": "boolean",
+          "description": "Ship to home? Yes/No"
+        },
+        "xdm:skuVariant": {
+          "title": "Product SKU Variant",
+          "type": "string",
+          "description": "Tracks if a product has alternate SKUs or IDs, such as different SKUs for color variants."
+        },
+        "xdm:splitPaymentMethods": {
+          "title": "Split Payment Methods",
+          "type": "boolean",
+          "description": "Captured if a visitor chooses to use multiple payment methods (i.e. credit card & points) to complete a purchase."
+        },
+        "xdm:storeId": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Store ID of BOPIS or BOSS store."
+        },
+        "xdm:subcategory": {
+          "title": "Product Subcategory",
+          "type": "string",
+          "description": "Tracks the child/sub category for the individual product."
+        },
+        "xdm:subtotalAmount": {
+          "title": "Order Subtotal Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Tracks the total amount of the order before taxes and shippping amounts."
+        },
+        "xdm:taxAmount": {
+          "title": "Order Tax Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Tracks the total amount of taxes applied to a successful order."
+        },
+        "xdm:thumbnailUrl ": {
+          "title": "Product Thumbnail URL",
+          "type": "string",
+          "format": "uri",
+          "description": "Tracks the URL for the product thumbnail, when displayed."
+        },
+        "xdm:tipAmount": {
+          "title": "Order Tip Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Total tip applied to an order, if applicable."
         }
       }
     }

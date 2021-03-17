@@ -34,40 +34,35 @@
         "xdm:userAccount": {
           "type": "object",
           "properties": {
-            "xdm:userAccountID": {
-              "title": "User Account ID",
+            "xdm:ID": {
+              "title": "ID",
               "type": "string",
               "description": "Captures the user account ID."
             },
-            "xdm:userAccountPersonalDetails": {
-              "title": "User Account Personal Details",
+            "xdm:contactDetails": {
+              "title": "Contact Details",
               "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
               "description": "Extension of the Personal Profile data type."
             },
-            "xdm:userAccountStart": {
-              "title": "User Account Start Date",
+            "xdm:startDate": {
+              "title": "Start Date",
               "type": "string",
               "format": "date-time",
               "description": "Date when the account was opened."
             },
-            "xdm:userAccountStatus": {
-              "title": "User Account Status",
+            "xdm:status": {
+              "title": "Status",
               "type": "string",
               "enum": ["active", "inactive", "disabled", "other"],
               "description": "This should describe the current status of the account"
             },
-            "xdm:userAccountType": {
-              "title": "User Account Type",
+            "xdm:accountType": {
+              "title": "Account Type",
               "type": "string",
               "description": "Captures the user account type, if applicable."
             },
-            "xdm:userAccountRegistration": {
-              "title": "User Account Registration",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            },
-            "xdm:userAccountPreferences": {
-              "title": "User Account Preferences",
+            "xdm:preferences": {
+              "title": "Preferences",
               "type": "array",
               "items": {
                 "type": "string"

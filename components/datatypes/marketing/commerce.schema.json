@@ -163,7 +163,7 @@
           "description": "Revenue before discounts and coupons are added in. For better flexibility and total control over tracking, we let you decide how to calculate how coupons and discounts are applied."
         },
         "xdm:oneClickPay": {
-          "title":"One Click Pay",
+          "title": "One Click Pay",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times the visitor used the single click to pay method to checkout."
         },
@@ -173,7 +173,7 @@
           "description": "Counted when a customer views their order review screen before completing their order."
         },
         "xdm:paymentMethodAdded": {
-          "title":"Payment Method Added",
+          "title": "Payment Method Added",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured if a visitor adds a payment method to their account."
         },
@@ -188,7 +188,7 @@
           "description": "The SKU/ID of the product."
         },
         "xdm:productComparison": {
-          "title":"Product Comparison",
+          "title": "Product Comparison",
           "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
           "description": "Counts if a given product was included in a comparison view.  Extension of comparison data type."
         },
@@ -198,7 +198,7 @@
           "description": "Tracks the description of the individual product."
         },
         "xdm:productImpression": {
-          "title":"Product Impression",
+          "title": "Product Impression",
           "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
           "description": "Counted any time a product thumbnail or summary view has been displayed, aside from the product detail page itself or as an item in a cart."
         },
@@ -227,7 +227,7 @@
           "description": "Captures any promotional code(s) that have successfully been applied during the checkout process."
         },
         "xdm:quickView": {
-          "title":"Product Quick View",
+          "title": "Product Quick View",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a product was selected for quick viewing in a modal or other scaled down product view."
         },

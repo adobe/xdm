@@ -49,10 +49,20 @@
               "type": "string",
               "description": "Message that the sender sent"
             },
+            "xdm:interactions": {
+              "title": "Interactions",
+              "type": "integer",
+              "description": "The total number of social interactions."
+            },
             "xdm:network": {
               "title": "Network",
               "type": "string",
               "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc."
+            },
+            "xdm:target": {
+              "title": "Target",
+              "type": "string",
+              "description": "For social interactions, this is the URL (or resource) which receives the social network action."
             },
             "xdm:recipient": {
               "title": "Recipient",

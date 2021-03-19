@@ -23,7 +23,7 @@
         },
         "xdm:namespaceId": {
           "title": "Namespace Id",
-          "type": "string",
+          "type": "integer",
           "description": "Id for the Identity Type."
         },
         "xdm:namespaceCode": {
@@ -34,7 +34,17 @@
         "xdm:algo": {
           "title": "Algorithm",
           "type": "string",
-          "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc."
+          "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc.",
+          "enum": [
+            "SHARED_DEVICE_DETECTION_SESSIONIZATION",
+            "FREQ_RECENCY_BASED_SHARED_DEVICES",
+            "DETERMINISTIC"
+          ],
+          "meta:enum": {
+            "SHARED_DEVICE_DETECTION_SESSIONIZATION": "Shared Device Detection Sessionization",
+            "FREQ_RECENCY_BASED_SHARED_DEVICES": "Frequency Recency Based Shared Devices",
+            "DETERMINISTIC": "Deterministic"
+          }
         },
         "xdm:membersByTimeRange": {
           "type": "array",

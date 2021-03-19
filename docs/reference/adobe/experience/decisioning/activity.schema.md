@@ -39,186 +39,186 @@ Controls a decisioning process and describes some form of action that is planned
   "https://ns.adobe.com/experience/decisioning/fallback": "xcore:fallback-offer:f6709ad4e7c0bac",
   "https://ns.adobe.com/experience/decisioning/criteria": [
     {
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:placements": [
         "xcore:offer-placement:c652463157c2aa1"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f6998eb62ed6f15"
+      "xdm:optionSelection": {
+        "xdm:filter": "xcore:offer-filter:f6998eb62ed6f15"
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Pilot = Y",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+      "xdm:profileConstraints": {
+        "xdm:description": "Pilot = Y",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 0
+      "xdm:ranking": {
+        "xdm:priority": 0
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:placements": [
         "xcore:offer-placement:c652463157c2aa2"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f15"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0ba3"
+      "xdm:profileConstraints": {
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0ba3"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 0
+      "xdm:ranking": {
+        "xdm:priority": 0
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S1:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S1:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Charge_Elite_30 Offer",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f15"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b01"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) = 30",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b01"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 8
+      "xdm:ranking": {
+        "xdm:priority": 8
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S2:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S2:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_Generic",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Charge_Elite_Generic",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f16"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) != 30",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b02"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC) AND Pilot = Y AND Discount(Reserve1) != 30",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b02"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 7
+      "xdm:ranking": {
+        "xdm:priority": 7
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S3:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S3:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Members_15",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Members_15",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f17"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 15",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b03"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 15",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b03"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 6
+      "xdm:ranking": {
+        "xdm:priority": 6
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S4:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S4:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Members_20",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Members_20",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f18"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 20",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b04"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 20",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b04"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 5
+      "xdm:ranking": {
+        "xdm:priority": 5
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S5:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S5:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Members_30",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Members_30",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f19"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 30",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b05"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot = Y AND Discount(Reserve1) = 30",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b05"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 4
+      "xdm:ranking": {
+        "xdm:priority": 4
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S6:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S6:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "NONKC",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "NONKC",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f20"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (NonKC) AND Pilot != Y",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b06"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (NonKC) AND Pilot != Y",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b06"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 3
+      "xdm:ranking": {
+        "xdm:priority": 3
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S7:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S7:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Credit_30",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Credit_30",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f21"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group in (ClassicKC, MVC, Unmatched) AND Pilot != Y AND Discount(Reserve1) = 30",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b07"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group in (ClassicKC, MVC, Unmatched) AND Pilot != Y AND Discount(Reserve1) = 30",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b07"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 2
+      "xdm:ranking": {
+        "xdm:priority": 2
       }
     },
     {
-      "https://ns.adobe.com/experience/decisioning/description": "S8:",
-      "https://ns.adobe.com/experience/decisioning/placements": [
+      "xdm:description": "S8:",
+      "xdm:placements": [
         "xcore:offer-placement:6111463157c2221"
       ],
-      "https://ns.adobe.com/experience/decisioning/optionSelection": {
-        "https://ns.adobe.com/experience/decisioning/description": "Credit_Generic",
-        "https://ns.adobe.com/experience/decisioning/options": [
+      "xdm:optionSelection": {
+        "xdm:description": "Credit_Generic",
+        "xdm:options": [
           "xcore:offer:f6998eb62ed6f22"
         ]
       },
-      "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-        "https://ns.adobe.com/experience/decisioning/description": "Tender Group = ClassicKC OR MVC OR NULL OR Unmatched AND Pilot != Y AND Discount(Reserve1) !=30",
-        "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b09"
+      "xdm:profileConstraints": {
+        "xdm:description": "Tender Group = ClassicKC OR MVC OR NULL OR Unmatched AND Pilot != Y AND Discount(Reserve1) !=30",
+        "xdm:eligibilityRule": "xcore:eligibility-rule:f65212b6b3c0b09"
       },
-      "https://ns.adobe.com/experience/decisioning/ranking": {
-        "https://ns.adobe.com/experience/decisioning/priority": 1
+      "xdm:ranking": {
+        "xdm:priority": 1
       }
     }
   ]

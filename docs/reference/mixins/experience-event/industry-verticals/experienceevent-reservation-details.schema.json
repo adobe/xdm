@@ -36,6 +36,11 @@
                             "type": "integer",
                             "description": "Tracked when a reservation has been cancelled."
                         },
+                        "xdm:confirmationNumber": {
+                            "title": "Confirmation Number",
+                            "type": "string",
+                            "description": "Tracks the reservation confirmation number/identifier."
+                        },
                         "xdm:created": {
                             "title": "Created",
                             "type": "integer",

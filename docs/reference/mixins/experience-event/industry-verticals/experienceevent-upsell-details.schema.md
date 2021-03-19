@@ -53,6 +53,7 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:upsellOffer`|  | Optional |
+| `xdm:upsellSteps`|  | Optional |
 | `xdm:upsellTransaction`|  | Optional |
 
 
@@ -70,6 +71,26 @@ Extension of offer details data type.
 
 
 * []() – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details`
+
+
+
+
+
+
+
+#### xdm:upsellSteps
+##### Upsell Steps
+
+Extension of toolUsage data type.
+
+`xdm:upsellSteps`
+* is optional
+* type: reference
+
+##### xdm:upsellSteps Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
 
 
 

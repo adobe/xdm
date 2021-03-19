@@ -39,6 +39,11 @@
           "type": "string",
           "description": "Some hint about where to locate the repository that stores the external asset by the \"repo:id\"."
         },
+        "repo:repositoryID": {
+          "type": "string",
+          "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
+          "examples": ["C87932A55B06F7070A49412D@AdobeOrg"]
+        },
         "repo:id": {
           "type": "string",
           "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
@@ -71,7 +76,7 @@
         "xdm:linkURL": {
           "type": "string",
           "format": "uri-reference",
-          "description": "An optional unique resource locator to link the content to. This URL is used to refer the end user to in a user agent and can be tracked.",
+          "description": "An optional unique resource locator for user interactions. This URL is used to refer the end user to in a user agent and can be tracked.",
           "examples": [
             "https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
           ]

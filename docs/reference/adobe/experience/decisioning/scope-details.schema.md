@@ -21,25 +21,31 @@ Decision scope details capture properties that existed to narrow the scope of th
 ## Decision Scope Details Example
 ```json
 {
+  "xdm:id": "home-page-banner",
   "xdm:placement": {
     "xdm:id": "xcore:offer-placement:c652463157c2aa1",
-    "repo:etag": "4"
+    "repo:etag": "4",
+    "xdm:name": "Home Page Banner"
   },
   "xdm:activity": {
     "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
-    "repo:etag": "8"
+    "repo:etag": "8",
+    "xdm:name": "Spring 21 Campaign Web"
   },
   "xdm:strategies": [
     {
+      "xdm:step": "eligibility",
+      "xdm:strategyID": "xcore:eligibility-rule:e5244c22eff29e8",
+      "xdm:algorithmID": "pql-rule",
+      "xdm:trafficType": "contextual"
+    },
+    {
       "xdm:step": "ranking",
       "xdm:strategyID": "ranking-strategy:7251468357c2236",
-      "xdm:algorithmID": "ts",
+      "xdm:algorithmID": "auto-optimize",
       "xdm:trafficType": "noncontextual"
     }
-  ],
-  "xdm:experience": {
-    "xdm:id": "ExperienceA"
-  }
+  ]
 }
 ```
 

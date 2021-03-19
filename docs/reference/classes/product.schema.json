@@ -12,6 +12,21 @@
     "auditable": true,
     "meta:extensible": true,
     "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "retail",
+            "financial_services",
+            "travel_and_hospitality",
+            "telecom",
+            "automotive",
+            "education",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing",
+            "media_and_entertainment",
+            "public_sector"
+        ]
+    },
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],

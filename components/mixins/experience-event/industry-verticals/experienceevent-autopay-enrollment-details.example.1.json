@@ -1,21 +1,20 @@
 {
-  "xdm:userAccount": {
-    "xdm:userAccountID": "X87321",
-    "xdm:userAccountType": "personal",
-    "xdm:userAccountRegistration": {
+  "xdm:autopayEnrollment": {
+    "xdm:autoPayEnrollment": {
       "xdm:tool-usage": {
         "xdm:toolUsageCancelled": 1,
         "xdm:toolUsageComplete": 1,
         "xdm:toolUsageFailure": 1,
         "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "calculator",
+        "xdm:toolUsageName": "autopay enrollment",
         "xdm:toolUsageSaved": 1,
         "xdm:toolUsageStart": 1,
         "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
+        "xdm:toolUsageStepName": "select account",
         "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
+        "xdm:toolUsageType": "self service"
       }
-    }
+    },
+    "xdm:autoPayEnrollmentStatus": true
   }
 }

@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding opportunity event opportunity updated events.",
+    "description": "Use to capture details when the fields on a sales opportunity are updated.",
     "definitions": {
         "opportunityupdated": {
             "properties": {
@@ -25,10 +25,11 @@
                         "xdm:opportunityID": {
                             "title": "Opportunity ID",
                             "type": "string",
-                            "description": "Unique identifier for opportunity"
+                            "description": "Unique ID of the Opportunity"
                         },
                         "xdm:dataValueChanges": {
                             "title": "Data Value Changes",
+                            "description": "Full record of data values updated",
                             "type": "array",
                             "items": {
                                 "type": "object",
@@ -36,17 +37,17 @@
                                     "xdm:attributeName": {
                                         "title": "Attribute Name",
                                         "type": "string",
-                                        "description": "Name of the attribute"
+                                        "description": "Attribute that was updated"
                                     },
                                     "xdm:newValue": {
                                         "title": "New Value",
                                         "type": "string",
-                                        "description": "New value of the attribute"
+                                        "description": "New value of updated attribute"
                                     },
                                     "xdm:oldValue": {
                                         "title": "Old Value",
                                         "type": "string",
-                                        "description": "Old value of the attribute"
+                                        "description": "Previous value of updated attribute"
                                     }
                                 }
                             }

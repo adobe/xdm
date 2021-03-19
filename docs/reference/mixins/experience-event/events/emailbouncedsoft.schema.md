@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/emailbouncedsoft
 ```
 
-Use for information regarding direct marketing email bounced soft events.
+Use to capture details when a marketing email to person soft-bounces.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -40,9 +40,8 @@ Use for information regarding direct marketing email bounced soft events.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:email`| string | Optional |
-| `xdm:emailBouncedCategory`| string | Optional |
+| `xdm:emailBouncedCode`| string | Optional |
 | `xdm:emailBouncedDetails`| string | Optional |
-| `xdm:emailBouncedSubcategory`| string | Optional |
 | `xdm:mailingID`| string | Optional |
 | `xdm:mailingName`| string | Optional |
 | `xdm:testVariantID`| string | Optional |
@@ -53,7 +52,7 @@ Use for information regarding direct marketing email bounced soft events.
 #### xdm:email
 ##### email
 
-visitor email ID.
+Recipient's email address.
 
 `xdm:email`
 * is optional
@@ -71,16 +70,16 @@ visitor email ID.
 
 
 
-#### xdm:emailBouncedCategory
-##### Email Bounced Category
+#### xdm:emailBouncedCode
+##### Email Bounced Code
 
-Category in which this email failure belongs.
+Code denoting the type of bounce received from the Mail Transfer Agent.
 
-`xdm:emailBouncedCategory`
+`xdm:emailBouncedCode`
 * is optional
 * type: `string`
 
-##### xdm:emailBouncedCategory Type
+##### xdm:emailBouncedCode Type
 
 
 `string`
@@ -95,7 +94,7 @@ Category in which this email failure belongs.
 #### xdm:emailBouncedDetails
 ##### Email Bounced Details
 
-Email failure reason description message.
+Details of email bounce from the Mail Transfer Agent.
 
 `xdm:emailBouncedDetails`
 * is optional
@@ -113,31 +112,10 @@ Email failure reason description message.
 
 
 
-#### xdm:emailBouncedSubcategory
-##### Email Bounced Subcategory
-
-Subcategory this failure reason belongs to.
-
-`xdm:emailBouncedSubcategory`
-* is optional
-* type: `string`
-
-##### xdm:emailBouncedSubcategory Type
-
-
-`string`
-
-
-
-
-
-
-
-
 #### xdm:mailingID
 ##### Mailing ID
 
-Unique identifier of the mailing.
+Unique ID of the email asset.
 
 `xdm:mailingID`
 * is optional
@@ -158,7 +136,7 @@ Unique identifier of the mailing.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name for the mailing.
+Friendly name of the email asset.
 
 `xdm:mailingName`
 * is optional
@@ -179,7 +157,7 @@ Friendly name for the mailing.
 #### xdm:testVariantID
 ##### Test Variant ID
 
-Unique identifier for the test variant.
+Unique ID of the test variant of the email asset.
 
 `xdm:testVariantID`
 * is optional
@@ -200,7 +178,7 @@ Unique identifier for the test variant.
 #### xdm:testVariantName
 ##### Test Variant Name
 
-Friendly name for the test variant.
+Friendly name of the test variant of the email asset.
 
 `xdm:testVariantName`
 * is optional

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/add-to-list
 ```
 
-Use for information regarding list operation add to list events.
+Use to track when a person is added to a specific list.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -46,7 +46,7 @@ Use for information regarding list operation add to list events.
 #### xdm:listID
 ##### List ID
 
-List unique identifier.
+Unique ID of the Marketing List.
 
 `xdm:listID`
 * is optional

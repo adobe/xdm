@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/convert-lead
 ```
 
-Use for information regarding lead operation convert lead events.
+Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -64,17 +64,17 @@ Unknown type `object`.
     "xdm:assignTo": {
       "title": "Assign To",
       "type": "string",
-      "description": "."
+      "description": "Sales user converted lead is assigned to."
     },
     "xdm:isSentNotificationEmail": {
       "title": "Is Sent Notification Email",
       "type": "boolean",
-      "description": "Sent notification email."
+      "description": "Indicates whether assigned sales user received email notification of the converted lead."
     },
     "xdm:convertedStatus": {
       "title": "Converted Status",
       "type": "string",
-      "description": "Converted status."
+      "description": "Converted status of lead."
     }
   },
   "simpletype": "`object`"

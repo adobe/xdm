@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Account Organization",
+  "title": "Account Details",
   "type": "object",
   "description": "Commonly used organizational attributes for a B2B account such as number of employees, market segment, industry, rating, tickersymbol etc.",
   "definitions": {

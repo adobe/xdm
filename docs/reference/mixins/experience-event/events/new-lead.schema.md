@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/new-lead
 ```
 
-Use for information regarding lead operation new lead events.
+Use to record the creation and details of a new marketing lead.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -64,7 +64,7 @@ Unknown type `object`.
     "xdm:sourceType": {
       "title": "Source Type",
       "type": "string",
-      "description": "Type of the source."
+      "description": "Type of lead source."
     },
     "xdm:formName": {
       "title": "Form Name",
@@ -74,23 +74,23 @@ Unknown type `object`.
     "xdm:listName": {
       "title": "List Name",
       "type": "string",
-      "description": "Name of the list."
+      "description": "Name of marketing list."
     },
     "xdm:sfdcType": {
       "title": "SFDC Type",
       "type": "string",
-      "description": "Type defined in salesforce source."
+      "description": "Lead type in SFDC."
     },
     "xdm:leadSource": {
       "title": "Lead Source",
       "type": "string",
-      "description": "Source from where this perticlar lead come from."
+      "description": "Source of lead."
     },
     "xdm:createdDate": {
       "title": "Created Date",
       "type": "string",
       "format": "date-time",
-      "description": "Date when this lead is created."
+      "description": "Lead creation date."
     }
   },
   "simpletype": "`object`"

@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/strategy-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Strategy Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Decision strategy details capture data values for a particular step that will be or was taken during the decision process.",
+  "definitions": {
+    "strategy-details-datatype": {
+      "properties": {
+        "xdm:step": {
+          "type": "string",
+          "title": "Execution Step",
+          "description": "Indicator for the step type in the overall decision strategy",
+          "meta:enum": {
+            "profile": "Profile Merge Policy",
+            "eligibility": "Eligibility Policy",
+            "suppression": "Suppression Policy",
+            "ranking": "Ranking Function",
+            "capping": "Capping Counter"
+          }
+        },
+        "xdm:strategyID": {
+          "type": "string",
+          "title": "Step's Strategy Identifier",
+          "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result."
+        },
+        "xdm:algorithmID": {
+          "title": "Algorithm Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Unique identifier for the algorithm used to make the decision, if applicable."
+        },
+        "xdm:trafficType": {
+          "title": "Traffic Type",
+          "type": "string",
+          "description": "The class of algorithm/policy that was used to compute this decision. 'Contextual Traffic' indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
+          "meta:enum": {
+            "random": "Random Traffic",
+            "contextual": "Contextual Traffic",
+            "noncontextual": "Non-Contextual Traffic"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/strategy-details-datatype"
+    }
+  ],
+  "meta:status": "stable"
+}

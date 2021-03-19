@@ -1,5 +1,5 @@
 
-# Decision Option Detail Schema
+# Decision Option Details Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/option-detail
@@ -12,12 +12,12 @@ Detail about the entity that represents one of the possible selections or choice
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/option-detail.schema.json](adobe/experience/decisioning/option-detail.schema.json) |
 ## Schema Hierarchy
 
-* Decision Option Detail `https://ns.adobe.com/experience/decisioning/option-detail`
+* Decision Option Details `https://ns.adobe.com/experience/decisioning/option-detail`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Measure](../../../datatypes/data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Decision Option Detail Example
+## Decision Option Details Example
 ```json
 {
   "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
@@ -27,26 +27,28 @@ Detail about the entity that represents one of the possible selections or choice
     "level": "intermediate",
     "format": "Syllable"
   },
-  "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+  "xdm:score": 83,
+  "xdm:propositionsTotal": {
     "xdm:value": 4948
   },
-  "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+  "xdm:propositionsProfile": {
     "xdm:value": 2
   }
 }
 ```
 
-# Decision Option Detail Properties
+# Decision Option Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/propositionsProfile](#httpsnsadobecomexperiencedecisioningpropositionsprofile) | Measure | Optional | Decision Option Detail (this schema) |
-| [https://ns.adobe.com/experience/decisioning/propositionsTotal](#httpsnsadobecomexperiencedecisioningpropositionstotal) | Measure | Optional | Decision Option Detail (this schema) |
-| [repo:etag](#repoetag) | `string` | Optional | Decision Option Detail (this schema) |
-| [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | Decision Option Detail (this schema) |
-| [xdm:id](#xdmid) | `string` | **Required** | Decision Option Detail (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Decision Option Detail (this schema) |
-| [xdm:tags](#xdmtags) | `string[]` | Optional | Decision Option Detail (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositionsProfile](#httpsnsadobecomexperiencedecisioningpropositionsprofile) | Measure | Optional | Decision Option Details (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositionsTotal](#httpsnsadobecomexperiencedecisioningpropositionstotal) | Measure | Optional | Decision Option Details (this schema) |
+| [repo:etag](#repoetag) | `string` | Optional | Decision Option Details (this schema) |
+| [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | Decision Option Details (this schema) |
+| [xdm:id](#xdmid) | `string` | **Required** | Decision Option Details (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Decision Option Details (this schema) |
+| [xdm:score](#xdmscore) | `number` | Optional | Decision Option Details (this schema) |
+| [xdm:tags](#xdmtags) | `string[]` | Optional | Decision Option Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/propositionsProfile
@@ -164,6 +166,27 @@ Option name. The name is displayed in various user interfaces.
 
 
 `string`
+
+
+
+
+
+
+## xdm:score
+### Decision Option Score
+
+Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.
+
+`xdm:score`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:score Type
+
+
+`number`
+* minimum value: `0`
 
 
 

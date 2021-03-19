@@ -7,14 +7,14 @@
     ],
     "$id": "https://ns.adobe.com/xdm/mixins/events/visit-webpage",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Visit WebPage",
+    "title": "Visit Web Page",
     "type": "object",
     "meta:conditionalField": "xdm:eventType",
     "meta:conditionalValue": "web.webpagedetails.pageViews",
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
+    "description": "Use for tracking the details of a person's visit to a web page.",
     "definitions": {
         "visitwebpage": {
             "properties": {
@@ -27,9 +27,9 @@
                             "type": "object",
                             "properties": {
                                 "xdm:webPageID": {
-                                    "title": "Webpage ID",
+                                    "title": "Web Page ID",
                                     "type": "string",
-                                    "description": "."
+                                    "description": "Unique ID of the web page."
                                 },
                                 "xdm:name": {
                                     "title": "Name",
@@ -42,15 +42,15 @@
                                     "format": "uri",
                                     "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                                 },
-                                "xdm:queryParamaters": {
-                                    "title": "Query Paramaters",
+                                "xdm:queryParameters": {
+                                    "title": "Query Parameters",
                                     "type": "string",
-                                    "description": "Query Paramters used for the web page."
+                                    "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url."
                                 },
                                 "xdm:isPersonalizedURL": {
                                     "title": "Is Personalized URL",
                                     "type": "boolean",
-                                    "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+                                    "description": "Boolean indicating if person accessed the web page via a personalized URL."
                                 }
                             }
                         },
@@ -61,7 +61,7 @@
                                 "xdm:URL": {
                                     "title": "URL",
                                     "type": "string",
-                                    "description": "The referrer URL."
+                                    "description": "URL of the referring web page."
                                 }
                             }
                         }

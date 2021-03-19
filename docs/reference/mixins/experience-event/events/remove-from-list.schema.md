@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/remove-from-list
 ```
 
-Remove from list.
+Use to track when a person is removed from a specific list.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -46,7 +46,7 @@ Remove from list.
 #### xdm:listID
 ##### List ID
 
-List unique identifier.
+Unique ID of the Marketing List.
 
 `xdm:listID`
 * is optional

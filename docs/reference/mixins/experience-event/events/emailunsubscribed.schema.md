@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/emailunsubscribed
 ```
 
-Use for information regarding direct marketing unsubscribe email events.
+Use to capture details when a person unsubscribes from an email.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -51,7 +51,7 @@ Use for information regarding direct marketing unsubscribe email events.
 #### xdm:mailingID
 ##### Mailing ID
 
-Unique identifier of the mailing.
+Unique ID of the email asset.
 
 `xdm:mailingID`
 * is optional
@@ -72,7 +72,7 @@ Unique identifier of the mailing.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name for the mailing.
+Friendly name of the email asset.
 
 `xdm:mailingName`
 * is optional
@@ -93,7 +93,7 @@ Friendly name for the mailing.
 #### xdm:testVariantID
 ##### Test Variant ID
 
-Unique identifier for the test variant.
+Unique ID of the test variant of the email asset.
 
 `xdm:testVariantID`
 * is optional
@@ -114,7 +114,7 @@ Unique identifier for the test variant.
 #### xdm:testVariantName
 ##### Test Variant Name
 
-Friendly name for the test variant.
+Friendly name of the test variant of the email asset.
 
 `xdm:testVariantName`
 * is optional
@@ -196,7 +196,7 @@ Unknown type `object`.
 #### xdm:ipV4
 ##### IPv4
 
-The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. 
+The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.
 
 `xdm:ipV4`
 * is optional
@@ -261,12 +261,12 @@ Unknown type `object`.
     "xdm:webFormID": {
       "title": "Web Form ID",
       "type": "string",
-      "description": "Unique Identifier for web form."
+      "description": "Unique ID of the form."
     },
     "xdm:webFormName": {
       "title": "Web Form Name",
       "type": "string",
-      "description": "Friendly name for web form."
+      "description": "Friendly name of the form."
     }
   },
   "simpletype": "`object`"
@@ -300,17 +300,17 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique Identifier for web page."
+      "description": "Unique ID of the web page."
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
       "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
     },
-    "xdm:queryParamaters": {
-      "title": "Query Paramaters",
+    "xdm:queryParameters": {
+      "title": "Query Parameters",
       "type": "string",
-      "description": "Query Paramters used for the web page."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
     }
   },
   "simpletype": "`object`"
@@ -344,7 +344,7 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "The referrer URL."
+      "description": "URL of referrer to web page."
     }
   },
   "simpletype": "`object`"

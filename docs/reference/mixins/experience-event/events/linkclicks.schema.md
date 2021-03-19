@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/linkclicks
 ```
 
-Use for information regarding linkclicks web interaction events.
+Use to capture details when a person clicks a link on a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -85,7 +85,7 @@ Unknown type `object`.
 #### xdm:ipV4
 ##### IPv4
 
-The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. 
+The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.
 
 `xdm:ipV4`
 * is optional
@@ -150,12 +150,12 @@ Unknown type `object`.
     "xdm:linkID": {
       "title": "Link ID",
       "type": "string",
-      "description": "unique identifier to Link."
+      "description": "Unique ID of the link clicked."
     },
-    "xdm:linkName": {
-      "title": "Link Name",
+    "xdm:linkURL": {
+      "title": "Link URL",
       "type": "string",
-      "description": "Friendly name to link"
+      "description": "URL of the link clicked."
     }
   },
   "simpletype": "`object`"
@@ -189,17 +189,17 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique Identifier for web page."
+      "description": "Unique ID of the web page."
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
       "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
     },
-    "xdm:queryParamaters": {
-      "title": "Query Paramaters",
+    "xdm:queryParameters": {
+      "title": "Query Parameters",
       "type": "string",
-      "description": "Query Paramters used for the web page."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
     }
   },
   "simpletype": "`object`"
@@ -233,7 +233,7 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "The referrer URL."
+      "description": "URL of the referrer to the website."
     }
   },
   "simpletype": "`object`"

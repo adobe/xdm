@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/formfilledout
 ```
 
-Use for information regarding formFilledOut web details.
+Use to capture details when a person fills out a form on a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -85,7 +85,7 @@ Unknown type `object`.
 #### xdm:ipV4
 ##### IPv4
 
-The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. 
+The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.
 
 `xdm:ipV4`
 * is optional
@@ -150,12 +150,12 @@ Unknown type `object`.
     "xdm:webFormID": {
       "title": "Web Form ID",
       "type": "string",
-      "description": "Unique Identifier for web form."
+      "description": "Unique ID of the form."
     },
     "xdm:webFormName": {
       "title": "Web Form Name",
       "type": "string",
-      "description": "Friendly name for web form."
+      "description": "Friendly name of the form."
     }
   },
   "simpletype": "`object`"
@@ -189,17 +189,17 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique Identifier for web page."
+      "description": "Unique ID of the web page."
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
       "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
     },
-    "xdm:queryParamaters": {
-      "title": "Query Paramaters",
+    "xdm:queryParameters": {
+      "title": "Query Parameters",
       "type": "string",
-      "description": "Query Paramters used for the web page."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
     }
   },
   "simpletype": "`object`"

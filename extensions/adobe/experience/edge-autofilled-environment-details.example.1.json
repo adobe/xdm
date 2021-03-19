@@ -1,0 +1,20 @@
+{
+  "xdm:placeContext": {
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tokyo",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    }
+  },
+  "xdm:environment": {
+    "xdm:ipV4": "0.0.0.0",
+    "xdm:ipV6": "2001:db8:0:0:0:ff00:42:8329",
+    "xdm:browserDetails": {
+      "xdm:userAgent": "Mozilla/5.0 (iPhone; CPU OS 12_4 like Mac OS X; en_US)"
+    }
+  }
+}

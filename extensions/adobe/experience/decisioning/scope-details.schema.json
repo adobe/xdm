@@ -9,9 +9,8 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Decision Scope Details",
   "type": "object",
-  "meta:abstract": true,
   "meta:extensible": true,
-  "description": "Decision scope details capture properties that existed to narrow the scope of the decision to a location (the \"Where\"), a the business activity (the \"How\") and the provider of the decision (\"By Whom\"). The location is expressed with the concept of a Placement.",
+  "description": "Decision scope details capture properties that existed to narrow the scope of the decision to a location (the \"Where\"), a the business activity (the \"Why\") and the provider of the decision (\"By Whom\"). The location (the \"Where\") is expressed with the concept of a Placement.",
   "definitions": {
     "proposition-scope-details-datatype": {
       "properties": {
@@ -33,7 +32,39 @@
         "xdm:activity": {
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail",
           "title": "Activity Detail for the Scope",
-          "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity or mechanism (how) that makes the decision, other ."
+          "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity (why and how) that makes the decision, other scopes will use a dynamic strategy determine which activity is used. Those scopes will list executionDetails for steps that were performed during decision-making."
+        },
+        "xdm:interactionMeasurements": {
+          "meta:status": "experimental",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/interaction-measurement"
+          },
+          "title": "Interaction Measurements used in this Scope",
+          "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity)."
+        },
+        "xdm:strategies": {
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details"
+          },
+          "title": "Strategy Step Details",
+          "description": "The steps that were executed when the decision was made."
+        },
+        "xdm:experience": {
+          "title": "Selected Experience Option",
+          "description": "The experience that was selected when the decision was made.",
+          "$ref": "#/definitions/experience-option-details"
+        }
+      }
+    },
+    "experience-option-details": {
+      "properties": {
+        "xdm:id": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Experience Identifier",
+          "description": "A unique identifier for the decision option."
         }
       }
     }

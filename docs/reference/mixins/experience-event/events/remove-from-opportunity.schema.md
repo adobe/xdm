@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/remove-from-opportunity
 ```
 
-Use for information regarding opportunity event remove from opportunity events.
+Use to capture details when a person is removed as a point of contact on a sales opportunity.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -48,7 +48,7 @@ Use for information regarding opportunity event remove from opportunity events.
 #### xdm:isPrimary
 ##### Is Primary
 
-Is primary.
+Boolean indicating if the person was the primary contact on the Opportunity.
 
 `xdm:isPrimary`
 * is optional
@@ -68,7 +68,7 @@ Is primary.
 #### xdm:opportunityID
 ##### Opportunity ID
 
-Opportunity ID
+Unique ID of the Opportunity.
 
 `xdm:opportunityID`
 * is optional
@@ -89,7 +89,7 @@ Opportunity ID
 #### xdm:role
 ##### Role
 
-Role.
+Role of the person on the Opportunity.
 
 `xdm:role`
 * is optional

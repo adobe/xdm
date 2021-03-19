@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/experience/decisioning/decisionevent",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "XDM Decision Event",
+    "title": "Decision Event",
     "type": "object",
     "meta:abstract": true,
     "meta:extensible": true,
@@ -20,7 +20,35 @@
     "description": "A decision event is used to capture observations about the outcome and context of a decision activity. The decision event captures information about how the decision made, when it was occurring, what options were proposed (chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. The decision event also captures the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every experience event that was influenced by the propositions. A user profile's proposition-response history is maintained with these proposition IDs.",
     "definitions": {
         "decisionevent": {
-            "properties": {}
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/propositions": {
+                    "title": "Proposition Details",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/proposition-details"
+                    },
+                    "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+                }
+            }
+        },
+        "proposition-details": {
+            "properties": {
+                "xdm:items": {
+                    "title": "Decision Options' Snapshot",
+                    "description": "Snapshot of the options that were selected by this proposition. The objects contain at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "xdm:scopeDetails": {
+                    "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
+                    "title": "Decision Scope Snapshot",
+                    "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
+                }
+            }
         }
     },
     "allOf": [
@@ -58,61 +86,84 @@
             "xdm:identityMap": {
                 "ECID": [
                     {
-                        "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+                        "xdm:id": "33441528584054496761339722935948080609"
                     }
                 ]
             },
-            "xdm:device": {
-                "xdm:typeID": "IMac",
-                "xdm:typeIDService": "https://ns.adobe.com/xdm/external/adobecampaign",
-                "xdm:type": "desktop",
-                "xdm:manufacturer": "Apple"
-            },
-            "xdm:placeContext": {
-                "xdm:localTime": "2017-09-26T15:52:25+13:00",
-                "xdm:geo": {
-                    "@id": "https://data.adobe.io/entities/geo/tokyo",
-                    "xdm:countryCode": "JP",
-                    "xdm:stateProvince": "JP-13",
-                    "xdm:city": "Tōkyō",
-                    "xdm:postalCode": "141-0032",
-                    "schema:latitude": 35.6185,
-                    "schema:longitude": 139.73237
-                }
-            },
-            "xdm:web": {
-                "xdm:webPageView": {
-                    "xdm:URL": "https://www.example.com"
-                },
-                "xdm:webReferrer": {
-                    "xdm:URL": "https://www.examplereferrer.com/",
-                    "xdm:domain": "examplereferrer.com"
-                }
-            },
             "https://ns.adobe.com/experience/decisioning/propositionID": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-            "https://ns.adobe.com/experience/decisioning/propositionDetails": [
+            "https://ns.adobe.com/experience/decisioning/propositions": [
                 {
-                    "xdm:activity": {
-                        "xdm:id": "xcore:offer-activity:ebc48132c26ccfc"
-                    },
-                    "xdm:selections": [
+                    "xdm:items": [
                         {
-                            "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
-                            "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+                            "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
+                            "repo:etag": "5",
+                            "xdm:score": 83,
+                            "xdm:propositionsTotal": {
                                 "xdm:value": 948
-                            },
-                            "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
-                                "xdm:value": 2
+                            }
+                        },
+                        {
+                            "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+                            "repo:etag": "3",
+                            "xdm:score": 12,
+                            "xdm:propositionsTotal": {
+                                "xdm:value": 221
                             }
                         }
-                    ]
+                    ],
+                    "xdm:scopeDetails": {
+                        "xdm:id": "home-page-banner",
+                        "xdm:placement": {
+                            "xdm:id": "xcore:offer-placement:c652463157c2aa1",
+                            "repo:etag": "4",
+                            "xdm:name": "Home Page Banner"
+                        },
+                        "xdm:activity": {
+                            "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
+                            "repo:etag": "8",
+                            "xdm:name": "Spring 21 Campaign Web"
+                        },
+                        "xdm:strategies": [
+                            {
+                                "xdm:step": "eligibility",
+                                "xdm:strategyID": "xcore:eligibility-rule:e5244c22eff29e8",
+                                "xdm:algorithmID": "pql-rule",
+                                "xdm:trafficType": "contextual"
+                            },
+                            {
+                                "xdm:step": "ranking",
+                                "xdm:strategyID": "ranking-strategy:7251468357c2236",
+                                "xdm:algorithmID": "ts",
+                                "xdm:trafficType": "noncontextual"
+                            }
+                        ]
+                    }
                 },
                 {
-                    "xdm:activity": {
-                        "xdm:id": "xcore:offer-activity:f203512e02542b5"
-                    },
-                    "xdm:fallback": {
-                        "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+                    "xdm:items": [
+                        {
+                            "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a",
+                            "repo:etag": "5"
+                        }
+                    ],
+                    "xdm:scopeDetails": {
+                        "xdm:id": "home-page-side-bar",
+                        "xdm:placement": {
+                            "xdm:id": "xcore:offer-placement:6111463157c2221",
+                            "repo:etag": "6"
+                        },
+                        "xdm:activity": {
+                            "xdm:id": "xcore:offer-activity:fd55d033fea4b82",
+                            "repo:etag": "14"
+                        },
+                        "xdm:strategies": [
+                            {
+                                "xdm:step": "eligibility",
+                                "xdm:strategyID": "xcore:eligibility-rule:f65212b6b3c0b01",
+                                "xdm:algorithmID": "pql-rule",
+                                "xdm:trafficType": "contextual"
+                            }
+                        ]
                     }
                 }
             ],

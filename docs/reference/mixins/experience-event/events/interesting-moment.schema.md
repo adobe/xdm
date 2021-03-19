@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/interesting-moment
 ```
 
-Use for information regarding lead operation interesting moments events.
+Use for tracking high value activities by potential customers.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -64,23 +64,23 @@ Unknown type `object`.
     "xdm:type": {
       "title": "Type",
       "type": "string",
-      "description": "Interesting moment type."
+      "description": "Type of Interesting Moment."
     },
     "xdm:description": {
       "title": "Description",
       "type": "string",
-      "description": "Interesting moment description."
+      "description": "Description of Interesting Moment."
     },
     "xdm:date": {
       "title": "Date",
       "type": "string",
       "format": "date-time",
-      "description": "Interesting moment date."
+      "description": "Date of the Interesting Moment."
     },
     "xdm:source": {
       "title": "Source",
       "type": "string",
-      "description": "Interesting moment source."
+      "description": "Source of the action that triggered the interesting moment."
     }
   },
   "simpletype": "`object`"

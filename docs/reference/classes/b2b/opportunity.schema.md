@@ -67,7 +67,7 @@ A unique identifier for the record.
 ## xdm:accountID
 ### Account ID
 
-Account unique identifier reference that this opportunity is linked to.
+Unique ID of the account this opportunity is associated with.
 
 `xdm:accountID`
 * is optional
@@ -106,7 +106,7 @@ Audit attributes for external sources.
 ## xdm:opportunityDescription
 ### Opportunity Description
 
-Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.
+Description of the opportunity.
 
 `xdm:opportunityDescription`
 * is optional
@@ -126,7 +126,7 @@ Additional information to describe the opportunity, such as possible products to
 ## xdm:opportunityID
 ### Opportunity ID
 
-Opportunity unique identifer
+Unique ID of the opportunity.
 
 `xdm:opportunityID`
 * is **required**
@@ -146,7 +146,7 @@ Opportunity unique identifer
 ## xdm:opportunityName
 ### Opportunity Name
 
-Subject or descriptive name, such as the expected order or company name, for the opportunity.
+Name of the opportunity.
 
 `xdm:opportunityName`
 * is optional
@@ -166,7 +166,7 @@ Subject or descriptive name, such as the expected order or company name, for the
 ## xdm:opportunityStage
 ### Opportunity Stage
 
-Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.
+Sales stage of the opportunity.
 
 `xdm:opportunityStage`
 * is optional
@@ -186,7 +186,7 @@ Sales stage of this opportunity to aid the sales team in their efforts to win th
 ## xdm:opportunityType
 ### Opportunity Type
 
-Opportunity type such as Existing Business or New Business
+Type of the opportunity.
 
 `xdm:opportunityType`
 * is optional

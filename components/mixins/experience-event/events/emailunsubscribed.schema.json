@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use for information regarding direct marketing unsubscribe email events.",
+  "description": "Use to capture details when a person unsubscribes from an email.",
   "definitions": {
     "emailunsubscribed": {
       "properties": {
@@ -25,22 +25,22 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique identifier of the mailing."
+              "description": "Unique ID of the email asset."
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name for the mailing."
+              "description": "Friendly name of the email asset."
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique identifier for the test variant."
+              "description": "Unique ID of the test variant of the email asset."
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name for the test variant."
+              "description": "Friendly name of the test variant of the email asset."
             }
           }
         },
@@ -55,12 +55,12 @@
                 "xdm:webFormID": {
                   "title": "Web Form ID",
                   "type": "string",
-                  "description": "Unique Identifier for web form."
+                  "description": "Unique ID of the form."
                 },
                 "xdm:webFormName": {
                   "title": "Web Form Name",
                   "type": "string",
-                  "description": "Friendly name for web form."
+                  "description": "Friendly name of the form."
                 }
               }
             },
@@ -71,17 +71,17 @@
                 "xdm:webPageID": {
                   "title": "Web Page ID",
                   "type": "string",
-                  "description": "Unique Identifier for web page."
+                  "description": "Unique ID of the web page."
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
                   "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
                 },
-                "xdm:queryParamaters": {
-                  "title": "Query Paramaters",
+                "xdm:queryParameters": {
+                  "title": "Query Parameters",
                   "type": "string",
-                  "description": "Query Paramters used for the web page."
+                  "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
                 }
               }
             },
@@ -92,7 +92,7 @@
                 "xdm:URL": {
                   "title": "URL",
                   "type": "string",
-                  "description": "The referrer URL."
+                  "description": "URL of referrer to web page."
                 }
               }
             }
@@ -107,7 +107,7 @@
               "title": "IPv4",
               "type": "string",
               "format": "ipv4",
-              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication."
             },
             "xdm:browserDetails": {
               "title": "Browser details",

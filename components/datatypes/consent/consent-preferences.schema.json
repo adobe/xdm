@@ -83,7 +83,7 @@
         }
       }
     },
-    "consent-fields": {
+    "consent-field": {
       "type": "object",
       "properties": {
         "xdm:val": {
@@ -93,7 +93,7 @@
       },
       "required": ["xdm:val"]
     },
-    "personalization-fields": {
+    "personalization-field": {
       "type": "object",
       "properties": {
         "xdm:val": {
@@ -102,7 +102,7 @@
       },
       "required": ["xdm:val"]
     },
-    "marketing-fields": {
+    "marketing-field": {
       "type": "object",
       "properties": {
         "xdm:val": {
@@ -120,22 +120,43 @@
       },
       "required": ["xdm:val"]
     },
+    "marketing-with-subscriptions": {
+      "type": "object",
+      "properties": {
+        "xdm:val": {
+          "$ref": "#/definitions/choice-value"
+        },
+        "xdm:time": {
+          "$ref": "#/definitions/timestamp"
+        },
+        "xdm:reason": {
+          "title": "Opt-out reason",
+          "type": "string",
+          "description": "Reason for opting out",
+          "maxLength": 16
+        },
+        "xdm:subscriptions": {
+          "$ref": "#/definitions/subscriptions"
+        }
+      },
+      "required": ["xdm:val"]
+    },
     "choices": {
       "properties": {
         "xdm:collect": {
           "title": "Data Collection",
           "description": "Data collection is permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-field"
         },
         "xdm:share": {
           "title": "Share Data",
           "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-field"
         },
         "xdm:adID": {
           "title": "Use Advertiser ID",
           "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-field"
         },
         "xdm:personalize": {
           "title": "Personalization Preferences",
@@ -145,7 +166,7 @@
             "xdm:content": {
               "title": "Personalize Content",
               "description": "Allow personalization of the content on my site or in my apps",
-              "$ref": "#/definitions/personalization-fields"
+              "$ref": "#/definitions/personalization-field"
             }
           }
         },
@@ -157,17 +178,17 @@
             "xdm:email": {
               "title": "Receive email",
               "description": "User agrees to receive email",
-              "$ref": "#/definitions/marketing-fields"
+              "$ref": "#/definitions/marketing-field"
             },
             "xdm:push": {
               "title": "Receive push notifications",
               "description": "User permits receiving push notifications",
-              "$ref": "#/definitions/marketing-fields"
+              "$ref": "#/definitions/marketing-field"
             },
             "xdm:sms": {
               "title": "Receive SMS",
               "description": "User agrees to receive text messages",
-              "$ref": "#/definitions/marketing-fields"
+              "$ref": "#/definitions/marketing-field"
             }
           }
         }
@@ -221,7 +242,7 @@
                 "xdm:any": {
                   "title": "General Direct Marketing Preference",
                   "description": "Does user permit any type of direct marketing",
-                  "$ref": "#/definitions/marketing-fields"
+                  "$ref": "#/definitions/marketing-field"
                 }
               }
             }

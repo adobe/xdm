@@ -12,29 +12,29 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Identity Graph Flattened Export Schema",
+  "description": "Identity Graph Flattened Export Schema.",
   "definitions": {
     "identity-graph-flattened-export": {
       "properties": {
         "xdm:identityId": {
           "title": "Person ID",
           "type": "string",
-          "description": "Person ID Like Email or ECID or phone"
+          "description": "Person ID Like Email or ECID or phone."
         },
         "xdm:namespaceId": {
           "title": "Namespace Id",
           "type": "string",
-          "description": "Id for the Identity Type"
+          "description": "Id for the Identity Type."
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
-          "description": "Identity Type in human readable form"
+          "description": "Identity Type in human readable form."
         },
         "xdm:algo": {
           "title": "Algorithm",
           "type": "string",
-        "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc"
+        "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc."
         },
         "xdm:membersByTimeRange": {
           "type":"array",
@@ -46,19 +46,19 @@
                 "type": "integer",
                 "minimum":-9223372036854775808,
                 "maximum":9223372036854775807,
-                "description": "Start Timestamp"
+                "description": "Start Timestamp."
               },
               "xdm:endTs": {
                 "title": "End Timestamp",
                 "type": "integer",
                 "minimum":-9223372036854775808,
                 "maximum":9223372036854775807,
-                "description": "End Timestamp"
+                "description": "End Timestamp."
               },
               "xdm:graphId": {
                 "title": "Person Graph ID",
                 "type": "string",
-                "description": "Person level Graph Identifier"
+                "description": "Person level Graph Identifier."
               },
               "xdm:identityMap": {
                 "type": "object",
@@ -74,7 +74,7 @@
           }
         }
       },
-      "required": ["xdm:identityId", "xdm:namespaceCode"]
+      "required": ["xdm:identityId", "xdm:namespaceCode", "xdm:algo"]
     }
   },
 "allOf": [

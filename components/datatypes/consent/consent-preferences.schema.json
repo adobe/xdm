@@ -42,6 +42,12 @@
       "type": "string",
       "maxLength": 15
     },
+    "reason": {
+      "title": "Opt-out reason",
+      "type": "string",
+      "description": "Reason for opting out",
+      "maxLength": 16
+    },
     "subscriptions": {
       "title": "Subscriptions",
       "description": "A set of notifications, newsletters, etc. to which the user subscribes",
@@ -112,10 +118,7 @@
           "$ref": "#/definitions/timestamp"
         },
         "xdm:reason": {
-          "title": "Opt-out reason",
-          "type": "string",
-          "description": "Reason for opting out",
-          "maxLength": 16
+          "$ref": "#/definitions/reason"
         }
       },
       "required": ["xdm:val"]
@@ -130,10 +133,7 @@
           "$ref": "#/definitions/timestamp"
         },
         "xdm:reason": {
-          "title": "Opt-out reason",
-          "type": "string",
-          "description": "Reason for opting out",
-          "maxLength": 16
+          "$ref": "#/definitions/reason"
         },
         "xdm:subscriptions": {
           "$ref": "#/definitions/subscriptions"

@@ -757,26 +757,6 @@
         },
         {
             "@id": "https://data.adobe.io/experienceid-123459",
-            "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-            "xdm:identityMap": {
-                "ECID": [
-                    {
-                        "xdm:id": "92312743856228"
-                    }
-                ]
-            },
-            "xdm:eventType": "pushTracking.customAction",
-            "xdm:pushNotificationTracking": {
-                "xdm:pushProvider": "apns",
-                "xdm:pushProviderMessageID": "unique msgID from ios",
-                "xdm:customAction": {
-                    "xdm:actionID": "GAME_INVITATION",
-                    "xdm:value": 500
-                }
-            }
-        },
-        {
-            "@id": "https://data.adobe.io/experienceid-123459",
             "xdm:timestamp": "2017-09-26T15:52:25+00:00",
             "xdm:identityMap": {
                 "https://data.adobe.io/entities/namespace/4": [
@@ -874,6 +854,26 @@
                             "xdm:value": 0
                         }
                     }
+                }
+            }
+        },
+        {
+            "@id": "https://data.adobe.io/experienceid-123459",
+            "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+            "xdm:identityMap": {
+                "ECID": [
+                    {
+                        "xdm:id": "92312743856228"
+                    }
+                ]
+            },
+            "xdm:eventType": "pushTracking.customAction",
+            "xdm:pushNotificationTracking": {
+                "xdm:pushProvider": "apns",
+                "xdm:pushProviderMessageID": "unique msgID from ios",
+                "xdm:customAction": {
+                    "xdm:actionID": "GAME_INVITATION",
+                    "xdm:value": 500
                 }
             }
         }

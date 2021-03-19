@@ -76,22 +76,15 @@
                }
             }
          },
-         "required":[
-            "xdm:identityId",
-            "xdm:namespaceCode",
-            "xdm:algo"
-         ]
+         "required":["xdm:identityId", "xdm:namespaceCode", "xdm:algo"]
       }
    },
-   "allOf":[
+   "allOf": [
       {
          "$ref":"https://ns.adobe.com/xdm/data/record"
       },
       {
          "$ref":"#/definitions/identity-graph-flattened-export"
-      },
-      {
-         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
       }
    ],
    "meta:status":"stable"

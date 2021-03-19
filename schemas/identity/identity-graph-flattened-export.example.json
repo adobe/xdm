@@ -1,0 +1,28 @@
+{
+  "xdm:identityId": "22222222222222222222222222222222222222",
+  "xdm:namespaceId": 4,
+  "xdm:namespaceCode": "ECID",
+  "xdm:algo": "SHARED_DEVICE_DETECTION_SESSIONIZATION",
+  "xdm:membersByTimeRange": {
+    "xdm:startTs": 1616092633262,
+    "xdm:endTs": 16160926333874,
+    "xdm:graphId": "G1",
+    "xdm:identityMap": {
+      "https://data.adobe.io/entities/namespace/4": [
+        {
+          "xdm:id": "22222222222222222222222222222222222222"
+        }
+      ],
+      "https://data.adobe.io/entities/namespace/9": [
+        {
+          "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+        }
+      ],
+      "https://data.adobe.io/entities/namespace/6": [
+        {
+          "xdm:id": "408-333-2222"
+        }
+      ]
+    }
+  }
+}

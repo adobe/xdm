@@ -99,9 +99,6 @@
     },
     {
       "$ref": "#/definitions/identity-graph-flattened-export"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     }
   ],
   "meta:status": "stable"

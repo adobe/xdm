@@ -31,7 +31,7 @@
           "type": "string",
           "description": "Identity Type in human readable form."
         },
-        "xdm:algo": {
+        "xdm:algorithm": {
           "title": "Algorithm",
           "type": "string",
           "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc.",
@@ -51,14 +51,14 @@
           "items": {
             "type": "object",
             "properties": {
-              "xdm:startTs": {
+              "xdm:startTimestamp": {
                 "title": "Start Timestamp",
                 "type": "integer",
                 "minimum": -9223372036854776000,
                 "maximum": 9223372036854776000,
                 "description": "Start Timestamp."
               },
-              "xdm:endTs": {
+              "xdm:endTimestamp": {
                 "title": "End Timestamp",
                 "type": "integer",
                 "minimum": -9223372036854776000,
@@ -90,7 +90,7 @@
           "description": "Last updated time when this identity was updated."
         }
       },
-      "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algo"]
+      "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algorithm"]
     }
   },
   "allOf": [

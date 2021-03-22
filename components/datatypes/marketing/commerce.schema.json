@@ -89,8 +89,8 @@
           "type": "string",
           "description": "If applicable, tracks a persistent cart identifier string that would expire upon a successful order event."
         },
-        "xdm:category": {
-          "title": "Category",
+        "xdm:productCategory": {
+          "title": "Product Category",
           "type": "string",
           "description": "Tracks the parent/main category of an individual product."
         },
@@ -116,7 +116,7 @@
         },
         "xdm:costOfGoodsSold": {
           "title": "Cost of Goods Sold",
-          "type": "string",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Wholesale price of an item at the time the order is placed.  Typically only collected with server-side code."
         },
         "xdm:crossSellProducts": {
@@ -326,7 +326,7 @@
           "type": "string",
           "description": "Store ID of BOPIS or BOSS store."
         },
-        "xdm:subcategory": {
+        "xdm:productSubcategory": {
           "title": "Product Subcategory",
           "type": "string",
           "description": "Tracks the child/sub category for the individual product."

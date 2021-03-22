@@ -143,6 +143,11 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total discount associated with the transaction."
         },
+        "xdm:shippingDiscountAmount": {
+          "title": "Shipping Discount Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Shipping discount associated with the transaction."
+        },
         "xdm:inventoryCount": {
           "title": "Inventory Count",
           "type": "integer",
@@ -246,6 +251,16 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Portion of order revenue total due when the order is placed."
         },
+        "xdm:loyaltyRedemption": {
+          "title": "Loyalty Redemption",
+          "type": "boolean",
+          "description": "Captured when loyalty rewards are applied to an order."
+        },
+        "xdm:loyaltyRedemptionAmount": {
+          "title": "Loyalty Redemption Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "Amount of the loyalty rewards applied to an order."
+        },
         "xdm:reorder": {
           "title": "Reorder",
           "type": "boolean",
@@ -280,6 +295,11 @@
           "title": "Remove from Save for Later",
           "type": "integer",
           "description": "Tracks when a visitor views their save for later list."
+        },
+        "xdm:saveForLaterShare": {
+          "title": "Share Save for Later",
+          "type": "integer",
+          "description": "Tracks when a visitor shares their save for later list."
         },
         "xdm:saveForLaterView": {
           "title": "View Save for Later",

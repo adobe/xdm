@@ -16,12 +16,12 @@
   "definitions": {
     "identity-graph-flattened-export": {
       "properties": {
-        "xdm:identityId": {
+        "xdm:identityID": {
           "title": "Person ID",
           "type": "string",
           "description": "Person ID Like Email or ECID or phone."
         },
-        "xdm:namespaceId": {
+        "xdm:namespaceID": {
           "title": "Namespace Id",
           "type": "integer",
           "description": "Id for the Identity Type."
@@ -65,7 +65,7 @@
                 "maximum": 9223372036854776000,
                 "description": "End Timestamp."
               },
-              "xdm:graphId": {
+              "xdm:graphID": {
                 "title": "Person Graph ID",
                 "type": "string",
                 "description": "Person level Graph Identifier."
@@ -90,7 +90,7 @@
           "description": "Last updated time when this identity was updated."
         }
       },
-      "required": ["xdm:identityId", "xdm:namespaceCode", "xdm:algo"]
+      "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algo"]
     }
   },
   "allOf": [

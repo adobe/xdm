@@ -85,8 +85,8 @@
         },
         "xdm:lastUpdatedTime": {
           "title": "Last Updated Time",
-          "type":"string",
-          "format":"date-time",
+          "type": "string",
+          "format": "date-time",
           "description": "Last updated time when this identity was updated."
         }
       },

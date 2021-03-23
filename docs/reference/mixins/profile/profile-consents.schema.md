@@ -37,7 +37,32 @@ This schema captures privacy, personalization and marketing preferences (consent
         "xdm:val": "y"
       },
       "xdm:email": {
-        "xdm:val": "y"
+        "xdm:val": "y",
+        "xdm:subscriptions": {
+          "daily-mail": {
+            "xdm:val": "y",
+            "xdm:type": "paid",
+            "xdm:subscribers": {
+              "john@xyz.com": {
+                "xdm:time": "2019-01-01T15:52:25+00:00",
+                "xdm:source": "website"
+              }
+            }
+          },
+          "shipped": {
+            "xdm:val": "y",
+            "xdm:subscribers": {
+              "john@xyz.com": {
+                "xdm:time": "2021-01-01T08:32:53+07:00",
+                "xdm:source": "website"
+              },
+              "jane@xyz.com": {
+                "xdm:time": "2020-02-03T07:54:21+07:00",
+                "xdm:source": "call center"
+              }
+            }
+          }
+        }
       }
     },
     "xdm:idSpecific": {
@@ -74,6 +99,16 @@ This schema captures privacy, personalization and marketing preferences (consent
         "john@xyz.com": {
           "xdm:marketing": {
             "xdm:email": {
+              "xdm:val": "y",
+              "xdm:time": "2019-01-01T15:52:25+00:00"
+            }
+          }
+        }
+      },
+      "sms": {
+        "408-555-1234": {
+          "xdm:marketing": {
+            "xdm:sms": {
               "xdm:val": "y"
             }
           }
@@ -91,7 +126,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consents](#xdmconsents) | complex | Optional | [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md#xdmconsents) |
+| [xdm:consents](#xdmconsents) | `object` | Optional | [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md#xdmconsents) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consents
@@ -101,27 +136,17 @@ Specific Consent and Preference Options
 
 `xdm:consents`
 * is optional
-* type: complex
+* type: `object`
 * defined in [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md#xdmconsents)
 
 ### xdm:consents Type
 
 
-**All** of the following *requirements* need to be fulfilled.
+`object` with following properties:
 
 
-#### Requirement 1
-
-
-* []() – `#/definitions/choices`
-
-
-#### Requirement 2
-
-
-
-#### Requirement 3
-
+| Property | Type | Required |
+|----------|------|----------|
 
 
 

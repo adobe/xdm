@@ -1,12 +1,12 @@
 {
-  "xdm:identityId": "22222222222222222222222222222222222222",
-  "xdm:namespaceId": 4,
+  "xdm:identityID": "22222222222222222222222222222222222222",
+  "xdm:namespaceID": 4,
   "xdm:namespaceCode": "ECID",
-  "xdm:algo": "SHARED_DEVICE_DETECTION_SESSIONIZATION",
+  "xdm:algorithm": "SHARED_DEVICE_DETECTION_SESSIONIZATION",
   "xdm:membersByTimeRange": {
-    "xdm:startTs": 1616092633262,
-    "xdm:endTs": 16160926333874,
-    "xdm:graphId": "G1",
+    "xdm:startTimestamp": 1616092633262,
+    "xdm:endTimestamp": 16160926333874,
+    "xdm:graphID": "G1",
     "xdm:identityMap": {
       "ECID": [
         {

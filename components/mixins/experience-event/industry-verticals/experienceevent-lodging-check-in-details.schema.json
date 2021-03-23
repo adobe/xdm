@@ -17,7 +17,7 @@
   "definitions": {
     "lodging-check-in-details": {
       "properties": {
-        "xdm:flightCheckIn": {
+        "xdm:lodgingCheckIn": {
           "type": "object",
           "properties": {
             "xdm:checkInSteps": {

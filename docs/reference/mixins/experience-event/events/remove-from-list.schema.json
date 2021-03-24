@@ -10,7 +10,7 @@
     "title": "Remove From List",
     "type": "object",
     "meta:conditionalField": "xdm:eventType",
-    "meta:conditionalValue": "listOpearation.removeFromList",
+    "meta:conditionalValue": "listOperation.removeFromList",
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],

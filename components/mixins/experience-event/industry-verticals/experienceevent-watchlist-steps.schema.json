@@ -15,7 +15,7 @@
     "industry": ["financial_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Steps involved in adding stocks, bonds, ETFs, etc to a watchlist such as start, stop, name/symbol.",
   "definitions": {
     "watchlist-steps": {
       "properties": {

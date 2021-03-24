@@ -103,6 +103,7 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:ID`| string | Optional |
 | `xdm:ancillaryRevenue`|  | Optional |
 | `xdm:cancellation`| integer | Optional |
+| `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
 | `xdm:endDate`| string | Optional |
@@ -177,6 +178,27 @@ Tracked when a reservation has been cancelled.
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:confirmationNumber
+##### Confirmation Number
+
+Tracks the reservation confirmation number/identifier.
+
+`xdm:confirmationNumber`
+* is optional
+* type: `string`
+
+##### xdm:confirmationNumber Type
+
+
+`string`
 
 
 

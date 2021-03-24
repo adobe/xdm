@@ -30,6 +30,11 @@
         "xdm:upsell": {
           "type": "object",
           "properties": {
+            "xdm:upsellSteps": {
+              "title": "Upsell Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type."
+            },
             "xdm:upsellOffer": {
               "title": "Upsell Offer",
               "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",

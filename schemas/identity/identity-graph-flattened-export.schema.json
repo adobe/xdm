@@ -54,15 +54,15 @@
               "xdm:startTimestamp": {
                 "title": "Start Timestamp",
                 "type": "integer",
-                "minimum": -9223372036854776000,
-                "maximum": 9223372036854776000,
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807,
                 "description": "Start Timestamp."
               },
               "xdm:endTimestamp": {
                 "title": "End Timestamp",
                 "type": "integer",
-                "minimum": -9223372036854776000,
-                "maximum": 9223372036854776000,
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807,
                 "description": "End Timestamp."
               },
               "xdm:graphID": {

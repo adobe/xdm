@@ -15,30 +15,14 @@ Loyalty details such as ID, points, join date, program, and status.
 ```json
 {
   "xdm:loyalty": {
-    "xdm:accountCreationStep": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "loyalty redemption",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "select rewards",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "loyalty"
-      }
-    },
     "xdm:joinDate": "2021-01-26T15:52:25+00:00",
     "xdm:loyaltyID": [
       "L79UH4XR1"
     ],
     "xdm:points": 8974,
-    "xdm:pointsExpiration": "2022-01-26T15:52:25+00:00",
     "xdm:pointsRedeemed": 5148,
-    "xdm:pointsAsOfDate": 3147,
-    "xdm:program": "purchase rewards"
+    "xdm:program": "purchase rewards",
+    "xdm:tier": "silver"
   }
 }
 ```
@@ -66,34 +50,15 @@ Loyalty details such as ID, points, join date, program, and status.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:accountCreationStep`|  | Optional |
 | `xdm:joinDate`| string | Optional |
 | `xdm:loyaltyID`| array | Optional |
 | `xdm:points`| number | Optional |
-| `xdm:pointsAsOfDate`| number | Optional |
-| `xdm:pointsExpiration`| string | Optional |
+| `xdm:pointsExpiration`| array | Optional |
 | `xdm:pointsRedeemed`| number | Optional |
 | `xdm:program`| string | Optional |
-
-
-
-#### xdm:accountCreationStep
-##### Account Creation Steps
-
-Loyalty account creation steps.
-
-`xdm:accountCreationStep`
-* is optional
-* type: reference
-
-##### xdm:accountCreationStep Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
-
+| `xdm:status`| string | Optional |
+| `xdm:tier`| string | Optional |
+| `xdm:upgradeDate`| string | Optional |
 
 
 
@@ -168,16 +133,63 @@ Current balance of the loyalty points/awards in a visitor's loyalty account.
 
 
 
-#### xdm:pointsAsOfDate
-##### Points as of date
+#### xdm:pointsExpiration
+##### Points Expiration
 
-Point balance on the current date
+undefined
 
-`xdm:pointsAsOfDate`
+`xdm:pointsExpiration`
+* is optional
+* type: `object[]`
+
+
+##### xdm:pointsExpiration Type
+
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:pointsExpirationDate`| string | Optional |
+| `xdm:pointsExpiring`| number | Optional |
+
+
+
+#### xdm:pointsExpirationDate
+
+Date on which the given portion of the loyalty points expire.
+
+`xdm:pointsExpirationDate`
+* is optional
+* type: `string`
+
+##### xdm:pointsExpirationDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:pointsExpiring
+##### Points Expiring
+
+Point balance expiring as of the associated expiration date.
+
+`xdm:pointsExpiring`
 * is optional
 * type: `number`
 
-##### xdm:pointsAsOfDate Type
+##### xdm:pointsExpiring Type
 
 
 `number`
@@ -189,20 +201,6 @@ Point balance on the current date
 
 
 
-#### xdm:pointsExpiration
-##### Points Expiration
-
-Date on which the loyalty points expire.
-
-`xdm:pointsExpiration`
-* is optional
-* type: `string`
-
-##### xdm:pointsExpiration Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
@@ -242,6 +240,69 @@ This should define the loyalty progam in which a visitor is enrolled.
 * type: `string`
 
 ##### xdm:program Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:status
+##### Status
+
+Captures the visitor's loyalty progam status, such as active, disabled, or suspended.
+
+`xdm:status`
+* is optional
+* type: `string`
+
+##### xdm:status Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:tier
+##### Tier
+
+Captures the loyalty progam tier in which a visitor is enrolled.
+
+`xdm:tier`
+* is optional
+* type: `string`
+
+##### xdm:tier Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:upgradeDate
+##### Program Name
+
+Date which the customer was upgraded to the next tier level.
+
+`xdm:upgradeDate`
+* is optional
+* type: `string`
+
+##### xdm:upgradeDate Type
 
 
 `string`

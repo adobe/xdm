@@ -136,13 +136,6 @@
             "xdm:matchType": "broad"
         },
         {
-            "xdm:adId": "4116904851",
-            "xdm:runtime": "HTML5",
-            "xdm:adClass": "video",
-            "xdm:adUnitType": "HTML5",
-            "xdm:promotedAssetId": "4116761052"
-        },
-        {
             "@id": "14",
             "dsp:adKey": "yyyy029YLCDvseo8QhTE",
             "dsp:adStatus": "Active",
@@ -154,6 +147,13 @@
             "dsp:placementIds": [
                 "1"
             ]
+        },
+        {
+            "xdm:adId": "4116904851",
+            "xdm:runtime": "HTML5",
+            "xdm:adClass": "video",
+            "xdm:adUnitType": "HTML5",
+            "xdm:promotedAssetId": "4116761052"
         }
     ]
 }

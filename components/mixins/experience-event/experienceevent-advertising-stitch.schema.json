@@ -1,0 +1,34 @@
+{
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-advertising-stitch",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ExperienceEvent Advertising Stitch Data",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+"description": " Data represents Stitch ID which is required by Analytics to stitch events published by AdCloud Last event service.",
+  "definitions": {
+    "experienceevent-advertising-stitch": {
+      "properties": {
+        "xdm:advertisingStitch": {
+          "title": "Advertising Stitch Data",
+          "type": "map",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/namespace"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-advertising-stitch"
+    }
+  ],
+  "meta:status": "stable"
+}

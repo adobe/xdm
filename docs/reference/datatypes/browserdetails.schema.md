@@ -303,7 +303,6 @@ The vertical size in pixels of the window the experience was displayed inside. F
 
 
 `integer`
-* minimum value: `0`
 
 
 
@@ -324,7 +323,6 @@ The horizontal size in pixels of the window the experience was displayed inside.
 
 
 `integer`
-* minimum value: `0`
 
 
 

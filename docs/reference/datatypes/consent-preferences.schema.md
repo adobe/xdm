@@ -53,7 +53,7 @@ This mixin captures consumer consent for collection and use of data related to p
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consents](#xdmconsents) | `object` | Optional | Consent for Privacy, Personalization and Marketing Preferences (this schema) |
+| [xdm:consents](#xdmconsents) | complex | Optional | Consent for Privacy, Personalization and Marketing Preferences (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consents
@@ -63,17 +63,23 @@ Specific Consent and Preference Options
 
 `xdm:consents`
 * is optional
-* type: `object`
+* type: complex
 * defined in this schema
 
 ### xdm:consents Type
 
 
-`object` with following properties:
+**All** of the following *requirements* need to be fulfilled.
 
 
-| Property | Type | Required |
-|----------|------|----------|
+#### Requirement 1
+
+
+* []() – `#/definitions/choices`
+
+
+#### Requirement 2
+
 
 
 
@@ -149,9 +155,31 @@ User's Direct Marketing Preferences
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:any`|  | Optional |
 | `xdm:email`|  | Optional |
+| `xdm:preferred`| string | Optional |
 | `xdm:push`|  | Optional |
 | `xdm:sms`|  | Optional |
+
+
+
+#### xdm:any
+##### General Direct Marketing Preference
+
+Does user permit any type of direct marketing
+
+`xdm:any`
+* is optional
+* type: reference
+
+##### xdm:any Type
+
+
+* []() – `#/definitions/marketing-fields`
+
+
+
+
 
 
 
@@ -169,6 +197,39 @@ User agrees to receive email
 
 * []() – `#/definitions/marketing-fields`
 
+
+
+
+
+
+
+#### xdm:preferred
+##### Preferred Channel
+
+User's preferred channel for receiving communications
+
+`xdm:preferred`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmmarketing-known-values).
+
+##### xdm:preferred Known Values
+| Value | Description |
+|-------|-------------|
+| `email` | email |
+| `push` | Push Notifications |
+| `inApp` | In-app Messages |
+| `sms` | SMS (Text Messages) |
+| `phone` | Phone Calls |
+| `phyMail` | Physical Mail |
+| `inVehicle` | In-vehicle Messages |
+| `inHome` | In-home Messages |
+| `iot` | IoT Messages |
+| `social` | Social Media |
+| `other` | Other |
+| `none` | No Preferred Channel |
+| `unknown` | Unknown |
 
 
 

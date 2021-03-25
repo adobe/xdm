@@ -17,7 +17,17 @@
       "title": "Choice Value",
       "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
       "type": "string",
-      "enum": ["y", "n", "p", "u", "LI", "CT", "CP", "VI", "PI"],
+      "enum": [
+        "y",
+        "n",
+        "p",
+        "u",
+        "LI",
+        "CT",
+        "CP",
+        "VI",
+        "PI"
+      ],
       "meta:enum": {
         "y": "Yes (opt-in)",
         "n": "No (opt-out)",
@@ -97,7 +107,9 @@
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": ["xdm:val"]
+      "required": [
+        "xdm:val"
+      ]
     },
     "personalization-field": {
       "type": "object",
@@ -106,7 +118,21 @@
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": ["xdm:val"]
+      "required": [
+        "xdm:val"
+      ]
+    },
+    "base-personalization": {
+      "title": "Personalization Preferences",
+      "description": "User's Personalization Preferences",
+      "type": "object",
+      "properties": {
+        "xdm:content": {
+          "title": "Personalize Content",
+          "description": "Allow personalization of the content on my site or in my apps",
+          "$ref": "#/definitions/personalization-field"
+        }
+      }
     },
     "marketing-field": {
       "type": "object",
@@ -121,7 +147,9 @@
           "$ref": "#/definitions/reason"
         }
       },
-      "required": ["xdm:val"]
+      "required": [
+        "xdm:val"
+      ]
     },
     "marketing-with-subscriptions": {
       "type": "object",
@@ -139,116 +167,155 @@
           "$ref": "#/definitions/subscriptions"
         }
       },
-      "required": ["xdm:val"]
+      "required": [
+        "xdm:val"
+      ]
     },
-    "choices": {
+    "base-marketing": {
+      "title": "Marketing Preferences",
+      "description": "User's Direct Marketing Preferences",
+      "type": "object",
       "properties": {
-        "xdm:collect": {
-          "title": "Data Collection",
-          "description": "Data collection is permitted",
-          "$ref": "#/definitions/consent-field"
-        },
-        "xdm:share": {
-          "title": "Share Data",
-          "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
-          "$ref": "#/definitions/consent-field"
-        },
-        "xdm:adID": {
-          "title": "Use Advertiser ID",
-          "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-          "$ref": "#/definitions/consent-field"
-        },
-        "xdm:personalize": {
-          "title": "Personalization Preferences",
-          "description": "User's Personalization Preferences",
-          "type": "object",
-          "properties": {
-            "xdm:content": {
-              "title": "Personalize Content",
-              "description": "Allow personalization of the content on my site or in my apps",
-              "$ref": "#/definitions/personalization-field"
-            }
+        "xdm:preferred": {
+          "title": "Preferred Channel",
+          "description": "User's preferred channel for receiving communications",
+          "type": "string",
+          "enum": [
+            "email",
+            "push",
+            "inApp",
+            "sms",
+            "phone",
+            "phyMail",
+            "inVehicle",
+            "inHome",
+            "iot",
+            "social",
+            "other",
+            "none",
+            "unknown"
+          ],
+          "meta:enum": {
+            "email": "email",
+            "push": "Push Notifications",
+            "inApp": "In-app Messages",
+            "sms": "SMS (Text Messages)",
+            "phone": "Phone Calls",
+            "phyMail": "Physical Mail",
+            "inVehicle": "In-vehicle Messages",
+            "inHome": "In-home Messages",
+            "iot": "IoT Messages",
+            "social": "Social Media",
+            "other": "Other",
+            "none": "No Preferred Channel",
+            "unknown": "Unknown"
           }
         },
-        "xdm:marketing": {
-          "title": "Marketing Preferences",
-          "description": "User's Direct Marketing Preferences",
-          "type": "object",
-          "properties": {
-            "xdm:email": {
-              "title": "Receive email",
-              "description": "User agrees to receive email",
-              "$ref": "#/definitions/marketing-field"
-            },
-            "xdm:push": {
-              "title": "Receive push notifications",
-              "description": "User permits receiving push notifications",
-              "$ref": "#/definitions/marketing-field"
-            },
-            "xdm:sms": {
-              "title": "Receive SMS",
-              "description": "User agrees to receive text messages",
-              "$ref": "#/definitions/marketing-field"
-            }
-          }
+        "xdm:any": {
+          "title": "General Direct Marketing Preference",
+          "description": "Does user permit any type of direct marketing",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:email": {
+          "title": "Receive email",
+          "description": "User agrees to receive email",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:push": {
+          "title": "Receive push notifications",
+          "description": "User permits receiving push notifications",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:sms": {
+          "title": "Receive SMS",
+          "description": "User agrees to receive text messages",
+          "$ref": "#/definitions/marketing-field"
         }
       }
     },
-    "user-level-choices": {
-      "allOf": [
-        {
-          "$ref": "#/definitions/choices"
-        },
-        {
-          "properties": {
-            "xdm:marketing": {
-              "type": "object",
-              "properties": {
-                "xdm:preferred": {
-                  "title": "Preferred Channel",
-                  "description": "User's preferred channel for receiving communications",
-                  "type": "string",
-                  "enum": [
-                    "email",
-                    "push",
-                    "inApp",
-                    "sms",
-                    "phone",
-                    "phyMail",
-                    "inVehicle",
-                    "inHome",
-                    "iot",
-                    "social",
-                    "other",
-                    "none",
-                    "unknown"
-                  ],
-                  "meta:enum": {
-                    "email": "email",
-                    "push": "Push Notifications",
-                    "inApp": "In-app Messages",
-                    "sms": "SMS (Text Messages)",
-                    "phone": "Phone Calls",
-                    "phyMail": "Physical Mail",
-                    "inVehicle": "In-vehicle Messages",
-                    "inHome": "In-home Messages",
-                    "iot": "IoT Messages",
-                    "social": "Social Media",
-                    "other": "Other",
-                    "none": "No Preferred Channel",
-                    "unknown": "Unknown"
-                  }
-                },
-                "xdm:any": {
-                  "title": "General Direct Marketing Preference",
-                  "description": "Does user permit any type of direct marketing",
-                  "$ref": "#/definitions/marketing-field"
-                }
-              }
-            }
+    "base-marketing-with-subscriptions": {
+      "title": "Marketing Preferences",
+      "description": "User's Direct Marketing Preferences",
+      "type": "object",
+      "properties": {
+        "xdm:preferred": {
+          "title": "Preferred Channel",
+          "description": "User's preferred channel for receiving communications",
+          "type": "string",
+          "enum": [
+            "email",
+            "push",
+            "inApp",
+            "sms",
+            "phone",
+            "phyMail",
+            "inVehicle",
+            "inHome",
+            "iot",
+            "social",
+            "other",
+            "none",
+            "unknown"
+          ],
+          "meta:enum": {
+            "email": "email",
+            "push": "Push Notifications",
+            "inApp": "In-app Messages",
+            "sms": "SMS (Text Messages)",
+            "phone": "Phone Calls",
+            "phyMail": "Physical Mail",
+            "inVehicle": "In-vehicle Messages",
+            "inHome": "In-home Messages",
+            "iot": "IoT Messages",
+            "social": "Social Media",
+            "other": "Other",
+            "none": "No Preferred Channel",
+            "unknown": "Unknown"
           }
+        },
+        "xdm:any": {
+          "title": "General Direct Marketing Preference",
+          "description": "Does user permit any type of direct marketing",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:email": {
+          "title": "Receive email",
+          "description": "User agrees to receive email",
+          "$ref": "#/definitions/marketing-with-subscriptions"
+        },
+        "xdm:push": {
+          "title": "Receive push notifications",
+          "description": "User permits receiving push notifications",
+          "$ref": "#/definitions/marketing-with-subscriptions"
+        },
+        "xdm:sms": {
+          "title": "Receive SMS",
+          "description": "User agrees to receive text messages",
+          "$ref": "#/definitions/marketing-with-subscriptions"
         }
-      ]
+      }
+    },
+    "idSpecific-marketing": {
+      "title": "Marketing Preferences",
+      "description": "User's Direct Marketing Preferences",
+      "type": "object",
+      "properties": {
+        "xdm:email": {
+          "title": "Receive email",
+          "description": "User agrees to receive email",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:push": {
+          "title": "Receive push notifications",
+          "description": "User permits receiving push notifications",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:sms": {
+          "title": "Receive SMS",
+          "description": "User agrees to receive text messages",
+          "$ref": "#/definitions/marketing-field"
+        }
+      }
     },
     "metadata": {
       "properties": {
@@ -266,62 +333,36 @@
           "title": "Consents and Preferences",
           "description": "Specific Consent and Preference Options",
           "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/user-level-choices"
-            },
-            {
-              "properties": {
-                "xdm:metadata": {
-                  "title": "Consent and Preference Metadata",
-                  "description": "Metadata that applies to all consents and preferences that don't specify a different value",
-                  "$ref": "#/definitions/metadata"
-                }
-              }
-            }
-          ]
-        }
-      }
-    },
-    "profile-subscriptions": {
-      "allOf": [
-        {
-          "$ref": "#/definitions/user-level-choices"
-        },
-        {
           "properties": {
+            "xdm:collect": {
+              "title": "Data Collection",
+              "description": "Data collection is permitted",
+              "$ref": "#/definitions/consent-field"
+            },
+            "xdm:share": {
+              "title": "Share Data",
+              "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
+              "$ref": "#/definitions/consent-field"
+            },
+            "xdm:adID": {
+              "title": "Use Advertiser ID",
+              "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
+              "$ref": "#/definitions/consent-field"
+            },
+            "xdm:personalize": {
+              "$ref": "#/definitions/base-personalization"
+            },
             "xdm:marketing": {
-              "type": "object",
-              "properties": {
-                "xdm:email": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:subscriptions": {
-                      "$ref": "#/definitions/subscriptions"
-                    }
-                  }
-                },
-                "xdm:push": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:subscriptions": {
-                      "$ref": "#/definitions/subscriptions"
-                    }
-                  }
-                },
-                "xdm:sms": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:subscriptions": {
-                      "$ref": "#/definitions/subscriptions"
-                    }
-                  }
-                }
-              }
+              "$ref": "#/definitions/base-marketing"
+            },
+            "xdm:metadata": {
+              "title": "Consent and Preference Metadata",
+              "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+              "$ref": "#/definitions/metadata"
             }
           }
         }
-      ]
+      }
     },
     "profile-consents": {
       "properties": {
@@ -329,40 +370,72 @@
           "title": "Consents and Preferences",
           "description": "Specific Consent and Preference Options",
           "type": "object",
-          "allOf": [
-            {
-              "$ref": "#/definitions/profile-subscriptions"
+          "properties": {
+            "xdm:collect": {
+              "title": "Data Collection",
+              "description": "Data collection is permitted",
+              "$ref": "#/definitions/consent-field"
             },
-            {
-              "properties": {
-                "xdm:idSpecific": {
-                  "title": "Identifier specific",
-                  "description": "Identifier specific consents and preferences",
+            "xdm:share": {
+              "title": "Share Data",
+              "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
+              "$ref": "#/definitions/consent-field"
+            },
+            "xdm:personalize": {
+              "$ref": "#/definitions/base-personalization"
+            },
+            "xdm:marketing": {
+              "$ref": "#/definitions/base-marketing-with-subscriptions"
+            },
+            "xdm:idSpecific": {
+              "title": "Identifier specific",
+              "description": "Identifier specific consents and preferences",
+              "type": "object",
+              "meta:xdmType": "map",
+              "additionalProperties": {
+                "title": "Identifier Type",
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
                   "type": "object",
-                  "meta:xdmType": "map",
-                  "additionalProperties": {
-                    "title": "Identifier Type",
-                    "type": "object",
-                    "meta:xdmType": "map",
-                    "additionalProperties": {
-                      "type": "object",
-                      "title": "Identifier",
-                      "$ref": "#/definitions/choices"
+                  "title": "Identifier",
+                  "properties": {
+                    "xdm:collect": {
+                      "title": "Data Collection",
+                      "description": "Data collection is permitted",
+                      "$ref": "#/definitions/consent-field"
+                    },
+                    "xdm:share": {
+                      "title": "Share Data",
+                      "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
+                      "$ref": "#/definitions/consent-field"
+                    },
+                    "xdm:adID": {
+                      "title": "Use Advertiser ID",
+                      "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
+                      "$ref": "#/definitions/consent-field"
+                    },
+                    "xdm:personalize": {
+                      "$ref": "#/definitions/base-personalization"
+                    },
+                    "xdm:marketing": {
+                      "$ref": "#/definitions/idSpecific-marketing"
                     }
                   }
                 }
+              },
+              "xdm:metadata": {
+                "title": "Consent and Preference Metadata",
+                "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+                "$ref": "#/definitions/metadata"
               }
             },
-            {
-              "properties": {
-                "xdm:metadata": {
-                  "title": "Consent and Preference Metadata",
-                  "description": "Metadata that applies to all consents and preferences that don't specify a different value",
-                  "$ref": "#/definitions/metadata"
-                }
-              }
+            "xdm:metadata": {
+              "title": "Consent and Preference Metadata",
+              "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+              "$ref": "#/definitions/metadata"
             }
-          ]
+          }
         }
       }
     }

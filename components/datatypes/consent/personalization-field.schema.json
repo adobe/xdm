@@ -1,0 +1,23 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatype/personalization-preference-field",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Generic Personalization Preference Field",
+  "description": "This schema specifies the fields in a basic personalization preference object.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "definitions": {},
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/personalization-field"
+    }
+  ],
+  "meta:status": "stable"
+}

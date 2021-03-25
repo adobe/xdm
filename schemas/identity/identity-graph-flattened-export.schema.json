@@ -53,16 +53,14 @@
             "properties": {
               "xdm:startTimestamp": {
                 "title": "Start Timestamp",
-                "type": "integer",
-                "minimum": -9223372036854775808,
-                "maximum": 9223372036854775807,
+                "type": "string",
+                "format": "date-time",
                 "description": "Start Timestamp."
               },
               "xdm:endTimestamp": {
                 "title": "End Timestamp",
-                "type": "integer",
-                "minimum": -9223372036854775808,
-                "maximum": 9223372036854775807,
+                "type": "string",
+                "format": "date-time",
                 "description": "End Timestamp."
               },
               "xdm:graphID": {

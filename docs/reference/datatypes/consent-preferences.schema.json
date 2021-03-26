@@ -1,6 +1,6 @@
 {
     "meta:license": [
-        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
         "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -51,47 +51,6 @@
             "description": "Through which interface did the user provide this preference value",
             "type": "string",
             "maxLength": 15
-        },
-        "subscriptions": {
-            "title": "Subscriptions",
-            "description": "A set of notifications, newsletters, etc. to which the user subscribes",
-            "type": "object",
-            "meta:xdmType": "map",
-            "additionalProperties": {
-                "type": "object",
-                "title": "Subscription",
-                "description": "The name or identifier of the specific subscription",
-                "properties": {
-                    "xdm:val": {
-                        "$ref": "#/definitions/choice-value"
-                    },
-                    "xdm:type": {
-                        "title": "Subscription Type",
-                        "description": "The type of subscription",
-                        "type": "string",
-                        "maxLength": 15
-                    },
-                    "xdm:subscribers": {
-                        "title": "Subscribers",
-                        "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
-                        "type": "object",
-                        "meta:xdmType": "map",
-                        "additionalProperties": {
-                            "type": "object",
-                            "title": "Subscriber",
-                            "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
-                            "properties": {
-                                "xdm:time": {
-                                    "$ref": "#/definitions/timestamp"
-                                },
-                                "xdm:source": {
-                                    "$ref": "#/definitions/source"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         },
         "consent-fields": {
             "type": "object",
@@ -170,6 +129,46 @@
                     "description": "User's Direct Marketing Preferences",
                     "type": "object",
                     "properties": {
+                        "xdm:preferred": {
+                            "title": "Preferred Channel",
+                            "description": "User's preferred channel for receiving communications",
+                            "type": "string",
+                            "enum": [
+                                "email",
+                                "push",
+                                "inApp",
+                                "sms",
+                                "phone",
+                                "phyMail",
+                                "inVehicle",
+                                "inHome",
+                                "iot",
+                                "social",
+                                "other",
+                                "none",
+                                "unknown"
+                            ],
+                            "meta:enum": {
+                                "email": "email",
+                                "push": "Push Notifications",
+                                "inApp": "In-app Messages",
+                                "sms": "SMS (Text Messages)",
+                                "phone": "Phone Calls",
+                                "phyMail": "Physical Mail",
+                                "inVehicle": "In-vehicle Messages",
+                                "inHome": "In-home Messages",
+                                "iot": "IoT Messages",
+                                "social": "Social Media",
+                                "other": "Other",
+                                "none": "No Preferred Channel",
+                                "unknown": "Unknown"
+                            }
+                        },
+                        "xdm:any": {
+                            "title": "General Direct Marketing Preference",
+                            "description": "Does user permit any type of direct marketing",
+                            "$ref": "#/definitions/marketing-fields"
+                        },
                         "xdm:email": {
                             "title": "Receive email",
                             "description": "User agrees to receive email",
@@ -189,62 +188,6 @@
                 }
             }
         },
-        "user-level-choices": {
-            "allOf": [
-                {
-                    "$ref": "#/definitions/choices"
-                },
-                {
-                    "properties": {
-                        "xdm:marketing": {
-                            "type": "object",
-                            "properties": {
-                                "xdm:preferred": {
-                                    "title": "Preferred Channel",
-                                    "description": "User's preferred channel for receiving communications",
-                                    "type": "string",
-                                    "enum": [
-                                        "email",
-                                        "push",
-                                        "inApp",
-                                        "sms",
-                                        "phone",
-                                        "phyMail",
-                                        "inVehicle",
-                                        "inHome",
-                                        "iot",
-                                        "social",
-                                        "other",
-                                        "none",
-                                        "unknown"
-                                    ],
-                                    "meta:enum": {
-                                        "email": "email",
-                                        "push": "Push Notifications",
-                                        "inApp": "In-app Messages",
-                                        "sms": "SMS (Text Messages)",
-                                        "phone": "Phone Calls",
-                                        "phyMail": "Physical Mail",
-                                        "inVehicle": "In-vehicle Messages",
-                                        "inHome": "In-home Messages",
-                                        "iot": "IoT Messages",
-                                        "social": "Social Media",
-                                        "other": "Other",
-                                        "none": "No Preferred Channel",
-                                        "unknown": "Unknown"
-                                    }
-                                },
-                                "xdm:any": {
-                                    "title": "General Direct Marketing Preference",
-                                    "description": "Does user permit any type of direct marketing",
-                                    "$ref": "#/definitions/marketing-fields"
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
-        },
         "metadata": {
             "properties": {
                 "xdm:time": {
@@ -260,10 +203,9 @@
                 "xdm:consents": {
                     "title": "Consents and Preferences",
                     "description": "Specific Consent and Preference Options",
-                    "type": "object",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/user-level-choices"
+                            "$ref": "#/definitions/choices"
                         },
                         {
                             "properties": {
@@ -278,55 +220,14 @@
                 }
             }
         },
-        "profile-subscriptions": {
-            "allOf": [
-                {
-                    "$ref": "#/definitions/user-level-choices"
-                },
-                {
-                    "properties": {
-                        "xdm:marketing": {
-                            "type": "object",
-                            "properties": {
-                                "xdm:email": {
-                                    "type": "object",
-                                    "properties": {
-                                        "xdm:subscriptions": {
-                                            "$ref": "#/definitions/subscriptions"
-                                        }
-                                    }
-                                },
-                                "xdm:push": {
-                                    "type": "object",
-                                    "properties": {
-                                        "xdm:subscriptions": {
-                                            "$ref": "#/definitions/subscriptions"
-                                        }
-                                    }
-                                },
-                                "xdm:sms": {
-                                    "type": "object",
-                                    "properties": {
-                                        "xdm:subscriptions": {
-                                            "$ref": "#/definitions/subscriptions"
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
-        },
         "profile-consents": {
             "properties": {
                 "xdm:consents": {
                     "title": "Consents and Preferences",
                     "description": "Specific Consent and Preference Options",
-                    "type": "object",
                     "allOf": [
                         {
-                            "$ref": "#/definitions/profile-subscriptions"
+                            "$ref": "#/definitions/choices"
                         },
                         {
                             "properties": {

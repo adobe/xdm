@@ -14,33 +14,33 @@
     "definitions": {
         "form-applications": {
             "properties": {
-                "xdm:formApplicationApproved": {
+                "xdm:approved": {
                     "title": "Form Application Approved",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Captured when a visitor application has been approved."
                 },
-                "xdm:formApplicationDeclined": {
+                "xdm:declined": {
                     "title": "Form Application Declined",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Captured when a visitor application has been declined."
                 },
-                "xdm:formApplicationFee": {
-                    "title": "Form Application Fee",
+                "xdm:applicationFee": {
+                    "title": "Application Fee",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                     "description": "Extension of Transaction Data Type"
                 },
-                "xdm:formApplicationID": {
-                    "title": "Form Application ID",
+                "xdm:ID": {
+                    "title": "ID",
                     "type": "string",
                     "description": "Identifier used during an application process."
                 },
-                "xdm:formApplicationRequestedAmount": {
-                    "title": "Form Application Requested Amount",
+                "xdm:requestedAmount": {
+                    "title": "Requested Amount",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                     "description": "Tracks the monetary value of the application."
                 },
-                "xdm:formApplicationStatus": {
-                    "title": "Form Application Status",
+                "xdm:status": {
+                    "title": "Status",
                     "type": "string",
                     "enum": [
                         "initiated",
@@ -50,23 +50,23 @@
                     ],
                     "description": "Captures the status of the application for any given point in the application process."
                 },
-                "xdm:formApplicationStatusUpdate": {
-                    "title": "Form Application Status Update",
+                "xdm:statusUpdate": {
+                    "title": "Status Update",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Captured when the status for an application changes, either from an online or offline update."
                 },
-                "xdm:formApplicationType": {
-                    "title": "Form Application Type",
+                "xdm:type": {
+                    "title": "Type",
                     "type": "string",
                     "description": "Type of the application process."
                 },
-                "xdm:formApplicationUnderReview": {
-                    "title": "Form Application Under Review",
+                "xdm:underReview": {
+                    "title": "Under Review",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Captured when a visitor application has been placed under review."
                 },
-                "xdm:formApplicationUsage": {
-                    "title": "Form Application Usage",
+                "xdm:steps": {
+                    "title": "steps",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                     "description": "Extension of toolUsage data type."
                 }

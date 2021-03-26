@@ -25,8 +25,8 @@ Identity Graph Flattened Export Schema.
   "xdm:algorithm": "SHARED_DEVICE_DETECTION_SESSIONIZATION",
   "xdm:membersByTimeRange": [
     {
-      "xdm:startTimestamp": 1616092633262,
-      "xdm:endTimestamp": 16160926333874,
+      "xdm:startTimestamp": "2017-09-26T15:52:25+00:00",
+      "xdm:endTimestamp": "2017-09-26T15:52:25+00:00",
       "xdm:graphID": "G1",
       "xdm:identityMap": {
         "ECID": [
@@ -168,10 +168,10 @@ All items must be of the type:
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:endTimestamp`| integer | Optional |
+| `xdm:endTimestamp`| string | Optional |
 | `xdm:graphID`| string | Optional |
 | `xdm:identityMap`| object | Optional |
-| `xdm:startTimestamp`| integer | Optional |
+| `xdm:startTimestamp`| string | Optional |
 
 
 
@@ -182,14 +182,14 @@ End Timestamp.
 
 `xdm:endTimestamp`
 * is optional
-* type: `integer`
+* type: `string`
 
 ##### xdm:endTimestamp Type
 
 
-`integer`
-* minimum value: `-9223372036854776000`
-* maximum value: `9223372036854776000`
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
 
 
 
@@ -257,14 +257,13 @@ Start Timestamp.
 
 `xdm:startTimestamp`
 * is optional
-* type: `integer`
+* type: `string`
 
 ##### xdm:startTimestamp Type
 
 
-`integer`
-* minimum value: `-9223372036854776000`
-* maximum value: `9223372036854776000`
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

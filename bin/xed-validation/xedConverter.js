@@ -50,6 +50,10 @@ class Converter extends EventEmitter {
     function preProcess(o) { //cleanup junk and pre-processes like data mapping etc.
       var removeList = ["oneOf", "anyOf", "definitions", "patternProperties"];
 
+      if (o.hasOwnProperty("properties") && (o.type == null)) {//add missing object type after deref for $ref of definitions
+        o.type = "object";
+      }
+
       if (o["$id"]) {
         o["meta:xdmId"] = o["$id"];
         o["$id"] = shortenField(o["$id"]);

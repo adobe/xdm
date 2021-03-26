@@ -1,0 +1,103 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/identity-graph-flattened-export",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Identity Graph Flattened Export Schema",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Identity Graph Flattened Export Schema.",
+  "definitions": {
+    "identity-graph-flattened-export": {
+      "properties": {
+        "xdm:identityID": {
+          "title": "Person ID",
+          "type": "string",
+          "description": "Person ID Like Email or ECID or phone."
+        },
+        "xdm:namespaceID": {
+          "title": "Namespace Id",
+          "type": "integer",
+          "description": "Id for the Identity Type."
+        },
+        "xdm:namespaceCode": {
+          "title": "Namespace Code",
+          "type": "string",
+          "description": "Identity Type in human readable form."
+        },
+        "xdm:algorithm": {
+          "title": "Algorithm",
+          "type": "string",
+          "description": "Algorithm used by Identity Service to stitch like SHARED_DEVICE_DETECTION_SESSIONIZATION, DETERMINISTIC, FREQ_RECENCY etc.",
+          "enum": [
+            "SHARED_DEVICE_DETECTION_SESSIONIZATION",
+            "FREQ_RECENCY_BASED_SHARED_DEVICES",
+            "DETERMINISTIC"
+          ],
+          "meta:enum": {
+            "SHARED_DEVICE_DETECTION_SESSIONIZATION": "Shared Device Detection Sessionization",
+            "FREQ_RECENCY_BASED_SHARED_DEVICES": "Frequency Recency Based Shared Devices",
+            "DETERMINISTIC": "Deterministic"
+          }
+        },
+        "xdm:membersByTimeRange": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:startTimestamp": {
+                "title": "Start Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "Start Timestamp."
+              },
+              "xdm:endTimestamp": {
+                "title": "End Timestamp",
+                "type": "string",
+                "format": "date-time",
+                "description": "End Timestamp."
+              },
+              "xdm:graphID": {
+                "title": "Person Graph ID",
+                "type": "string",
+                "description": "Person level Graph Identifier."
+              },
+              "xdm:identityMap": {
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "https://ns.adobe.com/xdm/context/identityitem"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "xdm:lastUpdatedTime": {
+          "title": "Last Updated Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated time when this identity was updated."
+        }
+      },
+      "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algorithm"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/identity-graph-flattened-export"
+    }
+  ],
+  "meta:status": "stable"
+}

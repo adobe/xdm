@@ -22,6 +22,15 @@ Adobe Campaign notification subscriptions allow end-users opt into topics that c
 
 ```json
 {
+  "xdm:topicID": "40ac9bf9-721d-44ac-8cf3-fb04c089f3bf",
+  "xdm:type": "Campaign/SubscriptionList",
+  "xdm:subscriptionDate": "2017-09-26T15:52:25+00:00",
+  "xdm:emailAddress": "johnDoe@adobe.com"
+}
+```
+
+```json
+{
   "xdm:topicID": "50ac9bf9-721d-44ac-8cf3-fb04c089f3bf",
   "xdm:type": "Campaign/SubscriptionList",
   "xdm:subscriptionDate": "2017-02-26T15:52:25+00:00",
@@ -31,15 +40,6 @@ Adobe Campaign notification subscriptions allow end-users opt into topics that c
     "xdm:remarkID": "40ac9bf9-721d-44ac-8cf3-fb04c089f3be",
     "xdm:remarkText": "Sorry, leave me alone. These are my personal comments"
   }
-}
-```
-
-```json
-{
-  "xdm:topicID": "40ac9bf9-721d-44ac-8cf3-fb04c089f3bf",
-  "xdm:type": "Campaign/SubscriptionList",
-  "xdm:subscriptionDate": "2017-09-26T15:52:25+00:00",
-  "xdm:emailAddress": "johnDoe@adobe.com"
 }
 ```
 

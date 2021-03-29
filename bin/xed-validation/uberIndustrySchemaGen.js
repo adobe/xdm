@@ -4,7 +4,6 @@ const fs = require('fs');
 const glob = require("glob");
 const tempInputFolder = "tempinput/components/"
 const uberSchemaFolder = tempInputFolder + "uberschemas/"
-const ignoredMixins = ["https://ns.adobe.com/xdm/datatype/marketing-preference-with-subscriptions"];
 
 let industries = JSON.parse(fs.readFileSync('industries.json'));
 for (let industry in industries) {//uber schemas for industry mixins only
@@ -25,9 +24,8 @@ for (let industry in industries) {//uber schemas for industry mixins only
                     for (let i = 0; i < schema["meta:intendedToExtend"].length; i++) {
                         if (classes[schema["meta:intendedToExtend"][i]] == undefined) {
                             classes[schema["meta:intendedToExtend"][i]] = [];
-                        }
-
-                        if (ignoredMixins.indexOf(schema["$id"]) == -1) {
+                            classes[schema["meta:intendedToExtend"][i]].push(schema["$id"])
+                        } else {
                             classes[schema["meta:intendedToExtend"][i]].push(schema["$id"])
                         }
                     }

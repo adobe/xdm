@@ -4,6 +4,7 @@ const fs = require('fs');
 const glob = require("glob");
 const tempInputFolder = "tempinput/components/"
 const uberSchemaFolder = tempInputFolder + "uberschemas/"
+const ignoredMixins = ["https://ns.adobe.com/xdm/datatype/marketing-preference-with-subscriptions"];
 
 glob(tempInputFolder + "**/*.schema.json", function(er, files) {//uber schemas for all mixins
     let classes = {};
@@ -15,8 +16,9 @@ glob(tempInputFolder + "**/*.schema.json", function(er, files) {//uber schemas f
                 for (let i = 0; i < schema["meta:intendedToExtend"].length; i++) {
                     if (classes[schema["meta:intendedToExtend"][i]] == undefined) {
                         classes[schema["meta:intendedToExtend"][i]] = [];
-                        classes[schema["meta:intendedToExtend"][i]].push(schema["$id"])
-                    } else {
+                    }
+
+                    if (ignoredMixins.indexOf(schema["$id"]) == -1) {
                         classes[schema["meta:intendedToExtend"][i]].push(schema["$id"])
                     }
                 }

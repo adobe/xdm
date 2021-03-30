@@ -21,8 +21,8 @@
       "properties": {
         "xdm:eventMergeId": {
           "title": "ExperienceEvent merge ID",
-          "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion."
-          "type": "string",
+          "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+          "type": "string"
         },
         "xdm:producedBy": {
           "title": "Produced By",

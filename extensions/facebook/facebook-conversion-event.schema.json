@@ -1,0 +1,122 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.facebook.com/facebook-conversion-event",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Facebook Conversion Event Mixin",
+  "description": "The Conversions API allows advertisers to send web events from their servers directly to Facebook. Server events are linked to a pixel and are processed like browser pixel events. This means that server events are used in measurement, reporting, and optimization in the same way as browser pixel events.",
+  "type": "object",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/context/experienceevent-commerce",
+    "https://ns.adobe.com/xdm/context/experienceevent-search"
+  ],
+  "definitions": {
+    "facebook-conversion-event": {
+      "properties": {
+        "https://ns.facebook.com/contentCategory": {
+          "title": "Facebook Content Category",
+          "type": "string",
+          "description": "The category of the content associated with the event.",
+          "examples": [
+            "grocery"
+          ]
+        },
+        "https://ns.facebook.com/contentType": {
+          "title": "Facebook Content Type",
+          "type": "string",
+          "description": "It should be set to product or product_group.Use product, if the keys you send represent products. Sent keys could be content_ids or contents.Use product_group, if the keys you send in content_ids represent product groups. Product groups are used to distinguish products that are identical but have variations such as color, material, size or pattern.",
+          "examples": [
+            "product"
+          ]
+        },
+        "https://ns.facebook.com/numItems": {
+          "title": "Number Of Items in Cart",
+          "type": "integer",
+          "description": "Use only with InitiateCheckout events. The number of items that a user tries to buy during checkout.",
+          "examples": [
+            "4"
+          ]
+        },
+        "https://ns.facebook.com/deliveryCategory": {
+          "title": "Delivery Category",
+          "type": "string",
+          "description": "Type of delivery for a purchase event. Supported values are.",
+          "examples": [
+            "in_store"
+          ],
+          "enum": [
+            "in_store",
+            "curbside",
+            "home_delivery"
+          ],
+          "meta:enum": {
+            "in_store": "In Store.",
+            "curbside": "Curbside Pickup.",
+            "home_delivery": "Home Delivery."
+          }
+        },
+        "https://ns.facebook.com/status": {
+          "title": "Registration Event Status",
+          "type": "string",
+          "description": "Use only with CompleteRegistration events. The status of the registration event.",
+          "examples": [
+            "registered"
+          ]
+        },
+        "https://ns.facebook.com/value": {
+          "title": "Value",
+          "type": "number",
+          "description": "A numeric value associated with this event. This could be a monetary value or a value in some other metric.",
+          "examples": [
+            142.54
+          ]
+        },
+        "https://ns.facebook.com/fbp": {
+          "title": "Facebook Conversion Browser Id",
+          "type": "string",
+          "description": "When the Facebook pixel is installed on a website, and the pixel uses first-party cookies, the pixel automatically saves a unique identifier to an _fbp cookie for the website domain if one does not already exist. The fbp event parameter value must be of the form version.subdomainIndex.creationTime.randomnumber.",
+          "examples": [
+            "fb.1.1596403881668.1116446470"
+          ]
+        },
+        "https://ns.facebook.com/fbc": {
+          "title": "Facebook Conversion Click Id",
+          "type": "string",
+          "description": "When a user clicks on an ad on Facebook, the link sometimes includes a fbclid query parameter. When the user lands on the target website, if the website has a Facebook pixel that uses first-party cookies, the pixel automatically saves the fbclid query parameter to an _fbc cookie for that website domain. The fbc event parameter value must be of the form version.subdomainIndex.creationTime.fbclid",
+          "examples": [
+            "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890"
+          ]
+        },
+        "facebook:predicted_ltv": {
+          "title": "Predicted Lifetime Value",
+          "type": "number",
+          "description": "The predicted lifetime value of a conversion event.",
+          "examples": [
+            432.12
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/experienceevent-search"
+    },
+    {
+      "$ref": "#/definitions/facebook-conversion-event"
+    }
+  ],
+  "meta:status": "experimental"
+}

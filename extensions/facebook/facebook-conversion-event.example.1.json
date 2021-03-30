@@ -1,1 +1,45 @@
-{}
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "xdm:eventType": "facebook.conversion.event",
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "order1234"
+    }
+  },
+  "xdm:search": {
+    "xdm:keywords": "lettuce"
+  },
+  "xdm:productListItems": [
+    {
+      "xdm:sku": "ABC123",
+      "xdm:name": "lettuce",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 2,
+      "xdm:priceTotal": 5.99
+    },
+    {
+      "xdm:sku": "XYZ789",
+      "xdm:name": "cucumber",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 2,
+      "xdm:priceTotal": 3.99,
+      "delivery_category": "in_store"
+    }
+  ],
+  "https://ns.facebook.com/content_category": "grocery",
+  "https://ns.facebook.com/content_ids": [
+    "ABC123",
+    "XYZ789"
+  ],
+  "https://ns.facebook.com/content_type": "product",
+  "https://ns.facebook.com/num_items": "4",
+  "https://ns.facebook.com/delivery_category": "in_store",
+  "https://ns.facebook.com/status": "registered",
+  "https://ns.facebook.com/fbp": "fb.1.1596403881668.1116446470",
+  "https://ns.facebook.com/fbc": "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890",
+  "https://ns.facebook.com/search_string": "lettuce",
+  "https://ns.facebook.com/value": 142.54,
+  "https://ns.facebook.com/predicted_ltv": 432.12
+}

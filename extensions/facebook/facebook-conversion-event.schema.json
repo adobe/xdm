@@ -40,7 +40,7 @@
         },
         "https://ns.facebook.com/numItems": {
           "title": "Number Of Items in Cart",
-          "type": "integer",
+          "type": "string",
           "description": "Use only with InitiateCheckout events. The number of items that a user tries to buy during checkout.",
           "examples": [
             "4"

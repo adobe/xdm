@@ -43,7 +43,7 @@ class Converter extends EventEmitter {
       return id.replace("https://ns.adobe.com/xdm/", "").replace("http://ns.adobe.com/xdm/", "")
                .replace("http://schema.org/", "external/schema/").replace("http://www.iptc.org/","external/iptc/")
                .replace("https://id3.org/id3v2.4/", "external/id3/").replace("http://ns.adobe.com/adobecloud/core/1.0", "external/repo/commmon")
-               .replace("https://ns.airship.com/", "").toLowerCase();
+               .replace("https://ns.airship.com/", "").replace("https://ns.facebook.com/", "").toLowerCase();
     };
 
 

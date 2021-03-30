@@ -103,6 +103,69 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
+          {
+            "nodeType": "varDecl",
+            "varName": "p",
+            "from": {
+              "nodeType": "literal",
+              "literalType": "List",
+              "value": [
+                "uri:com:example:placement-1001",
+                "uri:com:example:placement-1002"
+              ]
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "in",
+              "params": [
+                {
+                  "nodeType": "varRef",
+                  "varName": "p"
+                },
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:placement",
+                  "object": {
+                    "nodeType": "fieldLookup",
+                    "fieldName": "xdm:representations",
+                    "object": {
+                      "nodeType": "varRef",
+                      "varName": "o"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+```json
+{
   "nodeType": "fnApply",
   "fnName": "modelInstances",
   "params": [
@@ -205,69 +268,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "o",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "quantification",
-        "quantifier": "some",
-        "variables": [
-          {
-            "nodeType": "varDecl",
-            "varName": "p",
-            "from": {
-              "nodeType": "literal",
-              "literalType": "List",
-              "value": [
-                "uri:com:example:placement-1001",
-                "uri:com:example:placement-1002"
-              ]
-            },
-            "where": {
-              "nodeType": "fnApply",
-              "fnName": "in",
-              "params": [
-                {
-                  "nodeType": "varRef",
-                  "varName": "p"
-                },
-                {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:placement",
-                  "object": {
-                    "nodeType": "fieldLookup",
-                    "fieldName": "xdm:representations",
-                    "object": {
-                      "nodeType": "varRef",
-                      "varName": "o"
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
   "nodeType": "fnApply",
   "fnName": "modelInstances",
   "params": [
@@ -317,6 +317,20 @@ Represents an abstract syntax tree comprised of various node types. The expressi
           }
         ]
       }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
     }
   ]
 }
@@ -390,20 +404,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
       "nodeType": "literal",
       "literalType": "String",
       "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
     }
   ]
 }
@@ -580,6 +580,187 @@ Represents an abstract syntax tree comprised of various node types. The expressi
           {
             "nodeType": "literal",
             "literalType": "String",
+            "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "quantification",
+        "quantifier": "some",
+        "variables": [
+          {
+            "nodeType": "varDecl",
+            "varName": "r",
+            "from": {
+              "nodeType": "fieldLookup",
+              "fieldName": "xdm:representations",
+              "object": {
+                "nodeType": "varRef",
+                "varName": "o"
+              }
+            },
+            "where": {
+              "nodeType": "fnApply",
+              "fnName": "=",
+              "params": [
+                {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:placement",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "r"
+                  }
+                },
+                {
+                  "nodeType": "literal",
+                  "literalType": "String",
+                  "value": "uri:com:example:placement-1001"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
+            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+          }
+        ]
+      },
+      "where": {
+        "nodeType": "fnApply",
+        "fnName": "and",
+        "params": [
+          {
+            "nodeType": "quantification",
+            "quantifier": "all",
+            "variables": [
+              {
+                "nodeType": "varDecl",
+                "varName": "_",
+                "from": {
+                  "nodeType": "literal",
+                  "literalType": "List",
+                  "value": [
+                    "uri:com:example:tag-0001",
+                    "uri:com:example:tag-0002"
+                  ]
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "in",
+                  "params": [
+                    {
+                      "nodeType": "varRef",
+                      "varName": "_"
+                    },
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:tags",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "o"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "nodeType": "quantification",
+            "quantifier": "some",
+            "variables": [
+              {
+                "nodeType": "varDecl",
+                "varName": "_",
+                "from": {
+                  "nodeType": "fieldLookup",
+                  "fieldName": "xdm:representations",
+                  "object": {
+                    "nodeType": "varRef",
+                    "varName": "o"
+                  }
+                },
+                "where": {
+                  "nodeType": "fnApply",
+                  "fnName": "=",
+                  "params": [
+                    {
+                      "nodeType": "fieldLookup",
+                      "fieldName": "xdm:placement",
+                      "object": {
+                        "nodeType": "varRef",
+                        "varName": "_"
+                      }
+                    },
+                    {
+                      "nodeType": "literal",
+                      "literalType": "String",
+                      "value": "uri:com:example:placement-1001"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "nodeType": "fnApply",
+            "fnName": "=",
+            "params": [
+              {
+                "nodeType": "fieldLookup",
+                "fieldName": "xdm:status",
+                "object": {
+                  "nodeType": "varRef",
+                  "varName": "o"
+                }
+              },
+              {
+                "nodeType": "literal",
+                "literalType": "String",
+                "value": "approved"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "select",
+  "variables": [
+    {
+      "nodeType": "varDecl",
+      "varName": "o",
+      "from": {
+        "nodeType": "fnApply",
+        "fnName": "modelInstances",
+        "params": [
+          {
+            "nodeType": "literal",
+            "literalType": "String",
             "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
           },
           {
@@ -678,127 +859,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
                       "object": {
                         "nodeType": "varRef",
                         "varName": "r"
-                      }
-                    },
-                    {
-                      "nodeType": "literal",
-                      "literalType": "String",
-                      "value": "uri:com:example:placement-1001"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "nodeType": "fnApply",
-            "fnName": "=",
-            "params": [
-              {
-                "nodeType": "fieldLookup",
-                "fieldName": "xdm:status",
-                "object": {
-                  "nodeType": "varRef",
-                  "varName": "o"
-                }
-              },
-              {
-                "nodeType": "literal",
-                "literalType": "String",
-                "value": "approved"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "o",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "fnApply",
-        "fnName": "and",
-        "params": [
-          {
-            "nodeType": "quantification",
-            "quantifier": "all",
-            "variables": [
-              {
-                "nodeType": "varDecl",
-                "varName": "_",
-                "from": {
-                  "nodeType": "literal",
-                  "literalType": "List",
-                  "value": [
-                    "uri:com:example:tag-0001",
-                    "uri:com:example:tag-0002"
-                  ]
-                },
-                "where": {
-                  "nodeType": "fnApply",
-                  "fnName": "in",
-                  "params": [
-                    {
-                      "nodeType": "varRef",
-                      "varName": "_"
-                    },
-                    {
-                      "nodeType": "fieldLookup",
-                      "fieldName": "xdm:tags",
-                      "object": {
-                        "nodeType": "varRef",
-                        "varName": "o"
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "nodeType": "quantification",
-            "quantifier": "some",
-            "variables": [
-              {
-                "nodeType": "varDecl",
-                "varName": "_",
-                "from": {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:representations",
-                  "object": {
-                    "nodeType": "varRef",
-                    "varName": "o"
-                  }
-                },
-                "where": {
-                  "nodeType": "fnApply",
-                  "fnName": "=",
-                  "params": [
-                    {
-                      "nodeType": "fieldLookup",
-                      "fieldName": "xdm:placement",
-                      "object": {
-                        "nodeType": "varRef",
-                        "varName": "_"
                       }
                     },
                     {
@@ -994,66 +1054,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
                 }
               }
             ]
-          }
-        ]
-      }
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "select",
-  "variables": [
-    {
-      "nodeType": "varDecl",
-      "varName": "o",
-      "from": {
-        "nodeType": "fnApply",
-        "fnName": "modelInstances",
-        "params": [
-          {
-            "nodeType": "literal",
-            "literalType": "String",
-            "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
-          }
-        ]
-      },
-      "where": {
-        "nodeType": "quantification",
-        "quantifier": "some",
-        "variables": [
-          {
-            "nodeType": "varDecl",
-            "varName": "r",
-            "from": {
-              "nodeType": "fieldLookup",
-              "fieldName": "xdm:representations",
-              "object": {
-                "nodeType": "varRef",
-                "varName": "o"
-              }
-            },
-            "where": {
-              "nodeType": "fnApply",
-              "fnName": "=",
-              "params": [
-                {
-                  "nodeType": "fieldLookup",
-                  "fieldName": "xdm:placement",
-                  "object": {
-                    "nodeType": "varRef",
-                    "varName": "r"
-                  }
-                },
-                {
-                  "nodeType": "literal",
-                  "literalType": "String",
-                  "value": "uri:com:example:placement-1001"
-                }
-              ]
-            }
           }
         ]
       }

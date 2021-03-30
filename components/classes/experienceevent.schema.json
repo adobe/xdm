@@ -29,7 +29,10 @@
           "description": "Value that describes the actor that generated the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain types of events if needed.",
           "type": "string",
           "default": "self",
-          "meta:enum": [{ "self": "Self" }, { "system": "System" }]
+          "meta:enum": {
+            "self": "Self",
+            "system": "System"
+          }
         },
         "xdm:producedByID": {
           "title": "Produced By ID",

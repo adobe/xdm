@@ -1,0 +1,76 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Bill Pay Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Bill pay steps such as start, save, failure, and complete.",
+  "definitions": {
+    "bill-pay-details": {
+      "properties": {
+        "xdm:personalFinances": {
+          "type": "object",
+          "properties": {
+            "xdm:billPayDetails": {
+              "type": "object",
+              "properties": {
+                "xdm:transaction": {
+                  "title": "Transaction",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                  "description": "Extension of transaction data type."
+                },
+                "xdm:account": {
+                  "title": "Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                  "description": "Account from which the bill is being paid."
+                },
+                "xdm:scheduledTransactionDate": {
+                  "title": "Scheduled Transaction Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Records the scheduled date/time of the transaction."
+                },
+                "xdm:billerDetails": {
+                  "type": "object",
+                  "description": "Tracks all details related to a biller.",
+                  "properties": {
+                    "xdm:name": {
+                      "title": "Name",
+                      "type": "string",
+                      "description": "The name/nickname for the biller."
+                    },
+                    "xdm:address": {
+                      "title": "Biller Address",
+                      "$ref": "https://ns.adobe.com/xdm/common/address",
+                      "description": "Biller address"
+                    },
+                    "xdm:accountID": {
+                      "title": "Account ID",
+                      "type": "string",
+                      "description": "The user account number for the biller."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/bill-pay-details"
+  }],
+  "meta:status": "experimental"
+}

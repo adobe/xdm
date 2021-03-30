@@ -103,6 +103,17 @@
                   "title": "Special Occasion",
                   "type": "boolean",
                   "description": "Indicates if the reservation is being made for a special occasion."
+                },
+                "xdm:status": {
+                  "title": "Status",
+                  "type": "string",
+                  "enum": [
+                    "cancelled",
+                    "confirmed",
+                    "hold",
+                    "pending"
+                  ],
+                  "description": "The status of the dining reservation."
                 }
               }
             }
@@ -114,9 +125,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/reservations"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

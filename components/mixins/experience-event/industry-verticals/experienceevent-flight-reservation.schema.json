@@ -27,12 +27,23 @@
           "properties": {
             "xdm:flightReservation": {
               "type": "object",
+              "description":"Captures all details specific to an individual flight reservation",
               "properties": {
+                "xdm:agentId": {
+                  "title": "Agent ID",
+                  "type": "string",
+                  "description": "Agent or broker responsible for booking the reservation, if applicable."
+                },
                 "xdm:arrivalLocation": {
                   "title": "Arrival Location",
                   "type": "string",
                   "description": "Tracks the arrival city airport code.",
                   "pattern": "^[A-Z]{3}$"
+                },
+                "xdm:itemComparison": {
+                  "title": "Item Comparison",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                  "description": "Used to track flight comparisons on a site or an app."
                 },
                 "xdm:departureLocation": {
                   "title": "Departure Location",
@@ -51,11 +62,17 @@
                   ],
                   "description": "The fare class of the flight being reserved."
                 },
-                "xdm:flightDate": {
-                  "title": "Flight Date",
+                "xdm:departureDate": {
+                  "title": "Departure Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "The date of the flight being reserved."
+                  "description": "The departure date of the flight being reserved."
+                },
+                "xdm:arrivalDate": {
+                  "title": "Arrival Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "The arrival date of the flight being reserved."
                 },
                 "xdm:flightNumber": {
                   "title": "Flight Number",
@@ -77,16 +94,28 @@
                   "type": "string",
                   "description": ""
                 },
-                "xdm:seatMapProcess": {
-                  "title": "Seat Map Process",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                  "description": "Extension of toolUsage data type."
+                "xdm:salesChannel": {
+                  "title": "Sales Channel",
+                  "type": "string",
+                  "enum": ["Web", "Mobile", "Mobile App", "Call Center", "Agent","Third-Party"],
+                  "description": "Sales channel from which the reservation was booked."
                 },
                 "xdm:securityScreening": {
                   "title": "Security Screening",
                   "type": "string",
                   "enum": ["Standard", "PreCheck"],
                   "description": "Type of security screening the passenger is subject to."
+                },
+                "xdm:status": {
+                  "title": "Status",
+                  "type": "string",
+                  "enum": [
+                    "cancelled",
+                    "confirmed",
+                    "hold",
+                    "pending"
+                  ],
+                  "description": "The status of the flight reservation."
                 }
               }
             }
@@ -98,9 +127,6 @@
   "allOf": [
     {
       "$ref": "#/definitions/reservations"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
     }
   ],
   "meta:status": "experimental"

@@ -26,7 +26,8 @@ Message Execution details for the Adobe CJM ExperienceEvent.
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "b9029525-c33a-40f2-a1c1-95f0b8305078",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": "6cfe93cc-bb0e-4ec9-a39b-56b53a73d28c",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace": "Email"
 }
 ```
 
@@ -41,6 +42,7 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageexecutionid) | `string` | **Required** | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagepublicationid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionemailnamespace) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID
@@ -178,7 +180,16 @@ The Publication ID of parent Message ID of a MessageExecution originating this m
 
 `string`
 
+#https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace
+### Email Namespace
 
+Email Namespace defined for the message
 
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace`
+* is optional
+* type: `string`
+* defined in this schema
 
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace Type
 
+`string`

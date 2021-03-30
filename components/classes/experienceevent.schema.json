@@ -30,8 +30,8 @@
           "type": "string",
           "default": "self",
           "meta:enum": [
-            "self": "Self", 
-            "system": "System"
+            {"self": "Self"},
+            {"system": "System"}
           ]
         },
         "xdm:producedByID": {

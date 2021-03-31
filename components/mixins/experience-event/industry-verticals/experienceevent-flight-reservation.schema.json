@@ -31,8 +31,8 @@
                   "type": "string",
                   "description": "Agent or broker responsible for booking the reservation, if applicable."
                 },
-                "xdm:arrivalLocation": {
-                  "title": "Arrival Location",
+                "xdm:arrivalAirportCode": {
+                  "title": "Arrival Airport Code",
                   "type": "string",
                   "description": "Tracks the arrival city airport code.",
                   "pattern": "^[A-Z]{3}$"
@@ -42,8 +42,8 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
                   "description": "Used to track flight comparisons on a site or an app."
                 },
-                "xdm:departureLocation": {
-                  "title": "Departure Location",
+                "xdm:departureAirportCode": {
+                  "title": "Departure Airport Code",
                   "type": "string",
                   "description": "Tracks the departure city airport code.",
                   "pattern": "^[A-Z]{3}$"

@@ -39,11 +39,6 @@
               "enum": ["initiated", "in progress", "approved", "declined"],
               "description": "Captures the status of the claim for any given point in the application process."
             },
-            "xdm:claimSteps": {
-              "title": "Claim Steps",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            },
             "xdm:type": {
               "title": "Type",
               "type": "string",

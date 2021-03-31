@@ -13,7 +13,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 ## Schema Hierarchy
 
 * Privacy/Personalization/Marketing Preferences (Consents) `https://ns.adobe.com/xdm/mixins/profile-consents`
-  * [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md) `https://ns.adobe.com/xdm/datatypes/consents-and-preferences`
+  * [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent/consent-preferences.schema.md) `https://ns.adobe.com/xdm/datatypes/consents-and-preferences`
 
 
 ## Privacy/Personalization/Marketing Preferences (Consents) Example
@@ -91,7 +91,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consents](#xdmconsents) | complex | Optional | [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md#xdmconsents) |
+| [xdm:consents](#xdmconsents) | `object` | Optional | [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent/consent-preferences.schema.md#xdmconsents) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consents
@@ -101,26 +101,186 @@ Specific Consent and Preference Options
 
 `xdm:consents`
 * is optional
-* type: complex
-* defined in [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent-preferences.schema.md#xdmconsents)
+* type: `object`
+* defined in [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent/consent-preferences.schema.md#xdmconsents)
 
 ### xdm:consents Type
 
 
-**All** of the following *requirements* need to be fulfilled.
+`object` with following properties:
 
 
-#### Requirement 1
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:collect`|  | Optional |
+| `xdm:idSpecific`| object | Optional |
+| `xdm:marketing`|  | Optional |
+| `xdm:metadata`|  | Optional |
+| `xdm:personalize`|  | Optional |
+| `xdm:share`|  | Optional |
 
 
-* []() – `#/definitions/choices`
+
+#### xdm:collect
+##### Data Collection
+
+Data collection is permitted
+
+`xdm:collect`
+* is optional
+* type: reference
+
+##### xdm:collect Type
 
 
-#### Requirement 2
+* []() – `#/definitions/consent-field`
 
 
 
-#### Requirement 3
+
+
+
+
+#### xdm:idSpecific
+##### Identifier specific
+
+Identifier specific consents and preferences
+
+`xdm:idSpecific`
+* is optional
+* type: `object`
+
+##### xdm:idSpecific Type
+
+Unknown type `object`.
+
+```json
+{
+  "title": "Identifier specific",
+  "description": "Identifier specific consents and preferences",
+  "type": "object",
+  "meta:xdmType": "map",
+  "additionalProperties": {
+    "title": "Identifier Type",
+    "type": "object",
+    "meta:xdmType": "map",
+    "additionalProperties": {
+      "type": "object",
+      "title": "Identifier",
+      "properties": {
+        "xdm:collect": {
+          "title": "Data Collection",
+          "description": "Data collection is permitted",
+          "$ref": "#/definitions/consent-field"
+        },
+        "xdm:share": {
+          "title": "Share Data",
+          "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
+          "$ref": "#/definitions/consent-field"
+        },
+        "xdm:adID": {
+          "title": "Use Advertiser ID",
+          "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
+          "$ref": "#/definitions/consent-field"
+        },
+        "xdm:personalize": {
+          "$ref": "#/definitions/base-personalization"
+        },
+        "xdm:marketing": {
+          "$ref": "#/definitions/idSpecific-marketing"
+        }
+      }
+    }
+  },
+  "xdm:metadata": {
+    "title": "Consent and Preference Metadata",
+    "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+    "$ref": "#/definitions/metadata"
+  },
+  "simpletype": "`object`"
+}
+```
+
+
+
+
+
+
+
+#### xdm:marketing
+
+undefined
+
+`xdm:marketing`
+* is optional
+* type: reference
+
+##### xdm:marketing Type
+
+
+* []() – `#/definitions/base-marketing-with-subscriptions`
+
+
+
+
+
+
+
+#### xdm:metadata
+##### Consent and Preference Metadata
+
+Metadata that applies to all consents and preferences that don't specify a different value
+
+`xdm:metadata`
+* is optional
+* type: reference
+
+##### xdm:metadata Type
+
+
+* []() – `#/definitions/metadata`
+
+
+
+
+
+
+
+#### xdm:personalize
+
+undefined
+
+`xdm:personalize`
+* is optional
+* type: reference
+
+##### xdm:personalize Type
+
+
+* []() – `#/definitions/base-personalization`
+
+
+
+
+
+
+
+#### xdm:share
+##### Share Data
+
+Sharing of user's data with 2nd or 3rd parties is permitted
+
+`xdm:share`
+* is optional
+* type: reference
+
+##### xdm:share Type
+
+
+* []() – `#/definitions/consent-field`
+
+
+
 
 
 

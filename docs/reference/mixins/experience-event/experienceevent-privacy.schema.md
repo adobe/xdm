@@ -53,7 +53,7 @@ Consent information such as consent format, and consent to personal data.
 Array type: Consent String
 
 All items must be of the type:
-* [Consent String](../../datatypes/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring`
+* [Consent String](../../datatypes/consent/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring`
 
 
 

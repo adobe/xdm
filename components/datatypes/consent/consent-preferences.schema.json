@@ -17,17 +17,7 @@
       "title": "Choice Value",
       "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
       "type": "string",
-      "enum": [
-        "y",
-        "n",
-        "p",
-        "u",
-        "LI",
-        "CT",
-        "CP",
-        "VI",
-        "PI"
-      ],
+      "enum": ["y", "n", "p", "u", "LI", "CT", "CP", "VI", "PI"],
       "meta:enum": {
         "y": "Yes (opt-in)",
         "n": "No (opt-out)",
@@ -107,9 +97,7 @@
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": [
-        "xdm:val"
-      ]
+      "required": ["xdm:val"]
     },
     "personalization-field": {
       "type": "object",
@@ -118,9 +106,7 @@
           "$ref": "#/definitions/choice-value"
         }
       },
-      "required": [
-        "xdm:val"
-      ]
+      "required": ["xdm:val"]
     },
     "base-personalization": {
       "title": "Personalization Preferences",
@@ -147,9 +133,7 @@
           "$ref": "#/definitions/reason"
         }
       },
-      "required": [
-        "xdm:val"
-      ]
+      "required": ["xdm:val"]
     },
     "marketing-with-subscriptions": {
       "type": "object",
@@ -167,9 +151,7 @@
           "$ref": "#/definitions/subscriptions"
         }
       },
-      "required": [
-        "xdm:val"
-      ]
+      "required": ["xdm:val"]
     },
     "base-marketing": {
       "title": "Marketing Preferences",

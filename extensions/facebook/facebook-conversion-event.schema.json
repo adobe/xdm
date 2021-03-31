@@ -22,7 +22,7 @@
   "definitions": {
     "facebook-conversion-event": {
       "properties": {
-        "https://ns.facebook.com/contentCategory": {
+        "facebook:contentCategory": {
           "title": "Facebook Content Category",
           "type": "string",
           "description": "The category of the content associated with the event.",
@@ -30,7 +30,7 @@
             "grocery"
           ]
         },
-        "https://ns.facebook.com/contentType": {
+        "facebook:contentType": {
           "title": "Facebook Content Type",
           "type": "string",
           "description": "It should be set to product or product_group.Use product, if the keys you send represent products. Sent keys could be content_ids or contents.Use product_group, if the keys you send in content_ids represent product groups. Product groups are used to distinguish products that are identical but have variations such as color, material, size or pattern.",
@@ -38,7 +38,7 @@
             "product"
           ]
         },
-        "https://ns.facebook.com/numItems": {
+        "facebook:numItems": {
           "title": "Number Of Items in Cart",
           "type": "string",
           "description": "Use only with InitiateCheckout events. The number of items that a user tries to buy during checkout.",
@@ -46,7 +46,7 @@
             "4"
           ]
         },
-        "https://ns.facebook.com/deliveryCategory": {
+        "facebook:deliveryCategory": {
           "title": "Delivery Category",
           "type": "string",
           "description": "Type of delivery for a purchase event. Supported values are.",
@@ -64,7 +64,7 @@
             "home_delivery": "Home Delivery."
           }
         },
-        "https://ns.facebook.com/status": {
+        "facebook:status": {
           "title": "Registration Event Status",
           "type": "string",
           "description": "Use only with CompleteRegistration events. The status of the registration event.",
@@ -72,7 +72,7 @@
             "registered"
           ]
         },
-        "https://ns.facebook.com/value": {
+        "facebook:value": {
           "title": "Value",
           "type": "number",
           "description": "A numeric value associated with this event. This could be a monetary value or a value in some other metric.",
@@ -80,7 +80,7 @@
             142.54
           ]
         },
-        "https://ns.facebook.com/fbp": {
+        "facebook:fbp": {
           "title": "Facebook Conversion Browser Id",
           "type": "string",
           "description": "When the Facebook pixel is installed on a website, and the pixel uses first-party cookies, the pixel automatically saves a unique identifier to an _fbp cookie for the website domain if one does not already exist. The fbp event parameter value must be of the form version.subdomainIndex.creationTime.randomnumber.",
@@ -88,7 +88,7 @@
             "fb.1.1596403881668.1116446470"
           ]
         },
-        "https://ns.facebook.com/fbc": {
+        "facebook:fbc": {
           "title": "Facebook Conversion Click Id",
           "type": "string",
           "description": "When a user clicks on an ad on Facebook, the link sometimes includes a fbclid query parameter. When the user lands on the target website, if the website has a Facebook pixel that uses first-party cookies, the pixel automatically saves the fbclid query parameter to an _fbc cookie for that website domain. The fbc event parameter value must be of the form version.subdomainIndex.creationTime.fbclid",
@@ -96,7 +96,7 @@
             "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890"
           ]
         },
-        "https://ns.facebook.com/predicted_ltv": {
+        "facebook:predicted_ltv": {
           "title": "Predicted Lifetime Value",
           "type": "number",
           "description": "The predicted lifetime value of a conversion event.",

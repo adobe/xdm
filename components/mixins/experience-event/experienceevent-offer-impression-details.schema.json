@@ -30,7 +30,7 @@
     "offer-impression-details": {
       "properties": {
         "xdm:marketing ": {
-          "type": "object"
+          "type": "object",
           "properties": {
             "xdm:offerClicks": {
               "title": "Offer Clicks",

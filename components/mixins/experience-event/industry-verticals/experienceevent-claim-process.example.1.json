@@ -1,24 +1,9 @@
 {
   "xdm:disputes": {
-    "xdm:claimID": "P102819201D",
-    "xdm:claimStartDate": "2021-03-04T15:52:25+00:00",
-    "xdm:claimStatus": "approved",
-    "xdm:claimSteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "calculator",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    },
-    "xdm:claimType": "automobile",
+    "xdm:ID": "P102819201D",
+    "xdm:startDate": "2021-03-04T15:52:25+00:00",
+    "xdm:status": "approved",
+    "xdm:type": "automobile",
     "xdm:policy": {
       "xdm:policy-details": {
         "xdm:policyEndDate": "2021-07-24",

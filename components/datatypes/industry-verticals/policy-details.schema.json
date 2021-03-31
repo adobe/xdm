@@ -14,46 +14,69 @@
   "definitions": {
     "policy-details": {
       "properties": {
-        "xdm:policyEndDate": {
-          "title": "Policy End Date",
+        "xdm:endDate": {
+          "title": "End Date",
           "type": "string",
           "format": "date-time",
           "description": "Date which the insurance policy coverage ended."
         },
-        "xdm:policyID": {
-          "title": "Policy ID",
+        "xdm:ID": {
+          "title": "ID",
           "type": "string",
           "description": "Unique insurance policy identifier."
         },
-        "xdm:policyName": {
-          "title": "Policy Name",
+        "xdm:name": {
+          "title": "Name",
           "type": "string",
           "description": "Insurance policy name."
         },
-        "xdm:policyStartDate": {
-          "title": "Policy Start Date",
+        "xdm:startDate": {
+          "title": "Start Date",
           "type": "string",
           "format": "date-time",
           "description": "Date which the insurance policy coverage started."
         },
-        "xdm:policyState": {
-          "title": "Policy State",
+        "xdm:State": {
+          "title": "State",
           "type": "string",
-          "description": "State in which the insurance policy is issued."
+          "description": "State/territory in which the insurance policy is issued."
         },
-        "xdm:policyType": {
-          "title": "Policy Type",
+        "xdm:type": {
+          "title": "Type",
           "type": "string",
           "enum": ["home", "automobile", "renter", "boat"],
           "description": "Type of insurance policy, such as home, automobile, renter, or boat."
+        },
+        "xdm:assignedBeneficiary": {
+          "title": "Assigned Beneficiaries",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+          },
+          "description": "Captures the beneficiary(s) assigned to the policy."
+        },
+        "xdm:hasAssignedBeneficiary": {
+          "title": "Has Assigned Beneficiary",
+          "type": "boolean",
+          "description": "Flag determining if the account has a beneficiary assigned."
+        },
+        "xdm:owner": {
+          "title": "Owner",
+          "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
+          "description": "Stores the policyholder's profile information. Extension of the personal profile details data type."
+        },
+        "xdm:benefitAmount": {
+          "title": "Benefit Amount",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "description": "The amount to be paid per the policy terms."
         }
       }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/policy-details"
-    }
-  ],
-  "meta:status": "experimental"
+    },
+    "allOf": [
+      {
+        "$ref": "#/definitions/policy-details"
+      }
+    ],
+    "meta:status": "experimental"
+  }
 }

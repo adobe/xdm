@@ -26,7 +26,7 @@
               "type": "object",
               "description":"Captures all details specific to an individual vehicle reservation",
               "properties": {
-                "xdm:agentId": {
+                "xdm:agentID": {
                   "title": "Agent ID",
                   "type": "string",
                   "description": "Agent or broker responsible for booking the reservation, if applicable."

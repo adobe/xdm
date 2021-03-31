@@ -71,12 +71,12 @@
           "description": "The amount to be paid per the policy terms."
         }
       }
-    },
-    "allOf": [
-      {
-        "$ref": "#/definitions/policy-details"
-      }
-    ],
-    "meta:status": "experimental"
-  }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/policy-details"
+    }
+  ],
+  "meta:status": "experimental"
 }

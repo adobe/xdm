@@ -25,6 +25,12 @@
             "xdm:billPayDetails": {
               "type": "object",
               "properties": {
+                "xdm:steps": {
+                  "title": "Steps",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                  "description": "Extension of toolUsage data type.",
+                  "meta:status": "deprecated"
+                },
                 "xdm:transaction": {
                   "title": "Transaction",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",

@@ -28,27 +28,27 @@
         "xdm:quoteRequestDetails": {
           "type": "object",
           "properties": {
-            "xdm:quoteDiscount": {
-              "title": "Quote Discount",
+            "xdm:discount": {
+              "title": "Discount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the discount amount for a quote displayed to a visitor."
             },
-            "xdm:quotePremium": {
-              "title": "Quote Premium",
+            "xdm:premium": {
+              "title": "Premium",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the premium amount for a quote displayed to a visitor."
             },
-            "xdm:quoteRequestLocation": {
-              "title": "Quote Request Location",
+            "xdm:location": {
+              "title": "Location",
               "type": "string",
               "description": "Captures the postal code used for finding retailers near the visitor's location."
             },
-            "xdm:quoteRequestPersonalDetails": {
-              "title": "Quote Request Personal Details",
+            "xdm:personalDetails": {
+              "title": "Personal Details",
               "$ref": "https://ns.adobe.com/xdm/context/profile-person-details",
               "description": "Extension of the Personal Profile data type."
             },
-            "xdm:quoteRequestSelectedRetailer": {
+            "xdm:selectedRetailer": {
               "title": "Selected Retailer",
               "type": "string",
               "description": "Captures the selected retailer for a quote request, if applicable. "

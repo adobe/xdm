@@ -1,7 +1,7 @@
 {
-  "xdm:quoteRequestSteps": {
-    "xdm:quoteRequestLocation": "95110",
-    "xdm:quoteRequestPersonalDetails": {
+  "xdm:quoteRequestDetails": {
+    "xdm:location": "95110",
+    "xdm:personalDetails": {
       "xdm:person": {
         "xdm:name": {
           "xdm:firstName": "Jane",
@@ -12,19 +12,6 @@
         "xdm:birthDayAndMonth": "01-03",
         "xdm:gender": "female"
       }
-    },
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "calculator",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "enter parameters",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "generic"
     }
   }
 }

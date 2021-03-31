@@ -64,7 +64,7 @@
           "title": "steps",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
-		  "meta:status": "deprecated"
+          "meta:status": "deprecated"
         }
       }
     }

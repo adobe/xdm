@@ -36,10 +36,10 @@
           "format": "date-time",
           "description": "Date which the insurance policy coverage started."
         },
-        "xdm:State": {
-          "title": "State",
-          "type": "string",
-          "description": "State/territory in which the insurance policy is issued."
+        "xdm:location": {
+          "title": "Location",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Location in which the insurance policy is issued."
         },
         "xdm:type": {
           "title": "Type",

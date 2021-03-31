@@ -188,7 +188,7 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 Array type: Consent String
 
 All items must be of the type:
-* [Consent String](../../datatypes/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring`
+* [Consent String](../../datatypes/consent/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring`
 
 
 

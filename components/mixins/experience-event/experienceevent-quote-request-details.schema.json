@@ -52,6 +52,12 @@
               "title": "Selected Retailer",
               "type": "string",
               "description": "Captures the selected retailer for a quote request, if applicable. "
+            },
+            "xdm:steps": {
+              "title": "Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             }
           }
         }

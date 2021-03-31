@@ -60,6 +60,12 @@
               "title": "Policy",
               "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
               "description": "Extension of Policy data type."
+            },
+            "xdm:steps": {
+              "title": "Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             }
           }
         }

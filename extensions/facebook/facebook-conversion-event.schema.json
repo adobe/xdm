@@ -112,7 +112,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-commerce"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/experienceevent-search"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-search"
     },
     {
       "$ref": "#/definitions/facebook-conversion-event"

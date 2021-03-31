@@ -41,24 +41,24 @@
                   "format": "date-time",
                   "description": "Records the scheduled date/time of the transaction."
                 },
-                "xdm:billerDetails": {
+                "xdm:serviceProvider": {
                   "type": "object",
                   "description": "Tracks all details related to a biller.",
                   "properties": {
                     "xdm:name": {
-                      "title": "Name",
+                      "title": "Service Provider Name",
                       "type": "string",
-                      "description": "The name/nickname for the biller."
+                      "description": "The name/nickname for the service provider."
                     },
                     "xdm:address": {
-                      "title": "Biller Address",
+                      "title": "Service Provider Address",
                       "$ref": "https://ns.adobe.com/xdm/common/address",
-                      "description": "Biller address"
+                      "description": "Service provider address"
                     },
-                    "xdm:accountID": {
-                      "title": "Account ID",
+                    "xdm:userAccountID": {
+                      "title": "User Account ID",
                       "type": "string",
-                      "description": "The user account number for the biller."
+                      "description": "The user account ID for the service provider."
                     }
                   }
                 }

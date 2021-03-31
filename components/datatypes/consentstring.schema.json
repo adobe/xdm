@@ -1,0 +1,73 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/consentstring"
+    }
+  ],
+  "meta:extensible": true,
+  "meta:status": "stable",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "Consent String as presented by user along with standard information to help consent enforcer to parse the String.",
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "title": "Consent String",
+  "type": "object",
+  "definitions": {
+    "consentstring": {
+      "properties": {
+        "xdm:consentStandardVersion": {
+          "description": "Standards version to accurately define the format of the consent string as set by consent management services.",
+          "title": "Standards Version",
+          "type": "string",
+          "examples": [
+            "2.0"
+          ]
+        },
+        "xdm:consentStandard": {
+          "description": "This helps determine the format of the consent string as set by consent management services.",
+          "title": "Standard for the consent",
+          "type": "string",
+          "examples": [
+            "IAB TCF"
+          ]
+        },
+        "xdm:consentStringValue": {
+          "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string.",
+          "title": "Consent String",
+          "type": "string",
+          "examples": [
+            "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA"
+          ]
+        },
+        "xdm:gdprApplies": {
+          "default": false,
+          "description": "If this is true, it means this consent string needs to be processed for consent enforcement.",
+          "title": "GDPR Applies",
+          "type": "boolean",
+          "examples": [
+            true
+          ]
+        },
+        "xdm:containsPersonalData": {
+          "description": "If this is true, it means consent is coming with personal data.",
+          "title": "Contains personal data",
+          "type": "boolean",
+          "examples": [
+            false
+          ]
+        }
+      },
+      "required": [
+        "xdm:gdprApplies"
+      ]
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/context/consentstring"
+}

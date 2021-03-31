@@ -1,309 +1,313 @@
 {
+  "allOf": [
+    {
+      "$ref": "#/definitions/@context"
+    }
+  ],
+  "meta:status": "stable",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "",
   "meta:license": [
     "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/common/extensible",
   "type": "object",
   "title": "Extensibility base schema",
-  "description": "",
   "definitions": {
     "@context": {
       "oneOf": [
         {
-          "type": "object",
           "patternProperties": {
-            "@type": {},
-            "@id": {},
-            "^xdm:.*$": {},
-            "^core:.*$": {},
-            "^meta:.*$": {},
-            "^xmpMM:.*$": {},
-            "^xmpDM:.*$": {},
+            "^xml:.*$": {},
+            "^bizible:.*$": {},
             "^xmpRights:.*$": {},
-            "^xmpTPg:.*$": {},
-            "^xmp:.*$": {},
-            "^stDim:.*$": {},
-            "^dc:.*$": {},
+            "@type": {},
+            "^marketo:.*$": {},
+            "^xdm:.*$": {},
+            "^owl:.*$": {},
+            "^stLayerGroup:.*$": {},
+            "^core:.*$": {},
+            "^photoshop:.*$": {},
             "^skos:.*$": {},
+            "^exif:.*$": {},
             "^rdf:.*$": {},
             "^rdfs:.*$": {},
-            "^owl:.*$": {},
-            "^xsd:.*$": {},
-            "^xml:.*$": {},
-            "^photoshop:.*$": {},
-            "^tiff:.*$": {},
-            "^plus:.*$": {},
-            "^cc:.*$": {},
-            "^stEvt:.*$": {},
-            "^stFnt:.*$": {},
-            "^stLayerGroup:.*$": {},
-            "^stArtboard:.*$": {},
-            "^exif:.*$": {},
-            "^activitystreams:.*$": {},
-            "^schema:.*$": {},
-            "^repo:.*$": {},
-            "^iptc4xmpExt:.*$": {},
-            "^dsp:.*$": {},
             "^searchads:.*$": {},
+            "^stDim:.*$": {},
+            "@id": {},
+            "^schema:.*$": {},
             "^adcloud:.*$": {},
+            "^xmpTPg:.*$": {},
+            "^tiff:.*$": {},
             "^id3:.*$": {},
+            "^xmpMM:.*$": {},
+            "^xsd:.*$": {},
+            "^meta:.*$": {},
+            "^cc:.*$": {},
+            "^repo:.*$": {},
+            "^stArtboard:.*$": {},
+            "^dsp:.*$": {},
             "^dataDotCom:.*$": {},
-            "^marketo:.*$": {},
-            "^bizible:.*$": {},
+            "^xmpDM:.*$": {},
+            "^xmp:.*$": {},
+            "^iptc4xmpExt:.*$": {},
+            "^dc:.*$": {},
+            "^stEvt:.*$": {},
+            "^activitystreams:.*$": {},
+            "^plus:.*$": {},
             ".+://.+": {},
-            "@.*": {}
+            "@.*": {},
+            "^stFnt:.*$": {}
           },
-          "additionalProperties": false
+          "additionalProperties": false,
+          "type": "object"
         },
         {
+          "patternProperties": {
+            "^xml:.*$": {},
+            "^bizible:.*$": {},
+            "^xmpRights:.*$": {},
+            "^marketo:.*$": {},
+            "^xdm:.*$": {},
+            "^owl:.*$": {},
+            "^stLayerGroup:.*$": {},
+            "^core:.*$": {},
+            "^photoshop:.*$": {},
+            "^skos:.*$": {},
+            "^exif:.*$": {},
+            "^rdf:.*$": {},
+            "^rdfs:.*$": {},
+            "^searchads:.*$": {},
+            "^stDim:.*$": {},
+            "^schema:.*$": {},
+            "^adcloud:.*$": {},
+            "^xmpTPg:.*$": {},
+            "^tiff:.*$": {},
+            "^id3:.*$": {},
+            "^xmpMM:.*$": {},
+            "^xsd:.*$": {},
+            "^meta:.*$": {},
+            "^cc:.*$": {},
+            "^repo:.*$": {},
+            "^stArtboard:.*$": {},
+            "^dsp:.*$": {},
+            "^dataDotCom:.*$": {},
+            "^xmpDM:.*$": {},
+            "^xmp:.*$": {},
+            "^iptc4xmpExt:.*$": {},
+            "^dc:.*$": {},
+            "^stEvt:.*$": {},
+            "^activitystreams:.*$": {},
+            "^plus:.*$": {},
+            ".+://.+": {},
+            "^stFnt:.*$": {}
+          },
+          "additionalProperties": false,
           "type": "object",
           "properties": {
             "@context": {
+              "additionalProperties": false,
               "type": "object",
               "properties": {
                 "xdm": {
-                  "type": "string",
+                  "const": "https://ns.adobe.com/xdm/",
                   "format": "url",
-                  "const": "https://ns.adobe.com/xdm/"
-                },
-                "xdm:descriptorOneToOne": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne"
-                },
-                "core": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/adobecloud/core/1.0/"
-                },
-                "meta": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/adobecloud/meta/1.0/"
-                },
-                "xmpMM": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/mm/"
-                },
-                "xmpDM": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xmp/1.0/DynamicMedia/"
-                },
-                "xmpRights": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/rights/"
-                },
-                "xmpTPg": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/t/pg/"
-                },
-                "xmp": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/"
-                },
-                "stDim": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/sType/Dimensions#"
-                },
-                "dc": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://purl.org/dc/elements/1.1/"
-                },
-                "skos": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/2004/02/skos/core#"
-                },
-                "rdf": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                },
-                "rdfs": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/2000/01/rdf-schema#"
-                },
-                "owl": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/2002/07/owl#"
-                },
-                "xsd": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/2001/XMLSchema#"
-                },
-                "xml": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://www.w3.org/XML/1998/namespace/"
-                },
-                "photoshop": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/photoshop/1.0/"
-                },
-                "tiff": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/tiff/1.0/"
-                },
-                "plus": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.useplus.org/ldf/xmp/1.0/"
-                },
-                "cc": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://creativecommons.org/ns#"
-                },
-                "stEvt": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
-                },
-                "stFnt": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/xap/1.0/sType/Font#"
-                },
-                "stLayerGroup": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/core/1.0/sType/LayerGroup#"
-                },
-                "stArtboard": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/core/1.0/sType/Artboard#"
-                },
-                "exif": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/exif/1.0/#"
-                },
-                "activitystreams": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "https://www.w3.org/ns/activitystreams"
+                  "type": "string"
                 },
                 "schema": {
-                  "type": "string",
+                  "const": "http://schema.org/",
                   "format": "url",
-                  "const": "http://schema.org/"
-                },
-                "repo": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://ns.adobe.com/adobecloud/core/1.0/"
-                },
-                "iptc4xmpExt": {
-                  "type": "string",
-                  "format": "url",
-                  "const": "http://iptc.org/std/Iptc4xmpExt/1.1/"
+                  "type": "string"
                 },
                 "dsp": {
-                  "type": "string",
+                  "const": "https://ns.adobe.com/adcloud/dsp/",
                   "format": "url",
-                  "const": "https://ns.adobe.com/adcloud/dsp/"
+                  "type": "string"
                 },
-                "searchads": {
-                  "type": "string",
+                "xmpRights": {
+                  "const": "http://ns.adobe.com/xap/1.0/rights/",
                   "format": "url",
-                  "const": "https://ns.adobe.com/adcloud/searchads/"
+                  "type": "string"
                 },
-                "adcloud": {
-                  "type": "string",
+                "stFnt": {
+                  "const": "http://ns.adobe.com/xap/1.0/sType/Font#",
                   "format": "url",
-                  "const": "https://ns.adobe.com/adcloud/"
+                  "type": "string"
                 },
-                "id3": {
-                  "type": "string",
+                "tiff": {
+                  "const": "http://ns.adobe.com/tiff/1.0/",
                   "format": "url",
-                  "const": "http://id3.org/ns/2.4/"
+                  "type": "string"
                 },
-                "dataDotCom": {
-                  "type": "string",
+                "owl": {
+                  "const": "http://www.w3.org/2002/07/owl#",
                   "format": "url",
-                  "const": "https://www.data.com/"
+                  "type": "string"
                 },
-                "marketo": {
-                  "type": "string",
+                "repo": {
+                  "const": "http://ns.adobe.com/adobecloud/core/1.0/",
                   "format": "url",
-                  "const": "https://ns.adobe.com/marketo/"
+                  "type": "string"
+                },
+                "xsd": {
+                  "const": "http://www.w3.org/2001/XMLSchema#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "stEvt": {
+                  "const": "http://ns.adobe.com/xap/1.0/sType/ResourceEvent#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "xmpTPg": {
+                  "const": "http://ns.adobe.com/xap/1.0/t/pg/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "skos": {
+                  "const": "http://www.w3.org/2004/02/skos/core#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "rdfs": {
+                  "const": "http://www.w3.org/2000/01/rdf-schema#",
+                  "format": "url",
+                  "type": "string"
                 },
                 "bizible": {
-                  "type": "string",
+                  "const": "https://ns.adobe.com/bizible/",
                   "format": "url",
-                  "const": "https://ns.adobe.com/bizible/"
+                  "type": "string"
+                },
+                "xml": {
+                  "const": "http://www.w3.org/XML/1998/namespace/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "stArtboard": {
+                  "const": "http://ns.adobe.com/core/1.0/sType/Artboard#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "xmp": {
+                  "const": "http://ns.adobe.com/xap/1.0/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "xdm:descriptorOneToOne": {
+                  "const": "https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne",
+                  "format": "url",
+                  "type": "string"
+                },
+                "cc": {
+                  "const": "http://creativecommons.org/ns#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "iptc4xmpExt": {
+                  "const": "http://iptc.org/std/Iptc4xmpExt/1.1/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "xmpDM": {
+                  "const": "http://ns.adobe.com/xmp/1.0/DynamicMedia/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "photoshop": {
+                  "const": "http://ns.adobe.com/photoshop/1.0/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "stDim": {
+                  "const": "http://ns.adobe.com/xap/1.0/sType/Dimensions#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "plus": {
+                  "const": "http://ns.useplus.org/ldf/xmp/1.0/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "core": {
+                  "const": "http://ns.adobe.com/adobecloud/core/1.0/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "adcloud": {
+                  "const": "https://ns.adobe.com/adcloud/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "xmpMM": {
+                  "const": "http://ns.adobe.com/xap/1.0/mm/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "rdf": {
+                  "const": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "searchads": {
+                  "const": "https://ns.adobe.com/adcloud/searchads/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "meta": {
+                  "const": "http://ns.adobe.com/adobecloud/meta/1.0/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "activitystreams": {
+                  "const": "https://www.w3.org/ns/activitystreams",
+                  "format": "url",
+                  "type": "string"
+                },
+                "marketo": {
+                  "const": "https://ns.adobe.com/marketo/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "id3": {
+                  "const": "http://id3.org/ns/2.4/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "stLayerGroup": {
+                  "const": "http://ns.adobe.com/core/1.0/sType/LayerGroup#",
+                  "format": "url",
+                  "type": "string"
+                },
+                "dataDotCom": {
+                  "const": "https://www.data.com/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "dc": {
+                  "const": "http://purl.org/dc/elements/1.1/",
+                  "format": "url",
+                  "type": "string"
+                },
+                "exif": {
+                  "const": "http://ns.adobe.com/exif/1.0/#",
+                  "format": "url",
+                  "type": "string"
                 }
               },
-              "additionalProperties": false,
-              "required": ["xdm"]
+              "required": [
+                "xdm"
+              ]
             }
           },
-          "patternProperties": {
-            "^xdm:.*$": {},
-            "^core:.*$": {},
-            "^meta:.*$": {},
-            "^xmpMM:.*$": {},
-            "^xmpDM:.*$": {},
-            "^xmpRights:.*$": {},
-            "^xmpTPg:.*$": {},
-            "^xmp:.*$": {},
-            "^stDim:.*$": {},
-            "^dc:.*$": {},
-            "^skos:.*$": {},
-            "^rdf:.*$": {},
-            "^rdfs:.*$": {},
-            "^owl:.*$": {},
-            "^xsd:.*$": {},
-            "^xml:.*$": {},
-            "^photoshop:.*$": {},
-            "^tiff:.*$": {},
-            "^plus:.*$": {},
-            "^cc:.*$": {},
-            "^stEvt:.*$": {},
-            "^stFnt:.*$": {},
-            "^stLayerGroup:.*$": {},
-            "^stArtboard:.*$": {},
-            "^exif:.*$": {},
-            "^activitystreams:.*$": {},
-            "^schema:.*$": {},
-            "^repo:.*$": {},
-            "^iptc4xmpExt:.*$": {},
-            "^dsp:.*$": {},
-            "^searchads:.*$": {},
-            "^adcloud:.*$": {},
-            "^id3:.*$": {},
-            "^dataDotCom:.*$": {},
-            "^marketo:.*$": {},
-            "^bizible:.*$": {},
-            ".+://.+": {}
-          },
-          "required": ["@context"],
-          "additionalProperties": false
+          "required": [
+            "@context"
+          ]
         }
       ]
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/@context"
-    }
-  ],
-  "meta:status": "stable"
+  "$id": "https://ns.adobe.com/xdm/common/extensible"
 }

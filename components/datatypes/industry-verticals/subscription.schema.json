@@ -1,150 +1,4 @@
 {
-  "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/context/subscription",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Subscription",
-  "type": "object",
-  "meta:extensible": true,
-  "description": "Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.",
-  "definitions": {
-    "subscription": {
-      "properties": {
-        "@id": {
-          "title": "Identifier",
-          "type": "string",
-          "description": "Unique identifier for the subscription instance."
-        },
-        "xdm:subscriber": {
-          "title": "Subscriber",
-          "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "The owner of the subscription."
-        },
-        "xdm:device": {
-          "title": "Device",
-          "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device linked to the subscription."
-        },
-        "xdm:environment": {
-          "title": "Environment",
-          "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application."
-        },
-        "xdm:SKU": {
-          "title": "SKU",
-          "type": "string",
-          "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
-        },
-        "xdm:planName": {
-          "title": "Plan name",
-          "type": "string",
-          "description": "The human readable name for the subscription."
-        },
-        "xdm:type": {
-          "title": "Type",
-          "type": "string",
-          "description": "The scope of entitlement in relation to how many people are covered by the subscription."
-        },
-        "xdm:country": {
-          "title": "Country",
-          "type": "string",
-          "description": "The country that the subscription contractual and agreement terms are rooted in."
-        },
-        "xdm:startDate": {
-          "title": "Start date",
-          "type": "string",
-          "format": "date",
-          "description": "The date the subscription begins."
-        },
-        "xdm:endDate": {
-          "title": "End date",
-          "type": "string",
-          "format": "date",
-          "description": "The date the current subscription term ends."
-        },
-        "xdm:term": {
-          "title": "Term",
-          "type": "integer",
-          "description": "The numeric value of the term."
-        },
-        "xdm:termUnitOfTime": {
-          "title": "Term unit of time",
-          "type": "string",
-          "description": "The unit of time for the term period."
-        },
-        "xdm:renew": {
-          "title": "Renew",
-          "type": "string",
-          "description": "The agreed way that the subscription may continue after the end date."
-        },
-        "xdm:topUp": {
-          "title": "Top up",
-          "type": "string",
-          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
-        },
-        "xdm:status": {
-          "title": "Status",
-          "type": "string",
-          "description": "The current status of the subscription."
-        },
-        "xdm:contractID": {
-          "title": "Contract ID",
-          "type": "string",
-          "description": "Unique ID for the contract that governs this subscription."
-        },
-        "xdm:paymentMethod": {
-          "title": "Payment method",
-          "type": "string",
-          "description": "The payment method for recurring payments."
-        },
-        "xdm:billingPeriod": {
-          "title": "Billing period",
-          "type": "string",
-          "description": "The duration between billings."
-        },
-        "xdm:billingStartDate": {
-          "title": "Billing start date",
-          "type": "string",
-          "format": "date",
-          "description": "The date when the first bill is due."
-        },
-        "xdm:chargeMethod": {
-          "title": "Charge method",
-          "type": "string",
-          "description": "The way the billing is setup to charge the customer."
-        },
-        "xdm:paymentStatus": {
-          "title": "Payment status",
-          "type": "string",
-          "description": "The standing of the account."
-        },
-        "xdm:category": {
-          "title": "Category",
-          "type": "string",
-          "description": "The main, top level categorization of this type of subscription."
-        },
-        "xdm:subCategory": {
-          "title": "Sub category",
-          "type": "string",
-          "description": "The specific sub categorization of the subscription."
-        },
-        "xdm:revision": {
-          "title": "Revision",
-          "type": "string",
-          "description": "The identification between subscriptions of the same name and category hierarchy."
-        },
-        "xdm:reason": {
-          "title": "Reason",
-          "type": "string",
-          "description": "The general intent the member has for the use of the subscription."
-        }
-      }
-    }
-  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -153,5 +7,193 @@
       "$ref": "#/definitions/subscription"
     }
   ],
-  "meta:status": "stable"
+  "meta:extensible": true,
+  "meta:status": "stable",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "Subscriptions are licensed entitlements to software, services, or goods that are utilized in a time or usage based way.",
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "title": "Subscription",
+  "type": "object",
+  "definitions": {
+    "subscription": {
+      "properties": {
+        "xdm:endDate": {
+          "format": "date",
+          "description": "The date the current subscription term ends.",
+          "title": "End date",
+          "type": "string",
+          "examples": [
+            "2002-01-01"
+          ]
+        },
+        "xdm:subCategory": {
+          "description": "The specific sub categorization of the subscription.",
+          "title": "Sub category",
+          "type": "string"
+        },
+        "xdm:contractID": {
+          "description": "Unique ID for the contract that governs this subscription.",
+          "title": "Contract ID",
+          "type": "string"
+        },
+        "xdm:termUnitOfTime": {
+          "description": "The unit of time for the term period.",
+          "title": "Term unit of time",
+          "type": "string",
+          "examples": [
+            "Month"
+          ]
+        },
+        "xdm:paymentMethod": {
+          "description": "The payment method for recurring payments.",
+          "title": "Payment method",
+          "type": "string",
+          "examples": [
+            "creditCard"
+          ]
+        },
+        "xdm:billingStartDate": {
+          "format": "date",
+          "description": "The date when the first bill is due.",
+          "title": "Billing start date",
+          "type": "string",
+          "examples": [
+            "2001-01-01"
+          ]
+        },
+        "xdm:planName": {
+          "description": "The human readable name for the subscription.",
+          "title": "Plan name",
+          "type": "string",
+          "examples": [
+            "PS+ 12 Month Membership"
+          ]
+        },
+        "xdm:paymentStatus": {
+          "description": "The standing of the account.",
+          "title": "Payment status",
+          "type": "string",
+          "examples": [
+            "paid"
+          ]
+        },
+        "xdm:startDate": {
+          "format": "date",
+          "description": "The date the subscription begins.",
+          "title": "Start date",
+          "type": "string",
+          "examples": [
+            "2001-01-01"
+          ]
+        },
+        "@id": {
+          "description": "Unique identifier for the subscription instance.",
+          "title": "Identifier",
+          "type": "string",
+          "examples": [
+            "https://data.adobe.io/subscriptionid-123"
+          ]
+        },
+        "xdm:term": {
+          "description": "The numeric value of the term.",
+          "title": "Term",
+          "type": "integer",
+          "examples": [
+            12
+          ]
+        },
+        "xdm:revision": {
+          "description": "The identification between subscriptions of the same name and category hierarchy.",
+          "title": "Revision",
+          "type": "string"
+        },
+        "xdm:billingPeriod": {
+          "description": "The duration between billings.",
+          "title": "Billing period",
+          "type": "string",
+          "examples": [
+            "Month"
+          ]
+        },
+        "xdm:subscriber": {
+          "description": "The owner of the subscription.",
+          "title": "Subscriber",
+          "$ref": "https://ns.adobe.com/xdm/context/person"
+        },
+        "xdm:SKU": {
+          "description": "Stock keeping unit (SKU), a generally unique identifier for a product.",
+          "title": "SKU",
+          "type": "string",
+          "examples": [
+            "12345678"
+          ]
+        },
+        "xdm:reason": {
+          "description": "The general intent the member has for the use of the subscription.",
+          "title": "Reason",
+          "type": "string"
+        },
+        "xdm:renew": {
+          "description": "The agreed way that the subscription may continue after the end date.",
+          "title": "Renew",
+          "type": "string"
+        },
+        "xdm:device": {
+          "description": "The device linked to the subscription.",
+          "title": "Device",
+          "$ref": "https://ns.adobe.com/xdm/context/device"
+        },
+        "xdm:category": {
+          "description": "The main, top level categorization of this type of subscription.",
+          "title": "Category",
+          "type": "string"
+        },
+        "xdm:status": {
+          "description": "The current status of the subscription.",
+          "title": "Status",
+          "type": "string",
+          "examples": [
+            "active"
+          ]
+        },
+        "xdm:type": {
+          "description": "The scope of entitlement in relation to how many people are covered by the subscription.",
+          "title": "Type",
+          "type": "string",
+          "examples": [
+            "mobile"
+          ]
+        },
+        "xdm:topUp": {
+          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period.",
+          "title": "Top up",
+          "type": "string"
+        },
+        "xdm:chargeMethod": {
+          "description": "The way the billing is setup to charge the customer.",
+          "title": "Charge method",
+          "type": "string"
+        },
+        "xdm:environment": {
+          "description": "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application.",
+          "title": "Environment",
+          "$ref": "https://ns.adobe.com/xdm/context/environment"
+        },
+        "xdm:country": {
+          "description": "The country that the subscription contractual and agreement terms are rooted in.",
+          "title": "Country",
+          "type": "string",
+          "examples": [
+            "USA"
+          ]
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/context/subscription"
 }

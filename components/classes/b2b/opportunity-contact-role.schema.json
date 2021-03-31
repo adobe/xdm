@@ -1,39 +1,25 @@
 {
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:extensible": true,
+  "meta:status": "deprecated",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:abstract": true,
+  "description": "Opportunity Contact Role",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunity-contact-role",
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Buying Group",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Opportunity Contact Role",
-  "definitions": {
-    "opportunity-contact-role": {
-      "properties": {
-        "xdm:opportunityContactID": {
-          "title": "opportunity ContactID",
-          "description": "A Unique Key describing a combination of OpportunityID and contactID.",
-          "type": "string"
-        },
-        "xdm:opportunityID": {
-          "title": "Opportunity ID",
-          "description": "Opportunity ID unique identifier.",
-          "type": "string"
-        },
-        "xdm:contactID": {
-          "title": "Contact ID",
-          "description": "Contact ID unique identifier.",
-          "type": "string"
-        }
-      }
-    }
-  },
+  "required": [
+    "xdm:opportunityContactID",
+    "xdm:opportunityID",
+    "xdm:contactID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -48,10 +34,35 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": [
-    "xdm:opportunityContactID",
-    "xdm:opportunityID",
-    "xdm:contactID"
-  ],
-  "meta:status": "deprecated"
+  "definitions": {
+    "opportunity-contact-role": {
+      "properties": {
+        "xdm:contactID": {
+          "examples": [
+            "456"
+          ],
+          "description": "Contact ID unique identifier.",
+          "title": "Contact ID",
+          "type": "string"
+        },
+        "xdm:opportunityContactID": {
+          "examples": [
+            "123456"
+          ],
+          "description": "A Unique Key describing a combination of OpportunityID and contactID.",
+          "title": "opportunity ContactID",
+          "type": "string"
+        },
+        "xdm:opportunityID": {
+          "examples": [
+            "123"
+          ],
+          "description": "Opportunity ID unique identifier.",
+          "title": "Opportunity ID",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/context/opportunity-contact-role"
 }

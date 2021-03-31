@@ -1,39 +1,23 @@
 {
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:extensible": true,
+  "meta:status": "experimental",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:abstract": true,
+  "description": "Members/Persons/Contacts etc. associated with a marketing list.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/classes/marketing-list-member",
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Marketing List Members",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Members/Persons/Contacts etc. associated with a marketing list.",
-  "definitions": {
-    "marketing-list-member": {
-      "properties": {
-        "xdm:marketingListMemberID": {
-          "title": "Marketing List Member ID",
-          "description": "Unique ID for the membership of this person to this marketing list.",
-          "type": "string"
-        },
-        "xdm:personID": {
-          "title": "Person Identifier",
-          "description": "Unique ID for the person who is a member of this marketing list.",
-          "type": "string"
-        },
-        "xdm:marketingListID": {
-          "title": "Marketing List Identifier",
-          "description": "Unique ID for the marketing list this person is a member of.",
-          "type": "string"
-        }
-      }
-    }
-  },
+  "required": [
+    "xdm:marketingListMemberID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -48,6 +32,29 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListMemberID"],
-  "meta:status": "experimental"
+  "definitions": {
+    "marketing-list-member": {
+      "properties": {
+        "xdm:personID": {
+          "description": "Unique ID for the person who is a member of this marketing list.",
+          "title": "Person Identifier",
+          "type": "string"
+        },
+        "xdm:marketingListMemberID": {
+          "description": "Unique ID for the membership of this person to this marketing list.",
+          "title": "Marketing List Member ID",
+          "type": "string",
+          "examples": [
+            "MKTMBR11111"
+          ]
+        },
+        "xdm:marketingListID": {
+          "description": "Unique ID for the marketing list this person is a member of.",
+          "title": "Marketing List Identifier",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/classes/marketing-list-member"
 }

@@ -1,17 +1,28 @@
 {
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:extensible": true,
+  "meta:status": "experimental",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:abstract": true,
+  "description": "For promition information such as details, and start and end date.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/classes/promotion",
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Promotion",
   "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/promotion"
+    }
+  ],
   "meta:tags": {
     "industry": [
       "retail",
@@ -27,57 +38,69 @@
       "public_sector"
     ]
   },
-  "description": "For promition information such as details, and start and end date.",
   "definitions": {
     "promotion": {
       "properties": {
-        "xdm:endDate": {
-          "title": "End Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Date on which the promotion ceases to be valid."
-        },
-        "xdm:promoCreative": {
-          "title": "Promotion Creative",
-          "type": "string",
-          "description": "The text or creative variation associated with the promotion."
-        },
-        "xdm:promotionDetails": {
-          "title": "Promotion Details",
-          "type": "string",
-          "description": "Details of the promotion such as percentage off, or other restrictions."
-        },
-        "xdm:ID": {
-          "title": "Promotion ID",
-          "type": "string",
-          "description": "The ID associated with the promotion."
-        },
-        "xdm:promoName": {
-          "title": "Promotion Name",
-          "type": "string",
-          "description": "Promotion name"
-        },
         "xdm:promoPosition": {
+          "description": "Promotion position on site.",
           "title": "Promotion Position",
           "type": "string",
-          "description": "Promotion position on site."
+          "examples": [
+            "top"
+          ]
         },
         "xdm:startDate": {
+          "format": "date-time",
+          "description": "Date on which the promotion is valid.",
           "title": "Start Date",
           "type": "string",
+          "examples": [
+            "2021-09-01T15:52:25+00:00"
+          ]
+        },
+        "xdm:endDate": {
           "format": "date-time",
-          "description": "Date on which the promotion is valid."
+          "description": "Date on which the promotion ceases to be valid.",
+          "title": "End Date",
+          "type": "string",
+          "examples": [
+            "2021-09-22T15:52:25+00:00"
+          ]
+        },
+        "xdm:promotionDetails": {
+          "description": "Details of the promotion such as percentage off, or other restrictions.",
+          "title": "Promotion Details",
+          "type": "string",
+          "examples": [
+            "10 Percent Off Campaign for Affiliate Referrers"
+          ]
+        },
+        "xdm:ID": {
+          "description": "The ID associated with the promotion.",
+          "title": "Promotion ID",
+          "type": "string",
+          "examples": [
+            "10OFF_FALL2021"
+          ]
+        },
+        "xdm:promoCreative": {
+          "description": "The text or creative variation associated with the promotion.",
+          "title": "Promotion Creative",
+          "type": "string",
+          "examples": [
+            "none"
+          ]
+        },
+        "xdm:promoName": {
+          "description": "Promotion name",
+          "title": "Promotion Name",
+          "type": "string",
+          "examples": [
+            "10 Percent Off"
+          ]
         }
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
-      "$ref": "#/definitions/promotion"
-    }
-  ],
-  "meta:status": "experimental"
+  "$id": "https://ns.adobe.com/xdm/classes/promotion"
 }

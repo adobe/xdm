@@ -1,55 +1,23 @@
 {
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:extensible": true,
+  "meta:status": "experimental",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:abstract": true,
+  "description": "This class is used to capture minimum set of properties that define business opportunity.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/opportunity",
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Opportunity",
   "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "This class is used to capture minimum set of properties that define business opportunity.",
-  "definitions": {
-    "opportunity": {
-      "properties": {
-        "xdm:opportunityID": {
-          "title": "Opportunity ID",
-          "description": "Unique ID of the opportunity.",
-          "type": "string"
-        },
-        "xdm:opportunityName": {
-          "title": "Opportunity Name",
-          "description": "Name of the opportunity.",
-          "type": "string"
-        },
-        "xdm:opportunityDescription": {
-          "title": "Opportunity Description",
-          "description": "Description of the opportunity.",
-          "type": "string"
-        },
-        "xdm:opportunityType": {
-          "title": "Opportunity Type",
-          "description": "Type of the opportunity.",
-          "type": "string"
-        },
-        "xdm:opportunityStage": {
-          "title": "Opportunity Stage",
-          "description": "Sales stage of the opportunity.",
-          "type": "string"
-        },
-        "xdm:accountID": {
-          "title": "Account ID",
-          "description": "Unique ID of the account this opportunity is associated with.",
-          "type": "string"
-        }
-      }
-    }
-  },
+  "required": [
+    "xdm:opportunityID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -64,6 +32,56 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:opportunityID"],
-  "meta:status": "experimental"
+  "auditable": true,
+  "definitions": {
+    "opportunity": {
+      "properties": {
+        "xdm:opportunityName": {
+          "description": "Name of the opportunity.",
+          "title": "Opportunity Name",
+          "type": "string",
+          "examples": [
+            "Best Buy AEP"
+          ]
+        },
+        "xdm:accountID": {
+          "description": "Unique ID of the account this opportunity is associated with.",
+          "title": "Account ID",
+          "type": "string"
+        },
+        "xdm:opportunityType": {
+          "description": "Type of the opportunity.",
+          "title": "Opportunity Type",
+          "type": "string",
+          "examples": [
+            "business"
+          ]
+        },
+        "xdm:opportunityDescription": {
+          "description": "Description of the opportunity.",
+          "title": "Opportunity Description",
+          "type": "string",
+          "examples": [
+            "This opportunity is for Best buy customer to buy AEP product"
+          ]
+        },
+        "xdm:opportunityID": {
+          "description": "Unique ID of the opportunity.",
+          "title": "Opportunity ID",
+          "type": "string",
+          "examples": [
+            "12345",
+            "jkghdiuw68o",
+            "123"
+          ]
+        },
+        "xdm:opportunityStage": {
+          "description": "Sales stage of the opportunity.",
+          "title": "Opportunity Stage",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/context/opportunity"
 }

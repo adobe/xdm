@@ -1,50 +1,23 @@
 {
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "meta:extensible": true,
+  "meta:status": "experimental",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:abstract": true,
+  "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/classes/opportunity-person",
-  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Opportunity Person Relation",
   "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
-  "definitions": {
-    "opportunity-person": {
-      "properties": {
-        "xdm:opportunityPersonID": {
-          "title": "Opportunity Person ID",
-          "description": "Unique ID for the relationship between the opportunity and the person.",
-          "type": "string"
-        },
-        "xdm:opportunityID": {
-          "title": "Opportunity ID",
-          "description": "Unique ID for the opportunity in this opportunity person relationship.",
-          "type": "string"
-        },
-        "xdm:personID": {
-          "title": "Person ID",
-          "description": "Unique ID for the person in this opportunity person relationship.",
-          "type": "string"
-        },
-        "xdm:personRole": {
-          "title": "Person Role",
-          "description": "Role of the person on this opportunity.",
-          "type": "string"
-        },
-        "xdm:isPrimary": {
-          "title": "Primary Flag",
-          "description": "Boolean indicating if the person is the primary contact on this opportunity.",
-          "type": "boolean"
-        }
-      }
-    }
-  },
+  "required": [
+    "xdm:opportunityPersonID"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -59,6 +32,52 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:opportunityPersonID"],
-  "meta:status": "experimental"
+  "auditable": true,
+  "definitions": {
+    "opportunity-person": {
+      "properties": {
+        "xdm:opportunityPersonID": {
+          "description": "Unique ID for the relationship between the opportunity and the person.",
+          "title": "Opportunity Person ID",
+          "type": "string",
+          "examples": [
+            "123456"
+          ]
+        },
+        "xdm:personID": {
+          "description": "Unique ID for the person in this opportunity person relationship.",
+          "title": "Person ID",
+          "type": "string",
+          "examples": [
+            "6897ihkhf"
+          ]
+        },
+        "xdm:opportunityID": {
+          "description": "Unique ID for the opportunity in this opportunity person relationship.",
+          "title": "Opportunity ID",
+          "type": "string",
+          "examples": [
+            "jkghdiuw68o"
+          ]
+        },
+        "xdm:isPrimary": {
+          "description": "Boolean indicating if the person is the primary contact on this opportunity.",
+          "title": "Primary Flag",
+          "type": "boolean",
+          "examples": [
+            true
+          ]
+        },
+        "xdm:personRole": {
+          "description": "Role of the person on this opportunity.",
+          "title": "Person Role",
+          "type": "string",
+          "examples": [
+            "Sales"
+          ]
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/classes/opportunity-person"
 }

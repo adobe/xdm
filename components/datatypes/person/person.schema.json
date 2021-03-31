@@ -1,85 +1,4 @@
 {
-  "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/context/person",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Person",
-  "type": "object",
-  "meta:extensible": true,
-  "meta:auditable": true,
-  "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
-  "definitions": {
-    "person": {
-      "properties": {
-        "xdm:name": {
-          "title": "Full name",
-          "$ref": "https://ns.adobe.com/xdm/context/person-name",
-          "description": "The person's full name."
-        },
-        "xdm:birthDate": {
-          "title": "Birth date",
-          "type": "string",
-          "format": "date",
-          "description": "The full date a person was born."
-        },
-        "xdm:birthDayAndMonth": {
-          "title": "Birth date",
-          "type": "string",
-          "pattern": "[0-1][0-9]-[0-9][0-9]",
-          "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
-        },
-        "xdm:birthYear": {
-          "title": "Birth year",
-          "type": "integer",
-          "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
-          "minimum": 1,
-          "maximum": 32767
-        },
-        "xdm:gender": {
-          "title": "Gender",
-          "type": "string",
-          "enum": ["male", "female", "not_specified", "non_specific"],
-          "meta:enum": {
-            "male": "Male",
-            "female": "Female",
-            "not_specified": "Not Specified",
-            "non_specific": "Non-specific"
-          },
-          "description": "Gender identity of the person.\n",
-          "default": "not_specified"
-        },
-        "xdm:maritalStatus": {
-          "title": "Marital Status",
-          "type": "string",
-          "enum": ["married", "single", "divorced", "widowed", "not_specified"],
-          "meta:enum": {
-            "married": "Married",
-            "single": "Single",
-            "divorced": "Divorced",
-            "widowed": "Widowed",
-            "not_specified": "Not Specified"
-          },
-          "description": "Describes a person's relationship with a significant other.",
-          "default": "not_specified"
-        },
-        "xdm:nationality": {
-          "title": "Nationality",
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
-        },
-        "xdm:taxId": {
-          "title": "Tax ID",
-          "type": "string",
-          "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain."
-        }
-      }
-    }
-  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -88,5 +7,109 @@
       "$ref": "#/definitions/person"
     }
   ],
-  "meta:status": "stable"
+  "meta:extensible": true,
+  "meta:status": "stable",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "An individual person. May represent a person acting in various roles, such as a customer, contact, or owner.",
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "title": "Person",
+  "type": "object",
+  "definitions": {
+    "person": {
+      "properties": {
+        "xdm:maritalStatus": {
+          "default": "not_specified",
+          "meta:enum": {
+            "single": "Single",
+            "not_specified": "Not Specified",
+            "married": "Married",
+            "widowed": "Widowed",
+            "divorced": "Divorced"
+          },
+          "description": "Describes a person\u0027s relationship with a significant other.",
+          "title": "Marital Status",
+          "type": "string",
+          "enum": [
+            "married",
+            "single",
+            "divorced",
+            "widowed",
+            "not_specified"
+          ],
+          "examples": [
+            "single"
+          ]
+        },
+        "xdm:name": {
+          "description": "The person\u0027s full name.",
+          "title": "Full name",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name"
+        },
+        "xdm:birthDate": {
+          "format": "date",
+          "description": "The full date a person was born.",
+          "title": "Birth date",
+          "type": "string",
+          "examples": [
+            "1996-01-19"
+          ]
+        },
+        "xdm:taxId": {
+          "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+          "title": "Tax ID",
+          "type": "string"
+        },
+        "xdm:birthDayAndMonth": {
+          "pattern": "[0-1][0-9]-[0-9][0-9]",
+          "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person\u0027s birth is known, but not the year.",
+          "title": "Birth date",
+          "type": "string"
+        },
+        "xdm:gender": {
+          "default": "not_specified",
+          "meta:enum": {
+            "non_specific": "Non-specific",
+            "not_specified": "Not Specified",
+            "female": "Female",
+            "male": "Male"
+          },
+          "description": "Gender identity of the person.n",
+          "title": "Gender",
+          "type": "string",
+          "enum": [
+            "male",
+            "female",
+            "not_specified",
+            "non_specific"
+          ],
+          "examples": [
+            "female"
+          ]
+        },
+        "xdm:nationality": {
+          "pattern": "^[A-Z]{2}$",
+          "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
+          "title": "Nationality",
+          "type": "string",
+          "examples": [
+            "CA"
+          ]
+        },
+        "xdm:birthYear": {
+          "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person\u0027s age is known, not the full birth date.",
+          "maximum": 32767,
+          "title": "Birth year",
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "meta:auditable": true,
+  "$id": "https://ns.adobe.com/xdm/context/person"
 }

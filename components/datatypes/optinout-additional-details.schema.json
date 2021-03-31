@@ -1,32 +1,4 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/common/optinout-additional-details",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "OptOut Additional Details",
-  "type": "object",
-  "description": "Describes user communication preferences by channel. For each channel individually, which is a property of this object, a user's preference such as opt-in, opt-out, or pending can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
-  "definitions": {
-    "optinout-additional-details": {
-      "properties": {
-        "xdm:optOutReason": {
-          "title": "Opt Out Reason",
-          "description": "Reason for opting out for a notification.",
-          "type": "string"
-        },
-        "xdm:optOutDate": {
-          "title": "Opt Out Date",
-          "description": "Date of opting out for a notification.",
-          "type": "string",
-          "format": "date-time"
-        }
-      }
-    }
-  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -35,5 +7,39 @@
       "$ref": "#/definitions/optinout-additional-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "description": "Describes user communication preferences by channel. For each channel individually, which is a property of this object, a user\u0027s preference such as opt-in, opt-out, or pending can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "title": "OptOut Additional Details",
+  "type": "object",
+  "definitions": {
+    "optinout-additional-details": {
+      "properties": {
+        "xdm:optOutDate": {
+          "format": "date-time",
+          "description": "Date of opting out for a notification.",
+          "title": "Opt Out Date",
+          "type": "string",
+          "examples": [
+            "2018-01-20T15:52:25+00:00"
+          ]
+        },
+        "xdm:optOutReason": {
+          "description": "Reason for opting out for a notification.",
+          "title": "Opt Out Reason",
+          "type": "string",
+          "examples": [
+            "Reason here"
+          ]
+        }
+      }
+    }
+  },
+  "$id": "https://ns.adobe.com/xdm/common/optinout-additional-details"
 }

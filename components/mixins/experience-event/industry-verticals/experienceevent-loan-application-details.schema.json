@@ -17,7 +17,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Loan application details such as ID, type, approval, and status.",
   "definitions": {
-    "loan-details": {
+    "loan-application-details": {
       "properties": {
         "xdm:personalFinances": {
           "type": "object",

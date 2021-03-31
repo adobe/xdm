@@ -74,8 +74,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/loan-application-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/loan-application-details"
+    }
+  ],
   "meta:status": "experimental"
 }

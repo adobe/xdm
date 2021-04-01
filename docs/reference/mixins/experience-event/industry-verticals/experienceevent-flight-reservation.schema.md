@@ -86,9 +86,12 @@ Collects all details specific to a flight reservation.
 | `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
+| `xdm:diningReservations`| array | Optional |
 | `xdm:endDate`| string | Optional |
+| `xdm:flightReservations`| array | Optional |
 | `xdm:itemComparison`|  | Optional |
 | `xdm:length`| integer | Optional |
+| `xdm:lodgingReservations`| array | Optional |
 | `xdm:modification`| integer | Optional |
 | `xdm:modificationDate`| string | Optional |
 | `xdm:nonRefundableAmount`|  | Optional |
@@ -101,6 +104,7 @@ Collects all details specific to a flight reservation.
 | `xdm:transaction`|  | Optional |
 | `xdm:triptype`| string | Optional |
 | `xdm:type`| string | Optional |
+| `xdm:vehicleReservations`| array | Optional |
 
 
 
@@ -236,6 +240,33 @@ All instances must conform to this regular expression
 
 
 
+#### xdm:diningReservations
+##### Dining Reservations
+
+Array of dining reservations under the main trip reservation.
+
+`xdm:diningReservations`
+* is optional
+* type: reference
+
+
+##### xdm:diningReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation`
+
+
+
+
+
+
+
+
+
+
 #### xdm:endDate
 ##### End Date
 
@@ -250,6 +281,33 @@ The end drop-off/return/check-out date of the reservation.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:flightReservations
+##### Flight Reservations
+
+Array of flight reservations under the main trip reservation.
+
+`xdm:flightReservations`
+* is optional
+* type: reference
+
+
+##### xdm:flightReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation`
+
+
 
 
 
@@ -291,6 +349,33 @@ Tracks the total number of days for a reservation.
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:lodgingReservations
+##### Lodging Reservations
+
+Array of lodging reservations under the main trip reservation.
+
+`xdm:lodgingReservations`
+* is optional
+* type: reference
+
+
+##### xdm:lodgingReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation`
+
+
 
 
 
@@ -544,6 +629,33 @@ Records the type of reservation being placed.
 
 
 `string`
+
+
+
+
+
+
+
+
+#### xdm:vehicleReservations
+##### Vehicle Reservations
+
+Array of vehicle reservations under the main trip reservation.
+
+`xdm:vehicleReservations`
+* is optional
+* type: reference
+
+
+##### xdm:vehicleReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`
+
+
 
 
 

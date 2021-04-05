@@ -94,7 +94,6 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:diningReservations`| array | Optional |
 | `xdm:endDate`| string | Optional |
 | `xdm:flightReservations`| array | Optional |
-| `xdm:itemComparison`|  | Optional |
 | `xdm:length`| integer | Optional |
 | `xdm:lodgingReservations`| array | Optional |
 | `xdm:modification`| integer | Optional |
@@ -314,26 +313,6 @@ All items must be of the type:
 
 
 
-
-
-
-
-
-
-
-#### xdm:itemComparison
-##### Item Comparison
-
-Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.
-
-`xdm:itemComparison`
-* is optional
-* type: reference
-
-##### xdm:itemComparison Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/comparisons`
 
 
 

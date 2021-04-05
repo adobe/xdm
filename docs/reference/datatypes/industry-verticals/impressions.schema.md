@@ -20,42 +20,23 @@ Tracks when impressions are presented on a site, along with names, types, and co
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:impressionDisplays](#xdmimpressiondisplays) | `integer` | Optional | Impressions (this schema) |
-| [xdm:impressionID](#xdmimpressionid) | `string` | Optional | Impressions (this schema) |
-| [xdm:impressionType](#xdmimpressiontype) | `string` | Optional | Impressions (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Impressions (this schema) |
+| [xdm:displays](#xdmdisplays) | `integer` | Optional | Impressions (this schema) |
+| [xdm:selected](#xdmselected) | `integer` | Optional | Impressions (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Impressions (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:impressionDisplays
-### Impression Displays
-
-Counts the number of times an impression item has been displayed to a visitor.
-
-`xdm:impressionDisplays`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:impressionDisplays Type
-
-
-`integer`
-
-
-
-
-
-
-## xdm:impressionID
-### Impression ID
+## xdm:ID
+### ID
 
 Tracks the ID of an item in an impression array.
 
-`xdm:impressionID`
+`xdm:ID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:impressionID Type
+### xdm:ID Type
 
 
 `string`
@@ -65,17 +46,57 @@ Tracks the ID of an item in an impression array.
 
 
 
-## xdm:impressionType
-### Impression Type
+## xdm:displays
+### Displays
+
+Counts the number of times an impression item has been displayed to a visitor.
+
+`xdm:displays`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:displays Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:selected
+### Selected
+
+Tracks when a given item in an impression array has been selected or clicked.
+
+`xdm:selected`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:selected Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:type
+### Type
 
 Tracks the type of impression in an impression array.
 
-`xdm:impressionType`
+`xdm:type`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:impressionType Type
+### xdm:type Type
 
 
 `string`

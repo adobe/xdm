@@ -46,6 +46,8 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
 | `xdm:accountType`| string | Optional |
+| `xdm:alertStatus`| boolean | Optional |
+| `xdm:autopayStatus`| boolean | Optional |
 | `xdm:contactDetails`|  | Optional |
 | `xdm:preferences`| array | Optional |
 | `xdm:startDate`| string | Optional |
@@ -88,6 +90,46 @@ Captures the user account type, if applicable.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:alertStatus
+##### Alert Status
+
+Captures whether or not alerts have been enabled for the account.
+
+`xdm:alertStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:alertStatus Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:autopayStatus
+##### Autopay Status
+
+Captures whether or not the account has been enrolled in autopay.
+
+`xdm:autopayStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:autopayStatus Type
+
+
+`boolean`
 
 
 

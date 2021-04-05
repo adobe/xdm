@@ -63,11 +63,6 @@
                             "type": "string",
                             "description": "Tracks the reservation number/identifier."
                         },
-                        "xdm:itemComparison": {
-                            "title": "Item Comparison",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-                            "description": "Used to track room, flight, vehicle, or restaurant comparisons on a site or an app."
-                        },
                         "xdm:length": {
                             "title": "Length",
                             "type": "integer",

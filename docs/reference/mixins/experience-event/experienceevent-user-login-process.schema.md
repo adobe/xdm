@@ -59,38 +59,38 @@ User login details such as login state, location, and type, as well as forgot us
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:userAccountSwitch`| integer | Optional |
-| `xdm:userCookieConsentAccepted`| boolean | Optional |
-| `xdm:userCookieConsentViewed`| integer | Optional |
-| `xdm:userForgotPassword`| integer | Optional |
-| `xdm:userForgotUsername`| integer | Optional |
-| `xdm:userLogin`| integer | Optional |
-| `xdm:userLoginBiometric`| boolean | Optional |
-| `xdm:userLoginFailure`| integer | Optional |
-| `xdm:userLoginKeychain`| boolean | Optional |
-| `xdm:userLoginLocation`| string | Optional |
-| `xdm:userLoginMultiFactor`| boolean | Optional |
-| `xdm:userLoginStatus`| string | Optional |
-| `xdm:userLoginThirdParty`| integer | Optional |
-| `xdm:userLoginThirdPartySite`| string | Optional |
-| `xdm:userLoginType`| string | Optional |
-| `xdm:userLogout`| integer | Optional |
-| `xdm:userResetPassword`| integer | Optional |
-| `xdm:userSessionTimeout`| integer | Optional |
-| `xdm:userUpdate`| integer | Optional |
+| `xdm:accountSwitch`| integer | Optional |
+| `xdm:cookieConsentAccepted`| boolean | Optional |
+| `xdm:cookieConsentViewed`| integer | Optional |
+| `xdm:forgotPassword`| integer | Optional |
+| `xdm:forgotUsername`| integer | Optional |
+| `xdm:login`| integer | Optional |
+| `xdm:loginBiometric`| boolean | Optional |
+| `xdm:loginFailure`| integer | Optional |
+| `xdm:loginKeychain`| boolean | Optional |
+| `xdm:loginLocation`| string | Optional |
+| `xdm:loginMultiFactor`| boolean | Optional |
+| `xdm:loginStatus`| string | Optional |
+| `xdm:loginThirdParty`| integer | Optional |
+| `xdm:loginThirdPartySite`| string | Optional |
+| `xdm:loginType`| string | Optional |
+| `xdm:logout`| integer | Optional |
+| `xdm:resetPassword`| integer | Optional |
+| `xdm:sessionTimeout`| integer | Optional |
+| `xdm:updateProfile`| integer | Optional |
 
 
 
-#### xdm:userAccountSwitch
+#### xdm:accountSwitch
 ##### Switch User Accounts
 
 Captures when a visitor switches their account during a visit.
 
-`xdm:userAccountSwitch`
+`xdm:accountSwitch`
 * is optional
 * type: `integer`
 
-##### xdm:userAccountSwitch Type
+##### xdm:accountSwitch Type
 
 
 `integer`
@@ -102,16 +102,16 @@ Captures when a visitor switches their account during a visit.
 
 
 
-#### xdm:userCookieConsentAccepted
+#### xdm:cookieConsentAccepted
 ##### Cookie Consent Accepted
 
 Tracked when a visitor opts-in to allowing cookies to be set within their browser.
 
-`xdm:userCookieConsentAccepted`
+`xdm:cookieConsentAccepted`
 * is optional
 * type: `boolean`
 
-##### xdm:userCookieConsentAccepted Type
+##### xdm:cookieConsentAccepted Type
 
 
 `boolean`
@@ -122,16 +122,16 @@ Tracked when a visitor opts-in to allowing cookies to be set within their browse
 
 
 
-#### xdm:userCookieConsentViewed
+#### xdm:cookieConsentViewed
 ##### Cookie Consent Viewed
 
 Tracked when a visitor views the cookie consent information.
 
-`xdm:userCookieConsentViewed`
+`xdm:cookieConsentViewed`
 * is optional
 * type: `integer`
 
-##### xdm:userCookieConsentViewed Type
+##### xdm:cookieConsentViewed Type
 
 
 `integer`
@@ -143,16 +143,16 @@ Tracked when a visitor views the cookie consent information.
 
 
 
-#### xdm:userForgotPassword
+#### xdm:forgotPassword
 ##### Forgot Password
 
 Counter event when a visitor begins the forgot password process.
 
-`xdm:userForgotPassword`
+`xdm:forgotPassword`
 * is optional
 * type: `integer`
 
-##### xdm:userForgotPassword Type
+##### xdm:forgotPassword Type
 
 
 `integer`
@@ -164,16 +164,16 @@ Counter event when a visitor begins the forgot password process.
 
 
 
-#### xdm:userForgotUsername
+#### xdm:forgotUsername
 ##### Forgot Username
 
 Counter event when a visitor begins the forgot username process.
 
-`xdm:userForgotUsername`
+`xdm:forgotUsername`
 * is optional
 * type: `integer`
 
-##### xdm:userForgotUsername Type
+##### xdm:forgotUsername Type
 
 
 `integer`
@@ -185,16 +185,16 @@ Counter event when a visitor begins the forgot username process.
 
 
 
-#### xdm:userLogin
+#### xdm:login
 ##### Visitor Login
 
 Counter event indicating a successful visitor login.
 
-`xdm:userLogin`
+`xdm:login`
 * is optional
 * type: `integer`
 
-##### xdm:userLogin Type
+##### xdm:login Type
 
 
 `integer`
@@ -206,16 +206,16 @@ Counter event indicating a successful visitor login.
 
 
 
-#### xdm:userLoginBiometric
+#### xdm:loginBiometric
 ##### Biometric Authentication
 
 Flag determining if the user has used a biometric authentication process to login.
 
-`xdm:userLoginBiometric`
+`xdm:loginBiometric`
 * is optional
 * type: `boolean`
 
-##### xdm:userLoginBiometric Type
+##### xdm:loginBiometric Type
 
 
 `boolean`
@@ -226,16 +226,16 @@ Flag determining if the user has used a biometric authentication process to logi
 
 
 
-#### xdm:userLoginFailure
+#### xdm:loginFailure
 ##### Visitor Login Failure
 
 Counter event indicating a failed visitor login attempt.
 
-`xdm:userLoginFailure`
+`xdm:loginFailure`
 * is optional
 * type: `integer`
 
-##### xdm:userLoginFailure Type
+##### xdm:loginFailure Type
 
 
 `integer`
@@ -247,16 +247,16 @@ Counter event indicating a failed visitor login attempt.
 
 
 
-#### xdm:userLoginKeychain
+#### xdm:loginKeychain
 ##### Keychain 
 
 Flag determining if the user has used a keychain authentication process to login.
 
-`xdm:userLoginKeychain`
+`xdm:loginKeychain`
 * is optional
 * type: `boolean`
 
-##### xdm:userLoginKeychain Type
+##### xdm:loginKeychain Type
 
 
 `boolean`
@@ -267,16 +267,16 @@ Flag determining if the user has used a keychain authentication process to login
 
 
 
-#### xdm:userLoginLocation
+#### xdm:loginLocation
 ##### Login Page Location
 
 When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login
 
-`xdm:userLoginLocation`
+`xdm:loginLocation`
 * is optional
 * type: `string`
 
-##### xdm:userLoginLocation Type
+##### xdm:loginLocation Type
 
 
 `string`
@@ -288,16 +288,16 @@ When multiple login locations exist on the page, this value should be used to id
 
 
 
-#### xdm:userLoginMultiFactor
+#### xdm:loginMultiFactor
 ##### Multi-Factor Authentication
 
 Flag determining if the user has used a multi-factor authentication process to login.
 
-`xdm:userLoginMultiFactor`
+`xdm:loginMultiFactor`
 * is optional
 * type: `boolean`
 
-##### xdm:userLoginMultiFactor Type
+##### xdm:loginMultiFactor Type
 
 
 `boolean`
@@ -308,16 +308,16 @@ Flag determining if the user has used a multi-factor authentication process to l
 
 
 
-#### xdm:userLoginStatus
+#### xdm:loginStatus
 ##### Login Status
 
 Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. 
 
-`xdm:userLoginStatus`
+`xdm:loginStatus`
 * is optional
 * type: `string`
 
-##### xdm:userLoginStatus Type
+##### xdm:loginStatus Type
 
 
 `string`
@@ -329,16 +329,16 @@ Used to track the current login status for site visitors, regardless of whether 
 
 
 
-#### xdm:userLoginThirdParty
+#### xdm:loginThirdParty
 ##### Login with Third Party
 
 Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.
 
-`xdm:userLoginThirdParty`
+`xdm:loginThirdParty`
 * is optional
 * type: `integer`
 
-##### xdm:userLoginThirdParty Type
+##### xdm:loginThirdParty Type
 
 
 `integer`
@@ -350,16 +350,16 @@ Counter event that is incremented when a visitor has used another login network 
 
 
 
-#### xdm:userLoginThirdPartySite
+#### xdm:loginThirdPartySite
 ##### Third Party Login Site
 
 Tracks the site used to authetnicate when a third-party sign-in event is tracked.
 
-`xdm:userLoginThirdPartySite`
+`xdm:loginThirdPartySite`
 * is optional
 * type: `string`
 
-##### xdm:userLoginThirdPartySite Type
+##### xdm:loginThirdPartySite Type
 
 
 `string`
@@ -371,16 +371,16 @@ Tracks the site used to authetnicate when a third-party sign-in event is tracked
 
 
 
-#### xdm:userLoginType
+#### xdm:loginType
 ##### User Login Type
 
 Email address vs social login
 
-`xdm:userLoginType`
+`xdm:loginType`
 * is optional
 * type: `string`
 
-##### xdm:userLoginType Type
+##### xdm:loginType Type
 
 
 `string`
@@ -392,16 +392,16 @@ Email address vs social login
 
 
 
-#### xdm:userLogout
+#### xdm:logout
 ##### Visitor Logout
 
 Counter event indicating a successful visitor logout.
 
-`xdm:userLogout`
+`xdm:logout`
 * is optional
 * type: `integer`
 
-##### xdm:userLogout Type
+##### xdm:logout Type
 
 
 `integer`
@@ -413,16 +413,16 @@ Counter event indicating a successful visitor logout.
 
 
 
-#### xdm:userResetPassword
+#### xdm:resetPassword
 ##### Reset Password
 
 Counter event when a visitor begins the reset password process.
 
-`xdm:userResetPassword`
+`xdm:resetPassword`
 * is optional
 * type: `integer`
 
-##### xdm:userResetPassword Type
+##### xdm:resetPassword Type
 
 
 `integer`
@@ -434,16 +434,16 @@ Counter event when a visitor begins the reset password process.
 
 
 
-#### xdm:userSessionTimeout
+#### xdm:sessionTimeout
 ##### Session Timeout
 
 Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.
 
-`xdm:userSessionTimeout`
+`xdm:sessionTimeout`
 * is optional
 * type: `integer`
 
-##### xdm:userSessionTimeout Type
+##### xdm:sessionTimeout Type
 
 
 `integer`
@@ -455,16 +455,16 @@ Tracked when a visitor has an authenticated session that is automatically logged
 
 
 
-#### xdm:userUpdate
+#### xdm:updateProfile
 ##### Account Profile Update
 
 Counter event indicating a user has updated their account profile.
 
-`xdm:userUpdate`
+`xdm:updateProfile`
 * is optional
 * type: `integer`
 
-##### xdm:userUpdate Type
+##### xdm:updateProfile Type
 
 
 `integer`

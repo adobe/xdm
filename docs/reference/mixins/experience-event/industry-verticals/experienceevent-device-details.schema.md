@@ -19,35 +19,7 @@ Device configuration details such as start, save, failure, and complete.
 ## Device Configuration Details Example
 ```json
 {
-  "xdm:deviceConfiguration": {
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "configure device",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "select device",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "self service"
-    }
-  },
-  "xdm:deviceTradeIn": {
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "device trade-in",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "select device",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "self service"
-    },
+  "xdm:deviceTradeInDetails": {
     "xdm:deviceTradeInManufacturer": "Apple",
     "xdm:deviceTradeInModel": "iPhone 8",
     "xdm:deviceTradeInValue": {
@@ -55,21 +27,6 @@ Device configuration details such as start, save, failure, and complete.
         "xdm:amount": 279,
         "xdm:currencyCode": "USD"
       }
-    }
-  },
-  "xdm:deviceActivation": {
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "device activation",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "select device",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "self service"
     }
   }
 }

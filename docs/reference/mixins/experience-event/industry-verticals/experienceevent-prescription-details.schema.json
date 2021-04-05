@@ -49,7 +49,8 @@
                         "xdm:steps": {
                             "title": "Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                            "description": "Extension of toolUsage data type."
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
                         },
                         "xdm:upload": {
                             "title": "Upload",
@@ -74,21 +75,6 @@
                 "xdm:prescriptionID": "",
                 "xdm:prescriptionRefill": true,
                 "xdm:prescriptionRefillsRemaining": 2,
-                "xdm:prescriptionSteps": {
-                    "xdm:tool-usage": {
-                        "xdm:toolUsageCancelled": 1,
-                        "xdm:toolUsageComplete": 1,
-                        "xdm:toolUsageFailure": 1,
-                        "xdm:toolUsageID": "T421",
-                        "xdm:toolUsageName": "prescription",
-                        "xdm:toolUsageSaved": 1,
-                        "xdm:toolUsageStart": 1,
-                        "xdm:toolUsageStep": 1,
-                        "xdm:toolUsageStepName": "enter parameters",
-                        "xdm:toolUsageSubmitted": 1,
-                        "xdm:toolUsageType": "generic"
-                    }
-                },
                 "xdm:prescriptionUpload": {
                     "xdm:file-transfer": {
                         "xdm:fileName": "4",

@@ -102,7 +102,8 @@
                         "xdm:processSteps": {
                             "title": "Process Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                            "description": "Extension of toolUsage data type."
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
                         },
                         "xdm:purpose": {
                             "title": "Purpose",
@@ -222,21 +223,6 @@
                 },
                 "xdm:numberOfAdults": 2,
                 "xdm:numberOfChildren": 3,
-                "xdm:processSteps": {
-                    "xdm:tool-usage": {
-                        "xdm:toolUsageCancelled": 1,
-                        "xdm:toolUsageComplete": 1,
-                        "xdm:toolUsageFailure": 1,
-                        "xdm:toolUsageID": "T421",
-                        "xdm:toolUsageName": "trip review",
-                        "xdm:toolUsageSaved": 1,
-                        "xdm:toolUsageStart": 1,
-                        "xdm:toolUsageStep": 1,
-                        "xdm:toolUsageStepName": "reservation confirmation",
-                        "xdm:toolUsageSubmitted": 1,
-                        "xdm:toolUsageType": "generic"
-                    }
-                },
                 "xdm:purpose": "personal",
                 "xdm:startDate": "2021-06-10T15:52:25+00:00",
                 "xdm:transaction": {

@@ -22,37 +22,7 @@ Flight check in details such as passengers, bags, as well as start, save, failur
   "xdm:checkIn": {
     "xdm:checkedBags": 2,
     "xdm:checkedPassengers": 3,
-    "xdm:checkInMethod": "kiosk",
-    "xdm:checkInProcess": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "flight check-in process",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter reservation number",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    }
-  },
-  "xdm:seatMapProcess": {
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "seat map selection",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "select seat",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "generic"
-    }
+    "xdm:checkInMethod": "kiosk"
   },
   "xdm:statusSearch": {
     "xdm:arrivalLocation": "ORD",

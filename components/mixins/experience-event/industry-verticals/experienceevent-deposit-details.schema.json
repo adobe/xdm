@@ -27,10 +27,10 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Extension of transaction data type."
             },
-            "xdm:depositAccount": {
-              "title": "Deposit Account",
+            "xdm:depositAccountID": {
+              "title": "Deposit Account ID",
               "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-              "description": "Extension of financialAccount data type."
+              "description": "Deposit account Identifier."
             }
           }
         }

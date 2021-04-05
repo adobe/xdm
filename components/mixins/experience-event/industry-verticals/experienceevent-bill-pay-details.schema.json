@@ -36,37 +36,11 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                   "description": "Extension of transaction data type."
                 },
-                "xdm:account": {
-                  "title": "Account",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Account from which the bill is being paid."
-                },
                 "xdm:scheduledTransactionDate": {
                   "title": "Scheduled Transaction Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Records the scheduled date/time of the transaction."
-                },
-                "xdm:serviceProvider": {
-                  "type": "object",
-                  "description": "Tracks all details related to a biller.",
-                  "properties": {
-                    "xdm:name": {
-                      "title": "Service Provider Name",
-                      "type": "string",
-                      "description": "The name/nickname for the service provider."
-                    },
-                    "xdm:address": {
-                      "title": "Service Provider Address",
-                      "$ref": "https://ns.adobe.com/xdm/common/address",
-                      "description": "Service provider address"
-                    },
-                    "xdm:userAccountID": {
-                      "title": "User Account ID",
-                      "type": "string",
-                      "description": "The user account ID for the service provider."
-                    }
-                  }
                 }
               }
             }

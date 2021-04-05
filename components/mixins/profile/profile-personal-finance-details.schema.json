@@ -12,17 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "financial_services"
-    ]
+    "industry": ["financial_services"]
   },
-<<<<<<< HEAD:components/mixins/experience-event/experienceevent-personal-finance-details.schema.json
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
-=======
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
->>>>>>> 72da07bcb9a046b3871a1b1759e4c31369a96039:components/mixins/profile/profile-personal-finance-details.schema.json
   "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
   "definitions": {
     "personal-finance-details": {
@@ -34,9 +26,7 @@
               "title": "Account Cards Total",
               "type": "integer",
               "description": "Total number of account (financial) cards assigned to a user.",
-              "examples": [
-                3
-              ]
+              "examples": [3]
             },
             "xdm:assignedBeneficiary": {
               "title": "Assigned Beneficiaries",
@@ -66,9 +56,7 @@
               "title": "Credit Score",
               "type": "integer",
               "description": "Refers to a number between 300-850 that depicts a consumer\u0027s creditworthiness. ",
-              "examples": [
-                760
-              ]
+              "examples": [760]
             },
             "xdm:employmentStatus": {
               "title": "Employment Status",
@@ -82,25 +70,19 @@
                 "unemployed"
               ],
               "description": "Tracks the employment status of the user.",
-              "examples": [
-                "full time"
-              ]
+              "examples": ["full time"]
             },
             "xdm:filingJointly": {
               "title": "Filing Jointly",
               "type": "boolean",
               "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
-              "examples": [
-                true
-              ]
+              "examples": [true]
             },
             "xdm:filingSeparately": {
               "title": "Filing Separately",
               "type": "boolean",
               "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
-              "examples": [
-                false
-              ]
+              "examples": [false]
             },
             "xdm:financialAccount": {
               "title": "financeAccountId",
@@ -114,17 +96,13 @@
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned.",
-              "examples": [
-                true
-              ]
+              "examples": [true]
             },
             "xdm:isHeadOfHousehold": {
               "title": "Head of Household",
               "type": "boolean",
               "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
-              "examples": [
-                true
-              ]
+              "examples": [true]
             },
             "xdm:householdIncome": {
               "title": "Household Income",
@@ -135,17 +113,13 @@
               "title": "Single Filer",
               "type": "boolean",
               "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
-              "examples": [
-                false
-              ]
+              "examples": [false]
             },
             "xdm:taxBracket": {
               "title": "Tax Bracket",
               "type": "string",
               "description": "Refers to a range of incomes subject to a certain income tax rate.",
-              "examples": [
-                "TBD"
-              ]
+              "examples": ["TBD"]
             }
           }
         }

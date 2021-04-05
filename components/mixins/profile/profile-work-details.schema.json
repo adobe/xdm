@@ -11,16 +11,10 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-<<<<<<< HEAD
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
-=======
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "meta:tags": {
     "industry": ["all"]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
->>>>>>> 72da07bcb9a046b3871a1b1759e4c31369a96039
   "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
   "definitions": {
     "profile-work-details": {

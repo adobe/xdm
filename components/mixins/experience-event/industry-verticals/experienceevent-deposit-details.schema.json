@@ -29,7 +29,7 @@
             },
             "xdm:depositAccountID": {
               "title": "Deposit Account ID",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+              "type": "string",
               "description": "Deposit account Identifier."
             }
           }

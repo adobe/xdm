@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-steps",
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Quote Request Steps",
+  "title": "Quote Request Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -21,42 +21,43 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Includes all steps for receiving a quote",
+  "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders.",
   "definitions": {
-    "quote-request-steps": {
+    "quote-request-details": {
       "properties": {
-        "xdm:quoteRequestSteps": {
+        "xdm:quoteRequestDetails": {
           "type": "object",
           "properties": {
-            "xdm:quoteDiscount": {
-              "title": "Quote Discount",
+            "xdm:discount": {
+              "title": "Discount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the discount amount for a quote displayed to a visitor."
             },
-            "xdm:quotePremium": {
-              "title": "Quote Premium",
+            "xdm:premium": {
+              "title": "Premium",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the premium amount for a quote displayed to a visitor."
             },
-            "xdm:quoteRequestLocation": {
-              "title": "Quote Request Location",
+            "xdm:location": {
+              "title": "Location",
               "type": "string",
               "description": "Captures the postal code used for finding retailers near the visitor's location."
             },
-            "xdm:quoteRequestPersonalDetails": {
-              "title": "Quote Request Personal Details",
+            "xdm:personalDetails": {
+              "title": "Personal Details",
               "$ref": "https://ns.adobe.com/xdm/context/profile-person-details",
               "description": "Extension of the Personal Profile data type."
             },
-            "xdm:quoteRequestSelectedRetailer": {
+            "xdm:selectedRetailer": {
               "title": "Selected Retailer",
               "type": "string",
               "description": "Captures the selected retailer for a quote request, if applicable. "
             },
-            "xdm:quoteRequestSteps": {
-              "title": "Quote Request Steps",
+            "xdm:steps": {
+              "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             }
           }
         }
@@ -65,7 +66,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/quote-request-steps"
+      "$ref": "#/definitions/quote-request-details"
     }
   ],
   "meta:status": "experimental"

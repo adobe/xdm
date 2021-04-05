@@ -1,0 +1,17 @@
+{
+  "xdm:quoteRequestDetails": {
+    "xdm:location": "95110",
+    "xdm:personalDetails": {
+      "xdm:person": {
+        "xdm:name": {
+          "xdm:firstName": "Jane",
+          "xdm:middleName": "F",
+          "xdm:lastName": "Doe",
+          "xdm:fullName": "Jane F. Doe"
+        },
+        "xdm:birthDayAndMonth": "01-03",
+        "xdm:gender": "female"
+      }
+    }
+  }
+}

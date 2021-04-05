@@ -1,20 +1,45 @@
 {
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:abstract": true,
-  "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/context/campaign-member",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Campaign Members",
   "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
+  "description": "An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.",
+  "definitions": {
+    "campaign-member": {
+      "properties": {
+        "xdm:campaignMemberID": {
+          "title": "Campaign Member ID",
+          "description": "Campaign Member unique identifer.",
+          "type": "string",
+          "examples": [
+            "1"
+          ]
+        },
+        "xdm:campaignID": {
+          "title": "Campaign ID",
+          "description": "Campaign Unique Identifer.",
+          "type": "string"
+        },
+        "xdm:personID": {
+          "title": "Person ID",
+          "description": "Person unique identifier.",
+          "type": "string"
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
@@ -26,30 +51,5 @@
       "$ref": "#/definitions/campaign-member"
     }
   ],
-  "auditable": true,
-  "definitions": {
-    "campaign-member": {
-      "properties": {
-        "xdm:campaignID": {
-          "description": "Campaign Unique Identifer.",
-          "title": "Campaign ID",
-          "type": "string"
-        },
-        "xdm:personID": {
-          "description": "Person unique identifier.",
-          "title": "Person ID",
-          "type": "string"
-        },
-        "xdm:campaignMemberID": {
-          "examples": [
-            "1"
-          ],
-          "description": "Campaign Member unique identifer.",
-          "title": "Campaign Member ID",
-          "type": "string"
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/context/campaign-member"
+  "meta:status": "experimental"
 }

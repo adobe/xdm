@@ -1,45 +1,26 @@
 {
-  "allOf": [
-    {
-      "$ref": "#/definitions/identity"
-    },
-    {
-      "$ref": "#/definitions/publicprofile"
-    }
-  ],
-  "meta:extensible": true,
-  "meta:status": "deprecated",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "This model represents an authenticated IMS user. The IMS user principal is a user account under Adobe\u0027s identity management system (IMS).",
   "meta:license": [
     "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/common/identity",
   "title": "User identity",
   "type": "object",
+  "meta:extensible": true,
+  "description": "This model represents an authenticated IMS user. The IMS user principal is a user account under Adobe\u0027s identity management system (IMS).",
   "definitions": {
     "identity": {
       "type": "object",
       "properties": {
-        "xdm:type": {
-          "meta:enum": [
-            "https://ns.adobe.com/xdm/common/user"
-          ],
-          "format": "uri",
-          "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
-          "type": "string",
-          "examples": [
-            "https://ns.adobe.com/xdm/common/user"
-          ]
-        },
         "xdm:identityProvider": {
+          "description": "The identity provider that manages this principal.",
+          "type": "string",
           "meta:enum": [
             "ims"
           ],
-          "description": "The identity provider that manages this principal.",
-          "type": "string",
           "examples": [
             "ims"
           ]
@@ -50,39 +31,58 @@
           "examples": [
             "C0B648DE57D701277F000101@AdobeID"
           ]
+        },
+        "xdm:type": {
+          "type": "string",
+          "meta:enum": [
+            "https://ns.adobe.com/xdm/common/user"
+          ],
+          "format": "uri",
+          "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
+          "examples": [
+            "https://ns.adobe.com/xdm/common/user"
+          ]
         }
       }
     },
     "publicprofile": {
-      "xdm:profileLink": {
-        "format": "uri",
-        "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile.",
-        "title": "Image",
-        "type": "string"
-      },
       "xdm:displayName": {
-        "description": "Display name.",
         "title": "Name",
         "type": "string",
+        "description": "Display name.",
         "examples": [
           "The users name"
         ]
       },
       "xdm:profileImage": {
-        "format": "uri",
-        "description": "Profile avatar or picture of the person.",
         "title": "Image",
+        "format": "uri",
         "type": "string",
+        "description": "Profile avatar or picture of the person.",
         "examples": [
           "https://mir-s3-cdn-cf.behance.net/user/276/b9c11633104347.57a9c2152b78e.jpg"
         ]
+      },
+      "xdm:profileLink": {
+        "title": "Image",
+        "format": "uri",
+        "type": "string",
+        "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile."
       }
     }
   },
+  "allOf": [
+    {
+      "$ref": "#/definitions/identity"
+    },
+    {
+      "$ref": "#/definitions/publicprofile"
+    }
+  ],
   "required": [
     "xdm:identityProvider",
     "xdm:id",
     "xdm:type"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/identity"
+  "meta:status": "deprecated"
 }

@@ -1,4 +1,99 @@
 {
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/phoneinteraction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Phone Interaction",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Captures information in the context of a phone call conversation ",
+  "definitions": {
+    "phoneinteraction": {
+      "properties": {
+        "xdm:ID": {
+          "title": "ID of the call conversation",
+          "type": "string",
+          "description": "A unique identifier to represent the phone call conversation",
+          "examples": [
+            "7263723"
+          ]
+        },
+        "xdm:fromWhoID": {
+          "title": "Initiator of the call",
+          "type": "string",
+          "description": "Person ID who initiated the call of the conversation",
+          "examples": [
+            "4587"
+          ]
+        },
+        "xdm:toWhoID": {
+          "title": "Call reciever",
+          "type": "string",
+          "description": "Person ID who recieved the call",
+          "examples": [
+            "3785"
+          ]
+        },
+        "xdm:disposition": {
+          "title": "Label the outcome of the phone call",
+          "type": "string",
+          "description": "The outcome of the call as next triggering actions such as \u0027demo scheduled\u0027,\u0027left voicemail\u0027, etc.",
+          "examples": [
+            "Setup a meeting for next week to pursue opportunity"
+          ]
+        },
+        "xdm:duration": {
+          "title": "Time Spent during the call",
+          "type": "number",
+          "description": "Record the length of the phone conversation in seconds",
+          "examples": [
+            387
+          ]
+        },
+        "xdm:type": {
+          "title": "Type of the phone call",
+          "type": "string",
+          "description": "A way to represent the nature of the call",
+          "meta:enum": {
+            "internal": "Internal",
+            "inbound": "Inbound",
+            "outbound": "Outbound"
+          },
+          "examples": [
+            "Inbound"
+          ]
+        },
+        "xdm:fromNumber": {
+          "title": "Phone Number of the initiator of the call",
+          "type": "string",
+          "description": "Person\u0027s phone number who initiated the conversation. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
+          "examples": [
+            "408-536-4985"
+          ]
+        },
+        "xdm:toNumber": {
+          "title": "Phone number of the call reciever",
+          "type": "string",
+          "description": "Person\u0027s phone number who is the reciever of the call. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
+          "examples": [
+            "650-497-0986"
+          ]
+        },
+        "xdm:hasLeftVoiceMail": {
+          "title": "Has the initiator of the call left any Voice Mail message",
+          "type": "boolean",
+          "description": "A boolean flag to represent whether a voice mail has been left for the reciever",
+          "examples": [
+            false
+          ]
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -7,100 +102,5 @@
       "$ref": "#/definitions/phoneinteraction"
     }
   ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "Captures information in the context of a phone call conversation ",
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "title": "Phone Interaction",
-  "type": "object",
-  "definitions": {
-    "phoneinteraction": {
-      "properties": {
-        "xdm:fromNumber": {
-          "description": "Person\u0027s phone number who initiated the conversation. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "title": "Phone Number of the initiator of the call",
-          "type": "string",
-          "examples": [
-            "408-536-4985"
-          ]
-        },
-        "xdm:disposition": {
-          "description": "The outcome of the call as next triggering actions such as \u0027demo scheduled\u0027,\u0027left voicemail\u0027, etc.",
-          "title": "Label the outcome of the phone call",
-          "type": "string",
-          "examples": [
-            "Setup a meeting for next week to pursue opportunity"
-          ]
-        },
-        "xdm:toWhoID": {
-          "description": "Person ID who recieved the call",
-          "title": "Call reciever",
-          "type": "string",
-          "examples": [
-            "3785"
-          ]
-        },
-        "xdm:toNumber": {
-          "description": "Person\u0027s phone number who is the reciever of the call. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "title": "Phone number of the call reciever",
-          "type": "string",
-          "examples": [
-            "650-497-0986"
-          ]
-        },
-        "xdm:type": {
-          "meta:enum": {
-            "internal": "Internal",
-            "inbound": "Inbound",
-            "outbound": "Outbound"
-          },
-          "description": "A way to represent the nature of the call",
-          "title": "Type of the phone call",
-          "type": "string",
-          "examples": [
-            "Inbound"
-          ]
-        },
-        "xdm:duration": {
-          "description": "Record the length of the phone conversation in seconds",
-          "title": "Time Spent during the call",
-          "type": "number",
-          "examples": [
-            387
-          ]
-        },
-        "xdm:fromWhoID": {
-          "description": "Person ID who initiated the call of the conversation",
-          "title": "Initiator of the call",
-          "type": "string",
-          "examples": [
-            "4587"
-          ]
-        },
-        "xdm:ID": {
-          "description": "A unique identifier to represent the phone call conversation",
-          "title": "ID of the call conversation",
-          "type": "string",
-          "examples": [
-            "7263723"
-          ]
-        },
-        "xdm:hasLeftVoiceMail": {
-          "description": "A boolean flag to represent whether a voice mail has been left for the reciever",
-          "title": "Has the initiator of the call left any Voice Mail message",
-          "type": "boolean",
-          "examples": [
-            false
-          ]
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/common/phoneinteraction"
+  "meta:status": "experimental"
 }

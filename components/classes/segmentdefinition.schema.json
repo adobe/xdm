@@ -1,21 +1,69 @@
 {
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/xdm/common/auditable"
-  ],
-  "meta:extensible": true,
-  "meta:status": "stable",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:abstract": true,
-  "description": "This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
   "meta:license": [
     "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/context/segmentdefinition",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Segment definition",
   "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record",
+    "https://ns.adobe.com/xdm/common/auditable"
+  ],
+  "definitions": {
+    "segmentdefinition": {
+      "properties": {
+        "xdm:segmentIdentity": {
+          "title": "Segment identity",
+          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
+          "description": "Identity of the segment.",
+          "meta:status": "deprecated"
+        },
+        "xdm:segmentName": {
+          "title": "Segment name",
+          "type": "string",
+          "description": "Name of the segment.",
+          "examples": [
+            "Users with TV segment"
+          ]
+        },
+        "xdm:description": {
+          "title": "Segment description",
+          "type": "string",
+          "description": "Description of the segment.",
+          "examples": [
+            "Segment is about users who have TV"
+          ]
+        },
+        "xdm:version": {
+          "title": "Segment version",
+          "type": "string",
+          "description": "Version of the segment."
+        },
+        "xdm:segmentStatus": {
+          "type": "string",
+          "title": "Segment status",
+          "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+          "enum": [
+            "ACTIVE",
+            "INACTIVE",
+            "DELETED",
+            "DRAFT",
+            "REVOKED"
+          ],
+          "examples": [
+            "ACTIVE"
+          ]
+        }
+      }
+    }
+  },
   "required": [
     "xdm:identityMap",
     "xdm:segmentName"
@@ -37,53 +85,5 @@
       "$ref": "#/definitions/segmentdefinition"
     }
   ],
-  "definitions": {
-    "segmentdefinition": {
-      "properties": {
-        "xdm:segmentName": {
-          "description": "Name of the segment.",
-          "title": "Segment name",
-          "type": "string",
-          "examples": [
-            "Users with TV segment"
-          ]
-        },
-        "xdm:segmentStatus": {
-          "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
-          "type": "string",
-          "title": "Segment status",
-          "enum": [
-            "ACTIVE",
-            "INACTIVE",
-            "DELETED",
-            "DRAFT",
-            "REVOKED"
-          ],
-          "examples": [
-            "ACTIVE"
-          ]
-        },
-        "xdm:description": {
-          "description": "Description of the segment.",
-          "title": "Segment description",
-          "type": "string",
-          "examples": [
-            "Segment is about users who have TV"
-          ]
-        },
-        "xdm:segmentIdentity": {
-          "meta:status": "deprecated",
-          "description": "Identity of the segment.",
-          "title": "Segment identity",
-          "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
-        },
-        "xdm:version": {
-          "description": "Version of the segment.",
-          "title": "Segment version",
-          "type": "string"
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/context/segmentdefinition"
+  "meta:status": "stable"
 }

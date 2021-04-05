@@ -1,4 +1,167 @@
 {
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Primary asset view details",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "description": "View details for the main content playback, present on all ads and chapters that occur during the content\u0027s playback.",
+  "definitions": {
+    "media-asset-view-details": {
+      "properties": {
+        "@id": {
+          "title": "Media session ID",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "Identifies an instance of a content stream unique to an individual playback.",
+          "examples": [
+            "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
+            "https://data.adobe.io/entities/media-sessionid/1427461282884250114230"
+          ]
+        },
+        "xdm:playerName": {
+          "title": "Content player name",
+          "type": "string",
+          "description": "Name of the content player.",
+          "examples": [
+            "watchtv"
+          ]
+        },
+        "xdm:videoSegment": {
+          "title": "Video segment",
+          "type": "string",
+          "pattern": "^[0-9]+-[0-9]+$",
+          "description": "The interval that describes the part of the content that has been viewed in minutes.",
+          "examples": [
+            "3-10"
+          ]
+        },
+        "xdm:path": {
+          "title": "Video path",
+          "type": "string",
+          "description": "The path to the video in the app or site.",
+          "examples": [
+            "mid:cartoon:episode:kidschannel.com:dfb59263-4ce7"
+          ]
+        },
+        "xdm:broadcastChannel": {
+          "title": "Content channel",
+          "type": "string",
+          "description": "Distribution channel from where the content was played.",
+          "examples": [
+            "WatchTV"
+          ]
+        },
+        "xdm:broadcastContentType": {
+          "title": "Broadcast content type",
+          "type": "string",
+          "description": "The type of the stream delivery.",
+          "meta:enum": {
+            "VOD": "Video-on-demand",
+            "Live": "Live streaming",
+            "Linear": "Linear playback of the media asset",
+            "UGC": "User-generated content",
+            "Radio": "Radio show",
+            "Podcast": "Audio podcast",
+            "Audiobook": "Audiobook"
+          },
+          "examples": [
+            "VOD"
+          ]
+        },
+        "xdm:playerSDKVersion": {
+          "title": "Player SDK version",
+          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+          "description": "The SDK version used by the player."
+        },
+        "xdm:vhlVersion": {
+          "title": "VHL version",
+          "type": "string",
+          "description": "The Media SDK version used for the tracking session.",
+          "examples": [
+            "js-2.0.1.88-c8c0b1"
+          ]
+        },
+        "xdm:broadcastNetwork": {
+          "title": "Broadcast network",
+          "type": "string",
+          "description": "The programmer network name.",
+          "examples": [
+            "nbpu"
+          ]
+        },
+        "xdm:adLoadType": {
+          "title": "Ad load type",
+          "type": "string",
+          "description": "The type of ad loaded as defined by each customer\u0027s internal representation.",
+          "examples": [
+            "1",
+            "2"
+          ]
+        },
+        "xdm:sourceFeed": {
+          "title": "Feed type",
+          "type": "string",
+          "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
+          "examples": [
+            "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8"
+          ]
+        },
+        "xdm:sessionTimeout": {
+          "title": "Media session server timeout",
+          "type": "integer",
+          "description": "Indicates the amount of time, in seconds, that passed between the user\u0027s last known interaction and the moment the session was closed.",
+          "examples": [
+            1800
+          ]
+        },
+        "xdm:qoe": {
+          "title": "Quality of experience",
+          "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
+          "description": "Timed media properties related to the content playback\u0027s quality of experience (QoE)."
+        },
+        "xdm:downloadedPlayback": {
+          "title": "Media downloaded flag",
+          "type": "boolean",
+          "description": "The stream was played locally on the device after being downloaded.",
+          "examples": [
+            false
+          ]
+        },
+        "xdm:fullScreen": {
+          "title": "Full screen",
+          "$ref": "https://ns.adobe.com/xdm/context/player-state",
+          "description": "Timed media properties related to full screen player state."
+        },
+        "xdm:mute": {
+          "title": "Mute",
+          "$ref": "https://ns.adobe.com/xdm/context/player-state",
+          "description": "Timed media properties related to mute player state."
+        },
+        "xdm:closeCaption": {
+          "title": "Close caption",
+          "$ref": "https://ns.adobe.com/xdm/context/player-state",
+          "description": "Timed media properties related to close caption player state."
+        },
+        "xdm:pictureInPicture": {
+          "title": "Picture in picture",
+          "$ref": "https://ns.adobe.com/xdm/context/player-state",
+          "description": "Timed media properties related to picture in picture player state."
+        },
+        "xdm:inFocus": {
+          "title": "In focus",
+          "$ref": "https://ns.adobe.com/xdm/context/player-state",
+          "description": "Timed media properties related to in focus player state."
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -6,168 +169,5 @@
     {
       "$ref": "#/definitions/media-asset-view-details"
     }
-  ],
-  "meta:status": "stable",
-  "meta:extensible": true,
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "View details for the main content playback, present on all ads and chapters that occur during the content\u0027s playback.",
-  "meta:license": [
-    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "title": "Primary asset view details",
-  "type": "object",
-  "definitions": {
-    "media-asset-view-details": {
-      "properties": {
-        "xdm:sourceFeed": {
-          "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
-          "title": "Feed type",
-          "type": "string",
-          "examples": [
-            "http%3A%2F%2Fvod01.pure.centurylink.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8"
-          ]
-        },
-        "xdm:videoSegment": {
-          "pattern": "^[0-9]+-[0-9]+$",
-          "description": "The interval that describes the part of the content that has been viewed in minutes.",
-          "title": "Video segment",
-          "type": "string",
-          "examples": [
-            "3-10"
-          ]
-        },
-        "xdm:qoe": {
-          "description": "Timed media properties related to the content playback\u0027s quality of experience (QoE).",
-          "title": "Quality of experience",
-          "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe"
-        },
-        "xdm:playerName": {
-          "description": "Name of the content player.",
-          "title": "Content player name",
-          "type": "string",
-          "examples": [
-            "watchtv"
-          ]
-        },
-        "xdm:inFocus": {
-          "description": "Timed media properties related to in focus player state.",
-          "title": "In focus",
-          "$ref": "https://ns.adobe.com/xdm/context/player-state"
-        },
-        "xdm:broadcastNetwork": {
-          "description": "The programmer network name.",
-          "title": "Broadcast network",
-          "type": "string",
-          "examples": [
-            "nbpu"
-          ]
-        },
-        "xdm:broadcastChannel": {
-          "description": "Distribution channel from where the content was played.",
-          "title": "Content channel",
-          "type": "string",
-          "examples": [
-            "WatchTV"
-          ]
-        },
-        "xdm:closeCaption": {
-          "description": "Timed media properties related to close caption player state.",
-          "title": "Close caption",
-          "$ref": "https://ns.adobe.com/xdm/context/player-state"
-        },
-        "xdm:mute": {
-          "description": "Timed media properties related to mute player state.",
-          "title": "Mute",
-          "$ref": "https://ns.adobe.com/xdm/context/player-state"
-        },
-        "xdm:pictureInPicture": {
-          "description": "Timed media properties related to picture in picture player state.",
-          "title": "Picture in picture",
-          "$ref": "https://ns.adobe.com/xdm/context/player-state"
-        },
-        "xdm:playerSDKVersion": {
-          "description": "The SDK version used by the player.",
-          "title": "Player SDK version",
-          "$ref": "https://ns.adobe.com/xdm/context/implementationdetails"
-        },
-        "xdm:adLoadType": {
-          "description": "The type of ad loaded as defined by each customer\u0027s internal representation.",
-          "title": "Ad load type",
-          "type": "string",
-          "examples": [
-            "1",
-            "2"
-          ]
-        },
-        "xdm:downloadedPlayback": {
-          "description": "The stream was played locally on the device after being downloaded.",
-          "title": "Media downloaded flag",
-          "type": "boolean",
-          "examples": [
-            false
-          ]
-        },
-        "xdm:fullScreen": {
-          "description": "Timed media properties related to full screen player state.",
-          "title": "Full screen",
-          "$ref": "https://ns.adobe.com/xdm/context/player-state"
-        },
-        "@id": {
-          "format": "uri-reference",
-          "description": "Identifies an instance of a content stream unique to an individual playback.",
-          "title": "Media session ID",
-          "type": "string",
-          "examples": [
-            "https://data.adobe.io/entities/media-sessionid/1427461282884250114231",
-            "https://data.adobe.io/entities/media-sessionid/1427461282884250114230"
-          ]
-        },
-        "xdm:vhlVersion": {
-          "description": "The Media SDK version used for the tracking session.",
-          "title": "VHL version",
-          "type": "string",
-          "examples": [
-            "js-2.0.1.88-c8c0b1"
-          ]
-        },
-        "xdm:sessionTimeout": {
-          "description": "Indicates the amount of time, in seconds, that passed between the user\u0027s last known interaction and the moment the session was closed.",
-          "title": "Media session server timeout",
-          "type": "integer",
-          "examples": [
-            1800
-          ]
-        },
-        "xdm:path": {
-          "description": "The path to the video in the app or site.",
-          "title": "Video path",
-          "type": "string",
-          "examples": [
-            "mid:cartoon:episode:kidschannel.com:dfb59263-4ce7"
-          ]
-        },
-        "xdm:broadcastContentType": {
-          "meta:enum": {
-            "UGC": "User-generated content",
-            "Live": "Live streaming",
-            "Podcast": "Audio podcast",
-            "VOD": "Video-on-demand",
-            "Radio": "Radio show",
-            "Linear": "Linear playback of the media asset",
-            "Audiobook": "Audiobook"
-          },
-          "description": "The type of the stream delivery.",
-          "title": "Broadcast content type",
-          "type": "string",
-          "examples": [
-            "VOD"
-          ]
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details"
+  ]
 }

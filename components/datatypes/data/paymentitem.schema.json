@@ -1,70 +1,70 @@
 {
-  "allOf": [
-    {
-      "$ref": "#/definitions/paymentitem"
-    }
-  ],
-  "meta:status": "stable",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
   "meta:license": [
     "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/data/paymentitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Payment Item",
   "type": "object",
+  "description": "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
   "definitions": {
     "paymentitem": {
       "properties": {
-        "xdm:currencyCode": {
-          "examples": [
-            "USD"
-          ],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for this payment item.",
-          "title": "Currency Code",
-          "type": "string"
-        },
-        "xdm:paymentType": {
-          "default": "other",
-          "meta:enum": {
-            "credit_card": "Credit Card",
-            "other": "Other",
-            "gift_card": "Gift Card",
-            "credit_card_reference": "Credit Card Reference Transaction",
-            "wire_transfer": "Wire Transfer",
-            "check": "Check",
-            "cash": "Cash",
-            "paypal": "PayPal",
-            "debit_card": "Debit Card"
-          },
-          "description": "The method of payment for this order. Enumerated, custom values allowed.",
-          "title": "Payment Type",
+        "xdm:transactionID": {
+          "title": "Transaction ID",
           "type": "string",
+          "description": "The unique transaction identifier for this payment item.",
           "examples": [
-            "credit_card"
+            "transactid-a12345"
           ]
         },
         "xdm:paymentAmount": {
-          "description": "The value of the payment.",
           "title": "Payment Amount",
           "type": "number",
+          "description": "The value of the payment.",
           "examples": [
             333.99
           ]
         },
-        "xdm:transactionID": {
-          "description": "The unique transaction identifier for this payment item.",
-          "title": "Transaction ID",
+        "xdm:paymentType": {
+          "title": "Payment Type",
+          "type": "string",
+          "description": "The method of payment for this order. Enumerated, custom values allowed.",
+          "default": "other",
+          "meta:enum": {
+            "cash": "Cash",
+            "credit_card": "Credit Card",
+            "debit_card": "Debit Card",
+            "gift_card": "Gift Card",
+            "check": "Check",
+            "paypal": "PayPal",
+            "wire_transfer": "Wire Transfer",
+            "credit_card_reference": "Credit Card Reference Transaction",
+            "other": "Other"
+          },
+          "examples": [
+            "credit_card"
+          ]
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
           "type": "string",
           "examples": [
-            "transactid-a12345"
-          ]
+            "USD"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code used for this payment item."
         }
       }
     }
   },
-  "$id": "https://ns.adobe.com/xdm/data/paymentitem"
+  "allOf": [
+    {
+      "$ref": "#/definitions/paymentitem"
+    }
+  ],
+  "meta:status": "stable"
 }

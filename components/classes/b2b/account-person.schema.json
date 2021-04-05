@@ -1,23 +1,86 @@
 {
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:abstract": true,
-  "description": "This class is used to capture XDM business account person relationship attributes.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/classes/account-person",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Account Person Relation",
   "type": "object",
-  "required": [
-    "xdm:accountPersonID"
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
   ],
+  "description": "This class is used to capture XDM business account person relationship attributes.",
+  "definitions": {
+    "account-person": {
+      "properties": {
+        "xdm:accountPersonID": {
+          "title": "Account Person ID",
+          "description": "Unique ID for this relationship between an account and a person.",
+          "type": "string",
+          "examples": [
+            "AAAPPP111"
+          ]
+        },
+        "xdm:accountID": {
+          "title": "Account ID",
+          "description": "Unique ID for the account in this account person relationship.",
+          "type": "string"
+        },
+        "xdm:personID": {
+          "title": "Person ID",
+          "description": "Unique ID for the person in this account person relationship.",
+          "type": "string"
+        },
+        "xdm:personRole": {
+          "title": "Person Role",
+          "description": "Role of the person on this account.",
+          "type": "string"
+        },
+        "xdm:isDirect": {
+          "title": "Direct Flag",
+          "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
+          "type": "boolean"
+        },
+        "xdm:isActive": {
+          "title": "Active Flag",
+          "description": "Boolean to indicate if this relationship between the account and the person is active.",
+          "type": "boolean"
+        },
+        "xdm:isPrimary": {
+          "title": "Primary Flag",
+          "description": "Boolean to indicate if the person is the primary contact on the account.",
+          "type": "boolean"
+        },
+        "xdm:relationStartDate": {
+          "title": "Relationship Start Date",
+          "description": "The date when the relationship between the account and the person started.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:relationEndDate": {
+          "title": "Relationship End Date",
+          "description": "The date when the relationship between the account and the person ended.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code used for the relationship between the account and the person."
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
@@ -29,71 +92,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "definitions": {
-    "account-person": {
-      "properties": {
-        "xdm:currencyCode": {
-          "examples": [
-            "USD",
-            "EUR"
-          ],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
-          "title": "Currency Code",
-          "type": "string"
-        },
-        "xdm:accountID": {
-          "description": "Unique ID for the account in this account person relationship.",
-          "title": "Account ID",
-          "type": "string"
-        },
-        "xdm:personID": {
-          "description": "Unique ID for the person in this account person relationship.",
-          "title": "Person ID",
-          "type": "string"
-        },
-        "xdm:isActive": {
-          "description": "Boolean to indicate if this relationship between the account and the person is active.",
-          "title": "Active Flag",
-          "type": "boolean"
-        },
-        "xdm:relationStartDate": {
-          "format": "date-time",
-          "description": "The date when the relationship between the account and the person started.",
-          "title": "Relationship Start Date",
-          "type": "string"
-        },
-        "xdm:accountPersonID": {
-          "description": "Unique ID for this relationship between an account and a person.",
-          "title": "Account Person ID",
-          "type": "string",
-          "examples": [
-            "AAAPPP111"
-          ]
-        },
-        "xdm:isDirect": {
-          "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
-          "title": "Direct Flag",
-          "type": "boolean"
-        },
-        "xdm:relationEndDate": {
-          "format": "date-time",
-          "description": "The date when the relationship between the account and the person ended.",
-          "title": "Relationship End Date",
-          "type": "string"
-        },
-        "xdm:isPrimary": {
-          "description": "Boolean to indicate if the person is the primary contact on the account.",
-          "title": "Primary Flag",
-          "type": "boolean"
-        },
-        "xdm:personRole": {
-          "description": "Role of the person on this account.",
-          "title": "Person Role",
-          "type": "string"
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/classes/account-person"
+  "required": [
+    "xdm:accountPersonID"
+  ],
+  "meta:status": "experimental"
 }

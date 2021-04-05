@@ -1,23 +1,44 @@
 {
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:abstract": true,
-  "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/classes/marketing-list",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Marketing List",
   "type": "object",
-  "required": [
-    "xdm:marketingListID"
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
   ],
+  "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",
+  "definitions": {
+    "marketing-list": {
+      "properties": {
+        "xdm:marketingListID": {
+          "title": "Marketing List ID",
+          "description": "Unique ID of the marketing list.",
+          "type": "string",
+          "examples": [
+            "MKTLST1111"
+          ]
+        },
+        "xdm:marketingListName": {
+          "title": "Marketing List Name",
+          "description": "Name of the marketing list.",
+          "type": "string"
+        },
+        "xdm:marketingListDescription": {
+          "title": "Marketing List Description",
+          "description": "Description of the marketing list.",
+          "type": "string"
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -32,29 +53,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "definitions": {
-    "marketing-list": {
-      "properties": {
-        "xdm:marketingListName": {
-          "description": "Name of the marketing list.",
-          "title": "Marketing List Name",
-          "type": "string"
-        },
-        "xdm:marketingListDescription": {
-          "description": "Description of the marketing list.",
-          "title": "Marketing List Description",
-          "type": "string"
-        },
-        "xdm:marketingListID": {
-          "description": "Unique ID of the marketing list.",
-          "title": "Marketing List ID",
-          "type": "string",
-          "examples": [
-            "MKTLST1111"
-          ]
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/classes/marketing-list"
+  "required": [
+    "xdm:marketingListID"
+  ],
+  "meta:status": "experimental"
 }

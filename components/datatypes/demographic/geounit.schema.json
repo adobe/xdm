@@ -1,39 +1,34 @@
 {
-  "allOf": [
-    {
-      "$ref": "#/definitions/geounit"
-    }
-  ],
-  "meta:extensible": true,
-  "meta:status": "stable",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "The geographical unit of a parent geographical unit.",
   "meta:license": [
     "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/common/geounit",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
+  "meta:extensible": true,
   "title": "Geographical unit",
+  "description": "The geographical unit of a parent geographical unit.",
   "definitions": {
     "geounit": {
       "properties": {
-        "xdm:label": {
-          "description": "The user-friendly name for the geographical unit.",
-          "title": "Label of the geographical unit.",
-          "type": "string",
-          "examples": [
-            "San Jose"
-          ]
-        },
         "@id": {
-          "format": "uri-reference",
-          "description": "The ID associated with this geographical unit.",
           "title": "Identifier",
           "type": "string",
+          "format": "uri-reference",
+          "description": "The ID associated with this geographical unit.",
           "examples": [
             "https://data.adobe.io/geo-san-jose"
+          ]
+        },
+        "xdm:label": {
+          "title": "Label of the geographical unit.",
+          "type": "string",
+          "description": "The user-friendly name for the geographical unit.",
+          "examples": [
+            "San Jose"
           ]
         }
       },
@@ -42,5 +37,10 @@
       ]
     }
   },
-  "$id": "https://ns.adobe.com/xdm/common/geounit"
+  "allOf": [
+    {
+      "$ref": "#/definitions/geounit"
+    }
+  ],
+  "meta:status": "stable"
 }

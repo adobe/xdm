@@ -1,46 +1,41 @@
 {
-  "allOf": [
-    {
-      "$ref": "#/definitions/currency"
-    }
-  ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/currency",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Currency",
   "type": "object",
+  "meta:extensible": true,
+  "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
   "definitions": {
     "currency": {
       "properties": {
-        "xdm:currencyCode": {
-          "examples": [
-            "USD"
-          ],
-          "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code.",
-          "title": "Currency Code",
-          "type": "string"
-        },
         "xdm:amount": {
-          "description": "Amount represented by the currencyCode",
           "title": "Amount",
+          "description": "Amount represented by the currencyCode",
           "type": "number",
           "examples": [
             -200757575
           ]
         },
-        "xdm:conversionDate": {
-          "format": "date-time",
-          "description": "Date when currency conversion was made.",
-          "title": "Conversion Date",
+        "xdm:currencyCode": {
+          "title": "Currency Code",
           "type": "string",
+          "examples": [
+            "USD"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
+        "xdm:conversionDate": {
+          "title": "Conversion Date",
+          "description": "Date when currency conversion was made.",
+          "type": "string",
+          "format": "date-time",
           "examples": [
             "2018-01-12T15:52:25+00:00"
           ]
@@ -48,5 +43,10 @@
       }
     }
   },
-  "$id": "https://ns.adobe.com/xdm/datatypes/currency"
+  "allOf": [
+    {
+      "$ref": "#/definitions/currency"
+    }
+  ],
+  "meta:status": "experimental"
 }

@@ -1,7 +1,52 @@
 {
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Not Sent",
+  "type": "object",
+  "meta:extensible": true,
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/metricdefinition"
   ],
+  "description": "The direct-marketing metric `not-sent` describes the number of asynchronous messages (email, SMS, MMS etc) that have not been dispatched to an recipient\u0027s account/address/device due to cancellation or expiration of the marketing activity.",
+  "definitions": {
+    "metricdefinition": {
+      "properties": {
+        "@id": {
+          "type": "string",
+          "const": "xdm:notSent",
+          "description": "The unique identifier of this metric.",
+          "examples": [
+            "xdm:notSent"
+          ]
+        },
+        "schema:name": {
+          "type": "string",
+          "const": "direct-marketing metric: notSent",
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "examples": [
+            "direct-marketing metric: notSent"
+          ]
+        },
+        "xdm:measurement": {
+          "type": "string",
+          "description": "How to take measures of this metric.",
+          "const": "count",
+          "examples": [
+            "count"
+          ]
+        },
+        "xdm:unit": {
+          "const": ""
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "#/definitions/metricdefinition"
@@ -10,56 +55,11 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "meta:extensible": true,
-  "meta:status": "stable",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "The direct-marketing metric `not-sent` describes the number of asynchronous messages (email, SMS, MMS etc) that have not been dispatched to an recipient\u0027s account/address/device due to cancellation or expiration of the marketing activity.",
-  "meta:license": [
-    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "title": "Not Sent",
-  "type": "object",
-  "definitions": {
-    "metricdefinition": {
-      "properties": {
-        "xdm:unit": {
-          "const": ""
-        },
-        "@id": {
-          "const": "xdm:notSent",
-          "description": "The unique identifier of this metric.",
-          "type": "string",
-          "examples": [
-            "xdm:notSent"
-          ]
-        },
-        "xdm:measurement": {
-          "const": "count",
-          "description": "How to take measures of this metric.",
-          "type": "string",
-          "examples": [
-            "count"
-          ]
-        },
-        "schema:name": {
-          "const": "direct-marketing metric: notSent",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "type": "string",
-          "examples": [
-            "direct-marketing metric: notSent"
-          ]
-        }
-      }
-    }
-  },
   "required": [
     "@id",
     "schema:name",
     "xdm:measurement",
     "xdm:unit"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/notSent"
+  "meta:status": "stable"
 }

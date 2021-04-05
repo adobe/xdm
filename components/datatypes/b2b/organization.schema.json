@@ -1,52 +1,98 @@
 {
-  "allOf": [
-    {
-      "$ref": "#/definitions/organization"
-    }
-  ],
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "description": "Examples of organization data are number of employees, market segment, industry, and location.",
   "meta:license": [
     "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/common/organization",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Organization",
   "type": "object",
+  "description": "Examples of organization data are number of employees, market segment, industry, and location.",
   "definitions": {
     "organization": {
       "properties": {
-        "schema:numberOfEmployees": {
-          "description": "The number of employees the at the organization.",
-          "title": "Number of employees",
-          "type": "number"
-        },
-        "xdm:marketSegment": {
-          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
-          "title": "Market segment",
+        "@id": {
+          "title": "Organization ID",
           "type": "string",
+          "format": "uri-reference",
+          "description": "A unique identifier for the organization.",
           "examples": [
-            "apparel for kids"
+            "https://data.adobe.io/entities/org/orgid111",
+            "https://data.adobe.io/entities/address/123",
+            "https://data.adobe.io/entities/places/locid123"
           ]
         },
-        "xdm:rating": {
-          "maximum": 1,
-          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
-          "title": "Rating",
+        "xdm:legalName": {
+          "title": "Organization legal name",
+          "type": "string",
+          "description": "The official or legal name of the organization.",
+          "examples": [
+            "ABC Stores"
+          ]
+        },
+        "schema:description": {
+          "title": "Organization description",
+          "type": "string",
+          "description": "A description of the organization.",
+          "examples": [
+            "ABC Store location"
+          ]
+        },
+        "schema:numberOfEmployees": {
+          "title": "Number of employees",
           "type": "number",
-          "minimum": 0
+          "description": "The number of employees the at the organization."
+        },
+        "xdm:annualRevenue": {
+          "title": "Annual Revenue",
+          "description": "Estimated amount of annual revenue of the organization.",
+          "type": "number",
+          "examples": [
+            1000000
+          ]
         },
         "xdm:industry": {
-          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
           "title": "Industry",
           "type": "string",
+          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
           "examples": [
             "Retail"
           ]
         },
+        "xdm:website": {
+          "title": "Website URL",
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the organization\u0027s website.",
+          "examples": [
+            "http://www.abcstores.com"
+          ]
+        },
+        "xdm:marketSegment": {
+          "title": "Market segment",
+          "type": "string",
+          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
+          "examples": [
+            "apparel for kids"
+          ]
+        },
+        "xdm:location": {
+          "title": "Location",
+          "$ref": "https://ns.adobe.com/xdm/context/place",
+          "description": "The location of the organization\u0027s main office or headquarters."
+        },
+        "xdm:rating": {
+          "title": "Rating",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
+        },
         "xdm:identifier": {
+          "title": "Organization identifier",
+          "type": "object",
           "description": "This object contains unambiguous identifiers for the organization. Each key is the URI of an identification service, each value is the unique ID or preferably URI of the organization as defined by the identification service.",
           "meta:xdmType": "map",
           "additionalProperties": {
@@ -55,28 +101,11 @@
             "items": {
               "type": "string"
             }
-          },
-          "title": "Organization identifier",
-          "type": "object"
-        },
-        "schema:description": {
-          "description": "A description of the organization.",
-          "title": "Organization description",
-          "type": "string",
-          "examples": [
-            "ABC Store location"
-          ]
-        },
-        "xdm:website": {
-          "format": "uri",
-          "description": "The URL of the organization\u0027s website.",
-          "title": "Website URL",
-          "type": "string",
-          "examples": [
-            "http://www.abcstores.com"
-          ]
+          }
         },
         "xdm:classifier": {
+          "title": "Market or industry classifier",
+          "type": "object",
           "description": "This object contains unambiguous classifiers for the organization. Each key is the URI of an classification service or standard, each value is the unique ID or preferably URI of the organization as defined by the classification service.",
           "meta:xdmType": "map",
           "additionalProperties": {
@@ -85,44 +114,15 @@
             "items": {
               "type": "string"
             }
-          },
-          "title": "Market or industry classifier",
-          "type": "object"
-        },
-        "@id": {
-          "format": "uri-reference",
-          "description": "A unique identifier for the organization.",
-          "title": "Organization ID",
-          "type": "string",
-          "examples": [
-            "https://data.adobe.io/entities/org/orgid111",
-            "https://data.adobe.io/entities/address/123",
-            "https://data.adobe.io/entities/places/locid123"
-          ]
-        },
-        "xdm:legalName": {
-          "description": "The official or legal name of the organization.",
-          "title": "Organization legal name",
-          "type": "string",
-          "examples": [
-            "ABC Stores"
-          ]
-        },
-        "xdm:annualRevenue": {
-          "description": "Estimated amount of annual revenue of the organization.",
-          "title": "Annual Revenue",
-          "type": "number",
-          "examples": [
-            1000000
-          ]
-        },
-        "xdm:location": {
-          "description": "The location of the organization\u0027s main office or headquarters.",
-          "title": "Location",
-          "$ref": "https://ns.adobe.com/xdm/context/place"
+          }
         }
       }
     }
   },
-  "$id": "https://ns.adobe.com/xdm/common/organization"
+  "allOf": [
+    {
+      "$ref": "#/definitions/organization"
+    }
+  ],
+  "meta:status": "experimental"
 }

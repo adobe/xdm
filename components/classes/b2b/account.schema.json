@@ -1,23 +1,35 @@
 {
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
-  "meta:extensible": true,
-  "meta:status": "experimental",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:abstract": true,
-  "description": "An XDM Business Account.",
   "meta:license": [
     "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/context/account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Account",
   "type": "object",
-  "required": [
-    "xdm:accountID"
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
   ],
+  "description": "An XDM Business Account.",
+  "definitions": {
+    "account": {
+      "properties": {
+        "xdm:accountID": {
+          "title": "Account identifer",
+          "description": "Unique ID for the account.",
+          "type": "string",
+          "examples": [
+            "1234567890"
+          ]
+        }
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -32,20 +44,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "auditable": true,
-  "definitions": {
-    "account": {
-      "properties": {
-        "xdm:accountID": {
-          "examples": [
-            "1234567890"
-          ],
-          "description": "Unique ID for the account.",
-          "title": "Account identifer",
-          "type": "string"
-        }
-      }
-    }
-  },
-  "$id": "https://ns.adobe.com/xdm/context/account"
+  "required": [
+    "xdm:accountID"
+  ],
+  "meta:status": "experimental"
 }

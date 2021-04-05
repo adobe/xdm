@@ -15,35 +15,10 @@ Claim details such as claim policy ID and claim creation steps.
 ```json
 {
   "xdm:disputes": {
-    "xdm:claimID": "P102819201D",
-    "xdm:claimStartDate": "2021-03-04T15:52:25+00:00",
-    "xdm:claimStatus": "approved",
-    "xdm:claimSteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "calculator",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    },
-    "xdm:claimType": "automobile",
-    "xdm:policy": {
-      "xdm:policy-details": {
-        "xdm:policyEndDate": "2021-07-24",
-        "xdm:policyID": "A10276151",
-        "xdm:policyName": "Personal Automobile Coverage",
-        "xdm:policyStartDate": "2021-01-24",
-        "xdm:policyState": "MO",
-        "xdm:policyType": "automobile"
-      }
-    }
+    "xdm:ID": "P102819201D",
+    "xdm:startDate": "2021-03-04T15:52:25+00:00",
+    "xdm:status": "approved",
+    "xdm:type": "automobile"
   }
 }
 ```
@@ -71,126 +46,30 @@ Claim details such as claim policy ID and claim creation steps.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:claimID`| string | Optional |
-| `xdm:claimStartDate`| string | Optional |
-| `xdm:claimStatus`| string | Optional |
-| `xdm:claimSteps`|  | Optional |
-| `xdm:claimType`| string | Optional |
+| `xdm:ID`| string | Optional |
 | `xdm:policy`|  | Optional |
+| `xdm:startDate`| string | Optional |
+| `xdm:status`| string | Optional |
+| `xdm:steps`|  | Optional |
+| `xdm:type`| string | Optional |
 
 
 
-#### xdm:claimID
-##### Claim ID
+#### xdm:ID
+#####  ID
 
 ID of the claim being submitted.
 
-`xdm:claimID`
+`xdm:ID`
 * is optional
 * type: `string`
 
-##### xdm:claimID Type
+##### xdm:ID Type
 
 
 `string`
 
 
-
-
-
-
-
-
-#### xdm:claimStartDate
-##### Claim Start Date
-
-Date the claim was successfully submitted.
-
-`xdm:claimStartDate`
-* is optional
-* type: `string`
-
-##### xdm:claimStartDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-
-
-#### xdm:claimStatus
-##### Claim Status
-
-Captures the status of the claim for any given point in the application process.
-
-`xdm:claimStatus`
-* is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
-
-##### xdm:claimStatus Known Values
-| Value | Description |
-|-------|-------------|
-| `initiated` |  |
-| `in progress` |  |
-| `approved` |  |
-| `declined` |  |
-
-
-
-
-
-
-#### xdm:claimSteps
-##### Claim Steps
-
-Extension of toolUsage data type.
-
-`xdm:claimSteps`
-* is optional
-* type: reference
-
-##### xdm:claimSteps Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
-
-
-
-
-#### xdm:claimType
-##### Claim Type
-
-Type of claim submitted.
-
-`xdm:claimType`
-* is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
-
-##### xdm:claimType Known Values
-| Value | Description |
-|-------|-------------|
-| `homeowners` |  |
-| `automobile` |  |
-| `renters` |  |
-| `third party automobile` |  |
-| `third party home` |  |
-| `life` |  |
-| `health` |  |
-| `dental` |  |
-| `flood` |  |
-| `earthquake` |  |
 
 
 
@@ -211,6 +90,102 @@ Extension of Policy data type.
 
 * []() – `https://ns.adobe.com/xdm/datatypes/policy-details`
 
+
+
+
+
+
+
+#### xdm:startDate
+##### Start Date
+
+Date the claim was successfully submitted.
+
+`xdm:startDate`
+* is optional
+* type: `string`
+
+##### xdm:startDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:status
+##### Status
+
+Captures the status of the claim for any given point in the application process.
+
+`xdm:status`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
+
+##### xdm:status Known Values
+| Value | Description |
+|-------|-------------|
+| `initiated` |  |
+| `in progress` |  |
+| `approved` |  |
+| `declined` |  |
+
+
+
+
+
+
+#### xdm:steps
+##### Steps
+
+Extension of toolUsage data type.
+
+`xdm:steps`
+* is optional
+* type: reference
+
+##### xdm:steps Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
+
+
+
+
+
+
+
+#### xdm:type
+##### Type
+
+Type of claim submitted.
+
+`xdm:type`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
+
+##### xdm:type Known Values
+| Value | Description |
+|-------|-------------|
+| `homeowners` |  |
+| `automobile` |  |
+| `renters` |  |
+| `third party automobile` |  |
+| `third party home` |  |
+| `life` |  |
+| `health` |  |
+| `dental` |  |
+| `flood` |  |
+| `earthquake` |  |
 
 
 

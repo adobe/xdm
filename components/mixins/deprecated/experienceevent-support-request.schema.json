@@ -5,25 +5,25 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-financial-calculator-steps",
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-support-request",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Financial Calculator Steps",
+  "title": "Support Request",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": ["financial_services", "telecom", "high_tech", "public_sector"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Included for any type of support request initiated by the customer.",
   "definitions": {
-    "financial-calculator-steps": {
+    "support-request": {
       "properties": {
-        "xdm:personalFinances": {
+        "xdm:supportRequest": {
           "type": "object",
           "properties": {
-            "xdm:calcuator": {
-              "title": "Financial Calculator Steps",
+            "xdm:supportRequestSteps": {
+              "title": "Support Request Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type."
             }
@@ -34,8 +34,8 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/financial-calculator-steps"
+      "$ref": "#/definitions/support-request"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "deprecated"
 }

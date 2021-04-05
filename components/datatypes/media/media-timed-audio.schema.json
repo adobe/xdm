@@ -19,9 +19,7 @@
           "title": "Author",
           "type": "string",
           "description": "Name of the media author.",
-          "examples": [
-            "Jimmy Page"
-          ]
+          "examples": ["Jimmy Page"]
         },
         "xmpDM:artist": {
           "title": "Artist",

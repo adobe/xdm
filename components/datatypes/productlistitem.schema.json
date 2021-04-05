@@ -17,18 +17,14 @@
           "title": "SKU",
           "type": "string",
           "description": "Stock keeping unit (SKU), the unique identifier for a product defined by the vendor.",
-          "examples": [
-            "1002352692"
-          ]
+          "examples": ["1002352692"]
         },
         "@id": {
           "title": "Line item ID.",
           "type": "string",
           "format": "uri-reference",
           "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`.",
-          "examples": [
-            "https://commerce.adobe.io/entities/item/item-12345678"
-          ]
+          "examples": ["https://commerce.adobe.io/entities/item/item-12345678"]
         },
         "xdm:product": {
           "title": "Product",
@@ -43,9 +39,7 @@
           "title": "Name",
           "type": "string",
           "description": "The display name for the product as presented to the user for this product view.",
-          "examples": [
-            "24-Watt 8-Light Chrome Integrated LED Bath Light"
-          ]
+          "examples": ["24-Watt 8-Light Chrome Integrated LED Bath Light"]
         },
         "xdm:productAddMethod": {
           "title": "Product add method",
@@ -55,9 +49,7 @@
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
-          "examples": [
-            "USD"
-          ],
+          "examples": ["USD"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for pricing the product."
         },
@@ -65,22 +57,16 @@
           "title": "Quantity",
           "type": "integer",
           "description": "The number of units the customer has indicated they require of the product.",
-          "examples": [
-            1
-          ]
+          "examples": [1]
         },
         "xdm:priceTotal": {
           "title": "Price total",
           "type": "number",
           "description": "The total price for the product line item.",
-          "examples": [
-            159
-          ]
+          "examples": [159]
         }
       },
-      "required": [
-        "xdm:SKU"
-      ]
+      "required": ["xdm:SKU"]
     }
   },
   "allOf": [

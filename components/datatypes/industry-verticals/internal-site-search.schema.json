@@ -18,25 +18,19 @@
           "title": "Number of Results",
           "type": "integer",
           "description": "Count of the total number of search results returned.",
-          "examples": [
-            258
-          ]
+          "examples": [258]
         },
         "xdm:productFindingMethods": {
           "title": "Product Finding Method",
           "type": "string",
           "description": "The internal site search term value with merchandising binding. Will show what term was searched for immediately before viewing a product.",
-          "examples": [
-            "pedals"
-          ]
+          "examples": ["pedals"]
         },
         "xdm:refinementValue": {
           "title": "Refinement Value",
           "type": "string",
           "description": "Number of times an internal site search refinement has occurred.",
-          "examples": [
-            "aluminum"
-          ]
+          "examples": ["aluminum"]
         },
         "xdm:refinementType": {
           "title": "Refinement Type",
@@ -46,119 +40,87 @@
           },
           "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)",
           "examples": [
-            [
-              "Customer Reviews \u003d 5",
-              "Recommended Use \u003d Trail"
-            ]
+            ["Customer Reviews \u003d 5", "Recommended Use \u003d Trail"]
           ]
         },
         "xdm:refinementInstances": {
           "title": "Refinement Instances",
           "type": "integer",
           "description": "Captures when a search refinement action occurs.",
-          "examples": [
-            1
-          ]
+          "examples": [1]
         },
         "xdm:resultsPageNumber": {
           "title": "Results Page Number",
           "type": "integer",
           "description": "For paginated search results, tracks the page of results the visitor is viewing.",
-          "examples": [
-            2
-          ]
+          "examples": [2]
         },
         "xdm:resultsPerPage": {
           "title": "Results Per Page",
           "type": "integer",
           "description": "For paginated search results, tracks the number of search results displayed per page.",
-          "examples": [
-            50
-          ]
+          "examples": [50]
         },
         "xdm:instances": {
           "title": "Instances",
           "type": "integer",
           "description": "Number of times an internal site search has occurred.",
-          "examples": [
-            1
-          ]
+          "examples": [1]
         },
         "xdm:locationInPage": {
           "title": "Location in Page",
           "type": "string",
           "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search",
-          "examples": [
-            "top nav"
-          ]
+          "examples": ["top nav"]
         },
         "xdm:nullInstances": {
           "title": "Null Instances",
           "type": "integer",
           "description": "Number of times an internal site search has occurred that provided zero results.",
-          "examples": [
-            0
-          ]
+          "examples": [0]
         },
         "xdm:postalCode": {
           "title": "Postal Code",
           "type": "string",
           "description": "Captures the zip code used for a search, if applicable",
-          "examples": [
-            "63141"
-          ]
+          "examples": ["63141"]
         },
         "xdm:radiusDistance": {
           "title": "Radius Distance",
           "type": "integer",
           "description": "Captures the selected distance of the search radius.",
-          "examples": [
-            25
-          ]
+          "examples": [25]
         },
         "xdm:radiusType": {
           "title": "Radius Type",
           "type": "string",
-          "enum": [
-            "miles",
-            "kilometers"
-          ],
+          "enum": ["miles", "kilometers"],
           "description": "Captures the selected distance type of the search radius in either miles or kilometers.",
-          "examples": [
-            "miles"
-          ]
+          "examples": ["miles"]
         },
         "xdm:term": {
           "title": "Term",
           "type": "string",
           "description": "Tracks the internal site search term entered by the visitor.",
-          "examples": [
-            "shimano pedals"
-          ]
+          "examples": ["shimano pedals"]
         },
         "xdm:autoCompleteClicked": {
           "title": "Auto Complete Clicked",
           "type": "boolean",
           "description": "Indicates when a visitor uses a suggested/autocompleted search value to execute the search",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:autoCompleteValue": {
           "title": "Auto Complete Value",
           "type": "string",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked",
-          "examples": [
-            "shimano pedals"
-          ]
+          "examples": ["shimano pedals"]
         },
         "xdm:autoCompleteTypedValue": {
           "title": "Auto Complete Typed Value",
           "type": "string",
           "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms",
-          "examples": [
-            "pedal"
-          ]
+          "examples": ["pedal"]
         },
         "xdm:searchType": {
           "title": "Search Type",
@@ -168,14 +130,9 @@
         "xdm:sortOrder": {
           "title": "Sort Order",
           "type": "string",
-          "enum": [
-            "ascending",
-            "descending"
-          ],
+          "enum": ["ascending", "descending"],
           "description": "ascending/descending",
-          "examples": [
-            "ascending"
-          ]
+          "examples": ["ascending"]
         },
         "xdm:sortType": {
           "title": "Sort Type",
@@ -190,9 +147,7 @@
             "new items"
           ],
           "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc.",
-          "examples": [
-            "price: low to high"
-          ]
+          "examples": ["price: low to high"]
         }
       }
     }

@@ -18,73 +18,55 @@
           "title": "Name",
           "type": "string",
           "description": "The application or browser name.",
-          "examples": [
-            "Chrome"
-          ]
+          "examples": ["Chrome"]
         },
         "xdm:vendor": {
           "title": "Vendor",
           "type": "string",
           "description": "The application or browser vendor.",
-          "examples": [
-            "Google"
-          ]
+          "examples": ["Google"]
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "The application or browser version.",
-          "examples": [
-            "63.0.3239"
-          ]
+          "examples": ["63.0.3239"]
         },
         "xdm:acceptLanguage": {
           "title": "Accept language",
           "type": "string",
           "description": "An IETF language tag (RFC 5646).",
-          "examples": [
-            "en"
-          ]
+          "examples": ["en"]
         },
         "xdm:cookiesEnabled": {
           "title": "Allows cookies",
           "type": "boolean",
           "description": "The current user agent settings allow for the writing of cookies.\u0027",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:javaScriptEnabled": {
           "title": "JavaScript enabled",
           "type": "boolean",
           "description": "If JavaScript was enabled in the device this observation was made from.",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:javaScriptVersion": {
           "title": "JavaScript version",
           "type": "string",
           "description": "The version of JavaScript supported during the observation.",
-          "examples": [
-            "1.8.5"
-          ]
+          "examples": ["1.8.5"]
         },
         "xdm:javaEnabled": {
           "title": "Java enabled",
           "type": "boolean",
           "description": "If Java was enabled in the device this observation was made from.",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:javaVersion": {
           "title": "Java version",
           "type": "string",
           "description": "The version of Java supported during the observation.",
-          "examples": [
-            "Java SE 8"
-          ]
+          "examples": ["Java SE 8"]
         },
         "xdm:quicktimeVersion": {
           "title": "Quicktime version",
@@ -100,17 +82,13 @@
           "title": "Viewport height",
           "type": "integer",
           "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-          "examples": [
-            900
-          ]
+          "examples": [900]
         },
         "xdm:viewportWidth": {
           "title": "Viewport width",
           "type": "integer",
           "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
-          "examples": [
-            1680
-          ]
+          "examples": [1680]
         }
       }
     },

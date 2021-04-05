@@ -18,17 +18,13 @@
           "title": "Primary",
           "type": "boolean",
           "description": "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`.",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:number": {
           "title": "Number",
           "type": "string",
           "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "examples": [
-            "1-408-888-8888"
-          ]
+          "examples": ["1-408-888-8888"]
         },
         "xdm:extension": {
           "title": "Extension",
@@ -46,9 +42,7 @@
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           },
-          "examples": [
-            "active"
-          ]
+          "examples": ["active"]
         },
         "xdm:statusReason": {
           "title": "Status reason",

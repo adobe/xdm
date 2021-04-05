@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/product"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
   "description": "This mixin is used to capture properties related to product catalog.",
   "definitions": {
     "product-catalog": {
@@ -23,17 +21,13 @@
           "title": "Product Catalog Name",
           "type": "string",
           "description": "friendly name of the product catalog.",
-          "examples": [
-            "video"
-          ]
+          "examples": ["video"]
         },
         "xdm:productCatalogDescription": {
           "title": "Product Catalog Description",
           "type": "string",
           "description": "Catalog description of the product.",
-          "examples": [
-            "video products"
-          ]
+          "examples": ["video products"]
         }
       }
     }

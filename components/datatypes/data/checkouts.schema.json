@@ -10,9 +10,7 @@
   "title": "Checkouts",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description": "Number of actions during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.",
   "definitions": {
     "metricdefinition": {
@@ -21,25 +19,19 @@
           "type": "string",
           "const": "xdm:checkouts",
           "description": "The unique identifier of this metric.",
-          "examples": [
-            "xdm:checkouts"
-          ]
+          "examples": ["xdm:checkouts"]
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: checkouts",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "examples": [
-            "commerce metric: checkouts"
-          ]
+          "examples": ["commerce metric: checkouts"]
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "examples": [
-            "count"
-          ]
+          "examples": ["count"]
         },
         "xdm:unit": {
           "const": ""
@@ -55,11 +47,6 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable"
 }

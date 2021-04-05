@@ -26,9 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Social network usage information such as share, content, and network. ",
   "definitions": {
     "social-network-usage-details": {
@@ -40,17 +38,13 @@
               "title": "Shared Content",
               "type": "string",
               "description": "Tracks the page/url/content/value of the item being shared.",
-              "examples": [
-                "Product Page"
-              ]
+              "examples": ["Product Page"]
             },
             "xdm:follow": {
               "title": "Follow",
               "type": "integer",
               "description": "Tracks when a social follow event has occurred.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:sharedMessage": {
               "title": "Shared Message",
@@ -66,9 +60,7 @@
               "title": "Network",
               "type": "string",
               "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc.",
-              "examples": [
-                "LinkedIn"
-              ]
+              "examples": ["LinkedIn"]
             },
             "xdm:target": {
               "title": "Target",
@@ -84,9 +76,7 @@
               "title": "Share",
               "type": "integer",
               "description": "Tracks when a social sharing event has occurred.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             }
           }
         }

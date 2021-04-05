@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
   "definitions": {
     "opportunity-person": {
@@ -23,41 +21,31 @@
           "title": "Opportunity Person ID",
           "description": "Unique ID for the relationship between the opportunity and the person.",
           "type": "string",
-          "examples": [
-            "123456"
-          ]
+          "examples": ["123456"]
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID for the opportunity in this opportunity person relationship.",
           "type": "string",
-          "examples": [
-            "jkghdiuw68o"
-          ]
+          "examples": ["jkghdiuw68o"]
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this opportunity person relationship.",
           "type": "string",
-          "examples": [
-            "6897ihkhf"
-          ]
+          "examples": ["6897ihkhf"]
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this opportunity.",
           "type": "string",
-          "examples": [
-            "Sales"
-          ]
+          "examples": ["Sales"]
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean indicating if the person is the primary contact on this opportunity.",
           "type": "boolean",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         }
       }
     }
@@ -76,8 +64,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": [
-    "xdm:opportunityPersonID"
-  ],
+  "required": ["xdm:opportunityPersonID"],
   "meta:status": "experimental"
 }

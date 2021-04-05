@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:tags": {
     "industry": [
       "retail",
@@ -38,58 +36,44 @@
           "type": "string",
           "format": "date-time",
           "description": "Date on which the promotion ceases to be valid.",
-          "examples": [
-            "2021-09-22T15:52:25+00:00"
-          ]
+          "examples": ["2021-09-22T15:52:25+00:00"]
         },
         "xdm:promoCreative": {
           "title": "Promotion Creative",
           "type": "string",
           "description": "The text or creative variation associated with the promotion.",
-          "examples": [
-            "none"
-          ]
+          "examples": ["none"]
         },
         "xdm:promotionDetails": {
           "title": "Promotion Details",
           "type": "string",
           "description": "Details of the promotion such as percentage off, or other restrictions.",
-          "examples": [
-            "10 Percent Off Campaign for Affiliate Referrers"
-          ]
+          "examples": ["10 Percent Off Campaign for Affiliate Referrers"]
         },
         "xdm:ID": {
           "title": "Promotion ID",
           "type": "string",
           "description": "The ID associated with the promotion.",
-          "examples": [
-            "10OFF_FALL2021"
-          ]
+          "examples": ["10OFF_FALL2021"]
         },
         "xdm:promoName": {
           "title": "Promotion Name",
           "type": "string",
           "description": "Promotion name",
-          "examples": [
-            "10 Percent Off"
-          ]
+          "examples": ["10 Percent Off"]
         },
         "xdm:promoPosition": {
           "title": "Promotion Position",
           "type": "string",
           "description": "Promotion position on site.",
-          "examples": [
-            "top"
-          ]
+          "examples": ["top"]
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date-time",
           "description": "Date on which the promotion is valid.",
-          "examples": [
-            "2021-09-01T15:52:25+00:00"
-          ]
+          "examples": ["2021-09-01T15:52:25+00:00"]
         }
       }
     }

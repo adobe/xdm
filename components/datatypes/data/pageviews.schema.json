@@ -10,9 +10,7 @@
   "title": "Page Views",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description": "The web metric `pageViews` describes the number of impressions of a web page.",
   "definitions": {
     "metricdefinition": {
@@ -21,25 +19,19 @@
           "type": "string",
           "const": "xdm:pageViews",
           "description": "The unique identifier of this metric.",
-          "examples": [
-            "xdm:pageViews"
-          ]
+          "examples": ["xdm:pageViews"]
         },
         "schema:name": {
           "type": "string",
           "const": "web metric: pageViews",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "examples": [
-            "web metric: pageViews"
-          ]
+          "examples": ["web metric: pageViews"]
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "examples": [
-            "count"
-          ]
+          "examples": ["count"]
         },
         "xdm:unit": {
           "const": ""
@@ -55,11 +47,6 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable"
 }

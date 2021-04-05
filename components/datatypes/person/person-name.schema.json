@@ -18,29 +18,19 @@
           "title": "First name",
           "type": "string",
           "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-          "examples": [
-            "John",
-            "张",
-            "فلانة"
-          ]
+          "examples": ["John", "张", "فلانة"]
         },
         "xdm:lastName": {
           "title": "Last name",
           "type": "string",
           "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-          "examples": [
-            "Doe",
-            "三",
-            "الفلانية"
-          ]
+          "examples": ["Doe", "三", "الفلانية"]
         },
         "xdm:middleName": {
           "title": "Middle name",
           "type": "string",
           "description": "Middle, alternative, or additional names supplied between the first name and last name.",
-          "examples": [
-            "S"
-          ]
+          "examples": ["S"]
         },
         "xdm:courtesyTitle": {
           "title": "Courtesy title",
@@ -56,11 +46,7 @@
           "title": "Full name",
           "type": "string",
           "description": "The full name of the person, in writing order most commonly accepted in the language of the name.",
-          "examples": [
-            "John S. Doe",
-            "张三",
-            "فلانة الفلانية"
-          ]
+          "examples": ["John S. Doe", "张三", "فلانة الفلانية"]
         }
       }
     }

@@ -22,9 +22,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "",
   "definitions": {
     "knowledge-base-details": {
@@ -36,25 +34,19 @@
               "title": "Knowledge Base Article ID",
               "type": "string",
               "description": "Tracks the knowledge base article ID when it has been viewed.",
-              "examples": [
-                ""
-              ]
+              "examples": [""]
             },
             "xdm:knowledgeBaseArticleType": {
               "title": "Knowledge Base Article Type",
               "type": "string",
               "description": "Tracks the knowledge base article type when it has been viewed.",
-              "examples": [
-                ""
-              ]
+              "examples": [""]
             },
             "xdm:knowledgeBaseArticleView": {
               "title": "Knowledge Base Article View",
               "type": "integer",
               "description": "Tracked when a knowledge base article has been viewed.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:knowledgeBaseSearch": {
               "title": "Knowledge Base Search",

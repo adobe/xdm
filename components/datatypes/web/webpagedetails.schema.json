@@ -18,44 +18,32 @@
           "title": "Site section",
           "type": "string",
           "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.",
-          "examples": [
-            "Product Details Page",
-            "Product section"
-          ]
+          "examples": ["Product Details Page", "Product section"]
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site\u0027s pages for classification purposes.",
-          "examples": [
-            "Scottish Haggis Product Details",
-            "product home"
-          ]
+          "examples": ["Scottish Haggis Product Details", "product home"]
         },
         "xdm:viewName": {
           "title": "View Name",
           "type": "string",
           "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout.",
-          "examples": [
-            "FAQ Tab"
-          ]
+          "examples": ["FAQ Tab"]
         },
         "xdm:URL": {
           "title": "URL",
           "type": "string",
           "pattern": "^w+://(localhost|[^s:/]+.[^s:/]+)(:d+)?(/[^s]*)?$",
           "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
-          "examples": [
-            "https://www.example.com"
-          ]
+          "examples": ["https://www.example.com"]
         },
         "xdm:server": {
           "title": "Server",
           "type": "string",
           "description": "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes.",
-          "examples": [
-            "example.com"
-          ]
+          "examples": ["example.com"]
         },
         "xdm:isErrorPage": {
           "title": "Is error page",

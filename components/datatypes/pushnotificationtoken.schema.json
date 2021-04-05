@@ -18,18 +18,14 @@
           "title": "Token",
           "type": "string",
           "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID.",
-          "examples": [
-            "ABC123DEFG"
-          ]
+          "examples": ["ABC123DEFG"]
         },
         "xdm:registrationDate": {
           "title": "Registration date",
           "type": "string",
           "format": "date-time",
           "description": "Date and time when the profile has authorized the application to receive push notifications.",
-          "examples": [
-            "2017-09-26T15:52:25+00:00"
-          ]
+          "examples": ["2017-09-26T15:52:25+00:00"]
         },
         "xdm:deregistrationDate": {
           "title": "De-registration date",

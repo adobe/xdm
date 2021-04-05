@@ -29,34 +29,26 @@
           "title": "Content player name",
           "type": "string",
           "description": "Name of the content player.",
-          "examples": [
-            "watchtv"
-          ]
+          "examples": ["watchtv"]
         },
         "xdm:videoSegment": {
           "title": "Video segment",
           "type": "string",
           "pattern": "^[0-9]+-[0-9]+$",
           "description": "The interval that describes the part of the content that has been viewed in minutes.",
-          "examples": [
-            "3-10"
-          ]
+          "examples": ["3-10"]
         },
         "xdm:path": {
           "title": "Video path",
           "type": "string",
           "description": "The path to the video in the app or site.",
-          "examples": [
-            "mid:cartoon:episode:kidschannel.com:dfb59263-4ce7"
-          ]
+          "examples": ["mid:cartoon:episode:kidschannel.com:dfb59263-4ce7"]
         },
         "xdm:broadcastChannel": {
           "title": "Content channel",
           "type": "string",
           "description": "Distribution channel from where the content was played.",
-          "examples": [
-            "WatchTV"
-          ]
+          "examples": ["WatchTV"]
         },
         "xdm:broadcastContentType": {
           "title": "Broadcast content type",
@@ -71,9 +63,7 @@
             "Podcast": "Audio podcast",
             "Audiobook": "Audiobook"
           },
-          "examples": [
-            "VOD"
-          ]
+          "examples": ["VOD"]
         },
         "xdm:playerSDKVersion": {
           "title": "Player SDK version",
@@ -84,26 +74,19 @@
           "title": "VHL version",
           "type": "string",
           "description": "The Media SDK version used for the tracking session.",
-          "examples": [
-            "js-2.0.1.88-c8c0b1"
-          ]
+          "examples": ["js-2.0.1.88-c8c0b1"]
         },
         "xdm:broadcastNetwork": {
           "title": "Broadcast network",
           "type": "string",
           "description": "The programmer network name.",
-          "examples": [
-            "nbpu"
-          ]
+          "examples": ["nbpu"]
         },
         "xdm:adLoadType": {
           "title": "Ad load type",
           "type": "string",
           "description": "The type of ad loaded as defined by each customer\u0027s internal representation.",
-          "examples": [
-            "1",
-            "2"
-          ]
+          "examples": ["1", "2"]
         },
         "xdm:sourceFeed": {
           "title": "Feed type",
@@ -117,9 +100,7 @@
           "title": "Media session server timeout",
           "type": "integer",
           "description": "Indicates the amount of time, in seconds, that passed between the user\u0027s last known interaction and the moment the session was closed.",
-          "examples": [
-            1800
-          ]
+          "examples": [1800]
         },
         "xdm:qoe": {
           "title": "Quality of experience",
@@ -130,9 +111,7 @@
           "title": "Media downloaded flag",
           "type": "boolean",
           "description": "The stream was played locally on the device after being downloaded.",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:fullScreen": {
           "title": "Full screen",

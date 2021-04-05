@@ -22,25 +22,19 @@
           "title": "Primary",
           "type": "boolean",
           "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time.",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
           "description": "Free form name of the address.",
-          "examples": [
-            "John Smith"
-          ]
+          "examples": ["John Smith"]
         },
         "xdm:street1": {
           "title": "Street 1",
           "type": "string",
           "description": "Primary street level information, apartment number, street number, and street name.",
-          "examples": [
-            "345 Park Ave"
-          ]
+          "examples": ["345 Park Ave"]
         },
         "xdm:street2": {
           "title": "Street 2",
@@ -72,9 +66,7 @@
           "title": "Country",
           "type": "string",
           "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.",
-          "examples": [
-            "United States"
-          ]
+          "examples": ["United States"]
         },
         "xdm:state": {
           "title": "State",
@@ -93,9 +85,7 @@
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           },
-          "examples": [
-            "active"
-          ]
+          "examples": ["active"]
         },
         "xdm:statusReason": {
           "title": "Status reason",
@@ -107,9 +97,7 @@
           "type": "string",
           "format": "date",
           "description": "The date that the address was last verified as still associated to the person.",
-          "examples": [
-            "2018-01-02"
-          ]
+          "examples": ["2018-01-02"]
         }
       }
     }

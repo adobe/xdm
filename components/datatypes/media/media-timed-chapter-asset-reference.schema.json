@@ -28,22 +28,16 @@
           "title": "Chapter name",
           "type": "string",
           "description": "The friendly name of the chapter and or segment.",
-          "examples": [
-            "Chapter1"
-          ]
+          "examples": ["Chapter1"]
         },
         "xmpDM:duration": {
           "title": "Chapter length or duration",
           "type": "integer",
           "description": "The length of the chapter, in seconds.",
-          "examples": [
-            44
-          ]
+          "examples": [44]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

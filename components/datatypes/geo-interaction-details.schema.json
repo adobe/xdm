@@ -18,9 +18,7 @@
           "title": "Distance to center",
           "type": "number",
           "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
-          "examples": [
-            100
-          ]
+          "examples": [100]
         },
         "xdm:deviceGeoAccuracy": {
           "title": "Geo device accuracy",

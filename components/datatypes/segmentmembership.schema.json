@@ -23,18 +23,14 @@
           "title": "Version",
           "type": "string",
           "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same.",
-          "examples": [
-            "1.0"
-          ]
+          "examples": ["1.0"]
         },
         "xdm:lastQualificationTime": {
           "title": "Last qualification time",
           "type": "string",
           "format": "date-time",
           "description": "The timestamp when the assertion of segment membership was made.",
-          "examples": [
-            "2017-09-26T15:52:25+00:00"
-          ]
+          "examples": ["2017-09-26T15:52:25+00:00"]
         },
         "xdm:payload": {
           "title": "Payload",
@@ -57,9 +53,7 @@
               "description": "The propensity.",
               "exclusiveMinimum": 0,
               "maximum": 1,
-              "examples": [
-                0.5
-              ]
+              "examples": [0.5]
             },
             "xdm:payloadStringValue": {
               "title": "Value",
@@ -69,12 +63,7 @@
             "xdm:payloadType": {
               "title": "Payload Type",
               "type": "string",
-              "enum": [
-                "boolean",
-                "number",
-                "propensity",
-                "string"
-              ],
+              "enum": ["boolean", "number", "propensity", "string"],
               "meta:enum": {
                 "boolean": "Boolean",
                 "number": "Number",
@@ -82,42 +71,30 @@
                 "string": "String"
               },
               "description": "The type of payload.",
-              "examples": [
-                "propensity"
-              ]
+              "examples": ["propensity"]
             }
           },
-          "required": [
-            "xdm:payloadType"
-          ]
+          "required": ["xdm:payloadType"]
         },
         "xdm:validUntil": {
           "title": "Valid until",
           "type": "string",
           "format": "date-time",
           "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated.",
-          "examples": [
-            "2017-12-26T15:52:25+00:00"
-          ]
+          "examples": ["2017-12-26T15:52:25+00:00"]
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
           "description": "Is the segment participation realized as part of the current request.",
           "default": "realized",
-          "enum": [
-            "existing",
-            "realized",
-            "exited"
-          ],
+          "enum": ["existing", "realized", "exited"],
           "meta:enum": {
             "existing": "Entity continues to be in the segment.",
             "realized": "Entity is entering the segment.",
             "exited": "Entity is exiting the segment."
           },
-          "examples": [
-            "realized"
-          ]
+          "examples": ["realized"]
         },
         "xdm:profileStitchID": {
           "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"

@@ -19,9 +19,7 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-          "examples": [
-            "https://ns.adobe.com/xdm/channels/facebook-feed"
-          ]
+          "examples": ["https://ns.adobe.com/xdm/channels/facebook-feed"]
         },
         "xdm:typeAtSource": {
           "type": "string",
@@ -29,11 +27,7 @@
         },
         "xdm:mode": {
           "type": "string",
-          "enum": [
-            "push",
-            "pull",
-            "bidirectional"
-          ],
+          "enum": ["push", "pull", "bidirectional"],
           "description": "How experiences are delivered in this channel.",
           "meta:enum": {
             "push": "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
@@ -65,9 +59,7 @@
             "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
             "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
           },
-          "examples": [
-            "https://ns.adobe.com/xdm/channel-types/social"
-          ]
+          "examples": ["https://ns.adobe.com/xdm/channel-types/social"]
         },
         "xdm:mediaType": {
           "type": "string",
@@ -134,8 +126,6 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": [
-    "@id"
-  ],
+  "required": ["@id"],
   "meta:status": "stable"
 }

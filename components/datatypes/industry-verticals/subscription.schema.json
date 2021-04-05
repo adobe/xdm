@@ -18,9 +18,7 @@
           "title": "Identifier",
           "type": "string",
           "description": "Unique identifier for the subscription instance.",
-          "examples": [
-            "https://data.adobe.io/subscriptionid-123"
-          ]
+          "examples": ["https://data.adobe.io/subscriptionid-123"]
         },
         "xdm:subscriber": {
           "title": "Subscriber",
@@ -41,67 +39,51 @@
           "title": "SKU",
           "type": "string",
           "description": "Stock keeping unit (SKU), a generally unique identifier for a product.",
-          "examples": [
-            "12345678"
-          ]
+          "examples": ["12345678"]
         },
         "xdm:planName": {
           "title": "Plan name",
           "type": "string",
           "description": "The human readable name for the subscription.",
-          "examples": [
-            "PS+ 12 Month Membership"
-          ]
+          "examples": ["PS+ 12 Month Membership"]
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "The scope of entitlement in relation to how many people are covered by the subscription.",
-          "examples": [
-            "mobile"
-          ]
+          "examples": ["mobile"]
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
           "description": "The country that the subscription contractual and agreement terms are rooted in.",
-          "examples": [
-            "USA"
-          ]
+          "examples": ["USA"]
         },
         "xdm:startDate": {
           "title": "Start date",
           "type": "string",
           "format": "date",
           "description": "The date the subscription begins.",
-          "examples": [
-            "2001-01-01"
-          ]
+          "examples": ["2001-01-01"]
         },
         "xdm:endDate": {
           "title": "End date",
           "type": "string",
           "format": "date",
           "description": "The date the current subscription term ends.",
-          "examples": [
-            "2002-01-01"
-          ]
+          "examples": ["2002-01-01"]
         },
         "xdm:term": {
           "title": "Term",
           "type": "integer",
           "description": "The numeric value of the term.",
-          "examples": [
-            12
-          ]
+          "examples": [12]
         },
         "xdm:termUnitOfTime": {
           "title": "Term unit of time",
           "type": "string",
           "description": "The unit of time for the term period.",
-          "examples": [
-            "Month"
-          ]
+          "examples": ["Month"]
         },
         "xdm:renew": {
           "title": "Renew",
@@ -117,9 +99,7 @@
           "title": "Status",
           "type": "string",
           "description": "The current status of the subscription.",
-          "examples": [
-            "active"
-          ]
+          "examples": ["active"]
         },
         "xdm:contractID": {
           "title": "Contract ID",
@@ -130,26 +110,20 @@
           "title": "Payment method",
           "type": "string",
           "description": "The payment method for recurring payments.",
-          "examples": [
-            "creditCard"
-          ]
+          "examples": ["creditCard"]
         },
         "xdm:billingPeriod": {
           "title": "Billing period",
           "type": "string",
           "description": "The duration between billings.",
-          "examples": [
-            "Month"
-          ]
+          "examples": ["Month"]
         },
         "xdm:billingStartDate": {
           "title": "Billing start date",
           "type": "string",
           "format": "date",
           "description": "The date when the first bill is due.",
-          "examples": [
-            "2001-01-01"
-          ]
+          "examples": ["2001-01-01"]
         },
         "xdm:chargeMethod": {
           "title": "Charge method",
@@ -160,9 +134,7 @@
           "title": "Payment status",
           "type": "string",
           "description": "The standing of the account.",
-          "examples": [
-            "paid"
-          ]
+          "examples": ["paid"]
         },
         "xdm:category": {
           "title": "Category",

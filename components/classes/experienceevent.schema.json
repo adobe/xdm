@@ -26,17 +26,12 @@
           "title": "ExperienceEvent merge ID",
           "type": "string",
           "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
-          "examples": [
-            "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15"
-          ]
+          "examples": ["9fb4e78d-b0bf-4d99-b987-cb37abdbcd15"]
         }
       }
     }
   },
-  "required": [
-    "@id",
-    "xdm:timestamp"
-  ],
+  "required": ["@id", "xdm:timestamp"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

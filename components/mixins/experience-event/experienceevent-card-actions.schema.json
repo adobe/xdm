@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "financial_services"
-    ]
+    "industry": ["financial_services"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Card action details such as card type as well as activation and lock status.",
   "definitions": {
     "card-actions": {
@@ -30,72 +26,50 @@
               "title": "Card Activated Success",
               "type": "integer",
               "description": "Tracks when a card has been successfully activated.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardActivationStart": {
               "title": "Card Activation Started",
               "type": "integer",
               "description": "Tracks when a card activation process has been started.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardCancelled": {
               "title": "Card Cancelled",
               "type": "integer",
               "description": "Tracks when a card has been cancelled.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardControlsLocked": {
               "title": "Card Controls Locked",
               "type": "integer",
               "description": "Tracks when a card controls have been locked.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardControlsUnlocked": {
               "title": "Card Controls Unlocked",
               "type": "integer",
               "description": "Tracks when a card controls have been unlocked.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardLocked": {
               "title": "Card Locked",
               "type": "integer",
               "description": "Tracks when a card has been locked.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardOrderNew": {
               "title": "Order New Card",
               "type": "integer",
               "description": "Tracks when a card has been requested.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             },
             "xdm:cardOrderType": {
               "title": "Card Order Type",
               "type": "string",
-              "enum": [
-                "new",
-                "lost",
-                "stolen",
-                "never received",
-                "damaged"
-              ],
+              "enum": ["new", "lost", "stolen", "never received", "damaged"],
               "description": "Tracks the type of card order associated with a card order event.",
-              "examples": [
-                "new"
-              ]
+              "examples": ["new"]
             },
             "xdm:cardType": {
               "title": "Card Type",
@@ -111,17 +85,13 @@
                 "fsa"
               ],
               "description": "Tracks the type of card associated with an event.",
-              "examples": [
-                "credit"
-              ]
+              "examples": ["credit"]
             },
             "xdm:cardUnlocked": {
               "title": "Card Unlocked",
               "type": "integer",
               "description": "Tracks when a card has been unlocked.",
-              "examples": [
-                1
-              ]
+              "examples": [1]
             }
           }
         }

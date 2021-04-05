@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Technical details including data source code, tags, and timestamps.",
   "definitions": {
     "experienceevent-technical-details": {
@@ -28,9 +26,7 @@
           "type": "string",
           "format": "date-time",
           "description": "The time at which this interaction was received by a server.",
-          "examples": [
-            "2017-09-26T15:52:25+00:00"
-          ]
+          "examples": ["2017-09-26T15:52:25+00:00"]
         }
       }
     }

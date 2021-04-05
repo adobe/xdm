@@ -27,22 +27,16 @@
           "title": "Pod name",
           "type": "string",
           "description": "The friendly name of the ad break.",
-          "examples": [
-            "My Pod"
-          ]
+          "examples": ["My Pod"]
         },
         "xdm:offset": {
           "title": "Pod position",
           "type": "integer",
           "description": "The offset, in seconds, of the ad break from the start of the primary content.",
-          "examples": [
-            3
-          ]
+          "examples": [3]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

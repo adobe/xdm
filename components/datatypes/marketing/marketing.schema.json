@@ -18,9 +18,7 @@
           "title": "Tracking code",
           "type": "string",
           "description": "Tracking code that can be used to identify the marketing campaign the event is associated with.",
-          "examples": [
-            "marketingcampaign111"
-          ]
+          "examples": ["marketingcampaign111"]
         },
         "xdm:campaignName": {
           "title": "Campaign name",

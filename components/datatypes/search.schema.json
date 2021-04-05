@@ -18,42 +18,32 @@
           "title": "Search engine",
           "type": "string",
           "description": "The search engine used by the search.",
-          "examples": [
-            "Google"
-          ]
+          "examples": ["Google"]
         },
         "xdm:searchEngineID": {
           "title": "Search engine ID",
           "type": "string",
           "format": "uri",
           "description": "The application specified identifier used to identify the search engine used by the search.",
-          "examples": [
-            "https://ns.adobe.com/searchengines/3"
-          ]
+          "examples": ["https://ns.adobe.com/searchengines/3"]
         },
         "xdm:keywords": {
           "title": "Keywords",
           "type": "string",
           "description": "Keywords for the search.",
-          "examples": [
-            "rice cooker"
-          ]
+          "examples": ["rice cooker"]
         },
         "xdm:isPaid": {
           "title": "Is paid",
           "type": "boolean",
           "description": "Indicate if the search is paid or not.",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:pageDepth": {
           "title": "Page depth",
           "type": "integer",
           "description": "Page depth in the search results.",
-          "examples": [
-            1
-          ]
+          "examples": [1]
         },
         "xdm:slot": {
           "title": "Page slot",

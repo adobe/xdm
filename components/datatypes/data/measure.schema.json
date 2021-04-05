@@ -22,9 +22,7 @@
         "xdm:value": {
           "type": "number",
           "description": "The quantifiable value of this measure.",
-          "examples": [
-            175
-          ]
+          "examples": [175]
         }
       }
     }
@@ -34,8 +32,6 @@
       "$ref": "#/definitions/measure"
     }
   ],
-  "required": [
-    "xdm:value"
-  ],
+  "required": ["xdm:value"],
   "meta:status": "stable"
 }

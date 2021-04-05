@@ -18,62 +18,48 @@
           "title": "Created By",
           "description": "Name of the user who created this record",
           "type": "string",
-          "examples": [
-            "USER111"
-          ]
+          "examples": ["USER111"]
         },
         "xdm:createdDate": {
           "title": "Created Date",
           "description": "Date when this record was created.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-02T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-02T15:52:25+00:00"]
         },
         "xdm:lastUpdatedBy": {
           "title": "Last Updated By",
           "description": "User who last modified this record.",
           "type": "string",
-          "examples": [
-            "USER2222"
-          ]
+          "examples": ["USER2222"]
         },
         "xdm:lastUpdatedDate": {
           "title": "Last Updated Date",
           "description": "Date when this record was last modofied.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-02T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-02T15:52:25+00:00"]
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-02T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-02T15:52:25+00:00"]
         },
         "xdm:lastReferencedDate": {
           "title": "Last Referenced Date",
           "description": "Last referenced date.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-02T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-02T15:52:25+00:00"]
         },
         "xdm:lastViewedDate": {
           "title": "Last Viewed Date",
           "description": "Last viewed date.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-02T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-02T15:52:25+00:00"]
         },
         "xdm:externalID": {
           "title": "External ID",

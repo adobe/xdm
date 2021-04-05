@@ -19,17 +19,13 @@
           "type": "string",
           "format": "uri-reference",
           "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].",
-          "examples": [
-            "https://data.adobe.io/entities/asser-reference/23423"
-          ]
+          "examples": ["https://data.adobe.io/entities/asser-reference/23423"]
         },
         "xdm:creativeID": {
           "title": "Ad creative ID",
           "type": "string",
           "description": "The ID of the ad creative.",
-          "examples": [
-            "6738737"
-          ]
+          "examples": ["6738737"]
         },
         "xdm:creativeURL": {
           "title": "Ad creative URL",
@@ -50,9 +46,7 @@
           "title": "Ad name",
           "type": "string",
           "description": "The friendly and human-readable name of the ad asset.",
-          "examples": [
-            "Acme offer 21"
-          ]
+          "examples": ["Acme offer 21"]
         },
         "xdm:advertiser": {
           "title": "Ad advertiser",
@@ -68,14 +62,10 @@
           "title": "Ad length or duration",
           "type": "integer",
           "description": "Length or duration of ad asset in seconds.",
-          "examples": [
-            23
-          ]
+          "examples": [23]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

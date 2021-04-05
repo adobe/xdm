@@ -48,9 +48,7 @@
             "beta": "A production deployment environment used to introduce end-users of the `application` to new features.",
             "prod": "The production deployment environment."
           },
-          "examples": [
-            "beta"
-          ]
+          "examples": ["beta"]
         },
         "xdm:cluster": {
           "name": "Cluster",
@@ -143,11 +141,7 @@
           }
         }
       },
-      "required": [
-        "xdm:tenant",
-        "xdm:application",
-        "xdm:environment"
-      ]
+      "required": ["xdm:tenant", "xdm:application", "xdm:environment"]
     }
   },
   "allOf": [

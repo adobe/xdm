@@ -20,9 +20,7 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the record.",
-          "examples": [
-            "49069bba-3014-420b-a887-3959f87d474a"
-          ]
+          "examples": ["49069bba-3014-420b-a887-3959f87d474a"]
         }
       }
     }

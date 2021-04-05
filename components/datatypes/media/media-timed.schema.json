@@ -157,9 +157,7 @@
           "description": "Defines the time of the day when the content was broadcast or played."
         }
       },
-      "required": [
-        "xdm:primaryAssetReference"
-      ]
+      "required": ["xdm:primaryAssetReference"]
     }
   },
   "allOf": [

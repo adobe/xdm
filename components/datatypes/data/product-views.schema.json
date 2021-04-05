@@ -10,9 +10,7 @@
   "title": "Product Views",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description": "The commerce metric `productViews` describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
   "definitions": {
     "metricdefinition": {
@@ -21,25 +19,19 @@
           "type": "string",
           "const": "xdm:productViews",
           "description": "The unique identifier of this metric.",
-          "examples": [
-            "xdm:productViews"
-          ]
+          "examples": ["xdm:productViews"]
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: productViews",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "examples": [
-            "commerce metric: productViews"
-          ]
+          "examples": ["commerce metric: productViews"]
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "examples": [
-            "count"
-          ]
+          "examples": ["count"]
         },
         "xdm:unit": {
           "const": ""
@@ -55,11 +47,6 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable"
 }

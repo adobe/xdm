@@ -18,9 +18,7 @@
           "type": "string",
           "format": "uri-reference",
           "description": "Identity of the segment in the related namespace.",
-          "examples": [
-            "https://data.adobe.io/entities/segmentIdentity/id123"
-          ]
+          "examples": ["https://data.adobe.io/entities/segmentIdentity/id123"]
         },
         "xdm:namespace": {
           "title": "Namespace",

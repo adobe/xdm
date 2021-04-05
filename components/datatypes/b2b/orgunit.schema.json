@@ -19,22 +19,16 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID associated with this organizational unit.",
-          "examples": [
-            "https://data.adobe.io/org-apparals-men"
-          ]
+          "examples": ["https://data.adobe.io/org-apparals-men"]
         },
         "xdm:label": {
           "title": "Label of the organizational unit.",
           "type": "string",
           "description": "The user-friendly name for the organizational unit.",
-          "examples": [
-            "Men Apparals"
-          ]
+          "examples": ["Men Apparals"]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

@@ -64,9 +64,7 @@
           "title": "Average bitrate bucket",
           "type": "string",
           "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.",
-          "examples": [
-            "800-899"
-          ]
+          "examples": ["800-899"]
         },
         "xdm:bitrateChangeImpactedStreams": {
           "title": "Bitrate change impacted streams",
@@ -100,11 +98,7 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated in the Player.",
-          "examples": [
-            [
-              "custom.error.code"
-            ]
-          ]
+          "examples": [["custom.error.code"]]
         },
         "xdm:mediaSdkErrors": {
           "title": "Media SDK Error IDs",
@@ -113,12 +107,7 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
-          "examples": [
-            [
-              "300",
-              "500.300.200"
-            ]
-          ]
+          "examples": [["300", "500.300.200"]]
         },
         "xdm:externalSdkErrors": {
           "title": "External Error IDs",
@@ -127,12 +116,7 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
-          "examples": [
-            [
-              "100-5",
-              "11.12"
-            ]
-          ]
+          "examples": [["100-5", "11.12"]]
         },
         "xdm:errorImpactedStreams": {
           "title": "Error impacted streams",

@@ -17,18 +17,14 @@
           "title": "Opt Out Reason",
           "description": "Reason for opting out for a notification.",
           "type": "string",
-          "examples": [
-            "Reason here"
-          ]
+          "examples": ["Reason here"]
         },
         "xdm:optOutDate": {
           "title": "Opt Out Date",
           "description": "Date of opting out for a notification.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-20T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-20T15:52:25+00:00"]
         }
       }
     }

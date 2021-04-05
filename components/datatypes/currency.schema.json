@@ -18,16 +18,12 @@
           "title": "Amount",
           "description": "Amount represented by the currencyCode",
           "type": "number",
-          "examples": [
-            -200757575
-          ]
+          "examples": [-200757575]
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD"
-          ],
+          "examples": ["USD"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code."
         },
@@ -36,9 +32,7 @@
           "description": "Date when currency conversion was made.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2018-01-12T15:52:25+00:00"
-          ]
+          "examples": ["2018-01-12T15:52:25+00:00"]
         }
       }
     }

@@ -18,17 +18,13 @@
           "title": "Standard for the consent",
           "type": "string",
           "description": "This helps determine the format of the consent string as set by consent management services.",
-          "examples": [
-            "IAB TCF"
-          ]
+          "examples": ["IAB TCF"]
         },
         "xdm:consentStandardVersion": {
           "title": "Standards Version",
           "type": "string",
           "description": "Standards version to accurately define the format of the consent string as set by consent management services.",
-          "examples": [
-            "2.0"
-          ]
+          "examples": ["2.0"]
         },
         "xdm:consentStringValue": {
           "title": "Consent String",
@@ -43,22 +39,16 @@
           "type": "boolean",
           "default": false,
           "description": "If this is true, it means this consent string needs to be processed for consent enforcement.",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:containsPersonalData": {
           "title": "Contains personal data",
           "type": "boolean",
           "description": "If this is true, it means consent is coming with personal data.",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         }
       },
-      "required": [
-        "xdm:gdprApplies"
-      ]
+      "required": ["xdm:gdprApplies"]
     }
   },
   "allOf": [

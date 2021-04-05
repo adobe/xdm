@@ -29,19 +29,13 @@
           "title": "Content name",
           "type": "string",
           "description": "The friendly, human-readable name of the timed media asset.",
-          "examples": [
-            "Floki Begs Helga for Freedom",
-            "Stairway to Heaven"
-          ]
+          "examples": ["Floki Begs Helga for Freedom", "Stairway to Heaven"]
         },
         "dc:creator": {
           "title": "Originator",
           "type": "string",
           "description": "Creator of the content.",
-          "examples": [
-            "Video Author",
-            "Jimmy Page"
-          ]
+          "examples": ["Video Author", "Jimmy Page"]
         },
         "id3:Audio": {
           "title": "Audio",
@@ -70,18 +64,13 @@
           "title": "Media content length",
           "type": "integer",
           "description": "Length of primary media asset in seconds.",
-          "examples": [
-            87,
-            482
-          ]
+          "examples": [87, 482]
         },
         "xdm:showType": {
           "title": "Show type",
           "type": "string",
           "description": "The type of content for example, trailer or full episode.",
-          "examples": [
-            "episode"
-          ]
+          "examples": ["episode"]
         },
         "iptc4xmpExt:Series": {
           "title": "Series",
@@ -92,29 +81,20 @@
           "title": "Stream format",
           "type": "string",
           "description": "Free-form format of the stream for example, short or long.",
-          "examples": [
-            "long"
-          ]
+          "examples": ["long"]
         },
         "xdm:streamType": {
           "title": "Stream type",
           "description": "The type of the media stream",
           "type": "string",
           "default": "video",
-          "enum": [
-            "audio",
-            "video",
-            "gaming"
-          ],
+          "enum": ["audio", "video", "gaming"],
           "meta:enum": {
             "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
             "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
             "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
           },
-          "examples": [
-            "video",
-            "audio"
-          ]
+          "examples": ["video", "audio"]
         },
         "iptc4xmpExt:Season": {
           "title": "Season",
@@ -133,11 +113,7 @@
           "items": {
             "type": "string"
           },
-          "examples": [
-            [
-              "sports"
-            ]
-          ]
+          "examples": [["sports"]]
         },
         "iptc4xmpExt:Rating": {
           "title": "Content rating",
@@ -174,22 +150,16 @@
           "title": "First air date",
           "type": "string",
           "description": "The date when the content first aired on television.",
-          "examples": [
-            "2016-01-05"
-          ]
+          "examples": ["2016-01-05"]
         },
         "xmpDM:releaseDate": {
           "title": "First digital date",
           "type": "string",
           "description": "The date when the content first aired on any digital channel or platform.",
-          "examples": [
-            "2016-01-25"
-          ]
+          "examples": ["2016-01-25"]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

@@ -25,9 +25,7 @@
           "type": "string",
           "format": "date",
           "description": "The full date a person was born.",
-          "examples": [
-            "1996-01-19"
-          ]
+          "examples": ["1996-01-19"]
         },
         "xdm:birthDayAndMonth": {
           "title": "Birth date",
@@ -45,12 +43,7 @@
         "xdm:gender": {
           "title": "Gender",
           "type": "string",
-          "enum": [
-            "male",
-            "female",
-            "not_specified",
-            "non_specific"
-          ],
+          "enum": ["male", "female", "not_specified", "non_specific"],
           "meta:enum": {
             "male": "Male",
             "female": "Female",
@@ -59,20 +52,12 @@
           },
           "description": "Gender identity of the person.n",
           "default": "not_specified",
-          "examples": [
-            "female"
-          ]
+          "examples": ["female"]
         },
         "xdm:maritalStatus": {
           "title": "Marital Status",
           "type": "string",
-          "enum": [
-            "married",
-            "single",
-            "divorced",
-            "widowed",
-            "not_specified"
-          ],
+          "enum": ["married", "single", "divorced", "widowed", "not_specified"],
           "meta:enum": {
             "married": "Married",
             "single": "Single",
@@ -82,18 +67,14 @@
           },
           "description": "Describes a person\u0027s relationship with a significant other.",
           "default": "not_specified",
-          "examples": [
-            "single"
-          ]
+          "examples": ["single"]
         },
         "xdm:nationality": {
           "title": "Nationality",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
           "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
-          "examples": [
-            "CA"
-          ]
+          "examples": ["CA"]
         },
         "xdm:taxId": {
           "title": "Tax ID",

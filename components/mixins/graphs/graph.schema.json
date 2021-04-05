@@ -13,9 +13,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/graphs"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],
   "definitions": {
     "graph": {
       "properties": {
@@ -23,9 +21,7 @@
           "title": "Graph Identifier",
           "description": "The unique identifier of the identity associated with this graph.",
           "type": "string",
-          "examples": [
-            "96698daa-d44a-4960-bb7e-588bfc928ea3"
-          ]
+          "examples": ["96698daa-d44a-4960-bb7e-588bfc928ea3"]
         },
         "xdm:label": {
           "title": "Graph Label",
@@ -37,35 +33,27 @@
           "description": "Directed graph indicator.",
           "type": "boolean",
           "default": true,
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:graphType": {
           "title": "Graph Type",
           "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
           "type": "string",
-          "examples": [
-            "Person Graph"
-          ]
+          "examples": ["Person Graph"]
         },
         "xdm:firstCreatedTimestamp": {
           "title": "Graph Created Date And Time",
           "description": "Time and date this graph was created.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2019-01-01T15:52:25+00:00"
-          ]
+          "examples": ["2019-01-01T15:52:25+00:00"]
         },
         "xdm:lastModifiedTimestamp": {
           "title": "Graph Last Modified Date And Time",
           "description": "Time and date this graph was last modified.",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2019-03-10T15:52:25+00:00"
-          ]
+          "examples": ["2019-03-10T15:52:25+00:00"]
         }
       }
     }

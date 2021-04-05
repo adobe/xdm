@@ -17,9 +17,7 @@
           "title": "Error count",
           "type": "integer",
           "description": "Number of consecutive errors when calling this phone number.",
-          "examples": [
-            0
-          ]
+          "examples": [0]
         },
         "xdm:quality": {
           "title": "Quality",

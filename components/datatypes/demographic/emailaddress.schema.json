@@ -18,26 +18,20 @@
           "title": "Primary",
           "type": "boolean",
           "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time.",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:address": {
           "title": "Address",
           "type": "string",
           "format": "email",
           "description": "The technical address, for example, \u0027name@domain.com\u0027 as commonly defined in RFC2822 and subsequent standards.",
-          "examples": [
-            "jsmith@xyzinc.com"
-          ]
+          "examples": ["jsmith@xyzinc.com"]
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
           "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display \u0027John Smith smithjr@company.uk\u0027, \u0027John Smith\u0027 part is data that would be placed in the label.",
-          "examples": [
-            "John Smith"
-          ]
+          "examples": ["John Smith"]
         },
         "xdm:type": {
           "title": "Type",
@@ -49,9 +43,7 @@
             "work": "Work",
             "education": "Education"
           },
-          "examples": [
-            "work"
-          ]
+          "examples": ["work"]
         },
         "xdm:status": {
           "title": "Status",
@@ -65,9 +57,7 @@
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           },
-          "examples": [
-            "active"
-          ]
+          "examples": ["active"]
         },
         "xdm:statusReason": {
           "title": "Status reason",

@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "This class is used to capture minimum properties that are required to define xdm business campaign concept.",
   "definitions": {
     "campaign": {

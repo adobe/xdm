@@ -18,17 +18,13 @@
           "title": "Ad player name",
           "type": "string",
           "description": "The name of the player responsible for rendering the ad.",
-          "examples": [
-            "Acme Ad Player"
-          ]
+          "examples": ["Acme Ad Player"]
         },
         "xdm:index": {
           "title": "Ad In Pod Position",
           "type": "integer",
           "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1.",
-          "examples": [
-            1
-          ]
+          "examples": [1]
         },
         "xdm:adBreak": {
           "title": "Ad break",

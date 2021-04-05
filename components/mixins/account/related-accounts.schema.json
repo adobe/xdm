@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/account"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
   "description": "An array of all related accounts linked to the primary account.",
   "definitions": {
     "related-account": {
@@ -25,12 +23,7 @@
           "items": {
             "type": "string"
           },
-          "examples": [
-            [
-              "AAAA1111",
-              "BBBB2222"
-            ]
-          ]
+          "examples": [["AAAA1111", "BBBB2222"]]
         }
       }
     }

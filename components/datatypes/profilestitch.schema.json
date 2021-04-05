@@ -22,9 +22,7 @@
           "title": "Version",
           "type": "string",
           "description": "The version of the profile stitch definition used and is useful for debugging.",
-          "examples": [
-            "1.0"
-          ]
+          "examples": ["1.0"]
         }
       }
     }

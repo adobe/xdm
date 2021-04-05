@@ -23,17 +23,13 @@
           "title": "Name",
           "type": "string",
           "description": "Name of the app.",
-          "examples": [
-            "Myapp"
-          ]
+          "examples": ["Myapp"]
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "Version of the app.",
-          "examples": [
-            "1.0.1"
-          ]
+          "examples": ["1.0.1"]
         }
       }
     }

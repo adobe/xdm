@@ -18,27 +18,19 @@
           "title": "Identifier",
           "type": "string",
           "description": "Identity of the consumer in the related namespace.",
-          "examples": [
-            "id123"
-          ]
+          "examples": ["id123"]
         },
         "xdm:authenticatedState": {
           "description": "The state this identity is authenticated as for this observed ExperienceEvent.",
           "type": "string",
           "default": "ambiguous",
-          "enum": [
-            "ambiguous",
-            "authenticated",
-            "loggedOut"
-          ],
+          "enum": ["ambiguous", "authenticated", "loggedOut"],
           "meta:enum": {
             "ambiguous": "Ambiguous",
             "authenticated": "User identified by a login or similar action that was valid at the time of the event observation.",
             "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
           },
-          "examples": [
-            "ambiguous"
-          ]
+          "examples": ["ambiguous"]
         },
         "xdm:primary": {
           "title": "Primary",

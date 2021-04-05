@@ -17,13 +17,7 @@
       "title": "Choice Value",
       "description": "The value specified by the user as their preference",
       "type": "string",
-      "enum": [
-        "yes",
-        "no",
-        "pending",
-        "unknown",
-        "not_applicable"
-      ],
+      "enum": ["yes", "no", "pending", "unknown", "not_applicable"],
       "meta:enum": {
         "yes": "Yes",
         "no": "No",
@@ -124,9 +118,7 @@
           "type": "string",
           "description": "Reason for opting out",
           "maxLength": 20,
-          "examples": [
-            "not relevant"
-          ]
+          "examples": ["not relevant"]
         }
       }
     },
@@ -300,9 +292,7 @@
                 "no_preferred": "No Preferred Channel",
                 "unknown": "Unknown"
               },
-              "examples": [
-                "email"
-              ]
+              "examples": ["email"]
             },
             "xdm:anyMarketing": {
               "title": "General Direct Marketing Preference",
@@ -371,18 +361,14 @@
           "type": "string",
           "pattern": "^[0-9]{1,2}.[0-9]{1,2}.[0-9]{1,4}$",
           "default": "1.0.0",
-          "examples": [
-            "1.0.0"
-          ]
+          "examples": ["1.0.0"]
         },
         "xdm:timestamp": {
           "title": "Consent/Preferences timestamp",
           "description": "Timestamp of this complete set of user consents and preferences",
           "type": "string",
           "format": "date-time",
-          "examples": [
-            "2019-01-01T15:52:25+00:00"
-          ]
+          "examples": ["2019-01-01T15:52:25+00:00"]
         },
         "xdm:source": {
           "title": "Consent/Preferences source",
@@ -394,9 +380,7 @@
           "description": "Source\u0027s ID for the user",
           "type": "string",
           "maxLength": 20,
-          "examples": [
-            "12F5B902C89EA592"
-          ]
+          "examples": ["12F5B902C89EA592"]
         },
         "xdm:userCountryRegionCode": {
           "title": "User Country (and optionally Region) Code",
@@ -404,9 +388,7 @@
           "type": "string",
           "maxLength": 6,
           "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}$",
-          "examples": [
-            "US-CA"
-          ]
+          "examples": ["US-CA"]
         },
         "xdm:countryRegionSource": {
           "title": "Country/Region Source",
@@ -428,9 +410,7 @@
             "inferred": "Inferred",
             "other": "Other"
           },
-          "examples": [
-            "ip"
-          ]
+          "examples": ["ip"]
         }
       }
     },

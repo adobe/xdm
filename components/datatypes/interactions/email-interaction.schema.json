@@ -18,27 +18,21 @@
           "title": "Email\u0027s priority",
           "type": "string",
           "description": "Captures the priority set by the person who sent the email",
-          "examples": [
-            "high"
-          ]
+          "examples": ["high"]
         },
         "xdm:sentDateTime": {
           "title": "Date and time the email was sent",
           "type": "string",
           "format": "date-time",
           "description": "Captures the date and time the email correspondence was sent to an individual or a group of people",
-          "examples": [
-            "2020-05-18T00:00:00+00:00"
-          ]
+          "examples": ["2020-05-18T00:00:00+00:00"]
         },
         "xdm:receivedDateTime": {
           "title": "Date and time the email was received",
           "type": "string",
           "format": "date-time",
           "description": "Captures the date and time when the email was received",
-          "examples": [
-            "2020-05-18T00:00:28+00:00"
-          ]
+          "examples": ["2020-05-18T00:00:28+00:00"]
         },
         "xdm:body": {
           "title": "Body of the mail",
@@ -52,50 +46,38 @@
           "title": "Email has attachments",
           "type": "boolean",
           "description": "A flag represent whether any attachment is part of the email message",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:isQuarantined": {
           "title": "quarantine message",
           "type": "boolean",
           "description": "A flag to represent whether the email message is a spam",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:sizeInBytes": {
           "title": "Email message size",
           "type": "number",
           "description": "Record the size of the email message in bytes",
-          "examples": [
-            2576
-          ]
+          "examples": [2576]
         },
         "xdm:failureReasonCode": {
           "title": "Reason code for failure",
           "type": "string",
           "description": "Indicates the error code for not able to deliver the email message",
-          "examples": [
-            "0-0000"
-          ]
+          "examples": ["0-0000"]
         },
         "xdm:failureReasonMessage": {
           "title": "Reason Message for failure",
           "type": "string",
           "description": "Indicates the full message for the error code, for not able to deliver the message",
-          "examples": [
-            "Success"
-          ]
+          "examples": ["Success"]
         },
         "xdm:fromAddress": {
           "title": "Person sending the email communication",
           "type": "string",
           "format": "email",
           "description": "Person who is sender of the email message",
-          "examples": [
-            "abc@google.com"
-          ]
+          "examples": ["abc@google.com"]
         },
         "xdm:toAddress": {
           "type": "array",
@@ -105,11 +87,7 @@
             "type": "string",
             "format": "email"
           },
-          "examples": [
-            [
-              "mark@google.com"
-            ]
-          ]
+          "examples": [["mark@google.com"]]
         },
         "xdm:ccAddress": {
           "type": "array",
@@ -119,12 +97,7 @@
             "type": "string",
             "format": "email"
           },
-          "examples": [
-            [
-              "p@google.com",
-              "q@yahoo.com"
-            ]
-          ]
+          "examples": [["p@google.com", "q@yahoo.com"]]
         },
         "xdm:bccAddress": {
           "type": "array",
@@ -134,11 +107,7 @@
             "type": "string",
             "format": "email"
           },
-          "examples": [
-            [
-              "r@google.com"
-            ]
-          ]
+          "examples": [["r@google.com"]]
         },
         "xdm:headers": {
           "title": "Email headers",
@@ -152,35 +121,27 @@
           "title": "Inbound or Outbound Message ",
           "type": "boolean",
           "description": "A flag to represent whether a message was sent or recieved",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         },
         "xdm:firstOpenDate": {
           "title": "First time the email was opened by the receiver",
           "type": "string",
           "format": "date-time",
           "description": "First date and time when the receiver took the action to open the email",
-          "examples": [
-            "2020-05-18T05:00:00+00:00"
-          ]
+          "examples": ["2020-05-18T05:00:00+00:00"]
         },
         "xdm:lastOpenDate": {
           "title": "Last time when the email was opened by the receiver",
           "type": "string",
           "format": "date-time",
           "description": "Last time the email was opened, by any receiver",
-          "examples": [
-            "2020-05-20T00:12:28+00:00"
-          ]
+          "examples": ["2020-05-20T00:12:28+00:00"]
         },
         "xdm:isTracked": {
           "title": "Email Tracking flag",
           "type": "boolean",
           "description": "A flag to capture whether the email was tracked by the sender",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         }
       }
     }

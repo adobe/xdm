@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/campaign-member"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
   "description": "An XDM Business Campaign Member.",
   "definitions": {
     "campaign-member-details": {
@@ -85,9 +83,7 @@
           "title": "Has Responded",
           "description": "Record whether the member has responded to the workflow stage",
           "type": "boolean",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:firstRespondedDate": {
           "title": "First Responded Date",

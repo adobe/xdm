@@ -18,35 +18,27 @@
           "title": "Created by user identifier",
           "type": "string",
           "description": "User ID of who created the record.",
-          "examples": [
-            "jsmith"
-          ]
+          "examples": ["jsmith"]
         },
         "xdm:repositoryLastModifiedBy": {
           "title": "Modified by user identifier",
           "type": "string",
           "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-          "examples": [
-            "jsmith"
-          ]
+          "examples": ["jsmith"]
         },
         "xdm:createdByBatchID": {
           "title": "Created by batch identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The dataset files in Catalog which has been originating the creation of the record.",
-          "examples": [
-            "https://data.adobe.io/batchid-123"
-          ]
+          "examples": ["https://data.adobe.io/batchid-123"]
         },
         "xdm:modifiedByBatchID": {
           "title": "Modified by batch identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-          "examples": [
-            "https://data.adobe.io/batchid-456"
-          ]
+          "examples": ["https://data.adobe.io/batchid-456"]
         }
       }
     }

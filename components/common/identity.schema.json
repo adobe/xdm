@@ -18,30 +18,20 @@
         "xdm:identityProvider": {
           "description": "The identity provider that manages this principal.",
           "type": "string",
-          "meta:enum": [
-            "ims"
-          ],
-          "examples": [
-            "ims"
-          ]
+          "meta:enum": ["ims"],
+          "examples": ["ims"]
         },
         "xdm:id": {
           "description": "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string",
-          "examples": [
-            "C0B648DE57D701277F000101@AdobeID"
-          ]
+          "examples": ["C0B648DE57D701277F000101@AdobeID"]
         },
         "xdm:type": {
           "type": "string",
-          "meta:enum": [
-            "https://ns.adobe.com/xdm/common/user"
-          ],
+          "meta:enum": ["https://ns.adobe.com/xdm/common/user"],
           "format": "uri",
           "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
-          "examples": [
-            "https://ns.adobe.com/xdm/common/user"
-          ]
+          "examples": ["https://ns.adobe.com/xdm/common/user"]
         }
       }
     },
@@ -50,9 +40,7 @@
         "title": "Name",
         "type": "string",
         "description": "Display name.",
-        "examples": [
-          "The users name"
-        ]
+        "examples": ["The users name"]
       },
       "xdm:profileImage": {
         "title": "Image",
@@ -79,10 +67,6 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required": [
-    "xdm:identityProvider",
-    "xdm:id",
-    "xdm:type"
-  ],
+  "required": ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "deprecated"
 }

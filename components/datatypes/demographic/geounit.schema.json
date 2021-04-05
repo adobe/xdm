@@ -19,22 +19,16 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID associated with this geographical unit.",
-          "examples": [
-            "https://data.adobe.io/geo-san-jose"
-          ]
+          "examples": ["https://data.adobe.io/geo-san-jose"]
         },
         "xdm:label": {
           "title": "Label of the geographical unit.",
           "type": "string",
           "description": "The user-friendly name for the geographical unit.",
-          "examples": [
-            "San Jose"
-          ]
+          "examples": ["San Jose"]
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

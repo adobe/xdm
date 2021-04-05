@@ -18,41 +18,31 @@
           "title": "ID of the call conversation",
           "type": "string",
           "description": "A unique identifier to represent the phone call conversation",
-          "examples": [
-            "7263723"
-          ]
+          "examples": ["7263723"]
         },
         "xdm:fromWhoID": {
           "title": "Initiator of the call",
           "type": "string",
           "description": "Person ID who initiated the call of the conversation",
-          "examples": [
-            "4587"
-          ]
+          "examples": ["4587"]
         },
         "xdm:toWhoID": {
           "title": "Call reciever",
           "type": "string",
           "description": "Person ID who recieved the call",
-          "examples": [
-            "3785"
-          ]
+          "examples": ["3785"]
         },
         "xdm:disposition": {
           "title": "Label the outcome of the phone call",
           "type": "string",
           "description": "The outcome of the call as next triggering actions such as \u0027demo scheduled\u0027,\u0027left voicemail\u0027, etc.",
-          "examples": [
-            "Setup a meeting for next week to pursue opportunity"
-          ]
+          "examples": ["Setup a meeting for next week to pursue opportunity"]
         },
         "xdm:duration": {
           "title": "Time Spent during the call",
           "type": "number",
           "description": "Record the length of the phone conversation in seconds",
-          "examples": [
-            387
-          ]
+          "examples": [387]
         },
         "xdm:type": {
           "title": "Type of the phone call",
@@ -63,33 +53,25 @@
             "inbound": "Inbound",
             "outbound": "Outbound"
           },
-          "examples": [
-            "Inbound"
-          ]
+          "examples": ["Inbound"]
         },
         "xdm:fromNumber": {
           "title": "Phone Number of the initiator of the call",
           "type": "string",
           "description": "Person\u0027s phone number who initiated the conversation. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "examples": [
-            "408-536-4985"
-          ]
+          "examples": ["408-536-4985"]
         },
         "xdm:toNumber": {
           "title": "Phone number of the call reciever",
           "type": "string",
           "description": "Person\u0027s phone number who is the reciever of the call. Note the phone number is a string and may include meaningful characters such as brackets \u0027()\u0027, hyphens \u0027-\u0027, or characters to indicate sub-dialing identifiers like extensions \u0027x\u0027 for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "examples": [
-            "650-497-0986"
-          ]
+          "examples": ["650-497-0986"]
         },
         "xdm:hasLeftVoiceMail": {
           "title": "Has the initiator of the call left any Voice Mail message",
           "type": "boolean",
           "description": "A boolean flag to represent whether a voice mail has been left for the reciever",
-          "examples": [
-            false
-          ]
+          "examples": [false]
         }
       }
     }

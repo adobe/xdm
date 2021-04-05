@@ -23,9 +23,7 @@
           "format": "uri-reference",
           "const": "https://ns.adobe.com/xdm/channels/phone",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-          "examples": [
-            "https://ns.adobe.com/xdm/channels/phone"
-          ]
+          "examples": ["https://ns.adobe.com/xdm/channels/phone"]
         },
         "xdm:mode": {
           "type": "string",
@@ -50,9 +48,7 @@
             "https://ns.adobe.com/xdm/channel-types/email": "Email",
             "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels"
           },
-          "examples": [
-            "https://ns.adobe.com/xdm/channel-types/offline"
-          ]
+          "examples": ["https://ns.adobe.com/xdm/channel-types/offline"]
         },
         "xdm:contentTypes": {
           "type": "array",
@@ -92,8 +88,6 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": [
-    "@id"
-  ],
+  "required": ["@id"],
   "meta:status": "stable"
 }

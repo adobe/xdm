@@ -18,35 +18,25 @@
           "title": "Type",
           "type": "string",
           "description": "The link type.",
-          "enum": [
-            "download",
-            "exit",
-            "other"
-          ],
+          "enum": ["download", "exit", "other"],
           "meta:enum": {
             "download": "Download",
             "exit": "Exit",
             "other": "Other"
           },
-          "examples": [
-            "other"
-          ]
+          "examples": ["other"]
         },
         "xdm:URL": {
           "title": "URL",
           "type": "string",
           "description": "The actual link or URL used for this web interaction.",
-          "examples": [
-            "https://www.example.com/products/store/?view\u003d1"
-          ]
+          "examples": ["https://www.example.com/products/store/?view\u003d1"]
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "The normative name used for this web link, used for classification purposes.",
-          "examples": [
-            "product store"
-          ]
+          "examples": ["product store"]
         },
         "xdm:linkClicks": {
           "title": "Link Clicks",

@@ -24,33 +24,25 @@
           "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI.",
-          "examples": [
-            "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390"
-          ]
+          "examples": ["c7f4bf28-c8d9-4b89-a81f-2a8ef9367390"]
         },
         "xdm:name": {
           "title": "POI name",
           "type": "string",
           "description": "The name given to the POI.",
-          "examples": [
-            "Acme Hotel Tokyo"
-          ]
+          "examples": ["Acme Hotel Tokyo"]
         },
         "xdm:category": {
           "title": "POI category",
           "type": "string",
           "description": "General category assigned for organizing the POIs by the administrator of POI definitions.",
-          "examples": [
-            "Resorts"
-          ]
+          "examples": ["Resorts"]
         },
         "xdm:type": {
           "title": "POI type",
           "type": "string",
           "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions.",
-          "examples": [
-            "Hotel"
-          ]
+          "examples": ["Hotel"]
         },
         "xdm:distanceToPOICenter": {
           "title": "Distance to POI center",
@@ -68,10 +60,7 @@
             "ip+wifi": "IP with wifi lookup",
             "wifi-triangulation": "Wifi triangulation"
           },
-          "examples": [
-            "gps",
-            "beacon"
-          ]
+          "examples": ["gps", "beacon"]
         },
         "xdm:beaconInteractionDetails": {
           "title": "Beacon interaction details",

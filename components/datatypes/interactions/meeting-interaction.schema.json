@@ -18,60 +18,46 @@
           "title": "All Day meeting/event",
           "type": "boolean",
           "description": "A flag to represent whether the meeting is all day long",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:isOnline": {
           "title": "Meeting online/offline",
           "type": "boolean",
           "description": "A flag indicating whether the neeting is online of offline",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:isReminderSet": {
           "title": "Reminder Set for the meeting",
           "type": "boolean",
           "description": "A flag indicating whether a reminder has been in place for the meeting",
-          "examples": [
-            true
-          ]
+          "examples": [true]
         },
         "xdm:reminderDateTime": {
           "title": "Date and time at which the reminder is set",
           "type": "string",
           "format": "date-time",
           "description": "The date and time for which the reminder is set, if the flag for reminder set has been set to true",
-          "examples": [
-            "2020-05-19T00:00:00+00:00"
-          ]
+          "examples": ["2020-05-19T00:00:00+00:00"]
         },
         "xdm:scheduledStartDateTime": {
           "title": "Time at which the meeting has been schedued to start",
           "type": "string",
           "format": "date-time",
           "description": "Scheduled time at which the meeting will start",
-          "examples": [
-            "2020-05-20T09:00:00+00:00"
-          ]
+          "examples": ["2020-05-20T09:00:00+00:00"]
         },
         "xdm:scheduledEndDateTime": {
           "title": "Scheduled time for the meeting to end",
           "type": "string",
           "format": "date-time",
           "description": "Scheduled time by which the meeting should end",
-          "examples": [
-            "2020-05-20T18:00:00+00:00"
-          ]
+          "examples": ["2020-05-20T18:00:00+00:00"]
         },
         "xdm:organizerID": {
           "title": "Person organizing the meeting",
           "type": "string",
           "description": "Person who is responsible to control and manage the meeting",
-          "examples": [
-            "98536"
-          ]
+          "examples": ["98536"]
         }
       }
     }

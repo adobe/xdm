@@ -18,9 +18,7 @@
           "type": "string",
           "format": "uri-reference",
           "description": "Identity of the profile stitch in the related namespace.",
-          "examples": [
-            "https://data.adobe.io/entities/profileStitchIdentity/1"
-          ]
+          "examples": ["https://data.adobe.io/entities/profileStitchIdentity/1"]
         },
         "xdm:namespace": {
           "title": "Namespace",

@@ -12,14 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "financial_services",
-      "automotive"
-    ]
+    "industry": ["financial_services", "automotive"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Loan application details such as ID, type, approval, and status.",
   "definitions": {
     "loan-details": {

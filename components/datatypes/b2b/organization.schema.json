@@ -28,17 +28,13 @@
           "title": "Organization legal name",
           "type": "string",
           "description": "The official or legal name of the organization.",
-          "examples": [
-            "ABC Stores"
-          ]
+          "examples": ["ABC Stores"]
         },
         "schema:description": {
           "title": "Organization description",
           "type": "string",
           "description": "A description of the organization.",
-          "examples": [
-            "ABC Store location"
-          ]
+          "examples": ["ABC Store location"]
         },
         "schema:numberOfEmployees": {
           "title": "Number of employees",
@@ -49,34 +45,26 @@
           "title": "Annual Revenue",
           "description": "Estimated amount of annual revenue of the organization.",
           "type": "number",
-          "examples": [
-            1000000
-          ]
+          "examples": [1000000]
         },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
           "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
-          "examples": [
-            "Retail"
-          ]
+          "examples": ["Retail"]
         },
         "xdm:website": {
           "title": "Website URL",
           "type": "string",
           "format": "uri",
           "description": "The URL of the organization\u0027s website.",
-          "examples": [
-            "http://www.abcstores.com"
-          ]
+          "examples": ["http://www.abcstores.com"]
         },
         "xdm:marketSegment": {
           "title": "Market segment",
           "type": "string",
           "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
-          "examples": [
-            "apparel for kids"
-          ]
+          "examples": ["apparel for kids"]
         },
         "xdm:location": {
           "title": "Location",

@@ -17,9 +17,7 @@
           "title": "Address error count",
           "type": "integer",
           "description": "Number of consecutive errors when sending to this address.",
-          "examples": [
-            0
-          ]
+          "examples": [0]
         },
         "xdm:quality": {
           "title": "Address quality",
@@ -33,9 +31,7 @@
             "partially_recognized_street": "Partially recognized street",
             "fully_recognized_street": "Fully recognized street"
           },
-          "examples": [
-            "Fully-recognized street"
-          ]
+          "examples": ["Fully-recognized street"]
         }
       }
     }

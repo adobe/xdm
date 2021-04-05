@@ -17,17 +17,13 @@
           "title": "Transaction ID",
           "type": "string",
           "description": "The unique transaction identifier for this payment item.",
-          "examples": [
-            "transactid-a12345"
-          ]
+          "examples": ["transactid-a12345"]
         },
         "xdm:paymentAmount": {
           "title": "Payment Amount",
           "type": "number",
           "description": "The value of the payment.",
-          "examples": [
-            333.99
-          ]
+          "examples": [333.99]
         },
         "xdm:paymentType": {
           "title": "Payment Type",
@@ -45,16 +41,12 @@
             "credit_card_reference": "Credit Card Reference Transaction",
             "other": "Other"
           },
-          "examples": [
-            "credit_card"
-          ]
+          "examples": ["credit_card"]
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD"
-          ],
+          "examples": ["USD"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for this payment item."
         }

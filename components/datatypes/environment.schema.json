@@ -18,13 +18,7 @@
           "title": "Type",
           "type": "string",
           "description": "The type of the application environment.",
-          "enum": [
-            "browser",
-            "application",
-            "iot",
-            "external",
-            "widget"
-          ],
+          "enum": ["browser", "application", "iot", "external", "widget"],
           "meta:enum": {
             "browser": "Browser",
             "application": "Application",
@@ -32,9 +26,7 @@
             "external": "External system",
             "widget": "Application extension"
           },
-          "examples": [
-            "browser"
-          ]
+          "examples": ["browser"]
         },
         "xdm:browserDetails": {
           "title": "Browser details",
@@ -45,25 +37,19 @@
           "title": "Operating system",
           "type": "string",
           "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as \u002710.5.3\u0027, but instead contain \u0027edition\u0027 designations such as \u0027Ultimate\u0027 or \u0027Professional\u0027.",
-          "examples": [
-            "MAC OS"
-          ]
+          "examples": ["MAC OS"]
         },
         "xdm:operatingSystemVersion": {
           "title": "Operating system version",
           "type": "string",
           "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format.",
-          "examples": [
-            "10.13"
-          ]
+          "examples": ["10.13"]
         },
         "xdm:operatingSystemVendor": {
           "title": "Operating system vendor",
           "type": "string",
           "description": "The name of the operating system vendor used when the observation was made.",
-          "examples": [
-            "Apple"
-          ]
+          "examples": ["Apple"]
         },
         "xdm:colorDepth": {
           "title": "Color depth",
@@ -76,18 +62,14 @@
           "type": "integer",
           "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
           "minimum": 0,
-          "examples": [
-            900
-          ]
+          "examples": [900]
         },
         "xdm:viewportWidth": {
           "title": "Viewport width",
           "type": "integer",
           "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
           "minimum": 0,
-          "examples": [
-            1680
-          ]
+          "examples": [1680]
         },
         "xdm:duration": {
           "title": "Duration",
@@ -146,9 +128,7 @@
             "lan": "LAN",
             "modem": "Modem"
           },
-          "examples": [
-            "cable"
-          ]
+          "examples": ["cable"]
         },
         "xdm:carrier": {
           "title": "Mobile network carrier",
@@ -159,17 +139,13 @@
           "title": "Domain",
           "type": "string",
           "description": "The domain of the users ISP.",
-          "examples": [
-            "verizon.com"
-          ]
+          "examples": ["verizon.com"]
         },
         "xdm:ISP": {
           "title": "Internet service provider",
           "type": "string",
           "description": "The name of the user\u0027s internet service provider.",
-          "examples": [
-            "Verizon"
-          ]
+          "examples": ["Verizon"]
         },
         "dc:language": {
           "meta:usereditable": false,
@@ -177,11 +153,7 @@
           "type": "string",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
           "description": "The language of the environment to represent the user\u0027s linguistic, geographical, or cultural preferences for data presentation.nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
-          "examples": [
-            "en-US",
-            "pt-BR",
-            "es-ES"
-          ]
+          "examples": ["en-US", "pt-BR", "es-ES"]
         }
       }
     },

@@ -29,17 +29,13 @@
           "title": "Segment name",
           "type": "string",
           "description": "Name of the segment.",
-          "examples": [
-            "Users with TV segment"
-          ]
+          "examples": ["Users with TV segment"]
         },
         "xdm:description": {
           "title": "Segment description",
           "type": "string",
           "description": "Description of the segment.",
-          "examples": [
-            "Segment is about users who have TV"
-          ]
+          "examples": ["Segment is about users who have TV"]
         },
         "xdm:version": {
           "title": "Segment version",
@@ -50,24 +46,13 @@
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
-          "enum": [
-            "ACTIVE",
-            "INACTIVE",
-            "DELETED",
-            "DRAFT",
-            "REVOKED"
-          ],
-          "examples": [
-            "ACTIVE"
-          ]
+          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
+          "examples": ["ACTIVE"]
         }
       }
     }
   },
-  "required": [
-    "xdm:identityMap",
-    "xdm:segmentName"
-  ],
+  "required": ["xdm:identityMap", "xdm:segmentName"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

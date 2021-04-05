@@ -26,9 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "",
   "definitions": {
     "user-account-details": {
@@ -40,9 +38,7 @@
               "title": "ID",
               "type": "string",
               "description": "Captures the user account ID.",
-              "examples": [
-                "X87321"
-              ]
+              "examples": ["X87321"]
             },
             "xdm:contactDetails": {
               "title": "Contact Details",
@@ -58,21 +54,14 @@
             "xdm:status": {
               "title": "Status",
               "type": "string",
-              "enum": [
-                "active",
-                "inactive",
-                "disabled",
-                "other"
-              ],
+              "enum": ["active", "inactive", "disabled", "other"],
               "description": "This should describe the current status of the account"
             },
             "xdm:accountType": {
               "title": "Account Type",
               "type": "string",
               "description": "Captures the user account type, if applicable.",
-              "examples": [
-                "personal"
-              ]
+              "examples": ["personal"]
             },
             "xdm:preferences": {
               "title": "Preferences",

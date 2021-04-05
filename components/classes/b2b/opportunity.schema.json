@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "This class is used to capture minimum set of properties that define business opportunity.",
   "definitions": {
     "opportunity": {
@@ -23,19 +21,13 @@
           "title": "Opportunity ID",
           "description": "Unique ID of the opportunity.",
           "type": "string",
-          "examples": [
-            "12345",
-            "jkghdiuw68o",
-            "123"
-          ]
+          "examples": ["12345", "jkghdiuw68o", "123"]
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
           "type": "string",
-          "examples": [
-            "Best Buy AEP"
-          ]
+          "examples": ["Best Buy AEP"]
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
@@ -49,9 +41,7 @@
           "title": "Opportunity Type",
           "description": "Type of the opportunity.",
           "type": "string",
-          "examples": [
-            "business"
-          ]
+          "examples": ["business"]
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
@@ -80,8 +70,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": [
-    "xdm:opportunityID"
-  ],
+  "required": ["xdm:opportunityID"],
   "meta:status": "experimental"
 }

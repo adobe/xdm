@@ -19,17 +19,13 @@
           "title": "System ID",
           "type": "string",
           "description": "This is an identifier for the source system itself and potentially includes the object type.",
-          "examples": [
-            "S123456"
-          ]
+          "examples": ["S123456"]
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
           "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc.",
-          "examples": [
-            "1234567"
-          ]
+          "examples": ["1234567"]
         },
         "xdm:key": {
           "title": "System Key",

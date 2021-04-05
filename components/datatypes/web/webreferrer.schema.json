@@ -18,9 +18,7 @@
           "title": "URL",
           "type": "string",
           "description": "The referrer URL.",
-          "examples": [
-            "https://www.some-adserver.com"
-          ]
+          "examples": ["https://www.some-adserver.com"]
         },
         "xdm:type": {
           "title": "Type",
@@ -46,9 +44,7 @@
             "unknown": "Unknown",
             "news": "Usenet newsgroup"
           },
-          "examples": [
-            "external"
-          ]
+          "examples": ["external"]
         }
       }
     }

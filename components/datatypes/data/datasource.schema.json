@@ -18,17 +18,13 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The unique ID of this data source. This would be provided by the individual or system that created the data source.n",
-          "examples": [
-            "https://data.adobe.io/datasources/datasource-123"
-          ]
+          "examples": ["https://data.adobe.io/datasources/datasource-123"]
         },
         "xdm:code": {
           "title": "Code",
           "type": "string",
           "description": "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code.",
-          "examples": [
-            "DataSourceIntegrationCode-123"
-          ]
+          "examples": ["DataSourceIntegrationCode-123"]
         },
         "xdm:tags": {
           "title": "Tags",
@@ -40,9 +36,7 @@
           }
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

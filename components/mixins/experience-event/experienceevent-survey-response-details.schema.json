@@ -26,9 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "",
   "definitions": {
     "survey-response-details": {
@@ -48,9 +46,7 @@
               "title": "Survey ID",
               "type": "string",
               "description": "ID for the specific survey taken.",
-              "examples": [
-                ""
-              ]
+              "examples": [""]
             },
             "xdm:surveyQuestions": {
               "title": "Survey Questions",

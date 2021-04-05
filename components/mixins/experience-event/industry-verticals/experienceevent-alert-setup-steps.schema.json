@@ -12,9 +12,15 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["retail", "financial_services", "travel_and_hospitality"]
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Alert steps such as start, save, failure, and complete.",
   "definitions": {
     "alert-setup-steps": {

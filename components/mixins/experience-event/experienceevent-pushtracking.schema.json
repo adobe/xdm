@@ -10,7 +10,9 @@
   "title": "Push notification tracking",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "push notification tracking details",
   "definitions": {
     "experienceevent-pushtracking": {
@@ -28,24 +30,36 @@
                 "xdm:actionID": {
                   "title": "action ID",
                   "type": "string",
-                  "description": "user clicked custom action identifier"
+                  "description": "user clicked custom action identifier",
+                  "examples": [
+                    "GAME_INVITATION"
+                  ]
                 },
                 "xdm:value": {
                   "title": "value",
                   "type": "number",
-                  "description": "value associated with the custom action, if any"
+                  "description": "value associated with the custom action, if any",
+                  "examples": [
+                    500
+                  ]
                 }
               }
             },
             "xdm:pushProviderMessageID": {
               "title": "Push Provider message ID",
               "type": "string",
-              "description": "ID assigned to this notification as assigned by the push provider"
+              "description": "ID assigned to this notification as assigned by the push provider",
+              "examples": [
+                "unique msgID from ios/android"
+              ]
             },
             "xdm:pushProvider": {
               "title": "Push Provider",
               "type": "string",
-              "description": "Push provider, e.g. apns or fcm"
+              "description": "Push provider, e.g. apns or fcm",
+              "examples": [
+                "apns"
+              ]
             }
           }
         }

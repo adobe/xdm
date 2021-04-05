@@ -12,7 +12,9 @@
   "description": "Information regarding the relationship between two nodes or vertices such as data provider, and edge information.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/graphs"
+  ],
   "definitions": {
     "graph-edge": {
       "properties": {
@@ -125,7 +127,27 @@
                 }
               }
             }
-          }
+          },
+          "examples": [
+            [
+              {
+                "xdm:targetNodeId": "dpuuid_1|10",
+                "xdm:sourceNodeId": "aam_1|0",
+                "xdm:dataProvider": [
+                  {
+                    "xdm:trusted": true,
+                    "xdm:lastSeenTimestamp": "2019-02-01T15:52:25+00:00",
+                    "xdm:relationType": "online_deterministic",
+                    "xdm:frequency": 1,
+                    "xdm:dataProviderId": 5,
+                    "xdm:directed": false,
+                    "xdm:firstSeenTimestamp": "2019-02-01T15:52:25+00:00",
+                    "xdm:lastCalculatedTimestamp": "2019-02-01T15:52:25+00:00"
+                  }
+                ]
+              }
+            ]
+          ]
         }
       }
     }

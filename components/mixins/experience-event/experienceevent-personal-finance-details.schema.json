@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
   "definitions": {
     "personal-finance-details": {
@@ -25,7 +29,10 @@
             "xdm:accountCardsTotal": {
               "title": "Account Cards Total",
               "type": "integer",
-              "description": "Total number of account (financial) cards assigned to a user."
+              "description": "Total number of account (financial) cards assigned to a user.",
+              "examples": [
+                3
+              ]
             },
             "xdm:assignedBeneficiary": {
               "title": "Assigned Beneficiaries",
@@ -33,12 +40,31 @@
               "items": {
                 "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
               },
-              "description": "Captures the beneficiary(s) assigned to the account."
+              "description": "Captures the beneficiary(s) assigned to the account.",
+              "examples": [
+                [
+                  {
+                    "xdm:person": {
+                      "xdm:name": {
+                        "xdm:fullName": "Jane F. Doe",
+                        "xdm:middleName": "F",
+                        "xdm:lastName": "Doe",
+                        "xdm:firstName": "Jane"
+                      },
+                      "xdm:birthDayAndMonth": "01-03",
+                      "xdm:gender": "female"
+                    }
+                  }
+                ]
+              ]
             },
             "xdm:creditScore": {
               "title": "Credit Score",
               "type": "integer",
-              "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. "
+              "description": "Refers to a number between 300-850 that depicts a consumer\u0027s creditworthiness. ",
+              "examples": [
+                760
+              ]
             },
             "xdm:employmentStatus": {
               "title": "Employment Status",
@@ -51,17 +77,26 @@
                 "retired",
                 "unemployed"
               ],
-              "description": "Tracks the employment status of the user."
+              "description": "Tracks the employment status of the user.",
+              "examples": [
+                "full time"
+              ]
             },
             "xdm:filingJointly": {
               "title": "Filing Jointly",
               "type": "boolean",
-              "description": "Refers to a filing status for married couples that have wed before the end of the tax year."
+              "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
+              "examples": [
+                true
+              ]
             },
             "xdm:filingSeparately": {
               "title": "Filing Separately",
               "type": "boolean",
-              "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns."
+              "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
+              "examples": [
+                false
+              ]
             },
             "xdm:financialAccount": {
               "title": "financeAccountId",
@@ -74,12 +109,18 @@
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
-              "description": "Flag determining if the account has a beneficiary assigned."
+              "description": "Flag determining if the account has a beneficiary assigned.",
+              "examples": [
+                true
+              ]
             },
             "xdm:isHeadOfHousehold": {
               "title": "Head of Household",
               "type": "boolean",
-              "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person."
+              "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
+              "examples": [
+                true
+              ]
             },
             "xdm:householdIncome": {
               "title": "Household Income",
@@ -89,12 +130,18 @@
             "xdm:singleFiler": {
               "title": "Single Filer",
               "type": "boolean",
-              "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status."
+              "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
+              "examples": [
+                false
+              ]
             },
             "xdm:taxBracket": {
               "title": "Tax Bracket",
               "type": "string",
-              "description": "Refers to a range of incomes subject to a certain income tax rate."
+              "description": "Refers to a range of incomes subject to a certain income tax rate.",
+              "examples": [
+                "TBD"
+              ]
             }
           }
         }

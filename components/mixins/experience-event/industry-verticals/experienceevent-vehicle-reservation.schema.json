@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
   ],
@@ -31,91 +35,142 @@
                 "xdm:couponCode": {
                   "title": "Coupon Code",
                   "type": "string",
-                  "description": "Coupon code associated with the vehicle booking."
+                  "description": "Coupon code associated with the vehicle booking.",
+                  "examples": [
+                    "10OFF"
+                  ]
                 },
                 "xdm:vehicleDifferentDropoffLocation": {
                   "title": "Different Drop-off Location",
                   "type": "boolean",
-                  "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location."
+                  "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location.",
+                  "examples": [
+                    false
+                  ]
                 },
                 "xdm:discountPercent": {
                   "title": "Discount Percent",
                   "type": "number",
-                  "description": "Discount percentage associated with the booking."
+                  "description": "Discount percentage associated with the booking.",
+                  "examples": [
+                    0.1
+                  ]
                 },
                 "xdm:dropOffDateTime": {
-                  "title": "Drop-off Date & Time",
+                  "title": "Drop-off Date \u0026 Time",
                   "type": "string",
                   "format": "date-time",
-                  "description": "The drop-off date & time of the for the vehicle reservation."
+                  "description": "The drop-off date \u0026 time of the for the vehicle reservation.",
+                  "examples": [
+                    "2021-06-18T15:52:25+00:00"
+                  ]
                 },
                 "xdm:vehicleDropOffLocation": {
                   "title": "Drop-off Location",
                   "type": "string",
-                  "description": "Drop-off location of the vehicle."
+                  "description": "Drop-off location of the vehicle.",
+                  "examples": [
+                    "Sydney International Airport"
+                  ]
                 },
                 "xdm:vehicleDropOffLocationCode": {
                   "title": "Drop-off Location Code",
                   "type": "string",
                   "description": "The airport location code for the vehicle drop off.",
-                  "pattern": "^[A-Z]{3}$"
+                  "pattern": "^[A-Z]{3}$",
+                  "examples": [
+                    "SYD"
+                  ]
                 },
                 "xdm:freeCancelation": {
                   "title": "Free Cancelation",
                   "type": "boolean",
-                  "description": "Yes/no if the car booking has a free cancellation."
+                  "description": "Yes/no if the car booking has a free cancellation.",
+                  "examples": [
+                    true
+                  ]
                 },
                 "xdm:guestID": {
                   "title": "Guest ID",
                   "type": "string",
-                  "description": "Guest ID associated with the vehicle booking."
+                  "description": "Guest ID associated with the vehicle booking.",
+                  "examples": [
+                    "R101921H166"
+                  ]
                 },
                 "xdm:loyaltyID": {
                   "title": "Loyalty ID",
                   "type": "string",
-                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
+                  "examples": [
+                    "X112JX123R594"
+                  ]
                 },
                 "xdm:payLaterEligible": {
                   "title": "Pay Later Eligible",
                   "type": "boolean",
-                  "description": "Yes/no if the booking is eligible to be paid later."
+                  "description": "Yes/no if the booking is eligible to be paid later.",
+                  "examples": [
+                    true
+                  ]
                 },
                 "xdm:pickUpDateTime": {
-                  "title": "Pick-up Date & Time",
+                  "title": "Pick-up Date \u0026 Time",
                   "type": "string",
                   "format": "date-time",
-                  "description": "The pick-up date & time of the for the vehicle reservation."
+                  "description": "The pick-up date \u0026 time of the for the vehicle reservation.",
+                  "examples": [
+                    "2021-06-25T15:52:25+00:00"
+                  ]
                 },
                 "xdm:vehiclePickUpLocation": {
                   "title": "Pick-up Location",
                   "type": "string",
-                  "description": "Pick-up location of the vehicle."
+                  "description": "Pick-up location of the vehicle.",
+                  "examples": [
+                    "Phoenix Sky Harbor International Airport"
+                  ]
                 },
                 "xdm:vehiclePickUpLocationCode": {
                   "title": "Pick-up Location Code",
                   "type": "string",
                   "description": "The airport location code for the vehicle pick up.",
-                  "pattern": "^[A-Z]{3}$"
+                  "pattern": "^[A-Z]{3}$",
+                  "examples": [
+                    "PHX"
+                  ]
                 },
                 "xdm:prePaid": {
                   "title": "Pre Paid",
                   "type": "boolean",
-                  "description": "Yes/no if the booking is pre-paid"
+                  "description": "Yes/no if the booking is pre-paid",
+                  "examples": [
+                    false
+                  ]
                 },
                 "xdm:productID": {
                   "title": "Product ID",
                   "type": "string",
-                  "description": "The product ID associated with the booking."
+                  "description": "The product ID associated with the booking.",
+                  "examples": [
+                    "2021FRDMST"
+                  ]
                 },
                 "xdm:refundable": {
                   "title": "Refundable",
                   "type": "boolean",
-                  "description": "Yes/no if the car booking is refundable."
+                  "description": "Yes/no if the car booking is refundable.",
+                  "examples": [
+                    true
+                  ]
                 },
                 "xdm:rentersAge": {
-                  "title": "Renter's Age",
+                  "title": "Renter\u0027s Age",
                   "type": "integer",
-                  "description": "Age of the renter on the vehicle reservation."
+                  "description": "Age of the renter on the vehicle reservation.",
+                  "examples": [
+                    33
+                  ]
                 },
                 "xdm:vehicleClass": {
                   "title": "Vehicle Class",
@@ -130,7 +185,10 @@
                     "premium",
                     "minivan"
                   ],
-                  "description": "The class/category of vehicle being reserved."
+                  "description": "The class/category of vehicle being reserved.",
+                  "examples": [
+                    "premium"
+                  ]
                 }
               }
             }

@@ -26,7 +26,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "User login details such as login state, location, and type, as well as forgot username and password counts.",
   "definitions": {
     "user-login-process": {
@@ -37,62 +39,98 @@
             "xdm:userAccountSwitch": {
               "title": "Switch User Accounts",
               "type": "integer",
-              "description": "Captures when a visitor switches their account during a visit."
+              "description": "Captures when a visitor switches their account during a visit.",
+              "examples": [
+                0
+              ]
             },
             "xdm:userCookieConsentAccepted": {
               "title": "Cookie Consent Accepted",
               "type": "boolean",
-              "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser."
+              "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
+              "examples": [
+                true
+              ]
             },
             "xdm:userCookieConsentViewed": {
               "title": "Cookie Consent Viewed",
               "type": "integer",
-              "description": "Tracked when a visitor views the cookie consent information."
+              "description": "Tracked when a visitor views the cookie consent information.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userForgotPassword": {
               "title": "Forgot Password",
               "type": "integer",
-              "description": "Counter event when a visitor begins the forgot password process."
+              "description": "Counter event when a visitor begins the forgot password process.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userForgotUsername": {
               "title": "Forgot Username",
               "type": "integer",
-              "description": "Counter event when a visitor begins the forgot username process."
+              "description": "Counter event when a visitor begins the forgot username process.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userLogin": {
               "title": "Visitor Login",
               "type": "integer",
-              "description": "Counter event indicating a successful visitor login."
+              "description": "Counter event indicating a successful visitor login.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userLoginBiometric": {
               "title": "Biometric Authentication",
               "type": "boolean",
-              "description": "Flag determining if the user has used a biometric authentication process to login."
+              "description": "Flag determining if the user has used a biometric authentication process to login.",
+              "examples": [
+                false
+              ]
             },
             "xdm:userLoginFailure": {
               "title": "Visitor Login Failure",
               "type": "integer",
-              "description": "Counter event indicating a failed visitor login attempt."
+              "description": "Counter event indicating a failed visitor login attempt.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userLoginLocation": {
               "title": "Login Page Location",
               "type": "string",
-              "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login"
+              "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
+              "examples": [
+                "homepage login modal"
+              ]
             },
             "xdm:userLoginKeychain": {
               "title": "Keychain ",
               "type": "boolean",
-              "description": "Flag determining if the user has used a keychain authentication process to login."
+              "description": "Flag determining if the user has used a keychain authentication process to login.",
+              "examples": [
+                true
+              ]
             },
             "xdm:userLoginMultiFactor": {
               "title": "Multi-Factor Authentication",
               "type": "boolean",
-              "description": "Flag determining if the user has used a multi-factor authentication process to login."
+              "description": "Flag determining if the user has used a multi-factor authentication process to login.",
+              "examples": [
+                true
+              ]
             },
             "xdm:userLoginStatus": {
               "title": "Login Status",
               "type": "string",
-              "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. "
+              "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
+              "examples": [
+                "authenticated"
+              ]
             },
             "xdm:userLoginThirdParty": {
               "title": "Login with Third Party",
@@ -107,27 +145,42 @@
             "xdm:userLoginType": {
               "title": "User Login Type",
               "type": "string",
-              "description": "Email address vs social login"
+              "description": "Email address vs social login",
+              "examples": [
+                "keychain"
+              ]
             },
             "xdm:userLogout": {
               "title": "Visitor Logout",
               "type": "integer",
-              "description": "Counter event indicating a successful visitor logout."
+              "description": "Counter event indicating a successful visitor logout.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userResetPassword": {
               "title": "Reset Password",
               "type": "integer",
-              "description": "Counter event when a visitor begins the reset password process."
+              "description": "Counter event when a visitor begins the reset password process.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userSessionTimeout": {
               "title": "Session Timeout",
               "type": "integer",
-              "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time."
+              "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
+              "examples": [
+                1
+              ]
             },
             "xdm:userUpdate": {
               "title": "Account Profile Update",
               "type": "integer",
-              "description": "Counter event indicating a user has updated their account profile."
+              "description": "Counter event indicating a user has updated their account profile.",
+              "examples": [
+                1
+              ]
             }
           }
         }

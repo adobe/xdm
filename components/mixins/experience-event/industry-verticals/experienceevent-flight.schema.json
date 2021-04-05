@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Flight check in details such as passengers, bags, as well as start, save, failure and complete of check in.",
   "definitions": {
     "flight": {
@@ -25,12 +29,18 @@
             "xdm:checkedBags": {
               "title": "Checked Bags",
               "type": "integer",
-              "description": "Tracks the number of bags checked for a flight."
+              "description": "Tracks the number of bags checked for a flight.",
+              "examples": [
+                2
+              ]
             },
             "xdm:checkedPassengers": {
               "title": "Checked Passengers",
               "type": "integer",
-              "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
+              "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.",
+              "examples": [
+                3
+              ]
             },
             "xdm:checkInMethod": {
               "title": "Check In Method",
@@ -41,7 +51,10 @@
                 "web",
                 "kiosk"
               ],
-              "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
+              "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service.",
+              "examples": [
+                "kiosk"
+              ]
             },
             "xdm:checkInProcess": {
               "title": "Check In Process",
@@ -56,23 +69,38 @@
             "xdm:arrivalLocation": {
               "title": "Arrival Location",
               "type": "string",
-              "description": "Tracks the arrival city or airport code."
+              "description": "Tracks the arrival city or airport code.",
+              "examples": [
+                "SYD",
+                "ORD"
+              ]
             },
             "xdm:date": {
               "title": "Travel Date",
               "type": "string",
               "format": "date-time",
-              "description": "Tracks the flight departure date."
+              "description": "Tracks the flight departure date.",
+              "examples": [
+                "2021-06-18T15:52:25+00:00"
+              ]
             },
             "xdm:departureLocation": {
               "title": "Departure Location",
               "type": "string",
-              "description": "Tracks the departure city or airport code."
+              "description": "Tracks the departure city or airport code.",
+              "examples": [
+                "LAX",
+                ""
+              ]
             },
             "xdm:flightNumber": {
               "title": "Flight Number",
               "type": "string",
-              "description": "Tracks the flight number."
+              "description": "Tracks the flight number.",
+              "examples": [
+                "815",
+                ""
+              ]
             },
             "xdm:flightStatusSearch": {
               "title": "Flight Status Search",

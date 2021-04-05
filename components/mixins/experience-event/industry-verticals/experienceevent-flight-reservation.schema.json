@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
   ],
@@ -32,13 +36,19 @@
                   "title": "Arrival Location",
                   "type": "string",
                   "description": "Tracks the arrival city airport code.",
-                  "pattern": "^[A-Z]{3}$"
+                  "pattern": "^[A-Z]{3}$",
+                  "examples": [
+                    "SYD"
+                  ]
                 },
                 "xdm:departureLocation": {
                   "title": "Departure Location",
                   "type": "string",
                   "description": "Tracks the departure city airport code.",
-                  "pattern": "^[A-Z]{3}$"
+                  "pattern": "^[A-Z]{3}$",
+                  "examples": [
+                    "LAX"
+                  ]
                 },
                 "xdm:fareClass": {
                   "title": "Fare Class",
@@ -49,23 +59,35 @@
                     "premium economy",
                     "economy"
                   ],
-                  "description": "The fare class of the flight being reserved."
+                  "description": "The fare class of the flight being reserved.",
+                  "examples": [
+                    "business class"
+                  ]
                 },
                 "xdm:flightDate": {
                   "title": "Flight Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "The date of the flight being reserved."
+                  "description": "The date of the flight being reserved.",
+                  "examples": [
+                    "2004-09-22T15:52:25+00:00"
+                  ]
                 },
                 "xdm:flightNumber": {
                   "title": "Flight Number",
                   "type": "string",
-                  "description": "Tracks the flight number."
+                  "description": "Tracks the flight number.",
+                  "examples": [
+                    "815"
+                  ]
                 },
                 "xdm:loyaltyID": {
                   "title": "Loyalty ID",
                   "type": "string",
-                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
+                  "examples": [
+                    "H1102199221"
+                  ]
                 },
                 "xdm:passenger": {
                   "title": "Passenger",
@@ -75,7 +97,10 @@
                 "xdm:reservationID": {
                   "title": "Reservation ID",
                   "type": "string",
-                  "description": ""
+                  "description": "",
+                  "examples": [
+                    "RM8I9FG7HR"
+                  ]
                 },
                 "xdm:seatMapProcess": {
                   "title": "Seat Map Process",
@@ -85,8 +110,14 @@
                 "xdm:securityScreening": {
                   "title": "Security Screening",
                   "type": "string",
-                  "enum": ["Standard", "PreCheck"],
-                  "description": "Type of security screening the passenger is subject to."
+                  "enum": [
+                    "Standard",
+                    "PreCheck"
+                  ],
+                  "description": "Type of security screening the passenger is subject to.",
+                  "examples": [
+                    "PreCheck"
+                  ]
                 }
               }
             }

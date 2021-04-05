@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Subscription information such as device, environment, and subscriber data.",
   "definitions": {
     "profile-subscriptions": {
@@ -22,7 +24,47 @@
           "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
-          }
+          },
+          "examples": [
+            [
+              {
+                "xdm:term": 12,
+                "xdm:billingPeriod": "Month",
+                "xdm:subscriber": {
+                  "xdm:birthMonth": 1,
+                  "xdm:birthDay": 1,
+                  "xdm:lastName": "Smith",
+                  "xdm:courtesyTitle": "Mr.",
+                  "xdm:firstName": "John",
+                  "xdm:gender": "male",
+                  "xdm:birthYear": 2000
+                },
+                "xdm:endDate": "2002-01-01",
+                "xdm:SKU": "12345678",
+                "xdm:contractId": "contractid-123",
+                "xdm:termUnitOfTime": "Month",
+                "xdm:paymentMethod": "creditCard",
+                "xdm:billingStartDate": "2001-01-01",
+                "xdm:device": {
+                  "xdm:screenHeight": 667,
+                  "xdm:type": "mobile",
+                  "xdm:modelNumber": "A1586",
+                  "xdm:manufacturer": "Apple",
+                  "xdm:typeIdService": "deviceAtlas",
+                  "xdm:model": "iPhone 6",
+                  "xdm:colorDepth": 16777216,
+                  "xdm:typeId": "TypeIdentifier-111",
+                  "xdm:screenWidth": 375
+                },
+                "xdm:planName": "PS+ 12 Month Membership",
+                "xdm:paymentStatus": "paid",
+                "xdm:status": "active",
+                "xdm:startDate": "2001-01-01",
+                "@id": "https://data.adobe.io/subscriptionid-123",
+                "xdm:country": "USA"
+              }
+            ]
+          ]
         }
       }
     }

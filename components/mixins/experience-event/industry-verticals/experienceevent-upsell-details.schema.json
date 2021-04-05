@@ -22,7 +22,9 @@
       "high_tech"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",
   "definitions": {
     "upsell-details": {

@@ -23,7 +23,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",
   "definitions": {
     "upgrade-details": {

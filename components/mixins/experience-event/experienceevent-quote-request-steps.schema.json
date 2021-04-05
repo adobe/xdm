@@ -20,7 +20,9 @@
       "manufacturing"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Includes all steps for receiving a quote",
   "definitions": {
     "quote-request-steps": {
@@ -41,7 +43,10 @@
             "xdm:quoteRequestLocation": {
               "title": "Quote Request Location",
               "type": "string",
-              "description": "Captures the postal code used for finding retailers near the visitor's location."
+              "description": "Captures the postal code used for finding retailers near the visitor\u0027s location.",
+              "examples": [
+                "95110"
+              ]
             },
             "xdm:quoteRequestPersonalDetails": {
               "title": "Quote Request Personal Details",

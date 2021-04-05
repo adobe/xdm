@@ -22,7 +22,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Autopay enrollment details such as autopay status, start, save, and failure.",
   "definitions": {
     "autopay-enrollment-details": {
@@ -38,7 +40,10 @@
             "xdm:autoPayEnrollmentStatus": {
               "title": "Autopay Status",
               "type": "boolean",
-              "description": "Tracks the visitor's autopay enrollment status."
+              "description": "Tracks the visitor\u0027s autopay enrollment status.",
+              "examples": [
+                true
+              ]
             }
           }
         }

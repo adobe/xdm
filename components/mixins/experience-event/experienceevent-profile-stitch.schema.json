@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Profile stitching details such as identity and profile IDs.",
   "definitions": {
     "experienceevent-profile-stitch": {
@@ -22,7 +24,33 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
-          }
+          },
+          "examples": [
+            [
+              {
+                "xdm:profileStitchID": {
+                  "xdm:namespace": {
+                    "xdm:code": "AAM"
+                  },
+                  "@id": "https://data.adobe.io/entities/profileStitchIdentity/1"
+                },
+                "xdm:identityMap": {
+                  "ECID": [
+                    {
+                      "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+                    },
+                    {
+                      "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+                    },
+                    {
+                      "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+                    }
+                  ]
+                },
+                "xdm:version": "1.0"
+              }
+            ]
+          ]
         }
       }
     }

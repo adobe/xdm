@@ -20,7 +20,10 @@
         "xdm:roleID": {
           "title": "Contact Role ID",
           "description": "Contact role unique identifier.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "1234"
+          ]
         },
         "xdm:opportunityContactRole": {
           "title": "Opportunity Contact Role",
@@ -30,12 +33,18 @@
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "A flag to signify that this is the primary opportunity contact",
-          "type": "boolean"
+          "type": "boolean",
+          "examples": [
+            false
+          ]
         },
         "xdm:isDeleted": {
           "title": "Deleted Flag",
           "description": "A flag to signify that this opportunity is in deleted state.",
-          "type": "boolean"
+          "type": "boolean",
+          "examples": [
+            false
+          ]
         }
       }
     }

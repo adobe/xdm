@@ -12,9 +12,15 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "health_and_life_sciences", "high_tech"]
+    "industry": [
+      "financial_services",
+      "health_and_life_sciences",
+      "high_tech"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
     "claim-process": {
@@ -25,19 +31,33 @@
             "xdm:claimID": {
               "title": "Claim ID",
               "type": "string",
-              "description": "ID of the claim being submitted."
+              "description": "ID of the claim being submitted.",
+              "examples": [
+                "P102819201D"
+              ]
             },
             "xdm:claimStartDate": {
               "title": "Claim Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date the claim was successfully submitted."
+              "description": "Date the claim was successfully submitted.",
+              "examples": [
+                "2021-03-04T15:52:25+00:00"
+              ]
             },
             "xdm:claimStatus": {
               "title": "Claim Status",
               "type": "string",
-              "enum": ["initiated", "in progress", "approved", "declined"],
-              "description": "Captures the status of the claim for any given point in the application process."
+              "enum": [
+                "initiated",
+                "in progress",
+                "approved",
+                "declined"
+              ],
+              "description": "Captures the status of the claim for any given point in the application process.",
+              "examples": [
+                "approved"
+              ]
             },
             "xdm:claimSteps": {
               "title": "Claim Steps",
@@ -59,7 +79,10 @@
                 "flood",
                 "earthquake"
               ],
-              "description": "Type of claim submitted."
+              "description": "Type of claim submitted.",
+              "examples": [
+                "automobile"
+              ]
             },
             "xdm:policy": {
               "title": "Policy",

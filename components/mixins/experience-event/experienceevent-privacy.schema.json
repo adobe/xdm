@@ -12,7 +12,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "experienceevent-privacy": {
       "properties": {
@@ -21,7 +23,18 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/consentstring"
-          }
+          },
+          "examples": [
+            [
+              {
+                "xdm:consentStandardVersion": "2.0",
+                "xdm:consentStandard": "IAB TCF",
+                "xdm:consentStringValue": "BObdrPUOevsguAfDqFENCNAAAAAmeAAA.PVAfDObdrA.DqFENCAmeAENCDA",
+                "xdm:gdprApplies": true,
+                "xdm:containsPersonalData": false
+              }
+            ]
+          ]
         }
       }
     }

@@ -24,7 +24,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "",
   "definitions": {
     "offer-impression-details": {
@@ -35,12 +37,18 @@
             "xdm:offerClicks": {
               "title": "Offer Clicks",
               "type": "integer",
-              "description": "Counts the number of times an offer has been clicked."
+              "description": "Counts the number of times an offer has been clicked.",
+              "examples": [
+                1
+              ]
             },
             "xdm:offerDismissals": {
               "title": "Offer Dismissals",
               "type": "integer",
-              "description": "Counts the number of times an offer has been dismissed."
+              "description": "Counts the number of times an offer has been dismissed.",
+              "examples": [
+                2
+              ]
             },
             "xdm:offerImpressions": {
               "title": "Offer Impression Details",

@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Reservation details such as length, modification, refundable status, and number of rooms.",
   "definitions": {
     "reservations": {
@@ -30,7 +34,10 @@
             "xdm:cancellation": {
               "title": "Cancellation",
               "type": "integer",
-              "description": "Tracked when a reservation has been cancelled."
+              "description": "Tracked when a reservation has been cancelled.",
+              "examples": [
+                0
+              ]
             },
             "xdm:confirmationNumber": {
               "title": "Confirmation Number",
@@ -40,24 +47,36 @@
             "xdm:created": {
               "title": "Created",
               "type": "integer",
-              "description": "Tracked when a reservation has been created."
+              "description": "Tracked when a reservation has been created.",
+              "examples": [
+                1
+              ]
             },
             "xdm:currencyCode": {
               "title": "Currency Code",
               "type": "string",
               "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-              "pattern": "^[A-Z]{3}$"
+              "pattern": "^[A-Z]{3}$",
+              "examples": [
+                "USD"
+              ]
             },
             "xdm:endDate": {
               "title": "End Date",
               "type": "string",
               "format": "date-time",
-              "description": "The end drop-off/return/check-out date of the reservation."
+              "description": "The end drop-off/return/check-out date of the reservation.",
+              "examples": [
+                "2021-06-18T15:52:25+00:00"
+              ]
             },
             "xdm:ID": {
               "title": "ID",
               "type": "string",
-              "description": "Tracks the reservation number/identifier."
+              "description": "Tracks the reservation number/identifier.",
+              "examples": [
+                "8101991J1211X"
+              ]
             },
             "xdm:itemComparison": {
               "title": "Item Comparison",
@@ -67,12 +86,18 @@
             "xdm:length": {
               "title": "Length",
               "type": "integer",
-              "description": "Tracks the total number of days for a reservation."
+              "description": "Tracks the total number of days for a reservation.",
+              "examples": [
+                8
+              ]
             },
             "xdm:modification": {
               "title": "Modification",
               "type": "integer",
-              "description": "Captured when a reservation has been modified."
+              "description": "Captured when a reservation has been modified.",
+              "examples": [
+                0
+              ]
             },
             "xdm:modificationDate": {
               "title": "Modification Date",
@@ -88,12 +113,18 @@
             "xdm:numberOfAdults": {
               "title": "Number of Adults",
               "type": "integer",
-              "description": "Captures the number of adults associated with the reservation."
+              "description": "Captures the number of adults associated with the reservation.",
+              "examples": [
+                2
+              ]
             },
             "xdm:numberOfChildren": {
               "title": "Number of Children",
               "type": "integer",
-              "description": "Captures the number of children associated with the reservation."
+              "description": "Captures the number of children associated with the reservation.",
+              "examples": [
+                3
+              ]
             },
             "xdm:processSteps": {
               "title": "Process Steps",
@@ -103,8 +134,14 @@
             "xdm:purpose": {
               "title": "Purpose",
               "type": "string",
-              "enum": ["business", "personal"],
-              "description": "Tracks the purpose of the reservation, typically either business or personal."
+              "enum": [
+                "business",
+                "personal"
+              ],
+              "description": "Tracks the purpose of the reservation, typically either business or personal.",
+              "examples": [
+                "personal"
+              ]
             },
             "xdm:rackrate": {
               "title": "Rack Rate",
@@ -115,7 +152,10 @@
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "The start pick-up/outbound/check-in date of the reservation."
+              "description": "The start pick-up/outbound/check-in date of the reservation.",
+              "examples": [
+                "2021-06-10T15:52:25+00:00"
+              ]
             },
             "xdm:transaction": {
               "title": "Transaction",
@@ -125,8 +165,15 @@
             "xdm:triptype": {
               "title": "Trip Type",
               "type": "string",
-              "enum": ["roundtrip", "one-way", "multi-city"],
-              "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+              "enum": [
+                "roundtrip",
+                "one-way",
+                "multi-city"
+              ],
+              "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+              "examples": [
+                "roundtrip"
+              ]
             },
             "xdm:type": {
               "title": "Type",

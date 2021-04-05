@@ -12,9 +12,15 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "travel_and_hospitality", "telecom"]
+    "industry": [
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Paperless enrollment steps such as start, save, failure, and complete. ",
   "definitions": {
     "paperless-enrollment-steps": {

@@ -26,8 +26,8 @@
                 "xdm:personalFinances": {
                     "type": "object",
                     "properties": {
-                        "xdm:ID": {
-                            "title": "ID",
+                        "xdm:cardID": {
+                            "title": "Card ID",
                             "type": "string",
                             "description": "Tracks the identifier for the card being activated.  This might be different from the card number."
                         },

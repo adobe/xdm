@@ -25,7 +25,7 @@
   "definitions": {
     "quote-request-details": {
       "properties": {
-        "xdm:quoteRequestDetails": {
+        "xdm:quotes": {
           "type": "object",
           "properties": {
             "xdm:requestID": {

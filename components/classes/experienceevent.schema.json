@@ -26,18 +26,13 @@
         },
         "xdm:producedBy": {
           "title": "Produced By",
-          "description": "Value that describes the actor that generated the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain types of events if needed.",
+          "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
           "type": "string",
           "default": "self",
           "meta:enum": {
             "self": "Self",
             "system": "System"
           }
-        },
-        "xdm:producedByID": {
-          "title": "Produced By ID",
-          "description": "Optional ID that can be used to help enrich more details about the actor or producedBy value  - systemId, salesRepId, etc.",
-          "type": "string"
         }
       }
     }

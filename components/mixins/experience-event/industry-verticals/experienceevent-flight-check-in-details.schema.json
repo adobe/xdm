@@ -44,7 +44,8 @@
             "xdm:checkInProcess": {
               "title": "Check In Process",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+			  "meta:status": "deprecated"
             },
             "xdm:destinationAirportCode": {
               "title": "Destination Airport Code",

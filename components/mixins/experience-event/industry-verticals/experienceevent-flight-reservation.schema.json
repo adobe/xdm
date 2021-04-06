@@ -37,11 +37,6 @@
                   "description": "Tracks the arrival city airport code.",
                   "pattern": "^[A-Z]{3}$"
                 },
-                "xdm:itemComparison": {
-                  "title": "Item Comparison",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-                  "description": "Used to track flight comparisons on a site or an app."
-                },
                 "xdm:departureAirportCode": {
                   "title": "Departure Airport Code",
                   "type": "string",

@@ -34,12 +34,6 @@
           "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement."
-        },
-        "xdm:openedDate": {
-          "title": "Financial Account Open Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Date which the account was opened."
         }
       }
     }

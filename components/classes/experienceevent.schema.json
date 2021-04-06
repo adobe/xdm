@@ -11,6 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/time-series",
     "https://ns.adobe.com/xdm/context/identitymap"

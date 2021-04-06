@@ -22,7 +22,8 @@
         "xdm:deviceConfiguration": {
           "title": "Device Configuration",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-          "description": "Extension of toolUsage data type."
+          "description": "Extension of toolUsage data type.",
+		  "meta:status": "deprecated"
         },
         "xdm:deviceTradeInDetails": {
           "type": "object",
@@ -30,7 +31,8 @@
             "xdm:deviceTradeIn": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+			  "meta:status": "deprecated"
             },
             "xdm:deviceTradeInManufacturer": {
               "title": "Manufacturer",
@@ -52,7 +54,8 @@
         "xdm:deviceActivation": {
           "title": "Device Activation",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-          "description": "Extension of toolUsage data type."
+          "description": "Extension of toolUsage data type.",
+		  "meta:status": "deprecated"
         }
       }
     }

@@ -73,23 +73,23 @@ https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:knowledgeBaseArticeID`| string | Optional |
+| `xdm:knowledgeBaseArticleID`| string | Optional |
 | `xdm:knowledgeBaseArticleType`| string | Optional |
 | `xdm:knowledgeBaseArticleView`| integer | Optional |
 | `xdm:knowledgeBaseSearch`|  | Optional |
 
 
 
-#### xdm:knowledgeBaseArticeID
+#### xdm:knowledgeBaseArticleID
 ##### Knowledge Base Article ID
 
 Tracks the knowledge base article ID when it has been viewed.
 
-`xdm:knowledgeBaseArticeID`
+`xdm:knowledgeBaseArticleID`
 * is optional
 * type: `string`
 
-##### xdm:knowledgeBaseArticeID Type
+##### xdm:knowledgeBaseArticleID Type
 
 
 `string`

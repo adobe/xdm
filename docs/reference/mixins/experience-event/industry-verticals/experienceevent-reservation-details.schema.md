@@ -47,21 +47,6 @@ Reservation details such as length, modification, refundable status, and number 
     },
     "xdm:numberOfAdults": 2,
     "xdm:numberOfChildren": 3,
-    "xdm:processSteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "trip review",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "reservation confirmation",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    },
     "xdm:purpose": "personal",
     "xdm:startDate": "2021-06-10T15:52:25+00:00",
     "xdm:transaction": {
@@ -106,9 +91,11 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
+| `xdm:diningReservations`| array | Optional |
 | `xdm:endDate`| string | Optional |
-| `xdm:itemComparison`|  | Optional |
+| `xdm:flightReservations`| array | Optional |
 | `xdm:length`| integer | Optional |
+| `xdm:lodgingReservations`| array | Optional |
 | `xdm:modification`| integer | Optional |
 | `xdm:modificationDate`| string | Optional |
 | `xdm:nonRefundableAmount`|  | Optional |
@@ -121,6 +108,7 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:transaction`|  | Optional |
 | `xdm:triptype`| string | Optional |
 | `xdm:type`| string | Optional |
+| `xdm:vehicleReservations`| array | Optional |
 
 
 
@@ -256,6 +244,33 @@ All instances must conform to this regular expression
 
 
 
+#### xdm:diningReservations
+##### Dining Reservations
+
+Array of dining reservations under the main trip reservation.
+
+`xdm:diningReservations`
+* is optional
+* type: reference
+
+
+##### xdm:diningReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation`
+
+
+
+
+
+
+
+
+
+
 #### xdm:endDate
 ##### End Date
 
@@ -278,19 +293,26 @@ The end drop-off/return/check-out date of the reservation.
 
 
 
-#### xdm:itemComparison
-##### Item Comparison
+#### xdm:flightReservations
+##### Flight Reservations
 
-Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.
+Array of flight reservations under the main trip reservation.
 
-`xdm:itemComparison`
+`xdm:flightReservations`
 * is optional
 * type: reference
 
-##### xdm:itemComparison Type
+
+##### xdm:flightReservations Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/comparisons`
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation`
+
+
+
 
 
 
@@ -311,6 +333,33 @@ Tracks the total number of days for a reservation.
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:lodgingReservations
+##### Lodging Reservations
+
+Array of lodging reservations under the main trip reservation.
+
+`xdm:lodgingReservations`
+* is optional
+* type: reference
+
+
+##### xdm:lodgingReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation`
+
+
 
 
 
@@ -564,6 +613,33 @@ Records the type of reservation being placed.
 
 
 `string`
+
+
+
+
+
+
+
+
+#### xdm:vehicleReservations
+##### Vehicle Reservations
+
+Array of vehicle reservations under the main trip reservation.
+
+`xdm:vehicleReservations`
+* is optional
+* type: reference
+
+
+##### xdm:vehicleReservations Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`
+
+
 
 
 

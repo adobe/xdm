@@ -64,44 +64,65 @@ Used for financial account balance transfers between accounts.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:balanceTransfer`|  | Optional |
-| `xdm:balanceTransferAccount`|  | Optional |
+| `xdm:accountFrom`|  | Optional |
+| `xdm:accountTo`|  | Optional |
+| `xdm:transaction`|  | Optional |
 
 
 
-#### xdm:balanceTransfer
-##### Balance Transfer
+#### xdm:accountFrom
+##### Account From
 
-Extension of transaction data type.
+Extension of financialAccount data type.  Details the account fr which the balance is being transferred.
 
-`xdm:balanceTransfer`
+`xdm:accountFrom`
 * is optional
 * type: reference
 
-##### xdm:balanceTransfer Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
-
-
-
-
-
-
-
-#### xdm:balanceTransferAccount
-##### Balance Transfer Account
-
-Extension of financialAccount data type.
-
-`xdm:balanceTransferAccount`
-* is optional
-* type: reference
-
-##### xdm:balanceTransferAccount Type
+##### xdm:accountFrom Type
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
+
+
+
+
+
+
+
+#### xdm:accountTo
+##### Account To
+
+Extension of financialAccount data type.  Details the account to which the balance is being transferred.
+
+`xdm:accountTo`
+* is optional
+* type: reference
+
+##### xdm:accountTo Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
+
+
+
+
+
+
+
+#### xdm:transaction
+##### Transaction
+
+Extension of transaction data type.
+
+`xdm:transaction`
+* is optional
+* type: reference
+
+##### xdm:transaction Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
 
 
 

@@ -75,6 +75,16 @@
                                 "type": "string"
                             },
                             "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. "
+                        },
+                        "xdm:alertStatus": {
+                            "title": "Alert Status",
+                            "type": "boolean",
+                            "description": "Captures whether or not alerts have been enabled for the account."
+                        },
+                        "xdm:autopayStatus": {
+                            "title": "Autopay Status",
+                            "type": "boolean",
+                            "description": "Captures whether or not the account has been enrolled in autopay."
                         }
                     }
                 }

@@ -22,30 +22,25 @@
         "xdm:disputes": {
           "type": "object",
           "properties": {
-            "xdm:claimID": {
-              "title": "Claim ID",
+            "xdm:ID": {
+              "title": " ID",
               "type": "string",
               "description": "ID of the claim being submitted."
             },
-            "xdm:claimStartDate": {
-              "title": "Claim Start Date",
+            "xdm:startDate": {
+              "title": "Start Date",
               "type": "string",
               "format": "date-time",
               "description": "Date the claim was successfully submitted."
             },
-            "xdm:claimStatus": {
-              "title": "Claim Status",
+            "xdm:status": {
+              "title": "Status",
               "type": "string",
               "enum": ["initiated", "in progress", "approved", "declined"],
               "description": "Captures the status of the claim for any given point in the application process."
             },
-            "xdm:claimSteps": {
-              "title": "Claim Steps",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
-            },
-            "xdm:claimType": {
-              "title": "Claim Type",
+            "xdm:type": {
+              "title": "Type",
               "type": "string",
               "enum": [
                 "homeowners",
@@ -65,6 +60,12 @@
               "title": "Policy",
               "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
               "description": "Extension of Policy data type."
+            },
+            "xdm:steps": {
+              "title": "Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             }
           }
         }

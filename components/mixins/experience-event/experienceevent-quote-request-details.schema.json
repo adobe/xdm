@@ -28,6 +28,11 @@
         "xdm:quoteRequestDetails": {
           "type": "object",
           "properties": {
+            "xdm:requestID": {
+              "title": "Quote Request ID",
+              "type": "string",
+              "description": "Unique identifier for the quote request."
+            },
             "xdm:discount": {
               "title": "Discount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",

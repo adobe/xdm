@@ -25,13 +25,18 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Offer details such as offer name, clicks, dismissals.",
   "definitions": {
     "offer-impression-details": {
       "properties": {
         "xdm:offer ": {
           "type": "object",
           "properties": {
+            "xdm:ID": {
+              "title": "Offer ID",
+              "type": "string",
+              "description": "Offer Identifier."
+            },
             "xdm:clicks": {
               "title": "Offer Clicks",
               "type": "integer",

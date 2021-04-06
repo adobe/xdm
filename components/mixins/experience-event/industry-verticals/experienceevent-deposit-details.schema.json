@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Deposit details such as ID, type, and amount.",
   "definitions": {
     "deposit-details": {
@@ -27,10 +31,10 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Extension of transaction data type."
             },
-            "xdm:depositAccountID": {
-              "title": "Deposit Account ID",
-              "type": "string",
-              "description": "Deposit account Identifier."
+            "xdm:depositAccount": {
+              "title": "Deposit Account",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
             }
           }
         }

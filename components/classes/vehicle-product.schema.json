@@ -41,7 +41,7 @@
         },
         "xdm:mileage": {
           "title": "Mileage",
-          "type": "string",
+          "type": "integer",
           "description": "Captures the current mileage of a vehicle."
         },
         "xdm:model": {
@@ -76,7 +76,7 @@
         },
         "xdm:starRating": {
           "title": "Star Rating",
-          "type": "string",
+          "type": "integer",
           "description": "Star rating associated with the vehicle."
         },
         "xdm:style": {

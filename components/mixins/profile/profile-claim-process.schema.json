@@ -19,7 +19,7 @@
   "definitions": {
     "claim-process": {
       "properties": {
-        "xdm:disputes": {
+        "xdm:claims": {
           "type": "object",
           "properties": {
             "xdm:ID": {
@@ -56,10 +56,10 @@
               ],
               "description": "Type of claim submitted."
             },
-            "xdm:policy": {
-              "title": "Policy",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
-              "description": "Extension of Policy data type."
+            "xdm:policyID": {
+              "title": "Policy ID",
+              "type": "string",
+              "description": "Policy Identifier."
             },
             "xdm:steps": {
               "title": "Steps",

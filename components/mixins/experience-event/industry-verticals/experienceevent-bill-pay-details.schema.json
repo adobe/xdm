@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Bill pay steps such as start, save, failure, and complete.",
   "definitions": {
     "bill-pay-details": {
@@ -36,6 +40,11 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                   "description": "Extension of transaction data type."
                 },
+                "xdm:financialAccount": {
+                  "title": "Financial Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                  "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+                },
                 "xdm:scheduledTransactionDate": {
                   "title": "Scheduled Transaction Date",
                   "type": "string",
@@ -49,8 +58,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/bill-pay-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/bill-pay-details"
+    }
+  ],
   "meta:status": "experimental"
 }

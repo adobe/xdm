@@ -20,7 +20,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Alert information such as ad impressions and ad clicks. ",
   "definitions": {
     "alert-impressions": {
@@ -28,6 +30,11 @@
         "xdm:alerts": {
           "type": "object",
           "properties": {
+            "xdm:ID": {
+              "title": "Alert ID",
+              "type": "string",
+              "description": "Alert identifier."
+            },
             "xdm:clicks": {
               "title": "Alert Clicks",
               "type": "integer",

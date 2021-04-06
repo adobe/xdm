@@ -31,7 +31,7 @@
         },
         "xdm:luggageCapacity": {
           "title": "Luggage Capacity",
-          "type": "string",
+          "type": "integer",
           "description": "Number of pieces of luggage that fit in the vehicle."
         },
         "xdm:make": {

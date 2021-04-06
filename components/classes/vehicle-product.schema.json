@@ -57,6 +57,9 @@
         "xdm:options": {
           "title": "Options",
           "type": "array",
+          "items": {
+            "type": "string"
+          },
           "description": "Captures an array of strings detailing vehicle options, such as heated seats, moonroof, navigation system, manual transmission, etc."
         },
         "xdm:ownership": {

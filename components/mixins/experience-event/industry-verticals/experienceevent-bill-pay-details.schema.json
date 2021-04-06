@@ -50,6 +50,22 @@
                   "type": "string",
                   "format": "date-time",
                   "description": "Records the scheduled date/time of the transaction."
+                },
+                "xdm:serviceProvider": {
+                  "type": "object",
+                  "description": "Tracks all details related to a biller.",
+                  "properties": {
+                    "xdm:name": {
+                      "title": "Service Provider Name",
+                      "type": "string",
+                      "description": "The name/nickname for the service provider."
+                    },
+                    "xdm:userAccountID": {
+                      "title": "User Account ID",
+                      "type": "string",
+                      "description": "The user account ID for the service provider."
+                    }
+                  }
                 }
               }
             }

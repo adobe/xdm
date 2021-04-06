@@ -76,9 +76,9 @@
                   "type": "string",
                   "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
                 },
-                "xdm:passenger": {
-                  "title": "Passenger",
-                  "$ref": "https://ns.adobe.com/xdm/context/person",
+                "xdm:passengerID": {
+                  "title": "Passenger ID",
+                  "type": "string",
                   "description": "Passenger info associated with the reservation."
                 },
                 "xdm:reservationID": {

@@ -117,11 +117,6 @@ Unknown type `object`.
       "format": "date-time",
       "description": "The check-out date of the for the room reservation."
     },
-    "xdm:itemComparison": {
-      "title": "Item Comparison",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-      "description": "Used to track lodging comparisons on a site or an app."
-    },
     "xdm:couponCode": {
       "title": "Coupon Code",
       "type": "string",

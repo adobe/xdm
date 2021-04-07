@@ -86,11 +86,6 @@ Unknown type `object`.
       "type": "string",
       "description": "Agent or broker responsible for booking the reservation, if applicable."
     },
-    "xdm:itemComparison": {
-      "title": "Item Comparison",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-      "description": "Used to track vehicle comparisons on a site or an app."
-    },
     "xdm:couponCode": {
       "title": "Coupon Code",
       "type": "string",

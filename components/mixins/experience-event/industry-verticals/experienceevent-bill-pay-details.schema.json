@@ -12,10 +12,14 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Bill pay steps such as start, save, failure, and complete.",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Bill pay details such as transaction information, service account ID, and balance.",
   "definitions": {
     "bill-pay-details": {
       "properties": {
@@ -36,10 +40,10 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                   "description": "Extension of transaction data type."
                 },
-                "xdm:account": {
-                  "title": "Account",
+                "xdm:financialAccount": {
+                  "title": "Financial Account",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Account from which the bill is being paid."
+                  "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
                 },
                 "xdm:scheduledTransactionDate": {
                   "title": "Scheduled Transaction Date",
@@ -56,11 +60,6 @@
                       "type": "string",
                       "description": "The name/nickname for the service provider."
                     },
-                    "xdm:address": {
-                      "title": "Service Provider Address",
-                      "$ref": "https://ns.adobe.com/xdm/common/address",
-                      "description": "Service provider address"
-                    },
                     "xdm:userAccountID": {
                       "title": "User Account ID",
                       "type": "string",
@@ -75,8 +74,10 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/bill-pay-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/bill-pay-details"
+    }
+  ],
   "meta:status": "experimental"
 }

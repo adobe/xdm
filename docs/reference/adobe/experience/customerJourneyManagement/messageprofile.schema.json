@@ -39,6 +39,11 @@
                     "format": "email",
                     "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
                 },
+                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
+                    "title": "Email Namespace",
+                    "type": "string",
+                    "description": "Email namespace associated with the Profile, e.g. email or Email"
+                },
                 "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
                     "title": "Push Platform",
                     "type": "string",
@@ -47,11 +52,6 @@
                         "apns": "Apple Push Notification service",
                         "fcm": "Firebase cloud messaging service"
                     }
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
-                    "title": "Email Namespace",
-                    "type": "string",
-                    "description": "Email namespace associated with the Profile, e.g. email or Email"
                 }
             }
         }

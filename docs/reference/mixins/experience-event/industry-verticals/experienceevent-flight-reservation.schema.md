@@ -33,21 +33,6 @@ Collects all details specific to a flight reservation.
     }
   },
   "xdm:reservationID": "RM8I9FG7HR",
-  "xdm:seatMapProcess": {
-    "xdm:tool-usage": {
-      "xdm:toolUsageCancelled": 1,
-      "xdm:toolUsageComplete": 1,
-      "xdm:toolUsageFailure": 1,
-      "xdm:toolUsageID": "T421",
-      "xdm:toolUsageName": "seat map selection",
-      "xdm:toolUsageSaved": 1,
-      "xdm:toolUsageStart": 1,
-      "xdm:toolUsageStep": 1,
-      "xdm:toolUsageStepName": "select seat",
-      "xdm:toolUsageSubmitted": 1,
-      "xdm:toolUsageType": "generic"
-    }
-  },
   "xdm:securityScreening": "PreCheck"
 }
 ```
@@ -107,11 +92,6 @@ Unknown type `object`.
       "description": "Tracks the arrival city airport code.",
       "pattern": "^[A-Z]{3}$"
     },
-    "xdm:itemComparison": {
-      "title": "Item Comparison",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-      "description": "Used to track flight comparisons on a site or an app."
-    },
     "xdm:departureAirportCode": {
       "title": "Departure Airport Code",
       "type": "string",
@@ -151,9 +131,9 @@ Unknown type `object`.
       "type": "string",
       "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
     },
-    "xdm:passenger": {
-      "title": "Passenger",
-      "$ref": "https://ns.adobe.com/xdm/context/person",
+    "xdm:passengerID": {
+      "title": "Passenger ID",
+      "type": "string",
       "description": "Passenger info associated with the reservation."
     },
     "xdm:reservationID": {

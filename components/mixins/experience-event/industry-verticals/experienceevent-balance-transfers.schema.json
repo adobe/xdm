@@ -22,15 +22,20 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:balanceTransfer": {
-              "title": "Balance Transfer",
+            "xdm:transaction": {
+              "title": "Transaction",
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Extension of transaction data type."
             },
-            "xdm:balanceTransferAccount": {
-              "title": "Balance Transfer Account",
+            "xdm:accountTo": {
+              "title": "Account To",
               "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-              "description": "Extension of financialAccount data type."
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+            },
+            "xdm:accountFrom": {
+              "title": "Account From",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+              "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred."
             }
           }
         }

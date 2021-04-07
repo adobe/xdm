@@ -25,26 +25,26 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:comparisonAddition](#xdmcomparisonaddition) | `integer` | Optional | Comparisons (this schema) |
-| [xdm:comparisonCount](#xdmcomparisoncount) | `integer` | Optional | Comparisons (this schema) |
-| [xdm:comparisonImpressions](#xdmcomparisonimpressions) | Impressions | Optional | Comparisons (this schema) |
-| [xdm:comparisonItems](#xdmcomparisonitems) | `string[]` | Optional | Comparisons (this schema) |
-| [xdm:comparisonRemoval](#xdmcomparisonremoval) | `integer` | Optional | Comparisons (this schema) |
-| [xdm:comparisonType](#xdmcomparisontype) | `string` | Optional | Comparisons (this schema) |
-| [xdm:comparisonView](#xdmcomparisonview) | `integer` | Optional | Comparisons (this schema) |
+| [xdm:addition](#xdmaddition) | `integer` | Optional | Comparisons (this schema) |
+| [xdm:count](#xdmcount) | `integer` | Optional | Comparisons (this schema) |
+| [xdm:impressions](#xdmimpressions) | Impressions | Optional | Comparisons (this schema) |
+| [xdm:items](#xdmitems) | `string[]` | Optional | Comparisons (this schema) |
+| [xdm:removal](#xdmremoval) | `integer` | Optional | Comparisons (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Comparisons (this schema) |
+| [xdm:view](#xdmview) | `integer` | Optional | Comparisons (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:comparisonAddition
-### Comparison Addition
+## xdm:addition
+### Addition
 
 Tracked when an item is added to a comparison.
 
-`xdm:comparisonAddition`
+`xdm:addition`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:comparisonAddition Type
+### xdm:addition Type
 
 
 `integer`
@@ -54,17 +54,17 @@ Tracked when an item is added to a comparison.
 
 
 
-## xdm:comparisonCount
-### Comparison Count
+## xdm:count
+### Count
 
 Count of the total number of items being compared.
 
-`xdm:comparisonCount`
+`xdm:count`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:comparisonCount Type
+### xdm:count Type
 
 
 `integer`
@@ -74,17 +74,17 @@ Count of the total number of items being compared.
 
 
 
-## xdm:comparisonImpressions
-### Comparison Impressions
+## xdm:impressions
+### Impressions
 
 Extension of the impressions data type.
 
-`xdm:comparisonImpressions`
+`xdm:impressions`
 * is optional
 * type: Impressions
 * defined in this schema
 
-### xdm:comparisonImpressions Type
+### xdm:impressions Type
 
 
 * [Impressions](impressions.schema.md) – `https://ns.adobe.com/xdm/datatypes/impressions`
@@ -93,18 +93,18 @@ Extension of the impressions data type.
 
 
 
-## xdm:comparisonItems
-### Comparison List Items
+## xdm:items
+### Items
 
 An array of all item IDs/SKUs in the list of products.  
 
-`xdm:comparisonItems`
+`xdm:items`
 * is optional
 * type: `string[]`
 
 * defined in this schema
 
-### xdm:comparisonItems Type
+### xdm:items Type
 
 
 Array type: `string[]`
@@ -120,17 +120,17 @@ All items must be of the type:
 
 
 
-## xdm:comparisonRemoval
-### Comparison Removal
+## xdm:removal
+### Removal
 
 Tracked when an item is removed from a comparison.
 
-`xdm:comparisonRemoval`
+`xdm:removal`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:comparisonRemoval Type
+### xdm:removal Type
 
 
 `integer`
@@ -140,17 +140,17 @@ Tracked when an item is removed from a comparison.
 
 
 
-## xdm:comparisonType
-### Comparison Type
+## xdm:type
+### Type
 
 Type of comparison tool in use.
 
-`xdm:comparisonType`
+`xdm:type`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:comparisonType Type
+### xdm:type Type
 
 
 `string`
@@ -160,17 +160,17 @@ Type of comparison tool in use.
 
 
 
-## xdm:comparisonView
-### Comparison View
+## xdm:view
+### View
 
 Tracked when a comparison page is viewed.
 
-`xdm:comparisonView`
+`xdm:view`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:comparisonView Type
+### xdm:view Type
 
 
 `integer`

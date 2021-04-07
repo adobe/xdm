@@ -33,7 +33,8 @@
             "xdm:upsellSteps": {
               "title": "Upsell Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+			  "meta:status": "deprecated"
             },
             "xdm:upsellOffer": {
               "title": "Upsell Offer",

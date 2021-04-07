@@ -57,6 +57,7 @@ Card action details such as card type as well as activation and lock status.
 | `xdm:cardCancelled`| integer | Optional |
 | `xdm:cardControlsLocked`| integer | Optional |
 | `xdm:cardControlsUnlocked`| integer | Optional |
+| `xdm:cardID`| string | Optional |
 | `xdm:cardLocked`| integer | Optional |
 | `xdm:cardOrderNew`| integer | Optional |
 | `xdm:cardOrderType`| string | Optional |
@@ -162,6 +163,27 @@ Tracks when a card controls have been unlocked.
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:cardID
+##### Card ID
+
+Tracks the identifier for the card being activated.  This might be different from the card number.
+
+`xdm:cardID`
+* is optional
+* type: `string`
+
+##### xdm:cardID Type
+
+
+`string`
 
 
 

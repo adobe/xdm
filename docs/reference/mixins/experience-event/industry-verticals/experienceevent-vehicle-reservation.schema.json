@@ -19,9 +19,6 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "meta:extends": [
-        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
-    ],
     "description": "Collects all details specific to a vehicle reservation.",
     "definitions": {
         "reservations": {
@@ -31,7 +28,18 @@
                     "properties": {
                         "xdm:vehicleReservation": {
                             "type": "object",
+                            "description": "Captures all details specific to an individual vehicle reservation",
                             "properties": {
+                                "xdm:agentID": {
+                                    "title": "Agent ID",
+                                    "type": "string",
+                                    "description": "Agent or broker responsible for booking the reservation, if applicable."
+                                },
+                                "xdm:itemComparison": {
+                                    "title": "Item Comparison",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                                    "description": "Used to track vehicle comparisons on a site or an app."
+                                },
                                 "xdm:couponCode": {
                                     "title": "Coupon Code",
                                     "type": "string",
@@ -121,6 +129,30 @@
                                     "type": "integer",
                                     "description": "Age of the renter on the vehicle reservation."
                                 },
+                                "xdm:salesChannel": {
+                                    "title": "Sales Channel",
+                                    "type": "string",
+                                    "enum": [
+                                        "Web",
+                                        "Mobile",
+                                        "Mobile App",
+                                        "Call Center",
+                                        "Agent",
+                                        "Third-Party"
+                                    ],
+                                    "description": "Sales channel from which the reservation was booked."
+                                },
+                                "xdm:status": {
+                                    "title": "Status",
+                                    "type": "string",
+                                    "enum": [
+                                        "cancelled",
+                                        "confirmed",
+                                        "hold",
+                                        "pending"
+                                    ],
+                                    "description": "The status of the vehicle reservation."
+                                },
                                 "xdm:vehicleClass": {
                                     "title": "Vehicle Class",
                                     "type": "string",
@@ -146,9 +178,6 @@
     "allOf": [
         {
             "$ref": "#/definitions/reservations"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
         }
     ],
     "meta:status": "experimental",

@@ -61,7 +61,7 @@ The technical address, for example, 'name@domain.com' as commonly defined in RFC
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace
 ### Email Namespace
 
-Email namespace associated with the Profile, e.g. email or Email
+Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email
 
 `https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace`
 * is optional

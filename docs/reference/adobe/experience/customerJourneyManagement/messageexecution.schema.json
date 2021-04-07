@@ -52,11 +52,6 @@
                     "title": "Journey Action ID",
                     "type": "string",
                     "description": "Journey Action ID, for which MessageExecution is triggered."
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace": {
-                    "title": "Email Namespace",
-                    "type": "string",
-                    "description": "Email Namespace defined for the message"
                 }
             }
         }
@@ -82,8 +77,7 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": "0cc85961-487d-49e5-9b6c-01f5630756ac",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "b9029525-c33a-40f2-a1c1-95f0b8305078",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": "6cfe93cc-bb0e-4ec9-a39b-56b53a73d28c",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace": "Email"
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51"
         }
     ]
 }

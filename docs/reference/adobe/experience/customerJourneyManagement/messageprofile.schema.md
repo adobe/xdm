@@ -25,7 +25,8 @@ Message Profile details for the Adobe CJM ExperienceEvent.
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email"
 }
 ```
 
@@ -38,6 +39,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+|[https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextnamespace) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address
@@ -144,4 +146,16 @@ Push provider service, e.g. apns or fcm
 | `fcm` | Firebase cloud messaging service |
 
 
+## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace
+### Email Namespace
 
+Email namespace associated with the Profile, e.g. email or Email
+
+`https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace Type
+
+`string`

@@ -45,6 +45,11 @@
           "meta:enum": {
             "apns": "Apple Push Notification service",
             "fcm": "Firebase cloud messaging service"
+          },
+          "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
+            "title": "Email Namespace",
+            "type": "string",
+            "description": "Email namespace associated with the Profile, e.g. email or Email"
           }
         }
       }

@@ -51,11 +51,6 @@
           "title": "Journey Action ID",
           "type": "string",
           "description": "Journey Action ID, for which MessageExecution is triggered."
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/emailNamespace": {
-          "title": "Email Namespace",
-          "type": "string",
-          "description": "Email Namespace defined for the message"
         }
       }
     }

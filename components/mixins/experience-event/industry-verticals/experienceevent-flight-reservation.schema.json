@@ -81,10 +81,10 @@
                   "type": "string",
                   "description": "Passenger info associated with the reservation."
                 },
-                "xdm:reservationID": {
-                  "title": "Reservation ID",
+                "xdm:ID": {
+                  "title": "ID",
                   "type": "string",
-                  "description": ""
+                  "description": "Identifier for flight reservation."
                 },
                 "xdm:salesChannel": {
                   "title": "Sales Channel",
@@ -180,7 +180,7 @@
                   },
                   "description": "Tracks the purpose of the reservation, typically either business or personal."
                 },
-                "xdm:triptype": {
+                "xdm:tripType": {
                   "title": "Trip Type",
                   "type": "string",
                   "meta:enum": {

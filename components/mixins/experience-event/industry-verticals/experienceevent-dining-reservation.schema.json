@@ -192,17 +192,7 @@
                     "personal": "Personal"
                   },
                   "description": "Tracks the purpose of the reservation, typically either business or personal."
-                },
-                "xdm:triptype": {
-                  "title": "Trip Type",
-                  "type": "string",
-                  "meta:enum": {
-                    "roundtrip": "Roundtrip",
-                    "oneWay": "One Way",
-                    "multiCity": "Multi-City"
-                  },
-                  "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
-                },
+                },                
                 "xdm:type": {
                   "title": "Type",
                   "type": "string",

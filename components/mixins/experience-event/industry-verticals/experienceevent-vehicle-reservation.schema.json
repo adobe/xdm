@@ -26,6 +26,11 @@
               "type": "object",
               "description": "Captures all details specific to an individual vehicle reservation",
               "properties": {
+                "xdm:ID": {
+                  "title": "ID",
+                  "type": "string",
+                  "description": "Tracks the reservation number/identifier."
+                },
                 "xdm:agentID": {
                   "title": "Agent ID",
                   "type": "string",
@@ -219,7 +224,7 @@
                   },
                   "description": "Tracks the purpose of the reservation, typically either business or personal."
                 },
-                "xdm:triptype": {
+                "xdm:tripType": {
                   "title": "Trip Type",
                   "type": "string",
                   "meta:enum": {

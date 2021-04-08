@@ -25,6 +25,11 @@
             "xdm:lodgingReservation": {
               "type": "object",
               "properties": {
+                "xdm:ID": {
+                  "title": "ID",
+                  "type": "string",
+                  "description": "Identifier for lodging reservation."
+                },
                 "xdm:agentID": {
                   "title": "Agent ID",
                   "type": "string",
@@ -205,7 +210,7 @@
                   },
                   "description": "Tracks the purpose of the reservation, typically either business or personal."
                 },
-                "xdm:triptype": {
+                "xdm:tripType": {
                   "title": "Trip Type",
                   "type": "string",
                   "meta:enum": {

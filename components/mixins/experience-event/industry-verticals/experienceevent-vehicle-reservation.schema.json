@@ -105,10 +105,10 @@
                   "type": "boolean",
                   "description": "Yes/no if the booking is pre-paid"
                 },
-                "xdm:productID": {
-                  "title": "Product ID",
+                "xdm:vin": {
+                  "title": "Vehicle Identification Number",
                   "type": "string",
-                  "description": "The product ID associated with the booking."
+                  "description": "Captures the vehicle identification number (VIN) of the vehicle being rented."
                 },
                 "xdm:refundable": {
                   "title": "Refundable",

@@ -1,38 +1,45 @@
 {
-  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
-  "$id" : "https://ns.adobe.com/xdm/datatypes/currency",
-  "$schema" : "http://json-schema.org/draft-06/schema#",
-  "title" : "Currency",
-  "type" : "object",
-  "meta:extensible" : true,
-  "description" : "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
-  "definitions" : {
-    "currency" : {
-      "properties" : {
-        "xdm:amount" : {
-          "title" : "Amount",
-          "description" : "Amount represented by the currencyCode",
-          "type" : "number"
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/currency",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Currency",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
+  "definitions": {
+    "currency": {
+      "properties": {
+        "xdm:amount": {
+          "title": "Amount",
+          "description": "Amount represented by the currencyCode",
+          "type": "number"
         },
-        "xdm:currencyCode" : {
-          "title" : "Currency Code",
-          "type" : "string",
-          "examples" : [ "USD", "EUR" ],
-          "pattern" : "^[A-Z]{3}$",
-          "description" : "The ISO 4217 currency code."
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
         },
-        "xdm:conversionDate" : {
-          "title" : "Conversion Date",
-          "description" : "Date when currency conversion was made.",
-          "type" : "string",
-          "format" : "date-time"
+        "xdm:conversionDate": {
+          "title": "Conversion Date",
+          "description": "Date when currency conversion was made.",
+          "type": "string",
+          "format": "date-time"
         }
       }
     }
   },
-  "allOf" : [ {
-    "$ref" : "#/definitions/currency"
-  } ],
-  "meta:status" : "experimental",
-  "meta:createdDate" : "2020-09-29"
+  "allOf": [
+    {
+      "$ref": "#/definitions/currency"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-09-29"
 }

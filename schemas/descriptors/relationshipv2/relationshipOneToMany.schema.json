@@ -1,55 +1,67 @@
 {
-  "meta:license" : [ "Copyright 2019 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
-  "$id" : "https://ns.adobe.com/xdm/common/descriptors/relationshipOneToMany",
-  "$schema" : "http://json-schema.org/draft-06/schema#",
-  "title" : "One to Many Bi-Directional Relationship Descriptor",
-  "meta:extensible" : false,
-  "meta:abstract" : false,
-  "type" : "object",
-  "description" : "Describes a bi-directional one to many relationship",
-  "properties" : {
-    "@type" : {
-      "type" : "string",
-      "const" : "xdm:relationshipOneToMany"
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/common/descriptors/relationshipOneToMany",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "One to Many Bi-Directional Relationship Descriptor",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Describes a bi-directional one to many relationship",
+  "properties": {
+    "@type": {
+      "type": "string",
+      "const": "xdm:relationshipOneToMany"
     },
-    "xdm:oneSideSchema" : {
-      "type" : "string",
-      "title" : "One Side Schema ID"
+    "xdm:oneSideSchema": {
+      "type": "string",
+      "title": "One Side Schema ID"
     },
-    "xdm:oneSideVersion" : {
-      "type" : "number",
-      "title" : "One Side Schema Major Version"
+    "xdm:oneSideVersion": {
+      "type": "number",
+      "title": "One Side Schema Major Version"
     },
-    "xdm:oneSideProperty" : {
-      "type" : "string",
-      "title" : "One Side Field Path"
+    "xdm:oneSideProperty": {
+      "type": "string",
+      "title": "One Side Field Path"
     },
-    "xdm:manySideSchema" : {
-      "type" : "string",
-      "title" : "Many Side Schema ID"
+    "xdm:manySideSchema": {
+      "type": "string",
+      "title": "Many Side Schema ID"
     },
-    "xdm:manySideVersion" : {
-      "type" : "number",
-      "title" : "Many Side Schema Major Version"
+    "xdm:manySideVersion": {
+      "type": "number",
+      "title": "Many Side Schema Major Version"
     },
-    "xdm:manySideProperty" : {
-      "type" : "string",
-      "title" : "Many Side Field Path"
+    "xdm:manySideProperty": {
+      "type": "string",
+      "title": "Many Side Field Path"
     },
-    "xdm:manySideNamespace" : {
-      "type" : "string",
-      "title" : "Identity Namespace Code"
+    "xdm:manySideNamespace": {
+      "type": "string",
+      "title": "Identity Namespace Code"
     },
-    "xdm:oneToManyDisplayName" : {
-      "type" : "string",
-      "title" : "One To Many Edge Name"
+    "xdm:oneToManyDisplayName": {
+      "type": "string",
+      "title": "One To Many Edge Name"
     },
-    "xdm:manyToOneDisplayName" : {
-      "type" : "string",
-      "title" : "Many To One Edge Name"
+    "xdm:manyToOneDisplayName": {
+      "type": "string",
+      "title": "Many To One Edge Name"
     }
   },
-  "required" : [ "@type", "xdm:oneSideSchema", "xdm:oneSideVersion", "xdm:manySideSchema", "xdm:manySideVersion", "xdm:manySideProperty" ],
-  "meta:status" : "deprecated",
-  "meta:createdDate" : "2021-02-05"
+  "required": [
+    "@type",
+    "xdm:oneSideSchema",
+    "xdm:oneSideVersion",
+    "xdm:manySideSchema",
+    "xdm:manySideVersion",
+    "xdm:manySideProperty"
+  ],
+  "meta:status": "deprecated",
+  "meta:createdDate": "2021-02-05"
 }

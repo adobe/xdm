@@ -1,49 +1,57 @@
 {
-  "meta:license" : [ "Copyright 2018 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
-  "$id" : "https://ns.adobe.com/xdm/context/profile-work-details",
-  "$schema" : "http://json-schema.org/draft-06/schema#",
-  "title" : "Work Contact Details",
-  "type" : "object",
-  "meta:extensible" : true,
-  "meta:abstract" : true,
-  "meta:tags" : {
-    "industry" : [ "all" ]
+  "meta:license": [
+    "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/profile-work-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Contact Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
   },
-  "meta:intendedToExtend" : [ "https://ns.adobe.com/xdm/context/profile" ],
-  "description" : "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
-  "definitions" : {
-    "profile-work-details" : {
-      "properties" : {
-        "xdm:workAddress" : {
-          "title" : "Work Address",
-          "$ref" : "https://ns.adobe.com/xdm/common/address",
-          "description" : "A work postal address."
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
+  "definitions": {
+    "profile-work-details": {
+      "properties": {
+        "xdm:workAddress": {
+          "title": "Work Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "A work postal address."
         },
-        "xdm:workEmail" : {
-          "title" : "Work Email",
-          "$ref" : "https://ns.adobe.com/xdm/context/emailaddress",
-          "description" : "A work email address."
+        "xdm:workEmail": {
+          "title": "Work Email",
+          "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+          "description": "A work email address."
         },
-        "xdm:workPhone" : {
-          "title" : "Work Phone",
-          "$ref" : "https://ns.adobe.com/xdm/context/phonenumber",
-          "description" : "Work phone number."
+        "xdm:workPhone": {
+          "title": "Work Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Work phone number."
         },
-        "xdm:organizations" : {
-          "title" : "Organizations",
-          "type" : "array",
-          "items" : {
-            "type" : "string"
+        "xdm:organizations": {
+          "title": "Organizations",
+          "type": "array",
+          "items": {
+            "type": "string"
           }
         }
       }
     }
   },
-  "allOf" : [ {
-    "$ref" : "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-  }, {
-    "$ref" : "#/definitions/profile-work-details"
-  } ],
-  "meta:status" : "stable",
-  "meta:createdDate" : "2020-08-10"
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/profile-work-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10"
 }

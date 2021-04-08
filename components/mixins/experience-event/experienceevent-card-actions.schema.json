@@ -19,7 +19,7 @@
   "definitions": {
     "card-actions": {
       "properties": {
-        "xdm:personalFinances": {
+        "xdm:cardActions": {
           "type": "object",
           "properties": {
             "xdm:cardID": {

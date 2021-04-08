@@ -22,7 +22,7 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:deposit": {
+            "xdm:deposits": {
               "type": "object",
               "properties": {
                 "xdm:transaction": {

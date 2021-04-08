@@ -72,20 +72,23 @@
             "xdm:employmentStatus": {
               "title": "Employment Status",
               "type": "string",
-              "enum": [
-                "full time",
-                "part time",
-                "temporary",
-                "self employed",
-                "retired",
-                "unemployed"
-              ],
+              "meta:enum": {
+                "fullTime": "Full Time",
+                "partTime": "Part Time",
+                "temporary": "Temporary",
+                "selfEmployed": "Self-Employed",
+                "retired": "Retired",
+                "unemployed": "Unemployed"
+              },
               "description": "Tracks the employment status of the user."
             },
             "xdm:ID": {
               "title": "ID",
-              "type": "string",
-              "description": "Financial account ID assigned to the user."
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Array of financial account IDs assigned to the user."
             },
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",

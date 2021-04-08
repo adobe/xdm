@@ -32,6 +32,11 @@
               "items": {
                 "type": "object",
                 "properties": {
+                  "xdm:ID":{
+                    "title": "ID",
+                    "type": "string",
+                    "description": "Captures the ID for the device."
+                  },
                   "xdm:manufacturer": {
                     "title": "Manufacturer",
                     "type": "string",

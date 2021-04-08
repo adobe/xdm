@@ -61,13 +61,13 @@
               "type": "string",
               "description": "Captures the user account type, if applicable."
             },
-            "xdm:shoppingPreferences": {
-              "title": "Shopping Preferences",
+            "xdm:productPreferences": {
+              "title": "Product Preferences",
               "type": "array",
               "items": {
                 "type": "string"
               },
-              "description": "Shopping or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc."
+              "description": "Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc."
             },
             "xdm:alertStatus": {
               "title": "Alert Status",

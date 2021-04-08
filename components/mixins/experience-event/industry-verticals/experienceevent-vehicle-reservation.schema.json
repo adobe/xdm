@@ -184,11 +184,6 @@
                   "description": "Currency code used to make the purchase. ISO 4217 currency code.",
                   "pattern": "^[A-Z]{3}$"
                 },
-                "xdm:ID": {
-                  "title": "ID",
-                  "type": "string",
-                  "description": "Tracks the reservation number/identifier."
-                },
                 "xdm:length": {
                   "title": "Length",
                   "type": "integer",

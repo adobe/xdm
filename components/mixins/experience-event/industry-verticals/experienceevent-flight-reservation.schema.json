@@ -1,103 +1,118 @@
 {
-  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
-  "$id" : "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation",
-  "$schema" : "http://json-schema.org/draft-06/schema#",
-  "title" : "Flight Reservation",
-  "type" : "object",
-  "meta:extensible" : true,
-  "meta:abstract" : true,
-  "meta:tags" : {
-    "industry" : [ "travel_and_hospitality" ]
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Flight Reservation",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
   },
-  "meta:intendedToExtend" : [ "https://ns.adobe.com/xdm/context/experienceevent" ],
-  "description" : "Collects all details specific to a flight reservation.",
-  "definitions" : {
-    "reservations" : {
-      "properties" : {
-        "xdm:reservations" : {
-          "type" : "object",
-          "properties" : {
-            "xdm:flightReservation" : {
-              "type" : "object",
-              "description" : "Captures all details specific to an individual flight reservation",
-              "properties" : {
-                "xdm:agentID" : {
-                  "title" : "Agent ID",
-                  "type" : "string",
-                  "description" : "Agent or broker responsible for booking the reservation, if applicable."
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Collects all details specific to a flight reservation.",
+  "definitions": {
+    "reservations": {
+      "properties": {
+        "xdm:reservations": {
+          "type": "object",
+          "properties": {
+            "xdm:flightReservation": {
+              "type": "object",
+              "description":"Captures all details specific to an individual flight reservation",
+              "properties": {
+                "xdm:agentID": {
+                  "title": "Agent ID",
+                  "type": "string",
+                  "description": "Agent or broker responsible for booking the reservation, if applicable."
                 },
-                "xdm:arrivalAirportCode" : {
-                  "title" : "Arrival Airport Code",
-                  "type" : "string",
-                  "description" : "Tracks the arrival city airport code.",
-                  "pattern" : "^[A-Z]{3}$"
+                "xdm:arrivalAirportCode": {
+                  "title": "Arrival Airport Code",
+                  "type": "string",
+                  "description": "Tracks the arrival city airport code.",
+                  "pattern": "^[A-Z]{3}$"
                 },
-                "xdm:itemComparison" : {
-                  "title" : "Item Comparison",
-                  "$ref" : "https://ns.adobe.com/xdm/datatypes/comparisons",
-                  "description" : "Used to track flight comparisons on a site or an app."
+                "xdm:itemComparison": {
+                  "title": "Item Comparison",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
+                  "description": "Used to track flight comparisons on a site or an app."
                 },
-                "xdm:departureAirportCode" : {
-                  "title" : "Departure Airport Code",
-                  "type" : "string",
-                  "description" : "Tracks the departure city airport code.",
-                  "pattern" : "^[A-Z]{3}$"
+                "xdm:departureAirportCode": {
+                  "title": "Departure Airport Code",
+                  "type": "string",
+                  "description": "Tracks the departure city airport code.",
+                  "pattern": "^[A-Z]{3}$"
                 },
-                "xdm:fareClass" : {
-                  "title" : "Fare Class",
-                  "type" : "string",
-                  "enum" : [ "first class", "business class", "premium economy", "economy" ],
-                  "description" : "The fare class of the flight being reserved."
+                "xdm:fareClass": {
+                  "title": "Fare Class",
+                  "type": "string",
+                  "enum": [
+                    "first class",
+                    "business class",
+                    "premium economy",
+                    "economy"
+                  ],
+                  "description": "The fare class of the flight being reserved."
                 },
-                "xdm:departureDate" : {
-                  "title" : "Departure Date",
-                  "type" : "string",
-                  "format" : "date-time",
-                  "description" : "The departure date of the flight being reserved."
+                "xdm:departureDate": {
+                  "title": "Departure Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "The departure date of the flight being reserved."
                 },
-                "xdm:arrivalDate" : {
-                  "title" : "Arrival Date",
-                  "type" : "string",
-                  "format" : "date-time",
-                  "description" : "The arrival date of the flight being reserved."
+                "xdm:arrivalDate": {
+                  "title": "Arrival Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "The arrival date of the flight being reserved."
                 },
-                "xdm:flightNumber" : {
-                  "title" : "Flight Number",
-                  "type" : "string",
-                  "description" : "Tracks the flight number."
+                "xdm:flightNumber": {
+                  "title": "Flight Number",
+                  "type": "string",
+                  "description": "Tracks the flight number."
                 },
-                "xdm:loyaltyID" : {
-                  "title" : "Loyalty ID",
-                  "type" : "string",
-                  "description" : "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                "xdm:loyaltyID": {
+                  "title": "Loyalty ID",
+                  "type": "string",
+                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
                 },
-                "xdm:passenger" : {
-                  "title" : "Passenger",
-                  "$ref" : "https://ns.adobe.com/xdm/context/person",
-                  "description" : "Passenger info associated with the reservation."
+                "xdm:passenger": {
+                  "title": "Passenger",
+                  "$ref": "https://ns.adobe.com/xdm/context/person",
+                  "description": "Passenger info associated with the reservation."
                 },
-                "xdm:reservationID" : {
-                  "title" : "Reservation ID",
-                  "type" : "string",
-                  "description" : ""
+                "xdm:reservationID": {
+                  "title": "Reservation ID",
+                  "type": "string",
+                  "description": ""
                 },
-                "xdm:salesChannel" : {
-                  "title" : "Sales Channel",
-                  "type" : "string",
-                  "enum" : [ "Web", "Mobile", "Mobile App", "Call Center", "Agent", "Third-Party" ],
-                  "description" : "Sales channel from which the reservation was booked."
+                "xdm:salesChannel": {
+                  "title": "Sales Channel",
+                  "type": "string",
+                  "enum": ["Web", "Mobile", "Mobile App", "Call Center", "Agent","Third-Party"],
+                  "description": "Sales channel from which the reservation was booked."
                 },
-                "xdm:securityScreening" : {
-                  "title" : "Security Screening",
-                  "type" : "string",
-                  "enum" : [ "Standard", "PreCheck" ],
-                  "description" : "Type of security screening the passenger is subject to."
+                "xdm:securityScreening": {
+                  "title": "Security Screening",
+                  "type": "string",
+                  "enum": ["Standard", "PreCheck"],
+                  "description": "Type of security screening the passenger is subject to."
                 },
-                "xdm:status" : {
-                  "title" : "Status",
-                  "type" : "string",
-                  "enum" : [ "cancelled", "confirmed", "hold", "pending" ],
-                  "description" : "The status of the flight reservation."
+                "xdm:status": {
+                  "title": "Status",
+                  "type": "string",
+                  "enum": [
+                    "cancelled",
+                    "confirmed",
+                    "hold",
+                    "pending"
+                  ],
+                  "description": "The status of the flight reservation."
                 }
               }
             }
@@ -106,9 +121,11 @@
       }
     }
   },
-  "allOf" : [ {
-    "$ref" : "#/definitions/reservations"
-  } ],
-  "meta:status" : "experimental",
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservations"
+    }
+  ],
+  "meta:status": "experimental",
   "meta:createdDate" : "2021-02-10"
 }

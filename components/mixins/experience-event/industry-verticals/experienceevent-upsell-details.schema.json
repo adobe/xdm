@@ -1,46 +1,61 @@
 {
-  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
-  "$id" : "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details",
-  "$schema" : "http://json-schema.org/draft-06/schema#",
-  "title" : "Upsell Details",
-  "type" : "object",
-  "meta:extensible" : true,
-  "meta:abstract" : true,
-  "meta:tags" : {
-    "industry" : [ "retail", "financial_services", "travel_and_hospitality", "telecom", "automotive", "education", "high_tech" ]
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Upsell Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "high_tech"
+    ]
   },
-  "meta:intendedToExtend" : [ "https://ns.adobe.com/xdm/context/experienceevent" ],
-  "description" : "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",
-  "definitions" : {
-    "upsell-details" : {
-      "properties" : {
-        "xdm:upsell" : {
-          "type" : "object",
-          "properties" : {
-            "xdm:upsellSteps" : {
-              "title" : "Upsell Steps",
-              "$ref" : "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description" : "Extension of toolUsage data type.",
-              "meta:status" : "deprecated"
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",
+  "definitions": {
+    "upsell-details": {
+      "properties": {
+        "xdm:upsell": {
+          "type": "object",
+          "properties": {
+            "xdm:upsellSteps": {
+              "title": "Upsell Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             },
-            "xdm:upsellOffer" : {
-              "title" : "Upsell Offer",
-              "$ref" : "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
-              "description" : "Extension of offer details data type."
+            "xdm:upsellOffer": {
+              "title": "Upsell Offer",
+              "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
+              "description": "Extension of offer details data type."
             },
-            "xdm:upsellTransaction" : {
-              "title" : "Upsell Transaction",
-              "$ref" : "https://ns.adobe.com/xdm/datatypes/transaction",
-              "description" : "Extension of transaction data type."
+            "xdm:upsellTransaction": {
+              "title": "Upsell Transaction",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "description": "Extension of transaction data type."
             }
           }
         }
       }
     }
   },
-  "allOf" : [ {
-    "$ref" : "#/definitions/upsell-details"
-  } ],
-  "meta:status" : "experimental",
+  "allOf": [
+    {
+      "$ref": "#/definitions/upsell-details"
+    }
+  ],
+  "meta:status": "experimental",
   "meta:createdDate" : "2021-02-02"
 }

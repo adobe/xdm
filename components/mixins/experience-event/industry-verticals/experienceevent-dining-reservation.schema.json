@@ -52,8 +52,8 @@
                   },
                   "description": "Type of restaurant cuisine."
                 },
-                "xdm:reservationID": {
-                  "title": "Reservation ID",
+                "xdm:ID": {
+                  "title": "ID",
                   "type": "string",
                   "description": "Identifier for the dining reservation."
                 },

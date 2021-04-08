@@ -31,7 +31,8 @@
               "title": "Filing Separately",
               "type": "boolean",
               "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns."
-            }"xdm:isHeadOfHousehold": {
+            },
+            "xdm:isHeadOfHousehold": {
               "title": "Head of Household",
               "type": "boolean",
               "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person."

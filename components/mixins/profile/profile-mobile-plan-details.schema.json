@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
     "mobile-plan-details": {

@@ -242,6 +242,11 @@
                       "title": "Flight Number",
                       "type": "string",
                       "description": "The flight number for the flight being reserved."
+                    },
+                    "xdm:confirmationNumber": {
+                      "title": "Confirmation Number",
+                      "type": "string",
+                      "description": "Tracks the reservation confirmation number/identifier."
                     }
                   }
                 },
@@ -276,7 +281,7 @@
                       "type": "string",
                       "format": "date-time",
                       "description": "The departure date of the flight being reserved."
-                    },
+                    }
                   }
                 }
               }

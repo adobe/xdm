@@ -73,7 +73,7 @@
                   },
                   "xdm:phoneNumber": {
                     "title": "Phone Number",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/phonenumber",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                     "description": "Captures the phone number assigned to this device."
                   }
                 }

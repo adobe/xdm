@@ -1,116 +1,85 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Dining Reservation",
-  "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
+  "$id" : "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation",
+  "$schema" : "http://json-schema.org/draft-06/schema#",
+  "title" : "Dining Reservation",
+  "type" : "object",
+  "meta:extensible" : true,
+  "meta:abstract" : true,
+  "meta:tags" : {
+    "industry" : [ "travel_and_hospitality" ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Collects all details specific to a dining reservation.",
-  "definitions": {
-    "reservations": {
-      "properties": {
-        "xdm:reservations": {
-          "type": "object",
-          "properties": {
-            "xdm:diningReservation": {
-              "type": "object",
-              "properties": {
-                "xdm:cuisine": {
-                  "title": "Cuisine",
-                  "type": "string",
-                  "enum": [
-                    "Chinese",
-                    "Steak",
-                    "Sushi",
-                    "Asian",
-                    "Vietnamese",
-                    "European",
-                    "French",
-                    "Italian",
-                    "Burgers",
-                    "Japanese",
-                    "Barbecue",
-                    "Mediterranean",
-                    "Indian",
-                    "Grill",
-                    "Seafood",
-                    "Steakhouse",
-                    "Mexican",
-                    "Greek",
-                    "American",
-                    "Thai"
-                  ],
-                  "description": "Type of restaurant cuisine."
+  "meta:intendedToExtend" : [ "https://ns.adobe.com/xdm/context/experienceevent" ],
+  "description" : "Collects all details specific to a dining reservation.",
+  "definitions" : {
+    "reservations" : {
+      "properties" : {
+        "xdm:reservations" : {
+          "type" : "object",
+          "properties" : {
+            "xdm:diningReservation" : {
+              "type" : "object",
+              "properties" : {
+                "xdm:cuisine" : {
+                  "title" : "Cuisine",
+                  "type" : "string",
+                  "enum" : [ "Chinese", "Steak", "Sushi", "Asian", "Vietnamese", "European", "French", "Italian", "Burgers", "Japanese", "Barbecue", "Mediterranean", "Indian", "Grill", "Seafood", "Steakhouse", "Mexican", "Greek", "American", "Thai" ],
+                  "description" : "Type of restaurant cuisine."
                 },
-                "xdm:deliveryPartners": {
-                  "title": "Delivery Partners",
-                  "type": "string",
-                  "enum": ["GrubHub", "UberEats", "DoorDash", "Other"],
-                  "description": "Delivery partners available from the restaurant."
+                "xdm:deliveryPartners" : {
+                  "title" : "Delivery Partners",
+                  "type" : "string",
+                  "enum" : [ "GrubHub", "UberEats", "DoorDash", "Other" ],
+                  "description" : "Delivery partners available from the restaurant."
                 },
-                "xdm:location": {
-                  "title": "Dining Location",
-                  "$ref": "https://ns.adobe.com/xdm/context/place",
-                  "description": "Physical location for the restaurant."
+                "xdm:location" : {
+                  "title" : "Dining Location",
+                  "$ref" : "https://ns.adobe.com/xdm/context/place",
+                  "description" : "Physical location for the restaurant."
                 },
-                "xdm:diningOptions": {
-                  "title": "Dining Options",
-                  "type": "string",
-                  "enum": ["Outdoor Dining", "Delivery", "Curbside", "Takeout"],
-                  "description": "Delivery and dining options available from the restaurant."
+                "xdm:diningOptions" : {
+                  "title" : "Dining Options",
+                  "type" : "string",
+                  "enum" : [ "Outdoor Dining", "Delivery", "Curbside", "Takeout" ],
+                  "description" : "Delivery and dining options available from the restaurant."
                 },
-                "xdm:groupReservation": {
-                  "title": "Group Reservation",
-                  "type": "boolean",
-                  "description": "Indicates if the reservation is being made for a group."
+                "xdm:groupReservation" : {
+                  "title" : "Group Reservation",
+                  "type" : "boolean",
+                  "description" : "Indicates if the reservation is being made for a group."
                 },
-                "xdm:loyaltyID": {
-                  "title": "Loyalty ID",
-                  "type": "string",
-                  "description": "Includes the loyalty/rewards program ID for the party listed in the reservation."
+                "xdm:loyaltyID" : {
+                  "title" : "Loyalty ID",
+                  "type" : "string",
+                  "description" : "Includes the loyalty/rewards program ID for the party listed in the reservation."
                 },
-                "xdm:partySize": {
-                  "title": "Party Size",
-                  "type": "integer",
-                  "description": "Number of individuals in the dining party."
+                "xdm:partySize" : {
+                  "title" : "Party Size",
+                  "type" : "integer",
+                  "description" : "Number of individuals in the dining party."
                 },
-                "xdm:priceCategory": {
-                  "title": "Price Category",
-                  "type": "string",
-                  "enum": ["$", "$$", "$$$", "$$$$"],
-                  "description": "Price category for the reservation being made."
+                "xdm:priceCategory" : {
+                  "title" : "Price Category",
+                  "type" : "string",
+                  "enum" : [ "$", "$$", "$$$", "$$$$" ],
+                  "description" : "Price category for the reservation being made."
                 },
-                "xdm:reservationTime": {
-                  "title": "Reservation Time",
-                  "type": "string",
-                  "format": "date-time",
-                  "description": "The time for which the dining reservation is booked."
+                "xdm:reservationTime" : {
+                  "title" : "Reservation Time",
+                  "type" : "string",
+                  "format" : "date-time",
+                  "description" : "The time for which the dining reservation is booked."
                 },
-                "xdm:specialOccasion": {
-                  "title": "Special Occasion",
-                  "type": "boolean",
-                  "description": "Indicates if the reservation is being made for a special occasion."
+                "xdm:specialOccasion" : {
+                  "title" : "Special Occasion",
+                  "type" : "boolean",
+                  "description" : "Indicates if the reservation is being made for a special occasion."
                 },
-                "xdm:status": {
-                  "title": "Status",
-                  "type": "string",
-                  "enum": [
-                    "cancelled",
-                    "confirmed",
-                    "hold",
-                    "pending"
-                  ],
-                  "description": "The status of the dining reservation."
+                "xdm:status" : {
+                  "title" : "Status",
+                  "type" : "string",
+                  "enum" : [ "cancelled", "confirmed", "hold", "pending" ],
+                  "description" : "The status of the dining reservation."
                 }
               }
             }
@@ -119,10 +88,9 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/reservations"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf" : [ {
+    "$ref" : "#/definitions/reservations"
+  } ],
+  "meta:status" : "experimental",
+  "meta:createdDate" : "2021-02-10"
 }

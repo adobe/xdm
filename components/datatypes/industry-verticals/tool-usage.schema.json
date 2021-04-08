@@ -1,86 +1,80 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Tool Usage",
-  "type": "object",
-  "meta:extensible": true,
-  "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
-  "definitions": {
-    "tool-usage": {
-      "properties": {
-        "xdm:cancelled": {
-          "title": "Cancelled",
-          "type": "integer",
-          "description": "Captured when a visitor cancels out of a tool usage process."
+  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
+  "$id" : "https://ns.adobe.com/xdm/datatypes/tool-usage",
+  "$schema" : "http://json-schema.org/draft-06/schema#",
+  "title" : "Tool Usage",
+  "type" : "object",
+  "meta:extensible" : true,
+  "description" : "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
+  "definitions" : {
+    "tool-usage" : {
+      "properties" : {
+        "xdm:cancelled" : {
+          "title" : "Cancelled",
+          "type" : "integer",
+          "description" : "Captured when a visitor cancels out of a tool usage process."
         },
-        "xdm:complete": {
-          "title": "Complete",
-          "type": "integer",
-          "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app."
+        "xdm:complete" : {
+          "title" : "Complete",
+          "type" : "integer",
+          "description" : "Captured when a visitor successfully finishes using any type of tool or utility on the site/app."
         },
-        "xdm:failure": {
-          "title": "Failed",
-          "type": "integer",
-          "description": "Captured when a step in the tool usage process fails."
+        "xdm:failure" : {
+          "title" : "Failed",
+          "type" : "integer",
+          "description" : "Captured when a step in the tool usage process fails."
         },
-        "xdm:ID": {
-          "title": "ID",
-          "type": "string",
-          "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc."
+        "xdm:ID" : {
+          "title" : "ID",
+          "type" : "string",
+          "description" : "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc."
         },
-        "xdm:name": {
-          "title": "Name",
-          "type": "string",
-          "description": "Tracks the name of the tool in use."
+        "xdm:name" : {
+          "title" : "Name",
+          "type" : "string",
+          "description" : "Tracks the name of the tool in use."
         },
-        "xdm:saved": {
-          "title": "Saved",
-          "type": "integer",
-          "description": "Captured when a visitor saves and exits a tool usage process."
+        "xdm:saved" : {
+          "title" : "Saved",
+          "type" : "integer",
+          "description" : "Captured when a visitor saves and exits a tool usage process."
         },
-        "xdm:start": {
-          "title": "Start",
-          "type": "integer",
-          "description": "Captured when a visitor initializes using any type of tool or utility on the site/app."
+        "xdm:start" : {
+          "title" : "Start",
+          "type" : "integer",
+          "description" : "Captured when a visitor initializes using any type of tool or utility on the site/app."
         },
-        "xdm:step": {
-          "title": "Step",
-          "type": "integer",
-          "description": "Captured when any intermediary tool step is started on the site/app."
+        "xdm:step" : {
+          "title" : "Step",
+          "type" : "integer",
+          "description" : "Captured when any intermediary tool step is started on the site/app."
         },
-        "xdm:stepName": {
-          "title": "Step Name",
-          "type": "string",
-          "description": "Tracks the name of the tool step in use."
+        "xdm:stepName" : {
+          "title" : "Step Name",
+          "type" : "string",
+          "description" : "Tracks the name of the tool step in use."
         },
-        "xdm:submitted": {
-          "title": "Submitted",
-          "type": "integer",
-          "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
+        "xdm:submitted" : {
+          "title" : "Submitted",
+          "type" : "integer",
+          "description" : "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
         },
-        "xdm:transaction": {
-          "title": "Transaction",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-          "description": "Extension of Transaction Data Type"
+        "xdm:transaction" : {
+          "title" : "Transaction",
+          "$ref" : "https://ns.adobe.com/xdm/datatypes/transaction",
+          "description" : "Extension of Transaction Data Type"
         },
-        "xdm:type": {
-          "title": "Type",
-          "type": "string",
-          "description": "Tracks the type or category of the tool in use."
+        "xdm:type" : {
+          "title" : "Type",
+          "type" : "string",
+          "description" : "Tracks the type or category of the tool in use."
         }
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/tool-usage"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf" : [ {
+    "$ref" : "#/definitions/tool-usage"
+  } ],
+  "meta:status" : "experimental",
+  "meta:createdDate" : "2021-02-19"
 }

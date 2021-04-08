@@ -1,143 +1,138 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Lodging Reservation",
-  "type": "object",
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
+  "$id" : "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation",
+  "$schema" : "http://json-schema.org/draft-06/schema#",
+  "title" : "Lodging Reservation",
+  "type" : "object",
+  "meta:extensible" : true,
+  "meta:abstract" : true,
+  "meta:tags" : {
+    "industry" : [ "travel_and_hospitality" ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Collects all details specific to a lodging reservation.",
-  "definitions": {
-    "reservations": {
-      "properties": {
-        "xdm:reservations": {
-          "type": "object",
-          "properties": {
-            "xdm:lodgingReservation": {
-              "type": "object",
-              "properties": {
-                "xdm:agentID": {
-                  "title": "Agent ID",
-                  "type": "string",
-                  "description": "Agent ID associated with the hotel booking."
+  "meta:intendedToExtend" : [ "https://ns.adobe.com/xdm/context/experienceevent" ],
+  "description" : "Collects all details specific to a lodging reservation.",
+  "definitions" : {
+    "reservations" : {
+      "properties" : {
+        "xdm:reservations" : {
+          "type" : "object",
+          "properties" : {
+            "xdm:lodgingReservation" : {
+              "type" : "object",
+              "properties" : {
+                "xdm:agentID" : {
+                  "title" : "Agent ID",
+                  "type" : "string",
+                  "description" : "Agent ID associated with the hotel booking."
                 },
-                "xdm:averageDailyPrice": {
-                  "title": "Average Daily Price",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                  "description": "Average daily price of the hotel room."
+                "xdm:averageDailyPrice" : {
+                  "title" : "Average Daily Price",
+                  "$ref" : "https://ns.adobe.com/xdm/datatypes/currency",
+                  "description" : "Average daily price of the hotel room."
                 },
-                "xdm:basePrice": {
-                  "title": "Base Price",
-                  "type": "string",
-                  "description": "Base price before any discounts are added. "
+                "xdm:basePrice" : {
+                  "title" : "Base Price",
+                  "type" : "string",
+                  "description" : "Base price before any discounts are added. "
                 },
-                "xdm:bookingID": {
-                  "title": "Booking ID",
-                  "type": "string",
-                  "description": "Booking ID associated with the hotel booking. "
+                "xdm:bookingID" : {
+                  "title" : "Booking ID",
+                  "type" : "string",
+                  "description" : "Booking ID associated with the hotel booking. "
                 },
-                "xdm:checkInDate": {
-                  "title": "Check-In Date",
-                  "type": "string",
-                  "format": "date-time",
-                  "description": "The check-in date of the for the room reservation."
+                "xdm:checkInDate" : {
+                  "title" : "Check-In Date",
+                  "type" : "string",
+                  "format" : "date-time",
+                  "description" : "The check-in date of the for the room reservation."
                 },
-                "xdm:checkOutDate": {
-                  "title": "Check-Out Date",
-                  "type": "string",
-                  "format": "date-time",
-                  "description": "The check-out date of the for the room reservation."
+                "xdm:checkOutDate" : {
+                  "title" : "Check-Out Date",
+                  "type" : "string",
+                  "format" : "date-time",
+                  "description" : "The check-out date of the for the room reservation."
                 },
-                "xdm:itemComparison": {
-                  "title": "Item Comparison",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-                  "description": "Used to track lodging comparisons on a site or an app."
+                "xdm:itemComparison" : {
+                  "title" : "Item Comparison",
+                  "$ref" : "https://ns.adobe.com/xdm/datatypes/comparisons",
+                  "description" : "Used to track lodging comparisons on a site or an app."
                 },
-                "xdm:couponCode": {
-                  "title": "Coupon Code",
-                  "type": "string",
-                  "description": "Coupon code associated with the hotel booking."
+                "xdm:couponCode" : {
+                  "title" : "Coupon Code",
+                  "type" : "string",
+                  "description" : "Coupon code associated with the hotel booking."
                 },
-                "xdm:discountPercent": {
-                  "title": "Discount Percent",
-                  "type": "number",
-                  "description": "Discount percentage associated with the booking."
+                "xdm:discountPercent" : {
+                  "title" : "Discount Percent",
+                  "type" : "number",
+                  "description" : "Discount percentage associated with the booking."
                 },
-                "xdm:freeCancelation": {
-                  "title": "Free Cancelation",
-                  "type": "boolean",
-                  "description": "Yes/no if the room has a free cancellation."
+                "xdm:freeCancelation" : {
+                  "title" : "Free Cancelation",
+                  "type" : "boolean",
+                  "description" : "Yes/no if the room has a free cancellation."
                 },
-                "xdm:guestID": {
-                  "title": "Guest ID",
-                  "type": "string",
-                  "description": "Guest ID associated with the hotel booking."
+                "xdm:guestID" : {
+                  "title" : "Guest ID",
+                  "type" : "string",
+                  "description" : "Guest ID associated with the hotel booking."
                 },
-                "xdm:loyaltyID": {
-                  "title": "Loyalty ID",
-                  "type": "string",
-                  "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                "xdm:loyaltyID" : {
+                  "title" : "Loyalty ID",
+                  "type" : "string",
+                  "description" : "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
                 },
-                "xdm:numberOfRooms": {
-                  "title": "Number of Rooms",
-                  "type": "integer",
-                  "description": "Captures the number of rooms associated with the reservation."
+                "xdm:numberOfRooms" : {
+                  "title" : "Number of Rooms",
+                  "type" : "integer",
+                  "description" : "Captures the number of rooms associated with the reservation."
                 },
-                "xdm:propertyID": {
-                  "title": "Property ID",
-                  "type": "string",
-                  "description": "Identifier of the hotel/resort for the reservation."
+                "xdm:propertyID" : {
+                  "title" : "Property ID",
+                  "type" : "string",
+                  "description" : "Identifier of the hotel/resort for the reservation."
                 },
-                "xdm:propertyName": {
-                  "title": "Property Name",
-                  "type": "string",
-                  "description": "Name of the hotel/resort for the reservation."
+                "xdm:propertyName" : {
+                  "title" : "Property Name",
+                  "type" : "string",
+                  "description" : "Name of the hotel/resort for the reservation."
                 },
-                "xdm:ratePlan": {
-                  "title": "Rate Plan",
-                  "type": "string",
-                  "description": "The rate deal on which the room was sold."
+                "xdm:ratePlan" : {
+                  "title" : "Rate Plan",
+                  "type" : "string",
+                  "description" : "The rate deal on which the room was sold."
                 },
-                "xdm:refundable": {
-                  "title": "Refundable",
-                  "type": "boolean",
-                  "description": "Yes/no if the room is refundable."
+                "xdm:refundable" : {
+                  "title" : "Refundable",
+                  "type" : "boolean",
+                  "description" : "Yes/no if the room is refundable."
                 },
-                "xdm:reservationStatus": {
-                  "title": "Reservation Status",
-                  "type": "string",
-                  "description": "update"
+                "xdm:reservationStatus" : {
+                  "title" : "Reservation Status",
+                  "type" : "string",
+                  "description" : "update"
                 },
-                "xdm:roomAccessibilityType": {
-                  "title": "Room Accessibility Type",
-                  "type": "string",
-                  "enum": ["mobility", "hearing", "n/a"],
-                  "description": "Type of accessible room, such as mobility, hearing, or other."
+                "xdm:roomAccessibilityType" : {
+                  "title" : "Room Accessibility Type",
+                  "type" : "string",
+                  "enum" : [ "mobility", "hearing", "n/a" ],
+                  "description" : "Type of accessible room, such as mobility, hearing, or other."
                 },
-                "xdm:roomCapacity": {
-                  "title": "Room Capacity",
-                  "type": "integer",
-                  "description": "Number of people the hotel room holds."
+                "xdm:roomCapacity" : {
+                  "title" : "Room Capacity",
+                  "type" : "integer",
+                  "description" : "Number of people the hotel room holds."
                 },
-                "xdm:roomType": {
-                  "title": "Room Type",
-                  "type": "string",
-                  "enum": ["queen", "king", "double", "meeting room", "other"],
-                  "description": "Captures the type of room being reserved."
+                "xdm:roomType" : {
+                  "title" : "Room Type",
+                  "type" : "string",
+                  "enum" : [ "queen", "king", "double", "meeting room", "other" ],
+                  "description" : "Captures the type of room being reserved."
                 },
-                "xdm:smoking": {
-                  "title": "Smoking",
-                  "type": "boolean",
-                  "description": "Yes/no if the room allows smoking."
+                "xdm:smoking" : {
+                  "title" : "Smoking",
+                  "type" : "boolean",
+                  "description" : "Yes/no if the room allows smoking."
                 }
               }
             }
@@ -146,10 +141,9 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/reservations"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf" : [ {
+    "$ref" : "#/definitions/reservations"
+  } ],
+  "meta:status" : "experimental",
+  "meta:createdDate" : "2021-02-10"
 }

@@ -1,64 +1,58 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/comparisons",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Comparisons",
-  "type": "object",
-  "meta:extensible": true,
-  "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
-  "definitions": {
-    "comparisons": {
-      "properties": {
-        "xdm:addition": {
-          "title": "Addition",
-          "type": "integer",
-          "description": "Tracked when an item is added to a comparison."
+  "meta:license" : [ "Copyright 2020 Adobe Systems Incorporated. All rights reserved.", "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license", "you may not use this file except in compliance with the License. You may obtain a copy", "of the License at https://creativecommons.org/licenses/by/4.0/" ],
+  "$id" : "https://ns.adobe.com/xdm/datatypes/comparisons",
+  "$schema" : "http://json-schema.org/draft-06/schema#",
+  "title" : "Comparisons",
+  "type" : "object",
+  "meta:extensible" : true,
+  "description" : "Used for site comparisons, such as products, cards, rooms, flights, etc.",
+  "definitions" : {
+    "comparisons" : {
+      "properties" : {
+        "xdm:addition" : {
+          "title" : "Addition",
+          "type" : "integer",
+          "description" : "Tracked when an item is added to a comparison."
         },
-        "xdm:count": {
-          "title": "Count",
-          "type": "integer",
-          "description": "Count of the total number of items being compared."
+        "xdm:count" : {
+          "title" : "Count",
+          "type" : "integer",
+          "description" : "Count of the total number of items being compared."
         },
-        "xdm:items": {
-          "title": "Items",
-          "type": "array",
-          "items": {
-            "type": "string"
+        "xdm:items" : {
+          "title" : "Items",
+          "type" : "array",
+          "items" : {
+            "type" : "string"
           },
-          "description": "An array of all item IDs/SKUs in the list of products.  "
+          "description" : "An array of all item IDs/SKUs in the list of products.  "
         },
-        "xdm:removal": {
-          "title": "Removal",
-          "type": "integer",
-          "description": "Tracked when an item is removed from a comparison."
+        "xdm:removal" : {
+          "title" : "Removal",
+          "type" : "integer",
+          "description" : "Tracked when an item is removed from a comparison."
         },
-        "xdm:type": {
-          "title": "Type",
-          "type": "string",
-          "description": "Type of comparison tool in use."
+        "xdm:type" : {
+          "title" : "Type",
+          "type" : "string",
+          "description" : "Type of comparison tool in use."
         },
-        "xdm:view": {
-          "title": "View",
-          "type": "integer",
-          "description": "Tracked when a comparison page is viewed."
+        "xdm:view" : {
+          "title" : "View",
+          "type" : "integer",
+          "description" : "Tracked when a comparison page is viewed."
         },
-        "xdm:impressions": {
-          "title": "Impressions",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
-          "description": "Extension of the impressions data type."
+        "xdm:impressions" : {
+          "title" : "Impressions",
+          "$ref" : "https://ns.adobe.com/xdm/datatypes/impressions",
+          "description" : "Extension of the impressions data type."
         }
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/comparisons"
-    }
-  ],
-  "meta:status": "experimental"
+  "allOf" : [ {
+    "$ref" : "#/definitions/comparisons"
+  } ],
+  "meta:status" : "experimental",
+  "meta:createdDate" : "2021-02-19"
 }

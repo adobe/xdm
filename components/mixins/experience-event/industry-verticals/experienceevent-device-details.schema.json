@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Device Configuration Details",
+  "title": "Device Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -23,7 +23,7 @@
           "title": "Device Configuration",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
-		  "meta:status": "deprecated"
+          "meta:status": "deprecated"
         },
         "xdm:deviceTradeInDetails": {
           "type": "object",
@@ -32,20 +32,20 @@
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-			  "meta:status": "deprecated"
+              "meta:status": "deprecated"
             },
-            "xdm:deviceTradeInManufacturer": {
+            "xdm:manufacturer": {
               "title": "Manufacturer",
               "type": "string",
               "description": "Manufacturer of the device being traded."
             },
-            "xdm:deviceTradeInModel": {
+            "xdm:model": {
               "title": "Model",
               "type": "string",
               "description": "Model of the device being traded."
             },
-            "xdm:deviceTradeInValue": {
-              "title": "Value",
+            "xdm:tradeInValue": {
+              "title": "Trade In Value",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Value of the device being traded."
             }
@@ -55,13 +55,15 @@
           "title": "Device Activation",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
-		  "meta:status": "deprecated"
+          "meta:status": "deprecated"
         }
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/device-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/device-details"
+    }
+  ],
   "meta:status": "experimental"
 }

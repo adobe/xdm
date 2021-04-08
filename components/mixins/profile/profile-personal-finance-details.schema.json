@@ -35,10 +35,39 @@
               },
               "description": "Captures the beneficiary(s) assigned to the account."
             },
-            "xdm:creditScore": {
-              "title": "Credit Score",
-              "type": "integer",
-              "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. "
+            "xdm:creditScores": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:score": {
+                    "title": "Score",
+                    "type": "integer",
+                    "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness."
+                  },
+                  "xdm:provider": {
+                    "title": "Credit Bureau",
+                    "type": "string",
+                    "meta:enum": {
+                      "experian": "Experian",
+                      "equifax": "Equifax",
+                      "transunion": "TransUnion"
+                    },
+                    "description": "Refers to the credit bureau responsible for providing the credit score."
+                  },
+                  "xdm:score": {
+                    "title": "Score",
+                    "type": "integer",
+                    "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness."
+                  },
+                  "xdm:scoreDate": {
+                    "title": "Score Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the score was reported."
+                  }
+                }
+              }
             },
             "xdm:employmentStatus": {
               "title": "Employment Status",
@@ -53,16 +82,6 @@
               ],
               "description": "Tracks the employment status of the user."
             },
-            "xdm:filingJointly": {
-              "title": "Filing Jointly",
-              "type": "boolean",
-              "description": "Refers to a filing status for married couples that have wed before the end of the tax year."
-            },
-            "xdm:filingSeparately": {
-              "title": "Filing Separately",
-              "type": "boolean",
-              "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns."
-            },
             "xdm:financialAccount": {
               "title": "financeAccountId",
               "type": "array",
@@ -75,26 +94,6 @@
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned."
-            },
-            "xdm:isHeadOfHousehold": {
-              "title": "Head of Household",
-              "type": "boolean",
-              "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person."
-            },
-            "xdm:householdIncome": {
-              "title": "Household Income",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Refers to the combined gross income of all members of a household."
-            },
-            "xdm:singleFiler": {
-              "title": "Single Filer",
-              "type": "boolean",
-              "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status."
-            },
-            "xdm:taxBracket": {
-              "title": "Tax Bracket",
-              "type": "string",
-              "description": "Refers to a range of incomes subject to a certain income tax rate."
             }
           }
         }

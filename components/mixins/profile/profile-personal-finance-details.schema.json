@@ -82,13 +82,10 @@
               ],
               "description": "Tracks the employment status of the user."
             },
-            "xdm:financialAccount": {
-              "title": "financeAccountId",
-              "type": "array",
-              "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account"
-              },
-              "description": "Financial account IDs assigned to the user, and array of Financial Account Details data type."
+            "xdm:ID": {
+              "title": "ID",
+              "type": "string",
+              "description": "Financial account ID assigned to the user."
             },
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",

@@ -19,6 +19,11 @@
   "definitions": {
     "lodging-product": {
       "properties": {
+        "xdm:ID": {
+          "title": "ID",
+          "type": "string",
+          "description": "Identifier for the lodging property."
+        },
         "xdm:location": {
           "title": "Location",
           "$ref": "https://ns.adobe.com/xdm/common/address",

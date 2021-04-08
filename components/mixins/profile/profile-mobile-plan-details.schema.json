@@ -32,7 +32,7 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "xdm:ID":{
+                  "xdm:ID": {
                     "title": "ID",
                     "type": "string",
                     "description": "Captures the ID for the device."

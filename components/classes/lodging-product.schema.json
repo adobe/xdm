@@ -19,8 +19,8 @@
   "definitions": {
     "lodging-product": {
       "properties": {
-        "xdm:ID": {
-          "title": "ID",
+        "xdm:propertyID": {
+          "title": "Property ID",
           "type": "string",
           "description": "Identifier for the lodging property."
         },

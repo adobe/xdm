@@ -20,7 +20,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Alert information such as ad impressions and ad clicks. ",
   "definitions": {
     "alert-impressions": {
@@ -28,17 +30,22 @@
         "xdm:alerts": {
           "type": "object",
           "properties": {
-            "xdm:alertClicks": {
+            "xdm:ID": {
+              "title": "Alert ID",
+              "type": "string",
+              "description": "Alert identifier."
+            },
+            "xdm:clicks": {
               "title": "Alert Clicks",
               "type": "integer",
               "description": "Counts the number of times an alert has been clicked."
             },
-            "xdm:alertDismissals": {
+            "xdm:dismissals": {
               "title": "Alert Dismissals",
               "type": "integer",
               "description": "Counts the number of times an alert has been dismissed."
             },
-            "xdm:alertImpressions": {
+            "xdm:impressions": {
               "title": "Alert Impression Details",
               "type": "array",
               "items": {

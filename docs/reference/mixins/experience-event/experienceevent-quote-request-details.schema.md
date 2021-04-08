@@ -14,20 +14,8 @@ Captures different details of a quote request process for various types of quote
 ## Quote Request Details Example
 ```json
 {
-  "xdm:quoteRequestDetails": {
-    "xdm:location": "95110",
-    "xdm:personalDetails": {
-      "xdm:person": {
-        "xdm:name": {
-          "xdm:firstName": "Jane",
-          "xdm:middleName": "F",
-          "xdm:lastName": "Doe",
-          "xdm:fullName": "Jane F. Doe"
-        },
-        "xdm:birthDayAndMonth": "01-03",
-        "xdm:gender": "female"
-      }
-    }
+  "xdm:quotes": {
+    "xdm:location": "95110"
   }
 }
 ```
@@ -36,18 +24,18 @@ Captures different details of a quote request process for various types of quote
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:quoteRequestDetails](#xdmquoterequestdetails) | `object` | Optional | Quote Request Details (this schema) |
+| [xdm:quotes](#xdmquotes) | `object` | Optional | Quote Request Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:quoteRequestDetails
+## xdm:quotes
 
 
-`xdm:quoteRequestDetails`
+`xdm:quotes`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:quoteRequestDetails Type
+### xdm:quotes Type
 
 
 `object` with following properties:
@@ -57,8 +45,8 @@ Captures different details of a quote request process for various types of quote
 |----------|------|----------|
 | `xdm:discount`|  | Optional |
 | `xdm:location`| string | Optional |
-| `xdm:personalDetails`|  | Optional |
 | `xdm:premium`|  | Optional |
+| `xdm:requestID`| string | Optional |
 | `xdm:selectedRetailer`| string | Optional |
 | `xdm:steps`|  | Optional |
 
@@ -105,26 +93,6 @@ Captures the postal code used for finding retailers near the visitor's location.
 
 
 
-#### xdm:personalDetails
-##### Personal Details
-
-Extension of the Personal Profile data type.
-
-`xdm:personalDetails`
-* is optional
-* type: reference
-
-##### xdm:personalDetails Type
-
-
-* []() – `https://ns.adobe.com/xdm/context/profile-person-details`
-
-
-
-
-
-
-
 #### xdm:premium
 ##### Premium
 
@@ -138,6 +106,27 @@ Records the premium amount for a quote displayed to a visitor.
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/currency`
+
+
+
+
+
+
+
+#### xdm:requestID
+##### Quote Request ID
+
+Unique identifier for the quote request.
+
+`xdm:requestID`
+* is optional
+* type: `string`
+
+##### xdm:requestID Type
+
+
+`string`
+
 
 
 

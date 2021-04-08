@@ -14,7 +14,7 @@ Claim details such as claim policy ID and claim creation steps.
 ## Claim Process Example
 ```json
 {
-  "xdm:disputes": {
+  "xdm:claims": {
     "xdm:ID": "P102819201D",
     "xdm:startDate": "2021-03-04T15:52:25+00:00",
     "xdm:status": "approved",
@@ -27,18 +27,18 @@ Claim details such as claim policy ID and claim creation steps.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:disputes](#xdmdisputes) | `object` | Optional | Claim Process (this schema) |
+| [xdm:claims](#xdmclaims) | `object` | Optional | Claim Process (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:disputes
+## xdm:claims
 
 
-`xdm:disputes`
+`xdm:claims`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:disputes Type
+### xdm:claims Type
 
 
 `object` with following properties:
@@ -47,7 +47,8 @@ Claim details such as claim policy ID and claim creation steps.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
-| `xdm:policy`|  | Optional |
+| `xdm:benefitAmount`|  | Optional |
+| `xdm:policyID`| string | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:status`| string | Optional |
 | `xdm:steps`|  | Optional |
@@ -56,9 +57,9 @@ Claim details such as claim policy ID and claim creation steps.
 
 
 #### xdm:ID
-#####  ID
+##### Claims ID
 
-ID of the claim being submitted.
+Unique identifier for the claim.
 
 `xdm:ID`
 * is optional
@@ -76,19 +77,40 @@ ID of the claim being submitted.
 
 
 
-#### xdm:policy
-##### Policy
+#### xdm:benefitAmount
+##### Benefit Amount
 
-Extension of Policy data type.
+Captures the benefit amount.
 
-`xdm:policy`
+`xdm:benefitAmount`
 * is optional
 * type: reference
 
-##### xdm:policy Type
+##### xdm:benefitAmount Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/policy-details`
+* []() – `https://ns.adobe.com/xdm/datatypes/currency`
+
+
+
+
+
+
+
+#### xdm:policyID
+##### Policy ID
+
+Policy Identifier.
+
+`xdm:policyID`
+* is optional
+* type: `string`
+
+##### xdm:policyID Type
+
+
+`string`
+
 
 
 
@@ -127,7 +149,7 @@ Captures the status of the claim for any given point in the application process.
 * is optional
 * type: `enum`
 
-The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmclaims-known-values).
 
 ##### xdm:status Known Values
 | Value | Description |
@@ -171,7 +193,7 @@ Type of claim submitted.
 * is optional
 * type: `enum`
 
-The value of this property **must** be equal to one of the [known values below](#xdmdisputes-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmclaims-known-values).
 
 ##### xdm:type Known Values
 | Value | Description |

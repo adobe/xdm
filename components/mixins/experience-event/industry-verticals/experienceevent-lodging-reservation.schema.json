@@ -25,11 +25,6 @@
             "xdm:lodgingReservation": {
               "type": "object",
               "properties": {
-                "xdm:ID": {
-                  "title": "ID",
-                  "type": "string",
-                  "description": "Identifier for lodging reservation."
-                },
                 "xdm:agentID": {
                   "title": "Agent ID",
                   "type": "string",

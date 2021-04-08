@@ -52,11 +52,6 @@
                   },
                   "description": "Type of restaurant cuisine."
                 },
-                "xdm:ID": {
-                  "title": "ID",
-                  "type": "string",
-                  "description": "Identifier for the dining reservation."
-                },
                 "xdm:restaurantID": {
                   "title": "Restaurant ID",
                   "type": "string",
@@ -192,7 +187,7 @@
                     "personal": "Personal"
                   },
                   "description": "Tracks the purpose of the reservation, typically either business or personal."
-                },                
+                },
                 "xdm:type": {
                   "title": "Type",
                   "type": "string",

@@ -80,12 +80,7 @@
                   "title": "Passenger ID",
                   "type": "string",
                   "description": "Passenger info associated with the reservation."
-                },
-                "xdm:ID": {
-                  "title": "ID",
-                  "type": "string",
-                  "description": "Identifier for flight reservation."
-                },
+                },                
                 "xdm:salesChannel": {
                   "title": "Sales Channel",
                   "type": "string",

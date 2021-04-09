@@ -38,8 +38,11 @@
             },
             "xdm:upsellOffer": {
               "title": "Upsell Impressions",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
-              "description": "Extension of offer details data type."
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
+              },
+              "description": "Array of the impressions data type."
             },
             "xdm:upsellTransaction": {
               "title": "Upsell Transaction",

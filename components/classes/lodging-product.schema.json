@@ -61,5 +61,6 @@
     { "$ref": "https://ns.adobe.com/xdm/data/record" },
     { "$ref": "#/definitions/lodging-product" }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:createdDate" : "2021-04-06"
 }

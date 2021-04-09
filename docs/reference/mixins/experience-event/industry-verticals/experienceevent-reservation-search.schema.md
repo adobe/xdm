@@ -181,7 +181,7 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 #### xdm:reservationSearch
-##### Reservation Search
+##### Site Search
 
 Extension of internalSearch data type.
 

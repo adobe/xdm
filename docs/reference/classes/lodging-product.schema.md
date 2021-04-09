@@ -35,6 +35,7 @@ For hotel product information such as ID, rooms, ownership, and type.
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:location](#xdmlocation) | Postal address | Optional | Lodging Product (this schema) |
 | [xdm:ownership](#xdmownership) | `string` | Optional | Lodging Product (this schema) |
+| [xdm:propertyID](#xdmpropertyid) | `string` | Optional | Lodging Product (this schema) |
 | [xdm:serviceLevel](#xdmservicelevel) | `string` | Optional | Lodging Product (this schema) |
 | [xdm:starRating](#xdmstarrating) | `integer` | Optional | Lodging Product (this schema) |
 | [xdm:totalRooms](#xdmtotalrooms) | `integer` | Optional | Lodging Product (this schema) |
@@ -92,6 +93,26 @@ Parent company of the lodging property.
 * defined in this schema
 
 ### xdm:ownership Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:propertyID
+### Property ID
+
+Identifier for the lodging property.
+
+`xdm:propertyID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:propertyID Type
 
 
 `string`

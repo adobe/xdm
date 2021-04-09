@@ -52,7 +52,7 @@
                 },
                 "xdm:statusUpdate": {
                     "title": "Status Update",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "string",
                     "description": "Captured when the status for an application changes, either from an online or offline update."
                 },
                 "xdm:type": {
@@ -62,7 +62,7 @@
                 },
                 "xdm:underReview": {
                     "title": "Under Review",
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "type": "boolean",
                     "description": "Captured when a visitor application has been placed under review."
                 },
                 "xdm:steps": {

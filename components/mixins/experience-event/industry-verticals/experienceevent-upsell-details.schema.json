@@ -27,7 +27,7 @@
   "definitions": {
     "upsell-details": {
       "properties": {
-        "xdm:upsell": {
+        "xdm:upsells": {
           "type": "object",
           "properties": {
             "xdm:upsellSteps": {

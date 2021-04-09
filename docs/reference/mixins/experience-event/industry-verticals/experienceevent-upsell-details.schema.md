@@ -14,7 +14,7 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 ## Upsell Details Example
 ```json
 {
-  "xdm:upsell": {
+  "xdm:upsells": {
     "xdm:upsellOffer": {
       "xdm:Offer Details": {}
     },
@@ -33,18 +33,18 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:upsell](#xdmupsell) | `object` | Optional | Upsell Details (this schema) |
+| [xdm:upsells](#xdmupsells) | `object` | Optional | Upsell Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:upsell
+## xdm:upsells
 
 
-`xdm:upsell`
+`xdm:upsells`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:upsell Type
+### xdm:upsells Type
 
 
 `object` with following properties:

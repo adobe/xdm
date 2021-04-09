@@ -23,7 +23,7 @@ Credit limit increase application details such as ID, type, approval, and status
         "xdm:formApplicationRequestedAmount": "2000.00",
         "xdm:formApplicationStatus": "initiated",
         "xdm:formApplicationStatusUpdate": "",
-        "xdm:formApplicationType": "loan",
+        "xdm:formApplicationType": "credit limit increase",
         "xdm:formApplicationUnderReview": "",
         "xdm:formApplicationUsage": ""
       }

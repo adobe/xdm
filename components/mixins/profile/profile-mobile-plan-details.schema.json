@@ -1,0 +1,98 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Mobile Plan Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": { "industry": ["telecom"] },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+  "definitions": {
+    "mobile-plan-details": {
+      "properties": {
+        "xdm:mobilePlanDetails": {
+          "type": "object",
+          "properties": {
+            "xdm:accountID": {
+              "title": "Account ID",
+              "type": "string",
+              "description": "Account ID for the plan."
+            },
+            "xdm:devices": {
+              "title": "Devices",
+              "description": "Array of line details and their associated devices.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:ID": {
+                    "title": "ID",
+                    "type": "string",
+                    "description": "Captures the ID for the device."
+                  },
+                  "xdm:manufacturer": {
+                    "title": "Manufacturer",
+                    "type": "string",
+                    "description": "Captures the device manufacturer."
+                  },
+                  "xdm:model": {
+                    "title": "Model",
+                    "type": "string",
+                    "description": "Captures the device model."
+                  },
+                  "xdm:storageCapacity": {
+                    "title": "Storage Capacity",
+                    "type": "string",
+                    "description": "Captures the device storage capacity."
+                  },
+                  "xdm:pricingOptions": {
+                    "title": "Pricing Options",
+                    "type": "string",
+                    "meta:enum": {
+                      "installmentPlan": "Installment Plan",
+                      "retailPrice": "Retail Price"
+                    },
+                    "description": "Captures if the device will be paid for in installments or full retail price."
+                  },
+                  "xdm:earlyUpgradeEnrollment": {
+                    "title": "Early Upgrade Enrollment",
+                    "type": "boolean",
+                    "description": "Captures if the customer opts into early upgrades."
+                  },
+                  "xdm:insuranceEnrollment": {
+                    "title": "Insurance Enrollment",
+                    "type": "boolean",
+                    "description": "Captures if the customer opts into device insurance."
+                  },
+                  "xdm:planLevel": {
+                    "title": "Plan Level",
+                    "type": "string",
+                    "description": "Captures the name of the mobile plan assigned to this device."
+                  },
+                  "xdm:phoneNumber": {
+                    "title": "Phone Number",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Captures the phone number assigned to this device."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/mobile-plan-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

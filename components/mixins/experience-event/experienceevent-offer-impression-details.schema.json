@@ -25,24 +25,29 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "",
+  "description": "Offer details such as offer name, clicks, dismissals.",
   "definitions": {
     "offer-impression-details": {
       "properties": {
-        "xdm:marketing ": {
+        "xdm:offers ": {
           "type": "object",
           "properties": {
-            "xdm:offerClicks": {
+            "xdm:ID": {
+              "title": "Offer ID",
+              "type": "string",
+              "description": "Offer Identifier."
+            },
+            "xdm:clicks": {
               "title": "Offer Clicks",
               "type": "integer",
               "description": "Counts the number of times an offer has been clicked."
             },
-            "xdm:offerDismissals": {
+            "xdm:dismissals": {
               "title": "Offer Dismissals",
               "type": "integer",
               "description": "Counts the number of times an offer has been dismissed."
             },
-            "xdm:offerImpressions": {
+            "xdm:impressions": {
               "title": "Offer Impression Details",
               "type": "array",
               "items": {
@@ -54,7 +59,7 @@
               "title": "Offer Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "experimental"
+              "meta:status": "deprecated"
             }
           }
         }

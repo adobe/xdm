@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Device Configuration Details",
+  "title": "Device Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -15,16 +15,10 @@
     "industry": ["telecom"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Device configuration details such as start, save, failure, and complete.",
+  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
   "definitions": {
-    "device-details": {
+    "device-trade-in-details": {
       "properties": {
-        "xdm:deviceConfiguration": {
-          "title": "Device Configuration",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-          "description": "Extension of toolUsage data type.",
-          "meta:status": "deprecated"
-        },
         "xdm:deviceTradeInDetails": {
           "type": "object",
           "properties": {
@@ -34,18 +28,18 @@
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated"
             },
-            "xdm:deviceTradeInManufacturer": {
-              "title": "Manufacturer",
+            "xdm:originalDeviceID": {
+              "title": "Original Device ID",
               "type": "string",
-              "description": "Manufacturer of the device being traded."
+              "description": "ID for the device being traded."
             },
-            "xdm:deviceTradeInModel": {
-              "title": "Model",
+            "xdm:newDeviceID": {
+              "title": "New Device ID",
               "type": "string",
-              "description": "Model of the device being traded."
+              "description": "ID for the new device being traded for."
             },
-            "xdm:deviceTradeInValue": {
-              "title": "Value",
+            "xdm:tradeInValue": {
+              "title": "Trade In Value",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Value of the device being traded."
             }
@@ -60,9 +54,11 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/device-details"
-  }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/device-trade-in-details"
+    }
+  ],
   "meta:status": "experimental",
   "meta:createdDate" : "2021-02-02"
 }

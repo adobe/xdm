@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details
 ```
 
-
+Offer details such as offer name, clicks, dismissals.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -25,18 +25,18 @@ https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:marketing ](#xdmmarketing) | `object` | Optional | Offer Impression Details (this schema) |
+| [xdm:offers ](#xdmoffers) | `object` | Optional | Offer Impression Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:marketing 
+## xdm:offers 
 
 
-`xdm:marketing `
+`xdm:offers `
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:marketing  Type
+### xdm:offers  Type
 
 
 `object` with following properties:
@@ -44,23 +44,45 @@ https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:offerClicks`| integer | Optional |
-| `xdm:offerDismissals`| integer | Optional |
-| `xdm:offerImpressions`| array | Optional |
+| `xdm:ID`| string | Optional |
+| `xdm:clicks`| integer | Optional |
+| `xdm:dismissals`| integer | Optional |
+| `xdm:impressions`| array | Optional |
 | `xdm:offerSteps`|  | Optional |
 
 
 
-#### xdm:offerClicks
+#### xdm:ID
+##### Offer ID
+
+Offer Identifier.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:clicks
 ##### Offer Clicks
 
 Counts the number of times an offer has been clicked.
 
-`xdm:offerClicks`
+`xdm:clicks`
 * is optional
 * type: `integer`
 
-##### xdm:offerClicks Type
+##### xdm:clicks Type
 
 
 `integer`
@@ -72,16 +94,16 @@ Counts the number of times an offer has been clicked.
 
 
 
-#### xdm:offerDismissals
+#### xdm:dismissals
 ##### Offer Dismissals
 
 Counts the number of times an offer has been dismissed.
 
-`xdm:offerDismissals`
+`xdm:dismissals`
 * is optional
 * type: `integer`
 
-##### xdm:offerDismissals Type
+##### xdm:dismissals Type
 
 
 `integer`
@@ -93,17 +115,17 @@ Counts the number of times an offer has been dismissed.
 
 
 
-#### xdm:offerImpressions
+#### xdm:impressions
 ##### Offer Impression Details
 
 An array of advertisements that have been displayed to a customer.
 
-`xdm:offerImpressions`
+`xdm:impressions`
 * is optional
 * type: reference
 
 
-##### xdm:offerImpressions Type
+##### xdm:impressions Type
 
 
 Array type: reference

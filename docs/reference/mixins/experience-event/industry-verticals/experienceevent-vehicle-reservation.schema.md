@@ -182,6 +182,7 @@ Unknown type `object`.
     },
     "xdm:salesChannel": {
       "title": "Sales Channel",
+      "type": "string",
       "meta:enum": {
         "web": "Web",
         "mobile": "Mobile",

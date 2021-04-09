@@ -22,90 +22,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "AVID": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
-    }
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -262,119 +178,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       }
     }
   ]
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123458",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92318731249128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "5492309340-35430470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.27.143.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "dc:creator": "Video Author",
-        "dc:publisher": "tvonline",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "tv_highlights",
-          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "xdm:streamType": "video",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TV100",
-            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "SportTV"
-          }
-        ],
-        "xdm:firstAirDate": "2016-01-05",
-        "xmpDM:releaseDate": "2016-01-25"
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchsport",
-        "xdm:broadcastChannel": "WatchSportTV",
-        "xdm:broadcastContentType": "VOD",
-        "xdm:videoSegment": "3-10",
-        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
-        "xdm:streamFormat": "short",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "ntwu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800,
-        "xdm:downloadedPlayback": false
-      }
-    }
-  },
-  "xdm:advertising": {
-    "xdm:adAssetReference": {
-      "@id": "https://data.adobe.io/entities/ad-id/AD1",
-      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
-      "dc:title": "adNumber1",
-      "xdm:advertiser": "AdCompany",
-      "xdm:campaign": "731123",
-      "xmpDM:duration": 10
-    },
-    "xdm:adAssetViewDetails": {
-      "xdm:playerName": "miniTestApp",
-      "xdm:index": 0,
-      "xdm:adBreak": {
-        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
-        "dc:title": "Mid-Roll",
-        "xdm:offset": 44
-      }
-    },
-    "xdm:impressions": {
-      "xdm:value": 1
-    },
-    "xdm:completes": {
-      "xdm:value": 1
-    },
-    "xdm:timePlayed": {
-      "xdm:value": 10
-    },
-    "xdm:federated": {
-      "xdm:value": 0
-    }
-  }
 }
 ```
 
@@ -539,17 +342,101 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123459",
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "AVID": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
       {
-        "xdm:id": "92312743856228"
+        "xdm:id": "92318731249128"
       }
     ],
     "https://data.adobe.io/entities/namespace/10": [
       {
-        "xdm:id": "2392846240-30285628347"
+        "xdm:id": "5492309340-35430470347"
       }
     ]
   },
@@ -569,7 +456,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "xmpDM:duration": 87,
         "iptc4xmpExt:Series": {
           "iptc4xmpExt:Name": "tv_highlights",
-          "iptc4xmpExt:Identifier": "http://mychannel.com/series-identifiers/2613953"
+          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
         },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
@@ -586,12 +473,12 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
         "iptc4xmpExt:Rating": [
           {
             "iptc4xmpExt:RatingValue": "TV100",
-            "iptc4xmpExt:RatingSourceLink": "http://www.tvguide.org/ratings.htm"
+            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
           }
         ],
         "iptc4xmpExt:Creator": [
           {
-            "iptc4xmpExt:Name": "MyChannel"
+            "iptc4xmpExt:Name": "SportTV"
           }
         ],
         "xdm:firstAirDate": "2016-01-05",
@@ -599,44 +486,52 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       },
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchmytv",
-        "xdm:videoSegment": "3-10",
-        "xdm:path": "mid:show:episode:cnl.com:12345-4ce7",
-        "xdm:broadcastChannel": "WatchMyTV",
+        "xdm:playerName": "watchsport",
+        "xdm:broadcastChannel": "WatchSportTV",
         "xdm:broadcastContentType": "VOD",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
         "xdm:streamFormat": "short",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
         },
         "xdm:broadcastNetwork": "ntwu",
         "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.comFhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
         "xdm:sessionTimeout": 1800,
         "xdm:downloadedPlayback": false
-      },
-      "xdm:mediaChapter": {
-        "xdm:chapterAssetReference": {
-          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
-          "dc:title": "Chapter1",
-          "xmpDM:duration": 44
-        },
-        "xdm:chapterAssetViewDetails": {
-          "xdm:index": 0,
-          "xdm:offset": 0
-        },
-        "xdm:impressions": {
-          "xdm:value": 1
-        },
-        "xdm:completes": {
-          "xdm:value": 1
-        },
-        "xdm:timePlayed": {
-          "xdm:value": 44
-        },
-        "xdm:federated": {
-          "xdm:value": 0
-        }
       }
+    }
+  },
+  "xdm:advertising": {
+    "xdm:adAssetReference": {
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
+      "dc:title": "adNumber1",
+      "xdm:advertiser": "AdCompany",
+      "xdm:campaign": "731123",
+      "xmpDM:duration": 10
+    },
+    "xdm:adAssetViewDetails": {
+      "xdm:playerName": "miniTestApp",
+      "xdm:index": 0,
+      "xdm:adBreak": {
+        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
+      }
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 10
+    },
+    "xdm:federated": {
+      "xdm:value": 0
     }
   }
 }
@@ -866,6 +761,111 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     "xdm:customAction": {
       "xdm:actionID": "GAME_INVITATION",
       "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2392846240-30285628347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "dc:creator": "Video Author",
+        "dc:publisher": "tvonline",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "tv_highlights",
+          "iptc4xmpExt:Identifier": "http://mychannel.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "xdm:streamType": "video",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV100",
+            "iptc4xmpExt:RatingSourceLink": "http://www.tvguide.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "MyChannel"
+          }
+        ],
+        "xdm:firstAirDate": "2016-01-05",
+        "xmpDM:releaseDate": "2016-01-25"
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchmytv",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "mid:show:episode:cnl.com:12345-4ce7",
+        "xdm:broadcastChannel": "WatchMyTV",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "ntwu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.comFhls%2Fvu%2F9083406%2FVUBX0280890106690980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800,
+        "xdm:downloadedPlayback": false
+      },
+      "xdm:mediaChapter": {
+        "xdm:chapterAssetReference": {
+          "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",
+          "dc:title": "Chapter1",
+          "xmpDM:duration": 44
+        },
+        "xdm:chapterAssetViewDetails": {
+          "xdm:index": 0,
+          "xdm:offset": 0
+        },
+        "xdm:impressions": {
+          "xdm:value": 1
+        },
+        "xdm:completes": {
+          "xdm:value": 1
+        },
+        "xdm:timePlayed": {
+          "xdm:value": 44
+        },
+        "xdm:federated": {
+          "xdm:value": 0
+        }
+      }
     }
   }
 }

@@ -34,10 +34,10 @@ Used when any application process is started, such as financing, limit changes, 
 | [xdm:declined](#xdmdeclined) | Measure | Optional | Form Applications (this schema) |
 | [xdm:requestedAmount](#xdmrequestedamount) | Currency | Optional | Form Applications (this schema) |
 | [xdm:status](#xdmstatus) | `enum` | Optional | Form Applications (this schema) |
-| [xdm:statusUpdate](#xdmstatusupdate) | Measure | Optional | Form Applications (this schema) |
+| [xdm:statusUpdate](#xdmstatusupdate) | `string` | Optional | Form Applications (this schema) |
 | [xdm:steps](#xdmsteps) | Tool Usage | Optional | Form Applications (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Form Applications (this schema) |
-| [xdm:underReview](#xdmunderreview) | Measure | Optional | Form Applications (this schema) |
+| [xdm:underReview](#xdmunderreview) | `boolean` | Optional | Form Applications (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
@@ -166,13 +166,14 @@ Captured when the status for an application changes, either from an online or of
 
 `xdm:statusUpdate`
 * is optional
-* type: Measure
+* type: `string`
 * defined in this schema
 
 ### xdm:statusUpdate Type
 
 
-* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`string`
+
 
 
 
@@ -224,13 +225,13 @@ Captured when a visitor application has been placed under review.
 
 `xdm:underReview`
 * is optional
-* type: Measure
+* type: `boolean`
 * defined in this schema
 
 ### xdm:underReview Type
 
 
-* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+`boolean`
 
 
 

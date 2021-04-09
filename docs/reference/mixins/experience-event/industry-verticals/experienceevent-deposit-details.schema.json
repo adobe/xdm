@@ -26,15 +26,25 @@
                 "xdm:personalFinances": {
                     "type": "object",
                     "properties": {
-                        "xdm:deposit": {
-                            "title": "Deposit",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                            "description": "Extension of transaction data type."
+                        "xdm:deposits": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:transaction": {
+                                    "title": "Deposit Transaction",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                                    "description": "Extension of transaction data type."
+                                },
+                                "xdm:account": {
+                                    "title": "Deposit Account",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                                    "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+                                }
+                            }
                         },
-                        "xdm:depositAccount": {
-                            "title": "Deposit Account",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                            "description": "Extension of financialAccount data type."
+                        "xdm:mobileDeposit": {
+                            "title": "Mobile Deposit",
+                            "type": "boolean",
+                            "description": "Indicator for whether the deposit was done through mobile or not."
                         }
                     }
                 }
@@ -50,28 +60,22 @@
     "examples": [
         {
             "xdm:personalFinances": {
-                "xdm:deposit": {
+                "xdm:deposits": {
                     "xdm:transaction": {
                         "xdm:balanceTransfer": "",
                         "xdm:formApplicationFee": "",
                         "xdm:toolUsageTransaction": "",
-                        "xdm:transactionAmount": "67.85",
+                        "xdm:transactionAmount": {
+                            "xdm:amount": 61.35,
+                            "xdm:currencyCode": "USD",
+                            "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+                        },
                         "xdm:transactionID": "T10291832",
-                        "xdm:transactionDate": "2021-01-07",
+                        "xdm:transactionDate": "2020-04-11T05:05:05Z",
                         "xdm:transactionType": "transfer"
                     }
                 },
-                "xdm:depositAccount": {
-                    "xdm:financial-account": {
-                        "xdm:balanceTransferAccount": "",
-                        "xdm:currentAccountBalance": "678.93",
-                        "xdm:financialAccountID": "1019283724",
-                        "xdm:financialAccountName": "Personal Checking",
-                        "xdm:financialAccountOwner": "TBD",
-                        "xdm:financialAccountType": "checking",
-                        "xdm:openedDate": "2021-02-17"
-                    }
-                }
+                "xdm:mobileDeposit": true
             }
         }
     ]

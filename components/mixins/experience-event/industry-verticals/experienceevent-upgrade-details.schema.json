@@ -28,7 +28,7 @@
   "definitions": {
     "upgrade-details": {
       "properties": {
-        "xdm:upgrade": {
+        "xdm:upgrades": {
           "type": "object",
           "properties": {
             "xdm:upgradeSteps": {

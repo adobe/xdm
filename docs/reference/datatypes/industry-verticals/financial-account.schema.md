@@ -28,9 +28,7 @@ Financial account details, such as owners, balances, and types.
 | [xdm:currentAccountBalance](#xdmcurrentaccountbalance) | Currency | Optional | Financial Account (this schema) |
 | [xdm:financialAccountID](#xdmfinancialaccountid) | `string` | Optional | Financial Account (this schema) |
 | [xdm:financialAccountName](#xdmfinancialaccountname) | `string` | Optional | Financial Account (this schema) |
-| [xdm:financialAccountOwner](#xdmfinancialaccountowner) | Personal Contact Details | Optional | Financial Account (this schema) |
 | [xdm:financialAccountType](#xdmfinancialaccounttype) | `enum` | Optional | Financial Account (this schema) |
-| [xdm:openedDate](#xdmopeneddate) | `string` | Optional | Financial Account (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:currentAccountBalance
@@ -92,32 +90,6 @@ Name assigned to the financial account.
 
 
 
-## xdm:financialAccountOwner
-### Financial Account Owners
-
-Array of the owner(s) of the selected financial account. Extension of the personal profile details data type.
-
-`xdm:financialAccountOwner`
-* is optional
-* type: Personal Contact Details
-
-* defined in this schema
-
-### xdm:financialAccountOwner Type
-
-
-Array type: Personal Contact Details
-
-All items must be of the type:
-* [Personal Contact Details](../../mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
-
-
-
-
-
-
-
-
 ## xdm:financialAccountType
 ### Financial Account Type
 
@@ -137,27 +109,6 @@ The value of this property **must** be equal to one of the [known values below](
 | `savings` |  |
 | `retirement` |  |
 | `investment` |  |
-
-
-
-
-## xdm:openedDate
-### Financial Account Open Date
-
-Date which the account was opened.
-
-`xdm:openedDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:openedDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
 
 
 

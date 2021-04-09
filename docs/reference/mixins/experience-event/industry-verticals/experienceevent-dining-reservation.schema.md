@@ -74,55 +74,55 @@ Unknown type `object`.
     "xdm:cuisine": {
       "title": "Cuisine",
       "type": "string",
-      "enum": [
-        "Chinese",
-        "Steak",
-        "Sushi",
-        "Asian",
-        "Vietnamese",
-        "European",
-        "French",
-        "Italian",
-        "Burgers",
-        "Japanese",
-        "Barbecue",
-        "Mediterranean",
-        "Indian",
-        "Grill",
-        "Seafood",
-        "Steakhouse",
-        "Mexican",
-        "Greek",
-        "American",
-        "Thai"
-      ],
+      "meta:enum": {
+        "chinese": "Chinese",
+        "steak": "Steak",
+        "sushi": "Sushi",
+        "asian": "Asian",
+        "vietnamese": "Vietnamese",
+        "european": "European",
+        "french": "French",
+        "italian": "Italian",
+        "burgers": "Burgers",
+        "japanese": "Japanese",
+        "barbecue": "Barbecue",
+        "mediterranean": "Mediterranean",
+        "indian": "Indian",
+        "grill": "Grill",
+        "seafood": "Seafood",
+        "steakhouse": "Steakhouse",
+        "mexican": "Mexican",
+        "greek": "Greek",
+        "american": "American",
+        "thai": "Thai"
+      },
       "description": "Type of restaurant cuisine."
+    },
+    "xdm:restaurantID": {
+      "title": "Restaurant ID",
+      "type": "string",
+      "description": "Identifier for the restaurant/dining location."
     },
     "xdm:deliveryPartners": {
       "title": "Delivery Partners",
       "type": "string",
-      "enum": [
-        "GrubHub",
-        "UberEats",
-        "DoorDash",
-        "Other"
-      ],
+      "meta:enum": {
+        "grubhub": "GrubHub",
+        "ubereats": "UberEats",
+        "doordash": "DoorDash",
+        "other": "Other"
+      },
       "description": "Delivery partners available from the restaurant."
-    },
-    "xdm:location": {
-      "title": "Dining Location",
-      "$ref": "https://ns.adobe.com/xdm/context/place",
-      "description": "Physical location for the restaurant."
     },
     "xdm:diningOptions": {
       "title": "Dining Options",
       "type": "string",
-      "enum": [
-        "Outdoor Dining",
-        "Delivery",
-        "Curbside",
-        "Takeout"
-      ],
+      "meta:enum": {
+        "outdoorSeating": "Outdoor Seating",
+        "delivery": "Delivery",
+        "curbside": "Curbside",
+        "takeout": "Takeout"
+      },
       "description": "Delivery and dining options available from the restaurant."
     },
     "xdm:groupReservation": {
@@ -143,12 +143,12 @@ Unknown type `object`.
     "xdm:priceCategory": {
       "title": "Price Category",
       "type": "string",
-      "enum": [
-        "$",
-        "$$",
-        "$$$",
-        "$$$$"
-      ],
+      "meta:enum": {
+        "$": "$",
+        "$$": "$$",
+        "$$$": "$$$",
+        "$$$$": "$$$$"
+      },
       "description": "Price category for the reservation being made."
     },
     "xdm:reservationTime": {
@@ -165,13 +165,79 @@ Unknown type `object`.
     "xdm:status": {
       "title": "Status",
       "type": "string",
-      "enum": [
-        "cancelled",
-        "confirmed",
-        "hold",
-        "pending"
-      ],
+      "meta:enum": {
+        "cancelled": "Cancelled",
+        "confirmed": "Confirmed",
+        "hold": "Hold",
+        "pending": "Pending"
+      },
       "description": "The status of the dining reservation."
+    },
+    "xdm:cancellation": {
+      "title": "Cancellation",
+      "type": "integer",
+      "description": "Tracked when a reservation has been cancelled."
+    },
+    "xdm:confirmationNumber": {
+      "title": "Confirmation Number",
+      "type": "string",
+      "description": "Tracks the reservation confirmation number/identifier."
+    },
+    "xdm:created": {
+      "title": "Created",
+      "type": "integer",
+      "description": "Tracked when a reservation has been created."
+    },
+    "xdm:currencyCode": {
+      "title": "Currency Code",
+      "type": "string",
+      "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "xdm:ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Tracks the reservation number/identifier."
+    },
+    "xdm:length": {
+      "title": "Length",
+      "type": "integer",
+      "description": "Tracks the total number of days for a reservation."
+    },
+    "xdm:modification": {
+      "title": "Modification",
+      "type": "integer",
+      "description": "Captured when a reservation has been modified."
+    },
+    "xdm:modificationDate": {
+      "title": "Modification Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Tracks when a reservation has been modified."
+    },
+    "xdm:numberOfAdults": {
+      "title": "Number of Adults",
+      "type": "integer",
+      "description": "Captures the number of adults associated with the reservation."
+    },
+    "xdm:numberOfChildren": {
+      "title": "Number of Children",
+      "type": "integer",
+      "description": "Captures the number of children associated with the reservation."
+    },
+    "xdm:purpose": {
+      "title": "Purpose",
+      "type": "string",
+      "meta:enum": {
+        "business": "Business",
+        "personal": "Personal"
+      },
+      "description": "Tracks the purpose of the reservation, typically either business or personal."
+    },
+    "xdm:type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Records the type of reservation being placed."
     }
   },
   "simpletype": "`object`"

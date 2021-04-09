@@ -81,6 +81,11 @@ Unknown type `object`.
   "type": "object",
   "description": "Captures all details specific to an individual vehicle reservation",
   "properties": {
+    "xdm:ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Tracks the reservation number/identifier."
+    },
     "xdm:agentID": {
       "title": "Agent ID",
       "type": "string",
@@ -160,10 +165,10 @@ Unknown type `object`.
       "type": "boolean",
       "description": "Yes/no if the booking is pre-paid"
     },
-    "xdm:productID": {
-      "title": "Product ID",
+    "xdm:vin": {
+      "title": "Vehicle Identification Number",
       "type": "string",
-      "description": "The product ID associated with the booking."
+      "description": "Captures the vehicle identification number (VIN) of the vehicle being rented."
     },
     "xdm:refundable": {
       "title": "Refundable",
@@ -177,42 +182,112 @@ Unknown type `object`.
     },
     "xdm:salesChannel": {
       "title": "Sales Channel",
-      "type": "string",
-      "enum": [
-        "Web",
-        "Mobile",
-        "Mobile App",
-        "Call Center",
-        "Agent",
-        "Third-Party"
-      ],
+      "meta:enum": {
+        "web": "Web",
+        "mobile": "Mobile",
+        "mobileApp": "Mobile App",
+        "callCenter": "Call Center",
+        "agent": "Agent",
+        "thirdParty": "Third-Party"
+      },
       "description": "Sales channel from which the reservation was booked."
     },
     "xdm:status": {
       "title": "Status",
       "type": "string",
-      "enum": [
-        "cancelled",
-        "confirmed",
-        "hold",
-        "pending"
-      ],
+      "meta:enum": {
+        "cancelled": "Cancelled",
+        "confirmed": "Confirmed",
+        "hold": "Hold",
+        "pending": "Pending"
+      },
       "description": "The status of the vehicle reservation."
     },
     "xdm:vehicleClass": {
       "title": "Vehicle Class",
       "type": "string",
-      "enum": [
-        "economy",
-        "compact",
-        "midsize",
-        "fullsize",
-        "standard",
-        "suv",
-        "premium",
-        "minivan"
-      ],
+      "meta:enum": {
+        "economy": "Economy",
+        "compact": "Compact",
+        "midsize": "Midsize",
+        "fullsize": "Fullsize",
+        "standard": "Standard",
+        "suv": "SUV",
+        "premium": "Premium",
+        "minivan": "Minivan"
+      },
       "description": "The class/category of vehicle being reserved."
+    },
+    "xdm:cancellation": {
+      "title": "Cancellation",
+      "type": "integer",
+      "description": "Tracked when a reservation has been cancelled."
+    },
+    "xdm:confirmationNumber": {
+      "title": "Confirmation Number",
+      "type": "string",
+      "description": "Tracks the reservation confirmation number/identifier."
+    },
+    "xdm:created": {
+      "title": "Created",
+      "type": "integer",
+      "description": "Tracked when a reservation has been created."
+    },
+    "xdm:currencyCode": {
+      "title": "Currency Code",
+      "type": "string",
+      "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "xdm:length": {
+      "title": "Length",
+      "type": "integer",
+      "description": "Tracks the total number of days for a reservation."
+    },
+    "xdm:modification": {
+      "title": "Modification",
+      "type": "integer",
+      "description": "Captured when a reservation has been modified."
+    },
+    "xdm:modificationDate": {
+      "title": "Modification Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Tracks when a reservation has been modified."
+    },
+    "xdm:numberOfAdults": {
+      "title": "Number of Adults",
+      "type": "integer",
+      "description": "Captures the number of adults associated with the reservation."
+    },
+    "xdm:numberOfChildren": {
+      "title": "Number of Children",
+      "type": "integer",
+      "description": "Captures the number of children associated with the reservation."
+    },
+    "xdm:purpose": {
+      "title": "Purpose",
+      "type": "string",
+      "meta:enum": {
+        "business": "Business",
+        "personal": "Personal"
+      },
+      "description": "Tracks the purpose of the reservation, typically either business or personal."
+    },
+    "xdm:tripType": {
+      "title": "Trip Type",
+      "type": "string",
+      "meta:enum": {
+        "roundtrip": "Roundtrip",
+        "oneWay": "One Way",
+        "multiCity": "Multi-City"
+      },
+      "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+    },
+    "xdm:type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Records the type of reservation being placed."
     }
   },
   "simpletype": "`object`"

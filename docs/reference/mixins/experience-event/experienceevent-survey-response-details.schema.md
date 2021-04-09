@@ -15,22 +15,7 @@ https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details
 ```json
 {
   "xdm:surveyResponse": {
-    "xdm:surveyID": "",
-    "xdm:surveySteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "calculator",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    }
+    "xdm:surveyID": ""
   }
 }
 ```

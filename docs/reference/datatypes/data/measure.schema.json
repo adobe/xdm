@@ -13,6 +13,7 @@
     "description": "A measure is a concrete quantifiable data point of a particular metric.\n\nIt has a value, and a unique identifier.\n",
     "definitions": {
         "measure": {
+            "description": "Measure datatypes are treated as serialized events, by which an event is tracked with an ID and a value.",
             "properties": {
                 "xdm:id": {
                     "title": "Unique Identifier",

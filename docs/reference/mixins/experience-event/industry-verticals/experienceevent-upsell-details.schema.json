@@ -29,13 +29,14 @@
     "definitions": {
         "upsell-details": {
             "properties": {
-                "xdm:upsell": {
+                "xdm:upsells": {
                     "type": "object",
                     "properties": {
                         "xdm:upsellSteps": {
                             "title": "Upsell Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                            "description": "Extension of toolUsage data type."
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
                         },
                         "xdm:upsellOffer": {
                             "title": "Upsell Offer",
@@ -60,7 +61,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:upsell": {
+            "xdm:upsells": {
                 "xdm:upsellOffer": {
                     "xdm:Offer Details": {}
                 },

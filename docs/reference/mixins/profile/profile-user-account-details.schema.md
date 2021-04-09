@@ -46,8 +46,10 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
 | `xdm:accountType`| string | Optional |
+| `xdm:alertStatus`| boolean | Optional |
+| `xdm:autopayStatus`| boolean | Optional |
 | `xdm:contactDetails`|  | Optional |
-| `xdm:preferences`| array | Optional |
+| `xdm:productPreferences`| array | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:status`| string | Optional |
 
@@ -95,6 +97,46 @@ Captures the user account type, if applicable.
 
 
 
+#### xdm:alertStatus
+##### Alert Status
+
+Captures whether or not alerts have been enabled for the account.
+
+`xdm:alertStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:alertStatus Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:autopayStatus
+##### Autopay Status
+
+Captures whether or not the account has been enrolled in autopay.
+
+`xdm:autopayStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:autopayStatus Type
+
+
+`boolean`
+
+
+
+
+
+
+
 #### xdm:contactDetails
 ##### Contact Details
 
@@ -115,17 +157,17 @@ Extension of the Personal Profile data type.
 
 
 
-#### xdm:preferences
-##### Preferences
+#### xdm:productPreferences
+##### Product Preferences
 
-M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. 
+Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc.
 
-`xdm:preferences`
+`xdm:productPreferences`
 * is optional
 * type: `string[]`
 
 
-##### xdm:preferences Type
+##### xdm:productPreferences Type
 
 
 Array type: `string[]`

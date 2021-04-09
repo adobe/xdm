@@ -14,20 +14,25 @@
     "definitions": {
         "impressions": {
             "properties": {
-                "xdm:impressionDisplays": {
-                    "title": "Impression Displays",
+                "xdm:displays": {
+                    "title": "Displays",
                     "type": "integer",
                     "description": "Counts the number of times an impression item has been displayed to a visitor."
                 },
-                "xdm:impressionID": {
-                    "title": "Impression ID",
+                "xdm:ID": {
+                    "title": "ID",
                     "type": "string",
                     "description": "Tracks the ID of an item in an impression array."
                 },
-                "xdm:impressionType": {
-                    "title": "Impression Type",
+                "xdm:type": {
+                    "title": "Type",
                     "type": "string",
                     "description": "Tracks the type of impression in an impression array."
+                },
+                "xdm:selected": {
+                    "title": "Selected",
+                    "type": "integer",
+                    "description": "Tracks when a given item in an impression array has been selected or clicked."
                 }
             }
         }

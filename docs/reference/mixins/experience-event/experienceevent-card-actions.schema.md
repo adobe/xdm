@@ -52,233 +52,102 @@ Card action details such as card type as well as activation and lock status.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:cardActivated`| integer | Optional |
-| `xdm:cardActivationStart`| integer | Optional |
-| `xdm:cardCancelled`| integer | Optional |
-| `xdm:cardControlsLocked`| integer | Optional |
-| `xdm:cardControlsUnlocked`| integer | Optional |
-| `xdm:cardLocked`| integer | Optional |
-| `xdm:cardOrderNew`| integer | Optional |
-| `xdm:cardOrderType`| string | Optional |
-| `xdm:cardType`| string | Optional |
-| `xdm:cardUnlocked`| integer | Optional |
+| `xdm:cardActions`| object | Optional |
 
 
 
-#### xdm:cardActivated
-##### Card Activated Success
+#### xdm:cardActions
 
-Tracks when a card has been successfully activated.
+undefined
 
-`xdm:cardActivated`
+`xdm:cardActions`
 * is optional
-* type: `integer`
-
-##### xdm:cardActivated Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardActivationStart
-##### Card Activation Started
-
-Tracks when a card activation process has been started.
-
-`xdm:cardActivationStart`
-* is optional
-* type: `integer`
-
-##### xdm:cardActivationStart Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardCancelled
-##### Card Cancelled
-
-Tracks when a card has been cancelled.
-
-`xdm:cardCancelled`
-* is optional
-* type: `integer`
-
-##### xdm:cardCancelled Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardControlsLocked
-##### Card Controls Locked
-
-Tracks when a card controls have been locked.
-
-`xdm:cardControlsLocked`
-* is optional
-* type: `integer`
-
-##### xdm:cardControlsLocked Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardControlsUnlocked
-##### Card Controls Unlocked
-
-Tracks when a card controls have been unlocked.
-
-`xdm:cardControlsUnlocked`
-* is optional
-* type: `integer`
-
-##### xdm:cardControlsUnlocked Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardLocked
-##### Card Locked
-
-Tracks when a card has been locked.
-
-`xdm:cardLocked`
-* is optional
-* type: `integer`
-
-##### xdm:cardLocked Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardOrderNew
-##### Order New Card
-
-Tracks when a card has been requested.
-
-`xdm:cardOrderNew`
-* is optional
-* type: `integer`
-
-##### xdm:cardOrderNew Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:cardOrderType
-##### Card Order Type
-
-Tracks the type of card order associated with a card order event.
-
-`xdm:cardOrderType`
-* is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmpersonalfinances-known-values).
-
-##### xdm:cardOrderType Known Values
-| Value | Description |
-|-------|-------------|
-| `new` |  |
-| `lost` |  |
-| `stolen` |  |
-| `never received` |  |
-| `damaged` |  |
-
-
-
-
-
-
-#### xdm:cardType
-##### Card Type
-
-Tracks the type of card associated with an event.
-
-`xdm:cardType`
-* is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmpersonalfinances-known-values).
-
-##### xdm:cardType Known Values
-| Value | Description |
-|-------|-------------|
-| `credit` |  |
-| `debit` |  |
-| `prepaid` |  |
-| `paypal` |  |
-| `atm` |  |
-| `virtual` |  |
-| `hsa` |  |
-| `fsa` |  |
-
-
-
-
-
-
-#### xdm:cardUnlocked
-##### Card Unlocked
-
-Tracks when a card has been unlocked.
-
-`xdm:cardUnlocked`
-* is optional
-* type: `integer`
-
-##### xdm:cardUnlocked Type
-
-
-`integer`
-
+* type: `object`
+
+##### xdm:cardActions Type
+
+Unknown type `object`.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "xdm:cardID": {
+      "title": "Card ID",
+      "type": "string",
+      "description": "Tracks the identifier for the card being activated.  This might be different from the card number."
+    },
+    "xdm:cardActivated": {
+      "title": "Card Activated Success",
+      "type": "integer",
+      "description": "Tracks when a card has been successfully activated."
+    },
+    "xdm:cardActivationStart": {
+      "title": "Card Activation Started",
+      "type": "integer",
+      "description": "Tracks when a card activation process has been started."
+    },
+    "xdm:cardCancelled": {
+      "title": "Card Cancelled",
+      "type": "integer",
+      "description": "Tracks when a card has been cancelled."
+    },
+    "xdm:cardControlsLocked": {
+      "title": "Card Controls Locked",
+      "type": "integer",
+      "description": "Tracks when a card controls have been locked."
+    },
+    "xdm:cardControlsUnlocked": {
+      "title": "Card Controls Unlocked",
+      "type": "integer",
+      "description": "Tracks when a card controls have been unlocked."
+    },
+    "xdm:cardLocked": {
+      "title": "Card Locked",
+      "type": "integer",
+      "description": "Tracks when a card has been locked."
+    },
+    "xdm:cardOrderNew": {
+      "title": "Order New Card",
+      "type": "integer",
+      "description": "Tracks when a card has been requested."
+    },
+    "xdm:cardOrderType": {
+      "title": "Card Order Type",
+      "type": "string",
+      "enum": [
+        "new",
+        "lost",
+        "stolen",
+        "never received",
+        "damaged"
+      ],
+      "description": "Tracks the type of card order associated with a card order event."
+    },
+    "xdm:cardType": {
+      "title": "Card Type",
+      "type": "string",
+      "enum": [
+        "credit",
+        "debit",
+        "prepaid",
+        "paypal",
+        "atm",
+        "virtual",
+        "hsa",
+        "fsa"
+      ],
+      "description": "Tracks the type of card associated with an event."
+    },
+    "xdm:cardUnlocked": {
+      "title": "Card Unlocked",
+      "type": "integer",
+      "description": "Tracks when a card has been unlocked."
+    }
+  },
+  "simpletype": "`object`"
+}
+```
 
 
 

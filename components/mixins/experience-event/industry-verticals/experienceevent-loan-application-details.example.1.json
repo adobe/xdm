@@ -1,0 +1,19 @@
+{
+  "xdm:personalFinances": {
+    "xdm:loanApplicationDetails": {
+      "xdm:loan": {
+        "xdm:form-applications": {
+          "xdm:formApplicationApproved": "",
+          "xdm:formApplicationDeclined": "",
+          "xdm:formApplicationID": "F102931032",
+          "xdm:formApplicationRequestedAmount": "2000.00",
+          "xdm:formApplicationStatus": "initiated",
+          "xdm:formApplicationStatusUpdate": "",
+          "xdm:formApplicationType": "loan",
+          "xdm:formApplicationUnderReview": "",
+          "xdm:formApplicationUsage": ""
+        }
+      }
+    }
+  }
+}

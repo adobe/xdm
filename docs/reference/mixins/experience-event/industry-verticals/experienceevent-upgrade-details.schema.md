@@ -14,7 +14,7 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 ## Upgrade Details Example
 ```json
 {
-  "xdm:upgrade": {
+  "xdm:upgrades": {
     "xdm:upgradeOffer": {
       "xdm:Offer Details": {}
     },
@@ -33,18 +33,18 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:upgrade](#xdmupgrade) | `object` | Optional | Upgrade Details (this schema) |
+| [xdm:upgrades](#xdmupgrades) | `object` | Optional | Upgrade Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:upgrade
+## xdm:upgrades
 
 
-`xdm:upgrade`
+`xdm:upgrades`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:upgrade Type
+### xdm:upgrades Type
 
 
 `object` with following properties:

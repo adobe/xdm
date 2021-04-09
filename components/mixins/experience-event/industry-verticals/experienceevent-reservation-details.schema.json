@@ -105,10 +105,10 @@
             "xdm:purpose": {
               "title": "Purpose",
               "type": "string",
-              "enum": [
-                "business",
-                "personal"
-              ],
+              "meta:enum": {
+                "business": "Business",
+                "personal": "Personal"
+              },
               "description": "Tracks the purpose of the reservation, typically either business or personal."
             },
             "xdm:rackrate": {
@@ -130,11 +130,11 @@
             "xdm:triptype": {
               "title": "Trip Type",
               "type": "string",
-              "enum": [
-                "roundtrip",
-                "one-way",
-                "multi-city"
-              ],
+              "meta:enum": {
+                "roundtrip": "Roundtrip",
+                "oneWay": "One Way",
+                "multiCity": "Multi-City"
+              },
               "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
             },
             "xdm:type": {

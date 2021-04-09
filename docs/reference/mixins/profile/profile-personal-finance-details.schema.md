@@ -18,12 +18,6 @@ Personal finance details such as financial account details, credit score, and ta
     "xdm:accountCardsTotal": 3,
     "xdm:creditScore": 760,
     "xdm:employmentStatus": "full time",
-    "xdm:filingJointly": true,
-    "xdm:filingSeparately": false,
-    "xdm:hasAssignedBeneficiary": true,
-    "xdm:isHeadOfHousehold": true,
-    "xdm:singleFiler": false,
-    "xdm:taxBracket": "TBD",
     "xdm:assignedBeneficiary": [
       {
         "xdm:person": {
@@ -65,18 +59,40 @@ Personal finance details such as financial account details, credit score, and ta
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:ID`| array | Optional |
 | `xdm:accountCardsTotal`| integer | Optional |
 | `xdm:assignedBeneficiary`| array | Optional |
-| `xdm:creditScore`| integer | Optional |
+| `xdm:creditScores`| array | Optional |
 | `xdm:employmentStatus`| string | Optional |
-| `xdm:filingJointly`| boolean | Optional |
-| `xdm:filingSeparately`| boolean | Optional |
-| `xdm:financialAccount`| array | Optional |
 | `xdm:hasAssignedBeneficiary`| boolean | Optional |
-| `xdm:householdIncome`|  | Optional |
-| `xdm:isHeadOfHousehold`| boolean | Optional |
-| `xdm:singleFiler`| boolean | Optional |
-| `xdm:taxBracket`| string | Optional |
+
+
+
+#### xdm:ID
+##### ID
+
+Array of financial account IDs assigned to the user.
+
+`xdm:ID`
+* is optional
+* type: `string[]`
+
+
+##### xdm:ID Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
 
 
 
@@ -128,19 +144,102 @@ All items must be of the type:
 
 
 
-#### xdm:creditScore
-##### Credit Score
+#### xdm:creditScores
 
-Refers to a number between 300-850 that depicts a consumer's creditworthiness. 
+undefined
 
-`xdm:creditScore`
+`xdm:creditScores`
+* is optional
+* type: `object[]`
+
+
+##### xdm:creditScores Type
+
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:provider`| string | Optional |
+| `xdm:score`| integer | Optional |
+| `xdm:scoreDate`| string | Optional |
+
+
+
+#### xdm:provider
+##### Credit Bureau
+
+Refers to the credit bureau responsible for providing the credit score.
+
+`xdm:provider`
+* is optional
+* type: `string`
+
+##### xdm:provider Type
+
+
+`string`
+
+
+
+##### xdm:provider Known Values
+| Value | Description |
+|-------|-------------|
+| `experian` | Experian |
+| `equifax` | Equifax |
+| `transunion` | TransUnion |
+
+
+
+
+
+
+#### xdm:score
+##### Score
+
+Refers to a number between 300-850 that depicts a consumer's creditworthiness.
+
+`xdm:score`
 * is optional
 * type: `integer`
 
-##### xdm:creditScore Type
+##### xdm:score Type
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:scoreDate
+##### Score Date
+
+Date when the score was reported.
+
+`xdm:scoreDate`
+* is optional
+* type: `string`
+
+##### xdm:scoreDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
 
 
 
@@ -156,86 +255,24 @@ Tracks the employment status of the user.
 
 `xdm:employmentStatus`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmpersonalfinances-known-values).
+##### xdm:employmentStatus Type
+
+
+`string`
+
+
 
 ##### xdm:employmentStatus Known Values
 | Value | Description |
 |-------|-------------|
-| `full time` |  |
-| `part time` |  |
-| `temporary` |  |
-| `self employed` |  |
-| `retired` |  |
-| `unemployed` |  |
-
-
-
-
-
-
-#### xdm:filingJointly
-##### Filing Jointly
-
-Refers to a filing status for married couples that have wed before the end of the tax year.
-
-`xdm:filingJointly`
-* is optional
-* type: `boolean`
-
-##### xdm:filingJointly Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:filingSeparately
-##### Filing Separately
-
-Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.
-
-`xdm:filingSeparately`
-* is optional
-* type: `boolean`
-
-##### xdm:filingSeparately Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:financialAccount
-##### financeAccountId
-
-Financial account IDs assigned to the user, and array of Financial Account Details data type.
-
-`xdm:financialAccount`
-* is optional
-* type: reference
-
-
-##### xdm:financialAccount Type
-
-
-Array type: reference
-
-All items must be of the type:
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
-
-
-
-
+| `fullTime` | Full Time |
+| `partTime` | Part Time |
+| `temporary` | Temporary |
+| `selfEmployed` | Self-Employed |
+| `retired` | Retired |
+| `unemployed` | Unemployed |
 
 
 
@@ -255,87 +292,6 @@ Flag determining if the account has a beneficiary assigned.
 
 
 `boolean`
-
-
-
-
-
-
-
-#### xdm:householdIncome
-##### Household Income
-
-Refers to the combined gross income of all members of a household.
-
-`xdm:householdIncome`
-* is optional
-* type: reference
-
-##### xdm:householdIncome Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
-
-
-
-
-
-
-
-#### xdm:isHeadOfHousehold
-##### Head of Household
-
-Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.
-
-`xdm:isHeadOfHousehold`
-* is optional
-* type: `boolean`
-
-##### xdm:isHeadOfHousehold Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:singleFiler
-##### Single Filer
-
-Refers to a taxpayer who is unmarried and does not qualify for any other filing status.
-
-`xdm:singleFiler`
-* is optional
-* type: `boolean`
-
-##### xdm:singleFiler Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:taxBracket
-##### Tax Bracket
-
-Refers to a range of incomes subject to a certain income tax rate.
-
-`xdm:taxBracket`
-* is optional
-* type: `string`
-
-##### xdm:taxBracket Type
-
-
-`string`
-
 
 
 

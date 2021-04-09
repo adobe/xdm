@@ -35,11 +35,11 @@
               "title": "Upgrade Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-			  "meta:status": "deprecated"
+              "meta:status": "deprecated"
             },
-            "xdm:upgradeOffer": {
-              "title": "Upgrade Offer",
-              "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
+            "xdm:upgradeImpressions": {
+              "title": "Upgrade Impressions",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
               "description": "Extension of offer details data type."
             },
             "xdm:upgradeTransaction": {

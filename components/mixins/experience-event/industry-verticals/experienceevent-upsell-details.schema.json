@@ -34,11 +34,11 @@
               "title": "Upsell Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-			  "meta:status": "deprecated"
+              "meta:status": "deprecated"
             },
             "xdm:upsellOffer": {
-              "title": "Upsell Offer",
-              "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
+              "title": "Upsell Impressions",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
               "description": "Extension of offer details data type."
             },
             "xdm:upsellTransaction": {

@@ -30,7 +30,7 @@
     "definitions": {
         "upgrade-details": {
             "properties": {
-                "xdm:upgrade": {
+                "xdm:upgrades": {
                     "type": "object",
                     "properties": {
                         "xdm:upgradeSteps": {
@@ -62,7 +62,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:upgrade": {
+            "xdm:upgrades": {
                 "xdm:upgradeOffer": {
                     "xdm:Offer Details": {}
                 },

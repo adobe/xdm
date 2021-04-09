@@ -15,7 +15,7 @@ Deposit details such as ID, type, and amount.
 ```json
 {
   "xdm:personalFinances": {
-    "xdm:deposit": {
+    "xdm:deposits": {
       "xdm:transaction": {
         "xdm:balanceTransfer": "",
         "xdm:formApplicationFee": "",
@@ -58,20 +58,20 @@ Deposit details such as ID, type, and amount.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:deposit`| object | Optional |
+| `xdm:deposits`| object | Optional |
 | `xdm:mobileDeposit`| boolean | Optional |
 
 
 
-#### xdm:deposit
+#### xdm:deposits
 
 undefined
 
-`xdm:deposit`
+`xdm:deposits`
 * is optional
 * type: `object`
 
-##### xdm:deposit Type
+##### xdm:deposits Type
 
 Unknown type `object`.
 

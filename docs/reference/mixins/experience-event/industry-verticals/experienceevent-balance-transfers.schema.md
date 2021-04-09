@@ -64,65 +64,46 @@ Used for financial account balance transfers between accounts.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:accountFrom`|  | Optional |
-| `xdm:accountTo`|  | Optional |
-| `xdm:transaction`|  | Optional |
+| `xdm:balanceTransfers`| object | Optional |
 
 
 
-#### xdm:accountFrom
-##### Account From
+#### xdm:balanceTransfers
 
-Extension of financialAccount data type.  Details the account fr which the balance is being transferred.
+Captures the details of balance transfers between accounts.
 
-`xdm:accountFrom`
+`xdm:balanceTransfers`
 * is optional
-* type: reference
+* type: `object`
 
-##### xdm:accountFrom Type
+##### xdm:balanceTransfers Type
 
+Unknown type `object`.
 
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
-
-
-
-
-
-
-
-#### xdm:accountTo
-##### Account To
-
-Extension of financialAccount data type.  Details the account to which the balance is being transferred.
-
-`xdm:accountTo`
-* is optional
-* type: reference
-
-##### xdm:accountTo Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
-
-
-
-
-
-
-
-#### xdm:transaction
-##### Transaction
-
-Extension of transaction data type.
-
-`xdm:transaction`
-* is optional
-* type: reference
-
-##### xdm:transaction Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
+```json
+{
+  "type": "object",
+  "description": "Captures the details of balance transfers between accounts.",
+  "properties": {
+    "xdm:transaction": {
+      "title": "Transaction",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+      "description": "Extension of transaction data type."
+    },
+    "xdm:accountTo": {
+      "title": "Account To",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+      "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+    },
+    "xdm:accountFrom": {
+      "title": "Account From",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+      "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred."
+    }
+  },
+  "simpletype": "`object`"
+}
+```
 
 
 

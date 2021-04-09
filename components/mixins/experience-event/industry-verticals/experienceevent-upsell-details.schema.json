@@ -36,7 +36,7 @@
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated"
             },
-            "xdm:upsellOffer": {
+            "xdm:upsellImpressions": {
               "title": "Upsell Impressions",
               "type": "array",
               "items": {

@@ -1,6 +1,6 @@
 # Stabilization Candidates
 
-_Generated on **Wed Apr 07 2021 22:32:32 GMT+0000 (UTC)**_
+_Generated on **Fri Apr 09 2021 00:01:43 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
@@ -13,7 +13,7 @@ _Generated on **Wed Apr 07 2021 22:32:32 GMT+0000 (UTC)**_
 
 |Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|
 |------|------|--------------------|-----------------------|----------------------------------|
-|[schemas/descriptors/relationship/descriptorRelationship](schemas/descriptors/relationship/descriptorRelationship.schema.json)|experimental|**46**|**46**|[8ef33de](https://github.com/adobe/xdm/commit/8ef33dec908234e07fabf818b9907143a172803e "New generic descriptorRelationship")|
+|[schemas/descriptors/relationship/descriptorRelationship](schemas/descriptors/relationship/descriptorRelationship.schema.json)|experimental|**47**|**47**|[8ef33de](https://github.com/adobe/xdm/commit/8ef33dec908234e07fabf818b9907143a172803e "New generic descriptorRelationship")|
 
 
 ### Stabilizing

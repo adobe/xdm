@@ -76,6 +76,11 @@
                     "type": "string",
                     "description": "Tracks the flight number."
                   },
+                  "xdm:aircraftID": {
+                    "title": "Aircraft ID",
+                    "type": "string",
+                    "description": "Identifier of the aircraft."
+                  },
                   "xdm:aircraftType": {
                     "title": "Aircraft Type",
                     "type": "string",

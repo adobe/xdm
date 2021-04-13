@@ -63,7 +63,7 @@
             "$ref": "#/definitions/alert-impressions"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:alerts": {

@@ -9,7 +9,7 @@ Collects all details specific to a vehicle reservation.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json](mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json](mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json) |
 ## Schema Hierarchy
 
 * Vehicle Reservation `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`

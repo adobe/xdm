@@ -9,7 +9,7 @@ Transactions capture when non-order transactions occur, such as balance transfer
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/transaction.schema.json](datatypes/industry-verticals/transaction.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/transaction.schema.json](datatypes/industry-verticals/transaction.schema.json) |
 ## Schema Hierarchy
 
 * Transaction `https://ns.adobe.com/xdm/datatypes/transaction`

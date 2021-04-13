@@ -51,7 +51,7 @@
             "$ref": "#/definitions/file-upload-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:fileTransfer": {

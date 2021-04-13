@@ -9,7 +9,7 @@ Credit limit increase application details such as ID, type, approval, and status
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.json) |
 
 ## Credit Limit Increase Details Example
 ```json

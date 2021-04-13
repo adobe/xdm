@@ -58,11 +58,6 @@
                     "title": "View",
                     "type": "integer",
                     "description": "Tracked when a comparison page is viewed."
-                },
-                "xdm:impressions": {
-                    "title": "Impressions",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
-                    "description": "Extension of the impressions data type."
                 }
             }
         }

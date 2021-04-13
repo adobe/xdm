@@ -1,15 +1,17 @@
 {
-  "xdm:diningReservation": [
-    {
-      "xdm:cuisine": "Sushi",
-      "xdm:deliveryPartners": "GrubHub",
-      "xdm:diningOptions": "Delivery",
-      "xdm:groupReservation": false,
-      "xdm:loyaltyID": "D11988721",
-      "xdm:partySize": 5,
-      "xdm:priceCategory": "$$$",
-      "xdm:reservationTime": "2021-06-18T18:00:00+00:00",
-      "xdm:specialOccasion": true
-    }
-  ]
+  "xdm:reservations": {
+    "xdm:diningReservation": [
+      {
+        "xdm:cuisine": "Sushi",
+        "xdm:deliveryPartners": "GrubHub",
+        "xdm:diningOptions": "Delivery",
+        "xdm:groupReservation": false,
+        "xdm:loyaltyID": "D11988721",
+        "xdm:partySize": 5,
+        "xdm:priceCategory": "$$$",
+        "xdm:reservationTime": "2021-06-18T18:00:00+00:00",
+        "xdm:specialOccasion": true
+      }
+    ]
+  }
 }

@@ -27,7 +27,7 @@
   "definitions": {
     "upsell-details": {
       "properties": {
-        "xdm:upsell": {
+        "xdm:upsells": {
           "type": "object",
           "properties": {
             "xdm:upsellSteps": {
@@ -36,10 +36,13 @@
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated"
             },
-            "xdm:upsellOffer": {
-              "title": "Upsell Offer",
-              "$ref": "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
-              "description": "Extension of offer details data type."
+            "xdm:upsellImpressions": {
+              "title": "Upsell Impressions",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
+              },
+              "description": "Array of the impressions data type."
             },
             "xdm:upsellTransaction": {
               "title": "Upsell Transaction",

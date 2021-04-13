@@ -2,14 +2,14 @@
 # Card Application Process Schema
 
 ```
-https://ns.adobe.com/xdm/mixins/experienceevent-card-application-process
+https://ns.adobe.com/xdm/mixins/experienceevent-card-application-details
 ```
 
 Card comparison details such as count, addition, removal, and view.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-card-application-process.schema.json](mixins/experience-event/industry-verticals/experienceevent-card-application-process.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-card-application-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-card-application-details.schema.json) |
 
 ## Card Application Process Example
 ```json

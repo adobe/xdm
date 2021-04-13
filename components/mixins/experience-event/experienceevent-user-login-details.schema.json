@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-user-login-process",
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "User Login Process",
   "type": "object",
@@ -29,7 +29,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "User login details such as login state, location, and type, as well as forgot username and password counts.",
   "definitions": {
-    "user-login-process": {
+    "user-login-details": {
       "properties": {
         "xdm:userAccount": {
           "type": "object",
@@ -136,7 +136,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/user-login-process"
+      "$ref": "#/definitions/user-login-details"
     }
   ],
   "meta:status": "experimental",

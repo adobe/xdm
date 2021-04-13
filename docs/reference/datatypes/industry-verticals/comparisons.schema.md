@@ -10,11 +10,6 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/comparisons.schema.json](datatypes/industry-verticals/comparisons.schema.json) |
-## Schema Hierarchy
-
-* Comparisons `https://ns.adobe.com/xdm/datatypes/comparisons`
-  * [Impressions](impressions.schema.md) `https://ns.adobe.com/xdm/datatypes/impressions`
-
 
 ## Comparisons Example
 ```json
@@ -25,34 +20,11 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:addition](#xdmaddition) | `integer` | Optional | Comparisons (this schema) |
 | [xdm:count](#xdmcount) | `integer` | Optional | Comparisons (this schema) |
-| [xdm:impressions](#xdmimpressions) | Impressions | Optional | Comparisons (this schema) |
-| [xdm:items](#xdmitems) | `string[]` | Optional | Comparisons (this schema) |
-| [xdm:removal](#xdmremoval) | `integer` | Optional | Comparisons (this schema) |
+| [xdm:items](#xdmitems) | `object[]` | Optional | Comparisons (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Comparisons (this schema) |
 | [xdm:view](#xdmview) | `integer` | Optional | Comparisons (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## xdm:addition
-### Addition
-
-Tracked when an item is added to a comparison.
-
-`xdm:addition`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:addition Type
-
-
-`integer`
-
-
-
-
-
 
 ## xdm:count
 ### Count
@@ -74,42 +46,45 @@ Count of the total number of items being compared.
 
 
 
-## xdm:impressions
-### Impressions
-
-Extension of the impressions data type.
-
-`xdm:impressions`
-* is optional
-* type: Impressions
-* defined in this schema
-
-### xdm:impressions Type
-
-
-* [Impressions](impressions.schema.md) – `https://ns.adobe.com/xdm/datatypes/impressions`
-
-
-
-
-
 ## xdm:items
 ### Items
 
-An array of all item IDs/SKUs in the list of products.  
-
 `xdm:items`
 * is optional
-* type: `string[]`
+* type: `object[]`
 
 * defined in this schema
 
 ### xdm:items Type
 
 
-Array type: `string[]`
+Array type: `object[]`
 
 All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | Optional |
+| `xdm:addition`| integer | Optional |
+| `xdm:removal`| integer | Optional |
+| `xdm:selected`| integer | Optional |
+
+
+
+#### xdm:ID
+##### ID
+
+Identifier for the item included within a comparison.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
 `string`
 
 
@@ -119,21 +94,72 @@ All items must be of the type:
 
 
 
+#### xdm:addition
+##### Addition
 
-## xdm:removal
-### Removal
+Tracked when an item is added to a comparison.
+
+`xdm:addition`
+* is optional
+* type: `integer`
+
+##### xdm:addition Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:removal
+##### Removal
 
 Tracked when an item is removed from a comparison.
 
 `xdm:removal`
 * is optional
 * type: `integer`
-* defined in this schema
 
-### xdm:removal Type
+##### xdm:removal Type
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### xdm:selected
+##### Selected
+
+Tracked when an item is selected/clicked-through upon to view more details.
+
+`xdm:selected`
+* is optional
+* type: `integer`
+
+##### xdm:selected Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+  
+Array of all items and add/remove/select actions in a comparison.
+
 
 
 

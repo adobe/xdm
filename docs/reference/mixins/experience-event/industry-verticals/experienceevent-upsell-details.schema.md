@@ -14,10 +14,7 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 ## Upsell Details Example
 ```json
 {
-  "xdm:upsell": {
-    "xdm:upsellOffer": {
-      "xdm:Offer Details": {}
-    },
+  "xdm:upsells": {
     "xdm:upsellTransaction": {
       "xdm:transaction": {
         "xdm:transactionID": "T10291832",
@@ -33,18 +30,18 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:upsell](#xdmupsell) | `object` | Optional | Upsell Details (this schema) |
+| [xdm:upsells](#xdmupsells) | `object` | Optional | Upsell Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:upsell
+## xdm:upsells
 
 
-`xdm:upsell`
+`xdm:upsells`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:upsell Type
+### xdm:upsells Type
 
 
 `object` with following properties:
@@ -52,25 +49,32 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:upsellOffer`|  | Optional |
+| `xdm:upsellImpressions`| array | Optional |
 | `xdm:upsellSteps`|  | Optional |
 | `xdm:upsellTransaction`|  | Optional |
 
 
 
-#### xdm:upsellOffer
-##### Upsell Offer
+#### xdm:upsellImpressions
+##### Upsell Impressions
 
-Extension of offer details data type.
+Array of the impressions data type.
 
-`xdm:upsellOffer`
+`xdm:upsellImpressions`
 * is optional
 * type: reference
 
-##### xdm:upsellOffer Type
+
+##### xdm:upsellImpressions Type
 
 
-* []() – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details`
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/datatypes/impressions`
+
+
+
 
 
 

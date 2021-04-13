@@ -16,12 +16,6 @@
             "travel_and_hospitality"
         ]
     },
-    "meta:extends": [
-        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation",
-        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation",
-        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation",
-        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
-    ],
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
@@ -32,11 +26,6 @@
                 "xdm:reservations": {
                     "type": "object",
                     "properties": {
-                        "xdm:ancillaryRevenue": {
-                            "title": "Ancillary Revenue",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                            "description": "Protection and equipment revenue associated with a reservation."
-                        },
                         "xdm:cancellation": {
                             "title": "Cancellation",
                             "type": "integer",
@@ -109,16 +98,11 @@
                         "xdm:purpose": {
                             "title": "Purpose",
                             "type": "string",
-                            "enum": [
-                                "business",
-                                "personal"
-                            ],
+                            "meta:enum": {
+                                "business": "Business",
+                                "personal": "Personal"
+                            },
                             "description": "Tracks the purpose of the reservation, typically either business or personal."
-                        },
-                        "xdm:rackrate": {
-                            "title": "Rack Rate",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                            "description": "Cost for the same day reservation without prior booking arrangements."
                         },
                         "xdm:startDate": {
                             "title": "Start Date",
@@ -134,17 +118,12 @@
                         "xdm:triptype": {
                             "title": "Trip Type",
                             "type": "string",
-                            "enum": [
-                                "roundtrip",
-                                "one-way",
-                                "multi-city"
-                            ],
+                            "meta:enum": {
+                                "roundtrip": "Roundtrip",
+                                "oneWay": "One Way",
+                                "multiCity": "Multi-City"
+                            },
                             "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
-                        },
-                        "xdm:type": {
-                            "title": "Type",
-                            "type": "string",
-                            "description": "Records the type of reservation being placed."
                         }
                     }
                 }
@@ -154,28 +133,12 @@
     "allOf": [
         {
             "$ref": "#/definitions/reservations"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation"
-        },
-        {
-            "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation"
         }
     ],
     "meta:status": "experimental",
     "examples": [
         {
             "xdm:reservations": {
-                "xdm:ancillaryRevenue": {
-                    "xdm:amount": 27.85,
-                    "xdm:currencyCode": "USD"
-                },
                 "xdm:cancellation": 0,
                 "xdm:created": 1,
                 "xdm:currencyCode": "USD",

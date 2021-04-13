@@ -28,7 +28,8 @@
             "xdm:diningReservations": {
               "type": "array",
               "items": {
-                "properties": {
+                "type": "object",
+				"properties": {
                   "xdm:cuisine": {
                     "title": "Cuisine",
                     "type": "string",

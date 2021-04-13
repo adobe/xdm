@@ -58,6 +58,11 @@ The technical address, for example, 'name@domain.com' as commonly defined in RFC
 `string`
 * format: `email` – email address (according to [RFC 5322, section 3.4.1](https://tools.ietf.org/html/rfc5322))
 
+
+
+
+
+
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace
 ### Email Namespace
 
@@ -70,7 +75,12 @@ Email namespace associated with the email address in the consent preferences in 
 
 ### https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace Type
 
+
 `string`
+
+
+
+
 
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel

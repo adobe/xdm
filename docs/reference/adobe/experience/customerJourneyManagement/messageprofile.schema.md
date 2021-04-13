@@ -25,7 +25,8 @@ Message Profile details for the Adobe CJM ExperienceEvent.
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email"
 }
 ```
 
@@ -34,6 +35,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextaddress) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextnamespace) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilechannel) | Experience Channel | **Required** | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
@@ -56,9 +58,19 @@ The technical address, for example, 'name@domain.com' as commonly defined in RFC
 `string`
 * format: `email` – email address (according to [RFC 5322, section 3.4.1](https://tools.ietf.org/html/rfc5322))
 
+## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace
+### Email Namespace
 
+Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email
 
+`https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace`
+* is optional
+* type: `string`
+* defined in this schema
 
+### https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace Type
+
+`string`
 
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel

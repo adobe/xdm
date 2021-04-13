@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-process",
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Claim Process",
   "type": "object",
@@ -21,7 +21,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
-    "claim-process": {
+    "claim-details": {
       "properties": {
         "xdm:claims": {
           "type": "object",
@@ -88,7 +88,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/claim-process"
+      "$ref": "#/definitions/claim-details"
     }
   ],
   "meta:status": "experimental"

@@ -25,13 +25,13 @@
     "definitions": {
         "claim-process": {
             "properties": {
-                "xdm:disputes": {
+                "xdm:claims": {
                     "type": "object",
                     "properties": {
                         "xdm:ID": {
-                            "title": " ID",
+                            "title": "Claims ID",
                             "type": "string",
-                            "description": "ID of the claim being submitted."
+                            "description": "Unique identifier for the claim."
                         },
                         "xdm:startDate": {
                             "title": "Start Date",
@@ -67,10 +67,15 @@
                             ],
                             "description": "Type of claim submitted."
                         },
-                        "xdm:policy": {
-                            "title": "Policy",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
-                            "description": "Extension of Policy data type."
+                        "xdm:policyID": {
+                            "title": "Policy ID",
+                            "type": "string",
+                            "description": "Policy Identifier."
+                        },
+                        "xdm:benefitAmount": {
+                            "title": "Benefit Amount",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Captures the benefit amount."
                         },
                         "xdm:steps": {
                             "title": "Steps",
@@ -91,7 +96,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:disputes": {
+            "xdm:claims": {
                 "xdm:ID": "P102819201D",
                 "xdm:startDate": "2021-03-04T15:52:25+00:00",
                 "xdm:status": "approved",

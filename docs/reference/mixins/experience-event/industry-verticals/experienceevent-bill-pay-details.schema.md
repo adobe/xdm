@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details
 ```
 
-Bill pay steps such as start, save, failure, and complete.
+Bill pay details such as transaction information, service account ID, and balance.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -15,18 +15,8 @@ Bill pay steps such as start, save, failure, and complete.
 ```json
 {
   "xdm:personalFinances": {
-    "xdm:billPay": {
-      "xdm:billPayAccount": {
-        "xdm:financial-account": {
-          "xdm:balanceTransferAccount": "",
-          "xdm:currentAccountBalance": "678.93",
-          "xdm:financialAccountID": "1019283724",
-          "xdm:financialAccountName": "Personal Checking",
-          "xdm:financialAccountOwner": "TBD",
-          "xdm:financialAccountType": "checking",
-          "xdm:openedDate": "2021-02-17"
-        }
-      }
+    "xdm:billPayDetails": {
+      "xdm:scheduledTransactionDate": "2020-04-11T05:05:05Z"
     }
   }
 }
@@ -86,10 +76,10 @@ Unknown type `object`.
       "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
       "description": "Extension of transaction data type."
     },
-    "xdm:account": {
-      "title": "Account",
+    "xdm:financialAccount": {
+      "title": "Financial Account",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Account from which the bill is being paid."
+      "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
     },
     "xdm:scheduledTransactionDate": {
       "title": "Scheduled Transaction Date",
@@ -105,11 +95,6 @@ Unknown type `object`.
           "title": "Service Provider Name",
           "type": "string",
           "description": "The name/nickname for the service provider."
-        },
-        "xdm:address": {
-          "title": "Service Provider Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Service provider address"
         },
         "xdm:userAccountID": {
           "title": "User Account ID",

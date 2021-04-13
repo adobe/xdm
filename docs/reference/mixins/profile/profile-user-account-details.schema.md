@@ -49,7 +49,7 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 | `xdm:alertStatus`| boolean | Optional |
 | `xdm:autopayStatus`| boolean | Optional |
 | `xdm:contactDetails`|  | Optional |
-| `xdm:preferences`| array | Optional |
+| `xdm:productPreferences`| array | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:status`| string | Optional |
 
@@ -157,17 +157,17 @@ Extension of the Personal Profile data type.
 
 
 
-#### xdm:preferences
-##### Preferences
+#### xdm:productPreferences
+##### Product Preferences
 
-M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. 
+Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc.
 
-`xdm:preferences`
+`xdm:productPreferences`
 * is optional
 * type: `string[]`
 
 
-##### xdm:preferences Type
+##### xdm:productPreferences Type
 
 
 Array type: `string[]`

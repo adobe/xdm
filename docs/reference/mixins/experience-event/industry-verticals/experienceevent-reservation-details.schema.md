@@ -15,10 +15,6 @@ Reservation details such as length, modification, refundable status, and number 
 ```json
 {
   "xdm:reservations": {
-    "xdm:ancillaryRevenue": {
-      "xdm:amount": 27.85,
-      "xdm:currencyCode": "USD"
-    },
     "xdm:cancellation": 0,
     "xdm:created": 1,
     "xdm:currencyCode": "USD",
@@ -86,16 +82,12 @@ Reservation details such as length, modification, refundable status, and number 
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
-| `xdm:ancillaryRevenue`|  | Optional |
 | `xdm:cancellation`| integer | Optional |
 | `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
-| `xdm:diningReservations`| array | Optional |
 | `xdm:endDate`| string | Optional |
-| `xdm:flightReservations`| array | Optional |
 | `xdm:length`| integer | Optional |
-| `xdm:lodgingReservations`| array | Optional |
 | `xdm:modification`| integer | Optional |
 | `xdm:modificationDate`| string | Optional |
 | `xdm:nonRefundableAmount`|  | Optional |
@@ -103,12 +95,9 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:numberOfChildren`| integer | Optional |
 | `xdm:processSteps`|  | Optional |
 | `xdm:purpose`| string | Optional |
-| `xdm:rackrate`|  | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:transaction`|  | Optional |
 | `xdm:triptype`| string | Optional |
-| `xdm:type`| string | Optional |
-| `xdm:vehicleReservations`| array | Optional |
 
 
 
@@ -126,26 +115,6 @@ Tracks the reservation number/identifier.
 
 `string`
 
-
-
-
-
-
-
-
-#### xdm:ancillaryRevenue
-##### Ancillary Revenue
-
-Protection and equipment revenue associated with a reservation.
-
-`xdm:ancillaryRevenue`
-* is optional
-* type: reference
-
-##### xdm:ancillaryRevenue Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -244,33 +213,6 @@ All instances must conform to this regular expression
 
 
 
-#### xdm:diningReservations
-##### Dining Reservations
-
-Array of dining reservations under the main trip reservation.
-
-`xdm:diningReservations`
-* is optional
-* type: reference
-
-
-##### xdm:diningReservations Type
-
-
-Array type: reference
-
-All items must be of the type:
-* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation`
-
-
-
-
-
-
-
-
-
-
 #### xdm:endDate
 ##### End Date
 
@@ -293,33 +235,6 @@ The end drop-off/return/check-out date of the reservation.
 
 
 
-#### xdm:flightReservations
-##### Flight Reservations
-
-Array of flight reservations under the main trip reservation.
-
-`xdm:flightReservations`
-* is optional
-* type: reference
-
-
-##### xdm:flightReservations Type
-
-
-Array type: reference
-
-All items must be of the type:
-* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation`
-
-
-
-
-
-
-
-
-
-
 #### xdm:length
 ##### Length
 
@@ -333,33 +248,6 @@ Tracks the total number of days for a reservation.
 
 
 `integer`
-
-
-
-
-
-
-
-
-#### xdm:lodgingReservations
-##### Lodging Reservations
-
-Array of lodging reservations under the main trip reservation.
-
-`xdm:lodgingReservations`
-* is optional
-* type: reference
-
-
-##### xdm:lodgingReservations Type
-
-
-Array type: reference
-
-All items must be of the type:
-* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation`
-
-
 
 
 
@@ -500,35 +388,20 @@ Tracks the purpose of the reservation, typically either business or personal.
 
 `xdm:purpose`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
+##### xdm:purpose Type
+
+
+`string`
+
+
 
 ##### xdm:purpose Known Values
 | Value | Description |
 |-------|-------------|
-| `business` |  |
-| `personal` |  |
-
-
-
-
-
-
-#### xdm:rackrate
-##### Rack Rate
-
-Cost for the same day reservation without prior booking arrangements.
-
-`xdm:rackrate`
-* is optional
-* type: reference
-
-##### xdm:rackrate Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
-
+| `business` | Business |
+| `personal` | Personal |
 
 
 
@@ -584,64 +457,21 @@ Indicates if the reservation is for a one way, round trip, or multi-city.
 
 `xdm:triptype`
 * is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
-
-##### xdm:triptype Known Values
-| Value | Description |
-|-------|-------------|
-| `roundtrip` |  |
-| `one-way` |  |
-| `multi-city` |  |
-
-
-
-
-
-
-#### xdm:type
-##### Type
-
-Records the type of reservation being placed.
-
-`xdm:type`
-* is optional
 * type: `string`
 
-##### xdm:type Type
+##### xdm:triptype Type
 
 
 `string`
 
 
 
-
-
-
-
-
-#### xdm:vehicleReservations
-##### Vehicle Reservations
-
-Array of vehicle reservations under the main trip reservation.
-
-`xdm:vehicleReservations`
-* is optional
-* type: reference
-
-
-##### xdm:vehicleReservations Type
-
-
-Array type: reference
-
-All items must be of the type:
-* []() – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`
-
-
-
-
+##### xdm:triptype Known Values
+| Value | Description |
+|-------|-------------|
+| `roundtrip` | Roundtrip |
+| `oneWay` | One Way |
+| `multiCity` | Multi-City |
 
 
 

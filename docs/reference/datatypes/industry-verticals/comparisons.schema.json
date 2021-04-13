@@ -14,11 +14,6 @@
     "definitions": {
         "comparisons": {
             "properties": {
-                "xdm:addition": {
-                    "title": "Addition",
-                    "type": "integer",
-                    "description": "Tracked when an item is added to a comparison."
-                },
                 "xdm:count": {
                     "title": "Count",
                     "type": "integer",
@@ -28,14 +23,31 @@
                     "title": "Items",
                     "type": "array",
                     "items": {
-                        "type": "string"
-                    },
-                    "description": "An array of all item IDs/SKUs in the list of products.  "
-                },
-                "xdm:removal": {
-                    "title": "Removal",
-                    "type": "integer",
-                    "description": "Tracked when an item is removed from a comparison."
+                        "type": "object",
+                        "description": "Array of all items and add/remove/select actions in a comparison.",
+                        "properties": {
+                            "xdm:ID": {
+                                "title": "ID",
+                                "type": "string",
+                                "description": "Identifier for the item included within a comparison."
+                            },
+                            "xdm:removal": {
+                                "title": "Removal",
+                                "type": "integer",
+                                "description": "Tracked when an item is removed from a comparison."
+                            },
+                            "xdm:addition": {
+                                "title": "Addition",
+                                "type": "integer",
+                                "description": "Tracked when an item is added to a comparison."
+                            },
+                            "xdm:selected": {
+                                "title": "Selected",
+                                "type": "integer",
+                                "description": "Tracked when an item is selected/clicked-through upon to view more details."
+                            }
+                        }
+                    }
                 },
                 "xdm:type": {
                     "title": "Type",

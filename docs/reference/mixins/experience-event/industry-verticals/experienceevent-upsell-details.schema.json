@@ -29,7 +29,7 @@
     "definitions": {
         "upsell-details": {
             "properties": {
-                "xdm:upsell": {
+                "xdm:upsells": {
                     "type": "object",
                     "properties": {
                         "xdm:upsellSteps": {
@@ -61,7 +61,7 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:upsell": {
+            "xdm:upsells": {
                 "xdm:upsellOffer": {
                     "xdm:Offer Details": {}
                 },

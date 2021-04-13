@@ -22,15 +22,25 @@
         "xdm:personalFinances": {
           "type": "object",
           "properties": {
-            "xdm:deposit": {
-              "title": "Deposit",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-              "description": "Extension of transaction data type."
-            },
-            "xdm:depositAccount": {
-              "title": "Deposit Account",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-              "description": "Extension of financialAccount data type."
+            "xdm:deposits": {
+              "type": "object",
+              "properties": {
+                "xdm:transaction": {
+                  "title": "Deposit Transaction",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                  "description": "Extension of transaction data type."
+                },
+                "xdm:account": {
+                  "title": "Deposit Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                  "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+                },
+                "xdm:mobileDeposit": {
+                  "title": "Mobile Deposit",
+                  "type": "boolean",
+                  "description": "Indicator for whether the deposit was done through mobile or not."
+                }
+              }
             }
           }
         }

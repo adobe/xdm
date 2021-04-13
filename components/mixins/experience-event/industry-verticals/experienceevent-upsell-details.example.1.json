@@ -1,8 +1,5 @@
 {
-  "xdm:upsell": {
-    "xdm:upsellOffer": {
-      "xdm:Offer Details": {}
-    },
+  "xdm:upsells": {    
     "xdm:upsellTransaction": {
       "xdm:transaction": {
         "xdm:transactionID": "T10291832",

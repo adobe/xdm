@@ -29,6 +29,7 @@
               "type": "array",
               "items": {
                 "description": "Captures all details specific to an individual vehicle reservation",
+				"type": "object",
                 "properties": {
                   "xdm:ID": {
                     "title": "ID",

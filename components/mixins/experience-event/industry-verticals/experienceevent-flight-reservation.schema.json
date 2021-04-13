@@ -26,9 +26,10 @@
           "type": "object",
           "properties": {
             "xdm:flightReservations": {
-              "type": "array",
+			  "type": "array",
               "items": {
-                "description": "Captures all details specific to an individual flight reservation",
+                "type": "object"
+				"description": "Captures all details specific to an individual flight reservation",
                 "properties": {
                   "xdm:agentID": {
                     "title": "Agent ID",

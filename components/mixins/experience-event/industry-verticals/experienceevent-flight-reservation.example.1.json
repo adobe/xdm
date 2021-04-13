@@ -1,1 +1,18 @@
-{}
+{
+  "xdm:reservations": {
+    "xdm:flightReservations": [
+      {
+        "xdm:reservationID": "RM8I9FG7HR",
+        "xdm:securityScreening": "PreCheck",
+        "xdm:arrivalLocation": "SYD",
+        "xdm:departureLocation": "LAX",
+        "xdm:fareClass": "business class",
+        "xdm:flightDate": "2004-09-22T15:52:25+00:00",
+        "xdm:flightNumber": "815",
+        "xdm:loyaltyID": "H1102199221",
+        "xdm:flightCheckIn": {}
+      }
+    ],
+    "xdm:flightStatusSearch": {}
+  }
+}

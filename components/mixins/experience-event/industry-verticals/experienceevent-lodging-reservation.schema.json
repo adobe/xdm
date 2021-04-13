@@ -28,7 +28,8 @@
             "xdm:lodgingReservations": {
               "type": "array",
               "items": {
-                "properties": {
+                "type": "object",
+				"properties": {
                   "xdm:agentID": {
                     "title": "Agent ID",
                     "type": "string",

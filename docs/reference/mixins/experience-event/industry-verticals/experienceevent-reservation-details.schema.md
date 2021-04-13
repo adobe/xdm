@@ -10,23 +10,11 @@ Reservation details such as length, modification, refundable status, and number 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json) |
-## Schema Hierarchy
-
-* Reservation Details `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details`
-  * [Flight Reservation](experienceevent-flight-reservation.schema.md) `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation`
-  * [Lodging Reservation](experienceevent-lodging-reservation.schema.md) `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation`
-  * [Vehicle Reservation](experienceevent-vehicle-reservation.schema.md) `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`
-  * [Dining Reservation](experienceevent-dining-reservation.schema.md) `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation`
-
 
 ## Reservation Details Example
 ```json
 {
   "xdm:reservations": {
-    "xdm:ancillaryRevenue": {
-      "xdm:amount": 27.85,
-      "xdm:currencyCode": "USD"
-    },
     "xdm:cancellation": 0,
     "xdm:created": 1,
     "xdm:currencyCode": "USD",
@@ -74,7 +62,7 @@ Reservation details such as length, modification, refundable status, and number 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:reservations](#xdmreservations) | `object` | Optional | [Dining Reservation](experienceevent-dining-reservation.schema.md#xdmreservations) |
+| [xdm:reservations](#xdmreservations) | `object` | Optional | Reservation Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:reservations
@@ -83,7 +71,7 @@ Reservation details such as length, modification, refundable status, and number 
 `xdm:reservations`
 * is optional
 * type: `object`
-* defined in [Dining Reservation](experienceevent-dining-reservation.schema.md#xdmreservations)
+* defined in this schema
 
 ### xdm:reservations Type
 
@@ -93,199 +81,397 @@ Reservation details such as length, modification, refundable status, and number 
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:diningReservation`| object | Optional |
+| `xdm:ID`| string | Optional |
+| `xdm:cancellation`| integer | Optional |
+| `xdm:confirmationNumber`| string | Optional |
+| `xdm:created`| integer | Optional |
+| `xdm:currencyCode`| string | Optional |
+| `xdm:endDate`| string | Optional |
+| `xdm:length`| integer | Optional |
+| `xdm:modification`| integer | Optional |
+| `xdm:modificationDate`| string | Optional |
+| `xdm:nonRefundableAmount`|  | Optional |
+| `xdm:numberOfAdults`| integer | Optional |
+| `xdm:numberOfChildren`| integer | Optional |
+| `xdm:processSteps`|  | Optional |
+| `xdm:purpose`| string | Optional |
+| `xdm:startDate`| string | Optional |
+| `xdm:transaction`|  | Optional |
+| `xdm:triptype`| string | Optional |
 
 
 
-#### xdm:diningReservation
+#### xdm:ID
+##### ID
 
-undefined
+Tracks the reservation number/identifier.
 
-`xdm:diningReservation`
+`xdm:ID`
 * is optional
-* type: `object`
+* type: `string`
 
-##### xdm:diningReservation Type
+##### xdm:ID Type
 
-Unknown type `object`.
 
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:cuisine": {
-      "title": "Cuisine",
-      "type": "string",
-      "meta:enum": {
-        "chinese": "Chinese",
-        "steak": "Steak",
-        "sushi": "Sushi",
-        "asian": "Asian",
-        "vietnamese": "Vietnamese",
-        "european": "European",
-        "french": "French",
-        "italian": "Italian",
-        "burgers": "Burgers",
-        "japanese": "Japanese",
-        "barbecue": "Barbecue",
-        "mediterranean": "Mediterranean",
-        "indian": "Indian",
-        "grill": "Grill",
-        "seafood": "Seafood",
-        "steakhouse": "Steakhouse",
-        "mexican": "Mexican",
-        "greek": "Greek",
-        "american": "American",
-        "thai": "Thai"
-      },
-      "description": "Type of restaurant cuisine."
-    },
-    "xdm:restaurantID": {
-      "title": "Restaurant ID",
-      "type": "string",
-      "description": "Identifier for the restaurant/dining location."
-    },
-    "xdm:deliveryPartners": {
-      "title": "Delivery Partners",
-      "type": "string",
-      "meta:enum": {
-        "grubhub": "GrubHub",
-        "ubereats": "UberEats",
-        "doordash": "DoorDash",
-        "other": "Other"
-      },
-      "description": "Delivery partners available from the restaurant."
-    },
-    "xdm:diningOptions": {
-      "title": "Dining Options",
-      "type": "string",
-      "meta:enum": {
-        "outdoorSeating": "Outdoor Seating",
-        "delivery": "Delivery",
-        "curbside": "Curbside",
-        "takeout": "Takeout"
-      },
-      "description": "Delivery and dining options available from the restaurant."
-    },
-    "xdm:groupReservation": {
-      "title": "Group Reservation",
-      "type": "boolean",
-      "description": "Indicates if the reservation is being made for a group."
-    },
-    "xdm:loyaltyID": {
-      "title": "Loyalty ID",
-      "type": "string",
-      "description": "Includes the loyalty/rewards program ID for the party listed in the reservation."
-    },
-    "xdm:partySize": {
-      "title": "Party Size",
-      "type": "integer",
-      "description": "Number of individuals in the dining party."
-    },
-    "xdm:priceCategory": {
-      "title": "Price Category",
-      "type": "string",
-      "meta:enum": {
-        "$": "$",
-        "$$": "$$",
-        "$$$": "$$$",
-        "$$$$": "$$$$"
-      },
-      "description": "Price category for the reservation being made."
-    },
-    "xdm:reservationTime": {
-      "title": "Reservation Time",
-      "type": "string",
-      "format": "date-time",
-      "description": "The time for which the dining reservation is booked."
-    },
-    "xdm:specialOccasion": {
-      "title": "Special Occasion",
-      "type": "boolean",
-      "description": "Indicates if the reservation is being made for a special occasion."
-    },
-    "xdm:status": {
-      "title": "Status",
-      "type": "string",
-      "meta:enum": {
-        "cancelled": "Cancelled",
-        "confirmed": "Confirmed",
-        "hold": "Hold",
-        "pending": "Pending"
-      },
-      "description": "The status of the dining reservation."
-    },
-    "xdm:cancellation": {
-      "title": "Cancellation",
-      "type": "integer",
-      "description": "Tracked when a reservation has been cancelled."
-    },
-    "xdm:confirmationNumber": {
-      "title": "Confirmation Number",
-      "type": "string",
-      "description": "Tracks the reservation confirmation number/identifier."
-    },
-    "xdm:created": {
-      "title": "Created",
-      "type": "integer",
-      "description": "Tracked when a reservation has been created."
-    },
-    "xdm:currencyCode": {
-      "title": "Currency Code",
-      "type": "string",
-      "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-      "pattern": "^[A-Z]{3}$"
-    },
-    "xdm:ID": {
-      "title": "ID",
-      "type": "string",
-      "description": "Tracks the reservation number/identifier."
-    },
-    "xdm:length": {
-      "title": "Length",
-      "type": "integer",
-      "description": "Tracks the total number of days for a reservation."
-    },
-    "xdm:modification": {
-      "title": "Modification",
-      "type": "integer",
-      "description": "Captured when a reservation has been modified."
-    },
-    "xdm:modificationDate": {
-      "title": "Modification Date",
-      "type": "string",
-      "format": "date-time",
-      "description": "Tracks when a reservation has been modified."
-    },
-    "xdm:numberOfAdults": {
-      "title": "Number of Adults",
-      "type": "integer",
-      "description": "Captures the number of adults associated with the reservation."
-    },
-    "xdm:numberOfChildren": {
-      "title": "Number of Children",
-      "type": "integer",
-      "description": "Captures the number of children associated with the reservation."
-    },
-    "xdm:purpose": {
-      "title": "Purpose",
-      "type": "string",
-      "meta:enum": {
-        "business": "Business",
-        "personal": "Personal"
-      },
-      "description": "Tracks the purpose of the reservation, typically either business or personal."
-    },
-    "xdm:type": {
-      "title": "Type",
-      "type": "string",
-      "description": "Records the type of reservation being placed."
-    }
-  },
-  "simpletype": "`object`"
-}
+`string`
+
+
+
+
+
+
+
+
+#### xdm:cancellation
+##### Cancellation
+
+Tracked when a reservation has been cancelled.
+
+`xdm:cancellation`
+* is optional
+* type: `integer`
+
+##### xdm:cancellation Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:confirmationNumber
+##### Confirmation Number
+
+Tracks the reservation confirmation number/identifier.
+
+`xdm:confirmationNumber`
+* is optional
+* type: `string`
+
+##### xdm:confirmationNumber Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:created
+##### Created
+
+Tracked when a reservation has been created.
+
+`xdm:created`
+* is optional
+* type: `integer`
+
+##### xdm:created Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:currencyCode
+##### Currency Code
+
+Currency code used to make the purchase. ISO 4217 currency code.
+
+`xdm:currencyCode`
+* is optional
+* type: `string`
+
+##### xdm:currencyCode Type
+
+
+`string`
+
+
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5BA-Z%5D%7B3%7D%24)):
+```regex
+^[A-Z]{3}$
 ```
 
+
+
+
+
+
+
+
+#### xdm:endDate
+##### End Date
+
+The end drop-off/return/check-out date of the reservation.
+
+`xdm:endDate`
+* is optional
+* type: `string`
+
+##### xdm:endDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:length
+##### Length
+
+Tracks the total number of days for a reservation.
+
+`xdm:length`
+* is optional
+* type: `integer`
+
+##### xdm:length Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:modification
+##### Modification
+
+Captured when a reservation has been modified.
+
+`xdm:modification`
+* is optional
+* type: `integer`
+
+##### xdm:modification Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:modificationDate
+##### Modification Date
+
+Tracks when a reservation has been modified.
+
+`xdm:modificationDate`
+* is optional
+* type: `string`
+
+##### xdm:modificationDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:nonRefundableAmount
+##### Non-Refundable Amount
+
+Amount of the reservation price that is marked as non-refundable.
+
+`xdm:nonRefundableAmount`
+* is optional
+* type: reference
+
+##### xdm:nonRefundableAmount Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/currency`
+
+
+
+
+
+
+
+#### xdm:numberOfAdults
+##### Number of Adults
+
+Captures the number of adults associated with the reservation.
+
+`xdm:numberOfAdults`
+* is optional
+* type: `integer`
+
+##### xdm:numberOfAdults Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:numberOfChildren
+##### Number of Children
+
+Captures the number of children associated with the reservation.
+
+`xdm:numberOfChildren`
+* is optional
+* type: `integer`
+
+##### xdm:numberOfChildren Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:processSteps
+##### Process Steps
+
+Extension of toolUsage data type.
+
+`xdm:processSteps`
+* is optional
+* type: reference
+
+##### xdm:processSteps Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
+
+
+
+
+
+
+
+#### xdm:purpose
+##### Purpose
+
+Tracks the purpose of the reservation, typically either business or personal.
+
+`xdm:purpose`
+* is optional
+* type: `string`
+
+##### xdm:purpose Type
+
+
+`string`
+
+
+
+##### xdm:purpose Known Values
+| Value | Description |
+|-------|-------------|
+| `business` | Business |
+| `personal` | Personal |
+
+
+
+
+
+
+#### xdm:startDate
+##### Start Date
+
+The start pick-up/outbound/check-in date of the reservation.
+
+`xdm:startDate`
+* is optional
+* type: `string`
+
+##### xdm:startDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:transaction
+##### Transaction
+
+Extension of transaction data type.
+
+`xdm:transaction`
+* is optional
+* type: reference
+
+##### xdm:transaction Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
+
+
+
+
+
+
+
+#### xdm:triptype
+##### Trip Type
+
+Indicates if the reservation is for a one way, round trip, or multi-city.
+
+`xdm:triptype`
+* is optional
+* type: `string`
+
+##### xdm:triptype Type
+
+
+`string`
+
+
+
+##### xdm:triptype Known Values
+| Value | Description |
+|-------|-------------|
+| `roundtrip` | Roundtrip |
+| `oneWay` | One Way |
+| `multiCity` | Multi-City |
 
 
 

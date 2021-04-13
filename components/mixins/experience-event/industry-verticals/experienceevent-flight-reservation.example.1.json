@@ -1,22 +1,14 @@
 {
-  "xdm:flightReservation": {
-    "xdm:arrivalLocation": "SYD",
-    "xdm:departureLocation": "LAX",
-    "xdm:fareClass": "business class",
-    "xdm:flightDate": "2004-09-22T15:52:25+00:00",
-    "xdm:flightNumber": "815",
-    "xdm:loyaltyID": "H1102199221",
-    "xdm:passenger": {
-      "xdm:name": {
-        "xdm:firstName": "Jane",
-        "xdm:middleName": "F",
-        "xdm:lastName": "Doe",
-        "xdm:fullName": "Jane F. Doe"
-      },
-      "xdm:birthDate": "1996-01-19",
-      "xdm:gender": "female"
+  "xdm:flightReservation": [
+    {
+      "xdm:reservationID": "RM8I9FG7HR",
+      "xdm:securityScreening": "PreCheck",
+      "xdm:arrivalLocation": "SYD",
+      "xdm:departureLocation": "LAX",
+      "xdm:fareClass": "business class",
+      "xdm:flightDate": "2004-09-22T15:52:25+00:00",
+      "xdm:flightNumber": "815",
+      "xdm:loyaltyID": "H1102199221"
     }
-  },
-  "xdm:reservationID": "RM8I9FG7HR",
-  "xdm:securityScreening": "PreCheck"
+  ]
 }

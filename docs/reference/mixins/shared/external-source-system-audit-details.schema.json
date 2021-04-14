@@ -11,7 +11,7 @@
     "type": "object",
     "meta:extensible": true,
     "meta:intendedToExtend": [],
-    "description": "Mixin which defines a set a audit properties for extenal sources.",
+    "description": "Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.",
     "definitions": {
         "externalSourceSystemAuditDetails": {
             "properties": {

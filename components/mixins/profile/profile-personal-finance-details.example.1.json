@@ -1,0 +1,21 @@
+{
+  "xdm:personalFinances": {
+    "xdm:accountCardsTotal": 3,
+    "xdm:creditScore": 760,
+    "xdm:employmentStatus": "full time",
+    "xdm:assignedBeneficiary": [
+      {
+        "xdm:person": {
+          "xdm:name": {
+            "xdm:firstName": "Jane",
+            "xdm:middleName": "F",
+            "xdm:lastName": "Doe",
+            "xdm:fullName": "Jane F. Doe"
+          },
+          "xdm:birthDayAndMonth": "01-03",
+          "xdm:gender": "female"
+        }
+      }
+    ]
+  }
+}

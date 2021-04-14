@@ -14,43 +14,50 @@
   "definitions": {
     "comparisons": {
       "properties": {
-        "xdm:comparisonAddition": {
-          "title": "Comparison Addition",
-          "type": "integer",
-          "description": "Tracked when an item is added to a comparison."
-        },
-        "xdm:comparisonCount": {
-          "title": "Comparison Count",
+        "xdm:count": {
+          "title": "Count",
           "type": "integer",
           "description": "Count of the total number of items being compared."
         },
-        "xdm:comparisonItems": {
-          "title": "Comparison List Items",
+        "xdm:items": {
+          "title": "Items",
           "type": "array",
           "items": {
-            "type": "string"
-          },
-          "description": "An array of all item IDs/SKUs in the list of products.  "
+            "type": "object",
+            "description": "Array of all items and add/remove/select actions in a comparison.",
+            "properties": {
+              "xdm:ID": {
+                "title": "ID",
+                "type": "string",
+                "description": "Identifier for the item included within a comparison."
+              },
+              "xdm:removal": {
+                "title": "Removal",
+                "type": "integer",
+                "description": "Tracked when an item is removed from a comparison."
+              },
+              "xdm:addition": {
+                "title": "Addition",
+                "type": "integer",
+                "description": "Tracked when an item is added to a comparison."
+              },
+              "xdm:selected": {
+                "title": "Selected",
+                "type": "integer",
+                "description": "Tracked when an item is selected/clicked-through upon to view more details."
+              }
+            }
+          }
         },
-        "xdm:comparisonRemoval": {
-          "title": "Comparison Removal",
-          "type": "integer",
-          "description": "Tracked when an item is removed from a comparison."
-        },
-        "xdm:comparisonType": {
-          "title": "Comparison Type",
+        "xdm:type": {
+          "title": "Type",
           "type": "string",
           "description": "Type of comparison tool in use."
         },
-        "xdm:comparisonView": {
-          "title": "Comparison View",
+        "xdm:view": {
+          "title": "View",
           "type": "integer",
           "description": "Tracked when a comparison page is viewed."
-        },
-        "xdm:comparisonImpressions": {
-          "title": "Comparison Impressions",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/impressions",
-          "description": "Extension of the impressions data type."
         }
       }
     }
@@ -60,5 +67,5 @@
       "$ref": "#/definitions/comparisons"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

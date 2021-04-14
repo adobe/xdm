@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/common/external-source-system-audit-details
 ```
 
-Mixin which defines a set a audit properties for extenal sources.
+Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

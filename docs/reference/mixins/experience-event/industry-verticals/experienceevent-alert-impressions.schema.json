@@ -30,17 +30,22 @@
                 "xdm:alerts": {
                     "type": "object",
                     "properties": {
-                        "xdm:alertClicks": {
+                        "xdm:ID": {
+                            "title": "Alert ID",
+                            "type": "string",
+                            "description": "Alert identifier."
+                        },
+                        "xdm:clicks": {
                             "title": "Alert Clicks",
                             "type": "integer",
                             "description": "Counts the number of times an alert has been clicked."
                         },
-                        "xdm:alertDismissals": {
+                        "xdm:dismissals": {
                             "title": "Alert Dismissals",
                             "type": "integer",
                             "description": "Counts the number of times an alert has been dismissed."
                         },
-                        "xdm:alertImpressions": {
+                        "xdm:impressions": {
                             "title": "Alert Impression Details",
                             "type": "array",
                             "items": {
@@ -58,12 +63,12 @@
             "$ref": "#/definitions/alert-impressions"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:alerts": {
-                "xdm:alertClicks": 4,
-                "xdm:alertDismissals": 2
+                "xdm:clicks": 4,
+                "xdm:dismissals": 2
             }
         }
     ]

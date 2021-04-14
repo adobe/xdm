@@ -9,34 +9,28 @@ Deposit details such as ID, type, and amount.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json) |
 
 ## Deposit Details Example
 ```json
 {
   "xdm:personalFinances": {
-    "xdm:deposit": {
+    "xdm:deposits": {
       "xdm:transaction": {
         "xdm:balanceTransfer": "",
         "xdm:formApplicationFee": "",
         "xdm:toolUsageTransaction": "",
-        "xdm:transactionAmount": "67.85",
+        "xdm:transactionAmount": {
+          "xdm:amount": 61.35,
+          "xdm:currencyCode": "USD",
+          "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+        },
         "xdm:transactionID": "T10291832",
-        "xdm:transactionDate": "2021-01-07",
+        "xdm:transactionDate": "2020-04-11T05:05:05Z",
         "xdm:transactionType": "transfer"
       }
     },
-    "xdm:depositAccount": {
-      "xdm:financial-account": {
-        "xdm:balanceTransferAccount": "",
-        "xdm:currentAccountBalance": "678.93",
-        "xdm:financialAccountID": "1019283724",
-        "xdm:financialAccountName": "Personal Checking",
-        "xdm:financialAccountOwner": "TBD",
-        "xdm:financialAccountType": "checking",
-        "xdm:openedDate": "2021-02-17"
-      }
-    }
+    "xdm:mobileDeposit": true
   }
 }
 ```
@@ -64,44 +58,45 @@ Deposit details such as ID, type, and amount.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:deposit`|  | Optional |
-| `xdm:depositAccount`|  | Optional |
+| `xdm:deposits`| object | Optional |
 
 
 
-#### xdm:deposit
-##### Deposit
+#### xdm:deposits
 
-Extension of transaction data type.
+undefined
 
-`xdm:deposit`
+`xdm:deposits`
 * is optional
-* type: reference
+* type: `object`
 
-##### xdm:deposit Type
+##### xdm:deposits Type
 
+Unknown type `object`.
 
-* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
-
-
-
-
-
-
-
-#### xdm:depositAccount
-##### Deposit Account
-
-Extension of financialAccount data type.
-
-`xdm:depositAccount`
-* is optional
-* type: reference
-
-##### xdm:depositAccount Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
+```json
+{
+  "type": "object",
+  "properties": {
+    "xdm:transaction": {
+      "title": "Deposit Transaction",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+      "description": "Extension of transaction data type."
+    },
+    "xdm:account": {
+      "title": "Deposit Account",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+      "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+    },
+    "xdm:mobileDeposit": {
+      "title": "Mobile Deposit",
+      "type": "boolean",
+      "description": "Indicator for whether the deposit was done through mobile or not."
+    }
+  },
+  "simpletype": "`object`"
+}
+```
 
 
 

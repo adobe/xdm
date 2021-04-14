@@ -59,7 +59,7 @@
               "description": "The end drop-off/return/check-out date of the reservation search."
             },
             "xdm:reservationSearch": {
-              "title": "Reservation Search",
+              "title": "Site Search",
               "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
               "description": "Extension of internalSearch data type."
             }
@@ -69,5 +69,5 @@
     }
   },
   "allOf": [{ "$ref": "#/definitions/reservations" }],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

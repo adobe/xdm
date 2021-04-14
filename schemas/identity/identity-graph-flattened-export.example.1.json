@@ -1,0 +1,31 @@
+{
+  "xdm:identityID": "22222222222222222222222222222222222222",
+  "xdm:namespaceID": 4,
+  "xdm:namespaceCode": "ECID",
+  "xdm:algorithm": "SHARED_DEVICE_DETECTION_SESSIONIZATION",
+  "xdm:membersByTimeRange": [
+    {
+      "xdm:startTimestamp": "2017-09-26T15:52:25+00:00",
+      "xdm:endTimestamp": "2017-09-26T15:52:25+00:00",
+      "xdm:graphID": "G1",
+      "xdm:identityMap": {
+        "ECID": [
+          {
+            "xdm:id": "22222222222222222222222222222222222222"
+          }
+        ],
+        "CRMID": [
+          {
+            "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+          }
+        ],
+        "PHONE": [
+          {
+            "xdm:id": "408-333-2222"
+          }
+        ]
+      }
+    }
+  ],
+  "xdm:lastUpdatedTime": "2020-09-26T15:52:25+00:00"
+}

@@ -9,14 +9,14 @@ Alert information such as ad impressions and ad clicks.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json](mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json](mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json) |
 
 ## Alert Impressions Example
 ```json
 {
   "xdm:alerts": {
-    "xdm:alertClicks": 4,
-    "xdm:alertDismissals": 2
+    "xdm:clicks": 4,
+    "xdm:dismissals": 2
   }
 }
 ```
@@ -44,22 +44,44 @@ Alert information such as ad impressions and ad clicks.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:alertClicks`| integer | Optional |
-| `xdm:alertDismissals`| integer | Optional |
-| `xdm:alertImpressions`| array | Optional |
+| `xdm:ID`| string | Optional |
+| `xdm:clicks`| integer | Optional |
+| `xdm:dismissals`| integer | Optional |
+| `xdm:impressions`| array | Optional |
 
 
 
-#### xdm:alertClicks
+#### xdm:ID
+##### Alert ID
+
+Alert identifier.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:clicks
 ##### Alert Clicks
 
 Counts the number of times an alert has been clicked.
 
-`xdm:alertClicks`
+`xdm:clicks`
 * is optional
 * type: `integer`
 
-##### xdm:alertClicks Type
+##### xdm:clicks Type
 
 
 `integer`
@@ -71,16 +93,16 @@ Counts the number of times an alert has been clicked.
 
 
 
-#### xdm:alertDismissals
+#### xdm:dismissals
 ##### Alert Dismissals
 
 Counts the number of times an alert has been dismissed.
 
-`xdm:alertDismissals`
+`xdm:dismissals`
 * is optional
 * type: `integer`
 
-##### xdm:alertDismissals Type
+##### xdm:dismissals Type
 
 
 `integer`
@@ -92,17 +114,17 @@ Counts the number of times an alert has been dismissed.
 
 
 
-#### xdm:alertImpressions
+#### xdm:impressions
 ##### Alert Impression Details
 
 An array of alerts that have been displayed to a customer.
 
-`xdm:alertImpressions`
+`xdm:impressions`
 * is optional
 * type: reference
 
 
-##### xdm:alertImpressions Type
+##### xdm:impressions Type
 
 
 Array type: reference

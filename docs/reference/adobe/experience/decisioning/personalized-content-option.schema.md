@@ -47,7 +47,7 @@ Personalized decision options form the set of choices for any decision actvity. 
     "https://ns.adobe.com/experience/decisioning/endDate": "2018-12-27T05:59:18.914Z"
   },
   "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "rules",
+    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "eligibilityRule",
     "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
   },
   "https://ns.adobe.com/experience/decisioning/ranking": {

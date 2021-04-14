@@ -9,16 +9,12 @@ Reservation details such as length, modification, refundable status, and number 
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json) |
 
 ## Reservation Details Example
 ```json
 {
   "xdm:reservations": {
-    "xdm:ancillaryRevenue": {
-      "xdm:amount": 27.85,
-      "xdm:currencyCode": "USD"
-    },
     "xdm:cancellation": 0,
     "xdm:created": 1,
     "xdm:currencyCode": "USD",
@@ -47,21 +43,6 @@ Reservation details such as length, modification, refundable status, and number 
     },
     "xdm:numberOfAdults": 2,
     "xdm:numberOfChildren": 3,
-    "xdm:processSteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "trip review",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "reservation confirmation",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    },
     "xdm:purpose": "personal",
     "xdm:startDate": "2021-06-10T15:52:25+00:00",
     "xdm:transaction": {
@@ -101,13 +82,11 @@ Reservation details such as length, modification, refundable status, and number 
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
-| `xdm:ancillaryRevenue`|  | Optional |
 | `xdm:cancellation`| integer | Optional |
 | `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
 | `xdm:endDate`| string | Optional |
-| `xdm:itemComparison`|  | Optional |
 | `xdm:length`| integer | Optional |
 | `xdm:modification`| integer | Optional |
 | `xdm:modificationDate`| string | Optional |
@@ -116,11 +95,9 @@ Reservation details such as length, modification, refundable status, and number 
 | `xdm:numberOfChildren`| integer | Optional |
 | `xdm:processSteps`|  | Optional |
 | `xdm:purpose`| string | Optional |
-| `xdm:rackrate`|  | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:transaction`|  | Optional |
 | `xdm:triptype`| string | Optional |
-| `xdm:type`| string | Optional |
 
 
 
@@ -138,26 +115,6 @@ Tracks the reservation number/identifier.
 
 `string`
 
-
-
-
-
-
-
-
-#### xdm:ancillaryRevenue
-##### Ancillary Revenue
-
-Protection and equipment revenue associated with a reservation.
-
-`xdm:ancillaryRevenue`
-* is optional
-* type: reference
-
-##### xdm:ancillaryRevenue Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -271,26 +228,6 @@ The end drop-off/return/check-out date of the reservation.
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
-
-
-
-
-
-
-
-#### xdm:itemComparison
-##### Item Comparison
-
-Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.
-
-`xdm:itemComparison`
-* is optional
-* type: reference
-
-##### xdm:itemComparison Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/comparisons`
 
 
 
@@ -451,35 +388,20 @@ Tracks the purpose of the reservation, typically either business or personal.
 
 `xdm:purpose`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
+##### xdm:purpose Type
+
+
+`string`
+
+
 
 ##### xdm:purpose Known Values
 | Value | Description |
 |-------|-------------|
-| `business` |  |
-| `personal` |  |
-
-
-
-
-
-
-#### xdm:rackrate
-##### Rack Rate
-
-Cost for the same day reservation without prior booking arrangements.
-
-`xdm:rackrate`
-* is optional
-* type: reference
-
-##### xdm:rackrate Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
-
+| `business` | Business |
+| `personal` | Personal |
 
 
 
@@ -535,37 +457,21 @@ Indicates if the reservation is for a one way, round trip, or multi-city.
 
 `xdm:triptype`
 * is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
-
-##### xdm:triptype Known Values
-| Value | Description |
-|-------|-------------|
-| `roundtrip` |  |
-| `one-way` |  |
-| `multi-city` |  |
-
-
-
-
-
-
-#### xdm:type
-##### Type
-
-Records the type of reservation being placed.
-
-`xdm:type`
-* is optional
 * type: `string`
 
-##### xdm:type Type
+##### xdm:triptype Type
 
 
 `string`
 
 
+
+##### xdm:triptype Known Values
+| Value | Description |
+|-------|-------------|
+| `roundtrip` | Roundtrip |
+| `oneWay` | One Way |
+| `multiCity` | Multi-City |
 
 
 

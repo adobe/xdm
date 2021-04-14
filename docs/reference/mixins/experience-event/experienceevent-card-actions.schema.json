@@ -26,72 +26,82 @@
                 "xdm:personalFinances": {
                     "type": "object",
                     "properties": {
-                        "xdm:cardActivated": {
-                            "title": "Card Activated Success",
-                            "type": "integer",
-                            "description": "Tracks when a card has been successfully activated."
-                        },
-                        "xdm:cardActivationStart": {
-                            "title": "Card Activation Started",
-                            "type": "integer",
-                            "description": "Tracks when a card activation process has been started."
-                        },
-                        "xdm:cardCancelled": {
-                            "title": "Card Cancelled",
-                            "type": "integer",
-                            "description": "Tracks when a card has been cancelled."
-                        },
-                        "xdm:cardControlsLocked": {
-                            "title": "Card Controls Locked",
-                            "type": "integer",
-                            "description": "Tracks when a card controls have been locked."
-                        },
-                        "xdm:cardControlsUnlocked": {
-                            "title": "Card Controls Unlocked",
-                            "type": "integer",
-                            "description": "Tracks when a card controls have been unlocked."
-                        },
-                        "xdm:cardLocked": {
-                            "title": "Card Locked",
-                            "type": "integer",
-                            "description": "Tracks when a card has been locked."
-                        },
-                        "xdm:cardOrderNew": {
-                            "title": "Order New Card",
-                            "type": "integer",
-                            "description": "Tracks when a card has been requested."
-                        },
-                        "xdm:cardOrderType": {
-                            "title": "Card Order Type",
-                            "type": "string",
-                            "enum": [
-                                "new",
-                                "lost",
-                                "stolen",
-                                "never received",
-                                "damaged"
-                            ],
-                            "description": "Tracks the type of card order associated with a card order event."
-                        },
-                        "xdm:cardType": {
-                            "title": "Card Type",
-                            "type": "string",
-                            "enum": [
-                                "credit",
-                                "debit",
-                                "prepaid",
-                                "paypal",
-                                "atm",
-                                "virtual",
-                                "hsa",
-                                "fsa"
-                            ],
-                            "description": "Tracks the type of card associated with an event."
-                        },
-                        "xdm:cardUnlocked": {
-                            "title": "Card Unlocked",
-                            "type": "integer",
-                            "description": "Tracks when a card has been unlocked."
+                        "xdm:cardActions": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:cardID": {
+                                    "title": "Card ID",
+                                    "type": "string",
+                                    "description": "Tracks the identifier for the card being activated.  This might be different from the card number."
+                                },
+                                "xdm:cardActivated": {
+                                    "title": "Card Activated Success",
+                                    "type": "integer",
+                                    "description": "Tracks when a card has been successfully activated."
+                                },
+                                "xdm:cardActivationStart": {
+                                    "title": "Card Activation Started",
+                                    "type": "integer",
+                                    "description": "Tracks when a card activation process has been started."
+                                },
+                                "xdm:cardCancelled": {
+                                    "title": "Card Cancelled",
+                                    "type": "integer",
+                                    "description": "Tracks when a card has been cancelled."
+                                },
+                                "xdm:cardControlsLocked": {
+                                    "title": "Card Controls Locked",
+                                    "type": "integer",
+                                    "description": "Tracks when a card controls have been locked."
+                                },
+                                "xdm:cardControlsUnlocked": {
+                                    "title": "Card Controls Unlocked",
+                                    "type": "integer",
+                                    "description": "Tracks when a card controls have been unlocked."
+                                },
+                                "xdm:cardLocked": {
+                                    "title": "Card Locked",
+                                    "type": "integer",
+                                    "description": "Tracks when a card has been locked."
+                                },
+                                "xdm:cardOrderNew": {
+                                    "title": "Order New Card",
+                                    "type": "integer",
+                                    "description": "Tracks when a card has been requested."
+                                },
+                                "xdm:cardOrderType": {
+                                    "title": "Card Order Type",
+                                    "type": "string",
+                                    "enum": [
+                                        "new",
+                                        "lost",
+                                        "stolen",
+                                        "never received",
+                                        "damaged"
+                                    ],
+                                    "description": "Tracks the type of card order associated with a card order event."
+                                },
+                                "xdm:cardType": {
+                                    "title": "Card Type",
+                                    "type": "string",
+                                    "enum": [
+                                        "credit",
+                                        "debit",
+                                        "prepaid",
+                                        "paypal",
+                                        "atm",
+                                        "virtual",
+                                        "hsa",
+                                        "fsa"
+                                    ],
+                                    "description": "Tracks the type of card associated with an event."
+                                },
+                                "xdm:cardUnlocked": {
+                                    "title": "Card Unlocked",
+                                    "type": "integer",
+                                    "description": "Tracks when a card has been unlocked."
+                                }
+                            }
                         }
                     }
                 }
@@ -103,7 +113,7 @@
             "$ref": "#/definitions/card-actions"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:personalFinances": {

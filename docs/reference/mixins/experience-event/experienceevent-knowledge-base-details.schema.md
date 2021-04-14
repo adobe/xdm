@@ -9,7 +9,7 @@ https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-knowledge-base-details.schema.json](mixins/experience-event/experienceevent-knowledge-base-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-knowledge-base-details.schema.json](mixins/experience-event/experienceevent-knowledge-base-details.schema.json) |
 
 ## Knowledge Base Details Example
 ```json
@@ -73,23 +73,23 @@ https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:knowledgeBaseArticeID`| string | Optional |
+| `xdm:knowledgeBaseArticleID`| string | Optional |
 | `xdm:knowledgeBaseArticleType`| string | Optional |
 | `xdm:knowledgeBaseArticleView`| integer | Optional |
 | `xdm:knowledgeBaseSearch`|  | Optional |
 
 
 
-#### xdm:knowledgeBaseArticeID
+#### xdm:knowledgeBaseArticleID
 ##### Knowledge Base Article ID
 
 Tracks the knowledge base article ID when it has been viewed.
 
-`xdm:knowledgeBaseArticeID`
+`xdm:knowledgeBaseArticleID`
 * is optional
 * type: `string`
 
-##### xdm:knowledgeBaseArticeID Type
+##### xdm:knowledgeBaseArticleID Type
 
 
 `string`

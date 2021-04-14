@@ -25,22 +25,22 @@
     "definitions": {
         "claim-process": {
             "properties": {
-                "xdm:disputes": {
+                "xdm:claims": {
                     "type": "object",
                     "properties": {
-                        "xdm:claimID": {
-                            "title": "Claim ID",
+                        "xdm:ID": {
+                            "title": "Claims ID",
                             "type": "string",
-                            "description": "ID of the claim being submitted."
+                            "description": "Unique identifier for the claim."
                         },
-                        "xdm:claimStartDate": {
-                            "title": "Claim Start Date",
+                        "xdm:startDate": {
+                            "title": "Start Date",
                             "type": "string",
                             "format": "date-time",
                             "description": "Date the claim was successfully submitted."
                         },
-                        "xdm:claimStatus": {
-                            "title": "Claim Status",
+                        "xdm:status": {
+                            "title": "Status",
                             "type": "string",
                             "enum": [
                                 "initiated",
@@ -50,13 +50,8 @@
                             ],
                             "description": "Captures the status of the claim for any given point in the application process."
                         },
-                        "xdm:claimSteps": {
-                            "title": "Claim Steps",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-                            "description": "Extension of toolUsage data type."
-                        },
-                        "xdm:claimType": {
-                            "title": "Claim Type",
+                        "xdm:type": {
+                            "title": "Type",
                             "type": "string",
                             "enum": [
                                 "homeowners",
@@ -72,10 +67,21 @@
                             ],
                             "description": "Type of claim submitted."
                         },
-                        "xdm:policy": {
-                            "title": "Policy",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/policy-details",
-                            "description": "Extension of Policy data type."
+                        "xdm:policyID": {
+                            "title": "Policy ID",
+                            "type": "string",
+                            "description": "Policy Identifier."
+                        },
+                        "xdm:benefitAmount": {
+                            "title": "Benefit Amount",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Captures the benefit amount."
+                        },
+                        "xdm:steps": {
+                            "title": "Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
                         }
                     }
                 }
@@ -90,36 +96,11 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "xdm:disputes": {
-                "xdm:claimID": "P102819201D",
-                "xdm:claimStartDate": "2021-03-04T15:52:25+00:00",
-                "xdm:claimStatus": "approved",
-                "xdm:claimSteps": {
-                    "xdm:tool-usage": {
-                        "xdm:toolUsageCancelled": 1,
-                        "xdm:toolUsageComplete": 1,
-                        "xdm:toolUsageFailure": 1,
-                        "xdm:toolUsageID": "T421",
-                        "xdm:toolUsageName": "calculator",
-                        "xdm:toolUsageSaved": 1,
-                        "xdm:toolUsageStart": 1,
-                        "xdm:toolUsageStep": 1,
-                        "xdm:toolUsageStepName": "enter parameters",
-                        "xdm:toolUsageSubmitted": 1,
-                        "xdm:toolUsageType": "generic"
-                    }
-                },
-                "xdm:claimType": "automobile",
-                "xdm:policy": {
-                    "xdm:policy-details": {
-                        "xdm:policyEndDate": "2021-07-24",
-                        "xdm:policyID": "A10276151",
-                        "xdm:policyName": "Personal Automobile Coverage",
-                        "xdm:policyStartDate": "2021-01-24",
-                        "xdm:policyState": "MO",
-                        "xdm:policyType": "automobile"
-                    }
-                }
+            "xdm:claims": {
+                "xdm:ID": "P102819201D",
+                "xdm:startDate": "2021-03-04T15:52:25+00:00",
+                "xdm:status": "approved",
+                "xdm:type": "automobile"
             }
         }
     ]

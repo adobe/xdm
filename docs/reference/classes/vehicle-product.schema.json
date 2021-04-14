@@ -1,0 +1,154 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/vehicle-product",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Vehicle Product",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "meta:tags": {
+        "industry": [
+            "travel_and_hospitality",
+            "automotive"
+        ]
+    },
+    "description": "For vehicle product information such as category, number of doors, capacity, and ownership. ",
+    "definitions": {
+        "vehicle-product": {
+            "properties": {
+                "xdm:color": {
+                    "title": "Color",
+                    "type": "string",
+                    "description": "Captures the color of the vehicle."
+                },
+                "xdm:inventoryType": {
+                    "title": "Inventory Type",
+                    "enum": [
+                        "new",
+                        "used",
+                        "certified preowned"
+                    ],
+                    "description": "Captures the inventory type of the vehicle."
+                },
+                "xdm:luggageCapacity": {
+                    "title": "Luggage Capacity",
+                    "type": "integer",
+                    "description": "Number of pieces of luggage that fit in the vehicle."
+                },
+                "xdm:make": {
+                    "title": "Make",
+                    "type": "string",
+                    "description": "Captures the make of the vehicle."
+                },
+                "xdm:mileage": {
+                    "title": "Mileage",
+                    "type": "integer",
+                    "description": "Captures the current mileage of a vehicle."
+                },
+                "xdm:model": {
+                    "title": "Model",
+                    "type": "string",
+                    "description": "Captures the model of the vehicle."
+                },
+                "xdm:numberOfDoors": {
+                    "title": "Number of Doors",
+                    "type": "integer",
+                    "description": "How many operating doors the vehicle has."
+                },
+                "xdm:options": {
+                    "title": "Options",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Captures an array of strings detailing vehicle options, such as heated seats, moonroof, navigation system, manual transmission, etc."
+                },
+                "xdm:ownership": {
+                    "title": "Ownership",
+                    "type": "string",
+                    "description": "Parent company of the vehicle."
+                },
+                "xdm:passengerCapacity": {
+                    "title": "Passenger Capacity",
+                    "type": "integer",
+                    "description": "Number of passengers that fit in the vehicle."
+                },
+                "xdm:postalCode": {
+                    "title": "Postal Code",
+                    "type": "string",
+                    "description": "Captures the postal code where the vehicle resides."
+                },
+                "xdm:starRating": {
+                    "title": "Star Rating",
+                    "type": "integer",
+                    "description": "Star rating associated with the vehicle."
+                },
+                "xdm:style": {
+                    "title": "Style",
+                    "type": "string",
+                    "description": "Captures the style of the vehicle, such as 2WD, 4WD, 2 Door Coupe, 4 Door Sedan, Convertible, etc."
+                },
+                "xdm:trim": {
+                    "title": "Trim",
+                    "type": "string",
+                    "description": "Captures the trim level or series of the vehicle."
+                },
+                "xdm:vehicleCategory": {
+                    "title": "Vehicle Category",
+                    "type": "string",
+                    "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc."
+                },
+                "xdm:vin": {
+                    "title": "Vehicle Identification Number",
+                    "type": "string",
+                    "description": "Captures the vehicle identification number (VIN) of the vehicle."
+                },
+                "xdm:year": {
+                    "title": "Year",
+                    "type": "integer",
+                    "description": "Captures the model year of the vehicle."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/vehicle-product"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:color": "black:",
+            "xdm:inventoryType": "new",
+            "xdm:luggageCapacity": 4,
+            "xdm:make": "Ford",
+            "xdm:mileage": 250,
+            "xdm:model": "Mach-E",
+            "xdm:numberOfDoors": 4,
+            "xdm:options": [
+                "moonroof",
+                "leather seats",
+                "tow package"
+            ],
+            "xdm:passengerCapacity": 6,
+            "xdm:postalCode": "99804",
+            "xdm:starRating": 5,
+            "xdm:style": "SUV",
+            "xdm:trim": "Limited",
+            "xdm:vin": "1FM5K8F83GGC08849",
+            "xdm:year": 2021
+        }
+    ]
+}

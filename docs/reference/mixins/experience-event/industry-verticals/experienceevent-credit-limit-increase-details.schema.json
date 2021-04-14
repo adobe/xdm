@@ -41,7 +41,7 @@
             "$ref": "#/definitions/credit-limit-increase-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:personalFinances": {
@@ -53,7 +53,7 @@
                         "xdm:formApplicationRequestedAmount": "2000.00",
                         "xdm:formApplicationStatus": "initiated",
                         "xdm:formApplicationStatusUpdate": "",
-                        "xdm:formApplicationType": "loan",
+                        "xdm:formApplicationType": "credit limit increase",
                         "xdm:formApplicationUnderReview": "",
                         "xdm:formApplicationUsage": ""
                     }

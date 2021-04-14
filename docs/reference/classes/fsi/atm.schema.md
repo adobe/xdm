@@ -9,7 +9,7 @@ For ATM information such as active status, addrerss, ID and name.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/fsi/atm.schema.json](classes/fsi/atm.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/fsi/atm.schema.json](classes/fsi/atm.schema.json) |
 ## Schema Hierarchy
 
 * ATM `https://ns.adobe.com/xdm/classes/fsi/atm`

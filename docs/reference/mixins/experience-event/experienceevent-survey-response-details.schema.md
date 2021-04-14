@@ -9,28 +9,13 @@ https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-survey-response-details.schema.json](mixins/experience-event/experienceevent-survey-response-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-survey-response-details.schema.json](mixins/experience-event/experienceevent-survey-response-details.schema.json) |
 
 ## Survey Response Details Example
 ```json
 {
   "xdm:surveyResponse": {
-    "xdm:surveyID": "",
-    "xdm:surveySteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "calculator",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    }
+    "xdm:surveyID": ""
   }
 }
 ```

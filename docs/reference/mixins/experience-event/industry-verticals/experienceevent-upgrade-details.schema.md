@@ -9,15 +9,12 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.json) |
 
 ## Upgrade Details Example
 ```json
 {
-  "xdm:upgrade": {
-    "xdm:upgradeOffer": {
-      "xdm:Offer Details": {}
-    },
+  "xdm:upgrades": {
     "xdm:upgradeTransaction": {
       "xdm:transaction": {
         "xdm:transactionID": "T10291832",
@@ -33,18 +30,18 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:upgrade](#xdmupgrade) | `object` | Optional | Upgrade Details (this schema) |
+| [xdm:upgrades](#xdmupgrades) | `object` | Optional | Upgrade Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:upgrade
+## xdm:upgrades
 
 
-`xdm:upgrade`
+`xdm:upgrades`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:upgrade Type
+### xdm:upgrades Type
 
 
 `object` with following properties:
@@ -52,25 +49,32 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:upgradeOffer`|  | Optional |
+| `xdm:upgradeImpressions`| array | Optional |
 | `xdm:upgradeSteps`|  | Optional |
 | `xdm:upgradeTransaction`|  | Optional |
 
 
 
-#### xdm:upgradeOffer
-##### Upgrade Offer
+#### xdm:upgradeImpressions
+##### Upgrade Impressions
 
-Extension of offer details data type.
+Array of the impressions data type.
 
-`xdm:upgradeOffer`
+`xdm:upgradeImpressions`
 * is optional
 * type: reference
 
-##### xdm:upgradeOffer Type
+
+##### xdm:upgradeImpressions Type
 
 
-* []() – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details`
+Array type: reference
+
+All items must be of the type:
+* []() – `https://ns.adobe.com/xdm/datatypes/impressions`
+
+
+
 
 
 

@@ -7,6 +7,10 @@ const uberSchemaFolder = tempInputFolder + "uberschemas/"
 
 let industries = JSON.parse(fs.readFileSync('industries.json'));
 for (let industry in industries) {//uber schemas for industry mixins only
+    let uberIndustrySchemaFolder = uberSchemaFolder + industry + "/";
+    if (!fs.existsSync(uberIndustrySchemaFolder)){
+        fs.mkdirSync(uberIndustrySchemaFolder);
+    }
     glob(tempInputFolder + "**/*.schema.json", function(er, files) {
         let classes = {};
         files.forEach(function(file) {
@@ -34,7 +38,7 @@ for (let industry in industries) {//uber schemas for industry mixins only
         //console.log(industry + JSON.stringify(classes,null, 2))
 
         for (let ind in classes) {//generate uber schemas for each class
-            let uberSchemaFile = uberSchemaFolder+ind.split("/").pop() + "-generated-" + industry + ".schema.json"
+            let uberSchemaFile = uberIndustrySchemaFolder+ind.split("/").pop() + "-generated-" + industry + ".schema.json"
             //console.log("Generate uber schema: " + uberSchemaFile);
 
             let xdmObj = {};

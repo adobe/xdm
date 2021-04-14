@@ -9,7 +9,7 @@ https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.json) |
 
 ## Prescription Details Example
 ```json
@@ -19,21 +19,6 @@ https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-
     "xdm:prescriptionID": "",
     "xdm:prescriptionRefill": true,
     "xdm:prescriptionRefillsRemaining": 2,
-    "xdm:prescriptionSteps": {
-      "xdm:tool-usage": {
-        "xdm:toolUsageCancelled": 1,
-        "xdm:toolUsageComplete": 1,
-        "xdm:toolUsageFailure": 1,
-        "xdm:toolUsageID": "T421",
-        "xdm:toolUsageName": "prescription",
-        "xdm:toolUsageSaved": 1,
-        "xdm:toolUsageStart": 1,
-        "xdm:toolUsageStep": 1,
-        "xdm:toolUsageStepName": "enter parameters",
-        "xdm:toolUsageSubmitted": 1,
-        "xdm:toolUsageType": "generic"
-      }
-    },
     "xdm:prescriptionUpload": {
       "xdm:file-transfer": {
         "xdm:fileName": "4",

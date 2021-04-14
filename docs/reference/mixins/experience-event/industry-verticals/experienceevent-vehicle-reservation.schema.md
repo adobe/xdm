@@ -9,7 +9,7 @@ Collects all details specific to a vehicle reservation.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json](mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json](mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json) |
 ## Schema Hierarchy
 
 * Vehicle Reservation `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation`
@@ -19,25 +19,29 @@ Collects all details specific to a vehicle reservation.
 ## Vehicle Reservation Example
 ```json
 {
-  "xdm:vehicleReservation": {
-    "xdm:couponCode": "10OFF",
-    "xdm:vehicleDifferentDropoffLocation": false,
-    "xdm:discountPercent": 0.1,
-    "xdm:dropOffDateTime": "2021-06-18T15:52:25+00:00",
-    "xdm:vehicleDropOffLocation": "Sydney International Airport",
-    "xdm:vehicleDropOffLocationCode": "SYD",
-    "xdm:freeCancelation": true,
-    "xdm:guestID": "R101921H166",
-    "xdm:loyaltyID": "X112JX123R594",
-    "xdm:payLaterEligible": true,
-    "xdm:pickUpDateTime": "2021-06-25T15:52:25+00:00",
-    "xdm:vehiclePickUpLocation": "Phoenix Sky Harbor International Airport",
-    "xdm:vehiclePickUpLocationCode": "PHX",
-    "xdm:prePaid": false,
-    "xdm:productID": "2021FRDMST",
-    "xdm:refundable": true,
-    "xdm:rentersAge": 33,
-    "xdm:vehicleClass": "premium"
+  "xdm:reservations": {
+    "xdm:vehicleReservations": [
+      {
+        "xdm:couponCode": "10OFF",
+        "xdm:vehicleDifferentDropoffLocation": false,
+        "xdm:discountPercent": 0.1,
+        "xdm:dropOffDateTime": "2021-06-18T15:52:25+00:00",
+        "xdm:vehicleDropOffLocation": "Sydney International Airport",
+        "xdm:vehicleDropOffLocationCode": "SYD",
+        "xdm:freeCancelation": true,
+        "xdm:guestID": "R101921H166",
+        "xdm:loyaltyID": "X112JX123R594",
+        "xdm:payLaterEligible": true,
+        "xdm:pickUpDateTime": "2021-06-25T15:52:25+00:00",
+        "xdm:vehiclePickUpLocation": "Phoenix Sky Harbor International Airport",
+        "xdm:vehiclePickUpLocationCode": "PHX",
+        "xdm:prePaid": false,
+        "xdm:productID": "2021FRDMST",
+        "xdm:refundable": true,
+        "xdm:rentersAge": 33,
+        "xdm:vehicleClass": "premium"
+      }
+    ]
   }
 }
 ```
@@ -66,13 +70,11 @@ Collects all details specific to a vehicle reservation.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
-| `xdm:ancillaryRevenue`|  | Optional |
 | `xdm:cancellation`| integer | Optional |
 | `xdm:confirmationNumber`| string | Optional |
 | `xdm:created`| integer | Optional |
 | `xdm:currencyCode`| string | Optional |
 | `xdm:endDate`| string | Optional |
-| `xdm:itemComparison`|  | Optional |
 | `xdm:length`| integer | Optional |
 | `xdm:modification`| integer | Optional |
 | `xdm:modificationDate`| string | Optional |
@@ -81,11 +83,9 @@ Collects all details specific to a vehicle reservation.
 | `xdm:numberOfChildren`| integer | Optional |
 | `xdm:processSteps`|  | Optional |
 | `xdm:purpose`| string | Optional |
-| `xdm:rackrate`|  | Optional |
 | `xdm:startDate`| string | Optional |
 | `xdm:transaction`|  | Optional |
 | `xdm:triptype`| string | Optional |
-| `xdm:type`| string | Optional |
 
 
 
@@ -103,26 +103,6 @@ Tracks the reservation number/identifier.
 
 `string`
 
-
-
-
-
-
-
-
-#### xdm:ancillaryRevenue
-##### Ancillary Revenue
-
-Protection and equipment revenue associated with a reservation.
-
-`xdm:ancillaryRevenue`
-* is optional
-* type: reference
-
-##### xdm:ancillaryRevenue Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 
@@ -236,26 +216,6 @@ The end drop-off/return/check-out date of the reservation.
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
-
-
-
-
-
-
-
-#### xdm:itemComparison
-##### Item Comparison
-
-Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.
-
-`xdm:itemComparison`
-* is optional
-* type: reference
-
-##### xdm:itemComparison Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/comparisons`
 
 
 
@@ -416,35 +376,20 @@ Tracks the purpose of the reservation, typically either business or personal.
 
 `xdm:purpose`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
+##### xdm:purpose Type
+
+
+`string`
+
+
 
 ##### xdm:purpose Known Values
 | Value | Description |
 |-------|-------------|
-| `business` |  |
-| `personal` |  |
-
-
-
-
-
-
-#### xdm:rackrate
-##### Rack Rate
-
-Cost for the same day reservation without prior booking arrangements.
-
-`xdm:rackrate`
-* is optional
-* type: reference
-
-##### xdm:rackrate Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/currency`
-
+| `business` | Business |
+| `personal` | Personal |
 
 
 
@@ -500,37 +445,21 @@ Indicates if the reservation is for a one way, round trip, or multi-city.
 
 `xdm:triptype`
 * is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmreservations-known-values).
-
-##### xdm:triptype Known Values
-| Value | Description |
-|-------|-------------|
-| `roundtrip` |  |
-| `one-way` |  |
-| `multi-city` |  |
-
-
-
-
-
-
-#### xdm:type
-##### Type
-
-Records the type of reservation being placed.
-
-`xdm:type`
-* is optional
 * type: `string`
 
-##### xdm:type Type
+##### xdm:triptype Type
 
 
 `string`
 
 
+
+##### xdm:triptype Known Values
+| Value | Description |
+|-------|-------------|
+| `roundtrip` | Roundtrip |
+| `oneWay` | One Way |
+| `multiCity` | Multi-City |
 
 
 

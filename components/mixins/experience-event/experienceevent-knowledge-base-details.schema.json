@@ -30,7 +30,7 @@
         "xdm:siteKnowledge": {
           "type": "object",
           "properties": {
-            "xdm:knowledgeBaseArticeID": {
+            "xdm:knowledgeBaseArticleID": {
               "title": "Knowledge Base Article ID",
               "type": "string",
               "description": "Tracks the knowledge base article ID when it has been viewed."
@@ -60,5 +60,5 @@
       "$ref": "#/definitions/knowledge-base-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

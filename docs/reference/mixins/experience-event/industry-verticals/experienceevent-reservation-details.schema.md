@@ -9,7 +9,7 @@ Reservation details such as length, modification, refundable status, and number 
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.json) |
 
 ## Reservation Details Example
 ```json

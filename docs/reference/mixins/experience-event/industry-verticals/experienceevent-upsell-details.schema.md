@@ -9,7 +9,7 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.json) |
 
 ## Upsell Details Example
 ```json

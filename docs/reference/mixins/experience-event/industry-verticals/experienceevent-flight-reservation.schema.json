@@ -80,6 +80,16 @@
                                         "type": "string",
                                         "description": "Tracks the flight number."
                                     },
+                                    "xdm:aircraftID": {
+                                        "title": "Aircraft ID",
+                                        "type": "string",
+                                        "description": "Identifier of the aircraft."
+                                    },
+                                    "xdm:aircraftType": {
+                                        "title": "Aircraft Type",
+                                        "type": "string",
+                                        "description": "Type of aircraft."
+                                    },
                                     "xdm:loyaltyID": {
                                         "title": "Loyalty ID",
                                         "type": "string",
@@ -144,8 +154,8 @@
                                         "description": "Currency code used to make the purchase. ISO 4217 currency code.",
                                         "pattern": "^[A-Z]{3}$"
                                     },
-                                    "xdm:ID": {
-                                        "title": "ID",
+                                    "xdm:ticketNumber": {
+                                        "title": "Ticket Number",
                                         "type": "string",
                                         "description": "Tracks the reservation number/identifier."
                                     },
@@ -304,7 +314,7 @@
             "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:reservations": {

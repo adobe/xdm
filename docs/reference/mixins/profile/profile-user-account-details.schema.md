@@ -9,7 +9,7 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-user-account-details.schema.json](mixins/profile/profile-user-account-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-user-account-details.schema.json](mixins/profile/profile-user-account-details.schema.json) |
 
 ## User Account Details Example
 ```json
@@ -160,7 +160,7 @@ Extension of the Personal Profile data type.
 #### xdm:productPreferences
 ##### Product Preferences
 
-Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc.
+Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc.
 
 `xdm:productPreferences`
 * is optional

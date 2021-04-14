@@ -9,7 +9,7 @@ Used for financial account balance transfers between accounts.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json](mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json](mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json) |
 
 ## Balance Transfers Example
 ```json

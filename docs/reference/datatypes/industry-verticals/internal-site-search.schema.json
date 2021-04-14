@@ -142,7 +142,7 @@
             "$ref": "#/definitions/internal-site-search"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:numberOfResults": 258,

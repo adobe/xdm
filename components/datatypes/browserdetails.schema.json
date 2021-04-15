@@ -72,14 +72,12 @@
         "xdm:viewportHeight": {
           "title": "Viewport height",
           "type": "integer",
-          "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-          "minimum": 0
+          "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height."
         },
         "xdm:viewportWidth": {
           "title": "Viewport width",
           "type": "integer",
-          "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
-          "minimum": 0
+          "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width."
         }
       }
     },

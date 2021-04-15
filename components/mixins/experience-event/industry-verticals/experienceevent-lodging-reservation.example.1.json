@@ -1,27 +1,31 @@
 {
-  "xdm:lodgingReservation": {
-    "xdm:agentID": "A118210921",
-    "xdm:averageDailyPrice": {
-      "xdm:amount": 197.85,
-      "xdm:currencyCode": "USD"
-    },
-    "xdm:basePrice": "199.99",
-    "xdm:bookingID": "81RI2021O510",
-    "xdm:checkInDate": "1939-10-27T15:05:15+00:00",
-    "xdm:checkOutDate": "1939-10-31T20:05:15+00:00",
-    "xdm:couponCode": "20OFF",
-    "xdm:discountPercent": 0.2,
-    "xdm:freeCancelation": false,
-    "xdm:guestID": "GUX818974145",
-    "xdm:loyaltyID": "H887J001021",
-    "xdm:numberOfRooms": 2,
-    "xdm:propertyID": "H1939T10921",
-    "xdm:propertyName": "Hollywood Tower Hotel",
-    "xdm:refundable": true,
-    "xdm:reservationStatus": "confirmed",
-    "xdm:roomAccessibilityType": "n/a",
-    "xdm:roomCapacity": 6,
-    "xdm:roomType": "king",
-    "xdm:smoking": false
+  "xdm:reservations": {
+    "xdm:lodgingReservations": [
+      {
+        "xdm:agentID": "A118210921",
+        "xdm:averageDailyPrice": {
+          "xdm:amount": 197.85,
+          "xdm:currencyCode": "USD"
+        },
+        "xdm:basePrice": "199.99",
+        "xdm:bookingID": "81RI2021O510",
+        "xdm:checkInDate": "1939-10-27T15:05:15+00:00",
+        "xdm:checkOutDate": "1939-10-31T20:05:15+00:00",
+        "xdm:couponCode": "20OFF",
+        "xdm:discountPercent": 0.2,
+        "xdm:freeCancelation": false,
+        "xdm:guestID": "GUX818974145",
+        "xdm:loyaltyID": "H887J001021",
+        "xdm:numberOfRooms": 2,
+        "xdm:propertyID": "H1939T10921",
+        "xdm:propertyName": "Hollywood Tower Hotel",
+        "xdm:refundable": true,
+        "xdm:reservationStatus": "confirmed",
+        "xdm:roomAccessibilityType": "n/a",
+        "xdm:roomCapacity": 6,
+        "xdm:roomType": "king",
+        "xdm:smoking": false
+      }
+    ]
   }
 }

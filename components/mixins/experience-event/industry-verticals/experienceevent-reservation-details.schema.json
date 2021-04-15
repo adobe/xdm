@@ -22,11 +22,6 @@
         "xdm:reservations": {
           "type": "object",
           "properties": {
-            "xdm:ancillaryRevenue": {
-              "title": "Ancillary Revenue",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Protection and equipment revenue associated with a reservation."
-            },
             "xdm:cancellation": {
               "title": "Cancellation",
               "type": "integer",
@@ -58,11 +53,6 @@
               "title": "ID",
               "type": "string",
               "description": "Tracks the reservation number/identifier."
-            },
-            "xdm:itemComparison": {
-              "title": "Item Comparison",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-              "description": "Used to track room, flight, vehicle, or restaurant comparisons on a site or an app."
             },
             "xdm:length": {
               "title": "Length",
@@ -98,18 +88,17 @@
             "xdm:processSteps": {
               "title": "Process Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
             },
             "xdm:purpose": {
               "title": "Purpose",
               "type": "string",
-              "enum": ["business", "personal"],
+              "meta:enum": {
+                "business": "Business",
+                "personal": "Personal"
+              },
               "description": "Tracks the purpose of the reservation, typically either business or personal."
-            },
-            "xdm:rackrate": {
-              "title": "Rack Rate",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Cost for the same day reservation without prior booking arrangements."
             },
             "xdm:startDate": {
               "title": "Start Date",
@@ -125,13 +114,12 @@
             "xdm:triptype": {
               "title": "Trip Type",
               "type": "string",
-              "enum": ["roundtrip", "one-way", "multi-city"],
+              "meta:enum": {
+                "roundtrip": "Roundtrip",
+                "oneWay": "One Way",
+                "multiCity": "Multi-City"
+              },
               "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
-            },
-            "xdm:type": {
-              "title": "Type",
-              "type": "string",
-              "description": "Records the type of reservation being placed."
             }
           }
         }
@@ -143,5 +131,5 @@
       "$ref": "#/definitions/reservations"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

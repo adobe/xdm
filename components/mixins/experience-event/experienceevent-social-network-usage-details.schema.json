@@ -31,36 +31,46 @@
   "definitions": {
     "social-network-usage-details": {
       "properties": {
-        "xdm:marketing ": {
+        "xdm:socialMarketing ": {
           "type": "object",
           "properties": {
-            "xdm:socialContent": {
-              "title": "Social Share Content",
+            "xdm:sharedContent": {
+              "title": "Shared Content",
               "type": "string",
-              "description": "Tracks the page/content/value of the item being shared."
+              "description": "Tracks the page/url/content/value of the item being shared."
             },
-            "xdm:socialFollow": {
-              "title": "Social Follow",
+            "xdm:follow": {
+              "title": "Follow",
               "type": "integer",
               "description": "Tracks when a social follow event has occurred."
             },
-            "xdm:socialMessage": {
-              "title": "Social Share Message",
+            "xdm:sharedMessage": {
+              "title": "Shared Message",
               "type": "string",
               "description": "Message that the sender sent"
             },
-            "xdm:socialNetwork": {
-              "title": "Social Share Network",
+            "xdm:interactions": {
+              "title": "Interactions",
+              "type": "integer",
+              "description": "The total number of social interactions."
+            },
+            "xdm:network": {
+              "title": "Network",
               "type": "string",
               "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc."
             },
-            "xdm:socialRecipient": {
-              "title": "Social Share Recipient",
+            "xdm:target": {
+              "title": "Target",
               "type": "string",
-              "description": "Recipient of the sharing"
+              "description": "For social interactions, this is the URL (or resource) which receives the social network action."
             },
-            "xdm:socialShare": {
-              "title": "Social Share Event",
+            "xdm:recipient": {
+              "title": "Recipient",
+              "type": "string",
+              "description": "Recipient of the shared content"
+            },
+            "xdm:share": {
+              "title": "Share",
               "type": "integer",
               "description": "Tracks when a social sharing event has occurred."
             }
@@ -74,5 +84,5 @@
       "$ref": "#/definitions/social-network-usage-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

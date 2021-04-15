@@ -9,7 +9,7 @@ Used for financial account balance transfers between accounts.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json](mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json](mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.json) |
 
 ## Balance Transfers Example
 ```json
@@ -64,44 +64,46 @@ Used for financial account balance transfers between accounts.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:balanceTransfer`|  | Optional |
-| `xdm:balanceTransferAccount`|  | Optional |
+| `xdm:balanceTransfers`| object | Optional |
 
 
 
-#### xdm:balanceTransfer
-##### Balance Transfer
+#### xdm:balanceTransfers
 
-Extension of transaction data type.
+Captures the details of balance transfers between accounts.
 
-`xdm:balanceTransfer`
+`xdm:balanceTransfers`
 * is optional
-* type: reference
+* type: `object`
 
-##### xdm:balanceTransfer Type
+##### xdm:balanceTransfers Type
 
+Unknown type `object`.
 
-* []() – `https://ns.adobe.com/xdm/datatypes/transaction`
-
-
-
-
-
-
-
-#### xdm:balanceTransferAccount
-##### Balance Transfer Account
-
-Extension of financialAccount data type.
-
-`xdm:balanceTransferAccount`
-* is optional
-* type: reference
-
-##### xdm:balanceTransferAccount Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/financial-account`
+```json
+{
+  "type": "object",
+  "description": "Captures the details of balance transfers between accounts.",
+  "properties": {
+    "xdm:transaction": {
+      "title": "Transaction",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+      "description": "Extension of transaction data type."
+    },
+    "xdm:accountTo": {
+      "title": "Account To",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+      "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+    },
+    "xdm:accountFrom": {
+      "title": "Account From",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+      "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred."
+    }
+  },
+  "simpletype": "`object`"
+}
+```
 
 
 

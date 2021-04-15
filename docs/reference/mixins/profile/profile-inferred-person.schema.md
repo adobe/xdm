@@ -9,7 +9,7 @@ This mixin is used to capture inferred details about a person where they are not
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-inferred-person.schema.json](mixins/profile/profile-inferred-person.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [mixins/profile/profile-inferred-person.schema.json](mixins/profile/profile-inferred-person.schema.json) |
 ## Schema Hierarchy
 
 * XDM Inferred Person `https://ns.adobe.com/xdm/mixins/profile-inferred-person`

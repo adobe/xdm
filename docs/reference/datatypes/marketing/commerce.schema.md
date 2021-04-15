@@ -61,6 +61,7 @@ The records related to buying and selling activity.
 | [xdm:productListReopens](#xdmproductlistreopens) | Measure | Optional | Commerce (this schema) |
 | [xdm:productListViews](#xdmproductlistviews) | Measure | Optional | Commerce (this schema) |
 | [xdm:productViews](#xdmproductviews) | Measure | Optional | Commerce (this schema) |
+| [xdm:promotionID](#xdmpromotionid) | `string` | Optional | Commerce (this schema) |
 | [xdm:purchases](#xdmpurchases) | Measure | Optional | Commerce (this schema) |
 | [xdm:saveForLaters](#xdmsaveforlaters) | Measure | Optional | Commerce (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -241,6 +242,26 @@ View or views of a product have occurred.
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:promotionID
+### Promotion ID
+
+Promotion identifier if any for the order placed.
+
+`xdm:promotionID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:promotionID Type
+
+
+`string`
+
 
 
 

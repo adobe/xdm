@@ -9,29 +9,14 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-user-account-details.schema.json](mixins/profile/profile-user-account-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-user-account-details.schema.json](mixins/profile/profile-user-account-details.schema.json) |
 
 ## User Account Details Example
 ```json
 {
   "xdm:userAccount": {
-    "xdm:userAccountID": "X87321",
-    "xdm:userAccountType": "personal",
-    "xdm:userAccountRegistration": {
-      "xdm:tool-usage": {
-        "xdm:cancelled": 1,
-        "xdm:complete": 1,
-        "xdm:failure": 1,
-        "xdm:ID": "T421",
-        "xdm:name": "calculator",
-        "xdm:saved": 1,
-        "xdm:start": 1,
-        "xdm:step": 1,
-        "xdm:stepName": "enter parameters",
-        "xdm:submitted": 1,
-        "xdm:type": "generic"
-      }
-    }
+    "xdm:ID": "X87321",
+    "xdm:accountType": "personal"
   }
 }
 ```
@@ -59,26 +44,27 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:userAccountID`| string | Optional |
-| `xdm:userAccountPersonalDetails`|  | Optional |
-| `xdm:userAccountPreferences`| array | Optional |
-| `xdm:userAccountRegistration`|  | Optional |
-| `xdm:userAccountStart`| string | Optional |
-| `xdm:userAccountStatus`| string | Optional |
-| `xdm:userAccountType`| string | Optional |
+| `xdm:ID`| string | Optional |
+| `xdm:accountType`| string | Optional |
+| `xdm:alertStatus`| boolean | Optional |
+| `xdm:autopayStatus`| boolean | Optional |
+| `xdm:contactDetails`|  | Optional |
+| `xdm:productPreferences`| array | Optional |
+| `xdm:startDate`| string | Optional |
+| `xdm:status`| string | Optional |
 
 
 
-#### xdm:userAccountID
-##### User Account ID
+#### xdm:ID
+##### ID
 
 Captures the user account ID.
 
-`xdm:userAccountID`
+`xdm:ID`
 * is optional
 * type: `string`
 
-##### xdm:userAccountID Type
+##### xdm:ID Type
 
 
 `string`
@@ -90,16 +76,77 @@ Captures the user account ID.
 
 
 
-#### xdm:userAccountPersonalDetails
-##### User Account Personal Details
+#### xdm:accountType
+##### Account Type
+
+Captures the user account type, if applicable.
+
+`xdm:accountType`
+* is optional
+* type: `string`
+
+##### xdm:accountType Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:alertStatus
+##### Alert Status
+
+Captures whether or not alerts have been enabled for the account.
+
+`xdm:alertStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:alertStatus Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:autopayStatus
+##### Autopay Status
+
+Captures whether or not the account has been enrolled in autopay.
+
+`xdm:autopayStatus`
+* is optional
+* type: `boolean`
+
+##### xdm:autopayStatus Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:contactDetails
+##### Contact Details
 
 Extension of the Personal Profile data type.
 
-`xdm:userAccountPersonalDetails`
+`xdm:contactDetails`
 * is optional
 * type: reference
 
-##### xdm:userAccountPersonalDetails Type
+##### xdm:contactDetails Type
 
 
 * []() – `https://ns.adobe.com/xdm/context/profile-personal-details`
@@ -110,17 +157,17 @@ Extension of the Personal Profile data type.
 
 
 
-#### xdm:userAccountPreferences
-##### User Account Preferences
+#### xdm:productPreferences
+##### Product Preferences
 
-M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. 
+Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc.
 
-`xdm:userAccountPreferences`
+`xdm:productPreferences`
 * is optional
 * type: `string[]`
 
 
-##### xdm:userAccountPreferences Type
+##### xdm:productPreferences Type
 
 
 Array type: `string[]`
@@ -138,36 +185,16 @@ All items must be of the type:
 
 
 
-#### xdm:userAccountRegistration
-##### User Account Registration
-
-Extension of toolUsage data type.
-
-`xdm:userAccountRegistration`
-* is optional
-* type: reference
-
-##### xdm:userAccountRegistration Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/tool-usage`
-
-
-
-
-
-
-
-#### xdm:userAccountStart
-##### User Account Start Date
+#### xdm:startDate
+##### Start Date
 
 Date when the account was opened.
 
-`xdm:userAccountStart`
+`xdm:startDate`
 * is optional
 * type: `string`
 
-##### xdm:userAccountStart Type
+##### xdm:startDate Type
 
 
 `string`
@@ -180,45 +207,24 @@ Date when the account was opened.
 
 
 
-#### xdm:userAccountStatus
-##### User Account Status
+#### xdm:status
+##### Status
 
 This should describe the current status of the account
 
-`xdm:userAccountStatus`
+`xdm:status`
 * is optional
 * type: `enum`
 
 The value of this property **must** be equal to one of the [known values below](#xdmuseraccount-known-values).
 
-##### xdm:userAccountStatus Known Values
+##### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
 | `active` |  |
 | `inactive` |  |
 | `disabled` |  |
 | `other` |  |
-
-
-
-
-
-
-#### xdm:userAccountType
-##### User Account Type
-
-Captures the user account type, if applicable.
-
-`xdm:userAccountType`
-* is optional
-* type: `string`
-
-##### xdm:userAccountType Type
-
-
-`string`
-
-
 
 
 

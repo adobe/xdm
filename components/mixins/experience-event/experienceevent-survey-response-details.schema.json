@@ -69,9 +69,7 @@
   "allOf": [
     {
       "$ref": "#/definitions/survey-response-details"
-    },experienceevent-user-login-details.schema.json
-
-
+    }
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15"

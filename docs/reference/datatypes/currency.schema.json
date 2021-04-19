@@ -43,7 +43,7 @@
             "$ref": "#/definitions/currency"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:amount": -200757575,

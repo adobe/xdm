@@ -25,18 +25,19 @@ Adobe Advertising Cloud ExperienceEvent full extension. Contains all Solution ad
 
 # Adobe Advertising Cloud ExperienceEvent Full Extension Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [https://ns.adobe.com/experience/adcloud/adDeliveryDetails](#httpsnsadobecomexperienceadcloudaddeliverydetails) | Adobe Advertising Cloud Ad Delivery Details | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/advertisement](#httpsnsadobecomexperienceadcloudadvertisement) | Adobe Advertising Cloud Ad Details | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/campaign](#httpsnsadobecomexperienceadcloudcampaign) | Ad Campaign Detail | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/conversionDetails](#httpsnsadobecomexperienceadcloudconversiondetails) | Conversion Details | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/eventType](#httpsnsadobecomexperienceadcloudeventtype) | `string` | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/fees](#httpsnsadobecomexperienceadcloudfees) | Advertising Fee Details | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
-| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventmergeid) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [https://ns.adobe.com/experience/adcloud/adDeliveryDetails](#httpsnsadobecomexperienceadcloudaddeliverydetails) | Adobe Advertising Cloud Ad Delivery Details | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/advertisement](#httpsnsadobecomexperienceadcloudadvertisement) | Adobe Advertising Cloud Ad Details | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/campaign](#httpsnsadobecomexperienceadcloudcampaign) | Ad Campaign Detail | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/conversionDetails](#httpsnsadobecomexperienceadcloudconversiondetails) | Conversion Details | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/eventType](#httpsnsadobecomexperienceadcloudeventtype) | `string` | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/fees](#httpsnsadobecomexperienceadcloudfees) | Advertising Fee Details | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional |  | Adobe Advertising Cloud ExperienceEvent Full Extension (this schema) |
+| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional |  | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmeventmergeid) |
+| [xdm:producedBy](#xdmproducedby) | `string` | Optional | `"self"` | [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmproducedby) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/adcloud/adDeliveryDetails
@@ -228,6 +229,35 @@ An ID to correlate or merge multiple Experience events together that are essenti
 `string`
 
 
+
+
+
+
+## xdm:producedBy
+### Produced By
+
+Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.
+
+`xdm:producedBy`
+* is optional
+* type: `string`
+* default: `"self"`
+* defined in [XDM ExperienceEvent](../../../classes/experienceevent.schema.md#xdmproducedby)
+
+### xdm:producedBy Type
+
+
+`string`
+
+
+
+### xdm:producedBy Known Values
+| Value | Description |
+|-------|-------------|
+| `self` | Self |
+| `system` | System |
+| `salesRef` | Sales Representative |
+| `customerRep` | Customer Representative |
 
 
 

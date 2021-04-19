@@ -57,41 +57,42 @@ Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution 
 
 # Adobe Advertising Cloud ExperienceEvent Template Mixin Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [https://ns.adobe.com/experience/adcloud/adDeliveryDetails](#httpsnsadobecomexperienceadcloudaddeliverydetails) | Adobe Advertising Cloud Ad Delivery Details | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudaddeliverydetails) |
-| [https://ns.adobe.com/experience/adcloud/advertisement](#httpsnsadobecomexperienceadcloudadvertisement) | Adobe Advertising Cloud Ad Details | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudadvertisement) |
-| [https://ns.adobe.com/experience/adcloud/campaign](#httpsnsadobecomexperienceadcloudcampaign) | Ad Campaign Detail | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudcampaign) |
-| [https://ns.adobe.com/experience/adcloud/conversionDetails](#httpsnsadobecomexperienceadcloudconversiondetails) | Conversion Details | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudconversiondetails) |
-| [https://ns.adobe.com/experience/adcloud/creative](#httpsnsadobecomexperienceadcloudcreative) | Advertising Creative Management Platform Details | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#httpsnsadobecomexperienceadcloudcreative) |
-| [https://ns.adobe.com/experience/adcloud/eventType](#httpsnsadobecomexperienceadcloudeventtype) | `string` | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudeventtype) |
-| [https://ns.adobe.com/experience/adcloud/fees](#httpsnsadobecomexperienceadcloudfees) | Advertising Fee Details | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudfees) |
-| [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudinventory) |
-| [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudproductdetails) |
-| [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudstitchid) |
-| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
-| [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
-| [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
-| [xdm:advertising](#xdmadvertising) | Advertising | Optional | [Advertising Details](../../mixins/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
-| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce) |
-| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
-| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
-| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventmergeid) |
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
-| [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
-| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems) |
-| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
-| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
-| [xdm:search](#xdmsearch) | Search | Optional | [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
-| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [https://ns.adobe.com/experience/adcloud/adDeliveryDetails](#httpsnsadobecomexperienceadcloudaddeliverydetails) | Adobe Advertising Cloud Ad Delivery Details | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudaddeliverydetails) |
+| [https://ns.adobe.com/experience/adcloud/advertisement](#httpsnsadobecomexperienceadcloudadvertisement) | Adobe Advertising Cloud Ad Details | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudadvertisement) |
+| [https://ns.adobe.com/experience/adcloud/campaign](#httpsnsadobecomexperienceadcloudcampaign) | Ad Campaign Detail | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudcampaign) |
+| [https://ns.adobe.com/experience/adcloud/conversionDetails](#httpsnsadobecomexperienceadcloudconversiondetails) | Conversion Details | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudconversiondetails) |
+| [https://ns.adobe.com/experience/adcloud/creative](#httpsnsadobecomexperienceadcloudcreative) | Advertising Creative Management Platform Details | Optional |  | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#httpsnsadobecomexperienceadcloudcreative) |
+| [https://ns.adobe.com/experience/adcloud/eventType](#httpsnsadobecomexperienceadcloudeventtype) | `string` | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudeventtype) |
+| [https://ns.adobe.com/experience/adcloud/fees](#httpsnsadobecomexperienceadcloudfees) | Advertising Fee Details | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudfees) |
+| [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudinventory) |
+| [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudproductdetails) |
+| [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudstitchid) |
+| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional |  | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
+| [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional |  | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
+| [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional |  | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
+| [xdm:advertising](#xdmadvertising) | Advertising | Optional |  | [Advertising Details](../../mixins/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
+| [xdm:application](#xdmapplication) | Application | Optional |  | [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional |  | [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional |  | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmcommerce) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional |  | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
+| [xdm:device](#xdmdevice) | Device | Optional |  | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional |  | [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
+| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional |  | [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional |  | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional |  | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmeventmergeid) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional |  | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
+| [xdm:media](#xdmmedia) | Media information | Optional |  | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional |  | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:producedBy](#xdmproducedby) | `string` | Optional | `"self"` | [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmproducedby) |
+| [xdm:productListItems](#xdmproductlistitems) | Product list item | Optional |  | [Commerce Details](../../mixins/experience-event/experienceevent-commerce.schema.md#xdmproductlistitems) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional |  | [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional |  | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
+| [xdm:search](#xdmsearch) | Search | Optional |  | [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional |  | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional |  | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
+| [xdm:web](#xdmweb) | Web information | Optional |  | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/adcloud/adDeliveryDetails
@@ -587,6 +588,35 @@ The transient circumstances related to the observation. Examples include locale 
 
 * [Place context](../../datatypes/placecontext.schema.md) – `https://ns.adobe.com/xdm/context/placecontext`
 
+
+
+
+
+## xdm:producedBy
+### Produced By
+
+Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.
+
+`xdm:producedBy`
+* is optional
+* type: `string`
+* default: `"self"`
+* defined in [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md#xdmproducedby)
+
+### xdm:producedBy Type
+
+
+`string`
+
+
+
+### xdm:producedBy Known Values
+| Value | Description |
+|-------|-------------|
+| `self` | Self |
+| `system` | System |
+| `salesRef` | Sales Representative |
+| `customerRep` | Customer Representative |
 
 
 

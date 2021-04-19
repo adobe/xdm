@@ -1,46 +1,46 @@
 
-# Policy Details Schema
+# Policy Schema
 
 ```
-https://ns.adobe.com/xdm/classes/fsi/policy-details
+https://ns.adobe.com/xdm/classes/fsi/policy
 ```
 
 Details for the insurance policy such as type, start date, and ID.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/fsi/policy.schema.json](classes/fsi/policy.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/fsi/policy.schema.json](classes/fsi/policy.schema.json) |
 ## Schema Hierarchy
 
-* Policy Details `https://ns.adobe.com/xdm/classes/fsi/policy-details`
+* Policy `https://ns.adobe.com/xdm/classes/fsi/policy`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Personal Contact Details](../../mixins/profile/profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
-## Policy Details Example
+## Policy Example
 ```json
 {
   "xdm:ID": "F7Y910JK001"
 }
 ```
 
-# Policy Details Properties
+# Policy Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
-| [xdm:ID](#xdmid) | `string` | Optional | Policy Details (this schema) |
-| [xdm:assignedBeneficiary](#xdmassignedbeneficiary) | Demographic Details | Optional | Policy Details (this schema) |
-| [xdm:benefitAmount](#xdmbenefitamount) | Currency | Optional | Policy Details (this schema) |
-| [xdm:endDate](#xdmenddate) | `string` | Optional | Policy Details (this schema) |
-| [xdm:hasAssignedBeneficiary](#xdmhasassignedbeneficiary) | `boolean` | Optional | Policy Details (this schema) |
-| [xdm:location](#xdmlocation) | Postal address | Optional | Policy Details (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Policy Details (this schema) |
-| [xdm:owner](#xdmowner) | Personal Contact Details | Optional | Policy Details (this schema) |
-| [xdm:startDate](#xdmstartdate) | `string` | Optional | Policy Details (this schema) |
-| [xdm:type](#xdmtype) | `enum` | Optional | Policy Details (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Policy (this schema) |
+| [xdm:assignedBeneficiary](#xdmassignedbeneficiary) | Demographic Details | Optional | Policy (this schema) |
+| [xdm:benefitAmount](#xdmbenefitamount) | Currency | Optional | Policy (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Policy (this schema) |
+| [xdm:hasAssignedBeneficiary](#xdmhasassignedbeneficiary) | `boolean` | Optional | Policy (this schema) |
+| [xdm:location](#xdmlocation) | Postal address | Optional | Policy (this schema) |
+| [xdm:name](#xdmname) | `string` | Optional | Policy (this schema) |
+| [xdm:owner](#xdmowner) | Personal Contact Details | Optional | Policy (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Policy (this schema) |
+| [xdm:type](#xdmtype) | `enum` | Optional | Policy (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id

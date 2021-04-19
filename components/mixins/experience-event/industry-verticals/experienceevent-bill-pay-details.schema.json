@@ -77,6 +77,6 @@
   "allOf": [{
     "$ref": "#/definitions/bill-pay-details"
   }],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate" : "2021-03-30"
 }

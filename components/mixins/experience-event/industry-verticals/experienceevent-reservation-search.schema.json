@@ -69,6 +69,6 @@
     }
   },
   "allOf": [{ "$ref": "#/definitions/reservations" }],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate" : "2021-03-15"
 }

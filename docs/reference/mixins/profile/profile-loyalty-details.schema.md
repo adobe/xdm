@@ -9,7 +9,7 @@ Loyalty details such as ID, points, join date, program, and status.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-loyalty-details.schema.json](mixins/profile/profile-loyalty-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-loyalty-details.schema.json](mixins/profile/profile-loyalty-details.schema.json) |
 
 ## Loyalty Details Example
 ```json

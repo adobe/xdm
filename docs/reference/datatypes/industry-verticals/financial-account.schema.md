@@ -9,7 +9,7 @@ Financial account details, such as owners, balances, and types.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/financial-account.schema.json](datatypes/industry-verticals/financial-account.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/financial-account.schema.json](datatypes/industry-verticals/financial-account.schema.json) |
 ## Schema Hierarchy
 
 * Financial Account `https://ns.adobe.com/xdm/datatypes/financial-account`

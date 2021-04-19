@@ -9,7 +9,7 @@ https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-support-site-search.schema.json](mixins/experience-event/experienceevent-support-site-search.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-support-site-search.schema.json](mixins/experience-event/experienceevent-support-site-search.schema.json) |
 
 ## Support Site Search Example
 ```json

@@ -9,7 +9,7 @@ Personal tax details such as filing statuses and tax bracket.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-personal-tax-profile-details.schema.json](mixins/profile/profile-personal-tax-profile-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-personal-tax-profile-details.schema.json](mixins/profile/profile-personal-tax-profile-details.schema.json) |
 
 ## Personal Tax Profile Details Example
 ```json

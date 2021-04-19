@@ -127,7 +127,7 @@
             "$ref": "#/definitions/vehicle-product"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:color": "black:",

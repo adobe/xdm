@@ -9,7 +9,7 @@ Visitor contact details such as chat start and end, as well as click to email, t
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.json) |
 
 ## Contact Request Details Example
 ```json

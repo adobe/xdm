@@ -57,7 +57,7 @@
             "$ref": "#/definitions/balance-transfers"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:personalFinances": {

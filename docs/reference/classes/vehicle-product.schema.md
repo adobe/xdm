@@ -9,7 +9,7 @@ For vehicle product information such as category, number of doors, capacity, and
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/vehicle-product.schema.json](classes/vehicle-product.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/vehicle-product.schema.json](classes/vehicle-product.schema.json) |
 ## Schema Hierarchy
 
 * Vehicle Product `https://ns.adobe.com/xdm/classes/vehicle-product`

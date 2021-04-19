@@ -9,7 +9,7 @@ Used when any application process is started, such as financing, limit changes, 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/form-applications.schema.json](datatypes/industry-verticals/form-applications.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/form-applications.schema.json](datatypes/industry-verticals/form-applications.schema.json) |
 ## Schema Hierarchy
 
 * Form Applications `https://ns.adobe.com/xdm/datatypes/form-applications`

@@ -9,7 +9,7 @@ User login details such as login state, location, and type, as well as forgot us
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-user-login-details.schema.json](mixins/experience-event/experienceevent-user-login-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-user-login-details.schema.json](mixins/experience-event/experienceevent-user-login-details.schema.json) |
 
 ## User Login Process Example
 ```json

@@ -81,7 +81,7 @@
             "$ref": "#/definitions/promotion"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:endDate": "2021-09-22T15:52:25+00:00",

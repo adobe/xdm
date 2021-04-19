@@ -54,6 +54,11 @@
                                         "type": "string",
                                         "description": "Booking ID associated with the hotel booking. "
                                     },
+                                    "xdm:rackrate": {
+                                        "title": "Rack Rate",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                                        "description": "Cost for the same day reservation without prior booking arrangements."
+                                    },
                                     "xdm:checkInDate": {
                                         "title": "Check-In Date",
                                         "type": "string",
@@ -264,11 +269,6 @@
                                                 "type": "integer",
                                                 "description": "Tracks when a user requests a check in earlier than normal check in hours."
                                             },
-                                            "xdm:rackrate": {
-                                                "title": "Rack Rate",
-                                                "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                                                "description": "Cost for the same day reservation without prior booking arrangements."
-                                            },
                                             "xdm:roomKeys": {
                                                 "title": "Room Keys",
                                                 "type": "integer",
@@ -292,7 +292,7 @@
             "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:reservations": {

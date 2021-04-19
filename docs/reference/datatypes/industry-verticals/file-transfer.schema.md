@@ -9,7 +9,7 @@ https://ns.adobe.com/xdm/datatypes/file-transfer
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/file-transfer.schema.json](datatypes/industry-verticals/file-transfer.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/file-transfer.schema.json](datatypes/industry-verticals/file-transfer.schema.json) |
 ## Schema Hierarchy
 
 * File Transfer `https://ns.adobe.com/xdm/datatypes/file-transfer`

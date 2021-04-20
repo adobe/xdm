@@ -74,10 +74,9 @@
       }
     }
   },
-  "allOf": [
-    {
-      "$ref": "#/definitions/bill-pay-details"
-    }
-  ],
-  "meta:status": "stable"
+  "allOf": [{
+    "$ref": "#/definitions/bill-pay-details"
+  }],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-03-30"
 }

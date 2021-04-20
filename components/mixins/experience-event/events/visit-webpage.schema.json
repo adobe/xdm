@@ -10,9 +10,9 @@
   "title": "Visit Web Page",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "web.webpagedetails.pageViews",  
+  "meta:conditionalValue": "web.webpagedetails.pageViews",
   "meta:intendedToExtend": [
-  "https://ns.adobe.com/xdm/context/experienceevent"
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "Use for tracking the details of a person's visit to a web page.",
   "definitions": {
@@ -117,5 +117,6 @@
       "$ref": "#/definitions/visitwebpage"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:createdDate" : "2021-02-19"
 }

@@ -155,7 +155,7 @@ Unknown type `object`.
     "xdm:webFormName": {
       "title": "Web Form Name",
       "type": "string",
-      "description": "Friendly name of the form."
+      "description": "Name of the form."
     }
   },
   "simpletype": "`object`"

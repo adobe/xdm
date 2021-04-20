@@ -347,11 +347,6 @@ Unknown type `object`.
       "title": "Link ID",
       "type": "string",
       "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email."
-    },
-    "xdm:linkName": {
-      "title": "Link Name",
-      "type": "string",
-      "description": "Friendly name to link"
     }
   },
   "simpletype": "`object`"

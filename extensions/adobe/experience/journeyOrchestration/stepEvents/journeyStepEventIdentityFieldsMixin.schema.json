@@ -25,12 +25,12 @@
             "https://ns.adobe.com/experience/journeyOrchestration/profileID": {
               "title": "Profile ID",
               "type": "string",
-              "description": "profile identifier identifies the profile sent/used in a journey."
+              "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace": {
               "title": "Profile Namespace",
               "type": "string",
-              "description": "This field describes the Namespace referenced by the Profile used in the Journey."
+              "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID "
             }
           }
         }

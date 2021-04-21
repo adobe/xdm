@@ -11,6 +11,9 @@ extensionFiles.concat(schemaFiles);
 extensionFiles.concat(componentFiles);
 addmetaTitleAndDecription(extensionFiles)
 
+/*This method will renter through every files and
+add meta:titleId and meta:descriptionId to all the files 
+in the schema,components and extensions folder*/
 function addmetaTitleAndDecription(files){
     var localObj = new Object();
     files.forEach(function (file) {
@@ -37,24 +40,27 @@ function addMetaId(obj, val,path,schemaname) {
             }else{
                 path = schemaname + '##' + path + "##" +i;
             }
-            obj["meta:"+val+"id"]=path;
+            obj["meta:"+val+"Id"]=path;
         }
     }
 }
 
 console.log("Script Completed")
-
+/* This method will find the meta:titleId and meta:descriptionId
+in the source files and create en_us.json file with 
+meta:titleId/meta:descriptionId as the key and 
+value from title/description as value */
 function createLocalizationFileAttributes(obj, localObj){
 	for(var i in obj) {
          if (typeof obj[i] == 'object') {
             createLocalizationFileAttributes(obj[i], localObj);
-        }else if(i == "meta:titleid"){
+        }else if(i == "meta:titleId"){
             titleVal = obj["title"]
-            metaTitleId = obj["meta:titleid"]
+            metaTitleId = obj["meta:titleId"]
             localObj[metaTitleId] = titleVal
-	    }else if(i == "meta:descriptionid"){
+	    }else if(i == "meta:descriptionId"){
             descVal = obj["description"]
-            metaDescId = obj["meta:descriptionid"]
+            metaDescId = obj["meta:descriptionId"]
 	        localObj[metaDescId] = descVal
 	    }
 	 

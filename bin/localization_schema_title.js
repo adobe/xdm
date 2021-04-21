@@ -1,15 +1,19 @@
 const fs = require('fs');
 const glob = require("glob");
-//const masterExtensionFolder = "../extensions";
-const masterExtensionFolder = "../test_components";
+const masterSchemasFolder = "../schemas";
+const masterComponentsFolder = "../components";
+const masterExtensionFolder = "../extensions";
 
-var schemaFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
-addmetaTitleAndDecription(schemaFiles)
+var extensionFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
+var schemaFiles = glob.sync(masterSchemasFolder + "/**/*.schema.json");
+var componentFiles = glob.sync(masterComponentsFolder + "/**/*.schema.json");
+extensionFiles.concat(schemaFiles);
+extensionFiles.concat(componentFiles);
+addmetaTitleAndDecription(extensionFiles)
 
 function addmetaTitleAndDecription(files){
     var localObj = new Object();
     files.forEach(function (file) {
-        console.log('Localize schema -->' + file);
         var originalSchema = JSON.parse(fs.readFileSync(file).toString());
         var id = originalSchema["$id"];
         var schemaname = id.substr(id.lastIndexOf('/') + 1);
@@ -19,8 +23,7 @@ function addmetaTitleAndDecription(files){
 
 	createLocalizationFileAttributes(originalSchema, localObj)
     });
-        console.log(localObj)
-        fs.writeFileSync('../test_components/en_us.json', JSON.stringify(localObj,null, 2), 'utf8');
+    fs.writeFileSync('../localization/en_us.json', JSON.stringify(localObj,null, 2), 'utf8');
 }
 
 function addMetaId(obj, val,path,schemaname) {
@@ -49,12 +52,11 @@ function createLocalizationFileAttributes(obj, localObj){
             titleVal = obj["title"]
             metaTitleId = obj["meta:titleid"]
             localObj[metaTitleId] = titleVal
-	 }else if(i == "meta:descriptionid"){
+	    }else if(i == "meta:descriptionid"){
             descVal = obj["description"]
-            metaDescId = obj["meta: descriptionid"]
-	    localObj[metaDescId] = descVal
-	 }
+            metaDescId = obj["meta:descriptionid"]
+	        localObj[metaDescId] = descVal
+	    }
 	 
-       }
-	
+    }
 }

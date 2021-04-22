@@ -1,50 +1,38 @@
 {
-  "meta:license": [
-    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/context/profile",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Individual Profile",
-  "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:tags": {
-    "industry": ["all"]
-  },
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/xdm/common/auditable"
-  ],
-  "description": "An XDM Individual Profile forms a singular representation of the attributes and interests of both identified and partially-identified individuals. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly-identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile grows, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual.",
-  "definitions": {
-    "profile": {
-      "properties": {
-        "xdm:personID": {
-          "title": "Person ID",
-          "description": "Unique identifier of Person/Profile fragment.",
-          "type": "string"
-        }
-      }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/auditable"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
-      "$ref": "#/definitions/profile"
-    }
-  ],
-  "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/classes/profile",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "profile class",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:extends": "https://ns.adobe.com/xdm/data/timeseries",
+	"description": "This is a test profile class",
+	"definitions": {
+		"profile": {
+			"properties": [
+				{
+					"xdm:testProp": {
+						"title": "Test Prop",
+						"type": "",
+						"description": "This is a test Prop",
+						"examples": [
+							"test1",
+							"test2"
+						]
+					}
+				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/profile"
+		}
+	],
+	"meta:Status": "experimental"
 }

@@ -1,0 +1,184 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/order-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Order Details",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment",
+      "public_sector"
+    ]
+  },
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "This class is used to capture order details",
+  "definitions": {
+    "order-details": {
+      "properties": {
+        "xdm:activationFee": {
+          "title": "Activation Fee",
+          "type": "number",
+          "description": "Activation Fees associated with an order"
+        },
+        "xdm:backorderValue": {
+          "title": "Backorder Value",
+          "type": "number",
+          "description": "Backorder Value associated with any backordered items included in an order"
+        },
+        "xdm:cartId": {
+          "title": "Cart ID",
+          "type": "string",
+          "description": "Cart ID for an order"
+        },
+        "xdm:cartItemsCount": {
+          "title": "Cart Items Count",
+          "type": "integer",
+          "description": "Number of items in a cart or an order"
+        },
+        "xdm:coupons": {
+          "title": "Coupons",
+          "type": "array",
+          "description": "An list of coupons included in an order"
+        },
+        "xdm:couponValue": {
+          "title": "Coupon Value",
+          "type": "number",
+          "description": "The value of the coupons applied to an order"
+        },
+        "xdm:currencyCode": {
+          "title": "Currency code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for cost and pricing"
+        },
+        "xdm:deliveryFee": {
+          "title": "Delivery Fee",
+          "type": "number",
+          "description": "The delivery fee applied to an order"
+        },
+        "xdm:depositAmount": {
+          "title": "Deposit Amount",
+          "type": "number",
+          "description": "The deposit amount applied to an order"
+        },
+        "xdm:discountValue": {
+          "title": "Discount Value",
+          "type": "number",
+          "description": "The discount value applied to an order"
+        },
+        "xdm:discounts": {
+          "title": "Discounts",
+          "type": "array",
+          "description": "The list of discounts applied to an order"
+        },
+        "xdm:giftCardValue": {
+          "title": "Gift Card Value",
+          "type": "number",
+          "description": "The value of gift cards applied to an order"
+        },
+        "xdm:itemTotalAmount": {
+          "title": "Item Total Amount",
+          "type": "number",
+          "description": "The total amount for an item included in an order. This is useful for scenarios where multiples can be added to the cart and you would like to capture a total for each line item"
+        },
+        "xdm:orderTotal": {
+          "title": "Order Total",
+          "type": "number",
+          "description": "The total value of an order"
+        },
+        "xdm:purchaseID": {
+          "title": "Purchase ID",
+          "type": "string",
+          "description": "The purchase ID of an order."
+        },
+        "xdm:otherTaxAmount": {
+          "title": "Other Tax Amount",
+          "type": "number",
+          "description": "Where applicable, other taxes applied to an order"
+        },
+        "xdm:paymentDue": {
+          "title": "Payment Due",
+          "type": "number",
+          "description": "When there are multiple payments due for an order, this value should be used to capture the amount due today"
+        },
+        "xdm:promoCodes": {
+          "title": "Promo Codes",
+          "type": "array",
+          "description": "The list of promo codes applied to an order"
+        },
+        "xdm:promoCodeValue": {
+          "title": "Promo Code Value",
+          "type": "number",
+          "description": "The promo code value applied to an order"
+        },
+        "xdm:purchaseOrderNumber": {
+          "title": "Purchase Order Number",
+          "type": "string",
+          "description": "This value should be used to record in scenarios where there is a customer purchase order number tied to an order"
+        },
+        "xdm:recurringCharge": {
+          "title": "Recurring Charge",
+          "type": "number",
+          "description": "When there are multiple payments due for an order, this value should be used to capture the recurring charge associated with the order"
+        },
+        "xdm:shippingAmount": {
+          "title": "Shipping Amount",
+          "type": "number",
+          "description": "The shipping amount associated with an order"
+        },
+        "xdm:shippingMethod": {
+          "title": "Shipping Method",
+          "type": "string",
+          "description": "The shipping method associated with an order"
+        },
+        "xdm:subtotalWithTax": {
+          "title": "Subtotal With Tax",
+          "type": "number",
+          "description": "The subtotal including tax associated with an order"
+        },
+        "xdm:subtotalWithoutTax": {
+          "title": "Subtotal Without Tax",
+          "type": "number",
+          "description": "The subtotal with added taxes associated with an order"
+        },
+        "xdm:salesTaxAmount": {
+          "title": "Sales Tax Amount",
+          "type": "number",
+          "description": "The sales tax amount associated with an order"
+        },
+        "xdm:tipAmount": {
+          "title": "Tip Amount",
+          "type": "number",
+          "description": "The tip amount associated with an order"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/product"
+    }
+  ],
+  "meta:status": "experimental"
+}

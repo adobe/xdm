@@ -32,42 +32,172 @@
   "definitions": {
     "product": {
       "properties": {
-        "xdm:productID": {
+        "xdm:brand": {
+          "title": "Brand",
+          "type": "string",
+          "description": "Brand of the product"
+        },
+        "xdm:canonicalUrl": {
+          "title": "Canonical URL",
+          "type": "string",
+          "pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
+          "description": "Canonical URL of the product"
+        },
+        "xdm:category": {
+          "title": "Category",
+          "type": "string",
+          "description": "Category of the product"
+        },
+        "xdm:createdAt": {
+          "title": "Created At Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:cogs": {
+          "title": "Cost of Goods Sold",
+          "type": "string",
+          "description": "Cost of Goods Sold of the product"
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
+        },
+        "xdm:description": {
+          "title": "Description",
+          "type": "string",
+          "description": "Description of the product"
+        },
+        "xdm:id": {
           "title": "Product ID",
           "type": "string",
-          "description": "Product unique identifer."
+          "description": "Product unique identifier"
         },
-        "xdm:productName": {
-          "title": "Product Name",
+        "xdm:inventory": {
+          "title": "Inventory",
           "type": "string",
-          "description": "Name of the product."
+          "description": "Current Inventory for the product"
         },
-        "xdm:productDescription": {
-          "title": "Product Description",
+        "xdm:lastModifiedDate": {
+          "title": "Last Modified Date",
           "type": "string",
-          "description": "Description of the product."
+          "format": "date-time",
+          "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
-        "xdm:productRating": {
-          "title": "Product Rating",
-          "type": "number",
-          "description": "Customer review rating of the product."
+        "xdm:mainImageUrl": {
+          "title": "Main Image URL",
+          "type": "string",
+          "pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
+          "description": "Main Image URL for the product"
+        },
+        "xdm:margin": {
+          "title": "Margin",
+          "type": "string",
+          "description": "Margin for the product"
+        },
+        "xdm:manufactureDate": {
+          "title": "Manufacture date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name of the product"
+        },
+        "xdm:newFromDate": {
+          "title": "New From Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "New From Date of the product. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:newToDate": {
+          "title": "New To Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "New To Date of the product. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
         },
         "xdm:productListPrice": {
           "title": "Product List price",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Default price of the product before sales and discounting."
         },
-        "xdm:productManufacturedDate": {
-          "title": "Product Manufactured date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        "xdm:price": {
+          "title": "Price",
+          "type": "number",
+          "description": "Price of the product"
         },
-        "xdm:productLastModifiedDate": {
-          "title": "Product last modified Date",
+        "xdm:productAddMethod": {
+          "title": "Product Add Method",
+          "type": "string",
+          "description": "Product Add Method of the product. Typically, only captured in an experience event"
+        },
+        "xdm:productFindingMethod": {
+          "title": "Product Finding Method",
+          "type": "string",
+          "description": "Product Finding Method of the product. Typically, only captured in an experience event"
+        },
+        "xdm:productListPosition": {
+          "title": "Product List Position",
+          "type": "string",
+          "description": "Product List Position of the product when multiple products are displayed. Typically, only captured in an experience event"
+        },
+        "xdm:quantity": {
+          "title": "Quantity",
+          "type": "string",
+          "description": "Quantity of the product. Typically, only captured in an experience event"
+        },
+        "xdm:rating": {
+          "title": "Rating",
+          "type": "number",
+          "description": "Customer review rating of the product."
+        },
+        "xdm:specialFromDate": {
+          "title": "Special From Date",
           "type": "string",
           "format": "date-time",
-          "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+          "description": "Special From Date of the product. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:specialToDate": {
+          "title": "Special To Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Special To Date of the product. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+        },
+        "xdm:subcategory": {
+          "title": "Subcategory",
+          "type": "number",
+          "description": "Subcategory of the product. Typically used in conjunction with category"
+        },
+        "xdm:sku": {
+          "title": "SKU",
+          "type": "string",
+          "description": "SKU of the product"
+        },
+        "xdm:skuVariant": {
+          "title": "SKU Variant",
+          "type": "string",
+          "description": "SKU which may be used a specific size, color or finish of a product"
+        },
+        "xdm:thumbnailUrl": {
+          "title": "Thumbnail URL",
+          "type": "string",
+          "pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
+          "description": "Thumbnail URL for the product"
+        },
+        "xdm:type": {
+          "title": "Type",
+          "type": "string",
+          "description": "Type of the product"
+        },
+        "xdm:unitPrice": {
+          "title": "Unit Price",
+          "type": "number",
+          "description": "Unit Price of the product"
         }
       }
     }
@@ -80,6 +210,5 @@
       "$ref": "#/definitions/product"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2020-10-16"
+  "meta:status": "experimental"
 }

@@ -1,0 +1,294 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-commerce-updates",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Commerce Events",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Commerce events used to capture occurrences of events that frequently occur in the shopping cart as customers interact with Product pages and purchase flows. These events are meant to be used in conjunction with the Order Info and Product variable groups",
+  "definitions": {
+    "experienceevent-commerce-updates": {
+      "properties": {
+        "xdm:billingInfoAdd": {
+          "title": "Billing Info Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds billing information"
+        },
+        "xdm:billingInfoRemove": {
+          "title": "Billing Info Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes billing information"
+        },
+        "xdm:cartAbandon": {
+          "title": "Cart Abandon",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user abandons a shopping cart after adding items to it. Cart Reopen should be used to indicate a user has returned and resumed adding items to the shopping cart"
+        },
+        "xdm:cartAdd": {
+          "title": "Cart Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds an item or items to the shopping cart"
+        },
+        "xdm:cartAddQuantity": {
+          "title": "Cart Add Quantity",
+          "type": "integer",
+          "description": "Measure of the number of items added to the shopping cart"
+        },
+        "xdm:cartOpen": {
+          "title": "Cart Open",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user opens a new shopping cart"
+        },
+        "xdm:cartRemove": {
+          "title": "Cart Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes an item or items from the Shopping Cart"
+        },
+        "xdm:cartRemoveQuantity": {
+          "title": "Cart Remove Quantity",
+          "type": "integer",
+          "description": "Measure of the number of items removed from the shopping cart"
+        },
+        "xdm:cartReopen": {
+          "title": "Cart Reopen",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user reopens a shopping cart after a cart abandon has occurred"
+        },
+        "xdm:cartTotalValue": {
+          "title": "Cart Total Value",
+          "type": "number",
+          "description": "Measure of the total cart value"
+        },
+        "xdm:cartTotalItems": {
+          "title": "Cart Total Items",
+          "type": "integer",
+          "description": "Measure of the number of items in the shopping cart"
+        },
+        "xdm:cartView": {
+          "title": "Cart View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user views the shopping cart"
+        },
+        "xdm:checkoutStart": {
+          "title": "Checkout Start",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user begins the checkout process"
+        },
+        "xdm:checkoutComplete": {
+          "title": "Checkout Complete",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user completes the checkout process"
+        },
+        "xdm:checkoutStep": {
+          "title": "Checkout Step",
+          "type": "integer",
+          "description": "A value used to capture the current step checkout process"
+        },
+        "xdm:configureProduct": {
+          "title": "Configure Product",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user configures the various facets (size, color, finish) of a product"
+        },
+        "xdm:couponAdd": {
+          "title": "Coupon Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds a coupon during the checkout process. If recording coupon codes or values, they should be captured in Order Info in the Coupons Array"
+        },
+        "xdm:couponRemove": {
+          "title": "Coupon Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes a coupon during the checkout process. If recording coupon codes or values, they should be captured in Order Info in the Coupons Array"
+        },
+        "xdm:discountAdd": {
+          "title": "Discount Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a non-coupon discount is applied to an order. If recording discount codes or values, they should be captured in Order Info in the Discounts Array"
+        },
+        "xdm:discountRemove": {
+          "title": "Discount Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a non-coupon discount is removed from an order. If recording discount codes or values, they should be captured in Order Info in the Discounts Array"
+        },
+        "xdm:giftCardAdd": {
+          "title": "Gift Card Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a gift card is added to an order"
+        },
+        "xdm:giftCardRemove": {
+          "title": "Gift Card Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a gift card is removed from an order"
+        },
+        "xdm:giftMessageSelected": {
+          "title": "Gift Message Selected",
+          "type": "integer",
+          "description": "Measure of the occurrences when a gift message is added to an order"
+        },
+        "xdm:giftWrappingSelected": {
+          "title": "Gift Wrapping Selected",
+          "type": "integer",
+          "description": "Measure of the occurrences when gift wrapping is added to an order"
+        },
+        "xdm:inStorePurchase": {
+          "title": "In-store Purchase",
+          "type": "integer",
+          "description": "Measure of the occurrences when a purchase is made in-store"
+        },
+        "xdm:imageSelect": {
+          "title": "Image Select",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user clicks on a product image in order to view increased detail when browsing products on the site"
+        },
+        "xdm:oneClickCheckout": {
+          "title": "One Click Checkout",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user opts to use a one click checkout option"
+        },
+        "xdm:oneClickPay": {
+          "title": "One Click",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user opts to use a one click payment option"
+        },
+        "xdm:orderReview": {
+          "title": "Order Review",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user reviews an order during the checkout process"
+        },
+        "xdm:quickView": {
+          "title": "Quick View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user utilizes a quick product view function on the site. This value would be used to distinguish quick product views which may not include navigating away from the product listing page and product views which involve a load of the product page"
+        },
+        "xdm:paymentMethodAdd": {
+          "title": "Payment Method Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds a payment method during the checkout process or in account management"
+        },
+        "xdm:paymentMethodRemove": {
+          "title": "Payment Method Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes a payment method during the checkout process or in account management"
+        },
+        "xdm:productListPageView": {
+          "title": "Product List Page View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user views a product list page"
+        },
+        "xdm:productQuantityEdit": {
+          "title": "Product Quantity Edit",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user edits the quantity of an item in the shopping cart"
+        },
+        "xdm:productView": {
+          "title": "Product View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user views a product page"
+        },
+        "xdm:promoCodeAdd": {
+          "title": "Promo Code Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds a promo code during the checkout process. If recording promo codes or values, they should be captured in Order Info in the Promo Codes Array"
+        },
+        "xdm:promoCodeRemove": {
+          "title": "Promo Code Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes a promo code during the checkout process. If recording promo codes or values, they should be captured in Order Info in the Promo Codes Array"
+        },
+        "xdm:purchase": {
+          "title": "Purchase",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user completes a purchase"
+        },
+        "xdm:reorder": {
+          "title": "Reorder",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user completes a reorder of a previous purchase"
+        },
+        "xdm:saveForLaterAdd": {
+          "title": "Save For Later Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user adds an item to their Save For Later list"
+        },
+        "xdm:saveForLaterRemove": {
+          "title": "Save For Later Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user removes an item from their Save For Later list"
+        },
+        "xdm:saveForLaterMoveToCart": {
+          "title": "Save For Later Move to Cart",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user moves an item from their Save For Later list to the shopping cart"
+        },
+        "xdm:saveForLaterView": {
+          "title": "Save For Later View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user views the Save For Later list"
+        },
+        "xdm:shipBOPIS": {
+          "title": "Buy Online Pickup in Store",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user purchases an item and picks it up in a local store"
+        },
+        "xdm:shipBOSS": {
+          "title": "Buy Online Ship to Store",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user purchases an item and ships it to a local store"
+        },
+        "xdm:shipHome": {
+          "title": "Buy Online Ship Home",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user purchases an item and ships it to their home"
+        },
+        "xdm:splitPaymentMethods": {
+          "title": "Split Payment Methods",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user splits payment methods when making a purchase"
+        },
+        "xdm:wishListAdd": {
+          "title": "Wishlist Add",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user moves an item from their Shopping Cart to a Wishlist"
+        },
+        "xdm:wishListRemove": {
+          "title": "Wishlist Remove",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user deletes an item from their Wishlist"
+        },
+        "xdm:wishListMoveToCart": {
+          "title": "Wishlist Move to Cart",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user moves an item from their Wishlist to the shopping cart"
+        },
+        "xdm:wishListView": {
+          "title": "Wishlist View",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user views the Wishlist"
+        },
+        "xdm:wishListSave": {
+          "title": "Wishlist Save",
+          "type": "integer",
+          "description": "Measure of the occurrences when a user saves their Wishlist"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/experienceevent-commerce"
+    }
+  ],
+  "meta:status": "stable"
+}

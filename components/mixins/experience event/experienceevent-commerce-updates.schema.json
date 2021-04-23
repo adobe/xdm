@@ -1,0 +1,50 @@
+{
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy",
+		"of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/classes/experienceevent-commerce-updates",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "Commerce Events",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:intendedToExtend": "https://ns.adobe.com/xdm/data/experience event",
+	"description": "Commerce events used to capture occurrences of events that frequently occur",
+	"definitions": {
+		"experienceevent-commerce-updates": {
+			"properties": [
+				{
+					"xdm:billingInfoAdd": {
+						"title": "Billing Info Add",
+						"type": "integer",
+						"description": "Measure of the occurrences when a user adds billing information",
+						"examples": [
+							1,
+							2
+						]
+					}
+				},
+				{
+					"xdm:billingInfoRemove": {
+						"title": "Billing Info Remove",
+						"type": "integer",
+						"description": "Measure of the occurrences when a user removes billing information",
+						"examples": [
+							1,
+							2
+						]
+					}
+				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/experienceevent-commerce-updates"
+		}
+	],
+	"meta:Status": "experimental"
+}

@@ -55,6 +55,9 @@
         "xdm:coupons": {
           "title": "Coupons",
           "type": "array",
+          "items": {
+            "type": "string"
+            },
           "description": "An list of coupons included in an order"
         },
         "xdm:couponValue": {
@@ -87,6 +90,9 @@
         "xdm:discounts": {
           "title": "Discounts",
           "type": "array",
+          "items": {
+            "type": "string"
+            },
           "description": "The list of discounts applied to an order"
         },
         "xdm:giftCardValue": {
@@ -122,6 +128,9 @@
         "xdm:promoCodes": {
           "title": "Promo Codes",
           "type": "array",
+          "items": {
+            "type": "string"
+           },
           "description": "The list of promo codes applied to an order"
         },
         "xdm:promoCodeValue": {

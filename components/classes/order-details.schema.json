@@ -186,7 +186,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/product"
+      "$ref": "#/definitions/order-details"
     }
   ],
   "meta:status": "experimental"

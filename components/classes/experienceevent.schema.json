@@ -24,8 +24,20 @@
       "properties": {
         "xdm:eventMergeId": {
           "title": "ExperienceEvent merge ID",
+          "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+          "type": "string"
+        },
+        "xdm:producedBy": {
+          "title": "Produced By",
+          "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
           "type": "string",
-          "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion."
+          "default": "self",
+          "meta:enum": {
+            "self": "Self",
+            "system": "System",
+            "salesRef": "Sales Representative",
+            "customerRep": "Customer Representative"
+          }
         }
       }
     }
@@ -45,5 +57,6 @@
       "$ref": "#/definitions/experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10"
 }

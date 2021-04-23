@@ -746,6 +746,29 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
@@ -848,39 +871,17 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
-  },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
-    }
-  }
-}
-```
-
 
 # XDM ExperienceEvent Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [@id](#id) | `string` | **Required** | [Time-series Schema](../behaviors/time-series.schema.md#id) |
-| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional | XDM ExperienceEvent (this schema) |
-| [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
-| [xdm:timestamp](#xdmtimestamp) | `string` | **Required** | [Time-series Schema](../behaviors/time-series.schema.md#xdmtimestamp) |
+| Property | Type | Required | Default | Defined by |
+|----------|------|----------|---------|------------|
+| [@id](#id) | `string` | **Required** |  | [Time-series Schema](../behaviors/time-series.schema.md#id) |
+| [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional |  | XDM ExperienceEvent (this schema) |
+| [xdm:eventType](#xdmeventtype) | `string` | Optional |  | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional |  | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:producedBy](#xdmproducedby) | `string` | Optional | `"self"` | XDM ExperienceEvent (this schema) |
+| [xdm:timestamp](#xdmtimestamp) | `string` | **Required** |  | [Time-series Schema](../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -1009,6 +1010,35 @@ The primary event type for this time-series record.
 |----------|------|----------|
 
 
+
+
+
+
+## xdm:producedBy
+### Produced By
+
+Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.
+
+`xdm:producedBy`
+* is optional
+* type: `string`
+* default: `"self"`
+* defined in this schema
+
+### xdm:producedBy Type
+
+
+`string`
+
+
+
+### xdm:producedBy Known Values
+| Value | Description |
+|-------|-------------|
+| `self` | Self |
+| `system` | System |
+| `salesRef` | Sales Representative |
+| `customerRep` | Customer Representative |
 
 
 

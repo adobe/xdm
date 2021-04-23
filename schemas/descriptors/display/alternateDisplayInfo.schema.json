@@ -58,7 +58,14 @@
           "type": "object",
           "patternProperties": {
             ".+_.+": {
-              "oneOf": [{ "type": "object" }, { "type": "string" }]
+              "oneOf": [
+                {
+                  "type": "object"
+                },
+                {
+                  "type": "string"
+                }
+              ]
             }
           }
         }
@@ -85,5 +92,6 @@
       "$ref": "#/definitions/alternateDisplayInfo"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10"
 }

@@ -27,5 +27,6 @@
     }
   },
   "required": ["xdm:provider", "@id", "@type"],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10"
 }

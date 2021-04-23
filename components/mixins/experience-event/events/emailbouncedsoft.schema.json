@@ -17,7 +17,7 @@
   "description": "Use to capture details when a marketing email to person soft-bounces.",
   "definitions": {
     "emailbouncedsoft": {
-       "properties": {
+      "properties": {
         "xdm:directMarketing": {
           "title": "Direct marketing",
           "type": "object",
@@ -67,5 +67,6 @@
       "$ref": "#/definitions/emailbouncedsoft"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:createdDate" : "2020-12-02"
 }

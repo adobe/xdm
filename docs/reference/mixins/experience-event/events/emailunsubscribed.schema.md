@@ -72,7 +72,7 @@ Unique ID of the email asset.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name of the email asset.
+Name of the email asset.
 
 `xdm:mailingName`
 * is optional
@@ -234,22 +234,22 @@ The numerical label assigned to a device participating in a computer network tha
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:filloutform`| object | Optional |
+| `xdm:fillOutForm`| object | Optional |
 | `xdm:webPageDetails`| object | Optional |
 | `xdm:webReferrer`| object | Optional |
 
 
 
-#### xdm:filloutform
+#### xdm:fillOutForm
 ##### Fill Out Form
 
 undefined
 
-`xdm:filloutform`
+`xdm:fillOutForm`
 * is optional
 * type: `object`
 
-##### xdm:filloutform Type
+##### xdm:fillOutForm Type
 
 Unknown type `object`.
 

@@ -62,7 +62,7 @@ Journey Orchestration Data Fetch Field for a Step Event.
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchCount
 ##### fetchCount
 
-This Field gives the count , How many times the data is fetched, regardless of the type of source (AEP, custom).
+(Deprecated)Sum of number of calls made to custom data source and to AEP to fetch the required details to process a step. E.g: To process a condition step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchCount`
 * is optional
@@ -83,7 +83,7 @@ This Field gives the count , How many times the data is fetched, regardless of t
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount
 ##### fetchCustomCount
 
-How many times the custom data is fetched from external systems.
+Number of calls made to custom data source and to AEP to fetch the required details to process a step. E.g: To process a condition step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount`
 * is optional
@@ -104,7 +104,7 @@ How many times the custom data is fetched from external systems.
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime
 ##### fetchCustomTotalTime
 
-Time to fetch the custom data in milliseconds. Remark: this time is computed from the time the engine sends the enrichment event to the enrichment service and receive the response.
+Total time(ms) to fetch all the required fields from the custom data source to execute the step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime`
 * is optional
@@ -125,7 +125,7 @@ Time to fetch the custom data in milliseconds. Remark: this time is computed fro
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchError
 ##### fetchError
 
-This Field describes the type of error that happens when the data fetch is processed. 
+Error condition that prevented Journey Runtime from executing the fetch. E.g: capping on the Data Source API etc, http error.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchError`
 * is optional
@@ -146,7 +146,7 @@ This Field describes the type of error that happens when the data fetch is proce
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode
 ##### fetchErrorCode
 
-This Field describes the Code for fetch error. Present if the error has a code, such as an HTTP one. For instance, if the actionExecError is http, the code 404 represents the HTTP 404 error.
+Error code corresponding to fetchError.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode`
 * is optional
@@ -167,7 +167,7 @@ This Field describes the Code for fetch error. Present if the error has a code, 
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError
 ##### fetchOriginError
 
-This Field tells if there are any timeout or origin error, If the error comes on a retry:  the OriginError/OriginErrorCode describes the error encountered on the attempt before the retry.
+In case of http error, the latest API response message. E.g: invalid payload, internal server error.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError`
 * is optional
@@ -188,7 +188,7 @@ This Field tells if there are any timeout or origin error, If the error comes on
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode
 ##### fetchOriginErrorCode
 
-This Field describes the error code encountered on the attempt before the retry, Error type is being defined by fetchOriginError.
+Error code corresponding to fetchOriginError.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode`
 * is optional
@@ -209,7 +209,7 @@ This Field describes the error code encountered on the attempt before the retry,
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount
 ##### fetchPlatformCount
 
-How many times the data is fetched from Adobe Experience Platform(AEP).
+Number of calls made to AEP to fetch the required details to process a step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount`
 * is optional
@@ -230,7 +230,7 @@ How many times the data is fetched from Adobe Experience Platform(AEP).
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime
 ##### fetchPlatformTotalTime
 
-The total amount of time taken to fetch the data from Adobe Experience Platform (AEP) in milliseconds.
+Total time(ms) to fetch all the required fields from the custom data source to execute the step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime`
 * is optional
@@ -251,7 +251,7 @@ The total amount of time taken to fetch the data from Adobe Experience Platform 
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchTotalTime
 ##### fetchTotalTime
 
-This Field describes the total amount of time spent in data fetch in milliseconds during the step processing.
+(Deprecated).Sum of fetchPlatformTotalTime and fetchCustomTotalTime.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchTotalTime`
 * is optional
@@ -272,7 +272,7 @@ This Field describes the total amount of time spent in data fetch in millisecond
 #### https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError
 ##### fetchTypeInError
 
-This Field defines if the fetch in error is on the platform or on a custom data source.
+The source of the first error that occurred while fetching fields to compute a journey step. Set to either Custom or AEP.
 
 `https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError`
 * is optional

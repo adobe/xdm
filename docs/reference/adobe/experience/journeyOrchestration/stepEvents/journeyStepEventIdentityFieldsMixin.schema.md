@@ -50,7 +50,7 @@ This event is in relation with journey and describe the profile Identifiers
 #### https://ns.adobe.com/experience/journeyOrchestration/profileID
 ##### Profile ID
 
-profile identifier identifies the profile sent/used in a journey.
+Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com.
 
 `https://ns.adobe.com/experience/journeyOrchestration/profileID`
 * is optional
@@ -71,7 +71,7 @@ profile identifier identifies the profile sent/used in a journey.
 #### https://ns.adobe.com/experience/journeyOrchestration/profileNamespace
 ##### Profile Namespace
 
-This field describes the Namespace referenced by the Profile used in the Journey.
+This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID 
 
 `https://ns.adobe.com/experience/journeyOrchestration/profileNamespace`
 * is optional

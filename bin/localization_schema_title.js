@@ -1,14 +1,15 @@
 const fs = require('fs');
 const glob = require("glob");
-const masterSchemasFolder = "../schemas";
-const masterComponentsFolder = "../components";
-const masterExtensionFolder = "../extensions";
+//Following paths should change to include entire folder
+const masterSchemasFolder = "../schemas/identity";
+const masterComponentsFolder = "../components/datatypes/person";
+const masterExtensionFolder = "../extensions/airship";
 
 var extensionFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
 var schemaFiles = glob.sync(masterSchemasFolder + "/**/*.schema.json");
 var componentFiles = glob.sync(masterComponentsFolder + "/**/*.schema.json");
-extensionFiles.concat(schemaFiles);
-extensionFiles.concat(componentFiles);
+extensionFiles = extensionFiles.concat(schemaFiles);
+extensionFiles = extensionFiles.concat(componentFiles);
 addmetaTitleAndDecription(extensionFiles)
 
 /*This method will renter through every files and

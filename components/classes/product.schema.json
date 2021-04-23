@@ -1,85 +1,49 @@
 {
-  "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
-    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-    "you may not use this file except in compliance with the License. You may obtain a copy",
-    "of the License at https://creativecommons.org/licenses/by/4.0/"
-  ],
-  "$id": "https://ns.adobe.com/xdm/classes/product",
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product",
-  "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:tags": {
-    "industry": [
-      "retail",
-      "financial_services",
-      "travel_and_hospitality",
-      "telecom",
-      "automotive",
-      "education",
-      "health_and_life_sciences",
-      "high_tech",
-      "manufacturing",
-      "media_and_entertainment",
-      "public_sector"
-    ]
-  },
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "This class is used to capture minimum set of properties that define a product.",
-  "definitions": {
-    "product": {
-      "properties": {
-        "xdm:productID": {
-          "title": "Product ID",
-          "type": "string",
-          "description": "Product unique identifer."
-        },
-        "xdm:productName": {
-          "title": "Product Name",
-          "type": "string",
-          "description": "Name of the product."
-        },
-        "xdm:productDescription": {
-          "title": "Product Description",
-          "type": "string",
-          "description": "Description of the product."
-        },
-        "xdm:productRating": {
-          "title": "Product Rating",
-          "type": "number",
-          "description": "Customer review rating of the product."
-        },
-        "xdm:productListPrice": {
-          "title": "Product List price",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "description": "Default price of the product before sales and discounting."
-        },
-        "xdm:productManufacturedDate": {
-          "title": "Product Manufactured date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-        },
-        "xdm:productLastModifiedDate": {
-          "title": "Product last modified Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
-        }
-      }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
-    },
-    {
-      "$ref": "#/definitions/product"
-    }
-  ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2020-10-16"
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/classes/product",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "Product",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:extends": "https://ns.adobe.com/xdm/data/record",
+	"description": "This class is used to capture minimum set of properties that define a product.",
+	"definitions": {
+		"product": {
+			"properties": [
+				{
+					"xdm:Brand": {
+						"title": "Brand",
+						"type": "string",
+						"description": "Brand of the product",
+						"examples": [
+							"nike"
+						]
+					}
+				},
+				{
+					"xdm:canonicalUrl": {
+						"title": "Canonical URL",
+						"type": "string",
+						"description": "Canonical URL of the product",
+						"pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
+						"examples": [
+							"www.examplestore.com/product-1-red/",
+							"www.examplestore.com/product-1-blue/"
+						]
+					}
+				}
+			]
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/product"
+		}
+	],
+	"meta:Status": "experimental"
 }

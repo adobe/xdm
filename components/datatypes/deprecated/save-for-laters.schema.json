@@ -5,24 +5,24 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/save-for-laters",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Point of Interest (POI) Exits",
+  "title": "Save For Laters",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description": "The place context metric `poi-exits` describes the number of times a person has left a point of interest (POI).",
+  "description": "The commerce metric `saveForLaters` describes how often a product has been saved for a later day purchase.",
   "definitions": {
-    "metric": {
+    "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:poiExits",
+          "const": "xdm:saveForLaters",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "placecontext: poiExits",
+          "const": "commerce metric: saveForLaters",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
@@ -38,13 +38,13 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/metric"
+      "$ref": "#/definitions/metricdefinition"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10"
 }

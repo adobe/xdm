@@ -19,22 +19,30 @@
         "xdm:namespaceID": {
           "title": "Unique Namespace ID",
           "type": "integer",
-          "description": "Unique Identifier for namespace"
+          "description": "Unique Identifier for namespace",
+          "meta:titleId": "identity-namespace##xdm:namespaceID##title",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceID##description"
         },
         "xdm:namespaceName": {
           "title": "Namespace Name",
           "type": "string",
-          "description": "This is human readable name for the namespace"
+          "description": "This is human readable name for the namespace",
+          "meta:titleId": "identity-namespace##xdm:namespaceName##title",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceName##description"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
-          "description": "This code is a human readable identifier for the namespace"
+          "description": "This code is a human readable identifier for the namespace",
+          "meta:titleId": "identity-namespace##xdm:namespaceCode##title",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceCode##description"
         },
         "xdm:namespaceDescription": {
           "title": "Namespace Description",
           "type": "string",
-          "description": "Description for the namespace"
+          "description": "Description for the namespace",
+          "meta:titleId": "identity-namespace##xdm:namespaceDescription##title",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceDescription##description"
         },
         "xdm:namespaceIdType": {
           "title": "Namespace Id Type",
@@ -55,21 +63,27 @@
             "COOKIE": "Cookie ID",
             "CROSS_DEVICE": "Cross-device ID",
             "NON_PEOPLE": "Non-people identifier"
-          }
+          },
+          "meta:titleId": "identity-namespace##xdm:namespaceIdType##title",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description"
         },
         "xdm:createDate": {
           "title": "Create Date Time",
           "format": "date-time",
           "type": "string",
           "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
-          "description": "The date and time when the namespace was created in ISO 8601 format"
+          "description": "The date and time when the namespace was created in ISO 8601 format",
+          "meta:titleId": "identity-namespace##xdm:createDate##title",
+          "meta:descriptionId": "identity-namespace##xdm:createDate##description"
         },
         "xdm:modifyDate": {
           "title": "Update Date Time",
           "format": "date-time",
           "type": "string",
           "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
-          "description": "The date and time when the namespace was updated in ISO 8601 format"
+          "description": "The date and time when the namespace was updated in ISO 8601 format",
+          "meta:titleId": "identity-namespace##xdm:modifyDate##title",
+          "meta:descriptionId": "identity-namespace##xdm:modifyDate##description"
         }
       },
       "required": ["xdm:namespaceID", "xdm:namespaceCode"]
@@ -86,5 +100,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "identity-namespace##title",
+  "meta:descriptionId": "identity-namespace##description"
 }

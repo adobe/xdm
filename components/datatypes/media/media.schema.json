@@ -111,11 +111,7 @@
                   "description": "The type of the media stream",
                   "type": "string",
                   "default": "video",
-                  "enum": [
-                    "audio",
-                    "video",
-                    "gaming"
-                  ],
+                  "enum": ["audio", "video", "gaming"],
                   "meta:enum": {
                     "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
                     "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
@@ -167,9 +163,7 @@
                   "description": "The date when the content first aired on any digital channel or platform."
                 }
               },
-              "required": [
-                "@id"
-              ]
+              "required": ["@id"]
             },
             "xdm:primaryAssetViewDetails": {
               "title": "Primary asset view details",
@@ -436,9 +430,7 @@
                       "description": "The length of the chapter, in seconds."
                     }
                   },
-                  "required": [
-                    "@id"
-                  ]
+                  "required": ["@id"]
                 },
                 "xdm:chapterAssetViewDetails": {
                   "title": "Chapter view details",
@@ -456,10 +448,7 @@
                       "description": "The offset of the chapter, in seconds, inside the content from the start."
                     }
                   },
-                  "required": [
-                    "xdm:index",
-                    "xdm:offset"
-                  ]
+                  "required": ["xdm:index", "xdm:offset"]
                 },
                 "xdm:impressions": {
                   "title": "Chapter starts",
@@ -615,9 +604,7 @@
               "description": "Defines the time of the day when the content was broadcast or played."
             }
           },
-          "required": [
-            "xdm:primaryAssetReference"
-          ]
+          "required": ["xdm:primaryAssetReference"]
         }
       }
     }

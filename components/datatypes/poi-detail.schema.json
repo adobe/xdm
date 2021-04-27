@@ -81,12 +81,7 @@
               "title": "Proximity to beacon",
               "type": "string",
               "description": "Estimated distance from the beacon.",
-              "enum": [
-                "immediate",
-                "near",
-                "far",
-                "unknown"
-              ],
+              "enum": ["immediate", "near", "far", "unknown"],
               "meta:enum": {
                 "immediate": "Within a few centimeter.",
                 "near": "Within a couple of meters.",

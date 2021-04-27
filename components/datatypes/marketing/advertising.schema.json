@@ -181,9 +181,7 @@
               "description": "Length or duration of ad asset in seconds."
             }
           },
-          "required": [
-            "@id"
-          ]
+          "required": ["@id"]
         },
         "xdm:adAssetViewDetails": {
           "title": "Ad asset view details",

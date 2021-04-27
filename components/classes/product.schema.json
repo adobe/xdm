@@ -66,20 +66,15 @@
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`."
         },
-        "xdm:description": {
-          "title": "Description",
+        "xdm:productDescription": {
+          "title": "Product Description",
           "type": "string",
           "description": "Description of the product"
         },
-        "xdm:id": {
+        "xdm:productID": {
           "title": "Product ID",
           "type": "string",
           "description": "Product unique identifier"
-        },
-        "xdm:inventory": {
-          "title": "Inventory",
-          "type": "string",
-          "description": "Current Inventory for the product"
         },
         "xdm:lastModifiedDate": {
           "title": "Last Modified Date",
@@ -92,11 +87,6 @@
           "type": "string",
           "pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
           "description": "Main Image URL for the product"
-        },
-        "xdm:margin": {
-          "title": "Margin",
-          "type": "string",
-          "description": "Margin for the product"
         },
         "xdm:manufactureDate": {
           "title": "Manufacture date",

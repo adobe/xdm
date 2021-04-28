@@ -82,9 +82,9 @@
                     "meta:enum": {
                       "android": "Android",
                       "ios": "iOS",
-                      "windows":"Windows",
-                      "blackberry":"Blackberry",
-                      "symbian":"Symbian"
+                      "windows": "Windows",
+                      "blackberry": "Blackberry",
+                      "symbian": "Symbian"
                     },
                     "description": "Captures the device operating system."
                   },
@@ -147,7 +147,7 @@
                     "title": "Type",
                     "type": "string",
                     "description": "Captures the accessory type."
-                  },
+                  }
                 }
               }
             }

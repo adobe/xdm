@@ -9,7 +9,7 @@ Card action details such as card type as well as activation and lock status.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-card-actions.schema.json](mixins/experience-event/experienceevent-card-actions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-card-actions.schema.json](mixins/experience-event/experienceevent-card-actions.schema.json) |
 
 ## Card Actions Example
 ```json

@@ -9,7 +9,7 @@ Used for internal site searches and includes all related search behaviors and de
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/internal-site-search.schema.json](datatypes/industry-verticals/internal-site-search.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/internal-site-search.schema.json](datatypes/industry-verticals/internal-site-search.schema.json) |
 
 ## Internal Site Search Example
 ```json

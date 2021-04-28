@@ -86,7 +86,7 @@ This Mixin contains the common Journey Metadata information.
 #### https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey
 ##### batchExternalKey
 
- External Key for batch event.
+Journey Version ID in case of scheduled, business key in case of the business event journey (productId in case of a journey triggered by a business event). This field is only available in the context of the unitary step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey`
 * is optional
@@ -107,7 +107,7 @@ This Mixin contains the common Journey Metadata information.
 #### https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID
 ##### batchInstanceID
 
- this is the batch instance ID.
+GUID created at invocation of each new batch instance for a journey. E.g: If a scheduled journey runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s.
 
 `https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID`
 * is optional
@@ -128,7 +128,7 @@ This Mixin contains the common Journey Metadata information.
 #### https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex
 ##### batchRecurrenceIndex
 
-Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).
+A counter that increases by 1 each time a batch journey is invoked. Likewise in case of business events, it will show the E.g: If a freshly authored scheduled journey runs at 8.00am,then batchRecurrenceIndex=1 and then at 10.00am, then batchRecurrenceIndex=2.
 
 `https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex`
 * is optional
@@ -149,7 +149,7 @@ Index of the recurrence if the journey is batch and recurring (first run has bat
 #### https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary
 ##### batchToUnitary
 
-Indicates if this unitary instance has been triggered from a batch instance.
+(Deprecated)Indicates if this unitary instance has been triggered from a batch instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary`
 * is optional
@@ -169,7 +169,7 @@ Indicates if this unitary instance has been triggered from a batch instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID
 ##### batchUnitaryBranchID
 
-If the instance has been triggered from a batch instance, unitary branch ID.
+(Deprecated) If the instance has been triggered from a batch instance, unitary branch ID.
 
 `https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID`
 * is optional
@@ -190,7 +190,7 @@ If the instance has been triggered from a batch instance, unitary branch ID.
 #### https://ns.adobe.com/experience/journeyOrchestration/entrance
 ##### entrance
 
-Indicate if the user has entered the journey. If not present, assuming that the value is false.
+True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.
 
 `https://ns.adobe.com/experience/journeyOrchestration/entrance`
 * is optional
@@ -210,7 +210,7 @@ Indicate if the user has entered the journey. If not present, assuming that the 
 #### https://ns.adobe.com/experience/journeyOrchestration/eventID
 ##### eventID
 
-Event ID in processing, for the step processing.
+If the step was triggered by an external event, this field will contain the eventID used by journey runtime to identify the event.
 
 `https://ns.adobe.com/experience/journeyOrchestration/eventID`
 * is optional
@@ -231,7 +231,7 @@ Event ID in processing, for the step processing.
 #### https://ns.adobe.com/experience/journeyOrchestration/eventName
 ##### eventName
 
-Event Name in processing, for the step processing.
+If the step was triggered by an external event, this field will contain the name of the event authored on Journey Canvas.
 
 `https://ns.adobe.com/experience/journeyOrchestration/eventName`
 * is optional
@@ -252,7 +252,7 @@ Event Name in processing, for the step processing.
 #### https://ns.adobe.com/experience/journeyOrchestration/eventProcessed
 ##### eventProcessed
 
-Boolean field describes if the event has been Processed. 
+Set to true when the step event corresponding to the external event has been processed fully. The presence of this field denotes that the event node in the journey canvas has been processed fully.
 
 `https://ns.adobe.com/experience/journeyOrchestration/eventProcessed`
 * is optional
@@ -272,7 +272,7 @@ Boolean field describes if the event has been Processed.
 #### https://ns.adobe.com/experience/journeyOrchestration/externalKey
 ##### externalKey
 
-External key extracted from the event to process it.
+Contains the profileID of the profile the current unitary journey instance is executing for. This field was added to support ID’s other than AEP Profile.
 
 `https://ns.adobe.com/experience/journeyOrchestration/externalKey`
 * is optional
@@ -293,7 +293,7 @@ External key extracted from the event to process it.
 #### https://ns.adobe.com/experience/journeyOrchestration/inTest
 ##### inTest
 
-Whether this journey is in test mode or not.
+True if the journey instance was executed in test mode. 
 
 `https://ns.adobe.com/experience/journeyOrchestration/inTest`
 * is optional
@@ -313,7 +313,7 @@ Whether this journey is in test mode or not.
 #### https://ns.adobe.com/experience/journeyOrchestration/instanceEnded
 ##### instanceEnded
 
-Indicate if the instance is ended (sucessfully or not).
+True if the current step led to ending an instance of the journey, that is the last step in a journey for a given profile was executed successfully.
 
 `https://ns.adobe.com/experience/journeyOrchestration/instanceEnded`
 * is optional
@@ -333,7 +333,7 @@ Indicate if the instance is ended (sucessfully or not).
 #### https://ns.adobe.com/experience/journeyOrchestration/instanceID
 ##### instanceID
 
-Internal ID of the journey instance.
+GUID for each instance of the journey. For each profile entering a journey, a new instance is created.
 
 `https://ns.adobe.com/experience/journeyOrchestration/instanceID`
 * is optional
@@ -354,7 +354,7 @@ Internal ID of the journey instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/instanceType
 ##### instanceType
 
-indicate the instance type, if it is batch or unitary.
+Specifies if the journey instance corresponds Unitary(a single profile) or Batch(a journey instance executes a batch of profiles, E.g: Read Segment Journey).
 
 `https://ns.adobe.com/experience/journeyOrchestration/instanceType`
 * is optional
@@ -375,7 +375,7 @@ indicate the instance type, if it is batch or unitary.
 #### https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent
 ##### isExternalEvent
 
-Whether the Event being processed, is an external event or not.
+Set to true when the event that triggered this step was external to JO.
 
 `https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent`
 * is optional
@@ -395,7 +395,7 @@ Whether the Event being processed, is an external event or not.
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyID
 ##### journeyID
 
-ID of the journey.
+GUID generated to uniquely identify an authored journey inside the JO Runtime.
 
 `https://ns.adobe.com/experience/journeyOrchestration/journeyID`
 * is optional
@@ -416,7 +416,7 @@ ID of the journey.
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed
 ##### journeyNodeProcessed
 
-Field describes if the journeyNode is processed.
+A node authored on the journey canvas can be expanded to multiple nodes inside the JO Runtime. This field is set to True when all the steps related to a journey node on canvas have been successfully processed inside the JO Runtime.
 
 `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`
 * is optional
@@ -436,7 +436,7 @@ Field describes if the journeyNode is processed.
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyVersion
 ##### journeyVersion
 
-Version of the journey version.
+The authored version of the journey. E.g: 1.0, 2.0.
 
 `https://ns.adobe.com/experience/journeyOrchestration/journeyVersion`
 * is optional
@@ -457,7 +457,7 @@ Version of the journey version.
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID
 ##### journeyVersionID
 
-ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent.
+GUID generated to uniquely identify a journey on the authored UI. A new journey version ID is generated if a journey is duplicated or its new version is published.
 
 `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID`
 * is optional
@@ -478,7 +478,7 @@ ID of the journey version. This id represents the identity reference to the jour
 #### https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName
 ##### journeyVersionName
 
-Name of the journey version.
+Name of the journey as shown on the authoring UI.
 
 `https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName`
 * is optional
@@ -499,7 +499,7 @@ Name of the journey version.
 #### https://ns.adobe.com/experience/journeyOrchestration/nodeID
 ##### nodeID
 
-client node ID.
+GUID of the node as generated on the journey canvas corresponding to this step(multiple steps can map to the same node).
 
 `https://ns.adobe.com/experience/journeyOrchestration/nodeID`
 * is optional
@@ -520,7 +520,7 @@ client node ID.
 #### https://ns.adobe.com/experience/journeyOrchestration/nodeName
 ##### nodeName
 
-Name of the Journey Step Node being processed.
+Name of the node corresponding to this step as visible on the Canvas. 
 
 `https://ns.adobe.com/experience/journeyOrchestration/nodeName`
 * is optional
@@ -541,7 +541,7 @@ Name of the Journey Step Node being processed.
 #### https://ns.adobe.com/experience/journeyOrchestration/nodeType
 ##### nodeType
 
-Type of the Journey Step Node being processed.
+Type of the node as authored on the canvas. E.g: action, segmentTrigger, end. There is a sentinel node before the initial node of the authored journey for which nodeType=start.
 
 `https://ns.adobe.com/experience/journeyOrchestration/nodeType`
 * is optional
@@ -562,7 +562,7 @@ Type of the Journey Step Node being processed.
 #### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID
 ##### originJumpJourneyID
 
-Journey ID of the initial journey in a journey jump scenario. 
+JourneyID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`
 * is optional
@@ -583,7 +583,7 @@ Journey ID of the initial journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID
 ##### originJumpJourneyInstanceID
 
-Journey instance ID of the initial journey in a journey jump scenario. 
+JourneyInstanceID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`
 * is optional
@@ -604,7 +604,7 @@ Journey instance ID of the initial journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID
 ##### originJumpJourneyVersionID
 
-Journey version ID of the initial journey in a journey jump scenario. 
+JourneyVersionID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`
 * is optional
@@ -625,7 +625,7 @@ Journey version ID of the initial journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentNodeID
 ##### parentNodeID
 
-Node ID of the parent of the current processed node in the instance.
+nodeID of the previous step in the current journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`
 * is optional
@@ -646,7 +646,7 @@ Node ID of the parent of the current processed node in the instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentNodeName
 ##### parentNodeName
 
-Node Name of the parent of the current processed node in the instance.
+nodeName of the previous step in the current journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentNodeName`
 * is optional
@@ -667,7 +667,7 @@ Node Name of the parent of the current processed node in the instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentNodeType
 ##### parentNodeType
 
-Node Type of the parent of the current processed node in the instance.
+nodeType of the previous step in the current journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentNodeType`
 * is optional
@@ -688,7 +688,7 @@ Node Type of the parent of the current processed node in the instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentStepID
 ##### parentStepID
 
-Step ID of the parent of the current processed step in the instance.
+stepID of the previous step in the current journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentStepID`
 * is optional
@@ -709,7 +709,7 @@ Step ID of the parent of the current processed step in the instance.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentStepName
 ##### parentStepName
 
-Step name of the parent of the current step.
+stepName of the previous step in the current journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentStepName`
 * is optional
@@ -730,7 +730,7 @@ Step name of the parent of the current step.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID
 ##### parentTransitionID
 
-Id of the transition which has brought the instance to the processed step.
+Contains the transitionID of the transition that led to the current step. Set to “on-error” if the transition to the current step was because of an error.
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID`
 * is optional
@@ -772,7 +772,7 @@ Name of the transition which has brought the instance to the processed step.
 #### https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType
 ##### parentTransitionType
 
-Type of the transition which has brought the instance to the processed step.
+Whether the transition to current step occurred because of an event, action or normal flow. Possible Values:Event Triggered(if an event trigger led to the current step),Condition Triggered (if a condition evaluation led to the current step),Basic(if the current step occurred normallly as the next step in the journey).
 
 `https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType`
 * is optional
@@ -793,7 +793,7 @@ Type of the transition which has brought the instance to the processed step.
 #### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID
 ##### previousJumpJourneyID
 
-Journey ID of the previous journey in a journey jump scenario. 
+JourneyID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID`
 * is optional
@@ -814,7 +814,7 @@ Journey ID of the previous journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID
 ##### previousJumpJourneyInstanceID
 
-Journey instance ID of the previous journey in a journey jump scenario. 
+JourneyInstanceID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID`
 * is optional
@@ -835,7 +835,7 @@ Journey instance ID of the previous journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID
 ##### previousJumpJourneyVersionID
 
-Journey version ID of the previous journey in a journey jump scenario. 
+JourneyVersionID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.
 
 `https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID`
 * is optional
@@ -856,7 +856,7 @@ Journey version ID of the previous journey in a journey jump scenario.
 #### https://ns.adobe.com/experience/journeyOrchestration/processingTime
 ##### processingTime
 
-Total time in milliseconds from the instance step entrance to the end of the processing.
+Time(ms) taken to complete the processing of this step.
 
 `https://ns.adobe.com/experience/journeyOrchestration/processingTime`
 * is optional
@@ -877,7 +877,7 @@ Total time in milliseconds from the instance step entrance to the end of the pro
 #### https://ns.adobe.com/experience/journeyOrchestration/reactionActionID
 ##### reactionActionID
 
-Message action ID referenced by the reaction in a journey. 
+actionID of corresponding action to which the reaction occurred. Present if the current step is triggered as a result of a reaction.
 
 `https://ns.adobe.com/experience/journeyOrchestration/reactionActionID`
 * is optional
@@ -898,7 +898,7 @@ Message action ID referenced by the reaction in a journey.
 #### https://ns.adobe.com/experience/journeyOrchestration/reactionChannel
 ##### reactionChannel
 
-Message channel referenced by the reaction (email, push) in a journey. 
+Channel of the corresponding reaction. E.g: Email, Push
 
 `https://ns.adobe.com/experience/journeyOrchestration/reactionChannel`
 * is optional
@@ -919,7 +919,7 @@ Message channel referenced by the reaction (email, push) in a journey.
 #### https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType
 ##### reactionInteractionType
 
-Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. 
+The user interaction that led to this reaction. E.g: Open, Click.
 
 `https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType`
 * is optional
@@ -940,7 +940,7 @@ Message interaction type referenced by the reaction (click, open, sent, error...
 #### https://ns.adobe.com/experience/journeyOrchestration/reentrance
 ##### reentrance
 
-Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false.
+Set to true of the initial step event for this journey entrance has been triggered by a profile that has already finished one journey instance and is re-entering new journey instance.
 
 `https://ns.adobe.com/experience/journeyOrchestration/reentrance`
 * is optional
@@ -960,7 +960,7 @@ Indicate if the user has reentered the journey with the same instance. If not pr
 #### https://ns.adobe.com/experience/journeyOrchestration/stepID
 ##### stepID
 
-Unique id of the step that is currently in processing.
+GUID corresponding to each step generated. Unique across all steps.
 
 `https://ns.adobe.com/experience/journeyOrchestration/stepID`
 * is optional
@@ -981,7 +981,7 @@ Unique id of the step that is currently in processing.
 #### https://ns.adobe.com/experience/journeyOrchestration/stepName
 ##### stepName
 
-Name of the step that is currently in processing.
+Name of the step as represented internally in Journey Runtime.
 
 `https://ns.adobe.com/experience/journeyOrchestration/stepName`
 * is optional
@@ -1002,7 +1002,7 @@ Name of the step that is currently in processing.
 #### https://ns.adobe.com/experience/journeyOrchestration/stepStatus
 ##### stepStatus
 
-Status of the journey step, representing in which shape the step is, when its processing has been done.
+Gives the current state of the step that has finished executing. Possible Values: Transitions(Next step will occur on an event transition),EndStep(The last step in this journey instance has executed),Error(This step encountered an error condition, ending the current journey instance), TimedOut(The current step has ended because of a timeout on a fetch or on an action.)
 
 `https://ns.adobe.com/experience/journeyOrchestration/stepStatus`
 * is optional
@@ -1023,7 +1023,7 @@ Status of the journey step, representing in which shape the step is, when its pr
 #### https://ns.adobe.com/experience/journeyOrchestration/stepType
 ##### stepType
 
-Type of the step.
+Defines different types of steps as represented internally by Journey Runtime. Possible Values: ActionStep(Default Step Type),ConditionalRouterStep(If step involved evaluating a condition),SegmentTriggerReadStartStep(If the current step started the segmentTriggeredRead).
 
 `https://ns.adobe.com/experience/journeyOrchestration/stepType`
 * is optional

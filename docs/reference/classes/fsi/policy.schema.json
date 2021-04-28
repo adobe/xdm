@@ -1,0 +1,104 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/fsi/policy",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Policy",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Details for the insurance policy such as type, start date, and ID.",
+    "definitions": {
+        "policy-details": {
+            "properties": {
+                "xdm:endDate": {
+                    "title": "End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date which the insurance policy coverage ended."
+                },
+                "xdm:ID": {
+                    "title": "ID",
+                    "type": "string",
+                    "description": "Unique insurance policy identifier."
+                },
+                "xdm:name": {
+                    "title": "Name",
+                    "type": "string",
+                    "description": "Insurance policy name."
+                },
+                "xdm:startDate": {
+                    "title": "Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date which the insurance policy coverage started."
+                },
+                "xdm:location": {
+                    "title": "Location",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "Location in which the insurance policy is issued."
+                },
+                "xdm:type": {
+                    "title": "Type",
+                    "type": "string",
+                    "enum": [
+                        "home",
+                        "automobile",
+                        "renter",
+                        "boat"
+                    ],
+                    "description": "Type of insurance policy, such as home, automobile, renter, or boat."
+                },
+                "xdm:assignedBeneficiary": {
+                    "title": "Assigned Beneficiaries",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+                    },
+                    "description": "Captures the beneficiary(s) assigned to the policy."
+                },
+                "xdm:hasAssignedBeneficiary": {
+                    "title": "Has Assigned Beneficiary",
+                    "type": "boolean",
+                    "description": "Flag determining if the account has a beneficiary assigned."
+                },
+                "xdm:owner": {
+                    "title": "Owner",
+                    "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
+                    "description": "Stores the policyholder's profile information. Extension of the personal profile details data type."
+                },
+                "xdm:benefitAmount": {
+                    "title": "Benefit Amount",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "The amount to be paid per the policy terms."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/policy-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:ID": "F7Y910JK001"
+        }
+    ]
+}

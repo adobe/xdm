@@ -9,7 +9,7 @@ Tracks when impressions are presented on a site, along with names, types, and co
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/impressions.schema.json](datatypes/industry-verticals/impressions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/impressions.schema.json](datatypes/industry-verticals/impressions.schema.json) |
 
 ## Impressions Example
 ```json

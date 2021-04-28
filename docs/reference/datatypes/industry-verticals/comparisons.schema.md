@@ -9,12 +9,7 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/industry-verticals/comparisons.schema.json](datatypes/industry-verticals/comparisons.schema.json) |
-## Schema Hierarchy
-
-* Comparisons `https://ns.adobe.com/xdm/datatypes/comparisons`
-  * [Impressions](impressions.schema.md) `https://ns.adobe.com/xdm/datatypes/impressions`
-
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/comparisons.schema.json](datatypes/industry-verticals/comparisons.schema.json) |
 
 ## Comparisons Example
 ```json
@@ -26,7 +21,6 @@ Used for site comparisons, such as products, cards, rooms, flights, etc.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:count](#xdmcount) | `integer` | Optional | Comparisons (this schema) |
-| [xdm:impressions](#xdmimpressions) | Impressions | Optional | Comparisons (this schema) |
 | [xdm:items](#xdmitems) | `object[]` | Optional | Comparisons (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Comparisons (this schema) |
 | [xdm:view](#xdmview) | `integer` | Optional | Comparisons (this schema) |
@@ -47,25 +41,6 @@ Count of the total number of items being compared.
 
 `integer`
 
-
-
-
-
-
-## xdm:impressions
-### Impressions
-
-Extension of the impressions data type.
-
-`xdm:impressions`
-* is optional
-* type: Impressions
-* defined in this schema
-
-### xdm:impressions Type
-
-
-* [Impressions](impressions.schema.md) – `https://ns.adobe.com/xdm/datatypes/impressions`
 
 
 

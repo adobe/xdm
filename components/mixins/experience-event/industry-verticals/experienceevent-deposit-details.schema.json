@@ -34,13 +34,13 @@
                   "title": "Deposit Account",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
                   "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+                },
+                "xdm:mobileDeposit": {
+                  "title": "Mobile Deposit",
+                  "type": "boolean",
+                  "description": "Indicator for whether the deposit was done through mobile or not."
                 }
               }
-            },
-            "xdm:mobileDeposit": {
-              "title": "Mobile Deposit",
-              "type": "boolean",
-              "description": "Indicator for whether the deposit was done through mobile or not."
             }
           }
         }
@@ -52,5 +52,6 @@
       "$ref": "#/definitions/deposit-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-19"
 }

@@ -9,7 +9,7 @@ For branch information such as ID, name, and open and close times.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/fsi/branch.schema.json](classes/fsi/branch.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/fsi/branch.schema.json](classes/fsi/branch.schema.json) |
 ## Schema Hierarchy
 
 * Branch `https://ns.adobe.com/xdm/classes/fsi/branch`

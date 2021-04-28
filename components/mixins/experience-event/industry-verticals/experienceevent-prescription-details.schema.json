@@ -46,7 +46,7 @@
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-			  "meta:status": "deprecated"
+              "meta:status": "deprecated"
             },
             "xdm:upload": {
               "title": "Upload",
@@ -63,5 +63,6 @@
       "$ref": "#/definitions/prescription-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-22"
 }

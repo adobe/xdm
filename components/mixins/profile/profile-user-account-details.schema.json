@@ -67,7 +67,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc."
+              "description": "Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc."
             },
             "xdm:alertStatus": {
               "title": "Alert Status",
@@ -89,5 +89,6 @@
       "$ref": "#/definitions/user-account-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19"
 }

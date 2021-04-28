@@ -9,7 +9,7 @@ Deposit details such as ID, type, and amount.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.json) |
 
 ## Deposit Details Example
 ```json
@@ -59,7 +59,6 @@ Deposit details such as ID, type, and amount.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:deposits`| object | Optional |
-| `xdm:mobileDeposit`| boolean | Optional |
 
 
 
@@ -88,31 +87,16 @@ Unknown type `object`.
       "title": "Deposit Account",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
       "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+    },
+    "xdm:mobileDeposit": {
+      "title": "Mobile Deposit",
+      "type": "boolean",
+      "description": "Indicator for whether the deposit was done through mobile or not."
     }
   },
   "simpletype": "`object`"
 }
 ```
-
-
-
-
-
-
-
-#### xdm:mobileDeposit
-##### Mobile Deposit
-
-Indicator for whether the deposit was done through mobile or not.
-
-`xdm:mobileDeposit`
-* is optional
-* type: `boolean`
-
-##### xdm:mobileDeposit Type
-
-
-`boolean`
 
 
 

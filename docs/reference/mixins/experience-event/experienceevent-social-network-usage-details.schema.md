@@ -9,7 +9,7 @@ Social network usage information such as share, content, and network.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-social-network-usage-details.schema.json](mixins/experience-event/experienceevent-social-network-usage-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-social-network-usage-details.schema.json](mixins/experience-event/experienceevent-social-network-usage-details.schema.json) |
 
 ## Social Network Usage Details Example
 ```json

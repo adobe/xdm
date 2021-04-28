@@ -19,6 +19,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/order",
           "description": "The placed order for one or more products."
         },
+        "xdm:promotionID": {
+          "title": "Promotion ID",
+          "type": "string",
+          "description": "Promotion identifier if any for the order placed."
+        },
         "xdm:cartAbandons": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product list has been identified as no longer accessible or purchasable by the user."
@@ -74,5 +79,6 @@
       "$ref": "#/definitions/commerce"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19"
 }

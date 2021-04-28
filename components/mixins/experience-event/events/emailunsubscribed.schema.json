@@ -30,7 +30,7 @@
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset."
+              "description": "Name of the email asset."
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
@@ -48,7 +48,7 @@
           "title": "Web",
           "type": "object",
           "properties": {
-            "xdm:filloutform": {
+            "xdm:fillOutForm": {
               "title": "Fill Out Form",
               "type": "object",
               "properties": {
@@ -131,5 +131,6 @@
       "$ref": "#/definitions/emailunsubscribed"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:createdDate" : "2021-02-19"
 }

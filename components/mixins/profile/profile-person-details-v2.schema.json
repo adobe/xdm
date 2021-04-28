@@ -268,7 +268,10 @@
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    { "$ref": "#/definitions/person" }
+    {
+      "$ref": "#/definitions/person"
+    }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-11-10"
 }

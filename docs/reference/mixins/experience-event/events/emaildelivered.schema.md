@@ -70,7 +70,7 @@ Unique ID of the email asset.
 #### xdm:mailingName
 ##### Mailing Name
 
-Friendly name of the email asset.
+Name of the email asset.
 
 `xdm:mailingName`
 * is optional

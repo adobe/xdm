@@ -113,7 +113,8 @@
             "$ref": "#/definitions/card-actions"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
+    "meta:createdDate": "2021-01-07",
     "examples": [
         {
             "xdm:personalFinances": {

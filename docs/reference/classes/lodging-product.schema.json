@@ -69,7 +69,8 @@
             "$ref": "#/definitions/lodging-product"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
+    "meta:createdDate": "2021-04-06",
     "examples": [
         {
             "xdm:ownership": "Select Properties",

@@ -37,5 +37,6 @@
       "$ref": "#/definitions/credit-limit-increase-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-19"
 }

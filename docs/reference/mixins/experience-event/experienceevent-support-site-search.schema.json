@@ -47,7 +47,8 @@
             "$ref": "#/definitions/support-site-search"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
+    "meta:createdDate": "2021-01-15",
     "examples": [
         {
             "xdm:siteKnowledge": {

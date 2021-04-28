@@ -86,7 +86,8 @@
             "$ref": "#/definitions/social-network-usage-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
+    "meta:createdDate": "2021-01-15",
     "examples": [
         {
             "xdm:marketing ": {

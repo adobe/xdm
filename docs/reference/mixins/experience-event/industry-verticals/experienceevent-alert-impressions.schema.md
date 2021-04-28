@@ -9,7 +9,7 @@ Alert information such as ad impressions and ad clicks.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json](mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json](mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.json) |
 
 ## Alert Impressions Example
 ```json

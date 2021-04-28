@@ -69,7 +69,7 @@ Unknown type `object`.
     "xdm:formName": {
       "title": "Form Name",
       "type": "string",
-      "description": "Friendly name to form."
+      "description": "Name of the form."
     },
     "xdm:listName": {
       "title": "List Name",

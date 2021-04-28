@@ -30,7 +30,7 @@
                         "xdm:mailingName": {
                             "title": "Mailing Name",
                             "type": "string",
-                            "description": "Friendly name of the email asset."
+                            "description": "Name of the email asset."
                         },
                         "xdm:testVariantID": {
                             "title": "Test Variant ID",
@@ -53,6 +53,7 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:createdDate": "2020-12-02",
     "examples": [
         {}
     ]

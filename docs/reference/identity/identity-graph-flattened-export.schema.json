@@ -21,17 +21,23 @@
                 "xdm:identityID": {
                     "title": "Person ID",
                     "type": "string",
-                    "description": "Person ID Like Email or ECID or phone."
+                    "description": "Person ID Like Email or ECID or phone.",
+                    "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description"
                 },
                 "xdm:namespaceID": {
                     "title": "Namespace Id",
                     "type": "integer",
-                    "description": "Id for the Identity Type."
+                    "description": "Id for the Identity Type.",
+                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description"
                 },
                 "xdm:namespaceCode": {
                     "title": "Namespace Code",
                     "type": "string",
-                    "description": "Identity Type in human readable form."
+                    "description": "Identity Type in human readable form.",
+                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description"
                 },
                 "xdm:algorithm": {
                     "title": "Algorithm",
@@ -46,7 +52,9 @@
                         "SHARED_DEVICE_DETECTION_SESSIONIZATION": "Shared Device Detection Sessionization",
                         "FREQ_RECENCY_BASED_SHARED_DEVICES": "Frequency Recency Based Shared Devices",
                         "DETERMINISTIC": "Deterministic"
-                    }
+                    },
+                    "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description"
                 },
                 "xdm:membersByTimeRange": {
                     "type": "array",
@@ -57,18 +65,24 @@
                                 "title": "Start Timestamp",
                                 "type": "string",
                                 "format": "date-time",
-                                "description": "Start Timestamp."
+                                "description": "Start Timestamp.",
+                                "meta:titleId": "identity-graph-flattened-export##xdm:startTimestamp##title",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:startTimestamp##description"
                             },
                             "xdm:endTimestamp": {
                                 "title": "End Timestamp",
                                 "type": "string",
                                 "format": "date-time",
-                                "description": "End Timestamp."
+                                "description": "End Timestamp.",
+                                "meta:titleId": "identity-graph-flattened-export##xdm:endTimestamp##title",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:endTimestamp##description"
                             },
                             "xdm:graphID": {
                                 "title": "Person Graph ID",
                                 "type": "string",
-                                "description": "Person level Graph Identifier."
+                                "description": "Person level Graph Identifier.",
+                                "meta:titleId": "identity-graph-flattened-export##xdm:graphID##title",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:graphID##description"
                             },
                             "xdm:identityMap": {
                                 "type": "object",
@@ -87,7 +101,9 @@
                     "title": "Last Updated Time",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Last updated time when this identity was updated."
+                    "description": "Last updated time when this identity was updated.",
+                    "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description"
                 }
             },
             "required": [
@@ -106,6 +122,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "identity-graph-flattened-export##title",
+    "meta:descriptionId": "identity-graph-flattened-export##description",
     "examples": [
         {
             "xdm:identityID": "22222222222222222222222222222222222222",

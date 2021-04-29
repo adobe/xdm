@@ -117,7 +117,7 @@ The primary event type for this time-series record.
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
-| `opportunityevent.opportunityUpdated` | Opportunity Event Opportunity Updated |
+| `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 
 
 

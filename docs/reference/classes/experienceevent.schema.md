@@ -632,6 +632,29 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123458",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
@@ -738,29 +761,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     },
     "xdm:federated": {
       "xdm:value": 0
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
-  },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
     }
   }
 }
@@ -987,7 +987,7 @@ The primary event type for this time-series record.
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
-| `opportunityevent.opportunityUpdated` | Opportunity Event Opportunity Updated |
+| `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 
 
 

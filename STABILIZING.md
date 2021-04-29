@@ -1,6 +1,6 @@
 # Stabilization Candidates
 
-_Generated on **Tue Apr 20 2021 19:56:11 GMT+0000 (UTC)**_
+_Generated on **Thu Apr 29 2021 15:30:07 GMT+0000 (UTC)**_
 
 
 ### Unknown Status, needs immediate attention
@@ -13,7 +13,8 @@ _Generated on **Tue Apr 20 2021 19:56:11 GMT+0000 (UTC)**_
 
 |Schema|Status|Status Modified Date|Last Non-trivial Change|Raw Commit Log Since Status Change|
 |------|------|--------------------|-----------------------|----------------------------------|
-|[schemas/descriptors/relationship/descriptorRelationship](schemas/descriptors/relationship/descriptorRelationship.schema.json)|experimental|11|11|[8616f86](https://github.com/adobe/xdm/commit/8616f862621868dfb4ffa7286938186de4822d96 "Added meta:createdDate attribute")|
+|[schemas/descriptors/relationship/descriptorRelationship](schemas/descriptors/relationship/descriptorRelationship.schema.json)|experimental|20|20|[8616f86](https://github.com/adobe/xdm/commit/8616f862621868dfb4ffa7286938186de4822d96 "Added meta:createdDate attribute")|
+|[schemas/destinations/solutions/analytics-experienceevent](schemas/destinations/solutions/analytics-experienceevent.schema.json)|experimental|0|0|[b35b137](https://github.com/adobe/xdm/commit/b35b13777aaa583e8af89a5d970c94a198ac4f5d "Update analytics-experienceevent.schema.json") [dc02703](https://github.com/adobe/xdm/commit/dc027034bf574c12272023a42ed0be2182c30d86 "added adobe analytics global schema") [2e2e6da](https://github.com/adobe/xdm/commit/2e2e6da99c63a4e01666320d69ade646604888e4 "added adobe analytics global schema")|
 
 
 ### Stabilizing

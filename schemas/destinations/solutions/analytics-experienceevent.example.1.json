@@ -1,0 +1,116 @@
+{
+  "@id": "https://data.adobe.io/experienceid-123456",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "id": "68519882713298129995549973016107434638",
+        "primary": true
+      }
+    ],
+    "AVID": [
+      {
+        "id": "2dfb7d8e00003ba4-056de00000000085",
+        "primary": false
+      }
+    ]
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159.0
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59.0,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100.0,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159.0
+    },
+    "xdm:purchases": {
+      "xdm:value": 1.0
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
+    "xdm:geo": {
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
+        "xdm:value": 1.0
+      }
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
+  },
+  "https://ns.adobe.com/experience/analytics/customDimensions": {
+    "xdm:eVars": {
+      "xdm:eVar1": "customer"
+    }
+  }
+}

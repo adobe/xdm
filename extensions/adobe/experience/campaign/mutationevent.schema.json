@@ -22,7 +22,7 @@
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description": "The information related to web page and link of the ExperienceEvent."
+          "description": "Link clicks, web page details, referrer information, and browser details."
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",

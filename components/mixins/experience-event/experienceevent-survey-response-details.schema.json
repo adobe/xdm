@@ -33,6 +33,7 @@
       "properties": {
         "xdm:surveyResponse": {
           "type": "object",
+		  "description": "Stores details related to a survey that has been completed by a user.",
           "properties": {
             "xdm:surveyAnswers": {
               "title": "Survey Answers",

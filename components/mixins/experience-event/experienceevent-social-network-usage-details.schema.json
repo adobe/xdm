@@ -27,12 +27,13 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Social network usage information such as share, content, and network. ",
+  "description": "Social network usage information such as share, content, and network.",
   "definitions": {
     "social-network-usage-details": {
       "properties": {
         "xdm:socialMarketing ": {
           "type": "object",
+		  "description": "tracks interactions related to social marketing sites, such as shares and follows.",
           "properties": {
             "xdm:sharedContent": {
               "title": "Shared Content",

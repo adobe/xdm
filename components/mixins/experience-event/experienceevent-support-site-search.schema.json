@@ -29,6 +29,7 @@
       "properties": {
         "xdm:siteKnowledge": {
           "type": "object",
+		  "description": "Knowledge base tracking, support site searches, or forum interaction details.",
           "properties": {
             "xdm:supportSiteSearch": {
               "title": "Support Site Search",

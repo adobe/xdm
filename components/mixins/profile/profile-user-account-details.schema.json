@@ -33,6 +33,7 @@
       "properties": {
         "xdm:userAccount": {
           "type": "object",
+		  "description": "Loyalty details, preferences, login processes, and other account preferences.",
           "properties": {
             "xdm:ID": {
               "title": "ID",

@@ -31,7 +31,7 @@
       "properties": {
         "xdm:offers ": {
           "type": "object",
-		  "description": "Offer tracking, including offer impressions and clickthroughs.",
+          "description": "Offer tracking, including offer impressions and clickthroughs.",
           "properties": {
             "xdm:ID": {
               "title": "Offer ID",

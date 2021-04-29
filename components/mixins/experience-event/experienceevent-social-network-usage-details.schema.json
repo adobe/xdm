@@ -33,7 +33,7 @@
       "properties": {
         "xdm:socialMarketing ": {
           "type": "object",
-		  "description": "tracks interactions related to social marketing sites, such as shares and follows.",
+          "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
           "properties": {
             "xdm:sharedContent": {
               "title": "Shared Content",

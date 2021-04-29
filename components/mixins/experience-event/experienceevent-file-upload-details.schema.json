@@ -33,7 +33,7 @@
       "properties": {
         "xdm:fileTransfer": {
           "type": "object",
-		  "description": "Information for file download or file upload activities.",
+          "description": "Information for file download or file upload activities.",
           "properties": {
             "xdm:fileUpload": {
               "title": "File Upload",

@@ -12,7 +12,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "telecom"]
+    "industry": [
+      "financial_services",
+      "telecom"
+    ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Service Payment Details such as ID, type, and amount.",
@@ -21,6 +24,7 @@
       "properties": {
         "xdm:service-payment-details": {
           "type": "object",
+          "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
           "properties": {
             "xdm:servicePayment": {
               "title": "Service Payment",

@@ -1,0 +1,26 @@
+{
+	"meta:license": [
+		"Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+		"This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+		"you may not use this file except in compliance with the License. You may obtain a copy of the License at https://creativecommons.org/licenses/by/4.0/"
+	],
+	"$id": "https://ns.adobe.com/xdm/Class/testmixim",
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"title": "b",
+	"type": "object",
+	"meta:extensible": true,
+	"meta:abstract": true,
+	"meta:intendedToExtend": "https://ns.genesis.com/xdm/testmixim/profile",
+	"description": "bn",
+	"definitions": {
+		"testmixim": {
+			"properties": []
+		}
+	},
+	"allOf": [
+		{
+			"$ref": "#/definitions/testmixim"
+		}
+	],
+	"meta:Status": "stable"
+}

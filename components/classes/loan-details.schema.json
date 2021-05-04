@@ -82,7 +82,7 @@
         },
         "xdm:borrower": {
           "title": "Borrower",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/person",
+          "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
           "description": "Records the details for the borrower."
         },
         "xdm:fees": {

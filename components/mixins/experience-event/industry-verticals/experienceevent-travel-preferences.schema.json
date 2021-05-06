@@ -14,7 +14,7 @@
   "meta:tags": {
     "industry": ["travel_and_hospitality"]
   },
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Tracks a user's travel preferences, including home airport code, meal preferences, seating preferences, etc.",
   "definitions": {
     "travel-preferences": {
@@ -198,7 +198,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "https://ns.adobe.com/xdm/context/profile"
     },
     {
       "$ref": "#/definitions/travel-preferences"

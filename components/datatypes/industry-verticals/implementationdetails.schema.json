@@ -46,6 +46,22 @@
             "server": "Server",
             "iot": "Internet of Things Device"
           }
+        },
+        "xdm:plugins": {
+          "title": "Plugins",
+          "type": "array",
+          "item": {
+             "type": "object",
+             "properties": {
+                "xdm:name": {
+                   "type": "string"
+                },
+                "xdm:version": {
+                   "type": "string"
+                }
+             },
+             "required": ["xdm:name", "xdm:version"]
+          }
         }
       }
     }

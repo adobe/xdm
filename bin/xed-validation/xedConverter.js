@@ -106,26 +106,35 @@ class Converter extends EventEmitter {
       return false;
     };
 
-    function formatNested(field) { // format the dot-prop generated structure
-      if (checkNested(field) && (!field.type || typeof(field.type) == "object"))
-        for (var key in field) { //format nested objs as expected from conversion logic
-          if (typeof(field[key]) === "object" &&
-            Object.prototype.toString.call(field[key]) != "[object Array]" //bypass arrays like required, enum, enumvalues, examples etc.
-            //&& field.type != "array" // no array handling here
-            &&
-            key != "properties" // avoid infinite loop from the newly added property object
+    function formatNested(field, isPropertiesField) { // format the dot-prop generated structure
+      if (checkNested(field) && (!field.type || (typeof (field.type) == "object") || field.hasOwnProperty("properties")))
+      {
+        if (field.hasOwnProperty("properties")) {//formatNested for nested properties field first
+          formatNested(field.properties, true)
+        }
+
+        for (var key in field) { //format non-properties nested objs as expected from conversion logic
+          if (typeof (field[key]) === "object"
+              && Object.prototype.toString.call(field[key]) != "[object Array]" //bypass arrays like required, enum, enumvalues, examples etc.
+              && key != "properties" // avoid infinite loop from the newly added property object
           ) {
-            if (!field["type"]) {
+            if(!isPropertiesField) {
+              if (!field["type"]) {
                 field.type = "object";
                 field["meta:xdmType"] = "object";
-            };
-            if (!field["properties"]) field.properties = {};
-            field.properties[key] = field[key];
-            delete(field[key]); //delete old field
-            bottomRequired(field)
-            formatNested(field.properties[key]);
+              }
+              if (!field["properties"]) field.properties = {};
+              field.properties[key] = field[key];
+              delete (field[key]); //delete old field
+              bottomRequired(field)
+              formatNested(field.properties[key], false);
+            }
+            else {
+              formatNested(field[key], false);
+            }
           }
         }
+      }
     };
 
     var cnt = {};
@@ -370,7 +379,7 @@ class Converter extends EventEmitter {
       else return key.replace("$refkept", "$ref");
     });
 
-    for (var i in xedWithRefs.properties) formatNested(xedWithRefs.properties[i]); //reformat the nested structure created from dot notation
+    for (var i in xedWithRefs.properties) formatNested(xedWithRefs.properties[i], false); //reformat the nested structure created from dot notation
 
     //resolveNameConflict(xedWithRefs);
 

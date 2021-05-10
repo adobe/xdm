@@ -88,16 +88,16 @@
         {
             "xdm:id": "A123",
             "xdm:name": "Myapp",
+            "xdm:version": "1.0.1"
+        },
+        {
+            "xdm:id": "A123",
+            "xdm:name": "Myapp",
             "xdm:version": "1.0.1",
             "xdm:launches": {
                 "xdm:value": 1
             },
             "xdm:userPerspective": "foreground"
-        },
-        {
-            "xdm:id": "A123",
-            "xdm:name": "Myapp",
-            "xdm:version": "1.0.1"
         }
     ]
 }

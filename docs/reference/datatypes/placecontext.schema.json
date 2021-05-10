@@ -39,7 +39,28 @@
                     "title": "POI interaction",
                     "description": "The point of interest (POI) interaction details.",
                     "meta:status": "experimental",
-                    "$ref": "https://ns.adobe.com/xdm/context/poi-interaction"
+                    "type": "object",
+                    "properties": {
+                        "xdm:POIDetail": {
+                            "title": "POI detail",
+                            "meta:status": "deprecated",
+                            "description": "Detail of the POI that cause the event.",
+                            "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                        },
+                        "xdm:poiDetail": {
+                            "title": "POI detail",
+                            "description": "Detail of the POI that cause the event.",
+                            "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                        },
+                        "xdm:poiEntries": {
+                            "$ref": "https://ns.adobe.com/xdm/data/measure",
+                            "description": "The number of times a person has entered the point of interest (POI)."
+                        },
+                        "xdm:poiExits": {
+                            "$ref": "https://ns.adobe.com/xdm/data/measure",
+                            "description": "The number of times a person has exited the point of interest (POI)."
+                        }
+                    }
                 },
                 "xdm:activePOIs": {
                     "title": "POI detail",

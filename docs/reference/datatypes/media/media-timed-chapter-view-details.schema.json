@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Timed media chapter view details",
     "type": "object",
-    "meta:status": "stable",
+    "meta:status": "deprecated",
     "meta:extensible": true,
     "description": "View details for the chapter playback captured by the experience event.",
     "definitions": {

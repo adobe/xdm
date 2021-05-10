@@ -83,7 +83,7 @@
         "xdm:bidLevel": {
           "title": "Bid Level",
           "type": "string",
-          "description:": "What determines the bid for all ads belonging to this adgroup.",
+          "description": "What determines the bid for all ads belonging to this adgroup.",
           "enum": [
             "Gender",
             "Placement",

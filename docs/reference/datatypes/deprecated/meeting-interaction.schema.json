@@ -1,0 +1,79 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/common/meetinginteraction",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Meeting Interaction",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Captures information in the context of a meeting between people online or at a specified location",
+    "definitions": {
+        "meetinginteraction": {
+            "properties": {
+                "xdm:isAllDay": {
+                    "title": "All Day meeting/event",
+                    "type": "boolean",
+                    "description": "A flag to represent whether the meeting is all day long"
+                },
+                "xdm:isOnline": {
+                    "title": "Meeting online/offline",
+                    "type": "boolean",
+                    "description": "A flag indicating whether the neeting is online of offline"
+                },
+                "xdm:isReminderSet": {
+                    "title": "Reminder Set for the meeting",
+                    "type": "boolean",
+                    "description": "A flag indicating whether a reminder has been in place for the meeting"
+                },
+                "xdm:reminderDateTime": {
+                    "title": "Date and time at which the reminder is set",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The date and time for which the reminder is set, if the flag for reminder set has been set to true"
+                },
+                "xdm:scheduledStartDateTime": {
+                    "title": "Time at which the meeting has been schedued to start",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Scheduled time at which the meeting will start"
+                },
+                "xdm:scheduledEndDateTime": {
+                    "title": "Scheduled time for the meeting to end",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Scheduled time by which the meeting should end"
+                },
+                "xdm:organizerID": {
+                    "title": "Person organizing the meeting",
+                    "type": "string",
+                    "description": "Person who is responsible to control and manage the meeting"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/meetinginteraction"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:isAllDay": true,
+            "xdm:isOnline": true,
+            "xdm:isReminderSet": true,
+            "xdm:reminderDateTime": "2020-05-19T00:00:00+00:00",
+            "xdm:scheduledStartDateTime": "2020-05-20T09:00:00+00:00",
+            "xdm:scheduledEndDateTime": "2020-05-20T18:00:00+00:00",
+            "xdm:organizerID": "98536"
+        }
+    ]
+}

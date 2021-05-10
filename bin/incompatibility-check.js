@@ -140,7 +140,7 @@ function validateSchemas(files) {
 function isAllOfBroken(origAllOf, newAllOf) {
     var isBroken;
     for (var i in origAllOf) {
-        isBroken = origAllOf[i].hasOwnProperty("required") ? false : true;
+        isBroken = origAllOf[i].hasOwnProperty("required") || !origAllOf[i].hasOwnProperty("$ref") ? false : true;
         for (var j in newAllOf) {
             if (JSON.stringify(origAllOf[i]) == JSON.stringify(newAllOf[j])) isBroken = false;
         }

@@ -5,24 +5,24 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/data/metrics/product-list-opens",
+  "$id": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/bounces",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Product List Opens",
+  "title": "Bounces",
   "type": "object",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
-  "description": "The commerce metric `product-list-opens` describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.",
+  "description": "The direct-marketing metric bounces describes the number of asynchronous messages that have been rejected by the receiving system.",
   "definitions": {
     "metricdefinition": {
       "properties": {
         "@id": {
           "type": "string",
-          "const": "xdm:productListOpens",
+          "const": "xdm:bounces",
           "description": "The unique identifier of this metric."
         },
         "schema:name": {
           "type": "string",
-          "const": "commerce metric: productListOpens",
+          "const": "direct-marketing metric: bounces",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
         },
         "xdm:measurement": {
@@ -45,6 +45,6 @@
     }
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10"
 }

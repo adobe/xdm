@@ -9,7 +9,7 @@ Asset information about the chapter captured by the experience event.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/media/media-timed-chapter-asset-reference.schema.json](datatypes/media/media-timed-chapter-asset-reference.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/media/media-timed-chapter-asset-reference.schema.json](datatypes/media/media-timed-chapter-asset-reference.schema.json) |
 ## Schema Hierarchy
 
 * Timed media chapter asset reference `https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference`

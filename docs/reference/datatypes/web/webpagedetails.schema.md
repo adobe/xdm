@@ -13,7 +13,7 @@ For interactions that are happening on a loaded page that do not trigger a new p
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/web/webpagedetails.schema.json](datatypes/web/webpagedetails.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/web/webpagedetails.schema.json](datatypes/web/webpagedetails.schema.json) |
 ## Schema Hierarchy
 
 * Web page details `https://ns.adobe.com/xdm/context/webpagedetails`

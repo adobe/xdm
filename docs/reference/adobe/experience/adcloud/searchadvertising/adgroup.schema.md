@@ -186,6 +186,8 @@ Name of the Ad Group.
 ## xdm:bidLevel
 ### Bid Level
 
+What determines the bid for all ads belonging to this adgroup.
+
 `xdm:bidLevel`
 * is optional
 * type: `enum`

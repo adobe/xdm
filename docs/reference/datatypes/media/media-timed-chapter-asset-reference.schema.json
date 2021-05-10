@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Timed media chapter asset reference",
     "type": "object",
-    "meta:status": "stable",
+    "meta:status": "deprecated",
     "meta:extensible": true,
     "description": "Asset information about the chapter captured by the experience event.",
     "definitions": {

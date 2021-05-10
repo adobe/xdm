@@ -24,13 +24,13 @@
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Physicial address where the restaurant is located."
         },
-        "xdm:ID": {
-          "title": "ID",
+        "xdm:restaurantID": {
+          "title": "Restaurant ID",
           "type": "string",
           "description": "ID associated with the restaurant."
         },
-        "xdm:name": {
-          "title": "Name",
+        "xdm:restaurantName": {
+          "title": "Restaurant Name",
           "type": "string",
           "description": "Name associated with the restaurant."
         },

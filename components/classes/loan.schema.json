@@ -26,13 +26,13 @@
   "definitions": {
     "loan": {
       "properties": {
-        "xdm:ID": {
-          "title": "ID",
+        "xdm:loanID": {
+          "title": "Loan ID",
           "type": "string",
           "description": "Identifier for the loan."
         },
-        "xdm:amount": {
-          "title": "Amount",
+        "xdm:loanAmount": {
+          "title": "Loan Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total amount of the loan."
         },
@@ -46,8 +46,8 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total amount of principal paid on the loan to date."
         },
-        "xdm:status": {
-          "title": "Status",
+        "xdm:loanStatus": {
+          "title": "Loan Status",
           "meta:enum": {
             "notIssued": "Not Issued",
             "current": "Current",
@@ -95,8 +95,8 @@
           "type": "integer",
           "description": "Tracks the number of days a borrow has to issue a loan payment before the loan is considered to be in default."
         },
-        "xdm:type": {
-          "title": "Type",
+        "xdm:loanType": {
+          "title": "Loan Type",
           "meta:enum": {
             "personal": "Personal",
             "cashAdvance": "Cash Advance",

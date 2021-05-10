@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Timed media quality of experience",
     "type": "object",
-    "meta:status": "stable",
+    "meta:status": "deprecated",
     "meta:extensible": true,
     "description": "Timed media properties related to the content playback's quality of experience (QoE).",
     "definitions": {

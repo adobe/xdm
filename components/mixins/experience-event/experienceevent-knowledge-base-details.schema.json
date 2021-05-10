@@ -29,7 +29,7 @@
       "properties": {
         "xdm:siteKnowledge": {
           "type": "object",
-          "description": "Knowledge base tracking, support site searches, or forum interaction details.",
+          "description": "Knowledge base tracking, support site searches and forum interaction details.",
           "properties": {
             "xdm:knowledgeBaseArticleID": {
               "title": "Knowledge Base Article ID",

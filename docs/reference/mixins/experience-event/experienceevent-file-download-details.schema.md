@@ -40,6 +40,7 @@ File download details such as file name, size, and transfer status.
 
 ## xdm:fileTransfer
 
+Information for file download or file upload activities.
 
 `xdm:fileTransfer`
 * is optional

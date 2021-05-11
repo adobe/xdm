@@ -44,6 +44,7 @@ Deposit details such as ID, type, and amount.
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

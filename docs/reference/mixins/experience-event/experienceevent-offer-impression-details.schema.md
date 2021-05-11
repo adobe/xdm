@@ -30,6 +30,7 @@ Offer details such as offer name, clicks, dismissals.
 
 ## xdm:offers 
 
+Offer tracking, including offer impressions and clickthroughs.
 
 `xdm:offers `
 * is optional

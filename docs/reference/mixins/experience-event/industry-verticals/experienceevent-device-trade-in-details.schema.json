@@ -25,6 +25,7 @@
             "properties": {
                 "xdm:deviceTradeInDetails": {
                     "type": "object",
+                    "description": "Device activation, configuration, and trade-in details.",
                     "properties": {
                         "xdm:deviceTradeIn": {
                             "title": "Steps",

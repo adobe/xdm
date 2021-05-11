@@ -167,7 +167,7 @@ The time when the first event of the interaction occurred.
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional

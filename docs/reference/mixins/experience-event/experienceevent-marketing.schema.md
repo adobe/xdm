@@ -36,7 +36,7 @@ Marketing campaign information such as campaign group, name, and tracking code.
 ## xdm:marketing
 ### Marketing
 
-The information related to marketing activities that are active with the touchpoint.
+Tracks offer impression and social network interactions.
 
 `xdm:marketing`
 * is optional

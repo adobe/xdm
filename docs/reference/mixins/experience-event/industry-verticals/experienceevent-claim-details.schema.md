@@ -32,6 +32,7 @@ Claim details such as claim policy ID and claim creation steps.
 
 ## xdm:claims
 
+Captures fields related to a claim when initated by a customer.
 
 `xdm:claims`
 * is optional

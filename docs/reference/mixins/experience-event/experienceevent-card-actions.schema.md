@@ -38,6 +38,7 @@ Card action details such as card type as well as activation and lock status.
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

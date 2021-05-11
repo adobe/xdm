@@ -38,7 +38,7 @@ Information related to the software used to collect an ExperienceEvent such as e
 ## xdm:implementationDetails
 ### Implementation details
 
-The details of the software used to collect the ExperienceEvent.
+Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.
 
 `xdm:implementationDetails`
 * is optional

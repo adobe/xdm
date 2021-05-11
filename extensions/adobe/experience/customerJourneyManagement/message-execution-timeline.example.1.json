@@ -1,0 +1,22 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
+    "xdm:startTime": 1611642208737,
+    "xdm:endTime": 1611642247545
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
+    "xdm:startTime": 1611642248545,
+    "xdm:endTime": 1611642248555
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
+    "xdm:startTime": 1611642258375,
+    "xdm:endTime": 1611642458375
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
+    "xdm:startTime": 1611642251365,
+    "xdm:endTime": 1611642251465
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
+    "xdm:startTime": 1611642251495,
+    "xdm:endTime": 1611642651495
+  }
+}

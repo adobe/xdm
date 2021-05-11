@@ -33,6 +33,7 @@
       "properties": {
         "xdm:customerFeedback": {
           "type": "object",
+		  "description": "Customer interaction information such as chat, click to call, email and survey questions/answers.",
           "properties": {
             "xdm:chatDeclined": {
               "title": "Chat Declined",

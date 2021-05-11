@@ -29,6 +29,7 @@
       "properties": {
         "xdm:alerts": {
           "type": "object",
+		  "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
           "properties": {
             "xdm:ID": {
               "title": "Alert ID",

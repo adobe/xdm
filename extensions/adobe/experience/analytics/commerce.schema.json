@@ -27,7 +27,7 @@
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description": "Commerce specific data related to this event."
+          "description": "Product returns, warranty registration, and shopping cart/order process."
         }
       }
     }

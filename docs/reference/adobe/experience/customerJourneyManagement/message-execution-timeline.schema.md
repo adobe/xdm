@@ -46,11 +46,11 @@ Message Execution Timeline details for the Adobe CJM ExperienceEvent.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinejo) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinemes) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineherald) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinesds) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineess) | `string` | **Required** | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinejo) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinemes) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineherald) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinesds) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineess) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO
 ### Execution Time Profiling of Journey Orchestration Component 

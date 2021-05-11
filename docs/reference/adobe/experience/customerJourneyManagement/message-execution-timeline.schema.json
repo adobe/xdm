@@ -1,0 +1,83 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-execution-timeline",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Execution Timeline",
+  "description": "Provide timeline for a message being executed by the processing pipeline.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+
+  "definitions": {
+    "messageExecutionTimeline": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
+          "title": "Execution Time Profiling of Journey Orchestration Component",
+          "description": "Captures the time taken by Journey Runtime in executing a message, for a given profile.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
+          "title": "Execution Time Profiling of Message Execution Service",
+          "description": "Captures the time taken by Message Execution Service in personalisation, rendering and dispatching the message.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
+          "title": "Execution Time Profiling of Herald/Push Service",
+          "description": "Captures the time taken by Herald Service in processing the push packet and sending to end-service i.e FCM or APNS.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
+          "title": "Execution Time Profiling of Streaming Delivery Service",
+          "description": "Captures the time taken by Streaming Delivery Service in processing the email packet and sending to ESS for dispatch.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
+          "title": "Execution Time Profiling of Email Send Service",
+          "description": "Captures the time taken by Email Send Service(including Momentum) in processing the email packet and dispatching to ISPs.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/messageExecutionTimeline"
+    }
+  ],
+  "meta:status": "stable",
+  "examples": [
+    {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
+        "xdm:startTime": 1611642208737,
+        "xdm:endTime": 1611642247545
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
+        "xdm:startTime": 1611642248545,
+        "xdm:endTime": 1611642248555
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
+        "xdm:startTime": 1611642258375,
+        "xdm:endTime": 1611642458375
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
+        "xdm:startTime": 1611642251365,
+        "xdm:endTime": 1611642251465
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
+        "xdm:startTime": 1611642251495,
+        "xdm:endTime": 1611642651495
+      }
+    }
+  ]
+}
+
+

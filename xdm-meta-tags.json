@@ -153,9 +153,7 @@
             },
             {
               "class": "https://ns.adobe.com/xdm/context/experienceevent",
-              "mixins": [
-                "https://ns.adobe.com/xdm/context/experienceevent-web"
-              ]
+              "mixins": ["https://ns.adobe.com/xdm/context/experienceevent-web"]
             },
             {
               "class": "https://ns.adobe.com/xdm/context/experienceevent",

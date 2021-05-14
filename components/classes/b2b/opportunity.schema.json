@@ -20,32 +20,53 @@
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "003ABC123@Salesforce_22"
+          ]
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "Alaska Airlines 787"
+          ]
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
           "description": "Description of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "Alaska Airlines opportunity with in Sales Group"
+          ]
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
           "description": "Type of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "New Customer",
+            "Existing Customer"
+          ]
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
           "description": "Sales stage of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "Contract SOOOO Close",
+            "Contract Pending",
+            "Qualification"
+          ]
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique ID of the account this opportunity is associated with.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "001FFea@Salesforce_22"
+          ]
         }
       }
     }

@@ -25,19 +25,19 @@ Offer details such as offer name, clicks, dismissals.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:offers ](#xdmoffers) | `object` | Optional | Offer Impression Details (this schema) |
+| [xdm:offers](#xdmoffers) | `object` | Optional | Offer Impression Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:offers 
+## xdm:offers
 
 Offer tracking, including offer impressions and clickthroughs.
 
-`xdm:offers `
+`xdm:offers`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:offers  Type
+### xdm:offers Type
 
 
 `object` with following properties:

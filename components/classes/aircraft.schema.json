@@ -24,8 +24,8 @@
           "type": "string",
           "description": "Captures the tail number (identification string) for the aircraft."
         },
-        "xdm:type": {
-          "title": "Type",
+        "xdm:aircrafTtype": {
+          "title": "Aircraft Type",
           "type": "string",
           "description": "Records the aircraft type."
         }

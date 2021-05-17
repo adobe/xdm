@@ -15,34 +15,39 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
 
   "definitions": {
-    "messageExecutionTimeline": {
+    "time-profiling": {
+      "type": "object",
+      "description": "This datatype is used where ever you want to store the time profiling information of any service or component.",
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
-          "title": "Execution Time Profiling of Journey Orchestration Component",
-          "description": "Captures the time taken by Journey Runtime in executing a message, for a given profile.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        "xdm:componentName": {
+          "title": "serviceName",
+          "description": "The name of the service/component, for which time information is captured.",
+          "type": "string"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
-          "title": "Execution Time Profiling of Message Execution Service",
-          "description": "Captures the time taken by Message Execution Service in personalisation, rendering and dispatching the message.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        "xdm:serviceGroup": {
+          "title": "serviceGroup",
+          "description": "An optional attribute, to capture the timeline of a service, at sub-tree level.",
+          "type": "string"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
-          "title": "Execution Time Profiling of Herald/Push Service",
-          "description": "Captures the time taken by Herald Service in processing the push packet and sending to end-service i.e FCM or APNS.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        "xdm:startTime": {
+          "title": "startTime",
+          "description": "Execution Start time in Epoch millis for the component.",
+          "type": "number"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
-          "title": "Execution Time Profiling of Streaming Delivery Service",
-          "description": "Captures the time taken by Streaming Delivery Service in processing the email packet and sending to ESS for dispatch.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
-          "title": "Execution Time Profiling of Email Send Service",
-          "description": "Captures the time taken by Email Send Service(including Momentum) in processing the email packet and dispatching to ISPs.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/time-profiling"
+        "xdm:endTime": {
+          "title": "endTime",
+          "description": "Execution End time in Epoch millis for the component.",
+          "type": "number"
         }
       }
+    },
+    "messageExecutionTimeline": {
+      "title": "messageExecutionTimeline",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/time-profiling"
+      },
+      "description": "An array of time-profiling for every component of execution pipeline."
     }
   },
   "allOf": [
@@ -55,27 +60,32 @@
   ],
   "meta:status": "stable",
   "examples": [
-    {
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
+    [
+      {
+        "xdm:componentName": "JO",
         "xdm:startTime": 1611642208737,
         "xdm:endTime": 1611642247545
       },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
+      {
+        "xdm:componentName": "MES",
         "xdm:startTime": 1611642248545,
         "xdm:endTime": 1611642248555
       },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
+      {
+        "xdm:componentName": "HERALD",
         "xdm:startTime": 1611642258375,
         "xdm:endTime": 1611642458375
       },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
+      {
+        "xdm:componentName": "SDS",
         "xdm:startTime": 1611642251365,
         "xdm:endTime": 1611642251465
       },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
+      {
+        "xdm:componentName": "ESS",
         "xdm:startTime": 1611642251495,
         "xdm:endTime": 1611642651495
       }
-    }
+    ]
   ]
 }

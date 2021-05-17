@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Message Execution Timeline",
   "description": "Captures an array of time-profiling info, for every component of execution pipeline, corresponding to every message being executed.",
+  "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
@@ -40,13 +41,15 @@
         }
       }
     },
-    "messageExecutionTimeline": {
-      "title": "messageExecutionTimeline",
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/time-profiling"
-      },
-      "description": "An  ."
+    "message-execution-timeline": {
+      "properties": {
+        "xdm:messageExecutionTimeline": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/time-profiling"
+          }
+        }
+      }
     }
   },
   "allOf": [
@@ -54,7 +57,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/messageExecutionTimeline"
+      "$ref": "#/definitions/message-execution-timeline"
     }
   ],
   "meta:status": "stable"

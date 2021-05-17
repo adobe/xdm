@@ -18,92 +18,53 @@ Message Execution Timeline details for the Adobe CJM ExperienceEvent.
 
 ## Adobe CJM ExperienceEvent - Message Execution Timeline Details Example
 ```json
-{
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO": {
-        "xdm:startTime": 1611642208737,
-        "xdm:endTime": 1611642247545
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES": {
-        "xdm:startTime": 1611642248545,
-        "xdm:endTime": 1611642248555
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD": {
-        "xdm:startTime": 1611642258375,
-        "xdm:endTime": 1611642458375
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS": {
-        "xdm:startTime": 1611642251365,
-        "xdm:endTime": 1611642251465
-      },
-      "https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS": {
-        "xdm:startTime": 1611642251495,
-        "xdm:endTime": 1611642651495
-      }
-}
+[
+  {
+    "xdm:componentName": "JO",
+    "xdm:startTime": 1611642208737,
+    "xdm:endTime": 1611642247545
+  },
+  {
+    "xdm:componentName": "MES",
+    "xdm:startTime": 1611642248545,
+    "xdm:endTime": 1611642248555
+  },
+  {
+    "xdm:componentName": "HERALD",
+    "xdm:startTime": 1611642258375,
+    "xdm:endTime": 1611642458375
+  },
+  {
+    "xdm:componentName": "SDS",
+    "xdm:startTime": 1611642251365,
+    "xdm:endTime": 1611642251465
+  },
+  {
+    "xdm:componentName": "ESS",
+    "xdm:startTime": 1611642251495,
+    "xdm:endTime": 1611642651495
+  }
+]
 ```
 
 # Adobe CJM ExperienceEvent - Message Execution Timeline Details Properties
 
+`https://ns.adobe.com/experience/customerJourneyManagement/message-execution-timeline`
+* is `optional`
+* type: `array`
+* items: [definitions/time-profiling](#definitionstime-profiling)
+* defined in this schema
+
+## definitions/time-profiling
+### Time Profiling of Execution Components 
+
+This dataType is used to store the time profiling information of any service or component.
+
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinejo) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Timeline Schema (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinemes) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Timeline Schema (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineherald) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Timeline Schema (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelinesds) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Timeline Schema (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutiontimelineess) | `time-profiling` | Optional | Adobe CJM ExperienceEvent - Message Execution Timeline Schema (this schema) |
-
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO
-### Execution Time Profiling of Journey Orchestration Component 
-
-Captures the time taken by Journey Runtime in executing a message, for a given profile.
-
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/JO`
-* is optional
-* type: `time-profiling`
-* defined in this schema
-
-
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES
-### Execution Time Profiling of Message Execution Service
-
-Captures the time taken by Message Execution Service in personalisation, rendering and dispatching the message.
-
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/MES`
-* is optional
-* type: `time-profiling`
-* defined in this schema
-
-
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD
-### Execution Time Profiling of Herald/Push Service
-
-Captures the time taken by Herald Service in processing the push packet and sending to end-service i.e FCM or APNS.
-
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/HERALD`
-* is optional
-* type: `time-profiling`
-* defined in this schema
-
-
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS
-### Execution Time Profiling of Streaming Delivery Service
-
-Captures the time taken by Streaming Delivery Service in processing the email packet and sending to ESS for dispatch.
-
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/SDS`
-* is optional
-* type: `time-profiling`
-* defined in this schema
-
-
-## https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS
-### Execution Time Profiling of Email Send Service
-
-Captures the time taken by Email Send Service(including Momentum) in processing the email packet and dispatching to ISPs.
-
-`https://ns.adobe.com/experience/customerJourneyManagement/messageExecutionTimeline/ESS`
-* is optional
-* type: `time-profiling`
-* defined in this schema
+| xdm:componentName | string | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
+| xdm:serviceGroup | string | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
+| xdm:startTime | number | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
+| xdm:endTime | number | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
 
 

@@ -17,7 +17,7 @@
   "definitions": {
     "time-profiling": {
       "type": "object",
-      "description": "This datatype is used where ever you want to store the time profiling information of any service or component.",
+      "description": "This datatype is used to store the time profiling information of any service or component.",
       "properties": {
         "xdm:componentName": {
           "title": "serviceName",

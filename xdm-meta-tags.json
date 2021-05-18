@@ -137,36 +137,6 @@
       "https://ns.adobe.com/xdm/mixins/events/scorechanged",
       "https://ns.adobe.com/xdm/mixins/events/statusincampaignprogressionchanged",
       "https://ns.adobe.com/xdm/mixins/events/visit-webpage"
-    ],
-    "useCases": {
-      "retail": {
-        "case1": {
-          "description": "Ingest Loyalty (partner) data to increase relevant product information across web, email, and digital marketing channels.",
-          "title": "Some Title",
-          "schemaComponents": [
-            {
-              "class": "https://ns.adobe.com/xdm/context/profile",
-              "mixins": [
-                "https://ns.adobe.com/xdm/context/profile-personal-details",
-                "https://ns.adobe.com/xdm/mixins/profile/profile-loyalty-details"
-              ]
-            },
-            {
-              "class": "https://ns.adobe.com/xdm/context/experienceevent",
-              "mixins": ["https://ns.adobe.com/xdm/context/experienceevent-web"]
-            },
-            {
-              "class": "https://ns.adobe.com/xdm/context/experienceevent",
-              "mixins": [
-                "https://ns.adobe.com/xdm/mixins/product-measurement",
-                "https://ns.adobe.com/xdm/mixins/product-catalog",
-                "https://ns.adobe.com/xdm/mixins/product-identifiers",
-                "https://ns.adobe.com/xdm/mixins/product-category"
-              ]
-            }
-          ]
-        }
-      }
-    }
+    ]
   }
 }

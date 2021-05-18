@@ -5,10 +5,10 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/message-execution-timeline",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Message Execution Timeline",
-  "description": "Captures an array of time-profiling info, for every component of execution pipeline, corresponding to every message being executed.",
+  "description": "Captures an array of time-profiling info, for every component of processing flow.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -20,7 +20,7 @@
       "description": "This datatype is used to store the time profiling information of any service or component.",
       "properties": {
         "xdm:componentName": {
-          "title": "serviceName",
+          "title": "componentName",
           "description": "The name of the service/component, for which time information is captured.",
           "type": "string"
         },
@@ -31,19 +31,21 @@
         },
         "xdm:startTime": {
           "title": "startTime",
-          "description": "Execution Start time in Epoch millis for the component.",
-          "type": "number"
+          "description": "Execution Start time in Date-Time format for the component.",
+          "type": "string",
+          "format": "date-time"
         },
         "xdm:endTime": {
           "title": "endTime",
-          "description": "Execution End time in Epoch millis for the component.",
-          "type": "number"
+          "description": "Execution End time in Date-Time format for the component.",
+          "type": "string",
+          "format": "date-time"
         }
       }
     },
-    "message-execution-timeline": {
+    "processing-flow-timeline": {
       "properties": {
-        "xdm:messageExecutionTimeline": {
+        "xdm:processingFlowTimeline": {
           "type": "array",
           "items": {
             "$ref": "#/definitions/time-profiling"
@@ -57,37 +59,8 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/message-execution-timeline"
+      "$ref": "#/definitions/processing-flow-timeline"
     }
   ],
-  "meta:status": "stable",
-  "examples": [
-    [
-      {
-        "xdm:componentName": "JO",
-        "xdm:startTime": 1611642208737,
-        "xdm:endTime": 1611642247545
-      },
-      {
-        "xdm:componentName": "MES",
-        "xdm:startTime": 1611642248545,
-        "xdm:endTime": 1611642248555
-      },
-      {
-        "xdm:componentName": "HERALD",
-        "xdm:startTime": 1611642258375,
-        "xdm:endTime": 1611642458375
-      },
-      {
-        "xdm:componentName": "SDS",
-        "xdm:startTime": 1611642251365,
-        "xdm:endTime": 1611642251465
-      },
-      {
-        "xdm:componentName": "ESS",
-        "xdm:startTime": 1611642251495,
-        "xdm:endTime": 1611642651495
-      }
-    ]
-  ]
+  "meta:status": "stable"
 }

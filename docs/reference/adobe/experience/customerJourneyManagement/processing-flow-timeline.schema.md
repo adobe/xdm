@@ -56,7 +56,7 @@ Processing Flow Timeline details for the Adobe CJM ExperienceEvent.
 * defined in this schema
 
 ## definitions/time-profiling
-### Time Profiling of Execution Components 
+### Time Profiling of Processing Components 
 
 This dataType is used to store the time profiling information of any service or component.
 

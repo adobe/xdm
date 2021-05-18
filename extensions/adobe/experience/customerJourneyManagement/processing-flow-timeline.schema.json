@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe CJM ExperienceEvent - Message Execution Timeline",
+  "title": "Adobe CJM ExperienceEvent - Processing Flow Timeline",
   "description": "Captures an array of time-profiling info, for every component of processing flow.",
   "type": "object",
   "meta:extensible": true,

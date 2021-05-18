@@ -46,9 +46,21 @@
     "processing-flow-timeline": {
       "properties": {
         "xdm:processingFlowTimeline": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/time-profiling"
+          "title": "processingFlowTimeline",
+          "type": "object",
+          "properties": {
+            "xdm:flowName": {
+              "title": "flowName",
+              "type": "string",
+              "description": "Name of the processing flow."
+            },
+            "xdm:processingNodes": {
+              "title": "processingNodes",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/time-profiling"
+              }
+            }
           }
         }
       }

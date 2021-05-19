@@ -67,6 +67,7 @@ Reservation details such as length, modification, refundable status, and number 
 
 ## xdm:reservations
 
+Interaction tracking for flights, lodging, vehicles, and dining reservations.
 
 `xdm:reservations`
 * is optional

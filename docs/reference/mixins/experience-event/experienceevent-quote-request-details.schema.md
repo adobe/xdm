@@ -29,6 +29,7 @@ Captures different details of a quote request process for various types of quote
 
 ## xdm:quotes
 
+Quotes information including discount, premium, and request ID.
 
 `xdm:quotes`
 * is optional

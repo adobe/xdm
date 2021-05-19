@@ -29,6 +29,7 @@
       "properties": {
         "xdm:upsells": {
           "type": "object",
+          "description": "Upsell information including impressions and transactions associated with upsells.",
           "properties": {
             "xdm:upsellSteps": {
               "title": "Upsell Steps",
@@ -60,5 +61,5 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-02"
+  "meta:createdDate": "2021-02-02"
 }

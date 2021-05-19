@@ -30,6 +30,7 @@
             "properties": {
                 "xdm:loyalty": {
                     "type": "object",
+                    "description": "Captures details related to the customer's loyalty rewards.",
                     "properties": {
                         "xdm:joinDate": {
                             "title": "Program Join Date",

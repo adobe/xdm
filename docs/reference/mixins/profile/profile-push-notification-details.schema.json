@@ -23,7 +23,52 @@
                     "type": "array",
                     "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
                     "items": {
-                        "$ref": "https://ns.adobe.com/xdm/context/pushdetail"
+                        "type": "object",
+                        "properties": {
+                            "xdm:token": {
+                                "title": "Push Token",
+                                "type": "string",
+                                "description": "Valid push token for the given push platform."
+                            },
+                            "xdm:platform": {
+                                "title": "Push Platform",
+                                "type": "string",
+                                "description": "Push provider, e.g. apns or fcm"
+                            },
+                            "xdm:blacklisted": {
+                                "title": "Blacklist Flag",
+                                "type": "boolean",
+                                "meta:status": "deprecated",
+                                "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead."
+                            },
+                            "xdm:blocklisted": {
+                                "title": "Blocklist Flag",
+                                "type": "boolean",
+                                "meta:status": "deprecated",
+                                "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead."
+                            },
+                            "xdm:denylisted": {
+                                "title": "Denylist Flag",
+                                "type": "boolean",
+                                "description": "Indicates whether the push token is blocked by the push provider."
+                            },
+                            "xdm:appID": {
+                                "title": "Application Identifier",
+                                "type": "string",
+                                "description": "Unique Identifier for the mobile application."
+                            },
+                            "xdm:identiy": {
+                                "title": "Identity associated with this token",
+                                "$ref": "https://ns.adobe.com/xdm/context/identity",
+                                "meta:status": "deprecated",
+                                "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead."
+                            },
+                            "xdm:identity": {
+                                "title": "Identity associated with this token",
+                                "$ref": "https://ns.adobe.com/xdm/context/identity",
+                                "description": "The identity associated with this token before profile stitching."
+                            }
+                        }
                     }
                 }
             }

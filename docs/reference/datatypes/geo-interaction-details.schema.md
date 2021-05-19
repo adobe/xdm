@@ -9,7 +9,7 @@ The geo details relating to the current state of inclusion in a geo defined area
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/geo-interaction-details.schema.json](datatypes/geo-interaction-details.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/geo-interaction-details.schema.json](datatypes/geo-interaction-details.schema.json) |
 ## Schema Hierarchy
 
 * Geo interaction details `https://ns.adobe.com/xdm/context/geo-interaction-details`

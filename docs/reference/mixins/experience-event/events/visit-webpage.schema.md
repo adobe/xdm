@@ -179,6 +179,8 @@ The search engine used by the search.
 ## xdm:web
 ### Web
 
+Link clicks, web page details, referrer information, and browser details.
+
 `xdm:web`
 * is optional
 * type: `object`

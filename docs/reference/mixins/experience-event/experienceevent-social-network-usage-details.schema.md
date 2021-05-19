@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details
 ```
 
-Social network usage information such as share, content, and network. 
+Social network usage information such as share, content, and network.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -32,6 +32,7 @@ Social network usage information such as share, content, and network.
 
 ## xdm:socialMarketing 
 
+Tracks interactions related to social marketing sites, such as shares and follows.
 
 `xdm:socialMarketing `
 * is optional

@@ -61,6 +61,7 @@ Extension of toolUsage data type.
 
 ## xdm:deviceTradeInDetails
 
+Device activation, configuration, and trade-in details.
 
 `xdm:deviceTradeInDetails`
 * is optional

@@ -49,6 +49,8 @@ The value of this property **must** be equal to one of the [known values below](
 | `n` | No (opt-out) |
 | `p` | Pending verification |
 | `u` | Unknown |
+| `dy` | Default of Yes (opt-in) |
+| `dn` | Default of No (opt-out) |
 | `LI` | Legitimate Interest |
 | `CT` | Contract |
 | `CP` | Compliance with a Legal Obligation |

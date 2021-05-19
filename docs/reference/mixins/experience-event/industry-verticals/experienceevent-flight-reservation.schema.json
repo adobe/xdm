@@ -28,6 +28,7 @@
             "properties": {
                 "xdm:reservations": {
                     "type": "object",
+                    "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
                     "properties": {
                         "xdm:flightReservations": {
                             "type": "array",
@@ -263,40 +264,40 @@
                                                 "description": "Tracks the reservation confirmation number/identifier."
                                             }
                                         }
-                                    }
-                                }
-                            },
-                            "xdm:flightStatusSearch": {
-                                "type": "object",
-                                "description": "Flight status search such as arrival and departure location, date, flight number, and search information.",
-                                "properties": {
-                                    "xdm:searchCount": {
-                                        "title": "Search Count",
-                                        "type": "integer",
-                                        "description": "Incremented when a flight status search occurs."
                                     },
-                                    "xdm:flightNumber": {
-                                        "title": "Flight Number",
-                                        "type": "string",
-                                        "description": "Captures the flight status search flight number."
-                                    },
-                                    "xdm:arrivalAirportCode": {
-                                        "title": "Arrival Airport Code",
-                                        "type": "string",
-                                        "description": "Tracks the arrival city airport code.",
-                                        "pattern": "^[A-Z]{3}$"
-                                    },
-                                    "xdm:departureAirportCode": {
-                                        "title": "Departure Airport Code",
-                                        "type": "string",
-                                        "description": "Tracks the departure city airport code.",
-                                        "pattern": "^[A-Z]{3}$"
-                                    },
-                                    "xdm:departureDate": {
-                                        "title": "Departure Date",
-                                        "type": "string",
-                                        "format": "date-time",
-                                        "description": "The departure date of the flight being reserved."
+                                    "xdm:flightStatusSearch": {
+                                        "type": "object",
+                                        "description": "Flight status search such as arrival and departure location, date, flight number, and search information.",
+                                        "properties": {
+                                            "xdm:searchCount": {
+                                                "title": "Search Count",
+                                                "type": "integer",
+                                                "description": "Incremented when a flight status search occurs."
+                                            },
+                                            "xdm:flightNumber": {
+                                                "title": "Flight Number",
+                                                "type": "string",
+                                                "description": "Captures the flight status search flight number."
+                                            },
+                                            "xdm:arrivalAirportCode": {
+                                                "title": "Arrival Airport Code",
+                                                "type": "string",
+                                                "description": "Tracks the arrival city airport code.",
+                                                "pattern": "^[A-Z]{3}$"
+                                            },
+                                            "xdm:departureAirportCode": {
+                                                "title": "Departure Airport Code",
+                                                "type": "string",
+                                                "description": "Tracks the departure city airport code.",
+                                                "pattern": "^[A-Z]{3}$"
+                                            },
+                                            "xdm:departureDate": {
+                                                "title": "Departure Date",
+                                                "type": "string",
+                                                "format": "date-time",
+                                                "description": "The departure date of the flight being reserved."
+                                            }
+                                        }
                                     }
                                 }
                             }

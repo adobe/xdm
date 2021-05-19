@@ -9,7 +9,7 @@ View details for the main content playback, present on all ads and chapters that
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/media/media-timed-asset-view-details.schema.json](datatypes/media/media-timed-asset-view-details.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/media/media-timed-asset-view-details.schema.json](datatypes/media/media-timed-asset-view-details.schema.json) |
 ## Schema Hierarchy
 
 * Primary asset view details `https://ns.adobe.com/xdm/context/media-timed-asset-view-details`

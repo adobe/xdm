@@ -41,6 +41,7 @@ Credit limit increase application details such as ID, type, approval, and status
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

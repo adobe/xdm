@@ -915,7 +915,7 @@ Identifier used to stitch Target events with Analytics events
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents.
+Information related to advertising impressions, clickthroughs, and attribution.
 
 `xdm:advertising`
 * is optional
@@ -972,7 +972,7 @@ Experience channel related to the ExperienceEvent.
 ## xdm:commerce
 ### Commerce
 
-Commerce specific data related to this event.
+Product returns, warranty registration, and shopping cart/order process.
 
 `xdm:commerce`
 * is optional
@@ -1086,7 +1086,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:marketing
 ### Marketing
 
-The information related to marketing activities that are active with the touchpoint.
+Tracks offer impression and social network interactions.
 
 `xdm:marketing`
 * is optional
@@ -1283,7 +1283,7 @@ All items must be of the type:
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional

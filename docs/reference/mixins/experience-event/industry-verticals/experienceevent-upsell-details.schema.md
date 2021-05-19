@@ -35,6 +35,7 @@ Upsell details such as offer name, type, and ID, as well as transaction details 
 
 ## xdm:upsells
 
+Upsell information including impressions and transactions associated with upsells.
 
 `xdm:upsells`
 * is optional

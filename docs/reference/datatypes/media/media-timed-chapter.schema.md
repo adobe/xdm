@@ -9,7 +9,7 @@ Timed media chapter information.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/media/media-timed-chapter.schema.json](datatypes/media/media-timed-chapter.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/media/media-timed-chapter.schema.json](datatypes/media/media-timed-chapter.schema.json) |
 ## Schema Hierarchy
 
 * Timed media chapter information `https://ns.adobe.com/xdm/context/media-timed-chapter`

@@ -17,7 +17,6 @@ Examples include location specific information such as weather, local time, traf
 * Place context `https://ns.adobe.com/xdm/context/placecontext`
   * [Extensibility base schema](extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Geo](demographic/geo.schema.md) `https://ns.adobe.com/xdm/common/geo`
-  * [Point of interest interaction](interactions/poi-interaction.schema.md) `https://ns.adobe.com/xdm/context/poi-interaction`
 
 
 ## Place context Example
@@ -79,7 +78,7 @@ Examples include location specific information such as weather, local time, traf
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:POIinteraction](#xdmpoiinteraction) | Point of interest interaction | Optional | Place context (this schema) |
+| [xdm:POIinteraction](#xdmpoiinteraction) | `object` | Optional | Place context (this schema) |
 | [xdm:activePOIs](#xdmactivepois) | Point of interest details | Optional | Place context (this schema) |
 | [xdm:geo](#xdmgeo) | Geo | Optional | Place context (this schema) |
 | [xdm:ianaTimezone](#xdmianatimezone) | `string` | Optional | Place context (this schema) |
@@ -94,13 +93,100 @@ The point of interest (POI) interaction details.
 
 `xdm:POIinteraction`
 * is optional
-* type: Point of interest interaction
+* type: `object`
 * defined in this schema
 
 ### xdm:POIinteraction Type
 
 
-* [Point of interest interaction](interactions/poi-interaction.schema.md) – `https://ns.adobe.com/xdm/context/poi-interaction`
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:POIDetail`|  | Optional |
+| `xdm:poiDetail`|  | Optional |
+| `xdm:poiEntries`|  | Optional |
+| `xdm:poiExits`|  | Optional |
+
+
+
+#### xdm:POIDetail
+##### POI detail
+
+Detail of the POI that cause the event.
+
+`xdm:POIDetail`
+* is optional
+* type: reference
+
+##### xdm:POIDetail Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/poi-detail`
+
+
+
+
+
+
+
+#### xdm:poiDetail
+##### POI detail
+
+Detail of the POI that cause the event.
+
+`xdm:poiDetail`
+* is optional
+* type: reference
+
+##### xdm:poiDetail Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/poi-detail`
+
+
+
+
+
+
+
+#### xdm:poiEntries
+
+The number of times a person has entered the point of interest (POI).
+
+`xdm:poiEntries`
+* is optional
+* type: reference
+
+##### xdm:poiEntries Type
+
+
+* []() – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+
+
+#### xdm:poiExits
+
+The number of times a person has exited the point of interest (POI).
+
+`xdm:poiExits`
+* is optional
+* type: reference
+
+##### xdm:poiExits Type
+
+
+* []() – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 
 
 

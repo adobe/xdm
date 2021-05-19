@@ -50,7 +50,7 @@ Use for information regarding web details events such as interaction, page detai
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional

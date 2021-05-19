@@ -29,8 +29,9 @@
   "definitions": {
     "offer-impression-details": {
       "properties": {
-        "xdm:offers ": {
+        "xdm:offers": {
           "type": "object",
+          "description": "Offer tracking, including offer impressions and clickthroughs.",
           "properties": {
             "xdm:ID": {
               "title": "Offer ID",

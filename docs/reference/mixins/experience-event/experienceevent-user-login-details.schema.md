@@ -45,6 +45,7 @@ User login details such as login state, location, and type, as well as forgot us
 
 ## xdm:userAccount
 
+Loyalty details, preferences, login processes, and other account preferences.
 
 `xdm:userAccount`
 * is optional

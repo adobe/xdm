@@ -50,6 +50,7 @@ Visitor contact details such as chat start and end, as well as click to email, t
 
 ## xdm:customerFeedback
 
+Customer interaction information such as chat, click to call, email and survey questions/answers.
 
 `xdm:customerFeedback`
 * is optional

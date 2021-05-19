@@ -40,7 +40,7 @@ Information regarding push notifications, such as mobile application and device 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:pushNotificationDetails](#xdmpushnotificationdetails) | Push notification detail | Optional | Push Notification Details (this schema) |
+| [xdm:pushNotificationDetails](#xdmpushnotificationdetails) | `object[]` | Optional | Push Notification Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:pushNotificationDetails
@@ -50,17 +50,193 @@ Push details array containing notification info required to send mobile push not
 
 `xdm:pushNotificationDetails`
 * is optional
-* type: Push notification detail
+* type: `object[]`
 
 * defined in this schema
 
 ### xdm:pushNotificationDetails Type
 
 
-Array type: Push notification detail
+Array type: `object[]`
 
 All items must be of the type:
-* [Push notification detail](../../datatypes/pushdetail.schema.md) – `https://ns.adobe.com/xdm/context/pushdetail`
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:appID`| string | Optional |
+| `xdm:blacklisted`| boolean | Optional |
+| `xdm:blocklisted`| boolean | Optional |
+| `xdm:denylisted`| boolean | Optional |
+| `xdm:identity`|  | Optional |
+| `xdm:identiy`|  | Optional |
+| `xdm:platform`| string | Optional |
+| `xdm:token`| string | Optional |
+
+
+
+#### xdm:appID
+##### Application Identifier
+
+Unique Identifier for the mobile application.
+
+`xdm:appID`
+* is optional
+* type: `string`
+
+##### xdm:appID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:blacklisted
+##### Blacklist Flag
+
+Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.
+
+`xdm:blacklisted`
+* is optional
+* type: `boolean`
+
+##### xdm:blacklisted Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:blocklisted
+##### Blocklist Flag
+
+Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.
+
+`xdm:blocklisted`
+* is optional
+* type: `boolean`
+
+##### xdm:blocklisted Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:denylisted
+##### Denylist Flag
+
+Indicates whether the push token is blocked by the push provider.
+
+`xdm:denylisted`
+* is optional
+* type: `boolean`
+
+##### xdm:denylisted Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:identity
+##### Identity associated with this token
+
+The identity associated with this token before profile stitching.
+
+`xdm:identity`
+* is optional
+* type: reference
+
+##### xdm:identity Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+
+
+#### xdm:identiy
+##### Identity associated with this token
+
+The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.
+
+`xdm:identiy`
+* is optional
+* type: reference
+
+##### xdm:identiy Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/identity`
+
+
+
+
+
+
+
+#### xdm:platform
+##### Push Platform
+
+Push provider, e.g. apns or fcm
+
+`xdm:platform`
+* is optional
+* type: `string`
+
+##### xdm:platform Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:token
+##### Push Token
+
+Valid push token for the given push platform.
+
+`xdm:token`
+* is optional
+* type: `string`
+
+##### xdm:token Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

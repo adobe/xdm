@@ -92,6 +92,7 @@
                 "xdm:web": {
                     "title": "Web",
                     "type": "object",
+                    "description": "Link clicks, web page details, referrer information, and browser details.",
                     "properties": {
                         "xdm:webInteraction": {
                             "title": "Web Interaction",

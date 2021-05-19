@@ -25,6 +25,7 @@
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
+		  "description": "Financial details including transactions, accounts, and applications.",
           "properties": {
             "xdm:billPayDetails": {
               "type": "object",

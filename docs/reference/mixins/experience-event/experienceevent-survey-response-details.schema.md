@@ -29,6 +29,7 @@ https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details
 
 ## xdm:surveyResponse
 
+Stores details related to a survey that has been completed by a user.
 
 `xdm:surveyResponse`
 * is optional

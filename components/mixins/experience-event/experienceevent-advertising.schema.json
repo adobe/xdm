@@ -22,7 +22,7 @@
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "Information related to advertising activity in ExperienceEvents."
+          "description": "Information related to advertising impressions, clickthroughs, and attribution."
         }
       }
     }

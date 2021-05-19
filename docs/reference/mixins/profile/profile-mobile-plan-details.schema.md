@@ -39,8 +39,153 @@ Mobile plan details including number of lines, data rates, cost, etc.
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:accessories`| array | Optional |
 | `xdm:accountID`| string | Optional |
 | `xdm:devices`| array | Optional |
+| `xdm:name`| string | Optional |
+| `xdm:rate`|  | Optional |
+
+
+
+#### xdm:accessories
+##### Accessories
+
+Array of accessories associated with the plan.
+
+`xdm:accessories`
+* is optional
+* type: `object[]`
+
+
+##### xdm:accessories Type
+
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | Optional |
+| `xdm:manufacturer`| string | Optional |
+| `xdm:name`| string | Optional |
+| `xdm:serialNumber`| string | Optional |
+| `xdm:type`| string | Optional |
+
+
+
+#### xdm:ID
+##### ID
+
+Captures the ID for the accessory.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:manufacturer
+##### Manufacturer
+
+Captures the accessory manufacturer.
+
+`xdm:manufacturer`
+* is optional
+* type: `string`
+
+##### xdm:manufacturer Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:name
+##### Name
+
+Captures the accessory name.
+
+`xdm:name`
+* is optional
+* type: `string`
+
+##### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:serialNumber
+##### Serial Number
+
+Captures the accessory serial number.
+
+`xdm:serialNumber`
+* is optional
+* type: `string`
+
+##### xdm:serialNumber Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:type
+##### Type
+
+Captures the accessory type.
+
+`xdm:type`
+* is optional
+* type: `string`
+
+##### xdm:type Type
+
+
+`string`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,13 +232,16 @@ All items must be of the type:
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:ID`| string | Optional |
+| `xdm:OS`| string | Optional |
 | `xdm:earlyUpgradeEnrollment`| boolean | Optional |
 | `xdm:insuranceEnrollment`| boolean | Optional |
 | `xdm:manufacturer`| string | Optional |
 | `xdm:model`| string | Optional |
 | `xdm:phoneNumber`|  | Optional |
 | `xdm:planLevel`| string | Optional |
+| `xdm:portedNumber`| boolean | Optional |
 | `xdm:pricingOptions`| string | Optional |
+| `xdm:serialNumber`| string | Optional |
 | `xdm:storageCapacity`| string | Optional |
 
 
@@ -113,6 +261,36 @@ Captures the ID for the device.
 `string`
 
 
+
+
+
+
+
+
+#### xdm:OS
+##### OS
+
+Captures the device operating system.
+
+`xdm:OS`
+* is optional
+* type: `string`
+
+##### xdm:OS Type
+
+
+`string`
+
+
+
+##### xdm:OS Known Values
+| Value | Description |
+|-------|-------------|
+| `android` | Android |
+| `ios` | iOS |
+| `windows` | Windows |
+| `blackberry` | Blackberry |
+| `symbian` | Symbian |
 
 
 
@@ -242,6 +420,26 @@ Captures the name of the mobile plan assigned to this device.
 
 
 
+#### xdm:portedNumber
+##### Ported Number
+
+Captures if the customer ports their number from another carrier.
+
+`xdm:portedNumber`
+* is optional
+* type: `boolean`
+
+##### xdm:portedNumber Type
+
+
+`boolean`
+
+
+
+
+
+
+
 #### xdm:pricingOptions
 ##### Pricing Options
 
@@ -263,6 +461,27 @@ Captures if the device will be paid for in installments or full retail price.
 |-------|-------------|
 | `installmentPlan` | Installment Plan |
 | `retailPrice` | Retail Price |
+
+
+
+
+
+
+#### xdm:serialNumber
+##### Serial Number
+
+Captures the device serial number.
+
+`xdm:serialNumber`
+* is optional
+* type: `string`
+
+##### xdm:serialNumber Type
+
+
+`string`
+
+
 
 
 
@@ -291,6 +510,47 @@ Captures the device storage capacity.
 
 
 
+
+
+
+
+
+
+
+#### xdm:name
+##### Name
+
+Name for the plan.
+
+`xdm:name`
+* is optional
+* type: `string`
+
+##### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:rate
+##### Rate
+
+Rate for the plan.
+
+`xdm:rate`
+* is optional
+* type: reference
+
+##### xdm:rate Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/currency`
 
 
 

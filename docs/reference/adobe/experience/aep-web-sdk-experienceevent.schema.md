@@ -101,7 +101,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:implementationDetails
 ### Implementation details
 
-The details of the software used to collect the ExperienceEvent.
+Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.
 
 `xdm:implementationDetails`
 * is optional
@@ -354,7 +354,7 @@ undefined
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional

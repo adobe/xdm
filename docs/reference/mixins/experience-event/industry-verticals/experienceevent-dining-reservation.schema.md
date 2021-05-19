@@ -46,6 +46,7 @@ Collects all details specific to a dining reservation.
 
 ## xdm:reservations
 
+Interaction tracking for flights, lodging, vehicles, and dining reservations.
 
 `xdm:reservations`
 * is optional

@@ -25,6 +25,7 @@
       "properties": {
         "xdm:claims": {
           "type": "object",
+          "description": "Captures fields related to a claim when initated by a customer.",
           "properties": {
             "xdm:ID": {
               "title": "Claims ID",
@@ -92,5 +93,5 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19"
 }

@@ -21,6 +21,7 @@
       "properties": {
         "xdm:service-payment-details": {
           "type": "object",
+          "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
           "properties": {
             "xdm:servicePayment": {
               "title": "Service Payment",

@@ -1,0 +1,142 @@
+{
+  "meta:tags": {
+    "industry": {
+      "retail": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details",
+        "https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details",
+        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details",
+        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upgrade-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
+        "https://ns.adobe.com/xdm/classes/promotion",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details",
+        "https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details",
+        "https://ns.adobe.com/xdm/classes/product",
+        "https://ns.adobe.com/xdm/mixins/profile/profile-loyalty-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-contact-request-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details"
+      ],
+      "financialServices": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-credit-limit-increase-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-service-payment-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-card-application-details",
+        "https://ns.adobe.com/xdm/classes/fsi/atm",
+        "https://ns.adobe.com/xdm/classes/fsi/branch",
+        "https://ns.adobe.com/xdm/classes/promotion",
+        "https://ns.adobe.com/xdm/classes/fsi/policy",
+        "https://ns.adobe.com/xdm/classes/product",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details",
+        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details",
+        "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upgrade-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-claim-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-loan-application-details",
+        "https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details",
+        "https://ns.adobe.com/xdm/mixins/profile/profile-personal-tax-profile-details",
+        "https://ns.adobe.com/xdm/mixins/profile-personal-finance-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-card-actions",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-contact-request-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details"
+      ],
+      "travelAndHospitality": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "telecom": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "automotive": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "education": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "healthAndLifeSciences": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "highTech": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "manufacturing": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "mediaAndEntertainment": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "publicSector": [
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details",
+        "https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details"
+      ],
+      "all": [
+        "https://ns.adobe.com/xdm/context/profile",
+        "https://ns.adobe.com/xdm/context/experienceevent"
+      ]
+    },
+    "systemSchema": [
+      "https://ns.adobe.com/xdm/context/identitymap",
+      "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    ],
+    "b2bSchema": [
+      "https://ns.adobe.com/xdm/context/profile",
+      "https://ns.adobe.com/xdm/context/experienceevent",
+      "https://ns.adobe.com/xdm/context/campaign-member",
+      "https://ns.adobe.com/xdm/classes/campaign",
+      "https://ns.adobe.com/xdm/classes/account-person",
+      "https://ns.adobe.com/xdm/context/account",
+      "https://ns.adobe.com/xdm/classes/marketing-list-member",
+      "https://ns.adobe.com/xdm/classes/marketing-list",
+      "https://ns.adobe.com/xdm/context/opportunity-contact-role",
+      "https://ns.adobe.com/xdm/classes/opportunity-person",
+      "https://ns.adobe.com/xdm/context/opportunity",
+      "https://ns.adobe.com/xdm/mixins/account-details",
+      "https://ns.adobe.com/xdm/context/campaign-member-details",
+      "https://ns.adobe.com/xdm/mixins/campaign-details",
+      "https://ns.adobe.com/xdm/context/opportunity-contact-role-details",
+      "https://ns.adobe.com/xdm/mixins/opportunity-details",
+      "https://ns.adobe.com/xdm/mixins/b2b-person-details",
+      "https://ns.adobe.com/xdm/mixins/b2b-person-components",
+      "https://ns.adobe.com/xdm/mixins/profile-consents",
+      "https://ns.adobe.com/b2b/bizible/bizible-account-details",
+      "https://ns.adobe.com/b2b/bizible/bizible-opportunity-details",
+      "https://ns.adobe.com/b2b/bizible/bizible-person-details",
+      "https://ns.adobe.com/xdm/mixins/events/add-to-list",
+      "https://ns.adobe.com/xdm/mixins/events/add-to-opportunity",
+      "https://ns.adobe.com/xdm/mixins/events/convert-lead",
+      "https://ns.adobe.com/xdm/mixins/events/emailbounced",
+      "https://ns.adobe.com/xdm/mixins/events/emailbouncedsoft",
+      "https://ns.adobe.com/xdm/mixins/events/emailclicked",
+      "https://ns.adobe.com/xdm/mixins/events/emaildelivered",
+      "https://ns.adobe.com/xdm/mixins/events/emailopened",
+      "https://ns.adobe.com/xdm/mixins/events/emailunsubscribed",
+      "https://ns.adobe.com/xdm/mixins/events/formfilledout",
+      "https://ns.adobe.com/xdm/mixins/events/interesting-moment",
+      "https://ns.adobe.com/xdm/mixins/events/linkclicks",
+      "https://ns.adobe.com/xdm/mixins/events/new-lead",
+      "https://ns.adobe.com/xdm/mixins/events/opportunityupdated",
+      "https://ns.adobe.com/xdm/mixins/events/remove-from-list",
+      "https://ns.adobe.com/xdm/mixins/events/remove-from-opportunity",
+      "https://ns.adobe.com/xdm/mixins/events/scorechanged",
+      "https://ns.adobe.com/xdm/mixins/events/statusincampaignprogressionchanged",
+      "https://ns.adobe.com/xdm/mixins/events/visit-webpage"
+    ]
+  }
+}

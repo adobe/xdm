@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+    "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
@@ -188,7 +188,7 @@
       "$ref": "#/definitions/mobile-plan-details"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+      "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
   "meta:status": "experimental",

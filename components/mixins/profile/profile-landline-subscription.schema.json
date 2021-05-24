@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-landline-subscription",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-landline-subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Landline Subscription",
   "type": "object",
@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+    "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
   "description": "Collects all generic details related to a customer's landline subscription plan, including selected features, minutes, and dialing plans.",
   "definitions": {
@@ -82,7 +82,7 @@
       "$ref": "#/definitions/landline-subscription"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+      "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
   "meta:status": "experimental"

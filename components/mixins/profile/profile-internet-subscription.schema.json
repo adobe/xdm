@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-internet-subscription",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-internet-subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Internet Subscription",
   "type": "object",
@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+    "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
   "description": "Collects all specific details related to a customer's internet subscription plan, including data cap, connection type, and speed details.",
   "definitions": {
@@ -64,7 +64,7 @@
       "$ref": "#/definitions/internet-subscription"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+      "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
   "meta:status": "experimental"

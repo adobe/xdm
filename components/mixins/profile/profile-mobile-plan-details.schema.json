@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
+  ],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
     "mobile-plan-details": {
@@ -112,6 +114,31 @@
                     "title": "Ported Number",
                     "type": "boolean",
                     "description": "Captures if the customer ports their number from another carrier."
+                  },
+                  "xdm:devices/5GAccess": {
+                    "title": "5G Access",
+                    "type": "boolean",
+                    "description": "Captures if the device is eligible for 5G Access."
+                  },
+                  "xdm:devices/rolloverData": {
+                    "title": "Rollover Data",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes rollover data."
+                  },
+                  "xdm:devices/mobileHotspot": {
+                    "title": "Mobile Hotspot",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes mobile hotspot ability."
+                  },
+                  "xdm:devices/cloudStorageIncluded": {
+                    "title": "Cloud Storage Included",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes cloud data storage."
+                  },
+                  "xdm:devices/hdVideo": {
+                    "title": "HD Video",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes HD video."
                   }
                 }
               }
@@ -159,6 +186,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/mobile-plan-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/profile-telecom-subscription"
     }
   ],
   "meta:status": "experimental",

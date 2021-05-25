@@ -5,18 +5,18 @@
 https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline
 ```
 
-Processing Flow Timeline details for the Adobe CJM ExperienceEvent.
+Captures an array of time-profiling info, for every component of processing flow.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json](adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json) |
 ## Schema Hierarchy
 
-* Adobe CJM ExperienceEvent - Processing Flow Timeline Details `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline`
+* Adobe CJM ExperienceEvent - Processing Flow Timeline `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Adobe CJM ExperienceEvent - Processing Flow Timeline Details Example
+## Adobe CJM ExperienceEvent - Processing Flow Timeline Example
 ```json
 {
   "xdm:flowName": "ajo",
@@ -50,35 +50,172 @@ Processing Flow Timeline details for the Adobe CJM ExperienceEvent.
 }
 ```
 
-# Adobe CJM ExperienceEvent - Processing Flow Timeline Details Properties
+# Adobe CJM ExperienceEvent - Processing Flow Timeline Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:flowName](#xdmflowname) | string | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline Schema |
-| [xdm:processingNodes](#xdmprocessingnodes) | array | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline Schema |
+| [xdm:processingFlowTimeline](#xdmprocessingflowtimeline) | `object` | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:flowName
-### Name of the processing flow, for which the timeline is captured
-* is `optional`
-* type: `string`
+## xdm:processingFlowTimeline
+### processingFlowTimeline
 
-## xdm:processingNodes
-### Array of Time Profiling of Processing Nodes
-* is `optional`
-* type: `array`
-* items: [definitions/time-profiling](#definitionstime-profiling)
+`xdm:processingFlowTimeline`
+* is optional
+* type: `object`
 * defined in this schema
 
-## definitions/time-profiling
-### Time Profiling of Processing Component 
+### xdm:processingFlowTimeline Type
 
-This dataType is used to store the time profiling information of any service or component.
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| xdm:componentName | string | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
-| xdm:serviceGroup | string | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
-| xdm:startTime | date-time | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
-| xdm:endTime | date-time | Optional | Adobe CJM ExperienceEvent - Time Profiling Schema |
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:flowName`| string | Optional |
+| `xdm:processingNodes`| array | Optional |
+
+
+
+#### xdm:flowName
+##### flowName
+
+Name of the processing flow.
+
+`xdm:flowName`
+* is optional
+* type: `string`
+
+##### xdm:flowName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:processingNodes
+##### processingNodes
+
+undefined
+
+`xdm:processingNodes`
+* is optional
+* type: reference
+
+
+##### xdm:processingNodes Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `#/definitions/time-profiling`
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Adobe CJM ExperienceEvent - Processing Flow Timeline Definitions
+
+| Property | Type | Group |
+|----------|------|-------|
+| [xdm:componentName](#xdmcomponentname) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:endTime](#xdmendtime) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:serviceGroup](#xdmservicegroup) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:startTime](#xdmstarttime) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
+
+## xdm:componentName
+### componentName
+
+The name of the service/component, for which time information is captured.
+
+`xdm:componentName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:componentName Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:endTime
+### endTime
+
+Execution End time in Date-Time format for the component.
+
+`xdm:endTime`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:endTime Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:serviceGroup
+### serviceGroup
+
+An optional attribute, to capture the timeline of a service, at sub-tree level.
+
+`xdm:serviceGroup`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:serviceGroup Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:startTime
+### startTime
+
+Execution Start time in Date-Time format for the component.
+
+`xdm:startTime`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:startTime Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
 
 

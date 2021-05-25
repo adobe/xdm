@@ -15,7 +15,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "description": "Collects all generic details related to a customer's television subscription plan, including number of channels & included streaming services.",
+  "description": "Television subscription plan details including number of channels & included streaming services.",
   "definitions": {
     "television-subscription": {
       "properties": {

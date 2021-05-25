@@ -15,7 +15,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "description": "Collects all generic details related to a customer's landline subscription plan, including selected features, minutes, and dialing plans.",
+  "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
   "definitions": {
     "landline-subscription": {
       "properties": {

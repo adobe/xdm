@@ -15,7 +15,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "description": "Collects all specific details related to a customer's internet subscription plan, including data cap, connection type, and speed details.",
+  "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
   "definitions": {
     "internet-subscription": {
       "properties": {

@@ -22,6 +22,11 @@
         "xdm:telecomSubscription": {
           "type": "object",
           "properties": {
+            "xdm:subscriptionID": {
+              "title": "Subscription ID",
+              "type": "string",
+              "description": "Identifier for subscription."
+            },
             "xdm:responsiblePartyID": {
               "title": "Responsible Party ID",
               "type": "string",

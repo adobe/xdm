@@ -208,7 +208,6 @@ This changes child.json to:
 | [xdm:destinationSchema](#xdmdestinationschema) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:destinationToSourceTitle](#xdmdestinationtosourcetitle) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:destinationVersion](#xdmdestinationversion) | `number` | Optional |  | Relationship Descriptor (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional |  | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceNamespace](#xdmsourcenamespace) | `string` | Optional |  | Relationship Descriptor (this schema) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional |  | [Schema Descriptor](schemadescriptor.schema.md#xdmsourceproperty) |
@@ -436,26 +435,6 @@ Major version being referenced.
 
 
 `number`
-
-
-
-
-
-
-## xdm:label
-### Label
-
-Provides a user friendly name or label to this relationship
-
-`xdm:label`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:label Type
-
-
-`string`
 
 
 

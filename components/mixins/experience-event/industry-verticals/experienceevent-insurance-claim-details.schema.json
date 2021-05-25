@@ -15,7 +15,7 @@
     "industry": ["financial_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Claim details such as claim policy ID and claim creation steps.",
+  "description": "Claim details including policy ID, police report, and incident date.",
   "definitions": {
     "claim-details": {
       "properties": {

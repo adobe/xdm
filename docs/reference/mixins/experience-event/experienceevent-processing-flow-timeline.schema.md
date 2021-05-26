@@ -1,22 +1,23 @@
 
-# Adobe CJM ExperienceEvent - Processing Flow Timeline Schema
+# Processing Flow Timeline Schema
 
 ```
-https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline
+https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline
 ```
 
 Captures an array of time-profiling info, for every component of processing flow.
 
-| [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
+| [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json](adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-processing-flow-timeline.schema.json](mixins/experience-event/experienceevent-processing-flow-timeline.schema.json) |
+
 ## Schema Hierarchy
 
-* Adobe CJM ExperienceEvent - Processing Flow Timeline `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline`
-  * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+* Processing Flow Timeline `https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline`
+  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Adobe CJM ExperienceEvent - Processing Flow Timeline Example
+## Processing Flow Timeline Example
 ```json
 {
   "xdm:flowName": "ajo",
@@ -50,12 +51,11 @@ Captures an array of time-profiling info, for every component of processing flow
 }
 ```
 
-# Adobe CJM ExperienceEvent - Processing Flow Timeline Properties
+# Processing Flow Timeline Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:processingFlowTimeline](#xdmprocessingflowtimeline) | `object` | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| [xdm:processingFlowTimeline](#xdmprocessingflowtimeline) | `object` | Optional | Processing Flow Timeline (this schema) |
 
 ## xdm:processingFlowTimeline
 ### processingFlowTimeline
@@ -67,15 +67,13 @@ Captures an array of time-profiling info, for every component of processing flow
 
 ### xdm:processingFlowTimeline Type
 
-
 `object` with following properties:
 
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:flowName`| string | Optional |
-| `xdm:processingNodes`| array | Optional |
-
+| [xdm:flowName](#xdmflowname) | string | Optional |
+| [xdm:processingNodes](#xdmprocessingnodes) | array | Optional |
 
 
 #### xdm:flowName
@@ -88,8 +86,6 @@ Name of the processing flow.
 * type: `string`
 
 ##### xdm:flowName Type
-
-
 `string`
 
 
@@ -119,24 +115,14 @@ All items must be of the type:
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Adobe CJM ExperienceEvent - Processing Flow Timeline Definitions
+# Time Profiling Definitions
 
 | Property | Type | Group |
 |----------|------|-------|
-| [xdm:componentName](#xdmcomponentname) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
-| [xdm:endTime](#xdmendtime) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
-| [xdm:serviceGroup](#xdmservicegroup) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
-| [xdm:startTime](#xdmstarttime) | `string` | `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:componentName](#xdmcomponentname) | `string` | `https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:endTime](#xdmendtime) | `string` | `https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:serviceGroup](#xdmservicegroup) | `string` | `https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline#/definitions/time-profiling` |
+| [xdm:startTime](#xdmstarttime) | `string` | `https://ns.adobe.com/xdm/context/experienceevent-processing-flow-timeline#/definitions/time-profiling` |
 
 ## xdm:componentName
 ### componentName
@@ -149,14 +135,7 @@ The name of the service/component, for which time information is captured.
 * defined in this schema
 
 ### xdm:componentName Type
-
-
 `string`
-
-
-
-
-
 
 ## xdm:endTime
 ### endTime
@@ -169,14 +148,8 @@ Execution End time in Date-Time format for the component.
 * defined in this schema
 
 ### xdm:endTime Type
-
-
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
 
 
 ## xdm:serviceGroup

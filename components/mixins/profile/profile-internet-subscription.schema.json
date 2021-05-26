@@ -12,9 +12,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
-  "meta:intendedToExtend": [
+  "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
   "definitions": {
     "internet-subscription": {

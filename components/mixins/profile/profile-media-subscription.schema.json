@@ -5,27 +5,28 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-television-subscription",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-media-subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Television Subscription",
+  "title": "media Subscription",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
-  "meta:intendedToExtend": [
+  "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "description": "Television subscription plan details including number of channels & included streaming services.",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "media subscription plan details including number of channels & included streaming services.",
   "definitions": {
-    "television-subscription": {
+    "media-subscription": {
       "properties": {
-        "xdm:televisionSubscription": {
+        "xdm:mediaSubscription": {
           "type": "object",
           "properties": {
             "xdm:channels": {
               "title": "Channels",
               "type": "integer",
-              "description": "Records the number of channels included with the television subscription."
+              "description": "Records the number of channels included with the media subscription."
             },
             "xdm:streamingServices": {
               "title": "Streaming Services",
@@ -59,7 +60,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/television-subscription"
+      "$ref": "#/definitions/media-subscription"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"

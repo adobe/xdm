@@ -12,9 +12,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
-  "meta:intendedToExtend": [
+  "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
     "mobile-plan-details": {
@@ -115,27 +116,27 @@
                     "type": "boolean",
                     "description": "Captures if the customer ports their number from another carrier."
                   },
-                  "xdm:devices/5GAccess": {
+                  "xdm:media5GAccess": {
                     "title": "5G Access",
                     "type": "boolean",
                     "description": "Captures if the device is eligible for 5G Access."
                   },
-                  "xdm:devices/rolloverData": {
+                  "xdm:mediarolloverData": {
                     "title": "Rollover Data",
                     "type": "boolean",
                     "description": "Captures if the device plan includes rollover data."
                   },
-                  "xdm:devices/mobileHotspot": {
+                  "xdm:mediamobileHotspot": {
                     "title": "Mobile Hotspot",
                     "type": "boolean",
                     "description": "Captures if the device plan includes mobile hotspot ability."
                   },
-                  "xdm:devices/cloudStorageIncluded": {
+                  "xdm:mediacloudStorageIncluded": {
                     "title": "Cloud Storage Included",
                     "type": "boolean",
                     "description": "Captures if the device plan includes cloud data storage."
                   },
-                  "xdm:devices/hdVideo": {
+                  "xdm:hdVideo": {
                     "title": "HD Video",
                     "type": "boolean",
                     "description": "Captures if the device plan includes HD video."

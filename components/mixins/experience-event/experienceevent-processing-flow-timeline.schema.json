@@ -20,23 +20,23 @@
       "description": "This datatype is used to store the time profiling information of any service or component.",
       "properties": {
         "xdm:componentName": {
-          "title": "componentName",
+          "title": "Component Name",
           "description": "The name of the service/component, for which time information is captured.",
           "type": "string"
         },
         "xdm:serviceGroup": {
-          "title": "serviceGroup",
+          "title": "Service Group",
           "description": "An optional attribute, to capture the timeline of a service, at sub-tree level.",
           "type": "string"
         },
         "xdm:startTime": {
-          "title": "startTime",
+          "title": "Start Time",
           "description": "Execution Start time in Date-Time format for the component.",
           "type": "string",
           "format": "date-time"
         },
         "xdm:endTime": {
-          "title": "endTime",
+          "title": "End Time",
           "description": "Execution End time in Date-Time format for the component.",
           "type": "string",
           "format": "date-time"
@@ -46,7 +46,7 @@
     "processing-flow-timeline": {
       "properties": {
         "xdm:processingFlowTimeline": {
-          "title": "processingFlowTimeline",
+          "title": "Processing Flow Timeline",
           "type": "object",
           "properties": {
             "xdm:flowName": {
@@ -55,7 +55,7 @@
               "description": "Name of the processing flow."
             },
             "xdm:processingNodes": {
-              "title": "processingNodes",
+              "title": "Processing Nodes",
               "type": "array",
               "items": {
                 "$ref": "#/definitions/time-profiling"

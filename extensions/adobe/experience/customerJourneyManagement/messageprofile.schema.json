@@ -43,7 +43,7 @@
           "type": "string",
           "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email"
         },
-          "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
           "title": "IP Address",
           "type": "string",
           "description": "Outbound IP address of the customer used to deliver the message."

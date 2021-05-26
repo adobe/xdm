@@ -82,6 +82,13 @@
                   "xdm:OS": {
                     "title": "OS",
                     "type": "string",
+                    "enum": [
+                      "android",
+                      "ios",
+                      "windows",
+                      "blackberry",
+                      "symbian"
+                    ],
                     "meta:enum": {
                       "android": "Android",
                       "ios": "iOS",

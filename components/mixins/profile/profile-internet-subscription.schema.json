@@ -31,6 +31,7 @@
             "xdm:connectionType": {
               "title": "Connection Type",
               "type": "string",
+              "enum": ["cable", "dsl", "fiber", "mobile", "satellite"],
               "meta:enum": {
                 "cable": "Cable",
                 "dsl": "DSL",

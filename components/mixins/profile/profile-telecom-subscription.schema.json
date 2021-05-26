@@ -35,6 +35,7 @@
             "xdm:subscriptionType": {
               "title": "Subscription Type",
               "type": "string",
+              "enum": ["individual", "household", "business"],
               "meta:enum": {
                 "individual": "Individual",
                 "household": "Household",
@@ -47,6 +48,11 @@
               "type": "string",
               "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'."
             },
+            "xdm:subscriptionDetails": {
+              "title": "Subscription Details",
+              "$ref": "https://ns.adobe.com/xdm/context/subscription",
+              "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+            },
             "xdm:activationDate": {
               "title": "Activation Date",
               "type": "string",
@@ -58,21 +64,6 @@
               "type": "string",
               "format": "date-time",
               "description": "Tracks the date in which the telecom subscription was deactivated."
-            },
-            "xdm:monthlyPrice": {
-              "title": "Monthly Price",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Captures the monthly price for the subscription."
-            },
-            "xdm:contractLength": {
-              "title": "Contract Length",
-              "type": "integer",
-              "description": "Number of months of the subscription."
-            },
-            "xdm:packageName": {
-              "title": "Package Name",
-              "type": "string",
-              "description": "Records the name of the subscription package"
             },
             "xdm:equipmentFees": {
               "title": "Equipment Fees",

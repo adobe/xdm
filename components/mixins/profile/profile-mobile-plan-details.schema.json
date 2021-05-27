@@ -128,17 +128,17 @@
                     "type": "boolean",
                     "description": "Captures if the device is eligible for 5G Access."
                   },
-                  "xdm:mediarolloverData": {
+                  "xdm:mediaRolloverData": {
                     "title": "Rollover Data",
                     "type": "boolean",
                     "description": "Captures if the device plan includes rollover data."
                   },
-                  "xdm:mediamobileHotspot": {
+                  "xdm:mediaMobileHotspot": {
                     "title": "Mobile Hotspot",
                     "type": "boolean",
                     "description": "Captures if the device plan includes mobile hotspot ability."
                   },
-                  "xdm:mediacloudStorageIncluded": {
+                  "xdm:mediaCloudStorageIncluded": {
                     "title": "Cloud Storage Included",
                     "type": "boolean",
                     "description": "Captures if the device plan includes cloud data storage."

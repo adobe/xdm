@@ -26,7 +26,8 @@ Message Profile details for the Adobe CJM ExperienceEvent.
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"
 }
 ```
 
@@ -36,6 +37,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextaddress) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextnamespace) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextoutboundip) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilechannel) | Experience Channel | **Required** | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
@@ -74,6 +76,26 @@ Email namespace associated with the email address in the consent preferences in 
 * defined in this schema
 
 ### https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP
+### IP Address
+
+Outbound IP address of the customer used to deliver the message.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP Type
 
 
 `string`

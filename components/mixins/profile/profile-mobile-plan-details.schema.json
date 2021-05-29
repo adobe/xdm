@@ -12,6 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": { "industry": ["telecom"] },
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
+  ],
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
@@ -79,6 +82,13 @@
                   "xdm:OS": {
                     "title": "OS",
                     "type": "string",
+                    "enum": [
+                      "android",
+                      "ios",
+                      "windows",
+                      "blackberry",
+                      "symbian"
+                    ],
                     "meta:enum": {
                       "android": "Android",
                       "ios": "iOS",
@@ -112,6 +122,31 @@
                     "title": "Ported Number",
                     "type": "boolean",
                     "description": "Captures if the customer ports their number from another carrier."
+                  },
+                  "xdm:media5GAccess": {
+                    "title": "5G Access",
+                    "type": "boolean",
+                    "description": "Captures if the device is eligible for 5G Access."
+                  },
+                  "xdm:mediaRolloverData": {
+                    "title": "Rollover Data",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes rollover data."
+                  },
+                  "xdm:mediaMobileHotspot": {
+                    "title": "Mobile Hotspot",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes mobile hotspot ability."
+                  },
+                  "xdm:mediaCloudStorageIncluded": {
+                    "title": "Cloud Storage Included",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes cloud data storage."
+                  },
+                  "xdm:hdVideo": {
+                    "title": "HD Video",
+                    "type": "boolean",
+                    "description": "Captures if the device plan includes HD video."
                   }
                 }
               }
@@ -159,6 +194,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/mobile-plan-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
   "meta:status": "experimental",

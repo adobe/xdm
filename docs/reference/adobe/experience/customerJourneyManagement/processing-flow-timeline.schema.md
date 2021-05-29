@@ -9,7 +9,7 @@ Captures an array of time-profiling info, for every component of processing flow
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json](adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json](adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.json) |
 ## Schema Hierarchy
 
 * Adobe CJM ExperienceEvent - Processing Flow Timeline `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline`
@@ -19,34 +19,36 @@ Captures an array of time-profiling info, for every component of processing flow
 ## Adobe CJM ExperienceEvent - Processing Flow Timeline Example
 ```json
 {
-  "xdm:flowName": "ajo",
-  "xdm:processingNodes": [
-    {
-      "xdm:componentName": "JO",
-      "xdm:startTime": "2021-01-26T06:23:28.914Z",
-      "xdm:endTime": "2021-01-26T06:23:29.924Z"
-    },
-    {
-      "xdm:componentName": "MES",
-      "xdm:startTime": "2021-01-26T06:23:30.014Z",
-      "xdm:endTime": "2021-01-26T06:23:30.110Z"
-    },
-    {
-      "xdm:componentName": "HERALD",
-      "xdm:startTime": "2021-01-26T06:23:30.210Z",
-      "xdm:endTime": "2021-01-26T06:23:31.415Z"
-    },
-    {
-      "xdm:componentName": "SDS",
-      "xdm:startTime": "2021-01-26T06:23:30.410Z",
-      "xdm:endTime": "2021-01-26T06:23:30.610Z"
-    },
-    {
-      "xdm:componentName": "ESS",
-      "xdm:startTime": "2021-01-26T06:23:30.810Z",
-      "xdm:endTime": "2021-01-26T06:23:32.115Z"
-    }
-  ]
+  "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline": {
+    "xdm:flowName": "ajo",
+    "xdm:processingNodes": [
+      {
+        "xdm:componentName": "JO",
+        "xdm:startTime": "2021-01-26T06:23:28.914Z",
+        "xdm:endTime": "2021-01-26T06:23:29.924Z"
+      },
+      {
+        "xdm:componentName": "MES",
+        "xdm:startTime": "2021-01-26T06:23:30.014Z",
+        "xdm:endTime": "2021-01-26T06:23:30.110Z"
+      },
+      {
+        "xdm:componentName": "HERALD",
+        "xdm:startTime": "2021-01-26T06:23:30.210Z",
+        "xdm:endTime": "2021-01-26T06:23:31.415Z"
+      },
+      {
+        "xdm:componentName": "SDS",
+        "xdm:startTime": "2021-01-26T06:23:30.410Z",
+        "xdm:endTime": "2021-01-26T06:23:30.610Z"
+      },
+      {
+        "xdm:componentName": "ESS",
+        "xdm:startTime": "2021-01-26T06:23:30.810Z",
+        "xdm:endTime": "2021-01-26T06:23:32.115Z"
+      }
+    ]
+  }
 }
 ```
 
@@ -54,18 +56,18 @@ Captures an array of time-profiling info, for every component of processing flow
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:processingFlowTimeline](#xdmprocessingflowtimeline) | `object` | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline](#httpsnsadobecomexperiencecustomerjourneymanagementprocessingflowtimeline) | `object` | Optional | Adobe CJM ExperienceEvent - Processing Flow Timeline (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:processingFlowTimeline
+## https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline
 ### processingFlowTimeline
 
-`xdm:processingFlowTimeline`
+`https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:processingFlowTimeline Type
+### https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline Type
 
 
 `object` with following properties:

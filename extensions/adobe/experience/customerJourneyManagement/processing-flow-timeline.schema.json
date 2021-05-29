@@ -45,7 +45,7 @@
     },
     "processing-flow-timeline": {
       "properties": {
-        "xdm:processingFlowTimeline": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline": {
           "title": "processingFlowTimeline",
           "type": "object",
           "properties": {
@@ -74,5 +74,5 @@
       "$ref": "#/definitions/processing-flow-timeline"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

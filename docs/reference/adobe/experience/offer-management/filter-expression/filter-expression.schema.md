@@ -180,34 +180,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
-    }
-  ]
-}
-```
-
-```json
-{
   "nodeType": "select",
   "variables": [
     {
@@ -338,6 +310,20 @@ Represents an abstract syntax tree comprised of various node types. The expressi
 
 ```json
 {
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
+    }
+  ]
+}
+```
+
+```json
+{
   "nodeType": "select",
   "variables": [
     {
@@ -403,7 +389,7 @@ Represents an abstract syntax tree comprised of various node types. The expressi
     {
       "nodeType": "literal",
       "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
     }
   ]
 }
@@ -463,6 +449,34 @@ Represents an abstract syntax tree comprised of various node types. The expressi
           }
         ]
       }
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
+    }
+  ]
+}
+```
+
+```json
+{
+  "nodeType": "fnApply",
+  "fnName": "modelInstances",
+  "params": [
+    {
+      "nodeType": "literal",
+      "literalType": "String",
+      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
     }
   ]
 }
@@ -607,20 +621,6 @@ Represents an abstract syntax tree comprised of various node types. The expressi
           }
         ]
       }
-    }
-  ]
-}
-```
-
-```json
-{
-  "nodeType": "fnApply",
-  "fnName": "modelInstances",
-  "params": [
-    {
-      "nodeType": "literal",
-      "literalType": "String",
-      "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=AND&property=`\"_instance.status=approved\""
     }
   ]
 }

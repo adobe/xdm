@@ -20,27 +20,42 @@
         "xdm:opportunityPersonID": {
           "title": "Opportunity Person ID",
           "description": "Unique ID for the relationship between the opportunity and the person.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "12345"
+          ]
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID for the opportunity in this opportunity person relationship.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "003ABC123@Salesforce_22"
+          ]
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this opportunity person relationship.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            "12345@MunchkinId_55"
+          ]
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this opportunity.",
-          "type": "string"
+          "type": "string",
+          "examples": [
+            
+          ]
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean indicating if the person is the primary contact on this opportunity.",
-          "type": "boolean"
+          "type": "boolean",
+          "examples": [
+            true
+          ]
         }
       }
     }

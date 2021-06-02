@@ -48,6 +48,16 @@
         },
         "xdm:loanStatus": {
           "title": "Loan Status",
+          "enum": [
+            "notIssued",
+            "current",
+            "inGracePeriod",
+            "fullyPaid",
+            "late",
+            "default",
+            "chargedOff",
+            "cancelled"
+          ],
           "meta:enum": {
             "notIssued": "Not Issued",
             "current": "Current",
@@ -97,6 +107,17 @@
         },
         "xdm:loanType": {
           "title": "Loan Type",
+          "enum": [
+            "personal",
+            "cashAdvance",
+            "title",
+            "homeEquity",
+            "smallBusiness",
+            "debtConsolidation",
+            "student",
+            "automobile",
+            "mortgage"
+          ],
           "meta:enum": {
             "personal": "Personal",
             "cashAdvance": "Cash Advance",

@@ -19,7 +19,7 @@
   "definitions": {
     "restaurant": {
       "properties": {
-        "xdm:Address": {
+        "xdm:address": {
           "title": "Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Physicial address where the restaurant is located."
@@ -42,6 +42,28 @@
         "xdm:cuisine": {
           "title": "Cuisine",
           "type": "string",
+          "enum": [
+            "chinese",
+            "steak",
+            "sushi",
+            "asian",
+            "vietnamese",
+            "european",
+            "french",
+            "italian",
+            "burgers",
+            "japanese",
+            "barbecue",
+            "mediterranean",
+            "indian",
+            "grill",
+            "seafood",
+            "steakhouse",
+            "mexican",
+            "greek",
+            "american",
+            "thai"
+          ],
           "meta:enum": {
             "chinese": "Chinese",
             "steak": "Steak",
@@ -69,6 +91,7 @@
         "xdm:deliveryPartners": {
           "title": "Delivery Partners",
           "type": "string",
+          "enum": ["grubhub", "ubereats", "doordash", "other"],
           "meta:enum": {
             "grubhub": "GrubHub",
             "ubereats": "UberEats",
@@ -80,6 +103,13 @@
         "xdm:diningOptions": {
           "title": "Dining Options",
           "type": "string",
+          "enum": [
+            "outdoorSeating",
+            "delivery",
+            "curbside",
+            "takeout",
+            "dogFriendly"
+          ],
           "meta:enum": {
             "outdoorSeating": "Outdoor Seating",
             "delivery": "Delivery",

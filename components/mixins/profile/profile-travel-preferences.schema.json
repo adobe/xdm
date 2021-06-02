@@ -22,6 +22,7 @@
         "xdm:seat": {
           "title": "Seat",
           "type": "string",
+          "enum": ["noPreference", "aisle", "window", "middle"],
           "meta-enum": {
             "noPreference": "No Preference",
             "aisle": "Aisle",
@@ -33,6 +34,7 @@
         "xdm:seatSection ": {
           "title": "Seat Section",
           "type": "string",
+          "enum": ["noPreference", "forward", "bulkhead", "exitRow", "rear"],
           "meta-enum": {
             "noPreference": "No Preference",
             "forward": "Forward",
@@ -45,6 +47,27 @@
         "xdm:meal": {
           "title": "Meal",
           "type": "string",
+          "enum": [
+            "regularMeal",
+            "blandLowResidue",
+            "childMeal",
+            "diabeticMeal",
+            "fruitPlatter",
+            "glutenFreeMeal",
+            "infantBabyMeal",
+            "kosherMeal",
+            "lowCalorieMeal",
+            "lowSaltSodiumMeal",
+            "halalMeal",
+            "noSaltMeal",
+            "nonLactoseMeal",
+            "peanutFreeMeal",
+            "seafoodMeal",
+            "vegLactoOvo",
+            "vegetarian",
+            "vegetarianKosher",
+            "vegetarianRaw"
+          ],
           "meta-enum": {
             "regularMeal": "Regular Meal",
             "blandLowResidue": "Bland / Low Residue",
@@ -77,6 +100,7 @@
         "xdm:ticketDelivery": {
           "title": "Ticket Delivery",
           "type": "string",
+          "enum": ["eTicket", "physical"],
           "meta-enum": {
             "eTicket": "E-Ticket",
             "physical": "Physical"
@@ -91,6 +115,15 @@
         "xdm:roomType": {
           "title": "Room Type",
           "type": "string",
+          "enum": [
+            "noPreference",
+            "king",
+            "queen",
+            "double",
+            "twin",
+            "single",
+            "disability"
+          ],
           "meta-enum": {
             "noPreference": "No Preference",
             "king": "King",
@@ -112,8 +145,8 @@
           "type": "boolean",
           "description": "Captures if the user prefers foam pillows."
         },
-        "xdm:rollawayBed": {
-          "title": "Rollaway Bed",
+        "xdm:rollAwayBed": {
+          "title": "Roll Away Bed",
           "type": "boolean",
           "description": "Captures if the user requires a rollaway bed."
         },
@@ -137,8 +170,8 @@
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a swimming pool."
         },
-        "xdm:restaurant": {
-          "title": "Restaurant",
+        "xdm:hasRestaurant": {
+          "title": "Has Restaurant",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a restaurant."
         },
@@ -160,6 +193,27 @@
         "xdm:vehicleType": {
           "title": "Vehicle Type",
           "type": "string",
+          "enum": [
+            "miniCar",
+            "economyCar",
+            "economyCarHybrid",
+            "compactCar",
+            "compactCarHybrid",
+            "intermediateCar",
+            "intermediateCarHybrid",
+            "standardCar",
+            "standardCarHybrid",
+            "fullSizeCar",
+            "fullSizeCarHybrid",
+            "intermediateSUV",
+            "miniVan",
+            "standardSUV",
+            "fullSizeSUV",
+            "fullSizePickup",
+            "premiumCar",
+            "luxuryCar",
+            "specializedVehicle"
+          ],
           "meta-enum": {
             "miniCar": "Mini Car",
             "economyCar": "Economy Car",

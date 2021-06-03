@@ -18,6 +18,7 @@
   "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
   "definitions": {
     "telecom-subscriptions": {
+      "type": "object",
       "properties": {
         "xdm:telecomSubscription": {
           "type": "object",

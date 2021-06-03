@@ -42,43 +42,46 @@
               "type": "array",
               "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
               "items": {
-                "xdm:telecomSubscription": {
-                  "title": "Telecom Subscription",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
-                  "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-                },
-                "xdm:dataCap": {
-                  "title": "Data Cap",
-                  "type": "integer",
-                  "description": "Captures the data cap limit for the account, in megabytes (MB)."
-                },
-                "xdm:connectionType": {
-                  "title": "Connection Type",
-                  "type": "string",
-                  "enum": ["cable", "dsl", "fiber", "mobile", "satellite"],
-                  "meta:enum": {
-                    "cable": "Cable",
-                    "dsl": "DSL",
-                    "fiber": "Fiber",
-                    "mobile": "Mobile",
-                    "satellite": "Satellite"
+                "type": "object",
+                "properties": {
+                  "xdm:telecomSubscription": {
+                    "title": "Telecom Subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                    "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
-                  "description": "Tracks the type of connection type for the subscription."
-                },
-                "xdm:downloadSpeed": {
-                  "title": "Download Speed",
-                  "type": "integer",
-                  "description": "Records the maximum download speed available for the subscription, in megabytes (MB)."
-                },
-                "xdm:uploadSpeed": {
-                  "title": "Upload Speed",
-                  "type": "integer",
-                  "description": "Records the maximum upload speed available for the subscription, in megabytes (MB)."
-                },
-                "xdm:selfSetup": {
-                  "title": "Self-Setup",
-                  "type": "boolean",
-                  "description": "Flags if a customer is eligible for internet setup without a technican visit."
+                  "xdm:dataCap": {
+                    "title": "Data Cap",
+                    "type": "integer",
+                    "description": "Captures the data cap limit for the account, in megabytes (MB)."
+                  },
+                  "xdm:connectionType": {
+                    "title": "Connection Type",
+                    "type": "string",
+                    "enum": ["cable", "dsl", "fiber", "mobile", "satellite"],
+                    "meta:enum": {
+                      "cable": "Cable",
+                      "dsl": "DSL",
+                      "fiber": "Fiber",
+                      "mobile": "Mobile",
+                      "satellite": "Satellite"
+                    },
+                    "description": "Tracks the type of connection type for the subscription."
+                  },
+                  "xdm:downloadSpeed": {
+                    "title": "Download Speed",
+                    "type": "integer",
+                    "description": "Records the maximum download speed available for the subscription, in megabytes (MB)."
+                  },
+                  "xdm:uploadSpeed": {
+                    "title": "Upload Speed",
+                    "type": "integer",
+                    "description": "Records the maximum upload speed available for the subscription, in megabytes (MB)."
+                  },
+                  "xdm:selfSetup": {
+                    "title": "Self-Setup",
+                    "type": "boolean",
+                    "description": "Flags if a customer is eligible for internet setup without a technican visit."
+                  }
                 }
               }
             },
@@ -150,37 +153,40 @@
               "type": "array",
               "description": "media subscription plan details including number of channels & included streaming services.",
               "items": {
-                "xdm:telecomSubscription": {
-                  "title": "Telecom Subscription",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
-                  "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-                },
-                "xdm:channels": {
-                  "title": "Channels",
-                  "type": "integer",
-                  "description": "Records the number of channels included with the media subscription."
-                },
-                "xdm:streamingServices": {
-                  "title": "Streaming Services",
-                  "description": "Array of all streaming services included with the subscription.",
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "xdm:serviceName": {
-                        "title": "Service Name",
-                        "type": "integer",
-                        "description": "Records the name of the streaming service."
-                      },
-                      "xdm:promotionalAddition": {
-                        "title": "Promotional Addition",
-                        "type": "boolean",
-                        "description": "Flags if the streaming service was added as part of a promotion."
-                      },
-                      "xdm:promotionLength": {
-                        "title": "Promotion Length",
-                        "type": "integer",
-                        "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion."
+                "type": "object",
+                "properties": {
+                  "xdm:telecomSubscription": {
+                    "title": "Telecom Subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                    "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:channels": {
+                    "title": "Channels",
+                    "type": "integer",
+                    "description": "Records the number of channels included with the media subscription."
+                  },
+                  "xdm:streamingServices": {
+                    "title": "Streaming Services",
+                    "description": "Array of all streaming services included with the subscription.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:serviceName": {
+                          "title": "Service Name",
+                          "type": "integer",
+                          "description": "Records the name of the streaming service."
+                        },
+                        "xdm:promotionalAddition": {
+                          "title": "Promotional Addition",
+                          "type": "boolean",
+                          "description": "Flags if the streaming service was added as part of a promotion."
+                        },
+                        "xdm:promotionLength": {
+                          "title": "Promotion Length",
+                          "type": "integer",
+                          "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion."
+                        }
                       }
                     }
                   }

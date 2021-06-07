@@ -19,39 +19,48 @@
     },
     "xdm:oneSideSchema": {
       "type": "string",
-      "title": "One Side Schema ID"
+      "title": "One Side Schema ID",
+      "meta:titleId": "relationshipOneToMany##xdm:oneSideSchema##title"
     },
     "xdm:oneSideVersion": {
       "type": "number",
-      "title": "One Side Schema Major Version"
+      "title": "One Side Schema Major Version",
+      "meta:titleId": "relationshipOneToMany##xdm:oneSideVersion##title"
     },
     "xdm:oneSideProperty": {
       "type": "string",
-      "title": "One Side Field Path"
+      "title": "One Side Field Path",
+      "meta:titleId": "relationshipOneToMany##xdm:oneSideProperty##title"
     },
     "xdm:manySideSchema": {
       "type": "string",
-      "title": "Many Side Schema ID"
+      "title": "Many Side Schema ID",
+      "meta:titleId": "relationshipOneToMany##xdm:manySideSchema##title"
     },
     "xdm:manySideVersion": {
       "type": "number",
-      "title": "Many Side Schema Major Version"
+      "title": "Many Side Schema Major Version",
+      "meta:titleId": "relationshipOneToMany##xdm:manySideVersion##title"
     },
     "xdm:manySideProperty": {
       "type": "string",
-      "title": "Many Side Field Path"
+      "title": "Many Side Field Path",
+      "meta:titleId": "relationshipOneToMany##xdm:manySideProperty##title"
     },
     "xdm:manySideNamespace": {
       "type": "string",
-      "title": "Identity Namespace Code"
+      "title": "Identity Namespace Code",
+      "meta:titleId": "relationshipOneToMany##xdm:manySideNamespace##title"
     },
     "xdm:oneToManyDisplayName": {
       "type": "string",
-      "title": "One To Many Edge Name"
+      "title": "One To Many Edge Name",
+      "meta:titleId": "relationshipOneToMany##xdm:oneToManyDisplayName##title"
     },
     "xdm:manyToOneDisplayName": {
       "type": "string",
-      "title": "Many To One Edge Name"
+      "title": "Many To One Edge Name",
+      "meta:titleId": "relationshipOneToMany##xdm:manyToOneDisplayName##title"
     }
   },
   "required": [
@@ -63,5 +72,7 @@
     "xdm:manySideProperty"
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-05"
+  "meta:createdDate": "2021-02-05",
+  "meta:titleId": "relationshipOneToMany##title",
+  "meta:descriptionId": "relationshipOneToMany##description"
 }

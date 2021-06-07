@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Package Details.",
   "definitions": {
     "dsp-package": {
@@ -20,61 +22,90 @@
         "dsp:packageName": {
           "title": "Package Name",
           "type": "string",
-          "description": "The name of the package."
+          "description": "The name of the package.",
+          "meta:titleId": "package##dsp:packageName##title",
+          "meta:descriptionId": "package##dsp:packageName##description"
         },
         "dsp:packageDescription": {
           "title": "Package Description",
           "type": "string",
-          "description": "The description of the package."
+          "description": "The description of the package.",
+          "meta:titleId": "package##dsp:packageDescription##title",
+          "meta:descriptionId": "package##dsp:packageDescription##description"
         },
         "dsp:packageStatus": {
           "title": "Package Status",
           "type": "string",
           "description": "Package Status indicates if underlying ads are eligible to serve.",
-          "enum": ["Active", "Inactive", "Deleted"],
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
             "Deleted": "Deleted"
-          }
+          },
+          "meta:titleId": "package##dsp:packageStatus##title",
+          "meta:descriptionId": "package##dsp:packageStatus##description"
         },
         "dsp:unitsPurchased": {
           "title": "Units Purchased",
           "type": "number",
-          "description": "The number of purchased units."
+          "description": "The number of purchased units.",
+          "meta:titleId": "package##dsp:unitsPurchased##title",
+          "meta:descriptionId": "package##dsp:unitsPurchased##description"
         },
         "dsp:goalMetric": {
           "title": "Goal Metric",
           "type": "string",
-          "description": "The metric on which the pacing occurs so that the campaign hits the desired metric value over the course of its lifetime. E.g. SPEND, IMPRESSIONS"
+          "description": "The metric on which the pacing occurs so that the campaign hits the desired metric value over the course of its lifetime. E.g. SPEND, IMPRESSIONS",
+          "meta:titleId": "package##dsp:goalMetric##title",
+          "meta:descriptionId": "package##dsp:goalMetric##description"
         },
         "dsp:goalMetricValue": {
           "title": "Goal Interval",
           "type": "integer",
-          "description": "The maximum value allowed for the metric to reach in a certain interval."
+          "description": "The maximum value allowed for the metric to reach in a certain interval.",
+          "meta:titleId": "package##dsp:goalMetricValue##title",
+          "meta:descriptionId": "package##dsp:goalMetricValue##description"
         },
         "dsp:goalType": {
           "title": "Goal Type",
           "type": "string",
           "description": "The action taken when the metric hits the maximum value.",
-          "enum": ["CAP", "PACE"],
+          "enum": [
+            "CAP",
+            "PACE"
+          ],
           "meta:enum": {
             "CAP": "CAP",
             "PACE": "PACE"
-          }
+          },
+          "meta:titleId": "package##dsp:goalType##title",
+          "meta:descriptionId": "package##dsp:goalType##description"
         },
         "dsp:goalInterval": {
           "title": "Goal Interval",
           "type": "string",
           "description": "The time frame for which the metric value is computed. E.g. DAY, ALLTIME ",
-          "enum": ["ALLTIME", "DAY", "HOUR", "MONTH", "WEEK"],
+          "enum": [
+            "ALLTIME",
+            "DAY",
+            "HOUR",
+            "MONTH",
+            "WEEK"
+          ],
           "meta:enum": {
             "ALLTIME": "ALLTIME",
             "DAY": "DAY",
             "HOUR": "HOUR",
             "MONTH": "MONTH",
             "WEEK": "WEEK"
-          }
+          },
+          "meta:titleId": "package##dsp:goalInterval##title",
+          "meta:descriptionId": "package##dsp:goalInterval##description"
         },
         "dsp:purchaseUom": {
           "title": "Purchase Unit of Measure",
@@ -101,29 +132,39 @@
             "vCPM": "vCPM",
             "GRP": "GRP",
             "vCPCV": "vCPCV"
-          }
+          },
+          "meta:titleId": "package##dsp:purchaseUom##title",
+          "meta:descriptionId": "package##dsp:purchaseUom##description"
         },
         "dsp:pricePerUom": {
           "title": "Price per Unit of Measure",
           "type": "number",
-          "description": "The price per unit of measure."
+          "description": "The price per unit of measure.",
+          "meta:titleId": "package##dsp:pricePerUom##title",
+          "meta:descriptionId": "package##dsp:pricePerUom##description"
         },
         "dsp:packageStartTime": {
           "title": "Package Start Time",
           "type": "string",
           "format": "date-time",
-          "description": "The starting time of serving ads in placements linked to the campaign belonging to this package."
+          "description": "The starting time of serving ads in placements linked to the campaign belonging to this package.",
+          "meta:titleId": "package##dsp:packageStartTime##title",
+          "meta:descriptionId": "package##dsp:packageStartTime##description"
         },
         "dsp:packageEndTime": {
           "title": "Package End Time",
           "type": "string",
           "format": "date-time",
-          "description": "The end time of serving ads in placements linked to the campaign belonging to this package."
+          "description": "The end time of serving ads in placements linked to the campaign belonging to this package.",
+          "meta:titleId": "package##dsp:packageEndTime##title",
+          "meta:descriptionId": "package##dsp:packageEndTime##description"
         },
         "dsp:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign Identifier on the display advertising platform which has this package associated."
+          "description": "Campaign Identifier on the display advertising platform which has this package associated.",
+          "meta:titleId": "package##dsp:campaignId##title",
+          "meta:descriptionId": "package##dsp:campaignId##description"
         }
       }
     }
@@ -139,5 +180,7 @@
       "$ref": "#/definitions/dsp-package"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "package##title",
+  "meta:descriptionId": "package##description"
 }

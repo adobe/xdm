@@ -19,91 +19,123 @@
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Campaign unique identifer reference.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-details##xdm:campaignID##title",
+          "meta:descriptionId": "opportunity-details##xdm:campaignID##description"
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",
           "description": "The fiscal year this opportunity is targeted.",
           "type": "integer",
-          "pattern": "^([0-9]{4})$"
+          "pattern": "^([0-9]{4})$",
+          "meta:titleId": "opportunity-details##xdm:fiscalYear##title",
+          "meta:descriptionId": "opportunity-details##xdm:fiscalYear##description"
         },
         "xdm:fiscalQuarter": {
           "title": "Fiscal Quarter",
           "description": "The fiscal quarter this opportunity is targeted.",
           "type": "string",
-          "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
+          "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
+          "meta:titleId": "opportunity-details##xdm:fiscalQuarter##title",
+          "meta:descriptionId": "opportunity-details##xdm:fiscalQuarter##description"
         },
         "xdm:forecastCategory": {
           "title": "Forecast Category",
           "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-details##xdm:forecastCategory##title",
+          "meta:descriptionId": "opportunity-details##xdm:forecastCategory##description"
         },
         "xdm:forecastCategoryName": {
           "title": "Forecast Category Name",
           "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-details##xdm:forecastCategoryName##title",
+          "meta:descriptionId": "opportunity-details##xdm:forecastCategoryName##description"
         },
         "xdm:isClosed": {
           "title": "Closed Flag",
           "description": "Flag indicating if this opportunity is closed.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "opportunity-details##xdm:isClosed##title",
+          "meta:descriptionId": "opportunity-details##xdm:isClosed##description"
         },
         "xdm:isWon": {
           "title": "Won Flag",
           "description": "Flag indicating if this opportunity is Won.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "opportunity-details##xdm:isWon##title",
+          "meta:descriptionId": "opportunity-details##xdm:isWon##description"
         },
         "xdm:probabilityPercentage": {
           "title": "Probability Percentage",
           "description": "Likelihood that opportunity will close, stated as a percentage.",
           "type": "number",
           "minimum": 0,
-          "maximum": 100
+          "maximum": 100,
+          "meta:titleId": "opportunity-details##xdm:probabilityPercentage##title",
+          "meta:descriptionId": "opportunity-details##xdm:probabilityPercentage##description"
         },
         "xdm:opportunityAmount": {
           "title": "Opportunity Amount",
           "description": "Estimated total sale amount.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "meta:titleId": "opportunity-details##xdm:opportunityAmount##title",
+          "meta:descriptionId": "opportunity-details##xdm:opportunityAmount##description"
         },
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "Calculated revenue based on the Amount and Probability.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+          "meta:titleId": "opportunity-details##xdm:expectedRevenue##title",
+          "meta:descriptionId": "opportunity-details##xdm:expectedRevenue##description"
         },
         "xdm:opportunityQuantity": {
           "title": "Opportunity Quantity",
           "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
           "type": "integer",
           "minimum": 0,
-          "default": 0
+          "default": 0,
+          "meta:titleId": "opportunity-details##xdm:opportunityQuantity##title",
+          "meta:descriptionId": "opportunity-details##xdm:opportunityQuantity##description"
         },
         "xdm:expectedCloseDate": {
           "title": "Expected Close Date",
           "description": "Expected date of closure for this opportunity.",
           "type": "string",
-          "format": "date"
+          "format": "date",
+          "meta:titleId": "opportunity-details##xdm:expectedCloseDate##title",
+          "meta:descriptionId": "opportunity-details##xdm:expectedCloseDate##description"
         },
         "xdm:actualCloseDate": {
           "title": "Actual Close Date",
           "description": "Actual date of closure for this opportunity.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "opportunity-details##xdm:actualCloseDate##title",
+          "meta:descriptionId": "opportunity-details##xdm:actualCloseDate##description"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date for this opportunity.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "opportunity-details##xdm:lastActivityDate##title",
+          "meta:descriptionId": "opportunity-details##xdm:lastActivityDate##description"
         },
         "xdm:leadSource": {
           "title": "Lead Source",
           "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-details##xdm:leadSource##title",
+          "meta:descriptionId": "opportunity-details##xdm:leadSource##description"
         },
         "xdm:nextStep": {
           "title": "Next Step",
           "description": "Description of next task in closing opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-details##xdm:nextStep##title",
+          "meta:descriptionId": "opportunity-details##xdm:nextStep##description"
         }
       }
     }
@@ -114,5 +146,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-09-09"
+  "meta:createdDate": "2020-09-09",
+  "meta:titleId": "opportunity-details##title",
+  "meta:descriptionId": "opportunity-details##description"
 }

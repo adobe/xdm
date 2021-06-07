@@ -19,7 +19,9 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
           },
-          "description": "List of keyed values."
+          "description": "List of keyed values.",
+          "meta:titleId": "keyedlist##xdm:list##title",
+          "meta:descriptionId": "keyedlist##xdm:list##description"
         }
       }
     }
@@ -29,5 +31,7 @@
       "$ref": "#/definitions/keyedlist"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "keyedlist##title",
+  "meta:descriptionId": "keyedlist##description"
 }

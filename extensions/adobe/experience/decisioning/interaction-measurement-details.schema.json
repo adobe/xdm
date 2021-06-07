@@ -24,20 +24,28 @@
               "title": "Mapping type",
               "description": "Indicator for how the observation is mapped into an outcome value",
               "enum": ["direct", "eventTypeValue", "fieldValue", "predicate"],
-              "default": "direct"
+              "default": "direct",
+              "meta:titleId": "interaction-measurement##xdm:mapping##title",
+              "meta:descriptionId": "interaction-measurement##xdm:mapping##description"
             },
             "xdm:value": {
               "type": "string",
               "title": "Observation mapping",
-              "description": "The expression or term that defines how the outcome is derived from the observation. The presence and interpretation of this 'value' is based on the 'mapping' type"
+              "description": "The expression or term that defines how the outcome is derived from the observation. The presence and interpretation of this 'value' is based on the 'mapping' type",
+              "meta:titleId": "interaction-measurement##xdm:value##title",
+              "meta:descriptionId": "interaction-measurement##xdm:value##description"
             },
             "xdm:field": {
               "type": "string",
               "title": "Field name",
               "description": "The field that contains the observed value.",
-              "default": "xdm:eventType"
+              "default": "xdm:eventType",
+              "meta:titleId": "interaction-measurement##xdm:field##title",
+              "meta:descriptionId": "interaction-measurement##xdm:field##description"
             }
-          }
+          },
+          "meta:titleId": "interaction-measurement##xdm:observation##title",
+          "meta:descriptionId": "interaction-measurement##xdm:observation##description"
         },
         "xdm:outcome": {
           "type": "object",
@@ -45,16 +53,22 @@
             "@id": {
               "type": "string",
               "title": "Outcome identifier",
-              "description": "Unique value that identifies the outcome of the interaction (nominal value)."
+              "description": "Unique value that identifies the outcome of the interaction (nominal value).",
+              "meta:titleId": "interaction-measurement##@id##title",
+              "meta:descriptionId": "interaction-measurement##@id##description"
             },
             "xdm:field": {
               "type": "string",
               "title": "Outcome property path",
-              "description": "Property path where the outcome is inserted into the XDM event."
+              "description": "Property path where the outcome is inserted into the XDM event.",
+              "meta:titleId": "interaction-measurement##xdm:field##title",
+              "meta:descriptionId": "interaction-measurement##xdm:field##description"
             }
           },
           "title": "Interaction outcome measurement",
-          "description": "The definition of a measurement for the outcome. A property path and value is specified where a measured outcome for the interaction is recorded."
+          "description": "The definition of a measurement for the outcome. A property path and value is specified where a measured outcome for the interaction is recorded.",
+          "meta:titleId": "interaction-measurement##xdm:outcome##title",
+          "meta:descriptionId": "interaction-measurement##xdm:outcome##description"
         }
       }
     }
@@ -67,5 +81,7 @@
       "$ref": "#/definitions/interaction-measurement-definition"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "interaction-measurement##title",
+  "meta:descriptionId": "interaction-measurement##description"
 }

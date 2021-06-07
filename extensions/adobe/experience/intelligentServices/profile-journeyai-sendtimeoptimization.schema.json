@@ -39,7 +39,9 @@
                       "maxItems": 168,
                       "items": {
                         "type": "number"
-                      }
+                      },
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##title",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen": {
                       "title": "Send Time Score for Open",
@@ -49,9 +51,13 @@
                       "maxItems": 168,
                       "items": {
                         "type": "number"
-                      }
+                      },
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description"
                     }
-                  }
+                  },
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##title",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##description"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization": {
                   "title": "Push Send Time Optimization",
@@ -66,18 +72,28 @@
                       "maxItems": 168,
                       "items": {
                         "type": "number"
-                      }
+                      },
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description"
                     }
-                  }
+                  },
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##description"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo": {
                   "title": "Send Time Optimization Score Info",
                   "description": "This information contains send time optimization model version and scoring date as a concatenated string, e.g. v1.2.0_2020-09-29.",
-                  "type": "string"
+                  "type": "string",
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##title",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##description"
                 }
-              }
+              },
+              "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##title",
+              "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##description"
             }
-          }
+          },
+          "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##title",
+          "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##description"
         }
       }
     }
@@ -87,5 +103,7 @@
       "$ref": "#/definitions/journeyai-send-time-optimization"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-journeyai-sendtimeoptimization##title",
+  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##description"
 }

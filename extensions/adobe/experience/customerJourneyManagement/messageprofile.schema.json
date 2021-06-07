@@ -13,40 +13,51 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-
   "definitions": {
     "messageProfile": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": {
           "title": "MessageProfile ID",
           "type": "string",
-          "description": "A unique id refers to every single message sent as part of a MessageExecution activity."
+          "description": "A unique id refers to every single message sent as part of a MessageExecution activity.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
-          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+          "$ref": "https://ns.adobe.com/xdm/channels/channel",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": {
           "title": "Content Variant",
           "type": "string",
-          "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them."
+          "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
           "title": "Address",
           "type": "string",
           "format": "email",
-          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
           "title": "Email Namespace",
           "type": "string",
-          "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email"
+          "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
           "title": "IP Address",
           "type": "string",
-          "description": "Outbound IP address of the customer used to deliver the message."
+          "description": "Outbound IP address of the customer used to deliver the message.",
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
@@ -55,7 +66,9 @@
           "meta:enum": {
             "apns": "Apple Push Notification service",
             "fcm": "Firebase cloud messaging service"
-          }
+          },
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description"
         }
       }
     }
@@ -71,5 +84,7 @@
       "$ref": "#/definitions/messageProfile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "messageprofile##title",
+  "meta:descriptionId": "messageprofile##description"
 }

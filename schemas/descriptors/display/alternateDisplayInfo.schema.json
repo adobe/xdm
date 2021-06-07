@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:alternateDisplayInfo"
+          "const": "xdm:alternateDisplayInfo",
+          "meta:titleId": "alternateDisplayInfo##@type##title"
         },
         "xdm:title": {
           "title": "Title",
@@ -31,7 +32,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:title##title",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:title##description"
         },
         "xdm:description": {
           "title": "Description",
@@ -41,7 +44,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:description##title",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:description##description"
         },
         "xdm:note": {
           "title": "Note",
@@ -51,7 +56,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:note##title",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:note##description"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",
@@ -67,7 +74,8 @@
                 }
               ]
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##meta:enum##title"
         }
       },
       "anyOf": [
@@ -93,5 +101,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "alternateDisplayInfo##title",
+  "meta:descriptionId": "alternateDisplayInfo##description"
 }

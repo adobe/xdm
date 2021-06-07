@@ -29,22 +29,28 @@
       "properties": {
         "xdm:alerts": {
           "type": "object",
-		  "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
+          "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
           "properties": {
             "xdm:ID": {
               "title": "Alert ID",
               "type": "string",
-              "description": "Alert identifier."
+              "description": "Alert identifier.",
+              "meta:titleId": "experienceevent-alert-impressions##xdm:ID##title",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:ID##description"
             },
             "xdm:clicks": {
               "title": "Alert Clicks",
               "type": "integer",
-              "description": "Counts the number of times an alert has been clicked."
+              "description": "Counts the number of times an alert has been clicked.",
+              "meta:titleId": "experienceevent-alert-impressions##xdm:clicks##title",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:clicks##description"
             },
             "xdm:dismissals": {
               "title": "Alert Dismissals",
               "type": "integer",
-              "description": "Counts the number of times an alert has been dismissed."
+              "description": "Counts the number of times an alert has been dismissed.",
+              "meta:titleId": "experienceevent-alert-impressions##xdm:dismissals##title",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:dismissals##description"
             },
             "xdm:impressions": {
               "title": "Alert Impression Details",
@@ -52,9 +58,12 @@
               "items": {
                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
               },
-              "description": "An array of alerts that have been displayed to a customer."
+              "description": "An array of alerts that have been displayed to a customer.",
+              "meta:titleId": "experienceevent-alert-impressions##xdm:impressions##title",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:impressions##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:alerts##description"
         }
       }
     }
@@ -65,5 +74,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-alert-impressions##title",
+  "meta:descriptionId": "experienceevent-alert-impressions##description"
 }

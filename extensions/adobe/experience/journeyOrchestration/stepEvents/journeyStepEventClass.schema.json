@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/time-series"
+  ],
   "description": "A time-series based Journey Step Event Class.",
   "definitions": {
     "journeyStepEventClass": {
@@ -26,5 +28,7 @@
       "$ref": "#/definitions/journeyStepEventClass"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "journeyStepEvent##title",
+  "meta:descriptionId": "journeyStepEvent##description"
 }

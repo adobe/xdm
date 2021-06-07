@@ -29,11 +29,16 @@
                   "title": "Test Profile",
                   "type": "boolean",
                   "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
-                  "default": false
+                  "default": false,
+                  "meta:titleId": "experienceevent-profile-test-profile##xdm:testProfile##title",
+                  "meta:descriptionId": "experienceevent-profile-test-profile##xdm:testProfile##description"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-profile-test-profile##xdm:profileSnapshot##title",
+              "meta:descriptionId": "experienceevent-profile-test-profile##xdm:profileSnapshot##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-profile-test-profile##https://ns.adobe.com/experience/campaign/message##title"
         }
       }
     }
@@ -43,5 +48,7 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-test-profile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-test-profile##title",
+  "meta:descriptionId": "experienceevent-profile-test-profile##description"
 }

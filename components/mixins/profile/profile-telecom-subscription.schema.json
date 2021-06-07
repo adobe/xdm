@@ -25,12 +25,16 @@
             "xdm:subscriptionID": {
               "title": "Subscription ID",
               "type": "string",
-              "description": "Identifier for subscription."
+              "description": "Identifier for subscription.",
+              "meta:titleId": "profile-telecom-subscription##xdm:subscriptionID##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionID##description"
             },
             "xdm:responsiblePartyID": {
               "title": "Responsible Party ID",
               "type": "string",
-              "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number."
+              "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+              "meta:titleId": "profile-telecom-subscription##xdm:responsiblePartyID##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:responsiblePartyID##description"
             },
             "xdm:subscriptionType": {
               "title": "Subscription Type",
@@ -41,39 +45,53 @@
                 "household": "Household",
                 "business": "Business"
               },
-              "description": "Indicates the type of telecom subscription in which the customer is enrolled."
+              "description": "Indicates the type of telecom subscription in which the customer is enrolled.",
+              "meta:titleId": "profile-telecom-subscription##xdm:subscriptionType##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionType##description"
             },
             "xdm:bundleName": {
               "title": "Bundle Name",
               "type": "string",
-              "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'."
+              "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'.",
+              "meta:titleId": "profile-telecom-subscription##xdm:bundleName##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:bundleName##description"
             },
             "xdm:subscriptionDetails": {
               "title": "Subscription Details",
               "$ref": "https://ns.adobe.com/xdm/context/subscription",
-              "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+              "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+              "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description"
             },
             "xdm:activationDate": {
               "title": "Activation Date",
               "type": "string",
               "format": "date-time",
-              "description": "Tracks the date in which the telecom subscription was activated."
+              "description": "Tracks the date in which the telecom subscription was activated.",
+              "meta:titleId": "profile-telecom-subscription##xdm:activationDate##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:activationDate##description"
             },
             "xdm:deactivationDate": {
               "title": "Deactivation Date",
               "type": "string",
               "format": "date-time",
-              "description": "Tracks the date in which the telecom subscription was deactivated."
+              "description": "Tracks the date in which the telecom subscription was deactivated.",
+              "meta:titleId": "profile-telecom-subscription##xdm:deactivationDate##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:deactivationDate##description"
             },
             "xdm:equipmentFees": {
               "title": "Equipment Fees",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+              "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+              "meta:titleId": "profile-telecom-subscription##xdm:equipmentFees##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:equipmentFees##description"
             },
             "xdm:equipmentInsurance": {
               "title": "Equipment Insurance",
               "type": "boolean",
-              "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
+              "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+              "meta:titleId": "profile-telecom-subscription##xdm:equipmentInsurance##title",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:equipmentInsurance##description"
             }
           }
         }
@@ -85,5 +103,7 @@
       "$ref": "#/definitions/telecom-subscription"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "profile-telecom-subscription##title",
+  "meta:descriptionId": "profile-telecom-subscription##description"
 }

@@ -96,5 +96,7 @@
       "$ref": "#/definitions/target-experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "target-experienceevent##title",
+  "meta:descriptionId": "target-experienceevent##description"
 }

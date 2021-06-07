@@ -18,7 +18,9 @@
           "description": "Fatigue score for the profile.",
           "type": "number",
           "exclusiveMinimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "meta:titleId": "journeyaifatigue##xdm:fatigueScore##title",
+          "meta:descriptionId": "journeyaifatigue##xdm:fatigueScore##description"
         },
         "xdm:fatigueLevel": {
           "title": "Fatigue Level",
@@ -29,7 +31,9 @@
             "low": "Low",
             "medium": "Medium",
             "high": "High"
-          }
+          },
+          "meta:titleId": "journeyaifatigue##xdm:fatigueLevel##title",
+          "meta:descriptionId": "journeyaifatigue##xdm:fatigueLevel##description"
         }
       }
     }
@@ -39,5 +43,7 @@
       "$ref": "#/definitions/journeyaifatigue"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "journeyaifatigue##title",
+  "meta:descriptionId": "journeyaifatigue##description"
 }

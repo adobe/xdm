@@ -45,9 +45,6 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
       "$ref": "#/definitions/opportunity-contact-role-details"
     }
   ],

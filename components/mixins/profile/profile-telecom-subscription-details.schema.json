@@ -23,10 +23,37 @@
         "xdm:telecomSubscription": {
           "type": "object",
           "properties": {
-            "xdm:telecomSubscription": {
-              "title": "Telecom Subscription",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+            "xdm:subscriptionID": {
+              "title": "Subscription ID",
+              "type": "string",
+              "description": "Identifier for subscription."
+            },
+            "xdm:subscriptionDetails": {
+              "title": "Subscription Details",
+              "$ref": "https://ns.adobe.com/xdm/context/subscription",
               "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+            },
+            "xdm:activationDate": {
+              "title": "Activation Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the date in which the telecom subscription was activated."
+            },
+            "xdm:deactivationDate": {
+              "title": "Deactivation Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the date in which the telecom subscription was deactivated."
+            },
+            "xdm:equipmentFees": {
+              "title": "Equipment Fees",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+            },
+            "xdm:equipmentInsurance": {
+              "title": "Equipment Insurance",
+              "type": "boolean",
+              "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
             },
             "xdm:responsiblePartyID": {
               "title": "Responsible Party ID",
@@ -44,10 +71,37 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "xdm:telecomSubscription": {
-                    "title": "Telecom Subscription",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
+                  "xdm:subscriptionDetails": {
+                    "title": "Subscription Details",
+                    "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:activationDate": {
+                    "title": "Activation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was activated."
+                  },
+                  "xdm:deactivationDate": {
+                    "title": "Deactivation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was deactivated."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:dataCap": {
                     "title": "Data Cap",
@@ -91,10 +145,37 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "xdm:telecomSubscription": {
-                    "title": "Telecom Subscription",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
+                  "xdm:subscriptionDetails": {
+                    "title": "Subscription Details",
+                    "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:activationDate": {
+                    "title": "Activation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was activated."
+                  },
+                  "xdm:deactivationDate": {
+                    "title": "Deactivation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was deactivated."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:minutes": {
                     "title": "Minutes",
@@ -155,10 +236,37 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "xdm:telecomSubscription": {
-                    "title": "Telecom Subscription",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
+                  "xdm:subscriptionDetails": {
+                    "title": "Subscription Details",
+                    "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:activationDate": {
+                    "title": "Activation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was activated."
+                  },
+                  "xdm:deactivationDate": {
+                    "title": "Deactivation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was deactivated."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:channels": {
                     "title": "Channels",
@@ -199,10 +307,37 @@
               "items": {
                 "type": "object",
                 "properties": {
-                  "xdm:telecomSubscription": {
-                    "title": "Telecom Subscription",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
+                  "xdm:subscriptionDetails": {
+                    "title": "Subscription Details",
+                    "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:activationDate": {
+                    "title": "Activation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was activated."
+                  },
+                  "xdm:deactivationDate": {
+                    "title": "Deactivation Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks the date in which the telecom subscription was deactivated."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:devices": {
                     "title": "Devices",

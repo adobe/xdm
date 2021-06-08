@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": { "industry": ["telecom"] },
+  "meta:tags": {
+    "industry": ["telecom"]
+  },
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
@@ -26,7 +28,9 @@
             "xdm:channels": {
               "title": "Channels",
               "type": "integer",
-              "description": "Records the number of channels included with the media subscription."
+              "description": "Records the number of channels included with the media subscription.",
+              "meta:titleId": "profile-media-subscription##xdm:channels##title",
+              "meta:descriptionId": "profile-media-subscription##xdm:channels##description"
             },
             "xdm:streamingServices": {
               "title": "Streaming Services",
@@ -38,20 +42,28 @@
                   "xdm:serviceName": {
                     "title": "Service Name",
                     "type": "integer",
-                    "description": "Records the name of the streaming service."
+                    "description": "Records the name of the streaming service.",
+                    "meta:titleId": "profile-media-subscription##xdm:serviceName##title",
+                    "meta:descriptionId": "profile-media-subscription##xdm:serviceName##description"
                   },
                   "xdm:promotionalAddition": {
                     "title": "Promotional Addition",
                     "type": "boolean",
-                    "description": "Flags if the streaming service was added as part of a promotion."
+                    "description": "Flags if the streaming service was added as part of a promotion.",
+                    "meta:titleId": "profile-media-subscription##xdm:promotionalAddition##title",
+                    "meta:descriptionId": "profile-media-subscription##xdm:promotionalAddition##description"
                   },
                   "xdm:promotionLength": {
                     "title": "Promotion Length",
                     "type": "integer",
-                    "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion."
+                    "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion.",
+                    "meta:titleId": "profile-media-subscription##xdm:promotionLength##title",
+                    "meta:descriptionId": "profile-media-subscription##xdm:promotionLength##description"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-media-subscription##xdm:streamingServices##title",
+              "meta:descriptionId": "profile-media-subscription##xdm:streamingServices##description"
             }
           }
         }
@@ -66,5 +78,7 @@
       "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "profile-media-subscription##title",
+  "meta:descriptionId": "profile-media-subscription##description"
 }

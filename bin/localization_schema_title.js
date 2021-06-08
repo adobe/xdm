@@ -1,9 +1,9 @@
 const fs = require('fs');
 const glob = require("glob");
 //Following paths should change to include entire folder
-const masterSchemasFolder = "../schemas/identity";
-const masterComponentsFolder = "../components/datatypes/person";
-const masterExtensionFolder = "../extensions/airship";
+const masterSchemasFolder = "../schemas";
+const masterComponentsFolder = "../components/mixins";
+const masterExtensionFolder = "../extensions/adobe/b2b";
 
 var extensionFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
 var schemaFiles = glob.sync(masterSchemasFolder + "/**/*.schema.json");
@@ -39,9 +39,13 @@ function addMetaId(obj, val,path,schemaname) {
             if(path == null){
                 path = schemaname + '##' + i;  
             }else{
-                path = schemaname + '##' + path + "##" +i;
+                if (path != '@id') {
+                  path = schemaname + '##' + path + "##" +i;
+                }
             }
-            obj["meta:"+val+"Id"]=path;
+            if (path != '@id') {
+                obj["meta:"+val+"Id"]=path;
+            }
         }
     }
 }

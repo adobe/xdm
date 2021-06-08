@@ -41,12 +41,16 @@
               "items": {
                 "type": "string"
               },
-              "description": "An array of the answers provided by the visitor within a survey."
+              "description": "An array of the answers provided by the visitor within a survey.",
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyAnswers##title",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyAnswers##description"
             },
             "xdm:surveyID": {
               "title": "Survey ID",
               "type": "string",
-              "description": "ID for the specific survey taken."
+              "description": "ID for the specific survey taken.",
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyID##title",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyID##description"
             },
             "xdm:surveyQuestions": {
               "title": "Survey Questions",
@@ -54,15 +58,20 @@
               "items": {
                 "type": "string"
               },
-              "description": "An array of the questions presented to the visitor within a survey."
+              "description": "An array of the questions presented to the visitor within a survey.",
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyQuestions##title",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyQuestions##description"
             },
             "xdm:surveySteps": {
               "title": "Survey Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveySteps##title",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveySteps##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyResponse##description"
         }
       }
     }
@@ -73,5 +82,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-01-15"
+  "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-survey-response-details##title",
+  "meta:descriptionId": "experienceevent-survey-response-details##description"
 }

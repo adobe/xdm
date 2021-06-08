@@ -20,17 +20,20 @@
   "description": "Use to track when a person is removed from a specific list.",
   "definitions": {
     "removefromlist": {
-      "properties":{
-        "xdm:listOperations":{
+      "properties": {
+        "xdm:listOperations": {
           "title": "List Opearations",
-          "type":"object",
+          "type": "object",
           "properties": {
             "xdm:listID": {
               "title": "List ID",
               "type": "string",
-              "description": "Unique ID of the Marketing List."
+              "description": "Unique ID of the Marketing List.",
+              "meta:titleId": "remove-from-list##xdm:listID##title",
+              "meta:descriptionId": "remove-from-list##xdm:listID##description"
             }
-          }
+          },
+          "meta:titleId": "remove-from-list##xdm:listOperations##title"
         }
       }
     }
@@ -41,5 +44,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "remove-from-list##title",
+  "meta:descriptionId": "remove-from-list##description"
 }

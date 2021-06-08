@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": { "industry": ["telecom"] },
+  "meta:tags": {
+    "industry": ["telecom"]
+  },
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
@@ -26,17 +28,23 @@
             "xdm:accountID": {
               "title": "Account ID",
               "type": "string",
-              "description": "Account ID for the plan."
+              "description": "Account ID for the plan.",
+              "meta:titleId": "profile-mobile-plan-details##xdm:accountID##title",
+              "meta:descriptionId": "profile-mobile-plan-details##xdm:accountID##description"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "Name for the plan."
+              "description": "Name for the plan.",
+              "meta:titleId": "profile-mobile-plan-details##xdm:name##title",
+              "meta:descriptionId": "profile-mobile-plan-details##xdm:name##description"
             },
             "xdm:rate": {
               "title": "Rate",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Rate for the plan."
+              "description": "Rate for the plan.",
+              "meta:titleId": "profile-mobile-plan-details##xdm:rate##title",
+              "meta:descriptionId": "profile-mobile-plan-details##xdm:rate##description"
             },
             "xdm:devices": {
               "title": "Devices",
@@ -48,27 +56,37 @@
                   "xdm:ID": {
                     "title": "ID",
                     "type": "string",
-                    "description": "Captures the ID for the device."
+                    "description": "Captures the ID for the device.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:ID##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:ID##description"
                   },
                   "xdm:manufacturer": {
                     "title": "Manufacturer",
                     "type": "string",
-                    "description": "Captures the device manufacturer."
+                    "description": "Captures the device manufacturer.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:manufacturer##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:manufacturer##description"
                   },
                   "xdm:model": {
                     "title": "Model",
                     "type": "string",
-                    "description": "Captures the device model."
+                    "description": "Captures the device model.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:model##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:model##description"
                   },
                   "xdm:serialNumber": {
                     "title": "Serial Number",
                     "type": "string",
-                    "description": "Captures the device serial number."
+                    "description": "Captures the device serial number.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:serialNumber##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:serialNumber##description"
                   },
                   "xdm:storageCapacity": {
                     "title": "Storage Capacity",
                     "type": "string",
-                    "description": "Captures the device storage capacity."
+                    "description": "Captures the device storage capacity.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:storageCapacity##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:storageCapacity##description"
                   },
                   "xdm:pricingOptions": {
                     "title": "Pricing Options",
@@ -77,7 +95,9 @@
                       "installmentPlan": "Installment Plan",
                       "retailPrice": "Retail Price"
                     },
-                    "description": "Captures if the device will be paid for in installments or full retail price."
+                    "description": "Captures if the device will be paid for in installments or full retail price.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:pricingOptions##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:pricingOptions##description"
                   },
                   "xdm:OS": {
                     "title": "OS",
@@ -96,60 +116,84 @@
                       "blackberry": "Blackberry",
                       "symbian": "Symbian"
                     },
-                    "description": "Captures the device operating system."
+                    "description": "Captures the device operating system.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:OS##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:OS##description"
                   },
                   "xdm:earlyUpgradeEnrollment": {
                     "title": "Early Upgrade Enrollment",
                     "type": "boolean",
-                    "description": "Captures if the customer opts into early upgrades."
+                    "description": "Captures if the customer opts into early upgrades.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:earlyUpgradeEnrollment##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:earlyUpgradeEnrollment##description"
                   },
                   "xdm:insuranceEnrollment": {
                     "title": "Insurance Enrollment",
                     "type": "boolean",
-                    "description": "Captures if the customer opts into device insurance."
+                    "description": "Captures if the customer opts into device insurance.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:insuranceEnrollment##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:insuranceEnrollment##description"
                   },
                   "xdm:planLevel": {
                     "title": "Plan Level",
                     "type": "string",
-                    "description": "Captures the name of the mobile plan assigned to this device."
+                    "description": "Captures the name of the mobile plan assigned to this device.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:planLevel##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:planLevel##description"
                   },
                   "xdm:phoneNumber": {
                     "title": "Phone Number",
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                    "description": "Captures the phone number assigned to this device."
+                    "description": "Captures the phone number assigned to this device.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:phoneNumber##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:phoneNumber##description"
                   },
                   "xdm:portedNumber": {
                     "title": "Ported Number",
                     "type": "boolean",
-                    "description": "Captures if the customer ports their number from another carrier."
+                    "description": "Captures if the customer ports their number from another carrier.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:portedNumber##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:portedNumber##description"
                   },
                   "xdm:media5GAccess": {
                     "title": "5G Access",
                     "type": "boolean",
-                    "description": "Captures if the device is eligible for 5G Access."
+                    "description": "Captures if the device is eligible for 5G Access.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:media5GAccess##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:media5GAccess##description"
                   },
                   "xdm:mediaRolloverData": {
                     "title": "Rollover Data",
                     "type": "boolean",
-                    "description": "Captures if the device plan includes rollover data."
+                    "description": "Captures if the device plan includes rollover data.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:mediaRolloverData##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:mediaRolloverData##description"
                   },
                   "xdm:mediaMobileHotspot": {
                     "title": "Mobile Hotspot",
                     "type": "boolean",
-                    "description": "Captures if the device plan includes mobile hotspot ability."
+                    "description": "Captures if the device plan includes mobile hotspot ability.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:mediaMobileHotspot##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:mediaMobileHotspot##description"
                   },
                   "xdm:mediaCloudStorageIncluded": {
                     "title": "Cloud Storage Included",
                     "type": "boolean",
-                    "description": "Captures if the device plan includes cloud data storage."
+                    "description": "Captures if the device plan includes cloud data storage.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:mediaCloudStorageIncluded##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:mediaCloudStorageIncluded##description"
                   },
                   "xdm:hdVideo": {
                     "title": "HD Video",
                     "type": "boolean",
-                    "description": "Captures if the device plan includes HD video."
+                    "description": "Captures if the device plan includes HD video.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:hdVideo##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:hdVideo##description"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-mobile-plan-details##xdm:devices##title",
+              "meta:descriptionId": "profile-mobile-plan-details##xdm:devices##description"
             },
             "xdm:accessories": {
               "title": "Accessories",
@@ -161,30 +205,42 @@
                   "xdm:ID": {
                     "title": "ID",
                     "type": "string",
-                    "description": "Captures the ID for the accessory."
+                    "description": "Captures the ID for the accessory.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:ID##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:ID##description"
                   },
                   "xdm:manufacturer": {
                     "title": "Manufacturer",
                     "type": "string",
-                    "description": "Captures the accessory manufacturer."
+                    "description": "Captures the accessory manufacturer.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:manufacturer##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:manufacturer##description"
                   },
                   "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "Captures the accessory name."
+                    "description": "Captures the accessory name.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:name##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:name##description"
                   },
                   "xdm:serialNumber": {
                     "title": "Serial Number",
                     "type": "string",
-                    "description": "Captures the accessory serial number."
+                    "description": "Captures the accessory serial number.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:serialNumber##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:serialNumber##description"
                   },
                   "xdm:type": {
                     "title": "Type",
                     "type": "string",
-                    "description": "Captures the accessory type."
+                    "description": "Captures the accessory type.",
+                    "meta:titleId": "profile-mobile-plan-details##xdm:type##title",
+                    "meta:descriptionId": "profile-mobile-plan-details##xdm:type##description"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-mobile-plan-details##xdm:accessories##title",
+              "meta:descriptionId": "profile-mobile-plan-details##xdm:accessories##description"
             }
           }
         }
@@ -200,5 +256,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-04-07"
+  "meta:createdDate": "2021-04-07",
+  "meta:titleId": "profile-mobile-plan-details##title",
+  "meta:descriptionId": "profile-mobile-plan-details##description"
 }

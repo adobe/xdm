@@ -22,7 +22,9 @@
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "Information related to advertising impressions, clickthroughs, and attribution."
+          "description": "Information related to advertising impressions, clickthroughs, and attribution.",
+          "meta:titleId": "experienceevent-advertising##xdm:advertising##title",
+          "meta:descriptionId": "experienceevent-advertising##xdm:advertising##description"
         }
       }
     }
@@ -36,5 +38,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-advertising##title",
+  "meta:descriptionId": "experienceevent-advertising##description"
 }

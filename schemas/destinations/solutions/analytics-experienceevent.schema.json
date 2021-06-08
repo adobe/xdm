@@ -104,5 +104,7 @@
       "$ref": "#/definitions/analytics-experienceevent"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "adobe-analytics##title",
+  "meta:descriptionId": "adobe-analytics##description"
 }

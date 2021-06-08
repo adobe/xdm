@@ -32,35 +32,48 @@
             "xdm:requestID": {
               "title": "Quote Request ID",
               "type": "string",
-              "description": "Unique identifier for the quote request."
+              "description": "Unique identifier for the quote request.",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:requestID##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:requestID##description"
             },
             "xdm:discount": {
               "title": "Discount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Records the discount amount for a quote displayed to a visitor."
+              "description": "Records the discount amount for a quote displayed to a visitor.",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:discount##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:discount##description"
             },
             "xdm:premium": {
               "title": "Premium",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Records the premium amount for a quote displayed to a visitor."
+              "description": "Records the premium amount for a quote displayed to a visitor.",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:premium##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:premium##description"
             },
             "xdm:location": {
               "title": "Location",
               "type": "string",
-              "description": "Captures the postal code used for finding retailers near the visitor's location."
+              "description": "Captures the postal code used for finding retailers near the visitor's location.",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:location##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:location##description"
             },
             "xdm:selectedRetailer": {
               "title": "Selected Retailer",
               "type": "string",
-              "description": "Captures the selected retailer for a quote request, if applicable. "
+              "description": "Captures the selected retailer for a quote request, if applicable. ",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:selectedRetailer##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:selectedRetailer##description"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-quote-request-details##xdm:steps##title",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:steps##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:quotes##description"
         }
       }
     }
@@ -71,5 +84,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-03-31"
+  "meta:createdDate": "2021-03-31",
+  "meta:titleId": "experienceevent-quote-request-details##title",
+  "meta:descriptionId": "experienceevent-quote-request-details##description"
 }

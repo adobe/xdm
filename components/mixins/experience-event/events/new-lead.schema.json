@@ -29,37 +29,51 @@
                 "xdm:sourceType": {
                   "title": "Source Type",
                   "type": "string",
-                  "description": "Type of lead source."
+                  "description": "Type of lead source.",
+                  "meta:titleId": "new-lead##xdm:sourceType##title",
+                  "meta:descriptionId": "new-lead##xdm:sourceType##description"
                 },
                 "xdm:formName": {
                   "title": "Form Name",
                   "type": "string",
-                  "description": "Name of the form."
+                  "description": "Name of the form.",
+                  "meta:titleId": "new-lead##xdm:formName##title",
+                  "meta:descriptionId": "new-lead##xdm:formName##description"
                 },
                 "xdm:listName": {
                   "title": "List Name",
                   "type": "string",
-                  "description": "Name of marketing list."
+                  "description": "Name of marketing list.",
+                  "meta:titleId": "new-lead##xdm:listName##title",
+                  "meta:descriptionId": "new-lead##xdm:listName##description"
                 },
                 "xdm:sfdcType": {
                   "title": "SFDC Type",
                   "type": "string",
-                  "description": "Lead type in SFDC."
+                  "description": "Lead type in SFDC.",
+                  "meta:titleId": "new-lead##xdm:sfdcType##title",
+                  "meta:descriptionId": "new-lead##xdm:sfdcType##description"
                 },
                 "xdm:leadSource": {
                   "title": "Lead Source",
                   "type": "string",
-                  "description": "Source of lead."
+                  "description": "Source of lead.",
+                  "meta:titleId": "new-lead##xdm:leadSource##title",
+                  "meta:descriptionId": "new-lead##xdm:leadSource##description"
                 },
                 "xdm:createdDate": {
                   "title": "Created Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Lead creation date."
+                  "description": "Lead creation date.",
+                  "meta:titleId": "new-lead##xdm:createdDate##title",
+                  "meta:descriptionId": "new-lead##xdm:createdDate##description"
                 }
-              }
+              },
+              "meta:titleId": "new-lead##xdm:newLead##title"
             }
-          }
+          },
+          "meta:titleId": "new-lead##xdm:leadOperation##title"
         }
       }
     }
@@ -70,5 +84,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "new-lead##title",
+  "meta:descriptionId": "new-lead##description"
 }

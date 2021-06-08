@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Destinations Namespace Mapping Schema.",
   "definitions": {
     "destination-namespace": {
@@ -19,23 +21,31 @@
         "xdm:destinationID": {
           "title": "Destination ID",
           "type": "string",
-          "description": "Unique Identifier for a destination instance"
+          "description": "Unique Identifier for a destination instance",
+          "meta:titleId": "destination-namespace##xdm:destinationID##title",
+          "meta:descriptionId": "destination-namespace##xdm:destinationID##description"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
-          "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+          "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.",
+          "meta:titleId": "destination-namespace##xdm:namespaceCode##title",
+          "meta:descriptionId": "destination-namespace##xdm:namespaceCode##description"
         },
         "xdm:createTime": {
           "title": "Create Time",
           "type": "string",
           "format": "date-time",
-          "description": "The date and UTC time when the activation flow to the destination-namespace mapping was createdByID"
+          "description": "The date and UTC time when the activation flow to the destination-namespace mapping was createdByID",
+          "meta:titleId": "destination-namespace##xdm:createTime##title",
+          "meta:descriptionId": "destination-namespace##xdm:createTime##description"
         },
         "xdm:createdByID": {
           "title": "Created User ID",
           "type": "string",
-          "description": "ID of user who created the destination flow"
+          "description": "ID of user who created the destination flow",
+          "meta:titleId": "destination-namespace##xdm:createdByID##title",
+          "meta:descriptionId": "destination-namespace##xdm:createdByID##description"
         }
       }
     }
@@ -51,5 +61,7 @@
       "$ref": "#/definitions/destination-namespace"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "destination-namespace##title",
+  "meta:descriptionId": "destination-namespace##description"
 }

@@ -22,7 +22,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "",
   "definitions": {
     "support-site-search": {
@@ -34,9 +36,12 @@
             "xdm:supportSiteSearch": {
               "title": "Support Site Search",
               "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
-              "description": "Extension of internalSearch data type."
+              "description": "Extension of internalSearch data type.",
+              "meta:titleId": "experienceevent-support-site-search##xdm:supportSiteSearch##title",
+              "meta:descriptionId": "experienceevent-support-site-search##xdm:supportSiteSearch##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-support-site-search##xdm:siteKnowledge##description"
         }
       }
     }
@@ -47,5 +52,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-01-15"
+  "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-support-site-search##title",
+  "meta:descriptionId": "experienceevent-support-site-search##description"
 }

@@ -24,7 +24,9 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/content-details"
           },
           "title": "Content Details",
-          "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement."
+          "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+          "meta:titleId": "contents##https://ns.adobe.com/experience/decisioning/contents##title",
+          "meta:descriptionId": "contents##https://ns.adobe.com/experience/decisioning/contents##description"
         }
       }
     }
@@ -37,5 +39,7 @@
       "$ref": "#/definitions/contents"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "contents##title",
+  "meta:descriptionId": "contents##description"
 }

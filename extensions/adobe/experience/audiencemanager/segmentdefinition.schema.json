@@ -22,7 +22,9 @@
           "title": "Folder Id",
           "type": "string",
           "description": "id of parent folder if present",
-          "meta:status": "deprecated"
+          "meta:status": "deprecated",
+          "meta:titleId": "segmentdefinition##xdm:segmentFolderId##title",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentFolderId##description"
         },
         "xdm:segmentSubType": {
           "title": "Sub Type",
@@ -39,12 +41,16 @@
             "COMPANY_ACTIVITY_TRAIT",
             "ALGO_TRAIT",
             "ON_BOARDED_TRAIT"
-          ]
+          ],
+          "meta:titleId": "segmentdefinition##xdm:segmentSubType##title",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentSubType##description"
         },
         "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
           "title": "Parent folder identity",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Identity of the parent folder of current folder"
+          "description": "Identity of the parent folder of current folder",
+          "meta:titleId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##title",
+          "meta:descriptionId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##description"
         }
       }
     }
@@ -57,5 +63,7 @@
       "$ref": "#/definitions/segmentdefinition"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "segmentdefinition##title",
+  "meta:descriptionId": "segmentdefinition##description"
 }

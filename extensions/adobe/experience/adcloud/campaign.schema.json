@@ -16,49 +16,70 @@
         "xdm:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier for the account."
+          "description": "Identifier for the account.",
+          "meta:titleId": "campaign##xdm:accountId##title",
+          "meta:descriptionId": "campaign##xdm:accountId##description"
         },
         "xdm:dspId": {
           "title": "Demand Side Platform(DSP) Identifier",
           "type": "string",
-          "description": "Identifier for the Demand Side Platform where the campaign is defined. Usually, is the id of Adobe Advertising Cloud DSP."
+          "description": "Identifier for the Demand Side Platform where the campaign is defined. Usually, is the id of Adobe Advertising Cloud DSP.",
+          "meta:titleId": "campaign##xdm:dspId##title",
+          "meta:descriptionId": "campaign##xdm:dspId##description"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Identifier for the campaign."
+          "description": "Identifier for the campaign.",
+          "meta:titleId": "campaign##xdm:campaignId##title",
+          "meta:descriptionId": "campaign##xdm:campaignId##description"
         },
         "xdm:placementId": {
           "title": "Placement Identifier",
           "type": "string",
-          "description": "Identifier for the placement."
+          "description": "Identifier for the placement.",
+          "meta:titleId": "campaign##xdm:placementId##title",
+          "meta:descriptionId": "campaign##xdm:placementId##description"
         },
         "xdm:packageId": {
           "title": "Package Identifier",
           "type": "string",
-          "description": "Identifier for the package."
+          "description": "Identifier for the package.",
+          "meta:titleId": "campaign##xdm:packageId##title",
+          "meta:descriptionId": "campaign##xdm:packageId##description"
         },
         "xdm:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
-          "description": "Identifier for the advertiser."
+          "description": "Identifier for the advertiser.",
+          "meta:titleId": "campaign##xdm:advertiserId##title",
+          "meta:descriptionId": "campaign##xdm:advertiserId##description"
         },
         "xdm:experimentId": {
           "title": "Experiment Identifier",
           "type": "string",
-          "description": "Identifier for the experiment."
+          "description": "Identifier for the experiment.",
+          "meta:titleId": "campaign##xdm:experimentId##title",
+          "meta:descriptionId": "campaign##xdm:experimentId##description"
         },
         "xdm:sampleGroupId": {
           "title": "Sample Group Identifier",
           "type": "string",
-          "description": "Identifier for the sample group."
+          "description": "Identifier for the sample group.",
+          "meta:titleId": "campaign##xdm:sampleGroupId##title",
+          "meta:descriptionId": "campaign##xdm:sampleGroupId##description"
         },
         "xdm:currency": {
           "title": "Account Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 billing currency code for the account."
+          "description": "The ISO 4217 billing currency code for the account.",
+          "meta:titleId": "campaign##xdm:currency##title",
+          "meta:descriptionId": "campaign##xdm:currency##description"
         }
       }
     }
@@ -68,5 +89,7 @@
       "$ref": "#/definitions/campaign"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "campaign##title",
+  "meta:descriptionId": "campaign##description"
 }

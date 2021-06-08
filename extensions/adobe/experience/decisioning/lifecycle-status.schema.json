@@ -22,7 +22,13 @@
           "type": "string",
           "title": "Lifecycle Status",
           "description": "Lifecycle status allows workflows to be conducted with an object. The status may affect where an object is visible or considered relevant. Status changes are driven by the clients or services that use the objects.",
-          "enum": ["draft", "approved", "live", "completed", "archived"],
+          "enum": [
+            "draft",
+            "approved",
+            "live",
+            "completed",
+            "archived"
+          ],
           "default": "draft",
           "meta:enum": {
             "draft": "Draft",
@@ -30,7 +36,9 @@
             "live": "Live",
             "completed": "Completed",
             "archived": "Archived"
-          }
+          },
+          "meta:titleId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##title",
+          "meta:descriptionId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##description"
         }
       }
     }
@@ -43,5 +51,7 @@
       "$ref": "#/definitions/lifecycle-status-mixin"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "lifecycle-status##title",
+  "meta:descriptionId": "lifecycle-status##description"
 }

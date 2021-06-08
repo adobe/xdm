@@ -7,7 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/tag",
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -19,7 +21,9 @@
         "https://ns.adobe.com/experience/decisioning/name": {
           "type": "string",
           "title": "Tag Name",
-          "description": "The tag's external human-readable representation to the clients in the default language."
+          "description": "The tag's external human-readable representation to the clients in the default language.",
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/name##title",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/name##description"
         }
       }
     },
@@ -29,12 +33,16 @@
           "title": "Tag Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the tag."
+          "description": "A unique identifier for the tag.",
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/tagID##title",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/tagID##description"
         },
         "repo:etag": {
           "title": "Tag ETag",
           "type": "string",
-          "description": "The revision that the tag object was at when the snapshot was taken."
+          "description": "The revision that the tag object was at when the snapshot was taken.",
+          "meta:titleId": "tag##repo:etag##title",
+          "meta:descriptionId": "tag##repo:etag##description"
         }
       }
     }
@@ -47,5 +55,7 @@
       "$ref": "#/definitions/tag-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "tag##title",
+  "meta:descriptionId": "tag##description"
 }

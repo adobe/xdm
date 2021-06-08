@@ -29,27 +29,37 @@
                 "xdm:type": {
                   "title": "Type",
                   "type": "string",
-                  "description": "Type of Interesting Moment."
+                  "description": "Type of Interesting Moment.",
+                  "meta:titleId": "interesting-moment##xdm:type##title",
+                  "meta:descriptionId": "interesting-moment##xdm:type##description"
                 },
                 "xdm:description": {
                   "title": "Description",
                   "type": "string",
-                  "description": "Description of Interesting Moment."
+                  "description": "Description of Interesting Moment.",
+                  "meta:titleId": "interesting-moment##xdm:description##title",
+                  "meta:descriptionId": "interesting-moment##xdm:description##description"
                 },
                 "xdm:date": {
                   "title": "Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Date of the Interesting Moment."
+                  "description": "Date of the Interesting Moment.",
+                  "meta:titleId": "interesting-moment##xdm:date##title",
+                  "meta:descriptionId": "interesting-moment##xdm:date##description"
                 },
                 "xdm:source": {
                   "title": "Source",
                   "type": "string",
-                  "description": "Source of the action that triggered the interesting moment."
+                  "description": "Source of the action that triggered the interesting moment.",
+                  "meta:titleId": "interesting-moment##xdm:source##title",
+                  "meta:descriptionId": "interesting-moment##xdm:source##description"
                 }
-              }
+              },
+              "meta:titleId": "interesting-moment##xdm:interestingMoment##title"
             }
-          }
+          },
+          "meta:titleId": "interesting-moment##xdm:leadOperation##title"
         }
       }
     }
@@ -60,5 +70,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "interesting-moment##title",
+  "meta:descriptionId": "interesting-moment##description"
 }

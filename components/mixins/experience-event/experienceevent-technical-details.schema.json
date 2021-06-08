@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Technical details including data source code, tags, and timestamps.",
   "definitions": {
     "experienceevent-technical-details": {
@@ -19,13 +21,17 @@
         "xdm:dataSource": {
           "title": "Data source",
           "$ref": "https://ns.adobe.com/xdm/data/datasource",
-          "description": "Globally unique identification of a data source."
+          "description": "Globally unique identification of a data source.",
+          "meta:titleId": "experienceevent-technical-details##xdm:dataSource##title",
+          "meta:descriptionId": "experienceevent-technical-details##xdm:dataSource##description"
         },
         "xdm:receivedTimestamp": {
           "title": "Received time stamp",
           "type": "string",
           "format": "date-time",
-          "description": "The time at which this interaction was received by a server."
+          "description": "The time at which this interaction was received by a server.",
+          "meta:titleId": "experienceevent-technical-details##xdm:receivedTimestamp##title",
+          "meta:descriptionId": "experienceevent-technical-details##xdm:receivedTimestamp##description"
         }
       }
     }
@@ -39,5 +45,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-technical-details##title",
+  "meta:descriptionId": "experienceevent-technical-details##description"
 }

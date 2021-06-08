@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/marketing-list"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/marketing-list"
+  ],
   "description": "Marketing list relationship attributes form a single data source. This is the place to add attributes if there is a need to do any kind of segmentation in future.",
   "definitions": {
     "marketing-list-components": {
@@ -24,11 +26,13 @@
             "properties": {
               "xdm:sourceMarketingListID": {
                 "title": "Source Marketing List Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "marketing-list-components##xdm:sourceMarketingListID##title"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External Identifier",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "marketing-list-components##xdm:sourceExternalID##title"
               }
             }
           }
@@ -45,5 +49,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-14"
+  "meta:createdDate": "2020-09-14",
+  "meta:titleId": "marketing-list-components##title",
+  "meta:descriptionId": "marketing-list-components##description"
 }

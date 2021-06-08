@@ -10,14 +10,18 @@
   "title": "AdCloud to Analytics StitchID Mixin",
   "type": "object",
   "description": "Defines the advertising stitch ID used for the AdCloud to Adobe Analytics integration",
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "stitch": {
       "properties": {
         "adcloud:advertisingStitchID": {
           "title": "Advertising Stitch ID",
           "type": "string",
-          "description": "Stitch ID passed to Adobe Analytics"
+          "description": "Stitch ID passed to Adobe Analytics",
+          "meta:titleId": "stitchid##adcloud:advertisingStitchID##title",
+          "meta:descriptionId": "stitchid##adcloud:advertisingStitchID##description"
         }
       }
     }
@@ -27,5 +31,7 @@
       "$ref": "#/definitions/stitch"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "stitchid##title",
+  "meta:descriptionId": "stitchid##description"
 }

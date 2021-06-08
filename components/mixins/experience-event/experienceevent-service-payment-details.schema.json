@@ -12,9 +12,14 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "telecom"]
+    "industry": [
+      "financial_services",
+      "telecom"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Service Payment Details such as ID, type, and amount.",
   "definitions": {
     "service-payment-details": {
@@ -26,9 +31,12 @@
             "xdm:servicePayment": {
               "title": "Service Payment",
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-              "description": "Extension of transaction data type."
+              "description": "Extension of transaction data type.",
+              "meta:titleId": "experienceevent-service-payment-details##xdm:servicePayment##title",
+              "meta:descriptionId": "experienceevent-service-payment-details##xdm:servicePayment##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-service-payment-details##xdm:service-payment-details##description"
         }
       }
     }
@@ -39,5 +47,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-01-15"
+  "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-service-payment-details##title",
+  "meta:descriptionId": "experienceevent-service-payment-details##description"
 }

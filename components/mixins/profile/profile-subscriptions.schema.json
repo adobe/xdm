@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Subscription information such as device, environment, and subscriber data.",
   "definitions": {
     "profile-subscriptions": {
@@ -22,7 +24,9 @@
           "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/subscription"
-          }
+          },
+          "meta:titleId": "profile-subscriptions##xdm:subscriptions##title",
+          "meta:descriptionId": "profile-subscriptions##xdm:subscriptions##description"
         }
       }
     }
@@ -36,5 +40,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-subscriptions##title",
+  "meta:descriptionId": "profile-subscriptions##description"
 }

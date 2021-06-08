@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
   "definitions": {
     "experienceevent": {
@@ -25,14 +27,19 @@
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Value of the parameter"
+              "description": "Value of the parameter",
+              "meta:descriptionId": "experienceevent-all##items##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-all##xdm:signals##title",
+          "meta:descriptionId": "experienceevent-all##xdm:signals##description"
         },
         "xdm:overwriteTraits": {
           "title": "Overwrite Traits",
           "type": "boolean",
-          "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded."
+          "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+          "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title",
+          "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description"
         },
         "xdm:derivedSignals": {
           "title": "Derived Signals",
@@ -43,9 +50,12 @@
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Value of the parameter"
+              "description": "Value of the parameter",
+              "meta:descriptionId": "experienceevent-all##items##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-all##xdm:derivedSignals##title",
+          "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description"
         }
       }
     }
@@ -55,5 +65,7 @@
       "$ref": "#/definitions/experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-all##title",
+  "meta:descriptionId": "experienceevent-all##description"
 }

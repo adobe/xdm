@@ -13,9 +13,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "definitions": {},
   "allOf": [
     {
@@ -23,5 +27,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-11-04"
+  "meta:createdDate": "2020-11-04",
+  "meta:titleId": "profile-consents##title",
+  "meta:descriptionId": "profile-consents##description"
 }

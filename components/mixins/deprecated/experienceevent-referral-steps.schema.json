@@ -21,7 +21,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Referral steps such as start, save, failure, and complete.",
   "definitions": {
     "referral-steps": {
@@ -32,7 +34,9 @@
             "xdm:referral": {
               "title": "Referral",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:titleId": "experienceevent-referral-steps##xdm:referral##title",
+              "meta:descriptionId": "experienceevent-referral-steps##xdm:referral##description"
             }
           }
         }
@@ -45,5 +49,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-referral-steps##title",
+  "meta:descriptionId": "experienceevent-referral-steps##description"
 }

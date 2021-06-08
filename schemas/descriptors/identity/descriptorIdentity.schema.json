@@ -21,26 +21,40 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorIdentity"
+          "const": "xdm:descriptorIdentity",
+          "meta:titleId": "descriptorIdentity##@type##title"
         },
         "xdm:namespace": {
           "title": "Namespace",
           "type": "string",
-          "description": "Identity ID or Code."
+          "description": "Identity ID or Code.",
+          "meta:titleId": "descriptorIdentity##xdm:namespace##title",
+          "meta:descriptionId": "descriptorIdentity##xdm:namespace##description"
         },
         "xdm:property": {
           "title": "Property",
           "type": "string",
           "description": "Property of the `xdm:namespace` field.",
-          "enum": ["xdm:id", "xdm:code"]
+          "enum": [
+            "xdm:id",
+            "xdm:code"
+          ],
+          "meta:titleId": "descriptorIdentity##xdm:property##title",
+          "meta:descriptionId": "descriptorIdentity##xdm:property##description"
         },
         "xdm:isPrimary": {
           "title": "Is primary key or not",
           "type": "boolean",
-          "description": "When present, only one field should be marked as the primary. Default is false."
+          "description": "When present, only one field should be marked as the primary. Default is false.",
+          "meta:titleId": "descriptorIdentity##xdm:isPrimary##title",
+          "meta:descriptionId": "descriptorIdentity##xdm:isPrimary##description"
         }
       },
-      "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
+      "required": [
+        "xdm:sourceProperty",
+        "xdm:namespace",
+        "xdm:property"
+      ]
     }
   },
   "allOf": [
@@ -52,5 +66,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "descriptorIdentity##title",
+  "meta:descriptionId": "descriptorIdentity##description"
 }

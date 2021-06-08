@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Geographical unit information such as labels, organization name, and geographical unit name.",
   "definitions": {
     "profile-owning-entities": {
@@ -19,12 +21,16 @@
         "xdm:orgUnit": {
           "title": "Organizational unit",
           "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-          "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
+          "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+          "meta:titleId": "profile-owning-entities##xdm:orgUnit##title",
+          "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description"
         },
         "xdm:geoUnit": {
           "title": "Geographical unit",
           "$ref": "https://ns.adobe.com/xdm/common/geounit",
-          "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+          "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+          "meta:titleId": "profile-owning-entities##xdm:geoUnit##title",
+          "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description"
         }
       }
     }
@@ -38,5 +44,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-owning-entities##title",
+  "meta:descriptionId": "profile-owning-entities##description"
 }

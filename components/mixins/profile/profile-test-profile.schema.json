@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Use to indicate that the profile record is in use for testing, verification, and should not be automatically included in normal operations.",
   "definitions": {
     "profile-test-profile": {
@@ -20,7 +22,9 @@
           "title": "Test profile",
           "type": "boolean",
           "description": "Indicates the `profile` record is for use in testing and verification purposes and should not be automatically included in normal operations.",
-          "default": false
+          "default": false,
+          "meta:titleId": "profile-test-profile##xdm:testProfile##title",
+          "meta:descriptionId": "profile-test-profile##xdm:testProfile##description"
         }
       }
     }
@@ -34,5 +38,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-test-profile##title",
+  "meta:descriptionId": "profile-test-profile##description"
 }

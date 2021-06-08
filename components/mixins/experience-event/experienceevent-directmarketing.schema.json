@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Direct marketing events such as opens, clicks, impressions, and unsubscribes.",
   "definitions": {
     "experienceevent-directmarketing": {
@@ -22,7 +26,9 @@
         "xdm:directMarketing": {
           "title": "Direct marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications."
+          "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+          "meta:titleId": "experienceevent-directmarketing##xdm:directMarketing##title",
+          "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description"
         }
       }
     }
@@ -36,5 +42,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-directmarketing##title",
+  "meta:descriptionId": "experienceevent-directmarketing##description"
 }

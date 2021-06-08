@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Advertising Cloud Creative Management Platform Event extension.",
   "definitions": {
     "creative-event": {
@@ -19,7 +21,9 @@
         "https://ns.adobe.com/experience/adcloud/creative": {
           "title": "Advertising Creative Management Platform Details",
           "description": "Advertising Creative Management Platform Details.",
-          "$ref": "https://ns.adobe.com/experience/adcloud/creative"
+          "$ref": "https://ns.adobe.com/experience/adcloud/creative",
+          "meta:titleId": "creative-event##https://ns.adobe.com/experience/adcloud/creative##title",
+          "meta:descriptionId": "creative-event##https://ns.adobe.com/experience/adcloud/creative##description"
         }
       }
     }
@@ -32,5 +36,7 @@
       "$ref": "#/definitions/creative-event"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "creative-event##title",
+  "meta:descriptionId": "creative-event##description"
 }

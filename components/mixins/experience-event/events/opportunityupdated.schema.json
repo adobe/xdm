@@ -25,7 +25,9 @@
             "xdm:opportunityID": {
               "title": "Opportunity ID",
               "type": "string",
-              "description": "Unique ID of the Opportunity"
+              "description": "Unique ID of the Opportunity",
+              "meta:titleId": "opportunityupdated##xdm:opportunityID##title",
+              "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description"
             },
             "xdm:dataValueChanges": {
               "title": "Data Value Changes",
@@ -37,22 +39,31 @@
                   "xdm:attributeName": {
                     "title": "Attribute Name",
                     "type": "string",
-                    "description": "Attribute that was updated"
+                    "description": "Attribute that was updated",
+                    "meta:titleId": "opportunityupdated##xdm:attributeName##title",
+                    "meta:descriptionId": "opportunityupdated##xdm:attributeName##description"
                   },
                   "xdm:newValue": {
                     "title": "New Value",
                     "type": "string",
-                    "description": "New value of updated attribute"
+                    "description": "New value of updated attribute",
+                    "meta:titleId": "opportunityupdated##xdm:newValue##title",
+                    "meta:descriptionId": "opportunityupdated##xdm:newValue##description"
                   },
                   "xdm:oldValue": {
                     "title": "Old Value",
                     "type": "string",
-                    "description": "Previous value of updated attribute"
+                    "description": "Previous value of updated attribute",
+                    "meta:titleId": "opportunityupdated##xdm:oldValue##title",
+                    "meta:descriptionId": "opportunityupdated##xdm:oldValue##description"
                   }
                 }
-              }
+              },
+              "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title",
+              "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description"
             }
-          }
+          },
+          "meta:titleId": "opportunityupdated##xdm:opportunityEvent##title"
         }
       }
     }
@@ -63,5 +74,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "opportunityupdated##title",
+  "meta:descriptionId": "opportunityupdated##description"
 }

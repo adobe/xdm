@@ -12,7 +12,9 @@
   "description": "Digital content consumption data from web and mobile applications as well as online and offline purchase data such as channel, commerce, and device information.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",
@@ -59,5 +61,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-consumer##title",
+  "meta:descriptionId": "experienceevent-consumer##description"
 }

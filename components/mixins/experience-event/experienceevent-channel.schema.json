@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Channel information such as ID, channel type, media type, and location type.",
   "definitions": {
     "experienceevent-channel": {
@@ -19,7 +21,9 @@
         "xdm:channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
-          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+          "$ref": "https://ns.adobe.com/xdm/channels/channel",
+          "meta:titleId": "experienceevent-channel##xdm:channel##title",
+          "meta:descriptionId": "experienceevent-channel##xdm:channel##description"
         }
       }
     }
@@ -33,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-channel##title",
+  "meta:descriptionId": "experienceevent-channel##description"
 }

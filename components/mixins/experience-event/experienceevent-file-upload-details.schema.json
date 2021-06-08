@@ -26,7 +26,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "File upload details such as file name, size, and transfer status.",
   "definitions": {
     "file-upload-details": {
@@ -38,9 +40,12 @@
             "xdm:fileUpload": {
               "title": "File Upload",
               "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
-              "description": "Tracks all details of a file upload. Extension of file transfer data type."
+              "description": "Tracks all details of a file upload. Extension of file transfer data type.",
+              "meta:titleId": "experienceevent-file-upload-details##xdm:fileUpload##title",
+              "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileUpload##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileTransfer##description"
         }
       }
     }
@@ -51,5 +56,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-01-13"
+  "meta:createdDate": "2021-01-13",
+  "meta:titleId": "experienceevent-file-upload-details##title",
+  "meta:descriptionId": "experienceevent-file-upload-details##description"
 }

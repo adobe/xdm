@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
   "definitions": {
     "b2b-person-components": {
@@ -24,51 +26,70 @@
               "xdm:sourcePersonID": {
                 "title": "Source Person ID",
                 "description": "Source person ID.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:sourcePersonID##title",
+                "meta:descriptionId": "b2b-person-components##xdm:sourcePersonID##description"
               },
               "xdm:sourceAccountID": {
                 "title": "Source Account ID",
                 "description": "Source account ID.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:sourceAccountID##title",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceAccountID##description"
               },
               "xdm:sourceConvertedContactID": {
                 "title": "Source Converted Contact ID",
                 "description": "Source converted contact ID.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:sourceConvertedContactID##title",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceConvertedContactID##description"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External source unique identifier at the source.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:sourceExternalID##title",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceExternalID##description"
               },
               "xdm:workEmail": {
                 "title": "Work Email ID of B2B Person",
-                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+                "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                "meta:titleId": "b2b-person-components##xdm:workEmail##title"
               },
               "xdm:personType": {
                 "title": "Person Type",
                 "description": "Type of the B2B person.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:personType##title",
+                "meta:descriptionId": "b2b-person-components##xdm:personType##description"
               },
               "xdm:personStatus": {
                 "title": "Person Status",
                 "description": "Field recording the current marketing/sales status of the Person.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:personStatus##title",
+                "meta:descriptionId": "b2b-person-components##xdm:personStatus##description"
               },
               "xdm:personSource": {
                 "title": "Person Source",
                 "description": "Source from where the information regarding the person was received.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:personSource##title",
+                "meta:descriptionId": "b2b-person-components##xdm:personSource##description"
               },
               "xdm:personScore": {
                 "title": "Person Score",
                 "description": "A Score generated for a person by the CRM system.",
-                "type": "number"
+                "type": "number",
+                "meta:titleId": "b2b-person-components##xdm:personScore##title",
+                "meta:descriptionId": "b2b-person-components##xdm:personScore##description"
               },
               "xdm:personGroupID": {
                 "title": "Person Group ID",
                 "description": "Group identifier for the person.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "b2b-person-components##xdm:personGroupID##title",
+                "meta:descriptionId": "b2b-person-components##xdm:personGroupID##description"
               }
             }
           }
@@ -85,5 +106,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-09-09"
+  "meta:createdDate": "2020-09-09",
+  "meta:titleId": "b2b-person-components##title",
+  "meta:descriptionId": "b2b-person-components##description"
 }

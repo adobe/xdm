@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Demographic information such as name, gender, and birth date of an individual.",
   "definitions": {
     "profile-person-details": {
@@ -22,7 +26,9 @@
         "xdm:person": {
           "title": "Person",
           "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "An individual actor, contact, or owner."
+          "description": "An individual actor, contact, or owner.",
+          "meta:titleId": "profile-person-details##xdm:person##title",
+          "meta:descriptionId": "profile-person-details##xdm:person##description"
         }
       }
     }
@@ -36,5 +42,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-person-details##title",
+  "meta:descriptionId": "profile-person-details##description"
 }

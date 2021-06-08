@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Marketing campaign information such as campaign group, name, and tracking code.",
   "definitions": {
     "experienceevent-marketing": {
@@ -22,7 +26,9 @@
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description": "Tracks offer impression and social network interactions."
+          "description": "Tracks offer impression and social network interactions.",
+          "meta:titleId": "experienceevent-marketing##xdm:marketing##title",
+          "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description"
         }
       }
     }
@@ -36,5 +42,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-marketing##title",
+  "meta:descriptionId": "experienceevent-marketing##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
   "definitions": {
     "journeyai-engagement-scores": {
@@ -34,38 +36,56 @@
                     "https://ns.adobe.com/experience/intelligentServices/clickEngagementScore": {
                       "title": "Click Engagement Score",
                       "description": "This score represents the probability for a customer to click on links in an email.",
-                      "type": "number"
+                      "type": "number",
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##title",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##description"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/openEnagementScore": {
                       "title": "Open Engagement Score",
                       "description": "This score represents the probability of a customer to open an email.",
-                      "type": "number"
+                      "type": "number",
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##title",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##description"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/retentionLevel": {
                       "title": "Retention Level",
                       "description": "Retention level is a qualitative categorization of customer's likelihood of staying subscribed to the email list.",
-                      "type": "string"
+                      "type": "string",
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##title",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##description"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/retentionPercentRank": {
                       "title": "Retention Percent Rank",
                       "description": "Retention percent rank is a percentile rank of the likelihood of staying subscribed to the email list.",
-                      "type": "number"
+                      "type": "number",
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##title",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##description"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability": {
                       "title": "Unsubscription Probability",
                       "description": "Unsubscription probability is the probability of a recipient to unsubscribe from email channel conditioned on email opened.",
-                      "type": "number"
+                      "type": "number",
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description"
                     }
-                  }
+                  },
+                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title",
+                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##description"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo": {
                   "title": "Engagement Scores Info",
                   "description": "This information contains engagement scores model version and scoring date as a concatenated string, e.g. v1.3.0_2020-11-04.",
-                  "type": "string"
+                  "type": "string",
+                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##title",
+                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##description"
                 }
-              }
+              },
+              "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##title",
+              "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##description"
             }
-          }
+          },
+          "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##title",
+          "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##description"
         }
       }
     }
@@ -75,5 +95,7 @@
       "$ref": "#/definitions/journeyai-engagement-scores"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-journeyai-engagementscores##title",
+  "meta:descriptionId": "profile-journeyai-engagementscores##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Destinations Segment Mapping Schema.",
   "definitions": {
     "destination-segment": {
@@ -19,28 +21,38 @@
         "xdm:destinationID": {
           "title": "Destination ID",
           "type": "string",
-          "description": "Unique Identifier for a destination instance"
+          "description": "Unique Identifier for a destination instance",
+          "meta:titleId": "destination-segment##xdm:destinationID##title",
+          "meta:descriptionId": "destination-segment##xdm:destinationID##description"
         },
         "xdm:segmentID": {
           "title": "Segment ID",
           "type": "string",
-          "description": "Identity of the segment in the related namespace"
+          "description": "Identity of the segment in the related namespace",
+          "meta:titleId": "destination-segment##xdm:segmentID##title",
+          "meta:descriptionId": "destination-segment##xdm:segmentID##description"
         },
         "xdm:segmentNamespace": {
           "title": "Segment Namespace",
           "type": "string",
-          "description": "Namespace to which the segment belongs"
+          "description": "Namespace to which the segment belongs",
+          "meta:titleId": "destination-segment##xdm:segmentNamespace##title",
+          "meta:descriptionId": "destination-segment##xdm:segmentNamespace##description"
         },
         "xdm:createTime": {
           "title": "Create Time",
           "type": "string",
           "format": "date-time",
-          "description": "The date and UTC time when the activation flow to the destination-segment mapping was createdByID"
+          "description": "The date and UTC time when the activation flow to the destination-segment mapping was createdByID",
+          "meta:titleId": "destination-segment##xdm:createTime##title",
+          "meta:descriptionId": "destination-segment##xdm:createTime##description"
         },
         "xdm:createdByID": {
           "title": "Created User ID",
           "type": "string",
-          "description": "ID of user who created the destination flow"
+          "description": "ID of user who created the destination flow",
+          "meta:titleId": "destination-segment##xdm:createdByID##title",
+          "meta:descriptionId": "destination-segment##xdm:createdByID##description"
         }
       }
     }
@@ -56,5 +68,7 @@
       "$ref": "#/definitions/destination-segment"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "destination-segment##title",
+  "meta:descriptionId": "destination-segment##description"
 }

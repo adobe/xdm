@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
   "description": "Bizible business account details.",
   "definitions": {
     "bizible-account-details": {
@@ -19,12 +21,16 @@
         "bizible:engagementRating": {
           "title": "Engagement Rating",
           "description": "Computed engagement rating for a business account.",
-          "type": "number"
+          "type": "number",
+          "meta:titleId": "bizible-account-details##bizible:engagementRating##title",
+          "meta:descriptionId": "bizible-account-details##bizible:engagementRating##description"
         },
         "bizible:engagementScore": {
           "title": "Engagement Score",
           "description": "Computed engagement score for a business account.",
-          "type": "number"
+          "type": "number",
+          "meta:titleId": "bizible-account-details##bizible:engagementScore##title",
+          "meta:descriptionId": "bizible-account-details##bizible:engagementScore##description"
         }
       }
     }
@@ -34,5 +40,7 @@
       "$ref": "#/definitions/bizible-account-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "bizible-account-details##title",
+  "meta:descriptionId": "bizible-account-details##description"
 }

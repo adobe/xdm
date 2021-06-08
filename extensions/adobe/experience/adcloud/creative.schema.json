@@ -16,24 +16,31 @@
         "xdm:experienceId": {
           "title": "Experience Identifier",
           "type": "string",
-          "description": "Identifier for the Creative experience."
+          "description": "Identifier for the Creative experience.",
+          "meta:titleId": "creative##xdm:experienceId##title",
+          "meta:descriptionId": "creative##xdm:experienceId##description"
         },
         "xdm:targetingBranchId": {
           "title": "Targeting Branch Identifier",
           "type": "string",
-          "description": "Identifier for the targeting branch."
+          "description": "Identifier for the targeting branch.",
+          "meta:titleId": "creative##xdm:targetingBranchId##title",
+          "meta:descriptionId": "creative##xdm:targetingBranchId##description"
         },
         "xdm:adThemeCreativeId": {
           "title": "Ad Theme Creative Identifier",
           "type": "string",
-          "description": "Identifier for the ad theme creative."
+          "description": "Identifier for the ad theme creative.",
+          "meta:titleId": "creative##xdm:adThemeCreativeId##title",
+          "meta:descriptionId": "creative##xdm:adThemeCreativeId##description"
         },
         "xdm:segments": {
           "title": "Audience Segments Details",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/adcloud/adcloudsegment"
-          }
+          },
+          "meta:titleId": "creative##xdm:segments##title"
         }
       }
     }
@@ -43,5 +50,7 @@
       "$ref": "#/definitions/creative"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "creative##title",
+  "meta:descriptionId": "creative##description"
 }

@@ -30,55 +30,74 @@
           "meta:status": "deprecated",
           "type": "string",
           "title": "Name",
-          "description": "Activity name. The name is displayed in various user interfaces."
+          "description": "Activity name. The name is displayed in various user interfaces.",
+          "meta:titleId": "offer-activity##xdm:name##title",
+          "meta:descriptionId": "offer-activity##xdm:name##description"
         },
         "xdm:status": {
           "meta:status": "deprecated",
           "type": "string",
           "title": "Status",
           "description": "Activity Status",
-          "enum": ["draft", "live", "complete", "archived"],
+          "enum": [
+            "draft",
+            "live",
+            "complete",
+            "archived"
+          ],
           "meta:enum": {
             "draft": "Draft",
             "live": "Live",
             "complete": "Complete",
             "archived": "Archived"
-          }
+          },
+          "meta:titleId": "offer-activity##xdm:status##title",
+          "meta:descriptionId": "offer-activity##xdm:status##description"
         },
         "xdm:startDate": {
           "meta:status": "deprecated",
           "type": "string",
           "format": "date-time",
           "title": "Start Date",
-          "description": "Activity Start Date"
+          "description": "Activity Start Date",
+          "meta:titleId": "offer-activity##xdm:startDate##title",
+          "meta:descriptionId": "offer-activity##xdm:startDate##description"
         },
         "xdm:endDate": {
           "meta:status": "deprecated",
           "type": "string",
           "format": "date-time",
           "title": "End Date",
-          "description": "Activity End Date"
+          "description": "Activity End Date",
+          "meta:titleId": "offer-activity##xdm:endDate##title",
+          "meta:descriptionId": "offer-activity##xdm:endDate##description"
         },
         "xdm:placement": {
           "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Offer Placement",
-          "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement"
+          "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
+          "meta:titleId": "offer-activity##xdm:placement##title",
+          "meta:descriptionId": "offer-activity##xdm:placement##description"
         },
         "xdm:filter": {
           "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Offer Filter",
-          "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter"
+          "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter",
+          "meta:titleId": "offer-activity##xdm:filter##title",
+          "meta:descriptionId": "offer-activity##xdm:filter##description"
         },
         "xdm:fallback": {
           "meta:status": "deprecated",
           "type": "string",
           "format": "uri",
           "title": "Fallback Offer",
-          "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer"
+          "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
+          "meta:titleId": "offer-activity##xdm:fallback##title",
+          "meta:descriptionId": "offer-activity##xdm:fallback##description"
         }
       }
     }
@@ -97,5 +116,7 @@
       "$ref": "#/definitions/offer-activity"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "offer-activity##title",
+  "meta:descriptionId": "offer-activity##description"
 }

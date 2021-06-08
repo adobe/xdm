@@ -12,9 +12,16 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "telecom", "high_tech", "public_sector"]
+    "industry": [
+      "financial_services",
+      "telecom",
+      "high_tech",
+      "public_sector"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Included for any type of support request initiated by the customer.",
   "definitions": {
     "support-request": {
@@ -25,7 +32,9 @@
             "xdm:supportRequestSteps": {
               "title": "Support Request Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:titleId": "experienceevent-support-request##xdm:supportRequestSteps##title",
+              "meta:descriptionId": "experienceevent-support-request##xdm:supportRequestSteps##description"
             }
           }
         }
@@ -38,5 +47,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-support-request##title",
+  "meta:descriptionId": "experienceevent-support-request##description"
 }

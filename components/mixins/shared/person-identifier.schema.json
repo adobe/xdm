@@ -17,7 +17,9 @@
         "xdm:personID": {
           "title": "Person ID",
           "description": "Person unique identifier.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "person-identifier##xdm:personID##title",
+          "meta:descriptionId": "person-identifier##xdm:personID##description"
         }
       }
     }
@@ -28,5 +30,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "person-identifier##title",
+  "meta:descriptionId": "person-identifier##description"
 }

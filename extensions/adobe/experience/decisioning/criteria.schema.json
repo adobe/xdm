@@ -24,7 +24,9 @@
           "description": "Defines a set of decision criteria where each contains a set of constraints.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/criterion-details"
-          }
+          },
+          "meta:titleId": "criteria##https://ns.adobe.com/experience/decisioning/criteria##title",
+          "meta:descriptionId": "criteria##https://ns.adobe.com/experience/decisioning/criteria##description"
         }
       }
     }
@@ -34,5 +36,7 @@
       "$ref": "#/definitions/decision-criteria"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "criteria##title",
+  "meta:descriptionId": "criteria##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
   "description": "XDM Business Account relationships for one data source.",
   "definitions": {
     "account-components": {
@@ -24,31 +26,42 @@
               "xdm:sourceAccountID": {
                 "title": "Source Account ID",
                 "description": "Source account ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountID##title",
+                "meta:descriptionId": "account-components##xdm:sourceAccountID##description"
               },
               "xdm:sourceAccountParentID": {
                 "title": "Source Parent Account",
                 "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountParentID##title",
+                "meta:descriptionId": "account-components##xdm:sourceAccountParentID##description"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceExternalID##title",
+                "meta:descriptionId": "account-components##xdm:sourceExternalID##description"
               },
               "xdm:sourcePartnerAccountID": {
                 "title": "Source Partner Account Id",
                 "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title",
+                "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description"
               },
               "xdm:sourceAccountOwnerID": {
                 "title": "Account Owner Id",
                 "description": "Account owner ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountOwnerID##title",
+                "meta:descriptionId": "account-components##xdm:sourceAccountOwnerID##description"
               },
               "xdm:segmentationAttributes": {
                 "title": "Account Segmentation Properties",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account#/definitions/b2b-account-segmentation"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account#/definitions/b2b-account-segmentation",
+                "meta:titleId": "account-components##xdm:segmentationAttributes##title"
               }
             }
           }
@@ -62,5 +75,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-02"
+  "meta:createdDate": "2020-09-02",
+  "meta:titleId": "account-components##title",
+  "meta:descriptionId": "account-components##description"
 }

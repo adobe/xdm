@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Search related information such as search engine, paid search, keywords, and position.",
   "definitions": {
     "experienceevent-search": {
@@ -19,7 +21,9 @@
         "xdm:search": {
           "title": "Search",
           "$ref": "https://ns.adobe.com/xdm/context/search",
-          "description": "The information related to web or mobile search."
+          "description": "The information related to web or mobile search.",
+          "meta:titleId": "experienceevent-search##xdm:search##title",
+          "meta:descriptionId": "experienceevent-search##xdm:search##description"
         }
       }
     }
@@ -33,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-search##title",
+  "meta:descriptionId": "experienceevent-search##description"
 }

@@ -18,7 +18,9 @@
         "xdm:description": {
           "type": "string",
           "title": "Description",
-          "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it."
+          "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it.",
+          "meta:titleId": "profile-constraint-details##xdm:description##title",
+          "meta:descriptionId": "profile-constraint-details##xdm:description##description"
         },
         "xdm:profileConstraintType": {
           "type": "string",
@@ -38,13 +40,17 @@
             "rules": "The profile constraint is expressed as a number of different rules, e.g. eligibility, applicability, suitability, which all must evaluate to true before the constrained action is allowed"
           },
           "default": "none",
-          "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships."
+          "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships.",
+          "meta:titleId": "profile-constraint-details##xdm:profileConstraintType##title",
+          "meta:descriptionId": "profile-constraint-details##xdm:profileConstraintType##description"
         },
         "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri-reference",
           "title": "Eligibility Rule",
-          "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule"
+          "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule",
+          "meta:titleId": "profile-constraint-details##xdm:eligibilityRule##title",
+          "meta:descriptionId": "profile-constraint-details##xdm:eligibilityRule##description"
         },
         "xdm:segmentIdentities": {
           "title": "Segment Identifiers",
@@ -52,7 +58,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
-          }
+          },
+          "meta:titleId": "profile-constraint-details##xdm:segmentIdentities##title",
+          "meta:descriptionId": "profile-constraint-details##xdm:segmentIdentities##description"
         }
       }
     }
@@ -62,5 +70,7 @@
       "$ref": "#/definitions/profile-constraint-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-constraint-details##title",
+  "meta:descriptionId": "profile-constraint-details##description"
 }

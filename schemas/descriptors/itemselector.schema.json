@@ -22,10 +22,14 @@
               "title": "Index",
               "type": "integer",
               "description": "When present, indicates the item at this array index should be selected.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "itemselector##xdm:index##title",
+              "meta:descriptionId": "itemselector##xdm:index##description"
             }
           },
-          "required": ["xdm:index"]
+          "required": [
+            "xdm:index"
+          ]
         },
         {
           "type": "object",
@@ -34,10 +38,14 @@
               "title": "ID",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @id value should be selected."
+              "description": "When present, indicates the item with this @id value should be selected.",
+              "meta:titleId": "itemselector##xdm:id##title",
+              "meta:descriptionId": "itemselector##xdm:id##description"
             }
           },
-          "required": ["xdm:id"]
+          "required": [
+            "xdm:id"
+          ]
         },
         {
           "type": "object",
@@ -46,10 +54,14 @@
               "title": "Type",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @type value should be selected."
+              "description": "When present, indicates the item with this @type value should be selected.",
+              "meta:titleId": "itemselector##xdm:type##title",
+              "meta:descriptionId": "itemselector##xdm:type##description"
             }
           },
-          "required": ["xdm:type"]
+          "required": [
+            "xdm:type"
+          ]
         },
         {
           "type": "object",
@@ -58,10 +70,14 @@
               "title": "Schema",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item which conforms to this schema URI should be selected."
+              "description": "When present, indicates the item which conforms to this schema URI should be selected.",
+              "meta:titleId": "itemselector##xdm:schema##title",
+              "meta:descriptionId": "itemselector##xdm:schema##description"
             }
           },
-          "required": ["xdm:schema"]
+          "required": [
+            "xdm:schema"
+          ]
         }
       ]
     }
@@ -72,5 +88,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "itemselector##title",
+  "meta:descriptionId": "itemselector##description"
 }

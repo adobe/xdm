@@ -12,7 +12,9 @@
   "description": "Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
@@ -104,5 +106,7 @@
       "$ref": "#/definitions/adcloud-experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "adcloud-experienceevent##title",
+  "meta:descriptionId": "adcloud-experienceevent##description"
 }

@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Advertising data such as clicks, completes, impressions, and conversions.",
   "definitions": {
     "experienceevent-advertising": {
@@ -22,7 +26,9 @@
         "xdm:advertising": {
           "title": "Advertising",
           "$ref": "https://ns.adobe.com/xdm/context/advertising",
-          "description": "Information related to advertising impressions, clickthroughs, and attribution."
+          "description": "Information related to advertising impressions, clickthroughs, and attribution.",
+          "meta:titleId": "experienceevent-advertising##xdm:advertising##title",
+          "meta:descriptionId": "experienceevent-advertising##xdm:advertising##description"
         }
       }
     }
@@ -36,5 +42,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-advertising##title",
+  "meta:descriptionId": "experienceevent-advertising##description"
 }

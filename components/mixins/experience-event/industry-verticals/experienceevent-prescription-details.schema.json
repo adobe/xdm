@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["health_and_life_sciences"]
+    "industry": [
+      "health_and_life_sciences"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "",
   "definitions": {
     "prescription-details": {
@@ -25,33 +29,45 @@
             "xdm:deliveryEligible": {
               "title": "Delivery Eligible",
               "type": "boolean",
-              "description": "Indicates if the prescription available to be delivered."
+              "description": "Indicates if the prescription available to be delivered.",
+              "meta:titleId": "experienceevent-prescription-details##xdm:deliveryEligible##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:deliveryEligible##description"
             },
             "xdm:ID": {
               "title": "ID",
               "type": "string",
-              "description": "ID for the prescription being filled."
+              "description": "ID for the prescription being filled.",
+              "meta:titleId": "experienceevent-prescription-details##xdm:ID##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:ID##description"
             },
             "xdm:refill": {
               "title": "Refill",
               "type": "boolean",
-              "description": "Indicates if the prescription is new or being refilled."
+              "description": "Indicates if the prescription is new or being refilled.",
+              "meta:titleId": "experienceevent-prescription-details##xdm:refill##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:refill##description"
             },
             "xdm:refillsRemaining": {
               "title": "Refills Remaining",
               "type": "integer",
-              "description": "Count of the remaining prescription refills available."
+              "description": "Count of the remaining prescription refills available.",
+              "meta:titleId": "experienceevent-prescription-details##xdm:refillsRemaining##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:refillsRemaining##description"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-prescription-details##xdm:steps##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:steps##description"
             },
             "xdm:upload": {
               "title": "Upload",
               "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
-              "description": "Extension of the File Transfer data type."
+              "description": "Extension of the File Transfer data type.",
+              "meta:titleId": "experienceevent-prescription-details##xdm:upload##title",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:upload##description"
             }
           }
         }
@@ -64,5 +80,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-22"
+  "meta:createdDate": "2021-02-22",
+  "meta:titleId": "experienceevent-prescription-details##title",
+  "meta:descriptionId": "experienceevent-prescription-details##description"
 }

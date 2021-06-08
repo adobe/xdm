@@ -19,17 +19,23 @@
           "title": "Decision Option Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the decision option."
+          "description": "A unique identifier for the decision option.",
+          "meta:titleId": "option-detail##xdm:id##title",
+          "meta:descriptionId": "option-detail##xdm:id##description"
         },
         "repo:etag": {
           "title": "Decision Option ETag",
           "type": "string",
-          "description": "The revision that the decision option object was at when the snapshot was taken."
+          "description": "The revision that the decision option object was at when the snapshot was taken.",
+          "meta:titleId": "option-detail##repo:etag##title",
+          "meta:descriptionId": "option-detail##repo:etag##description"
         },
         "xdm:name": {
           "type": "string",
           "title": "Decision Option Name",
-          "description": "Option name. The name is displayed in various user interfaces."
+          "description": "Option name. The name is displayed in various user interfaces.",
+          "meta:titleId": "option-detail##xdm:name##title",
+          "meta:descriptionId": "option-detail##xdm:name##description"
         },
         "xdm:tags": {
           "type": "array",
@@ -38,8 +44,11 @@
           "items": {
             "type": "string",
             "format": "uri-reference",
-            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag"
-          }
+            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag",
+            "meta:descriptionId": "option-detail##items##description"
+          },
+          "meta:titleId": "option-detail##xdm:tags##title",
+          "meta:descriptionId": "option-detail##xdm:tags##description"
         },
         "xdm:characteristics": {
           "title": "Decision Option Characteristics",
@@ -48,22 +57,29 @@
           "meta:xdmType": "map",
           "additionalProperties": {
             "type": "string",
-            "description": "Value of the property."
-          }
+            "description": "Value of the property.",
+            "meta:descriptionId": "option-detail##additionalProperties##description"
+          },
+          "meta:titleId": "option-detail##xdm:characteristics##title",
+          "meta:descriptionId": "option-detail##xdm:characteristics##description"
         },
         "xdm:score": {
           "title": "Decision Option Score",
           "description": "Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.",
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "meta:titleId": "option-detail##xdm:score##title",
+          "meta:descriptionId": "option-detail##xdm:score##description"
         },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The total number a particular option was proposed so far across all profiles."
+          "description": "The total number a particular option was proposed so far across all profiles.",
+          "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsTotal##description"
         },
         "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile."
+          "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
+          "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description"
         }
       }
     }
@@ -76,8 +92,12 @@
       "$ref": "#/definitions/option-detail-datatype"
     },
     {
-      "required": ["xdm:id"]
+      "required": [
+        "xdm:id"
+      ]
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "option-detail##title",
+  "meta:descriptionId": "option-detail##description"
 }

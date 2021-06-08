@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Phone number such as fax, mobile, home, and work.",
   "definitions": {
     "profile-phones": {
@@ -19,22 +21,30 @@
         "xdm:homePhone": {
           "title": "Home Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Home phone number."
+          "description": "Home phone number.",
+          "meta:titleId": "profile-phones##xdm:homePhone##title",
+          "meta:descriptionId": "profile-phones##xdm:homePhone##description"
         },
         "xdm:mobilePhone": {
           "title": "Mobile Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Mobile phone number."
+          "description": "Mobile phone number.",
+          "meta:titleId": "profile-phones##xdm:mobilePhone##title",
+          "meta:descriptionId": "profile-phones##xdm:mobilePhone##description"
         },
         "xdm:workPhone": {
           "title": "Work Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Work phone number."
+          "description": "Work phone number.",
+          "meta:titleId": "profile-phones##xdm:workPhone##title",
+          "meta:descriptionId": "profile-phones##xdm:workPhone##description"
         },
         "xdm:faxPhone": {
           "title": "Fax Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Fax phone number."
+          "description": "Fax phone number.",
+          "meta:titleId": "profile-phones##xdm:faxPhone##title",
+          "meta:descriptionId": "profile-phones##xdm:faxPhone##description"
         }
       }
     }
@@ -48,5 +58,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-phones##title",
+  "meta:descriptionId": "profile-phones##description"
 }

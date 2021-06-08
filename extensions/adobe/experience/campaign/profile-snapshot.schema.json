@@ -16,22 +16,30 @@
         "xdm:person": {
           "title": "Person",
           "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "An individual actor, contact, or owner."
+          "description": "An individual actor, contact, or owner.",
+          "meta:titleId": "profile-snapshot##xdm:person##title",
+          "meta:descriptionId": "profile-snapshot##xdm:person##description"
         },
         "xdm:directMarketingAddress": {
           "title": "Direct Marketing Address",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
-          "description": "Direct Marketing postal address."
+          "description": "Direct Marketing postal address.",
+          "meta:titleId": "profile-snapshot##xdm:directMarketingAddress##title",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingAddress##description"
         },
         "xdm:directMarketingEmail": {
           "title": "Direct Marketing Email",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
-          "description": "Direct Marketing email address."
+          "description": "Direct Marketing email address.",
+          "meta:titleId": "profile-snapshot##xdm:directMarketingEmail##title",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingEmail##description"
         },
         "xdm:directMarketingPhone": {
           "title": "Direct Marketing Phone",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
-          "description": "Direct Marketing phone number."
+          "description": "Direct Marketing phone number.",
+          "meta:titleId": "profile-snapshot##xdm:directMarketingPhone##title",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingPhone##description"
         },
         "xdm:pushNotificationTokens": {
           "title": "Push Notification Tokens",
@@ -39,7 +47,9 @@
           "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
-          }
+          },
+          "meta:titleId": "profile-snapshot##xdm:pushNotificationTokens##title",
+          "meta:descriptionId": "profile-snapshot##xdm:pushNotificationTokens##description"
         }
       }
     }
@@ -49,5 +59,7 @@
       "$ref": "#/definitions/profile-snapshot"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-snapshot##title",
+  "meta:descriptionId": "profile-snapshot##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
     "decisioning-experienceevent-all": {
@@ -23,7 +25,9 @@
           "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details"
-          }
+          },
+          "meta:titleId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##title",
+          "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description"
         }
       }
     }
@@ -39,5 +43,7 @@
       "$ref": "#/definitions/decisioning-experienceevent-all"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "proposition-interaction##title",
+  "meta:descriptionId": "proposition-interaction##description"
 }

@@ -24,7 +24,9 @@
         "xdm:name": {
           "type": "string",
           "title": "Tag Name",
-          "description": "The tag's external human-readable representation to the clients."
+          "description": "The tag's external human-readable representation to the clients.",
+          "meta:titleId": "tag##xdm:name##title",
+          "meta:descriptionId": "tag##xdm:name##description"
         }
       }
     }
@@ -34,8 +36,12 @@
       "$ref": "#/definitions/tag"
     },
     {
-      "required": ["xdm:name"]
+      "required": [
+        "xdm:name"
+      ]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "tag##title",
+  "meta:descriptionId": "tag##description"
 }

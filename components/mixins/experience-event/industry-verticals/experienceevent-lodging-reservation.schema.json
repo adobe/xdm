@@ -11,20 +11,24 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
+  ],
   "meta:tags": {
     "industry": [
       "travel_and_hospitality"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Collects all details specific to a lodging reservation.",
   "definitions": {
     "reservations": {
       "properties": {
         "xdm:reservations": {
           "type": "object",
-		  "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
+          "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
           "properties": {
             "xdm:lodgingReservations": {
               "type": "array",
@@ -34,94 +38,130 @@
                   "xdm:agentID": {
                     "title": "Agent ID",
                     "type": "string",
-                    "description": "Agent ID associated with the hotel booking."
+                    "description": "Agent ID associated with the hotel booking.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:agentID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:agentID##description"
                   },
                   "xdm:averageDailyPrice": {
                     "title": "Average Daily Price",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                    "description": "Average daily price of the hotel room."
+                    "description": "Average daily price of the hotel room.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:averageDailyPrice##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:averageDailyPrice##description"
                   },
                   "xdm:basePrice": {
                     "title": "Base Price",
                     "type": "string",
-                    "description": "Base price before any discounts are added. "
+                    "description": "Base price before any discounts are added. ",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:basePrice##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:basePrice##description"
                   },
                   "xdm:bookingID": {
                     "title": "Booking ID",
                     "type": "string",
-                    "description": "Booking ID associated with the hotel booking. "
+                    "description": "Booking ID associated with the hotel booking. ",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:bookingID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:bookingID##description"
                   },
                   "xdm:rackrate": {
                     "title": "Rack Rate",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                    "description": "Cost for the same day reservation without prior booking arrangements."
+                    "description": "Cost for the same day reservation without prior booking arrangements.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:rackrate##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:rackrate##description"
                   },
                   "xdm:checkInDate": {
                     "title": "Check-In Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The check-in date of the for the room reservation."
+                    "description": "The check-in date of the for the room reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:checkInDate##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:checkInDate##description"
                   },
                   "xdm:checkOutDate": {
                     "title": "Check-Out Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The check-out date of the for the room reservation."
+                    "description": "The check-out date of the for the room reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:checkOutDate##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:checkOutDate##description"
                   },
                   "xdm:couponCode": {
                     "title": "Coupon Code",
                     "type": "string",
-                    "description": "Coupon code associated with the hotel booking."
+                    "description": "Coupon code associated with the hotel booking.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:couponCode##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:couponCode##description"
                   },
                   "xdm:discountPercent": {
                     "title": "Discount Percent",
                     "type": "number",
-                    "description": "Discount percentage associated with the booking."
+                    "description": "Discount percentage associated with the booking.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:discountPercent##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:discountPercent##description"
                   },
                   "xdm:freeCancelation": {
                     "title": "Free Cancelation",
                     "type": "boolean",
-                    "description": "Yes/no if the room has a free cancellation."
+                    "description": "Yes/no if the room has a free cancellation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:freeCancelation##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:freeCancelation##description"
                   },
                   "xdm:guestID": {
                     "title": "Guest ID",
                     "type": "string",
-                    "description": "Guest ID associated with the hotel booking."
+                    "description": "Guest ID associated with the hotel booking.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:guestID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:guestID##description"
                   },
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
-                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:loyaltyID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:loyaltyID##description"
                   },
                   "xdm:numberOfRooms": {
                     "title": "Number of Rooms",
                     "type": "integer",
-                    "description": "Captures the number of rooms associated with the reservation."
+                    "description": "Captures the number of rooms associated with the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:numberOfRooms##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:numberOfRooms##description"
                   },
                   "xdm:propertyID": {
                     "title": "Property ID",
                     "type": "string",
-                    "description": "Identifier of the hotel/resort for the reservation."
+                    "description": "Identifier of the hotel/resort for the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:propertyID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:propertyID##description"
                   },
                   "xdm:propertyName": {
                     "title": "Property Name",
                     "type": "string",
-                    "description": "Name of the hotel/resort for the reservation."
+                    "description": "Name of the hotel/resort for the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:propertyName##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:propertyName##description"
                   },
                   "xdm:ratePlan": {
                     "title": "Rate Plan",
                     "type": "string",
-                    "description": "The rate deal on which the room was sold."
+                    "description": "The rate deal on which the room was sold.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:ratePlan##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:ratePlan##description"
                   },
                   "xdm:refundable": {
                     "title": "Refundable",
                     "type": "boolean",
-                    "description": "Yes/no if the room is refundable."
+                    "description": "Yes/no if the room is refundable.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:refundable##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:refundable##description"
                   },
                   "xdm:reservationStatus": {
                     "title": "Reservation Status",
                     "type": "string",
-                    "description": "update"
+                    "description": "update",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:reservationStatus##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:reservationStatus##description"
                   },
                   "xdm:roomAccessibilityType": {
                     "title": "Room Accessibility Type",
@@ -131,12 +171,16 @@
                       "hearing": "Hearing",
                       "other": "Other"
                     },
-                    "description": "Type of accessible room, such as mobility, hearing, or other."
+                    "description": "Type of accessible room, such as mobility, hearing, or other.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomAccessibilityType##description"
                   },
                   "xdm:roomCapacity": {
                     "title": "Room Capacity",
                     "type": "integer",
-                    "description": "Number of people the hotel room holds."
+                    "description": "Number of people the hotel room holds.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:roomCapacity##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomCapacity##description"
                   },
                   "xdm:roomType": {
                     "title": "Room Type",
@@ -148,64 +192,88 @@
                       "meeting room": "Meeting Room",
                       "other": "Other"
                     },
-                    "description": "Captures the type of room being reserved."
+                    "description": "Captures the type of room being reserved.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:roomType##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomType##description"
                   },
                   "xdm:smoking": {
                     "title": "Smoking",
                     "type": "boolean",
-                    "description": "Yes/no if the room allows smoking."
+                    "description": "Yes/no if the room allows smoking.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:smoking##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:smoking##description"
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
                     "type": "integer",
-                    "description": "Tracked when a reservation has been cancelled."
+                    "description": "Tracked when a reservation has been cancelled.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:cancellation##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:cancellation##description"
                   },
                   "xdm:confirmationNumber": {
                     "title": "Confirmation Number",
                     "type": "string",
-                    "description": "Tracks the reservation confirmation number/identifier."
+                    "description": "Tracks the reservation confirmation number/identifier.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:confirmationNumber##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:confirmationNumber##description"
                   },
                   "xdm:created": {
                     "title": "Created",
                     "type": "integer",
-                    "description": "Tracked when a reservation has been created."
+                    "description": "Tracked when a reservation has been created.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:created##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:created##description"
                   },
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
                     "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-                    "pattern": "^[A-Z]{3}$"
+                    "pattern": "^[A-Z]{3}$",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:currencyCode##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:currencyCode##description"
                   },
                   "xdm:ID": {
                     "title": "ID",
                     "type": "string",
-                    "description": "Tracks the reservation number/identifier."
+                    "description": "Tracks the reservation number/identifier.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:ID##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:ID##description"
                   },
                   "xdm:length": {
                     "title": "Length",
                     "type": "integer",
-                    "description": "Tracks the total number of days for a reservation."
+                    "description": "Tracks the total number of days for a reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:length##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:length##description"
                   },
                   "xdm:modification": {
                     "title": "Modification",
                     "type": "integer",
-                    "description": "Captured when a reservation has been modified."
+                    "description": "Captured when a reservation has been modified.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:modification##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:modification##description"
                   },
                   "xdm:modificationDate": {
                     "title": "Modification Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Tracks when a reservation has been modified."
+                    "description": "Tracks when a reservation has been modified.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:modificationDate##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:modificationDate##description"
                   },
                   "xdm:numberOfAdults": {
                     "title": "Number of Adults",
                     "type": "integer",
-                    "description": "Captures the number of adults associated with the reservation."
+                    "description": "Captures the number of adults associated with the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:numberOfAdults##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:numberOfAdults##description"
                   },
                   "xdm:numberOfChildren": {
                     "title": "Number of Children",
                     "type": "integer",
-                    "description": "Captures the number of children associated with the reservation."
+                    "description": "Captures the number of children associated with the reservation.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:numberOfChildren##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:numberOfChildren##description"
                   },
                   "xdm:purpose": {
                     "title": "Purpose",
@@ -214,7 +282,9 @@
                       "business": "Business",
                       "personal": "Personal"
                     },
-                    "description": "Tracks the purpose of the reservation, typically either business or personal."
+                    "description": "Tracks the purpose of the reservation, typically either business or personal.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:purpose##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:purpose##description"
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -224,7 +294,9 @@
                       "oneWay": "One Way",
                       "multiCity": "Multi-City"
                     },
-                    "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+                    "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+                    "meta:titleId": "experienceevent-lodging-reservation##xdm:tripType##title",
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:tripType##description"
                   },
                   "xdm:lodgingCheckIn": {
                     "type": "object",
@@ -234,49 +306,67 @@
                         "title": "Check In Steps",
                         "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                         "description": "Extension of toolUsage data type.",
-                        "meta:status": "deprecated"
+                        "meta:status": "deprecated",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:checkInSteps##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:checkInSteps##description"
                       },
                       "xdm:userSelectedRoom": {
                         "title": "Guest Selected Room",
                         "type": "boolean",
-                        "description": "Captures if the guest selected their room at check in."
+                        "description": "Captures if the guest selected their room at check in.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:userSelectedRoom##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:userSelectedRoom##description"
                       },
                       "xdm:oneRoomCheckIn": {
                         "title": "One Room Check In",
                         "type": "integer",
-                        "description": "Captured upon completion of check in when there is only one room available at that time."
+                        "description": "Captured upon completion of check in when there is only one room available at that time.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:oneRoomCheckIn##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:oneRoomCheckIn##description"
                       },
                       "xdm:noRoomCheckIn": {
                         "title": "No Room Check In",
                         "type": "integer",
-                        "description": "Captured upon completion of check in when there is only one room available at that time."
+                        "description": "Captured upon completion of check in when there is only one room available at that time.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:noRoomCheckIn##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:noRoomCheckIn##description"
                       },
                       "xdm:digitalKey": {
                         "title": "Digital Key Selected",
                         "type": "integer",
-                        "description": "Tracks when a user selects the use of a digital key upon check in."
+                        "description": "Tracks when a user selects the use of a digital key upon check in.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:digitalKey##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:digitalKey##description"
                       },
                       "xdm:lateCheckInRequested": {
                         "title": "Late Check In Requested",
                         "type": "integer",
-                        "description": "Tracks when a user requests a check in later than normal check in hours."
+                        "description": "Tracks when a user requests a check in later than normal check in hours.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:lateCheckInRequested##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:lateCheckInRequested##description"
                       },
                       "xdm:earlyCheckInRequested": {
                         "title": "Early Check In Requested",
                         "type": "integer",
-                        "description": "Tracks when a user requests a check in earlier than normal check in hours."
+                        "description": "Tracks when a user requests a check in earlier than normal check in hours.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:earlyCheckInRequested##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:earlyCheckInRequested##description"
                       },
                       "xdm:roomKeys": {
                         "title": "Room Keys",
                         "type": "integer",
-                        "description": "Captures the number of standard room keys provided at check in."
+                        "description": "Captures the number of standard room keys provided at check in.",
+                        "meta:titleId": "experienceevent-lodging-reservation##xdm:roomKeys##title",
+                        "meta:descriptionId": "experienceevent-lodging-reservation##xdm:roomKeys##description"
                       }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-lodging-reservation##xdm:lodgingCheckIn##description"
                   }
                 }
               }
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-lodging-reservation##xdm:reservations##description"
         }
       }
     }
@@ -290,5 +380,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-10"
+  "meta:createdDate": "2021-02-10",
+  "meta:titleId": "experienceevent-lodging-reservation##title",
+  "meta:descriptionId": "experienceevent-lodging-reservation##description"
 }

@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/campaign-member"
+  ],
   "description": "An XDM Business Campaign Member.",
   "definitions": {
     "campaign-member-details": {
@@ -20,75 +22,103 @@
         "xdm:memberStatus": {
           "title": "Campaign Member Status",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:memberStatus##title",
+          "meta:descriptionId": "campaign-member-details##xdm:memberStatus##description"
         },
         "xdm:memberStatusReason": {
           "title": "Campaign Member Status Reason",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:memberStatusReason##title",
+          "meta:descriptionId": "campaign-member-details##xdm:memberStatusReason##description"
         },
         "xdm:nurtureTrackName": {
           "title": "Nurture Track Name",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:nurtureTrackName##title",
+          "meta:descriptionId": "campaign-member-details##xdm:nurtureTrackName##description"
         },
         "xdm:nurtureCadence": {
           "title": "Nurture Cadence",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:nurtureCadence##title",
+          "meta:descriptionId": "campaign-member-details##xdm:nurtureCadence##description"
         },
         "xdm:isExhausted": {
           "title": "isExhausted",
           "description": "",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "campaign-member-details##xdm:isExhausted##title",
+          "meta:descriptionId": "campaign-member-details##xdm:isExhausted##description"
         },
         "xdm:webinarRegistrationID": {
           "title": "Webinar Registration ID",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:webinarRegistrationID##title",
+          "meta:descriptionId": "campaign-member-details##xdm:webinarRegistrationID##description"
         },
         "xdm:webinarConfirmationUrl": {
           "title": "Webinar Confirmation Url",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:webinarConfirmationUrl##title",
+          "meta:descriptionId": "campaign-member-details##xdm:webinarConfirmationUrl##description"
         },
         "xdm:acquiredByCampaignID": {
           "title": "Acquired By CampaignID",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title",
+          "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description"
         },
         "xdm:hasReachedSuccess": {
           "title": "Has Reached Success",
           "description": "",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "campaign-member-details##xdm:hasReachedSuccess##title",
+          "meta:descriptionId": "campaign-member-details##xdm:hasReachedSuccess##description"
         },
         "xdm:reachedSuccessDate": {
           "title": "Reached Success Date",
           "description": "",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "campaign-member-details##xdm:reachedSuccessDate##title",
+          "meta:descriptionId": "campaign-member-details##xdm:reachedSuccessDate##description"
         },
         "xdm:membershipDate": {
           "title": "Membership Date",
           "description": "",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "campaign-member-details##xdm:membershipDate##title",
+          "meta:descriptionId": "campaign-member-details##xdm:membershipDate##description"
         },
         "xdm:lastStatus": {
           "title": "Last Status",
           "description": "",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign-member-details##xdm:lastStatus##title",
+          "meta:descriptionId": "campaign-member-details##xdm:lastStatus##description"
         },
         "xdm:hasResponded": {
           "title": "Has Responded",
           "description": "Record whether the member has responded to the workflow stage",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "campaign-member-details##xdm:hasResponded##title",
+          "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description"
         },
         "xdm:firstRespondedDate": {
           "title": "First Responded Date",
           "description": "Date captured on which response was submitted",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title",
+          "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description"
         }
       }
     }
@@ -99,5 +129,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-08-18"
+  "meta:createdDate": "2020-08-18",
+  "meta:titleId": "campaign-member-details##title",
+  "meta:descriptionId": "campaign-member-details##description"
 }

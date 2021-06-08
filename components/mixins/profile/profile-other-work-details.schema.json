@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This mixin is used to capture information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
   "definitions": {
     "profile-other-work-details": {
@@ -19,12 +21,16 @@
         "xdm:otherAddress": {
           "title": "Other Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Other/Alternate postal address of the person."
+          "description": "Other/Alternate postal address of the person.",
+          "meta:titleId": "profile-other-work-details##xdm:otherAddress##title",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description"
         },
         "xdm:otherPhone": {
           "title": "Other Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Other/Alternate phone number of the person."
+          "description": "Other/Alternate phone number of the person.",
+          "meta:titleId": "profile-other-work-details##xdm:otherPhone##title",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description"
         },
         "xdm:extendedWorkDetails": {
           "type": "object",
@@ -37,19 +43,26 @@
                 "xdm:name": {
                   "title": "Assistant Name",
                   "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                  "description": "Person's assistant full name."
+                  "description": "Person's assistant full name.",
+                  "meta:titleId": "profile-other-work-details##xdm:name##title",
+                  "meta:descriptionId": "profile-other-work-details##xdm:name##description"
                 },
                 "xdm:phone": {
                   "title": "Assistant Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                  "description": "Person's assistant phone number."
+                  "description": "Person's assistant phone number.",
+                  "meta:titleId": "profile-other-work-details##xdm:phone##title",
+                  "meta:descriptionId": "profile-other-work-details##xdm:phone##description"
                 }
-              }
+              },
+              "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title"
             },
             "xdm:reportsToID": {
               "title": "Reports To Id",
               "description": "Identifier of the Reporting Manager.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "profile-other-work-details##xdm:reportsToID##title",
+              "meta:descriptionId": "profile-other-work-details##xdm:reportsToID##description"
             },
             "xdm:departments": {
               "title": "Department Name",
@@ -57,20 +70,27 @@
               "type": "array",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "profile-other-work-details##xdm:departments##title",
+              "meta:descriptionId": "profile-other-work-details##xdm:departments##description"
             },
             "xdm:jobTitle": {
               "title": "Job Title",
               "description": "Job title of the person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "profile-other-work-details##xdm:jobTitle##title",
+              "meta:descriptionId": "profile-other-work-details##xdm:jobTitle##description"
             },
             "xdm:photoUrl": {
               "title": "Photo Url",
               "description": "Photo url of the person.",
               "type": "string",
-              "format": "uri"
+              "format": "uri",
+              "meta:titleId": "profile-other-work-details##xdm:photoUrl##title",
+              "meta:descriptionId": "profile-other-work-details##xdm:photoUrl##description"
             }
-          }
+          },
+          "meta:titleId": "profile-other-work-details##xdm:extendedWorkDetails##title"
         }
       }
     }
@@ -84,5 +104,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-08-18"
+  "meta:createdDate": "2020-08-18",
+  "meta:titleId": "profile-other-work-details##title",
+  "meta:descriptionId": "profile-other-work-details##description"
 }

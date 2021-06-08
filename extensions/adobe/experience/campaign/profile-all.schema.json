@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Adobe Campaign full extension for Profile",
   "definitions": {
     "profile": {
@@ -24,9 +26,13 @@
             "xdm:emailScore": {
               "title": "Journey AI scores for Email Channel",
               "$ref": "https://ns.adobe.com/experience/campaign/journeyaiscores",
-              "description": "Journey AI open, click and fatigue scores for email channel."
+              "description": "Journey AI open, click and fatigue scores for email channel.",
+              "meta:titleId": "profile-all##xdm:emailScore##title",
+              "meta:descriptionId": "profile-all##xdm:emailScore##description"
             }
-          }
+          },
+          "meta:titleId": "profile-all##xdm:journeyAI##title",
+          "meta:descriptionId": "profile-all##xdm:journeyAI##description"
         },
         "xdm:notificationSubscriptions": {
           "title": "Adobe Campaign Notification Subscriptions",
@@ -34,7 +40,9 @@
           "description": "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for specific notifications.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/campaign/notificationsubscription"
-          }
+          },
+          "meta:titleId": "profile-all##xdm:notificationSubscriptions##title",
+          "meta:descriptionId": "profile-all##xdm:notificationSubscriptions##description"
         }
       }
     }
@@ -44,5 +52,7 @@
       "$ref": "#/definitions/profile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-all##title",
+  "meta:descriptionId": "profile-all##description"
 }

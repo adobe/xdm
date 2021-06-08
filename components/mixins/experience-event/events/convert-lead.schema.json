@@ -29,21 +29,29 @@
                 "xdm:assignTo": {
                   "title": "Assign To",
                   "type": "string",
-                  "description": "Sales user converted lead is assigned to."
+                  "description": "Sales user converted lead is assigned to.",
+                  "meta:titleId": "convert-lead##xdm:assignTo##title",
+                  "meta:descriptionId": "convert-lead##xdm:assignTo##description"
                 },
                 "xdm:isSentNotificationEmail": {
                   "title": "Is Sent Notification Email",
                   "type": "boolean",
-                  "description": "Indicates whether assigned sales user received email notification of the converted lead."
+                  "description": "Indicates whether assigned sales user received email notification of the converted lead.",
+                  "meta:titleId": "convert-lead##xdm:isSentNotificationEmail##title",
+                  "meta:descriptionId": "convert-lead##xdm:isSentNotificationEmail##description"
                 },
                 "xdm:convertedStatus": {
                   "title": "Converted Status",
                   "type": "string",
-                  "description": "Converted status of lead."
+                  "description": "Converted status of lead.",
+                  "meta:titleId": "convert-lead##xdm:convertedStatus##title",
+                  "meta:descriptionId": "convert-lead##xdm:convertedStatus##description"
                 }
-              }
+              },
+              "meta:titleId": "convert-lead##xdm:convertLead##title"
             }
-          }
+          },
+          "meta:titleId": "convert-lead##xdm:leadOperation##title"
         }
       }
     }
@@ -54,5 +62,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "convert-lead##title",
+  "meta:descriptionId": "convert-lead##description"
 }

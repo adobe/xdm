@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/product"
+  ],
   "description": "This mixin is used to capture properties related to product measurements.",
   "definitions": {
     "product-measurement": {
@@ -20,17 +22,23 @@
         "xdm:productSize": {
           "title": "Product Size",
           "type": "string",
-          "description": "Standard product size for the product."
+          "description": "Standard product size for the product.",
+          "meta:titleId": "product-measurement##xdm:productSize##title",
+          "meta:descriptionId": "product-measurement##xdm:productSize##description"
         },
         "xdm:unitOfMeasureCode": {
           "title": "Product Unit Of Measure Code",
           "type": "string",
-          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
+          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+          "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title",
+          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description"
         },
         "xdm:unitOfMeasureName": {
           "title": "Product Unit Of Measure Name",
           "type": "string",
-          "description": "Friendly name for product unit of measure."
+          "description": "Friendly name for product unit of measure.",
+          "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title",
+          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description"
         }
       }
     }
@@ -41,5 +49,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-measurement##title",
+  "meta:descriptionId": "product-measurement##description"
 }

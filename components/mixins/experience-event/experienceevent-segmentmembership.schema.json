@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.",
   "definitions": {
     "experienceevent-segmentmembership": {
@@ -23,7 +25,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
-          }
+          },
+          "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMemberships##title",
+          "meta:descriptionId": "experienceevent-segmentmembership##xdm:segmentMemberships##description"
         },
         "xdm:segmentMembership": {
           "title": "Segment Membership Map",
@@ -35,8 +39,10 @@
             "meta:xdmType": "map",
             "additionalProperties": {
               "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-            }
-          }
+            },
+            "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title"
+          },
+          "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title"
         }
       }
     }
@@ -50,5 +56,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-segmentmembership##title",
+  "meta:descriptionId": "experienceevent-segmentmembership##description"
 }

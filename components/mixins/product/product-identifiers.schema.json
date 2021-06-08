@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/product"
+  ],
   "description": "This mixin is used to capture properties related to product identifiers generic to all industries.",
   "definitions": {
     "product-identifiers": {
@@ -20,18 +22,24 @@
         "xdm:productSKU": {
           "title": "Product SKU",
           "type": "string",
-          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
+          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+          "meta:titleId": "product-identifiers##xdm:productSKU##title",
+          "meta:descriptionId": "product-identifiers##xdm:productSKU##description"
         },
         "xdm:productGTIN": {
           "title": "Product GTIN",
           "type": "string",
-          "description": "Global Trade Item Number of the product."
+          "description": "Global Trade Item Number of the product.",
+          "meta:titleId": "product-identifiers##xdm:productGTIN##title",
+          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description"
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL for the primary product image of the product."
+          "description": "The URL for the primary product image of the product.",
+          "meta:titleId": "product-identifiers##xdm:productImageURL##title",
+          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description"
         },
         "xdm:productSearchKeywords": {
           "title": "Product Search Keywords",
@@ -39,7 +47,9 @@
           "items": {
             "type": "string"
           },
-          "description": "The search keywords associated with the product."
+          "description": "The search keywords associated with the product.",
+          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title",
+          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description"
         }
       }
     }
@@ -50,5 +60,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-identifiers##title",
+  "meta:descriptionId": "product-identifiers##description"
 }

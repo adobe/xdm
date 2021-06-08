@@ -24,17 +24,23 @@
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "Eligibility rule name that is used to locate this object in a search operation."
+          "description": "Eligibility rule name that is used to locate this object in a search operation.",
+          "meta:titleId": "eligibility-rule##xdm:name##title",
+          "meta:descriptionId": "eligibility-rule##xdm:name##description"
         },
         "xdm:valueAsText": {
           "type": "string",
           "title": "Expression over XDM Instances in an Alternate Query Syntax",
-          "description": "Contains the expression over a collection of context XDM instances as a serialized string."
+          "description": "Contains the expression over a collection of context XDM instances as a serialized string.",
+          "meta:titleId": "eligibility-rule##xdm:valueAsText##title",
+          "meta:descriptionId": "eligibility-rule##xdm:valueAsText##description"
         },
         "xdm:value": {
           "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression",
           "title": "Expression over XDM Instances",
-          "description": "Contains the expression tree over a collection of context XDM instances. When the expression evaluates to true the offer referring to this eligibility rule will be included in the decisioning otherwise included. Central context instances include the profile and the experience events associated with the profile."
+          "description": "Contains the expression tree over a collection of context XDM instances. When the expression evaluates to true the offer referring to this eligibility rule will be included in the decisioning otherwise included. Central context instances include the profile and the experience events associated with the profile.",
+          "meta:titleId": "eligibility-rule##xdm:value##title",
+          "meta:descriptionId": "eligibility-rule##xdm:value##description"
         },
         "xdm:modelUsage": {
           "title": "Used Properties",
@@ -42,7 +48,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/experience/offer-management/model-usage"
-          }
+          },
+          "meta:titleId": "eligibility-rule##xdm:modelUsage##title",
+          "meta:descriptionId": "eligibility-rule##xdm:modelUsage##description"
         }
       }
     }
@@ -52,8 +60,14 @@
       "$ref": "#/definitions/eligibility-rule"
     },
     {
-      "required": ["xdm:name", "xdm:value", "xdm:modelUsage"]
+      "required": [
+        "xdm:name",
+        "xdm:value",
+        "xdm:modelUsage"
+      ]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "eligibility-rule##title",
+  "meta:descriptionId": "eligibility-rule##description"
 }

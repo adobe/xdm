@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "End user IDs such as AAID, ACID, MCIDs, email, and phone numbers.",
   "definitions": {
     "experienceevent-enduserids": {
@@ -19,7 +21,9 @@
         "xdm:endUserIDs": {
           "title": "EndUserIDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent."
+          "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+          "meta:titleId": "experienceevent-enduserids##xdm:endUserIDs##title",
+          "meta:descriptionId": "experienceevent-enduserids##xdm:endUserIDs##description"
         }
       }
     }
@@ -33,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-enduserids##title",
+  "meta:descriptionId": "experienceevent-enduserids##description"
 }

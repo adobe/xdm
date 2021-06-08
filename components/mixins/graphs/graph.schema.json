@@ -13,42 +13,56 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/graphs"
+  ],
   "definitions": {
     "graph": {
       "properties": {
         "xdm:graphId": {
           "title": "Graph Identifier",
           "description": "The unique identifier of the identity associated with this graph.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:graphId##title",
+          "meta:descriptionId": "graph##xdm:graphId##description"
         },
         "xdm:label": {
           "title": "Graph Label",
           "description": "Graph label.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:label##title",
+          "meta:descriptionId": "graph##xdm:label##description"
         },
         "xdm:directed": {
           "title": "Directed Graph Indicator",
           "description": "Directed graph indicator.",
           "type": "boolean",
-          "default": true
+          "default": true,
+          "meta:titleId": "graph##xdm:directed##title",
+          "meta:descriptionId": "graph##xdm:directed##description"
         },
         "xdm:graphType": {
           "title": "Graph Type",
           "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:graphType##title",
+          "meta:descriptionId": "graph##xdm:graphType##description"
         },
         "xdm:firstCreatedTimestamp": {
           "title": "Graph Created Date And Time",
           "description": "Time and date this graph was created.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "graph##xdm:firstCreatedTimestamp##title",
+          "meta:descriptionId": "graph##xdm:firstCreatedTimestamp##description"
         },
         "xdm:lastModifiedTimestamp": {
           "title": "Graph Last Modified Date And Time",
           "description": "Time and date this graph was last modified.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "graph##xdm:lastModifiedTimestamp##title",
+          "meta:descriptionId": "graph##xdm:lastModifiedTimestamp##description"
         }
       }
     }
@@ -65,5 +79,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "graph##title",
+  "meta:descriptionId": "graph##description"
 }

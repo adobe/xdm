@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
   "description": "An array of all related accounts linked to the primary account.",
   "definitions": {
     "related-account": {
@@ -22,7 +24,9 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "related-accounts##xdm:relatedAccounts##title",
+          "meta:descriptionId": "related-accounts##xdm:relatedAccounts##description"
         }
       }
     }
@@ -36,5 +40,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-01-19"
+  "meta:createdDate": "2021-01-19",
+  "meta:titleId": "related-accounts##title",
+  "meta:descriptionId": "related-accounts##description"
 }

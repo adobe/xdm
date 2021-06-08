@@ -12,7 +12,9 @@
   "type": "object",
   "meta:status": "stable",
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "experienceevent-edgeregion": {
       "properties": {
@@ -167,15 +169,20 @@
                 "WY1": "WY1",
                 "ZAF1": "ZAF1",
                 "ZAF2": "ZAF2"
-              }
+              },
+              "meta:titleId": "experienceevent-edgeregion##xdm:dataCenterLocation##title"
             },
             "xdm:captureTimestamp": {
               "title": "Data Capture Timestamp",
               "type": "string",
               "format": "date-time",
-              "description": "The time when data was captured on data center node."
+              "description": "The time when data was captured on data center node.",
+              "meta:titleId": "experienceevent-edgeregion##xdm:captureTimestamp##title",
+              "meta:descriptionId": "experienceevent-edgeregion##xdm:captureTimestamp##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-edgeregion##xdm:userActivityRegion##title",
+          "meta:descriptionId": "experienceevent-edgeregion##xdm:userActivityRegion##description"
         }
       }
     }
@@ -187,5 +194,7 @@
     {
       "$ref": "#/definitions/experienceevent-edgeregion"
     }
-  ]
+  ],
+  "meta:titleId": "experienceevent-edgeregion##title",
+  "meta:descriptionId": "experienceevent-edgeregion##description"
 }

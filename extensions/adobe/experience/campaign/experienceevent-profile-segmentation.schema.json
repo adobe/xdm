@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile segmentation.",
   "definitions": {
     "campaign-experienceevent-profile-segmentation": {
@@ -35,12 +37,17 @@
                     "meta:xdmType": "map",
                     "additionalProperties": {
                       "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-                    }
-                  }
+                    },
+                    "meta:titleId": "experienceevent-profile-segmentation##additionalProperties##title"
+                  },
+                  "meta:titleId": "experienceevent-profile-segmentation##xdm:segmentMembership##title"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-profile-segmentation##xdm:profileSnapshot##title",
+              "meta:descriptionId": "experienceevent-profile-segmentation##xdm:profileSnapshot##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-profile-segmentation##https://ns.adobe.com/experience/campaign/message##title"
         }
       }
     }
@@ -50,5 +57,7 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-segmentation"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-segmentation##title",
+  "meta:descriptionId": "experienceevent-profile-segmentation##description"
 }

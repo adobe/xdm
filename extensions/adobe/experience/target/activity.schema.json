@@ -16,12 +16,16 @@
         "xdm:activityID": {
           "title": "Activity Identifier",
           "type": "string",
-          "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target."
+          "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target.",
+          "meta:titleId": "activity##xdm:activityID##title",
+          "meta:descriptionId": "activity##xdm:activityID##description"
         },
         "xdm:version": {
           "title": "Activity Version",
           "type": "string",
-          "description": "Version of the activity that processed this given experience event."
+          "description": "Version of the activity that processed this given experience event.",
+          "meta:titleId": "activity##xdm:version##title",
+          "meta:descriptionId": "activity##xdm:version##description"
         },
         "https://ns.adobe.com/experience/target/activity/preview": {
           "$ref": "https://ns.adobe.com/experience/target/activity/preview"
@@ -33,7 +37,10 @@
           }
         }
       },
-      "required": ["xdm:activityID", "xdm:version"]
+      "required": [
+        "xdm:activityID",
+        "xdm:version"
+      ]
     }
   },
   "allOf": [
@@ -41,5 +48,7 @@
       "$ref": "#/definitions/activity"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "activity##title",
+  "meta:descriptionId": "activity##description"
 }

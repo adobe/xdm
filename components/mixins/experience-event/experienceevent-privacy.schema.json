@@ -12,7 +12,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "experienceevent-privacy": {
       "properties": {
@@ -21,7 +23,8 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/consentstring"
-          }
+          },
+          "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title"
         }
       }
     }
@@ -35,5 +38,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-privacy##title",
+  "meta:descriptionId": "experienceevent-privacy##description"
 }

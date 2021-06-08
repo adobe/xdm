@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Profile stitching details such as identity and profile IDs.",
   "definitions": {
     "experienceevent-profile-stitch": {
@@ -22,7 +24,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
-          }
+          },
+          "meta:titleId": "experienceevent-profile-stitch##xdm:profileStitch##title",
+          "meta:descriptionId": "experienceevent-profile-stitch##xdm:profileStitch##description"
         }
       }
     }
@@ -36,5 +40,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-profile-stitch##title",
+  "meta:descriptionId": "experienceevent-profile-stitch##description"
 }

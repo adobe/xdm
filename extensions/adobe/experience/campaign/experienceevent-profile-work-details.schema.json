@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile work details.",
   "definitions": {
     "campaign-experienceevent-profile-work-details": {
@@ -28,28 +30,38 @@
                 "xdm:workAddress": {
                   "title": "Work Address",
                   "$ref": "https://ns.adobe.com/xdm/common/address",
-                  "description": "A work postal address."
+                  "description": "A work postal address.",
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workAddress##title",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workAddress##description"
                 },
                 "xdm:workEmail": {
                   "title": "Work Email",
                   "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-                  "description": "A work email address."
+                  "description": "A work email address.",
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workEmail##title",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workEmail##description"
                 },
                 "xdm:workPhone": {
                   "title": "Work Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                  "description": "Work phone number."
+                  "description": "Work phone number.",
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workPhone##title",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workPhone##description"
                 },
                 "xdm:organizations": {
                   "title": "Organizations",
                   "type": "array",
                   "items": {
                     "type": "string"
-                  }
+                  },
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:organizations##title"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-profile-work-details##xdm:profileSnapshot##title",
+              "meta:descriptionId": "experienceevent-profile-work-details##xdm:profileSnapshot##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-profile-work-details##https://ns.adobe.com/experience/campaign/message##title"
         }
       }
     }
@@ -59,5 +71,7 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-work-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-work-details##title",
+  "meta:descriptionId": "experienceevent-profile-work-details##description"
 }

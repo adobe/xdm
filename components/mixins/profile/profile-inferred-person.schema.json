@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This mixin is used to capture inferred details about a person where they are not directly avaialble.",
   "definitions": {
     "profile-inferred-person": {
@@ -19,32 +21,44 @@
         "xdm:anonymousHostname": {
           "title": "Anonymous Hostname",
           "description": "Anonymous hostname.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:anonymousHostname##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description"
         },
         "xdm:inferredAddress": {
           "title": "Inferred Address",
           "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description"
         },
         "xdm:inferredCompany": {
           "title": "Inferred Company",
           "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompany##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description"
         },
         "xdm:inferredCompanyStatus": {
           "title": "Inferred Company Status",
           "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompanyStatus##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description"
         },
         "xdm:inferredMetropolitanArea": {
           "title": "Inferred Metropolitan Area",
           "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredMetropolitanArea##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description"
         },
         "xdm:inferredPhoneAreaCode": {
           "title": "Inferred Phone Area Code",
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredPhoneAreaCode##title",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description"
         }
       }
     }
@@ -55,5 +69,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-11-23"
+  "meta:createdDate": "2020-11-23",
+  "meta:titleId": "profile-inferred-person##title",
+  "meta:descriptionId": "profile-inferred-person##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Use this mixin for web url which does not confine with URI format.",
   "definitions": {
     "web-url": {
@@ -27,11 +29,15 @@
                 "marketo:URL": {
                   "title": "URL",
                   "type": "string",
-                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format"
+                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
+                  "meta:titleId": "marketo-web-url##marketo:URL##title",
+                  "meta:descriptionId": "marketo-web-url##marketo:URL##description"
                 }
-              }
+              },
+              "meta:titleId": "marketo-web-url##xdm:webPageDetails##title"
             }
-          }
+          },
+          "meta:titleId": "marketo-web-url##xdm:web##title"
         }
       }
     }
@@ -41,5 +47,7 @@
       "$ref": "#/definitions/web-url"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "marketo-web-url##title",
+  "meta:descriptionId": "marketo-web-url##description"
 }

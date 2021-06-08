@@ -7,7 +7,9 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/placement",
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
@@ -19,37 +21,48 @@
         "repo:etag": {
           "title": "Placement ETag",
           "type": "string",
-          "description": "The revision that the placement object was at when the snapshot was taken."
+          "description": "The revision that the placement object was at when the snapshot was taken.",
+          "meta:titleId": "placement##repo:etag##title",
+          "meta:descriptionId": "placement##repo:etag##description"
         },
         "https://ns.adobe.com/experience/decisioning/name": {
           "title": "Placement Name",
           "type": "string",
-          "description": "An assigned name for the placement to refer to it in human interactions"
+          "description": "An assigned name for the placement to refer to it in human interactions",
+          "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/name##title",
+          "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/name##description"
         },
         "https://ns.adobe.com/experience/decisioning/description": {
           "type": "string",
           "title": "Placement Description",
-          "description": "Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method."
+          "description": "Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method.",
+          "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/description##title",
+          "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/description##description"
         },
         "https://ns.adobe.com/experience/decisioning/channelID": {
           "title": "Placement's Channel Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+          "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/channelID##title",
+          "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/channelID##description"
         },
         "https://ns.adobe.com/experience/decisioning/componentType": {
           "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details#/definitions/content-component-type",
           "title": "Content Component Type",
-          "description": "A constraint for the content that can be shown in the place described by this placement. Component Types for example are: image link, html block or plain text."
+          "description": "A constraint for the content that can be shown in the place described by this placement. Component Types for example are: image link, html block or plain text.",
+          "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/componentType##title",
+          "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/componentType##description"
         },
         "https://ns.adobe.com/experience/decisioning/contentTypes": {
           "type": "array",
           "items": {
             "type": "string",
             "title": "MIME Media Type",
-            "description": "[Multipurpose Internet Mail Extensions (MIME)](https://tools.ietf.org/html/rfc2046)",
+            "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format.",
             "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
-            "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format."
+            "meta:titleId": "placement##items##title",
+            "meta:descriptionId": "placement##items##description"
           }
         }
       }
@@ -60,12 +73,16 @@
           "title": "Placement Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the decision placement."
+          "description": "A unique identifier for the decision placement.",
+          "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/placementID##title",
+          "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/placementID##description"
         },
         "repo:etag": {
           "title": "Placement ETag",
           "type": "string",
-          "description": "The revision that the placement object was at when the snapshot was taken."
+          "description": "The revision that the placement object was at when the snapshot was taken.",
+          "meta:titleId": "placement##repo:etag##title",
+          "meta:descriptionId": "placement##repo:etag##description"
         }
       }
     }
@@ -78,5 +95,7 @@
       "$ref": "#/definitions/placement-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "placement##title",
+  "meta:descriptionId": "placement##description"
 }

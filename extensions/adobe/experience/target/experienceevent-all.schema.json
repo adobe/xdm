@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/experience/target/experienceevent-shared"
   ],
@@ -22,38 +24,52 @@
         "https://ns.adobe.com/experience/target/clientcode": {
           "title": "Adobe Target Client Code",
           "type": "string",
-          "description": "Adobe Target client code."
+          "description": "Adobe Target client code.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/clientcode##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/clientcode##description"
         },
         "https://ns.adobe.com/experience/target/mboxname": {
           "title": "Adobe Target Mbox Name",
           "type": "string",
-          "description": "Adobe Target mbox name."
+          "description": "Adobe Target mbox name.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxname##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxname##description"
         },
         "https://ns.adobe.com/experience/target/mboxversion": {
           "title": "Adobe Target Mbox Version",
           "type": "string",
-          "description": "Adobe Target mbox version."
+          "description": "Adobe Target mbox version.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxversion##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxversion##description"
         },
         "https://ns.adobe.com/experience/target/sessionid": {
           "title": "Adobe Target Session Identifier",
           "type": "string",
-          "description": "Adobe Target session identifier."
+          "description": "Adobe Target session identifier.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/sessionid##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/sessionid##description"
         },
         "https://ns.adobe.com/experience/target/pagedetail/pageid": {
           "title": "Target Unique Page Identifier",
           "type": "string",
           "format": "uri",
-          "description": "Target generated page identifier for current event."
+          "description": "Target generated page identifier for current event.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pageid##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pageid##description"
         },
         "https://ns.adobe.com/experience/target/pagedetail/pagescore": {
           "title": "Page Score",
           "type": "number",
-          "description": "Customer assigned score to visited page."
+          "description": "Customer assigned score to visited page.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pagescore##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pagescore##description"
         },
         "https://ns.adobe.com/experience/target/environmentID": {
           "title": "Environment Identifier",
           "type": "string",
-          "description": "Identifier of the environment on which the event was processed."
+          "description": "Identifier of the environment on which the event was processed.",
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/environmentID##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/environmentID##description"
         },
         "https://ns.adobe.com/experience/target/activities": {
           "title": "Activities",
@@ -61,7 +77,9 @@
           "description": "A list of items representing executed activities.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/target/activity"
-          }
+          },
+          "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/activities##title",
+          "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/activities##description"
         }
       }
     }
@@ -74,5 +92,7 @@
       "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-all##title",
+  "meta:descriptionId": "experienceevent-all##description"
 }

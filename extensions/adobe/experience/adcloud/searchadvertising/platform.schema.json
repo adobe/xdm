@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Information about Search Advertising Platform.",
   "definitions": {
     "searchadvertising-platform": {
@@ -19,12 +21,16 @@
         "xdm:adPlatform": {
           "title": "Search Advertising Platform",
           "type": "string",
-          "description": "The Search Advertising Platform Name"
+          "description": "The Search Advertising Platform Name",
+          "meta:titleId": "platform##xdm:adPlatform##title",
+          "meta:descriptionId": "platform##xdm:adPlatform##description"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "platform##xdm:searchEngineId##title",
+          "meta:descriptionId": "platform##xdm:searchEngineId##description"
         }
       }
     }
@@ -34,5 +40,7 @@
       "$ref": "#/definitions/searchadvertising-platform"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "platform##title",
+  "meta:descriptionId": "platform##description"
 }

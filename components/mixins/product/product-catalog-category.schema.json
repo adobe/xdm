@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/product"
+  ],
   "description": "This mixin is used to capture properties related to product catalog category.",
   "definitions": {
     "product-catalog-category": {
@@ -20,12 +22,16 @@
         "xdm:productCatalogCategoryName": {
           "title": "Product Category Name",
           "type": "string",
-          "description": "friendly name of the product category."
+          "description": "friendly name of the product category.",
+          "meta:titleId": "product-catalog-category##xdm:productCatalogCategoryName##title",
+          "meta:descriptionId": "product-catalog-category##xdm:productCatalogCategoryName##description"
         },
         "xdm:parentProductCatalogCategoryName": {
           "title": "Parent Product Catalog Category Name",
           "type": "string",
-          "description": "Parent product category name used to build hierarchy."
+          "description": "Parent product category name used to build hierarchy.",
+          "meta:titleId": "product-catalog-category##xdm:parentProductCatalogCategoryName##title",
+          "meta:descriptionId": "product-catalog-category##xdm:parentProductCatalogCategoryName##description"
         }
       }
     }
@@ -36,5 +42,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-catalog-category##title",
+  "meta:descriptionId": "product-catalog-category##description"
 }

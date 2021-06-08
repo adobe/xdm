@@ -24,7 +24,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Offer details such as offer name, clicks, dismissals.",
   "definitions": {
     "offer-impression-details": {
@@ -36,17 +38,23 @@
             "xdm:ID": {
               "title": "Offer ID",
               "type": "string",
-              "description": "Offer Identifier."
+              "description": "Offer Identifier.",
+              "meta:titleId": "experienceevent-offer-impression-details##xdm:ID##title",
+              "meta:descriptionId": "experienceevent-offer-impression-details##xdm:ID##description"
             },
             "xdm:clicks": {
               "title": "Offer Clicks",
               "type": "integer",
-              "description": "Counts the number of times an offer has been clicked."
+              "description": "Counts the number of times an offer has been clicked.",
+              "meta:titleId": "experienceevent-offer-impression-details##xdm:clicks##title",
+              "meta:descriptionId": "experienceevent-offer-impression-details##xdm:clicks##description"
             },
             "xdm:dismissals": {
               "title": "Offer Dismissals",
               "type": "integer",
-              "description": "Counts the number of times an offer has been dismissed."
+              "description": "Counts the number of times an offer has been dismissed.",
+              "meta:titleId": "experienceevent-offer-impression-details##xdm:dismissals##title",
+              "meta:descriptionId": "experienceevent-offer-impression-details##xdm:dismissals##description"
             },
             "xdm:impressions": {
               "title": "Offer Impression Details",
@@ -54,15 +62,20 @@
               "items": {
                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
               },
-              "description": "An array of advertisements that have been displayed to a customer."
+              "description": "An array of advertisements that have been displayed to a customer.",
+              "meta:titleId": "experienceevent-offer-impression-details##xdm:impressions##title",
+              "meta:descriptionId": "experienceevent-offer-impression-details##xdm:impressions##description"
             },
             "xdm:offerSteps": {
               "title": "Offer Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-offer-impression-details##xdm:offerSteps##title",
+              "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offerSteps##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offers##description"
         }
       }
     }
@@ -73,5 +86,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-01-15"
+  "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-offer-impression-details##title",
+  "meta:descriptionId": "experienceevent-offer-impression-details##description"
 }

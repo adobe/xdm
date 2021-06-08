@@ -16,7 +16,9 @@
         "https://ns.adobe.com/experience/campaign/addressErrorCount": {
           "title": "Address Error Count",
           "type": "integer",
-          "description": "Number of consecutive errors when sending to this address."
+          "description": "Number of consecutive errors when sending to this address.",
+          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##title",
+          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##description"
         },
         "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",
@@ -29,7 +31,9 @@
             "unknown_street": "Unknown street",
             "partially_recognized_street": "Partially-recognized street",
             "fully_recognized_street": "Fully-recognized street"
-          }
+          },
+          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressQuality##title",
+          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressQuality##description"
         }
       }
     }
@@ -39,5 +43,7 @@
       "$ref": "#/definitions/address"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "address##title",
+  "meta:descriptionId": "address##description"
 }

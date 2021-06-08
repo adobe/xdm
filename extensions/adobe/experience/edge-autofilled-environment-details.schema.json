@@ -12,13 +12,16 @@
   "description": "Information automatically collected by the AEP Edge Orchestration Service to enrich each received XDM Experience event.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "definitions": {
     "edge-environment-ipv4": {
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4",
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title"
         }
       }
     },
@@ -26,7 +29,8 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6",
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title"
         }
       }
     },
@@ -37,7 +41,8 @@
           "properties": {
             "xdm:browserDetails": {
               "title": "Browser Details",
-              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent"
+              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent",
+              "meta:titleId": "edge-autofilled-environment-details##xdm:browserDetails##title"
             }
           }
         }
@@ -51,7 +56,9 @@
             "xdm:geo": {
               "title": "Geo",
               "$ref": "https://ns.adobe.com/xdm/common/geo",
-              "description": "The geographic location where the experience was delivered based on the IP address from the client request."
+              "description": "The geographic location where the experience was delivered based on the IP address from the client request.",
+              "meta:titleId": "edge-autofilled-environment-details##xdm:geo##title",
+              "meta:descriptionId": "edge-autofilled-environment-details##xdm:geo##description"
             }
           }
         }
@@ -72,5 +79,7 @@
       "$ref": "#/definitions/edge-environment-geo"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "edge-autofilled-environment-details##title",
+  "meta:descriptionId": "edge-autofilled-environment-details##description"
 }

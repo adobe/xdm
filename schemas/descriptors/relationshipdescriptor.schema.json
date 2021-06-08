@@ -22,7 +22,9 @@
           "title": "Destination Schema",
           "type": "string",
           "format": "uri",
-          "description": "The destination schema this descriptor applies to"
+          "description": "The destination schema this descriptor applies to",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description"
         },
         "xdm:destinationProperty": {
           "title": "Destination Property",
@@ -37,60 +39,88 @@
               }
             }
           ],
-          "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
+          "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description"
         },
         "xdm:destinationItem": {
           "title": "Destination Item",
           "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
-          "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+          "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationItem##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationItem##description"
         },
         "xdm:destinationVersion": {
           "title": "Destination Version",
           "type": "number",
-          "description": "Major version being referenced."
+          "description": "Major version being referenced.",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description"
         },
         "xdm:sourceValue": {
           "title": "Source Value",
           "type": "string",
-          "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
+          "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.",
+          "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description"
         },
         "xdm:sourceNamespace": {
           "title": "Source Property Namespace",
           "type": "string",
-          "description": "Identity Service namespace associated with the source property"
+          "description": "Identity Service namespace associated with the source property",
+          "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description"
         },
         "xdm:destinationNamespace": {
           "title": "Source Property Namespace",
           "type": "string",
-          "description": "Identity Service namespace associated with the source property"
+          "description": "Identity Service namespace associated with the source property",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description"
         },
         "xdm:sourceToDestinationTitle": {
           "title": "Source to Destination Title",
           "type": "string",
-          "description": "Provides a user friendly title for the source->destination edge"
+          "description": "Provides a user friendly title for the source->destination edge",
+          "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description"
         },
         "xdm:destinationToSourceTitle": {
           "title": "Destination to Source Title",
           "type": "string",
-          "description": "Provides a user friendly title for the destination->source edge"
+          "description": "Provides a user friendly title for the destination->source edge",
+          "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description"
         },
         "xdm:cardinality": {
           "title": "Relationship Cardinality",
           "type": "string",
           "description": "Source to Destination cardinality",
-          "enum": ["M:1", "1:1"],
-          "default": "M:1"
+          "enum": [
+            "M:1",
+            "1:1"
+          ],
+          "default": "M:1",
+          "meta:titleId": "relationshipdescriptor##xdm:cardinality##title",
+          "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description"
         }
       },
       "oneOf": [
         {
-          "required": ["xdm:label"]
+          "required": [
+            "xdm:label"
+          ]
         },
         {
-          "required": ["xdm:sourceProperty"]
+          "required": [
+            "xdm:sourceProperty"
+          ]
         }
       ],
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [
@@ -102,5 +132,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "relationshipdescriptor##title",
+  "meta:descriptionId": "relationshipdescriptor##description"
 }

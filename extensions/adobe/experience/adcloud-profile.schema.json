@@ -12,7 +12,9 @@
   "description": "Adobe Advertising Cloud profile mixin for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/profile-segmentation",
     "https://ns.adobe.com/experience/adcloud/profile-all"
@@ -36,5 +38,7 @@
       "$ref": "#/definitions/adcloud-profile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "adcloud-profile##title",
+  "meta:descriptionId": "adcloud-profile##description"
 }

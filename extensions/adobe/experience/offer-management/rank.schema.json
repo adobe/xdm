@@ -19,7 +19,9 @@
           "type": "integer",
           "title": "Priority",
           "description": "Offer priority",
-          "minimum": 0
+          "minimum": 0,
+          "meta:titleId": "rank##xdm:priority##title",
+          "meta:descriptionId": "rank##xdm:priority##description"
         }
       }
     }
@@ -29,8 +31,12 @@
       "$ref": "#/definitions/rank"
     },
     {
-      "required": ["xdm:priority"]
+      "required": [
+        "xdm:priority"
+      ]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "rank##title",
+  "meta:descriptionId": "rank##description"
 }

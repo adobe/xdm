@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Identities array for profile (deprecated).",
   "definitions": {
     "profile-identities-deprecated": {
@@ -24,7 +26,9 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
           },
           "minItems": 1,
-          "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead."
+          "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.",
+          "meta:titleId": "profile-identities-deprecated##xdm:identities##title",
+          "meta:descriptionId": "profile-identities-deprecated##xdm:identities##description"
         }
       }
     }
@@ -38,5 +42,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "profile-identities-deprecated##title",
+  "meta:descriptionId": "profile-identities-deprecated##description"
 }

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Use for direct marketing activities such as addresses, emails, and phone numbers.",
   "definitions": {
     "profile-directmarketing": {
@@ -19,17 +21,23 @@
         "xdm:directMarketingAddress": {
           "title": "Direct marketing address",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
-          "description": "Direct marketing postal address."
+          "description": "Direct marketing postal address.",
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description"
         },
         "xdm:directMarketingEmail": {
           "title": "Direct marketing email",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
-          "description": "Direct marketing email address."
+          "description": "Direct marketing email address.",
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description"
         },
         "xdm:directMarketingPhone": {
           "title": "Direct marketing phone",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
-          "description": "Direct marketing phone number."
+          "description": "Direct marketing phone number.",
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description"
         }
       }
     }
@@ -43,5 +51,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-directmarketing##title",
+  "meta:descriptionId": "profile-directmarketing##description"
 }

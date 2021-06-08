@@ -25,24 +25,33 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset."
+              "description": "Unique ID of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:mailingID##title",
+              "meta:descriptionId": "emaildelivered##xdm:mailingID##description"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Name of the email asset."
+              "description": "Name of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:mailingName##title",
+              "meta:descriptionId": "emaildelivered##xdm:mailingName##description"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:testVariantID##title",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantID##description"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name of the test variant of the email asset."
+              "description": "Friendly name of the test variant of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:testVariantName##title",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantName##description"
             }
-          }
+          },
+          "meta:titleId": "emaildelivered##xdm:directMarketing##title"
         }
       }
     }
@@ -53,5 +62,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2020-12-02"
+  "meta:createdDate": "2020-12-02",
+  "meta:titleId": "emaildelivered##title",
+  "meta:descriptionId": "emaildelivered##description"
 }

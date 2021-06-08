@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Adobe Analytics ExperienceEvent Commerce Mixin.",
   "definitions": {
     "analytics-commerce": {
@@ -22,12 +24,16 @@
           "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/analytics/productlistitem"
-          }
+          },
+          "meta:titleId": "commerce##xdm:productListItems##title",
+          "meta:descriptionId": "commerce##xdm:productListItems##description"
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description": "Product returns, warranty registration, and shopping cart/order process."
+          "description": "Product returns, warranty registration, and shopping cart/order process.",
+          "meta:titleId": "commerce##xdm:commerce##title",
+          "meta:descriptionId": "commerce##xdm:commerce##description"
         }
       }
     }
@@ -40,5 +46,7 @@
       "$ref": "#/definitions/analytics-commerce"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "commerce##title",
+  "meta:descriptionId": "commerce##description"
 }

@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Campaigns is a set of ad groups (ads, keywords, and bids) that share a budget, location targeting, and other settings.",
   "definitions": {
     "searchads-campaign": {
@@ -20,22 +22,30 @@
         "searchads:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign ID on the search advertising platform."
+          "description": "Campaign ID on the search advertising platform.",
+          "meta:titleId": "campaign##searchads:campaignId##title",
+          "meta:descriptionId": "campaign##searchads:campaignId##description"
         },
         "searchads:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "campaign##searchads:accountId##title",
+          "meta:descriptionId": "campaign##searchads:accountId##description"
         },
         "searchads:campaignName": {
           "title": "Campaign Name",
           "type": "string",
-          "description": "Name of the Campaign."
+          "description": "Name of the Campaign.",
+          "meta:titleId": "campaign##searchads:campaignName##title",
+          "meta:descriptionId": "campaign##searchads:campaignName##description"
         },
         "searchads:campaignDescription": {
           "title": "Description",
           "type": "string",
-          "description": "Description of the Campaign."
+          "description": "Description of the Campaign.",
+          "meta:titleId": "campaign##searchads:campaignDescription##title",
+          "meta:descriptionId": "campaign##searchads:campaignDescription##description"
         },
         "searchads:campaignStatus": {
           "title": "Campaign Status",
@@ -78,17 +88,23 @@
             "Disabled": "Disabled",
             "Unknown": "Unknown",
             "Dummy": "Dummy"
-          }
+          },
+          "meta:titleId": "campaign##searchads:campaignStatus##title",
+          "meta:descriptionId": "campaign##searchads:campaignStatus##description"
         },
         "searchads:channelType": {
           "title": "Channel Type",
           "type": "string",
-          "description": "Channel Type for the Campaign"
+          "description": "Channel Type for the Campaign",
+          "meta:titleId": "campaign##searchads:channelType##title",
+          "meta:descriptionId": "campaign##searchads:channelType##description"
         },
         "searchads:budget": {
           "title": "Budget",
           "type": "number",
-          "description": "Budget Allocated for the Campaign"
+          "description": "Budget Allocated for the Campaign",
+          "meta:titleId": "campaign##searchads:budget##title",
+          "meta:descriptionId": "campaign##searchads:budget##description"
         },
         "searchads:budgetType": {
           "title": "Budget Type",
@@ -107,63 +123,91 @@
             "Lifetime": "Lifetime",
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of week": "Day of week"
-          }
+          },
+          "meta:titleId": "campaign##searchads:budgetType##title",
+          "meta:descriptionId": "campaign##searchads:budgetType##description"
         },
         "searchads:adDeliveryType": {
           "title": "Ad Delivery Method",
           "type": "string",
           "description": "Ad Delivery method can determine how long your budget lasts",
-          "enum": ["Standard", "Accelerated"],
+          "enum": [
+            "Standard",
+            "Accelerated"
+          ],
           "meta:enum": {
             "standard": "Standard",
             "accelerated": "Accelerated"
-          }
+          },
+          "meta:titleId": "campaign##searchads:adDeliveryType##title",
+          "meta:descriptionId": "campaign##searchads:adDeliveryType##description"
         },
         "searchads:objective": {
           "title": "Campaign Objective",
           "type": "string",
           "description": "Campaign Objective indicates the primary objective of the campaign - e.g. Promotions, Brands, App Installs.",
-          "enum": ["visit_web", "promote_brand", "install_app", "visit_offer"],
+          "enum": [
+            "visit_web",
+            "promote_brand",
+            "install_app",
+            "visit_offer"
+          ],
           "meta:enum": {
             "visit_web": "visit_web",
             "promote_brand": "promote_brand",
             "install_app": "install_app",
             "visit_offer": "visit_offer"
-          }
+          },
+          "meta:titleId": "campaign##searchads:objective##title",
+          "meta:descriptionId": "campaign##searchads:objective##description"
         },
         "searchads:campaignStartDate": {
           "title": "Campaign Start Date",
           "type": "string",
           "format": "date",
-          "description": "Campaign Start Date"
+          "description": "Campaign Start Date",
+          "meta:titleId": "campaign##searchads:campaignStartDate##title",
+          "meta:descriptionId": "campaign##searchads:campaignStartDate##description"
         },
         "searchads:campaignEndDate": {
           "title": "Campaign End Date",
           "type": "string",
           "format": "date",
-          "description": "Campaign End Date"
+          "description": "Campaign End Date",
+          "meta:titleId": "campaign##searchads:campaignEndDate##title",
+          "meta:descriptionId": "campaign##searchads:campaignEndDate##description"
         },
         "searchads:portfolioId": {
           "title": "Portfolio Identifier",
           "type": "string",
-          "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
+          "description": "Identifier indicates if campaign has been assigned and managed via portfolio.",
+          "meta:titleId": "campaign##searchads:portfolioId##title",
+          "meta:descriptionId": "campaign##searchads:portfolioId##description"
         },
         "searchads:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "campaign##searchads:searchEngineId##title",
+          "meta:descriptionId": "campaign##searchads:searchEngineId##description"
         },
         "searchads:createDate": {
           "type": "string",
           "format": "date-time",
-          "examples": ["2004-10-23T12:00:00-06:00"],
-          "description": "The date and time when the campaign was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The date and time when the campaign was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "campaign##searchads:createDate##description"
         },
         "searchads:modifyDate": {
           "type": "string",
           "format": "date-time",
-          "examples": ["2004-10-23T12:00:00-06:00"],
-          "description": "The date and time when the campaign was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The date and time when the campaign was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "campaign##searchads:modifyDate##description"
         }
       }
     }
@@ -179,5 +223,7 @@
       "$ref": "#/definitions/searchads-campaign"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "campaign##title",
+  "meta:descriptionId": "campaign##description"
 }

@@ -23,12 +23,14 @@
         "schema:name": {
           "type": "string",
           "const": "option metric: per profile propositions",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "proposition-metric-profile##schema:name##description"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "proposition-metric-profile##xdm:measurement##description"
         },
         "xdm:unit": {
           "const": null
@@ -45,5 +47,7 @@
     }
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "proposition-metric-profile##title",
+  "meta:descriptionId": "proposition-metric-profile##description"
 }

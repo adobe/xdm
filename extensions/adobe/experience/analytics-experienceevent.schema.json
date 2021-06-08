@@ -108,5 +108,7 @@
       "$ref": "#/definitions/analytics-experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "analytics-experienceevent##title",
+  "meta:descriptionId": "analytics-experienceevent##description"
 }

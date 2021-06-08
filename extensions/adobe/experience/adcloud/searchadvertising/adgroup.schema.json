@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Ad Group is a logical collection or grouping of ads.",
   "definitions": {
     "searchadvertising-adgroup": {
@@ -20,22 +22,30 @@
         "xdm:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
-          "description": "Ad Group ID on the search advertising platform."
+          "description": "Ad Group ID on the search advertising platform.",
+          "meta:titleId": "adgroup##xdm:adgroupId##title",
+          "meta:descriptionId": "adgroup##xdm:adgroupId##description"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign ID for the Ad Group on the search advertising platform."
+          "description": "Campaign ID for the Ad Group on the search advertising platform.",
+          "meta:titleId": "adgroup##xdm:campaignId##title",
+          "meta:descriptionId": "adgroup##xdm:campaignId##description"
         },
         "xdm:internalCampaignId": {
           "title": "Internal Campaign Identifier",
           "type": "string",
-          "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record."
+          "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record.",
+          "meta:titleId": "adgroup##xdm:internalCampaignId##title",
+          "meta:descriptionId": "adgroup##xdm:internalCampaignId##description"
         },
         "xdm:adgroupName": {
           "title": "Ad Group Name",
           "type": "string",
-          "description": "Name of the Ad Group."
+          "description": "Name of the Ad Group.",
+          "meta:titleId": "adgroup##xdm:adgroupName##title",
+          "meta:descriptionId": "adgroup##xdm:adgroupName##description"
         },
         "xdm:adGroupStatus": {
           "title": "Ad Group Status",
@@ -78,7 +88,9 @@
             "Disabled": "Disabled",
             "Unknown": "Unknown",
             "Dummy": "Dummy"
-          }
+          },
+          "meta:titleId": "adgroup##xdm:adGroupStatus##title",
+          "meta:descriptionId": "adgroup##xdm:adGroupStatus##description"
         },
         "xdm:bidLevel": {
           "title": "Bid Level",
@@ -101,7 +113,9 @@
             "Keyword": "Keyword",
             "Adgroup": "Adgroup",
             "User Interest and List": "User Interest and List"
-          }
+          },
+          "meta:titleId": "adgroup##xdm:bidLevel##title",
+          "meta:descriptionId": "adgroup##xdm:bidLevel##description"
         }
       }
     }
@@ -117,5 +131,7 @@
       "$ref": "#/definitions/searchadvertising-adgroup"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "adgroup##title",
+  "meta:descriptionId": "adgroup##description"
 }

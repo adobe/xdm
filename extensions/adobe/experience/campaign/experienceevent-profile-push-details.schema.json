@@ -31,11 +31,16 @@
                   "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
-                  }
+                  },
+                  "meta:titleId": "experienceevent-profile-push-details##xdm:pushNotificationTokens##title",
+                  "meta:descriptionId": "experienceevent-profile-push-details##xdm:pushNotificationTokens##description"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-profile-push-details##xdm:profileSnapshot##title",
+              "meta:descriptionId": "experienceevent-profile-push-details##xdm:profileSnapshot##description"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-profile-push-details##https://ns.adobe.com/experience/campaign/message##title"
         }
       }
     }
@@ -45,5 +50,7 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-push-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-push-details##title",
+  "meta:descriptionId": "experienceevent-profile-push-details##description"
 }

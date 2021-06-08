@@ -16,87 +16,121 @@
         "https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance": {
           "title": "Entered Journey",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when a journey instance is created"
+          "description": "Set to 1 when a journey instance is created",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationEnteredJourneyInstance##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExitedJourneyInstance": {
           "title": "Exited journey",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when a journey instance is flagged as ended"
+          "description": "Set to 1 when a journey instance is flagged as ended",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExitedJourneyInstance##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExitedJourneyInstance##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance": {
           "title": "Error in Journey Instance",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an error is raised in a journey instance"
+          "description": "Set to 1 when an error is raised in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInJourneyInstance##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationErrorInEventProcessing": {
           "title": "Eroor in step processing",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an error occurs during an event processing, that is during a step processing"
+          "description": "Set to 1 when an error occurs during an event processing, that is during a step processing",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInEventProcessing##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInEventProcessing##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationErrorInActionExecution": {
           "title": "Error in action execution",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an error occurs during an action execution"
+          "description": "Set to 1 when an error occurs during an action execution",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInActionExecution##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInActionExecution##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationErrorInJumpActionExecution": {
           "title": "Error in jump action",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an error occurs during the jump action execution"
+          "description": "Set to 1 when an error occurs during the jump action execution",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInJumpActionExecution##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInJumpActionExecution##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationErrorInEnrichment": {
           "title": "Error in enrichment",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an error occurs during enrichment"
+          "description": "Set to 1 when an error occurs during enrichment",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInEnrichment##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationErrorInEnrichment##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExecutedEvent": {
           "title": "Event processed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an event as triggered a transition in a journey instance"
+          "description": "Set to 1 when an event as triggered a transition in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedEvent##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedEvent##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExecutedAction": {
           "title": "Action executed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an action is executed successfully in a journey instance"
+          "description": "Set to 1 when an action is executed successfully in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedAction##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedAction##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExecutedFlowControl": {
           "title": "Flow control executed",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an action is executed successfully in a journey instance"
+          "description": "Set to 1 when an action is executed successfully in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedFlowControl##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedFlowControl##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExecutedJumpAction": {
           "title": "Executed jump action",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when a jump action is executed successfully in a journey instance"
+          "description": "Set to 1 when a jump action is executed successfully in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedJumpAction##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedJumpAction##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationExecutedEnrichment": {
           "title": "Enrichment made successfully ",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when an enrichment is executed successfully in a journey instance"
+          "description": "Set to 1 when an enrichment is executed successfully in a journey instance",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedEnrichment##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationExecutedEnrichment##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationJumpToJourney": {
           "title": "Jump action executed successfully",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when a jump to another journey instance is made"
+          "description": "Set to 1 when a jump to another journey instance is made",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationJumpToJourney##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationJumpToJourney##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction": {
           "title": "Timeout In Action",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when timeout occurs during execution of an action"
+          "description": "Set to 1 when timeout occurs during execution of an action",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInAction##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent": {
           "title": "Timeout in Event",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when timeout occurs during the processing of an event"
+          "description": "Set to 1 when timeout occurs during the processing of an event",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEvent##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney": {
           "title": "Timeout In Journey",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when timeout occurs during the flow of a journey"
+          "description": "Set to 1 when timeout occurs during the flow of a journey",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInJourney##description"
         },
         "https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment": {
           "title": "Timeout In Enrichment",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Set to 1 when timeout occurs during enrichement"
+          "description": "Set to 1 when timeout occurs during enrichement",
+          "meta:titleId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment##title",
+          "meta:descriptionId": "reportingeventmetrics##https://ns.adobe.com/experience/campaign/orchestrationTimeoutInEnrichment##description"
         }
       }
     }
@@ -106,5 +140,7 @@
       "$ref": "#/definitions/reportingeventmetrics"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "reportingeventmetrics##title",
+  "meta:descriptionId": "reportingeventmetrics##description"
 }

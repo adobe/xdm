@@ -104,5 +104,7 @@
       "$ref": "#/definitions/adcloud-experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "adcloud-experienceevent##title",
+  "meta:descriptionId": "adcloud-experienceevent##description"
 }

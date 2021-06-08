@@ -23,7 +23,11 @@
           "description": "The unique identifier of the journey created by the marketer."
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ],
+      "meta:titleId": "experienceevent##journey##title",
+      "meta:descriptionId": "experienceevent##journey##description"
     },
     "journeyVersion": {
       "title": "Journey version",
@@ -37,7 +41,11 @@
           "description": "The unique identifier denoting the version of journey on which the entity is active."
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ],
+      "meta:titleId": "experienceevent##journeyVersion##title",
+      "meta:descriptionId": "experienceevent##journeyVersion##description"
     },
     "action": {
       "title": "Action on step transition",
@@ -48,7 +56,9 @@
           "title": "Action identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "Unique identifier denoting the associated action."
+          "description": "Unique identifier denoting the associated action.",
+          "meta:titleId": "experienceevent##xdm:actionID##title",
+          "meta:descriptionId": "experienceevent##xdm:actionID##description"
         },
         "xdm:actionType": {
           "title": "Action Type",
@@ -62,9 +72,13 @@
             "journey_notification": "This action type is to send notification for another journey",
             "campaign_request": "This action performs REST calls to a campaign instance to write data",
             "messageService_request": "The message service action performs REST calls to campaign instance to send messages with messaging service"
-          }
+          },
+          "meta:titleId": "experienceevent##xdm:actionType##title",
+          "meta:descriptionId": "experienceevent##xdm:actionType##description"
         }
-      }
+      },
+      "meta:titleId": "experienceevent##action##title",
+      "meta:descriptionId": "experienceevent##action##description"
     }
   },
   "allOf": [
@@ -78,5 +92,7 @@
       "$ref": "#/definitions/action"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent##title",
+  "meta:descriptionId": "experienceevent##description"
 }

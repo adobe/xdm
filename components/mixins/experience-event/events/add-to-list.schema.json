@@ -21,16 +21,19 @@
   "definitions": {
     "addtolist": {
       "properties": {
-        "xdm:listOperations":{
+        "xdm:listOperations": {
           "title": "List Operations",
-          "type":"object",
+          "type": "object",
           "properties": {
             "xdm:listID": {
               "title": "List ID",
               "type": "string",
-              "description": "Unique ID of the Marketing List."
+              "description": "Unique ID of the Marketing List.",
+              "meta:titleId": "add-to-list##xdm:listID##title",
+              "meta:descriptionId": "add-to-list##xdm:listID##description"
             }
-          }
+          },
+          "meta:titleId": "add-to-list##xdm:listOperations##title"
         }
       }
     }
@@ -41,5 +44,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "add-to-list##title",
+  "meta:descriptionId": "add-to-list##description"
 }

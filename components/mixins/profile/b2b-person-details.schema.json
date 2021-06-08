@@ -25,27 +25,37 @@
             "xdm:personType": {
               "title": "Person Type",
               "description": "Type of the B2B person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:personType##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personType##description"
             },
             "xdm:personStatus": {
               "title": "Person Status",
               "description": "Field recording the current marketing/sales status of the Person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:personStatus##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personStatus##description"
             },
             "xdm:personSource": {
               "title": "Person Source",
               "description": "Source from where the information regarding the person was received.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:personSource##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personSource##description"
             },
             "xdm:personScore": {
               "title": "Person Score",
               "description": "A Score generated for a person by the CRM system.",
-              "type": "number"
+              "type": "number",
+              "meta:titleId": "b2b-person-details##xdm:personScore##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personScore##description"
             },
             "xdm:personGroupID": {
               "title": "Person Group ID",
               "description": "Group identifier for the person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:personGroupID##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personGroupID##description"
             }
           }
         }
@@ -59,49 +69,67 @@
             "xdm:accountID": {
               "title": "Contact Account id",
               "description": "ID of the account that’s the parent of this person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:accountID##title",
+              "meta:descriptionId": "b2b-person-details##xdm:accountID##description"
             },
             "xdm:isBlocked": {
               "title": "Blocked Indicator",
               "description": "Indicator if the person is blocked or not.",
-              "type": "boolean"
+              "type": "boolean",
+              "meta:titleId": "b2b-person-details##xdm:isBlocked##title",
+              "meta:descriptionId": "b2b-person-details##xdm:isBlocked##description"
             },
             "xdm:blockedCause": {
               "title": "Blocked Cause",
               "description": "Reason why the person is blocked.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:blockedCause##title",
+              "meta:descriptionId": "b2b-person-details##xdm:blockedCause##description"
             },
             "xdm:isMarketingSuspended": {
               "title": "Marketing Suspended Indicator",
               "description": "Marketing suspended flag.",
-              "type": "boolean"
+              "type": "boolean",
+              "meta:titleId": "b2b-person-details##xdm:isMarketingSuspended##title",
+              "meta:descriptionId": "b2b-person-details##xdm:isMarketingSuspended##description"
             },
             "xdm:marketingSuspendedCause": {
               "title": "Marketing Suspended Cause",
               "description": "Reason why the person is suspended for any marketing purposes.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:marketingSuspendedCause##title",
+              "meta:descriptionId": "b2b-person-details##xdm:marketingSuspendedCause##description"
             },
             "xdm:isConverted": {
               "title": "Converted Indicator",
               "description": "Indicates whether the Lead was successfully converted or not.",
-              "type": "boolean"
+              "type": "boolean",
+              "meta:titleId": "b2b-person-details##xdm:isConverted##title",
+              "meta:descriptionId": "b2b-person-details##xdm:isConverted##description"
             },
             "xdm:convertedDate": {
               "title": "Converted Date",
               "description": "Date of conversion if the lead was successfully converted.",
               "type": "string",
-              "format": "date-time"
+              "format": "date-time",
+              "meta:titleId": "b2b-person-details##xdm:convertedDate##title",
+              "meta:descriptionId": "b2b-person-details##xdm:convertedDate##description"
             },
             "xdm:convertedContactID": {
               "title": "Converted Contact ID",
               "description": "Contact Id if the lead was successfully converted.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:convertedContactID##title",
+              "meta:descriptionId": "b2b-person-details##xdm:convertedContactID##description"
             },
             "xdm:personOptInOut": {
               "title": "Person Preferences",
               "description": "Holds opt out values for different channels as selected by the person.",
               "$ref": "https://ns.adobe.com/xdm/context/optinout",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "b2b-person-details##xdm:personOptInOut##title",
+              "meta:descriptionId": "b2b-person-details##xdm:personOptInOut##description"
             }
           }
         }
@@ -138,5 +166,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-09-09"
+  "meta:createdDate": "2020-09-09",
+  "meta:titleId": "b2b-person-details##title",
+  "meta:descriptionId": "b2b-person-details##description"
 }

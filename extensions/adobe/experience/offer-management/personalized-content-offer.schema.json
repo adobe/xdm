@@ -36,5 +36,7 @@
       "$ref": "#/definitions/personalized-content-offer"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "personalized-content-offer##title",
+  "meta:descriptionId": "personalized-content-offer##description"
 }

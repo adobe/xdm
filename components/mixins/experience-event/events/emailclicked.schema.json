@@ -28,29 +28,40 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset."
+              "description": "Unique ID of the email asset.",
+              "meta:titleId": "emailclicked##xdm:mailingID##title",
+              "meta:descriptionId": "emailclicked##xdm:mailingID##description"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset."
+              "description": "Friendly name of the email asset.",
+              "meta:titleId": "emailclicked##xdm:mailingName##title",
+              "meta:descriptionId": "emailclicked##xdm:mailingName##description"
             },
             "xdm:linkURL": {
               "title": "Link URL",
               "type": "string",
-              "description": "URL of the link clicked."
+              "description": "URL of the link clicked.",
+              "meta:titleId": "emailclicked##xdm:linkURL##title",
+              "meta:descriptionId": "emailclicked##xdm:linkURL##description"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emailclicked##xdm:testVariantID##title",
+              "meta:descriptionId": "emailclicked##xdm:testVariantID##description"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name of the test variant of the email asset."
+              "description": "Friendly name of the test variant of the email asset.",
+              "meta:titleId": "emailclicked##xdm:testVariantName##title",
+              "meta:descriptionId": "emailclicked##xdm:testVariantName##description"
             }
-          }
+          },
+          "meta:titleId": "emailclicked##xdm:directMarketing##title"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -60,7 +71,9 @@
             "xdm:operatingSystem": {
               "title": "Operating system",
               "type": "string",
-              "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'."
+              "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
+              "meta:titleId": "emailclicked##xdm:operatingSystem##title",
+              "meta:descriptionId": "emailclicked##xdm:operatingSystem##description"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -70,32 +83,43 @@
                 "xdm:userAgent": {
                   "title": "User agent",
                   "type": "string",
-                  "description": "The HTTP user-agent string from the client request."
+                  "description": "The HTTP user-agent string from the client request.",
+                  "meta:titleId": "emailclicked##xdm:userAgent##title",
+                  "meta:descriptionId": "emailclicked##xdm:userAgent##description"
                 }
-              }
+              },
+              "meta:titleId": "emailclicked##xdm:browserDetails##title",
+              "meta:descriptionId": "emailclicked##xdm:browserDetails##description"
             }
-          }
+          },
+          "meta:titleId": "emailclicked##xdm:environment##title",
+          "meta:descriptionId": "emailclicked##xdm:environment##description"
         },
         "xdm:device": {
-          "title":"Device",
+          "title": "Device",
           "type": "object",
           "properties": {
             "xdm:isMobileDevice": {
               "title": "Is Mobile Device",
               "type": "boolean",
-              "description": "Boolean that indicates if device used was a mobile device."
+              "description": "Boolean that indicates if device used was a mobile device.",
+              "meta:titleId": "emailclicked##xdm:isMobileDevice##title",
+              "meta:descriptionId": "emailclicked##xdm:isMobileDevice##description"
             },
             "xdm:model": {
               "title": "Model",
               "type": "string",
-              "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone."
+              "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+              "meta:titleId": "emailclicked##xdm:model##title",
+              "meta:descriptionId": "emailclicked##xdm:model##description"
             }
-          }
+          },
+          "meta:titleId": "emailclicked##xdm:device##title"
         },
         "xdm:web": {
           "title": "Web",
           "type": "object",
-		  "description": "Link clicks, web page details, referrer information, and browser details.",
+          "description": "Link clicks, web page details, referrer information, and browser details.",
           "properties": {
             "xdm:webInteraction": {
               "title": "Web Interaction",
@@ -104,11 +128,16 @@
                 "xdm:linkID": {
                   "title": "Link ID",
                   "type": "string",
-                  "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email."
+                  "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
+                  "meta:titleId": "emailclicked##xdm:linkID##title",
+                  "meta:descriptionId": "emailclicked##xdm:linkID##description"
                 }
-              }
+              },
+              "meta:titleId": "emailclicked##xdm:webInteraction##title"
             }
-          }
+          },
+          "meta:titleId": "emailclicked##xdm:web##title",
+          "meta:descriptionId": "emailclicked##xdm:web##description"
         }
       }
     }
@@ -119,5 +148,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "emailclicked##title",
+  "meta:descriptionId": "emailclicked##description"
 }

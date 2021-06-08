@@ -20,7 +20,9 @@
           "meta:status": "deprecated",
           "title": "End-User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead."
+          "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
+          "meta:titleId": "experienceevent-enduserids-deprecated##xdm:endUserIDs##title",
+          "meta:descriptionId": "experienceevent-enduserids-deprecated##xdm:endUserIDs##description"
         }
       }
     }
@@ -34,5 +36,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-enduserids-deprecated##title",
+  "meta:descriptionId": "experienceevent-enduserids-deprecated##description"
 }

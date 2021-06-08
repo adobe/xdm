@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Email Clicked",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailClicked",
   "meta:intendedToExtend": [

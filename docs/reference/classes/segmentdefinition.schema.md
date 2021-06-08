@@ -31,6 +31,9 @@ This is the base class for a segment definition which includes required fields l
       }
     ]
   },
+  "xdm:segmentIdentity": {
+    "@id": "seg-id"
+  },
   "xdm:segmentName": "Users with TV segment",
   "xdm:description": "Segment is about users who have TV",
   "xdm:segmentStatus": "ACTIVE",
@@ -48,7 +51,7 @@ This is the base class for a segment definition which includes required fields l
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#repomodifydate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:description](#xdmdescription) | `string` | Optional | Segment definition (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | **Required** | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmrepositorylastmodifiedby) |
@@ -174,7 +177,7 @@ Description of the segment.
 
 
 `xdm:identityMap`
-* is **required**
+* is optional
 * type: `object`
 * defined in [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap)
 

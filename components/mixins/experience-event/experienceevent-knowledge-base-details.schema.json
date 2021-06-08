@@ -22,9 +22,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "",
   "definitions": {
     "knowledge-base-details": {

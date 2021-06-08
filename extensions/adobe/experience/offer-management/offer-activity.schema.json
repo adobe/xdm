@@ -39,12 +39,7 @@
           "type": "string",
           "title": "Status",
           "description": "Activity Status",
-          "enum": [
-            "draft",
-            "live",
-            "complete",
-            "archived"
-          ],
+          "enum": ["draft", "live", "complete", "archived"],
           "meta:enum": {
             "draft": "Draft",
             "live": "Live",

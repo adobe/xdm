@@ -37,10 +37,7 @@
           }
         }
       },
-      "required": [
-        "xdm:activityID",
-        "xdm:version"
-      ]
+      "required": ["xdm:activityID", "xdm:version"]
     }
   },
   "allOf": [

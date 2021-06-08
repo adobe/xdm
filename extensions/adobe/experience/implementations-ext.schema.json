@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Details the type and version of client implementations in ExperienceEvents for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
   "definitions": {
     "implementations-ext": {

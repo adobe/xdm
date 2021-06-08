@@ -12,9 +12,7 @@
   "description": "Information automatically collected by the AEP Edge Orchestration Service to enrich each received XDM Experience event.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "edge-environment-ipv4": {
       "properties": {

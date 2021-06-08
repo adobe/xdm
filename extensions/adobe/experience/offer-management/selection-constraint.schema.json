@@ -47,10 +47,7 @@
       "$ref": "#/definitions/selection-constraint"
     },
     {
-      "required": [
-        "xdm:startDate",
-        "xdm:endDate"
-      ]
+      "required": ["xdm:startDate", "xdm:endDate"]
     }
   ],
   "meta:status": "deprecated",

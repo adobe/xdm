@@ -43,10 +43,7 @@
       "$ref": "#/definitions/offer-filter"
     },
     {
-      "required": [
-        "xdm:name",
-        "xdm:value"
-      ]
+      "required": ["xdm:name", "xdm:value"]
     }
   ],
   "meta:status": "deprecated",

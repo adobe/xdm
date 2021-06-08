@@ -23,12 +23,7 @@
               "type": "string",
               "title": "Mapping type",
               "description": "Indicator for how the observation is mapped into an outcome value",
-              "enum": [
-                "direct",
-                "eventTypeValue",
-                "fieldValue",
-                "predicate"
-              ],
+              "enum": ["direct", "eventTypeValue", "fieldValue", "predicate"],
               "default": "direct",
               "meta:titleId": "interaction-measurement##xdm:mapping##title",
               "meta:descriptionId": "interaction-measurement##xdm:mapping##description"

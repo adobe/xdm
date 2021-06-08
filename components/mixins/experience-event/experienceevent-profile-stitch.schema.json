@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Profile stitching details such as identity and profile IDs.",
   "definitions": {
     "experienceevent-profile-stitch": {

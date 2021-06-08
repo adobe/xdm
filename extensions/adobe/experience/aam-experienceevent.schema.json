@@ -12,9 +12,7 @@
   "description": "Adobe Audience Manager mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core mixins.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
     "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",

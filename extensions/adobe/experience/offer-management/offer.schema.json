@@ -32,13 +32,7 @@
           "type": "string",
           "title": "Status",
           "description": "Offer Status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
-          "enum": [
-            "draft",
-            "pending",
-            "rejected",
-            "approved",
-            "archived"
-          ],
+          "enum": ["draft", "pending", "rejected", "approved", "archived"],
           "meta:enum": {
             "draft": "Draft",
             "pending": "Pending",
@@ -92,10 +86,7 @@
       "$ref": "#/definitions/offer"
     },
     {
-      "required": [
-        "xdm:name",
-        "xdm:status"
-      ]
+      "required": ["xdm:name", "xdm:status"]
     }
   ],
   "meta:status": "deprecated",

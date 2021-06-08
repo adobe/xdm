@@ -31,9 +31,7 @@
       "$ref": "#/definitions/rank"
     },
     {
-      "required": [
-        "xdm:priority"
-      ]
+      "required": ["xdm:priority"]
     }
   ],
   "meta:status": "deprecated",

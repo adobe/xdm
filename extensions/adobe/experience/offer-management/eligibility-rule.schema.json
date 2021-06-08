@@ -60,11 +60,7 @@
       "$ref": "#/definitions/eligibility-rule"
     },
     {
-      "required": [
-        "xdm:name",
-        "xdm:value",
-        "xdm:modelUsage"
-      ]
+      "required": ["xdm:name", "xdm:value", "xdm:modelUsage"]
     }
   ],
   "meta:status": "deprecated",

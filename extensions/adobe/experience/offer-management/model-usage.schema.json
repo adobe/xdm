@@ -42,10 +42,7 @@
       "$ref": "#/definitions/model-usage"
     },
     {
-      "required": [
-        "xdm:modelReference",
-        "xdm:modelPropertyPaths"
-      ]
+      "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]
     }
   ],
   "meta:status": "deprecated",

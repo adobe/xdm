@@ -11,9 +11,7 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/experience/decisioning/option-detail"
-  ],
+  "meta:extends": ["https://ns.adobe.com/experience/decisioning/option-detail"],
   "description": "Offer detail is used to capture the attributes of an offer in a proposition or response. Offers are the decision options in the offer management domain and the offer detail datatype extends the option detail datatype.",
   "definitions": {
     "offer-detail": {

@@ -36,9 +36,7 @@
       "$ref": "#/definitions/tag"
     },
     {
-      "required": [
-        "xdm:name"
-      ]
+      "required": ["xdm:name"]
     }
   ],
   "meta:status": "deprecated",

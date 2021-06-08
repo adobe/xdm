@@ -37,9 +37,7 @@
           "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkText##description"
         }
       },
-      "required": [
-        "xdm:unsubscriptionDate"
-      ]
+      "required": ["xdm:unsubscriptionDate"]
     }
   },
   "allOf": [

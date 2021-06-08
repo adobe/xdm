@@ -59,10 +59,7 @@
           "meta:descriptionId": "criterion-details##xdm:ranking##description"
         }
       },
-      "required": [
-        "xdm:placements",
-        "xdm:optionSelection"
-      ]
+      "required": ["xdm:placements", "xdm:optionSelection"]
     }
   },
   "allOf": [

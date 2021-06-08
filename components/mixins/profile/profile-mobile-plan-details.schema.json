@@ -12,16 +12,12 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "telecom"
-    ]
+    "industry": ["telecom"]
   },
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "definitions": {
     "mobile-plan-details": {

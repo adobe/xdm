@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/opportunity"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
   "description": "This mixin is used to capture and maintain additional Bizible opportunity attributes. They extend the ones used by industry crm systems.",
   "definitions": {
     "bizible-opportunity-details": {

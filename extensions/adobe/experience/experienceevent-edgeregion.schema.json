@@ -12,9 +12,7 @@
   "type": "object",
   "meta:status": "stable",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "experienceevent-edgeregion": {
       "properties": {

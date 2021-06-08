@@ -10,9 +10,7 @@
   "title": "Adobe Delivery Feedback Events",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Contains all delivery event fields.",
   "definitions": {
     "feedbackevent": {

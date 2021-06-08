@@ -12,16 +12,12 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "telecom"
-    ]
+    "industry": ["telecom"]
   },
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
   "definitions": {
     "internet-subscription": {
@@ -39,13 +35,7 @@
             "xdm:connectionType": {
               "title": "Connection Type",
               "type": "string",
-              "enum": [
-                "cable",
-                "dsl",
-                "fiber",
-                "mobile",
-                "satellite"
-              ],
+              "enum": ["cable", "dsl", "fiber", "mobile", "satellite"],
               "meta:enum": {
                 "cable": "Cable",
                 "dsl": "DSL",

@@ -7,9 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/decisioning/activity",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "title": "Decision Activity",
   "type": "object",
   "meta:extensible": true,

@@ -25,10 +25,7 @@
         "xdm:optionSelectionType": {
           "type": "string",
           "title": "Profile Constraint Type",
-          "enum": [
-            "directList",
-            "filter"
-          ],
+          "enum": ["directList", "filter"],
           "default": "none",
           "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.",
           "meta:titleId": "option-selection-details##xdm:optionSelectionType##title",

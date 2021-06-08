@@ -26,9 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "User login details such as login state, location, and type, as well as forgot username and password counts.",
   "definitions": {
     "user-login-details": {

@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "financial_services"
-    ]
+    "industry": ["financial_services"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
   "definitions": {
     "personal-finance-details": {

@@ -18,7 +18,9 @@
       "high_tech"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
     "claim-details": {
@@ -30,13 +32,17 @@
             "xdm:ID": {
               "title": "Claims ID",
               "type": "string",
-              "description": "Unique identifier for the claim."
+              "description": "Unique identifier for the claim.",
+              "meta:titleId": "experienceevent-claim-details##xdm:ID##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:ID##description"
             },
             "xdm:startDate": {
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date the claim was successfully submitted."
+              "description": "Date the claim was successfully submitted.",
+              "meta:titleId": "experienceevent-claim-details##xdm:startDate##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:startDate##description"
             },
             "xdm:status": {
               "title": "Status",
@@ -47,7 +53,9 @@
                 "approved",
                 "declined"
               ],
-              "description": "Captures the status of the claim for any given point in the application process."
+              "description": "Captures the status of the claim for any given point in the application process.",
+              "meta:titleId": "experienceevent-claim-details##xdm:status##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:status##description"
             },
             "xdm:type": {
               "title": "Type",
@@ -64,25 +72,34 @@
                 "flood",
                 "earthquake"
               ],
-              "description": "Type of claim submitted."
+              "description": "Type of claim submitted.",
+              "meta:titleId": "experienceevent-claim-details##xdm:type##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:type##description"
             },
             "xdm:policyID": {
               "title": "Policy ID",
               "type": "string",
-              "description": "Policy Identifier."
+              "description": "Policy Identifier.",
+              "meta:titleId": "experienceevent-claim-details##xdm:policyID##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description"
             },
             "xdm:benefitAmount": {
               "title": "Benefit Amount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Captures the benefit amount."
+              "description": "Captures the benefit amount.",
+              "meta:titleId": "experienceevent-claim-details##xdm:benefitAmount##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:benefitAmount##description"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-claim-details##xdm:steps##title",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:steps##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-claim-details##xdm:claims##description"
         }
       }
     }
@@ -93,5 +110,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-claim-details##title",
+  "meta:descriptionId": "experienceevent-claim-details##description"
 }

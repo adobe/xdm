@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "ID for a journey triggering event.",
   "definitions": {
     "event-id": {
@@ -23,14 +25,19 @@
             "xdm:eventID": {
               "title": "Event ID",
               "type": "string",
-              "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations."
+              "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations.",
+              "meta:titleId": "eventid##xdm:eventID##title",
+              "meta:descriptionId": "eventid##xdm:eventID##description"
             },
             "xdm:originJourneyID": {
               "title": "Origin Journey ID",
               "type": "string",
-              "description": "In case of jump between 2 journeys, ID of the journey where the event comes from."
+              "description": "In case of jump between 2 journeys, ID of the journey where the event comes from.",
+              "meta:titleId": "eventid##xdm:originJourneyID##title",
+              "meta:descriptionId": "eventid##xdm:originJourneyID##description"
             }
-          }
+          },
+          "meta:titleId": "eventid##https://ns.adobe.com/experience/campaign/orchestration##title"
         }
       }
     }
@@ -40,5 +47,7 @@
       "$ref": "#/definitions/event-id"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "eventid##title",
+  "meta:descriptionId": "eventid##description"
 }

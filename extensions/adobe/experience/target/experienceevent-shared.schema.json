@@ -19,7 +19,9 @@
         "https://ns.adobe.com/experience/target/supplementalDataID": {
           "title": "Supplemental Data Identifier",
           "description": "Identifier used to stitch Target events with Analytics events",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##title",
+          "meta:descriptionId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##description"
         }
       }
     }
@@ -29,5 +31,7 @@
       "$ref": "#/definitions/target-experienceevent-shared"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-shared##title",
+  "meta:descriptionId": "experienceevent-shared##description"
 }

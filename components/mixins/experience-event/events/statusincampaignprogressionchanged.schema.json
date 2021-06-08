@@ -29,46 +29,64 @@
                 "xdm:campaignID": {
                   "title": "Campaign ID",
                   "type": "string",
-                  "description": "Unique ID of the Campaign."
+                  "description": "Unique ID of the Campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description"
                 },
                 "xdm:newStatusID": {
                   "title": "New Status ID",
                   "type": "string",
-                  "description": "ID of the lead's new status in the campaign."
+                  "description": "ID of the lead's new status in the campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusID##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusID##description"
                 },
                 "xdm:newStatusName": {
                   "title": "New Status Name",
                   "type": "string",
-                  "description": "Friendly name of the lead's new status in the campaign."
+                  "description": "Friendly name of the lead's new status in the campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusName##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusName##description"
                 },
                 "xdm:oldStatusID": {
                   "title": "Old Status ID",
                   "type": "string",
-                  "description": "ID of the lead's previous status in the campaign."
+                  "description": "ID of the lead's previous status in the campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusID##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusID##description"
                 },
                 "xdm:oldStatusName": {
                   "title": "Old Status Name",
                   "type": "string",
-                  "description": "Friendly name of the lead's previous status in the campaign."
+                  "description": "Friendly name of the lead's previous status in the campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusName##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusName##description"
                 },
                 "xdm:reason": {
                   "title": "Reason",
                   "type": "string",
-                  "description": "Reason for the change in the lead's status."
+                  "description": "Reason for the change in the lead's status.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:reason##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:reason##description"
                 },
                 "xdm:isAcquiredBy": {
                   "title": "Is Acquired By",
                   "type": "boolean",
-                  "description": "Boolean indicating if lead was acquired by the campaign."
+                  "description": "Boolean indicating if lead was acquired by the campaign.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##description"
                 },
                 "xdm:isSuccessful": {
                   "title": "Is Successful",
                   "type": "boolean",
-                  "description": "Boolean indicating if there was a change in the lead's status."
+                  "description": "Boolean indicating if there was a change in the lead's status.",
+                  "meta:titleId": "statusincampaignprogressionchanged##xdm:isSuccessful##title",
+                  "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isSuccessful##description"
                 }
-              }
+              },
+              "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignProgression##title"
             }
-          }
+          },
+          "meta:titleId": "statusincampaignprogressionchanged##xdm:leadOperation##title"
         }
       }
     }
@@ -79,5 +97,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-01-14"
+  "meta:createdDate": "2021-01-14",
+  "meta:titleId": "statusincampaignprogressionchanged##title",
+  "meta:descriptionId": "statusincampaignprogressionchanged##description"
 }

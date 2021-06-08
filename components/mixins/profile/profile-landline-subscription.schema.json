@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": { "industry": ["telecom"] },
+  "meta:tags": {
+    "industry": ["telecom"]
+  },
   "meta:extends": [
     "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
   ],
@@ -26,52 +28,72 @@
             "xdm:minutes": {
               "title": "Minutes",
               "type": "integer",
-              "description": "Number of monthly minutes available within the subscription."
+              "description": "Number of monthly minutes available within the subscription.",
+              "meta:titleId": "profile-landline-subscription##xdm:minutes##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:minutes##description"
             },
             "xdm:voicemail": {
               "title": "Voicemail",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Voicemail."
+              "description": "Flags if the landline subscription features include Voicemail.",
+              "meta:titleId": "profile-landline-subscription##xdm:voicemail##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:voicemail##description"
             },
             "xdm:callForwarding": {
               "title": "Call Forwarding",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Call Forwarding."
+              "description": "Flags if the landline subscription features include Call Forwarding.",
+              "meta:titleId": "profile-landline-subscription##xdm:callForwarding##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:callForwarding##description"
             },
             "xdm:callerID": {
               "title": "Caller ID",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Caller ID."
+              "description": "Flags if the landline subscription features include Caller ID.",
+              "meta:titleId": "profile-landline-subscription##xdm:callerID##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:callerID##description"
             },
             "xdm:callBlocking": {
               "title": "Call Blocking",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Call Blocking."
+              "description": "Flags if the landline subscription features include Call Blocking.",
+              "meta:titleId": "profile-landline-subscription##xdm:callBlocking##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:callBlocking##description"
             },
             "xdm:callWaiting": {
               "title": "Call Waiting",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Call Waiting."
+              "description": "Flags if the landline subscription features include Call Waiting.",
+              "meta:titleId": "profile-landline-subscription##xdm:callWaiting##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:callWaiting##description"
             },
             "xdm:threeWayCalling": {
               "title": "Three-Way Dialing",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Three-Way Dialing."
+              "description": "Flags if the landline subscription features include Three-Way Dialing.",
+              "meta:titleId": "profile-landline-subscription##xdm:threeWayCalling##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:threeWayCalling##description"
             },
             "xdm:internationalCalling": {
               "title": "International Calling",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include International Calling."
+              "description": "Flags if the landline subscription features include International Calling.",
+              "meta:titleId": "profile-landline-subscription##xdm:internationalCalling##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:internationalCalling##description"
             },
             "xdm:unlimitedLocalCalling": {
               "title": "Unlimited Local Calling",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Unlimited Local Calling."
+              "description": "Flags if the landline subscription features include Unlimited Local Calling.",
+              "meta:titleId": "profile-landline-subscription##xdm:unlimitedLocalCalling##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:unlimitedLocalCalling##description"
             },
             "xdm:unlimitedDomesticLongDistance": {
               "title": "Unlimited Domestic Long Distance",
               "type": "boolean",
-              "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance."
+              "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
+              "meta:titleId": "profile-landline-subscription##xdm:unlimitedDomesticLongDistance##title",
+              "meta:descriptionId": "profile-landline-subscription##xdm:unlimitedDomesticLongDistance##description"
             }
           }
         }
@@ -86,5 +108,7 @@
       "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "profile-landline-subscription##title",
+  "meta:descriptionId": "profile-landline-subscription##description"
 }

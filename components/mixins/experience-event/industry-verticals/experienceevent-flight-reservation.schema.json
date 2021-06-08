@@ -19,14 +19,16 @@
       "travel_and_hospitality"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Collects all details specific to a flight reservation.",
   "definitions": {
     "reservations": {
       "properties": {
         "xdm:reservations": {
           "type": "object",
-		  "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
+          "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
           "properties": {
             "xdm:flightReservations": {
               "type": "array",
@@ -37,62 +39,89 @@
                   "xdm:agentID": {
                     "title": "Agent ID",
                     "type": "string",
-                    "description": "Agent or broker responsible for booking the reservation, if applicable."
+                    "description": "Agent or broker responsible for booking the reservation, if applicable.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:agentID##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:agentID##description"
                   },
                   "xdm:arrivalAirportCode": {
                     "title": "Arrival Airport Code",
                     "type": "string",
                     "description": "Tracks the arrival city airport code.",
-                    "pattern": "^[A-Z]{3}$"
+                    "pattern": "^[A-Z]{3}$",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##description"
                   },
                   "xdm:departureAirportCode": {
                     "title": "Departure Airport Code",
                     "type": "string",
                     "description": "Tracks the departure city airport code.",
-                    "pattern": "^[A-Z]{3}$"
+                    "pattern": "^[A-Z]{3}$",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:departureAirportCode##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:departureAirportCode##description"
                   },
                   "xdm:fareClass": {
                     "title": "Fare Class",
                     "type": "string",
-                    "enum": ["first class", "business class", "premium economy", "economy"],
-                    "description": "The fare class of the flight being reserved."
+                    "enum": [
+                      "first class",
+                      "business class",
+                      "premium economy",
+                      "economy"
+                    ],
+                    "description": "The fare class of the flight being reserved.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:fareClass##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:fareClass##description"
                   },
                   "xdm:departureDate": {
                     "title": "Departure Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The departure date of the flight being reserved."
+                    "description": "The departure date of the flight being reserved.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:departureDate##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:departureDate##description"
                   },
                   "xdm:arrivalDate": {
                     "title": "Arrival Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The arrival date of the flight being reserved."
+                    "description": "The arrival date of the flight being reserved.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:arrivalDate##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:arrivalDate##description"
                   },
                   "xdm:flightNumber": {
                     "title": "Flight Number",
                     "type": "string",
-                    "description": "Tracks the flight number."
+                    "description": "Tracks the flight number.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:flightNumber##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightNumber##description"
                   },
                   "xdm:aircraftID": {
                     "title": "Aircraft ID",
                     "type": "string",
-                    "description": "Identifier of the aircraft."
+                    "description": "Identifier of the aircraft.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:aircraftID##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:aircraftID##description"
                   },
                   "xdm:aircraftType": {
                     "title": "Aircraft Type",
                     "type": "string",
-                    "description": "Type of aircraft."
+                    "description": "Type of aircraft.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:aircraftType##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:aircraftType##description"
                   },
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
-                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:loyaltyID##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:loyaltyID##description"
                   },
                   "xdm:passengerID": {
                     "title": "Passenger ID",
                     "type": "string",
-                    "description": "Passenger info associated with the reservation."
+                    "description": "Passenger info associated with the reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:passengerID##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:passengerID##description"
                   },
                   "xdm:salesChannel": {
                     "title": "Sales Channel",
@@ -105,7 +134,9 @@
                       "agent": "Agent",
                       "thirdParty": "Third-Party"
                     },
-                    "description": "Sales channel from which the reservation was booked."
+                    "description": "Sales channel from which the reservation was booked.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:salesChannel##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:salesChannel##description"
                   },
                   "xdm:securityScreening": {
                     "title": "Security Screening",
@@ -114,7 +145,9 @@
                       "standard": "Standard",
                       "precheck": "PreCheck"
                     },
-                    "description": "Type of security screening the passenger is subject to."
+                    "description": "Type of security screening the passenger is subject to.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:securityScreening##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:securityScreening##description"
                   },
                   "xdm:status": {
                     "title": "Status",
@@ -125,59 +158,81 @@
                       "hold": "Hold",
                       "pending": "Pending"
                     },
-                    "description": "The status of the flight reservation."
+                    "description": "The status of the flight reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:status##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:status##description"
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
                     "type": "integer",
-                    "description": "Tracked when a reservation has been cancelled."
+                    "description": "Tracked when a reservation has been cancelled.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:cancellation##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:cancellation##description"
                   },
                   "xdm:confirmationNumber": {
                     "title": "Confirmation Number",
                     "type": "string",
-                    "description": "Tracks the reservation confirmation number/identifier."
+                    "description": "Tracks the reservation confirmation number/identifier.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:confirmationNumber##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:confirmationNumber##description"
                   },
                   "xdm:created": {
                     "title": "Created",
                     "type": "integer",
-                    "description": "Tracked when a reservation has been created."
+                    "description": "Tracked when a reservation has been created.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:created##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:created##description"
                   },
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
                     "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-                    "pattern": "^[A-Z]{3}$"
+                    "pattern": "^[A-Z]{3}$",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:currencyCode##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:currencyCode##description"
                   },
                   "xdm:ticketNumber": {
                     "title": "Ticket Number",
                     "type": "string",
-                    "description": "Tracks the reservation number/identifier."
+                    "description": "Tracks the reservation number/identifier.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:ticketNumber##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:ticketNumber##description"
                   },
                   "xdm:length": {
                     "title": "Length",
                     "type": "integer",
-                    "description": "Tracks the total number of days for a reservation."
+                    "description": "Tracks the total number of days for a reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:length##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:length##description"
                   },
                   "xdm:modification": {
                     "title": "Modification",
                     "type": "integer",
-                    "description": "Captured when a reservation has been modified."
+                    "description": "Captured when a reservation has been modified.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:modification##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:modification##description"
                   },
                   "xdm:modificationDate": {
                     "title": "Modification Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Tracks when a reservation has been modified."
+                    "description": "Tracks when a reservation has been modified.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:modificationDate##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:modificationDate##description"
                   },
                   "xdm:numberOfAdults": {
                     "title": "Number of Adults",
                     "type": "integer",
-                    "description": "Captures the number of adults associated with the reservation."
+                    "description": "Captures the number of adults associated with the reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:numberOfAdults##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:numberOfAdults##description"
                   },
                   "xdm:numberOfChildren": {
                     "title": "Number of Children",
                     "type": "integer",
-                    "description": "Captures the number of children associated with the reservation."
+                    "description": "Captures the number of children associated with the reservation.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:numberOfChildren##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:numberOfChildren##description"
                   },
                   "xdm:purpose": {
                     "title": "Purpose",
@@ -186,7 +241,9 @@
                       "business": "Business",
                       "personal": "Personal"
                     },
-                    "description": "Tracks the purpose of the reservation, typically either business or personal."
+                    "description": "Tracks the purpose of the reservation, typically either business or personal.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:purpose##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:purpose##description"
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -196,7 +253,9 @@
                       "oneWay": "One Way",
                       "multiCity": "Multi-City"
                     },
-                    "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+                    "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+                    "meta:titleId": "experienceevent-flight-reservation##xdm:tripType##title",
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:tripType##description"
                   },
                   "xdm:flightCheckIn": {
                     "type": "object",
@@ -205,53 +264,77 @@
                       "xdm:boardingGroup": {
                         "title": "Boarding Group",
                         "type": "string",
-                        "description": "The airline specific indicator of boarding order."
+                        "description": "The airline specific indicator of boarding order.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:boardingGroup##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:boardingGroup##description"
                       },
                       "xdm:checkedBags": {
                         "title": "Checked Bags",
                         "type": "integer",
-                        "description": "Tracks the number of bags checked for a flight."
+                        "description": "Tracks the number of bags checked for a flight.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:checkedBags##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:checkedBags##description"
                       },
                       "xdm:checkedPassengers": {
                         "title": "Checked Passengers",
                         "type": "integer",
-                        "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number."
+                        "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:checkedPassengers##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:checkedPassengers##description"
                       },
                       "xdm:checkInMethod": {
                         "title": "Check In Method",
                         "type": "string",
-                        "enum": ["counter", "mobile", "web", "kiosk"],
-                        "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service."
+                        "enum": [
+                          "counter",
+                          "mobile",
+                          "web",
+                          "kiosk"
+                        ],
+                        "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:checkInMethod##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:checkInMethod##description"
                       },
                       "xdm:checkInProcess": {
                         "title": "Check In Process",
                         "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                         "description": "Extension of toolUsage data type.",
-                        "meta:status": "deprecated"
+                        "meta:status": "deprecated",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:checkInProcess##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:checkInProcess##description"
                       },
                       "xdm:arrivalAirportCode": {
                         "title": "Arrival Airport Code",
                         "type": "string",
                         "description": "Tracks the arrival city airport code.",
-                        "pattern": "^[A-Z]{3}$"
+                        "pattern": "^[A-Z]{3}$",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##description"
                       },
                       "xdm:departureAirportCode": {
                         "title": "Departure Airport Code",
                         "type": "string",
                         "description": "Tracks the departure city airport code.",
-                        "pattern": "^[A-Z]{3}$"
+                        "pattern": "^[A-Z]{3}$",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:departureAirportCode##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:departureAirportCode##description"
                       },
                       "xdm:flightNumber": {
                         "title": "Flight Number",
                         "type": "string",
-                        "description": "The flight number for the flight being reserved."
+                        "description": "The flight number for the flight being reserved.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:flightNumber##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightNumber##description"
                       },
                       "xdm:confirmationNumber": {
                         "title": "Confirmation Number",
                         "type": "string",
-                        "description": "Tracks the reservation confirmation number/identifier."
+                        "description": "Tracks the reservation confirmation number/identifier.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:confirmationNumber##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:confirmationNumber##description"
                       }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightCheckIn##description"
                   },
                   "xdm:flightStatusSearch": {
                     "type": "object",
@@ -260,37 +343,50 @@
                       "xdm:searchCount": {
                         "title": "Search Count",
                         "type": "integer",
-                        "description": "Incremented when a flight status search occurs."
+                        "description": "Incremented when a flight status search occurs.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:searchCount##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:searchCount##description"
                       },
                       "xdm:flightNumber": {
                         "title": "Flight Number",
                         "type": "string",
-                        "description": "Captures the flight status search flight number."
+                        "description": "Captures the flight status search flight number.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:flightNumber##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightNumber##description"
                       },
                       "xdm:arrivalAirportCode": {
                         "title": "Arrival Airport Code",
                         "type": "string",
                         "description": "Tracks the arrival city airport code.",
-                        "pattern": "^[A-Z]{3}$"
+                        "pattern": "^[A-Z]{3}$",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:arrivalAirportCode##description"
                       },
                       "xdm:departureAirportCode": {
                         "title": "Departure Airport Code",
                         "type": "string",
                         "description": "Tracks the departure city airport code.",
-                        "pattern": "^[A-Z]{3}$"
+                        "pattern": "^[A-Z]{3}$",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:departureAirportCode##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:departureAirportCode##description"
                       },
                       "xdm:departureDate": {
                         "title": "Departure Date",
                         "type": "string",
                         "format": "date-time",
-                        "description": "The departure date of the flight being reserved."
+                        "description": "The departure date of the flight being reserved.",
+                        "meta:titleId": "experienceevent-flight-reservation##xdm:departureDate##title",
+                        "meta:descriptionId": "experienceevent-flight-reservation##xdm:departureDate##description"
                       }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightStatusSearch##description"
                   }
                 }
-              }
+              },
+              "meta:descriptionId": "experienceevent-flight-reservation##xdm:flightReservations##description"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-flight-reservation##xdm:reservations##description"
         }
       }
     }
@@ -304,5 +400,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-10"
+  "meta:createdDate": "2021-02-10",
+  "meta:titleId": "experienceevent-flight-reservation##title",
+  "meta:descriptionId": "experienceevent-flight-reservation##description"
 }

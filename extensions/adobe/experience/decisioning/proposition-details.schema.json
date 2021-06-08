@@ -24,17 +24,23 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
           },
-          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
+          "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionDetails##title",
+          "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionDetails##description"
         },
         "https://ns.adobe.com/experience/decisioning/experienceID": {
           "title": "Experience Reference",
           "type": "string",
-          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value."
+          "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value.",
+          "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/experienceID##title",
+          "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/experienceID##description"
         },
         "https://ns.adobe.com/experience/decisioning/propositionContentKey": {
           "title": "DEPRECATED: Proposition Content Key",
           "type": "string",
-          "description": "DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value."
+          "description": "DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.",
+          "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionContentKey##title",
+          "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionContentKey##description"
         }
       }
     }
@@ -47,5 +53,7 @@
       "$ref": "#/definitions/proposition-details-mixin"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "proposition-details##title",
+  "meta:descriptionId": "proposition-details##description"
 }

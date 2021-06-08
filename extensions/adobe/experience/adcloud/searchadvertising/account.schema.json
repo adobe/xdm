@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
   "definitions": {
     "searchadvertising-account": {
@@ -20,34 +22,51 @@
         "xdm:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "account##xdm:accountId##title",
+          "meta:descriptionId": "account##xdm:accountId##description"
         },
         "xdm:accountName": {
           "title": "Account Name",
           "type": "string",
-          "description": "Name of the Account."
+          "description": "Name of the Account.",
+          "meta:titleId": "account##xdm:accountName##title",
+          "meta:descriptionId": "account##xdm:accountName##description"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": ["USD", "EUR", "JPY"],
+          "examples": [
+            "USD",
+            "EUR",
+            "JPY"
+          ],
           "pattern": "^[A-Z]{3}$",
-          "description": "Currency in which this account operates."
+          "description": "Currency in which this account operates.",
+          "meta:titleId": "account##xdm:currencyCode##title",
+          "meta:descriptionId": "account##xdm:currencyCode##description"
         },
         "xdm:accountStatus": {
           "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
-          "enum": ["Enabled", "Disabled"],
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
           "meta:enum": {
             "Enabled": "Enabled",
             "Disabled": "Disabled"
-          }
+          },
+          "meta:titleId": "account##xdm:accountStatus##title",
+          "meta:descriptionId": "account##xdm:accountStatus##description"
         },
         "xdm:budget": {
           "title": "Budget",
           "type": "number",
-          "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns."
+          "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns.",
+          "meta:titleId": "account##xdm:budget##title",
+          "meta:descriptionId": "account##xdm:budget##description"
         },
         "xdm:budgetType": {
           "title": "Budget Type",
@@ -66,12 +85,16 @@
             "Lifetime": "Lifetime",
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of Week": "Day of Week"
-          }
+          },
+          "meta:titleId": "account##xdm:budgetType##title",
+          "meta:descriptionId": "account##xdm:budgetType##description"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "account##xdm:searchEngineId##title",
+          "meta:descriptionId": "account##xdm:searchEngineId##description"
         }
       }
     }
@@ -87,5 +110,7 @@
       "$ref": "#/definitions/searchadvertising-account"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "account##title",
+  "meta:descriptionId": "account##description"
 }

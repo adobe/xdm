@@ -10,11 +10,6 @@ Opportunity Contact Role additional properties
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/opportunity-contact-role/opportunity-contact-role-details.schema.json](mixins/opportunity-contact-role/opportunity-contact-role-details.schema.json) |
-## Schema Hierarchy
-
-* XDM Buying Group Additional Properties `https://ns.adobe.com/xdm/context/opportunity-contact-role-details`
-  * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-
 
 ## XDM Buying Group Additional Properties Example
 ```json

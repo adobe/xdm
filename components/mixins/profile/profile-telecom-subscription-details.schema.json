@@ -18,7 +18,6 @@
   "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
   "definitions": {
     "telecom-subscriptions": {
-      "type": "object",
       "properties": {
         "xdm:telecomSubscription": {
           "type": "object",
@@ -32,18 +31,6 @@
               "title": "Subscription Details",
               "$ref": "https://ns.adobe.com/xdm/context/subscription",
               "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-            },
-            "xdm:activationDate": {
-              "title": "Activation Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Tracks the date in which the telecom subscription was activated."
-            },
-            "xdm:deactivationDate": {
-              "title": "Deactivation Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Tracks the date in which the telecom subscription was deactivated."
             },
             "xdm:equipmentFees": {
               "title": "Equipment Fees",
@@ -80,18 +67,6 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-                  },
-                  "xdm:activationDate": {
-                    "title": "Activation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was activated."
-                  },
-                  "xdm:deactivationDate": {
-                    "title": "Deactivation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was deactivated."
                   },
                   "xdm:equipmentFees": {
                     "title": "Equipment Fees",
@@ -154,18 +129,6 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-                  },
-                  "xdm:activationDate": {
-                    "title": "Activation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was activated."
-                  },
-                  "xdm:deactivationDate": {
-                    "title": "Deactivation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was deactivated."
                   },
                   "xdm:equipmentFees": {
                     "title": "Equipment Fees",
@@ -246,18 +209,6 @@
                     "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
-                  "xdm:activationDate": {
-                    "title": "Activation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was activated."
-                  },
-                  "xdm:deactivationDate": {
-                    "title": "Deactivation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was deactivated."
-                  },
                   "xdm:equipmentFees": {
                     "title": "Equipment Fees",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
@@ -316,18 +267,6 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
-                  },
-                  "xdm:activationDate": {
-                    "title": "Activation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was activated."
-                  },
-                  "xdm:deactivationDate": {
-                    "title": "Deactivation Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Tracks the date in which the telecom subscription was deactivated."
                   },
                   "xdm:equipmentFees": {
                     "title": "Equipment Fees",

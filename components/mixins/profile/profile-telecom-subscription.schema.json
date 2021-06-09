@@ -1,0 +1,89 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Telecom Subscription",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["telecom"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, package, and included features.",
+  "definitions": {
+    "telecom-subscription": {
+      "properties": {
+        "xdm:telecomSubscription": {
+          "type": "object",
+          "properties": {
+            "xdm:subscriptionID": {
+              "title": "Subscription ID",
+              "type": "string",
+              "description": "Identifier for subscription."
+            },
+            "xdm:responsiblePartyID": {
+              "title": "Responsible Party ID",
+              "type": "string",
+              "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number."
+            },
+            "xdm:subscriptionType": {
+              "title": "Subscription Type",
+              "type": "string",
+              "enum": ["individual", "household", "business"],
+              "meta:enum": {
+                "individual": "Individual",
+                "household": "Household",
+                "business": "Business"
+              },
+              "description": "Indicates the type of telecom subscription in which the customer is enrolled."
+            },
+            "xdm:bundleName": {
+              "title": "Bundle Name",
+              "type": "string",
+              "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'."
+            },
+            "xdm:subscriptionDetails": {
+              "title": "Subscription Details",
+              "$ref": "https://ns.adobe.com/xdm/context/subscription",
+              "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+            },
+            "xdm:activationDate": {
+              "title": "Activation Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the date in which the telecom subscription was activated."
+            },
+            "xdm:deactivationDate": {
+              "title": "Deactivation Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks the date in which the telecom subscription was deactivated."
+            },
+            "xdm:equipmentFees": {
+              "title": "Equipment Fees",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+            },
+            "xdm:equipmentInsurance": {
+              "title": "Equipment Insurance",
+              "type": "boolean",
+              "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/telecom-subscription"
+    }
+  ],
+  "meta:status": "experimental"
+}

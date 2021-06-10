@@ -10,8 +10,7 @@
   "title": "Label Descriptor",
   "meta:extensible": false,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor",
-    "https://ns.adobe.com/xdm/common/descriptors/labeldescriptor"
+    "https://ns.adobe.com/xdm/common/desciptors/schemadescriptor"
   ],
   "meta:abstract": false,
   "type": "object",
@@ -23,16 +22,51 @@
           "type": "string",
           "const": "xdm:descriptorLabel",
           "meta:xdmType": "string"
+        },
+        "xdm:labels": {
+          "title": "Labels",
+          "description": "When present, it allows an array of objects with three properties such as labelType, labelName and labelValue",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "required": [
+              "labelType",
+              "labelName",
+              "labelValue"
+            ],
+            "properties": {
+              "labelType": {
+                "type": "string"
+              },
+              "labelName": {
+                "type": "string"
+              },
+              "labelValue": {
+                "type": "string"
+              }
+            }
+          },
+          "meta:xdmType": "array"
         }
-      }
+      },
+      "oneOf" : [
+        {
+          "required" : [
+            "xdm:labels"
+          ]
+        },
+        {
+          "required" : [
+            "xdm:sourceProperty"
+          ]
+        }
+      ]
     }
   },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/descriptors/labeldescriptor#/definitions/labeldescriptor"
     },
     {
       "$ref": "#/definitions/descriptorLabel"

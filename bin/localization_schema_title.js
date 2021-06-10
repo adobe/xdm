@@ -27,7 +27,7 @@ function addmetaTitleAndDecription(files){
 
 	createLocalizationFileAttributes(originalSchema, localObj)
     });
-    fs.writeFileSync('../__localization__/en_US.json', JSON.stringify(localObj,null, 2), 'utf8');
+    fs.writeFileSync('../__localization__/en-US.json', JSON.stringify(localObj,null, 2), 'utf8');
 }
 
 function addMetaId(obj, val,path,schemaname) {

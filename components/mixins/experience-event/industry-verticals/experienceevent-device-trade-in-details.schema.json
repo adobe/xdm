@@ -7,25 +7,21 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Device Details",
+  "title": "Device Trade-In Details",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "telecom"
-    ]
+    "industry": ["telecom"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
   "definitions": {
     "device-trade-in-details": {
       "properties": {
         "xdm:deviceTradeInDetails": {
           "type": "object",
-          "description": "Device activation, configuration, and trade-in details.",
+		  "description": "Device activation, configuration, and trade-in details.",
           "properties": {
             "xdm:deviceTradeIn": {
               "title": "Steps",

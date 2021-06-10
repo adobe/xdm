@@ -1,0 +1,38 @@
+{
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:labels": [
+    {
+      "labelType": "Custom",
+      "labelName": "Location",
+      "labelValue": "IN"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Location",
+      "labelValue": "FR"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Brand",
+      "labelValue": "DummyBrand"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Brand",
+      "labelValue": "AnotherDummyBrand"
+    },
+    {
+      "labelType": "Governance",
+      "labelName": "DULE",
+      "labelValue": "SPD1"
+    },
+    {
+      "labelType": "Governance",
+      "labelName": "DULE",
+      "labelValue": "PII"
+    }
+  ]
+}

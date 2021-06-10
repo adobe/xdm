@@ -39,13 +39,9 @@ function addMetaId(obj, val,path,schemaname) {
             if(path == null){
                 path = schemaname + '##' + i;  
             }else{
-                if (path != '@id') {
                   path = schemaname + '##' + path + "##" +i;
-                }
             }
-            if (path != '@id') {
                 obj["meta:"+val+"Id"]=path;
-            }
         }
     }
 }

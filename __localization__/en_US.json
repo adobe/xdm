@@ -95,6 +95,8 @@
   "relationshipdescriptor##xdm:cardinality##description": "Source to Destination cardinality",
   "relationshipdescriptor##title": "Relationship Descriptor",
   "relationshipdescriptor##description": "A descriptor that describes a relationship between two schemas, a 'source' and a 'destination'.  This relationship may be directly between the schemas, or between specific properties of the schemas.  Relationship descriptors may be used to describe foreign key relationships between schemas, defining a relational model or star schema.",
+  "schemadescriptor##@id##title": "Identifier",
+  "schemadescriptor##@id##description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
   "schemadescriptor##@type##title": "Type",
   "schemadescriptor##@type##description": "The type of descriptor this object represents.",
   "schemadescriptor##xdm:sourceSchema##title": "Source Schema",

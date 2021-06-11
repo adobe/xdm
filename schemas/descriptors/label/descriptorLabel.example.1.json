@@ -3,11 +3,12 @@
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
-  "xdm:labels": [{
-    "labelType": "Custom",
-    "labelName": "Location",
-    "labelValue": "IN"
-  },
+  "xdm:labels": [
+    {
+      "labelType": "Custom",
+      "labelName": "Location",
+      "labelValue": "IN"
+    },
     {
       "labelType": "Custom",
       "labelName": "Location",

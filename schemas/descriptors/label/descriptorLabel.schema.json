@@ -30,11 +30,7 @@
           "items": {
             "type": "object",
             "meta:xdmType": "object",
-            "required": [
-              "labelType",
-              "labelName",
-              "labelValue"
-            ],
+            "required": ["labelType", "labelName", "labelValue"],
             "properties": {
               "labelType": {
                 "type": "string"
@@ -50,9 +46,7 @@
           "meta:xdmType": "array"
         }
       },
-      "required" : [
-        "xdm:sourceProperty","xdm:labels"
-      ]
+      "required": ["xdm:labels"]
     }
   },
   "allOf": [

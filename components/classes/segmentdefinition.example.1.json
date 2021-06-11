@@ -7,6 +7,9 @@
       }
     ]
   },
+  "xdm:segmentIdentity": {
+    "@id": "seg-id"
+  },
   "xdm:segmentName": "Users with TV segment",
   "xdm:description": "Segment is about users who have TV",
   "xdm:segmentStatus": "ACTIVE",

@@ -9,6 +9,9 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "XDM Buying Group Additional Properties",
     "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
     "meta:extensible": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/opportunity-contact-role"
@@ -41,9 +44,6 @@
         }
     },
     "allOf": [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-        },
         {
             "$ref": "#/definitions/opportunity-contact-role-details"
         }

@@ -32,7 +32,8 @@
     "https://ns.adobe.com/experience/profile/experienceevent-shared",
     "https://ns.adobe.com/experience/implementations-ext",
     "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
-    "https://ns.adobe.com/experience/analytics/commerce"
+    "https://ns.adobe.com/experience/analytics/commerce",
+    "https://ns.adobe.com/experience/decisioning/proposition-interaction"
   ],
   "definitions": {
     "analytics-experienceevent": {
@@ -99,6 +100,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/analytics/commerce"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/proposition-interaction"
     },
     {
       "$ref": "#/definitions/analytics-experienceevent"

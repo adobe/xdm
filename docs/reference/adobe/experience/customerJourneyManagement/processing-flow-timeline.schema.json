@@ -1,0 +1,113 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe CJM ExperienceEvent - Processing Flow Timeline",
+    "description": "Captures an array of time-profiling info, for every component of processing flow.",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "definitions": {
+        "time-profiling": {
+            "type": "object",
+            "description": "This datatype is used to store the time profiling information of any service or component.",
+            "properties": {
+                "xdm:componentName": {
+                    "title": "componentName",
+                    "description": "The name of the service/component, for which time information is captured.",
+                    "type": "string"
+                },
+                "xdm:serviceGroup": {
+                    "title": "serviceGroup",
+                    "description": "An optional attribute, to capture the timeline of a service, at sub-tree level.",
+                    "type": "string"
+                },
+                "xdm:startTime": {
+                    "title": "startTime",
+                    "description": "Execution Start time in Date-Time format for the component.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:endTime": {
+                    "title": "endTime",
+                    "description": "Execution End time in Date-Time format for the component.",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "processing-flow-timeline": {
+            "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline": {
+                    "title": "processingFlowTimeline",
+                    "type": "object",
+                    "properties": {
+                        "xdm:flowName": {
+                            "title": "flowName",
+                            "type": "string",
+                            "description": "Name of the processing flow."
+                        },
+                        "xdm:processingNodes": {
+                            "title": "processingNodes",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/time-profiling"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/processing-flow-timeline"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline": {
+                "xdm:flowName": "ajo",
+                "xdm:processingNodes": [
+                    {
+                        "xdm:componentName": "JO",
+                        "xdm:startTime": "2021-01-26T06:23:28.914Z",
+                        "xdm:endTime": "2021-01-26T06:23:29.924Z"
+                    },
+                    {
+                        "xdm:componentName": "MES",
+                        "xdm:startTime": "2021-01-26T06:23:30.014Z",
+                        "xdm:endTime": "2021-01-26T06:23:30.110Z"
+                    },
+                    {
+                        "xdm:componentName": "HERALD",
+                        "xdm:startTime": "2021-01-26T06:23:30.210Z",
+                        "xdm:endTime": "2021-01-26T06:23:31.415Z"
+                    },
+                    {
+                        "xdm:componentName": "SDS",
+                        "xdm:startTime": "2021-01-26T06:23:30.410Z",
+                        "xdm:endTime": "2021-01-26T06:23:30.610Z"
+                    },
+                    {
+                        "xdm:componentName": "ESS",
+                        "xdm:startTime": "2021-01-26T06:23:30.810Z",
+                        "xdm:endTime": "2021-01-26T06:23:32.115Z"
+                    }
+                ]
+            }
+        }
+    ]
+}

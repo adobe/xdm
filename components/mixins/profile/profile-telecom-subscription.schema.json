@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription-details",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Telecom Subscription",
   "type": "object",
@@ -21,7 +21,7 @@
       "properties": {
         "xdm:telecomSubscription": {
           "type": "object",
-          "properties": {            
+          "properties": {
             "xdm:subscriptionDetails": {
               "title": "Subscription Details",
               "$ref": "https://ns.adobe.com/xdm/context/subscription",

@@ -111,6 +111,7 @@
           "type": "array",
           "description": "Delivery and dining options available from the restaurant.",
           "items": {
+            "type": "string",
             "enum": [
               "outdoorSeating",
               "delivery",

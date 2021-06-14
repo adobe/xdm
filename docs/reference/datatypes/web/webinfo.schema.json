@@ -38,7 +38,7 @@
                         "xdm:URL": {
                             "title": "URL",
                             "type": "string",
-                            "pattern": "^\\w+:\\/\\/(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
+                            "pattern": "^(\\w+:\\/\\/|www)(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
                             "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
                         },
                         "xdm:server": {

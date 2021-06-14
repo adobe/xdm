@@ -41,81 +41,90 @@
         },
         "xdm:cuisine": {
           "title": "Cuisine",
-          "type": "string",
-          "enum": [
-            "chinese",
-            "steak",
-            "sushi",
-            "asian",
-            "vietnamese",
-            "european",
-            "french",
-            "italian",
-            "burgers",
-            "japanese",
-            "barbecue",
-            "mediterranean",
-            "indian",
-            "grill",
-            "seafood",
-            "steakhouse",
-            "mexican",
-            "greek",
-            "american",
-            "thai"
-          ],
-          "meta:enum": {
-            "chinese": "Chinese",
-            "steak": "Steak",
-            "sushi": "Sushi",
-            "asian": "Asian",
-            "vietnamese": "Vietnamese",
-            "european": "European",
-            "french": "French",
-            "italian": "Italian",
-            "burgers": "Burgers",
-            "japanese": "Japanese",
-            "barbecue": "Barbecue",
-            "mediterranean": "Mediterranean",
-            "indian": "Indian",
-            "grill": "Grill",
-            "seafood": "Seafood",
-            "steakhouse": "Steakhouse",
-            "mexican": "Mexican",
-            "greek": "Greek",
-            "american": "American",
-            "thai": "Thai"
-          },
-          "description": "Type of restaurant cuisine."
+          "type": "array",
+          "description": "Type of restaurant cuisine(s).",
+          "items": {
+            "type": "string",
+            "enum": [
+              "chinese",
+              "steak",
+              "sushi",
+              "asian",
+              "vietnamese",
+              "european",
+              "french",
+              "italian",
+              "burgers",
+              "japanese",
+              "barbecue",
+              "mediterranean",
+              "indian",
+              "grill",
+              "seafood",
+              "steakhouse",
+              "mexican",
+              "greek",
+              "american",
+              "thai"
+            ],
+            "meta:enum": {
+              "chinese": "Chinese",
+              "steak": "Steak",
+              "sushi": "Sushi",
+              "asian": "Asian",
+              "vietnamese": "Vietnamese",
+              "european": "European",
+              "french": "French",
+              "italian": "Italian",
+              "burgers": "Burgers",
+              "japanese": "Japanese",
+              "barbecue": "Barbecue",
+              "mediterranean": "Mediterranean",
+              "indian": "Indian",
+              "grill": "Grill",
+              "seafood": "Seafood",
+              "steakhouse": "Steakhouse",
+              "mexican": "Mexican",
+              "greek": "Greek",
+              "american": "American",
+              "thai": "Thai"
+            }
+          }
         },
         "xdm:deliveryPartners": {
           "title": "Delivery Partners",
-          "type": "string",
-          "enum": ["grubhub", "ubereats", "doordash", "other"],
-          "meta:enum": {
-            "grubhub": "GrubHub",
-            "ubereats": "UberEats",
-            "doordash": "DoorDash",
-            "other": "Other"
-          },
-          "description": "Delivery partners available from the restaurant."
+          "type": "array",
+          "description": "Delivery partners available from the restaurant.",
+          "items": {
+            "type": "string",
+            "enum": ["grubhub", "ubereats", "doordash", "other"],
+            "meta:enum": {
+              "grubhub": "GrubHub",
+              "ubereats": "UberEats",
+              "doordash": "DoorDash",
+              "other": "Other"
+            }
+          }
         },
         "xdm:diningOptions": {
           "title": "Dining Options",
-          "type": "string",
-          "enum": [
-            "outdoorSeating",
-            "delivery",
-            "curbside",
-            "takeout",
-            "dogFriendly"
-          ],
-          "meta:enum": {
-            "outdoorSeating": "Outdoor Seating",
-            "delivery": "Delivery",
-            "curbside": "Curbside",
-            "takeout": "Takeout",
-            "dogFriendly": "Dog Friendly"
+          "type": "array",
+          "description": "Delivery and dining options available from the restaurant.",
+          "items": {
+            "enum": [
+              "outdoorSeating",
+              "delivery",
+              "curbside",
+              "takeout",
+              "dogFriendly"
+            ],
+            "meta:enum": {
+              "outdoorSeating": "Outdoor Seating",
+              "delivery": "Delivery",
+              "curbside": "Curbside",
+              "takeout": "Takeout",
+              "dogFriendly": "Dog Friendly"
+            }
           },
           "description": "Delivery and dining options available from the restaurant."
         }

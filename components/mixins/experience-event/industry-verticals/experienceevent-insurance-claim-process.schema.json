@@ -17,9 +17,9 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Claim details including policy ID, police report, and incident date.",
   "definitions": {
-    "claim-details": {
+    "claimDetails": {
       "properties": {
-        "xdm:insurance-claim": {
+        "xdm:insuranceClaim": {
           "type": "object",
           "description": "Captures fields related to a claim when initated by a customer.",
           "properties": {
@@ -52,6 +52,19 @@
             "xdm:type": {
               "title": "Type",
               "type": "string",
+              "enum": [
+                "product",
+                "automobile",
+                "renters",
+                "thirdPartyAutomobile",
+                "thirdPartyHome",
+                "life",
+                "dental",
+                "vision",
+                "flood",
+                "earthquake",
+                "pet"
+              ],
               "meta:enum": {
                 "product": "Product",
                 "automobile": "Automobile",
@@ -75,9 +88,8 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/claim-details"
+      "$ref": "#/definitions/claimDetails"
     }
   ],
-  "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:status": "experimental"
 }

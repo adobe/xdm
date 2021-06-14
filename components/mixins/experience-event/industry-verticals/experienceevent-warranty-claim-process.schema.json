@@ -23,9 +23,9 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
-    "claim-details": {
+    "claimDetails": {
       "properties": {
-        "xdm:warranty-claim": {
+        "xdm:warrantyClaim": {
           "type": "object",
           "description": "Captures fields related to a claim when initated by a customer.",
           "properties": {
@@ -42,6 +42,7 @@
             "xdm:type": {
               "title": "Type",
               "type": "string",
+              "enum": ["product", "recall", "service", "home", "automobile"]
               "meta:enum": {
                 "product": "Product",
                 "recall": "Recall",
@@ -58,9 +59,8 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/claim-details"
+      "$ref": "#/definitions/claimDetails"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:status": "experimental"
 }

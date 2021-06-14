@@ -38,19 +38,19 @@
               "title": "Length",
               "type": "integer",
               "description": "Records the length of the warranty, in months."
-            }
+            },
             "xdm:type": {
               "title": "Type",
               "type": "string",
-              "enum": ["product", "recall", "service", "home", "automobile"]
+              "description": "Type of warranty claim submitted.",
+              "enum": ["product", "recall", "service", "home", "automobile"],
               "meta:enum": {
                 "product": "Product",
                 "recall": "Recall",
                 "service": "Service",
                 "home": "Home",
                 "automobile": "Automobile"
-              },
-              "description": "Type of warranty claim submitted."
+              }
             }
           }
         }

@@ -40,12 +40,6 @@
           "title": "Benefit Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Captures the benefit amount."
-        },
-        "xdm:steps": {
-          "title": "Steps",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-          "description": "Extension of toolUsage data type.",
-          "meta:status": "deprecated"
         }
       }
     }

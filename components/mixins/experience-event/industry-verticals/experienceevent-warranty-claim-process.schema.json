@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-warranty-claim-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Claim Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "telecom",
+      "automotive",
+      "high_tech",
+      "manufacturing"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Claim details such as claim policy ID and claim creation steps.",
+  "definitions": {
+    "claimDetails": {
+      "properties": {
+        "xdm:warrantyClaim": {
+          "type": "object",
+          "description": "Captures fields related to a claim when initated by a customer.",
+          "properties": {
+            "xdm:claim": {
+              "title": "Claim",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
+              "description": "Extension of claim data type."
+            },
+            "xdm:length": {
+              "title": "Length",
+              "type": "integer",
+              "description": "Records the length of the warranty, in months."
+            },
+            "xdm:type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Type of warranty claim submitted.",
+              "enum": ["product", "recall", "service", "home", "automobile"],
+              "meta:enum": {
+                "product": "Product",
+                "recall": "Recall",
+                "service": "Service",
+                "home": "Home",
+                "automobile": "Automobile"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/claimDetails"
+    }
+  ],
+  "meta:status": "experimental"
+}

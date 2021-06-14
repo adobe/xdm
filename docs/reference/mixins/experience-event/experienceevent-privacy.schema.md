@@ -1,22 +1,22 @@
 
-# Privacy Details Schema
+# IAB TCF 2.0 Consent Schema
 
 ```
 https://ns.adobe.com/xdm/context/experienceevent-privacy
 ```
 
-Consent information such as consent format, and consent to personal data.
+Include the IAB TCF 2.0 string in experience events.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/experience-event/experienceevent-privacy.schema.json](mixins/experience-event/experienceevent-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Privacy Details `https://ns.adobe.com/xdm/context/experienceevent-privacy`
+* IAB TCF 2.0 Consent `https://ns.adobe.com/xdm/context/experienceevent-privacy`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Privacy Details Example
+## IAB TCF 2.0 Consent Example
 ```json
 {
   "xdm:consentStrings": [
@@ -31,11 +31,11 @@ Consent information such as consent format, and consent to personal data.
 }
 ```
 
-# Privacy Details Properties
+# IAB TCF 2.0 Consent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | Privacy Details (this schema) |
+| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | IAB TCF 2.0 Consent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:consentStrings

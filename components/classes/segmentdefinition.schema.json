@@ -22,8 +22,7 @@
         "xdm:segmentIdentity": {
           "title": "Segment identity",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "Identity of the segment.",
-          "meta:status": "deprecated"
+          "description": "Identity of the segment."
         },
         "xdm:segmentName": {
           "title": "Segment name",
@@ -49,7 +48,7 @@
       }
     }
   },
-  "required": ["xdm:identityMap", "xdm:segmentName"],
+  "required": ["xdm:segmentName"],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

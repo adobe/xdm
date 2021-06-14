@@ -22,8 +22,7 @@
                 "xdm:segmentIdentity": {
                     "title": "Segment identity",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-                    "description": "Identity of the segment.",
-                    "meta:status": "deprecated"
+                    "description": "Identity of the segment."
                 },
                 "xdm:segmentName": {
                     "title": "Segment name",
@@ -56,7 +55,6 @@
         }
     },
     "required": [
-        "xdm:identityMap",
         "xdm:segmentName"
     ],
     "allOf": [
@@ -87,6 +85,9 @@
                         "xdm:primary": true
                     }
                 ]
+            },
+            "xdm:segmentIdentity": {
+                "@id": "seg-id"
             },
             "xdm:segmentName": "Users with TV segment",
             "xdm:description": "Segment is about users who have TV",

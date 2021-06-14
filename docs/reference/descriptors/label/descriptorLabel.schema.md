@@ -1,79 +1,74 @@
 
-# Friendly Name Descriptor Schema
+# Label Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo
+https://ns.adobe.com/xdm/common/descriptors/descriptorLabel
 ```
 
-Allows to modify the "title" and "description" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.
+Describes a label at the field level for a given class/fieldgroup/schema
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/display/alternateDisplayInfo.schema.json](descriptors/display/alternateDisplayInfo.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/label/descriptorLabel.schema.json](descriptors/label/descriptorLabel.schema.json) |
 ## Schema Hierarchy
 
-* Friendly Name Descriptor `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo`
+* Label Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorLabel`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Friendly Name Descriptor Examples
-
+## Label Descriptor Example
 ```json
 {
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:title": {
-    "en_us": "friendly title for browser details",
-    "fr_ca": "titre convivial pour les détails du navigateur"
-  }
+  "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:labels": [
+    {
+      "labelType": "Custom",
+      "labelName": "Location",
+      "labelValue": "IN"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Location",
+      "labelValue": "FR"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Brand",
+      "labelValue": "DummyBrand"
+    },
+    {
+      "labelType": "Custom",
+      "labelName": "Brand",
+      "labelValue": "AnotherDummyBrand"
+    },
+    {
+      "labelType": "Governance",
+      "labelName": "DULE",
+      "labelValue": "SPD1"
+    },
+    {
+      "labelType": "Governance",
+      "labelName": "DULE",
+      "labelValue": "PII"
+    }
+  ]
 }
 ```
 
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:description": {
-    "en_us": "friendly description for browser details",
-    "fr_ca": "description conviviale pour les détails du navigateur"
-  }
-}
-```
-
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:title": {
-    "en_us": "friendly title for browser details"
-  },
-  "xdm:description": {
-    "en_us": "friendly description for browser details"
-  }
-}
-```
-
-
-# Friendly Name Descriptor Properties
+# Label Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | Friendly Name Descriptor (this schema) |
-| [meta:enum](#metaenum) | `object` | Optional | Friendly Name Descriptor (this schema) |
-| [xdm:description](#xdmdescription) | `object` | Optional | Friendly Name Descriptor (this schema) |
-| [xdm:note](#xdmnote) | `object` | Optional | Friendly Name Descriptor (this schema) |
+| [@type](#type) | `const` | Optional | Label Descriptor (this schema) |
+| [xdm:labels](#xdmlabels) | `object[]` | Optional | Label Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
-| [xdm:title](#xdmtitle) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -98,7 +93,7 @@ The unique identifier for the schema descriptor. This property is required when 
 
 
 ## @type
-### Type
+
 
 `@type`
 * is optional
@@ -108,77 +103,101 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:alternateDisplayInfo"
+"xdm:descriptorLabel"
 ```
 
 
 
 
 
-## meta:enum
-### Extended meta:enum values
+## xdm:labels
+### Labels
 
-`meta:enum`
+When present, it allows an array of objects with three properties such as labelType, labelName and labelValue
+
+`xdm:labels`
 * is optional
-* type: `object`
+* type: `object[]`
+
 * defined in this schema
 
-### meta:enum Type
+### xdm:labels Type
 
 
+Array type: `object[]`
+
+All items must be of the type:
 `object` with following properties:
 
 
 | Property | Type | Required |
 |----------|------|----------|
+| `labelName`| string | **Required** |
+| `labelType`| string | **Required** |
+| `labelValue`| string | **Required** |
+
+
+
+#### labelName
+
+undefined
+
+`labelName`
+* is **required**
+* type: `string`
+
+##### labelName Type
+
+
+`string`
 
 
 
 
 
 
-## xdm:description
-### Description
-
-When present, user friendly description to display.
-
-`xdm:description`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:description Type
 
 
-`object` with following properties:
+#### labelType
+
+undefined
+
+`labelType`
+* is **required**
+* type: `string`
+
+##### labelType Type
 
 
-| Property | Type | Required |
-|----------|------|----------|
+`string`
 
 
 
 
 
 
-## xdm:note
-### Note
-
-When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.
-
-`xdm:note`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:note Type
 
 
-`object` with following properties:
+#### labelValue
+
+undefined
+
+`labelValue`
+* is **required**
+* type: `string`
+
+##### labelValue Type
 
 
-| Property | Type | Required |
-|----------|------|----------|
+`string`
+
+
+
+
+
+
+
+
 
 
 
@@ -296,30 +315,6 @@ Major version being referenced.
 
 
 `number`
-
-
-
-
-
-
-## xdm:title
-### Title
-
-When present, user friendly title to display.
-
-`xdm:title`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:title Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
 
 
 

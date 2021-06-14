@@ -1,5 +1,5 @@
 
-# Device Details Schema
+# Device Trade-In Details Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details
@@ -12,11 +12,11 @@ Device trade-in details including trade-in value, original device ID, and new de
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json](mixins/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json) |
 ## Schema Hierarchy
 
-* Device Details `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details`
+* Device Trade-In Details `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details`
   * [Tool Usage](../../../datatypes/industry-verticals/tool-usage.schema.md) `https://ns.adobe.com/xdm/datatypes/tool-usage`
 
 
-## Device Details Example
+## Device Trade-In Details Example
 ```json
 {
   "xdm:deviceTradeInDetails": {
@@ -32,12 +32,12 @@ Device trade-in details including trade-in value, original device ID, and new de
 }
 ```
 
-# Device Details Properties
+# Device Trade-In Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:deviceActivation](#xdmdeviceactivation) | Tool Usage | Optional | Device Details (this schema) |
-| [xdm:deviceTradeInDetails](#xdmdevicetradeindetails) | `object` | Optional | Device Details (this schema) |
+| [xdm:deviceActivation](#xdmdeviceactivation) | Tool Usage | Optional | Device Trade-In Details (this schema) |
+| [xdm:deviceTradeInDetails](#xdmdevicetradeindetails) | `object` | Optional | Device Trade-In Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:deviceActivation

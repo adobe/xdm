@@ -109,7 +109,6 @@ The value of this property **must** be equal to one of the [known values below](
 | Value | Description |
 |-------|-------------|
 | `M:1` |  |
-| `1:1` |  |
 
 
 
@@ -245,6 +244,13 @@ Provides a user friendly title for the destination->source edge
 
 
 `string`
+
+* maximum length: 35 characters
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5BA-Za-z0-9_%5D*%24)):
+```regex
+^[A-Za-z0-9_]*$
+```
 
 
 
@@ -402,6 +408,13 @@ Provides a user friendly title for the source->destination edge
 
 
 `string`
+
+* maximum length: 35 characters
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5BA-Za-z0-9_%5D*%24)):
+```regex
+^[A-Za-z0-9_]*$
+```
 
 
 

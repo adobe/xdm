@@ -4,36 +4,44 @@
 
 
 
-## /airship/
-
-* [Airship Event Mixin](./airship/airship-event.schema.md) – `https://ns.airship.com/airship-event` (Experimental)
-
-## /common/
-
-* [User identity](./common/identity.schema.md) – `https://ns.adobe.com/xdm/common/identity` (Deprecated)
-
-## /descriptors/
-
-* [Item Selector](./descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
-* [Relationship Descriptor](./descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
-* [Schema Descriptor](./descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
-
 ## /behaviors/
 
 * [Ad Hoc Schema](./behaviors/adhoc.schema.md) – `https://ns.adobe.com/xdm/data/adhoc` (Stable)
 * [Record Schema](./behaviors/record.schema.md) – `https://ns.adobe.com/xdm/data/record` (Stable)
 * [Time-series Schema](./behaviors/time-series.schema.md) – `https://ns.adobe.com/xdm/data/time-series` (Stable)
 
-## /identity/
+## /common/
 
-* [Identity Graph Flattened Export Schema](./identity/identity-graph-flattened-export.schema.md) – `https://ns.adobe.com/xdm/context/identity-graph-flattened-export` (Stable)
-* [Identity Namespace](./identity/identity-namespace.schema.md) – `https://ns.adobe.com/xdm/context/identity-namespace` (Stable)
+* [User identity](./common/identity.schema.md) – `https://ns.adobe.com/xdm/common/identity` (Deprecated)
+
+## /airship/
+
+* [Airship Event Mixin](./airship/airship-event.schema.md) – `https://ns.airship.com/airship-event` (Experimental)
+
+## /classes/
+
+* [Lodging Product](./classes/lodging-product.schema.md) – `https://ns.adobe.com/xdm/classes/lodging-product` (Stable)
+* [Product](./classes/product.schema.md) – `https://ns.adobe.com/xdm/classes/product` (Experimental)
+* [Promotion](./classes/promotion.schema.md) – `https://ns.adobe.com/xdm/classes/promotion` (Stable)
+* [Segment definition](./classes/segmentdefinition.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition` (Stable)
+* [Vehicle Product](./classes/vehicle-product.schema.md) – `https://ns.adobe.com/xdm/classes/vehicle-product` (Stable)
+* [XDM Business Campaign](./classes/campaign.schema.md) – `https://ns.adobe.com/xdm/classes/campaign` (Experimental)
+* [XDM Business Campaign Members](./classes/campaign-member.schema.md) – `https://ns.adobe.com/xdm/context/campaign-member` (Experimental)
+* [XDM ExperienceEvent](./classes/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stable)
+* [XDM Graphs](./classes/graphs.schema.md) – `https://ns.adobe.com/xdm/context/graphs` (Stable)
+* [XDM Individual Profile](./classes/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Stable)
 
 ## /destinations/
 
 * [Destinations](./destinations/destination.schema.md) – `https://ns.adobe.com/xdm/context/destination` (Stable)
 * [Destinations Namespace Mapping](./destinations/destination-namespace.schema.md) – `https://ns.adobe.com/xdm/context/destination-namespace` (Stable)
 * [Destinations Segment Mapping](./destinations/destination-segment.schema.md) – `https://ns.adobe.com/xdm/context/destination-segment` (Stable)
+
+## /descriptors/
+
+* [Item Selector](./descriptors/itemselector.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/itemselector` (Stable)
+* [Relationship Descriptor](./descriptors/relationshipdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor` (Stable)
+* [Schema Descriptor](./descriptors/schemadescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor` (Stable)
 
 ## /notifications/
 
@@ -70,18 +78,10 @@
 * [Segment membership](./datatypes/segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembership` (Stable)
 * [Segment membership item](./datatypes/segmentmembershipitem.schema.md) – `https://ns.adobe.com/xdm/context/segmentmembershipitem` (Stable)
 
-## /classes/
+## /identity/
 
-* [Lodging Product](./classes/lodging-product.schema.md) – `https://ns.adobe.com/xdm/classes/lodging-product` (Stable)
-* [Product](./classes/product.schema.md) – `https://ns.adobe.com/xdm/classes/product` (Experimental)
-* [Promotion](./classes/promotion.schema.md) – `https://ns.adobe.com/xdm/classes/promotion` (Stable)
-* [Segment definition](./classes/segmentdefinition.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition` (Stable)
-* [Vehicle Product](./classes/vehicle-product.schema.md) – `https://ns.adobe.com/xdm/classes/vehicle-product` (Stable)
-* [XDM Business Campaign](./classes/campaign.schema.md) – `https://ns.adobe.com/xdm/classes/campaign` (Experimental)
-* [XDM Business Campaign Members](./classes/campaign-member.schema.md) – `https://ns.adobe.com/xdm/context/campaign-member` (Experimental)
-* [XDM ExperienceEvent](./classes/experienceevent.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent` (Stable)
-* [XDM Graphs](./classes/graphs.schema.md) – `https://ns.adobe.com/xdm/context/graphs` (Stable)
-* [XDM Individual Profile](./classes/profile.schema.md) – `https://ns.adobe.com/xdm/context/profile` (Stable)
+* [Identity Graph Flattened Export Schema](./identity/identity-graph-flattened-export.schema.md) – `https://ns.adobe.com/xdm/context/identity-graph-flattened-export` (Stable)
+* [Identity Namespace](./identity/identity-namespace.schema.md) – `https://ns.adobe.com/xdm/context/identity-namespace` (Stable)
 
 ## /adobe/experience/
 
@@ -100,14 +100,34 @@
 * [Data capture region for Profile](./adobe/experience/profile-edgeregion.schema.md) – `https://ns.adobe.com/experience/profile-edgeregion` (Stable)
 * [Test Mobile Lifecycle Details](./adobe/experience/mobile-lifecycle-details-test.schema.md) – `https://ns.adobe.com/xdm/mixins/mobile-lifecycle-details-test` (Experimental)
 
-## /descriptors/display/
+## /classes/fsi/
 
-* [Friendly Name Descriptor](./descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stable)
+* [ATM](./classes/fsi/atm.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/atm` (Stable)
+* [Branch](./classes/fsi/branch.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/branch` (Stable)
+* [Policy](./classes/fsi/policy.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/policy` (Stable)
 
 ## /descriptors/identity/
 
 * [Identity Descriptor](./descriptors/identity/descriptorIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity` (Stable)
 * [Identity Reference Descriptor](./descriptors/identity/descriptorReferenceIdentity.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorReferenceIdentity` (Stable)
+
+## /classes/b2b/
+
+* [XDM Business Account](./classes/b2b/account.schema.md) – `https://ns.adobe.com/xdm/context/account` (Experimental)
+* [XDM Business Account Person Relation](./classes/b2b/account-person.schema.md) – `https://ns.adobe.com/xdm/classes/account-person` (Experimental)
+* [XDM Business Marketing List](./classes/b2b/marketing-list.schema.md) – `https://ns.adobe.com/xdm/classes/marketing-list` (Experimental)
+* [XDM Business Marketing List Members](./classes/b2b/marketing-list-member.schema.md) – `https://ns.adobe.com/xdm/classes/marketing-list-member` (Experimental)
+* [XDM Business Opportunity](./classes/b2b/opportunity.schema.md) – `https://ns.adobe.com/xdm/context/opportunity` (Experimental)
+* [XDM Business Opportunity Person Relation](./classes/b2b/opportunity-person.schema.md) – `https://ns.adobe.com/xdm/classes/opportunity-person` (Experimental)
+* [XDM Buying Group](./classes/b2b/opportunity-contact-role.schema.md) – `https://ns.adobe.com/xdm/context/opportunity-contact-role` (Deprecated)
+
+## /descriptors/display/
+
+* [Friendly Name Descriptor](./descriptors/display/alternateDisplayInfo.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo` (Stable)
+
+## /destinations/solutions/
+
+* [Adobe Analytics ExperienceEvent](./destinations/solutions/analytics-experienceevent.schema.md) – `https://ns.adobe.com/xdm/destinations/adobe-analytics` (Experimental)
 
 ## /descriptors/relationship/
 
@@ -118,149 +138,13 @@
 * [One to One Relationship Descriptor](./descriptors/relationship/descriptorOneToOne.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorOneToOne` (Stable)
 * [Relationship Descriptor](./descriptors/relationship/descriptorRelationship.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorRelationship` (Experimental)
 
+## /descriptors/label/
+
+* [Label Descriptor](./descriptors/label/descriptorLabel.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/descriptorLabel` (Stable)
+
 ## /descriptors/search/
 
 * [Search Descriptor](./descriptors/search/searchdescriptor.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/searchdescriptor` (Stable)
-
-## /descriptors/relationshipv2/
-
-* [One to Many Bi-Directional Relationship Descriptor](./descriptors/relationshipv2/relationshipOneToMany.schema.md) – `https://ns.adobe.com/xdm/common/descriptors/relationshipOneToMany` (Deprecated)
-
-## /destinations/solutions/
-
-* [Adobe Analytics ExperienceEvent](./destinations/solutions/analytics-experienceevent.schema.md) – `https://ns.adobe.com/xdm/destinations/adobe-analytics` (Experimental)
-
-## /mixins/campaign-member/
-
-* [XDM Business Campaign Member Components](./mixins/campaign-member/campaign-member-components.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-member-components` (Deprecated)
-* [XDM Business Campaign Member Details](./mixins/campaign-member/campaign-member-details.schema.md) – `https://ns.adobe.com/xdm/context/campaign-member-details` (Experimental)
-
-## /mixins/account/
-
-* [XDM Business Account Components](./mixins/account/account-components.schema.md) – `https://ns.adobe.com/xdm/mixins/account-components` (Deprecated)
-* [XDM Business Account Details](./mixins/account/account-details.schema.md) – `https://ns.adobe.com/xdm/mixins/account-details` (Experimental)
-* [XDM Business Account Person Relation Components](./mixins/account/account-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/account-person-components` (Deprecated)
-* [XDM Related Business Accounts](./mixins/account/related-accounts.schema.md) – `https://ns.adobe.com/xdm/mixins/related-accounts` (Experimental)
-
-## /mixins/campaign/
-
-* [XDM Business Campaign Components](./mixins/campaign/campaign-components.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-components` (Deprecated)
-* [XDM Business Campaign Details](./mixins/campaign/campaign-details.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-details` (Experimental)
-
-## /mixins/marketing-list/
-
-* [XDM Business Marketing List Components](./mixins/marketing-list/marketing-list-components.schema.md) – `https://ns.adobe.com/xdm/mixins/marketing-list-components` (Deprecated)
-* [XDM Business Marketing List Member Components](./mixins/marketing-list/marketing-list-member-components.schema.md) – `https://ns.adobe.com/xdm/mixins/marketing-list-member-components` (Deprecated)
-
-## /mixins/graphs/
-
-* [XDM Graph Edge](./mixins/graphs/graph-edge.schema.md) – `https://ns.adobe.com/xdm/context/graph-edge` (Stable)
-* [XDM Graph Node/Vertex Schema](./mixins/graphs/graph-node.schema.md) – `https://ns.adobe.com/xdm/context/graph-node` (Stable)
-* [XDM Graph Schema](./mixins/graphs/graph.schema.md) – `https://ns.adobe.com/xdm/context/graph` (Stable)
-
-## /mixins/opportunity-contact-role/
-
-* [XDM Buying Group Additional Properties](./mixins/opportunity-contact-role/opportunity-contact-role-details.schema.md) – `https://ns.adobe.com/xdm/context/opportunity-contact-role-details` (Experimental)
-
-## /mixins/opportunity/
-
-* [XDM Business Opportunity Components](./mixins/opportunity/opportunity-components.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-components` (Deprecated)
-* [XDM Business Opportunity Details](./mixins/opportunity/opportunity-details.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-details` (Experimental)
-* [XDM Business Opportunity Person Relation Components](./mixins/opportunity/opportunity-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-person-components` (Deprecated)
-
-## /mixins/deprecated/
-
-* [Alert Setup Steps](./mixins/deprecated/experienceevent-alert-setup-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-alert-setup-steps` (Deprecated)
-* [Appointment Request Steps](./mixins/deprecated/experienceevent-appointment-request-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-appointment-request-steps` (Deprecated)
-* [Autopay Enrollment Details](./mixins/deprecated/experienceevent-autopay-enrollment-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-autopay-enrollment-details` (Deprecated)
-* [Dispute Steps](./mixins/deprecated/experienceevent-dispute-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-dispute-steps` (Deprecated)
-* [ExperienceEvent endUserIDs (deprecated)](./mixins/deprecated/experienceevent-enduserids-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated` (Deprecated)
-* [Financial Account Creation Steps](./mixins/deprecated/experienceevent-financial-account-creation-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-financial-account-creation-steps` (Deprecated)
-* [Financial Calculator Steps](./mixins/deprecated/experienceevent-financial-calculator-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-financial-calculator-steps` (Deprecated)
-* [Identities array for profile (deprecated)](./mixins/deprecated/profile-identities-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/profile-identities-deprecated` (Deprecated)
-* [Paperless Enrollment Steps](./mixins/deprecated/experienceevent-paperless-enrollment-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-paperless-enrollment-steps` (Deprecated)
-* [Privacy/Marketing Preferences (Consent)](./mixins/deprecated/deprecated-profile-consent.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-consent` (Deprecated)
-* [Referral Steps](./mixins/deprecated/experienceevent-referral-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-referral-steps` (Deprecated)
-* [Request Credit Score Steps](./mixins/deprecated/experienceevent-request-credit-score-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-request-credit-score-steps` (Deprecated)
-* [Support Request](./mixins/deprecated/experienceevent-support-request.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-support-request` (Deprecated)
-* [Watchlist Steps](./mixins/deprecated/experienceevent-watchlist-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-watchlist-steps` (Deprecated)
-
-## /mixins/product/
-
-* [Product Catalog](./mixins/product/product-catalog.schema.md) – `https://ns.adobe.com/xdm/mixins/product-catalog` (Experimental)
-* [Product Catalog Category](./mixins/product/product-catalog-category.schema.md) – `https://ns.adobe.com/xdm/mixins/product-catalog-category` (Experimental)
-* [Product Category](./mixins/product/product-category.schema.md) – `https://ns.adobe.com/xdm/mixins/product-category` (Experimental)
-* [Product Identifiers](./mixins/product/product-identifiers.schema.md) – `https://ns.adobe.com/xdm/mixins/product-identifiers` (Experimental)
-* [Product Measurement](./mixins/product/product-measurement.schema.md) – `https://ns.adobe.com/xdm/mixins/product-measurement` (Experimental)
-
-## /mixins/experience-event/
-
-* [Advertising Details](./mixins/experience-event/experienceevent-advertising.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-advertising` (Stable)
-* [Application Details](./mixins/experience-event/experienceevent-application.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-application` (Stable)
-* [Campaign Marketing Details](./mixins/experience-event/experienceevent-marketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-marketing` (Stable)
-* [Card Actions](./mixins/experience-event/experienceevent-card-actions.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-card-actions` (Stable)
-* [Channel Details](./mixins/experience-event/experienceevent-channel.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-channel` (Stable)
-* [Commerce Details](./mixins/experience-event/experienceevent-commerce.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-commerce` (Stable)
-* [Consumer Experience Event](./mixins/experience-event/experienceevent-consumer.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-consumer` (Stable)
-* [Direct Marketing Details](./mixins/experience-event/experienceevent-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-directmarketing` (Stable)
-* [End User ID Details](./mixins/experience-event/experienceevent-enduserids.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids` (Stable)
-* [Environment Details](./mixins/experience-event/experienceevent-environment-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-environment-details` (Stable)
-* [File Download Details](./mixins/experience-event/experienceevent-file-download-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details` (Stable)
-* [File Upload Details](./mixins/experience-event/experienceevent-file-upload-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details` (Stable)
-* [Implementation Details](./mixins/experience-event/experienceevent-implementation-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-implementation-details` (Stable)
-* [Knowledge Base Details](./mixins/experience-event/experienceevent-knowledge-base-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details` (Stable)
-* [Media Interaction Details ](./mixins/experience-event/experienceevent-media.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-media` (Stable)
-* [Offer Impression Details](./mixins/experience-event/experienceevent-offer-impression-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details` (Stable)
-* [Privacy Details](./mixins/experience-event/experienceevent-privacy.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-privacy` (Stable)
-* [Profile Stitch Details](./mixins/experience-event/experienceevent-profile-stitch.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch` (Stable)
-* [Push notification tracking](./mixins/experience-event/experienceevent-pushtracking.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-pushtracking` (Stable)
-* [Quote Request Details](./mixins/experience-event/experienceevent-quote-request-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-details` (Stable)
-* [Search Details](./mixins/experience-event/experienceevent-search.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-search` (Stable)
-* [Segment Membership Details](./mixins/experience-event/experienceevent-segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership` (Stable)
-* [Service Payment Details](./mixins/experience-event/experienceevent-service-payment-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-service-payment-details` (Stable)
-* [Social Network Usage Details](./mixins/experience-event/experienceevent-social-network-usage-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details` (Stable)
-* [Support Site Search](./mixins/experience-event/experienceevent-support-site-search.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search` (Stable)
-* [Survey Response Details](./mixins/experience-event/experienceevent-survey-response-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details` (Stable)
-* [Technical Details](./mixins/experience-event/experienceevent-technical-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-technical-details` (Stable)
-* [User Login Process](./mixins/experience-event/experienceevent-user-login-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details` (Stable)
-* [Web Details](./mixins/experience-event/experienceevent-web.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-web` (Stable)
-
-## /mixins/segment-definition/
-
-* [Segment Expression Details ](./mixins/segment-definition/segmentdefinition-expression.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition-expression` (Stable)
-
-## /mixins/shared/
-
-* [External Source System Audit Details Mixin](./mixins/shared/external-source-system-audit-details.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit-details` (Stable)
-* [IdentityMap](./mixins/shared/identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap` (Stable)
-* [Person Identifier](./mixins/shared/person-identifier.schema.md) – `https://ns.adobe.com/xdm/mixins/person-identifier` (Experimental)
-
-## /mixins/profile/
-
-* [Demographic Details](./mixins/profile/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details` (Stable)
-* [Demographic Details v2](./mixins/profile/profile-person-details-v2.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-person-details-v2` (Experimental)
-* [Loyalty Details](./mixins/profile/profile-loyalty-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-loyalty-details` (Stable)
-* [Mobile Plan Details](./mixins/profile/profile-mobile-plan-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details` (Experimental)
-* [Personal Contact Details](./mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details` (Stable)
-* [Personal Finance Details](./mixins/profile/profile-personal-finance-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-personal-finance-details` (Stable)
-* [Personal Tax Profile Details](./mixins/profile/profile-personal-tax-profile-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-personal-tax-profile-details` (Stable)
-* [Phone Number Details](./mixins/profile/profile-phones.schema.md) – `https://ns.adobe.com/xdm/context/profile-phones` (Experimental)
-* [Preference Details](./mixins/profile/profile-preferences-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-preferences-details` (Stable)
-* [Privacy Details](./mixins/profile/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Stable)
-* [Privacy/Personalization/Marketing Preferences (Consents)](./mixins/profile/profile-consents.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-consents` (Stable)
-* [Profile Other Work Details](./mixins/profile/profile-other-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-other-work-details` (Experimental)
-* [Profile direct marketing](./mixins/profile/profile-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/profile-directmarketing` (Stable)
-* [Profile owning entity details](./mixins/profile/profile-owning-entities.schema.md) – `https://ns.adobe.com/xdm/context/profile-owning-entities` (Stable)
-* [Profile test details](./mixins/profile/profile-test-profile.schema.md) – `https://ns.adobe.com/xdm/context/profile-test-profile` (Stable)
-* [Push Notification Details](./mixins/profile/profile-push-notification-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-notification-details` (Stable)
-* [Push Notification Token Details](./mixins/profile/profile-push-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-details` (Deprecated)
-* [Segment Membership Details](./mixins/profile/profile-segmentation.schema.md) – `https://ns.adobe.com/xdm/context/profile-segmentation` (Stable)
-* [Subscription Details](./mixins/profile/profile-subscriptions.schema.md) – `https://ns.adobe.com/xdm/context/profile-subscriptions` (Stable)
-* [User Account Details](./mixins/profile/profile-user-account-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details` (Stable)
-* [Work Contact Details](./mixins/profile/profile-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-work-details` (Stable)
-* [XDM Business Person Components](./mixins/profile/b2b-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/b2b-person-components` (Experimental)
-* [XDM Business Person Details](./mixins/profile/b2b-person-details.schema.md) – `https://ns.adobe.com/xdm/mixins/b2b-person-details` (Experimental)
-* [XDM Inferred Person](./mixins/profile/profile-inferred-person.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-inferred-person` (Deprecated)
 
 ## /datatypes/auditing/
 
@@ -274,15 +158,6 @@
 * [B2B Source](./datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source` (Deprecated)
 * [Organization](./datatypes/b2b/organization.schema.md) – `https://ns.adobe.com/xdm/common/organization` (Experimental)
 * [Organizational unit](./datatypes/b2b/orgunit.schema.md) – `https://ns.adobe.com/xdm/common/orgunit` (Stable)
-
-## /datatypes/consent/
-
-* [Consent String](./datatypes/consent/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring` (Stable)
-* [Consent for Privacy, Personalization and Marketing Preferences](./datatypes/consent/consent-preferences.schema.md) – `https://ns.adobe.com/xdm/datatypes/consents-and-preferences` (Stable)
-* [Generic Consent Field](./datatypes/consent/consent-field.schema.md) – `https://ns.adobe.com/xdm/datatype/consent-field` (Stable)
-* [Generic Marketing Preference Field](./datatypes/consent/marketing-field-basic.schema.md) – `https://ns.adobe.com/xdm/datatype/marketing-preference-field` (Stable)
-* [Generic Marketing Preference Field with Subscriptions](./datatypes/consent/marketing-field-subscription.schema.md) – `https://ns.adobe.com/xdm/datatype/marketing-preference-with-subscriptions` (Stable)
-* [Generic Personalization Preference Field](./datatypes/consent/personalization-field.schema.md) – `https://ns.adobe.com/xdm/datatype/personalization-preference-field` (Stable)
 
 ## /datatypes/channels/
 
@@ -298,6 +173,27 @@
 * [Phone number](./datatypes/demographic/phonenumber.schema.md) – `https://ns.adobe.com/xdm/context/phonenumber` (Stable)
 * [Physical place](./datatypes/demographic/place.schema.md) – `https://ns.adobe.com/xdm/context/place` (Stable)
 * [Postal address](./datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address` (Stable)
+
+## /datatypes/consent/
+
+* [Consent String](./datatypes/consent/consentstring.schema.md) – `https://ns.adobe.com/xdm/context/consentstring` (Stable)
+* [Consent for Privacy, Personalization and Marketing Preferences](./datatypes/consent/consent-preferences.schema.md) – `https://ns.adobe.com/xdm/datatypes/consents-and-preferences` (Stable)
+* [Generic Consent Field](./datatypes/consent/consent-field.schema.md) – `https://ns.adobe.com/xdm/datatype/consent-field` (Stable)
+* [Generic Marketing Preference Field](./datatypes/consent/marketing-field-basic.schema.md) – `https://ns.adobe.com/xdm/datatype/marketing-preference-field` (Stable)
+* [Generic Marketing Preference Field with Subscriptions](./datatypes/consent/marketing-field-subscription.schema.md) – `https://ns.adobe.com/xdm/datatype/marketing-preference-with-subscriptions` (Stable)
+* [Generic Personalization Preference Field](./datatypes/consent/personalization-field.schema.md) – `https://ns.adobe.com/xdm/datatype/personalization-preference-field` (Stable)
+
+## /datatypes/data/
+
+* [Cart Abandons](./datatypes/data/cart-abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/cart-abandons` (Stable)
+* [Data Source](./datatypes/data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource` (Stable)
+* [Measure](./datatypes/data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure` (Stable)
+* [Metric Definition](./datatypes/data/metricdefinition.schema.md) – `https://ns.adobe.com/xdm/data/metricdefinition` (Stable)
+* [Opens](./datatypes/data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Stable)
+* [Order](./datatypes/data/order.schema.md) – `https://ns.adobe.com/xdm/data/order` (Stable)
+* [Page Views](./datatypes/data/pageviews.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/pageviews` (Stable)
+* [Payment Item](./datatypes/data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem` (Stable)
+* [Time-series Extension for Record Data](./datatypes/data/record-timeseries-events.schema.md) – `https://ns.adobe.com/xdm/data/record-timeseries-events` (Stable)
 
 ## /datatypes/deprecated/
 
@@ -327,32 +223,6 @@
 * [Unsubscriptions](./datatypes/deprecated/unsubscriptions.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions` (Deprecated)
 * [User Complaints](./datatypes/deprecated/user-complaints.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/user-complaints` (Deprecated)
 
-## /datatypes/data/
-
-* [Cart Abandons](./datatypes/data/cart-abandons.schema.md) – `https://ns.adobe.com/xdm/data/metrics/cart-abandons` (Stable)
-* [Data Source](./datatypes/data/datasource.schema.md) – `https://ns.adobe.com/xdm/data/datasource` (Stable)
-* [Measure](./datatypes/data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure` (Stable)
-* [Metric Definition](./datatypes/data/metricdefinition.schema.md) – `https://ns.adobe.com/xdm/data/metricdefinition` (Stable)
-* [Opens](./datatypes/data/opens.schema.md) – `https://ns.adobe.com/xdm/data/metrics/direct-marketing/opens` (Stable)
-* [Order](./datatypes/data/order.schema.md) – `https://ns.adobe.com/xdm/data/order` (Stable)
-* [Page Views](./datatypes/data/pageviews.schema.md) – `https://ns.adobe.com/xdm/data/metrics/web/pageviews` (Stable)
-* [Payment Item](./datatypes/data/paymentitem.schema.md) – `https://ns.adobe.com/xdm/data/paymentitem` (Stable)
-* [Time-series Extension for Record Data](./datatypes/data/record-timeseries-events.schema.md) – `https://ns.adobe.com/xdm/data/record-timeseries-events` (Stable)
-
-## /datatypes/industry-verticals/
-
-* [Comparisons](./datatypes/industry-verticals/comparisons.schema.md) – `https://ns.adobe.com/xdm/datatypes/comparisons` (Stable)
-* [Customer Managed Environment](./datatypes/industry-verticals/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Stable)
-* [File Transfer](./datatypes/industry-verticals/file-transfer.schema.md) – `https://ns.adobe.com/xdm/datatypes/file-transfer` (Stable)
-* [Financial Account](./datatypes/industry-verticals/financial-account.schema.md) – `https://ns.adobe.com/xdm/datatypes/financial-account` (Stable)
-* [Form Applications](./datatypes/industry-verticals/form-applications.schema.md) – `https://ns.adobe.com/xdm/datatypes/form-applications` (Stable)
-* [Implementation details](./datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stable)
-* [Impressions](./datatypes/industry-verticals/impressions.schema.md) – `https://ns.adobe.com/xdm/datatypes/impressions` (Stable)
-* [Internal Site Search](./datatypes/industry-verticals/internal-site-search.schema.md) – `https://ns.adobe.com/xdm/datatypes/internal-site-search` (Stable)
-* [Subscription](./datatypes/industry-verticals/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Stable)
-* [Tool Usage](./datatypes/industry-verticals/tool-usage.schema.md) – `https://ns.adobe.com/xdm/datatypes/tool-usage` (Experimental)
-* [Transaction](./datatypes/industry-verticals/transaction.schema.md) – `https://ns.adobe.com/xdm/datatypes/transaction` (Stable)
-
 ## /datatypes/interactions/
 
 * [Beacon](./datatypes/interactions/beacon-interaction-details.schema.md) – `https://ns.adobe.com/xdm/context/beacon-interaction-details` (Deprecated)
@@ -372,17 +242,19 @@
 * [MRC Viewability](./datatypes/marketing/adviewability.schema.md) – `https://ns.adobe.com/xdm/context/adviewability` (Deprecated)
 * [Marketing](./datatypes/marketing/marketing.schema.md) – `https://ns.adobe.com/xdm/context/marketing` (Stable)
 
-## /datatypes/person/
+## /datatypes/industry-verticals/
 
-* [Person](./datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Stable)
-* [Person name](./datatypes/person/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Stable)
-
-## /datatypes/web/
-
-* [Web information](./datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stable)
-* [Web interaction](./datatypes/web/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Deprecated)
-* [Web page details](./datatypes/web/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Deprecated)
-* [Web referrer](./datatypes/web/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Deprecated)
+* [Comparisons](./datatypes/industry-verticals/comparisons.schema.md) – `https://ns.adobe.com/xdm/datatypes/comparisons` (Stable)
+* [Customer Managed Environment](./datatypes/industry-verticals/selfservice.schema.md) – `https://ns.adobe.com/xdm/common/selfservice` (Stable)
+* [File Transfer](./datatypes/industry-verticals/file-transfer.schema.md) – `https://ns.adobe.com/xdm/datatypes/file-transfer` (Stable)
+* [Financial Account](./datatypes/industry-verticals/financial-account.schema.md) – `https://ns.adobe.com/xdm/datatypes/financial-account` (Stable)
+* [Form Applications](./datatypes/industry-verticals/form-applications.schema.md) – `https://ns.adobe.com/xdm/datatypes/form-applications` (Stable)
+* [Implementation details](./datatypes/industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails` (Stable)
+* [Impressions](./datatypes/industry-verticals/impressions.schema.md) – `https://ns.adobe.com/xdm/datatypes/impressions` (Stable)
+* [Internal Site Search](./datatypes/industry-verticals/internal-site-search.schema.md) – `https://ns.adobe.com/xdm/datatypes/internal-site-search` (Stable)
+* [Subscription](./datatypes/industry-verticals/subscription.schema.md) – `https://ns.adobe.com/xdm/context/subscription` (Stable)
+* [Tool Usage](./datatypes/industry-verticals/tool-usage.schema.md) – `https://ns.adobe.com/xdm/datatypes/tool-usage` (Experimental)
+* [Transaction](./datatypes/industry-verticals/transaction.schema.md) – `https://ns.adobe.com/xdm/datatypes/transaction` (Stable)
 
 ## /datatypes/media/
 
@@ -396,31 +268,164 @@
 * [Timed media primary asset reference](./datatypes/media/media-timed-asset-reference.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-asset-reference` (Deprecated)
 * [Timed media quality of experience](./datatypes/media/media-timed-qoe.schema.md) – `https://ns.adobe.com/xdm/context/media-timed-qoe` (Deprecated)
 
-## /classes/fsi/
+## /datatypes/person/
 
-* [ATM](./classes/fsi/atm.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/atm` (Stable)
-* [Branch](./classes/fsi/branch.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/branch` (Stable)
-* [Policy](./classes/fsi/policy.schema.md) – `https://ns.adobe.com/xdm/classes/fsi/policy` (Stable)
+* [Person](./datatypes/person/person.schema.md) – `https://ns.adobe.com/xdm/context/person` (Stable)
+* [Person name](./datatypes/person/person-name.schema.md) – `https://ns.adobe.com/xdm/context/person-name` (Stable)
 
-## /classes/b2b/
+## /datatypes/web/
 
-* [XDM Business Account](./classes/b2b/account.schema.md) – `https://ns.adobe.com/xdm/context/account` (Experimental)
-* [XDM Business Account Person Relation](./classes/b2b/account-person.schema.md) – `https://ns.adobe.com/xdm/classes/account-person` (Experimental)
-* [XDM Business Marketing List](./classes/b2b/marketing-list.schema.md) – `https://ns.adobe.com/xdm/classes/marketing-list` (Experimental)
-* [XDM Business Marketing List Members](./classes/b2b/marketing-list-member.schema.md) – `https://ns.adobe.com/xdm/classes/marketing-list-member` (Experimental)
-* [XDM Business Opportunity](./classes/b2b/opportunity.schema.md) – `https://ns.adobe.com/xdm/context/opportunity` (Experimental)
-* [XDM Business Opportunity Person Relation](./classes/b2b/opportunity-person.schema.md) – `https://ns.adobe.com/xdm/classes/opportunity-person` (Experimental)
-* [XDM Buying Group](./classes/b2b/opportunity-contact-role.schema.md) – `https://ns.adobe.com/xdm/context/opportunity-contact-role` (Deprecated)
+* [Web information](./datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo` (Stable)
+* [Web interaction](./datatypes/web/webinteraction.schema.md) – `https://ns.adobe.com/xdm/context/webinteraction` (Deprecated)
+* [Web page details](./datatypes/web/webpagedetails.schema.md) – `https://ns.adobe.com/xdm/context/webpagedetails` (Deprecated)
+* [Web referrer](./datatypes/web/webreferrer.schema.md) – `https://ns.adobe.com/xdm/context/webreferrer` (Deprecated)
+
+## /mixins/campaign/
+
+* [XDM Business Campaign Components](./mixins/campaign/campaign-components.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-components` (Deprecated)
+* [XDM Business Campaign Details](./mixins/campaign/campaign-details.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-details` (Experimental)
+
+## /mixins/account/
+
+* [XDM Business Account Components](./mixins/account/account-components.schema.md) – `https://ns.adobe.com/xdm/mixins/account-components` (Deprecated)
+* [XDM Business Account Details](./mixins/account/account-details.schema.md) – `https://ns.adobe.com/xdm/mixins/account-details` (Experimental)
+* [XDM Business Account Person Relation Components](./mixins/account/account-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/account-person-components` (Deprecated)
+* [XDM Related Business Accounts](./mixins/account/related-accounts.schema.md) – `https://ns.adobe.com/xdm/mixins/related-accounts` (Experimental)
+
+## /mixins/graphs/
+
+* [XDM Graph Edge](./mixins/graphs/graph-edge.schema.md) – `https://ns.adobe.com/xdm/context/graph-edge` (Stable)
+* [XDM Graph Node/Vertex Schema](./mixins/graphs/graph-node.schema.md) – `https://ns.adobe.com/xdm/context/graph-node` (Stable)
+* [XDM Graph Schema](./mixins/graphs/graph.schema.md) – `https://ns.adobe.com/xdm/context/graph` (Stable)
+
+## /mixins/marketing-list/
+
+* [XDM Business Marketing List Components](./mixins/marketing-list/marketing-list-components.schema.md) – `https://ns.adobe.com/xdm/mixins/marketing-list-components` (Deprecated)
+* [XDM Business Marketing List Member Components](./mixins/marketing-list/marketing-list-member-components.schema.md) – `https://ns.adobe.com/xdm/mixins/marketing-list-member-components` (Deprecated)
+
+## /mixins/campaign-member/
+
+* [XDM Business Campaign Member Components](./mixins/campaign-member/campaign-member-components.schema.md) – `https://ns.adobe.com/xdm/mixins/campaign-member-components` (Deprecated)
+* [XDM Business Campaign Member Details](./mixins/campaign-member/campaign-member-details.schema.md) – `https://ns.adobe.com/xdm/context/campaign-member-details` (Experimental)
+
+## /mixins/deprecated/
+
+* [Alert Setup Steps](./mixins/deprecated/experienceevent-alert-setup-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-alert-setup-steps` (Deprecated)
+* [Appointment Request Steps](./mixins/deprecated/experienceevent-appointment-request-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-appointment-request-steps` (Deprecated)
+* [Autopay Enrollment Details](./mixins/deprecated/experienceevent-autopay-enrollment-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-autopay-enrollment-details` (Deprecated)
+* [Dispute Steps](./mixins/deprecated/experienceevent-dispute-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-dispute-steps` (Deprecated)
+* [ExperienceEvent endUserIDs (deprecated)](./mixins/deprecated/experienceevent-enduserids-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids-deprecated` (Deprecated)
+* [Financial Account Creation Steps](./mixins/deprecated/experienceevent-financial-account-creation-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-financial-account-creation-steps` (Deprecated)
+* [Financial Calculator Steps](./mixins/deprecated/experienceevent-financial-calculator-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-financial-calculator-steps` (Deprecated)
+* [Identities array for profile (deprecated)](./mixins/deprecated/profile-identities-deprecated.schema.md) – `https://ns.adobe.com/xdm/context/profile-identities-deprecated` (Deprecated)
+* [Paperless Enrollment Steps](./mixins/deprecated/experienceevent-paperless-enrollment-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-paperless-enrollment-steps` (Deprecated)
+* [Privacy/Marketing Preferences (Consent)](./mixins/deprecated/deprecated-profile-consent.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-consent` (Deprecated)
+* [Referral Steps](./mixins/deprecated/experienceevent-referral-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-referral-steps` (Deprecated)
+* [Request Credit Score Steps](./mixins/deprecated/experienceevent-request-credit-score-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-request-credit-score-steps` (Deprecated)
+* [Support Request](./mixins/deprecated/experienceevent-support-request.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-support-request` (Deprecated)
+* [Watchlist Steps](./mixins/deprecated/experienceevent-watchlist-steps.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-watchlist-steps` (Deprecated)
+
+## /mixins/opportunity/
+
+* [XDM Business Opportunity Components](./mixins/opportunity/opportunity-components.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-components` (Deprecated)
+* [XDM Business Opportunity Details](./mixins/opportunity/opportunity-details.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-details` (Experimental)
+* [XDM Business Opportunity Person Relation Components](./mixins/opportunity/opportunity-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/opportunity-person-components` (Deprecated)
+
+## /mixins/experience-event/
+
+* [Advertising Details](./mixins/experience-event/experienceevent-advertising.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-advertising` (Stable)
+* [Application Details](./mixins/experience-event/experienceevent-application.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-application` (Stable)
+* [Campaign Marketing Details](./mixins/experience-event/experienceevent-marketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-marketing` (Stable)
+* [Card Actions](./mixins/experience-event/experienceevent-card-actions.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-card-actions` (Stable)
+* [Channel Details](./mixins/experience-event/experienceevent-channel.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-channel` (Stable)
+* [Commerce Details](./mixins/experience-event/experienceevent-commerce.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-commerce` (Stable)
+* [Consumer Experience Event](./mixins/experience-event/experienceevent-consumer.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-consumer` (Stable)
+* [Direct Marketing Details](./mixins/experience-event/experienceevent-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-directmarketing` (Stable)
+* [End User ID Details](./mixins/experience-event/experienceevent-enduserids.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-enduserids` (Stable)
+* [Environment Details](./mixins/experience-event/experienceevent-environment-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-environment-details` (Stable)
+* [File Download Details](./mixins/experience-event/experienceevent-file-download-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-file-download-details` (Stable)
+* [File Upload Details](./mixins/experience-event/experienceevent-file-upload-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-file-upload-details` (Stable)
+* [IAB TCF 2.0 Consent](./mixins/experience-event/experienceevent-privacy.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-privacy` (Stable)
+* [Implementation Details](./mixins/experience-event/experienceevent-implementation-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-implementation-details` (Stable)
+* [Knowledge Base Details](./mixins/experience-event/experienceevent-knowledge-base-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details` (Stable)
+* [Media Interaction Details ](./mixins/experience-event/experienceevent-media.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-media` (Stable)
+* [Offer Impression Details](./mixins/experience-event/experienceevent-offer-impression-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-offer-impression-details` (Stable)
+* [Profile Stitch Details](./mixins/experience-event/experienceevent-profile-stitch.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch` (Stable)
+* [Push notification tracking](./mixins/experience-event/experienceevent-pushtracking.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-pushtracking` (Stable)
+* [Quote Request Details](./mixins/experience-event/experienceevent-quote-request-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-details` (Stable)
+* [Search Details](./mixins/experience-event/experienceevent-search.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-search` (Stable)
+* [Segment Membership Details](./mixins/experience-event/experienceevent-segmentmembership.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership` (Stable)
+* [Service Payment Details](./mixins/experience-event/experienceevent-service-payment-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-service-payment-details` (Stable)
+* [Social Network Usage Details](./mixins/experience-event/experienceevent-social-network-usage-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details` (Stable)
+* [Support Site Search](./mixins/experience-event/experienceevent-support-site-search.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search` (Stable)
+* [Survey Response Details](./mixins/experience-event/experienceevent-survey-response-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-survey-response-details` (Stable)
+* [Technical Details](./mixins/experience-event/experienceevent-technical-details.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-technical-details` (Stable)
+* [User Login Process](./mixins/experience-event/experienceevent-user-login-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details` (Stable)
+* [Web Details](./mixins/experience-event/experienceevent-web.schema.md) – `https://ns.adobe.com/xdm/context/experienceevent-web` (Stable)
+
+## /mixins/opportunity-contact-role/
+
+* [XDM Buying Group Additional Properties](./mixins/opportunity-contact-role/opportunity-contact-role-details.schema.md) – `https://ns.adobe.com/xdm/context/opportunity-contact-role-details` (Experimental)
+
+## /mixins/shared/
+
+* [External Source System Audit Details Mixin](./mixins/shared/external-source-system-audit-details.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit-details` (Stable)
+* [IdentityMap](./mixins/shared/identitymap.schema.md) – `https://ns.adobe.com/xdm/context/identitymap` (Stable)
+* [Person Identifier](./mixins/shared/person-identifier.schema.md) – `https://ns.adobe.com/xdm/mixins/person-identifier` (Experimental)
+
+## /mixins/product/
+
+* [Product Catalog](./mixins/product/product-catalog.schema.md) – `https://ns.adobe.com/xdm/mixins/product-catalog` (Experimental)
+* [Product Catalog Category](./mixins/product/product-catalog-category.schema.md) – `https://ns.adobe.com/xdm/mixins/product-catalog-category` (Experimental)
+* [Product Category](./mixins/product/product-category.schema.md) – `https://ns.adobe.com/xdm/mixins/product-category` (Experimental)
+* [Product Identifiers](./mixins/product/product-identifiers.schema.md) – `https://ns.adobe.com/xdm/mixins/product-identifiers` (Experimental)
+* [Product Measurement](./mixins/product/product-measurement.schema.md) – `https://ns.adobe.com/xdm/mixins/product-measurement` (Experimental)
+
+## /mixins/segment-definition/
+
+* [Segment Expression Details ](./mixins/segment-definition/segmentdefinition-expression.schema.md) – `https://ns.adobe.com/xdm/context/segmentdefinition-expression` (Stable)
+
+## /mixins/profile/
+
+* [Consents and Preferences](./mixins/profile/profile-consents.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-consents` (Stable)
+* [Demographic Details](./mixins/profile/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details` (Stable)
+* [Demographic Details v2](./mixins/profile/profile-person-details-v2.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-person-details-v2` (Experimental)
+* [IAB TCF 2.0 Consent](./mixins/profile/profile-privacy.schema.md) – `https://ns.adobe.com/xdm/context/profile-privacy` (Stable)
+* [Internet Subscription](./mixins/profile/profile-internet-subscription.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-internet-subscription` (Experimental)
+* [Landline Subscription](./mixins/profile/profile-landline-subscription.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-landline-subscription` (Experimental)
+* [Loyalty Details](./mixins/profile/profile-loyalty-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-loyalty-details` (Stable)
+* [Mobile Plan Details](./mixins/profile/profile-mobile-plan-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details` (Experimental)
+* [Personal Contact Details](./mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details` (Stable)
+* [Personal Finance Details](./mixins/profile/profile-personal-finance-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-personal-finance-details` (Stable)
+* [Personal Tax Profile Details](./mixins/profile/profile-personal-tax-profile-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-personal-tax-profile-details` (Stable)
+* [Phone Number Details](./mixins/profile/profile-phones.schema.md) – `https://ns.adobe.com/xdm/context/profile-phones` (Experimental)
+* [Preference Details](./mixins/profile/profile-preferences-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-preferences-details` (Stable)
+* [Profile Other Work Details](./mixins/profile/profile-other-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-other-work-details` (Experimental)
+* [Profile direct marketing](./mixins/profile/profile-directmarketing.schema.md) – `https://ns.adobe.com/xdm/context/profile-directmarketing` (Stable)
+* [Profile owning entity details](./mixins/profile/profile-owning-entities.schema.md) – `https://ns.adobe.com/xdm/context/profile-owning-entities` (Stable)
+* [Profile test details](./mixins/profile/profile-test-profile.schema.md) – `https://ns.adobe.com/xdm/context/profile-test-profile` (Stable)
+* [Push Notification Details](./mixins/profile/profile-push-notification-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-notification-details` (Stable)
+* [Push Notification Token Details](./mixins/profile/profile-push-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-push-details` (Deprecated)
+* [Segment Membership Details](./mixins/profile/profile-segmentation.schema.md) – `https://ns.adobe.com/xdm/context/profile-segmentation` (Stable)
+* [Subscription Details](./mixins/profile/profile-subscriptions.schema.md) – `https://ns.adobe.com/xdm/context/profile-subscriptions` (Stable)
+* [Telecom Subscription](./mixins/profile/profile-telecom-subscription-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription-details` (Experimental)
+* [Telecom Subscription](./mixins/profile/profile-telecom-subscription.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription` (Experimental)
+* [User Account Details](./mixins/profile/profile-user-account-details.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details` (Stable)
+* [Work Contact Details](./mixins/profile/profile-work-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-work-details` (Stable)
+* [XDM Business Person Components](./mixins/profile/b2b-person-components.schema.md) – `https://ns.adobe.com/xdm/mixins/b2b-person-components` (Experimental)
+* [XDM Business Person Details](./mixins/profile/b2b-person-details.schema.md) – `https://ns.adobe.com/xdm/mixins/b2b-person-details` (Experimental)
+* [XDM Inferred Person](./mixins/profile/profile-inferred-person.schema.md) – `https://ns.adobe.com/xdm/mixins/profile-inferred-person` (Deprecated)
+* [media Subscription](./mixins/profile/profile-media-subscription.schema.md) – `https://ns.adobe.com/xdm/mixins/profile/profile-media-subscription` (Experimental)
+
+## /adobe/b2b/marketo/
+
+* [Marketo Web URL](./adobe/b2b/marketo/marketo-web-url.schema.md) – `https://ns.adobe.com/b2b/marketo/marketo-web-url` (Experimental)
 
 ## /adobe/b2b/bizible/
 
 * [Bizible Account Details](./adobe/b2b/bizible/bizible-account-details.schema.md) – `https://ns.adobe.com/b2b/bizible/bizible-account-details` (Experimental)
 * [Bizible Business Opportunity Details](./adobe/b2b/bizible/bizible-opportunity-details.schema.md) – `https://ns.adobe.com/b2b/bizible/bizible-opportunity-details` (Experimental)
 * [Bizible Business Person Details](./adobe/b2b/bizible/bizible-person-details.schema.md) – `https://ns.adobe.com/b2b/bizible/bizible-person-details` (Experimental)
-
-## /adobe/b2b/marketo/
-
-* [Marketo Web URL](./adobe/b2b/marketo/marketo-web-url.schema.md) – `https://ns.adobe.com/b2b/marketo/marketo-web-url` (Experimental)
 
 ## /adobe/experience/adcloud/
 
@@ -448,6 +453,14 @@
 * [Adobe Audience Manager Segment Definition Mixin](./adobe/experience/audiencemanager/segmentdefinition.schema.md) – `https://ns.adobe.com/experience/audiencemanager/segmentdefinition` (Stable)
 * [Adobe Audience Manager Segment Folder Class](./adobe/experience/audiencemanager/segmentfolder.schema.md) – `https://ns.adobe.com/experience/audiencemanager/segmentfolder` (Stable)
 
+## /adobe/experience/customerJourneyManagement/
+
+* [Adobe CJM ExperienceEvent - Message Delivery Feedback Details](./adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback` (Stable)
+* [Adobe CJM ExperienceEvent - Message Execution Details](./adobe/experience/customerJourneyManagement/messageexecution.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/messageexecution` (Stable)
+* [Adobe CJM ExperienceEvent - Message Profile Details](./adobe/experience/customerJourneyManagement/messageprofile.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/messageprofile` (Stable)
+* [Adobe CJM ExperienceEvent - Message interaction details](./adobe/experience/customerJourneyManagement/message-interaction.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/message-interaction` (Stable)
+* [Adobe CJM ExperienceEvent - Processing Flow Timeline](./adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline` (Experimental)
+
 ## /adobe/experience/analytics/
 
 * [Adobe Analytics Custom Events](./adobe/experience/analytics/events.schema.md) – `https://ns.adobe.com/experience/analytics/events` (Stable)
@@ -471,14 +484,6 @@
 * [](./adobe/experience/analytics/event801to900.schema.md) – `https://ns.adobe.com/experience/analytics/event801to900` (Unknown)
 * [](./adobe/experience/analytics/event901to1000.schema.md) – `https://ns.adobe.com/experience/analytics/event901to1000` (Unknown)
 * [](./adobe/experience/analytics/session.schema.md) – `https://ns.adobe.com/experience/analytics/session` (Unknown)
-
-## /adobe/experience/customerJourneyManagement/
-
-* [Adobe CJM ExperienceEvent - Message Delivery Feedback Details](./adobe/experience/customerJourneyManagement/message-delivery-feedback.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback` (Stable)
-* [Adobe CJM ExperienceEvent - Message Execution Details](./adobe/experience/customerJourneyManagement/messageexecution.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/messageexecution` (Stable)
-* [Adobe CJM ExperienceEvent - Message Profile Details](./adobe/experience/customerJourneyManagement/messageprofile.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/messageprofile` (Stable)
-* [Adobe CJM ExperienceEvent - Message interaction details](./adobe/experience/customerJourneyManagement/message-interaction.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/message-interaction` (Stable)
-* [Adobe CJM ExperienceEvent - Processing Flow Timeline](./adobe/experience/customerJourneyManagement/processing-flow-timeline.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline` (Experimental)
 
 ## /adobe/experience/campaign/
 
@@ -584,27 +589,27 @@
 * [Proposition Interaction Details](./adobe/experience/decisioning/proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details` (Stable)
 * [Ranking Details](./adobe/experience/decisioning/ranking-details.schema.md) – `https://ns.adobe.com/experience/decisioning/ranking-details` (Stable)
 
-## /mixins/experience-event/industry-verticals/
+## /datatypes/external/repo/
 
-* [Alert Impressions](./mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions` (Stable)
-* [Balance Transfers](./mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers` (Stable)
-* [Bill Pay Details](./mixins/experience-event/industry-verticals/experienceevent-bill-pay-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details` (Stable)
-* [Card Application Process](./mixins/experience-event/industry-verticals/experienceevent-card-application-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-card-application-details` (Stable)
-* [Claim Process](./mixins/experience-event/industry-verticals/experienceevent-claim-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-claim-details` (Stable)
-* [Contact Request Details](./mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-contact-request-details` (Stable)
-* [Credit Limit Increase Details](./mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-credit-limit-increase-details` (Stable)
-* [Deposit Details](./mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details` (Stable)
-* [Device Details](./mixins/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details` (Experimental)
-* [Dining Reservation](./mixins/experience-event/industry-verticals/experienceevent-dining-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation` (Stable)
-* [Flight Reservation](./mixins/experience-event/industry-verticals/experienceevent-flight-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation` (Stable)
-* [Loan Application Details](./mixins/experience-event/industry-verticals/experienceevent-loan-application-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-loan-application-details` (Stable)
-* [Lodging Reservation](./mixins/experience-event/industry-verticals/experienceevent-lodging-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation` (Stable)
-* [Prescription Details](./mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details` (Stable)
-* [Reservation Details](./mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details` (Stable)
-* [Reservation Search](./mixins/experience-event/industry-verticals/experienceevent-reservation-search.schema.md) – `https://ns.adobe.com/xdm/mixins/experience-event/industry-verticals/experienceevent-reservation-search` (Stable)
-* [Upgrade Details](./mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upgrade-details` (Stable)
-* [Upsell Details](./mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details` (Stable)
-* [Vehicle Reservation](./mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation` (Stable)
+* [Common Properties](./datatypes/external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Stable)
+
+## /datatypes/external/id3/
+
+* [Audio](./datatypes/external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
+
+## /datatypes/external/iptc/
+
+* [Creator](./datatypes/external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
+* [Episode](./datatypes/external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
+* [Rating](./datatypes/external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
+* [Season](./datatypes/external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
+* [Series](./datatypes/external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
+
+## /datatypes/external/schema/
+
+* [Geo Circle](./datatypes/external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
+* [Geo Coordinates](./datatypes/external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
+* [Geo Shape](./datatypes/external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
 
 ## /mixins/experience-event/events/
 
@@ -628,27 +633,27 @@
 * [Status In Campaign Progression Changed](./mixins/experience-event/events/statusincampaignprogressionchanged.schema.md) – `https://ns.adobe.com/xdm/mixins/events/statusincampaignprogressionchanged` (Experimental)
 * [Visit Web Page](./mixins/experience-event/events/visit-webpage.schema.md) – `https://ns.adobe.com/xdm/mixins/events/visit-webpage` (Experimental)
 
-## /datatypes/external/id3/
+## /mixins/experience-event/industry-verticals/
 
-* [Audio](./datatypes/external/id3/audio.schema.md) – `https://id3.org/id3v2.4/audio` (Stable)
-
-## /datatypes/external/iptc/
-
-* [Creator](./datatypes/external/iptc/creator.schema.md) – `http://www.iptc.org/creator` (Stable)
-* [Episode](./datatypes/external/iptc/episode.schema.md) – `http://www.iptc.org/episode` (Stable)
-* [Rating](./datatypes/external/iptc/rating.schema.md) – `http://www.iptc.org/rating` (Stable)
-* [Season](./datatypes/external/iptc/season.schema.md) – `http://www.iptc.org/season` (Stable)
-* [Series](./datatypes/external/iptc/series.schema.md) – `http://www.iptc.org/series` (Stable)
-
-## /datatypes/external/repo/
-
-* [Common Properties](./datatypes/external/repo/common.schema.md) – `http://ns.adobe.com/adobecloud/core/1.0` (Stable)
-
-## /datatypes/external/schema/
-
-* [Geo Circle](./datatypes/external/schema/geocircle.schema.md) – `http://schema.org/GeoCircle` (Stable)
-* [Geo Coordinates](./datatypes/external/schema/geocoordinates.schema.md) – `http://schema.org/GeoCoordinates` (Stable)
-* [Geo Shape](./datatypes/external/schema/geoshape.schema.md) – `http://schema.org/GeoShape` (Stable)
+* [Alert Impressions](./mixins/experience-event/industry-verticals/experienceevent-alert-impressions.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions` (Stable)
+* [Balance Transfers](./mixins/experience-event/industry-verticals/experienceevent-balance-transfers.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers` (Stable)
+* [Bill Pay Details](./mixins/experience-event/industry-verticals/experienceevent-bill-pay-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details` (Stable)
+* [Card Application Process](./mixins/experience-event/industry-verticals/experienceevent-card-application-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-card-application-details` (Stable)
+* [Claim Process](./mixins/experience-event/industry-verticals/experienceevent-claim-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-claim-details` (Stable)
+* [Contact Request Details](./mixins/experience-event/industry-verticals/experienceevent-contact-request-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-contact-request-details` (Stable)
+* [Credit Limit Increase Details](./mixins/experience-event/industry-verticals/experienceevent-credit-limit-increase-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-credit-limit-increase-details` (Stable)
+* [Deposit Details](./mixins/experience-event/industry-verticals/experienceevent-deposit-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details` (Stable)
+* [Device Trade-In Details](./mixins/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details` (Experimental)
+* [Dining Reservation](./mixins/experience-event/industry-verticals/experienceevent-dining-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-dining-reservation` (Stable)
+* [Flight Reservation](./mixins/experience-event/industry-verticals/experienceevent-flight-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-reservation` (Stable)
+* [Loan Application Details](./mixins/experience-event/industry-verticals/experienceevent-loan-application-details.schema.md) – `https://ns.adobe.com/xdm/mixins/experienceevent-loan-application-details` (Stable)
+* [Lodging Reservation](./mixins/experience-event/industry-verticals/experienceevent-lodging-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation` (Stable)
+* [Prescription Details](./mixins/experience-event/industry-verticals/experienceevent-prescription-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details` (Stable)
+* [Reservation Details](./mixins/experience-event/industry-verticals/experienceevent-reservation-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details` (Stable)
+* [Reservation Search](./mixins/experience-event/industry-verticals/experienceevent-reservation-search.schema.md) – `https://ns.adobe.com/xdm/mixins/experience-event/industry-verticals/experienceevent-reservation-search` (Stable)
+* [Upgrade Details](./mixins/experience-event/industry-verticals/experienceevent-upgrade-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upgrade-details` (Stable)
+* [Upsell Details](./mixins/experience-event/industry-verticals/experienceevent-upsell-details.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details` (Stable)
+* [Vehicle Reservation](./mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.md) – `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation` (Stable)
 
 ## /adobe/experience/adcloud/dsp/
 
@@ -661,6 +666,17 @@
 * [DSP Advertising Placement Site](./adobe/experience/adcloud/dsp/site.schema.md) – `https://ns.adobe.com/xdm/adcloud/dsp/site` (Stable)
 * [DSP Advertising Promoted Video](./adobe/experience/adcloud/dsp/promotedvideo.schema.md) – `https://ns.adobe.com/xdm/adcloud/dsp/promotedvideo` (Stable)
 
+## /adobe/experience/adcloud/searchadvertising/
+
+* [Search Advertising Account](./adobe/experience/adcloud/searchadvertising/account.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/account` (Deprecated)
+* [Search Advertising AdGroup](./adobe/experience/adcloud/searchadvertising/adgroup.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/adgroup` (Deprecated)
+* [Search Advertising Aggregated Performance Measures By Ad](./adobe/experience/adcloud/searchadvertising/aggregateperformancebyad.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebyad` (Deprecated)
+* [Search Advertising Aggregated Performance Measures By Ad and Keyword](./adobe/experience/adcloud/searchadvertising/aggregateperformancebyadbykeyword.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebyadbykeyword` (Deprecated)
+* [Search Advertising Aggregated Performance Measures By Keyword](./adobe/experience/adcloud/searchadvertising/aggregateperformancebykeyword.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebykeyword` (Deprecated)
+* [Search Advertising Campaign](./adobe/experience/adcloud/searchadvertising/campaign.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/campaign` (Deprecated)
+* [Search Advertising Platform](./adobe/experience/adcloud/searchadvertising/platform.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/platform` (Deprecated)
+* [Search Advertising Portfolio](./adobe/experience/adcloud/searchadvertising/portfolio.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/portfolio` (Deprecated)
+
 ## /adobe/experience/adcloud/searchads/
 
 * [Advertising Transaction Property](./adobe/experience/adcloud/searchads/transactionproperties.schema.md) – `https://ns.adobe.com/xdm/adcloud/searchads/transactionproperties` (Stable)
@@ -672,17 +688,6 @@
 * [Search Advertising Campaign](./adobe/experience/adcloud/searchads/campaign.schema.md) – `https://ns.adobe.com/xdm/adcloud/searchads/campaign` (Stable)
 * [Search Advertising Platform](./adobe/experience/adcloud/searchads/platform.schema.md) – `https://ns.adobe.com/xdm/adcloud/searchads/platform` (Stable)
 * [Search Advertising Portfolio](./adobe/experience/adcloud/searchads/portfolio.schema.md) – `https://ns.adobe.com/xdm/adcloud/searchads/portfolio` (Stable)
-
-## /adobe/experience/adcloud/searchadvertising/
-
-* [Search Advertising Account](./adobe/experience/adcloud/searchadvertising/account.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/account` (Deprecated)
-* [Search Advertising AdGroup](./adobe/experience/adcloud/searchadvertising/adgroup.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/adgroup` (Deprecated)
-* [Search Advertising Aggregated Performance Measures By Ad](./adobe/experience/adcloud/searchadvertising/aggregateperformancebyad.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebyad` (Deprecated)
-* [Search Advertising Aggregated Performance Measures By Ad and Keyword](./adobe/experience/adcloud/searchadvertising/aggregateperformancebyadbykeyword.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebyadbykeyword` (Deprecated)
-* [Search Advertising Aggregated Performance Measures By Keyword](./adobe/experience/adcloud/searchadvertising/aggregateperformancebykeyword.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/aggregateperformancebykeyword` (Deprecated)
-* [Search Advertising Campaign](./adobe/experience/adcloud/searchadvertising/campaign.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/campaign` (Deprecated)
-* [Search Advertising Platform](./adobe/experience/adcloud/searchadvertising/platform.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/platform` (Deprecated)
-* [Search Advertising Portfolio](./adobe/experience/adcloud/searchadvertising/portfolio.schema.md) – `https://ns.adobe.com/experience/adcloud/searchadvertising/portfolio` (Deprecated)
 
 ## /adobe/experience/campaign/orchestration/
 

@@ -25,7 +25,7 @@
           "properties": {
             "xdm:claim": {
               "title": "Claim",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/industry-verticals/claim",
               "description": "Extension of claim data type."
             },
             "xdm:adjustorID": {

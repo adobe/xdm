@@ -24,8 +24,8 @@
           "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "The owner of the subscription."
         },
-        "xdm:SKU": {
-          "title": "SKU",
+        "xdm:subscriptionSKU": {
+          "title": "Subscription SKU",
           "type": "string",
           "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
         },
@@ -112,13 +112,13 @@
           "type": "string",
           "description": "The standing of the account."
         },
-        "xdm:category": {
-          "title": "Category",
+        "xdm:subscriptionCategory": {
+          "title": "Subscription Category",
           "type": "string",
           "description": "The main, top level categorization of this type of subscription."
         },
-        "xdm:subCategory": {
-          "title": "Sub category",
+        "xdm:subscriptionSubCategory": {
+          "title": "Subscription Sub-category",
           "type": "string",
           "description": "The specific sub categorization of the subscription."
         },
@@ -167,7 +167,6 @@
               "xdm:OS": {
                 "title": "OS",
                 "type": "string",
-                "enum": ["android", "ios", "windows", "blackberry", "symbian"],
                 "meta:enum": {
                   "android": "Android",
                   "ios": "iOS",
@@ -185,7 +184,6 @@
               "xdm:paymentOptions": {
                 "title": "Payment Options",
                 "type": "string",
-                "enum": ["installmentPlan", "retailPrice"],
                 "meta:enum": {
                   "installmentPlan": "Installment Plan",
                   "retailPrice": "Retail Price"

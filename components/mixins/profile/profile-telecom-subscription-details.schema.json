@@ -125,6 +125,11 @@
                     "type": "string",
                     "description": "Identifier for subscription."
                   },
+                  "xdm:phoneNumber": {
+                    "title": "Phone Number",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Captures the phone number assigned to this device."
+                  },
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
@@ -221,8 +226,11 @@
                   },
                   "xdm:channels": {
                     "title": "Channels",
-                    "type": "integer",
-                    "description": "Records the number of channels included with the media subscription."
+                    "type": "array",
+                    "description": "Records the number of channels included with the media subscription.",
+                    "items": {
+                      "type": "string"
+                    }
                   },
                   "xdm:streamingServices": {
                     "title": "Streaming Services",

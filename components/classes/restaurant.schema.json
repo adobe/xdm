@@ -1,0 +1,145 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/restaurant",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Restaurant",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "For restaurant information such as address, cuisine, ID and name.",
+  "definitions": {
+    "restaurant": {
+      "properties": {
+        "xdm:address": {
+          "title": "Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "description": "Physicial address where the restaurant is located."
+        },
+        "xdm:restaurantID": {
+          "title": "Restaurant ID",
+          "type": "string",
+          "description": "ID associated with the restaurant."
+        },
+        "xdm:restaurantName": {
+          "title": "Restaurant Name",
+          "type": "string",
+          "description": "Name associated with the restaurant."
+        },
+        "xdm:acceptsReservations": {
+          "title": "Accepts Reservations",
+          "type": "boolean",
+          "description": "Flags if the restaurant accepts reservations."
+        },
+        "xdm:cuisine": {
+          "title": "Cuisine",
+          "type": "array",
+          "description": "Type of restaurant cuisine(s).",
+          "items": {
+            "type": "string",
+            "enum": [
+              "chinese",
+              "steak",
+              "sushi",
+              "asian",
+              "vietnamese",
+              "european",
+              "french",
+              "italian",
+              "burgers",
+              "japanese",
+              "barbecue",
+              "mediterranean",
+              "indian",
+              "grill",
+              "seafood",
+              "steakhouse",
+              "mexican",
+              "greek",
+              "american",
+              "thai"
+            ],
+            "meta:enum": {
+              "chinese": "Chinese",
+              "steak": "Steak",
+              "sushi": "Sushi",
+              "asian": "Asian",
+              "vietnamese": "Vietnamese",
+              "european": "European",
+              "french": "French",
+              "italian": "Italian",
+              "burgers": "Burgers",
+              "japanese": "Japanese",
+              "barbecue": "Barbecue",
+              "mediterranean": "Mediterranean",
+              "indian": "Indian",
+              "grill": "Grill",
+              "seafood": "Seafood",
+              "steakhouse": "Steakhouse",
+              "mexican": "Mexican",
+              "greek": "Greek",
+              "american": "American",
+              "thai": "Thai"
+            }
+          }
+        },
+        "xdm:deliveryPartners": {
+          "title": "Delivery Partners",
+          "type": "array",
+          "description": "Delivery partners available from the restaurant.",
+          "items": {
+            "type": "string",
+            "enum": ["grubhub", "ubereats", "doordash", "other"],
+            "meta:enum": {
+              "grubhub": "GrubHub",
+              "ubereats": "UberEats",
+              "doordash": "DoorDash",
+              "other": "Other"
+            }
+          }
+        },
+        "xdm:diningOptions": {
+          "title": "Dining Options",
+          "type": "array",
+          "description": "Delivery and dining options available from the restaurant.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "outdoorSeating",
+              "delivery",
+              "curbside",
+              "takeout",
+              "dogFriendly"
+            ],
+            "meta:enum": {
+              "outdoorSeating": "Outdoor Seating",
+              "delivery": "Delivery",
+              "curbside": "Curbside",
+              "takeout": "Takeout",
+              "dogFriendly": "Dog Friendly"
+            }
+          },
+          "description": "Delivery and dining options available from the restaurant."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/restaurant"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2020-11-19"
+}

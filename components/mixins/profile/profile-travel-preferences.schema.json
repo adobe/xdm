@@ -1,0 +1,259 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/travel-preferences",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Travel Preferences",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Tracks a user's travel preferences, including home airport code, meal preferences, seating preferences, etc.",
+  "definitions": {
+    "travel-preferences": {
+      "properties": {
+        "xdm:seat": {
+          "title": "Seat",
+          "type": "string",
+          "enum": ["noPreference", "aisle", "window", "middle"],
+          "meta-enum": {
+            "noPreference": "No Preference",
+            "aisle": "Aisle",
+            "window": "Window",
+            "middle": "Middle"
+          },
+          "description": "Captures the user's preferred seat type for flights."
+        },
+        "xdm:seatSection ": {
+          "title": "Seat Section",
+          "type": "string",
+          "enum": ["noPreference", "forward", "bulkhead", "exitRow", "rear"],
+          "meta-enum": {
+            "noPreference": "No Preference",
+            "forward": "Forward",
+            "bulkhead": "Bulkhead",
+            "exitRow": "Exit Row",
+            "rear": "Rear"
+          },
+          "description": "Captures the user's preferred seat sectionfor flights."
+        },
+        "xdm:meal": {
+          "title": "Meal",
+          "type": "string",
+          "enum": [
+            "regularMeal",
+            "blandLowResidue",
+            "childMeal",
+            "diabeticMeal",
+            "fruitPlatter",
+            "glutenFreeMeal",
+            "infantBabyMeal",
+            "kosherMeal",
+            "lowCalorieMeal",
+            "lowSaltSodiumMeal",
+            "halalMeal",
+            "noSaltMeal",
+            "nonLactoseMeal",
+            "peanutFreeMeal",
+            "seafoodMeal",
+            "vegLactoOvo",
+            "vegetarian",
+            "vegetarianKosher",
+            "vegetarianRaw"
+          ],
+          "meta-enum": {
+            "regularMeal": "Regular Meal",
+            "blandLowResidue": "Bland / Low Residue",
+            "childMeal": "Child Meal",
+            "diabeticMeal": "Diabetic Meal",
+            "fruitPlatter": "Fruit Platter",
+            "glutenFreeMeal": "Gluten Free Meal",
+            "infantBabyMeal": "Infant / Baby Meal",
+            "kosherMeal": "Kosher Meal",
+            "lowCalorieMeal": "Low Calorie Meal",
+            "lowSaltSodiumMeal": "Low Salt / Sodium Meal",
+            "halalMeal": "Halal Meal",
+            "noSaltMeal": "No Salt Meal",
+            "nonLactoseMeal": "Non Lactose Meal",
+            "peanutFreeMeal": "Peanut Free Meal",
+            "seafoodMeal": "Seafood Meal",
+            "vegLactoOvo": "Veg Lacto-Ovo",
+            "vegetarian": "Vegetarian",
+            "vegetarianKosher": "Vegetarian Kosher",
+            "vegetarianRaw": "Vegetarian, Raw"
+          },
+          "description": "Tracks the user's meal preference, if provided."
+        },
+        "xdm:preferredDepartureAirportCode": {
+          "title": "Preferred Departure Airport Code",
+          "type": "string",
+          "description": "Records the user's preferred home/departure airport code.",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "xdm:ticketDelivery": {
+          "title": "Ticket Delivery",
+          "type": "string",
+          "enum": ["eTicket", "physical"],
+          "meta-enum": {
+            "eTicket": "E-Ticket",
+            "physical": "Physical"
+          },
+          "description": "Defines the user's preferred ticket delivery method."
+        },
+        "xdm:medicalAlerts": {
+          "title": "Medical Alerts",
+          "type": "string",
+          "description": "Captures any medical alerts for the user."
+        },
+        "xdm:roomType": {
+          "title": "Room Type",
+          "type": "string",
+          "enum": [
+            "noPreference",
+            "king",
+            "queen",
+            "double",
+            "twin",
+            "single",
+            "disability"
+          ],
+          "meta-enum": {
+            "noPreference": "No Preference",
+            "king": "King",
+            "queen": "Queen",
+            "double": "Double",
+            "twin": "Twin",
+            "single": "Single",
+            "disability": "Disability"
+          },
+          "description": "Tracks the user's preferred room type."
+        },
+        "xdm:smokingRoom": {
+          "title": "Smoking Room",
+          "type": "boolean",
+          "description": "Flags if the user prefers a smoking room."
+        },
+        "xdm:foamPillows": {
+          "title": "Foam Pillows",
+          "type": "boolean",
+          "description": "Captures if the user prefers foam pillows."
+        },
+        "xdm:rollAwayBed": {
+          "title": "Roll Away Bed",
+          "type": "boolean",
+          "description": "Captures if the user requires a rollaway bed."
+        },
+        "xdm:crib": {
+          "title": "Crib",
+          "type": "boolean",
+          "description": "Captures if the user requires a crib."
+        },
+        "xdm:earlyCheckIn": {
+          "title": "Early Check-In",
+          "type": "boolean",
+          "description": "Flags if the user prefers a lodging property with early check-in available."
+        },
+        "xdm:gym": {
+          "title": "Gym",
+          "type": "boolean",
+          "description": "Flags if the user prefers a lodging property with a gym/fitness room."
+        },
+        "xdm:pool": {
+          "title": "Pool",
+          "type": "boolean",
+          "description": "Flags if the user prefers a lodging property with a swimming pool."
+        },
+        "xdm:hasRestaurant": {
+          "title": "Has Restaurant",
+          "type": "boolean",
+          "description": "Flags if the user prefers a lodging property with a restaurant."
+        },
+        "xdm:roomService": {
+          "title": "Room Service",
+          "type": "boolean",
+          "description": "Flags if the user prefers a lodging property with room service available."
+        },
+        "xdm:wheelchairAccessible": {
+          "title": "Wheelchair Accessible",
+          "type": "boolean",
+          "description": "Tracks if the user requres a wheelchair accessible room."
+        },
+        "xdm:visuallyImpairedAccessible": {
+          "title": "Visually Impaired Accessible",
+          "type": "boolean",
+          "description": "Tracks if the user requres a visually impaired accessible room."
+        },
+        "xdm:vehicleType": {
+          "title": "Vehicle Type",
+          "type": "string",
+          "enum": [
+            "miniCar",
+            "economyCar",
+            "economyCarHybrid",
+            "compactCar",
+            "compactCarHybrid",
+            "intermediateCar",
+            "intermediateCarHybrid",
+            "standardCar",
+            "standardCarHybrid",
+            "fullSizeCar",
+            "fullSizeCarHybrid",
+            "intermediateSUV",
+            "miniVan",
+            "standardSUV",
+            "fullSizeSUV",
+            "fullSizePickup",
+            "premiumCar",
+            "luxuryCar",
+            "specializedVehicle"
+          ],
+          "meta-enum": {
+            "miniCar": "Mini Car",
+            "economyCar": "Economy Car",
+            "economyCarHybrid": "Economy Car Hybrid",
+            "compactCar": "Compact Car",
+            "compactCarHybrid": "Compact Car Hybrid",
+            "intermediateCar": "Intermediate Car",
+            "intermediateCarHybrid": "Intermediate Car Hybrid",
+            "standardCar": "Standard Car",
+            "standardCarHybrid": "Standard Car Hybrid",
+            "fullSizeCar": "Full-size Car",
+            "fullSizeCarHybrid": "Full-size Car Hybrid",
+            "intermediateSUV": "Intermediate SUV",
+            "miniVan": "Mini Van",
+            "standardSUV": "Standard SUV",
+            "fullSizeSUV": "Full-size SUV",
+            "fullSizePickup": "Full-size Pickup",
+            "premiumCar": "Premium Car",
+            "luxuryCar": "Luxury Car",
+            "specializedVehicle": "Specialized Vehicle"
+          },
+          "description": "Records the user's vehicle type preference."
+        },
+        "xdm:smokingVehicle": {
+          "title": "Smoking Vehicle",
+          "type": "boolean",
+          "description": "Flags if the user prefers a smoking vehicle."
+        },
+        "xdm:manualTransmission": {
+          "title": "Manual Transmission",
+          "type": "boolean",
+          "description": "Records if a user prefers a manual transmission instead of an automatic transmission."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/travel-preferences"
+    }
+  ],
+  "meta:status": "experimental"
+}

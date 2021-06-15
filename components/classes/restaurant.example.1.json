@@ -1,0 +1,8 @@
+{
+  "xdm:acceptsReservations": true,
+  "xdm:restaurantName": "Sugarfire",
+  "xdm:restaurantID": "SFSC63301",
+  "xdm:cuisine": ["barbecue"],
+  "xdm:deliveryPartners": ["grubhub", "doordash"],
+  "xdm:diningOptions": ["delivery", "takeout"]
+}

@@ -1,0 +1,44 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/aircraft",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Aircraft Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Aircraft details including tail number (ID) and type.",
+  "definitions": {
+    "aircraft": {
+      "properties": {
+        "xdm:tailNumber": {
+          "title": "Tail Number",
+          "type": "string",
+          "description": "Captures the tail number (identification string) for the aircraft."
+        },
+        "xdm:aircraftType": {
+          "title": "Aircraft Type",
+          "type": "string",
+          "description": "Records the aircraft type."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/aircraft"
+    }
+  ],
+  "meta:status": "experimental"
+}

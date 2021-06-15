@@ -83,6 +83,9 @@
     "meta:createdDate": "2020-08-10",
     "examples": [
         {
+            "xdm:id": "https://example.com/objects/12345"
+        },
+        {
             "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
@@ -90,9 +93,6 @@
         },
         {
             "xdm:schema": "https://ns.adobe.com/xdm/context/identity"
-        },
-        {
-            "xdm:id": "https://example.com/objects/12345"
         }
     ]
 }

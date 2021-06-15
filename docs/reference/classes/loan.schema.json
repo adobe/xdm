@@ -1,0 +1,168 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/loan",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Loan Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "automotive",
+            "education",
+            "high_tech",
+            "manufacturing",
+            "public_sector"
+        ]
+    },
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Loan specifics, such as loan type, amount, rate, & term.",
+    "definitions": {
+        "loan": {
+            "properties": {
+                "xdm:loanID": {
+                    "title": "Loan ID",
+                    "type": "string",
+                    "description": "Identifier for the loan."
+                },
+                "xdm:loanAmount": {
+                    "title": "Loan Amount",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Total amount of the loan."
+                },
+                "xdm:totalInterestPaid": {
+                    "title": "Total Interest Paid",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Total amount of interest paid on the loan to date."
+                },
+                "xdm:totalPrincipalPaid": {
+                    "title": "Total Principal Paid",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Total amount of principal paid on the loan to date."
+                },
+                "xdm:loanStatus": {
+                    "title": "Loan Status",
+                    "enum": [
+                        "notIssued",
+                        "current",
+                        "inGracePeriod",
+                        "fullyPaid",
+                        "late",
+                        "default",
+                        "chargedOff",
+                        "cancelled"
+                    ],
+                    "meta:enum": {
+                        "notIssued": "Not Issued",
+                        "current": "Current",
+                        "inGracePeriod": "In Grace Period",
+                        "fullyPaid": "Fully Paid",
+                        "late": "Late",
+                        "default": "Default",
+                        "chargedOff": "Charged Off",
+                        "cancelled": "Cancelled"
+                    },
+                    "description": "Indicates the current status of the loan."
+                },
+                "xdm:termInMonths": {
+                    "title": "Term in Months",
+                    "type": "integer",
+                    "description": "Captures the length of the loan, in months."
+                },
+                "xdm:annualPercentageRate": {
+                    "title": "Annual Percentage Rate",
+                    "type": "integer",
+                    "description": "Records the annual percentage rate of the loan."
+                },
+                "xdm:downpayment": {
+                    "title": "Downpayment",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures the downpayment amount of loan."
+                },
+                "xdm:interestRate": {
+                    "title": "Interest Rate",
+                    "type": "integer",
+                    "description": "Captures the interest rate of the loan."
+                },
+                "xdm:borrower": {
+                    "title": "Borrower",
+                    "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
+                    "description": "Records the details for the borrower."
+                },
+                "xdm:fees": {
+                    "title": "Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Tracks any fees or commissions applied to the loan."
+                },
+                "xdm:gracePeriod": {
+                    "title": "Grace Period",
+                    "type": "integer",
+                    "description": "Tracks the number of days a borrow has to issue a loan payment before the loan is considered to be in default."
+                },
+                "xdm:loanType": {
+                    "title": "Loan Type",
+                    "enum": [
+                        "personal",
+                        "cashAdvance",
+                        "title",
+                        "homeEquity",
+                        "smallBusiness",
+                        "debtConsolidation",
+                        "student",
+                        "automobile",
+                        "mortgage"
+                    ],
+                    "meta:enum": {
+                        "personal": "Personal",
+                        "cashAdvance": "Cash Advance",
+                        "title": "Title",
+                        "homeEquity": "Home Equity",
+                        "smallBusiness": "Small Business",
+                        "debtConsolidation": "Debt Consolidation",
+                        "student": "Student",
+                        "automobile": "Automobile",
+                        "mortgage": "Mortgage"
+                    },
+                    "description": "Records the type of loan issued."
+                },
+                "xdm:renegotiable": {
+                    "title": "Renegotiable",
+                    "type": "boolean",
+                    "description": "Identifies if the loan can be renegotiated while it is still active."
+                },
+                "xdm:collateralRequired": {
+                    "title": "Collateral Required",
+                    "type": "boolean",
+                    "description": "Indicates if collateral has been provided to secure the loan."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/loan"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:ID": "K8819108483Z",
+            "xdm:status": "current",
+            "xdm:termInMonths": 120,
+            "xdm:type": "mortgage",
+            "xdm:renegotiable": true,
+            "xdm:collateralRequired": false
+        }
+    ]
+}

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Telecom Subscription",
   "type": "object",
@@ -22,10 +22,25 @@
         "xdm:telecomSubscription": {
           "type": "object",
           "properties": {
+            "xdm:subscriptionID": {
+              "title": "Subscription ID",
+              "type": "string",
+              "description": "Identifier for subscription."
+            },
             "xdm:subscriptionDetails": {
               "title": "Subscription Details",
-              "$ref": "https://ns.adobe.com/xdm/context/subscription",
+              "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
               "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+            },
+            "xdm:equipmentFees": {
+              "title": "Equipment Fees",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+            },
+            "xdm:equipmentInsurance": {
+              "title": "Equipment Insurance",
+              "type": "boolean",
+              "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
             },
             "xdm:responsiblePartyID": {
               "title": "Responsible Party ID",
@@ -37,16 +52,31 @@
               "type": "string",
               "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + Media'."
             },
-            "xdm:internetSubscription": {
+            "xdm:internetSubscriptionDetails": {
               "type": "array",
               "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
               "items": {
                 "type": "object",
                 "properties": {
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:dataCap": {
                     "title": "Data Cap",
@@ -84,16 +114,36 @@
                 }
               }
             },
-            "xdm:landlineSubscription": {
+            "xdm:landlineSubscriptionDetails": {
               "type": "array",
               "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
               "items": {
                 "type": "object",
                 "properties": {
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
+                  "xdm:phoneNumber": {
+                    "title": "Phone Number",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Captures the phone number assigned to this device."
+                  },
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
                   "xdm:minutes": {
                     "title": "Minutes",
@@ -148,21 +198,39 @@
                 }
               }
             },
-            "xdm:mediaSubscription": {
+            "xdm:mediaSubscriptionDetails": {
               "type": "array",
               "description": "media subscription plan details including number of channels & included streaming services.",
               "items": {
                 "type": "object",
                 "properties": {
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
+                    "type": "boolean",
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
+                  },
                   "xdm:channels": {
                     "title": "Channels",
-                    "type": "integer",
-                    "description": "Records the number of channels included with the media subscription."
+                    "type": "array",
+                    "description": "Records the number of channels included with the media subscription.",
+                    "items": {
+                      "type": "string"
+                    }
                   },
                   "xdm:streamingServices": {
                     "title": "Streaming Services",
@@ -192,36 +260,147 @@
                 }
               }
             },
-            "xdm:mobileSubscription": {
+            "xdm:mobileSubscriptionDetails": {
               "type": "array",
               "description": "Mobile plan details including number of lines, data rates, cost, etc.",
               "items": {
                 "type": "object",
                 "properties": {
+                  "xdm:subscriptionID": {
+                    "title": "Subscription ID",
+                    "type": "string",
+                    "description": "Identifier for subscription."
+                  },
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
-                  "xdm:earlyUpgradeEnrollment": {
-                    "title": "Early Upgrade Enrollment",
+                  "xdm:equipmentFees": {
+                    "title": "Equipment Fees",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Captures any equipment fees for items such as routers, modems, recievers, etc."
+                  },
+                  "xdm:equipmentInsurance": {
+                    "title": "Equipment Insurance",
                     "type": "boolean",
-                    "description": "Captures if the customer opts into early upgrades."
+                    "description": "Tracks if a customer has opted-in to equipment insurance for the subscription."
                   },
-                  "xdm:planLevel": {
-                    "title": "Plan Level",
-                    "type": "string",
-                    "description": "Captures the name of the mobile plan assigned to this device."
+                  "xdm:devices": {
+                    "title": "Devices",
+                    "description": "Array of line details and their associated devices.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:ID": {
+                          "title": "ID",
+                          "type": "string",
+                          "description": "Captures the ID for the device."
+                        },
+                        "xdm:manufacturer": {
+                          "title": "Manufacturer",
+                          "type": "string",
+                          "description": "Captures the device manufacturer."
+                        },
+                        "xdm:model": {
+                          "title": "Model",
+                          "type": "string",
+                          "description": "Captures the device model."
+                        },
+                        "xdm:serialNumber": {
+                          "title": "Serial Number",
+                          "type": "string",
+                          "description": "Captures the device serial number."
+                        },
+                        "xdm:storageCapacity": {
+                          "title": "Storage Capacity",
+                          "type": "string",
+                          "description": "Captures the device storage capacity."
+                        },
+                        "xdm:pricingOptions": {
+                          "title": "Pricing Options",
+                          "type": "string",
+                          "meta:enum": {
+                            "installmentPlan": "Installment Plan",
+                            "retailPrice": "Retail Price"
+                          },
+                          "description": "Captures if the device will be paid for in installments or full retail price."
+                        },
+                        "xdm:OS": {
+                          "title": "OS",
+                          "type": "string",
+                          "meta:enum": {
+                            "android": "Android",
+                            "ios": "iOS",
+                            "windows": "Windows",
+                            "blackberry": "Blackberry",
+                            "symbian": "Symbian"
+                          },
+                          "description": "Captures the device operating system."
+                        },
+                        "xdm:earlyUpgradeEnrollment": {
+                          "title": "Early Upgrade Enrollment",
+                          "type": "boolean",
+                          "description": "Captures if the customer opts into early upgrades."
+                        },
+                        "xdm:insuranceEnrollment": {
+                          "title": "Insurance Enrollment",
+                          "type": "boolean",
+                          "description": "Captures if the customer opts into device insurance."
+                        },
+                        "xdm:planLevel": {
+                          "title": "Plan Level",
+                          "type": "string",
+                          "description": "Captures the name of the mobile plan assigned to this device."
+                        },
+                        "xdm:phoneNumber": {
+                          "title": "Phone Number",
+                          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                          "description": "Captures the phone number assigned to this device."
+                        },
+                        "xdm:portedNumber": {
+                          "title": "Ported Number",
+                          "type": "boolean",
+                          "description": "Captures if the customer ports their number from another carrier."
+                        }
+                      }
+                    }
                   },
-                  "xdm:phoneNumber": {
-                    "title": "Phone Number",
-                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                    "description": "Captures the phone number assigned to this device."
-                  },
-                  "xdm:portedNumber": {
-                    "title": "Ported Number",
-                    "type": "boolean",
-                    "description": "Captures if the customer ports their number from another carrier."
+                  "xdm:accessories": {
+                    "title": "Accessories",
+                    "description": "Array of accessories associated with the plan.",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "xdm:ID": {
+                          "title": "ID",
+                          "type": "string",
+                          "description": "Captures the ID for the accessory."
+                        },
+                        "xdm:manufacturer": {
+                          "title": "Manufacturer",
+                          "type": "string",
+                          "description": "Captures the accessory manufacturer."
+                        },
+                        "xdm:name": {
+                          "title": "Name",
+                          "type": "string",
+                          "description": "Captures the accessory name."
+                        },
+                        "xdm:serialNumber": {
+                          "title": "Serial Number",
+                          "type": "string",
+                          "description": "Captures the accessory serial number."
+                        },
+                        "xdm:type": {
+                          "title": "Type",
+                          "type": "string",
+                          "description": "Captures the accessory type."
+                        }
+                      }
+                    }
                   }
                 }
               }

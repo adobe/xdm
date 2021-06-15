@@ -24,7 +24,7 @@
           "properties": {
             "xdm:subscriptionDetails": {
               "title": "Subscription Details",
-              "$ref": "https://ns.adobe.com/xdm/telecom-subscription",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
               "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
             },
             "xdm:responsiblePartyID": {
@@ -45,7 +45,7 @@
                 "properties": {
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
-                    "$ref": "https://ns.adobe.com/xdm/telecom-subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
                   "xdm:dataCap": {
@@ -92,7 +92,7 @@
                 "properties": {
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
-                    "$ref": "https://ns.adobe.com/xdm/telecom-subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
                   "xdm:phoneNumber": {
@@ -161,7 +161,7 @@
                 "properties": {
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
-                    "$ref": "https://ns.adobe.com/xdm/telecom-subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
                   "xdm:channels": {
@@ -205,7 +205,7 @@
                 "properties": {
                   "xdm:subscriptionDetails": {
                     "title": "Subscription Details",
-                    "$ref": "https://ns.adobe.com/xdm/telecom-subscription",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
                   },
                   "xdm:earlyUpgradeEnrollment": {

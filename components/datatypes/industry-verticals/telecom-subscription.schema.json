@@ -177,6 +177,16 @@
                 },
                 "description": "Captures the device operating system."
               },
+              "xdm:status": {
+                "title": "Status",
+                "type": "string",
+                "enum": ["active", "inactive"],
+                "meta:enum": {
+                  "active": "Active",
+                  "inactive": "Inactive"
+                },
+                "description": "Captures the device status."
+              },
               "xdm:storageCapacity": {
                 "title": "Storage Capacity",
                 "type": "string",

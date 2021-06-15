@@ -24,7 +24,7 @@
           "properties": {
             "xdm:subscriptionDetails": {
               "title": "Subscription Details",
-              "$ref": "https://ns.adobe.com/xdm/context/subscription",
+              "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
               "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
             },
             "xdm:responsiblePartyID": {
@@ -94,6 +94,11 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/context/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                  },
+                  "xdm:phoneNumber": {
+                    "title": "Phone Number",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Captures the phone number assigned to this device."
                   },
                   "xdm:minutes": {
                     "title": "Minutes",

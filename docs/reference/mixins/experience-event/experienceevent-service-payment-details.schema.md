@@ -36,6 +36,7 @@ Service Payment Details such as ID, type, and amount.
 
 ## xdm:service-payment-details
 
+Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.
 
 `xdm:service-payment-details`
 * is optional

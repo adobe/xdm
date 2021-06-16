@@ -1,0 +1,88 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-internet-subscription",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Internet Subscription",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "telecom"
+        ]
+    },
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
+    ],
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
+    "definitions": {
+        "internet-subscription": {
+            "properties": {
+                "xdm:internetSubscription": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:dataCap": {
+                            "title": "Data Cap",
+                            "type": "integer",
+                            "description": "Captures the data cap limit for the account, in megabytes (MB)."
+                        },
+                        "xdm:connectionType": {
+                            "title": "Connection Type",
+                            "type": "string",
+                            "enum": [
+                                "cable",
+                                "dsl",
+                                "fiber",
+                                "mobile",
+                                "satellite"
+                            ],
+                            "meta:enum": {
+                                "cable": "Cable",
+                                "dsl": "DSL",
+                                "fiber": "Fiber",
+                                "mobile": "Mobile",
+                                "satellite": "Satellite"
+                            },
+                            "description": "Tracks the type of connection type for the subscription."
+                        },
+                        "xdm:downloadSpeed": {
+                            "title": "Download Speed",
+                            "type": "integer",
+                            "description": "Records the maximum download speed available for the subscription, in megabytes (MB)."
+                        },
+                        "xdm:uploadSpeed": {
+                            "title": "Upload Speed",
+                            "type": "integer",
+                            "description": "Records the maximum upload speed available for the subscription, in megabytes (MB)."
+                        },
+                        "xdm:selfSetup": {
+                            "title": "Self-Setup",
+                            "type": "boolean",
+                            "description": "Flags if a customer is eligible for internet setup without a technican visit."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/internet-subscription"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

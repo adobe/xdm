@@ -30,6 +30,7 @@
       "properties": {
         "xdm:upgrades": {
           "type": "object",
+          "description": "Upgrade information including impressions and transactions associated with upgrades.",
           "properties": {
             "xdm:upgradeSteps": {
               "title": "Upgrade Steps",
@@ -61,5 +62,5 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-02"
+  "meta:createdDate": "2021-02-02"
 }

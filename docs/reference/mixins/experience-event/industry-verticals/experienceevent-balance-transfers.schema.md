@@ -50,6 +50,7 @@ Used for financial account balance transfers between accounts.
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

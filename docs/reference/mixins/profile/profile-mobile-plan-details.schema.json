@@ -16,6 +16,9 @@
             "telecom"
         ]
     },
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
+    ],
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
@@ -30,6 +33,16 @@
                             "title": "Account ID",
                             "type": "string",
                             "description": "Account ID for the plan."
+                        },
+                        "xdm:name": {
+                            "title": "Name",
+                            "type": "string",
+                            "description": "Name for the plan."
+                        },
+                        "xdm:rate": {
+                            "title": "Rate",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Rate for the plan."
                         },
                         "xdm:devices": {
                             "title": "Devices",
@@ -53,6 +66,11 @@
                                         "type": "string",
                                         "description": "Captures the device model."
                                     },
+                                    "xdm:serialNumber": {
+                                        "title": "Serial Number",
+                                        "type": "string",
+                                        "description": "Captures the device serial number."
+                                    },
                                     "xdm:storageCapacity": {
                                         "title": "Storage Capacity",
                                         "type": "string",
@@ -66,6 +84,25 @@
                                             "retailPrice": "Retail Price"
                                         },
                                         "description": "Captures if the device will be paid for in installments or full retail price."
+                                    },
+                                    "xdm:OS": {
+                                        "title": "OS",
+                                        "type": "string",
+                                        "enum": [
+                                            "android",
+                                            "ios",
+                                            "windows",
+                                            "blackberry",
+                                            "symbian"
+                                        ],
+                                        "meta:enum": {
+                                            "android": "Android",
+                                            "ios": "iOS",
+                                            "windows": "Windows",
+                                            "blackberry": "Blackberry",
+                                            "symbian": "Symbian"
+                                        },
+                                        "description": "Captures the device operating system."
                                     },
                                     "xdm:earlyUpgradeEnrollment": {
                                         "title": "Early Upgrade Enrollment",
@@ -86,6 +123,71 @@
                                         "title": "Phone Number",
                                         "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                                         "description": "Captures the phone number assigned to this device."
+                                    },
+                                    "xdm:portedNumber": {
+                                        "title": "Ported Number",
+                                        "type": "boolean",
+                                        "description": "Captures if the customer ports their number from another carrier."
+                                    },
+                                    "xdm:media5GAccess": {
+                                        "title": "5G Access",
+                                        "type": "boolean",
+                                        "description": "Captures if the device is eligible for 5G Access."
+                                    },
+                                    "xdm:mediaRolloverData": {
+                                        "title": "Rollover Data",
+                                        "type": "boolean",
+                                        "description": "Captures if the device plan includes rollover data."
+                                    },
+                                    "xdm:mediaMobileHotspot": {
+                                        "title": "Mobile Hotspot",
+                                        "type": "boolean",
+                                        "description": "Captures if the device plan includes mobile hotspot ability."
+                                    },
+                                    "xdm:mediaCloudStorageIncluded": {
+                                        "title": "Cloud Storage Included",
+                                        "type": "boolean",
+                                        "description": "Captures if the device plan includes cloud data storage."
+                                    },
+                                    "xdm:hdVideo": {
+                                        "title": "HD Video",
+                                        "type": "boolean",
+                                        "description": "Captures if the device plan includes HD video."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:accessories": {
+                            "title": "Accessories",
+                            "description": "Array of accessories associated with the plan.",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:ID": {
+                                        "title": "ID",
+                                        "type": "string",
+                                        "description": "Captures the ID for the accessory."
+                                    },
+                                    "xdm:manufacturer": {
+                                        "title": "Manufacturer",
+                                        "type": "string",
+                                        "description": "Captures the accessory manufacturer."
+                                    },
+                                    "xdm:name": {
+                                        "title": "Name",
+                                        "type": "string",
+                                        "description": "Captures the accessory name."
+                                    },
+                                    "xdm:serialNumber": {
+                                        "title": "Serial Number",
+                                        "type": "string",
+                                        "description": "Captures the accessory serial number."
+                                    },
+                                    "xdm:type": {
+                                        "title": "Type",
+                                        "type": "string",
+                                        "description": "Captures the accessory type."
                                     }
                                 }
                             }
@@ -98,6 +200,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/mobile-plan-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription"
         }
     ],
     "meta:status": "experimental",

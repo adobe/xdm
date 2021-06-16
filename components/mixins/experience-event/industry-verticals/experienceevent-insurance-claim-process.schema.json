@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-insurance-claim-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Claim Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Claim details including policy ID, police report, and incident date.",
+  "definitions": {
+    "claimDetails": {
+      "properties": {
+        "xdm:insuranceClaim": {
+          "type": "object",
+          "description": "Captures fields related to a claim when initated by a customer.",
+          "properties": {
+            "xdm:claim": {
+              "title": "Claim",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
+              "description": "Extension of claim data type."
+            },
+            "xdm:adjustorID": {
+              "title": "Adjustor ID",
+              "type": "string",
+              "description": "Unique identifier for adjustor assigned to the claim."
+            },
+            "xdm:policeReport": {
+              "title": "Police Report",
+              "type": "boolean",
+              "description": "Flags whether or not a police report is available for the claim."
+            },
+            "xdm:incidentDate": {
+              "title": "Incident Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date the claim incident occurred."
+            },
+            "xdm:incidentLocation": {
+              "title": "Incident Location",
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "Location where the claim incident occurred."
+            },
+            "xdm:type": {
+              "title": "Type",
+              "type": "string",
+              "enum": [
+                "product",
+                "automobile",
+                "renters",
+                "thirdPartyAutomobile",
+                "thirdPartyHome",
+                "life",
+                "dental",
+                "vision",
+                "flood",
+                "earthquake",
+                "pet"
+              ],
+              "meta:enum": {
+                "product": "Product",
+                "automobile": "Automobile",
+                "renters": "Renters",
+                "thirdPartyAutomobile": "Third-Party Automobile",
+                "thirdPartyHome": "Third-Party Home",
+                "life": "Life",
+                "health": "Health",
+                "dental": "Dental",
+                "vision": "Vision",
+                "pet": "Pet",
+                "flood": "Flood",
+                "earthquake": "Earthquake"
+              },
+              "description": "Type of claim submitted."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/claimDetails"
+    }
+  ],
+  "meta:status": "experimental"
+}

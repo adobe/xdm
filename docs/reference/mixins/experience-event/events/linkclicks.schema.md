@@ -110,6 +110,8 @@ The numerical label assigned to a device participating in a computer network tha
 ## xdm:web
 ### Web
 
+Link clicks, web page details, referrer information, and browser details.
+
 `xdm:web`
 * is optional
 * type: `object`

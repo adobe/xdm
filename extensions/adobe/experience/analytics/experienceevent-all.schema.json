@@ -45,7 +45,7 @@
             "xdm:web": {
               "title": "Session Entry Web",
               "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-              "description": "The information related to web page, link, and referrer at the entry of this session."
+              "description": "Link clicks, web page details, referrer information, and browser details."
             }
           }
         },

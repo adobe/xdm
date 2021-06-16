@@ -1,5 +1,5 @@
 
-# Privacy/Personalization/Marketing Preferences (Consents) Schema
+# Consents and Preferences Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/profile-consents
@@ -12,11 +12,11 @@ This schema captures privacy, personalization and marketing preferences (consent
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-consents.schema.json](mixins/profile/profile-consents.schema.json) |
 ## Schema Hierarchy
 
-* Privacy/Personalization/Marketing Preferences (Consents) `https://ns.adobe.com/xdm/mixins/profile-consents`
+* Consents and Preferences `https://ns.adobe.com/xdm/mixins/profile-consents`
   * [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent/consent-preferences.schema.md) `https://ns.adobe.com/xdm/datatypes/consents-and-preferences`
 
 
-## Privacy/Personalization/Marketing Preferences (Consents) Example
+## Consents and Preferences Example
 ```json
 {
   "xdm:consents": {
@@ -87,7 +87,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 }
 ```
 
-# Privacy/Personalization/Marketing Preferences (Consents) Properties
+# Consents and Preferences Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

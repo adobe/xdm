@@ -35,6 +35,7 @@ Upgrade details such as offer name, type, and ID, as well as transaction details
 
 ## xdm:upgrades
 
+Upgrade information including impressions and transactions associated with upgrades.
 
 `xdm:upgrades`
 * is optional

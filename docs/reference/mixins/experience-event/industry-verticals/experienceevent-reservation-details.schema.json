@@ -25,6 +25,7 @@
             "properties": {
                 "xdm:reservations": {
                     "type": "object",
+                    "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
                     "properties": {
                         "xdm:cancellation": {
                             "title": "Cancellation",

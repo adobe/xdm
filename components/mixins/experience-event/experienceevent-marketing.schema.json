@@ -22,7 +22,7 @@
         "xdm:marketing": {
           "title": "Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/marketing",
-          "description": "The information related to marketing activities that are active with the touchpoint."
+          "description": "Tracks offer impression and social network interactions."
         }
       }
     }

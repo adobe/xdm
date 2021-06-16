@@ -56,6 +56,7 @@ https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search
 
 ## xdm:siteKnowledge
 
+Knowledge base tracking, support site searches and forum interaction details.
 
 `xdm:siteKnowledge`
 * is optional

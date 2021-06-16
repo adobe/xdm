@@ -138,11 +138,17 @@ Unknown type `object`.
           "items": {
             "type": "string",
             "maxLength": 64
-          }
+          },
+          "meta:titleId": "airship-event##airship:categories##title",
+          "meta:descriptionId": "airship-event##airship:categories##description"
         }
-      }
+      },
+      "meta:titleId": "airship-event##airship:campaigns##title",
+      "meta:descriptionId": "airship-event##airship:campaigns##description"
     }
   },
+  "meta:titleId": "airship-event##airship:campaign##title",
+  "meta:descriptionId": "airship-event##airship:campaign##description",
   "simpletype": "`object`"
 }
 ```
@@ -213,7 +219,9 @@ Unknown type `object`.
       "enum": [
         "unsubscribe",
         "commercial"
-      ]
+      ],
+      "meta:titleId": "airship-event##airship:messageType##title",
+      "meta:descriptionId": "airship-event##airship:messageType##description"
     },
     "airship:registrationType": {
       "title": "Registration Type",
@@ -228,35 +236,49 @@ Unknown type `object`.
         "create": "Create",
         "update": "Update",
         "unsubscribe": "Unsubscribe"
-      }
+      },
+      "meta:titleId": "airship-event##airship:registrationType##title",
+      "meta:descriptionId": "airship-event##airship:registrationType##description"
     },
     "airship:commercialOptedIn": {
       "title": "Commercial Opted In Date",
       "description": "The date and time when the user opted into commercial email messages.",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "meta:titleId": "airship-event##airship:commercialOptedIn##title",
+      "meta:descriptionId": "airship-event##airship:commercialOptedIn##description"
     },
     "airship:bounceClass": {
       "title": "Bounce Class",
       "description": "The bounce classification as provided by Airship email partners.",
-      "type": "number"
+      "type": "number",
+      "meta:titleId": "airship-event##airship:bounceClass##title",
+      "meta:descriptionId": "airship-event##airship:bounceClass##description"
     },
     "airship:bounceEmail": {
       "title": "Bounce Email Address",
       "description": "The email address that bounced.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:bounceEmail##title",
+      "meta:descriptionId": "airship-event##airship:bounceEmail##description"
     },
     "airship:bounceSender": {
       "title": "Bounce Sender",
       "description": "The address that the bounced email came from (typically the sender address for your project in Airship).",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:bounceSender##title",
+      "meta:descriptionId": "airship-event##airship:bounceSender##description"
     },
     "airship:bounceSubject": {
       "title": "Bounce Subject",
       "description": "The subject line of the bounced email.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:bounceSubject##title",
+      "meta:descriptionId": "airship-event##airship:bounceSubject##description"
     }
   },
+  "meta:titleId": "airship-event##airship:complianceProperties##title",
+  "meta:descriptionId": "airship-event##airship:complianceProperties##description",
   "simpletype": "`object`"
 }
 ```
@@ -327,34 +349,50 @@ Unknown type `object`.
               "items": {
                 "type": "string",
                 "maxLength": 64
-              }
+              },
+              "meta:titleId": "airship-event##airship:categories##title",
+              "meta:descriptionId": "airship-event##airship:categories##description"
             }
-          }
+          },
+          "meta:titleId": "airship-event##airship:campaigns##title",
+          "meta:descriptionId": "airship-event##airship:campaigns##description"
         }
-      }
+      },
+      "meta:titleId": "airship-event##airship:campaign##title",
+      "meta:descriptionId": "airship-event##airship:campaign##description"
     },
     "airship:pushID": {
       "title": "Push ID",
       "description": "A unique identifier for a push operation.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:pushID##title",
+      "meta:descriptionId": "airship-event##airship:pushID##description"
     },
     "airship:groupID": {
       "title": "Airship Group ID",
       "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:groupID##title",
+      "meta:descriptionId": "airship-event##airship:groupID##description"
     },
     "airship:variantID": {
       "title": "Airship Variant ID",
       "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:variantID##title",
+      "meta:descriptionId": "airship-event##airship:variantID##description"
     },
     "airship:pushTime": {
       "title": "Push Time",
       "description": "The UTC time when the push occurred.",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "meta:titleId": "airship-event##airship:pushTime##title",
+      "meta:descriptionId": "airship-event##airship:pushTime##description"
     }
   },
+  "meta:titleId": "airship-event##airship:lastDelivered##title",
+  "meta:descriptionId": "airship-event##airship:lastDelivered##description",
   "simpletype": "`object`"
 }
 ```
@@ -489,34 +527,50 @@ Unknown type `object`.
               "items": {
                 "type": "string",
                 "maxLength": 64
-              }
+              },
+              "meta:titleId": "airship-event##airship:categories##title",
+              "meta:descriptionId": "airship-event##airship:categories##description"
             }
-          }
+          },
+          "meta:titleId": "airship-event##airship:campaigns##title",
+          "meta:descriptionId": "airship-event##airship:campaigns##description"
         }
-      }
+      },
+      "meta:titleId": "airship-event##airship:campaign##title",
+      "meta:descriptionId": "airship-event##airship:campaign##description"
     },
     "airship:pushID": {
       "title": "Push ID",
       "description": "A unique identifier for a push operation.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:pushID##title",
+      "meta:descriptionId": "airship-event##airship:pushID##description"
     },
     "airship:groupID": {
       "title": "Airship Group ID",
       "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:groupID##title",
+      "meta:descriptionId": "airship-event##airship:groupID##description"
     },
     "airship:variantID": {
       "title": "Airship Variant ID",
       "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:variantID##title",
+      "meta:descriptionId": "airship-event##airship:variantID##description"
     },
     "airship:pushTime": {
       "title": "Push Time",
       "description": "The UTC time when the push occurred.",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "meta:titleId": "airship-event##airship:pushTime##title",
+      "meta:descriptionId": "airship-event##airship:pushTime##description"
     }
   },
+  "meta:titleId": "airship-event##airship:triggeringPush##title",
+  "meta:descriptionId": "airship-event##airship:triggeringPush##description",
   "simpletype": "`object`"
 }
 ```
@@ -595,14 +649,20 @@ Unknown type `object`.
     "airship:localeVariant": {
       "title": "Airship Locale Variant",
       "description": "The language locale variant if one is reported for the device..",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:localeVariant##title",
+      "meta:descriptionId": "airship-event##airship:localeVariant##description"
     },
     "airship:uaSdkVersion": {
       "title": "Airship SDK Version",
       "description": "The version of the Airship SDK used in the app.",
-      "type": "string"
+      "type": "string",
+      "meta:titleId": "airship-event##airship:uaSdkVersion##title",
+      "meta:descriptionId": "airship-event##airship:uaSdkVersion##description"
     }
   },
+  "meta:titleId": "airship-event##airship:attributes##title",
+  "meta:descriptionId": "airship-event##airship:attributes##description",
   "simpletype": "`object`"
 }
 ```

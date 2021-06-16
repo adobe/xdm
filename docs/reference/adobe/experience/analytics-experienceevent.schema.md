@@ -33,127 +33,8 @@ Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion
   * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
   * [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
   * [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md) `https://ns.adobe.com/experience/analytics/commerce`
+  * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
-
-## Adobe Analytics ExperienceEvent Template Mixin Example
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "id": "68519882713298129995549973016107434638",
-        "primary": true
-      }
-    ],
-    "AVID": [
-      {
-        "id": "2dfb7d8e00003ba4-056de00000000085",
-        "primary": false
-      }
-    ]
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
-    }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  },
-  "https://ns.adobe.com/experience/analytics/customDimensions": {
-    "xdm:eVars": {
-      "xdm:eVar1": "customer"
-    }
-  }
-}
-```
 
 # Adobe Analytics ExperienceEvent Template Mixin Properties
 
@@ -173,6 +54,7 @@ Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion
 | [https://ns.adobe.com/experience/analytics/event801to900](#httpsnsadobecomexperienceanalyticsevent801to900) | event801to900.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent801to900) |
 | [https://ns.adobe.com/experience/analytics/event901to1000](#httpsnsadobecomexperienceanalyticsevent901to1000) | event901to1000.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent901to1000) |
 | [https://ns.adobe.com/experience/analytics/session](#httpsnsadobecomexperienceanalyticssession) | session.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticssession) |
+| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
@@ -2782,6 +2664,32 @@ All instances must conform to this regular expression
 
 
 
+## https://ns.adobe.com/experience/decisioning/propositions
+### Involved Propositions
+
+An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.
+
+`https://ns.adobe.com/experience/decisioning/propositions`
+* is optional
+* type: Proposition Interaction Details
+
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions)
+
+### https://ns.adobe.com/experience/decisioning/propositions Type
+
+
+Array type: Proposition Interaction Details
+
+All items must be of the type:
+* [Proposition Interaction Details](decisioning/proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`
+
+
+
+
+
+
+
+
 ## https://ns.adobe.com/experience/implementations
 
 
@@ -2842,7 +2750,7 @@ Identifier used to stitch Target events with Analytics events
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents.
+Information related to advertising impressions, clickthroughs, and attribution.
 
 `xdm:advertising`
 * is optional
@@ -2899,7 +2807,7 @@ Experience channel related to the ExperienceEvent.
 ## xdm:commerce
 ### Commerce
 
-Commerce specific data related to this event.
+Product returns, warranty registration, and shopping cart/order process.
 
 `xdm:commerce`
 * is optional
@@ -3013,7 +2921,7 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:marketing
 ### Marketing
 
-The information related to marketing activities that are active with the touchpoint.
+Tracks offer impression and social network interactions.
 
 `xdm:marketing`
 * is optional
@@ -3425,7 +3333,7 @@ undefined
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional

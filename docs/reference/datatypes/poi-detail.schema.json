@@ -59,13 +59,64 @@
                 },
                 "xdm:beaconInteractionDetails": {
                     "title": "Beacon interaction details",
-                    "$ref": "https://ns.adobe.com/xdm/context/beacon-interaction-details",
-                    "description": "Beacon details active for the POI interaction."
+                    "type": "object",
+                    "description": "Beacon details active for the POI interaction.",
+                    "properties": {
+                        "xdm:proximityUUID": {
+                            "title": "Proximity UUID",
+                            "type": "string",
+                            "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons."
+                        },
+                        "xdm:beaconMajor": {
+                            "title": "Beacon major",
+                            "type": "number",
+                            "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535."
+                        },
+                        "xdm:beaconMinor": {
+                            "title": "Beacon Minor",
+                            "type": "number",
+                            "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535."
+                        },
+                        "xdm:proximity": {
+                            "title": "Proximity to beacon",
+                            "type": "string",
+                            "description": "Estimated distance from the beacon.",
+                            "enum": [
+                                "immediate",
+                                "near",
+                                "far",
+                                "unknown"
+                            ],
+                            "meta:enum": {
+                                "immediate": "Within a few centimeter.",
+                                "near": "Within a couple of meters.",
+                                "far": "Greater than 10 meters away.",
+                                "unknown": "Not able to ascertain distance, signal likely very weak."
+                            }
+                        }
+                    }
                 },
                 "xdm:geoInteractionDetails": {
                     "title": "Geo interaction details",
-                    "$ref": "https://ns.adobe.com/xdm/context/geo-interaction-details",
-                    "description": "Geo details active for the POI interaction."
+                    "type": "object",
+                    "description": "Geo details active for the POI interaction.",
+                    "properties": {
+                        "xdm:distanceToCenter": {
+                            "title": "Distance to center",
+                            "type": "number",
+                            "description": "Distance to center of geo in, case of a geo circle, measured in meters."
+                        },
+                        "xdm:deviceGeoAccuracy": {
+                            "title": "Geo device accuracy",
+                            "type": "number",
+                            "description": "The accuracy of the geo measuring device or mechanism, measured in meters."
+                        },
+                        "xdm:geoShape": {
+                            "title": "Geo shape",
+                            "$ref": "http://schema.org/GeoShape",
+                            "description": "Geo shape of the geo being interacted with."
+                        }
+                    }
                 }
             }
         }

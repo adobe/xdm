@@ -9,6 +9,9 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Form Filled Out",
     "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
     "meta:conditionalField": "xdm:eventType",
     "meta:conditionalValue": "web.formFilledOut",
     "meta:intendedToExtend": [
@@ -21,6 +24,7 @@
                 "xdm:web": {
                     "title": "Web",
                     "type": "object",
+                    "description": "Link clicks, web page details, referrer information, and browser details.",
                     "properties": {
                         "xdm:fillOutForm": {
                             "title": "Fill Out Form",

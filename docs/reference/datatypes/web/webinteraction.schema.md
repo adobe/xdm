@@ -12,7 +12,7 @@ It is intended for recording interactions in rich web applications that do not t
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/web/webinteraction.schema.json](datatypes/web/webinteraction.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/web/webinteraction.schema.json](datatypes/web/webinteraction.schema.json) |
 ## Schema Hierarchy
 
 * Web interaction `https://ns.adobe.com/xdm/context/webinteraction`

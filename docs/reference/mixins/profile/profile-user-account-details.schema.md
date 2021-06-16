@@ -30,6 +30,7 @@ https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details
 
 ## xdm:userAccount
 
+Loyalty details, preferences, login processes, and other account preferences.
 
 `xdm:userAccount`
 * is optional

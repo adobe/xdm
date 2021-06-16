@@ -95,7 +95,8 @@ Unknown type `object`.
     "xdm:optInOut": {
       "title": "OptInOut",
       "$ref": "https://ns.adobe.com/xdm/context/optinout",
-      "description": "Describes a users opting in and out preferences for communication by medium and communication type."
+      "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
+      "meta:status": "deprecated"
     }
   },
   "simpletype": "`object`"

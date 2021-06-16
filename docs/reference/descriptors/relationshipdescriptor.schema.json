@@ -54,11 +54,6 @@
                     "type": "string",
                     "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
                 },
-                "xdm:label": {
-                    "title": "Label",
-                    "type": "string",
-                    "description": "Provides a user friendly name or label to this relationship"
-                },
                 "xdm:sourceNamespace": {
                     "title": "Source Property Namespace",
                     "type": "string",
@@ -72,20 +67,23 @@
                 "xdm:sourceToDestinationTitle": {
                     "title": "Source to Destination Title",
                     "type": "string",
-                    "description": "Provides a user friendly title for the source->destination edge"
+                    "description": "Provides a user friendly title for the source->destination edge",
+                    "maxLength": 35,
+                    "pattern": "^[A-Za-z0-9_]*$"
                 },
                 "xdm:destinationToSourceTitle": {
                     "title": "Destination to Source Title",
                     "type": "string",
-                    "description": "Provides a user friendly title for the destination->source edge"
+                    "description": "Provides a user friendly title for the destination->source edge",
+                    "maxLength": 35,
+                    "pattern": "^[A-Za-z0-9_]*$"
                 },
                 "xdm:cardinality": {
                     "title": "Relationship Cardinality",
                     "type": "string",
                     "description": "Source to Destination cardinality",
                     "enum": [
-                        "M:1",
-                        "1:1"
+                        "M:1"
                     ],
                     "default": "M:1"
                 }
@@ -120,6 +118,19 @@
     "meta:createdDate": "2020-08-10",
     "examples": [
         {
+            "@id": "https://example.com/descriptors/1",
+            "@type": "xdm:descriptorOneToOne",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+            "xdm:sourceProperty": "/xdm:identities",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceItem": {
+                "xdm:type": "https://example.com/crmID"
+            },
+            "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
+            "xdm:destinationProperty": "/xdm:crmID",
+            "xdm:destinationVersion": 1
+        },
+        {
             "@type": "xdm:descriptorOneToOne",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
             "xdm:sourceProperty": [
@@ -134,19 +145,6 @@
             ],
             "xdm:destinationVersion": 1,
             "version": "1"
-        },
-        {
-            "@id": "https://example.com/descriptors/1",
-            "@type": "xdm:descriptorOneToOne",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-            "xdm:sourceProperty": "/xdm:identities",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceItem": {
-                "xdm:type": "https://example.com/crmID"
-            },
-            "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-            "xdm:destinationProperty": "/xdm:crmID",
-            "xdm:destinationVersion": 1
         }
     ]
 }

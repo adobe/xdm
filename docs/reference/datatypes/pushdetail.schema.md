@@ -9,7 +9,7 @@ Push notification detail required to send mobile push notification to a specific
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/pushdetail.schema.json](datatypes/pushdetail.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [datatypes/pushdetail.schema.json](datatypes/pushdetail.schema.json) |
 ## Schema Hierarchy
 
 * Push notification detail `https://ns.adobe.com/xdm/context/pushdetail`

@@ -27,6 +27,26 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:name": "product home",
     "xdm:URL": "https://www.example.com/products",
     "xdm:errorPage": false,
+    "xdm:homePage": true,
+    "xdm:pageViews": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:webReferrer": {
+    "xdm:URL": "https://www.some-adserver.com",
+    "xdm:referrerType": "external"
+  }
+}
+```
+
+```json
+{
+  "xdm:webPageDetails": {
+    "xdm:siteSection": "Product section",
+    "xdm:server": "example.com",
+    "xdm:name": "product home",
+    "xdm:URL": "https://www.example.com/products",
+    "xdm:errorPage": false,
     "xdm:homePage": true
   },
   "xdm:webInteraction": {
@@ -40,26 +60,6 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
   "xdm:webReferrer": {
     "xdm:URL": "https://www.example.com/products",
     "xdm:type": "internal"
-  }
-}
-```
-
-```json
-{
-  "xdm:webPageDetails": {
-    "xdm:siteSection": "Product section",
-    "xdm:server": "example.com",
-    "xdm:name": "product home",
-    "xdm:URL": "https://www.example.com/products",
-    "xdm:errorPage": false,
-    "xdm:homePage": true,
-    "xdm:pageViews": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:webReferrer": {
-    "xdm:URL": "https://www.some-adserver.com",
-    "xdm:referrerType": "external"
   }
 }
 ```
@@ -229,13 +229,6 @@ The normative or usual URL of the web page.  This may or may not be the actual U
 
 
 `string`
-
-
-All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E(%5Cw%2B%3A%5C%2F%5C%2F%7Cwww)(localhost%7C%5B%5E%5Cs%3A%5C%2F%5D%2B%5C.%5B%5E%5Cs%3A%5C%2F%5D%2B)(%3A%5Cd%2B)%3F(%5C%2F%5B%5E%5Cs%5D*)%3F%24)):
-```regex
-^(\w+:\/\/|www)(localhost|[^\s:\/]+\.[^\s:\/]+)(:\d+)?(\/[^\s]*)?$
-```
 
 
 

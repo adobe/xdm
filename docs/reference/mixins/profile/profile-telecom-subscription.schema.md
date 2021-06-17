@@ -198,7 +198,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -261,6 +261,7 @@ All items must be of the type:
 | `xdm:callerID`| boolean | Optional |
 | `xdm:internationalCalling`| boolean | Optional |
 | `xdm:minutes`| integer | Optional |
+| `xdm:phoneNumber`|  | Optional |
 | `xdm:subscriptionDetails`|  | Optional |
 | `xdm:threeWayCalling`| boolean | Optional |
 | `xdm:unlimitedDomesticLongDistance`| boolean | Optional |
@@ -390,6 +391,26 @@ Number of monthly minutes available within the subscription.
 
 
 
+#### xdm:phoneNumber
+##### Phone Number
+
+Captures the phone number assigned to this device.
+
+`xdm:phoneNumber`
+* is optional
+* type: reference
+
+##### xdm:phoneNumber Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/phonenumber`
+
+
+
+
+
+
+
 #### xdm:subscriptionDetails
 ##### Subscription Details
 
@@ -402,7 +423,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -653,7 +674,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -789,7 +810,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -837,7 +858,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 

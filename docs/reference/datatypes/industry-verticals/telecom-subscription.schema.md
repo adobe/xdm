@@ -2,7 +2,7 @@
 # Subscription Schema
 
 ```
-https://ns.adobe.com/xdm/context/telecom-subscription
+https://ns.adobe.com/xdm/datatypes/telecom-subscription
 ```
 
 Contain details for the specific subscription types, such as internet, mobile, media, or landline.
@@ -12,7 +12,7 @@ Contain details for the specific subscription types, such as internet, mobile, m
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/telecom-subscription.schema.json](datatypes/industry-verticals/telecom-subscription.schema.json) |
 ## Schema Hierarchy
 
-* Subscription `https://ns.adobe.com/xdm/context/telecom-subscription`
+* Subscription `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](../person/person.schema.md) `https://ns.adobe.com/xdm/context/person`
 
@@ -201,6 +201,7 @@ All items must be of the type:
 | `xdm:name`| string | Optional |
 | `xdm:paymentOptions`| string | Optional |
 | `xdm:serialNumber`| string | Optional |
+| `xdm:status`| string | Optional |
 | `xdm:storageCapacity`| string | Optional |
 | `xdm:type`| string | Optional |
 
@@ -371,6 +372,28 @@ Captures the device serial number.
 `string`
 
 
+
+
+
+
+
+
+#### xdm:status
+##### Status
+
+Captures the device status.
+
+`xdm:status`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmdevices-known-values).
+
+##### xdm:status Known Values
+| Value | Description |
+|-------|-------------|
+| `active` | Active |
+| `inactive` | Inactive |
 
 
 

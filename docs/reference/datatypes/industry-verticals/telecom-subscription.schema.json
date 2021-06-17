@@ -100,7 +100,13 @@
                     "title": "Billing start date",
                     "type": "string",
                     "format": "date",
-                    "description": "The date when the first bill is due."
+                    "description": "The date when the billing period begins."
+                },
+                "xdm:paymentDueDate": {
+                    "title": "Payment Due Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date when the subscription payment is due."
                 },
                 "xdm:chargeMethod": {
                     "title": "Charge method",

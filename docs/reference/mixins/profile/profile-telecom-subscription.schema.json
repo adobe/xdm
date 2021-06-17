@@ -26,15 +26,15 @@
                 "xdm:telecomSubscription": {
                     "type": "object",
                     "properties": {
-                        "xdm:subscriptionDetails": {
-                            "title": "Subscription Details",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
-                            "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                        "xdm:primarySubscriber": {
+                            "title": "Primary Subscriber",
+                            "$ref": "https://ns.adobe.com/xdm/context/person",
+                            "description": "The owner of the subscription."
                         },
-                        "xdm:responsiblePartyID": {
-                            "title": "Responsible Party ID",
+                        "xdm:primaryPartyID": {
+                            "title": "Primary Party ID",
                             "type": "string",
-                            "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number."
+                            "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number."
                         },
                         "xdm:bundleName": {
                             "title": "Bundle Name",

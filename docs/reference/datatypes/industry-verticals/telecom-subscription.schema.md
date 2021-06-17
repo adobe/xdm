@@ -34,6 +34,7 @@ Contain details for the specific subscription types, such as internet, mobile, m
 | [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
 | [xdm:devices](#xdmdevices) | `object[]` | Optional | Subscription (this schema) |
 | [xdm:endDate](#xdmenddate) | `string` | Optional | Subscription (this schema) |
+| [xdm:paymentDueDate](#xdmpaymentduedate) | `string` | Optional | Subscription (this schema) |
 | [xdm:paymentMethod](#xdmpaymentmethod) | `string` | Optional | Subscription (this schema) |
 | [xdm:paymentStatus](#xdmpaymentstatus) | `string` | Optional | Subscription (this schema) |
 | [xdm:planName](#xdmplanname) | `string` | Optional | Subscription (this schema) |
@@ -93,7 +94,7 @@ The duration between billings.
 ## xdm:billingStartDate
 ### Billing start date
 
-The date when the first bill is due.
+The date when the billing period begins.
 
 `xdm:billingStartDate`
 * is optional
@@ -459,6 +460,27 @@ The date the current subscription term ends.
 * defined in this schema
 
 ### xdm:endDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:paymentDueDate
+### Payment Due Date
+
+The date when the subscription payment is due.
+
+`xdm:paymentDueDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:paymentDueDate Type
 
 
 `string`

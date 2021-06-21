@@ -23,36 +23,36 @@
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform.",
-          "meta:titleId": "adgroup##searchads:adgroupId##title##91571",
-          "meta:descriptionId": "adgroup##searchads:adgroupId##description##50991"
+          "meta:titleId": "adgroup##searchads:adgroupId##title##72301",
+          "meta:descriptionId": "adgroup##searchads:adgroupId##description##2441"
         },
         "searchads:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID for the Ad Group on the search advertising platform.",
-          "meta:titleId": "adgroup##searchads:campaignId##title##52501",
-          "meta:descriptionId": "adgroup##searchads:campaignId##description##35511"
+          "meta:titleId": "adgroup##searchads:campaignId##title##4471",
+          "meta:descriptionId": "adgroup##searchads:campaignId##description##75611"
         },
         "searchads:internalCampaignId": {
           "title": "Internal Campaign Identifier",
           "type": "string",
           "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record.",
-          "meta:titleId": "adgroup##searchads:internalCampaignId##title##7361",
-          "meta:descriptionId": "adgroup##searchads:internalCampaignId##description##17991"
+          "meta:titleId": "adgroup##searchads:internalCampaignId##title##78641",
+          "meta:descriptionId": "adgroup##searchads:internalCampaignId##description##4761"
         },
         "searchads:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
-          "meta:titleId": "adgroup##searchads:searchEngineId##title##21821",
-          "meta:descriptionId": "adgroup##searchads:searchEngineId##description##56461"
+          "meta:titleId": "adgroup##searchads:searchEngineId##title##13091",
+          "meta:descriptionId": "adgroup##searchads:searchEngineId##description##81921"
         },
         "searchads:adgroupName": {
           "title": "Ad Group Name",
           "type": "string",
           "description": "Name of the Ad Group.",
-          "meta:titleId": "adgroup##searchads:adgroupName##title##97791",
-          "meta:descriptionId": "adgroup##searchads:adgroupName##description##58011"
+          "meta:titleId": "adgroup##searchads:adgroupName##title##2361",
+          "meta:descriptionId": "adgroup##searchads:adgroupName##description##75721"
         },
         "searchads:adGroupStatus": {
           "title": "Ad Group Status",
@@ -96,8 +96,8 @@
             "Unknown": "Unknown",
             "Dummy": "Dummy"
           },
-          "meta:titleId": "adgroup##searchads:adGroupStatus##title##99101",
-          "meta:descriptionId": "adgroup##searchads:adGroupStatus##description##92631"
+          "meta:titleId": "adgroup##searchads:adGroupStatus##title##7331",
+          "meta:descriptionId": "adgroup##searchads:adGroupStatus##description##89561"
         },
         "searchads:bidLevel": {
           "title": "Bid Level",
@@ -121,8 +121,8 @@
             "Adgroup": "Adgroup",
             "User Interest and List": "User Interest and List"
           },
-          "meta:titleId": "adgroup##searchads:bidLevel##title##4841",
-          "meta:descriptionId": "adgroup##searchads:bidLevel##description##48621"
+          "meta:titleId": "adgroup##searchads:bidLevel##title##63671",
+          "meta:descriptionId": "adgroup##searchads:bidLevel##description##1151"
         },
         "searchads:createDate": {
           "type": "string",
@@ -131,7 +131,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the adgroup was created. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "adgroup##searchads:createDate##description##63381"
+          "meta:descriptionId": "adgroup##searchads:createDate##description##20561"
         },
         "searchads:modifyDate": {
           "type": "string",
@@ -140,7 +140,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the adgroup was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "adgroup##searchads:modifyDate##description##9761"
+          "meta:descriptionId": "adgroup##searchads:modifyDate##description##59671"
         }
       }
     }
@@ -157,6 +157,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "adgroup##title##90651",
-  "meta:descriptionId": "adgroup##description##45371"
+  "meta:titleId": "adgroup##title##9041",
+  "meta:descriptionId": "adgroup##description##41071"
 }

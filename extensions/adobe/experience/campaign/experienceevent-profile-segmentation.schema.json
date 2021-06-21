@@ -36,16 +36,16 @@
                     "additionalProperties": {
                       "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
                     },
-                    "meta:titleId": "experienceevent-profile-segmentation##additionalProperties##title##1801"
+                    "meta:titleId": "experienceevent-profile-segmentation##additionalProperties##title##25151"
                   },
-                  "meta:titleId": "experienceevent-profile-segmentation##xdm:segmentMembership##title##86561"
+                  "meta:titleId": "experienceevent-profile-segmentation##xdm:segmentMembership##title##34961"
                 }
               },
-              "meta:titleId": "experienceevent-profile-segmentation##xdm:profileSnapshot##title##39101",
-              "meta:descriptionId": "experienceevent-profile-segmentation##xdm:profileSnapshot##description##41291"
+              "meta:titleId": "experienceevent-profile-segmentation##xdm:profileSnapshot##title##63421",
+              "meta:descriptionId": "experienceevent-profile-segmentation##xdm:profileSnapshot##description##66651"
             }
           },
-          "meta:titleId": "experienceevent-profile-segmentation##https://ns.adobe.com/experience/campaign/message##title##59531"
+          "meta:titleId": "experienceevent-profile-segmentation##https://ns.adobe.com/experience/campaign/message##title##90621"
         }
       }
     }
@@ -56,6 +56,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-profile-segmentation##title##49891",
-  "meta:descriptionId": "experienceevent-profile-segmentation##description##85351"
+  "meta:titleId": "experienceevent-profile-segmentation##title##38031",
+  "meta:descriptionId": "experienceevent-profile-segmentation##description##25901"
 }

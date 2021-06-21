@@ -20,8 +20,8 @@
           "title": "Person",
           "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "An individual actor, contact, or owner.",
-          "meta:titleId": "profile-person-details-v2##xdm:person##title##71541",
-          "meta:descriptionId": "profile-person-details-v2##xdm:person##description##35801"
+          "meta:titleId": "profile-person-details-v2##xdm:person##title##71951",
+          "meta:descriptionId": "profile-person-details-v2##xdm:person##description##49701"
         }
       }
     },
@@ -37,8 +37,8 @@
                   "title": "First name",
                   "type": "string",
                   "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-                  "meta:titleId": "profile-person-details-v2##xdm:firstName##title##62221",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:firstName##description##6421"
+                  "meta:titleId": "profile-person-details-v2##xdm:firstName##title##99801",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:firstName##description##28451"
                 }
               }
             }
@@ -58,8 +58,8 @@
                   "title": "Last name",
                   "type": "string",
                   "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-                  "meta:titleId": "profile-person-details-v2##xdm:lastName##title##12621",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:lastName##description##79101"
+                  "meta:titleId": "profile-person-details-v2##xdm:lastName##title##46521",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:lastName##description##6211"
                 }
               }
             }
@@ -79,8 +79,8 @@
                   "title": "Middle name",
                   "type": "string",
                   "description": "Middle, alternative, or additional names supplied between the first name and last name.",
-                  "meta:titleId": "profile-person-details-v2##xdm:middleName##title##67431",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:middleName##description##5381"
+                  "meta:titleId": "profile-person-details-v2##xdm:middleName##title##15291",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:middleName##description##71981"
                 }
               }
             }
@@ -100,8 +100,8 @@
                   "title": "Courtesy title",
                   "type": "string",
                   "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.",
-                  "meta:titleId": "profile-person-details-v2##xdm:courtesyTitle##title##14751",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:courtesyTitle##description##28671"
+                  "meta:titleId": "profile-person-details-v2##xdm:courtesyTitle##title##681",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:courtesyTitle##description##46461"
                 }
               }
             }
@@ -121,8 +121,8 @@
                   "title": "Suffix",
                   "type": "string",
                   "description": "A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc.",
-                  "meta:titleId": "profile-person-details-v2##xdm:suffix##title##19931",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:suffix##description##62341"
+                  "meta:titleId": "profile-person-details-v2##xdm:suffix##title##28301",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:suffix##description##46471"
                 }
               }
             }
@@ -142,8 +142,8 @@
                   "title": "Full name",
                   "type": "string",
                   "description": "The full name of the person, in writing order most commonly accepted in the language of the name.",
-                  "meta:titleId": "profile-person-details-v2##xdm:fullName##title##95711",
-                  "meta:descriptionId": "profile-person-details-v2##xdm:fullName##description##15481"
+                  "meta:titleId": "profile-person-details-v2##xdm:fullName##title##851",
+                  "meta:descriptionId": "profile-person-details-v2##xdm:fullName##description##32721"
                 }
               }
             }
@@ -161,8 +161,8 @@
               "type": "string",
               "format": "date",
               "description": "The full date a person was born.",
-              "meta:titleId": "profile-person-details-v2##xdm:birthDate##title##70671",
-              "meta:descriptionId": "profile-person-details-v2##xdm:birthDate##description##26981"
+              "meta:titleId": "profile-person-details-v2##xdm:birthDate##title##32481",
+              "meta:descriptionId": "profile-person-details-v2##xdm:birthDate##description##51681"
             }
           }
         }
@@ -178,8 +178,8 @@
               "type": "string",
               "pattern": "[0-1][0-9]-[0-9][0-9]",
               "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
-              "meta:titleId": "profile-person-details-v2##xdm:birthDayAndMonth##title##84701",
-              "meta:descriptionId": "profile-person-details-v2##xdm:birthDayAndMonth##description##70641"
+              "meta:titleId": "profile-person-details-v2##xdm:birthDayAndMonth##title##62111",
+              "meta:descriptionId": "profile-person-details-v2##xdm:birthDayAndMonth##description##33081"
             }
           }
         }
@@ -196,8 +196,8 @@
               "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
               "minimum": 1,
               "maximum": 32767,
-              "meta:titleId": "profile-person-details-v2##xdm:birthYear##title##43641",
-              "meta:descriptionId": "profile-person-details-v2##xdm:birthYear##description##41001"
+              "meta:titleId": "profile-person-details-v2##xdm:birthYear##title##76361",
+              "meta:descriptionId": "profile-person-details-v2##xdm:birthYear##description##83861"
             }
           }
         }
@@ -220,8 +220,8 @@
               },
               "description": "Gender identity of the person.\n",
               "default": "not_specified",
-              "meta:titleId": "profile-person-details-v2##xdm:gender##title##88811",
-              "meta:descriptionId": "profile-person-details-v2##xdm:gender##description##62231"
+              "meta:titleId": "profile-person-details-v2##xdm:gender##title##68011",
+              "meta:descriptionId": "profile-person-details-v2##xdm:gender##description##49151"
             }
           }
         }
@@ -251,8 +251,8 @@
               },
               "description": "Describes a person's relationship with a significant other.",
               "default": "not_specified",
-              "meta:titleId": "profile-person-details-v2##xdm:maritalStatus##title##71541",
-              "meta:descriptionId": "profile-person-details-v2##xdm:maritalStatus##description##39251"
+              "meta:titleId": "profile-person-details-v2##xdm:maritalStatus##title##16091",
+              "meta:descriptionId": "profile-person-details-v2##xdm:maritalStatus##description##8121"
             }
           }
         }
@@ -268,8 +268,8 @@
               "type": "string",
               "pattern": "^[A-Z]{2}$",
               "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
-              "meta:titleId": "profile-person-details-v2##xdm:nationality##title##45811",
-              "meta:descriptionId": "profile-person-details-v2##xdm:nationality##description##71191"
+              "meta:titleId": "profile-person-details-v2##xdm:nationality##title##78411",
+              "meta:descriptionId": "profile-person-details-v2##xdm:nationality##description##58011"
             }
           }
         }
@@ -284,8 +284,8 @@
               "title": "Tax ID",
               "type": "string",
               "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
-              "meta:titleId": "profile-person-details-v2##xdm:taxId##title##83921",
-              "meta:descriptionId": "profile-person-details-v2##xdm:taxId##description##72511"
+              "meta:titleId": "profile-person-details-v2##xdm:taxId##title##14021",
+              "meta:descriptionId": "profile-person-details-v2##xdm:taxId##description##23811"
             }
           }
         }
@@ -302,6 +302,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-11-10",
-  "meta:titleId": "profile-person-details-v2##title##33521",
-  "meta:descriptionId": "profile-person-details-v2##description##44471"
+  "meta:titleId": "profile-person-details-v2##title##35661",
+  "meta:descriptionId": "profile-person-details-v2##description##62931"
 }

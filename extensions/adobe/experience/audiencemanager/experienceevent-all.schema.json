@@ -26,18 +26,18 @@
             "items": {
               "type": "string",
               "description": "Value of the parameter",
-              "meta:descriptionId": "experienceevent-all##items##description##63431"
+              "meta:descriptionId": "experienceevent-all##items##description##7011"
             }
           },
-          "meta:titleId": "experienceevent-all##xdm:signals##title##7841",
-          "meta:descriptionId": "experienceevent-all##xdm:signals##description##61801"
+          "meta:titleId": "experienceevent-all##xdm:signals##title##48531",
+          "meta:descriptionId": "experienceevent-all##xdm:signals##description##83341"
         },
         "xdm:overwriteTraits": {
           "title": "Overwrite Traits",
           "type": "boolean",
           "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
-          "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title##92961",
-          "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description##14081"
+          "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title##45421",
+          "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description##65191"
         },
         "xdm:derivedSignals": {
           "title": "Derived Signals",
@@ -49,11 +49,11 @@
             "items": {
               "type": "string",
               "description": "Value of the parameter",
-              "meta:descriptionId": "experienceevent-all##items##description##5201"
+              "meta:descriptionId": "experienceevent-all##items##description##48731"
             }
           },
-          "meta:titleId": "experienceevent-all##xdm:derivedSignals##title##92041",
-          "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description##48011"
+          "meta:titleId": "experienceevent-all##xdm:derivedSignals##title##17841",
+          "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description##22971"
         }
       }
     }
@@ -64,6 +64,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-all##title##98911",
-  "meta:descriptionId": "experienceevent-all##description##60171"
+  "meta:titleId": "experienceevent-all##title##59701",
+  "meta:descriptionId": "experienceevent-all##description##92601"
 }

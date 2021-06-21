@@ -23,22 +23,22 @@
           "title": "Marketing List Member ID",
           "description": "Unique ID for the membership of this person to this marketing list.",
           "type": "string",
-          "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##56321",
-          "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##26571"
+          "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##51671",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##26181"
         },
         "xdm:personID": {
           "title": "Person Identifier",
           "description": "Unique ID for the person who is a member of this marketing list.",
           "type": "string",
-          "meta:titleId": "marketing-list-member##xdm:personID##title##95981",
-          "meta:descriptionId": "marketing-list-member##xdm:personID##description##4491"
+          "meta:titleId": "marketing-list-member##xdm:personID##title##35301",
+          "meta:descriptionId": "marketing-list-member##xdm:personID##description##68391"
         },
         "xdm:marketingListID": {
           "title": "Marketing List Identifier",
           "description": "Unique ID for the marketing list this person is a member of.",
           "type": "string",
-          "meta:titleId": "marketing-list-member##xdm:marketingListID##title##67951",
-          "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##40181"
+          "meta:titleId": "marketing-list-member##xdm:marketingListID##title##46651",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##70641"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "required": ["xdm:marketingListMemberID"],
   "meta:status": "experimental",
-  "meta:titleId": "marketing-list-member##title##25901",
-  "meta:descriptionId": "marketing-list-member##description##43641"
+  "meta:titleId": "marketing-list-member##title##56381",
+  "meta:descriptionId": "marketing-list-member##description##53561"
 }

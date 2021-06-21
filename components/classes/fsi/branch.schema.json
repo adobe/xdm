@@ -23,45 +23,45 @@
           "title": "Is Branch Active",
           "type": "boolean",
           "description": "Yes/no if the branch is currently active.",
-          "meta:titleId": "branch##xdm:isBranchActive##title##9981",
-          "meta:descriptionId": "branch##xdm:isBranchActive##description##12741"
+          "meta:titleId": "branch##xdm:isBranchActive##title##71521",
+          "meta:descriptionId": "branch##xdm:isBranchActive##description##57281"
         },
         "xdm:branchAddress": {
           "title": "Branch Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Physical address where the branch is located.",
-          "meta:titleId": "branch##xdm:branchAddress##title##12911",
-          "meta:descriptionId": "branch##xdm:branchAddress##description##76471"
+          "meta:titleId": "branch##xdm:branchAddress##title##87101",
+          "meta:descriptionId": "branch##xdm:branchAddress##description##47341"
         },
         "xdm:branchID": {
           "title": "Branch ID",
           "type": "string",
           "description": "ID associated with the branch. ",
-          "meta:titleId": "branch##xdm:branchID##title##18241",
-          "meta:descriptionId": "branch##xdm:branchID##description##5531"
+          "meta:titleId": "branch##xdm:branchID##title##52641",
+          "meta:descriptionId": "branch##xdm:branchID##description##99191"
         },
         "xdm:branchName": {
           "title": "Branch Name",
           "type": "string",
           "description": "Name of the branch.",
-          "meta:titleId": "branch##xdm:branchName##title##81521",
-          "meta:descriptionId": "branch##xdm:branchName##description##84231"
+          "meta:titleId": "branch##xdm:branchName##title##26121",
+          "meta:descriptionId": "branch##xdm:branchName##description##18611"
         },
         "xdm:branchCloseTime": {
           "title": "Branch Close Time",
           "type": "string",
           "format": "date-time",
           "description": "Time of day the branch closes.",
-          "meta:titleId": "branch##xdm:branchCloseTime##title##40561",
-          "meta:descriptionId": "branch##xdm:branchCloseTime##description##52041"
+          "meta:titleId": "branch##xdm:branchCloseTime##title##94031",
+          "meta:descriptionId": "branch##xdm:branchCloseTime##description##91751"
         },
         "xdm:branchOpenTime": {
           "title": "Brancn Open Time",
           "type": "string",
           "format": "date-time",
           "description": "Time of day the branch opens.",
-          "meta:titleId": "branch##xdm:branchOpenTime##title##69761",
-          "meta:descriptionId": "branch##xdm:branchOpenTime##description##90071"
+          "meta:titleId": "branch##xdm:branchOpenTime##title##68111",
+          "meta:descriptionId": "branch##xdm:branchOpenTime##description##521"
         }
       }
     }
@@ -76,6 +76,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-11-19",
-  "meta:titleId": "branch##title##35381",
-  "meta:descriptionId": "branch##description##56051"
+  "meta:titleId": "branch##title##69201",
+  "meta:descriptionId": "branch##description##81261"
 }

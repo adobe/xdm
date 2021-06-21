@@ -23,66 +23,66 @@
           "title": "Account Person ID",
           "description": "Unique ID for this relationship between an account and a person.",
           "type": "string",
-          "meta:titleId": "account-person##xdm:accountPersonID##title##18811",
-          "meta:descriptionId": "account-person##xdm:accountPersonID##description##64601"
+          "meta:titleId": "account-person##xdm:accountPersonID##title##48511",
+          "meta:descriptionId": "account-person##xdm:accountPersonID##description##93531"
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique ID for the account in this account person relationship.",
           "type": "string",
-          "meta:titleId": "account-person##xdm:accountID##title##58181",
-          "meta:descriptionId": "account-person##xdm:accountID##description##13741"
+          "meta:titleId": "account-person##xdm:accountID##title##15251",
+          "meta:descriptionId": "account-person##xdm:accountID##description##1131"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this account person relationship.",
           "type": "string",
-          "meta:titleId": "account-person##xdm:personID##title##87331",
-          "meta:descriptionId": "account-person##xdm:personID##description##8621"
+          "meta:titleId": "account-person##xdm:personID##title##56751",
+          "meta:descriptionId": "account-person##xdm:personID##description##36711"
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this account.",
           "type": "string",
-          "meta:titleId": "account-person##xdm:personRole##title##88611",
-          "meta:descriptionId": "account-person##xdm:personRole##description##40041"
+          "meta:titleId": "account-person##xdm:personRole##title##75331",
+          "meta:descriptionId": "account-person##xdm:personRole##description##63001"
         },
         "xdm:isDirect": {
           "title": "Direct Flag",
           "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
           "type": "boolean",
-          "meta:titleId": "account-person##xdm:isDirect##title##99001",
-          "meta:descriptionId": "account-person##xdm:isDirect##description##20831"
+          "meta:titleId": "account-person##xdm:isDirect##title##72761",
+          "meta:descriptionId": "account-person##xdm:isDirect##description##23391"
         },
         "xdm:isActive": {
           "title": "Active Flag",
           "description": "Boolean to indicate if this relationship between the account and the person is active.",
           "type": "boolean",
-          "meta:titleId": "account-person##xdm:isActive##title##24441",
-          "meta:descriptionId": "account-person##xdm:isActive##description##45941"
+          "meta:titleId": "account-person##xdm:isActive##title##60631",
+          "meta:descriptionId": "account-person##xdm:isActive##description##99461"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean to indicate if the person is the primary contact on the account.",
           "type": "boolean",
-          "meta:titleId": "account-person##xdm:isPrimary##title##66331",
-          "meta:descriptionId": "account-person##xdm:isPrimary##description##53441"
+          "meta:titleId": "account-person##xdm:isPrimary##title##18891",
+          "meta:descriptionId": "account-person##xdm:isPrimary##description##42401"
         },
         "xdm:relationStartDate": {
           "title": "Relationship Start Date",
           "description": "The date when the relationship between the account and the person started.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "account-person##xdm:relationStartDate##title##48281",
-          "meta:descriptionId": "account-person##xdm:relationStartDate##description##15941"
+          "meta:titleId": "account-person##xdm:relationStartDate##title##42491",
+          "meta:descriptionId": "account-person##xdm:relationStartDate##description##30391"
         },
         "xdm:relationEndDate": {
           "title": "Relationship End Date",
           "description": "The date when the relationship between the account and the person ended.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "account-person##xdm:relationEndDate##title##40071",
-          "meta:descriptionId": "account-person##xdm:relationEndDate##description##76511"
+          "meta:titleId": "account-person##xdm:relationEndDate##title##87821",
+          "meta:descriptionId": "account-person##xdm:relationEndDate##description##42161"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -90,8 +90,8 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
-          "meta:titleId": "account-person##xdm:currencyCode##title##44801",
-          "meta:descriptionId": "account-person##xdm:currencyCode##description##31261"
+          "meta:titleId": "account-person##xdm:currencyCode##title##77161",
+          "meta:descriptionId": "account-person##xdm:currencyCode##description##41211"
         }
       }
     }
@@ -109,6 +109,6 @@
   ],
   "required": ["xdm:accountPersonID"],
   "meta:status": "experimental",
-  "meta:titleId": "account-person##title##1781",
-  "meta:descriptionId": "account-person##description##23241"
+  "meta:titleId": "account-person##title##61651",
+  "meta:descriptionId": "account-person##description##47221"
 }

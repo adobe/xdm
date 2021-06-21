@@ -20,15 +20,15 @@
           "title": "Contact/Lead Stage",
           "description": "Current stage of a business Contact or Lead.",
           "type": "string",
-          "meta:titleId": "bizible-person-details##bizible:stage##title##55261",
-          "meta:descriptionId": "bizible-person-details##bizible:stage##description##37241"
+          "meta:titleId": "bizible-person-details##bizible:stage##title##84641",
+          "meta:descriptionId": "bizible-person-details##bizible:stage##description##62881"
         },
         "bizible:stagePrevious": {
           "title": "Contact/Lead Previous Stage",
           "description": "Previous stage of a business Contact or Lead.",
           "type": "string",
-          "meta:titleId": "bizible-person-details##bizible:stagePrevious##title##93681",
-          "meta:descriptionId": "bizible-person-details##bizible:stagePrevious##description##60081"
+          "meta:titleId": "bizible-person-details##bizible:stagePrevious##title##35641",
+          "meta:descriptionId": "bizible-person-details##bizible:stagePrevious##description##66141"
         }
       }
     }
@@ -39,6 +39,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "bizible-person-details##title##34281",
-  "meta:descriptionId": "bizible-person-details##description##33411"
+  "meta:titleId": "bizible-person-details##title##44201",
+  "meta:descriptionId": "bizible-person-details##description##83321"
 }

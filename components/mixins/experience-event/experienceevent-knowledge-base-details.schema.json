@@ -35,32 +35,32 @@
               "title": "Knowledge Base Article ID",
               "type": "string",
               "description": "Tracks the knowledge base article ID when it has been viewed.",
-              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##title##80651",
-              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##description##29481"
+              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##title##33631",
+              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##description##89201"
             },
             "xdm:knowledgeBaseArticleType": {
               "title": "Knowledge Base Article Type",
               "type": "string",
               "description": "Tracks the knowledge base article type when it has been viewed.",
-              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##title##4481",
-              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##description##75741"
+              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##title##97691",
+              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##description##73251"
             },
             "xdm:knowledgeBaseArticleView": {
               "title": "Knowledge Base Article View",
               "type": "integer",
               "description": "Tracked when a knowledge base article has been viewed.",
-              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##title##98591",
-              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##description##34431"
+              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##title##71181",
+              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##description##63051"
             },
             "xdm:knowledgeBaseSearch": {
               "title": "Knowledge Base Search",
               "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
               "description": "Extension of internalSearch data type.",
-              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##title##23111",
-              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##description##11301"
+              "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##title##68501",
+              "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##description##97011"
             }
           },
-          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:siteKnowledge##description##48151"
+          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:siteKnowledge##description##45761"
         }
       }
     }
@@ -72,6 +72,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
-  "meta:titleId": "experienceevent-knowledge-base-details##title##34931",
-  "meta:descriptionId": "experienceevent-knowledge-base-details##description##89821"
+  "meta:titleId": "experienceevent-knowledge-base-details##title##74931",
+  "meta:descriptionId": "experienceevent-knowledge-base-details##description##42881"
 }

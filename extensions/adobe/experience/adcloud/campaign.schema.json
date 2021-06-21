@@ -17,57 +17,57 @@
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier for the account.",
-          "meta:titleId": "campaign##xdm:accountId##title##95151",
-          "meta:descriptionId": "campaign##xdm:accountId##description##54211"
+          "meta:titleId": "campaign##xdm:accountId##title##77071",
+          "meta:descriptionId": "campaign##xdm:accountId##description##43601"
         },
         "xdm:dspId": {
           "title": "Demand Side Platform(DSP) Identifier",
           "type": "string",
           "description": "Identifier for the Demand Side Platform where the campaign is defined. Usually, is the id of Adobe Advertising Cloud DSP.",
-          "meta:titleId": "campaign##xdm:dspId##title##56891",
-          "meta:descriptionId": "campaign##xdm:dspId##description##871"
+          "meta:titleId": "campaign##xdm:dspId##title##82401",
+          "meta:descriptionId": "campaign##xdm:dspId##description##65841"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Identifier for the campaign.",
-          "meta:titleId": "campaign##xdm:campaignId##title##8571",
-          "meta:descriptionId": "campaign##xdm:campaignId##description##86361"
+          "meta:titleId": "campaign##xdm:campaignId##title##93961",
+          "meta:descriptionId": "campaign##xdm:campaignId##description##72041"
         },
         "xdm:placementId": {
           "title": "Placement Identifier",
           "type": "string",
           "description": "Identifier for the placement.",
-          "meta:titleId": "campaign##xdm:placementId##title##47241",
-          "meta:descriptionId": "campaign##xdm:placementId##description##67921"
+          "meta:titleId": "campaign##xdm:placementId##title##44761",
+          "meta:descriptionId": "campaign##xdm:placementId##description##78001"
         },
         "xdm:packageId": {
           "title": "Package Identifier",
           "type": "string",
           "description": "Identifier for the package.",
-          "meta:titleId": "campaign##xdm:packageId##title##84101",
-          "meta:descriptionId": "campaign##xdm:packageId##description##27731"
+          "meta:titleId": "campaign##xdm:packageId##title##36871",
+          "meta:descriptionId": "campaign##xdm:packageId##description##57021"
         },
         "xdm:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
           "description": "Identifier for the advertiser.",
-          "meta:titleId": "campaign##xdm:advertiserId##title##16961",
-          "meta:descriptionId": "campaign##xdm:advertiserId##description##21631"
+          "meta:titleId": "campaign##xdm:advertiserId##title##191",
+          "meta:descriptionId": "campaign##xdm:advertiserId##description##76691"
         },
         "xdm:experimentId": {
           "title": "Experiment Identifier",
           "type": "string",
           "description": "Identifier for the experiment.",
-          "meta:titleId": "campaign##xdm:experimentId##title##53021",
-          "meta:descriptionId": "campaign##xdm:experimentId##description##28571"
+          "meta:titleId": "campaign##xdm:experimentId##title##66061",
+          "meta:descriptionId": "campaign##xdm:experimentId##description##54561"
         },
         "xdm:sampleGroupId": {
           "title": "Sample Group Identifier",
           "type": "string",
           "description": "Identifier for the sample group.",
-          "meta:titleId": "campaign##xdm:sampleGroupId##title##20181",
-          "meta:descriptionId": "campaign##xdm:sampleGroupId##description##84131"
+          "meta:titleId": "campaign##xdm:sampleGroupId##title##8581",
+          "meta:descriptionId": "campaign##xdm:sampleGroupId##description##65041"
         },
         "xdm:currency": {
           "title": "Account Currency",
@@ -75,8 +75,8 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 billing currency code for the account.",
-          "meta:titleId": "campaign##xdm:currency##title##85241",
-          "meta:descriptionId": "campaign##xdm:currency##description##78451"
+          "meta:titleId": "campaign##xdm:currency##title##65441",
+          "meta:descriptionId": "campaign##xdm:currency##description##43421"
         }
       }
     }
@@ -87,6 +87,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "campaign##title##61851",
-  "meta:descriptionId": "campaign##description##82681"
+  "meta:titleId": "campaign##title##54831",
+  "meta:descriptionId": "campaign##description##92531"
 }

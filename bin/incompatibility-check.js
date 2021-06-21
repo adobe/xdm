@@ -130,7 +130,24 @@ function validateSchemas(files) {
                     schema.definitions[i].type = 'object'
             }
         }
-        var schema4Validation =  mergeAllOf(deref(schema));
+        var schema4Validation =  mergeAllOf(deref(schema),{
+            resolvers: {
+                "meta:titleId": function(values) {
+                    var valueList = [];
+                    for (var i in values)
+                      valueList = valueList.concat(values[i]);
+                    if (valueList.length >1 )
+                      return Array.from(new Set(valueList));
+                  },
+                  "meta:descriptionId": function(values) {
+                    var valueList = [];
+                    for (var i in values)
+                      valueList = valueList.concat(values[i]);
+                    if (valueList.length >1 )
+                      return Array.from(new Set(valueList));
+                  }
+            }
+        });
         delete schema4Validation.definitions;
         validate(schema4Validation, file);
     });

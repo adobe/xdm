@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:productListOpens",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "product-list-opens##@id##description##40951"
+          "meta:descriptionId": "product-list-opens##@id##description##38241"
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: productListOpens",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "product-list-opens##schema:name##description##68591"
+          "meta:descriptionId": "product-list-opens##schema:name##description##42231"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "product-list-opens##xdm:measurement##description##43141"
+          "meta:descriptionId": "product-list-opens##xdm:measurement##description##30451"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "product-list-opens##title##12591",
-  "meta:descriptionId": "product-list-opens##description##94721"
+  "meta:titleId": "product-list-opens##title##2701",
+  "meta:descriptionId": "product-list-opens##description##30801"
 }

@@ -18,43 +18,43 @@
           "title": "First name",
           "type": "string",
           "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-          "meta:titleId": "person-name##xdm:firstName##title##17701",
-          "meta:descriptionId": "person-name##xdm:firstName##description##14701"
+          "meta:titleId": "person-name##xdm:firstName##title##55931",
+          "meta:descriptionId": "person-name##xdm:firstName##description##68451"
         },
         "xdm:lastName": {
           "title": "Last name",
           "type": "string",
           "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-          "meta:titleId": "person-name##xdm:lastName##title##59531",
-          "meta:descriptionId": "person-name##xdm:lastName##description##19891"
+          "meta:titleId": "person-name##xdm:lastName##title##70071",
+          "meta:descriptionId": "person-name##xdm:lastName##description##54251"
         },
         "xdm:middleName": {
           "title": "Middle name",
           "type": "string",
           "description": "Middle, alternative, or additional names supplied between the first name and last name.",
-          "meta:titleId": "person-name##xdm:middleName##title##85071",
-          "meta:descriptionId": "person-name##xdm:middleName##description##46901"
+          "meta:titleId": "person-name##xdm:middleName##title##49181",
+          "meta:descriptionId": "person-name##xdm:middleName##description##54941"
         },
         "xdm:courtesyTitle": {
           "title": "Courtesy title",
           "type": "string",
           "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.",
-          "meta:titleId": "person-name##xdm:courtesyTitle##title##7891",
-          "meta:descriptionId": "person-name##xdm:courtesyTitle##description##45451"
+          "meta:titleId": "person-name##xdm:courtesyTitle##title##291",
+          "meta:descriptionId": "person-name##xdm:courtesyTitle##description##81001"
         },
         "xdm:suffix": {
           "title": "Suffix",
           "type": "string",
           "description": "A group of letters provided after a person's name to provide additional information. The `suffix` is used at the end of someones name. For example Jr., Sr., M.D., PhD, I, II, III, etc.",
-          "meta:titleId": "person-name##xdm:suffix##title##3651",
-          "meta:descriptionId": "person-name##xdm:suffix##description##5011"
+          "meta:titleId": "person-name##xdm:suffix##title##1151",
+          "meta:descriptionId": "person-name##xdm:suffix##description##12701"
         },
         "xdm:fullName": {
           "title": "Full name",
           "type": "string",
           "description": "The full name of the person, in writing order most commonly accepted in the language of the name.",
-          "meta:titleId": "person-name##xdm:fullName##title##45801",
-          "meta:descriptionId": "person-name##xdm:fullName##description##25461"
+          "meta:titleId": "person-name##xdm:fullName##title##29621",
+          "meta:descriptionId": "person-name##xdm:fullName##description##29761"
         }
       }
     }
@@ -69,6 +69,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "person-name##title##36471",
-  "meta:descriptionId": "person-name##description##66371"
+  "meta:titleId": "person-name##title##14711",
+  "meta:descriptionId": "person-name##description##37521"
 }

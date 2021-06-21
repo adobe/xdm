@@ -18,22 +18,22 @@
           "title": "Ad player name",
           "type": "string",
           "description": "The name of the player responsible for rendering the ad.",
-          "meta:titleId": "advertising-timed-asset-view-details##xdm:playerName##title##33421",
-          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:playerName##description##75731"
+          "meta:titleId": "advertising-timed-asset-view-details##xdm:playerName##title##81631",
+          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:playerName##description##68111"
         },
         "xdm:index": {
           "title": "Ad In Pod Position",
           "type": "integer",
           "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1.",
-          "meta:titleId": "advertising-timed-asset-view-details##xdm:index##title##99311",
-          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:index##description##30831"
+          "meta:titleId": "advertising-timed-asset-view-details##xdm:index##title##14421",
+          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:index##description##21831"
         },
         "xdm:adBreak": {
           "title": "Ad break",
           "description": "Details about how a timed advertising is inserted into a timed media.",
           "$ref": "https://ns.adobe.com/xdm/context/advertising-break",
-          "meta:titleId": "advertising-timed-asset-view-details##xdm:adBreak##title##45261",
-          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:adBreak##description##77981"
+          "meta:titleId": "advertising-timed-asset-view-details##xdm:adBreak##title##73281",
+          "meta:descriptionId": "advertising-timed-asset-view-details##xdm:adBreak##description##64491"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "advertising-timed-asset-view-details##title##94361",
-  "meta:descriptionId": "advertising-timed-asset-view-details##description##78791"
+  "meta:titleId": "advertising-timed-asset-view-details##title##20921",
+  "meta:descriptionId": "advertising-timed-asset-view-details##description##33281"
 }

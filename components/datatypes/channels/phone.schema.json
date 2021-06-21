@@ -23,7 +23,7 @@
           "format": "uri-reference",
           "const": "https://ns.adobe.com/xdm/channels/phone",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-          "meta:descriptionId": "phone##@id##description##50801"
+          "meta:descriptionId": "phone##@id##description##98721"
         },
         "xdm:mode": {
           "type": "string",
@@ -34,7 +34,7 @@
             "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
             "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
           },
-          "meta:descriptionId": "phone##xdm:mode##description##84111"
+          "meta:descriptionId": "phone##xdm:mode##description##56151"
         },
         "@type": {
           "type": "string",
@@ -49,7 +49,7 @@
             "https://ns.adobe.com/xdm/channel-types/email": "Email",
             "https://ns.adobe.com/xdm/channel-types/offline": "Non-digital experience channels"
           },
-          "meta:descriptionId": "phone##@type##description##34521"
+          "meta:descriptionId": "phone##@type##description##91281"
         },
         "xdm:contentTypes": {
           "type": "array",
@@ -58,7 +58,7 @@
           },
           "const": [],
           "description": "The content types that this channel can deliver.",
-          "meta:descriptionId": "phone##xdm:contentTypes##description##60881"
+          "meta:descriptionId": "phone##xdm:contentTypes##description##33561"
         },
         "xdm:metricTypes": {
           "type": "array",
@@ -67,7 +67,7 @@
           },
           "const": [],
           "description": "The metrics that can be collected in this channel.",
-          "meta:descriptionId": "phone##xdm:metricTypes##description##11251"
+          "meta:descriptionId": "phone##xdm:metricTypes##description##78811"
         },
         "xdm:locationTypes": {
           "type": "array",
@@ -76,7 +76,7 @@
           },
           "const": [],
           "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
-          "meta:descriptionId": "phone##xdm:locationTypes##description##70991"
+          "meta:descriptionId": "phone##xdm:locationTypes##description##52461"
         }
       }
     }
@@ -95,6 +95,6 @@
   "required": ["@id"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "phone##title##45761",
-  "meta:descriptionId": "phone##description##19641"
+  "meta:titleId": "phone##title##68011",
+  "meta:descriptionId": "phone##description##40791"
 }

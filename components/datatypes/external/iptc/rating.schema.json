@@ -17,16 +17,16 @@
           "title": "Rating Value",
           "type": "string",
           "description": "Rating value as issued by the rating source.",
-          "meta:titleId": "rating##iptc4xmpExt:RatingValue##title##70321",
-          "meta:descriptionId": "rating##iptc4xmpExt:RatingValue##description##15581"
+          "meta:titleId": "rating##iptc4xmpExt:RatingValue##title##22981",
+          "meta:descriptionId": "rating##iptc4xmpExt:RatingValue##description##72551"
         },
         "iptc4xmpExt:RatingSourceLink": {
           "title": "Rating Source Link",
           "type": "string",
           "format": "uri",
           "description": "Link to the site and optionally the page of the party which has issued the rating value, linked resource should explain the rating rules.",
-          "meta:titleId": "rating##iptc4xmpExt:RatingSourceLink##title##63641",
-          "meta:descriptionId": "rating##iptc4xmpExt:RatingSourceLink##description##75371"
+          "meta:titleId": "rating##iptc4xmpExt:RatingSourceLink##title##11541",
+          "meta:descriptionId": "rating##iptc4xmpExt:RatingSourceLink##description##18931"
         }
       },
       "required": [
@@ -42,6 +42,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "rating##title##67761",
-  "meta:descriptionId": "rating##description##52951"
+  "meta:titleId": "rating##title##98531",
+  "meta:descriptionId": "rating##description##19631"
 }

@@ -20,15 +20,15 @@
           "type": "string",
           "title": "Name",
           "description": "Filter name. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing",
-          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/name##title##88111",
-          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/name##description##87901"
+          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/name##title##91831",
+          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/name##description##46231"
         },
         "https://ns.adobe.com/experience/decisioning/filterType": {
           "type": "string",
           "title": "Decision Option Filter Type",
           "description": "An indicator to identify the handler of the filter expression to which any parameters will be provided. Parameters will be provided as additional properties in schemas that extend Decision Option Filter.",
-          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/filterType##title##48951",
-          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/filterType##description##90541"
+          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/filterType##title##53391",
+          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/filterType##description##2011"
         }
       }
     },
@@ -39,15 +39,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the decision option filter.",
-          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/filterID##title##69031",
-          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/filterID##description##8101"
+          "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/filterID##title##88941",
+          "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/filterID##description##86211"
         },
         "repo:etag": {
           "title": "Filter ETag",
           "type": "string",
           "description": "The revision that the placement object was at when the snapshot was taken.",
-          "meta:titleId": "filter##repo:etag##title##98781",
-          "meta:descriptionId": "filter##repo:etag##description##12481"
+          "meta:titleId": "filter##repo:etag##title##30441",
+          "meta:descriptionId": "filter##repo:etag##description##16941"
         }
       }
     }
@@ -61,6 +61,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "filter##title##50371",
-  "meta:descriptionId": "filter##description##12531"
+  "meta:titleId": "filter##title##46421",
+  "meta:descriptionId": "filter##description##28231"
 }

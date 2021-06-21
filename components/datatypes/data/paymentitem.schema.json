@@ -17,15 +17,15 @@
           "title": "Transaction ID",
           "type": "string",
           "description": "The unique transaction identifier for this payment item.",
-          "meta:titleId": "paymentitem##xdm:transactionID##title##1441",
-          "meta:descriptionId": "paymentitem##xdm:transactionID##description##65681"
+          "meta:titleId": "paymentitem##xdm:transactionID##title##2531",
+          "meta:descriptionId": "paymentitem##xdm:transactionID##description##6991"
         },
         "xdm:paymentAmount": {
           "title": "Payment Amount",
           "type": "number",
           "description": "The value of the payment.",
-          "meta:titleId": "paymentitem##xdm:paymentAmount##title##87231",
-          "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##4501"
+          "meta:titleId": "paymentitem##xdm:paymentAmount##title##82851",
+          "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##72611"
         },
         "xdm:paymentType": {
           "title": "Payment Type",
@@ -43,8 +43,8 @@
             "credit_card_reference": "Credit Card Reference Transaction",
             "other": "Other"
           },
-          "meta:titleId": "paymentitem##xdm:paymentType##title##75851",
-          "meta:descriptionId": "paymentitem##xdm:paymentType##description##49831"
+          "meta:titleId": "paymentitem##xdm:paymentType##title##38921",
+          "meta:descriptionId": "paymentitem##xdm:paymentType##description##39611"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -52,8 +52,8 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for this payment item.",
-          "meta:titleId": "paymentitem##xdm:currencyCode##title##53231",
-          "meta:descriptionId": "paymentitem##xdm:currencyCode##description##41671"
+          "meta:titleId": "paymentitem##xdm:currencyCode##title##28261",
+          "meta:descriptionId": "paymentitem##xdm:currencyCode##description##16451"
         }
       }
     }
@@ -65,6 +65,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "paymentitem##title##76571",
-  "meta:descriptionId": "paymentitem##description##47611"
+  "meta:titleId": "paymentitem##title##34511",
+  "meta:descriptionId": "paymentitem##description##30021"
 }

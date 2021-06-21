@@ -40,8 +40,8 @@
                       "items": {
                         "type": "number"
                       },
-                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##title##22901",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description##40721"
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##title##52861",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description##36271"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen": {
                       "title": "Send Time Score for Open",
@@ -52,12 +52,12 @@
                       "items": {
                         "type": "number"
                       },
-                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##46991",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##57591"
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##20661",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##12661"
                     }
                   },
-                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##title##37711",
-                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##description##99061"
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##title##51331",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##description##53071"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization": {
                   "title": "Push Send Time Optimization",
@@ -73,27 +73,27 @@
                       "items": {
                         "type": "number"
                       },
-                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##5431",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##37891"
+                      "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##2011",
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##65411"
                     }
                   },
-                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title##47441",
-                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##description##87681"
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title##61831",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##description##65621"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo": {
                   "title": "Send Time Optimization Score Info",
                   "description": "This information contains send time optimization model version and scoring date as a concatenated string, e.g. v1.2.0_2020-09-29.",
                   "type": "string",
-                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##title##1131",
-                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##description##59491"
+                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##title##21121",
+                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimizationScoreInfo##description##42171"
                 }
               },
-              "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##title##56731",
-              "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##description##601"
+              "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##title##89801",
+              "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeOptimization##description##10371"
             }
           },
-          "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##title##36751",
-          "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##description##15851"
+          "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##title##34021",
+          "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/journeyAI##description##96481"
         }
       }
     }
@@ -104,6 +104,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "profile-journeyai-sendtimeoptimization##title##22121",
-  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##description##17691"
+  "meta:titleId": "profile-journeyai-sendtimeoptimization##title##51631",
+  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##description##65611"
 }

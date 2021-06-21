@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:sends",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "sends##@id##description##26511"
+          "meta:descriptionId": "sends##@id##description##48741"
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: sends",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "sends##schema:name##description##59711"
+          "meta:descriptionId": "sends##schema:name##description##5401"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "sends##xdm:measurement##description##86831"
+          "meta:descriptionId": "sends##xdm:measurement##description##30321"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "sends##title##21491",
-  "meta:descriptionId": "sends##description##40061"
+  "meta:titleId": "sends##title##70071",
+  "meta:descriptionId": "sends##description##22061"
 }

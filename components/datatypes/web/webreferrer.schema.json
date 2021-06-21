@@ -18,8 +18,8 @@
           "title": "URL",
           "type": "string",
           "description": "The referrer URL.",
-          "meta:titleId": "webreferrer##xdm:URL##title##59681",
-          "meta:descriptionId": "webreferrer##xdm:URL##description##99131"
+          "meta:titleId": "webreferrer##xdm:URL##title##54341",
+          "meta:descriptionId": "webreferrer##xdm:URL##description##24941"
         },
         "xdm:type": {
           "title": "Type",
@@ -45,8 +45,8 @@
             "unknown": "Unknown",
             "news": "Usenet newsgroup"
           },
-          "meta:titleId": "webreferrer##xdm:type##title##53731",
-          "meta:descriptionId": "webreferrer##xdm:type##description##48861"
+          "meta:titleId": "webreferrer##xdm:type##title##64431",
+          "meta:descriptionId": "webreferrer##xdm:type##description##2891"
         }
       }
     }
@@ -61,6 +61,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "webreferrer##title##81361",
-  "meta:descriptionId": "webreferrer##description##20751"
+  "meta:titleId": "webreferrer##title##32501",
+  "meta:descriptionId": "webreferrer##description##57441"
 }

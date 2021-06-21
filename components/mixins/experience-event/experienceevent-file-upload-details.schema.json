@@ -39,11 +39,11 @@
               "title": "File Upload",
               "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
               "description": "Tracks all details of a file upload. Extension of file transfer data type.",
-              "meta:titleId": "experienceevent-file-upload-details##xdm:fileUpload##title##19391",
-              "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileUpload##description##90841"
+              "meta:titleId": "experienceevent-file-upload-details##xdm:fileUpload##title##16111",
+              "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileUpload##description##70901"
             }
           },
-          "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileTransfer##description##7141"
+          "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileTransfer##description##13491"
         }
       }
     }
@@ -55,6 +55,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-13",
-  "meta:titleId": "experienceevent-file-upload-details##title##99421",
-  "meta:descriptionId": "experienceevent-file-upload-details##description##12951"
+  "meta:titleId": "experienceevent-file-upload-details##title##4031",
+  "meta:descriptionId": "experienceevent-file-upload-details##description##6501"
 }

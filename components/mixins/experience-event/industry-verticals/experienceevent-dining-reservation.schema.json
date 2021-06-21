@@ -60,15 +60,15 @@
                       "thai": "Thai"
                     },
                     "description": "Type of restaurant cuisine.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:cuisine##title##59831",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cuisine##description##40151"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:cuisine##title##9971",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cuisine##description##51521"
                   },
                   "xdm:restaurantID": {
                     "title": "Restaurant ID",
                     "type": "string",
                     "description": "Identifier for the restaurant/dining location.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:restaurantID##title##37671",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:restaurantID##description##92891"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:restaurantID##title##67051",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:restaurantID##description##82751"
                   },
                   "xdm:deliveryPartners": {
                     "title": "Delivery Partners",
@@ -80,8 +80,8 @@
                       "other": "Other"
                     },
                     "description": "Delivery partners available from the restaurant.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:deliveryPartners##title##56241",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:deliveryPartners##description##36231"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:deliveryPartners##title##4081",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:deliveryPartners##description##5721"
                   },
                   "xdm:diningOptions": {
                     "title": "Dining Options",
@@ -93,29 +93,29 @@
                       "takeout": "Takeout"
                     },
                     "description": "Delivery and dining options available from the restaurant.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:diningOptions##title##88411",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:diningOptions##description##64471"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:diningOptions##title##29911",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:diningOptions##description##53721"
                   },
                   "xdm:groupReservation": {
                     "title": "Group Reservation",
                     "type": "boolean",
                     "description": "Indicates if the reservation is being made for a group.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:groupReservation##title##26351",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:groupReservation##description##63271"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:groupReservation##title##2161",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:groupReservation##description##661"
                   },
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
                     "description": "Includes the loyalty/rewards program ID for the party listed in the reservation.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:loyaltyID##title##45411",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:loyaltyID##description##60991"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:loyaltyID##title##11071",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:loyaltyID##description##64341"
                   },
                   "xdm:partySize": {
                     "title": "Party Size",
                     "type": "integer",
                     "description": "Number of individuals in the dining party.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:partySize##title##99821",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:partySize##description##37141"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:partySize##title##60141",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:partySize##description##24271"
                   },
                   "xdm:priceCategory": {
                     "title": "Price Category",
@@ -127,23 +127,23 @@
                       "$$$$": "$$$$"
                     },
                     "description": "Price category for the reservation being made.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:priceCategory##title##61501",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:priceCategory##description##23421"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:priceCategory##title##34451",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:priceCategory##description##6501"
                   },
                   "xdm:reservationTime": {
                     "title": "Reservation Time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The time for which the dining reservation is booked.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:reservationTime##title##89681",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:reservationTime##description##46581"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:reservationTime##title##6071",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:reservationTime##description##12431"
                   },
                   "xdm:specialOccasion": {
                     "title": "Special Occasion",
                     "type": "boolean",
                     "description": "Indicates if the reservation is being made for a special occasion.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:specialOccasion##title##33421",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:specialOccasion##description##15061"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:specialOccasion##title##29611",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:specialOccasion##description##84161"
                   },
                   "xdm:status": {
                     "title": "Status",
@@ -155,80 +155,80 @@
                       "pending": "Pending"
                     },
                     "description": "The status of the dining reservation.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:status##title##70371",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:status##description##1641"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:status##title##63091",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:status##description##16691"
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
                     "type": "integer",
                     "description": "Tracked when a reservation has been cancelled.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:cancellation##title##9701",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cancellation##description##91701"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:cancellation##title##32051",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:cancellation##description##32211"
                   },
                   "xdm:confirmationNumber": {
                     "title": "Confirmation Number",
                     "type": "string",
                     "description": "Tracks the reservation confirmation number/identifier.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:confirmationNumber##title##97411",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:confirmationNumber##description##79611"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:confirmationNumber##title##36831",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:confirmationNumber##description##37231"
                   },
                   "xdm:created": {
                     "title": "Created",
                     "type": "integer",
                     "description": "Tracked when a reservation has been created.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:created##title##67361",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:created##description##52631"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:created##title##52881",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:created##description##10531"
                   },
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
                     "description": "Currency code used to make the purchase. ISO 4217 currency code.",
                     "pattern": "^[A-Z]{3}$",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:currencyCode##title##60661",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:currencyCode##description##2351"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:currencyCode##title##48281",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:currencyCode##description##14141"
                   },
                   "xdm:ID": {
                     "title": "ID",
                     "type": "string",
                     "description": "Tracks the reservation number/identifier.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:ID##title##57921",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:ID##description##16881"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:ID##title##3481",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:ID##description##51381"
                   },
                   "xdm:length": {
                     "title": "Length",
                     "type": "integer",
                     "description": "Tracks the total number of days for a reservation.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:length##title##9101",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:length##description##60191"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:length##title##68181",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:length##description##79011"
                   },
                   "xdm:modification": {
                     "title": "Modification",
                     "type": "integer",
                     "description": "Captured when a reservation has been modified.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:modification##title##81101",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:modification##description##98941"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:modification##title##94341",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:modification##description##55921"
                   },
                   "xdm:modificationDate": {
                     "title": "Modification Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "Tracks when a reservation has been modified.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:modificationDate##title##89391",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:modificationDate##description##74701"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:modificationDate##title##26651",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:modificationDate##description##14391"
                   },
                   "xdm:numberOfAdults": {
                     "title": "Number of Adults",
                     "type": "integer",
                     "description": "Captures the number of adults associated with the reservation.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:numberOfAdults##title##11231",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:numberOfAdults##description##56071"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:numberOfAdults##title##27701",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:numberOfAdults##description##37561"
                   },
                   "xdm:numberOfChildren": {
                     "title": "Number of Children",
                     "type": "integer",
                     "description": "Captures the number of children associated with the reservation.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:numberOfChildren##title##70271",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:numberOfChildren##description##70181"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:numberOfChildren##title##11951",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:numberOfChildren##description##12541"
                   },
                   "xdm:purpose": {
                     "title": "Purpose",
@@ -238,8 +238,8 @@
                       "personal": "Personal"
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
-                    "meta:titleId": "experienceevent-dining-reservation##xdm:purpose##title##20901",
-                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:purpose##description##51821"
+                    "meta:titleId": "experienceevent-dining-reservation##xdm:purpose##title##66521",
+                    "meta:descriptionId": "experienceevent-dining-reservation##xdm:purpose##description##48491"
                   }
                 }
               }
@@ -259,6 +259,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-10",
-  "meta:titleId": "experienceevent-dining-reservation##title##43671",
-  "meta:descriptionId": "experienceevent-dining-reservation##description##82511"
+  "meta:titleId": "experienceevent-dining-reservation##title##58321",
+  "meta:descriptionId": "experienceevent-dining-reservation##description##51941"
 }

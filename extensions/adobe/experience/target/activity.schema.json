@@ -17,15 +17,15 @@
           "title": "Activity Identifier",
           "type": "string",
           "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target.",
-          "meta:titleId": "activity##xdm:activityID##title##84241",
-          "meta:descriptionId": "activity##xdm:activityID##description##31881"
+          "meta:titleId": "activity##xdm:activityID##title##16851",
+          "meta:descriptionId": "activity##xdm:activityID##description##56711"
         },
         "xdm:version": {
           "title": "Activity Version",
           "type": "string",
           "description": "Version of the activity that processed this given experience event.",
-          "meta:titleId": "activity##xdm:version##title##48831",
-          "meta:descriptionId": "activity##xdm:version##description##74981"
+          "meta:titleId": "activity##xdm:version##title##21461",
+          "meta:descriptionId": "activity##xdm:version##description##9041"
         },
         "https://ns.adobe.com/experience/target/activity/preview": {
           "$ref": "https://ns.adobe.com/experience/target/activity/preview"
@@ -46,6 +46,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "activity##title##77071",
-  "meta:descriptionId": "activity##description##41681"
+  "meta:titleId": "activity##title##93911",
+  "meta:descriptionId": "activity##description##55411"
 }

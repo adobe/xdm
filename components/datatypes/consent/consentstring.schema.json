@@ -18,37 +18,37 @@
           "title": "Standard for the consent",
           "type": "string",
           "description": "This helps determine the format of the consent string as set by consent management services.",
-          "meta:titleId": "consentstring##xdm:consentStandard##title##75601",
-          "meta:descriptionId": "consentstring##xdm:consentStandard##description##19041"
+          "meta:titleId": "consentstring##xdm:consentStandard##title##65811",
+          "meta:descriptionId": "consentstring##xdm:consentStandard##description##3241"
         },
         "xdm:consentStandardVersion": {
           "title": "Standards Version",
           "type": "string",
           "description": "Standards version to accurately define the format of the consent string as set by consent management services.",
-          "meta:titleId": "consentstring##xdm:consentStandardVersion##title##86871",
-          "meta:descriptionId": "consentstring##xdm:consentStandardVersion##description##93921"
+          "meta:titleId": "consentstring##xdm:consentStandardVersion##title##26151",
+          "meta:descriptionId": "consentstring##xdm:consentStandardVersion##description##11871"
         },
         "xdm:consentStringValue": {
           "title": "Consent String",
           "type": "string",
           "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string.",
-          "meta:titleId": "consentstring##xdm:consentStringValue##title##40941",
-          "meta:descriptionId": "consentstring##xdm:consentStringValue##description##71061"
+          "meta:titleId": "consentstring##xdm:consentStringValue##title##47771",
+          "meta:descriptionId": "consentstring##xdm:consentStringValue##description##4391"
         },
         "xdm:gdprApplies": {
           "title": "GDPR Applies",
           "type": "boolean",
           "default": false,
           "description": "If this is true, it means this consent string needs to be processed for consent enforcement.",
-          "meta:titleId": "consentstring##xdm:gdprApplies##title##27981",
-          "meta:descriptionId": "consentstring##xdm:gdprApplies##description##90211"
+          "meta:titleId": "consentstring##xdm:gdprApplies##title##98461",
+          "meta:descriptionId": "consentstring##xdm:gdprApplies##description##35161"
         },
         "xdm:containsPersonalData": {
           "title": "Contains personal data",
           "type": "boolean",
           "description": "If this is true, it means consent is coming with personal data.",
-          "meta:titleId": "consentstring##xdm:containsPersonalData##title##20891",
-          "meta:descriptionId": "consentstring##xdm:containsPersonalData##description##93411"
+          "meta:titleId": "consentstring##xdm:containsPersonalData##title##57351",
+          "meta:descriptionId": "consentstring##xdm:containsPersonalData##description##90601"
         }
       },
       "required": ["xdm:gdprApplies"]
@@ -64,6 +64,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "consentstring##title##96211",
-  "meta:descriptionId": "consentstring##description##7991"
+  "meta:titleId": "consentstring##title##85261",
+  "meta:descriptionId": "consentstring##description##44221"
 }

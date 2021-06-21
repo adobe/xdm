@@ -20,30 +20,30 @@
           "title": "Destination ID",
           "type": "string",
           "description": "Unique Identifier for a destination instance",
-          "meta:titleId": "destination-namespace##xdm:destinationID##title##99461",
-          "meta:descriptionId": "destination-namespace##xdm:destinationID##description##61891"
+          "meta:titleId": "destination-namespace##xdm:destinationID##title##70871",
+          "meta:descriptionId": "destination-namespace##xdm:destinationID##description##12201"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
           "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.",
-          "meta:titleId": "destination-namespace##xdm:namespaceCode##title##90801",
-          "meta:descriptionId": "destination-namespace##xdm:namespaceCode##description##11861"
+          "meta:titleId": "destination-namespace##xdm:namespaceCode##title##16941",
+          "meta:descriptionId": "destination-namespace##xdm:namespaceCode##description##3461"
         },
         "xdm:createTime": {
           "title": "Create Time",
           "type": "string",
           "format": "date-time",
           "description": "The date and UTC time when the activation flow to the destination-namespace mapping was createdByID",
-          "meta:titleId": "destination-namespace##xdm:createTime##title##98381",
-          "meta:descriptionId": "destination-namespace##xdm:createTime##description##93811"
+          "meta:titleId": "destination-namespace##xdm:createTime##title##29691",
+          "meta:descriptionId": "destination-namespace##xdm:createTime##description##23411"
         },
         "xdm:createdByID": {
           "title": "Created User ID",
           "type": "string",
           "description": "ID of user who created the destination flow",
-          "meta:titleId": "destination-namespace##xdm:createdByID##title##53991",
-          "meta:descriptionId": "destination-namespace##xdm:createdByID##description##34941"
+          "meta:titleId": "destination-namespace##xdm:createdByID##title##74321",
+          "meta:descriptionId": "destination-namespace##xdm:createdByID##description##79111"
         }
       }
     }
@@ -60,6 +60,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "destination-namespace##title##2091",
-  "meta:descriptionId": "destination-namespace##description##92971"
+  "meta:titleId": "destination-namespace##title##34241",
+  "meta:descriptionId": "destination-namespace##description##7241"
 }

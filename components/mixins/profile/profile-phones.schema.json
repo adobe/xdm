@@ -20,29 +20,29 @@
           "title": "Home Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Home phone number.",
-          "meta:titleId": "profile-phones##xdm:homePhone##title##30451",
-          "meta:descriptionId": "profile-phones##xdm:homePhone##description##18681"
+          "meta:titleId": "profile-phones##xdm:homePhone##title##45261",
+          "meta:descriptionId": "profile-phones##xdm:homePhone##description##88401"
         },
         "xdm:mobilePhone": {
           "title": "Mobile Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Mobile phone number.",
-          "meta:titleId": "profile-phones##xdm:mobilePhone##title##18151",
-          "meta:descriptionId": "profile-phones##xdm:mobilePhone##description##35261"
+          "meta:titleId": "profile-phones##xdm:mobilePhone##title##37551",
+          "meta:descriptionId": "profile-phones##xdm:mobilePhone##description##70621"
         },
         "xdm:workPhone": {
           "title": "Work Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number.",
-          "meta:titleId": "profile-phones##xdm:workPhone##title##75821",
-          "meta:descriptionId": "profile-phones##xdm:workPhone##description##53491"
+          "meta:titleId": "profile-phones##xdm:workPhone##title##39781",
+          "meta:descriptionId": "profile-phones##xdm:workPhone##description##41361"
         },
         "xdm:faxPhone": {
           "title": "Fax Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number.",
-          "meta:titleId": "profile-phones##xdm:faxPhone##title##18971",
-          "meta:descriptionId": "profile-phones##xdm:faxPhone##description##43891"
+          "meta:titleId": "profile-phones##xdm:faxPhone##title##82631",
+          "meta:descriptionId": "profile-phones##xdm:faxPhone##description##97391"
         }
       }
     }
@@ -57,6 +57,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-phones##title##92261",
-  "meta:descriptionId": "profile-phones##description##18131"
+  "meta:titleId": "profile-phones##title##67771",
+  "meta:descriptionId": "profile-phones##description##85281"
 }

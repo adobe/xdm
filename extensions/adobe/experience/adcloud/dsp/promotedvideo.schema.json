@@ -23,43 +23,43 @@
           "title": "promotedVideoKey",
           "type": "string",
           "description": "External unique identifier for a promoted video the ad is displaying.",
-          "meta:titleId": "promotedvideo##dsp:promotedVideoKey##title##72011",
-          "meta:descriptionId": "promotedvideo##dsp:promotedVideoKey##description##55921"
+          "meta:titleId": "promotedvideo##dsp:promotedVideoKey##title##73961",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoKey##description##7781"
         },
         "dsp:campaignKey": {
           "title": "campaignKey",
           "type": "string",
           "description": "Identifier for the campaign that belongs to the displayed video.",
-          "meta:titleId": "promotedvideo##dsp:campaignKey##title##69961",
-          "meta:descriptionId": "promotedvideo##dsp:campaignKey##description##60741"
+          "meta:titleId": "promotedvideo##dsp:campaignKey##title##15931",
+          "meta:descriptionId": "promotedvideo##dsp:campaignKey##description##94811"
         },
         "dsp:promotedVideoName": {
           "title": "promotedVideoName",
           "type": "string",
           "description": "A name that uniquely identifies the promoted video within the campaign.",
-          "meta:titleId": "promotedvideo##dsp:promotedVideoName##title##42681",
-          "meta:descriptionId": "promotedvideo##dsp:promotedVideoName##description##58991"
+          "meta:titleId": "promotedvideo##dsp:promotedVideoName##title##61181",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoName##description##38031"
         },
         "dsp:promoteVideoDuration": {
           "title": "promoteVideoDuration",
           "type": "integer",
           "description": "The duration of the video.",
-          "meta:titleId": "promotedvideo##dsp:promoteVideoDuration##title##20601",
-          "meta:descriptionId": "promotedvideo##dsp:promoteVideoDuration##description##47601"
+          "meta:titleId": "promotedvideo##dsp:promoteVideoDuration##title##76761",
+          "meta:descriptionId": "promotedvideo##dsp:promoteVideoDuration##description##71711"
         },
         "dsp:promotedVideoTags": {
           "title": "Promoted Video Tags",
           "type": "string",
           "description": "Labels describing ad categories for this video.",
-          "meta:titleId": "promotedvideo##dsp:promotedVideoTags##title##18511",
-          "meta:descriptionId": "promotedvideo##dsp:promotedVideoTags##description##37021"
+          "meta:titleId": "promotedvideo##dsp:promotedVideoTags##title##20271",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoTags##description##63111"
         },
         "dsp:promotedVideoDescription": {
           "title": "Promoted Video Description",
           "type": "string",
           "description": "Detailed description for this video.",
-          "meta:titleId": "promotedvideo##dsp:promotedVideoDescription##title##83091",
-          "meta:descriptionId": "promotedvideo##dsp:promotedVideoDescription##description##61821"
+          "meta:titleId": "promotedvideo##dsp:promotedVideoDescription##title##43491",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoDescription##description##45351"
         }
       }
     }
@@ -76,6 +76,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "promotedvideo##title##75011",
-  "meta:descriptionId": "promotedvideo##description##27051"
+  "meta:titleId": "promotedvideo##title##15151",
+  "meta:descriptionId": "promotedvideo##description##12111"
 }

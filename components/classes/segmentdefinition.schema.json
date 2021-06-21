@@ -23,37 +23,37 @@
           "title": "Segment identity",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
           "description": "Identity of the segment.",
-          "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##23841",
-          "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##45981"
+          "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##30241",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##17241"
         },
         "xdm:segmentName": {
           "title": "Segment name",
           "type": "string",
           "description": "Name of the segment.",
-          "meta:titleId": "segmentdefinition##xdm:segmentName##title##5261",
-          "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##88061"
+          "meta:titleId": "segmentdefinition##xdm:segmentName##title##48261",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##85821"
         },
         "xdm:description": {
           "title": "Segment description",
           "type": "string",
           "description": "Description of the segment.",
-          "meta:titleId": "segmentdefinition##xdm:description##title##64291",
-          "meta:descriptionId": "segmentdefinition##xdm:description##description##39901"
+          "meta:titleId": "segmentdefinition##xdm:description##title##19401",
+          "meta:descriptionId": "segmentdefinition##xdm:description##description##92601"
         },
         "xdm:version": {
           "title": "Segment version",
           "type": "string",
           "description": "Version of the segment.",
-          "meta:titleId": "segmentdefinition##xdm:version##title##52191",
-          "meta:descriptionId": "segmentdefinition##xdm:version##description##69621"
+          "meta:titleId": "segmentdefinition##xdm:version##title##89071",
+          "meta:descriptionId": "segmentdefinition##xdm:version##description##39891"
         },
         "xdm:segmentStatus": {
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
           "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
-          "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##52251",
-          "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##41821"
+          "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##23541",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##59711"
         }
       }
     }
@@ -78,6 +78,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "segmentdefinition##title##51381",
-  "meta:descriptionId": "segmentdefinition##description##10661"
+  "meta:titleId": "segmentdefinition##title##63281",
+  "meta:descriptionId": "segmentdefinition##description##19101"
 }

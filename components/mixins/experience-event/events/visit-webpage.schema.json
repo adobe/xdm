@@ -34,40 +34,40 @@
                   "title": "Web Page ID",
                   "type": "string",
                   "description": "Unique ID of the web page.",
-                  "meta:titleId": "visit-webpage##xdm:webPageID##title##21661",
-                  "meta:descriptionId": "visit-webpage##xdm:webPageID##description##52671"
+                  "meta:titleId": "visit-webpage##xdm:webPageID##title##59121",
+                  "meta:descriptionId": "visit-webpage##xdm:webPageID##description##10381"
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
                   "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-                  "meta:titleId": "visit-webpage##xdm:name##title##78591",
-                  "meta:descriptionId": "visit-webpage##xdm:name##description##25311"
+                  "meta:titleId": "visit-webpage##xdm:name##title##90261",
+                  "meta:descriptionId": "visit-webpage##xdm:name##description##82651"
                 },
                 "xdm:URL": {
                   "title": "URL",
                   "type": "string",
                   "format": "uri",
                   "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
-                  "meta:titleId": "visit-webpage##xdm:URL##title##21121",
-                  "meta:descriptionId": "visit-webpage##xdm:URL##description##1091"
+                  "meta:titleId": "visit-webpage##xdm:URL##title##10761",
+                  "meta:descriptionId": "visit-webpage##xdm:URL##description##79131"
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
                   "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url.",
-                  "meta:titleId": "visit-webpage##xdm:queryParameters##title##73581",
-                  "meta:descriptionId": "visit-webpage##xdm:queryParameters##description##6681"
+                  "meta:titleId": "visit-webpage##xdm:queryParameters##title##95171",
+                  "meta:descriptionId": "visit-webpage##xdm:queryParameters##description##66881"
                 },
                 "xdm:isPersonalizedURL": {
                   "title": "Is Personalized URL",
                   "type": "boolean",
                   "description": "Boolean indicating if person accessed the web page via a personalized URL.",
-                  "meta:titleId": "visit-webpage##xdm:isPersonalizedURL##title##86121",
-                  "meta:descriptionId": "visit-webpage##xdm:isPersonalizedURL##description##76811"
+                  "meta:titleId": "visit-webpage##xdm:isPersonalizedURL##title##4731",
+                  "meta:descriptionId": "visit-webpage##xdm:isPersonalizedURL##description##96081"
                 }
               },
-              "meta:titleId": "visit-webpage##xdm:webPageDetails##title##98201"
+              "meta:titleId": "visit-webpage##xdm:webPageDetails##title##29981"
             },
             "xdm:webReferrer": {
               "title": "Web Referrer",
@@ -77,15 +77,15 @@
                   "title": "URL",
                   "type": "string",
                   "description": "URL of the referring web page.",
-                  "meta:titleId": "visit-webpage##xdm:URL##title##30681",
-                  "meta:descriptionId": "visit-webpage##xdm:URL##description##59561"
+                  "meta:titleId": "visit-webpage##xdm:URL##title##13261",
+                  "meta:descriptionId": "visit-webpage##xdm:URL##description##39891"
                 }
               },
-              "meta:titleId": "visit-webpage##xdm:webReferrer##title##56511"
+              "meta:titleId": "visit-webpage##xdm:webReferrer##title##67911"
             }
           },
-          "meta:titleId": "visit-webpage##xdm:web##title##75891",
-          "meta:descriptionId": "visit-webpage##xdm:web##description##75571"
+          "meta:titleId": "visit-webpage##xdm:web##title##6841",
+          "meta:descriptionId": "visit-webpage##xdm:web##description##51591"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -97,8 +97,8 @@
               "type": "string",
               "format": "ipv4",
               "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
-              "meta:titleId": "visit-webpage##xdm:ipV4##title##47771",
-              "meta:descriptionId": "visit-webpage##xdm:ipV4##description##37271"
+              "meta:titleId": "visit-webpage##xdm:ipV4##title##21361",
+              "meta:descriptionId": "visit-webpage##xdm:ipV4##description##97781"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -109,16 +109,16 @@
                   "title": "User agent",
                   "type": "string",
                   "description": "The HTTP user-agent string from the client request.",
-                  "meta:titleId": "visit-webpage##xdm:userAgent##title##35441",
-                  "meta:descriptionId": "visit-webpage##xdm:userAgent##description##80301"
+                  "meta:titleId": "visit-webpage##xdm:userAgent##title##81741",
+                  "meta:descriptionId": "visit-webpage##xdm:userAgent##description##85531"
                 }
               },
-              "meta:titleId": "visit-webpage##xdm:browserDetails##title##10851",
-              "meta:descriptionId": "visit-webpage##xdm:browserDetails##description##67611"
+              "meta:titleId": "visit-webpage##xdm:browserDetails##title##55581",
+              "meta:descriptionId": "visit-webpage##xdm:browserDetails##description##78211"
             }
           },
-          "meta:titleId": "visit-webpage##xdm:environment##title##58221",
-          "meta:descriptionId": "visit-webpage##xdm:environment##description##81921"
+          "meta:titleId": "visit-webpage##xdm:environment##title##68961",
+          "meta:descriptionId": "visit-webpage##xdm:environment##description##20601"
         },
         "xdm:search": {
           "title": "Search",
@@ -129,19 +129,19 @@
               "title": "Search engine",
               "type": "string",
               "description": "The search engine used by the search.",
-              "meta:titleId": "visit-webpage##xdm:searchEngine##title##80941",
-              "meta:descriptionId": "visit-webpage##xdm:searchEngine##description##1941"
+              "meta:titleId": "visit-webpage##xdm:searchEngine##title##10941",
+              "meta:descriptionId": "visit-webpage##xdm:searchEngine##description##90161"
             },
             "xdm:keywords": {
               "title": "Keywords",
               "type": "string",
               "description": "Keywords for the search.",
-              "meta:titleId": "visit-webpage##xdm:keywords##title##67501",
-              "meta:descriptionId": "visit-webpage##xdm:keywords##description##61901"
+              "meta:titleId": "visit-webpage##xdm:keywords##title##82061",
+              "meta:descriptionId": "visit-webpage##xdm:keywords##description##40811"
             }
           },
-          "meta:titleId": "visit-webpage##xdm:search##title##23651",
-          "meta:descriptionId": "visit-webpage##xdm:search##description##2601"
+          "meta:titleId": "visit-webpage##xdm:search##title##94471",
+          "meta:descriptionId": "visit-webpage##xdm:search##description##33791"
         }
       }
     }
@@ -153,6 +153,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "visit-webpage##title##36511",
-  "meta:descriptionId": "visit-webpage##description##24571"
+  "meta:titleId": "visit-webpage##title##8661",
+  "meta:descriptionId": "visit-webpage##description##69441"
 }

@@ -24,61 +24,61 @@
               "title": "Site section",
               "type": "string",
               "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.",
-              "meta:titleId": "webinfo##xdm:siteSection##title##93021",
-              "meta:descriptionId": "webinfo##xdm:siteSection##description##83981"
+              "meta:titleId": "webinfo##xdm:siteSection##title##52071",
+              "meta:descriptionId": "webinfo##xdm:siteSection##description##50161"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
               "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-              "meta:titleId": "webinfo##xdm:name##title##17901",
-              "meta:descriptionId": "webinfo##xdm:name##description##87841"
+              "meta:titleId": "webinfo##xdm:name##title##12261",
+              "meta:descriptionId": "webinfo##xdm:name##description##10211"
             },
             "xdm:viewName": {
               "title": "View Name",
               "type": "string",
               "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout.",
-              "meta:titleId": "webinfo##xdm:viewName##title##11251",
-              "meta:descriptionId": "webinfo##xdm:viewName##description##86971"
+              "meta:titleId": "webinfo##xdm:viewName##title##86001",
+              "meta:descriptionId": "webinfo##xdm:viewName##description##98181"
             },
             "xdm:URL": {
               "title": "URL",
               "type": "string",
               "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
-              "meta:titleId": "webinfo##xdm:URL##title##68181",
-              "meta:descriptionId": "webinfo##xdm:URL##description##5451"
+              "meta:titleId": "webinfo##xdm:URL##title##54461",
+              "meta:descriptionId": "webinfo##xdm:URL##description##95991"
             },
             "xdm:server": {
               "title": "Server",
               "type": "string",
               "description": "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes.",
-              "meta:titleId": "webinfo##xdm:server##title##49631",
-              "meta:descriptionId": "webinfo##xdm:server##description##1821"
+              "meta:titleId": "webinfo##xdm:server##title##57251",
+              "meta:descriptionId": "webinfo##xdm:server##description##10641"
             },
             "xdm:isErrorPage": {
               "title": "Is error page",
               "type": "boolean",
               "description": "Flag that indicate if the page is error page or not.  Error here is defined by the application, and may nor may not correspond to a page served with an HTTP error code.  This flag is used to broadly categorize web interactions.",
-              "meta:titleId": "webinfo##xdm:isErrorPage##title##73241",
-              "meta:descriptionId": "webinfo##xdm:isErrorPage##description##94661"
+              "meta:titleId": "webinfo##xdm:isErrorPage##title##12981",
+              "meta:descriptionId": "webinfo##xdm:isErrorPage##description##95381"
             },
             "xdm:isHomePage": {
               "title": "Is home page",
               "type": "boolean",
               "description": "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions.",
-              "meta:titleId": "webinfo##xdm:isHomePage##title##14431",
-              "meta:descriptionId": "webinfo##xdm:isHomePage##description##5271"
+              "meta:titleId": "webinfo##xdm:isHomePage##title##26371",
+              "meta:descriptionId": "webinfo##xdm:isHomePage##description##93201"
             },
             "xdm:pageViews": {
               "title": "Page Views",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "View(s) of a webpage has occurred.",
-              "meta:titleId": "webinfo##xdm:pageViews##title##57721",
-              "meta:descriptionId": "webinfo##xdm:pageViews##description##23051"
+              "meta:titleId": "webinfo##xdm:pageViews##title##94891",
+              "meta:descriptionId": "webinfo##xdm:pageViews##description##5961"
             }
           },
-          "meta:titleId": "webinfo##xdm:webPageDetails##title##84291",
-          "meta:descriptionId": "webinfo##xdm:webPageDetails##description##52961"
+          "meta:titleId": "webinfo##xdm:webPageDetails##title##37161",
+          "meta:descriptionId": "webinfo##xdm:webPageDetails##description##80511"
         },
         "xdm:webInteraction": {
           "title": "Web interaction",
@@ -95,33 +95,33 @@
                 "exit": "Exit",
                 "other": "Other"
               },
-              "meta:titleId": "webinfo##xdm:type##title##58661",
-              "meta:descriptionId": "webinfo##xdm:type##description##8611"
+              "meta:titleId": "webinfo##xdm:type##title##97461",
+              "meta:descriptionId": "webinfo##xdm:type##description##61071"
             },
             "xdm:URL": {
               "title": "URL",
               "type": "string",
               "description": "The actual link or URL used for this web interaction.",
-              "meta:titleId": "webinfo##xdm:URL##title##6481",
-              "meta:descriptionId": "webinfo##xdm:URL##description##41771"
+              "meta:titleId": "webinfo##xdm:URL##title##94351",
+              "meta:descriptionId": "webinfo##xdm:URL##description##67031"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
               "description": "The normative name used for this web link, used for classification purposes.",
-              "meta:titleId": "webinfo##xdm:name##title##2551",
-              "meta:descriptionId": "webinfo##xdm:name##description##83011"
+              "meta:titleId": "webinfo##xdm:name##title##12981",
+              "meta:descriptionId": "webinfo##xdm:name##description##68801"
             },
             "xdm:linkClicks": {
               "title": "Link Clicks",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Click of a web link has occurred.",
-              "meta:titleId": "webinfo##xdm:linkClicks##title##93041",
-              "meta:descriptionId": "webinfo##xdm:linkClicks##description##32031"
+              "meta:titleId": "webinfo##xdm:linkClicks##title##97511",
+              "meta:descriptionId": "webinfo##xdm:linkClicks##description##57111"
             }
           },
-          "meta:titleId": "webinfo##xdm:webInteraction##title##43241",
-          "meta:descriptionId": "webinfo##xdm:webInteraction##description##7281"
+          "meta:titleId": "webinfo##xdm:webInteraction##title##3731",
+          "meta:descriptionId": "webinfo##xdm:webInteraction##description##43721"
         },
         "xdm:webReferrer": {
           "title": "Web referrer",
@@ -132,8 +132,8 @@
               "title": "URL",
               "type": "string",
               "description": "The referrer URL.",
-              "meta:titleId": "webinfo##xdm:URL##title##71921",
-              "meta:descriptionId": "webinfo##xdm:URL##description##56591"
+              "meta:titleId": "webinfo##xdm:URL##title##20821",
+              "meta:descriptionId": "webinfo##xdm:URL##description##78731"
             },
             "xdm:type": {
               "title": "Type",
@@ -159,12 +159,12 @@
                 "unknown": "Unknown",
                 "news": "Usenet newsgroup"
               },
-              "meta:titleId": "webinfo##xdm:type##title##56001",
-              "meta:descriptionId": "webinfo##xdm:type##description##5491"
+              "meta:titleId": "webinfo##xdm:type##title##46801",
+              "meta:descriptionId": "webinfo##xdm:type##description##39671"
             }
           },
-          "meta:titleId": "webinfo##xdm:webReferrer##title##98611",
-          "meta:descriptionId": "webinfo##xdm:webReferrer##description##64371"
+          "meta:titleId": "webinfo##xdm:webReferrer##title##24691",
+          "meta:descriptionId": "webinfo##xdm:webReferrer##description##16611"
         }
       }
     }
@@ -178,6 +178,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "webinfo##title##28021",
-  "meta:descriptionId": "webinfo##description##98301"
+  "meta:titleId": "webinfo##title##42461",
+  "meta:descriptionId": "webinfo##description##29151"
 }

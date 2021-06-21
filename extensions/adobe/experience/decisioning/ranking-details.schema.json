@@ -18,8 +18,8 @@
           "title": "Order Evaluation",
           "description": "Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.",
           "$ref": "#/definitions/order-evaluation",
-          "meta:titleId": "ranking-details##xdm:order##title##95261",
-          "meta:descriptionId": "ranking-details##xdm:order##description##30031"
+          "meta:titleId": "ranking-details##xdm:order##title##16401",
+          "meta:descriptionId": "ranking-details##xdm:order##description##1451"
         },
         "xdm:priority": {
           "type": "integer",
@@ -27,8 +27,8 @@
           "description": "The priority of a single decision option relative to all other options. Options for which no order function is given are prioritized using this propery. Options with higher priority values are selected before any lower priority options. If two or more qualifying options share the highest priority value, one is chosen at uniform random and used for the decision proposition.",
           "minimum": 0,
           "default": 0,
-          "meta:titleId": "ranking-details##xdm:priority##title##6691",
-          "meta:descriptionId": "ranking-details##xdm:priority##description##151"
+          "meta:titleId": "ranking-details##xdm:priority##title##92891",
+          "meta:descriptionId": "ranking-details##xdm:priority##description##69801"
         }
       }
     },
@@ -39,24 +39,24 @@
           "title": "Order Evaluation Type",
           "enum": ["static", "scoringFunction", "rankingStrategy"],
           "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it.",
-          "meta:titleId": "ranking-details##xdm:orderEvaluationType##title##96741",
-          "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##74131"
+          "meta:titleId": "ranking-details##xdm:orderEvaluationType##title##51571",
+          "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##63271"
         },
         "xdm:function": {
           "type": "string",
           "format": "uri-reference",
           "title": "Scoring Function",
           "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function",
-          "meta:titleId": "ranking-details##xdm:function##title##77041",
-          "meta:descriptionId": "ranking-details##xdm:function##description##55021"
+          "meta:titleId": "ranking-details##xdm:function##title##86541",
+          "meta:descriptionId": "ranking-details##xdm:function##description##201"
         },
         "xdm:rankingStrategy": {
           "type": "string",
           "format": "uri-reference",
           "title": "Ranking Strategy",
           "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy",
-          "meta:titleId": "ranking-details##xdm:rankingStrategy##title##94641",
-          "meta:descriptionId": "ranking-details##xdm:rankingStrategy##description##25521"
+          "meta:titleId": "ranking-details##xdm:rankingStrategy##title##53491",
+          "meta:descriptionId": "ranking-details##xdm:rankingStrategy##description##87091"
         }
       }
     }
@@ -67,6 +67,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "ranking-details##title##99001",
-  "meta:descriptionId": "ranking-details##description##45491"
+  "meta:titleId": "ranking-details##title##2081",
+  "meta:descriptionId": "ranking-details##description##22111"
 }

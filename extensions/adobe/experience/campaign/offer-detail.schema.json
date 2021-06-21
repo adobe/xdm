@@ -23,8 +23,8 @@
           "format": "uri",
           "title": "Eligibility Rule",
           "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule",
-          "meta:titleId": "offer-detail##xdm:eligibilityRule##title##81891",
-          "meta:descriptionId": "offer-detail##xdm:eligibilityRule##description##89661"
+          "meta:titleId": "offer-detail##xdm:eligibilityRule##title##11261",
+          "meta:descriptionId": "offer-detail##xdm:eligibilityRule##description##92701"
         }
       }
     }
@@ -38,6 +38,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "offer-detail##title##81151",
-  "meta:descriptionId": "offer-detail##description##85941"
+  "meta:titleId": "offer-detail##title##5121",
+  "meta:descriptionId": "offer-detail##description##60141"
 }

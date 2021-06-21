@@ -23,8 +23,8 @@
           "title": "Portfolio Name",
           "type": "string",
           "description": "Name of the Portfolio.",
-          "meta:titleId": "portfolio##xdm:portfolioName##title##27451",
-          "meta:descriptionId": "portfolio##xdm:portfolioName##description##53391"
+          "meta:titleId": "portfolio##xdm:portfolioName##title##90751",
+          "meta:descriptionId": "portfolio##xdm:portfolioName##description##93781"
         },
         "xdm:billingState": {
           "title": "Portfolio Billing State",
@@ -34,22 +34,22 @@
             "Managed": "Client will be billed for the spend from this portfolio",
             "Not Managed": "Client will not be billed for the spend from this portfolio"
           },
-          "meta:titleId": "portfolio##xdm:billingState##title##53451",
-          "meta:descriptionId": "portfolio##xdm:billingState##description##73021"
+          "meta:titleId": "portfolio##xdm:billingState##title##89081",
+          "meta:descriptionId": "portfolio##xdm:billingState##description##47681"
         },
         "xdm:portfolioGroupId": {
           "title": "Portfolio Group Identifier",
           "type": "string",
           "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
-          "meta:titleId": "portfolio##xdm:portfolioGroupId##title##49901",
-          "meta:descriptionId": "portfolio##xdm:portfolioGroupId##description##7231"
+          "meta:titleId": "portfolio##xdm:portfolioGroupId##title##94571",
+          "meta:descriptionId": "portfolio##xdm:portfolioGroupId##description##98101"
         },
         "xdm:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
           "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
-          "meta:titleId": "portfolio##xdm:portfolioGroupName##title##12281",
-          "meta:descriptionId": "portfolio##xdm:portfolioGroupName##description##12221"
+          "meta:titleId": "portfolio##xdm:portfolioGroupName##title##88591",
+          "meta:descriptionId": "portfolio##xdm:portfolioGroupName##description##15721"
         }
       }
     }
@@ -66,6 +66,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "portfolio##title##29391",
-  "meta:descriptionId": "portfolio##description##96381"
+  "meta:titleId": "portfolio##title##56211",
+  "meta:descriptionId": "portfolio##description##65661"
 }

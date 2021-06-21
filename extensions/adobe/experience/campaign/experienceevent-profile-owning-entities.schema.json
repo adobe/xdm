@@ -29,22 +29,22 @@
                   "title": "Organizational Unit",
                   "$ref": "https://ns.adobe.com/xdm/common/orgunit",
                   "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
-                  "meta:titleId": "experienceevent-profile-owning-entities##xdm:orgUnit##title##70491",
-                  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:orgUnit##description##41291"
+                  "meta:titleId": "experienceevent-profile-owning-entities##xdm:orgUnit##title##46991",
+                  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:orgUnit##description##10601"
                 },
                 "xdm:geoUnit": {
                   "title": "Geographical Unit",
                   "$ref": "https://ns.adobe.com/xdm/common/geounit",
                   "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
-                  "meta:titleId": "experienceevent-profile-owning-entities##xdm:geoUnit##title##14061",
-                  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:geoUnit##description##69031"
+                  "meta:titleId": "experienceevent-profile-owning-entities##xdm:geoUnit##title##4461",
+                  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:geoUnit##description##6481"
                 }
               },
-              "meta:titleId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##title##58951",
-              "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##description##74741"
+              "meta:titleId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##title##40511",
+              "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##description##87171"
             }
           },
-          "meta:titleId": "experienceevent-profile-owning-entities##https://ns.adobe.com/experience/campaign/message##title##80301"
+          "meta:titleId": "experienceevent-profile-owning-entities##https://ns.adobe.com/experience/campaign/message##title##11351"
         }
       }
     }
@@ -55,6 +55,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-profile-owning-entities##title##30921",
-  "meta:descriptionId": "experienceevent-profile-owning-entities##description##29441"
+  "meta:titleId": "experienceevent-profile-owning-entities##title##22921",
+  "meta:descriptionId": "experienceevent-profile-owning-entities##description##90041"
 }

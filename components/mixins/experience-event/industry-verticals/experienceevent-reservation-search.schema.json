@@ -30,29 +30,29 @@
               "title": "Coupon Code",
               "type": "string",
               "description": "Coupon/promo code string used in a reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:couponCode##title##36801",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:couponCode##description##71251"
+              "meta:titleId": "experienceevent-reservation-search##xdm:couponCode##title##62181",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:couponCode##description##80371"
             },
             "xdm:groupCode": {
               "title": "Group Code",
               "type": "string",
               "description": "Group code string used in a reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:groupCode##title##67221",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:groupCode##description##27051"
+              "meta:titleId": "experienceevent-reservation-search##xdm:groupCode##title##86071",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:groupCode##description##10611"
             },
             "xdm:isFlexible": {
               "title": "Reservation Search Is Flexibile",
               "type": "boolean",
               "description": "Tracks if a visitor selects a flexible date option for their reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:isFlexible##title##57341",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:isFlexible##description##71421"
+              "meta:titleId": "experienceevent-reservation-search##xdm:isFlexible##title##29151",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:isFlexible##description##54671"
             },
             "xdm:productCode": {
               "title": "Corporate Code",
               "type": "string",
               "description": "Corporate code string used in a reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:productCode##title##55181",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:productCode##description##83341"
+              "meta:titleId": "experienceevent-reservation-search##xdm:productCode##title##15131",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:productCode##description##63231"
             },
             "xdm:rateType": {
               "title": "Rate Type",
@@ -65,31 +65,31 @@
                 "corporate"
               ],
               "description": "Type of rate included in a reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:rateType##title##68461",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##22251"
+              "meta:titleId": "experienceevent-reservation-search##xdm:rateType##title##19861",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##12111"
             },
             "xdm:startDate": {
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
               "description": "The start pick-up/outbound/check-in date of the reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:startDate##title##45761",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:startDate##description##45321"
+              "meta:titleId": "experienceevent-reservation-search##xdm:startDate##title##40941",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:startDate##description##44861"
             },
             "xdm:endDate": {
               "title": "End Date",
               "type": "string",
               "format": "date-time",
               "description": "The end drop-off/return/check-out date of the reservation search.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:endDate##title##811",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:endDate##description##60441"
+              "meta:titleId": "experienceevent-reservation-search##xdm:endDate##title##65391",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:endDate##description##81671"
             },
             "xdm:reservationSearch": {
               "title": "Site Search",
               "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
               "description": "Extension of internalSearch data type.",
-              "meta:titleId": "experienceevent-reservation-search##xdm:reservationSearch##title##581",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:reservationSearch##description##79071"
+              "meta:titleId": "experienceevent-reservation-search##xdm:reservationSearch##title##9871",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:reservationSearch##description##92301"
             }
           }
         }
@@ -103,6 +103,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-03-15",
-  "meta:titleId": "experienceevent-reservation-search##title##42771",
-  "meta:descriptionId": "experienceevent-reservation-search##description##99691"
+  "meta:titleId": "experienceevent-reservation-search##title##76361",
+  "meta:descriptionId": "experienceevent-reservation-search##description##26301"
 }

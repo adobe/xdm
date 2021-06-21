@@ -20,15 +20,15 @@
           "title": "Opportunity Stage",
           "description": "Current stage of a business opportunity.",
           "type": "string",
-          "meta:titleId": "bizible-opportunity-details##bizible:stage##title##63331",
-          "meta:descriptionId": "bizible-opportunity-details##bizible:stage##description##90641"
+          "meta:titleId": "bizible-opportunity-details##bizible:stage##title##33921",
+          "meta:descriptionId": "bizible-opportunity-details##bizible:stage##description##48411"
         },
         "bizible:stagePrevious": {
           "title": "Opportunity Previous Stage",
           "description": "Previous stage of a business opportunity.",
           "type": "string",
-          "meta:titleId": "bizible-opportunity-details##bizible:stagePrevious##title##46861",
-          "meta:descriptionId": "bizible-opportunity-details##bizible:stagePrevious##description##38221"
+          "meta:titleId": "bizible-opportunity-details##bizible:stagePrevious##title##53271",
+          "meta:descriptionId": "bizible-opportunity-details##bizible:stagePrevious##description##30411"
         }
       }
     }
@@ -39,6 +39,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "bizible-opportunity-details##title##81871",
-  "meta:descriptionId": "bizible-opportunity-details##description##77081"
+  "meta:titleId": "bizible-opportunity-details##title##39021",
+  "meta:descriptionId": "bizible-opportunity-details##description##39581"
 }

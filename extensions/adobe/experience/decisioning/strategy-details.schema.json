@@ -25,23 +25,23 @@
             "ranking": "Ranking Function",
             "capping": "Capping Counter"
           },
-          "meta:titleId": "strategy-details##xdm:step##title##63091",
-          "meta:descriptionId": "strategy-details##xdm:step##description##28851"
+          "meta:titleId": "strategy-details##xdm:step##title##39671",
+          "meta:descriptionId": "strategy-details##xdm:step##description##55671"
         },
         "xdm:strategyID": {
           "type": "string",
           "title": "Step's Strategy Identifier",
           "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result.",
-          "meta:titleId": "strategy-details##xdm:strategyID##title##48501",
-          "meta:descriptionId": "strategy-details##xdm:strategyID##description##95201"
+          "meta:titleId": "strategy-details##xdm:strategyID##title##72871",
+          "meta:descriptionId": "strategy-details##xdm:strategyID##description##35351"
         },
         "xdm:algorithmID": {
           "title": "Algorithm Identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "Unique identifier for the algorithm used to make the decision, if applicable.",
-          "meta:titleId": "strategy-details##xdm:algorithmID##title##13431",
-          "meta:descriptionId": "strategy-details##xdm:algorithmID##description##55651"
+          "meta:titleId": "strategy-details##xdm:algorithmID##title##81061",
+          "meta:descriptionId": "strategy-details##xdm:algorithmID##description##9551"
         },
         "xdm:trafficType": {
           "title": "Traffic Type",
@@ -52,8 +52,8 @@
             "contextual": "Contextual Traffic",
             "noncontextual": "Non-Contextual Traffic"
           },
-          "meta:titleId": "strategy-details##xdm:trafficType##title##28721",
-          "meta:descriptionId": "strategy-details##xdm:trafficType##description##63121"
+          "meta:titleId": "strategy-details##xdm:trafficType##title##81151",
+          "meta:descriptionId": "strategy-details##xdm:trafficType##description##66371"
         }
       }
     }
@@ -67,6 +67,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "strategy-details##title##25091",
-  "meta:descriptionId": "strategy-details##description##34321"
+  "meta:titleId": "strategy-details##title##76091",
+  "meta:descriptionId": "strategy-details##description##52401"
 }

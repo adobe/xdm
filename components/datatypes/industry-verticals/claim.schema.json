@@ -18,38 +18,38 @@
           "title": "Claim ID",
           "type": "string",
           "description": "Unique identifier for the claim.",
-          "meta:titleId": "claim##xdm:ID##title##37321",
-          "meta:descriptionId": "claim##xdm:ID##description##4131"
+          "meta:titleId": "claim##xdm:ID##title##82181",
+          "meta:descriptionId": "claim##xdm:ID##description##75661"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date-time",
           "description": "Date the claim was successfully submitted.",
-          "meta:titleId": "claim##xdm:startDate##title##58301",
-          "meta:descriptionId": "claim##xdm:startDate##description##85041"
+          "meta:titleId": "claim##xdm:startDate##title##55471",
+          "meta:descriptionId": "claim##xdm:startDate##description##45021"
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
           "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the claim for any given point in the application process.",
-          "meta:titleId": "claim##xdm:status##title##68701",
-          "meta:descriptionId": "claim##xdm:status##description##10401"
+          "meta:titleId": "claim##xdm:status##title##32201",
+          "meta:descriptionId": "claim##xdm:status##description##73921"
         },
         "xdm:policyID": {
           "title": "Policy ID",
           "type": "string",
           "description": "Policy Identifier.",
-          "meta:titleId": "claim##xdm:policyID##title##7461",
-          "meta:descriptionId": "claim##xdm:policyID##description##62741"
+          "meta:titleId": "claim##xdm:policyID##title##60341",
+          "meta:descriptionId": "claim##xdm:policyID##description##13291"
         },
         "xdm:benefitAmount": {
           "title": "Benefit Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Captures the benefit amount.",
-          "meta:titleId": "claim##xdm:benefitAmount##title##30071",
-          "meta:descriptionId": "claim##xdm:benefitAmount##description##27091"
+          "meta:titleId": "claim##xdm:benefitAmount##title##76281",
+          "meta:descriptionId": "claim##xdm:benefitAmount##description##45531"
         }
       }
     }
@@ -61,6 +61,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "claim##title##26421",
-  "meta:descriptionId": "claim##description##33971"
+  "meta:titleId": "claim##title##78541",
+  "meta:descriptionId": "claim##description##58601"
 }

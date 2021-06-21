@@ -27,328 +27,328 @@
               "title": "entrance",
               "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/entrance##title##86131",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/entrance##description##44251"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/entrance##title##96501",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/entrance##description##951"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/reentrance": {
               "title": "reentrance",
               "description": "Set to true of the initial step event for this journey entrance has been triggered by a profile that has already finished one journey instance and is re-entering new journey instance.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reentrance##title##50551",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reentrance##description##4221"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reentrance##title##92421",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reentrance##description##78581"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": {
               "title": "instanceEnded",
               "description": "True if the current step led to ending an instance of the journey, that is the last step in a journey for a given profile was executed successfully.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceEnded##title##93191",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceEnded##description##94951"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceEnded##title##78441",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceEnded##description##47781"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/eventID": {
               "title": "eventID",
               "description": "If the step was triggered by an external event, this field will contain the eventID used by journey runtime to identify the event.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventID##title##17171",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventID##description##91211"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventID##title##55421",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventID##description##49601"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/nodeID": {
               "title": "nodeID",
               "description": "GUID of the node as generated on the journey canvas corresponding to this step(multiple steps can map to the same node).",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeID##title##68461",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeID##description##62331"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeID##title##38041",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeID##description##82931"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/stepID": {
               "title": "stepID",
               "description": "GUID corresponding to each step generated. Unique across all steps.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepID##title##66371",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepID##description##75791"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepID##title##31361",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepID##description##42721"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/stepName": {
               "title": "stepName",
               "description": "Name of the step as represented internally in Journey Runtime.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepName##title##86841",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepName##description##1311"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepName##title##64471",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepName##description##12861"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/stepType": {
               "title": "stepType",
               "description": "Defines different types of steps as represented internally by Journey Runtime. Possible Values: ActionStep(Default Step Type),ConditionalRouterStep(If step involved evaluating a condition),SegmentTriggerReadStartStep(If the current step started the segmentTriggeredRead).",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepType##title##75081",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepType##description##32191"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepType##title##79791",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepType##description##86311"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": {
               "title": "stepStatus",
               "description": "Gives the current state of the step that has finished executing. Possible Values: Transitions(Next step will occur on an event transition),EndStep(The last step in this journey instance has executed),Error(This step encountered an error condition, ending the current journey instance), TimedOut(The current step has ended because of a timeout on a fetch or on an action.)",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepStatus##title##19971",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepStatus##description##5051"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepStatus##title##33901",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepStatus##description##73461"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyID": {
               "title": "journeyID",
               "description": "GUID generated to uniquely identify an authored journey inside the JO Runtime.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##title##46991",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##description##5091"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##title##85401",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##description##1501"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": {
               "title": "journeyVersionID",
               "description": "GUID generated to uniquely identify a journey on the authored UI. A new journey version ID is generated if a journey is duplicated or its new version is published.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##title##84571",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##98571"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##title##7471",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##70111"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": {
               "title": "journeyVersionName",
               "description": "Name of the journey as shown on the authoring UI.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName##title##65061",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName##description##67531"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName##title##41651",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName##description##39751"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersion": {
               "title": "journeyVersion",
               "description": "The authored version of the journey. E.g: 1.0, 2.0.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersion##title##18121",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersion##description##62831"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersion##title##80621",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersion##description##35641"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceID": {
               "title": "instanceID",
               "description": "GUID for each instance of the journey. For each profile entering a journey, a new instance is created.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceID##title##83751",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceID##description##72931"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceID##title##42571",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceID##description##81621"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/externalKey": {
               "title": "externalKey",
               "description": "Contains the profileID of the profile the current unitary journey instance is executing for. This field was added to support ID’s other than AEP Profile.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/externalKey##title##79581",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/externalKey##description##53881"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/externalKey##title##72271",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/externalKey##description##13221"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentStepID": {
               "title": "parentStepID",
               "description": "stepID of the previous step in the current journey instance.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepID##title##98431",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepID##description##64991"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepID##title##83521",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepID##description##14031"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentStepName": {
               "title": "parentStepName",
               "description": "stepName of the previous step in the current journey instance.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepName##title##84871",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepName##description##64591"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepName##title##70481",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepName##description##83891"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID": {
               "title": "parentTransitionID",
               "description": "Contains the transitionID of the transition that led to the current step. Set to “on-error” if the transition to the current step was because of an error.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID##title##54961",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID##description##48181"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID##title##86921",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID##description##71761"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName": {
               "title": "parentTransitionName",
               "description": "Name of the transition which has brought the instance to the processed step.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName##title##35471",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName##description##64801"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName##title##45441",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName##description##37641"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/inTest": {
               "title": "inTest",
               "description": "True if the journey instance was executed in test mode. ",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##title##15631",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##description##32901"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##title##22641",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##description##80291"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/processingTime": {
               "title": "processingTime",
               "description": "Time(ms) taken to complete the processing of this step.",
               "type": "integer",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##2201",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##68701"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##21721",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##88641"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceType": {
               "title": "instanceType",
               "description": "Specifies if the journey instance corresponds Unitary(a single profile) or Batch(a journey instance executes a batch of profiles, E.g: Read Segment Journey).",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceType##title##97111",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceType##description##2861"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceType##title##1851",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceType##description##49611"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": {
               "title": "batchRecurrenceIndex",
               "description": "A counter that increases by 1 each time a batch journey is invoked. Likewise in case of business events, it will show the E.g: If a freshly authored scheduled journey runs at 8.00am,then batchRecurrenceIndex=1 and then at 10.00am, then batchRecurrenceIndex=2.",
               "type": "integer",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex##title##89371",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex##description##67621"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex##title##46471",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex##description##34151"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary": {
               "meta:status": "deprecated",
               "title": "batchToUnitary",
               "description": "(Deprecated)Indicates if this unitary instance has been triggered from a batch instance.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary##title##33881",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary##description##29731"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary##title##67011",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary##description##72191"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey": {
               "title": "batchExternalKey",
               "description": "Journey Version ID in case of scheduled, business key in case of the business event journey (productId in case of a journey triggered by a business event). This field is only available in the context of the unitary step.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey##title##79571",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey##description##72651"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey##title##58371",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey##description##56871"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID": {
               "title": "batchInstanceID",
               "description": "GUID created at invocation of each new batch instance for a journey. E.g: If a scheduled journey runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##title##97291",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##description##99621"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##title##38491",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##description##4381"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID": {
               "meta:status": "deprecated",
               "title": "batchUnitaryBranchID",
               "description": "(Deprecated) If the instance has been triggered from a batch instance, unitary branch ID.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID##title##96611",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID##description##65101"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID##title##7811",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID##description##13331"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/nodeName": {
               "title": "nodeName",
               "description": "Name of the node corresponding to this step as visible on the Canvas. ",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeName##title##26881",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeName##description##50981"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeName##title##46201",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeName##description##84051"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": {
               "title": "journeyNodeProcessed",
               "description": "A node authored on the journey canvas can be expanded to multiple nodes inside the JO Runtime. This field is set to True when all the steps related to a journey node on canvas have been successfully processed inside the JO Runtime.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed##title##54971",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed##description##57661"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed##title##60591",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed##description##17971"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": {
               "title": "eventProcessed",
               "description": "Set to true when the step event corresponding to the external event has been processed fully. The presence of this field denotes that the event node in the journey canvas has been processed fully.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventProcessed##title##79431",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventProcessed##description##2531"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventProcessed##title##11021",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventProcessed##description##65431"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": {
               "title": "originJumpJourneyID",
               "description": "JourneyID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID##title##66141",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID##description##93651"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID##title##28791",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID##description##90001"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": {
               "title": "originJumpJourneyVersionID",
               "description": "JourneyVersionID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID##title##12921",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID##description##96061"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID##title##67421",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID##description##55391"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": {
               "title": "originJumpJourneyInstanceID",
               "description": "JourneyInstanceID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID##title##54911",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID##description##76121"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID##title##14771",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID##description##4611"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": {
               "title": "previousJumpJourneyID",
               "description": "JourneyID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID##title##70381",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID##description##6221"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID##title##46061",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID##description##27731"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID": {
               "title": "previousJumpJourneyVersionID",
               "description": "JourneyVersionID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID##title##77841",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID##description##64201"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID##title##20991",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID##description##8361"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID": {
               "title": "previousJumpJourneyInstanceID",
               "description": "JourneyInstanceID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID##title##97801",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID##description##34521"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID##title##2571",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID##description##37561"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": {
               "title": "reactionActionID",
               "description": "actionID of corresponding action to which the reaction occurred. Present if the current step is triggered as a result of a reaction.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionActionID##title##44301",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionActionID##description##71931"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionActionID##title##10251",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionActionID##description##28121"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": {
               "title": "reactionChannel",
               "description": "Channel of the corresponding reaction. E.g: Email, Push",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionChannel##title##44441",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionChannel##description##21501"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionChannel##title##21391",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionChannel##description##16101"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": {
               "title": "reactionInteractionType",
               "description": "The user interaction that led to this reaction. E.g: Open, Click.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType##title##27761",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType##description##97091"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType##title##60861",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType##description##36291"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": {
               "title": "parentTransitionType",
               "description": "Whether the transition to current step occurred because of an event, action or normal flow. Possible Values:Event Triggered(if an event trigger led to the current step),Condition Triggered (if a condition evaluation led to the current step),Basic(if the current step occurred normallly as the next step in the journey).",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType##title##48911",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType##description##32741"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType##title##58821",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType##description##94291"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/nodeType": {
               "title": "nodeType",
               "description": "Type of the node as authored on the canvas. E.g: action, segmentTrigger, end. There is a sentinel node before the initial node of the authored journey for which nodeType=start.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeType##title##70811",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeType##description##55841"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeType##title##37951",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeType##description##24671"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": {
               "title": "parentNodeID",
               "description": "nodeID of the previous step in the current journey instance.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeID##title##81591",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeID##description##83961"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeID##title##77071",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeID##description##30291"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": {
               "title": "parentNodeType",
               "description": "nodeType of the previous step in the current journey instance.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeType##title##40411",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeType##description##8501"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeType##title##79801",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeType##description##10801"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": {
               "title": "parentNodeName",
               "description": "nodeName of the previous step in the current journey instance.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeName##title##67601",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeName##description##43531"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeName##title##74311",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeName##description##91051"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": {
               "title": "isExternalEvent",
               "description": "Set to true when the event that triggered this step was external to JO.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent##title##94921",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent##description##5261"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent##title##96931",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent##description##50141"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/eventName": {
               "title": "eventName",
               "description": "If the step was triggered by an external event, this field will contain the name of the event authored on Journey Canvas.",
               "type": "string",
-              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##title##97521",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##85461"
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##title##49061",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##91201"
             }
           },
-          "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##95161"
+          "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##59771"
         }
       }
     }
@@ -359,6 +359,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "journeyStepEventCommonFields##title##4531",
-  "meta:descriptionId": "journeyStepEventCommonFields##description##56011"
+  "meta:titleId": "journeyStepEventCommonFields##title##83991",
+  "meta:descriptionId": "journeyStepEventCommonFields##description##50291"
 }

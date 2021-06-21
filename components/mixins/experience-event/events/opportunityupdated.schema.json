@@ -29,8 +29,8 @@
               "title": "Opportunity ID",
               "type": "string",
               "description": "Unique ID of the Opportunity",
-              "meta:titleId": "opportunityupdated##xdm:opportunityID##title##32391",
-              "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##39801"
+              "meta:titleId": "opportunityupdated##xdm:opportunityID##title##69011",
+              "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##2251"
             },
             "xdm:dataValueChanges": {
               "title": "Data Value Changes",
@@ -43,30 +43,30 @@
                     "title": "Attribute Name",
                     "type": "string",
                     "description": "Attribute that was updated",
-                    "meta:titleId": "opportunityupdated##xdm:attributeName##title##96271",
-                    "meta:descriptionId": "opportunityupdated##xdm:attributeName##description##76961"
+                    "meta:titleId": "opportunityupdated##xdm:attributeName##title##93161",
+                    "meta:descriptionId": "opportunityupdated##xdm:attributeName##description##29211"
                   },
                   "xdm:newValue": {
                     "title": "New Value",
                     "type": "string",
                     "description": "New value of updated attribute",
-                    "meta:titleId": "opportunityupdated##xdm:newValue##title##38261",
-                    "meta:descriptionId": "opportunityupdated##xdm:newValue##description##10671"
+                    "meta:titleId": "opportunityupdated##xdm:newValue##title##69941",
+                    "meta:descriptionId": "opportunityupdated##xdm:newValue##description##48871"
                   },
                   "xdm:oldValue": {
                     "title": "Old Value",
                     "type": "string",
                     "description": "Previous value of updated attribute",
-                    "meta:titleId": "opportunityupdated##xdm:oldValue##title##77441",
-                    "meta:descriptionId": "opportunityupdated##xdm:oldValue##description##18021"
+                    "meta:titleId": "opportunityupdated##xdm:oldValue##title##7771",
+                    "meta:descriptionId": "opportunityupdated##xdm:oldValue##description##7941"
                   }
                 }
               },
-              "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##34231",
-              "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##39071"
+              "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##34371",
+              "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##7001"
             }
           },
-          "meta:titleId": "opportunityupdated##xdm:opportunityEvent##title##29381"
+          "meta:titleId": "opportunityupdated##xdm:opportunityEvent##title##51641"
         }
       }
     }
@@ -78,6 +78,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "opportunityupdated##title##4751",
-  "meta:descriptionId": "opportunityupdated##description##43591"
+  "meta:titleId": "opportunityupdated##title##65931",
+  "meta:descriptionId": "opportunityupdated##description##25521"
 }

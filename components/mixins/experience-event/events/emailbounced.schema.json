@@ -29,53 +29,53 @@
               "title": "Mailing ID",
               "type": "string",
               "description": "Unique ID of the email asset.",
-              "meta:titleId": "emailbounced##xdm:mailingID##title##26801",
-              "meta:descriptionId": "emailbounced##xdm:mailingID##description##37611"
+              "meta:titleId": "emailbounced##xdm:mailingID##title##98581",
+              "meta:descriptionId": "emailbounced##xdm:mailingID##description##56511"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
               "description": "Friendly name of the email asset.",
-              "meta:titleId": "emailbounced##xdm:mailingName##title##80241",
-              "meta:descriptionId": "emailbounced##xdm:mailingName##description##29691"
+              "meta:titleId": "emailbounced##xdm:mailingName##title##68591",
+              "meta:descriptionId": "emailbounced##xdm:mailingName##description##25041"
             },
             "xdm:emailBouncedCode": {
               "title": "Email Bounced Category",
               "type": "string",
               "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
-              "meta:titleId": "emailbounced##xdm:emailBouncedCode##title##17581",
-              "meta:descriptionId": "emailbounced##xdm:emailBouncedCode##description##53591"
+              "meta:titleId": "emailbounced##xdm:emailBouncedCode##title##13551",
+              "meta:descriptionId": "emailbounced##xdm:emailBouncedCode##description##69361"
             },
             "xdm:emailBouncedDetails": {
               "title": "Email Bounced Details",
               "type": "string",
               "description": "Details of email bounce from the Mail Transfer Agent.",
-              "meta:titleId": "emailbounced##xdm:emailBouncedDetails##title##61741",
-              "meta:descriptionId": "emailbounced##xdm:emailBouncedDetails##description##10691"
+              "meta:titleId": "emailbounced##xdm:emailBouncedDetails##title##94351",
+              "meta:descriptionId": "emailbounced##xdm:emailBouncedDetails##description##94391"
             },
             "xdm:email": {
               "title": "email",
               "type": "string",
               "description": "Recipient's email address.",
-              "meta:titleId": "emailbounced##xdm:email##title##79951",
-              "meta:descriptionId": "emailbounced##xdm:email##description##77591"
+              "meta:titleId": "emailbounced##xdm:email##title##88941",
+              "meta:descriptionId": "emailbounced##xdm:email##description##44901"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
               "description": "Unique ID of the test variant of the email asset.",
-              "meta:titleId": "emailbounced##xdm:testVariantID##title##71051",
-              "meta:descriptionId": "emailbounced##xdm:testVariantID##description##18581"
+              "meta:titleId": "emailbounced##xdm:testVariantID##title##40411",
+              "meta:descriptionId": "emailbounced##xdm:testVariantID##description##78821"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
               "description": "Friendly name of the test variant of the email asset .",
-              "meta:titleId": "emailbounced##xdm:testVariantName##title##88081",
-              "meta:descriptionId": "emailbounced##xdm:testVariantName##description##98811"
+              "meta:titleId": "emailbounced##xdm:testVariantName##title##32481",
+              "meta:descriptionId": "emailbounced##xdm:testVariantName##description##97141"
             }
           },
-          "meta:titleId": "emailbounced##xdm:directMarketing##title##50971"
+          "meta:titleId": "emailbounced##xdm:directMarketing##title##98991"
         }
       }
     }
@@ -87,6 +87,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-12-02",
-  "meta:titleId": "emailbounced##title##61381",
-  "meta:descriptionId": "emailbounced##description##29361"
+  "meta:titleId": "emailbounced##title##29621",
+  "meta:descriptionId": "emailbounced##description##13651"
 }

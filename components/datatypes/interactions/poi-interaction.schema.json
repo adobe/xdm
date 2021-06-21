@@ -19,25 +19,25 @@
           "meta:status": "deprecated",
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
-          "meta:titleId": "poi-interaction##xdm:POIDetail##title##76251",
-          "meta:descriptionId": "poi-interaction##xdm:POIDetail##description##51601"
+          "meta:titleId": "poi-interaction##xdm:POIDetail##title##97471",
+          "meta:descriptionId": "poi-interaction##xdm:POIDetail##description##38741"
         },
         "xdm:poiDetail": {
           "title": "POI detail",
           "description": "Detail of the POI that cause the event.",
           "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
-          "meta:titleId": "poi-interaction##xdm:poiDetail##title##18351",
-          "meta:descriptionId": "poi-interaction##xdm:poiDetail##description##5361"
+          "meta:titleId": "poi-interaction##xdm:poiDetail##title##51281",
+          "meta:descriptionId": "poi-interaction##xdm:poiDetail##description##65881"
         },
         "xdm:poiEntries": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a person has entered the point of interest (POI).",
-          "meta:descriptionId": "poi-interaction##xdm:poiEntries##description##41731"
+          "meta:descriptionId": "poi-interaction##xdm:poiEntries##description##90501"
         },
         "xdm:poiExits": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a person has exited the point of interest (POI).",
-          "meta:descriptionId": "poi-interaction##xdm:poiExits##description##54901"
+          "meta:descriptionId": "poi-interaction##xdm:poiExits##description##53891"
         }
       }
     }
@@ -52,6 +52,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "poi-interaction##title##8371",
-  "meta:descriptionId": "poi-interaction##description##64091"
+  "meta:titleId": "poi-interaction##title##76721",
+  "meta:descriptionId": "poi-interaction##description##96281"
 }

@@ -28,8 +28,8 @@
             "$ref": "#/definitions/proposition-details"
           },
           "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
-          "meta:titleId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##title##19801",
-          "meta:descriptionId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##description##96351"
+          "meta:titleId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##title##35921",
+          "meta:descriptionId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##description##34691"
         }
       }
     },
@@ -44,15 +44,15 @@
           },
           "minItems": 1,
           "uniqueItems": true,
-          "meta:titleId": "decisionevent##xdm:items##title##79741",
-          "meta:descriptionId": "decisionevent##xdm:items##description##6431"
+          "meta:titleId": "decisionevent##xdm:items##title##77301",
+          "meta:descriptionId": "decisionevent##xdm:items##description##80281"
         },
         "xdm:scopeDetails": {
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
           "title": "Decision Scope Snapshot",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
-          "meta:titleId": "decisionevent##xdm:scopeDetails##title##42951",
-          "meta:descriptionId": "decisionevent##xdm:scopeDetails##description##43141"
+          "meta:titleId": "decisionevent##xdm:scopeDetails##title##87111",
+          "meta:descriptionId": "decisionevent##xdm:scopeDetails##description##21231"
         }
       }
     }
@@ -85,6 +85,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "decisionevent##title##7211",
-  "meta:descriptionId": "decisionevent##description##81361"
+  "meta:titleId": "decisionevent##title##47041",
+  "meta:descriptionId": "decisionevent##description##95161"
 }

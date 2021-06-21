@@ -29,43 +29,43 @@
                   "title": "Home Address",
                   "$ref": "https://ns.adobe.com/xdm/common/address",
                   "description": "A home postal address.",
-                  "meta:titleId": "experienceevent-profile-personal-details##xdm:homeAddress##title##961",
-                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homeAddress##description##41631"
+                  "meta:titleId": "experienceevent-profile-personal-details##xdm:homeAddress##title##67741",
+                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homeAddress##description##18721"
                 },
                 "xdm:personalEmail": {
                   "title": "Personal Email",
                   "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
                   "description": "A personal email address.",
-                  "meta:titleId": "experienceevent-profile-personal-details##xdm:personalEmail##title##78081",
-                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:personalEmail##description##35711"
+                  "meta:titleId": "experienceevent-profile-personal-details##xdm:personalEmail##title##68651",
+                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:personalEmail##description##21241"
                 },
                 "xdm:homePhone": {
                   "title": "Home Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                   "description": "Home phone number.",
-                  "meta:titleId": "experienceevent-profile-personal-details##xdm:homePhone##title##2441",
-                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homePhone##description##78601"
+                  "meta:titleId": "experienceevent-profile-personal-details##xdm:homePhone##title##65831",
+                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homePhone##description##52411"
                 },
                 "xdm:mobilePhone": {
                   "title": "Mobile Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                   "description": "Mobile phone number.",
-                  "meta:titleId": "experienceevent-profile-personal-details##xdm:mobilePhone##title##26371",
-                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:mobilePhone##description##17251"
+                  "meta:titleId": "experienceevent-profile-personal-details##xdm:mobilePhone##title##30001",
+                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:mobilePhone##description##19541"
                 },
                 "xdm:faxPhone": {
                   "title": "Fax Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                   "description": "Fax phone number.",
-                  "meta:titleId": "experienceevent-profile-personal-details##xdm:faxPhone##title##6081",
-                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:faxPhone##description##40431"
+                  "meta:titleId": "experienceevent-profile-personal-details##xdm:faxPhone##title##86751",
+                  "meta:descriptionId": "experienceevent-profile-personal-details##xdm:faxPhone##description##48171"
                 }
               },
-              "meta:titleId": "experienceevent-profile-personal-details##xdm:profileSnapshot##title##96251",
-              "meta:descriptionId": "experienceevent-profile-personal-details##xdm:profileSnapshot##description##92731"
+              "meta:titleId": "experienceevent-profile-personal-details##xdm:profileSnapshot##title##33171",
+              "meta:descriptionId": "experienceevent-profile-personal-details##xdm:profileSnapshot##description##32641"
             }
           },
-          "meta:titleId": "experienceevent-profile-personal-details##https://ns.adobe.com/experience/campaign/message##title##72511"
+          "meta:titleId": "experienceevent-profile-personal-details##https://ns.adobe.com/experience/campaign/message##title##47671"
         }
       }
     }
@@ -76,6 +76,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-profile-personal-details##title##31831",
-  "meta:descriptionId": "experienceevent-profile-personal-details##description##71011"
+  "meta:titleId": "experienceevent-profile-personal-details##title##8981",
+  "meta:descriptionId": "experienceevent-profile-personal-details##description##14551"
 }

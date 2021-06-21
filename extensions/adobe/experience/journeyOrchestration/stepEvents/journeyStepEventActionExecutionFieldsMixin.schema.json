@@ -27,105 +27,105 @@
               "title": "actionID",
               "description": "GUID generated when the action is first authored on the JO canvas. Replicating the same action indirectly, by means of duplicating the journey or publishing a new version does not generate a new actionID.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##title##5041",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##description##12941"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##title##59001",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##description##3261"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionName": {
               "title": "actionName",
               "description": "Name of the action as it appears on the Journey Canvas, if the action is internal to JO Runtime, then action name is set to stepName field.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##title##92061",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##description##75801"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##title##95321",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##description##61451"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionType": {
               "title": "actionType",
               "description": "Denotes the action channel invoked. E.g: Email, SMS, customHttp",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##title##43241",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##description##46781"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##title##79681",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##description##82831"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized": {
               "title": "actionParameterized",
               "description": "True if the journey runtime passed in dynamic values retrieved at runtime to successfully execute the action. E.g: This field will be set to true, if a custom http action requires some values from external data sources for successful execution.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##title##19031",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##description##62461"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##title##13831",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##description##101"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime": {
               "title": "actionExecutionTime",
               "description": "Time(ms) inside Journey Engine to call the necessary APIs to execute the action.",
               "type": "integer",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##title##83231",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##description##80411"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##title##72011",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##description##53581"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError": {
               "title": "actionExecutionError",
               "description": "Error condition that prevented Journey Runtime from executing the action. E.g: timeout on the action step, capping on the action API etc, http error. ",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##title##59711",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##description##98841"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##title##78781",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##description##41271"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode": {
               "title": "actionExecutionErrorCode",
               "description": "Error code corresponding to actionExecutionError.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##title##66701",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##description##91661"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##title##74701",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##description##27111"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError": {
               "title": "actionExecutionOriginError",
               "description": "In case of timeout or http error, the latest API response message. E.g: invalid payload, internal server error.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##title##19431",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##description##16391"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##title##78711",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##description##49701"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode": {
               "title": "actionExecutionOriginCode",
               "description": "Error code corresponding to actionExecutionOriginError.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##title##93541",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##description##61991"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##title##34191",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##description##56721"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType": {
               "title": "actionBusinessType",
               "description": "The business solution powering the executed action. E.g: ACC, Epsilon. ",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##title##9451",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##description##10351"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##title##99331",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##description##76371"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID": {
               "meta:status": "deprecated",
               "title": "deliveryJobID",
               "description": "(Deprecated).This describes the delivery Job Id for the batch Journey.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID##title##65641",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID##description##45771"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID##title##8501",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID##description##11321"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID": {
               "meta:status": "deprecated",
               "title": "batchDeliveryID",
               "description": "(Deprecated).This describes the delivery Id for the batch Journey.",
               "type": "string",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID##title##49281",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID##description##6481"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID##title##13991",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID##description##51111"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger": {
               "meta:status": "deprecated",
               "title": "fromSegmentTrigger",
               "description": "(Deprecated).This describes if the Batch Journey triggered from Audisence Segment.",
               "type": "boolean",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger##title##34271",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger##description##61181"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger##title##23851",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger##description##32491"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount": {
               "title": "actionSchedulerCount",
               "description": "Number of times the Journey Runtime Scheduler was invoked to fulfil the given journey step. E.g for a Wait step, count of actionSchedulerCount=1",
               "type": "integer",
-              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##title##60981",
-              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##description##85781"
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##title##35031",
+              "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##description##41371"
             }
           },
-          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##40041"
+          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##76181"
         }
       }
     }
@@ -136,6 +136,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "journeyStepEventActionExecutionFields##title##72441",
-  "meta:descriptionId": "journeyStepEventActionExecutionFields##description##70501"
+  "meta:titleId": "journeyStepEventActionExecutionFields##title##74411",
+  "meta:descriptionId": "journeyStepEventActionExecutionFields##description##17121"
 }

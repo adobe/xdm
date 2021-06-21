@@ -19,12 +19,12 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-          "meta:descriptionId": "channel##@id##description##69521"
+          "meta:descriptionId": "channel##@id##description##88391"
         },
         "xdm:typeAtSource": {
           "type": "string",
           "description": "Customer defined custom channel name",
-          "meta:descriptionId": "channel##xdm:typeAtSource##description##2301"
+          "meta:descriptionId": "channel##xdm:typeAtSource##description##22701"
         },
         "xdm:mode": {
           "type": "string",
@@ -35,7 +35,7 @@
             "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
             "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
           },
-          "meta:descriptionId": "channel##xdm:mode##description##28461"
+          "meta:descriptionId": "channel##xdm:mode##description##96411"
         },
         "@type": {
           "type": "string",
@@ -61,7 +61,7 @@
             "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
             "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
           },
-          "meta:descriptionId": "channel##@type##description##36441"
+          "meta:descriptionId": "channel##@type##description##18281"
         },
         "xdm:mediaType": {
           "type": "string",
@@ -71,7 +71,7 @@
             "owned": "Owned",
             "earned": "Earned"
           },
-          "meta:descriptionId": "channel##xdm:mediaType##description##3221"
+          "meta:descriptionId": "channel##xdm:mediaType##description##20531"
         },
         "xdm:mediaAction": {
           "type": "string",
@@ -90,7 +90,7 @@
             "userComplaints": "UserComplaints",
             "subscriptions": "Subscriptions"
           },
-          "meta:descriptionId": "channel##xdm:mediaAction##description##64011"
+          "meta:descriptionId": "channel##xdm:mediaAction##description##6291"
         },
         "xdm:contentTypes": {
           "type": "array",
@@ -98,10 +98,10 @@
             "type": "string",
             "format": "uri",
             "description": "The `@type` of an XDM-defined content type that is supported by this channel.",
-            "meta:descriptionId": "channel##items##description##80771"
+            "meta:descriptionId": "channel##items##description##23761"
           },
           "description": "The content types that this channel can deliver.",
-          "meta:descriptionId": "channel##xdm:contentTypes##description##37471"
+          "meta:descriptionId": "channel##xdm:contentTypes##description##28981"
         },
         "xdm:metricTypes": {
           "type": "array",
@@ -109,10 +109,10 @@
             "type": "string",
             "format": "uri",
             "description": "The `@type` of an XDM-defined metric that is supported by this channel.",
-            "meta:descriptionId": "channel##items##description##45011"
+            "meta:descriptionId": "channel##items##description##62181"
           },
           "description": "The metrics that can be collected in this channel.",
-          "meta:descriptionId": "channel##xdm:metricTypes##description##47221"
+          "meta:descriptionId": "channel##xdm:metricTypes##description##27731"
         },
         "xdm:locationTypes": {
           "type": "array",
@@ -120,10 +120,10 @@
             "type": "string",
             "format": "uri",
             "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain.",
-            "meta:descriptionId": "channel##items##description##98911"
+            "meta:descriptionId": "channel##items##description##46651"
           },
           "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
-          "meta:descriptionId": "channel##xdm:locationTypes##description##99801"
+          "meta:descriptionId": "channel##xdm:locationTypes##description##23451"
         }
       }
     }
@@ -139,6 +139,6 @@
   "required": ["@id"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "channel##title##81531",
-  "meta:descriptionId": "channel##description##6941"
+  "meta:titleId": "channel##title##27321",
+  "meta:descriptionId": "channel##description##82081"
 }

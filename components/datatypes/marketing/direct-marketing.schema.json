@@ -17,105 +17,105 @@
         "xdm:bounces": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Asynchronous messages that have been returned as temporarily undeliverable the receiving system.",
-          "meta:descriptionId": "direct-marketing##xdm:bounces##description##78191"
+          "meta:descriptionId": "direct-marketing##xdm:bounces##description##31921"
         },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Click actions on a message.",
-          "meta:descriptionId": "direct-marketing##xdm:clicks##description##39621"
+          "meta:descriptionId": "direct-marketing##xdm:clicks##description##89901"
         },
         "xdm:mirrorPages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Click on a link in a message to a web hosted mirror page.",
-          "meta:descriptionId": "direct-marketing##xdm:mirrorPages##description##98851"
+          "meta:descriptionId": "direct-marketing##xdm:mirrorPages##description##29201"
         },
         "xdm:nonDeliverables": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Asynchronous messages failed to deliver in a way that indicates that no future delivery attempts will be successful to the address.",
-          "meta:descriptionId": "direct-marketing##xdm:nonDeliverables##description##22671"
+          "meta:descriptionId": "direct-marketing##xdm:nonDeliverables##description##7681"
         },
         "xdm:sends": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Asynchronous messages such as email, SMS, and MMS that have been dispatched to a person's account, address, or device.",
-          "meta:descriptionId": "direct-marketing##xdm:sends##description##91241"
+          "meta:descriptionId": "direct-marketing##xdm:sends##description##78061"
         },
         "xdm:userComplaints": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "User complaint or complaints have been received. This generally occurs when a recipient of a message reports it as spam.",
-          "meta:descriptionId": "direct-marketing##xdm:userComplaints##description##18331"
+          "meta:descriptionId": "direct-marketing##xdm:userComplaints##description##93741"
         },
         "xdm:opens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The direct marketing message such as email, SMS, and push notifications has been opened, swiped, or touched by the recipient.",
-          "meta:descriptionId": "direct-marketing##xdm:opens##description##85631"
+          "meta:descriptionId": "direct-marketing##xdm:opens##description##62651"
         },
         "xdm:unsubscriptions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The recipient of the direct marketing message such as email or newsletters has opted out from receiving them.",
-          "meta:descriptionId": "direct-marketing##xdm:unsubscriptions##description##98381"
+          "meta:descriptionId": "direct-marketing##xdm:unsubscriptions##description##4471"
         },
         "xdm:notSent": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Asynchronous message such as email, SMS, or MMS was not dispatched due to cancellation or expiration of the marketing activity.",
-          "meta:descriptionId": "direct-marketing##xdm:notSent##description##96421"
+          "meta:descriptionId": "direct-marketing##xdm:notSent##description##88111"
         },
         "xdm:offerOpens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Offer in a marketing message such as email, SMS, or push notifications has been opened, swiped, touched or otherwise interacted with by the recipient.",
-          "meta:descriptionId": "direct-marketing##xdm:offerOpens##description##94951"
+          "meta:descriptionId": "direct-marketing##xdm:offerOpens##description##58901"
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The direct marketing message such as push notifications or in-app message has been seen by the end user.",
-          "meta:descriptionId": "direct-marketing##xdm:impressions##description##68221"
+          "meta:descriptionId": "direct-marketing##xdm:impressions##description##61701"
         },
         "xdm:excludes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The recipient of the direct marketing message such as email or push has been excluded due to some typology rules configured like fatigue/blacklisted.",
-          "meta:descriptionId": "direct-marketing##xdm:excludes##description##9231"
+          "meta:descriptionId": "direct-marketing##xdm:excludes##description##32271"
         },
         "xdm:customActions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Action(s) that users can take on custom objects sent as part of a direct marketing message like push notification.",
-          "meta:descriptionId": "direct-marketing##xdm:customActions##description##44011"
+          "meta:descriptionId": "direct-marketing##xdm:customActions##description##42621"
         },
         "xdm:marketingSubscription": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Counter event when a visitor opts-in/subscribes for a direct marketing service.",
-          "meta:descriptionId": "direct-marketing##xdm:marketingSubscription##description##771"
+          "meta:descriptionId": "direct-marketing##xdm:marketingSubscription##description##2351"
         },
         "xdm:unsubscribeReason": {
           "title": "Marketing Service Unsubscribe",
           "description": "Tracks the visitor feedback provided when unsubscribing form a direct marketing service.",
           "type": "string",
-          "meta:titleId": "direct-marketing##xdm:unsubscribeReason##title##64031",
-          "meta:descriptionId": "direct-marketing##xdm:unsubscribeReason##description##4641"
+          "meta:titleId": "direct-marketing##xdm:unsubscribeReason##title##47601",
+          "meta:descriptionId": "direct-marketing##xdm:unsubscribeReason##description##31031"
         },
         "xdm:hashedEmail": {
           "title": "Visitor Hashed Email Address",
           "description": "Captures the encrypted/hashed version of the visitor's email address.",
           "type": "string",
-          "meta:titleId": "direct-marketing##xdm:hashedEmail##title##10521",
-          "meta:descriptionId": "direct-marketing##xdm:hashedEmail##description##51691"
+          "meta:titleId": "direct-marketing##xdm:hashedEmail##title##31371",
+          "meta:descriptionId": "direct-marketing##xdm:hashedEmail##description##2911"
         },
         "xdm:emailVisitorID": {
           "title": "Email Recipient ID",
           "description": "Captures the email recipient ID.",
           "type": "string",
-          "meta:titleId": "direct-marketing##xdm:emailVisitorID##title##90161",
-          "meta:descriptionId": "direct-marketing##xdm:emailVisitorID##description##9631"
+          "meta:titleId": "direct-marketing##xdm:emailVisitorID##title##64171",
+          "meta:descriptionId": "direct-marketing##xdm:emailVisitorID##description##81571"
         },
         "xdm:messageID": {
           "title": "Email Message ID",
           "description": "Captures the email message ID.",
           "type": "string",
-          "meta:titleId": "direct-marketing##xdm:messageID##title##77721",
-          "meta:descriptionId": "direct-marketing##xdm:messageID##description##32081"
+          "meta:titleId": "direct-marketing##xdm:messageID##title##51731",
+          "meta:descriptionId": "direct-marketing##xdm:messageID##description##86191"
         },
         "xdm:emailDelivered": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Counts the total number of email messages delivered.",
-          "meta:descriptionId": "direct-marketing##xdm:emailDelivered##description##59251"
+          "meta:descriptionId": "direct-marketing##xdm:emailDelivered##description##89191"
         }
       }
     }
@@ -130,6 +130,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "direct-marketing##title##56481",
-  "meta:descriptionId": "direct-marketing##description##58861"
+  "meta:titleId": "direct-marketing##title##63381",
+  "meta:descriptionId": "direct-marketing##description##7361"
 }

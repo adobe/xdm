@@ -23,29 +23,29 @@
           "title": "Is ATM Active",
           "type": "boolean",
           "description": "Yes/no if the ATM is currently active.",
-          "meta:titleId": "atm##xdm:isAtmActive##title##8741",
-          "meta:descriptionId": "atm##xdm:isAtmActive##description##19741"
+          "meta:titleId": "atm##xdm:isAtmActive##title##18571",
+          "meta:descriptionId": "atm##xdm:isAtmActive##description##22191"
         },
         "xdm:atmAddress": {
           "title": "ATM Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Physicial address where the ATM is located.",
-          "meta:titleId": "atm##xdm:atmAddress##title##71901",
-          "meta:descriptionId": "atm##xdm:atmAddress##description##6201"
+          "meta:titleId": "atm##xdm:atmAddress##title##15371",
+          "meta:descriptionId": "atm##xdm:atmAddress##description##2791"
         },
         "xdm:atmID": {
           "title": "ATM ID",
           "type": "string",
           "description": "ID associated with the ATM.",
-          "meta:titleId": "atm##xdm:atmID##title##42361",
-          "meta:descriptionId": "atm##xdm:atmID##description##68601"
+          "meta:titleId": "atm##xdm:atmID##title##8501",
+          "meta:descriptionId": "atm##xdm:atmID##description##81451"
         },
         "xdm:atmName": {
           "title": "ATM Name",
           "type": "string",
           "description": "Name associated with the ATM.",
-          "meta:titleId": "atm##xdm:atmName##title##94691",
-          "meta:descriptionId": "atm##xdm:atmName##description##44931"
+          "meta:titleId": "atm##xdm:atmName##title##95901",
+          "meta:descriptionId": "atm##xdm:atmName##description##78771"
         }
       }
     }
@@ -60,6 +60,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-11-19",
-  "meta:titleId": "atm##title##92821",
-  "meta:descriptionId": "atm##description##33801"
+  "meta:titleId": "atm##title##10941",
+  "meta:descriptionId": "atm##description##43011"
 }

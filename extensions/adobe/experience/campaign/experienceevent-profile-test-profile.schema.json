@@ -30,15 +30,15 @@
                   "type": "boolean",
                   "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
                   "default": false,
-                  "meta:titleId": "experienceevent-profile-test-profile##xdm:testProfile##title##76081",
-                  "meta:descriptionId": "experienceevent-profile-test-profile##xdm:testProfile##description##39271"
+                  "meta:titleId": "experienceevent-profile-test-profile##xdm:testProfile##title##76781",
+                  "meta:descriptionId": "experienceevent-profile-test-profile##xdm:testProfile##description##44151"
                 }
               },
-              "meta:titleId": "experienceevent-profile-test-profile##xdm:profileSnapshot##title##36541",
-              "meta:descriptionId": "experienceevent-profile-test-profile##xdm:profileSnapshot##description##28171"
+              "meta:titleId": "experienceevent-profile-test-profile##xdm:profileSnapshot##title##34281",
+              "meta:descriptionId": "experienceevent-profile-test-profile##xdm:profileSnapshot##description##79241"
             }
           },
-          "meta:titleId": "experienceevent-profile-test-profile##https://ns.adobe.com/experience/campaign/message##title##7131"
+          "meta:titleId": "experienceevent-profile-test-profile##https://ns.adobe.com/experience/campaign/message##title##2761"
         }
       }
     }
@@ -49,6 +49,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-profile-test-profile##title##19081",
-  "meta:descriptionId": "experienceevent-profile-test-profile##description##92801"
+  "meta:titleId": "experienceevent-profile-test-profile##title##92481",
+  "meta:descriptionId": "experienceevent-profile-test-profile##description##66831"
 }

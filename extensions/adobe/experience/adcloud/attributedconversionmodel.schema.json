@@ -20,57 +20,57 @@
           "title": "Advertiser Identifier",
           "type": "string",
           "description": "Identifier for the advertiser",
-          "meta:titleId": "attributedconversionmodel##adcloud:advertiserId##title##20081",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:advertiserId##description##68851"
+          "meta:titleId": "attributedconversionmodel##adcloud:advertiserId##title##16631",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:advertiserId##description##87161"
         },
         "adcloud:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name",
-          "meta:titleId": "attributedconversionmodel##adcloud:searchEngineId##title##43371",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:searchEngineId##description##37821"
+          "meta:titleId": "attributedconversionmodel##adcloud:searchEngineId##title##73501",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:searchEngineId##description##45461"
         },
         "adcloud:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign Identifer on the advertising platform",
-          "meta:titleId": "attributedconversionmodel##adcloud:campaignId##title##4501",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:campaignId##description##3281"
+          "meta:titleId": "attributedconversionmodel##adcloud:campaignId##title##71111",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:campaignId##description##51311"
         },
         "adcloud:placementId": {
           "title": "Placement Identifier",
           "type": "string",
           "description": "Placement ID on the dsp advertising platform",
-          "meta:titleId": "attributedconversionmodel##adcloud:placementId##title##10321",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:placementId##description##33851"
+          "meta:titleId": "attributedconversionmodel##adcloud:placementId##title##99441",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:placementId##description##31891"
         },
         "adcloud:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform",
-          "meta:titleId": "attributedconversionmodel##adcloud:adgroupId##title##53991",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:adgroupId##description##46201"
+          "meta:titleId": "attributedconversionmodel##adcloud:adgroupId##title##6381",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:adgroupId##description##75671"
         },
         "adcloud:adId": {
           "title": "Ad Identifier",
           "type": "string",
           "description": "Ad ID on the advertising platform",
-          "meta:titleId": "attributedconversionmodel##adcloud:adId##title##88081",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:adId##description##16941"
+          "meta:titleId": "attributedconversionmodel##adcloud:adId##title##96891",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:adId##description##15051"
         },
         "adcloud:term": {
           "title": "Search Term",
           "type": "string",
           "description": "Search Term that contributed to the conversion",
-          "meta:titleId": "attributedconversionmodel##adcloud:term##title##54811",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:term##description##73441"
+          "meta:titleId": "attributedconversionmodel##adcloud:term##title##48801",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:term##description##14141"
         },
         "adcloud:termId": {
           "title": "Search Term Identifier",
           "type": "string",
           "description": "Search Term ID on the search advertising platform",
-          "meta:titleId": "attributedconversionmodel##adcloud:termId##title##57321",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:termId##description##26651"
+          "meta:titleId": "attributedconversionmodel##adcloud:termId##title##30621",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:termId##description##21441"
         },
         "adcloud:matchType": {
           "title": "Term Match Type",
@@ -112,94 +112,94 @@
             "Dynamic Ad Target": "Dynamic Ad Target",
             "Unknown": "Unknown"
           },
-          "meta:titleId": "attributedconversionmodel##adcloud:matchType##title##32031",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:matchType##description##88721"
+          "meta:titleId": "attributedconversionmodel##adcloud:matchType##title##28011",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:matchType##description##44131"
         },
         "adcloud:propertyName": {
           "title": "Property Name",
           "type": "string",
           "description": "Property Name Configured by Pixel, Analytics, Custom Feeds",
-          "meta:titleId": "attributedconversionmodel##adcloud:propertyName##title##28621",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:propertyName##description##7041"
+          "meta:titleId": "attributedconversionmodel##adcloud:propertyName##title##38191",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:propertyName##description##38191"
         },
         "adcloud:modelName": {
           "title": "Model Name",
           "type": "string",
           "description": "Model that was executed to generate Raw Conversion Count and Sum for the attributed conversion",
           "examples": ["LAST EVENT", "FIRST EVENT", "EVEN"],
-          "meta:titleId": "attributedconversionmodel##adcloud:modelName##title##67811",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:modelName##description##98271"
+          "meta:titleId": "attributedconversionmodel##adcloud:modelName##title##10141",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:modelName##description##64921"
         },
         "adcloud:clickThroughCount": {
           "title": "Click Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for models if trigger event is Click",
-          "meta:titleId": "attributedconversionmodel##adcloud:clickThroughCount##title##74331",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:clickThroughCount##description##30401"
+          "meta:titleId": "attributedconversionmodel##adcloud:clickThroughCount##title##33001",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:clickThroughCount##description##67421"
         },
         "adcloud:clickThroughValue": {
           "title": "Click Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Sum for models if trigger event is Click",
-          "meta:titleId": "attributedconversionmodel##adcloud:clickThroughValue##title##91191",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:clickThroughValue##description##76771"
+          "meta:titleId": "attributedconversionmodel##adcloud:clickThroughValue##title##19761",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:clickThroughValue##description##46871"
         },
         "adcloud:viewThroughCount": {
           "title": "View Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for models if trigger event is Impression",
-          "meta:titleId": "attributedconversionmodel##adcloud:viewThroughCount##title##98181",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:viewThroughCount##description##39551"
+          "meta:titleId": "attributedconversionmodel##adcloud:viewThroughCount##title##21211",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:viewThroughCount##description##97031"
         },
         "adcloud:viewThroughValue": {
           "title": "View Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Sum for models if trigger event is Impression",
-          "meta:titleId": "attributedconversionmodel##adcloud:viewThroughValue##title##97911",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:viewThroughValue##description##76981"
+          "meta:titleId": "attributedconversionmodel##adcloud:viewThroughValue##title##23381",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:viewThroughValue##description##78591"
         },
         "adcloud:clickPlusViewThroughCount": {
           "title": "Click Plus View Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Count for models if trigger event is click but impressions present in path",
-          "meta:titleId": "attributedconversionmodel##adcloud:clickPlusViewThroughCount##title##61121",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:clickPlusViewThroughCount##description##29931"
+          "meta:titleId": "attributedconversionmodel##adcloud:clickPlusViewThroughCount##title##31461",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:clickPlusViewThroughCount##description##27291"
         },
         "adcloud:clickPlusViewThroughValue": {
           "title": "Click Plus View Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Evaluated as Raw Conversion Sum for models if trigger event is click but impressions present in path",
-          "meta:titleId": "attributedconversionmodel##adcloud:clickPlusViewThroughValue##title##61351",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:clickPlusViewThroughValue##description##50271"
+          "meta:titleId": "attributedconversionmodel##adcloud:clickPlusViewThroughValue##title##70681",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:clickPlusViewThroughValue##description##15951"
         },
         "adcloud:viewPlusClickThroughCount": {
           "title": "View Plus Click Through Conversion Count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Count for models if trigger event is impression but clicks present in path",
-          "meta:titleId": "attributedconversionmodel##adcloud:viewPlusClickThroughCount##title##90211",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:viewPlusClickThroughCount##description##56051"
+          "meta:titleId": "attributedconversionmodel##adcloud:viewPlusClickThroughCount##title##71461",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:viewPlusClickThroughCount##description##71311"
         },
         "adcloud:viewPlusClickThroughValue": {
           "title": "View Plus Click Through Conversion Sum",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Raw Conversion Sum for models if trigger event is impression but clicks present in path",
-          "meta:titleId": "attributedconversionmodel##adcloud:viewPlusClickThroughValue##title##21371",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:viewPlusClickThroughValue##description##54281"
+          "meta:titleId": "attributedconversionmodel##adcloud:viewPlusClickThroughValue##title##42541",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:viewPlusClickThroughValue##description##9951"
         },
         "adcloud:conversionType": {
           "title": "Conversion Type",
           "type": "string",
           "description": "Feed Conversion Type the conversion event originated from",
           "enum": ["Feed", "Pixel", "Cross Device"],
-          "meta:titleId": "attributedconversionmodel##adcloud:conversionType##title##38421",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:conversionType##description##98651"
+          "meta:titleId": "attributedconversionmodel##adcloud:conversionType##title##6681",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:conversionType##description##74551"
         },
         "adcloud:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "The device conversion event originated from",
-          "meta:titleId": "attributedconversionmodel##adcloud:device##title##55141",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:device##description##48291"
+          "meta:titleId": "attributedconversionmodel##adcloud:device##title##37861",
+          "meta:descriptionId": "attributedconversionmodel##adcloud:device##description##75811"
         }
       }
     }
@@ -213,6 +213,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "attributedconversionmodel##title##96251",
-  "meta:descriptionId": "attributedconversionmodel##description##79531"
+  "meta:titleId": "attributedconversionmodel##title##98021",
+  "meta:descriptionId": "attributedconversionmodel##description##96041"
 }

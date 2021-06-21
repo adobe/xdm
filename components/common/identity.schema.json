@@ -19,19 +19,19 @@
           "description": "The identity provider that manages this principal.",
           "type": "string",
           "meta:enum": ["ims"],
-          "meta:descriptionId": "identity##xdm:identityProvider##description##87971"
+          "meta:descriptionId": "identity##xdm:identityProvider##description##94761"
         },
         "xdm:id": {
           "description": "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
           "type": "string",
-          "meta:descriptionId": "identity##xdm:id##description##56431"
+          "meta:descriptionId": "identity##xdm:id##description##61471"
         },
         "xdm:type": {
           "type": "string",
           "meta:enum": ["https://ns.adobe.com/xdm/common/user"],
           "format": "uri",
           "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
-          "meta:descriptionId": "identity##xdm:type##description##29331"
+          "meta:descriptionId": "identity##xdm:type##description##23081"
         }
       }
     },
@@ -40,24 +40,24 @@
         "title": "Name",
         "type": "string",
         "description": "Display name.",
-        "meta:titleId": "identity##xdm:displayName##title##10171",
-        "meta:descriptionId": "identity##xdm:displayName##description##40061"
+        "meta:titleId": "identity##xdm:displayName##title##23751",
+        "meta:descriptionId": "identity##xdm:displayName##description##15421"
       },
       "xdm:profileImage": {
         "title": "Image",
         "format": "uri",
         "type": "string",
         "description": "Profile avatar or picture of the person.",
-        "meta:titleId": "identity##xdm:profileImage##title##33061",
-        "meta:descriptionId": "identity##xdm:profileImage##description##98331"
+        "meta:titleId": "identity##xdm:profileImage##title##75911",
+        "meta:descriptionId": "identity##xdm:profileImage##description##70581"
       },
       "xdm:profileLink": {
         "title": "Image",
         "format": "uri",
         "type": "string",
         "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile.",
-        "meta:titleId": "identity##xdm:profileLink##title##20471",
-        "meta:descriptionId": "identity##xdm:profileLink##description##15561"
+        "meta:titleId": "identity##xdm:profileLink##title##98281",
+        "meta:descriptionId": "identity##xdm:profileLink##description##57401"
       }
     }
   },
@@ -72,6 +72,6 @@
   "required": ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "identity##title##67571",
-  "meta:descriptionId": "identity##description##21351"
+  "meta:titleId": "identity##title##65581",
+  "meta:descriptionId": "identity##description##78321"
 }

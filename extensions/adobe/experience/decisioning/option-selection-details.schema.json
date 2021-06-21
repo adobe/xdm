@@ -19,8 +19,8 @@
           "type": "string",
           "title": "Description",
           "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match.",
-          "meta:titleId": "option-selection-details##xdm:description##title##12351",
-          "meta:descriptionId": "option-selection-details##xdm:description##description##67511"
+          "meta:titleId": "option-selection-details##xdm:description##title##57111",
+          "meta:descriptionId": "option-selection-details##xdm:description##description##78961"
         },
         "xdm:optionSelectionType": {
           "type": "string",
@@ -28,8 +28,8 @@
           "enum": ["directList", "filter"],
           "default": "none",
           "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.",
-          "meta:titleId": "option-selection-details##xdm:optionSelectionType##title##82431",
-          "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##80071"
+          "meta:titleId": "option-selection-details##xdm:optionSelectionType##title##2531",
+          "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##83941"
         },
         "xdm:options": {
           "type": "array",
@@ -39,18 +39,18 @@
             "type": "string",
             "format": "uri-reference",
             "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option.",
-            "meta:descriptionId": "option-selection-details##items##description##91061"
+            "meta:descriptionId": "option-selection-details##items##description##47631"
           },
-          "meta:titleId": "option-selection-details##xdm:options##title##82851",
-          "meta:descriptionId": "option-selection-details##xdm:options##description##43561"
+          "meta:titleId": "option-selection-details##xdm:options##title##1711",
+          "meta:descriptionId": "option-selection-details##xdm:options##description##92961"
         },
         "xdm:filter": {
           "type": "string",
           "format": "uri-reference",
           "title": "Option Filter",
           "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter .",
-          "meta:titleId": "option-selection-details##xdm:filter##title##35461",
-          "meta:descriptionId": "option-selection-details##xdm:filter##description##69911"
+          "meta:titleId": "option-selection-details##xdm:filter##title##7351",
+          "meta:descriptionId": "option-selection-details##xdm:filter##description##1191"
         }
       }
     }
@@ -61,6 +61,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "option-selection-details##title##26321",
-  "meta:descriptionId": "option-selection-details##description##84941"
+  "meta:titleId": "option-selection-details##title##48861",
+  "meta:descriptionId": "option-selection-details##description##51091"
 }

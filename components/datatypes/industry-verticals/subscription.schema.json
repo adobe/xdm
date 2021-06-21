@@ -18,179 +18,179 @@
           "title": "Identifier",
           "type": "string",
           "description": "Unique identifier for the subscription instance.",
-          "meta:titleId": "subscription##@id##title##51131",
-          "meta:descriptionId": "subscription##@id##description##20601"
+          "meta:titleId": "subscription##@id##title##76671",
+          "meta:descriptionId": "subscription##@id##description##54191"
         },
         "xdm:subscriber": {
           "title": "Subscriber",
           "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "The owner of the subscription.",
-          "meta:titleId": "subscription##xdm:subscriber##title##63281",
-          "meta:descriptionId": "subscription##xdm:subscriber##description##86271"
+          "meta:titleId": "subscription##xdm:subscriber##title##2081",
+          "meta:descriptionId": "subscription##xdm:subscriber##description##28511"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "The device linked to the subscription.",
-          "meta:titleId": "subscription##xdm:device##title##13171",
-          "meta:descriptionId": "subscription##xdm:device##description##49931"
+          "meta:titleId": "subscription##xdm:device##title##10511",
+          "meta:descriptionId": "subscription##xdm:device##description##2721"
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
           "description": "Environment of the subscription. This can be either then known environment at the time of the subscription or the environment of the application for subscriptions related to an application.",
-          "meta:titleId": "subscription##xdm:environment##title##71",
-          "meta:descriptionId": "subscription##xdm:environment##description##24041"
+          "meta:titleId": "subscription##xdm:environment##title##29711",
+          "meta:descriptionId": "subscription##xdm:environment##description##27201"
         },
         "xdm:SKU": {
           "title": "SKU",
           "type": "string",
           "description": "Stock keeping unit (SKU), a generally unique identifier for a product.",
-          "meta:titleId": "subscription##xdm:SKU##title##84121",
-          "meta:descriptionId": "subscription##xdm:SKU##description##37711"
+          "meta:titleId": "subscription##xdm:SKU##title##23091",
+          "meta:descriptionId": "subscription##xdm:SKU##description##62241"
         },
         "xdm:planName": {
           "title": "Plan name",
           "type": "string",
           "description": "The human readable name for the subscription.",
-          "meta:titleId": "subscription##xdm:planName##title##72161",
-          "meta:descriptionId": "subscription##xdm:planName##description##25371"
+          "meta:titleId": "subscription##xdm:planName##title##41911",
+          "meta:descriptionId": "subscription##xdm:planName##description##59271"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "The scope of entitlement in relation to how many people are covered by the subscription.",
-          "meta:titleId": "subscription##xdm:type##title##14841",
-          "meta:descriptionId": "subscription##xdm:type##description##23041"
+          "meta:titleId": "subscription##xdm:type##title##10971",
+          "meta:descriptionId": "subscription##xdm:type##description##65171"
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
           "description": "The country that the subscription contractual and agreement terms are rooted in.",
-          "meta:titleId": "subscription##xdm:country##title##34811",
-          "meta:descriptionId": "subscription##xdm:country##description##72851"
+          "meta:titleId": "subscription##xdm:country##title##37631",
+          "meta:descriptionId": "subscription##xdm:country##description##12441"
         },
         "xdm:startDate": {
           "title": "Start date",
           "type": "string",
           "format": "date",
           "description": "The date the subscription begins.",
-          "meta:titleId": "subscription##xdm:startDate##title##44301",
-          "meta:descriptionId": "subscription##xdm:startDate##description##56301"
+          "meta:titleId": "subscription##xdm:startDate##title##42791",
+          "meta:descriptionId": "subscription##xdm:startDate##description##80641"
         },
         "xdm:endDate": {
           "title": "End date",
           "type": "string",
           "format": "date",
           "description": "The date the current subscription term ends.",
-          "meta:titleId": "subscription##xdm:endDate##title##84561",
-          "meta:descriptionId": "subscription##xdm:endDate##description##15001"
+          "meta:titleId": "subscription##xdm:endDate##title##87321",
+          "meta:descriptionId": "subscription##xdm:endDate##description##74541"
         },
         "xdm:term": {
           "title": "Term",
           "type": "integer",
           "description": "The numeric value of the term.",
-          "meta:titleId": "subscription##xdm:term##title##69221",
-          "meta:descriptionId": "subscription##xdm:term##description##45001"
+          "meta:titleId": "subscription##xdm:term##title##73621",
+          "meta:descriptionId": "subscription##xdm:term##description##84681"
         },
         "xdm:termUnitOfTime": {
           "title": "Term unit of time",
           "type": "string",
           "description": "The unit of time for the term period.",
-          "meta:titleId": "subscription##xdm:termUnitOfTime##title##60561",
-          "meta:descriptionId": "subscription##xdm:termUnitOfTime##description##40391"
+          "meta:titleId": "subscription##xdm:termUnitOfTime##title##89221",
+          "meta:descriptionId": "subscription##xdm:termUnitOfTime##description##75611"
         },
         "xdm:renew": {
           "title": "Renew",
           "type": "string",
           "description": "The agreed way that the subscription may continue after the end date.",
-          "meta:titleId": "subscription##xdm:renew##title##60851",
-          "meta:descriptionId": "subscription##xdm:renew##description##2551"
+          "meta:titleId": "subscription##xdm:renew##title##87851",
+          "meta:descriptionId": "subscription##xdm:renew##description##50871"
         },
         "xdm:topUp": {
           "title": "Top up",
           "type": "string",
           "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period.",
-          "meta:titleId": "subscription##xdm:topUp##title##76691",
-          "meta:descriptionId": "subscription##xdm:topUp##description##10861"
+          "meta:titleId": "subscription##xdm:topUp##title##54351",
+          "meta:descriptionId": "subscription##xdm:topUp##description##39041"
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
           "description": "The current status of the subscription.",
-          "meta:titleId": "subscription##xdm:status##title##10361",
-          "meta:descriptionId": "subscription##xdm:status##description##76091"
+          "meta:titleId": "subscription##xdm:status##title##41411",
+          "meta:descriptionId": "subscription##xdm:status##description##26121"
         },
         "xdm:contractID": {
           "title": "Contract ID",
           "type": "string",
           "description": "Unique ID for the contract that governs this subscription.",
-          "meta:titleId": "subscription##xdm:contractID##title##24021",
-          "meta:descriptionId": "subscription##xdm:contractID##description##51871"
+          "meta:titleId": "subscription##xdm:contractID##title##56601",
+          "meta:descriptionId": "subscription##xdm:contractID##description##26481"
         },
         "xdm:paymentMethod": {
           "title": "Payment method",
           "type": "string",
           "description": "The payment method for recurring payments.",
-          "meta:titleId": "subscription##xdm:paymentMethod##title##91511",
-          "meta:descriptionId": "subscription##xdm:paymentMethod##description##10061"
+          "meta:titleId": "subscription##xdm:paymentMethod##title##35681",
+          "meta:descriptionId": "subscription##xdm:paymentMethod##description##99471"
         },
         "xdm:billingPeriod": {
           "title": "Billing period",
           "type": "string",
           "description": "The duration between billings.",
-          "meta:titleId": "subscription##xdm:billingPeriod##title##4701",
-          "meta:descriptionId": "subscription##xdm:billingPeriod##description##47901"
+          "meta:titleId": "subscription##xdm:billingPeriod##title##40861",
+          "meta:descriptionId": "subscription##xdm:billingPeriod##description##75001"
         },
         "xdm:billingStartDate": {
           "title": "Billing start date",
           "type": "string",
           "format": "date",
           "description": "The date when the first bill is due.",
-          "meta:titleId": "subscription##xdm:billingStartDate##title##35761",
-          "meta:descriptionId": "subscription##xdm:billingStartDate##description##14971"
+          "meta:titleId": "subscription##xdm:billingStartDate##title##4721",
+          "meta:descriptionId": "subscription##xdm:billingStartDate##description##6361"
         },
         "xdm:chargeMethod": {
           "title": "Charge method",
           "type": "string",
           "description": "The way the billing is setup to charge the customer.",
-          "meta:titleId": "subscription##xdm:chargeMethod##title##50611",
-          "meta:descriptionId": "subscription##xdm:chargeMethod##description##37731"
+          "meta:titleId": "subscription##xdm:chargeMethod##title##1941",
+          "meta:descriptionId": "subscription##xdm:chargeMethod##description##4001"
         },
         "xdm:paymentStatus": {
           "title": "Payment status",
           "type": "string",
           "description": "The standing of the account.",
-          "meta:titleId": "subscription##xdm:paymentStatus##title##79241",
-          "meta:descriptionId": "subscription##xdm:paymentStatus##description##1351"
+          "meta:titleId": "subscription##xdm:paymentStatus##title##6441",
+          "meta:descriptionId": "subscription##xdm:paymentStatus##description##79151"
         },
         "xdm:category": {
           "title": "Category",
           "type": "string",
           "description": "The main, top level categorization of this type of subscription.",
-          "meta:titleId": "subscription##xdm:category##title##47701",
-          "meta:descriptionId": "subscription##xdm:category##description##78711"
+          "meta:titleId": "subscription##xdm:category##title##71781",
+          "meta:descriptionId": "subscription##xdm:category##description##27091"
         },
         "xdm:subCategory": {
           "title": "Sub category",
           "type": "string",
           "description": "The specific sub categorization of the subscription.",
-          "meta:titleId": "subscription##xdm:subCategory##title##50701",
-          "meta:descriptionId": "subscription##xdm:subCategory##description##52161"
+          "meta:titleId": "subscription##xdm:subCategory##title##63271",
+          "meta:descriptionId": "subscription##xdm:subCategory##description##8501"
         },
         "xdm:revision": {
           "title": "Revision",
           "type": "string",
           "description": "The identification between subscriptions of the same name and category hierarchy.",
-          "meta:titleId": "subscription##xdm:revision##title##40821",
-          "meta:descriptionId": "subscription##xdm:revision##description##88571"
+          "meta:titleId": "subscription##xdm:revision##title##8861",
+          "meta:descriptionId": "subscription##xdm:revision##description##97381"
         },
         "xdm:reason": {
           "title": "Reason",
           "type": "string",
           "description": "The general intent the member has for the use of the subscription.",
-          "meta:titleId": "subscription##xdm:reason##title##40451",
-          "meta:descriptionId": "subscription##xdm:reason##description##57731"
+          "meta:titleId": "subscription##xdm:reason##title##98071",
+          "meta:descriptionId": "subscription##xdm:reason##description##58171"
         }
       }
     }
@@ -205,6 +205,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "subscription##title##82301",
-  "meta:descriptionId": "subscription##description##54241"
+  "meta:titleId": "subscription##title##81201",
+  "meta:descriptionId": "subscription##description##18181"
 }

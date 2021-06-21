@@ -17,8 +17,8 @@
           "title": "Experience Identifier",
           "type": "string",
           "description": "Activity experience identifier of previewed experience.",
-          "meta:titleId": "preview##xdm:forcedExperienceID##title##49531",
-          "meta:descriptionId": "preview##xdm:forcedExperienceID##description##32911"
+          "meta:titleId": "preview##xdm:forcedExperienceID##title##99011",
+          "meta:descriptionId": "preview##xdm:forcedExperienceID##description##77631"
         },
         "xdm:audienceIDsToEvaluateAsTrue": {
           "title": "Audience Identifiers to Evaluate as True.",
@@ -27,8 +27,8 @@
             "type": "string"
           },
           "description": "Evaluated as matching audience identifiers.",
-          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsTrue##title##87871",
-          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsTrue##description##62971"
+          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsTrue##title##76731",
+          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsTrue##description##24911"
         },
         "xdm:audienceIDsToEvaluateAsFalse": {
           "title": "Audience Identifiers to Evaluate as False.",
@@ -37,8 +37,8 @@
             "type": "string"
           },
           "description": "Evaluated as non-matching audience identifiers.",
-          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsFalse##title##59571",
-          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsFalse##description##83601"
+          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsFalse##title##84581",
+          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsFalse##description##90881"
         }
       }
     }
@@ -49,6 +49,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "preview##title##95411",
-  "meta:descriptionId": "preview##description##34481"
+  "meta:titleId": "preview##title##48941",
+  "meta:descriptionId": "preview##description##79671"
 }

@@ -17,15 +17,15 @@
           "title": "Record label",
           "type": "string",
           "description": "Name of the record label.",
-          "meta:titleId": "audio##id3:TPUB##title##93711",
-          "meta:descriptionId": "audio##id3:TPUB##description##58441"
+          "meta:titleId": "audio##id3:TPUB##title##9251",
+          "meta:descriptionId": "audio##id3:TPUB##description##38441"
         },
         "id3:TRSN": {
           "title": "InternetRadioStationName",
           "type": "string",
           "description": "The radio station name on which the audio is played.",
-          "meta:titleId": "audio##id3:TRSN##title##99641",
-          "meta:descriptionId": "audio##id3:TRSN##description##33801"
+          "meta:titleId": "audio##id3:TRSN##title##59601",
+          "meta:descriptionId": "audio##id3:TRSN##description##31061"
         }
       }
     }
@@ -37,6 +37,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "audio##title##12841",
-  "meta:descriptionId": "audio##description##86451"
+  "meta:titleId": "audio##title##20791",
+  "meta:descriptionId": "audio##description##46331"
 }

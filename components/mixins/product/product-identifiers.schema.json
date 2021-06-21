@@ -21,23 +21,23 @@
           "title": "Product SKU",
           "type": "string",
           "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
-          "meta:titleId": "product-identifiers##xdm:productSKU##title##23581",
-          "meta:descriptionId": "product-identifiers##xdm:productSKU##description##19081"
+          "meta:titleId": "product-identifiers##xdm:productSKU##title##78411",
+          "meta:descriptionId": "product-identifiers##xdm:productSKU##description##22641"
         },
         "xdm:productGTIN": {
           "title": "Product GTIN",
           "type": "string",
           "description": "Global Trade Item Number of the product.",
-          "meta:titleId": "product-identifiers##xdm:productGTIN##title##95471",
-          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##78721"
+          "meta:titleId": "product-identifiers##xdm:productGTIN##title##96821",
+          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##44611"
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
           "format": "uri",
           "description": "The URL for the primary product image of the product.",
-          "meta:titleId": "product-identifiers##xdm:productImageURL##title##5391",
-          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##43601"
+          "meta:titleId": "product-identifiers##xdm:productImageURL##title##37791",
+          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##54351"
         },
         "xdm:productSearchKeywords": {
           "title": "Product Search Keywords",
@@ -46,8 +46,8 @@
             "type": "string"
           },
           "description": "The search keywords associated with the product.",
-          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##55661",
-          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##46771"
+          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##35811",
+          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##78641"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "product-identifiers##title##21771",
-  "meta:descriptionId": "product-identifiers##description##42051"
+  "meta:titleId": "product-identifiers##title##72531",
+  "meta:descriptionId": "product-identifiers##description##38641"
 }

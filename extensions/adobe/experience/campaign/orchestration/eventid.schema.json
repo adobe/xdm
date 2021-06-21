@@ -26,18 +26,18 @@
               "title": "Event ID",
               "type": "string",
               "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations.",
-              "meta:titleId": "eventid##xdm:eventID##title##94061",
-              "meta:descriptionId": "eventid##xdm:eventID##description##41261"
+              "meta:titleId": "eventid##xdm:eventID##title##84911",
+              "meta:descriptionId": "eventid##xdm:eventID##description##77401"
             },
             "xdm:originJourneyID": {
               "title": "Origin Journey ID",
               "type": "string",
               "description": "In case of jump between 2 journeys, ID of the journey where the event comes from.",
-              "meta:titleId": "eventid##xdm:originJourneyID##title##35891",
-              "meta:descriptionId": "eventid##xdm:originJourneyID##description##13751"
+              "meta:titleId": "eventid##xdm:originJourneyID##title##27981",
+              "meta:descriptionId": "eventid##xdm:originJourneyID##description##54441"
             }
           },
-          "meta:titleId": "eventid##https://ns.adobe.com/experience/campaign/orchestration##title##88621"
+          "meta:titleId": "eventid##https://ns.adobe.com/experience/campaign/orchestration##title##32811"
         }
       }
     }
@@ -48,6 +48,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "eventid##title##55101",
-  "meta:descriptionId": "eventid##description##39351"
+  "meta:titleId": "eventid##title##97791",
+  "meta:descriptionId": "eventid##description##47981"
 }

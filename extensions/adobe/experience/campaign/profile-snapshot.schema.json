@@ -17,29 +17,29 @@
           "title": "Person",
           "$ref": "https://ns.adobe.com/xdm/context/person",
           "description": "An individual actor, contact, or owner.",
-          "meta:titleId": "profile-snapshot##xdm:person##title##37971",
-          "meta:descriptionId": "profile-snapshot##xdm:person##description##34151"
+          "meta:titleId": "profile-snapshot##xdm:person##title##57221",
+          "meta:descriptionId": "profile-snapshot##xdm:person##description##90921"
         },
         "xdm:directMarketingAddress": {
           "title": "Direct Marketing Address",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
           "description": "Direct Marketing postal address.",
-          "meta:titleId": "profile-snapshot##xdm:directMarketingAddress##title##17181",
-          "meta:descriptionId": "profile-snapshot##xdm:directMarketingAddress##description##44051"
+          "meta:titleId": "profile-snapshot##xdm:directMarketingAddress##title##39651",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingAddress##description##13481"
         },
         "xdm:directMarketingEmail": {
           "title": "Direct Marketing Email",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
           "description": "Direct Marketing email address.",
-          "meta:titleId": "profile-snapshot##xdm:directMarketingEmail##title##38431",
-          "meta:descriptionId": "profile-snapshot##xdm:directMarketingEmail##description##43441"
+          "meta:titleId": "profile-snapshot##xdm:directMarketingEmail##title##77881",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingEmail##description##77881"
         },
         "xdm:directMarketingPhone": {
           "title": "Direct Marketing Phone",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
           "description": "Direct Marketing phone number.",
-          "meta:titleId": "profile-snapshot##xdm:directMarketingPhone##title##881",
-          "meta:descriptionId": "profile-snapshot##xdm:directMarketingPhone##description##28631"
+          "meta:titleId": "profile-snapshot##xdm:directMarketingPhone##title##40591",
+          "meta:descriptionId": "profile-snapshot##xdm:directMarketingPhone##description##56201"
         },
         "xdm:pushNotificationTokens": {
           "title": "Push Notification Tokens",
@@ -48,8 +48,8 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/pushnotificationtoken"
           },
-          "meta:titleId": "profile-snapshot##xdm:pushNotificationTokens##title##60621",
-          "meta:descriptionId": "profile-snapshot##xdm:pushNotificationTokens##description##13891"
+          "meta:titleId": "profile-snapshot##xdm:pushNotificationTokens##title##92361",
+          "meta:descriptionId": "profile-snapshot##xdm:pushNotificationTokens##description##65591"
         }
       }
     }
@@ -60,6 +60,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "profile-snapshot##title##42531",
-  "meta:descriptionId": "profile-snapshot##description##79071"
+  "meta:titleId": "profile-snapshot##title##23121",
+  "meta:descriptionId": "profile-snapshot##description##91441"
 }

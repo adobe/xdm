@@ -35,55 +35,55 @@
                       "title": "Click Engagement Score",
                       "description": "This score represents the probability for a customer to click on links in an email.",
                       "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##title##47001",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##description##64211"
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##title##4931",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/clickEngagementScore##description##18171"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/openEnagementScore": {
                       "title": "Open Engagement Score",
                       "description": "This score represents the probability of a customer to open an email.",
                       "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##title##58311",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##description##57931"
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##title##33631",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/openEnagementScore##description##82391"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/retentionLevel": {
                       "title": "Retention Level",
                       "description": "Retention level is a qualitative categorization of customer's likelihood of staying subscribed to the email list.",
                       "type": "string",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##title##1721",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##description##44911"
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##title##42451",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionLevel##description##26121"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/retentionPercentRank": {
                       "title": "Retention Percent Rank",
                       "description": "Retention percent rank is a percentile rank of the likelihood of staying subscribed to the email list.",
                       "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##title##52331",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##description##80681"
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##title##69701",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/retentionPercentRank##description##45601"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability": {
                       "title": "Unsubscription Probability",
                       "description": "Unsubscription probability is the probability of a recipient to unsubscribe from email channel conditioned on email opened.",
                       "type": "number",
-                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title##17251",
-                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description##73161"
+                      "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title##4781",
+                      "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description##74071"
                     }
                   },
-                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title##15891",
-                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##description##86051"
+                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title##53141",
+                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##description##16561"
                 },
                 "https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo": {
                   "title": "Engagement Scores Info",
                   "description": "This information contains engagement scores model version and scoring date as a concatenated string, e.g. v1.3.0_2020-11-04.",
                   "type": "string",
-                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##title##84931",
-                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##description##64151"
+                  "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##title##40611",
+                  "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo##description##24571"
                 }
               },
-              "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##title##33901",
-              "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##description##96801"
+              "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##title##27751",
+              "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/engagementScores##description##40381"
             }
           },
-          "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##title##16711",
-          "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##description##24101"
+          "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##title##30331",
+          "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/journeyAI##description##57761"
         }
       }
     }
@@ -94,6 +94,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "profile-journeyai-engagementscores##title##44721",
-  "meta:descriptionId": "profile-journeyai-engagementscores##description##44031"
+  "meta:titleId": "profile-journeyai-engagementscores##title##76151",
+  "meta:descriptionId": "profile-journeyai-engagementscores##description##14431"
 }

@@ -19,19 +19,19 @@
           "type": "string",
           "const": "https://ns.adobe.com/experience/decisioning/propositionsTotal",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "proposition-metric-total##@id##description##82661"
+          "meta:descriptionId": "proposition-metric-total##@id##description##44691"
         },
         "schema:name": {
           "type": "string",
           "const": "option metric: total propositions",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "proposition-metric-total##schema:name##description##69401"
+          "meta:descriptionId": "proposition-metric-total##schema:name##description##94431"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "proposition-metric-total##xdm:measurement##description##40561"
+          "meta:descriptionId": "proposition-metric-total##xdm:measurement##description##32861"
         },
         "xdm:unit": {
           "const": null
@@ -49,6 +49,6 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
-  "meta:titleId": "proposition-metric-total##title##90291",
-  "meta:descriptionId": "proposition-metric-total##description##81121"
+  "meta:titleId": "proposition-metric-total##title##6321",
+  "meta:descriptionId": "proposition-metric-total##description##88651"
 }

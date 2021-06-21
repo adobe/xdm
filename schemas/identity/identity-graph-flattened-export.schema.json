@@ -20,22 +20,22 @@
           "title": "Person ID",
           "type": "string",
           "description": "Person ID Like Email or ECID or phone.",
-          "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title##49731",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description##40591"
+          "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title##57241",
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description##80581"
         },
         "xdm:namespaceID": {
           "title": "Namespace Id",
           "type": "integer",
           "description": "Id for the Identity Type.",
-          "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title##10921",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description##2471"
+          "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title##89811",
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description##89241"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
           "description": "Identity Type in human readable form.",
-          "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title##85891",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description##20451"
+          "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title##63571",
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description##26241"
         },
         "xdm:algorithm": {
           "title": "Algorithm",
@@ -51,8 +51,8 @@
             "FREQ_RECENCY_BASED_SHARED_DEVICES": "Frequency Recency Based Shared Devices",
             "DETERMINISTIC": "Deterministic"
           },
-          "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title##98421",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##18081"
+          "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title##68381",
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##22781"
         },
         "xdm:membersByTimeRange": {
           "type": "array",
@@ -64,23 +64,23 @@
                 "type": "string",
                 "format": "date-time",
                 "description": "Start Timestamp.",
-                "meta:titleId": "identity-graph-flattened-export##xdm:startTimestamp##title##82781",
-                "meta:descriptionId": "identity-graph-flattened-export##xdm:startTimestamp##description##48621"
+                "meta:titleId": "identity-graph-flattened-export##xdm:startTimestamp##title##15341",
+                "meta:descriptionId": "identity-graph-flattened-export##xdm:startTimestamp##description##42201"
               },
               "xdm:endTimestamp": {
                 "title": "End Timestamp",
                 "type": "string",
                 "format": "date-time",
                 "description": "End Timestamp.",
-                "meta:titleId": "identity-graph-flattened-export##xdm:endTimestamp##title##90791",
-                "meta:descriptionId": "identity-graph-flattened-export##xdm:endTimestamp##description##19381"
+                "meta:titleId": "identity-graph-flattened-export##xdm:endTimestamp##title##97241",
+                "meta:descriptionId": "identity-graph-flattened-export##xdm:endTimestamp##description##74591"
               },
               "xdm:graphID": {
                 "title": "Person Graph ID",
                 "type": "string",
                 "description": "Person level Graph Identifier.",
-                "meta:titleId": "identity-graph-flattened-export##xdm:graphID##title##46341",
-                "meta:descriptionId": "identity-graph-flattened-export##xdm:graphID##description##22831"
+                "meta:titleId": "identity-graph-flattened-export##xdm:graphID##title##68131",
+                "meta:descriptionId": "identity-graph-flattened-export##xdm:graphID##description##2951"
               },
               "xdm:identityMap": {
                 "type": "object",
@@ -100,8 +100,8 @@
           "type": "string",
           "format": "date-time",
           "description": "Last updated time when this identity was updated.",
-          "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title##2401",
-          "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description##44861"
+          "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title##37821",
+          "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description##16381"
         }
       },
       "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algorithm"]
@@ -116,6 +116,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "identity-graph-flattened-export##title##3061",
-  "meta:descriptionId": "identity-graph-flattened-export##description##46411"
+  "meta:titleId": "identity-graph-flattened-export##title##83361",
+  "meta:descriptionId": "identity-graph-flattened-export##description##97661"
 }

@@ -26,15 +26,15 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
           },
-          "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##17491",
-          "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##54121"
+          "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##85861",
+          "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##8271"
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
           "description": "Product returns, warranty registration, and shopping cart/order process.",
-          "meta:titleId": "experienceevent-commerce##xdm:commerce##title##22691",
-          "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##22981"
+          "meta:titleId": "experienceevent-commerce##xdm:commerce##title##48731",
+          "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##21671"
         }
       }
     }
@@ -49,6 +49,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent-commerce##title##86761",
-  "meta:descriptionId": "experienceevent-commerce##description##10681"
+  "meta:titleId": "experienceevent-commerce##title##19501",
+  "meta:descriptionId": "experienceevent-commerce##description##62781"
 }

@@ -18,73 +18,73 @@
           "title": "Form Application Approved",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when a visitor application has been approved.",
-          "meta:titleId": "form-applications##xdm:approved##title##18261",
-          "meta:descriptionId": "form-applications##xdm:approved##description##83941"
+          "meta:titleId": "form-applications##xdm:approved##title##75911",
+          "meta:descriptionId": "form-applications##xdm:approved##description##16061"
         },
         "xdm:declined": {
           "title": "Form Application Declined",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when a visitor application has been declined.",
-          "meta:titleId": "form-applications##xdm:declined##title##86881",
-          "meta:descriptionId": "form-applications##xdm:declined##description##57721"
+          "meta:titleId": "form-applications##xdm:declined##title##96981",
+          "meta:descriptionId": "form-applications##xdm:declined##description##90721"
         },
         "xdm:applicationFee": {
           "title": "Application Fee",
           "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
           "description": "Extension of Transaction Data Type",
-          "meta:titleId": "form-applications##xdm:applicationFee##title##31541",
-          "meta:descriptionId": "form-applications##xdm:applicationFee##description##53381"
+          "meta:titleId": "form-applications##xdm:applicationFee##title##22751",
+          "meta:descriptionId": "form-applications##xdm:applicationFee##description##3711"
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
           "description": "Identifier used during an application process.",
-          "meta:titleId": "form-applications##xdm:ID##title##99371",
-          "meta:descriptionId": "form-applications##xdm:ID##description##36911"
+          "meta:titleId": "form-applications##xdm:ID##title##19111",
+          "meta:descriptionId": "form-applications##xdm:ID##description##50021"
         },
         "xdm:requestedAmount": {
           "title": "Requested Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Tracks the monetary value of the application.",
-          "meta:titleId": "form-applications##xdm:requestedAmount##title##91711",
-          "meta:descriptionId": "form-applications##xdm:requestedAmount##description##83741"
+          "meta:titleId": "form-applications##xdm:requestedAmount##title##34841",
+          "meta:descriptionId": "form-applications##xdm:requestedAmount##description##21621"
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
           "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the application for any given point in the application process.",
-          "meta:titleId": "form-applications##xdm:status##title##67061",
-          "meta:descriptionId": "form-applications##xdm:status##description##23081"
+          "meta:titleId": "form-applications##xdm:status##title##42651",
+          "meta:descriptionId": "form-applications##xdm:status##description##10141"
         },
         "xdm:statusUpdate": {
           "title": "Status Update",
           "type": "string",
           "description": "Captured when the status for an application changes, either from an online or offline update.",
-          "meta:titleId": "form-applications##xdm:statusUpdate##title##9561",
-          "meta:descriptionId": "form-applications##xdm:statusUpdate##description##77741"
+          "meta:titleId": "form-applications##xdm:statusUpdate##title##51931",
+          "meta:descriptionId": "form-applications##xdm:statusUpdate##description##24511"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "Type of the application process.",
-          "meta:titleId": "form-applications##xdm:type##title##2011",
-          "meta:descriptionId": "form-applications##xdm:type##description##53721"
+          "meta:titleId": "form-applications##xdm:type##title##64341",
+          "meta:descriptionId": "form-applications##xdm:type##description##35501"
         },
         "xdm:underReview": {
           "title": "Under Review",
           "type": "boolean",
           "description": "Captured when a visitor application has been placed under review.",
-          "meta:titleId": "form-applications##xdm:underReview##title##54181",
-          "meta:descriptionId": "form-applications##xdm:underReview##description##46031"
+          "meta:titleId": "form-applications##xdm:underReview##title##25651",
+          "meta:descriptionId": "form-applications##xdm:underReview##description##39201"
         },
         "xdm:steps": {
           "title": "steps",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
           "meta:status": "deprecated",
-          "meta:titleId": "form-applications##xdm:steps##title##96661",
-          "meta:descriptionId": "form-applications##xdm:steps##description##97861"
+          "meta:titleId": "form-applications##xdm:steps##title##39331",
+          "meta:descriptionId": "form-applications##xdm:steps##description##56861"
         }
       }
     }
@@ -96,6 +96,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "form-applications##title##68451",
-  "meta:descriptionId": "form-applications##description##97001"
+  "meta:titleId": "form-applications##title##72491",
+  "meta:descriptionId": "form-applications##description##14661"
 }

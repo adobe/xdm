@@ -31,18 +31,18 @@
               "title": "Card Comparisons",
               "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
               "description": "Extension of comparison data type.",
-              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##title##62581",
-              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##description##97101"
+              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##title##83581",
+              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##description##59801"
             },
             "xdm:cardApplicationSteps": {
               "title": "Card Application Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
               "description": "Extension of form application data type.",
-              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationSteps##title##4831",
-              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationSteps##description##3711"
+              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationSteps##title##34041",
+              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationSteps##description##70581"
             }
           },
-          "meta:descriptionId": "experienceevent-card-application-details##xdm:personalFinances##description##47421"
+          "meta:descriptionId": "experienceevent-card-application-details##xdm:personalFinances##description##53001"
         }
       }
     }
@@ -54,6 +54,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-card-application-details##title##5251",
-  "meta:descriptionId": "experienceevent-card-application-details##description##29681"
+  "meta:titleId": "experienceevent-card-application-details##title##32561",
+  "meta:descriptionId": "experienceevent-card-application-details##description##89011"
 }

@@ -30,44 +30,44 @@
               "title": "Delivery Eligible",
               "type": "boolean",
               "description": "Indicates if the prescription available to be delivered.",
-              "meta:titleId": "experienceevent-prescription-details##xdm:deliveryEligible##title##35981",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:deliveryEligible##description##13931"
+              "meta:titleId": "experienceevent-prescription-details##xdm:deliveryEligible##title##68971",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:deliveryEligible##description##90921"
             },
             "xdm:ID": {
               "title": "ID",
               "type": "string",
               "description": "ID for the prescription being filled.",
-              "meta:titleId": "experienceevent-prescription-details##xdm:ID##title##41821",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:ID##description##58501"
+              "meta:titleId": "experienceevent-prescription-details##xdm:ID##title##22261",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:ID##description##90901"
             },
             "xdm:refill": {
               "title": "Refill",
               "type": "boolean",
               "description": "Indicates if the prescription is new or being refilled.",
-              "meta:titleId": "experienceevent-prescription-details##xdm:refill##title##91781",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:refill##description##78761"
+              "meta:titleId": "experienceevent-prescription-details##xdm:refill##title##4541",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:refill##description##37811"
             },
             "xdm:refillsRemaining": {
               "title": "Refills Remaining",
               "type": "integer",
               "description": "Count of the remaining prescription refills available.",
-              "meta:titleId": "experienceevent-prescription-details##xdm:refillsRemaining##title##32841",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:refillsRemaining##description##10051"
+              "meta:titleId": "experienceevent-prescription-details##xdm:refillsRemaining##title##65261",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:refillsRemaining##description##58471"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-prescription-details##xdm:steps##title##52861",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:steps##description##22181"
+              "meta:titleId": "experienceevent-prescription-details##xdm:steps##title##75261",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:steps##description##61381"
             },
             "xdm:upload": {
               "title": "Upload",
               "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
               "description": "Extension of the File Transfer data type.",
-              "meta:titleId": "experienceevent-prescription-details##xdm:upload##title##65321",
-              "meta:descriptionId": "experienceevent-prescription-details##xdm:upload##description##66301"
+              "meta:titleId": "experienceevent-prescription-details##xdm:upload##title##56531",
+              "meta:descriptionId": "experienceevent-prescription-details##xdm:upload##description##10911"
             }
           }
         }
@@ -81,6 +81,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-22",
-  "meta:titleId": "experienceevent-prescription-details##title##77141",
-  "meta:descriptionId": "experienceevent-prescription-details##description##41451"
+  "meta:titleId": "experienceevent-prescription-details##title##76191",
+  "meta:descriptionId": "experienceevent-prescription-details##description##68601"
 }

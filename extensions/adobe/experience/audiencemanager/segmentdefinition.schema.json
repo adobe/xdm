@@ -23,8 +23,8 @@
           "type": "string",
           "description": "id of parent folder if present",
           "meta:status": "deprecated",
-          "meta:titleId": "segmentdefinition##xdm:segmentFolderId##title##66941",
-          "meta:descriptionId": "segmentdefinition##xdm:segmentFolderId##description##90171"
+          "meta:titleId": "segmentdefinition##xdm:segmentFolderId##title##58841",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentFolderId##description##43591"
         },
         "xdm:segmentSubType": {
           "title": "Sub Type",
@@ -42,15 +42,15 @@
             "ALGO_TRAIT",
             "ON_BOARDED_TRAIT"
           ],
-          "meta:titleId": "segmentdefinition##xdm:segmentSubType##title##71371",
-          "meta:descriptionId": "segmentdefinition##xdm:segmentSubType##description##18781"
+          "meta:titleId": "segmentdefinition##xdm:segmentSubType##title##18151",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentSubType##description##40671"
         },
         "https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity": {
           "title": "Parent folder identity",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Identity of the parent folder of current folder",
-          "meta:titleId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##title##34421",
-          "meta:descriptionId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##description##17271"
+          "meta:titleId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##title##76141",
+          "meta:descriptionId": "segmentdefinition##https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity##description##91701"
         }
       }
     }
@@ -64,6 +64,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "segmentdefinition##title##48991",
-  "meta:descriptionId": "segmentdefinition##description##13291"
+  "meta:titleId": "segmentdefinition##title##93581",
+  "meta:descriptionId": "segmentdefinition##description##37751"
 }

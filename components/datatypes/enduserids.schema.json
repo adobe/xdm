@@ -19,57 +19,57 @@
           "title": "Adobe Marketing Cloud ID",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "A unique identifier from Adobe Marketing Cloud.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/mcid##title##30901",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/mcid##description##78901"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/mcid##title##46221",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/mcid##description##65501"
         },
         "https://ns.adobe.com/experience/aaid": {
           "title": "Adobe Analytics Cloud end user IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Adobe Analytics Cloud extension to end user IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/aaid##title##63791",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/aaid##description##10121"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/aaid##title##32891",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/aaid##description##16911"
         },
         "https://ns.adobe.com/experience/aacustomid": {
           "title": "Adobe Analytics Cloud Custom end user IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "An Adobe Analytics custom identifier passed in on a hit.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/aacustomid##title##63021",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/aacustomid##description##92711"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/aacustomid##title##84761",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/aacustomid##description##60971"
         },
         "https://ns.adobe.com/experience/acid": {
           "title": "Adobe Campaign end user IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Adobe Campaign extension to end user IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/acid##title##32521",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/acid##description##94621"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/acid##title##53031",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/acid##description##11201"
         },
         "https://ns.adobe.com/experience/tntid": {
           "title": "Adobe Target end user IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Adobe Target extension to end user IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/tntid##title##25341",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/tntid##description##36661"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/tntid##title##57591",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/tntid##description##12571"
         },
         "https://ns.adobe.com/experience/adcloud": {
           "title": "Adobe Advertising Cloud end user IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Adobe Advertising Cloud extension to end user IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/adcloud##title##1381",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/adcloud##description##5471"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/adcloud##title##39451",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/adcloud##description##13131"
         },
         "https://ns.adobe.com/experience/emailid": {
           "title": "Email address IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Email addresses used as IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/emailid##title##84531",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/emailid##description##73851"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/emailid##title##26541",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/emailid##description##38931"
         },
         "https://ns.adobe.com/experience/phonenumberid": {
           "title": "Phone number IDs",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Phone numbers used as IDs.",
-          "meta:titleId": "enduserids##https://ns.adobe.com/experience/phonenumberid##title##61291",
-          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/phonenumberid##description##19031"
+          "meta:titleId": "enduserids##https://ns.adobe.com/experience/phonenumberid##title##25391",
+          "meta:descriptionId": "enduserids##https://ns.adobe.com/experience/phonenumberid##description##27221"
         }
       },
       "patternProperties": {
@@ -77,7 +77,7 @@
           "description": "The identifier, including data source, foreign ID, and confidence. Note, `@id` must be identical to the property value.",
           "type": "object",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "meta:descriptionId": "enduserids##.+://.+##description##14171"
+          "meta:descriptionId": "enduserids##.+://.+##description##18051"
         }
       }
     }
@@ -102,6 +102,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "enduserids##title##98731",
-  "meta:descriptionId": "enduserids##description##88211"
+  "meta:titleId": "enduserids##title##7781",
+  "meta:descriptionId": "enduserids##description##25341"
 }

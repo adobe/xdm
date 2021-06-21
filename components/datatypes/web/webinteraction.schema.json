@@ -24,29 +24,29 @@
             "exit": "Exit",
             "other": "Other"
           },
-          "meta:titleId": "webinteraction##xdm:type##title##56521",
-          "meta:descriptionId": "webinteraction##xdm:type##description##82031"
+          "meta:titleId": "webinteraction##xdm:type##title##90731",
+          "meta:descriptionId": "webinteraction##xdm:type##description##80231"
         },
         "xdm:URL": {
           "title": "URL",
           "type": "string",
           "description": "The actual link or URL used for this web interaction.",
-          "meta:titleId": "webinteraction##xdm:URL##title##43651",
-          "meta:descriptionId": "webinteraction##xdm:URL##description##37021"
+          "meta:titleId": "webinteraction##xdm:URL##title##9301",
+          "meta:descriptionId": "webinteraction##xdm:URL##description##32861"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "The normative name used for this web link, used for classification purposes.",
-          "meta:titleId": "webinteraction##xdm:name##title##5191",
-          "meta:descriptionId": "webinteraction##xdm:name##description##89251"
+          "meta:titleId": "webinteraction##xdm:name##title##68161",
+          "meta:descriptionId": "webinteraction##xdm:name##description##68931"
         },
         "xdm:linkClicks": {
           "title": "Link Clicks",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Click of a web link has occurred.",
-          "meta:titleId": "webinteraction##xdm:linkClicks##title##32591",
-          "meta:descriptionId": "webinteraction##xdm:linkClicks##description##4921"
+          "meta:titleId": "webinteraction##xdm:linkClicks##title##47811",
+          "meta:descriptionId": "webinteraction##xdm:linkClicks##description##61641"
         }
       }
     }
@@ -61,6 +61,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "webinteraction##title##87151",
-  "meta:descriptionId": "webinteraction##description##33851"
+  "meta:titleId": "webinteraction##title##4311",
+  "meta:descriptionId": "webinteraction##description##67161"
 }

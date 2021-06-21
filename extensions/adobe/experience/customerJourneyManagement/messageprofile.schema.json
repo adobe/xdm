@@ -20,44 +20,44 @@
           "title": "MessageProfile ID",
           "type": "string",
           "description": "A unique id refers to every single message sent as part of a MessageExecution activity.",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##22521",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##5571"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##75801",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##42861"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
           "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title##42031",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description##39871"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title##56481",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description##68771"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": {
           "title": "Content Variant",
           "type": "string",
           "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##57301",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##91971"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##94191",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##66891"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
           "title": "Address",
           "type": "string",
           "format": "email",
           "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title##86331",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description##53121"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title##4991",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description##39371"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": {
           "title": "Email Namespace",
           "type": "string",
           "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title##69681",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description##58111"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title##99431",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description##481"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": {
           "title": "IP Address",
           "type": "string",
           "description": "Outbound IP address of the customer used to deliver the message.",
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##10691",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##64381"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##77071",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##4201"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
@@ -67,8 +67,8 @@
             "apns": "Apple Push Notification service",
             "fcm": "Firebase cloud messaging service"
           },
-          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##53961",
-          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##9191"
+          "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##59051",
+          "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##7631"
         }
       }
     }
@@ -85,6 +85,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "messageprofile##title##86981",
-  "meta:descriptionId": "messageprofile##description##50161"
+  "meta:titleId": "messageprofile##title##76721",
+  "meta:descriptionId": "messageprofile##description##72341"
 }

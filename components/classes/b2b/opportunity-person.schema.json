@@ -24,36 +24,36 @@
           "title": "Opportunity Person ID",
           "description": "Unique ID for the relationship between the opportunity and the person.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##4471",
-          "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##9021"
+          "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##3821",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##34251"
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID for the opportunity in this opportunity person relationship.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:opportunityID##title##72301",
-          "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##7621"
+          "meta:titleId": "opportunity-person##xdm:opportunityID##title##9901",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##17181"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this opportunity person relationship.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:personID##title##71311",
-          "meta:descriptionId": "opportunity-person##xdm:personID##description##48701"
+          "meta:titleId": "opportunity-person##xdm:personID##title##51341",
+          "meta:descriptionId": "opportunity-person##xdm:personID##description##15861"
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:personRole##title##76771",
-          "meta:descriptionId": "opportunity-person##xdm:personRole##description##82611"
+          "meta:titleId": "opportunity-person##xdm:personRole##title##6851",
+          "meta:descriptionId": "opportunity-person##xdm:personRole##description##35851"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean indicating if the person is the primary contact on this opportunity.",
           "type": "boolean",
-          "meta:titleId": "opportunity-person##xdm:isPrimary##title##55901",
-          "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##93821"
+          "meta:titleId": "opportunity-person##xdm:isPrimary##title##39951",
+          "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##88591"
         }
       }
     }
@@ -74,6 +74,6 @@
   ],
   "required": ["xdm:opportunityPersonID"],
   "meta:status": "experimental",
-  "meta:titleId": "opportunity-person##title##74111",
-  "meta:descriptionId": "opportunity-person##description##35271"
+  "meta:titleId": "opportunity-person##title##76771",
+  "meta:descriptionId": "opportunity-person##description##31171"
 }

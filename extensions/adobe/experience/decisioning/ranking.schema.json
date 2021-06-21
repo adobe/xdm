@@ -22,8 +22,8 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/ranking-details",
           "title": "Ranking Details",
           "description": "Rank (priority). Defines what is considered the \"best action\" given the context of the decision criterion. Among all the selected options that meet the eligibility constraint, the ranking order will decide the top (or top N) option(s) to be proposed.",
-          "meta:titleId": "ranking##https://ns.adobe.com/experience/decisioning/ranking##title##15541",
-          "meta:descriptionId": "ranking##https://ns.adobe.com/experience/decisioning/ranking##description##84211"
+          "meta:titleId": "ranking##https://ns.adobe.com/experience/decisioning/ranking##title##53751",
+          "meta:descriptionId": "ranking##https://ns.adobe.com/experience/decisioning/ranking##description##45291"
         }
       }
     }
@@ -34,6 +34,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "ranking##title##58301",
-  "meta:descriptionId": "ranking##description##5131"
+  "meta:titleId": "ranking##title##18181",
+  "meta:descriptionId": "ranking##description##65101"
 }

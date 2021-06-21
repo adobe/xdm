@@ -20,50 +20,50 @@
           "title": "MessageExecution ID",
           "type": "string",
           "description": "The CJM activity originating this message.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID##title##44891",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID##description##86191"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID##title##89381",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID##description##31351"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID": {
           "title": "Message ID",
           "type": "string",
           "description": "The parent Message ID of a MessageExecution originating this message.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID##title##20871",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID##description##1211"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID##title##82841",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID##description##40511"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID": {
           "title": "Message Publication ID",
           "type": "string",
           "description": "The Publication ID of parent Message ID of a MessageExecution originating this message.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##title##98961",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##description##81671"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##title##30611",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##description##17441"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
           "title": "JourneyVersion ID",
           "type": "string",
           "description": " JourneyVersion Id triggerieng the MessageExecution.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID##title##67361",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID##description##45631"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID##title##97431",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID##description##35111"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": {
           "title": "JourneyVersion Instance ID",
           "type": "string",
           "description": "Identifier of the journey version instance, specific to one individual (uuid).",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID##title##77261",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID##description##89251"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID##title##30021",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID##description##53221"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": {
           "title": "Journey Version Node ID",
           "type": "string",
           "description": "Identifier of the journey version node, triggering  the Message Execution.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID##title##91281",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID##description##74721"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID##title##45781",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID##description##60771"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": {
           "title": "Journey Action ID",
           "type": "string",
           "description": "Journey Action ID, for which MessageExecution is triggered.",
-          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##title##42021",
-          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##description##7361"
+          "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##title##76781",
+          "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##description##92481"
         }
       }
     }
@@ -80,6 +80,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "messageexecution##title##62871",
-  "meta:descriptionId": "messageexecution##description##72681"
+  "meta:titleId": "messageexecution##title##99951",
+  "meta:descriptionId": "messageexecution##description##92451"
 }

@@ -21,29 +21,29 @@
           "title": "Campaign ID",
           "description": "Unique identifer for campaign.",
           "type": "string",
-          "meta:titleId": "campaign##xdm:campaignID##title##34151",
-          "meta:descriptionId": "campaign##xdm:campaignID##description##12851"
+          "meta:titleId": "campaign##xdm:campaignID##title##78151",
+          "meta:descriptionId": "campaign##xdm:campaignID##description##73371"
         },
         "xdm:campaignName": {
           "title": "Campaign Name",
           "description": "Friendly name for campaign.",
           "type": "string",
-          "meta:titleId": "campaign##xdm:campaignName##title##47041",
-          "meta:descriptionId": "campaign##xdm:campaignName##description##2921"
+          "meta:titleId": "campaign##xdm:campaignName##title##18611",
+          "meta:descriptionId": "campaign##xdm:campaignName##description##11051"
         },
         "xdm:campaignType": {
           "title": "Campaign Type",
           "description": "The type of campaign for which audience gets selected.",
           "type": "string",
-          "meta:titleId": "campaign##xdm:campaignType##title##27301",
-          "meta:descriptionId": "campaign##xdm:campaignType##description##6761"
+          "meta:titleId": "campaign##xdm:campaignType##title##17051",
+          "meta:descriptionId": "campaign##xdm:campaignType##description##57801"
         },
         "xdm:campaignDescription": {
           "title": "Campaign Description",
           "description": "Campaign description.",
           "type": "string",
-          "meta:titleId": "campaign##xdm:campaignDescription##title##1331",
-          "meta:descriptionId": "campaign##xdm:campaignDescription##description##24851"
+          "meta:titleId": "campaign##xdm:campaignDescription##title##52571",
+          "meta:descriptionId": "campaign##xdm:campaignDescription##description##49271"
         }
       }
     }
@@ -64,6 +64,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-09-29",
-  "meta:titleId": "campaign##title##98761",
-  "meta:descriptionId": "campaign##description##22721"
+  "meta:titleId": "campaign##title##4081",
+  "meta:descriptionId": "campaign##description##24891"
 }

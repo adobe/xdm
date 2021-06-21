@@ -18,36 +18,36 @@
           "title": "ID of the call conversation",
           "type": "string",
           "description": "A unique identifier to represent the phone call conversation",
-          "meta:titleId": "phoneinteraction##xdm:ID##title##63031",
-          "meta:descriptionId": "phoneinteraction##xdm:ID##description##68511"
+          "meta:titleId": "phoneinteraction##xdm:ID##title##94831",
+          "meta:descriptionId": "phoneinteraction##xdm:ID##description##65511"
         },
         "xdm:fromWhoID": {
           "title": "Initiator of the call",
           "type": "string",
           "description": "Person ID who initiated the call of the conversation",
-          "meta:titleId": "phoneinteraction##xdm:fromWhoID##title##20891",
-          "meta:descriptionId": "phoneinteraction##xdm:fromWhoID##description##37831"
+          "meta:titleId": "phoneinteraction##xdm:fromWhoID##title##24631",
+          "meta:descriptionId": "phoneinteraction##xdm:fromWhoID##description##4351"
         },
         "xdm:toWhoID": {
           "title": "Call reciever",
           "type": "string",
           "description": "Person ID who recieved the call",
-          "meta:titleId": "phoneinteraction##xdm:toWhoID##title##17991",
-          "meta:descriptionId": "phoneinteraction##xdm:toWhoID##description##89201"
+          "meta:titleId": "phoneinteraction##xdm:toWhoID##title##9701",
+          "meta:descriptionId": "phoneinteraction##xdm:toWhoID##description##92271"
         },
         "xdm:disposition": {
           "title": "Label the outcome of the phone call",
           "type": "string",
           "description": "The outcome of the call as next triggering actions such as 'demo scheduled','left voicemail', etc.",
-          "meta:titleId": "phoneinteraction##xdm:disposition##title##21471",
-          "meta:descriptionId": "phoneinteraction##xdm:disposition##description##37771"
+          "meta:titleId": "phoneinteraction##xdm:disposition##title##95911",
+          "meta:descriptionId": "phoneinteraction##xdm:disposition##description##4681"
         },
         "xdm:duration": {
           "title": "Time Spent during the call",
           "type": "number",
           "description": "Record the length of the phone conversation in seconds",
-          "meta:titleId": "phoneinteraction##xdm:duration##title##72301",
-          "meta:descriptionId": "phoneinteraction##xdm:duration##description##78081"
+          "meta:titleId": "phoneinteraction##xdm:duration##title##13191",
+          "meta:descriptionId": "phoneinteraction##xdm:duration##description##38511"
         },
         "xdm:type": {
           "title": "Type of the phone call",
@@ -58,29 +58,29 @@
             "inbound": "Inbound",
             "outbound": "Outbound"
           },
-          "meta:titleId": "phoneinteraction##xdm:type##title##90811",
-          "meta:descriptionId": "phoneinteraction##xdm:type##description##70351"
+          "meta:titleId": "phoneinteraction##xdm:type##title##61711",
+          "meta:descriptionId": "phoneinteraction##xdm:type##description##62181"
         },
         "xdm:fromNumber": {
           "title": "Phone Number of the initiator of the call",
           "type": "string",
           "description": "Person's phone number who initiated the conversation. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "meta:titleId": "phoneinteraction##xdm:fromNumber##title##31771",
-          "meta:descriptionId": "phoneinteraction##xdm:fromNumber##description##58841"
+          "meta:titleId": "phoneinteraction##xdm:fromNumber##title##38881",
+          "meta:descriptionId": "phoneinteraction##xdm:fromNumber##description##77101"
         },
         "xdm:toNumber": {
           "title": "Phone number of the call reciever",
           "type": "string",
           "description": "Person's phone number who is the reciever of the call. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234.",
-          "meta:titleId": "phoneinteraction##xdm:toNumber##title##17661",
-          "meta:descriptionId": "phoneinteraction##xdm:toNumber##description##73751"
+          "meta:titleId": "phoneinteraction##xdm:toNumber##title##23631",
+          "meta:descriptionId": "phoneinteraction##xdm:toNumber##description##75731"
         },
         "xdm:hasLeftVoiceMail": {
           "title": "Has the initiator of the call left any Voice Mail message",
           "type": "boolean",
           "description": "A boolean flag to represent whether a voice mail has been left for the reciever",
-          "meta:titleId": "phoneinteraction##xdm:hasLeftVoiceMail##title##2011",
-          "meta:descriptionId": "phoneinteraction##xdm:hasLeftVoiceMail##description##53051"
+          "meta:titleId": "phoneinteraction##xdm:hasLeftVoiceMail##title##81921",
+          "meta:descriptionId": "phoneinteraction##xdm:hasLeftVoiceMail##description##60201"
         }
       }
     }
@@ -95,6 +95,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "phoneinteraction##title##47841",
-  "meta:descriptionId": "phoneinteraction##description##33551"
+  "meta:titleId": "phoneinteraction##title##19001",
+  "meta:descriptionId": "phoneinteraction##description##6021"
 }

@@ -23,22 +23,22 @@
           "title": "Ad Name",
           "type": "string",
           "description": "Ad name.",
-          "meta:titleId": "advertisement##dsp:adName##title##41211",
-          "meta:descriptionId": "advertisement##dsp:adName##description##98881"
+          "meta:titleId": "advertisement##dsp:adName##title##3601",
+          "meta:descriptionId": "advertisement##dsp:adName##description##84391"
         },
         "dsp:adKey": {
           "title": "Ad Key",
           "type": "string",
           "description": "Ad external unique identifier.",
-          "meta:titleId": "advertisement##dsp:adKey##title##48651",
-          "meta:descriptionId": "advertisement##dsp:adKey##description##34901"
+          "meta:titleId": "advertisement##dsp:adKey##title##62561",
+          "meta:descriptionId": "advertisement##dsp:adKey##description##74291"
         },
         "dsp:externalCreativeId": {
           "title": "External Creative Identifier",
           "type": "string",
           "description": "Identifier for the creative which this ad is associated with.",
-          "meta:titleId": "advertisement##dsp:externalCreativeId##title##22861",
-          "meta:descriptionId": "advertisement##dsp:externalCreativeId##description##59521"
+          "meta:titleId": "advertisement##dsp:externalCreativeId##title##89581",
+          "meta:descriptionId": "advertisement##dsp:externalCreativeId##description##50921"
         },
         "dsp:adStatus": {
           "title": "Ad Status",
@@ -54,8 +54,8 @@
             "Inactive": "Inactive",
             "Deleted": "Deleted"
           },
-          "meta:titleId": "advertisement##dsp:adStatus##title##70791",
-          "meta:descriptionId": "advertisement##dsp:adStatus##description##76201"
+          "meta:titleId": "advertisement##dsp:adStatus##title##67251",
+          "meta:descriptionId": "advertisement##dsp:adStatus##description##87491"
         },
         "dsp:adUnitType": {
           "title": "Ad Unit Type",
@@ -99,29 +99,29 @@
             "fb_news_feed_post": "fb_news_feed_post",
             "fb_news_feed": "fb_news_feed"
           },
-          "meta:titleId": "advertisement##dsp:adUnitType##title##19551",
-          "meta:descriptionId": "advertisement##dsp:adUnitType##description##64201"
+          "meta:titleId": "advertisement##dsp:adUnitType##title##97441",
+          "meta:descriptionId": "advertisement##dsp:adUnitType##description##21661"
         },
         "dsp:adClass": {
           "title": "Ad Class",
           "type": "string",
           "description": "Ad class of driving event.",
-          "meta:titleId": "advertisement##dsp:adClass##title##25841",
-          "meta:descriptionId": "advertisement##dsp:adClass##description##59291"
+          "meta:titleId": "advertisement##dsp:adClass##title##50791",
+          "meta:descriptionId": "advertisement##dsp:adClass##description##56651"
         },
         "dsp:promotedVideoId": {
           "title": "Promoted Video Identifier",
           "type": "string",
           "description": "Promoted video Identifier contained in this Ad.",
-          "meta:titleId": "advertisement##dsp:promotedVideoId##title##60251",
-          "meta:descriptionId": "advertisement##dsp:promotedVideoId##description##37171"
+          "meta:titleId": "advertisement##dsp:promotedVideoId##title##36691",
+          "meta:descriptionId": "advertisement##dsp:promotedVideoId##description##52011"
         },
         "dsp:adServerId": {
           "title": "Ad Server Identifier",
           "type": "string",
           "description": "Identifier for the Ad Server providing this Ad.",
-          "meta:titleId": "advertisement##dsp:adServerId##title##61671",
-          "meta:descriptionId": "advertisement##dsp:adServerId##description##15571"
+          "meta:titleId": "advertisement##dsp:adServerId##title##18041",
+          "meta:descriptionId": "advertisement##dsp:adServerId##description##31821"
         },
         "dsp:placementIds": {
           "title": "Placement Ids",
@@ -130,8 +130,8 @@
             "type": "string"
           },
           "description": "List of Placement Ids where this Ad is used.",
-          "meta:titleId": "advertisement##dsp:placementIds##title##15091",
-          "meta:descriptionId": "advertisement##dsp:placementIds##description##60401"
+          "meta:titleId": "advertisement##dsp:placementIds##title##26191",
+          "meta:descriptionId": "advertisement##dsp:placementIds##description##61541"
         }
       }
     }
@@ -148,6 +148,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "advertisement##title##36501",
-  "meta:descriptionId": "advertisement##description##5161"
+  "meta:titleId": "advertisement##title##14041",
+  "meta:descriptionId": "advertisement##description##3571"
 }

@@ -21,23 +21,23 @@
           "items": {
             "$ref": "#/definitions/content-component"
           },
-          "meta:descriptionId": "offer-representation##xdm:components##description##52971"
+          "meta:descriptionId": "offer-representation##xdm:components##description##50951"
         },
         "xdm:channel": {
           "type": "string",
           "format": "uri",
           "title": "Channel",
           "description": "The channel constraint is used to convey not only where the offer will be used but determine the content editor or validator that is used for the offer's representation. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
-          "meta:titleId": "offer-representation##xdm:channel##title##57831",
-          "meta:descriptionId": "offer-representation##xdm:channel##description##13801"
+          "meta:titleId": "offer-representation##xdm:channel##title##93801",
+          "meta:descriptionId": "offer-representation##xdm:channel##description##99581"
         },
         "xdm:placement": {
           "type": "string",
           "format": "uri",
           "title": "Placement",
           "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
-          "meta:titleId": "offer-representation##xdm:placement##title##27881",
-          "meta:descriptionId": "offer-representation##xdm:placement##description##23591"
+          "meta:titleId": "offer-representation##xdm:placement##title##82901",
+          "meta:descriptionId": "offer-representation##xdm:placement##description##551"
         }
       }
     },
@@ -56,8 +56,8 @@
         "https://ns.adobe.com/experience/offer-management/content-component-html": "HTML component",
         "https://ns.adobe.com/experience/offer-management/content-component-imagelink": "Image and click link component"
       },
-      "meta:titleId": "offer-representation##content-component-type##title##86981",
-      "meta:descriptionId": "offer-representation##content-component-type##description##92911"
+      "meta:titleId": "offer-representation##content-component-type##title##23551",
+      "meta:descriptionId": "offer-representation##content-component-type##description##13851"
     },
     "content-component": {
       "allOf": [
@@ -71,7 +71,7 @@
             "@type": {
               "$ref": "#/definitions/content-component-type",
               "description": "Type of the component. Acts as processing hint for the client. When the experience is assembled the composer will look for the component(s) that have a specific type.",
-              "meta:descriptionId": "offer-representation##@type##description##81041"
+              "meta:descriptionId": "offer-representation##@type##description##891"
             },
             "dc:format": {
               "meta:usereditable": false,
@@ -80,8 +80,8 @@
               "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
               "examples": ["application/vnd.adobe.photoshop"],
               "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).",
-              "meta:titleId": "offer-representation##dc:format##title##89531",
-              "meta:descriptionId": "offer-representation##dc:format##description##94081"
+              "meta:titleId": "offer-representation##dc:format##title##1951",
+              "meta:descriptionId": "offer-representation##dc:format##description##73111"
             },
             "dc:language": {
               "meta:usereditable": false,
@@ -93,13 +93,13 @@
               },
               "description": "The language or languages of the resource.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
               "examples": ["\n", "pt-BR", "es-ES"],
-              "meta:titleId": "offer-representation##dc:language##title##9991",
-              "meta:descriptionId": "offer-representation##dc:language##description##66121"
+              "meta:titleId": "offer-representation##dc:language##title##20331",
+              "meta:descriptionId": "offer-representation##dc:language##description##93491"
             },
             "repo:name": {
               "type": "string",
               "description": "Some hint about where to locate the repository that stores the external asset by the \"repo:id\".",
-              "meta:descriptionId": "offer-representation##repo:name##description##21961"
+              "meta:descriptionId": "offer-representation##repo:name##description##41211"
             },
             "repo:id": {
               "type": "string",
@@ -109,7 +109,7 @@
               "examples": [
                 "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
               ],
-              "meta:descriptionId": "offer-representation##repo:id##description##6511"
+              "meta:descriptionId": "offer-representation##repo:id##description##49401"
             },
             "repo:resolveURL": {
               "type": "string",
@@ -120,10 +120,10 @@
               "examples": [
                 "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
               ],
-              "meta:descriptionId": "offer-representation##repo:resolveURL##description##2331"
+              "meta:descriptionId": "offer-representation##repo:resolveURL##description##74851"
             }
           },
-          "meta:descriptionId": "offer-representation##0##description##70711"
+          "meta:descriptionId": "offer-representation##0##description##54201"
         },
         {
           "required": ["@type", "dc:format"]
@@ -140,6 +140,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "offer-representation##title##21711",
-  "meta:descriptionId": "offer-representation##description##28381"
+  "meta:titleId": "offer-representation##title##72251",
+  "meta:descriptionId": "offer-representation##description##67891"
 }

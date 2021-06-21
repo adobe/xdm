@@ -18,29 +18,29 @@
           "title": "Displays",
           "type": "integer",
           "description": "Counts the number of times an impression item has been displayed to a visitor.",
-          "meta:titleId": "impressions##xdm:displays##title##84321",
-          "meta:descriptionId": "impressions##xdm:displays##description##28681"
+          "meta:titleId": "impressions##xdm:displays##title##65901",
+          "meta:descriptionId": "impressions##xdm:displays##description##94951"
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
           "description": "Tracks the ID of an item in an impression array.",
-          "meta:titleId": "impressions##xdm:ID##title##95891",
-          "meta:descriptionId": "impressions##xdm:ID##description##27811"
+          "meta:titleId": "impressions##xdm:ID##title##35241",
+          "meta:descriptionId": "impressions##xdm:ID##description##40391"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "Tracks the type of impression in an impression array.",
-          "meta:titleId": "impressions##xdm:type##title##27671",
-          "meta:descriptionId": "impressions##xdm:type##description##92941"
+          "meta:titleId": "impressions##xdm:type##title##3631",
+          "meta:descriptionId": "impressions##xdm:type##description##27041"
         },
         "xdm:selected": {
           "title": "Selected",
           "type": "integer",
           "description": "Tracks when a given item in an impression array has been selected or clicked.",
-          "meta:titleId": "impressions##xdm:selected##title##34851",
-          "meta:descriptionId": "impressions##xdm:selected##description##10711"
+          "meta:titleId": "impressions##xdm:selected##title##24671",
+          "meta:descriptionId": "impressions##xdm:selected##description##3681"
         }
       }
     }
@@ -52,6 +52,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "impressions##title##89131",
-  "meta:descriptionId": "impressions##description##21291"
+  "meta:titleId": "impressions##title##37121",
+  "meta:descriptionId": "impressions##description##3001"
 }

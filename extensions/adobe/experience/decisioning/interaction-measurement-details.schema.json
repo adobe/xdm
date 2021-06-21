@@ -25,27 +25,27 @@
               "description": "Indicator for how the observation is mapped into an outcome value",
               "enum": ["direct", "eventTypeValue", "fieldValue", "predicate"],
               "default": "direct",
-              "meta:titleId": "interaction-measurement##xdm:mapping##title##54931",
-              "meta:descriptionId": "interaction-measurement##xdm:mapping##description##82191"
+              "meta:titleId": "interaction-measurement##xdm:mapping##title##82811",
+              "meta:descriptionId": "interaction-measurement##xdm:mapping##description##4281"
             },
             "xdm:value": {
               "type": "string",
               "title": "Observation mapping",
               "description": "The expression or term that defines how the outcome is derived from the observation. The presence and interpretation of this 'value' is based on the 'mapping' type",
-              "meta:titleId": "interaction-measurement##xdm:value##title##46651",
-              "meta:descriptionId": "interaction-measurement##xdm:value##description##67141"
+              "meta:titleId": "interaction-measurement##xdm:value##title##24021",
+              "meta:descriptionId": "interaction-measurement##xdm:value##description##85481"
             },
             "xdm:field": {
               "type": "string",
               "title": "Field name",
               "description": "The field that contains the observed value.",
               "default": "xdm:eventType",
-              "meta:titleId": "interaction-measurement##xdm:field##title##22811",
-              "meta:descriptionId": "interaction-measurement##xdm:field##description##89711"
+              "meta:titleId": "interaction-measurement##xdm:field##title##54671",
+              "meta:descriptionId": "interaction-measurement##xdm:field##description##2321"
             }
           },
-          "meta:titleId": "interaction-measurement##xdm:observation##title##49251",
-          "meta:descriptionId": "interaction-measurement##xdm:observation##description##24691"
+          "meta:titleId": "interaction-measurement##xdm:observation##title##25671",
+          "meta:descriptionId": "interaction-measurement##xdm:observation##description##46611"
         },
         "xdm:outcome": {
           "type": "object",
@@ -54,21 +54,21 @@
               "type": "string",
               "title": "Outcome identifier",
               "description": "Unique value that identifies the outcome of the interaction (nominal value).",
-              "meta:titleId": "interaction-measurement##@id##title##62731",
-              "meta:descriptionId": "interaction-measurement##@id##description##74001"
+              "meta:titleId": "interaction-measurement##@id##title##46341",
+              "meta:descriptionId": "interaction-measurement##@id##description##10291"
             },
             "xdm:field": {
               "type": "string",
               "title": "Outcome property path",
               "description": "Property path where the outcome is inserted into the XDM event.",
-              "meta:titleId": "interaction-measurement##xdm:field##title##44501",
-              "meta:descriptionId": "interaction-measurement##xdm:field##description##83511"
+              "meta:titleId": "interaction-measurement##xdm:field##title##67681",
+              "meta:descriptionId": "interaction-measurement##xdm:field##description##9501"
             }
           },
           "title": "Interaction outcome measurement",
           "description": "The definition of a measurement for the outcome. A property path and value is specified where a measured outcome for the interaction is recorded.",
-          "meta:titleId": "interaction-measurement##xdm:outcome##title##36451",
-          "meta:descriptionId": "interaction-measurement##xdm:outcome##description##57601"
+          "meta:titleId": "interaction-measurement##xdm:outcome##title##83121",
+          "meta:descriptionId": "interaction-measurement##xdm:outcome##description##53271"
         }
       }
     }
@@ -82,6 +82,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "interaction-measurement##title##90811",
-  "meta:descriptionId": "interaction-measurement##description##48251"
+  "meta:titleId": "interaction-measurement##title##44371",
+  "meta:descriptionId": "interaction-measurement##description##84131"
 }

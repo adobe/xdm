@@ -30,57 +30,57 @@
                   "title": "Card ID",
                   "type": "string",
                   "description": "Tracks the identifier for the card being activated.  This might be different from the card number.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardID##title##4361",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardID##description##92241"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardID##title##38231",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardID##description##68881"
                 },
                 "xdm:cardActivated": {
                   "title": "Card Activated Success",
                   "type": "integer",
                   "description": "Tracks when a card has been successfully activated.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardActivated##title##20301",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardActivated##description##63121"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardActivated##title##53041",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardActivated##description##58721"
                 },
                 "xdm:cardActivationStart": {
                   "title": "Card Activation Started",
                   "type": "integer",
                   "description": "Tracks when a card activation process has been started.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardActivationStart##title##85791",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardActivationStart##description##38451"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardActivationStart##title##42661",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardActivationStart##description##89671"
                 },
                 "xdm:cardCancelled": {
                   "title": "Card Cancelled",
                   "type": "integer",
                   "description": "Tracks when a card has been cancelled.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardCancelled##title##49501",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardCancelled##description##11621"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardCancelled##title##31241",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardCancelled##description##51711"
                 },
                 "xdm:cardControlsLocked": {
                   "title": "Card Controls Locked",
                   "type": "integer",
                   "description": "Tracks when a card controls have been locked.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardControlsLocked##title##84991",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardControlsLocked##description##90711"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardControlsLocked##title##62351",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardControlsLocked##description##53921"
                 },
                 "xdm:cardControlsUnlocked": {
                   "title": "Card Controls Unlocked",
                   "type": "integer",
                   "description": "Tracks when a card controls have been unlocked.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardControlsUnlocked##title##36881",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardControlsUnlocked##description##66081"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardControlsUnlocked##title##55561",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardControlsUnlocked##description##78041"
                 },
                 "xdm:cardLocked": {
                   "title": "Card Locked",
                   "type": "integer",
                   "description": "Tracks when a card has been locked.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardLocked##title##83231",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardLocked##description##17691"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardLocked##title##39071",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardLocked##description##83121"
                 },
                 "xdm:cardOrderNew": {
                   "title": "Order New Card",
                   "type": "integer",
                   "description": "Tracks when a card has been requested.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardOrderNew##title##86281",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderNew##description##73511"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardOrderNew##title##19051",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderNew##description##38431"
                 },
                 "xdm:cardOrderType": {
                   "title": "Card Order Type",
@@ -93,8 +93,8 @@
                     "damaged"
                   ],
                   "description": "Tracks the type of card order associated with a card order event.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardOrderType##title##20161",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderType##description##15971"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardOrderType##title##17451",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderType##description##52381"
                 },
                 "xdm:cardType": {
                   "title": "Card Type",
@@ -110,20 +110,20 @@
                     "fsa"
                   ],
                   "description": "Tracks the type of card associated with an event.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardType##title##60991",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardType##description##40411"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardType##title##38051",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardType##description##61851"
                 },
                 "xdm:cardUnlocked": {
                   "title": "Card Unlocked",
                   "type": "integer",
                   "description": "Tracks when a card has been unlocked.",
-                  "meta:titleId": "experienceevent-card-actions##xdm:cardUnlocked##title##57991",
-                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardUnlocked##description##99571"
+                  "meta:titleId": "experienceevent-card-actions##xdm:cardUnlocked##title##6831",
+                  "meta:descriptionId": "experienceevent-card-actions##xdm:cardUnlocked##description##27651"
                 }
               }
             }
           },
-          "meta:descriptionId": "experienceevent-card-actions##xdm:personalFinances##description##4981"
+          "meta:descriptionId": "experienceevent-card-actions##xdm:personalFinances##description##25511"
         }
       }
     }
@@ -135,6 +135,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-07",
-  "meta:titleId": "experienceevent-card-actions##title##87791",
-  "meta:descriptionId": "experienceevent-card-actions##description##34731"
+  "meta:titleId": "experienceevent-card-actions##title##76031",
+  "meta:descriptionId": "experienceevent-card-actions##description##91761"
 }

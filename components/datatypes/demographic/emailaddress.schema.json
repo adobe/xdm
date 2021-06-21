@@ -18,23 +18,23 @@
           "title": "Primary",
           "type": "boolean",
           "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time.",
-          "meta:titleId": "emailaddress##xdm:primary##title##89531",
-          "meta:descriptionId": "emailaddress##xdm:primary##description##10971"
+          "meta:titleId": "emailaddress##xdm:primary##title##97841",
+          "meta:descriptionId": "emailaddress##xdm:primary##description##84561"
         },
         "xdm:address": {
           "title": "Address",
           "type": "string",
           "format": "email",
           "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
-          "meta:titleId": "emailaddress##xdm:address##title##34391",
-          "meta:descriptionId": "emailaddress##xdm:address##description##13831"
+          "meta:titleId": "emailaddress##xdm:address##title##88131",
+          "meta:descriptionId": "emailaddress##xdm:address##description##43341"
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
           "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.",
-          "meta:titleId": "emailaddress##xdm:label##title##45451",
-          "meta:descriptionId": "emailaddress##xdm:label##description##65621"
+          "meta:titleId": "emailaddress##xdm:label##title##17341",
+          "meta:descriptionId": "emailaddress##xdm:label##description##7851"
         },
         "xdm:type": {
           "title": "Type",
@@ -46,8 +46,8 @@
             "work": "Work",
             "education": "Education"
           },
-          "meta:titleId": "emailaddress##xdm:type##title##19101",
-          "meta:descriptionId": "emailaddress##xdm:type##description##96871"
+          "meta:titleId": "emailaddress##xdm:type##title##94481",
+          "meta:descriptionId": "emailaddress##xdm:type##description##19101"
         },
         "xdm:status": {
           "title": "Status",
@@ -61,15 +61,15 @@
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           },
-          "meta:titleId": "emailaddress##xdm:status##title##90631",
-          "meta:descriptionId": "emailaddress##xdm:status##description##58391"
+          "meta:titleId": "emailaddress##xdm:status##title##36371",
+          "meta:descriptionId": "emailaddress##xdm:status##description##1441"
         },
         "xdm:statusReason": {
           "title": "Status reason",
           "type": "string",
           "description": "A description of the current status.",
-          "meta:titleId": "emailaddress##xdm:statusReason##title##56821",
-          "meta:descriptionId": "emailaddress##xdm:statusReason##description##50431"
+          "meta:titleId": "emailaddress##xdm:statusReason##title##85981",
+          "meta:descriptionId": "emailaddress##xdm:statusReason##description##70281"
         }
       }
     }
@@ -84,6 +84,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "emailaddress##title##98671",
-  "meta:descriptionId": "emailaddress##description##64491"
+  "meta:titleId": "emailaddress##title##82021",
+  "meta:descriptionId": "emailaddress##description##39501"
 }

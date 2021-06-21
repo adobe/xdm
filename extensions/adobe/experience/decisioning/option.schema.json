@@ -20,15 +20,15 @@
           "title": "Decision Option ETag",
           "type": "string",
           "description": "The revision that the decision option object was at when the snapshot was taken.",
-          "meta:titleId": "option##repo:etag##title##4201",
-          "meta:descriptionId": "option##repo:etag##description##32991"
+          "meta:titleId": "option##repo:etag##title##39911",
+          "meta:descriptionId": "option##repo:etag##description##24651"
         },
         "https://ns.adobe.com/experience/decisioning/name": {
           "type": "string",
           "title": "Decision Option Name",
           "description": "Option name. The name is displayed in various user interfaces.",
-          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/name##title##7121",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/name##description##80171"
+          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/name##title##67261",
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/name##description##431"
         },
         "https://ns.adobe.com/experience/decisioning/characteristics": {
           "title": "Decision Option Characteristics",
@@ -38,10 +38,10 @@
           "additionalProperties": {
             "type": "string",
             "description": "Value of the property.",
-            "meta:descriptionId": "option##additionalProperties##description##13141"
+            "meta:descriptionId": "option##additionalProperties##description##59371"
           },
-          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/characteristics##title##13631",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/characteristics##description##68211"
+          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/characteristics##title##20461",
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/characteristics##description##97251"
         }
       }
     },
@@ -52,15 +52,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the decision option.",
-          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/optionID##title##5661",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/optionID##description##15261"
+          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/optionID##title##45111",
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/optionID##description##73261"
         },
         "repo:etag": {
           "title": "Decision Option ETag",
           "type": "string",
           "description": "The revision that the decision option object was at when the snapshot was taken.",
-          "meta:titleId": "option##repo:etag##title##62981",
-          "meta:descriptionId": "option##repo:etag##description##18831"
+          "meta:titleId": "option##repo:etag##title##22751",
+          "meta:descriptionId": "option##repo:etag##description##30361"
         }
       }
     },
@@ -74,10 +74,10 @@
             "type": "string",
             "format": "uri-reference",
             "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag",
-            "meta:descriptionId": "option##items##description##98481"
+            "meta:descriptionId": "option##items##description##94361"
           },
-          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/tags##title##45191",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/tags##description##2841"
+          "meta:titleId": "option##https://ns.adobe.com/experience/decisioning/tags##title##72141",
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/tags##description##87791"
         }
       }
     },
@@ -86,12 +86,12 @@
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles.",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/propositionsTotal##description##96171"
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/propositionsTotal##description##51681"
         },
         "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
-          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##72961"
+          "meta:descriptionId": "option##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##40951"
         }
       }
     }
@@ -105,6 +105,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "option##title##97381",
-  "meta:descriptionId": "option##description##23911"
+  "meta:titleId": "option##title##31921",
+  "meta:descriptionId": "option##description##17851"
 }

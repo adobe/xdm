@@ -15,15 +15,15 @@
       "title": "Journey for an entity",
       "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
       "description": "Journey created by marketer for its entities.",
-      "meta:titleId": "orchestrationdetails##xdm:journey##title##82831",
-      "meta:descriptionId": "orchestrationdetails##xdm:journey##description##91251"
+      "meta:titleId": "orchestrationdetails##xdm:journey##title##34751",
+      "meta:descriptionId": "orchestrationdetails##xdm:journey##description##27591"
     },
     "xdm:journeyVersion": {
       "title": "Journey Version for an entity",
       "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
       "description": "Schema for describing the version of a journey, where version holds the state machine.",
-      "meta:titleId": "orchestrationdetails##xdm:journeyVersion##title##87451",
-      "meta:descriptionId": "orchestrationdetails##xdm:journeyVersion##description##48501"
+      "meta:titleId": "orchestrationdetails##xdm:journeyVersion##title##3051",
+      "meta:descriptionId": "orchestrationdetails##xdm:journeyVersion##description##9611"
     },
     "xdm:action": {
       "title": "Action associated with a journey",
@@ -32,8 +32,8 @@
       "required": [
         "xdm:actionID"
       ],
-      "meta:titleId": "orchestrationdetails##xdm:action##title##70501",
-      "meta:descriptionId": "orchestrationdetails##xdm:action##description##83441"
+      "meta:titleId": "orchestrationdetails##xdm:action##title##99611",
+      "meta:descriptionId": "orchestrationdetails##xdm:action##description##39241"
     }
   },
   "required": [
@@ -42,6 +42,6 @@
     "xdm:action"
   ],
   "meta:status": "stable",
-  "meta:titleId": "orchestrationdetails##title##14231",
-  "meta:descriptionId": "orchestrationdetails##description##20131"
+  "meta:titleId": "orchestrationdetails##title##51431",
+  "meta:descriptionId": "orchestrationdetails##description##83771"
 }

@@ -25,12 +25,12 @@
               "xdm:sourceMarketingListID": {
                 "title": "Source Marketing List Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-components##xdm:sourceMarketingListID##title##35921"
+                "meta:titleId": "marketing-list-components##xdm:sourceMarketingListID##title##85801"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-components##xdm:sourceExternalID##title##61901"
+                "meta:titleId": "marketing-list-components##xdm:sourceExternalID##title##91731"
               }
             }
           }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-09-14",
-  "meta:titleId": "marketing-list-components##title##27251",
-  "meta:descriptionId": "marketing-list-components##description##75641"
+  "meta:titleId": "marketing-list-components##title##96731",
+  "meta:descriptionId": "marketing-list-components##description##20951"
 }

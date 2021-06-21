@@ -21,16 +21,16 @@
           "title": "Global Cap",
           "description": "Global cap is a constraint on how many times an offer can be proposed in totality.",
           "minimum": 1,
-          "meta:titleId": "capping-constraint##xdm:globalCap##title##47381",
-          "meta:descriptionId": "capping-constraint##xdm:globalCap##description##49671"
+          "meta:titleId": "capping-constraint##xdm:globalCap##title##32991",
+          "meta:descriptionId": "capping-constraint##xdm:globalCap##description##86641"
         },
         "xdm:profileCap": {
           "type": "integer",
           "title": "Profile Cap",
           "description": "Profile cap is a constraint on how many times an offer can be proposed to a certain profile.",
           "minimum": 1,
-          "meta:titleId": "capping-constraint##xdm:profileCap##title##75891",
-          "meta:descriptionId": "capping-constraint##xdm:profileCap##description##74131"
+          "meta:titleId": "capping-constraint##xdm:profileCap##title##57691",
+          "meta:descriptionId": "capping-constraint##xdm:profileCap##description##21771"
         }
       }
     }
@@ -41,6 +41,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "capping-constraint##title##60001",
-  "meta:descriptionId": "capping-constraint##description##2771"
+  "meta:titleId": "capping-constraint##title##75711",
+  "meta:descriptionId": "capping-constraint##description##51851"
 }

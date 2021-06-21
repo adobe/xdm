@@ -23,22 +23,22 @@
           "title": "opportunity ContactID",
           "description": "A Unique Key describing a combination of OpportunityID and contactID.",
           "type": "string",
-          "meta:titleId": "opportunity-contact-role##xdm:opportunityContactID##title##16691",
-          "meta:descriptionId": "opportunity-contact-role##xdm:opportunityContactID##description##72401"
+          "meta:titleId": "opportunity-contact-role##xdm:opportunityContactID##title##22291",
+          "meta:descriptionId": "opportunity-contact-role##xdm:opportunityContactID##description##59841"
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Opportunity ID unique identifier.",
           "type": "string",
-          "meta:titleId": "opportunity-contact-role##xdm:opportunityID##title##67881",
-          "meta:descriptionId": "opportunity-contact-role##xdm:opportunityID##description##9221"
+          "meta:titleId": "opportunity-contact-role##xdm:opportunityID##title##18281",
+          "meta:descriptionId": "opportunity-contact-role##xdm:opportunityID##description##2761"
         },
         "xdm:contactID": {
           "title": "Contact ID",
           "description": "Contact ID unique identifier.",
           "type": "string",
-          "meta:titleId": "opportunity-contact-role##xdm:contactID##title##34721",
-          "meta:descriptionId": "opportunity-contact-role##xdm:contactID##description##76551"
+          "meta:titleId": "opportunity-contact-role##xdm:contactID##title##88871",
+          "meta:descriptionId": "opportunity-contact-role##xdm:contactID##description##70581"
         }
       }
     }
@@ -63,6 +63,6 @@
     "xdm:contactID"
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "opportunity-contact-role##title##4761",
-  "meta:descriptionId": "opportunity-contact-role##description##18681"
+  "meta:titleId": "opportunity-contact-role##title##80871",
+  "meta:descriptionId": "opportunity-contact-role##description##64521"
 }

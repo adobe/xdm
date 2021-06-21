@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:productViews",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "product-views##@id##description##25171"
+          "meta:descriptionId": "product-views##@id##description##53831"
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: productViews",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "product-views##schema:name##description##3121"
+          "meta:descriptionId": "product-views##schema:name##description##89391"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "product-views##xdm:measurement##description##31801"
+          "meta:descriptionId": "product-views##xdm:measurement##description##42621"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "product-views##title##98041",
-  "meta:descriptionId": "product-views##description##90681"
+  "meta:titleId": "product-views##title##38931",
+  "meta:descriptionId": "product-views##description##65461"
 }

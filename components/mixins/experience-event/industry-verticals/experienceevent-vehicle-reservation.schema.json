@@ -40,145 +40,145 @@
                     "title": "ID",
                     "type": "string",
                     "description": "Tracks the reservation number/identifier.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:ID##title##31091",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:ID##description##31281"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:ID##title##4961",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:ID##description##30831"
                   },
                   "xdm:agentID": {
                     "title": "Agent ID",
                     "type": "string",
                     "description": "Agent or broker responsible for booking the reservation, if applicable.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:agentID##title##80361",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:agentID##description##1821"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:agentID##title##82921",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:agentID##description##15531"
                   },
                   "xdm:ancillaryRevenue": {
                     "title": "Ancillary Revenue",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                     "description": "Protection and equipment revenue associated with a reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:ancillaryRevenue##title##96321",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:ancillaryRevenue##description##44381"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:ancillaryRevenue##title##94861",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:ancillaryRevenue##description##63301"
                   },
                   "xdm:couponCode": {
                     "title": "Coupon Code",
                     "type": "string",
                     "description": "Coupon code associated with the vehicle booking.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:couponCode##title##78181",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:couponCode##description##87171"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:couponCode##title##79981",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:couponCode##description##33101"
                   },
                   "xdm:vehicleDifferentDropoffLocation": {
                     "title": "Different Drop-off Location",
                     "type": "boolean",
                     "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDifferentDropoffLocation##title##36231",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDifferentDropoffLocation##description##47681"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDifferentDropoffLocation##title##73501",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDifferentDropoffLocation##description##11681"
                   },
                   "xdm:discountPercent": {
                     "title": "Discount Percent",
                     "type": "number",
                     "description": "Discount percentage associated with the booking.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:discountPercent##title##8111",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:discountPercent##description##83651"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:discountPercent##title##43391",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:discountPercent##description##37621"
                   },
                   "xdm:dropOffDateTime": {
                     "title": "Drop-off Date & Time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The drop-off date & time of the for the vehicle reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:dropOffDateTime##title##13091",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:dropOffDateTime##description##28581"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:dropOffDateTime##title##96121",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:dropOffDateTime##description##87341"
                   },
                   "xdm:vehicleDropOffLocation": {
                     "title": "Drop-off Location",
                     "type": "string",
                     "description": "Drop-off location of the vehicle.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocation##title##32991",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocation##description##11461"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocation##title##54341",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocation##description##75101"
                   },
                   "xdm:vehicleDropOffLocationCode": {
                     "title": "Drop-off Location Code",
                     "type": "string",
                     "description": "The airport location code for the vehicle drop off.",
                     "pattern": "^[A-Z]{3}$",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocationCode##title##76061",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocationCode##description##97121"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocationCode##title##1521",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleDropOffLocationCode##description##43921"
                   },
                   "xdm:freeCancelation": {
                     "title": "Free Cancelation",
                     "type": "boolean",
                     "description": "Yes/no if the car booking has a free cancellation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:freeCancelation##title##61361",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:freeCancelation##description##93241"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:freeCancelation##title##51191",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:freeCancelation##description##15061"
                   },
                   "xdm:guestID": {
                     "title": "Guest ID",
                     "type": "string",
                     "description": "Guest ID associated with the vehicle booking.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:guestID##title##34271",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:guestID##description##7021"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:guestID##title##61641",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:guestID##description##11081"
                   },
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
                     "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:loyaltyID##title##72371",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:loyaltyID##description##5751"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:loyaltyID##title##16281",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:loyaltyID##description##67111"
                   },
                   "xdm:payLaterEligible": {
                     "title": "Pay Later Eligible",
                     "type": "boolean",
                     "description": "Yes/no if the booking is eligible to be paid later.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:payLaterEligible##title##17991",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:payLaterEligible##description##92151"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:payLaterEligible##title##79931",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:payLaterEligible##description##18931"
                   },
                   "xdm:pickUpDateTime": {
                     "title": "Pick-up Date & Time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The pick-up date & time of the for the vehicle reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:pickUpDateTime##title##87411",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:pickUpDateTime##description##5171"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:pickUpDateTime##title##38181",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:pickUpDateTime##description##23001"
                   },
                   "xdm:vehiclePickUpLocation": {
                     "title": "Pick-up Location",
                     "type": "string",
                     "description": "Pick-up location of the vehicle.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocation##title##14521",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocation##description##4921"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocation##title##71781",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocation##description##81771"
                   },
                   "xdm:vehiclePickUpLocationCode": {
                     "title": "Pick-up Location Code",
                     "type": "string",
                     "description": "The airport location code for the vehicle pick up.",
                     "pattern": "^[A-Z]{3}$",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocationCode##title##88031",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocationCode##description##2461"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocationCode##title##78271",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehiclePickUpLocationCode##description##54341"
                   },
                   "xdm:prePaid": {
                     "title": "Pre Paid",
                     "type": "boolean",
                     "description": "Yes/no if the booking is pre-paid",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:prePaid##title##11281",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:prePaid##description##92551"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:prePaid##title##59291",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:prePaid##description##95961"
                   },
                   "xdm:vin": {
                     "title": "Vehicle Identification Number",
                     "type": "string",
                     "description": "Captures the vehicle identification number (VIN) of the vehicle being rented.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vin##title##17001",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vin##description##9021"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vin##title##39591",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vin##description##27971"
                   },
                   "xdm:refundable": {
                     "title": "Refundable",
                     "type": "boolean",
                     "description": "Yes/no if the car booking is refundable.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:refundable##title##73251",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:refundable##description##58971"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:refundable##title##89711",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:refundable##description##90371"
                   },
                   "xdm:rentersAge": {
                     "title": "Renter's Age",
                     "type": "integer",
                     "description": "Age of the renter on the vehicle reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:rentersAge##title##30661",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:rentersAge##description##60001"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:rentersAge##title##351",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:rentersAge##description##69521"
                   },
                   "xdm:salesChannel": {
                     "title": "Sales Channel",
@@ -192,8 +192,8 @@
                       "thirdParty": "Third-Party"
                     },
                     "description": "Sales channel from which the reservation was booked.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:salesChannel##title##76041",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:salesChannel##description##14551"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:salesChannel##title##86251",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:salesChannel##description##39201"
                   },
                   "xdm:status": {
                     "title": "Status",
@@ -205,8 +205,8 @@
                       "pending": "Pending"
                     },
                     "description": "The status of the vehicle reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:status##title##7051",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:status##description##29651"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:status##title##94551",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:status##description##76631"
                   },
                   "xdm:vehicleClass": {
                     "title": "Vehicle Class",
@@ -222,73 +222,73 @@
                       "minivan": "Minivan"
                     },
                     "description": "The class/category of vehicle being reserved.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleClass##title##84321",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleClass##description##62221"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:vehicleClass##title##28921",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:vehicleClass##description##13101"
                   },
                   "xdm:cancellation": {
                     "title": "Cancellation",
                     "type": "integer",
                     "description": "Tracked when a reservation has been cancelled.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:cancellation##title##47071",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:cancellation##description##23301"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:cancellation##title##62971",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:cancellation##description##60541"
                   },
                   "xdm:confirmationNumber": {
                     "title": "Confirmation Number",
                     "type": "string",
                     "description": "Tracks the reservation confirmation number/identifier.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:confirmationNumber##title##15741",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:confirmationNumber##description##88921"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:confirmationNumber##title##58211",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:confirmationNumber##description##37211"
                   },
                   "xdm:created": {
                     "title": "Created",
                     "type": "integer",
                     "description": "Tracked when a reservation has been created.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:created##title##78171",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:created##description##89121"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:created##title##78201",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:created##description##98741"
                   },
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
                     "description": "Currency code used to make the purchase. ISO 4217 currency code.",
                     "pattern": "^[A-Z]{3}$",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:currencyCode##title##51071",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:currencyCode##description##73041"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:currencyCode##title##65281",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:currencyCode##description##85921"
                   },
                   "xdm:length": {
                     "title": "Length",
                     "type": "integer",
                     "description": "Tracks the total number of days for a reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:length##title##421",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:length##description##27021"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:length##title##3381",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:length##description##53641"
                   },
                   "xdm:modification": {
                     "title": "Modification",
                     "type": "integer",
                     "description": "Captured when a reservation has been modified.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:modification##title##22111",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:modification##description##49521"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:modification##title##87021",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:modification##description##94161"
                   },
                   "xdm:modificationDate": {
                     "title": "Modification Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "Tracks when a reservation has been modified.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:modificationDate##title##59721",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:modificationDate##description##6191"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:modificationDate##title##61231",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:modificationDate##description##65711"
                   },
                   "xdm:numberOfAdults": {
                     "title": "Number of Adults",
                     "type": "integer",
                     "description": "Captures the number of adults associated with the reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:numberOfAdults##title##51051",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:numberOfAdults##description##37831"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:numberOfAdults##title##28711",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:numberOfAdults##description##83711"
                   },
                   "xdm:numberOfChildren": {
                     "title": "Number of Children",
                     "type": "integer",
                     "description": "Captures the number of children associated with the reservation.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:numberOfChildren##title##16081",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:numberOfChildren##description##15141"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:numberOfChildren##title##10011",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:numberOfChildren##description##52091"
                   },
                   "xdm:purpose": {
                     "title": "Purpose",
@@ -298,8 +298,8 @@
                       "personal": "Personal"
                     },
                     "description": "Tracks the purpose of the reservation, typically either business or personal.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:purpose##title##55931",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:purpose##description##3231"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:purpose##title##91921",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:purpose##description##58551"
                   },
                   "xdm:tripType": {
                     "title": "Trip Type",
@@ -310,15 +310,15 @@
                       "multiCity": "Multi-City"
                     },
                     "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
-                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:tripType##title##13221",
-                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:tripType##description##88551"
+                    "meta:titleId": "experienceevent-vehicle-reservation##xdm:tripType##title##31241",
+                    "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:tripType##description##9181"
                   }
                 },
-                "meta:descriptionId": "experienceevent-vehicle-reservation##items##description##55051"
+                "meta:descriptionId": "experienceevent-vehicle-reservation##items##description##55891"
               }
             }
           },
-          "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:reservations##description##55181"
+          "meta:descriptionId": "experienceevent-vehicle-reservation##xdm:reservations##description##31971"
         }
       }
     }
@@ -333,6 +333,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-10",
-  "meta:titleId": "experienceevent-vehicle-reservation##title##14221",
-  "meta:descriptionId": "experienceevent-vehicle-reservation##description##57681"
+  "meta:titleId": "experienceevent-vehicle-reservation##title##53371",
+  "meta:descriptionId": "experienceevent-vehicle-reservation##description##9991"
 }

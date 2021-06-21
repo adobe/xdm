@@ -18,8 +18,8 @@
           "type": "string",
           "title": "Description",
           "description": "Criterion description. It is used to convey human readable intentions on how or why this criterion was constructed and how it is affecting the decision.",
-          "meta:titleId": "criterion-details##xdm:description##title##95431",
-          "meta:descriptionId": "criterion-details##xdm:description##description##57081"
+          "meta:titleId": "criterion-details##xdm:description##title##64781",
+          "meta:descriptionId": "criterion-details##xdm:description##description##86121"
         },
         "xdm:placements": {
           "type": "array",
@@ -30,33 +30,33 @@
             "format": "uri-reference",
             "title": "Placement Identifier",
             "description": "A reference to a placement entity. The value is the URI (@id) of the placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement",
-            "meta:titleId": "criterion-details##items##title##38031",
-            "meta:descriptionId": "criterion-details##items##description##61451"
+            "meta:titleId": "criterion-details##items##title##56201",
+            "meta:descriptionId": "criterion-details##items##description##58471"
           },
           "minItems": 1,
-          "meta:titleId": "criterion-details##xdm:placements##title##32871",
-          "meta:descriptionId": "criterion-details##xdm:placements##description##46841"
+          "meta:titleId": "criterion-details##xdm:placements##title##40301",
+          "meta:descriptionId": "criterion-details##xdm:placements##description##68001"
         },
         "xdm:optionSelection": {
           "$ref": "https://ns.adobe.com/experience/decisioning/option-selection-details",
           "title": "Option Selection",
           "description": "The option selection defines the validity/applicability of options in this context.",
-          "meta:titleId": "criterion-details##xdm:optionSelection##title##13571",
-          "meta:descriptionId": "criterion-details##xdm:optionSelection##description##47491"
+          "meta:titleId": "criterion-details##xdm:optionSelection##title##54651",
+          "meta:descriptionId": "criterion-details##xdm:optionSelection##description##36451"
         },
         "xdm:profileConstraints": {
           "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
           "title": "Profile Constraint",
           "description": "The profile constraint decides if an option selection is eligible for this profile identity at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection.",
-          "meta:titleId": "criterion-details##xdm:profileConstraints##title##57991",
-          "meta:descriptionId": "criterion-details##xdm:profileConstraints##description##23511"
+          "meta:titleId": "criterion-details##xdm:profileConstraints##title##36841",
+          "meta:descriptionId": "criterion-details##xdm:profileConstraints##description##29151"
         },
         "xdm:ranking": {
           "$ref": "https://ns.adobe.com/experience/decisioning/ranking-details",
           "title": "Ranking Details",
           "description": "Rank (priority). Defines how the \"best option\" is determined given the context of the decision criterion. Among all the selected options that meet the profile constraints, the ranking will decide the top (or top N) option(s) to be proposed.",
-          "meta:titleId": "criterion-details##xdm:ranking##title##49811",
-          "meta:descriptionId": "criterion-details##xdm:ranking##description##22091"
+          "meta:titleId": "criterion-details##xdm:ranking##title##94431",
+          "meta:descriptionId": "criterion-details##xdm:ranking##description##15811"
         }
       },
       "required": ["xdm:placements", "xdm:optionSelection"]
@@ -68,6 +68,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "criterion-details##title##84531",
-  "meta:descriptionId": "criterion-details##description##39901"
+  "meta:titleId": "criterion-details##title##6801",
+  "meta:descriptionId": "criterion-details##description##28461"
 }

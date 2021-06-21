@@ -26,22 +26,22 @@
               "title": "Primary Subscriber",
               "$ref": "https://ns.adobe.com/xdm/context/person",
               "description": "The owner of the subscription.",
-              "meta:titleId": "profile-telecom-subscription##xdm:primarySubscriber##title##18011",
-              "meta:descriptionId": "profile-telecom-subscription##xdm:primarySubscriber##description##29581"
+              "meta:titleId": "profile-telecom-subscription##xdm:primarySubscriber##title##57361",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:primarySubscriber##description##88581"
             },
             "xdm:primaryPartyID": {
               "title": "Primary Party ID",
               "type": "string",
               "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number.",
-              "meta:titleId": "profile-telecom-subscription##xdm:primaryPartyID##title##72771",
-              "meta:descriptionId": "profile-telecom-subscription##xdm:primaryPartyID##description##48941"
+              "meta:titleId": "profile-telecom-subscription##xdm:primaryPartyID##title##79411",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:primaryPartyID##description##91311"
             },
             "xdm:bundleName": {
               "title": "Bundle Name",
               "type": "string",
               "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + Media'.",
-              "meta:titleId": "profile-telecom-subscription##xdm:bundleName##title##9341",
-              "meta:descriptionId": "profile-telecom-subscription##xdm:bundleName##description##99851"
+              "meta:titleId": "profile-telecom-subscription##xdm:bundleName##title##99971",
+              "meta:descriptionId": "profile-telecom-subscription##xdm:bundleName##description##72741"
             },
             "xdm:internetSubscription": {
               "type": "array",
@@ -53,15 +53,15 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##30411",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##91561"
+                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##70661",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##39231"
                   },
                   "xdm:dataCap": {
                     "title": "Data Cap",
                     "type": "integer",
                     "description": "Captures the data cap limit for the account, in megabytes (MB).",
-                    "meta:titleId": "profile-telecom-subscription##xdm:dataCap##title##60751",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:dataCap##description##81871"
+                    "meta:titleId": "profile-telecom-subscription##xdm:dataCap##title##19681",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:dataCap##description##76681"
                   },
                   "xdm:connectionType": {
                     "title": "Connection Type",
@@ -75,33 +75,33 @@
                       "satellite": "Satellite"
                     },
                     "description": "Tracks the type of connection type for the subscription.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:connectionType##title##33851",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:connectionType##description##29201"
+                    "meta:titleId": "profile-telecom-subscription##xdm:connectionType##title##11121",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:connectionType##description##32761"
                   },
                   "xdm:downloadSpeed": {
                     "title": "Download Speed",
                     "type": "integer",
                     "description": "Records the maximum download speed available for the subscription, in megabytes (MB).",
-                    "meta:titleId": "profile-telecom-subscription##xdm:downloadSpeed##title##55381",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:downloadSpeed##description##38461"
+                    "meta:titleId": "profile-telecom-subscription##xdm:downloadSpeed##title##88271",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:downloadSpeed##description##24951"
                   },
                   "xdm:uploadSpeed": {
                     "title": "Upload Speed",
                     "type": "integer",
                     "description": "Records the maximum upload speed available for the subscription, in megabytes (MB).",
-                    "meta:titleId": "profile-telecom-subscription##xdm:uploadSpeed##title##76221",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:uploadSpeed##description##25371"
+                    "meta:titleId": "profile-telecom-subscription##xdm:uploadSpeed##title##38021",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:uploadSpeed##description##68131"
                   },
                   "xdm:selfSetup": {
                     "title": "Self-Setup",
                     "type": "boolean",
                     "description": "Flags if a customer is eligible for internet setup without a technican visit.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:selfSetup##title##66301",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:selfSetup##description##16941"
+                    "meta:titleId": "profile-telecom-subscription##xdm:selfSetup##title##81991",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:selfSetup##description##27141"
                   }
                 }
               },
-              "meta:descriptionId": "profile-telecom-subscription##xdm:internetSubscription##description##71251"
+              "meta:descriptionId": "profile-telecom-subscription##xdm:internetSubscription##description##16961"
             },
             "xdm:landlineSubscription": {
               "type": "array",
@@ -113,89 +113,89 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##16601",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##85751"
+                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##74961",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##41501"
                   },
                   "xdm:phoneNumber": {
                     "title": "Phone Number",
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                     "description": "Captures the phone number assigned to this device.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:phoneNumber##title##89671",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:phoneNumber##description##85951"
+                    "meta:titleId": "profile-telecom-subscription##xdm:phoneNumber##title##38641",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:phoneNumber##description##77351"
                   },
                   "xdm:minutes": {
                     "title": "Minutes",
                     "type": "integer",
                     "description": "Number of monthly minutes available within the subscription.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:minutes##title##1961",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:minutes##description##63711"
+                    "meta:titleId": "profile-telecom-subscription##xdm:minutes##title##4821",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:minutes##description##96081"
                   },
                   "xdm:voicemail": {
                     "title": "Voicemail",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Voicemail.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:voicemail##title##2011",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:voicemail##description##9141"
+                    "meta:titleId": "profile-telecom-subscription##xdm:voicemail##title##57351",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:voicemail##description##49531"
                   },
                   "xdm:callForwarding": {
                     "title": "Call Forwarding",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Call Forwarding.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:callForwarding##title##65481",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:callForwarding##description##65421"
+                    "meta:titleId": "profile-telecom-subscription##xdm:callForwarding##title##26571",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:callForwarding##description##95801"
                   },
                   "xdm:callerID": {
                     "title": "Caller ID",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Caller ID.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:callerID##title##37331",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:callerID##description##85291"
+                    "meta:titleId": "profile-telecom-subscription##xdm:callerID##title##89771",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:callerID##description##38801"
                   },
                   "xdm:callBlocking": {
                     "title": "Call Blocking",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Call Blocking.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:callBlocking##title##15181",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:callBlocking##description##32471"
+                    "meta:titleId": "profile-telecom-subscription##xdm:callBlocking##title##47131",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:callBlocking##description##84641"
                   },
                   "xdm:callWaiting": {
                     "title": "Call Waiting",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Call Waiting.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:callWaiting##title##25411",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:callWaiting##description##48581"
+                    "meta:titleId": "profile-telecom-subscription##xdm:callWaiting##title##23591",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:callWaiting##description##6981"
                   },
                   "xdm:threeWayCalling": {
                     "title": "Three-Way Dialing",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Three-Way Dialing.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:threeWayCalling##title##31701",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:threeWayCalling##description##17401"
+                    "meta:titleId": "profile-telecom-subscription##xdm:threeWayCalling##title##36581",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:threeWayCalling##description##31531"
                   },
                   "xdm:internationalCalling": {
                     "title": "International Calling",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include International Calling.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:internationalCalling##title##16861",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:internationalCalling##description##11261"
+                    "meta:titleId": "profile-telecom-subscription##xdm:internationalCalling##title##76861",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:internationalCalling##description##67511"
                   },
                   "xdm:unlimitedLocalCalling": {
                     "title": "Unlimited Local Calling",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Unlimited Local Calling.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##title##44251",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##description##16691"
+                    "meta:titleId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##title##5421",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##description##37341"
                   },
                   "xdm:unlimitedDomesticLongDistance": {
                     "title": "Unlimited Domestic Long Distance",
                     "type": "boolean",
                     "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##title##84091",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##description##34101"
+                    "meta:titleId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##title##80041",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##description##1591"
                   }
                 }
               },
-              "meta:descriptionId": "profile-telecom-subscription##xdm:landlineSubscription##description##36101"
+              "meta:descriptionId": "profile-telecom-subscription##xdm:landlineSubscription##description##16561"
             },
             "xdm:mediaSubscription": {
               "type": "array",
@@ -207,15 +207,15 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##8881",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##22261"
+                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##42571",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##99671"
                   },
                   "xdm:channels": {
                     "title": "Channels",
                     "type": "integer",
                     "description": "Records the number of channels included with the media subscription.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:channels##title##82761",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:channels##description##89901"
+                    "meta:titleId": "profile-telecom-subscription##xdm:channels##title##71041",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:channels##description##65011"
                   },
                   "xdm:streamingServices": {
                     "title": "Streaming Services",
@@ -228,31 +228,31 @@
                           "title": "Service Name",
                           "type": "integer",
                           "description": "Records the name of the streaming service.",
-                          "meta:titleId": "profile-telecom-subscription##xdm:serviceName##title##15491",
-                          "meta:descriptionId": "profile-telecom-subscription##xdm:serviceName##description##34921"
+                          "meta:titleId": "profile-telecom-subscription##xdm:serviceName##title##8311",
+                          "meta:descriptionId": "profile-telecom-subscription##xdm:serviceName##description##35571"
                         },
                         "xdm:promotionalAddition": {
                           "title": "Promotional Addition",
                           "type": "boolean",
                           "description": "Flags if the streaming service was added as part of a promotion.",
-                          "meta:titleId": "profile-telecom-subscription##xdm:promotionalAddition##title##78511",
-                          "meta:descriptionId": "profile-telecom-subscription##xdm:promotionalAddition##description##69921"
+                          "meta:titleId": "profile-telecom-subscription##xdm:promotionalAddition##title##82011",
+                          "meta:descriptionId": "profile-telecom-subscription##xdm:promotionalAddition##description##72111"
                         },
                         "xdm:promotionLength": {
                           "title": "Promotion Length",
                           "type": "integer",
                           "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion.",
-                          "meta:titleId": "profile-telecom-subscription##xdm:promotionLength##title##41071",
-                          "meta:descriptionId": "profile-telecom-subscription##xdm:promotionLength##description##74431"
+                          "meta:titleId": "profile-telecom-subscription##xdm:promotionLength##title##67611",
+                          "meta:descriptionId": "profile-telecom-subscription##xdm:promotionLength##description##28791"
                         }
                       }
                     },
-                    "meta:titleId": "profile-telecom-subscription##xdm:streamingServices##title##2721",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:streamingServices##description##2221"
+                    "meta:titleId": "profile-telecom-subscription##xdm:streamingServices##title##23361",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:streamingServices##description##83861"
                   }
                 }
               },
-              "meta:descriptionId": "profile-telecom-subscription##xdm:mediaSubscription##description##97671"
+              "meta:descriptionId": "profile-telecom-subscription##xdm:mediaSubscription##description##99481"
             },
             "xdm:mobileSubscription": {
               "type": "array",
@@ -264,40 +264,40 @@
                     "title": "Subscription Details",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
                     "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##18501",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##52121"
+                    "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##31111",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##96971"
                   },
                   "xdm:earlyUpgradeEnrollment": {
                     "title": "Early Upgrade Enrollment",
                     "type": "boolean",
                     "description": "Captures if the customer opts into early upgrades.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:earlyUpgradeEnrollment##title##20041",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:earlyUpgradeEnrollment##description##36801"
+                    "meta:titleId": "profile-telecom-subscription##xdm:earlyUpgradeEnrollment##title##29051",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:earlyUpgradeEnrollment##description##26251"
                   },
                   "xdm:planLevel": {
                     "title": "Plan Level",
                     "type": "string",
                     "description": "Captures the name of the mobile plan assigned to this device.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:planLevel##title##37041",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:planLevel##description##8451"
+                    "meta:titleId": "profile-telecom-subscription##xdm:planLevel##title##95111",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:planLevel##description##60941"
                   },
                   "xdm:phoneNumber": {
                     "title": "Phone Number",
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                     "description": "Captures the phone number assigned to this device.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:phoneNumber##title##94851",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:phoneNumber##description##27411"
+                    "meta:titleId": "profile-telecom-subscription##xdm:phoneNumber##title##90451",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:phoneNumber##description##37431"
                   },
                   "xdm:portedNumber": {
                     "title": "Ported Number",
                     "type": "boolean",
                     "description": "Captures if the customer ports their number from another carrier.",
-                    "meta:titleId": "profile-telecom-subscription##xdm:portedNumber##title##86441",
-                    "meta:descriptionId": "profile-telecom-subscription##xdm:portedNumber##description##13381"
+                    "meta:titleId": "profile-telecom-subscription##xdm:portedNumber##title##33571",
+                    "meta:descriptionId": "profile-telecom-subscription##xdm:portedNumber##description##45801"
                   }
                 }
               },
-              "meta:descriptionId": "profile-telecom-subscription##xdm:mobileSubscription##description##45641"
+              "meta:descriptionId": "profile-telecom-subscription##xdm:mobileSubscription##description##91091"
             }
           }
         }
@@ -310,6 +310,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "profile-telecom-subscription##title##21061",
-  "meta:descriptionId": "profile-telecom-subscription##description##69931"
+  "meta:titleId": "profile-telecom-subscription##title##93741",
+  "meta:descriptionId": "profile-telecom-subscription##description##13011"
 }

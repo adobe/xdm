@@ -33,16 +33,16 @@
               "title": "Claims ID",
               "type": "string",
               "description": "Unique identifier for the claim.",
-              "meta:titleId": "experienceevent-claim-details##xdm:ID##title##49081",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:ID##description##94991"
+              "meta:titleId": "experienceevent-claim-details##xdm:ID##title##76501",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:ID##description##90761"
             },
             "xdm:startDate": {
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
               "description": "Date the claim was successfully submitted.",
-              "meta:titleId": "experienceevent-claim-details##xdm:startDate##title##50641",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:startDate##description##64861"
+              "meta:titleId": "experienceevent-claim-details##xdm:startDate##title##60771",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:startDate##description##7741"
             },
             "xdm:status": {
               "title": "Status",
@@ -54,8 +54,8 @@
                 "declined"
               ],
               "description": "Captures the status of the claim for any given point in the application process.",
-              "meta:titleId": "experienceevent-claim-details##xdm:status##title##71691",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:status##description##83881"
+              "meta:titleId": "experienceevent-claim-details##xdm:status##title##95051",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:status##description##12221"
             },
             "xdm:type": {
               "title": "Type",
@@ -73,33 +73,33 @@
                 "earthquake"
               ],
               "description": "Type of claim submitted.",
-              "meta:titleId": "experienceevent-claim-details##xdm:type##title##23211",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:type##description##49941"
+              "meta:titleId": "experienceevent-claim-details##xdm:type##title##26681",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:type##description##82511"
             },
             "xdm:policyID": {
               "title": "Policy ID",
               "type": "string",
               "description": "Policy Identifier.",
-              "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##38581",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##86161"
+              "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##42321",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##41731"
             },
             "xdm:benefitAmount": {
               "title": "Benefit Amount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Captures the benefit amount.",
-              "meta:titleId": "experienceevent-claim-details##xdm:benefitAmount##title##64031",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:benefitAmount##description##72521"
+              "meta:titleId": "experienceevent-claim-details##xdm:benefitAmount##title##69051",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:benefitAmount##description##43301"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-claim-details##xdm:steps##title##47511",
-              "meta:descriptionId": "experienceevent-claim-details##xdm:steps##description##36541"
+              "meta:titleId": "experienceevent-claim-details##xdm:steps##title##58941",
+              "meta:descriptionId": "experienceevent-claim-details##xdm:steps##description##34461"
             }
           },
-          "meta:descriptionId": "experienceevent-claim-details##xdm:claims##description##44481"
+          "meta:descriptionId": "experienceevent-claim-details##xdm:claims##description##1721"
         }
       }
     }
@@ -111,6 +111,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-claim-details##title##52911",
-  "meta:descriptionId": "experienceevent-claim-details##description##67411"
+  "meta:titleId": "experienceevent-claim-details##title##27951",
+  "meta:descriptionId": "experienceevent-claim-details##description##79931"
 }

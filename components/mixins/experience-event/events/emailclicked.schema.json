@@ -29,39 +29,39 @@
               "title": "Mailing ID",
               "type": "string",
               "description": "Unique ID of the email asset.",
-              "meta:titleId": "emailclicked##xdm:mailingID##title##78401",
-              "meta:descriptionId": "emailclicked##xdm:mailingID##description##73881"
+              "meta:titleId": "emailclicked##xdm:mailingID##title##29381",
+              "meta:descriptionId": "emailclicked##xdm:mailingID##description##82681"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
               "description": "Friendly name of the email asset.",
-              "meta:titleId": "emailclicked##xdm:mailingName##title##89821",
-              "meta:descriptionId": "emailclicked##xdm:mailingName##description##62011"
+              "meta:titleId": "emailclicked##xdm:mailingName##title##58951",
+              "meta:descriptionId": "emailclicked##xdm:mailingName##description##57051"
             },
             "xdm:linkURL": {
               "title": "Link URL",
               "type": "string",
               "description": "URL of the link clicked.",
-              "meta:titleId": "emailclicked##xdm:linkURL##title##45101",
-              "meta:descriptionId": "emailclicked##xdm:linkURL##description##74411"
+              "meta:titleId": "emailclicked##xdm:linkURL##title##23961",
+              "meta:descriptionId": "emailclicked##xdm:linkURL##description##30671"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
               "description": "Unique ID of the test variant of the email asset.",
-              "meta:titleId": "emailclicked##xdm:testVariantID##title##6701",
-              "meta:descriptionId": "emailclicked##xdm:testVariantID##description##70671"
+              "meta:titleId": "emailclicked##xdm:testVariantID##title##30501",
+              "meta:descriptionId": "emailclicked##xdm:testVariantID##description##81471"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
               "description": "Friendly name of the test variant of the email asset.",
-              "meta:titleId": "emailclicked##xdm:testVariantName##title##98561",
-              "meta:descriptionId": "emailclicked##xdm:testVariantName##description##81791"
+              "meta:titleId": "emailclicked##xdm:testVariantName##title##47231",
+              "meta:descriptionId": "emailclicked##xdm:testVariantName##description##51671"
             }
           },
-          "meta:titleId": "emailclicked##xdm:directMarketing##title##46111"
+          "meta:titleId": "emailclicked##xdm:directMarketing##title##37601"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -72,8 +72,8 @@
               "title": "Operating system",
               "type": "string",
               "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
-              "meta:titleId": "emailclicked##xdm:operatingSystem##title##12611",
-              "meta:descriptionId": "emailclicked##xdm:operatingSystem##description##68561"
+              "meta:titleId": "emailclicked##xdm:operatingSystem##title##70611",
+              "meta:descriptionId": "emailclicked##xdm:operatingSystem##description##48071"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -84,16 +84,16 @@
                   "title": "User agent",
                   "type": "string",
                   "description": "The HTTP user-agent string from the client request.",
-                  "meta:titleId": "emailclicked##xdm:userAgent##title##19481",
-                  "meta:descriptionId": "emailclicked##xdm:userAgent##description##65401"
+                  "meta:titleId": "emailclicked##xdm:userAgent##title##10841",
+                  "meta:descriptionId": "emailclicked##xdm:userAgent##description##671"
                 }
               },
-              "meta:titleId": "emailclicked##xdm:browserDetails##title##72291",
-              "meta:descriptionId": "emailclicked##xdm:browserDetails##description##32241"
+              "meta:titleId": "emailclicked##xdm:browserDetails##title##21211",
+              "meta:descriptionId": "emailclicked##xdm:browserDetails##description##78571"
             }
           },
-          "meta:titleId": "emailclicked##xdm:environment##title##4931",
-          "meta:descriptionId": "emailclicked##xdm:environment##description##5651"
+          "meta:titleId": "emailclicked##xdm:environment##title##19621",
+          "meta:descriptionId": "emailclicked##xdm:environment##description##54931"
         },
         "xdm:device": {
           "title": "Device",
@@ -103,18 +103,18 @@
               "title": "Is Mobile Device",
               "type": "boolean",
               "description": "Boolean that indicates if device used was a mobile device.",
-              "meta:titleId": "emailclicked##xdm:isMobileDevice##title##19771",
-              "meta:descriptionId": "emailclicked##xdm:isMobileDevice##description##52611"
+              "meta:titleId": "emailclicked##xdm:isMobileDevice##title##17351",
+              "meta:descriptionId": "emailclicked##xdm:isMobileDevice##description##49501"
             },
             "xdm:model": {
               "title": "Model",
               "type": "string",
               "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
-              "meta:titleId": "emailclicked##xdm:model##title##75751",
-              "meta:descriptionId": "emailclicked##xdm:model##description##50991"
+              "meta:titleId": "emailclicked##xdm:model##title##90171",
+              "meta:descriptionId": "emailclicked##xdm:model##description##35781"
             }
           },
-          "meta:titleId": "emailclicked##xdm:device##title##51821"
+          "meta:titleId": "emailclicked##xdm:device##title##34341"
         },
         "xdm:web": {
           "title": "Web",
@@ -129,15 +129,15 @@
                   "title": "Link ID",
                   "type": "string",
                   "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
-                  "meta:titleId": "emailclicked##xdm:linkID##title##40231",
-                  "meta:descriptionId": "emailclicked##xdm:linkID##description##78921"
+                  "meta:titleId": "emailclicked##xdm:linkID##title##83241",
+                  "meta:descriptionId": "emailclicked##xdm:linkID##description##56031"
                 }
               },
-              "meta:titleId": "emailclicked##xdm:webInteraction##title##4151"
+              "meta:titleId": "emailclicked##xdm:webInteraction##title##78491"
             }
           },
-          "meta:titleId": "emailclicked##xdm:web##title##44011",
-          "meta:descriptionId": "emailclicked##xdm:web##description##26911"
+          "meta:titleId": "emailclicked##xdm:web##title##67901",
+          "meta:descriptionId": "emailclicked##xdm:web##description##70691"
         }
       }
     }
@@ -149,6 +149,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "emailclicked##title##75011",
-  "meta:descriptionId": "emailclicked##description##98941"
+  "meta:titleId": "emailclicked##title##34491",
+  "meta:descriptionId": "emailclicked##description##9731"
 }

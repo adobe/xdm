@@ -17,15 +17,15 @@
           "title": "Error count",
           "type": "integer",
           "description": "Number of consecutive errors when sending to this email address.",
-          "meta:titleId": "directmarketing-emailaddress##xdm:errorCount##title##16111",
-          "meta:descriptionId": "directmarketing-emailaddress##xdm:errorCount##description##29021"
+          "meta:titleId": "directmarketing-emailaddress##xdm:errorCount##title##85551",
+          "meta:descriptionId": "directmarketing-emailaddress##xdm:errorCount##description##73671"
         },
         "xdm:quality": {
           "title": "Quality",
           "type": "string",
           "description": "Quality rating.",
-          "meta:titleId": "directmarketing-emailaddress##xdm:quality##title##30551",
-          "meta:descriptionId": "directmarketing-emailaddress##xdm:quality##description##64221"
+          "meta:titleId": "directmarketing-emailaddress##xdm:quality##title##82111",
+          "meta:descriptionId": "directmarketing-emailaddress##xdm:quality##description##26141"
         }
       }
     }
@@ -40,6 +40,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "directmarketing-emailaddress##title##21921",
-  "meta:descriptionId": "directmarketing-emailaddress##description##42771"
+  "meta:titleId": "directmarketing-emailaddress##title##18921",
+  "meta:descriptionId": "directmarketing-emailaddress##description##92591"
 }

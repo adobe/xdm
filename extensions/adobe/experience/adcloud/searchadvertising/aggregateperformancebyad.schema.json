@@ -22,73 +22,73 @@
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
-          "meta:titleId": "aggregateperformancebyad##xdm:accountId##title##26471",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:accountId##description##96151"
+          "meta:titleId": "aggregateperformancebyad##xdm:accountId##title##93221",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:accountId##description##82521"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID on the search advertising platform..",
-          "meta:titleId": "aggregateperformancebyad##xdm:campaignId##title##5631",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:campaignId##description##29811"
+          "meta:titleId": "aggregateperformancebyad##xdm:campaignId##title##31361",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:campaignId##description##34171"
         },
         "xdm:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform.",
-          "meta:titleId": "aggregateperformancebyad##xdm:adgroupId##title##86541",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:adgroupId##description##89441"
+          "meta:titleId": "aggregateperformancebyad##xdm:adgroupId##title##82791",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:adgroupId##description##75261"
         },
         "xdm:adId": {
           "title": "Ad Identifier",
           "type": "string",
           "description": "Ad ID on the search advertising platform.",
-          "meta:titleId": "aggregateperformancebyad##xdm:adId##title##51151",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:adId##description##7861"
+          "meta:titleId": "aggregateperformancebyad##xdm:adId##title##59001",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:adId##description##73701"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
-          "meta:titleId": "aggregateperformancebyad##xdm:searchEngineId##title##62411",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:searchEngineId##description##30181"
+          "meta:titleId": "aggregateperformancebyad##xdm:searchEngineId##title##73861",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:searchEngineId##description##53361"
         },
         "xdm:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Count of Clicks for a given ad displayed on the network.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:clicks##description##77771"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:clicks##description##41361"
         },
         "xdm:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Count of impressions for a given ad displayed on the network.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:impressions##description##63931"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:impressions##description##65581"
         },
         "xdm:totalCost": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:totalCost##description##96251"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:totalCost##description##68241"
         },
         "xdm:avgPosition": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Average Position of the Ad displayed on the network.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:avgPosition##description##87911"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:avgPosition##description##32391"
         },
         "xdm:topPageBid": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:topPageBid##description##52991"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:topPageBid##description##62671"
         },
         "xdm:qualityScore": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:qualityScore##description##46781"
+          "meta:descriptionId": "aggregateperformancebyad##xdm:qualityScore##description##87481"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "The device from where the ad was displayed.",
-          "meta:titleId": "aggregateperformancebyad##xdm:device##title##22731",
-          "meta:descriptionId": "aggregateperformancebyad##xdm:device##description##17261"
+          "meta:titleId": "aggregateperformancebyad##xdm:device##title##49091",
+          "meta:descriptionId": "aggregateperformancebyad##xdm:device##description##12571"
         }
       }
     }
@@ -102,6 +102,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "aggregateperformancebyad##title##33371",
-  "meta:descriptionId": "aggregateperformancebyad##description##53831"
+  "meta:titleId": "aggregateperformancebyad##title##9991",
+  "meta:descriptionId": "aggregateperformancebyad##description##16811"
 }

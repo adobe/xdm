@@ -27,22 +27,22 @@
               "xdm:sourceMarketingListMemberID": {
                 "title": "Source Marketing List Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListMemberID##title##97921"
+                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListMemberID##title##57991"
               },
               "xdm:sourcePersonID": {
                 "title": "Source Person Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-member-components##xdm:sourcePersonID##title##65761"
+                "meta:titleId": "marketing-list-member-components##xdm:sourcePersonID##title##21521"
               },
               "xdm:sourceMarketingListID": {
                 "title": "Source Marketing List Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListID##title##32491"
+                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListID##title##38131"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External Identifier",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "marketing-list-member-components##xdm:sourceExternalID##title##35311"
+                "meta:titleId": "marketing-list-member-components##xdm:sourceExternalID##title##51721"
               }
             }
           }
@@ -60,6 +60,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-09-14",
-  "meta:titleId": "marketing-list-member-components##title##30171",
-  "meta:descriptionId": "marketing-list-member-components##description##52541"
+  "meta:titleId": "marketing-list-member-components##title##86471",
+  "meta:descriptionId": "marketing-list-member-components##description##14911"
 }

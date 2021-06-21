@@ -22,29 +22,29 @@
           "title": "IMS Organization Identifier",
           "type": "string",
           "description": "An identity associated with the organization that maintains the library of business objects and rules for this decision.",
-          "meta:titleId": "decisionevent-all##https://ns.adobe.com/adobecloudplatform/ims/organizationID##title##44681",
-          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/adobecloudplatform/ims/organizationID##description##88441"
+          "meta:titleId": "decisionevent-all##https://ns.adobe.com/adobecloudplatform/ims/organizationID##title##1931",
+          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/adobecloudplatform/ims/organizationID##description##2491"
         },
         "https://ns.adobe.com/experience/decisioning/containerID": {
           "title": "Container Identifier",
           "type": "string",
           "description": "An identity associated with the library of business objects and rules for this decision.",
-          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/containerID##title##35691",
-          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/containerID##description##86501"
+          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/containerID##title##55641",
+          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/containerID##description##46771"
         },
         "https://ns.adobe.com/experience/decisioning/batchID": {
           "title": "Batch Identifier",
           "type": "string",
           "description": "A workflow identity associated with the decision event, if the request was made in batch mode. This property will be absent if the decision leading to this event was made individually for a single profile identity.",
-          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/batchID##title##7611",
-          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/batchID##description##11491"
+          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/batchID##title##59161",
+          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/batchID##description##9761"
         },
         "https://ns.adobe.com/experience/decisioning/decisionRequestID": {
           "title": "Request Identifier",
           "type": "string",
           "description": "An optional identifier that was provided by the client, unique per profile and request. It is used to track the decision request in the dataset of propositions. If a request was processed more than once for any reason there will be more than one event with the same decision request identifier in the dataset and those events can be de-duplicated.",
-          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/decisionRequestID##title##92871",
-          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/decisionRequestID##description##64131"
+          "meta:titleId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/decisionRequestID##title##56041",
+          "meta:descriptionId": "decisionevent-all##https://ns.adobe.com/experience/decisioning/decisionRequestID##description##15481"
         }
       }
     }
@@ -58,6 +58,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "decisionevent-all##title##16141",
-  "meta:descriptionId": "decisionevent-all##description##30751"
+  "meta:titleId": "decisionevent-all##title##64501",
+  "meta:descriptionId": "decisionevent-all##description##25781"
 }

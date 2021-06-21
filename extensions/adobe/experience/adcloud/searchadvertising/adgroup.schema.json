@@ -23,29 +23,29 @@
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Ad Group ID on the search advertising platform.",
-          "meta:titleId": "adgroup##xdm:adgroupId##title##82741",
-          "meta:descriptionId": "adgroup##xdm:adgroupId##description##15741"
+          "meta:titleId": "adgroup##xdm:adgroupId##title##72621",
+          "meta:descriptionId": "adgroup##xdm:adgroupId##description##58431"
         },
         "xdm:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign ID for the Ad Group on the search advertising platform.",
-          "meta:titleId": "adgroup##xdm:campaignId##title##79231",
-          "meta:descriptionId": "adgroup##xdm:campaignId##description##91701"
+          "meta:titleId": "adgroup##xdm:campaignId##title##11331",
+          "meta:descriptionId": "adgroup##xdm:campaignId##description##18331"
         },
         "xdm:internalCampaignId": {
           "title": "Internal Campaign Identifier",
           "type": "string",
           "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record.",
-          "meta:titleId": "adgroup##xdm:internalCampaignId##title##84551",
-          "meta:descriptionId": "adgroup##xdm:internalCampaignId##description##10261"
+          "meta:titleId": "adgroup##xdm:internalCampaignId##title##62901",
+          "meta:descriptionId": "adgroup##xdm:internalCampaignId##description##70641"
         },
         "xdm:adgroupName": {
           "title": "Ad Group Name",
           "type": "string",
           "description": "Name of the Ad Group.",
-          "meta:titleId": "adgroup##xdm:adgroupName##title##87441",
-          "meta:descriptionId": "adgroup##xdm:adgroupName##description##81381"
+          "meta:titleId": "adgroup##xdm:adgroupName##title##35581",
+          "meta:descriptionId": "adgroup##xdm:adgroupName##description##98171"
         },
         "xdm:adGroupStatus": {
           "title": "Ad Group Status",
@@ -89,8 +89,8 @@
             "Unknown": "Unknown",
             "Dummy": "Dummy"
           },
-          "meta:titleId": "adgroup##xdm:adGroupStatus##title##67981",
-          "meta:descriptionId": "adgroup##xdm:adGroupStatus##description##48411"
+          "meta:titleId": "adgroup##xdm:adGroupStatus##title##38531",
+          "meta:descriptionId": "adgroup##xdm:adGroupStatus##description##76671"
         },
         "xdm:bidLevel": {
           "title": "Bid Level",
@@ -114,8 +114,8 @@
             "Adgroup": "Adgroup",
             "User Interest and List": "User Interest and List"
           },
-          "meta:titleId": "adgroup##xdm:bidLevel##title##12571",
-          "meta:descriptionId": "adgroup##xdm:bidLevel##description##70501"
+          "meta:titleId": "adgroup##xdm:bidLevel##title##69371",
+          "meta:descriptionId": "adgroup##xdm:bidLevel##description##671"
         }
       }
     }
@@ -132,6 +132,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "adgroup##title##95671",
-  "meta:descriptionId": "adgroup##description##44531"
+  "meta:titleId": "adgroup##title##72241",
+  "meta:descriptionId": "adgroup##description##77791"
 }

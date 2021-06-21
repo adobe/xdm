@@ -24,145 +24,145 @@
           "title": "Parent Campaign ID",
           "description": "Member type and associated reference ID.",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:parentCampaignID##title##42011",
-          "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##63861"
+          "meta:titleId": "campaign-details##xdm:parentCampaignID##title##5861",
+          "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##17371"
         },
         "xdm:campaignStatus": {
           "title": "Campaign Status",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:campaignStatus##title##6261",
-          "meta:descriptionId": "campaign-details##xdm:campaignStatus##description##85501"
+          "meta:titleId": "campaign-details##xdm:campaignStatus##title##93101",
+          "meta:descriptionId": "campaign-details##xdm:campaignStatus##description##16531"
         },
         "xdm:campaignProgressionName": {
           "title": "Campaign Progression Name",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:campaignProgressionName##title##21501",
-          "meta:descriptionId": "campaign-details##xdm:campaignProgressionName##description##4981"
+          "meta:titleId": "campaign-details##xdm:campaignProgressionName##title##24841",
+          "meta:descriptionId": "campaign-details##xdm:campaignProgressionName##description##81561"
         },
         "xdm:integrationPartnerName": {
           "title": "Integration Partner Name",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:integrationPartnerName##title##50071",
-          "meta:descriptionId": "campaign-details##xdm:integrationPartnerName##description##26261"
+          "meta:titleId": "campaign-details##xdm:integrationPartnerName##title##56091",
+          "meta:descriptionId": "campaign-details##xdm:integrationPartnerName##description##2681"
         },
         "xdm:channelName": {
           "title": "Channel Name",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:channelName##title##77611",
-          "meta:descriptionId": "campaign-details##xdm:channelName##description##56321"
+          "meta:titleId": "campaign-details##xdm:channelName##title##62381",
+          "meta:descriptionId": "campaign-details##xdm:channelName##description##44091"
         },
         "xdm:campaignStartDate": {
           "title": "Campaign Start Date",
           "description": "",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "campaign-details##xdm:campaignStartDate##title##84651",
-          "meta:descriptionId": "campaign-details##xdm:campaignStartDate##description##6341"
+          "meta:titleId": "campaign-details##xdm:campaignStartDate##title##4351",
+          "meta:descriptionId": "campaign-details##xdm:campaignStartDate##description##17361"
         },
         "xdm:campaignEndDate": {
           "title": "Campaign End Date",
           "description": "",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "campaign-details##xdm:campaignEndDate##title##5201",
-          "meta:descriptionId": "campaign-details##xdm:campaignEndDate##description##89441"
+          "meta:titleId": "campaign-details##xdm:campaignEndDate##title##4461",
+          "meta:descriptionId": "campaign-details##xdm:campaignEndDate##description##5031"
         },
         "xdm:timeZone": {
           "title": "Timezone",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:timeZone##title##36261",
-          "meta:descriptionId": "campaign-details##xdm:timeZone##description##4201"
+          "meta:titleId": "campaign-details##xdm:timeZone##title##11551",
+          "meta:descriptionId": "campaign-details##xdm:timeZone##description##12351"
         },
         "xdm:timezoneName": {
           "title": "Timezone Name",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:timezoneName##title##12781",
-          "meta:descriptionId": "campaign-details##xdm:timezoneName##description##66591"
+          "meta:titleId": "campaign-details##xdm:timezoneName##title##98561",
+          "meta:descriptionId": "campaign-details##xdm:timezoneName##description##26621"
         },
         "xdm:timeZoneDelivery": {
           "title": "TimeZone Delivery",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:timeZoneDelivery##title##58021",
-          "meta:descriptionId": "campaign-details##xdm:timeZoneDelivery##description##38801"
+          "meta:titleId": "campaign-details##xdm:timeZoneDelivery##title##59071",
+          "meta:descriptionId": "campaign-details##xdm:timeZoneDelivery##description##17881"
         },
         "xdm:webinarSessionName": {
           "title": "Webinar Session Name",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:webinarSessionName##title##13381",
-          "meta:descriptionId": "campaign-details##xdm:webinarSessionName##description##88681"
+          "meta:titleId": "campaign-details##xdm:webinarSessionName##title##86271",
+          "meta:descriptionId": "campaign-details##xdm:webinarSessionName##description##5731"
         },
         "xdm:webinarSessionDescription": {
           "title": "Webinar Session Description",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:webinarSessionDescription##title##43351",
-          "meta:descriptionId": "campaign-details##xdm:webinarSessionDescription##description##13231"
+          "meta:titleId": "campaign-details##xdm:webinarSessionDescription##title##44521",
+          "meta:descriptionId": "campaign-details##xdm:webinarSessionDescription##description##41421"
         },
         "xdm:webinarHistorySyncStatus": {
           "title": "Webinar History Sync Status",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:webinarHistorySyncStatus##title##54221",
-          "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncStatus##description##71161"
+          "meta:titleId": "campaign-details##xdm:webinarHistorySyncStatus##title##15851",
+          "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncStatus##description##52381"
         },
         "xdm:webinarHistorySyncDate": {
           "title": "Webinar History Sync Date",
           "description": "",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "campaign-details##xdm:webinarHistorySyncDate##title##4111",
-          "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncDate##description##73661"
+          "meta:titleId": "campaign-details##xdm:webinarHistorySyncDate##title##66801",
+          "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncDate##description##58651"
         },
         "xdm:isActive": {
           "title": "Is Active",
           "description": "",
           "type": "boolean",
-          "meta:titleId": "campaign-details##xdm:isActive##title##32031",
-          "meta:descriptionId": "campaign-details##xdm:isActive##description##11191"
+          "meta:titleId": "campaign-details##xdm:isActive##title##31931",
+          "meta:descriptionId": "campaign-details##xdm:isActive##description##40621"
         },
         "xdm:lastActivityDate": {
           "title": "last Activity Date",
           "description": "",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "campaign-details##xdm:lastActivityDate##title##11051",
-          "meta:descriptionId": "campaign-details##xdm:lastActivityDate##description##151"
+          "meta:titleId": "campaign-details##xdm:lastActivityDate##title##16261",
+          "meta:descriptionId": "campaign-details##xdm:lastActivityDate##description##86921"
         },
         "xdm:expectedResponse": {
           "title": "Expected Response",
           "description": "",
           "type": "string",
-          "meta:titleId": "campaign-details##xdm:expectedResponse##title##94281",
-          "meta:descriptionId": "campaign-details##xdm:expectedResponse##description##46141"
+          "meta:titleId": "campaign-details##xdm:expectedResponse##title##26011",
+          "meta:descriptionId": "campaign-details##xdm:expectedResponse##description##52171"
         },
         "xdm:expectedRevenue": {
           "title": "Expected Revenue",
           "description": "",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "meta:titleId": "campaign-details##xdm:expectedRevenue##title##21031",
-          "meta:descriptionId": "campaign-details##xdm:expectedRevenue##description##93911"
+          "meta:titleId": "campaign-details##xdm:expectedRevenue##title##84911",
+          "meta:descriptionId": "campaign-details##xdm:expectedRevenue##description##86411"
         },
         "xdm:budgetedCost": {
           "title": "Budgeted Cost",
           "description": "",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "meta:titleId": "campaign-details##xdm:budgetedCost##title##29301",
-          "meta:descriptionId": "campaign-details##xdm:budgetedCost##description##8491"
+          "meta:titleId": "campaign-details##xdm:budgetedCost##title##73601",
+          "meta:descriptionId": "campaign-details##xdm:budgetedCost##description##42891"
         },
         "xdm:actualCost": {
           "title": "Actual Cost",
           "description": "",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "meta:titleId": "campaign-details##xdm:actualCost##title##84911",
-          "meta:descriptionId": "campaign-details##xdm:actualCost##description##19211"
+          "meta:titleId": "campaign-details##xdm:actualCost##title##83471",
+          "meta:descriptionId": "campaign-details##xdm:actualCost##description##9881"
         }
       }
     }
@@ -174,6 +174,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-09-29",
-  "meta:titleId": "campaign-details##title##39391",
-  "meta:descriptionId": "campaign-details##description##88851"
+  "meta:titleId": "campaign-details##title##95831",
+  "meta:descriptionId": "campaign-details##description##5861"
 }

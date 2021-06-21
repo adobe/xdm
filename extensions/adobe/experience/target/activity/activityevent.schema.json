@@ -44,15 +44,15 @@
             "excludeDefaultContent": "Display default content. Never count the visitor again.",
             "experienceFrequencyCapping": "Cap experience by frequency."
           },
-          "meta:titleId": "activityevent##xdm:strategy##title##20791",
-          "meta:descriptionId": "activityevent##xdm:strategy##description##76281"
+          "meta:titleId": "activityevent##xdm:strategy##title##80981",
+          "meta:descriptionId": "activityevent##xdm:strategy##description##71481"
         },
         "xdm:score": {
           "title": "Engagement Metric Score",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The capture score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox.",
-          "meta:titleId": "activityevent##xdm:score##title##55751",
-          "meta:descriptionId": "activityevent##xdm:score##description##551"
+          "meta:titleId": "activityevent##xdm:score##title##70311",
+          "meta:descriptionId": "activityevent##xdm:score##description##30711"
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
@@ -81,6 +81,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "activityevent##title##23421",
-  "meta:descriptionId": "activityevent##description##57751"
+  "meta:titleId": "activityevent##title##82381",
+  "meta:descriptionId": "activityevent##description##44161"
 }

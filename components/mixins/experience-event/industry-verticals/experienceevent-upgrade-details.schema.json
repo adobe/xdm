@@ -39,8 +39,8 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeSteps##title##20871",
-              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeSteps##description##82911"
+              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeSteps##title##27261",
+              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeSteps##description##93061"
             },
             "xdm:upgradeImpressions": {
               "title": "Upgrade Impressions",
@@ -49,18 +49,18 @@
                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
               },
               "description": "Array of the impressions data type.",
-              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeImpressions##title##6561",
-              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeImpressions##description##78391"
+              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeImpressions##title##85991",
+              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeImpressions##description##56651"
             },
             "xdm:upgradeTransaction": {
               "title": "Upgrade Transaction",
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Extension of transaction data type.",
-              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeTransaction##title##44321",
-              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeTransaction##description##42721"
+              "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeTransaction##title##9511",
+              "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeTransaction##description##96261"
             }
           },
-          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgrades##description##44281"
+          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgrades##description##52381"
         }
       }
     }
@@ -72,6 +72,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-02",
-  "meta:titleId": "experienceevent-upgrade-details##title##64041",
-  "meta:descriptionId": "experienceevent-upgrade-details##description##98241"
+  "meta:titleId": "experienceevent-upgrade-details##title##15061",
+  "meta:descriptionId": "experienceevent-upgrade-details##description##61581"
 }

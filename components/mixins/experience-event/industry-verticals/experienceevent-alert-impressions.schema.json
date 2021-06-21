@@ -35,22 +35,22 @@
               "title": "Alert ID",
               "type": "string",
               "description": "Alert identifier.",
-              "meta:titleId": "experienceevent-alert-impressions##xdm:ID##title##27681",
-              "meta:descriptionId": "experienceevent-alert-impressions##xdm:ID##description##92871"
+              "meta:titleId": "experienceevent-alert-impressions##xdm:ID##title##47351",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:ID##description##52471"
             },
             "xdm:clicks": {
               "title": "Alert Clicks",
               "type": "integer",
               "description": "Counts the number of times an alert has been clicked.",
-              "meta:titleId": "experienceevent-alert-impressions##xdm:clicks##title##14371",
-              "meta:descriptionId": "experienceevent-alert-impressions##xdm:clicks##description##27081"
+              "meta:titleId": "experienceevent-alert-impressions##xdm:clicks##title##87801",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:clicks##description##38511"
             },
             "xdm:dismissals": {
               "title": "Alert Dismissals",
               "type": "integer",
               "description": "Counts the number of times an alert has been dismissed.",
-              "meta:titleId": "experienceevent-alert-impressions##xdm:dismissals##title##59531",
-              "meta:descriptionId": "experienceevent-alert-impressions##xdm:dismissals##description##36111"
+              "meta:titleId": "experienceevent-alert-impressions##xdm:dismissals##title##20631",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:dismissals##description##17541"
             },
             "xdm:impressions": {
               "title": "Alert Impression Details",
@@ -59,11 +59,11 @@
                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
               },
               "description": "An array of alerts that have been displayed to a customer.",
-              "meta:titleId": "experienceevent-alert-impressions##xdm:impressions##title##20821",
-              "meta:descriptionId": "experienceevent-alert-impressions##xdm:impressions##description##1371"
+              "meta:titleId": "experienceevent-alert-impressions##xdm:impressions##title##17251",
+              "meta:descriptionId": "experienceevent-alert-impressions##xdm:impressions##description##71061"
             }
           },
-          "meta:descriptionId": "experienceevent-alert-impressions##xdm:alerts##description##80131"
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:alerts##description##90991"
         }
       }
     }
@@ -75,6 +75,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-alert-impressions##title##83341",
-  "meta:descriptionId": "experienceevent-alert-impressions##description##40781"
+  "meta:titleId": "experienceevent-alert-impressions##title##47781",
+  "meta:descriptionId": "experienceevent-alert-impressions##description##89821"
 }

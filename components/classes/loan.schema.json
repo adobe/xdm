@@ -30,29 +30,29 @@
           "title": "Loan ID",
           "type": "string",
           "description": "Identifier for the loan.",
-          "meta:titleId": "loan##xdm:loanID##title##52541",
-          "meta:descriptionId": "loan##xdm:loanID##description##3881"
+          "meta:titleId": "loan##xdm:loanID##title##70171",
+          "meta:descriptionId": "loan##xdm:loanID##description##32561"
         },
         "xdm:loanAmount": {
           "title": "Loan Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total amount of the loan.",
-          "meta:titleId": "loan##xdm:loanAmount##title##39591",
-          "meta:descriptionId": "loan##xdm:loanAmount##description##95841"
+          "meta:titleId": "loan##xdm:loanAmount##title##96671",
+          "meta:descriptionId": "loan##xdm:loanAmount##description##14021"
         },
         "xdm:totalInterestPaid": {
           "title": "Total Interest Paid",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total amount of interest paid on the loan to date.",
-          "meta:titleId": "loan##xdm:totalInterestPaid##title##46211",
-          "meta:descriptionId": "loan##xdm:totalInterestPaid##description##52061"
+          "meta:titleId": "loan##xdm:totalInterestPaid##title##51561",
+          "meta:descriptionId": "loan##xdm:totalInterestPaid##description##15071"
         },
         "xdm:totalPrincipalPaid": {
           "title": "Total Principal Paid",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Total amount of principal paid on the loan to date.",
-          "meta:titleId": "loan##xdm:totalPrincipalPaid##title##94401",
-          "meta:descriptionId": "loan##xdm:totalPrincipalPaid##description##68861"
+          "meta:titleId": "loan##xdm:totalPrincipalPaid##title##14561",
+          "meta:descriptionId": "loan##xdm:totalPrincipalPaid##description##42941"
         },
         "xdm:loanStatus": {
           "title": "Loan Status",
@@ -77,57 +77,57 @@
             "cancelled": "Cancelled"
           },
           "description": "Indicates the current status of the loan.",
-          "meta:titleId": "loan##xdm:loanStatus##title##97311",
-          "meta:descriptionId": "loan##xdm:loanStatus##description##91841"
+          "meta:titleId": "loan##xdm:loanStatus##title##97321",
+          "meta:descriptionId": "loan##xdm:loanStatus##description##56971"
         },
         "xdm:termInMonths": {
           "title": "Term in Months",
           "type": "integer",
           "description": "Captures the length of the loan, in months.",
-          "meta:titleId": "loan##xdm:termInMonths##title##51661",
-          "meta:descriptionId": "loan##xdm:termInMonths##description##45481"
+          "meta:titleId": "loan##xdm:termInMonths##title##21971",
+          "meta:descriptionId": "loan##xdm:termInMonths##description##9781"
         },
         "xdm:annualPercentageRate": {
           "title": "Annual Percentage Rate",
           "type": "integer",
           "description": "Records the annual percentage rate of the loan.",
-          "meta:titleId": "loan##xdm:annualPercentageRate##title##86091",
-          "meta:descriptionId": "loan##xdm:annualPercentageRate##description##76841"
+          "meta:titleId": "loan##xdm:annualPercentageRate##title##3411",
+          "meta:descriptionId": "loan##xdm:annualPercentageRate##description##21431"
         },
         "xdm:downpayment": {
           "title": "Downpayment",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Captures the downpayment amount of loan.",
-          "meta:titleId": "loan##xdm:downpayment##title##41661",
-          "meta:descriptionId": "loan##xdm:downpayment##description##68211"
+          "meta:titleId": "loan##xdm:downpayment##title##56551",
+          "meta:descriptionId": "loan##xdm:downpayment##description##17281"
         },
         "xdm:interestRate": {
           "title": "Interest Rate",
           "type": "integer",
           "description": "Captures the interest rate of the loan.",
-          "meta:titleId": "loan##xdm:interestRate##title##81851",
-          "meta:descriptionId": "loan##xdm:interestRate##description##75151"
+          "meta:titleId": "loan##xdm:interestRate##title##88401",
+          "meta:descriptionId": "loan##xdm:interestRate##description##69401"
         },
         "xdm:borrower": {
           "title": "Borrower",
           "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
           "description": "Records the details for the borrower.",
-          "meta:titleId": "loan##xdm:borrower##title##6601",
-          "meta:descriptionId": "loan##xdm:borrower##description##89651"
+          "meta:titleId": "loan##xdm:borrower##title##16331",
+          "meta:descriptionId": "loan##xdm:borrower##description##88811"
         },
         "xdm:fees": {
           "title": "Fees",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Tracks any fees or commissions applied to the loan.",
-          "meta:titleId": "loan##xdm:fees##title##10301",
-          "meta:descriptionId": "loan##xdm:fees##description##41931"
+          "meta:titleId": "loan##xdm:fees##title##3821",
+          "meta:descriptionId": "loan##xdm:fees##description##18561"
         },
         "xdm:gracePeriod": {
           "title": "Grace Period",
           "type": "integer",
           "description": "Tracks the number of days a borrow has to issue a loan payment before the loan is considered to be in default.",
-          "meta:titleId": "loan##xdm:gracePeriod##title##99311",
-          "meta:descriptionId": "loan##xdm:gracePeriod##description##34881"
+          "meta:titleId": "loan##xdm:gracePeriod##title##45661",
+          "meta:descriptionId": "loan##xdm:gracePeriod##description##33921"
         },
         "xdm:loanType": {
           "title": "Loan Type",
@@ -152,25 +152,25 @@
             "student": "Student",
             "automobile": "Automobile",
             "mortgage": "Mortgage",
-            "meta:titleId": "loan##meta:enum##title##88961"
+            "meta:titleId": "loan##meta:enum##title##56951"
           },
           "description": "Records the type of loan issued.",
-          "meta:titleId": "loan##xdm:loanType##title##72471",
-          "meta:descriptionId": "loan##xdm:loanType##description##46921"
+          "meta:titleId": "loan##xdm:loanType##title##25981",
+          "meta:descriptionId": "loan##xdm:loanType##description##72551"
         },
         "xdm:renegotiable": {
           "title": "Renegotiable",
           "type": "boolean",
           "description": "Identifies if the loan can be renegotiated while it is still active.",
-          "meta:titleId": "loan##xdm:renegotiable##title##81741",
-          "meta:descriptionId": "loan##xdm:renegotiable##description##94861"
+          "meta:titleId": "loan##xdm:renegotiable##title##87621",
+          "meta:descriptionId": "loan##xdm:renegotiable##description##42351"
         },
         "xdm:collateralRequired": {
           "title": "Collateral Required",
           "type": "boolean",
           "description": "Indicates if collateral has been provided to secure the loan.",
-          "meta:titleId": "loan##xdm:collateralRequired##title##23521",
-          "meta:descriptionId": "loan##xdm:collateralRequired##description##32071"
+          "meta:titleId": "loan##xdm:collateralRequired##title##70901",
+          "meta:descriptionId": "loan##xdm:collateralRequired##description##37671"
         }
       }
     }
@@ -184,6 +184,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "loan##title##26401",
-  "meta:descriptionId": "loan##description##7371"
+  "meta:titleId": "loan##title##56481",
+  "meta:descriptionId": "loan##description##85231"
 }

@@ -23,15 +23,15 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/analytics/productlistitem"
           },
-          "meta:titleId": "commerce##xdm:productListItems##title##36561",
-          "meta:descriptionId": "commerce##xdm:productListItems##description##74711"
+          "meta:titleId": "commerce##xdm:productListItems##title##71301",
+          "meta:descriptionId": "commerce##xdm:productListItems##description##71001"
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
           "description": "Product returns, warranty registration, and shopping cart/order process.",
-          "meta:titleId": "commerce##xdm:commerce##title##55571",
-          "meta:descriptionId": "commerce##xdm:commerce##description##67591"
+          "meta:titleId": "commerce##xdm:commerce##title##89121",
+          "meta:descriptionId": "commerce##xdm:commerce##description##96821"
         }
       }
     }
@@ -45,6 +45,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "commerce##title##81311",
-  "meta:descriptionId": "commerce##description##16301"
+  "meta:titleId": "commerce##title##93521",
+  "meta:descriptionId": "commerce##description##63951"
 }

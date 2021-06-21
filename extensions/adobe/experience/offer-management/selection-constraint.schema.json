@@ -20,24 +20,24 @@
           "format": "date-time",
           "title": "Start Date",
           "description": "Offer start date. Offers that have not reached their start date are not yet considered eligible in the decisioning.",
-          "meta:titleId": "selection-constraint##xdm:startDate##title##32751",
-          "meta:descriptionId": "selection-constraint##xdm:startDate##description##39881"
+          "meta:titleId": "selection-constraint##xdm:startDate##title##99811",
+          "meta:descriptionId": "selection-constraint##xdm:startDate##description##68821"
         },
         "xdm:endDate": {
           "type": "string",
           "format": "date-time",
           "title": "End Date",
           "description": "Offer end date. Offers that have passed their end date are no longer considered eligible in the decisioning process.",
-          "meta:titleId": "selection-constraint##xdm:endDate##title##47491",
-          "meta:descriptionId": "selection-constraint##xdm:endDate##description##42521"
+          "meta:titleId": "selection-constraint##xdm:endDate##title##6391",
+          "meta:descriptionId": "selection-constraint##xdm:endDate##description##19881"
         },
         "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri",
           "title": "Eligibility Rule",
           "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule",
-          "meta:titleId": "selection-constraint##xdm:eligibilityRule##title##25581",
-          "meta:descriptionId": "selection-constraint##xdm:eligibilityRule##description##80421"
+          "meta:titleId": "selection-constraint##xdm:eligibilityRule##title##76961",
+          "meta:descriptionId": "selection-constraint##xdm:eligibilityRule##description##68291"
         }
       }
     }
@@ -51,6 +51,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "selection-constraint##title##77481",
-  "meta:descriptionId": "selection-constraint##description##23671"
+  "meta:titleId": "selection-constraint##title##21441",
+  "meta:descriptionId": "selection-constraint##description##64041"
 }

@@ -68,15 +68,13 @@
           "title": "Source to Destination Title",
           "type": "string",
           "description": "Provides a user friendly title for the source->destination edge",
-          "maxLength": 35,
-          "pattern": "^[A-Za-z0-9_]*$"
+          "maxLength": 35
         },
         "xdm:destinationToSourceTitle": {
           "title": "Destination to Source Title",
           "type": "string",
           "description": "Provides a user friendly title for the destination->source edge",
-          "maxLength": 35,
-          "pattern": "^[A-Za-z0-9_]*$"
+          "maxLength": 35
         },
         "xdm:cardinality": {
           "title": "Relationship Cardinality",

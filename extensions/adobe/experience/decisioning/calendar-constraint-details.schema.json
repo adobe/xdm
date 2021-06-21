@@ -20,16 +20,16 @@
           "format": "date-time",
           "title": "Start Date & Time",
           "description": "The start date of a decision options validity.. Options that have not reached their start date cannot be proposed yet in the decisioning process.",
-          "meta:titleId": "calendar-constraint-details##xdm:startDate##title##63971",
-          "meta:descriptionId": "calendar-constraint-details##xdm:startDate##description##49711"
+          "meta:titleId": "calendar-constraint-details##xdm:startDate##title##74581",
+          "meta:descriptionId": "calendar-constraint-details##xdm:startDate##description##20281"
         },
         "xdm:endDate": {
           "type": "string",
           "format": "date-time",
           "title": "End Date & Time",
           "description": "The end date of a decision options validity. Options that have passed their end date can no longer cannot be proposed in the decisioning process.",
-          "meta:titleId": "calendar-constraint-details##xdm:endDate##title##87881",
-          "meta:descriptionId": "calendar-constraint-details##xdm:endDate##description##54951"
+          "meta:titleId": "calendar-constraint-details##xdm:endDate##title##67111",
+          "meta:descriptionId": "calendar-constraint-details##xdm:endDate##description##70171"
         }
       }
     }
@@ -40,6 +40,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "calendar-constraint-details##title##75361",
-  "meta:descriptionId": "calendar-constraint-details##description##72801"
+  "meta:titleId": "calendar-constraint-details##title##57791",
+  "meta:descriptionId": "calendar-constraint-details##description##16571"
 }

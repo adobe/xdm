@@ -23,15 +23,15 @@
           "title": "Campaign Key",
           "type": "string",
           "description": "Campaign external identifier.",
-          "meta:titleId": "campaign##dsp:campaignKey##title##53881",
-          "meta:descriptionId": "campaign##dsp:campaignKey##description##53811"
+          "meta:titleId": "campaign##dsp:campaignKey##title##90741",
+          "meta:descriptionId": "campaign##dsp:campaignKey##description##79921"
         },
         "dsp:campaignName": {
           "title": "Campaign Name",
           "type": "string",
           "description": "Name of the campaign.",
-          "meta:titleId": "campaign##dsp:campaignName##title##2791",
-          "meta:descriptionId": "campaign##dsp:campaignName##description##35361"
+          "meta:titleId": "campaign##dsp:campaignName##title##22481",
+          "meta:descriptionId": "campaign##dsp:campaignName##description##12401"
         },
         "dsp:campaignStatus": {
           "title": "Campaign Status",
@@ -49,15 +49,15 @@
             "Deleted": "Deleted",
             "Paid": "Paid"
           },
-          "meta:titleId": "campaign##dsp:campaignStatus##title##60601",
-          "meta:descriptionId": "campaign##dsp:campaignStatus##description##95701"
+          "meta:titleId": "campaign##dsp:campaignStatus##title##65871",
+          "meta:descriptionId": "campaign##dsp:campaignStatus##description##26491"
         },
         "dsp:timezone": {
           "title": "Campaign Timezone",
           "type": "string",
           "description": "Timezone of the campaign.",
-          "meta:titleId": "campaign##dsp:timezone##title##62251",
-          "meta:descriptionId": "campaign##dsp:timezone##description##79401"
+          "meta:titleId": "campaign##dsp:timezone##title##34621",
+          "meta:descriptionId": "campaign##dsp:timezone##description##71321"
         },
         "dsp:type": {
           "title": "Campaign Type",
@@ -71,15 +71,15 @@
             "Media": "Media",
             "Brandsights": "Brandsights"
           },
-          "meta:titleId": "campaign##dsp:type##title##84931",
-          "meta:descriptionId": "campaign##dsp:type##description##30261"
+          "meta:titleId": "campaign##dsp:type##title##30211",
+          "meta:descriptionId": "campaign##dsp:type##description##90561"
         },
         "dsp:userId": {
           "title": "User Identifier",
           "type": "integer",
           "description": "Identifier for the user who created the campaign.",
-          "meta:titleId": "campaign##dsp:userId##title##84811",
-          "meta:descriptionId": "campaign##dsp:userId##description##51371"
+          "meta:titleId": "campaign##dsp:userId##title##47871",
+          "meta:descriptionId": "campaign##dsp:userId##description##15311"
         },
         "dsp:feeClass": {
           "title": "The Fee Class",
@@ -95,38 +95,38 @@
             "advertiser": "advertiser",
             "no_io": "no_io"
           },
-          "meta:titleId": "campaign##dsp:feeClass##title##91991",
-          "meta:descriptionId": "campaign##dsp:feeClass##description##66461"
+          "meta:titleId": "campaign##dsp:feeClass##title##10321",
+          "meta:descriptionId": "campaign##dsp:feeClass##description##53601"
         },
         "dsp:campaignStartTime": {
           "title": "Campaign start time.",
           "type": "string",
           "format": "date-time",
           "description": "The insertion order fields representing campaign start time.",
-          "meta:titleId": "campaign##dsp:campaignStartTime##title##66331",
-          "meta:descriptionId": "campaign##dsp:campaignStartTime##description##58551"
+          "meta:titleId": "campaign##dsp:campaignStartTime##title##79271",
+          "meta:descriptionId": "campaign##dsp:campaignStartTime##description##54611"
         },
         "dsp:campaignEndTime": {
           "title": "Campaign end time.",
           "type": "string",
           "format": "date-time",
           "description": "The insertion order fields representing campaign end time.",
-          "meta:titleId": "campaign##dsp:campaignEndTime##title##84601",
-          "meta:descriptionId": "campaign##dsp:campaignEndTime##description##65091"
+          "meta:titleId": "campaign##dsp:campaignEndTime##title##84381",
+          "meta:descriptionId": "campaign##dsp:campaignEndTime##description##43551"
         },
         "dsp:accountId": {
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier for the account owning this campaign.",
-          "meta:titleId": "campaign##dsp:accountId##title##93221",
-          "meta:descriptionId": "campaign##dsp:accountId##description##15951"
+          "meta:titleId": "campaign##dsp:accountId##title##24781",
+          "meta:descriptionId": "campaign##dsp:accountId##description##64601"
         },
         "dsp:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
           "description": "Identifier for the advertiser owning this campaign.",
-          "meta:titleId": "campaign##dsp:advertiserId##title##88411",
-          "meta:descriptionId": "campaign##dsp:advertiserId##description##41231"
+          "meta:titleId": "campaign##dsp:advertiserId##title##78461",
+          "meta:descriptionId": "campaign##dsp:advertiserId##description##61241"
         }
       }
     }
@@ -143,6 +143,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "campaign##title##26781",
-  "meta:descriptionId": "campaign##description##86931"
+  "meta:titleId": "campaign##title##58991",
+  "meta:descriptionId": "campaign##description##7691"
 }

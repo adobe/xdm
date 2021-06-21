@@ -17,36 +17,36 @@
           "title": "Product Identifier",
           "type": "string",
           "description": "Identifier for the product featured in the clicked advertisement.",
-          "meta:titleId": "productdetails##xdm:productID##title##4401",
-          "meta:descriptionId": "productdetails##xdm:productID##description##13071"
+          "meta:titleId": "productdetails##xdm:productID##title##28181",
+          "meta:descriptionId": "productdetails##xdm:productID##description##64301"
         },
         "xdm:country": {
           "title": "Product Country",
           "type": "string",
           "description": "The country of sale for the product in the clicked ad.",
-          "meta:titleId": "productdetails##xdm:country##title##4061",
-          "meta:descriptionId": "productdetails##xdm:country##description##17131"
+          "meta:titleId": "productdetails##xdm:country##title##4861",
+          "meta:descriptionId": "productdetails##xdm:country##description##11951"
         },
         "xdm:language": {
           "title": "Product Language",
           "type": "string",
           "description": "The language of your product information, as indicated in client's Merchant Center data feed.",
-          "meta:titleId": "productdetails##xdm:language##title##91191",
-          "meta:descriptionId": "productdetails##xdm:language##description##52141"
+          "meta:titleId": "productdetails##xdm:language##title##69211",
+          "meta:descriptionId": "productdetails##xdm:language##description##78661"
         },
         "xdm:partitionID": {
           "title": "Product Partition Identifier",
           "type": "string",
           "description": "Identifier for the product group the clicked product advertisement belongs to.",
-          "meta:titleId": "productdetails##xdm:partitionID##title##71081",
-          "meta:descriptionId": "productdetails##xdm:partitionID##description##99231"
+          "meta:titleId": "productdetails##xdm:partitionID##title##32661",
+          "meta:descriptionId": "productdetails##xdm:partitionID##description##57091"
         },
         "xdm:title": {
           "title": "Product Title",
           "type": "string",
           "description": "Product title value shown in the advertisement.",
-          "meta:titleId": "productdetails##xdm:title##title##82881",
-          "meta:descriptionId": "productdetails##xdm:title##description##30821"
+          "meta:titleId": "productdetails##xdm:title##title##86831",
+          "meta:descriptionId": "productdetails##xdm:title##description##52051"
         },
         "xdm:adType": {
           "title": "Product Ad Type",
@@ -58,8 +58,8 @@
             "pla_multichannel": "If the clicked Shopping ad included options for both “online” and “local” shopping channels.",
             "pla_with_promotion": "If the clicked Shopping ad displayed a merchant promotion."
           },
-          "meta:titleId": "productdetails##xdm:adType##title##40771",
-          "meta:descriptionId": "productdetails##xdm:adType##description##17021"
+          "meta:titleId": "productdetails##xdm:adType##title##63521",
+          "meta:descriptionId": "productdetails##xdm:adType##description##40641"
         }
       }
     }
@@ -70,6 +70,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "productdetails##title##2331",
-  "meta:descriptionId": "productdetails##description##89441"
+  "meta:titleId": "productdetails##title##35481",
+  "meta:descriptionId": "productdetails##description##34871"
 }

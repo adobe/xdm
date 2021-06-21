@@ -22,7 +22,7 @@
           "title": "Type",
           "type": "string",
           "const": "xdm:alternateDisplayInfo",
-          "meta:titleId": "alternateDisplayInfo##@type##title##11211"
+          "meta:titleId": "alternateDisplayInfo##@type##title##50671"
         },
         "xdm:title": {
           "title": "Title",
@@ -33,8 +33,8 @@
               "type": "string"
             }
           },
-          "meta:titleId": "alternateDisplayInfo##xdm:title##title##80681",
-          "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##66361"
+          "meta:titleId": "alternateDisplayInfo##xdm:title##title##31001",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##88191"
         },
         "xdm:description": {
           "title": "Description",
@@ -45,8 +45,8 @@
               "type": "string"
             }
           },
-          "meta:titleId": "alternateDisplayInfo##xdm:description##title##77571",
-          "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##14251"
+          "meta:titleId": "alternateDisplayInfo##xdm:description##title##76461",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##31061"
         },
         "xdm:note": {
           "title": "Note",
@@ -57,8 +57,8 @@
               "type": "string"
             }
           },
-          "meta:titleId": "alternateDisplayInfo##xdm:note##title##97231",
-          "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##96161"
+          "meta:titleId": "alternateDisplayInfo##xdm:note##title##33591",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##7711"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",
@@ -75,7 +75,7 @@
               ]
             }
           },
-          "meta:titleId": "alternateDisplayInfo##meta:enum##title##44431"
+          "meta:titleId": "alternateDisplayInfo##meta:enum##title##56591"
         }
       },
       "anyOf": [
@@ -102,6 +102,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "alternateDisplayInfo##title##34101",
-  "meta:descriptionId": "alternateDisplayInfo##description##91461"
+  "meta:titleId": "alternateDisplayInfo##title##24801",
+  "meta:descriptionId": "alternateDisplayInfo##description##62281"
 }

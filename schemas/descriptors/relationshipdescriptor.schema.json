@@ -23,8 +23,8 @@
           "type": "string",
           "format": "uri",
           "description": "The destination schema this descriptor applies to",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title##88991",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description##49891"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title##67981",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description##6991"
         },
         "xdm:destinationProperty": {
           "title": "Destination Property",
@@ -40,61 +40,59 @@
             }
           ],
           "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title##72261",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description##24641"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title##68681",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description##22681"
         },
         "xdm:destinationItem": {
           "title": "Destination Item",
           "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationItem##title##14601",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationItem##description##37711"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationItem##title##5741",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationItem##description##67421"
         },
         "xdm:destinationVersion": {
           "title": "Destination Version",
           "type": "number",
           "description": "Major version being referenced.",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title##23711",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description##71671"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title##29681",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description##41851"
         },
         "xdm:sourceValue": {
           "title": "Source Value",
           "type": "string",
           "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.",
-          "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title##68131",
-          "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description##19081"
+          "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title##46081",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description##66481"
         },
         "xdm:sourceNamespace": {
           "title": "Source Property Namespace",
           "type": "string",
           "description": "Identity Service namespace associated with the source property",
-          "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title##42291",
-          "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description##86471"
+          "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title##77511",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description##73661"
         },
         "xdm:destinationNamespace": {
           "title": "Source Property Namespace",
           "type": "string",
           "description": "Identity Service namespace associated with the source property",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title##92671",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description##82811"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title##16441",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description##511"
         },
         "xdm:sourceToDestinationTitle": {
           "title": "Source to Destination Title",
           "type": "string",
           "description": "Provides a user friendly title for the source->destination edge",
           "maxLength": 35,
-          "pattern": "^[A-Za-z0-9_]*$",
-          "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title##72051",
-          "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description##18101"
+          "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title##30351",
+          "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description##84061"
         },
         "xdm:destinationToSourceTitle": {
           "title": "Destination to Source Title",
           "type": "string",
           "description": "Provides a user friendly title for the destination->source edge",
           "maxLength": 35,
-          "pattern": "^[A-Za-z0-9_]*$",
-          "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##53701",
-          "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##21631"
+          "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##36761",
+          "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##79311"
         },
         "xdm:cardinality": {
           "title": "Relationship Cardinality",
@@ -102,8 +100,8 @@
           "description": "Source to Destination cardinality",
           "enum": ["M:1"],
           "default": "M:1",
-          "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##26251",
-          "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##951"
+          "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##48231",
+          "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##64351"
         }
       },
       "oneOf": [
@@ -127,6 +125,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "relationshipdescriptor##title##76161",
-  "meta:descriptionId": "relationshipdescriptor##description##46071"
+  "meta:titleId": "relationshipdescriptor##title##461",
+  "meta:descriptionId": "relationshipdescriptor##description##50601"
 }

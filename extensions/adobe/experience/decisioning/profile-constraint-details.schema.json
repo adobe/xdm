@@ -19,8 +19,8 @@
           "type": "string",
           "title": "Description",
           "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it.",
-          "meta:titleId": "profile-constraint-details##xdm:description##title##76881",
-          "meta:descriptionId": "profile-constraint-details##xdm:description##description##68971"
+          "meta:titleId": "profile-constraint-details##xdm:description##title##72701",
+          "meta:descriptionId": "profile-constraint-details##xdm:description##description##71551"
         },
         "xdm:profileConstraintType": {
           "type": "string",
@@ -41,16 +41,16 @@
           },
           "default": "none",
           "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships.",
-          "meta:titleId": "profile-constraint-details##xdm:profileConstraintType##title##44211",
-          "meta:descriptionId": "profile-constraint-details##xdm:profileConstraintType##description##78031"
+          "meta:titleId": "profile-constraint-details##xdm:profileConstraintType##title##50331",
+          "meta:descriptionId": "profile-constraint-details##xdm:profileConstraintType##description##61821"
         },
         "xdm:eligibilityRule": {
           "type": "string",
           "format": "uri-reference",
           "title": "Eligibility Rule",
           "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule",
-          "meta:titleId": "profile-constraint-details##xdm:eligibilityRule##title##71381",
-          "meta:descriptionId": "profile-constraint-details##xdm:eligibilityRule##description##60141"
+          "meta:titleId": "profile-constraint-details##xdm:eligibilityRule##title##99811",
+          "meta:descriptionId": "profile-constraint-details##xdm:eligibilityRule##description##20111"
         },
         "xdm:segmentIdentities": {
           "title": "Segment Identifiers",
@@ -59,8 +59,8 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentidentity"
           },
-          "meta:titleId": "profile-constraint-details##xdm:segmentIdentities##title##64881",
-          "meta:descriptionId": "profile-constraint-details##xdm:segmentIdentities##description##69121"
+          "meta:titleId": "profile-constraint-details##xdm:segmentIdentities##title##87071",
+          "meta:descriptionId": "profile-constraint-details##xdm:segmentIdentities##description##47431"
         }
       }
     }
@@ -71,6 +71,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "profile-constraint-details##title##87711",
-  "meta:descriptionId": "profile-constraint-details##description##38811"
+  "meta:titleId": "profile-constraint-details##title##16971",
+  "meta:descriptionId": "profile-constraint-details##description##11421"
 }

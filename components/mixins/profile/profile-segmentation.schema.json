@@ -23,7 +23,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
           },
-          "meta:titleId": "profile-segmentation##xdm:segments##title##80961"
+          "meta:titleId": "profile-segmentation##xdm:segments##title##76581"
         },
         "xdm:segmentMembership": {
           "title": "Segment membership map",
@@ -36,9 +36,9 @@
             "additionalProperties": {
               "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
             },
-            "meta:titleId": "profile-segmentation##additionalProperties##title##7881"
+            "meta:titleId": "profile-segmentation##additionalProperties##title##13881"
           },
-          "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##45911"
+          "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##51311"
         }
       }
     }
@@ -53,6 +53,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-segmentation##title##73981",
-  "meta:descriptionId": "profile-segmentation##description##90521"
+  "meta:titleId": "profile-segmentation##title##74531",
+  "meta:descriptionId": "profile-segmentation##description##17401"
 }

@@ -22,15 +22,15 @@
           "title": "Search Advertising Platform",
           "type": "string",
           "description": "The Search Advertising Platform Name",
-          "meta:titleId": "platform##xdm:adPlatform##title##11761",
-          "meta:descriptionId": "platform##xdm:adPlatform##description##27421"
+          "meta:titleId": "platform##xdm:adPlatform##title##56211",
+          "meta:descriptionId": "platform##xdm:adPlatform##description##78111"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
-          "meta:titleId": "platform##xdm:searchEngineId##title##65211",
-          "meta:descriptionId": "platform##xdm:searchEngineId##description##18091"
+          "meta:titleId": "platform##xdm:searchEngineId##title##62791",
+          "meta:descriptionId": "platform##xdm:searchEngineId##description##96621"
         }
       }
     }
@@ -41,6 +41,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "platform##title##57471",
-  "meta:descriptionId": "platform##description##97581"
+  "meta:titleId": "platform##title##86081",
+  "meta:descriptionId": "platform##description##99081"
 }

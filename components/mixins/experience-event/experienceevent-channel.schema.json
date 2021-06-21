@@ -20,8 +20,8 @@
           "title": "Experience channel",
           "description": "Experience channel related to the ExperienceEvent.",
           "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "meta:titleId": "experienceevent-channel##xdm:channel##title##99291",
-          "meta:descriptionId": "experienceevent-channel##xdm:channel##description##86661"
+          "meta:titleId": "experienceevent-channel##xdm:channel##title##33191",
+          "meta:descriptionId": "experienceevent-channel##xdm:channel##description##17651"
         }
       }
     }
@@ -36,6 +36,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent-channel##title##74971",
-  "meta:descriptionId": "experienceevent-channel##description##91101"
+  "meta:titleId": "experienceevent-channel##title##68001",
+  "meta:descriptionId": "experienceevent-channel##description##96941"
 }

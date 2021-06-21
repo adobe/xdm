@@ -22,22 +22,22 @@
               "title": "Location Identifier",
               "type": "string",
               "description": "The local location identifier.",
-              "meta:titleId": "optionevent##xdm:locationID##title##35851",
-              "meta:descriptionId": "optionevent##xdm:locationID##description##68481"
+              "meta:titleId": "optionevent##xdm:locationID##title##52931",
+              "meta:descriptionId": "optionevent##xdm:locationID##description##63281"
             },
             "xdm:selector": {
               "title": "Selector",
               "type": "string",
               "description": "A CSS selector in a html page.",
-              "meta:titleId": "optionevent##xdm:selector##title##60381",
-              "meta:descriptionId": "optionevent##xdm:selector##description##88111"
+              "meta:titleId": "optionevent##xdm:selector##title##6211",
+              "meta:descriptionId": "optionevent##xdm:selector##description##32521"
             }
           },
           "required": [
             "xdm:locationID"
           ],
-          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##title##23231",
-          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##description##24271"
+          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##title##44561",
+          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##description##52931"
         },
         "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption": {
           "title": "Activity Option",
@@ -48,29 +48,29 @@
               "title": "Option Identifier",
               "type": "string",
               "description": "Unique activity option identifier.",
-              "meta:titleId": "optionevent##xdm:optionID##title##77051",
-              "meta:descriptionId": "optionevent##xdm:optionID##description##98591"
+              "meta:titleId": "optionevent##xdm:optionID##title##91631",
+              "meta:descriptionId": "optionevent##xdm:optionID##description##6091"
             },
             "xdm:offerID": {
               "title": "Offer Identifier",
               "type": "string",
               "description": "An offer is the content displayed on your web pages during campaigns or activities.",
-              "meta:titleId": "optionevent##xdm:offerID##title##34641",
-              "meta:descriptionId": "optionevent##xdm:offerID##description##83201"
+              "meta:titleId": "optionevent##xdm:offerID##title##83921",
+              "meta:descriptionId": "optionevent##xdm:offerID##description##31651"
             },
             "xdm:version": {
               "title": "Offer Version",
               "type": "string",
               "description": "Version of the offer that was displayed.",
-              "meta:titleId": "optionevent##xdm:version##title##3011",
-              "meta:descriptionId": "optionevent##xdm:version##description##77691"
+              "meta:titleId": "optionevent##xdm:version##title##58811",
+              "meta:descriptionId": "optionevent##xdm:version##description##93031"
             }
           },
           "required": [
             "xdm:optionID"
           ],
-          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##title##92771",
-          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##description##78481"
+          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##title##44251",
+          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##description##59181"
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
@@ -89,6 +89,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "optionevent##title##1531",
-  "meta:descriptionId": "optionevent##description##67061"
+  "meta:titleId": "optionevent##title##94171",
+  "meta:descriptionId": "optionevent##description##79821"
 }

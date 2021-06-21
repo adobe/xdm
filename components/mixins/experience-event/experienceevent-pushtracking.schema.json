@@ -29,37 +29,37 @@
                   "title": "action ID",
                   "type": "string",
                   "description": "user clicked custom action identifier",
-                  "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##49051",
-                  "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##62871"
+                  "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##13721",
+                  "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##29041"
                 },
                 "xdm:value": {
                   "title": "value",
                   "type": "number",
                   "description": "value associated with the custom action, if any",
-                  "meta:titleId": "experienceevent-pushtracking##xdm:value##title##26351",
-                  "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##66331"
+                  "meta:titleId": "experienceevent-pushtracking##xdm:value##title##33561",
+                  "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##15791"
                 }
               },
-              "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##55361",
-              "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##91961"
+              "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##35361",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##67361"
             },
             "xdm:pushProviderMessageID": {
               "title": "Push Provider message ID",
               "type": "string",
               "description": "ID assigned to this notification as assigned by the push provider",
-              "meta:titleId": "experienceevent-pushtracking##xdm:pushProviderMessageID##title##85961",
-              "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProviderMessageID##description##21061"
+              "meta:titleId": "experienceevent-pushtracking##xdm:pushProviderMessageID##title##16921",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProviderMessageID##description##27241"
             },
             "xdm:pushProvider": {
               "title": "Push Provider",
               "type": "string",
               "description": "Push provider, e.g. apns or fcm",
-              "meta:titleId": "experienceevent-pushtracking##xdm:pushProvider##title##9391",
-              "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProvider##description##66351"
+              "meta:titleId": "experienceevent-pushtracking##xdm:pushProvider##title##50421",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProvider##description##13021"
             }
           },
-          "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##56031",
-          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushNotificationTracking##description##86381"
+          "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##58071",
+          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushNotificationTracking##description##81941"
         }
       }
     }
@@ -74,6 +74,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-09-28",
-  "meta:titleId": "experienceevent-pushtracking##title##24761",
-  "meta:descriptionId": "experienceevent-pushtracking##description##98411"
+  "meta:titleId": "experienceevent-pushtracking##title##86951",
+  "meta:descriptionId": "experienceevent-pushtracking##description##3211"
 }

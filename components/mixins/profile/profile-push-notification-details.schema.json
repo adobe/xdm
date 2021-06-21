@@ -27,65 +27,65 @@
                 "title": "Push Token",
                 "type": "string",
                 "description": "Valid push token for the given push platform.",
-                "meta:titleId": "profile-push-notification-details##xdm:token##title##15771",
-                "meta:descriptionId": "profile-push-notification-details##xdm:token##description##50881"
+                "meta:titleId": "profile-push-notification-details##xdm:token##title##32661",
+                "meta:descriptionId": "profile-push-notification-details##xdm:token##description##88021"
               },
               "xdm:platform": {
                 "title": "Push Platform",
                 "type": "string",
                 "description": "Push provider, e.g. apns or fcm",
-                "meta:titleId": "profile-push-notification-details##xdm:platform##title##50101",
-                "meta:descriptionId": "profile-push-notification-details##xdm:platform##description##91351"
+                "meta:titleId": "profile-push-notification-details##xdm:platform##title##65601",
+                "meta:descriptionId": "profile-push-notification-details##xdm:platform##description##50261"
               },
               "xdm:blacklisted": {
                 "title": "Blacklist Flag",
                 "type": "boolean",
                 "meta:status": "deprecated",
                 "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.",
-                "meta:titleId": "profile-push-notification-details##xdm:blacklisted##title##32461",
-                "meta:descriptionId": "profile-push-notification-details##xdm:blacklisted##description##95841"
+                "meta:titleId": "profile-push-notification-details##xdm:blacklisted##title##3401",
+                "meta:descriptionId": "profile-push-notification-details##xdm:blacklisted##description##59861"
               },
               "xdm:blocklisted": {
                 "title": "Blocklist Flag",
                 "type": "boolean",
                 "meta:status": "deprecated",
                 "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.",
-                "meta:titleId": "profile-push-notification-details##xdm:blocklisted##title##44081",
-                "meta:descriptionId": "profile-push-notification-details##xdm:blocklisted##description##83321"
+                "meta:titleId": "profile-push-notification-details##xdm:blocklisted##title##27981",
+                "meta:descriptionId": "profile-push-notification-details##xdm:blocklisted##description##68931"
               },
               "xdm:denylisted": {
                 "title": "Denylist Flag",
                 "type": "boolean",
                 "description": "Indicates whether the push token is blocked by the push provider.",
-                "meta:titleId": "profile-push-notification-details##xdm:denylisted##title##63771",
-                "meta:descriptionId": "profile-push-notification-details##xdm:denylisted##description##4111"
+                "meta:titleId": "profile-push-notification-details##xdm:denylisted##title##43831",
+                "meta:descriptionId": "profile-push-notification-details##xdm:denylisted##description##65951"
               },
               "xdm:appID": {
                 "title": "Application Identifier",
                 "type": "string",
                 "description": "Unique Identifier for the mobile application.",
-                "meta:titleId": "profile-push-notification-details##xdm:appID##title##32571",
-                "meta:descriptionId": "profile-push-notification-details##xdm:appID##description##79051"
+                "meta:titleId": "profile-push-notification-details##xdm:appID##title##74211",
+                "meta:descriptionId": "profile-push-notification-details##xdm:appID##description##96351"
               },
               "xdm:identiy": {
                 "title": "Identity associated with this token",
                 "$ref": "https://ns.adobe.com/xdm/context/identity",
                 "meta:status": "deprecated",
                 "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.",
-                "meta:titleId": "profile-push-notification-details##xdm:identiy##title##3821",
-                "meta:descriptionId": "profile-push-notification-details##xdm:identiy##description##83451"
+                "meta:titleId": "profile-push-notification-details##xdm:identiy##title##53481",
+                "meta:descriptionId": "profile-push-notification-details##xdm:identiy##description##49531"
               },
               "xdm:identity": {
                 "title": "Identity associated with this token",
                 "$ref": "https://ns.adobe.com/xdm/context/identity",
                 "description": "The identity associated with this token before profile stitching.",
-                "meta:titleId": "profile-push-notification-details##xdm:identity##title##32291",
-                "meta:descriptionId": "profile-push-notification-details##xdm:identity##description##44361"
+                "meta:titleId": "profile-push-notification-details##xdm:identity##title##8931",
+                "meta:descriptionId": "profile-push-notification-details##xdm:identity##description##61841"
               }
             }
           },
-          "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##53381",
-          "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##60481"
+          "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##29051",
+          "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##44101"
         }
       }
     }
@@ -100,6 +100,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-push-notification-details##title##8721",
-  "meta:descriptionId": "profile-push-notification-details##description##62811"
+  "meta:titleId": "profile-push-notification-details##title##60551",
+  "meta:descriptionId": "profile-push-notification-details##description##13811"
 }

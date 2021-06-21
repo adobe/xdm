@@ -22,19 +22,19 @@
           "type": "string",
           "format": "uri",
           "description": "Reference to the model, i.e. its schema $id property. ",
-          "meta:descriptionId": "model-usage##xdm:modelReference##description##99181"
+          "meta:descriptionId": "model-usage##xdm:modelReference##description##88601"
         },
         "xdm:modelPropertyPaths": {
           "type": "array",
           "items": {
             "type": "string",
             "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter.",
-            "meta:descriptionId": "model-usage##items##description##68471"
+            "meta:descriptionId": "model-usage##items##description##40101"
           }
         }
       },
-      "meta:titleId": "model-usage##model-usage##title##32011",
-      "meta:descriptionId": "model-usage##model-usage##description##2221"
+      "meta:titleId": "model-usage##model-usage##title##6691",
+      "meta:descriptionId": "model-usage##model-usage##description##21901"
     }
   },
   "allOf": [
@@ -46,6 +46,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "model-usage##title##75701",
-  "meta:descriptionId": "model-usage##description##84561"
+  "meta:titleId": "model-usage##title##61161",
+  "meta:descriptionId": "model-usage##description##37971"
 }

@@ -19,15 +19,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID associated with this organizational unit.",
-          "meta:titleId": "orgunit##@id##title##52881",
-          "meta:descriptionId": "orgunit##@id##description##6181"
+          "meta:titleId": "orgunit##@id##title##68551",
+          "meta:descriptionId": "orgunit##@id##description##28391"
         },
         "xdm:label": {
           "title": "Label of the organizational unit.",
           "type": "string",
           "description": "The user-friendly name for the organizational unit.",
-          "meta:titleId": "orgunit##xdm:label##title##66311",
-          "meta:descriptionId": "orgunit##xdm:label##description##82681"
+          "meta:titleId": "orgunit##xdm:label##title##26601",
+          "meta:descriptionId": "orgunit##xdm:label##description##40721"
         }
       },
       "required": ["@id"]
@@ -40,6 +40,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "orgunit##title##14091",
-  "meta:descriptionId": "orgunit##description##30241"
+  "meta:titleId": "orgunit##title##93211",
+  "meta:descriptionId": "orgunit##description##57961"
 }

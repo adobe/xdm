@@ -18,74 +18,74 @@
           "title": "Email's priority",
           "type": "string",
           "description": "Captures the priority set by the person who sent the email",
-          "meta:titleId": "emailinteraction##xdm:priority##title##46801",
-          "meta:descriptionId": "emailinteraction##xdm:priority##description##68391"
+          "meta:titleId": "emailinteraction##xdm:priority##title##11391",
+          "meta:descriptionId": "emailinteraction##xdm:priority##description##16451"
         },
         "xdm:sentDateTime": {
           "title": "Date and time the email was sent",
           "type": "string",
           "format": "date-time",
           "description": "Captures the date and time the email correspondence was sent to an individual or a group of people",
-          "meta:titleId": "emailinteraction##xdm:sentDateTime##title##32931",
-          "meta:descriptionId": "emailinteraction##xdm:sentDateTime##description##22641"
+          "meta:titleId": "emailinteraction##xdm:sentDateTime##title##78371",
+          "meta:descriptionId": "emailinteraction##xdm:sentDateTime##description##95281"
         },
         "xdm:receivedDateTime": {
           "title": "Date and time the email was received",
           "type": "string",
           "format": "date-time",
           "description": "Captures the date and time when the email was received",
-          "meta:titleId": "emailinteraction##xdm:receivedDateTime##title##18631",
-          "meta:descriptionId": "emailinteraction##xdm:receivedDateTime##description##59121"
+          "meta:titleId": "emailinteraction##xdm:receivedDateTime##title##13341",
+          "meta:descriptionId": "emailinteraction##xdm:receivedDateTime##description##55391"
         },
         "xdm:body": {
           "title": "Body of the mail",
           "type": "string",
           "description": "The contents of the email after substitution of the placeholders in the template",
-          "meta:titleId": "emailinteraction##xdm:body##title##71881",
-          "meta:descriptionId": "emailinteraction##xdm:body##description##92561"
+          "meta:titleId": "emailinteraction##xdm:body##title##26371",
+          "meta:descriptionId": "emailinteraction##xdm:body##description##21741"
         },
         "xdm:hasAttachments": {
           "title": "Email has attachments",
           "type": "boolean",
           "description": "A flag represent whether any attachment is part of the email message",
-          "meta:titleId": "emailinteraction##xdm:hasAttachments##title##44781",
-          "meta:descriptionId": "emailinteraction##xdm:hasAttachments##description##40821"
+          "meta:titleId": "emailinteraction##xdm:hasAttachments##title##14921",
+          "meta:descriptionId": "emailinteraction##xdm:hasAttachments##description##45261"
         },
         "xdm:isQuarantined": {
           "title": "quarantine message",
           "type": "boolean",
           "description": "A flag to represent whether the email message is a spam",
-          "meta:titleId": "emailinteraction##xdm:isQuarantined##title##98421",
-          "meta:descriptionId": "emailinteraction##xdm:isQuarantined##description##99261"
+          "meta:titleId": "emailinteraction##xdm:isQuarantined##title##58691",
+          "meta:descriptionId": "emailinteraction##xdm:isQuarantined##description##22031"
         },
         "xdm:sizeInBytes": {
           "title": "Email message size",
           "type": "number",
           "description": "Record the size of the email message in bytes",
-          "meta:titleId": "emailinteraction##xdm:sizeInBytes##title##24501",
-          "meta:descriptionId": "emailinteraction##xdm:sizeInBytes##description##54391"
+          "meta:titleId": "emailinteraction##xdm:sizeInBytes##title##26781",
+          "meta:descriptionId": "emailinteraction##xdm:sizeInBytes##description##3981"
         },
         "xdm:failureReasonCode": {
           "title": "Reason code for failure",
           "type": "string",
           "description": "Indicates the error code for not able to deliver the email message",
-          "meta:titleId": "emailinteraction##xdm:failureReasonCode##title##31811",
-          "meta:descriptionId": "emailinteraction##xdm:failureReasonCode##description##15781"
+          "meta:titleId": "emailinteraction##xdm:failureReasonCode##title##46321",
+          "meta:descriptionId": "emailinteraction##xdm:failureReasonCode##description##88231"
         },
         "xdm:failureReasonMessage": {
           "title": "Reason Message for failure",
           "type": "string",
           "description": "Indicates the full message for the error code, for not able to deliver the message",
-          "meta:titleId": "emailinteraction##xdm:failureReasonMessage##title##29341",
-          "meta:descriptionId": "emailinteraction##xdm:failureReasonMessage##description##53481"
+          "meta:titleId": "emailinteraction##xdm:failureReasonMessage##title##90491",
+          "meta:descriptionId": "emailinteraction##xdm:failureReasonMessage##description##58541"
         },
         "xdm:fromAddress": {
           "title": "Person sending the email communication",
           "type": "string",
           "format": "email",
           "description": "Person who is sender of the email message",
-          "meta:titleId": "emailinteraction##xdm:fromAddress##title##40551",
-          "meta:descriptionId": "emailinteraction##xdm:fromAddress##description##64921"
+          "meta:titleId": "emailinteraction##xdm:fromAddress##title##95881",
+          "meta:descriptionId": "emailinteraction##xdm:fromAddress##description##22801"
         },
         "xdm:toAddress": {
           "type": "array",
@@ -95,8 +95,8 @@
             "type": "string",
             "format": "email"
           },
-          "meta:titleId": "emailinteraction##xdm:toAddress##title##70781",
-          "meta:descriptionId": "emailinteraction##xdm:toAddress##description##38091"
+          "meta:titleId": "emailinteraction##xdm:toAddress##title##17721",
+          "meta:descriptionId": "emailinteraction##xdm:toAddress##description##51431"
         },
         "xdm:ccAddress": {
           "type": "array",
@@ -106,8 +106,8 @@
             "type": "string",
             "format": "email"
           },
-          "meta:titleId": "emailinteraction##xdm:ccAddress##title##78291",
-          "meta:descriptionId": "emailinteraction##xdm:ccAddress##description##68231"
+          "meta:titleId": "emailinteraction##xdm:ccAddress##title##74241",
+          "meta:descriptionId": "emailinteraction##xdm:ccAddress##description##2311"
         },
         "xdm:bccAddress": {
           "type": "array",
@@ -117,45 +117,45 @@
             "type": "string",
             "format": "email"
           },
-          "meta:titleId": "emailinteraction##xdm:bccAddress##title##13171",
-          "meta:descriptionId": "emailinteraction##xdm:bccAddress##description##59431"
+          "meta:titleId": "emailinteraction##xdm:bccAddress##title##52591",
+          "meta:descriptionId": "emailinteraction##xdm:bccAddress##description##96741"
         },
         "xdm:headers": {
           "title": "Email headers",
           "type": "string",
           "description": "Captures the headers of the email for diagnosis",
-          "meta:titleId": "emailinteraction##xdm:headers##title##90891",
-          "meta:descriptionId": "emailinteraction##xdm:headers##description##8871"
+          "meta:titleId": "emailinteraction##xdm:headers##title##10891",
+          "meta:descriptionId": "emailinteraction##xdm:headers##description##79911"
         },
         "xdm:incomingMessage": {
           "title": "Inbound or Outbound Message ",
           "type": "boolean",
           "description": "A flag to represent whether a message was sent or recieved",
-          "meta:titleId": "emailinteraction##xdm:incomingMessage##title##78981",
-          "meta:descriptionId": "emailinteraction##xdm:incomingMessage##description##49431"
+          "meta:titleId": "emailinteraction##xdm:incomingMessage##title##13661",
+          "meta:descriptionId": "emailinteraction##xdm:incomingMessage##description##74761"
         },
         "xdm:firstOpenDate": {
           "title": "First time the email was opened by the receiver",
           "type": "string",
           "format": "date-time",
           "description": "First date and time when the receiver took the action to open the email",
-          "meta:titleId": "emailinteraction##xdm:firstOpenDate##title##9501",
-          "meta:descriptionId": "emailinteraction##xdm:firstOpenDate##description##77131"
+          "meta:titleId": "emailinteraction##xdm:firstOpenDate##title##16001",
+          "meta:descriptionId": "emailinteraction##xdm:firstOpenDate##description##68061"
         },
         "xdm:lastOpenDate": {
           "title": "Last time when the email was opened by the receiver",
           "type": "string",
           "format": "date-time",
           "description": "Last time the email was opened, by any receiver",
-          "meta:titleId": "emailinteraction##xdm:lastOpenDate##title##56131",
-          "meta:descriptionId": "emailinteraction##xdm:lastOpenDate##description##5961"
+          "meta:titleId": "emailinteraction##xdm:lastOpenDate##title##43791",
+          "meta:descriptionId": "emailinteraction##xdm:lastOpenDate##description##71051"
         },
         "xdm:isTracked": {
           "title": "Email Tracking flag",
           "type": "boolean",
           "description": "A flag to capture whether the email was tracked by the sender",
-          "meta:titleId": "emailinteraction##xdm:isTracked##title##74541",
-          "meta:descriptionId": "emailinteraction##xdm:isTracked##description##35941"
+          "meta:titleId": "emailinteraction##xdm:isTracked##title##93391",
+          "meta:descriptionId": "emailinteraction##xdm:isTracked##description##95041"
         }
       }
     }
@@ -170,6 +170,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "emailinteraction##title##92981",
-  "meta:descriptionId": "emailinteraction##description##15901"
+  "meta:titleId": "emailinteraction##title##13271",
+  "meta:descriptionId": "emailinteraction##description##48121"
 }

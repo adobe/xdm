@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:impressions",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "impressions##@id##description##75251"
+          "meta:descriptionId": "impressions##@id##description##23161"
         },
         "schema:name": {
           "type": "string",
           "const": "metric: impressions",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "impressions##schema:name##description##24111"
+          "meta:descriptionId": "impressions##schema:name##description##84891"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "impressions##xdm:measurement##description##19781"
+          "meta:descriptionId": "impressions##xdm:measurement##description##40321"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "impressions##title##51181",
-  "meta:descriptionId": "impressions##description##88911"
+  "meta:titleId": "impressions##title##69491",
+  "meta:descriptionId": "impressions##description##72861"
 }

@@ -24,10 +24,10 @@
             "type": "string",
             "format": "uri-reference",
             "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag",
-            "meta:descriptionId": "offer-detail##items##description##3641"
+            "meta:descriptionId": "offer-detail##items##description##3181"
           },
-          "meta:titleId": "offer-detail##xdm:tags##title##54881",
-          "meta:descriptionId": "offer-detail##xdm:tags##description##87301"
+          "meta:titleId": "offer-detail##xdm:tags##title##36021",
+          "meta:descriptionId": "offer-detail##xdm:tags##description##92011"
         }
       }
     }
@@ -41,6 +41,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "offer-detail##title##89121",
-  "meta:descriptionId": "offer-detail##description##63001"
+  "meta:titleId": "offer-detail##title##81661",
+  "meta:descriptionId": "offer-detail##description##92311"
 }

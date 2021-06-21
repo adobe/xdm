@@ -23,36 +23,36 @@
           "title": "Home address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A home postal address.",
-          "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98671",
-          "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##94741"
+          "meta:titleId": "profile-personal-details##xdm:homeAddress##title##15691",
+          "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##51701"
         },
         "xdm:personalEmail": {
           "title": "Personal email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A personal email address.",
-          "meta:titleId": "profile-personal-details##xdm:personalEmail##title##89851",
-          "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##24051"
+          "meta:titleId": "profile-personal-details##xdm:personalEmail##title##82431",
+          "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##31821"
         },
         "xdm:homePhone": {
           "title": "Home phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Home phone number.",
-          "meta:titleId": "profile-personal-details##xdm:homePhone##title##25381",
-          "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##14021"
+          "meta:titleId": "profile-personal-details##xdm:homePhone##title##81741",
+          "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##28241"
         },
         "xdm:mobilePhone": {
           "title": "Mobile phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Mobile phone number.",
-          "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##30941",
-          "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##19711"
+          "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##13461",
+          "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##73751"
         },
         "xdm:faxPhone": {
           "title": "Fax phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Fax phone number.",
-          "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15121",
-          "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##1581"
+          "meta:titleId": "profile-personal-details##xdm:faxPhone##title##50851",
+          "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##21231"
         }
       }
     }
@@ -67,6 +67,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-personal-details##title##38171",
-  "meta:descriptionId": "profile-personal-details##description##96961"
+  "meta:titleId": "profile-personal-details##title##74741",
+  "meta:descriptionId": "profile-personal-details##description##93941"
 }

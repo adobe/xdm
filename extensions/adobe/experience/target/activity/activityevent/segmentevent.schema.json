@@ -17,8 +17,8 @@
           "title": "Segment Identifier",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
           "description": "Activity segment event.",
-          "meta:titleId": "segmentevent##xdm:segmentID##title##87041",
-          "meta:descriptionId": "segmentevent##xdm:segmentID##description##37851"
+          "meta:titleId": "segmentevent##xdm:segmentID##title##75601",
+          "meta:descriptionId": "segmentevent##xdm:segmentID##description##37001"
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
@@ -36,6 +36,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "segmentevent##title##59941",
-  "meta:descriptionId": "segmentevent##description##62341"
+  "meta:titleId": "segmentevent##title##38651",
+  "meta:descriptionId": "segmentevent##description##46071"
 }

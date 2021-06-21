@@ -25,16 +25,16 @@
           "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the offer activity. This @id must be unique across for objects that are not semantically the same, otherwise it is interpreted as referring to the same object. ",
-          "meta:titleId": "offer-activity##@id##title##64241",
-          "meta:descriptionId": "offer-activity##@id##description##7111"
+          "meta:titleId": "offer-activity##@id##title##38471",
+          "meta:descriptionId": "offer-activity##@id##description##39111"
         },
         "xdm:name": {
           "meta:status": "deprecated",
           "type": "string",
           "title": "Name",
           "description": "Activity name. The name is displayed in various user interfaces.",
-          "meta:titleId": "offer-activity##xdm:name##title##4671",
-          "meta:descriptionId": "offer-activity##xdm:name##description##73941"
+          "meta:titleId": "offer-activity##xdm:name##title##65541",
+          "meta:descriptionId": "offer-activity##xdm:name##description##28371"
         },
         "xdm:status": {
           "meta:status": "deprecated",
@@ -48,8 +48,8 @@
             "complete": "Complete",
             "archived": "Archived"
           },
-          "meta:titleId": "offer-activity##xdm:status##title##87841",
-          "meta:descriptionId": "offer-activity##xdm:status##description##10011"
+          "meta:titleId": "offer-activity##xdm:status##title##32561",
+          "meta:descriptionId": "offer-activity##xdm:status##description##99051"
         },
         "xdm:startDate": {
           "meta:status": "deprecated",
@@ -57,8 +57,8 @@
           "format": "date-time",
           "title": "Start Date",
           "description": "Activity Start Date",
-          "meta:titleId": "offer-activity##xdm:startDate##title##56011",
-          "meta:descriptionId": "offer-activity##xdm:startDate##description##78761"
+          "meta:titleId": "offer-activity##xdm:startDate##title##38151",
+          "meta:descriptionId": "offer-activity##xdm:startDate##description##89631"
         },
         "xdm:endDate": {
           "meta:status": "deprecated",
@@ -66,8 +66,8 @@
           "format": "date-time",
           "title": "End Date",
           "description": "Activity End Date",
-          "meta:titleId": "offer-activity##xdm:endDate##title##41161",
-          "meta:descriptionId": "offer-activity##xdm:endDate##description##18321"
+          "meta:titleId": "offer-activity##xdm:endDate##title##99021",
+          "meta:descriptionId": "offer-activity##xdm:endDate##description##2821"
         },
         "xdm:placement": {
           "meta:status": "deprecated",
@@ -75,8 +75,8 @@
           "format": "uri",
           "title": "Offer Placement",
           "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
-          "meta:titleId": "offer-activity##xdm:placement##title##32281",
-          "meta:descriptionId": "offer-activity##xdm:placement##description##48221"
+          "meta:titleId": "offer-activity##xdm:placement##title##59431",
+          "meta:descriptionId": "offer-activity##xdm:placement##description##72121"
         },
         "xdm:filter": {
           "meta:status": "deprecated",
@@ -84,8 +84,8 @@
           "format": "uri",
           "title": "Offer Filter",
           "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter",
-          "meta:titleId": "offer-activity##xdm:filter##title##21651",
-          "meta:descriptionId": "offer-activity##xdm:filter##description##44281"
+          "meta:titleId": "offer-activity##xdm:filter##title##59871",
+          "meta:descriptionId": "offer-activity##xdm:filter##description##59331"
         },
         "xdm:fallback": {
           "meta:status": "deprecated",
@@ -93,8 +93,8 @@
           "format": "uri",
           "title": "Fallback Offer",
           "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
-          "meta:titleId": "offer-activity##xdm:fallback##title##7071",
-          "meta:descriptionId": "offer-activity##xdm:fallback##description##68271"
+          "meta:titleId": "offer-activity##xdm:fallback##title##37051",
+          "meta:descriptionId": "offer-activity##xdm:fallback##description##55241"
         }
       }
     }
@@ -114,6 +114,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "offer-activity##title##63801",
-  "meta:descriptionId": "offer-activity##description##44311"
+  "meta:titleId": "offer-activity##title##41321",
+  "meta:descriptionId": "offer-activity##description##81331"
 }

@@ -17,15 +17,15 @@
           "title": "Key",
           "description": "Key",
           "type": "string",
-          "meta:titleId": "keyvalue##xdm:key##title##35821",
-          "meta:descriptionId": "keyvalue##xdm:key##description##18551"
+          "meta:titleId": "keyvalue##xdm:key##title##65221",
+          "meta:descriptionId": "keyvalue##xdm:key##description##22901"
         },
         "xdm:value": {
           "title": "Value",
           "description": "Value",
           "type": "string",
-          "meta:titleId": "keyvalue##xdm:value##title##96841",
-          "meta:descriptionId": "keyvalue##xdm:value##description##22141"
+          "meta:titleId": "keyvalue##xdm:value##title##33611",
+          "meta:descriptionId": "keyvalue##xdm:value##description##45471"
         }
       }
     }
@@ -36,6 +36,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "keyvalue##title##61441",
-  "meta:descriptionId": "keyvalue##description##49841"
+  "meta:titleId": "keyvalue##title##44171",
+  "meta:descriptionId": "keyvalue##description##5681"
 }

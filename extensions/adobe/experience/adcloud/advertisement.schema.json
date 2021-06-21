@@ -17,8 +17,8 @@
           "title": "Ad Identifier",
           "type": "string",
           "description": "Identifier for the ad this event is associated with. Not related to the Ad-ID standard.",
-          "meta:titleId": "advertisement##xdm:adId##title##20691",
-          "meta:descriptionId": "advertisement##xdm:adId##description##2101"
+          "meta:titleId": "advertisement##xdm:adId##title##33851",
+          "meta:descriptionId": "advertisement##xdm:adId##description##35091"
         },
         "xdm:runtime": {
           "title": "Runtime Type",
@@ -28,8 +28,8 @@
             "unknown": "Unknown",
             "HTML5": "HTML5"
           },
-          "meta:titleId": "advertisement##xdm:runtime##title##83221",
-          "meta:descriptionId": "advertisement##xdm:runtime##description##78641"
+          "meta:titleId": "advertisement##xdm:runtime##title##81141",
+          "meta:descriptionId": "advertisement##xdm:runtime##description##78311"
         },
         "xdm:adClass": {
           "title": "Ad Class",
@@ -40,8 +40,8 @@
             "video": "Video",
             "social": "Social"
           },
-          "meta:titleId": "advertisement##xdm:adClass##title##58851",
-          "meta:descriptionId": "advertisement##xdm:adClass##description##13771"
+          "meta:titleId": "advertisement##xdm:adClass##title##37911",
+          "meta:descriptionId": "advertisement##xdm:adClass##description##1171"
         },
         "xdm:adUnitType": {
           "title": "Ad Unit Type",
@@ -62,64 +62,64 @@
             "linearTv": "Linear TV",
             "vod": "Video on Demand"
           },
-          "meta:titleId": "advertisement##xdm:adUnitType##title##62881",
-          "meta:descriptionId": "advertisement##xdm:adUnitType##description##94361"
+          "meta:titleId": "advertisement##xdm:adUnitType##title##65021",
+          "meta:descriptionId": "advertisement##xdm:adUnitType##description##44401"
         },
         "xdm:promotedAssetId": {
           "title": "Promoted Asset Identifier",
           "type": "string",
           "description": "Identifier for the underlying asset being promoted in the ad which this event is associated with.",
-          "meta:titleId": "advertisement##xdm:promotedAssetId##title##35451",
-          "meta:descriptionId": "advertisement##xdm:promotedAssetId##description##14461"
+          "meta:titleId": "advertisement##xdm:promotedAssetId##title##63891",
+          "meta:descriptionId": "advertisement##xdm:promotedAssetId##description##73871"
         },
         "xdm:creativeID": {
           "title": "Creative Identifier",
           "type": "string",
           "description": "Identifier for the creative which this event is associated with.",
-          "meta:titleId": "advertisement##xdm:creativeID##title##92181",
-          "meta:descriptionId": "advertisement##xdm:creativeID##description##48111"
+          "meta:titleId": "advertisement##xdm:creativeID##title##31601",
+          "meta:descriptionId": "advertisement##xdm:creativeID##description##9901"
         },
         "xdm:keywordID": {
           "title": "Keyword Identifier",
           "type": "string",
           "description": "Identifier for the keyword that the surfer used to search, which triggered this click event.",
-          "meta:titleId": "advertisement##xdm:keywordID##title##20821",
-          "meta:descriptionId": "advertisement##xdm:keywordID##description##92241"
+          "meta:titleId": "advertisement##xdm:keywordID##title##7221",
+          "meta:descriptionId": "advertisement##xdm:keywordID##description##78561"
         },
         "xdm:keyword": {
           "title": "Keyword",
           "type": "string",
           "description": "Listing keyword for which customer is bidding ",
-          "meta:titleId": "advertisement##xdm:keyword##title##38511",
-          "meta:descriptionId": "advertisement##xdm:keyword##description##80331"
+          "meta:titleId": "advertisement##xdm:keyword##title##38981",
+          "meta:descriptionId": "advertisement##xdm:keyword##description##54891"
         },
         "xdm:isDynamicSearchAd": {
           "title": "Is Dynamic Search Advertisement",
           "type": "boolean",
           "description": "Indicates if the click comes from a dynamic search advertisement.",
-          "meta:titleId": "advertisement##xdm:isDynamicSearchAd##title##89961",
-          "meta:descriptionId": "advertisement##xdm:isDynamicSearchAd##description##3731"
+          "meta:titleId": "advertisement##xdm:isDynamicSearchAd##title##73271",
+          "meta:descriptionId": "advertisement##xdm:isDynamicSearchAd##description##57191"
         },
         "xdm:audienceID": {
           "title": "Audience Identifier",
           "type": "string",
           "description": "Identifier for the audience segment for which the ad is targeted.",
-          "meta:titleId": "advertisement##xdm:audienceID##title##61871",
-          "meta:descriptionId": "advertisement##xdm:audienceID##description##39701"
+          "meta:titleId": "advertisement##xdm:audienceID##title##94221",
+          "meta:descriptionId": "advertisement##xdm:audienceID##description##39021"
         },
         "xdm:adGroupID": {
           "title": "Ad Group Identifier",
           "type": "string",
           "description": "Identifier for the adGroup which ad is displayed and triggered this click event.",
-          "meta:titleId": "advertisement##xdm:adGroupID##title##60891",
-          "meta:descriptionId": "advertisement##xdm:adGroupID##description##99201"
+          "meta:titleId": "advertisement##xdm:adGroupID##title##87951",
+          "meta:descriptionId": "advertisement##xdm:adGroupID##description##29141"
         },
         "xdm:campaignID": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Identifier for the campaign that belongs to the current displayed advertisement which triggers this click event.",
-          "meta:titleId": "advertisement##xdm:campaignID##title##30071",
-          "meta:descriptionId": "advertisement##xdm:campaignID##description##81311"
+          "meta:titleId": "advertisement##xdm:campaignID##title##74831",
+          "meta:descriptionId": "advertisement##xdm:campaignID##description##82711"
         },
         "xdm:networkType": {
           "title": "Network Type",
@@ -129,8 +129,8 @@
             "search": "Advertisement is displayed in Search Network",
             "content": "Advertisement is displayed in Content Network"
           },
-          "meta:titleId": "advertisement##xdm:networkType##title##54051",
-          "meta:descriptionId": "advertisement##xdm:networkType##description##31531"
+          "meta:titleId": "advertisement##xdm:networkType##title##65261",
+          "meta:descriptionId": "advertisement##xdm:networkType##description##21951"
         },
         "xdm:matchType": {
           "title": "matchType",
@@ -141,8 +141,8 @@
             "broad": "Broad Match of the keyword",
             "phrase": "Phrase Match of the keyword"
           },
-          "meta:titleId": "advertisement##xdm:matchType##title##36721",
-          "meta:descriptionId": "advertisement##xdm:matchType##description##28311"
+          "meta:titleId": "advertisement##xdm:matchType##title##86241",
+          "meta:descriptionId": "advertisement##xdm:matchType##description##64851"
         }
       }
     }
@@ -153,6 +153,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "advertisement##title##44551",
-  "meta:descriptionId": "advertisement##description##34791"
+  "meta:titleId": "advertisement##title##451",
+  "meta:descriptionId": "advertisement##description##55831"
 }

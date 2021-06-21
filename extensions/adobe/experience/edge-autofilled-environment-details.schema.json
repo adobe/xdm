@@ -19,7 +19,7 @@
         "xdm:environment": {
           "title": "Environment Details",
           "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4",
-          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##71361"
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##94181"
         }
       }
     },
@@ -28,7 +28,7 @@
         "xdm:environment": {
           "title": "Environment Details",
           "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6",
-          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##95831"
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##38511"
         }
       }
     },
@@ -40,7 +40,7 @@
             "xdm:browserDetails": {
               "title": "Browser Details",
               "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent",
-              "meta:titleId": "edge-autofilled-environment-details##xdm:browserDetails##title##90931"
+              "meta:titleId": "edge-autofilled-environment-details##xdm:browserDetails##title##83691"
             }
           }
         }
@@ -55,8 +55,8 @@
               "title": "Geo",
               "$ref": "https://ns.adobe.com/xdm/common/geo",
               "description": "The geographic location where the experience was delivered based on the IP address from the client request.",
-              "meta:titleId": "edge-autofilled-environment-details##xdm:geo##title##87501",
-              "meta:descriptionId": "edge-autofilled-environment-details##xdm:geo##description##89961"
+              "meta:titleId": "edge-autofilled-environment-details##xdm:geo##title##23191",
+              "meta:descriptionId": "edge-autofilled-environment-details##xdm:geo##description##3321"
             }
           }
         }
@@ -78,6 +78,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "edge-autofilled-environment-details##title##16411",
-  "meta:descriptionId": "edge-autofilled-environment-details##description##95641"
+  "meta:titleId": "edge-autofilled-environment-details##title##38641",
+  "meta:descriptionId": "edge-autofilled-environment-details##description##55241"
 }

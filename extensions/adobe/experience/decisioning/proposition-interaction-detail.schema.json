@@ -20,15 +20,15 @@
           "type": "string",
           "title": "Decision Proposition Identifier",
           "description": "The unique identifier of the proposition that originally contained the decision options that are being acted upon (see the corresponding 'items' field in this object). When this identifier is present, direct attribution is given to a unique proposition. If the identifier is missing, the action for the items could not be assiciated with a unique proposition.",
-          "meta:titleId": "proposition-interaction-details##xdm:id##title##61641",
-          "meta:descriptionId": "proposition-interaction-details##xdm:id##description##65951"
+          "meta:titleId": "proposition-interaction-details##xdm:id##title##39041",
+          "meta:descriptionId": "proposition-interaction-details##xdm:id##description##601"
         },
         "xdm:scope": {
           "type": "string",
           "title": "Decision Scope",
           "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made.",
-          "meta:titleId": "proposition-interaction-details##xdm:scope##title##97281",
-          "meta:descriptionId": "proposition-interaction-details##xdm:scope##description##52891"
+          "meta:titleId": "proposition-interaction-details##xdm:scope##title##37661",
+          "meta:descriptionId": "proposition-interaction-details##xdm:scope##description##27021"
         },
         "xdm:items": {
           "type": "array",
@@ -37,49 +37,49 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail",
             "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in.",
-            "meta:descriptionId": "proposition-interaction-details##items##description##92831"
+            "meta:descriptionId": "proposition-interaction-details##items##description##99371"
           },
-          "meta:titleId": "proposition-interaction-details##xdm:items##title##89551",
-          "meta:descriptionId": "proposition-interaction-details##xdm:items##description##51031"
+          "meta:titleId": "proposition-interaction-details##xdm:items##title##59961",
+          "meta:descriptionId": "proposition-interaction-details##xdm:items##description##42051"
         },
         "xdm:scopeDetails": {
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
           "title": "Decision Scope Snapshot",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
-          "meta:titleId": "proposition-interaction-details##xdm:scopeDetails##title##25751",
-          "meta:descriptionId": "proposition-interaction-details##xdm:scopeDetails##description##92071"
+          "meta:titleId": "proposition-interaction-details##xdm:scopeDetails##title##49471",
+          "meta:descriptionId": "proposition-interaction-details##xdm:scopeDetails##description##14071"
         },
         "xdm:decisionEventID": {
           "meta:status": "deprecated",
           "type": "string",
           "title": "Decision Event Identifier (deprecated)",
           "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition. (deprecated)",
-          "meta:titleId": "proposition-interaction-details##xdm:decisionEventID##title##36781",
-          "meta:descriptionId": "proposition-interaction-details##xdm:decisionEventID##description##24511"
+          "meta:titleId": "proposition-interaction-details##xdm:decisionEventID##title##2971",
+          "meta:descriptionId": "proposition-interaction-details##xdm:decisionEventID##description##58071"
         },
         "xdm:decisionEventDetails": {
           "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/decisionevent-details",
           "title": "Decision Event Details (deprecated)",
           "description": "A snapshot of properties from the decision event when it occured. (deprecated)",
-          "meta:titleId": "proposition-interaction-details##xdm:decisionEventDetails##title##79011",
-          "meta:descriptionId": "proposition-interaction-details##xdm:decisionEventDetails##description##5311"
+          "meta:titleId": "proposition-interaction-details##xdm:decisionEventDetails##title##37351",
+          "meta:descriptionId": "proposition-interaction-details##xdm:decisionEventDetails##description##79441"
         },
         "xdm:decisionScope": {
           "meta:status": "deprecated",
           "type": "string",
           "title": "Decision Event Scope (deprecated)",
           "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details.(deprecated)",
-          "meta:titleId": "proposition-interaction-details##xdm:decisionScope##title##63171",
-          "meta:descriptionId": "proposition-interaction-details##xdm:decisionScope##description##85141"
+          "meta:titleId": "proposition-interaction-details##xdm:decisionScope##title##11981",
+          "meta:descriptionId": "proposition-interaction-details##xdm:decisionScope##description##25091"
         },
         "xdm:decisionScopeDetails": {
           "meta:status": "deprecated",
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
           "title": "Decision Event Scope Details (deprecated)",
           "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst. (deprecated)",
-          "meta:titleId": "proposition-interaction-details##xdm:decisionScopeDetails##title##75261",
-          "meta:descriptionId": "proposition-interaction-details##xdm:decisionScopeDetails##description##84321"
+          "meta:titleId": "proposition-interaction-details##xdm:decisionScopeDetails##title##67901",
+          "meta:descriptionId": "proposition-interaction-details##xdm:decisionScopeDetails##description##66451"
         }
       }
     }
@@ -93,6 +93,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "proposition-interaction-details##title##5211",
-  "meta:descriptionId": "proposition-interaction-details##description##47801"
+  "meta:titleId": "proposition-interaction-details##title##50231",
+  "meta:descriptionId": "proposition-interaction-details##description##80651"
 }

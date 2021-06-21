@@ -19,15 +19,15 @@
           "title": "Offer Activity",
           "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
           "$ref": "https://ns.adobe.com/experience/offer-management/offer-activity-detail",
-          "meta:titleId": "proposition-response-detail##xdm:activity##title##2251",
-          "meta:descriptionId": "proposition-response-detail##xdm:activity##description##77301"
+          "meta:titleId": "proposition-response-detail##xdm:activity##title##94501",
+          "meta:descriptionId": "proposition-response-detail##xdm:activity##description##57821"
         },
         "xdm:offer": {
           "title": "Offer",
           "description": "Snapshot of the offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an offer.",
           "$ref": "https://ns.adobe.com/experience/offer-management/offer-detail",
-          "meta:titleId": "proposition-response-detail##xdm:offer##title##3821",
-          "meta:descriptionId": "proposition-response-detail##xdm:offer##description##29821"
+          "meta:titleId": "proposition-response-detail##xdm:offer##title##23391",
+          "meta:descriptionId": "proposition-response-detail##xdm:offer##description##72031"
         }
       }
     }
@@ -41,6 +41,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "proposition-response-detail##title##13441",
-  "meta:descriptionId": "proposition-response-detail##description##23491"
+  "meta:titleId": "proposition-response-detail##title##18071",
+  "meta:descriptionId": "proposition-response-detail##description##32231"
 }

@@ -39,60 +39,60 @@
               "title": "Shared Content",
               "type": "string",
               "description": "Tracks the page/url/content/value of the item being shared.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedContent##title##23941",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedContent##description##32491"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedContent##title##24061",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedContent##description##18751"
             },
             "xdm:follow": {
               "title": "Follow",
               "type": "integer",
               "description": "Tracks when a social follow event has occurred.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:follow##title##25041",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:follow##description##16631"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:follow##title##1991",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:follow##description##29441"
             },
             "xdm:sharedMessage": {
               "title": "Shared Message",
               "type": "string",
               "description": "Message that the sender sent",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedMessage##title##76441",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedMessage##description##84021"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedMessage##title##94491",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedMessage##description##56121"
             },
             "xdm:interactions": {
               "title": "Interactions",
               "type": "integer",
               "description": "The total number of social interactions.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:interactions##title##28331",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:interactions##description##37741"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:interactions##title##55531",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:interactions##description##25891"
             },
             "xdm:network": {
               "title": "Network",
               "type": "string",
               "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:network##title##26311",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:network##description##89521"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:network##title##97091",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:network##description##8961"
             },
             "xdm:target": {
               "title": "Target",
               "type": "string",
               "description": "For social interactions, this is the URL (or resource) which receives the social network action.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:target##title##41881",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:target##description##99701"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:target##title##62061",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:target##description##78801"
             },
             "xdm:recipient": {
               "title": "Recipient",
               "type": "string",
               "description": "Recipient of the shared content",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:recipient##title##9961",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:recipient##description##90111"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:recipient##title##31341",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:recipient##description##73431"
             },
             "xdm:share": {
               "title": "Share",
               "type": "integer",
               "description": "Tracks when a social sharing event has occurred.",
-              "meta:titleId": "experienceevent-social-network-usage-details##xdm:share##title##40701",
-              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:share##description##76171"
+              "meta:titleId": "experienceevent-social-network-usage-details##xdm:share##title##18641",
+              "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:share##description##88411"
             }
           },
-          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:socialMarketing ##description##30351"
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:socialMarketing ##description##46121"
         }
       }
     }
@@ -104,6 +104,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
-  "meta:titleId": "experienceevent-social-network-usage-details##title##1931",
-  "meta:descriptionId": "experienceevent-social-network-usage-details##description##30081"
+  "meta:titleId": "experienceevent-social-network-usage-details##title##86871",
+  "meta:descriptionId": "experienceevent-social-network-usage-details##description##63141"
 }

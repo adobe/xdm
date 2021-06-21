@@ -19,19 +19,19 @@
           "type": "string",
           "const": "https://ns.adobe.com/experience/decisioning/propositionsProfile",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "proposition-metric-profile##@id##description##40091"
+          "meta:descriptionId": "proposition-metric-profile##@id##description##55141"
         },
         "schema:name": {
           "type": "string",
           "const": "option metric: per profile propositions",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "proposition-metric-profile##schema:name##description##29081"
+          "meta:descriptionId": "proposition-metric-profile##schema:name##description##18761"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "proposition-metric-profile##xdm:measurement##description##16601"
+          "meta:descriptionId": "proposition-metric-profile##xdm:measurement##description##35121"
         },
         "xdm:unit": {
           "const": null
@@ -49,6 +49,6 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
-  "meta:titleId": "proposition-metric-profile##title##15141",
-  "meta:descriptionId": "proposition-metric-profile##description##84971"
+  "meta:titleId": "proposition-metric-profile##title##21931",
+  "meta:descriptionId": "proposition-metric-profile##description##22271"
 }

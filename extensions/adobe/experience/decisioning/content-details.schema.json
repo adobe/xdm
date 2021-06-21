@@ -19,8 +19,8 @@
           "format": "uri-reference",
           "title": "Placement",
           "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/decisioning/placement",
-          "meta:titleId": "content-details##xdm:placement##title##15661",
-          "meta:descriptionId": "content-details##xdm:placement##description##51281"
+          "meta:titleId": "content-details##xdm:placement##title##7281",
+          "meta:descriptionId": "content-details##xdm:placement##description##44101"
         },
         "xdm:components": {
           "type": "array",
@@ -28,7 +28,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details"
           },
-          "meta:descriptionId": "content-details##xdm:components##description##28251"
+          "meta:descriptionId": "content-details##xdm:components##description##54801"
         }
       }
     }
@@ -39,6 +39,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "content-details##title##92061",
-  "meta:descriptionId": "content-details##description##47301"
+  "meta:titleId": "content-details##title##42641",
+  "meta:descriptionId": "content-details##description##79141"
 }

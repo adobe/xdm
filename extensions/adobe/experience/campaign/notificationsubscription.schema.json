@@ -18,37 +18,37 @@
           "title": "Topic Identifier",
           "type": "string",
           "description": "The topic that the end-user has subscribed to and opted into notifications for.",
-          "meta:titleId": "notificationsubscription##xdm:topicID##title##89481",
-          "meta:descriptionId": "notificationsubscription##xdm:topicID##description##51501"
+          "meta:titleId": "notificationsubscription##xdm:topicID##title##21351",
+          "meta:descriptionId": "notificationsubscription##xdm:topicID##description##59461"
         },
         "xdm:type": {
           "title": "Subscription type",
           "type": "string",
           "description": "The type of notification/subscription.",
-          "meta:titleId": "notificationsubscription##xdm:type##title##98111",
-          "meta:descriptionId": "notificationsubscription##xdm:type##description##84271"
+          "meta:titleId": "notificationsubscription##xdm:type##title##70941",
+          "meta:descriptionId": "notificationsubscription##xdm:type##description##61421"
         },
         "xdm:subscriptionDate": {
           "title": "Subscription Date",
           "type": "string",
           "format": "date-time",
           "description": "Date and time when the end-user has subscribed to a notification topic. An end-user is subscribed if they have a Subscription Date and the `unsubscriptiondetails/unsubscriptionDate` is empty.",
-          "meta:titleId": "notificationsubscription##xdm:subscriptionDate##title##43841",
-          "meta:descriptionId": "notificationsubscription##xdm:subscriptionDate##description##41401"
+          "meta:titleId": "notificationsubscription##xdm:subscriptionDate##title##90581",
+          "meta:descriptionId": "notificationsubscription##xdm:subscriptionDate##description##28471"
         },
         "xdm:notificationTarget": {
           "title": "Target/destination for the notification",
           "description": "Target/destination for where to send/receive the notification.",
           "$ref": "https://ns.adobe.com/experience/campaign/notificationsubscriptiontarget",
-          "meta:titleId": "notificationsubscription##xdm:notificationTarget##title##52641",
-          "meta:descriptionId": "notificationsubscription##xdm:notificationTarget##description##90181"
+          "meta:titleId": "notificationsubscription##xdm:notificationTarget##title##22231",
+          "meta:descriptionId": "notificationsubscription##xdm:notificationTarget##description##54351"
         },
         "xdm:unsubscriptionDetails": {
           "title": "Adobe Campaign Notification Unsubscription details",
           "description": "Adobe Campaign notification unsubscription details.",
           "$ref": "https://ns.adobe.com/experience/campaign/notificationunsubscriptiondetails",
-          "meta:titleId": "notificationsubscription##xdm:unsubscriptionDetails##title##87771",
-          "meta:descriptionId": "notificationsubscription##xdm:unsubscriptionDetails##description##85131"
+          "meta:titleId": "notificationsubscription##xdm:unsubscriptionDetails##title##97961",
+          "meta:descriptionId": "notificationsubscription##xdm:unsubscriptionDetails##description##90291"
         }
       },
       "required": ["xdm:topicID", "xdm:type", "xdm:subscriptionDate"]
@@ -63,6 +63,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "notificationsubscription##title##53521",
-  "meta:descriptionId": "notificationsubscription##description##63321"
+  "meta:titleId": "notificationsubscription##title##11091",
+  "meta:descriptionId": "notificationsubscription##description##35941"
 }

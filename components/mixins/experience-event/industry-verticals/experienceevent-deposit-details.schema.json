@@ -34,27 +34,27 @@
                   "title": "Deposit Transaction",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                   "description": "Extension of transaction data type.",
-                  "meta:titleId": "experienceevent-deposit-details##xdm:transaction##title##16651",
-                  "meta:descriptionId": "experienceevent-deposit-details##xdm:transaction##description##35621"
+                  "meta:titleId": "experienceevent-deposit-details##xdm:transaction##title##83081",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:transaction##description##87201"
                 },
                 "xdm:account": {
                   "title": "Deposit Account",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
                   "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
-                  "meta:titleId": "experienceevent-deposit-details##xdm:account##title##13991",
-                  "meta:descriptionId": "experienceevent-deposit-details##xdm:account##description##33731"
+                  "meta:titleId": "experienceevent-deposit-details##xdm:account##title##53971",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:account##description##38351"
                 },
                 "xdm:mobileDeposit": {
                   "title": "Mobile Deposit",
                   "type": "boolean",
                   "description": "Indicator for whether the deposit was done through mobile or not.",
-                  "meta:titleId": "experienceevent-deposit-details##xdm:mobileDeposit##title##19471",
-                  "meta:descriptionId": "experienceevent-deposit-details##xdm:mobileDeposit##description##54281"
+                  "meta:titleId": "experienceevent-deposit-details##xdm:mobileDeposit##title##92461",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:mobileDeposit##description##93971"
                 }
               }
             }
           },
-          "meta:descriptionId": "experienceevent-deposit-details##xdm:personalFinances##description##64081"
+          "meta:descriptionId": "experienceevent-deposit-details##xdm:personalFinances##description##58431"
         }
       }
     }
@@ -66,6 +66,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-deposit-details##title##31031",
-  "meta:descriptionId": "experienceevent-deposit-details##description##87071"
+  "meta:titleId": "experienceevent-deposit-details##title##66571",
+  "meta:descriptionId": "experienceevent-deposit-details##description##71351"
 }

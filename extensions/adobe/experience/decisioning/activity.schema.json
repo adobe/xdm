@@ -21,39 +21,39 @@
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken.",
-          "meta:titleId": "activity##repo:etag##title##3931",
-          "meta:descriptionId": "activity##repo:etag##description##301"
+          "meta:titleId": "activity##repo:etag##title##18491",
+          "meta:descriptionId": "activity##repo:etag##description##28161"
         },
         "https://ns.adobe.com/experience/decisioning/name": {
           "title": "Activity Name",
           "type": "string",
           "description": "Activity name. The name is displayed in various user interfaces.",
-          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/name##title##86851",
-          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/name##description##46111"
+          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/name##title##89441",
+          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/name##description##29001"
         },
         "https://ns.adobe.com/experience/decisioning/startTime": {
           "title": "Activity Start Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
-          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/startTime##title##12071",
-          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/startTime##description##56251"
+          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/startTime##title##14601",
+          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/startTime##description##5721"
         },
         "https://ns.adobe.com/experience/decisioning/endTime": {
           "title": "Activity End Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
-          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/endTime##title##52941",
-          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/endTime##description##55711"
+          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/endTime##title##31021",
+          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/endTime##description##14761"
         },
         "https://ns.adobe.com/experience/decisioning/fallback": {
           "title": "Fallback Option",
           "type": "string",
           "format": "uri-reference",
           "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.",
-          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/fallback##title##73021",
-          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/fallback##description##14991"
+          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/fallback##title##22951",
+          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/fallback##description##6401"
         }
       }
     },
@@ -65,15 +65,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique, immutable identifier for the decision activity.",
-          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/activityID##title##7031",
-          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/activityID##description##21031"
+          "meta:titleId": "activity##https://ns.adobe.com/experience/decisioning/activityID##title##24741",
+          "meta:descriptionId": "activity##https://ns.adobe.com/experience/decisioning/activityID##description##64161"
         },
         "repo:etag": {
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken.",
-          "meta:titleId": "activity##repo:etag##title##31401",
-          "meta:descriptionId": "activity##repo:etag##description##55951"
+          "meta:titleId": "activity##repo:etag##title##88321",
+          "meta:descriptionId": "activity##repo:etag##description##17531"
         }
       }
     }
@@ -87,6 +87,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "activity##title##97051",
-  "meta:descriptionId": "activity##description##66891"
+  "meta:titleId": "activity##title##64091",
+  "meta:descriptionId": "activity##description##26151"
 }

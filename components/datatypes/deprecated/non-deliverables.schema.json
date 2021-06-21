@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:nonDeliverables",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "non-deliverables##@id##description##21301"
+          "meta:descriptionId": "non-deliverables##@id##description##68761"
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: nonDeliverables",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "non-deliverables##schema:name##description##69411"
+          "meta:descriptionId": "non-deliverables##schema:name##description##29801"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "non-deliverables##xdm:measurement##description##74341"
+          "meta:descriptionId": "non-deliverables##xdm:measurement##description##76121"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "non-deliverables##title##96371",
-  "meta:descriptionId": "non-deliverables##description##38001"
+  "meta:titleId": "non-deliverables##title##81461",
+  "meta:descriptionId": "non-deliverables##description##51761"
 }

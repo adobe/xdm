@@ -18,8 +18,8 @@
           "title": "Amount",
           "description": "Amount represented by the currencyCode",
           "type": "number",
-          "meta:titleId": "currency##xdm:amount##title##57851",
-          "meta:descriptionId": "currency##xdm:amount##description##84601"
+          "meta:titleId": "currency##xdm:amount##title##88431",
+          "meta:descriptionId": "currency##xdm:amount##description##38021"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -27,16 +27,16 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code.",
-          "meta:titleId": "currency##xdm:currencyCode##title##67881",
-          "meta:descriptionId": "currency##xdm:currencyCode##description##87261"
+          "meta:titleId": "currency##xdm:currencyCode##title##2151",
+          "meta:descriptionId": "currency##xdm:currencyCode##description##28481"
         },
         "xdm:conversionDate": {
           "title": "Conversion Date",
           "description": "Date when currency conversion was made.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "currency##xdm:conversionDate##title##70071",
-          "meta:descriptionId": "currency##xdm:conversionDate##description##92371"
+          "meta:titleId": "currency##xdm:conversionDate##title##85671",
+          "meta:descriptionId": "currency##xdm:conversionDate##description##4751"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-09-29",
-  "meta:titleId": "currency##title##90091",
-  "meta:descriptionId": "currency##description##9031"
+  "meta:titleId": "currency##title##9291",
+  "meta:descriptionId": "currency##description##20871"
 }

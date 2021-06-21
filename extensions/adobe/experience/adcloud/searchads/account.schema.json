@@ -23,15 +23,15 @@
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
-          "meta:titleId": "account##searchads:accountId##title##12731",
-          "meta:descriptionId": "account##searchads:accountId##description##84271"
+          "meta:titleId": "account##searchads:accountId##title##56941",
+          "meta:descriptionId": "account##searchads:accountId##description##99431"
         },
         "searchads:accountName": {
           "title": "Account Name",
           "type": "string",
           "description": "Name of the Account.",
-          "meta:titleId": "account##searchads:accountName##title##39641",
-          "meta:descriptionId": "account##searchads:accountName##description##70901"
+          "meta:titleId": "account##searchads:accountName##title##85821",
+          "meta:descriptionId": "account##searchads:accountName##description##30751"
         },
         "searchads:currencyCode": {
           "title": "Currency Code",
@@ -43,8 +43,8 @@
           ],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates.",
-          "meta:titleId": "account##searchads:currencyCode##title##12901",
-          "meta:descriptionId": "account##searchads:currencyCode##description##62081"
+          "meta:titleId": "account##searchads:currencyCode##title##19401",
+          "meta:descriptionId": "account##searchads:currencyCode##description##26961"
         },
         "searchads:accountStatus": {
           "title": "Account Status",
@@ -58,15 +58,15 @@
             "Enabled": "Enabled",
             "Disabled": "Disabled"
           },
-          "meta:titleId": "account##searchads:accountStatus##title##94561",
-          "meta:descriptionId": "account##searchads:accountStatus##description##14021"
+          "meta:titleId": "account##searchads:accountStatus##title##80931",
+          "meta:descriptionId": "account##searchads:accountStatus##description##2981"
         },
         "searchads:budget": {
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns.",
-          "meta:titleId": "account##searchads:budget##title##79421",
-          "meta:descriptionId": "account##searchads:budget##description##26431"
+          "meta:titleId": "account##searchads:budget##title##61511",
+          "meta:descriptionId": "account##searchads:budget##description##76221"
         },
         "searchads:budgetType": {
           "title": "Budget Type",
@@ -86,15 +86,15 @@
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of Week": "Day of Week"
           },
-          "meta:titleId": "account##searchads:budgetType##title##2771",
-          "meta:descriptionId": "account##searchads:budgetType##description##42691"
+          "meta:titleId": "account##searchads:budgetType##title##3481",
+          "meta:descriptionId": "account##searchads:budgetType##description##33291"
         },
         "searchads:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name.",
-          "meta:titleId": "account##searchads:searchEngineId##title##72491",
-          "meta:descriptionId": "account##searchads:searchEngineId##description##19941"
+          "meta:titleId": "account##searchads:searchEngineId##title##85301",
+          "meta:descriptionId": "account##searchads:searchEngineId##description##70141"
         },
         "searchads:createDate": {
           "type": "string",
@@ -103,7 +103,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the account was created. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "account##searchads:createDate##description##64611"
+          "meta:descriptionId": "account##searchads:createDate##description##21411"
         },
         "searchads:modifyDate": {
           "type": "string",
@@ -112,7 +112,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the account was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "account##searchads:modifyDate##description##55121"
+          "meta:descriptionId": "account##searchads:modifyDate##description##10111"
         }
       }
     }
@@ -129,6 +129,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "account##title##83431",
-  "meta:descriptionId": "account##description##25061"
+  "meta:titleId": "account##title##1551",
+  "meta:descriptionId": "account##description##58171"
 }

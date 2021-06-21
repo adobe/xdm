@@ -29,32 +29,32 @@
               "title": "Mailing ID",
               "type": "string",
               "description": "Unique ID of the email asset.",
-              "meta:titleId": "emailunsubscribed##xdm:mailingID##title##72821",
-              "meta:descriptionId": "emailunsubscribed##xdm:mailingID##description##90381"
+              "meta:titleId": "emailunsubscribed##xdm:mailingID##title##52261",
+              "meta:descriptionId": "emailunsubscribed##xdm:mailingID##description##90131"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
               "description": "Name of the email asset.",
-              "meta:titleId": "emailunsubscribed##xdm:mailingName##title##82781",
-              "meta:descriptionId": "emailunsubscribed##xdm:mailingName##description##34881"
+              "meta:titleId": "emailunsubscribed##xdm:mailingName##title##8861",
+              "meta:descriptionId": "emailunsubscribed##xdm:mailingName##description##82091"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
               "description": "Unique ID of the test variant of the email asset.",
-              "meta:titleId": "emailunsubscribed##xdm:testVariantID##title##95411",
-              "meta:descriptionId": "emailunsubscribed##xdm:testVariantID##description##48531"
+              "meta:titleId": "emailunsubscribed##xdm:testVariantID##title##84691",
+              "meta:descriptionId": "emailunsubscribed##xdm:testVariantID##description##93331"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
               "description": "Friendly name of the test variant of the email asset.",
-              "meta:titleId": "emailunsubscribed##xdm:testVariantName##title##92741",
-              "meta:descriptionId": "emailunsubscribed##xdm:testVariantName##description##33081"
+              "meta:titleId": "emailunsubscribed##xdm:testVariantName##title##22031",
+              "meta:descriptionId": "emailunsubscribed##xdm:testVariantName##description##48591"
             }
           },
-          "meta:titleId": "emailunsubscribed##xdm:directMarketing##title##97981"
+          "meta:titleId": "emailunsubscribed##xdm:directMarketing##title##41411"
         },
         "xdm:web": {
           "title": "Web",
@@ -69,18 +69,18 @@
                   "title": "Web Form ID",
                   "type": "string",
                   "description": "Unique ID of the form.",
-                  "meta:titleId": "emailunsubscribed##xdm:webFormID##title##16361",
-                  "meta:descriptionId": "emailunsubscribed##xdm:webFormID##description##64881"
+                  "meta:titleId": "emailunsubscribed##xdm:webFormID##title##16021",
+                  "meta:descriptionId": "emailunsubscribed##xdm:webFormID##description##55761"
                 },
                 "xdm:webFormName": {
                   "title": "Web Form Name",
                   "type": "string",
                   "description": "Friendly name of the form.",
-                  "meta:titleId": "emailunsubscribed##xdm:webFormName##title##7381",
-                  "meta:descriptionId": "emailunsubscribed##xdm:webFormName##description##38901"
+                  "meta:titleId": "emailunsubscribed##xdm:webFormName##title##3041",
+                  "meta:descriptionId": "emailunsubscribed##xdm:webFormName##description##51231"
                 }
               },
-              "meta:titleId": "emailunsubscribed##xdm:fillOutForm##title##74851"
+              "meta:titleId": "emailunsubscribed##xdm:fillOutForm##title##35281"
             },
             "xdm:webPageDetails": {
               "title": "Web Page Details",
@@ -90,25 +90,25 @@
                   "title": "Web Page ID",
                   "type": "string",
                   "description": "Unique ID of the web page.",
-                  "meta:titleId": "emailunsubscribed##xdm:webPageID##title##46871",
-                  "meta:descriptionId": "emailunsubscribed##xdm:webPageID##description##79681"
+                  "meta:titleId": "emailunsubscribed##xdm:webPageID##title##64561",
+                  "meta:descriptionId": "emailunsubscribed##xdm:webPageID##description##95091"
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
                   "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-                  "meta:titleId": "emailunsubscribed##xdm:name##title##48761",
-                  "meta:descriptionId": "emailunsubscribed##xdm:name##description##751"
+                  "meta:titleId": "emailunsubscribed##xdm:name##title##63311",
+                  "meta:descriptionId": "emailunsubscribed##xdm:name##description##84711"
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
                   "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
-                  "meta:titleId": "emailunsubscribed##xdm:queryParameters##title##61911",
-                  "meta:descriptionId": "emailunsubscribed##xdm:queryParameters##description##85911"
+                  "meta:titleId": "emailunsubscribed##xdm:queryParameters##title##15441",
+                  "meta:descriptionId": "emailunsubscribed##xdm:queryParameters##description##44791"
                 }
               },
-              "meta:titleId": "emailunsubscribed##xdm:webPageDetails##title##61621"
+              "meta:titleId": "emailunsubscribed##xdm:webPageDetails##title##26601"
             },
             "xdm:webReferrer": {
               "title": "Web Referrer",
@@ -118,15 +118,15 @@
                   "title": "URL",
                   "type": "string",
                   "description": "URL of referrer to web page.",
-                  "meta:titleId": "emailunsubscribed##xdm:URL##title##9571",
-                  "meta:descriptionId": "emailunsubscribed##xdm:URL##description##76791"
+                  "meta:titleId": "emailunsubscribed##xdm:URL##title##34311",
+                  "meta:descriptionId": "emailunsubscribed##xdm:URL##description##41681"
                 }
               },
-              "meta:titleId": "emailunsubscribed##xdm:webReferrer##title##83571"
+              "meta:titleId": "emailunsubscribed##xdm:webReferrer##title##41691"
             }
           },
-          "meta:titleId": "emailunsubscribed##xdm:web##title##63391",
-          "meta:descriptionId": "emailunsubscribed##xdm:web##description##36371"
+          "meta:titleId": "emailunsubscribed##xdm:web##title##83191",
+          "meta:descriptionId": "emailunsubscribed##xdm:web##description##71721"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -138,8 +138,8 @@
               "type": "string",
               "format": "ipv4",
               "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
-              "meta:titleId": "emailunsubscribed##xdm:ipV4##title##21211",
-              "meta:descriptionId": "emailunsubscribed##xdm:ipV4##description##55051"
+              "meta:titleId": "emailunsubscribed##xdm:ipV4##title##96521",
+              "meta:descriptionId": "emailunsubscribed##xdm:ipV4##description##16661"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -150,16 +150,16 @@
                   "title": "User agent",
                   "type": "string",
                   "description": "The HTTP user-agent string from the client request.",
-                  "meta:titleId": "emailunsubscribed##xdm:userAgent##title##19621",
-                  "meta:descriptionId": "emailunsubscribed##xdm:userAgent##description##61921"
+                  "meta:titleId": "emailunsubscribed##xdm:userAgent##title##73881",
+                  "meta:descriptionId": "emailunsubscribed##xdm:userAgent##description##59311"
                 }
               },
-              "meta:titleId": "emailunsubscribed##xdm:browserDetails##title##62611",
-              "meta:descriptionId": "emailunsubscribed##xdm:browserDetails##description##12991"
+              "meta:titleId": "emailunsubscribed##xdm:browserDetails##title##75291",
+              "meta:descriptionId": "emailunsubscribed##xdm:browserDetails##description##39661"
             }
           },
-          "meta:titleId": "emailunsubscribed##xdm:environment##title##83491",
-          "meta:descriptionId": "emailunsubscribed##xdm:environment##description##98581"
+          "meta:titleId": "emailunsubscribed##xdm:environment##title##76191",
+          "meta:descriptionId": "emailunsubscribed##xdm:environment##description##26931"
         }
       }
     }
@@ -171,6 +171,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "emailunsubscribed##title##53791",
-  "meta:descriptionId": "emailunsubscribed##description##14161"
+  "meta:titleId": "emailunsubscribed##title##13771",
+  "meta:descriptionId": "emailunsubscribed##description##84701"
 }

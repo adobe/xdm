@@ -20,15 +20,15 @@
           "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object.",
-          "meta:titleId": "offer##@id##title##73131",
-          "meta:descriptionId": "offer##@id##description##78991"
+          "meta:titleId": "offer##@id##title##32491",
+          "meta:descriptionId": "offer##@id##description##27951"
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
           "description": "The offer's name. A human readable string to find one or more offers.",
-          "meta:titleId": "offer##xdm:name##title##72861",
-          "meta:descriptionId": "offer##xdm:name##description##68031"
+          "meta:titleId": "offer##xdm:name##title##6251",
+          "meta:descriptionId": "offer##xdm:name##description##33431"
         },
         "xdm:status": {
           "type": "string",
@@ -42,8 +42,8 @@
             "approved": "Approved",
             "archived": "Archived"
           },
-          "meta:titleId": "offer##xdm:status##title##70921",
-          "meta:descriptionId": "offer##xdm:status##description##70301"
+          "meta:titleId": "offer##xdm:status##title##18431",
+          "meta:descriptionId": "offer##xdm:status##description##13911"
         },
         "xdm:tags": {
           "type": "array",
@@ -53,10 +53,10 @@
             "type": "string",
             "format": "uri",
             "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag",
-            "meta:descriptionId": "offer##items##description##81911"
+            "meta:descriptionId": "offer##items##description##4441"
           },
-          "meta:titleId": "offer##xdm:tags##title##27301",
-          "meta:descriptionId": "offer##xdm:tags##description##87581"
+          "meta:titleId": "offer##xdm:tags##title##88891",
+          "meta:descriptionId": "offer##xdm:tags##description##25241"
         },
         "xdm:representations": {
           "type": "array",
@@ -65,8 +65,8 @@
           },
           "title": "Representations",
           "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). ",
-          "meta:titleId": "offer##xdm:representations##title##65941",
-          "meta:descriptionId": "offer##xdm:representations##description##71811"
+          "meta:titleId": "offer##xdm:representations##title##97361",
+          "meta:descriptionId": "offer##xdm:representations##description##23701"
         },
         "xdm:customMetadata": {
           "type": "object",
@@ -77,8 +77,8 @@
           },
           "title": "Custom Properties",
           "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings.",
-          "meta:titleId": "offer##xdm:customMetadata##title##56801",
-          "meta:descriptionId": "offer##xdm:customMetadata##description##15421"
+          "meta:titleId": "offer##xdm:customMetadata##title##53751",
+          "meta:descriptionId": "offer##xdm:customMetadata##description##59071"
         }
       }
     }
@@ -92,6 +92,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "offer##title##76181",
-  "meta:descriptionId": "offer##description##30601"
+  "meta:titleId": "offer##title##64401",
+  "meta:descriptionId": "offer##description##96631"
 }

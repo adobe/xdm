@@ -29,22 +29,22 @@
                   "title": "Work Address",
                   "$ref": "https://ns.adobe.com/xdm/common/address",
                   "description": "A work postal address.",
-                  "meta:titleId": "experienceevent-profile-work-details##xdm:workAddress##title##84931",
-                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workAddress##description##24631"
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workAddress##title##76941",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workAddress##description##44161"
                 },
                 "xdm:workEmail": {
                   "title": "Work Email",
                   "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
                   "description": "A work email address.",
-                  "meta:titleId": "experienceevent-profile-work-details##xdm:workEmail##title##88411",
-                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workEmail##description##5401"
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workEmail##title##24341",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workEmail##description##31531"
                 },
                 "xdm:workPhone": {
                   "title": "Work Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                   "description": "Work phone number.",
-                  "meta:titleId": "experienceevent-profile-work-details##xdm:workPhone##title##90121",
-                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workPhone##description##55061"
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:workPhone##title##77311",
+                  "meta:descriptionId": "experienceevent-profile-work-details##xdm:workPhone##description##89651"
                 },
                 "xdm:organizations": {
                   "title": "Organizations",
@@ -52,14 +52,14 @@
                   "items": {
                     "type": "string"
                   },
-                  "meta:titleId": "experienceevent-profile-work-details##xdm:organizations##title##7941"
+                  "meta:titleId": "experienceevent-profile-work-details##xdm:organizations##title##54421"
                 }
               },
-              "meta:titleId": "experienceevent-profile-work-details##xdm:profileSnapshot##title##45971",
-              "meta:descriptionId": "experienceevent-profile-work-details##xdm:profileSnapshot##description##26531"
+              "meta:titleId": "experienceevent-profile-work-details##xdm:profileSnapshot##title##92411",
+              "meta:descriptionId": "experienceevent-profile-work-details##xdm:profileSnapshot##description##49031"
             }
           },
-          "meta:titleId": "experienceevent-profile-work-details##https://ns.adobe.com/experience/campaign/message##title##58351"
+          "meta:titleId": "experienceevent-profile-work-details##https://ns.adobe.com/experience/campaign/message##title##98691"
         }
       }
     }
@@ -70,6 +70,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-profile-work-details##title##97541",
-  "meta:descriptionId": "experienceevent-profile-work-details##description##64351"
+  "meta:titleId": "experienceevent-profile-work-details##title##59061",
+  "meta:descriptionId": "experienceevent-profile-work-details##description##32591"
 }

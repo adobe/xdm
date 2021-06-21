@@ -34,18 +34,18 @@
                   "title": "Link ID",
                   "type": "string",
                   "description": "Unique ID of the link clicked.",
-                  "meta:titleId": "linkclicks##xdm:linkID##title##5631",
-                  "meta:descriptionId": "linkclicks##xdm:linkID##description##14141"
+                  "meta:titleId": "linkclicks##xdm:linkID##title##29561",
+                  "meta:descriptionId": "linkclicks##xdm:linkID##description##31781"
                 },
                 "xdm:linkURL": {
                   "title": "Link URL",
                   "type": "string",
                   "description": "URL of the link clicked.",
-                  "meta:titleId": "linkclicks##xdm:linkURL##title##12801",
-                  "meta:descriptionId": "linkclicks##xdm:linkURL##description##61331"
+                  "meta:titleId": "linkclicks##xdm:linkURL##title##3531",
+                  "meta:descriptionId": "linkclicks##xdm:linkURL##description##38051"
                 }
               },
-              "meta:titleId": "linkclicks##xdm:webInteraction##title##99971"
+              "meta:titleId": "linkclicks##xdm:webInteraction##title##27891"
             },
             "xdm:webPageDetails": {
               "title": "Web Page Details",
@@ -55,25 +55,25 @@
                   "title": "Web Page ID",
                   "type": "string",
                   "description": "Unique ID of the web page.",
-                  "meta:titleId": "linkclicks##xdm:webPageID##title##48911",
-                  "meta:descriptionId": "linkclicks##xdm:webPageID##description##53441"
+                  "meta:titleId": "linkclicks##xdm:webPageID##title##74361",
+                  "meta:descriptionId": "linkclicks##xdm:webPageID##description##93791"
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
                   "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-                  "meta:titleId": "linkclicks##xdm:name##title##91111",
-                  "meta:descriptionId": "linkclicks##xdm:name##description##6291"
+                  "meta:titleId": "linkclicks##xdm:name##title##4871",
+                  "meta:descriptionId": "linkclicks##xdm:name##description##99371"
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
                   "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
-                  "meta:titleId": "linkclicks##xdm:queryParameters##title##2971",
-                  "meta:descriptionId": "linkclicks##xdm:queryParameters##description##41691"
+                  "meta:titleId": "linkclicks##xdm:queryParameters##title##44871",
+                  "meta:descriptionId": "linkclicks##xdm:queryParameters##description##59651"
                 }
               },
-              "meta:titleId": "linkclicks##xdm:webPageDetails##title##6251"
+              "meta:titleId": "linkclicks##xdm:webPageDetails##title##79171"
             },
             "xdm:webReferrer": {
               "title": "Web Referrer",
@@ -83,15 +83,15 @@
                   "title": "URL",
                   "type": "string",
                   "description": "URL of the referrer to the website.",
-                  "meta:titleId": "linkclicks##xdm:URL##title##12581",
-                  "meta:descriptionId": "linkclicks##xdm:URL##description##15861"
+                  "meta:titleId": "linkclicks##xdm:URL##title##57061",
+                  "meta:descriptionId": "linkclicks##xdm:URL##description##64751"
                 }
               },
-              "meta:titleId": "linkclicks##xdm:webReferrer##title##26921"
+              "meta:titleId": "linkclicks##xdm:webReferrer##title##66321"
             }
           },
-          "meta:titleId": "linkclicks##xdm:web##title##12371",
-          "meta:descriptionId": "linkclicks##xdm:web##description##64291"
+          "meta:titleId": "linkclicks##xdm:web##title##4501",
+          "meta:descriptionId": "linkclicks##xdm:web##description##59081"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -103,8 +103,8 @@
               "type": "string",
               "format": "ipv4",
               "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
-              "meta:titleId": "linkclicks##xdm:ipV4##title##5101",
-              "meta:descriptionId": "linkclicks##xdm:ipV4##description##53481"
+              "meta:titleId": "linkclicks##xdm:ipV4##title##98491",
+              "meta:descriptionId": "linkclicks##xdm:ipV4##description##24421"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -115,16 +115,16 @@
                   "title": "User agent",
                   "type": "string",
                   "description": "The HTTP user-agent string from the client request.",
-                  "meta:titleId": "linkclicks##xdm:userAgent##title##65751",
-                  "meta:descriptionId": "linkclicks##xdm:userAgent##description##98261"
+                  "meta:titleId": "linkclicks##xdm:userAgent##title##68591",
+                  "meta:descriptionId": "linkclicks##xdm:userAgent##description##79201"
                 }
               },
-              "meta:titleId": "linkclicks##xdm:browserDetails##title##46741",
-              "meta:descriptionId": "linkclicks##xdm:browserDetails##description##45891"
+              "meta:titleId": "linkclicks##xdm:browserDetails##title##81061",
+              "meta:descriptionId": "linkclicks##xdm:browserDetails##description##75901"
             }
           },
-          "meta:titleId": "linkclicks##xdm:environment##title##44961",
-          "meta:descriptionId": "linkclicks##xdm:environment##description##91751"
+          "meta:titleId": "linkclicks##xdm:environment##title##9931",
+          "meta:descriptionId": "linkclicks##xdm:environment##description##47111"
         }
       }
     }
@@ -136,6 +136,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "linkclicks##title##68751",
-  "meta:descriptionId": "linkclicks##description##24311"
+  "meta:titleId": "linkclicks##title##69791",
+  "meta:descriptionId": "linkclicks##description##99031"
 }

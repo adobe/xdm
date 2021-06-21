@@ -20,22 +20,22 @@
           "format": "uri-reference",
           "type": "string",
           "description": "The identity of the chapter.",
-          "meta:titleId": "media-timed-chapter-asset-reference##@id##title##87581",
-          "meta:descriptionId": "media-timed-chapter-asset-reference##@id##description##43561"
+          "meta:titleId": "media-timed-chapter-asset-reference##@id##title##17561",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##@id##description##29961"
         },
         "dc:title": {
           "title": "Chapter name",
           "type": "string",
           "description": "The friendly name of the chapter and or segment.",
-          "meta:titleId": "media-timed-chapter-asset-reference##dc:title##title##56231",
-          "meta:descriptionId": "media-timed-chapter-asset-reference##dc:title##description##4711"
+          "meta:titleId": "media-timed-chapter-asset-reference##dc:title##title##40011",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##dc:title##description##90221"
         },
         "xmpDM:duration": {
           "title": "Chapter length or duration",
           "type": "integer",
           "description": "The length of the chapter, in seconds.",
-          "meta:titleId": "media-timed-chapter-asset-reference##xmpDM:duration##title##88861",
-          "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##53891"
+          "meta:titleId": "media-timed-chapter-asset-reference##xmpDM:duration##title##15761",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##61991"
         }
       },
       "required": ["@id"]
@@ -50,6 +50,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media-timed-chapter-asset-reference##title##40831",
-  "meta:descriptionId": "media-timed-chapter-asset-reference##description##37941"
+  "meta:titleId": "media-timed-chapter-asset-reference##title##18831",
+  "meta:descriptionId": "media-timed-chapter-asset-reference##description##44471"
 }

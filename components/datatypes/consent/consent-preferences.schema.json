@@ -31,32 +31,32 @@
         "VI": "Vital Interest of the Individual",
         "PI": "Public Interest"
       },
-      "meta:titleId": "consents-and-preferences##choice-value##title##45501",
-      "meta:descriptionId": "consents-and-preferences##choice-value##description##71331"
+      "meta:titleId": "consents-and-preferences##choice-value##title##89271",
+      "meta:descriptionId": "consents-and-preferences##choice-value##description##16931"
     },
     "timestamp": {
       "title": "Preference timestamp",
       "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "consents-and-preferences##timestamp##title##82931",
-      "meta:descriptionId": "consents-and-preferences##timestamp##description##56481"
+      "meta:titleId": "consents-and-preferences##timestamp##title##1991",
+      "meta:descriptionId": "consents-and-preferences##timestamp##description##86491"
     },
     "source": {
       "title": "Preference Source",
       "description": "Through which interface did the user provide this preference value",
       "type": "string",
       "maxLength": 15,
-      "meta:titleId": "consents-and-preferences##source##title##52571",
-      "meta:descriptionId": "consents-and-preferences##source##description##74041"
+      "meta:titleId": "consents-and-preferences##source##title##77711",
+      "meta:descriptionId": "consents-and-preferences##source##description##75341"
     },
     "reason": {
       "title": "Opt-out reason",
       "type": "string",
       "description": "Reason for opting out",
       "maxLength": 16,
-      "meta:titleId": "consents-and-preferences##reason##title##71111",
-      "meta:descriptionId": "consents-and-preferences##reason##description##60131"
+      "meta:titleId": "consents-and-preferences##reason##title##71191",
+      "meta:descriptionId": "consents-and-preferences##reason##description##4891"
     },
     "subscriptions": {
       "title": "Subscriptions",
@@ -76,8 +76,8 @@
             "description": "The type of subscription",
             "type": "string",
             "maxLength": 15,
-            "meta:titleId": "consents-and-preferences##xdm:type##title##67601",
-            "meta:descriptionId": "consents-and-preferences##xdm:type##description##7031"
+            "meta:titleId": "consents-and-preferences##xdm:type##title##41461",
+            "meta:descriptionId": "consents-and-preferences##xdm:type##description##64421"
           },
           "xdm:subscribers": {
             "title": "Subscribers",
@@ -96,18 +96,18 @@
                   "$ref": "#/definitions/source"
                 }
               },
-              "meta:titleId": "consents-and-preferences##additionalProperties##title##96911",
-              "meta:descriptionId": "consents-and-preferences##additionalProperties##description##26901"
+              "meta:titleId": "consents-and-preferences##additionalProperties##title##1341",
+              "meta:descriptionId": "consents-and-preferences##additionalProperties##description##2061"
             },
-            "meta:titleId": "consents-and-preferences##xdm:subscribers##title##39191",
-            "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##47591"
+            "meta:titleId": "consents-and-preferences##xdm:subscribers##title##80271",
+            "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##46991"
           }
         },
-        "meta:titleId": "consents-and-preferences##additionalProperties##title##96931",
-        "meta:descriptionId": "consents-and-preferences##additionalProperties##description##16181"
+        "meta:titleId": "consents-and-preferences##additionalProperties##title##47651",
+        "meta:descriptionId": "consents-and-preferences##additionalProperties##description##26751"
       },
-      "meta:titleId": "consents-and-preferences##subscriptions##title##41521",
-      "meta:descriptionId": "consents-and-preferences##subscriptions##description##24921"
+      "meta:titleId": "consents-and-preferences##subscriptions##title##70321",
+      "meta:descriptionId": "consents-and-preferences##subscriptions##description##70361"
     },
     "consent-field": {
       "type": "object",
@@ -115,7 +115,7 @@
         "xdm:val": {
           "description": "The value specified by the user as their consent choice or the basis of processing that precludes the need for user consent",
           "$ref": "#/definitions/choice-value",
-          "meta:descriptionId": "consents-and-preferences##xdm:val##description##49621"
+          "meta:descriptionId": "consents-and-preferences##xdm:val##description##49931"
         }
       },
       "required": ["xdm:val"]
@@ -138,12 +138,12 @@
           "title": "Personalize Content",
           "description": "Allow personalization of the content on my site or in my apps",
           "$ref": "#/definitions/personalization-field",
-          "meta:titleId": "consents-and-preferences##xdm:content##title##81841",
-          "meta:descriptionId": "consents-and-preferences##xdm:content##description##98691"
+          "meta:titleId": "consents-and-preferences##xdm:content##title##98031",
+          "meta:descriptionId": "consents-and-preferences##xdm:content##description##4201"
         }
       },
-      "meta:titleId": "consents-and-preferences##base-personalization##title##10921",
-      "meta:descriptionId": "consents-and-preferences##base-personalization##description##83701"
+      "meta:titleId": "consents-and-preferences##base-personalization##title##41481",
+      "meta:descriptionId": "consents-and-preferences##base-personalization##description##95671"
     },
     "marketing-field": {
       "type": "object",
@@ -217,40 +217,40 @@
             "none": "No Preferred Channel",
             "unknown": "Unknown"
           },
-          "meta:titleId": "consents-and-preferences##xdm:preferred##title##62131",
-          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##94631"
+          "meta:titleId": "consents-and-preferences##xdm:preferred##title##81781",
+          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##12891"
         },
         "xdm:any": {
           "title": "General Direct Marketing Preference",
           "description": "Does user permit any type of direct marketing",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:any##title##86391",
-          "meta:descriptionId": "consents-and-preferences##xdm:any##description##20131"
+          "meta:titleId": "consents-and-preferences##xdm:any##title##1041",
+          "meta:descriptionId": "consents-and-preferences##xdm:any##description##28611"
         },
         "xdm:email": {
           "title": "Receive email",
           "description": "User agrees to receive email",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:email##title##32231",
-          "meta:descriptionId": "consents-and-preferences##xdm:email##description##57461"
+          "meta:titleId": "consents-and-preferences##xdm:email##title##69291",
+          "meta:descriptionId": "consents-and-preferences##xdm:email##description##50101"
         },
         "xdm:push": {
           "title": "Receive push notifications",
           "description": "User permits receiving push notifications",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:push##title##6621",
-          "meta:descriptionId": "consents-and-preferences##xdm:push##description##75621"
+          "meta:titleId": "consents-and-preferences##xdm:push##title##85261",
+          "meta:descriptionId": "consents-and-preferences##xdm:push##description##67431"
         },
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##25181",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##68511"
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##431",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##57231"
         }
       },
-      "meta:titleId": "consents-and-preferences##base-marketing##title##3231",
-      "meta:descriptionId": "consents-and-preferences##base-marketing##description##11581"
+      "meta:titleId": "consents-and-preferences##base-marketing##title##27991",
+      "meta:descriptionId": "consents-and-preferences##base-marketing##description##3661"
     },
     "base-marketing-with-subscriptions": {
       "title": "Marketing Preferences",
@@ -291,40 +291,40 @@
             "none": "No Preferred Channel",
             "unknown": "Unknown"
           },
-          "meta:titleId": "consents-and-preferences##xdm:preferred##title##53771",
-          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##47781"
+          "meta:titleId": "consents-and-preferences##xdm:preferred##title##6751",
+          "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##2231"
         },
         "xdm:any": {
           "title": "General Direct Marketing Preference",
           "description": "Does user permit any type of direct marketing",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:any##title##55321",
-          "meta:descriptionId": "consents-and-preferences##xdm:any##description##19361"
+          "meta:titleId": "consents-and-preferences##xdm:any##title##51811",
+          "meta:descriptionId": "consents-and-preferences##xdm:any##description##65641"
         },
         "xdm:email": {
           "title": "Receive email",
           "description": "User agrees to receive email",
           "$ref": "#/definitions/marketing-with-subscriptions",
-          "meta:titleId": "consents-and-preferences##xdm:email##title##36481",
-          "meta:descriptionId": "consents-and-preferences##xdm:email##description##58061"
+          "meta:titleId": "consents-and-preferences##xdm:email##title##52691",
+          "meta:descriptionId": "consents-and-preferences##xdm:email##description##64821"
         },
         "xdm:push": {
           "title": "Receive push notifications",
           "description": "User permits receiving push notifications",
           "$ref": "#/definitions/marketing-with-subscriptions",
-          "meta:titleId": "consents-and-preferences##xdm:push##title##99301",
-          "meta:descriptionId": "consents-and-preferences##xdm:push##description##47341"
+          "meta:titleId": "consents-and-preferences##xdm:push##title##69101",
+          "meta:descriptionId": "consents-and-preferences##xdm:push##description##98891"
         },
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
           "$ref": "#/definitions/marketing-with-subscriptions",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##18121",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##54891"
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##47391",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##49931"
         }
       },
-      "meta:titleId": "consents-and-preferences##base-marketing-with-subscriptions##title##59051",
-      "meta:descriptionId": "consents-and-preferences##base-marketing-with-subscriptions##description##83751"
+      "meta:titleId": "consents-and-preferences##base-marketing-with-subscriptions##title##26401",
+      "meta:descriptionId": "consents-and-preferences##base-marketing-with-subscriptions##description##51771"
     },
     "idSpecific-marketing": {
       "title": "Marketing Preferences",
@@ -335,26 +335,26 @@
           "title": "Receive email",
           "description": "User agrees to receive email",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:email##title##19241",
-          "meta:descriptionId": "consents-and-preferences##xdm:email##description##16671"
+          "meta:titleId": "consents-and-preferences##xdm:email##title##6191",
+          "meta:descriptionId": "consents-and-preferences##xdm:email##description##6221"
         },
         "xdm:push": {
           "title": "Receive push notifications",
           "description": "User permits receiving push notifications",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:push##title##15981",
-          "meta:descriptionId": "consents-and-preferences##xdm:push##description##27371"
+          "meta:titleId": "consents-and-preferences##xdm:push##title##67221",
+          "meta:descriptionId": "consents-and-preferences##xdm:push##description##37011"
         },
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
           "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##61931",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##9001"
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##25561",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##42931"
         }
       },
-      "meta:titleId": "consents-and-preferences##idSpecific-marketing##title##27821",
-      "meta:descriptionId": "consents-and-preferences##idSpecific-marketing##description##55541"
+      "meta:titleId": "consents-and-preferences##idSpecific-marketing##title##59121",
+      "meta:descriptionId": "consents-and-preferences##idSpecific-marketing##description##78051"
     },
     "metadata": {
       "properties": {
@@ -363,8 +363,8 @@
           "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "consents-and-preferences##xdm:time##title##77251",
-          "meta:descriptionId": "consents-and-preferences##xdm:time##description##9221"
+          "meta:titleId": "consents-and-preferences##xdm:time##title##72211",
+          "meta:descriptionId": "consents-and-preferences##xdm:time##description##48751"
         }
       }
     },
@@ -379,22 +379,22 @@
               "title": "Data Collection",
               "description": "Data collection is permitted",
               "$ref": "#/definitions/consent-field",
-              "meta:titleId": "consents-and-preferences##xdm:collect##title##24171",
-              "meta:descriptionId": "consents-and-preferences##xdm:collect##description##24441"
+              "meta:titleId": "consents-and-preferences##xdm:collect##title##7701",
+              "meta:descriptionId": "consents-and-preferences##xdm:collect##description##57501"
             },
             "xdm:share": {
               "title": "Share Data",
               "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
               "$ref": "#/definitions/consent-field",
-              "meta:titleId": "consents-and-preferences##xdm:share##title##43051",
-              "meta:descriptionId": "consents-and-preferences##xdm:share##description##88181"
+              "meta:titleId": "consents-and-preferences##xdm:share##title##87221",
+              "meta:descriptionId": "consents-and-preferences##xdm:share##description##23721"
             },
             "xdm:adID": {
               "title": "Use Advertiser ID",
               "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
               "$ref": "#/definitions/consent-field",
-              "meta:titleId": "consents-and-preferences##xdm:adID##title##44441",
-              "meta:descriptionId": "consents-and-preferences##xdm:adID##description##78701"
+              "meta:titleId": "consents-and-preferences##xdm:adID##title##43621",
+              "meta:descriptionId": "consents-and-preferences##xdm:adID##description##73581"
             },
             "xdm:personalize": {
               "$ref": "#/definitions/base-personalization"
@@ -406,12 +406,12 @@
               "title": "Consent and Preference Metadata",
               "description": "Metadata that applies to all consents and preferences that don't specify a different value",
               "$ref": "#/definitions/metadata",
-              "meta:titleId": "consents-and-preferences##xdm:metadata##title##18841",
-              "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##10381"
+              "meta:titleId": "consents-and-preferences##xdm:metadata##title##53451",
+              "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##58681"
             }
           },
-          "meta:titleId": "consents-and-preferences##xdm:consents##title##4071",
-          "meta:descriptionId": "consents-and-preferences##xdm:consents##description##2661"
+          "meta:titleId": "consents-and-preferences##xdm:consents##title##80821",
+          "meta:descriptionId": "consents-and-preferences##xdm:consents##description##10011"
         }
       }
     },
@@ -426,15 +426,15 @@
               "title": "Data Collection",
               "description": "Data collection is permitted",
               "$ref": "#/definitions/consent-field",
-              "meta:titleId": "consents-and-preferences##xdm:collect##title##87911",
-              "meta:descriptionId": "consents-and-preferences##xdm:collect##description##39351"
+              "meta:titleId": "consents-and-preferences##xdm:collect##title##50071",
+              "meta:descriptionId": "consents-and-preferences##xdm:collect##description##61521"
             },
             "xdm:share": {
               "title": "Share Data",
               "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
               "$ref": "#/definitions/consent-field",
-              "meta:titleId": "consents-and-preferences##xdm:share##title##56881",
-              "meta:descriptionId": "consents-and-preferences##xdm:share##description##91941"
+              "meta:titleId": "consents-and-preferences##xdm:share##title##66031",
+              "meta:descriptionId": "consents-and-preferences##xdm:share##description##15311"
             },
             "xdm:personalize": {
               "$ref": "#/definitions/base-personalization"
@@ -459,22 +459,22 @@
                       "title": "Data Collection",
                       "description": "Data collection is permitted",
                       "$ref": "#/definitions/consent-field",
-                      "meta:titleId": "consents-and-preferences##xdm:collect##title##67361",
-                      "meta:descriptionId": "consents-and-preferences##xdm:collect##description##29551"
+                      "meta:titleId": "consents-and-preferences##xdm:collect##title##57691",
+                      "meta:descriptionId": "consents-and-preferences##xdm:collect##description##85681"
                     },
                     "xdm:share": {
                       "title": "Share Data",
                       "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
                       "$ref": "#/definitions/consent-field",
-                      "meta:titleId": "consents-and-preferences##xdm:share##title##21211",
-                      "meta:descriptionId": "consents-and-preferences##xdm:share##description##33271"
+                      "meta:titleId": "consents-and-preferences##xdm:share##title##69911",
+                      "meta:descriptionId": "consents-and-preferences##xdm:share##description##35721"
                     },
                     "xdm:adID": {
                       "title": "Use Advertiser ID",
                       "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
                       "$ref": "#/definitions/consent-field",
-                      "meta:titleId": "consents-and-preferences##xdm:adID##title##7761",
-                      "meta:descriptionId": "consents-and-preferences##xdm:adID##description##52741"
+                      "meta:titleId": "consents-and-preferences##xdm:adID##title##23011",
+                      "meta:descriptionId": "consents-and-preferences##xdm:adID##description##64971"
                     },
                     "xdm:personalize": {
                       "$ref": "#/definitions/base-personalization"
@@ -483,30 +483,30 @@
                       "$ref": "#/definitions/idSpecific-marketing"
                     }
                   },
-                  "meta:titleId": "consents-and-preferences##additionalProperties##title##6191"
+                  "meta:titleId": "consents-and-preferences##additionalProperties##title##43431"
                 },
-                "meta:titleId": "consents-and-preferences##additionalProperties##title##4981"
+                "meta:titleId": "consents-and-preferences##additionalProperties##title##77301"
               },
               "xdm:metadata": {
                 "title": "Consent and Preference Metadata",
                 "description": "Metadata that applies to all consents and preferences that don't specify a different value",
                 "$ref": "#/definitions/metadata",
-                "meta:titleId": "consents-and-preferences##xdm:metadata##title##31831",
-                "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##31"
+                "meta:titleId": "consents-and-preferences##xdm:metadata##title##97751",
+                "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##58211"
               },
-              "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##22041",
-              "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##4071"
+              "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##80071",
+              "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##15591"
             },
             "xdm:metadata": {
               "title": "Consent and Preference Metadata",
               "description": "Metadata that applies to all consents and preferences that don't specify a different value",
               "$ref": "#/definitions/metadata",
-              "meta:titleId": "consents-and-preferences##xdm:metadata##title##28101",
-              "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##29791"
+              "meta:titleId": "consents-and-preferences##xdm:metadata##title##56721",
+              "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##34511"
             }
           },
-          "meta:titleId": "consents-and-preferences##xdm:consents##title##83871",
-          "meta:descriptionId": "consents-and-preferences##xdm:consents##description##74381"
+          "meta:titleId": "consents-and-preferences##xdm:consents##title##87011",
+          "meta:descriptionId": "consents-and-preferences##xdm:consents##description##45581"
         }
       }
     }
@@ -518,6 +518,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "consents-and-preferences##title##79441",
-  "meta:descriptionId": "consents-and-preferences##description##60841"
+  "meta:titleId": "consents-and-preferences##title##20101",
+  "meta:descriptionId": "consents-and-preferences##description##65551"
 }

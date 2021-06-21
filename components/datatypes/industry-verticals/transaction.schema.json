@@ -18,30 +18,30 @@
           "title": "Transaction Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Captures the amount of the transaction.",
-          "meta:titleId": "transaction##xdm:transactionAmount##title##40411",
-          "meta:descriptionId": "transaction##xdm:transactionAmount##description##72291"
+          "meta:titleId": "transaction##xdm:transactionAmount##title##73551",
+          "meta:descriptionId": "transaction##xdm:transactionAmount##description##42891"
         },
         "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
           "description": "Identifier for the transaction.",
-          "meta:titleId": "transaction##xdm:transactionID##title##26671",
-          "meta:descriptionId": "transaction##xdm:transactionID##description##41141"
+          "meta:titleId": "transaction##xdm:transactionID##title##17921",
+          "meta:descriptionId": "transaction##xdm:transactionID##description##36841"
         },
         "xdm:transactionDate": {
           "title": "Transaction Date",
           "type": "string",
           "format": "date-time",
           "description": "Records the date/time of the transaction.",
-          "meta:titleId": "transaction##xdm:transactionDate##title##60161",
-          "meta:descriptionId": "transaction##xdm:transactionDate##description##2541"
+          "meta:titleId": "transaction##xdm:transactionDate##title##21761",
+          "meta:descriptionId": "transaction##xdm:transactionDate##description##77571"
         },
         "xdm:transactionType": {
           "title": "Transaction Type",
           "type": "string",
           "description": "Records the type of transaction utilized by the visitor.",
-          "meta:titleId": "transaction##xdm:transactionType##title##1931",
-          "meta:descriptionId": "transaction##xdm:transactionType##description##12661"
+          "meta:titleId": "transaction##xdm:transactionType##title##50341",
+          "meta:descriptionId": "transaction##xdm:transactionType##description##70951"
         }
       }
     }
@@ -53,6 +53,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "transaction##title##96541",
-  "meta:descriptionId": "transaction##description##61991"
+  "meta:titleId": "transaction##title##66471",
+  "meta:descriptionId": "transaction##description##64211"
 }

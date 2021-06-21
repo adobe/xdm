@@ -19,16 +19,16 @@
           "title": "Experience Reference",
           "type": "string",
           "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value.",
-          "meta:titleId": "decisionevent-details##xdm:experienceID##title##46881",
-          "meta:descriptionId": "decisionevent-details##xdm:experienceID##description##61571"
+          "meta:titleId": "decisionevent-details##xdm:experienceID##title##48921",
+          "meta:descriptionId": "decisionevent-details##xdm:experienceID##description##46801"
         },
         "xdm:algorithmID": {
           "title": "Algorithm Reference",
           "type": "string",
           "format": "uri-reference",
           "description": "Unique identifier for the algorithm used to make the decision, if applicable.",
-          "meta:titleId": "decisionevent-details##xdm:algorithmID##title##45141",
-          "meta:descriptionId": "decisionevent-details##xdm:algorithmID##description##90981"
+          "meta:titleId": "decisionevent-details##xdm:algorithmID##title##15221",
+          "meta:descriptionId": "decisionevent-details##xdm:algorithmID##description##43101"
         },
         "xdm:trafficType": {
           "title": "Traffic Type",
@@ -39,8 +39,8 @@
             "contextual": "Contextual Traffic",
             "noncontextual": "Non-Contextual Traffic"
           },
-          "meta:titleId": "decisionevent-details##xdm:trafficType##title##30691",
-          "meta:descriptionId": "decisionevent-details##xdm:trafficType##description##55901"
+          "meta:titleId": "decisionevent-details##xdm:trafficType##title##26121",
+          "meta:descriptionId": "decisionevent-details##xdm:trafficType##description##29791"
         }
       }
     }
@@ -54,6 +54,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "decisionevent-details##title##29491",
-  "meta:descriptionId": "decisionevent-details##description##91131"
+  "meta:titleId": "decisionevent-details##title##76951",
+  "meta:descriptionId": "decisionevent-details##description##59771"
 }

@@ -19,22 +19,22 @@
           "format": "uri-reference",
           "type": "string",
           "description": "Identifier of the ad break.",
-          "meta:titleId": "advertising-break##@id##title##88851",
-          "meta:descriptionId": "advertising-break##@id##description##29301"
+          "meta:titleId": "advertising-break##@id##title##33661",
+          "meta:descriptionId": "advertising-break##@id##description##52101"
         },
         "dc:title": {
           "title": "Pod name",
           "type": "string",
           "description": "The friendly name of the ad break.",
-          "meta:titleId": "advertising-break##dc:title##title##21641",
-          "meta:descriptionId": "advertising-break##dc:title##description##55061"
+          "meta:titleId": "advertising-break##dc:title##title##49451",
+          "meta:descriptionId": "advertising-break##dc:title##description##55381"
         },
         "xdm:offset": {
           "title": "Pod position",
           "type": "integer",
           "description": "The offset, in seconds, of the ad break from the start of the primary content.",
-          "meta:titleId": "advertising-break##xdm:offset##title##52851",
-          "meta:descriptionId": "advertising-break##xdm:offset##description##11221"
+          "meta:titleId": "advertising-break##xdm:offset##title##56211",
+          "meta:descriptionId": "advertising-break##xdm:offset##description##81931"
         }
       },
       "required": ["@id"]
@@ -47,6 +47,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "advertising-break##title##9701",
-  "meta:descriptionId": "advertising-break##description##73391"
+  "meta:titleId": "advertising-break##title##52561",
+  "meta:descriptionId": "advertising-break##description##2161"
 }

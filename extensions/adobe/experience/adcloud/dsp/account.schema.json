@@ -23,15 +23,15 @@
           "title": "Account Key",
           "type": "string",
           "description": "External Identifier of the account.",
-          "meta:titleId": "account##dsp:accountKey##title##14671",
-          "meta:descriptionId": "account##dsp:accountKey##description##36941"
+          "meta:titleId": "account##dsp:accountKey##title##69011",
+          "meta:descriptionId": "account##dsp:accountKey##description##21411"
         },
         "dsp:accountName": {
           "title": "Account Name",
           "type": "string",
           "description": "Name of the account.",
-          "meta:titleId": "account##dsp:accountName##title##9941",
-          "meta:descriptionId": "account##dsp:accountName##description##53011"
+          "meta:titleId": "account##dsp:accountName##title##17021",
+          "meta:descriptionId": "account##dsp:accountName##description##57841"
         },
         "dsp:accountType": {
           "title": "Account Type",
@@ -55,8 +55,8 @@
             "PublisherAudienceExtension": "Publisher Audience Extension ",
             "Other": "Other "
           },
-          "meta:titleId": "account##dsp:accountType##title##2961",
-          "meta:descriptionId": "account##dsp:accountType##description##6591"
+          "meta:titleId": "account##dsp:accountType##title##46071",
+          "meta:descriptionId": "account##dsp:accountType##description##65311"
         },
         "dsp:productName": {
           "title": "Product Name",
@@ -74,8 +74,8 @@
             "OneLoad": "OneLoad",
             "PrivateExchange": "PrivateExchange"
           },
-          "meta:titleId": "account##dsp:productName##title##97211",
-          "meta:descriptionId": "account##dsp:productName##description##91351"
+          "meta:titleId": "account##dsp:productName##title##82581",
+          "meta:descriptionId": "account##dsp:productName##description##99711"
         },
         "dsp:currency": {
           "title": "Account Currency",
@@ -87,8 +87,8 @@
           ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 billing currency code for the account.",
-          "meta:titleId": "account##dsp:currency##title##13531",
-          "meta:descriptionId": "account##dsp:currency##description##42531"
+          "meta:titleId": "account##dsp:currency##title##30971",
+          "meta:descriptionId": "account##dsp:currency##description##10081"
         }
       }
     }
@@ -105,6 +105,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "account##title##38701",
-  "meta:descriptionId": "account##description##89201"
+  "meta:titleId": "account##title##50111",
+  "meta:descriptionId": "account##description##59031"
 }

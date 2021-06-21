@@ -21,8 +21,8 @@
           "type": "boolean",
           "description": "Indicates the `profile` record is for use in testing and verification purposes and should not be automatically included in normal operations.",
           "default": false,
-          "meta:titleId": "profile-test-profile##xdm:testProfile##title##41741",
-          "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##65191"
+          "meta:titleId": "profile-test-profile##xdm:testProfile##title##96941",
+          "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##1751"
         }
       }
     }
@@ -37,6 +37,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-test-profile##title##66911",
-  "meta:descriptionId": "profile-test-profile##description##32431"
+  "meta:titleId": "profile-test-profile##title##2541",
+  "meta:descriptionId": "profile-test-profile##description##50041"
 }

@@ -17,23 +17,23 @@
           "title": "Segment ID",
           "type": "string",
           "description": "ID for the segment that would be used to retarget the surfer.",
-          "meta:titleId": "syncedremarketingaudience##xdm:segmentID##title##22181",
-          "meta:descriptionId": "syncedremarketingaudience##xdm:segmentID##description##99401"
+          "meta:titleId": "syncedremarketingaudience##xdm:segmentID##title##93601",
+          "meta:descriptionId": "syncedremarketingaudience##xdm:segmentID##description##2431"
         },
         "xdm:type": {
           "title": "Segment/Audience Type",
           "type": "integer",
           "description": "Type of segment, eg. AAM.",
-          "meta:titleId": "syncedremarketingaudience##xdm:type##title##27661",
-          "meta:descriptionId": "syncedremarketingaudience##xdm:type##description##12331"
+          "meta:titleId": "syncedremarketingaudience##xdm:type##title##47211",
+          "meta:descriptionId": "syncedremarketingaudience##xdm:type##description##20521"
         },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
           "description": "The timestamp when the retargeting entity, e.g. aam-segment, was synced to the marketing platform.",
-          "meta:titleId": "syncedremarketingaudience##xdm:timestamp##title##30991",
-          "meta:descriptionId": "syncedremarketingaudience##xdm:timestamp##description##30251"
+          "meta:titleId": "syncedremarketingaudience##xdm:timestamp##title##28381",
+          "meta:descriptionId": "syncedremarketingaudience##xdm:timestamp##description##19071"
         },
         "xdm:partnerDetails": {
           "title": "Marketing Partner Details",
@@ -41,7 +41,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/adcloud/partnerdata"
           },
-          "meta:titleId": "syncedremarketingaudience##xdm:partnerDetails##title##56801"
+          "meta:titleId": "syncedremarketingaudience##xdm:partnerDetails##title##53271"
         }
       }
     }
@@ -52,6 +52,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "syncedremarketingaudience##title##10081",
-  "meta:descriptionId": "syncedremarketingaudience##description##1421"
+  "meta:titleId": "syncedremarketingaudience##title##66851",
+  "meta:descriptionId": "syncedremarketingaudience##description##32971"
 }

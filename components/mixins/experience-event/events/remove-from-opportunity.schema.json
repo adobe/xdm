@@ -29,25 +29,25 @@
               "title": "Opportunity ID",
               "type": "string",
               "description": "Unique ID of the Opportunity.",
-              "meta:titleId": "remove-from-opportunity##xdm:opportunityID##title##99421",
-              "meta:descriptionId": "remove-from-opportunity##xdm:opportunityID##description##68851"
+              "meta:titleId": "remove-from-opportunity##xdm:opportunityID##title##27491",
+              "meta:descriptionId": "remove-from-opportunity##xdm:opportunityID##description##49041"
             },
             "xdm:isPrimary": {
               "title": "Is Primary",
               "type": "boolean",
               "description": "Boolean indicating if the person was the primary contact on the Opportunity.",
-              "meta:titleId": "remove-from-opportunity##xdm:isPrimary##title##29211",
-              "meta:descriptionId": "remove-from-opportunity##xdm:isPrimary##description##62121"
+              "meta:titleId": "remove-from-opportunity##xdm:isPrimary##title##17191",
+              "meta:descriptionId": "remove-from-opportunity##xdm:isPrimary##description##80011"
             },
             "xdm:role": {
               "title": "Role",
               "type": "string",
               "description": "Role of the person on the Opportunity.",
-              "meta:titleId": "remove-from-opportunity##xdm:role##title##70141",
-              "meta:descriptionId": "remove-from-opportunity##xdm:role##description##55461"
+              "meta:titleId": "remove-from-opportunity##xdm:role##title##55061",
+              "meta:descriptionId": "remove-from-opportunity##xdm:role##description##90441"
             }
           },
-          "meta:titleId": "remove-from-opportunity##xdm:opportunityEvent##title##25211"
+          "meta:titleId": "remove-from-opportunity##xdm:opportunityEvent##title##65481"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "remove-from-opportunity##title##14751",
-  "meta:descriptionId": "remove-from-opportunity##description##58071"
+  "meta:titleId": "remove-from-opportunity##title##14221",
+  "meta:descriptionId": "remove-from-opportunity##description##9461"
 }

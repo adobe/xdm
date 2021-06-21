@@ -24,36 +24,36 @@
           "title": "Opportunity Person ID",
           "description": "Unique ID for the relationship between the opportunity and the person.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##3821",
-          "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##34251"
+          "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##54241",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##80181"
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID for the opportunity in this opportunity person relationship.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:opportunityID##title##9901",
-          "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##17181"
+          "meta:titleId": "opportunity-person##xdm:opportunityID##title##99641",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##44711"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this opportunity person relationship.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:personID##title##51341",
-          "meta:descriptionId": "opportunity-person##xdm:personID##description##15861"
+          "meta:titleId": "opportunity-person##xdm:personID##title##46791",
+          "meta:descriptionId": "opportunity-person##xdm:personID##description##76451"
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity-person##xdm:personRole##title##6851",
-          "meta:descriptionId": "opportunity-person##xdm:personRole##description##35851"
+          "meta:titleId": "opportunity-person##xdm:personRole##title##21831",
+          "meta:descriptionId": "opportunity-person##xdm:personRole##description##721"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean indicating if the person is the primary contact on this opportunity.",
           "type": "boolean",
-          "meta:titleId": "opportunity-person##xdm:isPrimary##title##39951",
-          "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##88591"
+          "meta:titleId": "opportunity-person##xdm:isPrimary##title##89901",
+          "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##1501"
         }
       }
     }
@@ -74,6 +74,6 @@
   ],
   "required": ["xdm:opportunityPersonID"],
   "meta:status": "experimental",
-  "meta:titleId": "opportunity-person##title##76771",
-  "meta:descriptionId": "opportunity-person##description##31171"
+  "meta:titleId": "opportunity-person##title##76491",
+  "meta:descriptionId": "opportunity-person##description##61521"
 }

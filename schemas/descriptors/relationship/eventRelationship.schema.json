@@ -27,15 +27,15 @@
           "type": "string",
           "format": "uri",
           "description": "The destination schema this descriptor applies to",
-          "meta:titleId": "eventRelationship##xdm:destinationSchema##title##20871",
-          "meta:descriptionId": "eventRelationship##xdm:destinationSchema##description##31741"
+          "meta:titleId": "eventRelationship##xdm:destinationSchema##title##84271",
+          "meta:descriptionId": "eventRelationship##xdm:destinationSchema##description##65411"
         },
         "xdm:destinationVersion": {
           "title": "Destination Version",
           "type": "number",
           "description": "When present, major version being referenced.",
-          "meta:titleId": "eventRelationship##xdm:destinationVersion##title##72611",
-          "meta:descriptionId": "eventRelationship##xdm:destinationVersion##description##781"
+          "meta:titleId": "eventRelationship##xdm:destinationVersion##title##21391",
+          "meta:descriptionId": "eventRelationship##xdm:destinationVersion##description##34951"
         }
       },
       "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
@@ -51,6 +51,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "eventRelationship##title##8531",
-  "meta:descriptionId": "eventRelationship##description##7511"
+  "meta:titleId": "eventRelationship##title##92311",
+  "meta:descriptionId": "eventRelationship##description##51281"
 }

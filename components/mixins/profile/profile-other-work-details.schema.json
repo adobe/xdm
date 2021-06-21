@@ -20,15 +20,15 @@
           "title": "Other Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Other/Alternate postal address of the person.",
-          "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##52001",
-          "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##62321"
+          "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##17181",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##84151"
         },
         "xdm:otherPhone": {
           "title": "Other Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Other/Alternate phone number of the person.",
-          "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##40721",
-          "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##22091"
+          "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##50351",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##4111"
         },
         "xdm:extendedWorkDetails": {
           "type": "object",
@@ -42,25 +42,25 @@
                   "title": "Assistant Name",
                   "$ref": "https://ns.adobe.com/xdm/context/person-name",
                   "description": "Person's assistant full name.",
-                  "meta:titleId": "profile-other-work-details##xdm:name##title##26981",
-                  "meta:descriptionId": "profile-other-work-details##xdm:name##description##24471"
+                  "meta:titleId": "profile-other-work-details##xdm:name##title##31661",
+                  "meta:descriptionId": "profile-other-work-details##xdm:name##description##18931"
                 },
                 "xdm:phone": {
                   "title": "Assistant Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
                   "description": "Person's assistant phone number.",
-                  "meta:titleId": "profile-other-work-details##xdm:phone##title##33631",
-                  "meta:descriptionId": "profile-other-work-details##xdm:phone##description##85671"
+                  "meta:titleId": "profile-other-work-details##xdm:phone##title##12261",
+                  "meta:descriptionId": "profile-other-work-details##xdm:phone##description##38361"
                 }
               },
-              "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title##35531"
+              "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title##38921"
             },
             "xdm:reportsToID": {
               "title": "Reports To Id",
               "description": "Identifier of the Reporting Manager.",
               "type": "string",
-              "meta:titleId": "profile-other-work-details##xdm:reportsToID##title##71901",
-              "meta:descriptionId": "profile-other-work-details##xdm:reportsToID##description##91741"
+              "meta:titleId": "profile-other-work-details##xdm:reportsToID##title##58691",
+              "meta:descriptionId": "profile-other-work-details##xdm:reportsToID##description##66611"
             },
             "xdm:departments": {
               "title": "Department Name",
@@ -69,26 +69,26 @@
               "items": {
                 "type": "string"
               },
-              "meta:titleId": "profile-other-work-details##xdm:departments##title##3541",
-              "meta:descriptionId": "profile-other-work-details##xdm:departments##description##99541"
+              "meta:titleId": "profile-other-work-details##xdm:departments##title##59251",
+              "meta:descriptionId": "profile-other-work-details##xdm:departments##description##51451"
             },
             "xdm:jobTitle": {
               "title": "Job Title",
               "description": "Job title of the person.",
               "type": "string",
-              "meta:titleId": "profile-other-work-details##xdm:jobTitle##title##33341",
-              "meta:descriptionId": "profile-other-work-details##xdm:jobTitle##description##64681"
+              "meta:titleId": "profile-other-work-details##xdm:jobTitle##title##69981",
+              "meta:descriptionId": "profile-other-work-details##xdm:jobTitle##description##44721"
             },
             "xdm:photoUrl": {
               "title": "Photo Url",
               "description": "Photo url of the person.",
               "type": "string",
               "format": "uri",
-              "meta:titleId": "profile-other-work-details##xdm:photoUrl##title##20731",
-              "meta:descriptionId": "profile-other-work-details##xdm:photoUrl##description##66541"
+              "meta:titleId": "profile-other-work-details##xdm:photoUrl##title##7201",
+              "meta:descriptionId": "profile-other-work-details##xdm:photoUrl##description##24641"
             }
           },
-          "meta:titleId": "profile-other-work-details##xdm:extendedWorkDetails##title##53051"
+          "meta:titleId": "profile-other-work-details##xdm:extendedWorkDetails##title##87661"
         }
       }
     }
@@ -103,6 +103,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-18",
-  "meta:titleId": "profile-other-work-details##title##50061",
-  "meta:descriptionId": "profile-other-work-details##description##71921"
+  "meta:titleId": "profile-other-work-details##title##42411",
+  "meta:descriptionId": "profile-other-work-details##description##36961"
 }

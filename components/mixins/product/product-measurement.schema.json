@@ -21,22 +21,22 @@
           "title": "Product Size",
           "type": "string",
           "description": "Standard product size for the product.",
-          "meta:titleId": "product-measurement##xdm:productSize##title##96341",
-          "meta:descriptionId": "product-measurement##xdm:productSize##description##80811"
+          "meta:titleId": "product-measurement##xdm:productSize##title##16711",
+          "meta:descriptionId": "product-measurement##xdm:productSize##description##57831"
         },
         "xdm:unitOfMeasureCode": {
           "title": "Product Unit Of Measure Code",
           "type": "string",
           "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
-          "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##27071",
-          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##61731"
+          "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##62931",
+          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##43921"
         },
         "xdm:unitOfMeasureName": {
           "title": "Product Unit Of Measure Name",
           "type": "string",
           "description": "Friendly name for product unit of measure.",
-          "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##67891",
-          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##32001"
+          "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##15831",
+          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##60311"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "product-measurement##title##94161",
-  "meta:descriptionId": "product-measurement##description##91031"
+  "meta:titleId": "product-measurement##title##68151",
+  "meta:descriptionId": "product-measurement##description##43611"
 }

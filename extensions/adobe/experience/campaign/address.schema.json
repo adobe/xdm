@@ -17,8 +17,8 @@
           "title": "Address Error Count",
           "type": "integer",
           "description": "Number of consecutive errors when sending to this address.",
-          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##title##7491",
-          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##description##54381"
+          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##title##62101",
+          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressErrorCount##description##34361"
         },
         "https://ns.adobe.com/experience/campaign/addressQuality": {
           "title": "Address Quality",
@@ -32,8 +32,8 @@
             "partially_recognized_street": "Partially-recognized street",
             "fully_recognized_street": "Fully-recognized street"
           },
-          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressQuality##title##28401",
-          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressQuality##description##87121"
+          "meta:titleId": "address##https://ns.adobe.com/experience/campaign/addressQuality##title##19581",
+          "meta:descriptionId": "address##https://ns.adobe.com/experience/campaign/addressQuality##description##11941"
         }
       }
     }
@@ -44,6 +44,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "address##title##6981",
-  "meta:descriptionId": "address##description##79761"
+  "meta:titleId": "address##title##26401",
+  "meta:descriptionId": "address##description##94811"
 }

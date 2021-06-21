@@ -29,32 +29,32 @@
               "title": "Mailing ID",
               "type": "string",
               "description": "Unique ID of the email asset.",
-              "meta:titleId": "emaildelivered##xdm:mailingID##title##18011",
-              "meta:descriptionId": "emaildelivered##xdm:mailingID##description##8631"
+              "meta:titleId": "emaildelivered##xdm:mailingID##title##86141",
+              "meta:descriptionId": "emaildelivered##xdm:mailingID##description##2631"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
               "description": "Name of the email asset.",
-              "meta:titleId": "emaildelivered##xdm:mailingName##title##59311",
-              "meta:descriptionId": "emaildelivered##xdm:mailingName##description##43651"
+              "meta:titleId": "emaildelivered##xdm:mailingName##title##58311",
+              "meta:descriptionId": "emaildelivered##xdm:mailingName##description##9211"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
               "description": "Unique ID of the test variant of the email asset.",
-              "meta:titleId": "emaildelivered##xdm:testVariantID##title##13811",
-              "meta:descriptionId": "emaildelivered##xdm:testVariantID##description##15841"
+              "meta:titleId": "emaildelivered##xdm:testVariantID##title##23551",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantID##description##59481"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
               "description": "Friendly name of the test variant of the email asset.",
-              "meta:titleId": "emaildelivered##xdm:testVariantName##title##95941",
-              "meta:descriptionId": "emaildelivered##xdm:testVariantName##description##62551"
+              "meta:titleId": "emaildelivered##xdm:testVariantName##title##88461",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantName##description##6221"
             }
           },
-          "meta:titleId": "emaildelivered##xdm:directMarketing##title##48891"
+          "meta:titleId": "emaildelivered##xdm:directMarketing##title##10101"
         }
       }
     }
@@ -66,6 +66,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-12-02",
-  "meta:titleId": "emaildelivered##title##10661",
-  "meta:descriptionId": "emaildelivered##description##52181"
+  "meta:titleId": "emaildelivered##title##31501",
+  "meta:descriptionId": "emaildelivered##description##52891"
 }

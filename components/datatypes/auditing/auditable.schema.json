@@ -18,31 +18,31 @@
           "title": "Created by user identifier",
           "type": "string",
           "description": "User ID of who created the record.",
-          "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##92571",
-          "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##43881"
+          "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##23621",
+          "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##2981"
         },
         "xdm:repositoryLastModifiedBy": {
           "title": "Modified by user identifier",
           "type": "string",
           "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-          "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##56271",
-          "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##48361"
+          "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##38161",
+          "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##58951"
         },
         "xdm:createdByBatchID": {
           "title": "Created by batch identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The dataset files in Catalog which has been originating the creation of the record.",
-          "meta:titleId": "auditable##xdm:createdByBatchID##title##12611",
-          "meta:descriptionId": "auditable##xdm:createdByBatchID##description##83191"
+          "meta:titleId": "auditable##xdm:createdByBatchID##title##36381",
+          "meta:descriptionId": "auditable##xdm:createdByBatchID##description##51461"
         },
         "xdm:modifiedByBatchID": {
           "title": "Modified by batch identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-          "meta:titleId": "auditable##xdm:modifiedByBatchID##title##96981",
-          "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##12141"
+          "meta:titleId": "auditable##xdm:modifiedByBatchID##title##55951",
+          "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##86381"
         }
       }
     }
@@ -57,6 +57,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "auditable##title##60691",
-  "meta:descriptionId": "auditable##description##75971"
+  "meta:titleId": "auditable##title##75871",
+  "meta:descriptionId": "auditable##description##84881"
 }

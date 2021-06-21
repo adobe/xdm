@@ -19,22 +19,22 @@
           "title": "System ID",
           "type": "string",
           "description": "This is an identifier for the source system itself and potentially includes the object type.",
-          "meta:titleId": "b2b-source##xdm:systemID##title##13171",
-          "meta:descriptionId": "b2b-source##xdm:systemID##description##41111"
+          "meta:titleId": "b2b-source##xdm:systemID##title##77161",
+          "meta:descriptionId": "b2b-source##xdm:systemID##description##62041"
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
           "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc.",
-          "meta:titleId": "b2b-source##xdm:ID##title##48011",
-          "meta:descriptionId": "b2b-source##xdm:ID##description##54591"
+          "meta:titleId": "b2b-source##xdm:ID##title##59801",
+          "meta:descriptionId": "b2b-source##xdm:ID##description##16891"
         },
         "xdm:key": {
           "title": "System Key",
           "description": "This is concatination of systemId and id. The concatenated value is created by the connector in the data pipe, so it’s already in the source.",
           "type": "string",
-          "meta:titleId": "b2b-source##xdm:key##title##56391",
-          "meta:descriptionId": "b2b-source##xdm:key##description##9071"
+          "meta:titleId": "b2b-source##xdm:key##title##69061",
+          "meta:descriptionId": "b2b-source##xdm:key##description##87601"
         }
       }
     }
@@ -49,6 +49,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "b2b-source##title##35881",
-  "meta:descriptionId": "b2b-source##description##43001"
+  "meta:titleId": "b2b-source##title##35711",
+  "meta:descriptionId": "b2b-source##description##15951"
 }

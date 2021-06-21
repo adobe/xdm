@@ -29,25 +29,25 @@
               "title": "Opportunity ID",
               "type": "string",
               "description": "Unique ID of the Opportunity.",
-              "meta:titleId": "add-to-opportunity##xdm:opportunityID##title##28741",
-              "meta:descriptionId": "add-to-opportunity##xdm:opportunityID##description##62271"
+              "meta:titleId": "add-to-opportunity##xdm:opportunityID##title##40461",
+              "meta:descriptionId": "add-to-opportunity##xdm:opportunityID##description##97031"
             },
             "xdm:isPrimary": {
               "title": "Is Primary",
               "type": "boolean",
               "description": "Boolean indicating if person is the primary contact on the Opportunity.",
-              "meta:titleId": "add-to-opportunity##xdm:isPrimary##title##4791",
-              "meta:descriptionId": "add-to-opportunity##xdm:isPrimary##description##4111"
+              "meta:titleId": "add-to-opportunity##xdm:isPrimary##title##14841",
+              "meta:descriptionId": "add-to-opportunity##xdm:isPrimary##description##12241"
             },
             "xdm:role": {
               "title": "Role",
               "type": "string",
               "description": "Role of the person on the Opportunity.",
-              "meta:titleId": "add-to-opportunity##xdm:role##title##24841",
-              "meta:descriptionId": "add-to-opportunity##xdm:role##description##77241"
+              "meta:titleId": "add-to-opportunity##xdm:role##title##89851",
+              "meta:descriptionId": "add-to-opportunity##xdm:role##description##76541"
             }
           },
-          "meta:titleId": "add-to-opportunity##xdm:opportunityEvent##title##54781"
+          "meta:titleId": "add-to-opportunity##xdm:opportunityEvent##title##77091"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "add-to-opportunity##title##1191",
-  "meta:descriptionId": "add-to-opportunity##description##28041"
+  "meta:titleId": "add-to-opportunity##title##24261",
+  "meta:descriptionId": "add-to-opportunity##description##58801"
 }

@@ -20,8 +20,8 @@
           "type": "string",
           "title": "Tag Name",
           "description": "The tag's external human-readable representation to the clients in the default language.",
-          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/name##title##01",
-          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/name##description##56801"
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/name##title##33031",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/name##description##37301"
         }
       }
     },
@@ -32,15 +32,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the tag.",
-          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/tagID##title##93101",
-          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/tagID##description##60181"
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/tagID##title##51421",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/tagID##description##83841"
         },
         "repo:etag": {
           "title": "Tag ETag",
           "type": "string",
           "description": "The revision that the tag object was at when the snapshot was taken.",
-          "meta:titleId": "tag##repo:etag##title##49191",
-          "meta:descriptionId": "tag##repo:etag##description##73211"
+          "meta:titleId": "tag##repo:etag##title##36761",
+          "meta:descriptionId": "tag##repo:etag##description##12241"
         }
       }
     }
@@ -54,6 +54,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "tag##title##9451",
-  "meta:descriptionId": "tag##description##13291"
+  "meta:titleId": "tag##title##25551",
+  "meta:descriptionId": "tag##description##95211"
 }

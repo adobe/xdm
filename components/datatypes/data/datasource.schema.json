@@ -18,15 +18,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The unique ID of this data source. This would be provided by the individual or system that created the data source.\n",
-          "meta:titleId": "datasource##@id##title##17511",
-          "meta:descriptionId": "datasource##@id##description##25731"
+          "meta:titleId": "datasource##@id##title##66971",
+          "meta:descriptionId": "datasource##@id##description##2871"
         },
         "xdm:code": {
           "title": "Code",
           "type": "string",
           "description": "The code is a shortcut to the full @id and at least one of the code or @id can be used. Sometimes, this code is referred to as the data source integration code.",
-          "meta:titleId": "datasource##xdm:code##title##8231",
-          "meta:descriptionId": "datasource##xdm:code##description##78921"
+          "meta:titleId": "datasource##xdm:code##title##94141",
+          "meta:descriptionId": "datasource##xdm:code##description##36121"
         },
         "xdm:tags": {
           "title": "Tags",
@@ -36,8 +36,8 @@
           "items": {
             "type": "string"
           },
-          "meta:titleId": "datasource##xdm:tags##title##18781",
-          "meta:descriptionId": "datasource##xdm:tags##description##77431"
+          "meta:titleId": "datasource##xdm:tags##title##56531",
+          "meta:descriptionId": "datasource##xdm:tags##description##64301"
         }
       },
       "required": ["@id"]
@@ -50,6 +50,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "datasource##title##74111",
-  "meta:descriptionId": "datasource##description##65231"
+  "meta:titleId": "datasource##title##39851",
+  "meta:descriptionId": "datasource##description##31581"
 }

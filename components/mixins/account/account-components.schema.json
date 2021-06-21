@@ -25,41 +25,41 @@
                 "title": "Source Account ID",
                 "description": "Source account ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "account-components##xdm:sourceAccountID##title##46251",
-                "meta:descriptionId": "account-components##xdm:sourceAccountID##description##10401"
+                "meta:titleId": "account-components##xdm:sourceAccountID##title##83931",
+                "meta:descriptionId": "account-components##xdm:sourceAccountID##description##25841"
               },
               "xdm:sourceAccountParentID": {
                 "title": "Source Parent Account",
                 "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "account-components##xdm:sourceAccountParentID##title##70491",
-                "meta:descriptionId": "account-components##xdm:sourceAccountParentID##description##11251"
+                "meta:titleId": "account-components##xdm:sourceAccountParentID##title##33731",
+                "meta:descriptionId": "account-components##xdm:sourceAccountParentID##description##52291"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "account-components##xdm:sourceExternalID##title##16591",
-                "meta:descriptionId": "account-components##xdm:sourceExternalID##description##24791"
+                "meta:titleId": "account-components##xdm:sourceExternalID##title##73871",
+                "meta:descriptionId": "account-components##xdm:sourceExternalID##description##89191"
               },
               "xdm:sourcePartnerAccountID": {
                 "title": "Source Partner Account Id",
                 "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title##80761",
-                "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description##3891"
+                "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title##20251",
+                "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description##47931"
               },
               "xdm:sourceAccountOwnerID": {
                 "title": "Account Owner Id",
                 "description": "Account owner ID.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "account-components##xdm:sourceAccountOwnerID##title##87801",
-                "meta:descriptionId": "account-components##xdm:sourceAccountOwnerID##description##91721"
+                "meta:titleId": "account-components##xdm:sourceAccountOwnerID##title##79131",
+                "meta:descriptionId": "account-components##xdm:sourceAccountOwnerID##description##51511"
               },
               "xdm:segmentationAttributes": {
                 "title": "Account Segmentation Properties",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account#/definitions/b2b-account-segmentation",
-                "meta:titleId": "account-components##xdm:segmentationAttributes##title##35471"
+                "meta:titleId": "account-components##xdm:segmentationAttributes##title##20261"
               }
             }
           }
@@ -74,6 +74,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-09-02",
-  "meta:titleId": "account-components##title##50061",
-  "meta:descriptionId": "account-components##description##4601"
+  "meta:titleId": "account-components##title##27291",
+  "meta:descriptionId": "account-components##description##44711"
 }

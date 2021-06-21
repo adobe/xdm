@@ -17,29 +17,29 @@
           "title": "Client Implementation for Adobe Analytics",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "Client details interacting with Adobe Analytics.",
-          "meta:titleId": "implementations##https://ns.adobe.com/experience/analytics/implementation##title##75461",
-          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/analytics/implementation##description##75521"
+          "meta:titleId": "implementations##https://ns.adobe.com/experience/analytics/implementation##title##96061",
+          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/analytics/implementation##description##72391"
         },
         "https://ns.adobe.com/xdm/experience/target/implementation": {
           "title": "Client Implementation for Adobe Target",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "Client details interacting with Adobe Target.",
-          "meta:titleId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##title##85121",
-          "meta:descriptionId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##description##2781"
+          "meta:titleId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##title##62451",
+          "meta:descriptionId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##description##58441"
         },
         "https://ns.adobe.com/experience/idservice/implementation": {
           "title": "Client Implementation for Adobe Visitor Service",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "Client details interacting with Adobe Experience Cloud ID Service.",
-          "meta:titleId": "implementations##https://ns.adobe.com/experience/idservice/implementation##title##85651",
-          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/idservice/implementation##description##19751"
+          "meta:titleId": "implementations##https://ns.adobe.com/experience/idservice/implementation##title##64591",
+          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/idservice/implementation##description##1861"
         },
         "https://ns.adobe.com/experience/adcloud/implementation": {
           "title": "Client Implementation for Adobe Advertising Cloud",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "Client details interacting with Adobe Advertising Cloud.",
-          "meta:titleId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##title##40801",
-          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##description##66951"
+          "meta:titleId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##title##601",
+          "meta:descriptionId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##description##69731"
         }
       }
     }
@@ -53,6 +53,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "implementations##title##43141",
-  "meta:descriptionId": "implementations##description##7181"
+  "meta:titleId": "implementations##title##84841",
+  "meta:descriptionId": "implementations##description##51811"
 }

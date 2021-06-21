@@ -23,8 +23,8 @@
           "title": "Portfolio Name",
           "type": "string",
           "description": "Name of the Portfolio.",
-          "meta:titleId": "portfolio##searchads:portfolioName##title##40821",
-          "meta:descriptionId": "portfolio##searchads:portfolioName##description##27221"
+          "meta:titleId": "portfolio##searchads:portfolioName##title##98771",
+          "meta:descriptionId": "portfolio##searchads:portfolioName##description##59641"
         },
         "searchads:billingState": {
           "title": "Portfolio Billing State",
@@ -34,22 +34,22 @@
             "Managed": "Client will be billed for the spend from this portfolio",
             "Not Managed": "Client will not be billed for the spend from this portfolio"
           },
-          "meta:titleId": "portfolio##searchads:billingState##title##95251",
-          "meta:descriptionId": "portfolio##searchads:billingState##description##19751"
+          "meta:titleId": "portfolio##searchads:billingState##title##70931",
+          "meta:descriptionId": "portfolio##searchads:billingState##description##71031"
         },
         "searchads:portfolioGroupId": {
           "title": "Portfolio Group Identifier",
           "type": "string",
           "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
-          "meta:titleId": "portfolio##searchads:portfolioGroupId##title##84791",
-          "meta:descriptionId": "portfolio##searchads:portfolioGroupId##description##43191"
+          "meta:titleId": "portfolio##searchads:portfolioGroupId##title##79241",
+          "meta:descriptionId": "portfolio##searchads:portfolioGroupId##description##56721"
         },
         "searchads:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
           "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
-          "meta:titleId": "portfolio##searchads:portfolioGroupName##title##19141",
-          "meta:descriptionId": "portfolio##searchads:portfolioGroupName##description##76671"
+          "meta:titleId": "portfolio##searchads:portfolioGroupName##title##56481",
+          "meta:descriptionId": "portfolio##searchads:portfolioGroupName##description##11791"
         },
         "searchads:portfolioStatus": {
           "title": "Portfolio Status",
@@ -73,8 +73,8 @@
             "Optimize": "Optimize",
             "Unknown": "Unknown"
           },
-          "meta:titleId": "portfolio##searchads:portfolioStatus##title##78601",
-          "meta:descriptionId": "portfolio##searchads:portfolioStatus##description##52111"
+          "meta:titleId": "portfolio##searchads:portfolioStatus##title##62721",
+          "meta:descriptionId": "portfolio##searchads:portfolioStatus##description##94221"
         },
         "searchads:createDate": {
           "type": "string",
@@ -83,7 +83,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "portfolio##searchads:createDate##description##95811"
+          "meta:descriptionId": "portfolio##searchads:createDate##description##63811"
         },
         "searchads:modifyDate": {
           "type": "string",
@@ -92,7 +92,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "portfolio##searchads:modifyDate##description##19551"
+          "meta:descriptionId": "portfolio##searchads:modifyDate##description##90131"
         }
       }
     }
@@ -109,6 +109,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "portfolio##title##32991",
-  "meta:descriptionId": "portfolio##description##51521"
+  "meta:titleId": "portfolio##title##67571",
+  "meta:descriptionId": "portfolio##description##10401"
 }

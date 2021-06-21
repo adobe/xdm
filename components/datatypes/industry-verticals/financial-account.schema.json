@@ -18,30 +18,30 @@
           "title": "Current Financial Account Balance",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Balance in the account.",
-          "meta:titleId": "financial-account##xdm:currentAccountBalance##title##73831",
-          "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##41301"
+          "meta:titleId": "financial-account##xdm:currentAccountBalance##title##4951",
+          "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##60571"
         },
         "xdm:financialAccountID": {
           "title": "Financial Account ID",
           "type": "string",
           "description": "Current account balance for a single user account.",
-          "meta:titleId": "financial-account##xdm:financialAccountID##title##37751",
-          "meta:descriptionId": "financial-account##xdm:financialAccountID##description##89271"
+          "meta:titleId": "financial-account##xdm:financialAccountID##title##87851",
+          "meta:descriptionId": "financial-account##xdm:financialAccountID##description##15251"
         },
         "xdm:financialAccountName": {
           "title": "Financial Account Name",
           "type": "string",
           "description": "Name assigned to the financial account.",
-          "meta:titleId": "financial-account##xdm:financialAccountName##title##15761",
-          "meta:descriptionId": "financial-account##xdm:financialAccountName##description##5311"
+          "meta:titleId": "financial-account##xdm:financialAccountName##title##69221",
+          "meta:descriptionId": "financial-account##xdm:financialAccountName##description##45811"
         },
         "xdm:financialAccountType": {
           "title": "Financial Account Type",
           "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
-          "meta:titleId": "financial-account##xdm:financialAccountType##title##28301",
-          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##58991"
+          "meta:titleId": "financial-account##xdm:financialAccountType##title##72221",
+          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##70041"
         }
       }
     }
@@ -53,6 +53,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "financial-account##title##82521",
-  "meta:descriptionId": "financial-account##description##66261"
+  "meta:titleId": "financial-account##title##88531",
+  "meta:descriptionId": "financial-account##description##61511"
 }

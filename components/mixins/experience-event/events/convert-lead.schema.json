@@ -33,28 +33,28 @@
                   "title": "Assign To",
                   "type": "string",
                   "description": "Sales user converted lead is assigned to.",
-                  "meta:titleId": "convert-lead##xdm:assignTo##title##20361",
-                  "meta:descriptionId": "convert-lead##xdm:assignTo##description##42511"
+                  "meta:titleId": "convert-lead##xdm:assignTo##title##94491",
+                  "meta:descriptionId": "convert-lead##xdm:assignTo##description##92671"
                 },
                 "xdm:isSentNotificationEmail": {
                   "title": "Is Sent Notification Email",
                   "type": "boolean",
                   "description": "Indicates whether assigned sales user received email notification of the converted lead.",
-                  "meta:titleId": "convert-lead##xdm:isSentNotificationEmail##title##84441",
-                  "meta:descriptionId": "convert-lead##xdm:isSentNotificationEmail##description##78481"
+                  "meta:titleId": "convert-lead##xdm:isSentNotificationEmail##title##58351",
+                  "meta:descriptionId": "convert-lead##xdm:isSentNotificationEmail##description##5411"
                 },
                 "xdm:convertedStatus": {
                   "title": "Converted Status",
                   "type": "string",
                   "description": "Converted status of lead.",
-                  "meta:titleId": "convert-lead##xdm:convertedStatus##title##80341",
-                  "meta:descriptionId": "convert-lead##xdm:convertedStatus##description##32051"
+                  "meta:titleId": "convert-lead##xdm:convertedStatus##title##85591",
+                  "meta:descriptionId": "convert-lead##xdm:convertedStatus##description##90441"
                 }
               },
-              "meta:titleId": "convert-lead##xdm:convertLead##title##56661"
+              "meta:titleId": "convert-lead##xdm:convertLead##title##82971"
             }
           },
-          "meta:titleId": "convert-lead##xdm:leadOperation##title##41621"
+          "meta:titleId": "convert-lead##xdm:leadOperation##title##46831"
         }
       }
     }
@@ -66,6 +66,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "convert-lead##title##22211",
-  "meta:descriptionId": "convert-lead##description##33981"
+  "meta:titleId": "convert-lead##title##61331",
+  "meta:descriptionId": "convert-lead##description##27811"
 }

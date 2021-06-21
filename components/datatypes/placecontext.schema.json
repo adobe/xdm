@@ -19,29 +19,29 @@
           "type": "string",
           "format": "date-time",
           "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-          "meta:titleId": "placecontext##xdm:localTime##title##17921",
-          "meta:descriptionId": "placecontext##xdm:localTime##description##24331"
+          "meta:titleId": "placecontext##xdm:localTime##title##1111",
+          "meta:descriptionId": "placecontext##xdm:localTime##description##64431"
         },
         "xdm:ianaTimezone": {
           "title": "Iana Timezone",
           "type": "string",
           "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.",
-          "meta:titleId": "placecontext##xdm:ianaTimezone##title##74611",
-          "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##6691"
+          "meta:titleId": "placecontext##xdm:ianaTimezone##title##50631",
+          "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##98741"
         },
         "xdm:localTimezoneOffset": {
           "title": "Local time zone offset",
           "type": "integer",
           "description": "The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.",
-          "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##11471",
-          "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##83981"
+          "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##78381",
+          "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##51351"
         },
         "xdm:geo": {
           "title": "Geo",
           "$ref": "https://ns.adobe.com/xdm/common/geo",
           "description": "The geographic location where the experience was delivered.",
-          "meta:titleId": "placecontext##xdm:geo##title##70371",
-          "meta:descriptionId": "placecontext##xdm:geo##description##47441"
+          "meta:titleId": "placecontext##xdm:geo##title##73131",
+          "meta:descriptionId": "placecontext##xdm:geo##description##6341"
         },
         "xdm:POIinteraction": {
           "title": "POI interaction",
@@ -54,29 +54,29 @@
               "meta:status": "deprecated",
               "description": "Detail of the POI that cause the event.",
               "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
-              "meta:titleId": "placecontext##xdm:POIDetail##title##65621",
-              "meta:descriptionId": "placecontext##xdm:POIDetail##description##66631"
+              "meta:titleId": "placecontext##xdm:POIDetail##title##75501",
+              "meta:descriptionId": "placecontext##xdm:POIDetail##description##58911"
             },
             "xdm:poiDetail": {
               "title": "POI detail",
               "description": "Detail of the POI that cause the event.",
               "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
-              "meta:titleId": "placecontext##xdm:poiDetail##title##66751",
-              "meta:descriptionId": "placecontext##xdm:poiDetail##description##74541"
+              "meta:titleId": "placecontext##xdm:poiDetail##title##7881",
+              "meta:descriptionId": "placecontext##xdm:poiDetail##description##57261"
             },
             "xdm:poiEntries": {
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The number of times a person has entered the point of interest (POI).",
-              "meta:descriptionId": "placecontext##xdm:poiEntries##description##44141"
+              "meta:descriptionId": "placecontext##xdm:poiEntries##description##77191"
             },
             "xdm:poiExits": {
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The number of times a person has exited the point of interest (POI).",
-              "meta:descriptionId": "placecontext##xdm:poiExits##description##18901"
+              "meta:descriptionId": "placecontext##xdm:poiExits##description##75251"
             }
           },
-          "meta:titleId": "placecontext##xdm:POIinteraction##title##66631",
-          "meta:descriptionId": "placecontext##xdm:POIinteraction##description##7731"
+          "meta:titleId": "placecontext##xdm:POIinteraction##title##4711",
+          "meta:descriptionId": "placecontext##xdm:POIinteraction##description##55271"
         },
         "xdm:activePOIs": {
           "title": "POI detail",
@@ -86,8 +86,8 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
           },
-          "meta:titleId": "placecontext##xdm:activePOIs##title##15501",
-          "meta:descriptionId": "placecontext##xdm:activePOIs##description##3651"
+          "meta:titleId": "placecontext##xdm:activePOIs##title##20151",
+          "meta:descriptionId": "placecontext##xdm:activePOIs##description##32251"
         }
       }
     }
@@ -102,6 +102,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "placecontext##title##44491",
-  "meta:descriptionId": "placecontext##description##85321"
+  "meta:titleId": "placecontext##title##7431",
+  "meta:descriptionId": "placecontext##description##53571"
 }

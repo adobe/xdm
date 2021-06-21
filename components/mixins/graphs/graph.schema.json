@@ -21,46 +21,46 @@
           "title": "Graph Identifier",
           "description": "The unique identifier of the identity associated with this graph.",
           "type": "string",
-          "meta:titleId": "graph##xdm:graphId##title##78821",
-          "meta:descriptionId": "graph##xdm:graphId##description##63551"
+          "meta:titleId": "graph##xdm:graphId##title##1701",
+          "meta:descriptionId": "graph##xdm:graphId##description##41101"
         },
         "xdm:label": {
           "title": "Graph Label",
           "description": "Graph label.",
           "type": "string",
-          "meta:titleId": "graph##xdm:label##title##52381",
-          "meta:descriptionId": "graph##xdm:label##description##201"
+          "meta:titleId": "graph##xdm:label##title##32451",
+          "meta:descriptionId": "graph##xdm:label##description##45251"
         },
         "xdm:directed": {
           "title": "Directed Graph Indicator",
           "description": "Directed graph indicator.",
           "type": "boolean",
           "default": true,
-          "meta:titleId": "graph##xdm:directed##title##80501",
-          "meta:descriptionId": "graph##xdm:directed##description##91241"
+          "meta:titleId": "graph##xdm:directed##title##49771",
+          "meta:descriptionId": "graph##xdm:directed##description##16631"
         },
         "xdm:graphType": {
           "title": "Graph Type",
           "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
           "type": "string",
-          "meta:titleId": "graph##xdm:graphType##title##21221",
-          "meta:descriptionId": "graph##xdm:graphType##description##71041"
+          "meta:titleId": "graph##xdm:graphType##title##27981",
+          "meta:descriptionId": "graph##xdm:graphType##description##76381"
         },
         "xdm:firstCreatedTimestamp": {
           "title": "Graph Created Date And Time",
           "description": "Time and date this graph was created.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "graph##xdm:firstCreatedTimestamp##title##62831",
-          "meta:descriptionId": "graph##xdm:firstCreatedTimestamp##description##74841"
+          "meta:titleId": "graph##xdm:firstCreatedTimestamp##title##61731",
+          "meta:descriptionId": "graph##xdm:firstCreatedTimestamp##description##21861"
         },
         "xdm:lastModifiedTimestamp": {
           "title": "Graph Last Modified Date And Time",
           "description": "Time and date this graph was last modified.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "graph##xdm:lastModifiedTimestamp##title##25291",
-          "meta:descriptionId": "graph##xdm:lastModifiedTimestamp##description##74831"
+          "meta:titleId": "graph##xdm:lastModifiedTimestamp##title##8581",
+          "meta:descriptionId": "graph##xdm:lastModifiedTimestamp##description##11551"
         }
       }
     }
@@ -78,6 +78,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "graph##title##41411",
-  "meta:descriptionId": "graph##description##96941"
+  "meta:titleId": "graph##title##99571",
+  "meta:descriptionId": "graph##description##35721"
 }

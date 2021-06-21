@@ -22,29 +22,29 @@
           "title": "Type",
           "type": "string",
           "const": "xdm:descriptorIdentity",
-          "meta:titleId": "descriptorIdentity##@type##title##70561"
+          "meta:titleId": "descriptorIdentity##@type##title##6091"
         },
         "xdm:namespace": {
           "title": "Namespace",
           "type": "string",
           "description": "Identity ID or Code.",
-          "meta:titleId": "descriptorIdentity##xdm:namespace##title##57091",
-          "meta:descriptionId": "descriptorIdentity##xdm:namespace##description##26461"
+          "meta:titleId": "descriptorIdentity##xdm:namespace##title##15551",
+          "meta:descriptionId": "descriptorIdentity##xdm:namespace##description##25411"
         },
         "xdm:property": {
           "title": "Property",
           "type": "string",
           "description": "Property of the `xdm:namespace` field.",
           "enum": ["xdm:id", "xdm:code"],
-          "meta:titleId": "descriptorIdentity##xdm:property##title##34081",
-          "meta:descriptionId": "descriptorIdentity##xdm:property##description##22941"
+          "meta:titleId": "descriptorIdentity##xdm:property##title##90111",
+          "meta:descriptionId": "descriptorIdentity##xdm:property##description##15661"
         },
         "xdm:isPrimary": {
           "title": "Is primary key or not",
           "type": "boolean",
           "description": "When present, only one field should be marked as the primary. Default is false.",
-          "meta:titleId": "descriptorIdentity##xdm:isPrimary##title##6711",
-          "meta:descriptionId": "descriptorIdentity##xdm:isPrimary##description##86681"
+          "meta:titleId": "descriptorIdentity##xdm:isPrimary##title##65971",
+          "meta:descriptionId": "descriptorIdentity##xdm:isPrimary##description##35551"
         }
       },
       "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
@@ -60,6 +60,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "descriptorIdentity##title##79611",
-  "meta:descriptionId": "descriptorIdentity##description##96771"
+  "meta:titleId": "descriptorIdentity##title##67451",
+  "meta:descriptionId": "descriptorIdentity##description##38601"
 }

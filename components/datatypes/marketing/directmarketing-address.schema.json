@@ -17,8 +17,8 @@
           "title": "Address error count",
           "type": "integer",
           "description": "Number of consecutive errors when sending to this address.",
-          "meta:titleId": "directmarketing-address##xdm:errorCount##title##74511",
-          "meta:descriptionId": "directmarketing-address##xdm:errorCount##description##24771"
+          "meta:titleId": "directmarketing-address##xdm:errorCount##title##33031",
+          "meta:descriptionId": "directmarketing-address##xdm:errorCount##description##8171"
         },
         "xdm:quality": {
           "title": "Address quality",
@@ -32,8 +32,8 @@
             "partially_recognized_street": "Partially recognized street",
             "fully_recognized_street": "Fully recognized street"
           },
-          "meta:titleId": "directmarketing-address##xdm:quality##title##54201",
-          "meta:descriptionId": "directmarketing-address##xdm:quality##description##42961"
+          "meta:titleId": "directmarketing-address##xdm:quality##title##32401",
+          "meta:descriptionId": "directmarketing-address##xdm:quality##description##80971"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "directmarketing-address##title##25451",
-  "meta:descriptionId": "directmarketing-address##description##10741"
+  "meta:titleId": "directmarketing-address##title##6661",
+  "meta:descriptionId": "directmarketing-address##description##86141"
 }

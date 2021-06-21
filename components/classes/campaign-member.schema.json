@@ -21,22 +21,22 @@
           "title": "Campaign Member ID",
           "description": "Campaign Member unique identifer.",
           "type": "string",
-          "meta:titleId": "campaign-member##xdm:campaignMemberID##title##87291",
-          "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##3871"
+          "meta:titleId": "campaign-member##xdm:campaignMemberID##title##17091",
+          "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##8551"
         },
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Campaign Unique Identifer.",
           "type": "string",
-          "meta:titleId": "campaign-member##xdm:campaignID##title##14591",
-          "meta:descriptionId": "campaign-member##xdm:campaignID##description##16451"
+          "meta:titleId": "campaign-member##xdm:campaignID##title##55191",
+          "meta:descriptionId": "campaign-member##xdm:campaignID##description##12021"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Person unique identifier.",
           "type": "string",
-          "meta:titleId": "campaign-member##xdm:personID##title##69091",
-          "meta:descriptionId": "campaign-member##xdm:personID##description##54391"
+          "meta:titleId": "campaign-member##xdm:personID##title##74631",
+          "meta:descriptionId": "campaign-member##xdm:personID##description##93441"
         }
       }
     }
@@ -54,6 +54,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-18",
-  "meta:titleId": "campaign-member##title##51791",
-  "meta:descriptionId": "campaign-member##description##6411"
+  "meta:titleId": "campaign-member##title##73881",
+  "meta:descriptionId": "campaign-member##description##73921"
 }

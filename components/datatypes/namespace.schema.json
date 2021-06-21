@@ -18,8 +18,8 @@
           "title": "Code",
           "type": "string",
           "description": "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.",
-          "meta:titleId": "namespace##xdm:code##title##73241",
-          "meta:descriptionId": "namespace##xdm:code##description##4381"
+          "meta:titleId": "namespace##xdm:code##title##71021",
+          "meta:descriptionId": "namespace##xdm:code##description##43481"
         }
       },
       "required": ["xdm:code"]
@@ -35,6 +35,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "namespace##title##63011",
-  "meta:descriptionId": "namespace##description##37191"
+  "meta:titleId": "namespace##title##94351",
+  "meta:descriptionId": "namespace##description##37921"
 }

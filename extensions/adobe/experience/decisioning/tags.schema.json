@@ -26,10 +26,10 @@
             "type": "string",
             "format": "uri-reference",
             "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag",
-            "meta:descriptionId": "tags##items##description##31151"
+            "meta:descriptionId": "tags##items##description##89681"
           },
-          "meta:titleId": "tags##https://ns.adobe.com/experience/decisioning/tags##title##95761",
-          "meta:descriptionId": "tags##https://ns.adobe.com/experience/decisioning/tags##description##41691"
+          "meta:titleId": "tags##https://ns.adobe.com/experience/decisioning/tags##title##59011",
+          "meta:descriptionId": "tags##https://ns.adobe.com/experience/decisioning/tags##description##20781"
         }
       }
     }
@@ -43,6 +43,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "tags##title##70191",
-  "meta:descriptionId": "tags##description##30171"
+  "meta:titleId": "tags##title##70521",
+  "meta:descriptionId": "tags##description##32281"
 }

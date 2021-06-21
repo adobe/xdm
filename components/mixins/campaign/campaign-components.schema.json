@@ -25,29 +25,29 @@
                 "title": "Source Campaign ID",
                 "description": "Campaign unique identifier at source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-components##xdm:sourceCampaignID##title##20731",
-                "meta:descriptionId": "campaign-components##xdm:sourceCampaignID##description##17491"
+                "meta:titleId": "campaign-components##xdm:sourceCampaignID##title##85261",
+                "meta:descriptionId": "campaign-components##xdm:sourceCampaignID##description##31301"
               },
               "xdm:sourceParentCampaignID": {
                 "title": "Source Parent Campaign ID",
                 "description": "Account unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-components##xdm:sourceParentCampaignID##title##49881",
-                "meta:descriptionId": "campaign-components##xdm:sourceParentCampaignID##description##28541"
+                "meta:titleId": "campaign-components##xdm:sourceParentCampaignID##title##50961",
+                "meta:descriptionId": "campaign-components##xdm:sourceParentCampaignID##description##48621"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-components##xdm:sourceExternalID##title##70961",
-                "meta:descriptionId": "campaign-components##xdm:sourceExternalID##description##67641"
+                "meta:titleId": "campaign-components##xdm:sourceExternalID##title##88741",
+                "meta:descriptionId": "campaign-components##xdm:sourceExternalID##description##21861"
               },
               "xdm:sourceCampaignOwnerID": {
                 "title": "Source Campaign Owner ID",
                 "description": "Campaign owner unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-components##xdm:sourceCampaignOwnerID##title##51741",
-                "meta:descriptionId": "campaign-components##xdm:sourceCampaignOwnerID##description##56591"
+                "meta:titleId": "campaign-components##xdm:sourceCampaignOwnerID##title##26081",
+                "meta:descriptionId": "campaign-components##xdm:sourceCampaignOwnerID##description##97211"
               }
             }
           }
@@ -62,6 +62,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-09-29",
-  "meta:titleId": "campaign-components##title##5831",
-  "meta:descriptionId": "campaign-components##description##7681"
+  "meta:titleId": "campaign-components##title##58011",
+  "meta:descriptionId": "campaign-components##description##5741"
 }

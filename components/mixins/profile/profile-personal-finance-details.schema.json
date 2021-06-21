@@ -27,8 +27,8 @@
               "title": "Account Cards Total",
               "type": "integer",
               "description": "Total number of account (financial) cards assigned to a user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##85341",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##20071"
+              "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##42311",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##5271"
             },
             "xdm:assignedBeneficiary": {
               "title": "Assigned Beneficiaries",
@@ -37,8 +37,8 @@
                 "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
               },
               "description": "Captures the beneficiary(s) assigned to the account.",
-              "meta:titleId": "profile-personal-finance-details##xdm:assignedBeneficiary##title##61111",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:assignedBeneficiary##description##17261"
+              "meta:titleId": "profile-personal-finance-details##xdm:assignedBeneficiary##title##57501",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:assignedBeneficiary##description##34381"
             },
             "xdm:creditScores": {
               "type": "array",
@@ -49,8 +49,8 @@
                     "title": "Score",
                     "type": "integer",
                     "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:score##title##34451",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:score##description##13461"
+                    "meta:titleId": "profile-personal-finance-details##xdm:score##title##17091",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:score##description##20561"
                   },
                   "xdm:provider": {
                     "title": "Credit Bureau",
@@ -61,16 +61,16 @@
                       "transunion": "TransUnion"
                     },
                     "description": "Refers to the credit bureau responsible for providing the credit score.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:provider##title##66651",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##14511"
+                    "meta:titleId": "profile-personal-finance-details##xdm:provider##title##95251",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##70391"
                   },
                   "xdm:scoreDate": {
                     "title": "Score Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "Date when the score was reported.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:scoreDate##title##70531",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:scoreDate##description##90141"
+                    "meta:titleId": "profile-personal-finance-details##xdm:scoreDate##title##11111",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:scoreDate##description##29061"
                   }
                 }
               }
@@ -87,8 +87,8 @@
                 "unemployed": "Unemployed"
               },
               "description": "Tracks the employment status of the user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##42011",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##7171"
+              "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##78681",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##17661"
             },
             "xdm:ID": {
               "title": "ID",
@@ -97,18 +97,18 @@
                 "type": "string"
               },
               "description": "Array of financial account IDs assigned to the user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:ID##title##82311",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##98351"
+              "meta:titleId": "profile-personal-finance-details##xdm:ID##title##52271",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##4711"
             },
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned.",
-              "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##64601",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##27131"
+              "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##74991",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##23571"
             }
           },
-          "meta:descriptionId": "profile-personal-finance-details##xdm:personalFinances##description##41101"
+          "meta:descriptionId": "profile-personal-finance-details##xdm:personalFinances##description##47441"
         }
       }
     }
@@ -120,6 +120,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-03-23",
-  "meta:titleId": "profile-personal-finance-details##title##50951",
-  "meta:descriptionId": "profile-personal-finance-details##description##86991"
+  "meta:titleId": "profile-personal-finance-details##title##32871",
+  "meta:descriptionId": "profile-personal-finance-details##description##20471"
 }

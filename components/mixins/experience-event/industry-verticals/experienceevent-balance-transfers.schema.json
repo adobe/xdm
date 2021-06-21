@@ -35,28 +35,28 @@
                   "title": "Transaction",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
                   "description": "Extension of transaction data type.",
-                  "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##70971",
-                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##38921"
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##95931",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##28681"
                 },
                 "xdm:accountTo": {
                   "title": "Account To",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
                   "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
-                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##67101",
-                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##77631"
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##41311",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##76691"
                 },
                 "xdm:accountFrom": {
                   "title": "Account From",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
                   "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
-                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##27731",
-                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##26071"
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##4791",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##20061"
                 }
               },
-              "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##51631"
+              "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##19381"
             }
           },
-          "meta:descriptionId": "experienceevent-balance-transfers##xdm:personalFinances##description##10031"
+          "meta:descriptionId": "experienceevent-balance-transfers##xdm:personalFinances##description##40211"
         }
       }
     }
@@ -68,6 +68,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-balance-transfers##title##53361",
-  "meta:descriptionId": "experienceevent-balance-transfers##description##58401"
+  "meta:titleId": "experienceevent-balance-transfers##title##97571",
+  "meta:descriptionId": "experienceevent-balance-transfers##description##6171"
 }

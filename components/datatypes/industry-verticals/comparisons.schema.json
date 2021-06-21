@@ -18,8 +18,8 @@
           "title": "Count",
           "type": "integer",
           "description": "Count of the total number of items being compared.",
-          "meta:titleId": "comparisons##xdm:count##title##82941",
-          "meta:descriptionId": "comparisons##xdm:count##description##62431"
+          "meta:titleId": "comparisons##xdm:count##title##42011",
+          "meta:descriptionId": "comparisons##xdm:count##description##71651"
         },
         "xdm:items": {
           "title": "Items",
@@ -32,48 +32,48 @@
                 "title": "ID",
                 "type": "string",
                 "description": "Identifier for the item included within a comparison.",
-                "meta:titleId": "comparisons##xdm:ID##title##54301",
-                "meta:descriptionId": "comparisons##xdm:ID##description##37981"
+                "meta:titleId": "comparisons##xdm:ID##title##58941",
+                "meta:descriptionId": "comparisons##xdm:ID##description##87721"
               },
               "xdm:removal": {
                 "title": "Removal",
                 "type": "integer",
                 "description": "Tracked when an item is removed from a comparison.",
-                "meta:titleId": "comparisons##xdm:removal##title##84681",
-                "meta:descriptionId": "comparisons##xdm:removal##description##98941"
+                "meta:titleId": "comparisons##xdm:removal##title##2421",
+                "meta:descriptionId": "comparisons##xdm:removal##description##81611"
               },
               "xdm:addition": {
                 "title": "Addition",
                 "type": "integer",
                 "description": "Tracked when an item is added to a comparison.",
-                "meta:titleId": "comparisons##xdm:addition##title##65291",
-                "meta:descriptionId": "comparisons##xdm:addition##description##55451"
+                "meta:titleId": "comparisons##xdm:addition##title##85751",
+                "meta:descriptionId": "comparisons##xdm:addition##description##73951"
               },
               "xdm:selected": {
                 "title": "Selected",
                 "type": "integer",
                 "description": "Tracked when an item is selected/clicked-through upon to view more details.",
-                "meta:titleId": "comparisons##xdm:selected##title##26001",
-                "meta:descriptionId": "comparisons##xdm:selected##description##22801"
+                "meta:titleId": "comparisons##xdm:selected##title##22491",
+                "meta:descriptionId": "comparisons##xdm:selected##description##8831"
               }
             },
-            "meta:descriptionId": "comparisons##items##description##31791"
+            "meta:descriptionId": "comparisons##items##description##96181"
           },
-          "meta:titleId": "comparisons##xdm:items##title##3741"
+          "meta:titleId": "comparisons##xdm:items##title##53261"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "description": "Type of comparison tool in use.",
-          "meta:titleId": "comparisons##xdm:type##title##87001",
-          "meta:descriptionId": "comparisons##xdm:type##description##36571"
+          "meta:titleId": "comparisons##xdm:type##title##31001",
+          "meta:descriptionId": "comparisons##xdm:type##description##34551"
         },
         "xdm:view": {
           "title": "View",
           "type": "integer",
           "description": "Tracked when a comparison page is viewed.",
-          "meta:titleId": "comparisons##xdm:view##title##91211",
-          "meta:descriptionId": "comparisons##xdm:view##description##90351"
+          "meta:titleId": "comparisons##xdm:view##title##3201",
+          "meta:descriptionId": "comparisons##xdm:view##description##23891"
         }
       }
     }
@@ -85,6 +85,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "comparisons##title##33781",
-  "meta:descriptionId": "comparisons##description##25011"
+  "meta:titleId": "comparisons##title##48251",
+  "meta:descriptionId": "comparisons##description##62221"
 }

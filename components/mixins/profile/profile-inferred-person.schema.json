@@ -20,43 +20,43 @@
           "title": "Anonymous Hostname",
           "description": "Anonymous hostname.",
           "type": "string",
-          "meta:titleId": "profile-inferred-person##xdm:anonymousHostname##title##16851",
-          "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##98361"
+          "meta:titleId": "profile-inferred-person##xdm:anonymousHostname##title##16691",
+          "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##67561"
         },
         "xdm:inferredAddress": {
           "title": "Inferred Address",
           "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##16761",
-          "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##24991"
+          "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##92051",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##23561"
         },
         "xdm:inferredCompany": {
           "title": "Inferred Company",
           "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "type": "string",
-          "meta:titleId": "profile-inferred-person##xdm:inferredCompany##title##49201",
-          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##24351"
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompany##title##90281",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##92131"
         },
         "xdm:inferredCompanyStatus": {
           "title": "Inferred Company Status",
           "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
           "type": "string",
-          "meta:titleId": "profile-inferred-person##xdm:inferredCompanyStatus##title##43681",
-          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##57401"
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompanyStatus##title##94921",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##54171"
         },
         "xdm:inferredMetropolitanArea": {
           "title": "Inferred Metropolitan Area",
           "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string",
-          "meta:titleId": "profile-inferred-person##xdm:inferredMetropolitanArea##title##87381",
-          "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##27971"
+          "meta:titleId": "profile-inferred-person##xdm:inferredMetropolitanArea##title##62021",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##78131"
         },
         "xdm:inferredPhoneAreaCode": {
           "title": "Inferred Phone Area Code",
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
           "type": "string",
-          "meta:titleId": "profile-inferred-person##xdm:inferredPhoneAreaCode##title##89731",
-          "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##86231"
+          "meta:titleId": "profile-inferred-person##xdm:inferredPhoneAreaCode##title##32641",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##1331"
         }
       }
     }
@@ -68,6 +68,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-11-23",
-  "meta:titleId": "profile-inferred-person##title##96151",
-  "meta:descriptionId": "profile-inferred-person##description##31591"
+  "meta:titleId": "profile-inferred-person##title##20851",
+  "meta:descriptionId": "profile-inferred-person##description##58311"
 }

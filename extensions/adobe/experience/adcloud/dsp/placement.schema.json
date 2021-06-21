@@ -23,15 +23,15 @@
           "title": "Placement Key",
           "type": "string",
           "description": "Campaign Placement external unique identifier.",
-          "meta:titleId": "placement##dsp:placementKey##title##29851",
-          "meta:descriptionId": "placement##dsp:placementKey##description##23791"
+          "meta:titleId": "placement##dsp:placementKey##title##18551",
+          "meta:descriptionId": "placement##dsp:placementKey##description##8101"
         },
         "dsp:placementName": {
           "title": "Name",
           "type": "string",
           "description": "Campaign Placement name.",
-          "meta:titleId": "placement##dsp:placementName##title##15931",
-          "meta:descriptionId": "placement##dsp:placementName##description##47351"
+          "meta:titleId": "placement##dsp:placementName##title##35821",
+          "meta:descriptionId": "placement##dsp:placementName##description##18031"
         },
         "dsp:placementType": {
           "title": "Placement Type",
@@ -59,52 +59,52 @@
             "Template": "Template",
             "SAS": "SAS "
           },
-          "meta:titleId": "placement##dsp:placementType##title##62361",
-          "meta:descriptionId": "placement##dsp:placementType##description##93031"
+          "meta:titleId": "placement##dsp:placementType##title##91901",
+          "meta:descriptionId": "placement##dsp:placementType##description##92571"
         },
         "dsp:placementStartTime": {
           "title": "Campaign Placement Start Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "The date on which a placement starts showing ads (ms since Jan 1, 1970)",
-          "meta:titleId": "placement##dsp:placementStartTime##title##59611",
-          "meta:descriptionId": "placement##dsp:placementStartTime##description##89481"
+          "meta:titleId": "placement##dsp:placementStartTime##title##84131",
+          "meta:descriptionId": "placement##dsp:placementStartTime##description##72711"
         },
         "dsp:placementEndTime": {
           "title": "Campaign Placement End Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "The date after which a placement stops showing ads (ms since Jan 1, 1970).",
-          "meta:titleId": "placement##dsp:placementEndTime##title##34191",
-          "meta:descriptionId": "placement##dsp:placementEndTime##description##59601"
+          "meta:titleId": "placement##dsp:placementEndTime##title##80621",
+          "meta:descriptionId": "placement##dsp:placementEndTime##description##30901"
         },
         "dsp:placementBudget": {
           "title": "Campaign Placement Budget",
           "type": "integer",
           "description": "Campaign placement budget.",
-          "meta:titleId": "placement##dsp:placementBudget##title##78571",
-          "meta:descriptionId": "placement##dsp:placementBudget##description##99171"
+          "meta:titleId": "placement##dsp:placementBudget##title##52341",
+          "meta:descriptionId": "placement##dsp:placementBudget##description##77521"
         },
         "dsp:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Identifier of the campaign this placement belongs to.",
-          "meta:titleId": "placement##dsp:campaignId##title##62551",
-          "meta:descriptionId": "placement##dsp:campaignId##description##94151"
+          "meta:titleId": "placement##dsp:campaignId##title##31271",
+          "meta:descriptionId": "placement##dsp:campaignId##description##12821"
         },
         "dsp:packageId": {
           "title": "Package Identifier",
           "type": "string",
           "description": "Identifier of the package the placement belongs to.",
-          "meta:titleId": "placement##dsp:packageId##title##50511",
-          "meta:descriptionId": "placement##dsp:packageId##description##20201"
+          "meta:titleId": "placement##dsp:packageId##title##2951",
+          "meta:descriptionId": "placement##dsp:packageId##description##7481"
         },
         "dsp:siteId": {
           "title": "Site Identifier",
           "type": "string",
           "description": "Identifier of the site where the placement will be shown.",
-          "meta:titleId": "placement##dsp:siteId##title##96851",
-          "meta:descriptionId": "placement##dsp:siteId##description##97461"
+          "meta:titleId": "placement##dsp:siteId##title##79891",
+          "meta:descriptionId": "placement##dsp:siteId##description##78661"
         },
         "dsp:adIds": {
           "title": "Ad Identifiers",
@@ -113,8 +113,8 @@
             "type": "string"
           },
           "description": "List of identifiers for the ads which are linked to this campaign placement.",
-          "meta:titleId": "placement##dsp:adIds##title##79301",
-          "meta:descriptionId": "placement##dsp:adIds##description##36291"
+          "meta:titleId": "placement##dsp:adIds##title##30111",
+          "meta:descriptionId": "placement##dsp:adIds##description##57911"
         }
       }
     }
@@ -131,6 +131,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "placement##title##1341",
-  "meta:descriptionId": "placement##description##14901"
+  "meta:titleId": "placement##title##94491",
+  "meta:descriptionId": "placement##description##27651"
 }

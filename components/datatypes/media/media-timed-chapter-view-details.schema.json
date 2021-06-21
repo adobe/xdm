@@ -19,15 +19,15 @@
           "title": "Chapter position",
           "type": "integer",
           "description": "The index of the chapter inside the content.",
-          "meta:titleId": "media-timed-chapter-view-details##xdm:index##title##35351",
-          "meta:descriptionId": "media-timed-chapter-view-details##xdm:index##description##7431"
+          "meta:titleId": "media-timed-chapter-view-details##xdm:index##title##33871",
+          "meta:descriptionId": "media-timed-chapter-view-details##xdm:index##description##18911"
         },
         "xdm:offset": {
           "title": "Chapter offset",
           "type": "integer",
           "description": "The offset of the chapter, in seconds, inside the content from the start.",
-          "meta:titleId": "media-timed-chapter-view-details##xdm:offset##title##99871",
-          "meta:descriptionId": "media-timed-chapter-view-details##xdm:offset##description##98471"
+          "meta:titleId": "media-timed-chapter-view-details##xdm:offset##title##23001",
+          "meta:descriptionId": "media-timed-chapter-view-details##xdm:offset##description##23811"
         }
       },
       "required": ["xdm:index", "xdm:offset"]
@@ -42,6 +42,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media-timed-chapter-view-details##title##17351",
-  "meta:descriptionId": "media-timed-chapter-view-details##description##10291"
+  "meta:titleId": "media-timed-chapter-view-details##title##43671",
+  "meta:descriptionId": "media-timed-chapter-view-details##description##71681"
 }

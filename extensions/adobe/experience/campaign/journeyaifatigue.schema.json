@@ -19,8 +19,8 @@
           "type": "number",
           "exclusiveMinimum": 0,
           "maximum": 1,
-          "meta:titleId": "journeyaifatigue##xdm:fatigueScore##title##9511",
-          "meta:descriptionId": "journeyaifatigue##xdm:fatigueScore##description##4661"
+          "meta:titleId": "journeyaifatigue##xdm:fatigueScore##title##51571",
+          "meta:descriptionId": "journeyaifatigue##xdm:fatigueScore##description##62691"
         },
         "xdm:fatigueLevel": {
           "title": "Fatigue Level",
@@ -32,8 +32,8 @@
             "medium": "Medium",
             "high": "High"
           },
-          "meta:titleId": "journeyaifatigue##xdm:fatigueLevel##title##75051",
-          "meta:descriptionId": "journeyaifatigue##xdm:fatigueLevel##description##47441"
+          "meta:titleId": "journeyaifatigue##xdm:fatigueLevel##title##67781",
+          "meta:descriptionId": "journeyaifatigue##xdm:fatigueLevel##description##72591"
         }
       }
     }
@@ -44,6 +44,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "journeyaifatigue##title##49401",
-  "meta:descriptionId": "journeyaifatigue##description##65331"
+  "meta:titleId": "journeyaifatigue##title##70201",
+  "meta:descriptionId": "journeyaifatigue##description##51241"
 }

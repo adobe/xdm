@@ -20,22 +20,22 @@
           "format": "uri-reference",
           "title": "ID",
           "description": "The unique identifier of the filter. This @id must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object.",
-          "meta:titleId": "offer-filter##@id##title##92011",
-          "meta:descriptionId": "offer-filter##@id##description##30781"
+          "meta:titleId": "offer-filter##@id##title##56991",
+          "meta:descriptionId": "offer-filter##@id##description##59191"
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
           "description": "Filter name",
-          "meta:titleId": "offer-filter##xdm:name##title##84721",
-          "meta:descriptionId": "offer-filter##xdm:name##description##84361"
+          "meta:titleId": "offer-filter##xdm:name##title##50401",
+          "meta:descriptionId": "offer-filter##xdm:name##description##2351"
         },
         "xdm:value": {
           "$ref": "https://ns.adobe.com/experience/offer-management/filter-expression",
           "title": "Expression taking offer XDM instances (list of trees) as input",
           "description": "Contains the condition that is used to select offers based on a combination of tags or, directly, using the @id of offers.",
-          "meta:titleId": "offer-filter##xdm:value##title##14291",
-          "meta:descriptionId": "offer-filter##xdm:value##description##19071"
+          "meta:titleId": "offer-filter##xdm:value##title##4561",
+          "meta:descriptionId": "offer-filter##xdm:value##description##26411"
         }
       }
     }
@@ -49,6 +49,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "offer-filter##title##58481",
-  "meta:descriptionId": "offer-filter##description##72481"
+  "meta:titleId": "offer-filter##title##52231",
+  "meta:descriptionId": "offer-filter##description##50831"
 }

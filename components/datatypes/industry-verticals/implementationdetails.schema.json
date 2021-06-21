@@ -29,15 +29,15 @@
             "https://ns.adobe.com/experience/alloy": "Adobe Experience Platform Web SDK",
             "https://ns.adobe.com/experience/alloy/reactor": "Adobe Experience Platform Web SDK Launch Extension"
           },
-          "meta:titleId": "implementationdetails##xdm:name##title##68701",
-          "meta:descriptionId": "implementationdetails##xdm:name##description##37591"
+          "meta:titleId": "implementationdetails##xdm:name##title##52501",
+          "meta:descriptionId": "implementationdetails##xdm:name##description##74731"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "The version identifier of the API, e.g h.18.",
-          "meta:titleId": "implementationdetails##xdm:version##title##34761",
-          "meta:descriptionId": "implementationdetails##xdm:version##description##43651"
+          "meta:titleId": "implementationdetails##xdm:version##title##40431",
+          "meta:descriptionId": "implementationdetails##xdm:version##description##76471"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -50,8 +50,8 @@
             "server": "Server",
             "iot": "Internet of Things Device"
           },
-          "meta:titleId": "implementationdetails##xdm:environment##title##75021",
-          "meta:descriptionId": "implementationdetails##xdm:environment##description##7241"
+          "meta:titleId": "implementationdetails##xdm:environment##title##92991",
+          "meta:descriptionId": "implementationdetails##xdm:environment##description##83231"
         }
       }
     }
@@ -65,6 +65,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "implementationdetails##title##75321",
-  "meta:descriptionId": "implementationdetails##description##37751"
+  "meta:titleId": "implementationdetails##title##21721",
+  "meta:descriptionId": "implementationdetails##description##78501"
 }

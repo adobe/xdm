@@ -23,29 +23,29 @@
           "title": "Name of the property",
           "type": "string",
           "description": "Property Name.",
-          "meta:titleId": "transactionproperties##searchads:propertyName##title##80811",
-          "meta:descriptionId": "transactionproperties##searchads:propertyName##description##29431"
+          "meta:titleId": "transactionproperties##searchads:propertyName##title##6451",
+          "meta:descriptionId": "transactionproperties##searchads:propertyName##description##70621"
         },
         "searchads:propertyId": {
           "title": "Property Id",
           "type": "string",
           "description": "Property Id.",
-          "meta:titleId": "transactionproperties##searchads:propertyId##title##35371",
-          "meta:descriptionId": "transactionproperties##searchads:propertyId##description##91681"
+          "meta:titleId": "transactionproperties##searchads:propertyId##title##69991",
+          "meta:descriptionId": "transactionproperties##searchads:propertyId##description##49831"
         },
         "searchads:displayName": {
           "title": "Display Name",
           "type": "string",
           "description": "Display Name.",
-          "meta:titleId": "transactionproperties##searchads:displayName##title##68911",
-          "meta:descriptionId": "transactionproperties##searchads:displayName##description##86561"
+          "meta:titleId": "transactionproperties##searchads:displayName##title##2351",
+          "meta:descriptionId": "transactionproperties##searchads:displayName##description##5721"
         },
         "searchads:revenueType": {
           "title": "Revenue Type",
           "type": "string",
           "description": "Revenue Type.",
-          "meta:titleId": "transactionproperties##searchads:revenueType##title##25741",
-          "meta:descriptionId": "transactionproperties##searchads:revenueType##description##61141"
+          "meta:titleId": "transactionproperties##searchads:revenueType##title##40381",
+          "meta:descriptionId": "transactionproperties##searchads:revenueType##description##12921"
         },
         "searchads:createDate": {
           "type": "string",
@@ -54,7 +54,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the transaction was created. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "transactionproperties##searchads:createDate##description##39381"
+          "meta:descriptionId": "transactionproperties##searchads:createDate##description##85791"
         },
         "searchads:modifyDate": {
           "type": "string",
@@ -63,7 +63,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the transaction was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "transactionproperties##searchads:modifyDate##description##65331"
+          "meta:descriptionId": "transactionproperties##searchads:modifyDate##description##17111"
         }
       }
     }
@@ -80,6 +80,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "transactionproperties##title##50081",
-  "meta:descriptionId": "transactionproperties##description##14481"
+  "meta:titleId": "transactionproperties##title##76521",
+  "meta:descriptionId": "transactionproperties##description##59641"
 }

@@ -18,60 +18,60 @@
           "title": "Push Token",
           "type": "string",
           "description": "Valid push token for the given push platform.",
-          "meta:titleId": "pushdetail##xdm:token##title##25821",
-          "meta:descriptionId": "pushdetail##xdm:token##description##75961"
+          "meta:titleId": "pushdetail##xdm:token##title##22641",
+          "meta:descriptionId": "pushdetail##xdm:token##description##34461"
         },
         "xdm:platform": {
           "title": "Push Platform",
           "type": "string",
           "description": "Push provider, e.g. apns or fcm",
-          "meta:titleId": "pushdetail##xdm:platform##title##90211",
-          "meta:descriptionId": "pushdetail##xdm:platform##description##10911"
+          "meta:titleId": "pushdetail##xdm:platform##title##82831",
+          "meta:descriptionId": "pushdetail##xdm:platform##description##2851"
         },
         "xdm:blacklisted": {
           "title": "Blacklist Flag",
           "type": "boolean",
           "meta:status": "deprecated",
           "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.",
-          "meta:titleId": "pushdetail##xdm:blacklisted##title##14061",
-          "meta:descriptionId": "pushdetail##xdm:blacklisted##description##83431"
+          "meta:titleId": "pushdetail##xdm:blacklisted##title##59861",
+          "meta:descriptionId": "pushdetail##xdm:blacklisted##description##66201"
         },
         "xdm:blocklisted": {
           "title": "Blocklist Flag",
           "type": "boolean",
           "meta:status": "deprecated",
           "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.",
-          "meta:titleId": "pushdetail##xdm:blocklisted##title##33011",
-          "meta:descriptionId": "pushdetail##xdm:blocklisted##description##48521"
+          "meta:titleId": "pushdetail##xdm:blocklisted##title##19391",
+          "meta:descriptionId": "pushdetail##xdm:blocklisted##description##58341"
         },
         "xdm:denylisted": {
           "title": "Denylist Flag",
           "type": "boolean",
           "description": "Indicates whether the push token is blocked by the push provider.",
-          "meta:titleId": "pushdetail##xdm:denylisted##title##35861",
-          "meta:descriptionId": "pushdetail##xdm:denylisted##description##45521"
+          "meta:titleId": "pushdetail##xdm:denylisted##title##11851",
+          "meta:descriptionId": "pushdetail##xdm:denylisted##description##22531"
         },
         "xdm:appID": {
           "title": "Application Identifier",
           "type": "string",
           "description": "Unique Identifier for the mobile application.",
-          "meta:titleId": "pushdetail##xdm:appID##title##50651",
-          "meta:descriptionId": "pushdetail##xdm:appID##description##41981"
+          "meta:titleId": "pushdetail##xdm:appID##title##391",
+          "meta:descriptionId": "pushdetail##xdm:appID##description##9031"
         },
         "xdm:identiy": {
           "title": "Identity associated with this token",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "meta:status": "deprecated",
           "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.",
-          "meta:titleId": "pushdetail##xdm:identiy##title##78851",
-          "meta:descriptionId": "pushdetail##xdm:identiy##description##74931"
+          "meta:titleId": "pushdetail##xdm:identiy##title##33271",
+          "meta:descriptionId": "pushdetail##xdm:identiy##description##75721"
         },
         "xdm:identity": {
           "title": "Identity associated with this token",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "The identity associated with this token before profile stitching.",
-          "meta:titleId": "pushdetail##xdm:identity##title##40511",
-          "meta:descriptionId": "pushdetail##xdm:identity##description##61031"
+          "meta:titleId": "pushdetail##xdm:identity##title##96771",
+          "meta:descriptionId": "pushdetail##xdm:identity##description##42751"
         }
       }
     }
@@ -86,6 +86,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "pushdetail##title##61231",
-  "meta:descriptionId": "pushdetail##description##15971"
+  "meta:titleId": "pushdetail##title##65061",
+  "meta:descriptionId": "pushdetail##description##27781"
 }

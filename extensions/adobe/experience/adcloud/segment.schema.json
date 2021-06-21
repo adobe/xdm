@@ -17,22 +17,22 @@
           "title": "Attributable Partner ID",
           "type": "string",
           "description": "The segment provider who owns the attributableSegmentId.",
-          "meta:titleId": "segment##xdm:attributablePartnerId##title##97511",
-          "meta:descriptionId": "segment##xdm:attributablePartnerId##description##87051"
+          "meta:titleId": "segment##xdm:attributablePartnerId##title##59411",
+          "meta:descriptionId": "segment##xdm:attributablePartnerId##description##14721"
         },
         "xdm:attributableSegmentId": {
           "title": "Attributable Segment ID",
           "type": "string",
           "description": "The single segment accredit for user targeting among all the segments in the placement's targeting rule for the purposes of tracking costs and paying partners.",
-          "meta:titleId": "segment##xdm:attributableSegmentId##title##82591",
-          "meta:descriptionId": "segment##xdm:attributableSegmentId##description##82741"
+          "meta:titleId": "segment##xdm:attributableSegmentId##title##10621",
+          "meta:descriptionId": "segment##xdm:attributableSegmentId##description##26491"
         },
         "xdm:segments": {
           "title": "Segments",
           "type": "string",
           "description": "The intersection of the user segments that both: a) the user belonged to, and b) the ad was targeting. NOT the full list of segments that the user belonged to at the time of the auction.",
-          "meta:titleId": "segment##xdm:segments##title##49701",
-          "meta:descriptionId": "segment##xdm:segments##description##72981"
+          "meta:titleId": "segment##xdm:segments##title##84841",
+          "meta:descriptionId": "segment##xdm:segments##description##51031"
         }
       }
     }
@@ -43,6 +43,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "segment##title##41731",
-  "meta:descriptionId": "segment##description##27411"
+  "meta:titleId": "segment##title##47181",
+  "meta:descriptionId": "segment##description##66191"
 }

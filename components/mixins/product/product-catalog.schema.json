@@ -21,15 +21,15 @@
           "title": "Product Catalog Name",
           "type": "string",
           "description": "friendly name of the product catalog.",
-          "meta:titleId": "product-catalog##xdm:productCatalogName##title##9041",
-          "meta:descriptionId": "product-catalog##xdm:productCatalogName##description##18101"
+          "meta:titleId": "product-catalog##xdm:productCatalogName##title##57141",
+          "meta:descriptionId": "product-catalog##xdm:productCatalogName##description##30231"
         },
         "xdm:productCatalogDescription": {
           "title": "Product Catalog Description",
           "type": "string",
           "description": "Catalog description of the product.",
-          "meta:titleId": "product-catalog##xdm:productCatalogDescription##title##44301",
-          "meta:descriptionId": "product-catalog##xdm:productCatalogDescription##description##31531"
+          "meta:titleId": "product-catalog##xdm:productCatalogDescription##title##73571",
+          "meta:descriptionId": "product-catalog##xdm:productCatalogDescription##description##77251"
         }
       }
     }
@@ -41,6 +41,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "product-catalog##title##61151",
-  "meta:descriptionId": "product-catalog##description##28491"
+  "meta:titleId": "product-catalog##title##80141",
+  "meta:descriptionId": "product-catalog##description##45871"
 }

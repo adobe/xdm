@@ -23,24 +23,24 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
-          "meta:titleId": "offer-activity-detail##xdm:placement##title##10671",
-          "meta:descriptionId": "offer-activity-detail##xdm:placement##description##5431"
+          "meta:titleId": "offer-activity-detail##xdm:placement##title##73731",
+          "meta:descriptionId": "offer-activity-detail##xdm:placement##description##4771"
         },
         "xdm:filter": {
           "title": "Offer Filter",
           "type": "string",
           "format": "uri-reference",
           "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter",
-          "meta:titleId": "offer-activity-detail##xdm:filter##title##85881",
-          "meta:descriptionId": "offer-activity-detail##xdm:filter##description##39351"
+          "meta:titleId": "offer-activity-detail##xdm:filter##title##33541",
+          "meta:descriptionId": "offer-activity-detail##xdm:filter##description##16631"
         },
         "xdm:fallback": {
           "title": "Fallback Offer",
           "type": "string",
           "format": "uri-reference",
           "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
-          "meta:titleId": "offer-activity-detail##xdm:fallback##title##31711",
-          "meta:descriptionId": "offer-activity-detail##xdm:fallback##description##19511"
+          "meta:titleId": "offer-activity-detail##xdm:fallback##title##55691",
+          "meta:descriptionId": "offer-activity-detail##xdm:fallback##description##53731"
         }
       }
     }
@@ -54,6 +54,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "offer-activity-detail##title##59291",
-  "meta:descriptionId": "offer-activity-detail##description##20481"
+  "meta:titleId": "offer-activity-detail##title##42771",
+  "meta:descriptionId": "offer-activity-detail##description##27421"
 }

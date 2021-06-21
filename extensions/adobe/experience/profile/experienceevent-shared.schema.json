@@ -20,8 +20,8 @@
           "title": "Origin Dataset ID",
           "type": "string",
           "description": "Identity of the dataset that the Unified Profile Service ingested the data from. Usage is reserved for the Unified Profile Service.",
-          "meta:titleId": "experienceevent-shared##https://ns.adobe.com/experience/profile/originDatasetID##title##40761",
-          "meta:descriptionId": "experienceevent-shared##https://ns.adobe.com/experience/profile/originDatasetID##description##641"
+          "meta:titleId": "experienceevent-shared##https://ns.adobe.com/experience/profile/originDatasetID##title##52111",
+          "meta:descriptionId": "experienceevent-shared##https://ns.adobe.com/experience/profile/originDatasetID##description##13761"
         }
       }
     }
@@ -32,6 +32,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "experienceevent-shared##title##39001",
-  "meta:descriptionId": "experienceevent-shared##description##11211"
+  "meta:titleId": "experienceevent-shared##title##5521",
+  "meta:descriptionId": "experienceevent-shared##description##56371"
 }

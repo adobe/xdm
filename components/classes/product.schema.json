@@ -36,52 +36,52 @@
           "title": "Product ID",
           "type": "string",
           "description": "Product unique identifer.",
-          "meta:titleId": "product##xdm:productID##title##46081",
-          "meta:descriptionId": "product##xdm:productID##description##84111"
+          "meta:titleId": "product##xdm:productID##title##63951",
+          "meta:descriptionId": "product##xdm:productID##description##98811"
         },
         "xdm:productName": {
           "title": "Product Name",
           "type": "string",
           "description": "Name of the product.",
-          "meta:titleId": "product##xdm:productName##title##46301",
-          "meta:descriptionId": "product##xdm:productName##description##46461"
+          "meta:titleId": "product##xdm:productName##title##19001",
+          "meta:descriptionId": "product##xdm:productName##description##81761"
         },
         "xdm:productDescription": {
           "title": "Product Description",
           "type": "string",
           "description": "Description of the product.",
-          "meta:titleId": "product##xdm:productDescription##title##97761",
-          "meta:descriptionId": "product##xdm:productDescription##description##9921"
+          "meta:titleId": "product##xdm:productDescription##title##7701",
+          "meta:descriptionId": "product##xdm:productDescription##description##25001"
         },
         "xdm:productRating": {
           "title": "Product Rating",
           "type": "number",
           "description": "Customer review rating of the product.",
-          "meta:titleId": "product##xdm:productRating##title##50521",
-          "meta:descriptionId": "product##xdm:productRating##description##61941"
+          "meta:titleId": "product##xdm:productRating##title##32751",
+          "meta:descriptionId": "product##xdm:productRating##description##10351"
         },
         "xdm:productListPrice": {
           "title": "Product List price",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "description": "Default price of the product before sales and discounting.",
-          "meta:titleId": "product##xdm:productListPrice##title##49311",
-          "meta:descriptionId": "product##xdm:productListPrice##description##23271"
+          "meta:titleId": "product##xdm:productListPrice##title##39781",
+          "meta:descriptionId": "product##xdm:productListPrice##description##55151"
         },
         "xdm:productManufacturedDate": {
           "title": "Product Manufactured date",
           "type": "string",
           "format": "date-time",
           "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-          "meta:titleId": "product##xdm:productManufacturedDate##title##29551",
-          "meta:descriptionId": "product##xdm:productManufacturedDate##description##2331"
+          "meta:titleId": "product##xdm:productManufacturedDate##title##57781",
+          "meta:descriptionId": "product##xdm:productManufacturedDate##description##16171"
         },
         "xdm:productLastModifiedDate": {
           "title": "Product last modified Date",
           "type": "string",
           "format": "date-time",
           "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-          "meta:titleId": "product##xdm:productLastModifiedDate##title##13441",
-          "meta:descriptionId": "product##xdm:productLastModifiedDate##description##94191"
+          "meta:titleId": "product##xdm:productLastModifiedDate##title##6051",
+          "meta:descriptionId": "product##xdm:productLastModifiedDate##description##3281"
         }
       }
     }
@@ -96,6 +96,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-10-16",
-  "meta:titleId": "product##title##431",
-  "meta:descriptionId": "product##description##22361"
+  "meta:titleId": "product##title##21171",
+  "meta:descriptionId": "product##description##74621"
 }

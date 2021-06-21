@@ -30,8 +30,8 @@
             "middle": "Middle"
           },
           "description": "Captures the user's preferred seat type for flights.",
-          "meta:titleId": "travel-preferences##xdm:seat##title##89851",
-          "meta:descriptionId": "travel-preferences##xdm:seat##description##98821"
+          "meta:titleId": "travel-preferences##xdm:seat##title##91441",
+          "meta:descriptionId": "travel-preferences##xdm:seat##description##5701"
         },
         "xdm:seatSection ": {
           "title": "Seat Section",
@@ -45,8 +45,8 @@
             "rear": "Rear"
           },
           "description": "Captures the user's preferred seat sectionfor flights.",
-          "meta:titleId": "travel-preferences##xdm:seatSection ##title##64091",
-          "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##20831"
+          "meta:titleId": "travel-preferences##xdm:seatSection ##title##64441",
+          "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##11081"
         },
         "xdm:meal": {
           "title": "Meal",
@@ -94,16 +94,16 @@
             "vegetarianRaw": "Vegetarian, Raw"
           },
           "description": "Tracks the user's meal preference, if provided.",
-          "meta:titleId": "travel-preferences##xdm:meal##title##47531",
-          "meta:descriptionId": "travel-preferences##xdm:meal##description##50061"
+          "meta:titleId": "travel-preferences##xdm:meal##title##44091",
+          "meta:descriptionId": "travel-preferences##xdm:meal##description##44561"
         },
         "xdm:preferredDepartureAirportCode": {
           "title": "Preferred Departure Airport Code",
           "type": "string",
           "description": "Records the user's preferred home/departure airport code.",
           "pattern": "^[A-Z]{3}$",
-          "meta:titleId": "travel-preferences##xdm:preferredDepartureAirportCode##title##70261",
-          "meta:descriptionId": "travel-preferences##xdm:preferredDepartureAirportCode##description##48321"
+          "meta:titleId": "travel-preferences##xdm:preferredDepartureAirportCode##title##91791",
+          "meta:descriptionId": "travel-preferences##xdm:preferredDepartureAirportCode##description##50411"
         },
         "xdm:ticketDelivery": {
           "title": "Ticket Delivery",
@@ -114,15 +114,15 @@
             "physical": "Physical"
           },
           "description": "Defines the user's preferred ticket delivery method.",
-          "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##68151",
-          "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##78231"
+          "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##81211",
+          "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##20311"
         },
         "xdm:medicalAlerts": {
           "title": "Medical Alerts",
           "type": "string",
           "description": "Captures any medical alerts for the user.",
-          "meta:titleId": "travel-preferences##xdm:medicalAlerts##title##38791",
-          "meta:descriptionId": "travel-preferences##xdm:medicalAlerts##description##34241"
+          "meta:titleId": "travel-preferences##xdm:medicalAlerts##title##71621",
+          "meta:descriptionId": "travel-preferences##xdm:medicalAlerts##description##28971"
         },
         "xdm:roomType": {
           "title": "Room Type",
@@ -146,85 +146,85 @@
             "disability": "Disability"
           },
           "description": "Tracks the user's preferred room type.",
-          "meta:titleId": "travel-preferences##xdm:roomType##title##45191",
-          "meta:descriptionId": "travel-preferences##xdm:roomType##description##44591"
+          "meta:titleId": "travel-preferences##xdm:roomType##title##11551",
+          "meta:descriptionId": "travel-preferences##xdm:roomType##description##20641"
         },
         "xdm:smokingRoom": {
           "title": "Smoking Room",
           "type": "boolean",
           "description": "Flags if the user prefers a smoking room.",
-          "meta:titleId": "travel-preferences##xdm:smokingRoom##title##24261",
-          "meta:descriptionId": "travel-preferences##xdm:smokingRoom##description##33991"
+          "meta:titleId": "travel-preferences##xdm:smokingRoom##title##3341",
+          "meta:descriptionId": "travel-preferences##xdm:smokingRoom##description##88371"
         },
         "xdm:foamPillows": {
           "title": "Foam Pillows",
           "type": "boolean",
           "description": "Captures if the user prefers foam pillows.",
-          "meta:titleId": "travel-preferences##xdm:foamPillows##title##6211",
-          "meta:descriptionId": "travel-preferences##xdm:foamPillows##description##62311"
+          "meta:titleId": "travel-preferences##xdm:foamPillows##title##3501",
+          "meta:descriptionId": "travel-preferences##xdm:foamPillows##description##20601"
         },
         "xdm:rollAwayBed": {
           "title": "Roll Away Bed",
           "type": "boolean",
           "description": "Captures if the user requires a rollaway bed.",
-          "meta:titleId": "travel-preferences##xdm:rollAwayBed##title##45601",
-          "meta:descriptionId": "travel-preferences##xdm:rollAwayBed##description##73061"
+          "meta:titleId": "travel-preferences##xdm:rollAwayBed##title##32241",
+          "meta:descriptionId": "travel-preferences##xdm:rollAwayBed##description##92171"
         },
         "xdm:crib": {
           "title": "Crib",
           "type": "boolean",
           "description": "Captures if the user requires a crib.",
-          "meta:titleId": "travel-preferences##xdm:crib##title##46471",
-          "meta:descriptionId": "travel-preferences##xdm:crib##description##62291"
+          "meta:titleId": "travel-preferences##xdm:crib##title##26091",
+          "meta:descriptionId": "travel-preferences##xdm:crib##description##42121"
         },
         "xdm:earlyCheckIn": {
           "title": "Early Check-In",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with early check-in available.",
-          "meta:titleId": "travel-preferences##xdm:earlyCheckIn##title##57271",
-          "meta:descriptionId": "travel-preferences##xdm:earlyCheckIn##description##32541"
+          "meta:titleId": "travel-preferences##xdm:earlyCheckIn##title##52491",
+          "meta:descriptionId": "travel-preferences##xdm:earlyCheckIn##description##12791"
         },
         "xdm:gym": {
           "title": "Gym",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a gym/fitness room.",
-          "meta:titleId": "travel-preferences##xdm:gym##title##36511",
-          "meta:descriptionId": "travel-preferences##xdm:gym##description##94911"
+          "meta:titleId": "travel-preferences##xdm:gym##title##91911",
+          "meta:descriptionId": "travel-preferences##xdm:gym##description##60951"
         },
         "xdm:pool": {
           "title": "Pool",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a swimming pool.",
-          "meta:titleId": "travel-preferences##xdm:pool##title##3581",
-          "meta:descriptionId": "travel-preferences##xdm:pool##description##9371"
+          "meta:titleId": "travel-preferences##xdm:pool##title##84681",
+          "meta:descriptionId": "travel-preferences##xdm:pool##description##93261"
         },
         "xdm:hasRestaurant": {
           "title": "Has Restaurant",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a restaurant.",
-          "meta:titleId": "travel-preferences##xdm:hasRestaurant##title##65941",
-          "meta:descriptionId": "travel-preferences##xdm:hasRestaurant##description##36341"
+          "meta:titleId": "travel-preferences##xdm:hasRestaurant##title##5511",
+          "meta:descriptionId": "travel-preferences##xdm:hasRestaurant##description##55291"
         },
         "xdm:roomService": {
           "title": "Room Service",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with room service available.",
-          "meta:titleId": "travel-preferences##xdm:roomService##title##54371",
-          "meta:descriptionId": "travel-preferences##xdm:roomService##description##53181"
+          "meta:titleId": "travel-preferences##xdm:roomService##title##63251",
+          "meta:descriptionId": "travel-preferences##xdm:roomService##description##74851"
         },
         "xdm:wheelchairAccessible": {
           "title": "Wheelchair Accessible",
           "type": "boolean",
           "description": "Tracks if the user requres a wheelchair accessible room.",
-          "meta:titleId": "travel-preferences##xdm:wheelchairAccessible##title##78551",
-          "meta:descriptionId": "travel-preferences##xdm:wheelchairAccessible##description##48731"
+          "meta:titleId": "travel-preferences##xdm:wheelchairAccessible##title##4531",
+          "meta:descriptionId": "travel-preferences##xdm:wheelchairAccessible##description##28791"
         },
         "xdm:visuallyImpairedAccessible": {
           "title": "Visually Impaired Accessible",
           "type": "boolean",
           "description": "Tracks if the user requres a visually impaired accessible room.",
-          "meta:titleId": "travel-preferences##xdm:visuallyImpairedAccessible##title##8511",
-          "meta:descriptionId": "travel-preferences##xdm:visuallyImpairedAccessible##description##39481"
+          "meta:titleId": "travel-preferences##xdm:visuallyImpairedAccessible##title##73401",
+          "meta:descriptionId": "travel-preferences##xdm:visuallyImpairedAccessible##description##1741"
         },
         "xdm:vehicleType": {
           "title": "Vehicle Type",
@@ -272,22 +272,22 @@
             "specializedVehicle": "Specialized Vehicle"
           },
           "description": "Records the user's vehicle type preference.",
-          "meta:titleId": "travel-preferences##xdm:vehicleType##title##44701",
-          "meta:descriptionId": "travel-preferences##xdm:vehicleType##description##68891"
+          "meta:titleId": "travel-preferences##xdm:vehicleType##title##95781",
+          "meta:descriptionId": "travel-preferences##xdm:vehicleType##description##62161"
         },
         "xdm:smokingVehicle": {
           "title": "Smoking Vehicle",
           "type": "boolean",
           "description": "Flags if the user prefers a smoking vehicle.",
-          "meta:titleId": "travel-preferences##xdm:smokingVehicle##title##43231",
-          "meta:descriptionId": "travel-preferences##xdm:smokingVehicle##description##5751"
+          "meta:titleId": "travel-preferences##xdm:smokingVehicle##title##95561",
+          "meta:descriptionId": "travel-preferences##xdm:smokingVehicle##description##76991"
         },
         "xdm:manualTransmission": {
           "title": "Manual Transmission",
           "type": "boolean",
           "description": "Records if a user prefers a manual transmission instead of an automatic transmission.",
-          "meta:titleId": "travel-preferences##xdm:manualTransmission##title##58071",
-          "meta:descriptionId": "travel-preferences##xdm:manualTransmission##description##61"
+          "meta:titleId": "travel-preferences##xdm:manualTransmission##title##81001",
+          "meta:descriptionId": "travel-preferences##xdm:manualTransmission##description##19221"
         }
       }
     }
@@ -298,6 +298,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "travel-preferences##title##81181",
-  "meta:descriptionId": "travel-preferences##description##17491"
+  "meta:titleId": "travel-preferences##title##4541",
+  "meta:descriptionId": "travel-preferences##description##39961"
 }

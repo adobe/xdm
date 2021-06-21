@@ -19,24 +19,24 @@
           "title": "Player state set",
           "type": "boolean",
           "description": "Whether or not the player state is set on that state.",
-          "meta:titleId": "player-state##xdm:playerStateSet##title##92141",
-          "meta:descriptionId": "player-state##xdm:playerStateSet##description##26781"
+          "meta:titleId": "player-state##xdm:playerStateSet##title##7481",
+          "meta:descriptionId": "player-state##xdm:playerStateSet##description##69931"
         },
         "xdm:playerStateCount": {
           "title": "Player state count",
           "type": "integer",
           "minimum": 0,
           "description": "The number of times that player state was set on the stream.",
-          "meta:titleId": "player-state##xdm:playerStateCount##title##19791",
-          "meta:descriptionId": "player-state##xdm:playerStateCount##description##50651"
+          "meta:titleId": "player-state##xdm:playerStateCount##title##84221",
+          "meta:descriptionId": "player-state##xdm:playerStateCount##description##76981"
         },
         "xdm:playerStateTime": {
           "title": "Player state time",
           "type": "integer",
           "minimum": 0,
           "description": "The total duration of that player state.",
-          "meta:titleId": "player-state##xdm:playerStateTime##title##4661",
-          "meta:descriptionId": "player-state##xdm:playerStateTime##description##78851"
+          "meta:titleId": "player-state##xdm:playerStateTime##title##32211",
+          "meta:descriptionId": "player-state##xdm:playerStateTime##description##64301"
         }
       }
     }
@@ -50,6 +50,6 @@
     }
   ],
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "player-state##title##5801",
-  "meta:descriptionId": "player-state##description##56381"
+  "meta:titleId": "player-state##title##59511",
+  "meta:descriptionId": "player-state##description##45731"
 }

@@ -35,64 +35,64 @@
                   "title": "Loan",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
                   "description": "Extension of form application data type.",
-                  "meta:titleId": "experienceevent-loan-application-details##xdm:loan##title##77891",
-                  "meta:descriptionId": "experienceevent-loan-application-details##xdm:loan##description##37251"
+                  "meta:titleId": "experienceevent-loan-application-details##xdm:loan##title##36801",
+                  "meta:descriptionId": "experienceevent-loan-application-details##xdm:loan##description##94871"
                 }
               },
               "xdm:annualPercentageRate": {
                 "title": "Annual Percentage Rate",
                 "type": "number",
                 "description": "Records the annual percentage rate of the loan.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:annualPercentageRate##title##37181",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:annualPercentageRate##description##6781"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:annualPercentageRate##title##94831",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:annualPercentageRate##description##63351"
               },
               "xdm:downpayment": {
                 "title": "Downpayment",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                 "description": "Captures the downpayment amount of loan.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:downpayment##title##58801",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:downpayment##description##37961"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:downpayment##title##63411",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:downpayment##description##50271"
               },
               "xdm:startDate": {
                 "title": "Start Date",
                 "type": "string",
                 "format": "date-time",
                 "description": "Records the anticipated start date of the loan.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:startDate##title##90181",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:startDate##description##85221"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:startDate##title##30351",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:startDate##description##96701"
               },
               "xdm:endDate": {
                 "title": "End Date",
                 "type": "string",
                 "format": "date-time",
                 "description": "Records the anticipated end date of the loan.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:endDate##title##54701",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:endDate##description##86191"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:endDate##title##28501",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:endDate##description##90531"
               },
               "xdm:interestRate": {
                 "title": "Interest Rate",
                 "type": "number",
                 "description": "Records the interest rate of the loan.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:interestRate##title##1331",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:interestRate##description##20391"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:interestRate##title##87611",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:interestRate##description##48881"
               },
               "xdm:interestType": {
                 "title": "Interest Type",
                 "type": "string",
                 "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:interestType##title##99731",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:interestType##description##74501"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:interestType##title##85141",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:interestType##description##61241"
               },
               "xdm:term": {
                 "title": "Term",
                 "type": "integer",
                 "description": "Records the duration of the loan, in months.",
-                "meta:titleId": "experienceevent-loan-application-details##xdm:term##title##1031",
-                "meta:descriptionId": "experienceevent-loan-application-details##xdm:term##description##57871"
+                "meta:titleId": "experienceevent-loan-application-details##xdm:term##title##15051",
+                "meta:descriptionId": "experienceevent-loan-application-details##xdm:term##description##94641"
               }
             }
           },
-          "meta:descriptionId": "experienceevent-loan-application-details##xdm:personalFinances##description##25251"
+          "meta:descriptionId": "experienceevent-loan-application-details##xdm:personalFinances##description##31771"
         }
       }
     }
@@ -104,6 +104,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-loan-application-details##title##37821",
-  "meta:descriptionId": "experienceevent-loan-application-details##description##60851"
+  "meta:titleId": "experienceevent-loan-application-details##title##77901",
+  "meta:descriptionId": "experienceevent-loan-application-details##description##6741"
 }

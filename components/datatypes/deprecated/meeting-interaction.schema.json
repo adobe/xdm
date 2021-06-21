@@ -18,53 +18,53 @@
           "title": "All Day meeting/event",
           "type": "boolean",
           "description": "A flag to represent whether the meeting is all day long",
-          "meta:titleId": "meetinginteraction##xdm:isAllDay##title##9111",
-          "meta:descriptionId": "meetinginteraction##xdm:isAllDay##description##66321"
+          "meta:titleId": "meetinginteraction##xdm:isAllDay##title##73541",
+          "meta:descriptionId": "meetinginteraction##xdm:isAllDay##description##89111"
         },
         "xdm:isOnline": {
           "title": "Meeting online/offline",
           "type": "boolean",
           "description": "A flag indicating whether the neeting is online of offline",
-          "meta:titleId": "meetinginteraction##xdm:isOnline##title##81311",
-          "meta:descriptionId": "meetinginteraction##xdm:isOnline##description##75781"
+          "meta:titleId": "meetinginteraction##xdm:isOnline##title##15831",
+          "meta:descriptionId": "meetinginteraction##xdm:isOnline##description##18241"
         },
         "xdm:isReminderSet": {
           "title": "Reminder Set for the meeting",
           "type": "boolean",
           "description": "A flag indicating whether a reminder has been in place for the meeting",
-          "meta:titleId": "meetinginteraction##xdm:isReminderSet##title##40361",
-          "meta:descriptionId": "meetinginteraction##xdm:isReminderSet##description##40701"
+          "meta:titleId": "meetinginteraction##xdm:isReminderSet##title##69951",
+          "meta:descriptionId": "meetinginteraction##xdm:isReminderSet##description##6931"
         },
         "xdm:reminderDateTime": {
           "title": "Date and time at which the reminder is set",
           "type": "string",
           "format": "date-time",
           "description": "The date and time for which the reminder is set, if the flag for reminder set has been set to true",
-          "meta:titleId": "meetinginteraction##xdm:reminderDateTime##title##6381",
-          "meta:descriptionId": "meetinginteraction##xdm:reminderDateTime##description##19531"
+          "meta:titleId": "meetinginteraction##xdm:reminderDateTime##title##98901",
+          "meta:descriptionId": "meetinginteraction##xdm:reminderDateTime##description##94941"
         },
         "xdm:scheduledStartDateTime": {
           "title": "Time at which the meeting has been schedued to start",
           "type": "string",
           "format": "date-time",
           "description": "Scheduled time at which the meeting will start",
-          "meta:titleId": "meetinginteraction##xdm:scheduledStartDateTime##title##14561",
-          "meta:descriptionId": "meetinginteraction##xdm:scheduledStartDateTime##description##78301"
+          "meta:titleId": "meetinginteraction##xdm:scheduledStartDateTime##title##88941",
+          "meta:descriptionId": "meetinginteraction##xdm:scheduledStartDateTime##description##90711"
         },
         "xdm:scheduledEndDateTime": {
           "title": "Scheduled time for the meeting to end",
           "type": "string",
           "format": "date-time",
           "description": "Scheduled time by which the meeting should end",
-          "meta:titleId": "meetinginteraction##xdm:scheduledEndDateTime##title##10931",
-          "meta:descriptionId": "meetinginteraction##xdm:scheduledEndDateTime##description##15011"
+          "meta:titleId": "meetinginteraction##xdm:scheduledEndDateTime##title##41381",
+          "meta:descriptionId": "meetinginteraction##xdm:scheduledEndDateTime##description##3961"
         },
         "xdm:organizerID": {
           "title": "Person organizing the meeting",
           "type": "string",
           "description": "Person who is responsible to control and manage the meeting",
-          "meta:titleId": "meetinginteraction##xdm:organizerID##title##70011",
-          "meta:descriptionId": "meetinginteraction##xdm:organizerID##description##81551"
+          "meta:titleId": "meetinginteraction##xdm:organizerID##title##76791",
+          "meta:descriptionId": "meetinginteraction##xdm:organizerID##description##43011"
         }
       }
     }
@@ -79,6 +79,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "meetinginteraction##title##37721",
-  "meta:descriptionId": "meetinginteraction##description##58221"
+  "meta:titleId": "meetinginteraction##title##56681",
+  "meta:descriptionId": "meetinginteraction##description##71981"
 }

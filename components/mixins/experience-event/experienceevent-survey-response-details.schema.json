@@ -42,15 +42,15 @@
                 "type": "string"
               },
               "description": "An array of the answers provided by the visitor within a survey.",
-              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyAnswers##title##68741",
-              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyAnswers##description##64961"
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyAnswers##title##1861",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyAnswers##description##38561"
             },
             "xdm:surveyID": {
               "title": "Survey ID",
               "type": "string",
               "description": "ID for the specific survey taken.",
-              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyID##title##80791",
-              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyID##description##47951"
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyID##title##4491",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyID##description##20751"
             },
             "xdm:surveyQuestions": {
               "title": "Survey Questions",
@@ -59,19 +59,19 @@
                 "type": "string"
               },
               "description": "An array of the questions presented to the visitor within a survey.",
-              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyQuestions##title##41021",
-              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyQuestions##description##4351"
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveyQuestions##title##57281",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyQuestions##description##10401"
             },
             "xdm:surveySteps": {
               "title": "Survey Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-survey-response-details##xdm:surveySteps##title##40001",
-              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveySteps##description##9931"
+              "meta:titleId": "experienceevent-survey-response-details##xdm:surveySteps##title##83601",
+              "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveySteps##description##32071"
             }
           },
-          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyResponse##description##60921"
+          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyResponse##description##57811"
         }
       }
     }
@@ -83,6 +83,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
-  "meta:titleId": "experienceevent-survey-response-details##title##27151",
-  "meta:descriptionId": "experienceevent-survey-response-details##description##83641"
+  "meta:titleId": "experienceevent-survey-response-details##title##87361",
+  "meta:descriptionId": "experienceevent-survey-response-details##description##29771"
 }

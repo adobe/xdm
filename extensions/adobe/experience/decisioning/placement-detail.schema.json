@@ -20,30 +20,30 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique identifier for the decision placement.",
-          "meta:titleId": "placement-detail##xdm:id##title##5171",
-          "meta:descriptionId": "placement-detail##xdm:id##description##85841"
+          "meta:titleId": "placement-detail##xdm:id##title##4161",
+          "meta:descriptionId": "placement-detail##xdm:id##description##78561"
         },
         "repo:etag": {
           "title": "Placement ETag",
           "type": "string",
           "description": "The revision that the placement object was at when the snapshot was taken.",
-          "meta:titleId": "placement-detail##repo:etag##title##30721",
-          "meta:descriptionId": "placement-detail##repo:etag##description##43271"
+          "meta:titleId": "placement-detail##repo:etag##title##92641",
+          "meta:descriptionId": "placement-detail##repo:etag##description##4161"
         },
         "xdm:name": {
           "title": "Placement Name",
           "type": "string",
           "description": "Placement name. The name is displayed in various user interfaces.",
-          "meta:titleId": "placement-detail##xdm:name##title##76031",
-          "meta:descriptionId": "placement-detail##xdm:name##description##80141"
+          "meta:titleId": "placement-detail##xdm:name##title##65621",
+          "meta:descriptionId": "placement-detail##xdm:name##description##4551"
         },
         "xdm:channelID": {
           "title": "Placement's Channel Identifier",
           "type": "string",
           "format": "uri-reference",
           "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
-          "meta:titleId": "placement-detail##xdm:channelID##title##80281",
-          "meta:descriptionId": "placement-detail##xdm:channelID##description##63201"
+          "meta:titleId": "placement-detail##xdm:channelID##title##25541",
+          "meta:descriptionId": "placement-detail##xdm:channelID##description##9961"
         }
       }
     }
@@ -57,6 +57,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "placement-detail##title##99311",
-  "meta:descriptionId": "placement-detail##description##21931"
+  "meta:titleId": "placement-detail##title##23001",
+  "meta:descriptionId": "placement-detail##description##50941"
 }

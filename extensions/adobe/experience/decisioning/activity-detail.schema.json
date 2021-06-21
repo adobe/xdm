@@ -20,46 +20,46 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique, immutable identifier for the decision activity.",
-          "meta:titleId": "activity-detail##xdm:id##title##27181",
-          "meta:descriptionId": "activity-detail##xdm:id##description##39611"
+          "meta:titleId": "activity-detail##xdm:id##title##69851",
+          "meta:descriptionId": "activity-detail##xdm:id##description##18591"
         },
         "repo:etag": {
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken.",
-          "meta:titleId": "activity-detail##repo:etag##title##69331",
-          "meta:descriptionId": "activity-detail##repo:etag##description##30911"
+          "meta:titleId": "activity-detail##repo:etag##title##93171",
+          "meta:descriptionId": "activity-detail##repo:etag##description##73231"
         },
         "xdm:name": {
           "title": "Activity Name",
           "type": "string",
           "description": "Activity name. The name is displayed in various user interfaces.",
-          "meta:titleId": "activity-detail##xdm:name##title##30801",
-          "meta:descriptionId": "activity-detail##xdm:name##description##39371"
+          "meta:titleId": "activity-detail##xdm:name##title##68831",
+          "meta:descriptionId": "activity-detail##xdm:name##description##14731"
         },
         "xdm:startTime": {
           "title": "Activity Start Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
-          "meta:titleId": "activity-detail##xdm:startTime##title##98631",
-          "meta:descriptionId": "activity-detail##xdm:startTime##description##69821"
+          "meta:titleId": "activity-detail##xdm:startTime##title##24701",
+          "meta:descriptionId": "activity-detail##xdm:startTime##description##73361"
         },
         "xdm:endTime": {
           "title": "Activity End Date and Time",
           "type": "string",
           "format": "date-time",
           "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
-          "meta:titleId": "activity-detail##xdm:endTime##title##65191",
-          "meta:descriptionId": "activity-detail##xdm:endTime##description##25851"
+          "meta:titleId": "activity-detail##xdm:endTime##title##48821",
+          "meta:descriptionId": "activity-detail##xdm:endTime##description##85111"
         },
         "xdm:fallback": {
           "title": "Fallback Option",
           "type": "string",
           "format": "uri-reference",
           "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.",
-          "meta:titleId": "activity-detail##xdm:fallback##title##74381",
-          "meta:descriptionId": "activity-detail##xdm:fallback##description##35081"
+          "meta:titleId": "activity-detail##xdm:fallback##title##82451",
+          "meta:descriptionId": "activity-detail##xdm:fallback##description##3941"
         }
       }
     }
@@ -76,6 +76,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "activity-detail##title##52511",
-  "meta:descriptionId": "activity-detail##description##58041"
+  "meta:titleId": "activity-detail##title##77021",
+  "meta:descriptionId": "activity-detail##description##92581"
 }

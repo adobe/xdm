@@ -17,29 +17,29 @@
           "title": "Identifier",
           "type": "string",
           "description": "The unique identifier of the circle.",
-          "meta:titleId": "GeoCircle##@id##title##13691",
-          "meta:descriptionId": "GeoCircle##@id##description##44601"
+          "meta:titleId": "GeoCircle##@id##title##48081",
+          "meta:descriptionId": "GeoCircle##@id##description##64541"
         },
         "schema:description": {
           "title": "Description",
           "type": "string",
           "description": "A description of what the circle contains.",
-          "meta:titleId": "GeoCircle##schema:description##title##11851",
-          "meta:descriptionId": "GeoCircle##schema:description##description##71421"
+          "meta:titleId": "GeoCircle##schema:description##title##68971",
+          "meta:descriptionId": "GeoCircle##schema:description##description##64531"
         },
         "schema:coordinates": {
           "title": "Coordinates",
           "$ref": "http://schema.org/GeoCoordinates",
           "description": "",
-          "meta:titleId": "GeoCircle##schema:coordinates##title##46051",
-          "meta:descriptionId": "GeoCircle##schema:coordinates##description##64311"
+          "meta:titleId": "GeoCircle##schema:coordinates##title##41781",
+          "meta:descriptionId": "GeoCircle##schema:coordinates##description##11921"
         },
         "schema:radius": {
           "title": "Radius",
           "type": "number",
           "description": "The length of the radius of the circle. This value conforms to the WGS84 datum and is measured in meters.",
-          "meta:titleId": "GeoCircle##schema:radius##title##48711",
-          "meta:descriptionId": "GeoCircle##schema:radius##description##30451"
+          "meta:titleId": "GeoCircle##schema:radius##title##57371",
+          "meta:descriptionId": "GeoCircle##schema:radius##description##91361"
         }
       }
     }
@@ -51,6 +51,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "GeoCircle##title##4101",
-  "meta:descriptionId": "GeoCircle##description##72301"
+  "meta:titleId": "GeoCircle##title##76981",
+  "meta:descriptionId": "GeoCircle##description##82611"
 }

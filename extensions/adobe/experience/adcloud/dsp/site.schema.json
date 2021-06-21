@@ -23,22 +23,22 @@
           "title": "Site Key",
           "type": "string",
           "description": "Placement site external unique identifier.",
-          "meta:titleId": "site##dsp:siteKey##title##55981",
-          "meta:descriptionId": "site##dsp:siteKey##description##42991"
+          "meta:titleId": "site##dsp:siteKey##title##48951",
+          "meta:descriptionId": "site##dsp:siteKey##description##95171"
         },
         "dsp:siteName": {
           "title": "Site Name",
           "type": "string",
           "description": "Placement site name.",
-          "meta:titleId": "site##dsp:siteName##title##9591",
-          "meta:descriptionId": "site##dsp:siteName##description##54501"
+          "meta:titleId": "site##dsp:siteName##title##35831",
+          "meta:descriptionId": "site##dsp:siteName##description##55691"
         },
         "dsp:siteUrl": {
           "title": "Site Url",
           "type": "string",
           "description": "Placement site url.",
-          "meta:titleId": "site##dsp:siteUrl##title##45051",
-          "meta:descriptionId": "site##dsp:siteUrl##description##52391"
+          "meta:titleId": "site##dsp:siteUrl##title##54841",
+          "meta:descriptionId": "site##dsp:siteUrl##description##92381"
         },
         "dsp:siteType": {
           "title": "Site Type",
@@ -52,8 +52,8 @@
             "Site": "Site",
             "Network": "Network"
           },
-          "meta:titleId": "site##dsp:siteType##title##15901",
-          "meta:descriptionId": "site##dsp:siteType##description##56631"
+          "meta:titleId": "site##dsp:siteType##title##46661",
+          "meta:descriptionId": "site##dsp:siteType##description##43111"
         },
         "dsp:siteStatus": {
           "title": "Site Status",
@@ -69,8 +69,8 @@
             "Inactive": "Inactive",
             "Deleted": "Deleted"
           },
-          "meta:titleId": "site##dsp:siteStatus##title##64111",
-          "meta:descriptionId": "site##dsp:siteStatus##description##36101"
+          "meta:titleId": "site##dsp:siteStatus##title##18911",
+          "meta:descriptionId": "site##dsp:siteStatus##description##531"
         },
         "dsp:siteDataSource": {
           "title": "Site Data Source",
@@ -86,29 +86,29 @@
             "Nielsen": "nielsen",
             "Quancast": "quancast"
           },
-          "meta:titleId": "site##dsp:siteDataSource##title##24631",
-          "meta:descriptionId": "site##dsp:siteDataSource##description##66361"
+          "meta:titleId": "site##dsp:siteDataSource##title##30631",
+          "meta:descriptionId": "site##dsp:siteDataSource##description##32481"
         },
         "dsp:mobileWeb": {
           "title": "Mobile Web",
           "type": "boolean",
           "description": "Flag stating whether this placement site is a mobile website.",
-          "meta:titleId": "site##dsp:mobileWeb##title##38841",
-          "meta:descriptionId": "site##dsp:mobileWeb##description##54391"
+          "meta:titleId": "site##dsp:mobileWeb##title##19351",
+          "meta:descriptionId": "site##dsp:mobileWeb##description##26691"
         },
         "dsp:mobileApp": {
           "title": "Mobile Application",
           "type": "boolean",
           "description": "Flag stating whether this placement site is a mobile application.",
-          "meta:titleId": "site##dsp:mobileApp##title##98701",
-          "meta:descriptionId": "site##dsp:mobileApp##description##13131"
+          "meta:titleId": "site##dsp:mobileApp##title##48451",
+          "meta:descriptionId": "site##dsp:mobileApp##description##94601"
         },
         "dsp:isTargetable": {
           "title": "Is Targetable",
           "type": "boolean",
           "description": "Flag stating whether this placement site can be targeted.",
-          "meta:titleId": "site##dsp:isTargetable##title##74311",
-          "meta:descriptionId": "site##dsp:isTargetable##description##36911"
+          "meta:titleId": "site##dsp:isTargetable##title##13601",
+          "meta:descriptionId": "site##dsp:isTargetable##description##70821"
         }
       }
     }
@@ -125,6 +125,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "site##title##52831",
-  "meta:descriptionId": "site##description##56891"
+  "meta:titleId": "site##title##44901",
+  "meta:descriptionId": "site##description##28831"
 }

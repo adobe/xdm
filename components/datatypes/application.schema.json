@@ -18,57 +18,57 @@
           "title": "Application identifier",
           "type": "string",
           "description": "Identifier of the application.",
-          "meta:titleId": "application##xdm:id##title##10541",
-          "meta:descriptionId": "application##xdm:id##description##3431"
+          "meta:titleId": "application##xdm:id##title##28671",
+          "meta:descriptionId": "application##xdm:id##description##27081"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "Name of the application.",
-          "meta:titleId": "application##xdm:name##title##14221",
-          "meta:descriptionId": "application##xdm:name##description##80301"
+          "meta:titleId": "application##xdm:name##title##80491",
+          "meta:descriptionId": "application##xdm:name##description##21051"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "Version of the application.",
-          "meta:titleId": "application##xdm:version##title##84641",
-          "meta:descriptionId": "application##xdm:version##description##88941"
+          "meta:titleId": "application##xdm:version##title##55391",
+          "meta:descriptionId": "application##xdm:version##description##62621"
         },
         "xdm:applicationCloses": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Graceful termination of an application.",
-          "meta:descriptionId": "application##xdm:applicationCloses##description##4951"
+          "meta:descriptionId": "application##xdm:applicationCloses##description##1651"
         },
         "xdm:crashes": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash.",
-          "meta:descriptionId": "application##xdm:crashes##description##73731"
+          "meta:descriptionId": "application##xdm:crashes##description##39581"
         },
         "xdm:featureUsages": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Activation of an application feature that is being measured.",
-          "meta:descriptionId": "application##xdm:featureUsages##description##45281"
+          "meta:descriptionId": "application##xdm:featureUsages##description##39561"
         },
         "xdm:installs": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Install of an application on a device where the specific install event is available.",
-          "meta:descriptionId": "application##xdm:installs##description##90711"
+          "meta:descriptionId": "application##xdm:installs##description##601"
         },
         "xdm:firstLaunches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Triggered on first launch after install.",
-          "meta:descriptionId": "application##xdm:firstLaunches##description##63451"
+          "meta:descriptionId": "application##xdm:firstLaunches##description##24061"
         },
         "xdm:launches": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded.",
-          "meta:descriptionId": "application##xdm:launches##description##39301"
+          "meta:descriptionId": "application##xdm:launches##description##30301"
         },
         "xdm:upgrades": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade.",
-          "meta:descriptionId": "application##xdm:upgrades##description##80541"
+          "meta:descriptionId": "application##xdm:upgrades##description##36491"
         },
         "xdm:userPerspective": {
           "type": "string",
@@ -79,7 +79,7 @@
             "background": "Background",
             "detached": "Detached"
           },
-          "meta:descriptionId": "application##xdm:userPerspective##description##93411"
+          "meta:descriptionId": "application##xdm:userPerspective##description##13241"
         }
       }
     }
@@ -94,6 +94,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "application##title##59331",
-  "meta:descriptionId": "application##description##96581"
+  "meta:titleId": "application##title##65771",
+  "meta:descriptionId": "application##description##54591"
 }

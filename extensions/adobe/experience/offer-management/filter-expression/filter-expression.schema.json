@@ -37,8 +37,8 @@
         "varDecl": "Sub-structure of the select expression that binds a variable to the elements matching a projection and a selection expression. The value is made available for reference via a variable name to other sub-select expressions.",
         "varRef": "Iterate over a list of values by referencing a variable name that denotes a list element previously qualified (evaluated in preceding variable varDecl)."
       },
-      "meta:titleId": "filter-expression##node-type##title##89151",
-      "meta:descriptionId": "filter-expression##node-type##description##91831"
+      "meta:titleId": "filter-expression##node-type##title##85451",
+      "meta:descriptionId": "filter-expression##node-type##description##51661"
     },
     "function-type": {
       "type": "string",
@@ -74,8 +74,8 @@
         "isNotNull": "Produce a boolean value from a scalar input value. If the scalar is not null, the evaluation results in the boolean value 'true' and 'false' otherwise",
         "modelInstances": "Reference the set of all instances of a given model"
       },
-      "meta:titleId": "filter-expression##function-type##title##73891",
-      "meta:descriptionId": "filter-expression##function-type##description##10921"
+      "meta:titleId": "filter-expression##function-type##title##90131",
+      "meta:descriptionId": "filter-expression##function-type##description##84041"
     },
     "literal-type": {
       "type": "string",
@@ -97,8 +97,8 @@
         "List": "An array of literals",
         "XDMObject": "A string denoting a reference of an XDM schema."
       },
-      "meta:titleId": "filter-expression##literal-type##title##37541",
-      "meta:descriptionId": "filter-expression##literal-type##description##54651"
+      "meta:titleId": "filter-expression##literal-type##title##85911",
+      "meta:descriptionId": "filter-expression##literal-type##description##97471"
     },
     "quantifier-type": {
       "type": "string",
@@ -116,8 +116,8 @@
         "none": "The negated Exists quantifier. 'There does not exist one'",
         "one": "There exists one and only one."
       },
-      "meta:titleId": "filter-expression##quantifier-type##title##14861",
-      "meta:descriptionId": "filter-expression##quantifier-type##description##14091"
+      "meta:titleId": "filter-expression##quantifier-type##title##34411",
+      "meta:descriptionId": "filter-expression##quantifier-type##description##72601"
     },
     "function-application-content": {
       "type": "object",
@@ -183,8 +183,8 @@
           ]
         }
       ],
-      "meta:titleId": "filter-expression##function-application-content##title##53301",
-      "meta:descriptionId": "filter-expression##function-application-content##description##33961"
+      "meta:titleId": "filter-expression##function-application-content##title##53471",
+      "meta:descriptionId": "filter-expression##function-application-content##description##42191"
     },
     "function-content-and": {
       "type": "object",
@@ -530,8 +530,8 @@
           ]
         }
       ],
-      "meta:titleId": "filter-expression##function-creation-content##title##86181",
-      "meta:descriptionId": "filter-expression##function-creation-content##description##56301"
+      "meta:titleId": "filter-expression##function-creation-content##title##94411",
+      "meta:descriptionId": "filter-expression##function-creation-content##description##65041"
     },
     "field-lookup-content": {
       "type": "object",
@@ -559,8 +559,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##field-lookup-content##title##90461",
-      "meta:descriptionId": "filter-expression##field-lookup-content##description##60631"
+      "meta:titleId": "filter-expression##field-lookup-content##title##74461",
+      "meta:descriptionId": "filter-expression##field-lookup-content##description##99611"
     },
     "literal-content": {
       "type": "object",
@@ -606,8 +606,8 @@
           ]
         }
       ],
-      "meta:titleId": "filter-expression##literal-content##title##60661",
-      "meta:descriptionId": "filter-expression##literal-content##description##49751"
+      "meta:titleId": "filter-expression##literal-content##title##52881",
+      "meta:descriptionId": "filter-expression##literal-content##description##55241"
     },
     "literal-string-content": {
       "type": "object",
@@ -763,8 +763,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##quantification-content##title##89881",
-      "meta:descriptionId": "filter-expression##quantification-content##description##42061"
+      "meta:titleId": "filter-expression##quantification-content##title##6351",
+      "meta:descriptionId": "filter-expression##quantification-content##description##6591"
     },
     "select-expression-content": {
       "type": "object",
@@ -793,8 +793,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##select-expression-content##title##13131",
-      "meta:descriptionId": "filter-expression##select-expression-content##description##96261"
+      "meta:titleId": "filter-expression##select-expression-content##title##83391",
+      "meta:descriptionId": "filter-expression##select-expression-content##description##28341"
     },
     "variable-domain-content": {
       "type": "object",
@@ -827,8 +827,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##variable-domain-content##title##26171",
-      "meta:descriptionId": "filter-expression##variable-domain-content##description##25851"
+      "meta:titleId": "filter-expression##variable-domain-content##title##18511",
+      "meta:descriptionId": "filter-expression##variable-domain-content##description##12451"
     },
     "variable-reference-content": {
       "type": "object",
@@ -854,8 +854,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##variable-reference-content##title##94751",
-      "meta:descriptionId": "filter-expression##variable-reference-content##description##76531"
+      "meta:titleId": "filter-expression##variable-reference-content##title##53881",
+      "meta:descriptionId": "filter-expression##variable-reference-content##description##10951"
     },
     "function-content-model-instances": {
       "type": "object",
@@ -889,8 +889,8 @@
           "additionalProperties": false
         }
       ],
-      "meta:titleId": "filter-expression##function-content-model-instances##title##57731",
-      "meta:descriptionId": "filter-expression##function-content-model-instances##description##39081"
+      "meta:titleId": "filter-expression##function-content-model-instances##title##26211",
+      "meta:descriptionId": "filter-expression##function-content-model-instances##description##57061"
     },
     "node-content": {
       "allOf": [
@@ -939,6 +939,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "filter-expression##title##3881",
-  "meta:descriptionId": "filter-expression##description##7561"
+  "meta:titleId": "filter-expression##title##72321",
+  "meta:descriptionId": "filter-expression##description##36131"
 }

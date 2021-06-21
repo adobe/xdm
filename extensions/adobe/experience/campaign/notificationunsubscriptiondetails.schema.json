@@ -19,22 +19,22 @@
           "type": "string",
           "format": "date-time",
           "description": "Date and time when the end-user has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty.",
-          "meta:titleId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##title##49441",
-          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##description##37771"
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##title##7251",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##description##82721"
         },
         "xdm:remarkID": {
           "title": "Remark Identifier",
           "type": "string",
           "description": "The pre defined remark that the end-user identified when unsubscribing.",
-          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkID##title##50221",
-          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkID##description##41191"
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkID##title##92611",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkID##description##32141"
         },
         "xdm:remarkText": {
           "title": "Remark text",
           "type": "string",
           "description": "A customer comment/remark that the end-user provided when unsubscribing.",
-          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkText##title##73671",
-          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkText##description##38031"
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkText##title##49331",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkText##description##31361"
         }
       },
       "required": ["xdm:unsubscriptionDate"]
@@ -49,6 +49,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "notificationunsubscriptiondetails##title##72151",
-  "meta:descriptionId": "notificationunsubscriptiondetails##description##67901"
+  "meta:titleId": "notificationunsubscriptiondetails##title##21101",
+  "meta:descriptionId": "notificationunsubscriptiondetails##description##21881"
 }

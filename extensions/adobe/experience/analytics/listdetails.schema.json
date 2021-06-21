@@ -20,15 +20,15 @@
             "type": "string"
           },
           "description": "List of values.",
-          "meta:titleId": "listdetails##xdm:values##title##52591",
-          "meta:descriptionId": "listdetails##xdm:values##description##95431"
+          "meta:titleId": "listdetails##xdm:values##title##71371",
+          "meta:descriptionId": "listdetails##xdm:values##description##58051"
         },
         "xdm:delimiter": {
           "title": "Original List Delimiter",
           "type": "string",
           "description": "The original delimiter used to generate the list.",
-          "meta:titleId": "listdetails##xdm:delimiter##title##29941",
-          "meta:descriptionId": "listdetails##xdm:delimiter##description##51311"
+          "meta:titleId": "listdetails##xdm:delimiter##title##92371",
+          "meta:descriptionId": "listdetails##xdm:delimiter##description##20061"
         }
       }
     }
@@ -39,6 +39,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "listdetails##title##96081",
-  "meta:descriptionId": "listdetails##description##15901"
+  "meta:titleId": "listdetails##title##99731",
+  "meta:descriptionId": "listdetails##description##84361"
 }

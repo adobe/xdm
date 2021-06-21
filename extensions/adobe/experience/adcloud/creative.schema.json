@@ -17,22 +17,22 @@
           "title": "Experience Identifier",
           "type": "string",
           "description": "Identifier for the Creative experience.",
-          "meta:titleId": "creative##xdm:experienceId##title##44291",
-          "meta:descriptionId": "creative##xdm:experienceId##description##9621"
+          "meta:titleId": "creative##xdm:experienceId##title##6241",
+          "meta:descriptionId": "creative##xdm:experienceId##description##51421"
         },
         "xdm:targetingBranchId": {
           "title": "Targeting Branch Identifier",
           "type": "string",
           "description": "Identifier for the targeting branch.",
-          "meta:titleId": "creative##xdm:targetingBranchId##title##16201",
-          "meta:descriptionId": "creative##xdm:targetingBranchId##description##10341"
+          "meta:titleId": "creative##xdm:targetingBranchId##title##20371",
+          "meta:descriptionId": "creative##xdm:targetingBranchId##description##61401"
         },
         "xdm:adThemeCreativeId": {
           "title": "Ad Theme Creative Identifier",
           "type": "string",
           "description": "Identifier for the ad theme creative.",
-          "meta:titleId": "creative##xdm:adThemeCreativeId##title##75681",
-          "meta:descriptionId": "creative##xdm:adThemeCreativeId##description##87631"
+          "meta:titleId": "creative##xdm:adThemeCreativeId##title##9801",
+          "meta:descriptionId": "creative##xdm:adThemeCreativeId##description##91721"
         },
         "xdm:segments": {
           "title": "Audience Segments Details",
@@ -40,7 +40,7 @@
           "items": {
             "$ref": "https://ns.adobe.com/experience/adcloud/adcloudsegment"
           },
-          "meta:titleId": "creative##xdm:segments##title##50341"
+          "meta:titleId": "creative##xdm:segments##title##26641"
         }
       }
     }
@@ -51,6 +51,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "creative##title##24621",
-  "meta:descriptionId": "creative##description##59601"
+  "meta:titleId": "creative##title##67191",
+  "meta:descriptionId": "creative##description##89211"
 }

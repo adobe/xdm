@@ -23,15 +23,15 @@
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
-          "meta:titleId": "account##xdm:accountId##title##90411",
-          "meta:descriptionId": "account##xdm:accountId##description##65351"
+          "meta:titleId": "account##xdm:accountId##title##75031",
+          "meta:descriptionId": "account##xdm:accountId##description##77441"
         },
         "xdm:accountName": {
           "title": "Account Name",
           "type": "string",
           "description": "Name of the Account.",
-          "meta:titleId": "account##xdm:accountName##title##20391",
-          "meta:descriptionId": "account##xdm:accountName##description##2111"
+          "meta:titleId": "account##xdm:accountName##title##12541",
+          "meta:descriptionId": "account##xdm:accountName##description##2831"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
@@ -43,8 +43,8 @@
           ],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates.",
-          "meta:titleId": "account##xdm:currencyCode##title##62431",
-          "meta:descriptionId": "account##xdm:currencyCode##description##93151"
+          "meta:titleId": "account##xdm:currencyCode##title##1521",
+          "meta:descriptionId": "account##xdm:currencyCode##description##64571"
         },
         "xdm:accountStatus": {
           "title": "Account Status",
@@ -58,15 +58,15 @@
             "Enabled": "Enabled",
             "Disabled": "Disabled"
           },
-          "meta:titleId": "account##xdm:accountStatus##title##2171",
-          "meta:descriptionId": "account##xdm:accountStatus##description##77971"
+          "meta:titleId": "account##xdm:accountStatus##title##77661",
+          "meta:descriptionId": "account##xdm:accountStatus##description##23731"
         },
         "xdm:budget": {
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns.",
-          "meta:titleId": "account##xdm:budget##title##1831",
-          "meta:descriptionId": "account##xdm:budget##description##82071"
+          "meta:titleId": "account##xdm:budget##title##89961",
+          "meta:descriptionId": "account##xdm:budget##description##62901"
         },
         "xdm:budgetType": {
           "title": "Budget Type",
@@ -86,15 +86,15 @@
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of Week": "Day of Week"
           },
-          "meta:titleId": "account##xdm:budgetType##title##42321",
-          "meta:descriptionId": "account##xdm:budgetType##description##40051"
+          "meta:titleId": "account##xdm:budgetType##title##19591",
+          "meta:descriptionId": "account##xdm:budgetType##description##48831"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name.",
-          "meta:titleId": "account##xdm:searchEngineId##title##98281",
-          "meta:descriptionId": "account##xdm:searchEngineId##description##67561"
+          "meta:titleId": "account##xdm:searchEngineId##title##54751",
+          "meta:descriptionId": "account##xdm:searchEngineId##description##16161"
         }
       }
     }
@@ -111,6 +111,6 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:titleId": "account##title##3891",
-  "meta:descriptionId": "account##description##54501"
+  "meta:titleId": "account##title##81041",
+  "meta:descriptionId": "account##description##9261"
 }

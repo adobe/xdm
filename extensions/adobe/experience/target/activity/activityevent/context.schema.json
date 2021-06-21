@@ -17,15 +17,15 @@
           "title": "Experience Identifier",
           "type": "string",
           "description": "Experience identifier denoting selected experience.",
-          "meta:titleId": "context##xdm:experienceID##title##74251",
-          "meta:descriptionId": "context##xdm:experienceID##description##25691"
+          "meta:titleId": "context##xdm:experienceID##title##52461",
+          "meta:descriptionId": "context##xdm:experienceID##description##40641"
         },
         "xdm:algorithmID": {
           "title": "Algorithm Identifier",
           "type": "string",
           "description": "Algorithm identifier denoting used algorithm to select the experience.",
-          "meta:titleId": "context##xdm:algorithmID##title##93411",
-          "meta:descriptionId": "context##xdm:algorithmID##description##77421"
+          "meta:titleId": "context##xdm:algorithmID##title##39321",
+          "meta:descriptionId": "context##xdm:algorithmID##description##71861"
         },
         "xdm:trafficType": {
           "title": "Traffic Type",
@@ -39,15 +39,15 @@
             "testing": "Testing Traffic",
             "targeted": "Targeted Traffic"
           },
-          "meta:titleId": "context##xdm:trafficType##title##84591",
-          "meta:descriptionId": "context##xdm:trafficType##description##18981"
+          "meta:titleId": "context##xdm:trafficType##title##45631",
+          "meta:descriptionId": "context##xdm:trafficType##description##66451"
         },
         "xdm:stepID": {
           "title": "Step Identifier",
           "type": "string",
           "description": "Denotes the identifier of the visited activity step.",
-          "meta:titleId": "context##xdm:stepID##title##58531",
-          "meta:descriptionId": "context##xdm:stepID##description##76151"
+          "meta:titleId": "context##xdm:stepID##title##97141",
+          "meta:descriptionId": "context##xdm:stepID##description##88541"
         }
       },
       "required": [
@@ -64,6 +64,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "context##title##95041",
-  "meta:descriptionId": "context##description##2581"
+  "meta:titleId": "context##title##53111",
+  "meta:descriptionId": "context##description##51521"
 }

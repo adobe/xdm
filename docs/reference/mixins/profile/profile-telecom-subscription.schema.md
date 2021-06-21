@@ -9,7 +9,7 @@ Collects all generic details related to a customer's telecom subscription plan, 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [mixins/profile/profile-telecom-subscription.schema.json](mixins/profile/profile-telecom-subscription.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-telecom-subscription.schema.json](mixins/profile/profile-telecom-subscription.schema.json) |
 
 ## Telecom Subscription Example
 ```json

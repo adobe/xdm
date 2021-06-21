@@ -15,24 +15,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
-  "@id": "12",
-  "dsp:campaignKey": "QEr8RnlYHwnG4KbFSQor",
-  "dsp:campaignName": "News At Cisco",
-  "dsp:campaignStatus": "Active",
-  "dsp:timezone": "America/New_York",
-  "dsp:type": "Media",
-  "dsp:userId": 495991,
-  "dsp:accountId": "1",
-  "dsp:advertiserId": "3",
-  "dsp:campaignStartTime": "2019-01-09 00:00:00",
-  "dsp:campaignEndTime": "2019-01-11 00:00:00",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
   "xdm:accountId": "123456",
   "xdm:dspId": "2",
   "xdm:campaignId": "987654",
@@ -58,6 +40,24 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "searchads:budgetType": "Monthly",
   "searchads.adDeliveryType": "Standard",
   "searchads.CampaignObjective": "visit_web",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+}
+```
+
+```json
+{
+  "@id": "12",
+  "dsp:campaignKey": "QEr8RnlYHwnG4KbFSQor",
+  "dsp:campaignName": "News At Cisco",
+  "dsp:campaignStatus": "Active",
+  "dsp:timezone": "America/New_York",
+  "dsp:type": "Media",
+  "dsp:userId": 495991,
+  "dsp:accountId": "1",
+  "dsp:advertiserId": "3",
+  "dsp:campaignStartTime": "2019-01-09 00:00:00",
+  "dsp:campaignEndTime": "2019-01-11 00:00:00",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

@@ -17,43 +17,59 @@
         "xdm:siteSection": {
           "title": "Site section",
           "type": "string",
-          "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction."
+          "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.",
+          "meta:titleId": "webpagedetails##xdm:siteSection##title##15731",
+          "meta:descriptionId": "webpagedetails##xdm:siteSection##description##86781"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+          "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+          "meta:titleId": "webpagedetails##xdm:name##title##69851",
+          "meta:descriptionId": "webpagedetails##xdm:name##description##45751"
         },
         "xdm:viewName": {
           "title": "View Name",
           "type": "string",
-          "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout."
+          "description": "The name of the view, within a page. This is commonly used with Single Page Applications or pages that have tabs or controls that change a majority of the page layout.",
+          "meta:titleId": "webpagedetails##xdm:viewName##title##98221",
+          "meta:descriptionId": "webpagedetails##xdm:viewName##description##97241"
         },
         "xdm:URL": {
           "title": "URL",
           "type": "string",
           "pattern": "^(\\w+:\\/\\/|www)(localhost|[^\\s:\\/]+\\.[^\\s:\\/]+)(:\\d+)?(\\/[^\\s]*)?$",
-          "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+          "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+          "meta:titleId": "webpagedetails##xdm:URL##title##61611",
+          "meta:descriptionId": "webpagedetails##xdm:URL##description##61941"
         },
         "xdm:server": {
           "title": "Server",
           "type": "string",
-          "description": "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes."
+          "description": "The normative or usual server that hosts the web page.  This may or may not be the host or server that actually served the page interaction, but is used for classification purposes.",
+          "meta:titleId": "webpagedetails##xdm:server##title##69901",
+          "meta:descriptionId": "webpagedetails##xdm:server##description##60221"
         },
         "xdm:isErrorPage": {
           "title": "Is error page",
           "type": "boolean",
-          "description": "Flag that indicate if the page is error page or not.  Error here is defined by the application, and may nor may not correspond to a page served with an HTTP error code.  This flag is used to broadly categorize web interactions."
+          "description": "Flag that indicate if the page is error page or not.  Error here is defined by the application, and may nor may not correspond to a page served with an HTTP error code.  This flag is used to broadly categorize web interactions.",
+          "meta:titleId": "webpagedetails##xdm:isErrorPage##title##64901",
+          "meta:descriptionId": "webpagedetails##xdm:isErrorPage##description##86801"
         },
         "xdm:isHomePage": {
           "title": "Is home page",
           "type": "boolean",
-          "description": "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions."
+          "description": "Flag that indicate if the page is the site home page or not.  The definition of home page is determined by the application, but is commonly used to designate a top level landing page or common site entry point.  This flag is used to broadly categorize web interactions.",
+          "meta:titleId": "webpagedetails##xdm:isHomePage##title##42231",
+          "meta:descriptionId": "webpagedetails##xdm:isHomePage##description##67091"
         },
         "xdm:pageViews": {
           "title": "Page Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View(s) of a webpage has occurred."
+          "description": "View(s) of a webpage has occurred.",
+          "meta:titleId": "webpagedetails##xdm:pageViews##title##39131",
+          "meta:descriptionId": "webpagedetails##xdm:pageViews##description##49071"
         }
       }
     }
@@ -67,5 +83,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "webpagedetails##title##64651",
+  "meta:descriptionId": "webpagedetails##description##13991"
 }

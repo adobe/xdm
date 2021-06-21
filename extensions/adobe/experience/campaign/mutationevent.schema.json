@@ -17,17 +17,23 @@
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description": "The time when the first event of the interaction occurred."
+          "description": "The time when the first event of the interaction occurred.",
+          "meta:titleId": "mutationevent##xdm:timestamp##title##22551",
+          "meta:descriptionId": "mutationevent##xdm:timestamp##description##86051"
         },
         "xdm:web": {
           "title": "Web",
           "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-          "description": "Link clicks, web page details, referrer information, and browser details."
+          "description": "Link clicks, web page details, referrer information, and browser details.",
+          "meta:titleId": "mutationevent##xdm:web##title##6941",
+          "meta:descriptionId": "mutationevent##xdm:web##description##67381"
         },
         "xdm:directMarketing": {
           "title": "Direct Marketing",
           "$ref": "https://ns.adobe.com/xdm/context/direct-marketing",
-          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications."
+          "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
+          "meta:titleId": "mutationevent##xdm:directMarketing##title##75711",
+          "meta:descriptionId": "mutationevent##xdm:directMarketing##description##72231"
         },
         "https://ns.adobe.com/experience/campaign/message": {
           "title": "A single message sent to a recipient.",
@@ -37,7 +43,9 @@
               "title": "Quarantine",
               "type": "boolean",
               "default": false,
-              "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+              "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
+              "meta:titleId": "mutationevent##xdm:quarantine##title##9341",
+              "meta:descriptionId": "mutationevent##xdm:quarantine##description##5801"
             },
             "xdm:reason": {
               "title": "Reason",
@@ -69,9 +77,12 @@
                 "control_group": "Control address"
               },
               "description": "The reason why the message could/would not be delivered.",
-              "default": "undefined"
+              "default": "undefined",
+              "meta:titleId": "mutationevent##xdm:reason##title##52621",
+              "meta:descriptionId": "mutationevent##xdm:reason##description##26011"
             }
-          }
+          },
+          "meta:titleId": "mutationevent##https://ns.adobe.com/experience/campaign/message##title##42011"
         }
       }
     }
@@ -81,5 +92,7 @@
       "$ref": "#/definitions/mutationevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "mutationevent##title##87341",
+  "meta:descriptionId": "mutationevent##description##70741"
 }

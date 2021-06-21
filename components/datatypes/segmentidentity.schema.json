@@ -17,17 +17,23 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "Identity of the segment in the related namespace."
+          "description": "Identity of the segment in the related namespace.",
+          "meta:titleId": "segmentidentity##@id##title##31321",
+          "meta:descriptionId": "segmentidentity##@id##description##67041"
         },
         "xdm:namespace": {
           "title": "Namespace",
           "$ref": "https://ns.adobe.com/xdm/context/namespace",
-          "description": "The namespace associated with the `xid` attribute."
+          "description": "The namespace associated with the `xid` attribute.",
+          "meta:titleId": "segmentidentity##xdm:namespace##title##59411",
+          "meta:descriptionId": "segmentidentity##xdm:namespace##description##15721"
         },
         "xdm:xid": {
           "title": "Experience identifier",
           "type": "string",
-          "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+          "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
+          "meta:titleId": "segmentidentity##xdm:xid##title##66251",
+          "meta:descriptionId": "segmentidentity##xdm:xid##description##3231"
         }
       }
     }
@@ -38,5 +44,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "segmentidentity##title##61531",
+  "meta:descriptionId": "segmentidentity##description##7421"
 }

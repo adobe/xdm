@@ -18,17 +18,23 @@
           "title": "Ad Pod ID",
           "format": "uri-reference",
           "type": "string",
-          "description": "Identifier of the ad break."
+          "description": "Identifier of the ad break.",
+          "meta:titleId": "advertising-break##@id##title##15471",
+          "meta:descriptionId": "advertising-break##@id##description##12761"
         },
         "dc:title": {
           "title": "Pod name",
           "type": "string",
-          "description": "The friendly name of the ad break."
+          "description": "The friendly name of the ad break.",
+          "meta:titleId": "advertising-break##dc:title##title##97661",
+          "meta:descriptionId": "advertising-break##dc:title##description##64801"
         },
         "xdm:offset": {
           "title": "Pod position",
           "type": "integer",
-          "description": "The offset, in seconds, of the ad break from the start of the primary content."
+          "description": "The offset, in seconds, of the ad break from the start of the primary content.",
+          "meta:titleId": "advertising-break##xdm:offset##title##36721",
+          "meta:descriptionId": "advertising-break##xdm:offset##description##60821"
         }
       },
       "required": ["@id"]
@@ -40,5 +46,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "advertising-break##title##95461",
+  "meta:descriptionId": "advertising-break##description##72781"
 }

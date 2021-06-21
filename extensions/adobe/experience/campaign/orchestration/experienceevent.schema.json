@@ -20,10 +20,16 @@
           "title": "Journey unique identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "The unique identifier of the journey created by the marketer."
+          "description": "The unique identifier of the journey created by the marketer.",
+          "meta:titleId": "experienceevent##@id##title##93701",
+          "meta:descriptionId": "experienceevent##@id##description##20561"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ],
+      "meta:titleId": "experienceevent##journey##title##3921",
+      "meta:descriptionId": "experienceevent##journey##description##78051"
     },
     "journeyVersion": {
       "title": "Journey version",
@@ -34,10 +40,16 @@
           "title": "Journey version identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "The unique identifier denoting the version of journey on which the entity is active."
+          "description": "The unique identifier denoting the version of journey on which the entity is active.",
+          "meta:titleId": "experienceevent##@id##title##55481",
+          "meta:descriptionId": "experienceevent##@id##description##99641"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ],
+      "meta:titleId": "experienceevent##journeyVersion##title##27321",
+      "meta:descriptionId": "experienceevent##journeyVersion##description##34721"
     },
     "action": {
       "title": "Action on step transition",
@@ -48,7 +60,9 @@
           "title": "Action identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "Unique identifier denoting the associated action."
+          "description": "Unique identifier denoting the associated action.",
+          "meta:titleId": "experienceevent##xdm:actionID##title##35201",
+          "meta:descriptionId": "experienceevent##xdm:actionID##description##63731"
         },
         "xdm:actionType": {
           "title": "Action Type",
@@ -62,9 +76,13 @@
             "journey_notification": "This action type is to send notification for another journey",
             "campaign_request": "This action performs REST calls to a campaign instance to write data",
             "messageService_request": "The message service action performs REST calls to campaign instance to send messages with messaging service"
-          }
+          },
+          "meta:titleId": "experienceevent##xdm:actionType##title##25981",
+          "meta:descriptionId": "experienceevent##xdm:actionType##description##68681"
         }
-      }
+      },
+      "meta:titleId": "experienceevent##action##title##50991",
+      "meta:descriptionId": "experienceevent##action##description##99831"
     }
   },
   "allOf": [
@@ -78,5 +96,7 @@
       "$ref": "#/definitions/action"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent##title##13261",
+  "meta:descriptionId": "experienceevent##description##59691"
 }

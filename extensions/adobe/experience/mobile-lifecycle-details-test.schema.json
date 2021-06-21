@@ -25,17 +25,23 @@
             "xdm:id": {
               "title": "Application identifier",
               "type": "string",
-              "description": "Identifier of the application."
+              "description": "Identifier of the application.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:id##title##19771",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:id##description##41201"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "Name of the application."
+              "description": "Name of the application.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:name##title##88811",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:name##description##91511"
             },
             "xdm:version": {
               "title": "Version",
               "type": "string",
-              "description": "Version of the application."
+              "description": "Version of the application.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:version##title##43271",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:version##description##13611"
             },
             "xdm:closeType": {
               "type": "string",
@@ -44,38 +50,51 @@
               "meta:enum": {
                 "close": "Close",
                 "unknown": "Unknown"
-              }
+              },
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:closeType##description##15461"
             },
             "xdm:installDate": {
               "title": "Install Date",
               "type": "string",
               "description": "Date of first launch after installation. Format: full-date without time (according to RFC 3339, section 5.6)",
-              "format": "date"
+              "format": "date",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:installDate##title##17361",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:installDate##description##75891"
             },
             "xdm:isClose": {
               "title": "Is Close",
               "type": "boolean",
-              "description": "Indicates whether or not this is an application close event."
+              "description": "Indicates whether or not this is an application close event.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:isClose##title##16561",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isClose##description##11681"
             },
             "xdm:isInstall": {
               "title": "Is Install",
               "type": "boolean",
-              "description": "Indicates whether or not this is an application install event."
+              "description": "Indicates whether or not this is an application install event.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:isInstall##title##80551",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isInstall##description##8401"
             },
             "xdm:isLaunch": {
               "title": "Is Launch",
               "type": "boolean",
-              "description": "Indicates whether or not this is an application launch event."
+              "description": "Indicates whether or not this is an application launch event.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:isLaunch##title##87171",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isLaunch##description##19991"
             },
             "xdm:isUpgrade": {
               "title": "Is Upgrade",
               "type": "boolean",
-              "description": "Indicates whether or not this is an application upgrade event."
+              "description": "Indicates whether or not this is an application upgrade event.",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:isUpgrade##title##7611",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isUpgrade##description##42611"
             },
             "xdm:sessionLength": {
               "title": "Session Length",
               "type": "integer",
-              "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Session length is a positive value with no max bound (no max session length)"
+              "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Session length is a positive value with no max bound (no max session length)",
+              "meta:titleId": "mobile-lifecycle-details-test##xdm:sessionLength##title##68951",
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:sessionLength##description##15091"
             },
             "xdm:userPerspective": {
               "type": "string",
@@ -85,7 +104,8 @@
                 "foreground": "Foreground",
                 "background": "Background",
                 "detached": "Detached"
-              }
+              },
+              "meta:descriptionId": "mobile-lifecycle-details-test##xdm:userPerspective##description##45001"
             }
           }
         }
@@ -100,5 +120,7 @@
       "$ref": "#/definitions/mobile-lifecycle"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "mobile-lifecycle-details-test##title##25041",
+  "meta:descriptionId": "mobile-lifecycle-details-test##description##65441"
 }

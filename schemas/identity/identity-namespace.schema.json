@@ -20,29 +20,29 @@
           "title": "Unique Namespace ID",
           "type": "integer",
           "description": "Unique Identifier for namespace",
-          "meta:titleId": "identity-namespace##xdm:namespaceID##title",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceID##description"
+          "meta:titleId": "identity-namespace##xdm:namespaceID##title##67191",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceID##description##76871"
         },
         "xdm:namespaceName": {
           "title": "Namespace Name",
           "type": "string",
           "description": "This is human readable name for the namespace",
-          "meta:titleId": "identity-namespace##xdm:namespaceName##title",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceName##description"
+          "meta:titleId": "identity-namespace##xdm:namespaceName##title##52831",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceName##description##4221"
         },
         "xdm:namespaceCode": {
           "title": "Namespace Code",
           "type": "string",
           "description": "This code is a human readable identifier for the namespace",
-          "meta:titleId": "identity-namespace##xdm:namespaceCode##title",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceCode##description"
+          "meta:titleId": "identity-namespace##xdm:namespaceCode##title##25901",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceCode##description##97601"
         },
         "xdm:namespaceDescription": {
           "title": "Namespace Description",
           "type": "string",
           "description": "Description for the namespace",
-          "meta:titleId": "identity-namespace##xdm:namespaceDescription##title",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceDescription##description"
+          "meta:titleId": "identity-namespace##xdm:namespaceDescription##title##11481",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceDescription##description##23831"
         },
         "xdm:namespaceIdType": {
           "title": "Namespace Id Type",
@@ -64,8 +64,8 @@
             "CROSS_DEVICE": "Cross-device ID",
             "NON_PEOPLE": "Non-people identifier"
           },
-          "meta:titleId": "identity-namespace##xdm:namespaceIdType##title",
-          "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description"
+          "meta:titleId": "identity-namespace##xdm:namespaceIdType##title##26011",
+          "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description##73141"
         },
         "xdm:createDate": {
           "title": "Create Date Time",
@@ -73,8 +73,8 @@
           "type": "string",
           "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
           "description": "The date and time when the namespace was created in ISO 8601 format",
-          "meta:titleId": "identity-namespace##xdm:createDate##title",
-          "meta:descriptionId": "identity-namespace##xdm:createDate##description"
+          "meta:titleId": "identity-namespace##xdm:createDate##title##55691",
+          "meta:descriptionId": "identity-namespace##xdm:createDate##description##35051"
         },
         "xdm:modifyDate": {
           "title": "Update Date Time",
@@ -82,8 +82,8 @@
           "type": "string",
           "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
           "description": "The date and time when the namespace was updated in ISO 8601 format",
-          "meta:titleId": "identity-namespace##xdm:modifyDate##title",
-          "meta:descriptionId": "identity-namespace##xdm:modifyDate##description"
+          "meta:titleId": "identity-namespace##xdm:modifyDate##title##65881",
+          "meta:descriptionId": "identity-namespace##xdm:modifyDate##description##41681"
         }
       },
       "required": ["xdm:namespaceID", "xdm:namespaceCode"]
@@ -101,6 +101,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "identity-namespace##title",
-  "meta:descriptionId": "identity-namespace##description"
+  "meta:titleId": "identity-namespace##title##86331",
+  "meta:descriptionId": "identity-namespace##description##2921"
 }

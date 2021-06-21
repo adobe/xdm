@@ -28,39 +28,54 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset."
+              "description": "Unique ID of the email asset.",
+              "meta:titleId": "emailbouncedsoft##xdm:mailingID##title##35161",
+              "meta:descriptionId": "emailbouncedsoft##xdm:mailingID##description##17371"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset."
+              "description": "Friendly name of the email asset.",
+              "meta:titleId": "emailbouncedsoft##xdm:mailingName##title##46871",
+              "meta:descriptionId": "emailbouncedsoft##xdm:mailingName##description##18041"
             },
             "xdm:emailBouncedCode": {
               "title": "Email Bounced Code",
               "type": "string",
-              "description": "Code denoting the type of bounce received from the Mail Transfer Agent."
+              "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
+              "meta:titleId": "emailbouncedsoft##xdm:emailBouncedCode##title##19731",
+              "meta:descriptionId": "emailbouncedsoft##xdm:emailBouncedCode##description##98551"
             },
             "xdm:emailBouncedDetails": {
               "title": "Email Bounced Details",
               "type": "string",
-              "description": "Details of email bounce from the Mail Transfer Agent."
+              "description": "Details of email bounce from the Mail Transfer Agent.",
+              "meta:titleId": "emailbouncedsoft##xdm:emailBouncedDetails##title##17181",
+              "meta:descriptionId": "emailbouncedsoft##xdm:emailBouncedDetails##description##16271"
             },
             "xdm:email": {
               "title": "email",
               "type": "string",
-              "description": "Recipient's email address."
+              "description": "Recipient's email address.",
+              "meta:titleId": "emailbouncedsoft##xdm:email##title##45001",
+              "meta:descriptionId": "emailbouncedsoft##xdm:email##description##5271"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emailbouncedsoft##xdm:testVariantID##title##80431",
+              "meta:descriptionId": "emailbouncedsoft##xdm:testVariantID##description##52561"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name of the test variant of the email asset."
+              "description": "Friendly name of the test variant of the email asset.",
+              "meta:titleId": "emailbouncedsoft##xdm:testVariantName##title##4961",
+              "meta:descriptionId": "emailbouncedsoft##xdm:testVariantName##description##25931"
             }
-          }
+          },
+          "meta:titleId": "emailbouncedsoft##xdm:directMarketing##title##55971"
         }
       }
     }
@@ -71,5 +86,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2020-12-02"
+  "meta:createdDate": "2020-12-02",
+  "meta:titleId": "emailbouncedsoft##title##87481",
+  "meta:descriptionId": "emailbouncedsoft##description##20101"
 }

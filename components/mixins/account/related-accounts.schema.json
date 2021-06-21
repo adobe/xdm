@@ -22,7 +22,9 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "related-accounts##xdm:relatedAccounts##title##43961",
+          "meta:descriptionId": "related-accounts##xdm:relatedAccounts##description##45371"
         }
       }
     }
@@ -36,5 +38,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-01-19"
+  "meta:createdDate": "2021-01-19",
+  "meta:titleId": "related-accounts##title##23201",
+  "meta:descriptionId": "related-accounts##description##83161"
 }

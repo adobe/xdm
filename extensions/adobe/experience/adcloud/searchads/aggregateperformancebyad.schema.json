@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/time-series"
+  ],
   "description": "Search Advertising Aggregate Performance Measures By Ad is a collection of measures pulled from Search Advertising Platforms by Ad/Keyword.",
   "definitions": {
     "aggregateperformancebyad": {
@@ -19,56 +21,74 @@
         "searchads:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "aggregateperformancebyad##searchads:accountId##title##56811",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:accountId##description##90721"
         },
         "searchads:campaignId": {
           "title": "Campaign Identifier",
           "type": "string",
-          "description": "Campaign ID on the search advertising platform.."
+          "description": "Campaign ID on the search advertising platform..",
+          "meta:titleId": "aggregateperformancebyad##searchads:campaignId##title##53161",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:campaignId##description##1381"
         },
         "searchads:adgroupId": {
           "title": "Ad Group Identifier",
           "type": "string",
-          "description": "Ad Group ID on the search advertising platform."
+          "description": "Ad Group ID on the search advertising platform.",
+          "meta:titleId": "aggregateperformancebyad##searchads:adgroupId##title##89771",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:adgroupId##description##16261"
         },
         "searchads:adId": {
           "title": "Ad Identifier",
           "type": "string",
-          "description": "Ad ID on the search advertising platform."
+          "description": "Ad ID on the search advertising platform.",
+          "meta:titleId": "aggregateperformancebyad##searchads:adId##title##68851",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:adId##description##51461"
         },
         "searchads:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "aggregateperformancebyad##searchads:searchEngineId##title##15301",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:searchEngineId##description##44071"
         },
         "searchads:clicks": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Count of Clicks for a given ad displayed on the network."
+          "description": "Count of Clicks for a given ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:clicks##description##7451"
         },
         "searchads:impressions": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Count of impressions for a given ad displayed on the network."
+          "description": "Count of impressions for a given ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:impressions##description##51841"
         },
         "searchads:totalCost": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network."
+          "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:totalCost##description##83681"
         },
         "searchads:avgPosition": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Average Position of the Ad displayed on the network."
+          "description": "Average Position of the Ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:avgPosition##description##92041"
         },
         "searchads:topPageBid": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure."
+          "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:topPageBid##description##57481"
         },
         "searchads:qualityScore": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure."
+          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:qualityScore##description##67681"
         },
         "searchads:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device from where the ad was displayed."
+          "description": "The device from where the ad was displayed.",
+          "meta:titleId": "aggregateperformancebyad##searchads:device##title##26001",
+          "meta:descriptionId": "aggregateperformancebyad##searchads:device##description##1451"
         }
       }
     }
@@ -81,5 +101,7 @@
       "$ref": "#/definitions/aggregateperformancebyad"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "aggregateperformancebyad##title##16391",
+  "meta:descriptionId": "aggregateperformancebyad##description##56681"
 }

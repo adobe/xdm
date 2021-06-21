@@ -24,31 +24,42 @@
               "xdm:sourceAccountID": {
                 "title": "Source Account ID",
                 "description": "Source account ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountID##title##20171",
+                "meta:descriptionId": "account-components##xdm:sourceAccountID##description##9881"
               },
               "xdm:sourceAccountParentID": {
                 "title": "Source Parent Account",
                 "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountParentID##title##12391",
+                "meta:descriptionId": "account-components##xdm:sourceAccountParentID##description##59681"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceExternalID##title##61161",
+                "meta:descriptionId": "account-components##xdm:sourceExternalID##description##26741"
               },
               "xdm:sourcePartnerAccountID": {
                 "title": "Source Partner Account Id",
                 "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title##15591",
+                "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description##40271"
               },
               "xdm:sourceAccountOwnerID": {
                 "title": "Account Owner Id",
                 "description": "Account owner ID.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "account-components##xdm:sourceAccountOwnerID##title##7461",
+                "meta:descriptionId": "account-components##xdm:sourceAccountOwnerID##description##70271"
               },
               "xdm:segmentationAttributes": {
                 "title": "Account Segmentation Properties",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account#/definitions/b2b-account-segmentation"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account#/definitions/b2b-account-segmentation",
+                "meta:titleId": "account-components##xdm:segmentationAttributes##title##50051"
               }
             }
           }
@@ -62,5 +73,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-02"
+  "meta:createdDate": "2020-09-02",
+  "meta:titleId": "account-components##title##8841",
+  "meta:descriptionId": "account-components##description##2321"
 }

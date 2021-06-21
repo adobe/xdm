@@ -25,7 +25,9 @@
             "xdm:supportRequestSteps": {
               "title": "Support Request Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:titleId": "experienceevent-support-request##xdm:supportRequestSteps##title##42731",
+              "meta:descriptionId": "experienceevent-support-request##xdm:supportRequestSteps##description##41701"
             }
           }
         }
@@ -38,5 +40,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-support-request##title##54111",
+  "meta:descriptionId": "experienceevent-support-request##description##75531"
 }

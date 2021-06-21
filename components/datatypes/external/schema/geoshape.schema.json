@@ -16,12 +16,16 @@
         "@id": {
           "title": "Shape ID",
           "type": "string",
-          "description": "The unique identifier of the shape."
+          "description": "The unique identifier of the shape.",
+          "meta:titleId": "GeoShape##@id##title##35781",
+          "meta:descriptionId": "GeoShape##@id##description##19011"
         },
         "schema:description": {
           "title": "Description",
           "type": "string",
-          "description": "A description of what the shape is defining."
+          "description": "A description of what the shape is defining.",
+          "meta:titleId": "GeoShape##schema:description##title##92571",
+          "meta:descriptionId": "GeoShape##schema:description##description##66691"
         },
         "schema:polygon": {
           "title": "Polygon",
@@ -30,12 +34,16 @@
             "$ref": "http://schema.org/GeoCoordinates"
           },
           "description": "A series of four or more coordinates where the first and final coordinates are identical. In schema.org, this is a plain text. In XDM, it is a structured array instead.",
-          "minItems": 4
+          "minItems": 4,
+          "meta:titleId": "GeoShape##schema:polygon##title##58291",
+          "meta:descriptionId": "GeoShape##schema:polygon##description##4531"
         },
         "schema:circle": {
           "title": "Circle",
           "$ref": "http://schema.org/GeoCircle",
-          "description": "A circular region with a specific radius centered on a geographic coordinate."
+          "description": "A circular region with a specific radius centered on a geographic coordinate.",
+          "meta:titleId": "GeoShape##schema:circle##title##48181",
+          "meta:descriptionId": "GeoShape##schema:circle##description##74141"
         },
         "schema:box": {
           "title": "Box",
@@ -45,17 +53,23 @@
           },
           "description": "The area enclosed by the rectangle formed by two coordinates. The first coordinate is the lower corner and the second coordinate is the upper corner of a rectangle.",
           "minItems": 2,
-          "maxItems": 2
+          "maxItems": 2,
+          "meta:titleId": "GeoShape##schema:box##title##62011",
+          "meta:descriptionId": "GeoShape##schema:box##description##20801"
         },
         "schema:elevation": {
           "title": "Elevation",
           "type": "number",
-          "description": "The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. In combination with `ceiling`, this property can be used to express a three-dimensional bounding box for a location."
+          "description": "The specific or minimum elevation of the shape. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. In combination with `ceiling`, this property can be used to express a three-dimensional bounding box for a location.",
+          "meta:titleId": "GeoShape##schema:elevation##title##17731",
+          "meta:descriptionId": "GeoShape##schema:elevation##description##44241"
         },
         "xdm:ceiling": {
           "title": "Ceiling",
           "type": "number",
-          "description": "The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location."
+          "description": "The maximum elevation of the shape. Only valid when used in combination with `elevation`. This value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters. This value is not part of the schema.org spec. In combination with `elevation`, this property can be used to express a three-dimensional bounding box for a location.",
+          "meta:titleId": "GeoShape##xdm:ceiling##title##57111",
+          "meta:descriptionId": "GeoShape##xdm:ceiling##description##91521"
         }
       }
     }
@@ -66,5 +80,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "GeoShape##title##89941",
+  "meta:descriptionId": "GeoShape##description##32501"
 }

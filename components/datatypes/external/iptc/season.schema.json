@@ -16,18 +16,24 @@
         "iptc4xmpExt:Name": {
           "title": "Season Name",
           "type": "string",
-          "description": "Name of the season."
+          "description": "Name of the season.",
+          "meta:titleId": "season##iptc4xmpExt:Name##title##84881",
+          "meta:descriptionId": "season##iptc4xmpExt:Name##description##23851"
         },
         "iptc4xmpExt:Number": {
           "title": "Season Number",
           "type": "number",
-          "description": "Number of the season."
+          "description": "Number of the season.",
+          "meta:titleId": "season##iptc4xmpExt:Number##title##49161",
+          "meta:descriptionId": "season##iptc4xmpExt:Number##description##31431"
         },
         "iptc4xmpExt:Identifier": {
           "title": "Season Identifier",
           "type": "string",
           "format": "uri",
-          "description": "Identifier of the season."
+          "description": "Identifier of the season.",
+          "meta:titleId": "season##iptc4xmpExt:Identifier##title##17661",
+          "meta:descriptionId": "season##iptc4xmpExt:Identifier##description##51921"
         }
       }
     }
@@ -38,5 +44,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "season##title##66151",
+  "meta:descriptionId": "season##description##62511"
 }

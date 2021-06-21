@@ -43,7 +43,9 @@
               }
             }
           },
-          "meta:xdmType": "array"
+          "meta:xdmType": "array",
+          "meta:titleId": "descriptorLabel##xdm:labels##title##63721",
+          "meta:descriptionId": "descriptorLabel##xdm:labels##description##72351"
         }
       },
       "required": ["xdm:labels"]
@@ -58,5 +60,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-06-10"
+  "meta:createdDate": "2021-06-10",
+  "meta:titleId": "descriptorLabel##title##65031",
+  "meta:descriptionId": "descriptorLabel##description##24141"
 }

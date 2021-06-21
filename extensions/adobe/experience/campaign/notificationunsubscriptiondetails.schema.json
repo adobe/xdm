@@ -18,17 +18,23 @@
           "title": "Unsubscription Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the end-user has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty."
+          "description": "Date and time when the end-user has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty.",
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##title##6501",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:unsubscriptionDate##description##11081"
         },
         "xdm:remarkID": {
           "title": "Remark Identifier",
           "type": "string",
-          "description": "The pre defined remark that the end-user identified when unsubscribing."
+          "description": "The pre defined remark that the end-user identified when unsubscribing.",
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkID##title##18101",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkID##description##4141"
         },
         "xdm:remarkText": {
           "title": "Remark text",
           "type": "string",
-          "description": "A customer comment/remark that the end-user provided when unsubscribing."
+          "description": "A customer comment/remark that the end-user provided when unsubscribing.",
+          "meta:titleId": "notificationunsubscriptiondetails##xdm:remarkText##title##86161",
+          "meta:descriptionId": "notificationunsubscriptiondetails##xdm:remarkText##description##40641"
         }
       },
       "required": ["xdm:unsubscriptionDate"]
@@ -42,5 +48,7 @@
       "$ref": "#/definitions/notificationUnSubscriptionDetails"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "notificationunsubscriptiondetails##title##23851",
+  "meta:descriptionId": "notificationunsubscriptiondetails##description##73451"
 }

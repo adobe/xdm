@@ -19,23 +19,31 @@
           "title": "Placement Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the decision placement."
+          "description": "A unique identifier for the decision placement.",
+          "meta:titleId": "placement-detail##xdm:id##title##28181",
+          "meta:descriptionId": "placement-detail##xdm:id##description##84861"
         },
         "repo:etag": {
           "title": "Placement ETag",
           "type": "string",
-          "description": "The revision that the placement object was at when the snapshot was taken."
+          "description": "The revision that the placement object was at when the snapshot was taken.",
+          "meta:titleId": "placement-detail##repo:etag##title##15981",
+          "meta:descriptionId": "placement-detail##repo:etag##description##99511"
         },
         "xdm:name": {
           "title": "Placement Name",
           "type": "string",
-          "description": "Placement name. The name is displayed in various user interfaces."
+          "description": "Placement name. The name is displayed in various user interfaces.",
+          "meta:titleId": "placement-detail##xdm:name##title##12491",
+          "meta:descriptionId": "placement-detail##xdm:name##description##47381"
         },
         "xdm:channelID": {
           "title": "Placement's Channel Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'"
+          "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+          "meta:titleId": "placement-detail##xdm:channelID##title##38561",
+          "meta:descriptionId": "placement-detail##xdm:channelID##description##72141"
         }
       }
     }
@@ -48,5 +56,7 @@
       "required": ["xdm:id"]
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "placement-detail##title##79691",
+  "meta:descriptionId": "placement-detail##description##2821"
 }

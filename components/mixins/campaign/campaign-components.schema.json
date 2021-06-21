@@ -24,22 +24,30 @@
               "xdm:sourceCampaignID": {
                 "title": "Source Campaign ID",
                 "description": "Campaign unique identifier at source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-components##xdm:sourceCampaignID##title##23061",
+                "meta:descriptionId": "campaign-components##xdm:sourceCampaignID##description##81211"
               },
               "xdm:sourceParentCampaignID": {
                 "title": "Source Parent Campaign ID",
                 "description": "Account unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-components##xdm:sourceParentCampaignID##title##57881",
+                "meta:descriptionId": "campaign-components##xdm:sourceParentCampaignID##description##51471"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-components##xdm:sourceExternalID##title##78951",
+                "meta:descriptionId": "campaign-components##xdm:sourceExternalID##description##52621"
               },
               "xdm:sourceCampaignOwnerID": {
                 "title": "Source Campaign Owner ID",
                 "description": "Campaign owner unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-components##xdm:sourceCampaignOwnerID##title##8161",
+                "meta:descriptionId": "campaign-components##xdm:sourceCampaignOwnerID##description##85351"
               }
             }
           }
@@ -53,5 +61,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-29"
+  "meta:createdDate": "2020-09-29",
+  "meta:titleId": "campaign-components##title##64591",
+  "meta:descriptionId": "campaign-components##description##51461"
 }

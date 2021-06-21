@@ -18,14 +18,18 @@
         "xdm:description": {
           "type": "string",
           "title": "Description",
-          "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match."
+          "description": "Option selection description. It is used to convey human readable intentions on how or why this option selection was constructed and/or what option will match.",
+          "meta:titleId": "option-selection-details##xdm:description##title##12351",
+          "meta:descriptionId": "option-selection-details##xdm:description##description##67511"
         },
         "xdm:optionSelectionType": {
           "type": "string",
           "title": "Profile Constraint Type",
           "enum": ["directList", "filter"],
           "default": "none",
-          "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships."
+          "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.",
+          "meta:titleId": "option-selection-details##xdm:optionSelectionType##title##82431",
+          "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##80071"
         },
         "xdm:options": {
           "type": "array",
@@ -34,14 +38,19 @@
           "items": {
             "type": "string",
             "format": "uri-reference",
-            "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option."
-          }
+            "description": "An identifier of an decision option entity. The value value refers to an `@id` property of a decision option.",
+            "meta:descriptionId": "option-selection-details##items##description##91061"
+          },
+          "meta:titleId": "option-selection-details##xdm:options##title##82851",
+          "meta:descriptionId": "option-selection-details##xdm:options##description##43561"
         },
         "xdm:filter": {
           "type": "string",
           "format": "uri-reference",
           "title": "Option Filter",
-          "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter ."
+          "description": "The reference to a tag based filter that matches options from an inventory using their attached tags. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/filter .",
+          "meta:titleId": "option-selection-details##xdm:filter##title##35461",
+          "meta:descriptionId": "option-selection-details##xdm:filter##description##69911"
         }
       }
     }
@@ -51,5 +60,7 @@
       "$ref": "#/definitions/option-selection-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "option-selection-details##title##26321",
+  "meta:descriptionId": "option-selection-details##description##84941"
 }

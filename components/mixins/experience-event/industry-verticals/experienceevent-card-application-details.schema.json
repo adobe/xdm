@@ -12,28 +12,37 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Card comparison details such as count, addition, removal, and view.",
   "definitions": {
     "card-application-details": {
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
-		  "description": "Financial details including transactions, accounts, and applications.",
+          "description": "Financial details including transactions, accounts, and applications.",
           "properties": {
             "xdm:cardApplicationComparisons": {
               "title": "Card Comparisons",
               "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-              "description": "Extension of comparison data type."
+              "description": "Extension of comparison data type.",
+              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##title##62581",
+              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##description##97101"
             },
             "xdm:cardApplicationSteps": {
               "title": "Card Application Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-              "description": "Extension of form application data type."
+              "description": "Extension of form application data type.",
+              "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationSteps##title##4831",
+              "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationSteps##description##3711"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-card-application-details##xdm:personalFinances##description##47421"
         }
       }
     }
@@ -44,5 +53,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-card-application-details##title##5251",
+  "meta:descriptionId": "experienceevent-card-application-details##description##29681"
 }

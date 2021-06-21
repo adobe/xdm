@@ -28,12 +28,16 @@
             "https://ns.adobe.com/experience/adcloud/viewability": "Adobe Advertising Cloud viewability",
             "https://ns.adobe.com/experience/alloy": "Adobe Experience Platform Web SDK",
             "https://ns.adobe.com/experience/alloy/reactor": "Adobe Experience Platform Web SDK Launch Extension"
-          }
+          },
+          "meta:titleId": "implementationdetails##xdm:name##title##34371",
+          "meta:descriptionId": "implementationdetails##xdm:name##description##64271"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
-          "description": "The version identifier of the API, e.g h.18."
+          "description": "The version identifier of the API, e.g h.18.",
+          "meta:titleId": "implementationdetails##xdm:version##title##1621",
+          "meta:descriptionId": "implementationdetails##xdm:version##description##10581"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -45,7 +49,9 @@
             "app": "Application",
             "server": "Server",
             "iot": "Internet of Things Device"
-          }
+          },
+          "meta:titleId": "implementationdetails##xdm:environment##title##511",
+          "meta:descriptionId": "implementationdetails##xdm:environment##description##80231"
         }
       }
     }
@@ -58,5 +64,7 @@
       "$ref": "#/definitions/implementationdetails"
     }
   ],
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "implementationdetails##title##57471",
+  "meta:descriptionId": "implementationdetails##description##75291"
 }

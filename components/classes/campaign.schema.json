@@ -20,22 +20,30 @@
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Unique identifer for campaign.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignID##title##34151",
+          "meta:descriptionId": "campaign##xdm:campaignID##description##12851"
         },
         "xdm:campaignName": {
           "title": "Campaign Name",
           "description": "Friendly name for campaign.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignName##title##47041",
+          "meta:descriptionId": "campaign##xdm:campaignName##description##2921"
         },
         "xdm:campaignType": {
           "title": "Campaign Type",
           "description": "The type of campaign for which audience gets selected.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignType##title##27301",
+          "meta:descriptionId": "campaign##xdm:campaignType##description##6761"
         },
         "xdm:campaignDescription": {
           "title": "Campaign Description",
           "description": "Campaign description.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignDescription##title##1331",
+          "meta:descriptionId": "campaign##xdm:campaignDescription##description##24851"
         }
       }
     }
@@ -55,5 +63,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-09-29"
+  "meta:createdDate": "2020-09-29",
+  "meta:titleId": "campaign##title##98761",
+  "meta:descriptionId": "campaign##description##22721"
 }

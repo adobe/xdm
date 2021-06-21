@@ -22,7 +22,9 @@
         "xdm:implementationDetails": {
           "title": "Implementation details",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-          "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed."
+          "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
+          "meta:titleId": "experienceevent-implementation-details##xdm:implementationDetails##title##45291",
+          "meta:descriptionId": "experienceevent-implementation-details##xdm:implementationDetails##description##50351"
         }
       }
     }
@@ -36,5 +38,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-implementation-details##title##86171",
+  "meta:descriptionId": "experienceevent-implementation-details##description##65531"
 }

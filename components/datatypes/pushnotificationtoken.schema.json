@@ -17,39 +17,53 @@
         "xdm:token": {
           "title": "Token",
           "type": "string",
-          "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID."
+          "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID.",
+          "meta:titleId": "pushnotificationtoken##xdm:token##title##60021",
+          "meta:descriptionId": "pushnotificationtoken##xdm:token##description##56471"
         },
         "xdm:registrationDate": {
           "title": "Registration date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the profile has authorized the application to receive push notifications."
+          "description": "Date and time when the profile has authorized the application to receive push notifications.",
+          "meta:titleId": "pushnotificationtoken##xdm:registrationDate##title##10071",
+          "meta:descriptionId": "pushnotificationtoken##xdm:registrationDate##description##10501"
         },
         "xdm:deregistrationDate": {
           "title": "De-registration date",
           "type": "string",
           "format": "date-time",
-          "description": "Date and time when the profile has disabled push notifications on the application."
+          "description": "Date and time when the profile has disabled push notifications on the application.",
+          "meta:titleId": "pushnotificationtoken##xdm:deregistrationDate##title##55771",
+          "meta:descriptionId": "pushnotificationtoken##xdm:deregistrationDate##description##99931"
         },
         "xdm:environment": {
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
-          "description": "Environment of at the time of the registration."
+          "description": "Environment of at the time of the registration.",
+          "meta:titleId": "pushnotificationtoken##xdm:environment##title##20861",
+          "meta:descriptionId": "pushnotificationtoken##xdm:environment##description##13881"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
-          "description": "The device originating the registration."
+          "description": "The device originating the registration.",
+          "meta:titleId": "pushnotificationtoken##xdm:device##title##69621",
+          "meta:descriptionId": "pushnotificationtoken##xdm:device##description##89701"
         },
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/context/application",
-          "description": "Application registered to receive push notifications."
+          "description": "Application registered to receive push notifications.",
+          "meta:titleId": "pushnotificationtoken##xdm:application##title##51841",
+          "meta:descriptionId": "pushnotificationtoken##xdm:application##description##85841"
         },
         "xdm:channel": {
           "title": "Communication channel",
           "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "description": "Channels for communicating with customers or users."
+          "description": "Channels for communicating with customers or users.",
+          "meta:titleId": "pushnotificationtoken##xdm:channel##title##19261",
+          "meta:descriptionId": "pushnotificationtoken##xdm:channel##description##36921"
         }
       }
     }
@@ -63,5 +77,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "pushnotificationtoken##title##70601",
+  "meta:descriptionId": "pushnotificationtoken##description##93571"
 }

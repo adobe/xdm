@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Timed media chapter asset reference",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "Asset information about the chapter captured by the experience event.",
   "definitions": {
@@ -19,17 +19,23 @@
           "title": "Chapter identity",
           "format": "uri-reference",
           "type": "string",
-          "description": "The identity of the chapter."
+          "description": "The identity of the chapter.",
+          "meta:titleId": "media-timed-chapter-asset-reference##@id##title##55521",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##@id##description##63221"
         },
         "dc:title": {
           "title": "Chapter name",
           "type": "string",
-          "description": "The friendly name of the chapter and or segment."
+          "description": "The friendly name of the chapter and or segment.",
+          "meta:titleId": "media-timed-chapter-asset-reference##dc:title##title##12931",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##dc:title##description##28531"
         },
         "xmpDM:duration": {
           "title": "Chapter length or duration",
           "type": "integer",
-          "description": "The length of the chapter, in seconds."
+          "description": "The length of the chapter, in seconds.",
+          "meta:titleId": "media-timed-chapter-asset-reference##xmpDM:duration##title##70291",
+          "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##1441"
         }
       },
       "required": ["@id"]
@@ -43,6 +49,7 @@
       "$ref": "#/definitions/media-chapter-asset-reference"
     }
   ],
-  "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "media-timed-chapter-asset-reference##title##81131",
+  "meta:descriptionId": "media-timed-chapter-asset-reference##description##31531"
 }

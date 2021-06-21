@@ -26,48 +26,66 @@
               "xdm:token": {
                 "title": "Push Token",
                 "type": "string",
-                "description": "Valid push token for the given push platform."
+                "description": "Valid push token for the given push platform.",
+                "meta:titleId": "profile-push-notification-details##xdm:token##title##3941",
+                "meta:descriptionId": "profile-push-notification-details##xdm:token##description##2881"
               },
               "xdm:platform": {
                 "title": "Push Platform",
                 "type": "string",
-                "description": "Push provider, e.g. apns or fcm"
+                "description": "Push provider, e.g. apns or fcm",
+                "meta:titleId": "profile-push-notification-details##xdm:platform##title##8571",
+                "meta:descriptionId": "profile-push-notification-details##xdm:platform##description##94771"
               },
               "xdm:blacklisted": {
                 "title": "Blacklist Flag",
                 "type": "boolean",
                 "meta:status": "deprecated",
-                "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead."
+                "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.",
+                "meta:titleId": "profile-push-notification-details##xdm:blacklisted##title##3671",
+                "meta:descriptionId": "profile-push-notification-details##xdm:blacklisted##description##16131"
               },
               "xdm:blocklisted": {
                 "title": "Blocklist Flag",
                 "type": "boolean",
                 "meta:status": "deprecated",
-                "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead."
+                "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.",
+                "meta:titleId": "profile-push-notification-details##xdm:blocklisted##title##5681",
+                "meta:descriptionId": "profile-push-notification-details##xdm:blocklisted##description##34891"
               },
               "xdm:denylisted": {
                 "title": "Denylist Flag",
                 "type": "boolean",
-                "description": "Indicates whether the push token is blocked by the push provider."
+                "description": "Indicates whether the push token is blocked by the push provider.",
+                "meta:titleId": "profile-push-notification-details##xdm:denylisted##title##6151",
+                "meta:descriptionId": "profile-push-notification-details##xdm:denylisted##description##1081"
               },
               "xdm:appID": {
                 "title": "Application Identifier",
                 "type": "string",
-                "description": "Unique Identifier for the mobile application."
+                "description": "Unique Identifier for the mobile application.",
+                "meta:titleId": "profile-push-notification-details##xdm:appID##title##95881",
+                "meta:descriptionId": "profile-push-notification-details##xdm:appID##description##93901"
               },
               "xdm:identiy": {
                 "title": "Identity associated with this token",
                 "$ref": "https://ns.adobe.com/xdm/context/identity",
                 "meta:status": "deprecated",
-                "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead."
+                "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.",
+                "meta:titleId": "profile-push-notification-details##xdm:identiy##title##24641",
+                "meta:descriptionId": "profile-push-notification-details##xdm:identiy##description##22931"
               },
               "xdm:identity": {
                 "title": "Identity associated with this token",
                 "$ref": "https://ns.adobe.com/xdm/context/identity",
-                "description": "The identity associated with this token before profile stitching."
+                "description": "The identity associated with this token before profile stitching.",
+                "meta:titleId": "profile-push-notification-details##xdm:identity##title##23681",
+                "meta:descriptionId": "profile-push-notification-details##xdm:identity##description##17151"
               }
             }
-          }
+          },
+          "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##85801",
+          "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##17191"
         }
       }
     }
@@ -81,5 +99,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-push-notification-details##title##38301",
+  "meta:descriptionId": "profile-push-notification-details##description##85901"
 }

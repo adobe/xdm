@@ -21,53 +21,73 @@
         "xdm:primary": {
           "title": "Primary",
           "type": "boolean",
-          "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time."
+          "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time.",
+          "meta:titleId": "address##xdm:primary##title##84521",
+          "meta:descriptionId": "address##xdm:primary##description##55451"
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
-          "description": "Free form name of the address."
+          "description": "Free form name of the address.",
+          "meta:titleId": "address##xdm:label##title##24231",
+          "meta:descriptionId": "address##xdm:label##description##25061"
         },
         "xdm:street1": {
           "title": "Street 1",
           "type": "string",
-          "description": "Primary street level information, apartment number, street number, and street name."
+          "description": "Primary street level information, apartment number, street number, and street name.",
+          "meta:titleId": "address##xdm:street1##title##83391",
+          "meta:descriptionId": "address##xdm:street1##description##66271"
         },
         "xdm:street2": {
           "title": "Street 2",
           "type": "string",
-          "description": "Optional street information second line."
+          "description": "Optional street information second line.",
+          "meta:titleId": "address##xdm:street2##title##72821",
+          "meta:descriptionId": "address##xdm:street2##description##68831"
         },
         "xdm:street3": {
           "title": "Street 3",
           "type": "string",
-          "description": "Optional street information third line."
+          "description": "Optional street information third line.",
+          "meta:titleId": "address##xdm:street3##title##59011",
+          "meta:descriptionId": "address##xdm:street3##description##21921"
         },
         "xdm:street4": {
           "title": "Street 4",
           "type": "string",
-          "description": "Optional street information fourth line."
+          "description": "Optional street information fourth line.",
+          "meta:titleId": "address##xdm:street4##title##52861",
+          "meta:descriptionId": "address##xdm:street4##description##10851"
         },
         "xdm:region": {
           "title": "Region",
           "type": "string",
-          "description": "The region, county, or district portion of the address."
+          "description": "The region, county, or district portion of the address.",
+          "meta:titleId": "address##xdm:region##title##84571",
+          "meta:descriptionId": "address##xdm:region##description##20891"
         },
         "xdm:postOfficeBox": {
           "title": "Post office box",
           "type": "string",
           "description": "Post office box of the address.",
-          "maxLength": 20
+          "maxLength": 20,
+          "meta:titleId": "address##xdm:postOfficeBox##title##19181",
+          "meta:descriptionId": "address##xdm:postOfficeBox##description##52181"
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
-          "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language."
+          "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.",
+          "meta:titleId": "address##xdm:country##title##78821",
+          "meta:descriptionId": "address##xdm:country##description##91871"
         },
         "xdm:state": {
           "title": "State",
           "type": "string",
-          "description": "The name of the State. This is a free-form field."
+          "description": "The name of the State. This is a free-form field.",
+          "meta:titleId": "address##xdm:state##title##37161",
+          "meta:descriptionId": "address##xdm:state##description##46021"
         },
         "xdm:status": {
           "title": "Status",
@@ -80,18 +100,24 @@
             "pending_verification": "Pending verification",
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
-          }
+          },
+          "meta:titleId": "address##xdm:status##title##42181",
+          "meta:descriptionId": "address##xdm:status##description##43581"
         },
         "xdm:statusReason": {
           "title": "Status reason",
           "type": "string",
-          "description": "A description of the current status."
+          "description": "A description of the current status.",
+          "meta:titleId": "address##xdm:statusReason##title##99611",
+          "meta:descriptionId": "address##xdm:statusReason##description##75111"
         },
         "xdm:lastVerifiedDate": {
           "title": "Last verified date",
           "type": "string",
           "format": "date",
-          "description": "The date that the address was last verified as still associated to the person."
+          "description": "The date that the address was last verified as still associated to the person.",
+          "meta:titleId": "address##xdm:lastVerifiedDate##title##61111",
+          "meta:descriptionId": "address##xdm:lastVerifiedDate##description##38671"
         }
       }
     }
@@ -111,5 +137,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "address##title##46591",
+  "meta:descriptionId": "address##description##26931"
 }

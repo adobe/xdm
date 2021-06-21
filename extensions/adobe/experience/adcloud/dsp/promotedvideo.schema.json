@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Promoted Video Details.",
   "definitions": {
     "dsp-promotedvideo": {
@@ -20,32 +22,44 @@
         "dsp:promotedVideoKey": {
           "title": "promotedVideoKey",
           "type": "string",
-          "description": "External unique identifier for a promoted video the ad is displaying."
+          "description": "External unique identifier for a promoted video the ad is displaying.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoKey##title##72011",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoKey##description##55921"
         },
         "dsp:campaignKey": {
           "title": "campaignKey",
           "type": "string",
-          "description": "Identifier for the campaign that belongs to the displayed video."
+          "description": "Identifier for the campaign that belongs to the displayed video.",
+          "meta:titleId": "promotedvideo##dsp:campaignKey##title##69961",
+          "meta:descriptionId": "promotedvideo##dsp:campaignKey##description##60741"
         },
         "dsp:promotedVideoName": {
           "title": "promotedVideoName",
           "type": "string",
-          "description": "A name that uniquely identifies the promoted video within the campaign."
+          "description": "A name that uniquely identifies the promoted video within the campaign.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoName##title##42681",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoName##description##58991"
         },
         "dsp:promoteVideoDuration": {
           "title": "promoteVideoDuration",
           "type": "integer",
-          "description": "The duration of the video."
+          "description": "The duration of the video.",
+          "meta:titleId": "promotedvideo##dsp:promoteVideoDuration##title##20601",
+          "meta:descriptionId": "promotedvideo##dsp:promoteVideoDuration##description##47601"
         },
         "dsp:promotedVideoTags": {
           "title": "Promoted Video Tags",
           "type": "string",
-          "description": "Labels describing ad categories for this video."
+          "description": "Labels describing ad categories for this video.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoTags##title##18511",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoTags##description##37021"
         },
         "dsp:promotedVideoDescription": {
           "title": "Promoted Video Description",
           "type": "string",
-          "description": "Detailed description for this video."
+          "description": "Detailed description for this video.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoDescription##title##83091",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoDescription##description##61821"
         }
       }
     }
@@ -61,5 +75,7 @@
       "$ref": "#/definitions/dsp-promotedvideo"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "promotedvideo##title##75011",
+  "meta:descriptionId": "promotedvideo##description##27051"
 }

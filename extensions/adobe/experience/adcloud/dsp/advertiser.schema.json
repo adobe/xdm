@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Advertiser Details.",
   "definitions": {
     "dsp-advertiser": {
@@ -20,33 +22,47 @@
         "dsp:advertiserKey": {
           "title": "Advertiser Key",
           "type": "string",
-          "description": "Unique external identifier for the advertiser."
+          "description": "Unique external identifier for the advertiser.",
+          "meta:titleId": "advertiser##dsp:advertiserKey##title##26051",
+          "meta:descriptionId": "advertiser##dsp:advertiserKey##description##71251"
         },
         "dsp:advertiserName": {
           "title": "Advertiser Name",
           "type": "string",
-          "description": "The name of the advertiser."
+          "description": "The name of the advertiser.",
+          "meta:titleId": "advertiser##dsp:advertiserName##title##99371",
+          "meta:descriptionId": "advertiser##dsp:advertiserName##description##67251"
         },
         "dsp:advertiserStatus": {
           "title": "Advertiser Status",
           "type": "string",
           "description": "Indicates the advertiser's status, whether it is active, inactive or deleted.",
-          "enum": ["Active", "Inactive", "Deleted"],
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
             "Deleted": "Deleted"
-          }
+          },
+          "meta:titleId": "advertiser##dsp:advertiserStatus##title##58281",
+          "meta:descriptionId": "advertiser##dsp:advertiserStatus##description##2681"
         },
         "dsp:advertiserUrl": {
           "title": "Advertiser Url",
           "type": "string",
-          "description": "Advertiser Url."
+          "description": "Advertiser Url.",
+          "meta:titleId": "advertiser##dsp:advertiserUrl##title##25331",
+          "meta:descriptionId": "advertiser##dsp:advertiserUrl##description##99481"
         },
         "dsp:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "The identifier of the account associated with this advertiser.The same accountId can serve multiple advertisers in case it represents an advertising agency."
+          "description": "The identifier of the account associated with this advertiser.The same accountId can serve multiple advertisers in case it represents an advertising agency.",
+          "meta:titleId": "advertiser##dsp:accountId##title##88761",
+          "meta:descriptionId": "advertiser##dsp:accountId##description##72431"
         }
       }
     }
@@ -62,5 +78,7 @@
       "$ref": "#/definitions/dsp-advertiser"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "advertiser##title##90131",
+  "meta:descriptionId": "advertiser##description##16751"
 }

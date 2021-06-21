@@ -26,27 +26,37 @@
               "xdm:sourceOpportunityPersonID": {
                 "title": "Source Opportunity Person ID",
                 "description": "Opportunity person relationship unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "opportunity-person-components##xdm:sourceOpportunityPersonID##title##99511",
+                "meta:descriptionId": "opportunity-person-components##xdm:sourceOpportunityPersonID##description##40981"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External source unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "opportunity-person-components##xdm:sourceExternalID##title##88231",
+                "meta:descriptionId": "opportunity-person-components##xdm:sourceExternalID##description##68681"
               },
               "xdm:sourceOpportunityID": {
                 "title": "Source Opportunity ID",
                 "description": "Opportunity unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "opportunity-person-components##xdm:sourceOpportunityID##title##30991",
+                "meta:descriptionId": "opportunity-person-components##xdm:sourceOpportunityID##description##22761"
               },
               "xdm:sourcePersonID": {
                 "title": "Source Person ID",
                 "description": "Person unique identifer at the source .",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "opportunity-person-components##xdm:sourcePersonID##title##31421",
+                "meta:descriptionId": "opportunity-person-components##xdm:sourcePersonID##description##92481"
               },
               "xdm:personRole": {
                 "title": "Person Role",
                 "description": "Role of the person pertaining to this opportunity",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "opportunity-person-components##xdm:personRole##title##33221",
+                "meta:descriptionId": "opportunity-person-components##xdm:personRole##description##7181"
               }
             }
           }
@@ -60,5 +70,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-09"
+  "meta:createdDate": "2020-09-09",
+  "meta:titleId": "opportunity-person-components##title##59711",
+  "meta:descriptionId": "opportunity-person-components##description##11351"
 }

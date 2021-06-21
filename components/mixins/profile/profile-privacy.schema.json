@@ -37,7 +37,9 @@
                     "meta:enum": {
                       "general_opt_out": "General opt-out",
                       "sales_sharing_opt_out": "Sales sharing opt-out"
-                    }
+                    },
+                    "meta:titleId": "profile-privacy##xdm:optOutType##title##81141",
+                    "meta:descriptionId": "profile-privacy##xdm:optOutType##description##64261"
                   },
                   "xdm:optOutValue": {
                     "title": "Opt-out value",
@@ -49,18 +51,26 @@
                       "pending": "Pending verification",
                       "in": "Opt-in",
                       "out": "Opt-out"
-                    }
+                    },
+                    "meta:titleId": "profile-privacy##xdm:optOutValue##title##41651",
+                    "meta:descriptionId": "profile-privacy##xdm:optOutValue##description##53521"
                   },
                   "xdm:timestamp": {
                     "title": "Opt-out timestamp",
                     "description": "Timestamp of the received opt-out signal.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "meta:titleId": "profile-privacy##xdm:timestamp##title##91331",
+                    "meta:descriptionId": "profile-privacy##xdm:timestamp##description##97131"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-privacy##xdm:privacyOptOuts##title##72571",
+              "meta:descriptionId": "profile-privacy##xdm:privacyOptOuts##description##29091"
             }
-          }
+          },
+          "meta:titleId": "profile-privacy##xdm:optOutConsentLevel##title##10081",
+          "meta:descriptionId": "profile-privacy##xdm:optOutConsentLevel##description##60971"
         },
         "xdm:identityPrivacyInfo": {
           "title": "Identity level privacy information",
@@ -84,19 +94,29 @@
                       "title": "Timestamp of consent",
                       "description": "Timestamp (RFC3339) when this identity presented consent information",
                       "type": "string",
-                      "format": "date-time"
+                      "format": "date-time",
+                      "meta:titleId": "profile-privacy##xdm:consentTimestamp##title##43311",
+                      "meta:descriptionId": "profile-privacy##xdm:consentTimestamp##description##72321"
                     },
                     "xdm:consentString": {
                       "title": "Captured consent information",
                       "description": "Consent string and its specification. This can help reading application to use appropriate library.",
-                      "$ref": "https://ns.adobe.com/xdm/context/consentstring"
+                      "$ref": "https://ns.adobe.com/xdm/context/consentstring",
+                      "meta:titleId": "profile-privacy##xdm:consentString##title##66801",
+                      "meta:descriptionId": "profile-privacy##xdm:consentString##description##81111"
                     }
                   },
-                  "required": ["xdm:consentTimestamp"]
+                  "required": ["xdm:consentTimestamp"],
+                  "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##15551",
+                  "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##89431"
                 }
-              }
-            }
-          }
+              },
+              "meta:titleId": "profile-privacy##additionalProperties##title##5381"
+            },
+            "meta:titleId": "profile-privacy##additionalProperties##title##90961"
+          },
+          "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##24771",
+          "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##52001"
         }
       }
     }
@@ -110,5 +130,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-privacy##title##11761",
+  "meta:descriptionId": "profile-privacy##description##56601"
 }

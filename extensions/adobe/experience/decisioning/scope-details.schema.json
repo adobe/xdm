@@ -17,22 +17,30 @@
         "xdm:id": {
           "type": "string",
           "title": "Decision Scope Identifier",
-          "description": "The unique identifier of the decision scope. For a given decision request a scope narrows the decision process along multiple dimensions. The scope is referencable by its identifier."
+          "description": "The unique identifier of the decision scope. For a given decision request a scope narrows the decision process along multiple dimensions. The scope is referencable by its identifier.",
+          "meta:titleId": "scope-details##xdm:id##title##24431",
+          "meta:descriptionId": "scope-details##xdm:id##description##28941"
         },
         "xdm:decisionProvider": {
           "type": "string",
           "title": "Decision Provider",
-          "description": "The provider that was asked to make the decision. This dimension is used when mutliple services can make decisions for the same placement or activity."
+          "description": "The provider that was asked to make the decision. This dimension is used when mutliple services can make decisions for the same placement or activity.",
+          "meta:titleId": "scope-details##xdm:decisionProvider##title##51921",
+          "meta:descriptionId": "scope-details##xdm:decisionProvider##description##67221"
         },
         "xdm:placement": {
           "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail",
           "title": "Placement Detail for the Scope",
-          "description": "The placement that was a requested as part of this decision scope. A scope will include a specification of the location or surface where the option will be presented. The placement narrows the options that can be proposed to those that can be represented or rendered in that place."
+          "description": "The placement that was a requested as part of this decision scope. A scope will include a specification of the location or surface where the option will be presented. The placement narrows the options that can be proposed to those that can be represented or rendered in that place.",
+          "meta:titleId": "scope-details##xdm:placement##title##58091",
+          "meta:descriptionId": "scope-details##xdm:placement##description##5151"
         },
         "xdm:activity": {
           "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail",
           "title": "Activity Detail for the Scope",
-          "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity (why and how) that makes the decision, other scopes will use a dynamic strategy determine which activity is used. Those scopes will list executionDetails for steps that were performed during decision-making."
+          "description": "The activity that was a requested or chosen for this decision scope. Some scopes will prescribe the exact activity (why and how) that makes the decision, other scopes will use a dynamic strategy determine which activity is used. Those scopes will list executionDetails for steps that were performed during decision-making.",
+          "meta:titleId": "scope-details##xdm:activity##title##47721",
+          "meta:descriptionId": "scope-details##xdm:activity##description##63791"
         },
         "xdm:interactionMeasurements": {
           "meta:status": "experimental",
@@ -41,7 +49,9 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/interaction-measurement"
           },
           "title": "Interaction Measurements used in this Scope",
-          "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity)."
+          "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity).",
+          "meta:titleId": "scope-details##xdm:interactionMeasurements##title##27931",
+          "meta:descriptionId": "scope-details##xdm:interactionMeasurements##description##48151"
         },
         "xdm:strategies": {
           "type": "array",
@@ -49,12 +59,16 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details"
           },
           "title": "Strategy Step Details",
-          "description": "The steps that were executed when the decision was made."
+          "description": "The steps that were executed when the decision was made.",
+          "meta:titleId": "scope-details##xdm:strategies##title##9431",
+          "meta:descriptionId": "scope-details##xdm:strategies##description##57151"
         },
         "xdm:experience": {
           "title": "Selected Experience Option",
           "description": "The experience that was selected when the decision was made.",
-          "$ref": "#/definitions/experience-option-details"
+          "$ref": "#/definitions/experience-option-details",
+          "meta:titleId": "scope-details##xdm:experience##title##60871",
+          "meta:descriptionId": "scope-details##xdm:experience##description##24691"
         }
       }
     },
@@ -64,7 +78,9 @@
           "type": "string",
           "format": "uri-reference",
           "title": "Experience Identifier",
-          "description": "A unique identifier for the decision option."
+          "description": "A unique identifier for the decision option.",
+          "meta:titleId": "scope-details##xdm:id##title##68891",
+          "meta:descriptionId": "scope-details##xdm:id##description##54901"
         }
       }
     }
@@ -77,5 +93,7 @@
       "$ref": "#/definitions/proposition-scope-details-datatype"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "scope-details##title##36831",
+  "meta:descriptionId": "scope-details##description##52251"
 }

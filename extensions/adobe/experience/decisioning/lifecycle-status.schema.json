@@ -30,7 +30,9 @@
             "live": "Live",
             "completed": "Completed",
             "archived": "Archived"
-          }
+          },
+          "meta:titleId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##title##51691",
+          "meta:descriptionId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##description##47641"
         }
       }
     }
@@ -43,5 +45,7 @@
       "$ref": "#/definitions/lifecycle-status-mixin"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "lifecycle-status##title##50541",
+  "meta:descriptionId": "lifecycle-status##description##39121"
 }

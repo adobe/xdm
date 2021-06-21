@@ -20,8 +20,10 @@
           "additionalProperties": {
             "title": "Conversion Property Item",
             "type": "string",
-            "meta:xdmType": "string"
-          }
+            "meta:xdmType": "string",
+            "meta:titleId": "conversiondetails##additionalProperties##title##4571"
+          },
+          "meta:descriptionId": "conversiondetails##xdm:conversionProperties##description##60601"
         }
       }
     }
@@ -31,5 +33,7 @@
       "$ref": "#/definitions/conversiondetails"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "conversiondetails##title##50241",
+  "meta:descriptionId": "conversiondetails##description##81751"
 }

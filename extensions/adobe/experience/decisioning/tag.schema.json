@@ -19,7 +19,9 @@
         "https://ns.adobe.com/experience/decisioning/name": {
           "type": "string",
           "title": "Tag Name",
-          "description": "The tag's external human-readable representation to the clients in the default language."
+          "description": "The tag's external human-readable representation to the clients in the default language.",
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/name##title##84001",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/name##description##24641"
         }
       }
     },
@@ -29,12 +31,16 @@
           "title": "Tag Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the tag."
+          "description": "A unique identifier for the tag.",
+          "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/tagID##title##1231",
+          "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/tagID##description##721"
         },
         "repo:etag": {
           "title": "Tag ETag",
           "type": "string",
-          "description": "The revision that the tag object was at when the snapshot was taken."
+          "description": "The revision that the tag object was at when the snapshot was taken.",
+          "meta:titleId": "tag##repo:etag##title##23241",
+          "meta:descriptionId": "tag##repo:etag##description##62711"
         }
       }
     }
@@ -47,5 +53,7 @@
       "$ref": "#/definitions/tag-details"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "tag##title##39341",
+  "meta:descriptionId": "tag##description##50191"
 }

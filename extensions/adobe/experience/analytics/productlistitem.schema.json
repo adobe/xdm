@@ -21,9 +21,11 @@
           "properties": {
             "xdm:eVars": {
               "title": "Merchandizing eVars",
-              "$ref": "https://ns.adobe.com/experience/analytics/evars"
+              "$ref": "https://ns.adobe.com/experience/analytics/evars",
+              "meta:titleId": "productlistitem##xdm:eVars##title##48611"
             }
-          }
+          },
+          "meta:titleId": "productlistitem##https://ns.adobe.com/experience/analytics/customDimensions##title##80141"
         }
       }
     }
@@ -39,5 +41,7 @@
       "$ref": "https://ns.adobe.com/experience/analytics/events"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "productlistitem##title##92661",
+  "meta:descriptionId": "productlistitem##description##40681"
 }

@@ -19,12 +19,16 @@
           "type": "string",
           "format": "uri-reference",
           "title": "ID",
-          "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object."
+          "description": "The unique identifier of the offer. It must be unique within a repository container for objects that are not the same, otherwise it is interpreted as referring to the same object.",
+          "meta:titleId": "offer##@id##title##5441",
+          "meta:descriptionId": "offer##@id##description##50691"
         },
         "xdm:name": {
           "type": "string",
           "title": "Name",
-          "description": "The offer's name. A human readable string to find one or more offers."
+          "description": "The offer's name. A human readable string to find one or more offers.",
+          "meta:titleId": "offer##xdm:name##title##75291",
+          "meta:descriptionId": "offer##xdm:name##description##77091"
         },
         "xdm:status": {
           "type": "string",
@@ -37,7 +41,9 @@
             "rejected": "Rejected",
             "approved": "Approved",
             "archived": "Archived"
-          }
+          },
+          "meta:titleId": "offer##xdm:status##title##59091",
+          "meta:descriptionId": "offer##xdm:status##description##24971"
         },
         "xdm:tags": {
           "type": "array",
@@ -46,8 +52,11 @@
           "items": {
             "type": "string",
             "format": "uri",
-            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag"
-          }
+            "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/offer-management/tag",
+            "meta:descriptionId": "offer##items##description##85831"
+          },
+          "meta:titleId": "offer##xdm:tags##title##24641",
+          "meta:descriptionId": "offer##xdm:tags##description##12471"
         },
         "xdm:representations": {
           "type": "array",
@@ -55,7 +64,9 @@
             "$ref": "https://ns.adobe.com/experience/offer-management/offer-representation"
           },
           "title": "Representations",
-          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). "
+          "description": "Offer representations for different content variants. A single offer can have multiple contents variants. An offer representation is the object that connects offers to content. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels (or a particular medium). ",
+          "meta:titleId": "offer##xdm:representations##title##4741",
+          "meta:descriptionId": "offer##xdm:representations##description##65451"
         },
         "xdm:customMetadata": {
           "type": "object",
@@ -65,7 +76,9 @@
             }
           },
           "title": "Custom Properties",
-          "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings."
+          "description": "Custom metadata is a key-value map that allows the end-users to attach properties to individual offer instances. Any string can be used as a key name, the values are also strings.",
+          "meta:titleId": "offer##xdm:customMetadata##title##92871",
+          "meta:descriptionId": "offer##xdm:customMetadata##description##56611"
         }
       }
     }
@@ -78,5 +91,7 @@
       "required": ["xdm:name", "xdm:status"]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "offer##title##6211",
+  "meta:descriptionId": "offer##description##85681"
 }

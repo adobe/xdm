@@ -22,13 +22,17 @@
           "title": "Indexed",
           "type": "boolean",
           "description": "Whether the property is indexable and searchable.",
-          "default": false
+          "default": false,
+          "meta:titleId": "searchdescriptor##search:indexed##title##9551",
+          "meta:descriptionId": "searchdescriptor##search:indexed##description##88631"
         },
         "search:filterable": {
           "title": "Filterable",
           "type": "boolean",
           "description": "Whether the property can be used as a filter in search queries.",
-          "default": false
+          "default": false,
+          "meta:titleId": "searchdescriptor##search:filterable##title##17991",
+          "meta:descriptionId": "searchdescriptor##search:filterable##description##36831"
         },
         "search:store": {
           "title": "Stored",
@@ -39,7 +43,9 @@
             "stored": "stored",
             "storedAndFetchByDefault": "storedAndFetchByDefault"
           },
-          "default": "notStored"
+          "default": "notStored",
+          "meta:titleId": "searchdescriptor##search:store##title##87441",
+          "meta:descriptionId": "searchdescriptor##search:store##description##96261"
         },
         "search:sort": {
           "title": "Sort Type",
@@ -51,7 +57,9 @@
             "sortedCaseSensitive": "sortedCaseSensitive",
             "sortedCaseInsensitive": "sortedCaseInsensitive"
           },
-          "default": "notSortable"
+          "default": "notSortable",
+          "meta:titleId": "searchdescriptor##search:sort##title##63301",
+          "meta:descriptionId": "searchdescriptor##search:sort##description##50851"
         },
         "search:analyzers": {
           "title": "Analyzers",
@@ -74,7 +82,9 @@
             "fileNameExtension": "fileNameExtension"
           },
           "description": "A set of analyzers to be applied when indexing this property.",
-          "default": "noAnalysis"
+          "default": "noAnalysis",
+          "meta:titleId": "searchdescriptor##search:analyzers##title##73501",
+          "meta:descriptionId": "searchdescriptor##search:analyzers##description##46141"
         },
         "search:defaultAnalyzer": {
           "title": "Default analyzer",
@@ -94,7 +104,9 @@
             "fileName": "fileName",
             "fileNameExtension": "fileNameExtension"
           },
-          "default": "noAnalysis"
+          "default": "noAnalysis",
+          "meta:titleId": "searchdescriptor##search:defaultAnalyzer##title##58491",
+          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##63021"
         }
       },
       "required": ["search:indexed"]
@@ -109,5 +121,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "searchdescriptor##title##7901",
+  "meta:descriptionId": "searchdescriptor##description##10921"
 }

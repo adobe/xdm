@@ -16,12 +16,16 @@
         "xdm:id": {
           "title": "Search/Marketing partner ID",
           "type": "string",
-          "description": "Internal mapping of search/marketing platforms/partners to IDs for Adobe Advertising Cloud search."
+          "description": "Internal mapping of search/marketing platforms/partners to IDs for Adobe Advertising Cloud search.",
+          "meta:titleId": "partnerdata##xdm:id##title##98881",
+          "meta:descriptionId": "partnerdata##xdm:id##description##93781"
         },
         "xdm:data": {
           "title": "Search/Marketing partner data associated with a segment",
           "type": "string",
-          "description": "Unique identifiers such conversion ID (in case of Google) associated with the synced segment."
+          "description": "Unique identifiers such conversion ID (in case of Google) associated with the synced segment.",
+          "meta:titleId": "partnerdata##xdm:data##title##99491",
+          "meta:descriptionId": "partnerdata##xdm:data##description##75871"
         }
       }
     }
@@ -31,5 +35,7 @@
       "$ref": "#/definitions/partnerdata"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "partnerdata##title##39061",
+  "meta:descriptionId": "partnerdata##description##42531"
 }

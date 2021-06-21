@@ -19,24 +19,24 @@
           "title": "Full name",
           "$ref": "https://ns.adobe.com/xdm/context/person-name",
           "description": "The person's full name.",
-          "meta:titleId": "person##xdm:name##title",
-          "meta:descriptionId": "person##xdm:name##description"
+          "meta:titleId": "person##xdm:name##title##75641",
+          "meta:descriptionId": "person##xdm:name##description##39681"
         },
         "xdm:birthDate": {
           "title": "Birth date",
           "type": "string",
           "format": "date",
           "description": "The full date a person was born.",
-          "meta:titleId": "person##xdm:birthDate##title",
-          "meta:descriptionId": "person##xdm:birthDate##description"
+          "meta:titleId": "person##xdm:birthDate##title##6701",
+          "meta:descriptionId": "person##xdm:birthDate##description##75711"
         },
         "xdm:birthDayAndMonth": {
           "title": "Birth date",
           "type": "string",
           "pattern": "[0-1][0-9]-[0-9][0-9]",
           "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
-          "meta:titleId": "person##xdm:birthDayAndMonth##title",
-          "meta:descriptionId": "person##xdm:birthDayAndMonth##description"
+          "meta:titleId": "person##xdm:birthDayAndMonth##title##83201",
+          "meta:descriptionId": "person##xdm:birthDayAndMonth##description##18671"
         },
         "xdm:birthYear": {
           "title": "Birth year",
@@ -44,8 +44,8 @@
           "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
           "minimum": 1,
           "maximum": 32767,
-          "meta:titleId": "person##xdm:birthYear##title",
-          "meta:descriptionId": "person##xdm:birthYear##description"
+          "meta:titleId": "person##xdm:birthYear##title##97581",
+          "meta:descriptionId": "person##xdm:birthYear##description##33951"
         },
         "xdm:gender": {
           "title": "Gender",
@@ -59,8 +59,8 @@
           },
           "description": "Gender identity of the person.\n",
           "default": "not_specified",
-          "meta:titleId": "person##xdm:gender##title",
-          "meta:descriptionId": "person##xdm:gender##description"
+          "meta:titleId": "person##xdm:gender##title##64051",
+          "meta:descriptionId": "person##xdm:gender##description##86171"
         },
         "xdm:maritalStatus": {
           "title": "Marital Status",
@@ -75,23 +75,23 @@
           },
           "description": "Describes a person's relationship with a significant other.",
           "default": "not_specified",
-          "meta:titleId": "person##xdm:maritalStatus##title",
-          "meta:descriptionId": "person##xdm:maritalStatus##description"
+          "meta:titleId": "person##xdm:maritalStatus##title##34811",
+          "meta:descriptionId": "person##xdm:maritalStatus##description##73211"
         },
         "xdm:nationality": {
           "title": "Nationality",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
           "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
-          "meta:titleId": "person##xdm:nationality##title",
-          "meta:descriptionId": "person##xdm:nationality##description"
+          "meta:titleId": "person##xdm:nationality##title##18311",
+          "meta:descriptionId": "person##xdm:nationality##description##6511"
         },
         "xdm:taxId": {
           "title": "Tax ID",
           "type": "string",
           "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
-          "meta:titleId": "person##xdm:taxId##title",
-          "meta:descriptionId": "person##xdm:taxId##description"
+          "meta:titleId": "person##xdm:taxId##title##49741",
+          "meta:descriptionId": "person##xdm:taxId##description##48231"
         }
       }
     }
@@ -106,6 +106,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "person##title",
-  "meta:descriptionId": "person##description"
+  "meta:titleId": "person##title##45791",
+  "meta:descriptionId": "person##description##86131"
 }

@@ -17,17 +17,23 @@
         "xdm:distanceToCenter": {
           "title": "Distance to center",
           "type": "number",
-          "description": "Distance to center of geo in, case of a geo circle, measured in meters."
+          "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
+          "meta:titleId": "geo-interaction-details##xdm:distanceToCenter##title##64781",
+          "meta:descriptionId": "geo-interaction-details##xdm:distanceToCenter##description##53531"
         },
         "xdm:deviceGeoAccuracy": {
           "title": "Geo device accuracy",
           "type": "number",
-          "description": "The accuracy of the geo measuring device or mechanism, measured in meters."
+          "description": "The accuracy of the geo measuring device or mechanism, measured in meters.",
+          "meta:titleId": "geo-interaction-details##xdm:deviceGeoAccuracy##title##64811",
+          "meta:descriptionId": "geo-interaction-details##xdm:deviceGeoAccuracy##description##91261"
         },
         "xdm:geoShape": {
           "title": "Geo shape",
           "$ref": "http://schema.org/GeoShape",
-          "description": "Geo shape of the geo being interacted with."
+          "description": "Geo shape of the geo being interacted with.",
+          "meta:titleId": "geo-interaction-details##xdm:geoShape##title##93251",
+          "meta:descriptionId": "geo-interaction-details##xdm:geoShape##description##68401"
         }
       }
     }
@@ -41,5 +47,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "geo-interaction-details##title##10011",
+  "meta:descriptionId": "geo-interaction-details##description##74751"
 }

@@ -21,15 +21,23 @@
             "xdm:locationID": {
               "title": "Location Identifier",
               "type": "string",
-              "description": "The local location identifier."
+              "description": "The local location identifier.",
+              "meta:titleId": "optionevent##xdm:locationID##title##70851",
+              "meta:descriptionId": "optionevent##xdm:locationID##description##51791"
             },
             "xdm:selector": {
               "title": "Selector",
               "type": "string",
-              "description": "A CSS selector in a html page."
+              "description": "A CSS selector in a html page.",
+              "meta:titleId": "optionevent##xdm:selector##title##61821",
+              "meta:descriptionId": "optionevent##xdm:selector##description##60081"
             }
           },
-          "required": ["xdm:locationID"]
+          "required": [
+            "xdm:locationID"
+          ],
+          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##title##74401",
+          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##description##34721"
         },
         "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption": {
           "title": "Activity Option",
@@ -39,20 +47,30 @@
             "xdm:optionID": {
               "title": "Option Identifier",
               "type": "string",
-              "description": "Unique activity option identifier."
+              "description": "Unique activity option identifier.",
+              "meta:titleId": "optionevent##xdm:optionID##title##17331",
+              "meta:descriptionId": "optionevent##xdm:optionID##description##72711"
             },
             "xdm:offerID": {
               "title": "Offer Identifier",
               "type": "string",
-              "description": "An offer is the content displayed on your web pages during campaigns or activities."
+              "description": "An offer is the content displayed on your web pages during campaigns or activities.",
+              "meta:titleId": "optionevent##xdm:offerID##title##97061",
+              "meta:descriptionId": "optionevent##xdm:offerID##description##55071"
             },
             "xdm:version": {
               "title": "Offer Version",
               "type": "string",
-              "description": "Version of the offer that was displayed."
+              "description": "Version of the offer that was displayed.",
+              "meta:titleId": "optionevent##xdm:version##title##83131",
+              "meta:descriptionId": "optionevent##xdm:version##description##58231"
             }
           },
-          "required": ["xdm:optionID"]
+          "required": [
+            "xdm:optionID"
+          ],
+          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##title##41011",
+          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##description##96931"
         },
         "xdm:eventScope": {
           "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope"
@@ -70,5 +88,7 @@
       "$ref": "#/definitions/optionevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "optionevent##title##67861",
+  "meta:descriptionId": "optionevent##description##74091"
 }

@@ -35,7 +35,9 @@
             "ps_load_failure": "Ps Load Lailure",
             "ig_load_success": "Ig Load Success",
             "ig_load_failure": "Ig Load Failure"
-          }
+          },
+          "meta:titleId": "ingestion##xdm:eventType##title##70921",
+          "meta:descriptionId": "ingestion##xdm:eventType##description##7951"
         },
         "xdm:status": {
           "title": "Ingestion Status",
@@ -45,33 +47,45 @@
           "meta:enum": {
             "success": "Sucess Status",
             "failure": "Failure Status"
-          }
+          },
+          "meta:titleId": "ingestion##xdm:status##title##27921",
+          "meta:descriptionId": "ingestion##xdm:status##description##55981"
         },
         "xdm:ingestionId": {
           "title": "Ingestion ID",
           "type": "string",
-          "description": "System generates Unique Identifier for a data ingestion instance."
+          "description": "System generates Unique Identifier for a data ingestion instance.",
+          "meta:titleId": "ingestion##xdm:ingestionId##title##32511",
+          "meta:descriptionId": "ingestion##xdm:ingestionId##description##11411"
         },
         "xdm:parentIngestionId": {
           "title": "Parent Ingestion ID",
           "type": "string",
-          "description": "In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages."
+          "description": "In a flow where multiple insgestion stage, each stage employs its own ingestion identifier, this value represents the parent stage that resulted in the initiation of this ingestion. This can be used to correlate ingestion processes over multiple stages.",
+          "meta:titleId": "ingestion##xdm:parentIngestionId##title##81261",
+          "meta:descriptionId": "ingestion##xdm:parentIngestionId##description##22271"
         },
         "xdm:customerIngestionId": {
           "title": "Customer Batch Identifier",
           "type": "string",
           "pattern": "^[0-9A-Za-z\\.\\-\\_/@]+$",
-          "description": "Customers can specify an externally generated identifier for this ingestion."
+          "description": "Customers can specify an externally generated identifier for this ingestion.",
+          "meta:titleId": "ingestion##xdm:customerIngestionId##title##68501",
+          "meta:descriptionId": "ingestion##xdm:customerIngestionId##description##38661"
         },
         "xdm:datasetId": {
           "title": "Dataset ID",
           "type": "string",
-          "description": "Dataset id of data ingestion."
+          "description": "Dataset id of data ingestion.",
+          "meta:titleId": "ingestion##xdm:datasetId##title##26591",
+          "meta:descriptionId": "ingestion##xdm:datasetId##description##92321"
         },
         "xdm:sandboxName": {
           "title": "Sandbox Name",
           "type": "string",
-          "description": "Name of the sandbox where data is ingested."
+          "description": "Name of the sandbox where data is ingested.",
+          "meta:titleId": "ingestion##xdm:sandboxName##title##7761",
+          "meta:descriptionId": "ingestion##xdm:sandboxName##description##41851"
         },
         "xdm:inputFormat": {
           "title": "Input File Format",
@@ -81,29 +95,36 @@
             "csv": "CSV format of the file",
             "parquet": "Parquet format of the file",
             "json": "JSON format of the file"
-          }
+          },
+          "meta:titleId": "ingestion##xdm:inputFormat##title##49581",
+          "meta:descriptionId": "ingestion##xdm:inputFormat##description##17481"
         },
         "xdm:imsOrg": {
           "description": "The owning IMS organization identifier.",
           "type": "string",
-          "pattern": "^[0-9A-Za-z]*@[Aa]dobe[Oo]rg$"
+          "pattern": "^[0-9A-Za-z]*@[Aa]dobe[Oo]rg$",
+          "meta:descriptionId": "ingestion##xdm:imsOrg##description##18761"
         },
         "xdm:startTime": {
           "type": "integer",
-          "description": "The unix timestamp (in milliseconds) when the batch processing action was started."
+          "description": "The unix timestamp (in milliseconds) when the batch processing action was started.",
+          "meta:descriptionId": "ingestion##xdm:startTime##description##54011"
         },
         "xdm:completionTime": {
           "type": "integer",
           "description": "The unix timestamp (in milliseconds) when the batch processing action was completed. Completed - Started should yield the total processing time.",
-          "maximum": 14500000000000
+          "maximum": 14500000000000,
+          "meta:descriptionId": "ingestion##xdm:completionTime##description##97691"
         },
         "xdm:succesfulRecords": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Number of records successfully ingested."
+          "description": "Number of records successfully ingested.",
+          "meta:descriptionId": "ingestion##xdm:succesfulRecords##description##99411"
         },
         "xdm:failedRecords": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Number of records failed to ingest."
+          "description": "Number of records failed to ingest.",
+          "meta:descriptionId": "ingestion##xdm:failedRecords##description##60391"
         },
         "xdm:errors": {
           "type": "array",
@@ -114,22 +135,27 @@
             "properties": {
               "xdm:code": {
                 "type": "string",
-                "description": "An enumerated code that details the type of error encountered. This value should be understandable by the reader and writer and eventually allow for localized error message (and solution) descriptions."
+                "description": "An enumerated code that details the type of error encountered. This value should be understandable by the reader and writer and eventually allow for localized error message (and solution) descriptions.",
+                "meta:descriptionId": "ingestion##xdm:code##description##67831"
               },
               "xdm:rows": {
                 "type": "array",
                 "description": "Indicates which rows exhibit this error. Could be a single number, or a hyphen-delimited range.",
                 "items": {
                   "type": "string",
-                  "description": "Row or range of rows this error was encountered on."
-                }
+                  "description": "Row or range of rows this error was encountered on.",
+                  "meta:descriptionId": "ingestion##items##description##13441"
+                },
+                "meta:descriptionId": "ingestion##xdm:rows##description##73811"
               },
               "xdm:description": {
                 "type": "string",
-                "description": "A human-readable description of the error. This message may be transmitted to clients, but isn't meant for customer-facing UIS."
+                "description": "A human-readable description of the error. This message may be transmitted to clients, but isn't meant for customer-facing UIS.",
+                "meta:descriptionId": "ingestion##xdm:description##description##44801"
               }
             }
-          }
+          },
+          "meta:descriptionId": "ingestion##xdm:errors##description##49601"
         }
       }
     }
@@ -145,5 +171,7 @@
       "$ref": "#/definitions/ingestion-notification"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "ingestion##title##49831",
+  "meta:descriptionId": "ingestion##description##83741"
 }

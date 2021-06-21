@@ -167,15 +167,20 @@
                 "WY1": "WY1",
                 "ZAF1": "ZAF1",
                 "ZAF2": "ZAF2"
-              }
+              },
+              "meta:titleId": "experienceevent-edgeregion##xdm:dataCenterLocation##title##71531"
             },
             "xdm:captureTimestamp": {
               "title": "Data Capture Timestamp",
               "type": "string",
               "format": "date-time",
-              "description": "The time when data was captured on data center node."
+              "description": "The time when data was captured on data center node.",
+              "meta:titleId": "experienceevent-edgeregion##xdm:captureTimestamp##title##58691",
+              "meta:descriptionId": "experienceevent-edgeregion##xdm:captureTimestamp##description##14871"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-edgeregion##xdm:userActivityRegion##title##14551",
+          "meta:descriptionId": "experienceevent-edgeregion##xdm:userActivityRegion##description##30721"
         }
       }
     }
@@ -187,5 +192,7 @@
     {
       "$ref": "#/definitions/experienceevent-edgeregion"
     }
-  ]
+  ],
+  "meta:titleId": "experienceevent-edgeregion##title##29361",
+  "meta:descriptionId": "experienceevent-edgeregion##description##71191"
 }

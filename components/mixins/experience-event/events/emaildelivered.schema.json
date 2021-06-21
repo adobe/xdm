@@ -28,24 +28,33 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset."
+              "description": "Unique ID of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:mailingID##title##67621",
+              "meta:descriptionId": "emaildelivered##xdm:mailingID##description##21691"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Name of the email asset."
+              "description": "Name of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:mailingName##title##91431",
+              "meta:descriptionId": "emaildelivered##xdm:mailingName##description##89251"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:testVariantID##title##62181",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantID##description##95241"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name of the test variant of the email asset."
+              "description": "Friendly name of the test variant of the email asset.",
+              "meta:titleId": "emaildelivered##xdm:testVariantName##title##75121",
+              "meta:descriptionId": "emaildelivered##xdm:testVariantName##description##49401"
             }
-          }
+          },
+          "meta:titleId": "emaildelivered##xdm:directMarketing##title##20401"
         }
       }
     }
@@ -56,5 +65,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2020-12-02"
+  "meta:createdDate": "2020-12-02",
+  "meta:titleId": "emaildelivered##title##65911",
+  "meta:descriptionId": "emaildelivered##description##30421"
 }

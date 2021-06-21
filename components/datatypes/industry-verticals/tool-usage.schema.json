@@ -17,62 +17,86 @@
         "xdm:cancelled": {
           "title": "Cancelled",
           "type": "integer",
-          "description": "Captured when a visitor cancels out of a tool usage process."
+          "description": "Captured when a visitor cancels out of a tool usage process.",
+          "meta:titleId": "tool-usage##xdm:cancelled##title##78781",
+          "meta:descriptionId": "tool-usage##xdm:cancelled##description##82841"
         },
         "xdm:complete": {
           "title": "Complete",
           "type": "integer",
-          "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app."
+          "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app.",
+          "meta:titleId": "tool-usage##xdm:complete##title##62811",
+          "meta:descriptionId": "tool-usage##xdm:complete##description##98711"
         },
         "xdm:failure": {
           "title": "Failed",
           "type": "integer",
-          "description": "Captured when a step in the tool usage process fails."
+          "description": "Captured when a step in the tool usage process fails.",
+          "meta:titleId": "tool-usage##xdm:failure##title##60221",
+          "meta:descriptionId": "tool-usage##xdm:failure##description##56731"
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
-          "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc."
+          "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc.",
+          "meta:titleId": "tool-usage##xdm:ID##title##66681",
+          "meta:descriptionId": "tool-usage##xdm:ID##description##53091"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "Tracks the name of the tool in use."
+          "description": "Tracks the name of the tool in use.",
+          "meta:titleId": "tool-usage##xdm:name##title##27691",
+          "meta:descriptionId": "tool-usage##xdm:name##description##52491"
         },
         "xdm:saved": {
           "title": "Saved",
           "type": "integer",
-          "description": "Captured when a visitor saves and exits a tool usage process."
+          "description": "Captured when a visitor saves and exits a tool usage process.",
+          "meta:titleId": "tool-usage##xdm:saved##title##28541",
+          "meta:descriptionId": "tool-usage##xdm:saved##description##93581"
         },
         "xdm:start": {
           "title": "Start",
           "type": "integer",
-          "description": "Captured when a visitor initializes using any type of tool or utility on the site/app."
+          "description": "Captured when a visitor initializes using any type of tool or utility on the site/app.",
+          "meta:titleId": "tool-usage##xdm:start##title##14551",
+          "meta:descriptionId": "tool-usage##xdm:start##description##19501"
         },
         "xdm:step": {
           "title": "Step",
           "type": "integer",
-          "description": "Captured when any intermediary tool step is started on the site/app."
+          "description": "Captured when any intermediary tool step is started on the site/app.",
+          "meta:titleId": "tool-usage##xdm:step##title##89231",
+          "meta:descriptionId": "tool-usage##xdm:step##description##45171"
         },
         "xdm:stepName": {
           "title": "Step Name",
           "type": "string",
-          "description": "Tracks the name of the tool step in use."
+          "description": "Tracks the name of the tool step in use.",
+          "meta:titleId": "tool-usage##xdm:stepName##title##18891",
+          "meta:descriptionId": "tool-usage##xdm:stepName##description##36721"
         },
         "xdm:submitted": {
           "title": "Submitted",
           "type": "integer",
-          "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event."
+          "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event.",
+          "meta:titleId": "tool-usage##xdm:submitted##title##27681",
+          "meta:descriptionId": "tool-usage##xdm:submitted##description##53691"
         },
         "xdm:transaction": {
           "title": "Transaction",
           "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-          "description": "Extension of Transaction Data Type"
+          "description": "Extension of Transaction Data Type",
+          "meta:titleId": "tool-usage##xdm:transaction##title##88831",
+          "meta:descriptionId": "tool-usage##xdm:transaction##description##941"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
-          "description": "Tracks the type or category of the tool in use."
+          "description": "Tracks the type or category of the tool in use.",
+          "meta:titleId": "tool-usage##xdm:type##title##29221",
+          "meta:descriptionId": "tool-usage##xdm:type##description##68991"
         }
       }
     }
@@ -83,5 +107,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "tool-usage##title##10041",
+  "meta:descriptionId": "tool-usage##description##23001"
 }

@@ -35,38 +35,52 @@
           "title": "End Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date on which the promotion ceases to be valid."
+          "description": "Date on which the promotion ceases to be valid.",
+          "meta:titleId": "promotion##xdm:endDate##title##47511",
+          "meta:descriptionId": "promotion##xdm:endDate##description##40671"
         },
         "xdm:promoCreative": {
           "title": "Promotion Creative",
           "type": "string",
-          "description": "The text or creative variation associated with the promotion."
+          "description": "The text or creative variation associated with the promotion.",
+          "meta:titleId": "promotion##xdm:promoCreative##title##73341",
+          "meta:descriptionId": "promotion##xdm:promoCreative##description##18391"
         },
         "xdm:promotionDetails": {
           "title": "Promotion Details",
           "type": "string",
-          "description": "Details of the promotion such as percentage off, or other restrictions."
+          "description": "Details of the promotion such as percentage off, or other restrictions.",
+          "meta:titleId": "promotion##xdm:promotionDetails##title##96761",
+          "meta:descriptionId": "promotion##xdm:promotionDetails##description##84501"
         },
         "xdm:ID": {
           "title": "Promotion ID",
           "type": "string",
-          "description": "The ID associated with the promotion."
+          "description": "The ID associated with the promotion.",
+          "meta:titleId": "promotion##xdm:ID##title##70301",
+          "meta:descriptionId": "promotion##xdm:ID##description##74741"
         },
         "xdm:promoName": {
           "title": "Promotion Name",
           "type": "string",
-          "description": "Promotion name"
+          "description": "Promotion name",
+          "meta:titleId": "promotion##xdm:promoName##title##62591",
+          "meta:descriptionId": "promotion##xdm:promoName##description##2701"
         },
         "xdm:promoPosition": {
           "title": "Promotion Position",
           "type": "string",
-          "description": "Promotion position on site."
+          "description": "Promotion position on site.",
+          "meta:titleId": "promotion##xdm:promoPosition##title##47461",
+          "meta:descriptionId": "promotion##xdm:promoPosition##description##34631"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date on which the promotion is valid."
+          "description": "Date on which the promotion is valid.",
+          "meta:titleId": "promotion##xdm:startDate##title##27821",
+          "meta:descriptionId": "promotion##xdm:startDate##description##78251"
         }
       }
     }
@@ -80,5 +94,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-24"
+  "meta:createdDate": "2021-02-24",
+  "meta:titleId": "promotion##title##97531",
+  "meta:descriptionId": "promotion##description##12731"
 }

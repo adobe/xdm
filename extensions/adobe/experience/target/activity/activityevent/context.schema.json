@@ -16,27 +16,38 @@
         "xdm:experienceID": {
           "title": "Experience Identifier",
           "type": "string",
-          "description": "Experience identifier denoting selected experience."
+          "description": "Experience identifier denoting selected experience.",
+          "meta:titleId": "context##xdm:experienceID##title##19351",
+          "meta:descriptionId": "context##xdm:experienceID##description##62331"
         },
         "xdm:algorithmID": {
           "title": "Algorithm Identifier",
           "type": "string",
-          "description": "Algorithm identifier denoting used algorithm to select the experience."
+          "description": "Algorithm identifier denoting used algorithm to select the experience.",
+          "meta:titleId": "context##xdm:algorithmID##title##20111",
+          "meta:descriptionId": "context##xdm:algorithmID##description##95351"
         },
         "xdm:trafficType": {
           "title": "Traffic Type",
           "type": "string",
           "description": "Denotes traffic type.",
-          "enum": ["testing", "targeted"],
+          "enum": [
+            "testing",
+            "targeted"
+          ],
           "meta:enum": {
             "testing": "Testing Traffic",
             "targeted": "Targeted Traffic"
-          }
+          },
+          "meta:titleId": "context##xdm:trafficType##title##4391",
+          "meta:descriptionId": "context##xdm:trafficType##description##81711"
         },
         "xdm:stepID": {
           "title": "Step Identifier",
           "type": "string",
-          "description": "Denotes the identifier of the visited activity step."
+          "description": "Denotes the identifier of the visited activity step.",
+          "meta:titleId": "context##xdm:stepID##title##48931",
+          "meta:descriptionId": "context##xdm:stepID##description##18581"
         }
       },
       "required": [
@@ -52,5 +63,7 @@
       "$ref": "#/definitions/activityeventcontext"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "context##title##13871",
+  "meta:descriptionId": "context##description##18051"
 }

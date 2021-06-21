@@ -19,13 +19,17 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the time-series event."
+          "description": "A unique identifier for the time-series event.",
+          "meta:titleId": "time-series##@id##title##75911",
+          "meta:descriptionId": "time-series##@id##description##35101"
         },
         "xdm:timestamp": {
           "title": "Timestamp",
           "type": "string",
           "format": "date-time",
-          "description": "The time when an event or observation occurred."
+          "description": "The time when an event or observation occurred.",
+          "meta:titleId": "time-series##xdm:timestamp##title##83581",
+          "meta:descriptionId": "time-series##xdm:timestamp##description##88791"
         },
         "xdm:eventType": {
           "title": "Event Type",
@@ -75,7 +79,9 @@
             "opportunityEvent.removeFromOpportunity": "Opportunity Event Remove From Opportunity",
             "opportunityEvent.addToOpportunity": "Opportunity Event Add To Opportunity",
             "opportunityEvent.opportunityUpdated": "Opportunity Event Opportunity Updated"
-          }
+          },
+          "meta:titleId": "time-series##xdm:eventType##title##8581",
+          "meta:descriptionId": "time-series##xdm:eventType##description##40971"
         }
       }
     }
@@ -89,5 +95,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "time-series##title##24681",
+  "meta:descriptionId": "time-series##description##49711"
 }

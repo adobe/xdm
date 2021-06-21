@@ -33,12 +33,16 @@
             "xdm:autoPayEnrollment": {
               "title": "Autopay Enrollment",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##title##96161",
+              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##description##72291"
             },
             "xdm:autoPayEnrollmentStatus": {
               "title": "Autopay Status",
               "type": "boolean",
-              "description": "Tracks the visitor's autopay enrollment status."
+              "description": "Tracks the visitor's autopay enrollment status.",
+              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##title##47811",
+              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##description##60891"
             }
           }
         }
@@ -51,5 +55,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-autopay-enrollment-details##title##89491",
+  "meta:descriptionId": "experienceevent-autopay-enrollment-details##description##39191"
 }

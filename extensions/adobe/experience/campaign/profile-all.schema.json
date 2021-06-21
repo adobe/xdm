@@ -24,9 +24,13 @@
             "xdm:emailScore": {
               "title": "Journey AI scores for Email Channel",
               "$ref": "https://ns.adobe.com/experience/campaign/journeyaiscores",
-              "description": "Journey AI open, click and fatigue scores for email channel."
+              "description": "Journey AI open, click and fatigue scores for email channel.",
+              "meta:titleId": "profile-all##xdm:emailScore##title##56061",
+              "meta:descriptionId": "profile-all##xdm:emailScore##description##73361"
             }
-          }
+          },
+          "meta:titleId": "profile-all##xdm:journeyAI##title##54521",
+          "meta:descriptionId": "profile-all##xdm:journeyAI##description##1721"
         },
         "xdm:notificationSubscriptions": {
           "title": "Adobe Campaign Notification Subscriptions",
@@ -34,7 +38,9 @@
           "description": "Adobe Campaign notification subscriptions are used to communicate with endusers that have enrolled for specific notifications.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/campaign/notificationsubscription"
-          }
+          },
+          "meta:titleId": "profile-all##xdm:notificationSubscriptions##title##53341",
+          "meta:descriptionId": "profile-all##xdm:notificationSubscriptions##description##46241"
         }
       }
     }
@@ -44,5 +50,7 @@
       "$ref": "#/definitions/profile"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-all##title##95131",
+  "meta:descriptionId": "profile-all##description##72451"
 }

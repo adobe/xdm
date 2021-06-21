@@ -21,12 +21,16 @@
           "type": "string",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
           "examples": ["en-GB", "de-DE", "yue-HK"],
-          "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format."
+          "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
+          "meta:titleId": "profile-preferences-details##xdm:preferredLanguage##title##80981",
+          "meta:descriptionId": "profile-preferences-details##xdm:preferredLanguage##description##42481"
         },
         "xdm:profilePictureLink": {
           "title": "Profile picture link",
           "type": "string",
-          "description": "Link to profile's picture."
+          "description": "Link to profile's picture.",
+          "meta:titleId": "profile-preferences-details##xdm:profilePictureLink##title##24831",
+          "meta:descriptionId": "profile-preferences-details##xdm:profilePictureLink##description##74181"
         },
         "xdm:emailFormat": {
           "title": "Email format",
@@ -35,19 +39,25 @@
           "meta:enum": {
             "html": "Rich text",
             "plaintext": "Plain text"
-          }
+          },
+          "meta:titleId": "profile-preferences-details##xdm:emailFormat##title##73921",
+          "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##3121"
         },
         "xdm:timeZone": {
           "title": "Time zone",
           "type": "string",
           "examples": ["America/Barbados", "Antarctica/Davis", "Asia/Calcutta"],
-          "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm"
+          "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
+          "meta:titleId": "profile-preferences-details##xdm:timeZone##title##31631",
+          "meta:descriptionId": "profile-preferences-details##xdm:timeZone##description##4891"
         },
         "xdm:optInOut": {
           "title": "OptInOut",
           "$ref": "https://ns.adobe.com/xdm/context/optinout",
           "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
-          "meta:status": "deprecated"
+          "meta:status": "deprecated",
+          "meta:titleId": "profile-preferences-details##xdm:optInOut##title##23681",
+          "meta:descriptionId": "profile-preferences-details##xdm:optInOut##description##60721"
         }
       }
     }
@@ -61,5 +71,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-preferences-details##title##26251",
+  "meta:descriptionId": "profile-preferences-details##description##91361"
 }

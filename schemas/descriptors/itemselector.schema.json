@@ -22,7 +22,9 @@
               "title": "Index",
               "type": "integer",
               "description": "When present, indicates the item at this array index should be selected.",
-              "minimum": 0
+              "minimum": 0,
+              "meta:titleId": "itemselector##xdm:index##title##26071",
+              "meta:descriptionId": "itemselector##xdm:index##description##26701"
             }
           },
           "required": ["xdm:index"]
@@ -34,7 +36,9 @@
               "title": "ID",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @id value should be selected."
+              "description": "When present, indicates the item with this @id value should be selected.",
+              "meta:titleId": "itemselector##xdm:id##title##37491",
+              "meta:descriptionId": "itemselector##xdm:id##description##92571"
             }
           },
           "required": ["xdm:id"]
@@ -46,7 +50,9 @@
               "title": "Type",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item with this @type value should be selected."
+              "description": "When present, indicates the item with this @type value should be selected.",
+              "meta:titleId": "itemselector##xdm:type##title##66351",
+              "meta:descriptionId": "itemselector##xdm:type##description##62731"
             }
           },
           "required": ["xdm:type"]
@@ -58,7 +64,9 @@
               "title": "Schema",
               "type": "string",
               "format": "uri",
-              "description": "When present, indicates the item which conforms to this schema URI should be selected."
+              "description": "When present, indicates the item which conforms to this schema URI should be selected.",
+              "meta:titleId": "itemselector##xdm:schema##title##89991",
+              "meta:descriptionId": "itemselector##xdm:schema##description##94191"
             }
           },
           "required": ["xdm:schema"]
@@ -72,5 +80,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "itemselector##title##85761",
+  "meta:descriptionId": "itemselector##description##43261"
 }

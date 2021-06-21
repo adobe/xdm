@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
   "definitions": {
     "searchadvertising-portfolio": {
@@ -20,7 +22,9 @@
         "xdm:portfolioName": {
           "title": "Portfolio Name",
           "type": "string",
-          "description": "Name of the Portfolio."
+          "description": "Name of the Portfolio.",
+          "meta:titleId": "portfolio##xdm:portfolioName##title##27451",
+          "meta:descriptionId": "portfolio##xdm:portfolioName##description##53391"
         },
         "xdm:billingState": {
           "title": "Portfolio Billing State",
@@ -29,17 +33,23 @@
           "meta:enum": {
             "Managed": "Client will be billed for the spend from this portfolio",
             "Not Managed": "Client will not be billed for the spend from this portfolio"
-          }
+          },
+          "meta:titleId": "portfolio##xdm:billingState##title##53451",
+          "meta:descriptionId": "portfolio##xdm:billingState##description##73021"
         },
         "xdm:portfolioGroupId": {
           "title": "Portfolio Group Identifier",
           "type": "string",
-          "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group."
+          "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
+          "meta:titleId": "portfolio##xdm:portfolioGroupId##title##49901",
+          "meta:descriptionId": "portfolio##xdm:portfolioGroupId##description##7231"
         },
         "xdm:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
-          "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group."
+          "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
+          "meta:titleId": "portfolio##xdm:portfolioGroupName##title##12281",
+          "meta:descriptionId": "portfolio##xdm:portfolioGroupName##description##12221"
         }
       }
     }
@@ -55,5 +65,7 @@
       "$ref": "#/definitions/searchadvertising-portfolio"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "portfolio##title##29391",
+  "meta:descriptionId": "portfolio##description##96381"
 }

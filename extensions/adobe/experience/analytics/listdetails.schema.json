@@ -19,12 +19,16 @@
           "items": {
             "type": "string"
           },
-          "description": "List of values."
+          "description": "List of values.",
+          "meta:titleId": "listdetails##xdm:values##title##5161",
+          "meta:descriptionId": "listdetails##xdm:values##description##86761"
         },
         "xdm:delimiter": {
           "title": "Original List Delimiter",
           "type": "string",
-          "description": "The original delimiter used to generate the list."
+          "description": "The original delimiter used to generate the list.",
+          "meta:titleId": "listdetails##xdm:delimiter##title##61991",
+          "meta:descriptionId": "listdetails##xdm:delimiter##description##48731"
         }
       }
     }
@@ -34,5 +38,7 @@
       "$ref": "#/definitions/listdetails"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "listdetails##title##25181",
+  "meta:descriptionId": "listdetails##description##58961"
 }

@@ -18,31 +18,41 @@
           "title": "Coordinates ID",
           "type": "string",
           "format": "uri-reference",
-          "description": "The unique identifier of the coordinates."
+          "description": "The unique identifier of the coordinates.",
+          "meta:titleId": "GeoCoordinates##@id##title##82741",
+          "meta:descriptionId": "GeoCoordinates##@id##description##33821"
         },
         "schema:description": {
           "title": "Description",
           "type": "string",
-          "description": "A description of what the coordinates identify."
+          "description": "A description of what the coordinates identify.",
+          "meta:titleId": "GeoCoordinates##schema:description##title##56871",
+          "meta:descriptionId": "GeoCoordinates##schema:description##description##87081"
         },
         "schema:latitude": {
           "title": "Latitude",
           "type": "number",
           "minimum": -90,
           "maximum": 90,
-          "description": "The signed vertical coordinate of a geographic point."
+          "description": "The signed vertical coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:latitude##title##49141",
+          "meta:descriptionId": "GeoCoordinates##schema:latitude##description##1091"
         },
         "schema:longitude": {
           "title": "Longitude",
           "type": "number",
           "minimum": -180,
           "maximum": 180,
-          "description": "The signed horizontal coordinate of a geographic point."
+          "description": "The signed horizontal coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:longitude##title##98221",
+          "meta:descriptionId": "GeoCoordinates##schema:longitude##description##97981"
         },
         "schema:elevation": {
           "title": "Elevation",
           "type": "number",
-          "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
+          "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+          "meta:titleId": "GeoCoordinates##schema:elevation##title##35691",
+          "meta:descriptionId": "GeoCoordinates##schema:elevation##description##48841"
         }
       }
     }
@@ -53,5 +63,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "GeoCoordinates##title##23961",
+  "meta:descriptionId": "GeoCoordinates##description##56281"
 }

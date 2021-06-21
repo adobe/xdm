@@ -22,28 +22,38 @@
         "xdm:segmentIdentity": {
           "title": "Segment identity",
           "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
-          "description": "Identity of the segment."
+          "description": "Identity of the segment.",
+          "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##23841",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##45981"
         },
         "xdm:segmentName": {
           "title": "Segment name",
           "type": "string",
-          "description": "Name of the segment."
+          "description": "Name of the segment.",
+          "meta:titleId": "segmentdefinition##xdm:segmentName##title##5261",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##88061"
         },
         "xdm:description": {
           "title": "Segment description",
           "type": "string",
-          "description": "Description of the segment."
+          "description": "Description of the segment.",
+          "meta:titleId": "segmentdefinition##xdm:description##title##64291",
+          "meta:descriptionId": "segmentdefinition##xdm:description##description##39901"
         },
         "xdm:version": {
           "title": "Segment version",
           "type": "string",
-          "description": "Version of the segment."
+          "description": "Version of the segment.",
+          "meta:titleId": "segmentdefinition##xdm:version##title##52191",
+          "meta:descriptionId": "segmentdefinition##xdm:version##description##69621"
         },
         "xdm:segmentStatus": {
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
-          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"]
+          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
+          "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##52251",
+          "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##41821"
         }
       }
     }
@@ -67,5 +77,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "segmentdefinition##title##51381",
+  "meta:descriptionId": "segmentdefinition##description##10661"
 }

@@ -26,18 +26,24 @@
             "open": "Message opened.",
             "unsubscribe": "Unsubscribed from messages.",
             "spam_complaint": "Message is marked as spam by the user."
-          }
+          },
+          "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##97731",
+          "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##8611"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {
           "title": "Tracker URL ID",
           "type": "string",
-          "description": "Unique Identifier of the URL clicked by the user."
+          "description": "Unique Identifier of the URL clicked by the user.",
+          "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##title##60681",
+          "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##description##41951"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType": {
           "title": "URL Tracking Type",
           "type": "string",
           "description": "The tracking type of the URL. It may be `subscription`, or a user-defined category.",
-          "meta:enum": {}
+          "meta:enum": {},
+          "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##title##92911",
+          "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##description##87611"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": {
           "title": "Link Tags",
@@ -45,12 +51,16 @@
           "description": "The tags present on this link.",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags##title##10121",
+          "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags##description##24361"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
           "title": "Tracker URL Label",
           "type": "string",
-          "description": "Human-Friendly label"
+          "description": "Human-Friendly label",
+          "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##title##42071",
+          "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##description##38201"
         }
       }
     }
@@ -63,5 +73,7 @@
       "$ref": "#/definitions/messageInteraction"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "message-interaction##title##32791",
+  "meta:descriptionId": "message-interaction##description##94051"
 }

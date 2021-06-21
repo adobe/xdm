@@ -12,7 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
   "definitions": {
     "searchadvertising-account": {
@@ -20,34 +22,51 @@
         "xdm:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "account##xdm:accountId##title##89351",
+          "meta:descriptionId": "account##xdm:accountId##description##64071"
         },
         "xdm:accountName": {
           "title": "Account Name",
           "type": "string",
-          "description": "Name of the Account."
+          "description": "Name of the Account.",
+          "meta:titleId": "account##xdm:accountName##title##10881",
+          "meta:descriptionId": "account##xdm:accountName##description##42491"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": ["USD", "EUR", "JPY"],
+          "examples": [
+            "USD",
+            "EUR",
+            "JPY"
+          ],
           "pattern": "^[A-Z]{3}$",
-          "description": "Currency in which this account operates."
+          "description": "Currency in which this account operates.",
+          "meta:titleId": "account##xdm:currencyCode##title##38561",
+          "meta:descriptionId": "account##xdm:currencyCode##description##12021"
         },
         "xdm:accountStatus": {
           "title": "Account Status",
           "type": "string",
           "description": "Managed Flag indicates whether account is enabled or disabled on search networks.",
-          "enum": ["Enabled", "Disabled"],
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
           "meta:enum": {
             "Enabled": "Enabled",
             "Disabled": "Disabled"
-          }
+          },
+          "meta:titleId": "account##xdm:accountStatus##title##99771",
+          "meta:descriptionId": "account##xdm:accountStatus##description##43091"
         },
         "xdm:budget": {
           "title": "Budget",
           "type": "number",
-          "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns."
+          "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns.",
+          "meta:titleId": "account##xdm:budget##title##36061",
+          "meta:descriptionId": "account##xdm:budget##description##18841"
         },
         "xdm:budgetType": {
           "title": "Budget Type",
@@ -66,12 +85,16 @@
             "Lifetime": "Lifetime",
             "Daily Spend Until Depleted": "Daily spend until depleted",
             "Day of Week": "Day of Week"
-          }
+          },
+          "meta:titleId": "account##xdm:budgetType##title##881",
+          "meta:descriptionId": "account##xdm:budgetType##description##91761"
         },
         "xdm:searchEngineId": {
           "title": "Search Engine Identifier",
           "type": "integer",
-          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name."
+          "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "account##xdm:searchEngineId##title##3381",
+          "meta:descriptionId": "account##xdm:searchEngineId##description##24271"
         }
       }
     }
@@ -87,5 +110,7 @@
       "$ref": "#/definitions/searchadvertising-account"
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "account##title##30271",
+  "meta:descriptionId": "account##description##20771"
 }

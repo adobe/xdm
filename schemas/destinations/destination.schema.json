@@ -19,33 +19,45 @@
         "xdm:destinationID": {
           "title": "Destination ID",
           "type": "string",
-          "description": "Unique Identifier for a destination instance"
+          "description": "Unique Identifier for a destination instance",
+          "meta:titleId": "destination##xdm:destinationID##title##33891",
+          "meta:descriptionId": "destination##xdm:destinationID##description##19561"
         },
         "xdm:destinationName": {
           "title": "Destination Name",
           "type": "string",
-          "description": "Destination flow name"
+          "description": "Destination flow name",
+          "meta:titleId": "destination##xdm:destinationName##title##51251",
+          "meta:descriptionId": "destination##xdm:destinationName##description##45091"
         },
         "xdm:destinationPlatform": {
           "title": "Destination Platform",
           "type": "string",
-          "description": "The destination platform selected for activation flow."
+          "description": "The destination platform selected for activation flow.",
+          "meta:titleId": "destination##xdm:destinationPlatform##title##40801",
+          "meta:descriptionId": "destination##xdm:destinationPlatform##description##72981"
         },
         "xdm:createTime": {
           "title": "Create Time",
           "type": "string",
           "format": "date-time",
-          "description": "The date and UTC time when the activation flow to the destination was createdByID"
+          "description": "The date and UTC time when the activation flow to the destination was createdByID",
+          "meta:titleId": "destination##xdm:createTime##title##6761",
+          "meta:descriptionId": "destination##xdm:createTime##description##19801"
         },
         "xdm:createdByID": {
           "title": "Created User ID",
           "type": "string",
-          "description": "ID of user who created the destination flow"
+          "description": "ID of user who created the destination flow",
+          "meta:titleId": "destination##xdm:createdByID##title##34151",
+          "meta:descriptionId": "destination##xdm:createdByID##description##79591"
         },
         "xdm:destinationDescription": {
           "title": "Destination Description",
           "type": "string",
-          "description": "Destination flow description"
+          "description": "Destination flow description",
+          "meta:titleId": "destination##xdm:destinationDescription##title##28361",
+          "meta:descriptionId": "destination##xdm:destinationDescription##description##92071"
         },
         "xdm:destinationStatus": {
           "title": "Destination Status",
@@ -54,12 +66,16 @@
           "meta:enum": {
             "enabled": "Enabled and ready to use",
             "disabled": "Disabled and cannot be used"
-          }
+          },
+          "meta:titleId": "destination##xdm:destinationStatus##title##89271",
+          "meta:descriptionId": "destination##xdm:destinationStatus##description##8461"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
-          "description": "Destination flow version"
+          "description": "Destination flow version",
+          "meta:titleId": "destination##xdm:version##title##65331",
+          "meta:descriptionId": "destination##xdm:version##description##68141"
         }
       }
     }
@@ -75,5 +91,7 @@
       "$ref": "#/definitions/destination"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "destination##title##21261",
+  "meta:descriptionId": "destination##description##22781"
 }

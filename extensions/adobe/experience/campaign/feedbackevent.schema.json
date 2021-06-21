@@ -18,12 +18,16 @@
         "https://ns.adobe.com/experience/campaign/feedback/type": {
           "title": "Feedback Type",
           "type": "string",
-          "description": "The type of message event."
+          "description": "The type of message event.",
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/type##title##95881",
+          "meta:descriptionId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/type##description##36801"
         },
         "xdm:retryCount": {
           "title": "Retry Count",
           "type": "integer",
-          "description": "Number of failed attempts before the current event."
+          "description": "Number of failed attempts before the current event.",
+          "meta:titleId": "feedbackevent##xdm:retryCount##title##32731",
+          "meta:descriptionId": "feedbackevent##xdm:retryCount##description##53111"
         },
         "https://ns.adobe.com/experience/campaign/feedback/delivery": {
           "title": "The campaign activity originating a message to a recipient.",
@@ -32,34 +36,47 @@
             "xdm:id": {
               "title": "Delivery ID",
               "type": "string",
-              "description": "The campaign activity originating this message."
+              "description": "The campaign activity originating this message.",
+              "meta:titleId": "feedbackevent##xdm:id##title##56041",
+              "meta:descriptionId": "feedbackevent##xdm:id##description##70281"
             },
             "xdm:campaignId": {
               "title": "Campaign Id",
               "type": "string",
-              "description": "Campaign of which this delivery was a part."
+              "description": "Campaign of which this delivery was a part.",
+              "meta:titleId": "feedbackevent##xdm:campaignId##title##41151",
+              "meta:descriptionId": "feedbackevent##xdm:campaignId##description##15361"
             },
             "xdm:from": {
               "title": "From",
               "type": "string",
-              "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+              "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+              "meta:titleId": "feedbackevent##xdm:from##title##98411",
+              "meta:descriptionId": "feedbackevent##xdm:from##description##79061"
             },
             "xdm:type": {
               "title": "Delivery Type",
               "type": "string",
-              "description": "Mode of delivery for the messages sent."
+              "description": "Mode of delivery for the messages sent.",
+              "meta:titleId": "feedbackevent##xdm:type##title##48881",
+              "meta:descriptionId": "feedbackevent##xdm:type##description##77991"
             },
             "xdm:label": {
               "title": "Delivery Label",
               "type": "string",
-              "description": "A human-friendly name of the campaign activity which is originating this message."
+              "description": "A human-friendly name of the campaign activity which is originating this message.",
+              "meta:titleId": "feedbackevent##xdm:label##title##24881",
+              "meta:descriptionId": "feedbackevent##xdm:label##description##24041"
             },
             "xdm:name": {
               "title": "Delivery Internal Name",
               "type": "string",
-              "description": "A human-friendly identifier of the campaign activity which is originating this message."
+              "description": "A human-friendly identifier of the campaign activity which is originating this message.",
+              "meta:titleId": "feedbackevent##xdm:name##title##76151",
+              "meta:descriptionId": "feedbackevent##xdm:name##description##45501"
             }
-          }
+          },
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/delivery##title##81531"
         },
         "https://ns.adobe.com/experience/campaign/feedback/message": {
           "title": "A single message sent to a recipient.",
@@ -68,17 +85,23 @@
             "xdm:id": {
               "title": "Message Identifier",
               "type": "string",
-              "description": "Identifier of the message."
+              "description": "Identifier of the message.",
+              "meta:titleId": "feedbackevent##xdm:id##title##91791",
+              "meta:descriptionId": "feedbackevent##xdm:id##description##30301"
             },
             "subject": {
               "title": "Message Subject",
               "type": "string",
-              "description": "Subject line of the message."
+              "description": "Subject line of the message.",
+              "meta:titleId": "feedbackevent##subject##title##74221",
+              "meta:descriptionId": "feedbackevent##subject##description##17421"
             },
             "size": {
               "title": "Message Size",
               "type": "integer",
-              "description": "Size in bytes of the message."
+              "description": "Size in bytes of the message.",
+              "meta:titleId": "feedbackevent##size##title##3761",
+              "meta:descriptionId": "feedbackevent##size##description##1521"
             },
             "recipient": {
               "title": "The recipient of this message",
@@ -87,16 +110,22 @@
                 "xdm:to": {
                   "title": "To",
                   "type": "string",
-                  "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+                  "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+                  "meta:titleId": "feedbackevent##xdm:to##title##63141",
+                  "meta:descriptionId": "feedbackevent##xdm:to##description##68221"
                 },
                 "xdm:type": {
                   "title": "Type",
                   "type": "string",
-                  "description": "Whether this message message event describes the BCC, CC or To recipient."
+                  "description": "Whether this message message event describes the BCC, CC or To recipient.",
+                  "meta:titleId": "feedbackevent##xdm:type##title##26951",
+                  "meta:descriptionId": "feedbackevent##xdm:type##description##45121"
                 }
-              }
+              },
+              "meta:titleId": "feedbackevent##recipient##title##90121"
             }
-          }
+          },
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/message##title##65451"
         },
         "https://ns.adobe.com/experience/campaign/feedback/messageFailure": {
           "title": "Message Failure",
@@ -105,29 +134,40 @@
             "xdm:canonicalReason": {
               "title": "Canonical Reason",
               "type": "string",
-              "description": "Canonicalized text of the response returned by the remote server due to a failed delivery attempt."
+              "description": "Canonicalized text of the response returned by the remote server due to a failed delivery attempt.",
+              "meta:titleId": "feedbackevent##xdm:canonicalReason##title##56701",
+              "meta:descriptionId": "feedbackevent##xdm:canonicalReason##description##26021"
             },
             "xdm:reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Unmodified, exact response returned by the remote server due to a failed delivery attempt."
+              "description": "Unmodified, exact response returned by the remote server due to a failed delivery attempt.",
+              "meta:titleId": "feedbackevent##xdm:reason##title##73771",
+              "meta:descriptionId": "feedbackevent##xdm:reason##description##7711"
             },
             "xdm:errorCode": {
               "title": "Error Code",
               "type": "string",
-              "description": "Error code by which the remote server described a failed delivery attempt."
+              "description": "Error code by which the remote server described a failed delivery attempt.",
+              "meta:titleId": "feedbackevent##xdm:errorCode##title##72181",
+              "meta:descriptionId": "feedbackevent##xdm:errorCode##description##81741"
             },
             "xdm:bounceType": {
               "title": "Bounce Type",
               "type": "string",
-              "description": "Classifies whether it is a soft bounce or hard bounce."
+              "description": "Classifies whether it is a soft bounce or hard bounce.",
+              "meta:titleId": "feedbackevent##xdm:bounceType##title##76691",
+              "meta:descriptionId": "feedbackevent##xdm:bounceType##description##7241"
             },
             "xdm:bounceClass": {
               "title": "Bounce Class",
               "type": "string",
-              "description": "Classification code for a given message."
+              "description": "Classification code for a given message.",
+              "meta:titleId": "feedbackevent##xdm:bounceClass##title##96221",
+              "meta:descriptionId": "feedbackevent##xdm:bounceClass##description##60821"
             }
-          }
+          },
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/messageFailure##title##98861"
         },
         "https://ns.adobe.com/experience/campaign/feedback/solutionContext": {
           "title": "Solution Context",
@@ -135,7 +175,9 @@
           "description": "List of solution specific key value pairs.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
-          }
+          },
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/solutionContext##title##75651",
+          "meta:descriptionId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/solutionContext##description##42741"
         },
         "https://ns.adobe.com/experience/campaign/feedback/channel": {
           "title": "Delivery channel",
@@ -144,7 +186,9 @@
             "xdm:type": {
               "title": "Channel Type",
               "type": "string",
-              "description": "Classifies whether the channel is email, push, sms."
+              "description": "Classifies whether the channel is email, push, sms.",
+              "meta:titleId": "feedbackevent##xdm:type##title##80321",
+              "meta:descriptionId": "feedbackevent##xdm:type##description##4331"
             },
             "email": {
               "title": "E-mail Channel",
@@ -157,24 +201,33 @@
                     "xdm:spamType": {
                       "title": "Spam Type",
                       "type": "string",
-                      "description": "Type of spam report entered against this message (see RFC 5965 § 7.3)."
+                      "description": "Type of spam report entered against this message (see RFC 5965 § 7.3).",
+                      "meta:titleId": "feedbackevent##xdm:spamType##title##80411",
+                      "meta:descriptionId": "feedbackevent##xdm:spamType##description##93461"
                     },
                     "xdm:reportedBy": {
                       "title": "Reported By",
                       "type": "string",
-                      "description": "E-mail Address of the entity reporting this message as spam."
+                      "description": "E-mail Address of the entity reporting this message as spam.",
+                      "meta:titleId": "feedbackevent##xdm:reportedBy##title##64301",
+                      "meta:descriptionId": "feedbackevent##xdm:reportedBy##description##80541"
                     },
                     "xdm:reportTo": {
                       "title": "Report To",
                       "type": "string",
-                      "description": "E-mail Address to which this spam report is to be delivered."
+                      "description": "E-mail Address to which this spam report is to be delivered.",
+                      "meta:titleId": "feedbackevent##xdm:reportTo##title##58801",
+                      "meta:descriptionId": "feedbackevent##xdm:reportTo##description##78421"
                     },
                     "xdm:userAgent": {
                       "title": "User Agent",
                       "type": "string",
-                      "description": "Value of the browser's User-Agent header."
+                      "description": "Value of the browser's User-Agent header.",
+                      "meta:titleId": "feedbackevent##xdm:userAgent##title##74661",
+                      "meta:descriptionId": "feedbackevent##xdm:userAgent##description##11131"
                     }
-                  }
+                  },
+                  "meta:titleId": "feedbackevent##interactions##title##62001"
                 },
                 "operationalContext": {
                   "title": "Operational Context",
@@ -183,12 +236,16 @@
                     "xdm:outboundIP": {
                       "title": "IP Address",
                       "type": "string",
-                      "description": "Outbound IP address of the customer used to deliver the message."
+                      "description": "Outbound IP address of the customer used to deliver the message.",
+                      "meta:titleId": "feedbackevent##xdm:outboundIP##title##54181",
+                      "meta:descriptionId": "feedbackevent##xdm:outboundIP##description##57431"
                     },
                     "xdm:sendProtocol": {
                       "title": "Send Protocol",
                       "type": "string",
-                      "description": "Protocol by which the message is delivered."
+                      "description": "Protocol by which the message is delivered.",
+                      "meta:titleId": "feedbackevent##xdm:sendProtocol##title##9341",
+                      "meta:descriptionId": "feedbackevent##xdm:sendProtocol##description##19801"
                     },
                     "xdm:remoteIp": {
                       "title": "IP Address",
@@ -201,12 +258,16 @@
                           "format": "ipv6"
                         }
                       ],
-                      "description": "IP address of the host to which this message is delivered."
+                      "description": "IP address of the host to which this message is delivered.",
+                      "meta:titleId": "feedbackevent##xdm:remoteIp##title##21721",
+                      "meta:descriptionId": "feedbackevent##xdm:remoteIp##description##95171"
                     },
                     "xdm:mtaHost": {
                       "title": "Node Name",
                       "type": "string",
-                      "description": "Name of the MTA Instance originating the events."
+                      "description": "Name of the MTA Instance originating the events.",
+                      "meta:titleId": "feedbackevent##xdm:mtaHost##title##95811",
+                      "meta:descriptionId": "feedbackevent##xdm:mtaHost##description##28741"
                     },
                     "xdm:mtaIp": {
                       "title": "Sending IP Address",
@@ -219,18 +280,25 @@
                           "format": "ipv6"
                         }
                       ],
-                      "description": "IP address through which this message was sent."
+                      "description": "IP address through which this message was sent.",
+                      "meta:titleId": "feedbackevent##xdm:mtaIp##title##34371",
+                      "meta:descriptionId": "feedbackevent##xdm:mtaIp##description##85331"
                     },
                     "xdm:queueTime": {
                       "title": "Queue time",
                       "type": "number",
-                      "description": "Delay, expressed in milliseconds, between this message's injection into SparkPost and its delivery to the receiving domain; that is, the length of time this message spent in the outgoing queue."
+                      "description": "Delay, expressed in milliseconds, between this message's injection into SparkPost and its delivery to the receiving domain; that is, the length of time this message spent in the outgoing queue.",
+                      "meta:titleId": "feedbackevent##xdm:queueTime##title##3471",
+                      "meta:descriptionId": "feedbackevent##xdm:queueTime##description##92501"
                     }
-                  }
+                  },
+                  "meta:titleId": "feedbackevent##operationalContext##title##53881"
                 }
-              }
+              },
+              "meta:titleId": "feedbackevent##email##title##67781"
             }
-          }
+          },
+          "meta:titleId": "feedbackevent##https://ns.adobe.com/experience/campaign/feedback/channel##title##34321"
         }
       }
     }
@@ -240,5 +308,7 @@
       "$ref": "#/definitions/feedbackevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "feedbackevent##title##32881",
+  "meta:descriptionId": "feedbackevent##description##37501"
 }

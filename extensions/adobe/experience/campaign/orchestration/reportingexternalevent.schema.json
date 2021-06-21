@@ -19,7 +19,9 @@
           "description": "The type for the external event received",
           "meta:enum": {
             "http": "The external event recieved on http endpoint"
-          }
+          },
+          "meta:titleId": "reportingexternalevent##xdm:eventType##title##11531",
+          "meta:descriptionId": "reportingexternalevent##xdm:eventType##description##13071"
         }
       }
     }
@@ -29,5 +31,7 @@
       "$ref": "#/definitions/reportingexternalevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "reportingexternalevent##title##54141",
+  "meta:descriptionId": "reportingexternalevent##description##99991"
 }

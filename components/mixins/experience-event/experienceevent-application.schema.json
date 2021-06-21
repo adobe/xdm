@@ -19,7 +19,9 @@
         "xdm:application": {
           "title": "Application",
           "$ref": "https://ns.adobe.com/xdm/context/application",
-          "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login."
+          "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+          "meta:titleId": "experienceevent-application##xdm:application##title##83631",
+          "meta:descriptionId": "experienceevent-application##xdm:application##description##66361"
         }
       }
     }
@@ -33,5 +35,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-application##title##63331",
+  "meta:descriptionId": "experienceevent-application##description##49111"
 }

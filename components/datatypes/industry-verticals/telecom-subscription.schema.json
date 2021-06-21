@@ -17,116 +17,160 @@
         "ID": {
           "title": "Identifier",
           "type": "string",
-          "description": "Unique identifier for the subscription instance."
+          "description": "Unique identifier for the subscription instance.",
+          "meta:titleId": "telecom-subscription##ID##title##95661",
+          "meta:descriptionId": "telecom-subscription##ID##description##7971"
         },
         "xdm:subscriber": {
           "title": "Subscriber",
           "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "The owner of the subscription."
+          "description": "The owner of the subscription.",
+          "meta:titleId": "telecom-subscription##xdm:subscriber##title##99071",
+          "meta:descriptionId": "telecom-subscription##xdm:subscriber##description##58501"
         },
         "xdm:subscriptionSKU": {
           "title": "Subscription SKU",
           "type": "string",
-          "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
+          "description": "Stock keeping unit (SKU), a generally unique identifier for a product.",
+          "meta:titleId": "telecom-subscription##xdm:subscriptionSKU##title##35611",
+          "meta:descriptionId": "telecom-subscription##xdm:subscriptionSKU##description##83111"
         },
         "xdm:planName": {
           "title": "Plan name",
           "type": "string",
-          "description": "The human readable name for the subscription."
+          "description": "The human readable name for the subscription.",
+          "meta:titleId": "telecom-subscription##xdm:planName##title##81341",
+          "meta:descriptionId": "telecom-subscription##xdm:planName##description##50991"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
-          "description": "The scope of entitlement in relation to how many people are covered by the subscription."
+          "description": "The scope of entitlement in relation to how many people are covered by the subscription.",
+          "meta:titleId": "telecom-subscription##xdm:type##title##16961",
+          "meta:descriptionId": "telecom-subscription##xdm:type##description##43431"
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
-          "description": "The country that the subscription contractual and agreement terms are rooted in."
+          "description": "The country that the subscription contractual and agreement terms are rooted in.",
+          "meta:titleId": "telecom-subscription##xdm:country##title##5361",
+          "meta:descriptionId": "telecom-subscription##xdm:country##description##50171"
         },
         "xdm:startDate": {
           "title": "Start date",
           "type": "string",
           "format": "date",
-          "description": "The date the subscription begins."
+          "description": "The date the subscription begins.",
+          "meta:titleId": "telecom-subscription##xdm:startDate##title##93171",
+          "meta:descriptionId": "telecom-subscription##xdm:startDate##description##9871"
         },
         "xdm:endDate": {
           "title": "End date",
           "type": "string",
           "format": "date",
-          "description": "The date the current subscription term ends."
+          "description": "The date the current subscription term ends.",
+          "meta:titleId": "telecom-subscription##xdm:endDate##title##27681",
+          "meta:descriptionId": "telecom-subscription##xdm:endDate##description##34151"
         },
         "xdm:term": {
           "title": "Term",
           "type": "integer",
-          "description": "The numeric value of the term."
+          "description": "The numeric value of the term.",
+          "meta:titleId": "telecom-subscription##xdm:term##title##27411",
+          "meta:descriptionId": "telecom-subscription##xdm:term##description##8661"
         },
         "xdm:termUnitOfTime": {
           "title": "Term unit of time",
           "type": "string",
-          "description": "The unit of time for the term period."
+          "description": "The unit of time for the term period.",
+          "meta:titleId": "telecom-subscription##xdm:termUnitOfTime##title##71811",
+          "meta:descriptionId": "telecom-subscription##xdm:termUnitOfTime##description##59291"
         },
         "xdm:renew": {
           "title": "Renew",
           "type": "string",
-          "description": "The agreed way that the subscription may continue after the end date."
+          "description": "The agreed way that the subscription may continue after the end date.",
+          "meta:titleId": "telecom-subscription##xdm:renew##title##82821",
+          "meta:descriptionId": "telecom-subscription##xdm:renew##description##56111"
         },
         "xdm:topUp": {
           "title": "Top up",
           "type": "string",
-          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
+          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period.",
+          "meta:titleId": "telecom-subscription##xdm:topUp##title##49331",
+          "meta:descriptionId": "telecom-subscription##xdm:topUp##description##10931"
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
-          "description": "The current status of the subscription."
+          "description": "The current status of the subscription.",
+          "meta:titleId": "telecom-subscription##xdm:status##title##67741",
+          "meta:descriptionId": "telecom-subscription##xdm:status##description##85011"
         },
         "xdm:contractID": {
           "title": "Contract ID",
           "type": "string",
-          "description": "Unique ID for the contract that governs this subscription."
+          "description": "Unique ID for the contract that governs this subscription.",
+          "meta:titleId": "telecom-subscription##xdm:contractID##title##71281",
+          "meta:descriptionId": "telecom-subscription##xdm:contractID##description##89631"
         },
         "xdm:paymentMethod": {
           "title": "Payment method",
           "type": "string",
-          "description": "The payment method for recurring payments."
+          "description": "The payment method for recurring payments.",
+          "meta:titleId": "telecom-subscription##xdm:paymentMethod##title##22891",
+          "meta:descriptionId": "telecom-subscription##xdm:paymentMethod##description##63851"
         },
         "xdm:billingPeriod": {
           "title": "Billing period",
           "type": "string",
-          "description": "The duration between billings."
+          "description": "The duration between billings.",
+          "meta:titleId": "telecom-subscription##xdm:billingPeriod##title##22101",
+          "meta:descriptionId": "telecom-subscription##xdm:billingPeriod##description##1531"
         },
         "xdm:billingStartDate": {
           "title": "Billing start date",
           "type": "string",
           "format": "date",
-          "description": "The date when the billing period begins."
+          "description": "The date when the billing period begins.",
+          "meta:titleId": "telecom-subscription##xdm:billingStartDate##title##56531",
+          "meta:descriptionId": "telecom-subscription##xdm:billingStartDate##description##38501"
         },
         "xdm:paymentDueDate": {
           "title": "Payment Due Date",
           "type": "string",
           "format": "date",
-          "description": "The date when the subscription payment is due."
+          "description": "The date when the subscription payment is due.",
+          "meta:titleId": "telecom-subscription##xdm:paymentDueDate##title##73001",
+          "meta:descriptionId": "telecom-subscription##xdm:paymentDueDate##description##65751"
         },
         "xdm:chargeMethod": {
           "title": "Charge method",
           "type": "string",
-          "description": "The way the billing is setup to charge the customer."
+          "description": "The way the billing is setup to charge the customer.",
+          "meta:titleId": "telecom-subscription##xdm:chargeMethod##title##27671",
+          "meta:descriptionId": "telecom-subscription##xdm:chargeMethod##description##59451"
         },
         "xdm:paymentStatus": {
           "title": "Payment status",
           "type": "string",
-          "description": "The standing of the account."
+          "description": "The standing of the account.",
+          "meta:titleId": "telecom-subscription##xdm:paymentStatus##title##33661",
+          "meta:descriptionId": "telecom-subscription##xdm:paymentStatus##description##85801"
         },
         "xdm:subscriptionCategory": {
           "title": "Subscription Category",
           "type": "string",
-          "description": "The main, top level categorization of this type of subscription."
+          "description": "The main, top level categorization of this type of subscription.",
+          "meta:titleId": "telecom-subscription##xdm:subscriptionCategory##title##96431",
+          "meta:descriptionId": "telecom-subscription##xdm:subscriptionCategory##description##92961"
         },
         "xdm:subscriptionSubCategory": {
           "title": "Subscription Sub-category",
           "type": "string",
-          "description": "The specific sub categorization of the subscription."
+          "description": "The specific sub categorization of the subscription.",
+          "meta:titleId": "telecom-subscription##xdm:subscriptionSubCategory##title##96891",
+          "meta:descriptionId": "telecom-subscription##xdm:subscriptionSubCategory##description##40501"
         },
         "xdm:devices": {
           "title": "Devices",
@@ -138,37 +182,51 @@
               "xdm:ID": {
                 "title": "ID",
                 "type": "string",
-                "description": "Captures the ID for the device."
+                "description": "Captures the ID for the device.",
+                "meta:titleId": "telecom-subscription##xdm:ID##title##13781",
+                "meta:descriptionId": "telecom-subscription##xdm:ID##description##85171"
               },
               "xdm:manufacturer": {
                 "title": "Manufacturer",
                 "type": "string",
-                "description": "Captures the device manufacturer."
+                "description": "Captures the device manufacturer.",
+                "meta:titleId": "telecom-subscription##xdm:manufacturer##title##72831",
+                "meta:descriptionId": "telecom-subscription##xdm:manufacturer##description##20441"
               },
               "xdm:name": {
                 "title": "Name",
                 "type": "string",
-                "description": "Captures the device name."
+                "description": "Captures the device name.",
+                "meta:titleId": "telecom-subscription##xdm:name##title##78981",
+                "meta:descriptionId": "telecom-subscription##xdm:name##description##8931"
               },
               "xdm:serialNumber": {
                 "title": "Serial Number",
                 "type": "string",
-                "description": "Captures the device serial number."
+                "description": "Captures the device serial number.",
+                "meta:titleId": "telecom-subscription##xdm:serialNumber##title##96421",
+                "meta:descriptionId": "telecom-subscription##xdm:serialNumber##description##22261"
               },
               "xdm:type": {
                 "title": "Type",
                 "type": "string",
-                "description": "Captures the device type."
+                "description": "Captures the device type.",
+                "meta:titleId": "telecom-subscription##xdm:type##title##30981",
+                "meta:descriptionId": "telecom-subscription##xdm:type##description##34341"
               },
               "xdm:deviceFees": {
                 "title": "Device Fees",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                "description": "Captures any device fees for items such as routers, modems, recievers, etc."
+                "description": "Captures any device fees for items such as routers, modems, recievers, etc.",
+                "meta:titleId": "telecom-subscription##xdm:deviceFees##title##77171",
+                "meta:descriptionId": "telecom-subscription##xdm:deviceFees##description##53711"
               },
               "xdm:deviceInsurance": {
                 "title": "Device Insurance",
                 "type": "boolean",
-                "description": "Tracks if a customer has opted-in to insurance for the device."
+                "description": "Tracks if a customer has opted-in to insurance for the device.",
+                "meta:titleId": "telecom-subscription##xdm:deviceInsurance##title##27841",
+                "meta:descriptionId": "telecom-subscription##xdm:deviceInsurance##description##25751"
               },
               "xdm:OS": {
                 "title": "OS",
@@ -181,7 +239,9 @@
                   "blackberry": "Blackberry",
                   "symbian": "Symbian"
                 },
-                "description": "Captures the device operating system."
+                "description": "Captures the device operating system.",
+                "meta:titleId": "telecom-subscription##xdm:OS##title##87231",
+                "meta:descriptionId": "telecom-subscription##xdm:OS##description##23921"
               },
               "xdm:status": {
                 "title": "Status",
@@ -191,12 +251,16 @@
                   "active": "Active",
                   "inactive": "Inactive"
                 },
-                "description": "Captures the device status."
+                "description": "Captures the device status.",
+                "meta:titleId": "telecom-subscription##xdm:status##title##89951",
+                "meta:descriptionId": "telecom-subscription##xdm:status##description##20631"
               },
               "xdm:storageCapacity": {
                 "title": "Storage Capacity",
                 "type": "string",
-                "description": "Captures the device storage capacity."
+                "description": "Captures the device storage capacity.",
+                "meta:titleId": "telecom-subscription##xdm:storageCapacity##title##41941",
+                "meta:descriptionId": "telecom-subscription##xdm:storageCapacity##description##85711"
               },
               "xdm:paymentOptions": {
                 "title": "Payment Options",
@@ -206,10 +270,14 @@
                   "installmentPlan": "Installment Plan",
                   "retailPrice": "Retail Price"
                 },
-                "description": "Captures if the device will be paid for in installments or full retail price."
+                "description": "Captures if the device will be paid for in installments or full retail price.",
+                "meta:titleId": "telecom-subscription##xdm:paymentOptions##title##38401",
+                "meta:descriptionId": "telecom-subscription##xdm:paymentOptions##description##28111"
               }
             }
-          }
+          },
+          "meta:titleId": "telecom-subscription##xdm:devices##title##28921",
+          "meta:descriptionId": "telecom-subscription##xdm:devices##description##6561"
         }
       }
     }
@@ -223,5 +291,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "telecom-subscription##title##70201",
+  "meta:descriptionId": "telecom-subscription##description##47191"
 }

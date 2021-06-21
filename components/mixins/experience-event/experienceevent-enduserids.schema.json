@@ -19,7 +19,9 @@
         "xdm:endUserIDs": {
           "title": "EndUserIDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-          "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent."
+          "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+          "meta:titleId": "experienceevent-enduserids##xdm:endUserIDs##title##38921",
+          "meta:descriptionId": "experienceevent-enduserids##xdm:endUserIDs##description##8021"
         }
       }
     }
@@ -33,5 +35,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-enduserids##title##60391",
+  "meta:descriptionId": "experienceevent-enduserids##description##30821"
 }

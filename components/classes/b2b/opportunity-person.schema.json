@@ -23,27 +23,37 @@
         "xdm:opportunityPersonID": {
           "title": "Opportunity Person ID",
           "description": "Unique ID for the relationship between the opportunity and the person.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##4471",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##9021"
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID for the opportunity in this opportunity person relationship.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-person##xdm:opportunityID##title##72301",
+          "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##7621"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique ID for the person in this opportunity person relationship.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-person##xdm:personID##title##71311",
+          "meta:descriptionId": "opportunity-person##xdm:personID##description##48701"
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-person##xdm:personRole##title##76771",
+          "meta:descriptionId": "opportunity-person##xdm:personRole##description##82611"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean indicating if the person is the primary contact on this opportunity.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "opportunity-person##xdm:isPrimary##title##55901",
+          "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##93821"
         }
       }
     }
@@ -63,5 +73,7 @@
     }
   ],
   "required": ["xdm:opportunityPersonID"],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "opportunity-person##title##74111",
+  "meta:descriptionId": "opportunity-person##description##35271"
 }

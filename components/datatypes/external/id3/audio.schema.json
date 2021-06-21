@@ -16,12 +16,16 @@
         "id3:TPUB": {
           "title": "Record label",
           "type": "string",
-          "description": "Name of the record label."
+          "description": "Name of the record label.",
+          "meta:titleId": "audio##id3:TPUB##title##93711",
+          "meta:descriptionId": "audio##id3:TPUB##description##58441"
         },
         "id3:TRSN": {
           "title": "InternetRadioStationName",
           "type": "string",
-          "description": "The radio station name on which the audio is played."
+          "description": "The radio station name on which the audio is played.",
+          "meta:titleId": "audio##id3:TRSN##title##99641",
+          "meta:descriptionId": "audio##id3:TRSN##description##33801"
         }
       }
     }
@@ -32,5 +36,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "audio##title##12841",
+  "meta:descriptionId": "audio##description##86451"
 }

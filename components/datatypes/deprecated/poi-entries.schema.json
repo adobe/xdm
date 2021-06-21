@@ -19,17 +19,20 @@
           "type": "string",
           "format": "uri-reference",
           "const": "xdm:poiEntries",
-          "description": "The unique identifier of this metric."
+          "description": "The unique identifier of this metric.",
+          "meta:descriptionId": "poi-entries##@id##description##45651"
         },
         "schema:name": {
           "type": "string",
           "const": "placecontext: poiEntries",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "poi-entries##schema:name##description##31331"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "poi-entries##xdm:measurement##description##90651"
         },
         "xdm:unit": {
           "const": ""
@@ -47,5 +50,7 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "poi-entries##title##36781",
+  "meta:descriptionId": "poi-entries##description##88921"
 }

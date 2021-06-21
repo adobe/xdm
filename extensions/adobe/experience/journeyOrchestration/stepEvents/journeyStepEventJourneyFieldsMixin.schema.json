@@ -25,29 +25,40 @@
             "https://ns.adobe.com/experience/journeyOrchestration/journeyID": {
               "title": "journeyID",
               "description": "Identifier for the given Journey.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##title##28021",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##description##74981"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": {
               "title": "journeyVersionID",
               "description": "Id of the journey version. This id represents the identity of a journey.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##title##55811",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##54861"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/name": {
               "title": "name",
               "description": "Name of the Journey.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/name##title##68101",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/name##description##46391"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/description": {
               "title": "description",
               "description": "Description of the Journey.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/description##title##11031",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/description##description##34711"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/version": {
               "title": "version",
               "description": "Describes the Journey Version.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##title##93891",
+              "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##description##9051"
             }
-          }
+          },
+          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##47031"
         }
       }
     }
@@ -57,5 +68,7 @@
       "$ref": "#/definitions/journeyFields"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "journeyFields##title##86631",
+  "meta:descriptionId": "journeyFields##description##11031"
 }

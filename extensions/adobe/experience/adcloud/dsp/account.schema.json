@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Account Details.",
   "definitions": {
     "dsp-account": {
@@ -20,12 +22,16 @@
         "dsp:accountKey": {
           "title": "Account Key",
           "type": "string",
-          "description": "External Identifier of the account."
+          "description": "External Identifier of the account.",
+          "meta:titleId": "account##dsp:accountKey##title##78881",
+          "meta:descriptionId": "account##dsp:accountKey##description##42001"
         },
         "dsp:accountName": {
           "title": "Account Name",
           "type": "string",
-          "description": "Name of the account."
+          "description": "Name of the account.",
+          "meta:titleId": "account##dsp:accountName##title##37411",
+          "meta:descriptionId": "account##dsp:accountName##description##97301"
         },
         "dsp:accountType": {
           "title": "Account Type",
@@ -48,26 +54,41 @@
             "AdNetwork": "Ad Network ",
             "PublisherAudienceExtension": "Publisher Audience Extension ",
             "Other": "Other "
-          }
+          },
+          "meta:titleId": "account##dsp:accountType##title##76881",
+          "meta:descriptionId": "account##dsp:accountType##description##19961"
         },
         "dsp:productName": {
           "title": "Product Name",
           "type": "string",
           "description": "The name of the product associated with this account.",
-          "enum": ["PlayTime", "InPlay", "OneLoad", "PrivateExchange"],
+          "enum": [
+            "PlayTime",
+            "InPlay",
+            "OneLoad",
+            "PrivateExchange"
+          ],
           "meta:enum": {
             "PlayTime": "PlayTime",
             "InPlay": "InPlay",
             "OneLoad": "OneLoad",
             "PrivateExchange": "PrivateExchange"
-          }
+          },
+          "meta:titleId": "account##dsp:productName##title##86431",
+          "meta:descriptionId": "account##dsp:productName##description##88471"
         },
         "dsp:currency": {
           "title": "Account Currency",
           "type": "string",
-          "examples": ["USD", "EUR", "JPY"],
+          "examples": [
+            "USD",
+            "EUR",
+            "JPY"
+          ],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 billing currency code for the account."
+          "description": "The ISO 4217 billing currency code for the account.",
+          "meta:titleId": "account##dsp:currency##title##21341",
+          "meta:descriptionId": "account##dsp:currency##description##61981"
         }
       }
     }
@@ -83,5 +104,7 @@
       "$ref": "#/definitions/dsp-account"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "account##title##40001",
+  "meta:descriptionId": "account##description##15571"
 }

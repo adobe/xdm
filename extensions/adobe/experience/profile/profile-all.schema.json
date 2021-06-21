@@ -40,7 +40,9 @@
                 "xdm:id": {
                   "title": "Identifier",
                   "type": "string",
-                  "description": "Identity of the consumer in the related namespace."
+                  "description": "Identity of the consumer in the related namespace.",
+                  "meta:titleId": "profile-all##xdm:id##title##98411",
+                  "meta:descriptionId": "profile-all##xdm:id##description##27641"
                 },
                 "xdm:associatedTimeRanges": {
                   "type": "array",
@@ -52,16 +54,21 @@
                         "title": "Start time",
                         "type": "string",
                         "format": "date-time",
-                        "description": "The timestamp for when the identity association started."
+                        "description": "The timestamp for when the identity association started.",
+                        "meta:titleId": "profile-all##xdm:start##title##17251",
+                        "meta:descriptionId": "profile-all##xdm:start##description##27521"
                       },
                       "xdm:end": {
                         "title": "End time",
                         "type": "string",
                         "format": "date-time",
-                        "description": "The timestamp for when the identity association ended."
+                        "description": "The timestamp for when the identity association ended.",
+                        "meta:titleId": "profile-all##xdm:end##title##76121",
+                        "meta:descriptionId": "profile-all##xdm:end##description##28181"
                       }
                     }
-                  }
+                  },
+                  "meta:descriptionId": "profile-all##xdm:associatedTimeRanges##description##11551"
                 }
               }
             }
@@ -87,5 +94,7 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-privacy"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-all##title##10951",
+  "meta:descriptionId": "profile-all##description##69341"
 }

@@ -18,17 +18,20 @@
         "@id": {
           "type": "string",
           "const": "xdm:saveForLaters",
-          "description": "The unique identifier of this metric."
+          "description": "The unique identifier of this metric.",
+          "meta:descriptionId": "save-for-laters##@id##description##72031"
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: saveForLaters",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "save-for-laters##schema:name##description##25551"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "save-for-laters##xdm:measurement##description##15671"
         },
         "xdm:unit": {
           "const": ""
@@ -46,5 +49,7 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "save-for-laters##title##62851",
+  "meta:descriptionId": "save-for-laters##description##58591"
 }

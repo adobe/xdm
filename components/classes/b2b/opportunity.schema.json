@@ -23,32 +23,44 @@
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityID##title##50791",
+          "meta:descriptionId": "opportunity##xdm:opportunityID##description##4011"
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityName##title##74741",
+          "meta:descriptionId": "opportunity##xdm:opportunityName##description##62651"
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
           "description": "Description of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityDescription##title##811",
+          "meta:descriptionId": "opportunity##xdm:opportunityDescription##description##10971"
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
           "description": "Type of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityType##title##46991",
+          "meta:descriptionId": "opportunity##xdm:opportunityType##description##21111"
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
           "description": "Sales stage of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityStage##title##68811",
+          "meta:descriptionId": "opportunity##xdm:opportunityStage##description##23791"
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique ID of the account this opportunity is associated with.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:accountID##title##92791",
+          "meta:descriptionId": "opportunity##xdm:accountID##description##2131"
         }
       }
     }
@@ -68,5 +80,7 @@
     }
   ],
   "required": ["xdm:opportunityID"],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "opportunity##title##20581",
+  "meta:descriptionId": "opportunity##description##19401"
 }

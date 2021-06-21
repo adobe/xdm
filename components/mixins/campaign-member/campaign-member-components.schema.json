@@ -24,48 +24,66 @@
               "xdm:sourceCampaignMemberID": {
                 "title": "Source Campaign Member ID",
                 "description": "Campaign member unique identifier at source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-member-components##xdm:sourceCampaignMemberID##title##20241",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignMemberID##description##551"
               },
               "xdm:sourceCampaignID": {
                 "title": "Source Campaign ID",
                 "description": "Campaign unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-member-components##xdm:sourceCampaignID##title##91071",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignID##description##4451"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-member-components##xdm:sourceExternalID##title##94741",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceExternalID##description##6081"
               },
               "xdm:sourcePersonID": {
                 "title": "Source Person ID",
                 "description": "Campaign owner unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-member-components##xdm:sourcePersonID##title##83891",
+                "meta:descriptionId": "campaign-member-components##xdm:sourcePersonID##description##30981"
               },
               "xdm:sourceAcquiredByCampaignID": {
                 "title": "Source Acquired By CampaignID",
                 "description": "",
-                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##title##23301",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##description##18781"
               },
               "xdm:memberStatus": {
                 "title": "Source Campaign Member Status",
                 "description": "",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "campaign-member-components##xdm:memberStatus##title##37971",
+                "meta:descriptionId": "campaign-member-components##xdm:memberStatus##description##80191"
               },
               "xdm:memberStatusReason": {
                 "title": "Source Status Reason",
                 "description": "",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "campaign-member-components##xdm:memberStatusReason##title##24891",
+                "meta:descriptionId": "campaign-member-components##xdm:memberStatusReason##description##32631"
               },
               "xdm:hasReachedSuccess": {
                 "title": "Source Has Reached Success",
                 "description": "",
-                "type": "boolean"
+                "type": "boolean",
+                "meta:titleId": "campaign-member-components##xdm:hasReachedSuccess##title##38921",
+                "meta:descriptionId": "campaign-member-components##xdm:hasReachedSuccess##description##31561"
               },
               "xdm:reachedSuccessDate": {
                 "title": "Source Reached Success Date",
                 "description": "",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "campaign-member-components##xdm:reachedSuccessDate##title##21671",
+                "meta:descriptionId": "campaign-member-components##xdm:reachedSuccessDate##description##71661"
               }
             }
           }
@@ -79,5 +97,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-09-29"
+  "meta:createdDate": "2020-09-29",
+  "meta:titleId": "campaign-member-components##title##21931",
+  "meta:descriptionId": "campaign-member-components##description##47611"
 }

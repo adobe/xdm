@@ -22,22 +22,30 @@
         "xdm:address": {
           "title": "Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Physicial address where the restaurant is located."
+          "description": "Physicial address where the restaurant is located.",
+          "meta:titleId": "restaurant##xdm:address##title##99781",
+          "meta:descriptionId": "restaurant##xdm:address##description##86421"
         },
         "xdm:restaurantID": {
           "title": "Restaurant ID",
           "type": "string",
-          "description": "ID associated with the restaurant."
+          "description": "ID associated with the restaurant.",
+          "meta:titleId": "restaurant##xdm:restaurantID##title##47021",
+          "meta:descriptionId": "restaurant##xdm:restaurantID##description##17661"
         },
         "xdm:restaurantName": {
           "title": "Restaurant Name",
           "type": "string",
-          "description": "Name associated with the restaurant."
+          "description": "Name associated with the restaurant.",
+          "meta:titleId": "restaurant##xdm:restaurantName##title##61061",
+          "meta:descriptionId": "restaurant##xdm:restaurantName##description##16291"
         },
         "xdm:acceptsReservations": {
           "title": "Accepts Reservations",
           "type": "boolean",
-          "description": "Flags if the restaurant accepts reservations."
+          "description": "Flags if the restaurant accepts reservations.",
+          "meta:titleId": "restaurant##xdm:acceptsReservations##title##93261",
+          "meta:descriptionId": "restaurant##xdm:acceptsReservations##description##58631"
         },
         "xdm:cuisine": {
           "title": "Cuisine",
@@ -89,7 +97,9 @@
               "american": "American",
               "thai": "Thai"
             }
-          }
+          },
+          "meta:titleId": "restaurant##xdm:cuisine##title##92381",
+          "meta:descriptionId": "restaurant##xdm:cuisine##description##71501"
         },
         "xdm:deliveryPartners": {
           "title": "Delivery Partners",
@@ -104,7 +114,9 @@
               "doordash": "DoorDash",
               "other": "Other"
             }
-          }
+          },
+          "meta:titleId": "restaurant##xdm:deliveryPartners##title##46751",
+          "meta:descriptionId": "restaurant##xdm:deliveryPartners##description##28371"
         },
         "xdm:diningOptions": {
           "title": "Dining Options",
@@ -127,7 +139,8 @@
               "dogFriendly": "Dog Friendly"
             }
           },
-          "description": "Delivery and dining options available from the restaurant."
+          "meta:titleId": "restaurant##xdm:diningOptions##title##4851",
+          "meta:descriptionId": "restaurant##xdm:diningOptions##description##8521"
         }
       }
     }
@@ -141,5 +154,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-11-19"
+  "meta:createdDate": "2020-11-19",
+  "meta:titleId": "restaurant##title##44251",
+  "meta:descriptionId": "restaurant##description##26141"
 }

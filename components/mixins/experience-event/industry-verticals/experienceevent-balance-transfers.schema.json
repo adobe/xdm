@@ -12,16 +12,20 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Used for financial account balance transfers between accounts.",
   "definitions": {
     "balance-transfers": {
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
-		  "description": "Financial details including transactions, accounts, and applications.",
+          "description": "Financial details including transactions, accounts, and applications.",
           "properties": {
             "xdm:balanceTransfers": {
               "type": "object",
@@ -30,21 +34,29 @@
                 "xdm:transaction": {
                   "title": "Transaction",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                  "description": "Extension of transaction data type."
+                  "description": "Extension of transaction data type.",
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##75761",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##15771"
                 },
                 "xdm:accountTo": {
                   "title": "Account To",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+                  "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##3271",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##52451"
                 },
                 "xdm:accountFrom": {
                   "title": "Account From",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred."
+                  "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+                  "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##55801",
+                  "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##53541"
                 }
-              }
+              },
+              "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##2611"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-balance-transfers##xdm:personalFinances##description##51211"
         }
       }
     }
@@ -55,5 +67,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-balance-transfers##title##99061",
+  "meta:descriptionId": "experienceevent-balance-transfers##description##92691"
 }

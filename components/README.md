@@ -10,4 +10,4 @@ The "components" act as the building blocks to compose a schema which is fully s
 
 **Field-Groups** - Defines a set of **standard** root level fields intended for schemas that are based on certain class. A field-group can be configured for a single class or many depending on whats in its "meta:intendedToExtend" attribute. Users creating a schema will reference 1 or more Field-Groups depending on the fields they want to bring in. 
 
-**Datatypes** - Generic grouping of fields around a given object type (address, device, etc.). Unlike a mix-in these are not tied to a given class and can be referenced by any field that is defined as an object which contains the fields of the datatype. 
+**Datatypes** - Generic grouping of fields around a given object type (address, device, etc.). Unlike a field-group, these are not tied to a given class and can be referenced by any field that is defined as an object which contains the fields of the datatype. 

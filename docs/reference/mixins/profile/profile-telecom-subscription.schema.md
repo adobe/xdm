@@ -44,8 +44,8 @@ Collects all generic details related to a customer's telecom subscription plan, 
 | `xdm:landlineSubscription`| array | Optional |
 | `xdm:mediaSubscription`| array | Optional |
 | `xdm:mobileSubscription`| array | Optional |
-| `xdm:responsiblePartyID`| string | Optional |
-| `xdm:subscriptionDetails`|  | Optional |
+| `xdm:primaryPartyID`| string | Optional |
+| `xdm:primarySubscriber`|  | Optional |
 
 
 
@@ -198,7 +198,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -261,6 +261,7 @@ All items must be of the type:
 | `xdm:callerID`| boolean | Optional |
 | `xdm:internationalCalling`| boolean | Optional |
 | `xdm:minutes`| integer | Optional |
+| `xdm:phoneNumber`|  | Optional |
 | `xdm:subscriptionDetails`|  | Optional |
 | `xdm:threeWayCalling`| boolean | Optional |
 | `xdm:unlimitedDomesticLongDistance`| boolean | Optional |
@@ -390,6 +391,26 @@ Number of monthly minutes available within the subscription.
 
 
 
+#### xdm:phoneNumber
+##### Phone Number
+
+Captures the phone number assigned to this device.
+
+`xdm:phoneNumber`
+* is optional
+* type: reference
+
+##### xdm:phoneNumber Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/phonenumber`
+
+
+
+
+
+
+
 #### xdm:subscriptionDetails
 ##### Subscription Details
 
@@ -402,7 +423,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -653,7 +674,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -789,7 +810,7 @@ Extension of the subscription data type to include subscription length, fees, st
 ##### xdm:subscriptionDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/telecom-subscription`
+* []() – `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
 
 
 
@@ -804,16 +825,16 @@ Extension of the subscription data type to include subscription length, fees, st
 
 
 
-#### xdm:responsiblePartyID
-##### Responsible Party ID
+#### xdm:primaryPartyID
+##### Primary Party ID
 
-Identifier for the person responsible for the subscription, which typically could be their device phone number.
+Identifier for the primary person responsible for the subscription, which typically could be their device phone number.
 
-`xdm:responsiblePartyID`
+`xdm:primaryPartyID`
 * is optional
 * type: `string`
 
-##### xdm:responsiblePartyID Type
+##### xdm:primaryPartyID Type
 
 
 `string`
@@ -825,19 +846,19 @@ Identifier for the person responsible for the subscription, which typically coul
 
 
 
-#### xdm:subscriptionDetails
-##### Subscription Details
+#### xdm:primarySubscriber
+##### Primary Subscriber
 
-Extension of the subscription data type to include subscription length, fees, status, etc.
+The owner of the subscription.
 
-`xdm:subscriptionDetails`
+`xdm:primarySubscriber`
 * is optional
 * type: reference
 
-##### xdm:subscriptionDetails Type
+##### xdm:primarySubscriber Type
 
 
-* []() – `https://ns.adobe.com/xdm/context/subscription`
+* []() – `https://ns.adobe.com/xdm/context/person`
 
 
 

@@ -5,7 +5,7 @@
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
-    "$id": "https://ns.adobe.com/xdm/context/telecom-subscription",
+    "$id": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Subscription",
     "type": "object",
@@ -100,7 +100,13 @@
                     "title": "Billing start date",
                     "type": "string",
                     "format": "date",
-                    "description": "The date when the first bill is due."
+                    "description": "The date when the billing period begins."
+                },
+                "xdm:paymentDueDate": {
+                    "title": "Payment Due Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date when the subscription payment is due."
                 },
                 "xdm:chargeMethod": {
                     "title": "Charge method",
@@ -182,6 +188,19 @@
                                     "symbian": "Symbian"
                                 },
                                 "description": "Captures the device operating system."
+                            },
+                            "xdm:status": {
+                                "title": "Status",
+                                "type": "string",
+                                "enum": [
+                                    "active",
+                                    "inactive"
+                                ],
+                                "meta:enum": {
+                                    "active": "Active",
+                                    "inactive": "Inactive"
+                                },
+                                "description": "Captures the device status."
                             },
                             "xdm:storageCapacity": {
                                 "title": "Storage Capacity",

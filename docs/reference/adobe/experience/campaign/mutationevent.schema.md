@@ -13,7 +13,7 @@ Adobe Campaign mutation event.
 ## Schema Hierarchy
 
 * Adobe Campaign Mutation Event `https://ns.adobe.com/experience/campaign/mutationevent`
-  * [Web information](../../../datatypes/web/webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
+  * [Web information](../../../datatypes/webinfo.schema.md) `https://ns.adobe.com/xdm/context/webinfo`
   * [Direct marketing](../../../datatypes/marketing/direct-marketing.schema.md) `https://ns.adobe.com/xdm/context/direct-marketing`
 
 
@@ -177,7 +177,7 @@ Link clicks, web page details, referrer information, and browser details.
 ### xdm:web Type
 
 
-* [Web information](../../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

@@ -679,7 +679,7 @@ Link clicks, web page details, referrer information, and browser details.
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

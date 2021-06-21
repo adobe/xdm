@@ -2,7 +2,7 @@
 # Subscription Schema
 
 ```
-https://ns.adobe.com/xdm/context/telecom-subscription
+https://ns.adobe.com/xdm/datatypes/telecom-subscription
 ```
 
 Contain details for the specific subscription types, such as internet, mobile, media, or landline.
@@ -12,7 +12,7 @@ Contain details for the specific subscription types, such as internet, mobile, m
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/telecom-subscription.schema.json](datatypes/industry-verticals/telecom-subscription.schema.json) |
 ## Schema Hierarchy
 
-* Subscription `https://ns.adobe.com/xdm/context/telecom-subscription`
+* Subscription `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](../person/person.schema.md) `https://ns.adobe.com/xdm/context/person`
 
@@ -34,6 +34,7 @@ Contain details for the specific subscription types, such as internet, mobile, m
 | [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
 | [xdm:devices](#xdmdevices) | `object[]` | Optional | Subscription (this schema) |
 | [xdm:endDate](#xdmenddate) | `string` | Optional | Subscription (this schema) |
+| [xdm:paymentDueDate](#xdmpaymentduedate) | `string` | Optional | Subscription (this schema) |
 | [xdm:paymentMethod](#xdmpaymentmethod) | `string` | Optional | Subscription (this schema) |
 | [xdm:paymentStatus](#xdmpaymentstatus) | `string` | Optional | Subscription (this schema) |
 | [xdm:planName](#xdmplanname) | `string` | Optional | Subscription (this schema) |
@@ -93,7 +94,7 @@ The duration between billings.
 ## xdm:billingStartDate
 ### Billing start date
 
-The date when the first bill is due.
+The date when the billing period begins.
 
 `xdm:billingStartDate`
 * is optional
@@ -201,6 +202,7 @@ All items must be of the type:
 | `xdm:name`| string | Optional |
 | `xdm:paymentOptions`| string | Optional |
 | `xdm:serialNumber`| string | Optional |
+| `xdm:status`| string | Optional |
 | `xdm:storageCapacity`| string | Optional |
 | `xdm:type`| string | Optional |
 
@@ -377,6 +379,28 @@ Captures the device serial number.
 
 
 
+#### xdm:status
+##### Status
+
+Captures the device status.
+
+`xdm:status`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#xdmdevices-known-values).
+
+##### xdm:status Known Values
+| Value | Description |
+|-------|-------------|
+| `active` | Active |
+| `inactive` | Inactive |
+
+
+
+
+
+
 #### xdm:storageCapacity
 ##### Storage Capacity
 
@@ -436,6 +460,27 @@ The date the current subscription term ends.
 * defined in this schema
 
 ### xdm:endDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:paymentDueDate
+### Payment Due Date
+
+The date when the subscription payment is due.
+
+`xdm:paymentDueDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:paymentDueDate Type
 
 
 `string`

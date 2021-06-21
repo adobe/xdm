@@ -1,0 +1,130 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/campaign-member-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Campaign Member Details",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/campaign-member"
+    ],
+    "description": "An XDM Business Campaign Member.",
+    "definitions": {
+        "campaign-member-details": {
+            "properties": {
+                "xdm:memberStatus": {
+                    "title": "Campaign Member Status",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:memberStatusReason": {
+                    "title": "Campaign Member Status Reason",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:nurtureTrackName": {
+                    "title": "Nurture Track Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:nurtureCadence": {
+                    "title": "Nurture Cadence",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:isExhausted": {
+                    "title": "isExhausted",
+                    "description": "",
+                    "type": "boolean"
+                },
+                "xdm:webinarRegistrationID": {
+                    "title": "Webinar Registration ID",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:webinarConfirmationUrl": {
+                    "title": "Webinar Confirmation Url",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:acquiredByCampaignID": {
+                    "title": "Acquired By CampaignID",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:hasReachedSuccess": {
+                    "title": "Has Reached Success",
+                    "description": "",
+                    "type": "boolean"
+                },
+                "xdm:reachedSuccessDate": {
+                    "title": "Reached Success Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:membershipDate": {
+                    "title": "Membership Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:lastStatus": {
+                    "title": "Last Status",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:hasResponded": {
+                    "title": "Has Responded",
+                    "description": "Record whether the member has responded to the workflow stage",
+                    "type": "boolean"
+                },
+                "xdm:firstRespondedDate": {
+                    "title": "First Responded Date",
+                    "description": "Date captured on which response was submitted",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/campaign-member-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-08-18",
+    "examples": [
+        {
+            "xdm:campaignMember": {
+                "xdm:type": "Lead",
+                "xdm:ID": "18765386"
+            },
+            "xdm:response": {
+                "xdm:hasResponded": true,
+                "xdm:respondDate": "2020-05-19T00:00:00+00:00"
+            },
+            "xdm:campaignProgram": {
+                "xdm:ID": "1",
+                "xdm:type": "Webinar",
+                "xdm:step": {
+                    "xdm:number": 10,
+                    "xdm:status": "Invited"
+                }
+            },
+            "xdm:sourceType": "salesforce",
+            "xdm:isDeleted": false
+        }
+    ]
+}

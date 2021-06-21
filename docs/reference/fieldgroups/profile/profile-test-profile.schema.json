@@ -1,0 +1,45 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-test-profile",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile test details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Use to indicate that the profile record is in use for testing, verification, and should not be automatically included in normal operations.",
+    "definitions": {
+        "profile-test-profile": {
+            "properties": {
+                "xdm:testProfile": {
+                    "title": "Test profile",
+                    "type": "boolean",
+                    "description": "Indicates the `profile` record is for use in testing and verification purposes and should not be automatically included in normal operations.",
+                    "default": false
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-test-profile"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:testProfile": false
+        }
+    ]
+}

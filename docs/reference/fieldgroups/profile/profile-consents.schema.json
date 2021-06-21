@@ -1,0 +1,100 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-consents",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Consents and Preferences",
+    "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "all"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "definitions": {},
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/profile-consents"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-11-04",
+    "examples": [
+        {
+            "xdm:consents": {
+                "xdm:collect": {
+                    "xdm:val": "VI"
+                },
+                "xdm:share": {
+                    "xdm:val": "y"
+                },
+                "xdm:personalize": {
+                    "xdm:content": {
+                        "xdm:val": "y"
+                    }
+                },
+                "xdm:marketing": {
+                    "xdm:preferred": "email",
+                    "xdm:any": {
+                        "xdm:val": "y"
+                    },
+                    "xdm:email": {
+                        "xdm:val": "y"
+                    }
+                },
+                "xdm:idSpecific": {
+                    "ECID": {
+                        "12345678-abcdef09-87654321-fedcba90": {
+                            "xdm:share": {
+                                "xdm:val": "n"
+                            },
+                            "xdm:marketing": {
+                                "xdm:push": {
+                                    "xdm:val": "n",
+                                    "xdm:time": "2020-09-30T01:02:33+00:00",
+                                    "xdm:reason": "not relevant"
+                                }
+                            }
+                        },
+                        "11112222-33334444-55556666-77778888": {
+                            "xdm:adID": {
+                                "xdm:val": "n"
+                            },
+                            "xdm:personalize": {
+                                "xdm:content": {
+                                    "xdm:val": "n"
+                                }
+                            },
+                            "xdm:marketing": {
+                                "xdm:push": {
+                                    "xdm:val": "y"
+                                }
+                            }
+                        }
+                    },
+                    "email": {
+                        "john@xyz.com": {
+                            "xdm:marketing": {
+                                "xdm:email": {
+                                    "xdm:val": "y"
+                                }
+                            }
+                        }
+                    }
+                },
+                "xdm:metadata": {
+                    "xdm:time": "2019-01-01T15:52:25+00:00"
+                }
+            }
+        }
+    ]
+}

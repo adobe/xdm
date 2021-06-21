@@ -1,0 +1,83 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-directmarketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile direct marketing",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Use for direct marketing activities such as addresses, emails, and phone numbers.",
+    "definitions": {
+        "profile-directmarketing": {
+            "properties": {
+                "xdm:directMarketingAddress": {
+                    "title": "Direct marketing address",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
+                    "description": "Direct marketing postal address."
+                },
+                "xdm:directMarketingEmail": {
+                    "title": "Direct marketing email",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+                    "description": "Direct marketing email address."
+                },
+                "xdm:directMarketingPhone": {
+                    "title": "Direct marketing phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+                    "description": "Direct marketing phone number."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-directmarketing"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:directMarketingPhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active",
+                "xdm:errorCount": 0
+            },
+            "xdm:directMarketingAddress": {
+                "@id": "https://data.adobe.io/entities/address/123",
+                "xdm:primary": false,
+                "xdm:street1": "345 Park Ave",
+                "xdm:city": "San Jose",
+                "xdm:stateProvince": "US-CA",
+                "xdm:postalCode": "95110",
+                "xdm:country": "United States",
+                "xdm:countryCode": "US",
+                "schema:latitude": 37.3382,
+                "schema:longitude": 121.8863,
+                "xdm:status": "active",
+                "xdm:lastVerifiedDate": "2018-01-02",
+                "xdm:errorCount": 0,
+                "xdm:quality": "Fully-recognized street"
+            },
+            "xdm:directMarketingEmail": {
+                "xdm:primary": false,
+                "xdm:address": "jsmith@xyzinc.com",
+                "xdm:label": "John Smith",
+                "xdm:type": "work",
+                "xdm:status": "active",
+                "xdm:errorCount": 0
+            }
+        }
+    ]
+}

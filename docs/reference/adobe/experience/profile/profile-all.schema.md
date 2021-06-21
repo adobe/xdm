@@ -14,9 +14,9 @@ Adobe Unified Profile Service required fields for the Profile Union.
 
 * Adobe Unified Profile Service Profile Union Extension `https://ns.adobe.com/experience/profile/profile-all`
   * [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md) `https://ns.adobe.com/xdm/data/record-timeseries-events`
-  * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
-  * [IAB TCF 2.0 Consent](../../../mixins/profile/profile-privacy.schema.md) `https://ns.adobe.com/xdm/context/profile-privacy`
+  * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
+  * [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md) `https://ns.adobe.com/xdm/context/profile-privacy`
 
 
 ## Adobe Unified Profile Service Profile Union Extension Example
@@ -81,11 +81,11 @@ Adobe Unified Profile Service required fields for the Profile Union.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/profile/associatedIdentities](#httpsnsadobecomexperienceprofileassociatedidentities) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/identityNamespaces](#httpsnsadobecomexperienceprofileidentitynamespaces) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent](../../../mixins/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | [IAB TCF 2.0 Consent](../../../mixins/profile/profile-privacy.schema.md#xdmoptoutconsentlevel) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
-| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md#xdmsegments) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
+| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments) |
 | [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md#xdmtimeseriesevents) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -139,7 +139,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 
@@ -163,7 +163,7 @@ Captured privacy information for identities in profile.
 `xdm:identityPrivacyInfo`
 * is optional
 * type: `object`
-* defined in [IAB TCF 2.0 Consent](../../../mixins/profile/profile-privacy.schema.md#xdmidentityprivacyinfo)
+* defined in [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo)
 
 ### xdm:identityPrivacyInfo Type
 
@@ -187,7 +187,7 @@ Opt-out consent level (deprecated).
 `xdm:optOutConsentLevel`
 * is optional
 * type: `object`
-* defined in [IAB TCF 2.0 Consent](../../../mixins/profile/profile-privacy.schema.md#xdmoptoutconsentlevel)
+* defined in [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel)
 
 ### xdm:optOutConsentLevel Type
 
@@ -312,7 +312,7 @@ Timestamp of the received opt-out signal.
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -335,7 +335,7 @@ Timestamp of the received opt-out signal.
 * is optional
 * type: Segment membership
 
-* defined in [Segment Membership Details](../../../mixins/profile/profile-segmentation.schema.md#xdmsegments)
+* defined in [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments)
 
 ### xdm:segments Type
 

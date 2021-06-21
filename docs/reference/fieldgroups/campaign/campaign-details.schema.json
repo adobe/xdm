@@ -1,0 +1,142 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/campaign-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Campaign Details",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/campaign"
+    ],
+    "description": "This mixin is used to capture properties related to business campaign details.",
+    "definitions": {
+        "campaign-details": {
+            "properties": {
+                "xdm:parentCampaignID": {
+                    "title": "Parent Campaign ID",
+                    "description": "Member type and associated reference ID.",
+                    "type": "string"
+                },
+                "xdm:campaignStatus": {
+                    "title": "Campaign Status",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:campaignProgressionName": {
+                    "title": "Campaign Progression Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:integrationPartnerName": {
+                    "title": "Integration Partner Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:channelName": {
+                    "title": "Channel Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:campaignStartDate": {
+                    "title": "Campaign Start Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:campaignEndDate": {
+                    "title": "Campaign End Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:timeZone": {
+                    "title": "Timezone",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:timezoneName": {
+                    "title": "Timezone Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:timeZoneDelivery": {
+                    "title": "TimeZone Delivery",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:webinarSessionName": {
+                    "title": "Webinar Session Name",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:webinarSessionDescription": {
+                    "title": "Webinar Session Description",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:webinarHistorySyncStatus": {
+                    "title": "Webinar History Sync Status",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:webinarHistorySyncDate": {
+                    "title": "Webinar History Sync Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:isActive": {
+                    "title": "Is Active",
+                    "description": "",
+                    "type": "boolean"
+                },
+                "xdm:lastActivityDate": {
+                    "title": "last Activity Date",
+                    "description": "",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "xdm:expectedResponse": {
+                    "title": "Expected Response",
+                    "description": "",
+                    "type": "string"
+                },
+                "xdm:expectedRevenue": {
+                    "title": "Expected Revenue",
+                    "description": "",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+                },
+                "xdm:budgetedCost": {
+                    "title": "Budgeted Cost",
+                    "description": "",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+                },
+                "xdm:actualCost": {
+                    "title": "Actual Cost",
+                    "description": "",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/campaign-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-09-29",
+    "examples": [
+        {}
+    ]
+}

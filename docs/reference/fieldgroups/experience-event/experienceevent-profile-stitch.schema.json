@@ -1,0 +1,90 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Stitch Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Profile stitching details such as identity and profile IDs.",
+    "definitions": {
+        "experienceevent-profile-stitch": {
+            "properties": {
+                "xdm:profileStitch": {
+                    "title": "Profile stitch",
+                    "description": "Details about the IDs that were joined by profile stitching.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/profileStitch"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-profile-stitch"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:profileStitch": [
+                {
+                    "xdm:profileStitchID": {
+                        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:version": "1.0",
+                    "xdm:identityMap": {
+                        "ECID": [
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+                            },
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+                            },
+                            {
+                                "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "xdm:segmentMemberships": [
+                {
+                    "xdm:segmentID": {
+                        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        }
+                    },
+                    "xdm:profileStitchID": {
+                        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+                        "xdm:namespace": {
+                            "xdm:code": "AAM"
+                        },
+                        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+                        "xdm:version": "1.0",
+                        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+                        "xdm:status": "realized"
+                    }
+                }
+            ]
+        }
+    ]
+}

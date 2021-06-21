@@ -1,0 +1,84 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Deposit Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Deposit details such as ID, type, and amount.",
+    "definitions": {
+        "deposit-details": {
+            "properties": {
+                "xdm:personalFinances": {
+                    "type": "object",
+                    "description": "Financial details including transactions, accounts, and applications.",
+                    "properties": {
+                        "xdm:deposits": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:transaction": {
+                                    "title": "Deposit Transaction",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                                    "description": "Extension of transaction data type."
+                                },
+                                "xdm:account": {
+                                    "title": "Deposit Account",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                                    "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+                                },
+                                "xdm:mobileDeposit": {
+                                    "title": "Mobile Deposit",
+                                    "type": "boolean",
+                                    "description": "Indicator for whether the deposit was done through mobile or not."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/deposit-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:personalFinances": {
+                "xdm:deposits": {
+                    "xdm:transaction": {
+                        "xdm:balanceTransfer": "",
+                        "xdm:formApplicationFee": "",
+                        "xdm:toolUsageTransaction": "",
+                        "xdm:transactionAmount": {
+                            "xdm:amount": 61.35,
+                            "xdm:currencyCode": "USD",
+                            "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+                        },
+                        "xdm:transactionID": "T10291832",
+                        "xdm:transactionDate": "2020-04-11T05:05:05Z",
+                        "xdm:transactionType": "transfer"
+                    }
+                },
+                "xdm:mobileDeposit": true
+            }
+        }
+    ]
+}

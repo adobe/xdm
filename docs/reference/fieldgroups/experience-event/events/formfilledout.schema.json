@@ -1,0 +1,117 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/events/formfilledout",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Form Filled Out",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:conditionalField": "xdm:eventType",
+    "meta:conditionalValue": "web.formFilledOut",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Use to capture details when a person fills out a form on a web page.",
+    "definitions": {
+        "formfilledout": {
+            "properties": {
+                "xdm:web": {
+                    "title": "Web",
+                    "type": "object",
+                    "description": "Link clicks, web page details, referrer information, and browser details.",
+                    "properties": {
+                        "xdm:fillOutForm": {
+                            "title": "Fill Out Form",
+                            "type": "object",
+                            "properties": {
+                                "xdm:webFormID": {
+                                    "title": "Web Form ID",
+                                    "type": "string",
+                                    "description": "Unique ID of the form."
+                                },
+                                "xdm:webFormName": {
+                                    "title": "Web Form Name",
+                                    "type": "string",
+                                    "description": "Name of the form."
+                                }
+                            }
+                        },
+                        "xdm:webPageDetails": {
+                            "title": "Web Page Details",
+                            "type": "object",
+                            "properties": {
+                                "xdm:webPageID": {
+                                    "title": "Web Page ID",
+                                    "type": "string",
+                                    "description": "Unique ID of the web page."
+                                },
+                                "xdm:name": {
+                                    "title": "Name",
+                                    "type": "string",
+                                    "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                                },
+                                "xdm:queryParameters": {
+                                    "title": "Query Parameters",
+                                    "type": "string",
+                                    "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+                                }
+                            }
+                        },
+                        "xdm:webReferrer": {
+                            "title": "Web Referrer",
+                            "type": "object",
+                            "properties": {
+                                "xdm:URL": {
+                                    "title": "URL",
+                                    "type": "string",
+                                    "description": "The referrer URL."
+                                }
+                            }
+                        }
+                    }
+                },
+                "xdm:environment": {
+                    "title": "Environment",
+                    "type": "object",
+                    "description": "The information related to web page and link of the ExperienceEvent.",
+                    "properties": {
+                        "xdm:ipV4": {
+                            "title": "IPv4",
+                            "type": "string",
+                            "format": "ipv4",
+                            "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication."
+                        },
+                        "xdm:browserDetails": {
+                            "title": "Browser details",
+                            "type": "object",
+                            "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+                            "properties": {
+                                "xdm:userAgent": {
+                                    "title": "User agent",
+                                    "type": "string",
+                                    "description": "The HTTP user-agent string from the client request."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/formfilledout"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {}
+    ]
+}

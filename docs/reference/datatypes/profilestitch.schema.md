@@ -13,7 +13,7 @@ Details about the IDs that were joined by profile stitching.
 ## Schema Hierarchy
 
 * Profile stitch `https://ns.adobe.com/xdm/context/profileStitch`
-  * [IdentityMap](../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Profile stitch identity](profilestitchidentity.schema.md) `https://ns.adobe.com/xdm/context/profileStitchIdentity`
 
 
@@ -47,7 +47,7 @@ Details about the IDs that were joined by profile stitching.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:profileStitchID](#xdmprofilestitchid) | Profile stitch identity | Optional | Profile stitch (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Profile stitch (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -58,7 +58,7 @@ Details about the IDs that were joined by profile stitching.
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

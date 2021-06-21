@@ -1,0 +1,58 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/product-category",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Product Category",
+    "type": "object",
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/product"
+    ],
+    "description": "This mixin is used to capture properties related to product category.",
+    "definitions": {
+        "product-category": {
+            "properties": {
+                "xdm:productCategoryName": {
+                    "title": "Product Category Name",
+                    "type": "string",
+                    "description": "friendly name of the product category."
+                },
+                "xdm:productCategoryDescription": {
+                    "title": "Product Category Description",
+                    "type": "string",
+                    "description": "Friendly description of product category."
+                },
+                "xdm:productSubcategoryName": {
+                    "title": "Product Subcategory Name",
+                    "type": "string",
+                    "description": "friendly name of the product subcategory."
+                },
+                "xdm:productSubcategoryDescription": {
+                    "title": "Product Sub category Description",
+                    "type": "string",
+                    "description": "Friendly description of product subcategory."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/product-category"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-11-19",
+    "examples": [
+        {
+            "xdm:productCatelogCategoryName": "prime",
+            "xdm:parentProductCatelogCategoryName": "video"
+        }
+    ]
+}

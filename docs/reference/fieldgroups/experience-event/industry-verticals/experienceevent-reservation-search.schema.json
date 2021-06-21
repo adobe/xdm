@@ -1,0 +1,93 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experience-event/industry-verticals/experienceevent-reservation-search",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Reservation Search",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "travel_and_hospitality"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Reservation search details such as flexibility, product code, rate type, and internal search information.",
+    "definitions": {
+        "reservations": {
+            "properties": {
+                "xdm:reservationSearch": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:couponCode": {
+                            "title": "Coupon Code",
+                            "type": "string",
+                            "description": "Coupon/promo code string used in a reservation search."
+                        },
+                        "xdm:groupCode": {
+                            "title": "Group Code",
+                            "type": "string",
+                            "description": "Group code string used in a reservation search."
+                        },
+                        "xdm:isFlexible": {
+                            "title": "Reservation Search Is Flexibile",
+                            "type": "boolean",
+                            "description": "Tracks if a visitor selects a flexible date option for their reservation search."
+                        },
+                        "xdm:productCode": {
+                            "title": "Corporate Code",
+                            "type": "string",
+                            "description": "Corporate code string used in a reservation search."
+                        },
+                        "xdm:rateType": {
+                            "title": "Rate Type",
+                            "type": "string",
+                            "enum": [
+                                "aaa",
+                                "aarp",
+                                "senior",
+                                "government",
+                                "corporate"
+                            ],
+                            "description": "Type of rate included in a reservation search."
+                        },
+                        "xdm:startDate": {
+                            "title": "Start Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The start pick-up/outbound/check-in date of the reservation search."
+                        },
+                        "xdm:endDate": {
+                            "title": "End Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The end drop-off/return/check-out date of the reservation search."
+                        },
+                        "xdm:reservationSearch": {
+                            "title": "Site Search",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+                            "description": "Extension of internalSearch data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/reservations"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-03-15",
+    "examples": [
+        {}
+    ]
+}

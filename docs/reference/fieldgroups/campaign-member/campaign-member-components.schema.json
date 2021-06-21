@@ -1,0 +1,88 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/campaign-member-components",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Campaign Member Components",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/campaign-member"
+    ],
+    "description": "This mixin is used to capture B2B campaign member specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
+    "definitions": {
+        "campaign-member-components": {
+            "properties": {
+                "xdm:campaignMemberComponents": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "xdm:sourceCampaignMemberID": {
+                                "title": "Source Campaign Member ID",
+                                "description": "Campaign member unique identifier at source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceCampaignID": {
+                                "title": "Source Campaign ID",
+                                "description": "Campaign unique identifier at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceExternalID": {
+                                "title": "Source External ID",
+                                "description": "External unique identifier at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourcePersonID": {
+                                "title": "Source Person ID",
+                                "description": "Campaign owner unique identifier at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceAcquiredByCampaignID": {
+                                "title": "Source Acquired By CampaignID",
+                                "description": "",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:memberStatus": {
+                                "title": "Source Campaign Member Status",
+                                "description": "",
+                                "type": "string"
+                            },
+                            "xdm:memberStatusReason": {
+                                "title": "Source Status Reason",
+                                "description": "",
+                                "type": "string"
+                            },
+                            "xdm:hasReachedSuccess": {
+                                "title": "Source Has Reached Success",
+                                "description": "",
+                                "type": "boolean"
+                            },
+                            "xdm:reachedSuccessDate": {
+                                "title": "Source Reached Success Date",
+                                "description": "",
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/campaign-member-components"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2020-09-29",
+    "examples": [
+        {}
+    ]
+}

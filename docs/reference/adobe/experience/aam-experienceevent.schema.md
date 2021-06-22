@@ -13,11 +13,11 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 ## Schema Hierarchy
 
 * Adobe Audience Manager Template Mixin `https://ns.adobe.com/experience/aam-experienceevent`
-  * [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
-  * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
+  * [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
+  * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
-  * [IAB TCF 2.0 Consent](../../mixins/experience-event/experienceevent-privacy.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-privacy`
+  * [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-privacy`
   * [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md) `https://ns.adobe.com/experience/audiencemanager/experienceevent-all`
 
 
@@ -160,15 +160,15 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | [IAB TCF 2.0 Consent](../../mixins/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings) |
+| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings) |
 | [xdm:derivedSignals](#xdmderivedsignals) | `object` | Optional | [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md#xdmderivedsignals) |
-| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
 | [xdm:overwriteTraits](#xdmoverwritetraits) | `boolean` | Optional | [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md#xdmoverwritetraits) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
-| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
 | [xdm:signals](#xdmsignals) | `object` | Optional | [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md#xdmsignals) |
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -180,7 +180,7 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 * is optional
 * type: Consent String
 
-* defined in [IAB TCF 2.0 Consent](../../mixins/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings)
+* defined in [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings)
 
 ### xdm:consentStrings Type
 
@@ -229,7 +229,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -248,7 +248,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -286,7 +286,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 
@@ -306,7 +306,7 @@ Details about the IDs that were joined by profile stitching.
 * is optional
 * type: Profile stitch
 
-* defined in [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch)
+* defined in [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch)
 
 ### xdm:profileStitch Type
 
@@ -329,7 +329,7 @@ All items must be of the type:
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -354,7 +354,7 @@ The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentM
 * is optional
 * type: Segment membership item
 
-* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
+* defined in [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
 
 ### xdm:segmentMemberships Type
 

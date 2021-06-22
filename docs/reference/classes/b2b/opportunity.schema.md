@@ -15,7 +15,7 @@ This class is used to capture minimum set of properties that define business opp
 * XDM Business Opportunity `https://ns.adobe.com/xdm/context/opportunity`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [External Source System Audit Details Mixin](../../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Opportunity Example
@@ -35,7 +35,7 @@ This class is used to capture minimum set of properties that define business opp
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityID](#xdmopportunityid) | `string` | **Required** | XDM Business Opportunity (this schema) |
 | [xdm:opportunityName](#xdmopportunityname) | `string` | Optional | XDM Business Opportunity (this schema) |
@@ -92,7 +92,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 

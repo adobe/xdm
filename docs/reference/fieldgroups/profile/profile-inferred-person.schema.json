@@ -1,0 +1,64 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-inferred-person",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Inferred Person",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "This mixin is used to capture inferred details about a person where they are not directly avaialble.",
+    "definitions": {
+        "profile-inferred-person": {
+            "properties": {
+                "xdm:anonymousHostname": {
+                    "title": "Anonymous Hostname",
+                    "description": "Anonymous hostname.",
+                    "type": "string"
+                },
+                "xdm:inferredAddress": {
+                    "title": "Inferred Address",
+                    "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                },
+                "xdm:inferredCompany": {
+                    "title": "Inferred Company",
+                    "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                    "type": "string"
+                },
+                "xdm:inferredCompanyStatus": {
+                    "title": "Inferred Company Status",
+                    "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+                    "type": "string"
+                },
+                "xdm:inferredMetropolitanArea": {
+                    "title": "Inferred Metropolitan Area",
+                    "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
+                    "type": "string"
+                },
+                "xdm:inferredPhoneAreaCode": {
+                    "title": "Inferred Phone Area Code",
+                    "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-inferred-person"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2020-11-23",
+    "examples": [
+        {}
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-user-account-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "User Account Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "retail",
+            "financial_services",
+            "travel_and_hospitality",
+            "telecom",
+            "automotive",
+            "education",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing",
+            "media_and_entertainment",
+            "public_sector"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "",
+    "definitions": {
+        "user-account-details": {
+            "properties": {
+                "xdm:userAccount": {
+                    "type": "object",
+                    "description": "Loyalty details, preferences, login processes, and other account preferences.",
+                    "properties": {
+                        "xdm:ID": {
+                            "title": "ID",
+                            "type": "string",
+                            "description": "Captures the user account ID."
+                        },
+                        "xdm:contactDetails": {
+                            "title": "Contact Details",
+                            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
+                            "description": "Extension of the Personal Profile data type."
+                        },
+                        "xdm:startDate": {
+                            "title": "Start Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date when the account was opened."
+                        },
+                        "xdm:status": {
+                            "title": "Status",
+                            "type": "string",
+                            "enum": [
+                                "active",
+                                "inactive",
+                                "disabled",
+                                "other"
+                            ],
+                            "description": "This should describe the current status of the account"
+                        },
+                        "xdm:accountType": {
+                            "title": "Account Type",
+                            "type": "string",
+                            "description": "Captures the user account type, if applicable."
+                        },
+                        "xdm:productPreferences": {
+                            "title": "Product Preferences",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc."
+                        },
+                        "xdm:alertStatus": {
+                            "title": "Alert Status",
+                            "type": "boolean",
+                            "description": "Captures whether or not alerts have been enabled for the account."
+                        },
+                        "xdm:autopayStatus": {
+                            "title": "Autopay Status",
+                            "type": "boolean",
+                            "description": "Captures whether or not the account has been enrolled in autopay."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/user-account-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:userAccount": {
+                "xdm:ID": "X87321",
+                "xdm:accountType": "personal"
+            }
+        }
+    ]
+}

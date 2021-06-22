@@ -15,7 +15,7 @@ Details for the insurance policy such as type, start date, and ID.
 * Policy `https://ns.adobe.com/xdm/classes/fsi/policy`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
-  * [Personal Contact Details](../../mixins/profile/profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
+  * [Personal Contact Details](../../fieldgroups/profile/profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
   * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
@@ -101,7 +101,7 @@ Captures the beneficiary(s) assigned to the policy.
 Array type: Demographic Details
 
 All items must be of the type:
-* [Demographic Details](../../mixins/profile/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details`
+* [Demographic Details](../../fieldgroups/profile/profile-person-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-person-details`
 
 
 
@@ -221,7 +221,7 @@ Stores the policyholder's profile information. Extension of the personal profile
 ### xdm:owner Type
 
 
-* [Personal Contact Details](../../mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
+* [Personal Contact Details](../../fieldgroups/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
 
 
 

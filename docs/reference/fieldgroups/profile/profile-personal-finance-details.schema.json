@@ -1,0 +1,133 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-personal-finance-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Personal Finance Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
+    "definitions": {
+        "personal-finance-details": {
+            "properties": {
+                "xdm:personalFinances": {
+                    "type": "object",
+                    "description": "Financial details including transactions, accounts, and applications.",
+                    "properties": {
+                        "xdm:accountCardsTotal": {
+                            "title": "Account Cards Total",
+                            "type": "integer",
+                            "description": "Total number of account (financial) cards assigned to a user."
+                        },
+                        "xdm:assignedBeneficiary": {
+                            "title": "Assigned Beneficiaries",
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+                            },
+                            "description": "Captures the beneficiary(s) assigned to the account."
+                        },
+                        "xdm:creditScores": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:score": {
+                                        "title": "Score",
+                                        "type": "integer",
+                                        "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness."
+                                    },
+                                    "xdm:provider": {
+                                        "title": "Credit Bureau",
+                                        "type": "string",
+                                        "meta:enum": {
+                                            "experian": "Experian",
+                                            "equifax": "Equifax",
+                                            "transunion": "TransUnion"
+                                        },
+                                        "description": "Refers to the credit bureau responsible for providing the credit score."
+                                    },
+                                    "xdm:scoreDate": {
+                                        "title": "Score Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date when the score was reported."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:employmentStatus": {
+                            "title": "Employment Status",
+                            "type": "string",
+                            "meta:enum": {
+                                "fullTime": "Full Time",
+                                "partTime": "Part Time",
+                                "temporary": "Temporary",
+                                "selfEmployed": "Self-Employed",
+                                "retired": "Retired",
+                                "unemployed": "Unemployed"
+                            },
+                            "description": "Tracks the employment status of the user."
+                        },
+                        "xdm:ID": {
+                            "title": "ID",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Array of financial account IDs assigned to the user."
+                        },
+                        "xdm:hasAssignedBeneficiary": {
+                            "title": "Has Assigned Beneficiary",
+                            "type": "boolean",
+                            "description": "Flag determining if the account has a beneficiary assigned."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/personal-finance-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-03-23",
+    "examples": [
+        {
+            "xdm:personalFinances": {
+                "xdm:accountCardsTotal": 3,
+                "xdm:creditScore": 760,
+                "xdm:employmentStatus": "full time",
+                "xdm:assignedBeneficiary": [
+                    {
+                        "xdm:person": {
+                            "xdm:name": {
+                                "xdm:firstName": "Jane",
+                                "xdm:middleName": "F",
+                                "xdm:lastName": "Doe",
+                                "xdm:fullName": "Jane F. Doe"
+                            },
+                            "xdm:birthDayAndMonth": "01-03",
+                            "xdm:gender": "female"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/account-person-components",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Account Person Relation Components",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/account-person"
+    ],
+    "description": "XDM business account person relation component details.",
+    "definitions": {
+        "account-person-components": {
+            "properties": {
+                "xdm:accountPersonComponents": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "xdm:sourceAccountPersonID": {
+                                "title": "Source Account Person ID",
+                                "description": "Account person relationship unique identifier at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceExternalID": {
+                                "title": "Source External ID",
+                                "description": "External unique identifer at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceAccountID": {
+                                "title": "Source Account ID",
+                                "description": "Account unique identifier at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourcePersonID": {
+                                "title": "Source Person ID",
+                                "description": "Person unique identifer at the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:personRole": {
+                                "title": "Person Role",
+                                "description": "Role of the person pertaining to this account.",
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/account-person-components"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2020-09-21",
+    "examples": [
+        {}
+    ]
+}

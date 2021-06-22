@@ -1,0 +1,97 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/b2b-person-components",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Person Components",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
+    "definitions": {
+        "b2b-person-components": {
+            "properties": {
+                "xdm:personComponents": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "xdm:sourcePersonID": {
+                                "title": "Source Person ID",
+                                "description": "Source person ID.",
+                                "type": "string"
+                            },
+                            "xdm:sourceAccountID": {
+                                "title": "Source Account ID",
+                                "description": "Source account ID.",
+                                "type": "string"
+                            },
+                            "xdm:sourceConvertedContactID": {
+                                "title": "Source Converted Contact ID",
+                                "description": "Source converted contact ID.",
+                                "type": "string"
+                            },
+                            "xdm:sourceExternalID": {
+                                "title": "Source External ID",
+                                "description": "External source unique identifier at the source.",
+                                "type": "string"
+                            },
+                            "xdm:workEmail": {
+                                "title": "Work Email ID of B2B Person",
+                                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+                            },
+                            "xdm:personType": {
+                                "title": "Person Type",
+                                "description": "Type of the B2B person.",
+                                "type": "string"
+                            },
+                            "xdm:personStatus": {
+                                "title": "Person Status",
+                                "description": "Field recording the current marketing/sales status of the Person.",
+                                "type": "string"
+                            },
+                            "xdm:personSource": {
+                                "title": "Person Source",
+                                "description": "Source from where the information regarding the person was received.",
+                                "type": "string"
+                            },
+                            "xdm:personScore": {
+                                "title": "Person Score",
+                                "description": "A Score generated for a person by the CRM system.",
+                                "type": "number"
+                            },
+                            "xdm:personGroupID": {
+                                "title": "Person Group ID",
+                                "description": "Group identifier for the person.",
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/b2b-person-components"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-09-09",
+    "examples": [
+        {}
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-phones",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Phone Number Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Phone number such as fax, mobile, home, and work.",
+    "definitions": {
+        "profile-phones": {
+            "properties": {
+                "xdm:homePhone": {
+                    "title": "Home Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Home phone number."
+                },
+                "xdm:mobilePhone": {
+                    "title": "Mobile Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Mobile phone number."
+                },
+                "xdm:workPhone": {
+                    "title": "Work Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Work phone number."
+                },
+                "xdm:faxPhone": {
+                    "title": "Fax Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Fax phone number."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-phones"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:homePhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            },
+            "xdm:mobilePhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            },
+            "xdm:workPhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            },
+            "xdm:faxPhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            }
+        }
+    ]
+}

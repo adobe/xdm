@@ -15,7 +15,7 @@ Loan specifics, such as loan type, amount, rate, & term.
 * Loan Details `https://ns.adobe.com/xdm/classes/loan`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [Currency](../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
-  * [Personal Contact Details](../mixins/profile/profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
+  * [Personal Contact Details](../fieldgroups/profile/profile-personal-details.schema.md) `https://ns.adobe.com/xdm/context/profile-personal-details`
 
 
 ## Loan Details Example
@@ -106,7 +106,7 @@ Records the details for the borrower.
 ### xdm:borrower Type
 
 
-* [Personal Contact Details](../mixins/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
+* [Personal Contact Details](../fieldgroups/profile/profile-personal-details.schema.md) – `https://ns.adobe.com/xdm/context/profile-personal-details`
 
 
 

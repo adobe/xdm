@@ -1,0 +1,68 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/poi-interaction",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Point of interest interaction",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "A point or place of interest (POI) interaction used to capture triggered engagement activities when users enter, leave, or come within range of a POI.",
+    "definitions": {
+        "poi-interaction": {
+            "properties": {
+                "xdm:POIDetail": {
+                    "title": "POI detail",
+                    "meta:status": "deprecated",
+                    "description": "Detail of the POI that cause the event.",
+                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                },
+                "xdm:poiDetail": {
+                    "title": "POI detail",
+                    "description": "Detail of the POI that cause the event.",
+                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                },
+                "xdm:poiEntries": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The number of times a person has entered the point of interest (POI)."
+                },
+                "xdm:poiExits": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The number of times a person has exited the point of interest (POI)."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/poi-interaction"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:poiExits": {
+                "xdm:value": 1
+            },
+            "xdm:poiDetail": {
+                "xdm:POIID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+                "xdm:name": "Acme Hotel Tokyo",
+                "xdm:category": "Resorts",
+                "xdm:type": "Hotel",
+                "xdm:locatingType": "beacon",
+                "xdm:beaconInteractionDetails": {
+                    "xdm:proximityUUID": "dd0094a0-52bb-4d3a-ab15-fcccb9b9b48e",
+                    "xdm:beaconMajor": 100,
+                    "xdm:beaconMinor": 23
+                }
+            }
+        }
+    ]
+}

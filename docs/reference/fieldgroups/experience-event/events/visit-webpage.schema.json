@@ -1,0 +1,129 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/events/visit-webpage",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Visit Web Page",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:conditionalField": "xdm:eventType",
+    "meta:conditionalValue": "web.webpagedetails.pageViews",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Use for tracking the details of a person's visit to a web page.",
+    "definitions": {
+        "visitwebpage": {
+            "properties": {
+                "xdm:web": {
+                    "title": "Web",
+                    "type": "object",
+                    "description": "Link clicks, web page details, referrer information, and browser details.",
+                    "properties": {
+                        "xdm:webPageDetails": {
+                            "title": "Web Page Details",
+                            "type": "object",
+                            "properties": {
+                                "xdm:webPageID": {
+                                    "title": "Web Page ID",
+                                    "type": "string",
+                                    "description": "Unique ID of the web page."
+                                },
+                                "xdm:name": {
+                                    "title": "Name",
+                                    "type": "string",
+                                    "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                                },
+                                "xdm:URL": {
+                                    "title": "URL",
+                                    "type": "string",
+                                    "format": "uri",
+                                    "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+                                },
+                                "xdm:queryParameters": {
+                                    "title": "Query Parameters",
+                                    "type": "string",
+                                    "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url."
+                                },
+                                "xdm:isPersonalizedURL": {
+                                    "title": "Is Personalized URL",
+                                    "type": "boolean",
+                                    "description": "Boolean indicating if person accessed the web page via a personalized URL."
+                                }
+                            }
+                        },
+                        "xdm:webReferrer": {
+                            "title": "Web Referrer",
+                            "type": "object",
+                            "properties": {
+                                "xdm:URL": {
+                                    "title": "URL",
+                                    "type": "string",
+                                    "description": "URL of the referring web page."
+                                }
+                            }
+                        }
+                    }
+                },
+                "xdm:environment": {
+                    "title": "Environment",
+                    "type": "object",
+                    "description": "The information related to web page and link of the ExperienceEvent.",
+                    "properties": {
+                        "xdm:ipV4": {
+                            "title": "IPv4",
+                            "type": "string",
+                            "format": "ipv4",
+                            "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+                        },
+                        "xdm:browserDetails": {
+                            "title": "Browser details",
+                            "type": "object",
+                            "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+                            "properties": {
+                                "xdm:userAgent": {
+                                    "title": "User agent",
+                                    "type": "string",
+                                    "description": "The HTTP user-agent string from the client request."
+                                }
+                            }
+                        }
+                    }
+                },
+                "xdm:search": {
+                    "title": "Search",
+                    "type": "object",
+                    "description": "The information related to web or mobile search.",
+                    "properties": {
+                        "xdm:searchEngine": {
+                            "title": "Search engine",
+                            "type": "string",
+                            "description": "The search engine used by the search."
+                        },
+                        "xdm:keywords": {
+                            "title": "Keywords",
+                            "type": "string",
+                            "description": "Keywords for the search."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/visitwebpage"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {}
+    ]
+}

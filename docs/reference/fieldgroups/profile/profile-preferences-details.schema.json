@@ -1,0 +1,88 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-preferences-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Preference Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Preferences such as opt-in and opt-out, time zone, preferred language, and email format.",
+    "definitions": {
+        "profile-preferences-details": {
+            "properties": {
+                "xdm:preferredLanguage": {
+                    "title": "Preferred language",
+                    "type": "string",
+                    "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
+                    "examples": [
+                        "en-GB",
+                        "de-DE",
+                        "yue-HK"
+                    ],
+                    "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format."
+                },
+                "xdm:profilePictureLink": {
+                    "title": "Profile picture link",
+                    "type": "string",
+                    "description": "Link to profile's picture."
+                },
+                "xdm:emailFormat": {
+                    "title": "Email format",
+                    "type": "string",
+                    "description": "Email format preferred by the profile. This can be rich text or plain text.",
+                    "meta:enum": {
+                        "html": "Rich text",
+                        "plaintext": "Plain text"
+                    }
+                },
+                "xdm:timeZone": {
+                    "title": "Time zone",
+                    "type": "string",
+                    "examples": [
+                        "America/Barbados",
+                        "Antarctica/Davis",
+                        "Asia/Calcutta"
+                    ],
+                    "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm"
+                },
+                "xdm:optInOut": {
+                    "title": "OptInOut",
+                    "$ref": "https://ns.adobe.com/xdm/context/optinout",
+                    "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
+                    "meta:status": "deprecated"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-preferences-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:optInOut": {
+                "https://ns.adobe.com/xdm/channels/email": "pending",
+                "https://ns.adobe.com/xdm/channels/phone": "out",
+                "https://ns.adobe.com/xdm/channels/sms": "in",
+                "https://ns.adobe.com/xdm/channels/fax": "not_provided",
+                "https://ns.adobe.com/xdm/channels/direct-mail": "not_provided",
+                "https://ns.adobe.com/xdm/channels/apns": "not_provided",
+                "xdm:globalOptout": false
+            }
+        }
+    ]
+}

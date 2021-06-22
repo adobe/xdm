@@ -1,0 +1,87 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-support-site-search",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Support Site Search",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "telecom",
+            "education",
+            "health_and_life_sciences",
+            "high_tech",
+            "manufacturing",
+            "public_sector"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "",
+    "definitions": {
+        "support-site-search": {
+            "properties": {
+                "xdm:siteKnowledge": {
+                    "type": "object",
+                    "description": "Knowledge base tracking, support site searches and forum interaction details.",
+                    "properties": {
+                        "xdm:supportSiteSearch": {
+                            "title": "Support Site Search",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+                            "description": "Extension of internalSearch data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/support-site-search"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-01-15",
+    "examples": [
+        {
+            "xdm:siteKnowledge": {
+                "xdm:supportSiteSearch": {
+                    "xdm:internal-site-search": {
+                        "xdm:campusSearch": "",
+                        "xdm:numberOfResults": 258,
+                        "xdm:productFindingMethods": "pedals",
+                        "xdm:refinementValue": "aluminum",
+                        "xdm:refinementType": [
+                            "Customer Reviews = 5",
+                            "Recommended Use = Trail"
+                        ],
+                        "xdm:refinementInstances": 1,
+                        "xdm:resultsPageNumber": 2,
+                        "xdm:resultsPerPage": 50,
+                        "xdm:instances": 1,
+                        "xdm:locationInPage": "top nav",
+                        "xdm:nullInstances": 0,
+                        "xdm:postalCode": "63141",
+                        "xdm:radiusDistance": 25,
+                        "xdm:radiusType": "miles",
+                        "xdm:term": "shimano pedals",
+                        "xdm:autocompleteClicked": true,
+                        "xdm:autocompleteValue": "shimano pedals",
+                        "xdm:autocompleteTypedValue": "pedal",
+                        "xdm:searchType": "standard",
+                        "xdm:sortOrder": "ascending",
+                        "xdm:sortType": "price: low to high"
+                    }
+                }
+            }
+        }
+    ]
+}

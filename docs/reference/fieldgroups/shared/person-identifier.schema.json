@@ -1,0 +1,37 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/person-identifier",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Person Identifier",
+    "type": "object",
+    "meta:intendedToExtend": [],
+    "description": "Used to store Person ID for an entity.",
+    "definitions": {
+        "person-id": {
+            "properties": {
+                "xdm:personID": {
+                    "title": "Person ID",
+                    "description": "Person unique identifier.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/person-id"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:personID": "gjukoyi1234"
+        }
+    ]
+}

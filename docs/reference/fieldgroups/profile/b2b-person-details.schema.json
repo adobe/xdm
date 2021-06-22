@@ -1,0 +1,147 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/b2b-person-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Business Person Details",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "This mixin is used to capture B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
+    "definitions": {
+        "b2b-person-segment-traits": {
+            "properties": {
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:personType": {
+                            "title": "Person Type",
+                            "description": "Type of the B2B person.",
+                            "type": "string"
+                        },
+                        "xdm:personStatus": {
+                            "title": "Person Status",
+                            "description": "Field recording the current marketing/sales status of the Person.",
+                            "type": "string"
+                        },
+                        "xdm:personSource": {
+                            "title": "Person Source",
+                            "description": "Source from where the information regarding the person was received.",
+                            "type": "string"
+                        },
+                        "xdm:personScore": {
+                            "title": "Person Score",
+                            "description": "A Score generated for a person by the CRM system.",
+                            "type": "number"
+                        },
+                        "xdm:personGroupID": {
+                            "title": "Person Group ID",
+                            "description": "Group identifier for the person.",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "b2b-person-details": {
+            "properties": {
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:accountID": {
+                            "title": "Contact Account id",
+                            "description": "ID of the account that’s the parent of this person.",
+                            "type": "string"
+                        },
+                        "xdm:isBlocked": {
+                            "title": "Blocked Indicator",
+                            "description": "Indicator if the person is blocked or not.",
+                            "type": "boolean"
+                        },
+                        "xdm:blockedCause": {
+                            "title": "Blocked Cause",
+                            "description": "Reason why the person is blocked.",
+                            "type": "string"
+                        },
+                        "xdm:isMarketingSuspended": {
+                            "title": "Marketing Suspended Indicator",
+                            "description": "Marketing suspended flag.",
+                            "type": "boolean"
+                        },
+                        "xdm:marketingSuspendedCause": {
+                            "title": "Marketing Suspended Cause",
+                            "description": "Reason why the person is suspended for any marketing purposes.",
+                            "type": "string"
+                        },
+                        "xdm:isConverted": {
+                            "title": "Converted Indicator",
+                            "description": "Indicates whether the Lead was successfully converted or not.",
+                            "type": "boolean"
+                        },
+                        "xdm:convertedDate": {
+                            "title": "Converted Date",
+                            "description": "Date of conversion if the lead was successfully converted.",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "xdm:convertedContactID": {
+                            "title": "Converted Contact ID",
+                            "description": "Contact Id if the lead was successfully converted.",
+                            "type": "string"
+                        },
+                        "xdm:personOptInOut": {
+                            "title": "Person Preferences",
+                            "description": "Holds opt out values for different channels as selected by the person.",
+                            "$ref": "https://ns.adobe.com/xdm/context/optinout",
+                            "meta:status": "deprecated"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/b2b-person-details"
+        },
+        {
+            "$ref": "#/definitions/b2b-person-segment-traits"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-other-work-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-work-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-09-09",
+    "examples": [
+        {}
+    ]
+}

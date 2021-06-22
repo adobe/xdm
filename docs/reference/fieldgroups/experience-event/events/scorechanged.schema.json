@@ -1,0 +1,99 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/events/scorechanged",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Score Changed",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:conditionalField": "xdm:eventType",
+    "meta:conditionalValue": "leadOperation.scoreChanged",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Use to capture details when the lead score of a person changes.",
+    "definitions": {
+        "scorechanged": {
+            "properties": {
+                "xdm:leadOperation": {
+                    "title": "Lead Operation",
+                    "type": "object",
+                    "properties": {
+                        "xdm:changeScore": {
+                            "title": "Change Score",
+                            "type": "object",
+                            "properties": {
+                                "xdm:scoreAttributeID": {
+                                    "title": "Score Atribute ID",
+                                    "type": "string",
+                                    "description": "Unique ID of the lead score attribute."
+                                },
+                                "xdm:scoreAttributeName": {
+                                    "title": "Score Atribute Name",
+                                    "type": "string",
+                                    "description": "Friendly name of the lead score attribute."
+                                },
+                                "xdm:changeValue": {
+                                    "title": "Change Value",
+                                    "type": "string",
+                                    "description": "Absolute value or difference between new value and previous value of the lead score attribute."
+                                },
+                                "xdm:newValue": {
+                                    "title": "New Value",
+                                    "type": "integer",
+                                    "description": "New value of the lead score attribute."
+                                },
+                                "xdm:oldValue": {
+                                    "title": "Old Value",
+                                    "type": "integer",
+                                    "description": "Previous value of the lead score attribute."
+                                },
+                                "xdm:reason": {
+                                    "title": "Reason",
+                                    "type": "string",
+                                    "description": "Reason for the change to the lead score attribute."
+                                },
+                                "xdm:urgency": {
+                                    "title": "Urgency",
+                                    "type": "number",
+                                    "description": "Gauge of how much the lead's score has changed recently."
+                                },
+                                "xdm:priority": {
+                                    "title": "Priority",
+                                    "type": "integer",
+                                    "description": "Overall priority the lead should receive based on urgency and score."
+                                },
+                                "xdm:relativeScore": {
+                                    "title": "Relative Score",
+                                    "type": "integer",
+                                    "description": "How the lead's score compares to other leads in the database."
+                                },
+                                "xdm:relativeUrgency": {
+                                    "title": "Relative Urgency",
+                                    "type": "integer",
+                                    "description": "How the lead's urgency compares to other leads in the database."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/scorechanged"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {}
+    ]
+}

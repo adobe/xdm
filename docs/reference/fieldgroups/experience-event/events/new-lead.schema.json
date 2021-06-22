@@ -1,0 +1,80 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/events/new-lead",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "New Lead",
+    "type": "object",
+    "meta:tags": {
+        "b2bSchema": true
+    },
+    "meta:conditionalField": "xdm:eventType",
+    "meta:conditionalValue": "leadOperation.newLead",
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Use to record the creation and details of a new marketing lead.",
+    "definitions": {
+        "newlead": {
+            "properties": {
+                "xdm:leadOperation": {
+                    "title": "Lead Operation",
+                    "type": "object",
+                    "properties": {
+                        "xdm:newLead": {
+                            "title": "New Lead",
+                            "type": "object",
+                            "properties": {
+                                "xdm:sourceType": {
+                                    "title": "Source Type",
+                                    "type": "string",
+                                    "description": "Type of lead source."
+                                },
+                                "xdm:formName": {
+                                    "title": "Form Name",
+                                    "type": "string",
+                                    "description": "Name of the form."
+                                },
+                                "xdm:listName": {
+                                    "title": "List Name",
+                                    "type": "string",
+                                    "description": "Name of marketing list."
+                                },
+                                "xdm:sfdcType": {
+                                    "title": "SFDC Type",
+                                    "type": "string",
+                                    "description": "Lead type in SFDC."
+                                },
+                                "xdm:leadSource": {
+                                    "title": "Lead Source",
+                                    "type": "string",
+                                    "description": "Source of lead."
+                                },
+                                "xdm:createdDate": {
+                                    "title": "Created Date",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "description": "Lead creation date."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/newlead"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {}
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-paperless-enrollment-steps",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Paperless Enrollment Steps",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "travel_and_hospitality",
+            "telecom"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Paperless enrollment steps such as start, save, failure, and complete. ",
+    "definitions": {
+        "paperless-enrollment-steps": {
+            "properties": {
+                "xdm:userAccount": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:paperlessEnrollment": {
+                            "title": "Paperless Enrollment",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/paperless-enrollment-steps"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:userAccount": {
+                "xdm:paperlessEnrollment": {
+                    "xdm:tool-usage": {
+                        "xdm:toolUsageCancelled": 1,
+                        "xdm:toolUsageComplete": 1,
+                        "xdm:toolUsageFailure": 1,
+                        "xdm:toolUsageID": "T421",
+                        "xdm:toolUsageName": "calculator",
+                        "xdm:toolUsageSaved": 1,
+                        "xdm:toolUsageStart": 1,
+                        "xdm:toolUsageStep": 1,
+                        "xdm:toolUsageStepName": "enter parameters",
+                        "xdm:toolUsageSubmitted": 1,
+                        "xdm:toolUsageType": "generic"
+                    }
+                }
+            }
+        }
+    ]
+}

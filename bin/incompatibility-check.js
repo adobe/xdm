@@ -132,14 +132,7 @@ function validateSchemas(files) {
         }
         var schema4Validation =  mergeAllOf(deref(schema),{
             resolvers: {
-                "meta:titleId": function(values) {
-                    var valueList = [];
-                    for (var i in values)
-                      valueList = valueList.concat(values[i]);
-                    if (valueList.length >1 )
-                      return Array.from(new Set(valueList));
-                  },
-                  "meta:descriptionId": function(values) {
+                defaultResolver: function(values) {
                     var valueList = [];
                     for (var i in values)
                       valueList = valueList.concat(values[i]);

@@ -33,36 +33,36 @@
                   "title": "Type",
                   "type": "string",
                   "description": "Type of Interesting Moment.",
-                  "meta:titleId": "interesting-moment##xdm:type##title##1981",
-                  "meta:descriptionId": "interesting-moment##xdm:type##description##84001"
+                  "meta:titleId": "interesting-moment##xdm:type##title##47241",
+                  "meta:descriptionId": "interesting-moment##xdm:type##description##99611"
                 },
                 "xdm:description": {
                   "title": "Description",
                   "type": "string",
                   "description": "Description of Interesting Moment.",
-                  "meta:titleId": "interesting-moment##xdm:description##title##80531",
-                  "meta:descriptionId": "interesting-moment##xdm:description##description##57941"
+                  "meta:titleId": "interesting-moment##xdm:description##title##20541",
+                  "meta:descriptionId": "interesting-moment##xdm:description##description##58861"
                 },
                 "xdm:date": {
                   "title": "Date",
                   "type": "string",
                   "format": "date-time",
                   "description": "Date of the Interesting Moment.",
-                  "meta:titleId": "interesting-moment##xdm:date##title##45441",
-                  "meta:descriptionId": "interesting-moment##xdm:date##description##16391"
+                  "meta:titleId": "interesting-moment##xdm:date##title##8651",
+                  "meta:descriptionId": "interesting-moment##xdm:date##description##99781"
                 },
                 "xdm:source": {
                   "title": "Source",
                   "type": "string",
                   "description": "Source of the action that triggered the interesting moment.",
-                  "meta:titleId": "interesting-moment##xdm:source##title##28251",
-                  "meta:descriptionId": "interesting-moment##xdm:source##description##15631"
+                  "meta:titleId": "interesting-moment##xdm:source##title##1141",
+                  "meta:descriptionId": "interesting-moment##xdm:source##description##2171"
                 }
               },
-              "meta:titleId": "interesting-moment##xdm:interestingMoment##title##47681"
+              "meta:titleId": "interesting-moment##xdm:interestingMoment##title##24181"
             }
           },
-          "meta:titleId": "interesting-moment##xdm:leadOperation##title##72431"
+          "meta:titleId": "interesting-moment##xdm:leadOperation##title##97001"
         }
       }
     }
@@ -74,6 +74,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "interesting-moment##title##39991",
-  "meta:descriptionId": "interesting-moment##description##91211"
+  "meta:titleId": "interesting-moment##title##55331",
+  "meta:descriptionId": "interesting-moment##description##18981"
 }

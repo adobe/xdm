@@ -28,8 +28,8 @@
             "application/vnd.adobe.photoshop"
           ],
           "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).",
-          "meta:titleId": "1.0##dc:format##title##64061",
-          "meta:descriptionId": "1.0##dc:format##description##22661"
+          "meta:titleId": "1.0##dc:format##title##11071",
+          "meta:descriptionId": "1.0##dc:format##description##42941"
         }
       }
     },
@@ -44,7 +44,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:createDate##description##74121"
+          "meta:descriptionId": "1.0##repo:createDate##description##36201"
         },
         "repo:modifyDate": {
           "type": "string",
@@ -54,13 +54,13 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:modifyDate##description##41771"
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751"
         }
       }
     }
   },
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "1.0##title##80571",
-  "meta:descriptionId": "1.0##description##49261"
+  "meta:titleId": "1.0##title##20721",
+  "meta:descriptionId": "1.0##description##77561"
 }

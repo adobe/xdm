@@ -23,22 +23,22 @@
           "title": "Marketing List ID",
           "description": "Unique ID of the marketing list.",
           "type": "string",
-          "meta:titleId": "marketing-list##xdm:marketingListID##title##11761",
-          "meta:descriptionId": "marketing-list##xdm:marketingListID##description##79271"
+          "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
+          "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
         },
         "xdm:marketingListName": {
           "title": "Marketing List Name",
           "description": "Name of the marketing list.",
           "type": "string",
-          "meta:titleId": "marketing-list##xdm:marketingListName##title##6381",
-          "meta:descriptionId": "marketing-list##xdm:marketingListName##description##2861"
+          "meta:titleId": "marketing-list##xdm:marketingListName##title##25151",
+          "meta:descriptionId": "marketing-list##xdm:marketingListName##description##25281"
         },
         "xdm:marketingListDescription": {
           "title": "Marketing List Description",
           "description": "Description of the marketing list.",
           "type": "string",
-          "meta:titleId": "marketing-list##xdm:marketingListDescription##title##28711",
-          "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##53991"
+          "meta:titleId": "marketing-list##xdm:marketingListDescription##title##23161",
+          "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##56371"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "required": ["xdm:marketingListID"],
   "meta:status": "experimental",
-  "meta:titleId": "marketing-list##title##96161",
-  "meta:descriptionId": "marketing-list##description##36511"
+  "meta:titleId": "marketing-list##title##32631",
+  "meta:descriptionId": "marketing-list##description##65341"
 }

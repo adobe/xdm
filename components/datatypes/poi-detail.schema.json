@@ -19,43 +19,43 @@
           "type": "string",
           "meta:status": "deprecated",
           "description": "The unique identifier of the POI.",
-          "meta:titleId": "poi-detail##xdm:POIID##title##70171",
-          "meta:descriptionId": "poi-detail##xdm:POIID##description##91741"
+          "meta:titleId": "poi-detail##xdm:POIID##title##10951",
+          "meta:descriptionId": "poi-detail##xdm:POIID##description##34921"
         },
         "xdm:poiID": {
           "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI.",
-          "meta:titleId": "poi-detail##xdm:poiID##title##41011",
-          "meta:descriptionId": "poi-detail##xdm:poiID##description##67341"
+          "meta:titleId": "poi-detail##xdm:poiID##title##30661",
+          "meta:descriptionId": "poi-detail##xdm:poiID##description##54851"
         },
         "xdm:name": {
           "title": "POI name",
           "type": "string",
           "description": "The name given to the POI.",
-          "meta:titleId": "poi-detail##xdm:name##title##36751",
-          "meta:descriptionId": "poi-detail##xdm:name##description##59941"
+          "meta:titleId": "poi-detail##xdm:name##title##1191",
+          "meta:descriptionId": "poi-detail##xdm:name##description##29031"
         },
         "xdm:category": {
           "title": "POI category",
           "type": "string",
           "description": "General category assigned for organizing the POIs by the administrator of POI definitions.",
-          "meta:titleId": "poi-detail##xdm:category##title##83201",
-          "meta:descriptionId": "poi-detail##xdm:category##description##55061"
+          "meta:titleId": "poi-detail##xdm:category##title##45541",
+          "meta:descriptionId": "poi-detail##xdm:category##description##25311"
         },
         "xdm:type": {
           "title": "POI type",
           "type": "string",
           "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions.",
-          "meta:titleId": "poi-detail##xdm:type##title##59331",
-          "meta:descriptionId": "poi-detail##xdm:type##description##39981"
+          "meta:titleId": "poi-detail##xdm:type##title##11891",
+          "meta:descriptionId": "poi-detail##xdm:type##description##56601"
         },
         "xdm:distanceToPOICenter": {
           "title": "Distance to POI center",
           "type": "number",
           "description": "Estimated distance from the POI center in meters.",
-          "meta:titleId": "poi-detail##xdm:distanceToPOICenter##title##63061",
-          "meta:descriptionId": "poi-detail##xdm:distanceToPOICenter##description##28621"
+          "meta:titleId": "poi-detail##xdm:distanceToPOICenter##title##45821",
+          "meta:descriptionId": "poi-detail##xdm:distanceToPOICenter##description##41151"
         },
         "xdm:locatingType": {
           "title": "Locating type",
@@ -68,8 +68,8 @@
             "ip+wifi": "IP with wifi lookup",
             "wifi-triangulation": "Wifi triangulation"
           },
-          "meta:titleId": "poi-detail##xdm:locatingType##title##36661",
-          "meta:descriptionId": "poi-detail##xdm:locatingType##description##2031"
+          "meta:titleId": "poi-detail##xdm:locatingType##title##95171",
+          "meta:descriptionId": "poi-detail##xdm:locatingType##description##57851"
         },
         "xdm:beaconInteractionDetails": {
           "title": "Beacon interaction details",
@@ -80,22 +80,22 @@
               "title": "Proximity UUID",
               "type": "string",
               "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons.",
-              "meta:titleId": "poi-detail##xdm:proximityUUID##title##67171",
-              "meta:descriptionId": "poi-detail##xdm:proximityUUID##description##17931"
+              "meta:titleId": "poi-detail##xdm:proximityUUID##title##51951",
+              "meta:descriptionId": "poi-detail##xdm:proximityUUID##description##19821"
             },
             "xdm:beaconMajor": {
               "title": "Beacon major",
               "type": "number",
               "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535.",
-              "meta:titleId": "poi-detail##xdm:beaconMajor##title##37711",
-              "meta:descriptionId": "poi-detail##xdm:beaconMajor##description##15901"
+              "meta:titleId": "poi-detail##xdm:beaconMajor##title##86491",
+              "meta:descriptionId": "poi-detail##xdm:beaconMajor##description##11061"
             },
             "xdm:beaconMinor": {
               "title": "Beacon Minor",
               "type": "number",
               "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535.",
-              "meta:titleId": "poi-detail##xdm:beaconMinor##title##88801",
-              "meta:descriptionId": "poi-detail##xdm:beaconMinor##description##90921"
+              "meta:titleId": "poi-detail##xdm:beaconMinor##title##97671",
+              "meta:descriptionId": "poi-detail##xdm:beaconMinor##description##37501"
             },
             "xdm:proximity": {
               "title": "Proximity to beacon",
@@ -108,12 +108,12 @@
                 "far": "Greater than 10 meters away.",
                 "unknown": "Not able to ascertain distance, signal likely very weak."
               },
-              "meta:titleId": "poi-detail##xdm:proximity##title##21671",
-              "meta:descriptionId": "poi-detail##xdm:proximity##description##80541"
+              "meta:titleId": "poi-detail##xdm:proximity##title##6741",
+              "meta:descriptionId": "poi-detail##xdm:proximity##description##34491"
             }
           },
-          "meta:titleId": "poi-detail##xdm:beaconInteractionDetails##title##54081",
-          "meta:descriptionId": "poi-detail##xdm:beaconInteractionDetails##description##17111"
+          "meta:titleId": "poi-detail##xdm:beaconInteractionDetails##title##27181",
+          "meta:descriptionId": "poi-detail##xdm:beaconInteractionDetails##description##15671"
         },
         "xdm:geoInteractionDetails": {
           "title": "Geo interaction details",
@@ -124,26 +124,26 @@
               "title": "Distance to center",
               "type": "number",
               "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
-              "meta:titleId": "poi-detail##xdm:distanceToCenter##title##66531",
-              "meta:descriptionId": "poi-detail##xdm:distanceToCenter##description##49811"
+              "meta:titleId": "poi-detail##xdm:distanceToCenter##title##11411",
+              "meta:descriptionId": "poi-detail##xdm:distanceToCenter##description##84961"
             },
             "xdm:deviceGeoAccuracy": {
               "title": "Geo device accuracy",
               "type": "number",
               "description": "The accuracy of the geo measuring device or mechanism, measured in meters.",
-              "meta:titleId": "poi-detail##xdm:deviceGeoAccuracy##title##71801",
-              "meta:descriptionId": "poi-detail##xdm:deviceGeoAccuracy##description##78651"
+              "meta:titleId": "poi-detail##xdm:deviceGeoAccuracy##title##9771",
+              "meta:descriptionId": "poi-detail##xdm:deviceGeoAccuracy##description##60121"
             },
             "xdm:geoShape": {
               "title": "Geo shape",
               "$ref": "http://schema.org/GeoShape",
               "description": "Geo shape of the geo being interacted with.",
-              "meta:titleId": "poi-detail##xdm:geoShape##title##99971",
-              "meta:descriptionId": "poi-detail##xdm:geoShape##description##77481"
+              "meta:titleId": "poi-detail##xdm:geoShape##title##47181",
+              "meta:descriptionId": "poi-detail##xdm:geoShape##description##39951"
             }
           },
-          "meta:titleId": "poi-detail##xdm:geoInteractionDetails##title##49271",
-          "meta:descriptionId": "poi-detail##xdm:geoInteractionDetails##description##69741"
+          "meta:titleId": "poi-detail##xdm:geoInteractionDetails##title##47521",
+          "meta:descriptionId": "poi-detail##xdm:geoInteractionDetails##description##39951"
         }
       }
     }
@@ -158,6 +158,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "poi-detail##title##91881",
-  "meta:descriptionId": "poi-detail##description##8791"
+  "meta:titleId": "poi-detail##title##81551",
+  "meta:descriptionId": "poi-detail##description##84901"
 }

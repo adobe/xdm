@@ -20,8 +20,8 @@
           "title": "Global Privacy/Marketing Preference Values",
           "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/consent-preferences",
-          "meta:titleId": "profile-consent##xdm:consentsAndPreferences##title##61731",
-          "meta:descriptionId": "profile-consent##xdm:consentsAndPreferences##description##53281"
+          "meta:titleId": "profile-consent##xdm:consentsAndPreferences##title##84421",
+          "meta:descriptionId": "profile-consent##xdm:consentsAndPreferences##description##9401"
         }
       }
     }
@@ -33,6 +33,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "profile-consent##title##68141",
-  "meta:descriptionId": "profile-consent##description##23891"
+  "meta:titleId": "profile-consent##title##27801",
+  "meta:descriptionId": "profile-consent##description##76521"
 }

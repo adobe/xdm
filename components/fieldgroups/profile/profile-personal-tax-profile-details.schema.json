@@ -30,55 +30,55 @@
                   "title": "Filing Jointly",
                   "type": "boolean",
                   "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:filingJointly##title##17481",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingJointly##description##94761"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:filingJointly##title##88011",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingJointly##description##90691"
                 },
                 "xdm:filingSeparately": {
                   "title": "Filing Separately",
                   "type": "boolean",
                   "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:filingSeparately##title##9011",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingSeparately##description##33361"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:filingSeparately##title##96661",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingSeparately##description##49441"
                 },
                 "xdm:isHeadOfHousehold": {
                   "title": "Head of Household",
                   "type": "boolean",
                   "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:isHeadOfHousehold##title##75301",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:isHeadOfHousehold##description##45961"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:isHeadOfHousehold##title##31",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:isHeadOfHousehold##description##4481"
                 },
                 "xdm:householdIncome": {
                   "title": "Household Income",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                   "description": "Refers to the combined gross income of all members of a household.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:householdIncome##title##73551",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:householdIncome##description##83061"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:householdIncome##title##19991",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:householdIncome##description##93841"
                 },
                 "xdm:singleFiler": {
                   "title": "Single Filer",
                   "type": "boolean",
                   "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:singleFiler##title##67101",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:singleFiler##description##33401"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:singleFiler##title##29561",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:singleFiler##description##81521"
                 },
                 "xdm:taxBracket": {
                   "title": "Tax Bracket",
                   "type": "string",
                   "description": "Refers to a range of incomes subject to a certain income tax rate.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:taxBracket##title##33861",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxBracket##description##84521"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:taxBracket##title##83611",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxBracket##description##74251"
                 },
                 "xdm:taxID": {
                   "title": "Tax ID",
                   "type": "string",
                   "description": "Tax identifier for the individual.",
-                  "meta:titleId": "profile-personal-tax-profile-details##xdm:taxID##title##111",
-                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxID##description##66691"
+                  "meta:titleId": "profile-personal-tax-profile-details##xdm:taxID##title##35821",
+                  "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxID##description##86271"
                 }
               }
             }
           },
-          "meta:descriptionId": "profile-personal-tax-profile-details##xdm:personalFinances##description##40851"
+          "meta:descriptionId": "profile-personal-tax-profile-details##xdm:personalFinances##description##74041"
         }
       }
     }
@@ -89,6 +89,6 @@
     }
   ],
   "meta:status": "stable",
-  "meta:titleId": "profile-personal-tax-profile-details##title##21221",
-  "meta:descriptionId": "profile-personal-tax-profile-details##description##12351"
+  "meta:titleId": "profile-personal-tax-profile-details##title##13291",
+  "meta:descriptionId": "profile-personal-tax-profile-details##description##88281"
 }

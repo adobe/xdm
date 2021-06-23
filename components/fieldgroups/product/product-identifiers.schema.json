@@ -21,23 +21,23 @@
           "title": "Product SKU",
           "type": "string",
           "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
-          "meta:titleId": "product-identifiers##xdm:productSKU##title##68451",
-          "meta:descriptionId": "product-identifiers##xdm:productSKU##description##21"
+          "meta:titleId": "product-identifiers##xdm:productSKU##title##1831",
+          "meta:descriptionId": "product-identifiers##xdm:productSKU##description##20011"
         },
         "xdm:productGTIN": {
           "title": "Product GTIN",
           "type": "string",
           "description": "Global Trade Item Number of the product.",
-          "meta:titleId": "product-identifiers##xdm:productGTIN##title##98551",
-          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##76041"
+          "meta:titleId": "product-identifiers##xdm:productGTIN##title##66221",
+          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##9521"
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
           "format": "uri",
           "description": "The URL for the primary product image of the product.",
-          "meta:titleId": "product-identifiers##xdm:productImageURL##title##56491",
-          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##85341"
+          "meta:titleId": "product-identifiers##xdm:productImageURL##title##80501",
+          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##2581"
         },
         "xdm:productSearchKeywords": {
           "title": "Product Search Keywords",
@@ -46,8 +46,8 @@
             "type": "string"
           },
           "description": "The search keywords associated with the product.",
-          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##10731",
-          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##98211"
+          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##67631",
+          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##76001"
         }
       }
     }
@@ -59,6 +59,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "product-identifiers##title##80691",
-  "meta:descriptionId": "product-identifiers##description##87631"
+  "meta:titleId": "product-identifiers##title##7641",
+  "meta:descriptionId": "product-identifiers##description##37701"
 }

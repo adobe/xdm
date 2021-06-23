@@ -20,22 +20,22 @@
           "title": "Direct marketing address",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
           "description": "Direct marketing postal address.",
-          "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##11951",
-          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##77811"
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##80011",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##81761"
         },
         "xdm:directMarketingEmail": {
           "title": "Direct marketing email",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
           "description": "Direct marketing email address.",
-          "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##98911",
-          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##37821"
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##5111",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##75171"
         },
         "xdm:directMarketingPhone": {
           "title": "Direct marketing phone",
           "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
           "description": "Direct marketing phone number.",
-          "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##74981",
-          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##24261"
+          "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##53051",
+          "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##72381"
         }
       }
     }
@@ -50,6 +50,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-directmarketing##title##85151",
-  "meta:descriptionId": "profile-directmarketing##description##54541"
+  "meta:titleId": "profile-directmarketing##title##87841",
+  "meta:descriptionId": "profile-directmarketing##description##16031"
 }

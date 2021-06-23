@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:opens",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "opens##@id##description##39261"
+          "meta:descriptionId": "opens##@id##description##87281"
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: opens",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "opens##schema:name##description##87271"
+          "meta:descriptionId": "opens##schema:name##description##12121"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "opens##xdm:measurement##description##54141"
+          "meta:descriptionId": "opens##xdm:measurement##description##81771"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "opens##title##88241",
-  "meta:descriptionId": "opens##description##64691"
+  "meta:titleId": "opens##title##35151",
+  "meta:descriptionId": "opens##description##40231"
 }

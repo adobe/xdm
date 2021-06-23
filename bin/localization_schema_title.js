@@ -3,14 +3,13 @@ const glob = require("glob");
 //Following paths should change to include entire folder
 const masterSchemasFolder = "../schemas";
 const masterComponentsFolder = "../components";
-const masterExtensionFolder = "../extensions";
+//const masterExtensionFolder = "../extensions";
 
-var extensionFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
+//var extensionFiles = glob.sync(masterExtensionFolder + "/**/*.schema.json");
 var schemaFiles = glob.sync(masterSchemasFolder + "/**/*.schema.json");
 var componentFiles = glob.sync(masterComponentsFolder + "/**/*.schema.json");
-extensionFiles = extensionFiles.concat(schemaFiles);
-extensionFiles = extensionFiles.concat(componentFiles);
-addmetaTitleAndDecription(extensionFiles)
+schemaFiles = schemaFiles.concat(componentFiles);
+addmetaTitleAndDecription(schemaFiles)
 
 /*This method will renter through every files and
 add meta:titleId and meta:descriptionId to all the files 

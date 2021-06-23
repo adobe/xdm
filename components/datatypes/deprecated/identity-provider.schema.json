@@ -17,7 +17,7 @@
           "type": "string",
           "format": "uri-reference",
           "description": "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the identity provider. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986).",
-          "meta:descriptionId": "identity-provider##@id##description##35141"
+          "meta:descriptionId": "identity-provider##@id##description##62361"
         }
       }
     }
@@ -31,6 +31,6 @@
   "required": ["@id"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "identity-provider##title##71791",
-  "meta:descriptionId": "identity-provider##description##22361"
+  "meta:titleId": "identity-provider##title##76801",
+  "meta:descriptionId": "identity-provider##description##90761"
 }

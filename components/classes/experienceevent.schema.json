@@ -26,8 +26,8 @@
           "title": "ExperienceEvent merge ID",
           "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
           "type": "string",
-          "meta:titleId": "experienceevent##xdm:eventMergeId##title##53121",
-          "meta:descriptionId": "experienceevent##xdm:eventMergeId##description##13471"
+          "meta:titleId": "experienceevent##xdm:eventMergeId##title##19131",
+          "meta:descriptionId": "experienceevent##xdm:eventMergeId##description##15091"
         },
         "xdm:producedBy": {
           "title": "Produced By",
@@ -40,8 +40,8 @@
             "salesRef": "Sales Representative",
             "customerRep": "Customer Representative"
           },
-          "meta:titleId": "experienceevent##xdm:producedBy##title##35361",
-          "meta:descriptionId": "experienceevent##xdm:producedBy##description##46061"
+          "meta:titleId": "experienceevent##xdm:producedBy##title##22021",
+          "meta:descriptionId": "experienceevent##xdm:producedBy##description##23981"
         }
       }
     }
@@ -63,6 +63,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent##title##65521",
-  "meta:descriptionId": "experienceevent##description##74071"
+  "meta:titleId": "experienceevent##title##58361",
+  "meta:descriptionId": "experienceevent##description##41211"
 }

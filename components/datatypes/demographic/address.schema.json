@@ -22,72 +22,72 @@
           "title": "Primary",
           "type": "boolean",
           "description": "Primary address indicator. A profile can have only one `primary` address at a given point of time.",
-          "meta:titleId": "address##xdm:primary##title##28621",
-          "meta:descriptionId": "address##xdm:primary##description##68971"
+          "meta:titleId": "address##xdm:primary##title##7861",
+          "meta:descriptionId": "address##xdm:primary##description##60301"
         },
         "xdm:label": {
           "title": "Label",
           "type": "string",
           "description": "Free form name of the address.",
-          "meta:titleId": "address##xdm:label##title##83531",
-          "meta:descriptionId": "address##xdm:label##description##25441"
+          "meta:titleId": "address##xdm:label##title##39471",
+          "meta:descriptionId": "address##xdm:label##description##90461"
         },
         "xdm:street1": {
           "title": "Street 1",
           "type": "string",
           "description": "Primary street level information, apartment number, street number, and street name.",
-          "meta:titleId": "address##xdm:street1##title##73551",
-          "meta:descriptionId": "address##xdm:street1##description##19321"
+          "meta:titleId": "address##xdm:street1##title##17851",
+          "meta:descriptionId": "address##xdm:street1##description##66511"
         },
         "xdm:street2": {
           "title": "Street 2",
           "type": "string",
           "description": "Optional street information second line.",
-          "meta:titleId": "address##xdm:street2##title##13441",
-          "meta:descriptionId": "address##xdm:street2##description##81291"
+          "meta:titleId": "address##xdm:street2##title##69761",
+          "meta:descriptionId": "address##xdm:street2##description##23701"
         },
         "xdm:street3": {
           "title": "Street 3",
           "type": "string",
           "description": "Optional street information third line.",
-          "meta:titleId": "address##xdm:street3##title##71181",
-          "meta:descriptionId": "address##xdm:street3##description##49541"
+          "meta:titleId": "address##xdm:street3##title##40721",
+          "meta:descriptionId": "address##xdm:street3##description##79851"
         },
         "xdm:street4": {
           "title": "Street 4",
           "type": "string",
           "description": "Optional street information fourth line.",
           "meta:titleId": "address##xdm:street4##title##67941",
-          "meta:descriptionId": "address##xdm:street4##description##58651"
+          "meta:descriptionId": "address##xdm:street4##description##72711"
         },
         "xdm:region": {
           "title": "Region",
           "type": "string",
           "description": "The region, county, or district portion of the address.",
-          "meta:titleId": "address##xdm:region##title##12821",
-          "meta:descriptionId": "address##xdm:region##description##49431"
+          "meta:titleId": "address##xdm:region##title##35971",
+          "meta:descriptionId": "address##xdm:region##description##47261"
         },
         "xdm:postOfficeBox": {
           "title": "Post office box",
           "type": "string",
           "description": "Post office box of the address.",
           "maxLength": 20,
-          "meta:titleId": "address##xdm:postOfficeBox##title##58171",
-          "meta:descriptionId": "address##xdm:postOfficeBox##description##96751"
+          "meta:titleId": "address##xdm:postOfficeBox##title##95821",
+          "meta:descriptionId": "address##xdm:postOfficeBox##description##92471"
         },
         "xdm:country": {
           "title": "Country",
           "type": "string",
           "description": "The name of the government-administered territory. Other than `xdm:countryCode`, this is a free-form field that can have the country name in any language.",
-          "meta:titleId": "address##xdm:country##title##96741",
-          "meta:descriptionId": "address##xdm:country##description##13441"
+          "meta:titleId": "address##xdm:country##title##53821",
+          "meta:descriptionId": "address##xdm:country##description##60201"
         },
         "xdm:state": {
           "title": "State",
           "type": "string",
           "description": "The name of the State. This is a free-form field.",
-          "meta:titleId": "address##xdm:state##title##58631",
-          "meta:descriptionId": "address##xdm:state##description##76581"
+          "meta:titleId": "address##xdm:state##title##75601",
+          "meta:descriptionId": "address##xdm:state##description##45841"
         },
         "xdm:status": {
           "title": "Status",
@@ -101,23 +101,23 @@
             "blacklisted": "Blacklisted",
             "blocked": "Blocked"
           },
-          "meta:titleId": "address##xdm:status##title##60011",
-          "meta:descriptionId": "address##xdm:status##description##14891"
+          "meta:titleId": "address##xdm:status##title##64131",
+          "meta:descriptionId": "address##xdm:status##description##851"
         },
         "xdm:statusReason": {
           "title": "Status reason",
           "type": "string",
           "description": "A description of the current status.",
-          "meta:titleId": "address##xdm:statusReason##title##60801",
-          "meta:descriptionId": "address##xdm:statusReason##description##81051"
+          "meta:titleId": "address##xdm:statusReason##title##20521",
+          "meta:descriptionId": "address##xdm:statusReason##description##8491"
         },
         "xdm:lastVerifiedDate": {
           "title": "Last verified date",
           "type": "string",
           "format": "date",
           "description": "The date that the address was last verified as still associated to the person.",
-          "meta:titleId": "address##xdm:lastVerifiedDate##title##53771",
-          "meta:descriptionId": "address##xdm:lastVerifiedDate##description##40781"
+          "meta:titleId": "address##xdm:lastVerifiedDate##title##2211",
+          "meta:descriptionId": "address##xdm:lastVerifiedDate##description##51391"
         }
       }
     }
@@ -138,6 +138,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "address##title##52181",
-  "meta:descriptionId": "address##description##49371"
+  "meta:titleId": "address##title##43001",
+  "meta:descriptionId": "address##description##24821"
 }

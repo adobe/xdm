@@ -18,22 +18,22 @@
           "title": "Application Identifier",
           "type": "string",
           "description": "Unique identifier of the app.",
-          "meta:titleId": "application##@id##title##621",
-          "meta:descriptionId": "application##@id##description##65841"
+          "meta:titleId": "application##@id##title##83111",
+          "meta:descriptionId": "application##@id##description##65211"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "Name of the app.",
-          "meta:titleId": "application##xdm:name##title##63661",
-          "meta:descriptionId": "application##xdm:name##description##68591"
+          "meta:titleId": "application##xdm:name##title##8331",
+          "meta:descriptionId": "application##xdm:name##description##52691"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
           "description": "Version of the app.",
-          "meta:titleId": "application##xdm:version##title##70431",
-          "meta:descriptionId": "application##xdm:version##description##12601"
+          "meta:titleId": "application##xdm:version##title##4841",
+          "meta:descriptionId": "application##xdm:version##description##15421"
         }
       }
     }
@@ -45,6 +45,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "application##title##42131",
-  "meta:descriptionId": "application##description##83271"
+  "meta:titleId": "application##title##26151",
+  "meta:descriptionId": "application##description##61631"
 }

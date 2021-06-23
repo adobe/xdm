@@ -39,137 +39,137 @@
               "title": "Switch User Accounts",
               "type": "integer",
               "description": "Captures when a visitor switches their account during a visit.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:accountSwitch##title##40011",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:accountSwitch##description##93341"
+              "meta:titleId": "experienceevent-user-login-details##xdm:accountSwitch##title##79831",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:accountSwitch##description##9431"
             },
             "xdm:cookieConsentAccepted": {
               "title": "Cookie Consent Accepted",
               "type": "boolean",
               "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##title##45641",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##description##86901"
+              "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##title##51141",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##description##7511"
             },
             "xdm:cookieConsentViewed": {
               "title": "Cookie Consent Viewed",
               "type": "integer",
               "description": "Tracked when a visitor views the cookie consent information.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentViewed##title##48881",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentViewed##description##61741"
+              "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentViewed##title##72801",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentViewed##description##99541"
             },
             "xdm:forgotPassword": {
               "title": "Forgot Password",
               "type": "integer",
               "description": "Counter event when a visitor begins the forgot password process.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:forgotPassword##title##61321",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotPassword##description##95421"
+              "meta:titleId": "experienceevent-user-login-details##xdm:forgotPassword##title##82391",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotPassword##description##77861"
             },
             "xdm:forgotUsername": {
               "title": "Forgot Username",
               "type": "integer",
               "description": "Counter event when a visitor begins the forgot username process.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:forgotUsername##title##27531",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotUsername##description##91381"
+              "meta:titleId": "experienceevent-user-login-details##xdm:forgotUsername##title##71571",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotUsername##description##29401"
             },
             "xdm:login": {
               "title": "Visitor Login",
               "type": "integer",
               "description": "Counter event indicating a successful visitor login.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:login##title##58971",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:login##description##68391"
+              "meta:titleId": "experienceevent-user-login-details##xdm:login##title##9611",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:login##description##17561"
             },
             "xdm:loginBiometric": {
               "title": "Biometric Authentication",
               "type": "boolean",
               "description": "Flag determining if the user has used a biometric authentication process to login.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginBiometric##title##74101",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginBiometric##description##99451"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginBiometric##title##77011",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginBiometric##description##70331"
             },
             "xdm:loginFailure": {
               "title": "Visitor Login Failure",
               "type": "integer",
               "description": "Counter event indicating a failed visitor login attempt.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginFailure##title##81181",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginFailure##description##21651"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginFailure##title##50511",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginFailure##description##49331"
             },
             "xdm:loginLocation": {
               "title": "Login Page Location",
               "type": "string",
               "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginLocation##title##74701",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginLocation##description##91081"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginLocation##title##48691",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginLocation##description##83411"
             },
             "xdm:loginKeychain": {
               "title": "Keychain ",
               "type": "boolean",
               "description": "Flag determining if the user has used a keychain authentication process to login.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginKeychain##title##80751",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginKeychain##description##79121"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginKeychain##title##97921",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginKeychain##description##4601"
             },
             "xdm:loginMultiFactor": {
               "title": "Multi-Factor Authentication",
               "type": "boolean",
               "description": "Flag determining if the user has used a multi-factor authentication process to login.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginMultiFactor##title##47311",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginMultiFactor##description##63311"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginMultiFactor##title##51661",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginMultiFactor##description##16611"
             },
             "xdm:loginStatus": {
               "title": "Login Status",
               "type": "string",
               "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginStatus##title##46891",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginStatus##description##60651"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginStatus##title##9661",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginStatus##description##17931"
             },
             "xdm:loginThirdParty": {
               "title": "Login with Third Party",
               "type": "integer",
               "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdParty##title##91261",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdParty##description##77981"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdParty##title##77121",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdParty##description##10781"
             },
             "xdm:loginThirdPartySite": {
               "title": "Third Party Login Site",
               "type": "string",
               "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdPartySite##title##87901",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdPartySite##description##9101"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdPartySite##title##82101",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdPartySite##description##54831"
             },
             "xdm:loginType": {
               "title": "User Login Type",
               "type": "string",
               "description": "Email address vs social login",
-              "meta:titleId": "experienceevent-user-login-details##xdm:loginType##title##85241",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginType##description##9951"
+              "meta:titleId": "experienceevent-user-login-details##xdm:loginType##title##59801",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:loginType##description##67841"
             },
             "xdm:logout": {
               "title": "Visitor Logout",
               "type": "integer",
               "description": "Counter event indicating a successful visitor logout.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:logout##title##39311",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:logout##description##62501"
+              "meta:titleId": "experienceevent-user-login-details##xdm:logout##title##30251",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:logout##description##9381"
             },
             "xdm:resetPassword": {
               "title": "Reset Password",
               "type": "integer",
               "description": "Counter event when a visitor begins the reset password process.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:resetPassword##title##35931",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:resetPassword##description##8581"
+              "meta:titleId": "experienceevent-user-login-details##xdm:resetPassword##title##48211",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:resetPassword##description##26071"
             },
             "xdm:sessionTimeout": {
               "title": "Session Timeout",
               "type": "integer",
               "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:sessionTimeout##title##6061",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:sessionTimeout##description##41551"
+              "meta:titleId": "experienceevent-user-login-details##xdm:sessionTimeout##title##9111",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:sessionTimeout##description##34201"
             },
             "xdm:updateProfile": {
               "title": "Account Profile Update",
               "type": "integer",
               "description": "Counter event indicating a user has updated their account profile.",
-              "meta:titleId": "experienceevent-user-login-details##xdm:updateProfile##title##76221",
-              "meta:descriptionId": "experienceevent-user-login-details##xdm:updateProfile##description##22201"
+              "meta:titleId": "experienceevent-user-login-details##xdm:updateProfile##title##26881",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:updateProfile##description##78111"
             }
           },
-          "meta:descriptionId": "experienceevent-user-login-details##xdm:userAccount##description##96711"
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:userAccount##description##24221"
         }
       }
     }
@@ -181,6 +181,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
-  "meta:titleId": "experienceevent-user-login-details##title##12531",
-  "meta:descriptionId": "experienceevent-user-login-details##description##57781"
+  "meta:titleId": "experienceevent-user-login-details##title##51971",
+  "meta:descriptionId": "experienceevent-user-login-details##description##22841"
 }

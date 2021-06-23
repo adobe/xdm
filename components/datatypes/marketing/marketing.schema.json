@@ -18,22 +18,22 @@
           "title": "Tracking code",
           "type": "string",
           "description": "Tracking code that can be used to identify the marketing campaign the event is associated with.",
-          "meta:titleId": "marketing##xdm:trackingCode##title##72531",
-          "meta:descriptionId": "marketing##xdm:trackingCode##description##32411"
+          "meta:titleId": "marketing##xdm:trackingCode##title##71381",
+          "meta:descriptionId": "marketing##xdm:trackingCode##description##68871"
         },
         "xdm:campaignName": {
           "title": "Campaign name",
           "type": "string",
           "description": "Name of the campaign used to identify marketing campaign like '50%_DISCOUNT_USA' or '50%_DISCOUNT_ASIA'.",
-          "meta:titleId": "marketing##xdm:campaignName##title##24761",
-          "meta:descriptionId": "marketing##xdm:campaignName##description##47631"
+          "meta:titleId": "marketing##xdm:campaignName##title##34841",
+          "meta:descriptionId": "marketing##xdm:campaignName##description##77031"
         },
         "xdm:campaignGroup": {
           "title": "Campaign group",
           "type": "string",
           "description": "Name of the campaign group where multiple campaigns are grouped together like '50%_DISCOUNT'.",
-          "meta:titleId": "marketing##xdm:campaignGroup##title##79411",
-          "meta:descriptionId": "marketing##xdm:campaignGroup##description##15311"
+          "meta:titleId": "marketing##xdm:campaignGroup##title##21391",
+          "meta:descriptionId": "marketing##xdm:campaignGroup##description##64771"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "marketing##title##38411",
-  "meta:descriptionId": "marketing##description##75451"
+  "meta:titleId": "marketing##title##48491",
+  "meta:descriptionId": "marketing##description##65881"
 }

@@ -20,37 +20,37 @@
           "type": "string",
           "format": "uri-reference",
           "description": "Identifies an instance of a content stream unique to an individual playback.",
-          "meta:titleId": "media-timed-asset-view-details##@id##title##54271",
-          "meta:descriptionId": "media-timed-asset-view-details##@id##description##97821"
+          "meta:titleId": "media-timed-asset-view-details##@id##title##7481",
+          "meta:descriptionId": "media-timed-asset-view-details##@id##description##64061"
         },
         "xdm:playerName": {
           "title": "Content player name",
           "type": "string",
           "description": "Name of the content player.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:playerName##title##40151",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:playerName##description##17011"
+          "meta:titleId": "media-timed-asset-view-details##xdm:playerName##title##62371",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:playerName##description##19171"
         },
         "xdm:videoSegment": {
           "title": "Video segment",
           "type": "string",
           "pattern": "^[0-9]+-[0-9]+$",
           "description": "The interval that describes the part of the content that has been viewed in minutes.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:videoSegment##title##48891",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:videoSegment##description##45701"
+          "meta:titleId": "media-timed-asset-view-details##xdm:videoSegment##title##12951",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:videoSegment##description##57331"
         },
         "xdm:path": {
           "title": "Video path",
           "type": "string",
           "description": "The path to the video in the app or site.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:path##title##26071",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:path##description##98791"
+          "meta:titleId": "media-timed-asset-view-details##xdm:path##title##81511",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:path##description##5511"
         },
         "xdm:broadcastChannel": {
           "title": "Content channel",
           "type": "string",
           "description": "Distribution channel from where the content was played.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastChannel##title##38831",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastChannel##description##21601"
+          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastChannel##title##55121",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastChannel##description##54911"
         },
         "xdm:broadcastContentType": {
           "title": "Broadcast content type",
@@ -65,99 +65,99 @@
             "Podcast": "Audio podcast",
             "Audiobook": "Audiobook"
           },
-          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastContentType##title##45281",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastContentType##description##24391"
+          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastContentType##title##8641",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastContentType##description##74601"
         },
         "xdm:playerSDKVersion": {
           "title": "Player SDK version",
           "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
           "description": "The SDK version used by the player.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:playerSDKVersion##title##18271",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:playerSDKVersion##description##21281"
+          "meta:titleId": "media-timed-asset-view-details##xdm:playerSDKVersion##title##73061",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:playerSDKVersion##description##39051"
         },
         "xdm:vhlVersion": {
           "title": "VHL version",
           "type": "string",
           "description": "The Media SDK version used for the tracking session.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:vhlVersion##title##67801",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:vhlVersion##description##36791"
+          "meta:titleId": "media-timed-asset-view-details##xdm:vhlVersion##title##80821",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:vhlVersion##description##2641"
         },
         "xdm:broadcastNetwork": {
           "title": "Broadcast network",
           "type": "string",
           "description": "The programmer network name.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastNetwork##title##68371",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastNetwork##description##16341"
+          "meta:titleId": "media-timed-asset-view-details##xdm:broadcastNetwork##title##6381",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:broadcastNetwork##description##55321"
         },
         "xdm:adLoadType": {
           "title": "Ad load type",
           "type": "string",
           "description": "The type of ad loaded as defined by each customer's internal representation.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:adLoadType##title##14511",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:adLoadType##description##81571"
+          "meta:titleId": "media-timed-asset-view-details##xdm:adLoadType##title##78481",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:adLoadType##description##56441"
         },
         "xdm:sourceFeed": {
           "title": "Feed type",
           "type": "string",
           "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:sourceFeed##title##17901",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:sourceFeed##description##18381"
+          "meta:titleId": "media-timed-asset-view-details##xdm:sourceFeed##title##22921",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:sourceFeed##description##48531"
         },
         "xdm:sessionTimeout": {
           "title": "Media session server timeout",
           "type": "integer",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:sessionTimeout##title##8431",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:sessionTimeout##description##18191"
+          "meta:titleId": "media-timed-asset-view-details##xdm:sessionTimeout##title##32231",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:sessionTimeout##description##96711"
         },
         "xdm:qoe": {
           "title": "Quality of experience",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-qoe",
           "description": "Timed media properties related to the content playback's quality of experience (QoE).",
-          "meta:titleId": "media-timed-asset-view-details##xdm:qoe##title##43031",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:qoe##description##73761"
+          "meta:titleId": "media-timed-asset-view-details##xdm:qoe##title##8141",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:qoe##description##7971"
         },
         "xdm:downloadedPlayback": {
           "title": "Media downloaded flag",
           "type": "boolean",
           "description": "The stream was played locally on the device after being downloaded.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:downloadedPlayback##title##41911",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:downloadedPlayback##description##42521"
+          "meta:titleId": "media-timed-asset-view-details##xdm:downloadedPlayback##title##53121",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:downloadedPlayback##description##69551"
         },
         "xdm:fullScreen": {
           "title": "Full screen",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to full screen player state.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:fullScreen##title##75401",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:fullScreen##description##91341"
+          "meta:titleId": "media-timed-asset-view-details##xdm:fullScreen##title##24981",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:fullScreen##description##92851"
         },
         "xdm:mute": {
           "title": "Mute",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to mute player state.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:mute##title##13771",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:mute##description##72731"
+          "meta:titleId": "media-timed-asset-view-details##xdm:mute##title##87671",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:mute##description##98721"
         },
         "xdm:closeCaption": {
           "title": "Close caption",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to close caption player state.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:closeCaption##title##241",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:closeCaption##description##23131"
+          "meta:titleId": "media-timed-asset-view-details##xdm:closeCaption##title##88471",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:closeCaption##description##77851"
         },
         "xdm:pictureInPicture": {
           "title": "Picture in picture",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to picture in picture player state.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:pictureInPicture##title##20941",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:pictureInPicture##description##86031"
+          "meta:titleId": "media-timed-asset-view-details##xdm:pictureInPicture##title##54241",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:pictureInPicture##description##52561"
         },
         "xdm:inFocus": {
           "title": "In focus",
           "$ref": "https://ns.adobe.com/xdm/context/player-state",
           "description": "Timed media properties related to in focus player state.",
-          "meta:titleId": "media-timed-asset-view-details##xdm:inFocus##title##28491",
-          "meta:descriptionId": "media-timed-asset-view-details##xdm:inFocus##description##79441"
+          "meta:titleId": "media-timed-asset-view-details##xdm:inFocus##title##21381",
+          "meta:descriptionId": "media-timed-asset-view-details##xdm:inFocus##description##76791"
         }
       }
     }
@@ -171,6 +171,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media-timed-asset-view-details##title##36921",
-  "meta:descriptionId": "media-timed-asset-view-details##description##30461"
+  "meta:titleId": "media-timed-asset-view-details##title##11421",
+  "meta:descriptionId": "media-timed-asset-view-details##description##59201"
 }

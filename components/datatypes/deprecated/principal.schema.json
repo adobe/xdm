@@ -15,23 +15,23 @@
     "xdm:provider": {
       "description": "The identity provider that manages this principal.",
       "$ref": "https://ns.adobe.com/xdm/common/identity-provider",
-      "meta:descriptionId": "principal##xdm:provider##description##75421"
+      "meta:descriptionId": "principal##xdm:provider##description##51701"
     },
     "@id": {
       "type": "string",
       "description": "A unique (uniqueness is defined on the same lines as defined [here](https://tools.ietf.org/html/rfc8141#section-5)) and persistent identifier for the principal. Ideally, this identifier should be a [URI](https://tools.ietf.org/html/rfc3986).",
-      "meta:descriptionId": "principal##@id##description##37261"
+      "meta:descriptionId": "principal##@id##description##39981"
     },
     "@type": {
       "type": "string",
       "format": "uri",
       "description": "The type of the principal. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
-      "meta:descriptionId": "principal##@type##description##30161"
+      "meta:descriptionId": "principal##@type##description##62541"
     }
   },
   "required": ["xdm:provider", "@id", "@type"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "principal##title##18691",
-  "meta:descriptionId": "principal##description##75781"
+  "meta:titleId": "principal##title##6081",
+  "meta:descriptionId": "principal##description##91981"
 }

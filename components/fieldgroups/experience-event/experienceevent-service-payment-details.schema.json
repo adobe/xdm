@@ -27,11 +27,11 @@
               "title": "Service Payment",
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "description": "Extension of transaction data type.",
-              "meta:titleId": "experienceevent-service-payment-details##xdm:servicePayment##title##32161",
-              "meta:descriptionId": "experienceevent-service-payment-details##xdm:servicePayment##description##91771"
+              "meta:titleId": "experienceevent-service-payment-details##xdm:servicePayment##title##21691",
+              "meta:descriptionId": "experienceevent-service-payment-details##xdm:servicePayment##description##61191"
             }
           },
-          "meta:descriptionId": "experienceevent-service-payment-details##xdm:service-payment-details##description##90511"
+          "meta:descriptionId": "experienceevent-service-payment-details##xdm:service-payment-details##description##90401"
         }
       }
     }
@@ -43,6 +43,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
-  "meta:titleId": "experienceevent-service-payment-details##title##40541",
-  "meta:descriptionId": "experienceevent-service-payment-details##description##4531"
+  "meta:titleId": "experienceevent-service-payment-details##title##21851",
+  "meta:descriptionId": "experienceevent-service-payment-details##description##64881"
 }

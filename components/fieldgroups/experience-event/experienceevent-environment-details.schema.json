@@ -23,22 +23,22 @@
           "title": "Environment",
           "$ref": "https://ns.adobe.com/xdm/context/environment",
           "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
-          "meta:titleId": "experienceevent-environment-details##xdm:environment##title##68281",
-          "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##36571"
+          "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+          "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071"
         },
         "xdm:device": {
           "title": "Device",
           "$ref": "https://ns.adobe.com/xdm/context/device",
           "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-          "meta:titleId": "experienceevent-environment-details##xdm:device##title##7891",
-          "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##15131"
+          "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+          "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621"
         },
         "xdm:placeContext": {
           "title": "Place context",
           "$ref": "https://ns.adobe.com/xdm/context/placecontext",
           "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-          "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##82201",
-          "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##24801"
+          "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+          "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761"
         }
       }
     }
@@ -53,6 +53,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent-environment-details##title##68411",
-  "meta:descriptionId": "experienceevent-environment-details##description##20471"
+  "meta:titleId": "experienceevent-environment-details##title##62031",
+  "meta:descriptionId": "experienceevent-environment-details##description##46401"
 }

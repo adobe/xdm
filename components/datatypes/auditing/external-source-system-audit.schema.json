@@ -18,62 +18,62 @@
           "title": "Created By",
           "description": "Name of the user who created this record",
           "type": "string",
-          "meta:titleId": "external-source-system-audit##xdm:createdBy##title##49641",
-          "meta:descriptionId": "external-source-system-audit##xdm:createdBy##description##51481"
+          "meta:titleId": "external-source-system-audit##xdm:createdBy##title##86041",
+          "meta:descriptionId": "external-source-system-audit##xdm:createdBy##description##21461"
         },
         "xdm:createdDate": {
           "title": "Created Date",
           "description": "Date when this record was created.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "external-source-system-audit##xdm:createdDate##title##52711",
-          "meta:descriptionId": "external-source-system-audit##xdm:createdDate##description##35351"
+          "meta:titleId": "external-source-system-audit##xdm:createdDate##title##50541",
+          "meta:descriptionId": "external-source-system-audit##xdm:createdDate##description##23861"
         },
         "xdm:lastUpdatedBy": {
           "title": "Last Updated By",
           "description": "User who last modified this record.",
           "type": "string",
-          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedBy##title##1161",
-          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedBy##description##26951"
+          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedBy##title##95231",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedBy##description##96451"
         },
         "xdm:lastUpdatedDate": {
           "title": "Last Updated Date",
           "description": "Date when this record was last modofied.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedDate##title##96631",
-          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedDate##description##20251"
+          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedDate##title##84601",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedDate##description##79321"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##55451",
-          "meta:descriptionId": "external-source-system-audit##xdm:lastActivityDate##description##67571"
+          "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##16601",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastActivityDate##description##37181"
         },
         "xdm:lastReferencedDate": {
           "title": "Last Referenced Date",
           "description": "Last referenced date.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "external-source-system-audit##xdm:lastReferencedDate##title##73841",
-          "meta:descriptionId": "external-source-system-audit##xdm:lastReferencedDate##description##29781"
+          "meta:titleId": "external-source-system-audit##xdm:lastReferencedDate##title##82511",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastReferencedDate##description##63581"
         },
         "xdm:lastViewedDate": {
           "title": "Last Viewed Date",
           "description": "Last viewed date.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "external-source-system-audit##xdm:lastViewedDate##title##20441",
-          "meta:descriptionId": "external-source-system-audit##xdm:lastViewedDate##description##45211"
+          "meta:titleId": "external-source-system-audit##xdm:lastViewedDate##title##24171",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastViewedDate##description##60401"
         },
         "xdm:externalID": {
           "title": "External ID",
           "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",
           "type": "string",
-          "meta:titleId": "external-source-system-audit##xdm:externalID##title##99511",
-          "meta:descriptionId": "external-source-system-audit##xdm:externalID##description##43881"
+          "meta:titleId": "external-source-system-audit##xdm:externalID##title##78121",
+          "meta:descriptionId": "external-source-system-audit##xdm:externalID##description##94841"
         }
       }
     }
@@ -88,6 +88,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "external-source-system-audit##title##85851",
-  "meta:descriptionId": "external-source-system-audit##description##89021"
+  "meta:titleId": "external-source-system-audit##title##83631",
+  "meta:descriptionId": "external-source-system-audit##description##45491"
 }

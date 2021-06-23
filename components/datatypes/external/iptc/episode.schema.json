@@ -17,23 +17,23 @@
           "title": "Episode Name",
           "type": "string",
           "description": "Name of the episode.",
-          "meta:titleId": "episode##iptc4xmpExt:Name##title##85081",
-          "meta:descriptionId": "episode##iptc4xmpExt:Name##description##79261"
+          "meta:titleId": "episode##iptc4xmpExt:Name##title##56221",
+          "meta:descriptionId": "episode##iptc4xmpExt:Name##description##9511"
         },
         "iptc4xmpExt:Number": {
           "title": "Episode Number",
           "type": "number",
           "description": "Number of the episode.",
-          "meta:titleId": "episode##iptc4xmpExt:Number##title##60321",
-          "meta:descriptionId": "episode##iptc4xmpExt:Number##description##99161"
+          "meta:titleId": "episode##iptc4xmpExt:Number##title##63461",
+          "meta:descriptionId": "episode##iptc4xmpExt:Number##description##4391"
         },
         "iptc4xmpExt:Identifier": {
           "title": "Episode Identifier",
           "type": "string",
           "format": "uri",
           "description": "Identifier of the episode.",
-          "meta:titleId": "episode##iptc4xmpExt:Identifier##title##42161",
-          "meta:descriptionId": "episode##iptc4xmpExt:Identifier##description##37601"
+          "meta:titleId": "episode##iptc4xmpExt:Identifier##title##22091",
+          "meta:descriptionId": "episode##iptc4xmpExt:Identifier##description##57201"
         }
       }
     }
@@ -45,6 +45,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "episode##title##48511",
-  "meta:descriptionId": "episode##description##99121"
+  "meta:titleId": "episode##title##98511",
+  "meta:descriptionId": "episode##description##24451"
 }

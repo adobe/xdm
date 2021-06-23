@@ -34,15 +34,15 @@
               "title": "Autopay Enrollment",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##title##51531",
-              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##description##7541"
+              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##title##25151",
+              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollment##description##37431"
             },
             "xdm:autoPayEnrollmentStatus": {
               "title": "Autopay Status",
               "type": "boolean",
               "description": "Tracks the visitor's autopay enrollment status.",
-              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##title##5651",
-              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##description##20431"
+              "meta:titleId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##title##71471",
+              "meta:descriptionId": "experienceevent-autopay-enrollment-details##xdm:autoPayEnrollmentStatus##description##48901"
             }
           }
         }
@@ -56,6 +56,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-autopay-enrollment-details##title##11581",
-  "meta:descriptionId": "experienceevent-autopay-enrollment-details##description##50681"
+  "meta:titleId": "experienceevent-autopay-enrollment-details##title##71701",
+  "meta:descriptionId": "experienceevent-autopay-enrollment-details##description##84181"
 }

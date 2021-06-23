@@ -19,15 +19,15 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The ID associated with this geographical unit.",
-          "meta:titleId": "geounit##@id##title##83421",
-          "meta:descriptionId": "geounit##@id##description##74821"
+          "meta:titleId": "geounit##@id##title##3971",
+          "meta:descriptionId": "geounit##@id##description##45141"
         },
         "xdm:label": {
           "title": "Label of the geographical unit.",
           "type": "string",
           "description": "The user-friendly name for the geographical unit.",
-          "meta:titleId": "geounit##xdm:label##title##51081",
-          "meta:descriptionId": "geounit##xdm:label##description##1381"
+          "meta:titleId": "geounit##xdm:label##title##71171",
+          "meta:descriptionId": "geounit##xdm:label##description##16511"
         }
       },
       "required": ["@id"]
@@ -40,6 +40,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "geounit##title##60811",
-  "meta:descriptionId": "geounit##description##10971"
+  "meta:titleId": "geounit##title##59781",
+  "meta:descriptionId": "geounit##description##91921"
 }

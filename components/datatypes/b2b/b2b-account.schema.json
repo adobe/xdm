@@ -19,42 +19,42 @@
           "title": "Account Name",
           "description": "name of company. Up to 255 characters are allowed in this field.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountName##title##44661",
-          "meta:descriptionId": "b2b-account##xdm:accountName##description##75921"
+          "meta:titleId": "b2b-account##xdm:accountName##title##89121",
+          "meta:descriptionId": "b2b-account##xdm:accountName##description##40251"
         },
         "xdm:accountTerritoryID": {
           "title": "Account Territory Id",
           "description": "The territory to which the account has been assigned.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountTerritoryID##title##98461",
-          "meta:descriptionId": "b2b-account##xdm:accountTerritoryID##description##69431"
+          "meta:titleId": "b2b-account##xdm:accountTerritoryID##title##84841",
+          "meta:descriptionId": "b2b-account##xdm:accountTerritoryID##description##58351"
         },
         "xdm:accountScore": {
           "title": "Account Score",
           "type": "number",
-          "meta:titleId": "b2b-account##xdm:accountScore##title##15331"
+          "meta:titleId": "b2b-account##xdm:accountScore##title##53461"
         },
         "xdm:accountBillingAddress": {
           "title": "Account Billing Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "meta:titleId": "b2b-account##xdm:accountBillingAddress##title##31731"
+          "meta:titleId": "b2b-account##xdm:accountBillingAddress##title##27121"
         },
         "xdm:accountShippingAddress": {
           "title": "Account Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "meta:titleId": "b2b-account##xdm:accountShippingAddress##title##37171"
+          "meta:titleId": "b2b-account##xdm:accountShippingAddress##title##13231"
         },
         "xdm:accountPhysicalAddress": {
           "title": "Account Physical Address",
           "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "meta:titleId": "b2b-account##xdm:accountPhysicalAddress##title##64791",
-          "meta:descriptionId": "b2b-account##xdm:accountPhysicalAddress##description##31541"
+          "meta:titleId": "b2b-account##xdm:accountPhysicalAddress##title##57531",
+          "meta:descriptionId": "b2b-account##xdm:accountPhysicalAddress##description##98081"
         },
         "xdm:accountOrganization": {
           "title": "Account Organization",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization",
-          "meta:titleId": "b2b-account##xdm:accountOrganization##title##21441"
+          "meta:titleId": "b2b-account##xdm:accountOrganization##title##85741"
         }
       }
     },
@@ -64,50 +64,50 @@
           "title": "Parent Account",
           "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountParentID##title##6151",
-          "meta:descriptionId": "b2b-account##xdm:accountParentID##description##941"
+          "meta:titleId": "b2b-account##xdm:accountParentID##title##90541",
+          "meta:descriptionId": "b2b-account##xdm:accountParentID##description##33101"
         },
         "xdm:partnerAccountID": {
           "title": "Partner Account Id",
           "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:partnerAccountID##title##78561",
-          "meta:descriptionId": "b2b-account##xdm:partnerAccountID##description##11201"
+          "meta:titleId": "b2b-account##xdm:partnerAccountID##title##43571",
+          "meta:descriptionId": "b2b-account##xdm:partnerAccountID##description##19311"
         },
         "xdm:accountNumber": {
           "title": "Account Number",
           "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountNumber##title##5401",
-          "meta:descriptionId": "b2b-account##xdm:accountNumber##description##82391"
+          "meta:titleId": "b2b-account##xdm:accountNumber##title##2231",
+          "meta:descriptionId": "b2b-account##xdm:accountNumber##description##86321"
         },
         "xdm:accountDescription": {
           "title": "Account Description",
           "description": "Text description of the account.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountDescription##title##4211",
-          "meta:descriptionId": "b2b-account##xdm:accountDescription##description##11781"
+          "meta:titleId": "b2b-account##xdm:accountDescription##title##35951",
+          "meta:descriptionId": "b2b-account##xdm:accountDescription##description##34701"
         },
         "xdm:accountSite": {
           "title": "Account Site Details",
           "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountSite##title##22071",
-          "meta:descriptionId": "b2b-account##xdm:accountSite##description##75901"
+          "meta:titleId": "b2b-account##xdm:accountSite##title##81221",
+          "meta:descriptionId": "b2b-account##xdm:accountSite##description##99491"
         },
         "xdm:accountType": {
           "title": "Account Type",
           "description": "Account Type.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountType##title##35021",
-          "meta:descriptionId": "b2b-account##xdm:accountType##description##35291"
+          "meta:titleId": "b2b-account##xdm:accountType##title##67701",
+          "meta:descriptionId": "b2b-account##xdm:accountType##description##61581"
         },
         "xdm:accountSourceType": {
           "title": "Account Source Type",
           "description": "Source type for the account.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountSourceType##title##40711",
-          "meta:descriptionId": "b2b-account##xdm:accountSourceType##description##71801"
+          "meta:titleId": "b2b-account##xdm:accountSourceType##title##97021",
+          "meta:descriptionId": "b2b-account##xdm:accountSourceType##description##60871"
         },
         "xdm:defaultCurrencyCode": {
           "title": "Default Currency Code",
@@ -115,36 +115,36 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code.",
-          "meta:titleId": "b2b-account##xdm:defaultCurrencyCode##title##49261",
-          "meta:descriptionId": "b2b-account##xdm:defaultCurrencyCode##description##67311"
+          "meta:titleId": "b2b-account##xdm:defaultCurrencyCode##title##54301",
+          "meta:descriptionId": "b2b-account##xdm:defaultCurrencyCode##description##9871"
         },
         "xdm:accountOwnership": {
           "title": "Ownership",
           "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountOwnership##title##79171",
-          "meta:descriptionId": "b2b-account##xdm:accountOwnership##description##63611"
+          "meta:titleId": "b2b-account##xdm:accountOwnership##title##1031",
+          "meta:descriptionId": "b2b-account##xdm:accountOwnership##description##46281"
         },
         "xdm:accountTradeStyle": {
           "title": "Account Trade Style",
           "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
           "type": "string",
-          "meta:titleId": "b2b-account##xdm:accountTradeStyle##title##94001",
-          "meta:descriptionId": "b2b-account##xdm:accountTradeStyle##description##67441"
+          "meta:titleId": "b2b-account##xdm:accountTradeStyle##title##71421",
+          "meta:descriptionId": "b2b-account##xdm:accountTradeStyle##description##87011"
         },
         "xdm:accountPhone": {
           "title": "Account Phone Number",
           "description": "Phone number for the account.",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "meta:titleId": "b2b-account##xdm:accountPhone##title##29001",
-          "meta:descriptionId": "b2b-account##xdm:accountPhone##description##8291"
+          "meta:titleId": "b2b-account##xdm:accountPhone##title##25861",
+          "meta:descriptionId": "b2b-account##xdm:accountPhone##description##88221"
         },
         "xdm:accountFax": {
           "title": "Account Fax Number",
           "description": "Fax number for the account.",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "meta:titleId": "b2b-account##xdm:accountFax##title##16951",
-          "meta:descriptionId": "b2b-account##xdm:accountFax##description##53451"
+          "meta:titleId": "b2b-account##xdm:accountFax##title##30841",
+          "meta:descriptionId": "b2b-account##xdm:accountFax##description##15221"
         }
       }
     }
@@ -162,6 +162,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "b2b-account##title##25141",
-  "meta:descriptionId": "b2b-account##description##28291"
+  "meta:titleId": "b2b-account##title##93171",
+  "meta:descriptionId": "b2b-account##description##96811"
 }

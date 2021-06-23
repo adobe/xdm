@@ -22,14 +22,14 @@
           "title": "Type",
           "type": "string",
           "const": "xdm:descriptorReferenceIdentity",
-          "meta:titleId": "descriptorReferenceIdentity##@type##title##59431"
+          "meta:titleId": "descriptorReferenceIdentity##@type##title##32431"
         },
         "xdm:identityNamespace": {
           "title": "Identity Namespace",
           "type": "string",
           "description": "The namespace code defined in identity system.",
-          "meta:titleId": "descriptorReferenceIdentity##xdm:identityNamespace##title##44161",
-          "meta:descriptionId": "descriptorReferenceIdentity##xdm:identityNamespace##description##88421"
+          "meta:titleId": "descriptorReferenceIdentity##xdm:identityNamespace##title##96071",
+          "meta:descriptionId": "descriptorReferenceIdentity##xdm:identityNamespace##description##59021"
         }
       },
       "required": ["xdm:sourceProperty", "xdm:identityNamespace"]
@@ -45,6 +45,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "descriptorReferenceIdentity##title##12121",
-  "meta:descriptionId": "descriptorReferenceIdentity##description##54311"
+  "meta:titleId": "descriptorReferenceIdentity##title##13411",
+  "meta:descriptionId": "descriptorReferenceIdentity##description##16361"
 }

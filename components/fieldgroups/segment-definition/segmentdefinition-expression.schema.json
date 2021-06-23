@@ -27,26 +27,26 @@
               "type": "string",
               "description": "Type of expression, for example, PQL, Query Service, or Adobe Audience Manager.",
               "meta:enum": ["PQL", "AAM", "QUERYSERVICE"],
-              "meta:titleId": "segmentdefinition-expression##xdm:expressionType##title##3811",
-              "meta:descriptionId": "segmentdefinition-expression##xdm:expressionType##description##1771"
+              "meta:titleId": "segmentdefinition-expression##xdm:expressionType##title##31171",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:expressionType##description##36531"
             },
             "xdm:mimeType": {
               "title": "Expression mime type",
               "type": "string",
               "description": "Mime type of the expression. For example, pql/text or application/sql.",
               "pattern": "\\w+/[-.\\w]+(?:\\+[-.\\w]+)?",
-              "meta:titleId": "segmentdefinition-expression##xdm:mimeType##title##14021",
-              "meta:descriptionId": "segmentdefinition-expression##xdm:mimeType##description##64611"
+              "meta:titleId": "segmentdefinition-expression##xdm:mimeType##title##98071",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:mimeType##description##14531"
             },
             "xdm:value": {
               "title": "Value",
               "type": "string",
               "description": "Actual expression string. The syntax of expression will depend upon specified mime type.",
-              "meta:titleId": "segmentdefinition-expression##xdm:value##title##2711",
-              "meta:descriptionId": "segmentdefinition-expression##xdm:value##description##88211"
+              "meta:titleId": "segmentdefinition-expression##xdm:value##title##55181",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:value##description##20121"
             }
           },
-          "meta:titleId": "segmentdefinition-expression##xdm:segmentExpression##title##79271"
+          "meta:titleId": "segmentdefinition-expression##xdm:segmentExpression##title##76051"
         }
       }
     }
@@ -61,6 +61,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "segmentdefinition-expression##title##48971",
-  "meta:descriptionId": "segmentdefinition-expression##description##14661"
+  "meta:titleId": "segmentdefinition-expression##title##33401",
+  "meta:descriptionId": "segmentdefinition-expression##description##2571"
 }

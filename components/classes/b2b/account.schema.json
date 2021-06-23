@@ -24,8 +24,8 @@
           "title": "Account identifer",
           "description": "Unique ID for the account.",
           "type": "string",
-          "meta:titleId": "account##xdm:accountID##title##60161",
-          "meta:descriptionId": "account##xdm:accountID##description##46131"
+          "meta:titleId": "account##xdm:accountID##title##59121",
+          "meta:descriptionId": "account##xdm:accountID##description##27991"
         }
       }
     }
@@ -46,6 +46,6 @@
   ],
   "required": ["xdm:accountID"],
   "meta:status": "experimental",
-  "meta:titleId": "account##title##40331",
-  "meta:descriptionId": "account##description##14061"
+  "meta:titleId": "account##title##4841",
+  "meta:descriptionId": "account##description##65781"
 }

@@ -27,8 +27,8 @@
               "title": "Account Cards Total",
               "type": "integer",
               "description": "Total number of account (financial) cards assigned to a user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##42311",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##5271"
+              "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##471",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##25401"
             },
             "xdm:assignedBeneficiary": {
               "title": "Assigned Beneficiaries",
@@ -37,8 +37,8 @@
                 "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
               },
               "description": "Captures the beneficiary(s) assigned to the account.",
-              "meta:titleId": "profile-personal-finance-details##xdm:assignedBeneficiary##title##57501",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:assignedBeneficiary##description##34381"
+              "meta:titleId": "profile-personal-finance-details##xdm:assignedBeneficiary##title##64441",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:assignedBeneficiary##description##12801"
             },
             "xdm:creditScores": {
               "type": "array",
@@ -49,8 +49,8 @@
                     "title": "Score",
                     "type": "integer",
                     "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:score##title##17091",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:score##description##20561"
+                    "meta:titleId": "profile-personal-finance-details##xdm:score##title##85691",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:score##description##41251"
                   },
                   "xdm:provider": {
                     "title": "Credit Bureau",
@@ -61,16 +61,16 @@
                       "transunion": "TransUnion"
                     },
                     "description": "Refers to the credit bureau responsible for providing the credit score.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:provider##title##95251",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##70391"
+                    "meta:titleId": "profile-personal-finance-details##xdm:provider##title##97531",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:provider##description##33021"
                   },
                   "xdm:scoreDate": {
                     "title": "Score Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "Date when the score was reported.",
-                    "meta:titleId": "profile-personal-finance-details##xdm:scoreDate##title##11111",
-                    "meta:descriptionId": "profile-personal-finance-details##xdm:scoreDate##description##29061"
+                    "meta:titleId": "profile-personal-finance-details##xdm:scoreDate##title##5581",
+                    "meta:descriptionId": "profile-personal-finance-details##xdm:scoreDate##description##32591"
                   }
                 }
               }
@@ -87,8 +87,8 @@
                 "unemployed": "Unemployed"
               },
               "description": "Tracks the employment status of the user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##78681",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##17661"
+              "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##67451",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##47761"
             },
             "xdm:ID": {
               "title": "ID",
@@ -97,18 +97,18 @@
                 "type": "string"
               },
               "description": "Array of financial account IDs assigned to the user.",
-              "meta:titleId": "profile-personal-finance-details##xdm:ID##title##52271",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##4711"
+              "meta:titleId": "profile-personal-finance-details##xdm:ID##title##23551",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##31621"
             },
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned.",
-              "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##74991",
-              "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##23571"
+              "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##46991",
+              "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##57851"
             }
           },
-          "meta:descriptionId": "profile-personal-finance-details##xdm:personalFinances##description##47441"
+          "meta:descriptionId": "profile-personal-finance-details##xdm:personalFinances##description##19501"
         }
       }
     }
@@ -120,6 +120,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-03-23",
-  "meta:titleId": "profile-personal-finance-details##title##32871",
-  "meta:descriptionId": "profile-personal-finance-details##description##20471"
+  "meta:titleId": "profile-personal-finance-details##title##74901",
+  "meta:descriptionId": "profile-personal-finance-details##description##19971"
 }

@@ -24,43 +24,43 @@
           "title": "Opportunity ID",
           "description": "Unique ID of the opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:opportunityID##title##83211",
-          "meta:descriptionId": "opportunity##xdm:opportunityID##description##10711"
+          "meta:titleId": "opportunity##xdm:opportunityID##title##121",
+          "meta:descriptionId": "opportunity##xdm:opportunityID##description##45451"
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:opportunityName##title##13461",
-          "meta:descriptionId": "opportunity##xdm:opportunityName##description##95061"
+          "meta:titleId": "opportunity##xdm:opportunityName##title##26331",
+          "meta:descriptionId": "opportunity##xdm:opportunityName##description##56091"
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
           "description": "Description of the opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:opportunityDescription##title##31581",
-          "meta:descriptionId": "opportunity##xdm:opportunityDescription##description##49751"
+          "meta:titleId": "opportunity##xdm:opportunityDescription##title##77021",
+          "meta:descriptionId": "opportunity##xdm:opportunityDescription##description##86851"
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
           "description": "Type of the opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:opportunityType##title##41471",
-          "meta:descriptionId": "opportunity##xdm:opportunityType##description##91621"
+          "meta:titleId": "opportunity##xdm:opportunityType##title##90401",
+          "meta:descriptionId": "opportunity##xdm:opportunityType##description##31291"
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
           "description": "Sales stage of the opportunity.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:opportunityStage##title##9451",
-          "meta:descriptionId": "opportunity##xdm:opportunityStage##description##12361"
+          "meta:titleId": "opportunity##xdm:opportunityStage##title##71451",
+          "meta:descriptionId": "opportunity##xdm:opportunityStage##description##65591"
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique ID of the account this opportunity is associated with.",
           "type": "string",
-          "meta:titleId": "opportunity##xdm:accountID##title##40991",
-          "meta:descriptionId": "opportunity##xdm:accountID##description##27061"
+          "meta:titleId": "opportunity##xdm:accountID##title##77231",
+          "meta:descriptionId": "opportunity##xdm:accountID##description##71091"
         }
       }
     }
@@ -81,6 +81,6 @@
   ],
   "required": ["xdm:opportunityID"],
   "meta:status": "experimental",
-  "meta:titleId": "opportunity##title##65691",
-  "meta:descriptionId": "opportunity##description##96871"
+  "meta:titleId": "opportunity##title##26231",
+  "meta:descriptionId": "opportunity##description##20011"
 }

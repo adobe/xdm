@@ -18,22 +18,22 @@
           "title": "Distance to center",
           "type": "number",
           "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
-          "meta:titleId": "geo-interaction-details##xdm:distanceToCenter##title##26621",
-          "meta:descriptionId": "geo-interaction-details##xdm:distanceToCenter##description##45291"
+          "meta:titleId": "geo-interaction-details##xdm:distanceToCenter##title##63711",
+          "meta:descriptionId": "geo-interaction-details##xdm:distanceToCenter##description##81621"
         },
         "xdm:deviceGeoAccuracy": {
           "title": "Geo device accuracy",
           "type": "number",
           "description": "The accuracy of the geo measuring device or mechanism, measured in meters.",
-          "meta:titleId": "geo-interaction-details##xdm:deviceGeoAccuracy##title##83861",
-          "meta:descriptionId": "geo-interaction-details##xdm:deviceGeoAccuracy##description##9051"
+          "meta:titleId": "geo-interaction-details##xdm:deviceGeoAccuracy##title##79171",
+          "meta:descriptionId": "geo-interaction-details##xdm:deviceGeoAccuracy##description##85641"
         },
         "xdm:geoShape": {
           "title": "Geo shape",
           "$ref": "http://schema.org/GeoShape",
           "description": "Geo shape of the geo being interacted with.",
-          "meta:titleId": "geo-interaction-details##xdm:geoShape##title##96441",
-          "meta:descriptionId": "geo-interaction-details##xdm:geoShape##description##87171"
+          "meta:titleId": "geo-interaction-details##xdm:geoShape##title##31781",
+          "meta:descriptionId": "geo-interaction-details##xdm:geoShape##description##14861"
         }
       }
     }
@@ -48,6 +48,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "geo-interaction-details##title##90951",
-  "meta:descriptionId": "geo-interaction-details##description##66731"
+  "meta:titleId": "geo-interaction-details##title##33921",
+  "meta:descriptionId": "geo-interaction-details##description##81901"
 }

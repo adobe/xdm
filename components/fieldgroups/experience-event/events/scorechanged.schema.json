@@ -32,56 +32,78 @@
                 "xdm:scoreAttributeID": {
                   "title": "Score Atribute ID",
                   "type": "string",
-                  "description": "Unique ID of the lead score attribute."
+                  "description": "Unique ID of the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
+                  "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521"
                 },
                 "xdm:scoreAttributeName": {
                   "title": "Score Atribute Name",
                   "type": "string",
-                  "description": "Friendly name of the lead score attribute."
+                  "description": "Friendly name of the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",
+                  "meta:descriptionId": "scorechanged##xdm:scoreAttributeName##description##20401"
                 },
                 "xdm:changeValue": {
                   "title": "Change Value",
                   "type": "string",
-                  "description": "Absolute value or difference between new value and previous value of the lead score attribute."
+                  "description": "Absolute value or difference between new value and previous value of the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:changeValue##title##52061",
+                  "meta:descriptionId": "scorechanged##xdm:changeValue##description##15761"
                 },
                 "xdm:newValue": {
                   "title": "New Value",
                   "type": "integer",
-                  "description": "New value of the lead score attribute."
+                  "description": "New value of the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:newValue##title##76521",
+                  "meta:descriptionId": "scorechanged##xdm:newValue##description##79061"
                 },
                 "xdm:oldValue": {
                   "title": "Old Value",
                   "type": "integer",
-                  "description": "Previous value of the lead score attribute."
+                  "description": "Previous value of the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:oldValue##title##71221",
+                  "meta:descriptionId": "scorechanged##xdm:oldValue##description##52341"
                 },
                 "xdm:reason": {
                   "title": "Reason",
                   "type": "string",
-                  "description": "Reason for the change to the lead score attribute."
+                  "description": "Reason for the change to the lead score attribute.",
+                  "meta:titleId": "scorechanged##xdm:reason##title##1161",
+                  "meta:descriptionId": "scorechanged##xdm:reason##description##8411"
                 },
                 "xdm:urgency": {
                   "title": "Urgency",
                   "type": "number",
-                  "description": "Gauge of how much the lead's score has changed recently."
+                  "description": "Gauge of how much the lead's score has changed recently.",
+                  "meta:titleId": "scorechanged##xdm:urgency##title##56751",
+                  "meta:descriptionId": "scorechanged##xdm:urgency##description##24791"
                 },
                 "xdm:priority": {
                   "title": "Priority",
                   "type": "integer",
-                  "description": "Overall priority the lead should receive based on urgency and score."
+                  "description": "Overall priority the lead should receive based on urgency and score.",
+                  "meta:titleId": "scorechanged##xdm:priority##title##39771",
+                  "meta:descriptionId": "scorechanged##xdm:priority##description##20961"
                 },
                 "xdm:relativeScore": {
                   "title": "Relative Score",
                   "type": "integer",
-                  "description": "How the lead's score compares to other leads in the database."
+                  "description": "How the lead's score compares to other leads in the database.",
+                  "meta:titleId": "scorechanged##xdm:relativeScore##title##15581",
+                  "meta:descriptionId": "scorechanged##xdm:relativeScore##description##31281"
                 },
                 "xdm:relativeUrgency": {
                   "title": "Relative Urgency",
                   "type": "integer",
-                  "description": "How the lead's urgency compares to other leads in the database."
+                  "description": "How the lead's urgency compares to other leads in the database.",
+                  "meta:titleId": "scorechanged##xdm:relativeUrgency##title##62131",
+                  "meta:descriptionId": "scorechanged##xdm:relativeUrgency##description##65261"
                 }
-              }
+              },
+              "meta:titleId": "scorechanged##xdm:changeScore##title##84241"
             }
-          }
+          },
+          "meta:titleId": "scorechanged##xdm:leadOperation##title##65571"
         }
       }
     }
@@ -92,5 +114,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "scorechanged##title##37241",
+  "meta:descriptionId": "scorechanged##description##17391"
 }

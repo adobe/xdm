@@ -19,32 +19,44 @@
         "xdm:anonymousHostname": {
           "title": "Anonymous Hostname",
           "description": "Anonymous hostname.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:anonymousHostname##title##95741",
+          "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##25671"
         },
         "xdm:inferredAddress": {
           "title": "Inferred Address",
           "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "$ref": "https://ns.adobe.com/xdm/common/address"
+          "$ref": "https://ns.adobe.com/xdm/common/address",
+          "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##51121",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##73941"
         },
         "xdm:inferredCompany": {
           "title": "Inferred Company",
           "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompany##title##69381",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##40781"
         },
         "xdm:inferredCompanyStatus": {
           "title": "Inferred Company Status",
           "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredCompanyStatus##title##87421",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##68141"
         },
         "xdm:inferredMetropolitanArea": {
           "title": "Inferred Metropolitan Area",
           "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredMetropolitanArea##title##82791",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##68531"
         },
         "xdm:inferredPhoneAreaCode": {
           "title": "Inferred Phone Area Code",
           "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "profile-inferred-person##xdm:inferredPhoneAreaCode##title##65971",
+          "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##93211"
         }
       }
     }
@@ -55,5 +67,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-11-23"
+  "meta:createdDate": "2020-11-23",
+  "meta:titleId": "profile-inferred-person##title##37161",
+  "meta:descriptionId": "profile-inferred-person##description##86151"
 }

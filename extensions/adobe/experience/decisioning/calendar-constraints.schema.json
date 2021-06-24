@@ -22,7 +22,9 @@
         "https://ns.adobe.com/experience/decisioning/calendarConstraints": {
           "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details",
           "title": "Calendar Constraint Details",
-          "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed."
+          "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.",
+          "meta:titleId": "calendar-constraints##https://ns.adobe.com/experience/decisioning/calendarConstraints##title##76811",
+          "meta:descriptionId": "calendar-constraints##https://ns.adobe.com/experience/decisioning/calendarConstraints##description##75151"
         }
       }
     }
@@ -32,5 +34,7 @@
       "$ref": "#/definitions/calendar-constraints"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "calendar-constraints##title##25611",
+  "meta:descriptionId": "calendar-constraints##description##91211"
 }

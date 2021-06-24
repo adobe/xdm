@@ -21,16 +21,20 @@
         "xdm:modelReference": {
           "type": "string",
           "format": "uri",
-          "description": "Reference to the model, i.e. its schema $id property. "
+          "description": "Reference to the model, i.e. its schema $id property. ",
+          "meta:descriptionId": "model-usage##xdm:modelReference##description##88601"
         },
         "xdm:modelPropertyPaths": {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter."
+            "description": "A fully qualified JSON path to an XDM field with dots used as the path delimiter.",
+            "meta:descriptionId": "model-usage##items##description##40101"
           }
         }
-      }
+      },
+      "meta:titleId": "model-usage##model-usage##title##6691",
+      "meta:descriptionId": "model-usage##model-usage##description##21901"
     }
   },
   "allOf": [
@@ -41,5 +45,7 @@
       "required": ["xdm:modelReference", "xdm:modelPropertyPaths"]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "model-usage##title##61161",
+  "meta:descriptionId": "model-usage##description##37971"
 }

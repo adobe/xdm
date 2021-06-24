@@ -19,7 +19,9 @@
         "https://ns.adobe.com/experience/audiencemanager/segmentFolderName": {
           "title": "Segment folder name",
           "type": "string",
-          "description": "Name of the segment folder"
+          "description": "Name of the segment folder",
+          "meta:titleId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentFolderName##title##57381",
+          "meta:descriptionId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentFolderName##description##83591"
         },
         "https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus": {
           "type": "string",
@@ -29,12 +31,16 @@
             "ACTIVE": "Active",
             "INACTIVE": "Inactive",
             "DELETED": "Deleted"
-          }
+          },
+          "meta:titleId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus##title##73561",
+          "meta:descriptionId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus##description##98751"
         },
         "https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity": {
           "title": "Parent folder identity",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Identity of the parent folder of current folder"
+          "description": "Identity of the parent folder of current folder",
+          "meta:titleId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity##title##64631",
+          "meta:descriptionId": "segmentfolder##https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity##description##73131"
         }
       }
     }
@@ -54,5 +60,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "segmentfolder##title##84251",
+  "meta:descriptionId": "segmentfolder##description##47981"
 }

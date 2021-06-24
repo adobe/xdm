@@ -17,7 +17,9 @@
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "description": "The referrer URL."
+          "description": "The referrer URL.",
+          "meta:titleId": "webreferrer##xdm:URL##title##2151",
+          "meta:descriptionId": "webreferrer##xdm:URL##description##7211"
         },
         "xdm:type": {
           "title": "Type",
@@ -42,7 +44,9 @@
             "social": "Social network",
             "unknown": "Unknown",
             "news": "Usenet newsgroup"
-          }
+          },
+          "meta:titleId": "webreferrer##xdm:type##title##46481",
+          "meta:descriptionId": "webreferrer##xdm:type##description##97471"
         }
       }
     }
@@ -56,5 +60,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "webreferrer##title##71681",
+  "meta:descriptionId": "webreferrer##description##73101"
 }

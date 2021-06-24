@@ -14,12 +14,16 @@
     "xdm:journey": {
       "title": "Journey for an entity",
       "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
-      "description": "Journey created by marketer for its entities."
+      "description": "Journey created by marketer for its entities.",
+      "meta:titleId": "orchestrationdetails##xdm:journey##title##55671",
+      "meta:descriptionId": "orchestrationdetails##xdm:journey##description##39561"
     },
     "xdm:journeyVersion": {
       "title": "Journey Version for an entity",
       "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
-      "description": "Schema for describing the version of a journey, where version holds the state machine."
+      "description": "Schema for describing the version of a journey, where version holds the state machine.",
+      "meta:titleId": "orchestrationdetails##xdm:journeyVersion##title##70581",
+      "meta:descriptionId": "orchestrationdetails##xdm:journeyVersion##description##47541"
     },
     "xdm:action": {
       "title": "Action associated with a journey",
@@ -27,7 +31,9 @@
       "description": "Action that is executed for an entity when reached a step in in the journey state machine.",
       "required": [
         "xdm:actionID"
-      ]
+      ],
+      "meta:titleId": "orchestrationdetails##xdm:action##title##20061",
+      "meta:descriptionId": "orchestrationdetails##xdm:action##description##53981"
     }
   },
   "required": [
@@ -35,5 +41,7 @@
     "xdm:journeyVersion",
     "xdm:action"
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "orchestrationdetails##title##1491",
+  "meta:descriptionId": "orchestrationdetails##description##18571"
 }

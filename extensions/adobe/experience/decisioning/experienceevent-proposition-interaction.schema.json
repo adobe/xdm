@@ -23,7 +23,9 @@
           "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details"
-          }
+          },
+          "meta:titleId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##title##37861",
+          "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description##42611"
         }
       }
     }
@@ -39,5 +41,7 @@
       "$ref": "#/definitions/decisioning-experienceevent-all"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "proposition-interaction##title##38171",
+  "meta:descriptionId": "proposition-interaction##description##45571"
 }

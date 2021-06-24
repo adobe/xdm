@@ -18,17 +18,20 @@
         "@id": {
           "type": "string",
           "const": "xdm:userComplaints",
-          "description": "The unique identifier of this metric."
+          "description": "The unique identifier of this metric.",
+          "meta:descriptionId": "user-complaints##@id##description##11031"
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: userComplaints",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "user-complaints##schema:name##description##20741"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "user-complaints##xdm:measurement##description##34671"
         },
         "xdm:unit": {
           "const": ""
@@ -46,5 +49,7 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "user-complaints##title##79281",
+  "meta:descriptionId": "user-complaints##description##51541"
 }

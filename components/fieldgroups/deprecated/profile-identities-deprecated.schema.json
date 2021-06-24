@@ -24,7 +24,9 @@
             "$ref": "https://ns.adobe.com/xdm/context/identity"
           },
           "minItems": 1,
-          "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead."
+          "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.",
+          "meta:titleId": "profile-identities-deprecated##xdm:identities##title##84401",
+          "meta:descriptionId": "profile-identities-deprecated##xdm:identities##description##21641"
         }
       }
     }
@@ -38,5 +40,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "profile-identities-deprecated##title##55351",
+  "meta:descriptionId": "profile-identities-deprecated##description##42741"
 }

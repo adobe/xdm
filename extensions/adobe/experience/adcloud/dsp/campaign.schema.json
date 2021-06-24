@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Campaign Details.",
   "definitions": {
     "dsp-campaign": {
@@ -20,77 +22,111 @@
         "dsp:campaignKey": {
           "title": "Campaign Key",
           "type": "string",
-          "description": "Campaign external identifier."
+          "description": "Campaign external identifier.",
+          "meta:titleId": "campaign##dsp:campaignKey##title##90741",
+          "meta:descriptionId": "campaign##dsp:campaignKey##description##79921"
         },
         "dsp:campaignName": {
           "title": "Campaign Name",
           "type": "string",
-          "description": "Name of the campaign."
+          "description": "Name of the campaign.",
+          "meta:titleId": "campaign##dsp:campaignName##title##22481",
+          "meta:descriptionId": "campaign##dsp:campaignName##description##12401"
         },
         "dsp:campaignStatus": {
           "title": "Campaign Status",
           "type": "string",
           "description": "Campaign Status extracted from the Insertion Order associated with this campaign.Indicates if underlying ads are eligible to serve.",
-          "enum": ["Active", "Inactive", "Deleted", "Paid"],
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted",
+            "Paid"
+          ],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
             "Deleted": "Deleted",
             "Paid": "Paid"
-          }
+          },
+          "meta:titleId": "campaign##dsp:campaignStatus##title##65871",
+          "meta:descriptionId": "campaign##dsp:campaignStatus##description##26491"
         },
         "dsp:timezone": {
           "title": "Campaign Timezone",
           "type": "string",
-          "description": "Timezone of the campaign."
+          "description": "Timezone of the campaign.",
+          "meta:titleId": "campaign##dsp:timezone##title##34621",
+          "meta:descriptionId": "campaign##dsp:timezone##description##71321"
         },
         "dsp:type": {
           "title": "Campaign Type",
           "type": "string",
           "description": "Campaign Type",
-          "enum": ["Media", "Brandsights"],
+          "enum": [
+            "Media",
+            "Brandsights"
+          ],
           "meta:enum": {
             "Media": "Media",
             "Brandsights": "Brandsights"
-          }
+          },
+          "meta:titleId": "campaign##dsp:type##title##30211",
+          "meta:descriptionId": "campaign##dsp:type##description##90561"
         },
         "dsp:userId": {
           "title": "User Identifier",
           "type": "integer",
-          "description": "Identifier for the user who created the campaign."
+          "description": "Identifier for the user who created the campaign.",
+          "meta:titleId": "campaign##dsp:userId##title##47871",
+          "meta:descriptionId": "campaign##dsp:userId##description##15311"
         },
         "dsp:feeClass": {
           "title": "The Fee Class",
           "type": "string",
           "description": "Fee Class needed for computing the total spend.",
-          "enum": ["tubemogul", "advertiser", "no_io"],
+          "enum": [
+            "tubemogul",
+            "advertiser",
+            "no_io"
+          ],
           "meta:enum": {
             "tubemogul": "tubemogul",
             "advertiser": "advertiser",
             "no_io": "no_io"
-          }
+          },
+          "meta:titleId": "campaign##dsp:feeClass##title##10321",
+          "meta:descriptionId": "campaign##dsp:feeClass##description##53601"
         },
         "dsp:campaignStartTime": {
           "title": "Campaign start time.",
           "type": "string",
           "format": "date-time",
-          "description": "The insertion order fields representing campaign start time."
+          "description": "The insertion order fields representing campaign start time.",
+          "meta:titleId": "campaign##dsp:campaignStartTime##title##79271",
+          "meta:descriptionId": "campaign##dsp:campaignStartTime##description##54611"
         },
         "dsp:campaignEndTime": {
           "title": "Campaign end time.",
           "type": "string",
           "format": "date-time",
-          "description": "The insertion order fields representing campaign end time."
+          "description": "The insertion order fields representing campaign end time.",
+          "meta:titleId": "campaign##dsp:campaignEndTime##title##84381",
+          "meta:descriptionId": "campaign##dsp:campaignEndTime##description##43551"
         },
         "dsp:accountId": {
           "title": "Account Identifier",
           "type": "string",
-          "description": "Identifier for the account owning this campaign."
+          "description": "Identifier for the account owning this campaign.",
+          "meta:titleId": "campaign##dsp:accountId##title##24781",
+          "meta:descriptionId": "campaign##dsp:accountId##description##64601"
         },
         "dsp:advertiserId": {
           "title": "Advertiser Identifier",
           "type": "string",
-          "description": "Identifier for the advertiser owning this campaign."
+          "description": "Identifier for the advertiser owning this campaign.",
+          "meta:titleId": "campaign##dsp:advertiserId##title##78461",
+          "meta:descriptionId": "campaign##dsp:advertiserId##description##61241"
         }
       }
     }
@@ -106,5 +142,7 @@
       "$ref": "#/definitions/dsp-campaign"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "campaign##title##58991",
+  "meta:descriptionId": "campaign##description##7691"
 }

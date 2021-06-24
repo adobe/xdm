@@ -20,12 +20,16 @@
         "xdm:productCatalogCategoryName": {
           "title": "Product Category Name",
           "type": "string",
-          "description": "friendly name of the product category."
+          "description": "friendly name of the product category.",
+          "meta:titleId": "product-catalog-category##xdm:productCatalogCategoryName##title##34001",
+          "meta:descriptionId": "product-catalog-category##xdm:productCatalogCategoryName##description##81771"
         },
         "xdm:parentProductCatalogCategoryName": {
           "title": "Parent Product Catalog Category Name",
           "type": "string",
-          "description": "Parent product category name used to build hierarchy."
+          "description": "Parent product category name used to build hierarchy.",
+          "meta:titleId": "product-catalog-category##xdm:parentProductCatalogCategoryName##title##29661",
+          "meta:descriptionId": "product-catalog-category##xdm:parentProductCatalogCategoryName##description##97561"
         }
       }
     }
@@ -36,5 +40,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-catalog-category##title##41121",
+  "meta:descriptionId": "product-catalog-category##description##75311"
 }

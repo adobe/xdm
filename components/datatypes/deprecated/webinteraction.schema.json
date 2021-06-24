@@ -23,22 +23,30 @@
             "download": "Download",
             "exit": "Exit",
             "other": "Other"
-          }
+          },
+          "meta:titleId": "webinteraction##xdm:type##title##46731",
+          "meta:descriptionId": "webinteraction##xdm:type##description##27171"
         },
         "xdm:URL": {
           "title": "URL",
           "type": "string",
-          "description": "The actual link or URL used for this web interaction."
+          "description": "The actual link or URL used for this web interaction.",
+          "meta:titleId": "webinteraction##xdm:URL##title##86991",
+          "meta:descriptionId": "webinteraction##xdm:URL##description##54161"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "The normative name used for this web link, used for classification purposes."
+          "description": "The normative name used for this web link, used for classification purposes.",
+          "meta:titleId": "webinteraction##xdm:name##title##99511",
+          "meta:descriptionId": "webinteraction##xdm:name##description##87301"
         },
         "xdm:linkClicks": {
           "title": "Link Clicks",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Click of a web link has occurred."
+          "description": "Click of a web link has occurred.",
+          "meta:titleId": "webinteraction##xdm:linkClicks##title##11381",
+          "meta:descriptionId": "webinteraction##xdm:linkClicks##description##80731"
         }
       }
     }
@@ -52,5 +60,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "webinteraction##title##78811",
+  "meta:descriptionId": "webinteraction##description##70031"
 }

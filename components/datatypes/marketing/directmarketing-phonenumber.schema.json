@@ -16,12 +16,16 @@
         "xdm:errorCount": {
           "title": "Error count",
           "type": "integer",
-          "description": "Number of consecutive errors when calling this phone number."
+          "description": "Number of consecutive errors when calling this phone number.",
+          "meta:titleId": "directmarketing-phonenumber##xdm:errorCount##title##12851",
+          "meta:descriptionId": "directmarketing-phonenumber##xdm:errorCount##description##59971"
         },
         "xdm:quality": {
           "title": "Quality",
           "type": "string",
-          "description": "Quality rating."
+          "description": "Quality rating.",
+          "meta:titleId": "directmarketing-phonenumber##xdm:quality##title##73331",
+          "meta:descriptionId": "directmarketing-phonenumber##xdm:quality##description##55651"
         }
       }
     }
@@ -35,5 +39,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "directmarketing-phonenumber##title##36201",
+  "meta:descriptionId": "directmarketing-phonenumber##description##40781"
 }

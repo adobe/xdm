@@ -16,7 +16,9 @@
         "xdm:fatigue": {
           "title": "Fatigue",
           "description": "Fatigue score for the profile.",
-          "$ref": "https://ns.adobe.com/experience/campaign/journeyaifatigue"
+          "$ref": "https://ns.adobe.com/experience/campaign/journeyaifatigue",
+          "meta:titleId": "journeyaiscores##xdm:fatigue##title##96621",
+          "meta:descriptionId": "journeyaiscores##xdm:fatigue##description##21051"
         },
         "xdm:openScores": {
           "title": "Open Scores by send hour for week",
@@ -26,7 +28,9 @@
           "maxItems": 168,
           "items": {
             "type": "number"
-          }
+          },
+          "meta:titleId": "journeyaiscores##xdm:openScores##title##37531",
+          "meta:descriptionId": "journeyaiscores##xdm:openScores##description##31281"
         },
         "xdm:clickScores": {
           "title": "Click Scores by send hour for week",
@@ -36,7 +40,9 @@
           "maxItems": 168,
           "items": {
             "type": "number"
-          }
+          },
+          "meta:titleId": "journeyaiscores##xdm:clickScores##title##28471",
+          "meta:descriptionId": "journeyaiscores##xdm:clickScores##description##25651"
         }
       }
     }
@@ -46,5 +52,7 @@
       "$ref": "#/definitions/journeyaiscores"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "journeyaiscores##title##26921",
+  "meta:descriptionId": "journeyaiscores##description##7651"
 }

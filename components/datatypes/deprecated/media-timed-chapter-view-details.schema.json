@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Timed media chapter view details",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "View details for the chapter playback captured by the experience event.",
   "definitions": {
@@ -18,12 +18,16 @@
         "xdm:index": {
           "title": "Chapter position",
           "type": "integer",
-          "description": "The index of the chapter inside the content."
+          "description": "The index of the chapter inside the content.",
+          "meta:titleId": "media-timed-chapter-view-details##xdm:index##title##56081",
+          "meta:descriptionId": "media-timed-chapter-view-details##xdm:index##description##88101"
         },
         "xdm:offset": {
           "title": "Chapter offset",
           "type": "integer",
-          "description": "The offset of the chapter, in seconds, inside the content from the start."
+          "description": "The offset of the chapter, in seconds, inside the content from the start.",
+          "meta:titleId": "media-timed-chapter-view-details##xdm:offset##title##25321",
+          "meta:descriptionId": "media-timed-chapter-view-details##xdm:offset##description##75441"
         }
       },
       "required": ["xdm:index", "xdm:offset"]
@@ -37,6 +41,7 @@
       "$ref": "#/definitions/media-chapter-view-details"
     }
   ],
-  "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "media-timed-chapter-view-details##title##92821",
+  "meta:descriptionId": "media-timed-chapter-view-details##description##92851"
 }

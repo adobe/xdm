@@ -31,11 +31,16 @@
                   "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
                   "items": {
                     "$ref": "https://ns.adobe.com/xdm/context/subscription"
-                  }
+                  },
+                  "meta:titleId": "experienceevent-profile-subscriptions##xdm:subscriptions##title##96921",
+                  "meta:descriptionId": "experienceevent-profile-subscriptions##xdm:subscriptions##description##25591"
                 }
-              }
+              },
+              "meta:titleId": "experienceevent-profile-subscriptions##xdm:profileSnapshot##title##94161",
+              "meta:descriptionId": "experienceevent-profile-subscriptions##xdm:profileSnapshot##description##86881"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-profile-subscriptions##https://ns.adobe.com/experience/campaign/message##title##73771"
         }
       }
     }
@@ -45,5 +50,7 @@
       "$ref": "#/definitions/campaign-experienceevent-profile-subscriptions"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-subscriptions##title##42821",
+  "meta:descriptionId": "experienceevent-profile-subscriptions##description##79851"
 }

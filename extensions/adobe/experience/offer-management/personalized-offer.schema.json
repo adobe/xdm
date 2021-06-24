@@ -21,17 +21,23 @@
             "xdm:rank": {
               "$ref": "https://ns.adobe.com/experience/offer-management/rank",
               "title": "Rank",
-              "description": "Offer rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed."
+              "description": "Offer rank (priority). Defines what is considered the \"best offer\" given the context of the decision. Among all the offers that have not been disqualified due other constraints, the ranking will decide top (or top N) offers to be proposed.",
+              "meta:titleId": "personalized-offer##xdm:rank##title##89441",
+              "meta:descriptionId": "personalized-offer##xdm:rank##description##21451"
             },
             "xdm:selectionConstraint": {
               "$ref": "https://ns.adobe.com/experience/offer-management/selection-constraint",
               "title": "Selection Constraints",
-              "description": "Selection constraints define all rules that decide if an offer disqualifies from the set of eligible offers at this moment, for this context and/or for this profile identity. For example, offers typically have a start and end date before and after they are not eligible for consideration anymore"
+              "description": "Selection constraints define all rules that decide if an offer disqualifies from the set of eligible offers at this moment, for this context and/or for this profile identity. For example, offers typically have a start and end date before and after they are not eligible for consideration anymore",
+              "meta:titleId": "personalized-offer##xdm:selectionConstraint##title##98371",
+              "meta:descriptionId": "personalized-offer##xdm:selectionConstraint##description##47961"
             },
             "xdm:cappingConstraint": {
               "$ref": "https://ns.adobe.com/experience/offer-management/capping-constraint",
               "title": "Capping Constraints",
-              "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity."
+              "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
+              "meta:titleId": "personalized-offer##xdm:cappingConstraint##title##16381",
+              "meta:descriptionId": "personalized-offer##xdm:cappingConstraint##description##60711"
             }
           }
         },
@@ -52,5 +58,7 @@
       "required": ["xdm:rank", "xdm:selectionConstraint"]
     }
   ],
-  "meta:status": "deprecated"
+  "meta:status": "deprecated",
+  "meta:titleId": "personalized-offer##title##74161",
+  "meta:descriptionId": "personalized-offer##description##22161"
 }

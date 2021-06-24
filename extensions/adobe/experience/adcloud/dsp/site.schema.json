@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Adobe Advertising Cloud DSP Placement Site Details.",
   "definitions": {
     "dsp-site": {
@@ -20,64 +22,93 @@
         "dsp:siteKey": {
           "title": "Site Key",
           "type": "string",
-          "description": "Placement site external unique identifier."
+          "description": "Placement site external unique identifier.",
+          "meta:titleId": "site##dsp:siteKey##title##48951",
+          "meta:descriptionId": "site##dsp:siteKey##description##95171"
         },
         "dsp:siteName": {
           "title": "Site Name",
           "type": "string",
-          "description": "Placement site name."
+          "description": "Placement site name.",
+          "meta:titleId": "site##dsp:siteName##title##35831",
+          "meta:descriptionId": "site##dsp:siteName##description##55691"
         },
         "dsp:siteUrl": {
           "title": "Site Url",
           "type": "string",
-          "description": "Placement site url."
+          "description": "Placement site url.",
+          "meta:titleId": "site##dsp:siteUrl##title##54841",
+          "meta:descriptionId": "site##dsp:siteUrl##description##92381"
         },
         "dsp:siteType": {
           "title": "Site Type",
           "type": "string",
           "description": "The type of the placement site.",
-          "enum": ["Site", "Network"],
+          "enum": [
+            "Site",
+            "Network"
+          ],
           "meta:enum": {
             "Site": "Site",
             "Network": "Network"
-          }
+          },
+          "meta:titleId": "site##dsp:siteType##title##46661",
+          "meta:descriptionId": "site##dsp:siteType##description##43111"
         },
         "dsp:siteStatus": {
           "title": "Site Status",
           "type": "string",
           "description": "The status of the placement site.",
-          "enum": ["Active", "Inactive", "Deleted"],
+          "enum": [
+            "Active",
+            "Inactive",
+            "Deleted"
+          ],
           "meta:enum": {
             "Active": "Active",
             "Inactive": "Inactive",
             "Deleted": "Deleted"
-          }
+          },
+          "meta:titleId": "site##dsp:siteStatus##title##18911",
+          "meta:descriptionId": "site##dsp:siteStatus##description##531"
         },
         "dsp:siteDataSource": {
           "title": "Site Data Source",
           "type": "string",
           "description": "The data source for this placement site.",
-          "enum": ["Trialpay", "Nielsen", "Quancast"],
+          "enum": [
+            "Trialpay",
+            "Nielsen",
+            "Quancast"
+          ],
           "meta:enum": {
             "Trialpay": "trialpay",
             "Nielsen": "nielsen",
             "Quancast": "quancast"
-          }
+          },
+          "meta:titleId": "site##dsp:siteDataSource##title##30631",
+          "meta:descriptionId": "site##dsp:siteDataSource##description##32481"
         },
         "dsp:mobileWeb": {
           "title": "Mobile Web",
           "type": "boolean",
-          "description": "Flag stating whether this placement site is a mobile website."
+          "description": "Flag stating whether this placement site is a mobile website.",
+          "meta:titleId": "site##dsp:mobileWeb##title##19351",
+          "meta:descriptionId": "site##dsp:mobileWeb##description##26691"
         },
         "dsp:mobileApp": {
           "title": "Mobile Application",
           "type": "boolean",
-          "description": "Flag stating whether this placement site is a mobile application."
+          "description": "Flag stating whether this placement site is a mobile application.",
+          "meta:titleId": "site##dsp:mobileApp##title##48451",
+          "meta:descriptionId": "site##dsp:mobileApp##description##94601"
         },
         "dsp:isTargetable": {
           "title": "Is Targetable",
           "type": "boolean",
-          "description": "Flag stating whether this placement site can be targeted."
+          "description": "Flag stating whether this placement site can be targeted.",
+          "meta:titleId": "site##dsp:isTargetable##title##13601",
+          "meta:descriptionId": "site##dsp:isTargetable##description##70821"
         }
       }
     }
@@ -93,5 +124,7 @@
       "$ref": "#/definitions/dsp-site"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "site##title##44901",
+  "meta:descriptionId": "site##description##28831"
 }

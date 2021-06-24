@@ -22,12 +22,16 @@
           "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
           "items": {
             "$ref": "https://ns.adobe.com/experience/analytics/productlistitem"
-          }
+          },
+          "meta:titleId": "commerce##xdm:productListItems##title##3321",
+          "meta:descriptionId": "commerce##xdm:productListItems##description##41791"
         },
         "xdm:commerce": {
           "title": "Commerce",
           "$ref": "https://ns.adobe.com/xdm/context/commerce",
-          "description": "Product returns, warranty registration, and shopping cart/order process."
+          "description": "Product returns, warranty registration, and shopping cart/order process.",
+          "meta:titleId": "commerce##xdm:commerce##title##90751",
+          "meta:descriptionId": "commerce##xdm:commerce##description##54861"
         }
       }
     }
@@ -40,5 +44,7 @@
       "$ref": "#/definitions/analytics-commerce"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "commerce##title##731",
+  "meta:descriptionId": "commerce##description##79871"
 }

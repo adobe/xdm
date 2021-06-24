@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Timed media information",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "Information related to timed media such main content, ads, and chapters.",
   "definitions": {
@@ -18,143 +18,199 @@
         "xdm:primaryAssetReference": {
           "title": "Primary asset reference",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-asset-reference",
-          "description": "Asset information about the main content that was played, present on all ads and chapters that occur during the content's playback."
+          "description": "Asset information about the main content that was played, present on all ads and chapters that occur during the content's playback.",
+          "meta:titleId": "media-timed##xdm:primaryAssetReference##title##94621",
+          "meta:descriptionId": "media-timed##xdm:primaryAssetReference##description##15571"
         },
         "xdm:primaryAssetViewDetails": {
           "title": "Primary asset view details",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-asset-view-details",
-          "description": "View details for the main content playback, present on all ads and chapters that occur during the content's playback."
+          "description": "View details for the main content playback, present on all ads and chapters that occur during the content's playback.",
+          "meta:titleId": "media-timed##xdm:primaryAssetViewDetails##title##40291",
+          "meta:descriptionId": "media-timed##xdm:primaryAssetViewDetails##description##67371"
         },
         "xdm:mediaChapter": {
           "title": "Media chapter",
           "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter",
-          "description": "Timed media chapter information."
+          "description": "Timed media chapter information.",
+          "meta:titleId": "media-timed##xdm:mediaChapter##title##69911",
+          "meta:descriptionId": "media-timed##xdm:mediaChapter##description##12121"
         },
         "xdm:impressions": {
           "title": "Media starts",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed."
+          "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
+          "meta:titleId": "media-timed##xdm:impressions##title##27841",
+          "meta:descriptionId": "media-timed##xdm:impressions##description##22081"
         },
         "xdm:completes": {
           "title": "Content completes",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+          "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
+          "meta:titleId": "media-timed##xdm:completes##title##46531",
+          "meta:descriptionId": "media-timed##xdm:completes##description##20541"
         },
         "xdm:timePlayed": {
           "title": "Content time spent",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The amount of time spent in seconds by a user on a specific timed media asset."
+          "description": "The amount of time spent in seconds by a user on a specific timed media asset.",
+          "meta:titleId": "media-timed##xdm:timePlayed##title##31291",
+          "meta:descriptionId": "media-timed##xdm:timePlayed##description##31731"
         },
         "xdm:federated": {
           "title": "Media federated",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates the experience event was created through data federation or data sharing."
+          "description": "Indicates the experience event was created through data federation or data sharing.",
+          "meta:titleId": "media-timed##xdm:federated##title##61471",
+          "meta:descriptionId": "media-timed##xdm:federated##description##80951"
         },
         "xdm:starts": {
           "title": "Content starts",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering."
+          "description": "Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.",
+          "meta:titleId": "media-timed##xdm:starts##title##97461",
+          "meta:descriptionId": "media-timed##xdm:starts##description##53131"
         },
         "xdm:mediaSegmentViews": {
           "title": "Media segment views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates when at least one frame, not necessarily the first has been viewed."
+          "description": "Indicates when at least one frame, not necessarily the first has been viewed.",
+          "meta:titleId": "media-timed##xdm:mediaSegmentViews##title##47141",
+          "meta:descriptionId": "media-timed##xdm:mediaSegmentViews##description##31311"
         },
         "xdm:dropBeforeStarts": {
           "title": "Drops before starts",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
-          "meta:status": "deprecated"
+          "meta:status": "deprecated",
+          "meta:titleId": "media-timed##xdm:dropBeforeStarts##title##27821",
+          "meta:descriptionId": "media-timed##xdm:dropBeforeStarts##description##21711"
         },
         "xdm:totalTimePlayed": {
           "title": "Media Time Spent",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+          "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
+          "meta:titleId": "media-timed##xdm:totalTimePlayed##title##82651",
+          "meta:descriptionId": "media-timed##xdm:totalTimePlayed##description##72821"
         },
         "xdm:uniqueTimePlayed": {
           "title": "Unique Time Played",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once."
+          "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once.",
+          "meta:titleId": "media-timed##xdm:uniqueTimePlayed##title##62531",
+          "meta:descriptionId": "media-timed##xdm:uniqueTimePlayed##description##10971"
         },
         "xdm:averageMinuteAudience": {
           "title": "Average Minute Audience",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions."
+          "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions.",
+          "meta:titleId": "media-timed##xdm:averageMinuteAudience##title##92301",
+          "meta:descriptionId": "media-timed##xdm:averageMinuteAudience##description##86611"
         },
         "xdm:adCount": {
           "title": "Ad count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of ads started during the playback."
+          "description": "The number of ads started during the playback.",
+          "meta:titleId": "media-timed##xdm:adCount##title##98861",
+          "meta:descriptionId": "media-timed##xdm:adCount##description##40971"
         },
         "xdm:chapterCount": {
           "title": "Chapter count",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of chapters started during the playback."
+          "description": "The number of chapters started during the playback.",
+          "meta:titleId": "media-timed##xdm:chapterCount##title##2101",
+          "meta:descriptionId": "media-timed##xdm:chapterCount##description##34151"
         },
         "xdm:progress10": {
           "title": "10% Progress marker",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "media-timed##xdm:progress10##title##3281",
+          "meta:descriptionId": "media-timed##xdm:progress10##description##8501"
         },
         "xdm:progress25": {
           "title": "25% Progress marker",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "media-timed##xdm:progress25##title##86441",
+          "meta:descriptionId": "media-timed##xdm:progress25##description##43691"
         },
         "xdm:progress50": {
           "title": "50% Progress marker",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "media-timed##xdm:progress50##title##29421",
+          "meta:descriptionId": "media-timed##xdm:progress50##description##12311"
         },
         "xdm:progress75": {
           "title": "75% Progress marker",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "media-timed##xdm:progress75##title##67971",
+          "meta:descriptionId": "media-timed##xdm:progress75##description##46671"
         },
         "xdm:progress95": {
           "title": "95% Progress marker",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+          "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+          "meta:titleId": "media-timed##xdm:progress95##title##37211",
+          "meta:descriptionId": "media-timed##xdm:progress95##description##70141"
         },
         "xdm:resumes": {
           "title": "Content resumes",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
+          "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.",
+          "meta:titleId": "media-timed##xdm:resumes##title##99861",
+          "meta:descriptionId": "media-timed##xdm:resumes##description##15121"
         },
         "xdm:estimatedStreams": {
           "title": "Estimated streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The estimated number of video or audio streams per each individual content."
+          "description": "The estimated number of video or audio streams per each individual content.",
+          "meta:titleId": "media-timed##xdm:estimatedStreams##title##37631",
+          "meta:descriptionId": "media-timed##xdm:estimatedStreams##description##69811"
         },
         "xdm:pauseImpactedStreams": {
           "title": "Pause impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Indicates if one or more pauses occurred during the playback of a single media item."
+          "description": "Indicates if one or more pauses occurred during the playback of a single media item.",
+          "meta:titleId": "media-timed##xdm:pauseImpactedStreams##title##84461",
+          "meta:descriptionId": "media-timed##xdm:pauseImpactedStreams##description##57161"
         },
         "xdm:pauses": {
           "title": "Pause events",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "The number of pause periods that occurred during playback."
+          "description": "The number of pause periods that occurred during playback.",
+          "meta:titleId": "media-timed##xdm:pauses##title##2611",
+          "meta:descriptionId": "media-timed##xdm:pauses##description##74791"
         },
         "xdm:pauseTime": {
           "title": "Total pause duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Describes the duration in seconds in which playback was paused by the user."
+          "description": "Describes the duration in seconds in which playback was paused by the user.",
+          "meta:titleId": "media-timed##xdm:pauseTime##title##72001",
+          "meta:descriptionId": "media-timed##xdm:pauseTime##description##62841"
         },
         "xdm:idp": {
           "title": "MVPD Identifier",
           "type": "string",
-          "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]"
+          "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]",
+          "meta:titleId": "media-timed##xdm:idp##title##24601",
+          "meta:descriptionId": "media-timed##xdm:idp##description##66191"
         },
         "xdm:mediaAuth": {
           "title": "Media authorized",
           "type": "string",
-          "description": "The user has been authorized via authentication."
+          "description": "The user has been authorized via authentication.",
+          "meta:titleId": "media-timed##xdm:mediaAuth##title##71341",
+          "meta:descriptionId": "media-timed##xdm:mediaAuth##description##5711"
         },
         "xdm:dayPart": {
           "title": "Day part",
           "type": "string",
-          "description": "Defines the time of the day when the content was broadcast or played."
+          "description": "Defines the time of the day when the content was broadcast or played.",
+          "meta:titleId": "media-timed##xdm:dayPart##title##69721",
+          "meta:descriptionId": "media-timed##xdm:dayPart##description##77881"
         }
       },
       "required": ["xdm:primaryAssetReference"]
@@ -168,6 +224,7 @@
       "$ref": "#/definitions/media-timed"
     }
   ],
-  "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "media-timed##title##75611",
+  "meta:descriptionId": "media-timed##description##12271"
 }

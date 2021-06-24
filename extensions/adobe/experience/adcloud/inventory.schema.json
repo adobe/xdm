@@ -16,49 +16,67 @@
         "xdm:sessionId": {
           "title": "Session ID",
           "type": "string",
-          "description": "Session ID associated with experience event, used to stitch together independent events which occurred in the same session."
+          "description": "Session ID associated with experience event, used to stitch together independent events which occurred in the same session.",
+          "meta:titleId": "inventory##xdm:sessionId##title##25021",
+          "meta:descriptionId": "inventory##xdm:sessionId##description##54201"
         },
         "xdm:feedId": {
           "title": "Feed ID",
           "type": "string",
-          "description": "Composite ID of the publisher, ad exchange, and other features."
+          "description": "Composite ID of the publisher, ad exchange, and other features.",
+          "meta:titleId": "inventory##xdm:feedId##title##19501",
+          "meta:descriptionId": "inventory##xdm:feedId##description##53491"
         },
         "xdm:sspPartnerCode": {
           "title": "SSP Partner Code",
           "type": "string",
-          "description": "The partner (exchange) through which Adobe Advertising Cloud receives the inventory opportunity."
+          "description": "The partner (exchange) through which Adobe Advertising Cloud receives the inventory opportunity.",
+          "meta:titleId": "inventory##xdm:sspPartnerCode##title##601",
+          "meta:descriptionId": "inventory##xdm:sspPartnerCode##description##72801"
         },
         "xdm:siteId": {
           "title": "Site ID",
           "type": "string",
-          "description": "Identifier for the web site where ad impression was served."
+          "description": "Identifier for the web site where ad impression was served.",
+          "meta:titleId": "inventory##xdm:siteId##title##30111",
+          "meta:descriptionId": "inventory##xdm:siteId##description##58801"
         },
         "xdm:costCurrency": {
           "title": "Cost Currency",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used to pay partner for in ad opportunity."
+          "description": "The ISO 4217 currency code used to pay partner for in ad opportunity.",
+          "meta:titleId": "inventory##xdm:costCurrency##title##29311",
+          "meta:descriptionId": "inventory##xdm:costCurrency##description##55461"
         },
         "xdm:inventorySourceId": {
           "title": "Inventory Source ID",
           "type": "string",
-          "description": "The ID of the Adobe Advertising Cloud inventory source this opportunity was delivered on."
+          "description": "The ID of the Adobe Advertising Cloud inventory source this opportunity was delivered on.",
+          "meta:titleId": "inventory##xdm:inventorySourceId##title##36801",
+          "meta:descriptionId": "inventory##xdm:inventorySourceId##description##80501"
         },
         "xdm:segment": {
           "title": "Segmentation Details",
           "$ref": "https://ns.adobe.com/experience/adcloud/segment",
-          "description": "Details associated with user segmentation rules."
+          "description": "Details associated with user segmentation rules.",
+          "meta:titleId": "inventory##xdm:segment##title##92321",
+          "meta:descriptionId": "inventory##xdm:segment##description##5981"
         },
         "xdm:optimizationTag": {
           "title": "Optimization tag",
           "type": "string",
-          "description": "Tag related with Optimization/ML."
+          "description": "Tag related with Optimization/ML.",
+          "meta:titleId": "inventory##xdm:optimizationTag##title##75951",
+          "meta:descriptionId": "inventory##xdm:optimizationTag##description##19871"
         },
         "xdm:attributableDeviceGraphId": {
           "title": "Attributable Device Graph Identifier",
           "type": "string",
-          "description": "Identifier for the device graph attributable to a conversion event."
+          "description": "Identifier for the device graph attributable to a conversion event.",
+          "meta:titleId": "inventory##xdm:attributableDeviceGraphId##title##12081",
+          "meta:descriptionId": "inventory##xdm:attributableDeviceGraphId##description##59141"
         }
       }
     }
@@ -68,5 +86,7 @@
       "$ref": "#/definitions/inventory"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "inventory##title##94401",
+  "meta:descriptionId": "inventory##description##96651"
 }

@@ -16,82 +16,114 @@
         "xdm:DSPMediaFees": {
           "title": "DSP Media Fees",
           "type": "number",
-          "description": "Media fees billable by DSP."
+          "description": "Media fees billable by DSP.",
+          "meta:titleId": "fees##xdm:DSPMediaFees##title##34091",
+          "meta:descriptionId": "fees##xdm:DSPMediaFees##description##76251"
         },
         "xdm:DSPDataFees": {
           "title": "DSP Data Fees",
           "type": "number",
-          "description": "Data fees billable by DSP."
+          "description": "Data fees billable by DSP.",
+          "meta:titleId": "fees##xdm:DSPDataFees##title##88751",
+          "meta:descriptionId": "fees##xdm:DSPDataFees##description##61971"
         },
         "xdm:DSPOtherFees": {
           "title": "DSP Other Fees",
           "type": "number",
-          "description": "Other fees billable by DSP."
+          "description": "Other fees billable by DSP.",
+          "meta:titleId": "fees##xdm:DSPOtherFees##title##65191",
+          "meta:descriptionId": "fees##xdm:DSPOtherFees##description##58861"
         },
         "xdm:accountMediaFees": {
           "title": "Account Media Fees",
           "type": "number",
-          "description": "Media fees for the account but not billable by DSP."
+          "description": "Media fees for the account but not billable by DSP.",
+          "meta:titleId": "fees##xdm:accountMediaFees##title##27161",
+          "meta:descriptionId": "fees##xdm:accountMediaFees##description##96461"
         },
         "xdm:accountDataFees": {
           "title": "Account Data Fees",
           "type": "number",
-          "description": "Data fees for the account but not billable by DSP."
+          "description": "Data fees for the account but not billable by DSP.",
+          "meta:titleId": "fees##xdm:accountDataFees##title##84761",
+          "meta:descriptionId": "fees##xdm:accountDataFees##description##82321"
         },
         "xdm:accountOtherFees": {
           "title": "Account Other Fees",
           "type": "number",
-          "description": "Other fees for the account but not billable by DSP."
+          "description": "Other fees for the account but not billable by DSP.",
+          "meta:titleId": "fees##xdm:accountOtherFees##title##57301",
+          "meta:descriptionId": "fees##xdm:accountOtherFees##description##87221"
         },
         "xdm:advertiserMediaFees": {
           "title": "Advertiser Media Fees",
           "type": "number",
-          "description": "Media advertiser fees charged to the advertiser from the account."
+          "description": "Media advertiser fees charged to the advertiser from the account.",
+          "meta:titleId": "fees##xdm:advertiserMediaFees##title##65371",
+          "meta:descriptionId": "fees##xdm:advertiserMediaFees##description##75021"
         },
         "xdm:advertiserDataFees": {
           "title": "Advertiser Data Fees",
           "type": "number",
-          "description": "Other advertiser fees charged to the advertiser from the account."
+          "description": "Other advertiser fees charged to the advertiser from the account.",
+          "meta:titleId": "fees##xdm:advertiserDataFees##title##55991",
+          "meta:descriptionId": "fees##xdm:advertiserDataFees##description##62701"
         },
         "xdm:advertiserOtherFees": {
           "title": "Advertiser Other Fees",
           "type": "number",
-          "description": "Other advertiser fees charged to the advertiser from the account."
+          "description": "Other advertiser fees charged to the advertiser from the account.",
+          "meta:titleId": "fees##xdm:advertiserOtherFees##title##84211",
+          "meta:descriptionId": "fees##xdm:advertiserOtherFees##description##48591"
         },
         "xdm:billableMediaNetSpend": {
           "title": "Billable Media Net Spend",
           "type": "number",
-          "description": "The billable net spend for media advertising."
+          "description": "The billable net spend for media advertising.",
+          "meta:titleId": "fees##xdm:billableMediaNetSpend##title##50471",
+          "meta:descriptionId": "fees##xdm:billableMediaNetSpend##description##64021"
         },
         "xdm:totalMediaNetSpend": {
           "title": "Total Media Net Spend",
           "type": "number",
-          "description": "The total net spend for media advertising."
+          "description": "The total net spend for media advertising.",
+          "meta:titleId": "fees##xdm:totalMediaNetSpend##title##88261",
+          "meta:descriptionId": "fees##xdm:totalMediaNetSpend##description##9331"
         },
         "xdm:billableDataNetSpend": {
           "title": "Billable Data Net Spend",
           "type": "number",
-          "description": "The billable net spend for data advertising."
+          "description": "The billable net spend for data advertising.",
+          "meta:titleId": "fees##xdm:billableDataNetSpend##title##81771",
+          "meta:descriptionId": "fees##xdm:billableDataNetSpend##description##32101"
         },
         "xdm:billableOtherNetSpend": {
           "title": "Billable Other Net Spend",
           "type": "number",
-          "description": "The billable net spend for other types of advertising."
+          "description": "The billable net spend for other types of advertising.",
+          "meta:titleId": "fees##xdm:billableOtherNetSpend##title##97481",
+          "meta:descriptionId": "fees##xdm:billableOtherNetSpend##description##96421"
         },
         "xdm:totalBillableNetSpend": {
           "title": "Total Billable Net Spend",
           "type": "number",
-          "description": "The total billable net spend."
+          "description": "The total billable net spend.",
+          "meta:titleId": "fees##xdm:totalBillableNetSpend##title##28011",
+          "meta:descriptionId": "fees##xdm:totalBillableNetSpend##description##41781"
         },
         "xdm:totalNonBillableNetSpend": {
           "title": "Total Non-Billable Net Spend",
           "type": "number",
-          "description": "The total non-billable net spend"
+          "description": "The total non-billable net spend",
+          "meta:titleId": "fees##xdm:totalNonBillableNetSpend##title##5131",
+          "meta:descriptionId": "fees##xdm:totalNonBillableNetSpend##description##20901"
         },
         "xdm:totalNetSpend": {
           "title": "Total Net Spend",
           "type": "number",
-          "description": "The total net spend."
+          "description": "The total net spend.",
+          "meta:titleId": "fees##xdm:totalNetSpend##title##21121",
+          "meta:descriptionId": "fees##xdm:totalNetSpend##description##72801"
         }
       }
     }
@@ -101,5 +133,7 @@
       "$ref": "#/definitions/fees"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "fees##title##76381",
+  "meta:descriptionId": "fees##description##37851"
 }

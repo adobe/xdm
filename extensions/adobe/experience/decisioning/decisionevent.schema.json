@@ -27,7 +27,9 @@
           "items": {
             "$ref": "#/definitions/proposition-details"
           },
-          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request."
+          "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
+          "meta:titleId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##title##95301",
+          "meta:descriptionId": "decisionevent##https://ns.adobe.com/experience/decisioning/propositions##description##63441"
         }
       }
     },
@@ -41,12 +43,16 @@
             "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
           },
           "minItems": 1,
-          "uniqueItems": true
+          "uniqueItems": true,
+          "meta:titleId": "decisionevent##xdm:items##title##30091",
+          "meta:descriptionId": "decisionevent##xdm:items##description##64411"
         },
         "xdm:scopeDetails": {
           "$ref": "https://ns.adobe.com/experience/decisioning/scope-details",
           "title": "Decision Scope Snapshot",
-          "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst."
+          "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
+          "meta:titleId": "decisionevent##xdm:scopeDetails##title##8281",
+          "meta:descriptionId": "decisionevent##xdm:scopeDetails##description##6731"
         }
       }
     }
@@ -78,5 +84,7 @@
       ]
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "decisionevent##title##70291",
+  "meta:descriptionId": "decisionevent##description##55261"
 }

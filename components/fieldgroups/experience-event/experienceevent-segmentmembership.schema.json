@@ -23,7 +23,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/segmentmembershipitem"
-          }
+          },
+          "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMemberships##title##75451",
+          "meta:descriptionId": "experienceevent-segmentmembership##xdm:segmentMemberships##description##35041"
         },
         "xdm:segmentMembership": {
           "title": "Segment Membership Map",
@@ -35,8 +37,10 @@
             "meta:xdmType": "map",
             "additionalProperties": {
               "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-            }
-          }
+            },
+            "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##75171"
+          },
+          "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##48291"
         }
       }
     }
@@ -50,5 +54,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-segmentmembership##title##47831",
+  "meta:descriptionId": "experienceevent-segmentmembership##description##37041"
 }

@@ -12,16 +12,20 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services"]
+    "industry": [
+      "financial_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Deposit details such as ID, type, and amount.",
   "definitions": {
     "deposit-details": {
       "properties": {
         "xdm:personalFinances": {
           "type": "object",
-		  "description": "Financial details including transactions, accounts, and applications.",
+          "description": "Financial details including transactions, accounts, and applications.",
           "properties": {
             "xdm:deposits": {
               "type": "object",
@@ -29,21 +33,28 @@
                 "xdm:transaction": {
                   "title": "Deposit Transaction",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                  "description": "Extension of transaction data type."
+                  "description": "Extension of transaction data type.",
+                  "meta:titleId": "experienceevent-deposit-details##xdm:transaction##title##80731",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:transaction##description##43411"
                 },
                 "xdm:account": {
                   "title": "Deposit Account",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-                  "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+                  "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
+                  "meta:titleId": "experienceevent-deposit-details##xdm:account##title##99811",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:account##description##65581"
                 },
                 "xdm:mobileDeposit": {
                   "title": "Mobile Deposit",
                   "type": "boolean",
-                  "description": "Indicator for whether the deposit was done through mobile or not."
+                  "description": "Indicator for whether the deposit was done through mobile or not.",
+                  "meta:titleId": "experienceevent-deposit-details##xdm:mobileDeposit##title##94461",
+                  "meta:descriptionId": "experienceevent-deposit-details##xdm:mobileDeposit##description##31401"
                 }
               }
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-deposit-details##xdm:personalFinances##description##91171"
         }
       }
     }
@@ -54,5 +65,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-deposit-details##title##21431",
+  "meta:descriptionId": "experienceevent-deposit-details##description##63721"
 }

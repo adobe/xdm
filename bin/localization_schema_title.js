@@ -35,7 +35,6 @@ function addMetaId(obj, val,path,schemaname) {
         if (typeof obj[i] == 'object') {
             addMetaId(obj[i], val,i,schemaname);
         } else if (i == val) {
-            console.log ("Value:"+i+" "+obj.hasOwnProperty("meta:titleId")+" "+obj.hasOwnProperty("meta:descriptionId"))
             if(val === 'title' && obj.hasOwnProperty("meta:titleId")) continue;
             if(val === 'description' && obj.hasOwnProperty("meta:descriptionId")) continue;
             if(path == null){

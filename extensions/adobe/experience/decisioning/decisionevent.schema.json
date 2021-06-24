@@ -22,6 +22,7 @@
     "decisionevent": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/propositions": {
+          "meta:status": "experimental",
           "title": "Proposition Details",
           "type": "array",
           "items": {

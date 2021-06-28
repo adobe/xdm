@@ -11,7 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:intendedToExtend": [],
-  "description": "Defines a set a audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.",
+  "description": "Defines a set of audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.",
   "definitions": {
     "externalSourceSystemAuditDetails": {
       "properties": {

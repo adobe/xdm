@@ -14,7 +14,7 @@ Airship gathers engagement data that can help you better understand how your aud
 
 * Airship Event Mixin `https://ns.airship.com/airship-event`
   * [IdentityMap](../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
   * [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
   * [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
   * [Application Details](../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
@@ -33,7 +33,7 @@ Airship gathers engagement data that can help you better understand how your aud
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmcolordepth) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:isBackgroundPushEnabled](#xdmisbackgroundpushenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmisbackgroundpushenabled) |
 | [xdm:isLocationEnabled](#xdmislocationenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmislocationenabled) |
@@ -800,7 +800,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 

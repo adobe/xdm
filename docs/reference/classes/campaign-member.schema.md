@@ -14,7 +14,7 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 
 * XDM Business Campaign Members `https://ns.adobe.com/xdm/context/campaign-member`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Campaign Members Example
@@ -44,7 +44,7 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Members (this schema) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Campaign Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -117,7 +117,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 

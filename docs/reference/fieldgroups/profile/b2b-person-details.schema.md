@@ -19,7 +19,7 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
   * [Profile Other Work Details](profile-other-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-other-work-details`
   * [Work Contact Details](profile-work-details.schema.md) `https://ns.adobe.com/xdm/context/profile-work-details`
   * [IdentityMap](../shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [External Source System Audit Details](../shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Person Details Example
@@ -32,7 +32,7 @@ This mixin is used to capture B2B Person specific attributes. A B2B Person could
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Person Details (this schema) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:extendedWorkDetails](#xdmextendedworkdetails) | `object` | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmextendedworkdetails) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmfaxphone) |
 | [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomeaddress) |
@@ -189,7 +189,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 

@@ -14,7 +14,7 @@ This class is used to capture XDM business account person relationship attribute
 
 * XDM Business Account Person Relation `https://ns.adobe.com/xdm/classes/account-person`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Account Person Relation Example
@@ -32,7 +32,7 @@ This class is used to capture XDM business account person relationship attribute
 | [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:accountPersonID](#xdmaccountpersonid) | `string` | **Required** | XDM Business Account Person Relation (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | XDM Business Account Person Relation (this schema) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:isDirect](#xdmisdirect) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
@@ -150,7 +150,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 

@@ -1,23 +1,23 @@
 
-# External Source System Audit Details Mixin Schema
+# External Source System Audit Details Schema
 
 ```
 https://ns.adobe.com/xdm/common/external-source-system-audit-details
 ```
 
-Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.
+Defines a set of audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/shared/external-source-system-audit-details.schema.json](fieldgroups/shared/external-source-system-audit-details.schema.json) |
 ## Schema Hierarchy
 
-* External Source System Audit Details Mixin `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+* External Source System Audit Details `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit`
 
 
-## External Source System Audit Details Mixin Example
+## External Source System Audit Details Example
 ```json
 {
   "xdm:createdBy": "USER111",
@@ -30,11 +30,11 @@ Mixin which defines a set a audit properties for extenal sources. It's strongly 
 }
 ```
 
-# External Source System Audit Details Mixin Properties
+# External Source System Audit Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | External Source System Audit Details Mixin (this schema) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | External Source System Audit Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:extSourceSystemAudit

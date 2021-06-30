@@ -15,7 +15,7 @@
   "definitions": {
     "countrycode": {
       "properties": {
-         "xdm:countryCode": {
+        "xdm:countryCode": {
           "title": "Country code",
           "type": "string",
           "pattern": "^[A-Z]{2}$",

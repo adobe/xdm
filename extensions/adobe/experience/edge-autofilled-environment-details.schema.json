@@ -50,7 +50,7 @@
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/countrycode",
+              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/countrycode"
             }
           }
         }
@@ -63,7 +63,7 @@
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/postalcode",
+              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/postalcode"
             }
           }
         }
@@ -76,7 +76,7 @@
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "http://schema.org/GeoCoordinates#/definitions/latitude",
+              "$ref": "http://schema.org/GeoCoordinates#/definitions/latitude"
             }
           }
         }
@@ -89,7 +89,7 @@
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "http://schema.org/GeoCoordinates#/definitions/longitude",
+              "$ref": "http://schema.org/GeoCoordinates#/definitions/longitude"
             }
           }
         }

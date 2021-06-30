@@ -58,6 +58,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `exclude` | Message profile filtered out |
 | `sent` | Message sent |
 | `bounce` | Message bounced |
+| `async_bounce` | Message bounced asynchronously |
 | `delay` | Message delayed |
 | `duplicate` | Duplicate message skipped |
 | `denylist` | Invalid destination skipped |

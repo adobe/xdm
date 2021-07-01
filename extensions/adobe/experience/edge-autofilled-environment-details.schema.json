@@ -56,14 +56,14 @@
         }
       }
     },
-    "edge-environment-postalcode": {
+    "edge-environment-stateprovince": {
       "properties": {
         "xdm:placeContext": {
           "type": "object",
           "properties": {
             "xdm:geo": {
               "title": "Geo",
-              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/postalcode"
+              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/stateprovince"
             }
           }
         }
@@ -110,7 +110,7 @@
       "$ref": "#/definitions/edge-environment-countrycode"
     },
     {
-      "$ref": "#/definitions/edge-environment-postalcode"
+      "$ref": "#/definitions/edge-environment-stateprovince"
     },
     {
       "$ref": "#/definitions/edge-environment-latitude"

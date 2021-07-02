@@ -1,0 +1,93 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Prescription Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "health_and_life_sciences"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "",
+    "definitions": {
+        "prescription-details": {
+            "properties": {
+                "xdm:prescription": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:deliveryEligible": {
+                            "title": "Delivery Eligible",
+                            "type": "boolean",
+                            "description": "Indicates if the prescription available to be delivered."
+                        },
+                        "xdm:ID": {
+                            "title": "ID",
+                            "type": "string",
+                            "description": "ID for the prescription being filled."
+                        },
+                        "xdm:refill": {
+                            "title": "Refill",
+                            "type": "boolean",
+                            "description": "Indicates if the prescription is new or being refilled."
+                        },
+                        "xdm:refillsRemaining": {
+                            "title": "Refills Remaining",
+                            "type": "integer",
+                            "description": "Count of the remaining prescription refills available."
+                        },
+                        "xdm:steps": {
+                            "title": "Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
+                        },
+                        "xdm:upload": {
+                            "title": "Upload",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/file-transfer",
+                            "description": "Extension of the File Transfer data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/prescription-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-02-22",
+    "examples": [
+        {
+            "xdm:prescriptions": {
+                "xdm:prescriptionDeliveryEligible": true,
+                "xdm:prescriptionID": "",
+                "xdm:prescriptionRefill": true,
+                "xdm:prescriptionRefillsRemaining": 2,
+                "xdm:prescriptionUpload": {
+                    "xdm:file-transfer": {
+                        "xdm:fileName": "4",
+                        "xdm:fileSize": "1024",
+                        "xdm:fileTransferComplete": 1,
+                        "xdm:fileTransferError": "1",
+                        "xdm:fileTransferStart": 1,
+                        "xdm:fileTransferType": "rx upload",
+                        "xdm:fileType": "PDF"
+                    }
+                }
+            }
+        }
+    ]
+}

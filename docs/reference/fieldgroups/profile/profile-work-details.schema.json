@@ -1,0 +1,110 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-work-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Work Contact Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "all"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
+    "definitions": {
+        "profile-work-details": {
+            "properties": {
+                "xdm:workAddress": {
+                    "title": "Work Address",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "A work postal address."
+                },
+                "xdm:workEmail": {
+                    "title": "Work Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                    "description": "A work email address."
+                },
+                "xdm:workPhone": {
+                    "title": "Work Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Work phone number."
+                },
+                "xdm:organizations": {
+                    "title": "Organizations",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-work-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:workAddress": {
+                "@id": "https://data.adobe.io/entities/address/123",
+                "xdm:primary": false,
+                "xdm:street1": "345 Park Ave",
+                "xdm:city": "San Jose",
+                "xdm:stateProvince": "US-CA",
+                "xdm:postalCode": "95110",
+                "xdm:country": "United States",
+                "xdm:countryCode": "US",
+                "schema:latitude": 37.3382,
+                "schema:longitude": -121.8863,
+                "xdm:status": "active",
+                "xdm:lastVerifiedDate": "2018-01-02"
+            },
+            "xdm:workEmail": {
+                "xdm:primary": false,
+                "xdm:address": "jsmith@xyzinc.com",
+                "xdm:label": "John Smith",
+                "xdm:type": "work",
+                "xdm:status": "active"
+            },
+            "xdm:workPhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-8888",
+                "xdm:status": "active"
+            },
+            "xdm:assistantDetails": {
+                "xdm:name": {
+                    "xdm:firstName": "John",
+                    "xdm:middleName": "S",
+                    "xdm:lastName": "Doe",
+                    "xdm:fullName": "John S. Doe"
+                },
+                "xdm:phone": {
+                    "xdm:primary": true,
+                    "xdm:number": "1-408-888-7777",
+                    "xdm:status": "active"
+                }
+            },
+            "xdm:reportsToID": "RPT10000",
+            "xdm:departments": [
+                "Finance",
+                "Marketing"
+            ],
+            "xdm:jobTitle": "Account manager"
+        }
+    ]
+}

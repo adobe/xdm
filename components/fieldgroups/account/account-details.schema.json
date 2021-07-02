@@ -1,0 +1,125 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/account-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account Details",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "description": "XDM business account details.",
+  "definitions": {
+    "account-details": {
+      "properties": {
+        "xdm:accountName": {
+          "title": "Account Name",
+          "description": "name of company. Up to 255 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:accountTerritoryID": {
+          "title": "Account Territory Id",
+          "description": "The territory to which the account has been assigned.",
+          "type": "string"
+        },
+        "xdm:accountScore": {
+          "title": "Account Score",
+          "type": "number"
+        },
+        "xdm:accountBillingAddress": {
+          "title": "Account Billing Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:accountShippingAddress": {
+          "title": "Account Shipping Address",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:accountPhysicalAddress": {
+          "title": "Account Physical Address",
+          "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:accountOrganization": {
+          "title": "Account Organization",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+        },
+        "xdm:accountParentID": {
+          "title": "Parent Account",
+          "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
+          "type": "string"
+        },
+        "xdm:partnerAccountID": {
+          "title": "Partner Account Id",
+          "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+          "type": "string"
+        },
+        "xdm:accountNumber": {
+          "title": "Account Number",
+          "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:accountDescription": {
+          "title": "Account Description",
+          "description": "Text description of the account.",
+          "type": "string"
+        },
+        "xdm:accountSite": {
+          "title": "Account Site Details",
+          "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
+          "type": "string"
+        },
+        "xdm:accountType": {
+          "title": "Account Type",
+          "description": "Account Type.",
+          "type": "string"
+        },
+        "xdm:accountSourceType": {
+          "title": "Account Source Type",
+          "description": "Source type for the account.",
+          "type": "string"
+        },
+        "xdm:defaultCurrencyCode": {
+          "title": "Default Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code."
+        },
+        "xdm:accountOwnership": {
+          "title": "Ownership",
+          "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
+          "type": "string"
+        },
+        "xdm:accountTradeStyle": {
+          "title": "Account Trade Style",
+          "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
+          "type": "string"
+        },
+        "xdm:accountPhone": {
+          "title": "Account Phone Number",
+          "description": "Phone number for the account.",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+        },
+        "xdm:accountFax": {
+          "title": "Account Fax Number",
+          "description": "Fax number for the account.",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/account-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-08-27"
+}

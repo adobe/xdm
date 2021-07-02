@@ -14,10 +14,31 @@ Captures information regarding an action taken for one or more prior proposition
 
 * Experience Event - Proposition Interactions `https://ns.adobe.com/experience/decisioning/proposition-interaction`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
 
 
 ## Experience Event - Proposition Interactions Examples
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/propositions": [
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "experience1"
+        }
+      ]
+    },
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "personalized-offer:f67bab756ed6ee4"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ```json
 {
@@ -67,34 +88,13 @@ Captures information regarding an action taken for one or more prior proposition
 }
 ```
 
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/propositions": [
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "experience1"
-        }
-      ]
-    },
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "personalized-offer:f67bab756ed6ee4"
-        }
-      ]
-    }
-  ]
-}
-```
-
 
 # Experience Event - Proposition Interactions Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | Experience Event - Proposition Interactions (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/propositions
@@ -129,7 +129,7 @@ All items must be of the type:
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

@@ -14,7 +14,7 @@ Adobe Advertising Cloud profile mixin for use with schemas for Solution data ing
 
 * Adobe Advertising Cloud Profile Template Mixin `https://ns.adobe.com/experience/adcloud-profile`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Segment Membership Details](../../mixins/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
+  * [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
   * [Adobe Advertising Cloud Profile Full Extension](adcloud/profile-all.schema.md) `https://ns.adobe.com/experience/adcloud/profile-all`
 
 
@@ -86,8 +86,8 @@ Adobe Advertising Cloud profile mixin for use with schemas for Solution data ing
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../mixins/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
-| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../mixins/profile/profile-segmentation.schema.md#xdmsegments) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
+| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments) |
 | [xdm:syncedRemarketingAudiences](#xdmsyncedremarketingaudiences) | Synchronized Remarketing Audiences | Optional | [Adobe Advertising Cloud Profile Full Extension](adcloud/profile-all.schema.md#xdmsyncedremarketingaudiences) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -97,7 +97,7 @@ Adobe Advertising Cloud profile mixin for use with schemas for Solution data ing
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../mixins/profile/profile-segmentation.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -120,7 +120,7 @@ Adobe Advertising Cloud profile mixin for use with schemas for Solution data ing
 * is optional
 * type: Segment membership
 
-* defined in [Segment Membership Details](../../mixins/profile/profile-segmentation.schema.md#xdmsegments)
+* defined in [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments)
 
 ### xdm:segments Type
 

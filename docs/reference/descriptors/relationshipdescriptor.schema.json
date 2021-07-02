@@ -54,11 +54,6 @@
                     "type": "string",
                     "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
                 },
-                "xdm:label": {
-                    "title": "Label",
-                    "type": "string",
-                    "description": "Provides a user friendly name or label to this relationship"
-                },
                 "xdm:sourceNamespace": {
                     "title": "Source Property Namespace",
                     "type": "string",
@@ -72,20 +67,21 @@
                 "xdm:sourceToDestinationTitle": {
                     "title": "Source to Destination Title",
                     "type": "string",
-                    "description": "Provides a user friendly title for the source->destination edge"
+                    "description": "Provides a user friendly title for the source->destination edge",
+                    "maxLength": 35
                 },
                 "xdm:destinationToSourceTitle": {
                     "title": "Destination to Source Title",
                     "type": "string",
-                    "description": "Provides a user friendly title for the destination->source edge"
+                    "description": "Provides a user friendly title for the destination->source edge",
+                    "maxLength": 35
                 },
                 "xdm:cardinality": {
                     "title": "Relationship Cardinality",
                     "type": "string",
                     "description": "Source to Destination cardinality",
                     "enum": [
-                        "M:1",
-                        "1:1"
+                        "M:1"
                     ],
                     "default": "M:1"
                 }

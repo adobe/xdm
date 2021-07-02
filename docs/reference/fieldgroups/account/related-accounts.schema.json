@@ -1,0 +1,50 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/related-accounts",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Related Business Accounts",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/account"
+    ],
+    "description": "An array of all related accounts linked to the primary account.",
+    "definitions": {
+        "related-account": {
+            "properties": {
+                "xdm:relatedAccounts": {
+                    "title": "Related Accounts",
+                    "description": "Related accounts which are linked to a primary Business Account. This is an array of Account IDs.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/related-account"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2021-01-19",
+    "examples": [
+        {
+            "xdm:relatedAccounts": [
+                "AAAA1111",
+                "BBBB2222"
+            ]
+        }
+    ]
+}

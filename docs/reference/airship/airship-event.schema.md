@@ -13,11 +13,11 @@ Airship gathers engagement data that can help you better understand how your aud
 ## Schema Hierarchy
 
 * Airship Event Mixin `https://ns.airship.com/airship-event`
-  * [IdentityMap](../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
-  * [Channel Details](../mixins/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
-  * [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Application Details](../mixins/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
+  * [IdentityMap](../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
+  * [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Application Details](../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
   * [Device](../datatypes/device.schema.md) `https://ns.adobe.com/xdm/context/device`
 
 
@@ -28,13 +28,13 @@ Airship gathers engagement data that can help you better understand how your aud
 | [airship:body](#airshipbody) | `object` | Optional | Airship Event Mixin (this schema) |
 | [airship:device](#airshipdevice) | `object` | Optional | Airship Event Mixin (this schema) |
 | [airship:offsetID](#airshipoffsetid) | `string` | Optional | Airship Event Mixin (this schema) |
-| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
+| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmcolordepth) |
-| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:isBackgroundPushEnabled](#xdmisbackgroundpushenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmisbackgroundpushenabled) |
 | [xdm:isLocationEnabled](#xdmislocationenabled) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmislocationenabled) |
 | [xdm:isPushOptIn](#xdmispushoptin) | `boolean` | Optional | [Device](../datatypes/device.schema.md#xdmispushoptin) |
@@ -42,7 +42,7 @@ Airship gathers engagement data that can help you better understand how your aud
 | [xdm:manufacturer](#xdmmanufacturer) | `string` | Optional | [Device](../datatypes/device.schema.md#xdmmanufacturer) |
 | [xdm:model](#xdmmodel) | `string` | Optional | [Device](../datatypes/device.schema.md#xdmmodel) |
 | [xdm:modelNumber](#xdmmodelnumber) | `string` | Optional | [Device](../datatypes/device.schema.md#xdmmodelnumber) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
 | [xdm:screenHeight](#xdmscreenheight) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmscreenheight) |
 | [xdm:screenOrientation](#xdmscreenorientation) | `enum` | Optional | [Device](../datatypes/device.schema.md#xdmscreenorientation) |
 | [xdm:screenWidth](#xdmscreenwidth) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmscreenwidth) |
@@ -704,7 +704,7 @@ This mixin is used to capture application information related to an ExperienceEv
 `xdm:application`
 * is optional
 * type: Application
-* defined in [Application Details](../mixins/experience-event/experienceevent-application.schema.md#xdmapplication)
+* defined in [Application Details](../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication)
 
 ### xdm:application Type
 
@@ -723,7 +723,7 @@ Experience channel related to the ExperienceEvent.
 `xdm:channel`
 * is optional
 * type: Experience Channel
-* defined in [Channel Details](../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel)
+* defined in [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel)
 
 ### xdm:channel Type
 
@@ -762,7 +762,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -781,7 +781,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -800,7 +800,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../mixins/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 
@@ -817,7 +817,7 @@ Audit attributes for external sources.
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 
@@ -982,7 +982,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [Environment Details](../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 

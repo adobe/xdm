@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/webreferrer",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Web referrer",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "The referrer of the web page, which is the URL a visitor came from immediately before the current web interaction was recorded.\nThe information in this schema is semantically compatible with the information in the HTTP `referer` header field, but allows for additional classification.\n\n> **Note:** While the [HTTP specification](https://www.w3.org/Protocols/HTTP/HTRQ_Headers.html#z14) uses the term \"referer\", XDM follows the [Document Object Model specification ](https://www.w3.org/TR/2000/WD-DOM-Level-1-20000929/level-one-html.html#ID-95229140) and uses the spelling \"referrer\", which is more widely accepted as the correct spelling.\n",
+    "definitions": {
+        "webreferrer": {
+            "properties": {
+                "xdm:URL": {
+                    "title": "URL",
+                    "type": "string",
+                    "description": "The referrer URL."
+                },
+                "xdm:type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "The referrer type.",
+                    "enum": [
+                        "internal",
+                        "external",
+                        "search_engine",
+                        "typed_bookmarked",
+                        "email",
+                        "social",
+                        "unknown",
+                        "usenet"
+                    ],
+                    "meta:enum": {
+                        "internal": "Internal",
+                        "external": "External",
+                        "search_engine": "Search engine",
+                        "typed_bookmarked": "Typed or bookmarked",
+                        "email": "Email",
+                        "social": "Social network",
+                        "unknown": "Unknown",
+                        "news": "Usenet newsgroup"
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/webreferrer"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:URL": "https://www.some-adserver.com",
+            "xdm:type": "external"
+        }
+    ]
+}

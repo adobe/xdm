@@ -1,0 +1,227 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Subscription",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Contain details for the specific subscription types, such as internet, mobile, media, or landline.",
+  "definitions": {
+    "subscription": {
+      "properties": {
+        "ID": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "Unique identifier for the subscription instance."
+        },
+        "xdm:subscriber": {
+          "title": "Subscriber",
+          "$ref": "https://ns.adobe.com/xdm/context/person",
+          "description": "The owner of the subscription."
+        },
+        "xdm:subscriptionSKU": {
+          "title": "Subscription SKU",
+          "type": "string",
+          "description": "Stock keeping unit (SKU), a generally unique identifier for a product."
+        },
+        "xdm:planName": {
+          "title": "Plan name",
+          "type": "string",
+          "description": "The human readable name for the subscription."
+        },
+        "xdm:type": {
+          "title": "Type",
+          "type": "string",
+          "description": "The scope of entitlement in relation to how many people are covered by the subscription."
+        },
+        "xdm:country": {
+          "title": "Country",
+          "type": "string",
+          "description": "The country that the subscription contractual and agreement terms are rooted in."
+        },
+        "xdm:startDate": {
+          "title": "Start date",
+          "type": "string",
+          "format": "date",
+          "description": "The date the subscription begins."
+        },
+        "xdm:endDate": {
+          "title": "End date",
+          "type": "string",
+          "format": "date",
+          "description": "The date the current subscription term ends."
+        },
+        "xdm:term": {
+          "title": "Term",
+          "type": "integer",
+          "description": "The numeric value of the term."
+        },
+        "xdm:termUnitOfTime": {
+          "title": "Term unit of time",
+          "type": "string",
+          "description": "The unit of time for the term period."
+        },
+        "xdm:renew": {
+          "title": "Renew",
+          "type": "string",
+          "description": "The agreed way that the subscription may continue after the end date."
+        },
+        "xdm:topUp": {
+          "title": "Top up",
+          "type": "string",
+          "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period."
+        },
+        "xdm:status": {
+          "title": "Status",
+          "type": "string",
+          "description": "The current status of the subscription."
+        },
+        "xdm:contractID": {
+          "title": "Contract ID",
+          "type": "string",
+          "description": "Unique ID for the contract that governs this subscription."
+        },
+        "xdm:paymentMethod": {
+          "title": "Payment method",
+          "type": "string",
+          "description": "The payment method for recurring payments."
+        },
+        "xdm:billingPeriod": {
+          "title": "Billing period",
+          "type": "string",
+          "description": "The duration between billings."
+        },
+        "xdm:billingStartDate": {
+          "title": "Billing start date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the billing period begins."
+        },
+        "xdm:paymentDueDate": {
+          "title": "Payment Due Date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the subscription payment is due."
+        },
+        "xdm:chargeMethod": {
+          "title": "Charge method",
+          "type": "string",
+          "description": "The way the billing is setup to charge the customer."
+        },
+        "xdm:paymentStatus": {
+          "title": "Payment status",
+          "type": "string",
+          "description": "The standing of the account."
+        },
+        "xdm:subscriptionCategory": {
+          "title": "Subscription Category",
+          "type": "string",
+          "description": "The main, top level categorization of this type of subscription."
+        },
+        "xdm:subscriptionSubCategory": {
+          "title": "Subscription Sub-category",
+          "type": "string",
+          "description": "The specific sub categorization of the subscription."
+        },
+        "xdm:devices": {
+          "title": "Devices",
+          "description": "Array of devices and/or accessories associated with the plan.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "xdm:ID": {
+                "title": "ID",
+                "type": "string",
+                "description": "Captures the ID for the device."
+              },
+              "xdm:manufacturer": {
+                "title": "Manufacturer",
+                "type": "string",
+                "description": "Captures the device manufacturer."
+              },
+              "xdm:name": {
+                "title": "Name",
+                "type": "string",
+                "description": "Captures the device name."
+              },
+              "xdm:serialNumber": {
+                "title": "Serial Number",
+                "type": "string",
+                "description": "Captures the device serial number."
+              },
+              "xdm:type": {
+                "title": "Type",
+                "type": "string",
+                "description": "Captures the device type."
+              },
+              "xdm:deviceFees": {
+                "title": "Device Fees",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                "description": "Captures any device fees for items such as routers, modems, recievers, etc."
+              },
+              "xdm:deviceInsurance": {
+                "title": "Device Insurance",
+                "type": "boolean",
+                "description": "Tracks if a customer has opted-in to insurance for the device."
+              },
+              "xdm:OS": {
+                "title": "OS",
+                "type": "string",
+                "enum": ["android", "ios", "windows", "blackberry", "symbian"],
+                "meta:enum": {
+                  "android": "Android",
+                  "ios": "iOS",
+                  "windows": "Windows",
+                  "blackberry": "Blackberry",
+                  "symbian": "Symbian"
+                },
+                "description": "Captures the device operating system."
+              },
+              "xdm:status": {
+                "title": "Status",
+                "type": "string",
+                "enum": ["active", "inactive"],
+                "meta:enum": {
+                  "active": "Active",
+                  "inactive": "Inactive"
+                },
+                "description": "Captures the device status."
+              },
+              "xdm:storageCapacity": {
+                "title": "Storage Capacity",
+                "type": "string",
+                "description": "Captures the device storage capacity."
+              },
+              "xdm:paymentOptions": {
+                "title": "Payment Options",
+                "type": "string",
+                "enum": ["installmentPlan", "retailPrice"],
+                "meta:enum": {
+                  "installmentPlan": "Installment Plan",
+                  "retailPrice": "Retail Price"
+                },
+                "description": "Captures if the device will be paid for in installments or full retail price."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/subscription"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19"
+}

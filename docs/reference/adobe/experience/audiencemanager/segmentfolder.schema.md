@@ -14,7 +14,7 @@ This Adobe Audience Manager-specific folder definition helps organize segment de
 
 * Adobe Audience Manager Segment Folder Class `https://ns.adobe.com/experience/audiencemanager/segmentfolder`
   * [Identity](../../../datatypes/identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
-  * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Record Schema](../../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
 
 
@@ -48,7 +48,7 @@ This Adobe Audience Manager-specific folder definition helps organize segment de
 | [https://ns.adobe.com/experience/audiencemanager/segmentFolderName](#httpsnsadobecomexperienceaudiencemanagersegmentfoldername) | `string` | **Required** | Adobe Audience Manager Segment Folder Class (this schema) |
 | [https://ns.adobe.com/experience/audiencemanager/segmentFolderStatus](#httpsnsadobecomexperienceaudiencemanagersegmentfolderstatus) | `string` | Optional | Adobe Audience Manager Segment Folder Class (this schema) |
 | [https://ns.adobe.com/experience/audiencemanager/segmentParentFolderIdentity](#httpsnsadobecomexperienceaudiencemanagersegmentparentfolderidentity) | Identity | Optional | Adobe Audience Manager Segment Folder Class (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | **Required** | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | **Required** | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -144,7 +144,7 @@ Identity of the parent folder of current folder
 `xdm:identityMap`
 * is **required**
 * type: `object`
-* defined in [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

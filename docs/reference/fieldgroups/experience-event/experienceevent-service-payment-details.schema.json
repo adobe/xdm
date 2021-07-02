@@ -1,0 +1,62 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-service-payment-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Service Payment Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "telecom"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Service Payment Details such as ID, type, and amount.",
+    "definitions": {
+        "service-payment-details": {
+            "properties": {
+                "xdm:service-payment-details": {
+                    "type": "object",
+                    "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
+                    "properties": {
+                        "xdm:servicePayment": {
+                            "title": "Service Payment",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                            "description": "Extension of transaction data type."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/service-payment-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-01-15",
+    "examples": [
+        {
+            "xdm:": {
+                "xdm:servicePayment": {
+                    "xdm:transaction": {
+                        "xdm:transactionAmount": "67.85",
+                        "xdm:transactionID": "T10291832",
+                        "xdm:transactionDate": "2021-01-07",
+                        "xdm:transactionType": "service payment"
+                    }
+                }
+            }
+        }
+    ]
+}

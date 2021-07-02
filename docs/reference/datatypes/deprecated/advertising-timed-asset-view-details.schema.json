@@ -1,0 +1,56 @@
+{
+    "meta:license": [
+        "Copyright 2018 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/advertising-timed-asset-view-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Ad asset view details",
+    "type": "object",
+    "description": "View details for the ad playback captured by the experience event.",
+    "meta:extensible": true,
+    "definitions": {
+        "adAssetViewDetails": {
+            "properties": {
+                "xdm:playerName": {
+                    "title": "Ad player name",
+                    "type": "string",
+                    "description": "The name of the player responsible for rendering the ad."
+                },
+                "xdm:index": {
+                    "title": "Ad In Pod Position",
+                    "type": "integer",
+                    "description": "The index of the ad inside the parent ad break, for example, the first ad has index 0 and the second ad has index 1."
+                },
+                "xdm:adBreak": {
+                    "title": "Ad break",
+                    "description": "Details about how a timed advertising is inserted into a timed media.",
+                    "$ref": "https://ns.adobe.com/xdm/context/advertising-break"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/adAssetViewDetails"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:playerName": "Acme Ad Player",
+            "xdm:index": 1,
+            "xdm:adBreak": {
+                "@id": "https://data.adobe.io/entities/adbreak/2394509340-30453470347",
+                "dc:title": "My Pod",
+                "xdm:offset": 3
+            }
+        }
+    ]
+}

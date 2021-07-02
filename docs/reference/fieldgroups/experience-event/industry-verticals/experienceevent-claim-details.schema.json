@@ -1,0 +1,109 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Claim Process",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "financial_services",
+            "health_and_life_sciences",
+            "high_tech"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Claim details such as claim policy ID and claim creation steps.",
+    "definitions": {
+        "claim-details": {
+            "properties": {
+                "xdm:claims": {
+                    "type": "object",
+                    "description": "Captures fields related to a claim when initated by a customer.",
+                    "properties": {
+                        "xdm:ID": {
+                            "title": "Claims ID",
+                            "type": "string",
+                            "description": "Unique identifier for the claim."
+                        },
+                        "xdm:startDate": {
+                            "title": "Start Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date the claim was successfully submitted."
+                        },
+                        "xdm:status": {
+                            "title": "Status",
+                            "type": "string",
+                            "enum": [
+                                "initiated",
+                                "in progress",
+                                "approved",
+                                "declined"
+                            ],
+                            "description": "Captures the status of the claim for any given point in the application process."
+                        },
+                        "xdm:type": {
+                            "title": "Type",
+                            "type": "string",
+                            "enum": [
+                                "homeowners",
+                                "automobile",
+                                "renters",
+                                "third party automobile",
+                                "third party home",
+                                "life",
+                                "health",
+                                "dental",
+                                "flood",
+                                "earthquake"
+                            ],
+                            "description": "Type of claim submitted."
+                        },
+                        "xdm:policyID": {
+                            "title": "Policy ID",
+                            "type": "string",
+                            "description": "Policy Identifier."
+                        },
+                        "xdm:benefitAmount": {
+                            "title": "Benefit Amount",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                            "description": "Captures the benefit amount."
+                        },
+                        "xdm:steps": {
+                            "title": "Steps",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                            "description": "Extension of toolUsage data type.",
+                            "meta:status": "deprecated"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/claim-details"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-02-19",
+    "examples": [
+        {
+            "xdm:claims": {
+                "xdm:ID": "P102819201D",
+                "xdm:startDate": "2021-03-04T15:52:25+00:00",
+                "xdm:status": "approved",
+                "xdm:type": "automobile"
+            }
+        }
+    ]
+}

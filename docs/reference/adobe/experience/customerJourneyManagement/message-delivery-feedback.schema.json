@@ -79,6 +79,15 @@
                                 "soft": "The reason for failed delivery is temporary.",
                                 "hard": "The reason for failed delivery is permanent."
                             }
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": {
+                            "title": "Failure Category",
+                            "type": "string",
+                            "description": "Classifies whether it is a sync bounce or async bounce.",
+                            "meta:enum": {
+                                "sync": "The delivery failed synchronously.",
+                                "async": "The delivery failed asynchronously."
+                            }
                         }
                     }
                 },

@@ -22,9 +22,20 @@
           "description": "Unique Identifier for a destination instance"
         },
         "xdm:namespaceCode": {
+          "meta:status": "deprecated",
           "title": "Namespace Code",
           "type": "string",
           "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+        },
+        "xdm:adobeNamespace": {
+          "title": "Adobe Namespace",
+          "type": "string",
+          "description": "This is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+        },
+        "xdm:partnerNamespace": {
+          "title": "Partner Namespace",
+          "type": "string",
+          "description": "This is a human readable identifier for the partner namespace."
         },
         "xdm:createTime": {
           "title": "Create Time",

@@ -9,7 +9,7 @@ Information automatically collected by the AEP Edge Orchestration Service to enr
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/edge-autofilled-environment-details.schema.json](adobe/experience/edge-autofilled-environment-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/edge-autofilled-environment-details.schema.json](adobe/experience/edge-autofilled-environment-details.schema.json) |
 ## Schema Hierarchy
 
 * Adobe Experience Edge Autofilled Environment Details `https://ns.adobe.com/experience/edge-autofilled-environment-details`
@@ -114,7 +114,7 @@ undefined
 #### xdm:geo
 ##### Geo
 
-The geographic location where the experience was delivered based on the IP address from the client request.
+undefined
 
 `xdm:geo`
 * is optional
@@ -123,7 +123,7 @@ The geographic location where the experience was delivered based on the IP addre
 ##### xdm:geo Type
 
 
-* []() – `https://ns.adobe.com/xdm/common/geo`
+* []() – `http://schema.org/GeoCoordinates#/definitions/longitude`
 
 
 

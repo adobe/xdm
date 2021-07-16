@@ -21,7 +21,8 @@ Destinations Namespace Mapping Schema.
 ```json
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-  "xdm:namespaceCode": "Email_LC_SHA256",
+  "xdm:adobeNamespace": "Email",
+  "xdm:partnerNamespace": "Email_LC_SHA256",
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhak"
 }
@@ -32,10 +33,12 @@ Destinations Namespace Mapping Schema.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
+| [xdm:adobeNamespace](#xdmadobenamespace) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:namespaceCode](#xdmnamespacecode) | `string` | Optional | Destinations Namespace Mapping (this schema) |
+| [xdm:partnerNamespace](#xdmpartnernamespace) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -53,6 +56,26 @@ A unique identifier for the record.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:adobeNamespace
+### Adobe Namespace
+
+This is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.
+
+`xdm:adobeNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:adobeNamespace Type
+
+
+`string`
 
 
 
@@ -131,6 +154,26 @@ This code is a human readable identifier for the namespace and can be used to re
 * defined in this schema
 
 ### xdm:namespaceCode Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:partnerNamespace
+### Partner Namespace
+
+This is a human readable identifier for the partner namespace.
+
+`xdm:partnerNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:partnerNamespace Type
 
 
 `string`

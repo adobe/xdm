@@ -45,15 +45,53 @@
                 }
             }
         },
-        "edge-environment-geo": {
+        "edge-environment-countrycode": {
             "properties": {
                 "xdm:placeContext": {
                     "type": "object",
                     "properties": {
                         "xdm:geo": {
                             "title": "Geo",
-                            "$ref": "https://ns.adobe.com/xdm/common/geo",
-                            "description": "The geographic location where the experience was delivered based on the IP address from the client request."
+                            "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/countrycode"
+                        }
+                    }
+                }
+            }
+        },
+        "edge-environment-stateprovince": {
+            "properties": {
+                "xdm:placeContext": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:geo": {
+                            "title": "Geo",
+                            "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/stateprovince"
+                        }
+                    }
+                }
+            }
+        },
+        "edge-environment-latitude": {
+            "properties": {
+                "xdm:placeContext": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:geo": {
+                            "title": "Geo",
+                            "$ref": "http://schema.org/GeoCoordinates#/definitions/latitude"
+                        }
+                    }
+                }
+            }
+        },
+        "edge-environment-longitude": {
+            "properties": {
+                "xdm:placeContext": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:geo": {
+                            "title": "Geo",
+                            "$ref": "http://schema.org/GeoCoordinates#/definitions/longitude"
                         }
                     }
                 }
@@ -71,10 +109,19 @@
             "$ref": "#/definitions/edge-environment-user-agent"
         },
         {
-            "$ref": "#/definitions/edge-environment-geo"
+            "$ref": "#/definitions/edge-environment-countrycode"
+        },
+        {
+            "$ref": "#/definitions/edge-environment-stateprovince"
+        },
+        {
+            "$ref": "#/definitions/edge-environment-latitude"
+        },
+        {
+            "$ref": "#/definitions/edge-environment-longitude"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:placeContext": {

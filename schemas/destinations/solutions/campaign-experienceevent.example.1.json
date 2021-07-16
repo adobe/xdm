@@ -1,0 +1,15 @@
+{
+  "@id": "abcd-defg-hijk-0000",
+  "xdm:timestamp": "2021-06-26T15:52:25+00:00",
+  "xdm:campaignId": "100",
+  "xdm:campaignName": "JS - Offer Management",
+  "xdm:broadlogId": "102",
+  "xdm:deliveryId": "103",
+  "xdm:recipientId": "3",
+  "xdm:channel": "Email",
+  "xdm:deliveryName": "JS - Offer Management Delivery",
+  "xdm:quarantine": "0",
+  "xdm.controlGroupMember": "1" 
+  "xdm.trackinglogId": "123",
+  "xdm.event_type": "delivery.feedback"
+}

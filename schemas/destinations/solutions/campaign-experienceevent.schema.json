@@ -106,15 +106,10 @@
           "type": "string",
           "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
         },
-        "xdm:broadlogId": {
-          "title": "Device",
-          "type": "string",
-          "description": "The device from where the ad was displayed."
-        },
         "xdm:trackinglogId": {
-          "title": "Device",
+          "title": "Tracking Log Identifier",
           "type": "string",
-          "description": "The device from where the ad was displayed."
+          "description": "Primary Key of the tracking log."
         },
         "xdm:url": {
           "title": "URL",

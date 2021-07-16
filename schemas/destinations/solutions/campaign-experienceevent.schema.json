@@ -74,7 +74,7 @@
             "Other": "Other",
             "Undefined": "Not Defined"
           }
-          "default": "Undefined",
+          "default": "Undefined"
         },
         "xdm:deliveryName": {
           "title": "Delivery Name",
@@ -161,7 +161,7 @@
             "untranslatable": "Character not supported by encoding",
             "control_group": "Control address"
           }
-          "default": "undefined",
+          "default": "undefined"
         },
         "xdm:reasonMessage": {
           "title": "Reason Message",

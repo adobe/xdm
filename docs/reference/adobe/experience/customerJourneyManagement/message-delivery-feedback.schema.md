@@ -23,7 +23,8 @@ Provide details for the delivery feedback for a single message in the Message Ex
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
     "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "Messagebox is Full",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "FR-123",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": "sync"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
 }
@@ -147,9 +148,37 @@ Provide exclusion subcode, like exact typology rule-id.
 
 | Property | Type | Required |
 |----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category`| string | Optional |
 | `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code`| string | Optional |
 | `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason`| string | Optional |
 | `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type`| string | Optional |
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category
+##### Failure Category
+
+Classifies whether it is a sync bounce or async bounce.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category Type
+
+
+`string`
+
+
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category Known Values
+| Value | Description |
+|-------|-------------|
+| `sync` | The delivery failed synchronously. |
+| `async` | The delivery failed asynchronously. |
+
+
+
 
 
 

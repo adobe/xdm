@@ -79,6 +79,15 @@
                                 "soft": "The reason for failed delivery is temporary.",
                                 "hard": "The reason for failed delivery is permanent."
                             }
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": {
+                            "title": "Failure Category",
+                            "type": "string",
+                            "description": "Classifies whether it is a sync bounce or async bounce.",
+                            "meta:enum": {
+                                "sync": "The delivery failed synchronously.",
+                                "async": "The delivery failed asynchronously."
+                            }
                         }
                     }
                 },
@@ -105,7 +114,8 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": "Messagebox is Full",
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": "FR-123",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft"
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": "sync"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
         }

@@ -82,7 +82,7 @@
           "description": "A human-friendly identifier of the delivery which is originating this message."
         },
         "xdm:deliveryMode": {
-          "title": "Delivery Mode"
+          "title": "Delivery Mode",
           "type": "string",
           "description": "Mode of delivery for the messages sent."
         },

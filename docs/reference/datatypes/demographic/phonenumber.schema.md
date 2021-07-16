@@ -29,6 +29,7 @@ Information that enables the contact of a person with a phone. Typically an alph
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
+| [xdm:countryCode](#xdmcountrycode) | `string` | Optional |  | Phone number (this schema) |
 | [xdm:extension](#xdmextension) | `string` | Optional |  | Phone number (this schema) |
 | [xdm:number](#xdmnumber) | `string` | Optional |  | Phone number (this schema) |
 | [xdm:primary](#xdmprimary) | `boolean` | Optional |  | Phone number (this schema) |
@@ -36,6 +37,33 @@ Information that enables the contact of a person with a phone. Typically an alph
 | [xdm:statusReason](#xdmstatusreason) | `string` | Optional |  | Phone number (this schema) |
 | [xdm:validity](#xdmvalidity) | `string` | Optional |  | Phone number (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:countryCode
+### Country Calling Code
+
+Country calling code (CC) as defined by E.164.
+
+`xdm:countryCode`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:countryCode Type
+
+
+`string`
+* minimum length: 1 characters
+* maximum length: 3 characters
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E%5B0-9%5D%7B1%2C3%7D%3F%24)):
+```regex
+^[0-9]{1,3}?$
+```
+
+
+
+
+
 
 ## xdm:extension
 ### Extension

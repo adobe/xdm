@@ -1,0 +1,183 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/xdm/destinations/adobe-campaign-events",
+  "title": "Adobe Campaign Experience Event",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "description": "Adobe Campaign Delivery and Tracking Logs for audience segementation and reporting needs.",
+  "definitions": {
+    "campaign-experienceevent": {
+      "properties": {
+        "xdm:externalId": {
+          "title": "External Identifier",
+          "type": "string",
+          "description": "External Identifier that defines the primary identity value for profile and audience."
+        },
+        "xdm:campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+        },
+        "xdm:campaignName": {
+          "title": "Campaign Name",
+          "type": "string",
+          "description": "A human-friendly identifier of the marketing campaign which is originating this message."
+        },
+        "xdm:broadlogId": {
+          "title": "Broad Log Identifier",
+          "type": "string",
+          "description": "Identifier of the marketing campaign delivery log this event belongs to."
+        },
+        "xdm:deliveryId": {
+          "title": "Delivery Identifier",
+          "type": "string",
+          "description": "The campaign activity originating this message."
+        },
+        "xdm:visitorId": {
+          "title": "Visitor Identifier",
+          "type": "string",
+          "description": "Visitor that was targeted as part of the delivery."
+        },
+        "xdm:recipientId": {
+          "title": "Recipient Identifer",
+          "type": "string",
+          "description": "Recipient that was targeted as part of this delivery."
+        },
+        "xdm:serviceId": {
+          "title": "Service Identifier",
+          "type": "string",
+          "description": "Subscribed Service that targeted this delivery."
+        },
+        "xdm:channel": {
+          "title": "Channel",
+          "type": "string",
+          "description": "Channel of the delivery.",
+          "meta:enum": {
+              "Email Channel": "Email",
+              "Mobile Channel (SMS)": "Mobile SMS",
+              "Telephone Channel": "Telephone",
+              "Direct Mail Channel": "Direct Mail",
+              "Fax Channel": "Fax",
+              "Facebook Channel": "Facebook",
+              "Twitter Channel": "Twitter",
+              "iOS Channel": "iOS",
+              "Android Channel": "Android",
+              "LINE Channel": "LINE",
+              "Other" : "Other",
+              "Undefined": "Not Defined"
+          },
+          "default": "Undefined"
+        },
+        "xdm:deliveryName": {
+          "title": "Delivery Name",
+          "type": "string",
+          "description": "A human-friendly identifier of the delivery which is originating this message."
+        },
+        "xdm:deliveryMode": {
+          "title": "Delivery Mode"
+          "type": "string",
+          "description": "Mode of delivery for the messages sent."
+        },
+        "xdm:quarantine": {
+          "title": "Quarantine",
+          "type": "string",
+          "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+        },
+        "xdm:controlGroupMember": {
+          "title": "Control Group Member",
+          "type": "string",
+          "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery."
+        },
+        "xdm:seedMember": {
+          "title": "Seed Member",
+          "type": "string",
+          "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
+        },
+        "xdm:proofMember": {
+          "title": "Proof Member",
+          "type": "string",
+          "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
+        },
+        "xdm:broadlogId": {
+          "title": "Device",
+          "type": "string",
+          "description": "The device from where the ad was displayed."
+        },
+        "xdm:trackinglogId": {
+          "title": "Device",
+          "type": "string",
+          "description": "The device from where the ad was displayed."
+        },
+        "xdm:url": {
+          "title": "URL",
+          "type": "string",
+          "description": "Unique Identifier of the Link."
+        },
+        "xdm:urlCategory": {
+          "title": "URL Category",
+          "type": "string",
+          "description": "The category of the link. It may be `subscription`, or a user-defined category."
+        },
+        "xdm:status": {
+          "title": "Message Status",
+          "type": "string",
+          "description": "Indicates status of the message that is being delivered."
+        },
+        "xdm:reason": {
+          "title": "Reason",
+          "type": "string",
+          "description": "The reason why the message could/would not be delivered.",
+          "meta:enum": {
+                "undefined": "Not defined",
+                "unknown_user": "The address does not exist. There is no use sending deliveries to this address.",
+                "invalid_domain": "The domain of the email address is incorrect or no longer exists.",
+                "unreachable": "An error has occurred in the message delivery chain.These addresses can be removed from the quarantine list to make another attempt.",
+                "disabled": "The user uses a messaging service which is accessible from the web. When the Internet Access Provider (IAP) detects a lengthy period of inactivity, it can close the user's account. Deliveries to the user's address will then be impossible.",
+                "mailbox_full": "The recipient's mailbox contains too many messages. This address can be removed from the quarantine list to make another attempt.",
+                "not_connected": "The recipient's mobile phone is switched off or not connected to the network when the message is sent.",
+                "refused": "The address was rejected following the application of a security rule (e.g. by an anti-spam program)",
+                "error_ignored": "The address is whitelisted and the message ignored.",
+                "address_undefined": "No address is given for the recipient.",
+                "blacklisted": "The address was blacklisted at the time of sending.",
+                "quarantine": "The address was in quarantine at the time of sending.",
+                "duplicate": "The address of the recipient was already in this campaign activity.",
+                "typology_rule": "The recipient was excluded by a 'SQL' type campaign typology rule.",
+                "business_ranking": "The recipient was excluded by an 'arbitration' type campaign typology rule",
+                "cancelled": "Delivery cancelled",
+                "quality": "The quality rating for this address is too low",
+                "unchecked": "Unqualified address",
+                "offer_missing": "Not eligible for the offers",
+                "over_delivery_limit": "The campaign activity had more than allowed number of target profiles.",
+                "expired": "The campaign activity exceeded the time duration to complete.",
+                "too_long": "Text too long",
+                "untranslatable": "Character not supported by encoding",
+                "control_group": "Control address"
+              },
+          "default": "undefined"
+        },
+        "xdm:reasonMessage": {
+          "title": "Reason Message",
+          "type": "string",
+          "description": "Reason of message delivery failure."
+        },
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/campaign-experienceevent"
+    }
+  ],
+  "meta:status": "stable"
+}

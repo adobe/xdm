@@ -9,7 +9,7 @@
   "xdm:channel": "Email Channel",
   "xdm:deliveryName": "JS - Offer Management Delivery",
   "xdm:quarantine": "0",
-  "xdm.controlGroupMember": "1",
-  "xdm.trackinglogId": "123",
-  "xdm.event_type": "delivery.feedback"
+  "xdm:controlGroupMember": "1",
+  "xdm:trackinglogId": "123",
+  "xdm:eventType": "delivery.feedback"
 }

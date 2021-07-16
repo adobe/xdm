@@ -71,9 +71,9 @@
             "iOS Channel": "iOS",
             "Android Channel": "Android",
             "LINE Channel": "LINE",
-            "Other" : "Other",
+            "Other": "Other",
             "Undefined": "Not Defined"
-          },
+          }
           "default": "Undefined",
         },
         "xdm:deliveryName": {
@@ -160,7 +160,7 @@
             "too_long": "Text too long",
             "untranslatable": "Character not supported by encoding",
             "control_group": "Control address"
-          },
+          }
           "default": "undefined",
         },
         "xdm:reasonMessage": {

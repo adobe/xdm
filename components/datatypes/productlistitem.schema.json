@@ -56,6 +56,11 @@
           "title": "Price total",
           "type": "number",
           "description": "The total price for the product line item."
+        },
+        "xdm:unitOfMeasureCode": {
+          "title": "Product Unit Of Measure Code",
+          "type": "string",
+          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
         }
       },
       "required": ["xdm:SKU"]

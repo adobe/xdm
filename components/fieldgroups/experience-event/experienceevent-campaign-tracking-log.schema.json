@@ -5,16 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/experienceevent-campaign-delivery-log",
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-campaign-tracking-log",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Campaign Marketing Delivery Logs",
+  "title": "Campaign Marketing Tracking Logs",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Campaign marketing events such as opens, clicks, sent, opt-out, links and impressions.",
   "definitions": {
-    "experienceevent-campaigndeliverylog": {
+    "experienceevent-campaigntrackinglog": {
       "properties": {
         "xdm:externalId": {
           "title": "External Identifier",
@@ -109,7 +109,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/experienceevent-campaigndeliverylog"
+      "$ref": "#/definitions/experienceevent-campaigntrackinglog"
     }
   ],
   "meta:status": "stable",

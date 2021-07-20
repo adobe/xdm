@@ -28,14 +28,31 @@
           "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
         },
         "xdm:adobeNamespace": {
+          "meta:status": "deprecated",
           "title": "Adobe Namespace",
           "type": "string",
           "description": "This is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
         },
+        "xdm:sourceNamespace": {
+          "title": "Source Namespace",
+          "type": "string",
+          "description": "This is a human readable identifier for the source namespace and can be used to request the technical namespace id which is used for identity graph processing."
+        },
         "xdm:partnerNamespace": {
+          "meta:status": "deprecated",
           "title": "Partner Namespace",
           "type": "string",
           "description": "This is a human readable identifier for the partner namespace."
+        },
+        "xdm:targetNamespace": {
+          "title": "Target Namespace",
+          "type": "string",
+          "description": "This is a human readable identifier for the target namespace."
+        },
+        "xdm:isMapped": {
+          "title": "isMapped",
+          "type": "boolean",
+          "description": "This field specifies if the destination has the target namespace mapped."
         },
         "xdm:createTime": {
           "title": "Create Time",

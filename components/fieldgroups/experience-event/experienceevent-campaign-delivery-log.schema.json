@@ -5,16 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-campaign-delivery-log",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/destinations/adobe-campaign-events",
-  "title": "Adobe Campaign Experience Event",
+  "title": "Campaign Marketing Delivery Logs",
   "type": "object",
-  "meta:extensible": false,
-  "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Adobe Campaign Delivery and Tracking Logs for audience segementation and reporting needs.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Campaign marketing events such as opens, clicks, sent, opt-out, links and impressions.",
   "definitions": {
-    "campaign-experienceevent": {
+    "experienceevent-campaigndeliverylog": {
       "properties": {
         "xdm:externalId": {
           "title": "External Identifier",
@@ -106,21 +106,6 @@
           "type": "string",
           "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
         },
-        "xdm:trackinglogId": {
-          "title": "Tracking Log Identifier",
-          "type": "string",
-          "description": "Primary Key of the tracking log."
-        },
-        "xdm:url": {
-          "title": "URL",
-          "type": "string",
-          "description": "Unique Identifier of the Link."
-        },
-        "xdm:urlCategory": {
-          "title": "URL Category",
-          "type": "string",
-          "description": "The category of the link. It may be `subscription`, or a user-defined category."
-        },
         "xdm:status": {
           "title": "Message Status",
           "type": "string",
@@ -168,11 +153,12 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/campaign-experienceevent"
+      "$ref": "#/definitions/experienceevent-campaigndeliverylog"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:createdDate": "2021-07-20"
 }

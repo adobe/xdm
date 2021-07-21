@@ -50,7 +50,7 @@
           "description": "This is a human readable identifier for the target namespace."
         },
         "xdm:isMapped": {
-          "title": "isMapped",
+          "title": "Is Mapped",
           "type": "boolean",
           "description": "This field specifies if the destination has the target namespace mapped."
         },

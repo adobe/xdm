@@ -75,7 +75,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementCount": {
           "title": "Placement Count",
           "type": "integer",
-          "description": "Count of placements"
+          "description": "Count of placements included in the offer proposition"
         }
       }
     }

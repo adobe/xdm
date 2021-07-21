@@ -14,7 +14,7 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Campaign marketing events such as opens, clicks, sent, opt-out, links and impressions.",
   "definitions": {
-    "experienceevent-campaigndeliverylog": {
+    "experienceevent-campaignlog": {
       "properties": {
         "xdm:externalId": {
           "title": "External Identifier",
@@ -156,7 +156,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/experienceevent-campaigndeliverylog"
+      "$ref": "#/definitions/experienceevent-campaignlog"
     }
   ],
   "meta:status": "stable",

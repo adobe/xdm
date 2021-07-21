@@ -52,17 +52,17 @@
           "type": "string",
           "description": "Human-Friendly label"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerID": {
           "title": "Offer ID",
           "type": "string",
           "description": "Unique Identifier for Offer"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementID": {
           "title": "Placement ID",
           "type": "string",
           "description": "Unique Identifier for Offer Placement"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionId": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionID": {
           "title": "Proposition ID",
           "type": "string",
           "description": "Unique Identifier for Offer Proposition"

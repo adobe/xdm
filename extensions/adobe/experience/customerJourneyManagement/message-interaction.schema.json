@@ -60,17 +60,17 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementId": {
           "title": "Placement ID",
           "type": "string",
-          "description": "Unique Identifier for Placement"
+          "description": "Unique Identifier for Offer Placement"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionId": {
           "title": "Proposition ID",
           "type": "string",
-          "description": "Unique Identifier for Proposition"
+          "description": "Unique Identifier for Offer Proposition"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionTime": {
           "title": "Proposition Time",
           "type": "string",
-          "description": "Time at which the proposition was generated"
+          "description": "Time at which the Offer proposition was generated"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementCount": {
           "title": "Placement Count",

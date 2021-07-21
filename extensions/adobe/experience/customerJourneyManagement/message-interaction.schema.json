@@ -51,6 +51,31 @@
           "title": "Tracker URL Label",
           "type": "string",
           "description": "Human-Friendly label"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerId": {
+          "title": "Offer ID",
+          "type": "string",
+          "description": "Unique Identifier for Offer"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementId": {
+          "title": "Placement ID",
+          "type": "string",
+          "description": "Unique Identifier for Placement"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionId": {
+          "title": "Proposition ID",
+          "type": "string",
+          "description": "Unique Identifier for Proposition"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionTime": {
+          "title": "Proposition Time",
+          "type": "string",
+          "description": "Time at which the proposition was generated"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementCount": {
+          "title": "Placement Count",
+          "type": "integer",
+          "description": "Count of placements"
         }
       }
     }

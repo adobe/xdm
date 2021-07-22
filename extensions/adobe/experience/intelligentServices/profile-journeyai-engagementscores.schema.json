@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
+  "description": "This field group contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
   "definitions": {
     "journeyai-engagement-scores": {
       "properties": {

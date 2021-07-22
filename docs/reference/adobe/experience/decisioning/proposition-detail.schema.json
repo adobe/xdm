@@ -16,9 +16,8 @@
         "proposition-detail-datatype": {
             "properties": {
                 "xdm:activity": {
-                    "meta:status": "deprecated",
-                    "title": "Decision Activity Snapshot (deprecated)",
-                    "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. (deprecated), use scopeDetails.activity instead.",
+                    "title": "Decision Activity Snapshot",
+                    "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. In the future, this will be deprecated in favor of scopeDetails.activity.",
                     "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
                 },
                 "xdm:channel": {
@@ -29,15 +28,13 @@
                     "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'. (deprecated), use scope.placement.channel instead. "
                 },
                 "xdm:placement": {
-                    "meta:status": "deprecated",
-                    "title": "Placement Snapshot (deprecated)",
-                    "description": "Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. (deprecated), use scopeDetails.placement instead.",
+                    "title": "Placement Snapshot",
+                    "description": "Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. In the future, this will be deprecated in favor of scopeDetails.placement.",
                     "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail"
                 },
                 "xdm:selections": {
-                    "meta:status": "deprecated",
-                    "title": "Selected Options' Snapshot (deprecated)",
-                    "description": "Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required. (deprecated), use items instead.",
+                    "title": "Selected Options' Snapshot",
+                    "description": "Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of items.",
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
@@ -46,9 +43,8 @@
                     "uniqueItems": true
                 },
                 "xdm:fallback": {
-                    "meta:status": "deprecated",
-                    "title": "Fallback Option Snapshot (deprecated)",
-                    "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. (deprecated) use scopeDetails.activity.fallback instead.",
+                    "title": "Fallback Option Snapshot",
+                    "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of scopeDetails.activity.fallback.",
                     "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
                 }
             }
@@ -62,7 +58,7 @@
             "$ref": "#/definitions/proposition-detail-datatype"
         }
     ],
-    "meta:status": "deprecated",
+    "meta:status": "stable",
     "examples": [
         {
             "xdm:activity": {

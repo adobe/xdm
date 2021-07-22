@@ -44,7 +44,7 @@ Captures information regarding an action taken for one or more prior proposition
 {
   "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
   "xdm:timestamp": "2020-09-26T15:52:25+00:00",
-  "xdm:eventType": "web.webinteraction.contentDisplay",
+  "xdm:eventType": "decisioning.propositionDisplay",
   "https://ns.adobe.com/experience/decisioning/propositions": [
     {
       "xdm:items": [

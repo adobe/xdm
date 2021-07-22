@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This fieldgroup is used to capture inferred details about a person where they are not directly avaialble.",
+  "description": "This field group is used to capture inferred details about a person where they are not directly avaialble.",
   "definitions": {
     "profile-inferred-person": {
       "properties": {

@@ -81,6 +81,8 @@ The primary event type for this time-series record.
 | `advertising.midpoints` | Advertising Midpoints |
 | `advertising.starts` | Advertising Starts |
 | `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `application.close` | Application Close |
+| `application.launch` | Application Launch |
 | `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
@@ -93,6 +95,8 @@ The primary event type for this time-series record.
 | `commerce.productViews` | Commerce Product Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
+| `decisioning.propositionDisplay` | Decisioning Proposition Display |
+| `decisioning.propositionInteract` | Decisioning Proposition Interact |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |

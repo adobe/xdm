@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Analytics ExperienceEvent",
   "type": "object",
-  "description": "Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent fieldgroups.",
+  "description": "Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent field groups.",
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:extends": [

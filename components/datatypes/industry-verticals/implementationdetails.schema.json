@@ -51,16 +51,16 @@
           "title": "Plugins",
           "type": "array",
           "item": {
-             "type": "object",
-             "properties": {
-                "xdm:name": {
-                   "type": "string"
-                },
-                "xdm:version": {
-                   "type": "string"
-                }
-             },
-             "required": ["xdm:name", "xdm:version"]
+            "type": "object",
+            "properties": {
+              "xdm:name": {
+                "type": "string"
+              },
+              "xdm:version": {
+                "type": "string"
+              }
+            },
+            "required": ["xdm:name", "xdm:version"]
           }
         }
       }

@@ -16,7 +16,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
-  "description": "Capture properties related to business campaign details.",
+  "description": "Captures properties related to business campaign details.",
   "definitions": {
     "campaign-details": {
       "properties": {

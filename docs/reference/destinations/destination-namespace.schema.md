@@ -21,8 +21,9 @@ Destinations Namespace Mapping Schema.
 ```json
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-  "xdm:adobeNamespace": "Email",
-  "xdm:partnerNamespace": "Email_LC_SHA256",
+  "xdm:sourceNamespace": "Email",
+  "xdm:targetNamespace": "Email_LC_SHA256",
+  "xdm:isMapped": true,
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhak"
 }
@@ -37,8 +38,11 @@ Destinations Namespace Mapping Schema.
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations Namespace Mapping (this schema) |
+| [xdm:isMapped](#xdmismapped) | `boolean` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:namespaceCode](#xdmnamespacecode) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | [xdm:partnerNamespace](#xdmpartnernamespace) | `string` | Optional | Destinations Namespace Mapping (this schema) |
+| [xdm:sourceNamespace](#xdmsourcenamespace) | `string` | Optional | Destinations Namespace Mapping (this schema) |
+| [xdm:targetNamespace](#xdmtargetnamespace) | `string` | Optional | Destinations Namespace Mapping (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -143,6 +147,25 @@ Unique Identifier for a destination instance
 
 
 
+## xdm:isMapped
+### Is Mapped
+
+This field specifies if the destination has the target namespace mapped.
+
+`xdm:isMapped`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isMapped Type
+
+
+`boolean`
+
+
+
+
+
 ## xdm:namespaceCode
 ### Namespace Code
 
@@ -174,6 +197,46 @@ This is a human readable identifier for the partner namespace.
 * defined in this schema
 
 ### xdm:partnerNamespace Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:sourceNamespace
+### Source Namespace
+
+This is a human readable identifier for the source namespace and can be used to request the technical namespace id which is used for identity graph processing.
+
+`xdm:sourceNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:sourceNamespace Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:targetNamespace
+### Target Namespace
+
+This is a human readable identifier for the target namespace.
+
+`xdm:targetNamespace`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:targetNamespace Type
 
 
 `string`

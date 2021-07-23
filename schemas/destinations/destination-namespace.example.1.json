@@ -1,7 +1,8 @@
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-  "xdm:adobeNamespace": "Email",
-  "xdm:partnerNamespace": "Email_LC_SHA256",
+  "xdm:sourceNamespace": "Email",
+  "xdm:targetNamespace": "Email_LC_SHA256",
+  "xdm:isMapped": true,
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhak"
 }

@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "This field group is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",
+  "description": "Capture and maintain additional opportunity attributes that are used by industry crm systems.",
   "definitions": {
     "opportunity-details": {
       "properties": {

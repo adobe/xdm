@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This field group is used to capture Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
+  "description": "Captures Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "definitions": {
     "bizible-person-details": {
       "properties": {

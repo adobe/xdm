@@ -72,10 +72,10 @@
           "type": "string",
           "description": "Time at which the Offer proposition was generated"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementCount": {
-          "title": "Placement Count",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerCount": {
+          "title": "Offer Count",
           "type": "integer",
-          "description": "Count of placements included in the offer proposition"
+          "description": "Count of offers included in the offer proposition"
         }
       }
     }

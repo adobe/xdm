@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Use this field group for web url which does not confine with URI format.",
+  "description": "Captures web url, which need not be in URI format.",
   "definitions": {
     "web-url": {
       "properties": {

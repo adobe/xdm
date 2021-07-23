@@ -31,6 +31,7 @@ Bill pay details such as transaction information, service account ID, and balanc
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

@@ -24,9 +24,37 @@
                     "description": "Unique Identifier for a destination instance"
                 },
                 "xdm:namespaceCode": {
+                    "meta:status": "deprecated",
                     "title": "Namespace Code",
                     "type": "string",
                     "description": "This code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+                },
+                "xdm:adobeNamespace": {
+                    "meta:status": "deprecated",
+                    "title": "Adobe Namespace",
+                    "type": "string",
+                    "description": "This is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+                },
+                "xdm:sourceNamespace": {
+                    "title": "Source Namespace",
+                    "type": "string",
+                    "description": "This is a human readable identifier for the source namespace and can be used to request the technical namespace id which is used for identity graph processing."
+                },
+                "xdm:partnerNamespace": {
+                    "meta:status": "deprecated",
+                    "title": "Partner Namespace",
+                    "type": "string",
+                    "description": "This is a human readable identifier for the partner namespace."
+                },
+                "xdm:targetNamespace": {
+                    "title": "Target Namespace",
+                    "type": "string",
+                    "description": "This is a human readable identifier for the target namespace."
+                },
+                "xdm:isMapped": {
+                    "title": "Is Mapped",
+                    "type": "boolean",
+                    "description": "This field specifies if the destination has the target namespace mapped."
                 },
                 "xdm:createTime": {
                     "title": "Create Time",
@@ -57,7 +85,9 @@
     "examples": [
         {
             "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-            "xdm:namespaceCode": "Email_LC_SHA256",
+            "xdm:sourceNamespace": "Email",
+            "xdm:targetNamespace": "Email_LC_SHA256",
+            "xdm:isMapped": true,
             "xdm:createTime": "2019-01-01T15:52:25+00:00",
             "xdm:createdByID": "mprabhak"
         }

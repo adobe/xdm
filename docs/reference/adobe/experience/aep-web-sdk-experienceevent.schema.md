@@ -14,10 +14,10 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 
 * AEP Web SDK ExperienceEvent Mixin `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
+  * [Implementation Details](../../fieldgroups/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
-  * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
+  * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
   * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
 
@@ -26,12 +26,12 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
-| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | [Implementation Details](../../fieldgroups/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
-| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
+| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/propositions
@@ -68,7 +68,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -87,7 +87,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -101,12 +101,12 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:implementationDetails
 ### Implementation details
 
-The details of the software used to collect the ExperienceEvent.
+Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.
 
 `xdm:implementationDetails`
 * is optional
 * type: Implementation details
-* defined in [Implementation Details](../../mixins/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails)
+* defined in [Implementation Details](../../fieldgroups/experience-event/experienceevent-implementation-details.schema.md#xdmimplementationdetails)
 
 ### xdm:implementationDetails Type
 
@@ -125,7 +125,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 
@@ -354,17 +354,17 @@ undefined
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional
 * type: Web information
-* defined in [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
+* defined in [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb)
 
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

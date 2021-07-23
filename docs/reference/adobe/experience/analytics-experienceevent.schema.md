@@ -14,146 +14,27 @@ Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion
 
 * Adobe Analytics ExperienceEvent Template Mixin `https://ns.adobe.com/experience/analytics-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Advertising Details](../../mixins/experience-event/experienceevent-advertising.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-advertising`
-  * [Application Details](../../mixins/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
-  * [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
-  * [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
-  * [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
-  * [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-marketing`
-  * [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-media`
-  * [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
-  * [Search Details](../../mixins/experience-event/experienceevent-search.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-search`
-  * [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
-  * [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
-  * [Web Details](../../mixins/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
+  * [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-advertising`
+  * [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
+  * [Channel Details](../../fieldgroups/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
+  * [Direct Marketing Details](../../fieldgroups/experience-event/experienceevent-directmarketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-directmarketing`
+  * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
+  * [Campaign Marketing Details](../../fieldgroups/experience-event/experienceevent-marketing.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-marketing`
+  * [Media Interaction Details ](../../fieldgroups/experience-event/experienceevent-media.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-media`
+  * [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
+  * [Search Details](../../fieldgroups/experience-event/experienceevent-search.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-search`
+  * [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
+  * [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-technical-details`
+  * [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-web`
   * [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md) `https://ns.adobe.com/experience/analytics/experienceevent-all`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
   * [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/target/experienceevent-shared`
   * [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/profile/experienceevent-shared`
   * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
-  * [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
+  * [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
   * [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md) `https://ns.adobe.com/experience/analytics/commerce`
+  * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
-
-## Adobe Analytics ExperienceEvent Template Mixin Example
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123456",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "id": "68519882713298129995549973016107434638",
-        "primary": true
-      }
-    ],
-    "AVID": [
-      {
-        "id": "2dfb7d8e00003ba4-056de00000000085",
-        "primary": false
-      }
-    ]
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
-  },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
-    "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
-    }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  },
-  "https://ns.adobe.com/experience/analytics/customDimensions": {
-    "xdm:eVars": {
-      "xdm:eVar1": "customer"
-    }
-  }
-}
-```
 
 # Adobe Analytics ExperienceEvent Template Mixin Properties
 
@@ -173,29 +54,30 @@ Analytics ExperienceEvent mixin for use with schemas for Solution data ingestion
 | [https://ns.adobe.com/experience/analytics/event801to900](#httpsnsadobecomexperienceanalyticsevent801to900) | event801to900.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent801to900) |
 | [https://ns.adobe.com/experience/analytics/event901to1000](#httpsnsadobecomexperienceanalyticsevent901to1000) | event901to1000.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent901to1000) |
 | [https://ns.adobe.com/experience/analytics/session](#httpsnsadobecomexperienceanalyticssession) | session.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticssession) |
+| [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
-| [xdm:advertising](#xdmadvertising) | Advertising | Optional | [Advertising Details](../../mixins/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
-| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication) |
-| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel) |
+| [xdm:advertising](#xdmadvertising) | Advertising | Optional | [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
+| [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication) |
+| [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel) |
 | [xdm:commerce](#xdmcommerce) | Commerce | Optional | [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmcommerce) |
-| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
-| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
-| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
-| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
-| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
-| [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
-| [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia) |
-| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
+| [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
+| [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
+| [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | [Direct Marketing Details](../../fieldgroups/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
+| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md#xdmenduserids) |
+| [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
+| [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../fieldgroups/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
+| [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../fieldgroups/experience-event/experienceevent-media.schema.md#xdmmedia) |
+| [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
 | [xdm:productListItems](#xdmproductlistitems) | Adobe Analytics extension to XDM Product List Item | Optional | [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmproductlistitems) |
-| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
-| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
-| [xdm:search](#xdmsearch) | Search | Optional | [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
-| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
+| [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
+| [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
+| [xdm:search](#xdmsearch) | Search | Optional | [Search Details](../../fieldgroups/experience-event/experienceevent-search.schema.md#xdmsearch) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership) |
+| [xdm:segmentMemberships](#xdmsegmentmemberships) | Segment membership item | Optional | [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships) |
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
-| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb) |
+| [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/analytics/customDimensions
@@ -2782,6 +2664,32 @@ All instances must conform to this regular expression
 
 
 
+## https://ns.adobe.com/experience/decisioning/propositions
+### Involved Propositions
+
+An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.
+
+`https://ns.adobe.com/experience/decisioning/propositions`
+* is optional
+* type: Proposition Interaction Details
+
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions)
+
+### https://ns.adobe.com/experience/decisioning/propositions Type
+
+
+Array type: Proposition Interaction Details
+
+All items must be of the type:
+* [Proposition Interaction Details](decisioning/proposition-interaction-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-interaction-details`
+
+
+
+
+
+
+
+
 ## https://ns.adobe.com/experience/implementations
 
 
@@ -2842,12 +2750,12 @@ Identifier used to stitch Target events with Analytics events
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents.
+Information related to advertising impressions, clickthroughs, and attribution.
 
 `xdm:advertising`
 * is optional
 * type: Advertising
-* defined in [Advertising Details](../../mixins/experience-event/experienceevent-advertising.schema.md#xdmadvertising)
+* defined in [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md#xdmadvertising)
 
 ### xdm:advertising Type
 
@@ -2866,7 +2774,7 @@ This mixin is used to capture application information related to an ExperienceEv
 `xdm:application`
 * is optional
 * type: Application
-* defined in [Application Details](../../mixins/experience-event/experienceevent-application.schema.md#xdmapplication)
+* defined in [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication)
 
 ### xdm:application Type
 
@@ -2885,7 +2793,7 @@ Experience channel related to the ExperienceEvent.
 `xdm:channel`
 * is optional
 * type: Experience Channel
-* defined in [Channel Details](../../mixins/experience-event/experienceevent-channel.schema.md#xdmchannel)
+* defined in [Channel Details](../../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel)
 
 ### xdm:channel Type
 
@@ -2899,7 +2807,7 @@ Experience channel related to the ExperienceEvent.
 ## xdm:commerce
 ### Commerce
 
-Commerce specific data related to this event.
+Product returns, warranty registration, and shopping cart/order process.
 
 `xdm:commerce`
 * is optional
@@ -2923,7 +2831,7 @@ Globally unique identification of a data source.
 `xdm:dataSource`
 * is optional
 * type: Data Source
-* defined in [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmdatasource)
+* defined in [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmdatasource)
 
 ### xdm:dataSource Type
 
@@ -2942,7 +2850,7 @@ An identified device, application or device browser instance that is trackable a
 `xdm:device`
 * is optional
 * type: Device
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice)
 
 ### xdm:device Type
 
@@ -2961,7 +2869,7 @@ Events and properties related to direct and outbound marketing such as email, di
 `xdm:directMarketing`
 * is optional
 * type: Direct marketing
-* defined in [Direct Marketing Details](../../mixins/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing)
+* defined in [Direct Marketing Details](../../fieldgroups/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing)
 
 ### xdm:directMarketing Type
 
@@ -2980,7 +2888,7 @@ Condensed, normalized encapsulation of end user identifiers asserted for this Ex
 `xdm:endUserIDs`
 * is optional
 * type: End user IDs
-* defined in [End User ID Details](../../mixins/experience-event/experienceevent-enduserids.schema.md#xdmenduserids)
+* defined in [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md#xdmenduserids)
 
 ### xdm:endUserIDs Type
 
@@ -2999,7 +2907,7 @@ Information about the surrounding situation the event observation occurred in, s
 `xdm:environment`
 * is optional
 * type: Environment
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment)
 
 ### xdm:environment Type
 
@@ -3013,12 +2921,12 @@ Information about the surrounding situation the event observation occurred in, s
 ## xdm:marketing
 ### Marketing
 
-The information related to marketing activities that are active with the touchpoint.
+Tracks offer impression and social network interactions.
 
 `xdm:marketing`
 * is optional
 * type: Marketing
-* defined in [Campaign Marketing Details](../../mixins/experience-event/experienceevent-marketing.schema.md#xdmmarketing)
+* defined in [Campaign Marketing Details](../../fieldgroups/experience-event/experienceevent-marketing.schema.md#xdmmarketing)
 
 ### xdm:marketing Type
 
@@ -3037,12 +2945,12 @@ Media activity information related to the experience event.
 `xdm:media`
 * is optional
 * type: Media information
-* defined in [Media Interaction Details ](../../mixins/experience-event/experienceevent-media.schema.md#xdmmedia)
+* defined in [Media Interaction Details ](../../fieldgroups/experience-event/experienceevent-media.schema.md#xdmmedia)
 
 ### xdm:media Type
 
 
-* [Media information](../../datatypes/media/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
+* [Media information](../../datatypes/media.schema.md) – `https://ns.adobe.com/xdm/context/media`
 
 
 
@@ -3056,7 +2964,7 @@ The transient circumstances related to the observation. Examples include locale 
 `xdm:placeContext`
 * is optional
 * type: Place context
-* defined in [Environment Details](../../mixins/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
+* defined in [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext)
 
 ### xdm:placeContext Type
 
@@ -3102,7 +3010,7 @@ Details about the IDs that were joined by profile stitching.
 * is optional
 * type: Profile stitch
 
-* defined in [Profile Stitch Details](../../mixins/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch)
+* defined in [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch)
 
 ### xdm:profileStitch Type
 
@@ -3127,7 +3035,7 @@ The time at which this interaction was received by a server.
 `xdm:receivedTimestamp`
 * is optional
 * type: `string`
-* defined in [Technical Details](../../mixins/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp)
+* defined in [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp)
 
 ### xdm:receivedTimestamp Type
 
@@ -3148,7 +3056,7 @@ The information related to web or mobile search.
 `xdm:search`
 * is optional
 * type: Search
-* defined in [Search Details](../../mixins/experience-event/experienceevent-search.schema.md#xdmsearch)
+* defined in [Search Details](../../fieldgroups/experience-event/experienceevent-search.schema.md#xdmsearch)
 
 ### xdm:search Type
 
@@ -3165,7 +3073,7 @@ The information related to web or mobile search.
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -3190,7 +3098,7 @@ The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentM
 * is optional
 * type: Segment membership item
 
-* defined in [Segment Membership Details](../../mixins/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
+* defined in [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md#xdmsegmentmemberships)
 
 ### xdm:segmentMemberships Type
 
@@ -3425,17 +3333,17 @@ undefined
 ## xdm:web
 ### Web
 
-The information related to web page and link of the ExperienceEvent.
+Link clicks, web page details, referrer information, and browser details.
 
 `xdm:web`
 * is optional
 * type: Web information
-* defined in [Web Details](../../mixins/experience-event/experienceevent-web.schema.md#xdmweb)
+* defined in [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb)
 
 ### xdm:web Type
 
 
-* [Web information](../../datatypes/web/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
+* [Web information](../../datatypes/webinfo.schema.md) – `https://ns.adobe.com/xdm/context/webinfo`
 
 
 

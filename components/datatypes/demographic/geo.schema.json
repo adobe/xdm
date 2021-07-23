@@ -13,36 +13,56 @@
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
-    "geo": {
+    "countrycode": {
       "properties": {
         "xdm:countryCode": {
           "title": "Country code",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
           "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country."
-        },
+        }
+      }
+    },
+    "stateprovince": {
+      "properties": {
         "xdm:stateProvince": {
           "title": "State or province",
           "type": "string",
           "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
           "examples": ["US-CA", "DE-BB", "JP-13"],
           "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)"
-        },
+        }
+      }
+    },
+    "city": {
+      "properties": {
         "xdm:city": {
           "title": "City",
           "type": "string",
           "description": "The name of the city."
-        },
+        }
+      }
+    },
+    "postalcode": {
+      "properties": {
         "xdm:postalCode": {
           "title": "Postal code",
           "type": "string",
           "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code."
-        },
+        }
+      }
+    },
+    "dmaid": {
+      "properties": {
         "xdm:dmaID": {
           "title": "Designated market area",
           "type": "integer",
           "description": "The Nielsen media research designated market area."
-        },
+        }
+      }
+    },
+    "msaid": {
+      "properties": {
         "xdm:msaID": {
           "title": "Metropolitan statistical area",
           "type": "integer",
@@ -56,7 +76,22 @@
       "$ref": "http://schema.org/GeoCoordinates"
     },
     {
-      "$ref": "#/definitions/geo"
+      "$ref": "#/definitions/countrycode"
+    },
+    {
+      "$ref": "#/definitions/stateprovince"
+    },
+    {
+      "$ref": "#/definitions/city"
+    },
+    {
+      "$ref": "#/definitions/postalcode"
+    },
+    {
+      "$ref": "#/definitions/dmaid"
+    },
+    {
+      "$ref": "#/definitions/msaid"
     }
   ],
   "meta:status": "stable",

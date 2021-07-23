@@ -1,0 +1,83 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Bill Pay Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Bill pay details such as transaction information, service account ID, and balance.",
+  "definitions": {
+    "bill-pay-details": {
+      "properties": {
+        "xdm:personalFinances": {
+          "type": "object",
+		  "description": "Financial details including transactions, accounts, and applications.",
+          "properties": {
+            "xdm:billPayDetails": {
+              "type": "object",
+              "properties": {
+                "xdm:steps": {
+                  "title": "Steps",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+                  "description": "Extension of toolUsage data type.",
+                  "meta:status": "deprecated"
+                },
+                "xdm:transaction": {
+                  "title": "Transaction",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+                  "description": "Extension of transaction data type."
+                },
+                "xdm:financialAccount": {
+                  "title": "Financial Account",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
+                  "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+                },
+                "xdm:scheduledTransactionDate": {
+                  "title": "Scheduled Transaction Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Records the scheduled date/time of the transaction."
+                },
+                "xdm:serviceProvider": {
+                  "type": "object",
+                  "description": "Tracks all details related to a biller.",
+                  "properties": {
+                    "xdm:name": {
+                      "title": "Service Provider Name",
+                      "type": "string",
+                      "description": "The name/nickname for the service provider."
+                    },
+                    "xdm:userAccountID": {
+                      "title": "User Account ID",
+                      "type": "string",
+                      "description": "The user account ID for the service provider."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/bill-pay-details"
+  }],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-03-30"
+}

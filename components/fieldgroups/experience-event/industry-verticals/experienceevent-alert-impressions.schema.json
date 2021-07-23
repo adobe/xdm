@@ -1,0 +1,69 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Alert Impressions",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "health_and_life_sciences",
+      "public_sector"
+    ]
+  },
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Alert information such as ad impressions and ad clicks. ",
+  "definitions": {
+    "alert-impressions": {
+      "properties": {
+        "xdm:alerts": {
+          "type": "object",
+		  "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
+          "properties": {
+            "xdm:ID": {
+              "title": "Alert ID",
+              "type": "string",
+              "description": "Alert identifier."
+            },
+            "xdm:clicks": {
+              "title": "Alert Clicks",
+              "type": "integer",
+              "description": "Counts the number of times an alert has been clicked."
+            },
+            "xdm:dismissals": {
+              "title": "Alert Dismissals",
+              "type": "integer",
+              "description": "Counts the number of times an alert has been dismissed."
+            },
+            "xdm:impressions": {
+              "title": "Alert Impression Details",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
+              },
+              "description": "An array of alerts that have been displayed to a customer."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/alert-impressions"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-19"
+}

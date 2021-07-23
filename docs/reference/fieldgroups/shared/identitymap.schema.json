@@ -1,0 +1,82 @@
+{
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/identitymap",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "IdentityMap",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:tags": {
+        "industry": [
+            "all"
+        ]
+    },
+    "meta:intendedToExtend": [],
+    "description": "Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried. Use identityMap if bringing in data from systems having identities stored in a map structure. Limitation: you won't be able to see the identity fields in the UI. If collecting data directly from a website or bringing in raw data from a system, and identities are in different fields in the data, then use descriptors. This will give you visibility to your identities in the UI.",
+    "definitions": {
+        "identitymap": {
+            "properties": {
+                "xdm:identityMap": {
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "https://ns.adobe.com/xdm/context/identityitem"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/identitymap"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "https://data.adobe.io/entities/namespace/4": [
+                {
+                    "xdm:id": "92312748749128"
+                },
+                {
+                    "xdm:id": "92312748749239"
+                }
+            ],
+            "https://data.adobe.io/entities/namespace/10": [
+                {
+                    "xdm:id": "2394509340-30453470347",
+                    "xdm:authenticatedState": "authenticated"
+                }
+            ],
+            "https://data.adobe.io/entities/namespace/9": [
+                {
+                    "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+                }
+            ]
+        },
+        {
+            "EMAIL": [
+                {
+                    "xdm:id": "92312748749128"
+                },
+                {
+                    "xdm:id": "92312748749239"
+                }
+            ],
+            "CRM": [
+                {
+                    "xdm:id": "2394509340-30453470347",
+                    "xdm:authenticatedState": "authenticated"
+                }
+            ]
+        }
+    ]
+}

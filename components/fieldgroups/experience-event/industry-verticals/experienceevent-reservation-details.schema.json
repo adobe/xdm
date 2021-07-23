@@ -1,0 +1,137 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Reservation Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Reservation details such as length, modification, refundable status, and number of rooms.",
+  "definitions": {
+    "reservations": {
+      "properties": {
+        "xdm:reservations": {
+          "type": "object",
+		  "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
+          "properties": {
+            "xdm:cancellation": {
+              "title": "Cancellation",
+              "type": "integer",
+              "description": "Tracked when a reservation has been cancelled."
+            },
+            "xdm:confirmationNumber": {
+              "title": "Confirmation Number",
+              "type": "string",
+              "description": "Tracks the reservation confirmation number/identifier."
+            },
+            "xdm:created": {
+              "title": "Created",
+              "type": "integer",
+              "description": "Tracked when a reservation has been created."
+            },
+            "xdm:currencyCode": {
+              "title": "Currency Code",
+              "type": "string",
+              "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "xdm:endDate": {
+              "title": "End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "The end drop-off/return/check-out date of the reservation."
+            },
+            "xdm:ID": {
+              "title": "ID",
+              "type": "string",
+              "description": "Tracks the reservation number/identifier."
+            },
+            "xdm:length": {
+              "title": "Length",
+              "type": "integer",
+              "description": "Tracks the total number of days for a reservation."
+            },
+            "xdm:modification": {
+              "title": "Modification",
+              "type": "integer",
+              "description": "Captured when a reservation has been modified."
+            },
+            "xdm:modificationDate": {
+              "title": "Modification Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks when a reservation has been modified."
+            },
+            "xdm:nonRefundableAmount": {
+              "title": "Non-Refundable Amount",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Amount of the reservation price that is marked as non-refundable."
+            },
+            "xdm:numberOfAdults": {
+              "title": "Number of Adults",
+              "type": "integer",
+              "description": "Captures the number of adults associated with the reservation."
+            },
+            "xdm:numberOfChildren": {
+              "title": "Number of Children",
+              "type": "integer",
+              "description": "Captures the number of children associated with the reservation."
+            },
+            "xdm:processSteps": {
+              "title": "Process Steps",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+              "description": "Extension of toolUsage data type.",
+              "meta:status": "deprecated"
+            },
+            "xdm:purpose": {
+              "title": "Purpose",
+              "type": "string",
+              "meta:enum": {
+                "business": "Business",
+                "personal": "Personal"
+              },
+              "description": "Tracks the purpose of the reservation, typically either business or personal."
+            },
+            "xdm:startDate": {
+              "title": "Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "The start pick-up/outbound/check-in date of the reservation."
+            },
+            "xdm:transaction": {
+              "title": "Transaction",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "description": "Extension of transaction data type."
+            },
+            "xdm:triptype": {
+              "title": "Trip Type",
+              "type": "string",
+              "meta:enum": {
+                "roundtrip": "Roundtrip",
+                "oneWay": "One Way",
+                "multiCity": "Multi-City"
+              },
+              "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservations"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-10"
+}

@@ -12,33 +12,49 @@
     "meta:extensible": true,
     "description": "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
     "definitions": {
-        "geocoordinates": {
+        "coordinatesid": {
             "properties": {
                 "@id": {
                     "title": "Coordinates ID",
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The unique identifier of the coordinates."
-                },
+                }
+            }
+        },
+        "description": {
+            "properties": {
                 "schema:description": {
                     "title": "Description",
                     "type": "string",
                     "description": "A description of what the coordinates identify."
-                },
+                }
+            }
+        },
+        "latitude": {
+            "properties": {
                 "schema:latitude": {
                     "title": "Latitude",
                     "type": "number",
                     "minimum": -90,
                     "maximum": 90,
                     "description": "The signed vertical coordinate of a geographic point."
-                },
+                }
+            }
+        },
+        "longitude": {
+            "properties": {
                 "schema:longitude": {
                     "title": "Longitude",
                     "type": "number",
                     "minimum": -180,
                     "maximum": 180,
                     "description": "The signed horizontal coordinate of a geographic point."
-                },
+                }
+            }
+        },
+        "elevation": {
+            "properties": {
                 "schema:elevation": {
                     "title": "Elevation",
                     "type": "number",
@@ -49,7 +65,19 @@
     },
     "allOf": [
         {
-            "$ref": "#/definitions/geocoordinates"
+            "$ref": "#/definitions/coordinatesid"
+        },
+        {
+            "$ref": "#/definitions/description"
+        },
+        {
+            "$ref": "#/definitions/latitude"
+        },
+        {
+            "$ref": "#/definitions/longitude"
+        },
+        {
+            "$ref": "#/definitions/elevation"
         }
     ],
     "meta:status": "stable",

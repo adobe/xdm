@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Account",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,

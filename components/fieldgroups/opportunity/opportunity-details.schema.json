@@ -1,0 +1,121 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/opportunity-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Opportunity Details",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
+  "description": "This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",
+  "definitions": {
+    "opportunity-details": {
+      "properties": {
+        "xdm:campaignID": {
+          "title": "Campaign ID",
+          "description": "Campaign unique identifer reference.",
+          "type": "string"
+        },
+        "xdm:fiscalYear": {
+          "title": "Fiscal Year",
+          "description": "The fiscal year this opportunity is targeted.",
+          "type": "integer",
+          "pattern": "^([0-9]{4})$"
+        },
+        "xdm:fiscalQuarter": {
+          "title": "Fiscal Quarter",
+          "description": "The fiscal quarter this opportunity is targeted.",
+          "type": "string",
+          "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$"
+        },
+        "xdm:forecastCategory": {
+          "title": "Forecast Category",
+          "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+          "type": "string"
+        },
+        "xdm:forecastCategoryName": {
+          "title": "Forecast Category Name",
+          "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+          "type": "string"
+        },
+        "xdm:isClosed": {
+          "title": "Closed Flag",
+          "description": "Flag indicating if this opportunity is closed.",
+          "type": "boolean"
+        },
+        "xdm:isWon": {
+          "title": "Won Flag",
+          "description": "Flag indicating if this opportunity is Won.",
+          "type": "boolean"
+        },
+        "xdm:probabilityPercentage": {
+          "title": "Probability Percentage",
+          "description": "Likelihood that opportunity will close, stated as a percentage.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "xdm:opportunityAmount": {
+          "title": "Opportunity Amount",
+          "description": "Estimated total sale amount.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+        },
+        "xdm:expectedRevenue": {
+          "title": "Expected Revenue",
+          "description": "Calculated revenue based on the Amount and Probability.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+        },
+        "xdm:opportunityQuantity": {
+          "title": "Opportunity Quantity",
+          "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "xdm:expectedCloseDate": {
+          "title": "Expected Close Date",
+          "description": "Expected date of closure for this opportunity.",
+          "type": "string",
+          "format": "date"
+        },
+        "xdm:actualCloseDate": {
+          "title": "Actual Close Date",
+          "description": "Actual date of closure for this opportunity.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:lastActivityDate": {
+          "title": "Last Activity Date",
+          "description": "Last activity date for this opportunity.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:leadSource": {
+          "title": "Lead Source",
+          "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
+          "type": "string"
+        },
+        "xdm:nextStep": {
+          "title": "Next Step",
+          "description": "Description of next task in closing opportunity.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/opportunity-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-09-09"
+}

@@ -1,0 +1,90 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-social-network-usage-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Social Network Usage Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment",
+      "public_sector"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Social network usage information such as share, content, and network.",
+  "definitions": {
+    "social-network-usage-details": {
+      "properties": {
+        "xdm:socialMarketing ": {
+          "type": "object",
+          "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
+          "properties": {
+            "xdm:sharedContent": {
+              "title": "Shared Content",
+              "type": "string",
+              "description": "Tracks the page/url/content/value of the item being shared."
+            },
+            "xdm:follow": {
+              "title": "Follow",
+              "type": "integer",
+              "description": "Tracks when a social follow event has occurred."
+            },
+            "xdm:sharedMessage": {
+              "title": "Shared Message",
+              "type": "string",
+              "description": "Message that the sender sent"
+            },
+            "xdm:interactions": {
+              "title": "Interactions",
+              "type": "integer",
+              "description": "The total number of social interactions."
+            },
+            "xdm:network": {
+              "title": "Network",
+              "type": "string",
+              "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc."
+            },
+            "xdm:target": {
+              "title": "Target",
+              "type": "string",
+              "description": "For social interactions, this is the URL (or resource) which receives the social network action."
+            },
+            "xdm:recipient": {
+              "title": "Recipient",
+              "type": "string",
+              "description": "Recipient of the shared content"
+            },
+            "xdm:share": {
+              "title": "Share",
+              "type": "integer",
+              "description": "Tracks when a social sharing event has occurred."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/social-network-usage-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-01-15"
+}

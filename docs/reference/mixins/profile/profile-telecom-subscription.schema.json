@@ -1,0 +1,258 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Telecom Subscription",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "telecom"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
+    "definitions": {
+        "telecom-subscriptions": {
+            "properties": {
+                "xdm:telecomSubscription": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:primarySubscriber": {
+                            "title": "Primary Subscriber",
+                            "$ref": "https://ns.adobe.com/xdm/context/person",
+                            "description": "The owner of the subscription."
+                        },
+                        "xdm:primaryPartyID": {
+                            "title": "Primary Party ID",
+                            "type": "string",
+                            "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number."
+                        },
+                        "xdm:bundleName": {
+                            "title": "Bundle Name",
+                            "type": "string",
+                            "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + Media'."
+                        },
+                        "xdm:internetSubscription": {
+                            "type": "array",
+                            "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:subscriptionDetails": {
+                                        "title": "Subscription Details",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                                        "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                                    },
+                                    "xdm:dataCap": {
+                                        "title": "Data Cap",
+                                        "type": "integer",
+                                        "description": "Captures the data cap limit for the account, in megabytes (MB)."
+                                    },
+                                    "xdm:connectionType": {
+                                        "title": "Connection Type",
+                                        "type": "string",
+                                        "enum": [
+                                            "cable",
+                                            "dsl",
+                                            "fiber",
+                                            "mobile",
+                                            "satellite"
+                                        ],
+                                        "meta:enum": {
+                                            "cable": "Cable",
+                                            "dsl": "DSL",
+                                            "fiber": "Fiber",
+                                            "mobile": "Mobile",
+                                            "satellite": "Satellite"
+                                        },
+                                        "description": "Tracks the type of connection type for the subscription."
+                                    },
+                                    "xdm:downloadSpeed": {
+                                        "title": "Download Speed",
+                                        "type": "integer",
+                                        "description": "Records the maximum download speed available for the subscription, in megabytes (MB)."
+                                    },
+                                    "xdm:uploadSpeed": {
+                                        "title": "Upload Speed",
+                                        "type": "integer",
+                                        "description": "Records the maximum upload speed available for the subscription, in megabytes (MB)."
+                                    },
+                                    "xdm:selfSetup": {
+                                        "title": "Self-Setup",
+                                        "type": "boolean",
+                                        "description": "Flags if a customer is eligible for internet setup without a technican visit."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:landlineSubscription": {
+                            "type": "array",
+                            "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:subscriptionDetails": {
+                                        "title": "Subscription Details",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                                        "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                                    },
+                                    "xdm:phoneNumber": {
+                                        "title": "Phone Number",
+                                        "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                                        "description": "Captures the phone number assigned to this device."
+                                    },
+                                    "xdm:minutes": {
+                                        "title": "Minutes",
+                                        "type": "integer",
+                                        "description": "Number of monthly minutes available within the subscription."
+                                    },
+                                    "xdm:voicemail": {
+                                        "title": "Voicemail",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Voicemail."
+                                    },
+                                    "xdm:callForwarding": {
+                                        "title": "Call Forwarding",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Call Forwarding."
+                                    },
+                                    "xdm:callerID": {
+                                        "title": "Caller ID",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Caller ID."
+                                    },
+                                    "xdm:callBlocking": {
+                                        "title": "Call Blocking",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Call Blocking."
+                                    },
+                                    "xdm:callWaiting": {
+                                        "title": "Call Waiting",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Call Waiting."
+                                    },
+                                    "xdm:threeWayCalling": {
+                                        "title": "Three-Way Dialing",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Three-Way Dialing."
+                                    },
+                                    "xdm:internationalCalling": {
+                                        "title": "International Calling",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include International Calling."
+                                    },
+                                    "xdm:unlimitedLocalCalling": {
+                                        "title": "Unlimited Local Calling",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Unlimited Local Calling."
+                                    },
+                                    "xdm:unlimitedDomesticLongDistance": {
+                                        "title": "Unlimited Domestic Long Distance",
+                                        "type": "boolean",
+                                        "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:mediaSubscription": {
+                            "type": "array",
+                            "description": "media subscription plan details including number of channels & included streaming services.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:subscriptionDetails": {
+                                        "title": "Subscription Details",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                                        "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                                    },
+                                    "xdm:channels": {
+                                        "title": "Channels",
+                                        "type": "integer",
+                                        "description": "Records the number of channels included with the media subscription."
+                                    },
+                                    "xdm:streamingServices": {
+                                        "title": "Streaming Services",
+                                        "description": "Array of all streaming services included with the subscription.",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "xdm:serviceName": {
+                                                    "title": "Service Name",
+                                                    "type": "integer",
+                                                    "description": "Records the name of the streaming service."
+                                                },
+                                                "xdm:promotionalAddition": {
+                                                    "title": "Promotional Addition",
+                                                    "type": "boolean",
+                                                    "description": "Flags if the streaming service was added as part of a promotion."
+                                                },
+                                                "xdm:promotionLength": {
+                                                    "title": "Promotion Length",
+                                                    "type": "integer",
+                                                    "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion."
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:mobileSubscription": {
+                            "type": "array",
+                            "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "xdm:subscriptionDetails": {
+                                        "title": "Subscription Details",
+                                        "$ref": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
+                                        "description": "Extension of the subscription data type to include subscription length, fees, status, etc."
+                                    },
+                                    "xdm:earlyUpgradeEnrollment": {
+                                        "title": "Early Upgrade Enrollment",
+                                        "type": "boolean",
+                                        "description": "Captures if the customer opts into early upgrades."
+                                    },
+                                    "xdm:planLevel": {
+                                        "title": "Plan Level",
+                                        "type": "string",
+                                        "description": "Captures the name of the mobile plan assigned to this device."
+                                    },
+                                    "xdm:phoneNumber": {
+                                        "title": "Phone Number",
+                                        "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                                        "description": "Captures the phone number assigned to this device."
+                                    },
+                                    "xdm:portedNumber": {
+                                        "title": "Ported Number",
+                                        "type": "boolean",
+                                        "description": "Captures if the customer ports their number from another carrier."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/telecom-subscriptions"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {}
+    ]
+}

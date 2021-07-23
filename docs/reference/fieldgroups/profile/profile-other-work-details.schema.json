@@ -1,0 +1,135 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/profile-other-work-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Other Work Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "This mixin is used to capture information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
+    "definitions": {
+        "profile-other-work-details": {
+            "properties": {
+                "xdm:otherAddress": {
+                    "title": "Other Address",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "Other/Alternate postal address of the person."
+                },
+                "xdm:otherPhone": {
+                    "title": "Other Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Other/Alternate phone number of the person."
+                },
+                "xdm:extendedWorkDetails": {
+                    "type": "object",
+                    "title": "Some Additional Person Work Details",
+                    "properties": {
+                        "xdm:assistantDetails": {
+                            "type": "object",
+                            "title": "Assitant Details",
+                            "properties": {
+                                "xdm:name": {
+                                    "title": "Assistant Name",
+                                    "$ref": "https://ns.adobe.com/xdm/context/person-name",
+                                    "description": "Person's assistant full name."
+                                },
+                                "xdm:phone": {
+                                    "title": "Assistant Phone",
+                                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                                    "description": "Person's assistant phone number."
+                                }
+                            }
+                        },
+                        "xdm:reportsToID": {
+                            "title": "Reports To Id",
+                            "description": "Identifier of the Reporting Manager.",
+                            "type": "string"
+                        },
+                        "xdm:departments": {
+                            "title": "Department Name",
+                            "description": "Department name where the person works.",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "xdm:jobTitle": {
+                            "title": "Job Title",
+                            "description": "Job title of the person.",
+                            "type": "string"
+                        },
+                        "xdm:photoUrl": {
+                            "title": "Photo Url",
+                            "description": "Photo url of the person.",
+                            "type": "string",
+                            "format": "uri"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-other-work-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2020-08-18",
+    "examples": [
+        {
+            "xdm:otherAddress": {
+                "@id": "https://data.adobe.io/entities/address/234",
+                "xdm:primary": false,
+                "xdm:street1": "100 Park Ave",
+                "xdm:city": "San Jose",
+                "xdm:stateProvince": "US-CA",
+                "xdm:postalCode": "95110",
+                "xdm:country": "United States",
+                "xdm:countryCode": "US",
+                "schema:latitude": 37.3382,
+                "schema:longitude": -121.8863,
+                "xdm:status": "active",
+                "xdm:lastVerifiedDate": "2018-01-02"
+            },
+            "xdm:otherPhone": {
+                "xdm:primary": true,
+                "xdm:number": "1-408-888-7777",
+                "xdm:status": "active"
+            },
+            "xdm:extendedWorkDetails": {
+                "xdm:assistantDetails": {
+                    "xdm:name": {
+                        "xdm:firstName": "John",
+                        "xdm:middleName": "S",
+                        "xdm:lastName": "Doe",
+                        "xdm:fullName": "John S. Doe"
+                    },
+                    "xdm:phone": {
+                        "xdm:primary": true,
+                        "xdm:number": "1-408-888-7777",
+                        "xdm:status": "active"
+                    }
+                },
+                "xdm:reportsToID": "RPT10000",
+                "xdm:departments": [
+                    "Finance",
+                    "Marketing"
+                ],
+                "xdm:jobTitle": "",
+                "xdm:photoUrl": "https://PersonOrg.com/personPhoto.jpg"
+            }
+        }
+    ]
+}

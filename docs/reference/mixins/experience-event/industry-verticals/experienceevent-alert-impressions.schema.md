@@ -30,6 +30,7 @@ Alert information such as ad impressions and ad clicks.
 
 ## xdm:alerts
 
+Alert information including alert impressions and clickthroughs as well as alert setups.
 
 `xdm:alerts`
 * is optional

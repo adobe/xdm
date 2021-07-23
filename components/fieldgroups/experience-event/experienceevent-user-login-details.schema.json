@@ -1,0 +1,145 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-user-login-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "User Login Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment",
+      "public_sector"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "User login details such as login state, location, and type, as well as forgot username and password counts.",
+  "definitions": {
+    "user-login-details": {
+      "properties": {
+        "xdm:userAccount": {
+          "type": "object",
+          "description": "Loyalty details, preferences, login processes, and other account preferences.",
+          "properties": {
+            "xdm:accountSwitch": {
+              "title": "Switch User Accounts",
+              "type": "integer",
+              "description": "Captures when a visitor switches their account during a visit."
+            },
+            "xdm:cookieConsentAccepted": {
+              "title": "Cookie Consent Accepted",
+              "type": "boolean",
+              "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser."
+            },
+            "xdm:cookieConsentViewed": {
+              "title": "Cookie Consent Viewed",
+              "type": "integer",
+              "description": "Tracked when a visitor views the cookie consent information."
+            },
+            "xdm:forgotPassword": {
+              "title": "Forgot Password",
+              "type": "integer",
+              "description": "Counter event when a visitor begins the forgot password process."
+            },
+            "xdm:forgotUsername": {
+              "title": "Forgot Username",
+              "type": "integer",
+              "description": "Counter event when a visitor begins the forgot username process."
+            },
+            "xdm:login": {
+              "title": "Visitor Login",
+              "type": "integer",
+              "description": "Counter event indicating a successful visitor login."
+            },
+            "xdm:loginBiometric": {
+              "title": "Biometric Authentication",
+              "type": "boolean",
+              "description": "Flag determining if the user has used a biometric authentication process to login."
+            },
+            "xdm:loginFailure": {
+              "title": "Visitor Login Failure",
+              "type": "integer",
+              "description": "Counter event indicating a failed visitor login attempt."
+            },
+            "xdm:loginLocation": {
+              "title": "Login Page Location",
+              "type": "string",
+              "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login"
+            },
+            "xdm:loginKeychain": {
+              "title": "Keychain ",
+              "type": "boolean",
+              "description": "Flag determining if the user has used a keychain authentication process to login."
+            },
+            "xdm:loginMultiFactor": {
+              "title": "Multi-Factor Authentication",
+              "type": "boolean",
+              "description": "Flag determining if the user has used a multi-factor authentication process to login."
+            },
+            "xdm:loginStatus": {
+              "title": "Login Status",
+              "type": "string",
+              "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. "
+            },
+            "xdm:loginThirdParty": {
+              "title": "Login with Third Party",
+              "type": "integer",
+              "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google."
+            },
+            "xdm:loginThirdPartySite": {
+              "title": "Third Party Login Site",
+              "type": "string",
+              "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked."
+            },
+            "xdm:loginType": {
+              "title": "User Login Type",
+              "type": "string",
+              "description": "Email address vs social login"
+            },
+            "xdm:logout": {
+              "title": "Visitor Logout",
+              "type": "integer",
+              "description": "Counter event indicating a successful visitor logout."
+            },
+            "xdm:resetPassword": {
+              "title": "Reset Password",
+              "type": "integer",
+              "description": "Counter event when a visitor begins the reset password process."
+            },
+            "xdm:sessionTimeout": {
+              "title": "Session Timeout",
+              "type": "integer",
+              "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time."
+            },
+            "xdm:updateProfile": {
+              "title": "Account Profile Update",
+              "type": "integer",
+              "description": "Counter event indicating a user has updated their account profile."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/user-login-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-01-15"
+}

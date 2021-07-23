@@ -1,0 +1,43 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-credit-limit-increase-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Credit Limit Increase Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["financial_services"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Credit limit increase application details such as ID, type, approval, and status.",
+  "definitions": {
+    "credit-limit-increase-details": {
+      "properties": {
+        "xdm:personalFinances": {
+          "type": "object",
+		  "description": "Financial details including transactions, accounts, and applications.",
+          "properties": {
+            "xdm:creditLimitIncrease": {
+              "title": "Credit Limit Increase",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
+              "description": "Extension of form application data type."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/credit-limit-increase-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-19"
+}

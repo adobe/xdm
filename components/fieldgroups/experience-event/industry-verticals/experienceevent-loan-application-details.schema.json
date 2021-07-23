@@ -1,0 +1,85 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-loan-application-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loan Application Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["financial_services", "automotive"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Loan application details such as ID, type, approval, and status.",
+  "definitions": {
+    "loan-application-details": {
+      "properties": {
+        "xdm:personalFinances": {
+          "type": "object",
+		  "description": "Financial details including transactions, accounts, and applications.",
+          "properties": {
+            "xdm:loanApplicationDetails": {
+              "type": "object",
+              "properties": {
+                "xdm:loan": {
+                  "title": "Loan",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
+                  "description": "Extension of form application data type."
+                }
+              },
+              "xdm:annualPercentageRate": {
+                "title": "Annual Percentage Rate",
+                "type": "number",
+                "description": "Records the annual percentage rate of the loan."
+              },
+              "xdm:downpayment": {
+                "title": "Downpayment",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                "description": "Captures the downpayment amount of loan."
+              },
+              "xdm:startDate": {
+                "title": "Start Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Records the anticipated start date of the loan."
+              },
+              "xdm:endDate": {
+                "title": "End Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Records the anticipated end date of the loan."
+              },
+              "xdm:interestRate": {
+                "title": "Interest Rate",
+                "type": "number",
+                "description": "Records the interest rate of the loan."
+              },
+              "xdm:interestType": {
+                "title": "Interest Type",
+                "type": "string",
+                "description": "Records the type interest rate of the loan, i.e. fixed or variable."
+              },
+              "xdm:term": {
+                "title": "Term",
+                "type": "integer",
+                "description": "Records the duration of the loan, in months."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/loan-application-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-19"
+}

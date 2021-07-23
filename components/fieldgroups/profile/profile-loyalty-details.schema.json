@@ -1,0 +1,108 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile/profile-loyalty-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Loyalty Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "travel_and_hospitality",
+      "automotive",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Loyalty details such as ID, points, join date, program, and status. ",
+  "definitions": {
+    "loyalty-details": {
+      "properties": {
+        "xdm:loyalty": {
+          "type": "object",
+          "description": "Captures details related to the customer's loyalty rewards.",
+          "properties": {
+            "xdm:joinDate": {
+              "title": "Program Join Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date which the visitor registered for the loyalty program."
+            },
+            "xdm:loyaltyID": {
+              "title": "Program ID",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program."
+            },
+            "xdm:points": {
+              "title": "Program Points Balance",
+              "type": "number",
+              "description": "Current balance of the loyalty points/awards in a visitor's loyalty account."
+            },
+            "xdm:pointsExpiration": {
+              "title": "Points Expiration",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:pointsExpiring": {
+                    "title": "Points Expiring",
+                    "type": "number",
+                    "description": "Point balance expiring as of the associated expiration date."
+                  },
+                  "xdm:pointsExpirationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which the given portion of the loyalty points expire."
+                  }
+                }
+              }
+            },
+            "xdm:pointsRedeemed": {
+              "title": "Points Redeemed",
+              "type": "number",
+              "description": "Amount of points applied toward a purchase or otherwise redeemed."
+            },
+            "xdm:program": {
+              "title": "Program Name",
+              "type": "string",
+              "description": "This should define the loyalty progam in which a visitor is enrolled."
+            },
+            "xdm:upgradeDate": {
+              "title": "Program Name",
+              "type": "string",
+              "description": "Date which the customer was upgraded to the next tier level."
+            },
+            "xdm:status": {
+              "title": "Status",
+              "type": "string",
+              "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended."
+            },
+            "xdm:tier": {
+              "title": "Tier",
+              "type": "string",
+              "description": "Captures the loyalty progam tier in which a visitor is enrolled."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/loyalty-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19"
+}

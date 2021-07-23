@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/add-to-opportunity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add To Opportunity",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "opportunityEvent.addToOpportunity",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use to capture details when a person is added as a point of contact on a sales opportunity.",
+  "definitions": {
+    "addtoopportunity": {
+      "properties": {
+        "xdm:opportunityEvent": {
+          "title": "Opportunity Event",
+          "type": "object",
+          "properties": {
+            "xdm:opportunityID": {
+              "title": "Opportunity ID",
+              "type": "string",
+              "description": "Unique ID of the Opportunity."
+            },
+            "xdm:isPrimary": {
+              "title": "Is Primary",
+              "type": "boolean",
+              "description": "Boolean indicating if person is the primary contact on the Opportunity."
+            },
+            "xdm:role": {
+              "title": "Role",
+              "type": "string",
+              "description": "Role of the person on the Opportunity."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/addtoopportunity"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate" : "2021-02-19"
+}

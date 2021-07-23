@@ -308,6 +308,8 @@ The name of the operating system used when the observation was made. The attribu
 ## xdm:web
 ### Web
 
+Link clicks, web page details, referrer information, and browser details.
+
 `xdm:web`
 * is optional
 * type: `object`

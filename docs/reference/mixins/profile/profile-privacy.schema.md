@@ -1,22 +1,22 @@
 
-# Privacy Details Schema
+# IAB TCF 2.0 Consent Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-privacy
 ```
 
-Privacy data such as opt-out type, value, and timing.
+Record the IAB TCF 2.0 string in a user's profile.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [mixins/profile/profile-privacy.schema.json](mixins/profile/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
-* Privacy Details `https://ns.adobe.com/xdm/context/profile-privacy`
+* IAB TCF 2.0 Consent `https://ns.adobe.com/xdm/context/profile-privacy`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## Privacy Details Example
+## IAB TCF 2.0 Consent Example
 ```json
 {
   "xdm:optOutConsentLevel": {
@@ -47,12 +47,12 @@ Privacy data such as opt-out type, value, and timing.
 }
 ```
 
-# Privacy Details Properties
+# IAB TCF 2.0 Consent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | Privacy Details (this schema) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | Privacy Details (this schema) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | IAB TCF 2.0 Consent (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | IAB TCF 2.0 Consent (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityPrivacyInfo

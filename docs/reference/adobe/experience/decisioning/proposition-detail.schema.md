@@ -9,7 +9,7 @@ A decision proposition detail is used to capture the output of a decisioning act
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-detail.schema.json](adobe/experience/decisioning/proposition-detail.schema.json) |
 ## Schema Hierarchy
 
 * Decision Proposition Details `https://ns.adobe.com/experience/decisioning/proposition-detail`
@@ -94,9 +94,9 @@ A decision proposition detail is used to capture the output of a decisioning act
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:activity
-### Decision Activity Snapshot (deprecated)
+### Decision Activity Snapshot
 
-Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. (deprecated), use scopeDetails.activity instead.
+Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. In the future, this will be deprecated in favor of scopeDetails.activity.
 
 `xdm:activity`
 * is optional
@@ -134,9 +134,9 @@ The channel in which proposition was made. The value is a valid Channel URI. See
 
 
 ## xdm:fallback
-### Fallback Option Snapshot (deprecated)
+### Fallback Option Snapshot
 
-Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. (deprecated) use scopeDetails.activity.fallback instead.
+Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of scopeDetails.activity.fallback.
 
 `xdm:fallback`
 * is optional
@@ -153,9 +153,9 @@ Snapshot of the fixed fallback option that was selected because no available opt
 
 
 ## xdm:placement
-### Placement Snapshot (deprecated)
+### Placement Snapshot
 
-Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. (deprecated), use scopeDetails.placement instead.
+Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. In the future, this will be deprecated in favor of scopeDetails.placement.
 
 `xdm:placement`
 * is optional
@@ -172,9 +172,9 @@ Snapshot of the placement for which the proposition was made. The object contain
 
 
 ## xdm:selections
-### Selected Options&#39; Snapshot (deprecated)
+### Selected Options&#39; Snapshot
 
-Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required. (deprecated), use items instead.
+Snapshot of the options that were selected by this activity. The objects contain a at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of items.
 
 `xdm:selections`
 * is optional

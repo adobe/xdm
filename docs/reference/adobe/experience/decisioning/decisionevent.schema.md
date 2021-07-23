@@ -15,7 +15,7 @@ A decision event is used to capture observations about the outcome and context o
 * Decision Event `https://ns.adobe.com/experience/decisioning/decisionevent`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
-  * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Experience Event - Proposition Reference](proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
   * [Decision Event - Proposition Details](proposition-details.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-details`
 
@@ -125,7 +125,7 @@ A decision event is used to capture observations about the outcome and context o
 | [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | **Required** | [Experience Event - Proposition Reference](proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | reference | Optional | Decision Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | **Required** | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -293,6 +293,8 @@ The primary event type for this time-series record.
 | `advertising.midpoints` | Advertising Midpoints |
 | `advertising.starts` | Advertising Starts |
 | `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `application.close` | Application Close |
+| `application.launch` | Application Launch |
 | `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
@@ -305,6 +307,8 @@ The primary event type for this time-series record.
 | `commerce.productViews` | Commerce Product Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
+| `decisioning.propositionDisplay` | Decisioning Proposition Display |
+| `decisioning.propositionInteract` | Decisioning Proposition Interact |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -336,7 +340,7 @@ The primary event type for this time-series record.
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

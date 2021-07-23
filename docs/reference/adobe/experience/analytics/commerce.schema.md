@@ -28,7 +28,7 @@ Adobe Analytics ExperienceEvent Commerce Mixin.
 ## xdm:commerce
 ### Commerce
 
-Commerce specific data related to this event.
+Product returns, warranty registration, and shopping cart/order process.
 
 `xdm:commerce`
 * is optional

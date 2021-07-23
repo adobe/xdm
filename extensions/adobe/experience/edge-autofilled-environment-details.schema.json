@@ -1,0 +1,123 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/edge-autofilled-environment-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Experience Edge Autofilled Environment Details",
+  "type": "object",
+  "description": "Information automatically collected by the AEP Edge Orchestration Service to enrich each received XDM Experience event.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "edge-environment-ipv4": {
+      "properties": {
+        "xdm:environment": {
+          "title": "Environment Details",
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4"
+        }
+      }
+    },
+    "edge-environment-ipv6": {
+      "properties": {
+        "xdm:environment": {
+          "title": "Environment Details",
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6"
+        }
+      }
+    },
+    "edge-environment-user-agent": {
+      "properties": {
+        "xdm:environment": {
+          "type": "object",
+          "properties": {
+            "xdm:browserDetails": {
+              "title": "Browser Details",
+              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent"
+            }
+          }
+        }
+      }
+    },
+    "edge-environment-countrycode": {
+      "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
+            "xdm:geo": {
+              "title": "Geo",
+              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/countrycode"
+            }
+          }
+        }
+      }
+    },
+    "edge-environment-stateprovince": {
+      "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
+            "xdm:geo": {
+              "title": "Geo",
+              "$ref": "https://ns.adobe.com/xdm/common/geo#/definitions/stateprovince"
+            }
+          }
+        }
+      }
+    },
+    "edge-environment-latitude": {
+      "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
+            "xdm:geo": {
+              "title": "Geo",
+              "$ref": "http://schema.org/GeoCoordinates#/definitions/latitude"
+            }
+          }
+        }
+      }
+    },
+    "edge-environment-longitude": {
+      "properties": {
+        "xdm:placeContext": {
+          "type": "object",
+          "properties": {
+            "xdm:geo": {
+              "title": "Geo",
+              "$ref": "http://schema.org/GeoCoordinates#/definitions/longitude"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/edge-environment-ipv4"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-ipv6"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-user-agent"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-countrycode"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-stateprovince"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-latitude"
+    },
+    {
+      "$ref": "#/definitions/edge-environment-longitude"
+    }
+  ],
+  "meta:status": "stable"
+}

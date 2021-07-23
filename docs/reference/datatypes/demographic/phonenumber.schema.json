@@ -19,6 +19,14 @@
                     "type": "boolean",
                     "description": "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`."
                 },
+                "xdm:countryCode": {
+                    "title": "Country Calling Code",
+                    "type": "string",
+                    "description": "Country calling code (CC) as defined by E.164.",
+                    "minLength": 1,
+                    "maxLength": 3,
+                    "pattern": "^[0-9]{1,3}?$"
+                },
                 "xdm:number": {
                     "title": "Number",
                     "type": "string",

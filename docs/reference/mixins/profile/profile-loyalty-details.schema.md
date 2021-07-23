@@ -36,6 +36,7 @@ Loyalty details such as ID, points, join date, program, and status.
 
 ## xdm:loyalty
 
+Captures details related to the customer's loyalty rewards.
 
 `xdm:loyalty`
 * is optional

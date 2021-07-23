@@ -1,0 +1,54 @@
+{
+    "meta:license": [
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/player-state",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Player state information",
+    "type": "object",
+    "meta:status": "deprecated",
+    "meta:extensible": true,
+    "description": "Information related to player state.",
+    "definitions": {
+        "player-state": {
+            "properties": {
+                "xdm:playerStateSet": {
+                    "title": "Player state set",
+                    "type": "boolean",
+                    "description": "Whether or not the player state is set on that state."
+                },
+                "xdm:playerStateCount": {
+                    "title": "Player state count",
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The number of times that player state was set on the stream."
+                },
+                "xdm:playerStateTime": {
+                    "title": "Player state time",
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The total duration of that player state."
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/player-state"
+        }
+    ],
+    "meta:createdDate": "2020-08-10",
+    "examples": [
+        {
+            "xdm:playerStateSet": true,
+            "xdm:playerStateCount": 3,
+            "xdm:playerStateTime": 180
+        }
+    ]
+}

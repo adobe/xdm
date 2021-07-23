@@ -14,7 +14,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 * XDM ExperienceEvent `https://ns.adobe.com/xdm/context/experienceevent`
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [IdentityMap](../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Time-series Schema](../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
 
 
@@ -342,119 +342,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123458",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92318731249128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "5492309340-35430470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.27.143.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "dc:creator": "Video Author",
-        "dc:publisher": "tvonline",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "tv_highlights",
-          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "xdm:streamType": "video",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TV100",
-            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "SportTV"
-          }
-        ],
-        "xdm:firstAirDate": "2016-01-05",
-        "xmpDM:releaseDate": "2016-01-25"
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchsport",
-        "xdm:broadcastChannel": "WatchSportTV",
-        "xdm:broadcastContentType": "VOD",
-        "xdm:videoSegment": "3-10",
-        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
-        "xdm:streamFormat": "short",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "ntwu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800,
-        "xdm:downloadedPlayback": false
-      }
-    }
-  },
-  "xdm:advertising": {
-    "xdm:adAssetReference": {
-      "@id": "https://data.adobe.io/entities/ad-id/AD1",
-      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
-      "dc:title": "adNumber1",
-      "xdm:advertiser": "AdCompany",
-      "xdm:campaign": "731123",
-      "xmpDM:duration": 10
-    },
-    "xdm:adAssetViewDetails": {
-      "xdm:playerName": "miniTestApp",
-      "xdm:index": 0,
-      "xdm:adBreak": {
-        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
-        "dc:title": "Mid-Roll",
-        "xdm:offset": 44
-      }
-    },
-    "xdm:impressions": {
-      "xdm:value": 1
-    },
-    "xdm:completes": {
-      "xdm:value": 1
-    },
-    "xdm:timePlayed": {
-      "xdm:value": 10
-    },
-    "xdm:federated": {
-      "xdm:value": 0
-    }
-  }
-}
-```
-
-```json
-{
   "@id": "https://data.adobe.io/experienceid-2345678",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
@@ -745,6 +632,142 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-123458",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92318731249128"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "5492309340-35430470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.27.143.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "dc:creator": "Video Author",
+        "dc:publisher": "tvonline",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "tv_highlights",
+          "iptc4xmpExt:Identifier": "http://sporttv.com/series-identifiers/2613953"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "xdm:streamType": "video",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TV100",
+            "iptc4xmpExt:RatingSourceLink": "http://www.mytvguide.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "SportTV"
+          }
+        ],
+        "xdm:firstAirDate": "2016-01-05",
+        "xmpDM:releaseDate": "2016-01-25"
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchsport",
+        "xdm:broadcastChannel": "WatchSportTV",
+        "xdm:broadcastContentType": "VOD",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:arg:episode:ntvr.com:dfb53-4ce7",
+        "xdm:streamFormat": "short",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "ntwu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.net%2Fhls%2Fvu%2F9083406%2FVUBX0280890243544980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800,
+        "xdm:downloadedPlayback": false
+      }
+    }
+  },
+  "xdm:advertising": {
+    "xdm:adAssetReference": {
+      "@id": "https://data.adobe.io/entities/ad-id/AD1",
+      "xdm:creativeID": "00da07e-1264-30de-grgg-24ndf4fe456",
+      "dc:title": "adNumber1",
+      "xdm:advertiser": "AdCompany",
+      "xdm:campaign": "731123",
+      "xmpDM:duration": 10
+    },
+    "xdm:adAssetViewDetails": {
+      "xdm:playerName": "miniTestApp",
+      "xdm:index": 0,
+      "xdm:adBreak": {
+        "@id": "https://data.adobe.io/entities/ad-break/f40353618c5c11311f584e53c78654b9_0",
+        "dc:title": "Mid-Roll",
+        "xdm:offset": 44
+      }
+    },
+    "xdm:impressions": {
+      "xdm:value": 1
+    },
+    "xdm:completes": {
+      "xdm:value": 1
+    },
+    "xdm:timePlayed": {
+      "xdm:value": 10
+    },
+    "xdm:federated": {
+      "xdm:value": 0
+    }
+  }
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123459",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
@@ -848,29 +871,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
-  },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
-    }
-  }
-}
-```
-
 
 # XDM ExperienceEvent Properties
 
@@ -879,7 +879,7 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 | [@id](#id) | `string` | **Required** |  | [Time-series Schema](../behaviors/time-series.schema.md#id) |
 | [xdm:eventMergeId](#xdmeventmergeid) | `string` | Optional |  | XDM ExperienceEvent (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional |  | [Time-series Schema](../behaviors/time-series.schema.md#xdmeventtype) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional |  | [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional |  | [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:producedBy](#xdmproducedby) | `string` | Optional | `"self"` | XDM ExperienceEvent (this schema) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | **Required** |  | [Time-series Schema](../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -955,6 +955,8 @@ The primary event type for this time-series record.
 | `advertising.midpoints` | Advertising Midpoints |
 | `advertising.starts` | Advertising Starts |
 | `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `application.close` | Application Close |
+| `application.launch` | Application Launch |
 | `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
@@ -967,6 +969,8 @@ The primary event type for this time-series record.
 | `commerce.productViews` | Commerce Product Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
+| `decisioning.propositionDisplay` | Decisioning Proposition Display |
+| `decisioning.propositionInteract` | Decisioning Proposition Interact |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -998,7 +1002,7 @@ The primary event type for this time-series record.
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

@@ -13,7 +13,7 @@ This mixin captures Adobe Audience Manager-specific segment definition fields li
 ## Schema Hierarchy
 
 * Adobe Audience Manager Segment Definition Mixin `https://ns.adobe.com/experience/audiencemanager/segmentdefinition`
-  * [Segment Expression Details ](../../../mixins/segment-definition/segmentdefinition-expression.schema.md) `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
+  * [Segment Expression Details ](../../../fieldgroups/segment-definition/segmentdefinition-expression.schema.md) `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
   * [Identity](../../../datatypes/identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 
@@ -41,7 +41,7 @@ This mixin captures Adobe Audience Manager-specific segment definition fields li
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity](#httpsnsadobecomexperienceaudiencemanagersegmentfolderidentity) | Identity | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
-| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | [Segment Expression Details ](../../../mixins/segment-definition/segmentdefinition-expression.schema.md#xdmsegmentexpression) |
+| [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | [Segment Expression Details ](../../../fieldgroups/segment-definition/segmentdefinition-expression.schema.md#xdmsegmentexpression) |
 | [xdm:segmentFolderId](#xdmsegmentfolderid) | `string` | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
 | [xdm:segmentSubType](#xdmsegmentsubtype) | `string` | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -71,7 +71,7 @@ Identity of the parent folder of current folder
 `xdm:segmentExpression`
 * is optional
 * type: `object`
-* defined in [Segment Expression Details ](../../../mixins/segment-definition/segmentdefinition-expression.schema.md#xdmsegmentexpression)
+* defined in [Segment Expression Details ](../../../fieldgroups/segment-definition/segmentdefinition-expression.schema.md#xdmsegmentexpression)
 
 ### xdm:segmentExpression Type
 

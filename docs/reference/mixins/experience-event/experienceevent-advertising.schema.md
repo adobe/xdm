@@ -57,7 +57,7 @@ Advertising data such as clicks, completes, impressions, and conversions.
 ## xdm:advertising
 ### Advertising
 
-Information related to advertising activity in ExperienceEvents.
+Information related to advertising impressions, clickthroughs, and attribution.
 
 `xdm:advertising`
 * is optional

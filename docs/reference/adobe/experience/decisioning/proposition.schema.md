@@ -14,7 +14,7 @@ A decision proposition reference is used to link an experience event that is a r
 
 * Experience Event - Proposition Reference `https://ns.adobe.com/experience/decisioning/proposition`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [IdentityMap](../../../mixins/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
+  * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
 
 
 ## Experience Event - Proposition Reference Example
@@ -43,7 +43,7 @@ A decision proposition reference is used to link an experience event that is a r
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | Optional | Experience Event - Proposition Reference (this schema) |
-| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/decisioning/propositionID
@@ -73,7 +73,7 @@ A unique identifier for the proposition event referenced by another "XDM Experie
 `xdm:identityMap`
 * is optional
 * type: `object`
-* defined in [IdentityMap](../../../mixins/shared/identitymap.schema.md#xdmidentitymap)
+* defined in [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap)
 
 ### xdm:identityMap Type
 

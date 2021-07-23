@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Knowledge Base Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "telecom",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "public_sector"
+    ]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "",
+  "definitions": {
+    "knowledge-base-details": {
+      "properties": {
+        "xdm:siteKnowledge": {
+          "type": "object",
+          "description": "Knowledge base tracking, support site searches and forum interaction details.",
+          "properties": {
+            "xdm:knowledgeBaseArticleID": {
+              "title": "Knowledge Base Article ID",
+              "type": "string",
+              "description": "Tracks the knowledge base article ID when it has been viewed."
+            },
+            "xdm:knowledgeBaseArticleType": {
+              "title": "Knowledge Base Article Type",
+              "type": "string",
+              "description": "Tracks the knowledge base article type when it has been viewed."
+            },
+            "xdm:knowledgeBaseArticleView": {
+              "title": "Knowledge Base Article View",
+              "type": "integer",
+              "description": "Tracked when a knowledge base article has been viewed."
+            },
+            "xdm:knowledgeBaseSearch": {
+              "title": "Knowledge Base Search",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+              "description": "Extension of internalSearch data type."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/knowledge-base-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-01-15"
+}

@@ -33,6 +33,7 @@ Personal tax details such as filing statuses and tax bracket.
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

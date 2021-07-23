@@ -35,6 +35,7 @@ Card comparison details such as count, addition, removal, and view.
 
 ## xdm:personalFinances
 
+Financial details including transactions, accounts, and applications.
 
 `xdm:personalFinances`
 * is optional

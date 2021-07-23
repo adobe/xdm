@@ -1,0 +1,262 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-vehicle-reservation",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Vehicle Reservation",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
+  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Collects all details specific to a vehicle reservation.",
+  "definitions": {
+    "reservations": {
+      "properties": {
+        "xdm:reservations": {
+          "type": "object",
+		  "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
+          "properties": {
+            "xdm:vehicleReservations": {
+              "type": "array",
+              "items": {
+                "description": "Captures all details specific to an individual vehicle reservation",
+				"type": "object",
+                "properties": {
+                  "xdm:ID": {
+                    "title": "ID",
+                    "type": "string",
+                    "description": "Tracks the reservation number/identifier."
+                  },
+                  "xdm:agentID": {
+                    "title": "Agent ID",
+                    "type": "string",
+                    "description": "Agent or broker responsible for booking the reservation, if applicable."
+                  },
+                  "xdm:ancillaryRevenue": {
+                    "title": "Ancillary Revenue",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "description": "Protection and equipment revenue associated with a reservation."
+                  },
+                  "xdm:couponCode": {
+                    "title": "Coupon Code",
+                    "type": "string",
+                    "description": "Coupon code associated with the vehicle booking."
+                  },
+                  "xdm:vehicleDifferentDropoffLocation": {
+                    "title": "Different Drop-off Location",
+                    "type": "boolean",
+                    "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location."
+                  },
+                  "xdm:discountPercent": {
+                    "title": "Discount Percent",
+                    "type": "number",
+                    "description": "Discount percentage associated with the booking."
+                  },
+                  "xdm:dropOffDateTime": {
+                    "title": "Drop-off Date & Time",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The drop-off date & time of the for the vehicle reservation."
+                  },
+                  "xdm:vehicleDropOffLocation": {
+                    "title": "Drop-off Location",
+                    "type": "string",
+                    "description": "Drop-off location of the vehicle."
+                  },
+                  "xdm:vehicleDropOffLocationCode": {
+                    "title": "Drop-off Location Code",
+                    "type": "string",
+                    "description": "The airport location code for the vehicle drop off.",
+                    "pattern": "^[A-Z]{3}$"
+                  },
+                  "xdm:freeCancelation": {
+                    "title": "Free Cancelation",
+                    "type": "boolean",
+                    "description": "Yes/no if the car booking has a free cancellation."
+                  },
+                  "xdm:guestID": {
+                    "title": "Guest ID",
+                    "type": "string",
+                    "description": "Guest ID associated with the vehicle booking."
+                  },
+                  "xdm:loyaltyID": {
+                    "title": "Loyalty ID",
+                    "type": "string",
+                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation."
+                  },
+                  "xdm:payLaterEligible": {
+                    "title": "Pay Later Eligible",
+                    "type": "boolean",
+                    "description": "Yes/no if the booking is eligible to be paid later."
+                  },
+                  "xdm:pickUpDateTime": {
+                    "title": "Pick-up Date & Time",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The pick-up date & time of the for the vehicle reservation."
+                  },
+                  "xdm:vehiclePickUpLocation": {
+                    "title": "Pick-up Location",
+                    "type": "string",
+                    "description": "Pick-up location of the vehicle."
+                  },
+                  "xdm:vehiclePickUpLocationCode": {
+                    "title": "Pick-up Location Code",
+                    "type": "string",
+                    "description": "The airport location code for the vehicle pick up.",
+                    "pattern": "^[A-Z]{3}$"
+                  },
+                  "xdm:prePaid": {
+                    "title": "Pre Paid",
+                    "type": "boolean",
+                    "description": "Yes/no if the booking is pre-paid"
+                  },
+                  "xdm:vin": {
+                    "title": "Vehicle Identification Number",
+                    "type": "string",
+                    "description": "Captures the vehicle identification number (VIN) of the vehicle being rented."
+                  },
+                  "xdm:refundable": {
+                    "title": "Refundable",
+                    "type": "boolean",
+                    "description": "Yes/no if the car booking is refundable."
+                  },
+                  "xdm:rentersAge": {
+                    "title": "Renter's Age",
+                    "type": "integer",
+                    "description": "Age of the renter on the vehicle reservation."
+                  },
+                  "xdm:salesChannel": {
+                    "title": "Sales Channel",
+                    "type": "string",
+                    "meta:enum": {
+                      "web": "Web",
+                      "mobile": "Mobile",
+                      "mobileApp": "Mobile App",
+                      "callCenter": "Call Center",
+                      "agent": "Agent",
+                      "thirdParty": "Third-Party"
+                    },
+                    "description": "Sales channel from which the reservation was booked."
+                  },
+                  "xdm:status": {
+                    "title": "Status",
+                    "type": "string",
+                    "meta:enum": {
+                      "cancelled": "Cancelled",
+                      "confirmed": "Confirmed",
+                      "hold": "Hold",
+                      "pending": "Pending"
+                    },
+                    "description": "The status of the vehicle reservation."
+                  },
+                  "xdm:vehicleClass": {
+                    "title": "Vehicle Class",
+                    "type": "string",
+                    "meta:enum": {
+                      "economy": "Economy",
+                      "compact": "Compact",
+                      "midsize": "Midsize",
+                      "fullsize": "Fullsize",
+                      "standard": "Standard",
+                      "suv": "SUV",
+                      "premium": "Premium",
+                      "minivan": "Minivan"
+                    },
+                    "description": "The class/category of vehicle being reserved."
+                  },
+                  "xdm:cancellation": {
+                    "title": "Cancellation",
+                    "type": "integer",
+                    "description": "Tracked when a reservation has been cancelled."
+                  },
+                  "xdm:confirmationNumber": {
+                    "title": "Confirmation Number",
+                    "type": "string",
+                    "description": "Tracks the reservation confirmation number/identifier."
+                  },
+                  "xdm:created": {
+                    "title": "Created",
+                    "type": "integer",
+                    "description": "Tracked when a reservation has been created."
+                  },
+                  "xdm:currencyCode": {
+                    "title": "Currency Code",
+                    "type": "string",
+                    "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+                    "pattern": "^[A-Z]{3}$"
+                  },
+                  "xdm:length": {
+                    "title": "Length",
+                    "type": "integer",
+                    "description": "Tracks the total number of days for a reservation."
+                  },
+                  "xdm:modification": {
+                    "title": "Modification",
+                    "type": "integer",
+                    "description": "Captured when a reservation has been modified."
+                  },
+                  "xdm:modificationDate": {
+                    "title": "Modification Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Tracks when a reservation has been modified."
+                  },
+                  "xdm:numberOfAdults": {
+                    "title": "Number of Adults",
+                    "type": "integer",
+                    "description": "Captures the number of adults associated with the reservation."
+                  },
+                  "xdm:numberOfChildren": {
+                    "title": "Number of Children",
+                    "type": "integer",
+                    "description": "Captures the number of children associated with the reservation."
+                  },
+                  "xdm:purpose": {
+                    "title": "Purpose",
+                    "type": "string",
+                    "meta:enum": {
+                      "business": "Business",
+                      "personal": "Personal"
+                    },
+                    "description": "Tracks the purpose of the reservation, typically either business or personal."
+                  },
+                  "xdm:tripType": {
+                    "title": "Trip Type",
+                    "type": "string",
+                    "meta:enum": {
+                      "roundtrip": "Roundtrip",
+                      "oneWay": "One Way",
+                      "multiCity": "Multi-City"
+                    },
+                    "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservations"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate" : "2021-02-10"
+}

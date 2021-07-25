@@ -1,5 +1,5 @@
 
-# IAB TCF 2.0 Consent Schema
+# IAB TCF 2.0 Consent Details Schema
 
 ```
 https://ns.adobe.com/xdm/context/profile-privacy
@@ -12,11 +12,11 @@ Record the IAB TCF 2.0 string in a user's profile.
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/profile-privacy.schema.json](fieldgroups/profile/profile-privacy.schema.json) |
 ## Schema Hierarchy
 
-* IAB TCF 2.0 Consent `https://ns.adobe.com/xdm/context/profile-privacy`
+* IAB TCF 2.0 Consent Details `https://ns.adobe.com/xdm/context/profile-privacy`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
 
 
-## IAB TCF 2.0 Consent Example
+## IAB TCF 2.0 Consent Details Example
 ```json
 {
   "xdm:optOutConsentLevel": {
@@ -47,12 +47,12 @@ Record the IAB TCF 2.0 string in a user's profile.
 }
 ```
 
-# IAB TCF 2.0 Consent Properties
+# IAB TCF 2.0 Consent Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | IAB TCF 2.0 Consent (this schema) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | IAB TCF 2.0 Consent (this schema) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | IAB TCF 2.0 Consent Details (this schema) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | IAB TCF 2.0 Consent Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:identityPrivacyInfo

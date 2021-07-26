@@ -16,7 +16,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
   * [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md) `https://ns.adobe.com/xdm/data/record-timeseries-events`
   * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
-  * [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md) `https://ns.adobe.com/xdm/context/profile-privacy`
+  * [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md) `https://ns.adobe.com/xdm/context/profile-privacy`
 
 
 ## Adobe Unified Profile Service Profile Union Extension Example
@@ -82,8 +82,8 @@ Adobe Unified Profile Service required fields for the Profile Union.
 | [https://ns.adobe.com/experience/profile/associatedIdentities](#httpsnsadobecomexperienceprofileassociatedidentities) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/identityNamespaces](#httpsnsadobecomexperienceprofileidentitynamespaces) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
-| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
-| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel) |
+| [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
+| [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel) |
 | [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
 | [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments) |
 | [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md#xdmtimeseriesevents) |
@@ -163,7 +163,7 @@ Captured privacy information for identities in profile.
 `xdm:identityPrivacyInfo`
 * is optional
 * type: `object`
-* defined in [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo)
+* defined in [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo)
 
 ### xdm:identityPrivacyInfo Type
 
@@ -187,7 +187,7 @@ Opt-out consent level (deprecated).
 `xdm:optOutConsentLevel`
 * is optional
 * type: `object`
-* defined in [IAB TCF 2.0 Consent](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel)
+* defined in [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel)
 
 ### xdm:optOutConsentLevel Type
 

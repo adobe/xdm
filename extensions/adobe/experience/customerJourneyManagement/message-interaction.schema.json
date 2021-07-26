@@ -52,30 +52,37 @@
           "type": "string",
           "description": "Human-Friendly label"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerID": {
-          "title": "Offer ID",
-          "type": "string",
-          "description": "Unique Identifier for Offer"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementID": {
-          "title": "Placement ID",
-          "type": "string",
-          "description": "Unique Identifier for Offer Placement"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionID": {
-          "title": "Proposition ID",
-          "type": "string",
-          "description": "Unique Identifier for Offer Proposition"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionTime": {
-          "title": "Proposition Time",
-          "type": "string",
-          "description": "Time at which the Offer proposition was generated"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerCount": {
-          "title": "Offer Count",
-          "type": "integer",
-          "description": "Count of offers included in the offer proposition"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
+          "title": "Offer details",
+          "type": "object",
+          "description": "Describes offer(s) involved in a message interaction",
+           "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerID": {
+                "title": "Offer ID",
+                "type": "string",
+                "description": "Unique Identifier for Offer"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/placementID": {
+                "title": "Placement ID",
+                "type": "string",
+                "description": "Unique Identifier for Offer Placement"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionID": {
+                "title": "Proposition ID",
+                "type": "string",
+                "description": "Unique Identifier for Offer Proposition"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/propositionTime": {
+                "title": "Proposition Time",
+                "type": "string",
+                "description": "Time at which the Offer proposition was generated"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offerCount": {
+                "title": "Offer Count",
+                "type": "integer",
+                "description": "Count of offers included in the offer proposition"
+              }
+           }
         }
       }
     }

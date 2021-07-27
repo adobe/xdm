@@ -44,7 +44,7 @@
       "$ref": "#/definitions/product-measurement"
     },
     {
-      "$ref": "#/definitions/uom"
+      "$ref": "#/definitions/uomcode"
     }
   ],
   "meta:status": "experimental",

@@ -56,7 +56,7 @@ A unique identifier for the record.
 
 
 ## xdm:accountID
-### Account identifer
+### Account Identifier
 
 Unique ID for the account.
 

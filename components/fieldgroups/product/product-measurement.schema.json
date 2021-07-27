@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product measurements.",
+  "description": "Captures properties related to product measurements.",
   "definitions": {
     "product-measurement": {
       "properties": {

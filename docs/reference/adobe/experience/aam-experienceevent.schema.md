@@ -17,7 +17,7 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
   * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
   * [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
-  * [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-privacy`
+  * [IAB TCF 2.0 Consent Details](../../fieldgroups/experience-event/experienceevent-privacy.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-privacy`
   * [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md) `https://ns.adobe.com/experience/audiencemanager/experienceevent-all`
 
 
@@ -160,7 +160,7 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings) |
+| [xdm:consentStrings](#xdmconsentstrings) | Consent String | Optional | [IAB TCF 2.0 Consent Details](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings) |
 | [xdm:derivedSignals](#xdmderivedsignals) | `object` | Optional | [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md#xdmderivedsignals) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
@@ -180,7 +180,7 @@ Adobe Audience Manager mixin for use with schemas for Solution data ingestion. I
 * is optional
 * type: Consent String
 
-* defined in [IAB TCF 2.0 Consent](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings)
+* defined in [IAB TCF 2.0 Consent Details](../../fieldgroups/experience-event/experienceevent-privacy.schema.md#xdmconsentstrings)
 
 ### xdm:consentStrings Type
 

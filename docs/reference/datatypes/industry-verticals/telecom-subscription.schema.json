@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/datatypes/telecom-subscription",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Subscription",
+    "title": "Telecom Subscription",
     "type": "object",
     "meta:extensible": true,
     "description": "Contain details for the specific subscription types, such as internet, mobile, media, or landline.",

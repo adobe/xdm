@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/decisioning/fallback-content-option
 ```
 
-A default decision option that is used when there is no personalized content is left after checking all constraints. The Fallback content mixin cannot be combined with mixins that express constraint because a fallback option must be remain applicable for any use in a given context.
+A default decision option that is used when there is no personalized content is left after checking all constraints. The Fallback content field group cannot be combined with field groups that express constraint because a fallback option must be remain applicable for any use in a given context.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

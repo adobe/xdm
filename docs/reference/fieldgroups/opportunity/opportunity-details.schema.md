@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/opportunity-details
 ```
 
-This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.
+Captures and maintains additional opportunity attributes that are used by industry crm systems.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

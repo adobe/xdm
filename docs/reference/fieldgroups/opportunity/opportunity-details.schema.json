@@ -17,7 +17,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/opportunity"
     ],
-    "description": "This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",
+    "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems.",
     "definitions": {
         "opportunity-details": {
             "properties": {

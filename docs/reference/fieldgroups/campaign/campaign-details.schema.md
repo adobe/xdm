@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/campaign-details
 ```
 
-This mixin is used to capture properties related to business campaign details.
+Captures properties related to business campaign details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

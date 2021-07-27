@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/adcloud-experienceevent
 ```
 
-Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent mixins.
+Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent field groups.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -366,7 +366,7 @@ Information related to advertising impressions, clickthroughs, and attribution.
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

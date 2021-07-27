@@ -5,7 +5,7 @@
 https://ns.airship.com/airship-event
 ```
 
-Airship gathers engagement data that can help you better understand how your audience uses and reacts to your apps and messages. This mixin groups standard mixins that can be used describe Airship's standard engagement events. Any non-standard fields should be added as needed.
+Airship gathers engagement data that can help you better understand how your audience uses and reacts to your apps and messages. This field group is a standard field group that can be used to describe Airship's standard engagement events. Any non-standard fields should be added as needed.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
@@ -699,7 +699,7 @@ An identifier that represents the events location in the Airship event stream an
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

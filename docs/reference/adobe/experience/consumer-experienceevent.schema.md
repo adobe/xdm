@@ -1,18 +1,18 @@
 
-# Consumer ExperienceEvent  Mixin Schema
+# Consumer ExperienceEvent  Field Group Schema
 
 ```
 https://ns.adobe.com/experience/consumer-experienceevent
 ```
 
-This mixin groups a set of standard fields to describe the behavior of an individual. This mixin can be used to express behavior of a consumer related to digital content consumption (web, mobile app), online or off-line purchases. The use of this standard represention allows for a single representation for data producers and consumers of consumer behavior in Experience Platform
+A set of standard fields to describe the behavior of an individual. This field group can be used to express behavior of a consumer related to digital content consumption (web, mobile app), online or off-line purchases. The use of this standard represention allows for a single representation for data producers and consumers of consumer behavior in Experience Platform
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/consumer-experienceevent.schema.json](adobe/experience/consumer-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* Consumer ExperienceEvent  Mixin `https://ns.adobe.com/experience/consumer-experienceevent`
+* Consumer ExperienceEvent  Field Group `https://ns.adobe.com/experience/consumer-experienceevent`
   * [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
   * [Channel Details](../../fieldgroups/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
   * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
@@ -25,7 +25,7 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
   * [Commerce Details](../../fieldgroups/experience-event/experienceevent-commerce.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-commerce`
 
 
-## Consumer ExperienceEvent  Mixin Example
+## Consumer ExperienceEvent  Field Group Example
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -140,7 +140,7 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 }
 ```
 
-# Consumer ExperienceEvent  Mixin Properties
+# Consumer ExperienceEvent  Field Group Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
@@ -164,7 +164,7 @@ This mixin groups a set of standard fields to describe the behavior of an indivi
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

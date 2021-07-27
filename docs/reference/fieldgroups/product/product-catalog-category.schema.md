@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/product-catalog-category
 ```
 
-This mixin is used to capture properties related to product catalog category.
+Captures properties related to product catalog category.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

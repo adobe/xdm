@@ -18,7 +18,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/classes/campaign"
     ],
-    "description": "This mixin is used to capture properties related to business campaign details.",
+    "description": "Captures properties related to business campaign details.",
     "definitions": {
         "campaign-details": {
             "properties": {

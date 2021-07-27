@@ -5,7 +5,7 @@
 https://ns.adobe.com/b2b/marketo/marketo-web-url
 ```
 
-Use this mixin for web url which does not confine with URI format.
+Captures web url, which need not be in URI format.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

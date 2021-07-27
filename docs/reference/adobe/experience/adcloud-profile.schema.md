@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/adcloud-profile
 ```
 
-Adobe Advertising Cloud profile mixin for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile mixins.
+Adobe Advertising Cloud profile field group for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile field groups.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

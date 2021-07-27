@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/aam-experienceevent
 ```
 
-Adobe Audience Manager mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core mixins.
+Adobe Audience Manager field group for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the other required core field groups.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/campaign-components
 ```
 
-This mixin is used to capture b2b campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.
+Captures B2B campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

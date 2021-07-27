@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/profile-other-work-details
 ```
 
-This mixin is used to capture information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.
+Captures information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

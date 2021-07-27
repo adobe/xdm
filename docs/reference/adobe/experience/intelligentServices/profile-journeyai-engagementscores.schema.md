@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/intelligentServices/profile-journeyai-engagementscores
 ```
 
-This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.
+Contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

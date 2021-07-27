@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/intelligentServices/profile-journeyai-sendtimeoptimization
 ```
 
-This mixin contains JourneyAI Send Time Optimization scores, which provides the time preferences for message deliveries.
+Contains JourneyAI Send Time Optimization scores, which provides the time preferences for message deliveries.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

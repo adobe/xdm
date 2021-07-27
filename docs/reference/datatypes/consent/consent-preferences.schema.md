@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/datatypes/consents-and-preferences
 ```
 
-This mixin captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.
+Captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

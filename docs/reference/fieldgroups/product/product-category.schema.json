@@ -15,7 +15,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/classes/product"
     ],
-    "description": "This mixin is used to capture properties related to product category.",
+    "description": "Captures properties related to product category.",
     "definitions": {
         "product-category": {
             "properties": {

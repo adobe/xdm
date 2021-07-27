@@ -22,15 +22,19 @@
           "type": "string",
           "description": "Standard product size for the product."
         },
-        "xdm:unitOfMeasureCode": {
-          "title": "Product Unit Of Measure Code",
-          "type": "string",
-          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
-        },
         "xdm:unitOfMeasureName": {
           "title": "Product Unit Of Measure Name",
           "type": "string",
           "description": "Friendly name for product unit of measure."
+        }
+      }
+    },
+    "uomcode": {
+      "properties": {
+        "xdm:unitOfMeasureCode": {
+          "title": "Product Unit Of Measure Code",
+          "type": "string",
+          "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
         }
       }
     }
@@ -38,6 +42,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/product-measurement"
+    },
+    {
+      "$ref": "#/definitions/uomcode"
     }
   ],
   "meta:status": "experimental",

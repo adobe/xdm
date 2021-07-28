@@ -50,14 +50,19 @@
         "xdm:plugins": {
           "title": "Plugins",
           "type": "array",
+          "description": "An array of all plugins included in the implementation",
           "item": {
             "type": "object",
             "properties": {
               "xdm:name": {
-                "type": "string"
+                "title": "Name",
+                "type": "string",
+                "description": "Name of the plugin"
               },
               "xdm:version": {
-                "type": "string"
+                "title": "Version",
+                "type": "string",
+                "description": "The version identifier of the plugin, i.e. 4.3.0"
               }
             },
             "required": ["xdm:name", "xdm:version"]

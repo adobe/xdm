@@ -29,11 +29,6 @@
         "xdm:campaignName": {
           "title": "Campaign Name",
           "type": "string",
-          "description": "Internal Name that uniquely identifies the Campaign."
-        },
-        "xdm:campaignLabel": { 
-          "title": "Campaign Label",
-          "type": "string",
           "description": "A human-friendly identifier of the marketing campaign which is originating this message."
         },
         "xdm:broadlogId": {
@@ -83,11 +78,6 @@
         },
         "xdm:deliveryName": {
           "title": "Delivery Name",
-          "type": "string",
-          "description": "Internal Name that uniquely identifies the delivery."
-        },
-        "xdm:deliveryLabel": {
-          "title": "Delivery Label",
           "type": "string",
           "description": "A human-friendly identifier of the delivery which is originating this message."
         },

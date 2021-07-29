@@ -10,6 +10,11 @@ The product list item represents a product selected by a customer with specific 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/productlistitem.schema.json](datatypes/productlistitem.schema.json) |
+## Schema Hierarchy
+
+* Product list item `https://ns.adobe.com/xdm/content/productlistitem`
+  * [Product Measurement](../fieldgroups/product/product-measurement.schema.md) `https://ns.adobe.com/xdm/mixins/product-measurement`
+
 
 ## Product list item Example
 ```json
@@ -36,6 +41,7 @@ The product list item represents a product selected by a customer with specific 
 | [xdm:product](#xdmproduct) | `string` | Optional | Product list item (this schema) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product list item (this schema) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | Product list item (this schema) |
+| [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product Measurement](../fieldgroups/product/product-measurement.schema.md#xdmunitofmeasurecode) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -213,6 +219,26 @@ The number of units the customer has indicated they require of the product.
 
 
 `integer`
+
+
+
+
+
+
+## xdm:unitOfMeasureCode
+### Product Unit Of Measure Code
+
+Standard unit of measure of the product and or variation and relates the units for the size measurement.
+
+`xdm:unitOfMeasureCode`
+* is optional
+* type: `string`
+* defined in [Product Measurement](../fieldgroups/product/product-measurement.schema.md#xdmunitofmeasurecode)
+
+### xdm:unitOfMeasureCode Type
+
+
+`string`
 
 
 

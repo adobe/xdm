@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/audiencemanager/segmentdefinition
 ```
 
-This mixin captures Adobe Audience Manager-specific segment definition fields like the identity of the folder this segment belongs to and Audience Manager type for the segment.
+This field group captures Adobe Audience Manager-specific segment definition fields like the identity of the folder this segment belongs to and Audience Manager type for the segment.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

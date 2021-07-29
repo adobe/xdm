@@ -5,7 +5,7 @@
 https://ns.adobe.com/b2b/bizible/bizible-opportunity-details
 ```
 
-This mixin is used to capture and maintain additional Bizible opportunity attributes. They extend the ones used by industry crm systems.
+Captures and maintain additional Bizible opportunity attributes. They extend the ones used by industry crm systems.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

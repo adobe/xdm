@@ -8,7 +8,7 @@
     "$id": "https://ns.airship.com/airship-event",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Airship Event Mixin",
-    "description": "Airship gathers engagement data that can help you better understand how your audience uses and reacts to your apps and messages. This mixin groups standard mixins that can be used describe Airship's standard engagement events. Any non-standard fields should be added as needed.",
+    "description": "Airship gathers engagement data that can help you better understand how your audience uses and reacts to your apps and messages. This field group is a standard field group that can be used to describe Airship's standard engagement events. Any non-standard fields should be added as needed.",
     "type": "object",
     "meta:extensible": true,
     "meta:intendedToExtend": [

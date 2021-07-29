@@ -22,32 +22,24 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-123456",
+  "@id": "https://data.adobe.io/experienceid-2345678",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
   "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
+    "ECID": [
       {
         "xdm:id": "92312748749128"
       }
     ],
-    "https://data.adobe.io/entities/namespace/10": [
+    "AVID": [
       {
         "xdm:id": "2394509340-30453470347"
       }
-    ],
-    "https://data.adobe.io/entities/namespace/9": [
-      {
-        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-      }
     ]
-  },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/apns",
-    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -56,10 +48,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       "xdm:version": "63.0.3239",
       "xdm:acceptLanguage": "en",
       "xdm:cookiesEnabled": true,
-      "xdm:javaScriptEnabled": true,
-      "xdm:javaScriptVersion": "1.8.5",
-      "xdm:javaEnabled": true,
-      "xdm:javaVersion": "Java SE 8",
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
@@ -67,117 +55,52 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:productListItems": [
-    {
-      "xdm:SKU": "1002352692",
-      "xdm:lineItemId": "12345678",
-      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
-      "xdm:currencyCode": "USD",
-      "xdm:quantity": 1,
-      "xdm:priceTotal": 159
-    }
-  ],
-  "xdm:commerce": {
-    "xdm:order": {
-      "xdm:purchaseID": "a8g784hjq1mnp3",
-      "xdm:purchaseOrderNumber": "123456",
-      "xdm:payments": [
-        {
-          "xdm:transactionID": "transactid-a111",
-          "xdm:paymentAmount": 59,
-          "xdm:paymentType": "credit_card",
-          "xdm:currencyCode": "USD"
-        },
-        {
-          "xdm:transactionId": "transactid-a222",
-          "xdm:paymentAmount": 100,
-          "xdm:paymentType": "gift_card",
-          "xdm:currencyCode": "USD"
-        }
-      ],
-      "xdm:currencyCode": "USD",
-      "xdm:priceTotal": 159
-    },
-    "xdm:purchases": {
-      "xdm:value": 1
-    }
-  },
-  "xdm:placeContext": {
-    "xdm:localTime": "2017-09-26T15:52:25+13:00",
+  "xdm:locationContext": {
     "xdm:geo": {
-      "@id": "https://data.adobe.io/entities/geo/tokyo",
-      "xdm:countryCode": "JP",
-      "xdm:stateProvince": "JP-13",
-      "xdm:city": "Tōkyō",
-      "xdm:postalCode": "141-0032",
-      "schema:latitude": 35.6185,
-      "schema:longitude": 139.73237
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
     }
   },
   "xdm:web": {
-    "xdm:webPageDetails": {
-      "xdm:siteSection": "Shopping Cart",
-      "xdm:server": "example.com",
-      "xdm:name": "Purchase Confirmation",
-      "xdm:URL": "https://www.example.com/orderConf",
-      "xdm:errorPage": false,
-      "xdm:homePage": false,
-      "xdm:pageViews": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
         "xdm:value": 1
       }
     },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.example.com/checkout",
-      "xdm:referrerType": "internal"
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
     }
-  },
-  "xdm:marketing": {
-    "xdm:trackingCode": "marketingcampaign111"
-  },
-  "xdm:profileStitch": [
-    {
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:version": "1.0",
-      "xdm:identityMap": {
-        "ECID": [
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
-          },
-          {
-            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
-          }
-        ]
-      }
-    }
-  ],
-  "xdm:segmentMemberships": [
-    {
-      "xdm:segmentID": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        }
-      },
-      "xdm:profileStitchID": {
-        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
-        "xdm:namespace": {
-          "xdm:code": "AAM"
-        },
-        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
-        "xdm:version": "1.0",
-        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
-        "xdm:status": "realized"
-      }
-    }
-  ]
+  }
 }
 ```
 
@@ -342,24 +265,32 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-2345678",
+  "@id": "https://data.adobe.io/experienceid-123456",
   "xdm:dataSource": {
     "@id": "https://data.adobe.io/datasources/datasource-123",
     "xdm:code": "DataSourceIntegrationCode-123"
   },
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
   "xdm:identityMap": {
-    "ECID": [
+    "https://data.adobe.io/entities/namespace/4": [
       {
         "xdm:id": "92312748749128"
       }
     ],
-    "AVID": [
+    "https://data.adobe.io/entities/namespace/10": [
       {
         "xdm:id": "2394509340-30453470347"
       }
+    ],
+    "https://data.adobe.io/entities/namespace/9": [
+      {
+        "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
+      }
     ]
+  },
+  "xdm:channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/apns",
+    "@type": "https://ns.adobe.com/xdm/channel-types/mobile"
   },
   "xdm:environment": {
     "xdm:type": "browser",
@@ -368,6 +299,10 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
       "xdm:version": "63.0.3239",
       "xdm:acceptLanguage": "en",
       "xdm:cookiesEnabled": true,
+      "xdm:javaScriptEnabled": true,
+      "xdm:javaScriptVersion": "1.8.5",
+      "xdm:javaEnabled": true,
+      "xdm:javaVersion": "Java SE 8",
       "xdm:viewportHeight": 900,
       "xdm:viewportWidth": 1680
     },
@@ -375,50 +310,321 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
     "xdm:operatingSystemVersion": "10.13",
     "xdm:connectionType": "cable"
   },
-  "xdm:locationContext": {
+  "xdm:productListItems": [
+    {
+      "xdm:SKU": "1002352692",
+      "xdm:lineItemId": "12345678",
+      "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+      "xdm:currencyCode": "USD",
+      "xdm:quantity": 1,
+      "xdm:priceTotal": 159
+    }
+  ],
+  "xdm:commerce": {
+    "xdm:order": {
+      "xdm:purchaseID": "a8g784hjq1mnp3",
+      "xdm:purchaseOrderNumber": "123456",
+      "xdm:payments": [
+        {
+          "xdm:transactionID": "transactid-a111",
+          "xdm:paymentAmount": 59,
+          "xdm:paymentType": "credit_card",
+          "xdm:currencyCode": "USD"
+        },
+        {
+          "xdm:transactionId": "transactid-a222",
+          "xdm:paymentAmount": 100,
+          "xdm:paymentType": "gift_card",
+          "xdm:currencyCode": "USD"
+        }
+      ],
+      "xdm:currencyCode": "USD",
+      "xdm:priceTotal": 159
+    },
+    "xdm:purchases": {
+      "xdm:value": 1
+    }
+  },
+  "xdm:placeContext": {
+    "xdm:localTime": "2017-09-26T15:52:25+13:00",
     "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
+      "@id": "https://data.adobe.io/entities/geo/tokyo",
+      "xdm:countryCode": "JP",
+      "xdm:stateProvince": "JP-13",
+      "xdm:city": "Tōkyō",
+      "xdm:postalCode": "141-0032",
+      "schema:latitude": 35.6185,
+      "schema:longitude": 139.73237
     }
   },
   "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
+    "xdm:webPageDetails": {
+      "xdm:siteSection": "Shopping Cart",
+      "xdm:server": "example.com",
+      "xdm:name": "Purchase Confirmation",
+      "xdm:URL": "https://www.example.com/orderConf",
+      "xdm:errorPage": false,
+      "xdm:homePage": false,
+      "xdm:pageViews": {
         "xdm:value": 1
       }
     },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.example.com/checkout",
+      "xdm:referrerType": "internal"
+    }
+  },
+  "xdm:marketing": {
+    "xdm:trackingCode": "marketingcampaign111"
+  },
+  "xdm:profileStitch": [
+    {
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:version": "1.0",
+      "xdm:identityMap": {
+        "ECID": [
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/92312748749128"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/62312748749321"
+          },
+          {
+            "xdm:id": "https://data.adobe.io/entities/identity/49312748749132"
+          }
+        ]
+      }
+    }
+  ],
+  "xdm:segmentMemberships": [
+    {
+      "xdm:segmentID": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        }
+      },
+      "xdm:profileStitchID": {
+        "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",
+        "xdm:namespace": {
+          "xdm:code": "AAM"
+        },
+        "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",
+        "xdm:version": "1.0",
+        "xdm:validUntil": "2017-12-26T15:52:25+00:00",
+        "xdm:status": "realized"
+      }
+    }
+  ]
+}
+```
+
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123457",
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:browserDetails": {
+      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
+    },
+    "xdm:ipV4": "97.73.140.5"
+  },
+  "xdm:media": {
+    "xdm:mediaTimed": {
+      "xdm:primaryAssetReference": {
+        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
+        "dc:title": "Floki Begs Helga for Freedom",
+        "dc:creator": "Video Author",
+        "dc:publisher": "tvonline",
+        "xmpDM:duration": 87,
+        "iptc4xmpExt:Series": {
+          "iptc4xmpExt:Name": "show_highlights",
+          "iptc4xmpExt:Identifier": "http://myChannel.com/series-identifiers/2692753"
+        },
+        "xdm:showType": "episode",
+        "xdm:streamFormat": "long",
+        "xdm:streamType": "video",
+        "iptc4xmpExt:Season": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Episode": {
+          "iptc4xmpExt:Number": 1
+        },
+        "iptc4xmpExt:Genre": [
+          "sports"
+        ],
+        "iptc4xmpExt:Rating": [
+          {
+            "iptc4xmpExt:RatingValue": "TVGuru",
+            "iptc4xmpExt:RatingSourceLink": "http://www.mytvexample.org/ratings.htm"
+          }
+        ],
+        "iptc4xmpExt:Creator": [
+          {
+            "iptc4xmpExt:Name": "SportTV"
+          }
+        ]
+      },
+      "xdm:primaryAssetViewDetails": {
+        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
+        "xdm:playerName": "watchsport",
+        "xdm:broadcastChannel": "WatchSportTV",
+        "xdm:broadcastContentType": "VCT",
+        "xdm:videoSegment": "3-10",
+        "xdm:path": "id:show:episode:abcd.com:d9263ej-4ce7",
+        "xdm:streamFormat": "short",
+        "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
+        "xdm:playerSDKVersion": {
+          "xdm:version": "1.0.8"
+        },
+        "xdm:broadcastNetwork": "ntwu",
+        "xdm:adLoadType": "2",
+        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.org%2Fhls%2Fvu%2F9083406%2FVUBX0288374528402980_38_3_M_HD.m3u8",
+        "xdm:sessionTimeout": 1800,
+        "xdm:QOE": {
+          "xdm:errors": {
+            "xdm:value": 0
+          },
+          "xdm:errorImpactedStreams": {
+            "xdm:value": 0
+          },
+          "xdm:buffers": {
+            "xdm:value": 4
+          },
+          "xdm:bufferTime": {
+            "xdm:value": 5
+          },
+          "xdm:bufferImpactedStreams": {
+            "xdm:value": 2
+          },
+          "xdm:stalls": {
+            "xdm:value": 0
+          },
+          "xdm:stallTime": {
+            "xdm:value": 0
+          },
+          "xdm:stallingImpactedStreams": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateChanges": {
+            "xdm:value": 0
+          },
+          "xdm:bitrateAverage": {
+            "xdm:value": 320
+          },
+          "xdm:bitrateAverageBucket": "800-899",
+          "xdm:bitrateChangeImpactedStreams": {
+            "xdm:value": 0
+          },
+          "xdm:dropBeforeStart": {
+            "xdm:value": 0
+          },
+          "xdm:droppedFrames": {
+            "xdm:value": 2
+          },
+          "xdm:droppedFrameImpactedStreams": {
+            "xdm:value": 2
+          },
+          "xdm:timeToStart": {
+            "xdm:value": 3
+          },
+          "xdm:mediaSdkErrors": [
+            "300",
+            "500.300.200"
+          ],
+          "xdm:playerSdkErrors": [
+            "custom.error.code"
+          ],
+          "xdm:externalSdkErrors": [
+            "100-5",
+            "11.12"
+          ]
+        },
+        "xdm:downloadedPlayback": false
+      },
+      "xdm:impressions": {
+        "xdm:value": 1
+      },
+      "xdm:completes": {
+        "xdm:value": 0
+      },
+      "xdm:timePlayed": {
+        "xdm:value": 80
+      },
+      "xdm:federated": {
+        "xdm:value": 0
+      },
+      "xdm:starts": {
+        "xdm:value": 1
+      },
+      "xdm:mediaSegmentView": {
+        "xdm:value": 1
+      },
+      "xdm:totalTimePlayed": {
+        "xdm:value": 190
+      },
+      "xdm:uniqueTimePlayed": {
+        "xdm:value": 80
+      },
+      "xdm:averageMinuteAudience": {
+        "xdm:value": 0.89
+      },
+      "xdm:adCount": {
+        "xdm:value": 3
+      },
+      "xdm:chapterCount": {
+        "xdm:value": 1
+      },
+      "xdm:progress10": {
+        "xdm:value": 1
+      },
+      "xdm:firstQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:midpoints": {
+        "xdm:value": 1
+      },
+      "xdm:thirdQuartiles": {
+        "xdm:value": 1
+      },
+      "xdm:progress95": {
+        "xdm:value": 0
+      },
+      "xdm:resumes": {
+        "xdm:value": 0
+      },
+      "xdm:estimatedStreams": {
+        "xdm:value": 2
+      },
+      "xdm:pauseImpactedStreams": {
+        "xdm:value": 3
+      },
+      "xdm:pauses": {
+        "xdm:value": 0
+      },
+      "xdm:pauseTime": {
+        "xdm:value": 0
+      },
+      "xdm:idp": "TVChannel",
+      "xdm:mediaAuth": "true",
+      "xdm:dayPart": "daytime"
     }
   }
 }
@@ -637,212 +843,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
           "xdm:value": 0
         }
       }
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123457",
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:identityMap": {
-    "https://data.adobe.io/entities/namespace/4": [
-      {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "https://data.adobe.io/entities/namespace/10": [
-      {
-        "xdm:id": "2394509340-30453470347"
-      }
-    ]
-  },
-  "xdm:environment": {
-    "xdm:browserDetails": {
-      "xdm:userAgent": "AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30"
-    },
-    "xdm:ipV4": "97.73.140.5"
-  },
-  "xdm:media": {
-    "xdm:mediaTimed": {
-      "xdm:primaryAssetReference": {
-        "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
-        "dc:title": "Floki Begs Helga for Freedom",
-        "dc:creator": "Video Author",
-        "dc:publisher": "tvonline",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "show_highlights",
-          "iptc4xmpExt:Identifier": "http://myChannel.com/series-identifiers/2692753"
-        },
-        "xdm:showType": "episode",
-        "xdm:streamFormat": "long",
-        "xdm:streamType": "video",
-        "iptc4xmpExt:Season": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Episode": {
-          "iptc4xmpExt:Number": 1
-        },
-        "iptc4xmpExt:Genre": [
-          "sports"
-        ],
-        "iptc4xmpExt:Rating": [
-          {
-            "iptc4xmpExt:RatingValue": "TVGuru",
-            "iptc4xmpExt:RatingSourceLink": "http://www.mytvexample.org/ratings.htm"
-          }
-        ],
-        "iptc4xmpExt:Creator": [
-          {
-            "iptc4xmpExt:Name": "SportTV"
-          }
-        ]
-      },
-      "xdm:primaryAssetViewDetails": {
-        "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
-        "xdm:playerName": "watchsport",
-        "xdm:broadcastChannel": "WatchSportTV",
-        "xdm:broadcastContentType": "VCT",
-        "xdm:videoSegment": "3-10",
-        "xdm:path": "id:show:episode:abcd.com:d9263ej-4ce7",
-        "xdm:streamFormat": "short",
-        "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
-        "xdm:playerSDKVersion": {
-          "xdm:version": "1.0.8"
-        },
-        "xdm:broadcastNetwork": "ntwu",
-        "xdm:adLoadType": "2",
-        "xdm:sourceFeed": "http%3A%2F%2Fvod01.link.org%2Fhls%2Fvu%2F9083406%2FVUBX0288374528402980_38_3_M_HD.m3u8",
-        "xdm:sessionTimeout": 1800,
-        "xdm:QOE": {
-          "xdm:errors": {
-            "xdm:value": 0
-          },
-          "xdm:errorImpactedStreams": {
-            "xdm:value": 0
-          },
-          "xdm:buffers": {
-            "xdm:value": 4
-          },
-          "xdm:bufferTime": {
-            "xdm:value": 5
-          },
-          "xdm:bufferImpactedStreams": {
-            "xdm:value": 2
-          },
-          "xdm:stalls": {
-            "xdm:value": 0
-          },
-          "xdm:stallTime": {
-            "xdm:value": 0
-          },
-          "xdm:stallingImpactedStreams": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateChanges": {
-            "xdm:value": 0
-          },
-          "xdm:bitrateAverage": {
-            "xdm:value": 320
-          },
-          "xdm:bitrateAverageBucket": "800-899",
-          "xdm:bitrateChangeImpactedStreams": {
-            "xdm:value": 0
-          },
-          "xdm:dropBeforeStart": {
-            "xdm:value": 0
-          },
-          "xdm:droppedFrames": {
-            "xdm:value": 2
-          },
-          "xdm:droppedFrameImpactedStreams": {
-            "xdm:value": 2
-          },
-          "xdm:timeToStart": {
-            "xdm:value": 3
-          },
-          "xdm:mediaSdkErrors": [
-            "300",
-            "500.300.200"
-          ],
-          "xdm:playerSdkErrors": [
-            "custom.error.code"
-          ],
-          "xdm:externalSdkErrors": [
-            "100-5",
-            "11.12"
-          ]
-        },
-        "xdm:downloadedPlayback": false
-      },
-      "xdm:impressions": {
-        "xdm:value": 1
-      },
-      "xdm:completes": {
-        "xdm:value": 0
-      },
-      "xdm:timePlayed": {
-        "xdm:value": 80
-      },
-      "xdm:federated": {
-        "xdm:value": 0
-      },
-      "xdm:starts": {
-        "xdm:value": 1
-      },
-      "xdm:mediaSegmentView": {
-        "xdm:value": 1
-      },
-      "xdm:totalTimePlayed": {
-        "xdm:value": 190
-      },
-      "xdm:uniqueTimePlayed": {
-        "xdm:value": 80
-      },
-      "xdm:averageMinuteAudience": {
-        "xdm:value": 0.89
-      },
-      "xdm:adCount": {
-        "xdm:value": 3
-      },
-      "xdm:chapterCount": {
-        "xdm:value": 1
-      },
-      "xdm:progress10": {
-        "xdm:value": 1
-      },
-      "xdm:firstQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:midpoints": {
-        "xdm:value": 1
-      },
-      "xdm:thirdQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:progress95": {
-        "xdm:value": 0
-      },
-      "xdm:resumes": {
-        "xdm:value": 0
-      },
-      "xdm:estimatedStreams": {
-        "xdm:value": 2
-      },
-      "xdm:pauseImpactedStreams": {
-        "xdm:value": 3
-      },
-      "xdm:pauses": {
-        "xdm:value": 0
-      },
-      "xdm:pauseTime": {
-        "xdm:value": 0
-      },
-      "xdm:idp": "TVChannel",
-      "xdm:mediaAuth": "true",
-      "xdm:dayPart": "daytime"
     }
   }
 }

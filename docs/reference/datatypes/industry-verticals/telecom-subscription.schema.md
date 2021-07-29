@@ -1,5 +1,5 @@
 
-# Subscription Schema
+# Telecom Subscription Schema
 
 ```
 https://ns.adobe.com/xdm/datatypes/telecom-subscription
@@ -12,43 +12,43 @@ Contain details for the specific subscription types, such as internet, mobile, m
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/industry-verticals/telecom-subscription.schema.json](datatypes/industry-verticals/telecom-subscription.schema.json) |
 ## Schema Hierarchy
 
-* Subscription `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
+* Telecom Subscription `https://ns.adobe.com/xdm/datatypes/telecom-subscription`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Person](../person/person.schema.md) `https://ns.adobe.com/xdm/context/person`
 
 
-## Subscription Example
+## Telecom Subscription Example
 ```json
 {}
 ```
 
-# Subscription Properties
+# Telecom Subscription Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [ID](#id) | `string` | Optional | Subscription (this schema) |
-| [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Subscription (this schema) |
-| [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Subscription (this schema) |
-| [xdm:chargeMethod](#xdmchargemethod) | `string` | Optional | Subscription (this schema) |
-| [xdm:contractID](#xdmcontractid) | `string` | Optional | Subscription (this schema) |
-| [xdm:country](#xdmcountry) | `string` | Optional | Subscription (this schema) |
-| [xdm:devices](#xdmdevices) | `object[]` | Optional | Subscription (this schema) |
-| [xdm:endDate](#xdmenddate) | `string` | Optional | Subscription (this schema) |
-| [xdm:paymentDueDate](#xdmpaymentduedate) | `string` | Optional | Subscription (this schema) |
-| [xdm:paymentMethod](#xdmpaymentmethod) | `string` | Optional | Subscription (this schema) |
-| [xdm:paymentStatus](#xdmpaymentstatus) | `string` | Optional | Subscription (this schema) |
-| [xdm:planName](#xdmplanname) | `string` | Optional | Subscription (this schema) |
-| [xdm:renew](#xdmrenew) | `string` | Optional | Subscription (this schema) |
-| [xdm:startDate](#xdmstartdate) | `string` | Optional | Subscription (this schema) |
-| [xdm:status](#xdmstatus) | `string` | Optional | Subscription (this schema) |
-| [xdm:subscriber](#xdmsubscriber) | Person | Optional | Subscription (this schema) |
-| [xdm:subscriptionCategory](#xdmsubscriptioncategory) | `string` | Optional | Subscription (this schema) |
-| [xdm:subscriptionSKU](#xdmsubscriptionsku) | `string` | Optional | Subscription (this schema) |
-| [xdm:subscriptionSubCategory](#xdmsubscriptionsubcategory) | `string` | Optional | Subscription (this schema) |
-| [xdm:term](#xdmterm) | `integer` | Optional | Subscription (this schema) |
-| [xdm:termUnitOfTime](#xdmtermunitoftime) | `string` | Optional | Subscription (this schema) |
-| [xdm:topUp](#xdmtopup) | `string` | Optional | Subscription (this schema) |
-| [xdm:type](#xdmtype) | `string` | Optional | Subscription (this schema) |
+| [ID](#id) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:billingPeriod](#xdmbillingperiod) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:billingStartDate](#xdmbillingstartdate) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:chargeMethod](#xdmchargemethod) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:contractID](#xdmcontractid) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:country](#xdmcountry) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:devices](#xdmdevices) | `object[]` | Optional | Telecom Subscription (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:paymentDueDate](#xdmpaymentduedate) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:paymentMethod](#xdmpaymentmethod) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:paymentStatus](#xdmpaymentstatus) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:planName](#xdmplanname) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:renew](#xdmrenew) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:status](#xdmstatus) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:subscriber](#xdmsubscriber) | Person | Optional | Telecom Subscription (this schema) |
+| [xdm:subscriptionCategory](#xdmsubscriptioncategory) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:subscriptionSKU](#xdmsubscriptionsku) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:subscriptionSubCategory](#xdmsubscriptionsubcategory) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:term](#xdmterm) | `integer` | Optional | Telecom Subscription (this schema) |
+| [xdm:termUnitOfTime](#xdmtermunitoftime) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:topUp](#xdmtopup) | `string` | Optional | Telecom Subscription (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional | Telecom Subscription (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## ID

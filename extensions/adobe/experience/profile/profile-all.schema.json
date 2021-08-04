@@ -66,6 +66,25 @@
               }
             }
           }
+        },
+        "https://ns.adobe.com/experience/profile/consentPolicies": {
+          "title": "Consent policies map",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "consent policy",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "xdm:id": {
+                  "title": "Identifier",
+                  "type": "string",
+                  "description": "Identity of the consumer filtered for each consent policy"
+                }
+              }
+            }
+          }
         }
       }
     }

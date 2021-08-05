@@ -75,15 +75,9 @@
             "title": "consent policy",
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "xdm:id": {
-                  "title": "Identifier",
-                  "type": "string",
-                  "description": "Identity of the consumer filtered for each consent policy"
-                }
-              }
-            }
+              "type": "string"
+            },
+            "description": "List of identities for each namespace."
           }
         }
       }

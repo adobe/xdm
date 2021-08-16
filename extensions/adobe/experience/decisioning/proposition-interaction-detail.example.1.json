@@ -26,6 +26,10 @@
         "xdm:algorithmID": "randomuniform",
         "xdm:trafficType": "noncontextual"
       }
-    ]
+    ],
+    "xdm:characteristics": {
+      "xdm:prop1": "Value 1",
+      "xdm:prop2": "Value 2"
+    }
   }
 }

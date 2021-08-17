@@ -46,8 +46,8 @@
       }
     ],
     "xdm:characteristics": {
-      "xdm:prop1": "Value 1",
-      "xdm:prop2": "Value 2"
+      "prop1": "Value 1",
+      "prop2": "Value 2"
     }
   }
 }

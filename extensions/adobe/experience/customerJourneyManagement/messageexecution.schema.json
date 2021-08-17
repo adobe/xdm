@@ -55,7 +55,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": {
           "title": "Message Type",
           "type": "string",
-          "description": "Message Type, whether it's marketing or transactional message"
+          "description": "Message Type, whether it's marketing or transactional message."
         }
       }
     }

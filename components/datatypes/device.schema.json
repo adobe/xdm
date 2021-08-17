@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
   "definitions": {
-    "device": {
+    "typeid": {
       "properties": {
         "xdm:typeID": {
           "title": "Type identifier",
@@ -28,7 +28,11 @@
             "https://ns.adobe.com/xdm/external/deviceatlas": "DeviceAtlas",
             "https://ns.adobe.com/xdm/external/adobecampaign": "Adobe Campaign"
           }
-        },
+        }
+      }
+    },
+    "type": {
+      "properties": {
         "xdm:type": {
           "title": "Type",
           "type": "string",
@@ -45,12 +49,20 @@
             "computers": "Computers",
             "tv screens": "TV screens"
           }
-        },
+        }
+      }
+    },
+    "manufacturer": {
+      "properties": {
         "xdm:manufacturer": {
           "title": "Manufacturer",
           "type": "string",
           "description": "The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone."
-        },
+        }
+      }
+    },
+    "model": {
+      "properties": {
         "xdm:model": {
           "title": "Model",
           "type": "string",
@@ -60,7 +72,11 @@
           "title": "Model number",
           "type": "string",
           "description": "The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale."
-        },
+        }
+      }
+    },
+    "screendimentions": {
+      "properties": {
         "xdm:screenHeight": {
           "title": "Screen height",
           "type": "integer",
@@ -70,12 +86,20 @@
           "title": "Screen width",
           "type": "integer",
           "description": "The number of horizontal pixels of the device's active display in the default orientation."
-        },
+        }
+      }
+    },
+    "colordepth": {
+      "properties": {
         "xdm:colorDepth": {
           "title": "Color depth",
           "type": "integer",
           "description": "The number of colors the display is able to represent."
-        },
+        }
+      }
+    },
+    "screenorientation": {
+      "properties": {
         "xdm:screenOrientation": {
           "title": "Screen orientation",
           "type": "string",
@@ -85,17 +109,29 @@
             "portrait": "Portrait",
             "landscape": "Landscape"
           }
-        },
+        }
+      }
+    },
+    "isbackgroundpushenabled": {
+      "properties": {
         "xdm:isBackgroundPushEnabled": {
           "title": "Background Push Enabled Flag",
           "type": "boolean",
           "description": "For devices like mobile , this tracks the system background push enabled permision status."
-        },
+        }
+      }
+    },
+    "islocationenabled": {
+      "properties": {
         "xdm:isLocationEnabled": {
           "title": "Location Enabled Flag",
           "type": "boolean",
           "description": "Indicates whether or not the device has location services enabled."
-        },
+        }
+      }
+    },
+    "locationpermission": {
+      "properties": {
         "xdm:locationPermission": {
           "title": "Location Permission",
           "type": "string",
@@ -107,7 +143,11 @@
             "FOREGROUND_ALLOWED",
             "UNPROMPTED"
           ]
-        },
+        }
+      }
+    },
+    "ispushoptin": {
+      "properties": {
         "xdm:isPushOptIn": {
           "title": "Push Opt In Flag",
           "type": "boolean",
@@ -121,7 +161,37 @@
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
-      "$ref": "#/definitions/device"
+      "$ref": "#/definitions/typeid"
+    },
+    {
+      "$ref": "#/definitions/type"
+    },
+    {
+      "$ref": "#/definitions/manufacturer"
+    },
+    {
+      "$ref": "#/definitions/model"
+    },
+    {
+      "$ref": "#/definitions/screendimentions"
+    },
+    {
+      "$ref": "#/definitions/colordepth"
+    },
+    {
+      "$ref": "#/definitions/screenorientation"
+    },
+    {
+      "$ref": "#/definitions/isbackgroundpushenabled"
+    },
+    {
+      "$ref": "#/definitions/islocationenabled"
+    },
+    {
+      "$ref": "#/definitions/locationpermission"
+    },
+    {
+      "$ref": "#/definitions/ispushoptin"
     }
   ],
   "meta:status": "stable",

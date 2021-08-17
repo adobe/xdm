@@ -51,6 +51,11 @@
           "title": "Journey Action ID",
           "type": "string",
           "description": "Journey Action ID, for which MessageExecution is triggered."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": {
+          "title": "Message Type",
+          "type": "string",
+          "description": "Message Type, whether it's marketing or transactional message"
         }
       }
     }

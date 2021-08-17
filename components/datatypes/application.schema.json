@@ -82,10 +82,7 @@
           "title": "Close Type",
           "type": "string",
           "description": "Type of application close, sent on application isClose. Type is 'close' on graceful termination of an application, or 'unknown' when application termination source is unknown.",
-          "enum": [
-            "close",
-            "unkown"
-          ],
+          "enum": ["close", "unkown"],
           "meta:enum": {
             "close": "Close",
             "unknown": "Unknown"

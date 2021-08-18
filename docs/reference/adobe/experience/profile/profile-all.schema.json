@@ -68,6 +68,19 @@
                             }
                         }
                     }
+                },
+                "https://ns.adobe.com/experience/profile/consentPolicies": {
+                    "title": "Consent policies map",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "title": "consent policy",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "List of identities for each namespace."
+                    }
                 }
             }
         }
@@ -140,6 +153,22 @@
                         "xdm:validUntil": "2017-12-26T15:52:25+00:00",
                         "xdm:status": "exited"
                     }
+                }
+            },
+            "xdm:consentPolicies": {
+                "exampleConsentPolicy1": {},
+                "exampleConsentPolicy2": {
+                    "Email": [
+                        "personal.email1@gmail.com",
+                        "work.email1@adobe.com",
+                        "personal.email2@gmail.com"
+                    ]
+                },
+                "exampleConsentPolicy3": {
+                    "AAID": [
+                        "92312748749128",
+                        "30453470347"
+                    ]
                 }
             }
         }

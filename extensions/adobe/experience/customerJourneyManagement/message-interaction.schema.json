@@ -76,7 +76,8 @@
               "meta:status": "deprecated",
 	      "title": "Proposition Time",
               "type": "string",
-              "description": "Time at which the Offer proposition was generated."
+              "description": "Time at which the Offer proposition was generated.",
+              "meta:status": "deprecated"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": {
               "title": "Offer Count",

@@ -31,7 +31,6 @@ Describes interaction made by the profile on the message.
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": "1234",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": "12345",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": "9898",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime": "1626721386617",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": 5
   }
 }

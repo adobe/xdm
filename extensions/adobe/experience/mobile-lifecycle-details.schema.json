@@ -98,13 +98,6 @@
         }
       }
     },
-    "device-typeid": {
-      "properties": {
-        "xdm:device": {
-          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/typeid"
-        }
-      }
-    },
     "device-type": {
       "properties": {
         "xdm:device": {
@@ -170,9 +163,6 @@
     },
     {
       "$ref": "#/definitions/environment-language"
-    },
-    {
-      "$ref": "#/definitions/device-typeid"
     },
     {
       "$ref": "#/definitions/device-type"

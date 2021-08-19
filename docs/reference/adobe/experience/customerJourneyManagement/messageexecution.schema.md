@@ -187,8 +187,16 @@ Message type of this message if it's marketing or transactional.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType`
 * is optional
-* type: `string`
+* type: `enum`
 * defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#messsageType-known-values).
+
+##### messageType Known Values
+| Value | Description |
+|-------|-------------|
+| `marketing` | Marketing |
+| `transactional` | Transactional |
 
 ### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType Type
 

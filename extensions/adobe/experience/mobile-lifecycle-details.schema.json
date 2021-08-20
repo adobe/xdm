@@ -35,10 +35,10 @@
         }
       }
     },
-    "application-isclose": {
+    "application-closegroup": {
       "properties": {
         "xdm:application": {
-          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/isclose"
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/closegroup"
         }
       }
     },
@@ -138,7 +138,7 @@
       "$ref": "#/definitions/application-version"
     },
     {
-      "$ref": "#/definitions/application-isclose"
+      "$ref": "#/definitions/application-closegroup"
     },
     {
       "$ref": "#/definitions/application-islaunch"

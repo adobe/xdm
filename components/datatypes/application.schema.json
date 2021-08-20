@@ -71,7 +71,7 @@
         }
       }
     },
-    "isclose": {
+    "closegroup": {
       "properties": {
         "xdm:isClose": {
           "title": "Is Close",
@@ -160,7 +160,7 @@
       "$ref": "#/definitions/version"
     },
     {
-      "$ref": "#/definitions/isclose"
+      "$ref": "#/definitions/closegroup"
     },
     {
       "$ref": "#/definitions/islaunch"

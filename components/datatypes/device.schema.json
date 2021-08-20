@@ -75,7 +75,7 @@
         }
       }
     },
-    "screendimentions": {
+    "screendimensions": {
       "properties": {
         "xdm:screenHeight": {
           "title": "Screen height",
@@ -173,7 +173,7 @@
       "$ref": "#/definitions/model"
     },
     {
-      "$ref": "#/definitions/screendimentions"
+      "$ref": "#/definitions/screendimensions"
     },
     {
       "$ref": "#/definitions/colordepth"

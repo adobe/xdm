@@ -119,10 +119,10 @@
         }
       }
     },
-    "device-screendimentions": {
+    "device-screendimensions": {
       "properties": {
         "xdm:device": {
-          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/screendimentions"
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/screendimensions"
         }
       }
     }
@@ -174,7 +174,7 @@
       "$ref": "#/definitions/device-model"
     },
     {
-      "$ref": "#/definitions/device-screendimentions"
+      "$ref": "#/definitions/device-screendimensions"
     }
   ],
   "meta:status": "experimental"

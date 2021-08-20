@@ -102,6 +102,26 @@
               "description": "Holds opt out values for different channels as selected by the person.",
               "$ref": "https://ns.adobe.com/xdm/context/optinout",
               "meta:status": "deprecated"
+            },
+            "xdm:personKey": {
+              "title": "Person Key",
+              "description": "Unique identifier of Person/Profile fragment.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:accountKey": {
+              "title": "Account Key",
+              "description": "Unique identifier of the Account related to the person.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:convertedContactKey": {
+              "title": "Converted Contact Key",
+              "description": "Unique identifier of the Contact if the lead was converted.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:personOptInOut": {
+              "title": "Person Preferences",
+              "description": "Holds opt out values for different channels as selected by the person.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             }
           }
         }

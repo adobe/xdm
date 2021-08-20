@@ -122,7 +122,8 @@
         "xdm:sessionLength": {
           "title": "Session Length",
           "type": "integer",
-          "description": "Length of the previous application session."
+          "minimum": 0,
+          "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground."
         }
       }
     },

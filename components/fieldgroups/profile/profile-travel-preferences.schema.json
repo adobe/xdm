@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "travel_and_hospitality"
-    ]
+    "industry": ["travel_and_hospitality"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Tracks a user's travel preferences, including home airport code, meal preferences, seating preferences, etc.",
   "definitions": {
     "travel-preferences": {
@@ -30,12 +26,7 @@
             "xdm:seat": {
               "title": "Seat",
               "type": "string",
-              "enum": [
-                "noPreference",
-                "aisle",
-                "window",
-                "middle"
-              ],
+              "enum": ["noPreference", "aisle", "window", "middle"],
               "meta-enum": {
                 "noPreference": "No Preference",
                 "aisle": "Aisle",
@@ -119,10 +110,7 @@
             "xdm:ticketDelivery": {
               "title": "Ticket Delivery",
               "type": "string",
-              "enum": [
-                "eTicket",
-                "physical"
-              ],
+              "enum": ["eTicket", "physical"],
               "meta-enum": {
                 "eTicket": "E-Ticket",
                 "physical": "Physical"

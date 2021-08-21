@@ -35,10 +35,10 @@
         }
       }
     },
-    "application-closegroup": {
+    "application-close-properties": {
       "properties": {
         "xdm:application": {
-          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/closegroup"
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/close-properties"
         }
       }
     },
@@ -77,10 +77,10 @@
         }
       }
     },
-    "environment-os": {
+    "environment-os-properties": {
       "properties": {
         "xdm:environment": {
-          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/os"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/os-properties"
         }
       }
     },
@@ -112,10 +112,10 @@
         }
       }
     },
-    "device-model": {
+    "device-model-properties": {
       "properties": {
         "xdm:device": {
-          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/model"
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/model-properties"
         }
       }
     },
@@ -138,7 +138,7 @@
       "$ref": "#/definitions/application-version"
     },
     {
-      "$ref": "#/definitions/application-closegroup"
+      "$ref": "#/definitions/application-close-properties"
     },
     {
       "$ref": "#/definitions/application-islaunch"
@@ -156,7 +156,7 @@
       "$ref": "#/definitions/environment-type"
     },
     {
-      "$ref": "#/definitions/environment-os"
+      "$ref": "#/definitions/environment-os-properties"
     },
     {
       "$ref": "#/definitions/environment-carrier"
@@ -171,7 +171,7 @@
       "$ref": "#/definitions/device-manufacturer"
     },
     {
-      "$ref": "#/definitions/device-model"
+      "$ref": "#/definitions/device-model-properties"
     },
     {
       "$ref": "#/definitions/device-screendimensions"

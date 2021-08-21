@@ -38,7 +38,7 @@
         }
       }
     },
-    "os": {
+    "os-properties": {
       "properties": {
         "xdm:operatingSystem": {
           "title": "Operating system",
@@ -67,7 +67,7 @@
         }
       }
     },
-    "viewport": {
+    "viewport-properties": {
       "properties": {
         "xdm:viewportHeight": {
           "title": "Viewport height",
@@ -83,7 +83,7 @@
         }
       }
     },
-    "screenproperties": {
+    "screen-properties": {
       "properties": {
         "xdm:duration": {
           "title": "Duration",
@@ -158,17 +158,13 @@
         }
       }
     },
-    "domain": {
+    "isp-properties": {
       "properties": {
         "xdm:domain": {
           "title": "Domain",
           "type": "string",
           "description": "The domain of the users ISP."
-        }
-      }
-    },
-    "isp": {
-      "properties": {
+        },
         "xdm:ISP": {
           "title": "Internet service provider",
           "type": "string",
@@ -220,16 +216,16 @@
       "$ref": "#/definitions/browserdetails"
     },
     {
-      "$ref": "#/definitions/os"
+      "$ref": "#/definitions/os-properties"
     },
     {
       "$ref": "#/definitions/colordepth"
     },
     {
-      "$ref": "#/definitions/viewport"
+      "$ref": "#/definitions/viewport-properties"
     },
     {
-      "$ref": "#/definitions/screenproperties"
+      "$ref": "#/definitions/screen-properties"
     },
     {
       "$ref": "#/definitions/connectiontype"
@@ -238,10 +234,7 @@
       "$ref": "#/definitions/carrier"
     },
     {
-      "$ref": "#/definitions/domain"
-    },
-    {
-      "$ref": "#/definitions/isp"
+      "$ref": "#/definitions/isp-properties"
     },
     {
       "$ref": "#/definitions/language"

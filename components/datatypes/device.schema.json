@@ -61,7 +61,7 @@
         }
       }
     },
-    "model": {
+    "model-properties": {
       "properties": {
         "xdm:model": {
           "title": "Model",
@@ -170,7 +170,7 @@
       "$ref": "#/definitions/manufacturer"
     },
     {
-      "$ref": "#/definitions/model"
+      "$ref": "#/definitions/model-properties"
     },
     {
       "$ref": "#/definitions/screendimensions"

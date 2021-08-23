@@ -57,8 +57,8 @@
                     "$ref": "#/definitions/experience-option-details"
                 },
                 "xdm:characteristics": {
-                    "title": "Scope Characteristics",
-                    "description": "Additional properties or attributes belonging to this particular decision scope.",
+                    "title": "Scope Details Characteristics",
+                    "description": "Additional properties or attributes belonging to this particular scope details.",
                     "type": "object",
                     "meta:xdmType": "map",
                     "additionalProperties": {

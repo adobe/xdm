@@ -83,9 +83,9 @@ The activity that was a requested or chosen for this decision scope. Some scopes
 
 
 ## xdm:characteristics
-### Scope Characteristics
+### Scope Details Characteristics
 
-Additional properties or attributes belonging to this particular decision scope.
+Additional properties or attributes belonging to this particular scope details.
 
 `xdm:characteristics`
 * is optional

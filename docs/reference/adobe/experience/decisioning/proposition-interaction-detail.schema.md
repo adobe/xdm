@@ -49,7 +49,11 @@ A proposition interaction is used to report an experience event that relates to 
         "xdm:algorithmID": "randomuniform",
         "xdm:trafficType": "noncontextual"
       }
-    ]
+    ],
+    "xdm:characteristics": {
+      "prop1": "Value 1",
+      "prop2": "Value 2"
+    }
   }
 }
 ```
@@ -101,7 +105,11 @@ A proposition interaction is used to report an experience event that relates to 
         "xdm:algorithmID": "auto-optimize",
         "xdm:trafficType": "noncontextual"
       }
-    ]
+    ],
+    "xdm:characteristics": {
+      "prop1": "Value 1",
+      "prop2": "Value 2"
+    }
   }
 }
 ```

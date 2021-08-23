@@ -24,17 +24,17 @@
             "type": "string"
           },
           "xdm:relatedAccountKeys": {
-          "title": "Related Account Keys",
-          "description": "RAn array of unique identifiers to any related accounts.",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            "title": "Related Account Keys",
+            "description": "RAn array of unique identifiers to any related accounts.",
+            "type": "array",
+            "items": {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            }
           }
         }
       }
     }
-  }
-},
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
@@ -46,3 +46,4 @@
   "meta:status": "experimental",
   "meta:createdDate": "2021-01-19"
 }
+

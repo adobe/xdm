@@ -10,6 +10,11 @@ An XDM Business Campaign Member.
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/campaign-member/campaign-member-details.schema.json](fieldgroups/campaign-member/campaign-member-details.schema.json) |
+## Schema Hierarchy
+
+* XDM Business Campaign Member Details `https://ns.adobe.com/xdm/context/campaign-member-details`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
 
 ## XDM Business Campaign Member Details Example
 ```json
@@ -40,6 +45,7 @@ An XDM Business Campaign Member.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:acquiredByCampaignID](#xdmacquiredbycampaignid) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
+| [xdm:acquiredByCampaignKey](#xdmacquiredbycampaignkey) | B2B Source | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:firstRespondedDate](#xdmfirstrespondeddate) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasReachedSuccess](#xdmhasreachedsuccess) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasResponded](#xdmhasresponded) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
@@ -68,6 +74,25 @@ An XDM Business Campaign Member.
 
 `string`
 
+
+
+
+
+
+## xdm:acquiredByCampaignKey
+### Acquired By Campaign Key
+
+Unique composite identifier of the campaign where the person became a member
+
+`xdm:acquiredByCampaignKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:acquiredByCampaignKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

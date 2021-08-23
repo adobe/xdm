@@ -26,15 +26,30 @@
                     "description": "Unique ID for the membership of this person to this marketing list.",
                     "type": "string"
                 },
+                "xdm:marketingListMemberKey": {
+                    "title": "Marketing List Member Key",
+                    "description": "Unique composite identifier of the membership of this person from the marketing list.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:personID": {
                     "title": "Person Identifier",
                     "description": "Unique ID for the person who is a member of this marketing list.",
                     "type": "string"
                 },
+                "xdm:personKey": {
+                    "title": "Person Key",
+                    "description": "Unique composite identifier of the Person from the marketing list.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:marketingListID": {
                     "title": "Marketing List Identifier",
                     "description": "Unique ID for the marketing list this person is a member of.",
                     "type": "string"
+                },
+                "xdm:marketingListKey": {
+                    "title": "Marketing List Key",
+                    "description": "Unique composite identifier of the Marketing List this person is a member of.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
             }
         }

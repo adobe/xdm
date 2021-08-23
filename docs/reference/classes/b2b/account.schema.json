@@ -26,6 +26,11 @@
                     "title": "Account Identifier",
                     "description": "Unique ID for the account.",
                     "type": "string"
+                },
+                "xdm:accountKey": {
+                    "title": "Account Key",
+                    "description": "Unique composite key identifier for the Account.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
             }
         }

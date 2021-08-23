@@ -64,7 +64,12 @@ Unknown type `object`.
     "xdm:campaignID": {
       "title": "Campaign ID",
       "type": "string",
-      "description": "Unique ID of the Campaign."
+      "description": "Unique identifier of the Campaign."
+    },
+    "xdm:campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the Campaign.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
     "xdm:newStatusID": {
       "title": "New Status ID",

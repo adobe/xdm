@@ -58,6 +58,11 @@
           "title": "External ID",
           "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",
           "type": "string"
+        },
+        "xdm:externalKey": {
+          "title": "External Key",
+          "description": "External unique identifier to the source used for auditing.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         }
       }
     }

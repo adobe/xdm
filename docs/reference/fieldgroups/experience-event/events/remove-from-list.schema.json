@@ -29,6 +29,11 @@
                             "title": "List ID",
                             "type": "string",
                             "description": "Unique ID of the Marketing List."
+                        },
+                        "xdm:listKey": {
+                            "title": "List Key",
+                            "description": "Unique composite identifier of the Marketing List.",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                         }
                     }
                 }

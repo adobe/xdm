@@ -24,6 +24,11 @@
                     "description": "Unique identifer for campaign.",
                     "type": "string"
                 },
+                "xdm:campaignKey": {
+                    "title": "Campaign Key",
+                    "description": "Unique composite identifier of the Campaign.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:campaignName": {
                     "title": "Campaign Name",
                     "description": "Friendly name for campaign.",

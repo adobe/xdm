@@ -15,6 +15,7 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 * XDM Business Campaign Members `https://ns.adobe.com/xdm/context/campaign-member`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [B2B Source](../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 ## XDM Business Campaign Members Example
@@ -43,9 +44,12 @@ An XDM Business Campaign Member,which relates members such as contact/lead to a 
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign Members (this schema) |
+| [xdm:campaignKey](#xdmcampaignkey) | B2B Source | Optional | XDM Business Campaign Members (this schema) |
 | [xdm:campaignMemberID](#xdmcampaignmemberid) | `string` | Optional | XDM Business Campaign Members (this schema) |
+| [xdm:campaignMemberKey](#xdmcampaignmemberkey) | B2B Source | Optional | XDM Business Campaign Members (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Campaign Members (this schema) |
+| [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Campaign Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -89,6 +93,25 @@ Campaign Unique Identifer.
 
 
 
+## xdm:campaignKey
+### Campaign Key
+
+Unique composite identifer of the campaign.
+
+`xdm:campaignKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:campaignKey Type
+
+
+* [B2B Source](../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:campaignMemberID
 ### Campaign Member ID
 
@@ -104,6 +127,25 @@ Campaign Member unique identifer.
 
 `string`
 
+
+
+
+
+
+## xdm:campaignMemberKey
+### Campaign Member Key
+
+Unique composite identifer of the campaign member.
+
+`xdm:campaignMemberKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:campaignMemberKey Type
+
+
+* [B2B Source](../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -143,6 +185,25 @@ Person unique identifier.
 
 `string`
 
+
+
+
+
+
+## xdm:personKey
+### Person Key
+
+Unique composite identifier of the person.
+
+`xdm:personKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:personKey Type
+
+
+* [B2B Source](../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

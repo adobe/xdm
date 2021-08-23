@@ -15,6 +15,7 @@ Members/Persons/Contacts etc. associated with a marketing list.
 * XDM Business Marketing List Members `https://ns.adobe.com/xdm/classes/marketing-list-member`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
@@ -32,8 +33,11 @@ Members/Persons/Contacts etc. associated with a marketing list.
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
+| [xdm:marketingListKey](#xdmmarketinglistkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | **Required** | XDM Business Marketing List Members (this schema) |
+| [xdm:marketingListMemberKey](#xdmmarketinglistmemberkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
+| [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -96,6 +100,25 @@ Unique ID for the marketing list this person is a member of.
 
 
 
+## xdm:marketingListKey
+### Marketing List Key
+
+Unique composite identifier of the Marketing List this person is a member of.
+
+`xdm:marketingListKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:marketingListKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:marketingListMemberID
 ### Marketing List Member ID
 
@@ -116,6 +139,25 @@ Unique ID for the membership of this person to this marketing list.
 
 
 
+## xdm:marketingListMemberKey
+### Marketing List Member Key
+
+Unique composite identifier of the membership of this person from the marketing list.
+
+`xdm:marketingListMemberKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:marketingListMemberKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:personID
 ### Person Identifier
 
@@ -131,6 +173,25 @@ Unique ID for the person who is a member of this marketing list.
 
 `string`
 
+
+
+
+
+
+## xdm:personKey
+### Person Key
+
+Unique composite identifier of the Person from the marketing list.
+
+`xdm:personKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:personKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

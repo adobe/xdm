@@ -26,6 +26,11 @@
                     "description": "Campaign unique identifer reference.",
                     "type": "string"
                 },
+                "xdm:campaignKey": {
+                    "title": "Campaign Key",
+                    "description": "Unique composite identifier of the Campaign.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:fiscalYear": {
                     "title": "Fiscal Year",
                     "description": "The fiscal year this opportunity is targeted.",

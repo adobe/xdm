@@ -41,6 +41,7 @@ Use to capture details when a person is added as a point of contact on a sales o
 |----------|------|----------|
 | `xdm:isPrimary`| boolean | Optional |
 | `xdm:opportunityID`| string | Optional |
+| `xdm:opportunityKey`|  | Optional |
 | `xdm:role`| string | Optional |
 
 
@@ -68,7 +69,7 @@ Boolean indicating if person is the primary contact on the Opportunity.
 #### xdm:opportunityID
 ##### Opportunity ID
 
-Unique ID of the Opportunity.
+Unique identifier of the Opportunity.
 
 `xdm:opportunityID`
 * is optional
@@ -79,6 +80,26 @@ Unique ID of the Opportunity.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:opportunityKey
+##### Opportunity Key
+
+Unique composite identifier of the Opportunity.
+
+`xdm:opportunityKey`
+* is optional
+* type: reference
+
+##### xdm:opportunityKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

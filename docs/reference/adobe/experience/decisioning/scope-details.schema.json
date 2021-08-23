@@ -55,6 +55,16 @@
                     "title": "Selected Experience Option",
                     "description": "The experience that was selected when the decision was made.",
                     "$ref": "#/definitions/experience-option-details"
+                },
+                "xdm:characteristics": {
+                    "title": "Scope Characteristics",
+                    "description": "Additional properties or attributes belonging to this particular decision scope.",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "string",
+                        "description": "Value of the property."
+                    }
                 }
             }
         },

@@ -54,6 +54,7 @@ Decision scope details capture properties that existed to narrow the scope of th
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:activity](#xdmactivity) | Decision Activity Details | Optional | Decision Scope Details (this schema) |
+| [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | Decision Scope Details (this schema) |
 | [xdm:decisionProvider](#xdmdecisionprovider) | `string` | Optional | Decision Scope Details (this schema) |
 | [xdm:experience](#xdmexperience) | complex | Optional | Decision Scope Details (this schema) |
 | [xdm:id](#xdmid) | `string` | Optional | Decision Scope Details (this schema) |
@@ -76,6 +77,30 @@ The activity that was a requested or chosen for this decision scope. Some scopes
 
 
 * [Decision Activity Details](activity-detail.schema.md) – `https://ns.adobe.com/experience/decisioning/activity-detail`
+
+
+
+
+
+## xdm:characteristics
+### Scope Characteristics
+
+Additional properties or attributes belonging to this particular decision scope.
+
+`xdm:characteristics`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:characteristics Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
 
 
 

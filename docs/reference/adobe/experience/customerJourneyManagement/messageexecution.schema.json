@@ -57,7 +57,10 @@
                     "title": "Message Type",
                     "type": "string",
                     "description": "Message Type, whether it's marketing or transactional message",
-                    "enum": ["marketing", "transactional"],
+                    "enum": [
+                        "marketing",
+                        "transactional"
+                    ],
                     "meta:enum": {
                         "marketing": "Marketing",
                         "transactional": "Transactional"

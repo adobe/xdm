@@ -42,7 +42,7 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageExecutionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageexecutionid) | `string` | **Required** | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessageid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagepublicationid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagetype) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagetype) | `enum` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID
@@ -180,29 +180,28 @@ The Publication ID of parent Message ID of a MessageExecution originating this m
 
 `string`
 
+
+
+
+
+
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType
 ### Message Type
 
-Message type of this message if it's marketing or transactional.
+Message Type, whether it's marketing or transactional message
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType`
 * is optional
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#messsageType-known-values).
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionmessagetype-known-values).
 
-##### messageType Known Values
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType Known Values
 | Value | Description |
 |-------|-------------|
 | `marketing` | Marketing |
 | `transactional` | Transactional |
-
-### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType Type
-
-
-`string`
-
 
 
 

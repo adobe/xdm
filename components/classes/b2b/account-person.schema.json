@@ -26,7 +26,7 @@
         },
         "xdm:accountPersonKey": {
           "title": "Account Person Key",
-          "description": "UUnique composite identifier for this relationship between an account and a person..",
+          "description": "Unique composite identifier for this relationship between an account and a person..",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:accountID": {

@@ -66,15 +66,15 @@
             "description": "Value of the property."
           }
         }
-      },
-      "experience-option-details": {
-        "properties": {
-          "xdm:id": {
-            "type": "string",
-            "format": "uri-reference",
-            "title": "Experience Identifier",
-            "description": "A unique identifier for the decision option."
-          }
+      }
+    },
+    "experience-option-details": {
+      "properties": {
+        "xdm:id": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Experience Identifier",
+          "description": "A unique identifier for the decision option."
         }
       }
     }

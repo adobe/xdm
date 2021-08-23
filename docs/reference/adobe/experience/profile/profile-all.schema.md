@@ -71,6 +71,22 @@ Adobe Unified Profile Service required fields for the Profile Union.
         "xdm:status": "exited"
       }
     }
+  },
+  "xdm:consentPolicies": {
+    "exampleConsentPolicy1": {},
+    "exampleConsentPolicy2": {
+      "Email": [
+        "personal.email1@gmail.com",
+        "work.email1@adobe.com",
+        "personal.email2@gmail.com"
+      ]
+    },
+    "exampleConsentPolicy3": {
+      "AAID": [
+        "92312748749128",
+        "30453470347"
+      ]
+    }
   }
 }
 ```
@@ -80,6 +96,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/profile/associatedIdentities](#httpsnsadobecomexperienceprofileassociatedidentities) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
+| [https://ns.adobe.com/experience/profile/consentPolicies](#httpsnsadobecomexperienceprofileconsentpolicies) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/identityNamespaces](#httpsnsadobecomexperienceprofileidentitynamespaces) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
@@ -98,6 +115,28 @@ Adobe Unified Profile Service required fields for the Profile Union.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/profile/associatedIdentities Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
+## https://ns.adobe.com/experience/profile/consentPolicies
+### Consent policies map
+
+`https://ns.adobe.com/experience/profile/consentPolicies`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/profile/consentPolicies Type
 
 
 `object` with following properties:

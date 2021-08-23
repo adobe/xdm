@@ -1,7 +1,7 @@
 {
   "@id": "0000-0000-0000-0000",
+  "xdm:timestamp": "2021-06-26T15:52:25+00:00",
   "xdm:directMarketing": {
-    "xdm:timestamp": "2021-06-26T15:52:25+00:00",
     "xdm:campaignId": "100",
     "xdm:campaignName": "JS - Offer Management",
     "xdm:broadlogId": "102",
@@ -11,6 +11,6 @@
     "xdm:deliveryName": "JS - Offer Management Delivery",
     "xdm:quarantine": "0",
     "xdm:controlGroupMember": "1",
-  }m
+  },
   "xdm:eventType": "sent"
 }

@@ -33,40 +33,60 @@ Tracks a user's travel preferences, including home airport code, meal preference
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:crib](#xdmcrib) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:earlyCheckIn](#xdmearlycheckin) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:foamPillows](#xdmfoampillows) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:gym](#xdmgym) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:hasRestaurant](#xdmhasrestaurant) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:manualTransmission](#xdmmanualtransmission) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:meal](#xdmmeal) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:medicalAlerts](#xdmmedicalalerts) | `string` | Optional | Travel Preferences (this schema) |
-| [xdm:pool](#xdmpool) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:preferredDepartureAirportCode](#xdmpreferreddepartureairportcode) | `string` | Optional | Travel Preferences (this schema) |
-| [xdm:rollAwayBed](#xdmrollawaybed) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:roomService](#xdmroomservice) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:roomType](#xdmroomtype) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:seat](#xdmseat) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:seatSection ](#xdmseatsection) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:smokingRoom](#xdmsmokingroom) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:smokingVehicle](#xdmsmokingvehicle) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:ticketDelivery](#xdmticketdelivery) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:vehicleType](#xdmvehicletype) | `enum` | Optional | Travel Preferences (this schema) |
-| [xdm:visuallyImpairedAccessible](#xdmvisuallyimpairedaccessible) | `boolean` | Optional | Travel Preferences (this schema) |
-| [xdm:wheelchairAccessible](#xdmwheelchairaccessible) | `boolean` | Optional | Travel Preferences (this schema) |
+| [xdm:travelPreferences](#xdmtravelpreferences) | `object` | Optional | Travel Preferences (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:crib
-### Crib
+## xdm:travelPreferences
+
+Captures details related to the users's travel preferences.
+
+`xdm:travelPreferences`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:travelPreferences Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:crib`| boolean | Optional |
+| `xdm:earlyCheckIn`| boolean | Optional |
+| `xdm:foamPillows`| boolean | Optional |
+| `xdm:gym`| boolean | Optional |
+| `xdm:hasRestaurant`| boolean | Optional |
+| `xdm:manualTransmission`| boolean | Optional |
+| `xdm:meal`| string | Optional |
+| `xdm:medicalAlerts`| string | Optional |
+| `xdm:pool`| boolean | Optional |
+| `xdm:preferredDepartureAirportCode`| string | Optional |
+| `xdm:rollAwayBed`| boolean | Optional |
+| `xdm:roomService`| boolean | Optional |
+| `xdm:roomType`| string | Optional |
+| `xdm:seat`| string | Optional |
+| `xdm:seatSection `| string | Optional |
+| `xdm:smokingRoom`| boolean | Optional |
+| `xdm:smokingVehicle`| boolean | Optional |
+| `xdm:ticketDelivery`| string | Optional |
+| `xdm:vehicleType`| string | Optional |
+| `xdm:visuallyImpairedAccessible`| boolean | Optional |
+| `xdm:wheelchairAccessible`| boolean | Optional |
+
+
+
+#### xdm:crib
+##### Crib
 
 Captures if the user requires a crib.
 
 `xdm:crib`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:crib Type
+##### xdm:crib Type
 
 
 `boolean`
@@ -75,17 +95,18 @@ Captures if the user requires a crib.
 
 
 
-## xdm:earlyCheckIn
-### Early Check-In
+
+
+#### xdm:earlyCheckIn
+##### Early Check-In
 
 Flags if the user prefers a lodging property with early check-in available.
 
 `xdm:earlyCheckIn`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:earlyCheckIn Type
+##### xdm:earlyCheckIn Type
 
 
 `boolean`
@@ -94,17 +115,18 @@ Flags if the user prefers a lodging property with early check-in available.
 
 
 
-## xdm:foamPillows
-### Foam Pillows
+
+
+#### xdm:foamPillows
+##### Foam Pillows
 
 Captures if the user prefers foam pillows.
 
 `xdm:foamPillows`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:foamPillows Type
+##### xdm:foamPillows Type
 
 
 `boolean`
@@ -113,17 +135,18 @@ Captures if the user prefers foam pillows.
 
 
 
-## xdm:gym
-### Gym
+
+
+#### xdm:gym
+##### Gym
 
 Flags if the user prefers a lodging property with a gym/fitness room.
 
 `xdm:gym`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:gym Type
+##### xdm:gym Type
 
 
 `boolean`
@@ -132,17 +155,18 @@ Flags if the user prefers a lodging property with a gym/fitness room.
 
 
 
-## xdm:hasRestaurant
-### Has Restaurant
+
+
+#### xdm:hasRestaurant
+##### Has Restaurant
 
 Flags if the user prefers a lodging property with a restaurant.
 
 `xdm:hasRestaurant`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:hasRestaurant Type
+##### xdm:hasRestaurant Type
 
 
 `boolean`
@@ -151,17 +175,18 @@ Flags if the user prefers a lodging property with a restaurant.
 
 
 
-## xdm:manualTransmission
-### Manual Transmission
+
+
+#### xdm:manualTransmission
+##### Manual Transmission
 
 Records if a user prefers a manual transmission instead of an automatic transmission.
 
 `xdm:manualTransmission`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:manualTransmission Type
+##### xdm:manualTransmission Type
 
 
 `boolean`
@@ -170,19 +195,20 @@ Records if a user prefers a manual transmission instead of an automatic transmis
 
 
 
-## xdm:meal
-### Meal
+
+
+#### xdm:meal
+##### Meal
 
 Tracks the user's meal preference, if provided.
 
 `xdm:meal`
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmmeal-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:meal Known Values
+##### xdm:meal Known Values
 | Value | Description |
 |-------|-------------|
 | `regularMeal` |  |
@@ -208,17 +234,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:medicalAlerts
-### Medical Alerts
+
+
+#### xdm:medicalAlerts
+##### Medical Alerts
 
 Captures any medical alerts for the user.
 
 `xdm:medicalAlerts`
 * is optional
 * type: `string`
-* defined in this schema
 
-### xdm:medicalAlerts Type
+##### xdm:medicalAlerts Type
 
 
 `string`
@@ -228,17 +255,18 @@ Captures any medical alerts for the user.
 
 
 
-## xdm:pool
-### Pool
+
+
+#### xdm:pool
+##### Pool
 
 Flags if the user prefers a lodging property with a swimming pool.
 
 `xdm:pool`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:pool Type
+##### xdm:pool Type
 
 
 `boolean`
@@ -247,17 +275,18 @@ Flags if the user prefers a lodging property with a swimming pool.
 
 
 
-## xdm:preferredDepartureAirportCode
-### Preferred Departure Airport Code
+
+
+#### xdm:preferredDepartureAirportCode
+##### Preferred Departure Airport Code
 
 Records the user's preferred home/departure airport code.
 
 `xdm:preferredDepartureAirportCode`
 * is optional
 * type: `string`
-* defined in this schema
 
-### xdm:preferredDepartureAirportCode Type
+##### xdm:preferredDepartureAirportCode Type
 
 
 `string`
@@ -274,17 +303,18 @@ All instances must conform to this regular expression
 
 
 
-## xdm:rollAwayBed
-### Roll Away Bed
+
+
+#### xdm:rollAwayBed
+##### Roll Away Bed
 
 Captures if the user requires a rollaway bed.
 
 `xdm:rollAwayBed`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:rollAwayBed Type
+##### xdm:rollAwayBed Type
 
 
 `boolean`
@@ -293,17 +323,18 @@ Captures if the user requires a rollaway bed.
 
 
 
-## xdm:roomService
-### Room Service
+
+
+#### xdm:roomService
+##### Room Service
 
 Flags if the user prefers a lodging property with room service available.
 
 `xdm:roomService`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:roomService Type
+##### xdm:roomService Type
 
 
 `boolean`
@@ -312,19 +343,20 @@ Flags if the user prefers a lodging property with room service available.
 
 
 
-## xdm:roomType
-### Room Type
+
+
+#### xdm:roomType
+##### Room Type
 
 Tracks the user's preferred room type.
 
 `xdm:roomType`
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmroomtype-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:roomType Known Values
+##### xdm:roomType Known Values
 | Value | Description |
 |-------|-------------|
 | `noPreference` |  |
@@ -338,19 +370,20 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:seat
-### Seat
+
+
+#### xdm:seat
+##### Seat
 
 Captures the user's preferred seat type for flights.
 
 `xdm:seat`
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmseat-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:seat Known Values
+##### xdm:seat Known Values
 | Value | Description |
 |-------|-------------|
 | `noPreference` |  |
@@ -361,19 +394,20 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:seatSection 
-### Seat Section
+
+
+#### xdm:seatSection 
+##### Seat Section
 
 Captures the user's preferred seat sectionfor flights.
 
 `xdm:seatSection `
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmseatsection-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:seatSection  Known Values
+##### xdm:seatSection  Known Values
 | Value | Description |
 |-------|-------------|
 | `noPreference` |  |
@@ -385,17 +419,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:smokingRoom
-### Smoking Room
+
+
+#### xdm:smokingRoom
+##### Smoking Room
 
 Flags if the user prefers a smoking room.
 
 `xdm:smokingRoom`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:smokingRoom Type
+##### xdm:smokingRoom Type
 
 
 `boolean`
@@ -404,17 +439,18 @@ Flags if the user prefers a smoking room.
 
 
 
-## xdm:smokingVehicle
-### Smoking Vehicle
+
+
+#### xdm:smokingVehicle
+##### Smoking Vehicle
 
 Flags if the user prefers a smoking vehicle.
 
 `xdm:smokingVehicle`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:smokingVehicle Type
+##### xdm:smokingVehicle Type
 
 
 `boolean`
@@ -423,19 +459,20 @@ Flags if the user prefers a smoking vehicle.
 
 
 
-## xdm:ticketDelivery
-### Ticket Delivery
+
+
+#### xdm:ticketDelivery
+##### Ticket Delivery
 
 Defines the user's preferred ticket delivery method.
 
 `xdm:ticketDelivery`
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmticketdelivery-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:ticketDelivery Known Values
+##### xdm:ticketDelivery Known Values
 | Value | Description |
 |-------|-------------|
 | `eTicket` |  |
@@ -444,19 +481,20 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:vehicleType
-### Vehicle Type
+
+
+#### xdm:vehicleType
+##### Vehicle Type
 
 Records the user's vehicle type preference.
 
 `xdm:vehicleType`
 * is optional
 * type: `enum`
-* defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmvehicletype-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-### xdm:vehicleType Known Values
+##### xdm:vehicleType Known Values
 | Value | Description |
 |-------|-------------|
 | `miniCar` |  |
@@ -482,17 +520,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## xdm:visuallyImpairedAccessible
-### Visually Impaired Accessible
+
+
+#### xdm:visuallyImpairedAccessible
+##### Visually Impaired Accessible
 
 Tracks if the user requres a visually impaired accessible room.
 
 `xdm:visuallyImpairedAccessible`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:visuallyImpairedAccessible Type
+##### xdm:visuallyImpairedAccessible Type
 
 
 `boolean`
@@ -501,20 +540,26 @@ Tracks if the user requres a visually impaired accessible room.
 
 
 
-## xdm:wheelchairAccessible
-### Wheelchair Accessible
+
+
+#### xdm:wheelchairAccessible
+##### Wheelchair Accessible
 
 Tracks if the user requres a wheelchair accessible room.
 
 `xdm:wheelchairAccessible`
 * is optional
 * type: `boolean`
-* defined in this schema
 
-### xdm:wheelchairAccessible Type
+##### xdm:wheelchairAccessible Type
 
 
 `boolean`
+
+
+
+
+
 
 
 

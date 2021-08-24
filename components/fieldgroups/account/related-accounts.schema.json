@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
   "description": "An array of all related accounts linked to the primary account.",
   "definitions": {
     "related-account": {
@@ -22,14 +24,14 @@
           "type": "array",
           "items": {
             "type": "string"
-          },
-          "xdm:relatedAccountKeys": {
-            "title": "Related Account Keys",
-            "description": "An array of unique identifiers to any related accounts.",
-            "type": "array",
-            "items": {
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            }
+          }
+        },
+        "xdm:relatedAccountKeys": {
+          "title": "Related Account Keys",
+          "description": "An array of unique identifiers to any related accounts.",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
           }
         }
       }

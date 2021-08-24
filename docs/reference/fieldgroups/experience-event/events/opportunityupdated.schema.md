@@ -41,6 +41,7 @@ Use to capture details when the fields on a sales opportunity are updated.
 |----------|------|----------|
 | `xdm:dataValueChanges`| array | Optional |
 | `xdm:opportunityID`| string | Optional |
+| `xdm:opportunityKey`|  | Optional |
 
 
 
@@ -145,7 +146,7 @@ Previous value of updated attribute
 #### xdm:opportunityID
 ##### Opportunity ID
 
-Unique ID of the Opportunity
+Unique identifier of the Opportunity
 
 `xdm:opportunityID`
 * is optional
@@ -156,6 +157,26 @@ Unique ID of the Opportunity
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:opportunityKey
+##### Opportunity Key
+
+Unique composite identifier of the Opportunity.
+
+`xdm:opportunityKey`
+* is optional
+* type: reference
+
+##### xdm:opportunityKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

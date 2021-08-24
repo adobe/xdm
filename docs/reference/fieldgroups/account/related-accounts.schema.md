@@ -30,8 +30,35 @@ An array of all related accounts linked to the primary account.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:relatedAccountKeys](#xdmrelatedaccountkeys) | B2B Source | Optional | XDM Related Business Accounts (this schema) |
 | [xdm:relatedAccounts](#xdmrelatedaccounts) | `string[]` | Optional | XDM Related Business Accounts (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:relatedAccountKeys
+### Related Account Keys
+
+An array of unique identifiers to any related accounts.
+
+`xdm:relatedAccountKeys`
+* is optional
+* type: B2B Source
+
+* defined in this schema
+
+### xdm:relatedAccountKeys Type
+
+
+Array type: B2B Source
+
+All items must be of the type:
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
+
+
 
 ## xdm:relatedAccounts
 ### Related Accounts

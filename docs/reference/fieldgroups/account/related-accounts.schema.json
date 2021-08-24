@@ -24,14 +24,14 @@
                     "type": "array",
                     "items": {
                         "type": "string"
-                    },
-                    "xdm:relatedAccountKeys": {
-                        "title": "Related Account Keys",
-                        "description": "An array of unique identifiers to any related accounts.",
-                        "type": "array",
-                        "items": {
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-                        }
+                    }
+                },
+                "xdm:relatedAccountKeys": {
+                    "title": "Related Account Keys",
+                    "description": "An array of unique identifiers to any related accounts.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                     }
                 }
             }

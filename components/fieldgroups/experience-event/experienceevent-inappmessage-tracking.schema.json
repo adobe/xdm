@@ -16,14 +16,14 @@
     "experienceevent-inappmessage-tracking": {
       "properties": {
         "xdm:inappMessageTracking": {
-          "title": "Inapp message interaction tracking details",
+          "title": "Inapp Message Interaction Tracking Details",
           "type": "object",
           "description": "Describes interaction with an inapp message.",
           "properties": {
             "xdm:action": {
-              "title": "custom action",
+              "title": "Custom Action",
               "type": "string",
-              "description": "identifier for custom action that the user triggered while interacting with the inapp message"
+              "description": "Identifier for custom action that the user triggered while interacting with the inapp message."
             }
           }
         }

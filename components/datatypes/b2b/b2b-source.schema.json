@@ -15,20 +15,25 @@
   "definitions": {
     "b2b-source": {
       "properties": {
-        "xdm:systemID": {
-          "title": "System ID",
+        "xdm:sourceType": {
+          "title": "Source Type",
           "type": "string",
-          "description": "This is an identifier for the source system itself and potentially includes the object type."
+          "description": "Instance or Organization Id of the source data."
         },
-        "xdm:ID": {
-          "title": "ID",
+        "xdm:sourceInstanceID": {
+          "title": "Source Instance ID",
           "type": "string",
-          "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc."
+          "description": "Name of the platform with the source data."
         },
-        "xdm:key": {
-          "title": "System Key",
-          "description": "This is concatination of systemId and id. The concatenated value is created by the connector in the data pipe, so it’s already in the source.",
-          "type": "string"
+        "xdm:sourceID": {
+          "title": "Source ID",
+          "type": "string",
+          "description": "Identifier of the record from the source data."
+        },
+        "xdm:sourceKey": {
+          "title": "Source Key",
+          "type": "string",
+          "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId."
         }
       }
     }
@@ -41,6 +46,6 @@
       "$ref": "#/definitions/b2b-source"
     }
   ],
-  "meta:status": "deprecated",
+  "meta:status": "experimental",
   "meta:createdDate": "2021-02-19"
 }

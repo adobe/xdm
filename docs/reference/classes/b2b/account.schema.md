@@ -15,6 +15,7 @@ An XDM Business Account.
 * XDM Business Account `https://ns.adobe.com/xdm/context/account`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
@@ -31,6 +32,7 @@ An XDM Business Account.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | **Required** | XDM Business Account (this schema) |
+| [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Account (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -70,6 +72,25 @@ Unique ID for the account.
 
 `string`
 
+
+
+
+
+
+## xdm:accountKey
+### Account Key
+
+Unique composite key identifier for the Account.
+
+`xdm:accountKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:accountKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

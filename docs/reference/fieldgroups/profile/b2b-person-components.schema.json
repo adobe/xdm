@@ -74,6 +74,26 @@
                                 "title": "Person Group ID",
                                 "description": "Group identifier for the person.",
                                 "type": "string"
+                            },
+                            "xdm:sourcePersonKey": {
+                                "title": "Source Person Key",
+                                "description": "Unique identifier of the Person.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceAccountKey": {
+                                "title": "Source Account Key",
+                                "description": "Unique identifier of the Account.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceConvertedContactKey": {
+                                "title": "Source Converted Contact Key",
+                                "description": "Unique identifier of the Contact if the lead was converted.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            },
+                            "xdm:sourceExternalKey": {
+                                "title": "Source External Key",
+                                "description": "External unique identifier of the source.",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                             }
                         }
                     }

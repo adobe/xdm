@@ -73,9 +73,9 @@
     "meta:descriptionId": "person-name##description",
     "examples": [
         {
-            "xdm:firstName": "张",
-            "xdm:lastName": "三",
-            "xdm:fullName": "张三"
+            "xdm:firstName": "فلانة",
+            "xdm:lastName": "الفلانية",
+            "xdm:fullName": "فلانة الفلانية"
         },
         {
             "xdm:firstName": "John",
@@ -84,9 +84,9 @@
             "xdm:fullName": "John S. Doe"
         },
         {
-            "xdm:firstName": "فلانة",
-            "xdm:lastName": "الفلانية",
-            "xdm:fullName": "فلانة الفلانية"
+            "xdm:firstName": "张",
+            "xdm:lastName": "三",
+            "xdm:fullName": "张三"
         }
     ]
 }

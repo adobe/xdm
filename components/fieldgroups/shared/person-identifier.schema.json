@@ -18,6 +18,11 @@
           "title": "Person ID",
           "description": "Person unique identifier.",
           "type": "string"
+        },
+        "xdm:personKey": {
+          "title": "Person Key",
+          "description": "Unique composite identifier of the Person.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         }
       }
     }

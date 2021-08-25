@@ -25,7 +25,7 @@
         "https://ns.adobe.com/experience/internal/ml/companyWebsite": {
           "title": "Company Website",
           "type": "string",
-		  "format": "url",
+          "format": "url",
           "description": "Algorithmically assigned company website for a person."
         }
       }

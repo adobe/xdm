@@ -56,6 +56,5 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListID"],
   "meta:status": "experimental"
 }

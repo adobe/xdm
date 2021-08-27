@@ -22,37 +22,51 @@
         "xdm:color": {
           "title": "Color",
           "type": "string",
-          "description": "Captures the color of the vehicle."
+          "description": "Captures the color of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:color##title##94831",
+          "meta:descriptionId": "vehicle-product##xdm:color##description##45861"
         },
         "xdm:inventoryType": {
           "title": "Inventory Type",
           "enum": ["new", "used", "certified preowned"],
-          "description": "Captures the inventory type of the vehicle."
+          "description": "Captures the inventory type of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:inventoryType##title##35721",
+          "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##79001"
         },
         "xdm:luggageCapacity": {
           "title": "Luggage Capacity",
           "type": "integer",
-          "description": "Number of pieces of luggage that fit in the vehicle."
+          "description": "Number of pieces of luggage that fit in the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:luggageCapacity##title##87781",
+          "meta:descriptionId": "vehicle-product##xdm:luggageCapacity##description##52361"
         },
         "xdm:make": {
           "title": "Make",
           "type": "string",
-          "description": "Captures the make of the vehicle."
+          "description": "Captures the make of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:make##title##53621",
+          "meta:descriptionId": "vehicle-product##xdm:make##description##76391"
         },
         "xdm:mileage": {
           "title": "Mileage",
           "type": "integer",
-          "description": "Captures the current mileage of a vehicle."
+          "description": "Captures the current mileage of a vehicle.",
+          "meta:titleId": "vehicle-product##xdm:mileage##title##46731",
+          "meta:descriptionId": "vehicle-product##xdm:mileage##description##73681"
         },
         "xdm:model": {
           "title": "Model",
           "type": "string",
-          "description": "Captures the model of the vehicle."
+          "description": "Captures the model of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:model##title##81601",
+          "meta:descriptionId": "vehicle-product##xdm:model##description##52261"
         },
         "xdm:numberOfDoors": {
           "title": "Number of Doors",
           "type": "integer",
-          "description": "How many operating doors the vehicle has."
+          "description": "How many operating doors the vehicle has.",
+          "meta:titleId": "vehicle-product##xdm:numberOfDoors##title##50661",
+          "meta:descriptionId": "vehicle-product##xdm:numberOfDoors##description##53511"
         },
         "xdm:options": {
           "title": "Options",
@@ -60,60 +74,86 @@
           "items": {
             "type": "string"
           },
-          "description": "Captures an array of strings detailing vehicle options, such as heated seats, moonroof, navigation system, manual transmission, etc."
+          "description": "Captures an array of strings detailing vehicle options, such as heated seats, moonroof, navigation system, manual transmission, etc.",
+          "meta:titleId": "vehicle-product##xdm:options##title##78671",
+          "meta:descriptionId": "vehicle-product##xdm:options##description##43081"
         },
         "xdm:ownership": {
           "title": "Ownership",
           "type": "string",
-          "description": "Parent company of the vehicle."
+          "description": "Parent company of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:ownership##title##45861",
+          "meta:descriptionId": "vehicle-product##xdm:ownership##description##3461"
         },
         "xdm:passengerCapacity": {
           "title": "Passenger Capacity",
           "type": "integer",
-          "description": "Number of passengers that fit in the vehicle."
+          "description": "Number of passengers that fit in the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:passengerCapacity##title##50471",
+          "meta:descriptionId": "vehicle-product##xdm:passengerCapacity##description##95361"
         },
         "xdm:postalCode": {
           "title": "Postal Code",
           "type": "string",
-          "description": "Captures the postal code where the vehicle resides."
+          "description": "Captures the postal code where the vehicle resides.",
+          "meta:titleId": "vehicle-product##xdm:postalCode##title##79611",
+          "meta:descriptionId": "vehicle-product##xdm:postalCode##description##12071"
         },
         "xdm:starRating": {
           "title": "Star Rating",
           "type": "integer",
-          "description": "Star rating associated with the vehicle."
+          "description": "Star rating associated with the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:starRating##title##15401",
+          "meta:descriptionId": "vehicle-product##xdm:starRating##description##15071"
         },
         "xdm:style": {
           "title": "Style",
           "type": "string",
-          "description": "Captures the style of the vehicle, such as 2WD, 4WD, 2 Door Coupe, 4 Door Sedan, Convertible, etc."
+          "description": "Captures the style of the vehicle, such as 2WD, 4WD, 2 Door Coupe, 4 Door Sedan, Convertible, etc.",
+          "meta:titleId": "vehicle-product##xdm:style##title##46011",
+          "meta:descriptionId": "vehicle-product##xdm:style##description##31281"
         },
         "xdm:trim": {
           "title": "Trim",
           "type": "string",
-          "description": "Captures the trim level or series of the vehicle."
+          "description": "Captures the trim level or series of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:trim##title##89881",
+          "meta:descriptionId": "vehicle-product##xdm:trim##description##92911"
         },
         "xdm:vehicleCategory": {
           "title": "Vehicle Category",
           "type": "string",
-          "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc."
+          "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc.",
+          "meta:titleId": "vehicle-product##xdm:vehicleCategory##title##52691",
+          "meta:descriptionId": "vehicle-product##xdm:vehicleCategory##description##51461"
         },
         "xdm:vin": {
           "title": "Vehicle Identification Number",
           "type": "string",
-          "description": "Captures the vehicle identification number (VIN) of the vehicle."
+          "description": "Captures the vehicle identification number (VIN) of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:vin##title##32811",
+          "meta:descriptionId": "vehicle-product##xdm:vin##description##56961"
         },
         "xdm:year": {
           "title": "Year",
           "type": "integer",
-          "description": "Captures the model year of the vehicle."
+          "description": "Captures the model year of the vehicle.",
+          "meta:titleId": "vehicle-product##xdm:year##title##93641",
+          "meta:descriptionId": "vehicle-product##xdm:year##description##39591"
         }
       }
     }
   },
   "allOf": [
-    { "$ref": "https://ns.adobe.com/xdm/data/record" },
-    { "$ref": "#/definitions/vehicle-product" }
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/vehicle-product"
+    }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-04-06"
+  "meta:createdDate": "2021-04-06",
+  "meta:titleId": "vehicle-product##title##75981",
+  "meta:descriptionId": "vehicle-product##description##39991"
 }

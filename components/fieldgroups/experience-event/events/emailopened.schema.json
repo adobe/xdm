@@ -28,24 +28,33 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset."
+              "description": "Unique ID of the email asset.",
+              "meta:titleId": "emailopened##xdm:mailingID##title##45211",
+              "meta:descriptionId": "emailopened##xdm:mailingID##description##56001"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset."
+              "description": "Friendly name of the email asset.",
+              "meta:titleId": "emailopened##xdm:mailingName##title##16261",
+              "meta:descriptionId": "emailopened##xdm:mailingName##description##72921"
             },
             "xdm:testVariantID": {
               "title": "Test Variant ID",
               "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emailopened##xdm:testVariantID##title##89361",
+              "meta:descriptionId": "emailopened##xdm:testVariantID##description##21381"
             },
             "xdm:testVariantName": {
               "title": "Test Variant Name",
               "type": "string",
-              "description": "Friendly name of the test variant of the email asset."
+              "description": "Friendly name of the test variant of the email asset.",
+              "meta:titleId": "emailopened##xdm:testVariantName##title##16981",
+              "meta:descriptionId": "emailopened##xdm:testVariantName##description##54421"
             }
-          }
+          },
+          "meta:titleId": "emailopened##xdm:directMarketing##title##33671"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -55,7 +64,9 @@
             "xdm:operatingSystem": {
               "title": "Operating system",
               "type": "string",
-              "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'."
+              "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
+              "meta:titleId": "emailopened##xdm:operatingSystem##title##97371",
+              "meta:descriptionId": "emailopened##xdm:operatingSystem##description##71141"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -65,11 +76,17 @@
                 "xdm:userAgent": {
                   "title": "User agent",
                   "type": "string",
-                  "description": "The HTTP user-agent string from the client request."
+                  "description": "The HTTP user-agent string from the client request.",
+                  "meta:titleId": "emailopened##xdm:userAgent##title##48311",
+                  "meta:descriptionId": "emailopened##xdm:userAgent##description##61621"
                 }
-              }
+              },
+              "meta:titleId": "emailopened##xdm:browserDetails##title##3121",
+              "meta:descriptionId": "emailopened##xdm:browserDetails##description##25541"
             }
-          }
+          },
+          "meta:titleId": "emailopened##xdm:environment##title##6491",
+          "meta:descriptionId": "emailopened##xdm:environment##description##47571"
         },
         "xdm:device": {
           "title": "Device",
@@ -78,14 +95,19 @@
             "xdm:isMobileDevice": {
               "title": "Is Mobile Device",
               "type": "boolean",
-              "description": "Boolean that indicates if device used was a mobile device."
+              "description": "Boolean that indicates if device used was a mobile device.",
+              "meta:titleId": "emailopened##xdm:isMobileDevice##title##43561",
+              "meta:descriptionId": "emailopened##xdm:isMobileDevice##description##69261"
             },
             "xdm:model": {
               "title": "Model",
               "type": "string",
-              "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone."
+              "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+              "meta:titleId": "emailopened##xdm:model##title##40251",
+              "meta:descriptionId": "emailopened##xdm:model##description##89691"
             }
-          }
+          },
+          "meta:titleId": "emailopened##xdm:device##title##47281"
         }
       }
     }
@@ -96,5 +118,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "emailopened##title##41971",
+  "meta:descriptionId": "emailopened##description##32771"
 }

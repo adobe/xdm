@@ -28,12 +28,16 @@
             "xdm:opportunityID": {
               "title": "Opportunity ID",
               "type": "string",
-              "description": "Unique identifier of the Opportunity"
+              "description": "Unique identifier of the Opportunity",
+              "meta:titleId": "opportunityupdated##xdm:opportunityID##title##50421",
+              "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##15111"
             },
             "xdm:opportunityKey": {
               "title": "Opportunity Key",
               "description": "Unique composite identifier of the Opportunity.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "opportunityupdated##xdm:opportunityKey##title##46331",
+              "meta:descriptionId": "opportunityupdated##xdm:opportunityKey##description##82501"
             },
             "xdm:dataValueChanges": {
               "title": "Data Value Changes",
@@ -45,22 +49,31 @@
                   "xdm:attributeName": {
                     "title": "Attribute Name",
                     "type": "string",
-                    "description": "Attribute that was updated"
+                    "description": "Attribute that was updated",
+                    "meta:titleId": "opportunityupdated##xdm:attributeName##title##92581",
+                    "meta:descriptionId": "opportunityupdated##xdm:attributeName##description##71311"
                   },
                   "xdm:newValue": {
                     "title": "New Value",
                     "type": "string",
-                    "description": "New value of updated attribute"
+                    "description": "New value of updated attribute",
+                    "meta:titleId": "opportunityupdated##xdm:newValue##title##70611",
+                    "meta:descriptionId": "opportunityupdated##xdm:newValue##description##84691"
                   },
                   "xdm:oldValue": {
                     "title": "Old Value",
                     "type": "string",
-                    "description": "Previous value of updated attribute"
+                    "description": "Previous value of updated attribute",
+                    "meta:titleId": "opportunityupdated##xdm:oldValue##title##35221",
+                    "meta:descriptionId": "opportunityupdated##xdm:oldValue##description##61781"
                   }
                 }
-              }
+              },
+              "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##40451",
+              "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##41561"
             }
-          }
+          },
+          "meta:titleId": "opportunityupdated##xdm:opportunityEvent##title##46401"
         }
       }
     }
@@ -71,5 +84,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "opportunityupdated##title##50261",
+  "meta:descriptionId": "opportunityupdated##description##15121"
 }

@@ -20,18 +20,24 @@
         "xdm:productSKU": {
           "title": "Product SKU",
           "type": "string",
-          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor."
+          "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+          "meta:titleId": "product-identifiers##xdm:productSKU##title##57771",
+          "meta:descriptionId": "product-identifiers##xdm:productSKU##description##47951"
         },
         "xdm:productGTIN": {
           "title": "Product GTIN",
           "type": "string",
-          "description": "Global Trade Item Number of the product."
+          "description": "Global Trade Item Number of the product.",
+          "meta:titleId": "product-identifiers##xdm:productGTIN##title##401",
+          "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##98641"
         },
         "xdm:productImageURL": {
           "title": "Product Image URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL for the primary product image of the product."
+          "description": "The URL for the primary product image of the product.",
+          "meta:titleId": "product-identifiers##xdm:productImageURL##title##96371",
+          "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##64051"
         },
         "xdm:productSearchKeywords": {
           "title": "Product Search Keywords",
@@ -39,7 +45,9 @@
           "items": {
             "type": "string"
           },
-          "description": "The search keywords associated with the product."
+          "description": "The search keywords associated with the product.",
+          "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##40691",
+          "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##56401"
         }
       }
     }
@@ -50,5 +58,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-identifiers##title##19431",
+  "meta:descriptionId": "product-identifiers##description##43091"
 }

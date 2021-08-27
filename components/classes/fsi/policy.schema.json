@@ -22,34 +22,46 @@
           "title": "End Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date which the insurance policy coverage ended."
+          "description": "Date which the insurance policy coverage ended.",
+          "meta:titleId": "policy##xdm:endDate##title##12111",
+          "meta:descriptionId": "policy##xdm:endDate##description##47151"
         },
         "xdm:ID": {
           "title": "ID",
           "type": "string",
-          "description": "Unique insurance policy identifier."
+          "description": "Unique insurance policy identifier.",
+          "meta:titleId": "policy##xdm:ID##title##96111",
+          "meta:descriptionId": "policy##xdm:ID##description##45621"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "Insurance policy name."
+          "description": "Insurance policy name.",
+          "meta:titleId": "policy##xdm:name##title##34451",
+          "meta:descriptionId": "policy##xdm:name##description##58631"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date which the insurance policy coverage started."
+          "description": "Date which the insurance policy coverage started.",
+          "meta:titleId": "policy##xdm:startDate##title##61781",
+          "meta:descriptionId": "policy##xdm:startDate##description##27701"
         },
         "xdm:location": {
           "title": "Location",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Location in which the insurance policy is issued."
+          "description": "Location in which the insurance policy is issued.",
+          "meta:titleId": "policy##xdm:location##title##35161",
+          "meta:descriptionId": "policy##xdm:location##description##21331"
         },
         "xdm:type": {
           "title": "Type",
           "type": "string",
           "enum": ["home", "automobile", "renter", "boat"],
-          "description": "Type of insurance policy, such as home, automobile, renter, or boat."
+          "description": "Type of insurance policy, such as home, automobile, renter, or boat.",
+          "meta:titleId": "policy##xdm:type##title##16981",
+          "meta:descriptionId": "policy##xdm:type##description##42521"
         },
         "xdm:assignedBeneficiary": {
           "title": "Assigned Beneficiaries",
@@ -57,22 +69,30 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
           },
-          "description": "Captures the beneficiary(s) assigned to the policy."
+          "description": "Captures the beneficiary(s) assigned to the policy.",
+          "meta:titleId": "policy##xdm:assignedBeneficiary##title##47821",
+          "meta:descriptionId": "policy##xdm:assignedBeneficiary##description##47091"
         },
         "xdm:hasAssignedBeneficiary": {
           "title": "Has Assigned Beneficiary",
           "type": "boolean",
-          "description": "Flag determining if the account has a beneficiary assigned."
+          "description": "Flag determining if the account has a beneficiary assigned.",
+          "meta:titleId": "policy##xdm:hasAssignedBeneficiary##title##92751",
+          "meta:descriptionId": "policy##xdm:hasAssignedBeneficiary##description##41201"
         },
         "xdm:owner": {
           "title": "Owner",
           "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details",
-          "description": "Stores the policyholder's profile information. Extension of the personal profile details data type."
+          "description": "Stores the policyholder's profile information. Extension of the personal profile details data type.",
+          "meta:titleId": "policy##xdm:owner##title##14841",
+          "meta:descriptionId": "policy##xdm:owner##description##57591"
         },
         "xdm:benefitAmount": {
           "title": "Benefit Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "description": "The amount to be paid per the policy terms."
+          "description": "The amount to be paid per the policy terms.",
+          "meta:titleId": "policy##xdm:benefitAmount##title##6791",
+          "meta:descriptionId": "policy##xdm:benefitAmount##description##94871"
         }
       }
     }
@@ -86,5 +106,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "policy##title##85991",
+  "meta:descriptionId": "policy##description##99651"
 }

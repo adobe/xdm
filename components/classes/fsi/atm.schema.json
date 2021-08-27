@@ -22,22 +22,30 @@
         "xdm:isAtmActive": {
           "title": "Is ATM Active",
           "type": "boolean",
-          "description": "Yes/no if the ATM is currently active."
+          "description": "Yes/no if the ATM is currently active.",
+          "meta:titleId": "atm##xdm:isAtmActive##title##45381",
+          "meta:descriptionId": "atm##xdm:isAtmActive##description##45871"
         },
         "xdm:atmAddress": {
           "title": "ATM Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Physicial address where the ATM is located."
+          "description": "Physicial address where the ATM is located.",
+          "meta:titleId": "atm##xdm:atmAddress##title##93221",
+          "meta:descriptionId": "atm##xdm:atmAddress##description##22211"
         },
         "xdm:atmID": {
           "title": "ATM ID",
           "type": "string",
-          "description": "ID associated with the ATM."
+          "description": "ID associated with the ATM.",
+          "meta:titleId": "atm##xdm:atmID##title##85651",
+          "meta:descriptionId": "atm##xdm:atmID##description##56031"
         },
         "xdm:atmName": {
           "title": "ATM Name",
           "type": "string",
-          "description": "Name associated with the ATM."
+          "description": "Name associated with the ATM.",
+          "meta:titleId": "atm##xdm:atmName##title##44321",
+          "meta:descriptionId": "atm##xdm:atmName##description##1571"
         }
       }
     }
@@ -51,5 +59,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-11-19"
+  "meta:createdDate": "2020-11-19",
+  "meta:titleId": "atm##title##18971",
+  "meta:descriptionId": "atm##description##47581"
 }

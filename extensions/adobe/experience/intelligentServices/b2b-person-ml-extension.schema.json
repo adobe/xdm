@@ -25,7 +25,7 @@
         "https://ns.adobe.com/experience/intelligentServices/b2bPerson/companyWebsite": {
           "title": "Company Website",
           "type": "string",
-          "format": "url",
+          "format": "uri",
           "description": "Algorithmically assigned company website for a person."
         }
       }

@@ -54,7 +54,7 @@
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
           "title": "Offer details",
-          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message interaction."
         }
       }

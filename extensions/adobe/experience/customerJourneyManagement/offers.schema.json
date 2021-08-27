@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe CJM ExperienceEvent - Offer details",
   "description": "Details about offers associated with a message.",
@@ -14,28 +14,28 @@
   "definitions": {
     "offers": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": {
           "title": "Offer ID",
           "type": "string",
           "description": "Unique Identifier for Offer."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": {
           "title": "Placement ID",
           "type": "string",
           "description": "Unique Identifier for Offer Placement."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": {
           "title": "Proposition ID",
           "type": "string",
           "description": "Unique Identifier for Offer Proposition."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionTime": {
           "title": "Proposition Time",
           "type": "string",
           "description": "Time at which the Offer proposition was generated.",
           "meta:status": "deprecated"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": {
           "title": "Offer Count",
           "type": "integer",
           "description": "Count of offers included in the offer proposition."

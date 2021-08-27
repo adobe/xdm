@@ -24,6 +24,11 @@
           "description": "Unique ID of the marketing list.",
           "type": "string"
         },
+        "xdm:marketingListKey": {
+          "title": "Marketing List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        },
         "xdm:marketingListName": {
           "title": "Marketing List Name",
           "description": "Name of the marketing list.",
@@ -51,6 +56,5 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListID"],
   "meta:status": "experimental"
 }

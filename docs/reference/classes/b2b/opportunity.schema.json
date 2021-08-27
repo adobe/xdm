@@ -27,6 +27,11 @@
                     "description": "Unique ID of the opportunity.",
                     "type": "string"
                 },
+                "xdm:opportunityKey": {
+                    "title": "Opportunity Key",
+                    "description": "Unique composite identifier for the Opportunity.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:opportunityName": {
                     "title": "Opportunity Name",
                     "description": "Name of the opportunity.",
@@ -51,6 +56,11 @@
                     "title": "Account ID",
                     "description": "Unique ID of the account this opportunity is associated with.",
                     "type": "string"
+                },
+                "xdm:accountKey": {
+                    "title": "Account Key",
+                    "description": "Unique composite identifier of the account this opportunity is associated with.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 }
             }
         }
@@ -68,9 +78,6 @@
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
-    ],
-    "required": [
-        "xdm:opportunityID"
     ],
     "meta:status": "experimental",
     "examples": [

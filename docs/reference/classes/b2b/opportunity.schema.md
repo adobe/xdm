@@ -15,6 +15,7 @@ This class is used to capture minimum set of properties that define business opp
 * XDM Business Opportunity `https://ns.adobe.com/xdm/context/opportunity`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
@@ -35,9 +36,11 @@ This class is used to capture minimum set of properties that define business opp
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Opportunity (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:opportunityID](#xdmopportunityid) | `string` | **Required** | XDM Business Opportunity (this schema) |
+| [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity (this schema) |
+| [xdm:opportunityKey](#xdmopportunitykey) | B2B Source | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityName](#xdmopportunityname) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityStage](#xdmopportunitystage) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityType](#xdmopportunitytype) | `string` | Optional | XDM Business Opportunity (this schema) |
@@ -79,6 +82,25 @@ Unique ID of the account this opportunity is associated with.
 
 `string`
 
+
+
+
+
+
+## xdm:accountKey
+### Account Key
+
+Unique composite identifier of the account this opportunity is associated with.
+
+`xdm:accountKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:accountKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -129,7 +151,7 @@ Description of the opportunity.
 Unique ID of the opportunity.
 
 `xdm:opportunityID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -138,6 +160,25 @@ Unique ID of the opportunity.
 
 `string`
 
+
+
+
+
+
+## xdm:opportunityKey
+### Opportunity Key
+
+Unique composite identifier for the Opportunity.
+
+`xdm:opportunityKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:opportunityKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -14,6 +14,7 @@ External Source System Audit fields.
 
 * External Source System Audit Attributes `https://ns.adobe.com/xdm/common/external-source-system-audit`
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [B2B Source](../b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 ## External Source System Audit Attributes Example
@@ -36,6 +37,7 @@ External Source System Audit fields.
 | [xdm:createdBy](#xdmcreatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:createdDate](#xdmcreateddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:externalID](#xdmexternalid) | `string` | Optional | External Source System Audit Attributes (this schema) |
+| [xdm:externalKey](#xdmexternalkey) | B2B Source | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastReferencedDate](#xdmlastreferenceddate) | `string` | Optional | External Source System Audit Attributes (this schema) |
 | [xdm:lastUpdatedBy](#xdmlastupdatedby) | `string` | Optional | External Source System Audit Attributes (this schema) |
@@ -99,6 +101,25 @@ External unique identifier reference to external source to help identify and ded
 
 `string`
 
+
+
+
+
+
+## xdm:externalKey
+### External Key
+
+External unique identifier to the source used for auditing.
+
+`xdm:externalKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:externalKey Type
+
+
+* [B2B Source](../b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

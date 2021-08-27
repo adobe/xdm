@@ -62,6 +62,11 @@
                     "description": "",
                     "type": "string"
                 },
+                "xdm:acquiredByCampaignKey": {
+                    "title": "Acquired By Campaign Key",
+                    "description": "Unique composite identifier of the campaign where the person became a member",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
                 "xdm:hasReachedSuccess": {
                     "title": "Has Reached Success",
                     "description": "",

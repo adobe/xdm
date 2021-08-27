@@ -25,6 +25,11 @@
           "description": "Member type and associated reference ID.",
           "type": "string"
         },
+        "xdm:parentCampaignKey": {
+          "title": "Parent Campaign Key",
+          "description": "Unique composite identifier of the Parent Campaign of the campaign, used to show hierarchies.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        },
         "xdm:campaignStatus": {
           "title": "Campaign Status",
           "description": "",

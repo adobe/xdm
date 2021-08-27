@@ -28,7 +28,12 @@
                         "xdm:opportunityID": {
                             "title": "Opportunity ID",
                             "type": "string",
-                            "description": "Unique ID of the Opportunity"
+                            "description": "Unique identifier of the Opportunity"
+                        },
+                        "xdm:opportunityKey": {
+                            "title": "Opportunity Key",
+                            "description": "Unique composite identifier of the Opportunity.",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                         },
                         "xdm:dataValueChanges": {
                             "title": "Data Value Changes",

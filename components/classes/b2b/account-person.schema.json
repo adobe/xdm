@@ -21,18 +21,33 @@
       "properties": {
         "xdm:accountPersonID": {
           "title": "Account Person ID",
-          "description": "Unique ID for this relationship between an account and a person.",
+          "description": "Unique identifier for this relationship between an account and a person.",
           "type": "string"
+        },
+        "xdm:accountPersonKey": {
+          "title": "Account Person Key",
+          "description": "Unique composite identifier for this relationship between an account and a person.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:accountID": {
           "title": "Account ID",
-          "description": "Unique ID for the account in this account person relationship.",
+          "description": "Unique identifier for the account in this account person relationship.",
           "type": "string"
+        },
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite identifier for the account in this account person relationship.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Unique ID for the person in this account person relationship.",
+          "description": "Unique identifier for the person in this account person relationship.",
           "type": "string"
+        },
+        "xdm:personKey": {
+          "title": "Person Key",
+          "description": "Unique composite identifier for the person in this account person relationship.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:personRole": {
           "title": "Person Role",
@@ -87,6 +102,5 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:accountPersonID"],
   "meta:status": "experimental"
 }

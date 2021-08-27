@@ -55,6 +55,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
           "title": "Offer details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
+          "type": "object",
           "description": "Describes offer(s) involved in a message interaction.",
           "properties": {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": {

@@ -39,7 +39,7 @@ This class is used to capture minimum set of properties that define business opp
 | [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Opportunity (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:opportunityDescription](#xdmopportunitydescription) | `string` | Optional | XDM Business Opportunity (this schema) |
-| [xdm:opportunityID](#xdmopportunityid) | `string` | **Required** | XDM Business Opportunity (this schema) |
+| [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityKey](#xdmopportunitykey) | B2B Source | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityName](#xdmopportunityname) | `string` | Optional | XDM Business Opportunity (this schema) |
 | [xdm:opportunityStage](#xdmopportunitystage) | `string` | Optional | XDM Business Opportunity (this schema) |
@@ -151,7 +151,7 @@ Description of the opportunity.
 Unique ID of the opportunity.
 
 `xdm:opportunityID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

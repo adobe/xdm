@@ -22,18 +22,33 @@
       "properties": {
         "xdm:opportunityPersonID": {
           "title": "Opportunity Person ID",
-          "description": "Unique ID for the relationship between the opportunity and the person.",
+          "description": "Unique identifier for the relationship between the opportunity and the person.",
           "type": "string"
+        },
+        "xdm:opportunityPersonKey": {
+          "title": "Opportunity Person Key",
+          "description": "Unique composite identifier of the relationship between the Opportunity and the Person.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:opportunityID": {
           "title": "Opportunity ID",
-          "description": "Unique ID for the opportunity in this opportunity person relationship.",
+          "description": "Unique identifier for the opportunity in this opportunity person relationship.",
           "type": "string"
+        },
+        "xdm:opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity in this opportunity person relationship.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Unique ID for the person in this opportunity person relationship.",
+          "description": "Unique identifier for the person in this opportunity person relationship.",
           "type": "string"
+        },
+        "xdm:personKey": {
+          "title": "Person Key",
+          "description": "Unique composite identifier of the Person related to the Opportunity.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         },
         "xdm:personRole": {
           "title": "Person Role",

@@ -16,6 +16,7 @@ This class is used to capture minimum properties that are required to define xdm
   * [Extensibility base schema](../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
   * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
+  * [B2B Source](../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 ## XDM Business Campaign Example
@@ -30,6 +31,7 @@ This class is used to capture minimum properties that are required to define xdm
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:campaignDescription](#xdmcampaigndescription) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional | XDM Business Campaign (this schema) |
+| [xdm:campaignKey](#xdmcampaignkey) | B2B Source | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignName](#xdmcampaignname) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:campaignType](#xdmcampaigntype) | `string` | Optional | XDM Business Campaign (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
@@ -91,6 +93,25 @@ Unique identifer for campaign.
 
 `string`
 
+
+
+
+
+
+## xdm:campaignKey
+### Campaign Key
+
+Unique composite identifier of the Campaign.
+
+`xdm:campaignKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:campaignKey Type
+
+
+* [B2B Source](../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

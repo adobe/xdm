@@ -22,15 +22,30 @@
           "description": "Campaign Member unique identifer.",
           "type": "string"
         },
+        "xdm:campaignMemberKey": {
+          "title": "Campaign Member Key",
+          "description": "Unique composite identifer of the campaign member.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        },
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Campaign Unique Identifer.",
           "type": "string"
         },
+        "xdm:campaignKey": {
+          "title": "Campaign Key",
+          "description": "Unique composite identifer of the campaign.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Person unique identifier.",
           "type": "string"
+        },
+        "xdm:personKey": {
+          "title": "Person Key",
+          "description": "Unique composite identifier of the person.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         }
       }
     }

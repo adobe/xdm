@@ -54,9 +54,13 @@ All items must be of the type:
 | `xdm:personStatus`| string | Optional |
 | `xdm:personType`| string | Optional |
 | `xdm:sourceAccountID`| string | Optional |
+| `xdm:sourceAccountKey`|  | Optional |
 | `xdm:sourceConvertedContactID`| string | Optional |
+| `xdm:sourceConvertedContactKey`|  | Optional |
 | `xdm:sourceExternalID`| string | Optional |
+| `xdm:sourceExternalKey`|  | Optional |
 | `xdm:sourcePersonID`| string | Optional |
+| `xdm:sourcePersonKey`|  | Optional |
 | `xdm:workEmail`|  | Optional |
 
 
@@ -187,6 +191,26 @@ Source account ID.
 
 
 
+#### xdm:sourceAccountKey
+##### Source Account Key
+
+Unique identifier of the Account.
+
+`xdm:sourceAccountKey`
+* is optional
+* type: reference
+
+##### xdm:sourceAccountKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
+
+
 #### xdm:sourceConvertedContactID
 ##### Source Converted Contact ID
 
@@ -201,6 +225,26 @@ Source converted contact ID.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:sourceConvertedContactKey
+##### Source Converted Contact Key
+
+Unique identifier of the Contact if the lead was converted.
+
+`xdm:sourceConvertedContactKey`
+* is optional
+* type: reference
+
+##### xdm:sourceConvertedContactKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -229,6 +273,26 @@ External source unique identifier at the source.
 
 
 
+#### xdm:sourceExternalKey
+##### Source External Key
+
+External unique identifier of the source.
+
+`xdm:sourceExternalKey`
+* is optional
+* type: reference
+
+##### xdm:sourceExternalKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
+
+
 #### xdm:sourcePersonID
 ##### Source Person ID
 
@@ -243,6 +307,26 @@ Source person ID.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:sourcePersonKey
+##### Source Person Key
+
+Unique identifier of the Person.
+
+`xdm:sourcePersonKey`
+* is optional
+* type: reference
+
+##### xdm:sourcePersonKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -15,6 +15,7 @@ XDM business account details.
 * XDM Business Account Details `https://ns.adobe.com/xdm/mixins/account-details`
   * [Postal address](../../datatypes/demographic/address.schema.md) `https://ns.adobe.com/xdm/common/address`
   * [Account Details](../../datatypes/b2b/account-organization.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [Phone number](../../datatypes/demographic/phonenumber.schema.md) `https://ns.adobe.com/xdm/context/phonenumber`
 
 
@@ -35,6 +36,7 @@ XDM business account details.
 | [xdm:accountOrganization](#xdmaccountorganization) | Account Details | Optional | XDM Business Account Details (this schema) |
 | [xdm:accountOwnership](#xdmaccountownership) | `string` | Optional | XDM Business Account Details (this schema) |
 | [xdm:accountParentID](#xdmaccountparentid) | `string` | Optional | XDM Business Account Details (this schema) |
+| [xdm:accountParentKey](#xdmaccountparentkey) | B2B Source | Optional | XDM Business Account Details (this schema) |
 | [xdm:accountPhone](#xdmaccountphone) | Phone number | Optional | XDM Business Account Details (this schema) |
 | [xdm:accountPhysicalAddress](#xdmaccountphysicaladdress) | Postal address | Optional | XDM Business Account Details (this schema) |
 | [xdm:accountScore](#xdmaccountscore) | `number` | Optional | XDM Business Account Details (this schema) |
@@ -196,6 +198,25 @@ Parent company for companies that are subsidiaries of a larger company or organi
 
 `string`
 
+
+
+
+
+
+## xdm:accountParentKey
+### Parent Account Key
+
+Unique identifier of the Parent Account of the account, used to show hierarchies or subsidiaries.
+
+`xdm:accountParentKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:accountParentKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -7,10 +7,10 @@
     "xdm:broadlogId": "102",
     "xdm:deliveryId": "103",
     "xdm:recipientId": "3",
-    "xdm:channel": "Email Channel",
+    "xdm:channel": "Email",
     "xdm:deliveryName": "JS - Offer Management Delivery",
     "xdm:quarantine": "0",
-    "xdm:controlGroupMember": "1",
+    "xdm:controlGroupMember": "true"
   },
-  "xdm:eventType": "sent"
+  "xdm:eventType": "directMarketing.emailDelivered"
 }

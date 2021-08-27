@@ -7,14 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/experienceevent-campaign-tracking-log",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Campaign Marketing Tracking Logs",
+  "title": "Campaign Tracking Logs",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
-  "description": "Campaign marketing events such as opens, clicks, sent, opt-out, links and impressions.",
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Campaign marketing events such as opens, clicks,links and impressions.",
   "definitions": {
     "experienceevent-campaignlog": {
       "properties": {
@@ -43,7 +41,7 @@
               "description": "A human-friendly identifier of the marketing campaign which is originating this message."
             },
             "xdm:broadlogId": {
-              "title": "Broad Log Identifier",
+              "title": "Delivery Log Identifier",
               "type": "string",
               "description": "Identifier of the marketing campaign delivery log this event belongs to."
             },
@@ -70,22 +68,7 @@
             "xdm:channel": {
               "title": "Channel",
               "type": "string",
-              "description": "Channel of the delivery.",
-              "meta:enum": {
-                "Email Channel": "Email",
-                "Mobile Channel (SMS)": "Mobile SMS",
-                "Telephone Channel": "Telephone",
-                "Direct Mail Channel": "Direct Mail",
-                "Fax Channel": "Fax",
-                "Facebook Channel": "Facebook",
-                "Twitter Channel": "Twitter",
-                "iOS Channel": "iOS",
-                "Android Channel": "Android",
-                "LINE Channel": "LINE",
-                "Other": "Other",
-                "Undefined": "Not Defined"
-              },
-              "default": "Undefined"
+              "description": "Channel of the delivery."
             },
             "xdm:deliveryName": {
               "title": "Delivery Name",

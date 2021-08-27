@@ -33,7 +33,7 @@ Marketing list allows you to prioritize on prospect clients who are most likely 
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:marketingListDescription](#xdmmarketinglistdescription) | `string` | Optional | XDM Business Marketing List (this schema) |
-| [xdm:marketingListID](#xdmmarketinglistid) | `string` | **Required** | XDM Business Marketing List (this schema) |
+| [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List (this schema) |
 | [xdm:marketingListKey](#xdmmarketinglistkey) | B2B Source | Optional | XDM Business Marketing List (this schema) |
 | [xdm:marketingListName](#xdmmarketinglistname) | `string` | Optional | XDM Business Marketing List (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -104,7 +104,7 @@ Description of the marketing list.
 Unique ID of the marketing list.
 
 `xdm:marketingListID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

@@ -31,7 +31,7 @@ An XDM Business Account.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
-| [xdm:accountID](#xdmaccountid) | `string` | **Required** | XDM Business Account (this schema) |
+| [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Account (this schema) |
 | [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Account (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -63,7 +63,7 @@ A unique identifier for the record.
 Unique ID for the account.
 
 `xdm:accountID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

@@ -32,7 +32,7 @@ This class is used to capture XDM business account person relationship attribute
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
-| [xdm:accountPersonID](#xdmaccountpersonid) | `string` | **Required** | XDM Business Account Person Relation (this schema) |
+| [xdm:accountPersonID](#xdmaccountpersonid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:accountPersonKey](#xdmaccountpersonkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
@@ -112,7 +112,7 @@ Unique composite identifier for the account in this account person relationship.
 Unique identifier for this relationship between an account and a person.
 
 `xdm:accountPersonID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

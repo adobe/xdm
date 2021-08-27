@@ -9,8 +9,8 @@
     "xdm:recipientId": "3",
     "xdm:channel": "Email",
     "xdm:deliveryName": "JS - Offer Management Delivery",
-    "xdm:quarantine": "false",
-    "xdm:controlGroupMember": "true"
+    "xdm:quarantine": false,
+    "xdm:controlGroupMember": true
   },
   "xdm:eventType": "directMarketing.emailDelivered"
 }

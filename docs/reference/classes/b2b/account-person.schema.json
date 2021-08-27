@@ -107,9 +107,6 @@
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
     ],
-    "required": [
-        "xdm:accountPersonID"
-    ],
     "meta:status": "experimental",
     "examples": [
         {

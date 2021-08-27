@@ -39,7 +39,7 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityKey](#xdmopportunitykey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
-| [xdm:opportunityPersonID](#xdmopportunitypersonid) | `string` | **Required** | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityPersonID](#xdmopportunitypersonid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityPersonKey](#xdmopportunitypersonkey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
@@ -150,7 +150,7 @@ Unique composite identifier of the Opportunity in this opportunity person relati
 Unique identifier for the relationship between the opportunity and the person.
 
 `xdm:opportunityPersonID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/intelligentServices/b2b-person-ml-extension",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "B2B Person Extension",
+  "title": "B2B Person ML/AI Extension",
   "description": "Captures B2B person properties populated by internal AEP services like ML/AI. These properties are consumed by end customers.",
   "type": "object",
   "meta:extensible": true,

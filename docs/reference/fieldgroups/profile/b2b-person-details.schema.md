@@ -245,14 +245,19 @@ Unknown type `object`.
     "xdm:name": {
       "title": "Assistant Name",
       "$ref": "https://ns.adobe.com/xdm/context/person-name",
-      "description": "Person's assistant full name."
+      "description": "Person's assistant full name.",
+      "meta:titleId": "profile-other-work-details##xdm:name##title##15041",
+      "meta:descriptionId": "profile-other-work-details##xdm:name##description##3791"
     },
     "xdm:phone": {
       "title": "Assistant Phone",
       "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-      "description": "Person's assistant phone number."
+      "description": "Person's assistant phone number.",
+      "meta:titleId": "profile-other-work-details##xdm:phone##title##18631",
+      "meta:descriptionId": "profile-other-work-details##xdm:phone##description##36581"
     }
   },
+  "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title##28991",
   "simpletype": "`object`"
 }
 ```

@@ -28,7 +28,9 @@
                 "xdm:personID": {
                     "title": "Person ID",
                     "description": "Unique identifier of Person/Profile fragment.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "profile##xdm:personID##title##86011",
+                    "meta:descriptionId": "profile##xdm:personID##description##63351"
                 }
             }
         }
@@ -49,6 +51,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "profile##title##50051",
+    "meta:descriptionId": "profile##description##93821",
     "examples": [
         {
             "xdm:identityMap": {

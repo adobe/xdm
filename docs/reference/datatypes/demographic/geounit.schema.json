@@ -18,12 +18,16 @@
                     "title": "Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The ID associated with this geographical unit."
+                    "description": "The ID associated with this geographical unit.",
+                    "meta:titleId": "geounit##@id##title##51091",
+                    "meta:descriptionId": "geounit##@id##description##65391"
                 },
                 "xdm:label": {
                     "title": "Label of the geographical unit.",
                     "type": "string",
-                    "description": "The user-friendly name for the geographical unit."
+                    "description": "The user-friendly name for the geographical unit.",
+                    "meta:titleId": "geounit##xdm:label##title##59821",
+                    "meta:descriptionId": "geounit##xdm:label##description##44081"
                 }
             },
             "required": [
@@ -38,6 +42,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "geounit##title##14981",
+    "meta:descriptionId": "geounit##description##60651",
     "examples": [
         {
             "@id": "https://data.adobe.io/geo-san-jose",

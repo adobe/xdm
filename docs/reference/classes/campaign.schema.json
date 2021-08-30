@@ -22,27 +22,37 @@
                 "xdm:campaignID": {
                     "title": "Campaign ID",
                     "description": "Unique identifer for campaign.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign##xdm:campaignID##title##8671",
+                    "meta:descriptionId": "campaign##xdm:campaignID##description##3621"
                 },
                 "xdm:campaignKey": {
                     "title": "Campaign Key",
                     "description": "Unique composite identifier of the Campaign.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "campaign##xdm:campaignKey##title##84181",
+                    "meta:descriptionId": "campaign##xdm:campaignKey##description##71261"
                 },
                 "xdm:campaignName": {
                     "title": "Campaign Name",
                     "description": "Friendly name for campaign.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign##xdm:campaignName##title##69701",
+                    "meta:descriptionId": "campaign##xdm:campaignName##description##30651"
                 },
                 "xdm:campaignType": {
                     "title": "Campaign Type",
                     "description": "The type of campaign for which audience gets selected.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign##xdm:campaignType##title##85141",
+                    "meta:descriptionId": "campaign##xdm:campaignType##description##99541"
                 },
                 "xdm:campaignDescription": {
                     "title": "Campaign Description",
                     "description": "Campaign description.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign##xdm:campaignDescription##title##30061",
+                    "meta:descriptionId": "campaign##xdm:campaignDescription##description##45101"
                 }
             }
         }
@@ -63,6 +73,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-09-29",
+    "meta:titleId": "campaign##title##74201",
+    "meta:descriptionId": "campaign##description##71341",
     "examples": [
         {}
     ]

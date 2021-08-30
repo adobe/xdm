@@ -36,6 +36,11 @@
     "examples": [
         {
             "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+                "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
+            }
+        },
+        {
+            "https://ns.adobe.com/experience/decisioning/profileConstraints": {
                 "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
                 "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
                     {
@@ -51,11 +56,6 @@
                         }
                     }
                 ]
-            }
-        },
-        {
-            "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-                "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
             }
         },
         {

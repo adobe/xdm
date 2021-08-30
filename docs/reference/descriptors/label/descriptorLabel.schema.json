@@ -47,7 +47,9 @@
                             }
                         }
                     },
-                    "meta:xdmType": "array"
+                    "meta:xdmType": "array",
+                    "meta:titleId": "descriptorLabel##xdm:labels##title##19191",
+                    "meta:descriptionId": "descriptorLabel##xdm:labels##description##23301"
                 }
             },
             "required": [
@@ -65,6 +67,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-06-10",
+    "meta:titleId": "descriptorLabel##title##74281",
+    "meta:descriptionId": "descriptorLabel##description##9621",
     "examples": [
         {
             "@type": "xdm:descriptorLabel",

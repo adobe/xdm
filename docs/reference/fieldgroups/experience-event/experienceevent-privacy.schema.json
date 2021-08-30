@@ -23,7 +23,8 @@
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/context/consentstring"
-                    }
+                    },
+                    "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title##80471"
                 }
             }
         }
@@ -38,6 +39,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "experienceevent-privacy##title##28881",
+    "meta:descriptionId": "experienceevent-privacy##description##13481",
     "examples": [
         {
             "xdm:consentStrings": [

@@ -30,28 +30,38 @@
                         "xdm:claim": {
                             "title": "Claim",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
-                            "description": "Extension of claim data type."
+                            "description": "Extension of claim data type.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:claim##title##86541",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:claim##description##13301"
                         },
                         "xdm:adjustorID": {
                             "title": "Adjustor ID",
                             "type": "string",
-                            "description": "Unique identifier for adjustor assigned to the claim."
+                            "description": "Unique identifier for adjustor assigned to the claim.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:adjustorID##title##96051",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:adjustorID##description##25601"
                         },
                         "xdm:policeReport": {
                             "title": "Police Report",
                             "type": "boolean",
-                            "description": "Flags whether or not a police report is available for the claim."
+                            "description": "Flags whether or not a police report is available for the claim.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:policeReport##title##70131",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:policeReport##description##93721"
                         },
                         "xdm:incidentDate": {
                             "title": "Incident Date",
                             "type": "string",
                             "format": "date-time",
-                            "description": "Date the claim incident occurred."
+                            "description": "Date the claim incident occurred.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:incidentDate##title##78781",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:incidentDate##description##73471"
                         },
                         "xdm:incidentLocation": {
                             "title": "Incident Location",
                             "$ref": "https://ns.adobe.com/xdm/common/address",
-                            "description": "Location where the claim incident occurred."
+                            "description": "Location where the claim incident occurred.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:incidentLocation##title##66281",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:incidentLocation##description##73521"
                         },
                         "xdm:type": {
                             "title": "Type",
@@ -83,9 +93,12 @@
                                 "flood": "Flood",
                                 "earthquake": "Earthquake"
                             },
-                            "description": "Type of claim submitted."
+                            "description": "Type of claim submitted.",
+                            "meta:titleId": "experienceevent-insurance-claim-details##xdm:type##title##86461",
+                            "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:type##description##14671"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-insurance-claim-details##xdm:insuranceClaim##description##14101"
                 }
             }
         }
@@ -96,6 +109,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "experienceevent-insurance-claim-details##title##37991",
+    "meta:descriptionId": "experienceevent-insurance-claim-details##description##71241",
     "examples": [
         {
             "xdm:insuranceClaim": {

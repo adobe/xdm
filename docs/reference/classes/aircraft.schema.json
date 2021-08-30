@@ -26,12 +26,16 @@
                 "xdm:tailNumber": {
                     "title": "Tail Number",
                     "type": "string",
-                    "description": "Captures the tail number (identification string) for the aircraft."
+                    "description": "Captures the tail number (identification string) for the aircraft.",
+                    "meta:titleId": "aircraft##xdm:tailNumber##title##19411",
+                    "meta:descriptionId": "aircraft##xdm:tailNumber##description##68341"
                 },
                 "xdm:aircraftType": {
                     "title": "Aircraft Type",
                     "type": "string",
-                    "description": "Records the aircraft type."
+                    "description": "Records the aircraft type.",
+                    "meta:titleId": "aircraft##xdm:aircraftType##title##48881",
+                    "meta:descriptionId": "aircraft##xdm:aircraftType##description##82021"
                 }
             }
         }
@@ -45,6 +49,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "aircraft##title##14491",
+    "meta:descriptionId": "aircraft##description##29181",
     "examples": [
         {
             "xdm:tailNumber": "N415OCA",

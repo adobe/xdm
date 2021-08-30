@@ -34,7 +34,7 @@ Members/Persons/Contacts etc. associated with a marketing list.
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:marketingListKey](#xdmmarketinglistkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
-| [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | **Required** | XDM Business Marketing List Members (this schema) |
+| [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:marketingListMemberKey](#xdmmarketinglistmemberkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
@@ -125,7 +125,7 @@ Unique composite identifier of the Marketing List this person is a member of.
 Unique ID for the membership of this person to this marketing list.
 
 `xdm:marketingListMemberID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 

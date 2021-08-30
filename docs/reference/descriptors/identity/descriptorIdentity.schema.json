@@ -21,12 +21,15 @@
                 "@type": {
                     "title": "Type",
                     "type": "string",
-                    "const": "xdm:descriptorIdentity"
+                    "const": "xdm:descriptorIdentity",
+                    "meta:titleId": "descriptorIdentity##@type##title##30911"
                 },
                 "xdm:namespace": {
                     "title": "Namespace",
                     "type": "string",
-                    "description": "Identity ID or Code."
+                    "description": "Identity ID or Code.",
+                    "meta:titleId": "descriptorIdentity##xdm:namespace##title##9041",
+                    "meta:descriptionId": "descriptorIdentity##xdm:namespace##description##75741"
                 },
                 "xdm:property": {
                     "title": "Property",
@@ -35,12 +38,16 @@
                     "enum": [
                         "xdm:id",
                         "xdm:code"
-                    ]
+                    ],
+                    "meta:titleId": "descriptorIdentity##xdm:property##title##51221",
+                    "meta:descriptionId": "descriptorIdentity##xdm:property##description##99291"
                 },
                 "xdm:isPrimary": {
                     "title": "Is primary key or not",
                     "type": "boolean",
-                    "description": "When present, only one field should be marked as the primary. Default is false."
+                    "description": "When present, only one field should be marked as the primary. Default is false.",
+                    "meta:titleId": "descriptorIdentity##xdm:isPrimary##title##45461",
+                    "meta:descriptionId": "descriptorIdentity##xdm:isPrimary##description##61691"
                 }
             },
             "required": [
@@ -60,6 +67,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "descriptorIdentity##title##41191",
+    "meta:descriptionId": "descriptorIdentity##description##43331",
     "examples": [
         {
             "@type": "xdm:descriptorIdentity",

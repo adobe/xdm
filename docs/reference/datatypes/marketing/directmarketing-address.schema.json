@@ -16,7 +16,9 @@
                 "xdm:errorCount": {
                     "title": "Address error count",
                     "type": "integer",
-                    "description": "Number of consecutive errors when sending to this address."
+                    "description": "Number of consecutive errors when sending to this address.",
+                    "meta:titleId": "directmarketing-address##xdm:errorCount##title##68861",
+                    "meta:descriptionId": "directmarketing-address##xdm:errorCount##description##19441"
                 },
                 "xdm:quality": {
                     "title": "Address quality",
@@ -29,7 +31,9 @@
                         "unknown_street": "Unknown street",
                         "partially_recognized_street": "Partially recognized street",
                         "fully_recognized_street": "Fully recognized street"
-                    }
+                    },
+                    "meta:titleId": "directmarketing-address##xdm:quality##title##25681",
+                    "meta:descriptionId": "directmarketing-address##xdm:quality##description##65391"
                 }
             }
         }
@@ -44,6 +48,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "directmarketing-address##title##17131",
+    "meta:descriptionId": "directmarketing-address##description##99181",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/address/123",

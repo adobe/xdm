@@ -21,7 +21,8 @@
                 "@type": {
                     "title": "Type",
                     "type": "string",
-                    "const": "xdm:alternateDisplayInfo"
+                    "const": "xdm:alternateDisplayInfo",
+                    "meta:titleId": "alternateDisplayInfo##@type##title##91231"
                 },
                 "xdm:title": {
                     "title": "Title",
@@ -31,7 +32,9 @@
                         ".+_.+": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "meta:titleId": "alternateDisplayInfo##xdm:title##title##36411",
+                    "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##6571"
                 },
                 "xdm:description": {
                     "title": "Description",
@@ -41,7 +44,9 @@
                         ".+_.+": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "meta:titleId": "alternateDisplayInfo##xdm:description##title##38411",
+                    "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##24891"
                 },
                 "xdm:note": {
                     "title": "Note",
@@ -51,7 +56,9 @@
                         ".+_.+": {
                             "type": "string"
                         }
-                    }
+                    },
+                    "meta:titleId": "alternateDisplayInfo##xdm:note##title##14851",
+                    "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##93701"
                 },
                 "meta:enum": {
                     "title": "Extended meta:enum values",
@@ -67,7 +74,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "meta:titleId": "alternateDisplayInfo##meta:enum##title##30171"
                 }
             },
             "anyOf": [
@@ -107,7 +115,19 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "alternateDisplayInfo##title##31611",
+    "meta:descriptionId": "alternateDisplayInfo##description##11081",
     "examples": [
+        {
+            "@type": "xdm:alternateDisplayInfo",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceProperty": "/browserDetails",
+            "xdm:description": {
+                "en_us": "friendly description for browser details",
+                "fr_ca": "description conviviale pour les détails du navigateur"
+            }
+        },
         {
             "@type": "xdm:alternateDisplayInfo",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
@@ -128,16 +148,6 @@
             "xdm:title": {
                 "en_us": "friendly title for browser details",
                 "fr_ca": "titre convivial pour les détails du navigateur"
-            }
-        },
-        {
-            "@type": "xdm:alternateDisplayInfo",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/browserDetails",
-            "xdm:description": {
-                "en_us": "friendly description for browser details",
-                "fr_ca": "description conviviale pour les détails du navigateur"
             }
         }
     ]

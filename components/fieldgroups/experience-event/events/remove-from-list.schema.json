@@ -20,22 +20,27 @@
   "description": "Use to track when a person is removed from a specific list.",
   "definitions": {
     "removefromlist": {
-      "properties":{
-        "xdm:listOperations":{
+      "properties": {
+        "xdm:listOperations": {
           "title": "List Opearations",
-          "type":"object",
+          "type": "object",
           "properties": {
             "xdm:listID": {
               "title": "List ID",
               "type": "string",
-              "description": "Unique ID of the Marketing List."
+              "description": "Unique ID of the Marketing List.",
+              "meta:titleId": "remove-from-list##xdm:listID##title##42691",
+              "meta:descriptionId": "remove-from-list##xdm:listID##description##15921"
             },
             "xdm:listKey": {
               "title": "List Key",
               "description": "Unique composite identifier of the Marketing List.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "remove-from-list##xdm:listKey##title##19851",
+              "meta:descriptionId": "remove-from-list##xdm:listKey##description##91321"
             }
-          }
+          },
+          "meta:titleId": "remove-from-list##xdm:listOperations##title##15291"
         }
       }
     }
@@ -46,5 +51,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "remove-from-list##title##131",
+  "meta:descriptionId": "remove-from-list##description##80061"
 }

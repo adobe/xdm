@@ -25,12 +25,16 @@
                 "xdm:accountID": {
                     "title": "Account Identifier",
                     "description": "Unique ID for the account.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account##xdm:accountID##title##74841",
+                    "meta:descriptionId": "account##xdm:accountID##description##70711"
                 },
                 "xdm:accountKey": {
                     "title": "Account Key",
                     "description": "Unique composite key identifier for the Account.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "account##xdm:accountKey##title##76911",
+                    "meta:descriptionId": "account##xdm:accountKey##description##47311"
                 }
             }
         }
@@ -49,10 +53,9 @@
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
     ],
-    "required": [
-        "xdm:accountID"
-    ],
     "meta:status": "experimental",
+    "meta:titleId": "account##title##15371",
+    "meta:descriptionId": "account##description##31521",
     "examples": [
         {
             "xdm:accountID": "1234567890"

@@ -69,9 +69,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "linkclicks##xdm:userAgent##title##6681",
+      "meta:descriptionId": "linkclicks##xdm:userAgent##description##88921"
     }
   },
+  "meta:titleId": "linkclicks##xdm:browserDetails##title##18781",
+  "meta:descriptionId": "linkclicks##xdm:browserDetails##description##24331",
   "simpletype": "`object`"
 }
 ```
@@ -152,14 +156,19 @@ Unknown type `object`.
     "xdm:linkID": {
       "title": "Link ID",
       "type": "string",
-      "description": "Unique ID of the link clicked."
+      "description": "Unique ID of the link clicked.",
+      "meta:titleId": "linkclicks##xdm:linkID##title##71631",
+      "meta:descriptionId": "linkclicks##xdm:linkID##description##921"
     },
     "xdm:linkURL": {
       "title": "Link URL",
       "type": "string",
-      "description": "URL of the link clicked."
+      "description": "URL of the link clicked.",
+      "meta:titleId": "linkclicks##xdm:linkURL##title##93981",
+      "meta:descriptionId": "linkclicks##xdm:linkURL##description##76371"
     }
   },
+  "meta:titleId": "linkclicks##xdm:webInteraction##title##59681",
   "simpletype": "`object`"
 }
 ```
@@ -191,19 +200,26 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique ID of the web page."
+      "description": "Unique ID of the web page.",
+      "meta:titleId": "linkclicks##xdm:webPageID##title##221",
+      "meta:descriptionId": "linkclicks##xdm:webPageID##description##56671"
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
-      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+      "meta:titleId": "linkclicks##xdm:name##title##95001",
+      "meta:descriptionId": "linkclicks##xdm:name##description##61781"
     },
     "xdm:queryParameters": {
       "title": "Query Parameters",
       "type": "string",
-      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+      "meta:titleId": "linkclicks##xdm:queryParameters##title##37321",
+      "meta:descriptionId": "linkclicks##xdm:queryParameters##description##94901"
     }
   },
+  "meta:titleId": "linkclicks##xdm:webPageDetails##title##28771",
   "simpletype": "`object`"
 }
 ```
@@ -235,9 +251,12 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "URL of the referrer to the website."
+      "description": "URL of the referrer to the website.",
+      "meta:titleId": "linkclicks##xdm:URL##title##11451",
+      "meta:descriptionId": "linkclicks##xdm:URL##description##27411"
     }
   },
+  "meta:titleId": "linkclicks##xdm:webReferrer##title##74601",
   "simpletype": "`object`"
 }
 ```

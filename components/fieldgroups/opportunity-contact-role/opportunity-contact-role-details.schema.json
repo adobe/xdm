@@ -23,22 +23,30 @@
         "xdm:roleID": {
           "title": "Contact Role ID",
           "description": "Contact role unique identifier.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-contact-role-details##xdm:roleID##title##87281",
+          "meta:descriptionId": "opportunity-contact-role-details##xdm:roleID##description##7741"
         },
         "xdm:opportunityContactRole": {
           "title": "Opportunity Contact Role",
           "description": "Role of the opportunity contact like finance , sales .",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity-contact-role-details##xdm:opportunityContactRole##title##72451",
+          "meta:descriptionId": "opportunity-contact-role-details##xdm:opportunityContactRole##description##991"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "A flag to signify that this is the primary opportunity contact",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "opportunity-contact-role-details##xdm:isPrimary##title##27681",
+          "meta:descriptionId": "opportunity-contact-role-details##xdm:isPrimary##description##25371"
         },
         "xdm:isDeleted": {
           "title": "Deleted Flag",
           "description": "A flag to signify that this opportunity is in deleted state.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "opportunity-contact-role-details##xdm:isDeleted##title##99321",
+          "meta:descriptionId": "opportunity-contact-role-details##xdm:isDeleted##description##45571"
         }
       }
     }
@@ -49,5 +57,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-08-18"
+  "meta:createdDate": "2020-08-18",
+  "meta:titleId": "opportunity-contact-role-details##title##35201",
+  "meta:descriptionId": "opportunity-contact-role-details##description##92681"
 }

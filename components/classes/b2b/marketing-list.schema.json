@@ -22,22 +22,30 @@
         "xdm:marketingListID": {
           "title": "Marketing List ID",
           "description": "Unique ID of the marketing list.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list##xdm:marketingListID##title##14641",
+          "meta:descriptionId": "marketing-list##xdm:marketingListID##description##39981"
         },
         "xdm:marketingListKey": {
           "title": "Marketing List Key",
           "description": "Unique composite identifier of the Marketing List.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "marketing-list##xdm:marketingListKey##title##75021",
+          "meta:descriptionId": "marketing-list##xdm:marketingListKey##description##38201"
         },
         "xdm:marketingListName": {
           "title": "Marketing List Name",
           "description": "Name of the marketing list.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list##xdm:marketingListName##title##21631",
+          "meta:descriptionId": "marketing-list##xdm:marketingListName##description##88691"
         },
         "xdm:marketingListDescription": {
           "title": "Marketing List Description",
           "description": "Description of the marketing list.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list##xdm:marketingListDescription##title##49191",
+          "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##74451"
         }
       }
     }
@@ -56,6 +64,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListID"],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "marketing-list##title##83091",
+  "meta:descriptionId": "marketing-list##description##801"
 }

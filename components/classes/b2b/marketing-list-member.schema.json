@@ -22,32 +22,44 @@
         "xdm:marketingListMemberID": {
           "title": "Marketing List Member ID",
           "description": "Unique ID for the membership of this person to this marketing list.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##5321",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##83541"
         },
         "xdm:marketingListMemberKey": {
           "title": "Marketing List Member Key",
           "description": "Unique composite identifier of the membership of this person from the marketing list.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "marketing-list-member##xdm:marketingListMemberKey##title##31771",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberKey##description##52381"
         },
         "xdm:personID": {
           "title": "Person Identifier",
           "description": "Unique ID for the person who is a member of this marketing list.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list-member##xdm:personID##title##18461",
+          "meta:descriptionId": "marketing-list-member##xdm:personID##description##36361"
         },
         "xdm:personKey": {
           "title": "Person Key",
           "description": "Unique composite identifier of the Person from the marketing list.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "marketing-list-member##xdm:personKey##title##3831",
+          "meta:descriptionId": "marketing-list-member##xdm:personKey##description##79331"
         },
         "xdm:marketingListID": {
           "title": "Marketing List Identifier",
           "description": "Unique ID for the marketing list this person is a member of.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "marketing-list-member##xdm:marketingListID##title##78061",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##31391"
         },
         "xdm:marketingListKey": {
           "title": "Marketing List Key",
           "description": "Unique composite identifier of the Marketing List this person is a member of.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "marketing-list-member##xdm:marketingListKey##title##59911",
+          "meta:descriptionId": "marketing-list-member##xdm:marketingListKey##description##44301"
         }
       }
     }
@@ -66,6 +78,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListMemberID"],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "marketing-list-member##title##71521",
+  "meta:descriptionId": "marketing-list-member##description##99421"
 }

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Media audio",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "Asset information about the audio content.",
   "definitions": {
@@ -18,22 +18,30 @@
         "dc:creator": {
           "title": "Author",
           "type": "string",
-          "description": "Name of the media author."
+          "description": "Name of the media author.",
+          "meta:titleId": "media-timed-audio##dc:creator##title##26251",
+          "meta:descriptionId": "media-timed-audio##dc:creator##description##87851"
         },
         "xmpDM:artist": {
           "title": "Artist",
           "type": "string",
-          "description": "The name of the album artist or group performing the music recording or video."
+          "description": "The name of the album artist or group performing the music recording or video.",
+          "meta:titleId": "media-timed-audio##xmpDM:artist##title##44671",
+          "meta:descriptionId": "media-timed-audio##xmpDM:artist##description##20781"
         },
         "xmpDM:album": {
           "title": "Album",
           "type": "string",
-          "description": "The name of the album that the music recording or video belongs to."
+          "description": "The name of the album that the music recording or video belongs to.",
+          "meta:titleId": "media-timed-audio##xmpDM:album##title##75311",
+          "meta:descriptionId": "media-timed-audio##xmpDM:album##description##74591"
         },
         "id3:Audio": {
           "title": "Audio",
           "description": "Metadata specific to audio content (record label, radio station, etc.).",
-          "$ref": "https://id3.org/id3v2.4/audio"
+          "$ref": "https://id3.org/id3v2.4/audio",
+          "meta:titleId": "media-timed-audio##id3:Audio##title##65301",
+          "meta:descriptionId": "media-timed-audio##id3:Audio##description##96461"
         }
       }
     }
@@ -46,6 +54,7 @@
       "$ref": "#/definitions/media-asset-reference"
     }
   ],
-  "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "media-timed-audio##title##6481",
+  "meta:descriptionId": "media-timed-audio##description##31111"
 }

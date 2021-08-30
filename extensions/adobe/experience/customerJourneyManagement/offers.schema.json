@@ -7,35 +7,35 @@
   ],
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe CJM ExperienceEvent - Offer details",
-  "description": "Details about offers associated with a message.",
+  "title": "Adobe ExperienceEvent - Offer details",
+  "description": "Details about offers associated with a message, as sourced primarily from ODS",
   "type": "object",
   "meta:extensible": true,
   "definitions": {
-    "offers": {
+    "xdm:offers": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": {
+        "xdm:offerID": {
           "title": "Offer ID",
           "type": "string",
           "description": "Unique Identifier for Offer."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": {
+        "xdm:placementID": {
           "title": "Placement ID",
           "type": "string",
           "description": "Unique Identifier for Offer Placement."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": {
+        "xdm:propositionID": {
           "title": "Proposition ID",
           "type": "string",
           "description": "Unique Identifier for Offer Proposition."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionTime": {
+        "xdm:propositionTime": {
           "title": "Proposition Time",
           "type": "string",
           "description": "Time at which the Offer proposition was generated.",
           "meta:status": "deprecated"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": {
+        "xdm:offerCount": {
           "title": "Offer Count",
           "type": "integer",
           "description": "Count of offers included in the offer proposition."

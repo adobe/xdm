@@ -20,17 +20,20 @@
                 "@id": {
                     "type": "string",
                     "const": "xdm:checkouts",
-                    "description": "The unique identifier of this metric."
+                    "description": "The unique identifier of this metric.",
+                    "meta:descriptionId": "checkouts##@id##description##92641"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "commerce metric: checkouts",
-                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:descriptionId": "checkouts##schema:name##description##39531"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
-                    "const": "count"
+                    "const": "count",
+                    "meta:descriptionId": "checkouts##xdm:measurement##description##1871"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -54,6 +57,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "checkouts##title##45271",
+    "meta:descriptionId": "checkouts##description##15931",
     "examples": [
         {
             "schema:name": "commerce metric: checkouts",

@@ -26,7 +26,9 @@
                 "xdm:web": {
                     "title": "Web",
                     "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-                    "description": "Link clicks, web page details, referrer information, and browser details."
+                    "description": "Link clicks, web page details, referrer information, and browser details.",
+                    "meta:titleId": "experienceevent-web##xdm:web##title##81951",
+                    "meta:descriptionId": "experienceevent-web##xdm:web##description##6711"
                 }
             }
         }
@@ -41,6 +43,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "experienceevent-web##title##90821",
+    "meta:descriptionId": "experienceevent-web##description##55501",
     "examples": [
         {
             "xdm:web": {

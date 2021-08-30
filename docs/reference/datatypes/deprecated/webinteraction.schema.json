@@ -27,22 +27,30 @@
                         "download": "Download",
                         "exit": "Exit",
                         "other": "Other"
-                    }
+                    },
+                    "meta:titleId": "webinteraction##xdm:type##title##21231",
+                    "meta:descriptionId": "webinteraction##xdm:type##description##94301"
                 },
                 "xdm:URL": {
                     "title": "URL",
                     "type": "string",
-                    "description": "The actual link or URL used for this web interaction."
+                    "description": "The actual link or URL used for this web interaction.",
+                    "meta:titleId": "webinteraction##xdm:URL##title##24661",
+                    "meta:descriptionId": "webinteraction##xdm:URL##description##28031"
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
-                    "description": "The normative name used for this web link, used for classification purposes."
+                    "description": "The normative name used for this web link, used for classification purposes.",
+                    "meta:titleId": "webinteraction##xdm:name##title##69521",
+                    "meta:descriptionId": "webinteraction##xdm:name##description##45281"
                 },
                 "xdm:linkClicks": {
                     "title": "Link Clicks",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Click of a web link has occurred."
+                    "description": "Click of a web link has occurred.",
+                    "meta:titleId": "webinteraction##xdm:linkClicks##title##61661",
+                    "meta:descriptionId": "webinteraction##xdm:linkClicks##description##11621"
                 }
             }
         }
@@ -57,6 +65,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "webinteraction##title##62311",
+    "meta:descriptionId": "webinteraction##description##15441",
     "examples": [
         {
             "xdm:type": "other",

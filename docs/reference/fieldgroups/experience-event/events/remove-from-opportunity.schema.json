@@ -28,24 +28,33 @@
                         "xdm:opportunityID": {
                             "title": "Opportunity ID",
                             "type": "string",
-                            "description": "Unique identifier of the Opportunity."
+                            "description": "Unique identifier of the Opportunity.",
+                            "meta:titleId": "remove-from-opportunity##xdm:opportunityID##title##99271",
+                            "meta:descriptionId": "remove-from-opportunity##xdm:opportunityID##description##18301"
                         },
                         "xdm:opportunityKey": {
                             "title": "Opportunity Key",
                             "description": "Unique composite identifier of the Opportunity.",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                            "meta:titleId": "remove-from-opportunity##xdm:opportunityKey##title##50901",
+                            "meta:descriptionId": "remove-from-opportunity##xdm:opportunityKey##description##85241"
                         },
                         "xdm:isPrimary": {
                             "title": "Is Primary",
                             "type": "boolean",
-                            "description": "Boolean indicating if the person was the primary contact on the Opportunity."
+                            "description": "Boolean indicating if the person was the primary contact on the Opportunity.",
+                            "meta:titleId": "remove-from-opportunity##xdm:isPrimary##title##88421",
+                            "meta:descriptionId": "remove-from-opportunity##xdm:isPrimary##description##31031"
                         },
                         "xdm:role": {
                             "title": "Role",
                             "type": "string",
-                            "description": "Role of the person on the Opportunity."
+                            "description": "Role of the person on the Opportunity.",
+                            "meta:titleId": "remove-from-opportunity##xdm:role##title##8741",
+                            "meta:descriptionId": "remove-from-opportunity##xdm:role##description##88621"
                         }
-                    }
+                    },
+                    "meta:titleId": "remove-from-opportunity##xdm:opportunityEvent##title##30161"
                 }
             }
         }
@@ -57,6 +66,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "remove-from-opportunity##title##32961",
+    "meta:descriptionId": "remove-from-opportunity##description##92771",
     "examples": [
         {}
     ]

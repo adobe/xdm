@@ -26,7 +26,9 @@
                 "xdm:media": {
                     "title": "Media",
                     "$ref": "https://ns.adobe.com/xdm/context/media",
-                    "description": "Media activity information related to the experience event."
+                    "description": "Media activity information related to the experience event.",
+                    "meta:titleId": "experienceevent-media##xdm:media##title##121",
+                    "meta:descriptionId": "experienceevent-media##xdm:media##description##53531"
                 }
             }
         }
@@ -41,6 +43,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "experienceevent-media##title##33101",
+    "meta:descriptionId": "experienceevent-media##description##62331",
     "examples": [
         {
             "xdm:media": {

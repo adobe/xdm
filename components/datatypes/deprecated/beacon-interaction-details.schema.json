@@ -17,17 +17,23 @@
         "xdm:proximityUUID": {
           "title": "Proximity UUID",
           "type": "string",
-          "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons."
+          "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons.",
+          "meta:titleId": "beacon-interaction-details##xdm:proximityUUID##title##89841",
+          "meta:descriptionId": "beacon-interaction-details##xdm:proximityUUID##description##89071"
         },
         "xdm:beaconMajor": {
           "title": "Beacon major",
           "type": "number",
-          "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535."
+          "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535.",
+          "meta:titleId": "beacon-interaction-details##xdm:beaconMajor##title##80011",
+          "meta:descriptionId": "beacon-interaction-details##xdm:beaconMajor##description##58621"
         },
         "xdm:beaconMinor": {
           "title": "Beacon Minor",
           "type": "number",
-          "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535."
+          "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535.",
+          "meta:titleId": "beacon-interaction-details##xdm:beaconMinor##title##68941",
+          "meta:descriptionId": "beacon-interaction-details##xdm:beaconMinor##description##82631"
         },
         "xdm:proximity": {
           "title": "Proximity to beacon",
@@ -39,7 +45,9 @@
             "near": "Within a couple of meters.",
             "far": "Greater than 10 meters away.",
             "unknown": "Not able to ascertain distance, signal likely very weak."
-          }
+          },
+          "meta:titleId": "beacon-interaction-details##xdm:proximity##title##22901",
+          "meta:descriptionId": "beacon-interaction-details##xdm:proximity##description##32031"
         }
       }
     }
@@ -53,5 +61,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "beacon-interaction-details##title##75261",
+  "meta:descriptionId": "beacon-interaction-details##description##81761"
 }

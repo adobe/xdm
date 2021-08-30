@@ -17,45 +17,61 @@
         "xdm:token": {
           "title": "Push Token",
           "type": "string",
-          "description": "Valid push token for the given push platform."
+          "description": "Valid push token for the given push platform.",
+          "meta:titleId": "pushdetail##xdm:token##title##22311",
+          "meta:descriptionId": "pushdetail##xdm:token##description##10671"
         },
         "xdm:platform": {
           "title": "Push Platform",
           "type": "string",
-          "description": "Push provider, e.g. apns or fcm"
+          "description": "Push provider, e.g. apns or fcm",
+          "meta:titleId": "pushdetail##xdm:platform##title##71851",
+          "meta:descriptionId": "pushdetail##xdm:platform##description##45351"
         },
         "xdm:blacklisted": {
           "title": "Blacklist Flag",
           "type": "boolean",
           "meta:status": "deprecated",
-          "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead."
+          "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.",
+          "meta:titleId": "pushdetail##xdm:blacklisted##title##32521",
+          "meta:descriptionId": "pushdetail##xdm:blacklisted##description##91081"
         },
         "xdm:blocklisted": {
           "title": "Blocklist Flag",
           "type": "boolean",
           "meta:status": "deprecated",
-          "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead."
+          "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.",
+          "meta:titleId": "pushdetail##xdm:blocklisted##title##43061",
+          "meta:descriptionId": "pushdetail##xdm:blocklisted##description##57711"
         },
         "xdm:denylisted": {
           "title": "Denylist Flag",
           "type": "boolean",
-          "description": "Indicates whether the push token is blocked by the push provider."
+          "description": "Indicates whether the push token is blocked by the push provider.",
+          "meta:titleId": "pushdetail##xdm:denylisted##title##53431",
+          "meta:descriptionId": "pushdetail##xdm:denylisted##description##66291"
         },
         "xdm:appID": {
           "title": "Application Identifier",
           "type": "string",
-          "description": "Unique Identifier for the mobile application."
+          "description": "Unique Identifier for the mobile application.",
+          "meta:titleId": "pushdetail##xdm:appID##title##4561",
+          "meta:descriptionId": "pushdetail##xdm:appID##description##75191"
         },
         "xdm:identiy": {
           "title": "Identity associated with this token",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "meta:status": "deprecated",
-          "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead."
+          "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.",
+          "meta:titleId": "pushdetail##xdm:identiy##title##17851",
+          "meta:descriptionId": "pushdetail##xdm:identiy##description##58371"
         },
         "xdm:identity": {
           "title": "Identity associated with this token",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "The identity associated with this token before profile stitching."
+          "description": "The identity associated with this token before profile stitching.",
+          "meta:titleId": "pushdetail##xdm:identity##title##98761",
+          "meta:descriptionId": "pushdetail##xdm:identity##description##93651"
         }
       }
     }
@@ -69,5 +85,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "pushdetail##title##71691",
+  "meta:descriptionId": "pushdetail##description##42331"
 }

@@ -20,12 +20,16 @@
                 "xdm:namespace": {
                     "title": "Namespace",
                     "$ref": "https://ns.adobe.com/xdm/context/namespace",
-                    "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code."
+                    "description": "The namespace associated with the `xid` attribute and matched up with the AAM data source integration code.",
+                    "meta:titleId": "identity##xdm:namespace##title##40361",
+                    "meta:descriptionId": "identity##xdm:namespace##description##87511"
                 },
                 "xdm:xid": {
                     "title": "Experience identifier",
                     "type": "string",
-                    "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces."
+                    "description": "When present, experience identifier value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
+                    "meta:titleId": "identity##xdm:xid##title##14511",
+                    "meta:descriptionId": "identity##xdm:xid##description##69981"
                 }
             }
         }
@@ -43,6 +47,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "identity##title##79431",
+    "meta:descriptionId": "identity##description##18111",
     "examples": [
         {
             "xdm:id": "id123",

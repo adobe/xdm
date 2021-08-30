@@ -180,9 +180,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "emailunsubscribed##xdm:userAgent##title##24261",
+      "meta:descriptionId": "emailunsubscribed##xdm:userAgent##description##97031"
     }
   },
+  "meta:titleId": "emailunsubscribed##xdm:browserDetails##title##66791",
+  "meta:descriptionId": "emailunsubscribed##xdm:browserDetails##description##95281",
   "simpletype": "`object`"
 }
 ```
@@ -263,14 +267,19 @@ Unknown type `object`.
     "xdm:webFormID": {
       "title": "Web Form ID",
       "type": "string",
-      "description": "Unique ID of the form."
+      "description": "Unique ID of the form.",
+      "meta:titleId": "emailunsubscribed##xdm:webFormID##title##2681",
+      "meta:descriptionId": "emailunsubscribed##xdm:webFormID##description##46781"
     },
     "xdm:webFormName": {
       "title": "Web Form Name",
       "type": "string",
-      "description": "Friendly name of the form."
+      "description": "Friendly name of the form.",
+      "meta:titleId": "emailunsubscribed##xdm:webFormName##title##22601",
+      "meta:descriptionId": "emailunsubscribed##xdm:webFormName##description##94821"
     }
   },
+  "meta:titleId": "emailunsubscribed##xdm:fillOutForm##title##65611",
   "simpletype": "`object`"
 }
 ```
@@ -302,19 +311,26 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique ID of the web page."
+      "description": "Unique ID of the web page.",
+      "meta:titleId": "emailunsubscribed##xdm:webPageID##title##17341",
+      "meta:descriptionId": "emailunsubscribed##xdm:webPageID##description##81491"
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
-      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+      "meta:titleId": "emailunsubscribed##xdm:name##title##38441",
+      "meta:descriptionId": "emailunsubscribed##xdm:name##description##66451"
     },
     "xdm:queryParameters": {
       "title": "Query Parameters",
       "type": "string",
-      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+      "meta:titleId": "emailunsubscribed##xdm:queryParameters##title##58861",
+      "meta:descriptionId": "emailunsubscribed##xdm:queryParameters##description##15021"
     }
   },
+  "meta:titleId": "emailunsubscribed##xdm:webPageDetails##title##82881",
   "simpletype": "`object`"
 }
 ```
@@ -346,9 +362,12 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "URL of referrer to web page."
+      "description": "URL of referrer to web page.",
+      "meta:titleId": "emailunsubscribed##xdm:URL##title##64311",
+      "meta:descriptionId": "emailunsubscribed##xdm:URL##description##3661"
     }
   },
+  "meta:titleId": "emailunsubscribed##xdm:webReferrer##title##74101",
   "simpletype": "`object`"
 }
 ```

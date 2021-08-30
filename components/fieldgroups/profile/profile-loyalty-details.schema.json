@@ -34,7 +34,9 @@
               "title": "Program Join Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date which the visitor registered for the loyalty program."
+              "description": "Date which the visitor registered for the loyalty program.",
+              "meta:titleId": "profile-loyalty-details##xdm:joinDate##title##80521",
+              "meta:descriptionId": "profile-loyalty-details##xdm:joinDate##description##45221"
             },
             "xdm:loyaltyID": {
               "title": "Program ID",
@@ -42,12 +44,16 @@
               "items": {
                 "type": "string"
               },
-              "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program."
+              "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
+              "meta:titleId": "profile-loyalty-details##xdm:loyaltyID##title##45371",
+              "meta:descriptionId": "profile-loyalty-details##xdm:loyaltyID##description##48021"
             },
             "xdm:points": {
               "title": "Program Points Balance",
               "type": "number",
-              "description": "Current balance of the loyalty points/awards in a visitor's loyalty account."
+              "description": "Current balance of the loyalty points/awards in a visitor's loyalty account.",
+              "meta:titleId": "profile-loyalty-details##xdm:points##title##64191",
+              "meta:descriptionId": "profile-loyalty-details##xdm:points##description##63321"
             },
             "xdm:pointsExpiration": {
               "title": "Points Expiration",
@@ -58,42 +64,57 @@
                   "xdm:pointsExpiring": {
                     "title": "Points Expiring",
                     "type": "number",
-                    "description": "Point balance expiring as of the associated expiration date."
+                    "description": "Point balance expiring as of the associated expiration date.",
+                    "meta:titleId": "profile-loyalty-details##xdm:pointsExpiring##title##95811",
+                    "meta:descriptionId": "profile-loyalty-details##xdm:pointsExpiring##description##58921"
                   },
                   "xdm:pointsExpirationDate": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the given portion of the loyalty points expire."
+                    "description": "Date on which the given portion of the loyalty points expire.",
+                    "meta:descriptionId": "profile-loyalty-details##xdm:pointsExpirationDate##description##71841"
                   }
                 }
-              }
+              },
+              "meta:titleId": "profile-loyalty-details##xdm:pointsExpiration##title##19661"
             },
             "xdm:pointsRedeemed": {
               "title": "Points Redeemed",
               "type": "number",
-              "description": "Amount of points applied toward a purchase or otherwise redeemed."
+              "description": "Amount of points applied toward a purchase or otherwise redeemed.",
+              "meta:titleId": "profile-loyalty-details##xdm:pointsRedeemed##title##88051",
+              "meta:descriptionId": "profile-loyalty-details##xdm:pointsRedeemed##description##59961"
             },
             "xdm:program": {
               "title": "Program Name",
               "type": "string",
-              "description": "This should define the loyalty progam in which a visitor is enrolled."
+              "description": "This should define the loyalty progam in which a visitor is enrolled.",
+              "meta:titleId": "profile-loyalty-details##xdm:program##title##82341",
+              "meta:descriptionId": "profile-loyalty-details##xdm:program##description##83761"
             },
             "xdm:upgradeDate": {
               "title": "Program Name",
               "type": "string",
-              "description": "Date which the customer was upgraded to the next tier level."
+              "description": "Date which the customer was upgraded to the next tier level.",
+              "meta:titleId": "profile-loyalty-details##xdm:upgradeDate##title##7701",
+              "meta:descriptionId": "profile-loyalty-details##xdm:upgradeDate##description##70561"
             },
             "xdm:status": {
               "title": "Status",
               "type": "string",
-              "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended."
+              "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended.",
+              "meta:titleId": "profile-loyalty-details##xdm:status##title##37281",
+              "meta:descriptionId": "profile-loyalty-details##xdm:status##description##97401"
             },
             "xdm:tier": {
               "title": "Tier",
               "type": "string",
-              "description": "Captures the loyalty progam tier in which a visitor is enrolled."
+              "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
+              "meta:titleId": "profile-loyalty-details##xdm:tier##title##99231",
+              "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##35031"
             }
-          }
+          },
+          "meta:descriptionId": "profile-loyalty-details##xdm:loyalty##description##13591"
         }
       }
     }
@@ -104,5 +125,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "profile-loyalty-details##title##84831",
+  "meta:descriptionId": "profile-loyalty-details##description##63561"
 }

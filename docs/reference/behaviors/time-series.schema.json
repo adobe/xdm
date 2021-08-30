@@ -82,7 +82,10 @@
                         "directMarketing.emailClicked": "Direct Marketing Email Clicked",
                         "opportunityEvent.removeFromOpportunity": "Opportunity Event Remove From Opportunity",
                         "opportunityEvent.addToOpportunity": "Opportunity Event Add To Opportunity",
-                        "opportunityEvent.opportunityUpdated": "Opportunity Event Opportunity Updated"
+                        "opportunityEvent.opportunityUpdated": "Opportunity Event Opportunity Updated",
+                        "inappmessageTracking.dismiss": "inapp message was dimissed",
+                        "inappmessageTracking.display": "inapp message was displayed",
+                        "inappmessageTracking.interact": "inapp message was interacted with"
                     },
                     "meta:titleId": "time-series##xdm:eventType##title##29991",
                     "meta:descriptionId": "time-series##xdm:eventType##description##76551"

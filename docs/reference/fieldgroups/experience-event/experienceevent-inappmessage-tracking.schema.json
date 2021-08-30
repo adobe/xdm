@@ -1,0 +1,50 @@
+{
+    "meta:license": [
+        "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-inappmessage-tracking",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Inapp message tracking",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Inapp message interaction tracking details",
+    "definitions": {
+        "experienceevent-inappmessage-tracking": {
+            "properties": {
+                "xdm:inappMessageTracking": {
+                    "title": "Inapp Message Interaction Tracking Details",
+                    "type": "object",
+                    "description": "Describes interaction with an inapp message.",
+                    "properties": {
+                        "xdm:action": {
+                            "title": "Custom Action",
+                            "type": "string",
+                            "description": "Identifier for custom action that the user triggered while interacting with the inapp message."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-inappmessage-tracking"
+        }
+    ],
+    "meta:status": "stable",
+    "meta:createdDate": "2021-08-23",
+    "examples": [
+        {
+            "xdm:action": "button3"
+        }
+    ]
+}

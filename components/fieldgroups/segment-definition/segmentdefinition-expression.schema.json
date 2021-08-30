@@ -26,20 +26,27 @@
               "title": "Type",
               "type": "string",
               "description": "Type of expression, for example, PQL, Query Service, or Adobe Audience Manager.",
-              "meta:enum": ["PQL", "AAM", "QUERYSERVICE"]
+              "meta:enum": ["PQL", "AAM", "QUERYSERVICE"],
+              "meta:titleId": "segmentdefinition-expression##xdm:expressionType##title##22841",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:expressionType##description##48371"
             },
             "xdm:mimeType": {
               "title": "Expression mime type",
               "type": "string",
               "description": "Mime type of the expression. For example, pql/text or application/sql.",
-              "pattern": "\\w+/[-.\\w]+(?:\\+[-.\\w]+)?"
+              "pattern": "\\w+/[-.\\w]+(?:\\+[-.\\w]+)?",
+              "meta:titleId": "segmentdefinition-expression##xdm:mimeType##title##62931",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:mimeType##description##30541"
             },
             "xdm:value": {
               "title": "Value",
               "type": "string",
-              "description": "Actual expression string. The syntax of expression will depend upon specified mime type."
+              "description": "Actual expression string. The syntax of expression will depend upon specified mime type.",
+              "meta:titleId": "segmentdefinition-expression##xdm:value##title##46531",
+              "meta:descriptionId": "segmentdefinition-expression##xdm:value##description##38301"
             }
-          }
+          },
+          "meta:titleId": "segmentdefinition-expression##xdm:segmentExpression##title##69491"
         }
       }
     }
@@ -53,5 +60,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "segmentdefinition-expression##title##49291",
+  "meta:descriptionId": "segmentdefinition-expression##description##15981"
 }

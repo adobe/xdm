@@ -17,56 +17,71 @@
         "xdm:order": {
           "title": "Order",
           "$ref": "https://ns.adobe.com/xdm/data/order",
-          "description": "The placed order for one or more products."
+          "description": "The placed order for one or more products.",
+          "meta:titleId": "commerce##xdm:order##title##80631",
+          "meta:descriptionId": "commerce##xdm:order##description##14771"
         },
         "xdm:promotionID": {
           "title": "Promotion ID",
           "type": "string",
-          "description": "Promotion identifier if any for the order placed."
+          "description": "Promotion identifier if any for the order placed.",
+          "meta:titleId": "commerce##xdm:promotionID##title##13341",
+          "meta:descriptionId": "commerce##xdm:promotionID##description##29901"
         },
         "xdm:cartAbandons": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A product list has been identified as no longer accessible or purchasable by the user."
+          "description": "A product list has been identified as no longer accessible or purchasable by the user.",
+          "meta:descriptionId": "commerce##xdm:cartAbandons##description##79331"
         },
         "xdm:checkouts": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order."
+          "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.",
+          "meta:descriptionId": "commerce##xdm:checkouts##description##11561"
         },
         "xdm:productListAdds": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Addition of a product to the product list, for example a product is added to a shopping cart."
+          "description": "Addition of a product to the product list, for example a product is added to a shopping cart.",
+          "meta:descriptionId": "commerce##xdm:productListAdds##description##16301"
         },
         "xdm:productListOpens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Initializations of a new product list, for example a shopping cart is created."
+          "description": "Initializations of a new product list, for example a shopping cart is created.",
+          "meta:descriptionId": "commerce##xdm:productListOpens##description##76061"
         },
         "xdm:productListRemovals": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart."
+          "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.",
+          "meta:descriptionId": "commerce##xdm:productListRemovals##description##11211"
         },
         "xdm:productListReopens": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity."
+          "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.",
+          "meta:descriptionId": "commerce##xdm:productListReopens##description##91451"
         },
         "xdm:productListViews": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View or views of a product-list has occurred."
+          "description": "View or views of a product-list has occurred.",
+          "meta:descriptionId": "commerce##xdm:productListViews##description##45121"
         },
         "xdm:productViews": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "View or views of a product have occurred."
+          "description": "View or views of a product have occurred.",
+          "meta:descriptionId": "commerce##xdm:productViews##description##33431"
         },
         "xdm:purchases": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced."
+          "description": "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.",
+          "meta:descriptionId": "commerce##xdm:purchases##description##8451"
         },
         "xdm:saveForLaters": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "Product list is saved for future use, for example a product wish list."
+          "description": "Product list is saved for future use, for example a product wish list.",
+          "meta:descriptionId": "commerce##xdm:saveForLaters##description##39711"
         },
         "xdm:inStorePurchase": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
-          "description": "'inStore' purchase is saved for analytics use."
+          "description": "'inStore' purchase is saved for analytics use.",
+          "meta:descriptionId": "commerce##xdm:inStorePurchase##description##88731"
         }
       }
     }
@@ -80,5 +95,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "commerce##title##60721",
+  "meta:descriptionId": "commerce##description##36771"
 }

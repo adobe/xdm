@@ -22,71 +22,97 @@
         "xdm:accountPersonID": {
           "title": "Account Person ID",
           "description": "Unique identifier for this relationship between an account and a person.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:accountPersonID##title##14431",
+          "meta:descriptionId": "account-person##xdm:accountPersonID##description##92761"
         },
         "xdm:accountPersonKey": {
           "title": "Account Person Key",
           "description": "Unique composite identifier for this relationship between an account and a person.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:accountPersonKey##title##86581",
+          "meta:descriptionId": "account-person##xdm:accountPersonKey##description##50861"
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique identifier for the account in this account person relationship.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:accountID##title##10671",
+          "meta:descriptionId": "account-person##xdm:accountID##description##27271"
         },
         "xdm:accountKey": {
           "title": "Account Key",
           "description": "Unique composite identifier for the account in this account person relationship.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:accountKey##title##85441",
+          "meta:descriptionId": "account-person##xdm:accountKey##description##20571"
         },
         "xdm:personID": {
           "title": "Person ID",
           "description": "Unique identifier for the person in this account person relationship.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:personID##title##39941",
+          "meta:descriptionId": "account-person##xdm:personID##description##281"
         },
         "xdm:personKey": {
           "title": "Person Key",
           "description": "Unique composite identifier for the person in this account person relationship.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:personKey##title##73161",
+          "meta:descriptionId": "account-person##xdm:personKey##description##86061"
         },
         "xdm:personRole": {
           "title": "Person Role",
           "description": "Role of the person on this account.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:personRole##title##93871",
+          "meta:descriptionId": "account-person##xdm:personRole##description##45661"
         },
         "xdm:isDirect": {
           "title": "Direct Flag",
           "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "account-person##xdm:isDirect##title##38041",
+          "meta:descriptionId": "account-person##xdm:isDirect##description##50461"
         },
         "xdm:isActive": {
           "title": "Active Flag",
           "description": "Boolean to indicate if this relationship between the account and the person is active.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "account-person##xdm:isActive##title##96881",
+          "meta:descriptionId": "account-person##xdm:isActive##description##77981"
         },
         "xdm:isPrimary": {
           "title": "Primary Flag",
           "description": "Boolean to indicate if the person is the primary contact on the account.",
-          "type": "boolean"
+          "type": "boolean",
+          "meta:titleId": "account-person##xdm:isPrimary##title##8611",
+          "meta:descriptionId": "account-person##xdm:isPrimary##description##60041"
         },
         "xdm:relationStartDate": {
           "title": "Relationship Start Date",
           "description": "The date when the relationship between the account and the person started.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "account-person##xdm:relationStartDate##title##76051",
+          "meta:descriptionId": "account-person##xdm:relationStartDate##description##63241"
         },
         "xdm:relationEndDate": {
           "title": "Relationship End Date",
           "description": "The date when the relationship between the account and the person ended.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "account-person##xdm:relationEndDate##title##95521",
+          "meta:descriptionId": "account-person##xdm:relationEndDate##description##77631"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for the relationship between the account and the person."
+          "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
+          "meta:titleId": "account-person##xdm:currencyCode##title##58281",
+          "meta:descriptionId": "account-person##xdm:currencyCode##description##80021"
         }
       }
     }
@@ -102,5 +128,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "account-person##title##13501",
+  "meta:descriptionId": "account-person##description##67451"
 }

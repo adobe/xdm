@@ -16,12 +16,16 @@
         "xdm:profileStitchID": {
           "title": "Profile stitch ID",
           "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
-          "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment."
+          "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment.",
+          "meta:titleId": "profileStitch##xdm:profileStitchID##title##23921",
+          "meta:descriptionId": "profileStitch##xdm:profileStitchID##description##44901"
         },
         "xdm:version": {
           "title": "Version",
           "type": "string",
-          "description": "The version of the profile stitch definition used and is useful for debugging."
+          "description": "The version of the profile stitch definition used and is useful for debugging.",
+          "meta:titleId": "profileStitch##xdm:version##title##31261",
+          "meta:descriptionId": "profileStitch##xdm:version##description##56061"
         }
       }
     }
@@ -35,5 +39,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profileStitch##title##85491",
+  "meta:descriptionId": "profileStitch##description##20171"
 }

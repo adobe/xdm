@@ -18,17 +18,20 @@
         "@id": {
           "type": "string",
           "const": "xdm:cartAbandons",
-          "description": "The unique identifier of this metric."
+          "description": "The unique identifier of this metric.",
+          "meta:descriptionId": "cart-abandons##@id##description##53561"
         },
         "schema:name": {
           "type": "string",
           "const": "commerce metric: cartAbandons",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "cart-abandons##schema:name##description##20961"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "cart-abandons##xdm:measurement##description##35941"
         },
         "xdm:unit": {
           "const": ""
@@ -46,5 +49,7 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "cart-abandons##title##69711",
+  "meta:descriptionId": "cart-abandons##description##59261"
 }

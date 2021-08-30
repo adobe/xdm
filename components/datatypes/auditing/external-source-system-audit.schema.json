@@ -17,52 +17,70 @@
         "xdm:createdBy": {
           "title": "Created By",
           "description": "Name of the user who created this record",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "external-source-system-audit##xdm:createdBy##title##47001",
+          "meta:descriptionId": "external-source-system-audit##xdm:createdBy##description##39161"
         },
         "xdm:createdDate": {
           "title": "Created Date",
           "description": "Date when this record was created.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "external-source-system-audit##xdm:createdDate##title##39871",
+          "meta:descriptionId": "external-source-system-audit##xdm:createdDate##description##77771"
         },
         "xdm:lastUpdatedBy": {
           "title": "Last Updated By",
           "description": "User who last modified this record.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedBy##title##69331",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedBy##description##42141"
         },
         "xdm:lastUpdatedDate": {
           "title": "Last Updated Date",
           "description": "Date when this record was last modofied.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "external-source-system-audit##xdm:lastUpdatedDate##title##68651",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedDate##description##97231"
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##14831",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastActivityDate##description##43191"
         },
         "xdm:lastReferencedDate": {
           "title": "Last Referenced Date",
           "description": "Last referenced date.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "external-source-system-audit##xdm:lastReferencedDate##title##51511",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastReferencedDate##description##84071"
         },
         "xdm:lastViewedDate": {
           "title": "Last Viewed Date",
           "description": "Last viewed date.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "external-source-system-audit##xdm:lastViewedDate##title##37991",
+          "meta:descriptionId": "external-source-system-audit##xdm:lastViewedDate##description##4521"
         },
         "xdm:externalID": {
           "title": "External ID",
           "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "external-source-system-audit##xdm:externalID##title##35911",
+          "meta:descriptionId": "external-source-system-audit##xdm:externalID##description##48521"
         },
         "xdm:externalKey": {
           "title": "External Key",
           "description": "External unique identifier to the source used for auditing.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "external-source-system-audit##xdm:externalKey##title##30201",
+          "meta:descriptionId": "external-source-system-audit##xdm:externalKey##description##57971"
         }
       }
     }
@@ -76,5 +94,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "external-source-system-audit##title##4451",
+  "meta:descriptionId": "external-source-system-audit##description##25441"
 }

@@ -18,17 +18,20 @@
         "@id": {
           "type": "string",
           "const": "xdm:opens",
-          "description": "The unique identifier of this metric."
+          "description": "The unique identifier of this metric.",
+          "meta:descriptionId": "opens##@id##description##53561"
         },
         "schema:name": {
           "type": "string",
           "const": "direct-marketing metric: opens",
-          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": "opens##schema:name##description##65111"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "const": "count"
+          "const": "count",
+          "meta:descriptionId": "opens##xdm:measurement##description##88081"
         },
         "xdm:unit": {
           "const": ""
@@ -46,5 +49,7 @@
   ],
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "opens##title##94261",
+  "meta:descriptionId": "opens##description##93721"
 }

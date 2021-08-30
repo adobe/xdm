@@ -12,7 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "definitions": {
-    "xdm:offers": {
+    "offers": {
       "properties": {
         "xdm:offerID": {
           "title": "Offer ID",

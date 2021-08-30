@@ -30,9 +30,12 @@
                         "xdm:creditLimitIncrease": {
                             "title": "Credit Limit Increase",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-                            "description": "Extension of form application data type."
+                            "description": "Extension of form application data type.",
+                            "meta:titleId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##title##49241",
+                            "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##description##74211"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:personalFinances##description##56771"
                 }
             }
         }
@@ -44,6 +47,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "experienceevent-credit-limit-increase-details##title##3791",
+    "meta:descriptionId": "experienceevent-credit-limit-increase-details##description##85011",
     "examples": [
         {
             "xdm:personalFinances": {

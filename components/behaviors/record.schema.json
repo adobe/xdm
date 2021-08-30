@@ -19,7 +19,9 @@
           "title": "Identifier",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the record."
+          "description": "A unique identifier for the record.",
+          "meta:titleId": "record##@id##title##80061",
+          "meta:descriptionId": "record##@id##description##41711"
         }
       }
     }
@@ -33,5 +35,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##92641",
+  "meta:descriptionId": "record##description##41201"
 }

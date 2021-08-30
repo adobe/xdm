@@ -245,9 +245,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "emailopened##xdm:userAgent##title##48311",
+      "meta:descriptionId": "emailopened##xdm:userAgent##description##61621"
     }
   },
+  "meta:titleId": "emailopened##xdm:browserDetails##title##3121",
+  "meta:descriptionId": "emailopened##xdm:browserDetails##description##25541",
   "simpletype": "`object`"
 }
 ```

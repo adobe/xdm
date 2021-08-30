@@ -20,7 +20,9 @@
       "manufacturing"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "definitions": {
     "claimDetails": {
@@ -32,27 +34,40 @@
             "xdm:claim": {
               "title": "Claim",
               "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
-              "description": "Extension of claim data type."
+              "description": "Extension of claim data type.",
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:claim##title##94351",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:claim##description##80531"
             },
             "xdm:length": {
               "title": "Length",
               "type": "integer",
-              "description": "Records the length of the warranty, in months."
+              "description": "Records the length of the warranty, in months.",
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:length##title##18691",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:length##description##10281"
             },
             "xdm:type": {
               "title": "Type",
               "type": "string",
               "description": "Type of warranty claim submitted.",
-              "enum": ["product", "recall", "service", "home", "automobile"],
+              "enum": [
+                "product",
+                "recall",
+                "service",
+                "home",
+                "automobile"
+              ],
               "meta:enum": {
                 "product": "Product",
                 "recall": "Recall",
                 "service": "Service",
                 "home": "Home",
                 "automobile": "Automobile"
-              }
+              },
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##72791",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##3661"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##42091"
         }
       }
     }
@@ -62,5 +77,7 @@
       "$ref": "#/definitions/claimDetails"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "experienceevent-warranty-claim-details##title##22651",
+  "meta:descriptionId": "experienceevent-warranty-claim-details##description##97381"
 }

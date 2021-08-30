@@ -17,39 +17,53 @@
                 "xdm:token": {
                     "title": "Token",
                     "type": "string",
-                    "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID."
+                    "description": "The service specific token used to address the application for communication for example, an Apple APN ID or a Google GCM ID.",
+                    "meta:titleId": "pushnotificationtoken##xdm:token##title##91001",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:token##description##91901"
                 },
                 "xdm:registrationDate": {
                     "title": "Registration date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date and time when the profile has authorized the application to receive push notifications."
+                    "description": "Date and time when the profile has authorized the application to receive push notifications.",
+                    "meta:titleId": "pushnotificationtoken##xdm:registrationDate##title##11191",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:registrationDate##description##55271"
                 },
                 "xdm:deregistrationDate": {
                     "title": "De-registration date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date and time when the profile has disabled push notifications on the application."
+                    "description": "Date and time when the profile has disabled push notifications on the application.",
+                    "meta:titleId": "pushnotificationtoken##xdm:deregistrationDate##title##43631",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:deregistrationDate##description##91091"
                 },
                 "xdm:environment": {
                     "title": "Environment",
                     "$ref": "https://ns.adobe.com/xdm/context/environment",
-                    "description": "Environment of at the time of the registration."
+                    "description": "Environment of at the time of the registration.",
+                    "meta:titleId": "pushnotificationtoken##xdm:environment##title##96531",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:environment##description##76991"
                 },
                 "xdm:device": {
                     "title": "Device",
                     "$ref": "https://ns.adobe.com/xdm/context/device",
-                    "description": "The device originating the registration."
+                    "description": "The device originating the registration.",
+                    "meta:titleId": "pushnotificationtoken##xdm:device##title##11391",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:device##description##36251"
                 },
                 "xdm:application": {
                     "title": "Application",
                     "$ref": "https://ns.adobe.com/xdm/context/application",
-                    "description": "Application registered to receive push notifications."
+                    "description": "Application registered to receive push notifications.",
+                    "meta:titleId": "pushnotificationtoken##xdm:application##title##47031",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:application##description##90391"
                 },
                 "xdm:channel": {
                     "title": "Communication channel",
                     "$ref": "https://ns.adobe.com/xdm/channels/channel",
-                    "description": "Channels for communicating with customers or users."
+                    "description": "Channels for communicating with customers or users.",
+                    "meta:titleId": "pushnotificationtoken##xdm:channel##title##96171",
+                    "meta:descriptionId": "pushnotificationtoken##xdm:channel##description##11541"
                 }
             }
         }
@@ -64,6 +78,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "pushnotificationtoken##title##26111",
+    "meta:descriptionId": "pushnotificationtoken##description##39061",
     "examples": [
         {
             "xdm:token": "ABC123DEFG",

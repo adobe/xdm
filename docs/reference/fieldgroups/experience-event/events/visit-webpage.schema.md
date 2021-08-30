@@ -70,9 +70,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "visit-webpage##xdm:userAgent##title##79171",
+      "meta:descriptionId": "visit-webpage##xdm:userAgent##description##89661"
     }
   },
+  "meta:titleId": "visit-webpage##xdm:browserDetails##title##21821",
+  "meta:descriptionId": "visit-webpage##xdm:browserDetails##description##68871",
   "simpletype": "`object`"
 }
 ```
@@ -220,30 +224,41 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique ID of the web page."
+      "description": "Unique ID of the web page.",
+      "meta:titleId": "visit-webpage##xdm:webPageID##title##45021",
+      "meta:descriptionId": "visit-webpage##xdm:webPageID##description##94771"
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
-      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+      "meta:titleId": "visit-webpage##xdm:name##title##21231",
+      "meta:descriptionId": "visit-webpage##xdm:name##description##80931"
     },
     "xdm:URL": {
       "title": "URL",
       "type": "string",
       "format": "uri",
-      "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`."
+      "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+      "meta:titleId": "visit-webpage##xdm:URL##title##84361",
+      "meta:descriptionId": "visit-webpage##xdm:URL##description##28161"
     },
     "xdm:queryParameters": {
       "title": "Query Parameters",
       "type": "string",
-      "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url.",
+      "meta:titleId": "visit-webpage##xdm:queryParameters##title##55151",
+      "meta:descriptionId": "visit-webpage##xdm:queryParameters##description##80861"
     },
     "xdm:isPersonalizedURL": {
       "title": "Is Personalized URL",
       "type": "boolean",
-      "description": "Boolean indicating if person accessed the web page via a personalized URL."
+      "description": "Boolean indicating if person accessed the web page via a personalized URL.",
+      "meta:titleId": "visit-webpage##xdm:isPersonalizedURL##title##61871",
+      "meta:descriptionId": "visit-webpage##xdm:isPersonalizedURL##description##75361"
     }
   },
+  "meta:titleId": "visit-webpage##xdm:webPageDetails##title##28201",
   "simpletype": "`object`"
 }
 ```
@@ -275,9 +290,12 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "URL of the referring web page."
+      "description": "URL of the referring web page.",
+      "meta:titleId": "visit-webpage##xdm:URL##title##21741",
+      "meta:descriptionId": "visit-webpage##xdm:URL##description##46981"
     }
   },
+  "meta:titleId": "visit-webpage##xdm:webReferrer##title##79211",
   "simpletype": "`object`"
 }
 ```

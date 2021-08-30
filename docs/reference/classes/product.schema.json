@@ -37,39 +37,53 @@
                 "xdm:productID": {
                     "title": "Product ID",
                     "type": "string",
-                    "description": "Product unique identifer."
+                    "description": "Product unique identifer.",
+                    "meta:titleId": "product##xdm:productID##title##92401",
+                    "meta:descriptionId": "product##xdm:productID##description##27441"
                 },
                 "xdm:productName": {
                     "title": "Product Name",
                     "type": "string",
-                    "description": "Name of the product."
+                    "description": "Name of the product.",
+                    "meta:titleId": "product##xdm:productName##title##90451",
+                    "meta:descriptionId": "product##xdm:productName##description##87721"
                 },
                 "xdm:productDescription": {
                     "title": "Product Description",
                     "type": "string",
-                    "description": "Description of the product."
+                    "description": "Description of the product.",
+                    "meta:titleId": "product##xdm:productDescription##title##99191",
+                    "meta:descriptionId": "product##xdm:productDescription##description##90281"
                 },
                 "xdm:productRating": {
                     "title": "Product Rating",
                     "type": "number",
-                    "description": "Customer review rating of the product."
+                    "description": "Customer review rating of the product.",
+                    "meta:titleId": "product##xdm:productRating##title##86071",
+                    "meta:descriptionId": "product##xdm:productRating##description##8571"
                 },
                 "xdm:productListPrice": {
                     "title": "Product List price",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                    "description": "Default price of the product before sales and discounting."
+                    "description": "Default price of the product before sales and discounting.",
+                    "meta:titleId": "product##xdm:productListPrice##title##20351",
+                    "meta:descriptionId": "product##xdm:productListPrice##description##52711"
                 },
                 "xdm:productManufacturedDate": {
                     "title": "Product Manufactured date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+                    "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+                    "meta:titleId": "product##xdm:productManufacturedDate##title##61461",
+                    "meta:descriptionId": "product##xdm:productManufacturedDate##description##9801"
                 },
                 "xdm:productLastModifiedDate": {
                     "title": "Product last modified Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\"."
+                    "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+                    "meta:titleId": "product##xdm:productLastModifiedDate##title##94071",
+                    "meta:descriptionId": "product##xdm:productLastModifiedDate##description##2981"
                 }
             }
         }
@@ -84,6 +98,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-10-16",
+    "meta:titleId": "product##title##78251",
+    "meta:descriptionId": "product##description##34291",
     "examples": [
         {
             "xdm:productID": "59yigdug",

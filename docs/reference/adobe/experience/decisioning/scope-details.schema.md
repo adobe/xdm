@@ -147,11 +147,15 @@ Unknown type ``.
       "type": "string",
       "format": "uri-reference",
       "title": "Experience Identifier",
-      "description": "A unique identifier for the decision option."
+      "description": "A unique identifier for the decision option.",
+      "meta:titleId": "scope-details##xdm:id##title##47581",
+      "meta:descriptionId": "scope-details##xdm:id##description##32311"
     }
   },
   "title": "Selected Experience Option",
   "description": "The experience that was selected when the decision was made.",
+  "meta:titleId": "scope-details##xdm:experience##title##59941",
+  "meta:descriptionId": "scope-details##xdm:experience##description##86341",
   "simpletype": "complex"
 }
 ```

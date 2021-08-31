@@ -23,15 +23,15 @@
           "title": "Tail Number",
           "type": "string",
           "description": "Captures the tail number (identification string) for the aircraft.",
-          "meta:titleId": "aircraft##xdm:tailNumber##title##19411",
-          "meta:descriptionId": "aircraft##xdm:tailNumber##description##68341"
+          "meta:titleId": "aircraft##xdm:tailNumber##title##571",
+          "meta:descriptionId": "aircraft##xdm:tailNumber##description##97381"
         },
         "xdm:aircraftType": {
           "title": "Aircraft Type",
           "type": "string",
           "description": "Records the aircraft type.",
-          "meta:titleId": "aircraft##xdm:aircraftType##title##48881",
-          "meta:descriptionId": "aircraft##xdm:aircraftType##description##82021"
+          "meta:titleId": "aircraft##xdm:aircraftType##title##1611",
+          "meta:descriptionId": "aircraft##xdm:aircraftType##description##74491"
         }
       }
     }
@@ -45,6 +45,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "aircraft##title##14491",
-  "meta:descriptionId": "aircraft##description##29181"
+  "meta:titleId": "aircraft##title##74691",
+  "meta:descriptionId": "aircraft##description##65501"
 }

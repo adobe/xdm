@@ -17,15 +17,15 @@
           "title": "Purchase ID",
           "type": "string",
           "description": "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.",
-          "meta:titleId": "order##xdm:purchaseID##title##84151",
-          "meta:descriptionId": "order##xdm:purchaseID##description##77201"
+          "meta:titleId": "order##xdm:purchaseID##title##55591",
+          "meta:descriptionId": "order##xdm:purchaseID##description##70271"
         },
         "xdm:purchaseOrderNumber": {
           "title": "Purchase Order Number",
           "type": "string",
           "description": "Unique identifier assigned by the purchaser for this purchase or contract.",
-          "meta:titleId": "order##xdm:purchaseOrderNumber##title##10541",
-          "meta:descriptionId": "order##xdm:purchaseOrderNumber##description##44981"
+          "meta:titleId": "order##xdm:purchaseOrderNumber##title##23251",
+          "meta:descriptionId": "order##xdm:purchaseOrderNumber##description##51741"
         },
         "xdm:payments": {
           "title": "Payment List",
@@ -34,8 +34,8 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/data/paymentitem"
           },
-          "meta:titleId": "order##xdm:payments##title##87721",
-          "meta:descriptionId": "order##xdm:payments##description##70201"
+          "meta:titleId": "order##xdm:payments##title##70501",
+          "meta:descriptionId": "order##xdm:payments##description##67541"
         },
         "xdm:currencyCode": {
           "title": "Currency",
@@ -43,15 +43,15 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the order totals.",
-          "meta:titleId": "order##xdm:currencyCode##title##44601",
-          "meta:descriptionId": "order##xdm:currencyCode##description##11951"
+          "meta:titleId": "order##xdm:currencyCode##title##81771",
+          "meta:descriptionId": "order##xdm:currencyCode##description##51121"
         },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",
           "description": "The total price of this order after all discounts and taxes have been applied.",
-          "meta:titleId": "order##xdm:priceTotal##title##18711",
-          "meta:descriptionId": "order##xdm:priceTotal##description##87481"
+          "meta:titleId": "order##xdm:priceTotal##title##86151",
+          "meta:descriptionId": "order##xdm:priceTotal##description##47781"
         }
       }
     }
@@ -63,6 +63,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "order##title##66121",
-  "meta:descriptionId": "order##description##96641"
+  "meta:titleId": "order##title##821",
+  "meta:descriptionId": "order##description##62901"
 }

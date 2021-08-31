@@ -139,16 +139,16 @@ Unknown type `object`.
             "type": "string",
             "maxLength": 64
           },
-          "meta:titleId": "airship-event##airship:categories##title",
-          "meta:descriptionId": "airship-event##airship:categories##description"
+          "meta:titleId": "airship-event##airship:categories##title##40711",
+          "meta:descriptionId": "airship-event##airship:categories##description##26861"
         }
       },
-      "meta:titleId": "airship-event##airship:campaigns##title",
-      "meta:descriptionId": "airship-event##airship:campaigns##description"
+      "meta:titleId": "airship-event##airship:campaigns##title##19011",
+      "meta:descriptionId": "airship-event##airship:campaigns##description##78961"
     }
   },
-  "meta:titleId": "airship-event##airship:campaign##title",
-  "meta:descriptionId": "airship-event##airship:campaign##description",
+  "meta:titleId": "airship-event##airship:campaign##title##73181",
+  "meta:descriptionId": "airship-event##airship:campaign##description##72221",
   "simpletype": "`object`"
 }
 ```
@@ -220,8 +220,8 @@ Unknown type `object`.
         "unsubscribe",
         "commercial"
       ],
-      "meta:titleId": "airship-event##airship:messageType##title",
-      "meta:descriptionId": "airship-event##airship:messageType##description"
+      "meta:titleId": "airship-event##airship:messageType##title##79981",
+      "meta:descriptionId": "airship-event##airship:messageType##description##49551"
     },
     "airship:registrationType": {
       "title": "Registration Type",
@@ -237,48 +237,48 @@ Unknown type `object`.
         "update": "Update",
         "unsubscribe": "Unsubscribe"
       },
-      "meta:titleId": "airship-event##airship:registrationType##title",
-      "meta:descriptionId": "airship-event##airship:registrationType##description"
+      "meta:titleId": "airship-event##airship:registrationType##title##4131",
+      "meta:descriptionId": "airship-event##airship:registrationType##description##49101"
     },
     "airship:commercialOptedIn": {
       "title": "Commercial Opted In Date",
       "description": "The date and time when the user opted into commercial email messages.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "airship-event##airship:commercialOptedIn##title",
-      "meta:descriptionId": "airship-event##airship:commercialOptedIn##description"
+      "meta:titleId": "airship-event##airship:commercialOptedIn##title##60001",
+      "meta:descriptionId": "airship-event##airship:commercialOptedIn##description##92861"
     },
     "airship:bounceClass": {
       "title": "Bounce Class",
       "description": "The bounce classification as provided by Airship email partners.",
       "type": "number",
-      "meta:titleId": "airship-event##airship:bounceClass##title",
-      "meta:descriptionId": "airship-event##airship:bounceClass##description"
+      "meta:titleId": "airship-event##airship:bounceClass##title##34081",
+      "meta:descriptionId": "airship-event##airship:bounceClass##description##43931"
     },
     "airship:bounceEmail": {
       "title": "Bounce Email Address",
       "description": "The email address that bounced.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:bounceEmail##title",
-      "meta:descriptionId": "airship-event##airship:bounceEmail##description"
+      "meta:titleId": "airship-event##airship:bounceEmail##title##26371",
+      "meta:descriptionId": "airship-event##airship:bounceEmail##description##17051"
     },
     "airship:bounceSender": {
       "title": "Bounce Sender",
       "description": "The address that the bounced email came from (typically the sender address for your project in Airship).",
       "type": "string",
-      "meta:titleId": "airship-event##airship:bounceSender##title",
-      "meta:descriptionId": "airship-event##airship:bounceSender##description"
+      "meta:titleId": "airship-event##airship:bounceSender##title##34361",
+      "meta:descriptionId": "airship-event##airship:bounceSender##description##69861"
     },
     "airship:bounceSubject": {
       "title": "Bounce Subject",
       "description": "The subject line of the bounced email.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:bounceSubject##title",
-      "meta:descriptionId": "airship-event##airship:bounceSubject##description"
+      "meta:titleId": "airship-event##airship:bounceSubject##title##38851",
+      "meta:descriptionId": "airship-event##airship:bounceSubject##description##49491"
     }
   },
-  "meta:titleId": "airship-event##airship:complianceProperties##title",
-  "meta:descriptionId": "airship-event##airship:complianceProperties##description",
+  "meta:titleId": "airship-event##airship:complianceProperties##title##66911",
+  "meta:descriptionId": "airship-event##airship:complianceProperties##description##28751",
   "simpletype": "`object`"
 }
 ```
@@ -350,49 +350,49 @@ Unknown type `object`.
                 "type": "string",
                 "maxLength": 64
               },
-              "meta:titleId": "airship-event##airship:categories##title",
-              "meta:descriptionId": "airship-event##airship:categories##description"
+              "meta:titleId": "airship-event##airship:categories##title##78761",
+              "meta:descriptionId": "airship-event##airship:categories##description##60371"
             }
           },
-          "meta:titleId": "airship-event##airship:campaigns##title",
-          "meta:descriptionId": "airship-event##airship:campaigns##description"
+          "meta:titleId": "airship-event##airship:campaigns##title##57851",
+          "meta:descriptionId": "airship-event##airship:campaigns##description##72511"
         }
       },
-      "meta:titleId": "airship-event##airship:campaign##title",
-      "meta:descriptionId": "airship-event##airship:campaign##description"
+      "meta:titleId": "airship-event##airship:campaign##title##84011",
+      "meta:descriptionId": "airship-event##airship:campaign##description##60871"
     },
     "airship:pushID": {
       "title": "Push ID",
       "description": "A unique identifier for a push operation.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:pushID##title",
-      "meta:descriptionId": "airship-event##airship:pushID##description"
+      "meta:titleId": "airship-event##airship:pushID##title##80961",
+      "meta:descriptionId": "airship-event##airship:pushID##description##8521"
     },
     "airship:groupID": {
       "title": "Airship Group ID",
       "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:groupID##title",
-      "meta:descriptionId": "airship-event##airship:groupID##description"
+      "meta:titleId": "airship-event##airship:groupID##title##901",
+      "meta:descriptionId": "airship-event##airship:groupID##description##73991"
     },
     "airship:variantID": {
       "title": "Airship Variant ID",
       "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
       "type": "string",
-      "meta:titleId": "airship-event##airship:variantID##title",
-      "meta:descriptionId": "airship-event##airship:variantID##description"
+      "meta:titleId": "airship-event##airship:variantID##title##99741",
+      "meta:descriptionId": "airship-event##airship:variantID##description##29781"
     },
     "airship:pushTime": {
       "title": "Push Time",
       "description": "The UTC time when the push occurred.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "airship-event##airship:pushTime##title",
-      "meta:descriptionId": "airship-event##airship:pushTime##description"
+      "meta:titleId": "airship-event##airship:pushTime##title##42441",
+      "meta:descriptionId": "airship-event##airship:pushTime##description##57411"
     }
   },
-  "meta:titleId": "airship-event##airship:lastDelivered##title",
-  "meta:descriptionId": "airship-event##airship:lastDelivered##description",
+  "meta:titleId": "airship-event##airship:lastDelivered##title##56541",
+  "meta:descriptionId": "airship-event##airship:lastDelivered##description##43141",
   "simpletype": "`object`"
 }
 ```
@@ -528,49 +528,49 @@ Unknown type `object`.
                 "type": "string",
                 "maxLength": 64
               },
-              "meta:titleId": "airship-event##airship:categories##title",
-              "meta:descriptionId": "airship-event##airship:categories##description"
+              "meta:titleId": "airship-event##airship:categories##title##46201",
+              "meta:descriptionId": "airship-event##airship:categories##description##92371"
             }
           },
-          "meta:titleId": "airship-event##airship:campaigns##title",
-          "meta:descriptionId": "airship-event##airship:campaigns##description"
+          "meta:titleId": "airship-event##airship:campaigns##title##73301",
+          "meta:descriptionId": "airship-event##airship:campaigns##description##28451"
         }
       },
-      "meta:titleId": "airship-event##airship:campaign##title",
-      "meta:descriptionId": "airship-event##airship:campaign##description"
+      "meta:titleId": "airship-event##airship:campaign##title##46711",
+      "meta:descriptionId": "airship-event##airship:campaign##description##3761"
     },
     "airship:pushID": {
       "title": "Push ID",
       "description": "A unique identifier for a push operation.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:pushID##title",
-      "meta:descriptionId": "airship-event##airship:pushID##description"
+      "meta:titleId": "airship-event##airship:pushID##title##75051",
+      "meta:descriptionId": "airship-event##airship:pushID##description##86151"
     },
     "airship:groupID": {
       "title": "Airship Group ID",
       "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:groupID##title",
-      "meta:descriptionId": "airship-event##airship:groupID##description"
+      "meta:titleId": "airship-event##airship:groupID##title##44571",
+      "meta:descriptionId": "airship-event##airship:groupID##description##16741"
     },
     "airship:variantID": {
       "title": "Airship Variant ID",
       "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
       "type": "string",
-      "meta:titleId": "airship-event##airship:variantID##title",
-      "meta:descriptionId": "airship-event##airship:variantID##description"
+      "meta:titleId": "airship-event##airship:variantID##title##39801",
+      "meta:descriptionId": "airship-event##airship:variantID##description##47991"
     },
     "airship:pushTime": {
       "title": "Push Time",
       "description": "The UTC time when the push occurred.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "airship-event##airship:pushTime##title",
-      "meta:descriptionId": "airship-event##airship:pushTime##description"
+      "meta:titleId": "airship-event##airship:pushTime##title##75891",
+      "meta:descriptionId": "airship-event##airship:pushTime##description##15231"
     }
   },
-  "meta:titleId": "airship-event##airship:triggeringPush##title",
-  "meta:descriptionId": "airship-event##airship:triggeringPush##description",
+  "meta:titleId": "airship-event##airship:triggeringPush##title##55441",
+  "meta:descriptionId": "airship-event##airship:triggeringPush##description##15141",
   "simpletype": "`object`"
 }
 ```
@@ -650,19 +650,19 @@ Unknown type `object`.
       "title": "Airship Locale Variant",
       "description": "The language locale variant if one is reported for the device..",
       "type": "string",
-      "meta:titleId": "airship-event##airship:localeVariant##title",
-      "meta:descriptionId": "airship-event##airship:localeVariant##description"
+      "meta:titleId": "airship-event##airship:localeVariant##title##16871",
+      "meta:descriptionId": "airship-event##airship:localeVariant##description##44721"
     },
     "airship:uaSdkVersion": {
       "title": "Airship SDK Version",
       "description": "The version of the Airship SDK used in the app.",
       "type": "string",
-      "meta:titleId": "airship-event##airship:uaSdkVersion##title",
-      "meta:descriptionId": "airship-event##airship:uaSdkVersion##description"
+      "meta:titleId": "airship-event##airship:uaSdkVersion##title##36071",
+      "meta:descriptionId": "airship-event##airship:uaSdkVersion##description##60321"
     }
   },
-  "meta:titleId": "airship-event##airship:attributes##title",
-  "meta:descriptionId": "airship-event##airship:attributes##description",
+  "meta:titleId": "airship-event##airship:attributes##title##22751",
+  "meta:descriptionId": "airship-event##airship:attributes##description##99491",
   "simpletype": "`object`"
 }
 ```
@@ -699,7 +699,7 @@ An identifier that represents the events location in the Airship event stream an
 ## xdm:application
 ### Application
 
-Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

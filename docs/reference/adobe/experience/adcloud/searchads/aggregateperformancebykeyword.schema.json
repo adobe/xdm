@@ -21,27 +21,37 @@
                 "searchads:accountId": {
                     "title": "Account Identifier",
                     "type": "string",
-                    "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform."
+                    "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:accountId##title##52861",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:accountId##description##29081"
                 },
                 "searchads:campaignId": {
                     "title": "Campaign Identifier",
                     "type": "string",
-                    "description": "Campaign ID on the search advertising platform.."
+                    "description": "Campaign ID on the search advertising platform..",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:campaignId##title##59451",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:campaignId##description##25051"
                 },
                 "searchads:adgroupId": {
                     "title": "Ad Group Identifier",
                     "type": "string",
-                    "description": "Ad Group ID on the search advertising platform."
+                    "description": "Ad Group ID on the search advertising platform.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:adgroupId##title##19391",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:adgroupId##description##95111"
                 },
                 "searchads:termId": {
                     "title": "Search Term Identifier",
                     "type": "string",
-                    "description": "Search Term ID on the search advertising platform."
+                    "description": "Search Term ID on the search advertising platform.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:termId##title##51021",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:termId##description##54181"
                 },
                 "searchads:term": {
                     "title": "Search Term",
                     "type": "string",
-                    "description": "Search Term targeted for the Ad."
+                    "description": "Search Term targeted for the Ad.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:term##title##77981",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:term##description##62991"
                 },
                 "searchads:matchType": {
                     "title": "Term Match Type",
@@ -82,41 +92,53 @@
                         "Adgroup": "Adgroup",
                         "Dynamic Ad Target": "Dynamic Ad Target",
                         "Unknown": "Unknown"
-                    }
+                    },
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:matchType##title##90981",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:matchType##description##40331"
                 },
                 "searchads:searchEngineId": {
                     "title": "Search Engine Identifier",
                     "type": "integer",
-                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:searchEngineId##title##68991",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:searchEngineId##description##65221"
                 },
                 "searchads:clicks": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Count of Clicks for a given ad displayed on the network."
+                    "description": "Count of Clicks for a given ad displayed on the network.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:clicks##description##34031"
                 },
                 "searchads:impressions": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Count of impressions for a given ad displayed on the network."
+                    "description": "Count of impressions for a given ad displayed on the network.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:impressions##description##2131"
                 },
                 "searchads:totalCost": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network."
+                    "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:totalCost##description##48441"
                 },
                 "searchads:avgPosition": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Average Position of the Ad displayed on the network."
+                    "description": "Average Position of the Ad displayed on the network.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:avgPosition##description##50171"
                 },
                 "searchads:topPageBid": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure."
+                    "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:topPageBid##description##94671"
                 },
                 "searchads:qualityScore": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure."
+                    "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:qualityScore##description##8471"
                 },
                 "searchads:device": {
                     "title": "Device",
                     "$ref": "https://ns.adobe.com/xdm/context/device",
-                    "description": "The device from where the ad was displayed."
+                    "description": "The device from where the ad was displayed.",
+                    "meta:titleId": "aggregateperformancebykeyword##searchads:device##title##1301",
+                    "meta:descriptionId": "aggregateperformancebykeyword##searchads:device##description##18511"
                 }
             }
         }
@@ -130,5 +152,7 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "aggregateperformancebykeyword##title##20391",
+    "meta:descriptionId": "aggregateperformancebykeyword##description##12731",
     "examples": []
 }

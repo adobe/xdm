@@ -21,19 +21,19 @@
                     "type": "string",
                     "const": "xdm:productListReopens",
                     "description": "The unique identifier of this metric.",
-                    "meta:descriptionId": "product-list-reopens##@id##description##2681"
+                    "meta:descriptionId": "product-list-reopens##@id##description##83271"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "commerce metric: productListReopens",
                     "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-                    "meta:descriptionId": "product-list-reopens##schema:name##description##96301"
+                    "meta:descriptionId": "product-list-reopens##schema:name##description##40201"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
                     "const": "count",
-                    "meta:descriptionId": "product-list-reopens##xdm:measurement##description##60651"
+                    "meta:descriptionId": "product-list-reopens##xdm:measurement##description##85631"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -57,8 +57,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "product-list-reopens##title##94981",
-    "meta:descriptionId": "product-list-reopens##description##73331",
+    "meta:titleId": "product-list-reopens##title##47461",
+    "meta:descriptionId": "product-list-reopens##description##31721",
     "examples": [
         {
             "schema:name": "commerce metric: productListReopens",

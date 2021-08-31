@@ -18,58 +18,58 @@
           "title": "File Name",
           "type": "string",
           "description": "Friendly name of the file being up/downloaded by the visitor.",
-          "meta:titleId": "file-transfer##xdm:fileName##title##24221",
-          "meta:descriptionId": "file-transfer##xdm:fileName##description##92231"
+          "meta:titleId": "file-transfer##xdm:fileName##title##6091",
+          "meta:descriptionId": "file-transfer##xdm:fileName##description##63481"
         },
         "xdm:fileSize": {
           "title": "File Size",
           "type": "number",
           "description": "File size of file being up/downloaded by the visitor.",
-          "meta:titleId": "file-transfer##xdm:fileSize##title##35301",
-          "meta:descriptionId": "file-transfer##xdm:fileSize##description##19481"
+          "meta:titleId": "file-transfer##xdm:fileSize##title##90141",
+          "meta:descriptionId": "file-transfer##xdm:fileSize##description##43241"
         },
         "xdm:fileTransferComplete": {
           "title": "File Transfer Complete",
           "type": "integer",
           "description": "Captured when a file transfer is successfully completed.",
-          "meta:titleId": "file-transfer##xdm:fileTransferComplete##title##72451",
-          "meta:descriptionId": "file-transfer##xdm:fileTransferComplete##description##38711"
+          "meta:titleId": "file-transfer##xdm:fileTransferComplete##title##30801",
+          "meta:descriptionId": "file-transfer##xdm:fileTransferComplete##description##71021"
         },
         "xdm:fileTransferStart": {
           "title": "File Transfer Start",
           "type": "integer",
           "description": "Captured when a file transfer is initiated.",
-          "meta:titleId": "file-transfer##xdm:fileTransferStart##title##67511",
-          "meta:descriptionId": "file-transfer##xdm:fileTransferStart##description##72971"
+          "meta:titleId": "file-transfer##xdm:fileTransferStart##title##79711",
+          "meta:descriptionId": "file-transfer##xdm:fileTransferStart##description##27271"
         },
         "xdm:fileTransferError": {
           "title": "File Transfer Error",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Captured when an error occurs during the  file transfer process.",
-          "meta:titleId": "file-transfer##xdm:fileTransferError##title##44251",
-          "meta:descriptionId": "file-transfer##xdm:fileTransferError##description##30771"
+          "meta:titleId": "file-transfer##xdm:fileTransferError##title##85701",
+          "meta:descriptionId": "file-transfer##xdm:fileTransferError##description##43761"
         },
         "xdm:fileTransferType": {
           "title": "File Transfer Type",
           "type": "string",
           "description": "Type of the file transfer, if applicable.",
-          "meta:titleId": "file-transfer##xdm:fileTransferType##title##46121",
-          "meta:descriptionId": "file-transfer##xdm:fileTransferType##description##96971"
+          "meta:titleId": "file-transfer##xdm:fileTransferType##title##8431",
+          "meta:descriptionId": "file-transfer##xdm:fileTransferType##description##59371"
         },
         "xdm:fileType": {
           "title": "File Type",
           "type": "string",
           "description": "Type or category of file being up/downloaded by the visitor.",
-          "meta:titleId": "file-transfer##xdm:fileType##title##2221",
-          "meta:descriptionId": "file-transfer##xdm:fileType##description##77301"
+          "meta:titleId": "file-transfer##xdm:fileType##title##54491",
+          "meta:descriptionId": "file-transfer##xdm:fileType##description##25141"
         },
         "xdm:fileURL": {
           "title": "File URL",
           "format": "uri",
           "type": "string",
           "description": "URL of file being up/downloaded by the visitor.",
-          "meta:titleId": "file-transfer##xdm:fileURL##title##59021",
-          "meta:descriptionId": "file-transfer##xdm:fileURL##description##18231"
+          "meta:titleId": "file-transfer##xdm:fileURL##title##27191",
+          "meta:descriptionId": "file-transfer##xdm:fileURL##description##83511"
         }
       }
     }
@@ -81,6 +81,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "file-transfer##title##54691",
-  "meta:descriptionId": "file-transfer##description##25761"
+  "meta:titleId": "file-transfer##title##24201",
+  "meta:descriptionId": "file-transfer##description##74881"
 }

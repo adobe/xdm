@@ -19,19 +19,19 @@
           "type": "string",
           "const": "xdm:pageViews",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "pageviews##@id##description##64201"
+          "meta:descriptionId": "pageviews##@id##description##3271"
         },
         "schema:name": {
           "type": "string",
           "const": "web metric: pageViews",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "pageviews##schema:name##description##80611"
+          "meta:descriptionId": "pageviews##schema:name##description##70061"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "const": "count",
-          "meta:descriptionId": "pageviews##xdm:measurement##description##80601"
+          "meta:descriptionId": "pageviews##xdm:measurement##description##88381"
         },
         "xdm:unit": {
           "const": ""
@@ -50,6 +50,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "pageviews##title##111",
-  "meta:descriptionId": "pageviews##description##51121"
+  "meta:titleId": "pageviews##title##73631",
+  "meta:descriptionId": "pageviews##description##35001"
 }

@@ -19,16 +19,16 @@
           "title": "Unique Identifier",
           "type": "string",
           "description": "Unique identifier of the measure. In cases of data collection using lossy communication channels, such as mobile apps or websites with offline functionality, where transmission of measures cannot be ensured, this property contains a client-generated, unique ID of the measure taken. It is best practice to make this sufficiently long to ensure enough entropy. Additionally, if information such as time stamp, device ID, IP, or MAC address, or other potentially user-identifying values are incorporated in the generation of the xdm:id, the result should be hashed, so that no PII is encoded in the value, as the goal is not to identify user or device, but the specific measure in time.",
-          "meta:titleId": "measure##xdm:id##title##51151",
-          "meta:descriptionId": "measure##xdm:id##description##42481"
+          "meta:titleId": "measure##xdm:id##title##74051",
+          "meta:descriptionId": "measure##xdm:id##description##52491"
         },
         "xdm:value": {
           "type": "number",
           "description": "The quantifiable value of this measure.",
-          "meta:descriptionId": "measure##xdm:value##description##56011"
+          "meta:descriptionId": "measure##xdm:value##description##88071"
         }
       },
-      "meta:descriptionId": "measure##measure##description##42701"
+      "meta:descriptionId": "measure##measure##description##50241"
     }
   },
   "allOf": [
@@ -39,6 +39,6 @@
   "required": ["xdm:value"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "measure##title##1661",
-  "meta:descriptionId": "measure##description##65471"
+  "meta:titleId": "measure##title##15111",
+  "meta:descriptionId": "measure##description##51571"
 }

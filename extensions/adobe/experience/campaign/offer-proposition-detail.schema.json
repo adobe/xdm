@@ -18,12 +18,16 @@
         "xdm:activity": {
           "title": "Offer Activity Detail",
           "description": "Snapshot of the Activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
-          "$ref": "https://ns.adobe.com/experience/offer-management/offer-activity-detail"
+          "$ref": "https://ns.adobe.com/experience/offer-management/offer-activity-detail",
+          "meta:titleId": "offer-proposition-detail##xdm:activity##title##66041",
+          "meta:descriptionId": "offer-proposition-detail##xdm:activity##description##78601"
         },
         "xdm:offer": {
           "title": "Campaign Offer Detail",
           "description": "Snapshot of the Offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an Offer.",
-          "$ref": "https://ns.adobe.com/experience/campaign/offer-detail"
+          "$ref": "https://ns.adobe.com/experience/campaign/offer-detail",
+          "meta:titleId": "offer-proposition-detail##xdm:offer##title##38101",
+          "meta:descriptionId": "offer-proposition-detail##xdm:offer##description##10551"
         }
       }
     }
@@ -36,5 +40,7 @@
       "$ref": "#/definitions/proposition-detail-datatype"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "offer-proposition-detail##title##45831",
+  "meta:descriptionId": "offer-proposition-detail##description##25151"
 }

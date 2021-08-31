@@ -18,7 +18,8 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv4",
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##94181"
         }
       }
     },
@@ -26,7 +27,8 @@
       "properties": {
         "xdm:environment": {
           "title": "Environment Details",
-          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6"
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/ipv6",
+          "meta:titleId": "edge-autofilled-environment-details##xdm:environment##title##38511"
         }
       }
     },
@@ -37,7 +39,8 @@
           "properties": {
             "xdm:browserDetails": {
               "title": "Browser Details",
-              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent"
+              "$ref": "https://ns.adobe.com/xdm/context/browserdetails#/definitions/user-agent",
+              "meta:titleId": "edge-autofilled-environment-details##xdm:browserDetails##title##83691"
             }
           }
         }
@@ -119,5 +122,7 @@
       "$ref": "#/definitions/edge-environment-longitude"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "edge-autofilled-environment-details##title##38641",
+  "meta:descriptionId": "edge-autofilled-environment-details##description##55241"
 }

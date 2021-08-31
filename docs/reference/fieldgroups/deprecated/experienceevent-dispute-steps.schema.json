@@ -30,8 +30,8 @@
                             "title": "Dispute",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:titleId": "experienceevent-dispute-steps##xdm:dispute##title##78201",
-                            "meta:descriptionId": "experienceevent-dispute-steps##xdm:dispute##description##98981"
+                            "meta:titleId": "experienceevent-dispute-steps##xdm:dispute##title##72581",
+                            "meta:descriptionId": "experienceevent-dispute-steps##xdm:dispute##description##82641"
                         }
                     }
                 }
@@ -45,8 +45,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "experienceevent-dispute-steps##title##9721",
-    "meta:descriptionId": "experienceevent-dispute-steps##description##95161",
+    "meta:titleId": "experienceevent-dispute-steps##title##40661",
+    "meta:descriptionId": "experienceevent-dispute-steps##description##47551",
     "examples": [
         {
             "xdm:disputes": {

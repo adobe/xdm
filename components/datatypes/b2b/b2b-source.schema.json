@@ -26,22 +26,22 @@
           "title": "Source Instance ID",
           "type": "string",
           "description": "Name of the platform with the source data.",
-          "meta:titleId": "b2b-source##xdm:sourceInstanceID##title##79151",
-          "meta:descriptionId": "b2b-source##xdm:sourceInstanceID##description##73871"
+          "meta:titleId": "b2b-source##xdm:sourceInstanceID##title##36261",
+          "meta:descriptionId": "b2b-source##xdm:sourceInstanceID##description##99011"
         },
         "xdm:sourceID": {
           "title": "Source ID",
           "type": "string",
           "description": "Identifier of the record from the source data.",
-          "meta:titleId": "b2b-source##xdm:sourceID##title##63001",
-          "meta:descriptionId": "b2b-source##xdm:sourceID##description##97471"
+          "meta:titleId": "b2b-source##xdm:sourceID##title##93071",
+          "meta:descriptionId": "b2b-source##xdm:sourceID##description##33021"
         },
         "xdm:sourceKey": {
           "title": "Source Key",
           "type": "string",
           "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId.",
-          "meta:titleId": "b2b-source##xdm:sourceKey##title##78891",
-          "meta:descriptionId": "b2b-source##xdm:sourceKey##description##71331"
+          "meta:titleId": "b2b-source##xdm:sourceKey##title##17431",
+          "meta:descriptionId": "b2b-source##xdm:sourceKey##description##99891"
         }
       }
     }
@@ -56,6 +56,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "b2b-source##title##19761",
-  "meta:descriptionId": "b2b-source##description##35281"
+  "meta:titleId": "b2b-source##title##53031",
+  "meta:descriptionId": "b2b-source##description##361"
 }

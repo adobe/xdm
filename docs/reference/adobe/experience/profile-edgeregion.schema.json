@@ -30,11 +30,15 @@
                                 "title": "Edge data capture timestamp",
                                 "type": "string",
                                 "format": "date-time",
-                                "description": "The time when data was captured on region node."
+                                "description": "The time when data was captured on region node.",
+                                "meta:titleId": "profile-edgeregion##xdm:captureTimestamp##title##591",
+                                "meta:descriptionId": "profile-edgeregion##xdm:captureTimestamp##description##16881"
                             }
                         }
                     },
-                    "description": "Map of Location and timestamp of regions where this profile was captured."
+                    "description": "Map of Location and timestamp of regions where this profile was captured.",
+                    "meta:titleId": "profile-edgeregion##xdm:userActivityRegions##title##22631",
+                    "meta:descriptionId": "profile-edgeregion##xdm:userActivityRegions##description##45901"
                 }
             }
         }
@@ -48,6 +52,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "profile-edgeregion##title##57561",
+    "meta:descriptionId": "profile-edgeregion##description##39101",
     "examples": [
         {
             "xdm:userActivityRegions": {

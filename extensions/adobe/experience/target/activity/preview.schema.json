@@ -16,7 +16,9 @@
         "xdm:forcedExperienceID": {
           "title": "Experience Identifier",
           "type": "string",
-          "description": "Activity experience identifier of previewed experience."
+          "description": "Activity experience identifier of previewed experience.",
+          "meta:titleId": "preview##xdm:forcedExperienceID##title##42391",
+          "meta:descriptionId": "preview##xdm:forcedExperienceID##description##12311"
         },
         "xdm:audienceIDsToEvaluateAsTrue": {
           "title": "Audience Identifiers to Evaluate as True.",
@@ -24,7 +26,9 @@
           "items": {
             "type": "string"
           },
-          "description": "Evaluated as matching audience identifiers."
+          "description": "Evaluated as matching audience identifiers.",
+          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsTrue##title##19901",
+          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsTrue##description##22571"
         },
         "xdm:audienceIDsToEvaluateAsFalse": {
           "title": "Audience Identifiers to Evaluate as False.",
@@ -32,7 +36,9 @@
           "items": {
             "type": "string"
           },
-          "description": "Evaluated as non-matching audience identifiers."
+          "description": "Evaluated as non-matching audience identifiers.",
+          "meta:titleId": "preview##xdm:audienceIDsToEvaluateAsFalse##title##21931",
+          "meta:descriptionId": "preview##xdm:audienceIDsToEvaluateAsFalse##description##93281"
         }
       }
     }
@@ -42,5 +48,7 @@
       "$ref": "#/definitions/activitypreview"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "preview##title##20501",
+  "meta:descriptionId": "preview##description##32391"
 }

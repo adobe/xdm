@@ -4,12 +4,16 @@
         "type": "integer",
         "description": "The timestamp for the first ExperienceEvent for this end-user. Milliseconds since midnight of January 1, 1970.",
         "minimum": 1,
-        "maximum": 9223372036854770000
+        "maximum": 9223372036854770000,
+        "meta:titleId": "experienceevent-all##xdm:firstTimestamp##title##9771",
+        "meta:descriptionId": "experienceevent-all##xdm:firstTimestamp##description##92531"
     },
     "xdm:firstWeb": {
         "title": "End-User First Web Details",
         "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-        "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user."
+        "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user.",
+        "meta:titleId": "experienceevent-all##xdm:firstWeb##title##5781",
+        "meta:descriptionId": "experienceevent-all##xdm:firstWeb##description##5461"
     },
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/analytics/endUser"

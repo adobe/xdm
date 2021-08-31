@@ -19,50 +19,50 @@
                     "title": "Chapter asset reference",
                     "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-asset-reference",
                     "description": "Asset information about the chapter captured by the experience event.",
-                    "meta:titleId": "media-timed-chapter##xdm:chapterAssetReference##title##18031",
-                    "meta:descriptionId": "media-timed-chapter##xdm:chapterAssetReference##description##2141"
+                    "meta:titleId": "media-timed-chapter##xdm:chapterAssetReference##title##62411",
+                    "meta:descriptionId": "media-timed-chapter##xdm:chapterAssetReference##description##11401"
                 },
                 "xdm:chapterAssetViewDetails": {
                     "title": "Chapter view details",
                     "$ref": "https://ns.adobe.com/xdm/context/media-timed-chapter-view-details",
                     "description": "View details for the chapter playback captured by the experience event.",
-                    "meta:titleId": "media-timed-chapter##xdm:chapterAssetViewDetails##title##19181",
-                    "meta:descriptionId": "media-timed-chapter##xdm:chapterAssetViewDetails##description##93361"
+                    "meta:titleId": "media-timed-chapter##xdm:chapterAssetViewDetails##title##32631",
+                    "meta:descriptionId": "media-timed-chapter##xdm:chapterAssetViewDetails##description##27011"
                 },
                 "xdm:impressions": {
                     "title": "Chapter starts",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
-                    "meta:titleId": "media-timed-chapter##xdm:impressions##title##72791",
-                    "meta:descriptionId": "media-timed-chapter##xdm:impressions##description##83551"
+                    "meta:titleId": "media-timed-chapter##xdm:impressions##title##89621",
+                    "meta:descriptionId": "media-timed-chapter##xdm:impressions##description##87821"
                 },
                 "xdm:completes": {
                     "title": "Chapter completes",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
-                    "meta:titleId": "media-timed-chapter##xdm:completes##title##63071",
-                    "meta:descriptionId": "media-timed-chapter##xdm:completes##description##12871"
+                    "meta:titleId": "media-timed-chapter##xdm:completes##title##29661",
+                    "meta:descriptionId": "media-timed-chapter##xdm:completes##description##7551"
                 },
                 "xdm:timePlayed": {
                     "title": "Chapter time spent",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Describes the amount of time in seconds spent by a user on a specific timed media asset.",
-                    "meta:titleId": "media-timed-chapter##xdm:timePlayed##title##48151",
-                    "meta:descriptionId": "media-timed-chapter##xdm:timePlayed##description##40971"
+                    "meta:titleId": "media-timed-chapter##xdm:timePlayed##title##71961",
+                    "meta:descriptionId": "media-timed-chapter##xdm:timePlayed##description##63241"
                 },
                 "xdm:federated": {
                     "title": "Chapter federated",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Indicates if an experience event was created through data federation or data sharing.",
-                    "meta:titleId": "media-timed-chapter##xdm:federated##title##15261",
-                    "meta:descriptionId": "media-timed-chapter##xdm:federated##description##16011"
+                    "meta:titleId": "media-timed-chapter##xdm:federated##title##57881",
+                    "meta:descriptionId": "media-timed-chapter##xdm:federated##description##30451"
                 },
                 "xdm:downloadedPlayback": {
                     "title": "Chapter downloaded flag",
                     "type": "boolean",
                     "description": "Set to true when the hit is generated due to playing a downloaded chapter content session.",
-                    "meta:titleId": "media-timed-chapter##xdm:downloadedPlayback##title##86101",
-                    "meta:descriptionId": "media-timed-chapter##xdm:downloadedPlayback##description##54051"
+                    "meta:titleId": "media-timed-chapter##xdm:downloadedPlayback##title##44991",
+                    "meta:descriptionId": "media-timed-chapter##xdm:downloadedPlayback##description##70721"
                 }
             }
         }
@@ -76,8 +76,8 @@
         }
     ],
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "media-timed-chapter##title##62051",
-    "meta:descriptionId": "media-timed-chapter##description##57241",
+    "meta:titleId": "media-timed-chapter##title##10661",
+    "meta:descriptionId": "media-timed-chapter##description##48891",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/media-chapter/2144511",

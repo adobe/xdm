@@ -18,57 +18,57 @@
                     "title": "Application identifier",
                     "type": "string",
                     "description": "Identifier of the application.",
-                    "meta:titleId": "application##xdm:id##title##54371",
-                    "meta:descriptionId": "application##xdm:id##description##26841"
+                    "meta:titleId": "application##xdm:id##title##361",
+                    "meta:descriptionId": "application##xdm:id##description##26071"
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
                     "description": "Name of the application.",
-                    "meta:titleId": "application##xdm:name##title##15871",
-                    "meta:descriptionId": "application##xdm:name##description##84341"
+                    "meta:titleId": "application##xdm:name##title##64771",
+                    "meta:descriptionId": "application##xdm:name##description##41941"
                 },
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
                     "description": "Version of the application.",
-                    "meta:titleId": "application##xdm:version##title##49321",
-                    "meta:descriptionId": "application##xdm:version##description##52981"
+                    "meta:titleId": "application##xdm:version##title##57861",
+                    "meta:descriptionId": "application##xdm:version##description##76111"
                 },
                 "xdm:applicationCloses": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Graceful termination of an application.",
-                    "meta:descriptionId": "application##xdm:applicationCloses##description##45211"
+                    "meta:descriptionId": "application##xdm:applicationCloses##description##26811"
                 },
                 "xdm:crashes": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash.",
-                    "meta:descriptionId": "application##xdm:crashes##description##98701"
+                    "meta:descriptionId": "application##xdm:crashes##description##70691"
                 },
                 "xdm:featureUsages": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Activation of an application feature that is being measured.",
-                    "meta:descriptionId": "application##xdm:featureUsages##description##72421"
+                    "meta:descriptionId": "application##xdm:featureUsages##description##55561"
                 },
                 "xdm:installs": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Install of an application on a device where the specific install event is available.",
-                    "meta:descriptionId": "application##xdm:installs##description##69761"
+                    "meta:descriptionId": "application##xdm:installs##description##34431"
                 },
                 "xdm:firstLaunches": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Triggered on first launch after install.",
-                    "meta:descriptionId": "application##xdm:firstLaunches##description##59261"
+                    "meta:descriptionId": "application##xdm:firstLaunches##description##62371"
                 },
                 "xdm:launches": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded.",
-                    "meta:descriptionId": "application##xdm:launches##description##96611"
+                    "meta:descriptionId": "application##xdm:launches##description##63161"
                 },
                 "xdm:upgrades": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
                     "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade.",
-                    "meta:descriptionId": "application##xdm:upgrades##description##30911"
+                    "meta:descriptionId": "application##xdm:upgrades##description##18931"
                 },
                 "xdm:userPerspective": {
                     "type": "string",
@@ -83,7 +83,7 @@
                         "background": "Background",
                         "detached": "Detached"
                     },
-                    "meta:descriptionId": "application##xdm:userPerspective##description##43841"
+                    "meta:descriptionId": "application##xdm:userPerspective##description##46671"
                 }
             }
         }
@@ -98,9 +98,14 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "application##title##75911",
-    "meta:descriptionId": "application##description##28921",
+    "meta:titleId": "application##title##16871",
+    "meta:descriptionId": "application##description##2701",
     "examples": [
+        {
+            "xdm:id": "A123",
+            "xdm:name": "Myapp",
+            "xdm:version": "1.0.1"
+        },
         {
             "xdm:id": "A123",
             "xdm:name": "Myapp",
@@ -109,11 +114,6 @@
                 "xdm:value": 1
             },
             "xdm:userPerspective": "foreground"
-        },
-        {
-            "xdm:id": "A123",
-            "xdm:name": "Myapp",
-            "xdm:version": "1.0.1"
         }
     ]
 }

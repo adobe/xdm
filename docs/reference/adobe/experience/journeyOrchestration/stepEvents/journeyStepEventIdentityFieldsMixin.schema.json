@@ -25,14 +25,19 @@
                         "https://ns.adobe.com/experience/journeyOrchestration/profileID": {
                             "title": "Profile ID",
                             "type": "string",
-                            "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com."
+                            "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com.",
+                            "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileID##title##19241",
+                            "meta:descriptionId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileID##description##86781"
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace": {
                             "title": "Profile Namespace",
                             "type": "string",
-                            "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID "
+                            "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID ",
+                            "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##title##17071",
+                            "meta:descriptionId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##description##39081"
                         }
-                    }
+                    },
+                    "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##92061"
                 }
             }
         }
@@ -43,6 +48,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "journeyStepEventIdentityFields##title##77311",
+    "meta:descriptionId": "journeyStepEventIdentityFields##description##54921",
     "examples": [
         {
             "https://ns.adobe.com/experience/journeyOrchestration/profileID": "johndoe@test.com",

@@ -22,19 +22,19 @@
                     "format": "uri-reference",
                     "const": "xdm:linkClicks",
                     "description": "The unique identifier of this metric.",
-                    "meta:descriptionId": "linkclicks##@id##description##16551"
+                    "meta:descriptionId": "linkclicks##@id##description##58821"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "web metric: linkClicks",
                     "description": "The web metric `link-clicks` describes the number of clicks on a link on a web page.",
-                    "meta:descriptionId": "linkclicks##schema:name##description##76701"
+                    "meta:descriptionId": "linkclicks##schema:name##description##30941"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
                     "const": "count",
-                    "meta:descriptionId": "linkclicks##xdm:measurement##description##14551"
+                    "meta:descriptionId": "linkclicks##xdm:measurement##description##40391"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -58,8 +58,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "linkclicks##title##8311",
-    "meta:descriptionId": "linkclicks##description##64691",
+    "meta:titleId": "linkclicks##title##53141",
+    "meta:descriptionId": "linkclicks##description##82701",
     "examples": [
         {
             "schema:name": "web metric: linkClicks",

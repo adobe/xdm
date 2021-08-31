@@ -33,8 +33,8 @@
                                     "title": "Campaign ID",
                                     "type": "string",
                                     "description": "Unique identifier of the Campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##25511",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##69551"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##82611",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##92571"
                                 },
                                 "xdm:campaignKey": {
                                     "title": "Campaign Key",
@@ -47,56 +47,56 @@
                                     "title": "New Status ID",
                                     "type": "string",
                                     "description": "ID of the lead's new status in the campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusID##title##82881",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusID##description##45051"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusID##title##9671",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusID##description##62811"
                                 },
                                 "xdm:newStatusName": {
                                     "title": "New Status Name",
                                     "type": "string",
                                     "description": "Friendly name of the lead's new status in the campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusName##title##95031",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusName##description##61321"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:newStatusName##title##22141",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:newStatusName##description##91131"
                                 },
                                 "xdm:oldStatusID": {
                                     "title": "Old Status ID",
                                     "type": "string",
                                     "description": "ID of the lead's previous status in the campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusID##title##22241",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusID##description##91801"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusID##title##67911",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusID##description##59681"
                                 },
                                 "xdm:oldStatusName": {
                                     "title": "Old Status Name",
                                     "type": "string",
                                     "description": "Friendly name of the lead's previous status in the campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusName##title##95881",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusName##description##39741"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:oldStatusName##title##37491",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:oldStatusName##description##20631"
                                 },
                                 "xdm:reason": {
                                     "title": "Reason",
                                     "type": "string",
                                     "description": "Reason for the change in the lead's status.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:reason##title##29811",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:reason##description##98561"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:reason##title##17191",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:reason##description##81611"
                                 },
                                 "xdm:isAcquiredBy": {
                                     "title": "Is Acquired By",
                                     "type": "boolean",
                                     "description": "Boolean indicating if lead was acquired by the campaign.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##title##1271",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##description##83951"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##title##67071",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isAcquiredBy##description##91521"
                                 },
                                 "xdm:isSuccessful": {
                                     "title": "Is Successful",
                                     "type": "boolean",
                                     "description": "Boolean indicating if there was a change in the lead's status.",
-                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:isSuccessful##title##53551",
-                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isSuccessful##description##6351"
+                                    "meta:titleId": "statusincampaignprogressionchanged##xdm:isSuccessful##title##15821",
+                                    "meta:descriptionId": "statusincampaignprogressionchanged##xdm:isSuccessful##description##4811"
                                 }
                             },
-                            "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignProgression##title##82711"
+                            "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignProgression##title##89841"
                         }
                     },
-                    "meta:titleId": "statusincampaignprogressionchanged##xdm:leadOperation##title##42001"
+                    "meta:titleId": "statusincampaignprogressionchanged##xdm:leadOperation##title##27501"
                 }
             }
         }
@@ -108,8 +108,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-01-14",
-    "meta:titleId": "statusincampaignprogressionchanged##title##3191",
-    "meta:descriptionId": "statusincampaignprogressionchanged##description##69581",
+    "meta:titleId": "statusincampaignprogressionchanged##title##14221",
+    "meta:descriptionId": "statusincampaignprogressionchanged##description##13771",
     "examples": [
         {}
     ]

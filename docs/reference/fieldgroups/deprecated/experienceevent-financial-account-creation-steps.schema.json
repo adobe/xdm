@@ -30,8 +30,8 @@
                             "title": "Financial Account",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:titleId": "experienceevent-financial-account-creation-steps##xdm:financialAccount##title##43881",
-                            "meta:descriptionId": "experienceevent-financial-account-creation-steps##xdm:financialAccount##description##79401"
+                            "meta:titleId": "experienceevent-financial-account-creation-steps##xdm:financialAccount##title##49321",
+                            "meta:descriptionId": "experienceevent-financial-account-creation-steps##xdm:financialAccount##description##67841"
                         }
                     }
                 }
@@ -45,8 +45,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "experienceevent-financial-account-creation-steps##title##79121",
-    "meta:descriptionId": "experienceevent-financial-account-creation-steps##description##51791",
+    "meta:titleId": "experienceevent-financial-account-creation-steps##title##41281",
+    "meta:descriptionId": "experienceevent-financial-account-creation-steps##description##28021",
     "examples": [
         {
             "xdm:personalFinances": {

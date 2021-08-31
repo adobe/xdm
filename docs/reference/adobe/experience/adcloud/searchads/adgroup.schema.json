@@ -22,27 +22,37 @@
                 "searchads:adgroupId": {
                     "title": "Ad Group Identifier",
                     "type": "string",
-                    "description": "Ad Group ID on the search advertising platform."
+                    "description": "Ad Group ID on the search advertising platform.",
+                    "meta:titleId": "adgroup##searchads:adgroupId##title##58161",
+                    "meta:descriptionId": "adgroup##searchads:adgroupId##description##85861"
                 },
                 "searchads:campaignId": {
                     "title": "Campaign Identifier",
                     "type": "string",
-                    "description": "Campaign ID for the Ad Group on the search advertising platform."
+                    "description": "Campaign ID for the Ad Group on the search advertising platform.",
+                    "meta:titleId": "adgroup##searchads:campaignId##title##18251",
+                    "meta:descriptionId": "adgroup##searchads:campaignId##description##55731"
                 },
                 "searchads:internalCampaignId": {
                     "title": "Internal Campaign Identifier",
                     "type": "string",
-                    "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record."
+                    "description": "Internal Campaign ID for the Ad Group. This identifier determines uniqueness of campaign and ad group record.",
+                    "meta:titleId": "adgroup##searchads:internalCampaignId##title##90591",
+                    "meta:descriptionId": "adgroup##searchads:internalCampaignId##description##34861"
                 },
                 "searchads:searchEngineId": {
                     "title": "Search Engine Identifier",
                     "type": "integer",
-                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:titleId": "adgroup##searchads:searchEngineId##title##4511",
+                    "meta:descriptionId": "adgroup##searchads:searchEngineId##description##58351"
                 },
                 "searchads:adgroupName": {
                     "title": "Ad Group Name",
                     "type": "string",
-                    "description": "Name of the Ad Group."
+                    "description": "Name of the Ad Group.",
+                    "meta:titleId": "adgroup##searchads:adgroupName##title##76641",
+                    "meta:descriptionId": "adgroup##searchads:adgroupName##description##91141"
                 },
                 "searchads:adGroupStatus": {
                     "title": "Ad Group Status",
@@ -85,7 +95,9 @@
                         "Disabled": "Disabled",
                         "Unknown": "Unknown",
                         "Dummy": "Dummy"
-                    }
+                    },
+                    "meta:titleId": "adgroup##searchads:adGroupStatus##title##7091",
+                    "meta:descriptionId": "adgroup##searchads:adGroupStatus##description##12051"
                 },
                 "searchads:bidLevel": {
                     "title": "Bid Level",
@@ -108,7 +120,9 @@
                         "Keyword": "Keyword",
                         "Adgroup": "Adgroup",
                         "User Interest and List": "User Interest and List"
-                    }
+                    },
+                    "meta:titleId": "adgroup##searchads:bidLevel##title##67741",
+                    "meta:descriptionId": "adgroup##searchads:bidLevel##description##52811"
                 },
                 "searchads:createDate": {
                     "type": "string",
@@ -116,7 +130,8 @@
                     "examples": [
                         "2004-10-23T12:00:00-06:00"
                     ],
-                    "description": "The date and time when the adgroup was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+                    "description": "The date and time when the adgroup was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:descriptionId": "adgroup##searchads:createDate##description##97691"
                 },
                 "searchads:modifyDate": {
                     "type": "string",
@@ -124,7 +139,8 @@
                     "examples": [
                         "2004-10-23T12:00:00-06:00"
                     ],
-                    "description": "The date and time when the adgroup was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
+                    "description": "The date and time when the adgroup was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+                    "meta:descriptionId": "adgroup##searchads:modifyDate##description##76451"
                 }
             }
         }
@@ -141,5 +157,7 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "adgroup##title##43251",
+    "meta:descriptionId": "adgroup##description##28281",
     "examples": []
 }

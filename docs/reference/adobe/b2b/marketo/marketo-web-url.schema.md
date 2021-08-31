@@ -70,9 +70,12 @@ Unknown type `object`.
     "marketo:URL": {
       "title": "URL",
       "type": "string",
-      "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format"
+      "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
+      "meta:titleId": "marketo-web-url##marketo:URL##title##84531",
+      "meta:descriptionId": "marketo-web-url##marketo:URL##description##9121"
     }
   },
+  "meta:titleId": "marketo-web-url##xdm:webPageDetails##title##14591",
   "simpletype": "`object`"
 }
 ```

@@ -19,29 +19,29 @@
           "title": "Author",
           "type": "string",
           "description": "Name of the media author.",
-          "meta:titleId": "media-timed-audio##dc:creator##title##26251",
-          "meta:descriptionId": "media-timed-audio##dc:creator##description##87851"
+          "meta:titleId": "media-timed-audio##dc:creator##title##70851",
+          "meta:descriptionId": "media-timed-audio##dc:creator##description##66511"
         },
         "xmpDM:artist": {
           "title": "Artist",
           "type": "string",
           "description": "The name of the album artist or group performing the music recording or video.",
-          "meta:titleId": "media-timed-audio##xmpDM:artist##title##44671",
-          "meta:descriptionId": "media-timed-audio##xmpDM:artist##description##20781"
+          "meta:titleId": "media-timed-audio##xmpDM:artist##title##57911",
+          "meta:descriptionId": "media-timed-audio##xmpDM:artist##description##94461"
         },
         "xmpDM:album": {
           "title": "Album",
           "type": "string",
           "description": "The name of the album that the music recording or video belongs to.",
-          "meta:titleId": "media-timed-audio##xmpDM:album##title##75311",
-          "meta:descriptionId": "media-timed-audio##xmpDM:album##description##74591"
+          "meta:titleId": "media-timed-audio##xmpDM:album##title##55431",
+          "meta:descriptionId": "media-timed-audio##xmpDM:album##description##16611"
         },
         "id3:Audio": {
           "title": "Audio",
           "description": "Metadata specific to audio content (record label, radio station, etc.).",
           "$ref": "https://id3.org/id3v2.4/audio",
-          "meta:titleId": "media-timed-audio##id3:Audio##title##65301",
-          "meta:descriptionId": "media-timed-audio##id3:Audio##description##96461"
+          "meta:titleId": "media-timed-audio##id3:Audio##title##92301",
+          "meta:descriptionId": "media-timed-audio##id3:Audio##description##8001"
         }
       }
     }
@@ -55,6 +55,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media-timed-audio##title##6481",
-  "meta:descriptionId": "media-timed-audio##description##31111"
+  "meta:titleId": "media-timed-audio##title##19281",
+  "meta:descriptionId": "media-timed-audio##description##11861"
 }

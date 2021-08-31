@@ -22,15 +22,15 @@
                     "title": "Organizational unit",
                     "$ref": "https://ns.adobe.com/xdm/common/orgunit",
                     "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
-                    "meta:titleId": "profile-owning-entities##xdm:orgUnit##title##43221",
-                    "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description##44291"
+                    "meta:titleId": "profile-owning-entities##xdm:orgUnit##title##20321",
+                    "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description##30781"
                 },
                 "xdm:geoUnit": {
                     "title": "Geographical unit",
                     "$ref": "https://ns.adobe.com/xdm/common/geounit",
                     "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
-                    "meta:titleId": "profile-owning-entities##xdm:geoUnit##title##88381",
-                    "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description##80511"
+                    "meta:titleId": "profile-owning-entities##xdm:geoUnit##title##91451",
+                    "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description##30521"
                 }
             }
         }
@@ -45,8 +45,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "profile-owning-entities##title##96481",
-    "meta:descriptionId": "profile-owning-entities##description##18501",
+    "meta:titleId": "profile-owning-entities##title##63601",
+    "meta:descriptionId": "profile-owning-entities##description##80851",
     "examples": [
         {
             "xdm:orgUnit": {

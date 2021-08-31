@@ -19,7 +19,9 @@
                     "description": "The type for the external event received",
                     "meta:enum": {
                         "http": "The external event recieved on http endpoint"
-                    }
+                    },
+                    "meta:titleId": "reportingexternalevent##xdm:eventType##title##56911",
+                    "meta:descriptionId": "reportingexternalevent##xdm:eventType##description##19721"
                 }
             }
         }
@@ -30,6 +32,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "reportingexternalevent##title##82531",
+    "meta:descriptionId": "reportingexternalevent##description##79501",
     "examples": [
         {
             "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {

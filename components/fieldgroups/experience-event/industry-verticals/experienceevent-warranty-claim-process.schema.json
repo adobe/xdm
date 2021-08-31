@@ -35,15 +35,15 @@
               "title": "Claim",
               "$ref": "https://ns.adobe.com/xdm/datatypes/claim",
               "description": "Extension of claim data type.",
-              "meta:titleId": "experienceevent-warranty-claim-details##xdm:claim##title##94351",
-              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:claim##description##80531"
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:claim##title##11421",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:claim##description##28461"
             },
             "xdm:length": {
               "title": "Length",
               "type": "integer",
               "description": "Records the length of the warranty, in months.",
-              "meta:titleId": "experienceevent-warranty-claim-details##xdm:length##title##18691",
-              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:length##description##10281"
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:length##title##56381",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:length##description##82001"
             },
             "xdm:type": {
               "title": "Type",
@@ -63,11 +63,11 @@
                 "home": "Home",
                 "automobile": "Automobile"
               },
-              "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##72791",
-              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##3661"
+              "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##56731",
+              "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##59551"
             }
           },
-          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##42091"
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##77321"
         }
       }
     }
@@ -78,6 +78,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "experienceevent-warranty-claim-details##title##22651",
-  "meta:descriptionId": "experienceevent-warranty-claim-details##description##97381"
+  "meta:titleId": "experienceevent-warranty-claim-details##title##72021",
+  "meta:descriptionId": "experienceevent-warranty-claim-details##description##25171"
 }

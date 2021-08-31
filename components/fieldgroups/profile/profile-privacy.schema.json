@@ -38,8 +38,8 @@
                       "general_opt_out": "General opt-out",
                       "sales_sharing_opt_out": "Sales sharing opt-out"
                     },
-                    "meta:titleId": "profile-privacy##xdm:optOutType##title##25681",
-                    "meta:descriptionId": "profile-privacy##xdm:optOutType##description##43561"
+                    "meta:titleId": "profile-privacy##xdm:optOutType##title##14671",
+                    "meta:descriptionId": "profile-privacy##xdm:optOutType##description##23971"
                   },
                   "xdm:optOutValue": {
                     "title": "Opt-out value",
@@ -52,25 +52,25 @@
                       "in": "Opt-in",
                       "out": "Opt-out"
                     },
-                    "meta:titleId": "profile-privacy##xdm:optOutValue##title##61401",
-                    "meta:descriptionId": "profile-privacy##xdm:optOutValue##description##28721"
+                    "meta:titleId": "profile-privacy##xdm:optOutValue##title##53741",
+                    "meta:descriptionId": "profile-privacy##xdm:optOutValue##description##20711"
                   },
                   "xdm:timestamp": {
                     "title": "Opt-out timestamp",
                     "description": "Timestamp of the received opt-out signal.",
                     "type": "string",
                     "format": "date-time",
-                    "meta:titleId": "profile-privacy##xdm:timestamp##title##78971",
-                    "meta:descriptionId": "profile-privacy##xdm:timestamp##description##59331"
+                    "meta:titleId": "profile-privacy##xdm:timestamp##title##57561",
+                    "meta:descriptionId": "profile-privacy##xdm:timestamp##description##91401"
                   }
                 }
               },
-              "meta:titleId": "profile-privacy##xdm:privacyOptOuts##title##15031",
-              "meta:descriptionId": "profile-privacy##xdm:privacyOptOuts##description##41941"
+              "meta:titleId": "profile-privacy##xdm:privacyOptOuts##title##30231",
+              "meta:descriptionId": "profile-privacy##xdm:privacyOptOuts##description##4761"
             }
           },
-          "meta:titleId": "profile-privacy##xdm:optOutConsentLevel##title##4371",
-          "meta:descriptionId": "profile-privacy##xdm:optOutConsentLevel##description##54701"
+          "meta:titleId": "profile-privacy##xdm:optOutConsentLevel##title##57691",
+          "meta:descriptionId": "profile-privacy##xdm:optOutConsentLevel##description##24971"
         },
         "xdm:identityPrivacyInfo": {
           "title": "Identity level privacy information",
@@ -95,28 +95,28 @@
                       "description": "Timestamp (RFC3339) when this identity presented consent information",
                       "type": "string",
                       "format": "date-time",
-                      "meta:titleId": "profile-privacy##xdm:consentTimestamp##title##1401",
-                      "meta:descriptionId": "profile-privacy##xdm:consentTimestamp##description##63111"
+                      "meta:titleId": "profile-privacy##xdm:consentTimestamp##title##49691",
+                      "meta:descriptionId": "profile-privacy##xdm:consentTimestamp##description##13501"
                     },
                     "xdm:consentString": {
                       "title": "Captured consent information",
                       "description": "Consent string and its specification. This can help reading application to use appropriate library.",
                       "$ref": "https://ns.adobe.com/xdm/context/consentstring",
-                      "meta:titleId": "profile-privacy##xdm:consentString##title##5161",
-                      "meta:descriptionId": "profile-privacy##xdm:consentString##description##85881"
+                      "meta:titleId": "profile-privacy##xdm:consentString##title##46461",
+                      "meta:descriptionId": "profile-privacy##xdm:consentString##description##6731"
                     }
                   },
                   "required": ["xdm:consentTimestamp"],
-                  "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##19011",
-                  "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##16461"
+                  "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##40301",
+                  "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##89931"
                 }
               },
-              "meta:titleId": "profile-privacy##additionalProperties##title##57281"
+              "meta:titleId": "profile-privacy##additionalProperties##title##84381"
             },
-            "meta:titleId": "profile-privacy##additionalProperties##title##67231"
+            "meta:titleId": "profile-privacy##additionalProperties##title##9011"
           },
-          "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##66931",
-          "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##13441"
+          "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##16881",
+          "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##50281"
         }
       }
     }
@@ -131,6 +131,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-privacy##title##72101",
-  "meta:descriptionId": "profile-privacy##description##85111"
+  "meta:titleId": "profile-privacy##title##10921",
+  "meta:descriptionId": "profile-privacy##description##86951"
 }

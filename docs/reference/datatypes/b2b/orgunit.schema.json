@@ -19,15 +19,15 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The ID associated with this organizational unit.",
-                    "meta:titleId": "orgunit##@id##title##15191",
-                    "meta:descriptionId": "orgunit##@id##description##54281"
+                    "meta:titleId": "orgunit##@id##title##4361",
+                    "meta:descriptionId": "orgunit##@id##description##54461"
                 },
                 "xdm:label": {
                     "title": "Label of the organizational unit.",
                     "type": "string",
                     "description": "The user-friendly name for the organizational unit.",
-                    "meta:titleId": "orgunit##xdm:label##title##55901",
-                    "meta:descriptionId": "orgunit##xdm:label##description##89751"
+                    "meta:titleId": "orgunit##xdm:label##title##61281",
+                    "meta:descriptionId": "orgunit##xdm:label##description##60261"
                 }
             },
             "required": [
@@ -42,8 +42,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "orgunit##title##76391",
-    "meta:descriptionId": "orgunit##description##21491",
+    "meta:titleId": "orgunit##title##9321",
+    "meta:descriptionId": "orgunit##description##61681",
     "examples": [
         {
             "@id": "https://data.adobe.io/org-apparals-men",

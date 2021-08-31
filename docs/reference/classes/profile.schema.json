@@ -29,8 +29,8 @@
                     "title": "Person ID",
                     "description": "Unique identifier of Person/Profile fragment.",
                     "type": "string",
-                    "meta:titleId": "profile##xdm:personID##title##86011",
-                    "meta:descriptionId": "profile##xdm:personID##description##63351"
+                    "meta:titleId": "profile##xdm:personID##title##43391",
+                    "meta:descriptionId": "profile##xdm:personID##description##5871"
                 }
             }
         }
@@ -51,8 +51,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "profile##title##50051",
-    "meta:descriptionId": "profile##description##93821",
+    "meta:titleId": "profile##title##6641",
+    "meta:descriptionId": "profile##description##66111",
     "examples": [
         {
             "xdm:identityMap": {

@@ -19,19 +19,25 @@
                     "type": "string",
                     "format": "date-time",
                     "title": "Start Date",
-                    "description": "Offer start date. Offers that have not reached their start date are not yet considered eligible in the decisioning."
+                    "description": "Offer start date. Offers that have not reached their start date are not yet considered eligible in the decisioning.",
+                    "meta:titleId": "selection-constraint##xdm:startDate##title##2031",
+                    "meta:descriptionId": "selection-constraint##xdm:startDate##description##57631"
                 },
                 "xdm:endDate": {
                     "type": "string",
                     "format": "date-time",
                     "title": "End Date",
-                    "description": "Offer end date. Offers that have passed their end date are no longer considered eligible in the decisioning process."
+                    "description": "Offer end date. Offers that have passed their end date are no longer considered eligible in the decisioning process.",
+                    "meta:titleId": "selection-constraint##xdm:endDate##title##98441",
+                    "meta:descriptionId": "selection-constraint##xdm:endDate##description##7271"
                 },
                 "xdm:eligibilityRule": {
                     "type": "string",
                     "format": "uri",
                     "title": "Eligibility Rule",
-                    "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule"
+                    "description": "The reference to an eligibility rule that tests a condition using the profile and/or other contextual XDM instances. The value is the URI (@id) of the eligibility rule that is referenced. See schema https://ns.adobe.com/experience/offer-management/eligibility-rule",
+                    "meta:titleId": "selection-constraint##xdm:eligibilityRule##title##38921",
+                    "meta:descriptionId": "selection-constraint##xdm:eligibilityRule##description##44471"
                 }
             }
         }
@@ -47,5 +53,7 @@
             ]
         }
     ],
-    "meta:status": "deprecated"
+    "meta:status": "deprecated",
+    "meta:titleId": "selection-constraint##title##48461",
+    "meta:descriptionId": "selection-constraint##description##56401"
 }

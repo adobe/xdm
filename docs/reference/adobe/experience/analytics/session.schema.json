@@ -2,29 +2,39 @@
     "xdm:num": {
         "title": "Session Number",
         "type": "integer",
-        "description": "Current session number for the end-user."
+        "description": "Current session number for the end-user.",
+        "meta:titleId": "experienceevent-all##xdm:num##title##70771",
+        "meta:descriptionId": "experienceevent-all##xdm:num##description##42161"
     },
     "xdm:depth": {
         "title": "Session Depth",
         "type": "integer",
-        "description": "Current session depth (eg page number) for the end-user."
+        "description": "Current session depth (eg page number) for the end-user.",
+        "meta:titleId": "experienceevent-all##xdm:depth##title##54561",
+        "meta:descriptionId": "experienceevent-all##xdm:depth##description##41751"
     },
     "xdm:timestamp": {
         "title": "Session Entry Timestamp",
         "type": "integer",
         "description": "The timestamp at the entry into this session. Milliseconds since midnight of January 1, 1970.",
         "minimum": 1,
-        "maximum": 9223372036854770000
+        "maximum": 9223372036854770000,
+        "meta:titleId": "experienceevent-all##xdm:timestamp##title##24761",
+        "meta:descriptionId": "experienceevent-all##xdm:timestamp##description##79271"
     },
     "xdm:search": {
         "title": "Session Entry Search",
         "$ref": "https://ns.adobe.com/xdm/context/search",
-        "description": "The information related to web or mobile search at the entry of this session."
+        "description": "The information related to web or mobile search at the entry of this session.",
+        "meta:titleId": "experienceevent-all##xdm:search##title##55371",
+        "meta:descriptionId": "experienceevent-all##xdm:search##description##10841"
     },
     "xdm:web": {
         "title": "Session Entry Web",
         "$ref": "https://ns.adobe.com/xdm/context/webinfo",
-        "description": "Link clicks, web page details, referrer information, and browser details."
+        "description": "Link clicks, web page details, referrer information, and browser details.",
+        "meta:titleId": "experienceevent-all##xdm:web##title##45691",
+        "meta:descriptionId": "experienceevent-all##xdm:web##description##48661"
     },
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/analytics/session"

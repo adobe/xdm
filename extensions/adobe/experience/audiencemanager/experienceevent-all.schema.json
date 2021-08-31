@@ -25,14 +25,19 @@
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Value of the parameter"
+              "description": "Value of the parameter",
+              "meta:descriptionId": "experienceevent-all##items##description##78661"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-all##xdm:signals##title##54871",
+          "meta:descriptionId": "experienceevent-all##xdm:signals##description##37191"
         },
         "xdm:overwriteTraits": {
           "title": "Overwrite Traits",
           "type": "boolean",
-          "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded."
+          "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+          "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title##50261",
+          "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description##29581"
         },
         "xdm:derivedSignals": {
           "title": "Derived Signals",
@@ -43,9 +48,12 @@
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Value of the parameter"
+              "description": "Value of the parameter",
+              "meta:descriptionId": "experienceevent-all##items##description##25941"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-all##xdm:derivedSignals##title##23491",
+          "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description##46751"
         }
       }
     }
@@ -55,5 +63,7 @@
       "$ref": "#/definitions/experienceevent"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-all##title##71761",
+  "meta:descriptionId": "experienceevent-all##description##76451"
 }

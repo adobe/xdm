@@ -66,12 +66,16 @@ Unknown type `object`.
         "de-DE",
         "yue-HK"
       ],
-      "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format."
+      "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
+      "meta:titleId": "experienceevent-profile-preferences-details##xdm:preferredLanguage##title##8331",
+      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:preferredLanguage##description##641"
     },
     "xdm:profilePictureLink": {
       "title": "Profile Picture Link",
       "type": "string",
-      "description": "Link to profile's picture"
+      "description": "Link to profile's picture",
+      "meta:titleId": "experienceevent-profile-preferences-details##xdm:profilePictureLink##title##55251",
+      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:profilePictureLink##description##56771"
     },
     "xdm:emailFormat": {
       "title": "Email Format",
@@ -80,7 +84,9 @@ Unknown type `object`.
       "meta:enum": {
         "html": "Rich text",
         "plaintext": "Plain text"
-      }
+      },
+      "meta:titleId": "experienceevent-profile-preferences-details##xdm:emailFormat##title##91701",
+      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:emailFormat##description##70331"
     },
     "xdm:timeZone": {
       "title": "Time Zone",
@@ -90,15 +96,21 @@ Unknown type `object`.
         "Antarctica/Davis",
         "Asia/Calcutta"
       ],
-      "description": "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm"
+      "description": "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
+      "meta:titleId": "experienceevent-profile-preferences-details##xdm:timeZone##title##32281",
+      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:timeZone##description##42191"
     },
     "xdm:optInOut": {
       "title": "OptInOut",
       "$ref": "https://ns.adobe.com/xdm/context/optinout",
       "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
-      "meta:status": "deprecated"
+      "meta:status": "deprecated",
+      "meta:titleId": "experienceevent-profile-preferences-details##xdm:optInOut##title##77431",
+      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:optInOut##description##87001"
     }
   },
+  "meta:titleId": "experienceevent-profile-preferences-details##xdm:profileSnapshot##title##26481",
+  "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:profileSnapshot##description##58351",
   "simpletype": "`object`"
 }
 ```

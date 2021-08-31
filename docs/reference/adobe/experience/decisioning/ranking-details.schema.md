@@ -54,23 +54,31 @@ Unknown type ``.
         "scoringFunction",
         "rankingStrategy"
       ],
-      "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it."
+      "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it.",
+      "meta:titleId": "ranking-details##xdm:orderEvaluationType##title##8401",
+      "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##94251"
     },
     "xdm:function": {
       "type": "string",
       "format": "uri-reference",
       "title": "Scoring Function",
-      "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function"
+      "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function",
+      "meta:titleId": "ranking-details##xdm:function##title##82741",
+      "meta:descriptionId": "ranking-details##xdm:function##description##19361"
     },
     "xdm:rankingStrategy": {
       "type": "string",
       "format": "uri-reference",
       "title": "Ranking Strategy",
-      "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy"
+      "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy",
+      "meta:titleId": "ranking-details##xdm:rankingStrategy##title##64321",
+      "meta:descriptionId": "ranking-details##xdm:rankingStrategy##description##89241"
     }
   },
   "title": "Order Evaluation",
   "description": "Evaluation of a relative order of one or more decision options. Options with higher ordinal values are selected over any options with lower ordinal values. The values determined by this method can be ordered but distances between them cannot be measured and neither can sums nor products be calculated. The median and the mode are the only measures of central tendency that can be used for ordinal data.",
+  "meta:titleId": "ranking-details##xdm:order##title##41541",
+  "meta:descriptionId": "ranking-details##xdm:order##description##41601",
   "simpletype": "complex"
 }
 ```

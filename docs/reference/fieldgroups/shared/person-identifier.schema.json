@@ -18,8 +18,8 @@
                     "title": "Person ID",
                     "description": "Person unique identifier.",
                     "type": "string",
-                    "meta:titleId": "person-identifier##xdm:personID##title##92431",
-                    "meta:descriptionId": "person-identifier##xdm:personID##description##96341"
+                    "meta:titleId": "person-identifier##xdm:personID##title##75321",
+                    "meta:descriptionId": "person-identifier##xdm:personID##description##61151"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
@@ -38,8 +38,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "person-identifier##title##77111",
-    "meta:descriptionId": "person-identifier##description##5361",
+    "meta:titleId": "person-identifier##title##62361",
+    "meta:descriptionId": "person-identifier##description##76761",
     "examples": [
         {
             "xdm:personID": "gjukoyi1234"

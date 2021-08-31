@@ -23,8 +23,8 @@
               "type": "integer",
               "description": "When present, indicates the item at this array index should be selected.",
               "minimum": 0,
-              "meta:titleId": "itemselector##xdm:index##title##26511",
-              "meta:descriptionId": "itemselector##xdm:index##description##441"
+              "meta:titleId": "itemselector##xdm:index##title##21111",
+              "meta:descriptionId": "itemselector##xdm:index##description##93451"
             }
           },
           "required": ["xdm:index"]
@@ -37,8 +37,8 @@
               "type": "string",
               "format": "uri",
               "description": "When present, indicates the item with this @id value should be selected.",
-              "meta:titleId": "itemselector##xdm:id##title##88811",
-              "meta:descriptionId": "itemselector##xdm:id##description##83381"
+              "meta:titleId": "itemselector##xdm:id##title##53681",
+              "meta:descriptionId": "itemselector##xdm:id##description##29811"
             }
           },
           "required": ["xdm:id"]
@@ -51,8 +51,8 @@
               "type": "string",
               "format": "uri",
               "description": "When present, indicates the item with this @type value should be selected.",
-              "meta:titleId": "itemselector##xdm:type##title##57421",
-              "meta:descriptionId": "itemselector##xdm:type##description##56651"
+              "meta:titleId": "itemselector##xdm:type##title##96171",
+              "meta:descriptionId": "itemselector##xdm:type##description##40681"
             }
           },
           "required": ["xdm:type"]
@@ -65,8 +65,8 @@
               "type": "string",
               "format": "uri",
               "description": "When present, indicates the item which conforms to this schema URI should be selected.",
-              "meta:titleId": "itemselector##xdm:schema##title##38361",
-              "meta:descriptionId": "itemselector##xdm:schema##description##1351"
+              "meta:titleId": "itemselector##xdm:schema##title##54411",
+              "meta:descriptionId": "itemselector##xdm:schema##description##2051"
             }
           },
           "required": ["xdm:schema"]
@@ -81,6 +81,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "itemselector##title##12921",
-  "meta:descriptionId": "itemselector##description##24751"
+  "meta:titleId": "itemselector##title##96331",
+  "meta:descriptionId": "itemselector##description##99841"
 }

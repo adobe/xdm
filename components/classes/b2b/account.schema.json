@@ -24,8 +24,8 @@
           "title": "Account Identifier",
           "description": "Unique ID for the account.",
           "type": "string",
-          "meta:titleId": "account##xdm:accountID##title##74841",
-          "meta:descriptionId": "account##xdm:accountID##description##70711"
+          "meta:titleId": "account##xdm:accountID##title##59121",
+          "meta:descriptionId": "account##xdm:accountID##description##27991"
         },
         "xdm:accountKey": {
           "title": "Account Key",
@@ -52,6 +52,6 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:titleId": "account##title##15371",
-  "meta:descriptionId": "account##description##31521"
+  "meta:titleId": "account##title##4841",
+  "meta:descriptionId": "account##description##65781"
 }

@@ -17,6 +17,7 @@
             "properties": {
                 "https://ns.adobe.com/experience/analytics/customDimensions": {
                     "title": "Merchandizing Custom Dimensions",
+                    "meta:titleId": "productlistitem##https://ns.adobe.com/experience/analytics/customDimensions##title##1781",
                     "$ref": "https://ns.adobe.com/experience/analytics/customDimensions"
                 }
             }
@@ -33,5 +34,7 @@
             "$ref": "https://ns.adobe.com/experience/analytics/events"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "productlistitem##title##21981",
+    "meta:descriptionId": "productlistitem##description##86211"
 }

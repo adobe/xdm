@@ -70,24 +70,33 @@ Unknown type `object`.
         "xdm:spamType": {
           "title": "Spam Type",
           "type": "string",
-          "description": "Type of spam report entered against this message (see RFC 5965 § 7.3)."
+          "description": "Type of spam report entered against this message (see RFC 5965 § 7.3).",
+          "meta:titleId": "feedbackevent##xdm:spamType##title##78981",
+          "meta:descriptionId": "feedbackevent##xdm:spamType##description##90271"
         },
         "xdm:reportedBy": {
           "title": "Reported By",
           "type": "string",
-          "description": "E-mail Address of the entity reporting this message as spam."
+          "description": "E-mail Address of the entity reporting this message as spam.",
+          "meta:titleId": "feedbackevent##xdm:reportedBy##title##91731",
+          "meta:descriptionId": "feedbackevent##xdm:reportedBy##description##38351"
         },
         "xdm:reportTo": {
           "title": "Report To",
           "type": "string",
-          "description": "E-mail Address to which this spam report is to be delivered."
+          "description": "E-mail Address to which this spam report is to be delivered.",
+          "meta:titleId": "feedbackevent##xdm:reportTo##title##90131",
+          "meta:descriptionId": "feedbackevent##xdm:reportTo##description##86451"
         },
         "xdm:userAgent": {
           "title": "User Agent",
           "type": "string",
-          "description": "Value of the browser's User-Agent header."
+          "description": "Value of the browser's User-Agent header.",
+          "meta:titleId": "feedbackevent##xdm:userAgent##title##85711",
+          "meta:descriptionId": "feedbackevent##xdm:userAgent##description##76961"
         }
-      }
+      },
+      "meta:titleId": "feedbackevent##interactions##title##39261"
     },
     "operationalContext": {
       "title": "Operational Context",
@@ -96,12 +105,16 @@ Unknown type `object`.
         "xdm:outboundIP": {
           "title": "IP Address",
           "type": "string",
-          "description": "Outbound IP address of the customer used to deliver the message."
+          "description": "Outbound IP address of the customer used to deliver the message.",
+          "meta:titleId": "feedbackevent##xdm:outboundIP##title##11691",
+          "meta:descriptionId": "feedbackevent##xdm:outboundIP##description##32721"
         },
         "xdm:sendProtocol": {
           "title": "Send Protocol",
           "type": "string",
-          "description": "Protocol by which the message is delivered."
+          "description": "Protocol by which the message is delivered.",
+          "meta:titleId": "feedbackevent##xdm:sendProtocol##title##77221",
+          "meta:descriptionId": "feedbackevent##xdm:sendProtocol##description##15751"
         },
         "xdm:remoteIp": {
           "title": "IP Address",
@@ -114,12 +127,16 @@ Unknown type `object`.
               "format": "ipv6"
             }
           ],
-          "description": "IP address of the host to which this message is delivered."
+          "description": "IP address of the host to which this message is delivered.",
+          "meta:titleId": "feedbackevent##xdm:remoteIp##title##71451",
+          "meta:descriptionId": "feedbackevent##xdm:remoteIp##description##62391"
         },
         "xdm:mtaHost": {
           "title": "Node Name",
           "type": "string",
-          "description": "Name of the MTA Instance originating the events."
+          "description": "Name of the MTA Instance originating the events.",
+          "meta:titleId": "feedbackevent##xdm:mtaHost##title##5321",
+          "meta:descriptionId": "feedbackevent##xdm:mtaHost##description##44431"
         },
         "xdm:mtaIp": {
           "title": "Sending IP Address",
@@ -132,16 +149,22 @@ Unknown type `object`.
               "format": "ipv6"
             }
           ],
-          "description": "IP address through which this message was sent."
+          "description": "IP address through which this message was sent.",
+          "meta:titleId": "feedbackevent##xdm:mtaIp##title##40251",
+          "meta:descriptionId": "feedbackevent##xdm:mtaIp##description##26591"
         },
         "xdm:queueTime": {
           "title": "Queue time",
           "type": "number",
-          "description": "Delay, expressed in milliseconds, between this message's injection into SparkPost and its delivery to the receiving domain; that is, the length of time this message spent in the outgoing queue."
+          "description": "Delay, expressed in milliseconds, between this message's injection into SparkPost and its delivery to the receiving domain; that is, the length of time this message spent in the outgoing queue.",
+          "meta:titleId": "feedbackevent##xdm:queueTime##title##78331",
+          "meta:descriptionId": "feedbackevent##xdm:queueTime##description##16651"
         }
-      }
+      },
+      "meta:titleId": "feedbackevent##operationalContext##title##52921"
     }
   },
+  "meta:titleId": "feedbackevent##email##title##44831",
   "simpletype": "`object`"
 }
 ```
@@ -377,14 +400,19 @@ Unknown type `object`.
     "xdm:to": {
       "title": "To",
       "type": "string",
-      "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+      "description": "Address used as a to/callee address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+      "meta:titleId": "feedbackevent##xdm:to##title##98651",
+      "meta:descriptionId": "feedbackevent##xdm:to##description##58751"
     },
     "xdm:type": {
       "title": "Type",
       "type": "string",
-      "description": "Whether this message message event describes the BCC, CC or To recipient."
+      "description": "Whether this message message event describes the BCC, CC or To recipient.",
+      "meta:titleId": "feedbackevent##xdm:type##title##65901",
+      "meta:descriptionId": "feedbackevent##xdm:type##description##52831"
     }
   },
+  "meta:titleId": "feedbackevent##recipient##title##41241",
   "simpletype": "`object`"
 }
 ```

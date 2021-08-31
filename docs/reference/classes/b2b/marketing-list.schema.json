@@ -25,8 +25,8 @@
                     "title": "Marketing List ID",
                     "description": "Unique ID of the marketing list.",
                     "type": "string",
-                    "meta:titleId": "marketing-list##xdm:marketingListID##title##14641",
-                    "meta:descriptionId": "marketing-list##xdm:marketingListID##description##39981"
+                    "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
                 },
                 "xdm:marketingListKey": {
                     "title": "Marketing List Key",
@@ -39,15 +39,15 @@
                     "title": "Marketing List Name",
                     "description": "Name of the marketing list.",
                     "type": "string",
-                    "meta:titleId": "marketing-list##xdm:marketingListName##title##21631",
-                    "meta:descriptionId": "marketing-list##xdm:marketingListName##description##88691"
+                    "meta:titleId": "marketing-list##xdm:marketingListName##title##25151",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListName##description##25281"
                 },
                 "xdm:marketingListDescription": {
                     "title": "Marketing List Description",
                     "description": "Description of the marketing list.",
                     "type": "string",
-                    "meta:titleId": "marketing-list##xdm:marketingListDescription##title##49191",
-                    "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##74451"
+                    "meta:titleId": "marketing-list##xdm:marketingListDescription##title##23161",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##56371"
                 }
             }
         }
@@ -67,8 +67,8 @@
         }
     ],
     "meta:status": "experimental",
-    "meta:titleId": "marketing-list##title##83091",
-    "meta:descriptionId": "marketing-list##description##801",
+    "meta:titleId": "marketing-list##title##32631",
+    "meta:descriptionId": "marketing-list##description##65341",
     "examples": [
         {
             "xdm:marketingListID": "MKTLST1111"

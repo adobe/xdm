@@ -246,12 +246,12 @@ Unknown type `object`.
       "title": "User agent",
       "type": "string",
       "description": "The HTTP user-agent string from the client request.",
-      "meta:titleId": "emailopened##xdm:userAgent##title##48311",
-      "meta:descriptionId": "emailopened##xdm:userAgent##description##61621"
+      "meta:titleId": "emailopened##xdm:userAgent##title##86861",
+      "meta:descriptionId": "emailopened##xdm:userAgent##description##3831"
     }
   },
-  "meta:titleId": "emailopened##xdm:browserDetails##title##3121",
-  "meta:descriptionId": "emailopened##xdm:browserDetails##description##25541",
+  "meta:titleId": "emailopened##xdm:browserDetails##title##9541",
+  "meta:descriptionId": "emailopened##xdm:browserDetails##description##45661",
   "simpletype": "`object`"
 }
 ```

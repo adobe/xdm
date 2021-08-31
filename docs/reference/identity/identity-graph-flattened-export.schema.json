@@ -22,22 +22,22 @@
                     "title": "Person ID",
                     "type": "string",
                     "description": "Person ID Like Email or ECID or phone.",
-                    "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title",
-                    "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description"
+                    "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title##42391",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description##32021"
                 },
                 "xdm:namespaceID": {
                     "title": "Namespace Id",
                     "type": "integer",
                     "description": "Id for the Identity Type.",
-                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title",
-                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description"
+                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title##19171",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description##22221"
                 },
                 "xdm:namespaceCode": {
                     "title": "Namespace Code",
                     "type": "string",
                     "description": "Identity Type in human readable form.",
-                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title",
-                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description"
+                    "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title##8311",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description##17601"
                 },
                 "xdm:algorithm": {
                     "title": "Algorithm",
@@ -53,8 +53,8 @@
                         "FREQ_RECENCY_BASED_SHARED_DEVICES": "Frequency Recency Based Shared Devices",
                         "DETERMINISTIC": "Deterministic"
                     },
-                    "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title",
-                    "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description"
+                    "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title##77061",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##32801"
                 },
                 "xdm:membersByTimeRange": {
                     "type": "array",
@@ -66,23 +66,23 @@
                                 "type": "string",
                                 "format": "date-time",
                                 "description": "Start Timestamp.",
-                                "meta:titleId": "identity-graph-flattened-export##xdm:startTimestamp##title",
-                                "meta:descriptionId": "identity-graph-flattened-export##xdm:startTimestamp##description"
+                                "meta:titleId": "identity-graph-flattened-export##xdm:startTimestamp##title##30291",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:startTimestamp##description##1421"
                             },
                             "xdm:endTimestamp": {
                                 "title": "End Timestamp",
                                 "type": "string",
                                 "format": "date-time",
                                 "description": "End Timestamp.",
-                                "meta:titleId": "identity-graph-flattened-export##xdm:endTimestamp##title",
-                                "meta:descriptionId": "identity-graph-flattened-export##xdm:endTimestamp##description"
+                                "meta:titleId": "identity-graph-flattened-export##xdm:endTimestamp##title##16231",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:endTimestamp##description##97141"
                             },
                             "xdm:graphID": {
                                 "title": "Person Graph ID",
                                 "type": "string",
                                 "description": "Person level Graph Identifier.",
-                                "meta:titleId": "identity-graph-flattened-export##xdm:graphID##title",
-                                "meta:descriptionId": "identity-graph-flattened-export##xdm:graphID##description"
+                                "meta:titleId": "identity-graph-flattened-export##xdm:graphID##title##42201",
+                                "meta:descriptionId": "identity-graph-flattened-export##xdm:graphID##description##38351"
                             },
                             "xdm:identityMap": {
                                 "type": "object",
@@ -102,8 +102,8 @@
                     "type": "string",
                     "format": "date-time",
                     "description": "Last updated time when this identity was updated.",
-                    "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title",
-                    "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description"
+                    "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title##19631",
+                    "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description##93481"
                 }
             },
             "required": [
@@ -122,8 +122,8 @@
         }
     ],
     "meta:status": "stable",
-    "meta:titleId": "identity-graph-flattened-export##title",
-    "meta:descriptionId": "identity-graph-flattened-export##description",
+    "meta:titleId": "identity-graph-flattened-export##title##87221",
+    "meta:descriptionId": "identity-graph-flattened-export##description##29971",
     "examples": [
         {
             "xdm:identityID": "22222222222222222222222222222222222222",

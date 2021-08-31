@@ -22,17 +22,23 @@
                 "searchads:adPlatform": {
                     "title": "Search Advertising Platform",
                     "type": "string",
-                    "description": "The Search Advertising Platform Name"
+                    "description": "The Search Advertising Platform Name",
+                    "meta:titleId": "platform##searchads:adPlatform##title##70931",
+                    "meta:descriptionId": "platform##searchads:adPlatform##description##72021"
                 },
                 "searchads:searchEngineId": {
                     "title": "Search Engine Identifier",
                     "type": "integer",
-                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:titleId": "platform##searchads:searchEngineId##title##24621",
+                    "meta:descriptionId": "platform##searchads:searchEngineId##description##15501"
                 },
                 "searchads:channelName": {
                     "title": "Search Engine Channel Name",
                     "type": "string",
-                    "description": "The application-specified classification for the Search Engine Platform."
+                    "description": "The application-specified classification for the Search Engine Platform.",
+                    "meta:titleId": "platform##searchads:channelName##title##8651",
+                    "meta:descriptionId": "platform##searchads:channelName##description##72051"
                 }
             }
         }
@@ -49,6 +55,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "platform##title##4201",
+    "meta:descriptionId": "platform##description##44821",
     "examples": [
         {
             "searchads:searchEngineId": 3,

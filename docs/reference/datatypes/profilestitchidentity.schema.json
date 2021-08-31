@@ -18,22 +18,22 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "Identity of the profile stitch in the related namespace.",
-                    "meta:titleId": "profileStitchIdentity##@id##title##42451",
-                    "meta:descriptionId": "profileStitchIdentity##@id##description##79801"
+                    "meta:titleId": "profileStitchIdentity##@id##title##58421",
+                    "meta:descriptionId": "profileStitchIdentity##@id##description##55561"
                 },
                 "xdm:namespace": {
                     "title": "Namespace",
                     "$ref": "https://ns.adobe.com/xdm/context/namespace",
                     "description": "The namespace associated with the `xid` attribute.",
-                    "meta:titleId": "profileStitchIdentity##xdm:namespace##title##57601",
-                    "meta:descriptionId": "profileStitchIdentity##xdm:namespace##description##90191"
+                    "meta:titleId": "profileStitchIdentity##xdm:namespace##title##21341",
+                    "meta:descriptionId": "profileStitchIdentity##xdm:namespace##description##9231"
                 },
                 "xdm:xid": {
                     "title": "Experience identifier",
                     "type": "string",
                     "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
-                    "meta:titleId": "profileStitchIdentity##xdm:xid##title##82021",
-                    "meta:descriptionId": "profileStitchIdentity##xdm:xid##description##98731"
+                    "meta:titleId": "profileStitchIdentity##xdm:xid##title##87311",
+                    "meta:descriptionId": "profileStitchIdentity##xdm:xid##description##35521"
                 }
             }
         }
@@ -45,8 +45,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "profileStitchIdentity##title##10101",
-    "meta:descriptionId": "profileStitchIdentity##description##55691",
+    "meta:titleId": "profileStitchIdentity##title##7111",
+    "meta:descriptionId": "profileStitchIdentity##description##54431",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/profileStitchIdentity/1",

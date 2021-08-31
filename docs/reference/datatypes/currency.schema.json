@@ -18,8 +18,8 @@
                     "title": "Amount",
                     "description": "Amount represented by the currencyCode",
                     "type": "number",
-                    "meta:titleId": "currency##xdm:amount##title##53761",
-                    "meta:descriptionId": "currency##xdm:amount##description##19411"
+                    "meta:titleId": "currency##xdm:amount##title##16261",
+                    "meta:descriptionId": "currency##xdm:amount##description##25051"
                 },
                 "xdm:currencyCode": {
                     "title": "Currency Code",
@@ -30,16 +30,16 @@
                     ],
                     "pattern": "^[A-Z]{3}$",
                     "description": "The ISO 4217 currency code.",
-                    "meta:titleId": "currency##xdm:currencyCode##title##11011",
-                    "meta:descriptionId": "currency##xdm:currencyCode##description##14081"
+                    "meta:titleId": "currency##xdm:currencyCode##title##99221",
+                    "meta:descriptionId": "currency##xdm:currencyCode##description##31611"
                 },
                 "xdm:conversionDate": {
                     "title": "Conversion Date",
                     "description": "Date when currency conversion was made.",
                     "type": "string",
                     "format": "date-time",
-                    "meta:titleId": "currency##xdm:conversionDate##title##47891",
-                    "meta:descriptionId": "currency##xdm:conversionDate##description##82101"
+                    "meta:titleId": "currency##xdm:conversionDate##title##50641",
+                    "meta:descriptionId": "currency##xdm:conversionDate##description##9481"
                 }
             }
         }
@@ -51,8 +51,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-09-29",
-    "meta:titleId": "currency##title##82821",
-    "meta:descriptionId": "currency##description##96481",
+    "meta:titleId": "currency##title##30671",
+    "meta:descriptionId": "currency##description##25081",
     "examples": [
         {
             "xdm:amount": -200757575,

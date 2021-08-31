@@ -33,47 +33,47 @@
               "title": "Quote Request ID",
               "type": "string",
               "description": "Unique identifier for the quote request.",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:requestID##title##59131",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:requestID##description##37451"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:requestID##title##57321",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:requestID##description##32101"
             },
             "xdm:discount": {
               "title": "Discount",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the discount amount for a quote displayed to a visitor.",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:discount##title##43791",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:discount##description##54151"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:discount##title##17531",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:discount##description##18061"
             },
             "xdm:premium": {
               "title": "Premium",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Records the premium amount for a quote displayed to a visitor.",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:premium##title##27021",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:premium##description##11621"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:premium##title##59051",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:premium##description##10971"
             },
             "xdm:location": {
               "title": "Location",
               "type": "string",
               "description": "Captures the postal code used for finding retailers near the visitor's location.",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:location##title##80751",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:location##description##26571"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:location##title##37091",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:location##description##29421"
             },
             "xdm:selectedRetailer": {
               "title": "Selected Retailer",
               "type": "string",
               "description": "Captures the selected retailer for a quote request, if applicable. ",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:selectedRetailer##title##87741",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:selectedRetailer##description##44921"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:selectedRetailer##title##66731",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:selectedRetailer##description##64221"
             },
             "xdm:steps": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-quote-request-details##xdm:steps##title##1141",
-              "meta:descriptionId": "experienceevent-quote-request-details##xdm:steps##description##27081"
+              "meta:titleId": "experienceevent-quote-request-details##xdm:steps##title##68281",
+              "meta:descriptionId": "experienceevent-quote-request-details##xdm:steps##description##42181"
             }
           },
-          "meta:descriptionId": "experienceevent-quote-request-details##xdm:quotes##description##88461"
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:quotes##description##89611"
         }
       }
     }
@@ -85,6 +85,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-03-31",
-  "meta:titleId": "experienceevent-quote-request-details##title##25141",
-  "meta:descriptionId": "experienceevent-quote-request-details##description##69801"
+  "meta:titleId": "experienceevent-quote-request-details##title##72671",
+  "meta:descriptionId": "experienceevent-quote-request-details##description##91621"
 }

@@ -18,22 +18,22 @@
                     "title": "Current Financial Account Balance",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                     "description": "Balance in the account.",
-                    "meta:titleId": "financial-account##xdm:currentAccountBalance##title##70971",
-                    "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##40631"
+                    "meta:titleId": "financial-account##xdm:currentAccountBalance##title##93831",
+                    "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##63431"
                 },
                 "xdm:financialAccountID": {
                     "title": "Financial Account ID",
                     "type": "string",
                     "description": "Current account balance for a single user account.",
-                    "meta:titleId": "financial-account##xdm:financialAccountID##title##92961",
-                    "meta:descriptionId": "financial-account##xdm:financialAccountID##description##17081"
+                    "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
+                    "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
                 },
                 "xdm:financialAccountName": {
                     "title": "Financial Account Name",
                     "type": "string",
                     "description": "Name assigned to the financial account.",
-                    "meta:titleId": "financial-account##xdm:financialAccountName##title##44621",
-                    "meta:descriptionId": "financial-account##xdm:financialAccountName##description##86051"
+                    "meta:titleId": "financial-account##xdm:financialAccountName##title##12351",
+                    "meta:descriptionId": "financial-account##xdm:financialAccountName##description##58581"
                 },
                 "xdm:financialAccountType": {
                     "title": "Financial Account Type",
@@ -45,8 +45,8 @@
                         "investment"
                     ],
                     "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
-                    "meta:titleId": "financial-account##xdm:financialAccountType##title##94521",
-                    "meta:descriptionId": "financial-account##xdm:financialAccountType##description##53381"
+                    "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
+                    "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
                 }
             }
         }
@@ -58,8 +58,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "financial-account##title##91291",
-    "meta:descriptionId": "financial-account##description##28261",
+    "meta:titleId": "financial-account##title##1381",
+    "meta:descriptionId": "financial-account##description##18451",
     "examples": [
         {}
     ]

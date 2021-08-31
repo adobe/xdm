@@ -17,42 +17,52 @@
             "properties": {
                 "https://ns.adobe.com/experience/analytics/event1to100": {
                     "title": "Event 1 to 100",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event1to100##title##99761",
                     "$ref": "https://ns.adobe.com/experience/analytics/event1to100"
                 },
                 "https://ns.adobe.com/experience/analytics/event101to200": {
                     "title": "Event 101 to 200",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event101to200##title##96201",
                     "$ref": "https://ns.adobe.com/experience/analytics/event101to200"
                 },
                 "https://ns.adobe.com/experience/analytics/event201to300": {
                     "title": "Event 201 to 300",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event201to300##title##9741",
                     "$ref": "https://ns.adobe.com/experience/analytics/event201to300"
                 },
                 "https://ns.adobe.com/experience/analytics/event301to400": {
                     "title": "Event 301 to 400",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event301to400##title##52801",
                     "$ref": "https://ns.adobe.com/experience/analytics/event301to400"
                 },
                 "https://ns.adobe.com/experience/analytics/event401to500": {
                     "title": "Event 401 to 500",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event401to500##title##41221",
                     "$ref": "https://ns.adobe.com/experience/analytics/event401to500"
                 },
                 "https://ns.adobe.com/experience/analytics/event501to600": {
                     "title": "Event 501 to 600",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event501to600##title##83301",
                     "$ref": "https://ns.adobe.com/experience/analytics/event501to600"
                 },
                 "https://ns.adobe.com/experience/analytics/event601to700": {
                     "title": "Event 601 to 700",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event601to700##title##38531",
                     "$ref": "https://ns.adobe.com/experience/analytics/event601to700"
                 },
                 "https://ns.adobe.com/experience/analytics/event701to800": {
                     "title": "Event 701 to 800",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event701to800##title##15571",
                     "$ref": "https://ns.adobe.com/experience/analytics/event701to800"
                 },
                 "https://ns.adobe.com/experience/analytics/event801to900": {
                     "title": "Event 801 to 900",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event801to900##title##62571",
                     "$ref": "https://ns.adobe.com/experience/analytics/event801to900"
                 },
                 "https://ns.adobe.com/experience/analytics/event901to1000": {
                     "title": "Event 901 to 1000",
+                    "meta:titleId": "events##https://ns.adobe.com/experience/analytics/event901to1000##title##94091",
                     "$ref": "https://ns.adobe.com/experience/analytics/event901to1000"
                 }
             }
@@ -66,5 +76,7 @@
             "$ref": "#/definitions/events"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "events##title##75031",
+    "meta:descriptionId": "events##description##18891"
 }

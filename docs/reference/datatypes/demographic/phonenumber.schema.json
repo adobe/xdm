@@ -18,8 +18,8 @@
                     "title": "Primary",
                     "type": "boolean",
                     "description": "Primary phone number indicator. Unlike address or email address, there can be multiple primary phone numbers; one per communication channel. The communication channel is defined by the type: `textMessaging`, `mobile`, `phone`, `home`, `work`, `unknown`, and `fax`.",
-                    "meta:titleId": "phonenumber##xdm:primary##title##14781",
-                    "meta:descriptionId": "phonenumber##xdm:primary##description##62771"
+                    "meta:titleId": "phonenumber##xdm:primary##title##41111",
+                    "meta:descriptionId": "phonenumber##xdm:primary##description##56091"
                 },
                 "xdm:countryCode": {
                     "title": "Country Calling Code",
@@ -35,15 +35,15 @@
                     "title": "Number",
                     "type": "string",
                     "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234.",
-                    "meta:titleId": "phonenumber##xdm:number##title##6901",
-                    "meta:descriptionId": "phonenumber##xdm:number##description##83441"
+                    "meta:titleId": "phonenumber##xdm:number##title##12351",
+                    "meta:descriptionId": "phonenumber##xdm:number##description##88841"
                 },
                 "xdm:extension": {
                     "title": "Extension",
                     "type": "string",
                     "description": "The internal dialing number used to call from a private exchange, operator, or switchboard.",
-                    "meta:titleId": "phonenumber##xdm:extension##title##24821",
-                    "meta:descriptionId": "phonenumber##xdm:extension##description##95231"
+                    "meta:titleId": "phonenumber##xdm:extension##title##74891",
+                    "meta:descriptionId": "phonenumber##xdm:extension##description##68961"
                 },
                 "xdm:status": {
                     "title": "Status",
@@ -56,15 +56,15 @@
                         "blacklisted": "Blacklisted",
                         "blocked": "Blocked"
                     },
-                    "meta:titleId": "phonenumber##xdm:status##title##80961",
-                    "meta:descriptionId": "phonenumber##xdm:status##description##98111"
+                    "meta:titleId": "phonenumber##xdm:status##title##48581",
+                    "meta:descriptionId": "phonenumber##xdm:status##description##63871"
                 },
                 "xdm:statusReason": {
                     "title": "Status reason",
                     "type": "string",
                     "description": "A description of the current status.",
-                    "meta:titleId": "phonenumber##xdm:statusReason##title##17361",
-                    "meta:descriptionId": "phonenumber##xdm:statusReason##description##68511"
+                    "meta:titleId": "phonenumber##xdm:statusReason##title##57511",
+                    "meta:descriptionId": "phonenumber##xdm:statusReason##description##72871"
                 },
                 "xdm:validity": {
                     "title": "Validity",
@@ -76,8 +76,8 @@
                         "incomplete": "Incomplete",
                         "successfullyUsed": "Successfully used"
                     },
-                    "meta:titleId": "phonenumber##xdm:validity##title##8531",
-                    "meta:descriptionId": "phonenumber##xdm:validity##description##18071"
+                    "meta:titleId": "phonenumber##xdm:validity##title##52201",
+                    "meta:descriptionId": "phonenumber##xdm:validity##description##36201"
                 }
             }
         }
@@ -92,8 +92,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "phonenumber##title##95291",
-    "meta:descriptionId": "phonenumber##description##20581",
+    "meta:titleId": "phonenumber##title##62491",
+    "meta:descriptionId": "phonenumber##description##28571",
     "examples": [
         {
             "xdm:primary": true,

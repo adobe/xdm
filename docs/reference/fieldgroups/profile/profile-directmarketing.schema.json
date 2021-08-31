@@ -22,22 +22,22 @@
                     "title": "Direct marketing address",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
                     "description": "Direct marketing postal address.",
-                    "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##39581",
-                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##70361"
+                    "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##80011",
+                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##81761"
                 },
                 "xdm:directMarketingEmail": {
                     "title": "Direct marketing email",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
                     "description": "Direct marketing email address.",
-                    "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##74921",
-                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##11601"
+                    "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##5111",
+                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##75171"
                 },
                 "xdm:directMarketingPhone": {
                     "title": "Direct marketing phone",
                     "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
                     "description": "Direct marketing phone number.",
-                    "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##41081",
-                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##9931"
+                    "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##53051",
+                    "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##72381"
                 }
             }
         }
@@ -52,8 +52,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "profile-directmarketing##title##69661",
-    "meta:descriptionId": "profile-directmarketing##description##54361",
+    "meta:titleId": "profile-directmarketing##title##87841",
+    "meta:descriptionId": "profile-directmarketing##description##16031",
     "examples": [
         {
             "xdm:directMarketingPhone": {

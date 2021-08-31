@@ -12,7 +12,9 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:auditable": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Search Advertising Portfolio Class includes fields that defines Portfolio.",
   "definitions": {
     "searchads-portfolio": {
@@ -20,7 +22,9 @@
         "searchads:portfolioName": {
           "title": "Portfolio Name",
           "type": "string",
-          "description": "Name of the Portfolio."
+          "description": "Name of the Portfolio.",
+          "meta:titleId": "portfolio##searchads:portfolioName##title##98771",
+          "meta:descriptionId": "portfolio##searchads:portfolioName##description##59641"
         },
         "searchads:billingState": {
           "title": "Portfolio Billing State",
@@ -29,17 +33,23 @@
           "meta:enum": {
             "Managed": "Client will be billed for the spend from this portfolio",
             "Not Managed": "Client will not be billed for the spend from this portfolio"
-          }
+          },
+          "meta:titleId": "portfolio##searchads:billingState##title##70931",
+          "meta:descriptionId": "portfolio##searchads:billingState##description##71031"
         },
         "searchads:portfolioGroupId": {
           "title": "Portfolio Group Identifier",
           "type": "string",
-          "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group."
+          "description": "Set of portfolios can be assigned to a portfolio Group. This identifier indicates if portfolio is assigned to a portfolio group.",
+          "meta:titleId": "portfolio##searchads:portfolioGroupId##title##79241",
+          "meta:descriptionId": "portfolio##searchads:portfolioGroupId##description##56721"
         },
         "searchads:portfolioGroupName": {
           "title": "Portfolio Group Name",
           "type": "string",
-          "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group."
+          "description": "Indicates Name of the Portfolio Group if portfolio belongs to a Portfolio Group.",
+          "meta:titleId": "portfolio##searchads:portfolioGroupName##title##56481",
+          "meta:descriptionId": "portfolio##searchads:portfolioGroupName##description##11791"
         },
         "searchads:portfolioStatus": {
           "title": "Portfolio Status",
@@ -62,19 +72,27 @@
             "Incomplete": "Incomplete",
             "Optimize": "Optimize",
             "Unknown": "Unknown"
-          }
+          },
+          "meta:titleId": "portfolio##searchads:portfolioStatus##title##62721",
+          "meta:descriptionId": "portfolio##searchads:portfolioStatus##description##94221"
         },
         "searchads:createDate": {
           "type": "string",
           "format": "date-time",
-          "examples": ["2004-10-23T12:00:00-06:00"],
-          "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\"."
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The date and time when the portfolio was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "portfolio##searchads:createDate##description##63811"
         },
         "searchads:modifyDate": {
           "type": "string",
           "format": "date-time",
-          "examples": ["2004-10-23T12:00:00-06:00"],
-          "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\"."
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The date and time when the portfolio was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "portfolio##searchads:modifyDate##description##90131"
         }
       }
     }
@@ -90,5 +108,7 @@
       "$ref": "#/definitions/searchads-portfolio"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "portfolio##title##67571",
+  "meta:descriptionId": "portfolio##description##10401"
 }

@@ -20,24 +20,24 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
-          "meta:titleId": "schemadescriptor##@id##title##5801",
-          "meta:descriptionId": "schemadescriptor##@id##description##83201"
+          "meta:titleId": "schemadescriptor##@id##title##10581",
+          "meta:descriptionId": "schemadescriptor##@id##description##77541"
         },
         "@type": {
           "title": "Type",
           "type": "string",
           "description": "The type of descriptor this object represents.",
           "meta:enum": {},
-          "meta:titleId": "schemadescriptor##@type##title##53561",
-          "meta:descriptionId": "schemadescriptor##@type##description##49401"
+          "meta:titleId": "schemadescriptor##@type##title##15981",
+          "meta:descriptionId": "schemadescriptor##@type##description##6141"
         },
         "xdm:sourceSchema": {
           "title": "Source Schema",
           "type": "string",
           "format": "uri",
           "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
-          "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
-          "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241"
+          "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+          "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211"
         },
         "xdm:sourceProperty": {
           "title": "Source Property",
@@ -53,22 +53,22 @@
             }
           ],
           "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
-          "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
-          "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331"
+          "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+          "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661"
         },
         "xdm:sourceVersion": {
           "title": "Source Version",
           "type": "number",
           "description": "Major version being referenced.",
-          "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
-          "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401"
+          "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+          "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461"
         },
         "xdm:sourceItem": {
           "title": "Source Item",
           "description": "When present, the selector used to match a specific item in the array pointed to by `sourceProperty`.",
           "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector",
-          "meta:titleId": "schemadescriptor##xdm:sourceItem##title##46621",
-          "meta:descriptionId": "schemadescriptor##xdm:sourceItem##description##15051"
+          "meta:titleId": "schemadescriptor##xdm:sourceItem##title##66461",
+          "meta:descriptionId": "schemadescriptor##xdm:sourceItem##description##11121"
         }
       },
       "required": ["xdm:sourceSchema", "xdm:sourceVersion"]
@@ -84,6 +84,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "schemadescriptor##title##60311",
-  "meta:descriptionId": "schemadescriptor##description##12551"
+  "meta:titleId": "schemadescriptor##title##7241",
+  "meta:descriptionId": "schemadescriptor##description##68051"
 }

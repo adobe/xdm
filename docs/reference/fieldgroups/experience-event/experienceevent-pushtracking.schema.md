@@ -82,19 +82,19 @@ Unknown type `object`.
       "title": "action ID",
       "type": "string",
       "description": "user clicked custom action identifier",
-      "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##92501",
-      "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##26151"
+      "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##36211",
+      "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##39371"
     },
     "xdm:value": {
       "title": "value",
       "type": "number",
       "description": "value associated with the custom action, if any",
-      "meta:titleId": "experienceevent-pushtracking##xdm:value##title##84741",
-      "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##24851"
+      "meta:titleId": "experienceevent-pushtracking##xdm:value##title##83911",
+      "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##93721"
     }
   },
-  "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##10871",
-  "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##46451",
+  "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##33441",
+  "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##96791",
   "simpletype": "`object`"
 }
 ```

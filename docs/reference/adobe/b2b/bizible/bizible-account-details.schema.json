@@ -21,12 +21,16 @@
                 "bizible:engagementRating": {
                     "title": "Engagement Rating",
                     "description": "Computed engagement rating for a business account.",
-                    "type": "number"
+                    "type": "number",
+                    "meta:titleId": "bizible-account-details##bizible:engagementRating##title##84111",
+                    "meta:descriptionId": "bizible-account-details##bizible:engagementRating##description##81661"
                 },
                 "bizible:engagementScore": {
                     "title": "Engagement Score",
                     "description": "Computed engagement score for a business account.",
-                    "type": "number"
+                    "type": "number",
+                    "meta:titleId": "bizible-account-details##bizible:engagementScore##title##821",
+                    "meta:descriptionId": "bizible-account-details##bizible:engagementScore##description##46761"
                 }
             }
         }
@@ -37,6 +41,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "bizible-account-details##title##28131",
+    "meta:descriptionId": "bizible-account-details##description##99401",
     "examples": [
         {}
     ]

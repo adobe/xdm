@@ -17,16 +17,16 @@
           "title": "Opt Out Reason",
           "description": "Reason for opting out for a notification.",
           "type": "string",
-          "meta:titleId": "optinout-additional-details##xdm:optOutReason##title##99941",
-          "meta:descriptionId": "optinout-additional-details##xdm:optOutReason##description##80691"
+          "meta:titleId": "optinout-additional-details##xdm:optOutReason##title##60471",
+          "meta:descriptionId": "optinout-additional-details##xdm:optOutReason##description##89921"
         },
         "xdm:optOutDate": {
           "title": "Opt Out Date",
           "description": "Date of opting out for a notification.",
           "type": "string",
           "format": "date-time",
-          "meta:titleId": "optinout-additional-details##xdm:optOutDate##title##45581",
-          "meta:descriptionId": "optinout-additional-details##xdm:optOutDate##description##34711"
+          "meta:titleId": "optinout-additional-details##xdm:optOutDate##title##4141",
+          "meta:descriptionId": "optinout-additional-details##xdm:optOutDate##description##45701"
         }
       }
     }
@@ -41,6 +41,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-18",
-  "meta:titleId": "optinout-additional-details##title##51551",
-  "meta:descriptionId": "optinout-additional-details##description##41621"
+  "meta:titleId": "optinout-additional-details##title##74591",
+  "meta:descriptionId": "optinout-additional-details##description##36111"
 }

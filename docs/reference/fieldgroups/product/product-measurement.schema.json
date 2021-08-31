@@ -23,8 +23,8 @@
                     "title": "Product Size",
                     "type": "string",
                     "description": "Standard product size for the product.",
-                    "meta:titleId": "product-measurement##xdm:productSize##title##22061",
-                    "meta:descriptionId": "product-measurement##xdm:productSize##description##25831"
+                    "meta:titleId": "product-measurement##xdm:productSize##title##83681",
+                    "meta:descriptionId": "product-measurement##xdm:productSize##description##38041"
                 },
                 "xdm:unitOfMeasureName": {
                     "title": "Product Unit Of Measure Name",
@@ -41,8 +41,8 @@
                     "title": "Product Unit Of Measure Code",
                     "type": "string",
                     "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
-                    "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##241",
-                    "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##71081"
+                    "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##20391",
+                    "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871"
                 }
             }
         }
@@ -57,8 +57,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "product-measurement##title##8091",
-    "meta:descriptionId": "product-measurement##description##81561",
+    "meta:titleId": "product-measurement##title##42861",
+    "meta:descriptionId": "product-measurement##description##66341",
     "examples": [
         {
             "productSize": 5,

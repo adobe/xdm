@@ -23,22 +23,22 @@
           "title": "Work Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "A work postal address.",
-          "meta:titleId": "profile-work-details##xdm:workAddress##title##85201",
-          "meta:descriptionId": "profile-work-details##xdm:workAddress##description##99171"
+          "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
+          "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351"
         },
         "xdm:workEmail": {
           "title": "Work Email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
           "description": "A work email address.",
-          "meta:titleId": "profile-work-details##xdm:workEmail##title##59961",
-          "meta:descriptionId": "profile-work-details##xdm:workEmail##description##94441"
+          "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
+          "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641"
         },
         "xdm:workPhone": {
           "title": "Work Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
           "description": "Work phone number.",
-          "meta:titleId": "profile-work-details##xdm:workPhone##title##84361",
-          "meta:descriptionId": "profile-work-details##xdm:workPhone##description##5831"
+          "meta:titleId": "profile-work-details##xdm:workPhone##title##72561",
+          "meta:descriptionId": "profile-work-details##xdm:workPhone##description##61541"
         },
         "xdm:organizations": {
           "title": "Organizations",
@@ -46,7 +46,7 @@
           "items": {
             "type": "string"
           },
-          "meta:titleId": "profile-work-details##xdm:organizations##title##88581"
+          "meta:titleId": "profile-work-details##xdm:organizations##title##55021"
         }
       }
     }
@@ -61,6 +61,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-work-details##title##54111",
-  "meta:descriptionId": "profile-work-details##description##52361"
+  "meta:titleId": "profile-work-details##title##83911",
+  "meta:descriptionId": "profile-work-details##description##64201"
 }

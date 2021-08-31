@@ -65,33 +65,33 @@ Unknown type `object`.
       "title": "Type",
       "type": "string",
       "description": "Type of Interesting Moment.",
-      "meta:titleId": "interesting-moment##xdm:type##title##77731",
-      "meta:descriptionId": "interesting-moment##xdm:type##description##86791"
+      "meta:titleId": "interesting-moment##xdm:type##title##47241",
+      "meta:descriptionId": "interesting-moment##xdm:type##description##99611"
     },
     "xdm:description": {
       "title": "Description",
       "type": "string",
       "description": "Description of Interesting Moment.",
-      "meta:titleId": "interesting-moment##xdm:description##title##32581",
-      "meta:descriptionId": "interesting-moment##xdm:description##description##97591"
+      "meta:titleId": "interesting-moment##xdm:description##title##20541",
+      "meta:descriptionId": "interesting-moment##xdm:description##description##58861"
     },
     "xdm:date": {
       "title": "Date",
       "type": "string",
       "format": "date-time",
       "description": "Date of the Interesting Moment.",
-      "meta:titleId": "interesting-moment##xdm:date##title##50331",
-      "meta:descriptionId": "interesting-moment##xdm:date##description##36961"
+      "meta:titleId": "interesting-moment##xdm:date##title##8651",
+      "meta:descriptionId": "interesting-moment##xdm:date##description##99781"
     },
     "xdm:source": {
       "title": "Source",
       "type": "string",
       "description": "Source of the action that triggered the interesting moment.",
-      "meta:titleId": "interesting-moment##xdm:source##title##20931",
-      "meta:descriptionId": "interesting-moment##xdm:source##description##19671"
+      "meta:titleId": "interesting-moment##xdm:source##title##1141",
+      "meta:descriptionId": "interesting-moment##xdm:source##description##2171"
     }
   },
-  "meta:titleId": "interesting-moment##xdm:interestingMoment##title##58221",
+  "meta:titleId": "interesting-moment##xdm:interestingMoment##title##24181",
   "simpletype": "`object`"
 }
 ```

@@ -2,502 +2,702 @@
     "xdm:event1": {
         "title": "event1",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 1."
+        "description": "Custom event 1.",
+        "meta:titleId": "experienceevent-all##xdm:event1##title##94391",
+        "meta:descriptionId": "experienceevent-all##xdm:event1##description##49431"
     },
     "xdm:event2": {
         "title": "event2",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 2."
+        "description": "Custom event 2.",
+        "meta:titleId": "experienceevent-all##xdm:event2##title##61281",
+        "meta:descriptionId": "experienceevent-all##xdm:event2##description##17071"
     },
     "xdm:event3": {
         "title": "event3",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 3."
+        "description": "Custom event 3.",
+        "meta:titleId": "experienceevent-all##xdm:event3##title##85121",
+        "meta:descriptionId": "experienceevent-all##xdm:event3##description##12131"
     },
     "xdm:event4": {
         "title": "event4",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 4."
+        "description": "Custom event 4.",
+        "meta:titleId": "experienceevent-all##xdm:event4##title##17421",
+        "meta:descriptionId": "experienceevent-all##xdm:event4##description##83571"
     },
     "xdm:event5": {
         "title": "event5",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 5."
+        "description": "Custom event 5.",
+        "meta:titleId": "experienceevent-all##xdm:event5##title##67371",
+        "meta:descriptionId": "experienceevent-all##xdm:event5##description##55071"
     },
     "xdm:event6": {
         "title": "event6",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 6."
+        "description": "Custom event 6.",
+        "meta:titleId": "experienceevent-all##xdm:event6##title##61581",
+        "meta:descriptionId": "experienceevent-all##xdm:event6##description##10431"
     },
     "xdm:event7": {
         "title": "event7",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 7."
+        "description": "Custom event 7.",
+        "meta:titleId": "experienceevent-all##xdm:event7##title##67861",
+        "meta:descriptionId": "experienceevent-all##xdm:event7##description##37701"
     },
     "xdm:event8": {
         "title": "event8",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 8."
+        "description": "Custom event 8.",
+        "meta:titleId": "experienceevent-all##xdm:event8##title##69191",
+        "meta:descriptionId": "experienceevent-all##xdm:event8##description##1441"
     },
     "xdm:event9": {
         "title": "event9",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 9."
+        "description": "Custom event 9.",
+        "meta:titleId": "experienceevent-all##xdm:event9##title##28961",
+        "meta:descriptionId": "experienceevent-all##xdm:event9##description##11351"
     },
     "xdm:event10": {
         "title": "event10",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 10."
+        "description": "Custom event 10.",
+        "meta:titleId": "experienceevent-all##xdm:event10##title##10481",
+        "meta:descriptionId": "experienceevent-all##xdm:event10##description##67401"
     },
     "xdm:event11": {
         "title": "event11",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 11."
+        "description": "Custom event 11.",
+        "meta:titleId": "experienceevent-all##xdm:event11##title##74181",
+        "meta:descriptionId": "experienceevent-all##xdm:event11##description##33241"
     },
     "xdm:event12": {
         "title": "event12",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 12."
+        "description": "Custom event 12.",
+        "meta:titleId": "experienceevent-all##xdm:event12##title##99011",
+        "meta:descriptionId": "experienceevent-all##xdm:event12##description##52421"
     },
     "xdm:event13": {
         "title": "event13",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 13."
+        "description": "Custom event 13.",
+        "meta:titleId": "experienceevent-all##xdm:event13##title##46571",
+        "meta:descriptionId": "experienceevent-all##xdm:event13##description##91811"
     },
     "xdm:event14": {
         "title": "event14",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 14."
+        "description": "Custom event 14.",
+        "meta:titleId": "experienceevent-all##xdm:event14##title##60241",
+        "meta:descriptionId": "experienceevent-all##xdm:event14##description##58881"
     },
     "xdm:event15": {
         "title": "event15",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 15."
+        "description": "Custom event 15.",
+        "meta:titleId": "experienceevent-all##xdm:event15##title##92601",
+        "meta:descriptionId": "experienceevent-all##xdm:event15##description##69071"
     },
     "xdm:event16": {
         "title": "event16",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 16."
+        "description": "Custom event 16.",
+        "meta:titleId": "experienceevent-all##xdm:event16##title##38591",
+        "meta:descriptionId": "experienceevent-all##xdm:event16##description##8461"
     },
     "xdm:event17": {
         "title": "event17",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 17."
+        "description": "Custom event 17.",
+        "meta:titleId": "experienceevent-all##xdm:event17##title##15551",
+        "meta:descriptionId": "experienceevent-all##xdm:event17##description##96721"
     },
     "xdm:event18": {
         "title": "event18",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 18."
+        "description": "Custom event 18.",
+        "meta:titleId": "experienceevent-all##xdm:event18##title##94701",
+        "meta:descriptionId": "experienceevent-all##xdm:event18##description##80751"
     },
     "xdm:event19": {
         "title": "event19",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 19."
+        "description": "Custom event 19.",
+        "meta:titleId": "experienceevent-all##xdm:event19##title##2671",
+        "meta:descriptionId": "experienceevent-all##xdm:event19##description##33551"
     },
     "xdm:event20": {
         "title": "event20",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 20."
+        "description": "Custom event 20.",
+        "meta:titleId": "experienceevent-all##xdm:event20##title##1641",
+        "meta:descriptionId": "experienceevent-all##xdm:event20##description##29451"
     },
     "xdm:event21": {
         "title": "event21",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 21."
+        "description": "Custom event 21.",
+        "meta:titleId": "experienceevent-all##xdm:event21##title##31001",
+        "meta:descriptionId": "experienceevent-all##xdm:event21##description##77971"
     },
     "xdm:event22": {
         "title": "event22",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 22."
+        "description": "Custom event 22.",
+        "meta:titleId": "experienceevent-all##xdm:event22##title##48821",
+        "meta:descriptionId": "experienceevent-all##xdm:event22##description##38451"
     },
     "xdm:event23": {
         "title": "event23",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 23."
+        "description": "Custom event 23.",
+        "meta:titleId": "experienceevent-all##xdm:event23##title##13171",
+        "meta:descriptionId": "experienceevent-all##xdm:event23##description##27701"
     },
     "xdm:event24": {
         "title": "event24",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 24."
+        "description": "Custom event 24.",
+        "meta:titleId": "experienceevent-all##xdm:event24##title##51461",
+        "meta:descriptionId": "experienceevent-all##xdm:event24##description##60201"
     },
     "xdm:event25": {
         "title": "event25",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 25."
+        "description": "Custom event 25.",
+        "meta:titleId": "experienceevent-all##xdm:event25##title##76511",
+        "meta:descriptionId": "experienceevent-all##xdm:event25##description##92131"
     },
     "xdm:event26": {
         "title": "event26",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 26."
+        "description": "Custom event 26.",
+        "meta:titleId": "experienceevent-all##xdm:event26##title##20491",
+        "meta:descriptionId": "experienceevent-all##xdm:event26##description##32671"
     },
     "xdm:event27": {
         "title": "event27",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 27."
+        "description": "Custom event 27.",
+        "meta:titleId": "experienceevent-all##xdm:event27##title##35671",
+        "meta:descriptionId": "experienceevent-all##xdm:event27##description##85571"
     },
     "xdm:event28": {
         "title": "event28",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 28."
+        "description": "Custom event 28.",
+        "meta:titleId": "experienceevent-all##xdm:event28##title##45311",
+        "meta:descriptionId": "experienceevent-all##xdm:event28##description##38431"
     },
     "xdm:event29": {
         "title": "event29",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 29."
+        "description": "Custom event 29.",
+        "meta:titleId": "experienceevent-all##xdm:event29##title##87421",
+        "meta:descriptionId": "experienceevent-all##xdm:event29##description##52301"
     },
     "xdm:event30": {
         "title": "event30",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 30."
+        "description": "Custom event 30.",
+        "meta:titleId": "experienceevent-all##xdm:event30##title##61141",
+        "meta:descriptionId": "experienceevent-all##xdm:event30##description##81991"
     },
     "xdm:event31": {
         "title": "event31",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 31."
+        "description": "Custom event 31.",
+        "meta:titleId": "experienceevent-all##xdm:event31##title##96551",
+        "meta:descriptionId": "experienceevent-all##xdm:event31##description##84981"
     },
     "xdm:event32": {
         "title": "event32",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 32."
+        "description": "Custom event 32.",
+        "meta:titleId": "experienceevent-all##xdm:event32##title##90181",
+        "meta:descriptionId": "experienceevent-all##xdm:event32##description##81571"
     },
     "xdm:event33": {
         "title": "event33",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 33."
+        "description": "Custom event 33.",
+        "meta:titleId": "experienceevent-all##xdm:event33##title##35961",
+        "meta:descriptionId": "experienceevent-all##xdm:event33##description##56621"
     },
     "xdm:event34": {
         "title": "event34",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 34."
+        "description": "Custom event 34.",
+        "meta:titleId": "experienceevent-all##xdm:event34##title##22301",
+        "meta:descriptionId": "experienceevent-all##xdm:event34##description##39441"
     },
     "xdm:event35": {
         "title": "event35",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 35."
+        "description": "Custom event 35.",
+        "meta:titleId": "experienceevent-all##xdm:event35##title##28931",
+        "meta:descriptionId": "experienceevent-all##xdm:event35##description##41351"
     },
     "xdm:event36": {
         "title": "event36",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 36."
+        "description": "Custom event 36.",
+        "meta:titleId": "experienceevent-all##xdm:event36##title##74511",
+        "meta:descriptionId": "experienceevent-all##xdm:event36##description##70021"
     },
     "xdm:event37": {
         "title": "event37",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 37."
+        "description": "Custom event 37.",
+        "meta:titleId": "experienceevent-all##xdm:event37##title##46031",
+        "meta:descriptionId": "experienceevent-all##xdm:event37##description##44291"
     },
     "xdm:event38": {
         "title": "event38",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 38."
+        "description": "Custom event 38.",
+        "meta:titleId": "experienceevent-all##xdm:event38##title##55641",
+        "meta:descriptionId": "experienceevent-all##xdm:event38##description##43651"
     },
     "xdm:event39": {
         "title": "event39",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 39."
+        "description": "Custom event 39.",
+        "meta:titleId": "experienceevent-all##xdm:event39##title##38861",
+        "meta:descriptionId": "experienceevent-all##xdm:event39##description##87861"
     },
     "xdm:event40": {
         "title": "event40",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 40."
+        "description": "Custom event 40.",
+        "meta:titleId": "experienceevent-all##xdm:event40##title##19251",
+        "meta:descriptionId": "experienceevent-all##xdm:event40##description##15161"
     },
     "xdm:event41": {
         "title": "event41",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 41."
+        "description": "Custom event 41.",
+        "meta:titleId": "experienceevent-all##xdm:event41##title##73201",
+        "meta:descriptionId": "experienceevent-all##xdm:event41##description##47861"
     },
     "xdm:event42": {
         "title": "event42",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 42."
+        "description": "Custom event 42.",
+        "meta:titleId": "experienceevent-all##xdm:event42##title##71261",
+        "meta:descriptionId": "experienceevent-all##xdm:event42##description##79741"
     },
     "xdm:event43": {
         "title": "event43",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 43."
+        "description": "Custom event 43.",
+        "meta:titleId": "experienceevent-all##xdm:event43##title##94561",
+        "meta:descriptionId": "experienceevent-all##xdm:event43##description##14691"
     },
     "xdm:event44": {
         "title": "event44",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 44."
+        "description": "Custom event 44.",
+        "meta:titleId": "experienceevent-all##xdm:event44##title##85991",
+        "meta:descriptionId": "experienceevent-all##xdm:event44##description##88171"
     },
     "xdm:event45": {
         "title": "event45",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 45."
+        "description": "Custom event 45.",
+        "meta:titleId": "experienceevent-all##xdm:event45##title##72241",
+        "meta:descriptionId": "experienceevent-all##xdm:event45##description##30831"
     },
     "xdm:event46": {
         "title": "event46",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 46."
+        "description": "Custom event 46.",
+        "meta:titleId": "experienceevent-all##xdm:event46##title##23891",
+        "meta:descriptionId": "experienceevent-all##xdm:event46##description##52701"
     },
     "xdm:event47": {
         "title": "event47",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 47."
+        "description": "Custom event 47.",
+        "meta:titleId": "experienceevent-all##xdm:event47##title##61711",
+        "meta:descriptionId": "experienceevent-all##xdm:event47##description##81011"
     },
     "xdm:event48": {
         "title": "event48",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 48."
+        "description": "Custom event 48.",
+        "meta:titleId": "experienceevent-all##xdm:event48##title##65111",
+        "meta:descriptionId": "experienceevent-all##xdm:event48##description##54221"
     },
     "xdm:event49": {
         "title": "event49",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 49."
+        "description": "Custom event 49.",
+        "meta:titleId": "experienceevent-all##xdm:event49##title##78381",
+        "meta:descriptionId": "experienceevent-all##xdm:event49##description##96131"
     },
     "xdm:event50": {
         "title": "event50",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 50."
+        "description": "Custom event 50.",
+        "meta:titleId": "experienceevent-all##xdm:event50##title##56611",
+        "meta:descriptionId": "experienceevent-all##xdm:event50##description##34101"
     },
     "xdm:event51": {
         "title": "event51",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 51."
+        "description": "Custom event 51.",
+        "meta:titleId": "experienceevent-all##xdm:event51##title##721",
+        "meta:descriptionId": "experienceevent-all##xdm:event51##description##44401"
     },
     "xdm:event52": {
         "title": "event52",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 52."
+        "description": "Custom event 52.",
+        "meta:titleId": "experienceevent-all##xdm:event52##title##43141",
+        "meta:descriptionId": "experienceevent-all##xdm:event52##description##64611"
     },
     "xdm:event53": {
         "title": "event53",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 53."
+        "description": "Custom event 53.",
+        "meta:titleId": "experienceevent-all##xdm:event53##title##98571",
+        "meta:descriptionId": "experienceevent-all##xdm:event53##description##12941"
     },
     "xdm:event54": {
         "title": "event54",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 54."
+        "description": "Custom event 54.",
+        "meta:titleId": "experienceevent-all##xdm:event54##title##38651",
+        "meta:descriptionId": "experienceevent-all##xdm:event54##description##79911"
     },
     "xdm:event55": {
         "title": "event55",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 55."
+        "description": "Custom event 55.",
+        "meta:titleId": "experienceevent-all##xdm:event55##title##4741",
+        "meta:descriptionId": "experienceevent-all##xdm:event55##description##93101"
     },
     "xdm:event56": {
         "title": "event56",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 56."
+        "description": "Custom event 56.",
+        "meta:titleId": "experienceevent-all##xdm:event56##title##38351",
+        "meta:descriptionId": "experienceevent-all##xdm:event56##description##12551"
     },
     "xdm:event57": {
         "title": "event57",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 57."
+        "description": "Custom event 57.",
+        "meta:titleId": "experienceevent-all##xdm:event57##title##95461",
+        "meta:descriptionId": "experienceevent-all##xdm:event57##description##51511"
     },
     "xdm:event58": {
         "title": "event58",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 58."
+        "description": "Custom event 58.",
+        "meta:titleId": "experienceevent-all##xdm:event58##title##66021",
+        "meta:descriptionId": "experienceevent-all##xdm:event58##description##12761"
     },
     "xdm:event59": {
         "title": "event59",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 59."
+        "description": "Custom event 59.",
+        "meta:titleId": "experienceevent-all##xdm:event59##title##40901",
+        "meta:descriptionId": "experienceevent-all##xdm:event59##description##41121"
     },
     "xdm:event60": {
         "title": "event60",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 60."
+        "description": "Custom event 60.",
+        "meta:titleId": "experienceevent-all##xdm:event60##title##9871",
+        "meta:descriptionId": "experienceevent-all##xdm:event60##description##68051"
     },
     "xdm:event61": {
         "title": "event61",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 61."
+        "description": "Custom event 61.",
+        "meta:titleId": "experienceevent-all##xdm:event61##title##33331",
+        "meta:descriptionId": "experienceevent-all##xdm:event61##description##85341"
     },
     "xdm:event62": {
         "title": "event62",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 62."
+        "description": "Custom event 62.",
+        "meta:titleId": "experienceevent-all##xdm:event62##title##63151",
+        "meta:descriptionId": "experienceevent-all##xdm:event62##description##60921"
     },
     "xdm:event63": {
         "title": "event63",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 63."
+        "description": "Custom event 63.",
+        "meta:titleId": "experienceevent-all##xdm:event63##title##46061",
+        "meta:descriptionId": "experienceevent-all##xdm:event63##description##99801"
     },
     "xdm:event64": {
         "title": "event64",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 64."
+        "description": "Custom event 64.",
+        "meta:titleId": "experienceevent-all##xdm:event64##title##48041",
+        "meta:descriptionId": "experienceevent-all##xdm:event64##description##54231"
     },
     "xdm:event65": {
         "title": "event65",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 65."
+        "description": "Custom event 65.",
+        "meta:titleId": "experienceevent-all##xdm:event65##title##5761",
+        "meta:descriptionId": "experienceevent-all##xdm:event65##description##31841"
     },
     "xdm:event66": {
         "title": "event66",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 66."
+        "description": "Custom event 66.",
+        "meta:titleId": "experienceevent-all##xdm:event66##title##56761",
+        "meta:descriptionId": "experienceevent-all##xdm:event66##description##94921"
     },
     "xdm:event67": {
         "title": "event67",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 67."
+        "description": "Custom event 67.",
+        "meta:titleId": "experienceevent-all##xdm:event67##title##97251",
+        "meta:descriptionId": "experienceevent-all##xdm:event67##description##57541"
     },
     "xdm:event68": {
         "title": "event68",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 68."
+        "description": "Custom event 68.",
+        "meta:titleId": "experienceevent-all##xdm:event68##title##51721",
+        "meta:descriptionId": "experienceevent-all##xdm:event68##description##44851"
     },
     "xdm:event69": {
         "title": "event69",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 69."
+        "description": "Custom event 69.",
+        "meta:titleId": "experienceevent-all##xdm:event69##title##34991",
+        "meta:descriptionId": "experienceevent-all##xdm:event69##description##73751"
     },
     "xdm:event70": {
         "title": "event70",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 70."
+        "description": "Custom event 70.",
+        "meta:titleId": "experienceevent-all##xdm:event70##title##80741",
+        "meta:descriptionId": "experienceevent-all##xdm:event70##description##4301"
     },
     "xdm:event71": {
         "title": "event71",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 71."
+        "description": "Custom event 71.",
+        "meta:titleId": "experienceevent-all##xdm:event71##title##57751",
+        "meta:descriptionId": "experienceevent-all##xdm:event71##description##67051"
     },
     "xdm:event72": {
         "title": "event72",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 72."
+        "description": "Custom event 72.",
+        "meta:titleId": "experienceevent-all##xdm:event72##title##33111",
+        "meta:descriptionId": "experienceevent-all##xdm:event72##description##46111"
     },
     "xdm:event73": {
         "title": "event73",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 73."
+        "description": "Custom event 73.",
+        "meta:titleId": "experienceevent-all##xdm:event73##title##70621",
+        "meta:descriptionId": "experienceevent-all##xdm:event73##description##72241"
     },
     "xdm:event74": {
         "title": "event74",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 74."
+        "description": "Custom event 74.",
+        "meta:titleId": "experienceevent-all##xdm:event74##title##5811",
+        "meta:descriptionId": "experienceevent-all##xdm:event74##description##88171"
     },
     "xdm:event75": {
         "title": "event75",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 75."
+        "description": "Custom event 75.",
+        "meta:titleId": "experienceevent-all##xdm:event75##title##28181",
+        "meta:descriptionId": "experienceevent-all##xdm:event75##description##55441"
     },
     "xdm:event76": {
         "title": "event76",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 76."
+        "description": "Custom event 76.",
+        "meta:titleId": "experienceevent-all##xdm:event76##title##6491",
+        "meta:descriptionId": "experienceevent-all##xdm:event76##description##23531"
     },
     "xdm:event77": {
         "title": "event77",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 77."
+        "description": "Custom event 77.",
+        "meta:titleId": "experienceevent-all##xdm:event77##title##45041",
+        "meta:descriptionId": "experienceevent-all##xdm:event77##description##16861"
     },
     "xdm:event78": {
         "title": "event78",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 78."
+        "description": "Custom event 78.",
+        "meta:titleId": "experienceevent-all##xdm:event78##title##91661",
+        "meta:descriptionId": "experienceevent-all##xdm:event78##description##65011"
     },
     "xdm:event79": {
         "title": "event79",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 79."
+        "description": "Custom event 79.",
+        "meta:titleId": "experienceevent-all##xdm:event79##title##18841",
+        "meta:descriptionId": "experienceevent-all##xdm:event79##description##1591"
     },
     "xdm:event80": {
         "title": "event80",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 80."
+        "description": "Custom event 80.",
+        "meta:titleId": "experienceevent-all##xdm:event80##title##27511",
+        "meta:descriptionId": "experienceevent-all##xdm:event80##description##38301"
     },
     "xdm:event81": {
         "title": "event81",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 81."
+        "description": "Custom event 81.",
+        "meta:titleId": "experienceevent-all##xdm:event81##title##64441",
+        "meta:descriptionId": "experienceevent-all##xdm:event81##description##631"
     },
     "xdm:event82": {
         "title": "event82",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 82."
+        "description": "Custom event 82.",
+        "meta:titleId": "experienceevent-all##xdm:event82##title##16991",
+        "meta:descriptionId": "experienceevent-all##xdm:event82##description##14211"
     },
     "xdm:event83": {
         "title": "event83",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 83."
+        "description": "Custom event 83.",
+        "meta:titleId": "experienceevent-all##xdm:event83##title##58021",
+        "meta:descriptionId": "experienceevent-all##xdm:event83##description##37181"
     },
     "xdm:event84": {
         "title": "event84",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 84."
+        "description": "Custom event 84.",
+        "meta:titleId": "experienceevent-all##xdm:event84##title##72671",
+        "meta:descriptionId": "experienceevent-all##xdm:event84##description##58301"
     },
     "xdm:event85": {
         "title": "event85",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 85."
+        "description": "Custom event 85.",
+        "meta:titleId": "experienceevent-all##xdm:event85##title##13201",
+        "meta:descriptionId": "experienceevent-all##xdm:event85##description##60061"
     },
     "xdm:event86": {
         "title": "event86",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 86."
+        "description": "Custom event 86.",
+        "meta:titleId": "experienceevent-all##xdm:event86##title##66761",
+        "meta:descriptionId": "experienceevent-all##xdm:event86##description##44191"
     },
     "xdm:event87": {
         "title": "event87",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 87."
+        "description": "Custom event 87.",
+        "meta:titleId": "experienceevent-all##xdm:event87##title##26801",
+        "meta:descriptionId": "experienceevent-all##xdm:event87##description##40301"
     },
     "xdm:event88": {
         "title": "event88",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 88."
+        "description": "Custom event 88.",
+        "meta:titleId": "experienceevent-all##xdm:event88##title##19931",
+        "meta:descriptionId": "experienceevent-all##xdm:event88##description##36121"
     },
     "xdm:event89": {
         "title": "event89",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 89."
+        "description": "Custom event 89.",
+        "meta:titleId": "experienceevent-all##xdm:event89##title##87361",
+        "meta:descriptionId": "experienceevent-all##xdm:event89##description##30141"
     },
     "xdm:event90": {
         "title": "event90",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 90."
+        "description": "Custom event 90.",
+        "meta:titleId": "experienceevent-all##xdm:event90##title##26901",
+        "meta:descriptionId": "experienceevent-all##xdm:event90##description##18521"
     },
     "xdm:event91": {
         "title": "event91",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 91."
+        "description": "Custom event 91.",
+        "meta:titleId": "experienceevent-all##xdm:event91##title##66991",
+        "meta:descriptionId": "experienceevent-all##xdm:event91##description##33241"
     },
     "xdm:event92": {
         "title": "event92",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 92."
+        "description": "Custom event 92.",
+        "meta:titleId": "experienceevent-all##xdm:event92##title##79761",
+        "meta:descriptionId": "experienceevent-all##xdm:event92##description##56621"
     },
     "xdm:event93": {
         "title": "event93",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 93."
+        "description": "Custom event 93.",
+        "meta:titleId": "experienceevent-all##xdm:event93##title##46591",
+        "meta:descriptionId": "experienceevent-all##xdm:event93##description##16811"
     },
     "xdm:event94": {
         "title": "event94",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 94."
+        "description": "Custom event 94.",
+        "meta:titleId": "experienceevent-all##xdm:event94##title##881",
+        "meta:descriptionId": "experienceevent-all##xdm:event94##description##94151"
     },
     "xdm:event95": {
         "title": "event95",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 95."
+        "description": "Custom event 95.",
+        "meta:titleId": "experienceevent-all##xdm:event95##title##79161",
+        "meta:descriptionId": "experienceevent-all##xdm:event95##description##83801"
     },
     "xdm:event96": {
         "title": "event96",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 96."
+        "description": "Custom event 96.",
+        "meta:titleId": "experienceevent-all##xdm:event96##title##60151",
+        "meta:descriptionId": "experienceevent-all##xdm:event96##description##25261"
     },
     "xdm:event97": {
         "title": "event97",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 97."
+        "description": "Custom event 97.",
+        "meta:titleId": "experienceevent-all##xdm:event97##title##8651",
+        "meta:descriptionId": "experienceevent-all##xdm:event97##description##32171"
     },
     "xdm:event98": {
         "title": "event98",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 98."
+        "description": "Custom event 98.",
+        "meta:titleId": "experienceevent-all##xdm:event98##title##46451",
+        "meta:descriptionId": "experienceevent-all##xdm:event98##description##52561"
     },
     "xdm:event99": {
         "title": "event99",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 99."
+        "description": "Custom event 99.",
+        "meta:titleId": "experienceevent-all##xdm:event99##title##89141",
+        "meta:descriptionId": "experienceevent-all##xdm:event99##description##89601"
     },
     "xdm:event100": {
         "title": "event100",
         "$ref": "https://ns.adobe.com/xdm/data/measure",
-        "description": "Custom event 100."
+        "description": "Custom event 100.",
+        "meta:titleId": "experienceevent-all##xdm:event100##title##57751",
+        "meta:descriptionId": "experienceevent-all##xdm:event100##description##50331"
     },
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/analytics/event1to100"

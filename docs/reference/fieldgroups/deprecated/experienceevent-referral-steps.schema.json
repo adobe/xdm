@@ -35,8 +35,8 @@
                             "title": "Referral",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:titleId": "experienceevent-referral-steps##xdm:referral##title##88891",
-                            "meta:descriptionId": "experienceevent-referral-steps##xdm:referral##description##13871"
+                            "meta:titleId": "experienceevent-referral-steps##xdm:referral##title##14531",
+                            "meta:descriptionId": "experienceevent-referral-steps##xdm:referral##description##32091"
                         }
                     }
                 }
@@ -50,8 +50,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "experienceevent-referral-steps##title##651",
-    "meta:descriptionId": "experienceevent-referral-steps##description##68271",
+    "meta:titleId": "experienceevent-referral-steps##title##38841",
+    "meta:descriptionId": "experienceevent-referral-steps##description##9051",
     "examples": [
         {
             "xdm:web": {

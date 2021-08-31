@@ -16,12 +16,16 @@
                 "xdm:key": {
                     "title": "Key",
                     "description": "Key",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "keyvalue##xdm:key##title##65221",
+                    "meta:descriptionId": "keyvalue##xdm:key##description##22901"
                 },
                 "xdm:value": {
                     "title": "Value",
                     "description": "Value",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "keyvalue##xdm:value##title##33611",
+                    "meta:descriptionId": "keyvalue##xdm:value##description##45471"
                 }
             }
         }
@@ -31,5 +35,7 @@
             "$ref": "#/definitions/keyvalue"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "keyvalue##title##44171",
+    "meta:descriptionId": "keyvalue##description##5681"
 }

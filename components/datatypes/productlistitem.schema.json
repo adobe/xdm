@@ -17,38 +17,38 @@
           "title": "SKU",
           "type": "string",
           "description": "Stock keeping unit (SKU), the unique identifier for a product defined by the vendor.",
-          "meta:titleId": "productlistitem##xdm:SKU##title##73881",
-          "meta:descriptionId": "productlistitem##xdm:SKU##description##55791"
+          "meta:titleId": "productlistitem##xdm:SKU##title##38501",
+          "meta:descriptionId": "productlistitem##xdm:SKU##description##16501"
         },
         "@id": {
           "title": "Line item ID.",
           "type": "string",
           "format": "uri-reference",
           "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`.",
-          "meta:titleId": "productlistitem##@id##title##64031",
-          "meta:descriptionId": "productlistitem##@id##description##6451"
+          "meta:titleId": "productlistitem##@id##title##31901",
+          "meta:descriptionId": "productlistitem##@id##description##66621"
         },
         "xdm:product": {
           "title": "Product",
           "type": "string",
           "format": "uri",
           "description": "The XDM identifier of the product itself.",
-          "meta:titleId": "productlistitem##xdm:product##title##79291",
-          "meta:descriptionId": "productlistitem##xdm:product##description##63031"
+          "meta:titleId": "productlistitem##xdm:product##title##34221",
+          "meta:descriptionId": "productlistitem##xdm:product##description##71451"
         },
         "xdm:name": {
           "title": "Name",
           "type": "string",
           "description": "The display name for the product as presented to the user for this product view.",
-          "meta:titleId": "productlistitem##xdm:name##title##61521",
-          "meta:descriptionId": "productlistitem##xdm:name##description##6851"
+          "meta:titleId": "productlistitem##xdm:name##title##6621",
+          "meta:descriptionId": "productlistitem##xdm:name##description##11111"
         },
         "xdm:productAddMethod": {
           "title": "Product add method",
           "type": "string",
           "description": "The method that was used to add a product item to the list by the visitor. Set with product list add metrics.",
-          "meta:titleId": "productlistitem##xdm:productAddMethod##title##97001",
-          "meta:descriptionId": "productlistitem##xdm:productAddMethod##description##23301"
+          "meta:titleId": "productlistitem##xdm:productAddMethod##title##6321",
+          "meta:descriptionId": "productlistitem##xdm:productAddMethod##description##26061"
         },
         "xdm:currencyCode": {
           "title": "Currency code",
@@ -56,22 +56,22 @@
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
-          "meta:titleId": "productlistitem##xdm:currencyCode##title##49411",
-          "meta:descriptionId": "productlistitem##xdm:currencyCode##description##28031"
+          "meta:titleId": "productlistitem##xdm:currencyCode##title##77931",
+          "meta:descriptionId": "productlistitem##xdm:currencyCode##description##61431"
         },
         "xdm:quantity": {
           "title": "Quantity",
           "type": "integer",
           "description": "The number of units the customer has indicated they require of the product.",
-          "meta:titleId": "productlistitem##xdm:quantity##title##10901",
-          "meta:descriptionId": "productlistitem##xdm:quantity##description##6481"
+          "meta:titleId": "productlistitem##xdm:quantity##title##31861",
+          "meta:descriptionId": "productlistitem##xdm:quantity##description##51001"
         },
         "xdm:priceTotal": {
           "title": "Price total",
           "type": "number",
           "description": "The total price for the product line item.",
-          "meta:titleId": "productlistitem##xdm:priceTotal##title##98031",
-          "meta:descriptionId": "productlistitem##xdm:priceTotal##description##25451"
+          "meta:titleId": "productlistitem##xdm:priceTotal##title##85341",
+          "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221"
         }
       },
       "required": ["xdm:SKU"]
@@ -87,6 +87,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "productlistitem##title##6201",
-  "meta:descriptionId": "productlistitem##description##61391"
+  "meta:titleId": "productlistitem##title##34691",
+  "meta:descriptionId": "productlistitem##description##62561"
 }

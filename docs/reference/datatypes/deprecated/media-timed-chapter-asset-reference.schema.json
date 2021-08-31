@@ -20,22 +20,22 @@
                     "format": "uri-reference",
                     "type": "string",
                     "description": "The identity of the chapter.",
-                    "meta:titleId": "media-timed-chapter-asset-reference##@id##title##88341",
-                    "meta:descriptionId": "media-timed-chapter-asset-reference##@id##description##66451"
+                    "meta:titleId": "media-timed-chapter-asset-reference##@id##title##74431",
+                    "meta:descriptionId": "media-timed-chapter-asset-reference##@id##description##93601"
                 },
                 "dc:title": {
                     "title": "Chapter name",
                     "type": "string",
                     "description": "The friendly name of the chapter and or segment.",
-                    "meta:titleId": "media-timed-chapter-asset-reference##dc:title##title##88681",
-                    "meta:descriptionId": "media-timed-chapter-asset-reference##dc:title##description##75691"
+                    "meta:titleId": "media-timed-chapter-asset-reference##dc:title##title##99961",
+                    "meta:descriptionId": "media-timed-chapter-asset-reference##dc:title##description##11151"
                 },
                 "xmpDM:duration": {
                     "title": "Chapter length or duration",
                     "type": "integer",
                     "description": "The length of the chapter, in seconds.",
-                    "meta:titleId": "media-timed-chapter-asset-reference##xmpDM:duration##title##70031",
-                    "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##34771"
+                    "meta:titleId": "media-timed-chapter-asset-reference##xmpDM:duration##title##56291",
+                    "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##63501"
                 }
             },
             "required": [
@@ -52,8 +52,8 @@
         }
     ],
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "media-timed-chapter-asset-reference##title##6211",
-    "meta:descriptionId": "media-timed-chapter-asset-reference##description##94061",
+    "meta:titleId": "media-timed-chapter-asset-reference##title##76961",
+    "meta:descriptionId": "media-timed-chapter-asset-reference##description##72751",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/media-chapter-asset-reference/2144511",

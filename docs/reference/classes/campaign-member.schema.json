@@ -23,8 +23,8 @@
                     "title": "Campaign Member ID",
                     "description": "Campaign Member unique identifer.",
                     "type": "string",
-                    "meta:titleId": "campaign-member##xdm:campaignMemberID##title##84371",
-                    "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##63651"
+                    "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
+                    "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351"
                 },
                 "xdm:campaignMemberKey": {
                     "title": "Campaign Member Key",
@@ -37,8 +37,8 @@
                     "title": "Campaign ID",
                     "description": "Campaign Unique Identifer.",
                     "type": "string",
-                    "meta:titleId": "campaign-member##xdm:campaignID##title##88791",
-                    "meta:descriptionId": "campaign-member##xdm:campaignID##description##71921"
+                    "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
+                    "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741"
                 },
                 "xdm:campaignKey": {
                     "title": "Campaign Key",
@@ -51,8 +51,8 @@
                     "title": "Person ID",
                     "description": "Person unique identifier.",
                     "type": "string",
-                    "meta:titleId": "campaign-member##xdm:personID##title##48541",
-                    "meta:descriptionId": "campaign-member##xdm:personID##description##88941"
+                    "meta:titleId": "campaign-member##xdm:personID##title##80381",
+                    "meta:descriptionId": "campaign-member##xdm:personID##description##74641"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
@@ -77,8 +77,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-08-18",
-    "meta:titleId": "campaign-member##title##62621",
-    "meta:descriptionId": "campaign-member##description##61861",
+    "meta:titleId": "campaign-member##title##30961",
+    "meta:descriptionId": "campaign-member##description##56301",
     "examples": [
         {
             "xdm:campaignMemberID": "1",

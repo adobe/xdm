@@ -30,31 +30,44 @@
                                 "xdm:homeAddress": {
                                     "title": "Home Address",
                                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                                    "description": "A home postal address."
+                                    "description": "A home postal address.",
+                                    "meta:titleId": "experienceevent-profile-personal-details##xdm:homeAddress##title##29681",
+                                    "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homeAddress##description##8601"
                                 },
                                 "xdm:personalEmail": {
                                     "title": "Personal Email",
                                     "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-                                    "description": "A personal email address."
+                                    "description": "A personal email address.",
+                                    "meta:titleId": "experienceevent-profile-personal-details##xdm:personalEmail##title##55581",
+                                    "meta:descriptionId": "experienceevent-profile-personal-details##xdm:personalEmail##description##80671"
                                 },
                                 "xdm:homePhone": {
                                     "title": "Home Phone",
                                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                                    "description": "Home phone number."
+                                    "description": "Home phone number.",
+                                    "meta:titleId": "experienceevent-profile-personal-details##xdm:homePhone##title##34081",
+                                    "meta:descriptionId": "experienceevent-profile-personal-details##xdm:homePhone##description##81681"
                                 },
                                 "xdm:mobilePhone": {
                                     "title": "Mobile Phone",
                                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                                    "description": "Mobile phone number."
+                                    "description": "Mobile phone number.",
+                                    "meta:titleId": "experienceevent-profile-personal-details##xdm:mobilePhone##title##51521",
+                                    "meta:descriptionId": "experienceevent-profile-personal-details##xdm:mobilePhone##description##80491"
                                 },
                                 "xdm:faxPhone": {
                                     "title": "Fax Phone",
                                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                                    "description": "Fax phone number."
+                                    "description": "Fax phone number.",
+                                    "meta:titleId": "experienceevent-profile-personal-details##xdm:faxPhone##title##80871",
+                                    "meta:descriptionId": "experienceevent-profile-personal-details##xdm:faxPhone##description##63981"
                                 }
-                            }
+                            },
+                            "meta:titleId": "experienceevent-profile-personal-details##xdm:profileSnapshot##title##31321",
+                            "meta:descriptionId": "experienceevent-profile-personal-details##xdm:profileSnapshot##description##27391"
                         }
-                    }
+                    },
+                    "meta:titleId": "experienceevent-profile-personal-details##https://ns.adobe.com/experience/campaign/message##title##60151"
                 }
             }
         }
@@ -64,5 +77,7 @@
             "$ref": "#/definitions/campaign-experienceevent-profile-personal-details"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "experienceevent-profile-personal-details##title##31591",
+    "meta:descriptionId": "experienceevent-profile-personal-details##description##11961"
 }

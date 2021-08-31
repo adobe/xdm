@@ -22,17 +22,23 @@
                 "xdm:campaignId": {
                     "title": "Campaign Identifier",
                     "type": "string",
-                    "description": "Campaign ID on the search advertising platform."
+                    "description": "Campaign ID on the search advertising platform.",
+                    "meta:titleId": "campaign##xdm:campaignId##title##44001",
+                    "meta:descriptionId": "campaign##xdm:campaignId##description##57181"
                 },
                 "xdm:campaignName": {
                     "title": "Campaign Name",
                     "type": "string",
-                    "description": "Name of the Campaign."
+                    "description": "Name of the Campaign.",
+                    "meta:titleId": "campaign##xdm:campaignName##title##68821",
+                    "meta:descriptionId": "campaign##xdm:campaignName##description##96411"
                 },
                 "xdm:campaignDescription": {
                     "title": "Description",
                     "type": "string",
-                    "description": "Description of the Campaign."
+                    "description": "Description of the Campaign.",
+                    "meta:titleId": "campaign##xdm:campaignDescription##title##84051",
+                    "meta:descriptionId": "campaign##xdm:campaignDescription##description##82761"
                 },
                 "xdm:campaignStatus": {
                     "title": "Campaign Status",
@@ -75,17 +81,23 @@
                         "Disabled": "Disabled",
                         "Unknown": "Unknown",
                         "Dummy": "Dummy"
-                    }
+                    },
+                    "meta:titleId": "campaign##xdm:campaignStatus##title##43661",
+                    "meta:descriptionId": "campaign##xdm:campaignStatus##description##70141"
                 },
                 "xdm:channelType": {
                     "title": "Channel Type",
                     "type": "string",
-                    "description": "Channel Type for the Campaign"
+                    "description": "Channel Type for the Campaign",
+                    "meta:titleId": "campaign##xdm:channelType##title##18761",
+                    "meta:descriptionId": "campaign##xdm:channelType##description##46811"
                 },
                 "xdm:budget": {
                     "title": "Budget",
                     "type": "number",
-                    "description": "Budget Allocated for the Campaign"
+                    "description": "Budget Allocated for the Campaign",
+                    "meta:titleId": "campaign##xdm:budget##title##58031",
+                    "meta:descriptionId": "campaign##xdm:budget##description##69371"
                 },
                 "xdm:budgetType": {
                     "title": "Budget Type",
@@ -104,7 +116,9 @@
                         "Lifetime": "Lifetime",
                         "Daily Spend Until Depleted": "Daily spend until depleted",
                         "Day of week": "Day of week"
-                    }
+                    },
+                    "meta:titleId": "campaign##xdm:budgetType##title##76211",
+                    "meta:descriptionId": "campaign##xdm:budgetType##description##19941"
                 },
                 "xdm:adDeliveryType": {
                     "title": "Ad Delivery Method",
@@ -117,7 +131,9 @@
                     "meta:enum": {
                         "standard": "Standard",
                         "accelerated": "Accelerated"
-                    }
+                    },
+                    "meta:titleId": "campaign##xdm:adDeliveryType##title##36091",
+                    "meta:descriptionId": "campaign##xdm:adDeliveryType##description##68191"
                 },
                 "xdm:objective": {
                     "title": "Campaign Objective",
@@ -134,29 +150,39 @@
                         "promote_brand": "promote_brand",
                         "install_app": "install_app",
                         "visit_offer": "visit_offer"
-                    }
+                    },
+                    "meta:titleId": "campaign##xdm:objective##title##30961",
+                    "meta:descriptionId": "campaign##xdm:objective##description##43641"
                 },
                 "xdm:campaignStartDate": {
                     "title": "Campaign Start Date",
                     "type": "string",
                     "format": "date",
-                    "description": "Campaign Start Date"
+                    "description": "Campaign Start Date",
+                    "meta:titleId": "campaign##xdm:campaignStartDate##title##26061",
+                    "meta:descriptionId": "campaign##xdm:campaignStartDate##description##42781"
                 },
                 "xdm:campaignEndDate": {
                     "title": "Campaign End Date",
                     "type": "string",
                     "format": "date",
-                    "description": "Campaign End Date"
+                    "description": "Campaign End Date",
+                    "meta:titleId": "campaign##xdm:campaignEndDate##title##84371",
+                    "meta:descriptionId": "campaign##xdm:campaignEndDate##description##34181"
                 },
                 "xdm:portfolioId": {
                     "title": "Portfolio Identifier",
                     "type": "string",
-                    "description": "Identifier indicates if campaign has been assigned and managed via portfolio."
+                    "description": "Identifier indicates if campaign has been assigned and managed via portfolio.",
+                    "meta:titleId": "campaign##xdm:portfolioId##title##77901",
+                    "meta:descriptionId": "campaign##xdm:portfolioId##description##35291"
                 },
                 "xdm:searchEngineId": {
                     "title": "Search Engine Identifier",
                     "type": "integer",
-                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name."
+                    "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+                    "meta:titleId": "campaign##xdm:searchEngineId##title##16641",
+                    "meta:descriptionId": "campaign##xdm:searchEngineId##description##38801"
                 }
             }
         }
@@ -173,5 +199,7 @@
         }
     ],
     "meta:status": "deprecated",
+    "meta:titleId": "campaign##title##6761",
+    "meta:descriptionId": "campaign##description##87171",
     "examples": []
 }

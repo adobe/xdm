@@ -36,7 +36,9 @@
                         "live": "Live",
                         "completed": "Completed",
                         "archived": "Archived"
-                    }
+                    },
+                    "meta:titleId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##title##11911",
+                    "meta:descriptionId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##description##34741"
                 }
             }
         }
@@ -50,6 +52,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "lifecycle-status##title##73401",
+    "meta:descriptionId": "lifecycle-status##description##67561",
     "examples": [
         {
             "https://ns.adobe.com/experience/decisioning/lifecycleStatus": "draft"

@@ -17,15 +17,15 @@
                     "title": "Transaction ID",
                     "type": "string",
                     "description": "The unique transaction identifier for this payment item.",
-                    "meta:titleId": "paymentitem##xdm:transactionID##title##89511",
-                    "meta:descriptionId": "paymentitem##xdm:transactionID##description##37091"
+                    "meta:titleId": "paymentitem##xdm:transactionID##title##1471",
+                    "meta:descriptionId": "paymentitem##xdm:transactionID##description##92431"
                 },
                 "xdm:paymentAmount": {
                     "title": "Payment Amount",
                     "type": "number",
                     "description": "The value of the payment.",
-                    "meta:titleId": "paymentitem##xdm:paymentAmount##title##64911",
-                    "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##91581"
+                    "meta:titleId": "paymentitem##xdm:paymentAmount##title##89951",
+                    "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##62201"
                 },
                 "xdm:paymentType": {
                     "title": "Payment Type",
@@ -43,8 +43,8 @@
                         "credit_card_reference": "Credit Card Reference Transaction",
                         "other": "Other"
                     },
-                    "meta:titleId": "paymentitem##xdm:paymentType##title##79001",
-                    "meta:descriptionId": "paymentitem##xdm:paymentType##description##31871"
+                    "meta:titleId": "paymentitem##xdm:paymentType##title##76411",
+                    "meta:descriptionId": "paymentitem##xdm:paymentType##description##72701"
                 },
                 "xdm:currencyCode": {
                     "title": "Currency Code",
@@ -55,8 +55,8 @@
                     ],
                     "pattern": "^[A-Z]{3}$",
                     "description": "The ISO 4217 currency code used for this payment item.",
-                    "meta:titleId": "paymentitem##xdm:currencyCode##title##12111",
-                    "meta:descriptionId": "paymentitem##xdm:currencyCode##description##18981"
+                    "meta:titleId": "paymentitem##xdm:currencyCode##title##89421",
+                    "meta:descriptionId": "paymentitem##xdm:currencyCode##description##35831"
                 }
             }
         }
@@ -68,8 +68,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "paymentitem##title##88171",
-    "meta:descriptionId": "paymentitem##description##55071",
+    "meta:titleId": "paymentitem##title##13531",
+    "meta:descriptionId": "paymentitem##description##78221",
     "examples": [
         {
             "xdm:transactionID": "transactid-a12345",

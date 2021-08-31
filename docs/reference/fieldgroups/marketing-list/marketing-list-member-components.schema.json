@@ -27,22 +27,22 @@
                             "xdm:sourceMarketingListMemberID": {
                                 "title": "Source Marketing List Identifier",
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListMemberID##title##55471"
+                                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListMemberID##title##781"
                             },
                             "xdm:sourcePersonID": {
                                 "title": "Source Person Identifier",
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                                "meta:titleId": "marketing-list-member-components##xdm:sourcePersonID##title##93971"
+                                "meta:titleId": "marketing-list-member-components##xdm:sourcePersonID##title##90961"
                             },
                             "xdm:sourceMarketingListID": {
                                 "title": "Source Marketing List Identifier",
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListID##title##24871"
+                                "meta:titleId": "marketing-list-member-components##xdm:sourceMarketingListID##title##75451"
                             },
                             "xdm:sourceExternalID": {
                                 "title": "Source External Identifier",
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                                "meta:titleId": "marketing-list-member-components##xdm:sourceExternalID##title##8381"
+                                "meta:titleId": "marketing-list-member-components##xdm:sourceExternalID##title##4671"
                             }
                         }
                     }
@@ -60,8 +60,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-09-14",
-    "meta:titleId": "marketing-list-member-components##title##15481",
-    "meta:descriptionId": "marketing-list-member-components##description##33731",
+    "meta:titleId": "marketing-list-member-components##title##10001",
+    "meta:descriptionId": "marketing-list-member-components##description##41371",
     "examples": [
         {}
     ]

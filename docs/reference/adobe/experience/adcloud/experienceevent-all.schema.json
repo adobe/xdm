@@ -21,47 +21,65 @@
                 "https://ns.adobe.com/experience/adcloud/eventType": {
                     "title": "Event Type",
                     "type": "string",
-                    "description": "Adobe Advertising Cloud event type."
+                    "description": "Adobe Advertising Cloud event type.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/eventType##title##91651",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/eventType##description##25671"
                 },
                 "https://ns.adobe.com/experience/adcloud/campaign": {
                     "title": "Ad Campaign Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/campaign",
-                    "description": "Adobe Advertising Cloud ad campaign hierarchy details."
+                    "description": "Adobe Advertising Cloud ad campaign hierarchy details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/campaign##title##67701",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/campaign##description##42601"
                 },
                 "https://ns.adobe.com/experience/adcloud/inventory": {
                     "title": "Ad Inventory Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/inventory",
-                    "description": "Adobe Advertising Cloud inventory details."
+                    "description": "Adobe Advertising Cloud inventory details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/inventory##title##51351",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/inventory##description##3251"
                 },
                 "https://ns.adobe.com/experience/adcloud/advertisement": {
                     "title": "Ad Asset Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/advertisement",
-                    "description": "Digital advertisement details."
+                    "description": "Digital advertisement details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/advertisement##title##59821",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/advertisement##description##41931"
                 },
                 "https://ns.adobe.com/experience/adcloud/stitchId": {
                     "title": "Stitch ID Chosen",
                     "type": "string",
-                    "description": "ID from the ad servers through Adobe Advertising Cloud STATS to track click-through conversion on browsers that block third party cookies."
+                    "description": "ID from the ad servers through Adobe Advertising Cloud STATS to track click-through conversion on browsers that block third party cookies.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/stitchId##title##40841",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/stitchId##description##53321"
                 },
                 "https://ns.adobe.com/experience/adcloud/adDeliveryDetails": {
                     "title": "Ad Delivery Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
-                    "description": "Adobe AdCloud Search Ad Delivery Details."
+                    "description": "Adobe AdCloud Search Ad Delivery Details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/adDeliveryDetails##title##96331",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/adDeliveryDetails##description##21751"
                 },
                 "https://ns.adobe.com/experience/adcloud/productDetails": {
                     "title": "Ad Product Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/productdetails",
-                    "description": "Adobe AdCloud Search Ad Product Details."
+                    "description": "Adobe AdCloud Search Ad Product Details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/productDetails##title##82841",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/productDetails##description##4411"
                 },
                 "https://ns.adobe.com/experience/adcloud/conversionDetails": {
                     "title": "Ad Conversion Details",
                     "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
-                    "description": "Search Ad Conversion Details."
+                    "description": "Search Ad Conversion Details.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/conversionDetails##title##21511",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/conversionDetails##description##8921"
                 },
                 "https://ns.adobe.com/experience/adcloud/fees": {
                     "title": "Advertising Fees",
                     "description": "Advertising Fees Details.",
-                    "$ref": "https://ns.adobe.com/experience/adcloud/fees"
+                    "$ref": "https://ns.adobe.com/experience/adcloud/fees",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/fees##title##2271",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/adcloud/fees##description##47791"
                 }
             }
         }
@@ -74,5 +92,7 @@
             "$ref": "#/definitions/experienceevent-all"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "experienceevent-all##title##3811",
+    "meta:descriptionId": "experienceevent-all##description##88581"
 }

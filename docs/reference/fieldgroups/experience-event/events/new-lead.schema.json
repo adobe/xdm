@@ -32,37 +32,51 @@
                                 "xdm:sourceType": {
                                     "title": "Source Type",
                                     "type": "string",
-                                    "description": "Type of lead source."
+                                    "description": "Type of lead source.",
+                                    "meta:titleId": "new-lead##xdm:sourceType##title##75381",
+                                    "meta:descriptionId": "new-lead##xdm:sourceType##description##89511"
                                 },
                                 "xdm:formName": {
                                     "title": "Form Name",
                                     "type": "string",
-                                    "description": "Name of the form."
+                                    "description": "Name of the form.",
+                                    "meta:titleId": "new-lead##xdm:formName##title##8861",
+                                    "meta:descriptionId": "new-lead##xdm:formName##description##891"
                                 },
                                 "xdm:listName": {
                                     "title": "List Name",
                                     "type": "string",
-                                    "description": "Name of marketing list."
+                                    "description": "Name of marketing list.",
+                                    "meta:titleId": "new-lead##xdm:listName##title##9091",
+                                    "meta:descriptionId": "new-lead##xdm:listName##description##32211"
                                 },
                                 "xdm:sfdcType": {
                                     "title": "SFDC Type",
                                     "type": "string",
-                                    "description": "Lead type in SFDC."
+                                    "description": "Lead type in SFDC.",
+                                    "meta:titleId": "new-lead##xdm:sfdcType##title##14271",
+                                    "meta:descriptionId": "new-lead##xdm:sfdcType##description##85511"
                                 },
                                 "xdm:leadSource": {
                                     "title": "Lead Source",
                                     "type": "string",
-                                    "description": "Source of lead."
+                                    "description": "Source of lead.",
+                                    "meta:titleId": "new-lead##xdm:leadSource##title##64471",
+                                    "meta:descriptionId": "new-lead##xdm:leadSource##description##70371"
                                 },
                                 "xdm:createdDate": {
                                     "title": "Created Date",
                                     "type": "string",
                                     "format": "date-time",
-                                    "description": "Lead creation date."
+                                    "description": "Lead creation date.",
+                                    "meta:titleId": "new-lead##xdm:createdDate##title##85001",
+                                    "meta:descriptionId": "new-lead##xdm:createdDate##description##22381"
                                 }
-                            }
+                            },
+                            "meta:titleId": "new-lead##xdm:newLead##title##72931"
                         }
-                    }
+                    },
+                    "meta:titleId": "new-lead##xdm:leadOperation##title##54291"
                 }
             }
         }
@@ -74,6 +88,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "new-lead##title##47891",
+    "meta:descriptionId": "new-lead##description##83991",
     "examples": [
         {}
     ]

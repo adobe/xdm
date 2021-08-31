@@ -26,7 +26,9 @@
                 "xdm:marketing": {
                     "title": "Marketing",
                     "$ref": "https://ns.adobe.com/xdm/context/marketing",
-                    "description": "Tracks offer impression and social network interactions."
+                    "description": "Tracks offer impression and social network interactions.",
+                    "meta:titleId": "experienceevent-marketing##xdm:marketing##title##38331",
+                    "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description##30041"
                 }
             }
         }
@@ -41,6 +43,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "experienceevent-marketing##title##3931",
+    "meta:descriptionId": "experienceevent-marketing##description##48971",
     "examples": [
         {
             "xdm:marketing": {

@@ -19,13 +19,17 @@
                     "title": "Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "A unique identifier for the time-series event."
+                    "description": "A unique identifier for the time-series event.",
+                    "meta:titleId": "time-series##@id##title##97851",
+                    "meta:descriptionId": "time-series##@id##description##91771"
                 },
                 "xdm:timestamp": {
                     "title": "Timestamp",
                     "type": "string",
                     "format": "date-time",
-                    "description": "The time when an event or observation occurred."
+                    "description": "The time when an event or observation occurred.",
+                    "meta:titleId": "time-series##xdm:timestamp##title##71321",
+                    "meta:descriptionId": "time-series##xdm:timestamp##description##1861"
                 },
                 "xdm:eventType": {
                     "title": "Event Type",
@@ -78,8 +82,13 @@
                         "directMarketing.emailClicked": "Direct Marketing Email Clicked",
                         "opportunityEvent.removeFromOpportunity": "Opportunity Event Remove From Opportunity",
                         "opportunityEvent.addToOpportunity": "Opportunity Event Add To Opportunity",
-                        "opportunityEvent.opportunityUpdated": "Opportunity Event Opportunity Updated"
-                    }
+                        "opportunityEvent.opportunityUpdated": "Opportunity Event Opportunity Updated",
+                        "inappmessageTracking.dismiss": "inapp message was dimissed",
+                        "inappmessageTracking.display": "inapp message was displayed",
+                        "inappmessageTracking.interact": "inapp message was interacted with"
+                    },
+                    "meta:titleId": "time-series##xdm:eventType##title##79221",
+                    "meta:descriptionId": "time-series##xdm:eventType##description##27681"
                 }
             }
         }
@@ -94,6 +103,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "time-series##title##66611",
+    "meta:descriptionId": "time-series##description##35031",
     "examples": [
         {
             "@id": "https://data.adobe.io/experienceid-123456",

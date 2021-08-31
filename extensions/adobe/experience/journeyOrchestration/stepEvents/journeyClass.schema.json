@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "A Record based Journey class for Journey orchestration contains common journey fields",
   "definitions": {
     "journeyClass": {
@@ -27,5 +29,7 @@
       "$ref": "#/definitions/journeyClass"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "journey##title##10891",
+  "meta:descriptionId": "journey##description##47911"
 }

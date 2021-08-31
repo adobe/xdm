@@ -24,7 +24,9 @@
                     "items": {
                         "$ref": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
                     },
-                    "description": "List of search retargeting entities that have been synced with the Adobe Advertising Cloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook."
+                    "description": "List of search retargeting entities that have been synced with the Adobe Advertising Cloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook.",
+                    "meta:titleId": "profile-all##xdm:syncedRemarketingAudiences##title##3761",
+                    "meta:descriptionId": "profile-all##xdm:syncedRemarketingAudiences##description##69521"
                 }
             }
         }
@@ -35,6 +37,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "profile-all##title##27501",
+    "meta:descriptionId": "profile-all##description##1861",
     "examples": [
         {
             "xdm:syncedRemarketingAudiences": [

@@ -33,18 +33,24 @@
                         "open": "Message opened.",
                         "unsubscribe": "Unsubscribed from messages.",
                         "spam_complaint": "Message is marked as spam by the user."
-                    }
+                    },
+                    "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
+                    "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {
                     "title": "Tracker URL ID",
                     "type": "string",
-                    "description": "Unique Identifier of the URL clicked by the user."
+                    "description": "Unique Identifier of the URL clicked by the user.",
+                    "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##title##17241",
+                    "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##description##9381"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType": {
                     "title": "URL Tracking Type",
                     "type": "string",
                     "description": "The tracking type of the URL. It may be `subscription`, or a user-defined category.",
-                    "meta:enum": {}
+                    "meta:enum": {},
+                    "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##title##9711",
+                    "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##description##86741"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": {
                     "title": "Link Tags",
@@ -52,45 +58,21 @@
                     "description": "The tags present on this link.",
                     "items": {
                         "type": "string"
-                    }
+                    },
+                    "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags##title##63921",
+                    "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags##description##92811"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": {
                     "title": "Tracker URL Label",
                     "type": "string",
-                    "description": "Human-Friendly label."
+                    "description": "Human-Friendly label.",
+                    "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##title##38721",
+                    "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##description##5891"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
                     "title": "Offer details",
-                    "type": "object",
-                    "description": "Describes offer(s) involved in a message interaction.",
-                    "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": {
-                            "title": "Offer ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": {
-                            "title": "Placement ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer Placement."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": {
-                            "title": "Proposition ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer Proposition."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime": {
-                            "title": "Proposition Time",
-                            "type": "string",
-                            "description": "Time at which the Offer proposition was generated.",
-                            "meta:status": "deprecated"
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": {
-                            "title": "Offer Count",
-                            "type": "integer",
-                            "description": "Count of offers included in the offer proposition."
-                        }
-                    }
+                    "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
+                    "description": "Describes offer(s) involved in a message interaction."
                 }
             }
         }
@@ -104,6 +86,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "message-interaction##title##69271",
+    "meta:descriptionId": "message-interaction##description##85821",
     "examples": [
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
@@ -115,10 +99,10 @@
             ],
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": "1234",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": "12345",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": "9898",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": 5
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
             }
         }
     ]

@@ -31,61 +31,83 @@
                         "iot": "Internet of things",
                         "external": "External system",
                         "widget": "Application extension"
-                    }
+                    },
+                    "meta:titleId": "environment##xdm:type##title##45711",
+                    "meta:descriptionId": "environment##xdm:type##description##26511"
                 },
                 "xdm:browserDetails": {
                     "title": "Browser details",
                     "$ref": "https://ns.adobe.com/xdm/context/browserdetails",
-                    "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language."
+                    "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+                    "meta:titleId": "environment##xdm:browserDetails##title##87231",
+                    "meta:descriptionId": "environment##xdm:browserDetails##description##88151"
                 },
                 "xdm:operatingSystem": {
                     "title": "Operating system",
                     "type": "string",
-                    "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'."
+                    "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
+                    "meta:titleId": "environment##xdm:operatingSystem##title##5821",
+                    "meta:descriptionId": "environment##xdm:operatingSystem##description##92111"
                 },
                 "xdm:operatingSystemVersion": {
                     "title": "Operating system version",
                     "type": "string",
-                    "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format."
+                    "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format.",
+                    "meta:titleId": "environment##xdm:operatingSystemVersion##title##55521",
+                    "meta:descriptionId": "environment##xdm:operatingSystemVersion##description##13541"
                 },
                 "xdm:operatingSystemVendor": {
                     "title": "Operating system vendor",
                     "type": "string",
-                    "description": "The name of the operating system vendor used when the observation was made."
+                    "description": "The name of the operating system vendor used when the observation was made.",
+                    "meta:titleId": "environment##xdm:operatingSystemVendor##title##2141",
+                    "meta:descriptionId": "environment##xdm:operatingSystemVendor##description##55711"
                 },
                 "xdm:colorDepth": {
                     "title": "Color depth",
                     "type": "integer",
                     "description": "The number of bits used for each color component of a single pixel.",
-                    "minimum": 0
+                    "minimum": 0,
+                    "meta:titleId": "environment##xdm:colorDepth##title##50921",
+                    "meta:descriptionId": "environment##xdm:colorDepth##description##68521"
                 },
                 "xdm:viewportHeight": {
                     "title": "Viewport height",
                     "type": "integer",
                     "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-                    "minimum": 0
+                    "minimum": 0,
+                    "meta:titleId": "environment##xdm:viewportHeight##title##15331",
+                    "meta:descriptionId": "environment##xdm:viewportHeight##description##82791"
                 },
                 "xdm:viewportWidth": {
                     "title": "Viewport width",
                     "type": "integer",
                     "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
-                    "minimum": 0
+                    "minimum": 0,
+                    "meta:titleId": "environment##xdm:viewportWidth##title##13801",
+                    "meta:descriptionId": "environment##xdm:viewportWidth##description##33071"
                 },
                 "xdm:duration": {
                     "title": "Duration",
                     "type": "integer",
                     "description": "The number of milliseconds that the user was on the screen.",
-                    "minimum": 0
+                    "minimum": 0,
+                    "meta:titleId": "environment##xdm:duration##title##5391",
+                    "meta:descriptionId": "environment##xdm:duration##description##76571"
                 },
                 "xdm:viewedScreen": {
                     "title": "Viewed Screen",
                     "type": "string",
-                    "description": "The friendly name assigned to the screen that the user was on."
+                    "description": "The friendly name assigned to the screen that the user was on.",
+                    "meta:titleId": "environment##xdm:viewedScreen##title##62701",
+                    "meta:descriptionId": "environment##xdm:viewedScreen##description##36461"
                 },
                 "xdm:previousScreen": {
                     "title": "Previous Screen",
                     "type": "string",
-                    "description": "The frinedly name assigned to the screen the user was on prior to the viewedScreen."
+                    "description": "The frinedly name assigned to the screen the user was on prior to the viewedScreen.",
+                    "meta:titleId": "environment##xdm:previousScreen##title##46381",
+                    "meta:descriptionId": "environment##xdm:previousScreen##description##28811"
                 },
                 "xdm:connectionType": {
                     "title": "Connection type",
@@ -127,22 +149,30 @@
                         "oc3": "OC3",
                         "lan": "LAN",
                         "modem": "Modem"
-                    }
+                    },
+                    "meta:titleId": "environment##xdm:connectionType##title##5651",
+                    "meta:descriptionId": "environment##xdm:connectionType##description##11031"
                 },
                 "xdm:carrier": {
                     "title": "Mobile network carrier",
                     "type": "string",
-                    "description": "A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user."
+                    "description": "A mobile network carrier or MNO, also known as a wireless service provider, wireless carrier, cellular company, or mobile network carrier, is a provider of services wireless communications that owns or controls all the elements necessary to sell and deliver services to an end user.",
+                    "meta:titleId": "environment##xdm:carrier##title##16671",
+                    "meta:descriptionId": "environment##xdm:carrier##description##45391"
                 },
                 "xdm:domain": {
                     "title": "Domain",
                     "type": "string",
-                    "description": "The domain of the users ISP."
+                    "description": "The domain of the users ISP.",
+                    "meta:titleId": "environment##xdm:domain##title##10311",
+                    "meta:descriptionId": "environment##xdm:domain##description##57231"
                 },
                 "xdm:ISP": {
                     "title": "Internet service provider",
                     "type": "string",
-                    "description": "The name of the user's internet service provider."
+                    "description": "The name of the user's internet service provider.",
+                    "meta:titleId": "environment##xdm:ISP##title##84271",
+                    "meta:descriptionId": "environment##xdm:ISP##description##41681"
                 },
                 "dc:language": {
                     "meta:usereditable": false,
@@ -154,7 +184,9 @@
                         "en-US",
                         "pt-BR",
                         "es-ES"
-                    ]
+                    ],
+                    "meta:titleId": "environment##dc:language##title##85111",
+                    "meta:descriptionId": "environment##dc:language##description##68251"
                 }
             }
         },
@@ -164,7 +196,9 @@
                     "title": "IPv4",
                     "type": "string",
                     "format": "ipv4",
-                    "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+                    "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+                    "meta:titleId": "environment##xdm:ipV4##title##40491",
+                    "meta:descriptionId": "environment##xdm:ipV4##description##90631"
                 }
             }
         },
@@ -174,7 +208,9 @@
                     "title": "IPv6",
                     "type": "string",
                     "format": "ipv6",
-                    "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+                    "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+                    "meta:titleId": "environment##xdm:ipV6##title##92181",
+                    "meta:descriptionId": "environment##xdm:ipV6##description##94051"
                 }
             }
         }
@@ -195,6 +231,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "environment##title##23541",
+    "meta:descriptionId": "environment##description##90601",
     "examples": [
         {
             "xdm:type": "browser",

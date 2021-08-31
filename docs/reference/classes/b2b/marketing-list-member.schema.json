@@ -24,32 +24,44 @@
                 "xdm:marketingListMemberID": {
                     "title": "Marketing List Member ID",
                     "description": "Unique ID for the membership of this person to this marketing list.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##85671",
+                    "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##52641"
                 },
                 "xdm:marketingListMemberKey": {
                     "title": "Marketing List Member Key",
                     "description": "Unique composite identifier of the membership of this person from the marketing list.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "marketing-list-member##xdm:marketingListMemberKey##title##31771",
+                    "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberKey##description##52381"
                 },
                 "xdm:personID": {
                     "title": "Person Identifier",
                     "description": "Unique ID for the person who is a member of this marketing list.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list-member##xdm:personID##title##41781",
+                    "meta:descriptionId": "marketing-list-member##xdm:personID##description##94281"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
                     "description": "Unique composite identifier of the Person from the marketing list.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "marketing-list-member##xdm:personKey##title##3831",
+                    "meta:descriptionId": "marketing-list-member##xdm:personKey##description##79331"
                 },
                 "xdm:marketingListID": {
                     "title": "Marketing List Identifier",
                     "description": "Unique ID for the marketing list this person is a member of.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list-member##xdm:marketingListID##title##76661",
+                    "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##78351"
                 },
                 "xdm:marketingListKey": {
                     "title": "Marketing List Key",
                     "description": "Unique composite identifier of the Marketing List this person is a member of.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "marketing-list-member##xdm:marketingListKey##title##59911",
+                    "meta:descriptionId": "marketing-list-member##xdm:marketingListKey##description##44301"
                 }
             }
         }
@@ -69,6 +81,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "marketing-list-member##title##46541",
+    "meta:descriptionId": "marketing-list-member##description##7641",
     "examples": [
         {
             "xdm:marketingListMemberID": "MKTMBR11111"

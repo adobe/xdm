@@ -14,6 +14,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 
 * Adobe CJM ExperienceEvent - Message Delivery Feedback Details `https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Adobe ExperienceEvent - Offer details](offers.schema.md) `https://ns.adobe.com/experience/customerJourneyManagement/offers`
 
 
 ## Adobe CJM ExperienceEvent - Message Delivery Feedback Details Example
@@ -26,7 +27,13 @@ Provide details for the delivery feedback for a single message in the Message Ex
     "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": "sync"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
+    "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
+    "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
+    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
+  }
 }
 ```
 
@@ -37,6 +44,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackfeedbackstatus) | `enum` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackmessageexclusion) | `object` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackmessagefailure) | `object` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackoffers) | Adobe ExperienceEvent - Offer details | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount](#httpsnsadobecomexperiencecustomerjourneymanagementmessagedeliveryfeedbackretrycount) | `integer` | Optional | Adobe CJM ExperienceEvent - Message Delivery Feedback Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -249,6 +257,25 @@ Classifies whether it is a soft bounce or hard bounce.
 
 
 
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers
+### Offer details
+
+Describes offer(s) involved in a message feedback.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers`
+* is optional
+* type: Adobe ExperienceEvent - Offer details
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers Type
+
+
+* [Adobe ExperienceEvent - Offer details](offers.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/offers`
 
 
 

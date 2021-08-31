@@ -24,22 +24,30 @@
                 "xdm:marketingListID": {
                     "title": "Marketing List ID",
                     "description": "Unique ID of the marketing list.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
                 },
                 "xdm:marketingListKey": {
                     "title": "Marketing List Key",
                     "description": "Unique composite identifier of the Marketing List.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "marketing-list##xdm:marketingListKey##title##75021",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListKey##description##38201"
                 },
                 "xdm:marketingListName": {
                     "title": "Marketing List Name",
                     "description": "Name of the marketing list.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list##xdm:marketingListName##title##25151",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListName##description##25281"
                 },
                 "xdm:marketingListDescription": {
                     "title": "Marketing List Description",
                     "description": "Description of the marketing list.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "marketing-list##xdm:marketingListDescription##title##23161",
+                    "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##56371"
                 }
             }
         }
@@ -59,6 +67,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "marketing-list##title##32631",
+    "meta:descriptionId": "marketing-list##description##65341",
     "examples": [
         {
             "xdm:marketingListID": "MKTLST1111"

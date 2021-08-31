@@ -16,103 +16,142 @@
                 "xdm:organizationType": {
                     "title": "Type of Organizations",
                     "type": "string",
-                    "description": "Label describing the type of organization"
+                    "description": "Label describing the type of organization",
+                    "meta:titleId": "b2b-account-organization##xdm:organizationType##title##26871",
+                    "meta:descriptionId": "b2b-account-organization##xdm:organizationType##description##32751"
                 },
                 "xdm:numberOfEmployees": {
                     "title": "Number of employees",
                     "type": "integer",
-                    "description": "The number of employees at the organization."
+                    "description": "The number of employees at the organization.",
+                    "meta:titleId": "b2b-account-organization##xdm:numberOfEmployees##title##46681",
+                    "meta:descriptionId": "b2b-account-organization##xdm:numberOfEmployees##description##43251"
                 },
                 "xdm:annualRevenue": {
                     "title": "Annual Revenue",
                     "description": "Estimated amount of annual revenue of the organization.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                    "meta:titleId": "b2b-account-organization##xdm:annualRevenue##title##77951",
+                    "meta:descriptionId": "b2b-account-organization##xdm:annualRevenue##description##71491"
                 },
                 "xdm:industry": {
                     "title": "Industry",
                     "type": "string",
-                    "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+                    "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
+                    "meta:titleId": "b2b-account-organization##xdm:industry##title##42591",
+                    "meta:descriptionId": "b2b-account-organization##xdm:industry##description##41101"
                 },
                 "xdm:website": {
                     "title": "Website URL",
                     "type": "string",
-                    "description": "The URL of the organization's website."
+                    "description": "The URL of the organization's website.",
+                    "meta:titleId": "b2b-account-organization##xdm:website##title##11071",
+                    "meta:descriptionId": "b2b-account-organization##xdm:website##description##76291"
                 },
                 "xdm:marketSegment": {
                     "title": "Market segment",
                     "type": "string",
-                    "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
+                    "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
+                    "meta:titleId": "b2b-account-organization##xdm:marketSegment##title##25061",
+                    "meta:descriptionId": "b2b-account-organization##xdm:marketSegment##description##84051"
                 },
                 "xdm:rating": {
                     "title": "Rating",
                     "type": "number",
                     "minimum": 0,
                     "maximum": 1,
-                    "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
+                    "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
+                    "meta:titleId": "b2b-account-organization##xdm:rating##title##76941",
+                    "meta:descriptionId": "b2b-account-organization##xdm:rating##description##63861"
                 },
                 "xdm:tickerSymbol": {
                     "title": "Ticker Symbol",
                     "description": "The stock market symbol for this account. Maximum of 20 characters.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:tickerSymbol##title##39381",
+                    "meta:descriptionId": "b2b-account-organization##xdm:tickerSymbol##description##86021"
                 },
                 "xdm:logoUrl": {
                     "title": "Logo URL",
                     "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:logoUrl##title##38601",
+                    "meta:descriptionId": "b2b-account-organization##xdm:logoUrl##description##31151"
                 },
                 "xdm:linkedinPageUrl": {
                     "title": "Linkedinin Page URL",
                     "description": "Website link to the Linkedin account of the account",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:linkedinPageUrl##title##27161",
+                    "meta:descriptionId": "b2b-account-organization##xdm:linkedinPageUrl##description##77711"
                 },
                 "xdm:twitterHandleUrl": {
                     "title": "Twitter handle URL",
                     "description": "Website link to the twitter handle of the account",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:twitterHandleUrl##title##35861",
+                    "meta:descriptionId": "b2b-account-organization##xdm:twitterHandleUrl##description##91461"
                 },
                 "xdm:facebookPageUrl": {
                     "title": "Facebook Page URL",
                     "description": "Website link to the Facebook account of the account",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:facebookPageUrl##title##27671",
+                    "meta:descriptionId": "b2b-account-organization##xdm:facebookPageUrl##description##75671"
                 },
                 "xdm:NAICSCode": {
                     "title": "NAICS Code",
                     "type": "string",
-                    "description": "A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System."
+                    "description": "A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System.",
+                    "meta:titleId": "b2b-account-organization##xdm:NAICSCode##title##68641",
+                    "meta:descriptionId": "b2b-account-organization##xdm:NAICSCode##description##91191"
                 },
                 "xdm:SICCode": {
                     "title": "SIC Code",
                     "type": "string",
-                    "description": "The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities."
+                    "description": "The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities.",
+                    "meta:titleId": "b2b-account-organization##xdm:SICCode##title##20051",
+                    "meta:descriptionId": "b2b-account-organization##xdm:SICCode##description##83621"
                 },
                 "xdm:NAICSDescription": {
                     "title": "NAICS Description",
                     "description": "A brief description of an organization’s line of business, based on its NAICS code.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:NAICSDescription##title##93701",
+                    "meta:descriptionId": "b2b-account-organization##xdm:NAICSDescription##description##37021"
                 },
                 "xdm:SICDescription": {
                     "title": "SIC Description",
                     "description": "A brief description of an organization’s line of business, based on its SIC code.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:SICDescription##title##19831",
+                    "meta:descriptionId": "b2b-account-organization##xdm:SICDescription##description##96251"
                 },
                 "xdm:DUNSNumber": {
                     "title": "Dun & Bradstreet D-U-N-S Number",
                     "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:DUNSNumber##title##491",
+                    "meta:descriptionId": "b2b-account-organization##xdm:DUNSNumber##description##44131"
                 },
                 "xdm:jigsaw": {
                     "title": "Jigsaw",
                     "description": "Data.com Key.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:jigsaw##title##29521",
+                    "meta:descriptionId": "b2b-account-organization##xdm:jigsaw##description##47241"
                 },
                 "xdm:primaryEmailDomain": {
                     "title": "Primary Email Domain",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:primaryEmailDomain##title##67811"
                 },
                 "xdm:companyProductAndServices": {
                     "title": "Company Product and Services",
                     "description": "Product and Services the Company is dealing or doing business in.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "b2b-account-organization##xdm:companyProductAndServices##title##57281",
+                    "meta:descriptionId": "b2b-account-organization##xdm:companyProductAndServices##description##72891"
                 }
             }
         }
@@ -124,6 +163,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "b2b-account-organization##title##89111",
+    "meta:descriptionId": "b2b-account-organization##description##27461",
     "examples": [
         {}
     ]

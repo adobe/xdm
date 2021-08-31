@@ -81,14 +81,20 @@ Unknown type `object`.
     "xdm:actionID": {
       "title": "action ID",
       "type": "string",
-      "description": "user clicked custom action identifier"
+      "description": "user clicked custom action identifier",
+      "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##36211",
+      "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##39371"
     },
     "xdm:value": {
       "title": "value",
       "type": "number",
-      "description": "value associated with the custom action, if any"
+      "description": "value associated with the custom action, if any",
+      "meta:titleId": "experienceevent-pushtracking##xdm:value##title##83911",
+      "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##93721"
     }
   },
+  "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##33441",
+  "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##96791",
   "simpletype": "`object`"
 }
 ```

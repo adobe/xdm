@@ -37,7 +37,9 @@
                             "title": "Upsell Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:status": "deprecated"
+                            "meta:status": "deprecated",
+                            "meta:titleId": "experienceevent-upsell-details##xdm:upsellSteps##title##3281",
+                            "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellSteps##description##55831"
                         },
                         "xdm:upsellImpressions": {
                             "title": "Upsell Impressions",
@@ -45,14 +47,19 @@
                             "items": {
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
                             },
-                            "description": "Array of the impressions data type."
+                            "description": "Array of the impressions data type.",
+                            "meta:titleId": "experienceevent-upsell-details##xdm:upsellImpressions##title##381",
+                            "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellImpressions##description##27091"
                         },
                         "xdm:upsellTransaction": {
                             "title": "Upsell Transaction",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                            "description": "Extension of transaction data type."
+                            "description": "Extension of transaction data type.",
+                            "meta:titleId": "experienceevent-upsell-details##xdm:upsellTransaction##title##29501",
+                            "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellTransaction##description##99481"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-upsell-details##xdm:upsells##description##93591"
                 }
             }
         }
@@ -64,6 +71,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-02",
+    "meta:titleId": "experienceevent-upsell-details##title##14631",
+    "meta:descriptionId": "experienceevent-upsell-details##description##98371",
     "examples": [
         {
             "xdm:upsells": {

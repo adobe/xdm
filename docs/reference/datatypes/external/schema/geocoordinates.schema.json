@@ -18,7 +18,9 @@
                     "title": "Coordinates ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The unique identifier of the coordinates."
+                    "description": "The unique identifier of the coordinates.",
+                    "meta:titleId": "GeoCoordinates##@id##title##41111",
+                    "meta:descriptionId": "GeoCoordinates##@id##description##11781"
                 }
             }
         },
@@ -27,7 +29,9 @@
                 "schema:description": {
                     "title": "Description",
                     "type": "string",
-                    "description": "A description of what the coordinates identify."
+                    "description": "A description of what the coordinates identify.",
+                    "meta:titleId": "GeoCoordinates##schema:description##title##86411",
+                    "meta:descriptionId": "GeoCoordinates##schema:description##description##45861"
                 }
             }
         },
@@ -38,7 +42,9 @@
                     "type": "number",
                     "minimum": -90,
                     "maximum": 90,
-                    "description": "The signed vertical coordinate of a geographic point."
+                    "description": "The signed vertical coordinate of a geographic point.",
+                    "meta:titleId": "GeoCoordinates##schema:latitude##title##31041",
+                    "meta:descriptionId": "GeoCoordinates##schema:latitude##description##51981"
                 }
             }
         },
@@ -49,7 +55,9 @@
                     "type": "number",
                     "minimum": -180,
                     "maximum": 180,
-                    "description": "The signed horizontal coordinate of a geographic point."
+                    "description": "The signed horizontal coordinate of a geographic point.",
+                    "meta:titleId": "GeoCoordinates##schema:longitude##title##44041",
+                    "meta:descriptionId": "GeoCoordinates##schema:longitude##description##34211"
                 }
             }
         },
@@ -58,7 +66,9 @@
                 "schema:elevation": {
                     "title": "Elevation",
                     "type": "number",
-                    "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters."
+                    "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+                    "meta:titleId": "GeoCoordinates##schema:elevation##title##11381",
+                    "meta:descriptionId": "GeoCoordinates##schema:elevation##description##38161"
                 }
             }
         }
@@ -82,6 +92,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "GeoCoordinates##title##96701",
+    "meta:descriptionId": "GeoCoordinates##description##92471",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/geo/111",

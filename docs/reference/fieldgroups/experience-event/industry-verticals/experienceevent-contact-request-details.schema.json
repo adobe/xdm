@@ -40,64 +40,89 @@
                         "xdm:chatDeclined": {
                             "title": "Chat Declined",
                             "type": "integer",
-                            "description": "Captured when an offered chat is declined by a visitor."
+                            "description": "Captured when an offered chat is declined by a visitor.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:chatDeclined##title##30441",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatDeclined##description##79991"
                         },
                         "xdm:chatEnd": {
                             "title": "Chat End",
                             "type": "integer",
-                            "description": "Captured when a chat is ended with a visitor."
+                            "description": "Captured when a chat is ended with a visitor.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:chatEnd##title##44681",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatEnd##description##48591"
                         },
                         "xdm:chatOffered": {
                             "title": "Chat Offered",
                             "type": "integer",
-                            "description": "Captures the number of times a chat session has been offered to a visitor."
+                            "description": "Captures the number of times a chat session has been offered to a visitor.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:chatOffered##title##39721",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatOffered##description##32941"
                         },
                         "xdm:chatSessionID": {
                             "title": "Chat Session ID",
                             "type": "string",
-                            "description": "Captures the chat session identifier, if available."
+                            "description": "Captures the chat session identifier, if available.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:chatSessionID##title##72531",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatSessionID##description##81701"
                         },
                         "xdm:chatStart": {
                             "title": "Chat Start",
                             "type": "integer",
-                            "description": "Captured when a chat is initiated with a visitor."
+                            "description": "Captured when a chat is initiated with a visitor.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:chatStart##title##63141",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatStart##description##39681"
                         },
                         "xdm:clickToCall": {
                             "title": "Click to Call",
                             "type": "integer",
-                            "description": "Visitor initiates a call to the client from a telephone number link on the site/app."
+                            "description": "Visitor initiates a call to the client from a telephone number link on the site/app.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:clickToCall##title##67671",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToCall##description##99101"
                         },
                         "xdm:clickToDirectMessage": {
                             "title": "Click to Direct Message",
                             "type": "integer",
-                            "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app."
+                            "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:clickToDirectMessage##title##9371",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToDirectMessage##description##72201"
                         },
                         "xdm:clickToEmail": {
                             "title": "Click to Email",
                             "type": "integer",
-                            "description": "Visitor initiates an email to the client from an email link on the site/app."
+                            "description": "Visitor initiates an email to the client from an email link on the site/app.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:clickToEmail##title##46161",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToEmail##description##81721"
                         },
                         "xdm:clickToText": {
                             "title": "Click to Text",
                             "type": "integer",
-                            "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app."
+                            "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:clickToText##title##59921",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToText##description##67811"
                         },
                         "xdm:subject": {
                             "title": "Subject",
                             "type": "string",
-                            "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc."
+                            "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:subject##title##51731",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:subject##description##22031"
                         },
                         "xdm:callBackNumber": {
                             "title": "Call Back Contact Information",
                             "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                            "description": "The contact phone number the visitor uses for responses to contact requests."
+                            "description": "The contact phone number the visitor uses for responses to contact requests.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:callBackNumber##title##80901",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:callBackNumber##description##85201"
                         },
                         "xdm:replyToEmailAddress": {
                             "title": "Reply to Email Address",
                             "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-                            "description": "The email address the visitor uses for responses to contact requests."
+                            "description": "The email address the visitor uses for responses to contact requests.",
+                            "meta:titleId": "experienceevent-contact-request-details##xdm:replyToEmailAddress##title##50301",
+                            "meta:descriptionId": "experienceevent-contact-request-details##xdm:replyToEmailAddress##description##26831"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-contact-request-details##xdm:customerFeedback##description##54581"
                 }
             }
         }
@@ -109,6 +134,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "experienceevent-contact-request-details##title##23611",
+    "meta:descriptionId": "experienceevent-contact-request-details##description##60301",
     "examples": [
         {
             "xdm:customerFeedback": {

@@ -27,49 +27,67 @@
               "xdm:nodeId": {
                 "title": "Node Identifier",
                 "description": "The unique identifier of the identity associated with this graph node.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "graph-node##xdm:nodeId##title##46081",
+                "meta:descriptionId": "graph-node##xdm:nodeId##description##891"
               },
               "xdm:nodeType": {
                 "title": "Node Type",
                 "description": "Type of node.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "graph-node##xdm:nodeType##title##90601",
+                "meta:descriptionId": "graph-node##xdm:nodeType##description##74591"
               },
               "xdm:label": {
                 "title": "Node Label",
                 "description": "Node label.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "graph-node##xdm:label##title##87901",
+                "meta:descriptionId": "graph-node##xdm:label##description##91381"
               },
               "xdm:dataSource": {
                 "title": "Data Source",
                 "description": "Data source for the node.",
-                "type": "string"
+                "type": "string",
+                "meta:titleId": "graph-node##xdm:dataSource##title##21341",
+                "meta:descriptionId": "graph-node##xdm:dataSource##description##27221"
               },
               "xdm:firstSeenTimestamp": {
                 "title": "Node First Seen Date And Time",
                 "description": "Time and date this node was first seen.",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "graph-node##xdm:firstSeenTimestamp##title##58941",
+                "meta:descriptionId": "graph-node##xdm:firstSeenTimestamp##description##41471"
               },
               "xdm:lastSeenTimestamp": {
                 "title": "Node Last Seen Date And Time",
                 "description": "Time and date this node was last seen.",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "graph-node##xdm:lastSeenTimestamp##title##51841",
+                "meta:descriptionId": "graph-node##xdm:lastSeenTimestamp##description##43281"
               },
               "xdm:firstCreateTimestamp": {
                 "title": "Node Created Date And Time",
                 "description": "Time and date this node was first created.",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "graph-node##xdm:firstCreateTimestamp##title##80201",
+                "meta:descriptionId": "graph-node##xdm:firstCreateTimestamp##description##64281"
               },
               "xdm:lastModifiedTimestamp": {
                 "title": "Node Last Modified Date And Time",
                 "description": "Time and date this node was last modified.",
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "meta:titleId": "graph-node##xdm:lastModifiedTimestamp##title##98511",
+                "meta:descriptionId": "graph-node##xdm:lastModifiedTimestamp##description##59721"
               }
             }
-          }
+          },
+          "meta:titleId": "graph-node##xdm:nodes##title##22721",
+          "meta:descriptionId": "graph-node##xdm:nodes##description##98051"
         }
       }
     }
@@ -83,5 +101,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "graph-node##title##16221",
+  "meta:descriptionId": "graph-node##description##8391"
 }

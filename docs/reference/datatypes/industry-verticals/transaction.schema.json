@@ -17,23 +17,31 @@
                 "xdm:transactionAmount": {
                     "title": "Transaction Amount",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                    "description": "Captures the amount of the transaction."
+                    "description": "Captures the amount of the transaction.",
+                    "meta:titleId": "transaction##xdm:transactionAmount##title##80081",
+                    "meta:descriptionId": "transaction##xdm:transactionAmount##description##37281"
                 },
                 "xdm:transactionID": {
                     "title": "Transaction ID",
                     "type": "string",
-                    "description": "Identifier for the transaction."
+                    "description": "Identifier for the transaction.",
+                    "meta:titleId": "transaction##xdm:transactionID##title##45941",
+                    "meta:descriptionId": "transaction##xdm:transactionID##description##64471"
                 },
                 "xdm:transactionDate": {
                     "title": "Transaction Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Records the date/time of the transaction."
+                    "description": "Records the date/time of the transaction.",
+                    "meta:titleId": "transaction##xdm:transactionDate##title##791",
+                    "meta:descriptionId": "transaction##xdm:transactionDate##description##59081"
                 },
                 "xdm:transactionType": {
                     "title": "Transaction Type",
                     "type": "string",
-                    "description": "Records the type of transaction utilized by the visitor."
+                    "description": "Records the type of transaction utilized by the visitor.",
+                    "meta:titleId": "transaction##xdm:transactionType##title##13141",
+                    "meta:descriptionId": "transaction##xdm:transactionType##description##19851"
                 }
             }
         }
@@ -45,6 +53,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "transaction##title##4091",
+    "meta:descriptionId": "transaction##description##11911",
     "examples": [
         {}
     ]

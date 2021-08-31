@@ -18,20 +18,26 @@
                     "title": "POI detail",
                     "meta:status": "deprecated",
                     "description": "Detail of the POI that cause the event.",
-                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
+                    "meta:titleId": "poi-interaction##xdm:POIDetail##title##54531",
+                    "meta:descriptionId": "poi-interaction##xdm:POIDetail##description##66921"
                 },
                 "xdm:poiDetail": {
                     "title": "POI detail",
                     "description": "Detail of the POI that cause the event.",
-                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail"
+                    "$ref": "https://ns.adobe.com/xdm/context/poi-detail",
+                    "meta:titleId": "poi-interaction##xdm:poiDetail##title##61101",
+                    "meta:descriptionId": "poi-interaction##xdm:poiDetail##description##63011"
                 },
                 "xdm:poiEntries": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "The number of times a person has entered the point of interest (POI)."
+                    "description": "The number of times a person has entered the point of interest (POI).",
+                    "meta:descriptionId": "poi-interaction##xdm:poiEntries##description##44181"
                 },
                 "xdm:poiExits": {
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "The number of times a person has exited the point of interest (POI)."
+                    "description": "The number of times a person has exited the point of interest (POI).",
+                    "meta:descriptionId": "poi-interaction##xdm:poiExits##description##68471"
                 }
             }
         }
@@ -46,6 +52,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "poi-interaction##title##13051",
+    "meta:descriptionId": "poi-interaction##description##57191",
     "examples": [
         {
             "xdm:poiExits": {

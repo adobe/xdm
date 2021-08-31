@@ -16,12 +16,16 @@
         "xdm:transactionID": {
           "title": "Transaction ID",
           "type": "string",
-          "description": "The unique transaction identifier for this payment item."
+          "description": "The unique transaction identifier for this payment item.",
+          "meta:titleId": "paymentitem##xdm:transactionID##title##1471",
+          "meta:descriptionId": "paymentitem##xdm:transactionID##description##92431"
         },
         "xdm:paymentAmount": {
           "title": "Payment Amount",
           "type": "number",
-          "description": "The value of the payment."
+          "description": "The value of the payment.",
+          "meta:titleId": "paymentitem##xdm:paymentAmount##title##89951",
+          "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##62201"
         },
         "xdm:paymentType": {
           "title": "Payment Type",
@@ -38,14 +42,18 @@
             "wire_transfer": "Wire Transfer",
             "credit_card_reference": "Credit Card Reference Transaction",
             "other": "Other"
-          }
+          },
+          "meta:titleId": "paymentitem##xdm:paymentType##title##76411",
+          "meta:descriptionId": "paymentitem##xdm:paymentType##description##72701"
         },
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code used for this payment item."
+          "description": "The ISO 4217 currency code used for this payment item.",
+          "meta:titleId": "paymentitem##xdm:currencyCode##title##89421",
+          "meta:descriptionId": "paymentitem##xdm:currencyCode##description##35831"
         }
       }
     }
@@ -56,5 +64,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "paymentitem##title##13531",
+  "meta:descriptionId": "paymentitem##description##78221"
 }

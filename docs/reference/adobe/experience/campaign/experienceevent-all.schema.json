@@ -20,6 +20,7 @@
             "properties": {
                 "https://ns.adobe.com/experience/campaign/message": {
                     "title": "A single message sent to a recipient.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/message##title##80311",
                     "$ref": "https://ns.adobe.com/experience/campaign/message"
                 },
                 "https://ns.adobe.com/experience/campaign/delivery": {
@@ -29,18 +30,24 @@
                         "xdm:id": {
                             "title": "Delivery ID",
                             "type": "integer",
-                            "description": "The campaign activity originating this message."
+                            "description": "The campaign activity originating this message.",
+                            "meta:titleId": "experienceevent-all##xdm:id##title##47561",
+                            "meta:descriptionId": "experienceevent-all##xdm:id##description##86251"
                         },
                         "xdm:from": {
                             "title": "From",
                             "type": "string",
-                            "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number."
+                            "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+                            "meta:titleId": "experienceevent-all##xdm:from##title##62461",
+                            "meta:descriptionId": "experienceevent-all##xdm:from##description##7591"
                         },
                         "xdm:testEnabled": {
                             "title": "Test Enabled",
                             "type": "boolean",
                             "description": "Specify whether campaign activity is of type A/B testing.",
-                            "default": false
+                            "default": false,
+                            "meta:titleId": "experienceevent-all##xdm:testEnabled##title##16851",
+                            "meta:descriptionId": "experienceevent-all##xdm:testEnabled##description##27301"
                         },
                         "xdm:messageClass": {
                             "title": "Message Class",
@@ -51,29 +58,40 @@
                                 "event_based": "Transactional (Event-based)"
                             },
                             "description": "Mode of delivery for the messages sent.\n",
-                            "default": "one_time"
+                            "default": "one_time",
+                            "meta:titleId": "experienceevent-all##xdm:messageClass##title##99511",
+                            "meta:descriptionId": "experienceevent-all##xdm:messageClass##description##56471"
                         },
                         "xdm:templateName": {
                             "title": "Delivery Template's Internal Name",
                             "type": "string",
-                            "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message."
+                            "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message.",
+                            "meta:titleId": "experienceevent-all##xdm:templateName##title##18081",
+                            "meta:descriptionId": "experienceevent-all##xdm:templateName##description##39061"
                         },
                         "xdm:templateID": {
                             "title": "Identifier of the Template",
                             "type": "integer",
-                            "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n"
+                            "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n",
+                            "meta:titleId": "experienceevent-all##xdm:templateID##title##82871",
+                            "meta:descriptionId": "experienceevent-all##xdm:templateID##description##40091"
                         },
                         "xdm:deliveryLabel": {
                             "title": "Delivery Label",
                             "type": "string",
-                            "description": "A human-friendly name of the campaign activity which is originating this message."
+                            "description": "A human-friendly name of the campaign activity which is originating this message.",
+                            "meta:titleId": "experienceevent-all##xdm:deliveryLabel##title##59081",
+                            "meta:descriptionId": "experienceevent-all##xdm:deliveryLabel##description##11121"
                         },
                         "xdm:deliveryName": {
                             "title": "Delivery Internal Name",
                             "type": "string",
-                            "description": "A human-friendly identifier of the campaign activity which is originating this message."
+                            "description": "A human-friendly identifier of the campaign activity which is originating this message.",
+                            "meta:titleId": "experienceevent-all##xdm:deliveryName##title##93021",
+                            "meta:descriptionId": "experienceevent-all##xdm:deliveryName##description##34981"
                         }
-                    }
+                    },
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/delivery##title##37871"
                 },
                 "https://ns.adobe.com/experience/campaign/marketingCampaign": {
                     "title": "The campaign activity originating a message to a recipient.",
@@ -82,14 +100,19 @@
                         "xdm:id": {
                             "title": "Campaign ID",
                             "type": "integer",
-                            "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+                            "description": "Identifier of the marketing campaign to which activity originating this message belongs to.",
+                            "meta:titleId": "experienceevent-all##xdm:id##title##85001",
+                            "meta:descriptionId": "experienceevent-all##xdm:id##description##14531"
                         },
                         "xdm:campaignName": {
                             "title": "Campaign Internal Name",
                             "type": "string",
-                            "description": "A human-friendly identifier of the marketing campaign which is originating this message."
+                            "description": "A human-friendly identifier of the marketing campaign which is originating this message.",
+                            "meta:titleId": "experienceevent-all##xdm:campaignName##title##9021",
+                            "meta:descriptionId": "experienceevent-all##xdm:campaignName##description##38781"
                         }
-                    }
+                    },
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/marketingCampaign##title##70861"
                 },
                 "https://ns.adobe.com/experience/campaign/link": {
                     "title": "The campaign activity originating a message to a recipient.",
@@ -98,18 +121,24 @@
                         "xdm:id": {
                             "title": "Tracking URL ID",
                             "type": "string",
-                            "description": "Unique Identifier of the Link"
+                            "description": "Unique Identifier of the Link",
+                            "meta:titleId": "experienceevent-all##xdm:id##title##67931",
+                            "meta:descriptionId": "experienceevent-all##xdm:id##description##34001"
                         },
                         "xdm:description": {
                             "title": "Tracking URL Description",
                             "type": "string",
-                            "description": "A human-friendly description of the link."
+                            "description": "A human-friendly description of the link.",
+                            "meta:titleId": "experienceevent-all##xdm:description##title##89741",
+                            "meta:descriptionId": "experienceevent-all##xdm:description##description##1971"
                         },
                         "xdm:url": {
                             "title": "URL",
                             "format": "uri",
                             "type": "string",
-                            "description": "URL of the Link."
+                            "description": "URL of the Link.",
+                            "meta:titleId": "experienceevent-all##xdm:url##title##8501",
+                            "meta:descriptionId": "experienceevent-all##xdm:url##description##38091"
                         },
                         "xdm:occurrence": {
                             "title": "Occurrence",
@@ -117,17 +146,23 @@
                             "description": "URL occurrence index in the content (first is 1). When the same URL is available several times in the same content, its is necessary to track which occurrence of the URL has been clicked on.",
                             "default": 1,
                             "minimum": 1,
-                            "maximum": 32767
+                            "maximum": 32767,
+                            "meta:titleId": "experienceevent-all##xdm:occurrence##title##90221",
+                            "meta:descriptionId": "experienceevent-all##xdm:occurrence##description##78441"
                         },
                         "xdm:label": {
                             "title": "URL Label",
                             "type": "string",
-                            "description": "The user-friendly label clicking on which the link opens."
+                            "description": "The user-friendly label clicking on which the link opens.",
+                            "meta:titleId": "experienceevent-all##xdm:label##title##42791",
+                            "meta:descriptionId": "experienceevent-all##xdm:label##description##58721"
                         },
                         "xdm:category": {
                             "title": "URL Category",
                             "type": "string",
-                            "description": "The category of the link. It may be `subscription`, or a user-defined category."
+                            "description": "The category of the link. It may be `subscription`, or a user-defined category.",
+                            "meta:titleId": "experienceevent-all##xdm:category##title##91221",
+                            "meta:descriptionId": "experienceevent-all##xdm:category##description##13401"
                         },
                         "xdm:inAppMessageAction": {
                             "title": "In-App Message Action",
@@ -137,23 +172,31 @@
                                 "secondary": "Secondary action",
                                 "dismiss": "Dismiss action"
                             },
-                            "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button."
+                            "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button.",
+                            "meta:titleId": "experienceevent-all##xdm:inAppMessageAction##title##80281",
+                            "meta:descriptionId": "experienceevent-all##xdm:inAppMessageAction##description##93151"
                         },
                         "xdm:inAppMessageButtonText": {
                             "title": "In-App Message Button Text",
                             "type": "string",
-                            "description": "The user-friendly text on the button."
+                            "description": "The user-friendly text on the button.",
+                            "meta:titleId": "experienceevent-all##xdm:inAppMessageButtonText##title##15291",
+                            "meta:descriptionId": "experienceevent-all##xdm:inAppMessageButtonText##description##83261"
                         }
-                    }
+                    },
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/link##title##17511"
                 },
                 "https://ns.adobe.com/experience/campaign/orchestration": {
                     "title": "Campaign Orchestration for creating user journey.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/orchestration##title##73361",
                     "$ref": "https://ns.adobe.com/experience/campaign/orchestration"
                 },
                 "https://ns.adobe.com/experience/campaign/containerID": {
                     "title": "Container Identifier",
                     "type": "string",
-                    "description": "The identifier denoting the container with which Campaign ExperienceEvent is associated."
+                    "description": "The identifier denoting the container with which Campaign ExperienceEvent is associated.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/containerID##title##12871",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/containerID##description##22331"
                 },
                 "https://ns.adobe.com/experience/campaign/eventSource": {
                     "title": "Event Source",
@@ -170,12 +213,16 @@
                         "replay": "This event was generated via Replay Utility tool which did not have any event source",
                         "pipelined-tracker": "This event was generated via Pipelined generated from TrackeR"
                     },
-                    "description": "A human-friendly name of the campaign activity which is originating this message."
+                    "description": "A human-friendly name of the campaign activity which is originating this message.",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/eventSource##title##11101",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/eventSource##description##30301"
                 },
                 "https://ns.adobe.com/experience/campaign/offerOpened": {
                     "title": "Offer Opened",
                     "description": "The offer in the message for an 'offer opened' event.",
-                    "$ref": "https://ns.adobe.com/experience/campaign/offer-response-detail"
+                    "$ref": "https://ns.adobe.com/experience/campaign/offer-response-detail",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##title##6611",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##description##41161"
                 },
                 "https://ns.adobe.com/experience/campaign/offersProposed": {
                     "title": "Offer Propositions",
@@ -183,7 +230,9 @@
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/experience/campaign/offer-proposition-detail"
-                    }
+                    },
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offersProposed##title##1411",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offersProposed##description##91571"
                 },
                 "https://ns.adobe.com/experience/campaign/medium": {
                     "title": "Medium",
@@ -195,7 +244,9 @@
                         "message_line": "The source of the event is a line message.",
                         "web": "The source of the event is web tracking tag in a web page.",
                         "offer": "The source of the event is an offer."
-                    }
+                    },
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/medium##title##69711",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/medium##description##36751"
                 }
             }
         },
@@ -204,7 +255,9 @@
                 "https://ns.adobe.com/experience/campaign/mutation": {
                     "title": "Mutated Fields from Previous ExperienceEvent.",
                     "description": "Information of the fields that have changed since the previous ExperienceEvent to keep track of the state changes across events. For e.g. if when an email gets sent, an ExperienceEvent with metric `sends` will be sent. This may get bounced and an ExperienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous ExperienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous ExperienceEvent that have a different value in the current ExperienceEvent.",
-                    "$ref": "https://ns.adobe.com/experience/campaign/mutationevent"
+                    "$ref": "https://ns.adobe.com/experience/campaign/mutationevent",
+                    "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##title##59221",
+                    "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##description##44981"
                 }
             }
         }
@@ -217,5 +270,7 @@
             "$ref": "#/definitions/mutation"
         }
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "experienceevent-all##title##85301",
+    "meta:descriptionId": "experienceevent-all##description##53321"
 }

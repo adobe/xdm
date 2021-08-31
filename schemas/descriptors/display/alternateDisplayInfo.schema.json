@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:alternateDisplayInfo"
+          "const": "xdm:alternateDisplayInfo",
+          "meta:titleId": "alternateDisplayInfo##@type##title##71461"
         },
         "xdm:title": {
           "title": "Title",
@@ -31,7 +32,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:title##title##54161",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##54841"
         },
         "xdm:description": {
           "title": "Description",
@@ -41,7 +44,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:description##title##88041",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##43961"
         },
         "xdm:note": {
           "title": "Note",
@@ -51,7 +56,9 @@
             ".+_.+": {
               "type": "string"
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##xdm:note##title##1791",
+          "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##59021"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",
@@ -67,7 +74,8 @@
                 }
               ]
             }
-          }
+          },
+          "meta:titleId": "alternateDisplayInfo##meta:enum##title##76551"
         }
       },
       "anyOf": [
@@ -96,5 +104,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "alternateDisplayInfo##title##66501",
+  "meta:descriptionId": "alternateDisplayInfo##description##60941"
 }

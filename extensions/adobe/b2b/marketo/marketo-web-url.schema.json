@@ -27,11 +27,15 @@
                 "marketo:URL": {
                   "title": "URL",
                   "type": "string",
-                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format"
+                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
+                  "meta:titleId": "marketo-web-url##marketo:URL##title##84531",
+                  "meta:descriptionId": "marketo-web-url##marketo:URL##description##9121"
                 }
-              }
+              },
+              "meta:titleId": "marketo-web-url##xdm:webPageDetails##title##14591"
             }
-          }
+          },
+          "meta:titleId": "marketo-web-url##xdm:web##title##4741"
         }
       }
     }
@@ -41,5 +45,7 @@
       "$ref": "#/definitions/web-url"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "marketo-web-url##title##8721",
+  "meta:descriptionId": "marketo-web-url##description##90561"
 }

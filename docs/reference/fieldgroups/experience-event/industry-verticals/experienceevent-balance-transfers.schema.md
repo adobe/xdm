@@ -89,19 +89,26 @@ Unknown type `object`.
     "xdm:transaction": {
       "title": "Transaction",
       "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-      "description": "Extension of transaction data type."
+      "description": "Extension of transaction data type.",
+      "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##13771",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##51501"
     },
     "xdm:accountTo": {
       "title": "Account To",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred."
+      "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+      "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##78861",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##19891"
     },
     "xdm:accountFrom": {
       "title": "Account From",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred."
+      "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+      "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##92831",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##25201"
     }
   },
+  "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##65361",
   "simpletype": "`object`"
 }
 ```

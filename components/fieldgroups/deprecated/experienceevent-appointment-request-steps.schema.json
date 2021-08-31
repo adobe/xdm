@@ -30,7 +30,9 @@
             "xdm:appointmentRequestSteps": {
               "title": "Appointment Request Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
-              "description": "Extension of toolUsage data type."
+              "description": "Extension of toolUsage data type.",
+              "meta:titleId": "experienceevent-appointment-request-steps##xdm:appointmentRequestSteps##title##72611",
+              "meta:descriptionId": "experienceevent-appointment-request-steps##xdm:appointmentRequestSteps##description##36441"
             }
           }
         }
@@ -43,5 +45,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-appointment-request-steps##title##26421",
+  "meta:descriptionId": "experienceevent-appointment-request-steps##description##54821"
 }

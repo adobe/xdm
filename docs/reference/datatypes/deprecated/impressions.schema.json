@@ -20,17 +20,20 @@
                 "@id": {
                     "type": "string",
                     "const": "xdm:impressions",
-                    "description": "The unique identifier of this metric."
+                    "description": "The unique identifier of this metric.",
+                    "meta:descriptionId": "impressions##@id##description##63891"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "metric: impressions",
-                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:descriptionId": "impressions##schema:name##description##39331"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
-                    "const": "count"
+                    "const": "count",
+                    "meta:descriptionId": "impressions##xdm:measurement##description##11541"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -54,6 +57,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "impressions##title##10221",
+    "meta:descriptionId": "impressions##description##62031",
     "examples": [
         {
             "schema:name": "metric: impressions",

@@ -22,12 +22,16 @@
                 "xdm:productSize": {
                     "title": "Product Size",
                     "type": "string",
-                    "description": "Standard product size for the product."
+                    "description": "Standard product size for the product.",
+                    "meta:titleId": "product-measurement##xdm:productSize##title##83681",
+                    "meta:descriptionId": "product-measurement##xdm:productSize##description##38041"
                 },
                 "xdm:unitOfMeasureName": {
                     "title": "Product Unit Of Measure Name",
                     "type": "string",
-                    "description": "Friendly name for product unit of measure."
+                    "description": "Friendly name for product unit of measure.",
+                    "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##46101",
+                    "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##14301"
                 }
             }
         },
@@ -36,7 +40,9 @@
                 "xdm:unitOfMeasureCode": {
                     "title": "Product Unit Of Measure Code",
                     "type": "string",
-                    "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement."
+                    "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+                    "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##20391",
+                    "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871"
                 }
             }
         }
@@ -51,6 +57,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "product-measurement##title##42861",
+    "meta:descriptionId": "product-measurement##description##66341",
     "examples": [
         {
             "productSize": 5,

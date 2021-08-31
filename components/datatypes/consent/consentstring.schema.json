@@ -17,28 +17,38 @@
         "xdm:consentStandard": {
           "title": "Standard for the consent",
           "type": "string",
-          "description": "This helps determine the format of the consent string as set by consent management services."
+          "description": "This helps determine the format of the consent string as set by consent management services.",
+          "meta:titleId": "consentstring##xdm:consentStandard##title##53111",
+          "meta:descriptionId": "consentstring##xdm:consentStandard##description##10011"
         },
         "xdm:consentStandardVersion": {
           "title": "Standards Version",
           "type": "string",
-          "description": "Standards version to accurately define the format of the consent string as set by consent management services."
+          "description": "Standards version to accurately define the format of the consent string as set by consent management services.",
+          "meta:titleId": "consentstring##xdm:consentStandardVersion##title##32111",
+          "meta:descriptionId": "consentstring##xdm:consentStandardVersion##description##96861"
         },
         "xdm:consentStringValue": {
           "title": "Consent String",
           "type": "string",
-          "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string."
+          "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string.",
+          "meta:titleId": "consentstring##xdm:consentStringValue##title##39361",
+          "meta:descriptionId": "consentstring##xdm:consentStringValue##description##8251"
         },
         "xdm:gdprApplies": {
           "title": "GDPR Applies",
           "type": "boolean",
           "default": false,
-          "description": "If this is true, it means this consent string needs to be processed for consent enforcement."
+          "description": "If this is true, it means this consent string needs to be processed for consent enforcement.",
+          "meta:titleId": "consentstring##xdm:gdprApplies##title##82451",
+          "meta:descriptionId": "consentstring##xdm:gdprApplies##description##51631"
         },
         "xdm:containsPersonalData": {
           "title": "Contains personal data",
           "type": "boolean",
-          "description": "If this is true, it means consent is coming with personal data."
+          "description": "If this is true, it means consent is coming with personal data.",
+          "meta:titleId": "consentstring##xdm:containsPersonalData##title##911",
+          "meta:descriptionId": "consentstring##xdm:containsPersonalData##description##48101"
         }
       },
       "required": ["xdm:gdprApplies"]
@@ -53,5 +63,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "consentstring##title##75881",
+  "meta:descriptionId": "consentstring##description##63541"
 }

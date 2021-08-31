@@ -22,7 +22,9 @@
                     "title": "Test profile",
                     "type": "boolean",
                     "description": "Indicates the `profile` record is for use in testing and verification purposes and should not be automatically included in normal operations.",
-                    "default": false
+                    "default": false,
+                    "meta:titleId": "profile-test-profile##xdm:testProfile##title##25501",
+                    "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##82691"
                 }
             }
         }
@@ -37,6 +39,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "profile-test-profile##title##7571",
+    "meta:descriptionId": "profile-test-profile##description##71331",
     "examples": [
         {
             "xdm:testProfile": false

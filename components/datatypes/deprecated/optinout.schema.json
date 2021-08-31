@@ -24,7 +24,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/adm##title##53511",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/adm##description##4291"
         },
         "https://ns.adobe.com/xdm/channels/agency": {
           "title": "Agency",
@@ -37,7 +39,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/agency##title##88641",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/agency##description##67051"
         },
         "https://ns.adobe.com/xdm/channels/apns": {
           "title": "Apple Push Notification Service",
@@ -50,7 +54,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/apns##title##87821",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/apns##description##35641"
         },
         "https://ns.adobe.com/xdm/channels/application": {
           "title": "Application",
@@ -63,7 +69,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/application##title##96651",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/application##description##82661"
         },
         "https://ns.adobe.com/xdm/channels/baidu": {
           "title": "Baidu Cloud Push Service",
@@ -76,7 +84,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/baidu##title##68181",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/baidu##description##8231"
         },
         "https://ns.adobe.com/xdm/channels/channel": {
           "title": "Experience Channel",
@@ -89,7 +99,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/channel##title##30901",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/channel##description##24501"
         },
         "https://ns.adobe.com/xdm/channels/direct-mail": {
           "title": "Direct mail",
@@ -102,7 +114,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##title##47641",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/direct-mail##description##96231"
         },
         "https://ns.adobe.com/xdm/channels/email": {
           "title": "Email",
@@ -115,7 +129,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/email##title##52521",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/email##description##17321"
         },
         "https://ns.adobe.com/xdm/channels/facebook-feed": {
           "title": "Facebook news feed",
@@ -128,7 +144,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##title##41661",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/facebook-feed##description##74251"
         },
         "https://ns.adobe.com/xdm/channels/fax": {
           "title": "Fax",
@@ -141,7 +159,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/fax##title##96681",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/fax##description##14721"
         },
         "https://ns.adobe.com/xdm/channels/gcm": {
           "title": "Google Cloud Messaging",
@@ -154,7 +174,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/gcm##title##74151",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/gcm##description##65441"
         },
         "https://ns.adobe.com/xdm/channels/line": {
           "title": "Line Platform Notification",
@@ -167,7 +189,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/line##title##87801",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/line##description##23361"
         },
         "https://ns.adobe.com/xdm/channels/mobile-app": {
           "title": "Web",
@@ -180,7 +204,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##title##85041",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mobile-app##description##91461"
         },
         "https://ns.adobe.com/xdm/channels/mpns": {
           "title": "Microsoft Push Notification Service",
@@ -193,7 +219,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/mpns##title##6661",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/mpns##description##36491"
         },
         "https://ns.adobe.com/xdm/channels/phone": {
           "title": "Phone",
@@ -206,7 +234,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/phone##title##2391",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/phone##description##72741"
         },
         "https://ns.adobe.com/xdm/channels/sms": {
           "title": "SMS",
@@ -219,7 +249,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/sms##title##77851",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/sms##description##12921"
         },
         "https://ns.adobe.com/xdm/channels/twitter-feed": {
           "title": "Twitter feed",
@@ -232,7 +264,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##title##10821",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/twitter-feed##description##18801"
         },
         "https://ns.adobe.com/xdm/channels/web": {
           "title": "Web",
@@ -245,7 +279,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/web##title##70931",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/web##description##72591"
         },
         "https://ns.adobe.com/xdm/channels/webpage": {
           "title": "Web Page",
@@ -258,7 +294,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/webpage##title##16651",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/webpage##description##97241"
         },
         "https://ns.adobe.com/xdm/channels/wechat": {
           "title": "WeChat",
@@ -271,7 +309,9 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/wechat##title##25571",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wechat##description##72651"
         },
         "https://ns.adobe.com/xdm/channels/wns": {
           "title": "Windows Push Notification Service",
@@ -284,13 +324,17 @@
             "pending": "Pending verification",
             "in": "Opt-in: the user explicitly consents to receiving messages.",
             "out": "Opt-out: the user declines to receive any messages on this channel."
-          }
+          },
+          "meta:titleId": "optinout##https://ns.adobe.com/xdm/channels/wns##title##11381",
+          "meta:descriptionId": "optinout##https://ns.adobe.com/xdm/channels/wns##description##19781"
         },
         "xdm:globalOptout": {
           "title": "Global Opt-out",
           "type": "boolean",
           "description": "Do not contact this profile on any outbound channel.",
-          "default": false
+          "default": false,
+          "meta:titleId": "optinout##xdm:globalOptout##title##81081",
+          "meta:descriptionId": "optinout##xdm:globalOptout##description##42991"
         },
         "xdm:optOutDetails": {
           "type": "object",
@@ -298,22 +342,30 @@
             "xdm:email": {
               "title": "Additional Details for Email Opt Out",
               "description": "Additional Details for Email Opt Out like reason, date.",
-              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details",
+              "meta:titleId": "optinout##xdm:email##title##40581",
+              "meta:descriptionId": "optinout##xdm:email##description##33371"
             },
             "xdm:phone": {
               "title": "Additional Details for Phone Opt Out",
               "description": "Additional details for phone opt out like reason, date.",
-              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details",
+              "meta:titleId": "optinout##xdm:phone##title##69241",
+              "meta:descriptionId": "optinout##xdm:phone##description##93221"
             },
             "xdm:fax": {
               "title": "Additional Details for Fax Opt Out",
               "description": "Additional details for fax opt out like reason, date.",
-              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details",
+              "meta:titleId": "optinout##xdm:fax##title##17701",
+              "meta:descriptionId": "optinout##xdm:fax##description##67491"
             },
             "xdm:direct-mail": {
               "title": "Additional Details for Direct-Mail Opt Out",
               "description": "Additional details for direct-mail opt out like reason, date.",
-              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details"
+              "$ref": "https://ns.adobe.com/xdm/common/optinout-additional-details",
+              "meta:titleId": "optinout##xdm:direct-mail##title##20211",
+              "meta:descriptionId": "optinout##xdm:direct-mail##description##59201"
             }
           }
         }
@@ -329,5 +381,7 @@
     }
   ],
   "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "optinout##title##59601",
+  "meta:descriptionId": "optinout##description##521"
 }

@@ -20,27 +20,37 @@
         "xdm:campaignID": {
           "title": "Campaign ID",
           "description": "Unique identifer for campaign.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignID##title##56561",
+          "meta:descriptionId": "campaign##xdm:campaignID##description##21251"
         },
         "xdm:campaignKey": {
           "title": "Campaign Key",
           "description": "Unique composite identifier of the Campaign.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "campaign##xdm:campaignKey##title##84181",
+          "meta:descriptionId": "campaign##xdm:campaignKey##description##71261"
         },
         "xdm:campaignName": {
           "title": "Campaign Name",
           "description": "Friendly name for campaign.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignName##title##3811",
+          "meta:descriptionId": "campaign##xdm:campaignName##description##97951"
         },
         "xdm:campaignType": {
           "title": "Campaign Type",
           "description": "The type of campaign for which audience gets selected.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignType##title##56661",
+          "meta:descriptionId": "campaign##xdm:campaignType##description##33431"
         },
         "xdm:campaignDescription": {
           "title": "Campaign Description",
           "description": "Campaign description.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "campaign##xdm:campaignDescription##title##65491",
+          "meta:descriptionId": "campaign##xdm:campaignDescription##description##77071"
         }
       }
     }
@@ -60,5 +70,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-09-29"
+  "meta:createdDate": "2020-09-29",
+  "meta:titleId": "campaign##title##40111",
+  "meta:descriptionId": "campaign##description##58771"
 }

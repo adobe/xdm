@@ -18,43 +18,59 @@
                     "title": "Place ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The unique identifier of the place."
+                    "description": "The unique identifier of the place.",
+                    "meta:titleId": "place##@id##title##47511",
+                    "meta:descriptionId": "place##@id##description##84841"
                 },
                 "schema:description": {
                     "title": "Description",
                     "type": "string",
-                    "description": "The description of the physical location."
+                    "description": "The description of the physical location.",
+                    "meta:titleId": "place##schema:description##title##1711",
+                    "meta:descriptionId": "place##schema:description##description##78181"
                 },
                 "xdm:address": {
                     "title": "Address",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                    "description": "The physical address of the location."
+                    "description": "The physical address of the location.",
+                    "meta:titleId": "place##xdm:address##title##66291",
+                    "meta:descriptionId": "place##xdm:address##description##80471"
                 },
                 "schema:telephone": {
                     "title": "Phone number",
                     "type": "string",
-                    "description": "The phone number."
+                    "description": "The phone number.",
+                    "meta:titleId": "place##schema:telephone##title##67781",
+                    "meta:descriptionId": "place##schema:telephone##description##17471"
                 },
                 "schema:branchCode": {
                     "title": "Location code",
                     "type": "string",
-                    "description": "A short textual code also called \"store code\" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch."
+                    "description": "A short textual code also called \"store code\" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch.",
+                    "meta:titleId": "place##schema:branchCode##title##91321",
+                    "meta:descriptionId": "place##schema:branchCode##description##49991"
                 },
                 "xdm:shape": {
                     "title": "Geo shape",
                     "$ref": "http://schema.org/GeoShape",
-                    "description": "The geographic shape of the physical location."
+                    "description": "The geographic shape of the physical location.",
+                    "meta:titleId": "place##xdm:shape##title##87041",
+                    "meta:descriptionId": "place##xdm:shape##description##96211"
                 },
                 "xdm:pointOfInterest": {
                     "title": "Point of interest",
                     "$ref": "http://schema.org/GeoCoordinates",
-                    "description": "The coordinates of the point of interest for this location."
+                    "description": "The coordinates of the point of interest for this location.",
+                    "meta:titleId": "place##xdm:pointOfInterest##title##83991",
+                    "meta:descriptionId": "place##xdm:pointOfInterest##description##11401"
                 },
                 "xdm:containedInPlace": {
                     "title": "Contained by location",
                     "type": "string",
                     "format": "uri",
-                    "description": "XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place."
+                    "description": "XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place.",
+                    "meta:titleId": "place##xdm:containedInPlace##title##73831",
+                    "meta:descriptionId": "place##xdm:containedInPlace##description##20301"
                 },
                 "xdm:containsPlaces": {
                     "title": "Contains locations",
@@ -62,9 +78,12 @@
                     "items": {
                         "type": "string",
                         "format": "uri",
-                        "description": "The XDM URI of another `Place` that this place contains."
+                        "description": "The XDM URI of another `Place` that this place contains.",
+                        "meta:descriptionId": "place##items##description##88561"
                     },
-                    "description": "An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places."
+                    "description": "An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places.",
+                    "meta:titleId": "place##xdm:containsPlaces##title##88341",
+                    "meta:descriptionId": "place##xdm:containsPlaces##description##61071"
                 }
             },
             "required": [
@@ -82,6 +101,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "place##title##72731",
+    "meta:descriptionId": "place##description##82331",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/places/locationid-123456",

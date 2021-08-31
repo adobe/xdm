@@ -18,19 +18,25 @@
                 "xdm:activity": {
                     "title": "Decision Activity Snapshot",
                     "description": "Snapshot of the activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity. In the future, this will be deprecated in favor of scopeDetails.activity.",
-                    "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail"
+                    "$ref": "https://ns.adobe.com/experience/decisioning/activity-detail",
+                    "meta:titleId": "proposition-detail##xdm:activity##title##52161",
+                    "meta:descriptionId": "proposition-detail##xdm:activity##description##28321"
                 },
                 "xdm:channel": {
                     "meta:status": "deprecated",
                     "title": "Channel (deprecated)",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'. (deprecated), use scope.placement.channel instead. "
+                    "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'. (deprecated), use scope.placement.channel instead. ",
+                    "meta:titleId": "proposition-detail##xdm:channel##title##33091",
+                    "meta:descriptionId": "proposition-detail##xdm:channel##description##23581"
                 },
                 "xdm:placement": {
                     "title": "Placement Snapshot",
                     "description": "Snapshot of the placement for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the placement. In the future, this will be deprecated in favor of scopeDetails.placement.",
-                    "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail"
+                    "$ref": "https://ns.adobe.com/experience/decisioning/placement-detail",
+                    "meta:titleId": "proposition-detail##xdm:placement##title##42691",
+                    "meta:descriptionId": "proposition-detail##xdm:placement##description##89831"
                 },
                 "xdm:selections": {
                     "title": "Selected Options' Snapshot",
@@ -40,12 +46,16 @@
                         "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
                     },
                     "minItems": 1,
-                    "uniqueItems": true
+                    "uniqueItems": true,
+                    "meta:titleId": "proposition-detail##xdm:selections##title##87871",
+                    "meta:descriptionId": "proposition-detail##xdm:selections##description##34631"
                 },
                 "xdm:fallback": {
                     "title": "Fallback Option Snapshot",
                     "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of scopeDetails.activity.fallback.",
-                    "$ref": "https://ns.adobe.com/experience/decisioning/option-detail"
+                    "$ref": "https://ns.adobe.com/experience/decisioning/option-detail",
+                    "meta:titleId": "proposition-detail##xdm:fallback##title##20611",
+                    "meta:descriptionId": "proposition-detail##xdm:fallback##description##92261"
                 }
             }
         }
@@ -59,15 +69,9 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "proposition-detail##title##75481",
+    "meta:descriptionId": "proposition-detail##description##60051",
     "examples": [
-        {
-            "xdm:activity": {
-                "xdm:id": "xcore:offer-activity:f203512e02542b5"
-            },
-            "xdm:fallback": {
-                "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
-            }
-        },
         {
             "xdm:activity": {
                 "xdm:id": "xcore:offer-activity:ebc48132c26ccfc",
@@ -113,6 +117,14 @@
                     }
                 }
             ]
+        },
+        {
+            "xdm:activity": {
+                "xdm:id": "xcore:offer-activity:f203512e02542b5"
+            },
+            "xdm:fallback": {
+                "xdm:id": "xcore:fallback-offer:e91ce7243fd8c2a"
+            }
         }
     ]
 }

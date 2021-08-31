@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Player state information",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "Information related to player state.",
   "definitions": {
@@ -18,19 +18,25 @@
         "xdm:playerStateSet": {
           "title": "Player state set",
           "type": "boolean",
-          "description": "Whether or not the player state is set on that state."
+          "description": "Whether or not the player state is set on that state.",
+          "meta:titleId": "player-state##xdm:playerStateSet##title##89591",
+          "meta:descriptionId": "player-state##xdm:playerStateSet##description##31531"
         },
         "xdm:playerStateCount": {
           "title": "Player state count",
           "type": "integer",
           "minimum": 0,
-          "description": "The number of times that player state was set on the stream."
+          "description": "The number of times that player state was set on the stream.",
+          "meta:titleId": "player-state##xdm:playerStateCount##title##21251",
+          "meta:descriptionId": "player-state##xdm:playerStateCount##description##38841"
         },
         "xdm:playerStateTime": {
           "title": "Player state time",
           "type": "integer",
           "minimum": 0,
-          "description": "The total duration of that player state."
+          "description": "The total duration of that player state.",
+          "meta:titleId": "player-state##xdm:playerStateTime##title##54561",
+          "meta:descriptionId": "player-state##xdm:playerStateTime##description##37501"
         }
       }
     }
@@ -43,6 +49,7 @@
       "$ref": "#/definitions/player-state"
     }
   ],
-  "meta:status": "deprecated",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "player-state##title##99921",
+  "meta:descriptionId": "player-state##description##63191"
 }

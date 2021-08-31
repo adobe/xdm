@@ -18,17 +18,23 @@
                     "title": "Ad Pod ID",
                     "format": "uri-reference",
                     "type": "string",
-                    "description": "Identifier of the ad break."
+                    "description": "Identifier of the ad break.",
+                    "meta:titleId": "advertising-break##@id##title##36751",
+                    "meta:descriptionId": "advertising-break##@id##description##36061"
                 },
                 "dc:title": {
                     "title": "Pod name",
                     "type": "string",
-                    "description": "The friendly name of the ad break."
+                    "description": "The friendly name of the ad break.",
+                    "meta:titleId": "advertising-break##dc:title##title##4081",
+                    "meta:descriptionId": "advertising-break##dc:title##description##20751"
                 },
                 "xdm:offset": {
                     "title": "Pod position",
                     "type": "integer",
-                    "description": "The offset, in seconds, of the ad break from the start of the primary content."
+                    "description": "The offset, in seconds, of the ad break from the start of the primary content.",
+                    "meta:titleId": "advertising-break##xdm:offset##title##89501",
+                    "meta:descriptionId": "advertising-break##xdm:offset##description##6161"
                 }
             },
             "required": [
@@ -43,6 +49,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "advertising-break##title##94661",
+    "meta:descriptionId": "advertising-break##description##57771",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/ad-break/2394509340-30453470347",

@@ -18,7 +18,9 @@
                 "xdm:extSourceSystemAudit": {
                     "title": "External Source System Audit Properties",
                     "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit",
-                    "description": "Audit attributes for external sources."
+                    "description": "Audit attributes for external sources.",
+                    "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+                    "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131"
                 }
             }
         }
@@ -33,6 +35,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "external-source-system-audit-details##title##88991",
+    "meta:descriptionId": "external-source-system-audit-details##description##98601",
     "examples": [
         {
             "xdm:createdBy": "USER111",

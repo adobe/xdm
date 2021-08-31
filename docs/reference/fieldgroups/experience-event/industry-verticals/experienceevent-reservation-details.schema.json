@@ -30,71 +30,97 @@
                         "xdm:cancellation": {
                             "title": "Cancellation",
                             "type": "integer",
-                            "description": "Tracked when a reservation has been cancelled."
+                            "description": "Tracked when a reservation has been cancelled.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:cancellation##title##12631",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:cancellation##description##4801"
                         },
                         "xdm:confirmationNumber": {
                             "title": "Confirmation Number",
                             "type": "string",
-                            "description": "Tracks the reservation confirmation number/identifier."
+                            "description": "Tracks the reservation confirmation number/identifier.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:confirmationNumber##title##23821",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:confirmationNumber##description##26381"
                         },
                         "xdm:created": {
                             "title": "Created",
                             "type": "integer",
-                            "description": "Tracked when a reservation has been created."
+                            "description": "Tracked when a reservation has been created.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:created##title##39091",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:created##description##70091"
                         },
                         "xdm:currencyCode": {
                             "title": "Currency Code",
                             "type": "string",
                             "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-                            "pattern": "^[A-Z]{3}$"
+                            "pattern": "^[A-Z]{3}$",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:currencyCode##title##3251",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:currencyCode##description##17131"
                         },
                         "xdm:endDate": {
                             "title": "End Date",
                             "type": "string",
                             "format": "date-time",
-                            "description": "The end drop-off/return/check-out date of the reservation."
+                            "description": "The end drop-off/return/check-out date of the reservation.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:endDate##title##88071",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:endDate##description##90911"
                         },
                         "xdm:ID": {
                             "title": "ID",
                             "type": "string",
-                            "description": "Tracks the reservation number/identifier."
+                            "description": "Tracks the reservation number/identifier.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:ID##title##19301",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:ID##description##201"
                         },
                         "xdm:length": {
                             "title": "Length",
                             "type": "integer",
-                            "description": "Tracks the total number of days for a reservation."
+                            "description": "Tracks the total number of days for a reservation.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:length##title##99751",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:length##description##75111"
                         },
                         "xdm:modification": {
                             "title": "Modification",
                             "type": "integer",
-                            "description": "Captured when a reservation has been modified."
+                            "description": "Captured when a reservation has been modified.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:modification##title##56791",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:modification##description##32151"
                         },
                         "xdm:modificationDate": {
                             "title": "Modification Date",
                             "type": "string",
                             "format": "date-time",
-                            "description": "Tracks when a reservation has been modified."
+                            "description": "Tracks when a reservation has been modified.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:modificationDate##title##38201",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:modificationDate##description##94941"
                         },
                         "xdm:nonRefundableAmount": {
                             "title": "Non-Refundable Amount",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-                            "description": "Amount of the reservation price that is marked as non-refundable."
+                            "description": "Amount of the reservation price that is marked as non-refundable.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:nonRefundableAmount##title##86671",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:nonRefundableAmount##description##93521"
                         },
                         "xdm:numberOfAdults": {
                             "title": "Number of Adults",
                             "type": "integer",
-                            "description": "Captures the number of adults associated with the reservation."
+                            "description": "Captures the number of adults associated with the reservation.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:numberOfAdults##title##73491",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:numberOfAdults##description##91011"
                         },
                         "xdm:numberOfChildren": {
                             "title": "Number of Children",
                             "type": "integer",
-                            "description": "Captures the number of children associated with the reservation."
+                            "description": "Captures the number of children associated with the reservation.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:numberOfChildren##title##90001",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:numberOfChildren##description##52941"
                         },
                         "xdm:processSteps": {
                             "title": "Process Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:status": "deprecated"
+                            "meta:status": "deprecated",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:processSteps##title##67411",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:processSteps##description##21791"
                         },
                         "xdm:purpose": {
                             "title": "Purpose",
@@ -103,18 +129,24 @@
                                 "business": "Business",
                                 "personal": "Personal"
                             },
-                            "description": "Tracks the purpose of the reservation, typically either business or personal."
+                            "description": "Tracks the purpose of the reservation, typically either business or personal.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:purpose##title##38251",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:purpose##description##38571"
                         },
                         "xdm:startDate": {
                             "title": "Start Date",
                             "type": "string",
                             "format": "date-time",
-                            "description": "The start pick-up/outbound/check-in date of the reservation."
+                            "description": "The start pick-up/outbound/check-in date of the reservation.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:startDate##title##87831",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:startDate##description##59521"
                         },
                         "xdm:transaction": {
                             "title": "Transaction",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-                            "description": "Extension of transaction data type."
+                            "description": "Extension of transaction data type.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:transaction##title##34961",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:transaction##description##7801"
                         },
                         "xdm:triptype": {
                             "title": "Trip Type",
@@ -124,9 +156,12 @@
                                 "oneWay": "One Way",
                                 "multiCity": "Multi-City"
                             },
-                            "description": "Indicates if the reservation is for a one way, round trip, or multi-city."
+                            "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+                            "meta:titleId": "experienceevent-reservation-details##xdm:triptype##title##74461",
+                            "meta:descriptionId": "experienceevent-reservation-details##xdm:triptype##description##24831"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-reservation-details##xdm:reservations##description##79931"
                 }
             }
         }
@@ -138,6 +173,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-10",
+    "meta:titleId": "experienceevent-reservation-details##title##95741",
+    "meta:descriptionId": "experienceevent-reservation-details##description##14311",
     "examples": [
         {
             "xdm:reservations": {

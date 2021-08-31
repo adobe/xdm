@@ -17,18 +17,24 @@
                 "xdm:primary": {
                     "title": "Primary",
                     "type": "boolean",
-                    "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time."
+                    "description": "Primary email indicator. A profile can have only one `primary` email address at a given point of time.",
+                    "meta:titleId": "emailaddress##xdm:primary##title##48081",
+                    "meta:descriptionId": "emailaddress##xdm:primary##description##46871"
                 },
                 "xdm:address": {
                     "title": "Address",
                     "type": "string",
                     "format": "email",
-                    "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards."
+                    "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+                    "meta:titleId": "emailaddress##xdm:address##title##72501",
+                    "meta:descriptionId": "emailaddress##xdm:address##description##51231"
                 },
                 "xdm:label": {
                     "title": "Label",
                     "type": "string",
-                    "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label."
+                    "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.",
+                    "meta:titleId": "emailaddress##xdm:label##title##92001",
+                    "meta:descriptionId": "emailaddress##xdm:label##description##96421"
                 },
                 "xdm:type": {
                     "title": "Type",
@@ -39,7 +45,9 @@
                         "personal": "Personal",
                         "work": "Work",
                         "education": "Education"
-                    }
+                    },
+                    "meta:titleId": "emailaddress##xdm:type##title##361",
+                    "meta:descriptionId": "emailaddress##xdm:type##description##85951"
                 },
                 "xdm:status": {
                     "title": "Status",
@@ -52,12 +60,16 @@
                         "pending_verification": "Pending verification",
                         "blacklisted": "Blacklisted",
                         "blocked": "Blocked"
-                    }
+                    },
+                    "meta:titleId": "emailaddress##xdm:status##title##48261",
+                    "meta:descriptionId": "emailaddress##xdm:status##description##48341"
                 },
                 "xdm:statusReason": {
                     "title": "Status reason",
                     "type": "string",
-                    "description": "A description of the current status."
+                    "description": "A description of the current status.",
+                    "meta:titleId": "emailaddress##xdm:statusReason##title##72581",
+                    "meta:descriptionId": "emailaddress##xdm:statusReason##description##53171"
                 }
             }
         }
@@ -72,6 +84,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "emailaddress##title##92391",
+    "meta:descriptionId": "emailaddress##description##4711",
     "examples": [
         {
             "xdm:primary": false,

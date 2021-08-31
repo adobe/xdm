@@ -63,9 +63,13 @@ Unknown type `object`.
       "description": "Subscriptions that this profile is entitled to including terminated, expired or exhausted subscriptions.",
       "items": {
         "$ref": "https://ns.adobe.com/xdm/context/subscription"
-      }
+      },
+      "meta:titleId": "experienceevent-profile-subscriptions##xdm:subscriptions##title##96921",
+      "meta:descriptionId": "experienceevent-profile-subscriptions##xdm:subscriptions##description##25591"
     }
   },
+  "meta:titleId": "experienceevent-profile-subscriptions##xdm:profileSnapshot##title##94161",
+  "meta:descriptionId": "experienceevent-profile-subscriptions##xdm:profileSnapshot##description##86881",
   "simpletype": "`object`"
 }
 ```

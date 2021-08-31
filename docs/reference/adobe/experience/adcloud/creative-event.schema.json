@@ -21,7 +21,9 @@
                 "https://ns.adobe.com/experience/adcloud/creative": {
                     "title": "Advertising Creative Management Platform Details",
                     "description": "Advertising Creative Management Platform Details.",
-                    "$ref": "https://ns.adobe.com/experience/adcloud/creative"
+                    "$ref": "https://ns.adobe.com/experience/adcloud/creative",
+                    "meta:titleId": "creative-event##https://ns.adobe.com/experience/adcloud/creative##title##73011",
+                    "meta:descriptionId": "creative-event##https://ns.adobe.com/experience/adcloud/creative##description##60111"
                 }
             }
         }
@@ -35,6 +37,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "creative-event##title##63131",
+    "meta:descriptionId": "creative-event##description##46971",
     "examples": [
         {
             "https://ns.adobe.com/experience/adcloud/creative": {

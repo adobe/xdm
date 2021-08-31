@@ -82,17 +82,23 @@ Unknown type `object`.
     "xdm:transaction": {
       "title": "Deposit Transaction",
       "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
-      "description": "Extension of transaction data type."
+      "description": "Extension of transaction data type.",
+      "meta:titleId": "experienceevent-deposit-details##xdm:transaction##title##80731",
+      "meta:descriptionId": "experienceevent-deposit-details##xdm:transaction##description##43411"
     },
     "xdm:account": {
       "title": "Deposit Account",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
-      "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit."
+      "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
+      "meta:titleId": "experienceevent-deposit-details##xdm:account##title##99811",
+      "meta:descriptionId": "experienceevent-deposit-details##xdm:account##description##65581"
     },
     "xdm:mobileDeposit": {
       "title": "Mobile Deposit",
       "type": "boolean",
-      "description": "Indicator for whether the deposit was done through mobile or not."
+      "description": "Indicator for whether the deposit was done through mobile or not.",
+      "meta:titleId": "experienceevent-deposit-details##xdm:mobileDeposit##title##94461",
+      "meta:descriptionId": "experienceevent-deposit-details##xdm:mobileDeposit##description##31401"
     }
   },
   "simpletype": "`object`"

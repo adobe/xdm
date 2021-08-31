@@ -22,22 +22,30 @@
                 "xdm:productCategoryName": {
                     "title": "Product Category Name",
                     "type": "string",
-                    "description": "friendly name of the product category."
+                    "description": "friendly name of the product category.",
+                    "meta:titleId": "product-category##xdm:productCategoryName##title##87501",
+                    "meta:descriptionId": "product-category##xdm:productCategoryName##description##62791"
                 },
                 "xdm:productCategoryDescription": {
                     "title": "Product Category Description",
                     "type": "string",
-                    "description": "Friendly description of product category."
+                    "description": "Friendly description of product category.",
+                    "meta:titleId": "product-category##xdm:productCategoryDescription##title##76391",
+                    "meta:descriptionId": "product-category##xdm:productCategoryDescription##description##79791"
                 },
                 "xdm:productSubcategoryName": {
                     "title": "Product Subcategory Name",
                     "type": "string",
-                    "description": "friendly name of the product subcategory."
+                    "description": "friendly name of the product subcategory.",
+                    "meta:titleId": "product-category##xdm:productSubcategoryName##title##78861",
+                    "meta:descriptionId": "product-category##xdm:productSubcategoryName##description##6541"
                 },
                 "xdm:productSubcategoryDescription": {
                     "title": "Product Sub category Description",
                     "type": "string",
-                    "description": "Friendly description of product subcategory."
+                    "description": "Friendly description of product subcategory.",
+                    "meta:titleId": "product-category##xdm:productSubcategoryDescription##title##2711",
+                    "meta:descriptionId": "product-category##xdm:productSubcategoryDescription##description##89711"
                 }
             }
         }
@@ -49,6 +57,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-11-19",
+    "meta:titleId": "product-category##title##26841",
+    "meta:descriptionId": "product-category##description##80251",
     "examples": [
         {
             "xdm:productCatelogCategoryName": "prime",

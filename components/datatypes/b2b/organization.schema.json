@@ -17,55 +17,75 @@
           "title": "Organization ID",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique identifier for the organization."
+          "description": "A unique identifier for the organization.",
+          "meta:titleId": "organization##@id##title##31681",
+          "meta:descriptionId": "organization##@id##description##14531"
         },
         "xdm:legalName": {
           "title": "Organization legal name",
           "type": "string",
-          "description": "The official or legal name of the organization."
+          "description": "The official or legal name of the organization.",
+          "meta:titleId": "organization##xdm:legalName##title##53021",
+          "meta:descriptionId": "organization##xdm:legalName##description##38431"
         },
         "schema:description": {
           "title": "Organization description",
           "type": "string",
-          "description": "A description of the organization."
+          "description": "A description of the organization.",
+          "meta:titleId": "organization##schema:description##title##37311",
+          "meta:descriptionId": "organization##schema:description##description##59531"
         },
         "schema:numberOfEmployees": {
           "title": "Number of employees",
           "type": "number",
-          "description": "The number of employees the at the organization."
+          "description": "The number of employees the at the organization.",
+          "meta:titleId": "organization##schema:numberOfEmployees##title##53741",
+          "meta:descriptionId": "organization##schema:numberOfEmployees##description##3411"
         },
         "xdm:annualRevenue": {
           "title": "Annual Revenue",
           "description": "Estimated amount of annual revenue of the organization.",
-          "type": "number"
+          "type": "number",
+          "meta:titleId": "organization##xdm:annualRevenue##title##46281",
+          "meta:descriptionId": "organization##xdm:annualRevenue##description##19011"
         },
         "xdm:industry": {
           "title": "Industry",
           "type": "string",
-          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property."
+          "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
+          "meta:titleId": "organization##xdm:industry##title##22331",
+          "meta:descriptionId": "organization##xdm:industry##description##39101"
         },
         "xdm:website": {
           "title": "Website URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL of the organization's website."
+          "description": "The URL of the organization's website.",
+          "meta:titleId": "organization##xdm:website##title##24251",
+          "meta:descriptionId": "organization##xdm:website##description##6531"
         },
         "xdm:marketSegment": {
           "title": "Market segment",
           "type": "string",
-          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property."
+          "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
+          "meta:titleId": "organization##xdm:marketSegment##title##41471",
+          "meta:descriptionId": "organization##xdm:marketSegment##description##92081"
         },
         "xdm:location": {
           "title": "Location",
           "$ref": "https://ns.adobe.com/xdm/context/place",
-          "description": "The location of the organization's main office or headquarters."
+          "description": "The location of the organization's main office or headquarters.",
+          "meta:titleId": "organization##xdm:location##title##43491",
+          "meta:descriptionId": "organization##xdm:location##description##67811"
         },
         "xdm:rating": {
           "title": "Rating",
           "type": "number",
           "minimum": 0,
           "maximum": 1,
-          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating."
+          "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
+          "meta:titleId": "organization##xdm:rating##title##26851",
+          "meta:descriptionId": "organization##xdm:rating##description##86121"
         },
         "xdm:identifier": {
           "title": "Organization identifier",
@@ -77,8 +97,11 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
-          }
+            },
+            "meta:titleId": "organization##additionalProperties##title##21851"
+          },
+          "meta:titleId": "organization##xdm:identifier##title##40481",
+          "meta:descriptionId": "organization##xdm:identifier##description##83911"
         },
         "xdm:classifier": {
           "title": "Market or industry classifier",
@@ -90,8 +113,11 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
-          }
+            },
+            "meta:titleId": "organization##additionalProperties##title##87761"
+          },
+          "meta:titleId": "organization##xdm:classifier##title##35721",
+          "meta:descriptionId": "organization##xdm:classifier##description##95761"
         }
       }
     }
@@ -102,5 +128,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "organization##title##14891",
+  "meta:descriptionId": "organization##description##3751"
 }

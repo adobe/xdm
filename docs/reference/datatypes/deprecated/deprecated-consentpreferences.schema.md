@@ -106,29 +106,41 @@ Unknown type ``.
         "xdm:dataCollection": {
           "title": "Data Collection",
           "description": "Data collection is permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-fields",
+          "meta:titleId": "consent-preferences##xdm:dataCollection##title##39501",
+          "meta:descriptionId": "consent-preferences##xdm:dataCollection##description##31891"
         },
         "xdm:sellData": {
           "title": "Sell Data",
           "description": "Selling of user's Data to 2nd or 3rd parties is permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-fields",
+          "meta:titleId": "consent-preferences##xdm:sellData##title##68111",
+          "meta:descriptionId": "consent-preferences##xdm:sellData##description##84231"
         },
         "xdm:shareData": {
           "title": "Share Data",
           "description": "Sharing of user's Data with 2nd or 3rd parties is permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-fields",
+          "meta:titleId": "consent-preferences##xdm:shareData##title##70541",
+          "meta:descriptionId": "consent-preferences##xdm:shareData##description##97301"
         },
         "xdm:pseudonymousAnalysis": {
           "title": "Pseudonymous Analysis",
           "description": "Data can be used for analysis that may include an ID that may or may not be tied to an actual person",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-fields",
+          "meta:titleId": "consent-preferences##xdm:pseudonymousAnalysis##title##15211",
+          "meta:descriptionId": "consent-preferences##xdm:pseudonymousAnalysis##description##65461"
         },
         "xdm:deviceLinking": {
           "title": "Device Linking",
           "description": "Attempts to link multiple devices belonging to an individual or household are permitted",
-          "$ref": "#/definitions/consent-fields"
+          "$ref": "#/definitions/consent-fields",
+          "meta:titleId": "consent-preferences##xdm:deviceLinking##title##14591",
+          "meta:descriptionId": "consent-preferences##xdm:deviceLinking##description##55881"
         }
-      }
+      },
+      "meta:titleId": "consent-preferences##xdm:consents##title##62381",
+      "meta:descriptionId": "consent-preferences##xdm:consents##description##61581"
     },
     "xdm:personalizationPreferences": {
       "title": "Personalization Preferences",
@@ -138,94 +150,132 @@ Unknown type ``.
         "xdm:anyPersonalization": {
           "title": "General Personalization Preference",
           "description": "Is permission granted to perform any type of personalization",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:anyPersonalization##title##74851",
+          "meta:descriptionId": "consent-preferences##xdm:anyPersonalization##description##59531"
         },
         "xdm:email": {
           "title": "Personalize email",
           "description": "Allow personalization of emails sent to the user",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:email##title##99661",
+          "meta:descriptionId": "consent-preferences##xdm:email##description##45671"
         },
         "xdm:physicalMail": {
           "title": "Personalize physical mail",
           "description": "Allow personalization of offers sent via traditional/physical mail",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:physicalMail##title##19151",
+          "meta:descriptionId": "consent-preferences##xdm:physicalMail##description##5741"
         },
         "xdm:pushNotifications": {
           "title": "Personalize push notifications",
           "description": "Personalization of push notifications is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:pushNotifications##title##34521",
+          "meta:descriptionId": "consent-preferences##xdm:pushNotifications##description##70771"
         },
         "xdm:sms": {
           "title": "Personalize SMS",
           "description": "Personalization of text messages is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:sms##title##72561",
+          "meta:descriptionId": "consent-preferences##xdm:sms##description##67951"
         },
         "xdm:phoneCalls": {
           "title": "Personalize phone calls",
           "description": "Allow phone calls that the brand initiates to be personalized based on the user's interests or behavior",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:phoneCalls##title##16371",
+          "meta:descriptionId": "consent-preferences##xdm:phoneCalls##description##29351"
         },
         "xdm:iotDevices": {
           "title": "Personalize IoT Devices",
           "description": "Personalization of interactions with IoT devices is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:iotDevices##title##92701",
+          "meta:descriptionId": "consent-preferences##xdm:iotDevices##description##36691"
         },
         "xdm:socialMedia": {
           "title": "Personalize Social Media",
           "description": "Personalization of interactions on Social Media sites/apps is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:socialMedia##title##67091",
+          "meta:descriptionId": "consent-preferences##xdm:socialMedia##description##72551"
         },
         "xdm:inAppMessages": {
           "title": "Personalize in-app messages",
           "description": "Allow personalization of messages displayed within my apps",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:inAppMessages##title##16391",
+          "meta:descriptionId": "consent-preferences##xdm:inAppMessages##description##45681"
         },
         "xdm:inVehicle": {
           "title": "Personalize in-vehicle",
           "description": "Personalization of in-vehicle experiences is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:inVehicle##title##10911",
+          "meta:descriptionId": "consent-preferences##xdm:inVehicle##description##2731"
         },
         "xdm:inHome": {
           "title": "Personalize in-home",
           "description": "Personalization of in-home experiences is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:inHome##title##63491",
+          "meta:descriptionId": "consent-preferences##xdm:inHome##description##80571"
         },
         "xdm:inStore": {
           "title": "Personalize in-store",
           "description": "Personalization of in-store experiences is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:inStore##title##82311",
+          "meta:descriptionId": "consent-preferences##xdm:inStore##description##94581"
         },
         "xdm:content": {
           "title": "Personalize content",
           "description": "Allow personalization of the content on my site or in my apps",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:content##title##23401",
+          "meta:descriptionId": "consent-preferences##xdm:content##description##57071"
         },
         "xdm:offers": {
           "title": "Personalize Offers",
           "description": "Allow personalization of 1st-party offers displayed on this site or with this app",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:offers##title##51931",
+          "meta:descriptionId": "consent-preferences##xdm:offers##description##65051"
         },
         "xdm:customerSupport": {
           "title": "Personalize customer support",
           "description": "Allow customer support to personalize responses/suggestions based on user's interests or behavior",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:customerSupport##title##43991",
+          "meta:descriptionId": "consent-preferences##xdm:customerSupport##description##16361"
         },
         "xdm:thirdPartyOffers": {
           "title": "Personalize ",
           "description": "Personalization of third-party offers/ads displayed on this brand's sites or apps is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:thirdPartyOffers##title##60311",
+          "meta:descriptionId": "consent-preferences##xdm:thirdPartyOffers##description##73081"
         },
         "xdm:thirdPartyContent": {
           "title": "Personalize ",
           "description": "Personalization of third-party content displayed on this brand's sites or apps is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:thirdPartyContent##title##29141",
+          "meta:descriptionId": "consent-preferences##xdm:thirdPartyContent##description##46971"
         },
         "xdm:advertising": {
           "title": "Personalize Ads",
           "description": "Personalization of this brand's ads on third-party sites/apps is permitted",
-          "$ref": "#/definitions/personalization-fields"
+          "$ref": "#/definitions/personalization-fields",
+          "meta:titleId": "consent-preferences##xdm:advertising##title##7361",
+          "meta:descriptionId": "consent-preferences##xdm:advertising##description##70521"
         }
-      }
+      },
+      "meta:titleId": "consent-preferences##xdm:personalizationPreferences##title##46961",
+      "meta:descriptionId": "consent-preferences##xdm:personalizationPreferences##description##39461"
     },
     "xdm:marketingPreferences": {
       "title": "Marketing Preferences",
@@ -265,68 +315,96 @@ Unknown type ``.
             "other": "Other",
             "no_preferred": "No Preferred Channel",
             "unknown": "Unknown"
-          }
+          },
+          "meta:titleId": "consent-preferences##xdm:preferredChannel##title##9111",
+          "meta:descriptionId": "consent-preferences##xdm:preferredChannel##description##71381"
         },
         "xdm:anyMarketing": {
           "title": "General Direct Marketing Preference",
           "description": "Does user permit any type of direct marketing",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:anyMarketing##title##47221",
+          "meta:descriptionId": "consent-preferences##xdm:anyMarketing##description##2031"
         },
         "xdm:email": {
           "title": "Receive email",
           "description": "User agrees to receive email",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:email##title##33641",
+          "meta:descriptionId": "consent-preferences##xdm:email##description##16881"
         },
         "xdm:physicalMail": {
           "title": "Receive physical mail",
           "description": "User agrees to being contacted via traditional/physical mail.",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:physicalMail##title##37781",
+          "meta:descriptionId": "consent-preferences##xdm:physicalMail##description##49641"
         },
         "xdm:pushNotifications": {
           "title": "Receive push notifications",
           "description": "User permits receiving push notifications",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:pushNotifications##title##96881",
+          "meta:descriptionId": "consent-preferences##xdm:pushNotifications##description##34661"
         },
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:sms##title##88271",
+          "meta:descriptionId": "consent-preferences##xdm:sms##description##81701"
         },
         "xdm:phoneCalls": {
           "title": "Receive phone calls",
           "description": "The brand may contact the user via phone",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:phoneCalls##title##77931",
+          "meta:descriptionId": "consent-preferences##xdm:phoneCalls##description##24421"
         },
         "xdm:iotMessages": {
           "title": "Receive IoT messages",
           "description": "It is okay to interact with the user via IoT devices",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:iotMessages##title##20951",
+          "meta:descriptionId": "consent-preferences##xdm:iotMessages##description##8301"
         },
         "xdm:socialMedia": {
           "title": "Receive Social Media Messages",
           "description": "It is okay to send messages to the user on their social media accounts",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:socialMedia##title##99041",
+          "meta:descriptionId": "consent-preferences##xdm:socialMedia##description##7131"
         },
         "xdm:inAppMessages": {
           "title": "Receive in-app messages",
           "description": "User permits messages to be shown within the brands's apps",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:inAppMessages##title##19451",
+          "meta:descriptionId": "consent-preferences##xdm:inAppMessages##description##36771"
         },
         "xdm:inVehicleMessages": {
           "title": "Receive in-vehicle messages",
           "description": "It is okay to interact with the user via technology installed in the user's vehicle",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:inVehicleMessages##title##70951",
+          "meta:descriptionId": "consent-preferences##xdm:inVehicleMessages##description##1621"
         },
         "xdm:inHomeMessages": {
           "title": "Receive in-home messages",
           "description": "It is okay to interact with the user via technology installed in the user's home",
-          "$ref": "#/definitions/marketing-fields"
+          "$ref": "#/definitions/marketing-fields",
+          "meta:titleId": "consent-preferences##xdm:inHomeMessages##title##37591",
+          "meta:descriptionId": "consent-preferences##xdm:inHomeMessages##description##99391"
         }
-      }
+      },
+      "meta:titleId": "consent-preferences##xdm:marketingPreferences##title##37341",
+      "meta:descriptionId": "consent-preferences##xdm:marketingPreferences##description##70941"
     }
   },
   "title": "Consent and Preference Choices",
   "description": "Specific Consent and Preference Options",
+  "meta:titleId": "consent-preferences##xdm:choices##title##90741",
+  "meta:descriptionId": "consent-preferences##xdm:choices##description##39101",
   "simpletype": "complex"
 }
 ```
@@ -357,31 +435,41 @@ Unknown type ``.
       "description": "Version of the Consents and Preferences Schema",
       "type": "string",
       "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{1,4}$",
-      "default": "1.0.0"
+      "default": "1.0.0",
+      "meta:titleId": "consent-preferences##xdm:version##title##93641",
+      "meta:descriptionId": "consent-preferences##xdm:version##description##77631"
     },
     "xdm:timestamp": {
       "title": "Consent/Preferences timestamp",
       "description": "Timestamp of this complete set of user consents and preferences",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "meta:titleId": "consent-preferences##xdm:timestamp##title##15161",
+      "meta:descriptionId": "consent-preferences##xdm:timestamp##description##37371"
     },
     "xdm:source": {
       "title": "Consent/Preferences source",
       "description": "Through which interface did the user provide their choices for this complete set of user consents and preferences",
-      "$ref": "#/definitions/source"
+      "$ref": "#/definitions/source",
+      "meta:titleId": "consent-preferences##xdm:source##title##60551",
+      "meta:descriptionId": "consent-preferences##xdm:source##description##37721"
     },
     "xdm:userIDfromSource": {
       "title": "Source's ID for the user",
       "description": "Source's ID for the user",
       "type": "string",
-      "maxLength": 20
+      "maxLength": 20,
+      "meta:titleId": "consent-preferences##xdm:userIDfromSource##title##81191",
+      "meta:descriptionId": "consent-preferences##xdm:userIDfromSource##description##61601"
     },
     "xdm:userCountryRegionCode": {
       "title": "User Country (and optionally Region) Code",
       "description": "ISO 3166 alpha2 country code or ISO 3166-2 country plus state/province code for use in helping to determine how to interpret consent values",
       "type": "string",
       "maxLength": 6,
-      "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}$"
+      "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}$",
+      "meta:titleId": "consent-preferences##xdm:userCountryRegionCode##title##73111",
+      "meta:descriptionId": "consent-preferences##xdm:userCountryRegionCode##description##98861"
     },
     "xdm:countryRegionSource": {
       "title": "Country/Region Source",
@@ -402,11 +490,15 @@ Unknown type ``.
         "website_location": "Website location or eTLD",
         "inferred": "Inferred",
         "other": "Other"
-      }
+      },
+      "meta:titleId": "consent-preferences##xdm:countryRegionSource##title##49921",
+      "meta:descriptionId": "consent-preferences##xdm:countryRegionSource##description##48111"
     }
   },
   "title": "Consent and Preference Metadata",
   "description": "Metadata that applies to all consents and preferences that don't specify a different value",
+  "meta:titleId": "consent-preferences##xdm:choicesMetadata##title##16751",
+  "meta:descriptionId": "consent-preferences##xdm:choicesMetadata##description##30131",
   "simpletype": "complex"
 }
 ```

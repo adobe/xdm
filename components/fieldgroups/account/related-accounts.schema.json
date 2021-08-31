@@ -22,7 +22,9 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "related-accounts##xdm:relatedAccounts##title##51771",
+          "meta:descriptionId": "related-accounts##xdm:relatedAccounts##description##41871"
         },
         "xdm:relatedAccountKeys": {
           "title": "Related Account Keys",
@@ -30,7 +32,9 @@
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-          }
+          },
+          "meta:titleId": "related-accounts##xdm:relatedAccountKeys##title##80101",
+          "meta:descriptionId": "related-accounts##xdm:relatedAccountKeys##description##40201"
         }
       }
     }
@@ -44,5 +48,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-01-19"
+  "meta:createdDate": "2021-01-19",
+  "meta:titleId": "related-accounts##title##50181",
+  "meta:descriptionId": "related-accounts##description##47861"
 }

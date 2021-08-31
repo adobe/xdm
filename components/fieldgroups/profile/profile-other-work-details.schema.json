@@ -19,12 +19,16 @@
         "xdm:otherAddress": {
           "title": "Other Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Other/Alternate postal address of the person."
+          "description": "Other/Alternate postal address of the person.",
+          "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##76831",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##11581"
         },
         "xdm:otherPhone": {
           "title": "Other Phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Other/Alternate phone number of the person."
+          "description": "Other/Alternate phone number of the person.",
+          "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##93741",
+          "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##65191"
         },
         "xdm:extendedWorkDetails": {
           "type": "object",
@@ -37,19 +41,26 @@
                 "xdm:name": {
                   "title": "Assistant Name",
                   "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                  "description": "Person's assistant full name."
+                  "description": "Person's assistant full name.",
+                  "meta:titleId": "profile-other-work-details##xdm:name##title##82441",
+                  "meta:descriptionId": "profile-other-work-details##xdm:name##description##33621"
                 },
                 "xdm:phone": {
                   "title": "Assistant Phone",
                   "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                  "description": "Person's assistant phone number."
+                  "description": "Person's assistant phone number.",
+                  "meta:titleId": "profile-other-work-details##xdm:phone##title##53781",
+                  "meta:descriptionId": "profile-other-work-details##xdm:phone##description##81491"
                 }
-              }
+              },
+              "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title##67001"
             },
             "xdm:reportsToID": {
               "title": "Reports To Id",
               "description": "Identifier of the Reporting Manager.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "profile-other-work-details##xdm:reportsToID##title##46931",
+              "meta:descriptionId": "profile-other-work-details##xdm:reportsToID##description##11481"
             },
             "xdm:departments": {
               "title": "Department Name",
@@ -57,20 +68,27 @@
               "type": "array",
               "items": {
                 "type": "string"
-              }
+              },
+              "meta:titleId": "profile-other-work-details##xdm:departments##title##70181",
+              "meta:descriptionId": "profile-other-work-details##xdm:departments##description##66861"
             },
             "xdm:jobTitle": {
               "title": "Job Title",
               "description": "Job title of the person.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "profile-other-work-details##xdm:jobTitle##title##53071",
+              "meta:descriptionId": "profile-other-work-details##xdm:jobTitle##description##68711"
             },
             "xdm:photoUrl": {
               "title": "Photo Url",
               "description": "Photo url of the person.",
               "type": "string",
-              "format": "uri"
+              "format": "uri",
+              "meta:titleId": "profile-other-work-details##xdm:photoUrl##title##73701",
+              "meta:descriptionId": "profile-other-work-details##xdm:photoUrl##description##32771"
             }
-          }
+          },
+          "meta:titleId": "profile-other-work-details##xdm:extendedWorkDetails##title##87751"
         }
       }
     }
@@ -84,5 +102,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2020-08-18"
+  "meta:createdDate": "2020-08-18",
+  "meta:titleId": "profile-other-work-details##title##39711",
+  "meta:descriptionId": "profile-other-work-details##description##90111"
 }

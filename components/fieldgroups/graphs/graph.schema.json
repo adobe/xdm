@@ -20,35 +20,47 @@
         "xdm:graphId": {
           "title": "Graph Identifier",
           "description": "The unique identifier of the identity associated with this graph.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:graphId##title##971",
+          "meta:descriptionId": "graph##xdm:graphId##description##80361"
         },
         "xdm:label": {
           "title": "Graph Label",
           "description": "Graph label.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:label##title##131",
+          "meta:descriptionId": "graph##xdm:label##description##29611"
         },
         "xdm:directed": {
           "title": "Directed Graph Indicator",
           "description": "Directed graph indicator.",
           "type": "boolean",
-          "default": true
+          "default": true,
+          "meta:titleId": "graph##xdm:directed##title##92241",
+          "meta:descriptionId": "graph##xdm:directed##description##16861"
         },
         "xdm:graphType": {
           "title": "Graph Type",
           "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "graph##xdm:graphType##title##32771",
+          "meta:descriptionId": "graph##xdm:graphType##description##22421"
         },
         "xdm:firstCreatedTimestamp": {
           "title": "Graph Created Date And Time",
           "description": "Time and date this graph was created.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "graph##xdm:firstCreatedTimestamp##title##13721",
+          "meta:descriptionId": "graph##xdm:firstCreatedTimestamp##description##34671"
         },
         "xdm:lastModifiedTimestamp": {
           "title": "Graph Last Modified Date And Time",
           "description": "Time and date this graph was last modified.",
           "type": "string",
-          "format": "date-time"
+          "format": "date-time",
+          "meta:titleId": "graph##xdm:lastModifiedTimestamp##title##29521",
+          "meta:descriptionId": "graph##xdm:lastModifiedTimestamp##description##64601"
         }
       }
     }
@@ -65,5 +77,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "graph##title##9301",
+  "meta:descriptionId": "graph##description##46971"
 }

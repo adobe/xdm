@@ -22,27 +22,37 @@
         "xdm:homeAddress": {
           "title": "Home address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "A home postal address."
+          "description": "A home postal address.",
+          "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
+          "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241"
         },
         "xdm:personalEmail": {
           "title": "Personal email",
           "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-          "description": "A personal email address."
+          "description": "A personal email address.",
+          "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
+          "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181"
         },
         "xdm:homePhone": {
           "title": "Home phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Home phone number."
+          "description": "Home phone number.",
+          "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
+          "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111"
         },
         "xdm:mobilePhone": {
           "title": "Mobile phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Mobile phone number."
+          "description": "Mobile phone number.",
+          "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
+          "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801"
         },
         "xdm:faxPhone": {
           "title": "Fax phone",
           "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-          "description": "Fax phone number."
+          "description": "Fax phone number.",
+          "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
+          "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951"
         }
       }
     }
@@ -56,5 +66,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-personal-details##title##17051",
+  "meta:descriptionId": "profile-personal-details##description##5771"
 }

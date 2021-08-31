@@ -22,7 +22,9 @@
                     "title": "Proposition Identifier",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "A unique identifier for the proposition event referenced by another \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers."
+                    "description": "A unique identifier for the proposition event referenced by another \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.",
+                    "meta:titleId": "proposition##https://ns.adobe.com/experience/decisioning/propositionID##title##84981",
+                    "meta:descriptionId": "proposition##https://ns.adobe.com/experience/decisioning/propositionID##description##35771"
                 }
             }
         }
@@ -39,6 +41,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "proposition##title##36671",
+    "meta:descriptionId": "proposition##description##5801",
     "examples": [
         {
             "xdm:identityMap": {

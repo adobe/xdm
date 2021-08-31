@@ -22,12 +22,16 @@
                 "dsp:advertiserKey": {
                     "title": "Advertiser Key",
                     "type": "string",
-                    "description": "Unique external identifier for the advertiser."
+                    "description": "Unique external identifier for the advertiser.",
+                    "meta:titleId": "advertiser##dsp:advertiserKey##title##16621",
+                    "meta:descriptionId": "advertiser##dsp:advertiserKey##description##75791"
                 },
                 "dsp:advertiserName": {
                     "title": "Advertiser Name",
                     "type": "string",
-                    "description": "The name of the advertiser."
+                    "description": "The name of the advertiser.",
+                    "meta:titleId": "advertiser##dsp:advertiserName##title##7791",
+                    "meta:descriptionId": "advertiser##dsp:advertiserName##description##25281"
                 },
                 "dsp:advertiserStatus": {
                     "title": "Advertiser Status",
@@ -42,17 +46,23 @@
                         "Active": "Active",
                         "Inactive": "Inactive",
                         "Deleted": "Deleted"
-                    }
+                    },
+                    "meta:titleId": "advertiser##dsp:advertiserStatus##title##82411",
+                    "meta:descriptionId": "advertiser##dsp:advertiserStatus##description##30801"
                 },
                 "dsp:advertiserUrl": {
                     "title": "Advertiser Url",
                     "type": "string",
-                    "description": "Advertiser Url."
+                    "description": "Advertiser Url.",
+                    "meta:titleId": "advertiser##dsp:advertiserUrl##title##56601",
+                    "meta:descriptionId": "advertiser##dsp:advertiserUrl##description##13961"
                 },
                 "dsp:accountId": {
                     "title": "Account Identifier",
                     "type": "string",
-                    "description": "The identifier of the account associated with this advertiser.The same accountId can serve multiple advertisers in case it represents an advertising agency."
+                    "description": "The identifier of the account associated with this advertiser.The same accountId can serve multiple advertisers in case it represents an advertising agency.",
+                    "meta:titleId": "advertiser##dsp:accountId##title##5811",
+                    "meta:descriptionId": "advertiser##dsp:accountId##description##36231"
                 }
             }
         }
@@ -69,6 +79,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "advertiser##title##36101",
+    "meta:descriptionId": "advertiser##description##17981",
     "examples": [
         {
             "@id": "12",

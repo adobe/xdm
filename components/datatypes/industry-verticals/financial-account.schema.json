@@ -17,23 +17,31 @@
         "xdm:currentAccountBalance": {
           "title": "Current Financial Account Balance",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "description": "Balance in the account."
+          "description": "Balance in the account.",
+          "meta:titleId": "financial-account##xdm:currentAccountBalance##title##93831",
+          "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##63431"
         },
         "xdm:financialAccountID": {
           "title": "Financial Account ID",
           "type": "string",
-          "description": "Current account balance for a single user account."
+          "description": "Current account balance for a single user account.",
+          "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
+          "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
         },
         "xdm:financialAccountName": {
           "title": "Financial Account Name",
           "type": "string",
-          "description": "Name assigned to the financial account."
+          "description": "Name assigned to the financial account.",
+          "meta:titleId": "financial-account##xdm:financialAccountName##title##12351",
+          "meta:descriptionId": "financial-account##xdm:financialAccountName##description##58581"
         },
         "xdm:financialAccountType": {
           "title": "Financial Account Type",
           "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
-          "description": "Describes the type of finanical account, such as checking, savings, or retirement."
+          "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
+          "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
+          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
         }
       }
     }
@@ -44,5 +52,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "financial-account##title##1381",
+  "meta:descriptionId": "financial-account##description##18451"
 }

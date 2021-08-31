@@ -23,42 +23,58 @@
         "xdm:opportunityID": {
           "title": "Opportunity ID",
           "description": "Unique ID of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityID##title##121",
+          "meta:descriptionId": "opportunity##xdm:opportunityID##description##45451"
         },
         "xdm:opportunityKey": {
           "title": "Opportunity Key",
           "description": "Unique composite identifier for the Opportunity.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "opportunity##xdm:opportunityKey##title##89081",
+          "meta:descriptionId": "opportunity##xdm:opportunityKey##description##49971"
         },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityName##title##26331",
+          "meta:descriptionId": "opportunity##xdm:opportunityName##description##56091"
         },
         "xdm:opportunityDescription": {
           "title": "Opportunity Description",
           "description": "Description of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityDescription##title##77021",
+          "meta:descriptionId": "opportunity##xdm:opportunityDescription##description##86851"
         },
         "xdm:opportunityType": {
           "title": "Opportunity Type",
           "description": "Type of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityType##title##90401",
+          "meta:descriptionId": "opportunity##xdm:opportunityType##description##31291"
         },
         "xdm:opportunityStage": {
           "title": "Opportunity Stage",
           "description": "Sales stage of the opportunity.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:opportunityStage##title##71451",
+          "meta:descriptionId": "opportunity##xdm:opportunityStage##description##65591"
         },
         "xdm:accountID": {
           "title": "Account ID",
           "description": "Unique ID of the account this opportunity is associated with.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "opportunity##xdm:accountID##title##77231",
+          "meta:descriptionId": "opportunity##xdm:accountID##description##71091"
         },
         "xdm:accountKey": {
           "title": "Account Key",
           "description": "Unique composite identifier of the account this opportunity is associated with.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "opportunity##xdm:accountKey##title##83401",
+          "meta:descriptionId": "opportunity##xdm:accountKey##description##62551"
         }
       }
     }
@@ -77,5 +93,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "opportunity##title##26231",
+  "meta:descriptionId": "opportunity##description##20011"
 }

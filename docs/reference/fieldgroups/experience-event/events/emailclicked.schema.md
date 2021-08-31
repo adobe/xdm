@@ -268,9 +268,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "emailclicked##xdm:userAgent##title##20111",
+      "meta:descriptionId": "emailclicked##xdm:userAgent##description##44791"
     }
   },
+  "meta:titleId": "emailclicked##xdm:browserDetails##title##25431",
+  "meta:descriptionId": "emailclicked##xdm:browserDetails##description##96591",
   "simpletype": "`object`"
 }
 ```
@@ -348,9 +352,12 @@ Unknown type `object`.
     "xdm:linkID": {
       "title": "Link ID",
       "type": "string",
-      "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email."
+      "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
+      "meta:titleId": "emailclicked##xdm:linkID##title##99311",
+      "meta:descriptionId": "emailclicked##xdm:linkID##description##94491"
     }
   },
+  "meta:titleId": "emailclicked##xdm:webInteraction##title##23561",
   "simpletype": "`object`"
 }
 ```

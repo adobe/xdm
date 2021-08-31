@@ -30,14 +30,19 @@
                         "xdm:cardApplicationComparisons": {
                             "title": "Card Comparisons",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/comparisons",
-                            "description": "Extension of comparison data type."
+                            "description": "Extension of comparison data type.",
+                            "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##title##33651",
+                            "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##description##37771"
                         },
                         "xdm:cardApplicationSteps": {
                             "title": "Card Application Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/form-applications",
-                            "description": "Extension of form application data type."
+                            "description": "Extension of form application data type.",
+                            "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationSteps##title##42591",
+                            "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationSteps##description##52291"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-card-application-details##xdm:personalFinances##description##34921"
                 }
             }
         }
@@ -49,6 +54,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "experienceevent-card-application-details##title##48501",
+    "meta:descriptionId": "experienceevent-card-application-details##description##5521",
     "examples": [
         {
             "xdm:personalFinances": {

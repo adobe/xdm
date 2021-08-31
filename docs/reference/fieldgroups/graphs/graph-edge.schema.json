@@ -28,27 +28,37 @@
                             "xdm:edgeId": {
                                 "title": "Edge Identifier",
                                 "description": "The unique identifier of the identity associated with this graph edge.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-edge##xdm:edgeId##title##10981",
+                                "meta:descriptionId": "graph-edge##xdm:edgeId##description##1831"
                             },
                             "xdm:sourceNodeId": {
                                 "title": "Source Node Id",
                                 "description": "Source node identifier.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-edge##xdm:sourceNodeId##title##69711",
+                                "meta:descriptionId": "graph-edge##xdm:sourceNodeId##description##42931"
                             },
                             "xdm:targetNodeId": {
                                 "title": "Target Node Id",
                                 "description": "Target node identifier.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-edge##xdm:targetNodeId##title##40051",
+                                "meta:descriptionId": "graph-edge##xdm:targetNodeId##description##24301"
                             },
                             "xdm:relation": {
                                 "title": "Relation Description",
                                 "description": "Relation description.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-edge##xdm:relation##title##44291",
+                                "meta:descriptionId": "graph-edge##xdm:relation##description##62441"
                             },
                             "xdm:label": {
                                 "title": "Label",
                                 "description": "Additional description.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-edge##xdm:label##title##79831",
+                                "meta:descriptionId": "graph-edge##xdm:label##description##21991"
                             },
                             "xdm:dataProvider": {
                                 "type": "array",
@@ -59,31 +69,41 @@
                                         "xdm:dataProviderId": {
                                             "title": "Data Provider Id",
                                             "description": "Identifier of the Data Provider..",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "meta:titleId": "graph-edge##xdm:dataProviderId##title##76961",
+                                            "meta:descriptionId": "graph-edge##xdm:dataProviderId##description##46691"
                                         },
                                         "xdm:firstSeenTimestamp": {
                                             "title": "Relationship Observed Time and Date",
                                             "description": "Time and date the relation was first observed.",
                                             "type": "string",
-                                            "format": "date-time"
+                                            "format": "date-time",
+                                            "meta:titleId": "graph-edge##xdm:firstSeenTimestamp##title##53631",
+                                            "meta:descriptionId": "graph-edge##xdm:firstSeenTimestamp##description##40041"
                                         },
                                         "xdm:lastSeenTimestamp": {
                                             "title": "Relationship Observed most recent Time and Date",
                                             "description": "Time and date the relation was last observed.",
                                             "type": "string",
-                                            "format": "date-time"
+                                            "format": "date-time",
+                                            "meta:titleId": "graph-edge##xdm:lastSeenTimestamp##title##39571",
+                                            "meta:descriptionId": "graph-edge##xdm:lastSeenTimestamp##description##38581"
                                         },
                                         "xdm:trusted": {
                                             "title": "Trusted Data Source Flag",
                                             "description": "Indicator of whether the data source is trusted or not.",
                                             "type": "boolean",
-                                            "default": true
+                                            "default": true,
+                                            "meta:titleId": "graph-edge##xdm:trusted##title##49351",
+                                            "meta:descriptionId": "graph-edge##xdm:trusted##description##71651"
                                         },
                                         "xdm:directed": {
                                             "title": "Directed Or Birectional",
                                             "description": "Nature of graph whether it is directed or birectional.",
                                             "type": "boolean",
-                                            "default": false
+                                            "default": false,
+                                            "meta:titleId": "graph-edge##xdm:directed##title##60451",
+                                            "meta:descriptionId": "graph-edge##xdm:directed##description##26901"
                                         },
                                         "xdm:relationType": {
                                             "title": "Relationship Type",
@@ -100,34 +120,46 @@
                                                 "online_probabilistic": "Online Probabilistic",
                                                 "offline_deterministic": "Offline Deterministic",
                                                 "offline_probabilistic": "Offline Probabilistic"
-                                            }
+                                            },
+                                            "meta:titleId": "graph-edge##xdm:relationType##title##18701",
+                                            "meta:descriptionId": "graph-edge##xdm:relationType##description##16451"
                                         },
                                         "xdm:frequency": {
                                             "title": "Frequency",
                                             "description": "Frequency of the observed relationship.",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "meta:titleId": "graph-edge##xdm:frequency##title##51471",
+                                            "meta:descriptionId": "graph-edge##xdm:frequency##description##67961"
                                         },
                                         "xdm:score": {
                                             "title": "Relationship Score",
                                             "description": "Imputed score of relationship.",
-                                            "type": "number"
+                                            "type": "number",
+                                            "meta:titleId": "graph-edge##xdm:score##title##85551",
+                                            "meta:descriptionId": "graph-edge##xdm:score##description##93751"
                                         },
                                         "xdm:summedRecency": {
                                             "title": "Recency Score",
                                             "description": "Recency score of relationship.",
-                                            "type": "integer"
+                                            "type": "integer",
+                                            "meta:titleId": "graph-edge##xdm:summedRecency##title##81231",
+                                            "meta:descriptionId": "graph-edge##xdm:summedRecency##description##13181"
                                         },
                                         "xdm:lastCalculatedTimestamp": {
                                             "title": "Last Calculated Data And Time",
                                             "description": "Time and date the relationship score was last calculated.",
                                             "type": "string",
-                                            "format": "date-time"
+                                            "format": "date-time",
+                                            "meta:titleId": "graph-edge##xdm:lastCalculatedTimestamp##title##90871",
+                                            "meta:descriptionId": "graph-edge##xdm:lastCalculatedTimestamp##description##34201"
                                         }
                                     }
                                 }
                             }
                         }
-                    }
+                    },
+                    "meta:titleId": "graph-edge##xdm:edges##title##94041",
+                    "meta:descriptionId": "graph-edge##xdm:edges##description##89181"
                 }
             }
         }
@@ -145,6 +177,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "graph-edge##title##42021",
+    "meta:descriptionId": "graph-edge##description##59681",
     "examples": [
         {
             "xdm:edges": [

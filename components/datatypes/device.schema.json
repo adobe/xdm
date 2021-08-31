@@ -17,7 +17,9 @@
         "xdm:typeID": {
           "title": "Type identifier",
           "type": "string",
-          "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used."
+          "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used.",
+          "meta:titleId": "device##xdm:typeID##title##72541",
+          "meta:descriptionId": "device##xdm:typeID##description##38231"
         },
         "xdm:typeIDService": {
           "title": "Type identifier service",
@@ -27,7 +29,9 @@
           "meta:enum": {
             "https://ns.adobe.com/xdm/external/deviceatlas": "DeviceAtlas",
             "https://ns.adobe.com/xdm/external/adobecampaign": "Adobe Campaign"
-          }
+          },
+          "meta:titleId": "device##xdm:typeIDService##title##13371",
+          "meta:descriptionId": "device##xdm:typeIDService##description##9701"
         },
         "xdm:type": {
           "title": "Type",
@@ -44,37 +48,51 @@
             "mediaplayer": "Media player",
             "computers": "Computers",
             "tv screens": "TV screens"
-          }
+          },
+          "meta:titleId": "device##xdm:type##title##28851",
+          "meta:descriptionId": "device##xdm:type##description##29801"
         },
         "xdm:manufacturer": {
           "title": "Manufacturer",
           "type": "string",
-          "description": "The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone."
+          "description": "The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone.",
+          "meta:titleId": "device##xdm:manufacturer##title##97881",
+          "meta:descriptionId": "device##xdm:manufacturer##description##5531"
         },
         "xdm:model": {
           "title": "Model",
           "type": "string",
-          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone."
+          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+          "meta:titleId": "device##xdm:model##title##21341",
+          "meta:descriptionId": "device##xdm:model##description##2541"
         },
         "xdm:modelNumber": {
           "title": "Model number",
           "type": "string",
-          "description": "The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale."
+          "description": "The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.",
+          "meta:titleId": "device##xdm:modelNumber##title##12501",
+          "meta:descriptionId": "device##xdm:modelNumber##description##36441"
         },
         "xdm:screenHeight": {
           "title": "Screen height",
           "type": "integer",
-          "description": "The number of vertical pixels of the device's active display in the default orientation."
+          "description": "The number of vertical pixels of the device's active display in the default orientation.",
+          "meta:titleId": "device##xdm:screenHeight##title##17711",
+          "meta:descriptionId": "device##xdm:screenHeight##description##7571"
         },
         "xdm:screenWidth": {
           "title": "Screen width",
           "type": "integer",
-          "description": "The number of horizontal pixels of the device's active display in the default orientation."
+          "description": "The number of horizontal pixels of the device's active display in the default orientation.",
+          "meta:titleId": "device##xdm:screenWidth##title##82981",
+          "meta:descriptionId": "device##xdm:screenWidth##description##43911"
         },
         "xdm:colorDepth": {
           "title": "Color depth",
           "type": "integer",
-          "description": "The number of colors the display is able to represent."
+          "description": "The number of colors the display is able to represent.",
+          "meta:titleId": "device##xdm:colorDepth##title##63201",
+          "meta:descriptionId": "device##xdm:colorDepth##description##72471"
         },
         "xdm:screenOrientation": {
           "title": "Screen orientation",
@@ -84,17 +102,23 @@
           "meta:enum": {
             "portrait": "Portrait",
             "landscape": "Landscape"
-          }
+          },
+          "meta:titleId": "device##xdm:screenOrientation##title##87341",
+          "meta:descriptionId": "device##xdm:screenOrientation##description##5211"
         },
         "xdm:isBackgroundPushEnabled": {
           "title": "Background Push Enabled Flag",
           "type": "boolean",
-          "description": "For devices like mobile , this tracks the system background push enabled permision status."
+          "description": "For devices like mobile , this tracks the system background push enabled permision status.",
+          "meta:titleId": "device##xdm:isBackgroundPushEnabled##title##34541",
+          "meta:descriptionId": "device##xdm:isBackgroundPushEnabled##description##63031"
         },
         "xdm:isLocationEnabled": {
           "title": "Location Enabled Flag",
           "type": "boolean",
-          "description": "Indicates whether or not the device has location services enabled."
+          "description": "Indicates whether or not the device has location services enabled.",
+          "meta:titleId": "device##xdm:isLocationEnabled##title##88291",
+          "meta:descriptionId": "device##xdm:isLocationEnabled##description##89201"
         },
         "xdm:locationPermission": {
           "title": "Location Permission",
@@ -106,12 +130,16 @@
             "ALWAYS_ALLOWED",
             "FOREGROUND_ALLOWED",
             "UNPROMPTED"
-          ]
+          ],
+          "meta:titleId": "device##xdm:locationPermission##title##6511",
+          "meta:descriptionId": "device##xdm:locationPermission##description##36201"
         },
         "xdm:isPushOptIn": {
           "title": "Push Opt In Flag",
           "type": "boolean",
-          "description": "Indicates whether or not the device opted-in to receive push notifications."
+          "description": "Indicates whether or not the device opted-in to receive push notifications.",
+          "meta:titleId": "device##xdm:isPushOptIn##title##24411",
+          "meta:descriptionId": "device##xdm:isPushOptIn##description##33931"
         }
       }
     }
@@ -125,5 +153,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "device##title##6881",
+  "meta:descriptionId": "device##description##69951"
 }

@@ -42,7 +42,9 @@
                                 "xdm:id": {
                                     "title": "Identifier",
                                     "type": "string",
-                                    "description": "Identity of the consumer in the related namespace."
+                                    "description": "Identity of the consumer in the related namespace.",
+                                    "meta:titleId": "profile-all##xdm:id##title##64621",
+                                    "meta:descriptionId": "profile-all##xdm:id##description##5311"
                                 },
                                 "xdm:associatedTimeRanges": {
                                     "type": "array",
@@ -54,16 +56,21 @@
                                                 "title": "Start time",
                                                 "type": "string",
                                                 "format": "date-time",
-                                                "description": "The timestamp for when the identity association started."
+                                                "description": "The timestamp for when the identity association started.",
+                                                "meta:titleId": "profile-all##xdm:start##title##77201",
+                                                "meta:descriptionId": "profile-all##xdm:start##description##75011"
                                             },
                                             "xdm:end": {
                                                 "title": "End time",
                                                 "type": "string",
                                                 "format": "date-time",
-                                                "description": "The timestamp for when the identity association ended."
+                                                "description": "The timestamp for when the identity association ended.",
+                                                "meta:titleId": "profile-all##xdm:end##title##14431",
+                                                "meta:descriptionId": "profile-all##xdm:end##description##70561"
                                             }
                                         }
-                                    }
+                                    },
+                                    "meta:descriptionId": "profile-all##xdm:associatedTimeRanges##description##63381"
                                 }
                             }
                         }
@@ -103,6 +110,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "profile-all##title##8161",
+    "meta:descriptionId": "profile-all##description##55071",
     "examples": [
         {
             "xdm:timeSeriesEvents": [

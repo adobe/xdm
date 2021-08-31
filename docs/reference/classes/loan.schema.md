@@ -299,6 +299,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `student` | Student |
 | `automobile` | Automobile |
 | `mortgage` | Mortgage |
+| `meta:titleId` | loan##meta:enum##title##28231 |
 
 
 

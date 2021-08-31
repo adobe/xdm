@@ -22,32 +22,44 @@
                 "xdm:campaignMemberID": {
                     "title": "Campaign Member ID",
                     "description": "Campaign Member unique identifer.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
+                    "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351"
                 },
                 "xdm:campaignMemberKey": {
                     "title": "Campaign Member Key",
                     "description": "Unique composite identifer of the campaign member.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "campaign-member##xdm:campaignMemberKey##title##46511",
+                    "meta:descriptionId": "campaign-member##xdm:campaignMemberKey##description##6921"
                 },
                 "xdm:campaignID": {
                     "title": "Campaign ID",
                     "description": "Campaign Unique Identifer.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
+                    "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741"
                 },
                 "xdm:campaignKey": {
                     "title": "Campaign Key",
                     "description": "Unique composite identifer of the campaign.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "campaign-member##xdm:campaignKey##title##86721",
+                    "meta:descriptionId": "campaign-member##xdm:campaignKey##description##65531"
                 },
                 "xdm:personID": {
                     "title": "Person ID",
                     "description": "Person unique identifier.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "campaign-member##xdm:personID##title##80381",
+                    "meta:descriptionId": "campaign-member##xdm:personID##description##74641"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
                     "description": "Unique composite identifier of the person.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "campaign-member##xdm:personKey##title##17441",
+                    "meta:descriptionId": "campaign-member##xdm:personKey##description##78901"
                 }
             }
         }
@@ -65,6 +77,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-08-18",
+    "meta:titleId": "campaign-member##title##30961",
+    "meta:descriptionId": "campaign-member##description##56301",
     "examples": [
         {
             "xdm:campaignMemberID": "1",

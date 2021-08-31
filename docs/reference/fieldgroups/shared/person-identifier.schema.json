@@ -17,12 +17,16 @@
                 "xdm:personID": {
                     "title": "Person ID",
                     "description": "Person unique identifier.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "person-identifier##xdm:personID##title##75321",
+                    "meta:descriptionId": "person-identifier##xdm:personID##description##61151"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
                     "description": "Unique composite identifier of the Person.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "person-identifier##xdm:personKey##title##34821",
+                    "meta:descriptionId": "person-identifier##xdm:personKey##description##12581"
                 }
             }
         }
@@ -34,6 +38,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "person-identifier##title##62361",
+    "meta:descriptionId": "person-identifier##description##76761",
     "examples": [
         {
             "xdm:personID": "gjukoyi1234"

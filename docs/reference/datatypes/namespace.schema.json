@@ -17,7 +17,9 @@
                 "xdm:code": {
                     "title": "Code",
                     "type": "string",
-                    "description": "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing."
+                    "description": "The code is a human readable identifier for the namespace and can be used to request the technical namespace id which is used for identity graph processing.",
+                    "meta:titleId": "namespace##xdm:code##title##28651",
+                    "meta:descriptionId": "namespace##xdm:code##description##26231"
                 }
             },
             "required": [
@@ -35,6 +37,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "namespace##title##39991",
+    "meta:descriptionId": "namespace##description##87491",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/namespace/12345",

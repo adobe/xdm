@@ -25,7 +25,9 @@
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/xdm/data/time-series"
-                    }
+                    },
+                    "meta:titleId": "record-timeseries-events##xdm:timeSeriesEvents##title##24871",
+                    "meta:descriptionId": "record-timeseries-events##xdm:timeSeriesEvents##description##28621"
                 }
             }
         }
@@ -40,6 +42,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "record-timeseries-events##title##5771",
+    "meta:descriptionId": "record-timeseries-events##description##56861",
     "examples": [
         {
             "xdm:timeSeriesEvents": [

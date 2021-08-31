@@ -18,22 +18,30 @@
                 "xdm:sourceType": {
                     "title": "Source Type",
                     "type": "string",
-                    "description": "Instance or Organization Id of the source data."
+                    "description": "Instance or Organization Id of the source data.",
+                    "meta:titleId": "b2b-source##xdm:sourceType##title##56201",
+                    "meta:descriptionId": "b2b-source##xdm:sourceType##description##31691"
                 },
                 "xdm:sourceInstanceID": {
                     "title": "Source Instance ID",
                     "type": "string",
-                    "description": "Name of the platform with the source data."
+                    "description": "Name of the platform with the source data.",
+                    "meta:titleId": "b2b-source##xdm:sourceInstanceID##title##36261",
+                    "meta:descriptionId": "b2b-source##xdm:sourceInstanceID##description##99011"
                 },
                 "xdm:sourceID": {
                     "title": "Source ID",
                     "type": "string",
-                    "description": "Identifier of the record from the source data."
+                    "description": "Identifier of the record from the source data.",
+                    "meta:titleId": "b2b-source##xdm:sourceID##title##93071",
+                    "meta:descriptionId": "b2b-source##xdm:sourceID##description##33021"
                 },
                 "xdm:sourceKey": {
                     "title": "Source Key",
                     "type": "string",
-                    "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId."
+                    "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId.",
+                    "meta:titleId": "b2b-source##xdm:sourceKey##title##17431",
+                    "meta:descriptionId": "b2b-source##xdm:sourceKey##description##99891"
                 }
             }
         }
@@ -48,6 +56,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "b2b-source##title##53031",
+    "meta:descriptionId": "b2b-source##description##361",
     "examples": [
         {
             "xdm:ID": "1234567",

@@ -22,7 +22,9 @@
                     "title": "Destination Schema",
                     "type": "string",
                     "format": "uri",
-                    "description": "The destination schema this descriptor applies to"
+                    "description": "The destination schema this descriptor applies to",
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title##60991",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description##48041"
                 },
                 "xdm:destinationProperty": {
                     "title": "Destination Property",
@@ -37,44 +39,60 @@
                             }
                         }
                     ],
-                    "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'"
+                    "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'",
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title##10001",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description##81261"
                 },
                 "xdm:destinationItem": {
                     "title": "Destination Item",
                     "description": "When present, the selector used to match a specific item in the array pointed to by destProperty",
-                    "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector"
+                    "$ref": "https://ns.adobe.com/xdm/common/descriptors/itemselector#/definitions/selector",
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationItem##title##32181",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationItem##description##43831"
                 },
                 "xdm:destinationVersion": {
                     "title": "Destination Version",
                     "type": "number",
-                    "description": "Major version being referenced."
+                    "description": "Major version being referenced.",
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title##57311",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description##1961"
                 },
                 "xdm:sourceValue": {
                     "title": "Source Value",
                     "type": "string",
-                    "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations."
+                    "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.",
+                    "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title##57011",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description##99021"
                 },
                 "xdm:sourceNamespace": {
                     "title": "Source Property Namespace",
                     "type": "string",
-                    "description": "Identity Service namespace associated with the source property"
+                    "description": "Identity Service namespace associated with the source property",
+                    "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title##84921",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description##43881"
                 },
                 "xdm:destinationNamespace": {
                     "title": "Source Property Namespace",
                     "type": "string",
-                    "description": "Identity Service namespace associated with the source property"
+                    "description": "Identity Service namespace associated with the source property",
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title##30751",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description##28981"
                 },
                 "xdm:sourceToDestinationTitle": {
                     "title": "Source to Destination Title",
                     "type": "string",
                     "description": "Provides a user friendly title for the source->destination edge",
-                    "maxLength": 35
+                    "maxLength": 35,
+                    "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title##36921",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description##3091"
                 },
                 "xdm:destinationToSourceTitle": {
                     "title": "Destination to Source Title",
                     "type": "string",
                     "description": "Provides a user friendly title for the destination->source edge",
-                    "maxLength": 35
+                    "maxLength": 35,
+                    "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##38891",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##45391"
                 },
                 "xdm:cardinality": {
                     "title": "Relationship Cardinality",
@@ -83,7 +101,9 @@
                     "enum": [
                         "M:1"
                     ],
-                    "default": "M:1"
+                    "default": "M:1",
+                    "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##16731",
+                    "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##7721"
                 }
             },
             "oneOf": [
@@ -114,6 +134,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "relationshipdescriptor##title##50231",
+    "meta:descriptionId": "relationshipdescriptor##description##23281",
     "examples": [
         {
             "@id": "https://example.com/descriptors/1",

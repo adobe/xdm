@@ -28,24 +28,33 @@
                         "xdm:mailingID": {
                             "title": "Mailing ID",
                             "type": "string",
-                            "description": "Unique ID of the email asset."
+                            "description": "Unique ID of the email asset.",
+                            "meta:titleId": "emaildelivered##xdm:mailingID##title##1171",
+                            "meta:descriptionId": "emaildelivered##xdm:mailingID##description##20651"
                         },
                         "xdm:mailingName": {
                             "title": "Mailing Name",
                             "type": "string",
-                            "description": "Name of the email asset."
+                            "description": "Name of the email asset.",
+                            "meta:titleId": "emaildelivered##xdm:mailingName##title##7201",
+                            "meta:descriptionId": "emaildelivered##xdm:mailingName##description##43781"
                         },
                         "xdm:testVariantID": {
                             "title": "Test Variant ID",
                             "type": "string",
-                            "description": "Unique ID of the test variant of the email asset."
+                            "description": "Unique ID of the test variant of the email asset.",
+                            "meta:titleId": "emaildelivered##xdm:testVariantID##title##29741",
+                            "meta:descriptionId": "emaildelivered##xdm:testVariantID##description##62391"
                         },
                         "xdm:testVariantName": {
                             "title": "Test Variant Name",
                             "type": "string",
-                            "description": "Friendly name of the test variant of the email asset."
+                            "description": "Friendly name of the test variant of the email asset.",
+                            "meta:titleId": "emaildelivered##xdm:testVariantName##title##5731",
+                            "meta:descriptionId": "emaildelivered##xdm:testVariantName##description##94021"
                         }
-                    }
+                    },
+                    "meta:titleId": "emaildelivered##xdm:directMarketing##title##68751"
                 }
             }
         }
@@ -57,6 +66,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-12-02",
+    "meta:titleId": "emaildelivered##title##9101",
+    "meta:descriptionId": "emaildelivered##description##41141",
     "examples": [
         {}
     ]

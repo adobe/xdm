@@ -12,45 +12,60 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["telecom"]
+    "industry": [
+      "telecom"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
   "definitions": {
     "device-trade-in-details": {
       "properties": {
         "xdm:deviceTradeInDetails": {
           "type": "object",
-		  "description": "Device activation, configuration, and trade-in details.",
+          "description": "Device activation, configuration, and trade-in details.",
           "properties": {
             "xdm:deviceTradeIn": {
               "title": "Steps",
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
-              "meta:status": "deprecated"
+              "meta:status": "deprecated",
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##title##63311",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##description##18371"
             },
             "xdm:originalDeviceID": {
               "title": "Original Device ID",
               "type": "string",
-              "description": "ID for the device being traded."
+              "description": "ID for the device being traded.",
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##34481",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##51821"
             },
             "xdm:newDeviceID": {
               "title": "New Device ID",
               "type": "string",
-              "description": "ID for the new device being traded for."
+              "description": "ID for the new device being traded for.",
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:newDeviceID##title##64771",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:newDeviceID##description##93571"
             },
             "xdm:tradeInValue": {
               "title": "Trade In Value",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-              "description": "Value of the device being traded."
+              "description": "Value of the device being traded.",
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:tradeInValue##title##89341",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:tradeInValue##description##97491"
             }
-          }
+          },
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeInDetails##description##97211"
         },
         "xdm:deviceActivation": {
           "title": "Device Activation",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
-          "meta:status": "deprecated"
+          "meta:status": "deprecated",
+          "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceActivation##title##7291",
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceActivation##description##55201"
         }
       }
     }
@@ -61,5 +76,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-02-02"
+  "meta:createdDate": "2021-02-02",
+  "meta:titleId": "experienceevent-device-trade-in-details##title##77841",
+  "meta:descriptionId": "experienceevent-device-trade-in-details##description##42461"
 }

@@ -22,7 +22,9 @@
                             "title": "Index",
                             "type": "integer",
                             "description": "When present, indicates the item at this array index should be selected.",
-                            "minimum": 0
+                            "minimum": 0,
+                            "meta:titleId": "itemselector##xdm:index##title##26511",
+                            "meta:descriptionId": "itemselector##xdm:index##description##441"
                         }
                     },
                     "required": [
@@ -36,7 +38,9 @@
                             "title": "ID",
                             "type": "string",
                             "format": "uri",
-                            "description": "When present, indicates the item with this @id value should be selected."
+                            "description": "When present, indicates the item with this @id value should be selected.",
+                            "meta:titleId": "itemselector##xdm:id##title##88811",
+                            "meta:descriptionId": "itemselector##xdm:id##description##83381"
                         }
                     },
                     "required": [
@@ -50,7 +54,9 @@
                             "title": "Type",
                             "type": "string",
                             "format": "uri",
-                            "description": "When present, indicates the item with this @type value should be selected."
+                            "description": "When present, indicates the item with this @type value should be selected.",
+                            "meta:titleId": "itemselector##xdm:type##title##57421",
+                            "meta:descriptionId": "itemselector##xdm:type##description##56651"
                         }
                     },
                     "required": [
@@ -64,7 +70,9 @@
                             "title": "Schema",
                             "type": "string",
                             "format": "uri",
-                            "description": "When present, indicates the item which conforms to this schema URI should be selected."
+                            "description": "When present, indicates the item which conforms to this schema URI should be selected.",
+                            "meta:titleId": "itemselector##xdm:schema##title##38361",
+                            "meta:descriptionId": "itemselector##xdm:schema##description##1351"
                         }
                     },
                     "required": [
@@ -81,15 +89,17 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "itemselector##title##12921",
+    "meta:descriptionId": "itemselector##description##24751",
     "examples": [
         {
             "xdm:id": "https://example.com/objects/12345"
         },
         {
-            "xdm:index": 0
+            "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
-            "xdm:type": "https://ns.adobe.com/experience/mcid"
+            "xdm:index": 0
         },
         {
             "xdm:schema": "https://ns.adobe.com/xdm/context/identity"

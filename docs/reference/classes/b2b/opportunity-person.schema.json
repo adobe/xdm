@@ -25,42 +25,58 @@
                 "xdm:opportunityPersonID": {
                     "title": "Opportunity Person ID",
                     "description": "Unique identifier for the relationship between the opportunity and the person.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##97661",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##92931"
                 },
                 "xdm:opportunityPersonKey": {
                     "title": "Opportunity Person Key",
                     "description": "Unique composite identifier of the relationship between the Opportunity and the Person.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "opportunity-person##xdm:opportunityPersonKey##title##78921",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityPersonKey##description##44901"
                 },
                 "xdm:opportunityID": {
                     "title": "Opportunity ID",
                     "description": "Unique identifier for the opportunity in this opportunity person relationship.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "opportunity-person##xdm:opportunityID##title##32821",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##6391"
                 },
                 "xdm:opportunityKey": {
                     "title": "Opportunity Key",
                     "description": "Unique composite identifier of the Opportunity in this opportunity person relationship.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "opportunity-person##xdm:opportunityKey##title##56041",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityKey##description##36281"
                 },
                 "xdm:personID": {
                     "title": "Person ID",
                     "description": "Unique identifier for the person in this opportunity person relationship.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "opportunity-person##xdm:personID##title##59911",
+                    "meta:descriptionId": "opportunity-person##xdm:personID##description##64531"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
                     "description": "Unique composite identifier of the Person related to the Opportunity.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "opportunity-person##xdm:personKey##title##70011",
+                    "meta:descriptionId": "opportunity-person##xdm:personKey##description##78081"
                 },
                 "xdm:personRole": {
                     "title": "Person Role",
                     "description": "Role of the person on this opportunity.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "opportunity-person##xdm:personRole##title##48341",
+                    "meta:descriptionId": "opportunity-person##xdm:personRole##description##10071"
                 },
                 "xdm:isPrimary": {
                     "title": "Primary Flag",
                     "description": "Boolean indicating if the person is the primary contact on this opportunity.",
-                    "type": "boolean"
+                    "type": "boolean",
+                    "meta:titleId": "opportunity-person##xdm:isPrimary##title##30651",
+                    "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##53641"
                 }
             }
         }
@@ -80,6 +96,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "opportunity-person##title##6291",
+    "meta:descriptionId": "opportunity-person##description##37411",
     "examples": [
         {
             "xdm:opportunityPersonID": "123456",

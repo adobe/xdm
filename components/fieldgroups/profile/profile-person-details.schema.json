@@ -22,7 +22,9 @@
         "xdm:person": {
           "title": "Person",
           "$ref": "https://ns.adobe.com/xdm/context/person",
-          "description": "An individual actor, contact, or owner."
+          "description": "An individual actor, contact, or owner.",
+          "meta:titleId": "profile-person-details##xdm:person##title##40891",
+          "meta:descriptionId": "profile-person-details##xdm:person##description##39921"
         }
       }
     }
@@ -36,5 +38,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-person-details##title##98391",
+  "meta:descriptionId": "profile-person-details##description##18041"
 }

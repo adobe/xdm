@@ -16,18 +16,24 @@
                 "iptc4xmpExt:Name": {
                     "title": "Episode Name",
                     "type": "string",
-                    "description": "Name of the episode."
+                    "description": "Name of the episode.",
+                    "meta:titleId": "episode##iptc4xmpExt:Name##title##76691",
+                    "meta:descriptionId": "episode##iptc4xmpExt:Name##description##9061"
                 },
                 "iptc4xmpExt:Number": {
                     "title": "Episode Number",
                     "type": "number",
-                    "description": "Number of the episode."
+                    "description": "Number of the episode.",
+                    "meta:titleId": "episode##iptc4xmpExt:Number##title##90721",
+                    "meta:descriptionId": "episode##iptc4xmpExt:Number##description##97661"
                 },
                 "iptc4xmpExt:Identifier": {
                     "title": "Episode Identifier",
                     "type": "string",
                     "format": "uri",
-                    "description": "Identifier of the episode."
+                    "description": "Identifier of the episode.",
+                    "meta:titleId": "episode##iptc4xmpExt:Identifier##title##29651",
+                    "meta:descriptionId": "episode##iptc4xmpExt:Identifier##description##78181"
                 }
             }
         }
@@ -39,6 +45,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "episode##title##21631",
+    "meta:descriptionId": "episode##description##78731",
     "examples": [
         {
             "iptc4xmpExt:Number": 1

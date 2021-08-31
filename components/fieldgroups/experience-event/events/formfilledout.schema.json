@@ -24,7 +24,7 @@
         "xdm:web": {
           "title": "Web",
           "type": "object",
-		  "description": "Link clicks, web page details, referrer information, and browser details.",
+          "description": "Link clicks, web page details, referrer information, and browser details.",
           "properties": {
             "xdm:fillOutForm": {
               "title": "Fill Out Form",
@@ -33,14 +33,19 @@
                 "xdm:webFormID": {
                   "title": "Web Form ID",
                   "type": "string",
-                  "description": "Unique ID of the form."
+                  "description": "Unique ID of the form.",
+                  "meta:titleId": "formfilledout##xdm:webFormID##title##66241",
+                  "meta:descriptionId": "formfilledout##xdm:webFormID##description##82001"
                 },
                 "xdm:webFormName": {
                   "title": "Web Form Name",
                   "type": "string",
-                  "description": "Name of the form."
+                  "description": "Name of the form.",
+                  "meta:titleId": "formfilledout##xdm:webFormName##title##51021",
+                  "meta:descriptionId": "formfilledout##xdm:webFormName##description##35721"
                 }
-              }
+              },
+              "meta:titleId": "formfilledout##xdm:fillOutForm##title##26091"
             },
             "xdm:webPageDetails": {
               "title": "Web Page Details",
@@ -49,19 +54,26 @@
                 "xdm:webPageID": {
                   "title": "Web Page ID",
                   "type": "string",
-                  "description": "Unique ID of the web page."
+                  "description": "Unique ID of the web page.",
+                  "meta:titleId": "formfilledout##xdm:webPageID##title##79341",
+                  "meta:descriptionId": "formfilledout##xdm:webPageID##description##77811"
                 },
                 "xdm:name": {
                   "title": "Name",
                   "type": "string",
-                  "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+                  "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+                  "meta:titleId": "formfilledout##xdm:name##title##78001",
+                  "meta:descriptionId": "formfilledout##xdm:name##description##67831"
                 },
                 "xdm:queryParameters": {
                   "title": "Query Parameters",
                   "type": "string",
-                  "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+                  "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+                  "meta:titleId": "formfilledout##xdm:queryParameters##title##53181",
+                  "meta:descriptionId": "formfilledout##xdm:queryParameters##description##36681"
                 }
-              }
+              },
+              "meta:titleId": "formfilledout##xdm:webPageDetails##title##83601"
             },
             "xdm:webReferrer": {
               "title": "Web Referrer",
@@ -70,11 +82,16 @@
                 "xdm:URL": {
                   "title": "URL",
                   "type": "string",
-                  "description": "The referrer URL."
+                  "description": "The referrer URL.",
+                  "meta:titleId": "formfilledout##xdm:URL##title##31401",
+                  "meta:descriptionId": "formfilledout##xdm:URL##description##99871"
                 }
-              }
+              },
+              "meta:titleId": "formfilledout##xdm:webReferrer##title##79011"
             }
-          }
+          },
+          "meta:titleId": "formfilledout##xdm:web##title##89181",
+          "meta:descriptionId": "formfilledout##xdm:web##description##22991"
         },
         "xdm:environment": {
           "title": "Environment",
@@ -85,7 +102,9 @@
               "title": "IPv4",
               "type": "string",
               "format": "ipv4",
-              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication."
+              "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
+              "meta:titleId": "formfilledout##xdm:ipV4##title##60151",
+              "meta:descriptionId": "formfilledout##xdm:ipV4##description##83301"
             },
             "xdm:browserDetails": {
               "title": "Browser details",
@@ -95,11 +114,17 @@
                 "xdm:userAgent": {
                   "title": "User agent",
                   "type": "string",
-                  "description": "The HTTP user-agent string from the client request."
+                  "description": "The HTTP user-agent string from the client request.",
+                  "meta:titleId": "formfilledout##xdm:userAgent##title##1191",
+                  "meta:descriptionId": "formfilledout##xdm:userAgent##description##27311"
                 }
-              }
+              },
+              "meta:titleId": "formfilledout##xdm:browserDetails##title##14601",
+              "meta:descriptionId": "formfilledout##xdm:browserDetails##description##93801"
             }
-          }
+          },
+          "meta:titleId": "formfilledout##xdm:environment##title##8681",
+          "meta:descriptionId": "formfilledout##xdm:environment##description##8991"
         }
       }
     }
@@ -110,5 +135,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate" : "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "formfilledout##title##9721",
+  "meta:descriptionId": "formfilledout##description##78751"
 }

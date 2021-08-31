@@ -17,7 +17,9 @@
         "xdm:typeID": {
           "title": "Type identifier",
           "type": "string",
-          "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used."
+          "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used.",
+          "meta:titleId": "device##xdm:typeID##title##96801",
+          "meta:descriptionId": "device##xdm:typeID##description##26841"
         },
         "xdm:typeIDService": {
           "title": "Type identifier service",
@@ -66,7 +68,9 @@
         "xdm:model": {
           "title": "Model",
           "type": "string",
-          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone."
+          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+          "meta:titleId": "device##xdm:model##title##9441",
+          "meta:descriptionId": "device##xdm:model##description##12951"
         },
         "xdm:modelNumber": {
           "title": "Model number",
@@ -80,7 +84,9 @@
         "xdm:screenHeight": {
           "title": "Screen height",
           "type": "integer",
-          "description": "The number of vertical pixels of the device's active display in the default orientation."
+          "description": "The number of vertical pixels of the device's active display in the default orientation.",
+          "meta:titleId": "device##xdm:screenHeight##title##28801",
+          "meta:descriptionId": "device##xdm:screenHeight##description##64291"
         },
         "xdm:screenWidth": {
           "title": "Screen width",
@@ -151,7 +157,9 @@
         "xdm:isPushOptIn": {
           "title": "Push Opt In Flag",
           "type": "boolean",
-          "description": "Indicates whether or not the device opted-in to receive push notifications."
+          "description": "Indicates whether or not the device opted-in to receive push notifications.",
+          "meta:titleId": "device##xdm:isPushOptIn##title##24681",
+          "meta:descriptionId": "device##xdm:isPushOptIn##description##17061"
         }
       }
     }
@@ -195,5 +203,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "device##title##84311",
+  "meta:descriptionId": "device##description##3031"
 }

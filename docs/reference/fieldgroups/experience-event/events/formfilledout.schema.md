@@ -69,9 +69,13 @@ Unknown type `object`.
     "xdm:userAgent": {
       "title": "User agent",
       "type": "string",
-      "description": "The HTTP user-agent string from the client request."
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:titleId": "formfilledout##xdm:userAgent##title##1191",
+      "meta:descriptionId": "formfilledout##xdm:userAgent##description##27311"
     }
   },
+  "meta:titleId": "formfilledout##xdm:browserDetails##title##14601",
+  "meta:descriptionId": "formfilledout##xdm:browserDetails##description##93801",
   "simpletype": "`object`"
 }
 ```
@@ -152,14 +156,19 @@ Unknown type `object`.
     "xdm:webFormID": {
       "title": "Web Form ID",
       "type": "string",
-      "description": "Unique ID of the form."
+      "description": "Unique ID of the form.",
+      "meta:titleId": "formfilledout##xdm:webFormID##title##66241",
+      "meta:descriptionId": "formfilledout##xdm:webFormID##description##82001"
     },
     "xdm:webFormName": {
       "title": "Web Form Name",
       "type": "string",
-      "description": "Name of the form."
+      "description": "Name of the form.",
+      "meta:titleId": "formfilledout##xdm:webFormName##title##51021",
+      "meta:descriptionId": "formfilledout##xdm:webFormName##description##35721"
     }
   },
+  "meta:titleId": "formfilledout##xdm:fillOutForm##title##26091",
   "simpletype": "`object`"
 }
 ```
@@ -191,19 +200,26 @@ Unknown type `object`.
     "xdm:webPageID": {
       "title": "Web Page ID",
       "type": "string",
-      "description": "Unique ID of the web page."
+      "description": "Unique ID of the web page.",
+      "meta:titleId": "formfilledout##xdm:webPageID##title##79341",
+      "meta:descriptionId": "formfilledout##xdm:webPageID##description##77811"
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
-      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes."
+      "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+      "meta:titleId": "formfilledout##xdm:name##title##78001",
+      "meta:descriptionId": "formfilledout##xdm:name##description##67831"
     },
     "xdm:queryParameters": {
       "title": "Query Parameters",
       "type": "string",
-      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url."
+      "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+      "meta:titleId": "formfilledout##xdm:queryParameters##title##53181",
+      "meta:descriptionId": "formfilledout##xdm:queryParameters##description##36681"
     }
   },
+  "meta:titleId": "formfilledout##xdm:webPageDetails##title##83601",
   "simpletype": "`object`"
 }
 ```
@@ -235,9 +251,12 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "description": "The referrer URL."
+      "description": "The referrer URL.",
+      "meta:titleId": "formfilledout##xdm:URL##title##31401",
+      "meta:descriptionId": "formfilledout##xdm:URL##description##99871"
     }
   },
+  "meta:titleId": "formfilledout##xdm:webReferrer##title##79011",
   "simpletype": "`object`"
 }
 ```

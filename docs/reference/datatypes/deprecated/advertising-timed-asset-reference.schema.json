@@ -18,47 +18,65 @@
                     "title": "Ad ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org]."
+                    "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].",
+                    "meta:titleId": "advertising-timed-asset-reference##@id##title##38821",
+                    "meta:descriptionId": "advertising-timed-asset-reference##@id##description##43761"
                 },
                 "xdm:creativeID": {
                     "title": "Ad creative ID",
                     "type": "string",
-                    "description": "The ID of the ad creative."
+                    "description": "The ID of the ad creative.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:creativeID##title##56271",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:creativeID##description##91481"
                 },
                 "xdm:creativeURL": {
                     "title": "Ad creative URL",
                     "type": "string",
-                    "description": "The URL of the ad creative."
+                    "description": "The URL of the ad creative.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:creativeURL##title##11371",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:creativeURL##description##31611"
                 },
                 "xdm:siteID": {
                     "title": "Ad site ID",
                     "type": "string",
-                    "description": "ID of the ad site."
+                    "description": "ID of the ad site.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:siteID##title##73461",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:siteID##description##31331"
                 },
                 "xdm:placementID": {
                     "title": "Ad placement ID",
                     "type": "string",
-                    "description": "Placement ID of the ad."
+                    "description": "Placement ID of the ad.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:placementID##title##11281",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:placementID##description##75191"
                 },
                 "dc:title": {
                     "title": "Ad name",
                     "type": "string",
-                    "description": "The friendly and human-readable name of the ad asset."
+                    "description": "The friendly and human-readable name of the ad asset.",
+                    "meta:titleId": "advertising-timed-asset-reference##dc:title##title##55731",
+                    "meta:descriptionId": "advertising-timed-asset-reference##dc:title##description##5071"
                 },
                 "xdm:advertiser": {
                     "title": "Ad advertiser",
                     "type": "string",
-                    "description": "Company/Brand whose product is featured in the ad."
+                    "description": "Company/Brand whose product is featured in the ad.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:advertiser##title##30061",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:advertiser##description##21761"
                 },
                 "xdm:campaign": {
                     "title": "Ad campaign",
                     "type": "string",
-                    "description": "ID of the ad campaign."
+                    "description": "ID of the ad campaign.",
+                    "meta:titleId": "advertising-timed-asset-reference##xdm:campaign##title##34571",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xdm:campaign##description##39501"
                 },
                 "xmpDM:duration": {
                     "title": "Ad length or duration",
                     "type": "integer",
-                    "description": "Length or duration of ad asset in seconds."
+                    "description": "Length or duration of ad asset in seconds.",
+                    "meta:titleId": "advertising-timed-asset-reference##xmpDM:duration##title##19221",
+                    "meta:descriptionId": "advertising-timed-asset-reference##xmpDM:duration##description##50131"
                 }
             },
             "required": [
@@ -76,6 +94,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "advertising-timed-asset-reference##title##40491",
+    "meta:descriptionId": "advertising-timed-asset-reference##description##27171",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/asser-reference/23423",

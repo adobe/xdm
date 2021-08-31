@@ -26,17 +26,23 @@
                 "xdm:environment": {
                     "title": "Environment",
                     "$ref": "https://ns.adobe.com/xdm/context/environment",
-                    "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions."
+                    "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+                    "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
+                    "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621"
                 },
                 "xdm:device": {
                     "title": "Device",
                     "$ref": "https://ns.adobe.com/xdm/context/device",
-                    "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies."
+                    "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+                    "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
+                    "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671"
                 },
                 "xdm:placeContext": {
                     "title": "Place context",
                     "$ref": "https://ns.adobe.com/xdm/context/placecontext",
-                    "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours."
+                    "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+                    "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
+                    "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741"
                 }
             }
         }
@@ -51,6 +57,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "experienceevent-environment-details##title##14621",
+    "meta:descriptionId": "experienceevent-environment-details##description##15021",
     "examples": [
         {
             "xdm:environment": {

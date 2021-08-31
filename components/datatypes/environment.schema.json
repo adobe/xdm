@@ -43,12 +43,16 @@
         "xdm:operatingSystem": {
           "title": "Operating system",
           "type": "string",
-          "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'."
+          "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
+          "meta:titleId": "environment##xdm:operatingSystem##title##46691",
+          "meta:descriptionId": "environment##xdm:operatingSystem##description##25881"
         },
         "xdm:operatingSystemVersion": {
           "title": "Operating system version",
           "type": "string",
-          "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format."
+          "description": "The full version identifier for the operating system used when the observation was made. Versions are generally numerically composed but may be in a vendor defined format.",
+          "meta:titleId": "environment##xdm:operatingSystemVersion##title##96881",
+          "meta:descriptionId": "environment##xdm:operatingSystemVersion##description##56991"
         },
         "xdm:operatingSystemVendor": {
           "title": "Operating system vendor",
@@ -73,7 +77,9 @@
           "title": "Viewport height",
           "type": "integer",
           "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-          "minimum": 0
+          "minimum": 0,
+          "meta:titleId": "environment##xdm:viewportHeight##title##93041",
+          "meta:descriptionId": "environment##xdm:viewportHeight##description##9471"
         },
         "xdm:viewportWidth": {
           "title": "Viewport width",
@@ -89,12 +95,16 @@
           "title": "Duration",
           "type": "integer",
           "description": "The number of milliseconds that the user was on the screen.",
-          "minimum": 0
+          "minimum": 0,
+          "meta:titleId": "environment##xdm:duration##title##5651",
+          "meta:descriptionId": "environment##xdm:duration##description##13081"
         },
         "xdm:viewedScreen": {
           "title": "Viewed Screen",
           "type": "string",
-          "description": "The friendly name assigned to the screen that the user was on."
+          "description": "The friendly name assigned to the screen that the user was on.",
+          "meta:titleId": "environment##xdm:viewedScreen##title##89981",
+          "meta:descriptionId": "environment##xdm:viewedScreen##description##29771"
         },
         "xdm:previousScreen": {
           "title": "Previous Screen",
@@ -163,7 +173,9 @@
         "xdm:domain": {
           "title": "Domain",
           "type": "string",
-          "description": "The domain of the users ISP."
+          "description": "The domain of the users ISP.",
+          "meta:titleId": "environment##xdm:domain##title##84591",
+          "meta:descriptionId": "environment##xdm:domain##description##29171"
         },
         "xdm:ISP": {
           "title": "Internet service provider",
@@ -180,7 +192,9 @@
           "type": "string",
           "pattern": "^(((([A-Za-z]{2,3}(-([A-Za-z]{3}(-[A-Za-z]{3}){0,2}))?)|[A-Za-z]{4}|[A-Za-z]{5,8})(-([A-Za-z]{4}))?(-([A-Za-z]{2}|[0-9]{3}))?(-([A-Za-z0-9]{5,8}|[0-9][A-Za-z0-9]{3}))*(-([0-9A-WY-Za-wy-z](-[A-Za-z0-9]{2,8})+))*(-(x(-[A-Za-z0-9]{1,8})+))?)|(x(-[A-Za-z0-9]{1,8})+)|((en-GB-oed|i-ami|i-bnn|i-default|i-enochian|i-hak|i-klingon|i-lux|i-mingo|i-navajo|i-pwn|i-tao|i-tay|i-tsu|sgn-BE-FR|sgn-BE-NL|sgn-CH-DE)|(art-lojban|cel-gaulish|no-bok|no-nyn|zh-guoyu|zh-hakka|zh-min|zh-min-nan|zh-xiang)))$",
           "description": "The language of the environment to represent the user's linguistic, geographical, or cultural preferences for data presentation.\nLanguages are specified in language code as defined in [IETF RFC 3066](https://www.ietf.org/rfc/rfc3066.txt), which is part of BCP 47, which is used elsewhere in XDM.",
-          "examples": ["en-US", "pt-BR", "es-ES"]
+          "examples": ["en-US", "pt-BR", "es-ES"],
+          "meta:titleId": "environment##dc:language##title##75001",
+          "meta:descriptionId": "environment##dc:language##description##15341"
         }
       }
     },
@@ -190,7 +204,9 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:titleId": "environment##xdm:ipV4##title##64201",
+          "meta:descriptionId": "environment##xdm:ipV4##description##36591"
         }
       }
     },
@@ -200,7 +216,9 @@
           "title": "IPv6",
           "type": "string",
           "format": "ipv6",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. "
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:titleId": "environment##xdm:ipV6##title##11931",
+          "meta:descriptionId": "environment##xdm:ipV6##description##50921"
         }
       }
     }
@@ -247,5 +265,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2020-08-10"
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "environment##title##48011",
+  "meta:descriptionId": "environment##description##21971"
 }

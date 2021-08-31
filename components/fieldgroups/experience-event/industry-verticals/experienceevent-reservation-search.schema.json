@@ -11,8 +11,14 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": { "industry": ["travel_and_hospitality"] },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Reservation search details such as flexibility, product code, rate type, and internal search information.",
   "definitions": {
     "reservations": {
@@ -23,52 +29,80 @@
             "xdm:couponCode": {
               "title": "Coupon Code",
               "type": "string",
-              "description": "Coupon/promo code string used in a reservation search."
+              "description": "Coupon/promo code string used in a reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:couponCode##title##85791",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:couponCode##description##74811"
             },
             "xdm:groupCode": {
               "title": "Group Code",
               "type": "string",
-              "description": "Group code string used in a reservation search."
+              "description": "Group code string used in a reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:groupCode##title##97451",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:groupCode##description##41241"
             },
             "xdm:isFlexible": {
               "title": "Reservation Search Is Flexibile",
               "type": "boolean",
-              "description": "Tracks if a visitor selects a flexible date option for their reservation search."
+              "description": "Tracks if a visitor selects a flexible date option for their reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:isFlexible##title##53921",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:isFlexible##description##92071"
             },
             "xdm:productCode": {
               "title": "Corporate Code",
               "type": "string",
-              "description": "Corporate code string used in a reservation search."
+              "description": "Corporate code string used in a reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:productCode##title##44561",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:productCode##description##13461"
             },
             "xdm:rateType": {
               "title": "Rate Type",
               "type": "string",
-              "enum": ["aaa", "aarp", "senior", "government", "corporate"],
-              "description": "Type of rate included in a reservation search."
+              "enum": [
+                "aaa",
+                "aarp",
+                "senior",
+                "government",
+                "corporate"
+              ],
+              "description": "Type of rate included in a reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:rateType##title##61891",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##64931"
             },
             "xdm:startDate": {
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "The start pick-up/outbound/check-in date of the reservation search."
+              "description": "The start pick-up/outbound/check-in date of the reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:startDate##title##19691",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:startDate##description##94981"
             },
             "xdm:endDate": {
               "title": "End Date",
               "type": "string",
               "format": "date-time",
-              "description": "The end drop-off/return/check-out date of the reservation search."
+              "description": "The end drop-off/return/check-out date of the reservation search.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:endDate##title##56511",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:endDate##description##3161"
             },
             "xdm:reservationSearch": {
               "title": "Site Search",
               "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
-              "description": "Extension of internalSearch data type."
+              "description": "Extension of internalSearch data type.",
+              "meta:titleId": "experienceevent-reservation-search##xdm:reservationSearch##title##72741",
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:reservationSearch##description##25481"
             }
           }
         }
       }
     }
   },
-  "allOf": [{ "$ref": "#/definitions/reservations" }],
+  "allOf": [
+    {
+      "$ref": "#/definitions/reservations"
+    }
+  ],
   "meta:status": "stable",
-  "meta:createdDate" : "2021-03-15"
+  "meta:createdDate": "2021-03-15",
+  "meta:titleId": "experienceevent-reservation-search##title##97041",
+  "meta:descriptionId": "experienceevent-reservation-search##description##17491"
 }

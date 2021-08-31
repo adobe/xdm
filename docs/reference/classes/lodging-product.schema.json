@@ -26,37 +26,51 @@
                 "xdm:propertyID": {
                     "title": "Property ID",
                     "type": "string",
-                    "description": "Identifier for the lodging property."
+                    "description": "Identifier for the lodging property.",
+                    "meta:titleId": "lodging-product##xdm:propertyID##title##66451",
+                    "meta:descriptionId": "lodging-product##xdm:propertyID##description##75581"
                 },
                 "xdm:location": {
                     "title": "Location",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                    "description": "Lodging property location."
+                    "description": "Lodging property location.",
+                    "meta:titleId": "lodging-product##xdm:location##title##84521",
+                    "meta:descriptionId": "lodging-product##xdm:location##description##9511"
                 },
                 "xdm:ownership": {
                     "title": "Ownership",
                     "type": "string",
-                    "description": "Parent company of the lodging property."
+                    "description": "Parent company of the lodging property.",
+                    "meta:titleId": "lodging-product##xdm:ownership##title##36671",
+                    "meta:descriptionId": "lodging-product##xdm:ownership##description##921"
                 },
                 "xdm:serviceLevel": {
                     "title": "Service Level",
                     "type": "string",
-                    "description": "Service level associated with the lodging property such as luxury, budget, mid-range, etc."
+                    "description": "Service level associated with the lodging property such as luxury, budget, mid-range, etc.",
+                    "meta:titleId": "lodging-product##xdm:serviceLevel##title##45811",
+                    "meta:descriptionId": "lodging-product##xdm:serviceLevel##description##37471"
                 },
                 "xdm:starRating": {
                     "title": "Star Rating",
                     "type": "integer",
-                    "description": "Star rating associated with the lodging property."
+                    "description": "Star rating associated with the lodging property.",
+                    "meta:titleId": "lodging-product##xdm:starRating##title##90641",
+                    "meta:descriptionId": "lodging-product##xdm:starRating##description##12611"
                 },
                 "xdm:totalRooms": {
                     "title": "Total Rooms",
                     "type": "integer",
-                    "description": "Total rooms in the lodging property."
+                    "description": "Total rooms in the lodging property.",
+                    "meta:titleId": "lodging-product##xdm:totalRooms##title##75851",
+                    "meta:descriptionId": "lodging-product##xdm:totalRooms##description##28201"
                 },
                 "xdm:type": {
                     "title": "Type",
                     "type": "string",
-                    "description": "Type of lodging property such as homestay, resort, capsule, lodge, service apartment, boathouse, etc."
+                    "description": "Type of lodging property such as homestay, resort, capsule, lodge, service apartment, boathouse, etc.",
+                    "meta:titleId": "lodging-product##xdm:type##title##19761",
+                    "meta:descriptionId": "lodging-product##xdm:type##description##76581"
                 }
             }
         }
@@ -71,6 +85,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-04-06",
+    "meta:titleId": "lodging-product##title##20341",
+    "meta:descriptionId": "lodging-product##description##10671",
     "examples": [
         {
             "xdm:ownership": "Select Properties",

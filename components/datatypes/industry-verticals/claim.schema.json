@@ -17,29 +17,39 @@
         "xdm:ID": {
           "title": "Claim ID",
           "type": "string",
-          "description": "Unique identifier for the claim."
+          "description": "Unique identifier for the claim.",
+          "meta:titleId": "claim##xdm:ID##title##78321",
+          "meta:descriptionId": "claim##xdm:ID##description##92301"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date-time",
-          "description": "Date the claim was successfully submitted."
+          "description": "Date the claim was successfully submitted.",
+          "meta:titleId": "claim##xdm:startDate##title##50181",
+          "meta:descriptionId": "claim##xdm:startDate##description##78951"
         },
         "xdm:status": {
           "title": "Status",
           "type": "string",
           "enum": ["initiated", "in progress", "approved", "declined"],
-          "description": "Captures the status of the claim for any given point in the application process."
+          "description": "Captures the status of the claim for any given point in the application process.",
+          "meta:titleId": "claim##xdm:status##title##42721",
+          "meta:descriptionId": "claim##xdm:status##description##85121"
         },
         "xdm:policyID": {
           "title": "Policy ID",
           "type": "string",
-          "description": "Policy Identifier."
+          "description": "Policy Identifier.",
+          "meta:titleId": "claim##xdm:policyID##title##22421",
+          "meta:descriptionId": "claim##xdm:policyID##description##64941"
         },
         "xdm:benefitAmount": {
           "title": "Benefit Amount",
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
-          "description": "Captures the benefit amount."
+          "description": "Captures the benefit amount.",
+          "meta:titleId": "claim##xdm:benefitAmount##title##24761",
+          "meta:descriptionId": "claim##xdm:benefitAmount##description##99261"
         }
       }
     }
@@ -50,5 +60,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2021-02-19"
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "claim##title##68881",
+  "meta:descriptionId": "claim##description##84111"
 }

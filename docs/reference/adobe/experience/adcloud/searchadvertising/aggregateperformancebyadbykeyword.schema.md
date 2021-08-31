@@ -265,6 +265,9 @@ The primary event type for this time-series record.
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
 | `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |
+| `inappmessageTracking.dismiss` | inapp message was dimissed |
+| `inappmessageTracking.display` | inapp message was displayed |
+| `inappmessageTracking.interact` | inapp message was interacted with |
 
 
 

@@ -61,36 +61,8 @@
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
                     "title": "Offer details",
-                    "type": "object",
-                    "description": "Describes offer(s) involved in a message interaction.",
-                    "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": {
-                            "title": "Offer ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": {
-                            "title": "Placement ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer Placement."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": {
-                            "title": "Proposition ID",
-                            "type": "string",
-                            "description": "Unique Identifier for Offer Proposition."
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime": {
-                            "title": "Proposition Time",
-                            "type": "string",
-                            "description": "Time at which the Offer proposition was generated.",
-                            "meta:status": "deprecated"
-                        },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": {
-                            "title": "Offer Count",
-                            "type": "integer",
-                            "description": "Count of offers included in the offer proposition."
-                        }
-                    }
+                    "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
+                    "description": "Describes offer(s) involved in a message interaction."
                 }
             }
         }
@@ -115,10 +87,10 @@
             ],
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": "1234",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": "12345",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": "9898",
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": 5
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
             }
         }
     ]

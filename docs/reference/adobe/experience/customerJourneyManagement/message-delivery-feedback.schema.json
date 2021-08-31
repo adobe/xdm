@@ -95,6 +95,11 @@
                     "title": "Retry Count",
                     "type": "integer",
                     "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
+                    "title": "Offer details",
+                    "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
+                    "description": "Describes offer(s) involved in a message feedback."
                 }
             }
         }
@@ -117,7 +122,13 @@
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": "Soft",
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": "sync"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1,
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
+                "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
+            }
         }
     ]
 }

@@ -93,10 +93,10 @@
     "meta:descriptionId": "itemselector##description##24751",
     "examples": [
         {
-            "xdm:type": "https://ns.adobe.com/experience/mcid"
+            "xdm:id": "https://example.com/objects/12345"
         },
         {
-            "xdm:id": "https://example.com/objects/12345"
+            "xdm:type": "https://ns.adobe.com/experience/mcid"
         },
         {
             "xdm:index": 0

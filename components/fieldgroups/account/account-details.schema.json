@@ -67,12 +67,19 @@
           "meta:titleId": "account-details##xdm:accountParentID##title##80371",
           "meta:descriptionId": "account-details##xdm:accountParentID##description##84671"
         },
+        "xdm:accountParentKey": {
+          "title": "Parent Account Key",
+          "description": "Unique identifier of the Parent Account of the account, used to show hierarchies or subsidiaries.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-details##xdm:accountParentKey##title##4871",
+          "meta:descriptionId": "account-details##xdm:accountParentKey##description##56171"
+        },
         "xdm:partnerAccountID": {
           "title": "Partner Account Id",
           "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
           "type": "string",
-          "meta:titleId": "account-details##xdm:partnerAccountID##title##4871",
-          "meta:descriptionId": "account-details##xdm:partnerAccountID##description##56171"
+          "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
+          "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561"
         },
         "xdm:accountNumber": {
           "title": "Account Number",

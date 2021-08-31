@@ -14,7 +14,8 @@ This class is used to capture XDM business account person relationship attribute
 
 * XDM Business Account Person Relation `https://ns.adobe.com/xdm/classes/account-person`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
+  * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Account Person Relation Example
@@ -30,13 +31,16 @@ This class is used to capture XDM business account person relationship attribute
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:accountID](#xdmaccountid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
-| [xdm:accountPersonID](#xdmaccountpersonid) | `string` | **Required** | XDM Business Account Person Relation (this schema) |
+| [xdm:accountKey](#xdmaccountkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:accountPersonID](#xdmaccountpersonid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:accountPersonKey](#xdmaccountpersonkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | XDM Business Account Person Relation (this schema) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:isDirect](#xdmisdirect) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personRole](#xdmpersonrole) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationEndDate](#xdmrelationenddate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationStartDate](#xdmrelationstartdate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
@@ -66,7 +70,7 @@ A unique identifier for the record.
 ## xdm:accountID
 ### Account ID
 
-Unique ID for the account in this account person relationship.
+Unique identifier for the account in this account person relationship.
 
 `xdm:accountID`
 * is optional
@@ -83,13 +87,32 @@ Unique ID for the account in this account person relationship.
 
 
 
+## xdm:accountKey
+### Account Key
+
+Unique composite identifier for the account in this account person relationship.
+
+`xdm:accountKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:accountKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:accountPersonID
 ### Account Person ID
 
-Unique ID for this relationship between an account and a person.
+Unique identifier for this relationship between an account and a person.
 
 `xdm:accountPersonID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -98,6 +121,25 @@ Unique ID for this relationship between an account and a person.
 
 `string`
 
+
+
+
+
+
+## xdm:accountPersonKey
+### Account Person Key
+
+Unique composite identifier for this relationship between an account and a person.
+
+`xdm:accountPersonKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:accountPersonKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 
@@ -150,7 +192,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 
@@ -221,7 +263,7 @@ Boolean to indicate if the person is the primary contact on the account.
 ## xdm:personID
 ### Person ID
 
-Unique ID for the person in this account person relationship.
+Unique identifier for the person in this account person relationship.
 
 `xdm:personID`
 * is optional
@@ -233,6 +275,25 @@ Unique ID for the person in this account person relationship.
 
 `string`
 
+
+
+
+
+
+## xdm:personKey
+### Person Key
+
+Unique composite identifier for the person in this account person relationship.
+
+`xdm:personKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:personKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -87,9 +87,16 @@
               "meta:enum": {
                 "soft": "The reason for failed delivery is temporary.",
                 "hard": "The reason for failed delivery is permanent."
-              },
-              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type##title##36531",
-              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type##description##22461"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category": {
+              "title": "Failure Category",
+              "type": "string",
+              "description": "Classifies whether it is a sync bounce or async bounce.",
+              "meta:enum": {
+                "sync": "The delivery failed synchronously.",
+                "async": "The delivery failed asynchronously."
+              }
             }
           },
           "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure##title##88741"

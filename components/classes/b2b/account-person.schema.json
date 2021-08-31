@@ -21,24 +21,45 @@
       "properties": {
         "xdm:accountPersonID": {
           "title": "Account Person ID",
-          "description": "Unique ID for this relationship between an account and a person.",
+          "description": "Unique identifier for this relationship between an account and a person.",
           "type": "string",
           "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
           "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171"
         },
+        "xdm:accountPersonKey": {
+          "title": "Account Person Key",
+          "description": "Unique composite identifier for this relationship between an account and a person.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:accountPersonKey##title##86581",
+          "meta:descriptionId": "account-person##xdm:accountPersonKey##description##50861"
+        },
         "xdm:accountID": {
           "title": "Account ID",
-          "description": "Unique ID for the account in this account person relationship.",
+          "description": "Unique identifier for the account in this account person relationship.",
           "type": "string",
           "meta:titleId": "account-person##xdm:accountID##title##74971",
           "meta:descriptionId": "account-person##xdm:accountID##description##96141"
         },
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite identifier for the account in this account person relationship.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:accountKey##title##85441",
+          "meta:descriptionId": "account-person##xdm:accountKey##description##20571"
+        },
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Unique ID for the person in this account person relationship.",
+          "description": "Unique identifier for the person in this account person relationship.",
           "type": "string",
           "meta:titleId": "account-person##xdm:personID##title##42991",
           "meta:descriptionId": "account-person##xdm:personID##description##66421"
+        },
+        "xdm:personKey": {
+          "title": "Person Key",
+          "description": "Unique composite identifier for the person in this account person relationship.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "account-person##xdm:personKey##title##73161",
+          "meta:descriptionId": "account-person##xdm:personKey##description##86061"
         },
         "xdm:personRole": {
           "title": "Person Role",
@@ -107,7 +128,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:accountPersonID"],
   "meta:status": "experimental",
   "meta:titleId": "account-person##title##54851",
   "meta:descriptionId": "account-person##description##46121"

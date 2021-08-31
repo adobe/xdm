@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/campaign-details
 ```
 
-This mixin is used to capture properties related to business campaign details.
+Captures properties related to business campaign details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -13,6 +13,7 @@ This mixin is used to capture properties related to business campaign details.
 ## Schema Hierarchy
 
 * XDM Business Campaign Details `https://ns.adobe.com/xdm/mixins/campaign-details`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
@@ -38,6 +39,7 @@ This mixin is used to capture properties related to business campaign details.
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:parentCampaignID](#xdmparentcampaignid) | `string` | Optional | XDM Business Campaign Details (this schema) |
+| [xdm:parentCampaignKey](#xdmparentcampaignkey) | B2B Source | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:timeZone](#xdmtimezone) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:timeZoneDelivery](#xdmtimezonedelivery) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:timezoneName](#xdmtimezonename) | `string` | Optional | XDM Business Campaign Details (this schema) |
@@ -277,6 +279,25 @@ Member type and associated reference ID.
 
 `string`
 
+
+
+
+
+
+## xdm:parentCampaignKey
+### Parent Campaign Key
+
+Unique composite identifier of the Parent Campaign of the campaign, used to show hierarchies.
+
+`xdm:parentCampaignKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:parentCampaignKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

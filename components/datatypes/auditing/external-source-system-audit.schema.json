@@ -74,6 +74,13 @@
           "type": "string",
           "meta:titleId": "external-source-system-audit##xdm:externalID##title##78121",
           "meta:descriptionId": "external-source-system-audit##xdm:externalID##description##94841"
+        },
+        "xdm:externalKey": {
+          "title": "External Key",
+          "description": "External unique identifier to the source used for auditing.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "external-source-system-audit##xdm:externalKey##title##30201",
+          "meta:descriptionId": "external-source-system-audit##xdm:externalKey##description##57971"
         }
       }
     }

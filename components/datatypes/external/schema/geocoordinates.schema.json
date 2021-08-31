@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "description": "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
   "definitions": {
-    "geocoordinates": {
+    "coordinatesid": {
       "properties": {
         "@id": {
           "title": "Coordinates ID",
@@ -21,14 +21,22 @@
           "description": "The unique identifier of the coordinates.",
           "meta:titleId": "GeoCoordinates##@id##title##41111",
           "meta:descriptionId": "GeoCoordinates##@id##description##11781"
-        },
+        }
+      }
+    },
+    "description": {
+      "properties": {
         "schema:description": {
           "title": "Description",
           "type": "string",
           "description": "A description of what the coordinates identify.",
           "meta:titleId": "GeoCoordinates##schema:description##title##86411",
           "meta:descriptionId": "GeoCoordinates##schema:description##description##45861"
-        },
+        }
+      }
+    },
+    "latitude": {
+      "properties": {
         "schema:latitude": {
           "title": "Latitude",
           "type": "number",
@@ -37,7 +45,11 @@
           "description": "The signed vertical coordinate of a geographic point.",
           "meta:titleId": "GeoCoordinates##schema:latitude##title##31041",
           "meta:descriptionId": "GeoCoordinates##schema:latitude##description##51981"
-        },
+        }
+      }
+    },
+    "longitude": {
+      "properties": {
         "schema:longitude": {
           "title": "Longitude",
           "type": "number",
@@ -46,7 +58,11 @@
           "description": "The signed horizontal coordinate of a geographic point.",
           "meta:titleId": "GeoCoordinates##schema:longitude##title##44041",
           "meta:descriptionId": "GeoCoordinates##schema:longitude##description##34211"
-        },
+        }
+      }
+    },
+    "elevation": {
+      "properties": {
         "schema:elevation": {
           "title": "Elevation",
           "type": "number",
@@ -59,7 +75,19 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/geocoordinates"
+      "$ref": "#/definitions/coordinatesid"
+    },
+    {
+      "$ref": "#/definitions/description"
+    },
+    {
+      "$ref": "#/definitions/latitude"
+    },
+    {
+      "$ref": "#/definitions/longitude"
+    },
+    {
+      "$ref": "#/definitions/elevation"
     }
   ],
   "meta:status": "stable",

@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This mixin is used to capture B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
+  "description": "Captures B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "definitions": {
     "b2b-person-segment-traits": {
       "properties": {
@@ -73,6 +73,13 @@
               "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",
               "meta:descriptionId": "b2b-person-details##xdm:accountID##description##71731"
             },
+            "xdm:accountKey": {
+              "title": "Account Key",
+              "description": "Unique identifier of the Account related to the person.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "b2b-person-details##xdm:accountKey##title##891",
+              "meta:descriptionId": "b2b-person-details##xdm:accountKey##description##51301"
+            },
             "xdm:isBlocked": {
               "title": "Blocked Indicator",
               "description": "Indicator if the person is blocked or not.",
@@ -123,6 +130,13 @@
               "meta:titleId": "b2b-person-details##xdm:convertedContactID##title##61351",
               "meta:descriptionId": "b2b-person-details##xdm:convertedContactID##description##27071"
             },
+            "xdm:convertedContactKey": {
+              "title": "Converted Contact Key",
+              "description": "Unique identifier of the Contact if the lead was converted.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "b2b-person-details##xdm:convertedContactKey##title##53941",
+              "meta:descriptionId": "b2b-person-details##xdm:convertedContactKey##description##60001"
+            },
             "xdm:personOptInOut": {
               "title": "Person Preferences",
               "description": "Holds opt out values for different channels as selected by the person.",
@@ -130,6 +144,13 @@
               "meta:status": "deprecated",
               "meta:titleId": "b2b-person-details##xdm:personOptInOut##title##7321",
               "meta:descriptionId": "b2b-person-details##xdm:personOptInOut##description##75591"
+            },
+            "xdm:personKey": {
+              "title": "Person Key",
+              "description": "Unique identifier of Person/Profile fragment.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "b2b-person-details##xdm:personKey##title##80701",
+              "meta:descriptionId": "b2b-person-details##xdm:personKey##description##99811"
             }
           }
         }

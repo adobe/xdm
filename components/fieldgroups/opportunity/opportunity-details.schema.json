@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",
+  "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems.",
   "definitions": {
     "opportunity-details": {
       "properties": {
@@ -25,6 +25,13 @@
           "type": "string",
           "meta:titleId": "opportunity-details##xdm:campaignID##title##15851",
           "meta:descriptionId": "opportunity-details##xdm:campaignID##description##75271"
+        },
+        "xdm:campaignKey": {
+          "title": "Campaign Key",
+          "description": "Unique composite identifier of the Campaign.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "opportunity-details##xdm:campaignKey##title##27181",
+          "meta:descriptionId": "opportunity-details##xdm:campaignKey##description##65681"
         },
         "xdm:fiscalYear": {
           "title": "Fiscal Year",

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/profile-inferred-person
 ```
 
-This mixin is used to capture inferred details about a person where they are not directly avaialble.
+Captures inferred details about a person where they are not directly avaialble.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

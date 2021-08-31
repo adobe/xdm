@@ -21,12 +21,18 @@ Describes interaction made by the profile on the message.
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
     "marketing",
     "apparel"
   ],
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": "1234",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": "12345",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": "9898",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": 5
+  }
 }
 ```
 
@@ -36,6 +42,7 @@ Describes interaction made by the profile on the message.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractioninteractiontype) | `enum` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionlabel) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionoffers) | `object` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontags) | `string[]` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontrackingtype) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionurlid) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
@@ -67,7 +74,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label
 ### Tracker URL Label
 
-Human-Friendly label
+Human-Friendly label.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label`
 * is optional
@@ -78,6 +85,140 @@ Human-Friendly label
 
 
 `string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers
+### Offer details
+
+Describes offer(s) involved in a message interaction.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount`| integer | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime`| string | Optional |
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount
+##### Offer Count
+
+Count of offers included in the offer proposition.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount`
+* is optional
+* type: `integer`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID
+##### Offer ID
+
+Unique Identifier for Offer.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID
+##### Placement ID
+
+Unique Identifier for Offer Placement.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID
+##### Proposition ID
+
+Unique Identifier for Offer Proposition.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime
+##### Proposition Time
+
+Time at which the Offer proposition was generated.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime Type
+
+
+`string`
+
+
+
+
+
 
 
 

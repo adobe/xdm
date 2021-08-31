@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
-  "description": "This mixin is used to capture properties related to product measurements.",
+  "description": "Captures properties related to product measurements.",
   "definitions": {
     "product-measurement": {
       "properties": {
@@ -24,19 +24,23 @@
           "meta:titleId": "product-measurement##xdm:productSize##title##83681",
           "meta:descriptionId": "product-measurement##xdm:productSize##description##38041"
         },
+        "xdm:unitOfMeasureName": {
+          "title": "Product Unit Of Measure Name",
+          "type": "string",
+          "description": "Friendly name for product unit of measure.",
+          "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##46101",
+          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##14301"
+        }
+      }
+    },
+    "uomcode": {
+      "properties": {
         "xdm:unitOfMeasureCode": {
           "title": "Product Unit Of Measure Code",
           "type": "string",
           "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
           "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##20391",
           "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871"
-        },
-        "xdm:unitOfMeasureName": {
-          "title": "Product Unit Of Measure Name",
-          "type": "string",
-          "description": "Friendly name for product unit of measure.",
-          "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##62531",
-          "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##34801"
         }
       }
     }
@@ -44,6 +48,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/product-measurement"
+    },
+    {
+      "$ref": "#/definitions/uomcode"
     }
   ],
   "meta:status": "experimental",

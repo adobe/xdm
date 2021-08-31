@@ -73,6 +73,19 @@
               }
             }
           }
+        },
+        "https://ns.adobe.com/experience/profile/consentPolicies": {
+          "title": "Consent policies map",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "consent policy",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of identities for each namespace."
+          }
         }
       }
     }

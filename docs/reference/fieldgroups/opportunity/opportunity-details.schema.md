@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/opportunity-details
 ```
 
-This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.
+Captures and maintains additional opportunity attributes that are used by industry crm systems.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -13,6 +13,7 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 ## Schema Hierarchy
 
 * XDM Business Opportunity Details `https://ns.adobe.com/xdm/mixins/opportunity-details`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
 
 
@@ -27,6 +28,7 @@ This mixin is used to capture and maintain additional opportunity attributes tha
 |----------|------|----------|---------|------------|
 | [xdm:actualCloseDate](#xdmactualclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
+| [xdm:campaignKey](#xdmcampaignkey) | B2B Source | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:expectedCloseDate](#xdmexpectedclosedate) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:expectedRevenue](#xdmexpectedrevenue) | Currency | Optional |  | XDM Business Opportunity Details (this schema) |
 | [xdm:fiscalQuarter](#xdmfiscalquarter) | `string` | Optional |  | XDM Business Opportunity Details (this schema) |
@@ -79,6 +81,25 @@ Campaign unique identifer reference.
 
 `string`
 
+
+
+
+
+
+## xdm:campaignKey
+### Campaign Key
+
+Unique composite identifier of the Campaign.
+
+`xdm:campaignKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:campaignKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

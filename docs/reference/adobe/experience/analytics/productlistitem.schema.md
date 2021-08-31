@@ -41,6 +41,7 @@ XDM Product List Item extension properties specific to Adobe Analytics that impl
 | [xdm:product](#xdmproduct) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproduct) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductaddmethod) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmquantity) |
+| [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmunitofmeasurecode) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -405,6 +406,26 @@ The number of units the customer has indicated they require of the product.
 
 
 `integer`
+
+
+
+
+
+
+## xdm:unitOfMeasureCode
+### Product Unit Of Measure Code
+
+Standard unit of measure of the product and or variation and relates the units for the size measurement.
+
+`xdm:unitOfMeasureCode`
+* is optional
+* type: `string`
+* defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmunitofmeasurecode)
+
+### xdm:unitOfMeasureCode Type
+
+
+`string`
 
 
 

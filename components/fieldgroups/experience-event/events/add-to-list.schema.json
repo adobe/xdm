@@ -31,6 +31,13 @@
               "description": "Unique ID of the Marketing List.",
               "meta:titleId": "add-to-list##xdm:listID##title##63411",
               "meta:descriptionId": "add-to-list##xdm:listID##description##49311"
+            },
+            "xdm:listKey": {
+              "title": "List Key",
+              "description": "Unique composite identifier of the Marketing List.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "add-to-list##xdm:listKey##title##5791",
+              "meta:descriptionId": "add-to-list##xdm:listKey##description##65431"
             }
           },
           "meta:titleId": "add-to-list##xdm:listOperations##title##56911"

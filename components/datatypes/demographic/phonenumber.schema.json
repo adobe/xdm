@@ -21,6 +21,16 @@
           "meta:titleId": "phonenumber##xdm:primary##title##41111",
           "meta:descriptionId": "phonenumber##xdm:primary##description##56091"
         },
+        "xdm:countryCode": {
+          "title": "Country Calling Code",
+          "type": "string",
+          "description": "Country calling code (CC) as defined by E.164.",
+          "minLength": 1,
+          "maxLength": 3,
+          "pattern": "^[0-9]{1,3}?$",
+          "meta:titleId": "phonenumber##xdm:countryCode##title##5581",
+          "meta:descriptionId": "phonenumber##xdm:countryCode##description##36551"
+        },
         "xdm:number": {
           "title": "Number",
           "type": "string",

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "Target ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Target ExperienceEvent mixins.",
+  "description": "Target ExperienceEvent field group for use with schemas for Solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Target ExperienceEvent field groups.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Advertising Cloud Profile Template Mixin",
   "type": "object",
-  "description": "Adobe Advertising Cloud profile mixin for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile mixins.",
+  "description": "Adobe Advertising Cloud profile field group for use with schemas for Solution data ingestion. Includes the core and standard profile as well as the required Adobe Advertising Cloud profile field groups.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],

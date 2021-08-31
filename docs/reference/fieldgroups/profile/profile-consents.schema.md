@@ -1,5 +1,5 @@
 
-# Consents and Preferences Schema
+# Consent and Preference Details Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/profile-consents
@@ -12,11 +12,11 @@ This schema captures privacy, personalization and marketing preferences (consent
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/profile-consents.schema.json](fieldgroups/profile/profile-consents.schema.json) |
 ## Schema Hierarchy
 
-* Consents and Preferences `https://ns.adobe.com/xdm/mixins/profile-consents`
+* Consent and Preference Details `https://ns.adobe.com/xdm/mixins/profile-consents`
   * [Consent for Privacy, Personalization and Marketing Preferences](../../datatypes/consent/consent-preferences.schema.md) `https://ns.adobe.com/xdm/datatypes/consents-and-preferences`
 
 
-## Consents and Preferences Example
+## Consent and Preference Details Example
 ```json
 {
   "xdm:consents": {
@@ -87,7 +87,7 @@ This schema captures privacy, personalization and marketing preferences (consent
 }
 ```
 
-# Consents and Preferences Properties
+# Consent and Preference Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
@@ -171,17 +171,23 @@ Unknown type `object`.
         "xdm:collect": {
           "title": "Data Collection",
           "description": "Data collection is permitted",
-          "$ref": "#/definitions/consent-field"
+          "$ref": "#/definitions/consent-field",
+          "meta:titleId": "consents-and-preferences##xdm:collect##title##37151",
+          "meta:descriptionId": "consents-and-preferences##xdm:collect##description##10721"
         },
         "xdm:share": {
           "title": "Share Data",
           "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
-          "$ref": "#/definitions/consent-field"
+          "$ref": "#/definitions/consent-field",
+          "meta:titleId": "consents-and-preferences##xdm:share##title##87791",
+          "meta:descriptionId": "consents-and-preferences##xdm:share##description##69661"
         },
         "xdm:adID": {
           "title": "Use Advertiser ID",
           "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-          "$ref": "#/definitions/consent-field"
+          "$ref": "#/definitions/consent-field",
+          "meta:titleId": "consents-and-preferences##xdm:adID##title##54521",
+          "meta:descriptionId": "consents-and-preferences##xdm:adID##description##65521"
         },
         "xdm:personalize": {
           "$ref": "#/definitions/base-personalization"
@@ -189,14 +195,20 @@ Unknown type `object`.
         "xdm:marketing": {
           "$ref": "#/definitions/idSpecific-marketing"
         }
-      }
-    }
+      },
+      "meta:titleId": "consents-and-preferences##additionalProperties##title##7721"
+    },
+    "meta:titleId": "consents-and-preferences##additionalProperties##title##34811"
   },
   "xdm:metadata": {
     "title": "Consent and Preference Metadata",
     "description": "Metadata that applies to all consents and preferences that don't specify a different value",
-    "$ref": "#/definitions/metadata"
+    "$ref": "#/definitions/metadata",
+    "meta:titleId": "consents-and-preferences##xdm:metadata##title##31051",
+    "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##17851"
   },
+  "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##26791",
+  "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##62351",
   "simpletype": "`object`"
 }
 ```

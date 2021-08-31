@@ -16,13 +16,17 @@
                 "iptc4xmpExt:Name": {
                     "title": "Series Name",
                     "type": "string",
-                    "description": "Name of the series."
+                    "description": "Name of the series.",
+                    "meta:titleId": "series##iptc4xmpExt:Name##title##8031",
+                    "meta:descriptionId": "series##iptc4xmpExt:Name##description##58541"
                 },
                 "iptc4xmpExt:Identifier": {
                     "title": "Series Identifier",
                     "type": "string",
                     "format": "uri",
-                    "description": "Identifier of the series."
+                    "description": "Identifier of the series.",
+                    "meta:titleId": "series##iptc4xmpExt:Identifier##title##56321",
+                    "meta:descriptionId": "series##iptc4xmpExt:Identifier##description##88841"
                 }
             }
         }
@@ -34,6 +38,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "series##title##9811",
+    "meta:descriptionId": "series##description##59411",
     "examples": [
         {
             "iptc4xmpExt:Name": "nba_highlights",

@@ -5,7 +5,7 @@
 https://ns.adobe.com/b2b/bizible/bizible-person-details
 ```
 
-This mixin is used to capture Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.
+Captures Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

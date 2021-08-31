@@ -27,12 +27,16 @@
                         "de-DE",
                         "yue-HK"
                     ],
-                    "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format."
+                    "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
+                    "meta:titleId": "profile-preferences-details##xdm:preferredLanguage##title##66021",
+                    "meta:descriptionId": "profile-preferences-details##xdm:preferredLanguage##description##18531"
                 },
                 "xdm:profilePictureLink": {
                     "title": "Profile picture link",
                     "type": "string",
-                    "description": "Link to profile's picture."
+                    "description": "Link to profile's picture.",
+                    "meta:titleId": "profile-preferences-details##xdm:profilePictureLink##title##81771",
+                    "meta:descriptionId": "profile-preferences-details##xdm:profilePictureLink##description##33811"
                 },
                 "xdm:emailFormat": {
                     "title": "Email format",
@@ -41,7 +45,9 @@
                     "meta:enum": {
                         "html": "Rich text",
                         "plaintext": "Plain text"
-                    }
+                    },
+                    "meta:titleId": "profile-preferences-details##xdm:emailFormat##title##11401",
+                    "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##78131"
                 },
                 "xdm:timeZone": {
                     "title": "Time zone",
@@ -51,13 +57,17 @@
                         "Antarctica/Davis",
                         "Asia/Calcutta"
                     ],
-                    "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm"
+                    "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
+                    "meta:titleId": "profile-preferences-details##xdm:timeZone##title##54561",
+                    "meta:descriptionId": "profile-preferences-details##xdm:timeZone##description##31351"
                 },
                 "xdm:optInOut": {
                     "title": "OptInOut",
                     "$ref": "https://ns.adobe.com/xdm/context/optinout",
                     "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
-                    "meta:status": "deprecated"
+                    "meta:status": "deprecated",
+                    "meta:titleId": "profile-preferences-details##xdm:optInOut##title##57841",
+                    "meta:descriptionId": "profile-preferences-details##xdm:optInOut##description##97321"
                 }
             }
         }
@@ -72,6 +82,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "profile-preferences-details##title##2931",
+    "meta:descriptionId": "profile-preferences-details##description##81111",
     "examples": [
         {
             "xdm:optInOut": {

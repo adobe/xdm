@@ -17,11 +17,13 @@
                 "@id": {
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "The unique identifier of this metric."
+                    "description": "The unique identifier of this metric.",
+                    "meta:descriptionId": "metricdefinition##@id##description##54541"
                 },
                 "schema:name": {
                     "type": "string",
-                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:descriptionId": "metricdefinition##schema:name##description##81811"
                 },
                 "xdm:measurement": {
                     "type": "string",
@@ -31,7 +33,8 @@
                         "time",
                         "price",
                         "count"
-                    ]
+                    ],
+                    "meta:descriptionId": "metricdefinition##xdm:measurement##description##90861"
                 },
                 "xdm:unit": {
                     "type": "string",
@@ -41,7 +44,8 @@
                         "kg",
                         "s",
                         "USD"
-                    ]
+                    ],
+                    "meta:descriptionId": "metricdefinition##xdm:unit##description##50321"
                 }
             }
         }
@@ -62,6 +66,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "metricdefinition##title##1451",
+    "meta:descriptionId": "metricdefinition##description##34591",
     "examples": [
         {
             "schema:name": "Example Metric",

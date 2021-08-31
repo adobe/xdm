@@ -28,19 +28,33 @@
                         "xdm:opportunityID": {
                             "title": "Opportunity ID",
                             "type": "string",
-                            "description": "Unique ID of the Opportunity."
+                            "description": "Unique identifier of the Opportunity.",
+                            "meta:titleId": "add-to-opportunity##xdm:opportunityID##title##47971",
+                            "meta:descriptionId": "add-to-opportunity##xdm:opportunityID##description##17941"
+                        },
+                        "xdm:opportunityKey": {
+                            "title": "Opportunity Key",
+                            "description": "Unique composite identifier of the Opportunity.",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                            "meta:titleId": "add-to-opportunity##xdm:opportunityKey##title##72821",
+                            "meta:descriptionId": "add-to-opportunity##xdm:opportunityKey##description##1381"
                         },
                         "xdm:isPrimary": {
                             "title": "Is Primary",
                             "type": "boolean",
-                            "description": "Boolean indicating if person is the primary contact on the Opportunity."
+                            "description": "Boolean indicating if person is the primary contact on the Opportunity.",
+                            "meta:titleId": "add-to-opportunity##xdm:isPrimary##title##24191",
+                            "meta:descriptionId": "add-to-opportunity##xdm:isPrimary##description##75651"
                         },
                         "xdm:role": {
                             "title": "Role",
                             "type": "string",
-                            "description": "Role of the person on the Opportunity."
+                            "description": "Role of the person on the Opportunity.",
+                            "meta:titleId": "add-to-opportunity##xdm:role##title##44651",
+                            "meta:descriptionId": "add-to-opportunity##xdm:role##description##41401"
                         }
-                    }
+                    },
+                    "meta:titleId": "add-to-opportunity##xdm:opportunityEvent##title##47391"
                 }
             }
         }
@@ -52,6 +66,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "add-to-opportunity##title##80101",
+    "meta:descriptionId": "add-to-opportunity##description##26351",
     "examples": [
         {}
     ]

@@ -86,6 +86,9 @@
           "required": ["xdm:description"]
         },
         {
+          "required": ["xdm:note"]
+        },
+        {
           "required": ["meta:enum"]
         }
       ],

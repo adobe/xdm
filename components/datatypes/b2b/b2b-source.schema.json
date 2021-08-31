@@ -15,26 +15,33 @@
   "definitions": {
     "b2b-source": {
       "properties": {
-        "xdm:systemID": {
-          "title": "System ID",
+        "xdm:sourceType": {
+          "title": "Source Type",
           "type": "string",
-          "description": "This is an identifier for the source system itself and potentially includes the object type.",
-          "meta:titleId": "b2b-source##xdm:systemID##title##36261",
-          "meta:descriptionId": "b2b-source##xdm:systemID##description##99011"
+          "description": "Instance or Organization Id of the source data.",
+          "meta:titleId": "b2b-source##xdm:sourceType##title##56201",
+          "meta:descriptionId": "b2b-source##xdm:sourceType##description##31691"
         },
-        "xdm:ID": {
-          "title": "ID",
+        "xdm:sourceInstanceID": {
+          "title": "Source Instance ID",
           "type": "string",
-          "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc.",
-          "meta:titleId": "b2b-source##xdm:ID##title##93071",
-          "meta:descriptionId": "b2b-source##xdm:ID##description##33021"
+          "description": "Name of the platform with the source data.",
+          "meta:titleId": "b2b-source##xdm:sourceInstanceID##title##36261",
+          "meta:descriptionId": "b2b-source##xdm:sourceInstanceID##description##99011"
         },
-        "xdm:key": {
-          "title": "System Key",
-          "description": "This is concatination of systemId and id. The concatenated value is created by the connector in the data pipe, so it’s already in the source.",
+        "xdm:sourceID": {
+          "title": "Source ID",
           "type": "string",
-          "meta:titleId": "b2b-source##xdm:key##title##17431",
-          "meta:descriptionId": "b2b-source##xdm:key##description##99891"
+          "description": "Identifier of the record from the source data.",
+          "meta:titleId": "b2b-source##xdm:sourceID##title##93071",
+          "meta:descriptionId": "b2b-source##xdm:sourceID##description##33021"
+        },
+        "xdm:sourceKey": {
+          "title": "Source Key",
+          "type": "string",
+          "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId.",
+          "meta:titleId": "b2b-source##xdm:sourceKey##title##17431",
+          "meta:descriptionId": "b2b-source##xdm:sourceKey##description##99891"
         }
       }
     }
@@ -47,7 +54,7 @@
       "$ref": "#/definitions/b2b-source"
     }
   ],
-  "meta:status": "deprecated",
+  "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "b2b-source##title##53031",
   "meta:descriptionId": "b2b-source##description##361"

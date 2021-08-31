@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/xdm/mixins/profile-consents",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Consents and Preferences",
+    "title": "Consent and Preference Details",
     "description": "This schema captures privacy, personalization and marketing preferences (consents).",
     "type": "object",
     "meta:extensible": true,
@@ -28,6 +28,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-11-04",
+    "meta:titleId": "profile-consents##title##62311",
+    "meta:descriptionId": "profile-consents##description##82591",
     "examples": [
         {
             "xdm:consents": {

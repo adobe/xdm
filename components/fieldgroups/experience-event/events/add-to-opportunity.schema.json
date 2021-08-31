@@ -28,9 +28,16 @@
             "xdm:opportunityID": {
               "title": "Opportunity ID",
               "type": "string",
-              "description": "Unique ID of the Opportunity.",
+              "description": "Unique identifier of the Opportunity.",
               "meta:titleId": "add-to-opportunity##xdm:opportunityID##title##63081",
               "meta:descriptionId": "add-to-opportunity##xdm:opportunityID##description##1631"
+            },
+            "xdm:opportunityKey": {
+              "title": "Opportunity Key",
+              "description": "Unique composite identifier of the Opportunity.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "add-to-opportunity##xdm:opportunityKey##title##72821",
+              "meta:descriptionId": "add-to-opportunity##xdm:opportunityKey##description##1381"
             },
             "xdm:isPrimary": {
               "title": "Is Primary",

@@ -16,7 +16,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
-  "description": "This mixin is used to capture properties related to business campaign details.",
+  "description": "Captures properties related to business campaign details.",
   "definitions": {
     "campaign-details": {
       "properties": {
@@ -26,6 +26,13 @@
           "type": "string",
           "meta:titleId": "campaign-details##xdm:parentCampaignID##title##3341",
           "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##9571"
+        },
+        "xdm:parentCampaignKey": {
+          "title": "Parent Campaign Key",
+          "description": "Unique composite identifier of the Parent Campaign of the campaign, used to show hierarchies.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "campaign-details##xdm:parentCampaignKey##title##86551",
+          "meta:descriptionId": "campaign-details##xdm:parentCampaignKey##description##35571"
         },
         "xdm:campaignStatus": {
           "title": "Campaign Status",

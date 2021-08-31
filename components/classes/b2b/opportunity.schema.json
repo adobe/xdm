@@ -27,6 +27,13 @@
           "meta:titleId": "opportunity##xdm:opportunityID##title##121",
           "meta:descriptionId": "opportunity##xdm:opportunityID##description##45451"
         },
+        "xdm:opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier for the Opportunity.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "opportunity##xdm:opportunityKey##title##89081",
+          "meta:descriptionId": "opportunity##xdm:opportunityKey##description##49971"
+        },
         "xdm:opportunityName": {
           "title": "Opportunity Name",
           "description": "Name of the opportunity.",
@@ -61,6 +68,13 @@
           "type": "string",
           "meta:titleId": "opportunity##xdm:accountID##title##77231",
           "meta:descriptionId": "opportunity##xdm:accountID##description##71091"
+        },
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite identifier of the account this opportunity is associated with.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "opportunity##xdm:accountKey##title##83401",
+          "meta:descriptionId": "opportunity##xdm:accountKey##description##62551"
         }
       }
     }
@@ -79,7 +93,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:opportunityID"],
   "meta:status": "experimental",
   "meta:titleId": "opportunity##title##26231",
   "meta:descriptionId": "opportunity##description##20011"

@@ -7,18 +7,20 @@
     ],
     "$id": "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "External Source System Audit Details Mixin",
+    "title": "External Source System Audit Details",
     "type": "object",
     "meta:extensible": true,
     "meta:intendedToExtend": [],
-    "description": "Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.",
+    "description": "Defines a set of audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.",
     "definitions": {
         "externalSourceSystemAuditDetails": {
             "properties": {
                 "xdm:extSourceSystemAudit": {
                     "title": "External Source System Audit Properties",
                     "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit",
-                    "description": "Audit attributes for external sources."
+                    "description": "Audit attributes for external sources.",
+                    "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+                    "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451"
                 }
             }
         }
@@ -33,6 +35,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "external-source-system-audit-details##title##25871",
+    "meta:descriptionId": "external-source-system-audit-details##description##77561",
     "examples": [
         {
             "xdm:createdBy": "USER111",

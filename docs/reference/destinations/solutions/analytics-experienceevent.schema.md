@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/destinations/adobe-analytics
 ```
 
-Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent mixins.
+Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent field groups.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -2885,7 +2885,7 @@ Information related to advertising impressions, clickthroughs, and attribution.
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional
@@ -3064,6 +3064,8 @@ The primary event type for this time-series record.
 | `advertising.midpoints` | Advertising Midpoints |
 | `advertising.starts` | Advertising Starts |
 | `advertising.thirdQuartiles` | Advertising Third Quartiles |
+| `application.close` | Application Close |
+| `application.launch` | Application Launch |
 | `web.webpagedetails.pageViews` | Web Webpagedetails Page Views |
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
@@ -3076,6 +3078,8 @@ The primary event type for this time-series record.
 | `commerce.productViews` | Commerce Product Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
+| `decisioning.propositionDisplay` | Decisioning Proposition Display |
+| `decisioning.propositionInteract` | Decisioning Proposition Interact |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |

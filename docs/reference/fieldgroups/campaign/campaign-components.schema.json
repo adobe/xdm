@@ -14,7 +14,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/classes/campaign"
     ],
-    "description": "This mixin is used to capture b2b campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
+    "description": "Captures B2B campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
     "definitions": {
         "campaign-components": {
             "properties": {
@@ -26,22 +26,30 @@
                             "xdm:sourceCampaignID": {
                                 "title": "Source Campaign ID",
                                 "description": "Campaign unique identifier at source.",
-                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                "meta:titleId": "campaign-components##xdm:sourceCampaignID##title##96931",
+                                "meta:descriptionId": "campaign-components##xdm:sourceCampaignID##description##14521"
                             },
                             "xdm:sourceParentCampaignID": {
                                 "title": "Source Parent Campaign ID",
                                 "description": "Account unique identifier at the source.",
-                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                "meta:titleId": "campaign-components##xdm:sourceParentCampaignID##title##10681",
+                                "meta:descriptionId": "campaign-components##xdm:sourceParentCampaignID##description##27451"
                             },
                             "xdm:sourceExternalID": {
                                 "title": "Source External ID",
                                 "description": "External unique identifier at the source.",
-                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                "meta:titleId": "campaign-components##xdm:sourceExternalID##title##76071",
+                                "meta:descriptionId": "campaign-components##xdm:sourceExternalID##description##62671"
                             },
                             "xdm:sourceCampaignOwnerID": {
                                 "title": "Source Campaign Owner ID",
                                 "description": "Campaign owner unique identifier at the source.",
-                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                "meta:titleId": "campaign-components##xdm:sourceCampaignOwnerID##title##37471",
+                                "meta:descriptionId": "campaign-components##xdm:sourceCampaignOwnerID##description##99481"
                             }
                         }
                     }
@@ -56,6 +64,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-09-29",
+    "meta:titleId": "campaign-components##title##42811",
+    "meta:descriptionId": "campaign-components##description##36571",
     "examples": [
         {}
     ]

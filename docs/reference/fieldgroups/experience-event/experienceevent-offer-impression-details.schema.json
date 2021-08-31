@@ -38,17 +38,23 @@
                         "xdm:ID": {
                             "title": "Offer ID",
                             "type": "string",
-                            "description": "Offer Identifier."
+                            "description": "Offer Identifier.",
+                            "meta:titleId": "experienceevent-offer-impression-details##xdm:ID##title##54591",
+                            "meta:descriptionId": "experienceevent-offer-impression-details##xdm:ID##description##741"
                         },
                         "xdm:clicks": {
                             "title": "Offer Clicks",
                             "type": "integer",
-                            "description": "Counts the number of times an offer has been clicked."
+                            "description": "Counts the number of times an offer has been clicked.",
+                            "meta:titleId": "experienceevent-offer-impression-details##xdm:clicks##title##79951",
+                            "meta:descriptionId": "experienceevent-offer-impression-details##xdm:clicks##description##78471"
                         },
                         "xdm:dismissals": {
                             "title": "Offer Dismissals",
                             "type": "integer",
-                            "description": "Counts the number of times an offer has been dismissed."
+                            "description": "Counts the number of times an offer has been dismissed.",
+                            "meta:titleId": "experienceevent-offer-impression-details##xdm:dismissals##title##95451",
+                            "meta:descriptionId": "experienceevent-offer-impression-details##xdm:dismissals##description##81391"
                         },
                         "xdm:impressions": {
                             "title": "Offer Impression Details",
@@ -56,15 +62,20 @@
                             "items": {
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/impressions"
                             },
-                            "description": "An array of advertisements that have been displayed to a customer."
+                            "description": "An array of advertisements that have been displayed to a customer.",
+                            "meta:titleId": "experienceevent-offer-impression-details##xdm:impressions##title##96241",
+                            "meta:descriptionId": "experienceevent-offer-impression-details##xdm:impressions##description##37101"
                         },
                         "xdm:offerSteps": {
                             "title": "Offer Steps",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
                             "description": "Extension of toolUsage data type.",
-                            "meta:status": "deprecated"
+                            "meta:status": "deprecated",
+                            "meta:titleId": "experienceevent-offer-impression-details##xdm:offerSteps##title##52441",
+                            "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offerSteps##description##79671"
                         }
-                    }
+                    },
+                    "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offers##description##93931"
                 }
             }
         }
@@ -76,6 +87,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-01-15",
+    "meta:titleId": "experienceevent-offer-impression-details##title##90831",
+    "meta:descriptionId": "experienceevent-offer-impression-details##description##95841",
     "examples": [
         {
             "xdm:marketing ": {

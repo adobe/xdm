@@ -26,6 +26,13 @@
           "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
           "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
         },
+        "xdm:marketingListKey": {
+          "title": "Marketing List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "marketing-list##xdm:marketingListKey##title##75021",
+          "meta:descriptionId": "marketing-list##xdm:marketingListKey##description##38201"
+        },
         "xdm:marketingListName": {
           "title": "Marketing List Name",
           "description": "Name of the marketing list.",
@@ -57,7 +64,6 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "required": ["xdm:marketingListID"],
   "meta:status": "experimental",
   "meta:titleId": "marketing-list##title##32631",
   "meta:descriptionId": "marketing-list##description##65341"

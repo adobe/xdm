@@ -29,49 +29,67 @@
                             "xdm:nodeId": {
                                 "title": "Node Identifier",
                                 "description": "The unique identifier of the identity associated with this graph node.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-node##xdm:nodeId##title##65911",
+                                "meta:descriptionId": "graph-node##xdm:nodeId##description##60891"
                             },
                             "xdm:nodeType": {
                                 "title": "Node Type",
                                 "description": "Type of node.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-node##xdm:nodeType##title##9491",
+                                "meta:descriptionId": "graph-node##xdm:nodeType##description##88301"
                             },
                             "xdm:label": {
                                 "title": "Node Label",
                                 "description": "Node label.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-node##xdm:label##title##97001",
+                                "meta:descriptionId": "graph-node##xdm:label##description##85081"
                             },
                             "xdm:dataSource": {
                                 "title": "Data Source",
                                 "description": "Data source for the node.",
-                                "type": "string"
+                                "type": "string",
+                                "meta:titleId": "graph-node##xdm:dataSource##title##85321",
+                                "meta:descriptionId": "graph-node##xdm:dataSource##description##61621"
                             },
                             "xdm:firstSeenTimestamp": {
                                 "title": "Node First Seen Date And Time",
                                 "description": "Time and date this node was first seen.",
                                 "type": "string",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "meta:titleId": "graph-node##xdm:firstSeenTimestamp##title##12481",
+                                "meta:descriptionId": "graph-node##xdm:firstSeenTimestamp##description##79291"
                             },
                             "xdm:lastSeenTimestamp": {
                                 "title": "Node Last Seen Date And Time",
                                 "description": "Time and date this node was last seen.",
                                 "type": "string",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "meta:titleId": "graph-node##xdm:lastSeenTimestamp##title##54531",
+                                "meta:descriptionId": "graph-node##xdm:lastSeenTimestamp##description##63391"
                             },
                             "xdm:firstCreateTimestamp": {
                                 "title": "Node Created Date And Time",
                                 "description": "Time and date this node was first created.",
                                 "type": "string",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "meta:titleId": "graph-node##xdm:firstCreateTimestamp##title##66571",
+                                "meta:descriptionId": "graph-node##xdm:firstCreateTimestamp##description##29121"
                             },
                             "xdm:lastModifiedTimestamp": {
                                 "title": "Node Last Modified Date And Time",
                                 "description": "Time and date this node was last modified.",
                                 "type": "string",
-                                "format": "date-time"
+                                "format": "date-time",
+                                "meta:titleId": "graph-node##xdm:lastModifiedTimestamp##title##64781",
+                                "meta:descriptionId": "graph-node##xdm:lastModifiedTimestamp##description##21591"
                             }
                         }
-                    }
+                    },
+                    "meta:titleId": "graph-node##xdm:nodes##title##19591",
+                    "meta:descriptionId": "graph-node##xdm:nodes##description##52461"
                 }
             }
         }
@@ -86,6 +104,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "graph-node##title##64931",
+    "meta:descriptionId": "graph-node##description##26051",
     "examples": [
         {
             "xdm:nodes": [

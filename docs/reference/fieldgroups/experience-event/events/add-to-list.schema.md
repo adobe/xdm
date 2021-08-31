@@ -40,6 +40,7 @@ Use to track when a person is added to a specific list.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:listID`| string | Optional |
+| `xdm:listKey`|  | Optional |
 
 
 
@@ -57,6 +58,26 @@ Unique ID of the Marketing List.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:listKey
+##### List Key
+
+Unique composite identifier of the Marketing List.
+
+`xdm:listKey`
+* is optional
+* type: reference
+
+##### xdm:listKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

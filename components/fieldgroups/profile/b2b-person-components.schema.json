@@ -91,6 +91,34 @@
                 "type": "string",
                 "meta:titleId": "b2b-person-components##xdm:personGroupID##title##55741",
                 "meta:descriptionId": "b2b-person-components##xdm:personGroupID##description##6821"
+              },
+              "xdm:sourcePersonKey": {
+                "title": "Source Person Key",
+                "description": "Unique identifier of the Person.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "b2b-person-components##xdm:sourcePersonKey##title##85431",
+                "meta:descriptionId": "b2b-person-components##xdm:sourcePersonKey##description##71621"
+              },
+              "xdm:sourceAccountKey": {
+                "title": "Source Account Key",
+                "description": "Unique identifier of the Account.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "b2b-person-components##xdm:sourceAccountKey##title##47291",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceAccountKey##description##59571"
+              },
+              "xdm:sourceConvertedContactKey": {
+                "title": "Source Converted Contact Key",
+                "description": "Unique identifier of the Contact if the lead was converted.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "b2b-person-components##xdm:sourceConvertedContactKey##title##94831",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceConvertedContactKey##description##78811"
+              },
+              "xdm:sourceExternalKey": {
+                "title": "Source External Key",
+                "description": "External unique identifier of the source.",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                "meta:titleId": "b2b-person-components##xdm:sourceExternalKey##title##37511",
+                "meta:descriptionId": "b2b-person-components##xdm:sourceExternalKey##description##37501"
               }
             }
           }

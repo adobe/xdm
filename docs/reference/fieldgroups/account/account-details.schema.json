@@ -24,68 +24,99 @@
                 "xdm:accountName": {
                     "title": "Account Name",
                     "description": "name of company. Up to 255 characters are allowed in this field.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountName##title##45221",
+                    "meta:descriptionId": "account-details##xdm:accountName##description##74861"
                 },
                 "xdm:accountTerritoryID": {
                     "title": "Account Territory Id",
                     "description": "The territory to which the account has been assigned.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountTerritoryID##title##8121",
+                    "meta:descriptionId": "account-details##xdm:accountTerritoryID##description##74601"
                 },
                 "xdm:accountScore": {
                     "title": "Account Score",
-                    "type": "number"
+                    "type": "number",
+                    "meta:titleId": "account-details##xdm:accountScore##title##30881"
                 },
                 "xdm:accountBillingAddress": {
                     "title": "Account Billing Address",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "meta:titleId": "account-details##xdm:accountBillingAddress##title##241"
                 },
                 "xdm:accountShippingAddress": {
                     "title": "Account Shipping Address",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "meta:titleId": "account-details##xdm:accountShippingAddress##title##99011"
                 },
                 "xdm:accountPhysicalAddress": {
                     "title": "Account Physical Address",
                     "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "meta:titleId": "account-details##xdm:accountPhysicalAddress##title##33351",
+                    "meta:descriptionId": "account-details##xdm:accountPhysicalAddress##description##48671"
                 },
                 "xdm:accountOrganization": {
                     "title": "Account Organization",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization",
+                    "meta:titleId": "account-details##xdm:accountOrganization##title##40891"
                 },
                 "xdm:accountParentID": {
                     "title": "Parent Account",
                     "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountParentID##title##96621",
+                    "meta:descriptionId": "account-details##xdm:accountParentID##description##23471"
+                },
+                "xdm:accountParentKey": {
+                    "title": "Parent Account Key",
+                    "description": "Unique identifier of the Parent Account of the account, used to show hierarchies or subsidiaries.",
+                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                    "meta:titleId": "account-details##xdm:accountParentKey##title##43181",
+                    "meta:descriptionId": "account-details##xdm:accountParentKey##description##7731"
                 },
                 "xdm:partnerAccountID": {
                     "title": "Partner Account Id",
                     "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
+                    "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561"
                 },
                 "xdm:accountNumber": {
                     "title": "Account Number",
                     "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountNumber##title##16911",
+                    "meta:descriptionId": "account-details##xdm:accountNumber##description##74211"
                 },
                 "xdm:accountDescription": {
                     "title": "Account Description",
                     "description": "Text description of the account.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountDescription##title##56141",
+                    "meta:descriptionId": "account-details##xdm:accountDescription##description##5511"
                 },
                 "xdm:accountSite": {
                     "title": "Account Site Details",
                     "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountSite##title##79461",
+                    "meta:descriptionId": "account-details##xdm:accountSite##description##63731"
                 },
                 "xdm:accountType": {
                     "title": "Account Type",
                     "description": "Account Type.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountType##title##68211",
+                    "meta:descriptionId": "account-details##xdm:accountType##description##20851"
                 },
                 "xdm:accountSourceType": {
                     "title": "Account Source Type",
                     "description": "Source type for the account.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountSourceType##title##46561",
+                    "meta:descriptionId": "account-details##xdm:accountSourceType##description##63181"
                 },
                 "xdm:defaultCurrencyCode": {
                     "title": "Default Currency Code",
@@ -95,27 +126,37 @@
                         "EUR"
                     ],
                     "pattern": "^[A-Z]{3}$",
-                    "description": "The ISO 4217 currency code."
+                    "description": "The ISO 4217 currency code.",
+                    "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##72191",
+                    "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##91831"
                 },
                 "xdm:accountOwnership": {
                     "title": "Ownership",
                     "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountOwnership##title##19171",
+                    "meta:descriptionId": "account-details##xdm:accountOwnership##description##26971"
                 },
                 "xdm:accountTradeStyle": {
                     "title": "Account Trade Style",
                     "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "account-details##xdm:accountTradeStyle##title##66321",
+                    "meta:descriptionId": "account-details##xdm:accountTradeStyle##description##36641"
                 },
                 "xdm:accountPhone": {
                     "title": "Account Phone Number",
                     "description": "Phone number for the account.",
-                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "meta:titleId": "account-details##xdm:accountPhone##title##9271",
+                    "meta:descriptionId": "account-details##xdm:accountPhone##description##71451"
                 },
                 "xdm:accountFax": {
                     "title": "Account Fax Number",
                     "description": "Fax number for the account.",
-                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "meta:titleId": "account-details##xdm:accountFax##title##24311",
+                    "meta:descriptionId": "account-details##xdm:accountFax##description##97141"
                 }
             }
         }
@@ -127,6 +168,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-08-27",
+    "meta:titleId": "account-details##title##74051",
+    "meta:descriptionId": "account-details##description##73811",
     "examples": [
         {}
     ]

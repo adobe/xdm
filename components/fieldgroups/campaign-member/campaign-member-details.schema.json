@@ -76,6 +76,13 @@
           "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##51731",
           "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##39701"
         },
+        "xdm:acquiredByCampaignKey": {
+          "title": "Acquired By Campaign Key",
+          "description": "Unique composite identifier of the campaign where the person became a member",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignKey##title##7071",
+          "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignKey##description##53591"
+        },
         "xdm:hasReachedSuccess": {
           "title": "Has Reached Success",
           "description": "",

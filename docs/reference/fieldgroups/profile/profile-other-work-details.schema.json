@@ -14,19 +14,23 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/profile"
     ],
-    "description": "This mixin is used to capture information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
+    "description": "Captures information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
     "definitions": {
         "profile-other-work-details": {
             "properties": {
                 "xdm:otherAddress": {
                     "title": "Other Address",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                    "description": "Other/Alternate postal address of the person."
+                    "description": "Other/Alternate postal address of the person.",
+                    "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##85331",
+                    "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##6861"
                 },
                 "xdm:otherPhone": {
                     "title": "Other Phone",
                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                    "description": "Other/Alternate phone number of the person."
+                    "description": "Other/Alternate phone number of the person.",
+                    "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##33531",
+                    "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##74521"
                 },
                 "xdm:extendedWorkDetails": {
                     "type": "object",
@@ -39,19 +43,26 @@
                                 "xdm:name": {
                                     "title": "Assistant Name",
                                     "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                                    "description": "Person's assistant full name."
+                                    "description": "Person's assistant full name.",
+                                    "meta:titleId": "profile-other-work-details##xdm:name##title##15041",
+                                    "meta:descriptionId": "profile-other-work-details##xdm:name##description##3791"
                                 },
                                 "xdm:phone": {
                                     "title": "Assistant Phone",
                                     "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
-                                    "description": "Person's assistant phone number."
+                                    "description": "Person's assistant phone number.",
+                                    "meta:titleId": "profile-other-work-details##xdm:phone##title##18631",
+                                    "meta:descriptionId": "profile-other-work-details##xdm:phone##description##36581"
                                 }
-                            }
+                            },
+                            "meta:titleId": "profile-other-work-details##xdm:assistantDetails##title##28991"
                         },
                         "xdm:reportsToID": {
                             "title": "Reports To Id",
                             "description": "Identifier of the Reporting Manager.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "profile-other-work-details##xdm:reportsToID##title##95861",
+                            "meta:descriptionId": "profile-other-work-details##xdm:reportsToID##description##9321"
                         },
                         "xdm:departments": {
                             "title": "Department Name",
@@ -59,20 +70,27 @@
                             "type": "array",
                             "items": {
                                 "type": "string"
-                            }
+                            },
+                            "meta:titleId": "profile-other-work-details##xdm:departments##title##74941",
+                            "meta:descriptionId": "profile-other-work-details##xdm:departments##description##2771"
                         },
                         "xdm:jobTitle": {
                             "title": "Job Title",
                             "description": "Job title of the person.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "profile-other-work-details##xdm:jobTitle##title##75781",
+                            "meta:descriptionId": "profile-other-work-details##xdm:jobTitle##description##80761"
                         },
                         "xdm:photoUrl": {
                             "title": "Photo Url",
                             "description": "Photo url of the person.",
                             "type": "string",
-                            "format": "uri"
+                            "format": "uri",
+                            "meta:titleId": "profile-other-work-details##xdm:photoUrl##title##8281",
+                            "meta:descriptionId": "profile-other-work-details##xdm:photoUrl##description##27401"
                         }
-                    }
+                    },
+                    "meta:titleId": "profile-other-work-details##xdm:extendedWorkDetails##title##17221"
                 }
             }
         }
@@ -87,6 +105,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-08-18",
+    "meta:titleId": "profile-other-work-details##title##92871",
+    "meta:descriptionId": "profile-other-work-details##description##66801",
     "examples": [
         {
             "xdm:otherAddress": {

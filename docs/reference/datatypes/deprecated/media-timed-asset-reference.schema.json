@@ -19,60 +19,82 @@
                     "title": "Asset ID",
                     "type": "string",
                     "format": "uri-reference",
-                    "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
+                    "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs.",
+                    "meta:titleId": "media-timed-asset-reference##@id##title##87331",
+                    "meta:descriptionId": "media-timed-asset-reference##@id##description##32571"
                 },
                 "dc:title": {
                     "title": "Content name",
                     "type": "string",
-                    "description": "The friendly, human-readable name of the timed media asset."
+                    "description": "The friendly, human-readable name of the timed media asset.",
+                    "meta:titleId": "media-timed-asset-reference##dc:title##title##2301",
+                    "meta:descriptionId": "media-timed-asset-reference##dc:title##description##3961"
                 },
                 "dc:creator": {
                     "title": "Originator",
                     "type": "string",
-                    "description": "Creator of the content."
+                    "description": "Creator of the content.",
+                    "meta:titleId": "media-timed-asset-reference##dc:creator##title##42961",
+                    "meta:descriptionId": "media-timed-asset-reference##dc:creator##description##12411"
                 },
                 "id3:Audio": {
                     "title": "Audio",
                     "description": "Metadata specific to audio content (record label, radio station, etc.).",
                     "$ref": "https://id3.org/id3v2.4/audio",
-                    "meta:status": "deprecated"
+                    "meta:status": "deprecated",
+                    "meta:titleId": "media-timed-asset-reference##id3:Audio##title##68701",
+                    "meta:descriptionId": "media-timed-asset-reference##id3:Audio##description##7671"
                 },
                 "xmpDM:artist": {
                     "title": "Artist",
                     "type": "string",
                     "description": "The name of the album artist or group performing the music recording or video.",
-                    "meta:status": "deprecated"
+                    "meta:status": "deprecated",
+                    "meta:titleId": "media-timed-asset-reference##xmpDM:artist##title##21121",
+                    "meta:descriptionId": "media-timed-asset-reference##xmpDM:artist##description##40151"
                 },
                 "xmpDM:album": {
                     "title": "Album",
                     "type": "string",
                     "description": "The name of the album that the music recording or video belongs to.",
-                    "meta:status": "deprecated"
+                    "meta:status": "deprecated",
+                    "meta:titleId": "media-timed-asset-reference##xmpDM:album##title##37851",
+                    "meta:descriptionId": "media-timed-asset-reference##xmpDM:album##description##61391"
                 },
                 "xdm:Audio": {
                     "title": "Audio",
                     "description": "Metadata specific to audio content (record label, radio station, etc.).",
-                    "$ref": "https://ns.adobe.com/xdm/context/media-timed-audio"
+                    "$ref": "https://ns.adobe.com/xdm/context/media-timed-audio",
+                    "meta:titleId": "media-timed-asset-reference##xdm:Audio##title##65551",
+                    "meta:descriptionId": "media-timed-asset-reference##xdm:Audio##description##15331"
                 },
                 "xmpDM:duration": {
                     "title": "Media content length",
                     "type": "integer",
-                    "description": "Length of primary media asset in seconds."
+                    "description": "Length of primary media asset in seconds.",
+                    "meta:titleId": "media-timed-asset-reference##xmpDM:duration##title##21731",
+                    "meta:descriptionId": "media-timed-asset-reference##xmpDM:duration##description##53481"
                 },
                 "xdm:showType": {
                     "title": "Show type",
                     "type": "string",
-                    "description": "The type of content for example, trailer or full episode."
+                    "description": "The type of content for example, trailer or full episode.",
+                    "meta:titleId": "media-timed-asset-reference##xdm:showType##title##92411",
+                    "meta:descriptionId": "media-timed-asset-reference##xdm:showType##description##12641"
                 },
                 "iptc4xmpExt:Series": {
                     "title": "Series",
                     "description": "The series the show belongs to.",
-                    "$ref": "http://www.iptc.org/series"
+                    "$ref": "http://www.iptc.org/series",
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Series##title##89681",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Series##description##36931"
                 },
                 "xdm:streamFormat": {
                     "title": "Stream format",
                     "type": "string",
-                    "description": "Free-form format of the stream for example, short or long."
+                    "description": "Free-form format of the stream for example, short or long.",
+                    "meta:titleId": "media-timed-asset-reference##xdm:streamFormat##title##77371",
+                    "meta:descriptionId": "media-timed-asset-reference##xdm:streamFormat##description##19291"
                 },
                 "xdm:streamType": {
                     "title": "Stream type",
@@ -88,17 +110,23 @@
                         "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
                         "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
                         "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
-                    }
+                    },
+                    "meta:titleId": "media-timed-asset-reference##xdm:streamType##title##49951",
+                    "meta:descriptionId": "media-timed-asset-reference##xdm:streamType##description##87141"
                 },
                 "iptc4xmpExt:Season": {
                     "title": "Season",
                     "description": "The season the show belongs to.",
-                    "$ref": "http://www.iptc.org/season"
+                    "$ref": "http://www.iptc.org/season",
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Season##title##57611",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Season##description##15841"
                 },
                 "iptc4xmpExt:Episode": {
                     "title": "Episode",
                     "description": "The episode the show belongs to.",
-                    "$ref": "http://www.iptc.org/episode"
+                    "$ref": "http://www.iptc.org/episode",
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Episode##title##98381",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Episode##description##89241"
                 },
                 "iptc4xmpExt:Genre": {
                     "title": "Genre",
@@ -106,7 +134,9 @@
                     "type": "array",
                     "items": {
                         "type": "string"
-                    }
+                    },
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Genre##title##44251",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Genre##description##9991"
                 },
                 "iptc4xmpExt:Rating": {
                     "title": "Content rating",
@@ -114,7 +144,9 @@
                     "type": "array",
                     "items": {
                         "$ref": "http://www.iptc.org/rating"
-                    }
+                    },
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Rating##title##43431",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Rating##description##70751"
                 },
                 "iptc4xmpExt:Creator": {
                     "title": "Creator",
@@ -122,17 +154,23 @@
                     "type": "array",
                     "items": {
                         "$ref": "http://www.iptc.org/creator"
-                    }
+                    },
+                    "meta:titleId": "media-timed-asset-reference##iptc4xmpExt:Creator##title##59891",
+                    "meta:descriptionId": "media-timed-asset-reference##iptc4xmpExt:Creator##description##88201"
                 },
                 "xdm:firstAirDate": {
                     "title": "First air date",
                     "type": "string",
-                    "description": "The date when the content first aired on television."
+                    "description": "The date when the content first aired on television.",
+                    "meta:titleId": "media-timed-asset-reference##xdm:firstAirDate##title##84051",
+                    "meta:descriptionId": "media-timed-asset-reference##xdm:firstAirDate##description##21251"
                 },
                 "xmpDM:releaseDate": {
                     "title": "First digital date",
                     "type": "string",
-                    "description": "The date when the content first aired on any digital channel or platform."
+                    "description": "The date when the content first aired on any digital channel or platform.",
+                    "meta:titleId": "media-timed-asset-reference##xmpDM:releaseDate##title##11961",
+                    "meta:descriptionId": "media-timed-asset-reference##xmpDM:releaseDate##description##1471"
                 }
             },
             "required": [
@@ -149,6 +187,8 @@
         }
     ],
     "meta:createdDate": "2021-02-19",
+    "meta:titleId": "media-timed-asset-reference##title##28441",
+    "meta:descriptionId": "media-timed-asset-reference##description##59971",
     "examples": [
         {
             "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",

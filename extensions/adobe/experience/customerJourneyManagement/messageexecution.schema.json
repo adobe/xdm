@@ -64,6 +64,16 @@
           "description": "Journey Action ID, for which MessageExecution is triggered.",
           "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##title##17681",
           "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID##description##74421"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": {
+          "title": "Message Type",
+          "type": "string",
+          "description": "Message Type, whether it's marketing or transactional message",
+          "enum": ["marketing", "transactional"],
+          "meta:enum": {
+            "marketing": "Marketing",
+            "transactional": "Transactional"
+          }
         }
       }
     }

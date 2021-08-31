@@ -15,7 +15,8 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
 * XDM Business Opportunity Person Relation `https://ns.adobe.com/xdm/classes/opportunity-person`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-  * [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
+  * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
 
 
 ## XDM Business Opportunity Person Relation Example
@@ -34,11 +35,14 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
-| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
-| [xdm:opportunityPersonID](#xdmopportunitypersonid) | `string` | **Required** | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityKey](#xdmopportunitykey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityPersonID](#xdmopportunitypersonid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:opportunityPersonKey](#xdmopportunitypersonkey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
+| [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:personRole](#xdmpersonrole) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -71,7 +75,7 @@ Audit attributes for external sources.
 `xdm:extSourceSystemAudit`
 * is optional
 * type: External Source System Audit Attributes
-* defined in [External Source System Audit Details Mixin](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
+* defined in [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit)
 
 ### xdm:extSourceSystemAudit Type
 
@@ -104,7 +108,7 @@ Boolean indicating if the person is the primary contact on this opportunity.
 ## xdm:opportunityID
 ### Opportunity ID
 
-Unique ID for the opportunity in this opportunity person relationship.
+Unique identifier for the opportunity in this opportunity person relationship.
 
 `xdm:opportunityID`
 * is optional
@@ -121,13 +125,32 @@ Unique ID for the opportunity in this opportunity person relationship.
 
 
 
+## xdm:opportunityKey
+### Opportunity Key
+
+Unique composite identifier of the Opportunity in this opportunity person relationship.
+
+`xdm:opportunityKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:opportunityKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:opportunityPersonID
 ### Opportunity Person ID
 
-Unique ID for the relationship between the opportunity and the person.
+Unique identifier for the relationship between the opportunity and the person.
 
 `xdm:opportunityPersonID`
-* is **required**
+* is optional
 * type: `string`
 * defined in this schema
 
@@ -141,10 +164,29 @@ Unique ID for the relationship between the opportunity and the person.
 
 
 
+## xdm:opportunityPersonKey
+### Opportunity Person Key
+
+Unique composite identifier of the relationship between the Opportunity and the Person.
+
+`xdm:opportunityPersonKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:opportunityPersonKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
 ## xdm:personID
 ### Person ID
 
-Unique ID for the person in this opportunity person relationship.
+Unique identifier for the person in this opportunity person relationship.
 
 `xdm:personID`
 * is optional
@@ -156,6 +198,25 @@ Unique ID for the person in this opportunity person relationship.
 
 `string`
 
+
+
+
+
+
+## xdm:personKey
+### Person Key
+
+Unique composite identifier of the Person related to the Opportunity.
+
+`xdm:personKey`
+* is optional
+* type: B2B Source
+* defined in this schema
+
+### xdm:personKey Type
+
+
+* [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

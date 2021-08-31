@@ -20,11 +20,13 @@
                     "type": "string",
                     "meta:enum": [
                         "ims"
-                    ]
+                    ],
+                    "meta:descriptionId": "identity##xdm:identityProvider##description##33251"
                 },
                 "xdm:id": {
                     "description": "Principal ID identifies a user account in IMS. Its value is equivalent to the standard claim, `sub` as mentioned in the [openid connect 1.0 standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaim). This value can be obtained by fetching the [userinfo resource](http://openid.net/specs/openid-connect-core-1_0.html#UserInfo) for a particular user [in IMS](https://wiki.corp.adobe.com/display/ims/IMS+API+-+userinfo).",
-                    "type": "string"
+                    "type": "string",
+                    "meta:descriptionId": "identity##xdm:id##description##46351"
                 },
                 "xdm:type": {
                     "type": "string",
@@ -32,7 +34,8 @@
                         "https://ns.adobe.com/xdm/common/user"
                     ],
                     "format": "uri",
-                    "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986)."
+                    "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
+                    "meta:descriptionId": "identity##xdm:type##description##86641"
                 }
             }
         },
@@ -40,19 +43,25 @@
             "xdm:displayName": {
                 "title": "Name",
                 "type": "string",
-                "description": "Display name."
+                "description": "Display name.",
+                "meta:titleId": "identity##xdm:displayName##title##1801",
+                "meta:descriptionId": "identity##xdm:displayName##description##19841"
             },
             "xdm:profileImage": {
                 "title": "Image",
                 "format": "uri",
                 "type": "string",
-                "description": "Profile avatar or picture of the person."
+                "description": "Profile avatar or picture of the person.",
+                "meta:titleId": "identity##xdm:profileImage##title##3961",
+                "meta:descriptionId": "identity##xdm:profileImage##description##55101"
             },
             "xdm:profileLink": {
                 "title": "Image",
                 "format": "uri",
                 "type": "string",
-                "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile."
+                "description": "Link to the public profile of the person, for example linking to the users Adobe Behance public profile.",
+                "meta:titleId": "identity##xdm:profileLink##title##10061",
+                "meta:descriptionId": "identity##xdm:profileLink##description##21611"
             }
         }
     },
@@ -71,18 +80,20 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
+    "meta:titleId": "identity##title##29311",
+    "meta:descriptionId": "identity##description##74751",
     "examples": [
+        {
+            "xdm:identityProvider": "ims",
+            "xdm:id": "C0B648DE57D701277F000101@AdobeID",
+            "xdm:type": "https://ns.adobe.com/xdm/common/user"
+        },
         {
             "xdm:identityProvider": "ims",
             "xdm:id": "C0B648DE57D701277F000101@AdobeID",
             "xdm:type": "https://ns.adobe.com/xdm/common/user",
             "xdm:displayName": "The users name",
             "xdm:profileImage": "https://mir-s3-cdn-cf.behance.net/user/276/b9c11633104347.57a9c2152b78e.jpg"
-        },
-        {
-            "xdm:identityProvider": "ims",
-            "xdm:id": "C0B648DE57D701277F000101@AdobeID",
-            "xdm:type": "https://ns.adobe.com/xdm/common/user"
         }
     ]
 }

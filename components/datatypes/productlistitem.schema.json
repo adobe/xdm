@@ -80,6 +80,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/productlistitem"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/product-measurement#/definitions/uomcode"
     }
   ],
   "meta:status": "stable",

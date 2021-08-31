@@ -64,19 +64,26 @@ Unknown type `object`.
     "xdm:assignTo": {
       "title": "Assign To",
       "type": "string",
-      "description": "Sales user converted lead is assigned to."
+      "description": "Sales user converted lead is assigned to.",
+      "meta:titleId": "convert-lead##xdm:assignTo##title##38391",
+      "meta:descriptionId": "convert-lead##xdm:assignTo##description##42551"
     },
     "xdm:isSentNotificationEmail": {
       "title": "Is Sent Notification Email",
       "type": "boolean",
-      "description": "Indicates whether assigned sales user received email notification of the converted lead."
+      "description": "Indicates whether assigned sales user received email notification of the converted lead.",
+      "meta:titleId": "convert-lead##xdm:isSentNotificationEmail##title##56291",
+      "meta:descriptionId": "convert-lead##xdm:isSentNotificationEmail##description##50331"
     },
     "xdm:convertedStatus": {
       "title": "Converted Status",
       "type": "string",
-      "description": "Converted status of lead."
+      "description": "Converted status of lead.",
+      "meta:titleId": "convert-lead##xdm:convertedStatus##title##77381",
+      "meta:descriptionId": "convert-lead##xdm:convertedStatus##description##13181"
     }
   },
+  "meta:titleId": "convert-lead##xdm:convertLead##title##22301",
   "simpletype": "`object`"
 }
 ```

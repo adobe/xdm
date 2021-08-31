@@ -1,10 +1,16 @@
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
     "marketing",
     "apparel"
   ],
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com"
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID": "1234",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID": "12345",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID": "9898",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount": 5
+  }
 }

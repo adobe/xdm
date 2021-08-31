@@ -24,6 +24,13 @@
           "meta:titleId": "campaign##xdm:campaignID##title##56561",
           "meta:descriptionId": "campaign##xdm:campaignID##description##21251"
         },
+        "xdm:campaignKey": {
+          "title": "Campaign Key",
+          "description": "Unique composite identifier of the Campaign.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:titleId": "campaign##xdm:campaignKey##title##84181",
+          "meta:descriptionId": "campaign##xdm:campaignKey##description##71261"
+        },
         "xdm:campaignName": {
           "title": "Campaign Name",
           "description": "Friendly name for campaign.",

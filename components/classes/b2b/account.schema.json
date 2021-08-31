@@ -32,8 +32,7 @@
           "description": "Unique composite key identifier for the Account.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
           "meta:titleId": "account##xdm:accountKey##title##76911",
-          "meta:descriptionId": "account##xdm:accountKey##description##47311",
-          "type": "string"
+          "meta:descriptionId": "account##xdm:accountKey##description##47311"
         }
       }
     }

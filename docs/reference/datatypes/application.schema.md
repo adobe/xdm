@@ -23,6 +23,17 @@ Details related to the application generated interactions. Application refers to
 {
   "xdm:id": "A123",
   "xdm:name": "Myapp",
+  "xdm:version": "1.0.1",
+  "xdm:isClose": true,
+  "xdm:closeType": "close",
+  "xdm:sessionlength": 5030
+}
+```
+
+```json
+{
+  "xdm:id": "A123",
+  "xdm:name": "Myapp",
   "xdm:version": "1.0.1"
 }
 ```
@@ -32,9 +43,7 @@ Details related to the application generated interactions. Application refers to
   "xdm:id": "A123",
   "xdm:name": "Myapp",
   "xdm:version": "1.0.1",
-  "xdm:launches": {
-    "xdm:value": 1
-  },
+  "xdm:isLaunch": true,
   "xdm:userPerspective": "foreground"
 }
 ```
@@ -45,13 +54,19 @@ Details related to the application generated interactions. Application refers to
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:applicationCloses](#xdmapplicationcloses) | Measure | Optional | Application (this schema) |
+| [xdm:closeType](#xdmclosetype) | `enum` | Optional | Application (this schema) |
 | [xdm:crashes](#xdmcrashes) | Measure | Optional | Application (this schema) |
 | [xdm:featureUsages](#xdmfeatureusages) | Measure | Optional | Application (this schema) |
 | [xdm:firstLaunches](#xdmfirstlaunches) | Measure | Optional | Application (this schema) |
 | [xdm:id](#xdmid) | `string` | Optional | Application (this schema) |
 | [xdm:installs](#xdminstalls) | Measure | Optional | Application (this schema) |
+| [xdm:isClose](#xdmisclose) | `boolean` | Optional | Application (this schema) |
+| [xdm:isInstall](#xdmisinstall) | `boolean` | Optional | Application (this schema) |
+| [xdm:isLaunch](#xdmislaunch) | `boolean` | Optional | Application (this schema) |
+| [xdm:isUpgrade](#xdmisupgrade) | `boolean` | Optional | Application (this schema) |
 | [xdm:launches](#xdmlaunches) | Measure | Optional | Application (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Application (this schema) |
+| [xdm:sessionLength](#xdmsessionlength) | `integer` | Optional | Application (this schema) |
 | [xdm:upgrades](#xdmupgrades) | Measure | Optional | Application (this schema) |
 | [xdm:userPerspective](#xdmuserperspective) | `enum` | Optional | Application (this schema) |
 | [xdm:version](#xdmversion) | `string` | Optional | Application (this schema) |
@@ -71,6 +86,27 @@ Graceful termination of an application.
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
 
+
+
+
+
+## xdm:closeType
+### Close Type
+
+Type of application close, sent on application isClose. Type is 'close' on graceful termination of an application, or 'unknown' when application termination source is unknown.
+
+`xdm:closeType`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmclosetype-known-values).
+
+### xdm:closeType Known Values
+| Value | Description |
+|-------|-------------|
+| `close` | Close |
+| `unknown` | Unknown |
 
 
 
@@ -130,7 +166,7 @@ Triggered on first launch after install.
 
 
 ## xdm:id
-### Application identifier
+### Application Identifier
 
 Identifier of the application.
 
@@ -162,6 +198,82 @@ Install of an application on a device where the specific install event is availa
 
 
 * [Measure](data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:isClose
+### Is Close
+
+Close of an application.
+
+`xdm:isClose`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isClose Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isInstall
+### Is Install
+
+Install of an application.
+
+`xdm:isInstall`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isInstall Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isLaunch
+### Is Launch
+
+Launch of an application.
+
+`xdm:isLaunch`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isLaunch Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isUpgrade
+### Is Upgrade
+
+Upgrade of an application.
+
+`xdm:isUpgrade`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isUpgrade Type
+
+
+`boolean`
 
 
 
@@ -205,6 +317,27 @@ Name of the application.
 
 
 
+## xdm:sessionLength
+### Session Length
+
+Length of the application session in seconds. Usually referred as the time the application was in foreground.
+
+`xdm:sessionLength`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:sessionLength Type
+
+
+`integer`
+* minimum value: `0`
+
+
+
+
+
+
 ## xdm:upgrades
 
 Upgrade of an application that has previously been installed. Triggered on first launch after upgrade.
@@ -224,6 +357,7 @@ Upgrade of an application that has previously been installed. Triggered on first
 
 
 ## xdm:userPerspective
+### User Perspective
 
 The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.
 

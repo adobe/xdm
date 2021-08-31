@@ -1,0 +1,181 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/aep-mobile-lifecycle-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Mobile Lifecycle Details",
+  "type": "object",
+  "description": "Application lifecycle information recorded via an ExperienceEvent that is specific to the Mobile channel. Includes field definitions for automatically collected data by the AEP Edge mobile extension library.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "application-identifier": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/identifier"
+        }
+      }
+    },
+    "application-name": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/name"
+        }
+      }
+    },
+    "application-version": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/version"
+        }
+      }
+    },
+    "application-close-properties": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/close-properties"
+        }
+      }
+    },
+    "application-islaunch": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/islaunch"
+        }
+      }
+    },
+    "application-isinstall": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/isinstall"
+        }
+      }
+    },
+    "application-isupgrade": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/isupgrade"
+        }
+      }
+    },
+    "application-sessionlength": {
+      "properties": {
+        "xdm:application": {
+          "$ref": "https://ns.adobe.com/xdm/context/application#/definitions/sessionlength"
+        }
+      }
+    },
+    "environment-type": {
+      "properties": {
+        "xdm:environment": {
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/type"
+        }
+      }
+    },
+    "environment-os-properties": {
+      "properties": {
+        "xdm:environment": {
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/os-properties"
+        }
+      }
+    },
+    "environment-carrier": {
+      "properties": {
+        "xdm:environment": {
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/carrier"
+        }
+      }
+    },
+    "environment-language": {
+      "properties": {
+        "xdm:environment": {
+          "$ref": "https://ns.adobe.com/xdm/context/environment#/definitions/language"
+        }
+      }
+    },
+    "device-type": {
+      "properties": {
+        "xdm:device": {
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/type"
+        }
+      }
+    },
+    "device-manufacturer": {
+      "properties": {
+        "xdm:device": {
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/manufacturer"
+        }
+      }
+    },
+    "device-model-properties": {
+      "properties": {
+        "xdm:device": {
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/model-properties"
+        }
+      }
+    },
+    "device-screendimensions": {
+      "properties": {
+        "xdm:device": {
+          "$ref": "https://ns.adobe.com/xdm/context/device#/definitions/screendimensions"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/application-identifier"
+    },
+    {
+      "$ref": "#/definitions/application-name"
+    },
+    {
+      "$ref": "#/definitions/application-version"
+    },
+    {
+      "$ref": "#/definitions/application-close-properties"
+    },
+    {
+      "$ref": "#/definitions/application-islaunch"
+    },
+    {
+      "$ref": "#/definitions/application-isinstall"
+    },
+    {
+      "$ref": "#/definitions/application-isupgrade"
+    },
+    {
+      "$ref": "#/definitions/application-sessionlength"
+    },
+    {
+      "$ref": "#/definitions/environment-type"
+    },
+    {
+      "$ref": "#/definitions/environment-os-properties"
+    },
+    {
+      "$ref": "#/definitions/environment-carrier"
+    },
+    {
+      "$ref": "#/definitions/environment-language"
+    },
+    {
+      "$ref": "#/definitions/device-type"
+    },
+    {
+      "$ref": "#/definitions/device-manufacturer"
+    },
+    {
+      "$ref": "#/definitions/device-model-properties"
+    },
+    {
+      "$ref": "#/definitions/device-screendimensions"
+    }
+  ],
+  "meta:status": "stable"
+}

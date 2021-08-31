@@ -94,6 +94,11 @@
           "title": "Retry Count",
           "type": "integer",
           "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
+          "title": "Offer details",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
+          "description": "Describes offer(s) involved in a message feedback."
         }
       }
     }

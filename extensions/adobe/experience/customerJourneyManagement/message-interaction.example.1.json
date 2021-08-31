@@ -8,9 +8,9 @@
   ],
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
+    "xdm:offerID": "1234",
+    "xdm:placementID": "12345",
+    "xdm:propositionID": "9898",
+    "xdm:offerCount": 5
   }
 }

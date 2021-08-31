@@ -19,12 +19,12 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-                    "meta:descriptionId": "channel##@id##description##93431"
+                    "meta:descriptionId": "channel##@id##description##68641"
                 },
                 "xdm:typeAtSource": {
                     "type": "string",
                     "description": "Customer defined custom channel name",
-                    "meta:descriptionId": "channel##xdm:typeAtSource##description##78871"
+                    "meta:descriptionId": "channel##xdm:typeAtSource##description##84401"
                 },
                 "xdm:mode": {
                     "type": "string",
@@ -39,7 +39,7 @@
                         "pull": "The consumer can initiate an experience by requesting a location in the channel. Most `pull` channels give publishers some control how the experience is then delivered.",
                         "bidirectional": "Both `push` and `pull` interaction modes are supported by the channel."
                     },
-                    "meta:descriptionId": "channel##xdm:mode##description##30081"
+                    "meta:descriptionId": "channel##xdm:mode##description##40711"
                 },
                 "@type": {
                     "type": "string",
@@ -65,7 +65,7 @@
                         "https://ns.adobe.com/xdm/channel-types/mail": "Mail",
                         "https://ns.adobe.com/xdm/channel-types/instore": "Instore"
                     },
-                    "meta:descriptionId": "channel##@type##description##65651"
+                    "meta:descriptionId": "channel##@type##description##71341"
                 },
                 "xdm:mediaType": {
                     "type": "string",
@@ -75,7 +75,7 @@
                         "owned": "Owned",
                         "earned": "Earned"
                     },
-                    "meta:descriptionId": "channel##xdm:mediaType##description##43001"
+                    "meta:descriptionId": "channel##xdm:mediaType##description##84831"
                 },
                 "xdm:mediaAction": {
                     "type": "string",
@@ -94,7 +94,7 @@
                         "userComplaints": "UserComplaints",
                         "subscriptions": "Subscriptions"
                     },
-                    "meta:descriptionId": "channel##xdm:mediaAction##description##65821"
+                    "meta:descriptionId": "channel##xdm:mediaAction##description##43291"
                 },
                 "xdm:contentTypes": {
                     "type": "array",
@@ -102,10 +102,10 @@
                         "type": "string",
                         "format": "uri",
                         "description": "The `@type` of an XDM-defined content type that is supported by this channel.",
-                        "meta:descriptionId": "channel##items##description##9141"
+                        "meta:descriptionId": "channel##items##description##96921"
                     },
                     "description": "The content types that this channel can deliver.",
-                    "meta:descriptionId": "channel##xdm:contentTypes##description##88151"
+                    "meta:descriptionId": "channel##xdm:contentTypes##description##23231"
                 },
                 "xdm:metricTypes": {
                     "type": "array",
@@ -113,10 +113,10 @@
                         "type": "string",
                         "format": "uri",
                         "description": "The `@type` of an XDM-defined metric that is supported by this channel.",
-                        "meta:descriptionId": "channel##items##description##23601"
+                        "meta:descriptionId": "channel##items##description##33061"
                     },
                     "description": "The metrics that can be collected in this channel.",
-                    "meta:descriptionId": "channel##xdm:metricTypes##description##69061"
+                    "meta:descriptionId": "channel##xdm:metricTypes##description##81561"
                 },
                 "xdm:locationTypes": {
                     "type": "array",
@@ -124,10 +124,10 @@
                         "type": "string",
                         "format": "uri",
                         "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain.",
-                        "meta:descriptionId": "channel##items##description##60741"
+                        "meta:descriptionId": "channel##items##description##42011"
                     },
                     "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
-                    "meta:descriptionId": "channel##xdm:locationTypes##description##5991"
+                    "meta:descriptionId": "channel##xdm:locationTypes##description##91781"
                 }
             }
         }
@@ -145,8 +145,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "channel##title##13931",
-    "meta:descriptionId": "channel##description##14701",
+    "meta:titleId": "channel##title##11001",
+    "meta:descriptionId": "channel##description##25891",
     "examples": [
         {
             "@id": "https://ns.adobe.com/xdm/channels/facebook-feed",

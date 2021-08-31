@@ -61,9 +61,13 @@ Unknown type `object`.
       "title": "Test Profile",
       "type": "boolean",
       "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
-      "default": false
+      "default": false,
+      "meta:titleId": "experienceevent-profile-test-profile##xdm:testProfile##title##28661",
+      "meta:descriptionId": "experienceevent-profile-test-profile##xdm:testProfile##description##79671"
     }
   },
+  "meta:titleId": "experienceevent-profile-test-profile##xdm:profileSnapshot##title##76951",
+  "meta:descriptionId": "experienceevent-profile-test-profile##xdm:profileSnapshot##description##60061",
   "simpletype": "`object`"
 }
 ```

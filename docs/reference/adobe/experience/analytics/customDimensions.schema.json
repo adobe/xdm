@@ -1,7 +1,8 @@
 {
     "xdm:eVars": {
         "title": "Merchandizing eVars",
-        "$ref": "https://ns.adobe.com/experience/analytics/evars"
+        "$ref": "https://ns.adobe.com/experience/analytics/evars",
+        "meta:titleId": "productlistitem##xdm:eVars##title##75281"
     },
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/analytics/customDimensions"

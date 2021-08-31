@@ -172,22 +172,22 @@ Unknown type `object`.
           "title": "Data Collection",
           "description": "Data collection is permitted",
           "$ref": "#/definitions/consent-field",
-          "meta:titleId": "consents-and-preferences##xdm:collect##title##37151",
-          "meta:descriptionId": "consents-and-preferences##xdm:collect##description##10721"
+          "meta:titleId": "consents-and-preferences##xdm:collect##title##7801",
+          "meta:descriptionId": "consents-and-preferences##xdm:collect##description##71551"
         },
         "xdm:share": {
           "title": "Share Data",
           "description": "Sharing of user's data with 2nd or 3rd parties is permitted",
           "$ref": "#/definitions/consent-field",
-          "meta:titleId": "consents-and-preferences##xdm:share##title##87791",
-          "meta:descriptionId": "consents-and-preferences##xdm:share##description##69661"
+          "meta:titleId": "consents-and-preferences##xdm:share##title##56621",
+          "meta:descriptionId": "consents-and-preferences##xdm:share##description##36361"
         },
         "xdm:adID": {
           "title": "Use Advertiser ID",
           "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
           "$ref": "#/definitions/consent-field",
-          "meta:titleId": "consents-and-preferences##xdm:adID##title##54521",
-          "meta:descriptionId": "consents-and-preferences##xdm:adID##description##65521"
+          "meta:titleId": "consents-and-preferences##xdm:adID##title##65941",
+          "meta:descriptionId": "consents-and-preferences##xdm:adID##description##17511"
         },
         "xdm:personalize": {
           "$ref": "#/definitions/base-personalization"
@@ -196,19 +196,19 @@ Unknown type `object`.
           "$ref": "#/definitions/idSpecific-marketing"
         }
       },
-      "meta:titleId": "consents-and-preferences##additionalProperties##title##7721"
+      "meta:titleId": "consents-and-preferences##additionalProperties##title##80371"
     },
-    "meta:titleId": "consents-and-preferences##additionalProperties##title##34811"
+    "meta:titleId": "consents-and-preferences##additionalProperties##title##61461"
   },
   "xdm:metadata": {
     "title": "Consent and Preference Metadata",
     "description": "Metadata that applies to all consents and preferences that don't specify a different value",
     "$ref": "#/definitions/metadata",
-    "meta:titleId": "consents-and-preferences##xdm:metadata##title##31051",
-    "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##17851"
+    "meta:titleId": "consents-and-preferences##xdm:metadata##title##48841",
+    "meta:descriptionId": "consents-and-preferences##xdm:metadata##description##3551"
   },
-  "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##26791",
-  "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##62351",
+  "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##98671",
+  "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##36751",
   "simpletype": "`object`"
 }
 ```

@@ -70,12 +70,12 @@ Unknown type `object`.
       "title": "User agent",
       "type": "string",
       "description": "The HTTP user-agent string from the client request.",
-      "meta:titleId": "linkclicks##xdm:userAgent##title##6681",
-      "meta:descriptionId": "linkclicks##xdm:userAgent##description##88921"
+      "meta:titleId": "linkclicks##xdm:userAgent##title##15861",
+      "meta:descriptionId": "linkclicks##xdm:userAgent##description##75911"
     }
   },
-  "meta:titleId": "linkclicks##xdm:browserDetails##title##18781",
-  "meta:descriptionId": "linkclicks##xdm:browserDetails##description##24331",
+  "meta:titleId": "linkclicks##xdm:browserDetails##title##19101",
+  "meta:descriptionId": "linkclicks##xdm:browserDetails##description##60471",
   "simpletype": "`object`"
 }
 ```
@@ -157,18 +157,18 @@ Unknown type `object`.
       "title": "Link ID",
       "type": "string",
       "description": "Unique ID of the link clicked.",
-      "meta:titleId": "linkclicks##xdm:linkID##title##71631",
-      "meta:descriptionId": "linkclicks##xdm:linkID##description##921"
+      "meta:titleId": "linkclicks##xdm:linkID##title##65641",
+      "meta:descriptionId": "linkclicks##xdm:linkID##description##70231"
     },
     "xdm:linkURL": {
       "title": "Link URL",
       "type": "string",
       "description": "URL of the link clicked.",
-      "meta:titleId": "linkclicks##xdm:linkURL##title##93981",
-      "meta:descriptionId": "linkclicks##xdm:linkURL##description##76371"
+      "meta:titleId": "linkclicks##xdm:linkURL##title##72901",
+      "meta:descriptionId": "linkclicks##xdm:linkURL##description##94691"
     }
   },
-  "meta:titleId": "linkclicks##xdm:webInteraction##title##59681",
+  "meta:titleId": "linkclicks##xdm:webInteraction##title##5681",
   "simpletype": "`object`"
 }
 ```
@@ -201,25 +201,25 @@ Unknown type `object`.
       "title": "Web Page ID",
       "type": "string",
       "description": "Unique ID of the web page.",
-      "meta:titleId": "linkclicks##xdm:webPageID##title##221",
-      "meta:descriptionId": "linkclicks##xdm:webPageID##description##56671"
+      "meta:titleId": "linkclicks##xdm:webPageID##title##31091",
+      "meta:descriptionId": "linkclicks##xdm:webPageID##description##26561"
     },
     "xdm:name": {
       "title": "Name",
       "type": "string",
       "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-      "meta:titleId": "linkclicks##xdm:name##title##95001",
-      "meta:descriptionId": "linkclicks##xdm:name##description##61781"
+      "meta:titleId": "linkclicks##xdm:name##title##50561",
+      "meta:descriptionId": "linkclicks##xdm:name##description##95161"
     },
     "xdm:queryParameters": {
       "title": "Query Parameters",
       "type": "string",
       "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
-      "meta:titleId": "linkclicks##xdm:queryParameters##title##37321",
-      "meta:descriptionId": "linkclicks##xdm:queryParameters##description##94901"
+      "meta:titleId": "linkclicks##xdm:queryParameters##title##7831",
+      "meta:descriptionId": "linkclicks##xdm:queryParameters##description##64521"
     }
   },
-  "meta:titleId": "linkclicks##xdm:webPageDetails##title##28771",
+  "meta:titleId": "linkclicks##xdm:webPageDetails##title##26891",
   "simpletype": "`object`"
 }
 ```
@@ -252,11 +252,11 @@ Unknown type `object`.
       "title": "URL",
       "type": "string",
       "description": "URL of the referrer to the website.",
-      "meta:titleId": "linkclicks##xdm:URL##title##11451",
-      "meta:descriptionId": "linkclicks##xdm:URL##description##27411"
+      "meta:titleId": "linkclicks##xdm:URL##title##81",
+      "meta:descriptionId": "linkclicks##xdm:URL##description##81871"
     }
   },
-  "meta:titleId": "linkclicks##xdm:webReferrer##title##74601",
+  "meta:titleId": "linkclicks##xdm:webReferrer##title##97281",
   "simpletype": "`object`"
 }
 ```

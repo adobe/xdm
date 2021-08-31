@@ -18,31 +18,31 @@
                     "title": "Created by user identifier",
                     "type": "string",
                     "description": "User ID of who created the record.",
-                    "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
-                    "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041"
+                    "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+                    "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871"
                 },
                 "xdm:repositoryLastModifiedBy": {
                     "title": "Modified by user identifier",
                     "type": "string",
                     "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-                    "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
-                    "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141"
+                    "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+                    "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771"
                 },
                 "xdm:createdByBatchID": {
                     "title": "Created by batch identifier",
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The dataset files in Catalog which has been originating the creation of the record.",
-                    "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
-                    "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781"
+                    "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+                    "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231"
                 },
                 "xdm:modifiedByBatchID": {
                     "title": "Modified by batch identifier",
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-                    "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
-                    "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221"
+                    "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+                    "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001"
                 }
             }
         }
@@ -57,8 +57,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "auditable##title##48381",
-    "meta:descriptionId": "auditable##description##60421",
+    "meta:titleId": "auditable##title##87231",
+    "meta:descriptionId": "auditable##description##48551",
     "examples": [
         {
             "repo:createDate": "2018-01-12T15:52:25+00:00",

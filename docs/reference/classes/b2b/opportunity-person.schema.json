@@ -26,8 +26,8 @@
                     "title": "Opportunity Person ID",
                     "description": "Unique identifier for the relationship between the opportunity and the person.",
                     "type": "string",
-                    "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##97661",
-                    "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##92931"
+                    "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##79401",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##50531"
                 },
                 "xdm:opportunityPersonKey": {
                     "title": "Opportunity Person Key",
@@ -40,8 +40,8 @@
                     "title": "Opportunity ID",
                     "description": "Unique identifier for the opportunity in this opportunity person relationship.",
                     "type": "string",
-                    "meta:titleId": "opportunity-person##xdm:opportunityID##title##32821",
-                    "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##6391"
+                    "meta:titleId": "opportunity-person##xdm:opportunityID##title##51071",
+                    "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##11071"
                 },
                 "xdm:opportunityKey": {
                     "title": "Opportunity Key",
@@ -54,8 +54,8 @@
                     "title": "Person ID",
                     "description": "Unique identifier for the person in this opportunity person relationship.",
                     "type": "string",
-                    "meta:titleId": "opportunity-person##xdm:personID##title##59911",
-                    "meta:descriptionId": "opportunity-person##xdm:personID##description##64531"
+                    "meta:titleId": "opportunity-person##xdm:personID##title##46151",
+                    "meta:descriptionId": "opportunity-person##xdm:personID##description##65611"
                 },
                 "xdm:personKey": {
                     "title": "Person Key",
@@ -68,15 +68,15 @@
                     "title": "Person Role",
                     "description": "Role of the person on this opportunity.",
                     "type": "string",
-                    "meta:titleId": "opportunity-person##xdm:personRole##title##48341",
-                    "meta:descriptionId": "opportunity-person##xdm:personRole##description##10071"
+                    "meta:titleId": "opportunity-person##xdm:personRole##title##45841",
+                    "meta:descriptionId": "opportunity-person##xdm:personRole##description##21071"
                 },
                 "xdm:isPrimary": {
                     "title": "Primary Flag",
                     "description": "Boolean indicating if the person is the primary contact on this opportunity.",
                     "type": "boolean",
-                    "meta:titleId": "opportunity-person##xdm:isPrimary##title##30651",
-                    "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##53641"
+                    "meta:titleId": "opportunity-person##xdm:isPrimary##title##30241",
+                    "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##51761"
                 }
             }
         }
@@ -96,8 +96,8 @@
         }
     ],
     "meta:status": "experimental",
-    "meta:titleId": "opportunity-person##title##6291",
-    "meta:descriptionId": "opportunity-person##description##37411",
+    "meta:titleId": "opportunity-person##title##52421",
+    "meta:descriptionId": "opportunity-person##description##46071",
     "examples": [
         {
             "xdm:opportunityPersonID": "123456",

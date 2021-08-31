@@ -18,22 +18,22 @@
                     "title": "Number of Results",
                     "type": "integer",
                     "description": "Count of the total number of search results returned.",
-                    "meta:titleId": "internal-site-search##xdm:numberOfResults##title##72661",
-                    "meta:descriptionId": "internal-site-search##xdm:numberOfResults##description##23071"
+                    "meta:titleId": "internal-site-search##xdm:numberOfResults##title##76031",
+                    "meta:descriptionId": "internal-site-search##xdm:numberOfResults##description##32461"
                 },
                 "xdm:productFindingMethods": {
                     "title": "Product Finding Method",
                     "type": "string",
                     "description": "The internal site search term value with merchandising binding. Will show what term was searched for immediately before viewing a product.",
-                    "meta:titleId": "internal-site-search##xdm:productFindingMethods##title##62341",
-                    "meta:descriptionId": "internal-site-search##xdm:productFindingMethods##description##82221"
+                    "meta:titleId": "internal-site-search##xdm:productFindingMethods##title##33891",
+                    "meta:descriptionId": "internal-site-search##xdm:productFindingMethods##description##33321"
                 },
                 "xdm:refinementValue": {
                     "title": "Refinement Value",
                     "type": "string",
                     "description": "Number of times an internal site search refinement has occurred.",
-                    "meta:titleId": "internal-site-search##xdm:refinementValue##title##95341",
-                    "meta:descriptionId": "internal-site-search##xdm:refinementValue##description##26251"
+                    "meta:titleId": "internal-site-search##xdm:refinementValue##title##29771",
+                    "meta:descriptionId": "internal-site-search##xdm:refinementValue##description##87701"
                 },
                 "xdm:refinementType": {
                     "title": "Refinement Type",
@@ -42,64 +42,64 @@
                         "type": "string"
                     },
                     "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)",
-                    "meta:titleId": "internal-site-search##xdm:refinementType##title##35291",
-                    "meta:descriptionId": "internal-site-search##xdm:refinementType##description##75361"
+                    "meta:titleId": "internal-site-search##xdm:refinementType##title##46371",
+                    "meta:descriptionId": "internal-site-search##xdm:refinementType##description##41721"
                 },
                 "xdm:refinementInstances": {
                     "title": "Refinement Instances",
                     "type": "integer",
                     "description": "Captures when a search refinement action occurs.",
-                    "meta:titleId": "internal-site-search##xdm:refinementInstances##title##21651",
-                    "meta:descriptionId": "internal-site-search##xdm:refinementInstances##description##79241"
+                    "meta:titleId": "internal-site-search##xdm:refinementInstances##title##4521",
+                    "meta:descriptionId": "internal-site-search##xdm:refinementInstances##description##89431"
                 },
                 "xdm:resultsPageNumber": {
                     "title": "Results Page Number",
                     "type": "integer",
                     "description": "For paginated search results, tracks the page of results the visitor is viewing.",
-                    "meta:titleId": "internal-site-search##xdm:resultsPageNumber##title##77261",
-                    "meta:descriptionId": "internal-site-search##xdm:resultsPageNumber##description##27451"
+                    "meta:titleId": "internal-site-search##xdm:resultsPageNumber##title##96661",
+                    "meta:descriptionId": "internal-site-search##xdm:resultsPageNumber##description##79861"
                 },
                 "xdm:resultsPerPage": {
                     "title": "Results Per Page",
                     "type": "integer",
                     "description": "For paginated search results, tracks the number of search results displayed per page.",
-                    "meta:titleId": "internal-site-search##xdm:resultsPerPage##title##87871",
-                    "meta:descriptionId": "internal-site-search##xdm:resultsPerPage##description##73881"
+                    "meta:titleId": "internal-site-search##xdm:resultsPerPage##title##28671",
+                    "meta:descriptionId": "internal-site-search##xdm:resultsPerPage##description##86621"
                 },
                 "xdm:instances": {
                     "title": "Instances",
                     "type": "integer",
                     "description": "Number of times an internal site search has occurred.",
-                    "meta:titleId": "internal-site-search##xdm:instances##title##80661",
-                    "meta:descriptionId": "internal-site-search##xdm:instances##description##96501"
+                    "meta:titleId": "internal-site-search##xdm:instances##title##81501",
+                    "meta:descriptionId": "internal-site-search##xdm:instances##description##8601"
                 },
                 "xdm:locationInPage": {
                     "title": "Location in Page",
                     "type": "string",
                     "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search",
-                    "meta:titleId": "internal-site-search##xdm:locationInPage##title##41441",
-                    "meta:descriptionId": "internal-site-search##xdm:locationInPage##description##23381"
+                    "meta:titleId": "internal-site-search##xdm:locationInPage##title##45671",
+                    "meta:descriptionId": "internal-site-search##xdm:locationInPage##description##82141"
                 },
                 "xdm:nullInstances": {
                     "title": "Null Instances",
                     "type": "integer",
                     "description": "Number of times an internal site search has occurred that provided zero results.",
-                    "meta:titleId": "internal-site-search##xdm:nullInstances##title##85991",
-                    "meta:descriptionId": "internal-site-search##xdm:nullInstances##description##31481"
+                    "meta:titleId": "internal-site-search##xdm:nullInstances##title##49001",
+                    "meta:descriptionId": "internal-site-search##xdm:nullInstances##description##16001"
                 },
                 "xdm:postalCode": {
                     "title": "Postal Code",
                     "type": "string",
                     "description": "Captures the zip code used for a search, if applicable",
-                    "meta:titleId": "internal-site-search##xdm:postalCode##title##97311",
-                    "meta:descriptionId": "internal-site-search##xdm:postalCode##description##2021"
+                    "meta:titleId": "internal-site-search##xdm:postalCode##title##1331",
+                    "meta:descriptionId": "internal-site-search##xdm:postalCode##description##77401"
                 },
                 "xdm:radiusDistance": {
                     "title": "Radius Distance",
                     "type": "integer",
                     "description": "Captures the selected distance of the search radius.",
-                    "meta:titleId": "internal-site-search##xdm:radiusDistance##title##75181",
-                    "meta:descriptionId": "internal-site-search##xdm:radiusDistance##description##99631"
+                    "meta:titleId": "internal-site-search##xdm:radiusDistance##title##99201",
+                    "meta:descriptionId": "internal-site-search##xdm:radiusDistance##description##72751"
                 },
                 "xdm:radiusType": {
                     "title": "Radius Type",
@@ -109,43 +109,43 @@
                         "kilometers"
                     ],
                     "description": "Captures the selected distance type of the search radius in either miles or kilometers.",
-                    "meta:titleId": "internal-site-search##xdm:radiusType##title##8481",
-                    "meta:descriptionId": "internal-site-search##xdm:radiusType##description##78421"
+                    "meta:titleId": "internal-site-search##xdm:radiusType##title##92511",
+                    "meta:descriptionId": "internal-site-search##xdm:radiusType##description##67451"
                 },
                 "xdm:term": {
                     "title": "Term",
                     "type": "string",
                     "description": "Tracks the internal site search term entered by the visitor.",
-                    "meta:titleId": "internal-site-search##xdm:term##title##11881",
-                    "meta:descriptionId": "internal-site-search##xdm:term##description##12231"
+                    "meta:titleId": "internal-site-search##xdm:term##title##5451",
+                    "meta:descriptionId": "internal-site-search##xdm:term##description##47811"
                 },
                 "xdm:autoCompleteClicked": {
                     "title": "Auto Complete Clicked",
                     "type": "boolean",
                     "description": "Indicates when a visitor uses a suggested/autocompleted search value to execute the search",
-                    "meta:titleId": "internal-site-search##xdm:autoCompleteClicked##title##43221",
-                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteClicked##description##34561"
+                    "meta:titleId": "internal-site-search##xdm:autoCompleteClicked##title##26081",
+                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteClicked##description##65361"
                 },
                 "xdm:autoCompleteValue": {
                     "title": "Auto Complete Value",
                     "type": "string",
                     "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked",
-                    "meta:titleId": "internal-site-search##xdm:autoCompleteValue##title##26641",
-                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteValue##description##60871"
+                    "meta:titleId": "internal-site-search##xdm:autoCompleteValue##title##98011",
+                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteValue##description##55571"
                 },
                 "xdm:autoCompleteTypedValue": {
                     "title": "Auto Complete Typed Value",
                     "type": "string",
                     "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms",
-                    "meta:titleId": "internal-site-search##xdm:autoCompleteTypedValue##title##55621",
-                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteTypedValue##description##51511"
+                    "meta:titleId": "internal-site-search##xdm:autoCompleteTypedValue##title##1211",
+                    "meta:descriptionId": "internal-site-search##xdm:autoCompleteTypedValue##description##93321"
                 },
                 "xdm:searchType": {
                     "title": "Search Type",
                     "type": "string",
                     "description": "Captures the method of search being executed, if applicable. Examples could include a type-ahead search, directly-typed search, or any other type of custom search functionality a site might have.",
-                    "meta:titleId": "internal-site-search##xdm:searchType##title##28301",
-                    "meta:descriptionId": "internal-site-search##xdm:searchType##description##17241"
+                    "meta:titleId": "internal-site-search##xdm:searchType##title##81811",
+                    "meta:descriptionId": "internal-site-search##xdm:searchType##description##91251"
                 },
                 "xdm:sortOrder": {
                     "title": "Sort Order",
@@ -155,8 +155,8 @@
                         "descending"
                     ],
                     "description": "ascending/descending",
-                    "meta:titleId": "internal-site-search##xdm:sortOrder##title##41391",
-                    "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##70341"
+                    "meta:titleId": "internal-site-search##xdm:sortOrder##title##94521",
+                    "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##8641"
                 },
                 "xdm:sortType": {
                     "title": "Sort Type",
@@ -171,8 +171,8 @@
                         "new items"
                     ],
                     "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc.",
-                    "meta:titleId": "internal-site-search##xdm:sortType##title##60711",
-                    "meta:descriptionId": "internal-site-search##xdm:sortType##description##82201"
+                    "meta:titleId": "internal-site-search##xdm:sortType##title##34431",
+                    "meta:descriptionId": "internal-site-search##xdm:sortType##description##18021"
                 }
             }
         }
@@ -184,8 +184,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "internal-site-search##title##38651",
-    "meta:descriptionId": "internal-site-search##description##91141",
+    "meta:titleId": "internal-site-search##title##80971",
+    "meta:descriptionId": "internal-site-search##description##37031",
     "examples": [
         {
             "xdm:numberOfResults": 258,

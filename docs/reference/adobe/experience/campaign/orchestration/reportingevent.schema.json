@@ -17,23 +17,31 @@
                     "title": "Timestamp for reporting event",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Time of generation of reporting event"
+                    "description": "Time of generation of reporting event",
+                    "meta:titleId": "reportingevent##xdm:timestamp##title##26011",
+                    "meta:descriptionId": "reportingevent##xdm:timestamp##description##23511"
                 },
                 "xdm:dataEnrichmentSource": {
                     "title": "Data Source",
                     "$ref": "https://ns.adobe.com/xdm/data/datasource",
-                    "description": "Data source used for data enrichment"
+                    "description": "Data source used for data enrichment",
+                    "meta:titleId": "reportingevent##xdm:dataEnrichmentSource##title##53821",
+                    "meta:descriptionId": "reportingevent##xdm:dataEnrichmentSource##description##49161"
                 },
                 "xdm:dataEntityUID": {
                     "title": "Unique identifier of data entity",
                     "type": "string",
                     "format": "uri",
-                    "description": "The identifier for the data entity used for data enrichment"
+                    "description": "The identifier for the data entity used for data enrichment",
+                    "meta:titleId": "reportingevent##xdm:dataEntityUID##title##68511",
+                    "meta:descriptionId": "reportingevent##xdm:dataEntityUID##description##24391"
                 },
                 "xdm:orgUnit": {
                     "title": "Organizational Unit",
                     "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-                    "description": "The unit within the organization owning this journey version."
+                    "description": "The unit within the organization owning this journey version.",
+                    "meta:titleId": "reportingevent##xdm:orgUnit##title##23281",
+                    "meta:descriptionId": "reportingevent##xdm:orgUnit##description##26271"
                 },
                 "xdm:flowControlType": {
                     "title": "Flow control",
@@ -50,38 +58,52 @@
                         "jump": "if a jump has been taken",
                         "timer": "if a transition has been applied, implying a scheduler notification",
                         "condition": "if a conditional step has been processed"
-                    }
+                    },
+                    "meta:titleId": "reportingevent##xdm:flowControlType##title##97351",
+                    "meta:descriptionId": "reportingevent##xdm:flowControlType##description##56571"
                 },
                 "xdm:flowControlID": {
                     "title": "Unique identifier for the flow control",
                     "type": "string",
                     "format": "uri",
-                    "description": "The identifier of the flow control in a journey version"
+                    "description": "The identifier of the flow control in a journey version",
+                    "meta:titleId": "reportingevent##xdm:flowControlID##title##25721",
+                    "meta:descriptionId": "reportingevent##xdm:flowControlID##description##54581"
                 },
                 "xdm:eventMetrics": {
                     "title": "Metrics to be reported",
                     "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingeventmetrics",
-                    "description": "The metrics for actions performed during this observation."
+                    "description": "The metrics for actions performed during this observation.",
+                    "meta:titleId": "reportingevent##xdm:eventMetrics##title##41511",
+                    "meta:descriptionId": "reportingevent##xdm:eventMetrics##description##40411"
                 },
                 "https://ns.adobe.com/experience/campaign/orchestrationAction": {
                     "title": "Action on step transition",
                     "description": "Action taken during a step transition happening for an user in state machine",
-                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action"
+                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
+                    "meta:titleId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationAction##title##64381",
+                    "meta:descriptionId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationAction##description##88521"
                 },
                 "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent": {
                     "title": "external event received",
                     "$ref": "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
-                    "description": "External event received, triggering the state transition"
+                    "description": "External event received, triggering the state transition",
+                    "meta:titleId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationExternalEvent##title##46131",
+                    "meta:descriptionId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationExternalEvent##description##65101"
                 },
                 "https://ns.adobe.com/experience/campaign/journey": {
                     "title": "Journey for users",
                     "description": "Journey created by marketer for its users",
-                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey"
+                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
+                    "meta:titleId": "reportingevent##https://ns.adobe.com/experience/campaign/journey##title##80831",
+                    "meta:descriptionId": "reportingevent##https://ns.adobe.com/experience/campaign/journey##description##95921"
                 },
                 "https://ns.adobe.com/experience/campaign/journeyVersion": {
                     "title": "Journey version",
                     "description": "Schema for describing the version of a journey, where version holds the state machine",
-                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion"
+                    "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
+                    "meta:titleId": "reportingevent##https://ns.adobe.com/experience/campaign/journeyVersion##title##41561",
+                    "meta:descriptionId": "reportingevent##https://ns.adobe.com/experience/campaign/journeyVersion##description##33001"
                 }
             }
         }
@@ -97,6 +119,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "reportingevent##title##26421",
+    "meta:descriptionId": "reportingevent##description##32521",
     "examples": [
         {
             "xdm:timestamp": "2017-09-26T15:52:25+00:00",

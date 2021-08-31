@@ -18,92 +18,92 @@
                     "title": "Name",
                     "type": "string",
                     "description": "The application or browser name.",
-                    "meta:titleId": "browserdetails##xdm:name##title##22281",
-                    "meta:descriptionId": "browserdetails##xdm:name##description##33181"
+                    "meta:titleId": "browserdetails##xdm:name##title##14721",
+                    "meta:descriptionId": "browserdetails##xdm:name##description##19791"
                 },
                 "xdm:vendor": {
                     "title": "Vendor",
                     "type": "string",
                     "description": "The application or browser vendor.",
-                    "meta:titleId": "browserdetails##xdm:vendor##title##88291",
-                    "meta:descriptionId": "browserdetails##xdm:vendor##description##63701"
+                    "meta:titleId": "browserdetails##xdm:vendor##title##57401",
+                    "meta:descriptionId": "browserdetails##xdm:vendor##description##70741"
                 },
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
                     "description": "The application or browser version.",
-                    "meta:titleId": "browserdetails##xdm:version##title##41761",
-                    "meta:descriptionId": "browserdetails##xdm:version##description##33911"
+                    "meta:titleId": "browserdetails##xdm:version##title##71841",
+                    "meta:descriptionId": "browserdetails##xdm:version##description##82171"
                 },
                 "xdm:acceptLanguage": {
                     "title": "Accept language",
                     "type": "string",
                     "description": "An IETF language tag (RFC 5646).",
-                    "meta:titleId": "browserdetails##xdm:acceptLanguage##title##60931",
-                    "meta:descriptionId": "browserdetails##xdm:acceptLanguage##description##84821"
+                    "meta:titleId": "browserdetails##xdm:acceptLanguage##title##74401",
+                    "meta:descriptionId": "browserdetails##xdm:acceptLanguage##description##40371"
                 },
                 "xdm:cookiesEnabled": {
                     "title": "Allows cookies",
                     "type": "boolean",
                     "description": "The current user agent settings allow for the writing of cookies.'",
-                    "meta:titleId": "browserdetails##xdm:cookiesEnabled##title##49991",
-                    "meta:descriptionId": "browserdetails##xdm:cookiesEnabled##description##57991"
+                    "meta:titleId": "browserdetails##xdm:cookiesEnabled##title##30621",
+                    "meta:descriptionId": "browserdetails##xdm:cookiesEnabled##description##16771"
                 },
                 "xdm:javaScriptEnabled": {
                     "title": "JavaScript enabled",
                     "type": "boolean",
                     "description": "If JavaScript was enabled in the device this observation was made from.",
-                    "meta:titleId": "browserdetails##xdm:javaScriptEnabled##title##91031",
-                    "meta:descriptionId": "browserdetails##xdm:javaScriptEnabled##description##98521"
+                    "meta:titleId": "browserdetails##xdm:javaScriptEnabled##title##6111",
+                    "meta:descriptionId": "browserdetails##xdm:javaScriptEnabled##description##17361"
                 },
                 "xdm:javaScriptVersion": {
                     "title": "JavaScript version",
                     "type": "string",
                     "description": "The version of JavaScript supported during the observation.",
-                    "meta:titleId": "browserdetails##xdm:javaScriptVersion##title##72001",
-                    "meta:descriptionId": "browserdetails##xdm:javaScriptVersion##description##41281"
+                    "meta:titleId": "browserdetails##xdm:javaScriptVersion##title##95101",
+                    "meta:descriptionId": "browserdetails##xdm:javaScriptVersion##description##11681"
                 },
                 "xdm:javaEnabled": {
                     "title": "Java enabled",
                     "type": "boolean",
                     "description": "If Java was enabled in the device this observation was made from.",
-                    "meta:titleId": "browserdetails##xdm:javaEnabled##title##82451",
-                    "meta:descriptionId": "browserdetails##xdm:javaEnabled##description##73241"
+                    "meta:titleId": "browserdetails##xdm:javaEnabled##title##95201",
+                    "meta:descriptionId": "browserdetails##xdm:javaEnabled##description##89031"
                 },
                 "xdm:javaVersion": {
                     "title": "Java version",
                     "type": "string",
                     "description": "The version of Java supported during the observation.",
-                    "meta:titleId": "browserdetails##xdm:javaVersion##title##18021",
-                    "meta:descriptionId": "browserdetails##xdm:javaVersion##description##55641"
+                    "meta:titleId": "browserdetails##xdm:javaVersion##title##54701",
+                    "meta:descriptionId": "browserdetails##xdm:javaVersion##description##12931"
                 },
                 "xdm:quicktimeVersion": {
                     "title": "Quicktime version",
                     "type": "string",
                     "description": "The version of Apple Quicktime supported during the observation.",
-                    "meta:titleId": "browserdetails##xdm:quicktimeVersion##title##7661",
-                    "meta:descriptionId": "browserdetails##xdm:quicktimeVersion##description##1321"
+                    "meta:titleId": "browserdetails##xdm:quicktimeVersion##title##96031",
+                    "meta:descriptionId": "browserdetails##xdm:quicktimeVersion##description##11951"
                 },
                 "xdm:thirdPartyCookiesEnabled": {
                     "title": "Allows third-party cookies",
                     "type": "boolean",
                     "description": "If third-party cookies were enabled when this observation was made.",
-                    "meta:titleId": "browserdetails##xdm:thirdPartyCookiesEnabled##title##82151",
-                    "meta:descriptionId": "browserdetails##xdm:thirdPartyCookiesEnabled##description##88211"
+                    "meta:titleId": "browserdetails##xdm:thirdPartyCookiesEnabled##title##64191",
+                    "meta:descriptionId": "browserdetails##xdm:thirdPartyCookiesEnabled##description##54031"
                 },
                 "xdm:viewportHeight": {
                     "title": "Viewport height",
                     "type": "integer",
                     "description": "The vertical size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport height.",
-                    "meta:titleId": "browserdetails##xdm:viewportHeight##title##39971",
-                    "meta:descriptionId": "browserdetails##xdm:viewportHeight##description##30261"
+                    "meta:titleId": "browserdetails##xdm:viewportHeight##title##65601",
+                    "meta:descriptionId": "browserdetails##xdm:viewportHeight##description##85311"
                 },
                 "xdm:viewportWidth": {
                     "title": "Viewport width",
                     "type": "integer",
                     "description": "The horizontal size in pixels of the window the experience was displayed inside. For a web view event, the browser viewport width.",
-                    "meta:titleId": "browserdetails##xdm:viewportWidth##title##37441",
-                    "meta:descriptionId": "browserdetails##xdm:viewportWidth##description##69271"
+                    "meta:titleId": "browserdetails##xdm:viewportWidth##title##71151",
+                    "meta:descriptionId": "browserdetails##xdm:viewportWidth##description##96351"
                 }
             }
         },
@@ -113,8 +113,8 @@
                     "title": "User agent",
                     "type": "string",
                     "description": "The HTTP user-agent string from the client request.",
-                    "meta:titleId": "browserdetails##xdm:userAgent##title##32821",
-                    "meta:descriptionId": "browserdetails##xdm:userAgent##description##17621"
+                    "meta:titleId": "browserdetails##xdm:userAgent##title##35071",
+                    "meta:descriptionId": "browserdetails##xdm:userAgent##description##80421"
                 }
             }
         }
@@ -132,8 +132,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "browserdetails##title##55471",
-    "meta:descriptionId": "browserdetails##description##10391",
+    "meta:titleId": "browserdetails##title##50471",
+    "meta:descriptionId": "browserdetails##description##75651",
     "examples": [
         {
             "xdm:name": "Chrome",

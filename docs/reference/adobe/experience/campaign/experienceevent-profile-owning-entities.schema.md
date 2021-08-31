@@ -60,14 +60,20 @@ Unknown type `object`.
     "xdm:orgUnit": {
       "title": "Organizational Unit",
       "$ref": "https://ns.adobe.com/xdm/common/orgunit",
-      "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset."
+      "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+      "meta:titleId": "experienceevent-profile-owning-entities##xdm:orgUnit##title##52901",
+      "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:orgUnit##description##38071"
     },
     "xdm:geoUnit": {
       "title": "Geographical Unit",
       "$ref": "https://ns.adobe.com/xdm/common/geounit",
-      "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset."
+      "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+      "meta:titleId": "experienceevent-profile-owning-entities##xdm:geoUnit##title##90461",
+      "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:geoUnit##description##8841"
     }
   },
+  "meta:titleId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##title##53361",
+  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##description##94161",
   "simpletype": "`object`"
 }
 ```

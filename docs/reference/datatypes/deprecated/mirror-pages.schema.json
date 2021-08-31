@@ -21,19 +21,19 @@
                     "type": "string",
                     "const": "xdm:mirrorPages",
                     "description": "The unique identifier of this metric.",
-                    "meta:descriptionId": "mirror-pages##@id##description##12281"
+                    "meta:descriptionId": "mirror-pages##@id##description##7781"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "direct-marketing metric: mirrorPages",
                     "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-                    "meta:descriptionId": "mirror-pages##schema:name##description##95861"
+                    "meta:descriptionId": "mirror-pages##schema:name##description##95941"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
                     "const": "count",
-                    "meta:descriptionId": "mirror-pages##xdm:measurement##description##91991"
+                    "meta:descriptionId": "mirror-pages##xdm:measurement##description##55561"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -57,8 +57,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "mirror-pages##title##24131",
-    "meta:descriptionId": "mirror-pages##description##59771",
+    "meta:titleId": "mirror-pages##title##98941",
+    "meta:descriptionId": "mirror-pages##description##31541",
     "examples": [
         {
             "schema:name": "direct-marketing metric: mirrorPages",

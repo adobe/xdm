@@ -21,19 +21,19 @@
                     "type": "string",
                     "const": "xdm:nonDeliverables",
                     "description": "The unique identifier of this metric.",
-                    "meta:descriptionId": "non-deliverables##@id##description##51921"
+                    "meta:descriptionId": "non-deliverables##@id##description##37231"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "direct-marketing metric: nonDeliverables",
                     "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-                    "meta:descriptionId": "non-deliverables##schema:name##description##89841"
+                    "meta:descriptionId": "non-deliverables##schema:name##description##98571"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
                     "const": "count",
-                    "meta:descriptionId": "non-deliverables##xdm:measurement##description##50141"
+                    "meta:descriptionId": "non-deliverables##xdm:measurement##description##49811"
                 },
                 "xdm:unit": {
                     "const": ""
@@ -57,8 +57,8 @@
     ],
     "meta:status": "deprecated",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "non-deliverables##title##1451",
-    "meta:descriptionId": "non-deliverables##description##25831",
+    "meta:titleId": "non-deliverables##title##33161",
+    "meta:descriptionId": "non-deliverables##description##88841",
     "examples": [
         {
             "schema:name": "direct-marketing metric: nonDeliverables",

@@ -20,17 +20,20 @@
                 "@id": {
                     "type": "string",
                     "const": "https://ns.adobe.com/experience/decisioning/propositionsTotal",
-                    "description": "The unique identifier of this metric."
+                    "description": "The unique identifier of this metric.",
+                    "meta:descriptionId": "proposition-metric-total##@id##description##88781"
                 },
                 "schema:name": {
                     "type": "string",
                     "const": "option metric: total propositions",
-                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique."
+                    "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+                    "meta:descriptionId": "proposition-metric-total##schema:name##description##5551"
                 },
                 "xdm:measurement": {
                     "type": "string",
                     "description": "How to take measures of this metric.",
-                    "const": "count"
+                    "const": "count",
+                    "meta:descriptionId": "proposition-metric-total##xdm:measurement##description##96521"
                 },
                 "xdm:unit": {
                     "const": null
@@ -52,5 +55,7 @@
         "xdm:measurement",
         "xdm:unit"
     ],
-    "meta:status": "stable"
+    "meta:status": "stable",
+    "meta:titleId": "proposition-metric-total##title##21671",
+    "meta:descriptionId": "proposition-metric-total##description##90611"
 }

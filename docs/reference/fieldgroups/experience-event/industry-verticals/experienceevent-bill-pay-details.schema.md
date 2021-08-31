@@ -71,30 +71,30 @@ Unknown type `object`.
       "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
       "description": "Extension of toolUsage data type.",
       "meta:status": "deprecated",
-      "meta:titleId": "experienceevent-bill-pay-details##xdm:steps##title##69281",
-      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:steps##description##67821"
+      "meta:titleId": "experienceevent-bill-pay-details##xdm:steps##title##67611",
+      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:steps##description##96461"
     },
     "xdm:transaction": {
       "title": "Transaction",
       "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
       "description": "Extension of transaction data type.",
-      "meta:titleId": "experienceevent-bill-pay-details##xdm:transaction##title##85601",
-      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:transaction##description##94241"
+      "meta:titleId": "experienceevent-bill-pay-details##xdm:transaction##title##90541",
+      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:transaction##description##5461"
     },
     "xdm:financialAccount": {
       "title": "Financial Account",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
       "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
-      "meta:titleId": "experienceevent-bill-pay-details##xdm:financialAccount##title##31901",
-      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:financialAccount##description##47821"
+      "meta:titleId": "experienceevent-bill-pay-details##xdm:financialAccount##title##63131",
+      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:financialAccount##description##96381"
     },
     "xdm:scheduledTransactionDate": {
       "title": "Scheduled Transaction Date",
       "type": "string",
       "format": "date-time",
       "description": "Records the scheduled date/time of the transaction.",
-      "meta:titleId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##title##56991",
-      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##description##76651"
+      "meta:titleId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##title##11581",
+      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##description##65331"
     },
     "xdm:serviceProvider": {
       "type": "object",
@@ -104,18 +104,18 @@ Unknown type `object`.
           "title": "Service Provider Name",
           "type": "string",
           "description": "The name/nickname for the service provider.",
-          "meta:titleId": "experienceevent-bill-pay-details##xdm:name##title##98671",
-          "meta:descriptionId": "experienceevent-bill-pay-details##xdm:name##description##35851"
+          "meta:titleId": "experienceevent-bill-pay-details##xdm:name##title##7831",
+          "meta:descriptionId": "experienceevent-bill-pay-details##xdm:name##description##82791"
         },
         "xdm:userAccountID": {
           "title": "User Account ID",
           "type": "string",
           "description": "The user account ID for the service provider.",
-          "meta:titleId": "experienceevent-bill-pay-details##xdm:userAccountID##title##59051",
-          "meta:descriptionId": "experienceevent-bill-pay-details##xdm:userAccountID##description##52431"
+          "meta:titleId": "experienceevent-bill-pay-details##xdm:userAccountID##title##6371",
+          "meta:descriptionId": "experienceevent-bill-pay-details##xdm:userAccountID##description##75451"
         }
       },
-      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:serviceProvider##description##18651"
+      "meta:descriptionId": "experienceevent-bill-pay-details##xdm:serviceProvider##description##37971"
     }
   },
   "simpletype": "`object`"

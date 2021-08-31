@@ -23,15 +23,15 @@
                     "title": "Product Catalog Name",
                     "type": "string",
                     "description": "friendly name of the product catalog.",
-                    "meta:titleId": "product-catalog##xdm:productCatalogName##title##89811",
-                    "meta:descriptionId": "product-catalog##xdm:productCatalogName##description##3561"
+                    "meta:titleId": "product-catalog##xdm:productCatalogName##title##89031",
+                    "meta:descriptionId": "product-catalog##xdm:productCatalogName##description##87951"
                 },
                 "xdm:productCatalogDescription": {
                     "title": "Product Catalog Description",
                     "type": "string",
                     "description": "Catalog description of the product.",
-                    "meta:titleId": "product-catalog##xdm:productCatalogDescription##title##31381",
-                    "meta:descriptionId": "product-catalog##xdm:productCatalogDescription##description##41431"
+                    "meta:titleId": "product-catalog##xdm:productCatalogDescription##title##93751",
+                    "meta:descriptionId": "product-catalog##xdm:productCatalogDescription##description##84331"
                 }
             }
         }
@@ -43,8 +43,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "product-catalog##title##23931",
-    "meta:descriptionId": "product-catalog##description##15471",
+    "meta:titleId": "product-catalog##title##32871",
+    "meta:descriptionId": "product-catalog##description##92761",
     "examples": [
         {
             "xdm:productCatalogName": "video",

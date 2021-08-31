@@ -18,8 +18,8 @@
                     "title": "Identifier",
                     "type": "string",
                     "description": "Identity of the consumer in the related namespace.",
-                    "meta:titleId": "identityitem##xdm:id##title##10921",
-                    "meta:descriptionId": "identityitem##xdm:id##description##8541"
+                    "meta:titleId": "identityitem##xdm:id##title##58961",
+                    "meta:descriptionId": "identityitem##xdm:id##description##34021"
                 },
                 "xdm:authenticatedState": {
                     "description": "The state this identity is authenticated as for this observed ExperienceEvent.",
@@ -35,15 +35,15 @@
                         "authenticated": "User identified by a login or similar action that was valid at the time of the event observation.",
                         "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
                     },
-                    "meta:descriptionId": "identityitem##xdm:authenticatedState##description##8261"
+                    "meta:descriptionId": "identityitem##xdm:authenticatedState##description##59181"
                 },
                 "xdm:primary": {
                     "title": "Primary",
                     "type": "boolean",
                     "default": false,
                     "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried.",
-                    "meta:titleId": "identityitem##xdm:primary##title##66531",
-                    "meta:descriptionId": "identityitem##xdm:primary##description##1311"
+                    "meta:titleId": "identityitem##xdm:primary##title##78581",
+                    "meta:descriptionId": "identityitem##xdm:primary##description##13971"
                 }
             }
         }
@@ -58,8 +58,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "identityitem##title##39651",
-    "meta:descriptionId": "identityitem##description##8151",
+    "meta:titleId": "identityitem##title##14281",
+    "meta:descriptionId": "identityitem##description##85411",
     "examples": [
         {
             "xdm:id": "id123",

@@ -22,8 +22,8 @@
                     "title": "Search",
                     "$ref": "https://ns.adobe.com/xdm/context/search",
                     "description": "The information related to web or mobile search.",
-                    "meta:titleId": "experienceevent-search##xdm:search##title##24741",
-                    "meta:descriptionId": "experienceevent-search##xdm:search##description##10291"
+                    "meta:titleId": "experienceevent-search##xdm:search##title##89841",
+                    "meta:descriptionId": "experienceevent-search##xdm:search##description##53361"
                 }
             }
         }
@@ -38,8 +38,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "experienceevent-search##title##16611",
-    "meta:descriptionId": "experienceevent-search##description##87031",
+    "meta:titleId": "experienceevent-search##title##48011",
+    "meta:descriptionId": "experienceevent-search##description##8401",
     "examples": [
         {
             "xdm:search": {

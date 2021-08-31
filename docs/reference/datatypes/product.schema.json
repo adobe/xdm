@@ -18,8 +18,8 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The internal unique ID of the product in the commerce backend system.",
-                    "meta:titleId": "product##@id##title##96091",
-                    "meta:descriptionId": "product##@id##description##91381"
+                    "meta:titleId": "product##@id##title##11261",
+                    "meta:descriptionId": "product##@id##description##84161"
                 },
                 "xdm:SKU": {
                     "title": "SKU",
@@ -31,23 +31,23 @@
                             "search:indexed": true
                         }
                     ],
-                    "meta:titleId": "product##xdm:SKU##title##73551",
-                    "meta:descriptionId": "product##xdm:SKU##description##66041"
+                    "meta:titleId": "product##xdm:SKU##title##41461",
+                    "meta:descriptionId": "product##xdm:SKU##description##82341"
                 },
                 "xdm:name": {
                     "title": "Name",
                     "type": "string",
                     "description": "The name of the product.",
-                    "meta:titleId": "product##xdm:name##title##23061",
-                    "meta:descriptionId": "product##xdm:name##description##29911"
+                    "meta:titleId": "product##xdm:name##title##55381",
+                    "meta:descriptionId": "product##xdm:name##description##77581"
                 },
                 "schema:description": {
                     "title": "Description",
                     "type": "string",
                     "description": "The localized description of the product.",
                     "meta:status": "deprecated",
-                    "meta:titleId": "product##schema:description##title##10701",
-                    "meta:descriptionId": "product##schema:description##description##54331"
+                    "meta:titleId": "product##schema:description##title##56961",
+                    "meta:descriptionId": "product##schema:description##description##69771"
                 },
                 "xdm:productDescription": {
                     "title": "Description",
@@ -59,22 +59,22 @@
                             "search:indexed": true
                         }
                     ],
-                    "meta:titleId": "product##xdm:productDescription##title##68001",
-                    "meta:descriptionId": "product##xdm:productDescription##description##131"
+                    "meta:titleId": "product##xdm:productDescription##title##64281",
+                    "meta:descriptionId": "product##xdm:productDescription##description##56901"
                 },
                 "xdm:category": {
                     "title": "Category",
                     "type": "string",
                     "description": "Primary categorization or category name of the product.",
-                    "meta:titleId": "product##xdm:category##title##66451",
-                    "meta:descriptionId": "product##xdm:category##description##991"
+                    "meta:titleId": "product##xdm:category##title##46001",
+                    "meta:descriptionId": "product##xdm:category##description##21161"
                 },
                 "xdm:department": {
                     "title": "Department",
                     "type": "string",
                     "description": "Primary department the product is associated with.",
-                    "meta:titleId": "product##xdm:department##title##24401",
-                    "meta:descriptionId": "product##xdm:department##description##34771"
+                    "meta:titleId": "product##xdm:department##title##48661",
+                    "meta:descriptionId": "product##xdm:department##description##32431"
                 },
                 "xdm:brand": {
                     "title": "Brand",
@@ -86,45 +86,45 @@
                             "search:indexed": true
                         }
                     ],
-                    "meta:titleId": "product##xdm:brand##title##68801",
-                    "meta:descriptionId": "product##xdm:brand##description##14351"
+                    "meta:titleId": "product##xdm:brand##title##50591",
+                    "meta:descriptionId": "product##xdm:brand##description##21881"
                 },
                 "xdm:masterProductID": {
                     "title": "Master product identifier",
                     "type": "string",
                     "format": "uri",
                     "description": "The internal unique ID of the product in the commerce backend system.",
-                    "meta:titleId": "product##xdm:masterProductID##title##12231",
-                    "meta:descriptionId": "product##xdm:masterProductID##description##58281"
+                    "meta:titleId": "product##xdm:masterProductID##title##18741",
+                    "meta:descriptionId": "product##xdm:masterProductID##description##56641"
                 },
                 "xdm:masterProductSKU": {
                     "title": "Master product SKU",
                     "type": "string",
                     "description": "The unique SKU (stock keeping unit) of the master product assigned by the vendor or manufacturer.",
-                    "meta:titleId": "product##xdm:masterProductSKU##title##40841",
-                    "meta:descriptionId": "product##xdm:masterProductSKU##description##83971"
+                    "meta:titleId": "product##xdm:masterProductSKU##title##94541",
+                    "meta:descriptionId": "product##xdm:masterProductSKU##description##59731"
                 },
                 "xdm:masterProductName": {
                     "title": "Master product name",
                     "type": "string",
                     "description": "The localized name of the product.",
-                    "meta:titleId": "product##xdm:masterProductName##title##12941",
-                    "meta:descriptionId": "product##xdm:masterProductName##description##38961"
+                    "meta:titleId": "product##xdm:masterProductName##title##21501",
+                    "meta:descriptionId": "product##xdm:masterProductName##description##88211"
                 },
                 "xdm:masterProductDescription": {
                     "title": "Master product description",
                     "type": "string",
                     "description": "The description of the product.",
-                    "meta:titleId": "product##xdm:masterProductDescription##title##71931",
-                    "meta:descriptionId": "product##xdm:masterProductDescription##description##60161"
+                    "meta:titleId": "product##xdm:masterProductDescription##title##85441",
+                    "meta:descriptionId": "product##xdm:masterProductDescription##description##10551"
                 },
                 "xdm:fabrication": {
                     "title": "Fabrication",
                     "type": "string",
                     "description": "Primary material of the product construction.",
                     "meta:status": "deprecated",
-                    "meta:titleId": "product##xdm:fabrication##title##49661",
-                    "meta:descriptionId": "product##xdm:fabrication##description##36521"
+                    "meta:titleId": "product##xdm:fabrication##title##66761",
+                    "meta:descriptionId": "product##xdm:fabrication##description##4021"
                 },
                 "xdm:material": {
                     "title": "Material",
@@ -136,8 +136,8 @@
                             "search:indexed": true
                         }
                     ],
-                    "meta:titleId": "product##xdm:material##title##88871",
-                    "meta:descriptionId": "product##xdm:material##description##55021"
+                    "meta:titleId": "product##xdm:material##title##42731",
+                    "meta:descriptionId": "product##xdm:material##description##58711"
                 },
                 "xdm:gender": {
                     "title": "Gender",
@@ -149,44 +149,44 @@
                         "unisex": "For both men and women",
                         "unknown": "Unknown"
                     },
-                    "meta:titleId": "product##xdm:gender##title##47381",
-                    "meta:descriptionId": "product##xdm:gender##description##58681"
+                    "meta:titleId": "product##xdm:gender##title##93811",
+                    "meta:descriptionId": "product##xdm:gender##description##7941"
                 },
                 "xdm:size": {
                     "title": "Size",
                     "type": "number",
                     "description": "Standard product size for the product.",
-                    "meta:titleId": "product##xdm:size##title##7241",
-                    "meta:descriptionId": "product##xdm:size##description##50951"
+                    "meta:titleId": "product##xdm:size##title##6041",
+                    "meta:descriptionId": "product##xdm:size##description##55491"
                 },
                 "xdm:unitOfMeasure": {
                     "title": "Unit of measure",
                     "type": "string",
                     "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
-                    "meta:titleId": "product##xdm:unitOfMeasure##title##39901",
-                    "meta:descriptionId": "product##xdm:unitOfMeasure##description##14091"
+                    "meta:titleId": "product##xdm:unitOfMeasure##title##33331",
+                    "meta:descriptionId": "product##xdm:unitOfMeasure##description##86691"
                 },
                 "xdm:countryOfOrigin": {
                     "title": "Country of origin",
                     "type": "string",
                     "pattern": "^[A-Z]{2}$",
                     "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements.",
-                    "meta:titleId": "product##xdm:countryOfOrigin##title##96401",
-                    "meta:descriptionId": "product##xdm:countryOfOrigin##description##70581"
+                    "meta:titleId": "product##xdm:countryOfOrigin##title##30731",
+                    "meta:descriptionId": "product##xdm:countryOfOrigin##description##71731"
                 },
                 "xdm:COGS": {
                     "title": "Cost of good sold",
                     "type": "number",
                     "description": "Cost of good sold, in the `currencyCode` currency.",
-                    "meta:titleId": "product##xdm:COGS##title##76031",
-                    "meta:descriptionId": "product##xdm:COGS##description##99591"
+                    "meta:titleId": "product##xdm:COGS##title##94581",
+                    "meta:descriptionId": "product##xdm:COGS##description##98931"
                 },
                 "xdm:listPrice": {
                     "title": "List price",
                     "type": "number",
                     "description": "Default price of the product before sales and discounting, in the `currencyCode` currency.",
-                    "meta:titleId": "product##xdm:listPrice##title##66501",
-                    "meta:descriptionId": "product##xdm:listPrice##description##8401"
+                    "meta:titleId": "product##xdm:listPrice##title##39421",
+                    "meta:descriptionId": "product##xdm:listPrice##description##20871"
                 },
                 "xdm:currencyCode": {
                     "title": "Currency code",
@@ -197,53 +197,53 @@
                     ],
                     "pattern": "^[A-Z]{3}$",
                     "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.",
-                    "meta:titleId": "product##xdm:currencyCode##title##33141",
-                    "meta:descriptionId": "product##xdm:currencyCode##description##84111"
+                    "meta:titleId": "product##xdm:currencyCode##title##18891",
+                    "meta:descriptionId": "product##xdm:currencyCode##description##28471"
                 },
                 "xdm:originalSaleDate": {
                     "title": "Original sale date",
                     "type": "string",
                     "format": "date",
                     "description": "First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-                    "meta:titleId": "product##xdm:originalSaleDate##title##40681",
-                    "meta:descriptionId": "product##xdm:originalSaleDate##description##73471"
+                    "meta:titleId": "product##xdm:originalSaleDate##title##16121",
+                    "meta:descriptionId": "product##xdm:originalSaleDate##description##61431"
                 },
                 "xdm:productCreateDate": {
                     "title": "Product creation date",
                     "format": "date",
                     "type": "string",
                     "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-                    "meta:titleId": "product##xdm:productCreateDate##title##50171",
-                    "meta:descriptionId": "product##xdm:productCreateDate##description##57051"
+                    "meta:titleId": "product##xdm:productCreateDate##title##41081",
+                    "meta:descriptionId": "product##xdm:productCreateDate##description##32431"
                 },
                 "xdm:productLastModified": {
                     "title": "Product last modified",
                     "format": "date",
                     "type": "string",
                     "description": "The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-                    "meta:titleId": "product##xdm:productLastModified##title##57381",
-                    "meta:descriptionId": "product##xdm:productLastModified##description##47281"
+                    "meta:titleId": "product##xdm:productLastModified##title##28051",
+                    "meta:descriptionId": "product##xdm:productLastModified##description##31821"
                 },
                 "xdm:productURL": {
                     "title": "Product URL",
                     "type": "string",
                     "description": "The URL for the primary product view of the product page.",
-                    "meta:titleId": "product##xdm:productURL##title##59251",
-                    "meta:descriptionId": "product##xdm:productURL##description##56301"
+                    "meta:titleId": "product##xdm:productURL##title##61351",
+                    "meta:descriptionId": "product##xdm:productURL##description##491"
                 },
                 "xdm:manufacturerName": {
                     "title": "Manufacturer name",
                     "type": "string",
                     "description": "Manufacturer of the product.",
-                    "meta:titleId": "product##xdm:manufacturerName##title##17191",
-                    "meta:descriptionId": "product##xdm:manufacturerName##description##34571"
+                    "meta:titleId": "product##xdm:manufacturerName##title##2891",
+                    "meta:descriptionId": "product##xdm:manufacturerName##description##69671"
                 },
                 "xdm:supplierName": {
                     "title": "Supplier name",
                     "type": "string",
                     "description": "The distributor of the product.",
-                    "meta:titleId": "product##xdm:supplierName##title##77711",
-                    "meta:descriptionId": "product##xdm:supplierName##description##87161"
+                    "meta:titleId": "product##xdm:supplierName##title##57871",
+                    "meta:descriptionId": "product##xdm:supplierName##description##93821"
                 }
             }
         }
@@ -258,8 +258,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "product##title##60661",
-    "meta:descriptionId": "product##description##14331",
+    "meta:titleId": "product##title##22811",
+    "meta:descriptionId": "product##description##52801",
     "examples": [
         {
             "@id": "https://commerce.adobe.io/entities/product/product-203766910",

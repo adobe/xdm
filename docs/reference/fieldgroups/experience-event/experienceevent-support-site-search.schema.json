@@ -37,11 +37,11 @@
                             "title": "Support Site Search",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
                             "description": "Extension of internalSearch data type.",
-                            "meta:titleId": "experienceevent-support-site-search##xdm:supportSiteSearch##title##29121",
-                            "meta:descriptionId": "experienceevent-support-site-search##xdm:supportSiteSearch##description##85631"
+                            "meta:titleId": "experienceevent-support-site-search##xdm:supportSiteSearch##title##17201",
+                            "meta:descriptionId": "experienceevent-support-site-search##xdm:supportSiteSearch##description##79751"
                         }
                     },
-                    "meta:descriptionId": "experienceevent-support-site-search##xdm:siteKnowledge##description##98951"
+                    "meta:descriptionId": "experienceevent-support-site-search##xdm:siteKnowledge##description##67051"
                 }
             }
         }
@@ -53,8 +53,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-01-15",
-    "meta:titleId": "experienceevent-support-site-search##title##23221",
-    "meta:descriptionId": "experienceevent-support-site-search##description##57001",
+    "meta:titleId": "experienceevent-support-site-search##title##68971",
+    "meta:descriptionId": "experienceevent-support-site-search##description##51491",
     "examples": [
         {
             "xdm:siteKnowledge": {

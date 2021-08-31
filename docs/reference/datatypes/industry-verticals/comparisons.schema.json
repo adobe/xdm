@@ -18,8 +18,8 @@
                     "title": "Count",
                     "type": "integer",
                     "description": "Count of the total number of items being compared.",
-                    "meta:titleId": "comparisons##xdm:count##title##7251",
-                    "meta:descriptionId": "comparisons##xdm:count##description##64401"
+                    "meta:titleId": "comparisons##xdm:count##title##40621",
+                    "meta:descriptionId": "comparisons##xdm:count##description##53881"
                 },
                 "xdm:items": {
                     "title": "Items",
@@ -32,48 +32,48 @@
                                 "title": "ID",
                                 "type": "string",
                                 "description": "Identifier for the item included within a comparison.",
-                                "meta:titleId": "comparisons##xdm:ID##title##89731",
-                                "meta:descriptionId": "comparisons##xdm:ID##description##99491"
+                                "meta:titleId": "comparisons##xdm:ID##title##85511",
+                                "meta:descriptionId": "comparisons##xdm:ID##description##73521"
                             },
                             "xdm:removal": {
                                 "title": "Removal",
                                 "type": "integer",
                                 "description": "Tracked when an item is removed from a comparison.",
-                                "meta:titleId": "comparisons##xdm:removal##title##67211",
-                                "meta:descriptionId": "comparisons##xdm:removal##description##63941"
+                                "meta:titleId": "comparisons##xdm:removal##title##14231",
+                                "meta:descriptionId": "comparisons##xdm:removal##description##431"
                             },
                             "xdm:addition": {
                                 "title": "Addition",
                                 "type": "integer",
                                 "description": "Tracked when an item is added to a comparison.",
-                                "meta:titleId": "comparisons##xdm:addition##title##75971",
-                                "meta:descriptionId": "comparisons##xdm:addition##description##56221"
+                                "meta:titleId": "comparisons##xdm:addition##title##92761",
+                                "meta:descriptionId": "comparisons##xdm:addition##description##47621"
                             },
                             "xdm:selected": {
                                 "title": "Selected",
                                 "type": "integer",
                                 "description": "Tracked when an item is selected/clicked-through upon to view more details.",
-                                "meta:titleId": "comparisons##xdm:selected##title##78291",
-                                "meta:descriptionId": "comparisons##xdm:selected##description##58161"
+                                "meta:titleId": "comparisons##xdm:selected##title##63971",
+                                "meta:descriptionId": "comparisons##xdm:selected##description##71521"
                             }
                         },
-                        "meta:descriptionId": "comparisons##items##description##41201"
+                        "meta:descriptionId": "comparisons##items##description##1331"
                     },
-                    "meta:titleId": "comparisons##xdm:items##title##71011"
+                    "meta:titleId": "comparisons##xdm:items##title##41261"
                 },
                 "xdm:type": {
                     "title": "Type",
                     "type": "string",
                     "description": "Type of comparison tool in use.",
-                    "meta:titleId": "comparisons##xdm:type##title##33371",
-                    "meta:descriptionId": "comparisons##xdm:type##description##9041"
+                    "meta:titleId": "comparisons##xdm:type##title##7611",
+                    "meta:descriptionId": "comparisons##xdm:type##description##23221"
                 },
                 "xdm:view": {
                     "title": "View",
                     "type": "integer",
                     "description": "Tracked when a comparison page is viewed.",
-                    "meta:titleId": "comparisons##xdm:view##title##2111",
-                    "meta:descriptionId": "comparisons##xdm:view##description##22521"
+                    "meta:titleId": "comparisons##xdm:view##title##97321",
+                    "meta:descriptionId": "comparisons##xdm:view##description##33931"
                 }
             }
         }
@@ -85,8 +85,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
-    "meta:titleId": "comparisons##title##95781",
-    "meta:descriptionId": "comparisons##description##45381",
+    "meta:titleId": "comparisons##title##16241",
+    "meta:descriptionId": "comparisons##description##4361",
     "examples": [
         {}
     ]

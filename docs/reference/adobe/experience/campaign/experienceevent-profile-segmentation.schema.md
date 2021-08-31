@@ -67,10 +67,14 @@ Unknown type `object`.
         "meta:xdmType": "map",
         "additionalProperties": {
           "$ref": "https://ns.adobe.com/xdm/context/segmentmembership"
-        }
-      }
+        },
+        "meta:titleId": "experienceevent-profile-segmentation##additionalProperties##title##52931"
+      },
+      "meta:titleId": "experienceevent-profile-segmentation##xdm:segmentMembership##title##38711"
     }
   },
+  "meta:titleId": "experienceevent-profile-segmentation##xdm:profileSnapshot##title##56621",
+  "meta:descriptionId": "experienceevent-profile-segmentation##xdm:profileSnapshot##description##9651",
   "simpletype": "`object`"
 }
 ```

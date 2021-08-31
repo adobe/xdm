@@ -90,25 +90,25 @@ Unknown type `object`.
       "title": "Transaction",
       "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
       "description": "Extension of transaction data type.",
-      "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##34001",
-      "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##58401"
+      "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##13771",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##51501"
     },
     "xdm:accountTo": {
       "title": "Account To",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
       "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
-      "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##43831",
-      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##79011"
+      "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##78861",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##19891"
     },
     "xdm:accountFrom": {
       "title": "Account From",
       "$ref": "https://ns.adobe.com/xdm/datatypes/financial-account",
       "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
-      "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##60331",
-      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##2901"
+      "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##92831",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##25201"
     }
   },
-  "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##85571",
+  "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##65361",
   "simpletype": "`object`"
 }
 ```

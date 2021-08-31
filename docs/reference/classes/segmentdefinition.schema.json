@@ -23,29 +23,29 @@
                     "title": "Segment identity",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
                     "description": "Identity of the segment.",
-                    "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##67331",
-                    "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##89251"
+                    "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##56811",
+                    "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##38651"
                 },
                 "xdm:segmentName": {
                     "title": "Segment name",
                     "type": "string",
                     "description": "Name of the segment.",
-                    "meta:titleId": "segmentdefinition##xdm:segmentName##title##28431",
-                    "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##83781"
+                    "meta:titleId": "segmentdefinition##xdm:segmentName##title##63151",
+                    "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##97621"
                 },
                 "xdm:description": {
                     "title": "Segment description",
                     "type": "string",
                     "description": "Description of the segment.",
-                    "meta:titleId": "segmentdefinition##xdm:description##title##44351",
-                    "meta:descriptionId": "segmentdefinition##xdm:description##description##89731"
+                    "meta:titleId": "segmentdefinition##xdm:description##title##2161",
+                    "meta:descriptionId": "segmentdefinition##xdm:description##description##72001"
                 },
                 "xdm:version": {
                     "title": "Segment version",
                     "type": "string",
                     "description": "Version of the segment.",
-                    "meta:titleId": "segmentdefinition##xdm:version##title##9381",
-                    "meta:descriptionId": "segmentdefinition##xdm:version##description##1551"
+                    "meta:titleId": "segmentdefinition##xdm:version##title##86471",
+                    "meta:descriptionId": "segmentdefinition##xdm:version##description##28701"
                 },
                 "xdm:segmentStatus": {
                     "type": "string",
@@ -58,8 +58,8 @@
                         "DRAFT",
                         "REVOKED"
                     ],
-                    "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##92461",
-                    "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##67971"
+                    "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##63401",
+                    "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##29131"
                 }
             }
         }
@@ -86,8 +86,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "segmentdefinition##title##41021",
-    "meta:descriptionId": "segmentdefinition##description##4081",
+    "meta:titleId": "segmentdefinition##title##35431",
+    "meta:descriptionId": "segmentdefinition##description##42991",
     "examples": [
         {
             "xdm:identityMap": {

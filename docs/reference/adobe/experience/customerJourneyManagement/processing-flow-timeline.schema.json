@@ -23,26 +23,35 @@
                 "xdm:componentName": {
                     "title": "componentName",
                     "description": "The name of the service/component, for which time information is captured.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "processing-flow-timeline##xdm:componentName##title##92171",
+                    "meta:descriptionId": "processing-flow-timeline##xdm:componentName##description##75401"
                 },
                 "xdm:serviceGroup": {
                     "title": "serviceGroup",
                     "description": "An optional attribute, to capture the timeline of a service, at sub-tree level.",
-                    "type": "string"
+                    "type": "string",
+                    "meta:titleId": "processing-flow-timeline##xdm:serviceGroup##title##76201",
+                    "meta:descriptionId": "processing-flow-timeline##xdm:serviceGroup##description##58341"
                 },
                 "xdm:startTime": {
                     "title": "startTime",
                     "description": "Execution Start time in Date-Time format for the component.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "meta:titleId": "processing-flow-timeline##xdm:startTime##title##6951",
+                    "meta:descriptionId": "processing-flow-timeline##xdm:startTime##description##87321"
                 },
                 "xdm:endTime": {
                     "title": "endTime",
                     "description": "Execution End time in Date-Time format for the component.",
                     "type": "string",
-                    "format": "date-time"
+                    "format": "date-time",
+                    "meta:titleId": "processing-flow-timeline##xdm:endTime##title##74721",
+                    "meta:descriptionId": "processing-flow-timeline##xdm:endTime##description##34321"
                 }
-            }
+            },
+            "meta:descriptionId": "processing-flow-timeline##time-profiling##description##86761"
         },
         "processing-flow-timeline": {
             "properties": {
@@ -53,16 +62,20 @@
                         "xdm:flowName": {
                             "title": "flowName",
                             "type": "string",
-                            "description": "Name of the processing flow."
+                            "description": "Name of the processing flow.",
+                            "meta:titleId": "processing-flow-timeline##xdm:flowName##title##55371",
+                            "meta:descriptionId": "processing-flow-timeline##xdm:flowName##description##51901"
                         },
                         "xdm:processingNodes": {
                             "title": "processingNodes",
                             "type": "array",
                             "items": {
                                 "$ref": "#/definitions/time-profiling"
-                            }
+                            },
+                            "meta:titleId": "processing-flow-timeline##xdm:processingNodes##title##63221"
                         }
-                    }
+                    },
+                    "meta:titleId": "processing-flow-timeline##https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline##title##42791"
                 }
             }
         }
@@ -76,6 +89,8 @@
         }
     ],
     "meta:status": "experimental",
+    "meta:titleId": "processing-flow-timeline##title##7571",
+    "meta:descriptionId": "processing-flow-timeline##description##56331",
     "examples": [
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline": {

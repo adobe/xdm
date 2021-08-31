@@ -18,23 +18,23 @@
                     "meta:status": "deprecated",
                     "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
                     "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment. Deprecated.",
-                    "meta:titleId": "segmentmembership##xdm:segmentID##title##74951",
-                    "meta:descriptionId": "segmentmembership##xdm:segmentID##description##2431"
+                    "meta:titleId": "segmentmembership##xdm:segmentID##title##31781",
+                    "meta:descriptionId": "segmentmembership##xdm:segmentID##description##35731"
                 },
                 "xdm:version": {
                     "title": "Version",
                     "type": "string",
                     "description": "The version of the segment definition used in this segment assertion. Version can be omitted in audience lists when all memberships versions are the same.",
-                    "meta:titleId": "segmentmembership##xdm:version##title##97771",
-                    "meta:descriptionId": "segmentmembership##xdm:version##description##73841"
+                    "meta:titleId": "segmentmembership##xdm:version##title##25651",
+                    "meta:descriptionId": "segmentmembership##xdm:version##description##57801"
                 },
                 "xdm:lastQualificationTime": {
                     "title": "Last qualification time",
                     "type": "string",
                     "format": "date-time",
                     "description": "The timestamp when the assertion of segment membership was made.",
-                    "meta:titleId": "segmentmembership##xdm:lastQualificationTime##title##24831",
-                    "meta:descriptionId": "segmentmembership##xdm:lastQualificationTime##description##77591"
+                    "meta:titleId": "segmentmembership##xdm:lastQualificationTime##title##88761",
+                    "meta:descriptionId": "segmentmembership##xdm:lastQualificationTime##description##80681"
                 },
                 "xdm:payload": {
                     "title": "Payload",
@@ -45,15 +45,15 @@
                             "title": "Value",
                             "type": "boolean",
                             "description": "The boolean value.",
-                            "meta:titleId": "segmentmembership##xdm:payloadBooleanValue##title##67541",
-                            "meta:descriptionId": "segmentmembership##xdm:payloadBooleanValue##description##98221"
+                            "meta:titleId": "segmentmembership##xdm:payloadBooleanValue##title##96781",
+                            "meta:descriptionId": "segmentmembership##xdm:payloadBooleanValue##description##49531"
                         },
                         "xdm:payloadNumberValue": {
                             "title": "Value",
                             "type": "number",
                             "description": "The number.",
-                            "meta:titleId": "segmentmembership##xdm:payloadNumberValue##title##99771",
-                            "meta:descriptionId": "segmentmembership##xdm:payloadNumberValue##description##77151"
+                            "meta:titleId": "segmentmembership##xdm:payloadNumberValue##title##87931",
+                            "meta:descriptionId": "segmentmembership##xdm:payloadNumberValue##description##5931"
                         },
                         "xdm:payloadPropensityValue": {
                             "title": "Value",
@@ -61,15 +61,15 @@
                             "description": "The propensity.",
                             "exclusiveMinimum": 0,
                             "maximum": 1,
-                            "meta:titleId": "segmentmembership##xdm:payloadPropensityValue##title##67551",
-                            "meta:descriptionId": "segmentmembership##xdm:payloadPropensityValue##description##41101"
+                            "meta:titleId": "segmentmembership##xdm:payloadPropensityValue##title##10531",
+                            "meta:descriptionId": "segmentmembership##xdm:payloadPropensityValue##description##80271"
                         },
                         "xdm:payloadStringValue": {
                             "title": "Value",
                             "type": "string",
                             "description": "The string value.",
-                            "meta:titleId": "segmentmembership##xdm:payloadStringValue##title##1951",
-                            "meta:descriptionId": "segmentmembership##xdm:payloadStringValue##description##33071"
+                            "meta:titleId": "segmentmembership##xdm:payloadStringValue##title##24201",
+                            "meta:descriptionId": "segmentmembership##xdm:payloadStringValue##description##90981"
                         },
                         "xdm:payloadType": {
                             "title": "Payload Type",
@@ -87,23 +87,23 @@
                                 "string": "String"
                             },
                             "description": "The type of payload.",
-                            "meta:titleId": "segmentmembership##xdm:payloadType##title##46331",
-                            "meta:descriptionId": "segmentmembership##xdm:payloadType##description##45261"
+                            "meta:titleId": "segmentmembership##xdm:payloadType##title##41541",
+                            "meta:descriptionId": "segmentmembership##xdm:payloadType##description##2701"
                         }
                     },
                     "required": [
                         "xdm:payloadType"
                     ],
-                    "meta:titleId": "segmentmembership##xdm:payload##title##64561",
-                    "meta:descriptionId": "segmentmembership##xdm:payload##description##25461"
+                    "meta:titleId": "segmentmembership##xdm:payload##title##35611",
+                    "meta:descriptionId": "segmentmembership##xdm:payload##description##58191"
                 },
                 "xdm:validUntil": {
                     "title": "Valid until",
                     "type": "string",
                     "format": "date-time",
                     "description": "The timestamp for when the segment assertion should no longer be assumed to be valid and should either be ignored or revalidated.",
-                    "meta:titleId": "segmentmembership##xdm:validUntil##title##71171",
-                    "meta:descriptionId": "segmentmembership##xdm:validUntil##description##56621"
+                    "meta:titleId": "segmentmembership##xdm:validUntil##title##9931",
+                    "meta:descriptionId": "segmentmembership##xdm:validUntil##description##33991"
                 },
                 "xdm:status": {
                     "title": "Status",
@@ -120,8 +120,8 @@
                         "realized": "Entity is entering the segment.",
                         "exited": "Entity is exiting the segment."
                     },
-                    "meta:titleId": "segmentmembership##xdm:status##title##87931",
-                    "meta:descriptionId": "segmentmembership##xdm:status##description##65921"
+                    "meta:titleId": "segmentmembership##xdm:status##title##9241",
+                    "meta:descriptionId": "segmentmembership##xdm:status##description##78961"
                 },
                 "xdm:profileStitchID": {
                     "$ref": "https://ns.adobe.com/xdm/context/profileStitchIdentity"
@@ -136,8 +136,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2020-08-10",
-    "meta:titleId": "segmentmembership##title##36961",
-    "meta:descriptionId": "segmentmembership##description##45531",
+    "meta:titleId": "segmentmembership##title##44761",
+    "meta:descriptionId": "segmentmembership##description##35211",
     "examples": [
         {
             "xdm:lastQualificationTime": "2017-09-26T15:52:25+00:00",

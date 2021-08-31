@@ -19,7 +19,9 @@
                 "adcloud:advertisingStitchID": {
                     "title": "Advertising Stitch ID",
                     "type": "string",
-                    "description": "Stitch ID passed to Adobe Analytics"
+                    "description": "Stitch ID passed to Adobe Analytics",
+                    "meta:titleId": "stitchid##adcloud:advertisingStitchID##title##46481",
+                    "meta:descriptionId": "stitchid##adcloud:advertisingStitchID##description##51191"
                 }
             }
         }
@@ -30,6 +32,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "stitchid##title##82011",
+    "meta:descriptionId": "stitchid##description##89361",
     "examples": [
         {
             "adcloud:advertisingStitchID": "13"

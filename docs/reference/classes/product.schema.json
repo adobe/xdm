@@ -38,52 +38,52 @@
                     "title": "Product ID",
                     "type": "string",
                     "description": "Product unique identifer.",
-                    "meta:titleId": "product##xdm:productID##title##92401",
-                    "meta:descriptionId": "product##xdm:productID##description##27441"
+                    "meta:titleId": "product##xdm:productID##title##56581",
+                    "meta:descriptionId": "product##xdm:productID##description##83581"
                 },
                 "xdm:productName": {
                     "title": "Product Name",
                     "type": "string",
                     "description": "Name of the product.",
-                    "meta:titleId": "product##xdm:productName##title##90451",
-                    "meta:descriptionId": "product##xdm:productName##description##87721"
+                    "meta:titleId": "product##xdm:productName##title##3671",
+                    "meta:descriptionId": "product##xdm:productName##description##34431"
                 },
                 "xdm:productDescription": {
                     "title": "Product Description",
                     "type": "string",
                     "description": "Description of the product.",
-                    "meta:titleId": "product##xdm:productDescription##title##99191",
-                    "meta:descriptionId": "product##xdm:productDescription##description##90281"
+                    "meta:titleId": "product##xdm:productDescription##title##99501",
+                    "meta:descriptionId": "product##xdm:productDescription##description##51331"
                 },
                 "xdm:productRating": {
                     "title": "Product Rating",
                     "type": "number",
                     "description": "Customer review rating of the product.",
-                    "meta:titleId": "product##xdm:productRating##title##86071",
-                    "meta:descriptionId": "product##xdm:productRating##description##8571"
+                    "meta:titleId": "product##xdm:productRating##title##91711",
+                    "meta:descriptionId": "product##xdm:productRating##description##16431"
                 },
                 "xdm:productListPrice": {
                     "title": "Product List price",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                     "description": "Default price of the product before sales and discounting.",
-                    "meta:titleId": "product##xdm:productListPrice##title##20351",
-                    "meta:descriptionId": "product##xdm:productListPrice##description##52711"
+                    "meta:titleId": "product##xdm:productListPrice##title##58801",
+                    "meta:descriptionId": "product##xdm:productListPrice##description##77211"
                 },
                 "xdm:productManufacturedDate": {
                     "title": "Product Manufactured date",
                     "type": "string",
                     "format": "date-time",
                     "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-                    "meta:titleId": "product##xdm:productManufacturedDate##title##61461",
-                    "meta:descriptionId": "product##xdm:productManufacturedDate##description##9801"
+                    "meta:titleId": "product##xdm:productManufacturedDate##title##98011",
+                    "meta:descriptionId": "product##xdm:productManufacturedDate##description##30251"
                 },
                 "xdm:productLastModifiedDate": {
                     "title": "Product last modified Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-                    "meta:titleId": "product##xdm:productLastModifiedDate##title##94071",
-                    "meta:descriptionId": "product##xdm:productLastModifiedDate##description##2981"
+                    "meta:titleId": "product##xdm:productLastModifiedDate##title##90801",
+                    "meta:descriptionId": "product##xdm:productLastModifiedDate##description##1611"
                 }
             }
         }
@@ -98,8 +98,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2020-10-16",
-    "meta:titleId": "product##title##78251",
-    "meta:descriptionId": "product##description##34291",
+    "meta:titleId": "product##title##63541",
+    "meta:descriptionId": "product##description##79091",
     "examples": [
         {
             "xdm:productID": "59yigdug",

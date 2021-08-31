@@ -25,65 +25,65 @@
                 "title": "Source Campaign Member ID",
                 "description": "Campaign member unique identifier at source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-member-components##xdm:sourceCampaignMemberID##title##86041",
-                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignMemberID##description##22681"
+                "meta:titleId": "campaign-member-components##xdm:sourceCampaignMemberID##title##63131",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignMemberID##description##22311"
               },
               "xdm:sourceCampaignID": {
                 "title": "Source Campaign ID",
                 "description": "Campaign unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-member-components##xdm:sourceCampaignID##title##28441",
-                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignID##description##13121"
+                "meta:titleId": "campaign-member-components##xdm:sourceCampaignID##title##7131",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignID##description##26431"
               },
               "xdm:sourceExternalID": {
                 "title": "Source External ID",
                 "description": "External unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-member-components##xdm:sourceExternalID##title##51651",
-                "meta:descriptionId": "campaign-member-components##xdm:sourceExternalID##description##15491"
+                "meta:titleId": "campaign-member-components##xdm:sourceExternalID##title##40131",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceExternalID##description##76961"
               },
               "xdm:sourcePersonID": {
                 "title": "Source Person ID",
                 "description": "Campaign owner unique identifier at the source.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-member-components##xdm:sourcePersonID##title##89901",
-                "meta:descriptionId": "campaign-member-components##xdm:sourcePersonID##description##13011"
+                "meta:titleId": "campaign-member-components##xdm:sourcePersonID##title##40431",
+                "meta:descriptionId": "campaign-member-components##xdm:sourcePersonID##description##3171"
               },
               "xdm:sourceAcquiredByCampaignID": {
                 "title": "Source Acquired By CampaignID",
                 "description": "",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-                "meta:titleId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##title##55571",
-                "meta:descriptionId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##description##67681"
+                "meta:titleId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##title##30871",
+                "meta:descriptionId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##description##45471"
               },
               "xdm:memberStatus": {
                 "title": "Source Campaign Member Status",
                 "description": "",
                 "type": "string",
-                "meta:titleId": "campaign-member-components##xdm:memberStatus##title##12061",
-                "meta:descriptionId": "campaign-member-components##xdm:memberStatus##description##59971"
+                "meta:titleId": "campaign-member-components##xdm:memberStatus##title##43131",
+                "meta:descriptionId": "campaign-member-components##xdm:memberStatus##description##11891"
               },
               "xdm:memberStatusReason": {
                 "title": "Source Status Reason",
                 "description": "",
                 "type": "string",
-                "meta:titleId": "campaign-member-components##xdm:memberStatusReason##title##34001",
-                "meta:descriptionId": "campaign-member-components##xdm:memberStatusReason##description##64131"
+                "meta:titleId": "campaign-member-components##xdm:memberStatusReason##title##51491",
+                "meta:descriptionId": "campaign-member-components##xdm:memberStatusReason##description##99341"
               },
               "xdm:hasReachedSuccess": {
                 "title": "Source Has Reached Success",
                 "description": "",
                 "type": "boolean",
-                "meta:titleId": "campaign-member-components##xdm:hasReachedSuccess##title##53511",
-                "meta:descriptionId": "campaign-member-components##xdm:hasReachedSuccess##description##69131"
+                "meta:titleId": "campaign-member-components##xdm:hasReachedSuccess##title##76221",
+                "meta:descriptionId": "campaign-member-components##xdm:hasReachedSuccess##description##90611"
               },
               "xdm:reachedSuccessDate": {
                 "title": "Source Reached Success Date",
                 "description": "",
                 "type": "string",
                 "format": "date-time",
-                "meta:titleId": "campaign-member-components##xdm:reachedSuccessDate##title##79741",
-                "meta:descriptionId": "campaign-member-components##xdm:reachedSuccessDate##description##80581"
+                "meta:titleId": "campaign-member-components##xdm:reachedSuccessDate##title##22071",
+                "meta:descriptionId": "campaign-member-components##xdm:reachedSuccessDate##description##92491"
               }
             }
           }
@@ -98,6 +98,6 @@
   ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-09-29",
-  "meta:titleId": "campaign-member-components##title##8691",
-  "meta:descriptionId": "campaign-member-components##description##49641"
+  "meta:titleId": "campaign-member-components##title##59761",
+  "meta:descriptionId": "campaign-member-components##description##93481"
 }

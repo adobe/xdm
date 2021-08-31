@@ -29,8 +29,8 @@
               "title": "List ID",
               "type": "string",
               "description": "Unique ID of the Marketing List.",
-              "meta:titleId": "add-to-list##xdm:listID##title##53561",
-              "meta:descriptionId": "add-to-list##xdm:listID##description##60441"
+              "meta:titleId": "add-to-list##xdm:listID##title##63411",
+              "meta:descriptionId": "add-to-list##xdm:listID##description##49311"
             },
             "xdm:listKey": {
               "title": "List Key",
@@ -40,7 +40,7 @@
               "meta:descriptionId": "add-to-list##xdm:listKey##description##65431"
             }
           },
-          "meta:titleId": "add-to-list##xdm:listOperations##title##31861"
+          "meta:titleId": "add-to-list##xdm:listOperations##title##56911"
         }
       }
     }
@@ -52,6 +52,6 @@
   ],
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "add-to-list##title##57131",
-  "meta:descriptionId": "add-to-list##description##90881"
+  "meta:titleId": "add-to-list##title##73091",
+  "meta:descriptionId": "add-to-list##description##75021"
 }

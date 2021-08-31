@@ -22,12 +22,16 @@
         "xdm:targeted": {
           "title": "Targeted",
           "type": "boolean",
-          "description": "Indicates if the user segment was targeted with the ad."
+          "description": "Indicates if the user segment was targeted with the ad.",
+          "meta:titleId": "adcloudsegment##xdm:targeted##title##55691",
+          "meta:descriptionId": "adcloudsegment##xdm:targeted##description##73341"
         },
         "xdm:partnerId": {
           "title": "Attributable Partner ID",
           "type": "string",
-          "description": "The segment provider who owns the user segment."
+          "description": "The segment provider who owns the user segment.",
+          "meta:titleId": "adcloudsegment##xdm:partnerId##title##40231",
+          "meta:descriptionId": "adcloudsegment##xdm:partnerId##description##8151"
         }
       }
     }
@@ -46,5 +50,7 @@
       "$ref": "#/definitions/adcloudsegment"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "adcloudsegment##title##15991",
+  "meta:descriptionId": "adcloudsegment##description##78041"
 }

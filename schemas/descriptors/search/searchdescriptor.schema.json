@@ -23,16 +23,16 @@
           "type": "boolean",
           "description": "Whether the property is indexable and searchable.",
           "default": false,
-          "meta:titleId": "searchdescriptor##search:indexed##title##66951",
-          "meta:descriptionId": "searchdescriptor##search:indexed##description##80521"
+          "meta:titleId": "searchdescriptor##search:indexed##title##89341",
+          "meta:descriptionId": "searchdescriptor##search:indexed##description##32251"
         },
         "search:filterable": {
           "title": "Filterable",
           "type": "boolean",
           "description": "Whether the property can be used as a filter in search queries.",
           "default": false,
-          "meta:titleId": "searchdescriptor##search:filterable##title##29631",
-          "meta:descriptionId": "searchdescriptor##search:filterable##description##33061"
+          "meta:titleId": "searchdescriptor##search:filterable##title##7971",
+          "meta:descriptionId": "searchdescriptor##search:filterable##description##41761"
         },
         "search:store": {
           "title": "Stored",
@@ -44,8 +44,8 @@
             "storedAndFetchByDefault": "storedAndFetchByDefault"
           },
           "default": "notStored",
-          "meta:titleId": "searchdescriptor##search:store##title##3391",
-          "meta:descriptionId": "searchdescriptor##search:store##description##35911"
+          "meta:titleId": "searchdescriptor##search:store##title##78701",
+          "meta:descriptionId": "searchdescriptor##search:store##description##76781"
         },
         "search:sort": {
           "title": "Sort Type",
@@ -58,8 +58,8 @@
             "sortedCaseInsensitive": "sortedCaseInsensitive"
           },
           "default": "notSortable",
-          "meta:titleId": "searchdescriptor##search:sort##title##82311",
-          "meta:descriptionId": "searchdescriptor##search:sort##description##79421"
+          "meta:titleId": "searchdescriptor##search:sort##title##73251",
+          "meta:descriptionId": "searchdescriptor##search:sort##description##96751"
         },
         "search:analyzers": {
           "title": "Analyzers",
@@ -83,8 +83,8 @@
           },
           "description": "A set of analyzers to be applied when indexing this property.",
           "default": "noAnalysis",
-          "meta:titleId": "searchdescriptor##search:analyzers##title##64961",
-          "meta:descriptionId": "searchdescriptor##search:analyzers##description##90461"
+          "meta:titleId": "searchdescriptor##search:analyzers##title##89401",
+          "meta:descriptionId": "searchdescriptor##search:analyzers##description##34701"
         },
         "search:defaultAnalyzer": {
           "title": "Default analyzer",
@@ -105,8 +105,8 @@
             "fileNameExtension": "fileNameExtension"
           },
           "default": "noAnalysis",
-          "meta:titleId": "searchdescriptor##search:defaultAnalyzer##title##50311",
-          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##44311"
+          "meta:titleId": "searchdescriptor##search:defaultAnalyzer##title##98641",
+          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##68811"
         }
       },
       "required": ["search:indexed"]
@@ -122,6 +122,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "searchdescriptor##title##44631",
-  "meta:descriptionId": "searchdescriptor##description##44471"
+  "meta:titleId": "searchdescriptor##title##53391",
+  "meta:descriptionId": "searchdescriptor##description##67831"
 }

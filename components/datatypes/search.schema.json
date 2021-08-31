@@ -18,37 +18,37 @@
           "title": "Search engine",
           "type": "string",
           "description": "The search engine used by the search.",
-          "meta:titleId": "search##xdm:searchEngine##title##92011",
-          "meta:descriptionId": "search##xdm:searchEngine##description##93831"
+          "meta:titleId": "search##xdm:searchEngine##title##77621",
+          "meta:descriptionId": "search##xdm:searchEngine##description##63591"
         },
         "xdm:searchEngineID": {
           "title": "Search engine ID",
           "type": "string",
           "format": "uri",
           "description": "The application specified identifier used to identify the search engine used by the search.",
-          "meta:titleId": "search##xdm:searchEngineID##title##54401",
-          "meta:descriptionId": "search##xdm:searchEngineID##description##57711"
+          "meta:titleId": "search##xdm:searchEngineID##title##20261",
+          "meta:descriptionId": "search##xdm:searchEngineID##description##25281"
         },
         "xdm:keywords": {
           "title": "Keywords",
           "type": "string",
           "description": "Keywords for the search.",
-          "meta:titleId": "search##xdm:keywords##title##94801",
-          "meta:descriptionId": "search##xdm:keywords##description##66151"
+          "meta:titleId": "search##xdm:keywords##title##30041",
+          "meta:descriptionId": "search##xdm:keywords##description##21051"
         },
         "xdm:isPaid": {
           "title": "Is paid",
           "type": "boolean",
           "description": "Indicate if the search is paid or not.",
-          "meta:titleId": "search##xdm:isPaid##title##52881",
-          "meta:descriptionId": "search##xdm:isPaid##description##49111"
+          "meta:titleId": "search##xdm:isPaid##title##85101",
+          "meta:descriptionId": "search##xdm:isPaid##description##42491"
         },
         "xdm:pageDepth": {
           "title": "Page depth",
           "type": "integer",
           "description": "Page depth in the search results.",
-          "meta:titleId": "search##xdm:pageDepth##title##89771",
-          "meta:descriptionId": "search##xdm:pageDepth##description##24541"
+          "meta:titleId": "search##xdm:pageDepth##title##53451",
+          "meta:descriptionId": "search##xdm:pageDepth##description##84591"
         },
         "xdm:slot": {
           "title": "Page slot",
@@ -58,15 +58,15 @@
             "top": "Top of the page",
             "side": "Side of the page"
           },
-          "meta:titleId": "search##xdm:slot##title##39271",
-          "meta:descriptionId": "search##xdm:slot##description##99741"
+          "meta:titleId": "search##xdm:slot##title##4271",
+          "meta:descriptionId": "search##xdm:slot##description##19671"
         },
         "xdm:position": {
           "title": "Listing position",
           "type": "integer",
           "description": "Position or rank of the listing in the search result page.",
-          "meta:titleId": "search##xdm:position##title##11281",
-          "meta:descriptionId": "search##xdm:position##description##32531"
+          "meta:titleId": "search##xdm:position##title##67271",
+          "meta:descriptionId": "search##xdm:position##description##70481"
         }
       }
     }
@@ -81,6 +81,6 @@
   ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "search##title##41571",
-  "meta:descriptionId": "search##description##86381"
+  "meta:titleId": "search##title##35331",
+  "meta:descriptionId": "search##description##18021"
 }

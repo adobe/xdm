@@ -19,106 +19,106 @@
           "title": "Errors",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of errors that were encountered during playback.",
-          "meta:titleId": "media-timed-qoe##xdm:errors##title##9201",
-          "meta:descriptionId": "media-timed-qoe##xdm:errors##description##72351"
+          "meta:titleId": "media-timed-qoe##xdm:errors##title##25761",
+          "meta:descriptionId": "media-timed-qoe##xdm:errors##description##39841"
         },
         "xdm:buffers": {
           "title": "Buffer events",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of buffer states that occurred during a playback session.",
-          "meta:titleId": "media-timed-qoe##xdm:buffers##title##12791",
-          "meta:descriptionId": "media-timed-qoe##xdm:buffers##description##53241"
+          "meta:titleId": "media-timed-qoe##xdm:buffers##title##50001",
+          "meta:descriptionId": "media-timed-qoe##xdm:buffers##description##59181"
         },
         "xdm:bufferTime": {
           "title": "Total buffer duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the total amount of time in seconds, spent buffering.",
-          "meta:titleId": "media-timed-qoe##xdm:bufferTime##title##601",
-          "meta:descriptionId": "media-timed-qoe##xdm:bufferTime##description##9691"
+          "meta:titleId": "media-timed-qoe##xdm:bufferTime##title##42681",
+          "meta:descriptionId": "media-timed-qoe##xdm:bufferTime##description##63661"
         },
         "xdm:bufferImpactedStreams": {
           "title": "Buffer impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams impacted by buffering.",
-          "meta:titleId": "media-timed-qoe##xdm:bufferImpactedStreams##title##67581",
-          "meta:descriptionId": "media-timed-qoe##xdm:bufferImpactedStreams##description##71241"
+          "meta:titleId": "media-timed-qoe##xdm:bufferImpactedStreams##title##25241",
+          "meta:descriptionId": "media-timed-qoe##xdm:bufferImpactedStreams##description##10171"
         },
         "xdm:stalls": {
           "title": "Stalling events",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of stall states that occurred during a playback session.",
-          "meta:titleId": "media-timed-qoe##xdm:stalls##title##36711",
-          "meta:descriptionId": "media-timed-qoe##xdm:stalls##description##80081"
+          "meta:titleId": "media-timed-qoe##xdm:stalls##title##40091",
+          "meta:descriptionId": "media-timed-qoe##xdm:stalls##description##50631"
         },
         "xdm:stallTime": {
           "title": "Total stalling duration",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the duration in seconds in which the playback was stalled during playback.",
-          "meta:titleId": "media-timed-qoe##xdm:stallTime##title##4041",
-          "meta:descriptionId": "media-timed-qoe##xdm:stallTime##description##68051"
+          "meta:titleId": "media-timed-qoe##xdm:stallTime##title##76411",
+          "meta:descriptionId": "media-timed-qoe##xdm:stallTime##description##85531"
         },
         "xdm:stallingImpactedStreams": {
           "title": "Stalling impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams impacted by stalling.",
-          "meta:titleId": "media-timed-qoe##xdm:stallingImpactedStreams##title##53751",
-          "meta:descriptionId": "media-timed-qoe##xdm:stallingImpactedStreams##description##13051"
+          "meta:titleId": "media-timed-qoe##xdm:stallingImpactedStreams##title##83491",
+          "meta:descriptionId": "media-timed-qoe##xdm:stallingImpactedStreams##description##1801"
         },
         "xdm:bitrateChanges": {
           "title": "Bitrate changes",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of bitrate change events that occurred during a playback session.",
-          "meta:titleId": "media-timed-qoe##xdm:bitrateChanges##title##98351",
-          "meta:descriptionId": "media-timed-qoe##xdm:bitrateChanges##description##35311"
+          "meta:titleId": "media-timed-qoe##xdm:bitrateChanges##title##98311",
+          "meta:descriptionId": "media-timed-qoe##xdm:bitrateChanges##description##77521"
         },
         "xdm:bitrateAverage": {
           "title": "Average bitrate",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session.",
-          "meta:titleId": "media-timed-qoe##xdm:bitrateAverage##title##14051",
-          "meta:descriptionId": "media-timed-qoe##xdm:bitrateAverage##description##3181"
+          "meta:titleId": "media-timed-qoe##xdm:bitrateAverage##title##79511",
+          "meta:descriptionId": "media-timed-qoe##xdm:bitrateAverage##description##57981"
         },
         "xdm:bitrateAverageBucket": {
           "title": "Average bitrate bucket",
           "type": "string",
           "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.",
-          "meta:titleId": "media-timed-qoe##xdm:bitrateAverageBucket##title##72651",
-          "meta:descriptionId": "media-timed-qoe##xdm:bitrateAverageBucket##description##68531"
+          "meta:titleId": "media-timed-qoe##xdm:bitrateAverageBucket##title##62171",
+          "meta:descriptionId": "media-timed-qoe##xdm:bitrateAverageBucket##description##75251"
         },
         "xdm:bitrateChangeImpactedStreams": {
           "title": "Bitrate change impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams in which bitrate changes occurred.",
-          "meta:titleId": "media-timed-qoe##xdm:bitrateChangeImpactedStreams##title##65381",
-          "meta:descriptionId": "media-timed-qoe##xdm:bitrateChangeImpactedStreams##description##21541"
+          "meta:titleId": "media-timed-qoe##xdm:bitrateChangeImpactedStreams##title##57111",
+          "meta:descriptionId": "media-timed-qoe##xdm:bitrateChangeImpactedStreams##description##42811"
         },
         "xdm:droppedFrames": {
           "title": "Dropped frames",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of frames dropped during playback of the main content.",
-          "meta:titleId": "media-timed-qoe##xdm:droppedFrames##title##83131",
-          "meta:descriptionId": "media-timed-qoe##xdm:droppedFrames##description##8221"
+          "meta:titleId": "media-timed-qoe##xdm:droppedFrames##title##84911",
+          "meta:descriptionId": "media-timed-qoe##xdm:droppedFrames##description##311"
         },
         "xdm:droppedFrameImpactedStreams": {
           "title": "Dropped frame impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams in which frames were dropped.",
-          "meta:titleId": "media-timed-qoe##xdm:droppedFrameImpactedStreams##title##77941",
-          "meta:descriptionId": "media-timed-qoe##xdm:droppedFrameImpactedStreams##description##2521"
+          "meta:titleId": "media-timed-qoe##xdm:droppedFrameImpactedStreams##title##8421",
+          "meta:descriptionId": "media-timed-qoe##xdm:droppedFrameImpactedStreams##description##35561"
         },
         "xdm:dropBeforeStarts": {
           "title": "Drops before starts",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
-          "meta:titleId": "media-timed-qoe##xdm:dropBeforeStarts##title##52521",
-          "meta:descriptionId": "media-timed-qoe##xdm:dropBeforeStarts##description##40501"
+          "meta:titleId": "media-timed-qoe##xdm:dropBeforeStarts##title##52601",
+          "meta:descriptionId": "media-timed-qoe##xdm:dropBeforeStarts##description##10751"
         },
         "xdm:timeToStart": {
           "title": "Time to start",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Describes the duration (in seconds) passed between video load and start.",
-          "meta:titleId": "media-timed-qoe##xdm:timeToStart##title##11311",
-          "meta:descriptionId": "media-timed-qoe##xdm:timeToStart##description##88111"
+          "meta:titleId": "media-timed-qoe##xdm:timeToStart##title##80771",
+          "meta:descriptionId": "media-timed-qoe##xdm:timeToStart##description##43541"
         },
         "xdm:playerSdkErrors": {
           "title": "Player SDK Error IDs",
@@ -127,8 +127,8 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated in the Player.",
-          "meta:titleId": "media-timed-qoe##xdm:playerSdkErrors##title##1881",
-          "meta:descriptionId": "media-timed-qoe##xdm:playerSdkErrors##description##44181"
+          "meta:titleId": "media-timed-qoe##xdm:playerSdkErrors##title##12071",
+          "meta:descriptionId": "media-timed-qoe##xdm:playerSdkErrors##description##83571"
         },
         "xdm:mediaSdkErrors": {
           "title": "Media SDK Error IDs",
@@ -137,8 +137,8 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
-          "meta:titleId": "media-timed-qoe##xdm:mediaSdkErrors##title##98221",
-          "meta:descriptionId": "media-timed-qoe##xdm:mediaSdkErrors##description##78521"
+          "meta:titleId": "media-timed-qoe##xdm:mediaSdkErrors##title##13531",
+          "meta:descriptionId": "media-timed-qoe##xdm:mediaSdkErrors##description##94901"
         },
         "xdm:externalSdkErrors": {
           "title": "External Error IDs",
@@ -147,15 +147,15 @@
             "type": "string"
           },
           "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
-          "meta:titleId": "media-timed-qoe##xdm:externalSdkErrors##title##24301",
-          "meta:descriptionId": "media-timed-qoe##xdm:externalSdkErrors##description##16771"
+          "meta:titleId": "media-timed-qoe##xdm:externalSdkErrors##title##60951",
+          "meta:descriptionId": "media-timed-qoe##xdm:externalSdkErrors##description##21511"
         },
         "xdm:errorImpactedStreams": {
           "title": "Error impacted streams",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of streams in which an error event occurred.",
-          "meta:titleId": "media-timed-qoe##xdm:errorImpactedStreams##title##87981",
-          "meta:descriptionId": "media-timed-qoe##xdm:errorImpactedStreams##description##86961"
+          "meta:titleId": "media-timed-qoe##xdm:errorImpactedStreams##title##12541",
+          "meta:descriptionId": "media-timed-qoe##xdm:errorImpactedStreams##description##35101"
         }
       }
     }
@@ -169,6 +169,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media-timed-qoe##title##12701",
-  "meta:descriptionId": "media-timed-qoe##description##3841"
+  "meta:titleId": "media-timed-qoe##title##1851",
+  "meta:descriptionId": "media-timed-qoe##description##50951"
 }

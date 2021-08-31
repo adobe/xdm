@@ -38,7 +38,9 @@
             "delay": "Message delayed",
             "duplicate": "Duplicate message skipped",
             "denylist": "Invalid destination skipped"
-          }
+          },
+          "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##title##21101",
+          "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##description##54571"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion": {
           "title": "Message Exclusion",
@@ -47,14 +49,19 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
               "title": "Exclude Code",
               "type": "string",
-              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing."
+              "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing.",
+              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code##title##57901",
+              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code##description##92321"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Exclude Reason",
               "type": "string",
-              "description": "Provide exclusion subcode, like exact typology rule-id."
+              "description": "Provide exclusion subcode, like exact typology rule-id.",
+              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##title##95631",
+              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##90041"
             }
-          }
+          },
+          "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion##title##32491"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure": {
           "title": "Message Failure",
@@ -63,12 +70,16 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason": {
               "title": "Failure Reason",
               "type": "string",
-              "description": "Failure reason for a failed delivery attempt."
+              "description": "Failure reason for a failed delivery attempt.",
+              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##title##70551",
+              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason##description##51271"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code": {
               "title": "Failure Code",
               "type": "string",
-              "description": "Failure code for a failed delivery attempt."
+              "description": "Failure code for a failed delivery attempt.",
+              "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code##title##64991",
+              "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code##description##80161"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type": {
               "title": "Failure Type",
@@ -88,12 +99,15 @@
                 "async": "The delivery failed asynchronously."
               }
             }
-          }
+          },
+          "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure##title##88741"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": {
           "title": "Retry Count",
           "type": "integer",
-          "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0."
+          "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0.",
+          "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount##title##33621",
+          "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount##description##65331"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
           "title": "Offer details",
@@ -111,5 +125,7 @@
       "$ref": "#/definitions/messageDeliveryfeedback"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "message-delivery-feedback##title##79791",
+  "meta:descriptionId": "message-delivery-feedback##description##18731"
 }

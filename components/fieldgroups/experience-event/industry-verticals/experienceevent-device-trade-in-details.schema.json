@@ -32,40 +32,40 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
               "description": "Extension of toolUsage data type.",
               "meta:status": "deprecated",
-              "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##title##63311",
-              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##description##18371"
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##title##23181",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeIn##description##27571"
             },
             "xdm:originalDeviceID": {
               "title": "Original Device ID",
               "type": "string",
               "description": "ID for the device being traded.",
-              "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##34481",
-              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##51821"
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##72251",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##66791"
             },
             "xdm:newDeviceID": {
               "title": "New Device ID",
               "type": "string",
               "description": "ID for the new device being traded for.",
-              "meta:titleId": "experienceevent-device-trade-in-details##xdm:newDeviceID##title##64771",
-              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:newDeviceID##description##93571"
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:newDeviceID##title##28251",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:newDeviceID##description##61591"
             },
             "xdm:tradeInValue": {
               "title": "Trade In Value",
               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
               "description": "Value of the device being traded.",
-              "meta:titleId": "experienceevent-device-trade-in-details##xdm:tradeInValue##title##89341",
-              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:tradeInValue##description##97491"
+              "meta:titleId": "experienceevent-device-trade-in-details##xdm:tradeInValue##title##29221",
+              "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:tradeInValue##description##61051"
             }
           },
-          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeInDetails##description##97211"
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeInDetails##description##65001"
         },
         "xdm:deviceActivation": {
           "title": "Device Activation",
           "$ref": "https://ns.adobe.com/xdm/datatypes/tool-usage",
           "description": "Extension of toolUsage data type.",
           "meta:status": "deprecated",
-          "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceActivation##title##7291",
-          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceActivation##description##55201"
+          "meta:titleId": "experienceevent-device-trade-in-details##xdm:deviceActivation##title##64431",
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceActivation##description##33491"
         }
       }
     }
@@ -75,8 +75,8 @@
       "$ref": "#/definitions/device-trade-in-details"
     }
   ],
-  "meta:status": "stable",
+  "meta:status": "experimental",
   "meta:createdDate": "2021-02-02",
-  "meta:titleId": "experienceevent-device-trade-in-details##title##77841",
-  "meta:descriptionId": "experienceevent-device-trade-in-details##description##42461"
+  "meta:titleId": "experienceevent-device-trade-in-details##title##91941",
+  "meta:descriptionId": "experienceevent-device-trade-in-details##description##61271"
 }

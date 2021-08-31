@@ -30,46 +30,46 @@
                   "type": "string",
                   "format": "uri-reference",
                   "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs.",
-                  "meta:titleId": "media##@id##title##25531",
-                  "meta:descriptionId": "media##@id##description##52931"
+                  "meta:titleId": "media##@id##title##39951",
+                  "meta:descriptionId": "media##@id##description##32411"
                 },
                 "dc:title": {
                   "title": "Content name",
                   "type": "string",
                   "description": "The friendly, human-readable name of the timed media asset.",
-                  "meta:titleId": "media##dc:title##title##85571",
-                  "meta:descriptionId": "media##dc:title##description##94151"
+                  "meta:titleId": "media##dc:title##title##851",
+                  "meta:descriptionId": "media##dc:title##description##22221"
                 },
                 "dc:creator": {
                   "title": "Originator",
                   "type": "string",
                   "description": "Creator of the content.",
-                  "meta:titleId": "media##dc:creator##title##54971",
-                  "meta:descriptionId": "media##dc:creator##description##9461"
+                  "meta:titleId": "media##dc:creator##title##1951",
+                  "meta:descriptionId": "media##dc:creator##description##47391"
                 },
                 "id3:Audio": {
                   "title": "Audio",
                   "description": "Metadata specific to audio content (record label, radio station, etc.).",
                   "$ref": "https://id3.org/id3v2.4/audio",
                   "meta:status": "deprecated",
-                  "meta:titleId": "media##id3:Audio##title##54581",
-                  "meta:descriptionId": "media##id3:Audio##description##50001"
+                  "meta:titleId": "media##id3:Audio##title##50141",
+                  "meta:descriptionId": "media##id3:Audio##description##43031"
                 },
                 "xmpDM:artist": {
                   "title": "Artist",
                   "type": "string",
                   "description": "The name of the album artist or group performing the music recording or video.",
                   "meta:status": "deprecated",
-                  "meta:titleId": "media##xmpDM:artist##title##60591",
-                  "meta:descriptionId": "media##xmpDM:artist##description##21511"
+                  "meta:titleId": "media##xmpDM:artist##title##85051",
+                  "meta:descriptionId": "media##xmpDM:artist##description##73591"
                 },
                 "xmpDM:album": {
                   "title": "Album",
                   "type": "string",
                   "description": "The name of the album that the music recording or video belongs to.",
                   "meta:status": "deprecated",
-                  "meta:titleId": "media##xmpDM:album##title##71881",
-                  "meta:descriptionId": "media##xmpDM:album##description##92791"
+                  "meta:titleId": "media##xmpDM:album##title##95311",
+                  "meta:descriptionId": "media##xmpDM:album##description##63451"
                 },
                 "xdm:Audio": {
                   "title": "Audio",
@@ -80,61 +80,61 @@
                       "title": "Author",
                       "type": "string",
                       "description": "Name of the media author.",
-                      "meta:titleId": "media##dc:creator##title##43291",
-                      "meta:descriptionId": "media##dc:creator##description##39921"
+                      "meta:titleId": "media##dc:creator##title##16651",
+                      "meta:descriptionId": "media##dc:creator##description##30291"
                     },
                     "xmpDM:artist": {
                       "title": "Artist",
                       "type": "string",
                       "description": "The name of the album artist or group performing the music recording or video.",
-                      "meta:titleId": "media##xmpDM:artist##title##62771",
-                      "meta:descriptionId": "media##xmpDM:artist##description##25951"
+                      "meta:titleId": "media##xmpDM:artist##title##90241",
+                      "meta:descriptionId": "media##xmpDM:artist##description##81851"
                     },
                     "xmpDM:album": {
                       "title": "Album",
                       "type": "string",
                       "description": "The name of the album that the music recording or video belongs to.",
-                      "meta:titleId": "media##xmpDM:album##title##91391",
-                      "meta:descriptionId": "media##xmpDM:album##description##47841"
+                      "meta:titleId": "media##xmpDM:album##title##65521",
+                      "meta:descriptionId": "media##xmpDM:album##description##75141"
                     },
                     "id3:Audio": {
                       "title": "Audio",
                       "description": "Metadata specific to audio content (record label, radio station, etc.).",
                       "$ref": "https://id3.org/id3v2.4/audio",
-                      "meta:titleId": "media##id3:Audio##title##30171",
-                      "meta:descriptionId": "media##id3:Audio##description##39461"
+                      "meta:titleId": "media##id3:Audio##title##86101",
+                      "meta:descriptionId": "media##id3:Audio##description##11881"
                     }
                   },
-                  "meta:titleId": "media##xdm:Audio##title##40521",
-                  "meta:descriptionId": "media##xdm:Audio##description##31111"
+                  "meta:titleId": "media##xdm:Audio##title##5061",
+                  "meta:descriptionId": "media##xdm:Audio##description##69821"
                 },
                 "xmpDM:duration": {
                   "title": "Media content length",
                   "type": "integer",
                   "description": "Length of primary media asset in seconds.",
-                  "meta:titleId": "media##xmpDM:duration##title##30451",
-                  "meta:descriptionId": "media##xmpDM:duration##description##96721"
+                  "meta:titleId": "media##xmpDM:duration##title##97521",
+                  "meta:descriptionId": "media##xmpDM:duration##description##92011"
                 },
                 "xdm:showType": {
                   "title": "Show type",
                   "type": "string",
                   "description": "The type of content for example, trailer or full episode.",
-                  "meta:titleId": "media##xdm:showType##title##96001",
-                  "meta:descriptionId": "media##xdm:showType##description##96461"
+                  "meta:titleId": "media##xdm:showType##title##15271",
+                  "meta:descriptionId": "media##xdm:showType##description##44461"
                 },
                 "iptc4xmpExt:Series": {
                   "title": "Series",
                   "description": "The series the show belongs to.",
                   "$ref": "http://www.iptc.org/series",
-                  "meta:titleId": "media##iptc4xmpExt:Series##title##75411",
-                  "meta:descriptionId": "media##iptc4xmpExt:Series##description##63531"
+                  "meta:titleId": "media##iptc4xmpExt:Series##title##1131",
+                  "meta:descriptionId": "media##iptc4xmpExt:Series##description##79191"
                 },
                 "xdm:streamFormat": {
                   "title": "Stream format",
                   "type": "string",
                   "description": "Free-form format of the stream for example, short or long.",
-                  "meta:titleId": "media##xdm:streamFormat##title##55811",
-                  "meta:descriptionId": "media##xdm:streamFormat##description##16891"
+                  "meta:titleId": "media##xdm:streamFormat##title##62991",
+                  "meta:descriptionId": "media##xdm:streamFormat##description##92311"
                 },
                 "xdm:streamType": {
                   "title": "Stream type",
@@ -147,22 +147,22 @@
                     "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
                     "gaming": "A gaming stream (e.g. Twitch, Hitbox)."
                   },
-                  "meta:titleId": "media##xdm:streamType##title##1661",
-                  "meta:descriptionId": "media##xdm:streamType##description##5191"
+                  "meta:titleId": "media##xdm:streamType##title##39001",
+                  "meta:descriptionId": "media##xdm:streamType##description##90081"
                 },
                 "iptc4xmpExt:Season": {
                   "title": "Season",
                   "description": "The season the show belongs to.",
                   "$ref": "http://www.iptc.org/season",
-                  "meta:titleId": "media##iptc4xmpExt:Season##title##84461",
-                  "meta:descriptionId": "media##iptc4xmpExt:Season##description##39721"
+                  "meta:titleId": "media##iptc4xmpExt:Season##title##79121",
+                  "meta:descriptionId": "media##iptc4xmpExt:Season##description##97691"
                 },
                 "iptc4xmpExt:Episode": {
                   "title": "Episode",
                   "description": "The episode the show belongs to.",
                   "$ref": "http://www.iptc.org/episode",
-                  "meta:titleId": "media##iptc4xmpExt:Episode##title##71791",
-                  "meta:descriptionId": "media##iptc4xmpExt:Episode##description##17461"
+                  "meta:titleId": "media##iptc4xmpExt:Episode##title##87541",
+                  "meta:descriptionId": "media##iptc4xmpExt:Episode##description##41771"
                 },
                 "iptc4xmpExt:Genre": {
                   "title": "Genre",
@@ -171,8 +171,8 @@
                   "items": {
                     "type": "string"
                   },
-                  "meta:titleId": "media##iptc4xmpExt:Genre##title##89591",
-                  "meta:descriptionId": "media##iptc4xmpExt:Genre##description##25921"
+                  "meta:titleId": "media##iptc4xmpExt:Genre##title##89361",
+                  "meta:descriptionId": "media##iptc4xmpExt:Genre##description##26691"
                 },
                 "iptc4xmpExt:Rating": {
                   "title": "Content rating",
@@ -181,8 +181,8 @@
                   "items": {
                     "$ref": "http://www.iptc.org/rating"
                   },
-                  "meta:titleId": "media##iptc4xmpExt:Rating##title##5771",
-                  "meta:descriptionId": "media##iptc4xmpExt:Rating##description##81601"
+                  "meta:titleId": "media##iptc4xmpExt:Rating##title##67331",
+                  "meta:descriptionId": "media##iptc4xmpExt:Rating##description##30051"
                 },
                 "iptc4xmpExt:Creator": {
                   "title": "Creator",
@@ -191,27 +191,27 @@
                   "items": {
                     "$ref": "http://www.iptc.org/creator"
                   },
-                  "meta:titleId": "media##iptc4xmpExt:Creator##title##99841",
-                  "meta:descriptionId": "media##iptc4xmpExt:Creator##description##91251"
+                  "meta:titleId": "media##iptc4xmpExt:Creator##title##24281",
+                  "meta:descriptionId": "media##iptc4xmpExt:Creator##description##77791"
                 },
                 "xdm:firstAirDate": {
                   "title": "First air date",
                   "type": "string",
                   "description": "The date when the content first aired on television.",
-                  "meta:titleId": "media##xdm:firstAirDate##title##40671",
-                  "meta:descriptionId": "media##xdm:firstAirDate##description##79381"
+                  "meta:titleId": "media##xdm:firstAirDate##title##99171",
+                  "meta:descriptionId": "media##xdm:firstAirDate##description##33851"
                 },
                 "xmpDM:releaseDate": {
                   "title": "First digital date",
                   "type": "string",
                   "description": "The date when the content first aired on any digital channel or platform.",
-                  "meta:titleId": "media##xmpDM:releaseDate##title##28601",
-                  "meta:descriptionId": "media##xmpDM:releaseDate##description##21041"
+                  "meta:titleId": "media##xmpDM:releaseDate##title##59951",
+                  "meta:descriptionId": "media##xmpDM:releaseDate##description##50211"
                 }
               },
               "required": ["@id"],
-              "meta:titleId": "media##xdm:primaryAssetReference##title##49901",
-              "meta:descriptionId": "media##xdm:primaryAssetReference##description##95371"
+              "meta:titleId": "media##xdm:primaryAssetReference##title##92491",
+              "meta:descriptionId": "media##xdm:primaryAssetReference##description##6541"
             },
             "xdm:primaryAssetViewDetails": {
               "title": "Primary asset view details",
@@ -223,37 +223,37 @@
                   "type": "string",
                   "format": "uri-reference",
                   "description": "Identifies an instance of a content stream unique to an individual playback.",
-                  "meta:titleId": "media##@id##title##86151",
-                  "meta:descriptionId": "media##@id##description##7791"
+                  "meta:titleId": "media##@id##title##31141",
+                  "meta:descriptionId": "media##@id##description##82861"
                 },
                 "xdm:playerName": {
                   "title": "Content player name",
                   "type": "string",
                   "description": "Name of the content player.",
-                  "meta:titleId": "media##xdm:playerName##title##15501",
-                  "meta:descriptionId": "media##xdm:playerName##description##89931"
+                  "meta:titleId": "media##xdm:playerName##title##9791",
+                  "meta:descriptionId": "media##xdm:playerName##description##97901"
                 },
                 "xdm:videoSegment": {
                   "title": "Video segment",
                   "type": "string",
                   "pattern": "^[0-9]+-[0-9]+$",
                   "description": "The interval that describes the part of the content that has been viewed in minutes.",
-                  "meta:titleId": "media##xdm:videoSegment##title##6191",
-                  "meta:descriptionId": "media##xdm:videoSegment##description##18071"
+                  "meta:titleId": "media##xdm:videoSegment##title##29671",
+                  "meta:descriptionId": "media##xdm:videoSegment##description##80611"
                 },
                 "xdm:path": {
                   "title": "Video path",
                   "type": "string",
                   "description": "The path to the video in the app or site.",
-                  "meta:titleId": "media##xdm:path##title##24791",
-                  "meta:descriptionId": "media##xdm:path##description##90201"
+                  "meta:titleId": "media##xdm:path##title##21451",
+                  "meta:descriptionId": "media##xdm:path##description##53961"
                 },
                 "xdm:broadcastChannel": {
                   "title": "Content channel",
                   "type": "string",
                   "description": "Distribution channel from where the content was played.",
-                  "meta:titleId": "media##xdm:broadcastChannel##title##92581",
-                  "meta:descriptionId": "media##xdm:broadcastChannel##description##46781"
+                  "meta:titleId": "media##xdm:broadcastChannel##title##65951",
+                  "meta:descriptionId": "media##xdm:broadcastChannel##description##71411"
                 },
                 "xdm:broadcastContentType": {
                   "title": "Broadcast content type",
@@ -268,50 +268,50 @@
                     "Podcast": "Audio podcast",
                     "Audiobook": "Audiobook"
                   },
-                  "meta:titleId": "media##xdm:broadcastContentType##title##98061",
-                  "meta:descriptionId": "media##xdm:broadcastContentType##description##32811"
+                  "meta:titleId": "media##xdm:broadcastContentType##title##60571",
+                  "meta:descriptionId": "media##xdm:broadcastContentType##description##2911"
                 },
                 "xdm:playerSDKVersion": {
                   "title": "Player SDK version",
                   "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
                   "description": "The SDK version used by the player.",
-                  "meta:titleId": "media##xdm:playerSDKVersion##title##91391",
-                  "meta:descriptionId": "media##xdm:playerSDKVersion##description##62311"
+                  "meta:titleId": "media##xdm:playerSDKVersion##title##41231",
+                  "meta:descriptionId": "media##xdm:playerSDKVersion##description##42611"
                 },
                 "xdm:vhlVersion": {
                   "title": "VHL version",
                   "type": "string",
                   "description": "The Media SDK version used for the tracking session.",
-                  "meta:titleId": "media##xdm:vhlVersion##title##92121",
-                  "meta:descriptionId": "media##xdm:vhlVersion##description##55901"
+                  "meta:titleId": "media##xdm:vhlVersion##title##58021",
+                  "meta:descriptionId": "media##xdm:vhlVersion##description##53421"
                 },
                 "xdm:broadcastNetwork": {
                   "title": "Broadcast network",
                   "type": "string",
                   "description": "The programmer network name.",
-                  "meta:titleId": "media##xdm:broadcastNetwork##title##32521",
-                  "meta:descriptionId": "media##xdm:broadcastNetwork##description##46511"
+                  "meta:titleId": "media##xdm:broadcastNetwork##title##87741",
+                  "meta:descriptionId": "media##xdm:broadcastNetwork##description##14961"
                 },
                 "xdm:adLoadType": {
                   "title": "Ad load type",
                   "type": "string",
                   "description": "The type of ad loaded as defined by each customer's internal representation.",
-                  "meta:titleId": "media##xdm:adLoadType##title##28911",
-                  "meta:descriptionId": "media##xdm:adLoadType##description##77381"
+                  "meta:titleId": "media##xdm:adLoadType##title##36651",
+                  "meta:descriptionId": "media##xdm:adLoadType##description##2881"
                 },
                 "xdm:sourceFeed": {
                   "title": "Feed type",
                   "type": "string",
                   "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL.",
-                  "meta:titleId": "media##xdm:sourceFeed##title##27061",
-                  "meta:descriptionId": "media##xdm:sourceFeed##description##21941"
+                  "meta:titleId": "media##xdm:sourceFeed##title##9681",
+                  "meta:descriptionId": "media##xdm:sourceFeed##description##65141"
                 },
                 "xdm:sessionTimeout": {
                   "title": "Media session server timeout",
                   "type": "integer",
                   "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed.",
-                  "meta:titleId": "media##xdm:sessionTimeout##title##34011",
-                  "meta:descriptionId": "media##xdm:sessionTimeout##description##73081"
+                  "meta:titleId": "media##xdm:sessionTimeout##title##86351",
+                  "meta:descriptionId": "media##xdm:sessionTimeout##description##62121"
                 },
                 "xdm:qoe": {
                   "title": "Quality of experience",
@@ -322,106 +322,106 @@
                       "title": "Errors",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of errors that were encountered during playback.",
-                      "meta:titleId": "media##xdm:errors##title##54291",
-                      "meta:descriptionId": "media##xdm:errors##description##96621"
+                      "meta:titleId": "media##xdm:errors##title##11231",
+                      "meta:descriptionId": "media##xdm:errors##description##68361"
                     },
                     "xdm:buffers": {
                       "title": "Buffer events",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of buffer states that occurred during a playback session.",
-                      "meta:titleId": "media##xdm:buffers##title##34031",
-                      "meta:descriptionId": "media##xdm:buffers##description##26151"
+                      "meta:titleId": "media##xdm:buffers##title##17541",
+                      "meta:descriptionId": "media##xdm:buffers##description##46941"
                     },
                     "xdm:bufferTime": {
                       "title": "Total buffer duration",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "Describes the total amount of time in seconds, spent buffering.",
-                      "meta:titleId": "media##xdm:bufferTime##title##43391",
-                      "meta:descriptionId": "media##xdm:bufferTime##description##59031"
+                      "meta:titleId": "media##xdm:bufferTime##title##79481",
+                      "meta:descriptionId": "media##xdm:bufferTime##description##14341"
                     },
                     "xdm:bufferImpactedStreams": {
                       "title": "Buffer impacted streams",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of streams impacted by buffering.",
-                      "meta:titleId": "media##xdm:bufferImpactedStreams##title##42421",
-                      "meta:descriptionId": "media##xdm:bufferImpactedStreams##description##1801"
+                      "meta:titleId": "media##xdm:bufferImpactedStreams##title##20171",
+                      "meta:descriptionId": "media##xdm:bufferImpactedStreams##description##18341"
                     },
                     "xdm:stalls": {
                       "title": "Stalling events",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of stall states that occurred during a playback session.",
-                      "meta:titleId": "media##xdm:stalls##title##20371",
-                      "meta:descriptionId": "media##xdm:stalls##description##44371"
+                      "meta:titleId": "media##xdm:stalls##title##73001",
+                      "meta:descriptionId": "media##xdm:stalls##description##98511"
                     },
                     "xdm:stallTime": {
                       "title": "Total stalling duration",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "Describes the duration in seconds in which the playback was stalled during playback.",
-                      "meta:titleId": "media##xdm:stallTime##title##93511",
-                      "meta:descriptionId": "media##xdm:stallTime##description##27881"
+                      "meta:titleId": "media##xdm:stallTime##title##76711",
+                      "meta:descriptionId": "media##xdm:stallTime##description##77451"
                     },
                     "xdm:stallingImpactedStreams": {
                       "title": "Stalling impacted streams",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of streams impacted by stalling.",
-                      "meta:titleId": "media##xdm:stallingImpactedStreams##title##2601",
-                      "meta:descriptionId": "media##xdm:stallingImpactedStreams##description##57321"
+                      "meta:titleId": "media##xdm:stallingImpactedStreams##title##92281",
+                      "meta:descriptionId": "media##xdm:stallingImpactedStreams##description##10631"
                     },
                     "xdm:bitrateChanges": {
                       "title": "Bitrate changes",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of bitrate change events that occurred during a playback session.",
-                      "meta:titleId": "media##xdm:bitrateChanges##title##83421",
-                      "meta:descriptionId": "media##xdm:bitrateChanges##description##75291"
+                      "meta:titleId": "media##xdm:bitrateChanges##title##47841",
+                      "meta:descriptionId": "media##xdm:bitrateChanges##description##50781"
                     },
                     "xdm:bitrateAverage": {
                       "title": "Average bitrate",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session.",
-                      "meta:titleId": "media##xdm:bitrateAverage##title##34861",
-                      "meta:descriptionId": "media##xdm:bitrateAverage##description##76621"
+                      "meta:titleId": "media##xdm:bitrateAverage##title##23291",
+                      "meta:descriptionId": "media##xdm:bitrateAverage##description##67161"
                     },
                     "xdm:bitrateAverageBucket": {
                       "title": "Average bitrate bucket",
                       "type": "string",
                       "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.",
-                      "meta:titleId": "media##xdm:bitrateAverageBucket##title##47591",
-                      "meta:descriptionId": "media##xdm:bitrateAverageBucket##description##43651"
+                      "meta:titleId": "media##xdm:bitrateAverageBucket##title##15731",
+                      "meta:descriptionId": "media##xdm:bitrateAverageBucket##description##91131"
                     },
                     "xdm:bitrateChangeImpactedStreams": {
                       "title": "Bitrate change impacted streams",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of streams in which bitrate changes occurred.",
-                      "meta:titleId": "media##xdm:bitrateChangeImpactedStreams##title##14891",
-                      "meta:descriptionId": "media##xdm:bitrateChangeImpactedStreams##description##33971"
+                      "meta:titleId": "media##xdm:bitrateChangeImpactedStreams##title##15121",
+                      "meta:descriptionId": "media##xdm:bitrateChangeImpactedStreams##description##68551"
                     },
                     "xdm:droppedFrames": {
                       "title": "Dropped frames",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of frames dropped during playback of the main content.",
-                      "meta:titleId": "media##xdm:droppedFrames##title##331",
-                      "meta:descriptionId": "media##xdm:droppedFrames##description##35801"
+                      "meta:titleId": "media##xdm:droppedFrames##title##39471",
+                      "meta:descriptionId": "media##xdm:droppedFrames##description##73421"
                     },
                     "xdm:droppedFrameImpactedStreams": {
                       "title": "Dropped frame impacted streams",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of streams in which frames were dropped.",
-                      "meta:titleId": "media##xdm:droppedFrameImpactedStreams##title##40591",
-                      "meta:descriptionId": "media##xdm:droppedFrameImpactedStreams##description##66081"
+                      "meta:titleId": "media##xdm:droppedFrameImpactedStreams##title##75231",
+                      "meta:descriptionId": "media##xdm:droppedFrameImpactedStreams##description##58251"
                     },
                     "xdm:dropBeforeStarts": {
                       "title": "Drops before starts",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
-                      "meta:titleId": "media##xdm:dropBeforeStarts##title##10141",
-                      "meta:descriptionId": "media##xdm:dropBeforeStarts##description##31641"
+                      "meta:titleId": "media##xdm:dropBeforeStarts##title##27671",
+                      "meta:descriptionId": "media##xdm:dropBeforeStarts##description##51351"
                     },
                     "xdm:timeToStart": {
                       "title": "Time to start",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "Describes the duration (in seconds) passed between video load and start.",
-                      "meta:titleId": "media##xdm:timeToStart##title##3111",
-                      "meta:descriptionId": "media##xdm:timeToStart##description##79291"
+                      "meta:titleId": "media##xdm:timeToStart##title##15561",
+                      "meta:descriptionId": "media##xdm:timeToStart##description##64531"
                     },
                     "xdm:playerSdkErrors": {
                       "title": "Player SDK Error IDs",
@@ -430,8 +430,8 @@
                         "type": "string"
                       },
                       "description": "The error IDs encountered during a playback session that originated in the Player.",
-                      "meta:titleId": "media##xdm:playerSdkErrors##title##93621",
-                      "meta:descriptionId": "media##xdm:playerSdkErrors##description##32411"
+                      "meta:titleId": "media##xdm:playerSdkErrors##title##6831",
+                      "meta:descriptionId": "media##xdm:playerSdkErrors##description##84151"
                     },
                     "xdm:mediaSdkErrors": {
                       "title": "Media SDK Error IDs",
@@ -440,8 +440,8 @@
                         "type": "string"
                       },
                       "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
-                      "meta:titleId": "media##xdm:mediaSdkErrors##title##68421",
-                      "meta:descriptionId": "media##xdm:mediaSdkErrors##description##34671"
+                      "meta:titleId": "media##xdm:mediaSdkErrors##title##67121",
+                      "meta:descriptionId": "media##xdm:mediaSdkErrors##description##99311"
                     },
                     "xdm:externalSdkErrors": {
                       "title": "External Error IDs",
@@ -450,26 +450,26 @@
                         "type": "string"
                       },
                       "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
-                      "meta:titleId": "media##xdm:externalSdkErrors##title##78741",
-                      "meta:descriptionId": "media##xdm:externalSdkErrors##description##18291"
+                      "meta:titleId": "media##xdm:externalSdkErrors##title##66291",
+                      "meta:descriptionId": "media##xdm:externalSdkErrors##description##41541"
                     },
                     "xdm:errorImpactedStreams": {
                       "title": "Error impacted streams",
                       "$ref": "https://ns.adobe.com/xdm/data/measure",
                       "description": "The number of streams in which an error event occurred.",
-                      "meta:titleId": "media##xdm:errorImpactedStreams##title##86461",
-                      "meta:descriptionId": "media##xdm:errorImpactedStreams##description##30521"
+                      "meta:titleId": "media##xdm:errorImpactedStreams##title##4371",
+                      "meta:descriptionId": "media##xdm:errorImpactedStreams##description##41131"
                     }
                   },
-                  "meta:titleId": "media##xdm:qoe##title##48051",
-                  "meta:descriptionId": "media##xdm:qoe##description##81121"
+                  "meta:titleId": "media##xdm:qoe##title##54041",
+                  "meta:descriptionId": "media##xdm:qoe##description##43461"
                 },
                 "xdm:downloadedPlayback": {
                   "title": "Media downloaded flag",
                   "type": "boolean",
                   "description": "The stream was played locally on the device after being downloaded.",
-                  "meta:titleId": "media##xdm:downloadedPlayback##title##96231",
-                  "meta:descriptionId": "media##xdm:downloadedPlayback##description##26461"
+                  "meta:titleId": "media##xdm:downloadedPlayback##title##81191",
+                  "meta:descriptionId": "media##xdm:downloadedPlayback##description##43021"
                 },
                 "xdm:fullScreen": {
                   "title": "Full screen",
@@ -480,60 +480,60 @@
                       "title": "Player state set",
                       "type": "boolean",
                       "description": "Whether or not the player state is set on that state.",
-                      "meta:titleId": "media##xdm:playerStateSet##title##99291",
-                      "meta:descriptionId": "media##xdm:playerStateSet##description##20831"
+                      "meta:titleId": "media##xdm:playerStateSet##title##3871",
+                      "meta:descriptionId": "media##xdm:playerStateSet##description##92031"
                     },
                     "xdm:playerStateCount": {
                       "title": "Player state count",
                       "type": "integer",
                       "minimum": 0,
                       "description": "The number of times that player state was set on the stream.",
-                      "meta:titleId": "media##xdm:playerStateCount##title##5041",
-                      "meta:descriptionId": "media##xdm:playerStateCount##description##56001"
+                      "meta:titleId": "media##xdm:playerStateCount##title##76901",
+                      "meta:descriptionId": "media##xdm:playerStateCount##description##21081"
                     },
                     "xdm:playerStateTime": {
                       "title": "Player state time",
                       "type": "integer",
                       "minimum": 0,
                       "description": "The total duration of that player state.",
-                      "meta:titleId": "media##xdm:playerStateTime##title##64121",
-                      "meta:descriptionId": "media##xdm:playerStateTime##description##89851"
+                      "meta:titleId": "media##xdm:playerStateTime##title##76761",
+                      "meta:descriptionId": "media##xdm:playerStateTime##description##54101"
                     }
                   },
-                  "meta:titleId": "media##xdm:fullScreen##title##921",
-                  "meta:descriptionId": "media##xdm:fullScreen##description##54101"
+                  "meta:titleId": "media##xdm:fullScreen##title##36641",
+                  "meta:descriptionId": "media##xdm:fullScreen##description##31531"
                 },
                 "xdm:mute": {
                   "title": "Mute",
                   "$ref": "https://ns.adobe.com/xdm/context/player-state",
                   "description": "Timed media properties related to mute player state.",
-                  "meta:titleId": "media##xdm:mute##title##16041",
-                  "meta:descriptionId": "media##xdm:mute##description##31781"
+                  "meta:titleId": "media##xdm:mute##title##27011",
+                  "meta:descriptionId": "media##xdm:mute##description##17301"
                 },
                 "xdm:closeCaption": {
                   "title": "Close caption",
                   "$ref": "https://ns.adobe.com/xdm/context/player-state",
                   "description": "Timed media properties related to close caption player state.",
-                  "meta:titleId": "media##xdm:closeCaption##title##90561",
-                  "meta:descriptionId": "media##xdm:closeCaption##description##19141"
+                  "meta:titleId": "media##xdm:closeCaption##title##39401",
+                  "meta:descriptionId": "media##xdm:closeCaption##description##44401"
                 },
                 "xdm:pictureInPicture": {
                   "title": "Picture in picture",
                   "$ref": "https://ns.adobe.com/xdm/context/player-state",
                   "description": "Timed media properties related to picture in picture player state.",
-                  "meta:titleId": "media##xdm:pictureInPicture##title##19751",
-                  "meta:descriptionId": "media##xdm:pictureInPicture##description##62321"
+                  "meta:titleId": "media##xdm:pictureInPicture##title##6291",
+                  "meta:descriptionId": "media##xdm:pictureInPicture##description##73971"
                 },
                 "xdm:inFocus": {
                   "title": "In focus",
                   "$ref": "https://ns.adobe.com/xdm/context/player-state",
                   "description": "Timed media properties related to in focus player state.",
-                  "meta:titleId": "media##xdm:inFocus##title##19501",
-                  "meta:descriptionId": "media##xdm:inFocus##description##79511"
+                  "meta:titleId": "media##xdm:inFocus##title##93531",
+                  "meta:descriptionId": "media##xdm:inFocus##description##43601"
                 }
               },
-              "meta:titleId": "media##xdm:primaryAssetViewDetails##title##6921",
-              "meta:descriptionId": "media##xdm:primaryAssetViewDetails##description##12231"
+              "meta:titleId": "media##xdm:primaryAssetViewDetails##title##24351",
+              "meta:descriptionId": "media##xdm:primaryAssetViewDetails##description##87221"
             },
             "xdm:mediaChapter": {
               "title": "Media chapter",
@@ -550,27 +550,27 @@
                       "format": "uri-reference",
                       "type": "string",
                       "description": "The identity of the chapter.",
-                      "meta:titleId": "media##@id##title##96331",
-                      "meta:descriptionId": "media##@id##description##7621"
+                      "meta:titleId": "media##@id##title##5221",
+                      "meta:descriptionId": "media##@id##description##56711"
                     },
                     "dc:title": {
                       "title": "Chapter name",
                       "type": "string",
                       "description": "The friendly name of the chapter and or segment.",
-                      "meta:titleId": "media##dc:title##title##35161",
-                      "meta:descriptionId": "media##dc:title##description##88681"
+                      "meta:titleId": "media##dc:title##title##84041",
+                      "meta:descriptionId": "media##dc:title##description##75401"
                     },
                     "xmpDM:duration": {
                       "title": "Chapter length or duration",
                       "type": "integer",
                       "description": "The length of the chapter, in seconds.",
-                      "meta:titleId": "media##xmpDM:duration##title##97111",
-                      "meta:descriptionId": "media##xmpDM:duration##description##59561"
+                      "meta:titleId": "media##xmpDM:duration##title##141",
+                      "meta:descriptionId": "media##xmpDM:duration##description##58671"
                     }
                   },
                   "required": ["@id"],
-                  "meta:titleId": "media##xdm:chapterAssetReference##title##52021",
-                  "meta:descriptionId": "media##xdm:chapterAssetReference##description##19071"
+                  "meta:titleId": "media##xdm:chapterAssetReference##title##99301",
+                  "meta:descriptionId": "media##xdm:chapterAssetReference##description##67801"
                 },
                 "xdm:chapterAssetViewDetails": {
                   "title": "Chapter view details",
@@ -581,240 +581,240 @@
                       "title": "Chapter position",
                       "type": "integer",
                       "description": "The index of the chapter inside the content.",
-                      "meta:titleId": "media##xdm:index##title##67741",
-                      "meta:descriptionId": "media##xdm:index##description##46111"
+                      "meta:titleId": "media##xdm:index##title##50891",
+                      "meta:descriptionId": "media##xdm:index##description##97561"
                     },
                     "xdm:offset": {
                       "title": "Chapter offset",
                       "type": "integer",
                       "description": "The offset of the chapter, in seconds, inside the content from the start.",
-                      "meta:titleId": "media##xdm:offset##title##53941",
-                      "meta:descriptionId": "media##xdm:offset##description##80541"
+                      "meta:titleId": "media##xdm:offset##title##54011",
+                      "meta:descriptionId": "media##xdm:offset##description##67351"
                     }
                   },
                   "required": ["xdm:index", "xdm:offset"],
-                  "meta:titleId": "media##xdm:chapterAssetViewDetails##title##98081",
-                  "meta:descriptionId": "media##xdm:chapterAssetViewDetails##description##1011"
+                  "meta:titleId": "media##xdm:chapterAssetViewDetails##title##8461",
+                  "meta:descriptionId": "media##xdm:chapterAssetViewDetails##description##98211"
                 },
                 "xdm:impressions": {
                   "title": "Chapter starts",
                   "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
-                  "meta:titleId": "media##xdm:impressions##title##28331",
-                  "meta:descriptionId": "media##xdm:impressions##description##33871"
+                  "meta:titleId": "media##xdm:impressions##title##11181",
+                  "meta:descriptionId": "media##xdm:impressions##description##22751"
                 },
                 "xdm:completes": {
                   "title": "Chapter completes",
                   "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Indicates if a timed media asset was watched to completion - this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
-                  "meta:titleId": "media##xdm:completes##title##62431",
-                  "meta:descriptionId": "media##xdm:completes##description##82901"
+                  "meta:titleId": "media##xdm:completes##title##82871",
+                  "meta:descriptionId": "media##xdm:completes##description##42231"
                 },
                 "xdm:timePlayed": {
                   "title": "Chapter time spent",
                   "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Describes the amount of time in seconds spent by a user on a specific timed media asset.",
-                  "meta:titleId": "media##xdm:timePlayed##title##70461",
-                  "meta:descriptionId": "media##xdm:timePlayed##description##7511"
+                  "meta:titleId": "media##xdm:timePlayed##title##29851",
+                  "meta:descriptionId": "media##xdm:timePlayed##description##16081"
                 },
                 "xdm:federated": {
                   "title": "Chapter federated",
                   "$ref": "https://ns.adobe.com/xdm/data/measure",
                   "description": "Indicates if an experience event was created through data federation or data sharing.",
-                  "meta:titleId": "media##xdm:federated##title##39181",
-                  "meta:descriptionId": "media##xdm:federated##description##79391"
+                  "meta:titleId": "media##xdm:federated##title##28261",
+                  "meta:descriptionId": "media##xdm:federated##description##22631"
                 },
                 "xdm:downloadedPlayback": {
                   "title": "Chapter downloaded flag",
                   "type": "boolean",
                   "description": "Set to true when the hit is generated due to playing a downloaded chapter content session.",
-                  "meta:titleId": "media##xdm:downloadedPlayback##title##78771",
-                  "meta:descriptionId": "media##xdm:downloadedPlayback##description##68751"
+                  "meta:titleId": "media##xdm:downloadedPlayback##title##52801",
+                  "meta:descriptionId": "media##xdm:downloadedPlayback##description##42571"
                 }
               },
-              "meta:titleId": "media##xdm:mediaChapter##title##13021",
-              "meta:descriptionId": "media##xdm:mediaChapter##description##34021"
+              "meta:titleId": "media##xdm:mediaChapter##title##62931",
+              "meta:descriptionId": "media##xdm:mediaChapter##description##75421"
             },
             "xdm:impressions": {
               "title": "Media starts",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Describes the intention to play a timed media asset. It does not measure success, as the user might abandon the content before the first frame is viewed.",
-              "meta:titleId": "media##xdm:impressions##title##51961",
-              "meta:descriptionId": "media##xdm:impressions##description##37921"
+              "meta:titleId": "media##xdm:impressions##title##47101",
+              "meta:descriptionId": "media##xdm:impressions##description##75301"
             },
             "xdm:completes": {
               "title": "Content completes",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.",
-              "meta:titleId": "media##xdm:completes##title##47131",
-              "meta:descriptionId": "media##xdm:completes##description##88671"
+              "meta:titleId": "media##xdm:completes##title##61531",
+              "meta:descriptionId": "media##xdm:completes##description##21001"
             },
             "xdm:timePlayed": {
               "title": "Content time spent",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The amount of time spent in seconds by a user on a specific timed media asset.",
-              "meta:titleId": "media##xdm:timePlayed##title##44651",
-              "meta:descriptionId": "media##xdm:timePlayed##description##15861"
+              "meta:titleId": "media##xdm:timePlayed##title##66081",
+              "meta:descriptionId": "media##xdm:timePlayed##description##98671"
             },
             "xdm:federated": {
               "title": "Media federated",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates the experience event was created through data federation or data sharing.",
-              "meta:titleId": "media##xdm:federated##title##36701",
-              "meta:descriptionId": "media##xdm:federated##description##62701"
+              "meta:titleId": "media##xdm:federated##title##45611",
+              "meta:descriptionId": "media##xdm:federated##description##39581"
             },
             "xdm:starts": {
               "title": "Content starts",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates the first frame of the timed media asset has been viewed for example, the viewer did not abandon during pre-roll ad, or buffering.",
-              "meta:titleId": "media##xdm:starts##title##60171",
-              "meta:descriptionId": "media##xdm:starts##description##60361"
+              "meta:titleId": "media##xdm:starts##title##80551",
+              "meta:descriptionId": "media##xdm:starts##description##70251"
             },
             "xdm:mediaSegmentViews": {
               "title": "Media segment views",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates when at least one frame, not necessarily the first has been viewed.",
-              "meta:titleId": "media##xdm:mediaSegmentViews##title##69221",
-              "meta:descriptionId": "media##xdm:mediaSegmentViews##description##99321"
+              "meta:titleId": "media##xdm:mediaSegmentViews##title##19991",
+              "meta:descriptionId": "media##xdm:mediaSegmentViews##description##94931"
             },
             "xdm:dropBeforeStarts": {
               "title": "Drops before starts",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
               "meta:status": "deprecated",
-              "meta:titleId": "media##xdm:dropBeforeStarts##title##11111",
-              "meta:descriptionId": "media##xdm:dropBeforeStarts##description##32881"
+              "meta:titleId": "media##xdm:dropBeforeStarts##title##58871",
+              "meta:descriptionId": "media##xdm:dropBeforeStarts##description##84191"
             },
             "xdm:totalTimePlayed": {
               "title": "Media Time Spent",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads.",
-              "meta:titleId": "media##xdm:totalTimePlayed##title##69671",
-              "meta:descriptionId": "media##xdm:totalTimePlayed##description##35361"
+              "meta:titleId": "media##xdm:totalTimePlayed##title##86501",
+              "meta:descriptionId": "media##xdm:totalTimePlayed##description##89251"
             },
             "xdm:uniqueTimePlayed": {
               "title": "Unique Time Played",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once.",
-              "meta:titleId": "media##xdm:uniqueTimePlayed##title##88201",
-              "meta:descriptionId": "media##xdm:uniqueTimePlayed##description##32611"
+              "meta:titleId": "media##xdm:uniqueTimePlayed##title##23311",
+              "meta:descriptionId": "media##xdm:uniqueTimePlayed##description##13151"
             },
             "xdm:averageMinuteAudience": {
               "title": "Average Minute Audience",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions.",
-              "meta:titleId": "media##xdm:averageMinuteAudience##title##90921",
-              "meta:descriptionId": "media##xdm:averageMinuteAudience##description##91331"
+              "meta:titleId": "media##xdm:averageMinuteAudience##title##44401",
+              "meta:descriptionId": "media##xdm:averageMinuteAudience##description##5681"
             },
             "xdm:adCount": {
               "title": "Ad count",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The number of ads started during the playback.",
-              "meta:titleId": "media##xdm:adCount##title##41341",
-              "meta:descriptionId": "media##xdm:adCount##description##31011"
+              "meta:titleId": "media##xdm:adCount##title##90391",
+              "meta:descriptionId": "media##xdm:adCount##description##83651"
             },
             "xdm:chapterCount": {
               "title": "Chapter count",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The number of chapters started during the playback.",
-              "meta:titleId": "media##xdm:chapterCount##title##9051",
-              "meta:descriptionId": "media##xdm:chapterCount##description##49681"
+              "meta:titleId": "media##xdm:chapterCount##title##22071",
+              "meta:descriptionId": "media##xdm:chapterCount##description##52571"
             },
             "xdm:progress10": {
               "title": "10% Progress marker",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
-              "meta:titleId": "media##xdm:progress10##title##97391",
-              "meta:descriptionId": "media##xdm:progress10##description##27511"
+              "meta:titleId": "media##xdm:progress10##title##66611",
+              "meta:descriptionId": "media##xdm:progress10##description##80161"
             },
             "xdm:progress25": {
               "title": "25% Progress marker",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
-              "meta:titleId": "media##xdm:progress25##title##1001",
-              "meta:descriptionId": "media##xdm:progress25##description##80271"
+              "meta:titleId": "media##xdm:progress25##title##35671",
+              "meta:descriptionId": "media##xdm:progress25##description##99801"
             },
             "xdm:progress50": {
               "title": "50% Progress marker",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
-              "meta:titleId": "media##xdm:progress50##title##63251",
-              "meta:descriptionId": "media##xdm:progress50##description##23801"
+              "meta:titleId": "media##xdm:progress50##title##33731",
+              "meta:descriptionId": "media##xdm:progress50##description##5371"
             },
             "xdm:progress75": {
               "title": "75% Progress marker",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
-              "meta:titleId": "media##xdm:progress75##title##30011",
-              "meta:descriptionId": "media##xdm:progress75##description##34041"
+              "meta:titleId": "media##xdm:progress75##title##41361",
+              "meta:descriptionId": "media##xdm:progress75##description##12771"
             },
             "xdm:progress95": {
               "title": "95% Progress marker",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
-              "meta:titleId": "media##xdm:progress95##title##25171",
-              "meta:descriptionId": "media##xdm:progress95##description##20681"
+              "meta:titleId": "media##xdm:progress95##title##24321",
+              "meta:descriptionId": "media##xdm:progress95##description##48281"
             },
             "xdm:resumes": {
               "title": "Content resumes",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.",
-              "meta:titleId": "media##xdm:resumes##title##31631",
-              "meta:descriptionId": "media##xdm:resumes##description##23321"
+              "meta:titleId": "media##xdm:resumes##title##72631",
+              "meta:descriptionId": "media##xdm:resumes##description##7291"
             },
             "xdm:estimatedStreams": {
               "title": "Estimated streams",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The estimated number of video or audio streams per each individual content.",
-              "meta:titleId": "media##xdm:estimatedStreams##title##88801",
-              "meta:descriptionId": "media##xdm:estimatedStreams##description##29641"
+              "meta:titleId": "media##xdm:estimatedStreams##title##10151",
+              "meta:descriptionId": "media##xdm:estimatedStreams##description##44511"
             },
             "xdm:pauseImpactedStreams": {
               "title": "Pause impacted streams",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Indicates if one or more pauses occurred during the playback of a single media item.",
-              "meta:titleId": "media##xdm:pauseImpactedStreams##title##40171",
-              "meta:descriptionId": "media##xdm:pauseImpactedStreams##description##28501"
+              "meta:titleId": "media##xdm:pauseImpactedStreams##title##92551",
+              "meta:descriptionId": "media##xdm:pauseImpactedStreams##description##29691"
             },
             "xdm:pauses": {
               "title": "Pause events",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "The number of pause periods that occurred during playback.",
-              "meta:titleId": "media##xdm:pauses##title##87771",
-              "meta:descriptionId": "media##xdm:pauses##description##17921"
+              "meta:titleId": "media##xdm:pauses##title##82631",
+              "meta:descriptionId": "media##xdm:pauses##description##92151"
             },
             "xdm:pauseTime": {
               "title": "Total pause duration",
               "$ref": "https://ns.adobe.com/xdm/data/measure",
               "description": "Describes the duration in seconds in which playback was paused by the user.",
-              "meta:titleId": "media##xdm:pauseTime##title##86981",
-              "meta:descriptionId": "media##xdm:pauseTime##description##41941"
+              "meta:titleId": "media##xdm:pauseTime##title##34451",
+              "meta:descriptionId": "media##xdm:pauseTime##description##23731"
             },
             "xdm:idp": {
               "title": "MVPD Identifier",
               "type": "string",
               "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]",
-              "meta:titleId": "media##xdm:idp##title##89711",
-              "meta:descriptionId": "media##xdm:idp##description##92091"
+              "meta:titleId": "media##xdm:idp##title##89381",
+              "meta:descriptionId": "media##xdm:idp##description##43241"
             },
             "xdm:mediaAuth": {
               "title": "Media authorized",
               "type": "string",
               "description": "The user has been authorized via authentication.",
-              "meta:titleId": "media##xdm:mediaAuth##title##17051",
-              "meta:descriptionId": "media##xdm:mediaAuth##description##4781"
+              "meta:titleId": "media##xdm:mediaAuth##title##62351",
+              "meta:descriptionId": "media##xdm:mediaAuth##description##96971"
             },
             "xdm:dayPart": {
               "title": "Day part",
               "type": "string",
               "description": "Defines the time of the day when the content was broadcast or played.",
-              "meta:titleId": "media##xdm:dayPart##title##65921",
-              "meta:descriptionId": "media##xdm:dayPart##description##10551"
+              "meta:titleId": "media##xdm:dayPart##title##16131",
+              "meta:descriptionId": "media##xdm:dayPart##description##85731"
             }
           },
           "required": ["xdm:primaryAssetReference"],
-          "meta:titleId": "media##xdm:mediaTimed##title##41391",
-          "meta:descriptionId": "media##xdm:mediaTimed##description##63381"
+          "meta:titleId": "media##xdm:mediaTimed##title##78891",
+          "meta:descriptionId": "media##xdm:mediaTimed##description##36241"
         }
       }
     }
@@ -825,6 +825,6 @@
     }
   ],
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "media##title##71911",
-  "meta:descriptionId": "media##description##74951"
+  "meta:titleId": "media##title##45801",
+  "meta:descriptionId": "media##description##64041"
 }

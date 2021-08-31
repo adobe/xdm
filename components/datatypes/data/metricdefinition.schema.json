@@ -18,24 +18,24 @@
           "type": "string",
           "format": "uri-reference",
           "description": "The unique identifier of this metric.",
-          "meta:descriptionId": "metricdefinition##@id##description##54541"
+          "meta:descriptionId": "metricdefinition##@id##description##44171"
         },
         "schema:name": {
           "type": "string",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
-          "meta:descriptionId": "metricdefinition##schema:name##description##81811"
+          "meta:descriptionId": "metricdefinition##schema:name##description##52471"
         },
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
           "examples": ["distance", "time", "price", "count"],
-          "meta:descriptionId": "metricdefinition##xdm:measurement##description##90861"
+          "meta:descriptionId": "metricdefinition##xdm:measurement##description##34121"
         },
         "xdm:unit": {
           "type": "string",
           "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)",
           "examples": ["m", "kg", "s", "USD"],
-          "meta:descriptionId": "metricdefinition##xdm:unit##description##50321"
+          "meta:descriptionId": "metricdefinition##xdm:unit##description##62961"
         }
       }
     }
@@ -51,6 +51,6 @@
   "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "metricdefinition##title##1451",
-  "meta:descriptionId": "metricdefinition##description##34591"
+  "meta:titleId": "metricdefinition##title##28671",
+  "meta:descriptionId": "metricdefinition##description##96461"
 }

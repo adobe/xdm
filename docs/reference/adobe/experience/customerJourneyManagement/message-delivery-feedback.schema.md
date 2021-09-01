@@ -29,10 +29,10 @@ Provide details for the delivery feedback for a single message in the Message Ex
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount": 1,
   "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/offers": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerID": "1234",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/placementID": "12345",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/propositionID": "9898",
-    "https://ns.adobe.com/experience/customerJourneyManagement/offers/offerCount": 5
+    "xdm:offerID": "1234",
+    "xdm:placementID": "12345",
+    "xdm:propositionID": "9898",
+    "xdm:offerCount": 5
   }
 }
 ```

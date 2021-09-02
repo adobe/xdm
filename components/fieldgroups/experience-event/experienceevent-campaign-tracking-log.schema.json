@@ -38,7 +38,7 @@
             "xdm:campaignLabel": {
               "title": "Campaign Label",
               "type": "string",
-              "description": "A human-friendly identifier of the marketing campaign which is originating this message."
+              "description": "A human-friendly label of the marketing campaign which is originating this message."
             },
             "xdm:broadlogId": {
               "title": "Delivery Log Identifier",
@@ -48,7 +48,7 @@
             "xdm:deliveryId": {
               "title": "Delivery Identifier",
               "type": "string",
-              "description": "The campaign activity originating this message."
+              "description": "The delivery activity originating this message."
             },
             "xdm:visitorId": {
               "title": "Visitor Identifier",
@@ -78,7 +78,7 @@
             "xdm:deliveryLabel": {
               "title": "Delivery Label",
               "type": "string",
-              "description": "A human-friendly identifier of the delivery which is originating this message."
+              "description": "A human-friendly label of the delivery which is originating this message."
             },
             "xdm:deliveryMode": {
               "title": "Delivery Mode",

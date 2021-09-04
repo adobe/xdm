@@ -1,0 +1,131 @@
+{
+  "meta:license": [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/experienceevent-campaign-delivery-log",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Campaign Delivery Logs",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Campaign Delivery Events such as sent, bounces, failures.",
+  "definitions": {
+    "experienceevent-campaignlog": {
+      "properties": {
+        "properties": {
+          "https://ns.adobe.com/experience/campaign/externalID": {
+            "title": "External Identifier",
+            "type": "string",
+            "description": "External Identifier that defines the primary identity value for profile and audience."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignID": {
+            "title": "Campaign Identifier",
+            "type": "string",
+            "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignName": {
+            "title": "Campaign Name",
+            "type": "string",
+            "description": "Internal Name that uniquely identifies the Campaign."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignLabel": {
+            "title": "Campaign Label",
+            "type": "string",
+            "description": "A human-friendly label of the marketing campaign which is originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/broadlogID": {
+            "title": "Delivery Log Identifier",
+            "type": "string",
+            "description": "Identifier of the marketing campaign delivery log this event belongs to."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryID": {
+            "title": "Delivery Identifier",
+            "type": "string",
+            "description": "The delivery originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/visitorID": {
+            "title": "Visitor Identifier",
+            "type": "string",
+            "description": "Visitor that was targeted as part of the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/recipientID": {
+            "title": "Recipient Identifer",
+            "type": "string",
+            "description": "Recipient that was targeted as part of this delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/serviceID": {
+            "title": "Service Identifier",
+            "type": "string",
+            "description": "Subscribed Service that targeted this delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/channel": {
+            "title": "Channel",
+            "type": "string",
+            "description": "Channel of the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryName": {
+            "title": "Delivery Name",
+            "type": "string",
+            "description": "Internal Name that uniquely identifies the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryLabel": {
+            "title": "Delivery Label",
+            "type": "string",
+            "description": "A human-friendly label of the delivery which is originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryMode": {
+            "title": "Delivery Mode",
+            "type": "string",
+            "description": "Mode of delivery for the messages sent."
+          },
+          "https://ns.adobe.com/experience/campaign/quarantine": {
+            "title": "Quarantine",
+            "type": "boolean",
+            "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+          },
+          "https://ns.adobe.com/experience/campaign/controlGroupMember": {
+            "title": "Control Group Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/seedMember": {
+            "title": "Seed Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
+          },
+          "https://ns.adobe.com/experience/campaign/proofMember": {
+            "title": "Proof Member",
+            "type": "boolean",
+            "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
+          },
+          "https://ns.adobe.com/experience/campaign/status": {
+            "title": "Message Status",
+            "type": "string",
+            "description": "Indicates status of the message that is being delivered."
+          },
+          "https://ns.adobe.com/experience/campaign/reason": {
+            "title": "Reason",
+            "type": "string",
+            "description": "The reason why the message could/would not be delivered."
+          },
+          "https://ns.adobe.com/experience/campaign/reasonMessage": {
+            "title": "Reason Message",
+            "type": "string",
+            "description": "Reason of message delivery failure."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-campaignlog"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-09-03"
+}

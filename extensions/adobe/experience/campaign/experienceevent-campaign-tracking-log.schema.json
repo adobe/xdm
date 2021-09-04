@@ -1,0 +1,111 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/campaign/experienceevent-campaign-tracking-log",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Campaign Tracking Logs",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Campaign marketing events such as opens, clicks,links and impressions.",
+  "definitions": {
+    "experienceevent-campaignlog": {
+      "properties": {
+        "properties": {
+          "https://ns.adobe.com/experience/campaign/externalID": {
+            "title": "External Identifier",
+            "type": "string",
+            "description": "External Identifier that defines the primary identity value for profile and audience."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignID": {
+            "title": "Campaign Identifier",
+            "type": "string",
+            "description": "Identifier of the marketing campaign to which activity originating this message belongs to."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignName": {
+            "title": "Campaign Name",
+            "type": "string",
+            "description": "Internal Name that uniquely identifies the Campaign."
+          },
+          "https://ns.adobe.com/experience/campaign/campaignLabel": {
+            "title": "Campaign Label",
+            "type": "string",
+            "description": "A human-friendly label of the marketing campaign which is originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/broadlogID": {
+            "title": "Delivery Log Identifier",
+            "type": "string",
+            "description": "Identifier of the marketing campaign delivery log this event belongs to."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryID": {
+            "title": "Delivery Identifier",
+            "type": "string",
+            "description": "The delivery activity originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/visitorID": {
+            "title": "Visitor Identifier",
+            "type": "string",
+            "description": "Visitor that was targeted as part of the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/recipientID": {
+            "title": "Recipient Identifer",
+            "type": "string",
+            "description": "Recipient that was targeted as part of this delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/serviceID": {
+            "title": "Service Identifier",
+            "type": "string",
+            "description": "Subscribed Service that targeted this delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/channel": {
+            "title": "Channel",
+            "type": "string",
+            "description": "Channel of the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryName": {
+            "title": "Delivery Name",
+            "type": "string",
+            "description": "Internal Name that uniquely identifies the delivery."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryLabel": {
+            "title": "Delivery Label",
+            "type": "string",
+            "description": "A human-friendly label of the delivery which is originating this message."
+          },
+          "https://ns.adobe.com/experience/campaign/deliveryMode": {
+            "title": "Delivery Mode",
+            "type": "string",
+            "description": "Mode of delivery for the messages sent."
+          },
+          "https://ns.adobe.com/experience/campaign/trackinglogID": {
+            "title": "Tracking Log Identifier",
+            "type": "string",
+            "description": "Primary Key of the tracking log."
+          },
+          "https://ns.adobe.com/experience/campaign/url": {
+            "title": "URL",
+            "type": "string",
+            "description": "Unique Identifier of the Link."
+          },
+          "https://ns.adobe.com/experience/campaign/urlCategory": {
+            "title": "URL Category",
+            "type": "string",
+            "description": "The category of the link. It may be `subscription`, or a user-defined category."
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-campaignlog"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2021-09-03"
+}

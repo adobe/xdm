@@ -11,9 +11,50 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Campaign Delivery Events such as sent, bounces, failures.",
   "definitions": {
+    "experienceevent-deliverylog": {
+      "properties": {
+        "https://ns.adobe.com/experience/campaign/quarantine": {
+          "title": "Quarantine",
+          "type": "boolean",
+          "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
+        },
+        "https://ns.adobe.com/experience/campaign/controlGroupMember": {
+          "title": "Control Group Member",
+          "type": "boolean",
+          "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery."
+        },
+        "https://ns.adobe.com/experience/campaign/seedMember": {
+          "title": "Seed Member",
+          "type": "boolean",
+          "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
+        },
+        "https://ns.adobe.com/experience/campaign/proofMember": {
+          "title": "Proof Member",
+          "type": "boolean",
+          "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
+        },
+        "https://ns.adobe.com/experience/campaign/status": {
+          "title": "Message Status",
+          "type": "string",
+          "description": "Indicates status of the message that is being delivered."
+        },
+        "https://ns.adobe.com/experience/campaign/reason": {
+          "title": "Reason",
+          "type": "string",
+          "description": "The reason why the message could/would not be delivered."
+        },
+        "https://ns.adobe.com/experience/campaign/reasonMessage": {
+          "title": "Reason Message",
+          "type": "string",
+          "description": "Reason of message delivery failure."
+        }
+      }
+    },
     "experienceevent-campaignlog": {
       "properties": {
         "https://ns.adobe.com/experience/campaign/externalID": {
@@ -80,46 +121,14 @@
           "title": "Delivery Mode",
           "type": "string",
           "description": "Mode of delivery for the messages sent."
-        },
-        "https://ns.adobe.com/experience/campaign/quarantine": {
-          "title": "Quarantine",
-          "type": "boolean",
-          "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address."
-        },
-        "https://ns.adobe.com/experience/campaign/controlGroupMember": {
-          "title": "Control Group Member",
-          "type": "boolean",
-          "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery."
-        },
-        "https://ns.adobe.com/experience/campaign/seedMember": {
-          "title": "Seed Member",
-          "type": "boolean",
-          "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient."
-        },
-        "https://ns.adobe.com/experience/campaign/proofMember": {
-          "title": "Proof Member",
-          "type": "boolean",
-          "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target."
-        },
-        "https://ns.adobe.com/experience/campaign/status": {
-          "title": "Message Status",
-          "type": "string",
-          "description": "Indicates status of the message that is being delivered."
-        },
-        "https://ns.adobe.com/experience/campaign/reason": {
-          "title": "Reason",
-          "type": "string",
-          "description": "The reason why the message could/would not be delivered."
-        },
-        "https://ns.adobe.com/experience/campaign/reasonMessage": {
-          "title": "Reason Message",
-          "type": "string",
-          "description": "Reason of message delivery failure."
         }
       }
     }
   },
   "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-deliverylog"
+    },
     {
       "$ref": "#/definitions/experienceevent-campaignlog"
     }

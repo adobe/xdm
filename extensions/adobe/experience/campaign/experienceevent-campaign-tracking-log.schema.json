@@ -39,7 +39,7 @@
       "$ref": "#/definitions/experienceevent-trackinglog"
     },
     {
-      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-campaign-delivery-log/definitions/experienceevent-campaignlog"
+      "$ref": "https://ns.adobe.com/experience/campaign/experienceevent-campaign-delivery-log#/definitions/experienceevent-campaignlog"
     }
   ],
   "meta:status": "stable",

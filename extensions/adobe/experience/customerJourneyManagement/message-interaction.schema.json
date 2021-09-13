@@ -20,7 +20,13 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "unsubscribe", "spam_complaint", "subscription"],
+          "enum": [
+            "click",
+            "open",
+            "unsubscribe",
+            "spam_complaint",
+            "subscription"
+          ],
           "meta:enum": {
             "click": "Message link clicked.",
             "open": "Message opened.",

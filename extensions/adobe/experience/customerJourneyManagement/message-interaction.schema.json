@@ -70,12 +70,12 @@
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##description##5891"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-          "title": "Offer details",
+          "title": "Offer Details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message interaction."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
-          "title": "Subscription details",
+          "title": "Subscription Details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/subscription",
           "description": "Describes subscription involved in a message interaction."
         }

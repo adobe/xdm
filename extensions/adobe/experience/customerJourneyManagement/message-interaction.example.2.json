@@ -1,0 +1,14 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "marketing",
+    "apparel"
+  ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+    "xdm:subscriptionListId": "daily-news",
+    "xdm:source": "landingPageId",
+    "xdm:sourceType": "internal",
+    "xdm:subscriptionChoice": "yes"
+  }
+}

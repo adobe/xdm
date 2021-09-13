@@ -20,12 +20,13 @@
           "title": "Interaction Type",
           "type": "string",
           "description": "Specify action made by user on a message.",
-          "enum": ["click", "open", "unsubscribe", "spam_complaint"],
+          "enum": ["click", "open", "unsubscribe", "spam_complaint", "subscription"],
           "meta:enum": {
             "click": "Message link clicked.",
             "open": "Message opened.",
             "unsubscribe": "Unsubscribed from messages.",
-            "spam_complaint": "Message is marked as spam by the user."
+            "spam_complaint": "Message is marked as spam by the user.",
+            "subscription": "Subscribe / Unsubscribe to a subscription list."
           },
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
@@ -66,6 +67,11 @@
           "title": "Offer details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message interaction."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+          "title": "Subscription details",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/subscription",
+          "description": "Describes subscription involved in a message interaction."
         }
       }
     }

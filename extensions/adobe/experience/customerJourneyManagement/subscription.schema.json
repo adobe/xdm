@@ -20,7 +20,7 @@
           "description": "Unique Identifier for Subscription List."
         },
         "xdm:source": {
-          "title": "source",
+          "title": "Source",
           "type": "string",
           "description": "Source of the Subscription List."
         },

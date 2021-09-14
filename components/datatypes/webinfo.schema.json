@@ -112,6 +112,11 @@
               "meta:titleId": "webinfo##xdm:name##title##72971",
               "meta:descriptionId": "webinfo##xdm:name##description##40881"
             },
+            "xdm:region": {
+              "title": "Region",
+              "type": "string",
+              "description": "The region name used for this web link, used for classification purposes.",
+            },
             "xdm:linkClicks": {
               "title": "Link Clicks",
               "$ref": "https://ns.adobe.com/xdm/data/measure",

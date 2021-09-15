@@ -6,9 +6,9 @@
   ],
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
-    "xdm:subscriptionListId": "daily-news",
-    "xdm:source": "landingPageId",
-    "xdm:sourceType": "internal",
-    "xdm:subscriptionChoice": "yes"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListId": "daily-news",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": "landingPageId",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": "internal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": "yes"
   }
 }

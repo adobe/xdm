@@ -76,8 +76,42 @@
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
           "title": "Subscription Details",
-          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/subscription",
-          "description": "Describes subscription involved in a message interaction."
+          "type": "object",
+          "description": "Describes subscription involved in a message interaction.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListId": {
+              "title": "Subscription List ID",
+              "type": "string",
+              "description": "Unique Identifier for Subscription List."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": {
+              "title": "Source",
+              "type": "string",
+              "description": "Source of the Subscription List."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": {
+              "title": "Source Type",
+              "type": "string",
+              "description": "Type of the Source of Subscription List.",
+              "enum": ["internal", "external"],
+              "meta:enum": {
+                "internal": "Internal for AJO Landing Page",
+                "external": "External for Non-AJO Landing Page"
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": {
+              "title": "Subscription Choice",
+              "type": "string",
+              "description": "Subscription Choice for the Subscription List.",
+              "enum": ["yes", "no", "pending", "unknown"],
+              "meta:enum": {
+                "yes": "Subscribed to Subscription List",
+                "no": "Unsubscribed to Subscription List",
+                "pending": "Subscription Pending",
+                "unknown": "Subscription Unknown"
+              }
+            }
+          }
         }
       }
     }

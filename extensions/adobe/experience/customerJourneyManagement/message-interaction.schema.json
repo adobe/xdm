@@ -79,7 +79,7 @@
           "type": "object",
           "description": "Describes subscription involved in a message interaction.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListId": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": {
               "title": "Subscription List ID",
               "type": "string",
               "description": "Unique Identifier for Subscription List."

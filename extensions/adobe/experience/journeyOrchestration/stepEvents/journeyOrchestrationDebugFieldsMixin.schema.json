@@ -16,7 +16,7 @@
   ],
   "description": "This event is in relation with journey and describes the debug related fields",
   "definitions": {
-    "journeyIdentityFields": {
+    "journeyDebugFields": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/debugInfo": {
           "title": "Journey Orchestration debug related fields.",

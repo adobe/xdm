@@ -53,6 +53,7 @@ Information recorded via an `ExperienceEvent` that is specific to the World Wide
     "xdm:type": "other",
     "xdm:URL": "#stores",
     "xdm:name": "product store",
+    "xdm:region": "header",
     "xdm:linkClicks": {
       "xdm:value": 1
     }
@@ -95,6 +96,7 @@ Details about the web link or URL that corresponds to where the interaction occu
 | `xdm:URL`| string | Optional |
 | `xdm:linkClicks`|  | Optional |
 | `xdm:name`| string | Optional |
+| `xdm:region`| string | Optional |
 | `xdm:type`| string | Optional |
 
 
@@ -150,6 +152,27 @@ The normative name used for this web link, used for classification purposes.
 * type: `string`
 
 ##### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:region
+##### Region
+
+The region name represents the region or area of a document that the web link belongs to such as header or footer.
+
+`xdm:region`
+* is optional
+* type: `string`
+
+##### xdm:region Type
 
 
 `string`

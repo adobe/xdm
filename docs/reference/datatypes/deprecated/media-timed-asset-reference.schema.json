@@ -191,6 +191,17 @@
     "meta:descriptionId": "media-timed-asset-reference##description##24791",
     "examples": [
         {
+            "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
+            "dc:title": "Stairway to Heaven",
+            "xdm:audio": {
+                "dc:creator": "Jimmy Page",
+                "xdm:artist": "Led Zeppelin",
+                "xdm:album": "Led Zeppelin IV"
+            },
+            "xmpDM:duration": 482,
+            "xdm:streamType": "audio"
+        },
+        {
             "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
             "dc:title": "Floki Begs Helga for Freedom",
             "dc:creator": "Video Author",
@@ -225,17 +236,6 @@
             ],
             "xdm:firstAirDate": "2016-01-05",
             "xmpDM:releaseDate": "2016-01-25"
-        },
-        {
-            "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234431",
-            "dc:title": "Stairway to Heaven",
-            "xdm:audio": {
-                "dc:creator": "Jimmy Page",
-                "xdm:artist": "Led Zeppelin",
-                "xdm:album": "Led Zeppelin IV"
-            },
-            "xmpDM:duration": 482,
-            "xdm:streamType": "audio"
         }
     ]
 }

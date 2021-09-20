@@ -48,7 +48,7 @@ An individual person. May represent a person acting in various roles, such as a 
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:birthDate
-### Birth date
+### Birth date(YYYY-MM-DD)
 
 The full date a person was born.
 
@@ -69,7 +69,7 @@ The full date a person was born.
 
 
 ## xdm:birthDayAndMonth
-### Birth date
+### Birth date (MM-DD)
 
 The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.
 

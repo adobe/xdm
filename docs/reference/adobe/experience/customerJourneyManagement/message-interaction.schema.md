@@ -17,7 +17,25 @@ Describes interaction made by the profile on the message.
   * [Adobe ExperienceEvent - Offer details](offers.schema.md) `https://ns.adobe.com/experience/customerJourneyManagement/offers`
 
 
-## Adobe CJM ExperienceEvent - Message interaction details Example
+## Adobe CJM ExperienceEvent - Message interaction details Examples
+
+```json
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "marketing",
+    "apparel"
+  ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": "daily-news",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": "landingPageId",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": "internal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": "yes"
+  }
+}
+```
+
 ```json
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
@@ -37,6 +55,7 @@ Describes interaction made by the profile on the message.
 }
 ```
 
+
 # Adobe CJM ExperienceEvent - Message interaction details Properties
 
 | Property | Type | Required | Defined by |
@@ -44,6 +63,7 @@ Describes interaction made by the profile on the message.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractioninteractiontype) | `enum` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionlabel) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionoffers) | Adobe ExperienceEvent - Offer details | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionsubscription) | `object` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontags) | `string[]` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractiontrackingtype) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionurlid) | `string` | Optional | Adobe CJM ExperienceEvent - Message interaction details (this schema) |
@@ -68,6 +88,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `open` | Message opened. |
 | `unsubscribe` | Unsubscribed from messages. |
 | `spam_complaint` | Message is marked as spam by the user. |
+| `subscription` | Subscribe / Unsubscribe to a subscription list. |
 
 
 
@@ -93,7 +114,7 @@ Human-Friendly label.
 
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers
-### Offer details
+### Offer Details
 
 Describes offer(s) involved in a message interaction.
 
@@ -106,6 +127,122 @@ Describes offer(s) involved in a message interaction.
 
 
 * [Adobe ExperienceEvent - Offer details](offers.schema.md) – `https://ns.adobe.com/experience/customerJourneyManagement/offers`
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription
+### Subscription Details
+
+Describes subscription involved in a message interaction.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID`| string | Optional |
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source
+##### Source
+
+Source of the Subscription List.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType
+##### Source Type
+
+Type of the Source of Subscription List.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionsubscription-known-values).
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType Known Values
+| Value | Description |
+|-------|-------------|
+| `internal` | Internal for AJO Landing Page |
+| `external` | External for Non-AJO Landing Page |
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice
+##### Subscription Choice
+
+Subscription Choice for the Subscription List.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionsubscription-known-values).
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice Known Values
+| Value | Description |
+|-------|-------------|
+| `yes` | Subscribed to Subscription List |
+| `no` | Unsubscribed to Subscription List |
+| `pending` | Subscription Pending |
+| `unknown` | Subscription Unknown |
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID
+##### Subscription List ID
+
+Unique Identifier for Subscription List.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID Type
+
+
+`string`
+
+
+
+
+
+
 
 
 

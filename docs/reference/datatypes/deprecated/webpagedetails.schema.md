@@ -25,9 +25,10 @@ For interactions that are happening on a loaded page that do not trigger a new p
 
 ```json
 {
-  "xdm:siteSection": "Product section",
+  "xdm:siteSection": "Product Details Page",
   "xdm:server": "example.com",
-  "xdm:name": "product home",
+  "xdm:name": "Scottish Haggis Product Details",
+  "xdm:viewName": "FAQ Tab",
   "xdm:URL": "https://www.example.com",
   "xdm:errorPage": false,
   "xdm:homePage": true,
@@ -39,10 +40,9 @@ For interactions that are happening on a loaded page that do not trigger a new p
 
 ```json
 {
-  "xdm:siteSection": "Product Details Page",
+  "xdm:siteSection": "Product section",
   "xdm:server": "example.com",
-  "xdm:name": "Scottish Haggis Product Details",
-  "xdm:viewName": "FAQ Tab",
+  "xdm:name": "product home",
   "xdm:URL": "https://www.example.com",
   "xdm:errorPage": false,
   "xdm:homePage": true,

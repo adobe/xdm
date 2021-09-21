@@ -81,17 +81,17 @@
                     "type": "object",
                     "description": "Describes subscription involved in a message interaction.",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID": {
                             "title": "Subscription List ID",
                             "type": "string",
                             "description": "Unique Identifier for Subscription List."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": {
                             "title": "Source",
                             "type": "string",
                             "description": "Source of the Subscription List."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": {
                             "title": "Source Type",
                             "type": "string",
                             "description": "Type of the Source of Subscription List.",
@@ -104,7 +104,7 @@
                                 "external": "External for Non-AJO Landing Page"
                             }
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice": {
                             "title": "Subscription Choice",
                             "type": "string",
                             "description": "Subscription Choice for the Subscription List.",

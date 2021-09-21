@@ -150,23 +150,23 @@ Describes subscription involved in a message interaction.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source
 ##### Source
 
 Source of the Subscription List.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source Type
 
 
 `string`
@@ -178,18 +178,18 @@ Source of the Subscription List.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType
 ##### Source Type
 
 Type of the Source of Subscription List.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType`
 * is optional
 * type: `enum`
 
 The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionsubscription-known-values).
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType Known Values
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType Known Values
 | Value | Description |
 |-------|-------------|
 | `internal` | Internal for AJO Landing Page |
@@ -200,18 +200,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice
 ##### Subscription Choice
 
 Subscription Choice for the Subscription List.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice`
 * is optional
 * type: `enum`
 
 The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencecustomerjourneymanagementmessageinteractionsubscription-known-values).
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice Known Values
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice Known Values
 | Value | Description |
 |-------|-------------|
 | `yes` | Subscribed to Subscription List |
@@ -224,16 +224,16 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID
+#### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID
 ##### Subscription List ID
 
 Unique Identifier for Subscription List.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID`
+`https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID Type
 
 
 `string`

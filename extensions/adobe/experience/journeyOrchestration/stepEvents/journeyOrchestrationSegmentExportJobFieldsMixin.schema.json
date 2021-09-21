@@ -1,0 +1,90 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration service Events: SegmentExportJob Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents"
+  ],
+  "description": "This event is in relation with journey and Segment Export Job service event fields",
+  "definitions": {
+    "journeyServiceSegmentExportJobFields": {
+      "properties": {
+        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+          "title": "Journey Orchestration Segment Export Job service event fields.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/ID": {
+              "title": "Segment Export Job Id",
+              "type": "string",
+              "description": "The ID of the segment export job triggered."
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/status": {
+              "title": "Segment Export Job status",
+              "type": "string",
+              "description": "The status of segment export job.",
+              "enum": [
+                "queued",
+                "started",
+                "finished"
+              ]
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountTotal": {
+              "title": "Export count total",
+              "type": "number",
+              "description": "The max possible value of segment export job"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountRealized": {
+              "title": "Export count realized",
+              "type": "number",
+              "description": "The actual number of segments exported through the job"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountFailed": {
+              "title": "Export count failed",
+              "type": "number",
+              "description": "The number of segments failed while exporting through the job"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportSegmentID": {
+              "title": "Exported Segment Id",
+              "type": "string",
+              "description": "The Id of the segment being exported"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventType": {
+              "title": "Event Type",
+              "type": "string",
+              "description": "The event type indicating whether it is an error event of info event.",
+              "enum": [
+                "info",
+                "error"
+              ]
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventCode": {
+              "title": "Event Code",
+              "type": "string",
+              "description": "The error code indicating the reason for corresponding eventType",
+              "enum": [
+                "ERROR_INSTANCE_DUPLICATION",
+                "ERROR_MISSING_IDENTITY",
+                "ERROR_INSTANCE_INTERNAL"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/journeyServiceSegmentExportJobFields"
+    }
+  ],
+  "meta:status": "stable"
+}

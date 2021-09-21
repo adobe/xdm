@@ -1,0 +1,9 @@
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/ID":"12ae3-abe2c-12214-667ab",
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/status": "finished",
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountTotal": 12000000,
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountRealized": 12000000,
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountFailed": 2000000,
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventType": "info"
+}

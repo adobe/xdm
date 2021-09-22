@@ -16,19 +16,19 @@
   ],
   "description": "This event is in relation with journey and dispatcher service event fields",
   "definitions": {
-    "journeyServiceDispatcherFields": {
+    "journeyServiceDispatcher": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher": {
           "title": "Journey Orchestration dispatcher service event fields.",
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/journeyEventID": {
-              "title": "Journey-Event Id",
+              "title": "Journey-Event ID",
               "type": "string",
               "description": "The Event ID to which this event was mapped inside the controller."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/journeyProjectionID": {
-              "title": "Journey Projection Id",
+              "title": "Journey Projection ID",
               "type": "string",
               "description": "The projection id of the segment being used in journey"
             },
@@ -57,7 +57,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyServiceDispatcherFields"
+      "$ref": "#/definitions/journeyServiceDispatcher"
     }
   ],
   "meta:status": "experimental"

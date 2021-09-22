@@ -16,7 +16,7 @@
   ],
   "description": "This event is in relation with journey and describe the profile Identifiers",
   "definitions": {
-    "journeyIdentityFields": {
+    "journeyIdentity": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/profile": {
           "title": "Journey Orchestration Identity Fields.",
@@ -39,7 +39,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyIdentityFields"
+      "$ref": "#/definitions/journeyIdentity"
     }
   ],
   "meta:status": "experimental"

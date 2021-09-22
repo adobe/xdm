@@ -16,19 +16,19 @@
   ],
   "description": "This event is in relation with journey and describes the debug related fields",
   "definitions": {
-    "journeyDebugFields": {
+    "journeyDebug": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/debugInfo": {
           "title": "Journey Orchestration debug related fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/requestId": {
-              "title": "request Id",
+            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/requestID": {
+              "title": "request ID",
               "type": "string",
               "description": "The request Id used by Journey Orchestration to track the flow of a request."
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/adobeAepValidationSessionId": {
-              "title": "adobeAepValidationSessionId / Griffon Id",
+            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/adobeAepValidationSessionID": {
+              "title": "adobeAepValidationSessionId / Griffon ID",
               "type": "string",
               "description": "This field represents the session Id that is used for tracking a debug session usingn Griffon"
             }
@@ -39,7 +39,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyDebugFields"
+      "$ref": "#/definitions/journeyDebug"
     }
   ],
   "meta:status": "experimental"

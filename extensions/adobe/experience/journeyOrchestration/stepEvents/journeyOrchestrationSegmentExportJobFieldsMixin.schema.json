@@ -16,16 +16,16 @@
   ],
   "description": "This event is in relation with journey and Segment Export Job service event fields",
   "definitions": {
-    "journeyServiceSegmentExportJobFields": {
+    "journeyServiceSegmentExportJob": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
           "title": "Journey Orchestration Segment Export Job service event fields.",
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/ID": {
-              "title": "Segment Export Job Id",
+              "title": "Segment Export Job ID",
               "type": "string",
-              "description": "The ID of the segment export job triggered."
+              "description": "The identifier of the segment export job triggered."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/status": {
               "title": "Segment Export Job status",
@@ -53,9 +53,9 @@
               "description": "The number of segments failed while exporting through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportSegmentID": {
-              "title": "Exported Segment Id",
+              "title": "Exported Segment ID",
               "type": "string",
-              "description": "The Id of the segment being exported"
+              "description": "The identifier of the segment being exported"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventType": {
               "title": "Event Type",
@@ -83,7 +83,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyServiceSegmentExportJobFields"
+      "$ref": "#/definitions/journeyServiceSegmentExportJob"
     }
   ],
   "meta:status": "experimental"

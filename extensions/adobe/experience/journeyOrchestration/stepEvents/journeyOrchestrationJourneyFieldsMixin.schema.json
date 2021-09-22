@@ -16,7 +16,7 @@
   ],
   "description": "This Mixin will have Common Journey Metadata Fields",
   "definitions": {
-    "journeyFields": {
+    "journey": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/journey": {
           "title": "Journey Orchestration common Journey Fields",
@@ -29,7 +29,7 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journey/versionID": {
               "title": "journeyVersionID",
-              "description": "Id of the journey version. This id represents the identity of a journey.",
+              "description": "Identifier of the journey version. This id represents the identity of a journey.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journey/name": {
@@ -54,7 +54,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyFields"
+      "$ref": "#/definitions/journey"
     }
   ],
   "meta:status": "experimental"

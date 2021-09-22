@@ -17,7 +17,13 @@
   "description": "A time-series based Journey Step Event Class.",
   "definitions": {
     "journeyStepEventClass": {
-      "properties": {}
+      "properties": {
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/serviceType": {
+          "title": "service Type",
+          "type": "string",
+          "description": "This fields identifies the type of event."
+        }
+      }
     }
   },
   "allOf": [

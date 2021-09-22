@@ -23,12 +23,12 @@
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/journey/ID": {
-              "title": "journeyID",
+              "title": "ID",
               "description": "Identifier for the given Journey.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/journey/versionID": {
-              "title": "journeyVersionID",
+              "title": "versionID",
               "description": "Identifier of the journey version. This id represents the identity of a journey.",
               "type": "string"
             },

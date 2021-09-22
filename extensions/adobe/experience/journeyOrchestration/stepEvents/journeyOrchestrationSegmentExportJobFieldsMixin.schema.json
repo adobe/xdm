@@ -16,65 +16,51 @@
   ],
   "description": "This event is in relation with journey and Segment Export Job service event fields",
   "definitions": {
-    "journeyServiceSegmentExportJob": {
+    "serviceSegmentExportJob": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
           "title": "Journey Orchestration Segment Export Job service event fields.",
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/ID": {
-              "title": "Segment Export Job ID",
+              "title": "ID",
               "type": "string",
               "description": "The identifier of the segment export job triggered."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/status": {
-              "title": "Segment Export Job status",
+              "title": "status",
               "type": "string",
-              "description": "The status of segment export job.",
-              "enum": [
-                "queued",
-                "started",
-                "finished"
-              ]
+              "description": "The status of segment export job."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountTotal": {
-              "title": "Export count total",
+              "title": "exportCountTotal",
               "type": "number",
               "description": "The max possible value of segment export job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountRealized": {
-              "title": "Export count realized",
+              "title": "exportCountRealized",
               "type": "number",
               "description": "The actual number of segments exported through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportCountFailed": {
-              "title": "Export count failed",
+              "title": "exportCountFailed",
               "type": "number",
               "description": "The number of segments failed while exporting through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/exportSegmentID": {
-              "title": "Exported Segment ID",
+              "title": "exportSegmentID",
               "type": "string",
               "description": "The identifier of the segment being exported"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventType": {
-              "title": "Event Type",
+              "title": "eventType",
               "type": "string",
-              "description": "The event type indicating whether it is an error event of info event.",
-              "enum": [
-                "info",
-                "error"
-              ]
+              "description": "The event type indicating whether it is an error event of info event."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/eventCode": {
-              "title": "Event Code",
+              "title": "eventCode",
               "type": "string",
-              "description": "The error code indicating the reason for corresponding eventType",
-              "enum": [
-                "ERROR_INSTANCE_DUPLICATION",
-                "ERROR_MISSING_IDENTITY",
-                "ERROR_INSTANCE_INTERNAL"
-              ]
+              "description": "The error code indicating the reason for corresponding eventType"
             }
           }
         }
@@ -83,7 +69,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyServiceSegmentExportJob"
+      "$ref": "#/definitions/serviceSegmentExportJob"
     }
   ],
   "meta:status": "experimental"

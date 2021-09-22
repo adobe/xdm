@@ -16,39 +16,31 @@
   ],
   "description": "This event is in relation with journey and dispatcher service event fields",
   "definitions": {
-    "journeyServiceDispatcher": {
+    "serviceDispatcher": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher": {
           "title": "Journey Orchestration dispatcher service event fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/journeyEventID": {
-              "title": "Journey-Event ID",
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventID": {
+              "title": "eventID",
               "type": "string",
               "description": "The Event ID to which this event was mapped inside the controller."
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/journeyProjectionID": {
-              "title": "Journey Projection ID",
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/projectionID": {
+              "title": "projectionID",
               "type": "string",
               "description": "The projection id of the segment being used in journey"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventType": {
-              "title": "Event Type",
+              "title": "eventType",
               "type": "string",
-              "description": "The type of dispatcher service event like error, discard",
-              "enum": [
-                "discard",
-                "error"
-              ]
+              "description": "The type of dispatcher service event like error, discard"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventCode": {
-              "title": "Event Code",
+              "title": "eventCode",
               "type": "string",
-              "description": "The error code indicating the reason for corresponding eventType",
-              "enum": [
-                "EVENT_WITH_NO_JOURNEY",
-                "ERROR_SERVICE_INTERNAL"
-              ]
+              "description": "The error code indicating the reason for corresponding eventType"
             }
           }
         }
@@ -57,7 +49,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/journeyServiceDispatcher"
+      "$ref": "#/definitions/serviceDispatcher"
     }
   ],
   "meta:status": "experimental"

@@ -93,7 +93,16 @@
     },
     "systemSchema": [
       "https://ns.adobe.com/xdm/context/identitymap",
-      "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
+	  "https://ns.adobe.com/xdm/context/enduserids",
+	  "https://ns.adobe.com/xdm/common/extensible",
+	  "https://ns.adobe.com/xdm/context/identity",
+	  "https://ns.adobe.com/xdm/context/identityitem",
+	  "https://ns.adobe.com/xdm/context/namespace",
+	  "https://ns.adobe.com/xdm/context/profileStitch",
+	  "https://ns.adobe.com/xdm/context/segmentidentity",
+	  "https://ns.adobe.com/xdm/context/segmentmembership",
+	  "https://ns.adobe.com/xdm/context/segmentmembershipitem"
     ],
     "b2bSchema": [
       "https://ns.adobe.com/xdm/context/profile",

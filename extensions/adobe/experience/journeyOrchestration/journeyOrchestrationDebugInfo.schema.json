@@ -27,11 +27,6 @@
               "title": "requestID",
               "type": "string",
               "description": "The request Id used by Journey Orchestration to track the flow of a request."
-            },
-            "https://ns.adobe.com/experience/journeyOrchestration/griffonSessionID": {
-              "title": "griffonSessionID",
-              "type": "string",
-              "description": "This field represents the session Id that is used for tracking a debug session using Griffon"
             }
           }
         }

@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/landingpage",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe ExperienceEvent - Landing Page details",
+  "description": "Details about landing page and data input by user in it",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "definitions": {
+    "landingpage": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/id": {
+          "title": "Landing Page ID",
+          "type": "string",
+          "description": "Unique Identifier for Landing Page."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/name": {
+          "title": "Landing Page Name",
+          "type": "string",
+          "description": "Name of Landing Page."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/inputDetails": {
+          "title": "Landing Page Input",
+          "type": "object",
+          "meta:xdmType": "map",
+          "description": "Details Input by user in the landing page"
+        },
+         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
+          "title": "Landing Page Additional Context",
+          "type": "object",
+          "meta:xdmType": "map",
+          "description": "Pass through additional data entered by marketer at the time of authoring the landing page"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions": {
+          "title": "Subscriptions details entered by the user",
+          "description": "Subscription details entered by the user",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/id": {
+              "title": "Subscription ID",
+              "type": "string",
+              "description": "Unique Identifier for Subscription"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/isOptIn": {
+              "title": "Opt in or opt out a subscription list",
+              "type": "boolean",
+              "description": "User's decision to opt in or opt out a subscription list"
+              },
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/landingpage"
+    }
+  ],
+  "meta:status": "stable"
+}

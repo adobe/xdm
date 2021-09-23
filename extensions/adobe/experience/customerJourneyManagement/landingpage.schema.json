@@ -32,7 +32,7 @@
           "meta:xdmType": "map",
           "description": "Details Input by user in the landing page"
         },
-         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
           "title": "Landing Page Additional Context",
           "type": "object",
           "meta:xdmType": "map",
@@ -46,15 +46,15 @@
             "type": "object",
             "properties": {
               "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/id": {
-              "title": "Subscription ID",
-              "type": "string",
-              "description": "Unique Identifier for Subscription"
+                "title": "Subscription ID",
+                "type": "string",
+                "description": "Unique Identifier for Subscription"
               },
               "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/isOptIn": {
-              "title": "Opt in or opt out a subscription list",
-              "type": "boolean",
-              "description": "User's decision to opt in or opt out a subscription list"
-              },
+                "title": "Opt in or opt out a subscription list",
+                "type": "boolean",
+                "description": "User's decision to opt in or opt out a subscription list"
+              }
             }
           }
         }

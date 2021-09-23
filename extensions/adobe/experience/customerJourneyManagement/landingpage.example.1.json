@@ -2,22 +2,22 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/id": "",
   "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/name": "123",
   "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/inputDetails": {
-    "firstName" : "John",
-    "lastName"  : "Doe",
-    "city" : "New York City"
+    "firstName": "John",
+    "lastName": "Doe",
+    "city": "New York City"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
-    "offer-campaign" : "Christmas-offers",
-    "productCategory"  : "electronics"
+    "offer-campaign": "Christmas-offers",
+    "productCategory": "electronics"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions": [
     {
-      "id" : "iPhone13-offers",
-      "isOptIn" : true
+      "id": "iPhone13-offers",
+      "isOptIn": true
     },
     {
-      "id" : "Xbox-offers",
-      "isOptIn" : false
+      "id": "Xbox-offers",
+      "isOptIn": false
     }
   ]
 }

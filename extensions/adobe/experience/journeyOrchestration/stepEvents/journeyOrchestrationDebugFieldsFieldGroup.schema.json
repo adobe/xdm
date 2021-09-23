@@ -12,7 +12,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/journeyOrchestration/"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "This event is in relation with journey and describes the debug related fields",
   "definitions": {
@@ -22,12 +23,12 @@
           "title": "Journey Orchestration debug related fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/requestID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/requestID": {
               "title": "requestID",
               "type": "string",
               "description": "The request Id used by Journey Orchestration to track the flow of a request."
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/debugInfo/griffonSessionID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/griffonSessionID": {
               "title": "griffonSessionID",
               "type": "string",
               "description": "This field represents the session Id that is used for tracking a debug session using Griffon"

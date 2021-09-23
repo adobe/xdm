@@ -12,7 +12,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "This event is in relation with journey and dispatcher service event fields",
   "definitions": {
@@ -22,22 +23,22 @@
           "title": "Journey Orchestration dispatcher service event fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": {
               "title": "eventID",
               "type": "string",
               "description": "The Event ID to which this event was mapped inside the controller."
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/projectionID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": {
               "title": "projectionID",
               "type": "string",
               "description": "The projection id of the segment being used in journey"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventType": {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": {
               "title": "eventType",
               "type": "string",
               "description": "The type of dispatcher service event like error, discard"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher/eventCode": {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": {
               "title": "eventCode",
               "type": "string",
               "description": "The error code indicating the reason for corresponding eventType"

@@ -19,7 +19,7 @@
     "journeyStepEventClass": {
       "properties": {
         "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/serviceType": {
-          "title": "service Type",
+          "title": "serviceType",
           "type": "string",
           "description": "This fields identifies the type of event."
         }

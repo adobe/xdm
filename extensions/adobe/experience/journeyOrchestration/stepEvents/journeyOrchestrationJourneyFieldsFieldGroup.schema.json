@@ -12,7 +12,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/journeyOrchestration/"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "This Mixin will have Common Journey Metadata Fields",
   "definitions": {
@@ -22,27 +23,27 @@
           "title": "Journey Orchestration common Journey Fields",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/journey/ID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/ID": {
               "title": "ID",
               "description": "Identifier for the given Journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journey/versionID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/versionID": {
               "title": "versionID",
               "description": "Identifier of the journey version. This id represents the identity of a journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journey/name": {
+            "https://ns.adobe.com/experience/journeyOrchestration/name": {
               "title": "name",
               "description": "Name of the Journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journey/description": {
+            "https://ns.adobe.com/experience/journeyOrchestration/description": {
               "title": "description",
               "description": "Description of the Journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/journey/version": {
+            "https://ns.adobe.com/experience/journeyOrchestration/version": {
               "title": "version",
               "description": "Describes the Journey Version.",
               "type": "string"

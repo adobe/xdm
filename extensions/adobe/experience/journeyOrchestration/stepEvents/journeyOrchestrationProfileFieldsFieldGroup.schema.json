@@ -12,7 +12,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/journeyOrchestration/"
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+    "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "This event is in relation with journey and describe the profile Identifiers",
   "definitions": {
@@ -22,12 +23,12 @@
           "title": "Journey Orchestration Identity Fields.",
           "type": "object",
           "properties": {
-            "https://ns.adobe.com/experience/journeyOrchestration/profile/ID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/ID": {
               "title": "ID",
               "type": "string",
               "description": "Profile identifier identifies the profile sent/used in a journey. E.g: foo@adobe.com."
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/profile/namespace": {
+            "https://ns.adobe.com/experience/journeyOrchestration/namespace": {
               "title": "namespace",
               "type": "string",
               "description": "This field describes the Namespace referenced by the Profile used in the Journey. E.g: Email, ECID "

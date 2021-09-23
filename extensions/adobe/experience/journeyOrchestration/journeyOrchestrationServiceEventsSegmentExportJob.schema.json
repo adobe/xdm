@@ -35,17 +35,23 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": {
               "title": "exportCountTotal",
-              "type": "number",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000000000,
               "description": "The max possible value of segment export job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": {
               "title": "exportCountRealized",
-              "type": "number",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000000000,
               "description": "The actual number of segments exported through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": {
               "title": "exportCountFailed",
-              "type": "number",
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100000000000,
               "description": "The number of segments failed while exporting through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": {

@@ -151,6 +151,16 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
               "meta:titleId": "b2b-person-details##xdm:personKey##title##80701",
               "meta:descriptionId": "b2b-person-details##xdm:personKey##description##99811"
+            },
+            "xdm:companyName": {
+              "title": "Company Name",
+              "description": "Name of the company a business person is associated with.",
+              "type": "string"
+            },
+            "xdm:companyWebsite": {
+              "title": "Company Website",
+              "description": "Website of the company a business person is associated with.",
+              "type": "string"
             }
           }
         }

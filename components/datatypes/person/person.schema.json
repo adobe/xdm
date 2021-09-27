@@ -23,7 +23,7 @@
           "meta:descriptionId": "person##xdm:name##description##54931"
         },
         "xdm:birthDate": {
-          "title": "Birth date",
+          "title": "Birth date(YYYY-MM-DD)",
           "type": "string",
           "format": "date",
           "description": "The full date a person was born.",
@@ -31,7 +31,7 @@
           "meta:descriptionId": "person##xdm:birthDate##description##14631"
         },
         "xdm:birthDayAndMonth": {
-          "title": "Birth date",
+          "title": "Birth date (MM-DD)",
           "type": "string",
           "pattern": "[0-1][0-9]-[0-9][0-9]",
           "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",

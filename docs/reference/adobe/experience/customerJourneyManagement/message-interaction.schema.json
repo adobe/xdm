@@ -26,13 +26,15 @@
                         "click",
                         "open",
                         "unsubscribe",
-                        "spam_complaint"
+                        "spam_complaint",
+                        "subscription"
                     ],
                     "meta:enum": {
                         "click": "Message link clicked.",
                         "open": "Message opened.",
                         "unsubscribe": "Unsubscribed from messages.",
-                        "spam_complaint": "Message is marked as spam by the user."
+                        "spam_complaint": "Message is marked as spam by the user.",
+                        "subscription": "Subscribe / Unsubscribe to a subscription list."
                     },
                     "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
                     "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
@@ -70,9 +72,56 @@
                     "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##description##5891"
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-                    "title": "Offer details",
+                    "title": "Offer Details",
                     "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
                     "description": "Describes offer(s) involved in a message interaction."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+                    "title": "Subscription Details",
+                    "type": "object",
+                    "description": "Describes subscription involved in a message interaction.",
+                    "properties": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionListID": {
+                            "title": "Subscription List ID",
+                            "type": "string",
+                            "description": "Unique Identifier for Subscription List."
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": {
+                            "title": "Source",
+                            "type": "string",
+                            "description": "Source of the Subscription List."
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": {
+                            "title": "Source Type",
+                            "type": "string",
+                            "description": "Type of the Source of Subscription List.",
+                            "enum": [
+                                "internal",
+                                "external"
+                            ],
+                            "meta:enum": {
+                                "internal": "Internal for AJO Landing Page",
+                                "external": "External for Non-AJO Landing Page"
+                            }
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice": {
+                            "title": "Subscription Choice",
+                            "type": "string",
+                            "description": "Subscription Choice for the Subscription List.",
+                            "enum": [
+                                "yes",
+                                "no",
+                                "pending",
+                                "unknown"
+                            ],
+                            "meta:enum": {
+                                "yes": "Subscribed to Subscription List",
+                                "no": "Unsubscribed to Subscription List",
+                                "pending": "Subscription Pending",
+                                "unknown": "Subscription Unknown"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -89,6 +138,20 @@
     "meta:titleId": "message-interaction##title##69271",
     "meta:descriptionId": "message-interaction##description##85821",
     "examples": [
+        {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+                "marketing",
+                "apparel"
+            ],
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": "daily-news",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": "landingPageId",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": "internal",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": "yes"
+            }
+        },
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",

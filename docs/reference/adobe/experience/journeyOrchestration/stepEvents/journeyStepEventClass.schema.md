@@ -18,7 +18,9 @@ A time-series based Journey Step Event Class.
 
 ## Journey Step Event Example
 ```json
-{}
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceType": "serviceEvents.segmentExportJob"
+}
 ```
 
 # Journey Step Event Properties
@@ -26,6 +28,7 @@ A time-series based Journey Step Event Class.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#id) |
+| [https://ns.adobe.com/experience/journeyOrchestration/serviceType](#httpsnsadobecomexperiencejourneyorchestrationservicetype) | `string` | Optional | Journey Step Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../../behaviors/time-series.schema.md#xdmtimestamp) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -45,6 +48,26 @@ A unique identifier for the time-series event.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## https://ns.adobe.com/experience/journeyOrchestration/serviceType
+### Service Type
+
+This fields identifies the type of event.
+
+`https://ns.adobe.com/experience/journeyOrchestration/serviceType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/journeyOrchestration/serviceType Type
+
+
+`string`
 
 
 

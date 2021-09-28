@@ -48,7 +48,7 @@
               "description": "The actual number of segments exported through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": {
-              "title": "exportCountFailed",
+              "title": "Export Count Failed",
               "type": "integer",
               "minimum": 0,
               "maximum": 100000000000,

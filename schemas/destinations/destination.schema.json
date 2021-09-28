@@ -80,7 +80,7 @@
         "xdm:connectionSpecID": {
           "title": "Connection Spec ID",
           "type": "string",
-          "description": "Connection Spec ID"
+          "description": "Connection Spec ID for the destination"
         }
       }
     }

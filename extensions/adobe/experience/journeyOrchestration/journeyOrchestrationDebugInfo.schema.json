@@ -24,7 +24,7 @@
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/requestID": {
-              "title": "requestID",
+              "title": "Request ID",
               "type": "string",
               "description": "The request Id used by Journey Orchestration to track the flow of a request."
             }

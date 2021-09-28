@@ -74,6 +74,16 @@
             "marketing": "Marketing",
             "transactional": "Transactional"
           }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID": {
+          "title": "AJO Campaign ID",
+          "type": "string",
+          "description": " Unique ID of the AJO Campaign that triggered this message execution."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID": {
+          "title": "AJO Campaign Version ID",
+          "type": "string",
+          "description": " Version ID of the AJO Campaign that triggered this message execution."
         }
       }
     }

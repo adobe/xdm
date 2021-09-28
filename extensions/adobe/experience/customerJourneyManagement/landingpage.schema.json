@@ -21,6 +21,11 @@
           "type": "string",
           "description": "Unique Identifier for Landing Page."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/messageChannel": {
+          "title": "Message Channel",
+          "type": "string",
+          "description": "Channel at which link of this landing page was sent"
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/name": {
           "title": "Landing Page Name",
           "type": "string",
@@ -50,10 +55,27 @@
                 "type": "string",
                 "description": "Unique Identifier for Subscription"
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/isOptIn": {
-                "title": "Opt in or opt out a subscription list",
-                "type": "boolean",
-                "description": "User's decision to opt in or opt out a subscription list"
+              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/type": {
+                "title": "Subscription Type",
+                "description": "The type of subscription",
+                "type": "string"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/subscriberAddress": {
+                "title": "Contact address of the subscriber",
+                "type": "string",
+                "description": "Contact address of the subscriber"
+              },
+              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/subscriptionChoice": {
+                "title": "Subscription Choice",
+                "type": "string",
+                "description": "Subscription Choice for the Subscription List.",
+                "enum": ["yes", "no", "pending", "unknown"],
+                "meta:enum": {
+                  "yes": "Subscribed to Subscription List",
+                  "no": "Unsubscribed to Subscription List",
+                  "pending": "Subscription Pending",
+                  "unknown": "Subscription Unknown"
+                }
               }
             }
           }

@@ -24,22 +24,22 @@
           "type": "object",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": {
-              "title": "eventID",
+              "title": "Event ID",
               "type": "string",
               "description": "The Event ID to which this event was mapped inside the controller."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": {
-              "title": "projectionID",
+              "title": "Projection ID",
               "type": "string",
               "description": "The projection id of the segment being used in journey"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": {
-              "title": "eventType",
+              "title": "Event Type",
               "type": "string",
               "description": "The type of dispatcher service event like error, discard"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": {
-              "title": "eventCode",
+              "title": "Event Code",
               "type": "string",
               "description": "The error code indicating the reason for corresponding eventType"
             }

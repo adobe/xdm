@@ -29,7 +29,7 @@
               "description": "Profile identifier identifies the profile sent/used in a journey. E.g: foo@adobe.com."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/namespace": {
-              "title": "namespace",
+              "title": "Namespace",
               "type": "string",
               "description": "This field describes the Namespace referenced by the Profile used in the Journey. E.g: Email, ECID "
             }

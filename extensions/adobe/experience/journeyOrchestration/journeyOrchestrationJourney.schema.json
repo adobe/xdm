@@ -28,23 +28,23 @@
               "description": "Identifier for the given Journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/versionID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/Version ID": {
               "title": "versionID",
               "description": "Identifier of the journey version. This id represents the identity of a journey.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/name": {
-              "title": "name",
+              "title": "Name",
               "description": "Name of the Journey.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/description": {
-              "title": "description",
+              "title": "Description",
               "description": "Description of the Journey.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/version": {
-              "title": "version",
+              "title": "Version",
               "description": "Describes the Journey Version.",
               "type": "string"
             }

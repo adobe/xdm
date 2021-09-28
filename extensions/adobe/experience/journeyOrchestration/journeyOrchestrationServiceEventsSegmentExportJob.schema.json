@@ -29,19 +29,19 @@
               "description": "The identifier of the segment export job triggered."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": {
-              "title": "status",
+              "title": "Status",
               "type": "string",
               "description": "The status of segment export job."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": {
-              "title": "exportCountTotal",
+              "title": "Export Count Total",
               "type": "integer",
               "minimum": 0,
               "maximum": 100000000000,
               "description": "The max possible value of segment export job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": {
-              "title": "exportCountRealized",
+              "title": "Export Count Realized",
               "type": "integer",
               "minimum": 0,
               "maximum": 100000000000,
@@ -55,17 +55,17 @@
               "description": "The number of segments failed while exporting through the job"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": {
-              "title": "exportSegmentID",
+              "title": "Export Segment ID",
               "type": "string",
               "description": "The identifier of the segment being exported"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": {
-              "title": "eventType",
+              "title": "Event Type",
               "type": "string",
               "description": "The event type indicating whether it is an error event of info event."
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": {
-              "title": "eventCode",
+              "title": "Event Code",
               "type": "string",
               "description": "The error code indicating the reason for corresponding eventType"
             }

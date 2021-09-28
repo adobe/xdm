@@ -17,7 +17,13 @@
     "description": "A time-series based Journey Step Event Class.",
     "definitions": {
         "journeyStepEventClass": {
-            "properties": {}
+            "properties": {
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceType": {
+                    "title": "Service Type",
+                    "type": "string",
+                    "description": "This fields identifies the type of event."
+                }
+            }
         }
     },
     "allOf": [
@@ -32,6 +38,8 @@
     "meta:titleId": "journeyStepEvent##title##73861",
     "meta:descriptionId": "journeyStepEvent##description##12601",
     "examples": [
-        {}
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceType": "serviceEvents.segmentExportJob"
+        }
     ]
 }

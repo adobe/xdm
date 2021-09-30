@@ -38,7 +38,7 @@
           "additionalProperties": {
             "type": "string",
             "description": "Details Input by user in the landing page."
-          }          
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
           "title": "Landing Page Additional Context",
@@ -47,7 +47,7 @@
           "additionalProperties": {
             "type": "string",
             "description": "Pass through additional data entered by marketer at the time of authoring the landing page."
-          }                    
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions": {
           "title": "Subscriptions details entered by the user",

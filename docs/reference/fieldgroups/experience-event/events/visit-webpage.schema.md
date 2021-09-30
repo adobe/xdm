@@ -238,7 +238,6 @@ Unknown type `object`.
     "xdm:URL": {
       "title": "URL",
       "type": "string",
-      "format": "uri",
       "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
       "meta:titleId": "visit-webpage##xdm:URL##title##56451",
       "meta:descriptionId": "visit-webpage##xdm:URL##description##36051"

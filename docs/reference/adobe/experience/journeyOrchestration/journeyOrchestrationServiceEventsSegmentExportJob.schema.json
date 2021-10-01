@@ -1,0 +1,112 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Journey Orchestration service Events: SegmentExportJob Fields",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "This event is in relation with journey and Segment Export Job service event fields",
+    "definitions": {
+        "serviceSegmentExportJob": {
+            "properties": {
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+                    "title": "Journey Orchestration Segment Export Job service event fields.",
+                    "type": "object",
+                    "properties": {
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": {
+                            "title": "ID",
+                            "type": "string",
+                            "description": "The identifier of the segment export job triggered."
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": {
+                            "title": "Status",
+                            "type": "string",
+                            "description": "The status of segment export job."
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": {
+                            "title": "Export Count Total",
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 100000000000,
+                            "description": "The max possible value of segment export job"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": {
+                            "title": "Export Count Realized",
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 100000000000,
+                            "description": "The actual number of segments exported through the job"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": {
+                            "title": "Export Count Failed",
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 100000000000,
+                            "description": "The number of segments failed while exporting through the job"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": {
+                            "title": "Export Segment ID",
+                            "type": "string",
+                            "description": "The identifier of the segment being exported"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": {
+                            "title": "Event Type",
+                            "type": "string",
+                            "description": "The event type indicating whether it is an error event of info event."
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": {
+                            "title": "Event Code",
+                            "type": "string",
+                            "description": "The error code indicating the reason for corresponding eventType"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/serviceSegmentExportJob"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "finished",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": 12000000,
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": 12000000,
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": 2000000,
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
+            }
+        },
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "queued",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
+            }
+        },
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
+                "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_INSTANCE_DUPLICATION"
+            }
+        }
+    ]
+}

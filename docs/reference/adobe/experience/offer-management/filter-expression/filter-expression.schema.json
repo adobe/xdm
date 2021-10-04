@@ -1022,6 +1022,17 @@
             ]
         },
         {
+            "nodeType": "fnApply",
+            "fnName": "modelInstances",
+            "params": [
+                {
+                    "nodeType": "literal",
+                    "literalType": "String",
+                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\"&property=\"_instance.status=approved\""
+                }
+            ]
+        },
+        {
             "nodeType": "select",
             "variables": [
                 {
@@ -1078,17 +1089,6 @@
                             }
                         ]
                     }
-                }
-            ]
-        },
-        {
-            "nodeType": "fnApply",
-            "fnName": "modelInstances",
-            "params": [
-                {
-                    "nodeType": "literal",
-                    "literalType": "String",
-                    "value": "/queries/offersByPlacementIds?placementId=\"uri:com:example:placement-01001\"&placementId=\"uri:com:example:placement-01002\"&property=\"_instance.status=approved\""
                 }
             ]
         },
@@ -1223,7 +1223,7 @@
                 {
                     "nodeType": "literal",
                     "literalType": "String",
-                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
+                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
                 }
             ]
         },
@@ -1234,7 +1234,7 @@
                 {
                     "nodeType": "literal",
                     "literalType": "String",
-                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\""
+                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\""
                 }
             ]
         },
@@ -1347,6 +1347,17 @@
                             }
                         ]
                     }
+                }
+            ]
+        },
+        {
+            "nodeType": "fnApply",
+            "fnName": "modelInstances",
+            "params": [
+                {
+                    "nodeType": "literal",
+                    "literalType": "String",
+                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
                 }
             ]
         },
@@ -1496,17 +1507,6 @@
                             }
                         ]
                     }
-                }
-            ]
-        },
-        {
-            "nodeType": "fnApply",
-            "fnName": "modelInstances",
-            "params": [
-                {
-                    "nodeType": "literal",
-                    "literalType": "String",
-                    "value": "/queries/offersByTagIds?tagId=\"uri:com:example:tag-0001\"&tagId=\"uri:com:example:tag-0002\"&qop=\"AND\""
                 }
             ]
         },

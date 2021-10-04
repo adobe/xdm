@@ -24,24 +24,12 @@
           "meta:xdmType": "string"
         },
         "xdm:labels": {
-          "title": "Labels",
-          "description": "When present, it allows an array of objects with three properties such as labelType, labelName and labelValue",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "meta:xdmType": "object",
-            "required": ["labelType", "labelName", "labelValue"],
-            "properties": {
-              "labelType": {
-                "type": "string"
-              },
-              "labelName": {
-                "type": "string"
-              },
-              "labelValue": {
-                "type": "string"
-              }
-            }
+          "title" : "Labels",
+          "description" : "When present, it allows an array of labels. Values are resources IDs",
+          "type" : "array",
+          "items" : {
+            "type" : "string",
+            "meta:xdmType" : "string"
           },
           "meta:xdmType": "array",
           "meta:titleId": "descriptorLabel##xdm:labels##title##11301",

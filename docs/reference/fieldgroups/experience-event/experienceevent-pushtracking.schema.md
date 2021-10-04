@@ -24,7 +24,8 @@ push notification tracking details
   "xdm:customAction": {
     "xdm:actionID": "GAME_INVITATION",
     "xdm:value": 500
-  }
+  },
+  "xdm:isLaunch": true
 }
 ```
 
@@ -54,6 +55,7 @@ Describes interaction with a push notification.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:customAction`| object | Optional |
+| `xdm:isLaunch`| boolean | Optional |
 | `xdm:pushProvider`| string | Optional |
 | `xdm:pushProviderMessageID`| string | Optional |
 
@@ -98,6 +100,26 @@ Unknown type `object`.
   "simpletype": "`object`"
 }
 ```
+
+
+
+
+
+
+
+#### xdm:isLaunch
+##### Is Launch
+
+Indicates whether this push notification interaction launched the application.
+
+`xdm:isLaunch`
+* is optional
+* type: `boolean`
+
+##### xdm:isLaunch Type
+
+
+`boolean`
 
 
 

@@ -28,7 +28,7 @@
               "description": "Identifier for the given Journey.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/VersionID": {
+            "https://ns.adobe.com/experience/journeyOrchestration/versionID": {
               "title": "Version ID",
               "description": "Identifier of the journey version. This id represents the identity of a journey.",
               "type": "string"

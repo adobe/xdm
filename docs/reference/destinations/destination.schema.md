@@ -27,7 +27,8 @@ Destinations Schema.
   "xdm:createdByID": "mprabhbak",
   "xdm:destinationDescription": "Informatica connection",
   "xdm:destinationStatus": "enabled",
-  "xdm:version": "1.2"
+  "xdm:version": "1.2",
+  "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea"
 }
 ```
 
@@ -36,6 +37,7 @@ Destinations Schema.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
+| [xdm:connectionSpecID](#xdmconnectionspecid) | `string` | Optional | Destinations (this schema) |
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationDescription](#xdmdestinationdescription) | `string` | Optional | Destinations (this schema) |
@@ -61,6 +63,26 @@ A unique identifier for the record.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## xdm:connectionSpecID
+### Connection Spec ID
+
+Unique identifier to connect and deliver segments to the destination
+
+`xdm:connectionSpecID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:connectionSpecID Type
+
+
+`string`
 
 
 

@@ -78,6 +78,11 @@
                     "description": "Destination flow version",
                     "meta:titleId": "destination##xdm:version##title##6731",
                     "meta:descriptionId": "destination##xdm:version##description##27621"
+                },
+                "xdm:connectionSpecID": {
+                    "title": "Connection Spec ID",
+                    "type": "string",
+                    "description": "Unique identifier to connect and deliver segments to the destination"
                 }
             }
         }
@@ -105,7 +110,8 @@
             "xdm:createdByID": "mprabhbak",
             "xdm:destinationDescription": "Informatica connection",
             "xdm:destinationStatus": "enabled",
-            "xdm:version": "1.2"
+            "xdm:version": "1.2",
+            "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea"
         }
     ]
 }

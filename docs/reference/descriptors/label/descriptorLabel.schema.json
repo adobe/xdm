@@ -25,27 +25,11 @@
                 },
                 "xdm:labels": {
                     "title": "Labels",
-                    "description": "When present, it allows an array of objects with three properties such as labelType, labelName and labelValue",
+                    "description": "When present, it allows an array of labels. Values are resources IDs",
                     "type": "array",
                     "items": {
-                        "type": "object",
-                        "meta:xdmType": "object",
-                        "required": [
-                            "labelType",
-                            "labelName",
-                            "labelValue"
-                        ],
-                        "properties": {
-                            "labelType": {
-                                "type": "string"
-                            },
-                            "labelName": {
-                                "type": "string"
-                            },
-                            "labelValue": {
-                                "type": "string"
-                            }
-                        }
+                        "type": "string",
+                        "meta:xdmType": "string"
                     },
                     "meta:xdmType": "array",
                     "meta:titleId": "descriptorLabel##xdm:labels##title##11301",
@@ -76,36 +60,10 @@
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
             "xdm:labels": [
-                {
-                    "labelType": "Custom",
-                    "labelName": "Location",
-                    "labelValue": "IN"
-                },
-                {
-                    "labelType": "Custom",
-                    "labelName": "Location",
-                    "labelValue": "FR"
-                },
-                {
-                    "labelType": "Custom",
-                    "labelName": "Brand",
-                    "labelValue": "DummyBrand"
-                },
-                {
-                    "labelType": "Custom",
-                    "labelName": "Brand",
-                    "labelValue": "AnotherDummyBrand"
-                },
-                {
-                    "labelType": "Governance",
-                    "labelName": "DULE",
-                    "labelValue": "SPD1"
-                },
-                {
-                    "labelType": "Governance",
-                    "labelName": "DULE",
-                    "labelValue": "PII"
-                }
+                "sampleDUlELabelResourceID1",
+                "sampleDUlELabelResourceID2",
+                "sampleDUlELabelResourceID3",
+                "sampleDUlELabelResourceID4"
             ]
         }
     ]

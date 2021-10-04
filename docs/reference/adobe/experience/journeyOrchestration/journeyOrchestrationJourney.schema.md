@@ -59,7 +59,7 @@ This Mixin will have Common Journey Metadata Fields
 | Property | Type | Required |
 |----------|------|----------|
 | `https://ns.adobe.com/experience/journeyOrchestration/ID`| string | Optional |
-| `https://ns.adobe.com/experience/journeyOrchestration/Version ID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/VersionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/description`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/name`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/version`| string | Optional |
@@ -87,16 +87,16 @@ Identifier for the given Journey.
 
 
 
-#### https://ns.adobe.com/experience/journeyOrchestration/Version ID
+#### https://ns.adobe.com/experience/journeyOrchestration/VersionID
 ##### Version ID
 
 Identifier of the journey version. This id represents the identity of a journey.
 
-`https://ns.adobe.com/experience/journeyOrchestration/Version ID`
+`https://ns.adobe.com/experience/journeyOrchestration/VersionID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/journeyOrchestration/Version ID Type
+##### https://ns.adobe.com/experience/journeyOrchestration/VersionID Type
 
 
 `string`

@@ -76,6 +76,11 @@
           "description": "Destination flow version",
           "meta:titleId": "destination##xdm:version##title##6731",
           "meta:descriptionId": "destination##xdm:version##description##27621"
+        },
+        "xdm:connectionSpecID": {
+          "title": "Connection Spec ID",
+          "type": "string",
+          "description": "Unique identifier to connect and deliver segments to the destination"
         }
       }
     }

@@ -56,6 +56,11 @@
               "description": "Push provider, e.g. apns or fcm",
               "meta:titleId": "experienceevent-pushtracking##xdm:pushProvider##title##90271",
               "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProvider##description##23691"
+            },
+            "xdm:isLaunch": {
+              "title": "Is Launch",
+              "type": "boolean",
+              "description": "Indicates whether this push notification interaction launched the application."
             }
           },
           "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##4781",

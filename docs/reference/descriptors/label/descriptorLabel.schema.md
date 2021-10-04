@@ -24,36 +24,10 @@ Describes a label at the field level for a given class/fieldgroup/schema
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
-    {
-      "labelType": "Custom",
-      "labelName": "Location",
-      "labelValue": "IN"
-    },
-    {
-      "labelType": "Custom",
-      "labelName": "Location",
-      "labelValue": "FR"
-    },
-    {
-      "labelType": "Custom",
-      "labelName": "Brand",
-      "labelValue": "DummyBrand"
-    },
-    {
-      "labelType": "Custom",
-      "labelName": "Brand",
-      "labelValue": "AnotherDummyBrand"
-    },
-    {
-      "labelType": "Governance",
-      "labelName": "DULE",
-      "labelValue": "SPD1"
-    },
-    {
-      "labelType": "Governance",
-      "labelName": "DULE",
-      "labelValue": "PII"
-    }
+    "sampleDUlELabelResourceID1",
+    "sampleDUlELabelResourceID2",
+    "sampleDUlELabelResourceID3",
+    "sampleDUlELabelResourceID4"
   ]
 }
 ```
@@ -64,7 +38,7 @@ Describes a label at the field level for a given class/fieldgroup/schema
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | Label Descriptor (this schema) |
-| [xdm:labels](#xdmlabels) | `object[]` | Optional | Label Descriptor (this schema) |
+| [xdm:labels](#xdmlabels) | `string[]` | Optional | Label Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
@@ -113,88 +87,21 @@ The value of this property **must** be equal to:
 ## xdm:labels
 ### Labels
 
-When present, it allows an array of objects with three properties such as labelType, labelName and labelValue
+When present, it allows an array of labels. Values are resources IDs
 
 `xdm:labels`
 * is optional
-* type: `object[]`
+* type: `string[]`
 
 * defined in this schema
 
 ### xdm:labels Type
 
 
-Array type: `object[]`
+Array type: `string[]`
 
 All items must be of the type:
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-| `labelName`| string | **Required** |
-| `labelType`| string | **Required** |
-| `labelValue`| string | **Required** |
-
-
-
-#### labelName
-
-undefined
-
-`labelName`
-* is **required**
-* type: `string`
-
-##### labelName Type
-
-
 `string`
-
-
-
-
-
-
-
-
-#### labelType
-
-undefined
-
-`labelType`
-* is **required**
-* type: `string`
-
-##### labelType Type
-
-
-`string`
-
-
-
-
-
-
-
-
-#### labelValue
-
-undefined
-
-`labelValue`
-* is **required**
-* type: `string`
-
-##### labelValue Type
-
-
-`string`
-
-
-
-
-
 
 
 

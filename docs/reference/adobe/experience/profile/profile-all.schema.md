@@ -72,7 +72,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
       }
     }
   },
-  "xdm:consentPolicies": {
+  "xdm:consentPoliciesIdMap": {
     "exampleConsentPolicy1": {},
     "exampleConsentPolicy2": {
       "Email": [
@@ -97,6 +97,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/profile/associatedIdentities](#httpsnsadobecomexperienceprofileassociatedidentities) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/consentPolicies](#httpsnsadobecomexperienceprofileconsentpolicies) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
+| [https://ns.adobe.com/experience/profile/consentPoliciesIdMap](#httpsnsadobecomexperienceprofileconsentpoliciesidmap) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [https://ns.adobe.com/experience/profile/identityNamespaces](#httpsnsadobecomexperienceprofileidentitynamespaces) | `object` | Optional | Adobe Unified Profile Service Profile Union Extension (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
@@ -137,6 +138,30 @@ Adobe Unified Profile Service required fields for the Profile Union.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/profile/consentPolicies Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
+## https://ns.adobe.com/experience/profile/consentPoliciesIdMap
+### consent policies map
+
+map of consent policies
+
+`https://ns.adobe.com/experience/profile/consentPoliciesIdMap`
+* is optional
+* type: `object`
+* defined in this schema
+
+### https://ns.adobe.com/experience/profile/consentPoliciesIdMap Type
 
 
 `object` with following properties:

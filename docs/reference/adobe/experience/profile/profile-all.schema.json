@@ -78,6 +78,7 @@
                 },
                 "https://ns.adobe.com/experience/profile/consentPolicies": {
                     "title": "Consent policies map",
+                    "meta:status": "deprecated",
                     "type": "object",
                     "meta:xdmType": "map",
                     "additionalProperties": {
@@ -87,6 +88,26 @@
                             "type": "string"
                         },
                         "description": "List of identities for each namespace."
+                    }
+                },
+                "https://ns.adobe.com/experience/profile/consentPoliciesIdMap": {
+                    "title": "consent policies map",
+                    "description": "map of consent policies",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "title": "consent policy id map",
+                        "description": "map of validated fields for a consent policy",
+                        "type": "object",
+                        "meta:xdmType": "map",
+                        "additionalProperties": {
+                            "title": "consented identities per namespace",
+                            "description": "List of identities for each namespace in each consent policy",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
                     }
                 }
             }
@@ -164,7 +185,7 @@
                     }
                 }
             },
-            "xdm:consentPolicies": {
+            "xdm:consentPoliciesIdMap": {
                 "exampleConsentPolicy1": {},
                 "exampleConsentPolicy2": {
                     "Email": [

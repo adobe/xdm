@@ -12,14 +12,16 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/experience/profile/profile-all"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/profile/profile-all"
+  ],
   "definitions": {
     "profile-counters": {
       "properties": {
         "xdm:identity": {
           "title": "Identity associated with this token",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "The identity associated with this Profile Counter before profile stitching.",
+          "description": "The identity associated with this Profile Counter before profile stitching."
         },
         "xdm:counterMap": {
           "description": "A map from counter_id to objects containing counter_value, counter_expiry",
@@ -64,5 +66,5 @@
       "$ref": "#/definitions/profile-counters"
     }
   ],
-  "required" : [],
+  "required": []
 }

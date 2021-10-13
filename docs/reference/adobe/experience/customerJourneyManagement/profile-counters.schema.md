@@ -1,5 +1,4 @@
-# Adobe Unified Profile -- Counters Details Extension -- Schema
-
+# Adobe Unified Profile Counters Extension -- Schema
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/profile-counters
 ```
@@ -12,15 +11,18 @@ Profile Counter Details as sourced primarily from Distributed Counters Service.
 
 ## Schema Hierarchy
 
-- Adobe Unified Profile - Counter details `https://ns.adobe.com/experience/customerJourneyManagement/profile-counters`
+- Adobe Unified Profile Counters Extension `https://ns.adobe.com/experience/customerJourneyManagement/profile-counters`
   - [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  - [Identity schema](../../../datatypes/identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
+    - [IdentityItem schema](../../../datatypes/identityitem.schema.md) `https://ns.adobe.com/xdm/context/identityitem` 
+    
 
-# Adobe Unified Profile - Counter details Properties
+# Adobe Unified Profile Counters Extension Properties
 
 | Property                         | Type       | Required   | Defined by                                                                        |
 | -------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------- |
-| [xdm:counterMap](#xdmcountermap) | `map`      | Required   | Adobe Unified Profile - Counter details (this schema)                             |
-| [xdm:identity](#xdmidentity)     | `Identity` | Required   | Adobe Unified Profile - Identity Schema https://ns.adobe.com/xdm/context/identity |
+| [xdm:counterMap](#xdmcountermap) | `map`      | Required   | profile-counters (this) Schema                             |
+| [xdm:identity](#xdmidentity)     | `Identity` | Required   | Identity Schema https://ns.adobe.com/xdm/context/identity |
 | `*`                              | `any`      | Additional | this schema _allows_ additional properties                                        |
 
 ## xdm:counterMap
@@ -46,15 +48,15 @@ Value is an Object containing the counter_value and counter_expiry
 
 | Property                 | Type     | Required     | Defined by                     |
 | ------------------------ | -------- | ------------ | ------------------------------ |
-| [key](#counterid)        | `string` | **Required** | profile-counters (this) schema |
-| [value](#counterdetails) | `object` | **Required** | profile-counters (this)        |
+| [key](#counterid)        | `string` | **Required** | profile-counters (this) Schema |
+| [value](#counterdetails) | `object` | **Required** | profile-counters (this) Schema     |
 
 ##### Value of type Object
 
 | Property                         | Type   | Required     | Defined by                     |
 | -------------------------------- | ------ | ------------ | ------------------------------ |
-| [value](#countermapvaluevalue)   | `long` | **Required** | profile-counters (this) schema |
-| [expiry](#countermapvalueexpiry) | `long` | **Required** | profile-counters (this)        |
+| [value](#countermapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
+| [expiry](#countermapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
 
 ## xdm:identity
 
@@ -70,7 +72,7 @@ Value is an Object containing the counter_value and counter_expiry
 
 | Property                       | Type     | Required     | Defined by                                                  |
 | ------------------------------ | -------- | ------------ | ----------------------------------------------------------- |
-| [xdm:id](#xdmid)               | `string` | **Optional** | Xid https://ns.adobe.com/xdm/context/identityitem           |
-| [xdm:xid](#xdmxid)             | `string` | **Optional** | Xid https://ns.adobe.com/xdm/context/identity               |
+| [xdm:id](#xdmid)               | `string` | **Optional** | IdentityItem Schema https://ns.adobe.com/xdm/context/identityitem           |
+| [xdm:xid](#xdmxid)             | `string` | **Optional** | Identity Schema https://ns.adobe.com/xdm/context/identity               |
 | [xdm:namespace](#xdmnamespace) | `object` | **Optional** | Namespace Schema https://ns.adobe.com/xdm/context/namespace |
 | `*`                            | any      | Additional   | this schema _allows_ additional properties                  |

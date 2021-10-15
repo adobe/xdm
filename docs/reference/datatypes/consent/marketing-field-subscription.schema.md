@@ -75,7 +75,7 @@ Reason for opting out
 
 `string`
 
-* maximum length: 16 characters
+* maximum length: 255 characters
 
 
 

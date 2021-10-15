@@ -90,6 +90,13 @@
                                     "xdm:val": "y"
                                 }
                             }
+                        },
+                        "johnny@company.com": {
+                            "xdm:marketing": {
+                                "xdm:email": {
+                                    "xdm:val": "n"
+                                }
+                            }
                         }
                     }
                 },

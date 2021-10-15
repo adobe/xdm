@@ -66,7 +66,7 @@
             "title": "Opt-out reason",
             "type": "string",
             "description": "Reason for opting out",
-            "maxLength": 16,
+            "maxLength": 255,
             "meta:titleId": "consents-and-preferences##reason##title##75301",
             "meta:descriptionId": "consents-and-preferences##reason##description##49681"
         },

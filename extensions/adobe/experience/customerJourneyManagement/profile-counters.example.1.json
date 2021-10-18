@@ -1,11 +1,8 @@
 {
-  "xdm:identity": {
-    "xdm:namespace": {
-      "xdm:code": "ECID"
-    },
-    "xdm:id": "92312748749128"
+  "xdm:namespace": {
+    "xdm:code": "ECID"
   },
-
+  "xdm:id": "92312748749128",
   "xdm:counterMap": {
     "counter_id": { "value": 100, "expiry": 1828377772381 }
   }

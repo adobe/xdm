@@ -18,11 +18,6 @@
   "definitions": {
     "profile-counters": {
       "properties": {
-        "xdm:identity": {
-          "title": "Identity associated with this token",
-          "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "The identity associated with this Profile Counter before profile stitching."
-        },
         "xdm:counterMap": {
           "description": "A map from counter_id to objects containing counter_value, counter_expiry",
           "type": "object",
@@ -49,10 +44,12 @@
                 "required": [],
                 "meta:xdmType": "integer"
               }
-            }
+            },
+            "required": ["value", "expiry"]
           }
         }
-      }
+      },
+      "required": ["xdm:counterMap"]
     }
   },
   "allOf": [

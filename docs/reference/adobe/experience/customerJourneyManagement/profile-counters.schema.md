@@ -59,13 +59,3 @@ Value is an Object containing the counter_value and counter_expiry
 | -------------------------------- | ------ | ------------ | ------------------------------ |
 | [value](#countermapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
 | [expiry](#countermapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
-
-## xdm:identity
-
-### Identity
-
-`xdm:identity`
-
-- is Required
-- type: Identity
-- defined by: https://ns.adobe.com/xdm/context/identity

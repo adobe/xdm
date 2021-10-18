@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/experience/profile/profile-all"
+    "https://ns.adobe.com/xdm/context/profile"
   ],
   "definitions": {
     "profile-counters": {
@@ -23,26 +23,21 @@
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
-            "type": "object",
-            "meta:xdmType": "object",
+            "type": "object"
             "properties": {
               "value": {
                 "title": "Profile Counter Value",
                 "description": "Represents the latest value of the Profile Counter after being Incremented.",
                 "type": "integer",
-                "required": [],
                 "minimum": 1,
-                "maximum": 9007199254740991,
-                "meta:xdmType": "integer"
+                "maximum": 9007199254740991
               },
               "expiry": {
                 "title": "Profile Counter Expiry",
                 "description": "Represents the TTL for the Profile Counter.",
                 "type": "integer",
                 "minimum": 0,
-                "maximum": 9007199254740991,
-                "required": [],
-                "meta:xdmType": "integer"
+                "maximum": 9007199254740991
               }
             },
             "required": ["value", "expiry"]
@@ -53,9 +48,6 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "https://ns.adobe.com/experience/profile/profile-all"
     },

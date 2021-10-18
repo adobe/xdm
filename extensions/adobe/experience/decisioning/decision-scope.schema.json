@@ -53,7 +53,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record;version=1.0"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
       "$ref": "#/definitions/decision-scope"

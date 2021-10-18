@@ -15,6 +15,24 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
+  "@id": "100001061",
+  "searchads:campaignId": "10001234",
+  "searchads:accountId": "10001456",
+  "searchads:campaignName": "My First Campaign",
+  "searchads:campaignDescription": "Branded Mobile Campaign",
+  "searchads:campaignStatus": "Active",
+  "searchads:channelType": "Search",
+  "searchads:budget": 123.45,
+  "searchads:budgetType": "Monthly",
+  "searchads.adDeliveryType": "Standard",
+  "searchads.CampaignObjective": "visit_web",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+}
+```
+
+```json
+{
   "xdm:accountId": "123456",
   "xdm:dspId": "2",
   "xdm:campaignId": "987654",
@@ -24,23 +42,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "xdm:experimentId": "9812987",
   "xdm:sampleGroupId": "8676378",
   "xdm:currency": "USD"
-}
-```
-
-```json
-{
-  "xdm:id": "100001061",
-  "xdm:campaignId": "10001234",
-  "xdm:campaignName": "My First Campaign",
-  "xdm:campaignDescription": "Branded Mobile Campaign",
-  "xdm:campaignStatus": "Active",
-  "xdm:channelType": "Search",
-  "xdm:budget": 123.45,
-  "xdm:budgetType": "Monthly",
-  "xdm.adDeliveryType": "Standard",
-  "xdm.CampaignObjective": "visit_web",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }
 ```
 
@@ -64,17 +65,16 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
-  "@id": "100001061",
-  "searchads:campaignId": "10001234",
-  "searchads:accountId": "10001456",
-  "searchads:campaignName": "My First Campaign",
-  "searchads:campaignDescription": "Branded Mobile Campaign",
-  "searchads:campaignStatus": "Active",
-  "searchads:channelType": "Search",
-  "searchads:budget": 123.45,
-  "searchads:budgetType": "Monthly",
-  "searchads.adDeliveryType": "Standard",
-  "searchads.CampaignObjective": "visit_web",
+  "xdm:id": "100001061",
+  "xdm:campaignId": "10001234",
+  "xdm:campaignName": "My First Campaign",
+  "xdm:campaignDescription": "Branded Mobile Campaign",
+  "xdm:campaignStatus": "Active",
+  "xdm:channelType": "Search",
+  "xdm:budget": 123.45,
+  "xdm:budgetType": "Monthly",
+  "xdm.adDeliveryType": "Standard",
+  "xdm.CampaignObjective": "visit_web",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

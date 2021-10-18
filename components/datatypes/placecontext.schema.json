@@ -46,7 +46,6 @@
         "xdm:POIinteraction": {
           "title": "POI interaction",
           "description": "The point of interest (POI) interaction details.",
-          "meta:status": "experimental",
           "type": "object",
           "properties": {
             "xdm:POIDetail": {
@@ -81,7 +80,6 @@
         "xdm:activePOIs": {
           "title": "POI detail",
           "description": "Details of the points of interest (POIs) that cause the event.",
-          "meta:status": "experimental",
           "type": "array",
           "items": {
             "$ref": "https://ns.adobe.com/xdm/context/poi-detail"

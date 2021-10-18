@@ -77,6 +77,13 @@ This schema captures privacy, personalization and marketing preferences (consent
               "xdm:val": "y"
             }
           }
+        },
+        "johnny@company.com": {
+          "xdm:marketing": {
+            "xdm:email": {
+              "xdm:val": "n"
+            }
+          }
         }
       }
     },

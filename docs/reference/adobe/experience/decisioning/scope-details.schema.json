@@ -43,7 +43,6 @@
                     "meta:descriptionId": "scope-details##xdm:activity##description##781"
                 },
                 "xdm:interactionMeasurements": {
-                    "meta:status": "experimental",
                     "type": "array",
                     "items": {
                         "$ref": "https://ns.adobe.com/experience/decisioning/interaction-measurement"

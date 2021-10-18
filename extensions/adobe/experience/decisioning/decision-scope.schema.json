@@ -61,5 +61,6 @@
     {
       "required": ["xdm:name", "xdm:activity", "xdm:placement"]
     }
-  ]
+  ],
+  "meta:status": "stable"
 }

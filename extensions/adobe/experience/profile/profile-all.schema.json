@@ -30,6 +30,7 @@
           }
         },
         "https://ns.adobe.com/experience/profile/associatedIdentities": {
+          "meta:status": "deprecated",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

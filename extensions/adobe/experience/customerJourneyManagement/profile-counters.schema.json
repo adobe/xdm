@@ -33,8 +33,9 @@
               "xdm:expiry": {
                 "title": "Profile Counter Expiry",
                 "description": "Represents the TTL for the Profile Counter.",
-                "type": "string",
-                "format": "date-time"
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
               }
             },
             "required": ["xdm:value", "xdm:expiry"]

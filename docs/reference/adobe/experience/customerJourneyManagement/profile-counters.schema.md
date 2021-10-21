@@ -33,7 +33,6 @@ Profile Counter Details as sourced primarily from Distributed Counters Service.
 
 Map<String, Object> of counter_ids to counter details.
 Object value is comprised of a value, and an expiry.
-value and expiry are both of the Long Data Type.
 
 `xdm:counterMap`
 
@@ -58,4 +57,4 @@ Value is an Object containing the counter_value and counter_expiry
 | Property                         | Type   | Required     | Defined by                     |
 | -------------------------------- | ------ | ------------ | ------------------------------ |
 | [value](#countermapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
-| [expiry](#countermapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
+| [expiry](#countermapvalueexpiry) | `string` | **Required** | profile-counters (this) Schema       |

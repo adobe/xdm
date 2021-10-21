@@ -1,6 +1,9 @@
 {
   "xdm:xid": "xid-92312748749128",
   "xdm:counterMap": {
-    "counter_id": { "value": 100, "expiry": 1828377772381 }
+    "counter_id": {
+      "xdm:value": 100,
+      "xdm:expiry": "2019-01-09 00:00:00"
+    }
   }
 }

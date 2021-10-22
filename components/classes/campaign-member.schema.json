@@ -69,7 +69,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details-exp"
     },
     {
       "$ref": "#/definitions/campaign-member"

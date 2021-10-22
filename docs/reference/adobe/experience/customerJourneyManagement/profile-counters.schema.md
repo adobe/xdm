@@ -29,7 +29,7 @@ Profile Counter Details as sourced primarily from Distributed Counters Service.
 
 ## xdm:frequencyMap
 
-### Counter Map
+### Frequency Map
 
 Map<String, Object> of counter_ids to counter details.
 Object value is comprised of a value, and an expiry.
@@ -41,7 +41,7 @@ value and expiry are both of the Long Data Type.
 - type: `map`
 - defined in this schema
 
-#### Counter Map Properties
+#### Frequency Map Properties
 
 ```
 Implicit key is String which represents the counter_id

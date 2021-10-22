@@ -90,7 +90,7 @@
       "$ref": "#/definitions/opportunity"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details-exp"
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "meta:status": "stable",

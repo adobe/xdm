@@ -60,9 +60,9 @@
     },
     {
       "required": [
-        "xdm:name",
-        "xdm:activity",
-        "xdm:placement"
+        "https://ns.adobe.com/experience/decisioning/name",
+        "https://ns.adobe.com/experience/decisioning/activity",
+        "https://ns.adobe.com/experience/decisioning/placement"
       ]
     }
   ],

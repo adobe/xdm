@@ -28,7 +28,7 @@
         },
         "https://ns.adobe.com/experience/decisioning/description": {
           "type": "string",
-          "title": "Description",
+          "title": "Scope Description",
           "description": "Scope description. It is used to convey human readable intentions on the context of the decision being requested."
         },
         "https://ns.adobe.com/experience/decisioning/activity": {

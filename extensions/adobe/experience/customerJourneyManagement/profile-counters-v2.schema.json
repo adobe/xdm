@@ -6,7 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters-v2",
   "title": "Profile Counters Mixin Extension",
   "description": "Holds a map of objects containing counter_value and expiryDate, keyed by counter_id.",
   "type": "object",

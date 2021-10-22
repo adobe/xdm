@@ -21,29 +21,29 @@
           "type": "string",
           "description": "The revision that the decision scope object was at when the snapshot was taken."
         },
-        "xdm:name": {
+        "https://ns.adobe.com/experience/decisioning/name": {
           "type": "string",
           "title": "Scope Name",
           "description": "The Scope's external human-readable representation to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
         },
-        "xdm:description": {
+        "https://ns.adobe.com/experience/decisioning/description": {
           "type": "string",
           "title": "Description",
           "description": "Scope description. It is used to convey human readable intentions on the context of the decision being requested."
         },
-        "xdm:activity": {
+        "https://ns.adobe.com/experience/decisioning/activity": {
           "type": "string",
           "format": "uri-reference",
           "title": "Activity Id",
           "description": "@id of offer-activity (part of activity-placement pair defining scope)."
         },
-        "xdm:placement": {
+        "https://ns.adobe.com/experience/decisioning/placement": {
           "type": "string",
           "format": "uri-reference",
           "title": "Placement Id",
           "description": "@id of placement name (part of activity-placement pair defining scope)."
         },
-        "xdm:itemCount": {
+        "https://ns.adobe.com/experience/decisioning/itemCount": {
           "type": "integer",
           "title": "Item Count",
           "description": "Count of max number of responses."
@@ -59,7 +59,11 @@
       "$ref": "#/definitions/decision-scope"
     },
     {
-      "required": ["xdm:name", "xdm:activity", "xdm:placement"]
+      "required": [
+        "xdm:name",
+        "xdm:activity",
+        "xdm:placement"
+      ]
     }
   ],
   "meta:status": "stable"

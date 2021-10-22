@@ -1,61 +1,72 @@
-# Adobe Unified Profile Counters Extension -- Schema
+
+# Profile Counters Mixin Extension Schema
+
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/profile-counters
 ```
 
-Profile Counter Details as sourced primarily from Distributed Counters Service.
+Holds a map of objects containing counter_value and counter_expiry, keyed by counter_id.
 
-| [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In                                                                                                                                         |
-| ----------------------------------- | --------------------------------------- | ------------------------------- | --------------------------------- | ---------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Can be instantiated                 | Yes                                     | Experimental                    | No                                | Forbidden                                      | Permitted                                          | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
+| [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
+|-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
 
-## Schema Hierarchy
+## Profile Counters Mixin Extension Examples
 
-- Adobe Unified Profile Counters Extension `https://ns.adobe.com/experience/customerJourneyManagement/profile-counters`
-  - [Profile schema](../../../classes/profile.schema.json) `https://ns.adobe.com/xdm/context/identity`
-    - [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible` 
-    
+```json
+{
+  "xdm:namespace": {
+    "xdm:code": "ECID"
+  },
+  "xdm:id": "92312748749128",
+  "xdm:frequencyMap": {
+    "counter_id": {
+      "xdm:value": 100,
+      "xdm:expiry": 1828377772381
+    }
+  }
+}
+```
 
-# Adobe Unified Profile Counters Extension Properties
+```json
+{
+  "xdm:xid": "xid-92312748749128",
+  "xdm:frequencyMap": {
+    "counter_id": {
+      "xdm:value": 100,
+      "xdm:expiry": 1828377772381
+    }
+  }
+}
+```
 
-| Property                         | Type       | Required   | Defined by                                                                        |
-| -------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------- |
-| [xdm:frequencyMap](#xdmfrequencyMap) | `map`      | Required   | profile-counters (this) Schema                             |
-| [xdm:id](#xdmid)               | `string` | **Optional** | IdentityItem Schema https://ns.adobe.com/xdm/context/identityitem           |
-| [xdm:xid](#xdmxid)             | `string` | **Optional** | Identity Schema https://ns.adobe.com/xdm/context/identity               |
-| [xdm:namespace](#xdmnamespace) | `object` | **Optional** | Namespace Schema https://ns.adobe.com/xdm/context/namespace |
-| `*`                            | any      | Additional   | this schema _allows_ additional properties                  |
 
+# Profile Counters Mixin Extension Properties
+
+| Property | Type | Required | Defined by |
+|----------|------|----------|------------|
+| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
+| `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:frequencyMap
 
-### Frequency Map
-
-Map<String, Object> of counter_ids to counter details.
-Object value is comprised of a value, and an expiry.
-value and expiry are both of the Long Data Type.
+A map from counter_id to objects containing counter_value, counter_expiry
 
 `xdm:frequencyMap`
+* is optional
+* type: `object`
+* defined in this schema
 
-- is Required
-- type: `map`
-- defined in this schema
+### xdm:frequencyMap Type
 
-#### Frequency Map Properties
 
-```
-Implicit key is String which represents the counter_id
-Value is an Object containing the counter_value and counter_expiry
-```
+`object` with following properties:
 
-| Property                 | Type     | Required     | Defined by                     |
-| ------------------------ | -------- | ------------ | ------------------------------ |
-| [key](#counterid)        | `string` | **Required** | profile-counters (this) Schema |
-| [value](#counterdetails) | `object` | **Required** | profile-counters (this) Schema     |
 
-##### Value of type Object
+| Property | Type | Required |
+|----------|------|----------|
 
-| Property                         | Type   | Required     | Defined by                     |
-| -------------------------------- | ------ | ------------ | ------------------------------ |
-| [value](#frequencyMapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
-| [expiry](#frequencyMapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
+
+
+
+

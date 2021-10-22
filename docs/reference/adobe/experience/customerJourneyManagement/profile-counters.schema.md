@@ -45,7 +45,7 @@ value and expiry are both of the Long Data Type.
 
 ```
 Implicit key is String which represents the counter_id
-Value is an Object containing the counter_value and counter_expiry
+Value is an Object containing the value and expiry
 ```
 
 | Property                 | Type     | Required     | Defined by                     |
@@ -58,4 +58,4 @@ Value is an Object containing the counter_value and counter_expiry
 | Property                         | Type   | Required     | Defined by                     |
 | -------------------------------- | ------ | ------------ | ------------------------------ |
 | [value](#frequencyMapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
-| [expiry](#frequencyMapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
+| [expiry](#frequencyMapvalueexpiry) | `string` | **Required** | profile-counters (this) Schema       |

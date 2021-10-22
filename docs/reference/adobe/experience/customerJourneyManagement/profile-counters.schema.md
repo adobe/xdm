@@ -20,14 +20,14 @@ Profile Counter Details as sourced primarily from Distributed Counters Service.
 
 | Property                         | Type       | Required   | Defined by                                                                        |
 | -------------------------------- | ---------- | ---------- | --------------------------------------------------------------------------------- |
-| [xdm:counterMap](#xdmcountermap) | `map`      | Required   | profile-counters (this) Schema                             |
+| [xdm:activationFrequencyMap](#xdmactivationfrequencymap) | `map`      | Required   | profile-counters (this) Schema                             |
 | [xdm:id](#xdmid)               | `string` | **Optional** | IdentityItem Schema https://ns.adobe.com/xdm/context/identityitem           |
 | [xdm:xid](#xdmxid)             | `string` | **Optional** | Identity Schema https://ns.adobe.com/xdm/context/identity               |
 | [xdm:namespace](#xdmnamespace) | `object` | **Optional** | Namespace Schema https://ns.adobe.com/xdm/context/namespace |
 | `*`                            | any      | Additional   | this schema _allows_ additional properties                  |
 
 
-## xdm:counterMap
+## xdm:activationFrequencyMap
 
 ### Counter Map
 
@@ -35,7 +35,7 @@ Map<String, Object> of counter_ids to counter details.
 Object value is comprised of a value, and an expiry.
 value and expiry are both of the Long Data Type.
 
-`xdm:counterMap`
+`xdm:activationFrequencyMap`
 
 - is Required
 - type: `map`
@@ -57,5 +57,5 @@ Value is an Object containing the counter_value and counter_expiry
 
 | Property                         | Type   | Required     | Defined by                     |
 | -------------------------------- | ------ | ------------ | ------------------------------ |
-| [value](#countermapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
-| [expiry](#countermapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |
+| [value](#activationfrequencymapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
+| [expiry](#activationfrequencymapvalueexpiry) | `long` | **Required** | profile-counters (this) Schema       |

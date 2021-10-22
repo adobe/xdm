@@ -32,8 +32,8 @@ Profile Counter Details as sourced primarily from Distributed Counters Service.
 ### Frequency Map
 
 Map<String, Object> of counter_ids to counter details.
-Object value is comprised of a value, and an expiry.
-value and expiry are both of the Long Data Type.
+Object value is comprised of a value, and an expiryDate.
+value and expiryDate are both of the Long Data Type.
 
 `xdm:frequencyMap`
 
@@ -45,7 +45,7 @@ value and expiry are both of the Long Data Type.
 
 ```
 Implicit key is String which represents the counter_id
-Value is an Object containing the value and expiry
+Value is an Object containing the value and expiryDate
 ```
 
 | Property                 | Type     | Required     | Defined by                     |
@@ -58,4 +58,4 @@ Value is an Object containing the value and expiry
 | Property                         | Type   | Required     | Defined by                     |
 | -------------------------------- | ------ | ------------ | ------------------------------ |
 | [value](#frequencyMapvaluevalue)   | `long` | **Required** | profile-counters (this) Schema |
-| [expiry](#frequencyMapvalueexpiry) | `string` | **Required** | profile-counters (this) Schema       |
+| [expiry](#frequencyMapvalueexpirydate) | `string` | **Required** | profile-counters (this) Schema       |

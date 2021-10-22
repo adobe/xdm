@@ -9,7 +9,7 @@ Captures properties related to product catalog category.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/product/product-catalog-category.schema.json](fieldgroups/product/product-catalog-category.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/product/product-catalog-category.schema.json](fieldgroups/product/product-catalog-category.schema.json) |
 
 ## Product Catalog Category Example
 ```json

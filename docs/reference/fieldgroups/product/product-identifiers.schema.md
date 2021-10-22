@@ -9,7 +9,7 @@ Captures properties related to product identifiers generic to all industries.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/product/product-identifiers.schema.json](fieldgroups/product/product-identifiers.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/product/product-identifiers.schema.json](fieldgroups/product/product-identifiers.schema.json) |
 
 ## Product Identifiers Example
 ```json

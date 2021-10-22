@@ -16,7 +16,7 @@
   "definitions": {
     "profile-counters": {
       "properties": {
-        "xdm:activationFrequencyMap": {
+        "xdm:frequencyMap": {
           "description": "A map from counter_id to objects containing counter_value, counter_expiry",
           "type": "object",
           "meta:xdmType": "map",
@@ -42,7 +42,7 @@
           }
         }
       },
-      "required": ["xdm:activationFrequencyMap"]
+      "required": ["xdm:frequencyMap"]
     }
   },
   "allOf": [

@@ -29,6 +29,7 @@
               "title": "List ID",
               "type": "string",
               "description": "Unique ID of the Marketing List.",
+              "meta:status": "experimental",
               "meta:titleId": "add-to-list##xdm:listID##title##63411",
               "meta:descriptionId": "add-to-list##xdm:listID##description##49311"
             },
@@ -50,7 +51,7 @@
       "$ref": "#/definitions/addtolist"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "add-to-list##title##73091",
   "meta:descriptionId": "add-to-list##description##75021"

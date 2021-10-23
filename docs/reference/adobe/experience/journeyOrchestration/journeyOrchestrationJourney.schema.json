@@ -58,7 +58,7 @@
             "$ref": "#/definitions/journey"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/experience/journeyOrchestration/journey": {

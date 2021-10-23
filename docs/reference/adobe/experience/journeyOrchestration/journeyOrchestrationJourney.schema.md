@@ -9,7 +9,7 @@ This Mixin will have Common Journey Metadata Fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json) |
 
 ## Journey Orchestration Journey Fields Examples
 

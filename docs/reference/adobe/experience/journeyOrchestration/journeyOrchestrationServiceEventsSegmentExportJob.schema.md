@@ -9,9 +9,23 @@ This event is in relation with journey and Segment Export Job service event fiel
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json) |
 
 ## Journey Orchestration service Events: SegmentExportJob Fields Examples
+
+```json
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "finished",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": 12000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": 12000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": 2000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
+  }
+}
+```
 
 ```json
 {
@@ -31,20 +45,6 @@ This event is in relation with journey and Segment Export Job service event fiel
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_INSTANCE_DUPLICATION"
-  }
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "finished",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": 12000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": 12000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": 2000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
   }
 }
 ```

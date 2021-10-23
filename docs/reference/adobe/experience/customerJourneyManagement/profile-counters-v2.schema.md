@@ -2,14 +2,14 @@
 # Profile Counters Mixin Extension Schema
 
 ```
-https://ns.adobe.com/experience/customerJourneyManagement/profile-counters
+https://ns.adobe.com/experience/customerJourneyManagement/profile-counters-v2
 ```
 
-Holds a map of objects containing counter_value and counter_expiry, keyed by counter_id.
+Holds a map of objects containing counter_value and expiryDate, keyed by counter_id.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters-v2.schema.json](adobe/experience/customerJourneyManagement/profile-counters-v2.schema.json) |
 
 ## Profile Counters Mixin Extension Examples
 
@@ -22,7 +22,7 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
   "xdm:frequencyMap": {
     "counter_id": {
       "xdm:value": 100,
-      "xdm:expiry": 1233214556
+      "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
     }
   }
 }
@@ -30,14 +30,11 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 
 ```json
 {
-  "xdm:namespace": {
-    "xdm:code": "ECID"
-  },
-  "xdm:id": "92312748749128",
+  "xdm:xid": "xid-92312748749128",
   "xdm:frequencyMap": {
     "counter_id": {
       "xdm:value": 100,
-      "xdm:expiry": 1233214556
+      "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
     }
   }
 }
@@ -53,7 +50,7 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 
 ## xdm:frequencyMap
 
-A map from counter_id to objects containing counter_value, counter_expiry
+A map from counter_id to objects containing counter_value, expiryDate
 
 `xdm:frequencyMap`
 * is optional

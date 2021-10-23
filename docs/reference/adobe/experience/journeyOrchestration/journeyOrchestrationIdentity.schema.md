@@ -9,7 +9,7 @@ This event is in relation with journey and describe the profile Identifiers
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationIdentity.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationIdentity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationIdentity.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationIdentity.schema.json) |
 
 ## Journey Orchestration Identity Fields Example
 ```json

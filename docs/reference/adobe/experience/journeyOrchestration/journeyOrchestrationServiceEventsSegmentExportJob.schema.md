@@ -9,7 +9,7 @@ This event is in relation with journey and Segment Export Job service event fiel
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json) |
 
 ## Journey Orchestration service Events: SegmentExportJob Fields Examples
 

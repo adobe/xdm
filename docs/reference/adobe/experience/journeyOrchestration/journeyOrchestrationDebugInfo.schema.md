@@ -9,7 +9,7 @@ This event is in relation with journey and describes the debug related fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationDebugInfo.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationDebugInfo.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationDebugInfo.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationDebugInfo.schema.json) |
 
 ## Journey Orchestration debug Fields Example
 ```json

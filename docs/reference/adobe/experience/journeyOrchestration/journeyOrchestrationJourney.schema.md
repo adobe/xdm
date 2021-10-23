@@ -9,18 +9,9 @@ This Mixin will have Common Journey Metadata Fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationJourney.schema.json) |
 
 ## Journey Orchestration Journey Fields Examples
-
-```json
-{
-  "https://ns.adobe.com/experience/journeyOrchestration/journey": {
-    "https://ns.adobe.com/experience/journeyOrchestration/versionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441"
-  }
-}
-```
 
 ```json
 {
@@ -30,6 +21,15 @@ This Mixin will have Common Journey Metadata Fields
     "https://ns.adobe.com/experience/journeyOrchestration/name": "My Journey",
     "https://ns.adobe.com/experience/journeyOrchestration/description": "My journey description",
     "https://ns.adobe.com/experience/journeyOrchestration/version": "1.0"
+  }
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/journey": {
+    "https://ns.adobe.com/experience/journeyOrchestration/versionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441"
   }
 }
 ```

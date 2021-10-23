@@ -45,7 +45,7 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
+| [xdm:frequencyMap](#xdmfrequencyMap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:frequencyMap
@@ -62,10 +62,10 @@ A map from counter_id to objects containing counter_value, counter_expiry
 
 `object` with following properties:
 
-
-| Property | Type | Required |
-|----------|------|----------|
-
+| Property                         | Type   | Required     | Defined by                     |
+| -------------------------------- | ------ | ------------ | ------------------------------ |
+| [value](#frequencyMapvalue)   | `long` | **Required** | profile-counters (this) Schema |
+| [expiry](#frequencyMapexpiry) | `string` | **Required** | profile-counters (this) Schema       |
 
 
 

@@ -54,6 +54,7 @@
           "title": "Person ID",
           "description": "Unique identifier for the person in this opportunity person relationship.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:personID##title##46151",
           "meta:descriptionId": "opportunity-person##xdm:personID##description##65611"
         },
@@ -61,7 +62,6 @@
           "title": "Person Key",
           "description": "Unique composite identifier of the Person related to the Opportunity.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
-          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:personKey##title##70011",
           "meta:descriptionId": "opportunity-person##xdm:personKey##description##78081"
         },

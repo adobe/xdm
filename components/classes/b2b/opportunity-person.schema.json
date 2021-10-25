@@ -61,6 +61,7 @@
           "title": "Person Key",
           "description": "Unique composite identifier of the Person related to the Opportunity.",
           "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:personKey##title##70011",
           "meta:descriptionId": "opportunity-person##xdm:personKey##description##78081"
         },

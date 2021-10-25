@@ -1,0 +1,70 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/decision-scope",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:abstract": false,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Scope",
+  "description": "A Scope is basically a pair consisting of an offer activity id and an offer placement id. They are used to encapsulate a specific decisioning request.",
+  "definitions": {
+    "decision-scope": {
+      "properties": {
+        "repo:etag": {
+          "title": "Decision Scope ETag",
+          "type": "string",
+          "description": "The revision that the decision scope object was at when the snapshot was taken."
+        },
+        "https://ns.adobe.com/experience/decisioning/name": {
+          "type": "string",
+          "title": "Scope Name",
+          "description": "The Scope's external human-readable representation to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing"
+        },
+        "https://ns.adobe.com/experience/decisioning/description": {
+          "type": "string",
+          "title": "Scope Description",
+          "description": "Scope description. It is used to convey human readable intentions on the context of the decision being requested."
+        },
+        "https://ns.adobe.com/experience/decisioning/activity": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Activity Id",
+          "description": "@id of offer-activity (part of activity-placement pair defining scope)."
+        },
+        "https://ns.adobe.com/experience/decisioning/placement": {
+          "type": "string",
+          "format": "uri-reference",
+          "title": "Placement Id",
+          "description": "@id of placement name (part of activity-placement pair defining scope)."
+        },
+        "https://ns.adobe.com/experience/decisioning/itemCount": {
+          "type": "integer",
+          "title": "Item Count",
+          "description": "Count of max number of responses."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/decision-scope"
+    },
+    {
+      "required": [
+        "https://ns.adobe.com/experience/decisioning/name",
+        "https://ns.adobe.com/experience/decisioning/activity",
+        "https://ns.adobe.com/experience/decisioning/placement"
+      ]
+    }
+  ],
+  "meta:status": "stable"
+}

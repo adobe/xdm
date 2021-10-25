@@ -1,9 +1,12 @@
 {
-  "xdm:xid": "xid-92312748749128",
+  "xdm:namespace": {
+    "xdm:code": "ECID"
+  },
+  "xdm:id": "92312748749128",
   "xdm:frequencyMap": {
     "counter_id": {
       "xdm:value": 100,
-      "xdm:expiry": 1828377772381
+      "xdm:expiry": 1233214556
     }
   }
 }

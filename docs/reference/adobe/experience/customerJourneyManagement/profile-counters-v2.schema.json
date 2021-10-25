@@ -6,9 +6,9 @@
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters",
+    "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters-v2",
     "title": "Profile Counters Mixin Extension",
-    "description": "Holds a map of objects containing counter_value and counter_expiry, keyed by counter_id.",
+    "description": "Holds a map of objects containing counter_value and expiryDate, keyed by counter_id.",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -19,7 +19,7 @@
         "profile-counters": {
             "properties": {
                 "xdm:frequencyMap": {
-                    "description": "A map from counter_id to objects containing counter_value, counter_expiry",
+                    "description": "A map from counter_id to objects containing counter_value, expiryDate",
                     "type": "object",
                     "meta:xdmType": "map",
                     "additionalProperties": {
@@ -32,17 +32,16 @@
                                 "minimum": 1,
                                 "maximum": 9007199254740991
                             },
-                            "xdm:expiry": {
+                            "xdm:expiryDate": {
                                 "title": "Profile Counter Expiry",
                                 "description": "Represents the TTL for the Profile Counter.",
-                                "type": "integer",
-                                "minimum": 0,
-                                "maximum": 9007199254740991
+                                "type": "string",
+                                "format": "date-time"
                             }
                         },
                         "required": [
                             "xdm:value",
-                            "xdm:expiry"
+                            "xdm:expiryDate"
                         ]
                     }
                 }
@@ -70,19 +69,16 @@
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,
-                    "xdm:expiry": 1233214556
+                    "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
                 }
             }
         },
         {
-            "xdm:namespace": {
-                "xdm:code": "ECID"
-            },
-            "xdm:id": "92312748749128",
+            "xdm:xid": "xid-92312748749128",
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,
-                    "xdm:expiry": 1233214556
+                    "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
                 }
             }
         }

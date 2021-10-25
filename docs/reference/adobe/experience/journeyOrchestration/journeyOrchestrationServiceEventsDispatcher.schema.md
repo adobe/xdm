@@ -9,7 +9,7 @@ This event is in relation with journey and dispatcher service event fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsDispatcher.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsDispatcher.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsDispatcher.schema.json](adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsDispatcher.schema.json) |
 
 ## Journey Orchestration service Events: Dispatcher Fields Example
 ```json

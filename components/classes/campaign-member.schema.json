@@ -36,6 +36,7 @@
           "title": "Campaign ID",
           "description": "Campaign Unique Identifer.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
           "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741"
         },

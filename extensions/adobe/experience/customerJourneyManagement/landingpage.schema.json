@@ -11,8 +11,6 @@
   "description": "Details about landing page and data input by user in it",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
     "landingpage": {
       "properties": {
@@ -21,10 +19,20 @@
           "type": "string",
           "description": "Unique Identifier for Landing Page."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/messageChannel": {
-          "title": "Message Channel",
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/source": {
+          "title": "Landing Page source",
           "type": "string",
-          "description": "Channel at which link of this landing page was sent"
+          "description": "Source through which landing page was clicked. Value can be journey or others"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/sourceType": {
+          "title": "Landing Page source type",
+          "type": "string",
+          "description": "Type of the source. This can be internal. meaning internal to adobe, or external",
+          "enum": ["internal", "external"],
+          "meta:enum": {
+            "internal": "Source is internal to Adobe",
+            "external": "Source is external to Adobe"
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/name": {
           "title": "Landing Page Name",

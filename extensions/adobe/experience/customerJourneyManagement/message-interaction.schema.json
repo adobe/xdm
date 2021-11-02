@@ -25,7 +25,9 @@
             "open",
             "unsubscribe",
             "spam_complaint",
-            "subscription"
+            "subscription",
+            "submit",
+            "visit"
           ],
           "meta:enum": {
             "click": "Message link clicked.",
@@ -36,6 +38,16 @@
           },
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType": {
+          "title": "The entity in whose context this event is published",
+          "type": "string",
+          "description": "Specify action made by user on a message.",
+          "enum": ["landing_page", "message"],
+          "meta:enum": {
+            "landing_page": "Event is related to landing page entity",
+            "message": "Event is related to message entity"
+          }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {
           "title": "Tracker URL ID",
@@ -74,6 +86,12 @@
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message interaction."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage": {
+          "title": "Landing Page Details",
+          "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/landingpage",
+          "description": "Describes landing pages(s) involved in a message interaction."
+        },
+
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
           "title": "Subscription Details",
           "type": "object",

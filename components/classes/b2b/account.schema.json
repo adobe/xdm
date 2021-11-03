@@ -16,7 +16,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Business Account.",
+  "description": "An XDM Business Account. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
   "definitions": {
     "account": {
       "properties": {

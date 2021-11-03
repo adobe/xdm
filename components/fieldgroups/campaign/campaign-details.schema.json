@@ -24,6 +24,7 @@
           "title": "Parent Campaign ID",
           "description": "Member type and associated reference ID.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "campaign-details##xdm:parentCampaignID##title##3341",
           "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##9571"
         },
@@ -179,7 +180,7 @@
       "$ref": "#/definitions/campaign-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-09-29",
   "meta:titleId": "campaign-details##title##42341",
   "meta:descriptionId": "campaign-details##description##51611"

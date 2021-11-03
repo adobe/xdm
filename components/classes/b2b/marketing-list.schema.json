@@ -23,6 +23,7 @@
           "title": "Marketing List ID",
           "description": "Unique ID of the marketing list.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
           "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
         },
@@ -64,7 +65,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "marketing-list##title##32631",
   "meta:descriptionId": "marketing-list##description##65341"
 }

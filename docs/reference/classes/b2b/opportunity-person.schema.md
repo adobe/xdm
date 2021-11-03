@@ -9,7 +9,7 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Opportunity Person Relation `https://ns.adobe.com/xdm/classes/opportunity-person`

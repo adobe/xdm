@@ -9,7 +9,7 @@ This Mixin is used to capture B2B Person specific relationship attributes and ot
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/profile/b2b-person-components.schema.json](fieldgroups/profile/b2b-person-components.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/b2b-person-components.schema.json](fieldgroups/profile/b2b-person-components.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Person Components `https://ns.adobe.com/xdm/mixins/b2b-person-components`

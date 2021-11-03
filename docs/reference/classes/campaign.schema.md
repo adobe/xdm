@@ -9,7 +9,7 @@ This class is used to capture minimum properties that are required to define xdm
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/campaign.schema.json](classes/campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/campaign.schema.json](classes/campaign.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Campaign `https://ns.adobe.com/xdm/classes/campaign`

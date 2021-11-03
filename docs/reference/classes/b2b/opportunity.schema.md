@@ -9,7 +9,7 @@ This class is used to capture minimum set of properties that define business opp
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/opportunity.schema.json](classes/b2b/opportunity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/opportunity.schema.json](classes/b2b/opportunity.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Opportunity `https://ns.adobe.com/xdm/context/opportunity`

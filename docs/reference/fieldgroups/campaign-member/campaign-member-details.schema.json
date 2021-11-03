@@ -75,6 +75,7 @@
                     "title": "Acquired By CampaignID",
                     "description": "",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##51731",
                     "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##39701"
                 },
@@ -138,7 +139,7 @@
             "$ref": "#/definitions/campaign-member-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-08-18",
     "meta:titleId": "campaign-member-details##title##66341",
     "meta:descriptionId": "campaign-member-details##description##40731",

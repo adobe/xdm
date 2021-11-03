@@ -21,6 +21,7 @@
           "title": "Campaign ID",
           "description": "Unique identifer for campaign.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "campaign##xdm:campaignID##title##56561",
           "meta:descriptionId": "campaign##xdm:campaignID##description##21251"
         },
@@ -69,7 +70,7 @@
       "$ref": "#/definitions/campaign"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-09-29",
   "meta:titleId": "campaign##title##40111",
   "meta:descriptionId": "campaign##description##58771"

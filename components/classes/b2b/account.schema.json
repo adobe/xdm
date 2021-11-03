@@ -24,6 +24,7 @@
           "title": "Account Identifier",
           "description": "Unique ID for the account.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "account##xdm:accountID##title##59121",
           "meta:descriptionId": "account##xdm:accountID##description##27991"
         },
@@ -51,7 +52,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "account##title##4841",
   "meta:descriptionId": "account##description##65781"
 }

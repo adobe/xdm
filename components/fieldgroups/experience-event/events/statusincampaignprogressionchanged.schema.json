@@ -33,6 +33,7 @@
                   "title": "Campaign ID",
                   "type": "string",
                   "description": "Unique identifier of the Campaign.",
+                  "meta:status": "experimental",
                   "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##82611",
                   "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##92571"
                 },
@@ -106,7 +107,7 @@
       "$ref": "#/definitions/statusincampaignprogressionchanged"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-01-14",
   "meta:titleId": "statusincampaignprogressionchanged##title##14221",
   "meta:descriptionId": "statusincampaignprogressionchanged##description##13771"

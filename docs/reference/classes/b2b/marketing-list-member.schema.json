@@ -17,7 +17,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "description": "Members/Persons/Contacts etc. associated with a marketing list.",
+    "description": "Members/Persons/Contacts etc. associated with a marketing list. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
     "definitions": {
         "marketing-list-member": {
             "properties": {

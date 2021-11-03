@@ -9,7 +9,7 @@ Captures and maintains additional opportunity attributes that are used by indust
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/opportunity/opportunity-details.schema.json](fieldgroups/opportunity/opportunity-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/opportunity/opportunity-details.schema.json](fieldgroups/opportunity/opportunity-details.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Opportunity Details `https://ns.adobe.com/xdm/mixins/opportunity-details`

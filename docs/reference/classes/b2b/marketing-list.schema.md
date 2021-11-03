@@ -9,7 +9,7 @@ Marketing list allows you to prioritize on prospect clients who are most likely 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/marketing-list.schema.json](classes/b2b/marketing-list.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/marketing-list.schema.json](classes/b2b/marketing-list.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Marketing List `https://ns.adobe.com/xdm/classes/marketing-list`

@@ -23,6 +23,7 @@
                     "title": "Campaign Member ID",
                     "description": "Campaign Member unique identifer.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
                     "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351"
                 },
@@ -37,6 +38,7 @@
                     "title": "Campaign ID",
                     "description": "Campaign Unique Identifer.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
                     "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741"
                 },
@@ -51,6 +53,7 @@
                     "title": "Person ID",
                     "description": "Person unique identifier.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "campaign-member##xdm:personID##title##80381",
                     "meta:descriptionId": "campaign-member##xdm:personID##description##74641"
                 },
@@ -75,7 +78,7 @@
             "$ref": "#/definitions/campaign-member"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-08-18",
     "meta:titleId": "campaign-member##title##30961",
     "meta:descriptionId": "campaign-member##description##56301",

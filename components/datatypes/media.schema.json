@@ -810,6 +810,21 @@
               "description": "Defines the time of the day when the content was broadcast or played.",
               "meta:titleId": "media##xdm:dayPart##title##16131",
               "meta:descriptionId": "media##xdm:dayPart##description##85731"
+            },
+            "xdm:recordLabel": {
+              "title": "Record label",
+              "type": "string",
+              "description": "Name of the record label."
+            },
+            "xdm:radioStation": {
+              "title": "Radio station",
+              "type": "string",
+              "description": "Name / ID of the radio station."
+            },
+            "dc:publisher": {
+              "title": "Audio content publisher",
+              "type": "string",
+              "description": "Name of the audio content publisher."
             }
           },
           "required": ["xdm:primaryAssetReference"],

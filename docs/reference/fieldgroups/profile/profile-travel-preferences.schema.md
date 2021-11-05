@@ -9,7 +9,7 @@ Tracks a user's travel preferences, including home airport code, meal preference
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/profile/profile-travel-preferences.schema.json](fieldgroups/profile/profile-travel-preferences.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/profile-travel-preferences.schema.json](fieldgroups/profile/profile-travel-preferences.schema.json) |
 
 ## Travel Preferences Example
 ```json
@@ -67,7 +67,7 @@ Captures details related to the users's travel preferences.
 | `xdm:roomService`| boolean | Optional |
 | `xdm:roomType`| string | Optional |
 | `xdm:seat`| string | Optional |
-| `xdm:seatSection `| string | Optional |
+| `xdm:seatSection`| string | Optional |
 | `xdm:smokingRoom`| boolean | Optional |
 | `xdm:smokingVehicle`| boolean | Optional |
 | `xdm:ticketDelivery`| string | Optional |
@@ -396,18 +396,18 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-#### xdm:seatSection 
+#### xdm:seatSection
 ##### Seat Section
 
 Captures the user's preferred seat sectionfor flights.
 
-`xdm:seatSection `
+`xdm:seatSection`
 * is optional
 * type: `enum`
 
 The value of this property **must** be equal to one of the [known values below](#xdmtravelpreferences-known-values).
 
-##### xdm:seatSection  Known Values
+##### xdm:seatSection Known Values
 | Value | Description |
 |-------|-------------|
 | `noPreference` |  |

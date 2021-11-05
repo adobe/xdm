@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/classes/opportunity-person
 ```
 
-This class is used to capture XDM Business Opportunity Person Relationship attributes.
+XDM Business Opportunity Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Opportunity Person Relation `https://ns.adobe.com/xdm/classes/opportunity-person`

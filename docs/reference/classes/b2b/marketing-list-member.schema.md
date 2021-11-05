@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/classes/marketing-list-member
 ```
 
-Members/Persons/Contacts etc. associated with a marketing list. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.
+XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

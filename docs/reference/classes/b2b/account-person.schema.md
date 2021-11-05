@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/classes/account-person
 ```
 
-This class is used to capture XDM business account person relationship attributes. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.
+XDM Business Account Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

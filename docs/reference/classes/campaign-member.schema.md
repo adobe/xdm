@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/context/campaign-member
 ```
 
-An XDM Business Campaign Member,which relates members such as contact/lead to a campaign.
+XDM Business Campaign Members is a standard Experience Data Model (XDM) class that describes a contact or lead associated with a business campaign. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|

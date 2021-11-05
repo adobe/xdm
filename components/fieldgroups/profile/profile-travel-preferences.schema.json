@@ -37,7 +37,7 @@
               "meta:titleId": "travel-preferences##xdm:seat##title##40251",
               "meta:descriptionId": "travel-preferences##xdm:seat##description##20281"
             },
-            "xdm:seatSection ": {
+            "xdm:seatSection": {
               "title": "Seat Section",
               "type": "string",
               "enum": [
@@ -310,7 +310,7 @@
       "$ref": "#/definitions/travel-preferences"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "travel-preferences##title##82371",
   "meta:descriptionId": "travel-preferences##description##2511"
 }

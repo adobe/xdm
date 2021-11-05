@@ -29,6 +29,7 @@
                             "title": "Opportunity ID",
                             "type": "string",
                             "description": "Unique identifier of the Opportunity.",
+                            "meta:status": "experimental",
                             "meta:titleId": "remove-from-opportunity##xdm:opportunityID##title##50331",
                             "meta:descriptionId": "remove-from-opportunity##xdm:opportunityID##description##41791"
                         },
@@ -64,7 +65,7 @@
             "$ref": "#/definitions/removefromopportunity"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2021-02-19",
     "meta:titleId": "remove-from-opportunity##title##79971",
     "meta:descriptionId": "remove-from-opportunity##description##46521",

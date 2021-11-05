@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",
+  "description": "XDM Business Marketing List is a standard Experience Data Model (XDM) class that captures the minimum required properties of a marketing list. Marketing lists allow you to prioritize on prospect clients who are most likely to buy your product. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
   "definitions": {
     "marketing-list": {
       "properties": {
@@ -23,6 +23,7 @@
           "title": "Marketing List ID",
           "description": "Unique ID of the marketing list.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
           "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891"
         },
@@ -64,7 +65,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "marketing-list##title##32631",
   "meta:descriptionId": "marketing-list##description##65341"
 }

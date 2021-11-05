@@ -821,7 +821,7 @@
               "type": "string",
               "description": "Name / ID of the radio station."
             },
-            "dc:publisher": {
+            "xdm:publisher": {
               "title": "Audio content publisher",
               "type": "string",
               "description": "Name of the audio content publisher."

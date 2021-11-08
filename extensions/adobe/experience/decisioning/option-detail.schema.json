@@ -74,7 +74,7 @@
         "xdm:optionContent": {
           "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details",
           "title": "Option Content",
-          "description": "Additional properties or attributed related to offer content"
+          "description": "Additional properties or attributes related to offer content"
         },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",

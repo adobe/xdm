@@ -71,6 +71,11 @@
           "meta:titleId": "option-detail##xdm:score##title##67651",
           "meta:descriptionId": "option-detail##xdm:score##description##18371"
         },
+        "xdm:optionContent": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details",
+          "title": "Option Content",
+          "description": "Additional properties or attributed related to offer content"
+        },
         "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The total number a particular option was proposed so far across all profiles.",

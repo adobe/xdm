@@ -1,0 +1,21 @@
+{
+  "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
+  "xdm:name": "Introduction to machine learning",
+  "xdm:characteristics": {
+    "duration": "30",
+    "level": "intermediate",
+    "format": "Syllable"
+  },
+  "xdm:score": 90,
+  "xdm:optionContent": {
+    "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
+    "dc:format": "text/x-handlebars-template+html",
+    "dc:language": ["en"]
+  },
+  "xdm:propositionsTotal": {
+    "xdm:value": 5000
+  },
+  "xdm:propositionsProfile": {
+    "xdm:value": 3
+  }
+}

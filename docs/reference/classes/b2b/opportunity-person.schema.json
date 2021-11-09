@@ -18,7 +18,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+    "description": "XDM Business Opportunity Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
     "definitions": {
         "opportunity-person": {
             "properties": {

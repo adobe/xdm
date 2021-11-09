@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/classes/campaign
 ```
 
-This class is used to capture minimum properties that are required to define xdm business campaign concept.
+XDM Business Campaign is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business campaign. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/campaign.schema.json](classes/campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/campaign.schema.json](classes/campaign.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Campaign `https://ns.adobe.com/xdm/classes/campaign`

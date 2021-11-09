@@ -72,6 +72,7 @@
                             "title": "Contact Account id",
                             "description": "ID of the account that’s the parent of this person.",
                             "type": "string",
+                            "meta:status": "experimental",
                             "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",
                             "meta:descriptionId": "b2b-person-details##xdm:accountID##description##71731"
                         },
@@ -129,6 +130,7 @@
                             "title": "Converted Contact ID",
                             "description": "Contact Id if the lead was successfully converted.",
                             "type": "string",
+                            "meta:status": "experimental",
                             "meta:titleId": "b2b-person-details##xdm:convertedContactID##title##61351",
                             "meta:descriptionId": "b2b-person-details##xdm:convertedContactID##description##27071"
                         },
@@ -198,7 +200,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-09-09",
     "meta:titleId": "b2b-person-details##title##98781",
     "meta:descriptionId": "b2b-person-details##description##71241",

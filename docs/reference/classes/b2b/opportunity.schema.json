@@ -18,7 +18,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "description": "This class is used to capture minimum set of properties that define business opportunity.",
+    "description": "XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
     "definitions": {
         "opportunity": {
             "properties": {
@@ -26,6 +26,7 @@
                     "title": "Opportunity ID",
                     "description": "Unique ID of the opportunity.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "opportunity##xdm:opportunityID##title##121",
                     "meta:descriptionId": "opportunity##xdm:opportunityID##description##45451"
                 },
@@ -68,6 +69,7 @@
                     "title": "Account ID",
                     "description": "Unique ID of the account this opportunity is associated with.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "opportunity##xdm:accountID##title##77231",
                     "meta:descriptionId": "opportunity##xdm:accountID##description##71091"
                 },
@@ -95,7 +97,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:titleId": "opportunity##title##26231",
     "meta:descriptionId": "opportunity##description##20011",
     "examples": [

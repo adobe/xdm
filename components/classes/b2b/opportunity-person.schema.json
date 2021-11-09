@@ -16,7 +16,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "This class is used to capture XDM Business Opportunity Person Relationship attributes.",
+  "description": "XDM Business Opportunity Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
   "definitions": {
     "opportunity-person": {
       "properties": {
@@ -24,6 +24,7 @@
           "title": "Opportunity Person ID",
           "description": "Unique identifier for the relationship between the opportunity and the person.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##79401",
           "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##50531"
         },
@@ -38,6 +39,7 @@
           "title": "Opportunity ID",
           "description": "Unique identifier for the opportunity in this opportunity person relationship.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:opportunityID##title##51071",
           "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##11071"
         },
@@ -52,6 +54,7 @@
           "title": "Person ID",
           "description": "Unique identifier for the person in this opportunity person relationship.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:personID##title##46151",
           "meta:descriptionId": "opportunity-person##xdm:personID##description##65611"
         },
@@ -93,7 +96,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "opportunity-person##title##52421",
   "meta:descriptionId": "opportunity-person##description##46071"
 }

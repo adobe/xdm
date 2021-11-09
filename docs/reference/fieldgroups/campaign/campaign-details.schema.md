@@ -9,7 +9,7 @@ Captures properties related to business campaign details.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/campaign/campaign-details.schema.json](fieldgroups/campaign/campaign-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/campaign/campaign-details.schema.json](fieldgroups/campaign/campaign-details.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Campaign Details `https://ns.adobe.com/xdm/mixins/campaign-details`

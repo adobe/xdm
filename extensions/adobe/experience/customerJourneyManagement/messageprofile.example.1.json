@@ -3,9 +3,9 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestProfile": true,
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestProfile": false,
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"

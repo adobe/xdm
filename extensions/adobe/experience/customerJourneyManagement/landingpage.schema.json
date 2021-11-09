@@ -14,7 +14,7 @@
   "definitions": {
     "landingpage": {
       "properties": {
-        "xdm:landingPageID": {
+        "xdm:landingpageID": {
           "title": "Landing Page ID",
           "type": "string",
           "description": "Unique Identifier for Landing Page."

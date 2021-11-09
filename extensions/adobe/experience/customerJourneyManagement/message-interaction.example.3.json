@@ -1,0 +1,36 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "submit",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "tracked",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/entityType": "landing_page",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
+    "xdm:landingpageID": "1234",
+    "xdm:source": "journey",
+    "xdm:sourceType": "internal",
+    "xdm:name": "December Offers",
+    "xdm:inputDetails": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "city": "New York City"
+    },
+    "xdm:additionalContext": {
+      "offer-campaign": "Christmas-offers",
+      "productCategory": "electronics"
+    },
+    "xdm:subscriptions": [
+      {
+        "subscriptionID": "iPhone13-offers",
+        "type": "email",
+        "subscriberAddress": "johndoe@gmail.com",
+        "subscriptionChoice": "yes"
+      },
+      {
+        "subscriptionID": "Xbox-offers",
+        "type": "email",
+        "subscriberAddress": "johndoe@gmail.com",
+        "subscriptionChoice": "no"
+      }
+    ]
+  }
+}

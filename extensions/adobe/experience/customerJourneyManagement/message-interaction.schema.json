@@ -86,10 +86,10 @@
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
           "description": "Describes offer(s) involved in a message interaction."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
           "title": "Landing Page Details",
           "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/landingpage",
-          "description": "Describes landing pages(s) involved in a message interaction."
+          "description": "Describes landing pages involved in a message interaction."
         },
 
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {

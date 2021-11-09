@@ -14,17 +14,17 @@
   "definitions": {
     "landingpage": {
       "properties": {
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/id": {
+        "xdm:landingPageID": {
           "title": "Landing Page ID",
           "type": "string",
           "description": "Unique Identifier for Landing Page."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/source": {
+        "xdm:source": {
           "title": "Landing Page source",
           "type": "string",
           "description": "Source through which landing page was clicked. Value can be journey or others"
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/sourceType": {
+        "xdm:sourceType": {
           "title": "Landing Page source type",
           "type": "string",
           "description": "Type of the source. This can be internal. meaning internal to adobe, or external",
@@ -34,12 +34,12 @@
             "external": "Source is external to Adobe"
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/name": {
+        "xdm:name": {
           "title": "Landing Page Name",
           "type": "string",
           "description": "Name of Landing Page."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/inputDetails": {
+        "xdm:inputDetails": {
           "title": "Landing Page Input",
           "type": "object",
           "meta:xdmType": "map",
@@ -48,7 +48,7 @@
             "description": "Details Input by user in the landing page."
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/additionalContext": {
+        "xdm:additionalContext": {
           "title": "Landing Page Additional Context",
           "type": "object",
           "meta:xdmType": "map",
@@ -57,29 +57,29 @@
             "description": "Pass through additional data entered by marketer at the time of authoring the landing page."
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions": {
+        "xdm:subscriptions": {
           "title": "Subscriptions details entered by the user",
           "description": "Subscription details entered by the user",
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/id": {
+              "xdm:subscriptionID": {
                 "title": "Subscription ID",
                 "type": "string",
                 "description": "Unique Identifier for Subscription"
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/type": {
+              "xdm:type": {
                 "title": "Subscription Type",
                 "description": "The type of subscription",
                 "type": "string"
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/subscriberAddress": {
+              "xdm:subscriberAddress": {
                 "title": "Contact address of the subscriber",
                 "type": "string",
                 "description": "Contact address of the subscriber"
               },
-              "https://ns.adobe.com/experience/customerJourneyManagement/landingpage/subscriptions/subscriptionChoice": {
+              "xdm:subscriptionChoice": {
                 "title": "Subscription Choice",
                 "type": "string",
                 "description": "Subscription Choice for the Subscription List.",

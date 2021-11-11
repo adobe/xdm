@@ -42,10 +42,10 @@
           "type": "boolean",
           "description": "True if the message execution is send time optimized."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestProfile": {
-          "title": "isTestProfile",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
+          "title": "isTestExecution",
           "type": "boolean",
-          "description": "True if the message is sent to Test Profile."
+          "description": "True if the message is sent as Test Execution."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
           "title": "Address",

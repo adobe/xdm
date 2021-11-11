@@ -1,0 +1,48 @@
+{
+  "xdm:webMessages": {
+    "navBar": {
+      "journeyUUID_1": {
+        "xdm:messageId": "MessageUUID_1",
+        "xdm:messageExecutionId": "MessageExecutionUUID_5",
+        "xdm:messageVersionId": "MessageVersionUUID_3",
+        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+      },
+      "journeyUUID_2": {
+        "xdm:messageId": "MessageUUID_2",
+        "xdm:messageExecutionId": "MessageExecutionUUID_10",
+        "xdm:messageVersionId": "MessageVersionUUID_2",
+        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+      }
+    },
+    "header": {
+      "journeyUUID_2": {
+        "xdm:messageId": "MessageUUID_2",
+        "xdm:messageExecutionId": "MessageExecutionUUID_11",
+        "xdm:messageVersionId": "MessageVersionUUID_2",
+        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+      }
+    },
+    "topMenu": {
+      "journeyUUID_1": {
+        "xdm:messageId": "MessageUUID_1",
+        "xdm:messageExecutionId": "MessageExecutionUUID_50",
+        "xdm:messageVersionId": "MessageVersionUUID_4",
+        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+      }
+    },
+    "footer": {
+      "journeyUUID_1": {
+        "xdm:messageId": "MessageUUID_1",
+        "xdm:messageExecutionId": "MessageExecutionUUID_5",
+        "xdm:messageVersionId": "MessageVersionUUID_3",
+        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+      },
+      "journeyUUID_2": {
+        "xdm:messageId": "MessageUUID_2",
+        "xdm:messageExecutionId": "MessageExecutionUUID_10",
+        "xdm:messageVersionId": "MessageVersionUUID_2",
+        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+      }
+    }
+  }
+}

@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/context/account
 ```
 
-An XDM Business Account.
+XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/account.schema.json](classes/b2b/account.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/account.schema.json](classes/b2b/account.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Account `https://ns.adobe.com/xdm/context/account`

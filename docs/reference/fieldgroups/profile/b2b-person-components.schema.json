@@ -30,6 +30,7 @@
                                 "title": "Source Person ID",
                                 "description": "Source person ID.",
                                 "type": "string",
+                                "meta:status": "experimental",
                                 "meta:titleId": "b2b-person-components##xdm:sourcePersonID##title##29921",
                                 "meta:descriptionId": "b2b-person-components##xdm:sourcePersonID##description##58991"
                             },
@@ -37,6 +38,7 @@
                                 "title": "Source Account ID",
                                 "description": "Source account ID.",
                                 "type": "string",
+                                "meta:status": "experimental",
                                 "meta:titleId": "b2b-person-components##xdm:sourceAccountID##title##46961",
                                 "meta:descriptionId": "b2b-person-components##xdm:sourceAccountID##description##32021"
                             },
@@ -44,6 +46,7 @@
                                 "title": "Source Converted Contact ID",
                                 "description": "Source converted contact ID.",
                                 "type": "string",
+                                "meta:status": "experimental",
                                 "meta:titleId": "b2b-person-components##xdm:sourceConvertedContactID##title##38451",
                                 "meta:descriptionId": "b2b-person-components##xdm:sourceConvertedContactID##description##69651"
                             },
@@ -51,6 +54,7 @@
                                 "title": "Source External ID",
                                 "description": "External source unique identifier at the source.",
                                 "type": "string",
+                                "meta:status": "experimental",
                                 "meta:titleId": "b2b-person-components##xdm:sourceExternalID##title##30461",
                                 "meta:descriptionId": "b2b-person-components##xdm:sourceExternalID##description##26201"
                             },
@@ -136,7 +140,7 @@
             "$ref": "#/definitions/b2b-person-components"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-09-09",
     "meta:titleId": "b2b-person-components##title##10621",
     "meta:descriptionId": "b2b-person-components##description##84061",

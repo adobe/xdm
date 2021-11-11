@@ -29,6 +29,7 @@
               "title": "Opportunity ID",
               "type": "string",
               "description": "Unique identifier of the Opportunity.",
+              "meta:status": "experimental",
               "meta:titleId": "add-to-opportunity##xdm:opportunityID##title##63081",
               "meta:descriptionId": "add-to-opportunity##xdm:opportunityID##description##1631"
             },
@@ -64,7 +65,7 @@
       "$ref": "#/definitions/addtoopportunity"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "add-to-opportunity##title##24251",
   "meta:descriptionId": "add-to-opportunity##description##3131"

@@ -64,6 +64,7 @@
           "title": "Parent Account",
           "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "account-details##xdm:accountParentID##title##80371",
           "meta:descriptionId": "account-details##xdm:accountParentID##description##84671"
         },
@@ -161,7 +162,7 @@
       "$ref": "#/definitions/account-details"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-08-27",
   "meta:titleId": "account-details##title##16521",
   "meta:descriptionId": "account-details##description##72981"

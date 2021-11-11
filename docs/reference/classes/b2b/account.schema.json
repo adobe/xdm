@@ -18,7 +18,7 @@
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
-    "description": "An XDM Business Account.",
+    "description": "XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
     "definitions": {
         "account": {
             "properties": {
@@ -26,6 +26,7 @@
                     "title": "Account Identifier",
                     "description": "Unique ID for the account.",
                     "type": "string",
+                    "meta:status": "experimental",
                     "meta:titleId": "account##xdm:accountID##title##59121",
                     "meta:descriptionId": "account##xdm:accountID##description##27991"
                 },
@@ -53,7 +54,7 @@
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:titleId": "account##title##4841",
     "meta:descriptionId": "account##description##65781",
     "examples": [

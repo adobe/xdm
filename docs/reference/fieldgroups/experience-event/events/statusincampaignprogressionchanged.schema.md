@@ -9,7 +9,7 @@ Use to capture details when a lead's status in a campaign changes.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/statusincampaignprogressionchanged.schema.json](fieldgroups/experience-event/events/statusincampaignprogressionchanged.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/statusincampaignprogressionchanged.schema.json](fieldgroups/experience-event/events/statusincampaignprogressionchanged.schema.json) |
 
 ## Status In Campaign Progression Changed Example
 ```json
@@ -65,6 +65,7 @@ Unknown type `object`.
       "title": "Campaign ID",
       "type": "string",
       "description": "Unique identifier of the Campaign.",
+      "meta:status": "experimental",
       "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##82611",
       "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##92571"
     },

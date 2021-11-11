@@ -38,6 +38,9 @@ const ignoredForRequiredValidation =
     "../components/classes/segmentdefinition.schema.json",
     "../extensions/adobe/experience/decisioning/decisionevent.schema.json"
     ];
+const ignoredForIdValidation =
+    ["../extensions/adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json"
+    ];
 
 shell.rm("-rf", masterCopyLoc); //start
 if (shell.exec('git clone https://github.com/adobe/xdm.git ' + masterCopyLoc).code !== 0) {
@@ -262,6 +265,10 @@ function validate(o, file) {
     for (var i in o) {
         if (o[i] && o[i]["meta:status"] == "deprecated") {
             delete o[i] //remove deprecated
+        }
+
+        if ((ignoredForIdValidation.indexOf(file) == -1) && i == "$id" && o[i].slice(-1) == "/") {
+            errLogs.push(file + ' validation error!!! $id "' + o[i] + '" should not end with "/" \n')
         }
 
         if (((ignoredForRequiredValidation.indexOf(file) == -1)) && o.hasOwnProperty("properties") && o.hasOwnProperty("required") && i == "properties") {

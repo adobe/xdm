@@ -1,47 +1,47 @@
 {
-  "xdm:webMessages": {
+  "https://ns.adobe.com/experience/customerJourneyManagement/webMessages": {
     "navBar": {
       "journeyUUID_1": {
-        "xdm:messageId": "MessageUUID_1",
-        "xdm:messageExecutionId": "MessageExecutionUUID_5",
-        "xdm:messageVersionId": "MessageVersionUUID_3",
-        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+        "messageId": "MessageUUID_1",
+        "messageExecutionId": "MessageExecutionUUID_5",
+        "messageVersionId": "MessageVersionUUID_3",
+        "journeyVersionId": "JourneyVersionUUID_1"
       },
       "journeyUUID_2": {
-        "xdm:messageId": "MessageUUID_2",
-        "xdm:messageExecutionId": "MessageExecutionUUID_10",
-        "xdm:messageVersionId": "MessageVersionUUID_2",
-        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+        "messageId": "MessageUUID_2",
+        "messageExecutionId": "MessageExecutionUUID_10",
+        "messageVersionId": "MessageVersionUUID_2",
+        "journeyVersionId": "JourneyVersionUUID_2"
       }
     },
     "header": {
       "journeyUUID_2": {
-        "xdm:messageId": "MessageUUID_2",
-        "xdm:messageExecutionId": "MessageExecutionUUID_11",
-        "xdm:messageVersionId": "MessageVersionUUID_2",
-        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+        "messageId": "MessageUUID_2",
+        "messageExecutionId": "MessageExecutionUUID_11",
+        "messageVersionId": "MessageVersionUUID_2",
+        "journeyVersionId": "JourneyVersionUUID_2"
       }
     },
     "topMenu": {
       "journeyUUID_1": {
-        "xdm:messageId": "MessageUUID_1",
-        "xdm:messageExecutionId": "MessageExecutionUUID_50",
-        "xdm:messageVersionId": "MessageVersionUUID_4",
-        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+        "messageId": "MessageUUID_1",
+        "messageExecutionId": "MessageExecutionUUID_50",
+        "messageVersionId": "MessageVersionUUID_4",
+        "journeyVersionId": "JourneyVersionUUID_1"
       }
     },
     "footer": {
       "journeyUUID_1": {
-        "xdm:messageId": "MessageUUID_1",
-        "xdm:messageExecutionId": "MessageExecutionUUID_5",
-        "xdm:messageVersionId": "MessageVersionUUID_3",
-        "xdm:journeyVersionId": "JourneyVersionUUID_1"
+        "messageId": "MessageUUID_1",
+        "messageExecutionId": "MessageExecutionUUID_5",
+        "messageVersionId": "MessageVersionUUID_3",
+        "journeyVersionId": "JourneyVersionUUID_1"
       },
       "journeyUUID_2": {
-        "xdm:messageId": "MessageUUID_2",
-        "xdm:messageExecutionId": "MessageExecutionUUID_10",
-        "xdm:messageVersionId": "MessageVersionUUID_2",
-        "xdm:journeyVersionId": "JourneyVersionUUID_2"
+        "messageId": "MessageUUID_2",
+        "messageExecutionId": "MessageExecutionUUID_10",
+        "messageVersionId": "MessageVersionUUID_2",
+        "journeyVersionId": "JourneyVersionUUID_2"
       }
     }
   }

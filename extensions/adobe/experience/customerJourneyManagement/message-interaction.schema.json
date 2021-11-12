@@ -91,22 +91,22 @@
           "type": "object",
           "description": "Describes landing pages involved in a message interaction.",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingPageID": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageID": {
               "title": "Landing Page ID",
               "type": "string",
               "description": "Unique Identifier for Landing Page."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingPageName": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": {
               "title": "Landing Page Name",
               "type": "string",
               "description": "Human-Friendly name of landing page."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/source": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": {
               "title": "Source",
               "type": "string",
               "description": "Source of the Landing page."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/sourceType": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": {
               "title": "Source Type",
               "type": "string",
               "description": "Type of the Source of Landing Page.",
@@ -116,7 +116,7 @@
                 "external": "External for Non-AJO Landing Page"
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/inputDetails": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/inputDetails": {
               "title": "Details input by user in the landing page",
               "type": "object",
               "meta:xdmType": "map",
@@ -125,7 +125,7 @@
                 "description": "Details Input by user in the landing page."
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/additionalContext": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalContext": {
               "title": "Landing Page Additional Context",
               "type": "object",
               "meta:xdmType": "map",
@@ -134,29 +134,29 @@
                 "description": "Pass through additional data entered by marketer at the time of authoring the landing page."
               }
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": {
               "title": "Subscription details in the landing page",
               "description": "Subscription related details entered by the user in the landing page",
               "type": "array",
               "items": {
                 "type": "object",
                 "properties": {
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionID": {
+                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": {
                     "title": "Subscription List ID",
                     "type": "string",
                     "description": "Unique Identifier for Subscription"
                   },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/type": {
+                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": {
                     "title": "Subscription Type",
                     "description": "The type of subscription. Email or other",
                     "type": "string"
                   },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriberAddress": {
+                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": {
                     "title": "Contact address of the subscriber",
                     "type": "string",
                     "description": "Contact address of the subscriber"
                   },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionChoice": {
+                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": {
                     "title": "Subscription Choice",
                     "type": "string",
                     "description": "Subscription Choice for the Subscription List.",

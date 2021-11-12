@@ -5,31 +5,31 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/entityType": "landing_page",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingpageID": "1234",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/source": "journey",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/sourceType": "internal",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingPageName": "December Offers",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/inputDetails": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpageID": "1234",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": "journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": "internal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": "December Offers",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/inputDetails": {
       "firstName": "John",
       "lastName": "Doe",
       "city": "New York City"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/additionalContext": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalContext": {
       "offer-campaign": "Christmas-offers",
       "productCategory": "electronics"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": [
       {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionID": "iPhone13-offers",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/type": "email",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriberAddress": "johndoe@gmail.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionChoice": "yes"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": "iPhone13-offers",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": "johndoe@gmail.com",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": "yes"
       },
       {
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionID": "Xbox-offers",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/type": "email",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriberAddress": "johndoe@gmail.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionChoice": "no"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": "Xbox-offers",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": "johndoe@gmail.com",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": "no"
       }
     ]
   }

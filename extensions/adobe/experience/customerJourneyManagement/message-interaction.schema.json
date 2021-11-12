@@ -115,61 +115,6 @@
                 "internal": "Internal for AJO Landing Page",
                 "external": "External for Non-AJO Landing Page"
               }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/inputDetails": {
-              "title": "Details input by user in the landing page",
-              "type": "object",
-              "meta:xdmType": "map",
-              "additionalProperties": {
-                "type": "string",
-                "description": "Details Input by user in the landing page."
-              }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalContext": {
-              "title": "Landing Page Additional Context",
-              "type": "object",
-              "meta:xdmType": "map",
-              "additionalProperties": {
-                "type": "string",
-                "description": "Pass through additional data entered by marketer at the time of authoring the landing page."
-              }
-            },
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": {
-              "title": "Subscription details in the landing page",
-              "description": "Subscription related details entered by the user in the landing page",
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": {
-                    "title": "Subscription List ID",
-                    "type": "string",
-                    "description": "Unique Identifier for Subscription"
-                  },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": {
-                    "title": "Subscription Type",
-                    "description": "The type of subscription. Email or other",
-                    "type": "string"
-                  },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": {
-                    "title": "Contact address of the subscriber",
-                    "type": "string",
-                    "description": "Contact address of the subscriber"
-                  },
-                  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": {
-                    "title": "Subscription Choice",
-                    "type": "string",
-                    "description": "Subscription Choice for the Subscription List.",
-                    "enum": ["yes", "no", "pending", "unknown"],
-                    "meta:enum": {
-                      "yes": "Subscribed to Subscription List",
-                      "no": "Unsubscribed to Subscription List",
-                      "pending": "Subscription Pending",
-                      "unknown": "Subscription Unknown"
-                    }
-                  }
-                }
-              }
             }
           }
         },

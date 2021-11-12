@@ -16,7 +16,7 @@
   "definitions": {
     "profile-web-messages": {
       "properties": {
-        "xdm:webMessages": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/webMessages": {
           "title": "Web Message Scopes",
           "description": "Hub activated web message scopes",
           "type": "object",
@@ -31,22 +31,22 @@
               "type": "object",
               "description": "Web Message Values for delivering web experiences and reporting",
               "properties": {
-                "xdm:messageId": {
+                "messageId": {
                   "title": "Message Identifier",
                   "type": "string",
                   "description": "Unique Identifier of a Message"
                 },
-                "xdm:messageExecutionId": {
+                "messageExecutionId": {
                   "title": "Message Execution Identifier",
                   "type": "string",
                   "description": "Unique Identifier of a Message Execution"
                 },
-                "xdm:messageVersionId": {
+                "messageVersionId": {
                   "title": "Message Version Identifier",
                   "type": "string",
                   "description": "Unique Identifier of a Message Version"
                 },
-                "xdm:journeyVersionId": {
+                "journeyVersionId": {
                   "title": "Journey Version Identifier",
                   "type": "string",
                   "description": "Unique Identifier of a Journey Version"

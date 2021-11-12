@@ -5,31 +5,31 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/entityType": "landing_page",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
-    "xdm:landingpageID": "1234",
-    "xdm:source": "journey",
-    "xdm:sourceType": "internal",
-    "xdm:name": "December Offers",
-    "xdm:inputDetails": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingpageID": "1234",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/source": "journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/sourceType": "internal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/landingPageName": "December Offers",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/inputDetails": {
       "firstName": "John",
       "lastName": "Doe",
       "city": "New York City"
     },
-    "xdm:additionalContext": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/additionalContext": {
       "offer-campaign": "Christmas-offers",
       "productCategory": "electronics"
     },
-    "xdm:subscriptions": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions": [
       {
-        "subscriptionID": "iPhone13-offers",
-        "type": "email",
-        "subscriberAddress": "johndoe@gmail.com",
-        "subscriptionChoice": "yes"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionID": "iPhone13-offers",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/type": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriberAddress": "johndoe@gmail.com",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionChoice": "yes"
       },
       {
-        "subscriptionID": "Xbox-offers",
-        "type": "email",
-        "subscriberAddress": "johndoe@gmail.com",
-        "subscriptionChoice": "no"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionID": "Xbox-offers",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/type": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriberAddress": "johndoe@gmail.com",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage/subscriptions/subscriptionChoice": "no"
       }
     ]
   }

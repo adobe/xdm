@@ -21,15 +21,15 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": [
       {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": "iPhone13-offers",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type": "email",
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": "johndoe@gmail.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": "yes"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice": "yes"
       },
       {
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionID": "Xbox-offers",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionType": "email",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type": "email",
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberAddress": "johndoe@gmail.com",
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/choice": "no"
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptionChoice": "no"
       }
     ]
   }

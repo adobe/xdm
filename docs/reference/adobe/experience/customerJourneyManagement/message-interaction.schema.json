@@ -27,7 +27,9 @@
                         "open",
                         "unsubscribe",
                         "spam_complaint",
-                        "subscription"
+                        "subscription",
+                        "submit",
+                        "visit"
                     ],
                     "meta:enum": {
                         "click": "Message link clicked.",
@@ -38,6 +40,19 @@
                     },
                     "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
                     "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType": {
+                    "title": "The entity in whose context this event is published",
+                    "type": "string",
+                    "description": "The entity in whose context this event is published",
+                    "enum": [
+                        "landing_page",
+                        "message"
+                    ],
+                    "meta:enum": {
+                        "landing_page": "Event is related to landing page entity",
+                        "message": "Event is related to message entity"
+                    }
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": {
                     "title": "Tracker URL ID",
@@ -75,6 +90,41 @@
                     "title": "Offer Details",
                     "$ref": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
                     "description": "Describes offer(s) involved in a message interaction."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
+                    "title": "Landing Page Details",
+                    "type": "object",
+                    "description": "Describes landing pages involved in a message interaction.",
+                    "properties": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageID": {
+                            "title": "Landing Page ID",
+                            "type": "string",
+                            "description": "Unique Identifier for Landing Page."
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": {
+                            "title": "Landing Page Name",
+                            "type": "string",
+                            "description": "Human-Friendly name of landing page."
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": {
+                            "title": "Source",
+                            "type": "string",
+                            "description": "Source of the Landing page."
+                        },
+                        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": {
+                            "title": "Source Type",
+                            "type": "string",
+                            "description": "Type of the Source of Landing Page.",
+                            "enum": [
+                                "internal",
+                                "external"
+                            ],
+                            "meta:enum": {
+                                "internal": "Internal for AJO Landing Page",
+                                "external": "External for Non-AJO Landing Page"
+                            }
+                        }
+                    }
                 },
                 "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
                     "title": "Subscription Details",
@@ -139,6 +189,22 @@
     "meta:descriptionId": "message-interaction##description##85821",
     "examples": [
         {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+                "marketing",
+                "apparel"
+            ],
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
+                "xdm:offerID": "1234",
+                "xdm:placementID": "12345",
+                "xdm:propositionID": "9898",
+                "xdm:offerCount": 5
+            }
+        },
+        {
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
                 "marketing",
@@ -153,19 +219,16 @@
             }
         },
         {
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "submit",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
-                "marketing",
-                "apparel"
-            ],
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "tracked",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/entityType": "landing_page",
             "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
-            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-                "xdm:offerID": "1234",
-                "xdm:placementID": "12345",
-                "xdm:propositionID": "9898",
-                "xdm:offerCount": 5
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpageID": "1234",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": "journey",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": "internal",
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": "December Offers"
             }
         }
     ]

@@ -425,30 +425,21 @@
                     },
                     "xdm:playerSdkErrors": {
                       "title": "Player SDK Error IDs",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
+                      "$ref": "https://ns.adobe.com/xdm/data/sdk-errors",
                       "description": "The error IDs encountered during a playback session that originated in the Player.",
                       "meta:titleId": "media##xdm:playerSdkErrors##title##6831",
                       "meta:descriptionId": "media##xdm:playerSdkErrors##description##84151"
                     },
                     "xdm:mediaSdkErrors": {
                       "title": "Media SDK Error IDs",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
+                      "$ref": "https://ns.adobe.com/xdm/data/sdk-errors",
                       "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
                       "meta:titleId": "media##xdm:mediaSdkErrors##title##67121",
                       "meta:descriptionId": "media##xdm:mediaSdkErrors##description##99311"
                     },
                     "xdm:externalSdkErrors": {
                       "title": "External Error IDs",
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
+                      "$ref": "https://ns.adobe.com/xdm/data/sdk-errors",
                       "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
                       "meta:titleId": "media##xdm:externalSdkErrors##title##66291",
                       "meta:descriptionId": "media##xdm:externalSdkErrors##description##41541"

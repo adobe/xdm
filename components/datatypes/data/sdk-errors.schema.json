@@ -1,0 +1,35 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/sdk-errors",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "SDK Errors information",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Information related to sdk errors.",
+  "definitions": {
+    "sdk-errors": {
+      "properties": {
+        "xdm:errorsIds": {
+          "title": "SDK Error IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The error IDs encountered during a playback session."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/sdk-errors"
+    }
+  ],
+  "required": ["xdm:errorsIds"],
+  "meta:status": "stable"
+}

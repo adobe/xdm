@@ -231,13 +231,7 @@
               "xdm:OS": {
                 "title": "OS",
                 "type": "string",
-                "enum": [
-                  "android",
-                  "ios",
-                  "windows",
-                  "blackberry",
-                  "symbian"
-                ],
+                "enum": ["android", "ios", "windows", "blackberry", "symbian"],
                 "meta:enum": {
                   "android": "Android",
                   "ios": "iOS",
@@ -252,10 +246,7 @@
               "xdm:status": {
                 "title": "Status",
                 "type": "string",
-                "enum": [
-                  "active",
-                  "inactive"
-                ],
+                "enum": ["active", "inactive"],
                 "meta:enum": {
                   "active": "Active",
                   "inactive": "Inactive"
@@ -274,10 +265,7 @@
               "xdm:paymentOptions": {
                 "title": "Payment Options",
                 "type": "string",
-                "enum": [
-                  "installmentPlan",
-                  "retailPrice"
-                ],
+                "enum": ["installmentPlan", "retailPrice"],
                 "meta:enum": {
                   "installmentPlan": "Installment Plan",
                   "retailPrice": "Retail Price"

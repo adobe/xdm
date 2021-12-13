@@ -12,9 +12,7 @@
   "description": "Information regarding the relationship between two nodes or vertices such as data provider, and edge information.",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/graphs"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/graphs"],
   "definitions": {
     "graph-edge": {
       "properties": {

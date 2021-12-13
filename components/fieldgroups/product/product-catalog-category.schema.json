@@ -12,9 +12,7 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/product"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/product"],
   "description": "Captures properties related to product catalog category.",
   "definitions": {
     "product-catalog-category": {

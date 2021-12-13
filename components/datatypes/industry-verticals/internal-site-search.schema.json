@@ -104,10 +104,7 @@
         "xdm:radiusType": {
           "title": "Radius Type",
           "type": "string",
-          "enum": [
-            "miles",
-            "kilometers"
-          ],
+          "enum": ["miles", "kilometers"],
           "description": "Captures the selected distance type of the search radius in either miles or kilometers.",
           "meta:titleId": "internal-site-search##xdm:radiusType##title##92511",
           "meta:descriptionId": "internal-site-search##xdm:radiusType##description##67451"
@@ -150,10 +147,7 @@
         "xdm:sortOrder": {
           "title": "Sort Order",
           "type": "string",
-          "enum": [
-            "ascending",
-            "descending"
-          ],
+          "enum": ["ascending", "descending"],
           "description": "ascending/descending",
           "meta:titleId": "internal-site-search##xdm:sortOrder##title##94521",
           "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##8641"

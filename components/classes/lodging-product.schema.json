@@ -11,13 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:tags": {
-    "industry": [
-      "travel_and_hospitality"
-    ]
+    "industry": ["travel_and_hospitality"]
   },
   "description": "For hotel product information such as ID, rooms, ownership, and type.",
   "definitions": {

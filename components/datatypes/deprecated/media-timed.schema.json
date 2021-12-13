@@ -213,9 +213,7 @@
           "meta:descriptionId": "media-timed##xdm:dayPart##description##77881"
         }
       },
-      "required": [
-        "xdm:primaryAssetReference"
-      ]
+      "required": ["xdm:primaryAssetReference"]
     }
   },
   "allOf": [

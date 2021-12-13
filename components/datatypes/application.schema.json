@@ -97,10 +97,7 @@
           "title": "Close Type",
           "type": "string",
           "description": "Type of application close, sent on application isClose. Type is 'close' on graceful termination of an application, or 'unknown' when application termination source is unknown.",
-          "enum": [
-            "close",
-            "unknown"
-          ],
+          "enum": ["close", "unknown"],
           "meta:enum": {
             "close": "Close",
             "unknown": "Unknown"
@@ -161,11 +158,7 @@
           "title": "User Perspective",
           "type": "string",
           "description": "The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.",
-          "enum": [
-            "foreground",
-            "background",
-            "detached"
-          ],
+          "enum": ["foreground", "background", "detached"],
           "meta:enum": {
             "foreground": "Foreground",
             "background": "Background",

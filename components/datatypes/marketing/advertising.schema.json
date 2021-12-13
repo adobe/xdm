@@ -234,9 +234,7 @@
               "meta:descriptionId": "advertising##xmpDM:duration##description##78611"
             }
           },
-          "required": [
-            "@id"
-          ],
+          "required": ["@id"],
           "meta:titleId": "advertising##xdm:adAssetReference##title##69251",
           "meta:descriptionId": "advertising##xdm:adAssetReference##description##3861"
         },

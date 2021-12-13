@@ -30,10 +30,7 @@
           "meta:descriptionId": "media-timed-chapter-view-details##xdm:offset##description##75441"
         }
       },
-      "required": [
-        "xdm:index",
-        "xdm:offset"
-      ]
+      "required": ["xdm:index", "xdm:offset"]
     }
   },
   "allOf": [

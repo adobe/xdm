@@ -14,9 +14,7 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/account"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
   "description": "XDM business account details.",
   "definitions": {
     "account-details": {
@@ -122,10 +120,7 @@
         "xdm:defaultCurrencyCode": {
           "title": "Default Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code.",
           "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##40311",

@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Identity Namespace Schema.",
   "definitions": {
     "identity-namespace": {
@@ -73,9 +71,7 @@
           "title": "Create Date Time",
           "format": "date-time",
           "type": "string",
-          "examples": [
-            "An example form is \"2004-10-23T12:00:00-06:00\"."
-          ],
+          "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
           "description": "The date and time when the namespace was created in ISO 8601 format",
           "meta:titleId": "identity-namespace##xdm:createDate##title##33571",
           "meta:descriptionId": "identity-namespace##xdm:createDate##description##23751"
@@ -84,18 +80,13 @@
           "title": "Update Date Time",
           "format": "date-time",
           "type": "string",
-          "examples": [
-            "An example form is \"2004-10-23T12:00:00-06:00\"."
-          ],
+          "examples": ["An example form is \"2004-10-23T12:00:00-06:00\"."],
           "description": "The date and time when the namespace was updated in ISO 8601 format",
           "meta:titleId": "identity-namespace##xdm:modifyDate##title##63301",
           "meta:descriptionId": "identity-namespace##xdm:modifyDate##description##47131"
         }
       },
-      "required": [
-        "xdm:namespaceID",
-        "xdm:namespaceCode"
-      ]
+      "required": ["xdm:namespaceID", "xdm:namespaceCode"]
     }
   },
   "allOf": [

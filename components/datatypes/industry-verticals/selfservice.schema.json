@@ -153,11 +153,7 @@
           "meta:descriptionId": "selfservice##xdm:qualityGateState##description##80941"
         }
       },
-      "required": [
-        "xdm:tenant",
-        "xdm:application",
-        "xdm:environment"
-      ]
+      "required": ["xdm:tenant", "xdm:application", "xdm:environment"]
     }
   },
   "allOf": [

@@ -11,14 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:tags": {
-    "industry": [
-      "travel_and_hospitality",
-      "automotive"
-    ]
+    "industry": ["travel_and_hospitality", "automotive"]
   },
   "description": "For vehicle product information such as category, number of doors, capacity, and ownership. ",
   "definitions": {
@@ -33,11 +28,7 @@
         },
         "xdm:inventoryType": {
           "title": "Inventory Type",
-          "enum": [
-            "new",
-            "used",
-            "certified preowned"
-          ],
+          "enum": ["new", "used", "certified preowned"],
           "description": "Captures the inventory type of the vehicle.",
           "meta:titleId": "vehicle-product##xdm:inventoryType##title##43331",
           "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##18621"

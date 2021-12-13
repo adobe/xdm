@@ -21,9 +21,7 @@
       "public_sector"
     ]
   },
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Loan specifics, such as loan type, amount, rate, & term.",
   "definitions": {
     "loan": {

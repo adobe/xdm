@@ -38,9 +38,7 @@
           "meta:descriptionId": "media-timed-chapter-asset-reference##xmpDM:duration##description##63501"
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

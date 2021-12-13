@@ -26,9 +26,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "",
   "definitions": {
     "user-account-details": {
@@ -62,12 +60,7 @@
             "xdm:status": {
               "title": "Status",
               "type": "string",
-              "enum": [
-                "active",
-                "inactive",
-                "disabled",
-                "other"
-              ],
+              "enum": ["active", "inactive", "disabled", "other"],
               "description": "This should describe the current status of the account",
               "meta:titleId": "profile-user-account-details##xdm:status##title##94491",
               "meta:descriptionId": "profile-user-account-details##xdm:status##description##22261"

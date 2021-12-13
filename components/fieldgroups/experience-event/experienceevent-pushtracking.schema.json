@@ -10,9 +10,7 @@
   "title": "Push notification tracking",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "push notification tracking details",
   "definitions": {
     "experienceevent-pushtracking": {

@@ -12,9 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "definitions": {
     "profile-privacy": {
       "properties": {
@@ -35,10 +33,7 @@
                     "title": "Opt-out type",
                     "type": "string",
                     "description": "The type of opt-out.",
-                    "enum": [
-                      "general_opt_out",
-                      "sales_sharing_opt_out"
-                    ],
+                    "enum": ["general_opt_out", "sales_sharing_opt_out"],
                     "meta:enum": {
                       "general_opt_out": "General opt-out",
                       "sales_sharing_opt_out": "Sales sharing opt-out"
@@ -50,12 +45,7 @@
                     "title": "Opt-out value",
                     "type": "string",
                     "description": "The value of opt-out signal.",
-                    "enum": [
-                      "not_provided",
-                      "pending",
-                      "in",
-                      "out"
-                    ],
+                    "enum": ["not_provided", "pending", "in", "out"],
                     "meta:enum": {
                       "not_provided": "Not provided",
                       "pending": "Pending verification",
@@ -116,9 +106,7 @@
                       "meta:descriptionId": "profile-privacy##xdm:consentString##description##6731"
                     }
                   },
-                  "required": [
-                    "xdm:consentTimestamp"
-                  ],
+                  "required": ["xdm:consentTimestamp"],
                   "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##40301",
                   "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##89931"
                 }

@@ -36,9 +36,7 @@
       "$ref": "#/definitions/measure"
     }
   ],
-  "required": [
-    "xdm:value"
-  ],
+  "required": ["xdm:value"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "measure##title##15111",

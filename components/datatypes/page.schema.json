@@ -64,12 +64,7 @@
       "$ref": "#/definitions/page"
     }
   ],
-  "required": [
-    "orderBy",
-    "start",
-    "next",
-    "count"
-  ],
+  "required": ["orderBy", "start", "next", "count"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "page##title##24241",

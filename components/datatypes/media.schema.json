@@ -141,11 +141,7 @@
                   "description": "The type of the media stream",
                   "type": "string",
                   "default": "video",
-                  "enum": [
-                    "audio",
-                    "video",
-                    "gaming"
-                  ],
+                  "enum": ["audio", "video", "gaming"],
                   "meta:enum": {
                     "audio": "An audio stream (e.g. podcast, audiobook, radio stream).",
                     "video": "A video stream (e.g. Video-On-Demand, live event stream, downloaded movie).",
@@ -213,9 +209,7 @@
                   "meta:descriptionId": "media##xmpDM:releaseDate##description##50211"
                 }
               },
-              "required": [
-                "@id"
-              ],
+              "required": ["@id"],
               "meta:titleId": "media##xdm:primaryAssetReference##title##92491",
               "meta:descriptionId": "media##xdm:primaryAssetReference##description##6541"
             },
@@ -574,9 +568,7 @@
                       "meta:descriptionId": "media##xmpDM:duration##description##58671"
                     }
                   },
-                  "required": [
-                    "@id"
-                  ],
+                  "required": ["@id"],
                   "meta:titleId": "media##xdm:chapterAssetReference##title##99301",
                   "meta:descriptionId": "media##xdm:chapterAssetReference##description##67801"
                 },
@@ -600,10 +592,7 @@
                       "meta:descriptionId": "media##xdm:offset##description##67351"
                     }
                   },
-                  "required": [
-                    "xdm:index",
-                    "xdm:offset"
-                  ],
+                  "required": ["xdm:index", "xdm:offset"],
                   "meta:titleId": "media##xdm:chapterAssetViewDetails##title##8461",
                   "meta:descriptionId": "media##xdm:chapterAssetViewDetails##description##98211"
                 },
@@ -823,9 +812,7 @@
               "meta:descriptionId": "media##xdm:dayPart##description##85731"
             }
           },
-          "required": [
-            "xdm:primaryAssetReference"
-          ],
+          "required": ["xdm:primaryAssetReference"],
           "meta:titleId": "media##xdm:mediaTimed##title##78891",
           "meta:descriptionId": "media##xdm:mediaTimed##description##36241"
         }

@@ -10,9 +10,7 @@
   "title": "Mirror Pages",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description": "The direct-marketing metric `mirror-page`s describes the number of mirror pages for which a link to the online mirror page of a message has been clicked.",
   "definitions": {
     "metricdefinition": {
@@ -49,12 +47,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "mirror-pages##title##98941",

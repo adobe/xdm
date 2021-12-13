@@ -10,9 +10,7 @@
   "title": "Inapp message tracking",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Inapp message interaction tracking details",
   "definitions": {
     "experienceevent-inappmessage-tracking": {

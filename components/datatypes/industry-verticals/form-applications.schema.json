@@ -52,12 +52,7 @@
         "xdm:status": {
           "title": "Status",
           "type": "string",
-          "enum": [
-            "initiated",
-            "in progress",
-            "approved",
-            "declined"
-          ],
+          "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the application for any given point in the application process.",
           "meta:titleId": "form-applications##xdm:status##title##60131",
           "meta:descriptionId": "form-applications##xdm:status##description##94351"

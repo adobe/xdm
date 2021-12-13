@@ -10,9 +10,7 @@
   "title": "Non-Deliverables",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/metricdefinition"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
   "description": "The direct-marketing metric `non-deliverables` describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
   "definitions": {
     "metricdefinition": {
@@ -49,12 +47,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": [
-    "@id",
-    "schema:name",
-    "xdm:measurement",
-    "xdm:unit"
-  ],
+  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "non-deliverables##title##33161",

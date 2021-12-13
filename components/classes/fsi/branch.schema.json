@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "financial_services"
-    ]
+    "industry": ["financial_services"]
   },
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "For branch information such as ID, name, and open and close times.",
   "definitions": {
     "branch": {

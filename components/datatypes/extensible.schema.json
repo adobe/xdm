@@ -252,9 +252,7 @@
                 }
               },
               "additionalProperties": false,
-              "required": [
-                "xdm"
-              ]
+              "required": ["xdm"]
             }
           },
           "patternProperties": {
@@ -296,9 +294,7 @@
             "^bizible:.*$": {},
             ".+://.+": {}
           },
-          "required": [
-            "@context"
-          ],
+          "required": ["@context"],
           "additionalProperties": false
         }
       ]

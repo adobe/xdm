@@ -18,9 +18,7 @@
         "xdm:identityProvider": {
           "description": "The identity provider that manages this principal.",
           "type": "string",
-          "meta:enum": [
-            "ims"
-          ],
+          "meta:enum": ["ims"],
           "meta:descriptionId": "identity##xdm:identityProvider##description##52561"
         },
         "xdm:id": {
@@ -30,9 +28,7 @@
         },
         "xdm:type": {
           "type": "string",
-          "meta:enum": [
-            "https://ns.adobe.com/xdm/common/user"
-          ],
+          "meta:enum": ["https://ns.adobe.com/xdm/common/user"],
           "format": "uri",
           "description": "The type of the identity. Acts as a processing hint to the client. Ideally, each value should be identified as a [URI](https://tools.ietf.org/html/rfc3986).",
           "meta:descriptionId": "identity##xdm:type##description##84161"
@@ -73,11 +69,7 @@
       "$ref": "#/definitions/publicprofile"
     }
   ],
-  "required": [
-    "xdm:identityProvider",
-    "xdm:id",
-    "xdm:type"
-  ],
+  "required": ["xdm:identityProvider", "xdm:id", "xdm:type"],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "identity##title##13061",

@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": [
-    "http://schema.org/GeoCoordinates"
-  ],
+  "meta:extends": ["http://schema.org/GeoCoordinates"],
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
@@ -33,11 +31,7 @@
           "title": "State or province",
           "type": "string",
           "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
-          "examples": [
-            "US-CA",
-            "DE-BB",
-            "JP-13"
-          ],
+          "examples": ["US-CA", "DE-BB", "JP-13"],
           "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
           "meta:titleId": "geo##xdm:stateProvince##title##39821",
           "meta:descriptionId": "geo##xdm:stateProvince##description##87801"

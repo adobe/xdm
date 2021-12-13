@@ -92,9 +92,7 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": [
-    "@id"
-  ],
+  "required": ["@id"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "phone##title##56491",

@@ -191,10 +191,7 @@
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.",
           "meta:titleId": "product##xdm:currencyCode##title##18891",

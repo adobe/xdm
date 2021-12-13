@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Identity Graph Flattened Export Schema.",
   "definitions": {
     "identity-graph-flattened-export": {
@@ -106,11 +104,7 @@
           "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description##93481"
         }
       },
-      "required": [
-        "xdm:identityID",
-        "xdm:namespaceCode",
-        "xdm:algorithm"
-      ]
+      "required": ["xdm:identityID", "xdm:namespaceCode", "xdm:algorithm"]
     }
   },
   "allOf": [

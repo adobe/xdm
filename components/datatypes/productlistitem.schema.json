@@ -53,10 +53,7 @@
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
           "meta:titleId": "productlistitem##xdm:currencyCode##title##77931",
@@ -77,9 +74,7 @@
           "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221"
         }
       },
-      "required": [
-        "xdm:SKU"
-      ]
+      "required": ["xdm:SKU"]
     }
   },
   "allOf": [

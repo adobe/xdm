@@ -32,12 +32,7 @@
         "xdm:status": {
           "title": "Status",
           "type": "string",
-          "enum": [
-            "initiated",
-            "in progress",
-            "approved",
-            "declined"
-          ],
+          "enum": ["initiated", "in progress", "approved", "declined"],
           "description": "Captures the status of the claim for any given point in the application process.",
           "meta:titleId": "claim##xdm:status##title##47911",
           "meta:descriptionId": "claim##xdm:status##description##98791"

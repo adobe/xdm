@@ -27,9 +27,7 @@
               "meta:descriptionId": "itemselector##xdm:index##description##93451"
             }
           },
-          "required": [
-            "xdm:index"
-          ]
+          "required": ["xdm:index"]
         },
         {
           "type": "object",
@@ -43,9 +41,7 @@
               "meta:descriptionId": "itemselector##xdm:id##description##29811"
             }
           },
-          "required": [
-            "xdm:id"
-          ]
+          "required": ["xdm:id"]
         },
         {
           "type": "object",
@@ -59,9 +55,7 @@
               "meta:descriptionId": "itemselector##xdm:type##description##40681"
             }
           },
-          "required": [
-            "xdm:type"
-          ]
+          "required": ["xdm:type"]
         },
         {
           "type": "object",
@@ -75,9 +69,7 @@
               "meta:descriptionId": "itemselector##xdm:schema##description##2051"
             }
           },
-          "required": [
-            "xdm:schema"
-          ]
+          "required": ["xdm:schema"]
         }
       ]
     }

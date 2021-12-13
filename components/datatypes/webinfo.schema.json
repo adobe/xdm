@@ -89,11 +89,7 @@
               "title": "Type",
               "type": "string",
               "description": "The link type.",
-              "enum": [
-                "download",
-                "exit",
-                "other"
-              ],
+              "enum": ["download", "exit", "other"],
               "meta:enum": {
                 "download": "Download",
                 "exit": "Exit",

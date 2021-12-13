@@ -71,10 +71,7 @@
           "meta:descriptionId": "schemadescriptor##xdm:sourceItem##description##11121"
         }
       },
-      "required": [
-        "xdm:sourceSchema",
-        "xdm:sourceVersion"
-      ]
+      "required": ["xdm:sourceSchema", "xdm:sourceVersion"]
     }
   },
   "allOf": [

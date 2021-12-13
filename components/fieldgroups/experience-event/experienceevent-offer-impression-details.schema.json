@@ -24,9 +24,7 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Offer details such as offer name, clicks, dismissals.",
   "definitions": {
     "offer-impression-details": {

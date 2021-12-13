@@ -17,13 +17,7 @@
       "title": "Choice Value",
       "description": "The value specified by the user as their preference",
       "type": "string",
-      "enum": [
-        "yes",
-        "no",
-        "pending",
-        "unknown",
-        "not_applicable"
-      ],
+      "enum": ["yes", "no", "pending", "unknown", "not_applicable"],
       "meta:enum": {
         "yes": "Yes",
         "no": "No",

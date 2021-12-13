@@ -80,29 +80,19 @@
       },
       "anyOf": [
         {
-          "required": [
-            "xdm:title"
-          ]
+          "required": ["xdm:title"]
         },
         {
-          "required": [
-            "xdm:description"
-          ]
+          "required": ["xdm:description"]
         },
         {
-          "required": [
-            "xdm:note"
-          ]
+          "required": ["xdm:note"]
         },
         {
-          "required": [
-            "meta:enum"
-          ]
+          "required": ["meta:enum"]
         }
       ],
-      "required": [
-        "xdm:sourceProperty"
-      ]
+      "required": ["xdm:sourceProperty"]
     }
   },
   "allOf": [

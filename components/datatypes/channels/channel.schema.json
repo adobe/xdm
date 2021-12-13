@@ -28,11 +28,7 @@
         },
         "xdm:mode": {
           "type": "string",
-          "enum": [
-            "push",
-            "pull",
-            "bidirectional"
-          ],
+          "enum": ["push", "pull", "bidirectional"],
           "description": "How experiences are delivered in this channel.",
           "meta:enum": {
             "push": "The publisher of an experience can initiate an experience by sending a message into the channel. Most `push` channels involve some form of subscription or opt-in.",
@@ -140,9 +136,7 @@
       "$ref": "#/definitions/channel"
     }
   ],
-  "required": [
-    "@id"
-  ],
+  "required": ["@id"],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "channel##title##11001",

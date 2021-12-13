@@ -19,9 +19,7 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Steps for setting up any type of appointment with a company.",
   "definitions": {
     "appointment-request-steps": {

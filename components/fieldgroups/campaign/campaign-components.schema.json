@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/campaign"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
   "description": "Captures B2B campaign specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
   "definitions": {
     "campaign-components": {

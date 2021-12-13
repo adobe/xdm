@@ -30,9 +30,7 @@
           "meta:descriptionId": "orgunit##xdm:label##description##60261"
         }
       },
-      "required": [
-        "@id"
-      ]
+      "required": ["@id"]
     }
   },
   "allOf": [

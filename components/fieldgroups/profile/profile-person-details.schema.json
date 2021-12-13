@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Demographic information such as name, gender, and birth date of an individual.",
   "definitions": {
     "profile-person-details": {

@@ -12,9 +12,16 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["financial_services", "telecom", "high_tech", "public_sector"]
+    "industry": [
+      "financial_services",
+      "telecom",
+      "high_tech",
+      "public_sector"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Included for any type of support request initiated by the customer.",
   "definitions": {
     "support-request": {

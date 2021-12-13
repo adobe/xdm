@@ -40,7 +40,9 @@
           "meta:descriptionId": "datasource##xdm:tags##description##69111"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

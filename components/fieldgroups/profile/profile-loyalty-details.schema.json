@@ -21,7 +21,9 @@
       "manufacturing"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Loyalty details such as ID, points, join date, program, and status. ",
   "definitions": {
     "loyalty-details": {

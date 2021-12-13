@@ -122,7 +122,10 @@
           "title": "Screen orientation",
           "type": "string",
           "description": "The current screen orientation such as \"portrait\" or \"landscape\".",
-          "enum": ["portrait", "landscape"],
+          "enum": [
+            "portrait",
+            "landscape"
+          ],
           "meta:enum": {
             "portrait": "Portrait",
             "landscape": "Landscape"

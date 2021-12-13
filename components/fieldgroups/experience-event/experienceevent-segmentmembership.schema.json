@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.",
   "definitions": {
     "experienceevent-segmentmembership": {

@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Customer notification events for data ingestion processes.",
   "definitions": {
     "ingestion-notification": {
@@ -43,7 +45,10 @@
           "title": "Ingestion Status",
           "type": "string",
           "description": "The current status of this ingestion process.",
-          "enum": ["success", "failure"],
+          "enum": [
+            "success",
+            "failure"
+          ],
           "meta:enum": {
             "success": "Sucess Status",
             "failure": "Failure Status"
@@ -90,7 +95,11 @@
         "xdm:inputFormat": {
           "title": "Input File Format",
           "description": "Metadata describing the INGEST format of the data being loaded (e.g. Parquet, CSV, JSON).",
-          "enum": ["csv", "parquet", "json"],
+          "enum": [
+            "csv",
+            "parquet",
+            "json"
+          ],
           "meta:enum": {
             "csv": "CSV format of the file",
             "parquet": "Parquet format of the file",

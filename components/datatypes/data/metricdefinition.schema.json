@@ -28,13 +28,23 @@
         "xdm:measurement": {
           "type": "string",
           "description": "How to take measures of this metric.",
-          "examples": ["distance", "time", "price", "count"],
+          "examples": [
+            "distance",
+            "time",
+            "price",
+            "count"
+          ],
           "meta:descriptionId": "metricdefinition##xdm:measurement##description##34121"
         },
         "xdm:unit": {
           "type": "string",
           "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)",
-          "examples": ["m", "kg", "s", "USD"],
+          "examples": [
+            "m",
+            "kg",
+            "s",
+            "USD"
+          ],
           "meta:descriptionId": "metricdefinition##xdm:unit##description##62961"
         }
       }
@@ -48,7 +58,12 @@
       "$ref": "#/definitions/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "metricdefinition##title##28671",

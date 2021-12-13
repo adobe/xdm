@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Phone number such as fax, mobile, home, and work.",
   "definitions": {
     "profile-phones": {

@@ -21,7 +21,9 @@
       "media_and_entertainment"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Referral steps such as start, save, failure, and complete.",
   "definitions": {
     "referral-steps": {

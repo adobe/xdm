@@ -38,7 +38,10 @@
           "meta:descriptionId": "eventRelationship##xdm:destinationVersion##description##87811"
         }
       },
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [

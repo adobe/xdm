@@ -37,7 +37,9 @@
           "meta:descriptionId": "advertising-break##xdm:offset##description##6161"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

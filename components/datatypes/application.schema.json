@@ -89,17 +89,24 @@
         "xdm:isClose": {
           "title": "Is Close",
           "type": "boolean",
-          "description": "Close of an application."
+          "description": "Close of an application.",
+          "meta:titleId": "application##xdm:isClose##title##38721",
+          "meta:descriptionId": "application##xdm:isClose##description##28741"
         },
         "xdm:closeType": {
           "title": "Close Type",
           "type": "string",
           "description": "Type of application close, sent on application isClose. Type is 'close' on graceful termination of an application, or 'unknown' when application termination source is unknown.",
-          "enum": ["close", "unknown"],
+          "enum": [
+            "close",
+            "unknown"
+          ],
           "meta:enum": {
             "close": "Close",
             "unknown": "Unknown"
-          }
+          },
+          "meta:titleId": "application##xdm:closeType##title##15961",
+          "meta:descriptionId": "application##xdm:closeType##description##55241"
         }
       }
     },
@@ -108,7 +115,9 @@
         "xdm:isLaunch": {
           "title": "Is Launch",
           "type": "boolean",
-          "description": "Launch of an application."
+          "description": "Launch of an application.",
+          "meta:titleId": "application##xdm:isLaunch##title##41181",
+          "meta:descriptionId": "application##xdm:isLaunch##description##80981"
         }
       }
     },
@@ -117,7 +126,9 @@
         "xdm:isInstall": {
           "title": "Is Install",
           "type": "boolean",
-          "description": "Install of an application."
+          "description": "Install of an application.",
+          "meta:titleId": "application##xdm:isInstall##title##85691",
+          "meta:descriptionId": "application##xdm:isInstall##description##36641"
         }
       }
     },
@@ -126,7 +137,9 @@
         "xdm:isUpgrade": {
           "title": "Is Upgrade",
           "type": "boolean",
-          "description": "Upgrade of an application."
+          "description": "Upgrade of an application.",
+          "meta:titleId": "application##xdm:isUpgrade##title##621",
+          "meta:descriptionId": "application##xdm:isUpgrade##description##88461"
         }
       }
     },
@@ -136,7 +149,9 @@
           "title": "Session Length",
           "type": "integer",
           "minimum": 0,
-          "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground."
+          "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground.",
+          "meta:titleId": "application##xdm:sessionLength##title##71421",
+          "meta:descriptionId": "application##xdm:sessionLength##description##20131"
         }
       }
     },
@@ -146,13 +161,18 @@
           "title": "User Perspective",
           "type": "string",
           "description": "The perspective/physical relationship between the user and the app/brand at the time the event happened.  The most common are the app being in the foreground with the user directly interacting with it vs the app being in the background and still generating events.  Detached means the event was related to the app but didn't come directly from the app like the sending of an email or push notification from an external system.  Understanding the perspective of the user in relation to the app helps with accuratly generating sessions as the majority of the time you will not want to include background and detached events as part of an active session.",
-          "enum": ["foreground", "background", "detached"],
+          "enum": [
+            "foreground",
+            "background",
+            "detached"
+          ],
           "meta:enum": {
             "foreground": "Foreground",
             "background": "Background",
             "detached": "Detached"
           },
-          "meta:descriptionId": "application##xdm:userPerspective##description##46671"
+          "meta:descriptionId": "application##xdm:userPerspective##description##46671",
+          "meta:titleId": "application##xdm:userPerspective##title##35971"
         }
       }
     }

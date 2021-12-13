@@ -26,7 +26,11 @@
               "title": "Type",
               "type": "string",
               "description": "Type of expression, for example, PQL, Query Service, or Adobe Audience Manager.",
-              "meta:enum": ["PQL", "AAM", "QUERYSERVICE"],
+              "meta:enum": [
+                "PQL",
+                "AAM",
+                "QUERYSERVICE"
+              ],
               "meta:titleId": "segmentdefinition-expression##xdm:expressionType##title##31171",
               "meta:descriptionId": "segmentdefinition-expression##xdm:expressionType##description##36531"
             },

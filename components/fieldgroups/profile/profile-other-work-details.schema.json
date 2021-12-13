@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Captures information regarding additional/other work-related details of the individual such as work address, work email, work phone number, and organizations to which the profile belongs.",
   "definitions": {
     "profile-other-work-details": {

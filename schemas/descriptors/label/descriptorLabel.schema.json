@@ -36,7 +36,9 @@
           "meta:descriptionId": "descriptorLabel##xdm:labels##description##40961"
         }
       },
-      "required": ["xdm:labels"]
+      "required": [
+        "xdm:labels"
+      ]
     }
   },
   "allOf": [

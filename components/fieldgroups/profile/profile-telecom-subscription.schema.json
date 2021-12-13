@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["telecom"]
+    "industry": [
+      "telecom"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
   "definitions": {
     "telecom-subscriptions": {
@@ -66,7 +70,13 @@
                   "xdm:connectionType": {
                     "title": "Connection Type",
                     "type": "string",
-                    "enum": ["cable", "dsl", "fiber", "mobile", "satellite"],
+                    "enum": [
+                      "cable",
+                      "dsl",
+                      "fiber",
+                      "mobile",
+                      "satellite"
+                    ],
                     "meta:enum": {
                       "cable": "Cable",
                       "dsl": "DSL",

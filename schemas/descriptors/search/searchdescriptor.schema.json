@@ -109,7 +109,9 @@
           "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##68811"
         }
       },
-      "required": ["search:indexed"]
+      "required": [
+        "search:indexed"
+      ]
     }
   },
   "allOf": [

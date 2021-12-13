@@ -30,7 +30,9 @@
           "meta:descriptionId": "geounit##xdm:label##description##16511"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

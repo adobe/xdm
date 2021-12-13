@@ -20,7 +20,9 @@
       "manufacturing"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders.",
   "definitions": {
     "quote-request-details": {

@@ -12,7 +12,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/marketing-list"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/marketing-list"
+  ],
   "description": "Marketing list relationship attributes form a single data source. This is the place to add attributes if there is a need to do any kind of segmentation in future.",
   "definitions": {
     "marketing-list-components": {

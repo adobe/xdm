@@ -14,7 +14,9 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Captures B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "definitions": {
     "b2b-person-segment-traits": {
@@ -157,12 +159,16 @@
             "xdm:companyName": {
               "title": "Company Name",
               "description": "Name of the company a business person is associated with.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:companyName##title##78601",
+              "meta:descriptionId": "b2b-person-details##xdm:companyName##description##31101"
             },
             "xdm:companyWebsite": {
               "title": "Company Website",
               "description": "Website of the company a business person is associated with.",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
+              "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521"
             }
           }
         }

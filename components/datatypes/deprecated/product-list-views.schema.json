@@ -10,7 +10,9 @@
   "title": "Product List Views",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
   "description": "The commerce metric `product-list-views` describes how often a product list has been seen by a shopper. The most common use case is to open the shopping cart to inspect its contents.",
   "definitions": {
     "metricdefinition": {
@@ -47,7 +49,12 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "product-list-views##title##31451",

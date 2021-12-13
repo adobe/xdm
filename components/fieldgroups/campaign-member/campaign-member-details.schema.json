@@ -15,7 +15,9 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/campaign-member"
+  ],
   "description": "An XDM Business Campaign Member.",
   "definitions": {
     "campaign-member-details": {

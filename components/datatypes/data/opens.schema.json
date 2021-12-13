@@ -10,7 +10,9 @@
   "title": "Opens",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
   "description": "The direct-marketing metric `opens` describes the number of times the direct marketing messages (email, SMS, Push Notifications etc) have been opened/swiped/touched by the recipients.",
   "definitions": {
     "metricdefinition": {
@@ -47,7 +49,12 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "opens##title##35151",

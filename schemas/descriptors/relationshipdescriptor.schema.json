@@ -98,7 +98,9 @@
           "title": "Relationship Cardinality",
           "type": "string",
           "description": "Source to Destination cardinality",
-          "enum": ["M:1"],
+          "enum": [
+            "M:1"
+          ],
           "default": "M:1",
           "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##16001",
           "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##17261"
@@ -106,13 +108,20 @@
       },
       "oneOf": [
         {
-          "required": ["xdm:label"]
+          "required": [
+            "xdm:label"
+          ]
         },
         {
-          "required": ["xdm:sourceProperty"]
+          "required": [
+            "xdm:sourceProperty"
+          ]
         }
       ],
-      "required": ["xdm:destinationSchema", "xdm:destinationVersion"]
+      "required": [
+        "xdm:destinationSchema",
+        "xdm:destinationVersion"
+      ]
     }
   },
   "allOf": [

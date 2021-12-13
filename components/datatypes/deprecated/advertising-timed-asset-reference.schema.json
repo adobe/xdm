@@ -79,7 +79,9 @@
           "meta:descriptionId": "advertising-timed-asset-reference##xmpDM:duration##description##50351"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

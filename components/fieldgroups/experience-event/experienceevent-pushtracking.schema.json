@@ -10,7 +10,9 @@
   "title": "Push notification tracking",
   "type": "object",
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "push notification tracking details",
   "definitions": {
     "experienceevent-pushtracking": {
@@ -60,7 +62,9 @@
             "xdm:isLaunch": {
               "title": "Is Launch",
               "type": "boolean",
-              "description": "Indicates whether this push notification interaction launched the application."
+              "description": "Indicates whether this push notification interaction launched the application.",
+              "meta:titleId": "experienceevent-pushtracking##xdm:isLaunch##title##3431",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:isLaunch##description##77671"
             }
           },
           "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##4781",

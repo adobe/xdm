@@ -22,7 +22,9 @@
           "meta:descriptionId": "namespace##xdm:code##description##26231"
         }
       },
-      "required": ["xdm:code"]
+      "required": [
+        "xdm:code"
+      ]
     }
   },
   "allOf": [

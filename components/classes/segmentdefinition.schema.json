@@ -51,14 +51,22 @@
           "type": "string",
           "title": "Segment status",
           "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
-          "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
+          "enum": [
+            "ACTIVE",
+            "INACTIVE",
+            "DELETED",
+            "DRAFT",
+            "REVOKED"
+          ],
           "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##63401",
           "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##29131"
         }
       }
     }
   },
-  "required": ["xdm:segmentName"],
+  "required": [
+    "xdm:segmentName"
+  ],
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

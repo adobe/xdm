@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/account-person"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/account-person"
+  ],
   "description": "XDM business account person relation component details.",
   "definitions": {
     "account-person-components": {

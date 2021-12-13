@@ -13,7 +13,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["all"]
+    "industry": [
+      "all"
+    ]
   },
   "meta:extends": [
     "https://ns.adobe.com/xdm/data/record",

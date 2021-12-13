@@ -12,9 +12,13 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["travel_and_hospitality"]
+    "industry": [
+      "travel_and_hospitality"
+    ]
   },
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "For restaurant information such as address, cuisine, ID and name.",
   "definitions": {
     "restaurant": {
@@ -107,7 +111,12 @@
           "description": "Delivery partners available from the restaurant.",
           "items": {
             "type": "string",
-            "enum": ["grubhub", "ubereats", "doordash", "other"],
+            "enum": [
+              "grubhub",
+              "ubereats",
+              "doordash",
+              "other"
+            ],
             "meta:enum": {
               "grubhub": "GrubHub",
               "ubereats": "UberEats",

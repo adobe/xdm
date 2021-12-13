@@ -26,7 +26,9 @@
       "public_sector"
     ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
   "description": "Social network usage information such as share, content, and network.",
   "definitions": {
     "social-network-usage-details": {

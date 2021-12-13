@@ -27,7 +27,9 @@
       "public_sector"
     ]
   },
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "This class is used to capture minimum set of properties that define a product.",
   "definitions": {
     "product": {

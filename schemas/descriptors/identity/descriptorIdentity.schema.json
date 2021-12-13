@@ -35,7 +35,10 @@
           "title": "Property",
           "type": "string",
           "description": "Property of the `xdm:namespace` field.",
-          "enum": ["xdm:id", "xdm:code"],
+          "enum": [
+            "xdm:id",
+            "xdm:code"
+          ],
           "meta:titleId": "descriptorIdentity##xdm:property##title##65011",
           "meta:descriptionId": "descriptorIdentity##xdm:property##description##61601"
         },
@@ -47,7 +50,11 @@
           "meta:descriptionId": "descriptorIdentity##xdm:isPrimary##description##19701"
         }
       },
-      "required": ["xdm:sourceProperty", "xdm:namespace", "xdm:property"]
+      "required": [
+        "xdm:sourceProperty",
+        "xdm:namespace",
+        "xdm:property"
+      ]
     }
   },
   "allOf": [

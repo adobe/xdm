@@ -18,7 +18,12 @@
           "description": "Amazon Device Messaging (ADM) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -33,7 +38,12 @@
           "description": "External agency channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -48,7 +58,12 @@
           "description": "Apple Push Notification Service (APNS) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -63,7 +78,12 @@
           "description": "Application channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -78,7 +98,12 @@
           "description": "Baidu Cloud Push Service channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -93,7 +118,12 @@
           "description": "Experience channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -108,7 +138,12 @@
           "description": "Mail delivered by a postal service channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -123,7 +158,12 @@
           "description": "Email messages, delivered via SMTP to list subscribers channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -138,7 +178,12 @@
           "description": "The Facebook news feed channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -153,7 +198,12 @@
           "description": "Fax or telefacsimile channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -168,7 +218,12 @@
           "description": "Google Cloud Messaging (GCM) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -183,7 +238,12 @@
           "description": "Line Platform Notification (LINE) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -198,7 +258,12 @@
           "description": "Native mobile applications that are installed through an app store channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -213,7 +278,12 @@
           "description": "Microsoft Push Notification Service (MPNS) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -228,7 +298,12 @@
           "description": "The telephone channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -243,7 +318,12 @@
           "description": "Short Message Service delivered to a mobile phone channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -258,7 +338,12 @@
           "description": "Twitter feed channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -273,7 +358,12 @@
           "description": "World Wide Web and mobile web channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -288,7 +378,12 @@
           "description": "Web Page channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -303,7 +398,12 @@
           "description": "WeChat Platform Notification channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",
@@ -318,7 +418,12 @@
           "description": "Windows Push Notification Service (WNS) channel OptInOut.",
           "type": "string",
           "default": "not_provided",
-          "enum": ["not_provided", "pending", "in", "out"],
+          "enum": [
+            "not_provided",
+            "pending",
+            "in",
+            "out"
+          ],
           "meta:enum": {
             "not_provided": "Not provided",
             "pending": "Pending verification",

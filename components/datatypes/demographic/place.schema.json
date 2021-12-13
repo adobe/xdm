@@ -86,7 +86,9 @@
           "meta:descriptionId": "place##xdm:containsPlaces##description##61071"
         }
       },
-      "required": ["@id"]
+      "required": [
+        "@id"
+      ]
     }
   },
   "allOf": [

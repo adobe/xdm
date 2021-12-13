@@ -50,7 +50,12 @@
         "xdm:gender": {
           "title": "Gender",
           "type": "string",
-          "enum": ["male", "female", "not_specified", "non_specific"],
+          "enum": [
+            "male",
+            "female",
+            "not_specified",
+            "non_specific"
+          ],
           "meta:enum": {
             "male": "Male",
             "female": "Female",
@@ -65,7 +70,13 @@
         "xdm:maritalStatus": {
           "title": "Marital Status",
           "type": "string",
-          "enum": ["married", "single", "divorced", "widowed", "not_specified"],
+          "enum": [
+            "married",
+            "single",
+            "divorced",
+            "widowed",
+            "not_specified"
+          ],
           "meta:enum": {
             "married": "Married",
             "single": "Single",

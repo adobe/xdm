@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/record"
+  ],
   "description": "Destinations Segment Mapping Schema.",
   "definitions": {
     "destination-segment": {

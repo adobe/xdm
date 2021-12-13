@@ -10,7 +10,9 @@
   "title": "Product Views",
   "type": "object",
   "meta:extensible": true,
-  "meta:extends": ["https://ns.adobe.com/xdm/data/metricdefinition"],
+  "meta:extends": [
+    "https://ns.adobe.com/xdm/data/metricdefinition"
+  ],
   "description": "The commerce metric `productViews` describes the number of product views that have occurred. Because the number of products on a page might be greater than one, this number may differ from the page view count of product pages.",
   "definitions": {
     "metricdefinition": {
@@ -47,7 +49,12 @@
       "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
     }
   ],
-  "required": ["@id", "schema:name", "xdm:measurement", "xdm:unit"],
+  "required": [
+    "@id",
+    "schema:name",
+    "xdm:measurement",
+    "xdm:unit"
+  ],
   "meta:status": "deprecated",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "product-views##title##65631",

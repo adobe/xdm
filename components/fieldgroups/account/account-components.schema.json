@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/account"
+  ],
   "description": "XDM Business Account relationships for one data source.",
   "definitions": {
     "account-components": {

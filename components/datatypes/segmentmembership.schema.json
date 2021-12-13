@@ -74,7 +74,12 @@
             "xdm:payloadType": {
               "title": "Payload Type",
               "type": "string",
-              "enum": ["boolean", "number", "propensity", "string"],
+              "enum": [
+                "boolean",
+                "number",
+                "propensity",
+                "string"
+              ],
               "meta:enum": {
                 "boolean": "Boolean",
                 "number": "Number",
@@ -86,7 +91,9 @@
               "meta:descriptionId": "segmentmembership##xdm:payloadType##description##2701"
             }
           },
-          "required": ["xdm:payloadType"],
+          "required": [
+            "xdm:payloadType"
+          ],
           "meta:titleId": "segmentmembership##xdm:payload##title##35611",
           "meta:descriptionId": "segmentmembership##xdm:payload##description##58191"
         },
@@ -103,7 +110,11 @@
           "type": "string",
           "description": "Is the segment participation realized as part of the current request.",
           "default": "realized",
-          "enum": ["existing", "realized", "exited"],
+          "enum": [
+            "existing",
+            "realized",
+            "exited"
+          ],
           "meta:enum": {
             "existing": "Entity continues to be in the segment.",
             "realized": "Entity is entering the segment.",

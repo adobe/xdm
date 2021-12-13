@@ -32,7 +32,10 @@
           "meta:descriptionId": "descriptorReferenceIdentity##xdm:identityNamespace##description##59021"
         }
       },
-      "required": ["xdm:sourceProperty", "xdm:identityNamespace"]
+      "required": [
+        "xdm:sourceProperty",
+        "xdm:identityNamespace"
+      ]
     }
   },
   "allOf": [

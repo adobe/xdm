@@ -11,7 +11,9 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Demographic information such as name, gender, and birth date of an individual.",
   "definitions": {
     "person": {
@@ -211,7 +213,12 @@
             "xdm:gender": {
               "title": "Gender",
               "type": "string",
-              "enum": ["male", "female", "not_specified", "non_specific"],
+              "enum": [
+                "male",
+                "female",
+                "not_specified",
+                "non_specific"
+              ],
               "meta:enum": {
                 "male": "Male",
                 "female": "Female",

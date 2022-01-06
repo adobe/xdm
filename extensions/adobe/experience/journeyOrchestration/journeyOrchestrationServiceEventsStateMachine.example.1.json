@@ -1,0 +1,9 @@
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/stateMachine": {
+      "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+      "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventClass": "external",
+      "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCategory": "unitary",
+      "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "discard",
+      "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "reentranceNotAllowed"
+  }
+}

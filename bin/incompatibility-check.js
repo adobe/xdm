@@ -33,6 +33,7 @@ const ignoredForRequiredValidation =
     ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
+    "../schemas/descriptors/status/descriptorDeprecated.schema.json",
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
     "../components/classes/experienceevent.schema.json",
     "../components/classes/segmentdefinition.schema.json",

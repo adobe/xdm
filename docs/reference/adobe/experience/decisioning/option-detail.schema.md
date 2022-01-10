@@ -14,10 +14,12 @@ Detail about the entity that represents one of the possible selections or choice
 
 * Decision Option Details `https://ns.adobe.com/experience/decisioning/option-detail`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Content Component Details](content-component-details.schema.md) `https://ns.adobe.com/experience/decisioning/content-component-details`
   * [Measure](../../../datatypes/data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
 
 
-## Decision Option Details Example
+## Decision Option Details Examples
+
 ```json
 {
   "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
@@ -37,6 +39,65 @@ Detail about the entity that represents one of the possible selections or choice
 }
 ```
 
+```json
+{
+  "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
+  "xdm:name": "Introduction to machine learning",
+  "xdm:characteristics": {
+    "duration": "30",
+    "level": "intermediate",
+    "format": "Syllable"
+  },
+  "xdm:score": 90,
+  "xdm:optionContent": {
+    "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
+    "dc:format": "text/x-handlebars-template+html",
+    "dc:language": [
+      "en"
+    ],
+    "repo:id": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+    "xdm:content": "text"
+  },
+  "xdm:propositionsTotal": {
+    "xdm:value": 5000
+  },
+  "xdm:propositionsProfile": {
+    "xdm:value": 3
+  }
+}
+```
+
+```json
+{
+  "xdm:id": "xcore:personalized-offer:e526a1503bf29f8",
+  "xdm:name": "Introduction to machine learning",
+  "xdm:characteristics": {
+    "duration": "30",
+    "level": "intermediate",
+    "format": "Syllable"
+  },
+  "xdm:score": 90,
+  "xdm:optionContent": {
+    "@type": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
+    "dc:format": "image/jpeg",
+    "dc:language": [
+      "en"
+    ],
+    "repo:id": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+    "xdm:content": "text",
+    "xdm:deliveryURL": "https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg",
+    "xdm:linkURL": "https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
+  },
+  "xdm:propositionsTotal": {
+    "xdm:value": 4000
+  },
+  "xdm:propositionsProfile": {
+    "xdm:value": 3
+  }
+}
+```
+
+
 # Decision Option Details Properties
 
 | Property | Type | Required | Defined by |
@@ -47,6 +108,7 @@ Detail about the entity that represents one of the possible selections or choice
 | [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | Decision Option Details (this schema) |
 | [xdm:id](#xdmid) | `string` | **Required** | Decision Option Details (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Decision Option Details (this schema) |
+| [xdm:optionContent](#xdmoptioncontent) | Content Component Details | Optional | Decision Option Details (this schema) |
 | [xdm:score](#xdmscore) | `number` | Optional | Decision Option Details (this schema) |
 | [xdm:tags](#xdmtags) | `string[]` | Optional | Decision Option Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -167,6 +229,25 @@ Option name. The name is displayed in various user interfaces.
 
 `string`
 
+
+
+
+
+
+## xdm:optionContent
+### Option Content
+
+Additional properties or attributes related to offer content
+
+`xdm:optionContent`
+* is optional
+* type: Content Component Details
+* defined in this schema
+
+### xdm:optionContent Type
+
+
+* [Content Component Details](content-component-details.schema.md) – `https://ns.adobe.com/experience/decisioning/content-component-details`
 
 
 

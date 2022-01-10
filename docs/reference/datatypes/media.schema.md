@@ -142,6 +142,9 @@ Information related to timed media main content, such as ads and chapters.
 | `xdm:progress50`|  | Optional |
 | `xdm:progress75`|  | Optional |
 | `xdm:progress95`|  | Optional |
+| `xdm:publisher`| string | Optional |
+| `xdm:radioStation`| string | Optional |
+| `xdm:recordLabel`| string | Optional |
 | `xdm:resumes`|  | Optional |
 | `xdm:starts`|  | Optional |
 | `xdm:timePlayed`|  | Optional |
@@ -1241,6 +1244,69 @@ Indicates that the playhead passed the 95% marker of media based on stream lengt
 
 
 * []() – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+
+
+#### xdm:publisher
+##### Audio content publisher
+
+Name of the audio content publisher.
+
+`xdm:publisher`
+* is optional
+* type: `string`
+
+##### xdm:publisher Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:radioStation
+##### Radio station
+
+Name / ID of the radio station.
+
+`xdm:radioStation`
+* is optional
+* type: `string`
+
+##### xdm:radioStation Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:recordLabel
+##### Record label
+
+Name of the record label.
+
+`xdm:recordLabel`
+* is optional
+* type: `string`
+
+##### xdm:recordLabel Type
+
+
+`string`
+
 
 
 

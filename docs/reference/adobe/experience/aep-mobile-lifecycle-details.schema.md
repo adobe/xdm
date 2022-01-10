@@ -86,7 +86,9 @@ Unknown type ``.
       "title": "Session Length",
       "type": "integer",
       "minimum": 0,
-      "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground."
+      "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground.",
+      "meta:titleId": "application##xdm:sessionLength##title##71421",
+      "meta:descriptionId": "application##xdm:sessionLength##description##20131"
     }
   },
   "simpletype": "complex"

@@ -23,14 +23,6 @@ Details related to the application generated interactions. Application refers to
 {
   "xdm:id": "A123",
   "xdm:name": "Myapp",
-  "xdm:version": "1.0.1"
-}
-```
-
-```json
-{
-  "xdm:id": "A123",
-  "xdm:name": "Myapp",
   "xdm:version": "1.0.1",
   "xdm:isLaunch": true,
   "xdm:userPerspective": "foreground"
@@ -45,6 +37,14 @@ Details related to the application generated interactions. Application refers to
   "xdm:isClose": true,
   "xdm:closeType": "close",
   "xdm:sessionlength": 5030
+}
+```
+
+```json
+{
+  "xdm:id": "A123",
+  "xdm:name": "Myapp",
+  "xdm:version": "1.0.1"
 }
 ```
 

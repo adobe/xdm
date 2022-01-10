@@ -39,6 +39,16 @@
                     "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##71711",
                     "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##28141"
                 },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": {
+                    "title": "isSendTimeOptimized",
+                    "type": "boolean",
+                    "description": "True if the message execution is send time optimized."
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": {
+                    "title": "isTestExecution",
+                    "type": "boolean",
+                    "description": "True if the message is sent as Test Execution."
+                },
                 "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": {
                     "title": "Address",
                     "type": "string",
@@ -96,6 +106,8 @@
                 "@id": "https://ns.adobe.com/xdm/channels/email"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
             "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
             "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
             "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"

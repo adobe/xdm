@@ -39,12 +39,12 @@
               "description": "The error code indicating the reason for corresponding eventType"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventClass": {
-              "title": "Event Code",
+              "title": "Event Class",
               "type": "string",
               "description": "Incoming event class indicating if the event is external or internal"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCategory": {
-              "title": "Event Code",
+              "title": "Event Category",
               "type": "string",
               "description": "Incoming event category indicating if the event is an unitary or business event"
             }

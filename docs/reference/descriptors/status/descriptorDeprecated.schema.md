@@ -1,56 +1,60 @@
 
-# Identity Descriptor Schema
+# Deprecated Field Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity
+https://ns.adobe.com/xdm/descriptors/descriptorDeprecated
 ```
 
-Used to mark a field as an identity.
+Used to mark one or more standard fields as deprecated for the specific ImsOrg.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/identity/descriptorIdentity.schema.json](descriptors/identity/descriptorIdentity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/status/descriptorDeprecated.schema.json](descriptors/status/descriptorDeprecated.schema.json) |
 ## Schema Hierarchy
 
-* Identity Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorIdentity`
+* Deprecated Field Descriptor `https://ns.adobe.com/xdm/descriptors/descriptorDeprecated`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Identity Descriptor Examples
+## Deprecated Field Descriptor Examples
 
 ```json
 {
-  "@type": "xdm:descriptorIdentity",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "@type": "xdm:descriptorDeprecated",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "12345",
-  "xdm:property": "xdm:id"
+  "xdm:sourceProperty": "/courtesyTitle"
 }
 ```
 
 ```json
 {
-  "@type": "xdm:descriptorIdentity",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "@type": "xdm:descriptorDeprecated",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "AAM",
-  "xdm:property": "xdm:code",
-  "xdm:isPrimary": true
+  "xdm:sourceProperty": "/person/gender"
+}
+```
+
+```json
+{
+  "@type": "xdm:descriptorDeprecated",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": [
+    "/courtesyTitle",
+    "/suffix"
+  ]
 }
 ```
 
 
-# Identity Descriptor Properties
+# Deprecated Field Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | Identity Descriptor (this schema) |
-| [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | Identity Descriptor (this schema) |
-| [xdm:namespace](#xdmnamespace) | `string` | Optional | Identity Descriptor (this schema) |
-| [xdm:property](#xdmproperty) | `enum` | Optional | Identity Descriptor (this schema) |
+| [@type](#type) | `const` | Optional | Deprecated Field Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
@@ -89,69 +93,9 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:descriptorIdentity"
+"xdm:descriptorDeprecated"
 ```
 
-
-
-
-
-## xdm:isPrimary
-### Is primary key or not
-
-When present, only one field should be marked as the primary. Default is false.
-
-`xdm:isPrimary`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:isPrimary Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:namespace
-### Namespace
-
-Identity ID or Code.
-
-`xdm:namespace`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:namespace Type
-
-
-`string`
-
-
-
-
-
-
-## xdm:property
-### Property
-
-Property of the `xdm:namespace` field.
-
-`xdm:property`
-* is optional
-* type: `enum`
-* defined in this schema
-
-The value of this property **must** be equal to one of the [known values below](#xdmproperty-known-values).
-
-### xdm:property Known Values
-| Value | Description |
-|-------|-------------|
-| `xdm:id` |  |
-| `xdm:code` |  |
 
 
 

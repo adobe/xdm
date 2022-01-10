@@ -925,6 +925,36 @@ Unknown type `object`.
       "type": "object",
       "description": "Timed media properties related to the content playback's quality of experience (QoE).",
       "properties": {
+        "xdm:error": {
+          "title": "Custom error object",
+          "type": "object",
+          "description": "Quality of experience (QoE) custom error information.",
+          "properties": {
+            "xdm:errorID": {
+              "title": "Error ID",
+              "type": "string",
+              "description": "The error ID.",
+              "minLength": 1
+            },
+            "xdm:errorSource": {
+              "title": "Error source",
+              "type": "string",
+              "description": "The error source.",
+              "enum": [
+                "player",
+                "external"
+              ],
+              "meta:enum": {
+                "player": "Player source.",
+                "external": "External source."
+              }
+            }
+          },
+          "required": [
+            "xdm:errorID",
+            "xdm:errorSource"
+          ]
+        },
         "xdm:errors": {
           "title": "Errors",
           "$ref": "https://ns.adobe.com/xdm/data/measure",

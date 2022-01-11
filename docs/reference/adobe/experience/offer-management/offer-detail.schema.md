@@ -43,6 +43,7 @@ Offer detail is used to capture the attributes of an offer in a proposition or r
 | [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmcharacteristics) |
 | [xdm:id](#xdmid) | `string` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmid) |
 | [xdm:name](#xdmname) | `string` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmname) |
+| [xdm:optionContent](#xdmoptioncontent) | Content Component Details | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmoptioncontent) |
 | [xdm:score](#xdmscore) | `number` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmscore) |
 | [xdm:tags](#xdmtags) | `string[]` | Optional | [Decision Option Details](../decisioning/option-detail.schema.md#xdmtags) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -163,6 +164,25 @@ Option name. The name is displayed in various user interfaces.
 
 `string`
 
+
+
+
+
+
+## xdm:optionContent
+### Option Content
+
+Additional properties or attributes related to offer content
+
+`xdm:optionContent`
+* is optional
+* type: Content Component Details
+* defined in [Decision Option Details](../decisioning/option-detail.schema.md#xdmoptioncontent)
+
+### xdm:optionContent Type
+
+
+* [Content Component Details](../decisioning/content-component-details.schema.md) – `https://ns.adobe.com/experience/decisioning/content-component-details`
 
 
 

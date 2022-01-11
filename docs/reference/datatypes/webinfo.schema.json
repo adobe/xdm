@@ -119,7 +119,9 @@
                         "xdm:region": {
                             "title": "Region",
                             "type": "string",
-                            "description": "The region name represents the region or area of a document that the web link belongs to such as header or footer."
+                            "description": "The region name represents the region or area of a document that the web link belongs to such as header or footer.",
+                            "meta:titleId": "webinfo##xdm:region##title##24931",
+                            "meta:descriptionId": "webinfo##xdm:region##description##45421"
                         },
                         "xdm:linkClicks": {
                             "title": "Link Clicks",
@@ -197,23 +199,6 @@
                 "xdm:name": "product home",
                 "xdm:URL": "https://www.example.com/products",
                 "xdm:errorPage": false,
-                "xdm:homePage": true,
-                "xdm:pageViews": {
-                    "xdm:value": 1
-                }
-            },
-            "xdm:webReferrer": {
-                "xdm:URL": "https://www.some-adserver.com",
-                "xdm:referrerType": "external"
-            }
-        },
-        {
-            "xdm:webPageDetails": {
-                "xdm:siteSection": "Product section",
-                "xdm:server": "example.com",
-                "xdm:name": "product home",
-                "xdm:URL": "https://www.example.com/products",
-                "xdm:errorPage": false,
                 "xdm:homePage": true
             },
             "xdm:webInteraction": {
@@ -228,6 +213,23 @@
             "xdm:webReferrer": {
                 "xdm:URL": "https://www.example.com/products",
                 "xdm:type": "internal"
+            }
+        },
+        {
+            "xdm:webPageDetails": {
+                "xdm:siteSection": "Product section",
+                "xdm:server": "example.com",
+                "xdm:name": "product home",
+                "xdm:URL": "https://www.example.com/products",
+                "xdm:errorPage": false,
+                "xdm:homePage": true,
+                "xdm:pageViews": {
+                    "xdm:value": 1
+                }
+            },
+            "xdm:webReferrer": {
+                "xdm:URL": "https://www.some-adserver.com",
+                "xdm:referrerType": "external"
             }
         }
     ]

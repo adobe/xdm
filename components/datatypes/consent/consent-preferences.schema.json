@@ -120,6 +120,28 @@
       },
       "required": ["xdm:val"]
     },
+    "adid-consent-field": {
+      "type": "object",
+      "properties": {
+        "xdm:val": {
+          "description": "The value specified by the user as their consent choice or the basis of processing that precludes the need for user consent",
+          "$ref": "#/definitions/choice-value",
+          "meta:descriptionId": "consents-and-preferences##xdm:val##description##35561"
+        },
+        "xdm:idType": {
+          "title": "Ad ID Type",
+          "description": "The ad ID type (IDFA or GAID)",
+          "meta:descriptionId": "consents-and-preferences##xdm:itType##description##35561",
+          "type": "string",
+          "enum": ["IDFA", "GAID"],
+          "meta:enum": {
+            "IDFA": "Apple's ID for Advertisers (IDFA)",
+            "GAID": "Google's Advertiser ID (GAID) also known as Android Advertiser ID (AAID)"
+          }
+        }
+      },
+      "required": ["xdm:val"]
+    },
     "personalization-field": {
       "type": "object",
       "properties": {
@@ -391,8 +413,8 @@
             },
             "xdm:adID": {
               "title": "Use Advertiser ID",
-              "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-              "$ref": "#/definitions/consent-field",
+              "description": "The Advertiser ID (IDFA / GAID) can be used to link user across apps on this device",
+              "$ref": "#/definitions/adid-consent-field",
               "meta:titleId": "consents-and-preferences##xdm:adID##title##86491",
               "meta:descriptionId": "consents-and-preferences##xdm:adID##description##67061"
             },
@@ -471,8 +493,8 @@
                     },
                     "xdm:adID": {
                       "title": "Use Advertiser ID",
-                      "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-                      "$ref": "#/definitions/consent-field",
+                      "description": "The Advertiser ID (IDFA / GAID) can be used to link user across apps on this device",
+                      "$ref": "#/definitions/adid-consent-field",
                       "meta:titleId": "consents-and-preferences##xdm:adID##title##65941",
                       "meta:descriptionId": "consents-and-preferences##xdm:adID##description##17511"
                     },

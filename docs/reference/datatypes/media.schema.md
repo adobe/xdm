@@ -142,6 +142,9 @@ Information related to timed media main content, such as ads and chapters.
 | `xdm:progress50`|  | Optional |
 | `xdm:progress75`|  | Optional |
 | `xdm:progress95`|  | Optional |
+| `xdm:publisher`| string | Optional |
+| `xdm:radioStation`| string | Optional |
+| `xdm:recordLabel`| string | Optional |
 | `xdm:resumes`|  | Optional |
 | `xdm:starts`|  | Optional |
 | `xdm:timePlayed`|  | Optional |
@@ -922,6 +925,36 @@ Unknown type `object`.
       "type": "object",
       "description": "Timed media properties related to the content playback's quality of experience (QoE).",
       "properties": {
+        "xdm:error": {
+          "title": "Custom error object",
+          "type": "object",
+          "description": "Quality of experience (QoE) custom error information.",
+          "properties": {
+            "xdm:errorID": {
+              "title": "Error ID",
+              "type": "string",
+              "description": "The error ID.",
+              "minLength": 1
+            },
+            "xdm:errorSource": {
+              "title": "Error source",
+              "type": "string",
+              "description": "The error source.",
+              "enum": [
+                "player",
+                "external"
+              ],
+              "meta:enum": {
+                "player": "Player source.",
+                "external": "External source."
+              }
+            }
+          },
+          "required": [
+            "xdm:errorID",
+            "xdm:errorSource"
+          ]
+        },
         "xdm:errors": {
           "title": "Errors",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -1241,6 +1274,69 @@ Indicates that the playhead passed the 95% marker of media based on stream lengt
 
 
 * []() – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+
+
+#### xdm:publisher
+##### Audio content publisher
+
+Name of the audio content publisher.
+
+`xdm:publisher`
+* is optional
+* type: `string`
+
+##### xdm:publisher Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:radioStation
+##### Radio station
+
+Name / ID of the radio station.
+
+`xdm:radioStation`
+* is optional
+* type: `string`
+
+##### xdm:radioStation Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:recordLabel
+##### Record label
+
+Name of the record label.
+
+`xdm:recordLabel`
+* is optional
+* type: `string`
+
+##### xdm:recordLabel Type
+
+
+`string`
+
 
 
 

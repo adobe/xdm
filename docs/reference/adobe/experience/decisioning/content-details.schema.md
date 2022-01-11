@@ -15,6 +15,24 @@ Content used to represent a decision option in a particular channel and placemen
 
 ```json
 {
+  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0003",
+  "https://ns.adobe.com/experience/decisioning/components": [
+    {
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
+      "dc:format": "text/html",
+      "dc:language": [
+        "de"
+      ],
+      "repo:name": "widget_quickbooking.html",
+      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
+    }
+  ]
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0002",
   "https://ns.adobe.com/experience/decisioning/components": [
     {
@@ -71,24 +89,6 @@ Content used to represent a decision option in a particular channel and placemen
         "es"
       ],
       "https://ns.adobe.com/experience/decisioning/content": "Estimada señora {{profile.person.lastName}}: La oferta vence el 12/6/2018"
-    }
-  ]
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/placement": "uri:xcore:placement-0003",
-  "https://ns.adobe.com/experience/decisioning/components": [
-    {
-      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
-      "dc:format": "text/html",
-      "dc:language": [
-        "de"
-      ],
-      "repo:name": "widget_quickbooking.html",
-      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
-      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
     }
   ]
 }

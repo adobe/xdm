@@ -23,6 +23,16 @@ Application lifecycle information recorded via an ExperienceEvent that is specif
 ```json
 {
   "xdm:application": {
+    "xdm:isClose": true,
+    "xdm:closeType": "close",
+    "xdm:sessionLength": 5030
+  }
+}
+```
+
+```json
+{
+  "xdm:application": {
     "xdm:id": "A123",
     "xdm:name": "Myapp",
     "xdm:version": "1.0.1 (5)",
@@ -43,16 +53,6 @@ Application lifecycle information recorded via an ExperienceEvent that is specif
     "xdm:modelNumber": "A1586",
     "xdm:screenHeight": 667,
     "xdm:screenWidth": 375
-  }
-}
-```
-
-```json
-{
-  "xdm:application": {
-    "xdm:isClose": true,
-    "xdm:closeType": "close",
-    "xdm:sessionLength": 5030
   }
 }
 ```
@@ -86,7 +86,9 @@ Unknown type ``.
       "title": "Session Length",
       "type": "integer",
       "minimum": 0,
-      "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground."
+      "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground.",
+      "meta:titleId": "application##xdm:sessionLength##title##71421",
+      "meta:descriptionId": "application##xdm:sessionLength##description##20131"
     }
   },
   "simpletype": "complex"

@@ -91,9 +91,9 @@
           "description": "Action ID of the AJO Campaign that triggered this message execution."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": {
-          "title": "Batch Instance ID for scheduled AJO Campaign Action",
+          "title": "Batch Instance ID for scheduled Journey or AJO Campaign Action",
           "type": "string",
-          "description": "GUID created at invocation of each new batch instance for a scheduled AJO Campaign Action. E.g: If a scheduled AJO Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
+          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or AJO Campaign Action. E.g: If a scheduled Journey or AJO Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
         }
       }
     }

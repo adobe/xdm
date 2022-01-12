@@ -16,10 +16,11 @@ Captures consumer consent for collection and use of data related to privacy, per
 {
   "xdm:consents": {
     "xdm:collect": {
-      "xdm:val": "y"
+      "xdm:val": "VI"
     },
     "xdm:adID": {
-      "xdm:val": "VI"
+      "xdm:val": "n",
+      "xdm:idType": "IDFA"
     },
     "xdm:share": {
       "xdm:val": "n"
@@ -86,7 +87,7 @@ Specific Consent and Preference Options
 #### xdm:adID
 ##### Use Advertiser ID
 
-The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device
+The Advertiser ID (IDFA / GAID) can be used to link user across apps on this device
 
 `xdm:adID`
 * is optional
@@ -95,7 +96,7 @@ The Advertiser ID (IDFA / AAID) can be used to link user across apps on this dev
 ##### xdm:adID Type
 
 
-* []() – `#/definitions/consent-field`
+* []() – `#/definitions/adid-consent-field`
 
 
 
@@ -211,6 +212,7 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 | [xdm:any](#xdmany) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:content](#xdmcontent) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-personalization` |
 | [xdm:email](#xdmemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
+| [xdm:idType](#xdmidtype) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/adid-consent-field` |
 | [xdm:preferred](#xdmpreferred) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
@@ -272,6 +274,27 @@ User agrees to receive email
 
 * []() – `#/definitions/marketing-field`
 
+
+
+
+
+## xdm:idType
+### Ad ID Type
+
+The ad ID type (IDFA or GAID)
+
+`xdm:idType`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmidtype-known-values).
+
+### xdm:idType Known Values
+| Value | Description |
+|-------|-------------|
+| `IDFA` | Apple&#39;s ID for Advertisers (IDFA) |
+| `GAID` | Google&#39;s Advertiser ID (GAID) also known as Android Advertiser ID (AAID) |
 
 
 

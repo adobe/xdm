@@ -1,5 +1,5 @@
 
-# Adobe Advertising Cloud Profile Template Mixin Schema
+# Adobe Advertising Cloud Profile Template Schema
 
 ```
 https://ns.adobe.com/experience/adcloud-profile
@@ -12,13 +12,13 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud-profile.schema.json](adobe/experience/adcloud-profile.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Advertising Cloud Profile Template Mixin `https://ns.adobe.com/experience/adcloud-profile`
+* Adobe Advertising Cloud Profile Template `https://ns.adobe.com/experience/adcloud-profile`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
   * [Adobe Advertising Cloud Profile Full Extension](adcloud/profile-all.schema.md) `https://ns.adobe.com/experience/adcloud/profile-all`
 
 
-## Adobe Advertising Cloud Profile Template Mixin Example
+## Adobe Advertising Cloud Profile Template Example
 ```json
 {
   "xdm:segments": [
@@ -82,7 +82,7 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 }
 ```
 
-# Adobe Advertising Cloud Profile Template Mixin Properties
+# Adobe Advertising Cloud Profile Template Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

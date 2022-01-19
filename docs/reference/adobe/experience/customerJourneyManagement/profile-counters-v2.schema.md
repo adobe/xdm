@@ -1,5 +1,5 @@
 
-# Profile Counters Mixin Extension Schema
+# Profile Counters Extension Schema
 
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/profile-counters-v2
@@ -11,19 +11,7 @@ Holds a map of objects containing counter_value and expiryDate, keyed by counter
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters-v2.schema.json](adobe/experience/customerJourneyManagement/profile-counters-v2.schema.json) |
 
-## Profile Counters Mixin Extension Examples
-
-```json
-{
-  "xdm:xid": "xid-92312748749128",
-  "xdm:frequencyMap": {
-    "counter_id": {
-      "xdm:value": 100,
-      "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
-    }
-  }
-}
-```
+## Profile Counters Extension Examples
 
 ```json
 {
@@ -40,12 +28,24 @@ Holds a map of objects containing counter_value and expiryDate, keyed by counter
 }
 ```
 
+```json
+{
+  "xdm:xid": "xid-92312748749128",
+  "xdm:frequencyMap": {
+    "counter_id": {
+      "xdm:value": 100,
+      "xdm:expiryDate": "2021-10-22T09:02:15.541Z"
+    }
+  }
+}
+```
 
-# Profile Counters Mixin Extension Properties
+
+# Profile Counters Extension Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
+| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Extension (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:frequencyMap

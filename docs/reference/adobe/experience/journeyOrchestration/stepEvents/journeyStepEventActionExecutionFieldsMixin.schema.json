@@ -15,7 +15,7 @@
         "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This Mixin will have Journey Action Metadata Fields.",
+    "description": "This Fieldgroup will have Journey Action Metadata Fields.",
     "definitions": {
         "journeyStepEventActionExecutionFields": {
             "properties": {

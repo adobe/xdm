@@ -7,7 +7,7 @@
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/adcloud/stitchid",
-    "title": "AdCloud to Analytics StitchID Mixin",
+    "title": "AdCloud to Analytics StitchID",
     "type": "object",
     "description": "Defines the advertising stitch ID used for the AdCloud to Adobe Analytics integration",
     "meta:intendedToExtend": [

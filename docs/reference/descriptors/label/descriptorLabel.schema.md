@@ -2,7 +2,7 @@
 # Label Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/descriptorLabel
+https://ns.adobe.com/xdm/descriptors/descriptorLabel
 ```
 
 Describes a label at the field level for a given class/fieldgroup/schema
@@ -12,11 +12,12 @@ Describes a label at the field level for a given class/fieldgroup/schema
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/label/descriptorLabel.schema.json](descriptors/label/descriptorLabel.schema.json) |
 ## Schema Hierarchy
 
-* Label Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorLabel`
+* Label Descriptor `https://ns.adobe.com/xdm/descriptors/descriptorLabel`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Label Descriptor Example
+## Label Descriptor Examples
+
 ```json
 {
   "@type": "xdm:descriptorLabel",
@@ -32,12 +33,52 @@ Describes a label at the field level for a given class/fieldgroup/schema
 }
 ```
 
+```json
+{
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": [
+    "/workAddress",
+    "/workEmail"
+  ],
+  "xdm:excludeProperty": [
+    "/workAddress/street3",
+    "/workAddress/street4",
+    "/workEmail/status"
+  ],
+  "xdm:labels": [
+    "sampleDUlELabelResourceID1",
+    "sampleDUlELabelResourceID2",
+    "sampleDUlELabelResourceID3",
+    "sampleDUlELabelResourceID4"
+  ]
+}
+```
+
+```json
+{
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceVersion": 1,
+  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:labels": [
+    "sampleDUlELabelResourceID1",
+    "sampleDUlELabelResourceID2",
+    "sampleDUlELabelResourceID3",
+    "sampleDUlELabelResourceID4"
+  ]
+}
+```
+
+
 # Label Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
 | [@type](#type) | `const` | Optional | Label Descriptor (this schema) |
+| [xdm:excludeProperty](#xdmexcludeproperty) | complex | Optional | Label Descriptor (this schema) |
 | [xdm:labels](#xdmlabels) | `string[]` | Optional | Label Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
@@ -79,6 +120,46 @@ The value of this property **must** be equal to:
 ```json
 "xdm:descriptorLabel"
 ```
+
+
+
+
+
+## xdm:excludeProperty
+### Exclude Property
+
+When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.
+
+`xdm:excludeProperty`
+* is optional
+* type: complex
+* defined in this schema
+
+### xdm:excludeProperty Type
+
+
+**One** of the following *conditions* need to be fulfilled.
+
+
+#### Condition 1
+
+
+`string`
+
+
+
+#### Condition 2
+
+
+Array type: 
+
+All items must be of the type:
+`string`
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Audience Manager Segment Folder Class",
   "type": "object",
-  "description": "This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition Mixin' in order to point to the parent folder, which is an instance of this class.",
+  "description": "This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition' fieldgroup in order to point to the parent folder, which is an instance of this class.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],

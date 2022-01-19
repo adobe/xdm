@@ -7,9 +7,9 @@
     ],
     "$id": "https://ns.adobe.com/experience/aep-web-sdk-experienceevent",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "AEP Web SDK ExperienceEvent Mixin",
+    "title": "AEP Web SDK ExperienceEvent",
     "type": "object",
-    "description": "Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.",
+    "description": "Adobe Experience Platform Web SDK ExperienceEvent fieldgroup. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.",
     "meta:extensible": true,
     "meta:abstract": true,
     "meta:intendedToExtend": [

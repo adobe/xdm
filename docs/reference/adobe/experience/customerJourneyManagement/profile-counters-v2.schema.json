@@ -7,7 +7,7 @@
     ],
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters-v2",
-    "title": "Profile Counters Mixin Extension",
+    "title": "Profile Counters Extension",
     "description": "Holds a map of objects containing counter_value and expiryDate, keyed by counter_id.",
     "type": "object",
     "meta:extensible": true,
@@ -62,7 +62,10 @@
     "meta:descriptionId": "profilecounters##description##16505",
     "examples": [
         {
-            "xdm:xid": "xid-92312748749128",
+            "xdm:namespace": {
+                "xdm:code": "ECID"
+            },
+            "xdm:id": "92312748749128",
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,
@@ -71,10 +74,7 @@
             }
         },
         {
-            "xdm:namespace": {
-                "xdm:code": "ECID"
-            },
-            "xdm:id": "92312748749128",
+            "xdm:xid": "xid-92312748749128",
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,

@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/experience/adcloud-experienceevent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Advertising Cloud ExperienceEvent Template Mixin",
+  "title": "Adobe Advertising Cloud ExperienceEvent Template",
   "type": "object",
   "description": "Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent field groups.",
   "meta:extensible": true,

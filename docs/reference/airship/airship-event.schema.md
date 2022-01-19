@@ -1,5 +1,5 @@
 
-# Airship Event Mixin Schema
+# Airship Event Schema
 
 ```
 https://ns.airship.com/airship-event
@@ -12,7 +12,7 @@ Airship gathers engagement data that can help you better understand how your aud
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [airship/airship-event.schema.json](airship/airship-event.schema.json) |
 ## Schema Hierarchy
 
-* Airship Event Mixin `https://ns.airship.com/airship-event`
+* Airship Event `https://ns.airship.com/airship-event`
   * [IdentityMap](../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
   * [External Source System Audit Details](../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
   * [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-channel`
@@ -21,13 +21,13 @@ Airship gathers engagement data that can help you better understand how your aud
   * [Device](../datatypes/device.schema.md) `https://ns.adobe.com/xdm/context/device`
 
 
-# Airship Event Mixin Properties
+# Airship Event Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [airship:body](#airshipbody) | `object` | Optional | Airship Event Mixin (this schema) |
-| [airship:device](#airshipdevice) | `object` | Optional | Airship Event Mixin (this schema) |
-| [airship:offsetID](#airshipoffsetid) | `string` | Optional | Airship Event Mixin (this schema) |
+| [airship:body](#airshipbody) | `object` | Optional | Airship Event (this schema) |
+| [airship:device](#airshipdevice) | `object` | Optional | Airship Event (this schema) |
+| [airship:offsetID](#airshipoffsetid) | `string` | Optional | Airship Event (this schema) |
 | [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication) |
 | [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel) |
 | [xdm:colorDepth](#xdmcolordepth) | `integer` | Optional | [Device](../datatypes/device.schema.md#xdmcolordepth) |
@@ -699,7 +699,7 @@ An identifier that represents the events location in the Airship event stream an
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

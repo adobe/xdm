@@ -1,5 +1,5 @@
 
-# Profile Counters Mixin Extension Schema
+# Profile Counters Extension Schema
 
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/profile-counters
@@ -11,7 +11,7 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
 
-## Profile Counters Mixin Extension Examples
+## Profile Counters Extension Examples
 
 ```json
 {
@@ -44,11 +44,11 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 ```
 
 
-# Profile Counters Mixin Extension Properties
+# Profile Counters Extension Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
+| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Extension (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:frequencyMap

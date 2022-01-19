@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventCommonFields
 ```
 
-This Mixin contains the common Journey Metadata information.
+This Fieldgroup contains the common Journey Metadata information.
 
 | [Abstract](../../../../../abstract.md) | [Extensible](../../../../../extensions.md) | [Status](../../../../../status.md) | [Identifiable](../../../../../id.md) | [Custom Properties](../../../../../extensions.md) | [Additional Properties](../../../../../extensions.md) | Defined In |
 |----------------------------------------|--------------------------------------------|------------------------------------|--------------------------------------|---------------------------------------------------|-------------------------------------------------------|------------|

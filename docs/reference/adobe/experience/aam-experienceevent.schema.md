@@ -1,5 +1,5 @@
 
-# Adobe Audience Manager Template Mixin Schema
+# Adobe Audience Manager Template Schema
 
 ```
 https://ns.adobe.com/experience/aam-experienceevent
@@ -12,7 +12,7 @@ Adobe Audience Manager field group for use with schemas for Solution data ingest
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/aam-experienceevent.schema.json](adobe/experience/aam-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Audience Manager Template Mixin `https://ns.adobe.com/experience/aam-experienceevent`
+* Adobe Audience Manager Template `https://ns.adobe.com/experience/aam-experienceevent`
   * [Segment Membership Details](../../fieldgroups/experience-event/experienceevent-segmentmembership.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-segmentmembership`
   * [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-environment-details`
   * [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-profile-stitch`
@@ -21,7 +21,7 @@ Adobe Audience Manager field group for use with schemas for Solution data ingest
   * [Adobe Audience Manager ExperienceEvent Full Extension](audiencemanager/experienceevent-all.schema.md) `https://ns.adobe.com/experience/audiencemanager/experienceevent-all`
 
 
-## Adobe Audience Manager Template Mixin Example
+## Adobe Audience Manager Template Example
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -156,7 +156,7 @@ Adobe Audience Manager field group for use with schemas for Solution data ingest
 }
 ```
 
-# Adobe Audience Manager Template Mixin Properties
+# Adobe Audience Manager Template Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

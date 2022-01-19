@@ -1,18 +1,18 @@
 
-# AEP Web SDK ExperienceEvent Mixin Schema
+# AEP Web SDK ExperienceEvent Schema
 
 ```
 https://ns.adobe.com/experience/aep-web-sdk-experienceevent
 ```
 
-Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.
+Adobe Experience Platform Web SDK ExperienceEvent fieldgroup. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/aep-web-sdk-experienceevent.schema.json](adobe/experience/aep-web-sdk-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* AEP Web SDK ExperienceEvent Mixin `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
+* AEP Web SDK ExperienceEvent `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation Details](../../fieldgroups/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
@@ -21,7 +21,7 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
   * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
 
-# AEP Web SDK ExperienceEvent Mixin Properties
+# AEP Web SDK ExperienceEvent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|

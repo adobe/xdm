@@ -1,5 +1,5 @@
 
-# Adobe Audience Manager Segment Definition Mixin Schema
+# Adobe Audience Manager Segment Definition Schema
 
 ```
 https://ns.adobe.com/experience/audiencemanager/segmentdefinition
@@ -12,12 +12,12 @@ This field group captures Adobe Audience Manager-specific segment definition fie
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/audiencemanager/segmentdefinition.schema.json](adobe/experience/audiencemanager/segmentdefinition.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Audience Manager Segment Definition Mixin `https://ns.adobe.com/experience/audiencemanager/segmentdefinition`
+* Adobe Audience Manager Segment Definition `https://ns.adobe.com/experience/audiencemanager/segmentdefinition`
   * [Segment Expression Details ](../../../fieldgroups/segment-definition/segmentdefinition-expression.schema.md) `https://ns.adobe.com/xdm/context/segmentdefinition-expression`
   * [Identity](../../../datatypes/identity.schema.md) `https://ns.adobe.com/xdm/context/identity`
 
 
-## Adobe Audience Manager Segment Definition Mixin Example
+## Adobe Audience Manager Segment Definition Example
 ```json
 {
   "xdm:segmentExpression": {
@@ -36,14 +36,14 @@ This field group captures Adobe Audience Manager-specific segment definition fie
 }
 ```
 
-# Adobe Audience Manager Segment Definition Mixin Properties
+# Adobe Audience Manager Segment Definition Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity](#httpsnsadobecomexperienceaudiencemanagersegmentfolderidentity) | Identity | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
+| [https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity](#httpsnsadobecomexperienceaudiencemanagersegmentfolderidentity) | Identity | Optional | Adobe Audience Manager Segment Definition (this schema) |
 | [xdm:segmentExpression](#xdmsegmentexpression) | `object` | Optional | [Segment Expression Details ](../../../fieldgroups/segment-definition/segmentdefinition-expression.schema.md#xdmsegmentexpression) |
-| [xdm:segmentFolderId](#xdmsegmentfolderid) | `string` | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
-| [xdm:segmentSubType](#xdmsegmentsubtype) | `string` | Optional | Adobe Audience Manager Segment Definition Mixin (this schema) |
+| [xdm:segmentFolderId](#xdmsegmentfolderid) | `string` | Optional | Adobe Audience Manager Segment Definition (this schema) |
+| [xdm:segmentSubType](#xdmsegmentsubtype) | `string` | Optional | Adobe Audience Manager Segment Definition (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/audiencemanager/segmentFolderIdentity

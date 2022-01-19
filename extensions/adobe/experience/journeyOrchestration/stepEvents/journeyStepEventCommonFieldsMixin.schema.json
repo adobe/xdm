@@ -15,7 +15,7 @@
     "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "This Mixin contains the common Journey Metadata information.",
+  "description": "This Fieldgroup contains the common Journey Metadata information.",
   "definitions": {
     "journeyStepEventCommonFields": {
       "properties": {
@@ -23,6 +23,28 @@
           "title": "Journey Orchestration for creating user journey",
           "type": "object",
           "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": {
+              "title": "HasSegmentQualificationDelta",
+              "description": "Indicate if the journey has configuration for segment qualification delta.",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": {
+              "title": "StartSegmentQualificationTime",
+              "description": "Serialized instant of the start of the delta time window.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": {
+              "title": "EndSegmentQualificationTime",
+              "description": "Serialized instant of the end of the delta time window.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": {
+              "title": "SegmentQualificationStatus",
+              "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
+              "type": "string"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/entrance": {
               "title": "entrance",
               "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",

@@ -14,7 +14,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/decisionevent"
   ],
-  "description": "Mixin for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
+  "description": "This is a fieldgroup for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
   "definitions": {
     "decisioning-mixin": {
       "properties": {

@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/b2b-person-components
 ```
 
-This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.
+This fieldgroup is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

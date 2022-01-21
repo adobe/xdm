@@ -1,0 +1,51 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/workfront/taskevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Workfront Task Change Event",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/timeseries"],
+  "description": "Data representing a task change event from Adobe Workfront",
+  "definitions": {
+    "task": {
+      "properties": {
+        "workfront:taskID": {
+          "title": "Task ID",
+          "type": "string",
+          "description": "The ID of the task"
+        },
+        "workfront:taskName": {
+          "title": "Task Name",
+          "type": "string",
+          "description": "The name of this task"
+        },
+        "workfront:updated": {
+          "title": "Updated Counter",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Metric field set to 1 if this was an update event"
+        },
+        "workfront:created": {
+          "title": "Created Counter",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Metric field set to 1 if this was a create event"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/timeseries"
+    },
+    {
+      "$ref": "#/definitions/task"
+    }
+  ],
+  "meta:status": "experimental"
+}

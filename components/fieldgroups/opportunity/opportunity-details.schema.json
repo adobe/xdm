@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-  "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems.",
+  "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "opportunity-details": {
       "properties": {

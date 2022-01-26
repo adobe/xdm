@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
+  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "device-trade-in-details": {
       "properties": {

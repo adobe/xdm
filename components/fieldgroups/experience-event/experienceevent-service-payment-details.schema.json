@@ -15,7 +15,7 @@
     "industry": ["financial_services", "telecom"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Service Payment Details such as ID, type, and amount.",
+  "description": "Service Payment Details such as ID, type, and amount.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "service-payment-details": {
       "properties": {

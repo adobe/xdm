@@ -15,7 +15,7 @@
     "industry": ["all"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
+  "description": "Contact information for an individual person such as home address, phone number, fax, and email.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "profile-personal-details": {
       "properties": {

@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Card comparison details such as count, addition, removal, and view.",
+  "description": "Card comparison details such as count, addition, removal, and view.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "card-application-details": {
       "properties": {

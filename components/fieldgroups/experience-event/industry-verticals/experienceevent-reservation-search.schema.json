@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Reservation search details such as flexibility, product code, rate type, and internal search information.",
+  "description": "Reservation search details such as flexibility, product code, rate type, and internal search information.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "reservations": {
       "properties": {

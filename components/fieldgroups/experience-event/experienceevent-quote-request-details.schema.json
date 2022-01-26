@@ -21,7 +21,7 @@
     ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders.",
+  "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "quote-request-details": {
       "properties": {

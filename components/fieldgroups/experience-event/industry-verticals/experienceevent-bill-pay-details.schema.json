@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Bill pay details such as transaction information, service account ID, and balance.",
+  "description": "Bill pay details such as transaction information, service account ID, and balance.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "bill-pay-details": {
       "properties": {

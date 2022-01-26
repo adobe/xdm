@@ -56,7 +56,7 @@
             "xdm:email": {
               "title": "email",
               "type": "string",
-              "description": "Recipient's email address.",
+              "description": "Recipient's email address.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailbouncedsoft##xdm:email##title##711",
               "meta:descriptionId": "emailbouncedsoft##xdm:email##description##49021"
             },

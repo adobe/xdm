@@ -44,7 +44,7 @@
               "items": {
                 "type": "string"
               },
-              "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
+              "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-loyalty-details##xdm:loyaltyID##title##40011",
               "meta:descriptionId": "profile-loyalty-details##xdm:loyaltyID##description##22711"
             },

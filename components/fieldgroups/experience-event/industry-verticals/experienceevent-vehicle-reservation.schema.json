@@ -22,7 +22,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Collects all details specific to a vehicle reservation.",
+  "description": "Collects all details specific to a vehicle reservation.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "reservations": {
       "properties": {

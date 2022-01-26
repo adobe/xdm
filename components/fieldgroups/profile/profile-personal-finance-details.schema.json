@@ -15,7 +15,7 @@
     "industry": ["financial_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
+  "description": "Personal finance details such as financial account details, credit score, and tax bracket.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "personal-finance-details": {
       "properties": {

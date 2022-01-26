@@ -29,14 +29,14 @@
                 "xdm:filingJointly": {
                   "title": "Filing Jointly",
                   "type": "boolean",
-                  "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
+                  "description": "Refers to a filing status for married couples that have wed before the end of the tax year.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-personal-tax-profile-details##xdm:filingJointly##title##88011",
                   "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingJointly##description##90691"
                 },
                 "xdm:filingSeparately": {
                   "title": "Filing Separately",
                   "type": "boolean",
-                  "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
+                  "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-personal-tax-profile-details##xdm:filingSeparately##title##96661",
                   "meta:descriptionId": "profile-personal-tax-profile-details##xdm:filingSeparately##description##49441"
                 },
@@ -64,14 +64,14 @@
                 "xdm:taxBracket": {
                   "title": "Tax Bracket",
                   "type": "string",
-                  "description": "Refers to a range of incomes subject to a certain income tax rate.",
+                  "description": "Refers to a range of incomes subject to a certain income tax rate.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-personal-tax-profile-details##xdm:taxBracket##title##83611",
                   "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxBracket##description##74251"
                 },
                 "xdm:taxID": {
                   "title": "Tax ID",
                   "type": "string",
-                  "description": "Tax identifier for the individual.",
+                  "description": "Tax identifier for the individual.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-personal-tax-profile-details##xdm:taxID##title##35821",
                   "meta:descriptionId": "profile-personal-tax-profile-details##xdm:taxID##description##86271"
                 }

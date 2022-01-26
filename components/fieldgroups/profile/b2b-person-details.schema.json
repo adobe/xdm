@@ -68,7 +68,7 @@
           "properties": {
             "xdm:accountID": {
               "title": "Contact Account id",
-              "description": "ID of the account that’s the parent of this person.",
+              "description": "ID of the account that’s the parent of this person.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "type": "string",
               "meta:status": "experimental",
               "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",

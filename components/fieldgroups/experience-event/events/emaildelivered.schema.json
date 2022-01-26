@@ -28,14 +28,14 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset.",
+              "description": "Unique ID of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emaildelivered##xdm:mailingID##title##61861",
               "meta:descriptionId": "emaildelivered##xdm:mailingID##description##45971"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Name of the email asset.",
+              "description": "Name of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emaildelivered##xdm:mailingName##title##47211",
               "meta:descriptionId": "emaildelivered##xdm:mailingName##description##97971"
             },

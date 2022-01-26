@@ -51,7 +51,7 @@
             "xdm:currencyCode": {
               "title": "Currency Code",
               "type": "string",
-              "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+              "description": "Currency code used to make the purchase. ISO 4217 currency code.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "pattern": "^[A-Z]{3}$",
               "meta:titleId": "experienceevent-reservation-details##xdm:currencyCode##title##3251",
               "meta:descriptionId": "experienceevent-reservation-details##xdm:currencyCode##description##17131"
@@ -67,7 +67,7 @@
             "xdm:ID": {
               "title": "ID",
               "type": "string",
-              "description": "Tracks the reservation number/identifier.",
+              "description": "Tracks the reservation number/identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-reservation-details##xdm:ID##title##19301",
               "meta:descriptionId": "experienceevent-reservation-details##xdm:ID##description##201"
             },
@@ -137,7 +137,7 @@
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "The start pick-up/outbound/check-in date of the reservation.",
+              "description": "The start pick-up/outbound/check-in date of the reservation.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-reservation-details##xdm:startDate##title##87831",
               "meta:descriptionId": "experienceevent-reservation-details##xdm:startDate##description##59521"
             },

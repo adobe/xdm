@@ -38,7 +38,7 @@
             "xdm:originalDeviceID": {
               "title": "Original Device ID",
               "type": "string",
-              "description": "ID for the device being traded.",
+              "description": "ID for the device being traded.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##72251",
               "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##66791"
             },

@@ -44,7 +44,7 @@
               },
               "xdm:sourcePartnerAccountID": {
                 "title": "Source Partner Account Id",
-                "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+                "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
                 "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title##10421",
                 "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description##11541"

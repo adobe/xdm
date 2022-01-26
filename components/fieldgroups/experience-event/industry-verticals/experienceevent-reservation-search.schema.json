@@ -72,7 +72,7 @@
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "The start pick-up/outbound/check-in date of the reservation search.",
+              "description": "The start pick-up/outbound/check-in date of the reservation search.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-reservation-search##xdm:startDate##title##86451",
               "meta:descriptionId": "experienceevent-reservation-search##xdm:startDate##description##26861"
             },

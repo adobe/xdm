@@ -22,7 +22,7 @@
       "properties": {
         "xdm:roleID": {
           "title": "Contact Role ID",
-          "description": "Contact role unique identifier.",
+          "description": "Contact role unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "opportunity-contact-role-details##xdm:roleID##title##9961",
           "meta:descriptionId": "opportunity-contact-role-details##xdm:roleID##description##38421"

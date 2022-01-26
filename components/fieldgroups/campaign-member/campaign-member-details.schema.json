@@ -116,7 +116,7 @@
         },
         "xdm:hasResponded": {
           "title": "Has Responded",
-          "description": "Record whether the member has responded to the workflow stage",
+          "description": "Record whether the member has responded to the workflow stageThis field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "boolean",
           "meta:titleId": "campaign-member-details##xdm:hasResponded##title##26261",
           "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##31341"

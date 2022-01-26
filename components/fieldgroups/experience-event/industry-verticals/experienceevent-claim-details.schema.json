@@ -32,7 +32,7 @@
             "xdm:ID": {
               "title": "Claims ID",
               "type": "string",
-              "description": "Unique identifier for the claim.",
+              "description": "Unique identifier for the claim.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-claim-details##xdm:ID##title##82901",
               "meta:descriptionId": "experienceevent-claim-details##xdm:ID##description##81161"
             },
@@ -40,7 +40,7 @@
               "title": "Start Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date the claim was successfully submitted.",
+              "description": "Date the claim was successfully submitted.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-claim-details##xdm:startDate##title##47731",
               "meta:descriptionId": "experienceevent-claim-details##xdm:startDate##description##3321"
             },
@@ -53,7 +53,7 @@
                 "approved",
                 "declined"
               ],
-              "description": "Captures the status of the claim for any given point in the application process.",
+              "description": "Captures the status of the claim for any given point in the application process.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-claim-details##xdm:status##title##72781",
               "meta:descriptionId": "experienceevent-claim-details##xdm:status##description##93101"
             },
@@ -79,7 +79,7 @@
             "xdm:policyID": {
               "title": "Policy ID",
               "type": "string",
-              "description": "Policy Identifier.",
+              "description": "Policy Identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##9171",
               "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##73051"
             },

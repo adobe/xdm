@@ -16,7 +16,7 @@
       "properties": {
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Person unique identifier.",
+          "description": "Person unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:status": "experimental",
           "meta:titleId": "person-identifier##xdm:personID##title##75321",

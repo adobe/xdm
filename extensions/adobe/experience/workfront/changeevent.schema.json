@@ -114,7 +114,7 @@
           "description": "Name assigned to this object",
           "type": "string"
         },
-        "workfront:objectId": {
+        "workfront:objectID": {
           "title": "Object ID",
           "description": "The ID of this object",
           "type": "string"

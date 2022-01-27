@@ -51,11 +51,6 @@
           "description": "Current Status",
           "type": "string"
         },
-        "workfront:canStart": {
-          "title": "Can Start",
-          "description": "Task can start",
-          "type": "boolean"
-        },
         "workfront:percentComplete": {
           "title": "Percent Complete",
           "description": "Current percentage complete",
@@ -104,7 +99,7 @@
           "type": "string",
           "format": "date-time"
         },
-        "workfront:name": {
+        "workfront:objectName": {
           "title": "Object Name",
           "description": "Name assigned to this object",
           "type": "string"

@@ -90,19 +90,19 @@
           "title": "Actual Start Date",
           "description": "Actual start date of execution",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "workfront:actualCompletionDate": {
           "title": "Actual Completion",
           "description": "Actual completion date execution",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "workfront:plannedStartDate": {
           "title": "Planned Start Date",
           "description": "Planned start date of execution",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "workfront:name": {
           "title": "Object Name",

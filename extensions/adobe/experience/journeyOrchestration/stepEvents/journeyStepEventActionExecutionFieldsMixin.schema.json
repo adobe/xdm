@@ -147,7 +147,7 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/channel": {
                 "title": "Channel",
-                "description": "Channel Name",
+                "description": "Channel Name like email, push, sms",
                 "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized": {
@@ -190,6 +190,38 @@
               "title": "ActionErrorContext",
               "description": "Provides context of the error. Potential values: 'authCallError': error has occured in scope of custom or Adobe.IO authentication by calling the authentication endpoint to generate an access token, 'callError': error has occured on action call endpointTreatment name applied to execute the action",
               "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/consent": {
+              "title": "Consent",
+              "description": "Fields corresponding to action consent.",
+              "type": "object",
+              "properties": {
+                "https://ns.adobe.com/experience/journeyOrchestration/rejectedPoliciesCount": {
+                  "title": "RejectedPoliciesCount",
+                  "description": "Count of rejected consent policies",
+                  "type": "integer"
+                },
+                "https://ns.adobe.com/experience/journeyOrchestration/rejectedPolicies": {
+                  "title": "RejectedPolicies",
+                  "description": "Rejected Consent Policy details array object.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "https://ns.adobe.com/experience/journeyOrchestration/ID": {
+                        "title": "ID",
+                        "description": "ID of the rejected Consent policy.",
+                        "type": "string"
+                      },
+                      "https://ns.adobe.com/experience/journeyOrchestration/name": {
+                        "title": "Name",
+                        "description": "Name of the corresponding rejected Consent policy.",
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##10491"

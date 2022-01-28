@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/callwebhook",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Call Webhook",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.callWebhook",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use to capture details when Webhook is called for a person",
+  "definitions": {
+    "callwebhook": {
+      "properties": {
+        "xdm:leadOperation": {
+          "title": "Lead Operation",
+          "type": "object",
+          "properties": {
+            "xdm:webhookID": {
+              "title": "Webhook ID",
+              "type": "string",
+              "description": "Unique ID of the Webhook called."
+            },
+            "xdm:webhookName": {
+              "title": "Webhook Name",
+              "type": "string",
+              "description": "Name of the Webhook."
+            },
+            "xdm:responseCode": {
+              "title": "Response Code",
+              "type": "integer",
+              "description": "HTTP response code from Webhook request."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/callwebhook"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-01-13"
+}

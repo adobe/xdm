@@ -42,6 +42,7 @@ XDM Business Account Person Relation is a standard Experience Data Model (XDM) c
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personRole](#xdmpersonrole) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:personRoles](#xdmpersonroles) | `string[]` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationEndDate](#xdmrelationenddate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationStartDate](#xdmrelationstartdate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
@@ -313,6 +314,33 @@ Role of the person on this account.
 
 
 `string`
+
+
+
+
+
+
+## xdm:personRoles
+### Person Roles
+
+An array of roles of the person on this account.
+
+`xdm:personRoles`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:personRoles Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
 
 
 

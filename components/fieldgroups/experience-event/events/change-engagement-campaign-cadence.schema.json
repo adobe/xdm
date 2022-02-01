@@ -5,28 +5,28 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/events/change-engagement-campaign-cadence",
+  "$id": "https://ns.adobe.com/xdm/mixins/events/change-campaign-cadence",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Change Engagement Campaign Cadence",
+  "title": "Change Campaign Cadence",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
   },
   "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": "leadOperation.changeEngagementCampaignCadence",
+  "meta:conditionalValue": "leadOperation.changeCampaignCadence",
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
   "description": "Use to capture details when engagement campaign cadence changes for a person.",
   "definitions": {
-    "changeengagementcampaigncadence": {
+    "changecampaigncadence": {
       "properties": {
         "xdm:leadOperation": {
           "title": "Lead Operation",
           "type": "object",
           "properties": {
-            "xdm:changeNurtureCadence": {
-              "title": "Change Nurture Cadence",
+            "xdm:changeCampaignCadence": {
+              "title": "Change Campaign Cadence",
               "type": "object",
               "properties": {
                 "xdm:campaignID": {
@@ -37,12 +37,12 @@
                 "xdm:newCadence": {
                   "title": "New Cadence",
                   "type": "string",
-                  "description": "New value of nurture cadence."
+                  "description": "New value of engagement campaign cadence."
                 },
                 "xdm:previousCadence": {
                   "title": "Previous Cadence",
                   "type": "string",
-                  "description": "Previous value of nurture cadence."
+                  "description": "Previous value of engagement campaign cadence."
                 }
               }
             }
@@ -53,7 +53,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/changeengagementcampaigncadence"
+      "$ref": "#/definitions/changecampaigncadence"
     }
   ],
   "meta:status": "experimental",

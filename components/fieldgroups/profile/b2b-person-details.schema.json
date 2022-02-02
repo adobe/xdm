@@ -167,6 +167,28 @@
               "type": "string",
               "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
               "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521"
+            },
+            "xdm:matchedAccount": {
+              "type": "object",
+              "properties": {
+                "xdm:score": {
+                  "title": "Score",
+                  "description": "Account score.",
+                  "type": "number",
+                  "meta:status": "experimental"
+                },
+                "xdm:accountKey": {
+                  "title": "Account Key",
+                  "description": "Unique identifier of the Account related to the person.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
+                "xdm:scoreDate": {
+                  "title": "Score Date",
+                  "description": "Date score was recorded/computed.",
+                  "type": "string",
+                  "format": "date-time"
+                }
+              }
             }
           }
         }

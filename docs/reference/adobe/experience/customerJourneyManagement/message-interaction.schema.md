@@ -33,7 +33,9 @@ Describes interaction made by the profile on the message.
     "xdm:offerID": "1234",
     "xdm:placementID": "12345",
     "xdm:propositionID": "9898",
-    "xdm:offerCount": 5
+    "xdm:offerCount": 5,
+    "xdm:scopeID": "eyJ4ZG06YWN0aXZpdHlJZCI6IjQ1NjciLCJ4ZG06cGxhY2VtZW50SWQiOiIxMjM0NSJ9",
+    "xdm:activityID": "4567"
   }
 }
 ```

@@ -2,7 +2,7 @@
 # Workfront Change Event Schema
 
 ```
-https://ns.adobe.com/experience/workfront/taskevent
+https://ns.adobe.com/experience/workfront/changeevent
 ```
 
 Data associated with a change event within Workfront project execution
@@ -12,7 +12,7 @@ Data associated with a change event within Workfront project execution
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/changeevent.schema.json](adobe/experience/workfront/changeevent.schema.json) |
 ## Schema Hierarchy
 
-* Workfront Change Event `https://ns.adobe.com/experience/workfront/taskevent`
+* Workfront Change Event `https://ns.adobe.com/experience/workfront/changeevent`
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
 
 

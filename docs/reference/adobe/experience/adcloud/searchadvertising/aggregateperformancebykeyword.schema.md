@@ -243,6 +243,7 @@ The primary event type for this time-series record.
 | `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
 | `directMarketing.emailOpened` | Direct Marketing Email Opened |
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
+| `directMarketing.emailSent` | Direct Marketing Email Sent |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
 | `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |

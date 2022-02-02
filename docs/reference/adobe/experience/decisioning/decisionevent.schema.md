@@ -322,6 +322,7 @@ The primary event type for this time-series record.
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
 | `leadOperation.callWebhook` | Lead Operation Call Webhook |
+| `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

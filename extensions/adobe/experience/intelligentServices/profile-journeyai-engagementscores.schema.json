@@ -65,6 +65,16 @@
                       "type": "number",
                       "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title##79511",
                       "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description##41"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/churnReasonCode": {
+                      "title": "Churn Reason Code",
+                      "description": "Churn Reason Code is a qualitative categorization of customer's predicted churn reason.",
+                      "type": "string"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/maxSendsInThirtyDays": {
+                      "title": "Max Sends In Thirty Days",
+                      "description": "Max Sends In Thirty Days is the recommended maximum number of message sends in thrity days to a customer to avoid customer churn.",
+                      "type": "number"
                     }
                   },
                   "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title##20341",

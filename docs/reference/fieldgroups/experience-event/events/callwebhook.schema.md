@@ -39,68 +39,47 @@ Use to capture details when Webhook is called for a person
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:responseCode`| integer | Optional |
-| `xdm:webhookID`| string | Optional |
-| `xdm:webhookName`| string | Optional |
+| `xdm:callWebhook`| object | Optional |
 
 
 
-#### xdm:responseCode
-##### Response Code
+#### xdm:callWebhook
+##### Call Webhook
 
-HTTP response code from Webhook request.
+undefined
 
-`xdm:responseCode`
+`xdm:callWebhook`
 * is optional
-* type: `integer`
+* type: `object`
 
-##### xdm:responseCode Type
+##### xdm:callWebhook Type
 
+Unknown type `object`.
 
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:webhookID
-##### Webhook ID
-
-Unique ID of the Webhook called.
-
-`xdm:webhookID`
-* is optional
-* type: `string`
-
-##### xdm:webhookID Type
-
-
-`string`
-
-
-
-
-
-
-
-
-#### xdm:webhookName
-##### Webhook Name
-
-Name of the Webhook.
-
-`xdm:webhookName`
-* is optional
-* type: `string`
-
-##### xdm:webhookName Type
-
-
-`string`
-
+```json
+{
+  "title": "Call Webhook",
+  "type": "object",
+  "properties": {
+    "xdm:webhookID": {
+      "title": "Webhook ID",
+      "type": "string",
+      "description": "Unique ID of the Webhook called."
+    },
+    "xdm:webhookName": {
+      "title": "Webhook Name",
+      "type": "string",
+      "description": "Name of the Webhook."
+    },
+    "xdm:responseCode": {
+      "title": "Response Code",
+      "type": "integer",
+      "description": "HTTP response code from Webhook request."
+    }
+  },
+  "simpletype": "`object`"
+}
+```
 
 
 

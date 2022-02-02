@@ -25,20 +25,26 @@
                     "title": "Lead Operation",
                     "type": "object",
                     "properties": {
-                        "xdm:webhookID": {
-                            "title": "Webhook ID",
-                            "type": "string",
-                            "description": "Unique ID of the Webhook called."
-                        },
-                        "xdm:webhookName": {
-                            "title": "Webhook Name",
-                            "type": "string",
-                            "description": "Name of the Webhook."
-                        },
-                        "xdm:responseCode": {
-                            "title": "Response Code",
-                            "type": "integer",
-                            "description": "HTTP response code from Webhook request."
+                        "xdm:callWebhook": {
+                            "title": "Call Webhook",
+                            "type": "object",
+                            "properties": {
+                                "xdm:webhookID": {
+                                    "title": "Webhook ID",
+                                    "type": "string",
+                                    "description": "Unique ID of the Webhook called."
+                                },
+                                "xdm:webhookName": {
+                                    "title": "Webhook Name",
+                                    "type": "string",
+                                    "description": "Name of the Webhook."
+                                },
+                                "xdm:responseCode": {
+                                    "title": "Response Code",
+                                    "type": "integer",
+                                    "description": "HTTP response code from Webhook request."
+                                }
+                            }
                         }
                     }
                 }

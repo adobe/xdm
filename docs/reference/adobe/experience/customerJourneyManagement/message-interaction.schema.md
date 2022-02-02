@@ -21,6 +21,25 @@ Describes interaction made by the profile on the message.
 
 ```json
 {
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "marketing",
+    "apparel"
+  ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
+    "xdm:offerID": "1234",
+    "xdm:placementID": "12345",
+    "xdm:propositionID": "9898",
+    "xdm:offerCount": 5
+  }
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
     "marketing",
@@ -48,25 +67,6 @@ Describes interaction made by the profile on the message.
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": "journey",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": "internal",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": "December Offers"
-  }
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "click",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "offer",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
-    "marketing",
-    "apparel"
-  ],
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers": {
-    "xdm:offerID": "1234",
-    "xdm:placementID": "12345",
-    "xdm:propositionID": "9898",
-    "xdm:offerCount": 5
   }
 }
 ```

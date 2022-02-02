@@ -28,7 +28,7 @@
         "xdm:label": {
           "title": "Label",
           "type": "string",
-          "description": "Free form name of the address.",
+          "description": "Free form name of the address.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "address##xdm:label##title##39471",
           "meta:descriptionId": "address##xdm:label##description##90461"
         },

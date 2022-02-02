@@ -25,7 +25,7 @@
         "xdm:ianaTimezone": {
           "title": "Iana Timezone",
           "type": "string",
-          "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.",
+          "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "placecontext##xdm:ianaTimezone##title##49031",
           "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##25561"
         },

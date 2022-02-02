@@ -100,7 +100,7 @@
         },
         "xdm:emailVisitorID": {
           "title": "Email Recipient ID",
-          "description": "Captures the email recipient ID.",
+          "description": "Captures the email recipient ID.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "direct-marketing##xdm:emailVisitorID##title##26611",
           "meta:descriptionId": "direct-marketing##xdm:emailVisitorID##description##45021"

@@ -24,14 +24,14 @@
         "xdm:financialAccountID": {
           "title": "Financial Account ID",
           "type": "string",
-          "description": "Current account balance for a single user account.",
+          "description": "Current account balance for a single user account.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
           "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
         },
         "xdm:financialAccountName": {
           "title": "Financial Account Name",
           "type": "string",
-          "description": "Name assigned to the financial account.",
+          "description": "Name assigned to the financial account.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "financial-account##xdm:financialAccountName##title##12351",
           "meta:descriptionId": "financial-account##xdm:financialAccountName##description##58581"
         },
@@ -39,7 +39,7 @@
           "title": "Financial Account Type",
           "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
-          "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
+          "description": "Describes the type of finanical account, such as checking, savings, or retirement.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
           "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
         }

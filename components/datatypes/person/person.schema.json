@@ -57,7 +57,7 @@
             "not_specified": "Not Specified",
             "non_specific": "Non-specific"
           },
-          "description": "Gender identity of the person.\n",
+          "description": "Gender identity of the person.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "default": "not_specified",
           "meta:titleId": "person##xdm:gender##title##48811",
           "meta:descriptionId": "person##xdm:gender##description##33711"
@@ -82,7 +82,7 @@
           "title": "Nationality",
           "type": "string",
           "pattern": "^[A-Z]{2}$",
-          "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
+          "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "person##xdm:nationality##title##59991",
           "meta:descriptionId": "person##xdm:nationality##description##21181"
         },

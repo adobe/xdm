@@ -23,14 +23,14 @@
             "xdm:siteSection": {
               "title": "Site section",
               "type": "string",
-              "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.",
+              "description": "The normative name of the site section where this web page resides, which may be used to classify or categorize the interaction.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "webinfo##xdm:siteSection##title##15001",
               "meta:descriptionId": "webinfo##xdm:siteSection##description##23341"
             },
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "webinfo##xdm:name##title##24651",
               "meta:descriptionId": "webinfo##xdm:name##description##40671"
             },
@@ -108,7 +108,7 @@
             "xdm:name": {
               "title": "Name",
               "type": "string",
-              "description": "The normative name used for this web link, used for classification purposes.",
+              "description": "The normative name used for this web link, used for classification purposes.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "webinfo##xdm:name##title##72971",
               "meta:descriptionId": "webinfo##xdm:name##description##40881"
             },

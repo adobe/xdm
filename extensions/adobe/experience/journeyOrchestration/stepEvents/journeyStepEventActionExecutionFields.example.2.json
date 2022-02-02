@@ -9,5 +9,19 @@
   "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError": "capping",
   "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode": "500",
   "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType": "acs",
-  "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount": 345435
+  "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount": 345435,
+  "https://ns.adobe.com/experience/journeyOrchestration/actionGroupID":"abc22-d122e-11aeb-11247-8842b",
+  "https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized":false,
+  "https://ns.adobe.com/experience/journeyOrchestration/interactionType":"marketing",
+  "https://ns.adobe.com/experience/journeyOrchestration/consent": {
+    "https://ns.adobe.com/experience/journeyOrchestration/rejectedPoliciesCount" : 2,
+    "https://ns.adobe.com/experience/journeyOrchestration/rejectedPolicies" : [{
+      "https://ns.adobe.com/experience/journeyOrchestration/ID":"aec12-a121e-13aeb-11247-8842b",
+      "https://ns.adobe.com/experience/journeyOrchestration/name":"thePolicy1"
+    },
+    {
+      "https://ns.adobe.com/experience/journeyOrchestration/ID":"aaa12-a121e-13aeb-11247-8842b",
+      "https://ns.adobe.com/experience/journeyOrchestration/name":"thePolicy2"
+    }]
+  }
 }

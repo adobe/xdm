@@ -15,13 +15,17 @@ Adobe Advertising Cloud Ad Details.
 
 ```json
 {
-  "xdm:creativeID": "301404063528",
-  "xdm:keywordID": "147741280",
-  "xdm:audienceID": "257600311580",
-  "xdm:adGroupID": "32345812783",
-  "xdm:campaignID": "663049855",
-  "xdm:networkType": "search",
-  "xdm:matchType": "broad"
+  "@id": "14",
+  "dsp:adKey": "yyyy029YLCDvseo8QhTE",
+  "dsp:adStatus": "Active",
+  "dsp:adClass": "inbanner",
+  "dsp:adUnitType": "Flash",
+  "dsp:externalCreativeId": "5121209",
+  "dsp:promotedVideoId": "14",
+  "dsp:adServerId": "2",
+  "dsp:placementIds": [
+    "1"
+  ]
 }
 ```
 
@@ -37,17 +41,13 @@ Adobe Advertising Cloud Ad Details.
 
 ```json
 {
-  "@id": "14",
-  "dsp:adKey": "yyyy029YLCDvseo8QhTE",
-  "dsp:adStatus": "Active",
-  "dsp:adClass": "inbanner",
-  "dsp:adUnitType": "Flash",
-  "dsp:externalCreativeId": "5121209",
-  "dsp:promotedVideoId": "14",
-  "dsp:adServerId": "2",
-  "dsp:placementIds": [
-    "1"
-  ]
+  "xdm:creativeID": "301404063528",
+  "xdm:keywordID": "147741280",
+  "xdm:audienceID": "257600311580",
+  "xdm:adGroupID": "32345812783",
+  "xdm:campaignID": "663049855",
+  "xdm:networkType": "search",
+  "xdm:matchType": "broad"
 }
 ```
 

@@ -74,9 +74,6 @@
     },
     {
       "$ref": "#/definitions/campaign-member"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
   "meta:status": "stable",

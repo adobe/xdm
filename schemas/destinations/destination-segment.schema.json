@@ -51,6 +51,24 @@
           "description": "ID of user who created the destination flow",
           "meta:titleId": "destination-segment##xdm:createdByID##title##9991",
           "meta:descriptionId": "destination-segment##xdm:createdByID##description##76461"
+        },
+        "xdm:updateTime": {
+          "title": "Update Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and UTC time when the activation flow to the destination-segment mapping was updated"
+        },
+        "xdm:startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the activation flow will start sending the data to the destination"
+        },
+        "xdm:endDate": {
+          "title": "End Date",
+          "type": "string",
+          "format": "date",
+          "description": "The date when the activation flow will stop sending the data to the destination"
         }
       }
     }

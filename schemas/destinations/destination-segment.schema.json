@@ -62,13 +62,13 @@
           "title": "Start Date",
           "type": "string",
           "format": "date",
-          "description": "The date when the activation flow will start sending the data to the destination"
+          "description": "The date when the activation flow will start activating the segment to the destination"
         },
         "xdm:endDate": {
           "title": "End Date",
           "type": "string",
           "format": "date",
-          "description": "The date when the activation flow will stop sending the data to the destination"
+          "description": "The date when the activation flow will stop activating the segment to the destination"
         }
       }
     }

@@ -26,8 +26,7 @@
         "xdm:isDeleted": {
           "title": "Soft Delete Flag",
           "description": "Soft delete flag to indicate if the record is marked for deletion.",
-          "type": "boolean",
-          "meta:status": "experimental"
+          "type": "boolean"
         }
       }
     }
@@ -37,5 +36,5 @@
       "$ref": "#/definitions/record-status"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "experimental"
 }

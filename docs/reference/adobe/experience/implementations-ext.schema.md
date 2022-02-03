@@ -1,5 +1,5 @@
 
-# Adobe Experience Platform Implementation Details Mixin Schema
+# Adobe Experience Platform Implementation Details Schema
 
 ```
 https://ns.adobe.com/experience/implementations-ext
@@ -12,16 +12,16 @@ Details the type and version of client implementations in ExperienceEvents for d
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/implementations-ext.schema.json](adobe/experience/implementations-ext.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Experience Platform Implementation Details Mixin `https://ns.adobe.com/experience/implementations-ext`
+* Adobe Experience Platform Implementation Details `https://ns.adobe.com/experience/implementations-ext`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Adobe Experience Platform Implementation Details](implementations.schema.md) `https://ns.adobe.com/experience/implementations`
 
 
-# Adobe Experience Platform Implementation Details Mixin Properties
+# Adobe Experience Platform Implementation Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | Adobe Experience Platform Implementation Details Mixin (this schema) |
+| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | Adobe Experience Platform Implementation Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/implementations

@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventActionExecutionFields
 ```
 
-This Mixin will have Journey Action Metadata Fields.
+This Fieldgroup will have Journey Action Metadata Fields.
 
 | [Abstract](../../../../../abstract.md) | [Extensible](../../../../../extensions.md) | [Status](../../../../../status.md) | [Identifiable](../../../../../id.md) | [Custom Properties](../../../../../extensions.md) | [Additional Properties](../../../../../extensions.md) | Defined In |
 |----------------------------------------|--------------------------------------------|------------------------------------|--------------------------------------|---------------------------------------------------|-------------------------------------------------------|------------|
@@ -35,19 +35,33 @@ This Mixin will have Journey Action Metadata Fields.
 | Property | Type | Required |
 |----------|------|----------|
 | `https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/actionErrorContext`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime`| integer | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/actionGroupID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/actionGroupName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionParameterized`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/actionType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/channel`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/consent`| object | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/experimentationID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/experimentationName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger`| boolean | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/interactionType`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized`| boolean | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/messageID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/publishedMessageID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/surfaceID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/treatmentID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/treatmentName`| string | Optional |
 
 
 
@@ -61,6 +75,27 @@ The business solution powering the executed action. E.g: ACC, Epsilon.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/actionErrorContext
+##### ActionErrorContext
+
+Provides context of the error. Potential values: 'authCallError': error has occured in scope of custom or Adobe.IO authentication by calling the authentication endpoint to generate an access token, 'callError': error has occured on action call endpointTreatment name applied to execute the action
+
+`https://ns.adobe.com/experience/journeyOrchestration/actionErrorContext`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/actionErrorContext Type
 
 
 `string`
@@ -169,6 +204,48 @@ Time(ms) inside Journey Engine to call the necessary APIs to execute the action.
 
 
 `integer`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/actionGroupID
+##### ActionGroupID
+
+Action Group ID
+
+`https://ns.adobe.com/experience/journeyOrchestration/actionGroupID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/actionGroupID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/actionGroupName
+##### ActionGroupName
+
+Action Group Name
+
+`https://ns.adobe.com/experience/journeyOrchestration/actionGroupName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/actionGroupName Type
+
+
+`string`
 
 
 
@@ -302,6 +379,82 @@ Denotes the action channel invoked. E.g: Email, SMS, customHttp
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/channel
+##### Channel
+
+Channel Name like email, push, sms
+
+`https://ns.adobe.com/experience/journeyOrchestration/channel`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/channel Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/consent
+##### Consent
+
+Fields corresponding to action consent.
+
+`https://ns.adobe.com/experience/journeyOrchestration/consent`
+* is optional
+* type: `object`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/consent Type
+
+Unknown type `object`.
+
+```json
+{
+  "title": "Consent",
+  "description": "Fields corresponding to action consent.",
+  "type": "object",
+  "properties": {
+    "https://ns.adobe.com/experience/journeyOrchestration/rejectedPoliciesCount": {
+      "title": "RejectedPoliciesCount",
+      "description": "Count of rejected consent policies",
+      "type": "integer"
+    },
+    "https://ns.adobe.com/experience/journeyOrchestration/rejectedPolicies": {
+      "title": "RejectedPolicies",
+      "description": "Rejected Consent Policy details array object.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "https://ns.adobe.com/experience/journeyOrchestration/ID": {
+            "title": "ID",
+            "description": "ID of the rejected Consent policy.",
+            "type": "string"
+          },
+          "https://ns.adobe.com/experience/journeyOrchestration/name": {
+            "title": "Name",
+            "description": "Name of the corresponding rejected Consent policy.",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "simpletype": "`object`"
+}
+```
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID
 ##### deliveryJobID
 
@@ -312,6 +465,48 @@ Denotes the action channel invoked. E.g: Email, SMS, customHttp
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/experimentationID
+##### ExperimentationID
+
+Experimentation ID
+
+`https://ns.adobe.com/experience/journeyOrchestration/experimentationID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/experimentationID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/experimentationName
+##### ExperimentationName
+
+Experimentation Name
+
+`https://ns.adobe.com/experience/journeyOrchestration/experimentationName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/experimentationName Type
 
 
 `string`
@@ -336,6 +531,152 @@ Denotes the action channel invoked. E.g: Email, SMS, customHttp
 
 
 `boolean`
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/interactionType
+##### InteractionType
+
+Indicate the interaction type, either 'marketing' or 'transactional'. Remark: this will be relevant for message and custom actions
+
+`https://ns.adobe.com/experience/journeyOrchestration/interactionType`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/interactionType Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized
+##### IsSendTimeOptimized
+
+Indicate if the message execution has been delayed by applying a send time optimization
+
+`https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized`
+* is optional
+* type: `boolean`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/messageID
+##### MessageID
+
+Message ID referenced in inline message action of a journey
+
+`https://ns.adobe.com/experience/journeyOrchestration/messageID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/messageID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/publishedMessageID
+##### PublishedMessageID
+
+Published message ID in inline message action of a journey
+
+`https://ns.adobe.com/experience/journeyOrchestration/publishedMessageID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/publishedMessageID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/surfaceID
+##### SurfaceID
+
+Surface ID
+
+`https://ns.adobe.com/experience/journeyOrchestration/surfaceID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/surfaceID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/treatmentID
+##### TreatmentID
+
+Treatment ID applied to execute the action
+
+`https://ns.adobe.com/experience/journeyOrchestration/treatmentID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/treatmentID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/treatmentName
+##### TreatmentName
+
+Treatment name applied to execute the action
+
+`https://ns.adobe.com/experience/journeyOrchestration/treatmentName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/treatmentName Type
+
+
+`string`
+
 
 
 

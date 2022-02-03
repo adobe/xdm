@@ -15,7 +15,7 @@
     "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "This Mixin will have Common Journey Metadata Fields",
+  "description": "This Fieldgroup will have Common Journey Metadata Fields",
   "definitions": {
     "journey": {
       "properties": {

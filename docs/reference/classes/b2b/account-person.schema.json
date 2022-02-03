@@ -71,7 +71,16 @@
                     "description": "Role of the person on this account.",
                     "type": "string",
                     "meta:titleId": "account-person##xdm:personRole##title##49191",
-                    "meta:descriptionId": "account-person##xdm:personRole##description##22021"
+                    "meta:descriptionId": "account-person##xdm:personRole##description##22021",
+                    "meta:status": "deprecated"
+                },
+                "xdm:personRoles": {
+                    "title": "Person Roles",
+                    "description": "An array of roles of the person on this account.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "xdm:isDirect": {
                     "title": "Direct Flag",

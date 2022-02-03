@@ -15,7 +15,9 @@
     "https://ns.adobe.com/xdm/classes/marketing-list-member",
     "https://ns.adobe.com/xdm/classes/marketing-list",
     "https://ns.adobe.com/xdm/classes/opportunity-person",
-    "https://ns.adobe.com/xdm/context/opportunity"
+    "https://ns.adobe.com/xdm/context/opportunity",
+    "https://ns.adobe.com/xdm/context/campaign-member",
+    "https://ns.adobe.com/xdm/classes/campaign"
   ],
   "description": "Used to provide a status for the igested record. Example, mark the isDeleted flag TRUE if the record is marked for deletion. This field group could also be used to add more record statuses in future.",
   "definitions": {

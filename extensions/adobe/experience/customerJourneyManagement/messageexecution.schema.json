@@ -76,24 +76,36 @@
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID": {
-          "title": "AJO Campaign ID",
+          "meta:status": "deprecated",
+          "title": "AJO Campaign ID (deprecated)",
           "type": "string",
           "description": " Unique ID of the AJO Campaign that triggered this message execution."
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID": {
+          "title": "Campaign ID",
+          "type": "string",
+          "description": " Unique ID of the Campaign that triggered this message execution."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID": {
-          "title": "AJO Campaign Version ID",
+          "meta:status": "deprecated",
+          "title": "AJO Campaign Version ID (deprecated)",
           "type": "string",
           "description": " Version ID of the AJO Campaign that triggered this message execution."
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignActionID": {
-          "title": "AJO Campaign Action ID",
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID": {
+          "title": "Campaign Version ID",
           "type": "string",
-          "description": "Action ID of the AJO Campaign that triggered this message execution."
+          "description": " Version ID of the Campaign that triggered this message execution."
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID": {
+          "title": "Campaign Action ID",
+          "type": "string",
+          "description": "Action ID of the Campaign that triggered this message execution."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": {
           "title": "Batch Instance ID",
           "type": "string",
-          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or AJO Campaign Action. E.g: If a scheduled Journey or AJO Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
+          "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s."
         }
       }
     }

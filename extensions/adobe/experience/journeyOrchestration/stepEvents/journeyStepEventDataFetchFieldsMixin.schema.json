@@ -101,6 +101,11 @@
               "type": "integer",
               "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount##title##54101",
               "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount##description##21621"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext": {
+              "title": "FetchErrorContext",
+              "description": "Provides context of the error. Potential values: 'authCallError': error has occured in scope of custom or Adobe.IO authentication by calling the authentication endpoint to generate an access token, 'callError': error has occured on action call endpointTreatment name applied to execute the action",
+              "type": "string"
             }
           },
           "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##14981"

@@ -29,6 +29,12 @@
               "title": "Change Campaign Cadence",
               "type": "object",
               "properties": {
+                "xdm:campaignID": {
+                  "meta:status": "deprecated",
+                  "title": "Campaign ID (deprecated)",
+                  "type": "integer",
+                  "description": "Unique ID of the engagement campaign for which the cadence changed."
+                },
                 "xdm:campaignKey": {
                   "title": "Campaign Key",
                   "description": "Unique composite identifier of the Campaign.",

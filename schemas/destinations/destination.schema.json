@@ -97,13 +97,27 @@
             "personalization",
             "social",
             "streaming"
-          ]
+          ],
+          "meta:enum": {
+            "adobeSolutions": "adobeSolutions",
+            "advertising": "advertising",
+            "cloudStorage": "cloudStorage",
+            "emailMarketing": "emailMarketing",
+            "mobile engagement": "mobile engagement",
+            "personalization": "personalization",
+            "social": "social",
+            "streaming": "streaming"
+          }
         },
         "xdm:destinationFrequency": {
           "title": "Destination Frequency",
           "type": "string",
           "description": "Indicates how often the audiences are sent to the destination",
-          "enum": ["Batch", "Streaming"]
+          "enum": ["Batch", "Streaming"],
+          "meta:enum": {
+            "Batch": "Batch",
+            "Streaming": "Streaming"
+          }
         }
       }
     }

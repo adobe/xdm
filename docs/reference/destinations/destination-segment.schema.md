@@ -24,7 +24,10 @@ Destinations Segment Mapping Schema.
   "xdm:segmentID": "0b12f30c-2260-442e-9120-2b12e96c0c40",
   "xdm:segmentNamespace": "aepsegments",
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
-  "xdm:createdByID": "mprabhak"
+  "xdm:createdByID": "mprabhak",
+  "xdm:updateTime": "2019-01-02T15:52:25+00:00",
+  "xdm:startDate": "2022-02-03",
+  "xdm:endDate": "2022-02-06"
 }
 ```
 
@@ -36,8 +39,11 @@ Destinations Segment Mapping Schema.
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations Segment Mapping (this schema) |
+| [xdm:endDate](#xdmenddate) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:segmentID](#xdmsegmentid) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | [xdm:segmentNamespace](#xdmsegmentnamespace) | `string` | Optional | Destinations Segment Mapping (this schema) |
+| [xdm:startDate](#xdmstartdate) | `string` | Optional | Destinations Segment Mapping (this schema) |
+| [xdm:updateTime](#xdmupdatetime) | `string` | Optional | Destinations Segment Mapping (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -122,6 +128,27 @@ Unique Identifier for a destination instance
 
 
 
+## xdm:endDate
+### End Date
+
+The date when the activation flow will stop activating the segment to the destination
+
+`xdm:endDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:endDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
 ## xdm:segmentID
 ### Segment ID
 
@@ -156,6 +183,48 @@ Namespace to which the segment belongs
 
 
 `string`
+
+
+
+
+
+
+## xdm:startDate
+### Start Date
+
+The date when the activation flow will start activating the segment to the destination
+
+`xdm:startDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:startDate Type
+
+
+`string`
+* format: `date` – date, without time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:updateTime
+### Update Time
+
+The date and UTC time when the activation flow to the destination-segment mapping was updated
+
+`xdm:updateTime`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:updateTime Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

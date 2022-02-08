@@ -1,0 +1,61 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/add-to-campaign",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add To Campaign",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.addToCampaign",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use to add a person to the specific campaign.",
+  "definitions": {
+    "addtocampaign": {
+      "properties": {
+        "xdm:leadOperation": {
+          "title": "Lead Operation",
+          "type": "object",
+          "properties": {
+            "xdm:addToCampaign": {
+              "title": "Add To Campaign",
+              "type": "object",
+              "properties": {
+                "xdm:campaignKey": {
+                  "title": "Campaign Key",
+                  "description": "Unique composite identifier of the Campaign.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
+                "xdm:StreamID": {
+                  "title": "Stream ID",
+                  "type": "string",
+                  "description": "Unique ID for the stream."
+                },
+                "xdm:streamName": {
+                  "title": "Stream Name",
+                  "type": "string",
+                  "description": "Name of the campaign stream."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/addtocampaign"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-02-08"
+}

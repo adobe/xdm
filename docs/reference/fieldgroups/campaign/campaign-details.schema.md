@@ -15,6 +15,7 @@ Captures properties related to business campaign details.
 * XDM Business Campaign Details `https://ns.adobe.com/xdm/mixins/campaign-details`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [Currency](../../datatypes/currency.schema.md) `https://ns.adobe.com/xdm/datatypes/currency`
+  * [Record Status](../shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Campaign Details Example
@@ -37,6 +38,7 @@ Captures properties related to business campaign details.
 | [xdm:expectedRevenue](#xdmexpectedrevenue) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:integrationPartnerName](#xdmintegrationpartnername) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Campaign Details (this schema) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:lastActivityDate](#xdmlastactivitydate) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:parentCampaignID](#xdmparentcampaignid) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:parentCampaignKey](#xdmparentcampaignkey) | B2B Source | Optional | XDM Business Campaign Details (this schema) |
@@ -237,6 +239,25 @@ Captures properties related to business campaign details.
 * defined in this schema
 
 ### xdm:isActive Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
 
 
 `boolean`

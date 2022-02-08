@@ -14,6 +14,7 @@ An XDM Business Campaign Member.
 
 * XDM Business Campaign Member Details `https://ns.adobe.com/xdm/context/campaign-member-details`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
+  * [Record Status](../shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Campaign Member Details Example
@@ -49,6 +50,7 @@ An XDM Business Campaign Member.
 | [xdm:firstRespondedDate](#xdmfirstrespondeddate) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasReachedSuccess](#xdmhasreachedsuccess) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasResponded](#xdmhasresponded) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:isExhausted](#xdmisexhausted) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:lastStatus](#xdmlaststatus) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:memberStatus](#xdmmemberstatus) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
@@ -147,6 +149,25 @@ Record whether the member has responded to the workflow stage
 * defined in this schema
 
 ### xdm:hasResponded Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
 
 
 `boolean`

@@ -10,8 +10,8 @@
   "meta:abstract": false,
   "meta:extensible": true,
   "type": "object",
-  "title": "Frequency Capping Constraint",
-  "description": "Frequency capping constraint is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",
+  "title": "Frequency Capping Constraints",
+  "description": "Frequency capping constraints is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",
   "definitions": {
     "frequency-capping-constraints": {
       "properties": {
@@ -20,6 +20,8 @@
             "type": "array",
             "items": {
               "type": "object",
+              "title": "Frequency capping constraint",
+              "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
               "properties": {
                 "xdm:limit": {
                   "title": "Limit",
@@ -31,10 +33,7 @@
                   "title": "scope",
                   "description": "Scope of the capping",
                   "type": "string",
-                  "enum": [
-                    "global",
-                    "profile"
-                  ],
+                  "enum": ["global", "profile"],
                   "meta:enum": {
                     "global": "Global cap is a constraint on how many times an option can be proposed in totality.",
                     "profile": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
@@ -44,10 +43,7 @@
                   "title": "Entity",
                   "description": "Entity to comply with.  It will be Offer or Placement.",
                   "type": "string",
-                  "enum": [
-                    "offer",
-                    "placement"
-                  ],
+                  "enum": ["offer", "placement"],
                   "meta:enum": {
                     "offer": "To comply with offer.",
                     "placement": "To comply with offer placement."
@@ -83,14 +79,10 @@
                   "type": "array",
                   "items": {
                     "type": "string",
-                    "enum": [
-                      "decisioning"
-                    ]
+                    "enum": ["decisioning"]
                   },
                   "minItems": 1,
-                  "default": [
-                    "decisioning"
-                  ]
+                  "default": ["decisioning"]
                 },
                 "xdm:repeat": {
                   "title": "Repeat",
@@ -99,15 +91,9 @@
                   "default": false
                 }
               },
-              "required": [
-                "xdm:limit",
-                "xdm:scope",
-                "xdm:entity"
-              ]
+              "required": ["xdm:limit", "xdm:scope", "xdm:entity"]
             }
-          },
-          "title": "Frequency capping constraints",
-          "description": "Frequency capping constraints define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity."
+          }
         }
       }
     }

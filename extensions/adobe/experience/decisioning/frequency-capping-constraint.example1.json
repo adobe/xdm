@@ -4,9 +4,7 @@
       "xdm:count": 10,
       "xdm:scope": "profile",
       "xdm:entity": "offer",
-      "xdm:events": [
-        "decisioning"
-      ]
+      "xdm:events": ["decisioning"]
     }
   ]
 }

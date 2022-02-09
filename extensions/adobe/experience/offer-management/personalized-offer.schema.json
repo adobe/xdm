@@ -38,14 +38,6 @@
               "description": "Capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
               "meta:titleId": "personalized-offer##xdm:cappingConstraint##title##16381",
               "meta:descriptionId": "personalized-offer##xdm:cappingConstraint##description##60711"
-            },
-            "xdm:frequencyCappingConstraints": {
-              "type": "array",
-              "items": {
-                "$ref": "https://ns.adobe.com/experience/decisioning/frequency-capping-constraint"
-              },
-              "title": "Frequency capping constraints",
-              "description": "Frequency capping constraints define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity."
             }
           }
         },

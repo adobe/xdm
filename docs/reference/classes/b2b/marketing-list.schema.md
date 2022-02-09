@@ -17,6 +17,7 @@ XDM Business Marketing List is a standard Experience Data Model (XDM) class that
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Record Status](../../fieldgroups/shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Marketing List Example
@@ -32,6 +33,7 @@ XDM Business Marketing List is a standard Experience Data Model (XDM) class that
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:marketingListDescription](#xdmmarketinglistdescription) | `string` | Optional | XDM Business Marketing List (this schema) |
 | [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List (this schema) |
 | [xdm:marketingListKey](#xdmmarketinglistkey) | B2B Source | Optional | XDM Business Marketing List (this schema) |
@@ -73,6 +75,25 @@ Audit attributes for external sources.
 
 
 * [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
+
+
+`boolean`
 
 
 

@@ -180,6 +180,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/campaign-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
     "meta:status": "stable",

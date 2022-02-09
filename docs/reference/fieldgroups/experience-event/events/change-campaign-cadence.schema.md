@@ -62,9 +62,15 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:campaignID": {
-      "title": "Campaign ID",
+      "meta:status": "deprecated",
+      "title": "Campaign ID (deprecated)",
       "type": "integer",
       "description": "Unique ID of the engagement campaign for which the cadence changed."
+    },
+    "xdm:campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the Campaign.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
     "xdm:newCadence": {
       "title": "New Cadence",

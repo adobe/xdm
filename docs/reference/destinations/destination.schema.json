@@ -85,6 +85,44 @@
                     "description": "Unique identifier to connect and deliver segments to the destination",
                     "meta:titleId": "destination##xdm:connectionSpecID##title##40981",
                     "meta:descriptionId": "destination##xdm:connectionSpecID##description##44091"
+                },
+                "xdm:destinationCategory": {
+                    "title": "Destination Category",
+                    "type": "string",
+                    "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
+                    "enum": [
+                        "adobeSolutions",
+                        "advertising",
+                        "cloudStorage",
+                        "emailMarketing",
+                        "mobile engagement",
+                        "personalization",
+                        "social",
+                        "streaming"
+                    ],
+                    "meta:enum": {
+                        "adobeSolutions": "adobeSolutions",
+                        "advertising": "advertising",
+                        "cloudStorage": "cloudStorage",
+                        "emailMarketing": "emailMarketing",
+                        "mobile engagement": "mobile engagement",
+                        "personalization": "personalization",
+                        "social": "social",
+                        "streaming": "streaming"
+                    }
+                },
+                "xdm:destinationFrequency": {
+                    "title": "Destination Frequency",
+                    "type": "string",
+                    "description": "Indicates how often the audiences are sent to the destination",
+                    "enum": [
+                        "Batch",
+                        "Streaming"
+                    ],
+                    "meta:enum": {
+                        "Batch": "Batch",
+                        "Streaming": "Streaming"
+                    }
                 }
             }
         }
@@ -106,14 +144,16 @@
     "examples": [
         {
             "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-            "xdm:destinationName": "Infa",
-            "xdm:destinationPlatform": "Informatica",
+            "xdm:destinationName": "LMA_Destination1",
+            "xdm:destinationPlatform": "LinkedIn Matched Audience",
             "xdm:createTime": "2019-01-01T15:52:25+00:00",
             "xdm:createdByID": "mprabhbak",
-            "xdm:destinationDescription": "Informatica connection",
+            "xdm:destinationDescription": "LinkedIn Matched Audience connection",
             "xdm:destinationStatus": "enabled",
             "xdm:version": "1.2",
-            "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea"
+            "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea",
+            "xdm:destinationCategory": "social",
+            "xdm:destinationFrequency": "Streaming"
         }
     ]
 }

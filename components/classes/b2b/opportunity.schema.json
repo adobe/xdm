@@ -93,6 +93,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
   "meta:status": "stable",

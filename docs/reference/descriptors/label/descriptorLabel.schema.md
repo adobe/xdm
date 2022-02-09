@@ -21,9 +21,17 @@ Describes a label at the field level for a given class/fieldgroup/schema
 ```json
 {
   "@type": "xdm:descriptorLabel",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
   "xdm:sourceVersion": 1,
-  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:sourceProperty": [
+    "/workAddress",
+    "/workEmail"
+  ],
+  "xdm:excludeProperty": [
+    "/workAddress/street3",
+    "/workAddress/street4",
+    "/workEmail/status"
+  ],
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
     "sampleDUlELabelResourceID2",
@@ -51,17 +59,9 @@ Describes a label at the field level for a given class/fieldgroup/schema
 ```json
 {
   "@type": "xdm:descriptorLabel",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": [
-    "/workAddress",
-    "/workEmail"
-  ],
-  "xdm:excludeProperty": [
-    "/workAddress/street3",
-    "/workAddress/street4",
-    "/workEmail/status"
-  ],
+  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
     "sampleDUlELabelResourceID2",

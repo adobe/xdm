@@ -13,6 +13,7 @@
   "meta:extensible": false,
   "meta:abstract": false,
   "meta:extends": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/xdm/data/time-series",
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",

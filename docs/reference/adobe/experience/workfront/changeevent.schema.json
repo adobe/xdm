@@ -76,7 +76,7 @@
                 "workfront:storyPoints": {
                     "title": "Story Points",
                     "description": "Story points assigned to this object",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "workfront:durationMinutes": {
                     "title": "Duration Minutes",

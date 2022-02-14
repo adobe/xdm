@@ -12,8 +12,8 @@
   "description": "Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent field groups.",
   "meta:extensible": false,
   "meta:abstract": false,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/data/time-series",
     "https://ns.adobe.com/xdm/context/experienceevent-advertising",
     "https://ns.adobe.com/xdm/context/experienceevent-application",
     "https://ns.adobe.com/xdm/context/experienceevent-channel",

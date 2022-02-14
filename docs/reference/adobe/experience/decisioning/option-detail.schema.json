@@ -107,19 +107,28 @@
     "meta:descriptionId": "option-detail##description##41091",
     "examples": [
         {
-            "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+            "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
             "xdm:name": "Introduction to machine learning",
             "xdm:characteristics": {
-                "duration": "14",
+                "duration": "30",
                 "level": "intermediate",
                 "format": "Syllable"
             },
-            "xdm:score": 83,
+            "xdm:score": 90,
+            "xdm:optionContent": {
+                "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
+                "dc:format": "text/x-handlebars-template+html",
+                "dc:language": [
+                    "en"
+                ],
+                "repo:id": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+                "xdm:content": "text"
+            },
             "xdm:propositionsTotal": {
-                "xdm:value": 4948
+                "xdm:value": 5000
             },
             "xdm:propositionsProfile": {
-                "xdm:value": 2
+                "xdm:value": 3
             }
         },
         {
@@ -150,28 +159,19 @@
             }
         },
         {
-            "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
+            "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
             "xdm:name": "Introduction to machine learning",
             "xdm:characteristics": {
-                "duration": "30",
+                "duration": "14",
                 "level": "intermediate",
                 "format": "Syllable"
             },
-            "xdm:score": 90,
-            "xdm:optionContent": {
-                "@type": "https://ns.adobe.com/experience/offer-management/content-component-html-template",
-                "dc:format": "text/x-handlebars-template+html",
-                "dc:language": [
-                    "en"
-                ],
-                "repo:id": "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e",
-                "xdm:content": "text"
-            },
+            "xdm:score": 83,
             "xdm:propositionsTotal": {
-                "xdm:value": 5000
+                "xdm:value": 4948
             },
             "xdm:propositionsProfile": {
-                "xdm:value": 3
+                "xdm:value": 2
             }
         }
     ]

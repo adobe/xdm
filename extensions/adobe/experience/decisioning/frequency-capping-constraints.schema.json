@@ -10,7 +10,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/decisioning/option"
   ],
-  "meta:abstract": false,
+  "meta:abstract": true,
   "meta:extensible": true,
   "type": "object",
   "title": "Frequency Capping Constraints",

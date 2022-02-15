@@ -40,7 +40,7 @@ Data associated with a change event within Workfront project execution
 | [workfront:priority](#workfrontpriority) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:remainingMinutes](#workfrontremainingminutes) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:status](#workfrontstatus) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:storyPoints](#workfrontstorypoints) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:storyPoints](#workfrontstorypoints) | `number` | Optional | Workfront Change Event (this schema) |
 | [workfront:updated](#workfrontupdated) | `integer` | Optional | Workfront Change Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -459,13 +459,13 @@ Story points assigned to this object
 
 `workfront:storyPoints`
 * is optional
-* type: `integer`
+* type: `number`
 * defined in this schema
 
 ### workfront:storyPoints Type
 
 
-`integer`
+`number`
 
 
 

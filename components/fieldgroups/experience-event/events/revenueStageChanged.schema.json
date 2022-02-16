@@ -39,20 +39,20 @@
                   "type": "string",
                   "description": "Name of the model for Revenue Cycle Modeler."
                 },
-                "xdm:newStageID": {
-                  "title": "New Stage ID",
-                  "type": "string",
-                  "description": "Unique ID of the stage person assigned to."
+                "xdm:newStageKey": {
+                  "title": "New Stage Key",
+                  "description": "Unique composite identifier of the stage person assigned to.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 },
                 "xdm:newStageName": {
                   "title": "New Stage Name",
                   "type": "string",
                   "description": "Name of the new stage person assigned to."
                 },
-                "xdm:previousStageID": {
-                  "title": "Previous Stage ID",
-                  "type": "string",
-                  "description": "Unique ID of the previous stage person assigned from."
+                "xdm:previousStageKey": {
+                  "title": "Previous Stage Key",
+                  "description": "Unique composite identifier of the previous stage person assigned from.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 },
                 "xdm:previousStageName": {
                   "title": "Previous Stage Name",

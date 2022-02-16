@@ -1,0 +1,146 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/journeyOrchestration/classification",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Classification Fields",
+  "description": "A set of meta-data fields that will classify the correlation id for performance reporting.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journey"
+  ],
+  "definitions": {
+    "classification": {
+      "properties": {
+        "https://ns.adobe.com/experience/journeyOrchestration/classification/messageID": {
+          "title": "Message Id",
+          "description": "The message id to which this data should be correlated.",
+          "type": "string"
+        },
+        "https://ns.adobe.com/experience/journeyOrchestration/classification/channel": {
+          "title": "Channel",
+          "description": "The channel to which this data should be correlated.",
+          "$ref": "https://ns.adobe.com/xdm/channels/channel"
+        },
+        "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentation": {
+          "title": "Experimentation",
+          "description": "A container to group experimentation details.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentID": {
+              "title": "Experiment Id",
+              "description": "The id of the experiment.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentName": {
+              "title": "Experiment Name",
+              "description": "The name of the experiment.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentID": {
+              "title": "Treatment Id",
+              "description": "The id of selected treatment for the experiment.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentName": {
+              "title": "Treatment Name",
+              "description": "The name of the selected treatment for the experiment.",
+              "type": "string"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/journeyOrchestration/classification/journey": {
+          "title": "Journey",
+          "description": "A container to group journey details.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyID": {
+              "title": "Journey Id",
+              "description": "The id of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyName": {
+              "title": "Journey Name",
+              "description": "The name of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionID": {
+              "title": "Journey Version Id",
+              "description": "The version id of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionName": {
+              "title": "JourneyVersionName",
+              "description": "The version name of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/actionName": {
+              "title": "Action Name",
+              "description": "The action name of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeID": {
+              "title": "Node Id",
+              "description": "The node id of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/actionID": {
+              "title": "actionName",
+              "description": "The action name of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeName": {
+              "title": "Node Name",
+              "description": "The node name of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/stepID": {
+              "title": "Step Id",
+              "description": "The step id of the journey to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/stepName": {
+              "title": "Step Name",
+              "description": "The step id of the journey to which this data should be correlated.",
+              "type": "string"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/journeyOrchestration/classification/campaign": {
+          "title": "Campaign",
+          "description": "A container to group campaign details.",
+          "type": "object",
+          "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignID": {
+              "title": "Campaign Id",
+              "description": "The id of the campaign to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignName": {
+              "title": "Campaign Name",
+              "description": "The name of the campaign to which this data should be correlated.",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignVersionID": {
+              "title": "Campaign Version Id",
+              "description": "The version id of the campaign to which this data should be correlated.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/classification"
+    }
+  ]
+}

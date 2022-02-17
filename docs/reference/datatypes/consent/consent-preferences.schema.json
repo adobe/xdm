@@ -91,6 +91,15 @@
                         "meta:titleId": "consents-and-preferences##xdm:type##title##3131",
                         "meta:descriptionId": "consents-and-preferences##xdm:type##description##33161"
                     },
+                    "xdm:topics": {
+                        "title": "Topics",
+                        "description": "Topics of interest for personalizing this subscription.",
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "maxLength": 15
+                        }
+                    },
                     "xdm:subscribers": {
                         "title": "Subscribers",
                         "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",

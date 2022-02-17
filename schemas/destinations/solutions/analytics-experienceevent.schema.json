@@ -12,27 +12,9 @@
   "description": "Analytics ExperienceEvent schema used for adobe analytics solution data ingestion. Includes the core/standard ExperienceEvent as well as the required Adobe Analytics ExperienceEvent field groups.",
   "meta:extensible": false,
   "meta:abstract": false,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "meta:extends": [
-    "https://ns.adobe.com/xdm/context/experienceevent-advertising",
-    "https://ns.adobe.com/xdm/context/experienceevent-application",
-    "https://ns.adobe.com/xdm/context/experienceevent-channel",
-    "https://ns.adobe.com/xdm/context/experienceevent-directmarketing",
-    "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
-    "https://ns.adobe.com/xdm/context/experienceevent-marketing",
-    "https://ns.adobe.com/xdm/context/experienceevent-media",
-    "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch",
-    "https://ns.adobe.com/xdm/context/experienceevent-search",
-    "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
-    "https://ns.adobe.com/xdm/context/experienceevent-technical-details",
-    "https://ns.adobe.com/xdm/context/experienceevent-web",
-    "https://ns.adobe.com/experience/analytics/experienceevent-all",
-    "https://ns.adobe.com/experience/experienceevent-edgeregion",
-    "https://ns.adobe.com/experience/target/experienceevent-shared",
-    "https://ns.adobe.com/experience/profile/experienceevent-shared",
-    "https://ns.adobe.com/experience/implementations-ext",
-    "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
-    "https://ns.adobe.com/experience/analytics/commerce"
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/analytics-experienceevent"
   ],
   "definitions": {
     "analytics-experienceevent": {
@@ -41,64 +23,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-advertising"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-application"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-channel"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-directmarketing"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-search"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-technical-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/analytics/experienceevent-all"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/experienceevent-edgeregion"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/target/experienceevent-shared"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/profile/experienceevent-shared"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/implementations-ext"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-enduserids"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/analytics/commerce"
+      "$ref": "https://ns.adobe.com/experience/analytics-experienceevent"
     },
     {
       "$ref": "#/definitions/analytics-experienceevent"

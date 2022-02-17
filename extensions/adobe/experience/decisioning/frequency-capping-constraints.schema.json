@@ -1,0 +1,108 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/frequency-capping-constraints",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/option"
+  ],
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Frequency Capping Constraints",
+  "description": "Frequency capping constraints is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",
+  "definitions": {
+    "frequency-capping-constraints": {
+      "properties": {
+        "xdm:frequencyCappingConstraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Frequency capping constraint",
+            "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
+            "properties": {
+              "xdm:limit": {
+                "title": "Limit",
+                "description": "How many times an option can be proposed",
+                "type": "integer",
+                "minimum": 1
+              },
+              "xdm:scope": {
+                "title": "scope",
+                "description": "Scope of the capping",
+                "type": "string",
+                "enum": ["global", "profile"],
+                "meta:enum": {
+                  "global": "Global cap is a constraint on how many times an option can be proposed in totality.",
+                  "profile": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
+                }
+              },
+              "xdm:entity": {
+                "title": "Entity",
+                "description": "Entity to comply with.  It will be Offer or Placement.",
+                "type": "string",
+                "enum": ["offer", "placement"],
+                "meta:enum": {
+                  "offer": "To comply with offer.",
+                  "placement": "To comply with offer placement."
+                }
+              },
+              "xdm:placement": {
+                "title": "Offer Placement",
+                "description": "Placement to comply with. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement. If placement id is not provided and entity is on placement, the capping will be applied to every placement. If placement is provided, it will only be applied to specified placement.",
+                "type": "string",
+                "format": "uri-reference"
+              },
+              "xdm:startDate": {
+                "type": "string",
+                "format": "date-time",
+                "title": "Start Date and Time",
+                "description": "Capping start date and time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action"
+              },
+              "xdm:endDate": {
+                "type": "string",
+                "format": "date-time",
+                "title": "End Date and Time",
+                "description": "Capping end date and time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action"
+              },
+              "xdm:duration": {
+                "title": "Duration",
+                "description": "Duration in hours. When xdm:repeat is true, daily scan job of the rules will update all expired rules to start from current time and end with the specific xdm:duration",
+                "type": "integer",
+                "minimum": 1
+              },
+              "xdm:events": {
+                "title": "Events",
+                "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["decisioning"]
+                },
+                "minItems": 1,
+                "default": ["decisioning"]
+              },
+              "xdm:repeat": {
+                "title": "Repeat",
+                "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating",
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "required": ["xdm:limit", "xdm:scope", "xdm:entity"]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/frequency-capping-constraints"
+    }
+  ],
+  "meta:status": "stable"
+}

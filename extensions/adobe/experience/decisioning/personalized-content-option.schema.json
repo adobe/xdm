@@ -16,7 +16,8 @@
     "https://ns.adobe.com/experience/decisioning/contents",
     "https://ns.adobe.com/experience/decisioning/calendar-constraints",
     "https://ns.adobe.com/experience/decisioning/profile-constraints",
-    "https://ns.adobe.com/experience/decisioning/ranking"
+    "https://ns.adobe.com/experience/decisioning/ranking",
+    "https://ns.adobe.com/experience/decisioning/frequency-capping-constraints"
   ],
   "meta:abstract": true,
   "meta:extensible": true,
@@ -46,6 +47,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/decisioning/ranking"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/frequency-capping-constraints"
     },
     {
       "$ref": "#/definitions/personalized-content-option"

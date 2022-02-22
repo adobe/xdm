@@ -79,6 +79,11 @@
           },
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451"
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/provider": {
+          "title": "SMS Provider",
+          "type": "string",
+          "description": "SMS provider , e.g. sinch or twilio"
         }
       }
     }

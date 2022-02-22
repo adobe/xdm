@@ -1,0 +1,10 @@
+{
+  "xdm:frequencyCappingConstraints": [
+    {
+      "xdm:count": 10,
+      "xdm:scope": "profile",
+      "xdm:entity": "offer",
+      "xdm:events": ["decisioning"]
+    }
+  ]
+}

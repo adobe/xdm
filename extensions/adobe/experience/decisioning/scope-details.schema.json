@@ -42,6 +42,11 @@
           "meta:titleId": "scope-details##xdm:activity##title##26571",
           "meta:descriptionId": "scope-details##xdm:activity##description##781"
         },
+        "xdm:correlationID": {
+          "type": "string",
+          "title": "Correlation Identifier",
+          "description": "The campaign, journey, or other object to which this activity can be correlated. This string will often be further classified in the reporting engine."
+        },
         "xdm:interactionMeasurements": {
           "type": "array",
           "items": {

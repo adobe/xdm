@@ -85,7 +85,7 @@
             "type": "array",
             "items": {
               "type": "string",
-              "maxLength": 15
+              "maxLength": 25
             }
           },
           "xdm:subscribers": {

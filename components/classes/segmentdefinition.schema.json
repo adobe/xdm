@@ -54,6 +54,14 @@
           "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
           "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##63401",
           "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##29131"
+        },
+        "xdm:labels": {
+          "title": "Labels",
+          "description": "When present, it allows an array of labels. Values are resources IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       }
     }

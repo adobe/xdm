@@ -15,7 +15,7 @@
     "industry": ["all"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Environment details such as device details, browser info, local time, and other geographical information.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Environment details such as device details, browser info, local time, and other geographical information. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "experienceevent-environment-details": {
       "properties": {

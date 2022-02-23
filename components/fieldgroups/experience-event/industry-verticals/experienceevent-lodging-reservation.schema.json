@@ -22,7 +22,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Collects all details specific to a lodging reservation.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Collects all details specific to a lodging reservation. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "reservations": {
       "properties": {
@@ -117,7 +117,7 @@
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
-                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:loyaltyID##title##85061",
                     "meta:descriptionId": "experienceevent-lodging-reservation##xdm:loyaltyID##description##33691"
                   },
@@ -227,7 +227,7 @@
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
-                    "description": "Currency code used to make the purchase. ISO 4217 currency code.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Currency code used to make the purchase. ISO 4217 currency code. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "pattern": "^[A-Z]{3}$",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:currencyCode##title##60261",
                     "meta:descriptionId": "experienceevent-lodging-reservation##xdm:currencyCode##description##85831"
@@ -235,7 +235,7 @@
                   "xdm:ID": {
                     "title": "ID",
                     "type": "string",
-                    "description": "Tracks the reservation number/identifier.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Tracks the reservation number/identifier. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "meta:titleId": "experienceevent-lodging-reservation##xdm:ID##title##92921",
                     "meta:descriptionId": "experienceevent-lodging-reservation##xdm:ID##description##25351"
                   },

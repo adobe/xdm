@@ -15,7 +15,7 @@
     "industry": ["financial_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Personal finance details such as financial account details, credit score, and tax bracket.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Personal finance details such as financial account details, credit score, and tax bracket. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "personal-finance-details": {
       "properties": {
@@ -26,7 +26,7 @@
             "xdm:accountCardsTotal": {
               "title": "Account Cards Total",
               "type": "integer",
-              "description": "Total number of account (financial) cards assigned to a user.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Total number of account (financial) cards assigned to a user. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##471",
               "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##25401"
             },
@@ -86,7 +86,7 @@
                 "retired": "Retired",
                 "unemployed": "Unemployed"
               },
-              "description": "Tracks the employment status of the user.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Tracks the employment status of the user. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##67451",
               "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##47761"
             },
@@ -96,14 +96,14 @@
               "items": {
                 "type": "string"
               },
-              "description": "Array of financial account IDs assigned to the user.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Array of financial account IDs assigned to the user. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-personal-finance-details##xdm:ID##title##23551",
               "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##31621"
             },
             "xdm:hasAssignedBeneficiary": {
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
-              "description": "Flag determining if the account has a beneficiary assigned.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Flag determining if the account has a beneficiary assigned. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##46991",
               "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##57851"
             }

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
-  "description": "XDM Business Account relationships for one data source.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "XDM Business Account relationships for one data source. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "account-components": {
       "properties": {
@@ -44,7 +44,7 @@
               },
               "xdm:sourcePartnerAccountID": {
                 "title": "Source Partner Account Id",
-                "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                 "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
                 "meta:titleId": "account-components##xdm:sourcePartnerAccountID##title##10421",
                 "meta:descriptionId": "account-components##xdm:sourcePartnerAccountID##description##11541"

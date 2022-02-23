@@ -129,7 +129,7 @@
         },
         "xdm:DUNSNumber": {
           "title": "Dun & Bradstreet D-U-N-S Number",
-          "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "b2b-account-organization##xdm:DUNSNumber##title##491",
           "meta:descriptionId": "b2b-account-organization##xdm:DUNSNumber##description##44131"

@@ -93,14 +93,14 @@
         },
         "xdm:hashedEmail": {
           "title": "Visitor Hashed Email Address",
-          "description": "Captures the encrypted/hashed version of the visitor's email address.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Captures the encrypted/hashed version of the visitor's email address. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "direct-marketing##xdm:hashedEmail##title##41291",
           "meta:descriptionId": "direct-marketing##xdm:hashedEmail##description##32071"
         },
         "xdm:emailVisitorID": {
           "title": "Email Recipient ID",
-          "description": "Captures the email recipient ID.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Captures the email recipient ID. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "direct-marketing##xdm:emailVisitorID##title##26611",
           "meta:descriptionId": "direct-marketing##xdm:emailVisitorID##description##45021"

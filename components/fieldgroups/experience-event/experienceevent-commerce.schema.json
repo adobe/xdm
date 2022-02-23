@@ -15,7 +15,7 @@
     "industry": ["all"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
-  "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon).This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon). This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "experienceevent-commerce": {
       "properties": {

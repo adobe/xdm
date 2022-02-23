@@ -25,7 +25,7 @@
         "xdm:label": {
           "title": "Label of the geographical unit.",
           "type": "string",
-          "description": "The user-friendly name for the geographical unit.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The user-friendly name for the geographical unit. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "geounit##xdm:label##title##71171",
           "meta:descriptionId": "geounit##xdm:label##description##16511"
         }

@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use to capture details when a marketing email to person soft-bounces.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Use to capture details when a marketing email to person soft-bounces. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "emailbouncedsoft": {
       "properties": {
@@ -28,14 +28,14 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Unique ID of the email asset. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailbouncedsoft##xdm:mailingID##title##35741",
               "meta:descriptionId": "emailbouncedsoft##xdm:mailingID##description##79361"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Friendly name of the email asset. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailbouncedsoft##xdm:mailingName##title##92481",
               "meta:descriptionId": "emailbouncedsoft##xdm:mailingName##description##91281"
             },
@@ -56,7 +56,7 @@
             "xdm:email": {
               "title": "email",
               "type": "string",
-              "description": "Recipient's email address.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Recipient's email address. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailbouncedsoft##xdm:email##title##711",
               "meta:descriptionId": "emailbouncedsoft##xdm:email##description##49021"
             },

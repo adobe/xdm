@@ -37,7 +37,7 @@
         "xdm:name": {
           "title": "Name",
           "type": "string",
-          "description": "The normative name used for this web link, used for classification purposes.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The normative name used for this web link, used for classification purposes. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "webinteraction##xdm:name##title##99511",
           "meta:descriptionId": "webinteraction##xdm:name##description##87301"
         },

@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Demographic information such as name, gender, and birth date of an individual.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Demographic information such as name, gender, and birth date of an individual. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "person": {
       "properties": {
@@ -36,7 +36,7 @@
                 "xdm:firstName": {
                   "title": "First name",
                   "type": "string",
-                  "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-person-details-v2##xdm:firstName##title##19951",
                   "meta:descriptionId": "profile-person-details-v2##xdm:firstName##description##1301"
                 }
@@ -57,7 +57,7 @@
                 "xdm:lastName": {
                   "title": "Last name",
                   "type": "string",
-                  "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-person-details-v2##xdm:lastName##title##89531",
                   "meta:descriptionId": "profile-person-details-v2##xdm:lastName##description##8141"
                 }
@@ -78,7 +78,7 @@
                 "xdm:middleName": {
                   "title": "Middle name",
                   "type": "string",
-                  "description": "Middle, alternative, or additional names supplied between the first name and last name.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "Middle, alternative, or additional names supplied between the first name and last name. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-person-details-v2##xdm:middleName##title##52751",
                   "meta:descriptionId": "profile-person-details-v2##xdm:middleName##description##64241"
                 }
@@ -99,7 +99,7 @@
                 "xdm:courtesyTitle": {
                   "title": "Courtesy title",
                   "type": "string",
-                  "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-person-details-v2##xdm:courtesyTitle##title##64641",
                   "meta:descriptionId": "profile-person-details-v2##xdm:courtesyTitle##description##12211"
                 }
@@ -141,7 +141,7 @@
                 "xdm:fullName": {
                   "title": "Full name",
                   "type": "string",
-                  "description": "The full name of the person, in writing order most commonly accepted in the language of the name.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "The full name of the person, in writing order most commonly accepted in the language of the name. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "profile-person-details-v2##xdm:fullName##title##3091",
                   "meta:descriptionId": "profile-person-details-v2##xdm:fullName##description##91921"
                 }
@@ -160,7 +160,7 @@
               "title": "Birth date",
               "type": "string",
               "format": "date",
-              "description": "The full date a person was born.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "The full date a person was born. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-person-details-v2##xdm:birthDate##title##59221",
               "meta:descriptionId": "profile-person-details-v2##xdm:birthDate##description##81911"
             }
@@ -177,7 +177,7 @@
               "title": "Birth date",
               "type": "string",
               "pattern": "[0-1][0-9]-[0-9][0-9]",
-              "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
+              "description": "The day and month a person was born, in the format MM-DD.. This field should be used when the day and month of a person's birth is known, but not the year.",
               "meta:titleId": "profile-person-details-v2##xdm:birthDayAndMonth##title##58691",
               "meta:descriptionId": "profile-person-details-v2##xdm:birthDayAndMonth##description##49481"
             }
@@ -193,7 +193,7 @@
             "xdm:birthYear": {
               "title": "Birth year",
               "type": "integer",
-              "description": "The year a person was born including the century, for example, 1983.  This field should be used when only the person's age is known, not the full birth date.",
+              "description": "The year a person was born including the century, for example, 1983. . This field should be used when only the person's age is known, not the full birth date.",
               "minimum": 1,
               "maximum": 32767,
               "meta:titleId": "profile-person-details-v2##xdm:birthYear##title##30221",
@@ -283,7 +283,7 @@
             "xdm:taxId": {
               "title": "Tax ID",
               "type": "string",
-              "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "profile-person-details-v2##xdm:taxId##title##11071",
               "meta:descriptionId": "profile-person-details-v2##xdm:taxId##description##47341"
             }

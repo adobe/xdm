@@ -32,7 +32,7 @@
         },
         "xdm:conversionDate": {
           "title": "Conversion Date",
-          "description": "Date when currency conversion was made.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Date when currency conversion was made. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "format": "date-time",
           "meta:titleId": "currency##xdm:conversionDate##title##50641",

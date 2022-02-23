@@ -43,7 +43,7 @@
         "xdm:city": {
           "title": "City",
           "type": "string",
-          "description": "The name of the city.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The name of the city. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "geo##xdm:city##title##87841",
           "meta:descriptionId": "geo##xdm:city##description##10401"
         }

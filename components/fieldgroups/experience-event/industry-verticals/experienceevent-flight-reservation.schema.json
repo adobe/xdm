@@ -22,7 +22,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Collects all details specific to a flight reservation.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Collects all details specific to a flight reservation. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "reservations": {
       "properties": {
@@ -112,14 +112,14 @@
                   "xdm:loyaltyID": {
                     "title": "Loyalty ID",
                     "type": "string",
-                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:loyaltyID##title##81831",
                     "meta:descriptionId": "experienceevent-flight-reservation##xdm:loyaltyID##description##45601"
                   },
                   "xdm:passengerID": {
                     "title": "Passenger ID",
                     "type": "string",
-                    "description": "Passenger info associated with the reservation.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Passenger info associated with the reservation. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:passengerID##title##34141",
                     "meta:descriptionId": "experienceevent-flight-reservation##xdm:passengerID##description##67191"
                   },
@@ -186,7 +186,7 @@
                   "xdm:currencyCode": {
                     "title": "Currency Code",
                     "type": "string",
-                    "description": "Currency code used to make the purchase. ISO 4217 currency code.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Currency code used to make the purchase. ISO 4217 currency code. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "pattern": "^[A-Z]{3}$",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:currencyCode##title##4781",
                     "meta:descriptionId": "experienceevent-flight-reservation##xdm:currencyCode##description##18331"
@@ -194,7 +194,7 @@
                   "xdm:ticketNumber": {
                     "title": "Ticket Number",
                     "type": "string",
-                    "description": "Tracks the reservation number/identifier.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                    "description": "Tracks the reservation number/identifier. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                     "meta:titleId": "experienceevent-flight-reservation##xdm:ticketNumber##title##11171",
                     "meta:descriptionId": "experienceevent-flight-reservation##xdm:ticketNumber##description##50991"
                   },

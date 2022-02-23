@@ -18,14 +18,14 @@
           "title": "POI identity",
           "type": "string",
           "meta:status": "deprecated",
-          "description": "The unique identifier of the POI.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The unique identifier of the POI. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "poi-detail##xdm:POIID##title##10951",
           "meta:descriptionId": "poi-detail##xdm:POIID##description##34921"
         },
         "xdm:poiID": {
           "title": "POI Identity",
           "type": "string",
-          "description": "The unique identifier of the POI.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The unique identifier of the POI. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "poi-detail##xdm:poiID##title##30661",
           "meta:descriptionId": "poi-detail##xdm:poiID##description##54851"
         },

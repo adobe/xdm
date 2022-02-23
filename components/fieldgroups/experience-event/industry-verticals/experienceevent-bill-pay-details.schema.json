@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Bill pay details such as transaction information, service account ID, and balance.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Bill pay details such as transaction information, service account ID, and balance.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "bill-pay-details": {
       "properties": {
@@ -56,7 +56,7 @@
                   "title": "Scheduled Transaction Date",
                   "type": "string",
                   "format": "date-time",
-                  "description": "Records the scheduled date/time of the transaction.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+                  "description": "Records the scheduled date/time of the transaction.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
                   "meta:titleId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##title##11581",
                   "meta:descriptionId": "experienceevent-bill-pay-details##xdm:scheduledTransactionDate##description##65331"
                 },

@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use to capture details when a person clicks a link in a marketing email.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Use to capture details when a person clicks a link in a marketing email.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "emailclicked": {
       "properties": {
@@ -28,14 +28,14 @@
             "xdm:mailingID": {
               "title": "Mailing ID",
               "type": "string",
-              "description": "Unique ID of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Unique ID of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailclicked##xdm:mailingID##title##16031",
               "meta:descriptionId": "emailclicked##xdm:mailingID##description##71861"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
               "type": "string",
-              "description": "Friendly name of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Friendly name of the email asset.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "emailclicked##xdm:mailingName##title##73881",
               "meta:descriptionId": "emailclicked##xdm:mailingName##description##11041"
             },

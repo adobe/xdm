@@ -10,13 +10,13 @@
   "title": "Person Identifier",
   "type": "object",
   "meta:intendedToExtend": [],
-  "description": "Used to store Person ID for an entity.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Used to store Person ID for an entity.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "person-id": {
       "properties": {
         "xdm:personID": {
           "title": "Person ID",
-          "description": "Person unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Person unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:status": "experimental",
           "meta:titleId": "person-identifier##xdm:personID##title##75321",

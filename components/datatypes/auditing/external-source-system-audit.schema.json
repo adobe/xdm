@@ -46,7 +46,7 @@
         },
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
-          "description": "Last activity date.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Last activity date.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "format": "date-time",
           "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##16601",

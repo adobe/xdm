@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Phone number such as fax, mobile, home, and work.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Phone number such as fax, mobile, home, and work.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "profile-phones": {
       "properties": {

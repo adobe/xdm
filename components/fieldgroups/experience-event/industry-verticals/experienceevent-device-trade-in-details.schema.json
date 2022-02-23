@@ -19,7 +19,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "device-trade-in-details": {
       "properties": {
@@ -38,7 +38,7 @@
             "xdm:originalDeviceID": {
               "title": "Original Device ID",
               "type": "string",
-              "description": "ID for the device being traded.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "ID for the device being traded.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##72251",
               "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##66791"
             },

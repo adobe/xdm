@@ -123,7 +123,7 @@
                 "eTicket": "E-Ticket",
                 "physical": "Physical"
               },
-              "description": "Defines the user's preferred ticket delivery method.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Defines the user's preferred ticket delivery method.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##93181",
               "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##26661"
             },
@@ -197,7 +197,7 @@
             "xdm:gym": {
               "title": "Gym",
               "type": "boolean",
-              "description": "Flags if the user prefers a lodging property with a gym/fitness room.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Flags if the user prefers a lodging property with a gym/fitness room.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "travel-preferences##xdm:gym##title##84811",
               "meta:descriptionId": "travel-preferences##xdm:gym##description##93131"
             },
@@ -211,7 +211,7 @@
             "xdm:hasRestaurant": {
               "title": "Has Restaurant",
               "type": "boolean",
-              "description": "Flags if the user prefers a lodging property with a restaurant.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Flags if the user prefers a lodging property with a restaurant.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "travel-preferences##xdm:hasRestaurant##title##32111",
               "meta:descriptionId": "travel-preferences##xdm:hasRestaurant##description##67411"
             },

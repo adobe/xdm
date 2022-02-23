@@ -31,7 +31,7 @@
         "xdm:middleName": {
           "title": "Middle name",
           "type": "string",
-          "description": "Middle, alternative, or additional names supplied between the first name and last name.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Middle, alternative, or additional names supplied between the first name and last name.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "person-name##xdm:middleName##title##59501",
           "meta:descriptionId": "person-name##xdm:middleName##description##25981"
         },
@@ -52,7 +52,7 @@
         "xdm:fullName": {
           "title": "Full name",
           "type": "string",
-          "description": "The full name of the person, in writing order most commonly accepted in the language of the name.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The full name of the person, in writing order most commonly accepted in the language of the name.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "person-name##xdm:fullName##title##64601",
           "meta:descriptionId": "person-name##xdm:fullName##description##71251"
         }

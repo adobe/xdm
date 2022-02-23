@@ -42,7 +42,7 @@
           "type": "number",
           "minimum": -90,
           "maximum": 90,
-          "description": "The signed vertical coordinate of a geographic point.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The signed vertical coordinate of a geographic point.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "GeoCoordinates##schema:latitude##title##31041",
           "meta:descriptionId": "GeoCoordinates##schema:latitude##description##51981"
         }
@@ -55,7 +55,7 @@
           "type": "number",
           "minimum": -180,
           "maximum": 180,
-          "description": "The signed horizontal coordinate of a geographic point.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The signed horizontal coordinate of a geographic point.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "GeoCoordinates##schema:longitude##title##44041",
           "meta:descriptionId": "GeoCoordinates##schema:longitude##description##34211"
         }

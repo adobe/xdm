@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
-  "description": "XDM business account details.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "XDM business account details.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "account-details": {
       "properties": {
@@ -77,7 +77,7 @@
         },
         "xdm:partnerAccountID": {
           "title": "Partner Account Id",
-          "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
           "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561"
@@ -91,7 +91,7 @@
         },
         "xdm:accountDescription": {
           "title": "Account Description",
-          "description": "Text description of the account.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Text description of the account.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "account-details##xdm:accountDescription##title##74151",
           "meta:descriptionId": "account-details##xdm:accountDescription##description##3761"
@@ -105,7 +105,7 @@
         },
         "xdm:accountType": {
           "title": "Account Type",
-          "description": "Account Type.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Account Type.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "account-details##xdm:accountType##title##60831",
           "meta:descriptionId": "account-details##xdm:accountType##description##2451"
@@ -122,7 +122,7 @@
           "type": "string",
           "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
-          "description": "The ISO 4217 currency code.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "The ISO 4217 currency code.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##40311",
           "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##24611"
         },

@@ -16,13 +16,13 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity-contact-role"
   ],
-  "description": "Opportunity Contact Role additional propertiesThis field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Opportunity Contact Role additional propertiesThis field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "opportunity-contact-role-details": {
       "properties": {
         "xdm:roleID": {
           "title": "Contact Role ID",
-          "description": "Contact role unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Contact role unique identifier.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "type": "string",
           "meta:titleId": "opportunity-contact-role-details##xdm:roleID##title##9961",
           "meta:descriptionId": "opportunity-contact-role-details##xdm:roleID##description##38421"

@@ -17,7 +17,7 @@
         "xdm:id": {
           "title": "Identifier",
           "type": "string",
-          "description": "Identity of the consumer in the related namespace.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+          "description": "Identity of the consumer in the related namespace.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
           "meta:titleId": "identityitem##xdm:id##title##58961",
           "meta:descriptionId": "identityitem##xdm:id##description##34021"
         },

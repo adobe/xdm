@@ -17,7 +17,7 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use to capture details when a person is removed as a point of contact on a sales opportunity.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Use to capture details when a person is removed as a point of contact on a sales opportunity.This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
   "definitions": {
     "removefromopportunity": {
       "properties": {
@@ -50,7 +50,7 @@
             "xdm:role": {
               "title": "Role",
               "type": "string",
-              "description": "Role of the person on the Opportunity.This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Role of the person on the Opportunity.This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
               "meta:titleId": "remove-from-opportunity##xdm:role##title##73041",
               "meta:descriptionId": "remove-from-opportunity##xdm:role##description##10571"
             }

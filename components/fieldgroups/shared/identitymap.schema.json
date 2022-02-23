@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:tags": {
-    "industry": [
-      "all"
-    ]
+    "industry": ["all"]
   },
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/classes/fsi/policy",

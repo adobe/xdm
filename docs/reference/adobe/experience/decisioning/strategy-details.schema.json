@@ -43,6 +43,11 @@
                     "meta:titleId": "strategy-details##xdm:algorithmID##title##97171",
                     "meta:descriptionId": "strategy-details##xdm:algorithmID##description##87711"
                 },
+                "xdm:treatmentID": {
+                    "title": "Treatment Identifier",
+                    "type": "string",
+                    "description": "Identifier for the experiment treatment or traffic allocation strategy that was selected for the decision."
+                },
                 "xdm:trafficType": {
                     "title": "Traffic Type",
                     "type": "string",

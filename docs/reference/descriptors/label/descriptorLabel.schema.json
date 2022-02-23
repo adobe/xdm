@@ -83,6 +83,18 @@
         },
         {
             "@type": "xdm:descriptorLabel",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+            "xdm:labels": [
+                "sampleDUlELabelResourceID1",
+                "sampleDUlELabelResourceID2",
+                "sampleDUlELabelResourceID3",
+                "sampleDUlELabelResourceID4"
+            ]
+        },
+        {
+            "@type": "xdm:descriptorLabel",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
@@ -94,18 +106,6 @@
                 "/workAddress/street4",
                 "/workEmail/status"
             ],
-            "xdm:labels": [
-                "sampleDUlELabelResourceID1",
-                "sampleDUlELabelResourceID2",
-                "sampleDUlELabelResourceID3",
-                "sampleDUlELabelResourceID4"
-            ]
-        },
-        {
-            "@type": "xdm:descriptorLabel",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
             "xdm:labels": [
                 "sampleDUlELabelResourceID1",
                 "sampleDUlELabelResourceID2",

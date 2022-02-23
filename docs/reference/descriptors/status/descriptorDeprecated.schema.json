@@ -48,18 +48,18 @@
         },
         {
             "@type": "xdm:descriptorDeprecated",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/person/gender"
-        },
-        {
-            "@type": "xdm:descriptorDeprecated",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
                 "/courtesyTitle",
                 "/suffix"
             ]
+        },
+        {
+            "@type": "xdm:descriptorDeprecated",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceProperty": "/person/gender"
         }
     ]
 }

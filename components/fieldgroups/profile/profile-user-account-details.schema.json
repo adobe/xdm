@@ -62,10 +62,10 @@
               "type": "string",
               "enum": ["active", "inactive", "disabled", "other"],
               "meta:enum": {
-                "active":"Active",
-                "inactive":"Inactive", 
-                "disabled":"Disabled", 
-                "other":"Other"
+                "active": "Active",
+                "inactive": "Inactive",
+                "disabled": "Disabled",
+                "other": "Other"
               },
               "description": "This should describe the current status of the account",
               "meta:titleId": "profile-user-account-details##xdm:status##title##94491",

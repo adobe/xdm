@@ -177,7 +177,7 @@
               "title": "Birth date",
               "type": "string",
               "pattern": "[0-1][0-9]-[0-9][0-9]",
-              "description": "The day and month a person was born, in the format MM-DD.. This field should be used when the day and month of a person's birth is known, but not the year.",
+              "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
               "meta:titleId": "profile-person-details-v2##xdm:birthDayAndMonth##title##58691",
               "meta:descriptionId": "profile-person-details-v2##xdm:birthDayAndMonth##description##49481"
             }
@@ -193,7 +193,7 @@
             "xdm:birthYear": {
               "title": "Birth year",
               "type": "integer",
-              "description": "The year a person was born including the century, for example, 1983. . This field should be used when only the person's age is known, not the full birth date.",
+              "description": "The year a person was born including the century, for example, 1983. This field should be used when only the person's age is known, not the full birth date.",
               "minimum": 1,
               "maximum": 32767,
               "meta:titleId": "profile-person-details-v2##xdm:birthYear##title##30221",

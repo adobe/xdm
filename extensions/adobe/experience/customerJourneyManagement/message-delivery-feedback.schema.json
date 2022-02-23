@@ -20,7 +20,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus": {
           "title": "Feedback Status",
           "type": "string",
-          "description": "Provide status of a delivery attempt.",
+          "description": "Provide status of a delivery attempt across different channels(Email,Push,SMS etc.), Not all enums are used for all the channels, so follow the detailed documentation.",
           "enum": [
             "error",
             "exclude",

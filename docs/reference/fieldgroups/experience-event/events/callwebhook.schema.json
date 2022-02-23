@@ -30,9 +30,15 @@
                             "type": "object",
                             "properties": {
                                 "xdm:webhookID": {
-                                    "title": "Webhook ID",
+                                    "meta:status": "deprecated",
+                                    "title": "Webhook ID (deprecated)",
                                     "type": "string",
                                     "description": "Unique ID of the Webhook called."
+                                },
+                                "xdm:webhookKey": {
+                                    "title": "Webhook Key",
+                                    "description": "Unique composite identifier of the Webhook.",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                                 },
                                 "xdm:webhookName": {
                                     "title": "Webhook Name",

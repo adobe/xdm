@@ -1,26 +1,26 @@
 
-# Call Webhook Schema
+# Add To Campaign Schema
 
 ```
-https://ns.adobe.com/xdm/mixins/events/callwebhook
+https://ns.adobe.com/xdm/mixins/events/add-to-campaign
 ```
 
-Use to capture details when Webhook is called for a person
+Use to add a person to the specific campaign.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/callwebhook.schema.json](fieldgroups/experience-event/events/callwebhook.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/add-to-campaign.schema.json](fieldgroups/experience-event/events/add-to-campaign.schema.json) |
 
-## Call Webhook Example
+## Add To Campaign Example
 ```json
 {}
 ```
 
-# Call Webhook Properties
+# Add To Campaign Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:leadOperation](#xdmleadoperation) | `object` | Optional | Call Webhook (this schema) |
+| [xdm:leadOperation](#xdmleadoperation) | `object` | Optional | Add To Campaign (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:leadOperation
@@ -39,48 +39,42 @@ Use to capture details when Webhook is called for a person
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:callWebhook`| object | Optional |
+| `xdm:addToCampaign`| object | Optional |
 
 
 
-#### xdm:callWebhook
-##### Call Webhook
+#### xdm:addToCampaign
+##### Add To Campaign
 
 undefined
 
-`xdm:callWebhook`
+`xdm:addToCampaign`
 * is optional
 * type: `object`
 
-##### xdm:callWebhook Type
+##### xdm:addToCampaign Type
 
 Unknown type `object`.
 
 ```json
 {
-  "title": "Call Webhook",
+  "title": "Add To Campaign",
   "type": "object",
   "properties": {
-    "xdm:webhookID": {
-      "meta:status": "deprecated",
-      "title": "Webhook ID (deprecated)",
-      "type": "string",
-      "description": "Unique ID of the Webhook called."
-    },
-    "xdm:webhookKey": {
-      "title": "Webhook Key",
-      "description": "Unique composite identifier of the Webhook.",
+    "xdm:campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the campaign.",
       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
-    "xdm:webhookName": {
-      "title": "Webhook Name",
-      "type": "string",
-      "description": "Name of the Webhook."
+    "xdm:streamKey": {
+      "title": "Stream Key",
+      "description": "Unique composite identifier of the stream.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
-    "xdm:responseCode": {
-      "title": "Response Code",
-      "type": "integer",
-      "description": "HTTP response code from Webhook request."
+    "xdm:streamName": {
+      "title": "Stream Name",
+      "type": "string",
+      "description": "Name of the stream."
     }
   },
   "simpletype": "`object`"

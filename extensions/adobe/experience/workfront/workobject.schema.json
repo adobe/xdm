@@ -18,17 +18,17 @@
       "properties": {
         "workfront:objectName": {
           "title": "Object Name",
-          "description": "The name of this entity",
+          "description": "The title or name associated with a given instance of the object",
           "type": "string"
         },
         "workfront:parentID": {
           "title": "Parent Object ID",
-          "description": "The name of this entity",
+          "description": "The @id of a parent object if it exists",
           "type": "string"
         },
         "workfront:objectType": {
           "title": "Object Type",
-          "description": "Basic string value representing it's high level type",
+          "description": "Basic string value representing the high level type of object",
           "type": "string"
         }
       }

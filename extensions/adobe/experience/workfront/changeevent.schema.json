@@ -119,6 +119,11 @@
           "description": "Planned start date of execution",
           "type": "string",
           "format": "date-time"
+        },
+        "workfront:lastUpdatedByID": {
+          "title": "Updated By",
+          "description": "The ID of the user who made the last update",
+          "type": "string"
         }
       }
     }

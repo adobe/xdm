@@ -1,5 +1,6 @@
 {
   "@id": "1234",
-  "workfront:objectTitle": "Super Bowl Project",
-  "workfront:objectType": "PROJECT"
+  "workfront:objectName": "Super Bowl Project",
+  "workfront:objectType": "PROJECT",
+  "workfront:parentID": "1234"
 }

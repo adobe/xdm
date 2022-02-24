@@ -16,8 +16,8 @@
   "definitions": {
     "wfobject": {
       "properties": {
-        "workfront:objectName": {
-          "title": "Object Name",
+        "workfront:objectTitle": {
+          "title": "Title",
           "description": "The title or name associated with a given instance of the object",
           "type": "string"
         },

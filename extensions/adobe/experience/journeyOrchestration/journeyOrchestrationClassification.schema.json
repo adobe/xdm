@@ -76,9 +76,9 @@
               "description": "The version id of the journey to which this data should be correlated.",
               "type": "string"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionName": {
+            "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyNameAndVersion": {
               "title": "JourneyVersionName",
-              "description": "The version name of the journey to which this data should be correlated.",
+              "description": "The name with the appended version of the journey to which this data should be correlated.",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/classification/actionName": {

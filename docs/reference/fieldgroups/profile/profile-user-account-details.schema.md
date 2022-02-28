@@ -222,10 +222,10 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
-| `active` |  |
-| `inactive` |  |
-| `disabled` |  |
-| `other` |  |
+| `active` | Active |
+| `inactive` | Inactive |
+| `disabled` | Disabled |
+| `other` | Other |
 
 
 

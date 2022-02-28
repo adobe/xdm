@@ -231,12 +231,15 @@ The primary event type for this time-series record.
 | `listOperation.removeFromList` | List Operation Remove From List |
 | `listOperation.addToList` | List Operation Add To List |
 | `leadOperation.scoreChanged` | Lead Operation Score Changed |
+| `leadOperation.revenueStageChanged` | Lead Operation Revenue Stage changed |
 | `leadOperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
 | `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
 | `leadOperation.callWebhook` | Lead Operation Call Webhook |
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
+| `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
+| `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

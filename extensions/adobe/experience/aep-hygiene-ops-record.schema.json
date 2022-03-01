@@ -1,0 +1,90 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/aep-hygiene-ops",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Hygiene Operation Request",
+  "description": "AEP Hygiene operation request that instructs AEP to deletes or modify records in the specified dataset and sandbox",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/time-series"],
+  "definitions": {
+    "hygieneOps": {
+      "properties": {
+        "xdm:batchTime": {
+          "title": "Time the batch was created",
+          "description": "Time the hygiene batch was created",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:operationType": {
+          "title": "Name of the hygiene operation to be applied by downstream consumers",
+          "description": "Name of the hygiene operation to be applied by downstream consumers.",
+          "type": "string",
+          "enum": ["identityDelete", "fieldUpdate"]
+        },
+        "xdm:targetDatasetId": {
+          "title": "Target Dataset ID specified by the user to apply hygiene operations",
+          "description": "May be \"*\", but only if operationType = \"identityDelete\". Otherwise a valid value is required.",
+          "type": "string"
+        },
+        "xdm:operation": {
+          "title": "Payload of the hygiene op request",
+          "description": "Contents of this payload provides identities to delete, or records to update",
+          "type": "object",
+          "properties": {
+            "xdm:identityDelete": {
+              "title": "Specifies rows to delete for matching identities",
+              "description": "Specifies rows to delete for matching identities",
+              "type": "object",
+              "properties": {
+                "xdm:identities": {
+                  "title": "Set of primary identities",
+                  "description": "Set of primary identities",
+                  "type": "array",
+                  "items": {
+                    "xdm:namespace": {
+                      "title": "The identity namespace",
+                      "description": "The namespace associated with the `xid` attribute.",
+                      "$ref": "https://ns.adobe.com/xdm/context/namespace"
+                    },
+                    "xdm:id": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:fieldUpdate": {
+              "title": "Details of the update operation",
+              "description": "Details of the update operation",
+              "type": "object",
+              "properties": {
+                "xdm:changes": {
+                  "title": "Subset of the record to update",
+                  "description": "Subset of the record to update",
+                  "type": "array",
+                  "items": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/namespace"
+    },
+    {
+      "$ref": "#/definitions/hygieneOps"
+    }
+  ],
+  "meta:status": "experimental"
+}

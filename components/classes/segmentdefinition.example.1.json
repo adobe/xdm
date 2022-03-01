@@ -10,6 +10,7 @@
   "xdm:segmentIdentity": {
     "@id": "seg-id"
   },
+  "xdm:labels": ["core/C3", "custom/mylabel2"],
   "xdm:segmentName": "Users with TV segment",
   "xdm:description": "Segment is about users who have TV",
   "xdm:segmentStatus": "ACTIVE",

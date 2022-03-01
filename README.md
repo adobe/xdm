@@ -8,7 +8,7 @@ This repository contains the source code for the formal specification of the XDM
 
 ## Current Version
 
-XDM is at version `1.13.3`.
+XDM is at version `1.31.4`.
 
 You can find more about our versioning in [docs/introduction.md](docs/introduction.md#versioning)
 

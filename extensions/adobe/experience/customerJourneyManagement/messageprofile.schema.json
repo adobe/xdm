@@ -83,7 +83,7 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider": {
           "title": "SMS Provider",
           "type": "string",
-          "description": "SMS provider , e.g. sinch or twilio"
+          "description": "SMS provider , e.g. sinch or twilio",
           "meta:enum": {
             "sinch": "Sinch sms provider",
             "twilio": "Twilio sms provider",

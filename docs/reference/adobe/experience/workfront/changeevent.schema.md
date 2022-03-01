@@ -29,12 +29,12 @@ Data associated with a change event within Workfront project execution
 | [workfront:deleted](#workfrontdeleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:durationMinutes](#workfrontdurationminutes) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:iterationID](#workfrontiterationid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:lastUpdatedByID](#workfrontlastupdatedbyid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectID](#workfrontobjectid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectType](#workfrontobjecttype) | `enum` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentPortfolioID](#workfrontparentportfolioid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProgramID](#workfrontparentprogramid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProjectID](#workfrontparentprojectid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentID](#workfrontparentid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:percentComplete](#workfrontpercentcomplete) | `number` | Optional | Workfront Change Event (this schema) |
 | [workfront:plannedStartDate](#workfrontplannedstartdate) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:priority](#workfrontpriority) | `integer` | Optional | Workfront Change Event (this schema) |
@@ -229,6 +229,26 @@ Iteration/Sprint this task was associated with
 
 
 
+## workfront:lastUpdatedByID
+### Updated By
+
+The ID of the user who made the last update
+
+`workfront:lastUpdatedByID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:lastUpdatedByID Type
+
+
+`string`
+
+
+
+
+
+
 ## workfront:objectID
 ### Object ID
 
@@ -291,17 +311,17 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## workfront:parentPortfolioID
-### Portfolio ID
+## workfront:parentID
+### Parent Object ID
 
-The parent Portfolio ID
+The ID of the parent object
 
-`workfront:parentPortfolioID`
+`workfront:parentID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentPortfolioID Type
+### workfront:parentID Type
 
 
 `string`
@@ -311,37 +331,17 @@ The parent Portfolio ID
 
 
 
-## workfront:parentProgramID
-### Program ID
+## workfront:parentObjectType
+### Parent Object Type
 
-The parent Program ID
+String value representing the type of parent - PROJECT, TASK, etc.
 
-`workfront:parentProgramID`
+`workfront:parentObjectType`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentProgramID Type
-
-
-`string`
-
-
-
-
-
-
-## workfront:parentProjectID
-### Project ID
-
-The parent Project ID
-
-`workfront:parentProjectID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:parentProjectID Type
+### workfront:parentObjectType Type
 
 
 `string`

@@ -30,17 +30,6 @@
           "title": "Object Type",
           "description": "Basic string value representing the high level type of object",
           "type": "string"
-        },
-        "workfront:lastUpdatedByID": {
-          "title": "Updated By",
-          "description": "The ID of the user who made the last update",
-          "type": "string"
-        },
-        "workfront:lastUpdatedDatetime": {
-          "title": "Last Updated",
-          "description": "The date and time of the last update",
-          "type": "string",
-          "format": "date-time"
         }
       }
     }
@@ -48,6 +37,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     },
     {
       "$ref": "#/definitions/wfobject"

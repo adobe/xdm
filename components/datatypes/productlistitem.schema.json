@@ -80,6 +80,11 @@
           "items": {
             "$ref": "#/definitions/selectedOption"
           }
+        },
+        "xdm:discountAmount": {
+          "title": "Discount Amount",
+          "type": "number",
+          "description": "The difference between the regular price and the special price for the product."
         }
       },
       "required": ["xdm:SKU"]

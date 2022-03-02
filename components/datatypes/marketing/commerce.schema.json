@@ -90,6 +90,10 @@
         "xdm:shipping": {
           "$ref": "https://ns.adobe.com/xdm/datatypes/shipping",
           "description": "Shipping details for one or more products."
+        },
+        "xdm:instantPurchase": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A product has been purchased instantly, potentially skipping the cart or checkout."
         }
       }
     }

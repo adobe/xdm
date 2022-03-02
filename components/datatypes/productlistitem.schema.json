@@ -72,6 +72,11 @@
           "description": "The total price for the product line item.",
           "meta:titleId": "productlistitem##xdm:priceTotal##title##85341",
           "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221"
+        },
+        "xdm:discountAmount": {
+          "title": "Discount amount",
+          "type": "number",
+          "description": "The difference between the regular price and the special price for the product."
         }
       },
       "required": ["xdm:SKU"]

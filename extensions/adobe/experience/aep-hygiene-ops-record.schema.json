@@ -48,13 +48,16 @@
                   "description": "Set of primary identities",
                   "type": "array",
                   "items": {
-                    "xdm:namespace": {
-                      "title": "The identity namespace",
-                      "description": "The namespace associated with the xdm:id attribute.",
-                      "$ref": "https://ns.adobe.com/xdm/context/namespace"
-                    },
-                    "xdm:id": {
-                      "type": "string"
+                    "type": "object",
+                    "properties": {
+                      "xdm:namespace": {
+                        "title": "The identity namespace",
+                        "description": "The namespace associated with the xdm:id attribute.",
+                        "$ref": "https://ns.adobe.com/xdm/context/namespace"
+                      },
+                      "xdm:id": {
+                        "type": "string"
+                      }
                     }
                   }
                 }

@@ -82,6 +82,10 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "'inStore' purchase is saved for analytics use.",
           "meta:descriptionId": "commerce##xdm:inStorePurchase##description##27451"
+        },
+        "xdm:instantPurchase": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A product has been purchased instantly, potentially skipping the cart or checkout."
         }
       }
     }

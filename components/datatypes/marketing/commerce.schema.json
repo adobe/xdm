@@ -86,6 +86,10 @@
         "xdm:cart": {
           "$ref": "https://ns.adobe.com/xdm/datatypes/cart",
           "description": "The properties of the cart that contains one or more products."
+        },
+        "xdm:shipping": {
+          "$ref": "https://ns.adobe.com/xdm/datatypes/shipping",
+          "description": "Shipping details for one or more products."
         }
       }
     }

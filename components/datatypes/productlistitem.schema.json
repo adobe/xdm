@@ -72,9 +72,35 @@
           "description": "The total price for the product line item.",
           "meta:titleId": "productlistitem##xdm:priceTotal##title##85341",
           "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221"
+        },
+        "xdm:selectedOptions": {
+          "title": "Selected Options",
+          "type": "array",
+          "description": "Particular options chosen for a configurable product.",
+          "items": {
+            "$ref": "#/definitions/selectedOption"
+          }
         }
       },
       "required": ["xdm:SKU"]
+    },
+    "selectedOption": {
+      "title": "Selected option",
+      "description": "Selected option for one attribute of a configurable product",
+      "type": "object",
+      "properties": {
+        "xdm:attribute": {
+          "title": "Configurable attribute name",
+          "description": "The name of the configurable attribute",
+          "type": "string"
+        },
+        "xdm:value": {
+          "title": "Selected option value",
+          "description": "The value chosen for the configurable attribute",
+          "type": "string"
+        }
+      },
+      "required": ["xdm:attribute", "xdm:value"]
     }
   },
   "allOf": [

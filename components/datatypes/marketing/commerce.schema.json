@@ -82,6 +82,10 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "'inStore' purchase is saved for analytics use.",
           "meta:descriptionId": "commerce##xdm:inStorePurchase##description##27451"
+        },
+        "xdm:cart": {
+          "$ref": "https://ns.adobe.com/xdm/datatypes/cart",
+          "description": "The properties of the cart that contains one or more products."
         }
       }
     }

@@ -12,7 +12,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
   "definitions": {
     "hygieneOps": {
       "properties": {
@@ -50,7 +50,7 @@
                   "items": {
                     "xdm:namespace": {
                       "title": "The identity namespace",
-                      "description": "The namespace associated with the `xid` attribute.",
+                      "description": "The namespace associated with the xdm:id attribute.",
                       "$ref": "https://ns.adobe.com/xdm/context/namespace"
                     },
                     "xdm:id": {
@@ -69,7 +69,10 @@
                   "title": "Subset of the record to update",
                   "description": "Subset of the record to update",
                   "type": "array",
-                  "items": true
+                  "items": {
+                    "type": "object",
+                    "minProperties": 2
+                  }
                 }
               }
             }
@@ -80,10 +83,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/context/namespace"
+      "$ref": "#/definitions/hygieneOps"
     },
     {
-      "$ref": "#/definitions/hygieneOps"
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
     }
   ],
   "meta:status": "experimental"

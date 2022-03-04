@@ -109,6 +109,7 @@ The name of the model for the device. This is the common, human-readable, or mar
 |----------|------|----------|
 | `xdm:linkURL`| string | Optional |
 | `xdm:mailingID`| string | Optional |
+| `xdm:mailingKey`|  | Optional |
 | `xdm:mailingName`| string | Optional |
 | `xdm:testVariantID`| string | Optional |
 | `xdm:testVariantName`| string | Optional |
@@ -150,6 +151,26 @@ Unique ID of the email asset.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:mailingKey
+##### Mailing ID
+
+Unique key of the email asset.
+
+`xdm:mailingKey`
+* is optional
+* type: reference
+
+##### xdm:mailingKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -46,6 +46,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider](#httpsnsadobecomexperiencecustomerjourneymanagementsmschannelcontextsmsprovider) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address
@@ -228,6 +229,33 @@ Push provider service, e.g. apns or fcm
 |-------|-------------|
 | `apns` | Apple Push Notification service |
 | `fcm` | Firebase cloud messaging service |
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider
+### SMS Provider
+
+SMS provider , e.g. sinch or twilio
+
+`https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider Type
+
+
+`string`
+
+
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider Known Values
+| Value | Description |
+|-------|-------------|
+| `sinch` | Sinch sms provider |
+| `twilio` | Twilio sms provider |
+| `vibes` | Vibes sms Provider  |
 
 
 

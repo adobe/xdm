@@ -29,18 +29,18 @@ Data associated with a change event within Workfront project execution
 | [workfront:deleted](#workfrontdeleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:durationMinutes](#workfrontdurationminutes) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:iterationID](#workfrontiterationid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:lastUpdatedByID](#workfrontlastupdatedbyid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectID](#workfrontobjectid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectType](#workfrontobjecttype) | `enum` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentPortfolioID](#workfrontparentportfolioid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProgramID](#workfrontparentprogramid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProjectID](#workfrontparentprojectid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentID](#workfrontparentid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:percentComplete](#workfrontpercentcomplete) | `number` | Optional | Workfront Change Event (this schema) |
 | [workfront:plannedStartDate](#workfrontplannedstartdate) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:priority](#workfrontpriority) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:remainingMinutes](#workfrontremainingminutes) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:status](#workfrontstatus) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:storyPoints](#workfrontstorypoints) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:storyPoints](#workfrontstorypoints) | `number` | Optional | Workfront Change Event (this schema) |
 | [workfront:updated](#workfrontupdated) | `integer` | Optional | Workfront Change Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -229,6 +229,26 @@ Iteration/Sprint this task was associated with
 
 
 
+## workfront:lastUpdatedByID
+### Updated By
+
+The ID of the user who made the last update
+
+`workfront:lastUpdatedByID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:lastUpdatedByID Type
+
+
+`string`
+
+
+
+
+
+
 ## workfront:objectID
 ### Object ID
 
@@ -291,17 +311,17 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
-## workfront:parentPortfolioID
-### Portfolio ID
+## workfront:parentID
+### Parent Object ID
 
-The parent Portfolio ID
+The ID of the parent object
 
-`workfront:parentPortfolioID`
+`workfront:parentID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentPortfolioID Type
+### workfront:parentID Type
 
 
 `string`
@@ -311,37 +331,17 @@ The parent Portfolio ID
 
 
 
-## workfront:parentProgramID
-### Program ID
+## workfront:parentObjectType
+### Parent Object Type
 
-The parent Program ID
+String value representing the type of parent - PROJECT, TASK, etc.
 
-`workfront:parentProgramID`
+`workfront:parentObjectType`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentProgramID Type
-
-
-`string`
-
-
-
-
-
-
-## workfront:parentProjectID
-### Project ID
-
-The parent Project ID
-
-`workfront:parentProjectID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:parentProjectID Type
+### workfront:parentObjectType Type
 
 
 `string`
@@ -459,13 +459,13 @@ Story points assigned to this object
 
 `workfront:storyPoints`
 * is optional
-* type: `integer`
+* type: `number`
 * defined in this schema
 
 ### workfront:storyPoints Type
 
 
-`integer`
+`number`
 
 
 
@@ -546,12 +546,15 @@ The primary event type for this time-series record.
 | `listOperation.removeFromList` | List Operation Remove From List |
 | `listOperation.addToList` | List Operation Add To List |
 | `leadOperation.scoreChanged` | Lead Operation Score Changed |
+| `leadOperation.revenueStageChanged` | Lead Operation Revenue Stage changed |
 | `leadOperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
 | `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
 | `leadOperation.callWebhook` | Lead Operation Call Webhook |
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
+| `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
+| `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

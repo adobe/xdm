@@ -34,7 +34,7 @@
   "license": "CC-BY-4.0",
   "devDependencies": {
     "@adobe/jsonschema2md": "1.1.0",
-    "ajv": "5.5.0",
+    "ajv": ">=6.12.3",
     "ajv-cli": "^2.1.0",
     "camelcase": "^4.1.0",
     "deep-diff": "^1.0.2",
@@ -52,7 +52,7 @@
     "prettier": "^1.15.3",
     "pretty-quick": "^1.4.1",
     "set-value": "^4.0.1",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "shx": "^0.3.2",
     "winston": "^2.4.3"
   }

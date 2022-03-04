@@ -2,5 +2,5 @@
   "@type": "xdm:descriptorPrimaryKey",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": ["/_id","/personID"]
+  "xdm:sourceProperty": ["/_id", "/personID"]
 }

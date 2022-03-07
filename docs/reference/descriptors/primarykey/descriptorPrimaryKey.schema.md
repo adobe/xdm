@@ -1,60 +1,53 @@
 
-# Deprecated Field Descriptor Schema
+# Primary Key Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/descriptors/descriptorDeprecated
+https://ns.adobe.com/xdm/common/descriptors/descriptorPrimaryKey
 ```
 
-Used to mark one or more standard fields as deprecated for the specific ImsOrg.
+Used to identify a single or a set of column(s) that must be enforced as non-null and unique.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/status/descriptorDeprecated.schema.json](descriptors/status/descriptorDeprecated.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/primarykey/descriptorPrimaryKey.schema.json](descriptors/primarykey/descriptorPrimaryKey.schema.json) |
 ## Schema Hierarchy
 
-* Deprecated Field Descriptor `https://ns.adobe.com/xdm/descriptors/descriptorDeprecated`
+* Primary Key Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorPrimaryKey`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Deprecated Field Descriptor Examples
+## Primary Key Descriptor Examples
 
 ```json
 {
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/courtesyTitle"
-}
-```
-
-```json
-{
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/person/gender"
-}
-```
-
-```json
-{
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
+  "@type": "xdm:descriptorPrimaryKey",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": [
-    "/courtesyTitle",
-    "/suffix"
+    "/_id"
+  ]
+}
+```
+
+```json
+{
+  "@type": "xdm:descriptorPrimaryKey",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": [
+    "/_id",
+    "/personID"
   ]
 }
 ```
 
 
-# Deprecated Field Descriptor Properties
+# Primary Key Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | Deprecated Field Descriptor (this schema) |
+| [@type](#type) | `const` | Optional | Primary Key Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
@@ -93,7 +86,7 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:descriptorDeprecated"
+"xdm:descriptorPrimaryKey"
 ```
 
 

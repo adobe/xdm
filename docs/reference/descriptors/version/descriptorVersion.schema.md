@@ -1,60 +1,48 @@
 
-# Deprecated Field Descriptor Schema
+# Version Field Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/descriptors/descriptorDeprecated
+https://ns.adobe.com/xdm/common/descriptors/descriptorVersion
 ```
 
-Used to mark one or more standard fields as deprecated for the specific ImsOrg.
+Used to assign a single field in the schema that will be used to detect and fail conflicts in the case of out-of-order change events.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/status/descriptorDeprecated.schema.json](descriptors/status/descriptorDeprecated.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/version/descriptorVersion.schema.json](descriptors/version/descriptorVersion.schema.json) |
 ## Schema Hierarchy
 
-* Deprecated Field Descriptor `https://ns.adobe.com/xdm/descriptors/descriptorDeprecated`
+* Version Field Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorVersion`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Deprecated Field Descriptor Examples
+## Version Field Descriptor Examples
 
 ```json
 {
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
+  "@type": "xdm:descriptorVersion",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/datatypes/currency",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/courtesyTitle"
+  "xdm:sourceProperty": "/conversionDate"
 }
 ```
 
 ```json
 {
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
+  "@type": "xdm:descriptorVersion",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/person/gender"
-}
-```
-
-```json
-{
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": [
-    "/courtesyTitle",
-    "/suffix"
-  ]
+  "xdm:sourceProperty": "/modification"
 }
 ```
 
 
-# Deprecated Field Descriptor Properties
+# Version Field Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | Deprecated Field Descriptor (this schema) |
+| [@type](#type) | `const` | Optional | Version Field Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
@@ -93,7 +81,7 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:descriptorDeprecated"
+"xdm:descriptorVersion"
 ```
 
 

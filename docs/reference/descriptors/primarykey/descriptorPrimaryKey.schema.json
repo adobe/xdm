@@ -1,27 +1,27 @@
 {
     "meta:license": [
-        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
         "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
-    "$id": "https://ns.adobe.com/xdm/descriptors/descriptorDeprecated",
+    "$id": "https://ns.adobe.com/xdm/common/descriptors/descriptorPrimaryKey",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Deprecated Field Descriptor",
+    "title": "Primary Key Descriptor",
     "meta:extensible": false,
     "meta:extends": [
         "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
     ],
     "meta:abstract": false,
     "type": "object",
-    "description": "Used to mark one or more standard fields as deprecated for the specific ImsOrg.",
+    "description": "Used to identify a single or a set of column(s) that must be enforced as non-null and unique.",
     "definitions": {
-        "descriptorDeprecated": {
+        "descriptorPrimaryKey": {
             "properties": {
                 "@type": {
                     "title": "Type",
                     "type": "string",
-                    "const": "xdm:descriptorDeprecated"
+                    "const": "xdm:descriptorPrimaryKey"
                 }
             },
             "required": [
@@ -34,31 +34,27 @@
             "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
         },
         {
-            "$ref": "#/definitions/descriptorDeprecated"
+            "$ref": "#/definitions/descriptorPrimaryKey"
         }
     ],
     "meta:status": "stable",
-    "meta:createdDate": "2021-12-01",
+    "meta:createdDate": "2021-03-04",
     "examples": [
         {
-            "@type": "xdm:descriptorDeprecated",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/courtesyTitle"
-        },
-        {
-            "@type": "xdm:descriptorDeprecated",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/person/gender"
-        },
-        {
-            "@type": "xdm:descriptorDeprecated",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
+            "@type": "xdm:descriptorPrimaryKey",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
-                "/courtesyTitle",
-                "/suffix"
+                "/_id"
+            ]
+        },
+        {
+            "@type": "xdm:descriptorPrimaryKey",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceProperty": [
+                "/_id",
+                "/personID"
             ]
         }
     ]

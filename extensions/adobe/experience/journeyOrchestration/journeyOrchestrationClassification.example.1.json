@@ -1,0 +1,25 @@
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/messageID": "",
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/channel": {
+    "xdm:_id": "Email",
+    "xdm:_type": "https://ns.adobe.com/xdm/channel-types/email"
+  },
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentation": {
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentID": "4vqyd6OoARXqj9nRUNhtLQ",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentName": "Email Subject Test",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentID": "0",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentName": "Default Subject Line"
+  },
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/journey": {
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyName": "My Journey Name",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionID": "a9a9c1fe-8ad7-4c83-813e-0dd89876c795",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionName": "My Second Version of the Journey",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/actionID": "07624fe4-f927-4f77-961c-307785a1c2a2",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/actionName": "Send the email",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeID": "786c806e-3ab4-491e-967b-ebbc19c0f186",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeName": "email send node",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/stepID": "05954119-9a9c-4406-acce-1f46eb0dc2ae",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/stepName": "email send step"
+  }
+}

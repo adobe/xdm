@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/events/change-campaign-cadence
 ```
 
-Use to capture details when engagement campaign cadence changes for a person.
+Use to capture details when campaign cadence changes for a person.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -69,18 +69,18 @@ Unknown type `object`.
     },
     "xdm:campaignKey": {
       "title": "Campaign Key",
-      "description": "Unique composite identifier of the Campaign.",
+      "description": "Unique composite identifier of the campaign.",
       "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
     "xdm:newCadence": {
       "title": "New Cadence",
       "type": "string",
-      "description": "New value of engagement campaign cadence."
+      "description": "New value of campaign cadence."
     },
     "xdm:previousCadence": {
       "title": "Previous Cadence",
       "type": "string",
-      "description": "Previous value of engagement campaign cadence."
+      "description": "Previous value of campaign cadence."
     }
   },
   "simpletype": "`object`"

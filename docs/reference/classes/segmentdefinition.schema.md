@@ -34,6 +34,10 @@ This is the base class for a segment definition which includes required fields l
   "xdm:segmentIdentity": {
     "@id": "seg-id"
   },
+  "xdm:labels": [
+    "core/C3",
+    "custom/mylabel2"
+  ],
   "xdm:segmentName": "Users with TV segment",
   "xdm:description": "Segment is about users who have TV",
   "xdm:segmentStatus": "ACTIVE",
@@ -52,6 +56,7 @@ This is the base class for a segment definition which includes required fields l
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:description](#xdmdescription) | `string` | Optional | Segment definition (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
+| [xdm:labels](#xdmlabels) | `string[]` | Optional | Segment definition (this schema) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmrepositorycreatedby) |
 | [xdm:repositoryLastModifiedBy](#xdmrepositorylastmodifiedby) | `string` | Optional | [Audit trail](../datatypes/auditing/auditable.schema.md#xdmrepositorylastmodifiedby) |
@@ -189,6 +194,33 @@ Description of the segment.
 
 | Property | Type | Required |
 |----------|------|----------|
+
+
+
+
+
+
+## xdm:labels
+### Labels
+
+When present, it allows an array of labels. Values are resources IDs
+
+`xdm:labels`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:labels Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
 
 
 

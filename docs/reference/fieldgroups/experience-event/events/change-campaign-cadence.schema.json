@@ -17,7 +17,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Use to capture details when engagement campaign cadence changes for a person.",
+    "description": "Use to capture details when campaign cadence changes for a person.",
     "definitions": {
         "changecampaigncadence": {
             "properties": {
@@ -37,18 +37,18 @@
                                 },
                                 "xdm:campaignKey": {
                                     "title": "Campaign Key",
-                                    "description": "Unique composite identifier of the Campaign.",
+                                    "description": "Unique composite identifier of the campaign.",
                                     "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                                 },
                                 "xdm:newCadence": {
                                     "title": "New Cadence",
                                     "type": "string",
-                                    "description": "New value of engagement campaign cadence."
+                                    "description": "New value of campaign cadence."
                                 },
                                 "xdm:previousCadence": {
                                     "title": "Previous Cadence",
                                     "type": "string",
-                                    "description": "Previous value of engagement campaign cadence."
+                                    "description": "Previous value of campaign cadence."
                                 }
                             }
                         }

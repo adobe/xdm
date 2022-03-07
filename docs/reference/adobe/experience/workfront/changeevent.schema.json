@@ -38,19 +38,34 @@
                     "description": "Set to 1 if this was a completed event",
                     "type": "integer"
                 },
-                "workfront:parentProjectID": {
-                    "title": "Project ID",
-                    "description": "The parent Project ID",
+                "workfront:objectName": {
+                    "title": "Object Name",
+                    "description": "Name assigned to this object",
                     "type": "string"
                 },
-                "workfront:parentProgramID": {
-                    "title": "Program ID",
-                    "description": "The parent Program ID",
+                "workfront:objectID": {
+                    "title": "Object ID",
+                    "description": "The ID of this object",
                     "type": "string"
                 },
-                "workfront:parentPortfolioID": {
-                    "title": "Portfolio ID",
-                    "description": "The parent Portfolio ID",
+                "workfront:objectType": {
+                    "title": "Object Type",
+                    "description": "The type of object",
+                    "type": "string",
+                    "enum": [
+                        "TASK",
+                        "PROJECT",
+                        "ISSUE"
+                    ]
+                },
+                "workfront:parentID": {
+                    "title": "Parent Object ID",
+                    "description": "The ID of the parent object",
+                    "type": "string"
+                },
+                "workfront:parentObjectType": {
+                    "title": "Parent Object Type",
+                    "description": "String value representing the type of parent - PROJECT, TASK, etc.",
                     "type": "string"
                 },
                 "workfront:iterationID": {
@@ -111,25 +126,10 @@
                     "type": "string",
                     "format": "date-time"
                 },
-                "workfront:objectName": {
-                    "title": "Object Name",
-                    "description": "Name assigned to this object",
+                "workfront:lastUpdatedByID": {
+                    "title": "Updated By",
+                    "description": "The ID of the user who made the last update",
                     "type": "string"
-                },
-                "workfront:objectID": {
-                    "title": "Object ID",
-                    "description": "The ID of this object",
-                    "type": "string"
-                },
-                "workfront:objectType": {
-                    "title": "Object Type",
-                    "description": "The type of object",
-                    "type": "string",
-                    "enum": [
-                        "TASK",
-                        "PROJECT",
-                        "ISSUE"
-                    ]
                 }
             }
         }

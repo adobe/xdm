@@ -79,15 +79,18 @@
                     "additionalProperties": false,
                     "properties": {
                       "xdm:identity": {
-                        "xdm:namespace": {
-                          "title": "The identity namespace",
-                          "$ref": "https://ns.adobe.com/xdm/context/namespace",
-                          "description": "The namespace associated with the xdm:id attribute."
-                        },
-                        "xdm:id": {
-                          "title": "Experience identifier",
-                          "type": "string",
-                          "description": "Experience identifier"
+                        "type": "object",
+                        "properties": {
+                          "xdm:namespace": {
+                            "title": "The identity namespace",
+                            "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                            "description": "The namespace associated with the xdm:id attribute."
+                          },
+                          "xdm:id": {
+                            "title": "Experience identifier",
+                            "type": "string",
+                            "description": "Experience identifier"
+                          }
                         }
                       },
                       "xdm:change": {

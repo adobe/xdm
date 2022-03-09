@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
-  "description": "XDM business account details.",
+  "description": "Collects all details related to a customer's user account including contact details and account preferences.",
   "meta:sensitive-data": true,
   "definitions": {
     "account-details": {

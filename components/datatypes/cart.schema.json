@@ -13,12 +13,12 @@
   "definitions": {
     "cart": {
       "properties": {
-        "xdm:ID": {
+        "xdm:cartID": {
           "title": "Cart ID",
           "type": "string",
           "description": "Unique identifier assigned by the seller for the cart."
         },
-        "xdm:source": {
+        "xdm:cartSource": {
           "title": "Cart Source",
           "type": "string",
           "description": "Where one or more products was added to the cart from."

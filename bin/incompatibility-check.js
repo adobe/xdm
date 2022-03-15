@@ -31,6 +31,7 @@ const masterComponentFolder = masterCopyLoc + "components";
 const masterExtensionFolder = masterCopyLoc + "extensions";
 const ignoredForRequiredValidation =
     ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+        "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../schemas/descriptors/status/descriptorDeprecated.schema.json",

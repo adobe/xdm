@@ -16,12 +16,12 @@
   "type": "object",
   "description": "Allows to remove values from meta:enum.",
   "definitions": {
-    "removeMetaEnum": {
+    "descriptorMetaEnumRemove": {
       "properties": {
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:removeMetaEnum"
+          "const": "xdm:descriptorMetaEnumRemove"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",

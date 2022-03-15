@@ -65,7 +65,11 @@
           "meta:descriptionId": "commerce##xdm:productListReopens##description##26411"
         },
         "xdm:productListViews": {
+<<<<<<< HEAD
           "title": "Product List(Cart) Views",
+=======
+          "title": "Product List Views (Cart Views)",
+>>>>>>> 59795845b19568cbd611b819c0db0bcd0593e03d
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View or views of a product-list has occurred.",
           "meta:descriptionId": "commerce##xdm:productListViews##description##21091"

@@ -75,9 +75,6 @@
     "meta:descriptionId": "profile-constraint-details##description##11421",
     "examples": [
         {
-            "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
-        },
-        {
             "https://ns.adobe.com/experience/decisioning/profileConstraintType": "eligibilityRule",
             "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
         },
@@ -97,6 +94,9 @@
                     }
                 }
             ]
+        },
+        {
+            "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
         }
     ]
 }

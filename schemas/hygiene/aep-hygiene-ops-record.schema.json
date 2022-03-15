@@ -10,7 +10,8 @@
   "title": "AEP Hygiene Operation Request",
   "description": "AEP Hygiene operation request that instructs AEP to deletes or modify records in the specified dataset and sandbox",
   "type": "object",
-  "meta:extensible": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:extensible": false,
   "meta:abstract": false,
   "definitions": {
     "hygieneOps": {
@@ -71,32 +72,15 @@
               "type": "object",
               "properties": {
                 "xdm:changes": {
-                  "title": "Subset of the record to update",
-                  "description": "Subset of the record to update",
+                  "title": "Record to update",
+                  "description": "Record to update",
                   "type": "array",
                   "items": {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                      "xdm:identity": {
-                        "type": "object",
-                        "properties": {
-                          "xdm:namespace": {
-                            "title": "The identity namespace",
-                            "$ref": "https://ns.adobe.com/xdm/context/namespace",
-                            "description": "The namespace associated with the xdm:id attribute."
-                          },
-                          "xdm:id": {
-                            "title": "Experience identifier",
-                            "type": "string",
-                            "description": "Experience identifier"
-                          }
-                        }
-                      },
-                      "xdm:change": {
-                        "title": "Acutal change JSON object",
-                        "type": "object"
-                      }
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                      "title": "Value defined for each Key",
+                      "description": "Map describing open set of key value pairs which are not composed semantically",
+                      "type": "object"
                     }
                   }
                 }
@@ -109,10 +93,10 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/hygieneOps"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "#/definitions/hygieneOps"
     }
   ],
   "meta:status": "experimental"

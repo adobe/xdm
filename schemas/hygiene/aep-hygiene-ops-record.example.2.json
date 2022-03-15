@@ -1,18 +1,12 @@
 {
-  "xdm:batchTime": "2022-03-03T18:57:05+00:00",
   "xdm:operationType": "identityDelete",
   "xdm:targetDatasetId": "1234567890ABCDEFGH",
   "xdm:operation": {
     "xdm:fieldUpdate": {
       "xdm:changes": [
         {
-          "xdm:identity": {
-            "xdm:namespace": {
-              "xdm:code": "ECID"
-            },
-            "xdm:id": "2154547663131313"
-          },
           "xdm:change": {
+            "cid": "1234567",
             "address": {
               "city": "San Jose",
               "state": "CA",
@@ -21,13 +15,8 @@
           }
         },
         {
-          "xdm:identity": {
-            "xdm:namespace": {
-              "xdm:code": "Email"
-            },
-            "xdm:id": "user@domain.com"
-          },
           "xdm:change": {
+            "cid": "1234567",
             "phone": {
               "mobile": "+1-123-456-7890"
             }
@@ -35,9 +24,5 @@
         }
       ]
     }
-  },
-  "xdm:extSourceSystemAudit": {
-    "xdm:createdBy": "USER111",
-    "xdm:createdDate": "2022-03-03T18:57:00+00:00"
   }
 }

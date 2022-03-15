@@ -21,21 +21,8 @@ Profile constraints define the policies that ensure a particular decision option
 ```json
 {
   "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
-    "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
-      {
-        "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
-        "xdm:namespace": {
-          "xdm:code": "AA12345"
-        }
-      },
-      {
-        "@id": "https://data.adobe.io/entities/segmentIdentity/id456",
-        "xdm:namespace": {
-          "xdm:code": "AA12345"
-        }
-      }
-    ]
+    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "eligibilityRule",
+    "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
   }
 }
 ```
@@ -51,8 +38,21 @@ Profile constraints define the policies that ensure a particular decision option
 ```json
 {
   "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "eligibilityRule",
-    "https://ns.adobe.com/experience/decisioning/eligibilityRule": "xcore:eligibility-rule:e5244c22eff29e8"
+    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
+    "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
+      {
+        "@id": "https://data.adobe.io/entities/segmentIdentity/id123",
+        "xdm:namespace": {
+          "xdm:code": "AA12345"
+        }
+      },
+      {
+        "@id": "https://data.adobe.io/entities/segmentIdentity/id456",
+        "xdm:namespace": {
+          "xdm:code": "AA12345"
+        }
+      }
+    ]
   }
 }
 ```

@@ -1,79 +1,49 @@
 
-# Friendly Name Descriptor Schema
+# Remove MetaEnum Values Descriptor Schema
 
 ```
-https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo
+https://ns.adobe.com/xdm/common/descriptors/descriptorMetaEnumRemove
 ```
 
-Allows to modify the "title" and "description" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.
+Allows to remove values from meta:enum.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/display/alternateDisplayInfo.schema.json](descriptors/display/alternateDisplayInfo.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [descriptors/display/descriptorMetaEnumRemove.schema.json](descriptors/display/descriptorMetaEnumRemove.schema.json) |
 ## Schema Hierarchy
 
-* Friendly Name Descriptor `https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo`
+* Remove MetaEnum Values Descriptor `https://ns.adobe.com/xdm/common/descriptors/descriptorMetaEnumRemove`
   * [Schema Descriptor](../schemadescriptor.schema.md) `https://ns.adobe.com/xdm/common/descriptors/schemadescriptor`
 
 
-## Friendly Name Descriptor Examples
-
+## Remove MetaEnum Values Descriptor Example
 ```json
 {
-  "@type": "xdm:alternateDisplayInfo",
+  "@type": "xdm:descriptorMetaEnumRemove",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
   "xdm:title": {
     "en_us": "friendly title for browser details"
   },
-  "xdm:description": {
-    "en_us": "friendly description for browser details"
+  "meta:enum": {
+    "Standard 5": "My Custom5",
+    "Standard 6": "My Custom6"
   }
 }
 ```
 
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:description": {
-    "en_us": "friendly description for browser details",
-    "fr_ca": "description conviviale pour les détails du navigateur"
-  }
-}
-```
-
-```json
-{
-  "@type": "xdm:alternateDisplayInfo",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/browserDetails",
-  "xdm:title": {
-    "en_us": "friendly title for browser details",
-    "fr_ca": "titre convivial pour les détails du navigateur"
-  }
-}
-```
-
-
-# Friendly Name Descriptor Properties
+# Remove MetaEnum Values Descriptor Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#id) |
-| [@type](#type) | `const` | Optional | Friendly Name Descriptor (this schema) |
-| [meta:enum](#metaenum) | `object` | Optional | Friendly Name Descriptor (this schema) |
-| [xdm:description](#xdmdescription) | `object` | Optional | Friendly Name Descriptor (this schema) |
-| [xdm:note](#xdmnote) | `object` | Optional | Friendly Name Descriptor (this schema) |
+| [@type](#type) | `const` | Optional | Remove MetaEnum Values Descriptor (this schema) |
+| [meta:enum](#metaenum) | `object` | Optional | Remove MetaEnum Values Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
 | [xdm:sourceSchema](#xdmsourceschema) | `string` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceschema) |
 | [xdm:sourceVersion](#xdmsourceversion) | `number` | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceversion) |
-| [xdm:title](#xdmtitle) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -108,7 +78,7 @@ The unique identifier for the schema descriptor. This property is required when 
 The value of this property **must** be equal to:
 
 ```json
-"xdm:alternateDisplayInfo"
+"xdm:descriptorMetaEnumRemove"
 ```
 
 
@@ -124,54 +94,6 @@ The value of this property **must** be equal to:
 * defined in this schema
 
 ### meta:enum Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-
-
-
-
-
-
-## xdm:description
-### Description
-
-When present, user friendly description to display.
-
-`xdm:description`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:description Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-
-
-
-
-
-
-## xdm:note
-### Note
-
-When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.
-
-`xdm:note`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:note Type
 
 
 `object` with following properties:
@@ -296,30 +218,6 @@ Major version being referenced.
 
 
 `number`
-
-
-
-
-
-
-## xdm:title
-### Title
-
-When present, user friendly title to display.
-
-`xdm:title`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:title Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
 
 
 

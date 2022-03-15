@@ -16,12 +16,12 @@
   "type": "object",
   "description": "Allows to remove values from meta:enum.",
   "definitions": {
-    "removeMetaEnum": {
+    "descriptorMetaEnumRemove": {
       "properties": {
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:removeMetaEnum"
+          "const": "xdm:descriptorMetaEnumRemove"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",
@@ -53,7 +53,7 @@
       "$ref": "https://ns.adobe.com/xdm/common/descriptors/schemadescriptor#/definitions/descriptor"
     },
     {
-      "$ref": "#/definitions/removeMetaEnum"
+      "$ref": "#/definitions/descriptorMetaEnumRemove"
     }
   ],
   "meta:status": "stable"

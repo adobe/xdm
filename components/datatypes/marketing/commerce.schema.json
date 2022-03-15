@@ -41,37 +41,37 @@
           "meta:descriptionId": "commerce##xdm:checkouts##description##73181"
         },
         "xdm:productListAdds": {
-          "title": "Product List Adds (Cart Adds)",
+          "title": "Product List(Cart) Adds",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Addition of a product to the product list, for example a product is added to a shopping cart.",
           "meta:descriptionId": "commerce##xdm:productListAdds##description##19431"
         },
         "xdm:productListOpens": {
-          "title": "Product List Opens (Cart Opens)",
+          "title": "Product List(Cart) Opens",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Initializations of a new product list, for example a shopping cart is created.",
           "meta:descriptionId": "commerce##xdm:productListOpens##description##58831"
         },
         "xdm:productListRemovals": {
-          "title": "Product List Removals (Cart Removals)",
+          "title": "Product List(Cart) Removals",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.",
           "meta:descriptionId": "commerce##xdm:productListRemovals##description##78581"
         },
         "xdm:productListReopens": {
-          "title": "Product List Reopens (Cart Reopens)",
+          "title": "Product List(Cart) Reopens",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.",
           "meta:descriptionId": "commerce##xdm:productListReopens##description##26411"
         },
         "xdm:productListViews": {
-          "title": "Product List Views (Cart Views)",
+          "title": "Product List(Cart) Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View or views of a product-list has occurred.",
           "meta:descriptionId": "commerce##xdm:productListViews##description##21091"
         },
         "xdm:productViews": {
-          "title": "Product Views (Cart Views)",
+          "title": "Product Views",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "View or views of a product have occurred.",
           "meta:descriptionId": "commerce##xdm:productViews##description##22921"

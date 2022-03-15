@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/account-details
 ```
 
-XDM business account details. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Go here https://www.adobe.com/go/xdm-spi-and-pii for more information.
+Collects all details related to a customer's user account including contact details and account preferences.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -70,7 +70,7 @@ XDM business account details. This field group contains fields that could be use
 ## xdm:accountDescription
 ### Account Description
 
-Text description of the account. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.
+Text description of the account.
 
 `xdm:accountDescription`
 * is optional
@@ -378,7 +378,7 @@ A name, different from its legal name, that an organization may use for conducti
 ## xdm:accountType
 ### Account Type
 
-Account Type. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.
+Account Type.
 
 `xdm:accountType`
 * is optional
@@ -398,7 +398,7 @@ Account Type. This field could be used to collect data that may be considered to
 ## xdm:defaultCurrencyCode
 ### Default Currency Code
 
-The ISO 4217 currency code. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.
+The ISO 4217 currency code.
 
 `xdm:defaultCurrencyCode`
 * is optional
@@ -437,7 +437,7 @@ All instances must conform to this regular expression
 ## xdm:partnerAccountID
 ### Partner Account Id
 
-Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.
+Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.
 
 `xdm:partnerAccountID`
 * is optional

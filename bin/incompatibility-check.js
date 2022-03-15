@@ -31,6 +31,7 @@ const masterComponentFolder = masterCopyLoc + "components";
 const masterExtensionFolder = masterCopyLoc + "extensions";
 const ignoredForRequiredValidation =
     ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+        "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../schemas/descriptors/status/descriptorDeprecated.schema.json",
@@ -43,6 +44,14 @@ const ignoredForRequiredValidation =
     ];
 const ignoredForIdValidation =
     ["../extensions/adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json"
+    ];
+const ignoredForOpenObjectValidation =
+    ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+      "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
+    "../schemas/descriptors/itemselector.schema.json",
+    "../extensions/adobe/experience/target/activity/activityevent/eventscope.schema.json",
+    "../components/datatypes/extensible.schema.json",
+    "../components/datatypes/external/repo/common.schema.json"
     ];
 
 shell.rm("-rf", masterCopyLoc); //start
@@ -284,6 +293,12 @@ function validate(o, file) {
 
         if (o.hasOwnProperty("properties") && !(o.type == "object") && i == "properties" ) {
             errLogs.push(file + ' validation error!!! Missing object type definition for "' +'properties"' + '.\n')
+        }
+
+        if ((ignoredForOpenObjectValidation.indexOf(file) == -1) && o.hasOwnProperty("type") && (o.type == "object")
+            && !o.hasOwnProperty("properties") && !o.hasOwnProperty("$ref")
+            && !o.hasOwnProperty("additionalProperties") && !o.hasOwnProperty("patternProperties")) {
+            errLogs.push(file + ' validation error!!! Missing properties for object type.\n')
         }
 
         if (o[i] && (typeof(o[i]) == "object") && !(o[i] instanceof Array)

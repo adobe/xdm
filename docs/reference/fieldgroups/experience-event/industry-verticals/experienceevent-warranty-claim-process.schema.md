@@ -9,7 +9,7 @@ Claim details such as claim policy ID and claim creation steps.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json) |
 
 ## Warranty Claim Process Example
 ```json

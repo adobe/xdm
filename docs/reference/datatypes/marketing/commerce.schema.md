@@ -67,6 +67,7 @@ The records related to buying and selling activity.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:cartAbandons
+### Cart Abandons
 
 A product list has been identified as no longer accessible or purchasable by the user.
 
@@ -85,6 +86,7 @@ A product list has been identified as no longer accessible or purchasable by the
 
 
 ## xdm:checkouts
+### Checkouts
 
 An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.
 
@@ -103,6 +105,7 @@ An action during a checkout process of a product list, there can be more than on
 
 
 ## xdm:inStorePurchase
+### In Store Purchase
 
 'inStore' purchase is saved for analytics use.
 
@@ -140,6 +143,7 @@ The placed order for one or more products.
 
 
 ## xdm:productListAdds
+### Product List(Cart) Adds
 
 Addition of a product to the product list, for example a product is added to a shopping cart.
 
@@ -158,6 +162,7 @@ Addition of a product to the product list, for example a product is added to a s
 
 
 ## xdm:productListOpens
+### Product List(Cart) Opens
 
 Initializations of a new product list, for example a shopping cart is created.
 
@@ -176,6 +181,7 @@ Initializations of a new product list, for example a shopping cart is created.
 
 
 ## xdm:productListRemovals
+### Product List(Cart) Removals
 
 Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.
 
@@ -194,6 +200,7 @@ Removal or removals of a product entry from a product list, for example a produc
 
 
 ## xdm:productListReopens
+### Product List(Cart) Reopens
 
 A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.
 
@@ -212,6 +219,7 @@ A product list that was no longer accessible (abandoned) has been re-activated b
 
 
 ## xdm:productListViews
+### Product List(Cart) Views
 
 View or views of a product-list has occurred.
 
@@ -230,6 +238,7 @@ View or views of a product-list has occurred.
 
 
 ## xdm:productViews
+### Product Views
 
 View or views of a product have occurred.
 
@@ -268,6 +277,7 @@ Promotion identifier if any for the order placed.
 
 
 ## xdm:purchases
+### Purchases
 
 An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.
 
@@ -286,6 +296,7 @@ An order has been accepted. Purchase is the only required action in a commerce c
 
 
 ## xdm:saveForLaters
+### Save For Laters
 
 Product list is saved for future use, for example a product wish list.
 

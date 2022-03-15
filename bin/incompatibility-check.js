@@ -47,6 +47,7 @@ const ignoredForIdValidation =
     ];
 const ignoredForOpenObjectValidation =
     ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+      "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
     "../schemas/descriptors/itemselector.schema.json",
     "../extensions/adobe/experience/target/activity/activityevent/eventscope.schema.json",
     "../components/datatypes/extensible.schema.json",

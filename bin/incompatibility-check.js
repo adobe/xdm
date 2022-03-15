@@ -44,6 +44,13 @@ const ignoredForRequiredValidation =
 const ignoredForIdValidation =
     ["../extensions/adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json"
     ];
+const ignoredForOpenObjectValidation =
+    ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+    "../schemas/descriptors/itemselector.schema.json",
+    "../extensions/adobe/experience/target/activity/activityevent/eventscope.schema.json",
+    "../components/datatypes/extensible.schema.json",
+    "../components/datatypes/external/repo/common.schema.json"
+    ];
 
 shell.rm("-rf", masterCopyLoc); //start
 if (shell.exec('git clone https://github.com/adobe/xdm.git ' + masterCopyLoc).code !== 0) {
@@ -284,6 +291,12 @@ function validate(o, file) {
 
         if (o.hasOwnProperty("properties") && !(o.type == "object") && i == "properties" ) {
             errLogs.push(file + ' validation error!!! Missing object type definition for "' +'properties"' + '.\n')
+        }
+
+        if ((ignoredForOpenObjectValidation.indexOf(file) == -1) && o.hasOwnProperty("type") && (o.type == "object")
+            && !o.hasOwnProperty("properties") && !o.hasOwnProperty("$ref")
+            && !o.hasOwnProperty("additionalProperties") && !o.hasOwnProperty("patternProperties")) {
+            errLogs.push(file + ' validation error!!! Missing properties for object type.\n')
         }
 
         if (o[i] && (typeof(o[i]) == "object") && !(o[i] instanceof Array)

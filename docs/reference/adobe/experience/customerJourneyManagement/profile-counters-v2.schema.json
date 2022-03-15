@@ -62,10 +62,7 @@
     "meta:descriptionId": "profilecounters##description##16505",
     "examples": [
         {
-            "xdm:namespace": {
-                "xdm:code": "ECID"
-            },
-            "xdm:id": "92312748749128",
+            "xdm:xid": "xid-92312748749128",
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,
@@ -74,7 +71,10 @@
             }
         },
         {
-            "xdm:xid": "xid-92312748749128",
+            "xdm:namespace": {
+                "xdm:code": "ECID"
+            },
+            "xdm:id": "92312748749128",
             "xdm:frequencyMap": {
                 "counter_id": {
                     "xdm:value": 100,

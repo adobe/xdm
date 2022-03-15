@@ -80,7 +80,13 @@
                     "additionalProperties": {
                       "title": "Value defined for each Key",
                       "description": "Map describing open set of key value pairs which are not composed semantically",
-                      "type": "object"
+                      "type": "object",
+                      "properties": {
+                        "cid": {
+                          "title": "Primary key",
+                          "type": "string"
+                        }
+                      }
                     }
                   }
                 }

@@ -25,10 +25,8 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
   "xdm:title": {
-    "en_us": "friendly title for browser details"
-  },
-  "xdm:description": {
-    "en_us": "friendly description for browser details"
+    "en_us": "friendly title for browser details",
+    "fr_ca": "titre convivial pour les détails du navigateur"
   }
 }
 ```
@@ -53,8 +51,10 @@ Allows to modify the "title" and "description" values of the core library schema
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/browserDetails",
   "xdm:title": {
-    "en_us": "friendly title for browser details",
-    "fr_ca": "titre convivial pour les détails du navigateur"
+    "en_us": "friendly title for browser details"
+  },
+  "xdm:description": {
+    "en_us": "friendly description for browser details"
   }
 }
 ```
@@ -68,6 +68,7 @@ Allows to modify the "title" and "description" values of the core library schema
 | [@type](#type) | `const` | Optional | Friendly Name Descriptor (this schema) |
 | [meta:enum](#metaenum) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:description](#xdmdescription) | `object` | Optional | Friendly Name Descriptor (this schema) |
+| [xdm:excludeMetaEnum](#xdmexcludemetaenum) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:note](#xdmnote) | `object` | Optional | Friendly Name Descriptor (this schema) |
 | [xdm:sourceItem](#xdmsourceitem) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceitem) |
 | [xdm:sourceProperty](#xdmsourceproperty) | complex | Optional | [Schema Descriptor](../schemadescriptor.schema.md#xdmsourceproperty) |
@@ -148,6 +149,28 @@ When present, user friendly description to display.
 * defined in this schema
 
 ### xdm:description Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
+## xdm:excludeMetaEnum
+### Exclude meta:enum values
+
+`xdm:excludeMetaEnum`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:excludeMetaEnum Type
 
 
 `object` with following properties:

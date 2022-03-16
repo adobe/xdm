@@ -76,6 +76,22 @@
                         }
                     },
                     "meta:titleId": "alternateDisplayInfo##meta:enum##title##76551"
+                },
+                "xdm:excludeMetaEnum": {
+                    "title": "Exclude meta:enum values",
+                    "type": "object",
+                    "patternProperties": {
+                        ".+_.+": {
+                            "oneOf": [
+                                {
+                                    "type": "object"
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    }
                 }
             },
             "anyOf": [
@@ -124,10 +140,8 @@
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": "/browserDetails",
             "xdm:title": {
-                "en_us": "friendly title for browser details"
-            },
-            "xdm:description": {
-                "en_us": "friendly description for browser details"
+                "en_us": "friendly title for browser details",
+                "fr_ca": "titre convivial pour les détails du navigateur"
             }
         },
         {
@@ -146,8 +160,10 @@
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": "/browserDetails",
             "xdm:title": {
-                "en_us": "friendly title for browser details",
-                "fr_ca": "titre convivial pour les détails du navigateur"
+                "en_us": "friendly title for browser details"
+            },
+            "xdm:description": {
+                "en_us": "friendly description for browser details"
             }
         }
     ]

@@ -398,12 +398,6 @@
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
         },
         {
-            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
-            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
-            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
-            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
-        },
-        {
             "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
             "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
             "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
@@ -449,6 +443,12 @@
             "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
             "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
             "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
+        },
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
+            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
         }
     ]
 }

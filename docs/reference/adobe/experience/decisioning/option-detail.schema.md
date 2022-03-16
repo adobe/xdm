@@ -22,6 +22,25 @@ Detail about the entity that represents one of the possible selections or choice
 
 ```json
 {
+  "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+  "xdm:name": "Introduction to machine learning",
+  "xdm:characteristics": {
+    "duration": "14",
+    "level": "intermediate",
+    "format": "Syllable"
+  },
+  "xdm:score": 83,
+  "xdm:propositionsTotal": {
+    "xdm:value": 4948
+  },
+  "xdm:propositionsProfile": {
+    "xdm:value": 2
+  }
+}
+```
+
+```json
+{
   "xdm:id": "xcore:personalized-offer:e526a1503bf29e9",
   "xdm:name": "Introduction to machine learning",
   "xdm:characteristics": {
@@ -74,25 +93,6 @@ Detail about the entity that represents one of the possible selections or choice
   },
   "xdm:propositionsProfile": {
     "xdm:value": 3
-  }
-}
-```
-
-```json
-{
-  "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
-  "xdm:name": "Introduction to machine learning",
-  "xdm:characteristics": {
-    "duration": "14",
-    "level": "intermediate",
-    "format": "Syllable"
-  },
-  "xdm:score": 83,
-  "xdm:propositionsTotal": {
-    "xdm:value": 4948
-  },
-  "xdm:propositionsProfile": {
-    "xdm:value": 2
   }
 }
 ```

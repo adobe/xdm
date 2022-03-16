@@ -24,8 +24,7 @@ Used to identify a single or a set of column(s) that must be enforced as non-nul
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": [
-    "/_id",
-    "/personID"
+    "/_id"
   ]
 }
 ```
@@ -36,7 +35,8 @@ Used to identify a single or a set of column(s) that must be enforced as non-nul
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": [
-    "/_id"
+    "/_id",
+    "/personID"
   ]
 }
 ```

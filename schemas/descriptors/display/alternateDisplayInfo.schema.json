@@ -75,6 +75,21 @@
               ]
             }
           },
+          "xdm:excludeMetaEnum": {
+            "title": "Exclude meta:enum values",
+            "type": "object",
+            "patternProperties": {
+              ".+_.+": {
+                "oneOf": [
+                  {
+                    "type": "object"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              }
+            },
           "meta:titleId": "alternateDisplayInfo##meta:enum##title##76551"
         }
       },

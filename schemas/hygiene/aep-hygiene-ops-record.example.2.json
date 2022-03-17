@@ -1,27 +1,11 @@
 {
-  "xdm:operationType": "identityDelete",
+  "xdm:operationType": "fieldUpdate",
   "xdm:targetDatasetId": "1234567890ABCDEFGH",
   "xdm:operation": {
     "xdm:fieldUpdate": {
       "xdm:changes": [
-        {
-          "xdm:change": {
-            "cid": "1234567",
-            "address": {
-              "city": "San Jose",
-              "state": "CA",
-              "postalCode": "95110"
-            }
-          }
-        },
-        {
-          "xdm:change": {
-            "cid": "1234567",
-            "phone": {
-              "mobile": "+1-123-456-7890"
-            }
-          }
-        }
+        "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
+        "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"
       ]
     }
   }

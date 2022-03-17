@@ -72,17 +72,13 @@
               "type": "object",
               "properties": {
                 "xdm:changes": {
-                  "title": "Record to update",
-                  "description": "Record to update",
+                  "title": "Array of records to update",
+                  "description": "Array of records to update",
                   "type": "array",
                   "items": {
-                    "type": "object",
-                    "properties": {
-                      "cid": {
-                        "title": "Primary key",
-                        "type": "string"
-                      }
-                    }
+                    "title": "String-encoded JSON record to update",
+                    "description": "String-encoded JSON record to update",
+                    "type": "string"
                   }
                 }
               }

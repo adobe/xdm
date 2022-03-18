@@ -1,0 +1,92 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/sitesearch",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Site Search",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Information about site content search activity.",
+  "definitions": {
+    "sitesearch": {
+      "properties": {
+        "xdm:filter": {
+          "title": "Filter",
+          "type": "array",
+          "description": "Filters applied to limit search results.",
+          "items": {
+            "$ref": "#/definitions/filterItem"
+          }
+        },
+        "xdm:sort": {
+          "title": "Sort",
+          "type": "array",
+          "description": "Specification for how search results should be sorted.",
+          "items": {
+            "$ref": "#/definitions/sortItem"
+          }
+        },
+        "xdm:query": {
+          "title": "Query",
+          "type": "string",
+          "description": "The terms searched for."
+        }
+      }
+    },
+    "filterItem": {
+      "properties": {
+        "xdm:attribute": {
+          "title": "Attribute",
+          "type": "string",
+          "description": "The facet of an item used to determine whether to include it in search results."
+        },
+        "xdm:value": {
+          "title": "Value",
+          "type": "array",
+          "description": "Attribute values used to determine which items will be included in search results.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xdm:isRange": {
+          "title": "Is Range",
+          "type": "boolean",
+          "description": "When true, values indicate endpoints of an acceptable range of values."
+        }
+      }
+    },
+    "sortItem": {
+      "properties": {
+        "xdm:attribute": {
+          "title": "Attribute",
+          "type": "string",
+          "description": "An attribute used to sort items in search results."
+        },
+        "xdm:order": {
+          "title": "Order",
+          "type": "string",
+          "description": "The order in which to return search results",
+          "enum": ["ASC", "DESC", "RELEVANCE"],
+          "meta:enum": {
+            "ASC": "Ascending order",
+            "DESC": "Descending order",
+            "RELEVANCE": "Sort items by relevance"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/sitesearch"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -20,6 +20,16 @@
           "title": "Site Search",
           "$ref": "https://ns.adobe.com/xdm/datatypes/sitesearch",
           "description": "The information related to site search."
+        },
+        "xdm:searchRequest": {
+          "title": "Search Request",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A search request has been sent."
+        },
+        "xdm:searchResponse": {
+          "title": "Search Response",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "A search response has been received."
         }
       }
     }

@@ -1,0 +1,41 @@
+{
+  "xdm:siteSearch": {
+    "xdm:filter": [
+      {
+        "xdm:attribute": "Device",
+        "xdm:value": [
+          "Mobile",
+          "Phone"
+        ],
+        "xdm:isRange": false
+      },
+      {
+        "xdm:attribute": "Price",
+        "xdm:value": [
+          "900",
+          "1000"
+        ],
+        "xdm:isRange": true
+      },
+      {
+        "xdm:attribute": "price",
+        "xdm:value": [
+          "800",
+          "1000"
+        ],
+        "xdm:isRange": true
+      }
+    ],
+    "xdm:sort": [
+      {
+        "xdm:attribute": "price",
+        "xdm:order": "DESC"
+      },
+      {
+        "xdm:attribute": "relevance",
+        "xdm:order": "ASC"
+      }
+    ],
+    "xdm:query": "Iphone 13"
+  }
+}

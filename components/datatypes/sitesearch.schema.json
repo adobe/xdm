@@ -34,6 +34,19 @@
           "title": "Query",
           "type": "string",
           "description": "The terms searched for."
+        },
+        "xdm:suggestions": {
+          "title": "Suggestions",
+          "type": "array",
+          "description": "Suggested search terms.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xdm:numberOfResults": {
+          "title": "Number of Results",
+          "type": "integer",
+          "description": "Number of search results."
         }
       }
     },

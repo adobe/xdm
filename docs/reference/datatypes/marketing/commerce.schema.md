@@ -16,6 +16,8 @@ The records related to buying and selling activity.
   * [Extensibility base schema](../extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Order](../data/order.schema.md) `https://ns.adobe.com/xdm/data/order`
   * [Measure](../data/measure.schema.md) `https://ns.adobe.com/xdm/data/measure`
+  * [Cart](../cart.schema.md) `https://ns.adobe.com/xdm/datatypes/cart`
+  * [Shipping](../shipping.schema.md) `https://ns.adobe.com/xdm/datatypes/shipping`
 
 
 ## Commerce Example
@@ -43,6 +45,10 @@ The records related to buying and selling activity.
   },
   "xdm:purchases": {
     "xdm:value": 1
+  },
+  "xdm:shipping": {
+    "xdm:shippingAmount": 20,
+    "xdm:shippingMethod": "standard ground"
   }
 }
 ```
@@ -51,9 +57,11 @@ The records related to buying and selling activity.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:cart](#xdmcart) | Cart | Optional | Commerce (this schema) |
 | [xdm:cartAbandons](#xdmcartabandons) | Measure | Optional | Commerce (this schema) |
 | [xdm:checkouts](#xdmcheckouts) | Measure | Optional | Commerce (this schema) |
 | [xdm:inStorePurchase](#xdminstorepurchase) | Measure | Optional | Commerce (this schema) |
+| [xdm:instantPurchase](#xdminstantpurchase) | Measure | Optional | Commerce (this schema) |
 | [xdm:order](#xdmorder) | Order | Optional | Commerce (this schema) |
 | [xdm:productListAdds](#xdmproductlistadds) | Measure | Optional | Commerce (this schema) |
 | [xdm:productListOpens](#xdmproductlistopens) | Measure | Optional | Commerce (this schema) |
@@ -64,7 +72,26 @@ The records related to buying and selling activity.
 | [xdm:promotionID](#xdmpromotionid) | `string` | Optional | Commerce (this schema) |
 | [xdm:purchases](#xdmpurchases) | Measure | Optional | Commerce (this schema) |
 | [xdm:saveForLaters](#xdmsaveforlaters) | Measure | Optional | Commerce (this schema) |
+| [xdm:shipping](#xdmshipping) | Shipping | Optional | Commerce (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:cart
+
+The properties of the cart that contains one or more products.
+
+`xdm:cart`
+* is optional
+* type: Cart
+* defined in this schema
+
+### xdm:cart Type
+
+
+* [Cart](../cart.schema.md) – `https://ns.adobe.com/xdm/datatypes/cart`
+
+
+
+
 
 ## xdm:cartAbandons
 ### Cart Abandons
@@ -123,6 +150,24 @@ An action during a checkout process of a product list, there can be more than on
 
 
 
+## xdm:instantPurchase
+
+A product has been purchased instantly, potentially skipping the cart or checkout.
+
+`xdm:instantPurchase`
+* is optional
+* type: Measure
+* defined in this schema
+
+### xdm:instantPurchase Type
+
+
+* [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
 ## xdm:order
 ### Order
 
@@ -143,7 +188,7 @@ The placed order for one or more products.
 
 
 ## xdm:productListAdds
-### Product List(Cart) Adds
+### Product List (Cart) Adds
 
 Addition of a product to the product list, for example a product is added to a shopping cart.
 
@@ -162,7 +207,7 @@ Addition of a product to the product list, for example a product is added to a s
 
 
 ## xdm:productListOpens
-### Product List(Cart) Opens
+### Product List (Cart) Opens
 
 Initializations of a new product list, for example a shopping cart is created.
 
@@ -181,7 +226,7 @@ Initializations of a new product list, for example a shopping cart is created.
 
 
 ## xdm:productListRemovals
-### Product List(Cart) Removals
+### Product List (Cart) Removals
 
 Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.
 
@@ -200,7 +245,7 @@ Removal or removals of a product entry from a product list, for example a produc
 
 
 ## xdm:productListReopens
-### Product List(Cart) Reopens
+### Product List (Cart) Reopens
 
 A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.
 
@@ -219,7 +264,7 @@ A product list that was no longer accessible (abandoned) has been re-activated b
 
 
 ## xdm:productListViews
-### Product List(Cart) Views
+### Product List (Cart) Views
 
 View or views of a product-list has occurred.
 
@@ -309,6 +354,24 @@ Product list is saved for future use, for example a product wish list.
 
 
 * [Measure](../data/measure.schema.md) – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+## xdm:shipping
+
+Shipping details for one or more products.
+
+`xdm:shipping`
+* is optional
+* type: Shipping
+* defined in this schema
+
+### xdm:shipping Type
+
+
+* [Shipping](../shipping.schema.md) – `https://ns.adobe.com/xdm/datatypes/shipping`
 
 
 

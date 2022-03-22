@@ -112,6 +112,17 @@
     "meta:descriptionId": "scope-details##description##13321",
     "examples": [
         {
+            "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+            "xdm:correlationID": "20c2587dcb1e85f52d070e12dd52e815",
+            "xdm:strategies": [
+                {
+                    "xdm:step": "experimentation",
+                    "xdm:strategyID": "16ASJZ2DWmusQjtxucYats",
+                    "xdm:treatmentID": "0"
+                }
+            ]
+        },
+        {
             "xdm:id": "home-page-banner",
             "xdm:placement": {
                 "xdm:id": "xcore:offer-placement:c652463157c2aa1",
@@ -135,17 +146,6 @@
                     "xdm:strategyID": "ranking-strategy:7251468357c2236",
                     "xdm:algorithmID": "auto-optimize",
                     "xdm:trafficType": "noncontextual"
-                }
-            ]
-        },
-        {
-            "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-            "xdm:correlationID": "20c2587dcb1e85f52d070e12dd52e815",
-            "xdm:strategies": [
-                {
-                    "xdm:step": "experimentation",
-                    "xdm:strategyID": "16ASJZ2DWmusQjtxucYats",
-                    "xdm:treatmentID": "0"
                 }
             ]
         }

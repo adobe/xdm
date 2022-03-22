@@ -8,7 +8,7 @@
   "$id": "https://ns.adobe.com/experience/aep-hygiene-ops",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AEP Hygiene Operation Request",
-  "description": "AEP Hygiene operation request that instructs AEP to deletes or modify records in the specified dataset and sandbox",
+  "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
   "type": "object",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:extensible": false,
@@ -22,15 +22,15 @@
           "type": "string",
           "format": "date-time"
         },
-        "xdm:operationType": {
+        "xdm:action": {
           "title": "Name of the hygiene operation to be applied by downstream consumers",
           "description": "Name of the hygiene operation to be applied by downstream consumers.",
           "type": "string",
-          "enum": ["identityDelete", "fieldUpdate"]
+          "enum": ["delete_identity", "update_field"]
         },
         "xdm:targetDatasetId": {
           "title": "Target Dataset ID specified by the user to apply hygiene operations",
-          "description": "May be \"*\", but only if operationType = \"identityDelete\". Otherwise a valid value is required.",
+          "description": "May be \"*\", but only if operationType = \"delete_identity\". Otherwise a valid value is required.",
           "type": "string"
         },
         "xdm:operation": {
@@ -38,7 +38,7 @@
           "description": "Contents of this payload provides identities to delete, or records to update",
           "type": "object",
           "properties": {
-            "xdm:identityDelete": {
+            "xdm:delete_identity": {
               "title": "Specifies rows to delete for matching identities",
               "description": "Specifies rows to delete for matching identities",
               "type": "object",
@@ -66,7 +66,7 @@
                 }
               }
             },
-            "xdm:fieldUpdate": {
+            "xdm:update_field": {
               "title": "Details of the update operation",
               "description": "Details of the update operation",
               "type": "object",

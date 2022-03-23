@@ -25,30 +25,36 @@
           "title": "Direct marketing",
           "type": "object",
           "properties": {
-            "xdm:mailingKey": {
-              "title": "Mailing Key",
-              "description": "Unique composite identifier of the email asset.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-            },
-            "xdm:mailingName": {
-              "title": "Mailing Name",
-              "type": "string",
-              "description": "Name of the email asset."
-            },
-            "xdm:testVariantID": {
-              "title": "Test Variant ID",
-              "type": "string",
-              "description": "Unique ID of the test variant of the email asset."
-            },
-            "xdm:testVariantName": {
-              "title": "Test Variant Name",
-              "type": "string",
-              "description": "Name of the test variant of the email asset."
-            },
-            "xdm:automationRunID": {
-              "title": "Automation Run ID",
-              "type": "string",
-              "description": "Unique ID of the automation run."
+            "xdm:emailSent": {
+              "title": "Email Sent",
+              "type": "object",
+              "properties": {
+                "xdm:mailingKey": {
+                  "title": "Mailing Key",
+                  "description": "Unique composite identifier of the email asset.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                },
+                "xdm:mailingName": {
+                  "title": "Mailing Name",
+                  "type": "string",
+                  "description": "Name of the email asset."
+                },
+                "xdm:testVariantID": {
+                  "title": "Test Variant ID",
+                  "type": "string",
+                  "description": "Unique ID of the test variant of the email asset."
+                },
+                "xdm:testVariantName": {
+                  "title": "Test Variant Name",
+                  "type": "string",
+                  "description": "Name of the test variant of the email asset."
+                },
+                "xdm:automationRunID": {
+                  "title": "Automation Run ID",
+                  "type": "string",
+                  "description": "Unique ID of the automation run."
+                }
+              }
             }
           }
         }

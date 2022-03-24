@@ -26,11 +26,11 @@
           "title": "Name of the hygiene operation to be applied by downstream consumers",
           "description": "Name of the hygiene operation to be applied by downstream consumers.",
           "type": "string",
-          "enum": ["delete_identity", "update_field"]
+          "enum": ["deleteIdentity", "updateField"]
         },
         "xdm:targetDatasetId": {
           "title": "Target Dataset ID specified by the user to apply hygiene operations",
-          "description": "May be \"*\", but only if operationType = \"delete_identity\". Otherwise a valid value is required.",
+          "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
           "type": "string"
         },
         "xdm:operation": {
@@ -38,7 +38,7 @@
           "description": "Contents of this payload provides identities to delete, or records to update",
           "type": "object",
           "properties": {
-            "xdm:delete_identity": {
+            "xdm:deleteIdentity": {
               "title": "Specifies rows to delete for matching identities",
               "description": "Specifies rows to delete for matching identities",
               "type": "object",
@@ -66,7 +66,7 @@
                 }
               }
             },
-            "xdm:update_field": {
+            "xdm:updateField": {
               "title": "Details of the update operation",
               "description": "Details of the update operation",
               "type": "object",

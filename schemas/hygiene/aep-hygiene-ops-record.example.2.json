@@ -1,8 +1,8 @@
 {
-  "xdm:action": "update_field",
+  "xdm:action": "updateField",
   "xdm:targetDatasetId": "1234567890ABCDEFGH",
   "xdm:operation": {
-    "xdm:update_field": {
+    "xdm:updateField": {
       "xdm:changes": [
         "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
         "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"

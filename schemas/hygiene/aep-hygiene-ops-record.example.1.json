@@ -1,9 +1,9 @@
 {
   "xdm:batchTime": "2022-03-03T18:57:00+00:00",
-  "xdm:action": "delete_identity",
+  "xdm:action": "deleteIdentity",
   "xdm:targetDatasetId": "1234567890ABCDEFGH",
   "xdm:operation": {
-    "xdm:delete_identity": {
+    "xdm:deleteIdentity": {
       "xdm:identities": [
         {
           "xdm:namespace": {

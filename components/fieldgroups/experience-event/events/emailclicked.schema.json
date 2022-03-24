@@ -29,14 +29,8 @@
               "title": "Mailing ID",
               "type": "string",
               "description": "Unique ID of the email asset.",
-              "meta:status":"deprecated",
               "meta:titleId": "emailclicked##xdm:mailingID##title##16031",
               "meta:descriptionId": "emailclicked##xdm:mailingID##description##71861"
-            },
-            "xdm:mailingKey": {
-              "title": "Mailing ID",
-              "description": "Unique key of the email asset.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",

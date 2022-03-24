@@ -1,0 +1,15 @@
+{
+  "xdm:consentPoliciesIdMap": {
+    "consentPolicy1": {},
+    "consentPolicy2": {
+      "Email": [
+        "personal.email1@gmail.com",
+        "work.email1@adobe.com",
+        "personal.email2@gmail.com"
+      ]
+    },
+    "consentPolicy3": {
+      "AAID": ["92312748749128", "30453470347"]
+    }
+  }
+}

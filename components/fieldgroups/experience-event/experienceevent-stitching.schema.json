@@ -22,9 +22,7 @@
         "xdm:stitchedId": {
           "title": "Stitched Id",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
-          "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
-          "meta:titleId": "experienceevent-stitching##:xdm:stitching##title##?????",
-          "meta:descriptionId": "experienceevent-stitching##xdm:stitching##description##????"
+          "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs."
         }
       }
     }
@@ -38,7 +36,5 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2022-03-24",
-  "meta:titleId": "experienceevent-stitching##title##?????",
-  "meta:descriptionId": "experienceevent-stitching##description##?????"
+  "meta:createdDate": "2022-03-24"
 }

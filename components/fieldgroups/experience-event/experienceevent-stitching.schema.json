@@ -19,8 +19,8 @@
   "definitions": {
     "experienceevent-stitching": {
       "properties": {
-        "xdm:stitchedId": {
-          "title": "Stitched Id",
+        "xdm:stitchedID": {
+          "title": "Stitched ID",
           "$ref": "https://ns.adobe.com/xdm/context/identity",
           "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs."
         }

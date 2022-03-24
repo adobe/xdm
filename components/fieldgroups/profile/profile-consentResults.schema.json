@@ -9,9 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consent policies evaluation results map",
   "type": "object",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Consent policies evaluation result for individual",
   "definitions": {
     "profile-consentResults": {
@@ -38,7 +36,9 @@
       }
     }
   },
-  "allOf": [{
-    "$ref": "#/definitions/profile-consentResults"
-  }]
+  "allOf": [
+    {
+      "$ref": "#/definitions/profile-consentResults"
+    }
+  ]
 }

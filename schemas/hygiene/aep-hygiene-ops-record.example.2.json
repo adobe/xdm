@@ -1,6 +1,6 @@
 {
   "xdm:action": "updateField",
-  "xdm:targetDatasetId": "1234567890ABCDEFGH",
+  "xdm:targetDatasetID": "1234567890ABCDEFGH",
   "xdm:operation": {
     "xdm:updateField": {
       "xdm:changes": [

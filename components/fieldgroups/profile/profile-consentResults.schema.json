@@ -14,7 +14,7 @@
   "definitions": {
     "profile-consentResults": {
       "properties": {
-        "xdm:consentPoliciesIdMap": {
+        "xdm:consentPoliciesIDMap": {
           "title": "consent policies map",
           "type": "object",
           "meta:xdmType": "map",

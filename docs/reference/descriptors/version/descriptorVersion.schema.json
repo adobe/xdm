@@ -42,15 +42,15 @@
     "examples": [
         {
             "@type": "xdm:descriptorVersion",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
-            "xdm:sourceVersion": 1,
-            "xdm:sourceProperty": "/modification"
-        },
-        {
-            "@type": "xdm:descriptorVersion",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/datatypes/currency",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": "/conversionDate"
+        },
+        {
+            "@type": "xdm:descriptorVersion",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
+            "xdm:sourceVersion": 1,
+            "xdm:sourceProperty": "/modification"
         }
     ]
 }

@@ -152,9 +152,9 @@ Adobe Unified Profile Service required fields for the Profile Union.
 
 
 ## https://ns.adobe.com/experience/profile/consentPoliciesIdMap
-### consent policies map
+### Obsolete consent policy id map
 
-map of consent policies
+this is not the map you should use. see 'ns.adobe.com/consentPoliciesIdMap
 
 `https://ns.adobe.com/experience/profile/consentPoliciesIdMap`
 * is optional

@@ -261,6 +261,7 @@ The primary event type for this time-series record.
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
 | `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
 | `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

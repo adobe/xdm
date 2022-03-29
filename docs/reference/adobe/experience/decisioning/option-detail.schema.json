@@ -107,22 +107,6 @@
     "meta:descriptionId": "option-detail##description##41091",
     "examples": [
         {
-            "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
-            "xdm:name": "Introduction to machine learning",
-            "xdm:characteristics": {
-                "duration": "14",
-                "level": "intermediate",
-                "format": "Syllable"
-            },
-            "xdm:score": 83,
-            "xdm:propositionsTotal": {
-                "xdm:value": 4948
-            },
-            "xdm:propositionsProfile": {
-                "xdm:value": 2
-            }
-        },
-        {
             "xdm:id": "xcore:personalized-offer:e526a1503bf29f8",
             "xdm:name": "Introduction to machine learning",
             "xdm:characteristics": {
@@ -147,6 +131,22 @@
             },
             "xdm:propositionsProfile": {
                 "xdm:value": 3
+            }
+        },
+        {
+            "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+            "xdm:name": "Introduction to machine learning",
+            "xdm:characteristics": {
+                "duration": "14",
+                "level": "intermediate",
+                "format": "Syllable"
+            },
+            "xdm:score": 83,
+            "xdm:propositionsTotal": {
+                "xdm:value": 4948
+            },
+            "xdm:propositionsProfile": {
+                "xdm:value": 2
             }
         },
         {

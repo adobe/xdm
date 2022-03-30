@@ -143,7 +143,7 @@ The placed order for one or more products.
 
 
 ## xdm:productListAdds
-### Product List Adds (Cart Adds)
+### Product List(Cart) Adds
 
 Addition of a product to the product list, for example a product is added to a shopping cart.
 
@@ -162,7 +162,7 @@ Addition of a product to the product list, for example a product is added to a s
 
 
 ## xdm:productListOpens
-### Product List Opens (Cart Opens)
+### Product List(Cart) Opens
 
 Initializations of a new product list, for example a shopping cart is created.
 
@@ -181,7 +181,7 @@ Initializations of a new product list, for example a shopping cart is created.
 
 
 ## xdm:productListRemovals
-### Product List Removals (Cart Removals)
+### Product List(Cart) Removals
 
 Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.
 
@@ -200,7 +200,7 @@ Removal or removals of a product entry from a product list, for example a produc
 
 
 ## xdm:productListReopens
-### Product List Reopens (Cart Reopens)
+### Product List(Cart) Reopens
 
 A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.
 
@@ -219,7 +219,7 @@ A product list that was no longer accessible (abandoned) has been re-activated b
 
 
 ## xdm:productListViews
-### Product List Views (Cart Views)
+### Product List(Cart) Views
 
 View or views of a product-list has occurred.
 
@@ -238,7 +238,7 @@ View or views of a product-list has occurred.
 
 
 ## xdm:productViews
-### Product Views (Cart Views)
+### Product Views
 
 View or views of a product have occurred.
 

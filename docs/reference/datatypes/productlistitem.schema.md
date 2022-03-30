@@ -25,7 +25,13 @@ The product list item represents a product selected by a customer with specific 
   "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
   "xdm:currencyCode": "USD",
   "xdm:quantity": 1,
-  "xdm:priceTotal": 159
+  "xdm:priceTotal": 159,
+  "xdm:selectedOptions": [
+    {
+      "xdm:attribute": "finish",
+      "xdm:value": "brushed"
+    }
+  ]
 }
 ```
 
@@ -36,11 +42,13 @@ The product list item represents a product selected by a customer with specific 
 | [@id](#id) | `string` | Optional | Product list item (this schema) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | Product list item (this schema) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Product list item (this schema) |
+| [xdm:discountAmount](#xdmdiscountamount) | `number` | Optional | Product list item (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Product list item (this schema) |
 | [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Product list item (this schema) |
 | [xdm:product](#xdmproduct) | `string` | Optional | Product list item (this schema) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product list item (this schema) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | Product list item (this schema) |
+| [xdm:selectedOptions](#xdmselectedoptions) | reference | Optional | Product list item (this schema) |
 | [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product Measurement](../fieldgroups/product/product-measurement.schema.md#xdmunitofmeasurecode) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -121,6 +129,26 @@ All instances must conform to this regular expression
 ```json
 "EUR"
 ```
+
+
+
+## xdm:discountAmount
+### Discount Amount
+
+The difference between the regular price and the special price for the product.
+
+`xdm:discountAmount`
+* is optional
+* type: `number`
+* defined in this schema
+
+### xdm:discountAmount Type
+
+
+`number`
+
+
+
 
 
 
@@ -225,6 +253,32 @@ The number of units the customer has indicated they require of the product.
 
 
 
+## xdm:selectedOptions
+### Selected Options
+
+Particular options chosen for a configurable product.
+
+`xdm:selectedOptions`
+* is optional
+* type: reference
+
+* defined in this schema
+
+### xdm:selectedOptions Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `#/definitions/selectedOption`
+
+
+
+
+
+
+
+
 ## xdm:unitOfMeasureCode
 ### Product Unit Of Measure Code
 
@@ -236,6 +290,53 @@ Standard unit of measure of the product and or variation and relates the units f
 * defined in [Product Measurement](../fieldgroups/product/product-measurement.schema.md#xdmunitofmeasurecode)
 
 ### xdm:unitOfMeasureCode Type
+
+
+`string`
+
+
+
+
+
+
+# Product list item Definitions
+
+| Property | Type | Group |
+|----------|------|-------|
+| [xdm:attribute](#xdmattribute) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/selectedOption` |
+| [xdm:value](#xdmvalue) | `string` | `https://ns.adobe.com/xdm/content/productlistitem#/definitions/selectedOption` |
+
+## xdm:attribute
+### Configurable attribute name
+
+The name of the configurable attribute
+
+`xdm:attribute`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:attribute Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:value
+### Selected option value
+
+The value chosen for the configurable attribute
+
+`xdm:value`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:value Type
 
 
 `string`

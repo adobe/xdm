@@ -23,14 +23,7 @@
           "description": "Granularity of the time-series / summary data.  The schema's `xdm:timestamp` field is the first timestamp in a period of this granularity.",
           "type": "string",
           "default": "day",
-          "enum": [
-            "hour",
-            "day",
-            "week",
-            "month",
-            "quarter",
-            "year"
-          ],
+          "enum": ["hour", "day", "week", "month", "quarter", "year"],
           "meta:enum": {
             "hour": "Hourly data",
             "day": "Daily data",

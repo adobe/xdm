@@ -1,5 +1,6 @@
 {
   "@type": "xdm:descriptorTimeSeriesGranularity",
   "xdm:sourceSchema": "https://ns.adobe.com/tenant/myIMSid/12343aasd4321",
+  "xdm:sourceVersion": 1,
   "xdm:granularity": "day"
 }

@@ -13,34 +13,7 @@
   "meta:tags": {
     "industry": ["all"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/fsi/policy",
-    "https://ns.adobe.com/xdm/classes/promotion",
-    "https://ns.adobe.com/xdm/classes/product",
-    "https://ns.adobe.com/xdm/classes/campaign",
-    "https://ns.adobe.com/xdm/classes/fsi/atm",
-    "https://ns.adobe.com/xdm/classes/fsi/branch",
-    "https://ns.adobe.com/xdm/classes/vehicle-product",
-    "https://ns.adobe.com/xdm/context/segmentdefinition",
-    "https://ns.adobe.com/xdm/context/experienceevent",
-    "https://ns.adobe.com/xdm/context/opportunity",
-    "https://ns.adobe.com/xdm/classes/marketing-list",
-    "https://ns.adobe.com/xdm/context/account",
-    "https://ns.adobe.com/xdm/classes/account-person",
-    "https://ns.adobe.com/xdm/classes/opportunity-person",
-    "https://ns.adobe.com/xdm/classes/marketing-list-member",
-    "https://ns.adobe.com/xdm/context/graphs",
-    "https://ns.adobe.com/xdm/classes/lodging-product",
-    "https://ns.adobe.com/xdm/classes/restaurant",
-    "https://ns.adobe.com/xdm/context/campaign-member",
-    "https://ns.adobe.com/xdm/context/profile",
-    "https://ns.adobe.com/experience/decisioning/decisionevent",
-    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journey",
-    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
-    "https://ns.adobe.com/experience/decisioning/option",
-    "https://ns.adobe.com/experience/audiencemanager/segmentfolder",
-    "https://ns.adobe.com/experience/adcloud/adcloudsegment"
-  ],
+  "meta:intendedToExtend": [],
   "description": "Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried. Use identityMap if bringing in data from systems having identities stored in a map structure. Limitation: you won't be able to see the identity fields in the UI. If collecting data directly from a website or bringing in raw data from a system, and identities are in different fields in the data, then use descriptors. This will give you visibility to your identities in the UI.",
   "definitions": {
     "identitymap": {

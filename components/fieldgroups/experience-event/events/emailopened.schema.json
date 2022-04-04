@@ -34,7 +34,7 @@
               "meta:descriptionId": "emailopened##xdm:mailingID##description##83901"
             },
             "xdm:mailingKey": {
-              "title": "Mailing ID",
+              "title": "Mailing Key",
               "description": "Unique key of the email asset.",
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             },

@@ -31,11 +31,17 @@
               "type": "object",
               "properties": {
                 "xdm:linkID": {
-                  "title": "Link ID",
+                  "title": "Link ID (deprecated)",
                   "type": "string",
                   "description": "Unique ID of the link clicked.",
+                  "meta:status": "deprecated",
                   "meta:titleId": "linkclicks##xdm:linkID##title##65641",
                   "meta:descriptionId": "linkclicks##xdm:linkID##description##70231"
+                },
+                "xdm:webInteractionKey": {
+                  "title": "Web Interaction Key",
+                  "description": "Unique key of the link clicked.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 },
                 "xdm:linkURL": {
                   "title": "Link URL",

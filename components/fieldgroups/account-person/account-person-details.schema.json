@@ -14,9 +14,7 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/account-person"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/account-person"],
   "description": "Collects all details related to an accout person relationship.",
   "meta:sensitive-data": true,
   "definitions": {

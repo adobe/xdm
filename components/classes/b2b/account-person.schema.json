@@ -122,10 +122,7 @@
         "xdm:currencyCode": {
           "title": "Currency Code",
           "type": "string",
-          "examples": [
-            "USD",
-            "EUR"
-          ],
+          "examples": ["USD", "EUR"],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
           "meta:titleId": "account-person##xdm:currencyCode##title##72221",

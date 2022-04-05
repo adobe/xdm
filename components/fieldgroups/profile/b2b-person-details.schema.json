@@ -170,6 +170,7 @@
             },
             "xdm:matchedAccount": {
               "type": "object",
+	      "meta:status": "deprecated",
               "properties": {
                 "xdm:score": {
                   "title": "Score",
@@ -189,7 +190,6 @@
                   "format": "date-time"
                 }
               }
-			  "meta:status": "deprecated"
             }
           }
         }

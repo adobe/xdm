@@ -32,7 +32,7 @@
                   "type": "object",
                   "properties": {
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick": {
-                      "title": "Send Time Score for Click (to be deprecated)",
+                      "title": "Send Time Score for Click (deprecated)",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer clicking on an email's link if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -41,10 +41,11 @@
                         "type": "number"
                       },
                       "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##title##69241",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description##72351"
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description##72351",
+                      "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen": {
-                      "title": "Send Time Score for Open (to be deprecated)",
+                      "title": "Send Time Score for Open (deprecated)",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer opening an email if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -53,7 +54,8 @@
                         "type": "number"
                       },
                       "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##4891",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##50931"
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##50931",
+                      "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreClick": {
                       "title": "Send Time Score to Optimize Click",
@@ -89,7 +91,7 @@
                   "type": "object",
                   "properties": {
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen": {
-                      "title": "Send Time Score for Open (to be deprecated)",
+                      "title": "Send Time Score for Open (deprecated)",
                       "description": "Score are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer opening a push notification if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -98,7 +100,8 @@
                         "type": "number"
                       },
                       "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##84141",
-                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##23631"
+                      "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##23631",
+                      "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreOpen": {
                       "title": "Send Time Score to Optimize Open",

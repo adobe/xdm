@@ -5,9 +5,9 @@
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
-    "$id": "https://ns.adobe.com/experience/workfront/task",
+    "$id": "https://ns.adobe.com/experience/workfront/project",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Work Task Attributes",
+    "title": "Work Project Attributes",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -15,161 +15,121 @@
         "https://ns.adobe.com/experience/workfront/object",
         "https://ns.adobe.com/experience/workfront/changeevent"
     ],
-    "description": "Task related fields",
+    "description": "Project related fields",
     "definitions": {
         "wfobject": {
             "properties": {
-                "workfront:task": {
+                "workfront:project": {
                     "type": "object",
-                    "title": "Task Attributes",
+                    "title": "Project Attributes",
                     "properties": {
-                        "workfront:parentTaskID": {
-                            "title": "Parent Task ID",
-                            "description": "",
-                            "type": "string"
-                        },
                         "workfront:actualCompletionTimestamp": {
-                            "title": "Task Actual Completion Timestamp",
+                            "title": "Project Actual Completion Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
                         },
-                        "workfront:actualDurationMinutes": {
-                            "title": "Task Actual Duration Minutes",
+                        "workfront:actualStartTimestamp": {
+                            "title": "Project Actual Start Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:budget": {
+                            "title": "Project Budget",
                             "description": "",
                             "type": "number"
                         },
-                        "workfront:actualStartTimestamp": {
-                            "title": "Task Actual Start Timestamp",
-                            "description": "",
-                            "type": "string",
-                            "format": "date-time"
-                        },
-                        "workfront:assignedToEmployeeID": {
-                            "title": "Task Assigned To Employee ID",
-                            "description": "",
-                            "type": "string"
-                        },
                         "workfront:condition": {
-                            "title": "Task Condition",
+                            "title": "Project Condition",
                             "description": "",
                             "type": "string"
                         },
                         "workfront:description": {
-                            "title": "Task Description",
+                            "title": "Project Description",
                             "description": "",
                             "type": "string"
                         },
+                        "workfront:displayOrder": {
+                            "title": "Project Display Order",
+                            "description": "",
+                            "type": "integer"
+                        },
                         "workfront:durationMinutes": {
-                            "title": "Task Duration Minutes",
+                            "title": "Project Duration Minutes",
                             "description": "",
                             "type": "number"
                         },
                         "workfront:estimatedCompletionTimestamp": {
-                            "title": "Task Estimated Completion Timestamp",
+                            "title": "Project Estimated Completion Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
                         },
                         "workfront:estimatedStartTimestamp": {
-                            "title": "Task Estimated Start Timestamp",
+                            "title": "Project Estimated Start Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
                         },
                         "workfront:groupID": {
-                            "title": "Task Group ID",
+                            "title": "Project Group ID",
                             "description": "",
                             "type": "string"
                         },
-                        "workfront:hierarchyIndentLevel": {
-                            "title": "Task Hierarchy Indent Level",
-                            "description": "",
-                            "type": "integer"
-                        },
-                        "workfront:isCritical": {
-                            "title": "Task Is Critical",
-                            "description": "",
-                            "type": "boolean"
-                        },
-                        "workfront:milestoneID": {
-                            "title": "Task Milestone ID",
+                        "workfront:milestonePathID": {
+                            "title": "Project Milestone Path ID",
                             "description": "",
                             "type": "string"
                         },
-                        "workfront:numberOfChildren": {
-                            "title": "Task Number of Children",
+                        "workfront:ownerEmployeeID": {
+                            "title": "Project Owner Employee ID",
                             "description": "",
-                            "type": "integer"
-                        },
-                        "workfront:numberOfOpenOpTasks": {
-                            "title": "Task Number of Open OpTasks",
-                            "description": "",
-                            "type": "integer"
-                        },
-                        "workfront:originalDurationMinutes": {
-                            "title": "Task Original Duration Minutes",
-                            "description": "",
-                            "type": "number"
+                            "type": "string"
                         },
                         "workfront:percentComplete": {
-                            "title": "Task Percent Complete",
+                            "title": "Project Percent Complete",
                             "description": "",
                             "type": "number"
                         },
                         "workfront:plannedCompletionTimestamp": {
-                            "title": "Task Planned Completion Timestamp",
+                            "title": "Project Planned Completion Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
-                        },
-                        "workfront:plannedDurationMinutes": {
-                            "title": "Task Planned Duration Minutes",
-                            "description": "",
-                            "type": "number"
                         },
                         "workfront:plannedStartTimestamp": {
-                            "title": "Task Planned Start Timestamp",
-                            "description": "",
-                            "type": "string",
-                            "format": "date-time"
-                        },
-                        "workfront:projectedCompletionTimestamp": {
-                            "title": "Task Projected Completion Timestamp",
+                            "title": "Project Planned Start Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
                         },
                         "workfront:priority": {
-                            "title": "Task Priority",
+                            "title": "Project Priority",
                             "description": "",
                             "type": "string"
                         },
                         "workfront:projectedStartTimestamp": {
-                            "title": "Task Projected Start Timestamp",
+                            "title": "Project Projected Start Timestamp",
                             "description": "",
                             "type": "string",
                             "format": "date-time"
                         },
                         "workfront:status": {
-                            "title": "Task Status",
+                            "title": "Project Status",
                             "description": "",
                             "type": "string"
-                        },
-                        "workfront:storyPoints": {
-                            "title": "Task Story Points",
-                            "description": "",
-                            "type": "number"
                         },
                         "workfront:teamID": {
-                            "title": "Task Team ID",
+                            "title": "Project Team ID",
                             "description": "",
                             "type": "string"
                         },
-                        "workfront:iterationID": {
-                            "title": "Iteration ID",
+                        "workfront:projectedCompletionTimestamp": {
+                            "title": "Project Projected Completion Timestamp",
                             "description": "",
-                            "type": "string"
+                            "type": "string",
+                            "format": "date-time"
                         }
                     }
                 }
@@ -184,8 +144,10 @@
     "meta:status": "experimental",
     "examples": [
         {
-            "workfront:storyPoints": 5,
-            "workfront:status": "New"
+            "workfront:project": {
+                "workfront:budget": 10000,
+                "workfront:priority": "first"
+            }
         }
     ]
 }

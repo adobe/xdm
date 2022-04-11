@@ -28,10 +28,24 @@
                     "description": "The @id of a parent object if it exists",
                     "type": "string"
                 },
+                "workfront:parentObjectType": {
+                    "title": "Parent Object Type",
+                    "description": "String value representing the type of parent - PROJECT, TASK, etc.",
+                    "type": "string"
+                },
                 "workfront:objectType": {
                     "title": "Object Type",
                     "description": "Basic string value representing the high level type of object",
                     "type": "string"
+                },
+                "workfront:customData": {
+                    "title": "Custom Form Fields",
+                    "description": "Custom form data in the form of key/value pairs",
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
                 }
             }
         }

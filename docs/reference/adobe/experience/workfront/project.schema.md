@@ -1,40 +1,42 @@
 
-# Work Task Attributes Schema
+# Work Project Attributes Schema
 
 ```
-https://ns.adobe.com/experience/workfront/task
+https://ns.adobe.com/experience/workfront/project
 ```
 
-Task related fields
+Project related fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/task.schema.json](adobe/experience/workfront/task.schema.json) |
+| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/project.schema.json](adobe/experience/workfront/project.schema.json) |
 
-## Work Task Attributes Example
+## Work Project Attributes Example
 ```json
 {
-  "workfront:storyPoints": 5,
-  "workfront:status": "New"
+  "workfront:project": {
+    "workfront:budget": 10000,
+    "workfront:priority": "first"
+  }
 }
 ```
 
-# Work Task Attributes Properties
+# Work Project Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:task](#workfronttask) | `object` | Optional | Work Task Attributes (this schema) |
+| [workfront:project](#workfrontproject) | `object` | Optional | Work Project Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## workfront:task
-### Task Attributes
+## workfront:project
+### Project Attributes
 
-`workfront:task`
+`workfront:project`
 * is optional
 * type: `object`
 * defined in this schema
 
-### workfront:task Type
+### workfront:project Type
 
 
 `object` with following properties:
@@ -43,38 +45,30 @@ Task related fields
 | Property | Type | Required |
 |----------|------|----------|
 | `workfront:actualCompletionTimestamp`| string | Optional |
-| `workfront:actualDurationMinutes`| number | Optional |
 | `workfront:actualStartTimestamp`| string | Optional |
-| `workfront:assignedToEmployeeID`| string | Optional |
+| `workfront:budget`| number | Optional |
 | `workfront:condition`| string | Optional |
 | `workfront:description`| string | Optional |
+| `workfront:displayOrder`| integer | Optional |
 | `workfront:durationMinutes`| number | Optional |
 | `workfront:estimatedCompletionTimestamp`| string | Optional |
 | `workfront:estimatedStartTimestamp`| string | Optional |
 | `workfront:groupID`| string | Optional |
-| `workfront:hierarchyIndentLevel`| integer | Optional |
-| `workfront:isCritical`| boolean | Optional |
-| `workfront:iterationID`| string | Optional |
-| `workfront:milestoneID`| string | Optional |
-| `workfront:numberOfChildren`| integer | Optional |
-| `workfront:numberOfOpenOpTasks`| integer | Optional |
-| `workfront:originalDurationMinutes`| number | Optional |
-| `workfront:parentTaskID`| string | Optional |
+| `workfront:milestonePathID`| string | Optional |
+| `workfront:ownerEmployeeID`| string | Optional |
 | `workfront:percentComplete`| number | Optional |
 | `workfront:plannedCompletionTimestamp`| string | Optional |
-| `workfront:plannedDurationMinutes`| number | Optional |
 | `workfront:plannedStartTimestamp`| string | Optional |
 | `workfront:priority`| string | Optional |
 | `workfront:projectedCompletionTimestamp`| string | Optional |
 | `workfront:projectedStartTimestamp`| string | Optional |
 | `workfront:status`| string | Optional |
-| `workfront:storyPoints`| number | Optional |
 | `workfront:teamID`| string | Optional |
 
 
 
 #### workfront:actualCompletionTimestamp
-##### Task Actual Completion Timestamp
+##### Project Actual Completion Timestamp
 
 
 `workfront:actualCompletionTimestamp`
@@ -94,28 +88,8 @@ Task related fields
 
 
 
-#### workfront:actualDurationMinutes
-##### Task Actual Duration Minutes
-
-
-`workfront:actualDurationMinutes`
-* is optional
-* type: `number`
-
-##### workfront:actualDurationMinutes Type
-
-
-`number`
-
-
-
-
-
-
-
-
 #### workfront:actualStartTimestamp
-##### Task Actual Start Timestamp
+##### Project Actual Start Timestamp
 
 
 `workfront:actualStartTimestamp`
@@ -135,18 +109,18 @@ Task related fields
 
 
 
-#### workfront:assignedToEmployeeID
-##### Task Assigned To Employee ID
+#### workfront:budget
+##### Project Budget
 
 
-`workfront:assignedToEmployeeID`
+`workfront:budget`
 * is optional
-* type: `string`
+* type: `number`
 
-##### workfront:assignedToEmployeeID Type
+##### workfront:budget Type
 
 
-`string`
+`number`
 
 
 
@@ -156,7 +130,7 @@ Task related fields
 
 
 #### workfront:condition
-##### Task Condition
+##### Project Condition
 
 
 `workfront:condition`
@@ -176,7 +150,7 @@ Task related fields
 
 
 #### workfront:description
-##### Task Description
+##### Project Description
 
 
 `workfront:description`
@@ -195,8 +169,28 @@ Task related fields
 
 
 
+#### workfront:displayOrder
+##### Project Display Order
+
+
+`workfront:displayOrder`
+* is optional
+* type: `integer`
+
+##### workfront:displayOrder Type
+
+
+`integer`
+
+
+
+
+
+
+
+
 #### workfront:durationMinutes
-##### Task Duration Minutes
+##### Project Duration Minutes
 
 
 `workfront:durationMinutes`
@@ -216,7 +210,7 @@ Task related fields
 
 
 #### workfront:estimatedCompletionTimestamp
-##### Task Estimated Completion Timestamp
+##### Project Estimated Completion Timestamp
 
 
 `workfront:estimatedCompletionTimestamp`
@@ -237,7 +231,7 @@ Task related fields
 
 
 #### workfront:estimatedStartTimestamp
-##### Task Estimated Start Timestamp
+##### Project Estimated Start Timestamp
 
 
 `workfront:estimatedStartTimestamp`
@@ -258,7 +252,7 @@ Task related fields
 
 
 #### workfront:groupID
-##### Task Group ID
+##### Project Group ID
 
 
 `workfront:groupID`
@@ -277,54 +271,15 @@ Task related fields
 
 
 
-#### workfront:hierarchyIndentLevel
-##### Task Hierarchy Indent Level
+#### workfront:milestonePathID
+##### Project Milestone Path ID
 
 
-`workfront:hierarchyIndentLevel`
-* is optional
-* type: `integer`
-
-##### workfront:hierarchyIndentLevel Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### workfront:isCritical
-##### Task Is Critical
-
-
-`workfront:isCritical`
-* is optional
-* type: `boolean`
-
-##### workfront:isCritical Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### workfront:iterationID
-##### Iteration ID
-
-
-`workfront:iterationID`
+`workfront:milestonePathID`
 * is optional
 * type: `string`
 
-##### workfront:iterationID Type
+##### workfront:milestonePathID Type
 
 
 `string`
@@ -336,95 +291,15 @@ Task related fields
 
 
 
-#### workfront:milestoneID
-##### Task Milestone ID
+#### workfront:ownerEmployeeID
+##### Project Owner Employee ID
 
 
-`workfront:milestoneID`
+`workfront:ownerEmployeeID`
 * is optional
 * type: `string`
 
-##### workfront:milestoneID Type
-
-
-`string`
-
-
-
-
-
-
-
-
-#### workfront:numberOfChildren
-##### Task Number of Children
-
-
-`workfront:numberOfChildren`
-* is optional
-* type: `integer`
-
-##### workfront:numberOfChildren Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### workfront:numberOfOpenOpTasks
-##### Task Number of Open OpTasks
-
-
-`workfront:numberOfOpenOpTasks`
-* is optional
-* type: `integer`
-
-##### workfront:numberOfOpenOpTasks Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### workfront:originalDurationMinutes
-##### Task Original Duration Minutes
-
-
-`workfront:originalDurationMinutes`
-* is optional
-* type: `number`
-
-##### workfront:originalDurationMinutes Type
-
-
-`number`
-
-
-
-
-
-
-
-
-#### workfront:parentTaskID
-##### Parent Task ID
-
-
-`workfront:parentTaskID`
-* is optional
-* type: `string`
-
-##### workfront:parentTaskID Type
+##### workfront:ownerEmployeeID Type
 
 
 `string`
@@ -437,7 +312,7 @@ Task related fields
 
 
 #### workfront:percentComplete
-##### Task Percent Complete
+##### Project Percent Complete
 
 
 `workfront:percentComplete`
@@ -457,7 +332,7 @@ Task related fields
 
 
 #### workfront:plannedCompletionTimestamp
-##### Task Planned Completion Timestamp
+##### Project Planned Completion Timestamp
 
 
 `workfront:plannedCompletionTimestamp`
@@ -477,28 +352,8 @@ Task related fields
 
 
 
-#### workfront:plannedDurationMinutes
-##### Task Planned Duration Minutes
-
-
-`workfront:plannedDurationMinutes`
-* is optional
-* type: `number`
-
-##### workfront:plannedDurationMinutes Type
-
-
-`number`
-
-
-
-
-
-
-
-
 #### workfront:plannedStartTimestamp
-##### Task Planned Start Timestamp
+##### Project Planned Start Timestamp
 
 
 `workfront:plannedStartTimestamp`
@@ -519,7 +374,7 @@ Task related fields
 
 
 #### workfront:priority
-##### Task Priority
+##### Project Priority
 
 
 `workfront:priority`
@@ -539,7 +394,7 @@ Task related fields
 
 
 #### workfront:projectedCompletionTimestamp
-##### Task Projected Completion Timestamp
+##### Project Projected Completion Timestamp
 
 
 `workfront:projectedCompletionTimestamp`
@@ -560,7 +415,7 @@ Task related fields
 
 
 #### workfront:projectedStartTimestamp
-##### Task Projected Start Timestamp
+##### Project Projected Start Timestamp
 
 
 `workfront:projectedStartTimestamp`
@@ -581,7 +436,7 @@ Task related fields
 
 
 #### workfront:status
-##### Task Status
+##### Project Status
 
 
 `workfront:status`
@@ -600,28 +455,8 @@ Task related fields
 
 
 
-#### workfront:storyPoints
-##### Task Story Points
-
-
-`workfront:storyPoints`
-* is optional
-* type: `number`
-
-##### workfront:storyPoints Type
-
-
-`number`
-
-
-
-
-
-
-
-
 #### workfront:teamID
-##### Task Team ID
+##### Project Team ID
 
 
 `workfront:teamID`

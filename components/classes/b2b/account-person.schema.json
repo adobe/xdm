@@ -125,6 +125,11 @@
           "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
           "meta:titleId": "account-person##xdm:currencyCode##title##72221",
           "meta:descriptionId": "account-person##xdm:currencyCode##description##58201"
+        },
+        "xdm:relationshipSource": {
+          "title": "Relationship Source",
+          "description": "Source of Account Person relation.",
+          "type": "string"
         }
       }
     }

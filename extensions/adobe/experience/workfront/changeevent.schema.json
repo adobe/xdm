@@ -62,68 +62,14 @@
           "description": "String value representing the type of parent - PROJECT, TASK, etc.",
           "type": "string"
         },
-        "workfront:iterationID": {
-          "title": "Iteration ID",
-          "description": "Iteration/Sprint this task was associated with",
-          "type": "string"
-        },
-        "workfront:status": {
-          "title": "Status",
-          "description": "Current Status",
-          "type": "string"
-        },
-        "workfront:percentComplete": {
-          "title": "Percent Complete",
-          "description": "Current percentage complete",
-          "type": "number"
-        },
-        "workfront:priority": {
-          "title": "Priority",
-          "description": "Current priority of this object",
-          "type": "integer"
-        },
-        "workfront:storyPoints": {
-          "title": "Story Points",
-          "description": "Story points assigned to this object",
-          "type": "number"
-        },
-        "workfront:durationMinutes": {
-          "title": "Duration Minutes",
-          "description": "Number of minutes spent",
-          "type": "integer"
-        },
-        "workfront:remainingMinutes": {
-          "title": "Remaining Minutes",
-          "description": "Remaining minutes expected",
-          "type": "integer"
-        },
-        "workfront:assignedToID": {
-          "title": "Assigned To",
-          "description": "The ID of the employee or person this object type is assigned to",
-          "type": "string"
-        },
-        "workfront:actualStartDate": {
-          "title": "Actual Start Date",
-          "description": "Actual start date of execution",
-          "type": "string",
-          "format": "date-time"
-        },
-        "workfront:actualCompletionDate": {
-          "title": "Actual Completion",
-          "description": "Actual completion date execution",
-          "type": "string",
-          "format": "date-time"
-        },
-        "workfront:plannedStartDate": {
-          "title": "Planned Start Date",
-          "description": "Planned start date of execution",
-          "type": "string",
-          "format": "date-time"
-        },
-        "workfront:lastUpdatedByID": {
-          "title": "Updated By",
-          "description": "The ID of the user who made the last update",
-          "type": "string"
+        "workfront:customData": {
+          "title": "Custom Form Fields",
+          "description": "Custom form data in the form of key/value pairs",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
         }
       }
     }

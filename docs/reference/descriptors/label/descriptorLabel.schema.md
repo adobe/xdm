@@ -23,7 +23,7 @@ Describes a label at the field level for a given class/fieldgroup/schema
   "@type": "xdm:descriptorLabel",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
     "sampleDUlELabelResourceID2",
@@ -61,7 +61,7 @@ Describes a label at the field level for a given class/fieldgroup/schema
   "@type": "xdm:descriptorLabel",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
-  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
+  "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
     "sampleDUlELabelResourceID2",

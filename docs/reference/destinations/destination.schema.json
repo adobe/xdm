@@ -98,7 +98,8 @@
                         "mobile engagement",
                         "personalization",
                         "social",
-                        "streaming"
+                        "streaming",
+                        "mobile"
                     ],
                     "meta:enum": {
                         "adobeSolutions": "adobeSolutions",
@@ -108,7 +109,8 @@
                         "mobile engagement": "mobile engagement",
                         "personalization": "personalization",
                         "social": "social",
-                        "streaming": "streaming"
+                        "streaming": "streaming",
+                        "mobile": "mobile"
                     }
                 },
                 "xdm:destinationFrequency": {

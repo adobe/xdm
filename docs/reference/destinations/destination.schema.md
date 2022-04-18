@@ -157,6 +157,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `personalization` | personalization |
 | `social` | social |
 | `streaming` | streaming |
+| `mobile` | mobile |
 
 
 

@@ -87,29 +87,7 @@
         "xdm:destinationCategory": {
           "title": "Destination Category",
           "type": "string",
-          "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
-          "enum": [
-            "adobeSolutions",
-            "advertising",
-            "cloudStorage",
-            "emailMarketing",
-            "mobile engagement",
-            "personalization",
-            "social",
-            "streaming",
-            "mobile"
-          ],
-          "meta:enum": {
-            "adobeSolutions": "adobeSolutions",
-            "advertising": "advertising",
-            "cloudStorage": "cloudStorage",
-            "emailMarketing": "emailMarketing",
-            "mobile engagement": "mobile engagement",
-            "personalization": "personalization",
-            "social": "social",
-            "streaming": "streaming",
-            "mobile": "mobile"
-          }
+          "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve"
         },
         "xdm:destinationFrequency": {
           "title": "Destination Frequency",

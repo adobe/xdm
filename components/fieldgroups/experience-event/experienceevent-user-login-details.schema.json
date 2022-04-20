@@ -167,6 +167,11 @@
               "description": "Counter event indicating a user has updated their account profile.",
               "meta:titleId": "experienceevent-user-login-details##xdm:updateProfile##title##26881",
               "meta:descriptionId": "experienceevent-user-login-details##xdm:updateProfile##description##78111"
+            },
+            "xdm:createProfile": {
+              "title": "Account Profile Create",
+              "type": "integer",
+              "description": "Counter event indicating a user has created an account profile."
             }
           },
           "meta:descriptionId": "experienceevent-user-login-details##xdm:userAccount##description##24221"

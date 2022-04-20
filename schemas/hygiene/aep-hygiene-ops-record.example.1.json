@@ -1,0 +1,27 @@
+{
+  "xdm:batchTime": "2022-03-03T18:57:00+00:00",
+  "xdm:action": "deleteIdentity",
+  "xdm:targetDatasetId": "1234567890ABCDEFGH",
+  "xdm:operation": {
+    "xdm:deleteIdentity": {
+      "xdm:identities": [
+        {
+          "xdm:namespace": {
+            "xdm:code": "ECID"
+          },
+          "xdm:ID": "2154547663131313"
+        },
+        {
+          "xdm:namespace": {
+            "xdm:code": "Email"
+          },
+          "xdm:ID": "user@domain.com"
+        }
+      ]
+    }
+  },
+  "xdm:extSourceSystemAudit": {
+    "xdm:createdBy": "USER111",
+    "xdm:createdDate": "2022-03-03T18:57:00+00:00"
+  }
+}

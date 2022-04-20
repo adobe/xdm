@@ -17,7 +17,8 @@
         ]
     },
     "meta:intendedToExtend": [
-        "https://ns.adobe.com/xdm/context/profile"
+        "https://ns.adobe.com/xdm/context/profile",
+        "https://ns.adobe.com/xdm/context/experienceevent"
     ],
     "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
     "definitions": {

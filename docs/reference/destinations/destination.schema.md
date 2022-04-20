@@ -21,14 +21,16 @@ Destinations Schema.
 ```json
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-  "xdm:destinationName": "Infa",
-  "xdm:destinationPlatform": "Informatica",
+  "xdm:destinationName": "LMA_Destination1",
+  "xdm:destinationPlatform": "LinkedIn Matched Audience",
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhbak",
-  "xdm:destinationDescription": "Informatica connection",
+  "xdm:destinationDescription": "LinkedIn Matched Audience connection",
   "xdm:destinationStatus": "enabled",
   "xdm:version": "1.2",
-  "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea"
+  "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea",
+  "xdm:destinationCategory": "social",
+  "xdm:destinationFrequency": "Streaming"
 }
 ```
 
@@ -40,7 +42,9 @@ Destinations Schema.
 | [xdm:connectionSpecID](#xdmconnectionspecid) | `string` | Optional | Destinations (this schema) |
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations (this schema) |
+| [xdm:destinationCategory](#xdmdestinationcategory) | `enum` | Optional | Destinations (this schema) |
 | [xdm:destinationDescription](#xdmdestinationdescription) | `string` | Optional | Destinations (this schema) |
+| [xdm:destinationFrequency](#xdmdestinationfrequency) | `enum` | Optional | Destinations (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationName](#xdmdestinationname) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationPlatform](#xdmdestinationplatform) | `string` | Optional | Destinations (this schema) |
@@ -130,6 +134,34 @@ ID of user who created the destination flow
 
 
 
+## xdm:destinationCategory
+### Destination Category
+
+Grouping of the destinations in the catalog depending on the marketing action that they help achieve
+
+`xdm:destinationCategory`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmdestinationcategory-known-values).
+
+### xdm:destinationCategory Known Values
+| Value | Description |
+|-------|-------------|
+| `adobeSolutions` | adobeSolutions |
+| `advertising` | advertising |
+| `cloudStorage` | cloudStorage |
+| `emailMarketing` | emailMarketing |
+| `mobile engagement` | mobile engagement |
+| `personalization` | personalization |
+| `social` | social |
+| `streaming` | streaming |
+| `mobile` | mobile |
+
+
+
+
 ## xdm:destinationDescription
 ### Destination Description
 
@@ -146,6 +178,27 @@ Destination flow description
 `string`
 
 
+
+
+
+
+## xdm:destinationFrequency
+### Destination Frequency
+
+Indicates how often the audiences are sent to the destination
+
+`xdm:destinationFrequency`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmdestinationfrequency-known-values).
+
+### xdm:destinationFrequency Known Values
+| Value | Description |
+|-------|-------------|
+| `Batch` | Batch |
+| `Streaming` | Streaming |
 
 
 

@@ -48,6 +48,7 @@ Adobe Advertising Cloud segmentation traits.
 | [repo:modifyDate](#repomodifydate) | `string` | Optional | [Audit trail](../../../datatypes/auditing/auditable.schema.md#repomodifydate) |
 | [xdm:createdByBatchID](#xdmcreatedbybatchid) | `string` | Optional | [Audit trail](../../../datatypes/auditing/auditable.schema.md#xdmcreatedbybatchid) |
 | [xdm:description](#xdmdescription) | `string` | Optional | [Segment definition](../../../classes/segmentdefinition.schema.md#xdmdescription) |
+| [xdm:labels](#xdmlabels) | `string[]` | Optional | [Segment definition](../../../classes/segmentdefinition.schema.md#xdmlabels) |
 | [xdm:modifiedByBatchID](#xdmmodifiedbybatchid) | `string` | Optional | [Audit trail](../../../datatypes/auditing/auditable.schema.md#xdmmodifiedbybatchid) |
 | [xdm:partnerId](#xdmpartnerid) | `string` | Optional | Adobe Advertising Cloud Audience Segment Details (this schema) |
 | [xdm:repositoryCreatedBy](#xdmrepositorycreatedby) | `string` | Optional | [Audit trail](../../../datatypes/auditing/auditable.schema.md#xdmrepositorycreatedby) |
@@ -165,6 +166,33 @@ Description of the segment.
 
 
 `string`
+
+
+
+
+
+
+## xdm:labels
+### Labels
+
+When present, it allows an array of labels. Values are resources IDs
+
+`xdm:labels`
+* is optional
+* type: `string[]`
+
+* defined in [Segment definition](../../../classes/segmentdefinition.schema.md#xdmlabels)
+
+### xdm:labels Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
 
 
 

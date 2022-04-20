@@ -1,0 +1,191 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/workfront/task",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Work Task Attributes",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/workfront/object",
+        "https://ns.adobe.com/experience/workfront/changeevent"
+    ],
+    "description": "Task related fields",
+    "definitions": {
+        "wfobject": {
+            "properties": {
+                "workfront:task": {
+                    "type": "object",
+                    "title": "Task Attributes",
+                    "properties": {
+                        "workfront:parentTaskID": {
+                            "title": "Parent Task ID",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:actualCompletionTimestamp": {
+                            "title": "Task Actual Completion Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:actualDurationMinutes": {
+                            "title": "Task Actual Duration Minutes",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:actualStartTimestamp": {
+                            "title": "Task Actual Start Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:assignedToEmployeeID": {
+                            "title": "Task Assigned To Employee ID",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:condition": {
+                            "title": "Task Condition",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:description": {
+                            "title": "Task Description",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:durationMinutes": {
+                            "title": "Task Duration Minutes",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:estimatedCompletionTimestamp": {
+                            "title": "Task Estimated Completion Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:estimatedStartTimestamp": {
+                            "title": "Task Estimated Start Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:groupID": {
+                            "title": "Task Group ID",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:hierarchyIndentLevel": {
+                            "title": "Task Hierarchy Indent Level",
+                            "description": "",
+                            "type": "integer"
+                        },
+                        "workfront:isCritical": {
+                            "title": "Task Is Critical",
+                            "description": "",
+                            "type": "boolean"
+                        },
+                        "workfront:milestoneID": {
+                            "title": "Task Milestone ID",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:numberOfChildren": {
+                            "title": "Task Number of Children",
+                            "description": "",
+                            "type": "integer"
+                        },
+                        "workfront:numberOfOpenOpTasks": {
+                            "title": "Task Number of Open OpTasks",
+                            "description": "",
+                            "type": "integer"
+                        },
+                        "workfront:originalDurationMinutes": {
+                            "title": "Task Original Duration Minutes",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:percentComplete": {
+                            "title": "Task Percent Complete",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:plannedCompletionTimestamp": {
+                            "title": "Task Planned Completion Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:plannedDurationMinutes": {
+                            "title": "Task Planned Duration Minutes",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:plannedStartTimestamp": {
+                            "title": "Task Planned Start Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:projectedCompletionTimestamp": {
+                            "title": "Task Projected Completion Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:priority": {
+                            "title": "Task Priority",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:projectedStartTimestamp": {
+                            "title": "Task Projected Start Timestamp",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time"
+                        },
+                        "workfront:status": {
+                            "title": "Task Status",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:storyPoints": {
+                            "title": "Task Story Points",
+                            "description": "",
+                            "type": "number"
+                        },
+                        "workfront:teamID": {
+                            "title": "Task Team ID",
+                            "description": "",
+                            "type": "string"
+                        },
+                        "workfront:iterationID": {
+                            "title": "Iteration ID",
+                            "description": "",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/wfobject"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "workfront:storyPoints": 5,
+            "workfront:status": "New"
+        }
+    ]
+}

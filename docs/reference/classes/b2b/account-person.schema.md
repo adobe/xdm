@@ -16,6 +16,7 @@ XDM Business Account Person Relation is a standard Experience Data Model (XDM) c
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Record Status](../../fieldgroups/shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Account Person Relation Example
@@ -37,13 +38,16 @@ XDM Business Account Person Relation is a standard Experience Data Model (XDM) c
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:isActive](#xdmisactive) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:isDirect](#xdmisdirect) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personID](#xdmpersonid) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personKey](#xdmpersonkey) | B2B Source | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:personRole](#xdmpersonrole) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:personRoles](#xdmpersonroles) | `string[]` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationEndDate](#xdmrelationenddate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationStartDate](#xdmrelationstartdate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:relationshipSource](#xdmrelationshipsource) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -222,6 +226,25 @@ Boolean to indicate if this relationship between the account and the person is a
 
 
 
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
+
+
+`boolean`
+
+
+
+
+
 ## xdm:isDirect
 ### Direct Flag
 
@@ -319,6 +342,33 @@ Role of the person on this account.
 
 
 
+## xdm:personRoles
+### Person Roles
+
+An array of roles of the person on this account.
+
+`xdm:personRoles`
+* is optional
+* type: `string[]`
+
+* defined in this schema
+
+### xdm:personRoles Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
+
 ## xdm:relationEndDate
 ### Relationship End Date
 
@@ -355,6 +405,26 @@ The date when the relationship between the account and the person started.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:relationshipSource
+### Relationship Source
+
+Source of Account Person relation.
+
+`xdm:relationshipSource`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:relationshipSource Type
+
+
+`string`
 
 
 

@@ -53,6 +53,24 @@
                     "description": "ID of user who created the destination flow",
                     "meta:titleId": "destination-segment##xdm:createdByID##title##9991",
                     "meta:descriptionId": "destination-segment##xdm:createdByID##description##76461"
+                },
+                "xdm:updateTime": {
+                    "title": "Update Time",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The date and UTC time when the activation flow to the destination-segment mapping was updated"
+                },
+                "xdm:startDate": {
+                    "title": "Start Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date when the activation flow will start activating the segment to the destination"
+                },
+                "xdm:endDate": {
+                    "title": "End Date",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The date when the activation flow will stop activating the segment to the destination"
                 }
             }
         }
@@ -77,7 +95,10 @@
             "xdm:segmentID": "0b12f30c-2260-442e-9120-2b12e96c0c40",
             "xdm:segmentNamespace": "aepsegments",
             "xdm:createTime": "2019-01-01T15:52:25+00:00",
-            "xdm:createdByID": "mprabhak"
+            "xdm:createdByID": "mprabhak",
+            "xdm:updateTime": "2019-01-02T15:52:25+00:00",
+            "xdm:startDate": "2022-02-03",
+            "xdm:endDate": "2022-02-06"
         }
     ]
 }

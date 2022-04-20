@@ -1,5 +1,5 @@
 
-# Adobe Analytics ExperienceEvent Template Mixin Schema
+# Adobe Analytics ExperienceEvent Template Schema
 
 ```
 https://ns.adobe.com/experience/analytics-experienceevent
@@ -12,7 +12,7 @@ Analytics ExperienceEvent field group for use with schemas for Solution data ing
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/analytics-experienceevent.schema.json](adobe/experience/analytics-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Analytics ExperienceEvent Template Mixin `https://ns.adobe.com/experience/analytics-experienceevent`
+* Adobe Analytics ExperienceEvent Template `https://ns.adobe.com/experience/analytics-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-advertising`
   * [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
@@ -30,13 +30,13 @@ Analytics ExperienceEvent field group for use with schemas for Solution data ing
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
   * [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/target/experienceevent-shared`
   * [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/profile/experienceevent-shared`
-  * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
+  * [Adobe Experience Platform Implementation Details](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
   * [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
-  * [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md) `https://ns.adobe.com/experience/analytics/commerce`
+  * [Adobe Analytics ExperienceEvent Commerce](analytics/commerce.schema.md) `https://ns.adobe.com/experience/analytics/commerce`
   * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
 
-# Adobe Analytics ExperienceEvent Template Mixin Properties
+# Adobe Analytics ExperienceEvent Template Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
@@ -55,13 +55,13 @@ Analytics ExperienceEvent field group for use with schemas for Solution data ing
 | [https://ns.adobe.com/experience/analytics/event901to1000](#httpsnsadobecomexperienceanalyticsevent901to1000) | event901to1000.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent901to1000) |
 | [https://ns.adobe.com/experience/analytics/session](#httpsnsadobecomexperienceanalyticssession) | session.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticssession) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
-| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
+| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional | [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
 | [xdm:application](#xdmapplication) | Application | Optional | [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md#xdmapplication) |
 | [xdm:channel](#xdmchannel) | Experience Channel | Optional | [Channel Details](../../fieldgroups/experience-event/experienceevent-channel.schema.md#xdmchannel) |
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmcommerce) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional | [Adobe Analytics ExperienceEvent Commerce](analytics/commerce.schema.md#xdmcommerce) |
 | [xdm:dataSource](#xdmdatasource) | Data Source | Optional | [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmdatasource) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:directMarketing](#xdmdirectmarketing) | Direct marketing | Optional | [Direct Marketing Details](../../fieldgroups/experience-event/experienceevent-directmarketing.schema.md#xdmdirectmarketing) |
@@ -70,7 +70,7 @@ Analytics ExperienceEvent field group for use with schemas for Solution data ing
 | [xdm:marketing](#xdmmarketing) | Marketing | Optional | [Campaign Marketing Details](../../fieldgroups/experience-event/experienceevent-marketing.schema.md#xdmmarketing) |
 | [xdm:media](#xdmmedia) | Media information | Optional | [Media Interaction Details ](../../fieldgroups/experience-event/experienceevent-media.schema.md#xdmmedia) |
 | [xdm:placeContext](#xdmplacecontext) | Place context | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmplacecontext) |
-| [xdm:productListItems](#xdmproductlistitems) | Adobe Analytics extension to XDM Product List Item | Optional | [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmproductlistitems) |
+| [xdm:productListItems](#xdmproductlistitems) | Adobe Analytics extension to XDM Product List Item | Optional | [Adobe Analytics ExperienceEvent Commerce](analytics/commerce.schema.md#xdmproductlistitems) |
 | [xdm:profileStitch](#xdmprofilestitch) | Profile stitch | Optional | [Profile Stitch Details](../../fieldgroups/experience-event/experienceevent-profile-stitch.schema.md#xdmprofilestitch) |
 | [xdm:receivedTimestamp](#xdmreceivedtimestamp) | `string` | Optional | [Technical Details](../../fieldgroups/experience-event/experienceevent-technical-details.schema.md#xdmreceivedtimestamp) |
 | [xdm:search](#xdmsearch) | Search | Optional | [Search Details](../../fieldgroups/experience-event/experienceevent-search.schema.md#xdmsearch) |
@@ -3517,7 +3517,7 @@ All items must be of the type:
 `https://ns.adobe.com/experience/implementations`
 * is optional
 * type: Adobe Experience Platform Implementation Details
-* defined in [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
+* defined in [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
 
 ### https://ns.adobe.com/experience/implementations Type
 
@@ -3590,7 +3590,7 @@ Information related to advertising impressions, clickthroughs, and attribution.
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional
@@ -3633,7 +3633,7 @@ Product returns, warranty registration, and shopping cart/order process.
 `xdm:commerce`
 * is optional
 * type: Commerce
-* defined in [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmcommerce)
+* defined in [Adobe Analytics ExperienceEvent Commerce](analytics/commerce.schema.md#xdmcommerce)
 
 ### xdm:commerce Type
 
@@ -3805,7 +3805,7 @@ A list of items representing a product selected by a customer with specific opti
 * is optional
 * type: Adobe Analytics extension to XDM Product List Item
 
-* defined in [Adobe Analytics ExperienceEvent Commerce Mixin](analytics/commerce.schema.md#xdmproductlistitems)
+* defined in [Adobe Analytics ExperienceEvent Commerce](analytics/commerce.schema.md#xdmproductlistitems)
 
 ### xdm:productListItems Type
 

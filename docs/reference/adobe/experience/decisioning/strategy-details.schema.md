@@ -24,6 +24,7 @@ Decision strategy details capture data values for a particular step that will be
 | [xdm:step](#xdmstep) | `string` | Optional | Decision Strategy Details (this schema) |
 | [xdm:strategyID](#xdmstrategyid) | `string` | Optional | Decision Strategy Details (this schema) |
 | [xdm:trafficType](#xdmtraffictype) | `string` | Optional | Decision Strategy Details (this schema) |
+| [xdm:treatmentID](#xdmtreatmentid) | `string` | Optional | Decision Strategy Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:algorithmID
@@ -119,6 +120,26 @@ The class of algorithm/policy that was used to compute this decision. 'Contextua
 | `random` | Random Traffic |
 | `contextual` | Contextual Traffic |
 | `noncontextual` | Non-Contextual Traffic |
+
+
+
+
+## xdm:treatmentID
+### Treatment Identifier
+
+Identifier for the experiment treatment or traffic allocation strategy that was selected for the decision.
+
+`xdm:treatmentID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:treatmentID Type
+
+
+`string`
+
+
 
 
 

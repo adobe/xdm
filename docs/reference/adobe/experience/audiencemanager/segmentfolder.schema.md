@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/audiencemanager/segmentfolder
 ```
 
-This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition Mixin' in order to point to the parent folder, which is an instance of this class.
+This Adobe Audience Manager-specific folder definition helps organize segment definitions into a hierarchy. This includes required fields like folder identity and folder name. The segment definition class requires use of the 'Adobe Audience Manager Segment Definition' fieldgroup in order to point to the parent folder, which is an instance of this class.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

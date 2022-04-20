@@ -7,7 +7,7 @@
   ],
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/customerJourneyManagement/profile-counters",
-  "title": "Profile Counters Mixin Extension",
+  "title": "Profile Counters Extension",
   "description": "Holds a map of objects containing counter_value and counter_expiry, keyed by counter_id.",
   "type": "object",
   "meta:extensible": true,
@@ -51,7 +51,7 @@
     }
   ],
   "required": [],
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:titleId": "profilecounters##title##16505",
   "meta:descriptionId": "profilecounters##description##16505"
 }

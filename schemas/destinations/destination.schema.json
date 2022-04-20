@@ -80,7 +80,46 @@
         "xdm:connectionSpecID": {
           "title": "Connection Spec ID",
           "type": "string",
-          "description": "Unique identifier to connect and deliver segments to the destination"
+          "description": "Unique identifier to connect and deliver segments to the destination",
+          "meta:titleId": "destination##xdm:connectionSpecID##title##40981",
+          "meta:descriptionId": "destination##xdm:connectionSpecID##description##44091"
+        },
+        "xdm:destinationCategory": {
+          "title": "Destination Category",
+          "type": "string",
+          "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
+          "enum": [
+            "adobeSolutions",
+            "advertising",
+            "cloudStorage",
+            "emailMarketing",
+            "mobile engagement",
+            "personalization",
+            "social",
+            "streaming",
+            "mobile"
+          ],
+          "meta:enum": {
+            "adobeSolutions": "adobeSolutions",
+            "advertising": "advertising",
+            "cloudStorage": "cloudStorage",
+            "emailMarketing": "emailMarketing",
+            "mobile engagement": "mobile engagement",
+            "personalization": "personalization",
+            "social": "social",
+            "streaming": "streaming",
+            "mobile": "mobile"
+          }
+        },
+        "xdm:destinationFrequency": {
+          "title": "Destination Frequency",
+          "type": "string",
+          "description": "Indicates how often the audiences are sent to the destination",
+          "enum": ["Batch", "Streaming"],
+          "meta:enum": {
+            "Batch": "Batch",
+            "Streaming": "Streaming"
+          }
         }
       }
     }

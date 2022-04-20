@@ -91,8 +91,9 @@
                     }
                 },
                 "https://ns.adobe.com/experience/profile/consentPoliciesIdMap": {
-                    "title": "consent policies map",
-                    "description": "map of consent policies",
+                    "title": "Obsolete consent policy id map",
+                    "description": "this is not the map you should use. see 'ns.adobe.com/consentPoliciesIdMap",
+                    "meta:status": "deprecated",
                     "type": "object",
                     "meta:xdmType": "map",
                     "additionalProperties": {
@@ -101,7 +102,7 @@
                         "type": "object",
                         "meta:xdmType": "map",
                         "additionalProperties": {
-                            "title": "consented identities per namespace",
+                            "title": "Obsolete consented identities per namespace",
                             "description": "List of identities for each namespace in each consent policy",
                             "type": "array",
                             "items": {

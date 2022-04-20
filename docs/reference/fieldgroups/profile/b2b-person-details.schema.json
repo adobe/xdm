@@ -159,12 +159,39 @@
                         "xdm:companyName": {
                             "title": "Company Name",
                             "description": "Name of the company a business person is associated with.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "b2b-person-details##xdm:companyName##title##78601",
+                            "meta:descriptionId": "b2b-person-details##xdm:companyName##description##31101"
                         },
                         "xdm:companyWebsite": {
                             "title": "Company Website",
                             "description": "Website of the company a business person is associated with.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
+                            "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521"
+                        },
+                        "xdm:matchedAccount": {
+                            "type": "object",
+                            "meta:status": "deprecated",
+                            "properties": {
+                                "xdm:score": {
+                                    "title": "Score",
+                                    "description": "Account score.",
+                                    "type": "number",
+                                    "meta:status": "experimental"
+                                },
+                                "xdm:accountKey": {
+                                    "title": "Account Key",
+                                    "description": "Unique identifier of the Account related to the person.",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                },
+                                "xdm:scoreDate": {
+                                    "title": "Score Date",
+                                    "description": "Date score was recorded/computed.",
+                                    "type": "string",
+                                    "format": "date-time"
+                                }
+                            }
                         }
                     }
                 }
@@ -198,6 +225,9 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
     "meta:status": "stable",

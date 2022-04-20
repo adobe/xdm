@@ -1,5 +1,5 @@
 
-# Profile Counters Mixin Extension Schema
+# Profile Counters Extension Schema
 
 ```
 https://ns.adobe.com/experience/customerJourneyManagement/profile-counters
@@ -9,24 +9,9 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
+| Can be instantiated | Yes | Deprecated | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/profile-counters.schema.json](adobe/experience/customerJourneyManagement/profile-counters.schema.json) |
 
-## Profile Counters Mixin Extension Examples
-
-```json
-{
-  "xdm:namespace": {
-    "xdm:code": "ECID"
-  },
-  "xdm:id": "92312748749128",
-  "xdm:frequencyMap": {
-    "counter_id": {
-      "xdm:value": 100,
-      "xdm:expiry": 1233214556
-    }
-  }
-}
-```
+## Profile Counters Extension Examples
 
 ```json
 {
@@ -43,12 +28,27 @@ Holds a map of objects containing counter_value and counter_expiry, keyed by cou
 }
 ```
 
+```json
+{
+  "xdm:namespace": {
+    "xdm:code": "ECID"
+  },
+  "xdm:id": "92312748749128",
+  "xdm:frequencyMap": {
+    "counter_id": {
+      "xdm:value": 100,
+      "xdm:expiry": 1233214556
+    }
+  }
+}
+```
 
-# Profile Counters Mixin Extension Properties
+
+# Profile Counters Extension Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Mixin Extension (this schema) |
+| [xdm:frequencyMap](#xdmfrequencymap) | `object` | Optional | Profile Counters Extension (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:frequencyMap

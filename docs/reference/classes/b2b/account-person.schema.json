@@ -71,7 +71,16 @@
                     "description": "Role of the person on this account.",
                     "type": "string",
                     "meta:titleId": "account-person##xdm:personRole##title##49191",
-                    "meta:descriptionId": "account-person##xdm:personRole##description##22021"
+                    "meta:descriptionId": "account-person##xdm:personRole##description##22021",
+                    "meta:status": "deprecated"
+                },
+                "xdm:personRoles": {
+                    "title": "Person Roles",
+                    "description": "An array of roles of the person on this account.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 },
                 "xdm:isDirect": {
                     "title": "Direct Flag",
@@ -121,6 +130,11 @@
                     "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
                     "meta:titleId": "account-person##xdm:currencyCode##title##72221",
                     "meta:descriptionId": "account-person##xdm:currencyCode##description##58201"
+                },
+                "xdm:relationshipSource": {
+                    "title": "Relationship Source",
+                    "description": "Source of Account Person relation.",
+                    "type": "string"
                 }
             }
         }
@@ -134,6 +148,9 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
     "meta:status": "stable",

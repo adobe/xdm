@@ -183,6 +183,90 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
+  "@id": "https://data.adobe.io/experienceid-2345678",
+  "xdm:dataSource": {
+    "@id": "https://data.adobe.io/datasources/datasource-123",
+    "xdm:code": "DataSourceIntegrationCode-123"
+  },
+  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "AVID": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "xdm:environment": {
+    "xdm:type": "browser",
+    "xdm:browserDetails": {
+      "xdm:name": "Chrome",
+      "xdm:version": "63.0.3239",
+      "xdm:acceptLanguage": "en",
+      "xdm:cookiesEnabled": true,
+      "xdm:viewportHeight": 900,
+      "xdm:viewportWidth": 1680
+    },
+    "xdm:operatingSystem": "MAC OS",
+    "xdm:operatingSystemVersion": "10.13",
+    "xdm:connectionType": "cable"
+  },
+  "xdm:locationContext": {
+    "xdm:geo": {
+      "xdm:countryCode": "US",
+      "xdm:stateProvince": "CA",
+      "xdm:city": "Emeryville",
+      "xdm:dmaid": "99"
+    }
+  },
+  "xdm:web": {
+    "xdm:webPageView": {
+      "xdm:URL": "https://www.example.com"
+    },
+    "xdm:webReferrer": {
+      "xdm:URL": "https://www.examplereferrer.com/",
+      "xdm:domain": "examplereferrer.com"
+    }
+  },
+  "xdm:device": {
+    "xdm:type": "mobile",
+    "xdm:manufacturer": "Apple",
+    "xdm:model": "iPhone 6"
+  },
+  "xdm:advertising": {
+    "xdm:adViewability": {
+      "xdm:adUnitDepth": 0,
+      "xdm:viewportHeight": 1250,
+      "xdm:viewportWidth": 1600,
+      "xdm:adHeight": 250,
+      "xdm:adWidth": 300,
+      "xdm:playerVolume": 85,
+      "xdm:measurementEligible": true,
+      "xdm:implementationDetails": {
+        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
+        "xdm:version": "1"
+      },
+      "xdm:viewable": true,
+      "xdm:activeWindow": true,
+      "xdm:percentViewable": 89,
+      "xdm:viewableFirstQuartile": {
+        "xdm:value": 1
+      }
+    },
+    "xdm:firstQuartiles": {
+      "xdm:value": 1
+    }
+  }
+}
+```
+
+```json
+{
   "@id": "https://data.adobe.io/experienceid-123457",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
@@ -389,83 +473,22 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 
 ```json
 {
-  "@id": "https://data.adobe.io/experienceid-2345678",
-  "xdm:dataSource": {
-    "@id": "https://data.adobe.io/datasources/datasource-123",
-    "xdm:code": "DataSourceIntegrationCode-123"
-  },
-  "xdm:timestamp": "2017-09-26T15:52:25+00:00",
-  "xdm:eventMergeId": "9fb4e78d-b0bf-4d99-b987-cb37abdbcd15",
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
   "xdm:identityMap": {
     "ECID": [
       {
-        "xdm:id": "92312748749128"
-      }
-    ],
-    "AVID": [
-      {
-        "xdm:id": "2394509340-30453470347"
+        "xdm:id": "92312743856228"
       }
     ]
   },
-  "xdm:environment": {
-    "xdm:type": "browser",
-    "xdm:browserDetails": {
-      "xdm:name": "Chrome",
-      "xdm:version": "63.0.3239",
-      "xdm:acceptLanguage": "en",
-      "xdm:cookiesEnabled": true,
-      "xdm:viewportHeight": 900,
-      "xdm:viewportWidth": 1680
-    },
-    "xdm:operatingSystem": "MAC OS",
-    "xdm:operatingSystemVersion": "10.13",
-    "xdm:connectionType": "cable"
-  },
-  "xdm:locationContext": {
-    "xdm:geo": {
-      "xdm:countryCode": "US",
-      "xdm:stateProvince": "CA",
-      "xdm:city": "Emeryville",
-      "xdm:dmaid": "99"
-    }
-  },
-  "xdm:web": {
-    "xdm:webPageView": {
-      "xdm:URL": "https://www.example.com"
-    },
-    "xdm:webReferrer": {
-      "xdm:URL": "https://www.examplereferrer.com/",
-      "xdm:domain": "examplereferrer.com"
-    }
-  },
-  "xdm:device": {
-    "xdm:type": "mobile",
-    "xdm:manufacturer": "Apple",
-    "xdm:model": "iPhone 6"
-  },
-  "xdm:advertising": {
-    "xdm:adViewability": {
-      "xdm:adUnitDepth": 0,
-      "xdm:viewportHeight": 1250,
-      "xdm:viewportWidth": 1600,
-      "xdm:adHeight": 250,
-      "xdm:adWidth": 300,
-      "xdm:playerVolume": 85,
-      "xdm:measurementEligible": true,
-      "xdm:implementationDetails": {
-        "xdm:name": "https://ns.adobe.com/experience/adcloud/viewability",
-        "xdm:version": "1"
-      },
-      "xdm:viewable": true,
-      "xdm:activeWindow": true,
-      "xdm:percentViewable": 89,
-      "xdm:viewableFirstQuartile": {
-        "xdm:value": 1
-      }
-    },
-    "xdm:firstQuartiles": {
-      "xdm:value": 1
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
     }
   }
 }
@@ -848,29 +871,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 }
 ```
 
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
-  },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
-    }
-  }
-}
-```
-
 
 # XDM ExperienceEvent Properties
 
@@ -961,12 +961,12 @@ The primary event type for this time-series record.
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
+| `commerce.productListAdds` | Commerce Product List (Cart) Adds |
+| `commerce.productListOpens` | Commerce Product List (Cart) Opens |
+| `commerce.productListRemovals` | Commerce Product List (Cart) Removals |
+| `commerce.productListReopens` | Commerce Product List (Cart) Reopens |
+| `commerce.productListViews` | Commerce Product List (Cart) Views |
+| `commerce.productViews` | Commerce Product (Cart) Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
@@ -979,16 +979,23 @@ The primary event type for this time-series record.
 | `listOperation.removeFromList` | List Operation Remove From List |
 | `listOperation.addToList` | List Operation Add To List |
 | `leadOperation.scoreChanged` | Lead Operation Score Changed |
+| `leadOperation.revenueStageChanged` | Lead Operation Revenue Stage changed |
 | `leadOperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
 | `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
+| `leadOperation.callWebhook` | Lead Operation Call Webhook |
+| `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
+| `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
+| `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |
 | `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
 | `directMarketing.emailOpened` | Direct Marketing Email Opened |
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
+| `directMarketing.emailSent` | Direct Marketing Email Sent |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
 | `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |

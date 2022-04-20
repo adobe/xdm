@@ -21,7 +21,9 @@ Contains JourneyAI Engagement Scores, which provides individual customer's prope
         "https://ns.adobe.com/experience/intelligentServices/journeyAI/openEnagementScore": 0.23,
         "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionLevel": "high",
         "https://ns.adobe.com/experience/intelligentServices/journeyAI/retentionPercentRank": 0.953,
-        "https://ns.adobe.com/experience/intelligentServices/journeyAI/unsubscriptionProbability": 0.002546
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/unsubscriptionProbability": 0.002546,
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/churnReasonCode": "has send no open",
+        "https://ns.adobe.com/experience/intelligentServices/journeyAI/maxSendsInThirtyDays": 15
       },
       "https://ns.adobe.com/experience/intelligentServices/journeyAI/engagementScoresInfo": "v1.3.0_2020-11-04"
     }
@@ -125,6 +127,16 @@ Unknown type `object`.
           "type": "number",
           "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##title##79511",
           "meta:descriptionId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability##description##41"
+        },
+        "https://ns.adobe.com/experience/intelligentServices/churnReasonCode": {
+          "title": "Churn Reason Code",
+          "description": "Churn Reason Code is a qualitative categorization of customer's predicted churn reason.",
+          "type": "string"
+        },
+        "https://ns.adobe.com/experience/intelligentServices/maxSendsInThirtyDays": {
+          "title": "Max Sends In Thirty Days",
+          "description": "Max Sends In Thirty Days is the recommended maximum number of message sends in thrity days to a customer to avoid customer churn.",
+          "type": "number"
         }
       },
       "meta:titleId": "profile-journeyai-engagementscores##https://ns.adobe.com/experience/intelligentServices/emailEngagementScores##title##20341",

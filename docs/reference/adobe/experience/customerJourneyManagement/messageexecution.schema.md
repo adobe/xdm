@@ -27,8 +27,10 @@ Message Execution details for the Adobe CJM ExperienceEvent.
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID": "b9029525-c33a-40f2-a1c1-95f0b8305078",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionNodeID": "6cfe93cc-bb0e-4ec9-a39b-56b53a73d28c",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID": "132fa0e5-7a75-412d-9013-740ae29e9c51",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID": "b3012925-ee14-4412-bfa5-5cc452e99ad3",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID": "743575e7-a954-48b5-98f6-2e3ee8809c80",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID": "b3012925-ee14-4412-bfa5-5cc452e99ad3",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID": "743575e7-a954-48b5-98f6-2e3ee8809c80",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID": "7590e3ec-f4ec-44c4-b8bf-b3f5d710b672",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID": "2a4de0c5-475c-4b67-b616-12d38c6518c1",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType": "marketing"
 }
 ```
@@ -39,6 +41,10 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionajocampaignid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionajocampaignversionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionbatchinstanceid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutioncampaignactionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutioncampaignid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutioncampaignversionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyactionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversionid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionInstanceID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageexecutionjourneyversioninstanceid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Execution Details (this schema) |
@@ -50,7 +56,7 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID
-### AJO Campaign ID
+### AJO Campaign ID (deprecated)
 
  Unique ID of the AJO Campaign that triggered this message execution.
 
@@ -70,7 +76,7 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID
-### AJO Campaign Version ID
+### AJO Campaign Version ID (deprecated)
 
  Version ID of the AJO Campaign that triggered this message execution.
 
@@ -80,6 +86,86 @@ Message Execution details for the Adobe CJM ExperienceEvent.
 * defined in this schema
 
 ### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID
+### Batch Instance ID
+
+GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID
+### Campaign Action ID
+
+Action ID of the Campaign that triggered this message execution.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID
+### Campaign ID
+
+ Unique ID of the Campaign that triggered this message execution.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID Type
+
+
+`string`
+
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID
+### Campaign Version ID
+
+ Version ID of the Campaign that triggered this message execution.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID Type
 
 
 `string`

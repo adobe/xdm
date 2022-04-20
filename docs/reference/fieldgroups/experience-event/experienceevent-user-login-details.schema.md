@@ -63,6 +63,7 @@ Loyalty details, preferences, login processes, and other account preferences.
 | `xdm:accountSwitch`| integer | Optional |
 | `xdm:cookieConsentAccepted`| boolean | Optional |
 | `xdm:cookieConsentViewed`| integer | Optional |
+| `xdm:createProfile`| integer | Optional |
 | `xdm:forgotPassword`| integer | Optional |
 | `xdm:forgotUsername`| integer | Optional |
 | `xdm:login`| integer | Optional |
@@ -133,6 +134,27 @@ Tracked when a visitor views the cookie consent information.
 * type: `integer`
 
 ##### xdm:cookieConsentViewed Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:createProfile
+##### Account Profile Create
+
+Counter event indicating a user has created an account profile.
+
+`xdm:createProfile`
+* is optional
+* type: `integer`
+
+##### xdm:createProfile Type
 
 
 `integer`

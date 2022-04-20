@@ -1,5 +1,5 @@
 
-# Claim Process Schema
+# Warranty Claim Process Schema
 
 ```
 https://ns.adobe.com/xdm/mixins/experienceevent-warranty-claim-details
@@ -9,9 +9,9 @@ Claim details such as claim policy ID and claim creation steps.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-warranty-claim-process.schema.json) |
 
-## Claim Process Example
+## Warranty Claim Process Example
 ```json
 {
   "xdm:warrantyClaim": {
@@ -21,11 +21,11 @@ Claim details such as claim policy ID and claim creation steps.
 }
 ```
 
-# Claim Process Properties
+# Warranty Claim Process Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:warrantyClaim](#xdmwarrantyclaim) | `object` | Optional | Claim Process (this schema) |
+| [xdm:warrantyClaim](#xdmwarrantyclaim) | `object` | Optional | Warranty Claim Process (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:warrantyClaim

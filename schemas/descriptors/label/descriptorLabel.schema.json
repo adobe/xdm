@@ -40,7 +40,7 @@
         },
         "xdm:labels": {
           "title": "Labels",
-          "description": "When present, it allows an array of labels. Values are resources IDs",
+          "description": "When present, it allows an array of labels. Values are DULE labels, scu as coe/C1, custom/myLabel, org/teamOne",
           "type": "array",
           "items": {
             "type": "string",
@@ -49,6 +49,16 @@
           "meta:xdmType": "array",
           "meta:titleId": "descriptorLabel##xdm:labels##title##11301",
           "meta:descriptionId": "descriptorLabel##xdm:labels##description##40961"
+        },
+        "xdm:labelsInPES": {
+          "title": "Labels in PES",
+          "description": "When present, it allows an array of labels to be registered in PES. Values are DULE labels. The values must be a subset of xdm:labels",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string"
+          },
+          "meta:xdmType": "array"
         }
       },
       "required": ["xdm:labels"]

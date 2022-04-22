@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -11,16 +11,16 @@
   "type": "object",
   "meta:extensible": true,
   "meta:intendedToExtend": [],
-  "description": "Schema for communicating row level changes to and from DataSets.",
+  "description": "Schema for communicating row level changes to and from datasets.",
   "definitions": {
     "changeset": {
       "properties": {
         "xdm:changeRequest": {
           "type": "object",
-          "description": "structure to store control data for row-level changes",
+          "description": "Structure to store control data for row-level changes.",
           "properties": {
             "xdm:type": {
-              "description": "value signaling the type of change.",
+              "description": "Value signaling the type of change.",
               "type": "string",
               "enum": ["i", "u", "d", "m", "p"],
               "meta:enum": {
@@ -32,11 +32,11 @@
               }
             },
             "xdm:reason": {
-              "description": "optional value signaling the reason for this change (e.g. GDPR)",
+              "description": "Optional value signaling the reason for this change (e.g. GDPR).",
               "type": "string"
             },
             "xdm:patchBody": {
-              "description": "JSON Patch document to be executed for the current record in the case of Patch type requests",
+              "description": "JSON Patch document to be executed for the current record in the case of Patch type requests.",
               "type": "string"
             }
           }

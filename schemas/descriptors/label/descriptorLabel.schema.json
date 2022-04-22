@@ -20,8 +20,7 @@
       "properties": {
         "@type": {
           "type": "string",
-          "const": "xdm:descriptorLabel",
-          "meta:xdmType": "string"
+          "const": "xdm:descriptorLabel"
         },
         "xdm:excludeProperty": {
           "title": "Exclude Property",
@@ -43,10 +42,8 @@
           "description": "When present, it allows an array of labels. Values are DULE labels, such as coe/C1, custom/myLabel, org/teamOne",
           "type": "array",
           "items": {
-            "type": "string",
-            "meta:xdmType": "string"
+            "type": "string"
           },
-          "meta:xdmType": "array",
           "meta:titleId": "descriptorLabel##xdm:labels##title##11301",
           "meta:descriptionId": "descriptorLabel##xdm:labels##description##40961"
         },
@@ -55,10 +52,8 @@
           "description": "When present, it allows an array of labels to be registered in PES. Values are DULE labels. The values must be a subset of xdm:labels",
           "type": "array",
           "items": {
-            "type": "string",
-            "meta:xdmType": "string"
-          },
-          "meta:xdmType": "array"
+            "type": "string"
+          }
         }
       },
       "required": ["xdm:labels"]

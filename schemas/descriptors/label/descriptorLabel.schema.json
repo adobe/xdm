@@ -40,7 +40,7 @@
         },
         "xdm:labels": {
           "title": "Labels",
-          "description": "When present, it allows an array of labels. Values are DULE labels, scu as coe/C1, custom/myLabel, org/teamOne",
+          "description": "When present, it allows an array of labels. Values are DULE labels, such as coe/C1, custom/myLabel, org/teamOne",
           "type": "array",
           "items": {
             "type": "string",

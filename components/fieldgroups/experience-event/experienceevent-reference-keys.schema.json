@@ -12,9 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "all"
-    ]
+    "industry": ["all"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Add this field group to only Experience Event Class based schemas to add reference keys to build relationships to Other class based schemas.",

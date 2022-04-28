@@ -10,6 +10,7 @@
   "title": "AEP Hygiene Operation Request",
   "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
   "type": "object",
+  "meta:class": "https://ns.adobe.com/experience/aep-hygiene-ops",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:extensible": false,
   "meta:abstract": false,
@@ -31,6 +32,11 @@
         "xdm:targetDatasetId": {
           "title": "Target Dataset ID specified by the user to apply hygiene operations",
           "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+          "type": "string"
+        },
+        "xdm:workorderID": {
+          "title": "Work Order ID for tracking purposes.",
+          "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
           "type": "string"
         },
         "xdm:operation": {

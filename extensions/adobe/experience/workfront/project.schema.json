@@ -1,0 +1,145 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/workfront/project",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Project Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/workfront/object",
+    "https://ns.adobe.com/experience/workfront/changeevent"
+  ],
+  "description": "Project related fields",
+  "definitions": {
+    "wfobject": {
+      "properties": {
+        "workfront:project": {
+          "type": "object",
+          "title": "Project Attributes",
+          "properties": {
+            "workfront:actualCompletionTimestamp": {
+              "title": "Project Actual Completion Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:actualStartTimestamp": {
+              "title": "Project Actual Start Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:budget": {
+              "title": "Project Budget",
+              "description": "",
+              "type": "number"
+            },
+            "workfront:condition": {
+              "title": "Project Condition",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:description": {
+              "title": "Project Description",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:displayOrder": {
+              "title": "Project Display Order",
+              "description": "",
+              "type": "integer"
+            },
+            "workfront:durationMinutes": {
+              "title": "Project Duration Minutes",
+              "description": "",
+              "type": "number"
+            },
+            "workfront:estimatedCompletionTimestamp": {
+              "title": "Project Estimated Completion Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:estimatedStartTimestamp": {
+              "title": "Project Estimated Start Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:groupID": {
+              "title": "Project Group ID",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:milestonePathID": {
+              "title": "Project Milestone Path ID",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:ownerEmployeeID": {
+              "title": "Project Owner Employee ID",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:percentComplete": {
+              "title": "Project Percent Complete",
+              "description": "",
+              "type": "number"
+            },
+            "workfront:plannedCompletionTimestamp": {
+              "title": "Project Planned Completion Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:plannedStartTimestamp": {
+              "title": "Project Planned Start Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:priority": {
+              "title": "Project Priority",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:projectedStartTimestamp": {
+              "title": "Project Projected Start Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            },
+            "workfront:status": {
+              "title": "Project Status",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:teamID": {
+              "title": "Project Team ID",
+              "description": "",
+              "type": "string"
+            },
+            "workfront:projectedCompletionTimestamp": {
+              "title": "Project Projected Completion Timestamp",
+              "description": "",
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/wfobject"
+    }
+  ],
+  "meta:status": "experimental"
+}

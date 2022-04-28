@@ -42,7 +42,7 @@ Destinations Schema.
 | [xdm:connectionSpecID](#xdmconnectionspecid) | `string` | Optional | Destinations (this schema) |
 | [xdm:createTime](#xdmcreatetime) | `string` | Optional | Destinations (this schema) |
 | [xdm:createdByID](#xdmcreatedbyid) | `string` | Optional | Destinations (this schema) |
-| [xdm:destinationCategory](#xdmdestinationcategory) | `enum` | Optional | Destinations (this schema) |
+| [xdm:destinationCategory](#xdmdestinationcategory) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationDescription](#xdmdestinationdescription) | `string` | Optional | Destinations (this schema) |
 | [xdm:destinationFrequency](#xdmdestinationfrequency) | `enum` | Optional | Destinations (this schema) |
 | [xdm:destinationID](#xdmdestinationid) | `string` | Optional | Destinations (this schema) |
@@ -141,22 +141,15 @@ Grouping of the destinations in the catalog depending on the marketing action th
 
 `xdm:destinationCategory`
 * is optional
-* type: `enum`
+* type: `string`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmdestinationcategory-known-values).
+### xdm:destinationCategory Type
 
-### xdm:destinationCategory Known Values
-| Value | Description |
-|-------|-------------|
-| `adobeSolutions` | adobeSolutions |
-| `advertising` | advertising |
-| `cloudStorage` | cloudStorage |
-| `emailMarketing` | emailMarketing |
-| `mobile engagement` | mobile engagement |
-| `personalization` | personalization |
-| `social` | social |
-| `streaming` | streaming |
+
+`string`
+
+
 
 
 

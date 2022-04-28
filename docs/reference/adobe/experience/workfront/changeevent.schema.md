@@ -21,26 +21,15 @@ Data associated with a change event within Workfront project execution
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
-| [workfront:actualCompletionDate](#workfrontactualcompletiondate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:actualStartDate](#workfrontactualstartdate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:assignedToID](#workfrontassignedtoid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:completed](#workfrontcompleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:created](#workfrontcreated) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:customData](#workfrontcustomdata) | `object` | Optional | Workfront Change Event (this schema) |
 | [workfront:deleted](#workfrontdeleted) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:durationMinutes](#workfrontdurationminutes) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:iterationID](#workfrontiterationid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:lastUpdatedByID](#workfrontlastupdatedbyid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectID](#workfrontobjectid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectType](#workfrontobjecttype) | `enum` | Optional | Workfront Change Event (this schema) |
 | [workfront:parentID](#workfrontparentid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:percentComplete](#workfrontpercentcomplete) | `number` | Optional | Workfront Change Event (this schema) |
-| [workfront:plannedStartDate](#workfrontplannedstartdate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:priority](#workfrontpriority) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:remainingMinutes](#workfrontremainingminutes) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:status](#workfrontstatus) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:storyPoints](#workfrontstorypoints) | `number` | Optional | Workfront Change Event (this schema) |
 | [workfront:updated](#workfrontupdated) | `integer` | Optional | Workfront Change Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -61,68 +50,6 @@ A unique identifier for the time-series event.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## workfront:actualCompletionDate
-### Actual Completion
-
-Actual completion date execution
-
-`workfront:actualCompletionDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:actualCompletionDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:actualStartDate
-### Actual Start Date
-
-Actual start date of execution
-
-`workfront:actualStartDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:actualStartDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:assignedToID
-### Assigned To
-
-The ID of the employee or person this object type is assigned to
-
-`workfront:assignedToID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:assignedToID Type
-
-
-`string`
 
 
 
@@ -169,6 +96,30 @@ Set to 1 if this was a created event
 
 
 
+## workfront:customData
+### Custom Form Fields
+
+Custom form data in the form of key/value pairs
+
+`workfront:customData`
+* is optional
+* type: `object`
+* defined in this schema
+
+### workfront:customData Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
 ## workfront:deleted
 ### Deleted
 
@@ -183,66 +134,6 @@ Set to 1 if this was a deleted event
 
 
 `integer`
-
-
-
-
-
-
-## workfront:durationMinutes
-### Duration Minutes
-
-Number of minutes spent
-
-`workfront:durationMinutes`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:durationMinutes Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:iterationID
-### Iteration ID
-
-Iteration/Sprint this task was associated with
-
-`workfront:iterationID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:iterationID Type
-
-
-`string`
-
-
-
-
-
-
-## workfront:lastUpdatedByID
-### Updated By
-
-The ID of the user who made the last update
-
-`workfront:lastUpdatedByID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:lastUpdatedByID Type
-
-
-`string`
 
 
 
@@ -351,127 +242,6 @@ String value representing the type of parent - PROJECT, TASK, etc.
 
 
 
-## workfront:percentComplete
-### Percent Complete
-
-Current percentage complete
-
-`workfront:percentComplete`
-* is optional
-* type: `number`
-* defined in this schema
-
-### workfront:percentComplete Type
-
-
-`number`
-
-
-
-
-
-
-## workfront:plannedStartDate
-### Planned Start Date
-
-Planned start date of execution
-
-`workfront:plannedStartDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:plannedStartDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:priority
-### Priority
-
-Current priority of this object
-
-`workfront:priority`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:priority Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:remainingMinutes
-### Remaining Minutes
-
-Remaining minutes expected
-
-`workfront:remainingMinutes`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:remainingMinutes Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:status
-### Status
-
-Current Status
-
-`workfront:status`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:status Type
-
-
-`string`
-
-
-
-
-
-
-## workfront:storyPoints
-### Story Points
-
-Story points assigned to this object
-
-`workfront:storyPoints`
-* is optional
-* type: `number`
-* defined in this schema
-
-### workfront:storyPoints Type
-
-
-`number`
-
-
-
-
-
-
 ## workfront:updated
 ### Updated
 
@@ -528,16 +298,17 @@ The primary event type for this time-series record.
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
+| `commerce.productListAdds` | Commerce Product List (Cart) Adds |
+| `commerce.productListOpens` | Commerce Product List (Cart) Opens |
+| `commerce.productListRemovals` | Commerce Product List (Cart) Removals |
+| `commerce.productListReopens` | Commerce Product List (Cart) Reopens |
+| `commerce.productListViews` | Commerce Product List (Cart) Views |
+| `commerce.productViews` | Commerce Product (Cart) Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
 | `decisioning.propositionInteract` | Decisioning Proposition Interact |
+| `decisioning.propositionDeliver` | Decisioning Proposition Deliver |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -555,6 +326,7 @@ The primary event type for this time-series record.
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
 | `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
 | `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

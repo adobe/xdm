@@ -114,6 +114,11 @@
                     "required": [
                         "meta:enum"
                     ]
+                },
+                {
+                    "required": [
+                        "xdm:excludeMetaEnum"
+                    ]
                 }
             ],
             "required": [

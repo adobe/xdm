@@ -746,29 +746,6 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123459",
-  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
-  "xdm:identityMap": {
-    "ECID": [
-      {
-        "xdm:id": "92312743856228"
-      }
-    ]
-  },
-  "xdm:eventType": "pushTracking.customAction",
-  "xdm:pushNotificationTracking": {
-    "xdm:pushProvider": "apns",
-    "xdm:pushProviderMessageID": "unique msgID from ios",
-    "xdm:customAction": {
-      "xdm:actionID": "GAME_INVITATION",
-      "xdm:value": 500
-    }
-  }
-}
-```
-
-```json
-{
-  "@id": "https://data.adobe.io/experienceid-123459",
   "xdm:timestamp": "2017-09-26T15:52:25+00:00",
   "xdm:identityMap": {
     "https://data.adobe.io/entities/namespace/4": [
@@ -871,6 +848,29 @@ An ExperienceEvent is a fact record of what occurred, including the point in tim
 }
 ```
 
+```json
+{
+  "@id": "https://data.adobe.io/experienceid-123459",
+  "xdm:timestamp": "2020-09-21T15:52:25+00:00",
+  "xdm:identityMap": {
+    "ECID": [
+      {
+        "xdm:id": "92312743856228"
+      }
+    ]
+  },
+  "xdm:eventType": "pushTracking.customAction",
+  "xdm:pushNotificationTracking": {
+    "xdm:pushProvider": "apns",
+    "xdm:pushProviderMessageID": "unique msgID from ios",
+    "xdm:customAction": {
+      "xdm:actionID": "GAME_INVITATION",
+      "xdm:value": 500
+    }
+  }
+}
+```
+
 
 # XDM ExperienceEvent Properties
 
@@ -961,16 +961,17 @@ The primary event type for this time-series record.
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
+| `commerce.productListAdds` | Commerce Product List (Cart) Adds |
+| `commerce.productListOpens` | Commerce Product List (Cart) Opens |
+| `commerce.productListRemovals` | Commerce Product List (Cart) Removals |
+| `commerce.productListReopens` | Commerce Product List (Cart) Reopens |
+| `commerce.productListViews` | Commerce Product List (Cart) Views |
+| `commerce.productViews` | Commerce Product (Cart) Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
 | `decisioning.propositionInteract` | Decisioning Proposition Interact |
+| `decisioning.propositionDeliver` | Decisioning Proposition Deliver |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -988,6 +989,7 @@ The primary event type for this time-series record.
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
 | `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
 | `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |

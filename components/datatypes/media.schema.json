@@ -850,7 +850,7 @@
               "type": "string",
               "description": "Name of the audio content publisher."
             },
-             "xdm:playhead": {
+            "xdm:playhead": {
               "title": "Player time playhead",
               "type": "number",
               "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length. The value can be a floating point number."

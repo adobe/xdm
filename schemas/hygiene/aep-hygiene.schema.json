@@ -19,7 +19,7 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
-    }
+    },
     {
       "$ref": "#/definitions/aep-hygiene"
     }

@@ -5,12 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/aep-hygiene-ops",
+  "$id": "https://ns.adobe.com/xdm/mixins/aep-hygiene-ops",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AEP Hygiene Operation Request",
   "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
   "type": "object",
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "meta:extensible": false,
   "meta:abstract": false,
   "definitions": {
@@ -90,7 +89,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "https://ns.adobe.com/xdm/classes/aep-hygiene"
     },
     {
       "$ref": "#/definitions/hygieneOps"

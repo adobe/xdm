@@ -22,21 +22,16 @@
             "xdm:type": {
               "description": "Value signaling the type of change.",
               "type": "string",
-              "enum": ["i", "u", "d", "m", "p"],
+              "enum": ["i", "u", "d", "m"],
               "meta:enum": {
                 "i": "insert",
                 "u": "update",
                 "d": "delete",
-                "m": "modify",
-                "p": "patch"
+                "m": "merge"
               }
             },
             "xdm:reason": {
               "description": "Optional value signaling the reason for this change (e.g. GDPR).",
-              "type": "string"
-            },
-            "xdm:patchBody": {
-              "description": "JSON Patch document to be executed for the current record in the case of Patch type requests.",
               "type": "string"
             }
           }

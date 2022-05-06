@@ -5,11 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/common/changeset",
+  "$id": "https://ns.adobe.com/xdm/mixins/changeset",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Change Set",
   "type": "object",
   "meta:extensible": true,
+  "meta:abstract": true,
   "meta:intendedToExtend": [],
   "description": "Schema for communicating row level changes to and from datasets.",
   "definitions": {
@@ -17,9 +18,11 @@
       "properties": {
         "xdm:changeRequest": {
           "type": "object",
+          "title": "Change Request",
           "description": "Structure to store control data for row-level changes.",
           "properties": {
             "xdm:type": {
+              "title": "Change Request Type",
               "description": "Value signaling the type of change.",
               "type": "string",
               "enum": ["i", "u", "d", "m"],
@@ -31,6 +34,7 @@
               }
             },
             "xdm:reason": {
+              "title": "Change Request Reason",
               "description": "Optional value signaling the reason for this change (e.g. GDPR).",
               "type": "string"
             }
@@ -40,9 +44,6 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/changeset"
     }

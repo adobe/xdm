@@ -32,6 +32,11 @@
           "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
           "type": "string"
         },
+        "xdm:workorderID": { 
+          "title": "Work Order ID for tracking purposes.",
+          "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
+          "type": "string" 
+        },
         "xdm:operation": {
           "title": "Payload of the hygiene op request",
           "description": "Contents of this payload provides identities to delete, or records to update",

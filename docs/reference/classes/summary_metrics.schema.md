@@ -22,17 +22,6 @@ A Summary Metric record provides pre-summarized metrics with grouping dimensions
 ```json
 {
   "xdm:timestamp": "2022-01-01T00:00:00+00:00",
-  "xdm:commerce": {
-    "xdm:purchases": {
-      "xdm:value": 2500
-    }
-  }
-}
-```
-
-```json
-{
-  "xdm:timestamp": "2022-01-01T00:00:00+00:00",
   "xdm:placeContext": {
     "xdm:geo": {
       "xdm:stateProvince": "TX",
@@ -42,6 +31,17 @@ A Summary Metric record provides pre-summarized metrics with grouping dimensions
   "xdm:commerce": {
     "xdm:purchases": {
       "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
+  "xdm:timestamp": "2022-01-01T00:00:00+00:00",
+  "xdm:commerce": {
+    "xdm:purchases": {
+      "xdm:value": 2500
     }
   }
 }
@@ -156,6 +156,25 @@ The primary event type for this time-series record.
 | `inappmessageTracking.dismiss` | inapp message was dimissed |
 | `inappmessageTracking.display` | inapp message was displayed |
 | `inappmessageTracking.interact` | inapp message was interacted with |
+| `media.ping` | Media ping |
+| `media.sessionStart` | Media sessionStart |
+| `media.play` | Media play |
+| `media.bufferStart` | Media bufferStart |
+| `media.pauseStart` | Media pauseStart |
+| `media.chapterStart` | Media chapterStart |
+| `media.chapterSkip` | Media chapterSkip |
+| `media.chapterComplete` | Media chapterComplete |
+| `media.adStart` | Media adStart |
+| `media.adSkip` | Media adSkip |
+| `media.adComplete` | Media adComplete |
+| `media.adBreakStart` | Media adBreakStart |
+| `media.adBreakComplete` | Media adBreakComplete |
+| `media.bitrateChange` | Media bitrateChange |
+| `media.error` | Media error |
+| `media.sessionComplete` | Media sessionComplete |
+| `media.sessionEnd` | Media sessionEnd |
+| `media.stateStart` | Media stateStart |
+| `media.stateEnd` | Media stateEnd |
 
 
 

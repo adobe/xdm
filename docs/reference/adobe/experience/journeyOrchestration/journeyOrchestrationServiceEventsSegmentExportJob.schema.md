@@ -17,12 +17,9 @@ This event is in relation with journey and Segment Export Job service event fiel
 {
   "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "finished",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": 12000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": 12000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": 2000000,
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_INSTANCE_DUPLICATION"
   }
 }
 ```
@@ -42,9 +39,12 @@ This event is in relation with journey and Segment Export Job service event fiel
 {
   "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob": {
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID": "12ae3-abe2c-12214-667ab",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status": "finished",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID": "12ae3-abe2c-12214-667ab-aa123",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_INSTANCE_DUPLICATION"
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal": 12000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized": 12000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed": 2000000,
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "info"
   }
 }
 ```

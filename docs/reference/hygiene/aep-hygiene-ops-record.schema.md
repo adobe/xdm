@@ -2,7 +2,7 @@
 # AEP Hygiene Operation Request Schema
 
 ```
-https://ns.adobe.com/experience/aep-hygiene-ops
+https://ns.adobe.com/xdm/schemas/aep-hygiene-ops
 ```
 
 AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.
@@ -12,8 +12,8 @@ AEP Data Hygiene operations that instruct AEP to delete or modify records in a s
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [hygiene/aep-hygiene-ops-record.schema.json](hygiene/aep-hygiene-ops-record.schema.json) |
 ## Schema Hierarchy
 
-* AEP Hygiene Operation Request `https://ns.adobe.com/experience/aep-hygiene-ops`
-  * [Record Schema](../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
+* AEP Hygiene Operation Request `https://ns.adobe.com/xdm/schemas/aep-hygiene-ops`
+  * [AEP Hygiene](aep-hygiene.schema.md) `https://ns.adobe.com/xdm/classes/aep-hygiene`
 
 
 ## AEP Hygiene Operation Request Examples
@@ -68,33 +68,12 @@ AEP Data Hygiene operations that instruct AEP to delete or modify records in a s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Record Schema](../behaviors/record.schema.md#id) |
 | [xdm:action](#xdmaction) | `enum` | Optional | AEP Hygiene Operation Request (this schema) |
 | [xdm:batchTime](#xdmbatchtime) | `string` | Optional | AEP Hygiene Operation Request (this schema) |
 | [xdm:operation](#xdmoperation) | `object` | Optional | AEP Hygiene Operation Request (this schema) |
 | [xdm:targetDatasetID](#xdmtargetdatasetid) | `string` | Optional | AEP Hygiene Operation Request (this schema) |
+| [xdm:workorderID](#xdmworkorderid) | `string` | Optional | AEP Hygiene Operation Request (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## @id
-### Identifier
-
-A unique identifier for the record.
-
-`@id`
-* is optional
-* type: `string`
-* defined in [Record Schema](../behaviors/record.schema.md#id)
-
-### @id Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
 
 ## xdm:action
 ### Name of the hygiene operation to be applied by downstream consumers
@@ -266,6 +245,26 @@ May be "*", but only if operationType = "deleteIdentity". Otherwise a valid valu
 * defined in this schema
 
 ### xdm:targetDatasetID Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:workorderID
+### Work Order ID for tracking purposes.
+
+Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.
+
+`xdm:workorderID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:workorderID Type
 
 
 `string`

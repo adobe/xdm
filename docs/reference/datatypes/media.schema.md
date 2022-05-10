@@ -52,7 +52,7 @@ Media context information for content related interactions.
     "xdm:primaryAssetViewDetails": {
       "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
       "xdm:playerName": "watchmytv",
-      "xdm:videoSegment": "3-10",
+      "xdm:videoSegment": "[3-10]",
       "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
       "xdm:broadcastChannel": "WatchMyTV",
       "xdm:broadcastContentType": "VOD",
@@ -866,7 +866,7 @@ Unknown type `object`.
     "xdm:videoSegment": {
       "title": "Video segment",
       "type": "string",
-      "pattern": "^[0-9]+-[0-9]+$",
+      "pattern": "^[[0-9]+-[0-9]+]$",
       "description": "The interval that describes the part of the content that has been viewed in minutes.",
       "meta:titleId": "media##xdm:videoSegment##title##29671",
       "meta:descriptionId": "media##xdm:videoSegment##description##80611"

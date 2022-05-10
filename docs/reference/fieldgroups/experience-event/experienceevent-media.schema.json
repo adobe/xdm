@@ -209,7 +209,8 @@
                     },
                     "xdm:idp": "MyTVOnline",
                     "xdm:mediaAuth": "Sample auth",
-                    "xdm:dayPart": "daytime"
+                    "xdm:dayPart": "daytime",
+                    "xdm:playhead": 831
                 }
             }
         }

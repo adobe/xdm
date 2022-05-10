@@ -53,7 +53,7 @@ Track interactions with media such as progress (how much was consumed), total ti
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
         "xdm:playerName": "watchsportcnl",
-        "xdm:videoSegment": "3-10",
+        "xdm:videoSegment": "[3-10]",
         "xdm:path": "id:arg:ep:npqr.com:dfb21354-4ce7",
         "xdm:broadcastChannel": "WatchSportCnl",
         "xdm:broadcastContentType": "VOD",
@@ -182,7 +182,8 @@ Track interactions with media such as progress (how much was consumed), total ti
       },
       "xdm:idp": "MyTVOnline",
       "xdm:mediaAuth": "Sample auth",
-      "xdm:dayPart": "daytime"
+      "xdm:dayPart": "daytime",
+      "xdm:playhead": 831
     }
   }
 }

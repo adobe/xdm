@@ -866,10 +866,16 @@
                             "title": "Audio content publisher",
                             "type": "string",
                             "description": "Name of the audio content publisher."
+                        },
+                        "xdm:playhead": {
+                            "title": "Player time playhead",
+                            "type": "integer",
+                            "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
                         }
                     },
                     "required": [
-                        "xdm:primaryAssetReference"
+                        "xdm:primaryAssetReference",
+                        "xdm:playhead"
                     ],
                     "meta:titleId": "media##xdm:mediaTimed##title##78891",
                     "meta:descriptionId": "media##xdm:mediaTimed##description##36241"
@@ -962,7 +968,8 @@
                     "xdm:federated": {
                         "xdm:value": 0
                     }
-                }
+                },
+                "xdm:playhead": 831
             }
         }
     ]

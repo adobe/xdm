@@ -182,7 +182,8 @@ Track interactions with media such as progress (how much was consumed), total ti
       },
       "xdm:idp": "MyTVOnline",
       "xdm:mediaAuth": "Sample auth",
-      "xdm:dayPart": "daytime"
+      "xdm:dayPart": "daytime",
+      "xdm:playhead": 831
     }
   }
 }

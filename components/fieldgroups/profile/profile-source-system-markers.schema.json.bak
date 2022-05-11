@@ -37,7 +37,9 @@
           "description": "Record source."
         }
       },
-      "required": ["xdm:sourceSystemName"]
+      "required": [
+        "xdm:sourceSystemName"
+      ]
     }
   },
   "allOf": [

@@ -120,59 +120,64 @@
     },
     "user-agent-client-hints": {
       "properties": {
-        "xdm:brands": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "description": "User-agent associated commercial name with significant versions.",
-            "properties": {
-              "xdm:brand": {
-                "title": "Brand",
-                "type": "string",
-                "description": "The user-agent's commercial name (e.g., cURL, Edge)."
-              },
-              "xdm:version": {
-                "title": "Significant version",
-                "type": "string",
-                "description": "The marketing version which includes distinguishable web-exposed features (e.g., 72, 3, or 12.1), corresponding to the user-agent."
+        "xdm:userAgentClientHints": {
+          "type": "object",
+          "properties": {
+            "xdm:brands": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "description": "User-agent associated commercial name with significant versions.",
+                "properties": {
+                  "xdm:brand": {
+                    "title": "Brand",
+                    "type": "string",
+                    "description": "The user-agent's commercial name (e.g., cURL, Edge)."
+                  },
+                  "xdm:version": {
+                    "title": "Significant version",
+                    "type": "string",
+                    "description": "The marketing version which includes distinguishable web-exposed features (e.g., 72, 3, or 12.1), corresponding to the user-agent."
+                  }
+                }
               }
+            },
+            "xdm:mobile": {
+              "title": "Mobileness",
+              "type": "boolean",
+              "description": "A boolean indicating if the user agent's device is a mobile device."
+            },
+            "xdm:architecture": {
+              "title": "Platform architecture",
+              "type": "string",
+              "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86)."
+            },
+            "xdm:bitness": {
+              "title": "Platform bitness",
+              "type": "string",
+              "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64)."
+            },
+            "xdm:model": {
+              "title": "Model",
+              "type": "string",
+              "description": "The user agent's device model  (e.g., Pixel 2 XL)."
+            },
+            "xdm:platform": {
+              "title": "Platform",
+              "type": "string",
+              "description": "The user agent's operating system's commercial name."
+            },
+            "xdm:platformVersion": {
+              "title": "Platform version",
+              "type": "string",
+              "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G)."
+            },
+            "xdm:wow64": {
+              "title": "WoW64-ness",
+              "type": "boolean",
+              "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows."
             }
           }
-        },
-        "xdm:mobile": {
-          "title": "Mobileness",
-          "type": "boolean",
-          "description": "A boolean indicating if the user agent's device is a mobile device."
-        },
-        "xdm:architecture": {
-          "title": "Platform architecture",
-          "type": "string",
-          "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86)."
-        },
-        "xdm:bitness": {
-          "title": "Platform bitness",
-          "type": "string",
-          "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64)."
-        },
-        "xdm:model": {
-          "title": "Model",
-          "type": "string",
-          "description": "The user agent's device model  (e.g., Pixel 2 XL)."
-        },
-        "xdm:platform": {
-          "title": "Platform",
-          "type": "string",
-          "description": "The user agent's operating system's commercial name."
-        },
-        "xdm:platformVersion": {
-          "title": "Platform version",
-          "type": "string",
-          "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G)."
-        },
-        "xdm:wow64": {
-          "title": "WoW64-ness",
-          "type": "boolean",
-          "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows."
         }
       }
     }

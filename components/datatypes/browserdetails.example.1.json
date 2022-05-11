@@ -10,7 +10,7 @@
   "xdm:javaVersion": "Java SE 8",
   "xdm:viewportHeight": 900,
   "xdm:viewportWidth": 1680,
-  "xdm:user-agent-client-hints": {
+  "xdm:userAgentClientHints": {
     "xdm:brands": [
       {
         "xdm:brand": "Google Chrome",
@@ -19,7 +19,7 @@
       {
         "xdm:brand": "Chromium",
         "xdm:version": "100"
-      }            
+      }
     ],
     "xdm:mobile": false,
     "xdm:architecture": "x86",

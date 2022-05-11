@@ -20,6 +20,11 @@
           "type": "object",
           "title": "Email responses",
           "properties": {
+            "xdm:isEmailBounced": {
+              "title": "Email Bounced Indicator",
+              "type": "boolean",
+              "description": "Email bounced Indicator."
+            },
             "xdm:emailBouncedDate": {
               "title": "Email Bounced Date",
               "type": "string",

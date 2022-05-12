@@ -242,7 +242,7 @@
                                 "xdm:videoSegment": {
                                     "title": "Video segment",
                                     "type": "string",
-                                    "pattern": "^[0-9]+-[0-9]+$",
+                                    "pattern": "^[[0-9]+-[0-9]+]$",
                                     "description": "The interval that describes the part of the content that has been viewed in minutes.",
                                     "meta:titleId": "media##xdm:videoSegment##title##29671",
                                     "meta:descriptionId": "media##xdm:videoSegment##description##80611"
@@ -866,10 +866,16 @@
                             "title": "Audio content publisher",
                             "type": "string",
                             "description": "Name of the audio content publisher."
+                        },
+                        "xdm:playhead": {
+                            "title": "Player time playhead",
+                            "type": "integer",
+                            "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
                         }
                     },
                     "required": [
-                        "xdm:primaryAssetReference"
+                        "xdm:primaryAssetReference",
+                        "xdm:playhead"
                     ],
                     "meta:titleId": "media##xdm:mediaTimed##title##78891",
                     "meta:descriptionId": "media##xdm:mediaTimed##description##36241"
@@ -925,7 +931,7 @@
                 "xdm:primaryAssetViewDetails": {
                     "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
                     "xdm:playerName": "watchmytv",
-                    "xdm:videoSegment": "3-10",
+                    "xdm:videoSegment": "[3-10]",
                     "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
                     "xdm:broadcastChannel": "WatchMyTV",
                     "xdm:broadcastContentType": "VOD",
@@ -962,7 +968,8 @@
                     "xdm:federated": {
                         "xdm:value": 0
                     }
-                }
+                },
+                "xdm:playhead": 831
             }
         }
     ]

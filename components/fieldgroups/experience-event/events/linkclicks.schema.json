@@ -33,8 +33,7 @@
                 "xdm:linkID": {
                   "title": "Link ID (deprecated)",
                   "type": "string",
-                  "description": "Unique ID of the link clicked.",
-                  "meta:status": "deprecated",
+                  "description": "Link ID is going to depreciate soon. Please use Web Interaction Key.",
                   "meta:titleId": "linkclicks##xdm:linkID##title##65641",
                   "meta:descriptionId": "linkclicks##xdm:linkID##description##70231"
                 },

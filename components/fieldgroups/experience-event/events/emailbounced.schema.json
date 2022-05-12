@@ -28,8 +28,7 @@
             "xdm:mailingID": {
               "title": "Mailing ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the email asset.",
-              "meta:status": "deprecated",
+              "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
               "meta:titleId": "emailbounced##xdm:mailingID##title##69611",
               "meta:descriptionId": "emailbounced##xdm:mailingID##description##27341"
             },

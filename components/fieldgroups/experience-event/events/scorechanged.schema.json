@@ -30,10 +30,9 @@
               "type": "object",
               "properties": {
                 "xdm:scoreAttributeID": {
-                  "title": "Score Atribute ID (deprecated)",
+                  "title": "Score Attribute ID (deprecated)",
                   "type": "string",
-                  "description": "Unique ID of the lead score attribute.",
-                  "meta:status": "deprecated",
+                  "description": "Score Attribute ID is going to depreciate soon. Please use  Score Attribute Key.",
                   "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
                   "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521"
                 },
@@ -43,7 +42,7 @@
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 },
                 "xdm:scoreAttributeName": {
-                  "title": "Score Atribute Name",
+                  "title": "Score Attribute Name",
                   "type": "string",
                   "description": "Friendly name of the lead score attribute.",
                   "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",

@@ -26,15 +26,14 @@
           "type": "object",
           "properties": {
             "xdm:mailingID": {
-              "title": "Mailing ID",
+              "title": "Mailing ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the email asset.",
-              "meta:status": "deprecated",
+              "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
               "meta:titleId": "emailclicked##xdm:mailingID##title##16031",
               "meta:descriptionId": "emailclicked##xdm:mailingID##description##71861"
             },
             "xdm:mailingKey": {
-              "title": "Mailing ID",
+              "title": "Mailing Key",
               "description": "Unique key of the email asset.",
               "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
             },
@@ -65,6 +64,11 @@
               "description": "Friendly name of the test variant of the email asset.",
               "meta:titleId": "emailclicked##xdm:testVariantName##title##57581",
               "meta:descriptionId": "emailclicked##xdm:testVariantName##description##31951"
+            },
+            "xdm:automationRunID": {
+              "title": "Automation Run ID",
+              "type": "string",
+              "description": "Automation Run ID"
             }
           },
           "meta:titleId": "emailclicked##xdm:directMarketing##title##9041"

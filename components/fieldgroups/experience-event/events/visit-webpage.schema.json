@@ -33,13 +33,12 @@
                 "xdm:webPageID": {
                   "title": "Web Page ID (deprecated)",
                   "type": "string",
-                  "description": "Unique ID of the web page.",
-                  "meta:status": "deprecated",
+                  "description": "Web Page ID is going to depreciate soon. Please use Web Page Key.",
                   "meta:titleId": "visit-webpage##xdm:webPageID##title##4791",
                   "meta:descriptionId": "visit-webpage##xdm:webPageID##description##18061"
                 },
                 "xdm:webPageKey": {
-                  "title": "WebPage Key",
+                  "title": "Web Page Key",
                   "description": "Unique key of the web page.",
                   "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
                 },

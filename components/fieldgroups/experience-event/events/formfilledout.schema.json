@@ -33,8 +33,7 @@
                 "xdm:webFormID": {
                   "title": "Web Form ID (deprecated)",
                   "type": "string",
-                  "description": "Unique ID of the form.",
-                  "meta:status": "deprecated",
+                  "description": "Web Form ID is going to depreciate soon. Please use  Web Form Key.",
                   "meta:titleId": "formfilledout##xdm:webFormID##title##36241",
                   "meta:descriptionId": "formfilledout##xdm:webFormID##description##30331"
                 },

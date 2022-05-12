@@ -35,7 +35,7 @@
     "xdm:primaryAssetViewDetails": {
       "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
       "xdm:playerName": "watchmytv",
-      "xdm:videoSegment": "3-10",
+      "xdm:videoSegment": "[3-10]",
       "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
       "xdm:broadcastChannel": "WatchMyTV",
       "xdm:broadcastContentType": "VOD",
@@ -72,6 +72,7 @@
       "xdm:federated": {
         "xdm:value": 0
       }
-    }
+    },
+    "xdm:playhead": 831
   }
 }

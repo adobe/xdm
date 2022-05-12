@@ -22,9 +22,11 @@ Base work related object
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../../behaviors/record.schema.md#id) |
+| [workfront:customData](#workfrontcustomdata) | `object` | Optional | Work Object (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Work Object (this schema) |
 | [workfront:objectType](#workfrontobjecttype) | `string` | Optional | Work Object (this schema) |
 | [workfront:parentID](#workfrontparentid) | `string` | Optional | Work Object (this schema) |
+| [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Work Object (this schema) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -43,6 +45,30 @@ A unique identifier for the record.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
+
+
+
+
+
+
+## workfront:customData
+### Custom Form Fields
+
+Custom form data in the form of key/value pairs
+
+`workfront:customData`
+* is optional
+* type: `object`
+* defined in this schema
+
+### workfront:customData Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
 
 
 
@@ -100,6 +126,26 @@ The @id of a parent object if it exists
 * defined in this schema
 
 ### workfront:parentID Type
+
+
+`string`
+
+
+
+
+
+
+## workfront:parentObjectType
+### Parent Object Type
+
+String value representing the type of parent - PROJECT, TASK, etc.
+
+`workfront:parentObjectType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:parentObjectType Type
 
 
 `string`

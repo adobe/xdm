@@ -47,6 +47,7 @@ XDM Business Account Person Relation is a standard Experience Data Model (XDM) c
 | [xdm:personRoles](#xdmpersonroles) | `string[]` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationEndDate](#xdmrelationenddate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | [xdm:relationStartDate](#xdmrelationstartdate) | `string` | Optional | XDM Business Account Person Relation (this schema) |
+| [xdm:relationshipSource](#xdmrelationshipsource) | `string` | Optional | XDM Business Account Person Relation (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## @id
@@ -404,6 +405,26 @@ The date when the relationship between the account and the person started.
 
 `string`
 * format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## xdm:relationshipSource
+### Relationship Source
+
+Source of Account Person relation.
+
+`xdm:relationshipSource`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:relationshipSource Type
+
+
+`string`
 
 
 

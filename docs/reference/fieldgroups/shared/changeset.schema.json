@@ -1,0 +1,65 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/changeset",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Change Set",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [],
+    "description": "Schema for communicating row level changes to and from datasets.",
+    "definitions": {
+        "changeset": {
+            "properties": {
+                "xdm:changeRequest": {
+                    "type": "object",
+                    "title": "Change Request",
+                    "description": "Structure to store control data for row-level changes.",
+                    "properties": {
+                        "xdm:type": {
+                            "title": "Change Request Type",
+                            "description": "Value signaling the type of change.",
+                            "type": "string",
+                            "enum": [
+                                "i",
+                                "u",
+                                "d",
+                                "m"
+                            ],
+                            "meta:enum": {
+                                "i": "insert",
+                                "u": "update",
+                                "d": "delete",
+                                "m": "merge"
+                            }
+                        },
+                        "xdm:reason": {
+                            "title": "Change Request Reason",
+                            "description": "Optional value signaling the reason for this change (e.g. GDPR).",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/changeset"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:changeRequest": {
+                "xdm:type": "i",
+                "xdm:reason": "GDPR"
+            }
+        }
+    ]
+}

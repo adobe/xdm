@@ -1,7 +1,7 @@
 {
   "xdm:name": "Chrome",
   "xdm:vendor": "Google",
-  "xdm:version": "63.0.3239",
+  "xdm:version": "100.0.4896.127",
   "xdm:acceptLanguage": "en",
   "xdm:cookiesEnabled": true,
   "xdm:javaScriptEnabled": true,
@@ -9,5 +9,24 @@
   "xdm:javaEnabled": true,
   "xdm:javaVersion": "Java SE 8",
   "xdm:viewportHeight": 900,
-  "xdm:viewportWidth": 1680
+  "xdm:viewportWidth": 1680,
+  "xdm:userAgentClientHints": {
+    "xdm:brands": [
+      {
+        "xdm:brand": "Google Chrome",
+        "xdm:version": "100"
+      },
+      {
+        "xdm:brand": "Chromium",
+        "xdm:version": "100"
+      }
+    ],
+    "xdm:mobile": false,
+    "xdm:architecture": "x86",
+    "xdm:bitness": "64",
+    "xdm:model": "",
+    "xdm:platform": "Windows",
+    "xdm:platformVersion": "14.0.0",
+    "xdm:wow64": false
+  }
 }

@@ -43,6 +43,12 @@
             "workfront:actualDurMinutes": {
               "title": "OpTask Actual Duration Minutes",
               "description": "",
+              "type": "number",
+              "meta:status": "deprecated"
+            },
+            "workfront:actualDurationMinutes": {
+              "title": "OpTask Actual Duration Minutes",
+              "description": "",
               "type": "number"
             },
             "workfront:assignedToEmployeeID": {

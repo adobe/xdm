@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "Health Care"
-    ]
+    "industry": ["Health Care"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
   "definitions": {
     "patient-details": {
@@ -39,12 +35,7 @@
             "xdm:addressType": {
               "Title": "Member Address type",
               "type": "String",
-              "enum": [
-                "Home",
-                "Work",
-                "Mailing",
-                "Other"
-              ],
+              "enum": ["Home", "Work", "Mailing", "Other"],
               "meta:enum": {
                 "Home": "Home Address",
                 "Work": "Work Address",

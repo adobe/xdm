@@ -17,13 +17,13 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
   "definitions": {
-    "patient-details": {
+    "member-details": {
       "properties": {
         "xdm:member": {
-          "type": "Object",
+          "type": "object",
           "xdm:ID": {
             "Title": "Member ID",
-            "type": "String",
+            "type": "string",
             "description": "Unique Identifier of the patient/member."
           },
           "xdm:name": {
@@ -31,10 +31,10 @@
             "$ref": "https://ns.adobe.com/xdm/context/person-name"
           },
           "xdm:memberAddress": {
-            "type": "Object",
+            "type": "object",
             "xdm:addressType": {
               "Title": "Member Address type",
-              "type": "String",
+              "type": "string",
               "enum": ["Home", "Work", "Mailing", "Other"],
               "meta:enum": {
                 "Home": "Home Address",
@@ -49,13 +49,13 @@
             },
             "xdm:effectiveStartDate": {
               "Title": "Effective Start Date",
-              "type": "String",
+              "type": "string",
               "format": "date-time",
               "description": "Address start date."
             },
             "xdm:efectiveEndDate": {
               "Title": "Effective End Date",
-              "type": "String",
+              "type": "string",
               "format": "date-time",
               "description": "Address end date."
             }
@@ -79,26 +79,26 @@
           }
         },
         "xdm:primaryCarePhysician ": {
-          "type": "Object",
+          "type": "object",
           "xdm:ID ": {
             "Title": "ID",
-            "type": "String",
+            "type": "string",
             "description": "Primary Care Physician unique identifier."
           },
           "xdm:name": {
             "Title": "Primary Care Physician Name",
-            "type": "String",
+            "type": "string",
             "description": "Primary Care Physician Name."
           },
           "xdm:startDate": {
             "Title": "Start Date",
-            "type": "String",
+            "type": "string",
             "format": "date-time",
             "description": "Primary Care Physician start date."
           },
           "xdm:endDate": {
             "Title": "End Date",
-            "type": "String",
+            "type": "string",
             "format": "date-time",
             "description": "Primary Care Physician end date."
           }
@@ -106,30 +106,30 @@
         "xdm:emergencyContact": {
           "xdm:name": {
             "Title": "Emergency Contact Name",
-            "type": "String",
+            "type": "string",
             "description": "Emergency contact name."
           },
           "xdm:contactPhone": {
             "Title": "Emergency Contact Phone",
-            "type": "String",
+            "type": "string",
             "description": "Emergency contact phone number."
           }
         },
         "xdm:prefferedAvaiability": {
           "Title": "Preffered Availability",
-          "type": "String",
+          "type": "string",
           "description": "Patient prefered day and time avaiability for an appointment."
         },
         "xdm:Medication": {
-          "type": "Object",
+          "type": "object",
           "xdm:medicationID": {
             "Title": "Medication Id",
-            "type": "String",
+            "type": "string",
             "description": "Medication unique identifier."
           },
           "xdm:medicationDate": {
             "Title": "Medication Date",
-            "type": "String",
+            "type": "string",
             "format": "date-time",
             "description": "Medication Date."
           },
@@ -141,34 +141,34 @@
         },
         "xdm:beneficiaryRelationship": {
           "Title": "Beneficiary Relationship",
-          "type": "String",
+          "type": "string",
           "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc)."
         },
         "xdm:primaryMemeberID": {
           "Title": "Primary Member ID",
-          "type": "String",
+          "type": "string",
           "description": "Unique Identifier of the primary subscriber if the member is dependent."
         },
         "xdm:specialist": {
           "Title": "Specialist",
-          "type": "Array",
+          "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "xdm:name": {
                 "Title": "Name",
-                "type": "String",
+                "type": "string",
                 "description": "Name of the specialist."
               },
               "xdm:diagnosis": {
                 "Title": "Diagnosis",
-                "type": "String",
+                "type": "string",
                 "description": "Specialization diagnosis."
               },
               "xdm:providerID": {
                 "Title": "Providerid",
-                "type": "String",
+                "type": "string",
                 "description": "Provider unique identifier."
               }
             }
@@ -179,7 +179,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/patient-details"
+      "$ref": "#/definitions/member-details"
     }
   ],
   "meta:status": "experimental",

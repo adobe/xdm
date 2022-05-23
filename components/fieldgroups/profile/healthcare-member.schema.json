@@ -12,71 +12,82 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["healthcare_services"]
+    "industry": [
+      "healthcare_services"
+    ]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
   "definitions": {
     "member-details": {
       "properties": {
         "xdm:member": {
           "type": "object",
-          "xdm:ID": {
-            "Title": "Member ID",
-            "type": "string",
-            "description": "Unique Identifier of the patient/member."
-          },
-          "xdm:name": {
-            "Title": "Member Name",
-            "$ref": "https://ns.adobe.com/xdm/context/person-name"
-          },
-          "xdm:memberAddress": {
-            "type": "object",
-            "properties": {
-              "xdm:addressType": {
-                "Title": "Member Address type",
-                "type": "string",
-                "enum": ["Home", "Work", "Mailing", "Other"],
-                "meta:enum": {
-                  "Home": "Home Address",
-                  "Work": "Work Address",
-                  "Mailing": "Mailing Address",
-                  "Other": "Other Address"
+          "properties": {
+            "xdm:ID": {
+              "Title": "Member ID",
+              "type": "string",
+              "description": "Unique Identifier of the patient/member."
+            },
+            "xdm:name": {
+              "Title": "Member Name",
+              "$ref": "https://ns.adobe.com/xdm/context/person-name"
+            },
+            "xdm:memberAddress": {
+              "type": "object",
+              "properties": {
+                "xdm:addressType": {
+                  "Title": "Member Address type",
+                  "type": "string",
+                  "enum": [
+                    "Home",
+                    "Work",
+                    "Mailing",
+                    "Other"
+                  ],
+                  "meta:enum": {
+                    "Home": "Home Address",
+                    "Work": "Work Address",
+                    "Mailing": "Mailing Address",
+                    "Other": "Other Address"
+                  }
+                },
+                "xdm:address": {
+                  "Title": "Member Address",
+                  "$ref": "https://ns.adobe.com/xdm/common/address"
+                },
+                "xdm:effectiveStartDate": {
+                  "Title": "Effective Start Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Address start date."
+                },
+                "xdm:efectiveEndDate": {
+                  "Title": "Effective End Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Address end date."
                 }
               },
-              "xdm:address": {
-                "Title": "Member Address",
-                "$ref": "https://ns.adobe.com/xdm/common/address"
+              "xdm:phoneNumber": {
+                "Title": "Phone Number",
+                "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
               },
-              "xdm:effectiveStartDate": {
-                "Title": "Effective Start Date",
-                "type": "string",
-                "format": "date-time",
-                "description": "Address start date."
+              "xdm:memberDetails": {
+                "Title": "Member Details",
+                "$ref": "https://ns.adobe.com/xdm/context/person",
+                "description": "An individual patient/member additional details."
               },
-              "xdm:efectiveEndDate": {
-                "Title": "Effective End Date",
-                "type": "string",
-                "format": "date-time",
-                "description": "Address end date."
+              "xdm:emailAddress": {
+                "Title": "Email Address",
+                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              },
+              "xdm:memberOrganization": {
+                "Title": "Member Organization",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
               }
-            },
-            "xdm:phoneNumber": {
-              "Title": "Phone Number",
-              "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
-            },
-            "xdm:memberDetails": {
-              "Title": "Member Details",
-              "$ref": "https://ns.adobe.com/xdm/context/person",
-              "description": "An individual patient/member additional details."
-            },
-            "xdm:emailAddress": {
-              "Title": "Email Address",
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
-            },
-            "xdm:memberOrganization": {
-              "Title": "Member Organization",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
             }
           }
         },
@@ -108,15 +119,18 @@
           }
         },
         "xdm:emergencyContact": {
-          "xdm:name": {
-            "Title": "Emergency Contact Name",
-            "type": "string",
-            "description": "Emergency contact name."
-          },
-          "xdm:contactPhone": {
-            "Title": "Emergency Contact Phone",
-            "type": "string",
-            "description": "Emergency contact phone number."
+          "type": "object",
+          "properties": {
+            "xdm:name": {
+              "Title": "Emergency Contact Name",
+              "type": "string",
+              "description": "Emergency contact name."
+            },
+            "xdm:contactPhone": {
+              "Title": "Emergency Contact Phone",
+              "type": "string",
+              "description": "Emergency contact phone number."
+            }
           }
         },
         "xdm:prefferedAvaiability": {

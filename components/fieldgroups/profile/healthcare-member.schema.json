@@ -184,6 +184,16 @@
               }
             }
           }
+        },
+        "xdm:isLead": {
+          "Title": "Is Lead",
+          "type": "boolean",
+          "description": "Boolean flag indicates if this member is a lead."
+        },
+        "xdm:isOpportunity": {
+          "Title": "Is Opportunity",
+          "type": "boolean",
+          "description": "Boolean flag indicates if this this member is a opportunity."
         }
       }
     }

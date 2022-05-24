@@ -1,0 +1,208 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/healthcare-member",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Member Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["healthcare_services"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
+  "definitions": {
+    "member-details": {
+      "properties": {
+        "xdm:member": {
+          "type": "object",
+          "properties": {
+            "xdm:ID": {
+              "Title": "Member ID",
+              "type": "string",
+              "description": "Unique Identifier of the patient/member."
+            },
+            "xdm:name": {
+              "Title": "Member Name",
+              "$ref": "https://ns.adobe.com/xdm/context/person-name"
+            },
+            "xdm:memberAddress": {
+              "type": "object",
+              "properties": {
+                "xdm:addressType": {
+                  "Title": "Member Address type",
+                  "type": "string",
+                  "enum": ["Home", "Work", "Mailing", "Other"],
+                  "meta:enum": {
+                    "Home": "Home Address",
+                    "Work": "Work Address",
+                    "Mailing": "Mailing Address",
+                    "Other": "Other Address"
+                  }
+                },
+                "xdm:address": {
+                  "Title": "Member Address",
+                  "$ref": "https://ns.adobe.com/xdm/common/address"
+                },
+                "xdm:effectiveStartDate": {
+                  "Title": "Effective Start Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Address start date."
+                },
+                "xdm:efectiveEndDate": {
+                  "Title": "Effective End Date",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Address end date."
+                }
+              },
+              "xdm:phoneNumber": {
+                "Title": "Phone Number",
+                "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+              },
+              "xdm:memberDetails": {
+                "Title": "Member Details",
+                "$ref": "https://ns.adobe.com/xdm/context/person",
+                "description": "An individual patient/member additional details."
+              },
+              "xdm:emailAddress": {
+                "Title": "Email Address",
+                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              },
+              "xdm:memberOrganization": {
+                "Title": "Member Organization",
+                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+              }
+            }
+          }
+        },
+        "xdm:primaryCarePhysician ": {
+          "type": "object",
+          "properties": {
+            "xdm:ID ": {
+              "Title": "ID",
+              "type": "string",
+              "description": "Primary Care Physician unique identifier."
+            },
+            "xdm:name": {
+              "Title": "Primary Care Physician Name",
+              "type": "string",
+              "description": "Primary Care Physician Name."
+            },
+            "xdm:startDate": {
+              "Title": "Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Primary Care Physician start date."
+            },
+            "xdm:endDate": {
+              "Title": "End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Primary Care Physician end date."
+            }
+          }
+        },
+        "xdm:emergencyContact": {
+          "type": "object",
+          "properties": {
+            "xdm:name": {
+              "Title": "Emergency Contact Name",
+              "type": "string",
+              "description": "Emergency contact name."
+            },
+            "xdm:contactPhone": {
+              "Title": "Emergency Contact Phone",
+              "type": "string",
+              "description": "Emergency contact phone number."
+            }
+          }
+        },
+        "xdm:prefferedAvaiability": {
+          "Title": "Preffered Availability",
+          "type": "string",
+          "description": "Patient prefered day and time avaiability for an appointment."
+        },
+        "xdm:Medication": {
+          "type": "object",
+          "properties": {
+            "xdm:medicationID": {
+              "Title": "Medication Id",
+              "type": "string",
+              "description": "Medication unique identifier."
+            },
+            "xdm:medicationDate": {
+              "Title": "Medication Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Medication Date."
+            },
+            "xdm:isCurrent": {
+              "Title": "Is Current",
+              "type": "boolean",
+              "description": "Boolean flag indicates if this medication is current or previous."
+            }
+          }
+        },
+        "xdm:beneficiaryRelationship": {
+          "Title": "Beneficiary Relationship",
+          "type": "string",
+          "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc)."
+        },
+        "xdm:primaryMemeberID": {
+          "Title": "Primary Member ID",
+          "type": "string",
+          "description": "Unique Identifier of the primary subscriber if the member is dependent."
+        },
+        "xdm:specialist": {
+          "Title": "Specialist",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "xdm:name": {
+                "Title": "Name",
+                "type": "string",
+                "description": "Name of the specialist."
+              },
+              "xdm:diagnosis": {
+                "Title": "Diagnosis",
+                "type": "string",
+                "description": "Specialization diagnosis."
+              },
+              "xdm:providerID": {
+                "Title": "Providerid",
+                "type": "string",
+                "description": "Provider unique identifier."
+              }
+            }
+          }
+        },
+        "xdm:isLead": {
+          "Title": "Is Lead",
+          "type": "boolean",
+          "description": "Boolean flag indicates if this member is a lead."
+        },
+        "xdm:isOpportunity": {
+          "Title": "Is Opportunity",
+          "type": "boolean",
+          "description": "Boolean flag indicates if this this member is a opportunity."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/member-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-05-18"
+}

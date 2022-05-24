@@ -7,12 +7,12 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/profile-source-system-markers",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Phone Source System Markers",
+  "title": "Phone Source System Markers (Experimental, please expect breaking changes)",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Use this to add source system specific markers or record traits for a profile fragment.",
+  "description": "Use this to add source system specific markers or record traits for a profile fragment (Experimental, please expect breaking changes).",
   "definitions": {
     "profile-source": {
       "properties": {

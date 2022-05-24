@@ -210,9 +210,13 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 | Property | Type | Group |
 |----------|------|-------|
 | [xdm:any](#xdmany) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
+| [xdm:call](#xdmcall) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
+| [xdm:commercialEmail](#xdmcommercialemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
 | [xdm:content](#xdmcontent) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-personalization` |
 | [xdm:email](#xdmemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
+| [xdm:fax](#xdmfax) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
 | [xdm:idType](#xdmidtype) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/adid-consent-field` |
+| [xdm:postalMail](#xdmpostalmail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
 | [xdm:preferred](#xdmpreferred) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
@@ -232,6 +236,44 @@ Does user permit any type of direct marketing
 * defined in this schema
 
 ### xdm:any Type
+
+
+* []() – `#/definitions/marketing-field`
+
+
+
+
+
+## xdm:call
+### Receive calls
+
+User permits receiving calls
+
+`xdm:call`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:call Type
+
+
+* []() – `#/definitions/marketing-field`
+
+
+
+
+
+## xdm:commercialEmail
+### Receive commercial emails
+
+User permits receiving commercial emails
+
+`xdm:commercialEmail`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:commercialEmail Type
 
 
 * []() – `#/definitions/marketing-field`
@@ -278,6 +320,25 @@ User agrees to receive email
 
 
 
+## xdm:fax
+### Receive fax
+
+User permits receiving fax
+
+`xdm:fax`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:fax Type
+
+
+* []() – `#/definitions/marketing-field`
+
+
+
+
+
 ## xdm:idType
 ### Ad ID Type
 
@@ -295,6 +356,25 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `IDFA` | Apple&#39;s ID for Advertisers (IDFA) |
 | `GAID` | Google&#39;s Advertiser ID (GAID) also known as Android Advertiser ID (AAID) |
+
+
+
+
+## xdm:postalMail
+### Receive postal mail
+
+User permits receiving postal mail
+
+`xdm:postalMail`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:postalMail Type
+
+
+* []() – `#/definitions/marketing-field`
+
 
 
 

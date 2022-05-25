@@ -138,11 +138,7 @@
               "meta:xdmType": "string"
             },
             "xdm:ticketType": {
-              "enum": [
-                "season",
-                "package",
-                "single"
-              ],
+              "enum": ["season", "package", "single"],
               "title": "ticketType",
               "description": "Enum: Type of ticket purchase, season, package, or single ticket.",
               "type": "string",

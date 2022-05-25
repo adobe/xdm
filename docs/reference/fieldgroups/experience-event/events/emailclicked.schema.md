@@ -107,11 +107,34 @@ The name of the model for the device. This is the common, human-readable, or mar
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:automationRunID`| string | Optional |
 | `xdm:linkURL`| string | Optional |
 | `xdm:mailingID`| string | Optional |
+| `xdm:mailingKey`|  | Optional |
 | `xdm:mailingName`| string | Optional |
 | `xdm:testVariantID`| string | Optional |
 | `xdm:testVariantName`| string | Optional |
+
+
+
+#### xdm:automationRunID
+##### Automation Run ID
+
+Automation Run ID
+
+`xdm:automationRunID`
+* is optional
+* type: `string`
+
+##### xdm:automationRunID Type
+
+
+`string`
+
+
+
+
+
 
 
 
@@ -137,9 +160,9 @@ URL of the link clicked.
 
 
 #### xdm:mailingID
-##### Mailing ID
+##### Mailing ID (deprecated)
 
-Unique ID of the email asset.
+Mailing ID is going to depreciate soon. Please use Mailing Key.
 
 `xdm:mailingID`
 * is optional
@@ -150,6 +173,26 @@ Unique ID of the email asset.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:mailingKey
+##### Mailing Key
+
+Unique key of the email asset.
+
+`xdm:mailingKey`
+* is optional
+* type: reference
+
+##### xdm:mailingKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

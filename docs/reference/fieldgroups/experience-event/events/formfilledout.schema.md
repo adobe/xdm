@@ -154,11 +154,16 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:webFormID": {
-      "title": "Web Form ID",
+      "title": "Web Form ID (deprecated)",
       "type": "string",
-      "description": "Unique ID of the form.",
+      "description": "Web Form ID is going to depreciate soon. Please use  Web Form Key.",
       "meta:titleId": "formfilledout##xdm:webFormID##title##36241",
       "meta:descriptionId": "formfilledout##xdm:webFormID##description##30331"
+    },
+    "xdm:webFormKey": {
+      "title": "Web Form Key",
+      "description": "Unique key of the form.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
     },
     "xdm:webFormName": {
       "title": "Web Form Name",

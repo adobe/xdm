@@ -5,14 +5,11 @@
         "you may not use this file except in compliance with the License. You may obtain a copy",
         "of the License at https://creativecommons.org/licenses/by/4.0/"
     ],
-    "$id": "https://ns.adobe.com/experience/aep-hygiene-ops",
+    "$id": "https://ns.adobe.com/xdm/schemas/aep-hygiene-ops",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "AEP Hygiene Operation Request",
     "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
     "type": "object",
-    "meta:extends": [
-        "https://ns.adobe.com/xdm/data/record"
-    ],
     "meta:extensible": false,
     "meta:abstract": false,
     "definitions": {
@@ -36,6 +33,11 @@
                 "xdm:targetDatasetID": {
                     "title": "Target Dataset ID specified by the user to apply hygiene operations",
                     "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+                    "type": "string"
+                },
+                "xdm:workorderID": {
+                    "title": "Work Order ID for tracking purposes.",
+                    "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
                     "type": "string"
                 },
                 "xdm:operation": {
@@ -95,7 +97,7 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/data/record"
+            "$ref": "https://ns.adobe.com/xdm/classes/aep-hygiene"
         },
         {
             "$ref": "#/definitions/hygieneOps"
@@ -103,18 +105,6 @@
     ],
     "meta:status": "experimental",
     "examples": [
-        {
-            "xdm:action": "updateField",
-            "xdm:targetDatasetID": "1234567890ABCDEFGH",
-            "xdm:operation": {
-                "xdm:updateField": {
-                    "xdm:changes": [
-                        "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
-                        "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"
-                    ]
-                }
-            }
-        },
         {
             "xdm:batchTime": "2022-03-03T18:57:00+00:00",
             "xdm:action": "deleteIdentity",
@@ -140,6 +130,18 @@
             "xdm:extSourceSystemAudit": {
                 "xdm:createdBy": "USER111",
                 "xdm:createdDate": "2022-03-03T18:57:00+00:00"
+            }
+        },
+        {
+            "xdm:action": "updateField",
+            "xdm:targetDatasetID": "1234567890ABCDEFGH",
+            "xdm:operation": {
+                "xdm:updateField": {
+                    "xdm:changes": [
+                        "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
+                        "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"
+                    ]
+                }
             }
         }
     ]

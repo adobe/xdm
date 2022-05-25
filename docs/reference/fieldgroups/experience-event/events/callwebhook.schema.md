@@ -62,10 +62,9 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:webhookID": {
-      "meta:status": "deprecated",
       "title": "Webhook ID (deprecated)",
       "type": "string",
-      "description": "Unique ID of the Webhook called."
+      "description": "Webhook ID is going to depreciate soon. Please use Webhook Key."
     },
     "xdm:webhookKey": {
       "title": "Webhook Key",

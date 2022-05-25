@@ -874,8 +874,7 @@
                         }
                     },
                     "required": [
-                        "xdm:primaryAssetReference",
-                        "xdm:playhead"
+                        "xdm:primaryAssetReference"
                     ],
                     "meta:titleId": "media##xdm:mediaTimed##title##78891",
                     "meta:descriptionId": "media##xdm:mediaTimed##description##36241"

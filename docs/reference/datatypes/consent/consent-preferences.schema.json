@@ -297,6 +297,26 @@
                     "meta:titleId": "consents-and-preferences##xdm:push##title##51421",
                     "meta:descriptionId": "consents-and-preferences##xdm:push##description##63751"
                 },
+                "xdm:call": {
+                    "title": "Receive calls",
+                    "description": "User permits receiving calls",
+                    "$ref": "#/definitions/marketing-field"
+                },
+                "xdm:fax": {
+                    "title": "Receive fax",
+                    "description": "User permits receiving fax",
+                    "$ref": "#/definitions/marketing-field"
+                },
+                "xdm:commercialEmail": {
+                    "title": "Receive commercial emails",
+                    "description": "User permits receiving commercial emails",
+                    "$ref": "#/definitions/marketing-field"
+                },
+                "xdm:postalMail": {
+                    "title": "Receive postal mail",
+                    "description": "User permits receiving postal mail",
+                    "$ref": "#/definitions/marketing-field"
+                },
                 "xdm:sms": {
                     "title": "Receive SMS",
                     "description": "User agrees to receive text messages",

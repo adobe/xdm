@@ -29,6 +29,7 @@
             },
             "xdm:name": {
               "Title": "Member Name",
+              "description": "Member's full name.",
               "$ref": "https://ns.adobe.com/xdm/context/person-name"
             },
             "xdm:memberAddress": {
@@ -64,12 +65,81 @@
               },
               "xdm:phoneNumber": {
                 "Title": "Phone Number",
+                "description": "Member's phone number.",
                 "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
               },
               "xdm:memberDetails": {
                 "Title": "Member Details",
-                "$ref": "https://ns.adobe.com/xdm/context/person",
-                "description": "An individual patient/member additional details."
+                "description": "Member's additional details.",
+                "type": "object",
+                "properties": {
+                  "xdm:birthDate": {
+                    "title": "Birth date(YYYY-MM-DD)",
+                    "type": "string",
+                    "format": "date",
+                    "description": "The full date a person was born."
+                  },
+                  "xdm:gender": {
+                    "title": "Gender",
+                    "type": "string",
+                    "enum": ["male", "female", "not_specified", "non_specific"],
+                    "meta:enum": {
+                      "male": "Male",
+                      "female": "Female",
+                      "not_specified": "Not Specified",
+                      "non_specific": "Non-specific"
+                    },
+                    "description": "Gender identity of the person.\n",
+                    "default": "not_specified"
+                  },
+                  "xdm:maritalStatus": {
+                    "title": "Marital Status",
+                    "type": "string",
+                    "enum": [
+                      "married",
+                      "single",
+                      "divorced",
+                      "widowed",
+                      "not_specified"
+                    ],
+                    "meta:enum": {
+                      "married": "Married",
+                      "single": "Single",
+                      "divorced": "Divorced",
+                      "widowed": "Widowed",
+                      "not_specified": "Not Specified"
+                    },
+                    "description": "Describes a person's relationship with a significant other.",
+                    "default": "not_specified"
+                  },
+                  "xdm:nationality": {
+                    "title": "Nationality",
+                    "type": "string",
+                    "pattern": "^[A-Z]{2}$",
+                    "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
+                  },
+                  "xdm:dateAgeCollected": {
+                    "Title": "Date Age Collected",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when date of birth information collected."
+                  },
+                  "xdm:multipleBirth": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:isMultipleBirth ": {
+                        "Title": "Is Multiple Birth",
+                        "type": "boolean",
+                        "description": "Boolean flag to indicate if the member had a multiple birth."
+                      },
+                      "xdm:multipleBirthNumber": {
+                        "Title": "Multiple Birth Number",
+                        "type": "integer",
+                        "description": "Number of babies born if multiple birth is true."
+                      }
+                    }
+                  }
+                }
               },
               "xdm:emailAddress": {
                 "Title": "Email Address",
@@ -83,29 +153,33 @@
           }
         },
         "xdm:primaryCarePhysician ": {
-          "type": "object",
-          "properties": {
-            "xdm:ID ": {
-              "Title": "ID",
-              "type": "string",
-              "description": "Primary Care Physician unique identifier."
-            },
-            "xdm:name": {
-              "Title": "Primary Care Physician Name",
-              "type": "string",
-              "description": "Primary Care Physician Name."
-            },
-            "xdm:startDate": {
-              "Title": "Start Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Primary Care Physician start date."
-            },
-            "xdm:endDate": {
-              "Title": "End Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Primary Care Physician end date."
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "xdm:ID ": {
+                "Title": "ID",
+                "type": "string",
+                "description": "Primary Care Physician unique identifier."
+              },
+              "xdm:name": {
+                "Title": "Primary Care Physician Name",
+                "type": "string",
+                "description": "Primary Care Physician Name."
+              },
+              "xdm:startDate": {
+                "Title": "Start Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Primary Care Physician start date."
+              },
+              "xdm:endDate": {
+                "Title": "End Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Primary Care Physician end date."
+              }
             }
           }
         },
@@ -130,23 +204,27 @@
           "description": "Patient prefered day and time avaiability for an appointment."
         },
         "xdm:Medication": {
-          "type": "object",
-          "properties": {
-            "xdm:medicationID": {
-              "Title": "Medication Id",
-              "type": "string",
-              "description": "Medication unique identifier."
-            },
-            "xdm:medicationDate": {
-              "Title": "Medication Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Medication Date."
-            },
-            "xdm:isCurrent": {
-              "Title": "Is Current",
-              "type": "boolean",
-              "description": "Boolean flag indicates if this medication is current or previous."
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "xdm:medicationID": {
+                "Title": "Medication Id",
+                "type": "string",
+                "description": "Medication unique identifier."
+              },
+              "xdm:medicationDate": {
+                "Title": "Medication Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Medication Date."
+              },
+              "xdm:isCurrent": {
+                "Title": "Is Current",
+                "type": "boolean",
+                "description": "Boolean flag indicates if this medication is current or previous."
+              }
             }
           }
         },

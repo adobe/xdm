@@ -21,27 +21,6 @@ Captures information regarding an action taken for one or more prior proposition
 
 ```json
 {
-  "https://ns.adobe.com/experience/decisioning/propositions": [
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "experience1"
-        }
-      ]
-    },
-    {
-      "xdm:items": [
-        {
-          "xdm:id": "personalized-offer:f67bab756ed6ee4"
-        }
-      ]
-    }
-  ]
-}
-```
-
-```json
-{
   "@id": "a7864a96-1eac-4934-ab44-54ad037b4f2b",
   "xdm:timestamp": "2020-09-26T15:52:25+00:00",
   "xdm:eventType": "web.webinteraction.contentDisplay",
@@ -83,6 +62,27 @@ Captures information regarding an action taken for one or more prior proposition
       ],
       "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
       "xdm:scope": "scope:12cfc3fa94281acb"
+    }
+  ]
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/propositions": [
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "experience1"
+        }
+      ]
+    },
+    {
+      "xdm:items": [
+        {
+          "xdm:id": "personalized-offer:f67bab756ed6ee4"
+        }
+      ]
     }
   ]
 }

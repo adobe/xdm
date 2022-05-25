@@ -228,6 +228,11 @@
             }
           }
         },
+        "xdm:dependent": {
+          "Title": "Dependent",
+          "type": "integer",
+          "description": "number issued to each beneficiary."
+        },
         "xdm:beneficiaryRelationship": {
           "Title": "Beneficiary Relationship",
           "type": "string",
@@ -237,6 +242,11 @@
           "Title": "Primary Member ID",
           "type": "string",
           "description": "Unique Identifier of the primary subscriber if the member is dependent."
+        },
+        "xdm:billingAccountID": {
+          "Title": "Billing Account ID",
+          "type": "string",
+          "description": "Unique Identifier of the billing account."
         },
         "xdm:specialist": {
           "Title": "Specialist",
@@ -272,6 +282,92 @@
           "Title": "Is Opportunity",
           "type": "boolean",
           "description": "Boolean flag indicates if this this member is a opportunity."
+        },
+        "xdm:plan": {
+          "Title": "Member Plan",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "xdm:ID": {
+                "Title": "ID",
+                "type": "string",
+                "description": "Plan ID unique identifier."
+              },
+              "xdm:coverageType": {
+                "Title": "Coverage Type",
+                "type": "string",
+                "enum": ["Medical", "Dental", "Vision", "Accident"],
+                "meta:enum": {
+                  "Medical": "Medical",
+                  "Dental": "Dental",
+                  "Vision": "Vision",
+                  "Accident": "Accident"
+                },
+                "description": "Member plan coverage type."
+              },
+              "xdm:payerID": {
+                "Title": "Payer ID",
+                "type": "string",
+                "description": "Payer unique identifier."
+              },
+              "xdm:contractID": {
+                "Title": "Contract ID",
+                "type": "string",
+                "description": "Unique identifier of the contract that is signed by the member."
+              },
+              "xdm:ownerID": {
+                "Title": "Owner ID",
+                "type": "string",
+                "description": "Unique identifier of the Owner of the policy which could be owned by an individual , group or an organization."
+              },
+              "xdm:isActive": {
+                "Title": "Is Active",
+                "type": "boolean",
+                "description": "Boolean flag indicates whether the plan is active."
+              },
+              "xdm:network": {
+                "Title": "Network",
+                "type": "string",
+                "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+              },
+              "xdm:affiliation": {
+                "Title": "Affiliation",
+                "type": "string",
+                "description": "An affiliation to a government service, such as the army or navy.."
+              },
+              "xdm:coverageStartDate": {
+                "Title": "Coverage Start Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Coverage start date."
+              },
+              "xdm:coverageEndDate": {
+                "Title": "Coverage End Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "Coverage end date."
+              },
+              "xdm:lastVerification": {
+                "Title": "Last Verification Date",
+                "type": "string",
+                "format": "date-time",
+                "description": "The date on which this plan was last verified."
+              },
+              "xdm:planType": {
+                "Title": "Plan Type",
+                "type": "string",
+                "enum": ["primary", "secondary", "tertiary"],
+                "meta:enum": {
+                  "primary": "primary",
+                  "secondary": "secondary",
+                  "tertiary": "tertiary"
+                },
+                "description": "This indicates if the plan is primary,secondary or tertiary plan."
+              }
+            }
+          }
         }
       }
     }
@@ -279,6 +375,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/member-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "meta:status": "experimental",

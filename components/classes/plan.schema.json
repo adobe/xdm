@@ -5,15 +5,12 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/classes/healthcare-plan",
+  "$id": "https://ns.adobe.com/xdm/classes/plan",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Healthcare Plan",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": {
-    "industry": ["healthcare_services"]
-  },
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Details of a Health Insurance product/plan provided by an organization.",
   "definitions": {
@@ -39,11 +36,6 @@
             "tertiary": "tertiary"
           },
           "description": "This indicates if the plan is primary,secondary or tertiary plan."
-        },
-        "xdm:isActive": {
-          "Title": "Is Active",
-          "type": "boolean",
-          "description": "Indicates whether the plan is active."
         }
       }
     }

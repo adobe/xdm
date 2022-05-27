@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorMetaEnumRemove"
+          "const": "xdm:descriptorMetaEnumRemove",
+          "meta:titleId": "descriptorMetaEnumRemove##@type##title##4421"
         },
         "meta:enum": {
           "title": "Extended meta:enum values",
@@ -37,7 +38,8 @@
                 }
               ]
             }
-          }
+          },
+          "meta:titleId": "descriptorMetaEnumRemove##meta:enum##title##37811"
         }
       },
       "anyOf": [
@@ -56,5 +58,7 @@
       "$ref": "#/definitions/descriptorMetaEnumRemove"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "descriptorMetaEnumRemove##title##99171",
+  "meta:descriptionId": "descriptorMetaEnumRemove##description##17491"
 }

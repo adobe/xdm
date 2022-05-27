@@ -327,7 +327,9 @@
                           "title": "Error ID",
                           "type": "string",
                           "description": "The error ID.",
-                          "minLength": 1
+                          "minLength": 1,
+                          "meta:titleId": "media##xdm:errorID##title##82411",
+                          "meta:descriptionId": "media##xdm:errorID##description##30321"
                         },
                         "xdm:errorSource": {
                           "title": "Error source",
@@ -337,10 +339,14 @@
                           "meta:enum": {
                             "player": "Player source.",
                             "external": "External source."
-                          }
+                          },
+                          "meta:titleId": "media##xdm:errorSource##title##25331",
+                          "meta:descriptionId": "media##xdm:errorSource##description##82201"
                         }
                       },
-                      "required": ["xdm:errorID", "xdm:errorSource"]
+                      "required": ["xdm:errorID", "xdm:errorSource"],
+                      "meta:titleId": "media##xdm:error##title##79291",
+                      "meta:descriptionId": "media##xdm:error##description##84991"
                     },
                     "xdm:errors": {
                       "title": "Errors",
@@ -838,22 +844,30 @@
             "xdm:recordLabel": {
               "title": "Record label",
               "type": "string",
-              "description": "Name of the record label."
+              "description": "Name of the record label.",
+              "meta:titleId": "media##xdm:recordLabel##title##40401",
+              "meta:descriptionId": "media##xdm:recordLabel##description##33761"
             },
             "xdm:radioStation": {
               "title": "Radio station",
               "type": "string",
-              "description": "Name / ID of the radio station."
+              "description": "Name / ID of the radio station.",
+              "meta:titleId": "media##xdm:radioStation##title##28891",
+              "meta:descriptionId": "media##xdm:radioStation##description##61371"
             },
             "xdm:publisher": {
               "title": "Audio content publisher",
               "type": "string",
-              "description": "Name of the audio content publisher."
+              "description": "Name of the audio content publisher.",
+              "meta:titleId": "media##xdm:publisher##title##42281",
+              "meta:descriptionId": "media##xdm:publisher##description##30571"
             },
             "xdm:playhead": {
               "title": "Player time playhead",
               "type": "integer",
-              "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
+              "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length.",
+              "meta:titleId": "media##xdm:playhead##title##40321",
+              "meta:descriptionId": "media##xdm:playhead##description##25211"
             }
           },
           "required": ["xdm:primaryAssetReference"],

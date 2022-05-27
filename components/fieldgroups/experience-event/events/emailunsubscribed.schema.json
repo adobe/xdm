@@ -35,7 +35,9 @@
             "xdm:mailingKey": {
               "title": "Mailing Key",
               "description": "Unique key of the email asset.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "emailunsubscribed##xdm:mailingKey##title##36621",
+              "meta:descriptionId": "emailunsubscribed##xdm:mailingKey##description##17531"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
@@ -61,7 +63,9 @@
             "xdm:automationRunID": {
               "title": "Automation Run ID",
               "type": "string",
-              "description": "Automation Run ID"
+              "description": "Automation Run ID",
+              "meta:titleId": "emailunsubscribed##xdm:automationRunID##title##44581",
+              "meta:descriptionId": "emailunsubscribed##xdm:automationRunID##description##61651"
             }
           },
           "meta:titleId": "emailunsubscribed##xdm:directMarketing##title##64801"

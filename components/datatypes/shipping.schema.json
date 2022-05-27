@@ -16,12 +16,16 @@
         "xdm:shippingMethod": {
           "title": "Shipping Method",
           "type": "string",
-          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc."
+          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc.",
+          "meta:titleId": "shipping##xdm:shippingMethod##title##43701",
+          "meta:descriptionId": "shipping##xdm:shippingMethod##description##26421"
         },
         "xdm:shippingAmount": {
           "title": "Shipping Amount",
           "type": "number",
-          "description": "The amount the customer had to pay for shipping."
+          "description": "The amount the customer had to pay for shipping.",
+          "meta:titleId": "shipping##xdm:shippingAmount##title##43981",
+          "meta:descriptionId": "shipping##xdm:shippingAmount##description##22041"
         }
       }
     }
@@ -32,5 +36,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2022-03-02"
+  "meta:createdDate": "2022-03-02",
+  "meta:titleId": "shipping##title##69211",
+  "meta:descriptionId": "shipping##description##181"
 }

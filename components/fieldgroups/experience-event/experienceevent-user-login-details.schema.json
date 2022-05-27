@@ -171,7 +171,9 @@
             "xdm:createProfile": {
               "title": "Account Profile Create",
               "type": "integer",
-              "description": "Counter event indicating a user has created an account profile."
+              "description": "Counter event indicating a user has created an account profile.",
+              "meta:titleId": "experienceevent-user-login-details##xdm:createProfile##title##47601",
+              "meta:descriptionId": "experienceevent-user-login-details##xdm:createProfile##description##90041"
             }
           },
           "meta:descriptionId": "experienceevent-user-login-details##xdm:userAccount##description##24221"

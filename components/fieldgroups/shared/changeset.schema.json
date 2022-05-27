@@ -31,14 +31,20 @@
                 "u": "update",
                 "d": "delete",
                 "m": "merge"
-              }
+              },
+              "meta:titleId": "changeset##xdm:type##title##98201",
+              "meta:descriptionId": "changeset##xdm:type##description##43531"
             },
             "xdm:reason": {
               "title": "Change Request Reason",
               "description": "Optional value signaling the reason for this change (e.g. GDPR).",
-              "type": "string"
+              "type": "string",
+              "meta:titleId": "changeset##xdm:reason##title##36831",
+              "meta:descriptionId": "changeset##xdm:reason##description##66461"
             }
-          }
+          },
+          "meta:titleId": "changeset##xdm:changeRequest##title##79971",
+          "meta:descriptionId": "changeset##xdm:changeRequest##description##65511"
         }
       }
     }
@@ -48,5 +54,7 @@
       "$ref": "#/definitions/changeset"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "changeset##title##18261",
+  "meta:descriptionId": "changeset##description##3151"
 }

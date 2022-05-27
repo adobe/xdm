@@ -23,20 +23,27 @@
             "xdm:isEmailBounced": {
               "title": "Email Bounced Indicator",
               "type": "boolean",
-              "description": "Email bounced Indicator."
+              "description": "Email bounced Indicator.",
+              "meta:titleId": "profile-responses##xdm:isEmailBounced##title##92141",
+              "meta:descriptionId": "profile-responses##xdm:isEmailBounced##description##11371"
             },
             "xdm:emailBouncedDate": {
               "title": "Email Bounced Date",
               "type": "string",
               "format": "date-time",
-              "description": "Email bounced date."
+              "description": "Email bounced date.",
+              "meta:titleId": "profile-responses##xdm:emailBouncedDate##title##68831",
+              "meta:descriptionId": "profile-responses##xdm:emailBouncedDate##description##39011"
             },
             "xdm:emailBouncedReason": {
               "title": "Email Bounced Reason",
               "type": "string",
-              "description": "Email bounced reason."
+              "description": "Email bounced reason.",
+              "meta:titleId": "profile-responses##xdm:emailBouncedReason##title##24051",
+              "meta:descriptionId": "profile-responses##xdm:emailBouncedReason##description##52991"
             }
-          }
+          },
+          "meta:titleId": "profile-responses##xdm:emailResponse##title##50741"
         }
       }
     }
@@ -46,5 +53,7 @@
       "$ref": "#/definitions/profile-response"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "profile-responses##title##10381",
+  "meta:descriptionId": "profile-responses##description##1341"
 }

@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorDeprecated"
+          "const": "xdm:descriptorDeprecated",
+          "meta:titleId": "descriptorDeprecated##@type##title##82941"
         }
       },
       "required": ["xdm:sourceProperty"]
@@ -36,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-12-01"
+  "meta:createdDate": "2021-12-01",
+  "meta:titleId": "descriptorDeprecated##title##83531",
+  "meta:descriptionId": "descriptorDeprecated##description##13301"
 }

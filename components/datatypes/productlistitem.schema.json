@@ -79,12 +79,16 @@
           "description": "Particular options chosen for a configurable product.",
           "items": {
             "$ref": "#/definitions/selectedOption"
-          }
+          },
+          "meta:titleId": "productlistitem##xdm:selectedOptions##title##57321",
+          "meta:descriptionId": "productlistitem##xdm:selectedOptions##description##80401"
         },
         "xdm:discountAmount": {
           "title": "Discount Amount",
           "type": "number",
-          "description": "The difference between the regular price and the special price for the product."
+          "description": "The difference between the regular price and the special price for the product.",
+          "meta:titleId": "productlistitem##xdm:discountAmount##title##25051",
+          "meta:descriptionId": "productlistitem##xdm:discountAmount##description##67611"
         }
       },
       "required": ["xdm:SKU"]
@@ -97,15 +101,21 @@
         "xdm:attribute": {
           "title": "Configurable attribute name",
           "description": "The name of the configurable attribute",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "productlistitem##xdm:attribute##title##48391",
+          "meta:descriptionId": "productlistitem##xdm:attribute##description##91161"
         },
         "xdm:value": {
           "title": "Selected option value",
           "description": "The value chosen for the configurable attribute",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "productlistitem##xdm:value##title##77121",
+          "meta:descriptionId": "productlistitem##xdm:value##description##27191"
         }
       },
-      "required": ["xdm:attribute", "xdm:value"]
+      "required": ["xdm:attribute", "xdm:value"],
+      "meta:titleId": "productlistitem##selectedOption##title##81511",
+      "meta:descriptionId": "productlistitem##selectedOption##description##771"
     }
   },
   "allOf": [

@@ -61,7 +61,9 @@
           "meta:enum": {
             "checkout": "checkout",
             "instant_purchase": "Instant Purchase"
-          }
+          },
+          "meta:titleId": "order##xdm:orderType##title##56861",
+          "meta:descriptionId": "order##xdm:orderType##description##62731"
         }
       }
     }

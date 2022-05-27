@@ -23,21 +23,6 @@ Describes a label at the field level for a given class/fieldgroup/schema
   "@type": "xdm:descriptorLabel",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceVersion": 1,
-  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
-  "xdm:labels": [
-    "sampleDUlELabelResourceID1",
-    "sampleDUlELabelResourceID2",
-    "sampleDUlELabelResourceID3",
-    "sampleDUlELabelResourceID4"
-  ]
-}
-```
-
-```json
-{
-  "@type": "xdm:descriptorLabel",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
-  "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
@@ -62,6 +47,21 @@ Describes a label at the field level for a given class/fieldgroup/schema
     "/workAddress/street4",
     "/workEmail/status"
   ],
+  "xdm:labels": [
+    "sampleDUlELabelResourceID1",
+    "sampleDUlELabelResourceID2",
+    "sampleDUlELabelResourceID3",
+    "sampleDUlELabelResourceID4"
+  ]
+}
+```
+
+```json
+{
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+  "xdm:sourceVersion": 1,
+  "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
   "xdm:labels": [
     "sampleDUlELabelResourceID1",
     "sampleDUlELabelResourceID2",

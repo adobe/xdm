@@ -31,7 +31,8 @@ The order placed for a product list.
     }
   ],
   "xdm:currencyCode": "USD",
-  "xdm:priceTotal": 999.98
+  "xdm:priceTotal": 999.98,
+  "xdm:orderType": "checkout"
 }
 ```
 
@@ -40,6 +41,7 @@ The order placed for a product list.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | Order (this schema) |
+| [xdm:orderType](#xdmordertype) | `enum` | Optional | Order (this schema) |
 | [xdm:payments](#xdmpayments) | Payment Item | Optional | Order (this schema) |
 | [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Order (this schema) |
 | [xdm:purchaseID](#xdmpurchaseid) | `string` | Optional | Order (this schema) |
@@ -82,6 +84,27 @@ All instances must conform to this regular expression
 ```json
 "EUR"
 ```
+
+
+
+## xdm:orderType
+### Order Type
+
+The type order that has been placed.
+
+`xdm:orderType`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmordertype-known-values).
+
+### xdm:orderType Known Values
+| Value | Description |
+|-------|-------------|
+| `checkout` | checkout |
+| `instant_purchase` | Instant Purchase |
+
 
 
 

@@ -15,6 +15,15 @@ This Fieldgroup contains the common Journey Metadata information.
 
 ```json
 {
+  "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
   "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
   "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
@@ -79,15 +88,6 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
   "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
   "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
 }
 ```
 

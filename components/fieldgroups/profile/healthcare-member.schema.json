@@ -145,7 +145,10 @@
             },
             "xdm:emailAddress": {
               "Title": "Email Address",
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+              }
             },
             "xdm:organization": {
               "Title": "Organization",
@@ -298,6 +301,17 @@
                     "type": "string",
                     "description": "Plan ID unique identifier."
                   },
+                  "xdm:planType": {
+                    "Title": "Plan Type",
+                    "type": "string",
+                    "enum": ["primary", "secondary", "tertiary"],
+                    "meta:enum": {
+                      "primary": "primary",
+                      "secondary": "secondary",
+                      "tertiary": "tertiary"
+                    },
+                    "description": "This indicates if the plan is primary,secondary or tertiary plan."
+                  },
                   "xdm:coverageType": {
                     "Title": "Coverage Type",
                     "type": "string",
@@ -309,16 +323,6 @@
                       "Accident": "Accident"
                     },
                     "description": "Member plan coverage type."
-                  },
-                  "xdm:isActive": {
-                    "Title": "Is Active",
-                    "type": "boolean",
-                    "description": "Boolean flag indicates whether the plan is active."
-                  },
-                  "xdm:network": {
-                    "Title": "Network",
-                    "type": "string",
-                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
                   },
                   "xdm:coverageStartDate": {
                     "Title": "Coverage Start Date",
@@ -332,16 +336,15 @@
                     "format": "date-time",
                     "description": "Coverage end date."
                   },
-                  "xdm:planType": {
-                    "Title": "Plan Type",
+                  "xdm:network": {
+                    "Title": "Network",
                     "type": "string",
-                    "enum": ["primary", "secondary", "tertiary"],
-                    "meta:enum": {
-                      "primary": "primary",
-                      "secondary": "secondary",
-                      "tertiary": "tertiary"
-                    },
-                    "description": "This indicates if the plan is primary,secondary or tertiary plan."
+                    "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                  },
+                  "xdm:isActive": {
+                    "Title": "Is Active",
+                    "type": "boolean",
+                    "description": "Boolean flag indicates whether the plan is active."
                   }
                 }
               }

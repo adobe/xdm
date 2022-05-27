@@ -24,11 +24,6 @@
           "type": "string",
           "description": "Unique identifier of the payer."
         },
-        "xdm:contractID": {
-          "Title": "Contract ID",
-          "type": "string",
-          "description": "Unique identifier of the contract that is signed by the member."
-        },
         "xdm:ownerID": {
           "Title": "Owner ID",
           "type": "string",
@@ -55,18 +50,6 @@
             "Accident": "Accident"
           },
           "description": "Member plan coverage type."
-        },
-        "xdm:coverageStartDate": {
-          "Title": "Coverage Start Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Coverage start date."
-        },
-        "xdm:coverageEndDate": {
-          "Title": "Coverage End Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Coverage end date."
         },
         "xdm:lastVerification": {
           "Title": "Last Verification Date",

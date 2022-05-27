@@ -19,27 +19,6 @@
   "definitions": {
     "plan-details": {
       "properties": {
-        "xdm:planName": {
-          "Title": "Plan Name",
-          "type": "string",
-          "description": "Name of the insurance plan."
-        },
-        "xdm:planType": {
-          "Title": "Plan Type",
-          "type": "string",
-          "enum": ["primary", "secondary", "tertiary"],
-          "meta:enum": {
-            "primary": "primary",
-            "secondary": "secondary",
-            "tertiary": "tertiary"
-          },
-          "description": "This indicates if the plan is primary,secondary or tertiary plan."
-        },
-        "xdm:isActive": {
-          "Title": "Is Active",
-          "type": "boolean",
-          "description": "Indicates whether the plan is active."
-        },
         "xdm:payerID": {
           "Title": "Payer ID",
           "type": "string",

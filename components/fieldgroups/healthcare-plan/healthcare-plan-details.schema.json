@@ -61,6 +61,11 @@
           "Title": "Plan Cost",
           "type": "number",
           "description": "The cost associated to this insurance plan."
+        },
+        "xdm:isActive": {
+          "Title": "Is Active",
+          "type": "boolean",
+          "description": "Indicates whether the plan is active."
         }
       }
     }

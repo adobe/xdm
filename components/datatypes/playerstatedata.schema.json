@@ -1,0 +1,48 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/playerstatedata",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Player state data information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Player state data information.",
+  "definitions": {
+    "playerstatedata": {
+      "properties": {
+        "xdm:name": {
+          "title": "Player state name",
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.]{1,64}$",
+          "description": "The name of the player state."
+        },
+        "xdm:set": {
+          "title": "Player state set",
+          "type": "boolean",
+          "description": "Whether or not the player state is set on that state."
+        },
+        "xdm:count": {
+          "title": "Player state count",
+          "type": "integer",
+          "description": "The number of times that player state was set on the stream."
+        },
+        "xdm:time": {
+          "title": "Player state time",
+          "type": "integer",
+          "description": "The total duration of that player state."
+        }
+      },
+      "required": ["xdm:name"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/playerstatedata"
+    }
+  ]
+}

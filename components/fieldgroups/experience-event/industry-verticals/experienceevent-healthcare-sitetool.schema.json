@@ -59,9 +59,9 @@
               "description": "Reference to the actor who could be a member,practionner or a relatedperson."
             },
             "xdm:dataGatheringEvent": {
-              "Title": "Is Data Gathering Event",
+              "Title": "Data Gathering Event",
               "type": "object",
-              "description": "Indicates if this event is a data gathering event and the event details.",
+              "description": "Indicates if this event is a data gathering event and the other event details.",
               "properties": {
                 "xdm:isTrue": {
                   "Title": "Is True",
@@ -72,7 +72,7 @@
                   "Title": "Data",
                   "type": "object",
                   "meta:xdmType": "map",
-                  "description": "Data that can be gethered for this event.",
+                  "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
                   "additionalProperties": {
                     "xdm:question": {
                       "Title": "Question",
@@ -89,9 +89,19 @@
                 "xdm:score": {
                   "Title": "Score",
                   "type": "integer",
-                  "description": "Event score."
+                  "description": "Score secured by the actor based on event responses."
                 }
               }
+            },
+            "xdm:attachments": {
+              "Title": "Attachments",
+              "type": "uri",
+              "description": "Attachments exchanged as part of this event."
+            },
+            "xdm:isKeyEvent": {
+              "Title": "Is Key Event",
+              "type": "boolean",
+              "description": "Indicates if this event is a key event."
             }
           }
         }

@@ -95,7 +95,8 @@
             },
             "xdm:attachments": {
               "Title": "Attachments",
-              "type": "uri",
+              "type": "string",
+              "format":"uri",
               "description": "Attachments exchanged as part of this event."
             },
             "xdm:isKeyEvent": {

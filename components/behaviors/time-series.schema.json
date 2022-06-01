@@ -112,7 +112,18 @@
             "media.sessionComplete": "Media sessionComplete",
             "media.sessionEnd": "Media sessionEnd",
             "media.stateStart": "Media stateStart",
-            "media.stateEnd": "Media stateEnd"
+            "media.stateEnd": "Media stateEnd",
+            "sitetool.chat.launch": "Sitetool Chat Launch",
+            "sitetool.chat.close": "Sitetool Chat Close",
+            "sitetool.chat.open": "Sitetool Chat Open",
+            "sitetool.chat.minimize": "Sitetool Chat Minimize",
+            "sitetool.chat.attachments": "Sitetool Chat Attachments",
+            "sitetool.quiz.open": "Sitetool Quiz Open",
+            "sitetool.quiz.submit": "Sitetool Quiz Submit",
+            "sitetool.survey.open": "Sitetool Survey Open",
+            "sitetool.survey.submit": "Sitetool Survey Submit",
+            "sitetool.poll.open": "Sitetool Poll Open",
+            "sitetool.poll.submit": "Sitetool Poll Submit"
           },
           "meta:titleId": "time-series##xdm:eventType##title##79221",
           "meta:descriptionId": "time-series##xdm:eventType##description##27681"

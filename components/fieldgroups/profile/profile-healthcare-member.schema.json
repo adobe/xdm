@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
+    "industry": ["healthcare_services"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
   "definitions": {
     "member-details": {
@@ -49,12 +45,7 @@
                     "Title": "Type of the address indication if the address is home, mailing, or work.",
                     "type": "string",
                     "description": "Member's full name.",
-                    "enum": [
-                      "Home",
-                      "Work",
-                      "Mailing",
-                      "Other"
-                    ],
+                    "enum": ["Home", "Work", "Mailing", "Other"],
                     "meta:enum": {
                       "Home": "Home Address",
                       "Work": "Work Address",
@@ -95,12 +86,7 @@
             "xdm:gender": {
               "title": "Gender",
               "type": "string",
-              "enum": [
-                "male",
-                "female",
-                "not_specified",
-                "non_specific"
-              ],
+              "enum": ["male", "female", "not_specified", "non_specific"],
               "meta:enum": {
                 "male": "Male",
                 "female": "Female",
@@ -261,12 +247,7 @@
             "xdm:beneficiaryRelationship": {
               "Title": "Beneficiary Relationship",
               "type": "string",
-              "enum": [
-                "self",
-                "spouse",
-                "child",
-                "parent"
-              ],
+              "enum": ["self", "spouse", "child", "parent"],
               "meta:enum": {
                 "self": "Self",
                 "spouse": "Spouse",
@@ -330,11 +311,7 @@
                   "xdm:planType": {
                     "Title": "Plan Type",
                     "type": "string",
-                    "enum": [
-                      "primary",
-                      "secondary",
-                      "tertiary"
-                    ],
+                    "enum": ["primary", "secondary", "tertiary"],
                     "meta:enum": {
                       "primary": "Primary",
                       "secondary": "Secondary",
@@ -345,12 +322,7 @@
                   "xdm:coverageType": {
                     "Title": "Coverage Type",
                     "type": "string",
-                    "enum": [
-                      "medical",
-                      "dental",
-                      "vision",
-                      "accident"
-                    ],
+                    "enum": ["medical", "dental", "vision", "accident"],
                     "meta:enum": {
                       "Medical": "Medical",
                       "Dental": "Dental",

@@ -1,0 +1,42 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/provider",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Provider",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Details of a provider.",
+  "definitions": {
+    "provider": {
+      "properties": {
+        "xdm:providerID": {
+          "Title": "Provider ID",
+          "type": "string",
+          "description": "Unique identifier of the provider."
+        },
+        "xdm:providerName": {
+          "Title": "Provider Name",
+          "description": "Name of the provider.",
+          "$ref": "https://ns.adobe.com/xdm/context/person-name"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/provider"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-05-18"
+}

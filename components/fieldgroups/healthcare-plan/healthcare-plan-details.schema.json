@@ -14,7 +14,7 @@
   "meta:tags": {
     "industry": ["healthcare_services"]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/healthcare-plan"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/plan"],
   "description": "Details of a Health Insurance plan provided by an organization.",
   "definitions": {
     "plan-details": {

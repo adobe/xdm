@@ -171,6 +171,16 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
           "meta:titleId": "campaign-details##xdm:actualCost##title##44591",
           "meta:descriptionId": "campaign-details##xdm:actualCost##description##29241"
+        },
+        "xdm:b2b": {
+          "type": "object",
+          "properties": {
+            "xdm:personType": {
+              "title": "Person Type",
+              "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+              "type": "string"
+            }
+          }
         }
       }
     }

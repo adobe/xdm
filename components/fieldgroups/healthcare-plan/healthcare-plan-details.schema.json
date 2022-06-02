@@ -34,6 +34,11 @@
           "type": "string",
           "description": "Unique identifier of the Owner of the policy which could be owned by an individual , group or an organization."
         },
+        "xdm:isActive": {
+          "Title": "Is Active",
+          "type": "boolean",
+          "description": "Indicates whether the plan is active."
+        },
         "xdm:network": {
           "Title": "Network",
           "type": "string",
@@ -43,6 +48,17 @@
           "Title": "Affiliation",
           "type": "string",
           "description": "An affiliation to a government service, such as the army or navy."
+        },
+        "xdm:planType": {
+          "Title": "Plan Type",
+          "type": "string",
+          "enum": ["primary", "secondary", "tertiary"],
+          "meta:enum": {
+            "primary": "primary",
+            "secondary": "secondary",
+            "tertiary": "tertiary"
+          },
+          "description": "This indicates if the plan is primary,secondary or tertiary plan."
         },
         "xdm:coverageType": {
           "Title": "Coverage Type",

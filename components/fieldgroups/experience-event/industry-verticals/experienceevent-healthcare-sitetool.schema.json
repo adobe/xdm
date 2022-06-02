@@ -74,15 +74,18 @@
                   "meta:xdmType": "map",
                   "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
                   "additionalProperties": {
-                    "xdm:question": {
-                      "Title": "Question",
-                      "type": "string",
-                      "description": "Question of for which the response is collected."
-                    },
-                    "xdm:response": {
-                      "Title": "Response",
-                      "type": "string",
-                      "description": "Response provided by the actor."
+                    "type": "object",
+                    "properties": {
+                      "xdm:question": {
+                        "Title": "Question",
+                        "type": "string",
+                        "description": "Question of for which the response is collected."
+                      },
+                      "xdm:response": {
+                        "Title": "Response",
+                        "type": "string",
+                        "description": "Response provided by the actor."
+                      }
                     }
                   }
                 },
@@ -96,7 +99,7 @@
             "xdm:attachments": {
               "Title": "Attachments",
               "type": "string",
-              "format":"uri",
+              "format": "uri",
               "description": "Attachments exchanged as part of this event."
             },
             "xdm:isKeyEvent": {

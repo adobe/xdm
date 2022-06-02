@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
+    "industry": ["healthcare_services"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/plan"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/plan"],
   "description": "Details of a Health Insurance plan provided by an organization.",
   "definitions": {
     "plan-details": {
@@ -56,11 +52,7 @@
             "xdm:planType": {
               "Title": "Plan Type",
               "type": "string",
-              "enum": [
-                "primary",
-                "secondary",
-                "tertiary"
-              ],
+              "enum": ["primary", "secondary", "tertiary"],
               "meta:enum": {
                 "primary": "primary",
                 "secondary": "secondary",
@@ -71,12 +63,7 @@
             "xdm:coverageType": {
               "Title": "Coverage Type",
               "type": "string",
-              "enum": [
-                "Medical",
-                "Dental",
-                "Vision",
-                "Accident"
-              ],
+              "enum": ["Medical", "Dental", "Vision", "Accident"],
               "meta:enum": {
                 "Medical": "Medical",
                 "Dental": "Dental",

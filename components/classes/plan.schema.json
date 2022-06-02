@@ -36,11 +36,6 @@
             "tertiary": "tertiary"
           },
           "description": "This indicates if the plan is primary,secondary or tertiary plan."
-        },
-        "xdm:isActive": {
-          "Title": "Is Active",
-          "type": "boolean",
-          "description": "Indicates whether the plan is active."
         }
       }
     }

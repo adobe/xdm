@@ -42,9 +42,9 @@
                 "additionalProperties": false,
                 "properties": {
                   "xdm:addressType": {
-                    "Title": "Type of the address indication if the address is home, mailing, or work.",
+                    "Title": "Address Type",
                     "type": "string",
-                    "description": "Member's full name.",
+                    "description": "Type of the address indicating if the address is home, mailing, or work.",
                     "enum": ["Home", "Work", "Mailing", "Other"],
                     "meta:enum": {
                       "Home": "Home Address",

@@ -77,7 +77,7 @@
           "format": "date-time"
         },
         "workfront:createdByEmployeeID": {
-          "title": "Entry Date",
+          "title": "Created By ID",
           "type": "string",
           "description": "The employeeID involved in the CREATE event"
         }

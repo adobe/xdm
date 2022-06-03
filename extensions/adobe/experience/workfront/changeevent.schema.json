@@ -73,13 +73,12 @@
         "workfront:creationDate": {
           "title": "Creation Date",
           "description": "The entry date from the source system",
-          "type": "string", 
+          "type": "string",
           "format": "date-time"
         },
         "workfront:createdByEmployeeID": {
-          "title": "Entry Date" 
-          "description": 
-          "type": "string", 
+          "title": "Entry Date",
+          "type": "string",
           "description": "The employeeID involved in the CREATE event"
         }
       }

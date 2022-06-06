@@ -1,0 +1,95 @@
+{
+  "meta:license": [
+    "Copyright 2022 Bounteous. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixin/sports-entertainment-event-venue",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sports Entertainment Event Venue",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/location"],
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "description": "For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena. ",
+  "definitions": {
+    "sports-entertainment-event-venue": {
+      "properties": {
+        "xdm:eventVenue": {
+          "properties": {
+            "xdm:DMAs": {
+              "description": "The list of associated DMAs (Designated Market Areas) of the venue",
+              "items": {
+                "meta:xdmType": "string",
+                "type": "string"
+              },
+              "meta:xdmType": "array",
+              "title": "DMA List",
+              "type": "array"
+            },
+            "xdm:currency": {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "",
+              "meta:xdmType": "object",
+              "title": "Currency",
+              "type": "object"
+            },
+            "xdm:markets": {
+              "description": "Markets of the venue",
+              "items": {
+                "meta:xdmType": "string",
+                "type": "string"
+              },
+              "meta:xdmType": "array",
+              "required": [],
+              "title": "Markets",
+              "type": "array"
+            },
+            "xdm:physicalAddress": {
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "Physical Address of the event venue.",
+              "meta:xdmType": "object",
+              "title": "Physical Address",
+              "type": "object"
+            },
+            "xdm:seatingCapacity": {
+              "description": "Seating capacity of the venue.",
+              "meta:xdmType": "int",
+              "title": "Seating Capacity",
+              "type": "integer"
+            },
+            "xdm:timeZone": {
+              "description": "Time zone in which the venue resides.",
+              "meta:xdmType": "string",
+              "title": "Time Zone",
+              "type": "string"
+            },
+            "xdm:url": {
+              "description": "URL for the Venue web presence",
+              "meta:xdmType": "string",
+              "required": [],
+              "title": "URL",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/event-venue"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-05-22",
+  "meta:titleId": "",
+  "meta:descriptionId": ""
+}

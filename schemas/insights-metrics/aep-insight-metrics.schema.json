@@ -51,7 +51,6 @@
               "type": "number",
               "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record."
             }
-
           }
         }
       }
@@ -66,7 +65,7 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/destination-segment"
-    }    
+    }
   ],
   "meta:status": "stable"
 }

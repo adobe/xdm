@@ -20,6 +20,9 @@
     "sports-entertainment-event-venue": {
       "properties": {
         "xdm:eventVenue": {
+          "title": "Event Venue",
+          "type": "object",
+          "description": "Details of a live event venue physical location.",
           "properties": {
             "xdm:DMAs": {
               "description": "The list of associated DMAs (Designated Market Areas) of the venue",

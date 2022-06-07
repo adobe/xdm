@@ -361,6 +361,7 @@
                   "xdm:lodgingCheckout": {
                     "type": "object",
                     "title": "lodgingCheckout",
+                    "description": "Lodging check out information, such as receipt URL, and a list of daily charges to populate a guest receipt.",
                     "properties": {
                       "xdm:receiptURL": {
                         "format": "uri-reference",
@@ -373,6 +374,7 @@
                         "description": "List of daily charges.",
                         "title": "dailyCharges",
                         "items": {
+                          "type": "object",
                           "properties": {
                             "xdm:dailyCharge": {
                               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",

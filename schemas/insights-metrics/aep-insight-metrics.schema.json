@@ -60,7 +60,7 @@
       "$ref": "#/definitions/insights-metrics"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/classes/summary-metrics"
+      "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/destination-segment"

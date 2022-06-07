@@ -1,14 +1,13 @@
 {
   "xdm:eventVenue": {
-    "xdm:DMAs": [123, 456],
+    "xdm:DMAs": ["123", "456"],
     "xdm:currency": {
       "xdm:amount": -200757575,
       "xdm:currencyCode": "USD",
       "xdm:conversionDate": "2022-01-01T15:52:25+00:00"
     },
-    "xdm:markets": [463, 123],
+    "xdm:markets": ["463", "123"],
     "xdm:physicalAddress": {
-      "@id": "https://data.adobe.io/entities/address/123",
       "xdm:primary": false,
       "xdm:street1": "345 Park Ave",
       "xdm:city": "San Jose",

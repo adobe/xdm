@@ -16,5 +16,6 @@
     }
   ],
   "xdm:currencyCode": "USD",
-  "xdm:priceTotal": 999.98
+  "xdm:priceTotal": 999.98,
+  "xdm:orderType": "checkout"
 }

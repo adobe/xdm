@@ -45,7 +45,7 @@ Operational Task related fields
 | Property | Type | Required |
 |----------|------|----------|
 | `workfront:actualCompletionTimestamp`| string | Optional |
-| `workfront:actualDurMinutes`| number | Optional |
+| `workfront:actualDurationMinutes`| number | Optional |
 | `workfront:actualStartTimestamp`| string | Optional |
 | `workfront:assignedToEmployeeID`| string | Optional |
 | `workfront:condition`| string | Optional |
@@ -84,15 +84,15 @@ Operational Task related fields
 
 
 
-#### workfront:actualDurMinutes
+#### workfront:actualDurationMinutes
 ##### OpTask Actual Duration Minutes
 
 
-`workfront:actualDurMinutes`
+`workfront:actualDurationMinutes`
 * is optional
 * type: `number`
 
-##### workfront:actualDurMinutes Type
+##### workfront:actualDurationMinutes Type
 
 
 `number`

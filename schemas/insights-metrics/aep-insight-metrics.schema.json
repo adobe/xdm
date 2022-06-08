@@ -51,6 +51,28 @@
               "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record."
             }
           }
+        },
+        "xdm:segment": {
+          "type": "object",
+          "description": "Segment dimension properties.",
+          "properties": {
+            "xdm:ID": {
+              "title": "Segment Identifier",
+              "type": "string",
+              "description": "Unique identifier of the segment."
+            }
+          }
+        },
+        "xdm:destination": {
+          "type": "object",
+          "description": "Destination dimension properties.",
+          "properties": {
+            "xdm:ID": {
+              "title": "Destination Identifier",
+              "type": "string",
+              "description": "Unique identifier of the Destination."
+            }
+          }
         }
       }
     }
@@ -61,9 +83,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/destination-segment"
     }
   ],
   "meta:status": "stable"

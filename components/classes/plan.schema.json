@@ -32,6 +32,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/plan"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
   "meta:status": "experimental"

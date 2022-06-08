@@ -15,7 +15,7 @@
     "industry": ["healthcare_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/medication"],
-  "description": "Details of a Medication.",
+  "description": "Medication details such as brand name, lot number, and quantity.",
   "definitions": {
     "medication-details": {
       "properties": {

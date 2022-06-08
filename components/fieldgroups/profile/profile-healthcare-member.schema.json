@@ -12,110 +12,20 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": ["healthcare_services"]
+    "industry": [
+      "healthcare_services"
+    ]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Details of a person/member/subscriber who may be waiting for a care or may be receiving care or may have already received care.",
+  "description": "Healthcare member details of a person that has or will receive a service or care, such as contact information, primary care physician, and plan information.",
   "definitions": {
     "member-details": {
       "properties": {
-        "xdm:member": {
+        "xdm:memberDetails": {
           "title": "Member",
           "description": "Information about the member.",
           "type": "object",
           "properties": {
-            "xdm:ID": {
-              "title": "Member ID",
-              "type": "string",
-              "description": "Unique Identifier of the patient/member."
-            },
-            "xdm:name": {
-              "title": "Member Name",
-              "description": "Member's full name.",
-              "$ref": "https://ns.adobe.com/xdm/context/person-name"
-            },
-            "xdm:addressDetails": {
-              "title": "Address Details",
-              "type": "array",
-              "items": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "xdm:addressType": {
-                    "title": "Address Type",
-                    "type": "string",
-                    "description": "Type of the address indicating if the address is home, mailing, or work.",
-                    "enum": ["home", "work", "mailing", "other"],
-                    "meta:enum": {
-                      "home": "Home Address",
-                      "work": "Work Address",
-                      "mailing": "Mailing Address",
-                      "other": "Other Address"
-                    }
-                  },
-                  "xdm:address": {
-                    "title": "Member Address",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
-                  },
-                  "xdm:effectiveStartDate": {
-                    "title": "Effective Start Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Effective start date of the member's address."
-                  },
-                  "xdm:effectiveEndDate": {
-                    "title": "Effective End Date",
-                    "type": "string",
-                    "format": "date-time",
-                    "description": "Effective end date of the member's address."
-                  }
-                }
-              }
-            },
-            "xdm:phoneNumber": {
-              "title": "Phone Number",
-              "description": "Member's phone number.",
-              "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
-            },
-            "xdm:birthDate": {
-              "title": "Birth date(YYYY-MM-DD)",
-              "type": "string",
-              "format": "date",
-              "description": "Date of birth of the patient/member."
-            },
-            "xdm:gender": {
-              "title": "Gender",
-              "type": "string",
-              "enum": ["male", "female", "not_specified", "non_specific"],
-              "meta:enum": {
-                "male": "Male",
-                "female": "Female",
-                "not_specified": "Not Specified",
-                "non_specific": "Non-specific"
-              },
-              "description": "Gender of the patient/member.",
-              "default": "not_specified"
-            },
-            "xdm:maritalStatus": {
-              "title": "Marital Status",
-              "type": "string",
-              "enum": [
-                "married",
-                "single",
-                "divorced",
-                "widowed",
-                "not_specified"
-              ],
-              "meta:enum": {
-                "married": "Married",
-                "single": "Single",
-                "divorced": "Divorced",
-                "widowed": "Widowed",
-                "not_specified": "Not Specified"
-              },
-              "description": "Describes a person's relationship with a significant other.",
-              "default": "not_specified"
-            },
             "xdm:nationality": {
               "title": "Nationality",
               "type": "string",
@@ -143,17 +53,6 @@
                 }
               }
             },
-            "xdm:emailAddresses": {
-              "title": "Member Email Addresses",
-              "type": "array",
-              "items": {
-                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
-              }
-            },
-            "xdm:organization": {
-              "title": "Organization",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
-            },
             "xdm:primaryCarePhysicians": {
               "type": "array",
               "items": {
@@ -168,7 +67,7 @@
                   "xdm:fullName": {
                     "title": "Full Name",
                     "type": "string",
-                    "description": "Primary Care Physician full name."
+                    "description": "Primary care physician's full name."
                   },
                   "xdm:startDate": {
                     "title": "Start Date",
@@ -210,7 +109,7 @@
             "xdm:preferredAvaiability": {
               "title": "Preferred Availability",
               "type": "string",
-              "description": "Patient prefered day and time availability for an appointment."
+              "description": "Patient's preferred day and time availability for an appointment."
             },
             "xdm:medications": {
               "title": "Medications",
@@ -256,7 +155,7 @@
             "xdm:primaryMemberID": {
               "title": "Primary Member ID",
               "type": "string",
-              "description": "Unique Identifier of the primary subscriber if the member is dependent."
+              "description": "Unique identifier of the primary subscriber if the member is a dependent."
             },
             "xdm:beneficiaryRelationship": {
               "title": "Beneficiary Relationship",
@@ -273,7 +172,7 @@
             "xdm:billingAccountID": {
               "title": "Billing Account ID",
               "type": "string",
-              "description": "Unique Identifier of the billing account."
+              "description": "Unique identifier of the billing account."
             },
             "xdm:specialists": {
               "title": "Specialist",
@@ -300,16 +199,6 @@
                 }
               }
             },
-            "xdm:isLead": {
-              "title": "Is Lead",
-              "type": "boolean",
-              "description": "Boolean flag indicates if this member is a lead."
-            },
-            "xdm:isOpportunity": {
-              "title": "Is Opportunity",
-              "type": "boolean",
-              "description": "Boolean flag indicates if this this member is a opportunity."
-            },
             "xdm:isDeceased": {
               "title": "Deceased Indicator",
               "type": "boolean",
@@ -331,7 +220,7 @@
                   "xdm:planID": {
                     "title": "Plan Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the enrolled plan."
+                    "description": "Unique identifier for the plan enrolled in by the member."
                   },
                   "xdm:coverageStartDate": {
                     "title": "Coverage Start Date",
@@ -361,6 +250,12 @@
   "allOf": [
     {
       "$ref": "#/definitions/member-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
     }
   ],
   "meta:status": "experimental"

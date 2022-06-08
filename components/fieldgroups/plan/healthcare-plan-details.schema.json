@@ -15,7 +15,7 @@
     "industry": ["healthcare_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/plan"],
-  "description": "Details of benefits received by a patient consisting of medical care (provided directly or through insurance or reimbursement) under any hospital or medical service policy, plan contract, or HMO contract offered by a health insurance company or a group health plan.",
+  "description": "Patient medical plan details such as network, type, and active status.",
   "definitions": {
     "health-plan-details": {
       "properties": {
@@ -106,12 +106,7 @@
               "title": "Last Verification Date",
               "type": "string",
               "format": "date-time",
-              "description": "The date on which this plan was last verified."
-            },
-            "xdm:cost": {
-              "title": "Plan Cost",
-              "type": "number",
-              "description": "The cost associated to this insurance plan."
+              "description": "The date on which the plan was last verified."
             }
           }
         }

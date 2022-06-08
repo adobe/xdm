@@ -69,13 +69,7 @@
             "xdm:planType": {
               "title": "Plan Type",
               "type": "string",
-              "enum": [
-                "hmo",
-                "ppo",
-                "epo",
-                "pos",
-                "hdhp"
-              ],
+              "enum": ["hmo", "ppo", "epo", "pos", "hdhp"],
               "meta:enum": {
                 "hmo": "HMO",
                 "epo": "PPO",
@@ -87,12 +81,7 @@
             "xdm:planLevel": {
               "title": "Plan Level",
               "type": "string",
-              "enum": [
-                "primary",
-                "secondary",
-                "tertiary",
-                "quaternary"
-              ],
+              "enum": ["primary", "secondary", "tertiary", "quaternary"],
               "meta:enum": {
                 "primary": "Primary",
                 "secondary": "Secondary",
@@ -104,12 +93,7 @@
             "xdm:coverageType": {
               "title": "Coverage Type",
               "type": "string",
-              "enum": [
-                "medical",
-                "dental",
-                "vision",
-                "accident"
-              ],
+              "enum": ["medical", "dental", "vision", "accident"],
               "meta:enum": {
                 "medical": "Medical",
                 "dental": "Dental",

@@ -12,9 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
+    "industry": ["healthcare_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/provider"],
   "description": "Details of an individual health professional or a health facility organization licensed to provide health care diagnosis and treatment services including medication, surgery and medical devices.",
@@ -60,10 +58,7 @@
               "title": "Service Provider Class/Category",
               "type": "string",
               "description": "Service provider classification based on class or category like (Patient-care) , (non-Ptaient care) etc.",
-              "enum": [
-                "patient_care",
-                "non_patient_care"
-              ],
+              "enum": ["patient_care", "non_patient_care"],
               "meta:enum": {
                 "patient_care": "Patient Care",
                 "non_patient_care": "Non-Patient Care"

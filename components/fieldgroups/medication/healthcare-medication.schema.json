@@ -12,13 +12,9 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
+    "industry": ["healthcare_services"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/medication"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/medication"],
   "description": "Details of a Medication.",
   "definitions": {
     "medication-details": {
@@ -39,11 +35,7 @@
             "xdm:status": {
               "title": "Status",
               "type": "string",
-              "enum": [
-                "active",
-                "inactive",
-                "entered-in-error"
-              ],
+              "enum": ["active", "inactive", "entered-in-error"],
               "meta:enum": {
                 "active": "Active",
                 "inactive": "Inactive",

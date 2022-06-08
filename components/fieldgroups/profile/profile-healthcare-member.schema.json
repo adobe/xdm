@@ -204,7 +204,7 @@
                   "title": "Relationship To Member",
                   "type": "string",
                   "description": "Emergency contact's relationship to the member."
-                }				
+                }
               }
             },
             "xdm:preferredAvaiability": {
@@ -233,7 +233,7 @@
                   "xdm:refillLocation": {
                     "title": "Medication Refill Location",
                     "$ref": "https://ns.adobe.com/xdm/common/address"
-                  },				  
+                  },
                   "xdm:startDate": {
                     "title": "Medication Start Date",
                     "type": "string",
@@ -314,13 +314,13 @@
               "title": "Deceased Indicator",
               "type": "boolean",
               "description": "Boolean flag indicating if the member is deceased."
-            },			
+            },
             "xdm:deceasedDate": {
               "title": "Deceased Date",
               "type": "string",
-			  "format": "date-time",
+              "format": "date-time",
               "description": "Deceased date if the patient is deceased."
-            },						
+            },
             "xdm:plans": {
               "title": "Enrolled Plans",
               "type": "array",

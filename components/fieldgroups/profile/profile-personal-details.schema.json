@@ -58,7 +58,7 @@
           "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951"
         },
         "xdm:shippingAddress": {
-          "title": "Home Address",
+          "title": "Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",
           "description": "Shipping postal address."
         },

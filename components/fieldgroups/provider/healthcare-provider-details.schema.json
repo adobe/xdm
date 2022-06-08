@@ -63,7 +63,7 @@
               "description": "Specialities offered by this provider.",
               "type": "array",
               "items": {
-                "type": "string",
+                "type": "string"
               }
             },
             "xdm:phoneNumber": {
@@ -79,7 +79,7 @@
             "xdm:emailAddress": {
               "title": "Provider's Email Address",
               "description": "Provider's email address.",
-              "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+              "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
             },
             "xdm:addressDetails": {
               "title": "Provider Address Details",

@@ -12,9 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
+    "industry": ["healthcare_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Healthcare member details of a person that has or will receive a service or care, such as contact information, primary care physician, and plan information.",

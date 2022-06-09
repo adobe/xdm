@@ -372,6 +372,26 @@
           "$ref": "#/definitions/marketing-with-subscriptions",
           "meta:titleId": "consents-and-preferences##xdm:sms##title##68521",
           "meta:descriptionId": "consents-and-preferences##xdm:sms##description##45961"
+        },
+        "xdm:call": {
+          "title": "Receive calls",
+          "description": "User permits receiving calls",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:fax": {
+          "title": "Receive fax",
+          "description": "User permits receiving fax",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:commercialEmail": {
+          "title": "Receive commercial emails",
+          "description": "User permits receiving commercial emails",
+          "$ref": "#/definitions/marketing-field"
+        },
+        "xdm:postalMail": {
+          "title": "Receive postal mail",
+          "description": "User permits receiving postal mail",
+          "$ref": "#/definitions/marketing-field"
         }
       },
       "meta:titleId": "consents-and-preferences##base-marketing-with-subscriptions##title##25111",

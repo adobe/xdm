@@ -28,7 +28,6 @@ Captures properties related to business campaign details.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:actualCost](#xdmactualcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
-| [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:budgetedCost](#xdmbudgetedcost) | Currency | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignEndDate](#xdmcampaignenddate) | `string` | Optional | XDM Business Campaign Details (this schema) |
 | [xdm:campaignProgressionName](#xdmcampaignprogressionname) | `string` | Optional | XDM Business Campaign Details (this schema) |
@@ -64,50 +63,6 @@ Captures properties related to business campaign details.
 
 
 * [Currency](../../datatypes/currency.schema.md) – `https://ns.adobe.com/xdm/datatypes/currency`
-
-
-
-
-
-## xdm:b2b
-
-
-`xdm:b2b`
-* is optional
-* type: `object`
-* defined in this schema
-
-### xdm:b2b Type
-
-
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-| `xdm:personType`| string | Optional |
-
-
-
-#### xdm:personType
-##### Person Type
-
-Use this property to map this campaign to the respective measure, eg. Marketo Measure.
-
-`xdm:personType`
-* is optional
-* type: `string`
-
-##### xdm:personType Type
-
-
-`string`
-
-
-
-
-
-
 
 
 

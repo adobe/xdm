@@ -22,17 +22,6 @@ A Summary Metric record provides pre-summarized metrics with grouping dimensions
 ```json
 {
   "xdm:timestamp": "2022-01-01T00:00:00+00:00",
-  "xdm:commerce": {
-    "xdm:purchases": {
-      "xdm:value": 2500
-    }
-  }
-}
-```
-
-```json
-{
-  "xdm:timestamp": "2022-01-01T00:00:00+00:00",
   "xdm:placeContext": {
     "xdm:geo": {
       "xdm:stateProvince": "TX",
@@ -42,6 +31,17 @@ A Summary Metric record provides pre-summarized metrics with grouping dimensions
   "xdm:commerce": {
     "xdm:purchases": {
       "xdm:value": 500
+    }
+  }
+}
+```
+
+```json
+{
+  "xdm:timestamp": "2022-01-01T00:00:00+00:00",
+  "xdm:commerce": {
+    "xdm:purchases": {
+      "xdm:value": 2500
     }
   }
 }
@@ -175,6 +175,7 @@ The primary event type for this time-series record.
 | `media.sessionEnd` | Media sessionEnd |
 | `media.stateStart` | Media stateStart |
 | `media.stateEnd` | Media stateEnd |
+| `media.statesUpdate` | Media statesUpdate |
 
 
 

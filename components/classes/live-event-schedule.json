@@ -19,13 +19,13 @@
   "definitions": {
     "live-event-venue": {
       "properties": {
-        "xdm:eventName": {
+        "xdm:liveEventName": {
           "title": "Event Name",
           "description": "Name of the event",
           "type": "string",
           "meta:xdmType": "string"
         },
-        "xdm:eventID": {
+        "xdm:liveEventID": {
           "title": "Event ID",
           "description": "Unique Identifier for the Live Event",
           "type": "string",

@@ -88,6 +88,12 @@
               "description": "Indicates if tickets are still available for the event or not.",
               "type": "boolean",
               "meta:xdmType": "boolean"
+            },
+            "xdm:eventSeasonName": {
+              "title": "Season Name",
+              "description": "Descriptive name of the event season, if it is an event within a series. For example, a sports season.",
+              "type": "string",
+              "meta:xdmType": "string"
             }
           }
         }

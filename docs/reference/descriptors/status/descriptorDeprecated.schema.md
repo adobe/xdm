@@ -23,7 +23,10 @@ Used to mark one or more standard fields as deprecated for the specific ImsOrg.
   "@type": "xdm:descriptorDeprecated",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/courtesyTitle"
+  "xdm:sourceProperty": [
+    "/courtesyTitle",
+    "/suffix"
+  ]
 }
 ```
 
@@ -41,10 +44,7 @@ Used to mark one or more standard fields as deprecated for the specific ImsOrg.
   "@type": "xdm:descriptorDeprecated",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": [
-    "/courtesyTitle",
-    "/suffix"
-  ]
+  "xdm:sourceProperty": "/courtesyTitle"
 }
 ```
 

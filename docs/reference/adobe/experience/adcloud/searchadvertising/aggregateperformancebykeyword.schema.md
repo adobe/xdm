@@ -274,6 +274,7 @@ The primary event type for this time-series record.
 | `media.sessionEnd` | Media sessionEnd |
 | `media.stateStart` | Media stateStart |
 | `media.stateEnd` | Media stateEnd |
+| `media.statesUpdate` | Media statesUpdate |
 
 
 

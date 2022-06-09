@@ -1,34 +1,38 @@
 {
   "xdm:eventPurchaseDetails": {
+    "xdm:ticketPurchaseID": "ABC-123",
     "xdm:eventID": "",
     "xdm:ticketMasterEventCode": 1,
     "xdm:eventName": "Sports Game",
     "xdm:corporateSponsorshipFlg": true,
-    "xdm:tickets": {
-      "xdm:deliveryMethod": "",
-      "xdm:rowName": "",
-      "xdm:seatingArea": 258,
-      "xdm:seatName": "pedals",
-      "xdm:seatingAreaNumeric": "aluminum",
-      "xdm:sectionCategory": "",
-      "xdm:sectionGroup": 1,
-      "xdm:sectionLevel": 2,
-      "xdm:sectionName": 50,
-      "xdm:sectionRowName": 1,
-      "xdm:ticketClassCategory": "premium",
-      "xdm:ticketClassGroupName": "box",
-      "xdm:ticketClassName": "63141",
-      "xdm:ticketType": 25,
-      "xdm:ticketPurchase": {
-        "transactionAmount": {
-          "amount": 54.32,
-          "conversionDate": "2022-01-01T20:20:39+00:00",
-          "currencyCode": "USD"
-        },
-        "transactionDate": "2022-01-01T20:20:39+00:00",
-        "transactionID": "ABC-123",
-        "transactionType": "Sample value"
+    "xdm:tickets": [
+      {
+        "xdm:barcodeID": "8819624561542398",
+        "xdm:deliveryMethod": "digital",
+        "xdm:rowName": "A",
+        "xdm:seatingArea": "balcony",
+        "xdm:seatName": "A1",
+        "xdm:seatingAreaNumeric": 1,
+        "xdm:sectionCategory": "A",
+        "xdm:sectionGroup": 1,
+        "xdm:sectionLevel": 2,
+        "xdm:sectionName": 50,
+        "xdm:sectionRowName": 1,
+        "xdm:ticketClassCategory": "premium",
+        "xdm:ticketClassGroupName": "box",
+        "xdm:ticketClassName": "63141",
+        "xdm:ticketType": "single",
+        "xdm:ticketPurchase": {
+          "transactionAmount": {
+            "amount": 54.32,
+            "conversionDate": "2022-01-01T20:20:39+00:00",
+            "currencyCode": "USD"
+          },
+          "transactionDate": "2022-01-01T20:20:39+00:00",
+          "transactionID": "ABC-123",
+          "transactionType": "Sample value"
+        }
       }
-    }
+    ]
   }
 }

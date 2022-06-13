@@ -29,17 +29,17 @@
           "type": "object",
           "properties": {
             "xdm:name": {
-              "Title": "Name",
+              "Title": "Site Tool Name",
               "type": "string",
               "description": "Name of the site tool like chatbot, survey ..etc."
             },
             "xdm:section": {
-              "Title": "Section",
+              "Title": "Site Tool Section",
               "type": "string",
               "description": "Section of the site tool like main , sub."
             },
             "xdm:actor": {
-              "Title": "Actor.",
+              "Title": "Actor",
               "type": "string",
               "description": "A person/member who did the action.",
               "enum": [
@@ -95,13 +95,7 @@
                   "description": "Score secured by the actor based on event responses."
                 }
               }
-            },
-            "xdm:attachments": {
-              "Title": "Attachments",
-              "type": "string",
-              "format": "uri",
-              "description": "Attachments exchanged as part of this event."
-            },
+            }
             "xdm:isKeyEvent": {
               "Title": "Is Key Event",
               "type": "boolean",
@@ -115,11 +109,7 @@
   "allOf": [
     {
       "$ref": "#/definitions/sitetool-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2022-05-18"
+  "meta:status": "experimental"
 }

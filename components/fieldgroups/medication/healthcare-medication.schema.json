@@ -35,6 +35,7 @@
             "xdm:status": {
               "title": "Status",
               "type": "string",
+              "description": "Status indicating whether the drug/medication is active or not.",
               "enum": ["active", "inactive", "entered-in-error"],
               "meta:enum": {
                 "active": "Active",
@@ -52,10 +53,10 @@
               "description": "Generic name of the drug.",
               "type": "string"
             },
-            "xdm:manufacturer": {
-              "title": "Manufacturer",
+            "xdm:manufacturerName": {
+              "title": "Manufacturer Name",
               "description": "Manufacturer of the medication.",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+              "type": "string"
             },
             "xdm:dosageUnitNumber": {
               "title": "Dosage Unit Number",

@@ -23,11 +23,13 @@ Data associated with a change event within Workfront project execution
 | [@id](#id) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
 | [workfront:completed](#workfrontcompleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:created](#workfrontcreated) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:createdByEmployeeID](#workfrontcreatedbyemployeeid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:creationDate](#workfrontcreationdate) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:customData](#workfrontcustomdata) | `object` | Optional | Workfront Change Event (this schema) |
 | [workfront:deleted](#workfrontdeleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectID](#workfrontobjectid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:objectType](#workfrontobjecttype) | `enum` | Optional | Workfront Change Event (this schema) |
+| [workfront:objectType](#workfrontobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:parentID](#workfrontparentid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:updated](#workfrontupdated) | `integer` | Optional | Workfront Change Event (this schema) |
@@ -90,6 +92,47 @@ Set to 1 if this was a created event
 
 
 `integer`
+
+
+
+
+
+
+## workfront:createdByEmployeeID
+### Created By ID
+
+The employeeID involved in the CREATE event
+
+`workfront:createdByEmployeeID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:createdByEmployeeID Type
+
+
+`string`
+
+
+
+
+
+
+## workfront:creationDate
+### Creation Date
+
+The entry date from the source system
+
+`workfront:creationDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:creationDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
@@ -187,17 +230,15 @@ The type of object
 
 `workfront:objectType`
 * is optional
-* type: `enum`
+* type: `string`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#workfrontobjecttype-known-values).
+### workfront:objectType Type
 
-### workfront:objectType Known Values
-| Value | Description |
-|-------|-------------|
-| `TASK` |  |
-| `PROJECT` |  |
-| `ISSUE` |  |
+
+`string`
+
+
 
 
 
@@ -359,6 +400,7 @@ The primary event type for this time-series record.
 | `media.sessionEnd` | Media sessionEnd |
 | `media.stateStart` | Media stateStart |
 | `media.stateEnd` | Media stateEnd |
+| `media.statesUpdate` | Media statesUpdate |
 
 
 

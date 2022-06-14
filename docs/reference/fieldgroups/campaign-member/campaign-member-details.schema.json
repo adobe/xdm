@@ -130,6 +130,16 @@
                     "format": "date-time",
                     "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##46151",
                     "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##81781"
+                },
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:personType": {
+                            "title": "Person Type",
+                            "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+                            "type": "string"
+                        }
+                    }
                 }
             }
         }

@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2022 Bounteous. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/live-event-schedule",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Live Event Schedule",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "description": "For Live Event schedule data, such as a traveling concert schedule or a sports team's schedule.",
+  "definitions": {
+    "live-event-schedule": {
+      "properties": {
+        "xdm:liveEventName": {
+          "title": "Live Event Name",
+          "description": "Name of the event",
+          "type": "string",
+          "meta:xdmType": "string"
+        },
+        "xdm:liveEventID": {
+          "title": "Live Event ID",
+          "description": "Unique Identifier for the Live Event",
+          "type": "string",
+          "meta:xdmType": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
+    },
+    {
+      "$ref": "#/definitions/live-event-schedule"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-05-24"
+}

@@ -8,6 +8,34 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpageID": "1234",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source": "journey",
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType": "internal",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": "December Offers"
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName": "December Offers",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/formData": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": {
+        "Winter_Carnival_Offers": {
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": "y",
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type": "email"
+        },
+        "Black_Friday_Offers": {
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": "n",
+          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type": "email"
+        }
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/consents": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/channel": {
+          "email": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": "y"
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/idSpecific": {
+          "johndoe@adobe.com": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": "y"
+          }
+        }
+      },
+      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberContactAddress": "johndoe@adobe.com"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalData": {
+      "Campaign_Id": "Nike@1234"
+    }
   }
 }

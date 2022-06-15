@@ -91,7 +91,7 @@
                   "xdm:addressType": {
                     "title": "Address Type",
                     "type": "string",
-                    "description": "Type of the address indicating if the address is home, mailing, or work."
+                    "description": "Type of address indicating where the provider provides services."
                   },
                   "xdm:address": {
                     "title": "Provider Address",

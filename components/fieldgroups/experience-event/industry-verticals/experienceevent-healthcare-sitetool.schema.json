@@ -1,0 +1,115 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-healthcare-sitetool",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sitetool Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Data that is collected by sitetools like chatbot,survey ..etc.",
+  "definitions": {
+    "sitetool-details": {
+      "properties": {
+        "xdm:sitetool": {
+          "Title": "Site Tool",
+          "description": "Information collected by sitetool.",
+          "type": "object",
+          "properties": {
+            "xdm:name": {
+              "Title": "Site Tool Name",
+              "type": "string",
+              "description": "Name of the site tool like chatbot, survey ..etc."
+            },
+            "xdm:section": {
+              "Title": "Site Tool Section",
+              "type": "string",
+              "description": "Section of the site tool like main , sub."
+            },
+            "xdm:actor": {
+              "Title": "Actor",
+              "type": "string",
+              "description": "A person/member who did the action.",
+              "enum": [
+                "Member",
+                "Practitioner",
+                "RelatedPerson"
+              ],
+              "meta:enum": {
+                "Member": "Member",
+                "Practitioner": "Practitioner",
+                "RelatedPerson": "RelatedPerson"
+              }
+            },
+            "xdm:actorID": {
+              "Title": "Actor ID",
+              "type": "string",
+              "description": "Reference to the actor who could be a member,practionner or a relatedperson."
+            },
+            "xdm:dataGatheringEvent": {
+              "Title": "Data Gathering Event",
+              "type": "object",
+              "description": "Indicates if this event is a data gathering event and the other event details.",
+              "properties": {
+                "xdm:isTrue": {
+                  "Title": "Is True",
+                  "type": "boolean",
+                  "description": "Indicates if this event is a data gathering event like quiz,survey, poll."
+                },
+                "xdm:data": {
+                  "Title": "Data",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
+                  "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:question": {
+                        "Title": "Question",
+                        "type": "string",
+                        "description": "Question of for which the response is collected."
+                      },
+                      "xdm:response": {
+                        "Title": "Response",
+                        "type": "string",
+                        "description": "Response provided by the actor."
+                      }
+                    }
+                  }
+                },
+                "xdm:score": {
+                  "Title": "Score",
+                  "type": "integer",
+                  "description": "Score secured by the actor based on event responses."
+                }
+              }
+            },
+            "xdm:isKeyEvent": {
+              "Title": "Is Key Event",
+              "type": "boolean",
+              "description": "Indicates if this event is a key event."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/sitetool-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/errordetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/errorDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Error details information",
   "type": "object",
@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "description": "Error details information.",
   "definitions": {
-    "errordetails": {
+    "errorDetails": {
       "properties": {
         "xdm:errorID": {
           "title": "Error ID",
@@ -22,7 +22,7 @@
           "description": "The error ID."
         },
         "xdm:errorSource": {
-          "title": "Error source",
+          "title": "Error Source",
           "type": "string",
           "description": "The error source.",
           "enum": ["player", "external"],
@@ -37,7 +37,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/errordetails"
+      "$ref": "#/definitions/errorDetails"
     }
   ]
 }

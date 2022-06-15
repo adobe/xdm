@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/advertisingpoddetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising Pod details information",
   "type": "object",
@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "description": "Advertising Pod details information.",
   "definitions": {
-    "advertisingpoddetails": {
+    "advertisingPodDetails": {
       "properties": {
         "xdm:friendlyName": {
           "title": "Pod Friendly Name",
@@ -36,7 +36,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/advertisingpoddetails"
+      "$ref": "#/definitions/advertisingPodDetails"
     }
   ]
 }

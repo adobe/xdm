@@ -1,44 +1,46 @@
 {
-  "xdm:playereventdetails": {
-    "xdm:playhead": 831,
-    "xdm:sessionId": "1234567890"
-  },
-  "xdm:sessiondetails": {
-    "xdm:id": "123456789",
-    "xdm:length": 100,
-    "xdm:contentType": "VOD",
-    "xdm:playerName": "playerName",
-    "xdm:channel": "channel"
-  },
-  "xdm:advertisingdetails": {
-    "xdm:id": "123456789",
-    "xdm:length": 100,
-    "xdm:podPosition": 1,
-    "xdm:playerName": "playerName",
-    "xdm:isCompleted": false,
-    "xdm:isStarted": false,
-    "xdm:timePlayed": 50,
-    "xdm:adBreakId": "123"
-  },
-  "xdm:advertisingpoddetails": {
-    "xdm:index": 2,
-    "xdm:second": 123
-  },
-  "xdm:chapterdetails": {
-    "xdm:length": 100,
-    "xdm:offset": 50,
-    "xdm:index": 2,
-    "xdm:isStarted": false,
-    "xdm:isCompleted": false,
-    "xdm:timePlayed": 70
-  },
-  "xdm:errordetails": {
-    "xdm:errorID": "errorID",
-    "xdm:errorSource": "player"
-  },
-  "xdm:qoedatadetails": {
-    "xdm:bitrate": 100
-  },
-  "xdm:statesStart": ["mute", "pictureInPicture"],
-  "xdm:statesEnd": ["fullScreen"]
+  "xdm:mediaCollection": {
+    "xdm:playerEventDetails": {
+      "xdm:playhead": 831,
+      "xdm:sessionID": "1234567890"
+    },
+    "xdm:sessionDetails": {
+      "xdm:ID": "123456789",
+      "xdm:length": 100,
+      "xdm:contentType": "VOD",
+      "xdm:playerName": "playerName",
+      "xdm:channel": "channel"
+    },
+    "xdm:advertisingDetails": {
+      "xdm:ID": "123456789",
+      "xdm:length": 100,
+      "xdm:podPosition": 1,
+      "xdm:playerName": "playerName",
+      "xdm:isCompleted": false,
+      "xdm:isStarted": false,
+      "xdm:timePlayed": 50,
+      "xdm:adBreakID": "123"
+    },
+    "xdm:advertisingPodDetails": {
+      "xdm:index": 2,
+      "xdm:second": 123
+    },
+    "xdm:chapterDetails": {
+      "xdm:length": 100,
+      "xdm:offset": 50,
+      "xdm:index": 2,
+      "xdm:isStarted": false,
+      "xdm:isCompleted": false,
+      "xdm:timePlayed": 70
+    },
+    "xdm:errorDetails": {
+      "xdm:errorID": "errorID",
+      "xdm:errorSource": "player"
+    },
+    "xdm:qoeDataDetails": {
+      "xdm:bitrate": 100
+    },
+    "xdm:statesStart": ["mute", "pictureInPicture"],
+    "xdm:statesEnd": ["fullScreen"]
+  }
 }

@@ -115,6 +115,112 @@
                 "internal": "Internal for AJO Landing Page",
                 "external": "External for Non-AJO Landing Page"
               }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/formData": {
+              "title": "Form Data",
+              "type": "object",
+              "description": "Data filled by the user on the landing page form.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions": {
+                  "title": "Subscription details.",
+                  "type": "object",
+                  "description": "Subscription details input by the end user in the landing page.",
+                  "meta:xdmType": "map",
+                  "additionalProperties": {
+                    "type": "object",
+                    "description": "Subscription details input by the end user in the landing page. ",
+                    "properties": {
+                      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": {
+                        "title": "Subscription Choice",
+                        "type": "string",
+                        "description": "Subscription Choice for the Subscription List.",
+                        "enum": ["y", "n", "p", "u"],
+                        "meta:enum": {
+                          "y": "Subscribed to Subscription List",
+                          "n": "Unsubscribed to Subscription List",
+                          "p": "Subscription Pending",
+                          "u": "Subscription Unknown"
+                        }
+                      },
+                      "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type": {
+                        "title": "Subscription Type",
+                        "type": "string",
+                        "description": "The type of subscription."
+                      }
+                    }
+                  }
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/consents": {
+                  "title": "Consent details.",
+                  "type": "object",
+                  "description": "Consent details input by the end user in the landing page.",
+                  "properties": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/channel": {
+                      "title": "Channel level consent details",
+                      "type": "object",
+                      "description": "Consent details specific to channel like email/push etc",
+                      "meta:xdmType": "map",
+                      "additionalProperties": {
+                        "type": "object",
+                        "description": "Consent details specific to channel like email/push etc",
+                        "properties": {
+                          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": {
+                            "title": "Consent choice",
+                            "type": "string",
+                            "description": "Consent choice for the channel.",
+                            "enum": ["y", "n", "p", "u"],
+                            "meta:enum": {
+                              "y": "Subscribed to channel",
+                              "n": "Unsubscribed to channel",
+                              "p": "Subscription Pending",
+                              "u": "Subscription Unknown"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/idSpecific": {
+                      "title": "Contact address level consent details.",
+                      "type": "object",
+                      "description": "Consent details specific to contact address.",
+                      "meta:xdmType": "map",
+                      "additionalProperties": {
+                        "type": "object",
+                        "description": "Consent details specific to contact address.",
+                        "properties": {
+                          "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val": {
+                            "title": "Consent choice",
+                            "type": "string",
+                            "description": "Consent choice for the contact address.",
+                            "enum": ["y", "n", "p", "u"],
+                            "meta:enum": {
+                              "y": "Contact address subscribed",
+                              "n": "Contact address unsubscribed",
+                              "p": "Subscription Pending",
+                              "u": "Subscription Unknown"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberContactAddress": {
+                  "title": "Contact address specified by the subscriber.",
+                  "type": "string",
+                  "description": "Contact address specified by the subscriber."
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalData": {
+              "title": "Additional Data",
+              "type": "object",
+              "description": "Additional data added by the marketer while authoring the landing page.",
+              "meta:xdmType": "map",
+              "additionalProperties": {
+                "type": "string",
+                "description": "Values of additional data added by the marketer while authoring the landing page. "
+              }
             }
           }
         },

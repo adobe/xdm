@@ -105,7 +105,7 @@ undefined
 #### xdm:addressType
 ##### Address Type
 
-Type of the address indicating if the address is home, mailing, or work.
+Type of address indicating where the provider provides services.
 
 `xdm:addressType`
 * is optional

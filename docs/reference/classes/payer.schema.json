@@ -1,0 +1,46 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/classes/payer",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Payer",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record"
+    ],
+    "description": "Payer business entity to collect data pertaining to insurance companies (e.g. health insurance).",
+    "definitions": {
+        "payer": {
+            "properties": {
+                "xdm:payerID": {
+                    "title": "Payer ID",
+                    "type": "string",
+                    "description": "Unique identifier of the payer."
+                },
+                "xdm:payerName": {
+                    "title": "Payer Name",
+                    "description": "Name of the payer.",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/payer"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

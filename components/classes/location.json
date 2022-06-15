@@ -15,20 +15,17 @@
   "meta:tags": {
     "industry": ["travel_and_hospitality"]
   },
-  "description": "For Live Event Location information, such as a concert hall or sports arena. ",
+  "description": "For Live Event Location information, such as a concert hall or sports arena.",
   "definitions": {
     "location": {
       "properties": {
         "xdm:locationID": {
-          "description": "Unique identifier for the Location",
-          "meta:xdmType": "string",
+          "description": "Unique identifier for the Location.",
           "title": "Location Identifier",
           "type": "string"
         },
         "xdm:locationName": {
-          "description": "Name of the location",
-          "meta:xdmType": "string",
-          "required": [],
+          "description": "Name of the location.",
           "title": "Location Name",
           "type": "string"
         }
@@ -43,8 +40,5 @@
       "$ref": "#/definitions/location"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2022-05-22",
-  "meta:titleId": "",
-  "meta:descriptionId": ""
+  "meta:status": "experimental"
 }

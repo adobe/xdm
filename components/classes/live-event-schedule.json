@@ -21,15 +21,13 @@
       "properties": {
         "xdm:liveEventName": {
           "title": "Live Event Name",
-          "description": "Name of the event",
-          "type": "string",
-          "meta:xdmType": "string"
+          "description": "Name of the event.",
+          "type": "string"
         },
         "xdm:liveEventID": {
           "title": "Live Event ID",
           "description": "Unique Identifier for the Live Event",
-          "type": "string",
-          "meta:xdmType": "string"
+          "type": "string"
         }
       }
     }
@@ -42,6 +40,5 @@
       "$ref": "#/definitions/live-event-schedule"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2022-05-24"
+  "meta:status": "experimental"
 }

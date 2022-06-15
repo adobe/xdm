@@ -89,6 +89,7 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/mobilesdk/android` | Adobe Experience Platform Mobile SDK for Android |
 | `https://ns.adobe.com/experience/mobilesdk/ios/reactnative` | Adobe Experience Platform Mobile SDK for iOS React Native |
 | `https://ns.adobe.com/experience/mobilesdk/android/reactnative` | Adobe Experience Platform Mobile SDK for Android React Native |
+| `https://ns.adobe.com/experience/serverapi` | Adobe Experience Platform Edge Network Server API |
 
 
 

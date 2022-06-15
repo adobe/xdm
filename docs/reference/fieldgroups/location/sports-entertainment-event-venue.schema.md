@@ -5,16 +5,11 @@
 https://ns.adobe.com/xdm/mixins/sports-entertainment-event-venue
 ```
 
-For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena. 
+For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/location/sports-entertainment-event-venue.schema.json](fieldgroups/location/sports-entertainment-event-venue.schema.json) |
-## Schema Hierarchy
-
-* Sports Entertainment Event Venue `https://ns.adobe.com/xdm/mixins/sports-entertainment-event-venue`
-  * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
-
 
 ## Sports Entertainment Event Venue Example
 ```json
@@ -57,30 +52,8 @@ For Sports and Entertaiment Event Venue information, such as a concert hall or s
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:eventVenue](#xdmeventvenue) | `object` | Optional | Sports Entertainment Event Venue (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
-
-## @id
-### Identifier
-
-A unique identifier for the record.
-
-`@id`
-* is optional
-* type: `string`
-* defined in [Record Schema](../../behaviors/record.schema.md#id)
-
-### @id Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
 
 ## xdm:eventVenue
 ### Event Venue
@@ -100,10 +73,10 @@ Details of a live event venue physical location.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:currency`| object | Optional |
+| `xdm:currency`|  | Optional |
 | `xdm:designatedMarketAreas`| array | Optional |
 | `xdm:markets`| array | Optional |
-| `xdm:physicalAddress`| object | Optional |
+| `xdm:physicalAddress`|  | Optional |
 | `xdm:seatingCapacity`| integer | Optional |
 | `xdm:timeZone`| string | Optional |
 | `xdm:url`| string | Optional |
@@ -251,7 +224,7 @@ Time zone in which the venue resides.
 #### xdm:url
 ##### URL
 
-URL for the Venue web presence
+URL for the Venue web presence.
 
 `xdm:url`
 * is optional

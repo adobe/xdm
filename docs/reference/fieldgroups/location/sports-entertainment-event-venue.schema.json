@@ -19,7 +19,7 @@
             "travel_and_hospitality"
         ]
     },
-    "description": "For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena. ",
+    "description": "For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena.",
     "definitions": {
         "sports-entertainment-event-venue": {
             "properties": {
@@ -31,27 +31,21 @@
                         "xdm:designatedMarketAreas": {
                             "description": "The list of associated DMAs (Designated Market Areas) of the venue",
                             "items": {
-                                "meta:xdmType": "string",
                                 "type": "string"
                             },
-                            "meta:xdmType": "array",
                             "title": "DMA List",
                             "type": "array"
                         },
                         "xdm:currency": {
                             "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                             "description": "Local currency accepted by the venue.",
-                            "meta:xdmType": "object",
-                            "title": "Currency",
-                            "type": "object"
+                            "title": "Currency"
                         },
                         "xdm:markets": {
                             "description": "Markets of the venue",
                             "items": {
-                                "meta:xdmType": "string",
                                 "type": "string"
                             },
-                            "meta:xdmType": "array",
                             "required": [],
                             "title": "Markets",
                             "type": "array"
@@ -59,25 +53,20 @@
                         "xdm:physicalAddress": {
                             "$ref": "https://ns.adobe.com/xdm/common/address",
                             "description": "Physical Address of the event venue.",
-                            "meta:xdmType": "object",
-                            "title": "Physical Address",
-                            "type": "object"
+                            "title": "Physical Address"
                         },
                         "xdm:seatingCapacity": {
                             "description": "Seating capacity of the venue.",
-                            "meta:xdmType": "int",
                             "title": "Seating Capacity",
                             "type": "integer"
                         },
                         "xdm:timeZone": {
                             "description": "Time zone in which the venue resides.",
-                            "meta:xdmType": "string",
                             "title": "Time Zone",
                             "type": "string"
                         },
                         "xdm:url": {
-                            "description": "URL for the Venue web presence",
-                            "meta:xdmType": "string",
+                            "description": "URL for the Venue web presence.",
                             "required": [],
                             "title": "URL",
                             "type": "string"
@@ -89,16 +78,10 @@
     },
     "allOf": [
         {
-            "$ref": "https://ns.adobe.com/xdm/data/record"
-        },
-        {
             "$ref": "#/definitions/sports-entertainment-event-venue"
         }
     ],
     "meta:status": "experimental",
-    "meta:createdDate": "2022-05-22",
-    "meta:titleId": "",
-    "meta:descriptionId": "",
     "examples": [
         {
             "xdm:eventVenue": {

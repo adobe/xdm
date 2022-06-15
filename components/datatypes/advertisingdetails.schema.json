@@ -65,6 +65,7 @@
         "xdm:creativeURL": {
           "title": "Ad Creative URL",
           "type": "string",
+          "format": "uri",
           "description": "The URL of the ad creative."
         },
         "xdm:placementID": {

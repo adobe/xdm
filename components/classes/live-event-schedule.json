@@ -17,16 +17,16 @@
   },
   "description": "For Live Event schedule data, such as a traveling concert schedule or a sports team's schedule.",
   "definitions": {
-    "live-event-venue": {
+    "live-event-schedule": {
       "properties": {
         "xdm:liveEventName": {
-          "title": "Event Name",
+          "title": "Live Event Name",
           "description": "Name of the event",
           "type": "string",
           "meta:xdmType": "string"
         },
         "xdm:liveEventID": {
-          "title": "Event ID",
+          "title": "Live Event ID",
           "description": "Unique Identifier for the Live Event",
           "type": "string",
           "meta:xdmType": "string"

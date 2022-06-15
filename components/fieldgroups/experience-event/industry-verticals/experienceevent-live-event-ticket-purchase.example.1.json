@@ -1,10 +1,10 @@
 {
   "xdm:eventPurchaseDetails": {
     "xdm:ticketPurchaseID": "ABC-123",
-    "xdm:eventID": "",
-    "xdm:ticketMasterEventCode": 1,
-    "xdm:eventName": "Sports Game",
-    "xdm:corporateSponsorshipFlg": true,
+    "xdm:liveEventID": "123-456",
+    "xdm:ticketMasterEventCode": "XYZ",
+    "xdm:liveEventName": "Sports Game",
+    "xdm:corporateSponsorshipFlag": true,
     "xdm:tickets": [
       {
         "xdm:barcodeID": "8819624561542398",

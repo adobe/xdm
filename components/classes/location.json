@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/classes/location",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Live Event Location",
+  "title": "Location",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -17,7 +17,7 @@
   },
   "description": "For Live Event Location information, such as a concert hall or sports arena. ",
   "definitions": {
-    "event-venue": {
+    "location": {
       "properties": {
         "xdm:locationID": {
           "description": "Unique identifier for the Location",

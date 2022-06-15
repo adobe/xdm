@@ -25,27 +25,27 @@
               "type": "string",
               "meta:xdmType": "string"
             },
-            "xdm:eventID": {
-              "title": "Event Identifier",
-              "description": "Unique ID for the event in which the ticket was purchase for.",
+            "xdm:liveEventID": {
+              "title": "Live Event Identifier",
+              "description": "Unique ID for the event in which the ticket was purchased for.",
               "type": "string",
               "meta:xdmType": "string"
             },
             "xdm:ticketMasterEventCode": {
               "title": "TicketMaster.com Event Code",
-              "description": "",
+              "description": "TicketMaster.com Event Code",
               "type": "string",
               "meta:xdmType": "string"
             },
-            "xdm:eventName": {
-              "title": "Event Name",
-              "description": "Name of the event",
+            "xdm:liveEventName": {
+              "title": "Live Event Name",
+              "description": "Name of the live event.",
               "type": "string",
               "meta:xdmType": "string"
             },
-            "xdm:corporateSponsorshipFlg": {
+            "xdm:corporateSponsorshipFlag": {
               "title": "Corporate Sponsorship Flag ",
-              "description": "Indicates if the ticket was provided by a corporate sponsorship",
+              "description": "Indicates if the ticket was provided by a corporate sponsorship.",
               "type": "boolean",
               "meta:xdmType": "boolean"
             },
@@ -104,43 +104,43 @@
                   },
                   "xdm:sectionGroup": {
                     "title": "Seating Section Group",
-                    "description": "Section Group as printed on Ticket",
+                    "description": "Section Group as presented on ticket",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:sectionLevel": {
                     "title": "Seating Section Level",
-                    "description": "Section Level as printed on ticket.",
+                    "description": "Section Level as presented on ticket.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:sectionName": {
                     "title": "Seating Section Name",
-                    "description": "",
+                    "description": "Section name as presented on the ticket.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:sectionRowName": {
                     "title": "Seating Section Row Name",
-                    "description": "",
+                    "description": "Seating section row name as presented on ticket.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:ticketClassCategory": {
                     "title": "Ticket Class Category",
-                    "description": "",
+                    "description": "Category of the ticket class.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:ticketClassGroupName": {
                     "title": "Ticket Class Group Name",
-                    "description": "",
+                    "description": "Group name of the ticket class.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
                   "xdm:ticketClassName": {
                     "title": "Ticket Class Name",
-                    "description": "",
+                    "description": "Name of the ticket class.",
                     "type": "string",
                     "meta:xdmType": "string"
                   },
@@ -162,7 +162,7 @@
             "xdm:ticketPurchase": {
               "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
               "type": "object",
-              "description": "Transaction details for ticket purchase",
+              "description": "Transaction details for ticket purchase.",
               "title": "Ticket Purchase Transaction",
               "meta:xdmType": "object"
             }
@@ -172,9 +172,6 @@
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/experienceevent-live-event-purchase"
     }

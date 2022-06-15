@@ -1,0 +1,38 @@
+{
+  "xdm:eventPurchaseDetails": {
+    "xdm:ticketPurchaseID": "ABC-123",
+    "xdm:liveEventID": "123-456",
+    "xdm:ticketMasterEventCode": "XYZ",
+    "xdm:liveEventName": "Sports Game",
+    "xdm:corporateSponsorshipFlag": true,
+    "xdm:tickets": [
+      {
+        "xdm:barcodeID": "8819624561542398",
+        "xdm:deliveryMethod": "digital",
+        "xdm:rowName": "A",
+        "xdm:seatingArea": "balcony",
+        "xdm:seatName": "A1",
+        "xdm:seatingAreaNumeric": 1,
+        "xdm:sectionCategory": "A",
+        "xdm:sectionGroup": 1,
+        "xdm:sectionLevel": 2,
+        "xdm:sectionName": 50,
+        "xdm:sectionRowName": 1,
+        "xdm:ticketClassCategory": "premium",
+        "xdm:ticketClassGroupName": "box",
+        "xdm:ticketClassName": "63141",
+        "xdm:ticketType": "single",
+        "xdm:ticketPurchase": {
+          "transactionAmount": {
+            "amount": 54.32,
+            "conversionDate": "2022-01-01T20:20:39+00:00",
+            "currencyCode": "USD"
+          },
+          "transactionDate": "2022-01-01T20:20:39+00:00",
+          "transactionID": "ABC-123",
+          "transactionType": "Sample value"
+        }
+      }
+    ]
+  }
+}

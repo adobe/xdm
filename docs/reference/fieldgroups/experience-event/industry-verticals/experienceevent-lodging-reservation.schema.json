@@ -361,6 +361,51 @@
                                             }
                                         },
                                         "meta:descriptionId": "experienceevent-lodging-reservation##xdm:lodgingCheckIn##description##53961"
+                                    },
+                                    "xdm:lodgingCheckout": {
+                                        "type": "object",
+                                        "title": "lodgingCheckout",
+                                        "description": "Lodging check out information, such as receipt URL, and a list of daily charges to populate a guest receipt.",
+                                        "properties": {
+                                            "xdm:receiptURL": {
+                                                "format": "uri-reference",
+                                                "type": "string",
+                                                "description": "URL for receipt sent to guest upon checkout.",
+                                                "title": "receiptURL"
+                                            },
+                                            "xdm:dailyCharges": {
+                                                "type": "array",
+                                                "description": "List of daily charges.",
+                                                "title": "dailyCharges",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "xdm:dailyCharge": {
+                                                            "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                                                            "type": "object",
+                                                            "description": "Daily charge amount in the appropriate currency.",
+                                                            "title": "Daily Charge"
+                                                        },
+                                                        "xdm:chargeDescription": {
+                                                            "type": "string",
+                                                            "title": "chargeDescription",
+                                                            "description": "Description of the charge line item."
+                                                        },
+                                                        "xdm:chargeReferenceCode": {
+                                                            "type": "string",
+                                                            "title": "chargeReferenceCode",
+                                                            "description": "Reference code of the charge line item."
+                                                        },
+                                                        "xdm:chargeDate": {
+                                                            "format": "date",
+                                                            "type": "string",
+                                                            "title": "chargeDate",
+                                                            "description": "Date of the charge line item."
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -410,7 +455,32 @@
                         "xdm:roomAccessibilityType": "n/a",
                         "xdm:roomCapacity": 6,
                         "xdm:roomType": "king",
-                        "xdm:smoking": false
+                        "xdm:smoking": false,
+                        "xdm:lodgingCheckout": {
+                            "xdm:receiptURL": "https://adobe.com",
+                            "xdm:dailyCharges": [
+                                {
+                                    "xdm:chargeDescription": "Room charge",
+                                    "xdm:chargeReferenceCode": "XYZ",
+                                    "xdm:chargeDate": "2020-01-01",
+                                    "xdm:dailyCharge": {
+                                        "xdm:amount": 1203.01,
+                                        "xdm:currencyCode": "USD",
+                                        "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+                                    }
+                                },
+                                {
+                                    "xdm:chargeDescription": "State Tax",
+                                    "xdm:chargeReferenceCode": "ST-TAX",
+                                    "xdm:chargeDate": "2020-01-01",
+                                    "xdm:dailyCharge": {
+                                        "xdm:amount": 12.01,
+                                        "xdm:currencyCode": "USD",
+                                        "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+                                    }
+                                }
+                            ]
+                        }
                     }
                 ]
             }

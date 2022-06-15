@@ -49,7 +49,7 @@ Information about the medication.
 | `xdm:genericName`| string | Optional |
 | `xdm:ingredients`| array | Optional |
 | `xdm:lotNumber`| string | Optional |
-| `xdm:manufacturer`|  | Optional |
+| `xdm:manufacturerName`| string | Optional |
 | `xdm:quantity`| number | Optional |
 | `xdm:status`| string | Optional |
 | `xdm:volume`| number | Optional |
@@ -308,19 +308,20 @@ Unique identifier of the batch.
 
 
 
-#### xdm:manufacturer
-##### Manufacturer
+#### xdm:manufacturerName
+##### Manufacturer Name
 
 Manufacturer of the medication.
 
-`xdm:manufacturer`
+`xdm:manufacturerName`
 * is optional
-* type: reference
+* type: `string`
 
-##### xdm:manufacturer Type
+##### xdm:manufacturerName Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+`string`
+
 
 
 
@@ -352,7 +353,7 @@ Amount of drug in the package.
 #### xdm:status
 ##### Status
 
-undefined
+Status indicating whether the drug/medication is active or not.
 
 `xdm:status`
 * is optional

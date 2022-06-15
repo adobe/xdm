@@ -45,6 +45,11 @@
                             "type": "number",
                             "description": "Total number of identities skipped summarized at the granularity of provided dimensions in this record."
                         },
+                        "xdm:failedIdentitiesCount": {
+                            "title": "Count of failed Identities",
+                            "type": "number",
+                            "description": "Count of failed identities summarized at the granularity of provided dimensions in this record."
+                        },
                         "xdm:totalIdentitiesActivated": {
                             "title": "Total Identities Activated",
                             "type": "number",

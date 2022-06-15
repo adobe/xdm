@@ -1,0 +1,134 @@
+{
+    "meta:license": [
+        "Copyright 2022 Bounteous. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/sports-entertainment-event-schedule",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Sports and Entertainment Event Schedule",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/live-event-schedule"
+    ],
+    "meta:tags": {
+        "industry": [
+            "travel_and_hospitality"
+        ]
+    },
+    "description": "For Live Event schedule data, such as a traveling concert schedule or a sports team's schedule.",
+    "definitions": {
+        "sports-entertainment-event-schedule": {
+            "properties": {
+                "xdm:sportsEntertainmentEventSchedule": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:locationID": {
+                            "title": "Location ID",
+                            "description": "Unique identifier for the Location in which the event is taking place.",
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:eventStartDateTime": {
+                            "title": "Event Start Datetime",
+                            "description": "Datetime for the event",
+                            "type": "string",
+                            "format": "date-time",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:attractionName": {
+                            "title": "Attraction Name",
+                            "description": "Name of the attraction(s) at the event",
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:eventClassification": {
+                            "title": "Event Classification",
+                            "description": "Describes the type of event, e.g., sports, music",
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:eventSubClassification": {
+                            "title": "Event Sub Classification",
+                            "description": "Describes the sub-type of the event. For example, if the classification is sports, the sub-classification might be the type of sport (baseball).",
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        },
+                        "xdm:premiumDoorTime": {
+                            "title": "Premium Door Time",
+                            "description": "Door open time for premium ticket holders.",
+                            "type": "string",
+                            "format": "date-time",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:regularDoorTime": {
+                            "title": "Regular Door Time",
+                            "description": "The time the doors open for non-premium ticket holders.",
+                            "type": "string",
+                            "format": "date-time",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:ticketSalesStartTime": {
+                            "title": "Ticket Sales Start Time",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:ticketSalesEndTime": {
+                            "title": "Ticket Sales End Time",
+                            "description": "",
+                            "type": "string",
+                            "format": "date-time",
+                            "meta:xdmType": "date-time"
+                        },
+                        "xdm:ticketsAvailable": {
+                            "title": "Tickets Available",
+                            "description": "Indicates if tickets are still available for the event or not.",
+                            "type": "boolean",
+                            "meta:xdmType": "boolean"
+                        },
+                        "xdm:eventSeasonName": {
+                            "title": "Season Name",
+                            "description": "Descriptive name of the event season, if it is an event within a series. For example, a sports season.",
+                            "type": "string",
+                            "meta:xdmType": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/sports-entertainment-event-schedule"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2022-05-22",
+    "meta:titleId": "",
+    "meta:descriptionId": "",
+    "examples": [
+        {
+            "xdm:sportsEntertainmentEventSchedule": {
+                "xdm:locationID": "96698daa-d44a-4960-bb7e-588bfc928ea3",
+                "xdm:eventStartDateTime": "2019-01-01T15:52:25+00:00",
+                "xdm:attractionName": "sports Team",
+                "xdm:eventClassification": "sports",
+                "xdm:eventSubClassification": "baseball",
+                "xdm:premiumDoorTime": "2019-03-10T15:52:25+00:00",
+                "xdm:regularDoorTime": "2019-03-10T15:52:25+00:00",
+                "xdm:ticketSalesStartTime": "2019-03-10T15:52:25+00:00",
+                "xdm:ticketSalesEndTime": "2019-03-10T15:52:25+00:00",
+                "xdm:ticketsAvailable": true,
+                "xdm:eventSeasonName": "2021-2022"
+            }
+        }
+    ]
+}

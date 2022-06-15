@@ -210,13 +210,13 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 | Property | Type | Group |
 |----------|------|-------|
 | [xdm:any](#xdmany) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
-| [xdm:call](#xdmcall) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
-| [xdm:commercialEmail](#xdmcommercialemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
+| [xdm:call](#xdmcall) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
+| [xdm:commercialEmail](#xdmcommercialemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:content](#xdmcontent) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-personalization` |
 | [xdm:email](#xdmemail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
-| [xdm:fax](#xdmfax) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
+| [xdm:fax](#xdmfax) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:idType](#xdmidtype) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/adid-consent-field` |
-| [xdm:postalMail](#xdmpostalmail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing` |
+| [xdm:postalMail](#xdmpostalmail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:preferred](#xdmpreferred) | `enum` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/base-marketing-with-subscriptions` |
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |

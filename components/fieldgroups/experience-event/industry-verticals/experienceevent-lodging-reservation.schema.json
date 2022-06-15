@@ -379,7 +379,7 @@
                             "xdm:dailyCharge": {
                               "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
                               "type": "object",
-                              "description": "",
+                              "description": "Daily charge amount in the appropriate currency.",
                               "title": "Daily Charge"
                             },
                             "xdm:chargeDescription": {

@@ -15,13 +15,9 @@
     "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details"
   ],
   "meta:tags": {
-    "industry": [
-      "travel_and_hospitality"
-    ]
+    "industry": ["travel_and_hospitality"]
   },
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/experienceevent"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Collects all details specific to a lodging reservation.",
   "definitions": {
     "reservations": {
@@ -361,6 +357,51 @@
                       }
                     },
                     "meta:descriptionId": "experienceevent-lodging-reservation##xdm:lodgingCheckIn##description##53961"
+                  },
+                  "xdm:lodgingCheckout": {
+                    "type": "object",
+                    "title": "lodgingCheckout",
+                    "description": "Lodging check out information, such as receipt URL, and a list of daily charges to populate a guest receipt.",
+                    "properties": {
+                      "xdm:receiptURL": {
+                        "format": "uri-reference",
+                        "type": "string",
+                        "description": "URL for receipt sent to guest upon checkout.",
+                        "title": "receiptURL"
+                      },
+                      "xdm:dailyCharges": {
+                        "type": "array",
+                        "description": "List of daily charges.",
+                        "title": "dailyCharges",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "xdm:dailyCharge": {
+                              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+                              "type": "object",
+                              "description": "Daily charge amount in the appropriate currency.",
+                              "title": "Daily Charge"
+                            },
+                            "xdm:chargeDescription": {
+                              "type": "string",
+                              "title": "chargeDescription",
+                              "description": "Description of the charge line item."
+                            },
+                            "xdm:chargeReferenceCode": {
+                              "type": "string",
+                              "title": "chargeReferenceCode",
+                              "description": "Reference code of the charge line item."
+                            },
+                            "xdm:chargeDate": {
+                              "format": "date",
+                              "type": "string",
+                              "title": "chargeDate",
+                              "description": "Date of the charge line item."
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }

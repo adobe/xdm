@@ -62,7 +62,7 @@
               "title": "List Of States Start",
               "type": "array",
               "items": {
-                "type": "string"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
               },
               "description": "The list of states start."
             },
@@ -70,7 +70,7 @@
               "title": "List Of States End",
               "type": "array",
               "items": {
-                "type": "string"
+                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
               },
               "description": "The list of states end."
             }

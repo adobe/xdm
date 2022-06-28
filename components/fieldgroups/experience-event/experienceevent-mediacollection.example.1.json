@@ -40,7 +40,18 @@
     "xdm:qoeDataDetails": {
       "xdm:bitrate": 100
     },
-    "xdm:statesStart": ["mute", "pictureInPicture"],
-    "xdm:statesEnd": ["fullScreen"]
+    "xdm:statesStart": [
+      {
+        "xdm:name": "mute"
+      },
+      {
+        "xdm:name": "pictureInPicture"
+      }
+    ],
+    "xdm:statesEnd": [
+      {
+        "xdm:name": "fullScreen"
+      }
+    ]
   }
 }

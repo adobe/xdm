@@ -33,6 +33,16 @@
               "type": "string",
               "description": "The projection id of the segment being used in journey"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/origTimestamp": {
+              "title": "Projection Original Timestamp",
+              "type": "string",
+              "description": "The Projection Original Timestamp of the segment being used in journey"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/isStreamingSegment": {
+              "title": "Projection Segment Type",
+              "type": "boolean",
+              "description": "Projection Segment Type, Streaming or Batch Segment"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": {
               "title": "Event Type",
               "type": "string",

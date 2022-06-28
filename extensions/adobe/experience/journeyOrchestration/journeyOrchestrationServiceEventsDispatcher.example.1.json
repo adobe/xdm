@@ -2,7 +2,10 @@
   "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher": {
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/origTimestamp": "2021-07-27T18:28:04.351808Z",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL"
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/isStreamingSegment": true
+
   }
 }

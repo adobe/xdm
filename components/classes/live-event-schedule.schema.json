@@ -1,6 +1,6 @@
 {
   "meta:license": [
-    "Copyright 2022 Bounteous. All rights reserved.",
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
@@ -21,15 +21,13 @@
       "properties": {
         "xdm:liveEventName": {
           "title": "Live Event Name",
-          "description": "Name of the event",
-          "type": "string",
-          "meta:xdmType": "string"
+          "description": "Name of the event.",
+          "type": "string"
         },
         "xdm:liveEventID": {
           "title": "Live Event ID",
           "description": "Unique Identifier for the Live Event",
-          "type": "string",
-          "meta:xdmType": "string"
+          "type": "string"
         }
       }
     }
@@ -42,6 +40,5 @@
       "$ref": "#/definitions/live-event-schedule"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2022-05-24"
+  "meta:status": "experimental"
 }

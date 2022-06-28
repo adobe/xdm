@@ -1,0 +1,85 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/store-web-order",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Store and Web Order",
+  "type": "object",
+  "description": "The order placed via a store or web portal.",
+  "definitions": {
+    "store-web-order": {
+      "properties": {
+        "xdm:orderID": {
+          "title": "Order ID",
+          "type": "string",
+          "description": "Unique identifier assigned by the seller for this order. There is no guarantee that the ID is unique."
+        },
+        "xdm:orderDate": {
+          "title": "Order Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time when the order was placed."
+        },
+        "xdm:priceTotal": {
+          "title": "Price Total",
+          "type": "number",
+          "description": "The total price of this order after all discounts and taxes have been applied."
+        },
+        "xdm:payment": {
+          "title": "Payment Details",
+          "type": "object",
+          "description": "Payment related information.",
+          "properties": {
+            "xdm:transactionID": {
+              "title": "Transaction ID",
+              "type": "string",
+              "description": "Unique identifier assigned by the payment system."
+            },
+            "xdm:paymentType": {
+              "title": "Payment Type",
+              "type": "string",
+              "description": "Type of payment used.",
+              "enum": [
+                "credit",
+                "debit",
+                "gift",
+                "cash"
+              ],
+              "meta:enum": {
+                "credit": "Credit",
+                "dedit": "Dedit",
+                "gift": "Gift",
+                "cash": "Cash"
+              }
+            },
+            "xdm:paymentAmount": {
+              "title": "Payment Amount",
+              "type": "number",
+              "description": "Unique identifier assigned by the payment system."
+            },
+            "xdm:currencyCode": {
+              "title": "Currency",
+              "type": "string",
+              "examples": [
+                "USD",
+                "EUR"
+              ],
+              "pattern": "^[A-Z]{3}$",
+              "description": "The ISO 4217 currency code used for the order totals."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/store-web-order"
+    }
+  ],
+  "meta:status": "experimental"
+}

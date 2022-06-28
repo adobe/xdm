@@ -43,12 +43,7 @@
               "title": "Payment Type",
               "type": "string",
               "description": "Type of payment used.",
-              "enum": [
-                "credit",
-                "debit",
-                "gift",
-                "cash"
-              ],
+              "enum": ["credit", "debit", "gift", "cash"],
               "meta:enum": {
                 "credit": "Credit",
                 "dedit": "Dedit",
@@ -64,10 +59,7 @@
             "xdm:currencyCode": {
               "title": "Currency",
               "type": "string",
-              "examples": [
-                "USD",
-                "EUR"
-              ],
+              "examples": ["USD", "EUR"],
               "pattern": "^[A-Z]{3}$",
               "description": "The ISO 4217 currency code used for the order totals."
             }

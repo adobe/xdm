@@ -44,7 +44,7 @@
             }
           }
         },
-         "xdm:billing": {
+        "xdm:billing": {
           "title": "Billing Details",
           "type": "object",
           "description": "Billing related information.",
@@ -60,7 +60,7 @@
           "title": "Shipping",
           "$ref": "https://ns.adobe.com/xdm/datatypes/shipping",
           "description": "Shipping related informnation for the order."
-        }        
+        }
       }
     }
   },

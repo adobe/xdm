@@ -1,12 +1,11 @@
 {
   "xdm:orderID": "a8g784hjq1mnp3",
   "xdm:orderDate": "2017-09-26T15:52:25+00:00",
-  "xdm:payment": 
-    {
-      "xdm:transactionID": "transactid-a111",
-      "xdm:paymentAmount": 899.99,
-      "xdm:paymentType": "credit",
-      "xdm:currencyCode": "USD"
-    },
+  "xdm:payment": {
+    "xdm:transactionID": "transactid-a111",
+    "xdm:paymentAmount": 899.99,
+    "xdm:paymentType": "credit",
+    "xdm:currencyCode": "USD"
+  },
   "xdm:priceTotal": 999.98
 }

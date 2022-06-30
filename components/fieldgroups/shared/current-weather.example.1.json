@@ -1,0 +1,69 @@
+{
+    "xdm:weather": {
+        "xdm:current": {
+            "xdm:expiration": "2022-06-30T23:59:99+00:00",
+            "xdm:postalCountryCode": "84000",
+            "xdm:temperature": {
+                "xdm:celsius": 10,
+                "xdm:fahrenheit": 50
+            }, 
+            "xdm:temperatureChange24Hour": {
+                "xdm:celsius": 1,
+                "xdm:fahrenheit": 2
+            }, 
+            "xdm:temperatureFeelsLike": {
+                "xdm:celsius": 12,
+                "xdm:fahrenheit": 54
+            },
+            "xdm:precip1Hour": {
+                "xdm:millimeters": 0,
+                "xdm:inches": 0
+            },
+            "xdm:precip6Hour": {
+                "xdm:millimeters": 0,
+                "xdm:inches": 0
+            },
+            "xdm:precip24Hour": {
+                "xdm:millimeters": 6,
+                "xdm:inches": 0.25
+            },
+            "xdm:pressureChange": 5,
+            "xdm:pressureMeanSeaLevel": 7.5,
+            "xdm:snow1Hour": {
+                "xdm:centimeters": 30,
+                "xdm:inches": 12
+            },
+            "xdm:snow6Hour":{
+                "xdm:centimeters": 30,
+                "xdm:inches": 12 
+            },
+            "xdm:snow24Hour": {
+                "xdm:centimeters": 30,
+                "xdm:inches": 12
+            },
+            "xdm:temperatureDewPoint": {
+                "xdm:celsius": 3,
+                "xdm:fahrenheit": 37 
+            },
+            "xdm:temperatureMaxSince7Am": {
+                "xdm:celsius": 24,
+                "xdm:fahrenheit": 75 
+            },
+            "xdm:temperatureMin24Hour": {
+                "xdm:celsius": 2,
+                "xdm:fahrenheit": 35 
+            },
+            "xdm:uvIndex": "3",
+            "xdm:windDirection": 17,
+            "xdm:windGust": {
+                "xdm:kilometersPerHour": 24,
+                "xdm:milesPerHour": 15
+            },
+            "xdm:windSpeed": {
+                "xdm:kilometersPerHour": 15,
+                "xdm:milesPerHour": 9
+            },
+            "xdm:sunsetTime": "2022-06-30T20:55:39+00:00"
+        }
+    }
+}

@@ -1,0 +1,343 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+        ],
+    "$id": "https://ns.adobe.com/xdm/mixins/forecasted-weather",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent",
+        "https://ns.adobe.com/xdm/classes/weather"
+    ],
+    "meta:status": "experimental",
+    "title": "Forecasted Weather",
+    "type": "object",
+    "description": "Forecasted weather conditions for a postal code",
+    "definitions": {
+        "customFields": {
+            "type": "object",
+            "properties": {
+                "xdm:weather": {
+                    "properties": {
+                        "xdm:forecast": {
+                            "title": "Forecast",
+                            "description": "Forecasted weather at the time the event was generated.",
+                            "isRequired": false,
+                            "properties": {
+                                "xdm:expiration": {
+                                    "format": "date-time",
+                                    "type": "string",
+                                    "description": "When the fields should no longer be populated.",
+                                    "title": "expiration"
+                                },
+                                "xdm:day01Forecast": {
+                                    "$ref": "#/definitions/shortRange",
+                                    "description": "Weather forecast for one day.",
+                                    "title": "Day 1 Forecast"
+                                },
+                                "xdm:day02Forecast": {
+                                    "$ref": "#/definitions/shortRange",
+                                    "description": "Weather forecast for two days.",
+                                    "title": "Day 2 Forecast"
+                                },
+                                "xdm:day03Forecast": {
+                                    "$ref": "#/definitions/shortRange",
+                                    "description": "Weather forecast for three days.",
+                                    "title": "Day 3 Forecast"
+                                },
+                                "xdm:day05Forecast": {
+                                    "$ref": "#/definitions/shortRange",
+                                    "description": "Weather forecast for five days.",
+                                    "title": "Day 5 Forecast"
+                                },
+                                "xdm:day07Forecast": {
+                                    "$ref": "#/definitions/longRange",
+                                    "description": "Weather forecast for seven days.",
+                                    "title": "Day 7 Forecast"
+                                },
+                                "xdm:day10Forecast": {
+                                    "$ref": "#/definitions/longRange",
+                                    "description": "Weather forecast for ten days.",
+                                    "title": "Day 10 Forecast"
+                                },
+                                "xdm:day14Forecast": {
+                                    "$ref": "#/definitions/longRange",
+                                    "description": "Weather forecast for fourteen days.",
+                                    "title": "Day 14 Forecast"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "shortRange": {
+            "properties": {
+                "xdm:qpf": {
+                    "title": "qpf",
+                    "description": "The forecasted measurable precipitation (liquid or liquid equivalent) during the 12 or 24 hour period. Measured in millimeters.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation"
+                },
+                "xdm:calendarDayTemperatureMax": {
+                    "title": "calendarDayTemperatureMax",
+                    "description": "The midnight to midnight daily maximum temperature for the given day.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "xdm:calendarDayTemperatureMin": {
+                    "title": "calendarDayTemperatureMin",
+                    "description": "The midnight to midnight daily minimum temperature for the given day.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "xdm:day": {
+                    "title": "day",
+                    "description": "Weather information for a daytime period",
+                    "$ref": "#/definitions/dayPart"
+                },
+                "xdm:night": {
+                    "title": "night",
+                    "description": "Weather information for a nighttime period",
+                    "$ref": "#/definitions/dayPart"
+                },
+                "xdm:qpfSnow": {
+                    "title": "qpfSnow",
+                    "description": "The forecasted measurable precipitation as snow during the 12 or 24 hour forecast period. Measured in centimeters.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall"
+                }
+            },
+            "type": "object"
+        },
+        "longRange": {
+            "properties": {
+                "xdm:qpf": {
+                    "title": "qpf",
+                    "description": "The forecasted measurable precipitation (liquid or liquid equivalent) during the 24 hour period.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation"
+                },
+                "xdm:calendarDayTemperatureMax": {
+                    "title": "calendarDayTemperatureMax",
+                    "description": "The midnight to midnight daily maximum temperature for the given day.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "xdm:calendarDayTemperatureMin": {
+                    "title": "calendarDayTemperatureMin",
+                    "description": "The midnight to midnight daily minimum temperature for the given day.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "xdm:windSpeed": {
+                    "title": "windSpeed",
+                    "description": "The forecast of the maximum sustained wind speed over the 12 hour forecast period.\nThe wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the forecast corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as \"from whence the wind blows\" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed"
+                },
+                "xdm:windDirection": {
+                    "title": "windDirection",
+                    "description": "Average wind direction in magnetic notation.",
+                    "type": "integer"
+                },
+                "xdm:qpfSnow": {
+                    "title": "qpfSnow",
+                    "description": "The forecasted measurable precipitation as snow during the 12 or 24 hour forecast period. Measured in centimeters.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall"
+                },
+                "xdm:cloudCover": {
+                    "title": "cloudCover",
+                    "description": "Daytime average cloud cover expressed as a percentage.",
+                    "$ref": "#/definitions/distance"
+                },
+                "xdm:uvIndex": {
+                    "title": "uvIndex",
+                    "description": "Maximum UV index for the 12 hour forecast period.",
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "-2",
+                        "-1"
+                    ],
+                    "meta:enum": {
+                        "0": "Low",
+                        "1": "Low",
+                        "2": "Low",
+                        "3": "Moderate",
+                        "4": "Moderate",
+                        "5": "Moderate",
+                        "6": "High",
+                        "7": "High",
+                        "8": "Very High",
+                        "9": "Very High",
+                        "10": "Very High",
+                        "11": "Extreme",
+                        "12": "Extreme",
+                        "13": "Extreme",
+                        "14": "Extreme",
+                        "15": "Extreme",
+                        "16": "Extreme",
+                        "-2": "Not Available",
+                        "-1": "No Report"
+                    },
+                    "meta:xdmType": "string"
+                }
+            },
+            "type": "object"
+        },
+        "dayPart": {
+            "properties": {
+                "cloudCover": {
+                    "title": "cloudCover",
+                    "description": "Daytime average cloud cover expressed as a percentage.",
+                    "$ref": "#/definitions/distance"
+                },
+                "precipChance": {
+                    "title": "precipChance",
+                    "description": "",
+                    "type": "integer"
+                },
+                "precipType": {
+                    "title": "precipType",
+                    "description": "",
+                    "type": "string",
+                    "pattern": "rain|snow|precip"
+                },
+                "qpf": {
+                    "title": "qpf",
+                    "description": "The forecasted measurable precipitation (liquid or liquid equivalent) during the 12 or 24 hour period. Measured in millimeters.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation"
+                },
+                "relativeHumidity": {
+                    "title": "relativeHumidity",
+                    "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                    "type": "integer"
+                },
+                "snowRange": {
+                    "title": "snowRange",
+                    "description": "",
+                    "type": "string"
+                },
+                "temperature": {
+                    "title": "temperature",
+                    "description": "Temperature in defined unit of measure. Range -140 to 140.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "temperatureHeatIndex": {
+                    "title": "temperatureHeatIndex",
+                    "description": "",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "temperatureWindChill": {
+                    "title": "temperatureWindChill",
+                    "description": "",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
+                },
+                "thunderIndex": {
+                    "title": "thunderIndex",
+                    "description": "",
+                    "type": "integer"
+                },
+                "windDirection": {
+                    "title": "windDirection",
+                    "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                    "type": "integer"
+                },
+                "windSpeed": {
+                    "title": "windSpeed",
+                    "description": "The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as \"from whence the wind blows\" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed"
+                },
+                "windGust": {
+                    "title": "windGust",
+                    "description": "This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed"
+                },
+                "qpfSnow": {
+                    "title": "qpfSnow",
+                    "description": "The forecasted measurable precipitation as snow during the 12 or 24 hour forecast period. Measured in centimeters.",
+                    "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall"
+                },
+                "uvIndex": {
+                    "title": "uvIndex",
+                    "description": "Maximum UV index for the 12 hour forecast period.",
+                    "type": "string",
+                    "enum": [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "-2",
+                        "-1"
+                    ],
+                    "meta:enum": {
+                        "0": "Low",
+                        "1": "Low",
+                        "2": "Low",
+                        "3": "Moderate",
+                        "4": "Moderate",
+                        "5": "Moderate",
+                        "6": "High",
+                        "7": "High",
+                        "8": "Very High",
+                        "9": "Very High",
+                        "10": "Very High",
+                        "11": "Extreme",
+                        "12": "Extreme",
+                        "13": "Extreme",
+                        "14": "Extreme",
+                        "15": "Extreme",
+                        "16": "Extreme",
+                        "-2": "Not Available",
+                        "-1": "No Report"
+                    }
+                }
+            }
+        },
+        "distance": {
+            "properties": {
+              "xdm:kilometers": {
+                "title": "Kilometers",
+                "type": "number",
+                "description": "Distance in kilometers"
+              },
+              "xdm:inches": {
+                  "title": "Miles",
+                  "type": "number",
+                  "description": "Distance in miles"
+              }
+            } 
+          } 
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/customFields"
+        }
+    ]
+}
+

@@ -1,0 +1,256 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/current-weather",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent",
+        "https://ns.adobe.com/xdm/classes/weather"
+    ],
+    "meta:status": "experimental",
+    "title": "Current Weather",
+    "type": "object",
+    "description": "Current weather conditions for a postal code.",
+    "definitions": {
+        "customFields": {
+            "properties": {
+                "xdm:weather": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:current": {
+                            "title": "Current",
+                            "description": "Current weather conditions for a postal code.",
+                            "type": "object",
+                            "properties": {
+                                "xdm:temperature": {
+                                    "title": "Temperature",
+                                    "description": "Temperature in defined unit of measure. Range -140 to 140.",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:temperatureChange24Hour": {
+                                    "title": "Temperature Change 24 hour",
+                                    "description": "Change in temperature compared to the report 24 hours ago.",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:temperatureFeelsLike": {
+                                    "title": "Temperature Feels Like",
+                                    "description": "An apparent temperature. It represents what the air temperature “feels like” on exposed human skin due to the combined effect of the wind chill or heat index.\nWhen the temperature is 65°F or higher, the Feels Like value represents the computed Heat Index.  When the temperature is below 65°F, the Feels Like value represents the computed Wind Chill.\nRange -140 to 140.",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:precip1Hour": {
+                                    "title": "Precipitation Last Hour",
+                                    "description": "Rolling hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/precipitation"
+                                },
+                                "xdm:precip6Hour": {
+                                    "title": "Precipitation Last 6 Hours",
+                                    "description": "Rolling six hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/precipitation"
+                                },
+                                "xdm:precip24Hour": {
+                                    "title": "Precipitation Last 24 Hours",
+                                    "description": "Rolling twenty four hour liquid precipitation amount. The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/precipitation"
+                                },
+                                "xdm:pressureChange": {
+                                    "title": "Pressure Change ",
+                                    "description": "Change in pressure in the last three hours in Millibars.",
+                                    "type": "number"
+                                },
+                                "xdm:pressureMeanSeaLevel": {
+                                    "title": "Pressure Mean Sea Level",
+                                    "description": "Mean sea level pressure in millibars.  In other words, the average barometric pressure at sea level.\nRange - Millibars precise to 1/10th mb.",
+                                    "type": "number"
+                                },
+                                "xdm:relativeHumidity": {
+                                    "title": "Relative Humidity",
+                                    "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                                    "type": "integer"
+                                },
+                                "xdm:snow1Hour": {
+                                    "title": "Snow Last Hour",
+                                    "description": "One hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/snowfall"
+                                },
+                                "xdm:snow6Hour": {
+                                    "title": "Snow Last 6 Hours",
+                                    "description": "One hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/snowfall"
+                                },
+                                "xdm:snow24Hour": {
+                                    "title": "Snow 24 Hour",
+                                    "description": "Twenty four hour snowfall amount.  The amounts presented are a rolling time through the request time (now).",
+                                    "$ref": "#/definitions/snowfall"
+                                },
+                                "temperatureDewPoint": {
+                                    "title": "Temperature Dew Point",
+                                    "description": "The temperature which air must be cooled at constant pressure to reach saturation. The Dew Point is also an indirect measure of the humidity of the air. The Dew Point will never exceed the Temperature. When the Dewpoint and Temperature are equal, clouds or fog will typically form. The closer the values of Temperature and Dew Point, the higher the relative humidity. Range - -80 to 100 (°F) or -62 to 37 (°C).",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:temperatureMaxSince7Am": {
+                                    "title": "Temperature Max Since 7 AM",
+                                    "description": "The maximum temperature since 7 A.M. local time.",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:temperatureMin24Hour": {
+                                    "title": "Temperature Min Last 24 Hours",
+                                    "description": "The minimum temperature in the last 24 hours.  The 24 hour period is in reference to the request time (now). ",
+                                    "$ref": "#/definitions/temperature"
+                                },
+                                "xdm:uvIndex": {
+                                    "title": "UV Index",
+                                    "description": "The Weather Channel's proprietary UV index.  The UV Index provides indices of the intensity of the solar radiation level and risk of skin damage due to exposure.\nRange - -2=Not Available, -1=No Report, 0-2=Low, 3-5=Moderate, 6-7=High, 8-10= Very High, 11-16=Extreme.",
+                                    "type": "string",
+                                    "enum": [
+                                        "0",
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10",
+                                        "11",
+                                        "12",
+                                        "13",
+                                        "14",
+                                        "15",
+                                        "16",
+                                        "-2",
+                                        "-1"
+                                    ],
+                                    "meta:enum": {
+                                        "0": "Low",
+                                        "1": "Low",
+                                        "2": "Low",
+                                        "3": "Moderate",
+                                        "4": "Moderate",
+                                        "5": "Moderate",
+                                        "6": "High",
+                                        "7": "High",
+                                        "8": "Very High",
+                                        "9": "Very High",
+                                        "10": "Very High",
+                                        "11": "Extreme",
+                                        "12": "Extreme",
+                                        "13": "Extreme",
+                                        "14": "Extreme",
+                                        "15": "Extreme",
+                                        "16": "Extreme",
+                                        "-2": "Not Available",
+                                        "-1": "No Report"
+                                    }
+                                },
+                                "xdm:windDirection": {
+                                    "title": "Wind Direction",
+                                    "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                                    "type": "integer"
+                                },
+                                "xdm:windGust": {
+                                    "title": "Wind Gust",
+                                    "description": "This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.",
+                                    "$ref": "#/definitions/speed"
+                                },
+                                "xdm:windSpeed": {
+                                    "title": "Wind Speed",
+                                    "description": "The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as \"from whence the wind blows\" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.",
+                                    "$ref": "#/definitions/speed"
+                                },
+                                "xdm:sunsetTime": {
+                                    "format": "date-time",
+                                    "type": "string",
+                                    "description": "Sunset time in UTC.",
+                                    "title": "Sunset Time"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "snowfall": {
+            "properties": {
+              "xdm:centimeters": {
+                "title": "Centimeters",
+                "type": "number",
+                "description": "Snowfall in centimeters"
+              },
+              "xdm:inches": {
+                  "title": "Inches",
+                  "type": "number",
+                  "description": "Snowfall in inches"
+              }
+            } 
+        },
+        "precipitation": {
+            "properties": {
+              "xdm:millimeters": {
+                "title": "Millimeters",
+                "type": "number",
+                "description": "Precipitation in millimeters"
+              },
+              "xdm:inches": {
+                  "title": "Inches",
+                  "type": "number",
+                  "description": "Precipitation in inches"
+              }
+            } 
+        },
+        "distance": {
+            "properties": {
+              "xdm:kilometers": {
+                "title": "Kilometers",
+                "type": "number",
+                "description": "Distance in kilometers"
+              },
+              "xdm:inches": {
+                  "title": "Miles",
+                  "type": "number",
+                  "description": "Distance in miles"
+              }
+            } 
+        },
+        "speed": {
+            "properties": {
+              "xdm:kilometersPerHour": {
+                "title": "Kilometers per Hour",
+                "type": "integer",
+                "description": "Wind speed in kilometers per hour"
+              },
+              "xdm:milesPerHour": {
+                  "title": "Miles per Hour",
+                  "type": "integer",
+                  "description": "Wind speed in miles per hour"
+              }
+            } 
+        },
+        "temperature": {
+            "properties": {
+              "xdm:celcius": {
+                "title": "Celcius",
+                "type": "integer",
+                "description": "Temperature in degrees Celcius"
+              },
+              "xdm:fahrenheit": {
+                  "title": "Fahrenheit",
+                  "type": "integer",
+                  "description": "Temperature in degrees Fahrenheit"
+              }
+            } 
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/customFields"
+        }
+    ]
+}
+

@@ -29,18 +29,6 @@
               },
               "type": "array",
               "title": "Product Triggers"
-            },
-            "xdm:expiration": {
-              "format": "date-time",
-              "type": "string",
-              "description": "When the fields should no longer be populated.",
-              "title": "Expiration"
-            },
-            "xdm:postalCountryCode": {
-              "pattern": "[0-9A-Za-z]+:[A-Z]{2}",
-              "type": "string",
-              "description": "Postal and Country Code",
-              "title": "Postal and Country Code"
             }
           }
         }

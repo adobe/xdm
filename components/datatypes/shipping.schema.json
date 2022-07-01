@@ -16,7 +16,13 @@
         "xdm:shippingMethod": {
           "title": "Shipping Method",
           "type": "string",
-          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc."
+          "description": "The method of shipping chosen by the customer, such as standard delivery, expedited delivery, pick up in store, etc.",
+          "enum": ["standard", "expedited", "overnight"],
+          "meta:enum": {
+            "standard": "Standard",
+            "expedited": "Expedited",
+            "overnight": "Overnight"
+          }
         },
         "xdm:shippingAmount": {
           "title": "Shipping Amount",

@@ -6,6 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/current-weather",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
@@ -34,7 +35,6 @@
                   "title": "Expiration"
                 },
                 "xdm:postalCountryCode": {
-                  "pattern": "[0-9A-Za-z]+:[A-Z]{2}",
                   "type": "string",
                   "description": "Postal and Country Code",
                   "title": "Postal and Country Code"

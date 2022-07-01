@@ -6,6 +6,7 @@
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/weather-triggers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [

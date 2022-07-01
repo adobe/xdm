@@ -1,0 +1,138 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-media-reporting",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "MediaReporting Interaction Details ",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "all"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Track interactions with media reporting.",
+    "definitions": {
+        "experienceevent-mediaReporting": {
+            "properties": {
+                "xdm:mediaReporting": {
+                    "type": "object",
+                    "description": "Media Reporting related fields.",
+                    "properties": {
+                        "xdm:playerEventDetails": {
+                            "title": "Player Event Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/playerEventDetails",
+                            "description": "Player event details information related to the experience event."
+                        },
+                        "xdm:sessionDetails": {
+                            "title": "Session Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+                            "description": "Session details information related to the experience event."
+                        },
+                        "xdm:advertisingDetails": {
+                            "title": "Advertising Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+                            "description": "Advertising details information related to the experience event."
+                        },
+                        "xdm:advertisingPodDetails": {
+                            "title": "Advertising Pod Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+                            "description": "Advertising pod details information related to the experience event."
+                        },
+                        "xdm:chapterDetails": {
+                            "title": "Chapter Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+                            "description": "Chapter details information related to the experience event."
+                        },
+                        "xdm:errorDetails": {
+                            "title": "Error Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
+                            "description": "Error details information related to the experience event."
+                        },
+                        "xdm:qoeDataDetails": {
+                            "title": "Qoe Data Details",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
+                            "description": "Qoe data details information related to the experience event."
+                        },
+                        "xdm:states": {
+                            "title": "List Of States",
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+                            },
+                            "description": "The list of states."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/experienceevent-mediaReporting"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "xdm:mediaReporting": {
+                "xdm:playerEventDetails": {
+                    "xdm:playhead": 831,
+                    "xdm:sessionID": "1234567890"
+                },
+                "xdm:sessionDetails": {
+                    "xdm:ID": "123456789",
+                    "xdm:length": 100,
+                    "xdm:contentType": "VOD",
+                    "xdm:playerName": "playerName",
+                    "xdm:channel": "channel"
+                },
+                "xdm:advertisingDetails": {
+                    "xdm:ID": "123456789",
+                    "xdm:length": 100,
+                    "xdm:podPosition": 1,
+                    "xdm:playerName": "playerName",
+                    "xdm:isCompleted": false,
+                    "xdm:isStarted": false,
+                    "xdm:timePlayed": 50,
+                    "xdm:adBreakID": "123"
+                },
+                "xdm:advertisingPodDetails": {
+                    "xdm:index": 2,
+                    "xdm:second": 123
+                },
+                "xdm:chapterDetails": {
+                    "xdm:length": 100,
+                    "xdm:offset": 50,
+                    "xdm:index": 2,
+                    "xdm:isStarted": false,
+                    "xdm:isCompleted": false,
+                    "xdm:timePlayed": 70
+                },
+                "xdm:errorDetails": {
+                    "xdm:errorID": "errorID",
+                    "xdm:errorSource": "player"
+                },
+                "xdm:qoeDataDetails": {
+                    "xdm:bitrate": 100
+                },
+                "xdm:states": [
+                    {
+                        "xdm:name": "pictureInPicture",
+                        "xdm:set": true,
+                        "xdm:count": 2,
+                        "xdm:time": 100
+                    }
+                ]
+            }
+        }
+    ]
+}

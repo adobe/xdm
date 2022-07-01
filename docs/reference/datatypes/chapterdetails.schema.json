@@ -1,0 +1,84 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Chapter details information",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Chapter details information.",
+    "definitions": {
+        "chapterDetails": {
+            "properties": {
+                "xdm:friendlyName": {
+                    "title": "Chapter Name",
+                    "type": "string",
+                    "description": "The friendly name of the chapter and or segment."
+                },
+                "xdm:length": {
+                    "title": "Chapter Length Or Duration",
+                    "type": "integer",
+                    "description": "The length of the chapter, in seconds."
+                },
+                "xdm:offset": {
+                    "title": "Chapter Offset",
+                    "type": "integer",
+                    "description": "The offset of the chapter, in seconds, inside the content from the start."
+                },
+                "xdm:index": {
+                    "title": "Chapter Position",
+                    "type": "integer",
+                    "description": "The index of the chapter inside the content."
+                },
+                "xdm:chapterID": {
+                    "title": "Chapter ID",
+                    "type": "string",
+                    "description": "The auto-generated ID of the chapter."
+                },
+                "xdm:isStarted": {
+                    "title": "Chapter Started",
+                    "type": "boolean",
+                    "description": "Chapter is started."
+                },
+                "xdm:isCompleted": {
+                    "title": "Chapter Completed",
+                    "type": "boolean",
+                    "description": "Chapter is completed."
+                },
+                "xdm:timePlayed": {
+                    "title": "Chapter Time Played",
+                    "type": "integer",
+                    "description": "The time spent on the chapter. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+                }
+            },
+            "required": [
+                "xdm:length",
+                "xdm:offset",
+                "xdm:index",
+                "xdm:isStarted",
+                "xdm:isCompleted",
+                "xdm:timePlayed"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/chapterDetails"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:length": 100,
+            "xdm:offset": 50,
+            "xdm:index": 2,
+            "xdm:isStarted": false,
+            "xdm:isCompleted": false,
+            "xdm:timePlayed": 70
+        }
+    ]
+}

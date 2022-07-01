@@ -216,11 +216,7 @@
           "title": "Precipitation Type",
           "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
           "type": "string",
-          "enum": [
-            "rain",
-            "snow",
-            "precip"
-          ]
+          "enum": ["rain", "snow", "precip"]
         },
         "qpf": {
           "title": "QPF",

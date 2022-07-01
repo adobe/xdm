@@ -1,0 +1,88 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-media-collection",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "MediaCollection Interaction Details ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Track interactions with media collection.",
+  "definitions": {
+    "experienceevent-mediaCollection": {
+      "properties": {
+        "xdm:mediaCollection": {
+          "type": "object",
+          "description": "Media Collection related fields.",
+          "properties": {
+            "xdm:playerEventDetails": {
+              "title": "Player Event Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/playerEventDetails",
+              "description": "Player event details information related to the experience event."
+            },
+            "xdm:sessionDetails": {
+              "title": "Session Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+              "description": "Session details information related to the experience event."
+            },
+            "xdm:advertisingDetails": {
+              "title": "Advertising Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+              "description": "Advertising details information related to the experience event."
+            },
+            "xdm:advertisingPodDetails": {
+              "title": "Advertising Pod Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+              "description": "Advertising pod details information related to the experience event."
+            },
+            "xdm:chapterDetails": {
+              "title": "Chapter Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+              "description": "Chapter details information related to the experience event."
+            },
+            "xdm:errorDetails": {
+              "title": "Error Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
+              "description": "Error details information related to the experience event."
+            },
+            "xdm:qoeDataDetails": {
+              "title": "Qoe Data Details",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
+              "description": "Qoe data details information related to the experience event."
+            },
+            "xdm:statesStart": {
+              "title": "List Of States Start",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+              },
+              "description": "The list of states start."
+            },
+            "xdm:statesEnd": {
+              "title": "List Of States End",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+              },
+              "description": "The list of states end."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-mediaCollection"
+    }
+  ],
+  "meta:status": "experimental"
+}

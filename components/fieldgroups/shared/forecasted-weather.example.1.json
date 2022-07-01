@@ -1,0 +1,492 @@
+{
+  "xdm:weather": {
+    "xdm:forecast": {
+      "xdm:expiration": "2022-06-30T23:59:99+00:00",
+      "xdm:postalCountryCode": "84000",
+      "xdm:day01Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:day": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:night": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        }
+      },
+      "xdm:day02Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:day": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:night": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        }
+      },
+      "xdm:day03Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:day": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:night": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        }
+      },
+      "xdm:day05Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:day": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:night": {
+          "xdm:cloudCover": {
+            "xdm:kilometers": 5,
+            "xdm:miles": 3.1
+          },
+          "xdm:precipChance": 30,
+          "xdm:precipType": "rain",
+          "xdm:qpf": {
+            "xdm:millimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:relativeHumidity": 30,
+          "xdm:snowRange": "1-3\"",
+          "xdm:temperature": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureHeatIndex": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:temperatureWindChill": {
+            "xdm:celsius": 5,
+            "xdm:fahrenheit": 41
+          },
+          "xdm:thunderIndex": 1,
+          "xdm:windDirection": 17,
+          "xdm:windGust": {
+            "xdm:kilometersPerHour": 24,
+            "xdm:milesPerHour": 15
+          },
+          "xdm:windSpeed": {
+            "xdm:kilometersPerHour": 15,
+            "xdm:milesPerHour": 9
+          },
+          "xdm:qpfSnow": {
+            "xdm:centimeters": 0,
+            "xdm:inches": 0
+          },
+          "xdm:uvIndex": "3"
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        }
+      },
+      "xdm:day07Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:windDirection": 17,
+        "xdm:windSpeed": {
+          "xdm:kilometersPerHour": 15,
+          "xdm:milesPerHour": 9
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:cloudCover": {
+          "xdm:kilometers": 5,
+          "xdm:miles": 3.1
+        },
+        "xdm:uvIndex": "3"
+      },
+      "xdm:day10Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:windDirection": 17,
+        "xdm:windSpeed": {
+          "xdm:kilometersPerHour": 15,
+          "xdm:milesPerHour": 9
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:cloudCover": {
+          "xdm:kilometers": 5,
+          "xdm:miles": 3.1
+        },
+        "xdm:uvIndex": "3"
+      },
+      "xdm:day14Forecast": {
+        "xdm:qpf": {
+          "xdm:millimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:calendarDayTemperatureMax": {
+          "xdm:celsius": 10,
+          "xdm:fahrenheit": 50
+        },
+        "xdm:calendarDayTemperatureMin": {
+          "xdm:celsius": 0,
+          "xdm:fahrenheit": 32
+        },
+        "xdm:windDirection": 17,
+        "xdm:windSpeed": {
+          "xdm:kilometersPerHour": 15,
+          "xdm:milesPerHour": 9
+        },
+        "xdm:qpfSnow": {
+          "xdm:centimeters": 0,
+          "xdm:inches": 0
+        },
+        "xdm:cloudCover": {
+          "xdm:kilometers": 5,
+          "xdm:miles": 3.1
+        },
+        "xdm:uvIndex": "3"
+      }
+    }
+  }
+}

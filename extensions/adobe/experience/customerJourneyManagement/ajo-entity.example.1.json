@@ -1,0 +1,26 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign/name": "Marketing Campaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign/description": "Used for sending email/push messages"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/email": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/email/subject": "Hi there, season end sale is here!"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/push": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/push/title": "Hi, You've got a coupon"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messageName": "email/push personalized offers",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
+  }
+}

@@ -1,0 +1,343 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Session details information",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Session details information.",
+    "definitions": {
+        "sessionDetails": {
+            "properties": {
+                "xdm:ID": {
+                    "title": "Series ID",
+                    "type": "string",
+                    "pattern": "^.{1,}$",
+                    "description": "The series ID the show belongs to."
+                },
+                "xdm:name": {
+                    "title": "Content Name",
+                    "type": "string",
+                    "description": "The friendly, human-readable name of the timed media asset."
+                },
+                "xdm:length": {
+                    "title": "Media Content Length",
+                    "type": "integer",
+                    "description": "Length of primary media asset in seconds."
+                },
+                "xdm:contentType": {
+                    "title": "Broadcast Content Type",
+                    "type": "string",
+                    "description": "The type of the stream delivery.",
+                    "meta:enum": {
+                        "VOD": "Video-on-demand",
+                        "Live": "Live streaming",
+                        "Linear": "Linear playback of the media asset",
+                        "UGC": "User-generated content",
+                        "Radio": "Radio show",
+                        "Podcast": "Audio podcast",
+                        "Audiobook": "Audiobook"
+                    }
+                },
+                "xdm:playerName": {
+                    "title": "Content Player Name",
+                    "type": "string",
+                    "description": "Name of the content player."
+                },
+                "xdm:channel": {
+                    "title": "Content Channel",
+                    "type": "string",
+                    "description": "Distribution channel from where the content was played."
+                },
+                "xdm:sdkVersion": {
+                    "title": "Version",
+                    "type": "string",
+                    "description": "The version identifier of the API, e.g h.18."
+                },
+                "xdm:show": {
+                    "title": "Series Name",
+                    "type": "string",
+                    "description": "Name of the series."
+                },
+                "xdm:season": {
+                    "title": "Season Number",
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Number of the season."
+                },
+                "xdm:episode": {
+                    "title": "Episode Number",
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "Number of the episode."
+                },
+                "xdm:assetID": {
+                    "title": "Asset ID",
+                    "type": "string",
+                    "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
+                },
+                "xdm:genre": {
+                    "title": "Genre",
+                    "type": "string",
+                    "description": "Type or grouping of content as defined by content producer."
+                },
+                "xdm:firstAirDate": {
+                    "title": "First Air Date",
+                    "type": "string",
+                    "description": "The date when the content first aired on television."
+                },
+                "xdm:firstDigitalDate": {
+                    "title": "First Digital Date",
+                    "type": "string",
+                    "description": "The date when the content first aired on any digital channel or platform."
+                },
+                "xdm:rating": {
+                    "title": "Rating Value",
+                    "type": "string",
+                    "description": "Rating value as issued by the rating source."
+                },
+                "xdm:originator": {
+                    "title": "Creator Name",
+                    "type": "string",
+                    "description": "Full name of the creator."
+                },
+                "xdm:network": {
+                    "title": "Broadcast Network",
+                    "type": "string",
+                    "description": "The programmer network name."
+                },
+                "xdm:showType": {
+                    "title": "Show Type",
+                    "type": "string",
+                    "description": "The type of content for example, trailer or full episode."
+                },
+                "xdm:adLoad": {
+                    "title": "Ad Load Type",
+                    "type": "string",
+                    "description": "The type of ad loaded as defined by each customer's internal representation."
+                },
+                "xdm:mvpd": {
+                    "title": "MVPD Identifier",
+                    "type": "string",
+                    "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]"
+                },
+                "xdm:auth": {
+                    "title": "Media Authorized",
+                    "type": "boolean",
+                    "description": "The user has been authorized via authentication."
+                },
+                "xdm:dayPart": {
+                    "title": "Day Part",
+                    "type": "string",
+                    "description": "Defines the time of the day when the content was broadcast or played."
+                },
+                "xdm:feed": {
+                    "title": "Feed Type",
+                    "type": "string",
+                    "description": "The type of feed, which can either represent actual feed-related data such as  EAST HD or SD, or the source of the feed like a URL."
+                },
+                "xdm:streamFormat": {
+                    "title": "Stream Format",
+                    "type": "string",
+                    "description": "Free-form format of the stream for example, short or long."
+                },
+                "xdm:resume": {
+                    "title": "Resume",
+                    "type": "boolean",
+                    "description": "Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period."
+                },
+                "xdm:streamType": {
+                    "title": "Stream Type",
+                    "type": "string",
+                    "description": "The type of the media stream.",
+                    "enum": [
+                        "video",
+                        "audio"
+                    ],
+                    "meta:enum": {
+                        "video": "Video",
+                        "audio": "Audio"
+                    }
+                },
+                "xdm:artist": {
+                    "title": "Artist",
+                    "type": "string",
+                    "description": "The name of the album artist or group performing the music recording or video."
+                },
+                "xdm:album": {
+                    "title": "Album",
+                    "type": "string",
+                    "description": "The name of the album that the music recording or video belongs to."
+                },
+                "xdm:label": {
+                    "title": "Record Label",
+                    "type": "string",
+                    "description": "Name of the record label."
+                },
+                "xdm:author": {
+                    "title": "Author",
+                    "type": "string",
+                    "description": "Name of the media author."
+                },
+                "xdm:station": {
+                    "title": "Radio Station",
+                    "type": "string",
+                    "description": "The radio station name on which the audio is played."
+                },
+                "xdm:publisher": {
+                    "title": "Publisher",
+                    "type": "string",
+                    "description": "Name of the audio content publisher."
+                },
+                "xdm:segment": {
+                    "title": "Video Segment",
+                    "type": "string",
+                    "pattern": "^[[0-9]+-[0-9]+]$",
+                    "description": "The interval that describes the part of the content that has been viewed in minutes."
+                },
+                "xdm:isDownloaded": {
+                    "title": "Media Downloaded Flag",
+                    "type": "boolean",
+                    "description": "The stream was played locally on the device after being downloaded."
+                },
+                "xdm:isFederated": {
+                    "title": "Federated Data",
+                    "type": "boolean",
+                    "description": "Set to true when the hit is federated (i.e., received by the customer as part of a federated data share, rather than their own implementation)."
+                },
+                "xdm:view": {
+                    "title": "Media Starts",
+                    "type": "boolean",
+                    "description": "Load event for the media. (This occurs when the viewer clicks the Play button). This would count even if there are pre-roll ads, buffering, errors, and so on."
+                },
+                "xdm:play": {
+                    "title": "Content Starts",
+                    "type": "boolean",
+                    "description": "First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no “Content Start” event."
+                },
+                "xdm:dropBeforeStarts": {
+                    "title": "Drop Before Start",
+                    "type": "boolean",
+                    "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN."
+                },
+                "xdm:complete": {
+                    "title": "Content Completes",
+                    "type": "boolean",
+                    "description": "Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead."
+                },
+                "xdm:timePlayed": {
+                    "title": "Content Time Spent",
+                    "type": "integer",
+                    "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+                },
+                "xdm:totalTimePlayed": {
+                    "title": "Media Time Spent",
+                    "type": "integer",
+                    "description": "Describes the total amount of time spent by a user on a specific timed media asset, which includes time spent watching ads."
+                },
+                "xdm:uniqueTimePlayed": {
+                    "title": "Unique Time Played",
+                    "type": "integer",
+                    "description": "Describes the sum of the unique intervals seen by a user on a timed media asset - i.e. the length playback intervals viewed multiple times are only counted once."
+                },
+                "xdm:averageMinuteAudience": {
+                    "title": "Average Minute Audience",
+                    "type": "number",
+                    "description": "Describes the average content time spent for a specific media item - i.e. the total content time spent divided by the length for all of the playback sessions."
+                },
+                "xdm:adCount": {
+                    "title": "Ad Count",
+                    "type": "integer",
+                    "description": "The number of ads started during the playback."
+                },
+                "xdm:chapterCount": {
+                    "title": "Chapter Count",
+                    "type": "integer",
+                    "description": "The number of chapters started during the playback."
+                },
+                "xdm:progress10": {
+                    "title": "10% Progress Marker",
+                    "type": "boolean",
+                    "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+                },
+                "xdm:progress25": {
+                    "title": "25% Progress Marker",
+                    "type": "boolean",
+                    "description": "Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+                },
+                "xdm:progress50": {
+                    "title": "50% Progress Marker",
+                    "type": "boolean",
+                    "description": "Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+                },
+                "xdm:progress75": {
+                    "title": "75% Progress Marker",
+                    "type": "boolean",
+                    "description": "Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+                },
+                "xdm:progress95": {
+                    "title": "95% Progress Marker",
+                    "type": "boolean",
+                    "description": "Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted."
+                },
+                "xdm:estimatedStreams": {
+                    "title": "Estimated Streams",
+                    "type": "number",
+                    "description": "The estimated number of video or audio streams per each individual content."
+                },
+                "xdm:pause": {
+                    "title": "Pause Impacted Streams",
+                    "type": "boolean",
+                    "description": "Indicates if one or more pauses occurred during the playback of a single media item."
+                },
+                "xdm:pauseCount": {
+                    "title": "Pause Events",
+                    "type": "integer",
+                    "description": "The number of pause periods that occurred during playback."
+                },
+                "xdm:pauseTime": {
+                    "title": "Total Pause Duration",
+                    "type": "integer",
+                    "description": "Describes the duration in seconds in which playback was paused by the user."
+                },
+                "xdm:segmentView": {
+                    "title": "Media Segment Views",
+                    "type": "boolean",
+                    "description": "Indicates when at least one frame, not necessarily the first has been viewed."
+                },
+                "xdm:secondsSinceLastCall": {
+                    "title": "Media Session Server Timeout",
+                    "type": "number",
+                    "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
+                }
+            },
+            "required": [
+                "xdm:ID",
+                "xdm:length",
+                "xdm:contentType",
+                "xdm:playerName",
+                "xdm:channel"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/sessionDetails"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:ID": "123456789",
+            "xdm:length": 100,
+            "xdm:contentType": "VOD",
+            "xdm:playerName": "playerName",
+            "xdm:channel": "channel"
+        }
+    ]
+}

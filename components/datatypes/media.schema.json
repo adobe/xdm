@@ -560,6 +560,22 @@
                   "description": "Timed media properties related to in focus player state.",
                   "meta:titleId": "media##xdm:inFocus##title##93531",
                   "meta:descriptionId": "media##xdm:inFocus##description##43601"
+                },
+                "xdm:statesStart": {
+                  "title": "List of states start",
+                  "description": "The list of states start",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "xdm:statesEnd": {
+                  "title": "List of states end",
+                  "description": "The list of states end",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               },
               "meta:titleId": "media##xdm:primaryAssetViewDetails##title##24351",

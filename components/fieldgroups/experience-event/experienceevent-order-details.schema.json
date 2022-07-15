@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-order-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Order Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Order data such as product information (SKU, name, quantity), and related information like shipping, billing, payments etc.",
+  "definitions": {
+    "experienceevent-order": {
+      "properties": {
+        "xdm:productListItems": {
+          "title": "Product list items",
+          "type": "array",
+          "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
+          }
+        },
+        "xdm:order": {
+          "title": "Order",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/store-web-order",
+          "description": "Product Orders and realted information like payments."
+        },
+        "xdm:store": {
+          "title": "Store Details",
+          "type": "object",
+          "description": "Store related information.",
+          "properties": {
+            "xdm:storeID": {
+              "title": "Store ID",
+              "type": "string",
+              "description": "Unique identifier for the store."
+            }
+          }
+        },
+        "xdm:billing": {
+          "title": "Billing Details",
+          "type": "object",
+          "description": "Billing related information.",
+          "properties": {
+            "xdm:address": {
+              "title": "Billing Address",
+              "description": "Billing Address.",
+              "$ref": "https://ns.adobe.com/xdm/common/address"
+            }
+          }
+        },
+        "xdm:shipping": {
+          "title": "Shipping",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/shipping",
+          "description": "Shipping related informnation for the order."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-order"
+    }
+  ],
+  "meta:status": "experimental"
+}

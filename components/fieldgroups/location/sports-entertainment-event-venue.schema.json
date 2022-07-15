@@ -1,0 +1,81 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/sports-entertainment-event-venue",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sports Entertainment Event Venue",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/location"],
+  "meta:tags": {
+    "industry": ["travel_and_hospitality"]
+  },
+  "description": "For Sports and Entertaiment Event Venue information, such as a concert hall or sports arena.",
+  "definitions": {
+    "sports-entertainment-event-venue": {
+      "properties": {
+        "xdm:eventVenue": {
+          "title": "Event Venue",
+          "type": "object",
+          "description": "Details of a live event venue physical location.",
+          "properties": {
+            "xdm:designatedMarketAreas": {
+              "description": "The list of associated DMAs (Designated Market Areas) of the venue",
+              "items": {
+                "type": "string"
+              },
+              "title": "DMA List",
+              "type": "array"
+            },
+            "xdm:currency": {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/currency",
+              "description": "Local currency accepted by the venue.",
+              "title": "Currency"
+            },
+            "xdm:markets": {
+              "description": "Markets of the venue",
+              "items": {
+                "type": "string"
+              },
+              "required": [],
+              "title": "Markets",
+              "type": "array"
+            },
+            "xdm:physicalAddress": {
+              "$ref": "https://ns.adobe.com/xdm/common/address",
+              "description": "Physical Address of the event venue.",
+              "title": "Physical Address"
+            },
+            "xdm:seatingCapacity": {
+              "description": "Seating capacity of the venue.",
+              "title": "Seating Capacity",
+              "type": "integer"
+            },
+            "xdm:timeZone": {
+              "description": "Time zone in which the venue resides.",
+              "title": "Time Zone",
+              "type": "string"
+            },
+            "xdm:url": {
+              "description": "URL for the Venue web presence.",
+              "required": [],
+              "title": "URL",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/sports-entertainment-event-venue"
+    }
+  ],
+  "meta:status": "experimental"
+}

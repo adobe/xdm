@@ -1,11 +1,8 @@
 {
   "xdm:mediaReporting": {
-    "xdm:playerEventDetails": {
-      "xdm:playhead": 831,
-      "xdm:sessionID": "1234567890"
-    },
     "xdm:sessionDetails": {
-      "xdm:ID": "123456789",
+      "xdm:ID": "1482236761294786918253",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
@@ -33,12 +30,8 @@
       "xdm:isCompleted": false,
       "xdm:timePlayed": 70
     },
-    "xdm:errorDetails": {
-      "xdm:errorID": "errorID",
-      "xdm:errorSource": "player"
-    },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:bitrateAverageBucket": 100
     },
     "xdm:states": [
       {

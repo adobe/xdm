@@ -23,11 +23,6 @@
           "type": "object",
           "description": "Media Reporting related fields.",
           "properties": {
-            "xdm:playerEventDetails": {
-              "title": "Player Event Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/playerEventDetails",
-              "description": "Player event details information related to the experience event."
-            },
             "xdm:sessionDetails": {
               "title": "Session Details",
               "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
@@ -48,11 +43,6 @@
               "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
               "description": "Chapter details information related to the experience event."
             },
-            "xdm:errorDetails": {
-              "title": "Error Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-              "description": "Error details information related to the experience event."
-            },
             "xdm:qoeDataDetails": {
               "title": "Qoe Data Details",
               "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
@@ -66,7 +56,8 @@
               },
               "description": "The list of states."
             }
-          }
+          },
+          "required": ["xdm:sessionDetails"]
         }
       }
     }

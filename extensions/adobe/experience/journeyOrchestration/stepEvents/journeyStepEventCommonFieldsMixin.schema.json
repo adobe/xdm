@@ -48,7 +48,17 @@
             "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
               "title": "origSegmentQualificationStatus",
               "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "existing",
+                "realized",
+                "exited"
+              ],
+              "meta:enum": {
+                "existing": "existing",
+                "realized": "realized",
+                "exited": "exited"
+              }
             },
             "https://ns.adobe.com/experience/journeyOrchestration/entrance": {
               "title": "entrance",

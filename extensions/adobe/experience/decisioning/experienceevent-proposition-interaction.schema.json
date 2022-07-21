@@ -17,6 +17,11 @@
     "decisioning-experienceevent-all": {
       "type": "object",
       "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositionEventType": {
+          "title": "Associated Event",
+          "description": "A record of how the user interacted with the proposition. All proposition recorded on this event will be associated with the same event that is recorded here.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-event-type"
+        },
         "https://ns.adobe.com/experience/decisioning/propositions": {
           "title": "Involved Propositions",
           "type": "array",

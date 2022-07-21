@@ -104,7 +104,12 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentID": {
               "title": "Treatment ID",
               "type": "string",
-              "description": "Has one to one mapping with messageID"
+              "description": "This along with experimentId has one to one mapping with messageID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/experimentId": {
+              "title": "Experiment ID",
+              "type": "string",
+              "description": "This along with treatmentId has one to one mapping with messageID"
             }
           }
         },
@@ -126,6 +131,9 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/ajo"
     }
   ]
 }

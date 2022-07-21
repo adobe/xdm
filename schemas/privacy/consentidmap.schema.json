@@ -14,8 +14,7 @@
   "meta:abstract": false,
   "definitions": {
     "consentidmap": {
-      "properties": {
-      }
+      "properties": {}
     }
   },
   "allOf": [
@@ -29,8 +28,6 @@
       "$ref": "https://ns.adobe.com/xdm/mixins/profile-consentResults"
     }
   ],
-  "meta:immutableTags": [
-    "union"
-  ],
+  "meta:immutableTags": ["union"],
   "meta:status": "stable"
 }

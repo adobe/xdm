@@ -15,7 +15,9 @@
   "definitions": {
     "consentidmap": {
       "properties": {
-         },
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile"

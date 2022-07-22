@@ -22,20 +22,6 @@ Decision scope details capture properties that existed to narrow the scope of th
 
 ```json
 {
-  "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
-  "xdm:correlationID": "20c2587dcb1e85f52d070e12dd52e815",
-  "xdm:strategies": [
-    {
-      "xdm:step": "experimentation",
-      "xdm:strategyID": "16ASJZ2DWmusQjtxucYats",
-      "xdm:treatmentID": "0"
-    }
-  ]
-}
-```
-
-```json
-{
   "xdm:id": "home-page-banner",
   "xdm:placement": {
     "xdm:id": "xcore:offer-placement:c652463157c2aa1",
@@ -59,6 +45,20 @@ Decision scope details capture properties that existed to narrow the scope of th
       "xdm:strategyID": "ranking-strategy:7251468357c2236",
       "xdm:algorithmID": "auto-optimize",
       "xdm:trafficType": "noncontextual"
+    }
+  ]
+}
+```
+
+```json
+{
+  "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+  "xdm:correlationID": "20c2587dcb1e85f52d070e12dd52e815",
+  "xdm:strategies": [
+    {
+      "xdm:step": "experimentation",
+      "xdm:strategyID": "16ASJZ2DWmusQjtxucYats",
+      "xdm:treatmentID": "0"
     }
   ]
 }

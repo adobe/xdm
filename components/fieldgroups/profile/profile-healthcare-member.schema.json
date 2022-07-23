@@ -136,7 +136,7 @@
                   },
                   "xdm:refillType": {
                     "title": "Refill Type",
-                    "type": "sring",
+                    "type": "string",
                     "enum": ["Retail Pharmacy", "Mail Order"],
                     "meta:enum": {
                       "Retail Pharmacy": "Retail Pharmacy",

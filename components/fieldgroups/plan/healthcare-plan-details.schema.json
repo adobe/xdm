@@ -64,7 +64,8 @@
               "title": "Affiliations",
               "items": {
                 "type": "string"
-              }
+              },
+              "description": "."
             },
             "xdm:planType": {
               "title": "Plan Type",

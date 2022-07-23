@@ -49,15 +49,6 @@
               "type": "string",
               "description": "Service provider practice group type."
             },
-            "xdm:classification": {
-              "title": "Service Provider Class/Category",
-              "type": "string",
-              "description": "Service provider classification based on class or category (e.g. patient-care, non-patient care, etc).",
-              "meta:enum": {
-                "patient_care": "Patient Care",
-                "non_patient_care": "Non-Patient Care"
-              }
-            },
             "xdm:specialities": {
               "title": "Specialities",
               "description": "Specialities offered by this provider.",
@@ -115,13 +106,20 @@
                   },
                   "xdm:issuer": {
                     "title": "Issuer",
-                    "description": "Organization that regulates and issues the qualification.",
-                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+                    "type": "string",
+                    "description": "Organization name that regulates and issues the qualification."
                   },
-                  "xdm:activePeriod": {
-                    "title": "Active Period",
-                    "type": "integer",
-                    "description": "Year until which the qualification is valid."
+                  "xdm:startDate": {
+                    "title": "Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Start date of this qualification."
+                  },
+                  "xdm:endDate": {
+                    "title": "End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which this qualification becomes inactive."
                   }
                 }
               }

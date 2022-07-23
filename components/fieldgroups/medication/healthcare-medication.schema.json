@@ -24,18 +24,10 @@
           "description": "Information about the medication.",
           "type": "object",
           "properties": {
-            "xdm:codes": {
-              "title": "Codes",
-              "type": "array",
-              "items": {
-                "type": "string"
-              },
-              "description": "Codes that identify this medication."
-            },
             "xdm:status": {
               "title": "Status",
               "type": "string",
-              "description": "Status indicating whether the drug/medication is active or not.",
+              "description": "Status indicating whether the drug/medication is active/prescribable or not.",
               "enum": ["active", "inactive", "entered-in-error"],
               "meta:enum": {
                 "active": "Active",
@@ -73,11 +65,6 @@
               "type": "number",
               "description": "Amount of drug in the package."
             },
-            "xdm:volume": {
-              "title": "Drug Volume",
-              "type": "number",
-              "description": "Drug Volume."
-            },
             "xdm:ingredients": {
               "title": "ingredients",
               "description": "Ingredients present in the medication",
@@ -91,11 +78,6 @@
                     "type": "string",
                     "description": "Name of the ingredient."
                   },
-                  "xdm:quantity": {
-                    "title": "Quantity",
-                    "type": "string",
-                    "description": "Quantity of the ingredient present in the medication."
-                  },
                   "xdm:isActive": {
                     "title": "Is Active",
                     "type": "boolean",
@@ -103,17 +85,6 @@
                   }
                 }
               }
-            },
-            "xdm:expiryDate": {
-              "title": "Expiry Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Expiry date of the medication."
-            },
-            "xdm:lotNumber": {
-              "title": "Lot Number",
-              "type": "string",
-              "description": "Unique identifier of the batch."
             }
           }
         }

@@ -24,32 +24,11 @@
           "description": "Information about the member.",
           "type": "object",
           "properties": {
-            "xdm:nationality": {
-              "title": "Nationality",
-              "type": "string",
-              "pattern": "^[A-Z]{2}$",
-              "description": "The legal relationship between a patient/member and their state represented using the ISO 3166-1 Alpha-2 code."
-            },
             "xdm:dateAgeCollected": {
               "title": "Date Age Collected",
               "type": "string",
               "format": "date-time",
               "description": "The date the patient age was collected."
-            },
-            "xdm:multipleBirth": {
-              "type": "object",
-              "properties": {
-                "xdm:isMultipleBirth": {
-                  "title": "Multiple Birth Indicator",
-                  "type": "boolean",
-                  "description": "Boolean flag to indicate if the member gave multiple births."
-                },
-                "xdm:multipleBirthNumber": {
-                  "title": "Number Of Babies",
-                  "type": "integer",
-                  "description": "Number of babies born if multiple birth is true."
-                }
-              }
             },
             "xdm:primaryCarePhysicians": {
               "type": "array",
@@ -62,10 +41,23 @@
                     "type": "string",
                     "description": "Unique identifier of the physician."
                   },
-                  "xdm:fullName": {
-                    "title": "Full Name",
+                  "xdm:firstName": {
+                    "title": "First Name",
                     "type": "string",
-                    "description": "Primary care physician's full name."
+                    "description": "Primary care physician's first name."
+                  },
+                  "xdm:lastName": {
+                    "title": "Last Name",
+                    "type": "string",
+                    "description": "Primary care physician's last name."
+                  },
+                  "xdm:healthNetAffiliation": {
+                    "title": "Health Network Affiliation",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Name of the health network that pcp is affiliated to."
                   },
                   "xdm:startDate": {
                     "title": "Start Date",
@@ -87,10 +79,20 @@
               "description": "Emergency contact details.",
               "type": "object",
               "properties": {
-                "xdm:fullName": {
-                  "title": "Full Name",
+                "xdm:firstName": {
+                  "title": "First Name",
                   "type": "string",
-                  "description": "Full name of the emergency contact."
+                  "description": "First name of the emergency contact."
+                },
+                "xdm:lastName": {
+                  "title": "Last Name",
+                  "type": "string",
+                  "description": "Last name of the emergency contact."
+                },
+                "xdm:email": {
+                  "title": "Email",
+                  "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                  "description": "Email address of the emergency contact."
                 },
                 "xdm:phone": {
                   "title": "Phone Number",
@@ -104,7 +106,7 @@
                 }
               }
             },
-            "xdm:preferredAvaiability": {
+            "xdm:preferredAvailability": {
               "title": "Preferred Availability",
               "type": "string",
               "description": "Patient's preferred day and time availability for an appointment."
@@ -122,20 +124,37 @@
                     "type": "string",
                     "description": "Unique identifier for the medication."
                   },
+                  "xdm:name": {
+                    "title": "Medication Name",
+                    "type": "string",
+                    "description": "Brand name of the medication."
+                  },
                   "xdm:numberOfRefills": {
                     "title": "Number Of Refills",
                     "type": "integer",
                     "description": "Number of refills prescribed by the provider for this medication."
                   },
-                  "xdm:refillLocation": {
-                    "title": "Medication Refill Location",
-                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                  "xdm:refillType": {
+                    "title": "Refill Type",
+                    "type": "sring",
+                    "enum": ["Retail Pharmacy", "Mail Order"],
+                    "meta:enum": {
+                      "Retail Pharmacy": "Retail Pharmacy",
+                      "Mail Order": "Mail Order"
+                    },
+                    "description": "Type of medicine refill."
                   },
                   "xdm:startDate": {
                     "title": "Medication Start Date",
                     "type": "string",
                     "format": "date-time",
                     "description": "Date on which the patient began taking the medication."
+                  },
+                  "xdm:endDate": {
+                    "title": "Medication End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which the patient stop taking the medication."
                   },
                   "xdm:isCurrent": {
                     "title": "Is Current",
@@ -179,14 +198,22 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "xdm:fullname": {
-                    "title": "Full Name",
+                  "xdm:firstName": {
+                    "title": "first Name",
                     "type": "string",
-                    "description": "Full name of the specialist provider."
+                    "description": "First name of the specialist provider."
+                  },
+                  "xdm:lastName": {
+                    "title": "last Name",
+                    "type": "string",
+                    "description": "Last name of the specialist provider."
                   },
                   "xdm:specialty": {
                     "title": "Specialty",
-                    "type": "string",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
                     "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc)."
                   },
                   "xdm:providerID": {
@@ -196,6 +223,14 @@
                   }
                 }
               }
+            },
+            "xdm:healthConcerns": {
+              "title": "Health Concerns",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Array list of all health concerns"
             },
             "xdm:isDeceased": {
               "title": "Deceased Indicator",

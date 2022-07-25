@@ -41,43 +41,15 @@ Information about the healthcare plan.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:affiliations`| array | Optional |
 | `xdm:coverageType`| string | Optional |
 | `xdm:isActive`| boolean | Optional |
 | `xdm:lastVerificationDate`| string | Optional |
 | `xdm:networkDetails`| array | Optional |
 | `xdm:payerID`| string | Optional |
+| `xdm:payerName`| string | Optional |
 | `xdm:planLevel`| string | Optional |
 | `xdm:planType`| string | Optional |
 | `xdm:targetOwnerType`| string | Optional |
-
-
-
-#### xdm:affiliations
-##### Affiliations
-
-undefined
-
-`xdm:affiliations`
-* is optional
-* type: `string[]`
-
-
-##### xdm:affiliations Type
-
-
-Array type: `string[]`
-
-All items must be of the type:
-`string`
-
-
-
-
-
-
-
-
 
 
 
@@ -176,7 +148,7 @@ All items must be of the type:
 #### xdm:networkID
 ##### Network Identifier
 
-The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkID`
 * is optional
@@ -197,7 +169,7 @@ The insurer-specific identifier for the insurer-defined network of providers to 
 #### xdm:networkName
 ##### Network Name
 
-The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkName`
 * is optional
@@ -244,6 +216,27 @@ Unique identifier of the payer. This is the insurance provider of the plan.
 
 
 
+#### xdm:payerName
+##### Payer Name
+
+Name of the payer. This is the insurance provider of the plan.
+
+`xdm:payerName`
+* is optional
+* type: `string`
+
+##### xdm:payerName Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### xdm:planLevel
 ##### Plan Level
 
@@ -271,7 +264,7 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:planType
 ##### Plan Type
 
-This indicates if the plan is primary,secondary or tertiary plan.
+This indicates if the plan is primary, secondary or a tertiary plan.
 
 `xdm:planType`
 * is optional
@@ -296,7 +289,7 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:targetOwnerType
 ##### Target Owner Type
 
-The type of owner a plan is for. Examples are individual, group, organization etc.
+ The type of owner a plan is for. Examples are individual, group, organization, etc.
 
 `xdm:targetOwnerType`
 * is optional

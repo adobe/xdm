@@ -57,7 +57,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "Name of the health network that pcp is affiliated to."
+                    "description": "Name of the health network to which the Primary Care Provider is affiliated."
                   },
                   "xdm:startDate": {
                     "title": "Start Date",
@@ -74,65 +74,38 @@
                 }
               }
             },
-            "xdm:emergencyContact": {
-              "title": "Emergency Contact",
-              "description": "Emergency contact details.",
-              "type": "object",
-              "properties": {
-                "xdm:firstName": {
-                  "title": "First Name",
-                  "type": "string",
-                  "description": "First name of the emergency contact."
-                },
-                "xdm:lastName": {
-                  "title": "Last Name",
-                  "type": "string",
-                  "description": "Last name of the emergency contact."
-                },
-                "xdm:email": {
-                  "title": "Email",
-                  "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
-                  "description": "Email address of the emergency contact."
-                },
-                "xdm:phone": {
-                  "title": "Phone Number",
-                  "type": "string",
-                  "description": "Phone number of the emergency contact."
-                },
-                "xdm:relationshipToMember": {
-                  "title": "Relationship To Member",
-                  "type": "string",
-                  "description": "Emergency contact's relationship to the member."
-                }
-              }
-            },
             "xdm:preferredAvailability": {
               "title": "Preferred Availability",
               "type": "string",
               "description": "Patient's preferred day and time availability for an appointment."
             },
-            "xdm:medications": {
-              "title": "Medications",
-              "description": "Medication information including ID, start date, and active flag.",
+            "xdm:prescriptions": {
+              "title": "Prescriptions",
+              "description": "Prescription information including ID, start date, and active flag.",
               "type": "array",
               "items": {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
                   "xdm:ID": {
-                    "title": "Medication ID",
+                    "title": "Prescription ID",
                     "type": "string",
-                    "description": "Unique identifier for the medication."
+                    "description": "Unique identifier for the prescription."
                   },
                   "xdm:name": {
-                    "title": "Medication Name",
+                    "title": "Prescription Name",
                     "type": "string",
-                    "description": "Brand name of the medication."
+                    "description": "Name of the prescription."
                   },
                   "xdm:numberOfRefills": {
                     "title": "Number Of Refills",
                     "type": "integer",
-                    "description": "Number of refills prescribed by the provider for this medication."
+                    "description": "Number of refills prescribed by the provider for this prescription."
+                  },
+                  "xdm:refillLocation": {
+                    "title": "Prescription Refill Location",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "Address at which the precription will be filled."
                   },
                   "xdm:refillType": {
                     "title": "Refill Type",
@@ -142,54 +115,27 @@
                       "Retail Pharmacy": "Retail Pharmacy",
                       "Mail Order": "Mail Order"
                     },
-                    "description": "Type of medicine refill."
+                    "description": "Type of prescription refill."
                   },
                   "xdm:startDate": {
-                    "title": "Medication Start Date",
+                    "title": "Prescription Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the patient began taking the medication."
+                    "description": "Date on which the patient began taking the prescription."
                   },
                   "xdm:endDate": {
-                    "title": "Medication End Date",
+                    "title": "Prescription End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the patient stop taking the medication."
+                    "description": "Date on which the patient stop taking the prescription."
                   },
                   "xdm:isCurrent": {
                     "title": "Is Current",
                     "type": "boolean",
-                    "description": "Indicates whether the medication is current or past."
+                    "description": "Indicates whether the prescription is current or past."
                   }
                 }
               }
-            },
-            "xdm:isDependent": {
-              "title": "Is Dependent",
-              "type": "boolean",
-              "description": "Indicates whether this member is a dependent."
-            },
-            "xdm:primaryMemberID": {
-              "title": "Primary Member ID",
-              "type": "string",
-              "description": "Unique identifier of the primary subscriber if the member is a dependent."
-            },
-            "xdm:beneficiaryRelationship": {
-              "title": "Beneficiary Relationship",
-              "type": "string",
-              "enum": ["self", "spouse", "child", "parent"],
-              "meta:enum": {
-                "self": "Self",
-                "spouse": "Spouse",
-                "child": "Child",
-                "parent": "Parent"
-              },
-              "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc)."
-            },
-            "xdm:billingAccountID": {
-              "title": "Billing Account ID",
-              "type": "string",
-              "description": "Unique identifier of the billing account."
             },
             "xdm:specialists": {
               "title": "Specialist",
@@ -271,6 +217,33 @@
                     "title": "Is Active",
                     "type": "boolean",
                     "description": "Boolean flag indicates whether the plan is active."
+                  },
+                  "xdm:isDependent": {
+                    "title": "Is Dependent",
+                    "type": "boolean",
+                    "description": "Indicates whether this member is a dependent."
+                  },
+                  "xdm:primaryMemberID": {
+                    "title": "Primary Member ID",
+                    "type": "string",
+                    "description": "Unique identifier of the primary subscriber if the member is a dependent."
+                  },
+                  "xdm:beneficiaryRelationship": {
+                    "title": "Beneficiary Relationship",
+                    "type": "string",
+                    "enum": ["self", "spouse", "child", "parent"],
+                    "meta:enum": {
+                      "self": "Self",
+                      "spouse": "Spouse",
+                      "child": "Child",
+                      "parent": "Parent"
+                    },
+                    "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc)."
+                  },
+                  "xdm:billingAccountID": {
+                    "title": "Billing Account ID",
+                    "type": "string",
+                    "description": "Unique identifier of the billing account."
                   }
                 }
               }

@@ -29,6 +29,11 @@
               "type": "string",
               "description": "Unique identifier of the payer. This is the insurance provider of the plan."
             },
+            "xdm:payerName": {
+              "title": "Payer Name",
+              "type": "string",
+              "description": "Name of the payer. This is the insurance provider of the plan."
+            },
             "xdm:targetOwnerType": {
               "title": "Target Owner Type",
               "type": "string",
@@ -58,14 +63,6 @@
                   }
                 }
               }
-            },
-            "xdm:affiliations": {
-              "type": "array",
-              "title": "Affiliations",
-              "items": {
-                "type": "string"
-              },
-              "description": "."
             },
             "xdm:planType": {
               "title": "Plan Type",

@@ -50,6 +50,11 @@
               "description": "Manufacturer of the medication.",
               "type": "string"
             },
+            "xdm:form": {
+              "title": "Medication Form",
+              "type": "string",
+              "description": "Form that the medication comes in such as tablet, capsule, or liquid."
+            },
             "xdm:dosageUnitNumber": {
               "title": "Dosage Unit Number",
               "type": "number",

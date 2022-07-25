@@ -15,7 +15,7 @@
     "industry": ["healthcare_services"]
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/medication"],
-  "description": "Medication details such as brand name, lot number, and quantity.",
+  "description": "Medication details such as ingredients, brand name, and quantity.",
   "definitions": {
     "medication-details": {
       "properties": {
@@ -86,7 +86,7 @@
                   "xdm:isActive": {
                     "title": "Is Active",
                     "type": "boolean",
-                    "description": "Indicates if this ingredient is still actively used in this medication."
+                    "description": "Indicates if this ingredient is active in the medication."
                   }
                 }
               }

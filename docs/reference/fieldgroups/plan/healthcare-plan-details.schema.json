@@ -41,7 +41,7 @@
                         "xdm:targetOwnerType": {
                             "title": "Target Owner Type",
                             "type": "string",
-                            "description": "The type of owner a plan is for. Examples are individual, group, organization etc."
+                            "description": " The type of owner a plan is for. Examples are individual, group, organization, etc."
                         },
                         "xdm:isActive": {
                             "title": "Is Active",
@@ -58,12 +58,12 @@
                                     "xdm:networkID": {
                                         "title": "Network Identifier",
                                         "type": "string",
-                                        "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                                        "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate."
                                     },
                                     "xdm:networkName": {
                                         "title": "Network Name",
                                         "type": "string",
-                                        "description": "The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                                        "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate."
                                     }
                                 }
                             }
@@ -84,7 +84,7 @@
                                 "pos": "POS",
                                 "hdhp": "HDHP"
                             },
-                            "description": "This indicates if the plan is primary,secondary or tertiary plan."
+                            "description": "This indicates if the plan is primary, secondary or a tertiary plan."
                         },
                         "xdm:planLevel": {
                             "title": "Plan Level",

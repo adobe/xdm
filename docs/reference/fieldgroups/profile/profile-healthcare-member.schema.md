@@ -543,7 +543,7 @@ Unique identifier for the prescription.
 #### xdm:endDate
 ##### Prescription End Date
 
-Date on which the patient stop taking the prescription.
+Date on which the patient stops taking the prescription.
 
 `xdm:endDate`
 * is optional
@@ -627,7 +627,7 @@ Number of refills prescribed by the provider for this prescription.
 #### xdm:refillLocation
 ##### Prescription Refill Location
 
-Address at which the precription will be filled.
+Address at which the prescription will be filled.
 
 `xdm:refillLocation`
 * is optional
@@ -651,9 +651,14 @@ Type of prescription refill.
 
 `xdm:refillType`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmmemberdetails-known-values).
+##### xdm:refillType Type
+
+
+`string`
+
+
 
 ##### xdm:refillType Known Values
 | Value | Description |
@@ -717,7 +722,7 @@ All items must be of the type:
 |----------|------|----------|
 | `xdm:endDate`| string | Optional |
 | `xdm:firstName`| string | Optional |
-| `xdm:healthNetAffiliation`| array | Optional |
+| `xdm:healthNetworkAffiliation`| array | Optional |
 | `xdm:lastName`| string | Optional |
 | `xdm:providerID`| string | Optional |
 | `xdm:startDate`| string | Optional |
@@ -767,17 +772,17 @@ Primary care physician's first name.
 
 
 
-#### xdm:healthNetAffiliation
+#### xdm:healthNetworkAffiliation
 ##### Health Network Affiliation
 
 Name of the health network to which the Primary Care Provider is affiliated.
 
-`xdm:healthNetAffiliation`
+`xdm:healthNetworkAffiliation`
 * is optional
 * type: `string[]`
 
 
-##### xdm:healthNetAffiliation Type
+##### xdm:healthNetworkAffiliation Type
 
 
 Array type: `string[]`
@@ -840,7 +845,7 @@ Unique identifier of the physician.
 #### xdm:startDate
 ##### Start Date
 
-Date on which the PCP began care for the member.
+Date on which the primary care provider began care for the member.
 
 `xdm:startDate`
 * is optional

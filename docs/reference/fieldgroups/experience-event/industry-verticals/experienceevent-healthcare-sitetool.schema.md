@@ -172,7 +172,7 @@ Indicates if this event is a key event.
 
 #### xdm:name
 
-Name of the site tool like chatbot, survey ..etc.
+Name of the site tool. I.e., chatbot, survey, questionnaire.
 
 `xdm:name`
 * is optional
@@ -192,7 +192,7 @@ Name of the site tool like chatbot, survey ..etc.
 
 #### xdm:section
 
-Section of the site tool like main , sub.
+Section of the site tool. I.e., main, sub, etc.
 
 `xdm:section`
 * is optional

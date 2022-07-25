@@ -41,43 +41,15 @@ Information about the healthcare plan.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:affiliations`| array | Optional |
 | `xdm:coverageType`| string | Optional |
 | `xdm:isActive`| boolean | Optional |
 | `xdm:lastVerificationDate`| string | Optional |
 | `xdm:networkDetails`| array | Optional |
 | `xdm:payerID`| string | Optional |
+| `xdm:payerName`| string | Optional |
 | `xdm:planLevel`| string | Optional |
 | `xdm:planType`| string | Optional |
 | `xdm:targetOwnerType`| string | Optional |
-
-
-
-#### xdm:affiliations
-##### Affiliations
-
-undefined
-
-`xdm:affiliations`
-* is optional
-* type: `string[]`
-
-
-##### xdm:affiliations Type
-
-
-Array type: `string[]`
-
-All items must be of the type:
-`string`
-
-
-
-
-
-
-
-
 
 
 
@@ -233,6 +205,27 @@ Unique identifier of the payer. This is the insurance provider of the plan.
 * type: `string`
 
 ##### xdm:payerID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:payerName
+##### Payer Name
+
+Name of the payer. This is the insurance provider of the plan.
+
+`xdm:payerName`
+* is optional
+* type: `string`
+
+##### xdm:payerName Type
 
 
 `string`

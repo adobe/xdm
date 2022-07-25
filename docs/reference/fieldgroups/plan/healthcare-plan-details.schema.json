@@ -33,6 +33,11 @@
                             "type": "string",
                             "description": "Unique identifier of the payer. This is the insurance provider of the plan."
                         },
+                        "xdm:payerName": {
+                            "title": "Payer Name",
+                            "type": "string",
+                            "description": "Name of the payer. This is the insurance provider of the plan."
+                        },
                         "xdm:targetOwnerType": {
                             "title": "Target Owner Type",
                             "type": "string",
@@ -61,13 +66,6 @@
                                         "description": "The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
                                     }
                                 }
-                            }
-                        },
-                        "xdm:affiliations": {
-                            "type": "array",
-                            "title": "Affiliations",
-                            "items": {
-                                "type": "string"
                             }
                         },
                         "xdm:planType": {

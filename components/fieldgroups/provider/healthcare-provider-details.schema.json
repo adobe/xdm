@@ -129,7 +129,8 @@
               "type": "array",
               "items": {
                 "type": "string"
-              }
+              },
+              "description": "Languages in which the provider is proficient."
             }
           }
         }

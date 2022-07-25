@@ -51,7 +51,7 @@
                     "type": "string",
                     "description": "Primary care physician's last name."
                   },
-                  "xdm:healthNetAffiliation": {
+                  "xdm:healthNetworkAffiliation": {
                     "title": "Health Network Affiliation",
                     "type": "array",
                     "items": {
@@ -63,7 +63,7 @@
                     "title": "Start Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the PCP began care for the member."
+                    "description": "Date on which the primary care provider began care for the member."
                   },
                   "xdm:endDate": {
                     "title": "End Date",
@@ -105,12 +105,11 @@
                   "xdm:refillLocation": {
                     "title": "Prescription Refill Location",
                     "$ref": "https://ns.adobe.com/xdm/common/address",
-                    "description": "Address at which the precription will be filled."
+                    "description": "Address at which the prescription will be filled."
                   },
                   "xdm:refillType": {
                     "title": "Refill Type",
                     "type": "string",
-                    "enum": ["Retail Pharmacy", "Mail Order"],
                     "meta:enum": {
                       "Retail Pharmacy": "Retail Pharmacy",
                       "Mail Order": "Mail Order"
@@ -127,7 +126,7 @@
                     "title": "Prescription End Date",
                     "type": "string",
                     "format": "date-time",
-                    "description": "Date on which the patient stop taking the prescription."
+                    "description": "Date on which the patient stops taking the prescription."
                   },
                   "xdm:isCurrent": {
                     "title": "Is Current",

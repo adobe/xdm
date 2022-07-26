@@ -31,12 +31,12 @@
                         "xdm:name": {
                             "Title": "Site Tool Name",
                             "type": "string",
-                            "description": "Name of the site tool like chatbot, survey ..etc."
+                            "description": "Name of the site tool. I.e., chatbot, survey, questionnaire."
                         },
                         "xdm:section": {
                             "Title": "Site Tool Section",
                             "type": "string",
-                            "description": "Section of the site tool like main , sub."
+                            "description": "Section of the site tool. I.e., main, sub, etc."
                         },
                         "xdm:actor": {
                             "Title": "Actor",

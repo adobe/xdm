@@ -21,18 +21,18 @@ Used to assign a single field in the schema that will be used to detect and fail
 ```json
 {
   "@type": "xdm:descriptorVersion",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/datatypes/currency",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/conversionDate"
+  "xdm:sourceProperty": "/modification"
 }
 ```
 
 ```json
 {
   "@type": "xdm:descriptorVersion",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-reservation-details",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/datatypes/currency",
   "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/modification"
+  "xdm:sourceProperty": "/conversionDate"
 }
 ```
 

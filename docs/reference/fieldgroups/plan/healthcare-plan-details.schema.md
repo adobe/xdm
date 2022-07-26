@@ -9,7 +9,7 @@ Patient medical plan details such as network, type, and active status.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/plan/healthcare-plan-details.schema.json](fieldgroups/plan/healthcare-plan-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/plan/healthcare-plan-details.schema.json](fieldgroups/plan/healthcare-plan-details.schema.json) |
 
 ## Healthcare Plan Details Example
 ```json
@@ -60,9 +60,14 @@ Plan coverage type.
 
 `xdm:coverageType`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:coverageType Type
+
+
+`string`
+
+
 
 ##### xdm:coverageType Known Values
 | Value | Description |
@@ -244,9 +249,14 @@ This indicates if the plan is primary, secondary, tertiary etc.
 
 `xdm:planLevel`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:planLevel Type
+
+
+`string`
+
+
 
 ##### xdm:planLevel Known Values
 | Value | Description |
@@ -268,9 +278,14 @@ This indicates if the plan is primary, secondary or a tertiary plan.
 
 `xdm:planType`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:planType Type
+
+
+`string`
+
+
 
 ##### xdm:planType Known Values
 | Value | Description |
@@ -279,7 +294,6 @@ The value of this property **must** be equal to one of the [known values below](
 | `epo` | PPO |
 | `pos` | POS |
 | `hdhp` | HDHP |
-| `ppo` |  |
 
 
 

@@ -8,6 +8,7 @@
   "$id": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Prescription Details",
+  "description":"Prescription event information including upload status,delivery eligibility and refills remaining.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,

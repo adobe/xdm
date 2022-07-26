@@ -24,17 +24,17 @@
           "title": "Series ID",
           "type": "string",
           "pattern": "^.{1,}$",
-          "description": "The series ID the show belongs to."
+          "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
         },
         "xdm:friendlyName": {
           "title": "Content Name",
           "type": "string",
-          "description": "The friendly, human-readable name of the timed media asset."
+          "description": "This is the “friendly” (human-readable) name of the content. In reporting, Video Name is the classification, and Content Name (variable) is the eVAR."
         },
         "xdm:length": {
           "title": "Media Content Length",
           "type": "integer",
-          "description": "Length of primary media asset in seconds."
+          "description": "Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds)."
         },
         "xdm:contentType": {
           "title": "Broadcast Content Type",
@@ -63,59 +63,59 @@
         "xdm:sdkVersion": {
           "title": "Version",
           "type": "string",
-          "description": "The version identifier of the API, e.g h.18."
+          "description": "The SDK version used by the player. This could have any custom value that makes sense for your player. Customers will have to create their own processing rules to have the value available for reporting."
         },
         "xdm:show": {
           "title": "Series Name",
           "type": "string",
-          "description": "Name of the series."
+          "description": "Program/Series Name. Program Name is required only if the show is part of a series."
         },
         "xdm:season": {
           "title": "Season Number",
           "type": "integer",
           "minimum": 0,
-          "description": "Number of the season."
+          "description": "The season number the show belongs to. Season Series is required only if the show is part of a series."
         },
         "xdm:episode": {
           "title": "Episode Number",
           "type": "integer",
           "minimum": 0,
-          "description": "Number of the episode."
+          "description": "The number of the episode."
         },
         "xdm:assetID": {
           "title": "Asset ID",
           "type": "string",
-          "description": "Identifier of the content, which can be used to tie back to other industry or CMS IDs."
+          "description": "This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems."
         },
         "xdm:genre": {
           "title": "Genre",
           "type": "string",
-          "description": "Type or grouping of content as defined by content producer."
+          "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation. In reporting, the list eVar will split each value into a line item, with each line item receiving equal metrics weight."
         },
         "xdm:firstAirDate": {
           "title": "First Air Date",
           "type": "string",
-          "description": "The date when the content first aired on television."
+          "description": "The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD."
         },
         "xdm:firstDigitalDate": {
           "title": "First Digital Date",
           "type": "string",
-          "description": "The date when the content first aired on any digital channel or platform."
+          "description": "The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD."
         },
         "xdm:rating": {
           "title": "Rating Value",
           "type": "string",
-          "description": "Rating value as issued by the rating source."
+          "description": "Rating as defined by TV Parental Guidelines."
         },
         "xdm:originator": {
           "title": "Creator Name",
           "type": "string",
-          "description": "Full name of the creator."
+          "description": "Creator of the content."
         },
         "xdm:network": {
           "title": "Broadcast Network",
           "type": "string",
-          "description": "The programmer network name."
+          "description": "The network/channel name."
         },
         "xdm:showType": {
           "title": "Show Type",
@@ -130,17 +130,17 @@
         "xdm:mvpd": {
           "title": "MVPD Identifier",
           "type": "string",
-          "description": "The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]"
+          "description": "MVPD provided via Adobe authentication."
         },
         "xdm:hasAuth": {
           "title": "Media Authorized",
           "type": "boolean",
-          "description": "The user has been authorized via authentication."
+          "description": "The user has been authorized via Adobe authentication."
         },
         "xdm:dayPart": {
           "title": "Day Part",
           "type": "string",
-          "description": "Defines the time of the day when the content was broadcast or played."
+          "description": "A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers."
         },
         "xdm:feed": {
           "title": "Feed Type",
@@ -150,7 +150,7 @@
         "xdm:streamFormat": {
           "title": "Stream Format",
           "type": "string",
-          "description": "Free-form format of the stream for example, short or long."
+          "description": "Format of the stream (HD, SD)."
         },
         "xdm:hasResume": {
           "title": "Resume",

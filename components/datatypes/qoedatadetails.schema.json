@@ -73,7 +73,7 @@
         "xdm:hasErrorImpactedStreams": {
           "title": "Error Impacted Streams",
           "type": "boolean",
-          "description": "The number of streams in which an error event occurred (i.e., trackError was called during the playback session, and a type=error heartbeat call was generated)."
+          "description": "The number of streams in which an error event occurred (i.e., trackError was called during the playback session, and a type=error heartbeat call was generated). This metric is set to true only if at least one error occurred during playback."
         },
         "xdm:errorCount": {
           "title": "Errors",

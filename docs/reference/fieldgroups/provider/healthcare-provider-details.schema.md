@@ -193,7 +193,7 @@ Indicates whether the provider is active.
 #### xdm:languages
 ##### Languages
 
-undefined
+Languages in which the provider is proficient.
 
 `xdm:languages`
 * is optional

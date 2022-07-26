@@ -86,8 +86,10 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/alloy` | Adobe Experience Platform Web SDK |
 | `https://ns.adobe.com/experience/alloy/reactor` | Adobe Experience Platform Web SDK Launch Extension |
 | `https://ns.adobe.com/experience/mobilesdk/ios` | Adobe Experience Platform Mobile SDK for iOS |
+| `https://ns.adobe.com/experience/mobilesdk/tvos` | Adobe Experience Platform Mobile SDK for tvOS |
 | `https://ns.adobe.com/experience/mobilesdk/android` | Adobe Experience Platform Mobile SDK for Android |
 | `https://ns.adobe.com/experience/mobilesdk/ios/reactnative` | Adobe Experience Platform Mobile SDK for iOS React Native |
+| `https://ns.adobe.com/experience/mobilesdk/tvos/reactnative` | Adobe Experience Platform Mobile SDK for tvOS React Native |
 | `https://ns.adobe.com/experience/mobilesdk/android/reactnative` | Adobe Experience Platform Mobile SDK for Android React Native |
 
 

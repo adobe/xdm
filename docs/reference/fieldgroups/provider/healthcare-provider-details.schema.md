@@ -42,7 +42,6 @@ Information about the healthcare provider.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:addressDetails`| array | Optional |
-| `xdm:classification`| string | Optional |
 | `xdm:emailAddress`|  | Optional |
 | `xdm:fax`|  | Optional |
 | `xdm:isActive`| boolean | Optional |
@@ -131,33 +130,6 @@ Type of address indicating where the provider provides services.
 
 
 
-#### xdm:classification
-##### Service Provider Class/Category
-
-Service provider classification based on class or category (e.g. patient-care, non-patient care, etc).
-
-`xdm:classification`
-* is optional
-* type: `string`
-
-##### xdm:classification Type
-
-
-`string`
-
-
-
-##### xdm:classification Known Values
-| Value | Description |
-|-------|-------------|
-| `patient_care` | Patient Care |
-| `non_patient_care` | Non-Patient Care |
-
-
-
-
-
-
 #### xdm:emailAddress
 ##### Provider&#39;s Email Address
 
@@ -221,7 +193,7 @@ Indicates whether the provider is active.
 #### xdm:languages
 ##### Languages
 
-undefined
+Languages in which the provider is proficient.
 
 `xdm:languages`
 * is optional
@@ -357,30 +329,10 @@ All items must be of the type:
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:activePeriod`| integer | Optional |
 | `xdm:code`| string | Optional |
-| `xdm:issuer`|  | Optional |
-
-
-
-#### xdm:activePeriod
-##### Active Period
-
-Year until which the qualification is valid.
-
-`xdm:activePeriod`
-* is optional
-* type: `integer`
-
-##### xdm:activePeriod Type
-
-
-`integer`
-
-
-
-
-
+| `xdm:endDate`| string | Optional |
+| `xdm:issuer`| string | Optional |
+| `xdm:startDate`| string | Optional |
 
 
 
@@ -405,19 +357,64 @@ Coded representation of the qualification.
 
 
 
+#### xdm:endDate
+##### End Date
+
+Date on which this qualification becomes inactive.
+
+`xdm:endDate`
+* is optional
+* type: `string`
+
+##### xdm:endDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
 #### xdm:issuer
 ##### Issuer
 
-Organization that regulates and issues the qualification.
+Organization name that regulates and issues the qualification.
 
 `xdm:issuer`
 * is optional
-* type: reference
+* type: `string`
 
 ##### xdm:issuer Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`
+`string`
+
+
+
+
+
+
+
+
+#### xdm:startDate
+##### Start Date
+
+Start date of this qualification.
+
+`xdm:startDate`
+* is optional
+* type: `string`
+
+##### xdm:startDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
 
 
 

@@ -25,7 +25,35 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
+  "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "c19714bc-e74f-4448-",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepID": "c19714bc-e74f-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepType": "actionStep",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": "c19714bc-e74f-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": "c19714bc-e74f-4448-94a5-425b7b609932",
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": "c19dj3214bc-e74f-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": "c19714bc-4576-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": "c19714bc-4576-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
+  "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
 }
 ```
 
@@ -61,33 +89,6 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
   "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
   "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
-  "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "c19714bc-e74f-4448-",
-  "https://ns.adobe.com/experience/journeyOrchestration/stepID": "c19714bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/stepType": "actionStep",
-  "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": "c19714bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": "c19714bc-e74f-4448-94a5-425b7b609932",
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": "c19dj3214bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": "c19714bc-4576-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": "c19714bc-4576-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
-  "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
 }
 ```
 
@@ -140,6 +141,7 @@ This Fieldgroup contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeType`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
@@ -680,6 +682,29 @@ Type of the node as authored on the canvas. E.g: action, segmentTrigger, end. Th
 `string`
 
 
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus
+##### origSegmentQualificationStatus
+
+Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited
+
+`https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencejourneyorchestrationstepevents-known-values).
+
+##### https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus Known Values
+| Value | Description |
+|-------|-------------|
+| `existing` | existing |
+| `realized` | realized |
+| `exited` | exited |
 
 
 

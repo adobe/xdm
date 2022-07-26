@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/healthcare-medication
 ```
 
-Medication details such as brand name, lot number, and quantity.
+Medication details such as ingredients, brand name, and quantity.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
@@ -187,7 +187,7 @@ All items must be of the type:
 #### xdm:isActive
 ##### Is Active
 
-Indicates if this ingredient is still actively used in this medication.
+Indicates if this ingredient is active in the medication.
 
 `xdm:isActive`
 * is optional

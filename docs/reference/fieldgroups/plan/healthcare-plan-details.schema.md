@@ -148,7 +148,7 @@ All items must be of the type:
 #### xdm:networkID
 ##### Network Identifier
 
-The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkID`
 * is optional
@@ -169,7 +169,7 @@ The insurer-specific identifier for the insurer-defined network of providers to 
 #### xdm:networkName
 ##### Network Name
 
-The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkName`
 * is optional
@@ -264,7 +264,7 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:planType
 ##### Plan Type
 
-This indicates if the plan is primary,secondary or tertiary plan.
+This indicates if the plan is primary, secondary or a tertiary plan.
 
 `xdm:planType`
 * is optional
@@ -289,7 +289,7 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:targetOwnerType
 ##### Target Owner Type
 
-The type of owner a plan is for. Examples are individual, group, organization etc.
+ The type of owner a plan is for. Examples are individual, group, organization, etc.
 
 `xdm:targetOwnerType`
 * is optional

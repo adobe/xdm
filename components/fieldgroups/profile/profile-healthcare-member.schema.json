@@ -230,7 +230,6 @@
                   "xdm:beneficiaryRelationship": {
                     "title": "Beneficiary Relationship",
                     "type": "string",
-                    "enum": ["self", "spouse", "child", "parent"],
                     "meta:enum": {
                       "self": "Self",
                       "spouse": "Spouse",

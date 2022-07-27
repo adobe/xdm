@@ -25,7 +25,8 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
 }
 ```
 
@@ -140,6 +141,7 @@ This Fieldgroup contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeType`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
@@ -680,6 +682,29 @@ Type of the node as authored on the canvas. E.g: action, segmentTrigger, end. Th
 `string`
 
 
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus
+##### origSegmentQualificationStatus
+
+Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited
+
+`https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus`
+* is optional
+* type: `enum`
+
+The value of this property **must** be equal to one of the [known values below](#httpsnsadobecomexperiencejourneyorchestrationstepevents-known-values).
+
+##### https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus Known Values
+| Value | Description |
+|-------|-------------|
+| `existing` | existing |
+| `realized` | realized |
+| `exited` | exited |
 
 
 

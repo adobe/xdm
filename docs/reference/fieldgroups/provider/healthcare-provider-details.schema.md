@@ -9,7 +9,7 @@ Details of an individual health professional or a health facility organization l
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/provider/healthcare-provider-details.schema.json](fieldgroups/provider/healthcare-provider-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/provider/healthcare-provider-details.schema.json](fieldgroups/provider/healthcare-provider-details.schema.json) |
 
 ## Healthcare Provider Example
 ```json

@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/mixins/experienceevent-healthcare-sitetool
 ```
 
-Data that is collected by sitetools like chatbot,survey ..etc.
+Generic collection of site tool behaviors for online interactions. For example interactions with chatbots, surveys, or questionnaires.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-healthcare-sitetool.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-healthcare-sitetool.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-healthcare-sitetool.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-healthcare-sitetool.schema.json) |
 
 ## Sitetool Details Example
 ```json
@@ -55,9 +55,14 @@ A person/member who did the action.
 
 `xdm:actor`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmsitetool-known-values).
+##### xdm:actor Type
+
+
+`string`
+
+
 
 ##### xdm:actor Known Values
 | Value | Description |

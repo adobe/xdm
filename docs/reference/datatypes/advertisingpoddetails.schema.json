@@ -1,0 +1,51 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Advertising Pod details information",
+    "type": "object",
+    "meta:status": "experimental",
+    "meta:extensible": true,
+    "description": "Advertising Pod details information.",
+    "definitions": {
+        "advertisingPodDetails": {
+            "properties": {
+                "xdm:friendlyName": {
+                    "title": "Pod Friendly Name",
+                    "type": "string",
+                    "description": "The friendly name of the Ad Break."
+                },
+                "xdm:index": {
+                    "title": "Ad In Pod Position (Ad Break Start)",
+                    "type": "integer",
+                    "description": "The index of the ad inside the parent ad break start, for example, the first ad has index 0 and the second ad has index 1."
+                },
+                "xdm:second": {
+                    "title": "Pod Second",
+                    "type": "integer",
+                    "description": "The offset of the ad break inside the content, in seconds."
+                }
+            },
+            "required": [
+                "xdm:index",
+                "xdm:second"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/advertisingPodDetails"
+        }
+    ],
+    "examples": [
+        {
+            "xdm:index": 2,
+            "xdm:second": 123
+        }
+    ]
+}

@@ -132,7 +132,7 @@
           "type": "string",
           "description": "MVPD provided via Adobe authentication."
         },
-        "xdm:hasAuth": {
+        "xdm:isAuthenticated": {
           "title": "Media Authorized",
           "type": "boolean",
           "description": "The user has been authorized via Adobe authentication."

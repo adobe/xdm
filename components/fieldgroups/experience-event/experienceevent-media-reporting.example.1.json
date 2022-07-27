@@ -15,12 +15,12 @@
       "xdm:playerName": "playerName",
       "xdm:isCompleted": false,
       "xdm:isStarted": false,
-      "xdm:timePlayed": 50,
-      "xdm:adBreakID": "123"
+      "xdm:timePlayed": 50
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123
+      "xdm:second": 123,
+      "xdm:adBreakID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,

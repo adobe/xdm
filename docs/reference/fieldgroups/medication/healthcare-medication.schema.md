@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/mixins/healthcare-medication
 ```
 
-Medication details such as brand name, lot number, and quantity.
+Medication details such as ingredients, brand name, and quantity.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/medication/healthcare-medication.schema.json](fieldgroups/medication/healthcare-medication.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/medication/healthcare-medication.schema.json](fieldgroups/medication/healthcare-medication.schema.json) |
 
 ## Healthcare medication Example
 ```json
@@ -42,17 +42,14 @@ Information about the medication.
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:brandName`| string | Optional |
-| `xdm:codes`| array | Optional |
 | `xdm:dosageUnitNumber`| number | Optional |
 | `xdm:dosageUnitOfMeasurement`| string | Optional |
-| `xdm:expiryDate`| string | Optional |
+| `xdm:form`| string | Optional |
 | `xdm:genericName`| string | Optional |
 | `xdm:ingredients`| array | Optional |
-| `xdm:lotNumber`| string | Optional |
 | `xdm:manufacturerName`| string | Optional |
 | `xdm:quantity`| number | Optional |
 | `xdm:status`| string | Optional |
-| `xdm:volume`| number | Optional |
 
 
 
@@ -69,34 +66,6 @@ Brand name of the drug.
 
 
 `string`
-
-
-
-
-
-
-
-
-#### xdm:codes
-##### Codes
-
-Codes that identify this medication.
-
-`xdm:codes`
-* is optional
-* type: `string[]`
-
-
-##### xdm:codes Type
-
-
-Array type: `string[]`
-
-All items must be of the type:
-`string`
-
-
-
 
 
 
@@ -147,20 +116,19 @@ Dosage unit of measurement.
 
 
 
-#### xdm:expiryDate
-##### Expiry Date
+#### xdm:form
+##### Medication Form
 
-Expiry date of the medication.
+Form that the medication comes in such as tablet, capsule, or liquid.
 
-`xdm:expiryDate`
+`xdm:form`
 * is optional
 * type: `string`
 
-##### xdm:expiryDate Type
+##### xdm:form Type
 
 
 `string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 
@@ -213,14 +181,13 @@ All items must be of the type:
 |----------|------|----------|
 | `xdm:isActive`| boolean | Optional |
 | `xdm:name`| string | Optional |
-| `xdm:quantity`| string | Optional |
 
 
 
 #### xdm:isActive
 ##### Is Active
 
-Indicates if this ingredient is still actively used in this medication.
+Indicates if this ingredient is active in the medication.
 
 `xdm:isActive`
 * is optional
@@ -258,48 +225,6 @@ Name of the ingredient.
 
 
 
-#### xdm:quantity
-##### Quantity
-
-Quantity of the ingredient present in the medication.
-
-`xdm:quantity`
-* is optional
-* type: `string`
-
-##### xdm:quantity Type
-
-
-`string`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### xdm:lotNumber
-##### Lot Number
-
-Unique identifier of the batch.
-
-`xdm:lotNumber`
-* is optional
-* type: `string`
-
-##### xdm:lotNumber Type
-
-
-`string`
 
 
 
@@ -353,13 +278,18 @@ Amount of drug in the package.
 #### xdm:status
 ##### Status
 
-Status indicating whether the drug/medication is active or not.
+Status indicating whether the drug/medication is active/prescribable or not.
 
 `xdm:status`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmmedication-known-values).
+##### xdm:status Type
+
+
+`string`
+
+
 
 ##### xdm:status Known Values
 | Value | Description |
@@ -367,27 +297,6 @@ The value of this property **must** be equal to one of the [known values below](
 | `active` | Active |
 | `inactive` | Inactive |
 | `entered-in-error` | Entered-in-error |
-
-
-
-
-
-
-#### xdm:volume
-##### Drug Volume
-
-Drug Volume.
-
-`xdm:volume`
-* is optional
-* type: `number`
-
-##### xdm:volume Type
-
-
-`number`
-
-
 
 
 

@@ -9,7 +9,7 @@ Payer business entity to collect data pertaining to insurance companies (e.g. he
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/payer.schema.json](classes/payer.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/payer.schema.json](classes/payer.schema.json) |
 ## Schema Hierarchy
 
 * Payer `https://ns.adobe.com/xdm/classes/payer`

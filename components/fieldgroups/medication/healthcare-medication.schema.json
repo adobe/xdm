@@ -28,7 +28,6 @@
               "title": "Status",
               "type": "string",
               "description": "Status indicating whether the drug/medication is active/prescribable or not.",
-              "enum": ["active", "inactive", "entered-in-error"],
               "meta:enum": {
                 "active": "Active",
                 "inactive": "Inactive",
@@ -101,5 +100,5 @@
       "$ref": "#/definitions/medication-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

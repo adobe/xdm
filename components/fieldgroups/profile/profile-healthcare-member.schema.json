@@ -230,7 +230,6 @@
                   "xdm:beneficiaryRelationship": {
                     "title": "Beneficiary Relationship",
                     "type": "string",
-                    "enum": ["self", "spouse", "child", "parent"],
                     "meta:enum": {
                       "self": "Self",
                       "spouse": "Spouse",
@@ -263,5 +262,5 @@
       "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

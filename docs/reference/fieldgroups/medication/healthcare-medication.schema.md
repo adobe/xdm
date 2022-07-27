@@ -9,7 +9,7 @@ Medication details such as ingredients, brand name, and quantity.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/medication/healthcare-medication.schema.json](fieldgroups/medication/healthcare-medication.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/medication/healthcare-medication.schema.json](fieldgroups/medication/healthcare-medication.schema.json) |
 
 ## Healthcare medication Example
 ```json
@@ -282,9 +282,14 @@ Status indicating whether the drug/medication is active/prescribable or not.
 
 `xdm:status`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmmedication-known-values).
+##### xdm:status Type
+
+
+`string`
+
+
 
 ##### xdm:status Known Values
 | Value | Description |

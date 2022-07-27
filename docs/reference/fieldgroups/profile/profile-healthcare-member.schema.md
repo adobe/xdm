@@ -9,7 +9,7 @@ Healthcare member details of a person that has or will receive a service or care
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/profile/profile-healthcare-member.schema.json](fieldgroups/profile/profile-healthcare-member.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/profile-healthcare-member.schema.json](fieldgroups/profile/profile-healthcare-member.schema.json) |
 ## Schema Hierarchy
 
 * Healthcare Member Details `https://ns.adobe.com/xdm/mixins/profile-healthcare-member`
@@ -294,9 +294,14 @@ Beneficiary relationship to the subscriber if the member is a dependent (self, s
 
 `xdm:beneficiaryRelationship`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmmemberdetails-known-values).
+##### xdm:beneficiaryRelationship Type
+
+
+`string`
+
+
 
 ##### xdm:beneficiaryRelationship Known Values
 | Value | Description |

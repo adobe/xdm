@@ -369,20 +369,15 @@
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##title##18181",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##91181"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/projectionID": {
-              "title": "Projection ID",
-              "type": "string",
-              "description": "The projection id of the segment being used in journey"
-            },
             "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": {
               "title": "Projection Original Timestamp",
               "type": "string",
               "description": "The Projection Original Timestamp of the segment being used in journey"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/isStreamingSegment": {
-              "title": "Projection Segment Type",
-              "type": "boolean",
-              "description": "Projection Segment Type, Streaming or Batch Segment"
+            "https://ns.adobe.com/experience/journeyOrchestration/_id": {
+              "title": "Experience Id",
+              "type": "string",
+              "description": "Journey Orchestration Experience Id"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

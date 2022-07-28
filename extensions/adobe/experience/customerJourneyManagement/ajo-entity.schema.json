@@ -77,11 +77,6 @@
               "type": "string",
               "description": "Message ID. Does not change when message is edited."
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messageName": {
-              "title": "Message Name",
-              "type": "string",
-              "description": "Message Name. Refers to the referred version of messagePublciationID"
-            },
             "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messagePublicationID": {
               "title": "Message Publication ID",
               "type": "string",

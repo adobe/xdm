@@ -68,7 +68,7 @@
         "xdm:bufferTime": {
           "title": "Total Buffer Duration",
           "type": "integer",
-          "description": "The total amount of time, in seconds, spent buffering. This value is computed as a sum of all buffer events durations that occurred during a playback session. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+          "description": "The total amount of time, in seconds, spent buffering. This value is computed as a sum of all buffer events durations that occurred during a playback session."
         },
         "xdm:hasErrorImpactedStreams": {
           "title": "Error Impacted Streams",
@@ -83,17 +83,17 @@
         "xdm:hasStall": {
           "title": "Stalling Impacted Streams",
           "type": "boolean",
-          "description": "The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback. Customers will have to create their own processing rules to have the value available for reporting."
+          "description": "The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback."
         },
         "xdm:stallCount": {
           "title": "Stalling Events",
           "type": "integer",
-          "description": "The number of times the playback was stalled during a playback session. Customers will have to create their own processing rules to have the value available for reporting."
+          "description": "The number of times the playback was stalled during a playback session."
         },
         "xdm:stallTime": {
           "title": "Total Stalling Duration",
           "type": "integer",
-          "description": "The total time (seconds; integer) the playback was stalled during a playback session. Customers will have to create their own processing rules to have the value available for reporting."
+          "description": "The total time (seconds; integer) the playback was stalled during a playback session."
         },
         "xdm:playerSdkErrors": {
           "title": "Player SDK Error IDs",

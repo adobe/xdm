@@ -86,7 +86,7 @@
         "xdm:timePlayed": {
           "title": "Ad Time Played",
           "type": "integer",
-          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played). The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
         }
       },
       "required": [

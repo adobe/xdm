@@ -53,7 +53,7 @@
         "xdm:timePlayed": {
           "title": "Chapter Time Played",
           "type": "integer",
-          "description": "The time spent on the chapter. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+          "description": "The time spent on the chapter, in seconds."
         }
       },
       "required": [

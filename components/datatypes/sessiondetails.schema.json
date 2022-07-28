@@ -29,7 +29,7 @@
         "xdm:friendlyName": {
           "title": "Content Name",
           "type": "string",
-          "description": "This is the “friendly” (human-readable) name of the content. In reporting, Video Name is the classification, and Content Name (variable) is the eVAR."
+          "description": "This is the “friendly” (human-readable) name of the content."
         },
         "xdm:length": {
           "title": "Media Content Length",
@@ -63,7 +63,7 @@
         "xdm:sdkVersion": {
           "title": "Version",
           "type": "string",
-          "description": "The SDK version used by the player. This could have any custom value that makes sense for your player. Customers will have to create their own processing rules to have the value available for reporting."
+          "description": "The SDK version used by the player. This could have any custom value that makes sense for your player."
         },
         "xdm:show": {
           "title": "Series Name",
@@ -90,7 +90,7 @@
         "xdm:genre": {
           "title": "Genre",
           "type": "string",
-          "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation. In reporting, the list eVar will split each value into a line item, with each line item receiving equal metrics weight."
+          "description": "Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation."
         },
         "xdm:firstAirDate": {
           "title": "First Air Date",
@@ -230,7 +230,7 @@
         "xdm:timePlayed": {
           "title": "Content Time Spent",
           "type": "integer",
-          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds."
+          "description": "Sums the event duration (in seconds) for all events of type PLAY on the main content."
         },
         "xdm:totalTimePlayed": {
           "title": "Media Time Spent",

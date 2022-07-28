@@ -55,6 +55,11 @@
                 "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
               },
               "description": "The list of states."
+            },
+            "xdm:implementationDetails": {
+              "title": "Implementation Details",
+              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+              "description": "Details about the SDK, library, or service used in an application or web page implementation of a service."
             }
           },
           "required": ["xdm:sessionDetails"]

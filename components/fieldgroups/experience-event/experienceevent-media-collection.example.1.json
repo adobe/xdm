@@ -52,6 +52,23 @@
       {
         "xdm:name": "fullScreen"
       }
-    ]
+    ],
+    "xdm:endUserIDs": {
+      "https://ns.adobe.com/experience/mcid": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "ECID"
+        }
+      },
+      "https://ns.adobe.com/experience/aaid": {
+        "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+        "xdm:namespace": {
+          "xdm:code": "AVID"
+        }
+      }
+    },
+    "xdm:implementationDetails": {
+      "xdm:version": "2.7.0"
+    }
   }
 }

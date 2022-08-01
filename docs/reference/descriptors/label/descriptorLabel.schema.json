@@ -36,7 +36,9 @@
                             }
                         }
                     ],
-                    "description": "When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
+                    "description": "When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+                    "meta:titleId": "descriptorLabel##xdm:excludeProperty##title##95841",
+                    "meta:descriptionId": "descriptorLabel##xdm:excludeProperty##description##26021"
                 },
                 "xdm:labels": {
                     "title": "Labels",
@@ -83,18 +85,6 @@
         },
         {
             "@type": "xdm:descriptorLabel",
-            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
-            "xdm:sourceVersion": 1,
-            "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
-            "xdm:labels": [
-                "sampleDUlELabelResourceID1",
-                "sampleDUlELabelResourceID2",
-                "sampleDUlELabelResourceID3",
-                "sampleDUlELabelResourceID4"
-            ]
-        },
-        {
-            "@type": "xdm:descriptorLabel",
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
@@ -106,6 +96,18 @@
                 "/workAddress/street4",
                 "/workEmail/status"
             ],
+            "xdm:labels": [
+                "sampleDUlELabelResourceID1",
+                "sampleDUlELabelResourceID2",
+                "sampleDUlELabelResourceID3",
+                "sampleDUlELabelResourceID4"
+            ]
+        },
+        {
+            "@type": "xdm:descriptorLabel",
+            "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
+            "xdm:sourceVersion": 1,
+            "xdm:excludeProperty": "/identityPrivacyInfo/identityIABConsent/consentTimestamp",
             "xdm:labels": [
                 "sampleDUlELabelResourceID1",
                 "sampleDUlELabelResourceID2",

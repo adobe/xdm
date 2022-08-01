@@ -64,29 +64,40 @@ Unknown type `object`.
     "xdm:campaignKey": {
       "title": "Campaign Key",
       "description": "Unique composite identifier of the campaign.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "change-campaign-stream##xdm:campaignKey##title##32161",
+      "meta:descriptionId": "change-campaign-stream##xdm:campaignKey##description##74621"
     },
     "xdm:newStreamKey": {
       "title": "New Stream Key",
       "description": "Unique composite identifier of the new stream.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "change-campaign-stream##xdm:newStreamKey##title##68821",
+      "meta:descriptionId": "change-campaign-stream##xdm:newStreamKey##description##21981"
     },
     "xdm:newStreamName": {
       "title": "New Stream Name",
       "type": "string",
-      "description": "Name of the new stream."
+      "description": "Name of the new stream.",
+      "meta:titleId": "change-campaign-stream##xdm:newStreamName##title##51741",
+      "meta:descriptionId": "change-campaign-stream##xdm:newStreamName##description##74511"
     },
     "xdm:previousStreamKey": {
       "title": "Previous Stream Key",
       "description": "Unique composite identifier of the previous stream.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "change-campaign-stream##xdm:previousStreamKey##title##40241",
+      "meta:descriptionId": "change-campaign-stream##xdm:previousStreamKey##description##96791"
     },
     "xdm:previousStreamName": {
       "title": "Previous Stream Name",
       "type": "string",
-      "description": "Name of the previous stream."
+      "description": "Name of the previous stream.",
+      "meta:titleId": "change-campaign-stream##xdm:previousStreamName##title##90581",
+      "meta:descriptionId": "change-campaign-stream##xdm:previousStreamName##description##54991"
     }
   },
+  "meta:titleId": "change-campaign-stream##xdm:changeCampaignStream##title##98251",
   "simpletype": "`object`"
 }
 ```

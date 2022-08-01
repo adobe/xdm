@@ -64,19 +64,26 @@ Unknown type `object`.
     "xdm:campaignKey": {
       "title": "Campaign Key",
       "description": "Unique composite identifier of the campaign.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "add-to-campaign##xdm:campaignKey##title##39421",
+      "meta:descriptionId": "add-to-campaign##xdm:campaignKey##description##67731"
     },
     "xdm:streamKey": {
       "title": "Stream Key",
       "description": "Unique composite identifier of the stream.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "add-to-campaign##xdm:streamKey##title##73241",
+      "meta:descriptionId": "add-to-campaign##xdm:streamKey##description##39201"
     },
     "xdm:streamName": {
       "title": "Stream Name",
       "type": "string",
-      "description": "Name of the stream."
+      "description": "Name of the stream.",
+      "meta:titleId": "add-to-campaign##xdm:streamName##title##99131",
+      "meta:descriptionId": "add-to-campaign##xdm:streamName##description##27331"
     }
   },
+  "meta:titleId": "add-to-campaign##xdm:addToCampaign##title##26721",
   "simpletype": "`object`"
 }
 ```

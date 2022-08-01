@@ -170,17 +170,25 @@ Unknown type `object`.
           "xdm:namespace": {
             "title": "The identity namespace",
             "description": "The namespace associated with the xdm:id attribute.",
-            "$ref": "https://ns.adobe.com/xdm/context/namespace"
+            "$ref": "https://ns.adobe.com/xdm/context/namespace",
+            "meta:titleId": "aep-hygiene-ops##xdm:namespace##title##4581",
+            "meta:descriptionId": "aep-hygiene-ops##xdm:namespace##description##62051"
           },
           "xdm:ID": {
             "title": "Experience identifier",
             "type": "string",
-            "description": "Experience identifier"
+            "description": "Experience identifier",
+            "meta:titleId": "aep-hygiene-ops##xdm:ID##title##32631",
+            "meta:descriptionId": "aep-hygiene-ops##xdm:ID##description##31251"
           }
         }
-      }
+      },
+      "meta:titleId": "aep-hygiene-ops##xdm:identities##title##19841",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:identities##description##14911"
     }
   },
+  "meta:titleId": "aep-hygiene-ops##xdm:deleteIdentity##title##65751",
+  "meta:descriptionId": "aep-hygiene-ops##xdm:deleteIdentity##description##86391",
   "simpletype": "`object`"
 }
 ```
@@ -217,10 +225,16 @@ Unknown type `object`.
       "items": {
         "title": "String-encoded JSON record to update",
         "description": "String-encoded JSON record to update",
-        "type": "string"
-      }
+        "type": "string",
+        "meta:titleId": "aep-hygiene-ops##items##title##26921",
+        "meta:descriptionId": "aep-hygiene-ops##items##description##24961"
+      },
+      "meta:titleId": "aep-hygiene-ops##xdm:changes##title##99521",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:changes##description##4771"
     }
   },
+  "meta:titleId": "aep-hygiene-ops##xdm:updateField##title##65571",
+  "meta:descriptionId": "aep-hygiene-ops##xdm:updateField##description##2691",
   "simpletype": "`object`"
 }
 ```

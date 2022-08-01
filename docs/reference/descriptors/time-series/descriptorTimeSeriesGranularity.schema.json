@@ -38,7 +38,9 @@
                         "month": "Monthly data",
                         "quarter": "Quarterly data",
                         "year": "Yearly data"
-                    }
+                    },
+                    "meta:titleId": "descriptorTimeSeriesGranularity##xdm:granularity##title##56551",
+                    "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:granularity##description##79851"
                 }
             },
             "required": [
@@ -56,6 +58,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2022-03-28",
+    "meta:titleId": "descriptorTimeSeriesGranularity##title##26941",
+    "meta:descriptionId": "descriptorTimeSeriesGranularity##description##51361",
     "examples": [
         {
             "@type": "xdm:descriptorTimeSeriesGranularity",

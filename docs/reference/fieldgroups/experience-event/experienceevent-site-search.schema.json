@@ -21,17 +21,23 @@
                 "xdm:siteSearch": {
                     "title": "Site Search",
                     "$ref": "https://ns.adobe.com/xdm/datatypes/sitesearch",
-                    "description": "The information related to site search."
+                    "description": "The information related to site search.",
+                    "meta:titleId": "experienceevent-site-search##xdm:siteSearch##title##57341",
+                    "meta:descriptionId": "experienceevent-site-search##xdm:siteSearch##description##11031"
                 },
                 "xdm:searchRequest": {
                     "title": "Search Request",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "A search request has been sent."
+                    "description": "A search request has been sent.",
+                    "meta:titleId": "experienceevent-site-search##xdm:searchRequest##title##64271",
+                    "meta:descriptionId": "experienceevent-site-search##xdm:searchRequest##description##2271"
                 },
                 "xdm:searchResponse": {
                     "title": "Search Response",
                     "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "A search response has been received."
+                    "description": "A search response has been received.",
+                    "meta:titleId": "experienceevent-site-search##xdm:searchResponse##title##21471",
+                    "meta:descriptionId": "experienceevent-site-search##xdm:searchResponse##description##55701"
                 }
             }
         }
@@ -46,6 +52,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2022-03-18",
+    "meta:titleId": "experienceevent-site-search##title##48661",
+    "meta:descriptionId": "experienceevent-site-search##description##16361",
     "examples": [
         {
             "xdm:searchRequest": {

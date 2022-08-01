@@ -21,7 +21,8 @@
                 "@type": {
                     "title": "Type",
                     "type": "string",
-                    "const": "xdm:descriptorPrimaryKey"
+                    "const": "xdm:descriptorPrimaryKey",
+                    "meta:titleId": "descriptorPrimaryKey##@type##title##12931"
                 }
             },
             "required": [
@@ -39,6 +40,8 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2021-03-04",
+    "meta:titleId": "descriptorPrimaryKey##title##33171",
+    "meta:descriptionId": "descriptorPrimaryKey##description##67201",
     "examples": [
         {
             "@type": "xdm:descriptorPrimaryKey",

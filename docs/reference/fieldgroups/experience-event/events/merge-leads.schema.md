@@ -67,24 +67,33 @@ Unknown type `object`.
       "description": "A list of unique composite identifier of losing leads.",
       "items": {
         "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
-      }
+      },
+      "meta:titleId": "merge-leads##xdm:sourceKeys##title##28741",
+      "meta:descriptionId": "merge-leads##xdm:sourceKeys##description##44911"
     },
     "xdm:targetUpdated": {
       "title": "Target Updated",
       "type": "boolean",
-      "description": "Boolean indicating if winning lead is updated after merge operation."
+      "description": "Boolean indicating if winning lead is updated after merge operation.",
+      "meta:titleId": "merge-leads##xdm:targetUpdated##title##67271",
+      "meta:descriptionId": "merge-leads##xdm:targetUpdated##description##71201"
     },
     "xdm:mergedInCRM": {
       "title": "Merged In CRM",
       "type": "boolean",
-      "description": "Boolean indicating if leads were/should be merged in CRM."
+      "description": "Boolean indicating if leads were/should be merged in CRM.",
+      "meta:titleId": "merge-leads##xdm:mergedInCRM##title##88831",
+      "meta:descriptionId": "merge-leads##xdm:mergedInCRM##description##26161"
     },
     "xdm:mergeSource": {
       "title": "Merge Source",
       "type": "string",
-      "description": "Source of merge operation."
+      "description": "Source of merge operation.",
+      "meta:titleId": "merge-leads##xdm:mergeSource##title##36391",
+      "meta:descriptionId": "merge-leads##xdm:mergeSource##description##16671"
     }
   },
+  "meta:titleId": "merge-leads##xdm:mergeLeads##title##29161",
   "simpletype": "`object`"
 }
 ```

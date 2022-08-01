@@ -29,15 +29,20 @@
                         "xdm:matchingScore": {
                             "title": "Matching Score",
                             "description": "Computed matching score for account person affinity.",
-                            "type": "number"
+                            "type": "number",
+                            "meta:titleId": "account-person-details##xdm:matchingScore##title##49431",
+                            "meta:descriptionId": "account-person-details##xdm:matchingScore##description##18911"
                         },
                         "xdm:scoreCreatedDate": {
                             "title": "Score Created Date",
                             "description": "The date when the account-person affinity score was computed.",
                             "type": "string",
-                            "format": "date-time"
+                            "format": "date-time",
+                            "meta:titleId": "account-person-details##xdm:scoreCreatedDate##title##94031",
+                            "meta:descriptionId": "account-person-details##xdm:scoreCreatedDate##description##57471"
                         }
-                    }
+                    },
+                    "meta:titleId": "account-person-details##xdm:matchedAccount##title##59111"
                 }
             }
         }
@@ -48,6 +53,8 @@
         }
     ],
     "meta:status": "stable",
+    "meta:titleId": "account-person-details##title##96791",
+    "meta:descriptionId": "account-person-details##description##98201",
     "examples": [
         {
             "xdm:matchedAccount": {

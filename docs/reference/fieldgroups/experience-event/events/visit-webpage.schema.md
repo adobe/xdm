@@ -231,7 +231,9 @@ Unknown type `object`.
     "xdm:webPageKey": {
       "title": "Web Page Key",
       "description": "Unique key of the web page.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "visit-webpage##xdm:webPageKey##title##45241",
+      "meta:descriptionId": "visit-webpage##xdm:webPageKey##description##13131"
     },
     "xdm:name": {
       "title": "Name",

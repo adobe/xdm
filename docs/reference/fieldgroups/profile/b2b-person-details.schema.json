@@ -178,18 +178,24 @@
                                     "title": "Score",
                                     "description": "Account score.",
                                     "type": "number",
-                                    "meta:status": "experimental"
+                                    "meta:status": "experimental",
+                                    "meta:titleId": "b2b-person-details##xdm:score##title##79001",
+                                    "meta:descriptionId": "b2b-person-details##xdm:score##description##80501"
                                 },
                                 "xdm:accountKey": {
                                     "title": "Account Key",
                                     "description": "Unique identifier of the Account related to the person.",
-                                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                    "meta:titleId": "b2b-person-details##xdm:accountKey##title##43051",
+                                    "meta:descriptionId": "b2b-person-details##xdm:accountKey##description##11421"
                                 },
                                 "xdm:scoreDate": {
                                     "title": "Score Date",
                                     "description": "Date score was recorded/computed.",
                                     "type": "string",
-                                    "format": "date-time"
+                                    "format": "date-time",
+                                    "meta:titleId": "b2b-person-details##xdm:scoreDate##title##97521",
+                                    "meta:descriptionId": "b2b-person-details##xdm:scoreDate##description##9971"
                                 }
                             }
                         }

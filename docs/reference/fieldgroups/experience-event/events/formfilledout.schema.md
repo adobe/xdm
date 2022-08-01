@@ -163,7 +163,9 @@ Unknown type `object`.
     "xdm:webFormKey": {
       "title": "Web Form Key",
       "description": "Unique key of the form.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "formfilledout##xdm:webFormKey##title##84331",
+      "meta:descriptionId": "formfilledout##xdm:webFormKey##description##19751"
     },
     "xdm:webFormName": {
       "title": "Web Form Name",

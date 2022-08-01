@@ -64,24 +64,33 @@ Unknown type `object`.
     "xdm:webhookID": {
       "title": "Webhook ID (deprecated)",
       "type": "string",
-      "description": "Webhook ID is going to depreciate soon. Please use Webhook Key."
+      "description": "Webhook ID is going to depreciate soon. Please use Webhook Key.",
+      "meta:titleId": "callwebhook##xdm:webhookID##title##45001",
+      "meta:descriptionId": "callwebhook##xdm:webhookID##description##3851"
     },
     "xdm:webhookKey": {
       "title": "Webhook Key",
       "description": "Unique composite identifier of the Webhook.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "callwebhook##xdm:webhookKey##title##37211",
+      "meta:descriptionId": "callwebhook##xdm:webhookKey##description##51371"
     },
     "xdm:webhookName": {
       "title": "Webhook Name",
       "type": "string",
-      "description": "Name of the Webhook."
+      "description": "Name of the Webhook.",
+      "meta:titleId": "callwebhook##xdm:webhookName##title##15441",
+      "meta:descriptionId": "callwebhook##xdm:webhookName##description##81481"
     },
     "xdm:responseCode": {
       "title": "Response Code",
       "type": "integer",
-      "description": "HTTP response code from Webhook request."
+      "description": "HTTP response code from Webhook request.",
+      "meta:titleId": "callwebhook##xdm:responseCode##title##89381",
+      "meta:descriptionId": "callwebhook##xdm:responseCode##description##3901"
     }
   },
+  "meta:titleId": "callwebhook##xdm:callWebhook##title##45641",
   "simpletype": "`object`"
 }
 ```

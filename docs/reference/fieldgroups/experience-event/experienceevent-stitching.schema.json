@@ -26,7 +26,9 @@
                 "xdm:stitchedID": {
                     "title": "Stitched ID",
                     "$ref": "https://ns.adobe.com/xdm/context/identity",
-                    "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs."
+                    "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+                    "meta:titleId": "experienceevent-stitching##xdm:stitchedID##title##54581",
+                    "meta:descriptionId": "experienceevent-stitching##xdm:stitchedID##description##53511"
                 }
             }
         }
@@ -41,20 +43,22 @@
     ],
     "meta:status": "stable",
     "meta:createdDate": "2022-03-24",
+    "meta:titleId": "experienceevent-stitching##title##22731",
+    "meta:descriptionId": "experienceevent-stitching##description##79081",
     "examples": [
-        {
-            "xdm:stitchedID": {
-                "xdm:id": "5D0CC0572CE5A754-7164B1DCC49F9A5B",
-                "xdm:namespace": {
-                    "xdm:code": "AVID"
-                }
-            }
-        },
         {
             "xdm:stitchedID": {
                 "xdm:id": "john.doe@mail.com",
                 "xdm:namespace": {
                     "xdm:code": "EMAIL"
+                }
+            }
+        },
+        {
+            "xdm:stitchedID": {
+                "xdm:id": "5D0CC0572CE5A754-7164B1DCC49F9A5B",
+                "xdm:namespace": {
+                    "xdm:code": "AVID"
                 }
             }
         }

@@ -132,50 +132,69 @@
                                     "xdm:brand": {
                                         "title": "Brand",
                                         "type": "string",
-                                        "description": "The user-agent's commercial name (e.g., cURL, Edge)."
+                                        "description": "The user-agent's commercial name (e.g., cURL, Edge).",
+                                        "meta:titleId": "browserdetails##xdm:brand##title##30831",
+                                        "meta:descriptionId": "browserdetails##xdm:brand##description##7011"
                                     },
                                     "xdm:version": {
                                         "title": "Significant version",
                                         "type": "string",
-                                        "description": "The marketing version which includes distinguishable web-exposed features (e.g., 72, 3, or 12.1), corresponding to the user-agent."
+                                        "description": "The marketing version which includes distinguishable web-exposed features (e.g., 72, 3, or 12.1), corresponding to the user-agent.",
+                                        "meta:titleId": "browserdetails##xdm:version##title##28851",
+                                        "meta:descriptionId": "browserdetails##xdm:version##description##4681"
                                     }
-                                }
+                                },
+                                "meta:descriptionId": "browserdetails##items##description##47111"
                             }
                         },
                         "xdm:mobile": {
                             "title": "Mobileness",
                             "type": "boolean",
-                            "description": "A boolean indicating if the user agent's device is a mobile device."
+                            "description": "A boolean indicating if the user agent's device is a mobile device.",
+                            "meta:titleId": "browserdetails##xdm:mobile##title##7731",
+                            "meta:descriptionId": "browserdetails##xdm:mobile##description##63751"
                         },
                         "xdm:architecture": {
                             "title": "Platform architecture",
                             "type": "string",
-                            "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86)."
+                            "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86).",
+                            "meta:titleId": "browserdetails##xdm:architecture##title##43501",
+                            "meta:descriptionId": "browserdetails##xdm:architecture##description##50311"
                         },
                         "xdm:bitness": {
                             "title": "Platform bitness",
                             "type": "string",
-                            "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64)."
+                            "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64).",
+                            "meta:titleId": "browserdetails##xdm:bitness##title##70511",
+                            "meta:descriptionId": "browserdetails##xdm:bitness##description##39691"
                         },
                         "xdm:model": {
                             "title": "Model",
                             "type": "string",
-                            "description": "The user agent's device model  (e.g., Pixel 2 XL)."
+                            "description": "The user agent's device model  (e.g., Pixel 2 XL).",
+                            "meta:titleId": "browserdetails##xdm:model##title##34541",
+                            "meta:descriptionId": "browserdetails##xdm:model##description##70991"
                         },
                         "xdm:platform": {
                             "title": "Platform",
                             "type": "string",
-                            "description": "The user agent's operating system's commercial name."
+                            "description": "The user agent's operating system's commercial name.",
+                            "meta:titleId": "browserdetails##xdm:platform##title##38421",
+                            "meta:descriptionId": "browserdetails##xdm:platform##description##80271"
                         },
                         "xdm:platformVersion": {
                             "title": "Platform version",
                             "type": "string",
-                            "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G)."
+                            "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G).",
+                            "meta:titleId": "browserdetails##xdm:platformVersion##title##67441",
+                            "meta:descriptionId": "browserdetails##xdm:platformVersion##description##3431"
                         },
                         "xdm:wow64": {
                             "title": "WoW64-ness",
                             "type": "boolean",
-                            "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows."
+                            "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows.",
+                            "meta:titleId": "browserdetails##xdm:wow64##title##14641",
+                            "meta:descriptionId": "browserdetails##xdm:wow64##description##52501"
                         }
                     }
                 }

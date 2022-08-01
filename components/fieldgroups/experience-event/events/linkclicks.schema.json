@@ -40,7 +40,9 @@
                 "xdm:webInteractionKey": {
                   "title": "Web Interaction Key",
                   "description": "Unique key of the link clicked.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "linkclicks##xdm:webInteractionKey##title##58071",
+                  "meta:descriptionId": "linkclicks##xdm:webInteractionKey##description##19121"
                 },
                 "xdm:linkURL": {
                   "title": "Link URL",

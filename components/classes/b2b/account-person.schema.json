@@ -78,7 +78,9 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "account-person##xdm:personRoles##title##98611",
+          "meta:descriptionId": "account-person##xdm:personRoles##description##67421"
         },
         "xdm:isDirect": {
           "title": "Direct Flag",
@@ -129,7 +131,9 @@
         "xdm:relationshipSource": {
           "title": "Relationship Source",
           "description": "Source of Account Person relation.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:relationshipSource##title##40031",
+          "meta:descriptionId": "account-person##xdm:relationshipSource##description##88321"
         }
       }
     }

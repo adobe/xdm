@@ -21,7 +21,8 @@
         "@type": {
           "title": "Type",
           "type": "string",
-          "const": "xdm:descriptorVersion"
+          "const": "xdm:descriptorVersion",
+          "meta:titleId": "descriptorVersion##@type##title##21791"
         }
       },
       "required": ["xdm:sourceProperty"]
@@ -36,5 +37,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-03-04"
+  "meta:createdDate": "2021-03-04",
+  "meta:titleId": "descriptorVersion##title##81731",
+  "meta:descriptionId": "descriptorVersion##description##96491"
 }

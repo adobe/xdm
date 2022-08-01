@@ -32,41 +32,57 @@
                 "xdm:modelKey": {
                   "title": "Model Key",
                   "description": "Unique composite identifier for the model of the Revenue Cycle Modeler.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:modelKey##title##25831",
+                  "meta:descriptionId": "revenueStageChanged##xdm:modelKey##description##37271"
                 },
                 "xdm:modelName": {
                   "title": "Model Name",
                   "type": "string",
-                  "description": "Name of the model for Revenue Cycle Modeler."
+                  "description": "Name of the model for Revenue Cycle Modeler.",
+                  "meta:titleId": "revenueStageChanged##xdm:modelName##title##61941",
+                  "meta:descriptionId": "revenueStageChanged##xdm:modelName##description##64651"
                 },
                 "xdm:newStageKey": {
                   "title": "New Stage Key",
                   "description": "Unique composite identifier of the stage person assigned to.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:newStageKey##title##7731",
+                  "meta:descriptionId": "revenueStageChanged##xdm:newStageKey##description##67771"
                 },
                 "xdm:newStageName": {
                   "title": "New Stage Name",
                   "type": "string",
-                  "description": "Name of the new stage person assigned to."
+                  "description": "Name of the new stage person assigned to.",
+                  "meta:titleId": "revenueStageChanged##xdm:newStageName##title##21601",
+                  "meta:descriptionId": "revenueStageChanged##xdm:newStageName##description##80421"
                 },
                 "xdm:previousStageKey": {
                   "title": "Previous Stage Key",
                   "description": "Unique composite identifier of the previous stage person assigned from.",
-                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:previousStageKey##title##52771",
+                  "meta:descriptionId": "revenueStageChanged##xdm:previousStageKey##description##92771"
                 },
                 "xdm:previousStageName": {
                   "title": "Previous Stage Name",
                   "type": "string",
-                  "description": "Name of the previous stage person assigned from."
+                  "description": "Name of the previous stage person assigned from.",
+                  "meta:titleId": "revenueStageChanged##xdm:previousStageName##title##53261",
+                  "meta:descriptionId": "revenueStageChanged##xdm:previousStageName##description##52311"
                 },
                 "xdm:reason": {
                   "title": "Reason",
                   "type": "string",
-                  "description": "Reason to indicate changes in model stages for a person."
+                  "description": "Reason to indicate changes in model stages for a person.",
+                  "meta:titleId": "revenueStageChanged##xdm:reason##title##98711",
+                  "meta:descriptionId": "revenueStageChanged##xdm:reason##description##10861"
                 }
-              }
+              },
+              "meta:titleId": "revenueStageChanged##xdm:changeRevenueStage##title##83221"
             }
-          }
+          },
+          "meta:titleId": "revenueStageChanged##xdm:leadOperation##title##3911"
         }
       }
     }
@@ -77,5 +93,7 @@
     }
   ],
   "meta:status": "experimental",
-  "meta:createdDate": "2022-02-15"
+  "meta:createdDate": "2022-02-15",
+  "meta:titleId": "revenueStageChanged##title##16311",
+  "meta:descriptionId": "revenueStageChanged##description##98331"
 }

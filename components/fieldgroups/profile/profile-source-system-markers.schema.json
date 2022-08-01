@@ -19,22 +19,30 @@
         "xdm:sourceSystemName": {
           "title": "Source System Name",
           "type": "string",
-          "description": "Source system name where the profile fragment is ingested from."
+          "description": "Source system name where the profile fragment is ingested from.",
+          "meta:titleId": "profile-source-system-markers##xdm:sourceSystemName##title##29811",
+          "meta:descriptionId": "profile-source-system-markers##xdm:sourceSystemName##description##21791"
         },
         "xdm:recordTypeID": {
           "title": "Record type ID",
           "type": "string",
-          "description": "Record type identifier."
+          "description": "Record type identifier.",
+          "meta:titleId": "profile-source-system-markers##xdm:recordTypeID##title##2031",
+          "meta:descriptionId": "profile-source-system-markers##xdm:recordTypeID##description##16351"
         },
         "xdm:recordStatus": {
           "title": "Record Status",
           "type": "string",
-          "description": "Record status."
+          "description": "Record status.",
+          "meta:titleId": "profile-source-system-markers##xdm:recordStatus##title##9581",
+          "meta:descriptionId": "profile-source-system-markers##xdm:recordStatus##description##27301"
         },
         "xdm:recordSource": {
           "title": "Record Source`",
           "type": "string",
-          "description": "Record source."
+          "description": "Record source.",
+          "meta:titleId": "profile-source-system-markers##xdm:recordSource##title##70531",
+          "meta:descriptionId": "profile-source-system-markers##xdm:recordSource##description##34221"
         }
       },
       "required": ["xdm:sourceSystemName"]
@@ -45,5 +53,7 @@
       "$ref": "#/definitions/profile-source"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "profile-source-system-markers##title##58291",
+  "meta:descriptionId": "profile-source-system-markers##description##38771"
 }

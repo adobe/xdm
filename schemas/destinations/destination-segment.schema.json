@@ -56,19 +56,25 @@
           "title": "Update Time",
           "type": "string",
           "format": "date-time",
-          "description": "The date and UTC time when the activation flow to the destination-segment mapping was updated"
+          "description": "The date and UTC time when the activation flow to the destination-segment mapping was updated",
+          "meta:titleId": "destination-segment##xdm:updateTime##title##95741",
+          "meta:descriptionId": "destination-segment##xdm:updateTime##description##72021"
         },
         "xdm:startDate": {
           "title": "Start Date",
           "type": "string",
           "format": "date",
-          "description": "The date when the activation flow will start activating the segment to the destination"
+          "description": "The date when the activation flow will start activating the segment to the destination",
+          "meta:titleId": "destination-segment##xdm:startDate##title##9321",
+          "meta:descriptionId": "destination-segment##xdm:startDate##description##79371"
         },
         "xdm:endDate": {
           "title": "End Date",
           "type": "string",
           "format": "date",
-          "description": "The date when the activation flow will stop activating the segment to the destination"
+          "description": "The date when the activation flow will stop activating the segment to the destination",
+          "meta:titleId": "destination-segment##xdm:endDate##title##55431",
+          "meta:descriptionId": "destination-segment##xdm:endDate##description##80391"
         }
       }
     }

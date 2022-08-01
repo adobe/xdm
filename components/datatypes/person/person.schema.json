@@ -89,7 +89,9 @@
         "xdm:type": {
           "title": "Type",
           "type": "string",
-          "description": "The type of individual in different business contexts like B2C."
+          "description": "The type of individual in different business contexts like B2C.",
+          "meta:titleId": "person##xdm:type##title##48971",
+          "meta:descriptionId": "person##xdm:type##description##47331"
         },
         "xdm:taxId": {
           "title": "Tax ID",

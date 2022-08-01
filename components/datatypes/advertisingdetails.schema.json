@@ -18,18 +18,18 @@
         "xdm:name": {
           "title": "Ad Name",
           "type": "string",
-          "description": "The friendly and human-readable name of the ad asset."
+          "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar."
         },
         "xdm:ID": {
           "title": "Ad ID",
           "type": "string",
           "pattern": "^.{1,}$",
-          "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org]."
+          "description": "ID of the ad. Any integer and/or letter combination."
         },
         "xdm:length": {
           "title": "Ad Length Or Duration",
           "type": "integer",
-          "description": "Length or duration of ad asset in seconds."
+          "description": "Length of video ad in seconds."
         },
         "xdm:podPosition": {
           "title": "Ad In Pod Position (Ad Start)",
@@ -55,7 +55,7 @@
         "xdm:creativeID": {
           "title": "Ad Creative ID",
           "type": "string",
-          "description": "The ID of the ad creative."
+          "description": "ID of the ad creative."
         },
         "xdm:siteID": {
           "title": "Ad Site ID",
@@ -66,7 +66,7 @@
           "title": "Ad Creative URL",
           "type": "string",
           "format": "uri",
-          "description": "The URL of the ad creative."
+          "description": "URL of the ad creative."
         },
         "xdm:placementID": {
           "title": "Ad Placement ID",
@@ -87,11 +87,6 @@
           "title": "Ad Time Played",
           "type": "integer",
           "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
-        },
-        "xdm:adBreakID": {
-          "title": "Ad Break ID",
-          "type": "string",
-          "description": "The ID of the ad."
         }
       },
       "required": [
@@ -100,9 +95,7 @@
         "xdm:podPosition",
         "xdm:playerName",
         "xdm:isCompleted",
-        "xdm:isStarted",
-        "xdm:timePlayed",
-        "xdm:adBreakID"
+        "xdm:isStarted"
       ]
     }
   },

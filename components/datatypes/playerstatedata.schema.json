@@ -21,7 +21,7 @@
           "pattern": "^[a-zA-Z0-9_.]{1,64}$",
           "description": "The name of the player state."
         },
-        "xdm:set": {
+        "xdm:isSet": {
           "title": "Player State Set",
           "type": "boolean",
           "description": "Whether or not the player state is set on that state."

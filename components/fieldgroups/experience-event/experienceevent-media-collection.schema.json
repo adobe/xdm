@@ -73,6 +73,16 @@
                 "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
               },
               "description": "The list of states end."
+            },
+            "xdm:endUserIDs": {
+              "title": "End User IDs",
+              "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+              "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required."
+            },
+            "xdm:implementationDetails": {
+              "title": "Implementation Details",
+              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+              "description": "Details about the SDK, library, or service used in an application or web page implementation of a service."
             }
           }
         }

@@ -15,7 +15,7 @@ Player state data information.
 ```json
 {
   "xdm:name": "pictureInPicture",
-  "xdm:set": true,
+  "xdm:isSet": true,
   "xdm:count": 2,
   "xdm:time": 100
 }
@@ -26,8 +26,8 @@ Player state data information.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:count](#xdmcount) | `integer` | Optional | Player state data information (this schema) |
+| [xdm:isSet](#xdmisset) | `boolean` | Optional | Player state data information (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Player state data information (this schema) |
-| [xdm:set](#xdmset) | `boolean` | Optional | Player state data information (this schema) |
 | [xdm:time](#xdmtime) | `integer` | Optional | Player state data information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -46,6 +46,25 @@ The number of times that player state was set on the stream.
 
 `integer`
 
+
+
+
+
+
+## xdm:isSet
+### Player State Set
+
+Whether or not the player state is set on that state.
+
+`xdm:isSet`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isSet Type
+
+
+`boolean`
 
 
 
@@ -73,25 +92,6 @@ All instances must conform to this regular expression
 ^[a-zA-Z0-9_.]{1,64}$
 ```
 
-
-
-
-
-
-## xdm:set
-### Player State Set
-
-Whether or not the player state is set on that state.
-
-`xdm:set`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:set Type
-
-
-`boolean`
 
 
 

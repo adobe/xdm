@@ -27,11 +27,6 @@
                     "type": "object",
                     "description": "Media Reporting related fields.",
                     "properties": {
-                        "xdm:playerEventDetails": {
-                            "title": "Player Event Details",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/playerEventDetails",
-                            "description": "Player event details information related to the experience event."
-                        },
                         "xdm:sessionDetails": {
                             "title": "Session Details",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
@@ -52,11 +47,6 @@
                             "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
                             "description": "Chapter details information related to the experience event."
                         },
-                        "xdm:errorDetails": {
-                            "title": "Error Details",
-                            "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-                            "description": "Error details information related to the experience event."
-                        },
                         "xdm:qoeDataDetails": {
                             "title": "Qoe Data Details",
                             "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
@@ -69,8 +59,16 @@
                                 "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
                             },
                             "description": "The list of states."
+                        },
+                        "xdm:implementationDetails": {
+                            "title": "Implementation Details",
+                            "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+                            "description": "Details about the SDK, library, or service used in an application or web page implementation of a service."
                         }
-                    }
+                    },
+                    "required": [
+                        "xdm:sessionDetails"
+                    ]
                 }
             }
         }
@@ -84,12 +82,9 @@
     "examples": [
         {
             "xdm:mediaReporting": {
-                "xdm:playerEventDetails": {
-                    "xdm:playhead": 831,
-                    "xdm:sessionID": "1234567890"
-                },
                 "xdm:sessionDetails": {
-                    "xdm:ID": "123456789",
+                    "xdm:ID": "1482236761294786918253",
+                    "xdm:name": "123456789",
                     "xdm:length": 100,
                     "xdm:contentType": "VOD",
                     "xdm:playerName": "playerName",
@@ -101,13 +96,12 @@
                     "xdm:podPosition": 1,
                     "xdm:playerName": "playerName",
                     "xdm:isCompleted": false,
-                    "xdm:isStarted": false,
-                    "xdm:timePlayed": 50,
-                    "xdm:adBreakID": "123"
+                    "xdm:isStarted": false
                 },
                 "xdm:advertisingPodDetails": {
                     "xdm:index": 2,
-                    "xdm:second": 123
+                    "xdm:second": 123,
+                    "xdm:adBreakID": "123"
                 },
                 "xdm:chapterDetails": {
                     "xdm:length": 100,
@@ -117,12 +111,8 @@
                     "xdm:isCompleted": false,
                     "xdm:timePlayed": 70
                 },
-                "xdm:errorDetails": {
-                    "xdm:errorID": "errorID",
-                    "xdm:errorSource": "player"
-                },
                 "xdm:qoeDataDetails": {
-                    "xdm:bitrate": 100
+                    "xdm:bitrateAverageBucket": 100
                 },
                 "xdm:states": [
                     {
@@ -131,7 +121,10 @@
                         "xdm:count": 2,
                         "xdm:time": 100
                     }
-                ]
+                ],
+                "xdm:implementationDetails": {
+                    "xdm:version": "2.7.0"
+                }
             }
         }
     ]

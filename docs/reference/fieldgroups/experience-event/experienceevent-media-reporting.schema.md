@@ -15,12 +15,9 @@ Track interactions with media reporting.
 ```json
 {
   "xdm:mediaReporting": {
-    "xdm:playerEventDetails": {
-      "xdm:playhead": 831,
-      "xdm:sessionID": "1234567890"
-    },
     "xdm:sessionDetails": {
-      "xdm:ID": "123456789",
+      "xdm:ID": "1482236761294786918253",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
@@ -32,13 +29,12 @@ Track interactions with media reporting.
       "xdm:podPosition": 1,
       "xdm:playerName": "playerName",
       "xdm:isCompleted": false,
-      "xdm:isStarted": false,
-      "xdm:timePlayed": 50,
-      "xdm:adBreakID": "123"
+      "xdm:isStarted": false
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123
+      "xdm:second": 123,
+      "xdm:adBreakID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -48,12 +44,8 @@ Track interactions with media reporting.
       "xdm:isCompleted": false,
       "xdm:timePlayed": 70
     },
-    "xdm:errorDetails": {
-      "xdm:errorID": "errorID",
-      "xdm:errorSource": "player"
-    },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:bitrateAverageBucket": 100
     },
     "xdm:states": [
       {
@@ -62,7 +54,10 @@ Track interactions with media reporting.
         "xdm:count": 2,
         "xdm:time": 100
       }
-    ]
+    ],
+    "xdm:implementationDetails": {
+      "xdm:version": "2.7.0"
+    }
   }
 }
 ```
@@ -94,10 +89,9 @@ Media Reporting related fields.
 | `xdm:advertisingDetails`|  | Optional |
 | `xdm:advertisingPodDetails`|  | Optional |
 | `xdm:chapterDetails`|  | Optional |
-| `xdm:errorDetails`|  | Optional |
-| `xdm:playerEventDetails`|  | Optional |
+| `xdm:implementationDetails`|  | Optional |
 | `xdm:qoeDataDetails`|  | Optional |
-| `xdm:sessionDetails`|  | Optional |
+| `xdm:sessionDetails`|  | **Required** |
 | `xdm:states`| array | Optional |
 
 
@@ -162,39 +156,19 @@ Chapter details information related to the experience event.
 
 
 
-#### xdm:errorDetails
-##### Error Details
+#### xdm:implementationDetails
+##### Implementation Details
 
-Error details information related to the experience event.
+Details about the SDK, library, or service used in an application or web page implementation of a service.
 
-`xdm:errorDetails`
+`xdm:implementationDetails`
 * is optional
 * type: reference
 
-##### xdm:errorDetails Type
+##### xdm:implementationDetails Type
 
 
-* []() – `https://ns.adobe.com/xdm/datatypes/errorDetails`
-
-
-
-
-
-
-
-#### xdm:playerEventDetails
-##### Player Event Details
-
-Player event details information related to the experience event.
-
-`xdm:playerEventDetails`
-* is optional
-* type: reference
-
-##### xdm:playerEventDetails Type
-
-
-* []() – `https://ns.adobe.com/xdm/datatypes/playerEventDetails`
+* []() – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 
@@ -228,7 +202,7 @@ Qoe data details information related to the experience event.
 Session details information related to the experience event.
 
 `xdm:sessionDetails`
-* is optional
+* is **required**
 * type: reference
 
 ##### xdm:sessionDetails Type

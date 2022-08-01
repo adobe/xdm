@@ -19,9 +19,7 @@ Advertising details information.
   "xdm:podPosition": 1,
   "xdm:playerName": "playerName",
   "xdm:isCompleted": false,
-  "xdm:isStarted": false,
-  "xdm:timePlayed": 50,
-  "xdm:adBreakID": "123"
+  "xdm:isStarted": false
 }
 ```
 
@@ -30,7 +28,6 @@ Advertising details information.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:ID](#xdmid) | `string` | Optional | Advertising details information (this schema) |
-| [xdm:adBreakID](#xdmadbreakid) | `string` | Optional | Advertising details information (this schema) |
 | [xdm:advertiser](#xdmadvertiser) | `string` | Optional | Advertising details information (this schema) |
 | [xdm:campaignID](#xdmcampaignid) | `string` | Optional | Advertising details information (this schema) |
 | [xdm:creativeID](#xdmcreativeid) | `string` | Optional | Advertising details information (this schema) |
@@ -49,7 +46,7 @@ Advertising details information.
 ## xdm:ID
 ### Ad ID
 
-Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].
+ID of the ad. Any integer and/or letter combination.
 
 `xdm:ID`
 * is optional
@@ -67,26 +64,6 @@ All instances must conform to this regular expression
 ```regex
 ^.{1,}$
 ```
-
-
-
-
-
-
-## xdm:adBreakID
-### Ad Break ID
-
-The ID of the ad.
-
-`xdm:adBreakID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:adBreakID Type
-
-
-`string`
 
 
 
@@ -136,7 +113,7 @@ ID of the ad campaign.
 ## xdm:creativeID
 ### Ad Creative ID
 
-The ID of the ad creative.
+ID of the ad creative.
 
 `xdm:creativeID`
 * is optional
@@ -156,7 +133,7 @@ The ID of the ad creative.
 ## xdm:creativeURL
 ### Ad Creative URL
 
-The URL of the ad creative.
+URL of the ad creative.
 
 `xdm:creativeURL`
 * is optional
@@ -215,7 +192,7 @@ Ad is started.
 ## xdm:length
 ### Ad Length Or Duration
 
-Length or duration of ad asset in seconds.
+Length of video ad in seconds.
 
 `xdm:length`
 * is optional
@@ -235,7 +212,7 @@ Length or duration of ad asset in seconds.
 ## xdm:name
 ### Ad Name
 
-The friendly and human-readable name of the ad asset.
+Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar.
 
 `xdm:name`
 * is optional

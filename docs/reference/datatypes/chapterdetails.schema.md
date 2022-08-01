@@ -60,7 +60,7 @@ The auto-generated ID of the chapter.
 ## xdm:friendlyName
 ### Chapter Name
 
-The friendly name of the chapter and or segment.
+The name of the chapter and/or segment.
 
 `xdm:friendlyName`
 * is optional
@@ -80,7 +80,7 @@ The friendly name of the chapter and or segment.
 ## xdm:index
 ### Chapter Position
 
-The index of the chapter inside the content.
+The position (index, integer) of the chapter inside the content.
 
 `xdm:index`
 * is optional
@@ -158,7 +158,7 @@ The length of the chapter, in seconds.
 ## xdm:offset
 ### Chapter Offset
 
-The offset of the chapter, in seconds, inside the content from the start.
+The offset of the chapter inside the content (in seconds) from the start.
 
 `xdm:offset`
 * is optional
@@ -178,7 +178,7 @@ The offset of the chapter, in seconds, inside the content from the start.
 ## xdm:timePlayed
 ### Chapter Time Played
 
-The time spent on the chapter. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.
+The time spent on the chapter, in seconds.
 
 `xdm:timePlayed`
 * is optional

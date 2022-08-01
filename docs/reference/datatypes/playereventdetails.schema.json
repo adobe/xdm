@@ -21,7 +21,7 @@
                     "minimum": 0,
                     "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
                 },
-                "xdm:sessionId": {
+                "xdm:sessionID": {
                     "title": "Media Session ID",
                     "type": "string",
                     "description": "Identifies an instance of a content stream unique to an individual playback."
@@ -37,7 +37,7 @@
     "examples": [
         {
             "xdm:playhead": 831,
-            "xdm:sessionId": "1234567890"
+            "xdm:sessionID": "1234567890"
         }
     ]
 }

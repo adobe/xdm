@@ -15,7 +15,7 @@ Player event details information.
 ```json
 {
   "xdm:playhead": 831,
-  "xdm:sessionId": "1234567890"
+  "xdm:sessionID": "1234567890"
 }
 ```
 
@@ -24,7 +24,7 @@ Player event details information.
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:playhead](#xdmplayhead) | `integer` | Optional | Player event details information (this schema) |
-| [xdm:sessionId](#xdmsessionid) | `string` | Optional | Player event details information (this schema) |
+| [xdm:sessionID](#xdmsessionid) | `string` | Optional | Player event details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:playhead
@@ -48,17 +48,17 @@ If the content is live, the playhead must be the current second of the day, 0 <=
 
 
 
-## xdm:sessionId
+## xdm:sessionID
 ### Media Session ID
 
 Identifies an instance of a content stream unique to an individual playback.
 
-`xdm:sessionId`
+`xdm:sessionID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:sessionId Type
+### xdm:sessionID Type
 
 
 `string`

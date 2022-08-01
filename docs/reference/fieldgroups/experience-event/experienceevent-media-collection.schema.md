@@ -20,7 +20,8 @@ Track interactions with media collection.
       "xdm:sessionID": "1234567890"
     },
     "xdm:sessionDetails": {
-      "xdm:ID": "123456789",
+      "xdm:ID": "1482236761294786918253",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
@@ -32,13 +33,12 @@ Track interactions with media collection.
       "xdm:podPosition": 1,
       "xdm:playerName": "playerName",
       "xdm:isCompleted": false,
-      "xdm:isStarted": false,
-      "xdm:timePlayed": 50,
-      "xdm:adBreakID": "123"
+      "xdm:isStarted": false
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123
+      "xdm:second": 123,
+      "xdm:adBreakID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -53,7 +53,7 @@ Track interactions with media collection.
       "xdm:errorSource": "player"
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:bitrateAverageBucket": 100
     },
     "xdm:statesStart": [
       {
@@ -67,7 +67,24 @@ Track interactions with media collection.
       {
         "xdm:name": "fullScreen"
       }
-    ]
+    ],
+    "xdm:endUserIDs": {
+      "https://ns.adobe.com/experience/mcid": {
+        "@id": "https://data.adobe.io/entities/identity/92312748749128",
+        "xdm:namespace": {
+          "xdm:code": "ECID"
+        }
+      },
+      "https://ns.adobe.com/experience/aaid": {
+        "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
+        "xdm:namespace": {
+          "xdm:code": "AVID"
+        }
+      }
+    },
+    "xdm:implementationDetails": {
+      "xdm:version": "2.7.0"
+    }
   }
 }
 ```
@@ -99,7 +116,9 @@ Media Collection related fields.
 | `xdm:advertisingDetails`|  | Optional |
 | `xdm:advertisingPodDetails`|  | Optional |
 | `xdm:chapterDetails`|  | Optional |
+| `xdm:endUserIDs`|  | Optional |
 | `xdm:errorDetails`|  | Optional |
+| `xdm:implementationDetails`|  | Optional |
 | `xdm:playerEventDetails`|  | Optional |
 | `xdm:qoeDataDetails`|  | Optional |
 | `xdm:sessionDetails`|  | Optional |
@@ -168,6 +187,26 @@ Chapter details information related to the experience event.
 
 
 
+#### xdm:endUserIDs
+##### End User IDs
+
+Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.
+
+`xdm:endUserIDs`
+* is optional
+* type: reference
+
+##### xdm:endUserIDs Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/enduserids`
+
+
+
+
+
+
+
 #### xdm:errorDetails
 ##### Error Details
 
@@ -181,6 +220,26 @@ Error details information related to the experience event.
 
 
 * []() – `https://ns.adobe.com/xdm/datatypes/errorDetails`
+
+
+
+
+
+
+
+#### xdm:implementationDetails
+##### Implementation Details
+
+Details about the SDK, library, or service used in an application or web page implementation of a service.
+
+`xdm:implementationDetails`
+* is optional
+* type: reference
+
+##### xdm:implementationDetails Type
+
+
+* []() – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

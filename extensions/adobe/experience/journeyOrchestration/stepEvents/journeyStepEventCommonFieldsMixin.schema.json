@@ -374,7 +374,7 @@
               "type": "string",
               "description": "The Projection Original Timestamp of the segment being used in journey"
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/_id": {
+            "https://ns.adobe.com/experience/journeyOrchestration/experienceID": {
               "title": "Experience Id",
               "type": "string",
               "description": "Journey Orchestration Experience Id"

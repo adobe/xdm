@@ -55,7 +55,7 @@
           "type": "string",
           "description": "Distribution channel from where the content was played."
         },
-        "xdm:sdkVersion": {
+        "xdm:appVersion": {
           "title": "Version",
           "type": "string",
           "description": "The version identifier of the API, e.g h.18."

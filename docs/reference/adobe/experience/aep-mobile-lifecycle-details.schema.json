@@ -183,13 +183,6 @@
     "examples": [
         {
             "xdm:application": {
-                "xdm:isClose": true,
-                "xdm:closeType": "close",
-                "xdm:sessionLength": 5030
-            }
-        },
-        {
-            "xdm:application": {
                 "xdm:id": "A123",
                 "xdm:name": "Myapp",
                 "xdm:version": "1.0.1 (5)",
@@ -210,6 +203,13 @@
                 "xdm:modelNumber": "A1586",
                 "xdm:screenHeight": 667,
                 "xdm:screenWidth": 375
+            }
+        },
+        {
+            "xdm:application": {
+                "xdm:isClose": true,
+                "xdm:closeType": "close",
+                "xdm:sessionLength": 5030
             }
         }
     ]

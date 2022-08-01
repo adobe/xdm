@@ -60,7 +60,7 @@
           "type": "string",
           "description": "Distribution channel from where the content was played."
         },
-        "xdm:sdkVersion": {
+        "xdm:appVersion": {
           "title": "Version",
           "type": "string",
           "description": "The SDK version used by the player. This could have any custom value that makes sense for your player."

@@ -46,13 +46,14 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
   "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
   "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
-  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": "c19714bc-e74f-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": "c19714bc-e74f-4448-94a5-425b7b609932",
+  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": "c19dj3214bc-e74f-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": "c19714bc-4576-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": "c19714bc-4576-4448-94a5-425b7b609911",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
+  "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
+  "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
 }
 ```
 
@@ -72,14 +73,13 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
   "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
   "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID": "c19714bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID": "c19714bc-e74f-4448-94a5-425b7b609932",
-  "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID": "c19dj3214bc-e74f-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID": "c19714bc-4576-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID": "c19714bc-4576-4448-94a5-425b7b609911",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
-  "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
-  "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
+  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
 }
 ```
 

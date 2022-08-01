@@ -15,6 +15,11 @@
   "definitions": {
     "advertisingPodDetails": {
       "properties": {
+        "xdm:adBreakID": {
+          "title": "Ad Break ID",
+          "type": "string",
+          "description": "The ID of the ad break."
+        },
         "xdm:friendlyName": {
           "title": "Pod Friendly Name",
           "type": "string",
@@ -31,7 +36,7 @@
           "description": "The offset of the ad break inside the content, in seconds."
         }
       },
-      "required": ["xdm:index", "xdm:second"]
+      "required": ["xdm:index", "xdm:second", "xdm:adBreakID"]
     }
   },
   "allOf": [

@@ -9,7 +9,7 @@ Patient medical plan details such as network, type, and active status.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/plan/healthcare-plan-details.schema.json](fieldgroups/plan/healthcare-plan-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/plan/healthcare-plan-details.schema.json](fieldgroups/plan/healthcare-plan-details.schema.json) |
 
 ## Healthcare Plan Details Example
 ```json
@@ -41,43 +41,15 @@ Information about the healthcare plan.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:affiliations`| array | Optional |
 | `xdm:coverageType`| string | Optional |
 | `xdm:isActive`| boolean | Optional |
 | `xdm:lastVerificationDate`| string | Optional |
 | `xdm:networkDetails`| array | Optional |
 | `xdm:payerID`| string | Optional |
+| `xdm:payerName`| string | Optional |
 | `xdm:planLevel`| string | Optional |
 | `xdm:planType`| string | Optional |
 | `xdm:targetOwnerType`| string | Optional |
-
-
-
-#### xdm:affiliations
-##### Affiliations
-
-undefined
-
-`xdm:affiliations`
-* is optional
-* type: `string[]`
-
-
-##### xdm:affiliations Type
-
-
-Array type: `string[]`
-
-All items must be of the type:
-`string`
-
-
-
-
-
-
-
-
 
 
 
@@ -88,9 +60,14 @@ Plan coverage type.
 
 `xdm:coverageType`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:coverageType Type
+
+
+`string`
+
+
 
 ##### xdm:coverageType Known Values
 | Value | Description |
@@ -176,7 +153,7 @@ All items must be of the type:
 #### xdm:networkID
 ##### Network Identifier
 
-The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkID`
 * is optional
@@ -197,7 +174,7 @@ The insurer-specific identifier for the insurer-defined network of providers to 
 #### xdm:networkName
 ##### Network Name
 
-The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.
+The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate.
 
 `xdm:networkName`
 * is optional
@@ -244,6 +221,27 @@ Unique identifier of the payer. This is the insurance provider of the plan.
 
 
 
+#### xdm:payerName
+##### Payer Name
+
+Name of the payer. This is the insurance provider of the plan.
+
+`xdm:payerName`
+* is optional
+* type: `string`
+
+##### xdm:payerName Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### xdm:planLevel
 ##### Plan Level
 
@@ -251,9 +249,14 @@ This indicates if the plan is primary, secondary, tertiary etc.
 
 `xdm:planLevel`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:planLevel Type
+
+
+`string`
+
+
 
 ##### xdm:planLevel Known Values
 | Value | Description |
@@ -271,13 +274,18 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:planType
 ##### Plan Type
 
-This indicates if the plan is primary,secondary or tertiary plan.
+This indicates if the plan is primary, secondary or a tertiary plan.
 
 `xdm:planType`
 * is optional
-* type: `enum`
+* type: `string`
 
-The value of this property **must** be equal to one of the [known values below](#xdmhealthcareplandetails-known-values).
+##### xdm:planType Type
+
+
+`string`
+
+
 
 ##### xdm:planType Known Values
 | Value | Description |
@@ -286,7 +294,6 @@ The value of this property **must** be equal to one of the [known values below](
 | `epo` | PPO |
 | `pos` | POS |
 | `hdhp` | HDHP |
-| `ppo` |  |
 
 
 
@@ -296,7 +303,7 @@ The value of this property **must** be equal to one of the [known values below](
 #### xdm:targetOwnerType
 ##### Target Owner Type
 
-The type of owner a plan is for. Examples are individual, group, organization etc.
+ The type of owner a plan is for. Examples are individual, group, organization, etc.
 
 `xdm:targetOwnerType`
 * is optional

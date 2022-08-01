@@ -19,7 +19,7 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "Data that is collected by sitetools like chatbot,survey ..etc.",
+    "description": "Generic collection of site tool behaviors for online interactions. For example interactions with chatbots, surveys, or questionnaires.",
     "definitions": {
         "sitetool-details": {
             "properties": {
@@ -31,22 +31,17 @@
                         "xdm:name": {
                             "Title": "Site Tool Name",
                             "type": "string",
-                            "description": "Name of the site tool like chatbot, survey ..etc."
+                            "description": "Name of the site tool. I.e., chatbot, survey, questionnaire."
                         },
                         "xdm:section": {
                             "Title": "Site Tool Section",
                             "type": "string",
-                            "description": "Section of the site tool like main , sub."
+                            "description": "Section of the site tool. I.e., main, sub, etc."
                         },
                         "xdm:actor": {
                             "Title": "Actor",
                             "type": "string",
                             "description": "A person/member who did the action.",
-                            "enum": [
-                                "Member",
-                                "Practitioner",
-                                "RelatedPerson"
-                            ],
                             "meta:enum": {
                                 "Member": "Member",
                                 "Practitioner": "Practitioner",
@@ -111,7 +106,7 @@
             "$ref": "#/definitions/sitetool-details"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {}
     ]

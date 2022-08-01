@@ -15,7 +15,8 @@ Advertising Pod details information.
 ```json
 {
   "xdm:index": 2,
-  "xdm:second": 123
+  "xdm:second": 123,
+  "xdm:adBreakID": "123"
 }
 ```
 
@@ -23,10 +24,31 @@ Advertising Pod details information.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:adBreakID](#xdmadbreakid) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:index](#xdmindex) | `integer` | Optional | Advertising Pod details information (this schema) |
 | [xdm:second](#xdmsecond) | `integer` | Optional | Advertising Pod details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:adBreakID
+### Ad Break ID
+
+The ID of the ad break.
+
+`xdm:adBreakID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:adBreakID Type
+
+
+`string`
+
+
+
+
+
 
 ## xdm:friendlyName
 ### Pod Friendly Name

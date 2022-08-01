@@ -14,7 +14,8 @@ Session details information.
 ## Session details information Example
 ```json
 {
-  "xdm:ID": "123456789",
+  "xdm:ID": "1482236761294786918253",
+  "xdm:name": "123456789",
   "xdm:length": 100,
   "xdm:contentType": "VOD",
   "xdm:playerName": "playerName",
@@ -30,49 +31,50 @@ Session details information.
 | [xdm:adCount](#xdmadcount) | `integer` | Optional | Session details information (this schema) |
 | [xdm:adLoad](#xdmadload) | `string` | Optional | Session details information (this schema) |
 | [xdm:album](#xdmalbum) | `string` | Optional | Session details information (this schema) |
+| [xdm:appVersion](#xdmappversion) | `string` | Optional | Session details information (this schema) |
 | [xdm:artist](#xdmartist) | `string` | Optional | Session details information (this schema) |
 | [xdm:assetID](#xdmassetid) | `string` | Optional | Session details information (this schema) |
-| [xdm:auth](#xdmauth) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:author](#xdmauthor) | `string` | Optional | Session details information (this schema) |
 | [xdm:averageMinuteAudience](#xdmaverageminuteaudience) | `number` | Optional | Session details information (this schema) |
 | [xdm:channel](#xdmchannel) | `string` | Optional | Session details information (this schema) |
 | [xdm:chapterCount](#xdmchaptercount) | `integer` | Optional | Session details information (this schema) |
-| [xdm:complete](#xdmcomplete) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:contentType](#xdmcontenttype) | `string` | Optional | Session details information (this schema) |
 | [xdm:dayPart](#xdmdaypart) | `string` | Optional | Session details information (this schema) |
-| [xdm:dropBeforeStarts](#xdmdropbeforestarts) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:episode](#xdmepisode) | `integer` | Optional | Session details information (this schema) |
 | [xdm:estimatedStreams](#xdmestimatedstreams) | `number` | Optional | Session details information (this schema) |
 | [xdm:feed](#xdmfeed) | `string` | Optional | Session details information (this schema) |
 | [xdm:firstAirDate](#xdmfirstairdate) | `string` | Optional | Session details information (this schema) |
 | [xdm:firstDigitalDate](#xdmfirstdigitaldate) | `string` | Optional | Session details information (this schema) |
+| [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Session details information (this schema) |
 | [xdm:genre](#xdmgenre) | `string` | Optional | Session details information (this schema) |
+| [xdm:hasPauseImpactedStreams](#xdmhaspauseimpactedstreams) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasProgress10](#xdmhasprogress10) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasProgress25](#xdmhasprogress25) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasProgress50](#xdmhasprogress50) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasProgress75](#xdmhasprogress75) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasProgress95](#xdmhasprogress95) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasResume](#xdmhasresume) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:hasSegmentView](#xdmhassegmentview) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:isAuthenticated](#xdmisauthenticated) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:isDownloaded](#xdmisdownloaded) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:isFederated](#xdmisfederated) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:isPlayed](#xdmisplayed) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:isViewed](#xdmisviewed) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:label](#xdmlabel) | `string` | Optional | Session details information (this schema) |
 | [xdm:length](#xdmlength) | `integer` | Optional | Session details information (this schema) |
 | [xdm:mvpd](#xdmmvpd) | `string` | Optional | Session details information (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Session details information (this schema) |
 | [xdm:network](#xdmnetwork) | `string` | Optional | Session details information (this schema) |
 | [xdm:originator](#xdmoriginator) | `string` | Optional | Session details information (this schema) |
-| [xdm:pause](#xdmpause) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:pauseCount](#xdmpausecount) | `integer` | Optional | Session details information (this schema) |
 | [xdm:pauseTime](#xdmpausetime) | `integer` | Optional | Session details information (this schema) |
-| [xdm:play](#xdmplay) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:playerName](#xdmplayername) | `string` | Optional | Session details information (this schema) |
-| [xdm:progress10](#xdmprogress10) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:progress25](#xdmprogress25) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:progress50](#xdmprogress50) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:progress75](#xdmprogress75) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:progress95](#xdmprogress95) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:publisher](#xdmpublisher) | `string` | Optional | Session details information (this schema) |
 | [xdm:rating](#xdmrating) | `string` | Optional | Session details information (this schema) |
-| [xdm:resume](#xdmresume) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:sdkVersion](#xdmsdkversion) | `string` | Optional | Session details information (this schema) |
 | [xdm:season](#xdmseason) | `integer` | Optional | Session details information (this schema) |
 | [xdm:secondsSinceLastCall](#xdmsecondssincelastcall) | `number` | Optional | Session details information (this schema) |
 | [xdm:segment](#xdmsegment) | `string` | Optional | Session details information (this schema) |
-| [xdm:segmentView](#xdmsegmentview) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:show](#xdmshow) | `string` | Optional | Session details information (this schema) |
 | [xdm:showType](#xdmshowtype) | `string` | Optional | Session details information (this schema) |
 | [xdm:station](#xdmstation) | `string` | Optional | Session details information (this schema) |
@@ -81,13 +83,12 @@ Session details information.
 | [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional | Session details information (this schema) |
 | [xdm:totalTimePlayed](#xdmtotaltimeplayed) | `integer` | Optional | Session details information (this schema) |
 | [xdm:uniqueTimePlayed](#xdmuniquetimeplayed) | `integer` | Optional | Session details information (this schema) |
-| [xdm:view](#xdmview) | `boolean` | Optional | Session details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
-### Series ID
+### Reporting Media Session ID
 
-The series ID the show belongs to.
+This identifies an instance of a content stream unique to an individual playback.
 
 `xdm:ID`
 * is optional
@@ -98,13 +99,6 @@ The series ID the show belongs to.
 
 
 `string`
-
-
-All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E.%7B1%2C%7D%24)):
-```regex
-^.{1,}$
-```
 
 
 
@@ -171,6 +165,26 @@ The name of the album that the music recording or video belongs to.
 
 
 
+## xdm:appVersion
+### Version
+
+The SDK version used by the player. This could have any custom value that makes sense for your player.
+
+`xdm:appVersion`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:appVersion Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:artist
 ### Artist
 
@@ -194,7 +208,7 @@ The name of the album artist or group performing the music recording or video.
 ## xdm:assetID
 ### Asset ID
 
-Identifier of the content, which can be used to tie back to other industry or CMS IDs.
+This is the unique identifier for the content of the media asset, such as the TV series episode identifier, movie asset identifier, or live event identifier. Typically these IDs are derived from metadata authorities such as EIDR, TMS/Gracenote, or Rovi. These identifiers can also be from other proprietary or in-house systems.
 
 `xdm:assetID`
 * is optional
@@ -206,25 +220,6 @@ Identifier of the content, which can be used to tie back to other industry or CM
 
 `string`
 
-
-
-
-
-
-## xdm:auth
-### Media Authorized
-
-The user has been authorized via authentication.
-
-`xdm:auth`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:auth Type
-
-
-`boolean`
 
 
 
@@ -310,25 +305,6 @@ The number of chapters started during the playback.
 
 
 
-## xdm:complete
-### Content Completes
-
-Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
-
-`xdm:complete`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:complete Type
-
-
-`boolean`
-
-
-
-
-
 ## xdm:contentType
 ### Broadcast Content Type
 
@@ -363,7 +339,7 @@ The type of the stream delivery.
 ## xdm:dayPart
 ### Day Part
 
-Defines the time of the day when the content was broadcast or played.
+A property that defines the time of the day when the content was broadcast or played. This could have any value set as necessary by customers.
 
 `xdm:dayPart`
 * is optional
@@ -380,29 +356,10 @@ Defines the time of the day when the content was broadcast or played.
 
 
 
-## xdm:dropBeforeStarts
-### Drop Before Start
-
-Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.
-
-`xdm:dropBeforeStarts`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:dropBeforeStarts Type
-
-
-`boolean`
-
-
-
-
-
 ## xdm:episode
 ### Episode Number
 
-Number of the episode.
+The number of the episode.
 
 `xdm:episode`
 * is optional
@@ -463,7 +420,7 @@ The type of feed, which can either represent actual feed-related data such as  E
 ## xdm:firstAirDate
 ### First Air Date
 
-The date when the content first aired on television.
+The date when the content first aired on television. Any date format is acceptable, but Adobe recommends: YYYY-MM-DD.
 
 `xdm:firstAirDate`
 * is optional
@@ -483,7 +440,7 @@ The date when the content first aired on television.
 ## xdm:firstDigitalDate
 ### First Digital Date
 
-The date when the content first aired on any digital channel or platform.
+The date when the content first aired on any digital channel or platform. Any date format is acceptable but Adobe recommends: YYYY-MM-DD.
 
 `xdm:firstDigitalDate`
 * is optional
@@ -500,10 +457,30 @@ The date when the content first aired on any digital channel or platform.
 
 
 
+## xdm:friendlyName
+### Content Name
+
+This is the “friendly” (human-readable) name of the content.
+
+`xdm:friendlyName`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:friendlyName Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:genre
 ### Genre
 
-Type or grouping of content as defined by content producer.
+Type or grouping of content as defined by content producer. Values should be comma delimited in variable implementation.
 
 `xdm:genre`
 * is optional
@@ -515,6 +492,196 @@ Type or grouping of content as defined by content producer.
 
 `string`
 
+
+
+
+
+
+## xdm:hasPauseImpactedStreams
+### Pause Impacted Streams
+
+Indicates if one or more pauses occurred during the playback of a single media item.
+
+`xdm:hasPauseImpactedStreams`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasPauseImpactedStreams Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasProgress10
+### 10% Progress Marker
+
+Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
+
+`xdm:hasProgress10`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasProgress10 Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasProgress25
+### 25% Progress Marker
+
+Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
+
+`xdm:hasProgress25`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasProgress25 Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasProgress50
+### 50% Progress Marker
+
+Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
+
+`xdm:hasProgress50`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasProgress50 Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasProgress75
+### 75% Progress Marker
+
+Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
+
+`xdm:hasProgress75`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasProgress75 Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasProgress95
+### 95% Progress Marker
+
+Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
+
+`xdm:hasProgress95`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasProgress95 Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasResume
+### Resume
+
+Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.
+
+`xdm:hasResume`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasResume Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:hasSegmentView
+### Media Segment Views
+
+Indicates when at least one frame, not necessarily the first has been viewed.
+
+`xdm:hasSegmentView`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:hasSegmentView Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isAuthenticated
+### Media Authorized
+
+The user has been authorized via Adobe authentication.
+
+`xdm:isAuthenticated`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isAuthenticated Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isCompleted
+### Content Completes
+
+Indicates if a timed media asset was watched to completion, this does not necessarily mean the viewer watched the whole video; viewer could have skipped ahead.
+
+`xdm:isCompleted`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isCompleted Type
+
+
+`boolean`
 
 
 
@@ -558,6 +725,44 @@ Set to true when the hit is federated (i.e., received by the customer as part of
 
 
 
+## xdm:isPlayed
+### Content Starts
+
+First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no “Content Start” event.
+
+`xdm:isPlayed`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isPlayed Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isViewed
+### Media Starts
+
+Load event for the media. (This occurs when the viewer clicks the Play button). This would count even if there are pre-roll ads, buffering, errors, and so on.
+
+`xdm:isViewed`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:isViewed Type
+
+
+`boolean`
+
+
+
+
+
 ## xdm:label
 ### Record Label
 
@@ -581,7 +786,7 @@ Name of the record label.
 ## xdm:length
 ### Media Content Length
 
-Length of primary media asset in seconds.
+Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds).
 
 `xdm:length`
 * is optional
@@ -601,7 +806,7 @@ Length of primary media asset in seconds.
 ## xdm:mvpd
 ### MVPD Identifier
 
-The MVPD (Multichannel Video Programming Distributor) provided via authentication. [https://en.wikipedia.org/?title=MVPD]
+MVPD provided via Adobe authentication.
 
 `xdm:mvpd`
 * is optional
@@ -619,9 +824,9 @@ The MVPD (Multichannel Video Programming Distributor) provided via authenticatio
 
 
 ## xdm:name
-### Content Name
+### Series ID
 
-The friendly, human-readable name of the timed media asset.
+Content ID of the content, which can be used to tie back to other industry / CMS IDs.
 
 `xdm:name`
 * is optional
@@ -634,6 +839,13 @@ The friendly, human-readable name of the timed media asset.
 `string`
 
 
+All instances must conform to this regular expression 
+(test examples [here](https://regexr.com/?expression=%5E.%7B1%2C%7D%24)):
+```regex
+^.{1,}$
+```
+
+
 
 
 
@@ -641,7 +853,7 @@ The friendly, human-readable name of the timed media asset.
 ## xdm:network
 ### Broadcast Network
 
-The programmer network name.
+The network/channel name.
 
 `xdm:network`
 * is optional
@@ -661,7 +873,7 @@ The programmer network name.
 ## xdm:originator
 ### Creator Name
 
-Full name of the creator.
+Creator of the content.
 
 `xdm:originator`
 * is optional
@@ -673,25 +885,6 @@ Full name of the creator.
 
 `string`
 
-
-
-
-
-
-## xdm:pause
-### Pause Impacted Streams
-
-Indicates if one or more pauses occurred during the playback of a single media item.
-
-`xdm:pause`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:pause Type
-
-
-`boolean`
 
 
 
@@ -737,25 +930,6 @@ Describes the duration in seconds in which playback was paused by the user.
 
 
 
-## xdm:play
-### Content Starts
-
-First frame of media is consumed. If the user drops during ad, buffering, etc., then there would be no “Content Start” event.
-
-`xdm:play`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:play Type
-
-
-`boolean`
-
-
-
-
-
 ## xdm:playerName
 ### Content Player Name
 
@@ -771,101 +945,6 @@ Name of the content player.
 
 `string`
 
-
-
-
-
-
-## xdm:progress10
-### 10% Progress Marker
-
-Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
-
-`xdm:progress10`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:progress10 Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:progress25
-### 25% Progress Marker
-
-Indicates that the playhead passed the 25% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
-
-`xdm:progress25`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:progress25 Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:progress50
-### 50% Progress Marker
-
-Indicates that the playhead passed the 50% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
-
-`xdm:progress50`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:progress50 Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:progress75
-### 75% Progress Marker
-
-Indicates that the playhead passed the 75% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
-
-`xdm:progress75`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:progress75 Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:progress95
-### 95% Progress Marker
-
-Indicates that the playhead passed the 95% marker of media based on stream length. Marker only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.
-
-`xdm:progress95`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:progress95 Type
-
-
-`boolean`
 
 
 
@@ -894,7 +973,7 @@ Name of the audio content publisher.
 ## xdm:rating
 ### Rating Value
 
-Rating value as issued by the rating source.
+Rating as defined by TV Parental Guidelines.
 
 `xdm:rating`
 * is optional
@@ -911,49 +990,10 @@ Rating value as issued by the rating source.
 
 
 
-## xdm:resume
-### Resume
-
-Marks each playback that was resumed after more than 30 minutes of buffer, pause, or stall period.
-
-`xdm:resume`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:resume Type
-
-
-`boolean`
-
-
-
-
-
-## xdm:sdkVersion
-### Version
-
-The version identifier of the API, e.g h.18.
-
-`xdm:sdkVersion`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:sdkVersion Type
-
-
-`string`
-
-
-
-
-
-
 ## xdm:season
 ### Season Number
 
-Number of the season.
+The season number the show belongs to. Season Series is required only if the show is part of a series.
 
 `xdm:season`
 * is optional
@@ -1007,32 +1047,6 @@ The interval that describes the part of the content that has been viewed in minu
 `string`
 
 
-All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E%5B%5B0-9%5D%2B-%5B0-9%5D%2B%5D%24)):
-```regex
-^[[0-9]+-[0-9]+]$
-```
-
-
-
-
-
-
-## xdm:segmentView
-### Media Segment Views
-
-Indicates when at least one frame, not necessarily the first has been viewed.
-
-`xdm:segmentView`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:segmentView Type
-
-
-`boolean`
-
 
 
 
@@ -1040,7 +1054,7 @@ Indicates when at least one frame, not necessarily the first has been viewed.
 ## xdm:show
 ### Series Name
 
-Name of the series.
+Program/Series Name. Program Name is required only if the show is part of a series.
 
 `xdm:show`
 * is optional
@@ -1100,7 +1114,7 @@ The radio station name on which the audio is played.
 ## xdm:streamFormat
 ### Stream Format
 
-Free-form format of the stream for example, short or long.
+Format of the stream (HD, SD).
 
 `xdm:streamFormat`
 * is optional
@@ -1141,7 +1155,7 @@ The value of this property **must** be equal to one of the [known values below](
 ## xdm:timePlayed
 ### Content Time Spent
 
-Sums the event duration (in seconds) for all events of type PLAY on the main content. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.
+Sums the event duration (in seconds) for all events of type PLAY on the main content.
 
 `xdm:timePlayed`
 * is optional
@@ -1193,25 +1207,6 @@ Describes the sum of the unique intervals seen by a user on a timed media asset 
 
 `integer`
 
-
-
-
-
-
-## xdm:view
-### Media Starts
-
-Load event for the media. (This occurs when the viewer clicks the Play button). This would count even if there are pre-roll ads, buffering, errors, and so on.
-
-`xdm:view`
-* is optional
-* type: `boolean`
-* defined in this schema
-
-### xdm:view Type
-
-
-`boolean`
 
 
 

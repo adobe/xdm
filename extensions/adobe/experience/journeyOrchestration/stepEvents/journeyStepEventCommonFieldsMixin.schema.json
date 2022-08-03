@@ -391,7 +391,8 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": {
               "title": "Projection Original Timestamp",
-              "type": "date-time",
+              "type": "string",
+              "format": "date-time",
               "description": "The Projection Original Timestamp of the segment being used in journey"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/experienceID": {

@@ -20,6 +20,9 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName": "Marketing Test Journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName": "Email 100Kb Message"
   }
 }

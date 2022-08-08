@@ -5,11 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/workfront/changeevent-all",
+  "$id": "https://ns.adobe.com/experience/workfront/workobjects-all",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Global Workfront Objects",
+  "title": "Workfront Work Objects",
   "type": "object",
-  "description": "High level field group that includes all lower level object specific field groups",
+  "description": "High level field group that brings in all available work objects",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [

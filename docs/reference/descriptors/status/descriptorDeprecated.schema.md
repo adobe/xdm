@@ -21,6 +21,15 @@ Used to mark one or more standard fields as deprecated for the specific ImsOrg.
 ```json
 {
   "@type": "xdm:descriptorDeprecated",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/person/gender"
+}
+```
+
+```json
+{
+  "@type": "xdm:descriptorDeprecated",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": [
@@ -36,15 +45,6 @@ Used to mark one or more standard fields as deprecated for the specific ImsOrg.
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/person-name",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/courtesyTitle"
-}
-```
-
-```json
-{
-  "@type": "xdm:descriptorDeprecated",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceProperty": "/person/gender"
 }
 ```
 

@@ -1,0 +1,49 @@
+../schemas/hygiene/aep-hygiene-ops-record.schema.json,xdm:action,mising meta:enum
+../schemas/insights-metrics/dim-segment.schema.json,xdm:status,mising meta:enum
+../extensions/adobe/experience/adcloud/attributedconversionmodel.schema.json,adcloud:matchType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/attributedconversionmodel.schema.json,adcloud:conversionType,mising meta:enum
+../extensions/adobe/experience/adcloud/searchads/aggregateperformancebyadbykeyword.schema.json,searchads:matchType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/searchads/aggregateperformancebykeyword.schema.json,searchads:matchType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/searchads/campaign.schema.json,searchads:budgetType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/searchads/campaign.schema.json,searchads:adDeliveryType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/searchadvertising/campaign.schema.json,xdm:budgetType,mismatch between enum and meta:enum
+../extensions/adobe/experience/adcloud/searchadvertising/campaign.schema.json,xdm:adDeliveryType,mismatch between enum and meta:enum
+../extensions/adobe/experience/customerJourneyManagement/message-interaction.schema.json,https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType,mismatch between enum and meta:enum
+../extensions/adobe/experience/decisioning/frequency-capping-constraints.schema.json,items,mising meta:enum
+../extensions/adobe/experience/decisioning/interaction-measurement-details.schema.json,xdm:mapping,mising meta:enum
+../extensions/adobe/experience/decisioning/option-selection-details.schema.json,xdm:optionSelectionType,mising meta:enum
+../extensions/adobe/experience/decisioning/profile-constraint-details.schema.json,xdm:profileConstraintType,mismatch between enum and meta:enum
+../extensions/adobe/experience/decisioning/ranking-details.schema.json,xdm:orderEvaluationType,mising meta:enum
+../extensions/airship/airship-event.schema.json,airship:messageType,mising meta:enum
+../extensions/airship/airship-event.schema.json,airship:regionAction,mising meta:enum
+../components/classes/fsi/policy.schema.json,xdm:type,mising meta:enum
+../components/classes/loan.schema.json,xdm:loanType,mismatch between enum and meta:enum
+../components/classes/segmentdefinition.schema.json,xdm:segmentStatus,mising meta:enum
+../components/classes/vehicle-product.schema.json,xdm:inventoryType,mising meta:enum
+../components/datatypes/deprecated/deprecated-consentpreferences.schema.json,xdm:preferredChannel,mismatch between enum and meta:enum
+../components/datatypes/deprecated/webreferrer.schema.json,xdm:type,mismatch between enum and meta:enum
+../components/datatypes/device.schema.json,xdm:locationPermission,mising meta:enum
+../components/datatypes/environment.schema.json,xdm:connectionType,mismatch between enum and meta:enum
+../components/datatypes/industry-verticals/claim.schema.json,xdm:status,mising meta:enum
+../components/datatypes/industry-verticals/financial-account.schema.json,xdm:financialAccountType,mising meta:enum
+../components/datatypes/industry-verticals/form-applications.schema.json,xdm:status,mising meta:enum
+../components/datatypes/industry-verticals/internal-site-search.schema.json,xdm:radiusType,mising meta:enum
+../components/datatypes/industry-verticals/internal-site-search.schema.json,xdm:sortOrder,mising meta:enum
+../components/datatypes/industry-verticals/internal-site-search.schema.json,xdm:sortType,mising meta:enum
+../components/datatypes/store-web-order.schema.json,xdm:paymentType,mismatch between enum and meta:enum
+../components/datatypes/webinfo.schema.json,xdm:type,mismatch between enum and meta:enum
+../components/fieldgroups/experience-event/experienceevent-card-actions.schema.json,xdm:cardOrderType,mising meta:enum
+../components/fieldgroups/experience-event/experienceevent-card-actions.schema.json,xdm:cardType,mising meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-claim-details.schema.json,xdm:status,mising meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-claim-details.schema.json,xdm:type,mising meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-flight-reservation.schema.json,xdm:fareClass,mising meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-flight-reservation.schema.json,xdm:checkInMethod,mising meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-insurance-claim-process.schema.json,xdm:type,mismatch between enum and meta:enum
+../components/fieldgroups/experience-event/industry-verticals/experienceevent-reservation-search.schema.json,xdm:rateType,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:seat,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:seatSection,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:meal,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:ticketDelivery,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:roomType,mising meta:enum
+../components/fieldgroups/profile/profile-travel-preferences.schema.json,xdm:vehicleType,mising meta:enum
+../components/fieldgroups/shared/forecasted-weather.schema.json,precipType,mising meta:enum

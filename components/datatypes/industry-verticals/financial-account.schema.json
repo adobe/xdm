@@ -41,7 +41,13 @@
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
           "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
-          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
+          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951",
+          "meta:enum": {
+            "checking": "checking",
+            "savings": "savings",
+            "retirement": "retirement",
+            "investment": "investment"
+          }
         }
       }
     }

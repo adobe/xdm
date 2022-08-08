@@ -26,7 +26,13 @@
               "enum": ["direct", "eventTypeValue", "fieldValue", "predicate"],
               "default": "direct",
               "meta:titleId": "interaction-measurement##xdm:mapping##title##48401",
-              "meta:descriptionId": "interaction-measurement##xdm:mapping##description##25811"
+              "meta:descriptionId": "interaction-measurement##xdm:mapping##description##25811",
+              "meta:enum": {
+                "direct": "direct",
+                "eventTypeValue": "eventTypeValue",
+                "fieldValue": "fieldValue",
+                "predicate": "predicate"
+              }
             },
             "xdm:value": {
               "type": "string",

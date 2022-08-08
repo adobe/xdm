@@ -338,7 +338,7 @@
                 "iot_messages",
                 "social_media",
                 "other",
-                "none",
+                "no_preferred",
                 "unknown"
               ],
               "meta:enum": {
@@ -350,7 +350,7 @@
                 "physical_mail": "Physical Mail",
                 "inVehicle_messages": "In-vehicle Messages",
                 "in_home_messages": "In-home Messages",
-                "iot": "IoT Messages",
+                "iot_messages": "IoT Messages",
                 "social_media": "Social Media",
                 "other": "Other",
                 "no_preferred": "No Preferred Channel",

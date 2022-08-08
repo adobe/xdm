@@ -81,7 +81,10 @@
                 "type": "array",
                 "items": {
                   "type": "string",
-                  "enum": ["decisioning"]
+                  "enum": ["decisioning"],
+                  "meta:enum": {
+                    "decisioning": "decisioning"
+                  }
                 },
                 "minItems": 1,
                 "default": ["decisioning"]

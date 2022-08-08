@@ -29,7 +29,11 @@
           "type": "string",
           "enum": ["deleteIdentity", "updateField"],
           "meta:titleId": "aep-hygiene-ops##xdm:action##title##96551",
-          "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821"
+          "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821",
+          "meta:enum": {
+            "deleteIdentity": "deleteIdentity",
+            "updateField": "updateField"
+          }
         },
         "xdm:targetDatasetID": {
           "title": "Target Dataset ID specified by the user to apply hygiene operations",

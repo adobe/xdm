@@ -31,7 +31,12 @@
           "enum": ["new", "used", "certified preowned"],
           "description": "Captures the inventory type of the vehicle.",
           "meta:titleId": "vehicle-product##xdm:inventoryType##title##43331",
-          "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##18621"
+          "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##18621",
+          "meta:enum": {
+            "new": "new",
+            "used": "used",
+            "certified preowned": "certified preowned"
+          }
         },
         "xdm:luggageCapacity": {
           "title": "Luggage Capacity",

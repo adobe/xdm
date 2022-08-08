@@ -323,7 +323,11 @@
                     "commercial"
                   ],
                   "meta:titleId": "airship-event##airship:messageType##title##79981",
-                  "meta:descriptionId": "airship-event##airship:messageType##description##49551"
+                  "meta:descriptionId": "airship-event##airship:messageType##description##49551",
+                  "meta:enum": {
+                    "unsubscribe": "unsubscribe",
+                    "commercial": "commercial"
+                  }
                 },
                 "airship:registrationType": {
                   "title": "Registration Type",
@@ -391,7 +395,11 @@
                 "exit"
               ],
               "meta:titleId": "airship-event##airship:regionAction##title##19401",
-              "meta:descriptionId": "airship-event##airship:regionAction##description##32271"
+              "meta:descriptionId": "airship-event##airship:regionAction##description##32271",
+              "meta:enum": {
+                "enter": "enter",
+                "exit": "exit"
+              }
             },
             "airship:regionName": {
               "title": "Region/Geofence Name",

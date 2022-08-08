@@ -29,7 +29,11 @@
           "default": "none",
           "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.",
           "meta:titleId": "option-selection-details##xdm:optionSelectionType##title##62401",
-          "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##98831"
+          "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##98831",
+          "meta:enum": {
+            "directList": "directList",
+            "filter": "filter"
+          }
         },
         "xdm:options": {
           "type": "array",

@@ -105,7 +105,7 @@
             "Product Group": "Product Group",
             "Content": "Content",
             "SiteCpc": "SiteCpc",
-            "Sitecpm": "SiteCpm",
+            "SiteCpm": "SiteCpm",
             "Category": "Category",
             "Search": "Search",
             "Adgroup": "Adgroup",
@@ -192,7 +192,12 @@
           "description": "Feed Conversion Type the conversion event originated from",
           "enum": ["Feed", "Pixel", "Cross Device"],
           "meta:titleId": "attributedconversionmodel##adcloud:conversionType##title##62511",
-          "meta:descriptionId": "attributedconversionmodel##adcloud:conversionType##description##25911"
+          "meta:descriptionId": "attributedconversionmodel##adcloud:conversionType##description##25911",
+          "meta:enum": {
+            "Feed": "Feed",
+            "Pixel": "Pixel",
+            "Cross Device": "Cross Device"
+          }
         },
         "adcloud:device": {
           "title": "Device",

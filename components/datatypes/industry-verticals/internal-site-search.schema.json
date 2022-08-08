@@ -107,7 +107,11 @@
           "enum": ["miles", "kilometers"],
           "description": "Captures the selected distance type of the search radius in either miles or kilometers.",
           "meta:titleId": "internal-site-search##xdm:radiusType##title##92511",
-          "meta:descriptionId": "internal-site-search##xdm:radiusType##description##67451"
+          "meta:descriptionId": "internal-site-search##xdm:radiusType##description##67451",
+          "meta:enum": {
+            "miles": "miles",
+            "kilometers": "kilometers"
+          }
         },
         "xdm:term": {
           "title": "Term",
@@ -150,7 +154,11 @@
           "enum": ["ascending", "descending"],
           "description": "ascending/descending",
           "meta:titleId": "internal-site-search##xdm:sortOrder##title##94521",
-          "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##8641"
+          "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##8641",
+          "meta:enum": {
+            "ascending": "ascending",
+            "descending": "descending"
+          }
         },
         "xdm:sortType": {
           "title": "Sort Type",
@@ -166,7 +174,16 @@
           ],
           "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc.",
           "meta:titleId": "internal-site-search##xdm:sortType##title##34431",
-          "meta:descriptionId": "internal-site-search##xdm:sortType##description##18021"
+          "meta:descriptionId": "internal-site-search##xdm:sortType##description##18021",
+          "meta:enum": {
+            "price: low to high": "price: low to high",
+            "price: high to low": "price: high to low",
+            "featured": "featured",
+            "best match": "best match",
+            "average customer review": "average customer review",
+            "discount": "discount",
+            "new items": "new items"
+          }
         }
       }
     }

@@ -118,11 +118,11 @@
             "Day of Week"
           ],
           "meta:enum": {
-            "daily": "Daily",
+            "Daily": "Daily",
             "Monthly": "Monthly",
             "Lifetime": "Lifetime",
             "Daily Spend Until Depleted": "Daily spend until depleted",
-            "Day of week": "Day of week"
+            "Day of Week": "Day of week"
           },
           "meta:titleId": "campaign##searchads:budgetType##title##22961",
           "meta:descriptionId": "campaign##searchads:budgetType##description##91081"
@@ -136,8 +136,8 @@
             "Accelerated"
           ],
           "meta:enum": {
-            "standard": "Standard",
-            "accelerated": "Accelerated"
+            "Standard": "Standard",
+            "Accelerated": "Accelerated"
           },
           "meta:titleId": "campaign##searchads:adDeliveryType##title##60311",
           "meta:descriptionId": "campaign##searchads:adDeliveryType##description##88691"

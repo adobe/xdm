@@ -66,7 +66,14 @@
               ],
               "description": "Type of rate included in a reservation search.",
               "meta:titleId": "experienceevent-reservation-search##xdm:rateType##title##78831",
-              "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##30871"
+              "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##30871",
+              "meta:enum": {
+                "aaa": "aaa",
+                "aarp": "aarp",
+                "senior": "senior",
+                "government": "government",
+                "corporate": "corporate"
+              }
             },
             "xdm:startDate": {
               "title": "Start Date",

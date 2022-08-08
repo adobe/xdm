@@ -115,6 +115,21 @@
               "title": "Journey Version ID",
               "type": "string",
               "description": "Represents a frozen version of a Journey"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName": {
+              "title": "Journey Name",
+              "type": "string",
+              "description": "Represents the journey name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID": {
+              "title": "Journey ID",
+              "type": "string",
+              "description": "Represents the journey ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName": {
+              "title": "Journey Action Name",
+              "type": "string",
+              "description": "Represents the Journey Label"
             }
           }
         }

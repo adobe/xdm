@@ -12,7 +12,9 @@
   "description": "High level field group that includes all lower level object specific field groups",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/experience/workfront/changeevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/workfront/changeevent"
+  ],
   "meta:extends": [
     "https://ns.adobe.com/experience/workfront/task",
     "https://ns.adobe.com/experience/workfront/project",

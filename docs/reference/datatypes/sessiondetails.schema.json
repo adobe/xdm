@@ -39,15 +39,17 @@
                 "xdm:contentType": {
                     "title": "Broadcast Content Type",
                     "type": "string",
-                    "description": "The type of the stream delivery.",
+                    "description": "The type of the stream delivery. Available values per Stream Type: Audio: “song”, “podcast”, “audiobook”, “radio”;  Video: “VoD”, “Live”, “Linear”, “UGC”, “DVoD”. Customers can provide custom values for this parameter.",
                     "meta:enum": {
                         "VOD": "Video-on-demand",
                         "Live": "Live streaming",
                         "Linear": "Linear playback of the media asset",
                         "UGC": "User-generated content",
+                        "DVOD": "Downloaded video-on-demand",
                         "Radio": "Radio show",
                         "Podcast": "Audio podcast",
-                        "Audiobook": "Audiobook"
+                        "Audiobook": "Audiobook",
+                        "Song": "Song"
                     }
                 },
                 "xdm:playerName": {

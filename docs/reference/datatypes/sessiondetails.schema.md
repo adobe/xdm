@@ -308,7 +308,7 @@ The number of chapters started during the playback.
 ## xdm:contentType
 ### Broadcast Content Type
 
-The type of the stream delivery.
+The type of the stream delivery. Available values per Stream Type: Audio: “song”, “podcast”, “audiobook”, “radio”;  Video: “VoD”, “Live”, “Linear”, “UGC”, “DVoD”. Customers can provide custom values for this parameter.
 
 `xdm:contentType`
 * is optional
@@ -329,9 +329,11 @@ The type of the stream delivery.
 | `Live` | Live streaming |
 | `Linear` | Linear playback of the media asset |
 | `UGC` | User-generated content |
+| `DVOD` | Downloaded video-on-demand |
 | `Radio` | Radio show |
 | `Podcast` | Audio podcast |
 | `Audiobook` | Audiobook |
+| `Song` | Song |
 
 
 

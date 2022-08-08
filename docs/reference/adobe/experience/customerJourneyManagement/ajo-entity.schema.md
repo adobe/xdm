@@ -40,7 +40,10 @@ Denormalized AJO Entities.
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName": "Marketing Test Journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName": "Email 100Kb Message"
   }
 }
 ```
@@ -415,7 +418,73 @@ AJO Journey Entity Specific Fields
 
 | Property | Type | Required |
 |----------|------|----------|
+| `https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName`| string | Optional |
 | `https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID`| string | Optional |
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName
+##### Journey Action Name
+
+Represents the Journey Label
+
+`https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID
+##### Journey ID
+
+Represents the journey ID
+
+`https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName
+##### Journey Name
+
+Represents the journey name
+
+`https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName Type
+
+
+`string`
+
+
+
+
+
 
 
 

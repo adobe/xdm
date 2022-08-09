@@ -20,6 +20,21 @@ AEP Data Hygiene operations that instruct AEP to delete or modify records in a s
 
 ```json
 {
+  "xdm:action": "updateField",
+  "xdm:targetDatasetID": "1234567890ABCDEFGH",
+  "xdm:operation": {
+    "xdm:updateField": {
+      "xdm:changes": [
+        "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
+        "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"
+      ]
+    }
+  }
+}
+```
+
+```json
+{
   "xdm:batchTime": "2022-03-03T18:57:00+00:00",
   "xdm:action": "deleteIdentity",
   "xdm:targetDatasetId": "1234567890ABCDEFGH",
@@ -44,21 +59,6 @@ AEP Data Hygiene operations that instruct AEP to delete or modify records in a s
   "xdm:extSourceSystemAudit": {
     "xdm:createdBy": "USER111",
     "xdm:createdDate": "2022-03-03T18:57:00+00:00"
-  }
-}
-```
-
-```json
-{
-  "xdm:action": "updateField",
-  "xdm:targetDatasetID": "1234567890ABCDEFGH",
-  "xdm:operation": {
-    "xdm:updateField": {
-      "xdm:changes": [
-        "{\"cid\":\"1234567\",\"address\":{\"city\":\"San Jose\",\"state\":\"CA\",\"postalCode\":\"95110\"}}",
-        "{\"cid\": \"1234567\",\"phone\": {\"mobile\": \"+1-123-456-7890\"}"
-      ]
-    }
   }
 }
 ```

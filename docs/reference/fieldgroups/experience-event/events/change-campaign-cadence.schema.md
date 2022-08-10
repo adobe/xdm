@@ -9,7 +9,7 @@ Use to capture details when campaign cadence changes for a person.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-cadence.schema.json](fieldgroups/experience-event/events/change-campaign-cadence.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-cadence.schema.json](fieldgroups/experience-event/events/change-campaign-cadence.schema.json) |
 
 ## Change Campaign Cadence Example
 ```json

@@ -9,7 +9,7 @@ Use to add a person to the specific campaign.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/add-to-campaign.schema.json](fieldgroups/experience-event/events/add-to-campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/add-to-campaign.schema.json](fieldgroups/experience-event/events/add-to-campaign.schema.json) |
 
 ## Add To Campaign Example
 ```json

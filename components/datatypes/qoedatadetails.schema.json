@@ -50,6 +50,11 @@
           "type": "boolean",
           "description": "The number of times a user quit the video before its start. This metric is set to true only if no content was rendered, regardless of ads."
         },
+        "xdm:framesPerSecond": {
+          "title": "Frames Per Second",
+          "type": "integer",
+          "description": "The current value of the stream frame-rate (in frames per second). The field is mapped to the fps field on the close call and can be accessed through processing rules."
+        },
         "xdm:timeToStart": {
           "title": "Time To Start",
           "type": "integer",

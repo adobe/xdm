@@ -46,7 +46,7 @@
               "enum": ["credit", "debit", "gift", "cash"],
               "meta:enum": {
                 "credit": "Credit",
-                "debit": "Dedit",
+                "debit": "Debit",
                 "gift": "Gift",
                 "cash": "Cash"
               }

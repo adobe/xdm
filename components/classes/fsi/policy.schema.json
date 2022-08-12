@@ -63,10 +63,10 @@
           "meta:titleId": "policy##xdm:type##title##19481",
           "meta:descriptionId": "policy##xdm:type##description##29041",
           "meta:enum": {
-            "home": "home",
-            "automobile": "automobile",
-            "renter": "renter",
-            "boat": "boat"
+            "home": "Home",
+            "automobile": "Automobile",
+            "renter": "Renter",
+            "boat": "Boat"
           }
         },
         "xdm:assignedBeneficiary": {

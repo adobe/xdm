@@ -31,8 +31,8 @@
           "meta:titleId": "aep-hygiene-ops##xdm:action##title##96551",
           "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821",
           "meta:enum": {
-            "deleteIdentity": "deleteIdentity",
-            "updateField": "updateField"
+            "deleteIdentity": "Delete Identity",
+            "updateField": "Update Field"
           }
         },
         "xdm:targetDatasetID": {

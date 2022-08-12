@@ -42,9 +42,9 @@
           "meta:titleId": "ranking-details##xdm:orderEvaluationType##title##8401",
           "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##94251",
           "meta:enum": {
-            "static": "static",
-            "scoringFunction": "scoringFunction",
-            "rankingStrategy": "rankingStrategy"
+            "static": "Static",
+            "scoringFunction": "Scoring Function",
+            "rankingStrategy": "Ranking Strategy"
           }
         },
         "xdm:function": {

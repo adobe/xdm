@@ -56,11 +56,11 @@
               "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
               "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"],
               "meta:enum": {
-                "ACTIVE": "ACTIVE",
-                "INACTIVE": "INACTIVE",
-                "DELETED": "DELETED",
-                "DRAFT": "DRAFT",
-                "REVOKED": "REVOKED"
+                "ACTIVE": "Active",
+                "INACTIVE": "Inactive",
+                "DELETED": "Deleted",
+                "DRAFT": "Draft",
+                "REVOKED": "Revoked"
               }
             }
           }

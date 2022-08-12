@@ -55,11 +55,11 @@
           "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##63401",
           "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##29131",
           "meta:enum": {
-            "ACTIVE": "ACTIVE",
-            "INACTIVE": "INACTIVE",
-            "DELETED": "DELETED",
-            "DRAFT": "DRAFT",
-            "REVOKED": "REVOKED"
+            "ACTIVE": "Active",
+            "INACTIVE": "Inactive",
+            "DELETED": "Deleted",
+            "DRAFT": "Draft",
+            "REVOKED": "Revoked"
           }
         },
         "xdm:labels": {

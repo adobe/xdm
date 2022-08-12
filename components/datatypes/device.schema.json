@@ -170,11 +170,11 @@
           "meta:titleId": "device##xdm:locationPermission##title##6511",
           "meta:descriptionId": "device##xdm:locationPermission##description##36201",
           "meta:enum": {
-            "SYSTEM_LOCATION_DISABLED": "SYSTEM_LOCATION_DISABLED",
-            "NOT_ALLOWED": "NOT_ALLOWED",
-            "ALWAYS_ALLOWED": "ALWAYS_ALLOWED",
-            "FOREGROUND_ALLOWED": "FOREGROUND_ALLOWED",
-            "UNPROMPTED": "UNPROMPTED"
+            "SYSTEM_LOCATION_DISABLED": "System Location Disabled",
+            "NOT_ALLOWED": "Not Allowed",
+            "ALWAYS_ALLOWED": "Always Allowed",
+            "FOREGROUND_ALLOWED": "Foreground Allowed",
+            "UNPROMPTED": "Unprompted"
           }
         }
       }

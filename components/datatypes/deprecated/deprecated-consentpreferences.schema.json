@@ -338,7 +338,7 @@
                 "iot_messages",
                 "social_media",
                 "other",
-                "no_preferred",
+                "none",
                 "unknown"
               ],
               "meta:enum": {
@@ -353,7 +353,7 @@
                 "iot_messages": "IoT Messages",
                 "social_media": "Social Media",
                 "other": "Other",
-                "no_preferred": "No Preferred Channel",
+                "none": "No Preferred Channel",
                 "unknown": "Unknown"
               },
               "meta:titleId": "consent-preferences##xdm:preferredChannel##title##9111",

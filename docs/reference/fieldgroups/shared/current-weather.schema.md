@@ -66,7 +66,10 @@ Current weather conditions for a postal code.
         "xdm:celsius": 2,
         "xdm:fahrenheit": 35
       },
-      "xdm:uvIndex": "3",
+      "xdm:uvIndex": {
+        "xdm:_name": "UV_3",
+        "xdm:value": "3"
+      },
       "xdm:windDirection": 17,
       "xdm:windGust": {
         "xdm:kilometersPerHour": 24,
@@ -206,50 +209,8 @@ Unknown type `object`.
     "xdm:uvIndex": {
       "title": "UV Index",
       "description": "The Weather Channel's proprietary UV index.  The UV Index provides indices of the intensity of the solar radiation level and risk of skin damage due to exposure.\nRange - -2=Not Available, -1=No Report, 0-2=Low, 3-5=Moderate, 6-7=High, 8-10= Very High, 11-16=Extreme.",
-      "type": "string",
-      "enum": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "-2",
-        "-1"
-      ],
-      "meta:enum": {
-        "0": "Low",
-        "1": "Low",
-        "2": "Low",
-        "3": "Moderate",
-        "4": "Moderate",
-        "5": "Moderate",
-        "6": "High",
-        "7": "High",
-        "8": "Very High",
-        "9": "Very High",
-        "10": "Very High",
-        "11": "Extreme",
-        "12": "Extreme",
-        "13": "Extreme",
-        "14": "Extreme",
-        "15": "Extreme",
-        "16": "Extreme",
-        "-2": "Not Available",
-        "-1": "No Report"
-      }
-    },
+      "$ref": "#/definitions/uvIndex",
+   },
     "xdm:windDirection": {
       "title": "Wind Direction",
       "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",

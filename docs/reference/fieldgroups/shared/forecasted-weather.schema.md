@@ -68,7 +68,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -109,7 +112,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -168,7 +174,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -209,7 +218,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -268,7 +280,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -309,7 +324,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -368,7 +386,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -409,7 +430,10 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": "3"
+          "xdm:uvIndex": {
+            "xdm:_name": "UV_3",
+            "xdm:value": "3"
+          }
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -442,7 +466,10 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": "3"
+        "xdm:uvIndex": {
+          "xdm:_name": "UV_3",
+          "xdm:value": "3"
+        }
       },
       "xdm:day10Forecast": {
         "xdm:qpf": {
@@ -470,7 +497,10 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": "3"
+        "xdm:uvIndex": {
+          "xdm:_name": "UV_3",
+          "xdm:value": "3"
+        }
       },
       "xdm:day14Forecast": {
         "xdm:qpf": {
@@ -498,7 +528,10 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": "3"
+        "xdm:uvIndex": {
+          "xdm:_name": "UV_3",
+          "xdm:value": "3"
+        }
       }
     }
   }

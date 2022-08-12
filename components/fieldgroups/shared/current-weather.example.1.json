@@ -51,7 +51,10 @@
         "xdm:celsius": 2,
         "xdm:fahrenheit": 35
       },
-      "xdm:uvIndex": "3",
+      "xdm:uvIndex": {
+        "xdm:_name": "UV_3",
+        "xdm:value": "3"
+      },
       "xdm:windDirection": 17,
       "xdm:windGust": {
         "xdm:kilometersPerHour": 24,
@@ -61,7 +64,7 @@
         "xdm:kilometersPerHour": 15,
         "xdm:milesPerHour": 9
       },
-      "xdm:sunsetTime": "2022-06-30T20:55:39+00:00"
+      "xdm:sunsetTime": 1660324163
     }
   }
 }

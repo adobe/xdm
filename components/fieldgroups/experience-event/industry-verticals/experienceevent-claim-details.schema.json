@@ -57,10 +57,10 @@
               "meta:titleId": "experienceevent-claim-details##xdm:status##title##72781",
               "meta:descriptionId": "experienceevent-claim-details##xdm:status##description##93101",
               "meta:enum": {
-                "initiated": "initiated",
-                "in progress": "in progress",
-                "approved": "approved",
-                "declined": "declined"
+                "initiated": "Initiated",
+                "in progress": "In Progress",
+                "approved": "Approved",
+                "declined": "Declined"
               }
             },
             "xdm:type": {

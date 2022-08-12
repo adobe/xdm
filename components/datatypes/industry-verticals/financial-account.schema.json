@@ -43,10 +43,10 @@
           "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
           "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951",
           "meta:enum": {
-            "checking": "checking",
-            "savings": "savings",
-            "retirement": "retirement",
-            "investment": "investment"
+            "checking": "Checking",
+            "savings": "Savings",
+            "retirement": "Retirement",
+            "investment": "Investment"
           }
         }
       }

@@ -68,11 +68,11 @@
               "meta:titleId": "experienceevent-reservation-search##xdm:rateType##title##78831",
               "meta:descriptionId": "experienceevent-reservation-search##xdm:rateType##description##30871",
               "meta:enum": {
-                "aaa": "aaa",
-                "aarp": "aarp",
-                "senior": "senior",
-                "government": "government",
-                "corporate": "corporate"
+                "aaa": "AAA",
+                "aarp": "AARP",
+                "senior": "Senior",
+                "government": "Government",
+                "corporate": "Corporate"
               }
             },
             "xdm:startDate": {

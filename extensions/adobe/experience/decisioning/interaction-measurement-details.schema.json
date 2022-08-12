@@ -28,10 +28,10 @@
               "meta:titleId": "interaction-measurement##xdm:mapping##title##48401",
               "meta:descriptionId": "interaction-measurement##xdm:mapping##description##25811",
               "meta:enum": {
-                "direct": "direct",
-                "eventTypeValue": "eventTypeValue",
-                "fieldValue": "fieldValue",
-                "predicate": "predicate"
+                "direct": "Direct",
+                "eventTypeValue": "Event Type Value",
+                "fieldValue": "Field Value",
+                "predicate": "Predicate"
               }
             },
             "xdm:value": {

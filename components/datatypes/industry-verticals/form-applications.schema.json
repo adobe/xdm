@@ -57,10 +57,10 @@
           "meta:titleId": "form-applications##xdm:status##title##60131",
           "meta:descriptionId": "form-applications##xdm:status##description##94351",
           "meta:enum": {
-            "initiated": "initiated",
-            "in progress": "in progress",
-            "approved": "approved",
-            "declined": "declined"
+            "initiated": "Initiated",
+            "in progress": "In Progress",
+            "approved": "Approved",
+            "declined": "Declined"
           }
         },
         "xdm:statusUpdate": {

@@ -37,10 +37,10 @@
           "meta:titleId": "claim##xdm:status##title##47911",
           "meta:descriptionId": "claim##xdm:status##description##98791",
           "meta:enum": {
-            "initiated": "initiated",
-            "in progress": "in progress",
-            "approved": "approved",
-            "declined": "declined"
+            "initiated": "Initiated",
+            "in progress": "In Progress",
+            "approved": "Approved",
+            "declined": "Declined"
           }
         },
         "xdm:policyID": {

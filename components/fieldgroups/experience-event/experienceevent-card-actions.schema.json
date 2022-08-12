@@ -96,11 +96,11 @@
                   "meta:titleId": "experienceevent-card-actions##xdm:cardOrderType##title##45061",
                   "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderType##description##37801",
                   "meta:enum": {
-                    "new": "new",
-                    "lost": "lost",
-                    "stolen": "stolen",
-                    "never received": "never received",
-                    "damaged": "damaged"
+                    "new": "New",
+                    "lost": "Lost",
+                    "stolen": "Stolen",
+                    "never received": "Never Received",
+                    "damaged": "Damaged"
                   }
                 },
                 "xdm:cardType": {
@@ -120,14 +120,14 @@
                   "meta:titleId": "experienceevent-card-actions##xdm:cardType##title##35641",
                   "meta:descriptionId": "experienceevent-card-actions##xdm:cardType##description##82811",
                   "meta:enum": {
-                    "credit": "credit",
-                    "debit": "debit",
-                    "prepaid": "prepaid",
-                    "paypal": "paypal",
-                    "atm": "atm",
-                    "virtual": "virtual",
-                    "hsa": "hsa",
-                    "fsa": "fsa"
+                    "credit": "Credit",
+                    "debit": "Debit",
+                    "prepaid": "Prepaid",
+                    "paypal": "Paypal",
+                    "atm": "ATM",
+                    "virtual": "Virtual",
+                    "hsa": "HSA",
+                    "fsa": "FSA"
                   }
                 },
                 "xdm:cardUnlocked": {

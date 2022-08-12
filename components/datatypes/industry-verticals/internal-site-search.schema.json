@@ -109,8 +109,8 @@
           "meta:titleId": "internal-site-search##xdm:radiusType##title##92511",
           "meta:descriptionId": "internal-site-search##xdm:radiusType##description##67451",
           "meta:enum": {
-            "miles": "miles",
-            "kilometers": "kilometers"
+            "miles": "Miles",
+            "kilometers": "Kilometers"
           }
         },
         "xdm:term": {
@@ -156,8 +156,8 @@
           "meta:titleId": "internal-site-search##xdm:sortOrder##title##94521",
           "meta:descriptionId": "internal-site-search##xdm:sortOrder##description##8641",
           "meta:enum": {
-            "ascending": "ascending",
-            "descending": "descending"
+            "ascending": "Ascending",
+            "descending": "Descending"
           }
         },
         "xdm:sortType": {
@@ -176,13 +176,13 @@
           "meta:titleId": "internal-site-search##xdm:sortType##title##34431",
           "meta:descriptionId": "internal-site-search##xdm:sortType##description##18021",
           "meta:enum": {
-            "price: low to high": "price: low to high",
-            "price: high to low": "price: high to low",
-            "featured": "featured",
-            "best match": "best match",
-            "average customer review": "average customer review",
-            "discount": "discount",
-            "new items": "new items"
+            "price: low to high": "Price: Low to High",
+            "price: high to low": "Price: High to Low",
+            "featured": "Featured",
+            "best match": "Best Match",
+            "average customer review": "Average Customer Review",
+            "discount": "Discount",
+            "new items": "New Items"
           }
         }
       }

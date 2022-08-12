@@ -76,7 +76,7 @@ Current weather conditions for a postal code.
         "xdm:kilometersPerHour": 15,
         "xdm:milesPerHour": 9
       },
-      "xdm:sunsetTime": "2022-06-30T20:55:39+00:00"
+      "xdm:sunsetTime": 1656622539
     }
   }
 }

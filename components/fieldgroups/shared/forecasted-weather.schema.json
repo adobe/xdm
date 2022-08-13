@@ -207,9 +207,9 @@
           "type": "string",
           "enum": ["rain", "snow", "precip"],
           "meta:enum": {
-            "rain": "rain",
-            "snow": "snow",
-            "precip": "precip"
+            "rain": "Rain",
+            "snow": "Snow",
+            "precip": "Precip"
           }
         },
         "qpf": {

@@ -82,16 +82,16 @@
               "meta:titleId": "experienceevent-claim-details##xdm:type##title##71331",
               "meta:descriptionId": "experienceevent-claim-details##xdm:type##description##24821",
               "meta:enum": {
-                "homeowners": "homeowners",
-                "automobile": "automobile",
-                "renters": "renters",
-                "third party automobile": "third party automobile",
-                "third party home": "third party home",
-                "life": "life",
-                "health": "health",
-                "dental": "dental",
-                "flood": "flood",
-                "earthquake": "earthquake"
+                "homeowners": "Homeowners",
+                "automobile": "Automobile",
+                "renters": "Renters",
+                "third party automobile": "Third Party Automobile",
+                "third party home": "Third Party Home",
+                "life": "Life",
+                "health": "Health",
+                "dental": "Dental",
+                "flood": "Flood",
+                "earthquake": "Earthquake"
               }
             },
             "xdm:policyID": {

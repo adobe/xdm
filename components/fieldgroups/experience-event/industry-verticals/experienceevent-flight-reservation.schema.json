@@ -301,10 +301,10 @@
                         "meta:titleId": "experienceevent-flight-reservation##xdm:checkInMethod##title##99891",
                         "meta:descriptionId": "experienceevent-flight-reservation##xdm:checkInMethod##description##68601",
                         "meta:enum": {
-                          "counter": "counter",
-                          "mobile": "mobile",
-                          "web": "web",
-                          "kiosk": "kiosk"
+                          "counter": "Counter",
+                          "mobile": "Mobile",
+                          "web": "Web",
+                          "kiosk": "Kiosk"
                         }
                       },
                       "xdm:checkInProcess": {

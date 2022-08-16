@@ -41,6 +41,7 @@ XDM Product List Item extension properties specific to Adobe Analytics that impl
 | [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmpricetotal) |
 | [xdm:product](#xdmproduct) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproduct) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductaddmethod) |
+| [xdm:productImageUrl](#xdmproductimageurl) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductimageurl) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmquantity) |
 | [xdm:selectedOptions](#xdmselectedoptions) | reference | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmselectedoptions) |
 | [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmunitofmeasurecode) |
@@ -405,6 +406,26 @@ The method that was used to add a product item to the list by the visitor. Set w
 * defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductaddmethod)
 
 ### xdm:productAddMethod Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:productImageUrl
+### Product Image URL
+
+Product main image URL.
+
+`xdm:productImageUrl`
+* is optional
+* type: `string`
+* defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductimageurl)
+
+### xdm:productImageUrl Type
 
 
 `string`

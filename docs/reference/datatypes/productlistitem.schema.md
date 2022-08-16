@@ -47,6 +47,7 @@ The product list item represents a product selected by a customer with specific 
 | [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | Product list item (this schema) |
 | [xdm:product](#xdmproduct) | `string` | Optional | Product list item (this schema) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | Product list item (this schema) |
+| [xdm:productImageUrl](#xdmproductimageurl) | `string` | Optional | Product list item (this schema) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | Product list item (this schema) |
 | [xdm:selectedOptions](#xdmselectedoptions) | reference | Optional | Product list item (this schema) |
 | [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product Measurement](../fieldgroups/product/product-measurement.schema.md#xdmunitofmeasurecode) |
@@ -224,6 +225,26 @@ The method that was used to add a product item to the list by the visitor. Set w
 * defined in this schema
 
 ### xdm:productAddMethod Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:productImageUrl
+### Product Image URL
+
+Product main image URL.
+
+`xdm:productImageUrl`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:productImageUrl Type
 
 
 `string`

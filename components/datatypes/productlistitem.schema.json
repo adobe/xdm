@@ -43,6 +43,11 @@
           "meta:titleId": "productlistitem##xdm:name##title##6621",
           "meta:descriptionId": "productlistitem##xdm:name##description##11111"
         },
+        "xdm:productImageUrl": {
+          "title": "Product Image URL",
+          "type": "string",
+          "description": "Product main image URL."
+        },
         "xdm:productAddMethod": {
           "title": "Product add method",
           "type": "string",

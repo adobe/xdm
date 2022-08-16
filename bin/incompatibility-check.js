@@ -311,6 +311,29 @@ function validate(o, file) {
             }
         }
 
+        if (file.indexOf("../schemas/descriptors/") == -1) {//enum validation
+            if (o[i] && o[i].hasOwnProperty('enum') && o[i].hasOwnProperty('meta:enum')) {
+                var enumSet = new Set();
+                var metaEnumSet = new Set();
+
+                for (let j in o[i]["enum"]) {
+                    enumSet.add(o[i]["enum"][j])
+                }
+
+                for (let k in o[i]["meta:enum"]) {
+                    metaEnumSet.add(k)
+                }
+
+                const eqSet = (xs, ys) =>
+                    xs.size === ys.size && [...xs].every((x) => ys.has(x));
+
+                if (!eqSet(enumSet, metaEnumSet)) {
+                    errLogs.push(file + " validation error!!! Mismatch between enum and meta:enum for property " + i + "\n");
+                }
+            } else if (o[i] && o[i].hasOwnProperty('enum') && !o[i].hasOwnProperty('meta:enum')) {
+                errLogs.push(file + " validation error!!! Missing meta:enum for property " + i + "\n");
+            }
+        }
 
         if (o[i] !== null && typeof(o[i]) == "object") {
             //going one step down in the object tree!!

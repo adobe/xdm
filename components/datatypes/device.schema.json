@@ -168,7 +168,14 @@
             "UNPROMPTED"
           ],
           "meta:titleId": "device##xdm:locationPermission##title##6511",
-          "meta:descriptionId": "device##xdm:locationPermission##description##36201"
+          "meta:descriptionId": "device##xdm:locationPermission##description##36201",
+          "meta:enum": {
+            "SYSTEM_LOCATION_DISABLED": "System Location Disabled",
+            "NOT_ALLOWED": "Not Allowed",
+            "ALWAYS_ALLOWED": "Always Allowed",
+            "FOREGROUND_ALLOWED": "Foreground Allowed",
+            "UNPROMPTED": "Unprompted"
+          }
         }
       }
     },

@@ -62,7 +62,14 @@
                                 "DELETED",
                                 "DRAFT",
                                 "REVOKED"
-                            ]
+                            ],
+                            "meta:enum": {
+                                "ACTIVE": "Active",
+                                "INACTIVE": "Inactive",
+                                "DELETED": "Deleted",
+                                "DRAFT": "Draft",
+                                "REVOKED": "Revoked"
+                            }
                         }
                     }
                 }

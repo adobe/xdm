@@ -686,9 +686,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### precipType Known Values
 | Value | Description |
 |-------|-------------|
-| `rain` |  |
-| `snow` |  |
-| `precip` |  |
+| `rain` | Rain |
+| `snow` | Snow |
+| `precip` | Precip |
 
 
 

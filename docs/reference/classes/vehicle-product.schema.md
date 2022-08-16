@@ -121,9 +121,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:inventoryType Known Values
 | Value | Description |
 |-------|-------------|
-| `new` |  |
-| `used` |  |
-| `certified preowned` |  |
+| `new` | New |
+| `used` | Used |
+| `certified preowned` | certified preowned |
 
 
 

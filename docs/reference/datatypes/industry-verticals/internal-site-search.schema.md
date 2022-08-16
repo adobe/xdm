@@ -280,8 +280,8 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:radiusType Known Values
 | Value | Description |
 |-------|-------------|
-| `miles` |  |
-| `kilometers` |  |
+| `miles` | Miles |
+| `kilometers` | Kilometers |
 
 
 
@@ -428,8 +428,8 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:sortOrder Known Values
 | Value | Description |
 |-------|-------------|
-| `ascending` |  |
-| `descending` |  |
+| `ascending` | Ascending |
+| `descending` | Descending |
 
 
 
@@ -449,13 +449,13 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:sortType Known Values
 | Value | Description |
 |-------|-------------|
-| `price: low to high` |  |
-| `price: high to low` |  |
-| `featured` |  |
-| `best match` |  |
-| `average customer review` |  |
-| `discount` |  |
-| `new items` |  |
+| `price: low to high` | Price: Low to High |
+| `price: high to low` | Price: High to Low |
+| `featured` | Featured |
+| `best match` | Best Match |
+| `average customer review` | Average Customer Review |
+| `discount` | Discount |
+| `new items` | New Items |
 
 
 

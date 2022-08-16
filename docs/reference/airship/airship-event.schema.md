@@ -221,7 +221,11 @@ Unknown type `object`.
         "commercial"
       ],
       "meta:titleId": "airship-event##airship:messageType##title##79981",
-      "meta:descriptionId": "airship-event##airship:messageType##description##49551"
+      "meta:descriptionId": "airship-event##airship:messageType##description##49551",
+      "meta:enum": {
+        "unsubscribe": "Unsubscribe",
+        "commercial": "Commercial"
+      }
     },
     "airship:registrationType": {
       "title": "Registration Type",
@@ -438,8 +442,8 @@ The value of this property **must** be equal to one of the [known values below](
 ##### airship:regionAction Known Values
 | Value | Description |
 |-------|-------------|
-| `enter` |  |
-| `exit` |  |
+| `enter` | Enter |
+| `exit` | Exit |
 
 
 
@@ -905,11 +909,11 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:locationPermission Known Values
 | Value | Description |
 |-------|-------------|
-| `SYSTEM_LOCATION_DISABLED` |  |
-| `NOT_ALLOWED` |  |
-| `ALWAYS_ALLOWED` |  |
-| `FOREGROUND_ALLOWED` |  |
-| `UNPROMPTED` |  |
+| `SYSTEM_LOCATION_DISABLED` | System Location Disabled |
+| `NOT_ALLOWED` | Not Allowed |
+| `ALWAYS_ALLOWED` | Always Allowed |
+| `FOREGROUND_ALLOWED` | Foreground Allowed |
+| `UNPROMPTED` | Unprompted |
 
 
 

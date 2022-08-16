@@ -168,7 +168,12 @@
                         "rain",
                         "snow",
                         "precip"
-                    ]
+                    ],
+                    "meta:enum": {
+                        "rain": "Rain",
+                        "snow": "Snow",
+                        "precip": "Precip"
+                    }
                 },
                 "qpf": {
                     "title": "QPF",

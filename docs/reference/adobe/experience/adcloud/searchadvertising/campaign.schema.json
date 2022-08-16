@@ -111,11 +111,11 @@
                         "Day of Week"
                     ],
                     "meta:enum": {
-                        "daily": "Daily",
+                        "Daily": "Daily",
                         "Monthly": "Monthly",
                         "Lifetime": "Lifetime",
-                        "Daily Spend Until Depleted": "Daily spend until depleted",
-                        "Day of week": "Day of week"
+                        "Daily Spend Until Depleted": "Daily Spend Until Depleted",
+                        "Day of week": "Day of Week"
                     },
                     "meta:titleId": "campaign##xdm:budgetType##title##76211",
                     "meta:descriptionId": "campaign##xdm:budgetType##description##19941"

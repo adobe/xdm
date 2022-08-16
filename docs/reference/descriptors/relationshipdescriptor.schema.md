@@ -161,22 +161,6 @@ This changes child.json to:
 
 ```json
 {
-  "@id": "https://example.com/descriptors/1",
-  "@type": "xdm:descriptorOneToOne",
-  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
-  "xdm:sourceProperty": "/xdm:identities",
-  "xdm:sourceVersion": 1,
-  "xdm:sourceItem": {
-    "xdm:type": "https://example.com/crmID"
-  },
-  "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
-  "xdm:destinationProperty": "/xdm:crmID",
-  "xdm:destinationVersion": 1
-}
-```
-
-```json
-{
   "@type": "xdm:descriptorOneToOne",
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-privacy",
   "xdm:sourceProperty": [
@@ -191,6 +175,22 @@ This changes child.json to:
   ],
   "xdm:destinationVersion": 1,
   "version": "1"
+}
+```
+
+```json
+{
+  "@id": "https://example.com/descriptors/1",
+  "@type": "xdm:descriptorOneToOne",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
+  "xdm:sourceProperty": "/xdm:identities",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceItem": {
+    "xdm:type": "https://example.com/crmID"
+  },
+  "xdm:destinationSchema": "https://ns.adobe.com/extensions/12345678/customers",
+  "xdm:destinationProperty": "/xdm:crmID",
+  "xdm:destinationVersion": 1
 }
 ```
 

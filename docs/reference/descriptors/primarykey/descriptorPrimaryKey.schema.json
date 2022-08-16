@@ -48,7 +48,8 @@
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
-                "/_id"
+                "/_id",
+                "/personID"
             ]
         },
         {
@@ -56,8 +57,7 @@
             "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
             "xdm:sourceVersion": 1,
             "xdm:sourceProperty": [
-                "/_id",
-                "/personID"
+                "/_id"
             ]
         }
     ]

@@ -22,6 +22,12 @@
     "https://ns.adobe.com/experience/workfront/portfolio",
     "https://ns.adobe.com/experience/workfront/optask"
   ],
+  "definitions": {
+    "wfobjects": {
+      "properties": {
+      }
+    }
+  },
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/experience/workfront/task"

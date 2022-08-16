@@ -472,8 +472,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `email` | Email |
 | `social` | Social network |
 | `unknown` | Unknown |
-| `news` | Usenet newsgroup |
-| `usenet` |  |
+| `usenet` | Usenet newsgroup |
 
 
 

@@ -86,6 +86,16 @@
               "title": "Channel's variant ID",
               "type": "string",
               "description": "Is not frozen and might remain same between different versions of message publication."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/_id": {
+              "title": "The ID uniquely identifies the channel.",
+              "type": "string",
+              "description": "Each specific experience channel defines a constant `@id`."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/template": {
+              "title": "The json template used in the message",
+              "type": "string",
+              "description": "The json template used while sending the message"
             }
           }
         },
@@ -103,6 +113,16 @@
               "title": "Experiment ID",
               "type": "string",
               "description": "This along with treatmentId has one to one mapping with messageID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/experimentName": {
+              "title": "Experiment Name",
+              "type": "string",
+              "description": "Name of the experience"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentName": {
+              "title": "Treatment Name",
+              "type": "string",
+              "description": "Name of the treatment"
             }
           }
         },
@@ -130,8 +150,24 @@
               "title": "Journey Action Name",
               "type": "string",
               "description": "Represents the Journey Label"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionID": {
+              "title": "Journey Action ID",
+              "type": "string",
+              "description": "Represents the Journey Action ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyNameAndVersion": {
+              "title": "Journey Name and Version",
+              "type": "string",
+              "description": "Represents the concatenated values of Journey Name and Version"
             }
           }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/ajo/createdAt": {
+          "title": "Entity Creation Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "Time at which entity was created/published"
         }
       }
     }

@@ -19,7 +19,7 @@
       "properties": {
         "https://ns.adobe.com/experience/decisioning/proposition-event/send": {
           "title": "send",
-          "description": "Proposition was sent to the user. This does not guarantee the proposition arrived.",
+          "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
           "type": "integer"
         },
         "https://ns.adobe.com/experience/decisioning/proposition-event/display": {

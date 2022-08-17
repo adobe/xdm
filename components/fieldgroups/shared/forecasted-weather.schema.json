@@ -228,7 +228,7 @@
         "uvIndex": {
           "title": "UV Index",
           "description": "Maximum UV index for the 12 hour forecast period.",
-          "$ref": "#/definitions/uvIndex",
+          "$ref": "#/definitions/uvIndex"
         }
       }
     },

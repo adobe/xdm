@@ -117,7 +117,7 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/experimentName": {
               "title": "Experiment Name",
               "type": "string",
-              "description": "Name of the experience"
+              "description": "Name of the experiment"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentName": {
               "title": "Treatment Name",

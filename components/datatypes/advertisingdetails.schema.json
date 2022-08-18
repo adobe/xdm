@@ -89,14 +89,7 @@
           "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
         }
       },
-      "required": [
-        "xdm:ID",
-        "xdm:length",
-        "xdm:podPosition",
-        "xdm:playerName",
-        "xdm:isCompleted",
-        "xdm:isStarted"
-      ]
+      "required": ["xdm:ID", "xdm:length", "xdm:podPosition", "xdm:playerName"]
     }
   },
   "allOf": [

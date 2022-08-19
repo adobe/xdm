@@ -79,7 +79,7 @@ Current weather conditions for a postal code.
         "xdm:kilometersPerHour": 15,
         "xdm:milesPerHour": 9
       },
-      "xdm:sunsetTime": 1656622539
+      "xdm:sunsetTime": 1660324163
     }
   }
 }
@@ -209,8 +209,8 @@ Unknown type `object`.
     "xdm:uvIndex": {
       "title": "UV Index",
       "description": "The Weather Channel's proprietary UV index.  The UV Index provides indices of the intensity of the solar radiation level and risk of skin damage due to exposure.\nRange - -2=Not Available, -1=No Report, 0-2=Low, 3-5=Moderate, 6-7=High, 8-10= Very High, 11-16=Extreme.",
-      "$ref": "#/definitions/uvIndex",
-   },
+      "$ref": "#/definitions/uvIndex"
+    },
     "xdm:windDirection": {
       "title": "Wind Direction",
       "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
@@ -227,8 +227,7 @@ Unknown type `object`.
       "$ref": "#/definitions/speed"
     },
     "xdm:sunsetTime": {
-      "format": "date-time",
-      "type": "string",
+      "type": "integer",
       "description": "Sunset time in UTC.",
       "title": "Sunset Time"
     }
@@ -250,6 +249,7 @@ Unknown type `object`.
 
 | Property | Type | Group |
 |----------|------|-------|
+| [xdm:_name](#xdm_name) | `string` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/uvIndex` |
 | [xdm:celsius](#xdmcelsius) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature` |
 | [xdm:centimeters](#xdmcentimeters) | `number` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall` |
 | [xdm:fahrenheit](#xdmfahrenheit) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature` |
@@ -258,6 +258,26 @@ Unknown type `object`.
 | [xdm:kilometersPerHour](#xdmkilometersperhour) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed` |
 | [xdm:milesPerHour](#xdmmilesperhour) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed` |
 | [xdm:millimeters](#xdmmillimeters) | `number` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation` |
+| [xdm:value](#xdmvalue) | `string` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/uvIndex` |
+
+## xdm:_name
+
+Index name
+
+`xdm:_name`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:_name Type
+
+
+`string`
+
+
+
+
+
 
 ## xdm:celsius
 ### Celsius
@@ -413,6 +433,25 @@ Precipitation in millimeters
 
 
 `number`
+
+
+
+
+
+
+## xdm:value
+
+Index value
+
+`xdm:value`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:value Type
+
+
+`string`
 
 
 

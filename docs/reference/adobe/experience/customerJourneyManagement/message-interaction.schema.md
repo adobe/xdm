@@ -158,8 +158,8 @@ The value of this property **must** be equal to one of the [known values below](
 | `unsubscribe` | Unsubscribed from messages. |
 | `spam_complaint` | Message is marked as spam by the user. |
 | `subscription` | Subscribe / Unsubscribe to a subscription list. |
-| `submit` |  |
-| `visit` |  |
+| `submit` | Submit message. |
+| `visit` | Message visited. |
 
 
 

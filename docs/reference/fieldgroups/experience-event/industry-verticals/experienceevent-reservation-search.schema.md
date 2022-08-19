@@ -169,11 +169,11 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:rateType Known Values
 | Value | Description |
 |-------|-------------|
-| `aaa` |  |
-| `aarp` |  |
-| `senior` |  |
-| `government` |  |
-| `corporate` |  |
+| `aaa` | AAA |
+| `aarp` | AARP |
+| `senior` | Senior |
+| `government` | Government |
+| `corporate` | Corporate |
 
 
 

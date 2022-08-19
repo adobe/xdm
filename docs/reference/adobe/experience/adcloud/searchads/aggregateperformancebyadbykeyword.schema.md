@@ -241,13 +241,12 @@ The value of this property **must** be equal to one of the [known values below](
 | `Product Group` | Product Group |
 | `Content` | Content |
 | `SiteCpc` | SiteCpc |
-| `Sitecpm` | SiteCpm |
+| `SiteCpm` | SiteCpm |
 | `Category` | Category |
 | `Search` | Search |
 | `Adgroup` | Adgroup |
 | `Dynamic Ad Target` | Dynamic Ad Target |
 | `Unknown` | Unknown |
-| `SiteCpm` |  |
 
 
 

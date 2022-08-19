@@ -129,10 +129,8 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:adDeliveryType Known Values
 | Value | Description |
 |-------|-------------|
-| `standard` | Standard |
-| `accelerated` | Accelerated |
-| `Standard` |  |
-| `Accelerated` |  |
+| `Standard` | Standard |
+| `Accelerated` | Accelerated |
 
 
 
@@ -172,13 +170,11 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:budgetType Known Values
 | Value | Description |
 |-------|-------------|
-| `daily` | Daily |
+| `Daily` | Daily |
 | `Monthly` | Monthly |
 | `Lifetime` | Lifetime |
-| `Daily Spend Until Depleted` | Daily spend until depleted |
-| `Day of week` | Day of week |
-| `Daily` |  |
-| `Day of Week` |  |
+| `Daily Spend Until Depleted` | Daily Spend Until Depleted |
+| `Day of Week` | Day of Week |
 
 
 

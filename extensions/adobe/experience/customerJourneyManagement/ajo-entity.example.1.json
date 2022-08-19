@@ -18,11 +18,12 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/_id": "https://ns.adobe.com/xdm/channels/email",
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/template": "Hi {{person.firstName}}"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456",
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/experimentName": "Hero page experiement",
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentName": "The first treatment"
+
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentID": "123456",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/experimentName": "Hero page experiment",
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentName": "The first treatment"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",

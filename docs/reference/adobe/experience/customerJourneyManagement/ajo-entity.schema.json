@@ -91,7 +91,7 @@
                         }
                     }
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment": {
                     "title": "AJO Experiment Entity Specific Fields",
                     "type": "object",
                     "description": "AJO Experiment Entity Specific Fields",
@@ -166,8 +166,8 @@
                 "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
                 "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456"
+            "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentID": "123456"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
                 "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",

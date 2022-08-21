@@ -36,8 +36,8 @@ Denormalized AJO Entities.
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b"
   },
-  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment/treatmentID": "123456"
+  "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement/treatmentID": "123456"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey": {
     "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
@@ -54,7 +54,7 @@ Denormalized AJO Entities.
 |----------|------|----------|------------|
 | [https://ns.adobe.com/experience/customerJourneyManagement/ajo/campaign](#httpsnsadobecomexperiencecustomerjourneymanagementajocampaign) | `object` | Optional | Adobe Profile - AJO Entities (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/ajo/channel](#httpsnsadobecomexperiencecustomerjourneymanagementajochannel) | `object` | Optional | Adobe Profile - AJO Entities (this schema) |
-| [https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment](#httpsnsadobecomexperiencecustomerjourneymanagementajoexperiment) | `object` | Optional | Adobe Profile - AJO Entities (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement](#httpsnsadobecomexperiencecustomerjourneymanagementajoexperiement) | `object` | Optional | Adobe Profile - AJO Entities (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey](#httpsnsadobecomexperiencecustomerjourneymanagementajojourney) | `object` | Optional | Adobe Profile - AJO Entities (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -332,17 +332,17 @@ Is not frozen and might remain same between different versions of message public
 
 
 
-## https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment
+## https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement
 ### AJO Experiment Entity Specific Fields
 
 AJO Experiment Entity Specific Fields
 
-`https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment`
+`https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement`
 * is optional
 * type: `object`
 * defined in this schema
 
-### https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiment Type
+### https://ns.adobe.com/experience/customerJourneyManagement/ajo/experiement Type
 
 
 `object` with following properties:

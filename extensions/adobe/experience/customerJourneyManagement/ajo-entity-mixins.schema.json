@@ -7,8 +7,8 @@
   ],
   "$id": "https://ns.adobe.com/xdm/ajo",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Adobe Profile - AJO Entities",
-  "description": "Denormalized AJO Entities.",
+  "title": "AJO Entity Fields",
+  "description": "A set of meta-data fields related to various AJO entities which are related to message sent to profile.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": false,
@@ -24,7 +24,7 @@
             "https://ns.adobe.com/xdm/ajo/campaign/campaignID": {
               "title": "AJO Campaign ID",
               "type": "string",
-              "description": "AJO Campaign ID. Keeps unchanged even after republishing."
+              "description": "AJO Campaign ID. Remains unchanged even after republishing."
             },
             "https://ns.adobe.com/xdm/ajo/campaign/campaignVersionID": {
               "title": "AJO Campaign Version ID",
@@ -85,7 +85,7 @@
             "https://ns.adobe.com/xdm/ajo/channelDetails/baseMessageID": {
               "title": "Base Message ID",
               "type": "string",
-              "description": "The parent Message ID of a MessageExecution originating this message."
+              "description": "Represents the base Message ID from which the published message is derived."
             },
             "https://ns.adobe.com/xdm/ajo/channelDetails/messagePublicationID": {
               "title": "Message Publication ID",

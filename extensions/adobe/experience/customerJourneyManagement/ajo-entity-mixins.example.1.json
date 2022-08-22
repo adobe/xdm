@@ -1,37 +1,40 @@
 {
-  "https://ns.adobe.com/experience/ajo/campaign": {
-    "https://ns.adobe.com/experience/ajo/campaign/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
-    "https://ns.adobe.com/experience/ajo/campaign/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
-    "https://ns.adobe.com/experience/ajo/campaign/name": "Marketing Campaign",
-    "https://ns.adobe.com/experience/ajo/campaign/description": "Used for sending email/push messages"
+  "https://ns.adobe.com/xdm/ajo/campaign": {
+    "https://ns.adobe.com/xdm/ajo/campaign/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
+    "https://ns.adobe.com/xdm/ajo/campaign/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
+    "https://ns.adobe.com/xdm/ajo/campaign/name": "Marketing Campaign",
+    "https://ns.adobe.com/xdm/ajo/campaign/description": "Used for sending email/push messages",
+    "https://ns.adobe.com/xdm/ajo/campaign/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
   },
-  "https://ns.adobe.com/experience/ajo/channel": {
-    "https://ns.adobe.com/experience/ajo/channel/email": {
-      "https://ns.adobe.com/experience/ajo/channel/email/subject": "Hi there, season end sale is here!"
+  "https://ns.adobe.com/xdm/ajo/channelDetails": {
+    "https://ns.adobe.com/xdm/ajo/channelDetails/email": {
+      "https://ns.adobe.com/xdm/ajo/channelDetails/email/subject": "Hi there, season end sale is here!"
     },
-    "https://ns.adobe.com/experience/ajo/channel/push": {
-      "https://ns.adobe.com/experience/ajo/channel/push/title": "Hi, You've got a coupon"
+    "https://ns.adobe.com/xdm/ajo/channelDetails/push": {
+      "https://ns.adobe.com/xdm/ajo/channelDetails/push/title": "Hi, You've got a coupon"
     },
-    "https://ns.adobe.com/experience/ajo/channel/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/ajo/channel/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/ajo/channel/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/ajo/channel/_id": "https://ns.adobe.com/xdm/channels/email",
-    "https://ns.adobe.com/experience/ajo/channel/template": "Hi {{person.firstName}}"
+    "https://ns.adobe.com/xdm/ajo/channelDetails/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/channelDetails/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/channelDetails/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/channelDetails/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/channelDetails/channel": {
+      "@id": "https://ns.adobe.com/xdm/channels/email"
+    },
+    "https://ns.adobe.com/xdm/ajo/channelDetails/template": "Hi {{person.firstName}}",
+    "https://ns.adobe.com/xdm/ajo/channelDetails/messagePublishedAt": "2021-06-25T15:52:25+00:00"
   },
-
-  "https://ns.adobe.com/experience/ajo/experiment": {
-    "https://ns.adobe.com/experience/ajo/experiment/treatmentID": "123456",
-    "https://ns.adobe.com/experience/ajo/experiment/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
-    "https://ns.adobe.com/experience/ajo/experiment/experimentName": "Hero page experiment",
-    "https://ns.adobe.com/experience/ajo/experiment/treatmentName": "The first treatment"
+  "https://ns.adobe.com/xdm/ajo/experiment": {
+    "https://ns.adobe.com/xdm/ajo/experiment/treatmentID": "123456",
+    "https://ns.adobe.com/xdm/ajo/experiment/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
+    "https://ns.adobe.com/xdm/ajo/experiment/experimentName": "Hero page experiment",
+    "https://ns.adobe.com/xdm/ajo/experiment/treatmentName": "The first treatment"
   },
-  "https://ns.adobe.com/experience/ajo/journey": {
-    "https://ns.adobe.com/experience/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/ajo/journey/journeyName": "Marketing Test Journey",
-    "https://ns.adobe.com/experience/ajo/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/ajo/journey/journeyActionName": "Email 100Kb Message",
-    "https://ns.adobe.com/experience/ajo/journey/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
-    "https://ns.adobe.com/experience/ajo/journey/journeyNameAndVersion": "Email 100Kb Message (1b)"
-  },
-  "https://ns.adobe.com/experience/ajo/createdAt": "2021-06-25T15:52:25+00:00"
+  "https://ns.adobe.com/xdm/ajo/journey": {
+    "https://ns.adobe.com/xdm/ajo/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/journey/journeyName": "Marketing Test Journey",
+    "https://ns.adobe.com/xdm/ajo/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/xdm/ajo/journey/journeyActionName": "Email 100Kb Message",
+    "https://ns.adobe.com/xdm/ajo/journey/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
+    "https://ns.adobe.com/xdm/ajo/journey/journeyNameAndVersion": "Email 100Kb Message (1b)"
+  }
 }

@@ -23,7 +23,7 @@
           "title": "List Of Media Collection Downloaded Content Events",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/mediaCollectionDetails"
+            "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDownloadedEvent"
           },
           "description": "The list of media collection downloaded content events."
         }

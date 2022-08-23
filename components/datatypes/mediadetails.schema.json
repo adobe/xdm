@@ -5,21 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/mediaCollectionDetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media collection details information",
+  "title": "Media details information",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Media collection details information.",
+  "description": "Media details information.",
   "definitions": {
-    "mediaCollectionDetails": {
+    "mediaDetails": {
       "properties": {
-        "xdm:timeSeries": {
-          "title": "Time Series",
-          "$ref": "https://ns.adobe.com/xdm/data/time-series",
-          "description": "Time series schema containing timestamp and eventType."
-        },
         "xdm:playhead": {
           "title": "Playhead",
           "type": "integer",
@@ -87,7 +82,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/mediaCollectionDetails"
+      "$ref": "#/definitions/mediaDetails"
     }
   ]
 }

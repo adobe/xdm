@@ -13,26 +13,25 @@
   "meta:status": "stable",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "definitions": {
-    "proposition-event": {
+    "proposition-event-type": {
       "properties": {
-        "https://ns.adobe.com/experience/decisioning/proposition-event/send": {
+        "https://ns.adobe.com/experience/decisioning/proposition-event-type/send": {
           "title": "send",
           "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
           "type": "integer"
         },
-        "https://ns.adobe.com/experience/decisioning/proposition-event/display": {
+        "https://ns.adobe.com/experience/decisioning/proposition-event-type/display": {
           "title": "display",
           "description": "Proposition was displayed to the user.",
           "type": "integer"
         },
-        "https://ns.adobe.com/experience/decisioning/proposition-event/interact": {
+        "https://ns.adobe.com/experience/decisioning/proposition-event-type/interact": {
           "title": "interact",
           "description": "User interacted with the proposition, usually in a positive way.",
           "type": "integer"
         },
-        "https://ns.adobe.com/experience/decisioning/proposition-event/dismiss": {
+        "https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss": {
           "title": "dismiss",
           "description": "User dismissed the proposition without any other direct interaction.",
           "type": "integer"
@@ -42,7 +41,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/proposition-event"
+      "$ref": "#/definitions/proposition-event-type"
     }
   ]
 }

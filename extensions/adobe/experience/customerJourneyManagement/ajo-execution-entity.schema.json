@@ -14,7 +14,7 @@
   "meta:abstract": false,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "definitions": {
-    "ajo": {
+    "ajoExecution": {
       "properties": {
         "https://ns.adobe.com/experience/customerJourneyManagement/ajoExecution/messageExecutionID": {
           "title": "Message Execution ID",

@@ -42,6 +42,23 @@ Describes interaction made by the profile on the message.
 
 ```json
 {
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
+    "marketing",
+    "apparel"
+  ],
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": "daily-news",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": "landingPageId",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": "internal",
+    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": "yes"
+  }
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "submit",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID": "123",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/messageInteraction/trackingType": "tracked",
@@ -80,23 +97,6 @@ Describes interaction made by the profile on the message.
     "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalData": {
       "Campaign_Id": "Nike@1234"
     }
-  }
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType": "subscription",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags": [
-    "marketing",
-    "apparel"
-  ],
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label": "adobe.com",
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID": "daily-news",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source": "landingPageId",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType": "internal",
-    "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice": "yes"
   }
 }
 ```
@@ -158,8 +158,8 @@ The value of this property **must** be equal to one of the [known values below](
 | `unsubscribe` | Unsubscribed from messages. |
 | `spam_complaint` | Message is marked as spam by the user. |
 | `subscription` | Subscribe / Unsubscribe to a subscription list. |
-| `submit` |  |
-| `visit` |  |
+| `submit` | Submit message. |
+| `visit` | Message visited. |
 
 
 

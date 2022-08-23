@@ -99,8 +99,8 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:optionSelectionType Known Values
 | Value | Description |
 |-------|-------------|
-| `directList` |  |
-| `filter` |  |
+| `directList` | Direct List |
+| `filter` | Filter |
 
 
 

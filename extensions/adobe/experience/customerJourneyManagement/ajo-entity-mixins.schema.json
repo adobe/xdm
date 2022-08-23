@@ -102,7 +102,6 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/channel": {
               "title": "The channel for which this row corresponds.",
               "$ref": "https://ns.adobe.com/experience/channels/channel",
-              "type": "string",
               "description": "Each specific experience channel defines a constant `@id`."
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/template": {

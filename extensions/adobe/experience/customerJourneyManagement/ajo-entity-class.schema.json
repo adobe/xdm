@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/ajo/entity",
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AJO Entity Class",
   "type": "object",
@@ -15,7 +15,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "A Record based AJO Entity class for creating lookup based schemas",
   "definitions": {
-    "ajo": {
+    "ajoEntity": {
       "properties": {}
     }
   },
@@ -24,7 +24,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "#/definitions/ajo"
+      "$ref": "#/definitions/ajoEntity"
     }
   ],
   "meta:status": "experimental",

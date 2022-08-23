@@ -1,5 +1,9 @@
 {
   "xdm:mediaCollection": {
+    "xdm:timeSeries": {
+      "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+      "xdm:eventType": "media.sessionStart"
+    },
     "xdm:playhead": 831,
     "xdm:sessionDetails": {
       "xdm:ID": "1482236761294786918253",

@@ -20,72 +20,9 @@
     "experienceevent-mediaCollection": {
       "properties": {
         "xdm:mediaCollection": {
-          "type": "object",
-          "description": "Media Collection related fields.",
-          "properties": {
-            "xdm:playhead": {
-              "title": "Playhead",
-              "type": "integer",
-              "minimum": 0,
-              "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
-            },
-            "xdm:sessionDetails": {
-              "title": "Session Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
-              "description": "Session details information related to the experience event."
-            },
-            "xdm:advertisingDetails": {
-              "title": "Advertising Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
-              "description": "Advertising details information related to the experience event."
-            },
-            "xdm:advertisingPodDetails": {
-              "title": "Advertising Pod Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
-              "description": "Advertising pod details information related to the experience event."
-            },
-            "xdm:chapterDetails": {
-              "title": "Chapter Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
-              "description": "Chapter details information related to the experience event."
-            },
-            "xdm:errorDetails": {
-              "title": "Error Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-              "description": "Error details information related to the experience event."
-            },
-            "xdm:qoeDataDetails": {
-              "title": "Qoe Data Details",
-              "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
-              "description": "Qoe data details information related to the experience event."
-            },
-            "xdm:statesStart": {
-              "title": "List Of States Start",
-              "type": "array",
-              "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-              },
-              "description": "The list of states start."
-            },
-            "xdm:statesEnd": {
-              "title": "List Of States End",
-              "type": "array",
-              "items": {
-                "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-              },
-              "description": "The list of states end."
-            },
-            "xdm:endUserIDs": {
-              "title": "End User IDs",
-              "$ref": "https://ns.adobe.com/xdm/context/enduserids",
-              "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required."
-            },
-            "xdm:implementationDetails": {
-              "title": "Implementation Details",
-              "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
-              "description": "Details about the SDK, library, or service used in an application or web page implementation of a service."
-            }
-          }
+          "title": "Media Collection Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaCollectionDetails",
+          "description": "Media Collection related fields."
         }
       }
     }

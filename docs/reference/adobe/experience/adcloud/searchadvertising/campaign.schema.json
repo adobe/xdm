@@ -115,7 +115,7 @@
                         "Monthly": "Monthly",
                         "Lifetime": "Lifetime",
                         "Daily Spend Until Depleted": "Daily Spend Until Depleted",
-                        "Day of week": "Day of Week"
+                        "Day of Week": "Day of Week"
                     },
                     "meta:titleId": "campaign##xdm:budgetType##title##76211",
                     "meta:descriptionId": "campaign##xdm:budgetType##description##19941"
@@ -129,8 +129,8 @@
                         "Accelerated"
                     ],
                     "meta:enum": {
-                        "standard": "Standard",
-                        "accelerated": "Accelerated"
+                        "Standard": "Standard",
+                        "Accelerated": "Accelerated"
                     },
                     "meta:titleId": "campaign##xdm:adDeliveryType##title##36091",
                     "meta:descriptionId": "campaign##xdm:adDeliveryType##description##68191"

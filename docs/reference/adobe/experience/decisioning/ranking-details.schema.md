@@ -56,7 +56,12 @@ Unknown type ``.
       ],
       "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it.",
       "meta:titleId": "ranking-details##xdm:orderEvaluationType##title##8401",
-      "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##94251"
+      "meta:descriptionId": "ranking-details##xdm:orderEvaluationType##description##94251",
+      "meta:enum": {
+        "static": "Static",
+        "scoringFunction": "Scoring Function",
+        "rankingStrategy": "Ranking Strategy"
+      }
     },
     "xdm:function": {
       "type": "string",
@@ -153,9 +158,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:orderEvaluationType Known Values
 | Value | Description |
 |-------|-------------|
-| `static` |  |
-| `scoringFunction` |  |
-| `rankingStrategy` |  |
+| `static` | Static |
+| `scoringFunction` | Scoring Function |
+| `rankingStrategy` | Ranking Strategy |
 
 
 

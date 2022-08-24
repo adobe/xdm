@@ -1,0 +1,64 @@
+{
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email": {
+        "title": "Email Specific Fields",
+        "type": "object",
+        "description": "Email Specific Fields",
+        "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email/subject": {
+                "title": "Email Subject",
+                "type": "string",
+                "description": "Email subject, non-personalized"
+            }
+        }
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push": {
+        "title": "Push Specific Fields",
+        "type": "object",
+        "description": "Push Specific Fields.",
+        "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push/title": {
+                "title": "Push Title",
+                "type": "string",
+                "description": "Push Title, non-personalized"
+            }
+        }
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messageID": {
+        "title": "Message ID",
+        "type": "string",
+        "description": "Unique ID representing a non-personalized message sent to the end user."
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/baseMessageID": {
+        "title": "Base Message ID",
+        "type": "string",
+        "description": "Represents the base Message ID from which the published message is derived."
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublicationID": {
+        "title": "Message Publication ID",
+        "type": "string",
+        "description": "Message Publication ID. Represents a frozen/published version of message."
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/variantID": {
+        "title": "Channel's variant ID",
+        "type": "string",
+        "description": "Is not frozen and might remain same between different versions of message publication."
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/channel": {
+        "title": "The channel for which this row corresponds.",
+        "$ref": "https://ns.adobe.com/xdm/channels/channel",
+        "description": "Each specific experience channel defines a constant `@id`."
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/template": {
+        "title": "The json template used in the message",
+        "type": "string",
+        "description": "The json template used while sending the message"
+    },
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublishedAt": {
+        "title": "Message Publication Time",
+        "type": "string",
+        "format": "date-time",
+        "description": "Time at which message was published"
+    },
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails"
+}

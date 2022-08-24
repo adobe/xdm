@@ -24,17 +24,6 @@ Controls a decisioning process and describes some form of action that is planned
   "https://ns.adobe.com/experience/decisioning/name": "In App Messages",
   "https://ns.adobe.com/experience/decisioning/startDate": "2019-06-18T10:52:57.000Z",
   "https://ns.adobe.com/experience/decisioning/endDate": "2019-09-01T00:00:00.000Z",
-  "https://ns.adobe.com/experience/decisioning/fallback": "xcore:fallback-offer:f6709ad4e7c0bac",
-  "https://ns.adobe.com/experience/decisioning/status": "draft"
-}
-```
-
-```json
-{
-  "@id": "xcore:offer-activity:fd55d033fea4b82",
-  "https://ns.adobe.com/experience/decisioning/name": "In App Messages",
-  "https://ns.adobe.com/experience/decisioning/startDate": "2019-06-18T10:52:57.000Z",
-  "https://ns.adobe.com/experience/decisioning/endDate": "2019-09-01T00:00:00.000Z",
   "https://ns.adobe.com/experience/decisioning/status": "live",
   "https://ns.adobe.com/experience/decisioning/fallback": "xcore:fallback-offer:f6709ad4e7c0bac",
   "https://ns.adobe.com/experience/decisioning/criteria": [
@@ -222,6 +211,17 @@ Controls a decisioning process and describes some form of action that is planned
       }
     }
   ]
+}
+```
+
+```json
+{
+  "@id": "xcore:offer-activity:fd55d033fea4b82",
+  "https://ns.adobe.com/experience/decisioning/name": "In App Messages",
+  "https://ns.adobe.com/experience/decisioning/startDate": "2019-06-18T10:52:57.000Z",
+  "https://ns.adobe.com/experience/decisioning/endDate": "2019-09-01T00:00:00.000Z",
+  "https://ns.adobe.com/experience/decisioning/fallback": "xcore:fallback-offer:f6709ad4e7c0bac",
+  "https://ns.adobe.com/experience/decisioning/status": "draft"
 }
 ```
 

@@ -17,7 +17,10 @@ This Fieldgroup will have Common Journey Metadata Fields
 {
   "https://ns.adobe.com/experience/journeyOrchestration/journey": {
     "https://ns.adobe.com/experience/journeyOrchestration/versionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441"
+    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441",
+    "https://ns.adobe.com/experience/journeyOrchestration/name": "My Journey",
+    "https://ns.adobe.com/experience/journeyOrchestration/description": "My journey description",
+    "https://ns.adobe.com/experience/journeyOrchestration/version": "1.0"
   }
 }
 ```
@@ -26,10 +29,7 @@ This Fieldgroup will have Common Journey Metadata Fields
 {
   "https://ns.adobe.com/experience/journeyOrchestration/journey": {
     "https://ns.adobe.com/experience/journeyOrchestration/versionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441",
-    "https://ns.adobe.com/experience/journeyOrchestration/name": "My Journey",
-    "https://ns.adobe.com/experience/journeyOrchestration/description": "My journey description",
-    "https://ns.adobe.com/experience/journeyOrchestration/version": "1.0"
+    "https://ns.adobe.com/experience/journeyOrchestration/ID": "fc0b645e-b3e3-4441"
   }
 }
 ```

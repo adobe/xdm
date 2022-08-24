@@ -278,7 +278,7 @@ The CJM activity originating this message.
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID
 ### Message ID
 
-The parent Message ID of a MessageExecution originating this message.
+Unique ID representing a non-personalized message sent to the end user.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageID`
 * is optional

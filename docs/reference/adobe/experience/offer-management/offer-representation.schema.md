@@ -68,14 +68,15 @@ Offer representation (deprecated).
 {
   "xdm:components": [
     {
-      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
-      "dc:format": "text/html",
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
+      "dc:format": "image/png",
       "dc:language": [
-        "de"
+        "en"
       ],
-      "repo:name": "widget_quickbooking.html",
-      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
-      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
+      "repo:name": "holidayOffer.2018.png",
+      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;",
+      "xdm:linkURL": "https://www.mycompany.com/product?trackId=12345"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",
@@ -87,15 +88,14 @@ Offer representation (deprecated).
 {
   "xdm:components": [
     {
-      "@type": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
-      "dc:format": "image/png",
+      "@type": "https://ns.adobe.com/experience/offer-management/content-component-html",
+      "dc:format": "text/html",
       "dc:language": [
-        "en"
+        "de"
       ],
-      "repo:name": "holidayOffer.2018.png",
-      "repo:id": "urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e",
-      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:VA7:6dc33479-13ca-4b19-b25d-c805eff8a69e&quot;",
-      "xdm:linkURL": "https://www.mycompany.com/product?trackId=12345"
+      "repo:name": "widget_quickbooking.html",
+      "repo:id": "urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc",
+      "repo:resolveURL": "https://platform-cs-stage.adobe.io/content/directory/resolve?asset_id=&quot;urn:aaid:sc:NLD2:0567c1d6-4fdc-4541-b736-f62934fcb5fc&quot;"
     }
   ],
   "xdm:placement": "uri:xcore:placement-0001",

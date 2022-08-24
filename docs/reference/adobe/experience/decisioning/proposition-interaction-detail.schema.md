@@ -24,44 +24,6 @@ A proposition interaction is used to report an experience event that relates to 
 {
   "xdm:items": [
     {
-      "xdm:id": "ExperienceB",
-      "xdm:data": {
-        "type": "setHtml",
-        "content": "<div class='banner_img d-none d-lg-block'><img src='https://contentviewer.s3.amazonaws.com/helium/women_banner.jpeg?w=780&amp;h=408&amp;crop=1' alt=''>\n</div>",
-        "selector": "#root > DIV.react-spectrum-provider:eq(0) > DIV.app-wrapper:eq(0) > DIV.app-content:eq(0) > DIV:nth-of-type(1) > SECTION.banner_part:eq(0)",
-        "prehidingSelector": "#root > DIV:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(2) > DIV:nth-of-type(1) > SECTION:nth-of-type(1)"
-      }
-    }
-  ],
-  "xdm:id": "AT:eyJhY3Rpdml0eUlkIjoiMzg0NDU5IiwiZXhwZXJpZW5jZUlkIjoiMSJ9",
-  "xdm:scope": "home",
-  "xdm:scopeDetails": {
-    "xdm:activity": {
-      "xdm:id": "384459",
-      "repo:etag": "8"
-    },
-    "xdm:experience": {
-      "xdm:id": "ExperienceB"
-    },
-    "xdm:strategies": [
-      {
-        "xdm:step": "targeting",
-        "xdm:algorithmID": "randomuniform",
-        "xdm:trafficType": "noncontextual"
-      }
-    ],
-    "xdm:characteristics": {
-      "prop1": "Value 1",
-      "prop2": "Value 2"
-    }
-  }
-}
-```
-
-```json
-{
-  "xdm:items": [
-    {
       "xdm:id": "xcore:personalized-offer:f67bab756ed6ee4",
       "repo:etag": "5",
       "xdm:score": 83,
@@ -103,6 +65,44 @@ A proposition interaction is used to report an experience event that relates to 
         "xdm:step": "ranking",
         "xdm:strategyID": "ranking-strategy:7251468357c2236",
         "xdm:algorithmID": "auto-optimize",
+        "xdm:trafficType": "noncontextual"
+      }
+    ],
+    "xdm:characteristics": {
+      "prop1": "Value 1",
+      "prop2": "Value 2"
+    }
+  }
+}
+```
+
+```json
+{
+  "xdm:items": [
+    {
+      "xdm:id": "ExperienceB",
+      "xdm:data": {
+        "type": "setHtml",
+        "content": "<div class='banner_img d-none d-lg-block'><img src='https://contentviewer.s3.amazonaws.com/helium/women_banner.jpeg?w=780&amp;h=408&amp;crop=1' alt=''>\n</div>",
+        "selector": "#root > DIV.react-spectrum-provider:eq(0) > DIV.app-wrapper:eq(0) > DIV.app-content:eq(0) > DIV:nth-of-type(1) > SECTION.banner_part:eq(0)",
+        "prehidingSelector": "#root > DIV:nth-of-type(1) > DIV:nth-of-type(1) > DIV:nth-of-type(2) > DIV:nth-of-type(1) > SECTION:nth-of-type(1)"
+      }
+    }
+  ],
+  "xdm:id": "AT:eyJhY3Rpdml0eUlkIjoiMzg0NDU5IiwiZXhwZXJpZW5jZUlkIjoiMSJ9",
+  "xdm:scope": "home",
+  "xdm:scopeDetails": {
+    "xdm:activity": {
+      "xdm:id": "384459",
+      "repo:etag": "8"
+    },
+    "xdm:experience": {
+      "xdm:id": "ExperienceB"
+    },
+    "xdm:strategies": [
+      {
+        "xdm:step": "targeting",
+        "xdm:algorithmID": "randomuniform",
         "xdm:trafficType": "noncontextual"
       }
     ],

@@ -22,9 +22,9 @@ Information related to the software used to collect an ExperienceEvent such as e
 ```json
 {
   "xdm:implementationDetails": {
-    "xdm:name": "https://ns.adobe.com/experience/mobilesdk/ios",
-    "xdm:version": "3.2.0+1.1.2",
-    "xdm:environment": "app"
+    "xdm:name": "https://ns.adobe.com/experience/alloy",
+    "xdm:version": "0.11.0",
+    "xdm:environment": "browser"
   }
 }
 ```
@@ -32,9 +32,9 @@ Information related to the software used to collect an ExperienceEvent such as e
 ```json
 {
   "xdm:implementationDetails": {
-    "xdm:name": "https://ns.adobe.com/experience/alloy",
-    "xdm:version": "0.11.0",
-    "xdm:environment": "browser"
+    "xdm:name": "https://ns.adobe.com/experience/mobilesdk/ios",
+    "xdm:version": "3.2.0+1.1.2",
+    "xdm:environment": "app"
   }
 }
 ```

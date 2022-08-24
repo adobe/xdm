@@ -11,7 +11,7 @@
   "description": "A set of meta-data fields related to various AJO entities which are related to message sent to profile.",
   "type": "object",
   "meta:extensible": true,
-  "meta:abstract": false,
+  "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity"
   ],

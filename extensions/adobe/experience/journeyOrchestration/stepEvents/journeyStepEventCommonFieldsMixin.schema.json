@@ -45,6 +45,11 @@
               "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
               "type": "string"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": {
+              "title": "isReadSegmentTriggerStartEvent",
+              "description": "If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.",
+              "type": "boolean"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
               "title": "origSegmentQualificationStatus",
               "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",

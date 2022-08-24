@@ -15,7 +15,10 @@ Holds a map of objects containing counter_value and expiryDate, keyed by counter
 
 ```json
 {
-  "xdm:xid": "xid-92312748749128",
+  "xdm:namespace": {
+    "xdm:code": "ECID"
+  },
+  "xdm:id": "92312748749128",
   "xdm:frequencyMap": {
     "counter_id": {
       "xdm:value": 100,
@@ -27,10 +30,7 @@ Holds a map of objects containing counter_value and expiryDate, keyed by counter
 
 ```json
 {
-  "xdm:namespace": {
-    "xdm:code": "ECID"
-  },
-  "xdm:id": "92312748749128",
+  "xdm:xid": "xid-92312748749128",
   "xdm:frequencyMap": {
     "counter_id": {
       "xdm:value": 100,

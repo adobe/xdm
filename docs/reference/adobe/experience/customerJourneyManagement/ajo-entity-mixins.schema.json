@@ -11,7 +11,7 @@
     "description": "A set of meta-data fields related to various AJO entities which are related to message sent to profile.",
     "type": "object",
     "meta:extensible": true,
-    "meta:abstract": false,
+    "meta:abstract": true,
     "meta:intendedToExtend": [
         "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity"
     ],
@@ -23,27 +23,27 @@
                     "type": "object",
                     "description": "AJO Campaign Entity Specific Fields",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": {
                             "title": "AJO Campaign ID",
                             "type": "string",
                             "description": "AJO Campaign ID. Remains unchanged even after republishing."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": {
                             "title": "AJO Campaign Version ID",
                             "type": "string",
                             "description": "AJO Campaign Version ID. Changes on republishing. Represents immutable version of campaign."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
                             "title": "AJO Campaign Name",
                             "type": "string",
                             "description": "AJO Campaign Name."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": {
                             "title": "AJO Campaign Description",
                             "type": "string",
                             "description": "AJO Campaign Description."
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": {
                             "title": "Campaign Action ID",
                             "type": "string",
                             "description": "Action ID of the Campaign that triggered this message execution."
@@ -60,22 +60,22 @@
                     "type": "object",
                     "description": "AJO Experiment Entity Specific Fields",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": {
                             "title": "Treatment ID",
                             "type": "string",
                             "description": "This along with experimentId has one to one mapping with messageID"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentId": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": {
                             "title": "Experiment ID",
                             "type": "string",
                             "description": "This along with treatmentId has one to one mapping with messageID"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": {
                             "title": "Experiment Name",
                             "type": "string",
                             "description": "Name of the experiment"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": {
                             "title": "Treatment Name",
                             "type": "string",
                             "description": "Name of the treatment"
@@ -87,32 +87,32 @@
                     "type": "object",
                     "description": "AJO Journey Entity Specific Fields",
                     "properties": {
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": {
                             "title": "Journey Version ID",
                             "type": "string",
                             "description": "Represents a frozen version of a Journey"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": {
                             "title": "Journey Name",
                             "type": "string",
                             "description": "Represents the journey name"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID": {
                             "title": "Journey ID",
                             "type": "string",
                             "description": "Represents the journey ID"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": {
                             "title": "Journey Action Name",
                             "type": "string",
                             "description": "Represents the Journey Label"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": {
                             "title": "Journey Action ID",
                             "type": "string",
                             "description": "Represents the Journey Action ID"
                         },
-                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion": {
+                        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": {
                             "title": "Journey Name and Version",
                             "type": "string",
                             "description": "Represents the concatenated values of Journey Name and Version"
@@ -134,42 +134,42 @@
     "examples": [
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name": "Marketing Campaign",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description": "Used for sending email/push messages",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Marketing Campaign",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": "Used for sending email/push messages",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email": {
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email/subject": "Hi there, season end sale is here!"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/email/subject": "Hi there, season end sale is here!"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push": {
-                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push/title": "Hi, You've got a coupon"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/push": {
+                    "https://ns.adobe.com/experience/customerJourneyManagement/entities/push/title": "Hi, You've got a coupon"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/channel": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
                     "@id": "https://ns.adobe.com/xdm/channels/email"
                 },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/template": "Hi {{person.firstName}}",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublishedAt": "2021-06-25T15:52:25+00:00"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID": "123456",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName": "Hero page experiment",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName": "The first treatment"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": "123456",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": "Hero page experiment",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": "The first treatment"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName": "Marketing Test Journey",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName": "Email 100Kb Message",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion": "Email 100Kb Message (1b)"
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": "Email 100Kb Message",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)"
             }
         }
     ]

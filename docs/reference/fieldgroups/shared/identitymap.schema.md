@@ -15,6 +15,25 @@ Defines a map containing a set of end user identities, keyed on either namespace
 
 ```json
 {
+  "EMAIL": [
+    {
+      "xdm:id": "92312748749128"
+    },
+    {
+      "xdm:id": "92312748749239"
+    }
+  ],
+  "CRM": [
+    {
+      "xdm:id": "2394509340-30453470347",
+      "xdm:authenticatedState": "authenticated"
+    }
+  ]
+}
+```
+
+```json
+{
   "https://data.adobe.io/entities/namespace/4": [
     {
       "xdm:id": "92312748749128"
@@ -32,25 +51,6 @@ Defines a map containing a set of end user identities, keyed on either namespace
   "https://data.adobe.io/entities/namespace/9": [
     {
       "xdm:id": "1233ce17-20e0-4a2c-8198-2a77fd60cf4d"
-    }
-  ]
-}
-```
-
-```json
-{
-  "EMAIL": [
-    {
-      "xdm:id": "92312748749128"
-    },
-    {
-      "xdm:id": "92312748749239"
-    }
-  ],
-  "CRM": [
-    {
-      "xdm:id": "2394509340-30453470347",
-      "xdm:authenticatedState": "authenticated"
     }
   ]
 }

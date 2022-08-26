@@ -1,0 +1,47 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/decisioning/proposition-event-type",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "AJO Classification Fields",
+    "description": "A set of direct customer interactions that an end-user might perform when shown a proposition.",
+    "type": "object",
+    "meta:status": "stable",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "definitions": {
+        "proposition-event-type": {
+            "properties": {
+                "https://ns.adobe.com/experience/decisioning/proposition-event-type/send": {
+                    "title": "send",
+                    "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+                    "type": "integer"
+                },
+                "https://ns.adobe.com/experience/decisioning/proposition-event-type/display": {
+                    "title": "display",
+                    "description": "Proposition was displayed to the user.",
+                    "type": "integer"
+                },
+                "https://ns.adobe.com/experience/decisioning/proposition-event-type/interact": {
+                    "title": "interact",
+                    "description": "User interacted with the proposition, usually in a positive way.",
+                    "type": "integer"
+                },
+                "https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss": {
+                    "title": "dismiss",
+                    "description": "User dismissed the proposition without any other direct interaction.",
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/proposition-event-type"
+        }
+    ]
+}

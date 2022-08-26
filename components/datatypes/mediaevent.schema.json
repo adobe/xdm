@@ -5,16 +5,16 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDownloadedEvent",
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaEvent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media downloaded event information",
+  "title": "Media event information",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/time-series"],
-  "description": "Media downloaded event information.",
+  "description": "Media event information.",
   "definitions": {
-    "mediaDownloadedEvent": {
+    "mediaEvent": {
       "properties": {
         "xdm:mediaCollection": {
           "title": "Media Details",
@@ -29,7 +29,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/time-series"
     },
     {
-      "$ref": "#/definitions/mediaDownloadedEvent"
+      "$ref": "#/definitions/mediaEvent"
     }
   ]
 }

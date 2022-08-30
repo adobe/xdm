@@ -36,7 +36,7 @@
                                 "window",
                                 "middle"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "noPreference": "No Preference",
                                 "aisle": "Aisle",
                                 "window": "Window",
@@ -56,7 +56,7 @@
                                 "exitRow",
                                 "rear"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "noPreference": "No Preference",
                                 "forward": "Forward",
                                 "bulkhead": "Bulkhead",
@@ -91,7 +91,7 @@
                                 "vegetarianKosher",
                                 "vegetarianRaw"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "regularMeal": "Regular Meal",
                                 "blandLowResidue": "Bland / Low Residue",
                                 "childMeal": "Child Meal",
@@ -131,7 +131,7 @@
                                 "eTicket",
                                 "physical"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "eTicket": "E-Ticket",
                                 "physical": "Physical"
                             },
@@ -158,7 +158,7 @@
                                 "single",
                                 "disability"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "noPreference": "No Preference",
                                 "king": "King",
                                 "queen": "Queen",
@@ -272,7 +272,7 @@
                                 "luxuryCar",
                                 "specializedVehicle"
                             ],
-                            "meta-enum": {
+                            "meta:enum": {
                                 "miniCar": "Mini Car",
                                 "economyCar": "Economy Car",
                                 "economyCarHybrid": "Economy Car Hybrid",

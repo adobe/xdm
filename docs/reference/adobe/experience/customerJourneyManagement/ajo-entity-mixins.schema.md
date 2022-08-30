@@ -21,42 +21,42 @@ A set of meta-data fields related to various AJO entities which are related to m
 ```json
 {
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name": "Marketing Campaign",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description": "Used for sending email/push messages",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": "9e3c3315-f2ca-42c0-85d2-6d3e83802b18",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Marketing Campaign",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": "Used for sending email/push messages",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/email/subject": "Hi there, season end sale is here!"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/email/subject": "Hi there, season end sale is here!"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push": {
-      "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/push/title": "Hi, You've got a coupon"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/push": {
+      "https://ns.adobe.com/experience/customerJourneyManagement/entities/push/title": "Hi, You've got a coupon"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/channel": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/template": "Hi {{person.firstName}}",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails/messagePublishedAt": "2021-06-25T15:52:25+00:00"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": "Hi {{person.firstName}}",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": "2021-06-25T15:52:25+00:00"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID": "123456",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName": "Hero page experiment",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName": "The first treatment"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": "123456",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentID": "04832ee5-51ff-4706-af8a-a8ff6756sdfd",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": "Hero page experiment",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": "The first treatment"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName": "Marketing Test Journey",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName": "Email 100Kb Message",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion": "Email 100Kb Message (1b)"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": "Marketing Test Journey",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": "Email 100Kb Message",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)"
   }
 }
 ```
@@ -89,24 +89,24 @@ AJO Campaign Entity Specific Fields
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/description`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/name`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID
 ##### Campaign Action ID
 
 Action ID of the Campaign that triggered this message execution.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignActionID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID Type
 
 
 `string`
@@ -118,16 +118,16 @@ Action ID of the Campaign that triggered this message execution.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID
 ##### AJO Campaign ID
 
 AJO Campaign ID. Remains unchanged even after republishing.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID Type
 
 
 `string`
@@ -139,16 +139,16 @@ AJO Campaign ID. Remains unchanged even after republishing.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID
 ##### AJO Campaign Version ID
 
 AJO Campaign Version ID. Changes on republishing. Represents immutable version of campaign.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/campaignVersionID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID Type
 
 
 `string`
@@ -160,16 +160,16 @@ AJO Campaign Version ID. Changes on republishing. Represents immutable version o
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/description
 ##### AJO Campaign Description
 
 AJO Campaign Description.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/description`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/description Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/description Type
 
 
 `string`
@@ -181,16 +181,16 @@ AJO Campaign Description.
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/name
 ##### AJO Campaign Name
 
 AJO Campaign Name.
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/name`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign/name Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/name Type
 
 
 `string`
@@ -242,23 +242,23 @@ AJO Experiment Entity Specific Fields
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentId`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentId
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId
 ##### Experiment ID
 
 This along with treatmentId has one to one mapping with messageID
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentId`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentId Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId Type
 
 
 `string`
@@ -270,16 +270,16 @@ This along with treatmentId has one to one mapping with messageID
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName
 ##### Experiment Name
 
 Name of the experiment
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/experimentName Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName Type
 
 
 `string`
@@ -291,16 +291,16 @@ Name of the experiment
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID
 ##### Treatment ID
 
 This along with experimentId has one to one mapping with messageID
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID Type
 
 
 `string`
@@ -312,16 +312,16 @@ This along with experimentId has one to one mapping with messageID
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName
 ##### Treatment Name
 
 Name of the treatment
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment/treatmentName Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName Type
 
 
 `string`
@@ -354,25 +354,25 @@ AJO Journey Entity Specific Fields
 
 | Property | Type | Required |
 |----------|------|----------|
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion`| string | Optional |
-| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion`| string | Optional |
+| `https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID`| string | Optional |
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID
 ##### Journey Action ID
 
 Represents the Journey Action ID
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID Type
 
 
 `string`
@@ -384,16 +384,16 @@ Represents the Journey Action ID
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName
 ##### Journey Action Name
 
 Represents the Journey Label
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyActionName Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName Type
 
 
 `string`
@@ -405,16 +405,16 @@ Represents the Journey Label
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID
 ##### Journey ID
 
 Represents the journey ID
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID Type
 
 
 `string`
@@ -426,16 +426,16 @@ Represents the journey ID
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName
 ##### Journey Name
 
 Represents the journey name
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyName Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName Type
 
 
 `string`
@@ -447,16 +447,16 @@ Represents the journey name
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion
 ##### Journey Name and Version
 
 Represents the concatenated values of Journey Name and Version
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyNameAndVersion Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion Type
 
 
 `string`
@@ -468,16 +468,16 @@ Represents the concatenated values of Journey Name and Version
 
 
 
-#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID
+#### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID
 ##### Journey Version ID
 
 Represents a frozen version of a Journey
 
-`https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID`
+`https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID`
 * is optional
 * type: `string`
 
-##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journey/journeyVersionID Type
+##### https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID Type
 
 
 `string`

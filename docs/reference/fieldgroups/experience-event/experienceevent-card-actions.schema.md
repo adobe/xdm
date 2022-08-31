@@ -141,7 +141,14 @@ Unknown type `object`.
       ],
       "description": "Tracks the type of card order associated with a card order event.",
       "meta:titleId": "experienceevent-card-actions##xdm:cardOrderType##title##45061",
-      "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderType##description##37801"
+      "meta:descriptionId": "experienceevent-card-actions##xdm:cardOrderType##description##37801",
+      "meta:enum": {
+        "new": "New",
+        "lost": "Lost",
+        "stolen": "Stolen",
+        "never received": "Never Received",
+        "damaged": "Damaged"
+      }
     },
     "xdm:cardType": {
       "title": "Card Type",
@@ -158,7 +165,17 @@ Unknown type `object`.
       ],
       "description": "Tracks the type of card associated with an event.",
       "meta:titleId": "experienceevent-card-actions##xdm:cardType##title##35641",
-      "meta:descriptionId": "experienceevent-card-actions##xdm:cardType##description##82811"
+      "meta:descriptionId": "experienceevent-card-actions##xdm:cardType##description##82811",
+      "meta:enum": {
+        "credit": "Credit",
+        "debit": "Debit",
+        "prepaid": "Prepaid",
+        "paypal": "Paypal",
+        "atm": "ATM",
+        "virtual": "Virtual",
+        "hsa": "HSA",
+        "fsa": "FSA"
+      }
     },
     "xdm:cardUnlocked": {
       "title": "Card Unlocked",

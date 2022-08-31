@@ -1,0 +1,196 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/entities",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Entity Fields",
+  "description": "A set of meta-data fields related to various AJO entities which are related to message sent to profile.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity"
+  ],
+  "definitions": {
+    "entities": {
+      "properties": {
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign": {
+          "title": "AJO Campaign Entity",
+          "type": "object",
+          "description": "AJO Campaign Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignID": {
+              "title": "AJO Campaign ID",
+              "type": "string",
+              "description": "AJO Campaign ID. Remains unchanged even after republishing."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": {
+              "title": "AJO Campaign Version ID",
+              "type": "string",
+              "description": "AJO Campaign Version ID. Changes on republishing. Represents immutable version of campaign."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": {
+              "title": "AJO Campaign Name",
+              "type": "string",
+              "description": "AJO Campaign Name."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": {
+              "title": "AJO Campaign Description",
+              "type": "string",
+              "description": "AJO Campaign Description."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": {
+              "title": "Campaign Action ID",
+              "type": "string",
+              "description": "Action ID of the Campaign that triggered this message execution."
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
+          "title": "AJO Channel/Message Entity",
+          "type": "object",
+          "description": "AJO Channel/Message Entity Specific Fields. Denormalized on variantId",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {
+              "title": "Email Specific Fields",
+              "type": "object",
+              "description": "Email Specific Fields",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/subject": {
+                  "title": "Email Subject",
+                  "type": "string",
+                  "description": "Email subject, non-personalized"
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/push": {
+              "title": "Push Specific Fields",
+              "type": "object",
+              "description": "Push Specific Fields.",
+              "properties": {
+                "https://ns.adobe.com/experience/customerJourneyManagement/entities/title": {
+                  "title": "Push Title",
+                  "type": "string",
+                  "description": "Push Title, non-personalized"
+                }
+              }
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/messageID": {
+              "title": "Message ID",
+              "type": "string",
+              "description": "Unique ID representing a non-personalized message sent to the end user."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/baseMessageID": {
+              "title": "Base Message ID",
+              "type": "string",
+              "description": "Represents the base Message ID from which the published message is derived."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublicationID": {
+              "title": "Message Publication ID",
+              "type": "string",
+              "description": "Message Publication ID. Represents a frozen/published version of message."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantID": {
+              "title": "Channel's variant ID",
+              "type": "string",
+              "description": "Is not frozen and might remain same between different versions of message publication."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
+              "title": "The channel for which this row corresponds.",
+              "$ref": "https://ns.adobe.com/xdm/channels/channel",
+              "description": "Each specific experience channel defines a constant `@id`."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/template": {
+              "title": "The json template used in the message",
+              "type": "string",
+              "description": "The json template used while sending the message"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublishedAt": {
+              "title": "Message Publication Time",
+              "type": "string",
+              "format": "date-time",
+              "description": "Time at which message was published"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/experiment": {
+          "title": "AJO Experiment Entity Specific Fields",
+          "type": "object",
+          "description": "AJO Experiment Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentID": {
+              "title": "Treatment ID",
+              "type": "string",
+              "description": "This along with experimentId has one to one mapping with messageID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentId": {
+              "title": "Experiment ID",
+              "type": "string",
+              "description": "This along with treatmentId has one to one mapping with messageID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/experimentName": {
+              "title": "Experiment Name",
+              "type": "string",
+              "description": "Name of the experiment"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/treatmentName": {
+              "title": "Treatment Name",
+              "type": "string",
+              "description": "Name of the treatment"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/journey": {
+          "title": "AJO Journey Entity",
+          "type": "object",
+          "description": "AJO Journey Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyVersionID": {
+              "title": "Journey Version ID",
+              "type": "string",
+              "description": "Represents a frozen version of a Journey"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyName": {
+              "title": "Journey Name",
+              "type": "string",
+              "description": "Represents the journey name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID": {
+              "title": "Journey ID",
+              "type": "string",
+              "description": "Represents the journey ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": {
+              "title": "Journey Action Name",
+              "type": "string",
+              "description": "Represents the Journey Label"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": {
+              "title": "Journey Action ID",
+              "type": "string",
+              "description": "Represents the Journey Action ID"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": {
+              "title": "Journey Name and Version",
+              "type": "string",
+              "description": "Represents the concatenated values of Journey Name and Version"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/entities"
+    }
+  ],
+  "meta:status": "experimental"
+}

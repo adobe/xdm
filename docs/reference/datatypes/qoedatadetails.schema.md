@@ -30,6 +30,7 @@ Qoe Data details information.
 | [xdm:droppedFrameCount](#xdmdroppedframecount) | `integer` | Optional | Qoe Data details information (this schema) |
 | [xdm:errorCount](#xdmerrorcount) | `integer` | Optional | Qoe Data details information (this schema) |
 | [xdm:externalErrors](#xdmexternalerrors) | `string[]` | Optional | Qoe Data details information (this schema) |
+| [xdm:framesPerSecond](#xdmframespersecond) | `integer` | Optional | Qoe Data details information (this schema) |
 | [xdm:hasBitrateChangeImpactedStreams](#xdmhasbitratechangeimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
 | [xdm:hasBufferImpactedStreams](#xdmhasbufferimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
 | [xdm:hasDroppedFrameImpactedStreams](#xdmhasdroppedframeimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
@@ -204,6 +205,26 @@ All items must be of the type:
 
 
 
+
+
+
+
+
+
+## xdm:framesPerSecond
+### Frames Per Second
+
+The current value of the stream frame-rate (in frames per second). The field is mapped to the fps field on the close call and can be accessed through processing rules.
+
+`xdm:framesPerSecond`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:framesPerSecond Type
+
+
+`integer`
 
 
 

@@ -211,25 +211,25 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:meal Known Values
 | Value | Description |
 |-------|-------------|
-| `regularMeal` |  |
-| `blandLowResidue` |  |
-| `childMeal` |  |
-| `diabeticMeal` |  |
-| `fruitPlatter` |  |
-| `glutenFreeMeal` |  |
-| `infantBabyMeal` |  |
-| `kosherMeal` |  |
-| `lowCalorieMeal` |  |
-| `lowSaltSodiumMeal` |  |
-| `halalMeal` |  |
-| `noSaltMeal` |  |
-| `nonLactoseMeal` |  |
-| `peanutFreeMeal` |  |
-| `seafoodMeal` |  |
-| `vegLactoOvo` |  |
-| `vegetarian` |  |
-| `vegetarianKosher` |  |
-| `vegetarianRaw` |  |
+| `regularMeal` | Regular Meal |
+| `blandLowResidue` | Bland / Low Residue |
+| `childMeal` | Child Meal |
+| `diabeticMeal` | Diabetic Meal |
+| `fruitPlatter` | Fruit Platter |
+| `glutenFreeMeal` | Gluten Free Meal |
+| `infantBabyMeal` | Infant / Baby Meal |
+| `kosherMeal` | Kosher Meal |
+| `lowCalorieMeal` | Low Calorie Meal |
+| `lowSaltSodiumMeal` | Low Salt / Sodium Meal |
+| `halalMeal` | Halal Meal |
+| `noSaltMeal` | No Salt Meal |
+| `nonLactoseMeal` | Non Lactose Meal |
+| `peanutFreeMeal` | Peanut Free Meal |
+| `seafoodMeal` | Seafood Meal |
+| `vegLactoOvo` | Veg Lacto-Ovo |
+| `vegetarian` | Vegetarian |
+| `vegetarianKosher` | Vegetarian Kosher |
+| `vegetarianRaw` | Vegetarian, Raw |
 
 
 
@@ -359,13 +359,13 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:roomType Known Values
 | Value | Description |
 |-------|-------------|
-| `noPreference` |  |
-| `king` |  |
-| `queen` |  |
-| `double` |  |
-| `twin` |  |
-| `single` |  |
-| `disability` |  |
+| `noPreference` | No Preference |
+| `king` | King |
+| `queen` | Queen |
+| `double` | Double |
+| `twin` | Twin |
+| `single` | Single |
+| `disability` | Disability |
 
 
 
@@ -386,10 +386,10 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:seat Known Values
 | Value | Description |
 |-------|-------------|
-| `noPreference` |  |
-| `aisle` |  |
-| `window` |  |
-| `middle` |  |
+| `noPreference` | No Preference |
+| `aisle` | Aisle |
+| `window` | Window |
+| `middle` | Middle |
 
 
 
@@ -410,11 +410,11 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:seatSection Known Values
 | Value | Description |
 |-------|-------------|
-| `noPreference` |  |
-| `forward` |  |
-| `bulkhead` |  |
-| `exitRow` |  |
-| `rear` |  |
+| `noPreference` | No Preference |
+| `forward` | Forward |
+| `bulkhead` | Bulkhead |
+| `exitRow` | Exit Row |
+| `rear` | Rear |
 
 
 
@@ -475,8 +475,8 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:ticketDelivery Known Values
 | Value | Description |
 |-------|-------------|
-| `eTicket` |  |
-| `physical` |  |
+| `eTicket` | E-Ticket |
+| `physical` | Physical |
 
 
 
@@ -497,25 +497,25 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:vehicleType Known Values
 | Value | Description |
 |-------|-------------|
-| `miniCar` |  |
-| `economyCar` |  |
-| `economyCarHybrid` |  |
-| `compactCar` |  |
-| `compactCarHybrid` |  |
-| `intermediateCar` |  |
-| `intermediateCarHybrid` |  |
-| `standardCar` |  |
-| `standardCarHybrid` |  |
-| `fullSizeCar` |  |
-| `fullSizeCarHybrid` |  |
-| `intermediateSUV` |  |
-| `miniVan` |  |
-| `standardSUV` |  |
-| `fullSizeSUV` |  |
-| `fullSizePickup` |  |
-| `premiumCar` |  |
-| `luxuryCar` |  |
-| `specializedVehicle` |  |
+| `miniCar` | Mini Car |
+| `economyCar` | Economy Car |
+| `economyCarHybrid` | Economy Car Hybrid |
+| `compactCar` | Compact Car |
+| `compactCarHybrid` | Compact Car Hybrid |
+| `intermediateCar` | Intermediate Car |
+| `intermediateCarHybrid` | Intermediate Car Hybrid |
+| `standardCar` | Standard Car |
+| `standardCarHybrid` | Standard Car Hybrid |
+| `fullSizeCar` | Full-size Car |
+| `fullSizeCarHybrid` | Full-size Car Hybrid |
+| `intermediateSUV` | Intermediate SUV |
+| `miniVan` | Mini Van |
+| `standardSUV` | Standard SUV |
+| `fullSizeSUV` | Full-size SUV |
+| `fullSizePickup` | Full-size Pickup |
+| `premiumCar` | Premium Car |
+| `luxuryCar` | Luxury Car |
+| `specializedVehicle` | Specialized Vehicle |
 
 
 

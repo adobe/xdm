@@ -32,7 +32,11 @@
                     "default": "none",
                     "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a filter query or through one or more segment memberships.",
                     "meta:titleId": "option-selection-details##xdm:optionSelectionType##title##62401",
-                    "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##98831"
+                    "meta:descriptionId": "option-selection-details##xdm:optionSelectionType##description##98831",
+                    "meta:enum": {
+                        "directList": "Direct List",
+                        "filter": "Filter"
+                    }
                 },
                 "xdm:options": {
                     "type": "array",
@@ -68,16 +72,16 @@
     "meta:descriptionId": "option-selection-details##description##90741",
     "examples": [
         {
+            "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
+            "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
+            "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
+        },
+        {
             "https://ns.adobe.com/experience/decisioning/description": "Charge_Elite_30 Offer",
             "https://ns.adobe.com/experience/decisioning/optionSelectionType": "directList",
             "https://ns.adobe.com/experience/decisioning/options": [
                 "xcore:offer:f6998eb62ed6f15"
             ]
-        },
-        {
-            "https://ns.adobe.com/experience/decisioning/description": "All Premium Credit Cards",
-            "https://ns.adobe.com/experience/decisioning/optionSelectionType": "filter",
-            "https://ns.adobe.com/experience/decisioning/filter": "xcore:offer-filter:f66f792de3c0ba9"
         }
     ]
 }

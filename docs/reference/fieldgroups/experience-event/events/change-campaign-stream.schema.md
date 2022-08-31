@@ -9,7 +9,7 @@ Use to change the stream of the specific campaign.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-stream.schema.json](fieldgroups/experience-event/events/change-campaign-stream.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-stream.schema.json](fieldgroups/experience-event/events/change-campaign-stream.schema.json) |
 
 ## Change Campaign Stream Example
 ```json

@@ -90,8 +90,8 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:action Known Values
 | Value | Description |
 |-------|-------------|
-| `deleteIdentity` |  |
-| `updateField` |  |
+| `deleteIdentity` | Delete Identity |
+| `updateField` | Update Field |
 
 
 

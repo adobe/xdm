@@ -21,7 +21,8 @@
     "https://ns.adobe.com/experience/workfront/program",
     "https://ns.adobe.com/experience/workfront/portfolio",
     "https://ns.adobe.com/experience/workfront/optask",
-    "https://ns.adobe.com/experience/workfront/category"
+    "https://ns.adobe.com/experience/workfront/category",
+    "https://ns.adobe.com/experience/workfront/categoryparameter"
   ],
   "definitions": {
     "wfobjects": {
@@ -46,6 +47,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/workfront/category"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/workfront/categoryparameter"
     }
   ],
   "meta:status": "experimental"

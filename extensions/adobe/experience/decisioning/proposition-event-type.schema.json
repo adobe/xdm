@@ -41,6 +41,11 @@
           "title": "dismiss",
           "description": "User dismissed or rejected the proposition without any other direct interaction.",
           "type": "integer"
+        },
+        "xdm:unsubscribe": {
+          "title": "unsubscribe",
+          "description": "User has requested to not be shown the proposition in the future.",
+          "type": "integer"
         }
       }
     }

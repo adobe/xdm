@@ -53,6 +53,16 @@
         "xdm:name": "fullScreen"
       }
     ],
+    "xdm:customMetadata": [
+      {
+        "xdm:key": "customName",
+        "xdm:value": "test1"
+      },
+      {
+        "xdm:key": "test2",
+        "xdm:value": "customValue"
+      }
+    ],
     "xdm:endUserIDs": {
       "https://ns.adobe.com/experience/mcid": {
         "@id": "https://data.adobe.io/entities/identity/92312748749128",

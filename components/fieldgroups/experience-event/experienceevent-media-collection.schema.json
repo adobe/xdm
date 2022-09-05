@@ -74,6 +74,14 @@
               },
               "description": "The list of states end."
             },
+            "xdm:customMetadata": {
+              "title": "The Custom Metadata",
+              "type": "array",
+              "items": {
+                "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
+              },
+              "description": "The list of custom metadata."
+            },
             "xdm:endUserIDs": {
               "title": "End User IDs",
               "$ref": "https://ns.adobe.com/xdm/context/enduserids",

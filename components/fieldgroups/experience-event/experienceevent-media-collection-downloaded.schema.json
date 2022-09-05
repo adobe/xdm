@@ -19,7 +19,7 @@
   "definitions": {
     "experienceevent-mediaCollectionDownloaded": {
       "properties": {
-        "xdm:events": {
+        "xdm:mediaEvents": {
           "title": "List Of Media Collection Downloaded Content Events",
           "type": "array",
           "items": {

@@ -66,7 +66,10 @@ Current weather conditions for a postal code.
         "xdm:celsius": 2,
         "xdm:fahrenheit": 35
       },
-      "xdm:uvIndex": "3",
+      "xdm:uvIndex": {
+        "xdm:_name": "UV_3",
+        "xdm:value": "3"
+      },
       "xdm:windDirection": 17,
       "xdm:windGust": {
         "xdm:kilometersPerHour": 24,
@@ -76,7 +79,7 @@ Current weather conditions for a postal code.
         "xdm:kilometersPerHour": 15,
         "xdm:milesPerHour": 9
       },
-      "xdm:sunsetTime": "2022-06-30T20:55:39+00:00"
+      "xdm:sunsetTime": 1660324163
     }
   }
 }
@@ -206,49 +209,7 @@ Unknown type `object`.
     "xdm:uvIndex": {
       "title": "UV Index",
       "description": "The Weather Channel's proprietary UV index.  The UV Index provides indices of the intensity of the solar radiation level and risk of skin damage due to exposure.\nRange - -2=Not Available, -1=No Report, 0-2=Low, 3-5=Moderate, 6-7=High, 8-10= Very High, 11-16=Extreme.",
-      "type": "string",
-      "enum": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "-2",
-        "-1"
-      ],
-      "meta:enum": {
-        "0": "Low",
-        "1": "Low",
-        "2": "Low",
-        "3": "Moderate",
-        "4": "Moderate",
-        "5": "Moderate",
-        "6": "High",
-        "7": "High",
-        "8": "Very High",
-        "9": "Very High",
-        "10": "Very High",
-        "11": "Extreme",
-        "12": "Extreme",
-        "13": "Extreme",
-        "14": "Extreme",
-        "15": "Extreme",
-        "16": "Extreme",
-        "-2": "Not Available",
-        "-1": "No Report"
-      }
+      "$ref": "#/definitions/uvIndex"
     },
     "xdm:windDirection": {
       "title": "Wind Direction",
@@ -266,8 +227,7 @@ Unknown type `object`.
       "$ref": "#/definitions/speed"
     },
     "xdm:sunsetTime": {
-      "format": "date-time",
-      "type": "string",
+      "type": "integer",
       "description": "Sunset time in UTC.",
       "title": "Sunset Time"
     }
@@ -289,6 +249,7 @@ Unknown type `object`.
 
 | Property | Type | Group |
 |----------|------|-------|
+| [xdm:_name](#xdm_name) | `string` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/uvIndex` |
 | [xdm:celsius](#xdmcelsius) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature` |
 | [xdm:centimeters](#xdmcentimeters) | `number` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall` |
 | [xdm:fahrenheit](#xdmfahrenheit) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature` |
@@ -297,6 +258,26 @@ Unknown type `object`.
 | [xdm:kilometersPerHour](#xdmkilometersperhour) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed` |
 | [xdm:milesPerHour](#xdmmilesperhour) | `integer` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed` |
 | [xdm:millimeters](#xdmmillimeters) | `number` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation` |
+| [xdm:value](#xdmvalue) | `string` | `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/uvIndex` |
+
+## xdm:_name
+
+Index name
+
+`xdm:_name`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:_name Type
+
+
+`string`
+
+
+
+
+
 
 ## xdm:celsius
 ### Celsius
@@ -452,6 +433,25 @@ Precipitation in millimeters
 
 
 `number`
+
+
+
+
+
+
+## xdm:value
+
+Index value
+
+`xdm:value`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:value Type
+
+
+`string`
 
 
 

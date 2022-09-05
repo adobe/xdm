@@ -46,24 +46,6 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
 
 ```json
 {
-  "@id": "100001061",
-  "searchads:campaignId": "10001234",
-  "searchads:accountId": "10001456",
-  "searchads:campaignName": "My First Campaign",
-  "searchads:campaignDescription": "Branded Mobile Campaign",
-  "searchads:campaignStatus": "Active",
-  "searchads:channelType": "Search",
-  "searchads:budget": 123.45,
-  "searchads:budgetType": "Monthly",
-  "searchads.adDeliveryType": "Standard",
-  "searchads.CampaignObjective": "visit_web",
-  "repo:createDate": "2019-04-26T14:00:00+00:00",
-  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
-}
-```
-
-```json
-{
   "@id": "12",
   "dsp:campaignKey": "QEr8RnlYHwnG4KbFSQor",
   "dsp:campaignName": "News At Cisco",
@@ -75,6 +57,24 @@ Adobe Advertising Cloud ad campaign hierarchy details such as, account, package,
   "dsp:advertiserId": "3",
   "dsp:campaignStartTime": "2019-01-09 00:00:00",
   "dsp:campaignEndTime": "2019-01-11 00:00:00",
+  "repo:createDate": "2019-04-26T14:00:00+00:00",
+  "repo:modifyDate": "2019-04-26T14:00:00+00:00"
+}
+```
+
+```json
+{
+  "@id": "100001061",
+  "searchads:campaignId": "10001234",
+  "searchads:accountId": "10001456",
+  "searchads:campaignName": "My First Campaign",
+  "searchads:campaignDescription": "Branded Mobile Campaign",
+  "searchads:campaignStatus": "Active",
+  "searchads:channelType": "Search",
+  "searchads:budget": 123.45,
+  "searchads:budgetType": "Monthly",
+  "searchads.adDeliveryType": "Standard",
+  "searchads.CampaignObjective": "visit_web",
   "repo:createDate": "2019-04-26T14:00:00+00:00",
   "repo:modifyDate": "2019-04-26T14:00:00+00:00"
 }

@@ -72,6 +72,14 @@
           },
           "description": "The list of states end."
         },
+        "xdm:states": {
+          "title": "List Of States",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+          },
+          "description": "The list of states."
+        },
         "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",

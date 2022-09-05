@@ -49,6 +49,14 @@
       "xdm:name": "fullScreen"
     }
   ],
+  "xdm:states": [
+    {
+      "xdm:name": "mute",
+      "xdm:isSet": true,
+      "xdm:count": 2,
+      "xdm:time": 5
+    }
+  ],
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",

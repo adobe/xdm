@@ -57,6 +57,16 @@
       "xdm:time": 5
     }
   ],
+  "xdm:customMetadata": [
+    {
+      "xdm:name": "customName",
+      "xdm:value": "test1"
+    },
+    {
+      "xdm:name": "test2",
+      "xdm:value": "customValue"
+    }
+  ],
   "xdm:endUserIDs": {
     "https://ns.adobe.com/experience/mcid": {
       "@id": "https://data.adobe.io/entities/identity/92312748749128",

@@ -80,6 +80,14 @@
           },
           "description": "The list of states."
         },
+        "xdm:customMetadata": {
+          "title": "The Custom Metadata",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails"
+          },
+          "description": "The list of custom metadata."
+        },
         "xdm:endUserIDs": {
           "title": "End User IDs",
           "$ref": "https://ns.adobe.com/xdm/context/enduserids",

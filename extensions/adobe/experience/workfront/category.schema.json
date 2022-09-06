@@ -50,7 +50,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/wfobject"
+      "$ref": "#/definitions/category"
     }
   ],
   "meta:status": "experimental"

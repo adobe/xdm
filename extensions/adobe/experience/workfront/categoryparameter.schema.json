@@ -17,7 +17,7 @@
   ],
   "description": "Category Parameter related fields",
   "definitions": {
-    "wfobject": {
+    "categoryparameter": {
       "properties": {
         "workfront:categoryparameter": {
           "type": "object",
@@ -25,27 +25,27 @@
           "properties": {
             "workfront:categoryParameterExpressionID": {
               "title": "Category Parameter Expression ID",
-              "description": "",
+              "description": "Expression ID of category parameter",
               "type": "string"
             },
             "workfront:parameterID": {
               "title": "Parameter ID",
-              "description": "",
+              "description": "Parameter ID of category parameter object",
               "type": "string"
             },
             "workfront:parameterGroupID": {
               "title": "Parameter Group ID",
-              "description": "",
+              "description": "Group ID to which the category parameter belongs to",
               "type": "string"
             },
             "workfront:securityLevel": {
               "title": "Security Level",
-              "description": "",
+              "description": "Security level the category parameter belongs to",
               "type": "string"
             },
             "workfront:viewSecurityLevel": {
               "title": "View Security Level",
-              "description": "",
+              "description": "Security level view",
               "type": "string"
             }
           }

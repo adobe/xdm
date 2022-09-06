@@ -17,7 +17,7 @@
   ],
   "description": "Category related fields",
   "definitions": {
-    "wfobject": {
+    "category": {
       "properties": {
         "workfront:category": {
           "type": "object",
@@ -25,22 +25,22 @@
           "properties": {
             "workfront:description": {
               "title": "Category Description",
-              "description": "",
+              "description": "Description of the wf category object",
               "type": "string"
             },
             "workfront:isActive": {
               "title": "Category is Active",
-              "description": "",
+              "description": "Flag that describes if category is active",
               "type": "boolean"
             },
             "workfront:groupID": {
               "title": "Category's Group ID",
-              "description": "",
+              "description": "Group id category belongs to",
               "type": "string"
             },
             "workfront:objectCode": {
               "title": "Category's object code",
-              "description": "",
+              "description": "Object code for category",
               "type": "string"
             }
           }

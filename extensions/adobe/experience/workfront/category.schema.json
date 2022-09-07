@@ -35,7 +35,7 @@
             },
             "workfront:groupID": {
               "title": "Category's Group ID",
-              "description": "Group id category belongs to",
+              "description": "Group id this category belongs to",
               "type": "string"
             },
             "workfront:objectCode": {

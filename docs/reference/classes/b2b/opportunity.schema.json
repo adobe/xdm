@@ -26,7 +26,6 @@
                     "title": "Opportunity ID",
                     "description": "Unique ID of the opportunity.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "opportunity##xdm:opportunityID##title##121",
                     "meta:descriptionId": "opportunity##xdm:opportunityID##description##45451"
                 },
@@ -69,7 +68,6 @@
                     "title": "Account ID",
                     "description": "Unique ID of the account this opportunity is associated with.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "opportunity##xdm:accountID##title##77231",
                     "meta:descriptionId": "opportunity##xdm:accountID##description##71091"
                 },

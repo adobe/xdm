@@ -24,7 +24,6 @@
           "title": "Opportunity Person ID",
           "description": "Unique identifier for the relationship between the opportunity and the person.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##79401",
           "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##50531"
         },
@@ -39,7 +38,6 @@
           "title": "Opportunity ID",
           "description": "Unique identifier for the opportunity in this opportunity person relationship.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:opportunityID##title##51071",
           "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##11071"
         },
@@ -54,7 +52,6 @@
           "title": "Person ID",
           "description": "Unique identifier for the person in this opportunity person relationship.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "opportunity-person##xdm:personID##title##46151",
           "meta:descriptionId": "opportunity-person##xdm:personID##description##65611"
         },

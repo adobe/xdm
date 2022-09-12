@@ -62,7 +62,9 @@
                         "commerce.saveForLaters": "Commerce Save For Laters",
                         "decisioning.propositionDisplay": "Decisioning Proposition Display",
                         "decisioning.propositionInteract": "Decisioning Proposition Interact",
-                        "decisioning.propositionDeliver": "Decisioning Proposition Deliver",
+                        "decisioning.propositionSend": "Decisioning Proposition Send",
+                        "decisioning.propositionDismiss": "Decisioning Proposition Dismiss",
+                        "decisioning.propositionTrigger": "Decisioning Proposition Trigger",
                         "delivery.feedback": "Delivery Feedback",
                         "message.feedback": "Message Feedback",
                         "message.tracking": "Message Tracking",
@@ -113,7 +115,8 @@
                         "media.sessionEnd": "Media sessionEnd",
                         "media.stateStart": "Media stateStart",
                         "media.stateEnd": "Media stateEnd",
-                        "media.statesUpdate": "Media statesUpdate"
+                        "media.statesUpdate": "Media statesUpdate",
+                        "media.downloaded": "Media downloaded content"
                     },
                     "meta:titleId": "time-series##xdm:eventType##title##79221",
                     "meta:descriptionId": "time-series##xdm:eventType##description##27681"

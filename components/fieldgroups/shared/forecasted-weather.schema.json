@@ -143,7 +143,7 @@
         "xdm:uvIndex": {
           "title": "UV Index",
           "description": "Maximum UV index for the 12 hour forecast period.",
-          "$ref": "#/definitions/uvIndex"
+          "type": "integer"
         }
       }
     },
@@ -228,7 +228,7 @@
         "uvIndex": {
           "title": "UV Index",
           "description": "Maximum UV index for the 12 hour forecast period.",
-          "$ref": "#/definitions/uvIndex"
+          "type": "integer"
         }
       }
     },
@@ -243,18 +243,6 @@
           "title": "Miles",
           "type": "number",
           "description": "Distance in miles."
-        }
-      }
-    },
-    "uvIndex": {
-      "properties": {
-        "xdm:_name": {
-          "type": "string",
-          "description": "Index name"
-        },
-        "xdm:value": {
-          "type": "string",
-          "description": "Index value"
         }
       }
     }

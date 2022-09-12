@@ -16,7 +16,7 @@
         "sessionDetails": {
             "properties": {
                 "xdm:ID": {
-                    "title": "Reporting Media Session ID",
+                    "title": "Media Session ID",
                     "type": "string",
                     "description": "This identifies an instance of a content stream unique to an individual playback."
                 },

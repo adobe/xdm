@@ -204,11 +204,6 @@
                       }
                     }
                   }
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberContactAddress": {
-                  "title": "Contact address specified by the subscriber.",
-                  "type": "string",
-                  "description": "Contact address specified by the subscriber."
                 }
               }
             },

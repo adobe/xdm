@@ -957,7 +957,9 @@ Unknown type `object`.
               "title": "Error ID",
               "type": "string",
               "description": "The error ID.",
-              "minLength": 1
+              "minLength": 1,
+              "meta:titleId": "media##xdm:errorID##title##82411",
+              "meta:descriptionId": "media##xdm:errorID##description##30321"
             },
             "xdm:errorSource": {
               "title": "Error source",
@@ -970,13 +972,17 @@ Unknown type `object`.
               "meta:enum": {
                 "player": "Player source.",
                 "external": "External source."
-              }
+              },
+              "meta:titleId": "media##xdm:errorSource##title##25331",
+              "meta:descriptionId": "media##xdm:errorSource##description##82201"
             }
           },
           "required": [
             "xdm:errorID",
             "xdm:errorSource"
-          ]
+          ],
+          "meta:titleId": "media##xdm:error##title##79291",
+          "meta:descriptionId": "media##xdm:error##description##84991"
         },
         "xdm:errors": {
           "title": "Errors",

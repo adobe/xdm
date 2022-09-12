@@ -23,7 +23,6 @@
           "title": "Account Person ID",
           "description": "Unique identifier for this relationship between an account and a person.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
           "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171"
         },
@@ -38,7 +37,6 @@
           "title": "Account ID",
           "description": "Unique identifier for the account in this account person relationship.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "account-person##xdm:accountID##title##74971",
           "meta:descriptionId": "account-person##xdm:accountID##description##96141"
         },
@@ -53,7 +51,6 @@
           "title": "Person ID",
           "description": "Unique identifier for the person in this account person relationship.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "account-person##xdm:personID##title##42991",
           "meta:descriptionId": "account-person##xdm:personID##description##66421"
         },
@@ -78,7 +75,9 @@
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "account-person##xdm:personRoles##title##98611",
+          "meta:descriptionId": "account-person##xdm:personRoles##description##67421"
         },
         "xdm:isDirect": {
           "title": "Direct Flag",
@@ -129,7 +128,9 @@
         "xdm:relationshipSource": {
           "title": "Relationship Source",
           "description": "Source of Account Person relation.",
-          "type": "string"
+          "type": "string",
+          "meta:titleId": "account-person##xdm:relationshipSource##title##40031",
+          "meta:descriptionId": "account-person##xdm:relationshipSource##description##88321"
         }
       }
     }

@@ -98,7 +98,9 @@
                         "items": {
                             "type": "string",
                             "maxLength": 25
-                        }
+                        },
+                        "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                        "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571"
                     },
                     "xdm:subscribers": {
                         "title": "Subscribers",
@@ -163,7 +165,8 @@
                     "meta:enum": {
                         "IDFA": "Apple's ID for Advertisers (IDFA)",
                         "GAID": "Google's Advertiser ID (GAID) also known as Android Advertiser ID (AAID)"
-                    }
+                    },
+                    "meta:titleId": "consents-and-preferences##xdm:idType##title##12521"
                 }
             },
             "required": [
@@ -300,22 +303,30 @@
                 "xdm:call": {
                     "title": "Receive calls",
                     "description": "User permits receiving calls",
-                    "$ref": "#/definitions/marketing-field"
+                    "$ref": "#/definitions/marketing-field",
+                    "meta:titleId": "consents-and-preferences##xdm:call##title##53351",
+                    "meta:descriptionId": "consents-and-preferences##xdm:call##description##46361"
                 },
                 "xdm:fax": {
                     "title": "Receive fax",
                     "description": "User permits receiving fax",
-                    "$ref": "#/definitions/marketing-field"
+                    "$ref": "#/definitions/marketing-field",
+                    "meta:titleId": "consents-and-preferences##xdm:fax##title##44891",
+                    "meta:descriptionId": "consents-and-preferences##xdm:fax##description##14341"
                 },
                 "xdm:commercialEmail": {
                     "title": "Receive commercial emails",
                     "description": "User permits receiving commercial emails",
-                    "$ref": "#/definitions/marketing-field"
+                    "$ref": "#/definitions/marketing-field",
+                    "meta:titleId": "consents-and-preferences##xdm:commercialEmail##title##16261",
+                    "meta:descriptionId": "consents-and-preferences##xdm:commercialEmail##description##88361"
                 },
                 "xdm:postalMail": {
                     "title": "Receive postal mail",
                     "description": "User permits receiving postal mail",
-                    "$ref": "#/definitions/marketing-field"
+                    "$ref": "#/definitions/marketing-field",
+                    "meta:titleId": "consents-and-preferences##xdm:postalMail##title##70151",
+                    "meta:descriptionId": "consents-and-preferences##xdm:postalMail##description##84251"
                 },
                 "xdm:sms": {
                     "title": "Receive SMS",

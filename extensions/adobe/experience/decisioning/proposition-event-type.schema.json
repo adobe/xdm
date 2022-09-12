@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-event-type",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Classification Fields",
+  "description": "A set of direct customer interactions that an end-user might perform when shown a proposition.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "definitions": {
+    "proposition-event-type": {
+      "type": "object",
+      "properties": {
+        "xdm:send": {
+          "title": "send",
+          "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+          "type": "integer"
+        },
+        "xdm:trigger": {
+          "title": "trigger",
+          "description": "Proposition was chosen to be displayed by the client SDK. Other factors may prevent it from actually being displayed.",
+          "type": "integer"
+        },
+        "xdm:display": {
+          "title": "display",
+          "description": "Proposition was displayed to the user.",
+          "type": "integer"
+        },
+        "xdm:interact": {
+          "title": "interact",
+          "description": "User interacted with the proposition, usually in a positive way.",
+          "type": "integer"
+        },
+        "xdm:dismiss": {
+          "title": "dismiss",
+          "description": "User dismissed or rejected the proposition without any other direct interaction.",
+          "type": "integer"
+        },
+        "xdm:unsubscribe": {
+          "title": "unsubscribe",
+          "description": "User has requested to not be shown the proposition in the future.",
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/proposition-event-type"
+    }
+  ]
+}

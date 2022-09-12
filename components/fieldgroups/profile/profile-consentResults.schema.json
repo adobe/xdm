@@ -29,9 +29,14 @@
               "type": "array",
               "items": {
                 "type": "string"
-              }
-            }
-          }
+              },
+              "meta:titleId": "profile-consentResults##additionalProperties##title##15641",
+              "meta:descriptionId": "profile-consentResults##additionalProperties##description##11471"
+            },
+            "meta:titleId": "profile-consentResults##additionalProperties##title##89801",
+            "meta:descriptionId": "profile-consentResults##additionalProperties##description##38471"
+          },
+          "meta:titleId": "profile-consentResults##xdm:consentPoliciesIDMap##title##43181"
         }
       }
     }
@@ -41,5 +46,7 @@
       "$ref": "#/definitions/profile-consentResults"
     }
   ],
-  "meta:status": "stable"
+  "meta:status": "stable",
+  "meta:titleId": "profile-consentResults##title##35151",
+  "meta:descriptionId": "profile-consentResults##description##64881"
 }

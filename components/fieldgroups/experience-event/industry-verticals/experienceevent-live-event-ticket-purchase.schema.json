@@ -1,0 +1,158 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-live-event-purchase",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Live Event Ticket Purchase",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Purchase history for tickets to a live event, e.g., a concert or sports game.",
+  "definitions": {
+    "experienceevent-live-event-purchase": {
+      "properties": {
+        "xdm:eventPurchaseDetails": {
+          "type": "object",
+          "properties": {
+            "xdm:ticketPurchaseID": {
+              "title": "Ticket Purchase ID",
+              "description": "Unique ID for the ticket purchase order.",
+              "type": "string"
+            },
+            "xdm:liveEventID": {
+              "title": "Live Event Identifier",
+              "description": "Unique ID for the event in which the ticket was purchased for.",
+              "type": "string"
+            },
+            "xdm:ticketMasterEventCode": {
+              "title": "TicketMaster.com Event Code",
+              "description": "TicketMaster.com Event Code",
+              "type": "string"
+            },
+            "xdm:liveEventName": {
+              "title": "Live Event Name",
+              "description": "Name of the live event.",
+              "type": "string"
+            },
+            "xdm:corporateSponsorshipFlag": {
+              "title": "Corporate Sponsorship Flag ",
+              "description": "Indicates if the ticket was provided by a corporate sponsorship.",
+              "type": "boolean"
+            },
+            "xdm:tickets": {
+              "type": "array",
+              "description": "Ticket(s) Purchased",
+              "title": "Tickets",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "xdm:barcodeID": {
+                    "title": "Ticket Bar Code",
+                    "description": "Unique bar code assigned to a ticket.",
+                    "type": "string"
+                  },
+                  "xdm:deliveryMethod": {
+                    "title": "Delivery Method",
+                    "description": "Ticket Delivery Method, for example, postal or digital.",
+                    "type": "string",
+                    "meta:enum": {
+                      "postal": "Postal Delivery",
+                      "digital": "Digital Delivery"
+                    }
+                  },
+                  "xdm:rowName": {
+                    "title": "Seat Row Name",
+                    "description": "Seat row name as printed on the ticket",
+                    "type": "string"
+                  },
+                  "xdm:seatingArea": {
+                    "title": "Seating Area",
+                    "description": "Seating area as printed on ticket",
+                    "type": "string"
+                  },
+                  "xdm:seatName": {
+                    "title": "Seat Name",
+                    "description": "Seat name as printed on ticket.",
+                    "type": "string"
+                  },
+                  "xdm:seatingAreaNumeric": {
+                    "title": "Seating Area Numeric",
+                    "description": "Numeric Seating Area value",
+                    "type": "integer"
+                  },
+                  "xdm:sectionCategory": {
+                    "title": "Seating Section Category",
+                    "description": "Category of section, used to describe tier of ticket, balcony, box, etc...",
+                    "type": "string"
+                  },
+                  "xdm:sectionGroup": {
+                    "title": "Seating Section Group",
+                    "description": "Section Group as presented on ticket",
+                    "type": "string"
+                  },
+                  "xdm:sectionLevel": {
+                    "title": "Seating Section Level",
+                    "description": "Section Level as presented on ticket.",
+                    "type": "string"
+                  },
+                  "xdm:sectionName": {
+                    "title": "Seating Section Name",
+                    "description": "Section name as presented on the ticket.",
+                    "type": "string"
+                  },
+                  "xdm:sectionRowName": {
+                    "title": "Seating Section Row Name",
+                    "description": "Seating section row name as presented on ticket.",
+                    "type": "string"
+                  },
+                  "xdm:ticketClassCategory": {
+                    "title": "Ticket Class Category",
+                    "description": "Category of the ticket class.",
+                    "type": "string"
+                  },
+                  "xdm:ticketClassGroupName": {
+                    "title": "Ticket Class Group Name",
+                    "description": "Group name of the ticket class.",
+                    "type": "string"
+                  },
+                  "xdm:ticketClassName": {
+                    "title": "Ticket Class Name",
+                    "description": "Name of the ticket class.",
+                    "type": "string"
+                  },
+                  "xdm:ticketType": {
+                    "enum": ["season", "package", "single"],
+                    "title": "ticketType",
+                    "description": "Enum: Type of ticket purchase, season, package, or single ticket.",
+                    "type": "string",
+                    "meta:enum": {
+                      "season": "Season Ticket Purchase",
+                      "package": "Mini-Package Purchase",
+                      "single": "Single Ticket Purchase"
+                    }
+                  }
+                }
+              }
+            },
+            "xdm:ticketPurchase": {
+              "$ref": "https://ns.adobe.com/xdm/datatypes/transaction",
+              "description": "Transaction details for ticket purchase.",
+              "title": "Ticket Purchase Transaction"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-live-event-purchase"
+    }
+  ],
+  "meta:status": "experimental"
+}

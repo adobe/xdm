@@ -11,6 +11,12 @@
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "healthcare_services",
+            "telecom"
+        ]
+    },
     "meta:extends": [
         "https://ns.adobe.com/xdm/data/record"
     ],
@@ -39,7 +45,7 @@
             "$ref": "https://ns.adobe.com/xdm/data/record"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {}
     ]

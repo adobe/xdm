@@ -310,10 +310,10 @@ Unknown type ``.
             "physical_mail": "Physical Mail",
             "inVehicle_messages": "In-vehicle Messages",
             "in_home_messages": "In-home Messages",
-            "iot": "IoT Messages",
+            "iot_messages": "IoT Messages",
             "social_media": "Social Media",
             "other": "Other",
-            "no_preferred": "No Preferred Channel",
+            "none": "No Preferred Channel",
             "unknown": "Unknown"
           },
           "meta:titleId": "consent-preferences##xdm:preferredChannel##title##9111",
@@ -927,13 +927,11 @@ The value of this property **must** be equal to one of the [known values below](
 | `physical_mail` | Physical Mail |
 | `inVehicle_messages` | In-vehicle Messages |
 | `in_home_messages` | In-home Messages |
-| `iot` | IoT Messages |
+| `iot_messages` | IoT Messages |
 | `social_media` | Social Media |
 | `other` | Other |
-| `no_preferred` | No Preferred Channel |
+| `none` | No Preferred Channel |
 | `unknown` | Unknown |
-| `iot_messages` |  |
-| `none` |  |
 
 
 

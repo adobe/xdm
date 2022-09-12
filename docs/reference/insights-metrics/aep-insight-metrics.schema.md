@@ -104,12 +104,34 @@ Captures metrics related to various destinations on AEP.
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:failedIdentitiesCount`| number | Optional |
 | `xdm:flowCompletedTime`| string | Optional |
 | `xdm:flowRunID`| string | Optional |
 | `xdm:flowRunStatus`| string | Optional |
 | `xdm:totalIdentitiesActivated`| number | Optional |
 | `xdm:totalIdentitiesSkipped`| number | Optional |
 | `xdm:totalProfilesActivated`| number | Optional |
+
+
+
+#### xdm:failedIdentitiesCount
+##### Count of failed Identities
+
+Count of failed identities summarized at the granularity of provided dimensions in this record.
+
+`xdm:failedIdentitiesCount`
+* is optional
+* type: `number`
+
+##### xdm:failedIdentitiesCount Type
+
+
+`number`
+
+
+
+
+
 
 
 

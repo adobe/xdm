@@ -16,12 +16,16 @@
                 "xdm:cartID": {
                     "title": "Cart ID",
                     "type": "string",
-                    "description": "Unique identifier assigned by the seller for the cart."
+                    "description": "Unique identifier assigned by the seller for the cart.",
+                    "meta:titleId": "cart##xdm:cartID##title##16131",
+                    "meta:descriptionId": "cart##xdm:cartID##description##66661"
                 },
                 "xdm:cartSource": {
                     "title": "Cart Source",
                     "type": "string",
-                    "description": "Where one or more products was added to the cart from."
+                    "description": "Where one or more products was added to the cart from.",
+                    "meta:titleId": "cart##xdm:cartSource##title##55321",
+                    "meta:descriptionId": "cart##xdm:cartSource##description##1551"
                 }
             }
         }
@@ -33,6 +37,8 @@
     ],
     "meta:status": "experimental",
     "meta:createdDate": "2022-03-02",
+    "meta:titleId": "cart##title##89681",
+    "meta:descriptionId": "cart##description##25591",
     "examples": [
         {
             "xdm:cartID": "abc123",

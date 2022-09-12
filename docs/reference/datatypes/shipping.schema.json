@@ -22,6 +22,24 @@
                     "title": "Shipping Amount",
                     "type": "number",
                     "description": "The amount the customer had to pay for shipping."
+                },
+                "xdm:shippingDestination": {
+                    "title": "Shipping Destination",
+                    "type": "string",
+                    "description": "The ship-to  destination specified by the user. It could be home, store etc.",
+                    "enum": [
+                        "home",
+                        "store"
+                    ],
+                    "meta:enum": {
+                        "home": "Home",
+                        "store": "Store"
+                    }
+                },
+                "xdm:address": {
+                    "title": "Shipping Address",
+                    "description": "Shipping Address.",
+                    "$ref": "https://ns.adobe.com/xdm/common/address"
                 }
             }
         }
@@ -32,7 +50,6 @@
         }
     ],
     "meta:status": "experimental",
-    "meta:createdDate": "2022-03-02",
     "examples": [
         {
             "xdm:shippingAmount": 20,

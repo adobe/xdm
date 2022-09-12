@@ -9,7 +9,7 @@ Plan business entity to collect data pertaining to plans (e.g. health plan, insu
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
 |-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/plan.schema.json](classes/plan.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/plan.schema.json](classes/plan.schema.json) |
 ## Schema Hierarchy
 
 * Plan `https://ns.adobe.com/xdm/classes/plan`

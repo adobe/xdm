@@ -87,7 +87,9 @@
         "xdm:destinationCategory": {
           "title": "Destination Category",
           "type": "string",
-          "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve"
+          "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
+          "meta:titleId": "destination##xdm:destinationCategory##title##39661",
+          "meta:descriptionId": "destination##xdm:destinationCategory##description##85151"
         },
         "xdm:destinationFrequency": {
           "title": "Destination Frequency",
@@ -97,7 +99,9 @@
           "meta:enum": {
             "Batch": "Batch",
             "Streaming": "Streaming"
-          }
+          },
+          "meta:titleId": "destination##xdm:destinationFrequency##title##71911",
+          "meta:descriptionId": "destination##xdm:destinationFrequency##description##87861"
         }
       }
     }

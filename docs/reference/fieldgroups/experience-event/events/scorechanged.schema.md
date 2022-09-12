@@ -71,7 +71,9 @@ Unknown type `object`.
     "xdm:scoreAttributeKey": {
       "title": "Score Attribute Key",
       "description": "Unique key of the lead score attribute.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+      "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971"
     },
     "xdm:scoreAttributeName": {
       "title": "Score Attribute Name",

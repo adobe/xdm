@@ -342,11 +342,11 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:segmentStatus Known Values
 | Value | Description |
 |-------|-------------|
-| `ACTIVE` |  |
-| `INACTIVE` |  |
-| `DELETED` |  |
-| `DRAFT` |  |
-| `REVOKED` |  |
+| `ACTIVE` | Active |
+| `INACTIVE` | Inactive |
+| `DELETED` | Deleted |
+| `DRAFT` | Draft |
+| `REVOKED` | Revoked |
 
 
 

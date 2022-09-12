@@ -20,7 +20,9 @@
           "description": "Filters applied to limit search results.",
           "items": {
             "$ref": "#/definitions/filterItem"
-          }
+          },
+          "meta:titleId": "sitesearch##xdm:filter##title##8901",
+          "meta:descriptionId": "sitesearch##xdm:filter##description##46961"
         },
         "xdm:sort": {
           "title": "Sort",
@@ -28,12 +30,16 @@
           "description": "Specification for how search results should be sorted.",
           "items": {
             "$ref": "#/definitions/sortItem"
-          }
+          },
+          "meta:titleId": "sitesearch##xdm:sort##title##63941",
+          "meta:descriptionId": "sitesearch##xdm:sort##description##1611"
         },
         "xdm:query": {
           "title": "Query",
           "type": "string",
-          "description": "The terms searched for."
+          "description": "The terms searched for.",
+          "meta:titleId": "sitesearch##xdm:query##title##93531",
+          "meta:descriptionId": "sitesearch##xdm:query##description##12941"
         },
         "xdm:suggestions": {
           "title": "Suggestions",
@@ -41,12 +47,16 @@
           "description": "Suggested search terms.",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "sitesearch##xdm:suggestions##title##87051",
+          "meta:descriptionId": "sitesearch##xdm:suggestions##description##63381"
         },
         "xdm:numberOfResults": {
           "title": "Number of Results",
           "type": "integer",
-          "description": "Number of search results."
+          "description": "Number of search results.",
+          "meta:titleId": "sitesearch##xdm:numberOfResults##title##60621",
+          "meta:descriptionId": "sitesearch##xdm:numberOfResults##description##39541"
         }
       }
     },
@@ -55,7 +65,9 @@
         "xdm:attribute": {
           "title": "Attribute",
           "type": "string",
-          "description": "The facet of an item used to determine whether to include it in search results."
+          "description": "The facet of an item used to determine whether to include it in search results.",
+          "meta:titleId": "sitesearch##xdm:attribute##title##79631",
+          "meta:descriptionId": "sitesearch##xdm:attribute##description##12711"
         },
         "xdm:value": {
           "title": "Value",
@@ -63,12 +75,16 @@
           "description": "Attribute values used to determine which items will be included in search results.",
           "items": {
             "type": "string"
-          }
+          },
+          "meta:titleId": "sitesearch##xdm:value##title##64351",
+          "meta:descriptionId": "sitesearch##xdm:value##description##28781"
         },
         "xdm:isRange": {
           "title": "Is Range",
           "type": "boolean",
-          "description": "When true, values indicate endpoints of an acceptable range of values."
+          "description": "When true, values indicate endpoints of an acceptable range of values.",
+          "meta:titleId": "sitesearch##xdm:isRange##title##67851",
+          "meta:descriptionId": "sitesearch##xdm:isRange##description##15341"
         }
       }
     },
@@ -77,7 +93,9 @@
         "xdm:attribute": {
           "title": "Attribute",
           "type": "string",
-          "description": "An attribute used to sort items in search results."
+          "description": "An attribute used to sort items in search results.",
+          "meta:titleId": "sitesearch##xdm:attribute##title##23131",
+          "meta:descriptionId": "sitesearch##xdm:attribute##description##90901"
         },
         "xdm:order": {
           "title": "Order",
@@ -88,7 +106,9 @@
             "ASC": "Ascending order",
             "DESC": "Descending order",
             "RELEVANCE": "Sort items by relevance"
-          }
+          },
+          "meta:titleId": "sitesearch##xdm:order##title##67381",
+          "meta:descriptionId": "sitesearch##xdm:order##description##40201"
         }
       }
     }
@@ -101,5 +121,7 @@
       "$ref": "#/definitions/sitesearch"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "experimental",
+  "meta:titleId": "sitesearch##title##57931",
+  "meta:descriptionId": "sitesearch##description##73541"
 }

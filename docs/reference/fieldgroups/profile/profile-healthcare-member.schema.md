@@ -9,7 +9,7 @@ Healthcare member details of a person that has or will receive a service or care
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/profile/profile-healthcare-member.schema.json](fieldgroups/profile/profile-healthcare-member.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/profile/profile-healthcare-member.schema.json](fieldgroups/profile/profile-healthcare-member.schema.json) |
 ## Schema Hierarchy
 
 * Healthcare Member Details `https://ns.adobe.com/xdm/mixins/profile-healthcare-member`
@@ -151,66 +151,15 @@ Information about the member.
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:beneficiaryRelationship`| string | Optional |
-| `xdm:billingAccountID`| string | Optional |
 | `xdm:dateAgeCollected`| string | Optional |
 | `xdm:deceasedDate`| string | Optional |
-| `xdm:emergencyContact`| object | Optional |
+| `xdm:healthConcerns`| array | Optional |
 | `xdm:isDeceased`| boolean | Optional |
-| `xdm:isDependent`| boolean | Optional |
-| `xdm:medications`| array | Optional |
-| `xdm:multipleBirth`| object | Optional |
-| `xdm:nationality`| string | Optional |
 | `xdm:plans`| array | Optional |
-| `xdm:preferredAvaiability`| string | Optional |
+| `xdm:preferredAvailability`| string | Optional |
+| `xdm:prescriptions`| array | Optional |
 | `xdm:primaryCarePhysicians`| array | Optional |
-| `xdm:primaryMemberID`| string | Optional |
 | `xdm:specialists`| array | Optional |
-
-
-
-#### xdm:beneficiaryRelationship
-##### Beneficiary Relationship
-
-Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc).
-
-`xdm:beneficiaryRelationship`
-* is optional
-* type: `enum`
-
-The value of this property **must** be equal to one of the [known values below](#xdmmemberdetails-known-values).
-
-##### xdm:beneficiaryRelationship Known Values
-| Value | Description |
-|-------|-------------|
-| `self` | Self |
-| `spouse` | Spouse |
-| `child` | Child |
-| `parent` | Parent |
-
-
-
-
-
-
-#### xdm:billingAccountID
-##### Billing Account ID
-
-Unique identifier of the billing account.
-
-`xdm:billingAccountID`
-* is optional
-* type: `string`
-
-##### xdm:billingAccountID Type
-
-
-`string`
-
-
-
-
-
 
 
 
@@ -258,44 +207,27 @@ Deceased date if the patient is deceased.
 
 
 
-#### xdm:emergencyContact
-##### Emergency Contact
+#### xdm:healthConcerns
+##### Health Concerns
 
-Emergency contact details.
+Array list of all health concerns
 
-`xdm:emergencyContact`
+`xdm:healthConcerns`
 * is optional
-* type: `object`
+* type: `string[]`
 
-##### xdm:emergencyContact Type
 
-Unknown type `object`.
+##### xdm:healthConcerns Type
 
-```json
-{
-  "title": "Emergency Contact",
-  "description": "Emergency contact details.",
-  "type": "object",
-  "properties": {
-    "xdm:fullName": {
-      "title": "Full Name",
-      "type": "string",
-      "description": "Full name of the emergency contact."
-    },
-    "xdm:phone": {
-      "title": "Phone Number",
-      "type": "string",
-      "description": "Phone number of the emergency contact."
-    },
-    "xdm:relationshipToMember": {
-      "title": "Relationship To Member",
-      "type": "string",
-      "description": "Emergency contact's relationship to the member."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
 
 
 
@@ -316,231 +248,6 @@ Boolean flag indicating if the member is deceased.
 
 
 `boolean`
-
-
-
-
-
-
-
-#### xdm:isDependent
-##### Is Dependent
-
-Indicates whether this member is a dependent.
-
-`xdm:isDependent`
-* is optional
-* type: `boolean`
-
-##### xdm:isDependent Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:medications
-##### Medications
-
-Medication information including ID, start date, and active flag.
-
-`xdm:medications`
-* is optional
-* type: `object[]`
-
-
-##### xdm:medications Type
-
-
-Array type: `object[]`
-
-All items must be of the type:
-`object` with following properties:
-
-
-| Property | Type | Required |
-|----------|------|----------|
-| `xdm:ID`| string | Optional |
-| `xdm:isCurrent`| boolean | Optional |
-| `xdm:numberOfRefills`| integer | Optional |
-| `xdm:refillLocation`|  | Optional |
-| `xdm:startDate`| string | Optional |
-
-
-
-#### xdm:ID
-##### Medication ID
-
-Unique identifier for the medication.
-
-`xdm:ID`
-* is optional
-* type: `string`
-
-##### xdm:ID Type
-
-
-`string`
-
-
-
-
-
-
-
-
-#### xdm:isCurrent
-##### Is Current
-
-Indicates whether the medication is current or past.
-
-`xdm:isCurrent`
-* is optional
-* type: `boolean`
-
-##### xdm:isCurrent Type
-
-
-`boolean`
-
-
-
-
-
-
-
-#### xdm:numberOfRefills
-##### Number Of Refills
-
-Number of refills prescribed by the provider for this medication.
-
-`xdm:numberOfRefills`
-* is optional
-* type: `integer`
-
-##### xdm:numberOfRefills Type
-
-
-`integer`
-
-
-
-
-
-
-
-
-#### xdm:refillLocation
-##### Medication Refill Location
-
-undefined
-
-`xdm:refillLocation`
-* is optional
-* type: reference
-
-##### xdm:refillLocation Type
-
-
-* []() – `https://ns.adobe.com/xdm/common/address`
-
-
-
-
-
-
-
-#### xdm:startDate
-##### Medication Start Date
-
-Date on which the patient began taking the medication.
-
-`xdm:startDate`
-* is optional
-* type: `string`
-
-##### xdm:startDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### xdm:multipleBirth
-
-undefined
-
-`xdm:multipleBirth`
-* is optional
-* type: `object`
-
-##### xdm:multipleBirth Type
-
-Unknown type `object`.
-
-```json
-{
-  "type": "object",
-  "properties": {
-    "xdm:isMultipleBirth": {
-      "title": "Multiple Birth Indicator",
-      "type": "boolean",
-      "description": "Boolean flag to indicate if the member gave multiple births."
-    },
-    "xdm:multipleBirthNumber": {
-      "title": "Number Of Babies",
-      "type": "integer",
-      "description": "Number of babies born if multiple birth is true."
-    }
-  },
-  "simpletype": "`object`"
-}
-```
-
-
-
-
-
-
-
-#### xdm:nationality
-##### Nationality
-
-The legal relationship between a patient/member and their state represented using the ISO 3166-1 Alpha-2 code.
-
-`xdm:nationality`
-* is optional
-* type: `string`
-
-##### xdm:nationality Type
-
-
-`string`
-
-
-All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E%5BA-Z%5D%7B2%7D%24)):
-```regex
-^[A-Z]{2}$
-```
-
 
 
 
@@ -569,10 +276,64 @@ All items must be of the type:
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:beneficiaryRelationship`| string | Optional |
+| `xdm:billingAccountID`| string | Optional |
 | `xdm:coverageEndDate`| string | Optional |
 | `xdm:coverageStartDate`| string | Optional |
 | `xdm:isActive`| boolean | Optional |
+| `xdm:isDependent`| boolean | Optional |
 | `xdm:planID`| string | Optional |
+| `xdm:primaryMemberID`| string | Optional |
+
+
+
+#### xdm:beneficiaryRelationship
+##### Beneficiary Relationship
+
+Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc).
+
+`xdm:beneficiaryRelationship`
+* is optional
+* type: `string`
+
+##### xdm:beneficiaryRelationship Type
+
+
+`string`
+
+
+
+##### xdm:beneficiaryRelationship Known Values
+| Value | Description |
+|-------|-------------|
+| `self` | Self |
+| `spouse` | Spouse |
+| `child` | Child |
+| `parent` | Parent |
+
+
+
+
+
+
+#### xdm:billingAccountID
+##### Billing Account ID
+
+Unique identifier of the billing account.
+
+`xdm:billingAccountID`
+* is optional
+* type: `string`
+
+##### xdm:billingAccountID Type
+
+
+`string`
+
+
+
+
+
 
 
 
@@ -640,6 +401,26 @@ Boolean flag indicates whether the plan is active.
 
 
 
+#### xdm:isDependent
+##### Is Dependent
+
+Indicates whether this member is a dependent.
+
+`xdm:isDependent`
+* is optional
+* type: `boolean`
+
+##### xdm:isDependent Type
+
+
+`boolean`
+
+
+
+
+
+
+
 #### xdm:planID
 ##### Plan Identifier
 
@@ -661,6 +442,19 @@ Unique identifier for the plan enrolled in by the member.
 
 
 
+#### xdm:primaryMemberID
+##### Primary Member ID
+
+Unique identifier of the primary subscriber if the member is a dependent.
+
+`xdm:primaryMemberID`
+* is optional
+* type: `string`
+
+##### xdm:primaryMemberID Type
+
+
+`string`
 
 
 
@@ -669,19 +463,240 @@ Unique identifier for the plan enrolled in by the member.
 
 
 
-#### xdm:preferredAvaiability
+
+
+
+
+
+
+
+
+#### xdm:preferredAvailability
 ##### Preferred Availability
 
 Patient's preferred day and time availability for an appointment.
 
-`xdm:preferredAvaiability`
+`xdm:preferredAvailability`
 * is optional
 * type: `string`
 
-##### xdm:preferredAvaiability Type
+##### xdm:preferredAvailability Type
 
 
 `string`
+
+
+
+
+
+
+
+
+#### xdm:prescriptions
+##### Prescriptions
+
+Prescription information including ID, start date, and active flag.
+
+`xdm:prescriptions`
+* is optional
+* type: `object[]`
+
+
+##### xdm:prescriptions Type
+
+
+Array type: `object[]`
+
+All items must be of the type:
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:ID`| string | Optional |
+| `xdm:endDate`| string | Optional |
+| `xdm:isCurrent`| boolean | Optional |
+| `xdm:name`| string | Optional |
+| `xdm:numberOfRefills`| integer | Optional |
+| `xdm:refillLocation`|  | Optional |
+| `xdm:refillType`| string | Optional |
+| `xdm:startDate`| string | Optional |
+
+
+
+#### xdm:ID
+##### Prescription ID
+
+Unique identifier for the prescription.
+
+`xdm:ID`
+* is optional
+* type: `string`
+
+##### xdm:ID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:endDate
+##### Prescription End Date
+
+Date on which the patient stops taking the prescription.
+
+`xdm:endDate`
+* is optional
+* type: `string`
+
+##### xdm:endDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
+
+#### xdm:isCurrent
+##### Is Current
+
+Indicates whether the prescription is current or past.
+
+`xdm:isCurrent`
+* is optional
+* type: `boolean`
+
+##### xdm:isCurrent Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### xdm:name
+##### Prescription Name
+
+Name of the prescription.
+
+`xdm:name`
+* is optional
+* type: `string`
+
+##### xdm:name Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:numberOfRefills
+##### Number Of Refills
+
+Number of refills prescribed by the provider for this prescription.
+
+`xdm:numberOfRefills`
+* is optional
+* type: `integer`
+
+##### xdm:numberOfRefills Type
+
+
+`integer`
+
+
+
+
+
+
+
+
+#### xdm:refillLocation
+##### Prescription Refill Location
+
+Address at which the prescription will be filled.
+
+`xdm:refillLocation`
+* is optional
+* type: reference
+
+##### xdm:refillLocation Type
+
+
+* []() – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
+
+
+#### xdm:refillType
+##### Refill Type
+
+Type of prescription refill.
+
+`xdm:refillType`
+* is optional
+* type: `string`
+
+##### xdm:refillType Type
+
+
+`string`
+
+
+
+##### xdm:refillType Known Values
+| Value | Description |
+|-------|-------------|
+| `Retail Pharmacy` | Retail Pharmacy |
+| `Mail Order` | Mail Order |
+
+
+
+
+
+
+#### xdm:startDate
+##### Prescription Start Date
+
+Date on which the patient began taking the prescription.
+
+`xdm:startDate`
+* is optional
+* type: `string`
+
+##### xdm:startDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+
 
 
 
@@ -711,7 +726,9 @@ All items must be of the type:
 | Property | Type | Required |
 |----------|------|----------|
 | `xdm:endDate`| string | Optional |
-| `xdm:fullName`| string | Optional |
+| `xdm:firstName`| string | Optional |
+| `xdm:healthNetworkAffiliation`| array | Optional |
+| `xdm:lastName`| string | Optional |
 | `xdm:providerID`| string | Optional |
 | `xdm:startDate`| string | Optional |
 
@@ -739,16 +756,65 @@ Date on which the PCP ended care for the member.
 
 
 
-#### xdm:fullName
-##### Full Name
+#### xdm:firstName
+##### First Name
 
-Primary care physician's full name.
+Primary care physician's first name.
 
-`xdm:fullName`
+`xdm:firstName`
 * is optional
 * type: `string`
 
-##### xdm:fullName Type
+##### xdm:firstName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:healthNetworkAffiliation
+##### Health Network Affiliation
+
+Name of the health network to which the Primary Care Provider is affiliated.
+
+`xdm:healthNetworkAffiliation`
+* is optional
+* type: `string[]`
+
+
+##### xdm:healthNetworkAffiliation Type
+
+
+Array type: `string[]`
+
+All items must be of the type:
+`string`
+
+
+
+
+
+
+
+
+
+
+
+#### xdm:lastName
+##### Last Name
+
+Primary care physician's last name.
+
+`xdm:lastName`
+* is optional
+* type: `string`
+
+##### xdm:lastName Type
 
 
 `string`
@@ -784,7 +850,7 @@ Unique identifier of the physician.
 #### xdm:startDate
 ##### Start Date
 
-Date on which the PCP began care for the member.
+Date on which the primary care provider began care for the member.
 
 `xdm:startDate`
 * is optional
@@ -802,27 +868,6 @@ Date on which the PCP began care for the member.
 
 
 
-
-
-
-
-
-
-
-
-#### xdm:primaryMemberID
-##### Primary Member ID
-
-Unique identifier of the primary subscriber if the member is a dependent.
-
-`xdm:primaryMemberID`
-* is optional
-* type: `string`
-
-##### xdm:primaryMemberID Type
-
-
-`string`
 
 
 
@@ -852,22 +897,44 @@ All items must be of the type:
 
 | Property | Type | Required |
 |----------|------|----------|
-| `xdm:fullname`| string | Optional |
+| `xdm:firstName`| string | Optional |
+| `xdm:lastName`| string | Optional |
 | `xdm:providerID`| string | Optional |
-| `xdm:specialty`| string | Optional |
+| `xdm:specialty`| array | Optional |
 
 
 
-#### xdm:fullname
-##### Full Name
+#### xdm:firstName
+##### first Name
 
-Full name of the specialist provider.
+First name of the specialist provider.
 
-`xdm:fullname`
+`xdm:firstName`
 * is optional
 * type: `string`
 
-##### xdm:fullname Type
+##### xdm:firstName Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:lastName
+##### last Name
+
+Last name of the specialist provider.
+
+`xdm:lastName`
+* is optional
+* type: `string`
+
+##### xdm:lastName Type
 
 
 `string`
@@ -907,12 +974,18 @@ Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc)
 
 `xdm:specialty`
 * is optional
-* type: `string`
+* type: `string[]`
+
 
 ##### xdm:specialty Type
 
 
+Array type: `string[]`
+
+All items must be of the type:
 `string`
+
+
 
 
 

@@ -15,25 +15,36 @@
     "meta:abstract": true,
     "definitions": {
         "proposition-event-type": {
+            "type": "object",
             "properties": {
-                "https://ns.adobe.com/experience/decisioning/proposition-event-type/send": {
+                "xdm:send": {
                     "title": "send",
                     "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
                     "type": "integer"
                 },
-                "https://ns.adobe.com/experience/decisioning/proposition-event-type/display": {
+                "xdm:trigger": {
+                    "title": "trigger",
+                    "description": "Proposition was chosen to be displayed by the client SDK. Other factors may prevent it from actually being displayed.",
+                    "type": "integer"
+                },
+                "xdm:display": {
                     "title": "display",
                     "description": "Proposition was displayed to the user.",
                     "type": "integer"
                 },
-                "https://ns.adobe.com/experience/decisioning/proposition-event-type/interact": {
+                "xdm:interact": {
                     "title": "interact",
                     "description": "User interacted with the proposition, usually in a positive way.",
                     "type": "integer"
                 },
-                "https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss": {
+                "xdm:dismiss": {
                     "title": "dismiss",
-                    "description": "User dismissed the proposition without any other direct interaction.",
+                    "description": "User dismissed or rejected the proposition without any other direct interaction.",
+                    "type": "integer"
+                },
+                "xdm:unsubscribe": {
+                    "title": "unsubscribe",
+                    "description": "User has requested to not be shown the proposition in the future.",
                     "type": "integer"
                 }
             }

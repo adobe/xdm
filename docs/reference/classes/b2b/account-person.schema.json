@@ -25,7 +25,6 @@
                     "title": "Account Person ID",
                     "description": "Unique identifier for this relationship between an account and a person.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
                     "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171"
                 },
@@ -40,7 +39,6 @@
                     "title": "Account ID",
                     "description": "Unique identifier for the account in this account person relationship.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:accountID##title##74971",
                     "meta:descriptionId": "account-person##xdm:accountID##description##96141"
                 },
@@ -55,7 +53,6 @@
                     "title": "Person ID",
                     "description": "Unique identifier for the person in this account person relationship.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:personID##title##42991",
                     "meta:descriptionId": "account-person##xdm:personID##description##66421"
                 },

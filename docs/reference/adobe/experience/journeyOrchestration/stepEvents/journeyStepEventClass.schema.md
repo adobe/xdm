@@ -174,6 +174,7 @@ The primary event type for this time-series record.
 | `media.stateStart` | Media stateStart |
 | `media.stateEnd` | Media stateEnd |
 | `media.statesUpdate` | Media statesUpdate |
+| `media.downloaded` | Media downloaded content |
 
 
 

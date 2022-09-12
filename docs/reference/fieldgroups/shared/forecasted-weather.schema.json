@@ -143,7 +143,7 @@
                 "xdm:uvIndex": {
                     "title": "UV Index",
                     "description": "Maximum UV index for the 12 hour forecast period.",
-                    "$ref": "#/definitions/uvIndex"
+                    "type": "integer"
                 }
             }
         },
@@ -232,7 +232,7 @@
                 "uvIndex": {
                     "title": "UV Index",
                     "description": "Maximum UV index for the 12 hour forecast period.",
-                    "$ref": "#/definitions/uvIndex"
+                    "type": "integer"
                 }
             }
         },
@@ -247,18 +247,6 @@
                     "title": "Miles",
                     "type": "number",
                     "description": "Distance in miles."
-                }
-            }
-        },
-        "uvIndex": {
-            "properties": {
-                "xdm:_name": {
-                    "type": "string",
-                    "description": "Index name"
-                },
-                "xdm:value": {
-                    "type": "string",
-                    "description": "Index value"
                 }
             }
         }
@@ -324,10 +312,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:night": {
                             "xdm:cloudCover": {
@@ -368,10 +353,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:qpfSnow": {
                             "xdm:centimeters": 0,
@@ -430,10 +412,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:night": {
                             "xdm:cloudCover": {
@@ -474,10 +453,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:qpfSnow": {
                             "xdm:centimeters": 0,
@@ -536,10 +512,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:night": {
                             "xdm:cloudCover": {
@@ -580,10 +553,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:qpfSnow": {
                             "xdm:centimeters": 0,
@@ -642,10 +612,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:night": {
                             "xdm:cloudCover": {
@@ -686,10 +653,7 @@
                                 "xdm:centimeters": 0,
                                 "xdm:inches": 0
                             },
-                            "xdm:uvIndex": {
-                                "xdm:_name": "UV_3",
-                                "xdm:value": "3"
-                            }
+                            "xdm:uvIndex": 3
                         },
                         "xdm:qpfSnow": {
                             "xdm:centimeters": 0,
@@ -722,10 +686,7 @@
                             "xdm:kilometers": 5,
                             "xdm:miles": 3.1
                         },
-                        "xdm:uvIndex": {
-                            "xdm:_name": "UV_3",
-                            "xdm:value": "3"
-                        }
+                        "xdm:uvIndex": 3
                     },
                     "xdm:day10Forecast": {
                         "xdm:qpf": {
@@ -753,10 +714,7 @@
                             "xdm:kilometers": 5,
                             "xdm:miles": 3.1
                         },
-                        "xdm:uvIndex": {
-                            "xdm:_name": "UV_3",
-                            "xdm:value": "3"
-                        }
+                        "xdm:uvIndex": 3
                     },
                     "xdm:day14Forecast": {
                         "xdm:qpf": {
@@ -784,10 +742,7 @@
                             "xdm:kilometers": 5,
                             "xdm:miles": 3.1
                         },
-                        "xdm:uvIndex": {
-                            "xdm:_name": "UV_3",
-                            "xdm:value": "3"
-                        }
+                        "xdm:uvIndex": 3
                     }
                 }
             }

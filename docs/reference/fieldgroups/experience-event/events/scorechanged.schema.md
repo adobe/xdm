@@ -9,7 +9,7 @@ Use to capture details when the lead score of a person changes.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
 
 ## Score Changed Example
 ```json

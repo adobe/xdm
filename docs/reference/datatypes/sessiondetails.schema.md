@@ -86,7 +86,7 @@ Session details information.
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
-### Reporting Media Session ID
+### Media Session ID
 
 This identifies an instance of a content stream unique to an individual playback.
 

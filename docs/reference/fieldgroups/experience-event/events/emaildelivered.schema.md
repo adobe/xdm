@@ -9,7 +9,7 @@ Use to capture details when an email is successfully delivered to a person.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/emaildelivered.schema.json](fieldgroups/experience-event/events/emaildelivered.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/emaildelivered.schema.json](fieldgroups/experience-event/events/emaildelivered.schema.json) |
 
 ## Email Delivered Example
 ```json

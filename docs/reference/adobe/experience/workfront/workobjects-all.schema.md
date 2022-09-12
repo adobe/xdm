@@ -18,6 +18,8 @@ High level field group that brings in all available work objects.
   * [Work Program Attributes](program.schema.md) `https://ns.adobe.com/experience/workfront/program`
   * [Work Portfolio Attributes](portfolio.schema.md) `https://ns.adobe.com/experience/workfront/portfolio`
   * [Work Task Attributes](opTask.schema.md) `https://ns.adobe.com/experience/workfront/optask`
+  * [Work Category Attributes](category.schema.md) `https://ns.adobe.com/experience/workfront/category`
+  * [Work Category Attributes](categoryparameter.schema.md) `https://ns.adobe.com/experience/workfront/categoryparameter`
 
 
 ## Workfront Work Objects Example
@@ -32,12 +34,255 @@ High level field group that brings in all available work objects.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [workfront:category](#workfrontcategory) | `object` | Optional | [Work Category Attributes](category.schema.md#workfrontcategory) |
+| [workfront:categoryparameter](#workfrontcategoryparameter) | `object` | Optional | [Work Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter) |
 | [workfront:opTask](#workfrontoptask) | `object` | Optional | [Work Task Attributes](opTask.schema.md#workfrontoptask) |
 | [workfront:portfolio](#workfrontportfolio) | `object` | Optional | [Work Portfolio Attributes](portfolio.schema.md#workfrontportfolio) |
 | [workfront:program](#workfrontprogram) | `object` | Optional | [Work Program Attributes](program.schema.md#workfrontprogram) |
 | [workfront:project](#workfrontproject) | `object` | Optional | [Work Project Attributes](project.schema.md#workfrontproject) |
 | [workfront:task](#workfronttask) | `object` | Optional | [Work Task Attributes](task.schema.md#workfronttask) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## workfront:category
+### Category Attributes
+
+`workfront:category`
+* is optional
+* type: `object`
+* defined in [Work Category Attributes](category.schema.md#workfrontcategory)
+
+### workfront:category Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `workfront:description`| string | Optional |
+| `workfront:groupID`| string | Optional |
+| `workfront:isActive`| boolean | Optional |
+| `workfront:objectCode`| string | Optional |
+
+
+
+#### workfront:description
+##### Category Description
+
+Description of the wf category object
+
+`workfront:description`
+* is optional
+* type: `string`
+
+##### workfront:description Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:groupID
+##### Category&#39;s Group ID
+
+Group id this category belongs to
+
+`workfront:groupID`
+* is optional
+* type: `string`
+
+##### workfront:groupID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:isActive
+##### Category is Active
+
+Flag that describes if category is active
+
+`workfront:isActive`
+* is optional
+* type: `boolean`
+
+##### workfront:isActive Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### workfront:objectCode
+##### Category&#39;s object code
+
+Object code for category
+
+`workfront:objectCode`
+* is optional
+* type: `string`
+
+##### workfront:objectCode Type
+
+
+`string`
+
+
+
+
+
+
+
+
+
+
+
+## workfront:categoryparameter
+### Category Parameter Attributes
+
+`workfront:categoryparameter`
+* is optional
+* type: `object`
+* defined in [Work Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter)
+
+### workfront:categoryparameter Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `workfront:categoryParameterExpressionID`| string | Optional |
+| `workfront:parameterGroupID`| string | Optional |
+| `workfront:parameterID`| string | Optional |
+| `workfront:securityLevel`| string | Optional |
+| `workfront:viewSecurityLevel`| string | Optional |
+
+
+
+#### workfront:categoryParameterExpressionID
+##### Category Parameter Expression ID
+
+Expression ID of category parameter
+
+`workfront:categoryParameterExpressionID`
+* is optional
+* type: `string`
+
+##### workfront:categoryParameterExpressionID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:parameterGroupID
+##### Parameter Group ID
+
+Group ID to which the category parameter belongs to
+
+`workfront:parameterGroupID`
+* is optional
+* type: `string`
+
+##### workfront:parameterGroupID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:parameterID
+##### Parameter ID
+
+Parameter ID of category parameter object
+
+`workfront:parameterID`
+* is optional
+* type: `string`
+
+##### workfront:parameterID Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:securityLevel
+##### Security Level
+
+Security level the category parameter belongs to
+
+`workfront:securityLevel`
+* is optional
+* type: `string`
+
+##### workfront:securityLevel Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### workfront:viewSecurityLevel
+##### View Security Level
+
+Security level view
+
+`workfront:viewSecurityLevel`
+* is optional
+* type: `string`
+
+##### workfront:viewSecurityLevel Type
+
+
+`string`
+
+
+
+
+
+
+
+
+
+
 
 ## workfront:opTask
 ### Operational Task Attributes

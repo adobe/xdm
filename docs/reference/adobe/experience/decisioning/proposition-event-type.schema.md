@@ -15,23 +15,25 @@ A set of direct customer interactions that an end-user might perform when shown 
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss](#httpsnsadobecomexperiencedecisioningproposition-event-typedismiss) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [https://ns.adobe.com/experience/decisioning/proposition-event-type/display](#httpsnsadobecomexperiencedecisioningproposition-event-typedisplay) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [https://ns.adobe.com/experience/decisioning/proposition-event-type/interact](#httpsnsadobecomexperiencedecisioningproposition-event-typeinteract) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [https://ns.adobe.com/experience/decisioning/proposition-event-type/send](#httpsnsadobecomexperiencedecisioningproposition-event-typesend) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:dismiss](#xdmdismiss) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:display](#xdmdisplay) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:interact](#xdminteract) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:send](#xdmsend) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:trigger](#xdmtrigger) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:unsubscribe](#xdmunsubscribe) | `integer` | Optional | AJO Classification Fields (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss
+## xdm:dismiss
 ### dismiss
 
-User dismissed the proposition without any other direct interaction.
+User dismissed or rejected the proposition without any other direct interaction.
 
-`https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss`
+`xdm:dismiss`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss Type
+### xdm:dismiss Type
 
 
 `integer`
@@ -41,17 +43,17 @@ User dismissed the proposition without any other direct interaction.
 
 
 
-## https://ns.adobe.com/experience/decisioning/proposition-event-type/display
+## xdm:display
 ### display
 
 Proposition was displayed to the user.
 
-`https://ns.adobe.com/experience/decisioning/proposition-event-type/display`
+`xdm:display`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/proposition-event-type/display Type
+### xdm:display Type
 
 
 `integer`
@@ -61,17 +63,17 @@ Proposition was displayed to the user.
 
 
 
-## https://ns.adobe.com/experience/decisioning/proposition-event-type/interact
+## xdm:interact
 ### interact
 
 User interacted with the proposition, usually in a positive way.
 
-`https://ns.adobe.com/experience/decisioning/proposition-event-type/interact`
+`xdm:interact`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/proposition-event-type/interact Type
+### xdm:interact Type
 
 
 `integer`
@@ -81,17 +83,57 @@ User interacted with the proposition, usually in a positive way.
 
 
 
-## https://ns.adobe.com/experience/decisioning/proposition-event-type/send
+## xdm:send
 ### send
 
 Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.
 
-`https://ns.adobe.com/experience/decisioning/proposition-event-type/send`
+`xdm:send`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### https://ns.adobe.com/experience/decisioning/proposition-event-type/send Type
+### xdm:send Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:trigger
+### trigger
+
+Proposition was chosen to be displayed by the client SDK. Other factors may prevent it from actually being displayed.
+
+`xdm:trigger`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:trigger Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:unsubscribe
+### unsubscribe
+
+User has requested to not be shown the proposition in the future.
+
+`xdm:unsubscribe`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:unsubscribe Type
 
 
 `integer`

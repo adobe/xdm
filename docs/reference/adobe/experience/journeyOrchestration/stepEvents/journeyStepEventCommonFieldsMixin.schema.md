@@ -26,7 +26,16 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
-  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
+  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
 }
 ```
 
@@ -59,6 +68,15 @@ This Fieldgroup contains the common Journey Metadata information.
 
 ```json
 {
+  "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
   "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
   "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
@@ -70,25 +88,25 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
-  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
+  "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": "2021-07-27T18:28:04.351808Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": "2021-07-27T18:28:04Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/experienceID": "f8e03cb0-7c31-4aba-a4a3-c72a0fb353c4",
+  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
 }
 ```
 
 ```json
 {
-  "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+  "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
+  "https://ns.adobe.com/experience/journeyOrchestration/stepID": "start-virtualStep2",
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "da314152-3611-4468-9941-6c27adc5ffda",
+  "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1,
+  "https://ns.adobe.com/experience/journeyOrchestration/processingTime": 0,
+  "https://ns.adobe.com/experience/journeyOrchestration/instanceType": "batch"
 }
 ```
 
@@ -126,6 +144,7 @@ This Fieldgroup contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/eventID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/eventName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/eventProcessed`| boolean | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/experienceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/externalKey`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/inTest`| boolean | Optional |
@@ -133,6 +152,7 @@ This Fieldgroup contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/instanceType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent`| boolean | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed`| boolean | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/journeyVersion`| string | Optional |
@@ -142,9 +162,11 @@ This Fieldgroup contains the common Journey Metadata information.
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/nodeType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/origTimestamp`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentNodeID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentNodeName`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/parentNodeType`| string | Optional |
@@ -378,6 +400,27 @@ Set to true when the step event corresponding to the external event has been pro
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/experienceID
+##### Experience ID
+
+Journey Orchestration Experience Id
+
+`https://ns.adobe.com/experience/journeyOrchestration/experienceID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/experienceID Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/externalKey
 ##### externalKey
 
@@ -511,6 +554,26 @@ Set to true when the event that triggered this step was external to JO.
 * type: `boolean`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent Type
+
+
+`boolean`
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent
+##### isReadSegmentTriggerStartEvent
+
+If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.
+
+`https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent`
+* is optional
+* type: `boolean`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent Type
 
 
 `boolean`
@@ -711,6 +774,27 @@ The value of this property **must** be equal to one of the [known values below](
 
 
 
+#### https://ns.adobe.com/experience/journeyOrchestration/origTimestamp
+##### Projection Original Timestamp
+
+The Projection Original Timestamp of the segment being used in journey
+
+`https://ns.adobe.com/experience/journeyOrchestration/origTimestamp`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/origTimestamp Type
+
+
+`string`
+
+
+
+
+
+
+
+
 #### https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID
 ##### originJumpJourneyID
 
@@ -766,6 +850,28 @@ JourneyVersionID of the first journey instance that had a jump action that led t
 
 
 `string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp
+##### Projection Original Timestamp
+
+The Projection Original Timestamp of the segment being used in journey
+
+`https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
 
 
 

@@ -17,9 +17,7 @@ Advertising details information.
   "xdm:ID": "123456789",
   "xdm:length": 100,
   "xdm:podPosition": 1,
-  "xdm:playerName": "playerName",
-  "xdm:isCompleted": false,
-  "xdm:isStarted": false
+  "xdm:playerName": "playerName"
 }
 ```
 

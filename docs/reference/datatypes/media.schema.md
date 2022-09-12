@@ -136,7 +136,7 @@ Information related to timed media main content, such as ads and chapters.
 | `xdm:pauseImpactedStreams`|  | Optional |
 | `xdm:pauseTime`|  | Optional |
 | `xdm:pauses`|  | Optional |
-| `xdm:playhead`| integer | **Required** |
+| `xdm:playhead`| integer | Optional |
 | `xdm:primaryAssetReference`| object | **Required** |
 | `xdm:primaryAssetViewDetails`| object | Optional |
 | `xdm:progress10`|  | Optional |
@@ -592,7 +592,7 @@ The number of pause periods that occurred during playback.
 If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length.
 
 `xdm:playhead`
-* is **required**
+* is optional
 * type: `integer`
 
 ##### xdm:playhead Type
@@ -1190,6 +1190,22 @@ Unknown type `object`.
       "description": "Timed media properties related to in focus player state.",
       "meta:titleId": "media##xdm:inFocus##title##93531",
       "meta:descriptionId": "media##xdm:inFocus##description##43601"
+    },
+    "xdm:statesStart": {
+      "title": "List of states start",
+      "description": "The list of states start",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "xdm:statesEnd": {
+      "title": "List of states end",
+      "description": "The list of states end",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "meta:titleId": "media##xdm:primaryAssetViewDetails##title##24351",

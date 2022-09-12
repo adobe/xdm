@@ -49,8 +49,7 @@
         "workfront:objectType": {
           "title": "Object Type",
           "description": "The type of object",
-          "type": "string",
-          "enum": ["TASK", "PROJECT", "ISSUE"]
+          "type": "string"
         },
         "workfront:parentID": {
           "title": "Parent Object ID",
@@ -70,6 +69,17 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "workfront:creationDate": {
+          "title": "Creation Date",
+          "description": "The entry date from the source system",
+          "type": "string",
+          "format": "date-time"
+        },
+        "workfront:createdByEmployeeID": {
+          "title": "Created By ID",
+          "type": "string",
+          "description": "The employeeID involved in the CREATE event"
         }
       }
     }

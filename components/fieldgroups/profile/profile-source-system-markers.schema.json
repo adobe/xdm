@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile-source-system-markers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Phone Source System Markers (Experimental, please expect breaking changes)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Use this to add source system specific markers or record traits for a profile fragment (Experimental, please expect breaking changes).",
+  "definitions": {
+    "profile-source": {
+      "properties": {
+        "xdm:sourceSystemName": {
+          "title": "Source System Name",
+          "type": "string",
+          "description": "Source system name where the profile fragment is ingested from."
+        },
+        "xdm:recordTypeID": {
+          "title": "Record type ID",
+          "type": "string",
+          "description": "Record type identifier."
+        },
+        "xdm:recordStatus": {
+          "title": "Record Status",
+          "type": "string",
+          "description": "Record status."
+        },
+        "xdm:recordSource": {
+          "title": "Record Source`",
+          "type": "string",
+          "description": "Record source."
+        }
+      },
+      "required": ["xdm:sourceSystemName"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/profile-source"
+    }
+  ],
+  "meta:status": "experimental"
+}

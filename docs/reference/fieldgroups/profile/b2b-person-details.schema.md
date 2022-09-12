@@ -33,6 +33,7 @@ Captures B2B Person specific attributes. A B2B Person could be a contact/lead et
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Person Details (this schema) |
+| [xdm:billingAddress](#xdmbillingaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmbillingaddress) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
 | [xdm:extendedWorkDetails](#xdmextendedworkdetails) | `object` | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmextendedworkdetails) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmfaxphone) |
@@ -40,12 +41,14 @@ Captures B2B Person specific attributes. A B2B Person could be a contact/lead et
 | [xdm:homePhone](#xdmhomephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmhomephone) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../shared/record-status.schema.md#xdmisdeleted) |
+| [xdm:mailingAddress](#xdmmailingaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmmailingaddress) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmmobilephone) |
 | [xdm:organizations](#xdmorganizations) | `string[]` | Optional | [Work Contact Details](profile-work-details.schema.md#xdmorganizations) |
 | [xdm:otherAddress](#xdmotheraddress) | Postal address | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotheraddress) |
 | [xdm:otherPhone](#xdmotherphone) | Phone number | Optional | [Profile Other Work Details](profile-other-work-details.schema.md#xdmotherphone) |
 | [xdm:person](#xdmperson) | Person | Optional | [Demographic Details](profile-person-details.schema.md#xdmperson) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmpersonalemail) |
+| [xdm:shippingAddress](#xdmshippingaddress) | Postal address | Optional | [Personal Contact Details](profile-personal-details.schema.md#xdmshippingaddress) |
 | [xdm:workAddress](#xdmworkaddress) | Postal address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkaddress) |
 | [xdm:workEmail](#xdmworkemail) | Email address | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkemail) |
 | [xdm:workPhone](#xdmworkphone) | Phone number | Optional | [Work Contact Details](profile-work-details.schema.md#xdmworkphone) |
@@ -178,6 +181,25 @@ Type of the B2B person.
 
 
 
+
+
+
+
+
+## xdm:billingAddress
+### Billing Address
+
+Billing postal address.
+
+`xdm:billingAddress`
+* is optional
+* type: Postal address
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmbillingaddress)
+
+### xdm:billingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 
@@ -366,7 +388,7 @@ Identifier of the Reporting Manager.
 
 
 ## xdm:faxPhone
-### Fax phone
+### Fax Phone
 
 Fax phone number.
 
@@ -385,7 +407,7 @@ Fax phone number.
 
 
 ## xdm:homeAddress
-### Home address
+### Home Address
 
 A home postal address.
 
@@ -404,7 +426,7 @@ A home postal address.
 
 
 ## xdm:homePhone
-### Home phone
+### Home Phone
 
 Home phone number.
 
@@ -463,8 +485,27 @@ Soft delete flag to indicate if the record is marked for deletion.
 
 
 
+## xdm:mailingAddress
+### Mailing Address
+
+Mailing postal address.
+
+`xdm:mailingAddress`
+* is optional
+* type: Postal address
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmmailingaddress)
+
+### xdm:mailingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
 ## xdm:mobilePhone
-### Mobile phone
+### Mobile Phone
 
 Mobile phone number.
 
@@ -565,7 +606,7 @@ An individual actor, contact, or owner.
 
 
 ## xdm:personalEmail
-### Personal email
+### Personal Email
 
 A personal email address.
 
@@ -578,6 +619,25 @@ A personal email address.
 
 
 * [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+
+
+
+
+
+## xdm:shippingAddress
+### Shipping Address
+
+Shipping postal address.
+
+`xdm:shippingAddress`
+* is optional
+* type: Postal address
+* defined in [Personal Contact Details](profile-personal-details.schema.md#xdmshippingaddress)
+
+### xdm:shippingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

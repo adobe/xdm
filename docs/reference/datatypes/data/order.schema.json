@@ -55,6 +55,19 @@
                     "description": "The total price of this order after all discounts and taxes have been applied.",
                     "meta:titleId": "order##xdm:priceTotal##title##86151",
                     "meta:descriptionId": "order##xdm:priceTotal##description##47781"
+                },
+                "xdm:orderType": {
+                    "title": "Order Type",
+                    "type": "string",
+                    "description": "The type order that has been placed.",
+                    "enum": [
+                        "checkout",
+                        "instant_purchase"
+                    ],
+                    "meta:enum": {
+                        "checkout": "checkout",
+                        "instant_purchase": "Instant Purchase"
+                    }
                 }
             }
         }
@@ -87,7 +100,8 @@
                 }
             ],
             "xdm:currencyCode": "USD",
-            "xdm:priceTotal": 999.98
+            "xdm:priceTotal": 999.98,
+            "xdm:orderType": "checkout"
         }
     ]
 }

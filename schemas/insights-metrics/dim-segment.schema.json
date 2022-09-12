@@ -1,0 +1,73 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/dim-segment",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Dimension",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "description": "This is the dimension schema for a segment definition which includes required fields like segment ID and name of segment.",
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "definitions": {
+    "segment": {
+      "properties": {
+        "xdm:segment": {
+          "type": "object",
+          "description": "Segment Dimension and its properties.",
+          "properties": {
+            "xdm:ID": {
+              "title": "Segment Identifier",
+              "type": "string",
+              "description": "Unique identifier of the segment."
+            },
+            "xdm:name": {
+              "title": "Segment name",
+              "type": "string",
+              "description": "Name of the segment."
+            },
+            "xdm:description": {
+              "title": "Segment description",
+              "type": "string",
+              "description": "Description of the segment."
+            },
+            "xdm:source": {
+              "title": "Segment Source",
+              "type": "string",
+              "description": "Segment source indicating whether the segment was sent from an internal or external source."
+            },
+            "xdm:namespace": {
+              "title": "Segment Namespace",
+              "type": "string",
+              "description": "Segment namespace."
+            },
+            "xdm:version": {
+              "title": "Segment version",
+              "type": "string",
+              "description": "Version of the segment."
+            },
+            "xdm:status": {
+              "type": "string",
+              "title": "Segment status",
+              "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+              "enum": ["ACTIVE", "INACTIVE", "DELETED", "DRAFT", "REVOKED"]
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/segment"
+    }
+  ],
+  "meta:status": "stable"
+}

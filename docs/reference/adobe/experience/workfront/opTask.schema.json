@@ -40,7 +40,7 @@
                             "type": "string",
                             "format": "date-time"
                         },
-                        "workfront:actualDurMinutes": {
+                        "workfront:actualDurationMinutes": {
                             "title": "OpTask Actual Duration Minutes",
                             "description": "",
                             "type": "number"

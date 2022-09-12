@@ -1,0 +1,260 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/profile-healthcare-member",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Healthcare Member Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["healthcare_services"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "description": "Healthcare member details of a person that has or will receive a service or care, such as contact information, primary care physician, and plan information.",
+  "definitions": {
+    "member-details": {
+      "properties": {
+        "xdm:memberDetails": {
+          "title": "Member",
+          "description": "Information about the member.",
+          "type": "object",
+          "properties": {
+            "xdm:nationality": {
+              "title": "Nationality",
+              "type": "string",
+              "pattern": "^[A-Z]{2}$",
+              "description": "The legal relationship between a patient/member and their state represented using the ISO 3166-1 Alpha-2 code."
+            },
+            "xdm:dateAgeCollected": {
+              "title": "Date Age Collected",
+              "type": "string",
+              "format": "date-time",
+              "description": "The date the patient age was collected."
+            },
+            "xdm:multipleBirth": {
+              "type": "object",
+              "properties": {
+                "xdm:isMultipleBirth": {
+                  "title": "Multiple Birth Indicator",
+                  "type": "boolean",
+                  "description": "Boolean flag to indicate if the member gave multiple births."
+                },
+                "xdm:multipleBirthNumber": {
+                  "title": "Number Of Babies",
+                  "type": "integer",
+                  "description": "Number of babies born if multiple birth is true."
+                }
+              }
+            },
+            "xdm:primaryCarePhysicians": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "xdm:providerID": {
+                    "title": "Provider ID",
+                    "type": "string",
+                    "description": "Unique identifier of the physician."
+                  },
+                  "xdm:fullName": {
+                    "title": "Full Name",
+                    "type": "string",
+                    "description": "Primary care physician's full name."
+                  },
+                  "xdm:startDate": {
+                    "title": "Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which the PCP began care for the member."
+                  },
+                  "xdm:endDate": {
+                    "title": "End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which the PCP ended care for the member."
+                  }
+                }
+              }
+            },
+            "xdm:emergencyContact": {
+              "title": "Emergency Contact",
+              "description": "Emergency contact details.",
+              "type": "object",
+              "properties": {
+                "xdm:fullName": {
+                  "title": "Full Name",
+                  "type": "string",
+                  "description": "Full name of the emergency contact."
+                },
+                "xdm:phone": {
+                  "title": "Phone Number",
+                  "type": "string",
+                  "description": "Phone number of the emergency contact."
+                },
+                "xdm:relationshipToMember": {
+                  "title": "Relationship To Member",
+                  "type": "string",
+                  "description": "Emergency contact's relationship to the member."
+                }
+              }
+            },
+            "xdm:preferredAvaiability": {
+              "title": "Preferred Availability",
+              "type": "string",
+              "description": "Patient's preferred day and time availability for an appointment."
+            },
+            "xdm:medications": {
+              "title": "Medications",
+              "description": "Medication information including ID, start date, and active flag.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "xdm:ID": {
+                    "title": "Medication ID",
+                    "type": "string",
+                    "description": "Unique identifier for the medication."
+                  },
+                  "xdm:numberOfRefills": {
+                    "title": "Number Of Refills",
+                    "type": "integer",
+                    "description": "Number of refills prescribed by the provider for this medication."
+                  },
+                  "xdm:refillLocation": {
+                    "title": "Medication Refill Location",
+                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                  },
+                  "xdm:startDate": {
+                    "title": "Medication Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date on which the patient began taking the medication."
+                  },
+                  "xdm:isCurrent": {
+                    "title": "Is Current",
+                    "type": "boolean",
+                    "description": "Indicates whether the medication is current or past."
+                  }
+                }
+              }
+            },
+            "xdm:isDependent": {
+              "title": "Is Dependent",
+              "type": "boolean",
+              "description": "Indicates whether this member is a dependent."
+            },
+            "xdm:primaryMemberID": {
+              "title": "Primary Member ID",
+              "type": "string",
+              "description": "Unique identifier of the primary subscriber if the member is a dependent."
+            },
+            "xdm:beneficiaryRelationship": {
+              "title": "Beneficiary Relationship",
+              "type": "string",
+              "enum": ["self", "spouse", "child", "parent"],
+              "meta:enum": {
+                "self": "Self",
+                "spouse": "Spouse",
+                "child": "Child",
+                "parent": "Parent"
+              },
+              "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc)."
+            },
+            "xdm:billingAccountID": {
+              "title": "Billing Account ID",
+              "type": "string",
+              "description": "Unique identifier of the billing account."
+            },
+            "xdm:specialists": {
+              "title": "Specialist",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "xdm:fullname": {
+                    "title": "Full Name",
+                    "type": "string",
+                    "description": "Full name of the specialist provider."
+                  },
+                  "xdm:specialty": {
+                    "title": "Specialty",
+                    "type": "string",
+                    "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc)."
+                  },
+                  "xdm:providerID": {
+                    "title": "Provider ID",
+                    "type": "string",
+                    "description": "Unique identifier of the specialist."
+                  }
+                }
+              }
+            },
+            "xdm:isDeceased": {
+              "title": "Deceased Indicator",
+              "type": "boolean",
+              "description": "Boolean flag indicating if the member is deceased."
+            },
+            "xdm:deceasedDate": {
+              "title": "Deceased Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Deceased date if the patient is deceased."
+            },
+            "xdm:plans": {
+              "title": "Enrolled Plans",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "xdm:planID": {
+                    "title": "Plan Identifier",
+                    "type": "string",
+                    "description": "Unique identifier for the plan enrolled in by the member."
+                  },
+                  "xdm:coverageStartDate": {
+                    "title": "Coverage Start Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Coverage start date."
+                  },
+                  "xdm:coverageEndDate": {
+                    "title": "Coverage End Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Coverage end date."
+                  },
+                  "xdm:isActive": {
+                    "title": "Is Active",
+                    "type": "boolean",
+                    "description": "Boolean flag indicates whether the plan is active."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/member-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+    }
+  ],
+  "meta:status": "experimental"
+}

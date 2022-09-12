@@ -1,0 +1,104 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/schemas/aep-insights-metrics",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "AEP Insights Metrics",
+    "type": "object",
+    "meta:extensible": false,
+    "meta:abstract": false,
+    "description": "Use this Schema to add summary metrics for various AEP services like Activations, Destinations, schema etc.",
+    "definitions": {
+        "insights-metrics": {
+            "properties": {
+                "xdm:destinationMetrics": {
+                    "type": "object",
+                    "description": "Captures metrics related to various destinations on AEP.",
+                    "properties": {
+                        "xdm:flowRunID": {
+                            "title": "Flow Run ID",
+                            "type": "string",
+                            "description": "Flow run identifier to uniquely identify a flow which was triggered when a segment was activated over a destination."
+                        },
+                        "xdm:flowCompletedTime": {
+                            "title": "Flow Completed Time",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The date and time when the flow was completed. It could be blank or NULL if the flow was not successful."
+                        },
+                        "xdm:flowRunStatus": {
+                            "title": "Flow Run Status",
+                            "type": "string",
+                            "description": "The status of flow run. This could be success/partial-success/failed etc."
+                        },
+                        "xdm:totalProfilesActivated": {
+                            "title": "Total Profiles Activated",
+                            "type": "number",
+                            "description": "Total number of profiles activated summarized at the granularity of provided dimensions in this record."
+                        },
+                        "xdm:totalIdentitiesSkipped": {
+                            "title": "Total Identities Skipped",
+                            "type": "number",
+                            "description": "Total number of identities skipped summarized at the granularity of provided dimensions in this record."
+                        },
+                        "xdm:totalIdentitiesActivated": {
+                            "title": "Total Identities Activated",
+                            "type": "number",
+                            "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record."
+                        }
+                    }
+                },
+                "xdm:segment": {
+                    "type": "object",
+                    "description": "Segment dimension properties.",
+                    "properties": {
+                        "xdm:ID": {
+                            "title": "Segment Identifier",
+                            "type": "string",
+                            "description": "Unique identifier of the segment."
+                        }
+                    }
+                },
+                "xdm:destination": {
+                    "type": "object",
+                    "description": "Destination dimension properties.",
+                    "properties": {
+                        "xdm:ID": {
+                            "title": "Destination Identifier",
+                            "type": "string",
+                            "description": "Unique identifier of the Destination."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/insights-metrics"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/classes/summarymetrics"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {
+            "xdm:timestamp": "2022-06-06T15:52:25+00:00",
+            "xdm:destinationMetrics": {
+                "xdm:destinationID": "df8d079d-11eb-466a-9731-6b5948a009e4",
+                "xdm:segmentID": "0f4ac2cd-a007-4e18-af2b-20c3dd64a8a2",
+                "xdm:flowRunID": "2e7e3e43-f144-49eb-aa03-35cedd2257e2",
+                "xdm:flowCompletedTime": "2022-06-06T15:52:25+00:00",
+                "xdm:flowRunStatus": "success",
+                "xdm:totalProfilesActivated": 340059,
+                "xdm:totalIdentitiesSkipped": 21093332,
+                "xdm:totalIdentitiesActivated": 12352011
+            }
+        }
+    ]
+}

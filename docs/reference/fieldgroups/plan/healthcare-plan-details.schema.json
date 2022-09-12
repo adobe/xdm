@@ -1,0 +1,145 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/healthcare-plan-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Healthcare Plan Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "healthcare_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/plan"
+    ],
+    "description": "Patient medical plan details such as network, type, and active status.",
+    "definitions": {
+        "health-plan-details": {
+            "properties": {
+                "xdm:healthcarePlanDetails": {
+                    "title": "Healthcare Plan Details",
+                    "description": "Information about the healthcare plan.",
+                    "type": "object",
+                    "properties": {
+                        "xdm:payerID": {
+                            "title": "Payer ID",
+                            "type": "string",
+                            "description": "Unique identifier of the payer. This is the insurance provider of the plan."
+                        },
+                        "xdm:targetOwnerType": {
+                            "title": "Target Owner Type",
+                            "type": "string",
+                            "description": "The type of owner a plan is for. Examples are individual, group, organization etc."
+                        },
+                        "xdm:isActive": {
+                            "title": "Is Active",
+                            "type": "boolean",
+                            "description": "Indicates whether the plan is active."
+                        },
+                        "xdm:networkDetails": {
+                            "type": "array",
+                            "title": "Network Details",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:networkID": {
+                                        "title": "Network Identifier",
+                                        "type": "string",
+                                        "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                                    },
+                                    "xdm:networkName": {
+                                        "title": "Network Name",
+                                        "type": "string",
+                                        "description": "The insurer-specific name for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:affiliations": {
+                            "type": "array",
+                            "title": "Affiliations",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "xdm:planType": {
+                            "title": "Plan Type",
+                            "type": "string",
+                            "enum": [
+                                "hmo",
+                                "ppo",
+                                "epo",
+                                "pos",
+                                "hdhp"
+                            ],
+                            "meta:enum": {
+                                "hmo": "HMO",
+                                "epo": "PPO",
+                                "pos": "POS",
+                                "hdhp": "HDHP"
+                            },
+                            "description": "This indicates if the plan is primary,secondary or tertiary plan."
+                        },
+                        "xdm:planLevel": {
+                            "title": "Plan Level",
+                            "type": "string",
+                            "enum": [
+                                "primary",
+                                "secondary",
+                                "tertiary",
+                                "quaternary"
+                            ],
+                            "meta:enum": {
+                                "primary": "Primary",
+                                "secondary": "Secondary",
+                                "tertiary": "Tertiary",
+                                "quaternary": "Quaternary"
+                            },
+                            "description": "This indicates if the plan is primary, secondary, tertiary etc."
+                        },
+                        "xdm:coverageType": {
+                            "title": "Coverage Type",
+                            "type": "string",
+                            "enum": [
+                                "medical",
+                                "dental",
+                                "vision",
+                                "accident"
+                            ],
+                            "meta:enum": {
+                                "medical": "Medical",
+                                "dental": "Dental",
+                                "vision": "Vision",
+                                "accident": "Accident"
+                            },
+                            "description": "Plan coverage type."
+                        },
+                        "xdm:lastVerificationDate": {
+                            "title": "Last Verification Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The date on which the plan was last verified."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/health-plan-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {}
+    ]
+}

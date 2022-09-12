@@ -34,15 +34,37 @@ Contact information for an individual person such as home address, phone number,
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:billingAddress](#xdmbillingaddress) | Postal address | Optional | Personal Contact Details (this schema) |
 | [xdm:faxPhone](#xdmfaxphone) | Phone number | Optional | Personal Contact Details (this schema) |
 | [xdm:homeAddress](#xdmhomeaddress) | Postal address | Optional | Personal Contact Details (this schema) |
 | [xdm:homePhone](#xdmhomephone) | Phone number | Optional | Personal Contact Details (this schema) |
+| [xdm:mailingAddress](#xdmmailingaddress) | Postal address | Optional | Personal Contact Details (this schema) |
 | [xdm:mobilePhone](#xdmmobilephone) | Phone number | Optional | Personal Contact Details (this schema) |
 | [xdm:personalEmail](#xdmpersonalemail) | Email address | Optional | Personal Contact Details (this schema) |
+| [xdm:shippingAddress](#xdmshippingaddress) | Postal address | Optional | Personal Contact Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
+## xdm:billingAddress
+### Billing Address
+
+Billing postal address.
+
+`xdm:billingAddress`
+* is optional
+* type: Postal address
+* defined in this schema
+
+### xdm:billingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
 ## xdm:faxPhone
-### Fax phone
+### Fax Phone
 
 Fax phone number.
 
@@ -61,7 +83,7 @@ Fax phone number.
 
 
 ## xdm:homeAddress
-### Home address
+### Home Address
 
 A home postal address.
 
@@ -80,7 +102,7 @@ A home postal address.
 
 
 ## xdm:homePhone
-### Home phone
+### Home Phone
 
 Home phone number.
 
@@ -98,8 +120,27 @@ Home phone number.
 
 
 
+## xdm:mailingAddress
+### Mailing Address
+
+Mailing postal address.
+
+`xdm:mailingAddress`
+* is optional
+* type: Postal address
+* defined in this schema
+
+### xdm:mailingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
+
+
+
+
+
 ## xdm:mobilePhone
-### Mobile phone
+### Mobile Phone
 
 Mobile phone number.
 
@@ -118,7 +159,7 @@ Mobile phone number.
 
 
 ## xdm:personalEmail
-### Personal email
+### Personal Email
 
 A personal email address.
 
@@ -131,6 +172,25 @@ A personal email address.
 
 
 * [Email address](../../datatypes/demographic/emailaddress.schema.md) – `https://ns.adobe.com/xdm/context/emailaddress`
+
+
+
+
+
+## xdm:shippingAddress
+### Shipping Address
+
+Shipping postal address.
+
+`xdm:shippingAddress`
+* is optional
+* type: Postal address
+* defined in this schema
+
+### xdm:shippingAddress Type
+
+
+* [Postal address](../../datatypes/demographic/address.schema.md) – `https://ns.adobe.com/xdm/common/address`
 
 
 

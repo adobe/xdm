@@ -68,10 +68,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -112,10 +109,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -174,10 +168,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -218,10 +209,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -280,10 +268,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -324,10 +309,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -386,10 +368,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:night": {
           "xdm:cloudCover": {
@@ -430,10 +409,7 @@ Forecasted weather conditions for a postal code.
             "xdm:centimeters": 0,
             "xdm:inches": 0
           },
-          "xdm:uvIndex": {
-            "xdm:_name": "UV_3",
-            "xdm:value": "3"
-          }
+          "xdm:uvIndex": 3
         },
         "xdm:qpfSnow": {
           "xdm:centimeters": 0,
@@ -466,10 +442,7 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": {
-          "xdm:_name": "UV_3",
-          "xdm:value": "3"
-        }
+        "xdm:uvIndex": 3
       },
       "xdm:day10Forecast": {
         "xdm:qpf": {
@@ -497,10 +470,7 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": {
-          "xdm:_name": "UV_3",
-          "xdm:value": "3"
-        }
+        "xdm:uvIndex": 3
       },
       "xdm:day14Forecast": {
         "xdm:qpf": {
@@ -528,10 +498,7 @@ Forecasted weather conditions for a postal code.
           "xdm:kilometers": 5,
           "xdm:miles": 3.1
         },
-        "xdm:uvIndex": {
-          "xdm:_name": "UV_3",
-          "xdm:value": "3"
-        }
+        "xdm:uvIndex": 3
       }
     }
   }
@@ -648,11 +615,10 @@ Unknown type `object`.
 | [temperatureHeatIndex](#temperatureheatindex) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [temperatureWindChill](#temperaturewindchill) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [thunderIndex](#thunderindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [uvIndex](#uvindex) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [uvIndex](#uvindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [windDirection](#winddirection) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [windGust](#windgust) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [windSpeed](#windspeed) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [xdm:_name](#xdm_name) | `string` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/uvIndex` |
 | [xdm:calendarDayTemperatureMax](#xdmcalendardaytemperaturemax) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:calendarDayTemperatureMin](#xdmcalendardaytemperaturemin) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:cloudCover](#xdmcloudcover) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
@@ -662,8 +628,7 @@ Unknown type `object`.
 | [xdm:night](#xdmnight) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/shortRange` |
 | [xdm:qpf](#xdmqpf) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:qpfSnow](#xdmqpfsnow) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:uvIndex](#xdmuvindex) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:value](#xdmvalue) | `string` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/uvIndex` |
+| [xdm:uvIndex](#xdmuvindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:windDirection](#xdmwinddirection) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:windSpeed](#xdmwindspeed) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 
@@ -891,13 +856,14 @@ Maximum UV index for the 12 hour forecast period.
 
 `uvIndex`
 * is optional
-* type: reference
+* type: `integer`
 * defined in this schema
 
 ### uvIndex Type
 
 
-* []() – `#/definitions/uvIndex`
+`integer`
+
 
 
 
@@ -957,25 +923,6 @@ The wind is treated as a vector; hence, winds must have direction and magnitude 
 
 
 * []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed`
-
-
-
-
-
-## xdm:_name
-
-Index name
-
-`xdm:_name`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:_name Type
-
-
-`string`
-
 
 
 
@@ -1161,31 +1108,13 @@ Maximum UV index for the 12 hour forecast period.
 
 `xdm:uvIndex`
 * is optional
-* type: reference
+* type: `integer`
 * defined in this schema
 
 ### xdm:uvIndex Type
 
 
-* []() – `#/definitions/uvIndex`
-
-
-
-
-
-## xdm:value
-
-Index value
-
-`xdm:value`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:value Type
-
-
-`string`
+`integer`
 
 
 

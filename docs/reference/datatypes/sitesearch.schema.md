@@ -20,18 +20,6 @@ Information about site content search activity.
 
 ```json
 {
-  "xdm:query": "Iphone 13",
-  "xdm:suggestions": [
-    "iphone 11",
-    "iphone 12",
-    "airpods"
-  ],
-  "xdm:numberOfResults": 35
-}
-```
-
-```json
-{
   "xdm:filter": [
     {
       "xdm:attribute": "Device",
@@ -69,6 +57,18 @@ Information about site content search activity.
     }
   ],
   "xdm:query": "Iphone 13"
+}
+```
+
+```json
+{
+  "xdm:query": "Iphone 13",
+  "xdm:suggestions": [
+    "iphone 11",
+    "iphone 12",
+    "airpods"
+  ],
+  "xdm:numberOfResults": 35
 }
 ```
 

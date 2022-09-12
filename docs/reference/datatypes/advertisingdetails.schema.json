@@ -93,9 +93,7 @@
                 "xdm:ID",
                 "xdm:length",
                 "xdm:podPosition",
-                "xdm:playerName",
-                "xdm:isCompleted",
-                "xdm:isStarted"
+                "xdm:playerName"
             ]
         }
     },
@@ -109,9 +107,7 @@
             "xdm:ID": "123456789",
             "xdm:length": 100,
             "xdm:podPosition": 1,
-            "xdm:playerName": "playerName",
-            "xdm:isCompleted": false,
-            "xdm:isStarted": false
+            "xdm:playerName": "playerName"
         }
     ]
 }

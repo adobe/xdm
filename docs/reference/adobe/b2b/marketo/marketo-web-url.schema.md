@@ -9,7 +9,7 @@ Captures web url, which need not be in URI format.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/b2b/marketo/marketo-web-url.schema.json](adobe/b2b/marketo/marketo-web-url.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/b2b/marketo/marketo-web-url.schema.json](adobe/b2b/marketo/marketo-web-url.schema.json) |
 
 ## Marketo Web URL Example
 ```json

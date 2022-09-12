@@ -91,8 +91,6 @@ SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, 
 | `https://ns.adobe.com/experience/mobilesdk/ios/reactnative` | Adobe Experience Platform Mobile SDK for iOS React Native |
 | `https://ns.adobe.com/experience/mobilesdk/tvos/reactnative` | Adobe Experience Platform Mobile SDK for tvOS React Native |
 | `https://ns.adobe.com/experience/mobilesdk/android/reactnative` | Adobe Experience Platform Mobile SDK for Android React Native |
-| `https://ns.adobe.com/experience/mobilesdk/ios/flutter` | Adobe Experience Platform Mobile SDK for iOS flutter |
-| `https://ns.adobe.com/experience/mobilesdk/android/flutter` | Adobe Experience Platform Mobile SDK for Android flutter |
 
 
 

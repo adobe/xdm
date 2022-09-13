@@ -22,6 +22,7 @@
         "https://ns.adobe.com/experience/journeyOrchestration/debugInfo": {
           "title": "Journey Orchestration debug related fields.",
           "type": "object",
+          "description": "This event is in relation with journey and describes the debug related fields",
           "properties": {
             "https://ns.adobe.com/experience/journeyOrchestration/requestID": {
               "title": "Request ID",

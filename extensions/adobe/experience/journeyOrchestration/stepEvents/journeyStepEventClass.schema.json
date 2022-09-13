@@ -21,7 +21,7 @@
         "https://ns.adobe.com/experience/journeyOrchestration/serviceType": {
           "title": "Service Type",
           "type": "string",
-          "description": "This fields identifies the type of event."
+          "description": "This field specifies service name. It is for serviceEvents only."
         }
       }
     }

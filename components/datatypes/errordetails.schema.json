@@ -32,7 +32,7 @@
           }
         }
       },
-      "required": ["xdm:errorID", "xdm:errorSource"]
+      "required": ["xdm:ID", "xdm:source"]
     }
   },
   "allOf": [

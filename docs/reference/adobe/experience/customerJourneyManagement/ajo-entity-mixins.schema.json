@@ -130,7 +130,7 @@
             "$ref": "#/definitions/entities"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "examples": [
         {
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaign": {

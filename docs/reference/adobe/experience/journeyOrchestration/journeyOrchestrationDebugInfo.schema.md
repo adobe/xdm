@@ -30,6 +30,8 @@ This event is in relation with journey and describes the debug related fields
 ## https://ns.adobe.com/experience/journeyOrchestration/debugInfo
 ### Journey Orchestration debug related fields.
 
+This event is in relation with journey and describes the debug related fields
+
 `https://ns.adobe.com/experience/journeyOrchestration/debugInfo`
 * is optional
 * type: `object`

@@ -22,9 +22,9 @@ Values computed by the Stitching service, which are meant to provide a more accu
 ```json
 {
   "xdm:stitchedID": {
-    "xdm:id": "john.doe@mail.com",
+    "xdm:id": "5D0CC0572CE5A754-7164B1DCC49F9A5B",
     "xdm:namespace": {
-      "xdm:code": "EMAIL"
+      "xdm:code": "AVID"
     }
   }
 }
@@ -33,9 +33,9 @@ Values computed by the Stitching service, which are meant to provide a more accu
 ```json
 {
   "xdm:stitchedID": {
-    "xdm:id": "5D0CC0572CE5A754-7164B1DCC49F9A5B",
+    "xdm:id": "john.doe@mail.com",
     "xdm:namespace": {
-      "xdm:code": "AVID"
+      "xdm:code": "EMAIL"
     }
   }
 }

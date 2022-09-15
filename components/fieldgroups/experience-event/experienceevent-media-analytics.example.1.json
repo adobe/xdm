@@ -47,15 +47,7 @@
       {
         "xdm:name": "fullScreen"
       }
-    ],
-    "xdm:endUserIDs": {
-      "https://ns.adobe.com/experience/aacustomid": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128"
-      },
-      "https://ns.adobe.com/experience/aaid": {
-        "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347"
-      }
-    }
+    ]
   },
   "xdm:mediaReporting": {
     "xdm:sessionDetails": {
@@ -113,14 +105,6 @@
         },
         "xdm:qoeDataDetails": {
           "xdm:bitrate": 100
-        },
-        "xdm:endUserIDs": {
-          "https://ns.adobe.com/experience/aacustomid": {
-            "@id": "https://data.adobe.io/entities/identity/92312748749128"
-          },
-          "https://ns.adobe.com/experience/aaid": {
-            "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347"
-          }
         }
       }
     },

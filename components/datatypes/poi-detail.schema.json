@@ -148,7 +148,7 @@
         "xdm:metadata": {
           "title": "POI metadata",
           "description": "metadata assigned to the POI by the administrator of the POI definitions.",
-          "$ref": "https://ns.adobe.com/experience/analytics/keyedlist"
+          "$ref": "https://ns.adobe.com/xdm/context/keyedlist"
         }
       }
     }

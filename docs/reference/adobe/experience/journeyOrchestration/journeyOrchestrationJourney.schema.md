@@ -153,7 +153,7 @@ Describes the Journey Version.
 #### https://ns.adobe.com/experience/journeyOrchestration/versionID
 ##### Version ID
 
-Identifier of the journey version. This id represents the identity of a journey.
+Identifier of the journey version. This id represents the identity of a journey. It's the last part of the journey's URL
 
 `https://ns.adobe.com/experience/journeyOrchestration/versionID`
 * is optional

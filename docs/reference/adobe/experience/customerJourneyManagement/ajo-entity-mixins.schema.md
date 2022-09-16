@@ -9,7 +9,7 @@ A set of meta-data fields related to various AJO entities which are related to m
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/ajo-entity-mixins.schema.json](adobe/experience/customerJourneyManagement/ajo-entity-mixins.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/ajo-entity-mixins.schema.json](adobe/experience/customerJourneyManagement/ajo-entity-mixins.schema.json) |
 ## Schema Hierarchy
 
 * AJO Entity Fields `https://ns.adobe.com/experience/customerJourneyManagement/entities`

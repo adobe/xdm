@@ -30,6 +30,14 @@ Profile constraints define the policies that ensure a particular decision option
 ```json
 {
   "https://ns.adobe.com/experience/decisioning/profileConstraints": {
+    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
+  }
+}
+```
+
+```json
+{
+  "https://ns.adobe.com/experience/decisioning/profileConstraints": {
     "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
     "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
       {
@@ -45,14 +53,6 @@ Profile constraints define the policies that ensure a particular decision option
         }
       }
     ]
-  }
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/profileConstraints": {
-    "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
   }
 }
 ```

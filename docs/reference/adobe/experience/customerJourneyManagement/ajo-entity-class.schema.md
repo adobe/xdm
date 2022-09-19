@@ -9,7 +9,7 @@ A Record based AJO Entity class for creating lookup based schemas
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/ajo-entity-class.schema.json](adobe/experience/customerJourneyManagement/ajo-entity-class.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/customerJourneyManagement/ajo-entity-class.schema.json](adobe/experience/customerJourneyManagement/ajo-entity-class.schema.json) |
 ## Schema Hierarchy
 
 * AJO Entity Class `https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity`

@@ -15,7 +15,7 @@
   "definitions": {
     "advertisingPodDetails": {
       "properties": {
-        "xdm:adBreakID": {
+        "xdm:ID": {
           "title": "Ad Break ID",
           "type": "string",
           "description": "The ID of the ad break."
@@ -30,13 +30,13 @@
           "type": "integer",
           "description": "The index of the ad inside the parent ad break start, for example, the first ad has index 0 and the second ad has index 1."
         },
-        "xdm:second": {
-          "title": "Pod Second",
+        "xdm:offset": {
+          "title": "Pod Offset",
           "type": "integer",
           "description": "The offset of the ad break inside the content, in seconds."
         }
       },
-      "required": ["xdm:index", "xdm:second", "xdm:adBreakID"]
+      "required": ["xdm:index", "xdm:offset", "xdm:ID"]
     }
   },
   "allOf": [

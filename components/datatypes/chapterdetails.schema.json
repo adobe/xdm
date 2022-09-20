@@ -35,7 +35,7 @@
           "type": "integer",
           "description": "The position (index, integer) of the chapter inside the content."
         },
-        "xdm:chapterID": {
+        "xdm:ID": {
           "title": "Chapter ID",
           "type": "string",
           "description": "The auto-generated ID of the chapter."

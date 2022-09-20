@@ -17,8 +17,8 @@
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123,
-      "xdm:adBreakID": "123"
+      "xdm:offset": 123,
+      "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -29,8 +29,8 @@
       "xdm:timePlayed": 70
     },
     "xdm:errorDetails": {
-      "xdm:errorID": "errorID",
-      "xdm:errorSource": "player"
+      "xdm:ID": "errorID",
+      "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
       "xdm:bitrate": 100
@@ -45,7 +45,7 @@
     ],
     "xdm:statesEnd": [
       {
-        "xdm:name": "fullScreen"
+        "xdm:name": "fullscreen"
       }
     ]
   },
@@ -66,8 +66,8 @@
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123,
-      "xdm:adBreakID": "123"
+      "xdm:offset": 123,
+      "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -167,8 +167,8 @@
       "xdm:mediaCollection": {
         "xdm:advertisingPodDetails": {
           "xdm:index": 2,
-          "xdm:second": 123,
-          "xdm:adBreakID": "123"
+          "xdm:offset": 123,
+          "xdm:ID": "123"
         },
         "xdm:playhead": 30
       }

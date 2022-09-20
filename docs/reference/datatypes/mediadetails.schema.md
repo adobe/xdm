@@ -19,8 +19,6 @@ Media details information.
   * [Chapter details information](chapterdetails.schema.md) `https://ns.adobe.com/xdm/datatypes/chapterDetails`
   * [Error details information](errordetails.schema.md) `https://ns.adobe.com/xdm/datatypes/errorDetails`
   * [Qoe Data details information](qoedatadetails.schema.md) `https://ns.adobe.com/xdm/datatypes/qoeDataDetails`
-  * [End user IDs](enduserids.schema.md) `https://ns.adobe.com/xdm/context/enduserids`
-  * [Implementation details](industry-verticals/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 ## Media details information Example
@@ -45,8 +43,8 @@ Media details information.
   },
   "xdm:advertisingPodDetails": {
     "xdm:index": 2,
-    "xdm:second": 123,
-    "xdm:adBreakID": "123"
+    "xdm:offset": 123,
+    "xdm:ID": "123"
   },
   "xdm:chapterDetails": {
     "xdm:length": 100,
@@ -57,8 +55,8 @@ Media details information.
     "xdm:timePlayed": 70
   },
   "xdm:errorDetails": {
-    "xdm:errorID": "errorID",
-    "xdm:errorSource": "player"
+    "xdm:ID": "errorID",
+    "xdm:source": "player"
   },
   "xdm:qoeDataDetails": {
     "xdm:bitrate": 100
@@ -93,24 +91,7 @@ Media details information.
       "xdm:name": "test2",
       "xdm:value": "customValue"
     }
-  ],
-  "xdm:endUserIDs": {
-    "https://ns.adobe.com/experience/mcid": {
-      "@id": "https://data.adobe.io/entities/identity/92312748749128",
-      "xdm:namespace": {
-        "xdm:code": "ECID"
-      }
-    },
-    "https://ns.adobe.com/experience/aaid": {
-      "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-      "xdm:namespace": {
-        "xdm:code": "AVID"
-      }
-    }
-  },
-  "xdm:implementationDetails": {
-    "xdm:version": "2.7.0"
-  }
+  ]
 }
 ```
 
@@ -122,9 +103,7 @@ Media details information.
 | [xdm:advertisingPodDetails](#xdmadvertisingpoddetails) | Advertising Pod details information | Optional | Media details information (this schema) |
 | [xdm:chapterDetails](#xdmchapterdetails) | Chapter details information | Optional | Media details information (this schema) |
 | [xdm:customMetadata](#xdmcustommetadata) | Custom metadata details information | Optional | Media details information (this schema) |
-| [xdm:endUserIDs](#xdmenduserids) | End user IDs | Optional | Media details information (this schema) |
 | [xdm:errorDetails](#xdmerrordetails) | Error details information | Optional | Media details information (this schema) |
-| [xdm:implementationDetails](#xdmimplementationdetails) | Implementation details | Optional | Media details information (this schema) |
 | [xdm:playhead](#xdmplayhead) | `integer` | Optional | Media details information (this schema) |
 | [xdm:qoeDataDetails](#xdmqoedatadetails) | Qoe Data details information | Optional | Media details information (this schema) |
 | [xdm:sessionDetails](#xdmsessiondetails) | Session details information | Optional | Media details information (this schema) |
@@ -217,25 +196,6 @@ All items must be of the type:
 
 
 
-## xdm:endUserIDs
-### End User IDs
-
-Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.
-
-`xdm:endUserIDs`
-* is optional
-* type: End user IDs
-* defined in this schema
-
-### xdm:endUserIDs Type
-
-
-* [End user IDs](enduserids.schema.md) – `https://ns.adobe.com/xdm/context/enduserids`
-
-
-
-
-
 ## xdm:errorDetails
 ### Error Details
 
@@ -250,25 +210,6 @@ Error details information related to the experience event.
 
 
 * [Error details information](errordetails.schema.md) – `https://ns.adobe.com/xdm/datatypes/errorDetails`
-
-
-
-
-
-## xdm:implementationDetails
-### Implementation Details
-
-Details about the SDK, library, or service used in an application or web page implementation of a service.
-
-`xdm:implementationDetails`
-* is optional
-* type: Implementation details
-* defined in this schema
-
-### xdm:implementationDetails Type
-
-
-* [Implementation details](industry-verticals/implementationdetails.schema.md) – `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
 

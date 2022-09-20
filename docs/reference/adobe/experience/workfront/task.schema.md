@@ -1,5 +1,5 @@
 
-# Work Task Attributes Schema
+# Workfront Task Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/task
@@ -11,7 +11,7 @@ Task related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/task.schema.json](adobe/experience/workfront/task.schema.json) |
 
-## Work Task Attributes Example
+## Workfront Task Attributes Example
 ```json
 {
   "workfront:storyPoints": 5,
@@ -19,11 +19,11 @@ Task related fields
 }
 ```
 
-# Work Task Attributes Properties
+# Workfront Task Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:task](#workfronttask) | `object` | Optional | Work Task Attributes (this schema) |
+| [workfront:task](#workfronttask) | `object` | Optional | Workfront Task Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:task

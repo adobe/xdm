@@ -1,5 +1,5 @@
 
-# AJO Classification Fields Schema
+# Proposition Event Type Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/proposition-event-type
@@ -11,16 +11,16 @@ A set of direct customer interactions that an end-user might perform when shown 
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-event-type.schema.json](adobe/experience/decisioning/proposition-event-type.schema.json) |
 
-# AJO Classification Fields Properties
+# Proposition Event Type Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:dismiss](#xdmdismiss) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [xdm:display](#xdmdisplay) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [xdm:interact](#xdminteract) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [xdm:send](#xdmsend) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [xdm:trigger](#xdmtrigger) | `integer` | Optional | AJO Classification Fields (this schema) |
-| [xdm:unsubscribe](#xdmunsubscribe) | `integer` | Optional | AJO Classification Fields (this schema) |
+| [xdm:dismiss](#xdmdismiss) | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:display](#xdmdisplay) | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:interact](#xdminteract) | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:send](#xdmsend) | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:trigger](#xdmtrigger) | `integer` | Optional | Proposition Event Type (this schema) |
+| [xdm:unsubscribe](#xdmunsubscribe) | `integer` | Optional | Proposition Event Type (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:dismiss

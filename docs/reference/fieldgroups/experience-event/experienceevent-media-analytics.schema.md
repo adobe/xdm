@@ -37,8 +37,8 @@ Track interactions with media.
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123,
-      "xdm:adBreakID": "123"
+      "xdm:offset": 123,
+      "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -49,8 +49,8 @@ Track interactions with media.
       "xdm:timePlayed": 70
     },
     "xdm:errorDetails": {
-      "xdm:errorID": "errorID",
-      "xdm:errorSource": "player"
+      "xdm:ID": "errorID",
+      "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
       "xdm:bitrate": 100
@@ -65,20 +65,9 @@ Track interactions with media.
     ],
     "xdm:statesEnd": [
       {
-        "xdm:name": "fullScreen"
+        "xdm:name": "fullscreen"
       }
-    ],
-    "xdm:endUserIDs": {
-      "https://ns.adobe.com/experience/aacustomid": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128"
-      },
-      "https://ns.adobe.com/experience/aaid": {
-        "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347"
-      }
-    },
-    "xdm:implementationDetails": {
-      "xdm:version": "2.7.0"
-    }
+    ]
   },
   "xdm:mediaReporting": {
     "xdm:sessionDetails": {
@@ -97,8 +86,8 @@ Track interactions with media.
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123,
-      "xdm:adBreakID": "123"
+      "xdm:offset": 123,
+      "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -118,10 +107,7 @@ Track interactions with media.
         "xdm:count": 2,
         "xdm:time": 100
       }
-    ],
-    "xdm:implementationDetails": {
-      "xdm:version": "2.7.0"
-    }
+    ]
   },
   "xdm:mediaDownloadedEvents": [
     {
@@ -139,17 +125,6 @@ Track interactions with media.
         },
         "xdm:qoeDataDetails": {
           "xdm:bitrate": 100
-        },
-        "xdm:endUserIDs": {
-          "https://ns.adobe.com/experience/aacustomid": {
-            "@id": "https://data.adobe.io/entities/identity/92312748749128"
-          },
-          "https://ns.adobe.com/experience/aaid": {
-            "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347"
-          }
-        },
-        "xdm:implementationDetails": {
-          "xdm:version": "2.7.0"
         }
       }
     },
@@ -212,8 +187,8 @@ Track interactions with media.
       "xdm:mediaCollection": {
         "xdm:advertisingPodDetails": {
           "xdm:index": 2,
-          "xdm:second": 123,
-          "xdm:adBreakID": "123"
+          "xdm:offset": 123,
+          "xdm:ID": "123"
         },
         "xdm:playhead": 30
       }

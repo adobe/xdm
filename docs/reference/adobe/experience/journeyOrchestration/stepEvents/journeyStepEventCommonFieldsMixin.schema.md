@@ -26,10 +26,16 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
-  "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": "2021-07-27T18:28:04.351808Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": "2021-07-27T18:28:04Z",
-  "https://ns.adobe.com/experience/journeyOrchestration/experienceID": "f8e03cb0-7c31-4aba-a4a3-c72a0fb353c4",
-  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
+  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
+  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
+  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
 }
 ```
 
@@ -46,16 +52,10 @@ This Fieldgroup contains the common Journey Metadata information.
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed": true,
-  "https://ns.adobe.com/experience/journeyOrchestration/nodeType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID": "c19714bc-e74f-4448-94a5-425b7b609321",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType": "action",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName": "email-welcome",
-  "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType": "event",
-  "https://ns.adobe.com/experience/journeyOrchestration/eventName": "beaconEvent",
-  "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
+  "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": "2021-07-27T18:28:04.351808Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": "2021-07-27T18:28:04Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/experienceID": "f8e03cb0-7c31-4aba-a4a3-c72a0fb353c4",
+  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
 }
 ```
 

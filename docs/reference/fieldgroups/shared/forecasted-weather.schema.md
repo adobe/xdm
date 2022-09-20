@@ -604,329 +604,27 @@ Unknown type `object`.
 
 | Property | Type | Group |
 |----------|------|-------|
-| [cloudCover](#cloudcover) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [precipChance](#precipchance) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [precipType](#preciptype) | `enum` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [qpf](#qpf) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [qpfSnow](#qpfsnow) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [relativeHumidity](#relativehumidity) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [snowRange](#snowrange) | `string` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [temperature](#temperature) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [temperatureHeatIndex](#temperatureheatindex) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [temperatureWindChill](#temperaturewindchill) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [thunderIndex](#thunderindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [uvIndex](#uvindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [windDirection](#winddirection) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [windGust](#windgust) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
-| [windSpeed](#windspeed) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [xdm:calendarDayTemperatureMax](#xdmcalendardaytemperaturemax) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
 | [xdm:calendarDayTemperatureMin](#xdmcalendardaytemperaturemin) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:cloudCover](#xdmcloudcover) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
+| [xdm:cloudCover](#xdmcloudcover) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 | [xdm:day](#xdmday) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/shortRange` |
 | [xdm:inches](#xdminches) | `number` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/distance` |
 | [xdm:kilometers](#xdmkilometers) | `number` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/distance` |
 | [xdm:night](#xdmnight) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/shortRange` |
-| [xdm:qpf](#xdmqpf) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:qpfSnow](#xdmqpfsnow) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:uvIndex](#xdmuvindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:windDirection](#xdmwinddirection) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-| [xdm:windSpeed](#xdmwindspeed) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/longRange` |
-
-## cloudCover
-### Cloud Cover
-
-Daytime average cloud cover expressed as a percentage.
-
-`cloudCover`
-* is optional
-* type: reference
-* defined in this schema
-
-### cloudCover Type
-
-
-* []() – `#/definitions/distance`
-
-
-
-
-
-## precipChance
-### Precipitation Chance
-
-Probability that there will be precipitation (percentage).
-
-`precipChance`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### precipChance Type
-
-
-`integer`
-
-
-
-
-
-
-## precipType
-### Precipitation Type
-
-The form of precipitation that could fall (rain, snow, sleet, etc).
-
-`precipType`
-* is optional
-* type: `enum`
-* defined in this schema
-
-The value of this property **must** be equal to one of the [known values below](#preciptype-known-values).
-
-### precipType Known Values
-| Value | Description |
-|-------|-------------|
-| `rain` | Rain |
-| `snow` | Snow |
-| `precip` | Precip |
-
-
-
-
-## qpf
-### QPF
-
-The forecasted measurable precipitation (liquid or liquid equivalent) during the 12 or 24 hour period. Measured in millimeters.
-
-`qpf`
-* is optional
-* type: reference
-* defined in this schema
-
-### qpf Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation`
-
-
-
-
-
-## qpfSnow
-### QPF Snow
-
-The forecasted measurable precipitation as snow during the 12 or 24 hour forecast period. Measured in centimeters.
-
-`qpfSnow`
-* is optional
-* type: reference
-* defined in this schema
-
-### qpfSnow Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall`
-
-
-
-
-
-## relativeHumidity
-### Relative Humidity
-
-The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.
-Range - 0 to 100.
-
-`relativeHumidity`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### relativeHumidity Type
-
-
-`integer`
-
-
-
-
-
-
-## snowRange
-### Snow Range
-
-Bucket of potential snowfall (1-3”, 3-6” etc).
-
-`snowRange`
-* is optional
-* type: `string`
-* defined in this schema
-
-### snowRange Type
-
-
-`string`
-
-
-
-
-
-
-## temperature
-### Temperature
-
-Temperature in defined unit of measure. Range -140 to 140.
-
-`temperature`
-* is optional
-* type: reference
-* defined in this schema
-
-### temperature Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
-
-
-
-
-
-## temperatureHeatIndex
-### Temperature Heat Index
-
-Temperature as it would feel to a person exposed based on temperature and humidity.
-
-`temperatureHeatIndex`
-* is optional
-* type: reference
-* defined in this schema
-
-### temperatureHeatIndex Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
-
-
-
-
-
-## temperatureWindChill
-### Temperature Wind Chill
-
-Temperature as it would feel to a person exposed based on temperature and wind speed.
-
-`temperatureWindChill`
-* is optional
-* type: reference
-* defined in this schema
-
-### temperatureWindChill Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
-
-
-
-
-
-## thunderIndex
-### Thunder Index
-
-Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).
-
-`thunderIndex`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### thunderIndex Type
-
-
-`integer`
-
-
-
-
-
-
-## uvIndex
-### UV Index
-
-Maximum UV index for the 12 hour forecast period.
-
-`uvIndex`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### uvIndex Type
-
-
-`integer`
-
-
-
-
-
-
-## windDirection
-### Wind Direction
-
-The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.
-Range - 0<=wind_dire_deg<=350, in 10 degree intervals.
-
-`windDirection`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### windDirection Type
-
-
-`integer`
-
-
-
-
-
-
-## windGust
-### Wind Gust
-
-This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.
-
-`windGust`
-* is optional
-* type: reference
-* defined in this schema
-
-### windGust Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed`
-
-
-
-
-
-## windSpeed
-### Wind Speed
-
-The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as "from whence the wind blows" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.
-
-`windSpeed`
-* is optional
-* type: reference
-* defined in this schema
-
-### windSpeed Type
-
-
-* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed`
-
-
-
-
+| [xdm:precipChance](#xdmprecipchance) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:precipType](#xdmpreciptype) | `enum` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:qpf](#xdmqpf) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:qpfSnow](#xdmqpfsnow) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:relativeHumidity](#xdmrelativehumidity) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:snowRange](#xdmsnowrange) | `string` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:temperature](#xdmtemperature) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:temperatureHeatIndex](#xdmtemperatureheatindex) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:temperatureWindChill](#xdmtemperaturewindchill) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:thunderIndex](#xdmthunderindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:uvIndex](#xdmuvindex) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:windDirection](#xdmwinddirection) | `integer` | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:windGust](#xdmwindgust) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
+| [xdm:windSpeed](#xdmwindspeed) | reference | `https://ns.adobe.com/xdm/mixins/forecasted-weather#/definitions/dayPart` |
 
 ## xdm:calendarDayTemperatureMax
 ### Calendar Day Temperature Max
@@ -1063,10 +761,52 @@ Weather information for a nighttime period.
 
 
 
+## xdm:precipChance
+### Precipitation Chance
+
+Probability that there will be precipitation (percentage).
+
+`xdm:precipChance`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:precipChance Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:precipType
+### Precipitation Type
+
+The form of precipitation that could fall (rain, snow, sleet, etc).
+
+`xdm:precipType`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmpreciptype-known-values).
+
+### xdm:precipType Known Values
+| Value | Description |
+|-------|-------------|
+| `rain` | Rain |
+| `snow` | Snow |
+| `precip` | Precip |
+
+
+
+
 ## xdm:qpf
 ### QPF
 
-The forecasted measurable precipitation (liquid or liquid equivalent) during the 24 hour period.
+The forecasted measurable precipitation (liquid or liquid equivalent) during the 12 or 24 hour period. Measured in millimeters.
 
 `xdm:qpf`
 * is optional
@@ -1101,6 +841,124 @@ The forecasted measurable precipitation as snow during the 12 or 24 hour forecas
 
 
 
+## xdm:relativeHumidity
+### Relative Humidity
+
+The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.
+Range - 0 to 100.
+
+`xdm:relativeHumidity`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:relativeHumidity Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:snowRange
+### Snow Range
+
+Bucket of potential snowfall (1-3”, 3-6” etc).
+
+`xdm:snowRange`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:snowRange Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:temperature
+### Temperature
+
+Temperature in defined unit of measure. Range -140 to 140.
+
+`xdm:temperature`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:temperature Type
+
+
+* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
+
+
+
+
+
+## xdm:temperatureHeatIndex
+### Temperature Heat Index
+
+Temperature as it would feel to a person exposed based on temperature and humidity.
+
+`xdm:temperatureHeatIndex`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:temperatureHeatIndex Type
+
+
+* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
+
+
+
+
+
+## xdm:temperatureWindChill
+### Temperature Wind Chill
+
+Temperature as it would feel to a person exposed based on temperature and wind speed.
+
+`xdm:temperatureWindChill`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:temperatureWindChill Type
+
+
+* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature`
+
+
+
+
+
+## xdm:thunderIndex
+### Thunder Index
+
+Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).
+
+`xdm:thunderIndex`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:thunderIndex Type
+
+
+`integer`
+
+
+
+
+
+
 ## xdm:uvIndex
 ### UV Index
 
@@ -1124,7 +982,8 @@ Maximum UV index for the 12 hour forecast period.
 ## xdm:windDirection
 ### Wind Direction
 
-Average wind direction in magnetic notation.
+The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.
+Range - 0<=wind_dire_deg<=350, in 10 degree intervals.
 
 `xdm:windDirection`
 * is optional
@@ -1141,11 +1000,29 @@ Average wind direction in magnetic notation.
 
 
 
+## xdm:windGust
+### Wind Gust
+
+This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.
+
+`xdm:windGust`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:windGust Type
+
+
+* []() – `https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed`
+
+
+
+
+
 ## xdm:windSpeed
 ### Wind Speed
 
-The forecast of the maximum sustained wind speed over the 12 hour forecast period.
-The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the forecast corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as "from whence the wind blows" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.
+The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as "from whence the wind blows" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.
 
 `xdm:windSpeed`
 * is optional

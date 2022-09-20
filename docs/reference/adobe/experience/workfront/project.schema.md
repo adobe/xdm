@@ -1,5 +1,5 @@
 
-# Work Project Attributes Schema
+# Workfront Project Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/project
@@ -11,7 +11,7 @@ Project related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/project.schema.json](adobe/experience/workfront/project.schema.json) |
 
-## Work Project Attributes Example
+## Workfront Project Attributes Example
 ```json
 {
   "workfront:project": {
@@ -21,11 +21,11 @@ Project related fields
 }
 ```
 
-# Work Project Attributes Properties
+# Workfront Project Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:project](#workfrontproject) | `object` | Optional | Work Project Attributes (this schema) |
+| [workfront:project](#workfrontproject) | `object` | Optional | Workfront Project Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:project

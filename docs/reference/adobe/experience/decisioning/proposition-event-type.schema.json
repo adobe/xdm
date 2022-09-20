@@ -7,7 +7,7 @@
     ],
     "$id": "https://ns.adobe.com/experience/decisioning/proposition-event-type",
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "AJO Classification Fields",
+    "title": "Proposition Event Type",
     "description": "A set of direct customer interactions that an end-user might perform when shown a proposition.",
     "type": "object",
     "meta:status": "stable",

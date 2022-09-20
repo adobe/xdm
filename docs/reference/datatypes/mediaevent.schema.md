@@ -41,8 +41,8 @@ Media event information.
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:second": 123,
-      "xdm:adBreakID": "123"
+      "xdm:offset": 123,
+      "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
@@ -53,8 +53,8 @@ Media event information.
       "xdm:timePlayed": 70
     },
     "xdm:errorDetails": {
-      "xdm:errorID": "errorID",
-      "xdm:errorSource": "player"
+      "xdm:ID": "errorID",
+      "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
       "xdm:bitrate": 100
@@ -69,26 +69,9 @@ Media event information.
     ],
     "xdm:statesEnd": [
       {
-        "xdm:name": "fullScreen"
+        "xdm:name": "fullscreen"
       }
-    ],
-    "xdm:endUserIDs": {
-      "https://ns.adobe.com/experience/mcid": {
-        "@id": "https://data.adobe.io/entities/identity/92312748749128",
-        "xdm:namespace": {
-          "xdm:code": "ECID"
-        }
-      },
-      "https://ns.adobe.com/experience/aaid": {
-        "@id": "https://data.adobe.io/entities/identity/2394509340-30453470347",
-        "xdm:namespace": {
-          "xdm:code": "AVID"
-        }
-      }
-    },
-    "xdm:implementationDetails": {
-      "xdm:version": "2.7.0"
-    }
+    ]
   }
 }
 ```

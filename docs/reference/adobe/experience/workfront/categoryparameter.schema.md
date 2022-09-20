@@ -1,5 +1,5 @@
 
-# Work Category Attributes Schema
+# Workfront Category Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/categoryparameter
@@ -11,7 +11,7 @@ Category Parameter related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/categoryparameter.schema.json](adobe/experience/workfront/categoryparameter.schema.json) |
 
-## Work Category Attributes Example
+## Workfront Category Attributes Example
 ```json
 {
   "workfront:categoryparameter": {
@@ -22,11 +22,11 @@ Category Parameter related fields
 }
 ```
 
-# Work Category Attributes Properties
+# Workfront Category Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:categoryparameter](#workfrontcategoryparameter) | `object` | Optional | Work Category Attributes (this schema) |
+| [workfront:categoryparameter](#workfrontcategoryparameter) | `object` | Optional | Workfront Category Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:categoryparameter

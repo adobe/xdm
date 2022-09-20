@@ -1,5 +1,5 @@
 
-# AJO Classification Fields Schema
+# Proposition Action Schema
 
 ```
 https://ns.adobe.com/experience/decisioning/proposition-action
@@ -11,12 +11,12 @@ Properties of a specific element that was interacted with which caused the propo
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/decisioning/proposition-action.schema.json](adobe/experience/decisioning/proposition-action.schema.json) |
 
-# AJO Classification Fields Properties
+# Proposition Action Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:id](#xdmid) | `string` | Optional | AJO Classification Fields (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | AJO Classification Fields (this schema) |
+| [xdm:id](#xdmid) | `string` | Optional | Proposition Action (this schema) |
+| [xdm:label](#xdmlabel) | `string` | Optional | Proposition Action (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:id

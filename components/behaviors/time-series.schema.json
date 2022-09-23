@@ -18,7 +18,6 @@
         "@id": {
           "title": "Identifier",
           "type": "string",
-          "format": "uri-reference",
           "description": "A unique identifier for the time-series event.",
           "meta:titleId": "time-series##@id##title##97851",
           "meta:descriptionId": "time-series##@id##description##91771"

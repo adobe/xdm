@@ -39,7 +39,7 @@
               "title": "ID",
               "type": "string",
               "description": "Captures the user account ID.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-user-account-details##xdm:ID##title##41391",
               "meta:descriptionId": "profile-user-account-details##xdm:ID##description##82501"
             },
@@ -55,7 +55,7 @@
               "type": "string",
               "format": "date-time",
               "description": "Date when the account was opened.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-user-account-details##xdm:startDate##title##50411",
               "meta:descriptionId": "profile-user-account-details##xdm:startDate##description##99481"
             },
@@ -71,7 +71,7 @@
               "title": "Account Type",
               "type": "string",
               "description": "Captures the user account type, if applicable.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-user-account-details##xdm:accountType##title##23261",
               "meta:descriptionId": "profile-user-account-details##xdm:accountType##description##9011"
             },

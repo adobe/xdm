@@ -27,7 +27,7 @@
               "title": "Account Cards Total",
               "type": "integer",
               "description": "Total number of account (financial) cards assigned to a user.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##471",
               "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##25401"
             },
@@ -88,7 +88,7 @@
                 "unemployed": "Unemployed"
               },
               "description": "Tracks the employment status of the user.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##67451",
               "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##47761"
             },
@@ -99,7 +99,7 @@
                 "type": "string"
               },
               "description": "Array of financial account IDs assigned to the user.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-personal-finance-details##xdm:ID##title##23551",
               "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##31621"
             },
@@ -107,7 +107,7 @@
               "title": "Has Assigned Beneficiary",
               "type": "boolean",
               "description": "Flag determining if the account has a beneficiary assigned.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##46991",
               "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##57851"
             }

@@ -27,7 +27,7 @@
               "xdm:sourcePersonID": {
                 "title": "Source Person ID",
                 "description": "Source person ID.",
-		"meta:sensitive-data": true, 
+                "meta:sensitive-data": true,
                 "type": "string",
                 "meta:status": "experimental",
                 "meta:titleId": "b2b-person-components##xdm:sourcePersonID##title##29921",

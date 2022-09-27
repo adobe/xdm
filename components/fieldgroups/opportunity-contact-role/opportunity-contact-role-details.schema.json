@@ -23,7 +23,7 @@
         "xdm:roleID": {
           "title": "Contact Role ID",
           "description": "Contact role unique identifier.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "string",
           "meta:titleId": "opportunity-contact-role-details##xdm:roleID##title##9961",
           "meta:descriptionId": "opportunity-contact-role-details##xdm:roleID##description##38421"

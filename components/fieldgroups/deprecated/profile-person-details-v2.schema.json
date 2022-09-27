@@ -37,7 +37,7 @@
                   "title": "First name",
                   "type": "string",
                   "description": "The first segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the preferred personal or given name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-		"meta:sensitive-data": true, 
+                  "meta:sensitive-data": true,
                   "meta:titleId": "profile-person-details-v2##xdm:firstName##title##19951",
                   "meta:descriptionId": "profile-person-details-v2##xdm:firstName##description##1301"
                 }
@@ -59,7 +59,7 @@
                   "title": "Last name",
                   "type": "string",
                   "description": "The last segment of the name in the writing order most commonly accepted in the language of the name. In many cultures this is the inherited family name, surname, patronymic, or matronymic name. The `firstName` and `lastName` properties have been introduced to maintain compatibility with existing systems that model names in a simplified, non-semantic, and non-internationalizable way. Using `xdm:fullName` is always preferable.",
-		"meta:sensitive-data": true, 
+                  "meta:sensitive-data": true,
                   "meta:titleId": "profile-person-details-v2##xdm:lastName##title##89531",
                   "meta:descriptionId": "profile-person-details-v2##xdm:lastName##description##8141"
                 }
@@ -81,7 +81,7 @@
                   "title": "Middle name",
                   "type": "string",
                   "description": "Middle, alternative, or additional names supplied between the first name and last name.",
-		"meta:sensitive-data": true, 
+                  "meta:sensitive-data": true,
                   "meta:titleId": "profile-person-details-v2##xdm:middleName##title##52751",
                   "meta:descriptionId": "profile-person-details-v2##xdm:middleName##description##64241"
                 }
@@ -103,7 +103,7 @@
                   "title": "Courtesy title",
                   "type": "string",
                   "description": "Normally an abbreviation of a persons title, honorific, or salutation. The `courtesyTitle` is used in front of full or last name in opening texts. For example, Mr. Miss. or Dr.",
-		"meta:sensitive-data": true, 
+                  "meta:sensitive-data": true,
                   "meta:titleId": "profile-person-details-v2##xdm:courtesyTitle##title##64641",
                   "meta:descriptionId": "profile-person-details-v2##xdm:courtesyTitle##description##12211"
                 }
@@ -146,7 +146,7 @@
                   "title": "Full name",
                   "type": "string",
                   "description": "The full name of the person, in writing order most commonly accepted in the language of the name.",
-		"meta:sensitive-data": true, 
+                  "meta:sensitive-data": true,
                   "meta:titleId": "profile-person-details-v2##xdm:fullName##title##3091",
                   "meta:descriptionId": "profile-person-details-v2##xdm:fullName##description##91921"
                 }
@@ -166,7 +166,7 @@
               "type": "string",
               "format": "date",
               "description": "The full date a person was born.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-person-details-v2##xdm:birthDate##title##59221",
               "meta:descriptionId": "profile-person-details-v2##xdm:birthDate##description##81911"
             }
@@ -290,7 +290,7 @@
               "title": "Tax ID",
               "type": "string",
               "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-person-details-v2##xdm:taxId##title##11071",
               "meta:descriptionId": "profile-person-details-v2##xdm:taxId##description##47341"
             }

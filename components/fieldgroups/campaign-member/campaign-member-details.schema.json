@@ -117,7 +117,7 @@
         "xdm:hasResponded": {
           "title": "Has Responded",
           "description": "Record whether the member has responded to the workflow stag.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "boolean",
           "meta:titleId": "campaign-member-details##xdm:hasResponded##title##26261",
           "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##31341"

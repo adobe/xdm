@@ -69,7 +69,7 @@
             "xdm:accountID": {
               "title": "Contact Account id",
               "description": "ID of the account that’s the parent of this person.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "type": "string",
               "meta:status": "experimental",
               "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",

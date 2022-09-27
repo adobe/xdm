@@ -198,7 +198,7 @@
               "title": "Gym",
               "type": "boolean",
               "description": "Flags if the user prefers a lodging property with a gym/fitness room.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "travel-preferences##xdm:gym##title##84811",
               "meta:descriptionId": "travel-preferences##xdm:gym##description##93131"
             },
@@ -213,7 +213,7 @@
               "title": "Has Restaurant",
               "type": "boolean",
               "description": "Flags if the user prefers a lodging property with a restaurant.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "travel-preferences##xdm:hasRestaurant##title##32111",
               "meta:descriptionId": "travel-preferences##xdm:hasRestaurant##description##67411"
             },

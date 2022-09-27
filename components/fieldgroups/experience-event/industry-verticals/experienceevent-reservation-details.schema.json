@@ -19,7 +19,8 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Reservation details such as length, modification, refundable status, and number of rooms. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Reservation details such as length, modification, refundable status, and number of rooms. ",
+		"meta:sensitive-data": true, 
   "definitions": {
     "reservations": {
       "properties": {

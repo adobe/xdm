@@ -17,7 +17,8 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "Use to capture details when a person opens a marketing email. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Use to capture details when a person opens a marketing email. ",
+		"meta:sensitive-data": true, 
   "definitions": {
     "emailopened": {
       "properties": {

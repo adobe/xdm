@@ -10,7 +10,8 @@
   "title": "Person Identifier",
   "type": "object",
   "meta:intendedToExtend": [],
-  "description": "Used to store Person ID for an entity. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Used to store Person ID for an entity. ",
+		"meta:sensitive-data": true, 
   "definitions": {
     "person-id": {
       "properties": {

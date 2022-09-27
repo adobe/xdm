@@ -12,7 +12,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Preferences such as opt-in and opt-out, time zone, preferred language, and email format. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Preferences such as opt-in and opt-out, time zone, preferred language, and email format. ",
+		"meta:sensitive-data": true, 
   "definitions": {
     "profile-preferences-details": {
       "properties": {

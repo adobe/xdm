@@ -16,7 +16,8 @@
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/opportunity-contact-role"
   ],
-  "description": "Opportunity Contact Role additional propertie. This field group contains fields that could be used to collect data that may be considered sensitive or personal. Visit https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+  "description": "Opportunity Contact Role additional propertie. ",
+		"meta:sensitive-data": true, 
   "definitions": {
     "opportunity-contact-role-details": {
       "properties": {

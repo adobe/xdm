@@ -12,11 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
-<<<<<<< HEAD
   "description": "This fieldgroup is used to capture B2B Opportunity specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed.",
-=======
-  "description": "This fieldgroup is used to capture B2B Opportunity specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed ",
->>>>>>> 96f75f816a389a4bce7decb84b2af4f38a2c9ed7
   "definitions": {
     "opportunity-components": {
       "properties": {

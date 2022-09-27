@@ -117,12 +117,8 @@
         },
         "xdm:hasResponded": {
           "title": "Has Responded",
-<<<<<<< HEAD
           "description": "Record whether the member has responded to the workflow stag.",
           "meta:sensitive-data": true,
-=======
-          "description": "Record whether the member has responded to the workflow stage. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
->>>>>>> 96f75f816a389a4bce7decb84b2af4f38a2c9ed7
           "type": "boolean",
           "meta:titleId": "campaign-member-details##xdm:hasResponded##title##26261",
           "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##31341"

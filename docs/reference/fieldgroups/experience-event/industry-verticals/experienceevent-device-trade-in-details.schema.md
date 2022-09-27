@@ -9,7 +9,7 @@ Device trade-in details including trade-in value, original device ID, and new de
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json](fieldgroups/experience-event/industry-verticals/experienceevent-device-trade-in-details.schema.json) |
 ## Schema Hierarchy
 
 * Device Trade-In Details `https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details`

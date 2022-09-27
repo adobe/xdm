@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/mixins/events/change-campaign-cadence
 ```
 
-Use to capture details when engagement campaign cadence changes for a person.
+Use to capture details when campaign cadence changes for a person.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-cadence.schema.json](fieldgroups/experience-event/events/change-campaign-cadence.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/change-campaign-cadence.schema.json](fieldgroups/experience-event/events/change-campaign-cadence.schema.json) |
 
 ## Change Campaign Cadence Example
 ```json
@@ -62,21 +62,36 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:campaignID": {
-      "title": "Campaign ID",
+      "meta:status": "deprecated",
+      "title": "Campaign ID (deprecated)",
       "type": "integer",
-      "description": "Unique ID of the engagement campaign for which the cadence changed."
+      "description": "Unique ID of the engagement campaign for which the cadence changed.",
+      "meta:titleId": "change-campaign-cadence##xdm:campaignID##title##84141",
+      "meta:descriptionId": "change-campaign-cadence##xdm:campaignID##description##13181"
+    },
+    "xdm:campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the campaign.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "change-campaign-cadence##xdm:campaignKey##title##72181",
+      "meta:descriptionId": "change-campaign-cadence##xdm:campaignKey##description##46751"
     },
     "xdm:newCadence": {
       "title": "New Cadence",
       "type": "string",
-      "description": "New value of engagement campaign cadence."
+      "description": "New value of campaign cadence.",
+      "meta:titleId": "change-campaign-cadence##xdm:newCadence##title##8711",
+      "meta:descriptionId": "change-campaign-cadence##xdm:newCadence##description##11261"
     },
     "xdm:previousCadence": {
       "title": "Previous Cadence",
       "type": "string",
-      "description": "Previous value of engagement campaign cadence."
+      "description": "Previous value of campaign cadence.",
+      "meta:titleId": "change-campaign-cadence##xdm:previousCadence##title##11621",
+      "meta:descriptionId": "change-campaign-cadence##xdm:previousCadence##description##50041"
     }
   },
+  "meta:titleId": "change-campaign-cadence##xdm:changeCampaignCadence##title##81131",
   "simpletype": "`object`"
 }
 ```

@@ -26,6 +26,11 @@ This schema specifies the fields in a marketing preference object that includes 
     "daily-mail": {
       "xdm:val": "y",
       "xdm:type": "paid",
+      "xdm:topics": [
+        "sports",
+        "weather",
+        "business"
+      ],
       "xdm:subscribers": {
         "john@xyz.com": {
           "xdm:time": "2019-01-01T15:52:25+00:00",

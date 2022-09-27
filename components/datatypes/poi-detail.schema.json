@@ -146,6 +146,11 @@
           },
           "meta:titleId": "poi-detail##xdm:geoInteractionDetails##title##47521",
           "meta:descriptionId": "poi-detail##xdm:geoInteractionDetails##description##39951"
+        },
+        "xdm:metadata": {
+          "title": "POI metadata",
+          "description": "metadata assigned to the POI by the administrator of the POI definitions.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/keyedlist"
         }
       }
     }

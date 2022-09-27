@@ -14,6 +14,7 @@ An XDM Business Campaign Member.
 
 * XDM Business Campaign Member Details `https://ns.adobe.com/xdm/context/campaign-member-details`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
+  * [Record Status](../shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Campaign Member Details Example
@@ -46,9 +47,11 @@ An XDM Business Campaign Member.
 |----------|------|----------|------------|
 | [xdm:acquiredByCampaignID](#xdmacquiredbycampaignid) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:acquiredByCampaignKey](#xdmacquiredbycampaignkey) | B2B Source | Optional | XDM Business Campaign Member Details (this schema) |
+| [xdm:b2b](#xdmb2b) | `object` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:firstRespondedDate](#xdmfirstrespondeddate) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasReachedSuccess](#xdmhasreachedsuccess) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:hasResponded](#xdmhasresponded) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:isExhausted](#xdmisexhausted) | `boolean` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:lastStatus](#xdmlaststatus) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
 | [xdm:memberStatus](#xdmmemberstatus) | `string` | Optional | XDM Business Campaign Member Details (this schema) |
@@ -93,6 +96,50 @@ Unique composite identifier of the campaign where the person became a member
 
 
 * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) – `https://ns.adobe.com/xdm/datatypes/b2b-source`
+
+
+
+
+
+## xdm:b2b
+
+
+`xdm:b2b`
+* is optional
+* type: `object`
+* defined in this schema
+
+### xdm:b2b Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+| `xdm:personType`| string | Optional |
+
+
+
+#### xdm:personType
+##### Person Type
+
+Use this property to map this campaign to the respective measure, eg. Marketo Measure.
+
+`xdm:personType`
+* is optional
+* type: `string`
+
+##### xdm:personType Type
+
+
+`string`
+
+
+
+
+
+
 
 
 
@@ -147,6 +194,25 @@ Record whether the member has responded to the workflow stage
 * defined in this schema
 
 ### xdm:hasResponded Type
+
+
+`boolean`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
 
 
 `boolean`

@@ -36,11 +36,14 @@ XDM Product List Item extension properties specific to Adobe Analytics that impl
 | [https://ns.adobe.com/experience/analytics/event901to1000](#httpsnsadobecomexperienceanalyticsevent901to1000) | event901to1000.schema | Optional | [Adobe Analytics Custom Events](events.schema.md#httpsnsadobecomexperienceanalyticsevent901to1000) |
 | [xdm:SKU](#xdmsku) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmsku) |
 | [xdm:currencyCode](#xdmcurrencycode) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmcurrencycode) |
+| [xdm:discountAmount](#xdmdiscountamount) | `number` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmdiscountamount) |
 | [xdm:name](#xdmname) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmname) |
 | [xdm:priceTotal](#xdmpricetotal) | `number` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmpricetotal) |
 | [xdm:product](#xdmproduct) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproduct) |
 | [xdm:productAddMethod](#xdmproductaddmethod) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductaddmethod) |
+| [xdm:productImageUrl](#xdmproductimageurl) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductimageurl) |
 | [xdm:quantity](#xdmquantity) | `integer` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmquantity) |
+| [xdm:selectedOptions](#xdmselectedoptions) | reference | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmselectedoptions) |
 | [xdm:unitOfMeasureCode](#xdmunitofmeasurecode) | `string` | Optional | [Product list item](../../../datatypes/productlistitem.schema.md#xdmunitofmeasurecode) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -311,6 +314,26 @@ All instances must conform to this regular expression
 
 
 
+## xdm:discountAmount
+### Discount Amount
+
+The difference between the regular price and the special price for the product.
+
+`xdm:discountAmount`
+* is optional
+* type: `number`
+* defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmdiscountamount)
+
+### xdm:discountAmount Type
+
+
+`number`
+
+
+
+
+
+
 ## xdm:name
 ### Name
 
@@ -392,6 +415,26 @@ The method that was used to add a product item to the list by the visitor. Set w
 
 
 
+## xdm:productImageUrl
+### Product Image URL
+
+Product main image URL.
+
+`xdm:productImageUrl`
+* is optional
+* type: `string`
+* defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmproductimageurl)
+
+### xdm:productImageUrl Type
+
+
+`string`
+
+
+
+
+
+
 ## xdm:quantity
 ### Quantity
 
@@ -406,6 +449,32 @@ The number of units the customer has indicated they require of the product.
 
 
 `integer`
+
+
+
+
+
+
+## xdm:selectedOptions
+### Selected Options
+
+Particular options chosen for a configurable product.
+
+`xdm:selectedOptions`
+* is optional
+* type: reference
+
+* defined in [Product list item](../../../datatypes/productlistitem.schema.md#xdmselectedoptions)
+
+### xdm:selectedOptions Type
+
+
+Array type: reference
+
+All items must be of the type:
+* []() – `#/definitions/selectedOption`
+
+
 
 
 

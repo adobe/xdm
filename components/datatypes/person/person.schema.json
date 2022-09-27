@@ -92,10 +92,18 @@
           "meta:titleId": "person##xdm:nationality##title##59991",
           "meta:descriptionId": "person##xdm:nationality##description##21181"
         },
+        "xdm:type": {
+          "title": "Type",
+          "type": "string",
+          "description": "The type of individual in different business contexts like B2C.",
+          "meta:titleId": "person##xdm:type##title##48971",
+          "meta:descriptionId": "person##xdm:type##description##47331"
+        },
         "xdm:taxId": {
           "title": "Tax ID",
           "type": "string",
           "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+          "meta:status": "deprecated",
           "meta:titleId": "person##xdm:taxId##title##67871",
           "meta:descriptionId": "person##xdm:taxId##description##73551"
         }

@@ -31,9 +31,12 @@ const masterComponentFolder = masterCopyLoc + "components";
 const masterExtensionFolder = masterCopyLoc + "extensions";
 const ignoredForRequiredValidation =
     ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+        "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
     "../schemas/descriptors/identity/descriptorIdentity.schema.json",
     "../schemas/descriptors/identity/descriptorReferenceIdentity.schema.json",
     "../schemas/descriptors/status/descriptorDeprecated.schema.json",
+    "../schemas/descriptors/primarykey/descriptorPrimaryKey.schema.json",
+    "../schemas/descriptors/version/descriptorVersion.schema.json",
     "../extensions/adobe/experience/audiencemanager/segmentfolder.schema.json",
     "../components/classes/experienceevent.schema.json",
     "../components/classes/segmentdefinition.schema.json",
@@ -41,6 +44,14 @@ const ignoredForRequiredValidation =
     ];
 const ignoredForIdValidation =
     ["../extensions/adobe/experience/journeyOrchestration/journeyOrchestrationServiceEventsSegmentExportJob.schema.json"
+    ];
+const ignoredForOpenObjectValidation =
+    ["../schemas/descriptors/display/alternateDisplayInfo.schema.json",
+      "../schemas/descriptors/display/descriptorMetaEnumRemove.schema.json",
+    "../schemas/descriptors/itemselector.schema.json",
+    "../extensions/adobe/experience/target/activity/activityevent/eventscope.schema.json",
+    "../components/datatypes/extensible.schema.json",
+    "../components/datatypes/external/repo/common.schema.json"
     ];
 
 shell.rm("-rf", masterCopyLoc); //start
@@ -284,6 +295,12 @@ function validate(o, file) {
             errLogs.push(file + ' validation error!!! Missing object type definition for "' +'properties"' + '.\n')
         }
 
+        if ((ignoredForOpenObjectValidation.indexOf(file) == -1) && o.hasOwnProperty("type") && (o.type == "object")
+            && !o.hasOwnProperty("properties") && !o.hasOwnProperty("$ref")
+            && !o.hasOwnProperty("additionalProperties") && !o.hasOwnProperty("patternProperties")) {
+            errLogs.push(file + ' validation error!!! Missing properties for object type.\n')
+        }
+
         if (o[i] && (typeof(o[i]) == "object") && !(o[i] instanceof Array)
             && (i != "properties") && (i != "patternProperties") && !(o[i].hasOwnProperty("type"))) {
             for (j in o[i]) {
@@ -294,6 +311,29 @@ function validate(o, file) {
             }
         }
 
+        if (file.indexOf("../schemas/descriptors/") == -1) {//enum validation
+            if (o[i] && o[i].hasOwnProperty('enum') && o[i].hasOwnProperty('meta:enum')) {
+                var enumSet = new Set();
+                var metaEnumSet = new Set();
+
+                for (let j in o[i]["enum"]) {
+                    enumSet.add(o[i]["enum"][j])
+                }
+
+                for (let k in o[i]["meta:enum"]) {
+                    metaEnumSet.add(k)
+                }
+
+                const eqSet = (xs, ys) =>
+                    xs.size === ys.size && [...xs].every((x) => ys.has(x));
+
+                if (!eqSet(enumSet, metaEnumSet)) {
+                    errLogs.push(file + " validation error!!! Mismatch between enum and meta:enum for property " + i + "\n");
+                }
+            } else if (o[i] && o[i].hasOwnProperty('enum') && !o[i].hasOwnProperty('meta:enum')) {
+                errLogs.push(file + " validation error!!! Missing meta:enum for property " + i + "\n");
+            }
+        }
 
         if (o[i] !== null && typeof(o[i]) == "object") {
             //going one step down in the object tree!!

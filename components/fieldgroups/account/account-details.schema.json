@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/account"],
-  "description": "XDM business account details. ",
+  "description": "Collects all details related to a customer's user account including contact details and account preferences.",
   "meta:sensitive-data": true,
   "definitions": {
     "account-details": {
@@ -65,7 +65,6 @@
           "title": "Parent Account",
           "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "account-details##xdm:accountParentID##title##80371",
           "meta:descriptionId": "account-details##xdm:accountParentID##description##84671"
         },

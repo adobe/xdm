@@ -431,12 +431,12 @@ Unknown type `object`.
       "items": {
         "type": "object",
         "properties": {
-          "https://ns.adobe.com/experience/journeyOrchestration/ID": {
+          "xdm:ID": {
             "title": "ID",
             "description": "ID of the rejected Consent policy.",
             "type": "string"
           },
-          "https://ns.adobe.com/experience/journeyOrchestration/name": {
+          "xdm:name": {
             "title": "Name",
             "description": "Name of the corresponding rejected Consent policy.",
             "type": "string"

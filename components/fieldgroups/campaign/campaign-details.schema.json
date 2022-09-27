@@ -25,7 +25,6 @@
           "title": "Parent Campaign ID",
           "description": "Member type and associated reference ID.",
           "type": "string",
-          "meta:status": "experimental",
           "meta:titleId": "campaign-details##xdm:parentCampaignID##title##3341",
           "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##9571"
         },
@@ -179,6 +178,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/campaign-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
   "meta:status": "stable",

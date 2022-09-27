@@ -75,7 +75,6 @@
                     "title": "Acquired By CampaignID",
                     "description": "",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##51731",
                     "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##39701"
                 },
@@ -130,6 +129,16 @@
                     "format": "date-time",
                     "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##46151",
                     "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##81781"
+                },
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:personType": {
+                            "title": "Person Type",
+                            "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+                            "type": "string"
+                        }
+                    }
                 }
             }
         }
@@ -137,6 +146,9 @@
     "allOf": [
         {
             "$ref": "#/definitions/campaign-member-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
     "meta:status": "stable",

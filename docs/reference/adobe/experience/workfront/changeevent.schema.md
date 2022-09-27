@@ -2,7 +2,7 @@
 # Workfront Change Event Schema
 
 ```
-https://ns.adobe.com/experience/workfront/taskevent
+https://ns.adobe.com/experience/workfront/changeevent
 ```
 
 Data associated with a change event within Workfront project execution
@@ -12,7 +12,7 @@ Data associated with a change event within Workfront project execution
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/changeevent.schema.json](adobe/experience/workfront/changeevent.schema.json) |
 ## Schema Hierarchy
 
-* Workfront Change Event `https://ns.adobe.com/experience/workfront/taskevent`
+* Workfront Change Event `https://ns.adobe.com/experience/workfront/changeevent`
   * [Time-series Schema](../../../behaviors/time-series.schema.md) `https://ns.adobe.com/xdm/data/time-series`
 
 
@@ -21,26 +21,17 @@ Data associated with a change event within Workfront project execution
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#id) |
-| [workfront:actualCompletionDate](#workfrontactualcompletiondate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:actualStartDate](#workfrontactualstartdate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:assignedToID](#workfrontassignedtoid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:completed](#workfrontcompleted) | `integer` | Optional | Workfront Change Event (this schema) |
 | [workfront:created](#workfrontcreated) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:createdByEmployeeID](#workfrontcreatedbyemployeeid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:creationDate](#workfrontcreationdate) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:customData](#workfrontcustomdata) | `object` | Optional | Workfront Change Event (this schema) |
 | [workfront:deleted](#workfrontdeleted) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:durationMinutes](#workfrontdurationminutes) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:iterationID](#workfrontiterationid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectID](#workfrontobjectid) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:objectName](#workfrontobjectname) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:objectType](#workfrontobjecttype) | `enum` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentPortfolioID](#workfrontparentportfolioid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProgramID](#workfrontparentprogramid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:parentProjectID](#workfrontparentprojectid) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:percentComplete](#workfrontpercentcomplete) | `number` | Optional | Workfront Change Event (this schema) |
-| [workfront:plannedStartDate](#workfrontplannedstartdate) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:priority](#workfrontpriority) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:remainingMinutes](#workfrontremainingminutes) | `integer` | Optional | Workfront Change Event (this schema) |
-| [workfront:status](#workfrontstatus) | `string` | Optional | Workfront Change Event (this schema) |
-| [workfront:storyPoints](#workfrontstorypoints) | `integer` | Optional | Workfront Change Event (this schema) |
+| [workfront:objectType](#workfrontobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentID](#workfrontparentid) | `string` | Optional | Workfront Change Event (this schema) |
+| [workfront:parentObjectType](#workfrontparentobjecttype) | `string` | Optional | Workfront Change Event (this schema) |
 | [workfront:updated](#workfrontupdated) | `integer` | Optional | Workfront Change Event (this schema) |
 | [xdm:eventType](#xdmeventtype) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmeventtype) |
 | [xdm:timestamp](#xdmtimestamp) | `string` | Optional | [Time-series Schema](../../../behaviors/time-series.schema.md#xdmtimestamp) |
@@ -61,68 +52,6 @@ A unique identifier for the time-series event.
 
 `string`
 * format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
-
-
-## workfront:actualCompletionDate
-### Actual Completion
-
-Actual completion date execution
-
-`workfront:actualCompletionDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:actualCompletionDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:actualStartDate
-### Actual Start Date
-
-Actual start date of execution
-
-`workfront:actualStartDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:actualStartDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:assignedToID
-### Assigned To
-
-The ID of the employee or person this object type is assigned to
-
-`workfront:assignedToID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:assignedToID Type
-
-
-`string`
 
 
 
@@ -169,6 +98,71 @@ Set to 1 if this was a created event
 
 
 
+## workfront:createdByEmployeeID
+### Created By ID
+
+The employeeID involved in the CREATE event
+
+`workfront:createdByEmployeeID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:createdByEmployeeID Type
+
+
+`string`
+
+
+
+
+
+
+## workfront:creationDate
+### Creation Date
+
+The entry date from the source system
+
+`workfront:creationDate`
+* is optional
+* type: `string`
+* defined in this schema
+
+### workfront:creationDate Type
+
+
+`string`
+* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
+
+
+
+
+
+
+## workfront:customData
+### Custom Form Fields
+
+Custom form data in the form of key/value pairs
+
+`workfront:customData`
+* is optional
+* type: `object`
+* defined in this schema
+
+### workfront:customData Type
+
+
+`object` with following properties:
+
+
+| Property | Type | Required |
+|----------|------|----------|
+
+
+
+
+
+
 ## workfront:deleted
 ### Deleted
 
@@ -183,46 +177,6 @@ Set to 1 if this was a deleted event
 
 
 `integer`
-
-
-
-
-
-
-## workfront:durationMinutes
-### Duration Minutes
-
-Number of minutes spent
-
-`workfront:durationMinutes`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:durationMinutes Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:iterationID
-### Iteration ID
-
-Iteration/Sprint this task was associated with
-
-`workfront:iterationID`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:iterationID Type
-
-
-`string`
 
 
 
@@ -276,32 +230,10 @@ The type of object
 
 `workfront:objectType`
 * is optional
-* type: `enum`
-* defined in this schema
-
-The value of this property **must** be equal to one of the [known values below](#workfrontobjecttype-known-values).
-
-### workfront:objectType Known Values
-| Value | Description |
-|-------|-------------|
-| `TASK` |  |
-| `PROJECT` |  |
-| `ISSUE` |  |
-
-
-
-
-## workfront:parentPortfolioID
-### Portfolio ID
-
-The parent Portfolio ID
-
-`workfront:parentPortfolioID`
-* is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentPortfolioID Type
+### workfront:objectType Type
 
 
 `string`
@@ -311,17 +243,17 @@ The parent Portfolio ID
 
 
 
-## workfront:parentProgramID
-### Program ID
+## workfront:parentID
+### Parent Object ID
 
-The parent Program ID
+The ID of the parent object
 
-`workfront:parentProgramID`
+`workfront:parentID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentProgramID Type
+### workfront:parentID Type
 
 
 `string`
@@ -331,141 +263,20 @@ The parent Program ID
 
 
 
-## workfront:parentProjectID
-### Project ID
+## workfront:parentObjectType
+### Parent Object Type
 
-The parent Project ID
+String value representing the type of parent - PROJECT, TASK, etc.
 
-`workfront:parentProjectID`
+`workfront:parentObjectType`
 * is optional
 * type: `string`
 * defined in this schema
 
-### workfront:parentProjectID Type
+### workfront:parentObjectType Type
 
 
 `string`
-
-
-
-
-
-
-## workfront:percentComplete
-### Percent Complete
-
-Current percentage complete
-
-`workfront:percentComplete`
-* is optional
-* type: `number`
-* defined in this schema
-
-### workfront:percentComplete Type
-
-
-`number`
-
-
-
-
-
-
-## workfront:plannedStartDate
-### Planned Start Date
-
-Planned start date of execution
-
-`workfront:plannedStartDate`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:plannedStartDate Type
-
-
-`string`
-* format: `date-time` – date and time (according to [RFC 3339, section 5.6](http://tools.ietf.org/html/rfc3339))
-
-
-
-
-
-
-## workfront:priority
-### Priority
-
-Current priority of this object
-
-`workfront:priority`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:priority Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:remainingMinutes
-### Remaining Minutes
-
-Remaining minutes expected
-
-`workfront:remainingMinutes`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:remainingMinutes Type
-
-
-`integer`
-
-
-
-
-
-
-## workfront:status
-### Status
-
-Current Status
-
-`workfront:status`
-* is optional
-* type: `string`
-* defined in this schema
-
-### workfront:status Type
-
-
-`string`
-
-
-
-
-
-
-## workfront:storyPoints
-### Story Points
-
-Story points assigned to this object
-
-`workfront:storyPoints`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### workfront:storyPoints Type
-
-
-`integer`
 
 
 
@@ -528,16 +339,19 @@ The primary event type for this time-series record.
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
+| `commerce.productListAdds` | Commerce Product List (Cart) Adds |
+| `commerce.productListOpens` | Commerce Product List (Cart) Opens |
+| `commerce.productListRemovals` | Commerce Product List (Cart) Removals |
+| `commerce.productListReopens` | Commerce Product List (Cart) Reopens |
+| `commerce.productListViews` | Commerce Product List (Cart) Views |
+| `commerce.productViews` | Commerce Product (Cart) Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
 | `decisioning.propositionInteract` | Decisioning Proposition Interact |
+| `decisioning.propositionSend` | Decisioning Proposition Send |
+| `decisioning.propositionDismiss` | Decisioning Proposition Dismiss |
+| `decisioning.propositionTrigger` | Decisioning Proposition Trigger |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -546,24 +360,50 @@ The primary event type for this time-series record.
 | `listOperation.removeFromList` | List Operation Remove From List |
 | `listOperation.addToList` | List Operation Add To List |
 | `leadOperation.scoreChanged` | Lead Operation Score Changed |
+| `leadOperation.revenueStageChanged` | Lead Operation Revenue Stage changed |
 | `leadOperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
 | `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
 | `leadOperation.callWebhook` | Lead Operation Call Webhook |
 | `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
+| `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
+| `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |
 | `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
 | `directMarketing.emailOpened` | Direct Marketing Email Opened |
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
+| `directMarketing.emailSent` | Direct Marketing Email Sent |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
 | `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 | `inappmessageTracking.dismiss` | inapp message was dimissed |
 | `inappmessageTracking.display` | inapp message was displayed |
 | `inappmessageTracking.interact` | inapp message was interacted with |
+| `media.ping` | Media ping |
+| `media.sessionStart` | Media sessionStart |
+| `media.play` | Media play |
+| `media.bufferStart` | Media bufferStart |
+| `media.pauseStart` | Media pauseStart |
+| `media.chapterStart` | Media chapterStart |
+| `media.chapterSkip` | Media chapterSkip |
+| `media.chapterComplete` | Media chapterComplete |
+| `media.adStart` | Media adStart |
+| `media.adSkip` | Media adSkip |
+| `media.adComplete` | Media adComplete |
+| `media.adBreakStart` | Media adBreakStart |
+| `media.adBreakComplete` | Media adBreakComplete |
+| `media.bitrateChange` | Media bitrateChange |
+| `media.error` | Media error |
+| `media.sessionComplete` | Media sessionComplete |
+| `media.sessionEnd` | Media sessionEnd |
+| `media.statesUpdate` | Media statesUpdate |
+| `media.downloaded` | Media downloaded content |
+| `location.entry` | Location entry |
+| `location.exit` | Location exit |
 
 
 

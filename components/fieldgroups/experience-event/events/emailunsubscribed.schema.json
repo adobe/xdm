@@ -27,12 +27,19 @@
           "type": "object",
           "properties": {
             "xdm:mailingID": {
-              "title": "Mailing ID",
+              "title": "Mailing ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the email asset.",
-		"meta:sensitive-data": true, 
+          		"meta:sensitive-data": true, 
+              "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
               "meta:titleId": "emailunsubscribed##xdm:mailingID##title##96401",
               "meta:descriptionId": "emailunsubscribed##xdm:mailingID##description##92371"
+            },
+            "xdm:mailingKey": {
+              "title": "Mailing Key",
+              "description": "Unique key of the email asset.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+              "meta:titleId": "emailunsubscribed##xdm:mailingKey##title##36621",
+              "meta:descriptionId": "emailunsubscribed##xdm:mailingKey##description##17531"
             },
             "xdm:mailingName": {
               "title": "Mailing Name",
@@ -55,6 +62,13 @@
               "description": "Friendly name of the test variant of the email asset.",
               "meta:titleId": "emailunsubscribed##xdm:testVariantName##title##16151",
               "meta:descriptionId": "emailunsubscribed##xdm:testVariantName##description##5151"
+            },
+            "xdm:automationRunID": {
+              "title": "Automation Run ID",
+              "type": "string",
+              "description": "Automation Run ID",
+              "meta:titleId": "emailunsubscribed##xdm:automationRunID##title##44581",
+              "meta:descriptionId": "emailunsubscribed##xdm:automationRunID##description##61651"
             }
           },
           "meta:titleId": "emailunsubscribed##xdm:directMarketing##title##64801"
@@ -172,7 +186,7 @@
       "$ref": "#/definitions/emailunsubscribed"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "emailunsubscribed##title##61161",
   "meta:descriptionId": "emailunsubscribed##description##19881"

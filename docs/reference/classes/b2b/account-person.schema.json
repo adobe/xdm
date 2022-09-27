@@ -25,7 +25,6 @@
                     "title": "Account Person ID",
                     "description": "Unique identifier for this relationship between an account and a person.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
                     "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171"
                 },
@@ -40,7 +39,6 @@
                     "title": "Account ID",
                     "description": "Unique identifier for the account in this account person relationship.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:accountID##title##74971",
                     "meta:descriptionId": "account-person##xdm:accountID##description##96141"
                 },
@@ -55,7 +53,6 @@
                     "title": "Person ID",
                     "description": "Unique identifier for the person in this account person relationship.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-person##xdm:personID##title##42991",
                     "meta:descriptionId": "account-person##xdm:personID##description##66421"
                 },
@@ -80,7 +77,9 @@
                     "type": "array",
                     "items": {
                         "type": "string"
-                    }
+                    },
+                    "meta:titleId": "account-person##xdm:personRoles##title##98611",
+                    "meta:descriptionId": "account-person##xdm:personRoles##description##67421"
                 },
                 "xdm:isDirect": {
                     "title": "Direct Flag",
@@ -130,6 +129,13 @@
                     "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
                     "meta:titleId": "account-person##xdm:currencyCode##title##72221",
                     "meta:descriptionId": "account-person##xdm:currencyCode##description##58201"
+                },
+                "xdm:relationshipSource": {
+                    "title": "Relationship Source",
+                    "description": "Source of Account Person relation.",
+                    "type": "string",
+                    "meta:titleId": "account-person##xdm:relationshipSource##title##40031",
+                    "meta:descriptionId": "account-person##xdm:relationshipSource##description##88321"
                 }
             }
         }
@@ -143,6 +149,9 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
     "meta:status": "stable",

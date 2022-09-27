@@ -1,0 +1,13 @@
+{
+  "@type": "xdm:descriptorMetaEnumRemove",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/environment",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": "/browserDetails",
+  "xdm:title": {
+    "en_us": "friendly title for browser details"
+  },
+  "meta:enum": {
+    "Standard 5": "My Custom5",
+    "Standard 6": "My Custom6"
+  }
+}

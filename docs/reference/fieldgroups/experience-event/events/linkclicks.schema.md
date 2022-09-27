@@ -9,7 +9,7 @@ Use to capture details when a person clicks a link on a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/linkclicks.schema.json](fieldgroups/experience-event/events/linkclicks.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/linkclicks.schema.json](fieldgroups/experience-event/events/linkclicks.schema.json) |
 
 ## Link Clicks Example
 ```json
@@ -154,11 +154,18 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:linkID": {
-      "title": "Link ID",
+      "title": "Link ID (deprecated)",
       "type": "string",
-      "description": "Unique ID of the link clicked.",
+      "description": "Link ID is going to depreciate soon. Please use Web Interaction Key.",
       "meta:titleId": "linkclicks##xdm:linkID##title##65641",
       "meta:descriptionId": "linkclicks##xdm:linkID##description##70231"
+    },
+    "xdm:webInteractionKey": {
+      "title": "Web Interaction Key",
+      "description": "Unique key of the link clicked.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "linkclicks##xdm:webInteractionKey##title##58071",
+      "meta:descriptionId": "linkclicks##xdm:webInteractionKey##description##19121"
     },
     "xdm:linkURL": {
       "title": "Link URL",

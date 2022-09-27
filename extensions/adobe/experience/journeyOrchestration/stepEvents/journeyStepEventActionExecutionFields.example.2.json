@@ -20,8 +20,8 @@
       "https://ns.adobe.com/experience/journeyOrchestration/name":"thePolicy1"
     },
     {
-      "https://ns.adobe.com/experience/journeyOrchestration/ID":"aaa12-a121e-13aeb-11247-8842b",
-      "https://ns.adobe.com/experience/journeyOrchestration/name":"thePolicy2"
+      "xdm:ID":"aaa12-a121e-13aeb-11247-8842b",
+      "xdm:name":"thePolicy2"
     }]
   }
 }

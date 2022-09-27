@@ -9,7 +9,7 @@ Use to capture details when email to person bounces.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/emailbounced.schema.json](fieldgroups/experience-event/events/emailbounced.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/emailbounced.schema.json](fieldgroups/experience-event/events/emailbounced.schema.json) |
 
 ## Email Bounced Example
 ```json
@@ -39,13 +39,36 @@ Use to capture details when email to person bounces.
 
 | Property | Type | Required |
 |----------|------|----------|
+| `xdm:automationRunID`| string | Optional |
 | `xdm:email`| string | Optional |
 | `xdm:emailBouncedCode`| string | Optional |
 | `xdm:emailBouncedDetails`| string | Optional |
 | `xdm:mailingID`| string | Optional |
+| `xdm:mailingKey`|  | Optional |
 | `xdm:mailingName`| string | Optional |
 | `xdm:testVariantID`| string | Optional |
 | `xdm:testVariantName`| string | Optional |
+
+
+
+#### xdm:automationRunID
+##### Automation Run ID
+
+Automation Run ID
+
+`xdm:automationRunID`
+* is optional
+* type: `string`
+
+##### xdm:automationRunID Type
+
+
+`string`
+
+
+
+
+
 
 
 
@@ -113,9 +136,9 @@ Details of email bounce from the Mail Transfer Agent.
 
 
 #### xdm:mailingID
-##### Mailing ID
+##### Mailing ID (deprecated)
 
-Unique ID of the email asset.
+Mailing ID is going to depreciate soon. Please use Mailing Key.
 
 `xdm:mailingID`
 * is optional
@@ -126,6 +149,26 @@ Unique ID of the email asset.
 
 `string`
 
+
+
+
+
+
+
+
+#### xdm:mailingKey
+##### Mailing Key
+
+Unique key of the email asset.
+
+`xdm:mailingKey`
+* is optional
+* type: reference
+
+##### xdm:mailingKey Type
+
+
+* []() – `https://ns.adobe.com/xdm/datatypes/b2b-source`
 
 
 

@@ -26,12 +26,6 @@ Track interactions with media such as progress (how much was consumed), total ti
         "@id": "https://data.adobe.io/entities/media-timed-asset-reference/15234430",
         "dc:title": "Floki Begs Helga for Freedom",
         "dc:creator": "Video Author",
-        "dc:publisher": "tvonline",
-        "xmpDM:duration": 87,
-        "iptc4xmpExt:Series": {
-          "iptc4xmpExt:Name": "nba_highlights",
-          "iptc4xmpExt:Identifier": "http://sportcnl.com/series-identifiers/2613953"
-        },
         "xdm:showType": "episode",
         "xdm:streamFormat": "long",
         "xdm:streamType": "video",
@@ -59,11 +53,10 @@ Track interactions with media such as progress (how much was consumed), total ti
       "xdm:primaryAssetViewDetails": {
         "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
         "xdm:playerName": "watchsportcnl",
-        "xdm:videoSegment": "3-10",
+        "xdm:videoSegment": "[3-10]",
         "xdm:path": "id:arg:ep:npqr.com:dfb21354-4ce7",
         "xdm:broadcastChannel": "WatchSportCnl",
         "xdm:broadcastContentType": "VOD",
-        "xdm:streamFormat": "short",
         "xdm:vhlVersion": "js-2.0.1.88-c8c0b1",
         "xdm:playerSDKVersion": {
           "xdm:version": "1.0.8"
@@ -148,7 +141,7 @@ Track interactions with media such as progress (how much was consumed), total ti
       "xdm:starts": {
         "xdm:value": 1
       },
-      "xdm:mediaSegmentView": {
+      "xdm:mediaSegmentViews": {
         "xdm:value": 1
       },
       "xdm:totalTimePlayed": {
@@ -167,15 +160,6 @@ Track interactions with media such as progress (how much was consumed), total ti
         "xdm:value": 1
       },
       "xdm:progress10": {
-        "xdm:value": 1
-      },
-      "xdm:firstQuartiles": {
-        "xdm:value": 1
-      },
-      "xdm:midpoints": {
-        "xdm:value": 1
-      },
-      "xdm:thirdQuartiles": {
         "xdm:value": 1
       },
       "xdm:progress95": {
@@ -198,7 +182,8 @@ Track interactions with media such as progress (how much was consumed), total ti
       },
       "xdm:idp": "MyTVOnline",
       "xdm:mediaAuth": "Sample auth",
-      "xdm:dayPart": "daytime"
+      "xdm:dayPart": "daytime",
+      "xdm:playhead": 831
     }
   }
 }

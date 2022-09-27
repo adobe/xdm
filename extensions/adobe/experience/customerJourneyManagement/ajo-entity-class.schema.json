@@ -1,0 +1,32 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Entity Class",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "A Record based AJO Entity class for creating lookup based schemas",
+  "definitions": {
+    "ajoEntity": {
+      "properties": {}
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/ajoEntity"
+    }
+  ],
+  "meta:status": "stable",
+  "examples": [{}]
+}

@@ -30,14 +30,21 @@
               "type": "object",
               "properties": {
                 "xdm:scoreAttributeID": {
-                  "title": "Score Atribute ID",
+                  "title": "Score Attribute ID (deprecated)",
                   "type": "string",
-                  "description": "Unique ID of the lead score attribute.",
+                  "description": "Score Attribute ID is going to depreciate soon. Please use  Score Attribute Key.",
                   "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
                   "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521"
                 },
+                "xdm:scoreAttributeKey": {
+                  "title": "Score Attribute Key",
+                  "description": "Unique key of the lead score attribute.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+                  "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971"
+                },
                 "xdm:scoreAttributeName": {
-                  "title": "Score Atribute Name",
+                  "title": "Score Attribute Name",
                   "type": "string",
                   "description": "Friendly name of the lead score attribute.",
                   "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",
@@ -113,7 +120,7 @@
       "$ref": "#/definitions/scorechanged"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "scorechanged##title##37241",
   "meta:descriptionId": "scorechanged##description##17391"

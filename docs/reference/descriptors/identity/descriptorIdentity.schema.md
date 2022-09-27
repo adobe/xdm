@@ -24,9 +24,8 @@ Used to mark a field as an identity.
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "AAM",
-  "xdm:property": "xdm:code",
-  "xdm:isPrimary": true
+  "xdm:namespace": "12345",
+  "xdm:property": "xdm:id"
 }
 ```
 
@@ -36,8 +35,9 @@ Used to mark a field as an identity.
   "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile",
   "xdm:sourceVersion": 1,
   "xdm:sourceProperty": "/orgUnitId",
-  "xdm:namespace": "12345",
-  "xdm:property": "xdm:id"
+  "xdm:namespace": "AAM",
+  "xdm:property": "xdm:code",
+  "xdm:isPrimary": true
 }
 ```
 

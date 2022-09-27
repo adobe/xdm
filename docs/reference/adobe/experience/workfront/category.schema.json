@@ -1,0 +1,66 @@
+{
+    "meta:license": [
+        "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/experience/workfront/category",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Workfront Category Attributes",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/workfront/object",
+        "https://ns.adobe.com/experience/workfront/changeevent"
+    ],
+    "description": "Category related fields",
+    "definitions": {
+        "category": {
+            "properties": {
+                "workfront:category": {
+                    "type": "object",
+                    "title": "Category Attributes",
+                    "properties": {
+                        "workfront:description": {
+                            "title": "Category Description",
+                            "description": "Description of the wf category object",
+                            "type": "string"
+                        },
+                        "workfront:isActive": {
+                            "title": "Category is Active",
+                            "description": "Flag that describes if category is active",
+                            "type": "boolean"
+                        },
+                        "workfront:groupID": {
+                            "title": "Category's Group ID",
+                            "description": "Group id this category belongs to",
+                            "type": "string"
+                        },
+                        "workfront:objectCode": {
+                            "title": "Category's object code",
+                            "description": "Object code for category",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/category"
+        }
+    ],
+    "meta:status": "experimental",
+    "examples": [
+        {
+            "workfront:category": {
+                "workfront:isActive": true,
+                "workfront:objectCode": "TASK",
+                "workfront:groupID": "12321ASDS1232AB"
+            }
+        }
+    ]
+}

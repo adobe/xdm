@@ -1,11 +1,13 @@
 {
   "xdm:destinationID": "b297ed27-607e-4715-97ed-27607e171589",
-  "xdm:destinationName": "Infa",
-  "xdm:destinationPlatform": "Informatica",
+  "xdm:destinationName": "LMA_Destination1",
+  "xdm:destinationPlatform": "LinkedIn Matched Audience",
   "xdm:createTime": "2019-01-01T15:52:25+00:00",
   "xdm:createdByID": "mprabhbak",
-  "xdm:destinationDescription": "Informatica connection",
+  "xdm:destinationDescription": "LinkedIn Matched Audience connection",
   "xdm:destinationStatus": "enabled",
   "xdm:version": "1.2",
-  "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea"
+  "xdm:connectionSpecID": "31ef37d8-3901-4dd5-a46d-7c11c20b11ea",
+  "xdm:destinationCategory": "social",
+  "xdm:destinationFrequency": "Streaming"
 }

@@ -1,0 +1,18 @@
+{
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/messageID": "",
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/channel": {
+    "xdm:_id": "Email",
+    "xdm:_type": "https://ns.adobe.com/xdm/channel-types/email"
+  },
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentation": {
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentID": "4vqyd6OoARXqj9nRUNhtLQ",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentName": "Email Subject Test",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentID": "0",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentName": "Default Subject Line"
+  },
+  "https://ns.adobe.com/experience/journeyOrchestration/classification/campaign": {
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignID": "19d3b8d6-32fa-4b06-b5fe-2692f828072b",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignName": "My Email Campaign",
+    "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignVersionID": "7b203379-1d61-42ef-a096-aded7f957d62"
+  }
+}

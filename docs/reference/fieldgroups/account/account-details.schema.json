@@ -17,7 +17,8 @@
     "meta:intendedToExtend": [
         "https://ns.adobe.com/xdm/context/account"
     ],
-    "description": "XDM business account details.",
+    "description": "Collects all details related to a customer's user account including contact details and account preferences.",
+    "meta:sensitive-data": true,
     "definitions": {
         "account-details": {
             "properties": {
@@ -66,7 +67,6 @@
                     "title": "Parent Account",
                     "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
                     "type": "string",
-                    "meta:status": "experimental",
                     "meta:titleId": "account-details##xdm:accountParentID##title##80371",
                     "meta:descriptionId": "account-details##xdm:accountParentID##description##84671"
                 },
@@ -80,6 +80,7 @@
                 "xdm:partnerAccountID": {
                     "title": "Partner Account Id",
                     "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+                    "meta:sensitive-data": true,
                     "type": "string",
                     "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
                     "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561"
@@ -94,6 +95,7 @@
                 "xdm:accountDescription": {
                     "title": "Account Description",
                     "description": "Text description of the account.",
+                    "meta:sensitive-data": true,
                     "type": "string",
                     "meta:titleId": "account-details##xdm:accountDescription##title##74151",
                     "meta:descriptionId": "account-details##xdm:accountDescription##description##3761"
@@ -108,6 +110,7 @@
                 "xdm:accountType": {
                     "title": "Account Type",
                     "description": "Account Type.",
+                    "meta:sensitive-data": true,
                     "type": "string",
                     "meta:titleId": "account-details##xdm:accountType##title##60831",
                     "meta:descriptionId": "account-details##xdm:accountType##description##2451"
@@ -128,6 +131,7 @@
                     ],
                     "pattern": "^[A-Z]{3}$",
                     "description": "The ISO 4217 currency code.",
+                    "meta:sensitive-data": true,
                     "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##40311",
                     "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##24611"
                 },

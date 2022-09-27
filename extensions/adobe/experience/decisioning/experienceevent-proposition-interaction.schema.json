@@ -17,6 +17,16 @@
     "decisioning-experienceevent-all": {
       "type": "object",
       "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositionEventType": {
+          "title": "Proposition Event",
+          "description": "A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-event-type"
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionAction": {
+          "title": "Proposition Action",
+          "description": "The specific element that was interacted with which caused the proposition event to be triggered.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-action"
+        },
         "https://ns.adobe.com/experience/decisioning/propositions": {
           "title": "Involved Propositions",
           "type": "array",

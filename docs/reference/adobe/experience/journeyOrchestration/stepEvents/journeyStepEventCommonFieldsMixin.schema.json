@@ -45,6 +45,26 @@
                             "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
                             "type": "string"
                         },
+                        "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": {
+                            "title": "isReadSegmentTriggerStartEvent",
+                            "description": "If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.",
+                            "type": "boolean"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
+                            "title": "origSegmentQualificationStatus",
+                            "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
+                            "type": "string",
+                            "enum": [
+                                "existing",
+                                "realized",
+                                "exited"
+                            ],
+                            "meta:enum": {
+                                "existing": "existing",
+                                "realized": "realized",
+                                "exited": "exited"
+                            }
+                        },
                         "https://ns.adobe.com/experience/journeyOrchestration/entrance": {
                             "title": "entrance",
                             "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",
@@ -368,6 +388,22 @@
                             "type": "string",
                             "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##title##18181",
                             "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##91181"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": {
+                            "title": "Projection Original Timestamp",
+                            "type": "string",
+                            "description": "The Projection Original Timestamp of the segment being used in journey"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": {
+                            "title": "Projection Original Timestamp",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The Projection Original Timestamp of the segment being used in journey"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/experienceID": {
+                            "title": "Experience ID",
+                            "type": "string",
+                            "description": "Journey Orchestration Experience Id"
                         }
                     },
                     "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"
@@ -395,19 +431,6 @@
             "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
             "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
-        },
-        {
-            "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
-            "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
-            "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
-            "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
-            "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "c19714bc-e74f-4448-",
-            "https://ns.adobe.com/experience/journeyOrchestration/stepID": "c19714bc-e74f-4448-94a5-425b7b609911",
-            "https://ns.adobe.com/experience/journeyOrchestration/stepType": "actionStep",
-            "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
-            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
             "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
             "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed": true,
             "https://ns.adobe.com/experience/journeyOrchestration/nodeName": "SendPush",
@@ -421,10 +444,21 @@
             "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent": true
         },
         {
-            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
-            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
-            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
-            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
+            "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
+            "https://ns.adobe.com/experience/journeyOrchestration/reentrance": false,
+            "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded": true,
+            "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
+            "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "c19714bc-e74f-4448-",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepID": "c19714bc-e74f-4448-94a5-425b7b609911",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepType": "actionStep",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+            "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": "2021-07-27T18:28:04.351808Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": "2021-07-27T18:28:04Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/experienceID": "f8e03cb0-7c31-4aba-a4a3-c72a0fb353c4",
+            "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized"
         },
         {
             "https://ns.adobe.com/experience/journeyOrchestration/entrance": true,
@@ -449,6 +483,24 @@
             "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel": "email",
             "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType": "open",
             "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1
+        },
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": true,
+            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": "2021-01-26T06:23:28.914Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": "2021-01-26T06:24:28.914Z",
+            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": "inSegment"
+        },
+        {
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
+            "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+            "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": true,
+            "https://ns.adobe.com/experience/journeyOrchestration/eventID": "scheduledNotificationReceived",
+            "https://ns.adobe.com/experience/journeyOrchestration/stepID": "start-virtualStep2",
+            "https://ns.adobe.com/experience/journeyOrchestration/nodeID": "da314152-3611-4468-9941-6c27adc5ffda",
+            "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex": 1,
+            "https://ns.adobe.com/experience/journeyOrchestration/processingTime": 0,
+            "https://ns.adobe.com/experience/journeyOrchestration/instanceType": "batch"
         }
     ]
 }

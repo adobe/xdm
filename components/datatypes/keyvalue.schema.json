@@ -1,0 +1,41 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/keyvalue",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Key Value Pair",
+  "type": "object",
+  "description": "Key value pair.",
+  "definitions": {
+    "keyvalue": {
+      "properties": {
+        "xdm:key": {
+          "title": "Key",
+          "description": "Key",
+          "type": "string",
+          "meta:titleId": "keyvalue##xdm:key##title##65221",
+          "meta:descriptionId": "keyvalue##xdm:key##description##22901"
+        },
+        "xdm:value": {
+          "title": "Value",
+          "description": "Value",
+          "type": "string",
+          "meta:titleId": "keyvalue##xdm:value##title##33611",
+          "meta:descriptionId": "keyvalue##xdm:value##description##45471"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/keyvalue"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "keyvalue##title##44171",
+  "meta:descriptionId": "keyvalue##description##5681"
+}

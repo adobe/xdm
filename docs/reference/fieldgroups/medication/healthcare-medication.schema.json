@@ -1,0 +1,111 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/healthcare-medication",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Healthcare medication",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "healthcare_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/classes/medication"
+    ],
+    "description": "Medication details such as ingredients, brand name, and quantity.",
+    "definitions": {
+        "medication-details": {
+            "properties": {
+                "xdm:medication": {
+                    "title": "Medication",
+                    "description": "Information about the medication.",
+                    "type": "object",
+                    "properties": {
+                        "xdm:status": {
+                            "title": "Status",
+                            "type": "string",
+                            "description": "Status indicating whether the drug/medication is active/prescribable or not.",
+                            "meta:enum": {
+                                "active": "Active",
+                                "inactive": "Inactive",
+                                "entered-in-error": "Entered-in-error"
+                            }
+                        },
+                        "xdm:brandName": {
+                            "title": "Brand Name",
+                            "description": "Brand name of the drug.",
+                            "type": "string"
+                        },
+                        "xdm:genericName": {
+                            "title": "Generic Name",
+                            "description": "Generic name of the drug.",
+                            "type": "string"
+                        },
+                        "xdm:manufacturerName": {
+                            "title": "Manufacturer Name",
+                            "description": "Manufacturer of the medication.",
+                            "type": "string"
+                        },
+                        "xdm:form": {
+                            "title": "Medication Form",
+                            "type": "string",
+                            "description": "Form that the medication comes in such as tablet, capsule, or liquid."
+                        },
+                        "xdm:dosageUnitNumber": {
+                            "title": "Dosage Unit Number",
+                            "type": "number",
+                            "description": "Dosage unit number."
+                        },
+                        "xdm:dosageUnitOfMeasurement": {
+                            "title": "Dosage Unit Of measurement",
+                            "type": "string",
+                            "description": "Dosage unit of measurement."
+                        },
+                        "xdm:quantity": {
+                            "title": "Drug Quantity",
+                            "type": "number",
+                            "description": "Amount of drug in the package."
+                        },
+                        "xdm:ingredients": {
+                            "title": "ingredients",
+                            "description": "Ingredients present in the medication",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:name": {
+                                        "title": "Name",
+                                        "type": "string",
+                                        "description": "Name of the ingredient."
+                                    },
+                                    "xdm:isActive": {
+                                        "title": "Is Active",
+                                        "type": "boolean",
+                                        "description": "Indicates if this ingredient is active in the medication."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/medication-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {}
+    ]
+}

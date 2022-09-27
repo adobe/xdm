@@ -36,7 +36,9 @@
               }
             }
           ],
-          "description": "When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`."
+          "description": "When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+          "meta:titleId": "descriptorLabel##xdm:excludeProperty##title##95841",
+          "meta:descriptionId": "descriptorLabel##xdm:excludeProperty##description##26021"
         },
         "xdm:labels": {
           "title": "Labels",

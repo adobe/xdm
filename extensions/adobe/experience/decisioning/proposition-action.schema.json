@@ -1,0 +1,38 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/proposition-action",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Proposition Action",
+  "description": "Properties of a specific element that was interacted with which caused the proposition event to be triggered.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "definitions": {
+    "proposition-action": {
+      "type": "object",
+      "properties": {
+        "xdm:id": {
+          "title": "id",
+          "description": "The customer generated id of the element with which the end-user interacted.",
+          "type": "string"
+        },
+        "xdm:label": {
+          "title": "label",
+          "description": "The customer generated display name of the element with which the end-user interacted.",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/proposition-action"
+    }
+  ]
+}

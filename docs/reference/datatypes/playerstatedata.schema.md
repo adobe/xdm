@@ -86,13 +86,15 @@ The name of the player state.
 `string`
 
 
-All instances must conform to this regular expression 
-(test examples [here](https://regexr.com/?expression=%5E%5Ba-zA-Z0-9_.%5D%7B1%2C64%7D%24)):
-```regex
-^[a-zA-Z0-9_.]{1,64}$
-```
 
-
+### xdm:name Known Values
+| Value | Description |
+|-------|-------------|
+| `fullscreen` | Full Screen |
+| `mute` | Mute |
+| `closedCaptioning` | Closed Captioning |
+| `pictureInPicture` | Picture In Picture |
+| `inFocus` | In Focus |
 
 
 

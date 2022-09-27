@@ -149,17 +149,17 @@
         },
         "dayPart": {
             "properties": {
-                "cloudCover": {
+                "xdm:cloudCover": {
                     "title": "Cloud Cover",
                     "description": "Daytime average cloud cover expressed as a percentage.",
                     "$ref": "#/definitions/distance"
                 },
-                "precipChance": {
+                "xdm:precipChance": {
                     "title": "Precipitation Chance",
                     "description": "Probability that there will be precipitation (percentage).",
                     "type": "integer"
                 },
-                "precipType": {
+                "xdm:precipType": {
                     "title": "Precipitation Type",
                     "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
                     "type": "string",
@@ -174,62 +174,62 @@
                         "precip": "Precip"
                     }
                 },
-                "qpf": {
+                "xdm:qpf": {
                     "title": "QPF",
                     "description": "The forecasted measurable precipitation (liquid or liquid equivalent) during the 12 or 24 hour period. Measured in millimeters.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/precipitation"
                 },
-                "relativeHumidity": {
+                "xdm:relativeHumidity": {
                     "title": "Relative Humidity",
                     "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
                     "type": "integer"
                 },
-                "snowRange": {
+                "xdm:snowRange": {
                     "title": "Snow Range",
                     "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
                     "type": "string"
                 },
-                "temperature": {
+                "xdm:temperature": {
                     "title": "Temperature",
                     "description": "Temperature in defined unit of measure. Range -140 to 140.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
                 },
-                "temperatureHeatIndex": {
+                "xdm:temperatureHeatIndex": {
                     "title": "Temperature Heat Index",
                     "description": "Temperature as it would feel to a person exposed based on temperature and humidity.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
                 },
-                "temperatureWindChill": {
+                "xdm:temperatureWindChill": {
                     "title": "Temperature Wind Chill",
                     "description": "Temperature as it would feel to a person exposed based on temperature and wind speed.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/temperature"
                 },
-                "thunderIndex": {
+                "xdm:thunderIndex": {
                     "title": "Thunder Index",
                     "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
                     "type": "integer"
                 },
-                "windDirection": {
+                "xdm:windDirection": {
                     "title": "Wind Direction",
                     "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
                     "type": "integer"
                 },
-                "windSpeed": {
+                "xdm:windSpeed": {
                     "title": "Wind Speed",
                     "description": "The wind is treated as a vector; hence, winds must have direction and magnitude (speed). The wind information reported in the current conditions corresponds to a 10-minute average called the sustained wind speed. Sudden or brief variations in the wind speed are known as “wind gusts” and are reported in a separate data field. Wind directions are always expressed as \"from whence the wind blows\" meaning that a North wind blows from North to South. If you face North in a North wind the wind is at your face. Face southward and the North wind is at your back.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed"
                 },
-                "windGust": {
+                "xdm:windGust": {
                     "title": "Wind Gust",
                     "description": "This data field contains information about sudden and temporary variations of the average Wind Speed. The report always shows the maximum wind gust speed recorded during the observation period. It is a required display field if Wind Speed is shown. The speed of the gust can be expressed in miles per hour or kilometers per hour.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/speed"
                 },
-                "qpfSnow": {
+                "xdm:qpfSnow": {
                     "title": "QPF Snow",
                     "description": "The forecasted measurable precipitation as snow during the 12 or 24 hour forecast period. Measured in centimeters.",
                     "$ref": "https://ns.adobe.com/xdm/mixins/current-weather#/definitions/snowfall"
                 },
-                "uvIndex": {
+                "xdm:uvIndex": {
                     "title": "UV Index",
                     "description": "Maximum UV index for the 12 hour forecast period.",
                     "type": "integer"

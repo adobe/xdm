@@ -25,7 +25,8 @@ Adobe Experience Platform Web SDK ExperienceEvent fieldgroup. Includes field def
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | AJO Classification Fields | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype) |
+| [https://ns.adobe.com/experience/decisioning/propositionAction](#httpsnsadobecomexperiencedecisioningpropositionaction) | Proposition Action | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction) |
+| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | Proposition Event Type | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
@@ -35,6 +36,25 @@ Adobe Experience Platform Web SDK ExperienceEvent fieldgroup. Includes field def
 | [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
+## https://ns.adobe.com/experience/decisioning/propositionAction
+### Proposition Action
+
+The specific element that was interacted with which caused the proposition event to be triggered.
+
+`https://ns.adobe.com/experience/decisioning/propositionAction`
+* is optional
+* type: Proposition Action
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction)
+
+### https://ns.adobe.com/experience/decisioning/propositionAction Type
+
+
+* [Proposition Action](decisioning/proposition-action.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-action`
+
+
+
+
+
 ## https://ns.adobe.com/experience/decisioning/propositionEventType
 ### Proposition Event
 
@@ -42,13 +62,13 @@ A record of how the user interacted with the proposition. All propositions recor
 
 `https://ns.adobe.com/experience/decisioning/propositionEventType`
 * is optional
-* type: AJO Classification Fields
+* type: Proposition Event Type
 * defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype)
 
 ### https://ns.adobe.com/experience/decisioning/propositionEventType Type
 
 
-* [AJO Classification Fields](decisioning/proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+* [Proposition Event Type](decisioning/proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
 
 
 

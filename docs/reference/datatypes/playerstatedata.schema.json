@@ -18,8 +18,14 @@
                 "xdm:name": {
                     "title": "Player State Name",
                     "type": "string",
-                    "pattern": "^[a-zA-Z0-9_.]{1,64}$",
-                    "description": "The name of the player state."
+                    "description": "The name of the player state.",
+                    "meta:enum": {
+                        "fullscreen": "Full Screen",
+                        "mute": "Mute",
+                        "closedCaptioning": "Closed Captioning",
+                        "pictureInPicture": "Picture In Picture",
+                        "inFocus": "In Focus"
+                    }
                 },
                 "xdm:isSet": {
                     "title": "Player State Set",

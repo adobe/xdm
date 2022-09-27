@@ -15,7 +15,8 @@ Captures information regarding an action taken for one or more prior proposition
 * Experience Event - Proposition Interactions `https://ns.adobe.com/experience/decisioning/proposition-interaction`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [AJO Classification Fields](proposition-event-type.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+  * [Proposition Event Type](proposition-event-type.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+  * [Proposition Action](proposition-action.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-action`
 
 
 ## Experience Event - Proposition Interactions Examples
@@ -94,10 +95,30 @@ Captures information regarding an action taken for one or more prior proposition
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | AJO Classification Fields | Optional | Experience Event - Proposition Interactions (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositionAction](#httpsnsadobecomexperiencedecisioningpropositionaction) | Proposition Action | Optional | Experience Event - Proposition Interactions (this schema) |
+| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | Proposition Event Type | Optional | Experience Event - Proposition Interactions (this schema) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | Experience Event - Proposition Interactions (this schema) |
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/decisioning/propositionAction
+### Proposition Action
+
+The specific element that was interacted with which caused the proposition event to be triggered.
+
+`https://ns.adobe.com/experience/decisioning/propositionAction`
+* is optional
+* type: Proposition Action
+* defined in this schema
+
+### https://ns.adobe.com/experience/decisioning/propositionAction Type
+
+
+* [Proposition Action](proposition-action.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-action`
+
+
+
+
 
 ## https://ns.adobe.com/experience/decisioning/propositionEventType
 ### Proposition Event
@@ -106,13 +127,13 @@ A record of how the user interacted with the proposition. All propositions recor
 
 `https://ns.adobe.com/experience/decisioning/propositionEventType`
 * is optional
-* type: AJO Classification Fields
+* type: Proposition Event Type
 * defined in this schema
 
 ### https://ns.adobe.com/experience/decisioning/propositionEventType Type
 
 
-* [AJO Classification Fields](proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+* [Proposition Event Type](proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
 
 
 

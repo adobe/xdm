@@ -14,8 +14,8 @@ Error details information.
 ## Error details information Example
 ```json
 {
-  "xdm:errorID": "errorID",
-  "xdm:errorSource": "player"
+  "xdm:ID": "errorID",
+  "xdm:source": "player"
 }
 ```
 
@@ -23,21 +23,21 @@ Error details information.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:errorID](#xdmerrorid) | `string` | Optional | Error details information (this schema) |
-| [xdm:errorSource](#xdmerrorsource) | `enum` | Optional | Error details information (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Error details information (this schema) |
+| [xdm:source](#xdmsource) | `enum` | Optional | Error details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:errorID
+## xdm:ID
 ### Error ID
 
 The error ID.
 
-`xdm:errorID`
+`xdm:ID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:errorID Type
+### xdm:ID Type
 
 
 `string`
@@ -54,19 +54,19 @@ All instances must conform to this regular expression
 
 
 
-## xdm:errorSource
+## xdm:source
 ### Error Source
 
 The error source.
 
-`xdm:errorSource`
+`xdm:source`
 * is optional
 * type: `enum`
 * defined in this schema
 
-The value of this property **must** be equal to one of the [known values below](#xdmerrorsource-known-values).
+The value of this property **must** be equal to one of the [known values below](#xdmsource-known-values).
 
-### xdm:errorSource Known Values
+### xdm:source Known Values
 | Value | Description |
 |-------|-------------|
 | `player` | Player source. |

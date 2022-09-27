@@ -54,7 +54,8 @@ Analytics ExperienceEvent field group for use with schemas for Solution data ing
 | [https://ns.adobe.com/experience/analytics/event801to900](#httpsnsadobecomexperienceanalyticsevent801to900) | event801to900.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent801to900) |
 | [https://ns.adobe.com/experience/analytics/event901to1000](#httpsnsadobecomexperienceanalyticsevent901to1000) | event901to1000.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticsevent901to1000) |
 | [https://ns.adobe.com/experience/analytics/session](#httpsnsadobecomexperienceanalyticssession) | session.schema | Optional | [Adobe Analytics ExperienceEvent Full Extension](analytics/experienceevent-all.schema.md#httpsnsadobecomexperienceanalyticssession) |
-| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | AJO Classification Fields | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype) |
+| [https://ns.adobe.com/experience/decisioning/propositionAction](#httpsnsadobecomexperiencedecisioningpropositionaction) | Proposition Action | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction) |
+| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | Proposition Event Type | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
@@ -3486,6 +3487,25 @@ All instances must conform to this regular expression
 
 
 
+## https://ns.adobe.com/experience/decisioning/propositionAction
+### Proposition Action
+
+The specific element that was interacted with which caused the proposition event to be triggered.
+
+`https://ns.adobe.com/experience/decisioning/propositionAction`
+* is optional
+* type: Proposition Action
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction)
+
+### https://ns.adobe.com/experience/decisioning/propositionAction Type
+
+
+* [Proposition Action](decisioning/proposition-action.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-action`
+
+
+
+
+
 ## https://ns.adobe.com/experience/decisioning/propositionEventType
 ### Proposition Event
 
@@ -3493,13 +3513,13 @@ A record of how the user interacted with the proposition. All propositions recor
 
 `https://ns.adobe.com/experience/decisioning/propositionEventType`
 * is optional
-* type: AJO Classification Fields
+* type: Proposition Event Type
 * defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype)
 
 ### https://ns.adobe.com/experience/decisioning/propositionEventType Type
 
 
-* [AJO Classification Fields](decisioning/proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+* [Proposition Event Type](decisioning/proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
 
 
 

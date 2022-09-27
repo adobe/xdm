@@ -55,7 +55,7 @@ Session details information.
 | [xdm:hasProgress95](#xdmhasprogress95) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:hasResume](#xdmhasresume) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:hasSegmentView](#xdmhassegmentview) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isAuthenticated](#xdmisauthenticated) | `boolean` | Optional | Session details information (this schema) |
+| [xdm:isAuthorized](#xdmisauthorized) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:isDownloaded](#xdmisdownloaded) | `boolean` | Optional | Session details information (this schema) |
 | [xdm:isFederated](#xdmisfederated) | `boolean` | Optional | Session details information (this schema) |
@@ -651,17 +651,17 @@ Indicates when at least one frame, not necessarily the first has been viewed.
 
 
 
-## xdm:isAuthenticated
+## xdm:isAuthorized
 ### Media Authorized
 
 The user has been authorized via Adobe authentication.
 
-`xdm:isAuthenticated`
+`xdm:isAuthorized`
 * is optional
 * type: `boolean`
 * defined in this schema
 
-### xdm:isAuthenticated Type
+### xdm:isAuthorized Type
 
 
 `boolean`
@@ -826,7 +826,7 @@ MVPD provided via Adobe authentication.
 
 
 ## xdm:name
-### Series ID
+### Content ID
 
 Content ID of the content, which can be used to tie back to other industry / CMS IDs.
 

@@ -13,13 +13,13 @@ High level field group that brings in all available work objects.
 ## Schema Hierarchy
 
 * Workfront Work Objects `https://ns.adobe.com/experience/workfront/workobjects-all`
-  * [Work Task Attributes](task.schema.md) `https://ns.adobe.com/experience/workfront/task`
-  * [Work Project Attributes](project.schema.md) `https://ns.adobe.com/experience/workfront/project`
-  * [Work Program Attributes](program.schema.md) `https://ns.adobe.com/experience/workfront/program`
-  * [Work Portfolio Attributes](portfolio.schema.md) `https://ns.adobe.com/experience/workfront/portfolio`
-  * [Work Task Attributes](opTask.schema.md) `https://ns.adobe.com/experience/workfront/optask`
-  * [Work Category Attributes](category.schema.md) `https://ns.adobe.com/experience/workfront/category`
-  * [Work Category Attributes](categoryparameter.schema.md) `https://ns.adobe.com/experience/workfront/categoryparameter`
+  * [Workfront Task Attributes](task.schema.md) `https://ns.adobe.com/experience/workfront/task`
+  * [Workfront Project Attributes](project.schema.md) `https://ns.adobe.com/experience/workfront/project`
+  * [Workfront Program Attributes](program.schema.md) `https://ns.adobe.com/experience/workfront/program`
+  * [Workfront Portfolio Attributes](portfolio.schema.md) `https://ns.adobe.com/experience/workfront/portfolio`
+  * [Workfront Opperational Task Attributes](opTask.schema.md) `https://ns.adobe.com/experience/workfront/optask`
+  * [Workfront Category Attributes](category.schema.md) `https://ns.adobe.com/experience/workfront/category`
+  * [Workfront Category Attributes](categoryparameter.schema.md) `https://ns.adobe.com/experience/workfront/categoryparameter`
 
 
 ## Workfront Work Objects Example
@@ -34,13 +34,13 @@ High level field group that brings in all available work objects.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:category](#workfrontcategory) | `object` | Optional | [Work Category Attributes](category.schema.md#workfrontcategory) |
-| [workfront:categoryparameter](#workfrontcategoryparameter) | `object` | Optional | [Work Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter) |
-| [workfront:opTask](#workfrontoptask) | `object` | Optional | [Work Task Attributes](opTask.schema.md#workfrontoptask) |
-| [workfront:portfolio](#workfrontportfolio) | `object` | Optional | [Work Portfolio Attributes](portfolio.schema.md#workfrontportfolio) |
-| [workfront:program](#workfrontprogram) | `object` | Optional | [Work Program Attributes](program.schema.md#workfrontprogram) |
-| [workfront:project](#workfrontproject) | `object` | Optional | [Work Project Attributes](project.schema.md#workfrontproject) |
-| [workfront:task](#workfronttask) | `object` | Optional | [Work Task Attributes](task.schema.md#workfronttask) |
+| [workfront:category](#workfrontcategory) | `object` | Optional | [Workfront Category Attributes](category.schema.md#workfrontcategory) |
+| [workfront:categoryparameter](#workfrontcategoryparameter) | `object` | Optional | [Workfront Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter) |
+| [workfront:opTask](#workfrontoptask) | `object` | Optional | [Workfront Opperational Task Attributes](opTask.schema.md#workfrontoptask) |
+| [workfront:portfolio](#workfrontportfolio) | `object` | Optional | [Workfront Portfolio Attributes](portfolio.schema.md#workfrontportfolio) |
+| [workfront:program](#workfrontprogram) | `object` | Optional | [Workfront Program Attributes](program.schema.md#workfrontprogram) |
+| [workfront:project](#workfrontproject) | `object` | Optional | [Workfront Project Attributes](project.schema.md#workfrontproject) |
+| [workfront:task](#workfronttask) | `object` | Optional | [Workfront Task Attributes](task.schema.md#workfronttask) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:category
@@ -49,7 +49,7 @@ High level field group that brings in all available work objects.
 `workfront:category`
 * is optional
 * type: `object`
-* defined in [Work Category Attributes](category.schema.md#workfrontcategory)
+* defined in [Workfront Category Attributes](category.schema.md#workfrontcategory)
 
 ### workfront:category Type
 
@@ -158,7 +158,7 @@ Object code for category
 `workfront:categoryparameter`
 * is optional
 * type: `object`
-* defined in [Work Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter)
+* defined in [Workfront Category Attributes](categoryparameter.schema.md#workfrontcategoryparameter)
 
 ### workfront:categoryparameter Type
 
@@ -290,7 +290,7 @@ Security level view
 `workfront:opTask`
 * is optional
 * type: `object`
-* defined in [Work Task Attributes](opTask.schema.md#workfrontoptask)
+* defined in [Workfront Opperational Task Attributes](opTask.schema.md#workfrontoptask)
 
 ### workfront:opTask Type
 
@@ -652,7 +652,7 @@ Security level view
 `workfront:portfolio`
 * is optional
 * type: `object`
-* defined in [Work Portfolio Attributes](portfolio.schema.md#workfrontportfolio)
+* defined in [Workfront Portfolio Attributes](portfolio.schema.md#workfrontportfolio)
 
 ### workfront:portfolio Type
 
@@ -757,7 +757,7 @@ Security level view
 `workfront:program`
 * is optional
 * type: `object`
-* defined in [Work Program Attributes](program.schema.md#workfrontprogram)
+* defined in [Workfront Program Attributes](program.schema.md#workfrontprogram)
 
 ### workfront:program Type
 
@@ -841,7 +841,7 @@ Security level view
 `workfront:project`
 * is optional
 * type: `object`
-* defined in [Work Project Attributes](project.schema.md#workfrontproject)
+* defined in [Workfront Project Attributes](project.schema.md#workfrontproject)
 
 ### workfront:project Type
 
@@ -1291,7 +1291,7 @@ Security level view
 `workfront:task`
 * is optional
 * type: `object`
-* defined in [Work Task Attributes](task.schema.md#workfronttask)
+* defined in [Workfront Task Attributes](task.schema.md#workfronttask)
 
 ### workfront:task Type
 

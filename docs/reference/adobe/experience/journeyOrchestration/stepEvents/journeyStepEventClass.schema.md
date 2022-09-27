@@ -57,7 +57,7 @@ A unique identifier for the time-series event.
 ## https://ns.adobe.com/experience/journeyOrchestration/serviceType
 ### Service Type
 
-This fields identifies the type of event.
+This field specifies service name. It is for serviceEvents only.
 
 `https://ns.adobe.com/experience/journeyOrchestration/serviceType`
 * is optional
@@ -171,10 +171,10 @@ The primary event type for this time-series record.
 | `media.error` | Media error |
 | `media.sessionComplete` | Media sessionComplete |
 | `media.sessionEnd` | Media sessionEnd |
-| `media.stateStart` | Media stateStart |
-| `media.stateEnd` | Media stateEnd |
 | `media.statesUpdate` | Media statesUpdate |
 | `media.downloaded` | Media downloaded content |
+| `location.entry` | Location entry |
+| `location.exit` | Location exit |
 
 
 

@@ -16,7 +16,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Captures B2B Person specific attributes. A B2B Person could be a contact/lead etc. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "b2b-person-segment-traits": {
       "properties": {

@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Preferences such as opt-in and opt-out, time zone, preferred language, and email format. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-preferences-details": {
       "properties": {

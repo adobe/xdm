@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Use for direct marketing activities such as addresses, emails, and phone numbers. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-directmarketing": {
       "properties": {

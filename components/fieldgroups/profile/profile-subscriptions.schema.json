@@ -13,7 +13,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Subscription information such as device, environment, and subscriber data. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-subscriptions": {
       "properties": {

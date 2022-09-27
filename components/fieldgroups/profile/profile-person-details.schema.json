@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Demographic information such as name, gender, and birth date of an individual. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-person-details": {
       "properties": {

@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Personal finance details such as financial account details, credit score, and tax bracket. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "personal-finance-details": {
       "properties": {

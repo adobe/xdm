@@ -10,7 +10,7 @@
   "title": "Consumer Experience Event",
   "type": "object",
   "description": "Digital content consumption data from web and mobile applications as well as online and offline purchase data such as channel, commerce, and device information. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],

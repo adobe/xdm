@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Use for information regarding web details events such as interaction, page details, and referrer. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "experienceevent-web": {
       "properties": {

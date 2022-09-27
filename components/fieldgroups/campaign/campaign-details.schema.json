@@ -17,7 +17,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/campaign"],
   "description": "Captures properties related to business campaign details. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "campaign-details": {
       "properties": {

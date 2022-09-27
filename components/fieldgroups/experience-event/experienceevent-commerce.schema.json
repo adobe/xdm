@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon). ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "experienceevent-commerce": {
       "properties": {

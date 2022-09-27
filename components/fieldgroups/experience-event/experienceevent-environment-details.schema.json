@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Environment details such as device details, browser info, local time, and other geographical information. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "experienceevent-environment-details": {
       "properties": {

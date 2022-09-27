@@ -16,7 +16,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/opportunity"],
   "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "opportunity-details": {
       "properties": {

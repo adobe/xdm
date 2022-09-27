@@ -11,7 +11,7 @@
   "type": "object",
   "meta:intendedToExtend": [],
   "description": "Used to store Person ID for an entity. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "person-id": {
       "properties": {

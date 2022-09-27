@@ -22,7 +22,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "quote-request-details": {
       "properties": {

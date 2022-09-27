@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-work-details": {
       "properties": {

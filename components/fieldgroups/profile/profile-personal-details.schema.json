@@ -16,7 +16,7 @@
   },
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Contact information for an individual person such as home address, phone number, fax, and email. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "profile-personal-details": {
       "properties": {

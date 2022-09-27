@@ -17,7 +17,7 @@
     "https://ns.adobe.com/xdm/context/opportunity-contact-role"
   ],
   "description": "Opportunity Contact Role additional propertie. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "opportunity-contact-role-details": {
       "properties": {

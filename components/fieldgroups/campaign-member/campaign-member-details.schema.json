@@ -17,7 +17,7 @@
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/campaign-member"],
   "description": "An XDM Business Campaign Member. ",
-		"meta:sensitive-data": true, 
+  "meta:sensitive-data": true,
   "definitions": {
     "campaign-member-details": {
       "properties": {

@@ -124,7 +124,7 @@
                 "physical": "Physical"
               },
               "description": "Defines the user's preferred ticket delivery method.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##93181",
               "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##26661"
             },

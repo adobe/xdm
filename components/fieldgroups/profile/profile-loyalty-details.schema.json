@@ -46,7 +46,7 @@
                 "type": "string"
               },
               "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
-		"meta:sensitive-data": true, 
+              "meta:sensitive-data": true,
               "meta:titleId": "profile-loyalty-details##xdm:loyaltyID##title##40011",
               "meta:descriptionId": "profile-loyalty-details##xdm:loyaltyID##description##22711"
             },

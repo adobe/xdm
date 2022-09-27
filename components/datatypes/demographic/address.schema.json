@@ -29,7 +29,7 @@
           "title": "Label",
           "type": "string",
           "description": "Free form name of the address.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "address##xdm:label##title##39471",
           "meta:descriptionId": "address##xdm:label##description##90461"
         },
@@ -37,7 +37,7 @@
           "title": "Street 1",
           "type": "string",
           "description": "Primary street level information, apartment number, street number, and street name.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "address##xdm:street1##title##17851",
           "meta:descriptionId": "address##xdm:street1##description##66511"
         },
@@ -45,7 +45,7 @@
           "title": "Street 2",
           "type": "string",
           "description": "Optional street information second line.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "address##xdm:street2##title##69761",
           "meta:descriptionId": "address##xdm:street2##description##23701"
         },
@@ -53,7 +53,7 @@
           "title": "Street 3",
           "type": "string",
           "description": "Optional street information third line.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "address##xdm:street3##title##40721",
           "meta:descriptionId": "address##xdm:street3##description##79851"
         },
@@ -61,7 +61,7 @@
           "title": "Street 4",
           "type": "string",
           "description": "Optional street information fourth line.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "address##xdm:street4##title##67941",
           "meta:descriptionId": "address##xdm:street4##description##72711"
         },

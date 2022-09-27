@@ -26,7 +26,7 @@
           "title": "Label of the organizational unit.",
           "type": "string",
           "description": "The user-friendly name for the organizational unit.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "orgunit##xdm:label##title##61281",
           "meta:descriptionId": "orgunit##xdm:label##description##60261"
         }

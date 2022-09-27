@@ -25,7 +25,7 @@
           "title": "Financial Account ID",
           "type": "string",
           "description": "Current account balance for a single user account.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
           "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
         },
@@ -33,7 +33,7 @@
           "title": "Financial Account Name",
           "type": "string",
           "description": "Name assigned to the financial account.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "financial-account##xdm:financialAccountName##title##12351",
           "meta:descriptionId": "financial-account##xdm:financialAccountName##description##58581"
         },
@@ -42,7 +42,7 @@
           "type": "string",
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
           "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
         }

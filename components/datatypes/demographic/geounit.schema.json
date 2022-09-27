@@ -26,7 +26,7 @@
           "title": "Label of the geographical unit.",
           "type": "string",
           "description": "The user-friendly name for the geographical unit.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "geounit##xdm:label##title##71171",
           "meta:descriptionId": "geounit##xdm:label##description##16511"
         }

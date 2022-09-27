@@ -33,7 +33,7 @@
           "title": "Label",
           "type": "string",
           "description": "Additional display information that maybe available, for example, Microsoft Outlook rich address controls display 'John Smith smithjr@company.uk', 'John Smith' part is data that would be placed in the label.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "emailaddress##xdm:label##title##92001",
           "meta:descriptionId": "emailaddress##xdm:label##description##96421"
         },

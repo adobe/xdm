@@ -47,7 +47,7 @@
         "xdm:lastActivityDate": {
           "title": "Last Activity Date",
           "description": "Last activity date.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "string",
           "format": "date-time",
           "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##16601",

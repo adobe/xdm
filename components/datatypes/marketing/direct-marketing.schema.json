@@ -94,7 +94,7 @@
         "xdm:hashedEmail": {
           "title": "Visitor Hashed Email Address",
           "description": "Captures the encrypted/hashed version of the visitor's email address.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "string",
           "meta:titleId": "direct-marketing##xdm:hashedEmail##title##41291",
           "meta:descriptionId": "direct-marketing##xdm:hashedEmail##description##32071"
@@ -102,7 +102,7 @@
         "xdm:emailVisitorID": {
           "title": "Email Recipient ID",
           "description": "Captures the email recipient ID.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "string",
           "meta:titleId": "direct-marketing##xdm:emailVisitorID##title##26611",
           "meta:descriptionId": "direct-marketing##xdm:emailVisitorID##description##45021"

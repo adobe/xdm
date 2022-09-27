@@ -33,7 +33,7 @@
         "xdm:conversionDate": {
           "title": "Conversion Date",
           "description": "Date when currency conversion was made.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "type": "string",
           "format": "date-time",
           "meta:titleId": "currency##xdm:conversionDate##title##50641",

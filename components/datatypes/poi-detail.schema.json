@@ -19,7 +19,7 @@
           "type": "string",
           "meta:status": "deprecated",
           "description": "The unique identifier of the POI.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "poi-detail##xdm:POIID##title##10951",
           "meta:descriptionId": "poi-detail##xdm:POIID##description##34921"
         },
@@ -27,7 +27,7 @@
           "title": "POI Identity",
           "type": "string",
           "description": "The unique identifier of the POI.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "poi-detail##xdm:poiID##title##30661",
           "meta:descriptionId": "poi-detail##xdm:poiID##description##54851"
         },

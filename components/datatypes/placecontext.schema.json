@@ -26,7 +26,7 @@
           "title": "Iana Timezone",
           "type": "string",
           "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.",
-		"meta:sensitive-data": true, 
+          "meta:sensitive-data": true,
           "meta:titleId": "placecontext##xdm:ianaTimezone##title##49031",
           "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##25561"
         },

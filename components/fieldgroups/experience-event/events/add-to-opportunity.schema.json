@@ -50,7 +50,8 @@
             "xdm:role": {
               "title": "Role",
               "type": "string",
-              "description": "Role of the person on the Opportunity. This field could be used to collect data that may be considered to be sensitive or personal. Visit: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
+              "description": "Role of the person on the Opportunity.",
+		"meta:sensitive-data": true, 
               "meta:titleId": "add-to-opportunity##xdm:role##title##39101",
               "meta:descriptionId": "add-to-opportunity##xdm:role##description##99461"
             }

@@ -120,6 +120,11 @@
               "description": "",
               "type": "string",
               "format": "date-time"
+            },
+            "workfront:portfolioID": {
+              "title": "Project Portfolio ID",
+              "description": "portfolioID associated to project",
+              "type": "string"
             }
           }
         }

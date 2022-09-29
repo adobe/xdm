@@ -45,11 +45,6 @@
               "description": "",
               "type": "string"
             },
-            "workfront:description": {
-              "title": "Project Description",
-              "description": "",
-              "type": "string"
-            },
             "workfront:displayOrder": {
               "title": "Project Display Order",
               "description": "",
@@ -71,11 +66,6 @@
               "description": "",
               "type": "string",
               "format": "date-time"
-            },
-            "workfront:groupID": {
-              "title": "Project Group ID",
-              "description": "",
-              "type": "string"
             },
             "workfront:milestonePathID": {
               "title": "Project Milestone Path ID",

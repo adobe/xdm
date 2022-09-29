@@ -23,11 +23,6 @@
           "type": "object",
           "title": "Program Attributes",
           "properties": {
-            "workfront:description": {
-              "title": "Program Description",
-              "description": "",
-              "type": "string"
-            },
             "workfront:isActive": {
               "title": "Program is Active",
               "description": "",

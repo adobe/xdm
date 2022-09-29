@@ -80,6 +80,16 @@
           "title": "Created By ID",
           "type": "string",
           "description": "The employeeID involved in the CREATE event"
+        },
+        "workfront:objectDescription": {
+          "title": "Object Description",
+          "description": "Description of the object",
+          "type": "string"
+        },
+        "workfront:objectGroupID": {
+          "title": "Object group ID",
+          "description": "Group ID for the object",
+          "type": "string"
         }
       }
     }

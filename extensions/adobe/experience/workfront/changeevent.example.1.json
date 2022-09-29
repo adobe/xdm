@@ -4,5 +4,7 @@
   "workfront:objectType": "TASK",
   "workfront:objectID": "1234",
   "workfront:objectName": "My Task",
-  "workfront:created": 1
+  "workfront:created": 1,
+  "workfront:objectDescription": "my task description",
+  "workfront:objectGroupID": "12234def"
 }

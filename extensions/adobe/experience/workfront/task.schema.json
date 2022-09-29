@@ -55,11 +55,6 @@
               "description": "",
               "type": "string"
             },
-            "workfront:description": {
-              "title": "Task Description",
-              "description": "",
-              "type": "string"
-            },
             "workfront:durationMinutes": {
               "title": "Task Duration Minutes",
               "description": "",
@@ -76,11 +71,6 @@
               "description": "",
               "type": "string",
               "format": "date-time"
-            },
-            "workfront:groupID": {
-              "title": "Task Group ID",
-              "description": "",
-              "type": "string"
             },
             "workfront:hierarchyIndentLevel": {
               "title": "Task Hierarchy Indent Level",

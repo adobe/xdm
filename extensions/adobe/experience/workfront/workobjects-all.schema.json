@@ -44,12 +44,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/experience/workfront/optask"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/workfront/category"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/workfront/categoryparameter"
     }
   ],
   "meta:status": "experimental"

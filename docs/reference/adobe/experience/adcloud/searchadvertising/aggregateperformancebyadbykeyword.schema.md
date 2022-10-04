@@ -234,16 +234,19 @@ The primary event type for this time-series record.
 | `web.webinteraction.linkClicks` | Web Webinteraction Link Clicks |
 | `web.formFilledOut` | Web Form Filled Out |
 | `commerce.checkouts` | Commerce Checkouts |
-| `commerce.productListAdds` | Commerce Product List Adds |
-| `commerce.productListOpens` | Commerce Product List Opens |
-| `commerce.productListRemovals` | Commerce Product List Removals |
-| `commerce.productListReopens` | Commerce Product List Reopens |
-| `commerce.productListViews` | Commerce Product List Views |
-| `commerce.productViews` | Commerce Product Views |
+| `commerce.productListAdds` | Commerce Product List (Cart) Adds |
+| `commerce.productListOpens` | Commerce Product List (Cart) Opens |
+| `commerce.productListRemovals` | Commerce Product List (Cart) Removals |
+| `commerce.productListReopens` | Commerce Product List (Cart) Reopens |
+| `commerce.productListViews` | Commerce Product List (Cart) Views |
+| `commerce.productViews` | Commerce Product (Cart) Views |
 | `commerce.purchases` | Commerce Purchases |
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
 | `decisioning.propositionInteract` | Decisioning Proposition Interact |
+| `decisioning.propositionSend` | Decisioning Proposition Send |
+| `decisioning.propositionDismiss` | Decisioning Proposition Dismiss |
+| `decisioning.propositionTrigger` | Decisioning Proposition Trigger |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -252,22 +255,50 @@ The primary event type for this time-series record.
 | `listOperation.removeFromList` | List Operation Remove From List |
 | `listOperation.addToList` | List Operation Add To List |
 | `leadOperation.scoreChanged` | Lead Operation Score Changed |
+| `leadOperation.revenueStageChanged` | Lead Operation Revenue Stage changed |
 | `leadOperation.statusInCampaignProgressionChanged` | Lead Operation Status In Campaign Progression Changed |
 | `leadOperation.interestingMoment` | Lead Operation Interesting Moment |
 | `leadOperation.newLead` | Lead Operation New Lead |
 | `leadOperation.convertLead` | Lead Operation Convert Lead |
+| `leadOperation.callWebhook` | Lead Operation Call Webhook |
+| `leadOperation.changeEngagementCampaignCadence` | Change Engagement Campaign Cadence |
+| `leadOperation.addToCampaign` | Lead Operation Add To Campaign |
+| `leadOperation.changeCampaignStream` | Lead Operation Change Campaign Stream |
+| `leadOperation.mergeLeads` | Lead Operation Merge Leads |
 | `directMarketing.emailBounced` | Direct Marketing Email Bounced |
 | `directMarketing.emailBouncedSoft` | Direct Marketing Email Bounced Soft |
 | `directMarketing.emailDelivered` | Direct Marketing Email Delivered |
 | `directMarketing.emailUnsubscribed` | Direct Marketing Email Unsubscribed |
 | `directMarketing.emailOpened` | Direct Marketing Email Opened |
 | `directMarketing.emailClicked` | Direct Marketing Email Clicked |
+| `directMarketing.emailSent` | Direct Marketing Email Sent |
 | `opportunityEvent.removeFromOpportunity` | Opportunity Event Remove From Opportunity |
 | `opportunityEvent.addToOpportunity` | Opportunity Event Add To Opportunity |
 | `opportunityEvent.opportunityUpdated` | Opportunity Event Opportunity Updated |
 | `inappmessageTracking.dismiss` | inapp message was dimissed |
 | `inappmessageTracking.display` | inapp message was displayed |
 | `inappmessageTracking.interact` | inapp message was interacted with |
+| `media.ping` | Media ping |
+| `media.sessionStart` | Media sessionStart |
+| `media.play` | Media play |
+| `media.bufferStart` | Media bufferStart |
+| `media.pauseStart` | Media pauseStart |
+| `media.chapterStart` | Media chapterStart |
+| `media.chapterSkip` | Media chapterSkip |
+| `media.chapterComplete` | Media chapterComplete |
+| `media.adStart` | Media adStart |
+| `media.adSkip` | Media adSkip |
+| `media.adComplete` | Media adComplete |
+| `media.adBreakStart` | Media adBreakStart |
+| `media.adBreakComplete` | Media adBreakComplete |
+| `media.bitrateChange` | Media bitrateChange |
+| `media.error` | Media error |
+| `media.sessionComplete` | Media sessionComplete |
+| `media.sessionEnd` | Media sessionEnd |
+| `media.statesUpdate` | Media statesUpdate |
+| `media.downloaded` | Media downloaded content |
+| `location.entry` | Location entry |
+| `location.exit` | Location exit |
 
 
 

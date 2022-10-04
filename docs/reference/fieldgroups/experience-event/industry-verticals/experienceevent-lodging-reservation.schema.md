@@ -44,7 +44,32 @@ Collects all details specific to a lodging reservation.
         "xdm:roomAccessibilityType": "n/a",
         "xdm:roomCapacity": 6,
         "xdm:roomType": "king",
-        "xdm:smoking": false
+        "xdm:smoking": false,
+        "xdm:lodgingCheckout": {
+          "xdm:receiptURL": "https://adobe.com",
+          "xdm:dailyCharges": [
+            {
+              "xdm:chargeDescription": "Room charge",
+              "xdm:chargeReferenceCode": "XYZ",
+              "xdm:chargeDate": "2020-01-01",
+              "xdm:dailyCharge": {
+                "xdm:amount": 1203.01,
+                "xdm:currencyCode": "USD",
+                "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+              }
+            },
+            {
+              "xdm:chargeDescription": "State Tax",
+              "xdm:chargeReferenceCode": "ST-TAX",
+              "xdm:chargeDate": "2020-01-01",
+              "xdm:dailyCharge": {
+                "xdm:amount": 12.01,
+                "xdm:currencyCode": "USD",
+                "xdm:conversionDate": "2018-01-12T15:52:25+00:00"
+              }
+            }
+          ]
+        }
       }
     ]
   }

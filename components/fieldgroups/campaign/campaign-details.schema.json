@@ -177,9 +177,12 @@
   "allOf": [
     {
       "$ref": "#/definitions/campaign-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-09-29",
   "meta:titleId": "campaign-details##title##42341",
   "meta:descriptionId": "campaign-details##description##51611"

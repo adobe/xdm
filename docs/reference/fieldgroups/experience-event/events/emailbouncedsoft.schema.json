@@ -26,11 +26,18 @@
                     "type": "object",
                     "properties": {
                         "xdm:mailingID": {
-                            "title": "Mailing ID",
+                            "title": "Mailing ID (deprecated)",
                             "type": "string",
-                            "description": "Unique ID of the email asset.",
+                            "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
                             "meta:titleId": "emailbouncedsoft##xdm:mailingID##title##35741",
                             "meta:descriptionId": "emailbouncedsoft##xdm:mailingID##description##79361"
+                        },
+                        "xdm:mailingKey": {
+                            "title": "Mailing Key",
+                            "description": "Unique key of the email asset.",
+                            "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                            "meta:titleId": "emailbouncedsoft##xdm:mailingKey##title##6181",
+                            "meta:descriptionId": "emailbouncedsoft##xdm:mailingKey##description##41501"
                         },
                         "xdm:mailingName": {
                             "title": "Mailing Name",
@@ -73,6 +80,13 @@
                             "description": "Friendly name of the test variant of the email asset.",
                             "meta:titleId": "emailbouncedsoft##xdm:testVariantName##title##76361",
                             "meta:descriptionId": "emailbouncedsoft##xdm:testVariantName##description##771"
+                        },
+                        "xdm:automationRunID": {
+                            "title": "Automation Run ID",
+                            "type": "string",
+                            "description": "Automation Run ID",
+                            "meta:titleId": "emailbouncedsoft##xdm:automationRunID##title##53501",
+                            "meta:descriptionId": "emailbouncedsoft##xdm:automationRunID##description##201"
                         }
                     },
                     "meta:titleId": "emailbouncedsoft##xdm:directMarketing##title##64731"
@@ -85,7 +99,7 @@
             "$ref": "#/definitions/emailbouncedsoft"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-12-02",
     "meta:titleId": "emailbouncedsoft##title##22151",
     "meta:descriptionId": "emailbouncedsoft##description##92111",

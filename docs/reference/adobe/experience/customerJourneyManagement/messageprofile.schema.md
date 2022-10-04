@@ -25,6 +25,8 @@ Message Profile details for the Adobe CJM ExperienceEvent.
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"
@@ -39,9 +41,12 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextnamespace) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP](#httpsnsadobecomexperiencecustomerjourneymanagementemailchannelcontextoutboundip) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilechannel) | Experience Channel | **Required** | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofileissendtimeoptimized) | `boolean` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofileistestexecution) | `boolean` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilemessageprofileid) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider](#httpsnsadobecomexperiencecustomerjourneymanagementsmschannelcontextsmsprovider) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address
@@ -124,6 +129,44 @@ Experience channel related to the ExperienceEvent.
 
 
 
+## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized
+### isSendTimeOptimized
+
+True if the message execution is send time optimized.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized Type
+
+
+`boolean`
+
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution
+### isTestExecution
+
+True if the message is sent as Test Execution.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution Type
+
+
+`boolean`
+
+
+
+
+
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID
 ### MessageProfile ID
 
@@ -186,6 +229,33 @@ Push provider service, e.g. apns or fcm
 |-------|-------------|
 | `apns` | Apple Push Notification service |
 | `fcm` | Firebase cloud messaging service |
+
+
+
+
+## https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider
+### SMS Provider
+
+SMS provider , e.g. sinch or twilio
+
+`https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider Type
+
+
+`string`
+
+
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider Known Values
+| Value | Description |
+|-------|-------------|
+| `sinch` | Sinch sms provider |
+| `twilio` | Twilio sms provider |
+| `vibes` | Vibes sms Provider  |
 
 
 

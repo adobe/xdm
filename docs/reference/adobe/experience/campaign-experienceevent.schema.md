@@ -1,5 +1,5 @@
 
-# Adobe Campaign ExperienceEvent Template Mixin Schema
+# Adobe Campaign ExperienceEvent Template Schema
 
 ```
 https://ns.adobe.com/experience/campaign-experienceevent
@@ -12,7 +12,7 @@ Campaign ExperienceEvent field group for use with schemas for Solution data inge
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/campaign-experienceevent.schema.json](adobe/experience/campaign-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Campaign ExperienceEvent Template Mixin `https://ns.adobe.com/experience/campaign-experienceevent`
+* Adobe Campaign ExperienceEvent Template `https://ns.adobe.com/experience/campaign-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-advertising`
   * [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
@@ -31,11 +31,11 @@ Campaign ExperienceEvent field group for use with schemas for Solution data inge
   * [Experience Event - Proposition Reference](decisioning/proposition.schema.md) `https://ns.adobe.com/experience/decisioning/proposition`
   * [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/target/experienceevent-shared`
   * [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/profile/experienceevent-shared`
-  * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
+  * [Adobe Experience Platform Implementation Details](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
   * [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
 
 
-## Adobe Campaign ExperienceEvent Template Mixin Example
+## Adobe Campaign ExperienceEvent Template Example
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-1234567",
@@ -119,7 +119,7 @@ Campaign ExperienceEvent field group for use with schemas for Solution data inge
 }
 ```
 
-# Adobe Campaign ExperienceEvent Template Mixin Properties
+# Adobe Campaign ExperienceEvent Template Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
@@ -135,7 +135,7 @@ Campaign ExperienceEvent field group for use with schemas for Solution data inge
 | [https://ns.adobe.com/experience/campaign/offersProposed](#httpsnsadobecomexperiencecampaignoffersproposed) | Campaign Offer Proposition Detail | Optional | [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md#httpsnsadobecomexperiencecampaignoffersproposed) |
 | [https://ns.adobe.com/experience/campaign/orchestration](#httpsnsadobecomexperiencecampaignorchestration) | orchestration.schema | Optional | [Adobe Campaign ExperienceEvent Full Extension](campaign/experienceevent-all.schema.md#httpsnsadobecomexperiencecampaignorchestration) |
 | [https://ns.adobe.com/experience/decisioning/propositionID](#httpsnsadobecomexperiencedecisioningpropositionid) | `string` | Optional | [Experience Event - Proposition Reference](decisioning/proposition.schema.md#httpsnsadobecomexperiencedecisioningpropositionid) |
-| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
+| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional | [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional | [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
@@ -861,7 +861,7 @@ A unique identifier for the proposition event referenced by another "XDM Experie
 `https://ns.adobe.com/experience/implementations`
 * is optional
 * type: Adobe Experience Platform Implementation Details
-* defined in [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
+* defined in [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
 
 ### https://ns.adobe.com/experience/implementations Type
 
@@ -934,7 +934,7 @@ Information related to advertising impressions, clickthroughs, and attribution.
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

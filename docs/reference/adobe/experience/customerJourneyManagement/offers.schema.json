@@ -39,6 +39,16 @@
                     "title": "Offer Count",
                     "type": "integer",
                     "description": "Count of offers included in the offer proposition."
+                },
+                "xdm:scopeID": {
+                    "title": "Offer Decision Scope ID",
+                    "type": "string",
+                    "description": "Unique Offer Decison Scope identifier(offer-activity-id+placement-id BASE64 encoded)."
+                },
+                "xdm:activityID": {
+                    "title": "Offer Activity ID",
+                    "type": "string",
+                    "description": "Unique Offer Decision identifier."
                 }
             }
         }

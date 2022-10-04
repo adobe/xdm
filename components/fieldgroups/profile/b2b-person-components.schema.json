@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
+  "description": "This fieldgroup is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
   "definitions": {
     "b2b-person-components": {
       "properties": {
@@ -134,7 +134,7 @@
       "$ref": "#/definitions/b2b-person-components"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-09-09",
   "meta:titleId": "b2b-person-components##title##10621",
   "meta:descriptionId": "b2b-person-components##description##84061"

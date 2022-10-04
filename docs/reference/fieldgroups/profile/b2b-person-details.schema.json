@@ -72,6 +72,7 @@
                             "title": "Contact Account id",
                             "description": "ID of the account that’s the parent of this person.",
                             "type": "string",
+                            "meta:status": "experimental",
                             "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",
                             "meta:descriptionId": "b2b-person-details##xdm:accountID##description##71731"
                         },
@@ -129,6 +130,7 @@
                             "title": "Converted Contact ID",
                             "description": "Contact Id if the lead was successfully converted.",
                             "type": "string",
+                            "meta:status": "experimental",
                             "meta:titleId": "b2b-person-details##xdm:convertedContactID##title##61351",
                             "meta:descriptionId": "b2b-person-details##xdm:convertedContactID##description##27071"
                         },
@@ -157,12 +159,45 @@
                         "xdm:companyName": {
                             "title": "Company Name",
                             "description": "Name of the company a business person is associated with.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "b2b-person-details##xdm:companyName##title##78601",
+                            "meta:descriptionId": "b2b-person-details##xdm:companyName##description##31101"
                         },
                         "xdm:companyWebsite": {
                             "title": "Company Website",
                             "description": "Website of the company a business person is associated with.",
-                            "type": "string"
+                            "type": "string",
+                            "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
+                            "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521"
+                        },
+                        "xdm:matchedAccount": {
+                            "type": "object",
+                            "meta:status": "deprecated",
+                            "properties": {
+                                "xdm:score": {
+                                    "title": "Score",
+                                    "description": "Account score.",
+                                    "type": "number",
+                                    "meta:status": "experimental",
+                                    "meta:titleId": "b2b-person-details##xdm:score##title##79001",
+                                    "meta:descriptionId": "b2b-person-details##xdm:score##description##80501"
+                                },
+                                "xdm:accountKey": {
+                                    "title": "Account Key",
+                                    "description": "Unique identifier of the Account related to the person.",
+                                    "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                                    "meta:titleId": "b2b-person-details##xdm:accountKey##title##43051",
+                                    "meta:descriptionId": "b2b-person-details##xdm:accountKey##description##11421"
+                                },
+                                "xdm:scoreDate": {
+                                    "title": "Score Date",
+                                    "description": "Date score was recorded/computed.",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "meta:titleId": "b2b-person-details##xdm:scoreDate##title##97521",
+                                    "meta:descriptionId": "b2b-person-details##xdm:scoreDate##description##9971"
+                                }
+                            }
                         }
                     }
                 }
@@ -196,9 +231,12 @@
         },
         {
             "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-09-09",
     "meta:titleId": "b2b-person-details##title##98781",
     "meta:descriptionId": "b2b-person-details##description##71241",

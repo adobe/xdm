@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/classes/marketing-list-member
 ```
 
-Members/Persons/Contacts etc. associated with a marketing list.
+XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/marketing-list-member.schema.json](classes/b2b/marketing-list-member.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/marketing-list-member.schema.json](classes/b2b/marketing-list-member.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Marketing List Members `https://ns.adobe.com/xdm/classes/marketing-list-member`
@@ -17,6 +17,7 @@ Members/Persons/Contacts etc. associated with a marketing list.
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Record Status](../../fieldgroups/shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Marketing List Members Example
@@ -32,6 +33,7 @@ Members/Persons/Contacts etc. associated with a marketing list.
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:marketingListID](#xdmmarketinglistid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:marketingListKey](#xdmmarketinglistkey) | B2B Source | Optional | XDM Business Marketing List Members (this schema) |
 | [xdm:marketingListMemberID](#xdmmarketinglistmemberid) | `string` | Optional | XDM Business Marketing List Members (this schema) |
@@ -75,6 +77,25 @@ Audit attributes for external sources.
 
 
 * [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
+
+
+`boolean`
 
 
 

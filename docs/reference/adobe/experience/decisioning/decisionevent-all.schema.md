@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/decisioning/decisionevent-all
 ```
 
-Mixin for Decision Events that adds dimensions for rollup by organization, container, batch job and request.
+This is a fieldgroup for Decision Events that adds dimensions for rollup by organization, container, batch job and request.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|

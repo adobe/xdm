@@ -9,7 +9,7 @@ Use to capture details when the lead score of a person changes.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
 
 ## Score Changed Example
 ```json
@@ -62,14 +62,21 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:scoreAttributeID": {
-      "title": "Score Atribute ID",
+      "title": "Score Attribute ID (deprecated)",
       "type": "string",
-      "description": "Unique ID of the lead score attribute.",
+      "description": "Score Attribute ID is going to depreciate soon. Please use  Score Attribute Key.",
       "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
       "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521"
     },
+    "xdm:scoreAttributeKey": {
+      "title": "Score Attribute Key",
+      "description": "Unique key of the lead score attribute.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+      "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971"
+    },
     "xdm:scoreAttributeName": {
-      "title": "Score Atribute Name",
+      "title": "Score Attribute Name",
       "type": "string",
       "description": "Friendly name of the lead score attribute.",
       "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",

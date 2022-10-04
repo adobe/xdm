@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/mixins/account-details
 ```
 
-XDM business account details.
+Collects all details related to a customer's user account including contact details and account preferences.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/account/account-details.schema.json](fieldgroups/account/account-details.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/account/account-details.schema.json](fieldgroups/account/account-details.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Account Details `https://ns.adobe.com/xdm/mixins/account-details`

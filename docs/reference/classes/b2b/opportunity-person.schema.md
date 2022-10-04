@@ -5,11 +5,11 @@
 https://ns.adobe.com/xdm/classes/opportunity-person
 ```
 
-This class is used to capture XDM Business Opportunity Person Relationship attributes.
+XDM Business Opportunity Person Relation is a standard Experience Data Model (XDM) class that captures the minimum required properties of a person that is associated with a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [classes/b2b/opportunity-person.schema.json](classes/b2b/opportunity-person.schema.json) |
 ## Schema Hierarchy
 
 * XDM Business Opportunity Person Relation `https://ns.adobe.com/xdm/classes/opportunity-person`
@@ -17,6 +17,7 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
   * [Record Schema](../../behaviors/record.schema.md) `https://ns.adobe.com/xdm/data/record`
   * [B2B Source](../../datatypes/b2b/b2b-source.schema.md) `https://ns.adobe.com/xdm/datatypes/b2b-source`
   * [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md) `https://ns.adobe.com/xdm/common/external-source-system-audit-details`
+  * [Record Status](../../fieldgroups/shared/record-status.schema.md) `https://ns.adobe.com/xdm/mixins/record-status`
 
 
 ## XDM Business Opportunity Person Relation Example
@@ -36,6 +37,7 @@ This class is used to capture XDM Business Opportunity Person Relationship attri
 |----------|------|----------|------------|
 | [@id](#id) | `string` | Optional | [Record Schema](../../behaviors/record.schema.md#id) |
 | [xdm:extSourceSystemAudit](#xdmextsourcesystemaudit) | External Source System Audit Attributes | Optional | [External Source System Audit Details](../../fieldgroups/shared/external-source-system-audit-details.schema.md#xdmextsourcesystemaudit) |
+| [xdm:isDeleted](#xdmisdeleted) | `boolean` | Optional | [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted) |
 | [xdm:isPrimary](#xdmisprimary) | `boolean` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityID](#xdmopportunityid) | `string` | Optional | XDM Business Opportunity Person Relation (this schema) |
 | [xdm:opportunityKey](#xdmopportunitykey) | B2B Source | Optional | XDM Business Opportunity Person Relation (this schema) |
@@ -81,6 +83,25 @@ Audit attributes for external sources.
 
 
 * [External Source System Audit Attributes](../../datatypes/auditing/external-source-system-audit.schema.md) – `https://ns.adobe.com/xdm/common/external-source-system-audit`
+
+
+
+
+
+## xdm:isDeleted
+### Soft Delete Flag
+
+Soft delete flag to indicate if the record is marked for deletion.
+
+`xdm:isDeleted`
+* is optional
+* type: `boolean`
+* defined in [Record Status](../../fieldgroups/shared/record-status.schema.md#xdmisdeleted)
+
+### xdm:isDeleted Type
+
+
+`boolean`
 
 
 

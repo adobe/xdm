@@ -21,5 +21,9 @@
   },
   "xdm:purchases": {
     "xdm:value": 1.0
+  },
+  "xdm:shipping": {
+    "xdm:shippingAmount": 20.0,
+    "xdm:shippingMethod": "standard ground"
   }
 }

@@ -17,7 +17,8 @@ Information related to the software used to collect an ExperienceEvent such as e
   * [Implementation details](../../datatypes/industry-verticals/implementationdetails.schema.md) `https://ns.adobe.com/xdm/context/implementationdetails`
 
 
-## Implementation Details Example
+## Implementation Details Examples
+
 ```json
 {
   "xdm:implementationDetails": {
@@ -27,6 +28,17 @@ Information related to the software used to collect an ExperienceEvent such as e
   }
 }
 ```
+
+```json
+{
+  "xdm:implementationDetails": {
+    "xdm:name": "https://ns.adobe.com/experience/mobilesdk/ios",
+    "xdm:version": "3.2.0+1.1.2",
+    "xdm:environment": "app"
+  }
+}
+```
+
 
 # Implementation Details Properties
 

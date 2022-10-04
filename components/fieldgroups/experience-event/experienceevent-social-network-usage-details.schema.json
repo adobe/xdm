@@ -31,7 +31,7 @@
   "definitions": {
     "social-network-usage-details": {
       "properties": {
-        "xdm:socialMarketing ": {
+        "xdm:socialMarketing": {
           "type": "object",
           "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
           "properties": {

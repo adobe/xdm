@@ -56,7 +56,8 @@ This schema captures privacy, personalization and marketing preferences (consent
         },
         "11112222-33334444-55556666-77778888": {
           "xdm:adID": {
-            "xdm:val": "n"
+            "xdm:val": "n",
+            "xdm:idType": "IDFA"
           },
           "xdm:personalize": {
             "xdm:content": {
@@ -191,8 +192,8 @@ Unknown type `object`.
         },
         "xdm:adID": {
           "title": "Use Advertiser ID",
-          "description": "The Advertiser ID (IDFA / AAID) can be used to link user across apps on this device",
-          "$ref": "#/definitions/consent-field",
+          "description": "The Advertiser ID (IDFA / GAID) can be used to link user across apps on this device",
+          "$ref": "#/definitions/adid-consent-field",
           "meta:titleId": "consents-and-preferences##xdm:adID##title##65941",
           "meta:descriptionId": "consents-and-preferences##xdm:adID##description##17511"
         },

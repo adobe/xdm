@@ -1,5 +1,5 @@
 
-# AdCloud to Analytics StitchID Mixin Schema
+# AdCloud to Analytics StitchID Schema
 
 ```
 https://ns.adobe.com/experience/adcloud/stitchid
@@ -11,18 +11,18 @@ Defines the advertising stitch ID used for the AdCloud to Adobe Analytics integr
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud/stitch.schema.json](adobe/experience/adcloud/stitch.schema.json) |
 
-## AdCloud to Analytics StitchID Mixin Example
+## AdCloud to Analytics StitchID Example
 ```json
 {
   "adcloud:advertisingStitchID": "13"
 }
 ```
 
-# AdCloud to Analytics StitchID Mixin Properties
+# AdCloud to Analytics StitchID Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [adcloud:advertisingStitchID](#adcloudadvertisingstitchid) | `string` | Optional | AdCloud to Analytics StitchID Mixin (this schema) |
+| [adcloud:advertisingStitchID](#adcloudadvertisingstitchid) | `string` | Optional | AdCloud to Analytics StitchID (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## adcloud:advertisingStitchID

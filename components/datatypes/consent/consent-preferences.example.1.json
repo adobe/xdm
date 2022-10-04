@@ -1,10 +1,11 @@
 {
   "xdm:consents": {
     "xdm:collect": {
-      "xdm:val": "y"
+      "xdm:val": "VI"
     },
     "xdm:adID": {
-      "xdm:val": "VI"
+      "xdm:val": "n",
+      "xdm:idType": "IDFA"
     },
     "xdm:share": {
       "xdm:val": "n"

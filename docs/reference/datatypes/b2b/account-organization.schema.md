@@ -9,7 +9,7 @@ Commonly used organizational attributes for a B2B account such as number of empl
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/b2b/account-organization.schema.json](datatypes/b2b/account-organization.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [datatypes/b2b/account-organization.schema.json](datatypes/b2b/account-organization.schema.json) |
 ## Schema Hierarchy
 
 * Account Details `https://ns.adobe.com/xdm/datatypes/b2b-account-organization`

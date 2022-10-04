@@ -15,7 +15,7 @@
         "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This Mixin will have Common Journey Metadata Fields",
+    "description": "This Fieldgroup will have Common Journey Metadata Fields",
     "definitions": {
         "journey": {
             "properties": {
@@ -30,7 +30,7 @@
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/versionID": {
                             "title": "Version ID",
-                            "description": "Identifier of the journey version. This id represents the identity of a journey.",
+                            "description": "Identifier of the journey version. This id represents the identity of a journey. It's the last part of the journey's URL",
                             "type": "string"
                         },
                         "https://ns.adobe.com/experience/journeyOrchestration/name": {

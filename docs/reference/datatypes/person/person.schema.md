@@ -45,6 +45,7 @@ An individual person. May represent a person acting in various roles, such as a 
 | [xdm:name](#xdmname) | Person name | Optional |  | Person (this schema) |
 | [xdm:nationality](#xdmnationality) | `string` | Optional |  | Person (this schema) |
 | [xdm:taxId](#xdmtaxid) | `string` | Optional |  | Person (this schema) |
+| [xdm:type](#xdmtype) | `string` | Optional |  | Person (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:birthDate
@@ -223,6 +224,26 @@ The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spai
 * defined in this schema
 
 ### xdm:taxId Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:type
+### Type
+
+The type of individual in different business contexts like B2C.
+
+`xdm:type`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:type Type
 
 
 `string`

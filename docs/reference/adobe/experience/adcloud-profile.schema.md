@@ -1,5 +1,5 @@
 
-# Adobe Advertising Cloud Profile Template Mixin Schema
+# Adobe Advertising Cloud Profile Template Schema
 
 ```
 https://ns.adobe.com/experience/adcloud-profile
@@ -12,13 +12,13 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud-profile.schema.json](adobe/experience/adcloud-profile.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Advertising Cloud Profile Template Mixin `https://ns.adobe.com/experience/adcloud-profile`
+* Adobe Advertising Cloud Profile Template `https://ns.adobe.com/experience/adcloud-profile`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
-  * [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
+  * [Segment Membership Details](../../fieldgroups/shared/segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
   * [Adobe Advertising Cloud Profile Full Extension](adcloud/profile-all.schema.md) `https://ns.adobe.com/experience/adcloud/profile-all`
 
 
-## Adobe Advertising Cloud Profile Template Mixin Example
+## Adobe Advertising Cloud Profile Template Example
 ```json
 {
   "xdm:segments": [
@@ -82,12 +82,12 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 }
 ```
 
-# Adobe Advertising Cloud Profile Template Mixin Properties
+# Adobe Advertising Cloud Profile Template Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
-| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../fieldgroups/shared/segmentation.schema.md#xdmsegmentmembership) |
+| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../fieldgroups/shared/segmentation.schema.md#xdmsegments) |
 | [xdm:syncedRemarketingAudiences](#xdmsyncedremarketingaudiences) | Synchronized Remarketing Audiences | Optional | [Adobe Advertising Cloud Profile Full Extension](adcloud/profile-all.schema.md#xdmsyncedremarketingaudiences) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -97,7 +97,7 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../fieldgroups/shared/segmentation.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -120,7 +120,7 @@ Adobe Advertising Cloud profile field group for use with schemas for Solution da
 * is optional
 * type: Segment membership
 
-* defined in [Segment Membership Details](../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments)
+* defined in [Segment Membership Details](../../fieldgroups/shared/segmentation.schema.md#xdmsegments)
 
 ### xdm:segments Type
 

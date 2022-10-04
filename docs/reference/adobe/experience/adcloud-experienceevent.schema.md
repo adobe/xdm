@@ -1,5 +1,5 @@
 
-# Adobe Advertising Cloud ExperienceEvent Template Mixin Schema
+# Adobe Advertising Cloud ExperienceEvent Template Schema
 
 ```
 https://ns.adobe.com/experience/adcloud-experienceevent
@@ -12,7 +12,7 @@ Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Sol
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/adcloud-experienceevent.schema.json](adobe/experience/adcloud-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Advertising Cloud ExperienceEvent Template Mixin `https://ns.adobe.com/experience/adcloud-experienceevent`
+* Adobe Advertising Cloud ExperienceEvent Template `https://ns.adobe.com/experience/adcloud-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-advertising`
   * [Application Details](../../fieldgroups/experience-event/experienceevent-application.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-application`
@@ -31,11 +31,11 @@ Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Sol
   * [Adobe Advertising Cloud Creative Management Platform Event Extension](adcloud/creative-event.schema.md) `https://ns.adobe.com/experience/adcloud/creative-event`
   * [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/target/experienceevent-shared`
   * [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md) `https://ns.adobe.com/experience/profile/experienceevent-shared`
-  * [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
+  * [Adobe Experience Platform Implementation Details](implementations-ext.schema.md) `https://ns.adobe.com/experience/implementations-ext`
   * [End User ID Details](../../fieldgroups/experience-event/experienceevent-enduserids.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-enduserids`
 
 
-## Adobe Advertising Cloud ExperienceEvent Template Mixin Example
+## Adobe Advertising Cloud ExperienceEvent Template Example
 ```json
 {
   "@id": "https://data.adobe.io/experienceid-123456",
@@ -55,7 +55,7 @@ Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Sol
 }
 ```
 
-# Adobe Advertising Cloud ExperienceEvent Template Mixin Properties
+# Adobe Advertising Cloud ExperienceEvent Template Properties
 
 | Property | Type | Required | Default | Defined by |
 |----------|------|----------|---------|------------|
@@ -69,7 +69,7 @@ Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Sol
 | [https://ns.adobe.com/experience/adcloud/inventory](#httpsnsadobecomexperienceadcloudinventory) | Adobe Advertising Cloud Inventory | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudinventory) |
 | [https://ns.adobe.com/experience/adcloud/productDetails](#httpsnsadobecomexperienceadcloudproductdetails) | Adobe Advertising Cloud Product Details displayed in Search Advertisement. | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudproductdetails) |
 | [https://ns.adobe.com/experience/adcloud/stitchId](#httpsnsadobecomexperienceadcloudstitchid) | `string` | Optional |  | [Adobe Advertising Cloud ExperienceEvent Full Extension](adcloud/experienceevent-all.schema.md#httpsnsadobecomexperienceadcloudstitchid) |
-| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional |  | [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
+| [https://ns.adobe.com/experience/implementations](#httpsnsadobecomexperienceimplementations) | Adobe Experience Platform Implementation Details | Optional |  | [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations) |
 | [https://ns.adobe.com/experience/profile/originDatasetID](#httpsnsadobecomexperienceprofileorigindatasetid) | `string` | Optional |  | [Adobe Unified Profile Service ExperienceEvent Shared Extension](profile/experienceevent-shared.schema.md#httpsnsadobecomexperienceprofileorigindatasetid) |
 | [https://ns.adobe.com/experience/target/supplementalDataID](#httpsnsadobecomexperiencetargetsupplementaldataid) | `string` | Optional |  | [Adobe Target ExperienceEvent Shared Extension](target/experienceevent-shared.schema.md#httpsnsadobecomexperiencetargetsupplementaldataid) |
 | [xdm:advertising](#xdmadvertising) | Advertising | Optional |  | [Advertising Details](../../fieldgroups/experience-event/experienceevent-advertising.schema.md#xdmadvertising) |
@@ -293,7 +293,7 @@ ID from the ad servers through Adobe Advertising Cloud STATS to track click-thro
 `https://ns.adobe.com/experience/implementations`
 * is optional
 * type: Adobe Experience Platform Implementation Details
-* defined in [Adobe Experience Platform Implementation Details Mixin](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
+* defined in [Adobe Experience Platform Implementation Details](implementations-ext.schema.md#httpsnsadobecomexperienceimplementations)
 
 ### https://ns.adobe.com/experience/implementations Type
 
@@ -366,7 +366,7 @@ Information related to advertising impressions, clickthroughs, and attribution.
 ## xdm:application
 ### Application
 
-This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
+This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.
 
 `xdm:application`
 * is optional

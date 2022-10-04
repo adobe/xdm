@@ -9,7 +9,7 @@ Use to capture details when a person is removed as a point of contact on a sales
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/remove-from-opportunity.schema.json](fieldgroups/experience-event/events/remove-from-opportunity.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/remove-from-opportunity.schema.json](fieldgroups/experience-event/events/remove-from-opportunity.schema.json) |
 
 ## Remove From Opportunity Example
 ```json

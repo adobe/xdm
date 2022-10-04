@@ -9,7 +9,7 @@ Use to capture details when a person fills out a form on a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/formfilledout.schema.json](fieldgroups/experience-event/events/formfilledout.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/formfilledout.schema.json](fieldgroups/experience-event/events/formfilledout.schema.json) |
 
 ## Form Filled Out Example
 ```json
@@ -154,11 +154,18 @@ Unknown type `object`.
   "type": "object",
   "properties": {
     "xdm:webFormID": {
-      "title": "Web Form ID",
+      "title": "Web Form ID (deprecated)",
       "type": "string",
-      "description": "Unique ID of the form.",
+      "description": "Web Form ID is going to depreciate soon. Please use  Web Form Key.",
       "meta:titleId": "formfilledout##xdm:webFormID##title##36241",
       "meta:descriptionId": "formfilledout##xdm:webFormID##description##30331"
+    },
+    "xdm:webFormKey": {
+      "title": "Web Form Key",
+      "description": "Unique key of the form.",
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "formfilledout##xdm:webFormKey##title##84331",
+      "meta:descriptionId": "formfilledout##xdm:webFormKey##description##19751"
     },
     "xdm:webFormName": {
       "title": "Web Form Name",

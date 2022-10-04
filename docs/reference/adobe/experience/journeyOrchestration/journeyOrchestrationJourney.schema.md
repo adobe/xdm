@@ -5,7 +5,7 @@
 https://ns.adobe.com/experience/journeyOrchestration/journey
 ```
 
-This Mixin will have Common Journey Metadata Fields
+This Fieldgroup will have Common Journey Metadata Fields
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
@@ -153,7 +153,7 @@ Describes the Journey Version.
 #### https://ns.adobe.com/experience/journeyOrchestration/versionID
 ##### Version ID
 
-Identifier of the journey version. This id represents the identity of a journey.
+Identifier of the journey version. This id represents the identity of a journey. It's the last part of the journey's URL
 
 `https://ns.adobe.com/experience/journeyOrchestration/versionID`
 * is optional

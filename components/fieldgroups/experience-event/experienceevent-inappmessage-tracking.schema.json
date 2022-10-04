@@ -23,9 +23,13 @@
             "xdm:action": {
               "title": "Custom Action",
               "type": "string",
-              "description": "Identifier for custom action that the user triggered while interacting with the inapp message."
+              "description": "Identifier for custom action that the user triggered while interacting with the inapp message.",
+              "meta:titleId": "experienceevent-inappmessage-tracking##xdm:action##title##71411",
+              "meta:descriptionId": "experienceevent-inappmessage-tracking##xdm:action##description##34821"
             }
-          }
+          },
+          "meta:titleId": "experienceevent-inappmessage-tracking##xdm:inappMessageTracking##title##8711",
+          "meta:descriptionId": "experienceevent-inappmessage-tracking##xdm:inappMessageTracking##description##73271"
         }
       }
     }
@@ -39,5 +43,7 @@
     }
   ],
   "meta:status": "stable",
-  "meta:createdDate": "2021-08-23"
+  "meta:createdDate": "2021-08-23",
+  "meta:titleId": "experienceevent-inappmessage-tracking##title##60271",
+  "meta:descriptionId": "experienceevent-inappmessage-tracking##description##16261"
 }

@@ -69,7 +69,8 @@
                         },
                         "11112222-33334444-55556666-77778888": {
                             "xdm:adID": {
-                                "xdm:val": "n"
+                                "xdm:val": "n",
+                                "xdm:idType": "IDFA"
                             },
                             "xdm:personalize": {
                                 "xdm:content": {

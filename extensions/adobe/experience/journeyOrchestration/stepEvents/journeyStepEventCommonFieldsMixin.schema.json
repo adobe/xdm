@@ -15,7 +15,7 @@
     "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
     "https://ns.adobe.com/xdm/context/experienceevent"
   ],
-  "description": "This Mixin contains the common Journey Metadata information.",
+  "description": "This Fieldgroup contains the common Journey Metadata information.",
   "definitions": {
     "journeyStepEventCommonFields": {
       "properties": {
@@ -23,6 +23,48 @@
           "title": "Journey Orchestration for creating user journey",
           "type": "object",
           "properties": {
+            "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta": {
+              "title": "HasSegmentQualificationDelta",
+              "description": "Indicate if the journey has configuration for segment qualification delta.",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime": {
+              "title": "StartSegmentQualificationTime",
+              "description": "Serialized instant of the start of the delta time window.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime": {
+              "title": "EndSegmentQualificationTime",
+              "description": "Serialized instant of the end of the delta time window.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus": {
+              "title": "SegmentQualificationStatus",
+              "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": {
+              "title": "isReadSegmentTriggerStartEvent",
+              "description": "If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.",
+              "type": "boolean"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
+              "title": "origSegmentQualificationStatus",
+              "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
+              "type": "string",
+              "enum": [
+                "existing",
+                "realized",
+                "exited"
+              ],
+              "meta:enum": {
+                "existing": "existing",
+                "realized": "realized",
+                "exited": "exited"
+              }
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/entrance": {
               "title": "entrance",
               "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",
@@ -346,6 +388,22 @@
               "type": "string",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##title##18181",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##91181"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": {
+              "title": "Projection Original Timestamp",
+              "type": "string",
+              "description": "The Projection Original Timestamp of the segment being used in journey"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": {
+              "title": "Projection Original Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "The Projection Original Timestamp of the segment being used in journey"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/experienceID": {
+              "title": "Experience ID",
+              "type": "string",
+              "description": "Journey Orchestration Experience Id"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

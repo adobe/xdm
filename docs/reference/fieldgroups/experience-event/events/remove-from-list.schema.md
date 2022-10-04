@@ -9,7 +9,7 @@ Use to track when a person is removed from a specific list.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/remove-from-list.schema.json](fieldgroups/experience-event/events/remove-from-list.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/remove-from-list.schema.json](fieldgroups/experience-event/events/remove-from-list.schema.json) |
 
 ## Remove From List Example
 ```json

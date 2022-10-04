@@ -18,7 +18,8 @@ Decision scope details capture properties that existed to narrow the scope of th
   * [Decision Activity Details](activity-detail.schema.md) `https://ns.adobe.com/experience/decisioning/activity-detail`
 
 
-## Decision Scope Details Example
+## Decision Scope Details Examples
+
 ```json
 {
   "xdm:id": "home-page-banner",
@@ -49,12 +50,28 @@ Decision scope details capture properties that existed to narrow the scope of th
 }
 ```
 
+```json
+{
+  "xdm:id": "3cc33a7e-13ca-4b19-b25d-c816eff9a70a",
+  "xdm:correlationID": "20c2587dcb1e85f52d070e12dd52e815",
+  "xdm:strategies": [
+    {
+      "xdm:step": "experimentation",
+      "xdm:strategyID": "16ASJZ2DWmusQjtxucYats",
+      "xdm:treatmentID": "0"
+    }
+  ]
+}
+```
+
+
 # Decision Scope Details Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
 | [xdm:activity](#xdmactivity) | Decision Activity Details | Optional | Decision Scope Details (this schema) |
 | [xdm:characteristics](#xdmcharacteristics) | `object` | Optional | Decision Scope Details (this schema) |
+| [xdm:correlationID](#xdmcorrelationid) | `string` | Optional | Decision Scope Details (this schema) |
 | [xdm:decisionProvider](#xdmdecisionprovider) | `string` | Optional | Decision Scope Details (this schema) |
 | [xdm:experience](#xdmexperience) | complex | Optional | Decision Scope Details (this schema) |
 | [xdm:id](#xdmid) | `string` | Optional | Decision Scope Details (this schema) |
@@ -100,6 +117,26 @@ Additional properties or attributes belonging to this particular scope details.
 
 | Property | Type | Required |
 |----------|------|----------|
+
+
+
+
+
+
+## xdm:correlationID
+### Correlation Identifier
+
+The campaign, journey, or other object to which this activity can be correlated. This string will often be further classified in the reporting engine.
+
+`xdm:correlationID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:correlationID Type
+
+
+`string`
 
 
 

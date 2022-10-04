@@ -51,7 +51,7 @@ Provide details for the delivery feedback for a single message in the Message Ex
 ## https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus
 ### Feedback Status
 
-Provide status of a delivery attempt.
+Provide status of a delivery attempt across different channels(Email,Push,SMS etc.), Not all enums are used for all the channels, so follow the detailed documentation.
 
 `https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus`
 * is optional
@@ -70,6 +70,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `delay` | Message delayed |
 | `duplicate` | Duplicate message skipped |
 | `denylist` | Invalid destination skipped |
+| `delivered` | Message Delivered |
 
 
 

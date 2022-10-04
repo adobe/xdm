@@ -1,18 +1,18 @@
 
-# AEP Web SDK ExperienceEvent Mixin Schema
+# AEP Web SDK ExperienceEvent Schema
 
 ```
 https://ns.adobe.com/experience/aep-web-sdk-experienceevent
 ```
 
-Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.
+Adobe Experience Platform Web SDK ExperienceEvent fieldgroup. Includes field definitions for automatically collected data by the AEP Web SDK (Alloy) library.
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/aep-web-sdk-experienceevent.schema.json](adobe/experience/aep-web-sdk-experienceevent.schema.json) |
 ## Schema Hierarchy
 
-* AEP Web SDK ExperienceEvent Mixin `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
+* AEP Web SDK ExperienceEvent `https://ns.adobe.com/experience/aep-web-sdk-experienceevent`
   * [Extensibility base schema](../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Implementation Details](../../fieldgroups/experience-event/experienceevent-implementation-details.schema.md) `https://ns.adobe.com/xdm/context/experienceevent-implementation-details`
   * [Data capture region for Experience Events](experienceevent-edgeregion.schema.md) `https://ns.adobe.com/experience/experienceevent-edgeregion`
@@ -21,10 +21,12 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
   * [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md) `https://ns.adobe.com/experience/decisioning/proposition-interaction`
 
 
-# AEP Web SDK ExperienceEvent Mixin Properties
+# AEP Web SDK ExperienceEvent Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [https://ns.adobe.com/experience/decisioning/propositionAction](#httpsnsadobecomexperiencedecisioningpropositionaction) | Proposition Action | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction) |
+| [https://ns.adobe.com/experience/decisioning/propositionEventType](#httpsnsadobecomexperiencedecisioningpropositioneventtype) | Proposition Event Type | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype) |
 | [https://ns.adobe.com/experience/decisioning/propositions](#httpsnsadobecomexperiencedecisioningpropositions) | Proposition Interaction Details | Optional | [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositions) |
 | [xdm:device](#xdmdevice) | Device | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmdevice) |
 | [xdm:environment](#xdmenvironment) | Environment | Optional | [Environment Details](../../fieldgroups/experience-event/experienceevent-environment-details.schema.md#xdmenvironment) |
@@ -33,6 +35,44 @@ Adobe Experience Platform Web SDK ExperienceEvent Mixin. Includes field definiti
 | [xdm:userActivityRegion](#xdmuseractivityregion) | `object` | Optional | [Data capture region for Experience Events](experienceevent-edgeregion.schema.md#xdmuseractivityregion) |
 | [xdm:web](#xdmweb) | Web information | Optional | [Web Details](../../fieldgroups/experience-event/experienceevent-web.schema.md#xdmweb) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## https://ns.adobe.com/experience/decisioning/propositionAction
+### Proposition Action
+
+The specific element that was interacted with which caused the proposition event to be triggered.
+
+`https://ns.adobe.com/experience/decisioning/propositionAction`
+* is optional
+* type: Proposition Action
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositionaction)
+
+### https://ns.adobe.com/experience/decisioning/propositionAction Type
+
+
+* [Proposition Action](decisioning/proposition-action.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-action`
+
+
+
+
+
+## https://ns.adobe.com/experience/decisioning/propositionEventType
+### Proposition Event
+
+A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.
+
+`https://ns.adobe.com/experience/decisioning/propositionEventType`
+* is optional
+* type: Proposition Event Type
+* defined in [Experience Event - Proposition Interactions](decisioning/experienceevent-proposition-interaction.schema.md#httpsnsadobecomexperiencedecisioningpropositioneventtype)
+
+### https://ns.adobe.com/experience/decisioning/propositionEventType Type
+
+
+* [Proposition Event Type](decisioning/proposition-event-type.schema.md) – `https://ns.adobe.com/experience/decisioning/proposition-event-type`
+
+
+
+
 
 ## https://ns.adobe.com/experience/decisioning/propositions
 ### Involved Propositions

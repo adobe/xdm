@@ -1,0 +1,17 @@
+{
+  "@type": "xdm:descriptorLabel",
+  "xdm:sourceSchema": "https://ns.adobe.com/xdm/context/profile-work-details",
+  "xdm:sourceVersion": 1,
+  "xdm:sourceProperty": ["/workAddress", "/workEmail"],
+  "xdm:excludeProperty": [
+    "/workAddress/street3",
+    "/workAddress/street4",
+    "/workEmail/status"
+  ],
+  "xdm:labels": [
+    "sampleDUlELabelResourceID1",
+    "sampleDUlELabelResourceID2",
+    "sampleDUlELabelResourceID3",
+    "sampleDUlELabelResourceID4"
+  ]
+}

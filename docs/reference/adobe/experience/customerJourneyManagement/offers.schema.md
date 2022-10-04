@@ -20,12 +20,34 @@ Details about offers associated with a message, as sourced primarily from ODS
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
+| [xdm:activityID](#xdmactivityid) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | [xdm:offerCount](#xdmoffercount) | `integer` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | [xdm:offerID](#xdmofferid) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | [xdm:placementID](#xdmplacementid) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | [xdm:propositionID](#xdmpropositionid) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | [xdm:propositionTime](#xdmpropositiontime) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
+| [xdm:scopeID](#xdmscopeid) | `string` | Optional | Adobe ExperienceEvent - Offer details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
+
+## xdm:activityID
+### Offer Activity ID
+
+Unique Offer Decision identifier.
+
+`xdm:activityID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:activityID Type
+
+
+`string`
+
+
+
+
+
 
 ## xdm:offerCount
 ### Offer Count
@@ -118,6 +140,26 @@ Time at which the Offer proposition was generated.
 * defined in this schema
 
 ### xdm:propositionTime Type
+
+
+`string`
+
+
+
+
+
+
+## xdm:scopeID
+### Offer Decision Scope ID
+
+Unique Offer Decison Scope identifier(offer-activity-id+placement-id BASE64 encoded).
+
+`xdm:scopeID`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:scopeID Type
 
 
 `string`

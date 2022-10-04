@@ -18,7 +18,8 @@ Journey Orchestration Data Fetch Field for a Step Event.
   "https://ns.adobe.com/experience/journeyOrchestration/fetchError": "http",
   "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime": 300,
   "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount": 48,
-  "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime": 434
+  "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime": 434,
+  "https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext": "authCallError"
 }
 ```
 
@@ -50,6 +51,7 @@ Journey Orchestration Data Fetch Field for a Step Event.
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime`| integer | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchError`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount`| integer | Optional |
@@ -153,6 +155,27 @@ Error code corresponding to fetchError.
 * type: `string`
 
 ##### https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext
+##### FetchErrorContext
+
+Provides context of the error. Potential values: 'authCallError': error has occured in scope of custom or Adobe.IO authentication by calling the authentication endpoint to generate an access token, 'callError': error has occured on action call endpointTreatment name applied to execute the action
+
+`https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/fetchErrorContext Type
 
 
 `string`

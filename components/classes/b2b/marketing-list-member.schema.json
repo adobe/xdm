@@ -15,7 +15,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "Members/Persons/Contacts etc. associated with a marketing list.",
+  "description": "XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
   "definitions": {
     "marketing-list-member": {
       "properties": {
@@ -76,9 +76,12 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "marketing-list-member##title##46541",
   "meta:descriptionId": "marketing-list-member##description##7641"
 }

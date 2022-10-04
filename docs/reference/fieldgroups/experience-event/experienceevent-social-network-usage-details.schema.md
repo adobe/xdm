@@ -27,19 +27,19 @@ Social network usage information such as share, content, and network.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:socialMarketing ](#xdmsocialmarketing-) | `object` | Optional | Social Network Usage Details (this schema) |
+| [xdm:socialMarketing](#xdmsocialmarketing) | `object` | Optional | Social Network Usage Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:socialMarketing 
+## xdm:socialMarketing
 
 Tracks interactions related to social marketing sites, such as shares and follows.
 
-`xdm:socialMarketing `
+`xdm:socialMarketing`
 * is optional
 * type: `object`
 * defined in this schema
 
-### xdm:socialMarketing  Type
+### xdm:socialMarketing Type
 
 
 `object` with following properties:

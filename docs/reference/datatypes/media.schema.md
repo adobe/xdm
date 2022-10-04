@@ -52,7 +52,7 @@ Media context information for content related interactions.
     "xdm:primaryAssetViewDetails": {
       "@id": "https://data.adobe.io/entities/media-sessionid/1427461282884250114230",
       "xdm:playerName": "watchmytv",
-      "xdm:videoSegment": "3-10",
+      "xdm:videoSegment": "[3-10]",
       "xdm:path": "mid:movie:part:foo.com:dfehfdb3-4ce7",
       "xdm:broadcastChannel": "WatchMyTV",
       "xdm:broadcastContentType": "VOD",
@@ -89,7 +89,8 @@ Media context information for content related interactions.
       "xdm:federated": {
         "xdm:value": 0
       }
-    }
+    },
+    "xdm:playhead": 831
   }
 }
 ```
@@ -135,6 +136,7 @@ Information related to timed media main content, such as ads and chapters.
 | `xdm:pauseImpactedStreams`|  | Optional |
 | `xdm:pauseTime`|  | Optional |
 | `xdm:pauses`|  | Optional |
+| `xdm:playhead`| integer | Optional |
 | `xdm:primaryAssetReference`| object | **Required** |
 | `xdm:primaryAssetViewDetails`| object | Optional |
 | `xdm:progress10`|  | Optional |
@@ -142,6 +144,9 @@ Information related to timed media main content, such as ads and chapters.
 | `xdm:progress50`|  | Optional |
 | `xdm:progress75`|  | Optional |
 | `xdm:progress95`|  | Optional |
+| `xdm:publisher`| string | Optional |
+| `xdm:radioStation`| string | Optional |
+| `xdm:recordLabel`| string | Optional |
 | `xdm:resumes`|  | Optional |
 | `xdm:starts`|  | Optional |
 | `xdm:timePlayed`|  | Optional |
@@ -581,6 +586,27 @@ The number of pause periods that occurred during playback.
 
 
 
+#### xdm:playhead
+##### Player time playhead
+
+If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length.
+
+`xdm:playhead`
+* is optional
+* type: `integer`
+
+##### xdm:playhead Type
+
+
+`integer`
+
+
+
+
+
+
+
+
 #### xdm:primaryAssetReference
 ##### Primary asset reference
 
@@ -840,7 +866,7 @@ Unknown type `object`.
     "xdm:videoSegment": {
       "title": "Video segment",
       "type": "string",
-      "pattern": "^[0-9]+-[0-9]+$",
+      "pattern": "^[[0-9]+-[0-9]+]$",
       "description": "The interval that describes the part of the content that has been viewed in minutes.",
       "meta:titleId": "media##xdm:videoSegment##title##29671",
       "meta:descriptionId": "media##xdm:videoSegment##description##80611"
@@ -922,6 +948,42 @@ Unknown type `object`.
       "type": "object",
       "description": "Timed media properties related to the content playback's quality of experience (QoE).",
       "properties": {
+        "xdm:error": {
+          "title": "Custom error object",
+          "type": "object",
+          "description": "Quality of experience (QoE) custom error information.",
+          "properties": {
+            "xdm:errorID": {
+              "title": "Error ID",
+              "type": "string",
+              "description": "The error ID.",
+              "minLength": 1,
+              "meta:titleId": "media##xdm:errorID##title##82411",
+              "meta:descriptionId": "media##xdm:errorID##description##30321"
+            },
+            "xdm:errorSource": {
+              "title": "Error source",
+              "type": "string",
+              "description": "The error source.",
+              "enum": [
+                "player",
+                "external"
+              ],
+              "meta:enum": {
+                "player": "Player source.",
+                "external": "External source."
+              },
+              "meta:titleId": "media##xdm:errorSource##title##25331",
+              "meta:descriptionId": "media##xdm:errorSource##description##82201"
+            }
+          },
+          "required": [
+            "xdm:errorID",
+            "xdm:errorSource"
+          ],
+          "meta:titleId": "media##xdm:error##title##79291",
+          "meta:descriptionId": "media##xdm:error##description##84991"
+        },
         "xdm:errors": {
           "title": "Errors",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -1134,6 +1196,22 @@ Unknown type `object`.
       "description": "Timed media properties related to in focus player state.",
       "meta:titleId": "media##xdm:inFocus##title##93531",
       "meta:descriptionId": "media##xdm:inFocus##description##43601"
+    },
+    "xdm:statesStart": {
+      "title": "List of states start",
+      "description": "The list of states start",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "xdm:statesEnd": {
+      "title": "List of states end",
+      "description": "The list of states end",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "meta:titleId": "media##xdm:primaryAssetViewDetails##title##24351",
@@ -1241,6 +1319,69 @@ Indicates that the playhead passed the 95% marker of media based on stream lengt
 
 
 * []() – `https://ns.adobe.com/xdm/data/measure`
+
+
+
+
+
+
+
+#### xdm:publisher
+##### Audio content publisher
+
+Name of the audio content publisher.
+
+`xdm:publisher`
+* is optional
+* type: `string`
+
+##### xdm:publisher Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:radioStation
+##### Radio station
+
+Name / ID of the radio station.
+
+`xdm:radioStation`
+* is optional
+* type: `string`
+
+##### xdm:radioStation Type
+
+
+`string`
+
+
+
+
+
+
+
+
+#### xdm:recordLabel
+##### Record label
+
+Name of the record label.
+
+`xdm:recordLabel`
+* is optional
+* type: `string`
+
+##### xdm:recordLabel Type
+
+
+`string`
+
 
 
 

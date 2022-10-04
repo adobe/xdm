@@ -5,7 +5,7 @@
 https://ns.adobe.com/xdm/mixins/opportunity-components
 ```
 
-This Mixin is used to capture B2B Opportunity specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed 
+This fieldgroup is used to capture B2B Opportunity specific relationship attributes that are represented as it is in source and also used for merge/unmerge rules analysis if and when needed 
 
 | [Abstract](../../../abstract.md) | [Extensible](../../../extensions.md) | [Status](../../../status.md) | [Identifiable](../../../id.md) | [Custom Properties](../../../extensions.md) | [Additional Properties](../../../extensions.md) | Defined In |
 |----------------------------------|--------------------------------------|------------------------------|--------------------------------|---------------------------------------------|-------------------------------------------------|------------|

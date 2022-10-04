@@ -1,0 +1,134 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/schemas/aep-hygiene-ops",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Hygiene Operation Request",
+  "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "definitions": {
+    "hygieneOps": {
+      "properties": {
+        "xdm:batchTime": {
+          "title": "Time the batch was created",
+          "description": "Time the hygiene batch was created",
+          "type": "string",
+          "format": "date-time",
+          "meta:titleId": "aep-hygiene-ops##xdm:batchTime##title##84111",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:batchTime##description##85271"
+        },
+        "xdm:action": {
+          "title": "Name of the hygiene operation to be applied by downstream consumers",
+          "description": "Name of the hygiene operation to be applied by downstream consumers.",
+          "type": "string",
+          "enum": ["deleteIdentity", "updateField"],
+          "meta:titleId": "aep-hygiene-ops##xdm:action##title##96551",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821",
+          "meta:enum": {
+            "deleteIdentity": "Delete Identity",
+            "updateField": "Update Field"
+          }
+        },
+        "xdm:targetDatasetID": {
+          "title": "Target Dataset ID specified by the user to apply hygiene operations",
+          "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+          "type": "string",
+          "meta:titleId": "aep-hygiene-ops##xdm:targetDatasetID##title##10841",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:targetDatasetID##description##86781"
+        },
+        "xdm:workorderID": {
+          "title": "Work Order ID for tracking purposes.",
+          "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
+          "type": "string",
+          "meta:titleId": "aep-hygiene-ops##xdm:workorderID##title##7131",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:workorderID##description##50431"
+        },
+        "xdm:operation": {
+          "title": "Payload of the hygiene op request",
+          "description": "Contents of this payload provides identities to delete, or records to update",
+          "type": "object",
+          "properties": {
+            "xdm:deleteIdentity": {
+              "title": "Specifies rows to delete for matching identities",
+              "description": "Specifies rows to delete for matching identities",
+              "type": "object",
+              "properties": {
+                "xdm:identities": {
+                  "title": "Set of primary identities",
+                  "description": "Set of primary identities",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "xdm:namespace": {
+                        "title": "The identity namespace",
+                        "description": "The namespace associated with the xdm:id attribute.",
+                        "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                        "meta:titleId": "aep-hygiene-ops##xdm:namespace##title##4581",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:namespace##description##62051"
+                      },
+                      "xdm:ID": {
+                        "title": "Experience identifier",
+                        "type": "string",
+                        "description": "Experience identifier",
+                        "meta:titleId": "aep-hygiene-ops##xdm:ID##title##32631",
+                        "meta:descriptionId": "aep-hygiene-ops##xdm:ID##description##31251"
+                      }
+                    }
+                  },
+                  "meta:titleId": "aep-hygiene-ops##xdm:identities##title##19841",
+                  "meta:descriptionId": "aep-hygiene-ops##xdm:identities##description##14911"
+                }
+              },
+              "meta:titleId": "aep-hygiene-ops##xdm:deleteIdentity##title##65751",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:deleteIdentity##description##86391"
+            },
+            "xdm:updateField": {
+              "title": "Details of the update operation",
+              "description": "Details of the update operation",
+              "type": "object",
+              "properties": {
+                "xdm:changes": {
+                  "title": "Array of records to update",
+                  "description": "Array of records to update",
+                  "type": "array",
+                  "items": {
+                    "title": "String-encoded JSON record to update",
+                    "description": "String-encoded JSON record to update",
+                    "type": "string",
+                    "meta:titleId": "aep-hygiene-ops##items##title##26921",
+                    "meta:descriptionId": "aep-hygiene-ops##items##description##24961"
+                  },
+                  "meta:titleId": "aep-hygiene-ops##xdm:changes##title##99521",
+                  "meta:descriptionId": "aep-hygiene-ops##xdm:changes##description##4771"
+                }
+              },
+              "meta:titleId": "aep-hygiene-ops##xdm:updateField##title##65571",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:updateField##description##2691"
+            }
+          },
+          "meta:titleId": "aep-hygiene-ops##xdm:operation##title##23961",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:operation##description##80191"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/classes/aep-hygiene"
+    },
+    {
+      "$ref": "#/definitions/hygieneOps"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:titleId": "aep-hygiene-ops##title##2891",
+  "meta:descriptionId": "aep-hygiene-ops##description##7621"
+}

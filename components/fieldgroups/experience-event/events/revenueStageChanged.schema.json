@@ -1,0 +1,99 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/events/revenueStageChanged",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Revenue Stage Changed",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.revenueStageChanged",
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "description": "Use to capture details when revenue model stage for a person changes.",
+  "definitions": {
+    "revenueStageChanged": {
+      "properties": {
+        "xdm:leadOperation": {
+          "title": "Lead Operation",
+          "type": "object",
+          "properties": {
+            "xdm:changeRevenueStage": {
+              "title": "Change Revenue Stage",
+              "type": "object",
+              "properties": {
+                "xdm:modelKey": {
+                  "title": "Model Key",
+                  "description": "Unique composite identifier for the model of the Revenue Cycle Modeler.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:modelKey##title##25831",
+                  "meta:descriptionId": "revenueStageChanged##xdm:modelKey##description##37271"
+                },
+                "xdm:modelName": {
+                  "title": "Model Name",
+                  "type": "string",
+                  "description": "Name of the model for Revenue Cycle Modeler.",
+                  "meta:titleId": "revenueStageChanged##xdm:modelName##title##61941",
+                  "meta:descriptionId": "revenueStageChanged##xdm:modelName##description##64651"
+                },
+                "xdm:newStageKey": {
+                  "title": "New Stage Key",
+                  "description": "Unique composite identifier of the stage person assigned to.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:newStageKey##title##7731",
+                  "meta:descriptionId": "revenueStageChanged##xdm:newStageKey##description##67771"
+                },
+                "xdm:newStageName": {
+                  "title": "New Stage Name",
+                  "type": "string",
+                  "description": "Name of the new stage person assigned to.",
+                  "meta:titleId": "revenueStageChanged##xdm:newStageName##title##21601",
+                  "meta:descriptionId": "revenueStageChanged##xdm:newStageName##description##80421"
+                },
+                "xdm:previousStageKey": {
+                  "title": "Previous Stage Key",
+                  "description": "Unique composite identifier of the previous stage person assigned from.",
+                  "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+                  "meta:titleId": "revenueStageChanged##xdm:previousStageKey##title##52771",
+                  "meta:descriptionId": "revenueStageChanged##xdm:previousStageKey##description##92771"
+                },
+                "xdm:previousStageName": {
+                  "title": "Previous Stage Name",
+                  "type": "string",
+                  "description": "Name of the previous stage person assigned from.",
+                  "meta:titleId": "revenueStageChanged##xdm:previousStageName##title##53261",
+                  "meta:descriptionId": "revenueStageChanged##xdm:previousStageName##description##52311"
+                },
+                "xdm:reason": {
+                  "title": "Reason",
+                  "type": "string",
+                  "description": "Reason to indicate changes in model stages for a person.",
+                  "meta:titleId": "revenueStageChanged##xdm:reason##title##98711",
+                  "meta:descriptionId": "revenueStageChanged##xdm:reason##description##10861"
+                }
+              },
+              "meta:titleId": "revenueStageChanged##xdm:changeRevenueStage##title##83221"
+            }
+          },
+          "meta:titleId": "revenueStageChanged##xdm:leadOperation##title##3911"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/revenueStageChanged"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": "2022-02-15",
+  "meta:titleId": "revenueStageChanged##title##16311",
+  "meta:descriptionId": "revenueStageChanged##description##98331"
+}

@@ -129,6 +129,16 @@
                     "format": "date-time",
                     "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##46151",
                     "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##81781"
+                },
+                "xdm:b2b": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:personType": {
+                            "title": "Person Type",
+                            "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+                            "type": "string"
+                        }
+                    }
                 }
             }
         }
@@ -136,9 +146,12 @@
     "allOf": [
         {
             "$ref": "#/definitions/campaign-member-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
         }
     ],
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:createdDate": "2020-08-18",
     "meta:titleId": "campaign-member-details##title##66341",
     "meta:descriptionId": "campaign-member-details##description##40731",

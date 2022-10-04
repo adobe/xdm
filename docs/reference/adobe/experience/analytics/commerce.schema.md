@@ -1,28 +1,28 @@
 
-# Adobe Analytics ExperienceEvent Commerce Mixin Schema
+# Adobe Analytics ExperienceEvent Commerce Schema
 
 ```
 https://ns.adobe.com/experience/analytics/commerce
 ```
 
-Adobe Analytics ExperienceEvent Commerce Mixin.
+Adobe Analytics ExperienceEvent Commerce fieldgroup.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [adobe/experience/analytics/commerce.schema.json](adobe/experience/analytics/commerce.schema.json) |
 ## Schema Hierarchy
 
-* Adobe Analytics ExperienceEvent Commerce Mixin `https://ns.adobe.com/experience/analytics/commerce`
+* Adobe Analytics ExperienceEvent Commerce `https://ns.adobe.com/experience/analytics/commerce`
   * [Extensibility base schema](../../../datatypes/extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
   * [Commerce](../../../datatypes/marketing/commerce.schema.md) `https://ns.adobe.com/xdm/context/commerce`
 
 
-# Adobe Analytics ExperienceEvent Commerce Mixin Properties
+# Adobe Analytics ExperienceEvent Commerce Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:commerce](#xdmcommerce) | Commerce | Optional | Adobe Analytics ExperienceEvent Commerce Mixin (this schema) |
-| [xdm:productListItems](#xdmproductlistitems) | Adobe Analytics extension to XDM Product List Item | Optional | Adobe Analytics ExperienceEvent Commerce Mixin (this schema) |
+| [xdm:commerce](#xdmcommerce) | Commerce | Optional | Adobe Analytics ExperienceEvent Commerce (this schema) |
+| [xdm:productListItems](#xdmproductlistitems) | Adobe Analytics extension to XDM Product List Item | Optional | Adobe Analytics ExperienceEvent Commerce (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:commerce

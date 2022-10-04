@@ -14,23 +14,10 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 
 * Point of interest details `https://ns.adobe.com/xdm/context/poi-detail`
   * [Extensibility base schema](extensible.schema.md) `https://ns.adobe.com/xdm/common/extensible`
+  * [Keyed List](keyedlist.schema.md) `https://ns.adobe.com/xdm/datatypes/keyedlist`
 
 
 ## Point of interest details Examples
-
-```json
-{
-  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
-  "xdm:name": "Acme Hotel Tokyo",
-  "xdm:category": "Resorts",
-  "xdm:type": "Hotel",
-  "xdm:locatingType": "gps",
-  "xdm:geoInteractionDetails": {
-    "xdm:distanceToCenter": 100,
-    "xdm:accuracy": 30
-  }
-}
-```
 
 ```json
 {
@@ -47,6 +34,20 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 }
 ```
 
+```json
+{
+  "xdm:poiID": "c7f4bf28-c8d9-4b89-a81f-2a8ef9367390",
+  "xdm:name": "Acme Hotel Tokyo",
+  "xdm:category": "Resorts",
+  "xdm:type": "Hotel",
+  "xdm:locatingType": "gps",
+  "xdm:geoInteractionDetails": {
+    "xdm:distanceToCenter": 100,
+    "xdm:accuracy": 30
+  }
+}
+```
+
 
 # Point of interest details Properties
 
@@ -58,6 +59,7 @@ A point or place of interest (POI) Details. Used to capture the technical and me
 | [xdm:distanceToPOICenter](#xdmdistancetopoicenter) | `number` | Optional | Point of interest details (this schema) |
 | [xdm:geoInteractionDetails](#xdmgeointeractiondetails) | `object` | Optional | Point of interest details (this schema) |
 | [xdm:locatingType](#xdmlocatingtype) | `string` | Optional | Point of interest details (this schema) |
+| [xdm:metadata](#xdmmetadata) | Keyed List | Optional | Point of interest details (this schema) |
 | [xdm:name](#xdmname) | `string` | Optional | Point of interest details (this schema) |
 | [xdm:poiID](#xdmpoiid-1) | `string` | Optional | Point of interest details (this schema) |
 | [xdm:type](#xdmtype) | `string` | Optional | Point of interest details (this schema) |
@@ -352,6 +354,25 @@ Mechanism used to determine location.
 | `ip` | IP to geo lookup |
 | `ip+wifi` | IP with wifi lookup |
 | `wifi-triangulation` | Wifi triangulation |
+
+
+
+
+## xdm:metadata
+### POI metadata
+
+metadata assigned to the POI by the administrator of the POI definitions.
+
+`xdm:metadata`
+* is optional
+* type: Keyed List
+* defined in this schema
+
+### xdm:metadata Type
+
+
+* [Keyed List](keyedlist.schema.md) – `https://ns.adobe.com/xdm/datatypes/keyedlist`
+
 
 
 

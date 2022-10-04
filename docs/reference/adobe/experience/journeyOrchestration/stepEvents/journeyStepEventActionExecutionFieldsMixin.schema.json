@@ -15,7 +15,7 @@
         "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",
         "https://ns.adobe.com/xdm/context/experienceevent"
     ],
-    "description": "This Mixin will have Journey Action Metadata Fields.",
+    "description": "This Fieldgroup will have Journey Action Metadata Fields.",
     "definitions": {
         "journeyStepEventActionExecutionFields": {
             "properties": {
@@ -123,6 +123,103 @@
                             "type": "integer",
                             "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##title##88741",
                             "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##description##46891"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/messageID": {
+                            "title": "MessageID",
+                            "description": "Message ID referenced in inline message action of a journey",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/publishedMessageID": {
+                            "title": "PublishedMessageID",
+                            "description": "Published message ID in inline message action of a journey",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/interactionType": {
+                            "title": "InteractionType",
+                            "description": "Indicate the interaction type, either 'marketing' or 'transactional'. Remark: this will be relevant for message and custom actions",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/surfaceID": {
+                            "title": "SurfaceID",
+                            "description": "Surface ID",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/channel": {
+                            "title": "Channel",
+                            "description": "Channel Name like email, push, sms",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/isSendTimeOptimized": {
+                            "title": "IsSendTimeOptimized",
+                            "description": "Indicate if the message execution has been delayed by applying a send time optimization",
+                            "type": "boolean"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/actionGroupID": {
+                            "title": "ActionGroupID",
+                            "description": "Action Group ID",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/actionGroupName": {
+                            "title": "ActionGroupName",
+                            "description": "Action Group Name",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/experimentationID": {
+                            "title": "ExperimentationID",
+                            "description": "Experimentation ID",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/experimentationName": {
+                            "title": "ExperimentationName",
+                            "description": "Experimentation Name",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/treatmentID": {
+                            "title": "TreatmentID",
+                            "description": "Treatment ID applied to execute the action",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/treatmentName": {
+                            "title": "TreatmentName",
+                            "description": "Treatment name applied to execute the action",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/actionErrorContext": {
+                            "title": "ActionErrorContext",
+                            "description": "Provides context of the error. Potential values: 'authCallError': error has occured in scope of custom or Adobe.IO authentication by calling the authentication endpoint to generate an access token, 'callError': error has occured on action call endpointTreatment name applied to execute the action",
+                            "type": "string"
+                        },
+                        "https://ns.adobe.com/experience/journeyOrchestration/consent": {
+                            "title": "Consent",
+                            "description": "Fields corresponding to action consent.",
+                            "type": "object",
+                            "properties": {
+                                "https://ns.adobe.com/experience/journeyOrchestration/rejectedPoliciesCount": {
+                                    "title": "RejectedPoliciesCount",
+                                    "description": "Count of rejected consent policies",
+                                    "type": "integer"
+                                },
+                                "https://ns.adobe.com/experience/journeyOrchestration/rejectedPolicies": {
+                                    "title": "RejectedPolicies",
+                                    "description": "Rejected Consent Policy details array object.",
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "xdm:ID": {
+                                                "title": "ID",
+                                                "description": "ID of the rejected Consent policy.",
+                                                "type": "string"
+                                            },
+                                            "xdm:name": {
+                                                "title": "Name",
+                                                "description": "Name of the corresponding rejected Consent policy.",
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     },
                     "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##10491"

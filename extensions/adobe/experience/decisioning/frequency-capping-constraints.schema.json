@@ -66,6 +66,11 @@
                 "minItems": 1,
                 "default": ["decisioning"]
               },
+              "xdm:customQuery": {
+                "title": "Custom PQL query",
+                "description": "Custom PQL query to match events",
+                "type": "string"
+              },
               "xdm:repeat": {
                 "title": "Repeat",
                 "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating",

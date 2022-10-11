@@ -46,6 +46,13 @@
           "meta:titleId": "order##xdm:currencyCode##title##81771",
           "meta:descriptionId": "order##xdm:currencyCode##description##51121"
         },
+        "xdm:taxAmount": {
+          "title": "Tax Amount",
+          "type": "number",
+          "description": "The tax amount paid by the buyer as part of the final payment.",
+          "meta:titleId": "order##xdm:taxAmount##title##81954",
+          "meta:descriptionId": "order##xdm:taxAmount##description##51205"
+        },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",

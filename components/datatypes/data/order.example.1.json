@@ -6,19 +6,18 @@
       "xdm:transactionID": "transactid-a111",
       "xdm:paymentAmount": 899.99,
       "xdm:paymentType": "credit_card",
-      "xdm:currencyCode": "USD",
-      "xdm:taxAmount": 80
+      "xdm:currencyCode": "USD"
     },
     {
       "xdm:transactionID": "transactid-a222",
       "xdm:paymentAmount": 99.99,
       "xdm:paymentType": "gift_card",
-      "xdm:currencyCode": "USD",
-      "xdm:taxAmount": 9
+      "xdm:currencyCode": "USD"
     }
   ],
   "xdm:currencyCode": "USD",
   "xdm:priceTotal": 999.98,
+  "xdm:taxAmount": 90,
   "xdm:orderType": "checkout",
   "xdm:lastUpdatedAt": "2022-10-22T09:02:15.541Z",
   "xdm:createdDate": "2022-10-22T09:02:15.541Z",

@@ -27,13 +27,6 @@
           "meta:titleId": "paymentitem##xdm:paymentAmount##title##89951",
           "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##62201"
         },
-        "xdm:taxAmount": {
-          "title": "Tax Amount",
-          "type": "number",
-          "description": "The tax amount paid by the buyer as part of the final payment.",
-          "meta:titleId": "paymentitem##xdm:taxAmount##title##79952",
-          "meta:descriptionId": "paymentitem##xdm:taxAmount##description##52203"
-        },
         "xdm:paymentType": {
           "title": "Payment Type",
           "type": "string",

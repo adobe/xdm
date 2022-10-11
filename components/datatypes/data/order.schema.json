@@ -64,6 +64,46 @@
           },
           "meta:titleId": "order##xdm:orderType##title##56861",
           "meta:descriptionId": "order##xdm:orderType##description##62731"
+        },
+        "xdm:lastUpdatedAt": {
+          "title": "Last Updated At",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when a particular order record is last updated in the commerce system.",
+          "meta:titleId": "order##xdm:lastUpdatedAt##title##86152",
+          "meta:descriptionId": "order##xdm:lastUpdatedAt##description##47783"
+        },
+        "xdm:createdDate": {
+          "title": "Created Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time/date when a new order is created in the commerce system.",
+          "meta:titleId": "order##xdm:createdDate##title##86153",
+          "meta:descriptionId": "order##xdm:createdDate##description##47783"
+        },
+        "xdm:shipDate": {
+          "title": "Ship Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date when one or more items from an order is shipped. ",
+          "meta:titleId": "order##xdm:shipDate##title##86154",
+          "meta:descriptionId": "order##xdm:shipDate##description##47784"
+        },
+        "xdm:returnDate": {
+          "title": "Return Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date/time when an order return is initiated by the shopper.",
+          "meta:titleId": "order##xdm:returnDate##title##86155",
+          "meta:descriptionId": "order##xdm:returnDate##description##47785"
+        },
+        "xdm:cancelDate": {
+          "title": "Cancel Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date/time when an order cancellation is initiated by the shopper.",
+          "meta:titleId": "order##xdm:cancelDate##title##86156",
+          "meta:descriptionId": "order##xdm:cancelDate##description##47786"
         }
       }
     }

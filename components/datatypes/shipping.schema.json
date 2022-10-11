@@ -37,6 +37,16 @@
           "title": "Shipping Address",
           "description": "Shipping Address.",
           "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:trackingNumber": {
+          "title": "Tracking Number",
+          "type": "number",
+          "description": "The tracking number provided by the shipping carrier for a order item shipment."
+        },
+        "xdm:trackingURL": {
+          "title": "Tracking URL",
+          "type": "string",
+          "description": "The URL to track the shipping status of an order item."
         }
       }
     }

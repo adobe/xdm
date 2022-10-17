@@ -78,7 +78,7 @@
                 "properties": {
                   "xdm:enabled": {
                     "title": "Enabled",
-                    "description": "If set to true ECS will created new counter rules with updated time window",
+                    "description": "If set to true ECS will created new counter rules with updated time window.",
                     "type": "boolean",
                     "default": false
                   },

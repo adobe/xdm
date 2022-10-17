@@ -27,7 +27,7 @@
             "properties": {
               "xdm:limit": {
                 "title": "Limit",
-                "description": "How many times an option can be proposed",
+                "description": "How many times an option can be proposed.",
                 "type": "integer",
                 "minimum": 1
               },
@@ -53,7 +53,7 @@
               },
               "xdm:events": {
                 "title": "Events",
-                "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click",
+                "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click.",
                 "type": "array",
                 "items": {
                   "type": "string",
@@ -68,12 +68,12 @@
               },
               "xdm:customQuery": {
                 "title": "Custom PQL query",
-                "description": "Custom PQL query to match events",
+                "description": "Custom PQL query to match events.",
                 "type": "string"
               },
               "xdm:repeat": {
                 "title": "Repeat",
-                "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating",
+                "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating.",
                 "type": "object",
                 "properties": {
                   "xdm:enabled": {

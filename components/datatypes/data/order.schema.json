@@ -72,13 +72,13 @@
           "meta:titleId": "order##xdm:orderType##title##56861",
           "meta:descriptionId": "order##xdm:orderType##description##62731"
         },
-        "xdm:lastUpdatedAt": {
-          "title": "Last Updated At",
+        "xdm:lastUpdatedDate": {
+          "title": "Last Updated Date",
           "type": "string",
           "format": "date-time",
           "description": "The time when a particular order record is last updated in the commerce system.",
           "meta:titleId": "order##xdm:lastUpdatedAt##title##86152",
-          "meta:descriptionId": "order##xdm:lastUpdatedAt##description##47783"
+          "meta:descriptionId": "order##xdm:lastUpdatedDate##description##47783"
         },
         "xdm:createdDate": {
           "title": "Created Date",

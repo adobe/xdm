@@ -77,7 +77,7 @@
           "type": "string",
           "format": "date-time",
           "description": "The time when a particular order record is last updated in the commerce system.",
-          "meta:titleId": "order##xdm:lastUpdatedAt##title##86152",
+          "meta:titleId": "order##xdm:lastUpdatedDate##title##86152",
           "meta:descriptionId": "order##xdm:lastUpdatedDate##description##47783"
         },
         "xdm:createdDate": {

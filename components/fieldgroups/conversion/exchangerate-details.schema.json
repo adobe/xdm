@@ -1,0 +1,83 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/exchangerate-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Exchange Rate Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/conversion"],
+  "description": "Exchange rate details field group.",
+  "definitions": {
+    "exchangerate-details": {
+      "properties": {
+        "xdm:exchangeRate": {
+          "type": "object",
+          "properties": {
+            "xdm:ID": {
+              "title": "Exchange Rate ID",
+              "description": "The UniqueID for this record.  ID.SourceKey must be unique.",
+              "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+            },
+            "xdm:sourceIsoCode": {
+              "title": "Source ISO Code",
+              "type": "string",
+              "description": "Currency ISO code, the source currency."
+            },
+            "xdm:sourceISOCode": {
+              "title": "Source ISO Code",
+              "type": "string",
+              "description": "Currency ISO code, the source currency."
+            },
+            "xdm:targetISOCode": {
+              "title": "Target ISO Code",
+              "type": "string",
+              "description": "Currency ISO code, the target currency."
+            },
+            "xdm:startDate": {
+              "title": "Start Date",
+              "type": "string",
+              "format": "date",
+              "description": "Start date of the Conversion Rate."
+            },
+            "xdm:endDate": {
+              "title": "End Date",
+              "type": "string",
+              "format": "date",
+              "description": "End date of the Conversion Rate."
+            },
+            "xdm:conversionRate": {
+              "title": "Conversion Rate",
+              "type": "number",
+              "description": "Rate used to convert the currency to the corporate currency."
+            },
+            "xdm:createdDate": {
+              "title": "Created Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date the record was created in the source system."
+            },
+            "xdm:modifiedDate": {
+              "title": "Modified Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date the record was last modified in the source system."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/exchangerate-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-10-18"
+}

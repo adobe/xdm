@@ -16,11 +16,6 @@
   "definitions": {
     "conversion": {
       "properties": {
-        "xdm:conversionID": {
-          "title": "Conversion ID",
-          "description": "Conversion identifier",
-          "type": "string"
-        }
       }
     }
   },

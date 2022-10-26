@@ -15,8 +15,7 @@
   "description": "Class for tracking conversion data like currency conversion",
   "definitions": {
     "conversion": {
-      "properties": {
-      }
+      "properties": {}
     }
   },
   "allOf": [
@@ -25,6 +24,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
     }
   ],
   "meta:status": "experimental",

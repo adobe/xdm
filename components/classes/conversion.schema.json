@@ -26,7 +26,12 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
+      "meta:refProperty": [
+        "/extSourceSystemAudit/externalKey",
+        "/extSourceSystemAudit/createdDate",
+        "/extSourceSystemAudit/lastUpdatedDate"
+      ]
     }
   ],
   "meta:status": "experimental",

@@ -16,7 +16,7 @@
   "definitions": {
     "currency-conversion-details": {
       "properties": {
-        "xdm:sourceIsoCode": {
+        "xdm:sourceISOCode": {
           "title": "Source ISO Code",
           "type": "string",
           "description": "Currency ISO code, the source currency."
@@ -32,7 +32,7 @@
           "format": "date",
           "description": "Start date of the Conversion Rate."
         },
-        "xdm:effectiveendDate": {
+        "xdm:effectiveEndDate": {
           "title": "Effective End Date",
           "type": "string",
           "format": "date",

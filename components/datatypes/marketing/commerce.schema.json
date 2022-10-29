@@ -119,11 +119,6 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product has been purchased instantly, potentially skipping the cart or checkout.",
           "meta:descriptionId": "commerce##xdm:instantPurchase##description##9211"
-        },
-        "xdm:billing": {
-          "title": "Billing Address",
-          "$ref": "https://ns.adobe.com/xdm/common/address",
-          "description": "Billing postal address."
         }
       }
     }

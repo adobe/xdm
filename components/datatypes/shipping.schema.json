@@ -33,6 +33,14 @@
             "store": "Store"
           }
         },
+        "xdm:shipDate": {
+          "title": "Ship Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date when one or more items from an order is shipped. ",
+          "meta:titleId": "order##xdm:shipDate##title##86154",
+          "meta:descriptionId": "order##xdm:shipDate##description##47784"
+        },
         "xdm:address": {
           "title": "Shipping Address",
           "description": "Shipping Address.",

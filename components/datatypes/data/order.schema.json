@@ -88,22 +88,6 @@
           "meta:titleId": "order##xdm:createdDate##title##86153",
           "meta:descriptionId": "order##xdm:createdDate##description##47783"
         },
-        "xdm:shipDate": {
-          "title": "Ship Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date when one or more items from an order is shipped. ",
-          "meta:titleId": "order##xdm:shipDate##title##86154",
-          "meta:descriptionId": "order##xdm:shipDate##description##47784"
-        },
-        "xdm:returnDate": {
-          "title": "Return Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date/time when an order return is initiated by the shopper.",
-          "meta:titleId": "order##xdm:returnDate##title##86155",
-          "meta:descriptionId": "order##xdm:returnDate##description##47785"
-        },
         "xdm:cancelDate": {
           "title": "Cancel Date",
           "type": "string",

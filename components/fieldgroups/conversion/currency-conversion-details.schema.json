@@ -19,11 +19,13 @@
         "xdm:sourceISOCode": {
           "title": "Source ISO Code",
           "type": "string",
+          "pattern": "^[A-Z]{3}$",
           "description": "Currency ISO code, the source currency."
         },
         "xdm:targetISOCode": {
           "title": "Target ISO Code",
           "type": "string",
+          "pattern": "^[A-Z]{3}$",
           "description": "Currency ISO code, the target currency."
         },
         "xdm:effectiveStartDate": {

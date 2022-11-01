@@ -20,15 +20,20 @@
   "definitions": {
     "customFields": {
       "properties": {
-        "xdm:relativeTriggers": {
+        "xdm:weather": {
           "type": "object",
           "properties": {
-            "triggersRelative": {
-              "items": {
-                "type": "integer"
-              },
-              "type": "array",
-              "title": "Relative Triggers"
+            "xdm:relativeTriggers": {
+              "type": "object",
+              "properties": {
+                "triggersRelative": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array",
+                  "title": "Relative Triggers"
+                }
+              }
             }
           }
         }

@@ -20,15 +20,20 @@
   "definitions": {
     "customFields": {
       "properties": {
-        "xdm:severeTriggers": {
+        "xdm:weather": {
           "type": "object",
           "properties": {
-            "triggersSevere": {
-              "items": {
-                "type": "integer"
-              },
-              "type": "array",
-              "title": "Severe Triggers"
+            "xdm:severeTriggers": {
+              "type": "object",
+              "properties": {
+                "triggersSevere": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "type": "array",
+                  "title": "Severe Triggers"
+                }
+              }
             }
           }
         }

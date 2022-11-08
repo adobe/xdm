@@ -43,7 +43,7 @@
         "xdm:conversionRate": {
           "title": "Conversion Rate",
           "type": "number",
-          "description": "Rate used to convert the currency to the corporate currency."
+          "description": "Rate used to convert the source currency to the target currency."
         }
       }
     }

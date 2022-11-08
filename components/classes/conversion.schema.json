@@ -32,6 +32,9 @@
         "/extSourceSystemAudit/createdDate",
         "/extSourceSystemAudit/lastUpdatedDate"
       ]
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
     }
   ],
   "meta:status": "experimental",

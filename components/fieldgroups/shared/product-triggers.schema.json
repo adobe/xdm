@@ -23,7 +23,7 @@
         "xdm:weather": {
           "type": "object",
           "properties": {
-            "xdm:productTriggers": {
+            "productTriggers": {
               "items": {
                 "type": "integer"
               },

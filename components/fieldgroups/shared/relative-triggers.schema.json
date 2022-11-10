@@ -23,7 +23,7 @@
         "xdm:weather": {
           "type": "object",
           "properties": {
-            "xdm:relativeTriggers": {
+            "relativeTriggers": {
               "items": {
                 "type": "integer"
               },

@@ -24,16 +24,11 @@
           "type": "object",
           "properties": {
             "xdm:relativeTriggers": {
-              "type": "object",
-              "properties": {
-                "triggersRelative": {
-                  "items": {
-                    "type": "integer"
-                  },
-                  "type": "array",
-                  "title": "Relative Triggers"
-                }
-              }
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Relative Triggers"
             }
           }
         }

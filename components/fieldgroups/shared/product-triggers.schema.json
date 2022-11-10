@@ -24,16 +24,11 @@
           "type": "object",
           "properties": {
             "xdm:productTriggers": {
-              "type": "object",
-              "properties": {
-                "xdm:triggersProduct": {
-                  "items": {
-                    "type": "integer"
-                  },
-                  "type": "array",
-                  "title": "Product Triggers"
-                }
-              }
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Product Triggers"
             }
           }
         }

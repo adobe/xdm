@@ -20,10 +20,10 @@
   "definitions": {
     "customFields": {
       "properties": {
-        "xdm:weatherTriggers": {
+        "xdm:weather": {
           "type": "object",
           "properties": {
-            "triggersWeather": {
+            "weatherTriggers": {
               "items": {
                 "type": "integer"
               },

@@ -24,16 +24,11 @@
           "type": "object",
           "properties": {
             "xdm:severeTriggers": {
-              "type": "object",
-              "properties": {
-                "triggersSevere": {
-                  "items": {
-                    "type": "integer"
-                  },
-                  "type": "array",
-                  "title": "Severe Triggers"
-                }
-              }
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Severe Triggers"
             }
           }
         }

@@ -236,7 +236,7 @@
                 "xdm:videoSegment": {
                   "title": "Video segment",
                   "type": "string",
-                  "pattern": "^[0-9]+-[0-9]+$",
+                  "pattern": "^[[0-9]+-[0-9]+]$",
                   "description": "The interval that describes the part of the content that has been viewed in minutes.",
                   "meta:titleId": "media##xdm:videoSegment##title##29671",
                   "meta:descriptionId": "media##xdm:videoSegment##description##80611"

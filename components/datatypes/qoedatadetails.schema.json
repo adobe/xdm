@@ -45,13 +45,8 @@
           "type": "boolean",
           "description": "The number of streams in which frames were dropped. This metric is set to true only if at least one frame was dropped during a playback session."
         },
-        "xdm:droppedFrameCount": {
-          "title": "Dropped Frames Reporting",
-          "type": "integer",
-          "description": "The number of frames dropped during playback of the main content."
-        },
         "xdm:droppedFrames": {
-          "title": "Dropped Frames Collection",
+          "title": "Dropped Frames",
           "type": "integer",
           "description": "The number of frames dropped during playback of the main content."
         },

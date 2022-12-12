@@ -57,7 +57,7 @@
           "title": "Selection strategy ID",
           "type": "string",
           "format": "uri-reference",
-          "description": "A unique, immutable identifier for the selection strategy.",
+          "description": "A unique, immutable identifier for the selection strategy."
         },
         "xdm:fallback": {
           "title": "Fallback Option",

@@ -53,12 +53,6 @@
           "meta:titleId": "activity-detail##xdm:endTime##title##48821",
           "meta:descriptionId": "activity-detail##xdm:endTime##description##85111"
         },
-        "xdm:selectionStrategyID": {
-          "title": "Selection strategy ID",
-          "type": "string",
-          "format": "uri-reference",
-          "description": "A unique, immutable identifier for the selection strategy."
-        },
         "xdm:fallback": {
           "title": "Fallback Option",
           "type": "string",

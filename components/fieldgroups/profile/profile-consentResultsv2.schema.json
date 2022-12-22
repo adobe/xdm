@@ -16,7 +16,11 @@
       "title": "string",
       "description": "current status for a given consent policy",
       "type": "string",
-      "enum": ["realized", "exited"]
+      "enum": ["realized", "exited"],
+      "meta:enum": {
+        "realized": "Realized",
+        "exited": "Exited"
+      }
     },
     "profile-consentResultsV2": {
       "type": "object",

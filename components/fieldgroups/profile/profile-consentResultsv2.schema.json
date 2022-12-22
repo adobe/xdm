@@ -9,12 +9,17 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consent policies evaluation results map",
   "type": "object",
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/context/profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Consent policies evaluation result for individual",
   "definitions": {
+    "consent-status": {
+      "title": "string",
+      "description": "current status for a given consent policy",
+      "type": "string",
+      "enum": ["realized", "exited"]
+    },
     "profile-consentResultsV2": {
+      "type": "object",
       "properties": {
         "xdm:consentPoliciesIDMapV2": {
           "title": "consent policies map v2",
@@ -24,74 +29,49 @@
             "title": "consent policy id map",
             "description": "map of validated fields for a consent policy",
             "type": "object",
-            "xdm:status": {
-              "title": "string",
-              "description": "current status for a given consent policy",
-              "type": "string",
-              "enum": [
-                "realized",
-                "exited"
-              ],
-              "meta:titleId": "profile-consentResultsV2##xdm:status ##title##18592",
-              "meta:descriptionId": "profile-consentResultsV2##xdm:status ##description##18593"
-            },
-            "xdm:ts": {
-              "title": "timestamp",
-              "description": "date time when the profile entered or exited consent policy",
-              "type": "string",
-              "format": "date-time",
-              "meta:titleId": "profile-consentResultsV2##xdm:ts ##title##18592",
-              "meta:descriptionId": "profile-consentResultsV2##xdm:status ##description##18593"
-            },
-            "xdm:identityLevelConsents": {
-              "title": "identity level consents",
-              "description": "map containing status and timestamps for consent policies defined for each identity",
-              "type": "object",
-              "meta:xdmType": "map",
-              "meta:titleId": "profile-consentResultsV2##xdm:identityLevelConsents ##title##18594",
-              "additionalProperties": {
-                "title": "consented identities per namespace",
-                "description": "List of identities for each namespace in each consent policy",
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "xdm:status": {
-                      "title": "string",
-                      "description": "current status for a given consent policy",
-                      "type": "string",
-                      "enum": [
-                        "realized",
-                        "exited"
-                      ],
-                      "meta:titleId": "profile-consentResultsV2##xdm:status ##title##18592",
-                      "meta:descriptionId": "profile-consentResultsV2##xdm:status ##description##18593"
-                    },
-                    "xdm:ts": {
-                      "title": "timestamp",
-                      "description": "date time when the profile entered or exited consent policy",
-                      "type": "string",
-                      "format": "date-time",
-                      "meta:titleId": "profile-consentResultsV2##xdm:ts ##title##18592",
-                      "meta:descriptionId": "profile-consentResultsV2##xdm:status ##description##18593"
-                    },
-                    "xdm:identity": {
-                      "title": "identity",
-                      "description": "identity for which policy metadata is being defined",
-                      "type": "string",
-                      "meta:titleId": "profile-consentResultsV2##xdm:identity ##title##18592",
-                      "meta:descriptionId": "profile-consentResultsV2##xdm:identity ##description##18593"
+            "properties": {
+              "xdm:status": {
+                "$ref": "#/definitions/consent-status"
+              },
+              "xdm:timestamp": {
+                "title": "timestamp",
+                "description": "date time when the profile entered or exited consent policy",
+                "type": "string",
+                "format": "date-time"
+              },
+              "xdm:identityLevelConsents": {
+                "title": "identity level consents",
+                "description": "map containing status and timestamps for consent policies defined for each identity",
+                "type": "object",
+                "meta:xdmType": "map",
+                "meta:titleId": "profile-consentResultsV2##xdm:identityLevelConsents ##title##18594",
+                "additionalProperties": {
+                  "title": "consented identities per namespace",
+                  "description": "List of identities for each namespace in each consent policy",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "xdm:status": {
+                        "$ref": "#/definitions/consent-status"
+                      },
+                      "xdm:timestamp": {
+                        "title": "timestamp",
+                        "description": "date time when the profile entered or exited consent policy",
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "xdm:identity": {
+                        "title": "identity",
+                        "description": "identity for which policy metadata is being defined",
+                        "type": "string"
+                      }
                     }
                   }
-                },
-                "meta:titleId": "profile-consentResultsV2##additionalProperties##title##15641",
-                "meta:descriptionId": "profile-consentResultsV2##additionalProperties##description##11471"
+                }
               }
-            },
-            "meta:titleId": "profile-consentResultsV2##additionalProperties##title##89805",
-            "meta:descriptionId": "profile-consentResultsV2##additionalProperties##description##38476"
-          },
-          "meta:titleId": "profile-consentResultsV2##xdm:consentPoliciesIDMapV2##title##43182"
+            }
+          }
         }
       }
     }
@@ -101,7 +81,5 @@
       "$ref": "#/definitions/profile-consentResultsV2"
     }
   ],
-  "meta:status": "stable",
-  "meta:titleId": "profile-consentResultsV2##title##35152",
-  "meta:descriptionId": "profile-consentResultsV2##description##64882"
+  "meta:status": "stable"
 }

@@ -5,28 +5,18 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/profile-consentResultsV2",
+  "$id": "https://ns.adobe.com/xdm/mixins/profile-consentResults",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consent policies evaluation results map",
   "type": "object",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
   "description": "Consent policies evaluation result for individual",
   "definitions": {
-    "consent-status": {
-      "title": "string",
-      "description": "current status for a given consent policy",
-      "type": "string",
-      "enum": ["realized", "exited"],
-      "meta:enum": {
-        "realized": "Realized",
-        "exited": "Exited"
-      }
-    },
-    "profile-consentResultsV2": {
+    "profile-consentResults": {
       "type": "object",
       "properties": {
-        "xdm:consentPoliciesIDMapV2": {
-          "title": "consent policies map v2",
+        "xdm:consentPoliciesResultMap": {
+          "title": "consent policies map with additional metadata",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {
@@ -35,7 +25,14 @@
             "type": "object",
             "properties": {
               "xdm:status": {
-                "$ref": "#/definitions/consent-status"
+                "title": "string",
+                "description": "current status for a given consent policy",
+                "type": "string",
+                "enum": ["realized", "exited"],
+                "meta:enum": {
+                  "realized": "Realized",
+                  "exited": "Exited"
+                }
               },
               "xdm:timestamp": {
                 "title": "timestamp",
@@ -48,7 +45,6 @@
                 "description": "map containing status and timestamps for consent policies defined for each identity",
                 "type": "object",
                 "meta:xdmType": "map",
-                "meta:titleId": "profile-consentResultsV2##xdm:identityLevelConsents ##title##18594",
                 "additionalProperties": {
                   "title": "consented identities per namespace",
                   "description": "List of identities for each namespace in each consent policy",
@@ -57,7 +53,14 @@
                     "type": "object",
                     "properties": {
                       "xdm:status": {
-                        "$ref": "#/definitions/consent-status"
+                        "title": "string",
+                        "description": "current status for a given consent policy",
+                        "type": "string",
+                        "enum": ["realized", "exited"],
+                        "meta:enum": {
+                          "realized": "Realized",
+                          "exited": "Exited"
+                        }
                       },
                       "xdm:timestamp": {
                         "title": "timestamp",
@@ -82,7 +85,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/profile-consentResultsV2"
+      "$ref": "#/definitions/profile-consentResults"
     }
   ],
   "meta:status": "stable"

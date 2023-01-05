@@ -1,8 +1,6 @@
 {
-  "xdm:consentPoliciesIDMapV2": {
+  "xdm:consentPoliciesResultMap": {
     "consentPolicy1": {
-      "status": "realized",
-      "timestamp": "2021-01-25T22:44:43Z",
       "identityLevelConsents": {
         "phone": [
           {

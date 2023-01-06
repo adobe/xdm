@@ -11,7 +11,10 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent"
+  ],
   "description": "Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
     "decisioning-experienceevent-all": {

@@ -46,6 +46,13 @@
           "meta:titleId": "order##xdm:currencyCode##title##81771",
           "meta:descriptionId": "order##xdm:currencyCode##description##51121"
         },
+        "xdm:taxAmount": {
+          "title": "Tax Amount",
+          "type": "number",
+          "description": "The tax amount paid by the buyer as part of the final payment.",
+          "meta:titleId": "order##xdm:taxAmount##title##81954",
+          "meta:descriptionId": "order##xdm:taxAmount##description##51205"
+        },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",
@@ -64,6 +71,30 @@
           },
           "meta:titleId": "order##xdm:orderType##title##56861",
           "meta:descriptionId": "order##xdm:orderType##description##62731"
+        },
+        "xdm:lastUpdatedDate": {
+          "title": "Last Updated Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when a particular order record is last updated in the commerce system.",
+          "meta:titleId": "order##xdm:lastUpdatedDate##title##86152",
+          "meta:descriptionId": "order##xdm:lastUpdatedDate##description##47783"
+        },
+        "xdm:createdDate": {
+          "title": "Created Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time/date when a new order is created in the commerce system.",
+          "meta:titleId": "order##xdm:createdDate##title##86153",
+          "meta:descriptionId": "order##xdm:createdDate##description##47783"
+        },
+        "xdm:cancelDate": {
+          "title": "Cancel Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date/time when an order cancellation is initiated by the shopper.",
+          "meta:titleId": "order##xdm:cancelDate##title##86156",
+          "meta:descriptionId": "order##xdm:cancelDate##description##47786"
         }
       }
     }

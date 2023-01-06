@@ -35,6 +35,9 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyID": "0879238rf-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionName": "Email 100Kb Message",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyActionID": "04832ee5-51ff-4706-af8a-dsff6756308b",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeID": "e56d5d93-3b11-4efd-ab9f-5a9338c0a953",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeName": "My Journey Audience",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger"
   }
 }

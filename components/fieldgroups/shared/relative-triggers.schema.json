@@ -22,8 +22,21 @@
       "properties": {
         "xdm:relativeTriggers": {
           "type": "object",
+          "meta:status": "deprecated",
           "properties": {
             "triggersRelative": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Relative Triggers"
+            }
+          }
+        },
+        "xdm:weather": {
+          "type": "object",
+          "properties": {
+            "xdm:relativeTriggers": {
               "items": {
                 "type": "integer"
               },

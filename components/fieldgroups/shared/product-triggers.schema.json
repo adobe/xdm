@@ -22,8 +22,21 @@
       "properties": {
         "xdm:productTriggers": {
           "type": "object",
+          "meta:status": "deprecated",
           "properties": {
             "xdm:triggersProduct": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Product Triggers"
+            }
+          }
+        },
+        "xdm:weather": {
+          "type": "object",
+          "properties": {
+            "xdm:productTriggers": {
               "items": {
                 "type": "integer"
               },

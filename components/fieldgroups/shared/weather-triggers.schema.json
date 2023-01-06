@@ -20,10 +20,23 @@
   "definitions": {
     "customFields": {
       "properties": {
+        "xdm:weatherTriggers": {
+          "type": "object",
+          "meta:status": "deprecated",
+          "properties": {
+            "triggersWeather": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Weather Triggers"
+            }
+          }
+        },
         "xdm:weather": {
           "type": "object",
           "properties": {
-            "weatherTriggers": {
+            "xdm:weatherTriggers": {
               "items": {
                 "type": "integer"
               },

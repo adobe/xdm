@@ -20,10 +20,23 @@
   "definitions": {
     "customFields": {
       "properties": {
+        "xdm:relativeTriggers": {
+          "type": "object",
+          "meta:status": "deprecated",
+          "properties": {
+            "triggersRelative": {
+              "items": {
+                "type": "integer"
+              },
+              "type": "array",
+              "title": "Relative Triggers"
+            }
+          }
+        },
         "xdm:weather": {
           "type": "object",
           "properties": {
-            "relativeTriggers": {
+            "xdm:relativeTriggers": {
               "items": {
                 "type": "integer"
               },

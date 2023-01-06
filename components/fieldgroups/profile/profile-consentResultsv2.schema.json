@@ -7,10 +7,10 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/profile-consentResults-v2",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Consent policies evaluation results map",
+  "title": "Consent policies evaluation results map with metadata",
   "type": "object",
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
-  "description": "Consent policies evaluation result for individual",
+  "description": "Consent policies evaluation result for individual which contains more metadata information about a consent policy entrance/exits.",
   "definitions": {
     "profile-consentResults": {
       "properties": {

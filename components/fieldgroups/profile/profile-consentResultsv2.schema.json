@@ -13,7 +13,6 @@
   "description": "Consent policies evaluation result for individual",
   "definitions": {
     "profile-consentResults": {
-      "type": "object",
       "properties": {
         "xdm:consentPoliciesResultMap": {
           "title": "consent policies map with additional metadata",

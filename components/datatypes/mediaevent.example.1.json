@@ -12,7 +12,7 @@
       "xdm:channel": "channel"
     },
     "xdm:advertisingDetails": {
-      "xdm:ID": "123456789",
+      "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:podPosition": 1,
       "xdm:playerName": "playerName",
@@ -33,7 +33,7 @@
       "xdm:timePlayed": 70
     },
     "xdm:errorDetails": {
-      "xdm:ID": "errorID",
+      "xdm:name": "errorID",
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {

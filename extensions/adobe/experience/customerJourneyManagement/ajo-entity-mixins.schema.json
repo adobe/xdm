@@ -178,6 +178,21 @@
               "title": "Journey Name and Version",
               "type": "string",
               "description": "Represents the concatenated values of Journey Name and Version"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeID": {
+              "title": "Journey Node ID",
+              "type": "string",
+              "description": "Represents the id of the journey node on the canvas"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeName": {
+              "title": "Journey Node Name",
+              "type": "string",
+              "description": "Represents the name of the journey node on the canvas"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": {
+              "title": "Journey Node Type",
+              "type": "string",
+              "description": "Represents the journey node type as authored on the canvas"
             }
           }
         }

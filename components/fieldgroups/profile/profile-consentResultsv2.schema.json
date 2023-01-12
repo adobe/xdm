@@ -33,7 +33,7 @@
                   "exited": "Exited"
                 }
               },
-              "xdm:timestamp": {
+              "xdm:ts": {
                 "title": "timestamp",
                 "description": "date time when the profile entered or exited consent policy",
                 "type": "string",
@@ -61,7 +61,7 @@
                           "exited": "Exited"
                         }
                       },
-                      "xdm:timestamp": {
+                      "xdm:ts": {
                         "title": "timestamp",
                         "description": "date time when the profile entered or exited consent policy",
                         "type": "string",

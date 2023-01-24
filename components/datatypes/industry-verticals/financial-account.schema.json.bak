@@ -25,7 +25,6 @@
           "title": "Financial Account ID",
           "type": "string",
           "description": "Current account balance for a single user account.",
-		  "meta:status": "deprecated",
           "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
           "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
         },

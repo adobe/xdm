@@ -97,7 +97,6 @@
                 "type": "string"
               },
               "description": "Array of financial account IDs assigned to the user.",
-			  "meta:status": "deprecated",
               "meta:titleId": "profile-personal-finance-details##xdm:ID##title##23551",
               "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##31621"
             },

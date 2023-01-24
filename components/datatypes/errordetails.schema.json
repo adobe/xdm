@@ -15,7 +15,7 @@
   "definitions": {
     "errorDetails": {
       "properties": {
-        "xdm:ID": {
+        "xdm:name": {
           "title": "Error ID",
           "type": "string",
           "pattern": "^.{1,}$",
@@ -32,7 +32,7 @@
           }
         }
       },
-      "required": ["xdm:ID", "xdm:source"]
+      "required": ["xdm:name", "xdm:source"]
     }
   },
   "allOf": [

@@ -5,11 +5,11 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/analytics/context",
+  "$id": "https://ns.adobe.com/experience/analytics/context-data",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "context-data",
   "type": "object",
-  "description": "A free form map that where Analytics context data will be captured.",
+  "description": "A free form field where Analytics context data will be captured.",
   "definitions": {
     "context-data-datatype": {
       "title": "Analytics context data",
@@ -23,7 +23,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context-data"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
     {
       "$ref": "#/definitions/context-data-datatype"

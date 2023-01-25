@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/experience/analytics/context",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "context",
+  "title": "context-data",
   "type": "object",
   "description": "A free form map that where Analytics context data will be captured.",
   "definitions": {
-    "context-datatype": {
+    "context-data-datatype": {
       "title": "Analytics context data",
       "type": "object",
       "meta:xdmType": "map",
@@ -23,10 +23,10 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context-data"
     },
     {
-      "$ref": "#/definitions/context-datatype"
+      "$ref": "#/definitions/context-data-datatype"
     }
   ],
   "meta:status": "stable"

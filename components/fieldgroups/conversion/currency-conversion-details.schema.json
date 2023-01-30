@@ -28,17 +28,17 @@
           "pattern": "^[A-Z]{3}$",
           "description": "Currency ISO code, the target currency."
         },
-        "xdm:effectiveStartDate": {
-          "title": "Effective Start Date",
+        "xdm:startDate": {
+          "title": "Start Date",
           "type": "string",
           "format": "date",
-          "description": "Start date of the Conversion Rate."
+          "description": "Start date of the conversion rate. This date is inclusive."
         },
-        "xdm:effectiveEndDate": {
-          "title": "Effective End Date",
+        "xdm:endDate": {
+          "title": "End Date",
           "type": "string",
           "format": "date",
-          "description": "End date of the Conversion Rate."
+          "description": "End date of the conversion rate. This date is exclusive."
         },
         "xdm:conversionRate": {
           "title": "Conversion Rate",

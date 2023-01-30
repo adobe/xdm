@@ -98,6 +98,7 @@
               "title": "Policy ID",
               "type": "string",
               "description": "Policy Identifier.",
+			  "meta:status": "deprecated",
               "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##9171",
               "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##73051"
             },

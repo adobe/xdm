@@ -58,6 +58,11 @@
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##title##17241",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##description##9381"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/url": {
+          "title": "Tracker URL",
+          "type": "string",
+          "description": "The URL clicked by the user."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType": {
           "title": "URL Tracking Type",
           "type": "string",

@@ -15,9 +15,7 @@
   "meta:tags": {
     "industry": ["all"]
   },
-  "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record"
-  ],
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "An XDM Individual Prospect Profile. Use this class to bring in partner provided IDs.",
   "definitions": {
     "prospect": {

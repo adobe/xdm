@@ -19,7 +19,7 @@
     "https://ns.adobe.com/xdm/data/record",
     "https://ns.adobe.com/xdm/common/auditable"
   ],
-  "description": "An XDM Individual Prospect Profile. Use this class to bring in partner provided IDs. "
+  "description": "An XDM Individual Prospect Profile. Use this class to bring in partner provided IDs.",
   "definitions": {
     "prospect": {
       "properties": {

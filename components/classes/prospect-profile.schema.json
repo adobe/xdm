@@ -16,8 +16,7 @@
     "industry": ["all"]
   },
   "meta:extends": [
-    "https://ns.adobe.com/xdm/data/record",
-    "https://ns.adobe.com/xdm/common/auditable"
+    "https://ns.adobe.com/xdm/data/record"
   ],
   "description": "An XDM Individual Prospect Profile. Use this class to bring in partner provided IDs.",
   "definitions": {

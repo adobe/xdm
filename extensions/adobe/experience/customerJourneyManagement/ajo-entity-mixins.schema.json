@@ -195,6 +195,19 @@
               "description": "Represents the journey node type as authored on the canvas"
             }
           }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
+          "title": "AJO Entity tags",
+          "type": "object",
+          "description": "AJO Entity tags corresponding to a Journey or Campaign",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/tagValues": {
+              "title": "Tags",
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Array of Tags used in AJO entity"
+            }
+          }
         }
       }
     }

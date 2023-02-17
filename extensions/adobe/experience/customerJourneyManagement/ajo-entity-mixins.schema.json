@@ -201,7 +201,7 @@
           "type": "object",
           "description": "AJO Entity tags corresponding to a Journey or Campaign",
           "properties": {
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/tagValues": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": {
               "title": "Tags",
               "type": "array",
               "items": { "type": "string" },

@@ -21,7 +21,7 @@
         "xdm:name": {
           "title": "Requisition List Name",
           "type": "string",
-          "description": "Name of requisition list set by customer."
+          "description": "Name of the requisition list specified by the customer."
         },
         "xdm:description": {
           "title": "Requisition List Description",

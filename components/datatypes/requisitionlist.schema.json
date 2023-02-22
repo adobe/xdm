@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Requisition List",
   "type": "object",
-  "description": "Requisition List specific properties",
+  "description": "Requisition List properties",
   "definitions": {
     "requisitionList": {
       "properties": {

@@ -16,7 +16,7 @@
         "xdm:ID": {
           "title": "Requisition List ID",
           "type": "string",
-          "description": "Unique identifier for the requisition list."
+          "description": "Unique identifier of the requisition list."
         },
         "xdm:name": {
           "title": "Requisition List Name",

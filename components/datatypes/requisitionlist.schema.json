@@ -9,24 +9,24 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Requisition List",
   "type": "object",
-  "description": "Requisition List specific properties",
+  "description": "Requisition List properties",
   "definitions": {
     "requisitionList": {
       "properties": {
         "xdm:ID": {
           "title": "Requisition List ID",
           "type": "string",
-          "description": "Unique identifier for the requisition list."
+          "description": "Unique identifier of the requisition list."
         },
         "xdm:name": {
           "title": "Requisition List Name",
           "type": "string",
-          "description": "Name of requisition list set by customer."
+          "description": "Name of the requisition list specified by the customer."
         },
         "xdm:description": {
           "title": "Requisition List Description",
           "type": "string",
-          "description": "Description of requisition list set by customer."
+          "description": "Description of the requisition list specified by the customer."
         }
       }
     }

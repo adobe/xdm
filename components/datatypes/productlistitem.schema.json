@@ -94,6 +94,14 @@
           "description": "The difference between the regular price and the special price for the product.",
           "meta:titleId": "productlistitem##xdm:discountAmount##title##25051",
           "meta:descriptionId": "productlistitem##xdm:discountAmount##description##67611"
+        },
+        "xdm:categoryData": {
+          "title": "Category data",
+          "type": "array",
+          "description": "List of category data this product falls under",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
+          }
         }
       },
       "required": ["xdm:SKU"]

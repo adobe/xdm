@@ -7,13 +7,13 @@
   ],
   "$id": "https://ns.adobe.com/experience/analytics/context-data",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "context-data",
+  "title": "Context Data",
   "type": "object",
   "description": "A free form field where Analytics context data will be captured.",
   "definitions": {
     "context-data-datatype": {
       "properties": {
-        "xdm:context-data-datatype": {
+        "xdm:contextData": {
           "title": "Analytics context data",
           "type": "object",
           "meta:xdmType": "map",

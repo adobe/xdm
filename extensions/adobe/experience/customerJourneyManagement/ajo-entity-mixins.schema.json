@@ -208,6 +208,33 @@
               "description": "Array of Tags used in AJO entity"
             }
           }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/audience": {
+          "title": "Target Audience",
+          "type": "object",
+          "description": "Target Audience for corresponding AJO Entity",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/audienceId": {
+              "title": "Audience/Segment Id",
+              "type": "string",
+              "description": "Audience or Segment ID based on origin"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/audienceName": {
+              "title": "Audience/Segment Name",
+              "type": "string",
+              "description": "Audience or Segment Name"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/audienceNamespace": {
+              "title": "Audience/Segment Namespace",
+              "type": "string",
+              "description": "Audience or Segment Namespace"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/audienceOrigin": {
+              "title": "Audience/Segment Origin",
+              "type": "string",
+              "description": "Audience or Segment Origin"
+            }
+          }
         }
       }
     }

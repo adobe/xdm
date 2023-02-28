@@ -1,0 +1,146 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/decisioning/offers/offeritem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Offer Item",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:status": "experimental",
+  "description": "Class which represents an Offer",
+  "definitions": {
+    "offeritem": {
+      "properties": {
+        "xdm:lifecycleStatus": {
+          "title": "life cycle status",
+          "type": "string",
+          "description": "Status associated with offer life cycle.",
+          "meta:enum": {
+            "draft": "Draft",
+            "approved": "Approved",
+            "archived": "Archived"
+          },
+          "meta:titleId": "offeritem##xdm:lifecycleStatus##title",
+          "meta:descriptionId": "offeritem##xdm:lifecycleStatus##description"
+        },
+        "xdm:frequencyCappingConstraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Frequency capping constraint",
+            "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
+            "properties": {
+              "xdm:limit": {
+                "title": "Limit",
+                "description": "How many times an option can be proposed.",
+                "type": "integer",
+                "minimum": 1
+              },
+              "xdm:scope": {
+                "title": "scope",
+                "description": "Scope of the capping",
+                "type": "string",
+                "enum": ["global", "profile"],
+                "meta:enum": {
+                  "global": "Global cap is a constraint on how many times an option can be proposed in totality.",
+                  "profile": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
+                }
+              },
+              "xdm:startDate": {
+                "type": "string",
+                "format": "date-time",
+                "title": "Start Date and Time",
+                "description": "Capping start date and time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
+                "meta:status": "deprecated"
+              },
+              "xdm:endDate": {
+                "type": "string",
+                "format": "date-time",
+                "title": "End Date and Time",
+                "description": "Capping end date and time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
+                "meta:status": "deprecated"
+              },
+              "xdm:duration": {
+                "title": "Duration",
+                "description": "Duration in hours. When xdm:repeat is true, daily scan job of the rules will update all expired rules to start from current time and end with the specific xdm:duration",
+                "type": "integer",
+                "minimum": 1,
+                "meta:status": "deprecated"
+              },
+              "xdm:events": {
+                "title": "Events",
+                "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["decisioning", "custom", "click", "impression"],
+                  "meta:enum": {
+                    "decisioning": "Decisioning",
+                    "custom": "Custom",
+                    "click": "Offer Click",
+                    "impression": "Offer Impression"
+                  }
+                },
+                "minItems": 1,
+                "default": ["decisioning"]
+              },
+              "xdm:customQuery": {
+                "title": "Custom PQL query",
+                "description": "Custom PQL query to match events.",
+                "type": "string"
+              },
+              "xdm:repeat": {
+                "title": "Repeat",
+                "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating.",
+                "type": "object",
+                "properties": {
+                  "xdm:enabled": {
+                    "title": "Enabled",
+                    "description": "If set to true ECS will created new counter rules with updated time window.",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "xdm:unit": {
+                    "title": "Unit",
+                    "description": "Unit to comply with.  It will be day/week/month.",
+                    "type": "string",
+                    "enum": ["day", "week", "month"],
+                    "meta:enum": {
+                      "day": "To comply with Day.",
+                      "week": "To comply with Week.",
+                      "month": "To comply with Month."
+                    },
+                    "default": "day"
+                  },
+                  "xdm:unitCount": {
+                    "title": "Unit Count",
+                    "description": "Unit count number.",
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1
+                  }
+                }
+              }
+            },
+            "required": ["xdm:limit", "xdm:scope"]
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/offeritem"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "required": ["xdm:lifecycleStatus"]
+}

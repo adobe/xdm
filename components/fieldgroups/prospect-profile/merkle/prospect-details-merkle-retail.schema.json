@@ -5,20 +5,20 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkel-retail",
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkle-retail",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "merkel Prospect Details(Retail)",
+  "title": "merkle Prospect Details(Retail)",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/classes/prospect-profile"
   ],
-  "description": "Prospect Profile extensions by merkel. This is for the retail industry",
+  "description": "Prospect Profile extensions by merkle. This is for the retail industry",
   "definitions": {
-    "merkel-retail": {
+    "merkle-retail": {
       "properties": {
-        "xdm:merkel": {
+        "xdm:merkle": {
           "type": "object",
           "properties": {
             "xdm:artsAndCrafts": {
@@ -549,7 +549,7 @@
               "xdm:bargainShoppers": {
                 "type": "number",
                 "title": "MT - Bargain Shoppers",
-                "description": "merkel's Bargain Shoppers model ranks consumers based upon their likelihood to shop on sale or use coupons.  "
+                "description": "merkle's Bargain Shoppers model ranks consumers based upon their likelihood to shop on sale or use coupons.  "
               },
               "xdm:brandLoyalists": {
                 "type": "number",
@@ -574,12 +574,12 @@
               "xdm:groceryStoreAppUsers": {
                 "type": "number",
                 "title": "MT - Grocery Store App Users",
-                "description": "merkel's Grocery Store App Users model ranks consumers based upon their likelihood to use grocery apps when they shop. Model employs TSP data."
+                "description": "merkle's Grocery Store App Users model ranks consumers based upon their likelihood to use grocery apps when they shop. Model employs TSP data."
               },
               "xdm:groceryStoreFrequenters": {
                 "type": "number",
                 "title": "MT - Grocery Store Frequenters",
-                "description": "merkel's Grocery Store Frequenters model ranks consumers based upon their likelihood to shop frequently at grocery stores. Model employs TSP data."
+                "description": "merkle's Grocery Store Frequenters model ranks consumers based upon their likelihood to shop frequently at grocery stores. Model employs TSP data."
               },
               "xdm:heavyCouponUsers": {
                 "type": "number",
@@ -589,7 +589,7 @@
               "xdm:high-EndShoppers": {
                 "type": "number",
                 "title": "MT - High-end Shoppers",
-                "description": "merkel's High-end Shopper model  ranks consumers based upon their likelihood to shop in high-end stores (specialty or department) such as Coach or Nordstorms.  "
+                "description": "merkle's High-end Shopper model  ranks consumers based upon their likelihood to shop in high-end stores (specialty or department) such as Coach or Nordstorms.  "
               },
               "xdm:impulsePurchasers": {
                 "type": "number",
@@ -614,7 +614,7 @@
               "xdm:mensBigAndTallApparelCustomers": {
                 "type": "number",
                 "title": "MT - Mens Big and Tall Apparel Customers",
-                "description": "merkel's Men's Big and Tall model ranks consumers based upon their likelihood be Men's Big and Tall households "
+                "description": "merkle's Men's Big and Tall model ranks consumers based upon their likelihood be Men's Big and Tall households "
               },
               "xdm:mobileShoppingListUsers": {
                 "type": "number",
@@ -649,17 +649,17 @@
               "xdm:pandemicDecreasedSpenders": {
                 "type": "number",
                 "title": "MT - Pandemic - Decreased Spenders",
-                "description": "merkel's Pandemic - Decreased Spenders model which ranks consumers based upon their likelihood to have decreased spending during the pandemic.  Model employs TSP data."
+                "description": "merkle's Pandemic - Decreased Spenders model which ranks consumers based upon their likelihood to have decreased spending during the pandemic.  Model employs TSP data."
               },
               "xdm:pandemicLuxurySpenders": {
                 "type": "number",
                 "title": "MT - Pandemic - Luxury Spenders",
-                "description": "merkel's Pandemic - Luxury Spenders model which ranks consumers based upon their likelihood to be luxury spenders during the pandemic.  Model employs TSP data."
+                "description": "merkle's Pandemic - Luxury Spenders model which ranks consumers based upon their likelihood to be luxury spenders during the pandemic.  Model employs TSP data."
               },
               "xdm:pandemicRiskTolerantConsumers": {
                 "type": "number",
                 "title": "MT - Pandemic - Risk Tolerant Consumers",
-                "description": "merkel's Pandemic - Risk Tolerant Consumers model which ranks consumers based upon their likelihood to be risk tolerant during the pandemic.  Model employs TSP data."
+                "description": "merkle's Pandemic - Risk Tolerant Consumers model which ranks consumers based upon their likelihood to be risk tolerant during the pandemic.  Model employs TSP data."
               },
               "xdm:paperShoppingListUsers": {
                 "type": "number",
@@ -669,7 +669,7 @@
               "xdm:petOwners": {
                 "type": "number",
                 "title": "MT - Pet Owners",
-                "description": "merkel's Pet Owner model which ranks consumers based upon their likelihood to  own a pet.  Model employs TSP data"
+                "description": "merkle's Pet Owner model which ranks consumers based upon their likelihood to  own a pet.  Model employs TSP data"
               },
               "xdm:petsAreFamily": {
                 "type": "number",
@@ -679,7 +679,7 @@
               "xdm:planToGetFitnessMembership": {
                 "type": "number",
                 "title": "MT - Plan to get Fitness Membership",
-                "description": "merkel's Fitness Membership model  ranks consumers based upon their likelihood to plan to get a membership in the  next 12 months.  "
+                "description": "merkle's Fitness Membership model  ranks consumers based upon their likelihood to plan to get a membership in the  next 12 months.  "
               },
               "xdm:pre-ShopPlanners": {
                 "type": "number",
@@ -704,7 +704,7 @@
               "xdm:retailTexters": {
                 "type": "number",
                 "title": "MT - Retail Texters",
-                "description": "merkel's Retail Texter model  ranks consumers based upon their likelihood to open text messages from retailers.  "
+                "description": "merkle's Retail Texter model  ranks consumers based upon their likelihood to open text messages from retailers.  "
               },
               "xdm:retailerCircularReaders": {
                 "type": "number",
@@ -729,27 +729,27 @@
               "xdm:subscrOrAutoShipClothAndAcc": {
                 "type": "number",
                 "title": "MT - Subscr or Auto Ship - Cloth & Acc",
-                "description": "merkel's Subscription or Auto Shipment-Clothing and Accessories model ranks consumers based upon their likelihood to be subscribers."
+                "description": "merkle's Subscription or Auto Shipment-Clothing and Accessories model ranks consumers based upon their likelihood to be subscribers."
               },
               "xdm:subscrOrAutoShipFoodOrBev": {
                 "type": "number",
                 "title": "MT - Subscr or Auto Ship - Food or Bev",
-                "description": "merkel's Subscription or Auto Shipment-Food or Beverage model ranks consumers based upon their likelihood to be subscribers."
+                "description": "merkle's Subscription or Auto Shipment-Food or Beverage model ranks consumers based upon their likelihood to be subscribers."
               },
               "xdm:subscrOrAutoShipHholdProduct": {
                 "type": "number",
                 "title": "MT - Subscr or Auto Ship - Hhold Product",
-                "description": "merkel's Subscription or Auto Shipment-Household Product model ranks consumers based upon their likelihood to be subscribers."
+                "description": "merkle's Subscription or Auto Shipment-Household Product model ranks consumers based upon their likelihood to be subscribers."
               },
               "xdm:subscrOrAutoShipPersonalCare": {
                 "type": "number",
                 "title": "MT - Subscr or Auto Ship - Personal Care",
-                "description": "merkel's Subscription or Auto Shipment-Personal Care model ranks consumers based upon their likelihood to be subscribers."
+                "description": "merkle's Subscription or Auto Shipment-Personal Care model ranks consumers based upon their likelihood to be subscribers."
               },
               "xdm:subscrOrAutoShipPetProducts": {
                 "type": "number",
                 "title": "MT - Subscr or Auto Ship - Pet Products",
-                "description": "merkel's Subscription or Auto Shipment-Pet Products model ranks consumers based upon their likelihood to be subscribers."
+                "description": "merkle's Subscription or Auto Shipment-Pet Products model ranks consumers based upon their likelihood to be subscribers."
               },
               "xdm:targetCartwheelUsers": {
                 "type": "number",
@@ -779,12 +779,12 @@
               "xdm:webAndInstoreViewerOnlineBuyer": {
                 "type": "number",
                 "title": "MT - Web and Instore Viewer/Online Buyer",
-                "description": "merkel's Web and Brick & Mortar Viewer/Online Purchaser model  ranks consumers based upon their likelihood to first surf the web and look at products in stores and then make purchases in online.  "
+                "description": "merkle's Web and Brick & Mortar Viewer/Online Purchaser model  ranks consumers based upon their likelihood to first surf the web and look at products in stores and then make purchases in online.  "
               },
               "xdm:webSurferInstoreBuyer": {
                 "type": "number",
                 "title": "MT - Web Surfer/Instore Buyer",
-                "description": "merkel's Web Surfer/Brick & Mortar Purchaser model  ranks consumers based upon their likelihood to first surf the web then make purchases in stores.  "
+                "description": "merkle's Web Surfer/Brick & Mortar Purchaser model  ranks consumers based upon their likelihood to first surf the web then make purchases in stores.  "
               },
               "xdm:what'SOnSaleShoppers": {
                 "type": "number",
@@ -794,7 +794,7 @@
               "xdm:womensPlusSizeApparelCustomers": {
                 "type": "number",
                 "title": "MT - Womens Plus Size Apparel Customers",
-                "description": "merkel's Women's Plus Size model ranks consumers based upon their likelihood be women's plus size households "
+                "description": "merkle's Women's Plus Size model ranks consumers based upon their likelihood be women's plus size households "
               }
             },
             "xdm:paymentMethod": {
@@ -972,7 +972,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/merkel-retail"
+      "$ref": "#/definitions/merkle-retail"
     }
   ],
   "meta:status": "experimental"

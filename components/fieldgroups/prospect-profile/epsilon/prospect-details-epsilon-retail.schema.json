@@ -1,0 +1,980 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-epsilon-retail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Epsilon Prospect Details(Retail)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/classes/prospect-profile"
+  ],
+  "description": "Prospect Profile extensions by Epsilon. This is for the retail industry",
+  "definitions": {
+    "epsilon-retail": {
+      "properties": {
+        "xdm:epsilon": {
+          "type": "object",
+          "properties": {
+            "xdm:artsAndCrafts": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Arts & Crafts Quintile",
+                "description": "Average dollars that were spent on the arts and crafts category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Arts & Crafts Recency of Purchase",
+                "description": "Recency of purchase in the Arts & Crafts category"
+              }
+            },
+            "xdm:b2B": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:businessMarketingQuintile": {
+                "type": "number",
+                "title": "B2B Business Marketing Quintile",
+                "description": "Average dollars that were spent on the B2B Business Marketing category bucketed into 5 quintile groupings"
+              },
+              "xdm:corporateGiftsPurchaseRecency": {
+                "type": "number",
+                "title": "B2B Corporate Gifts Purchase Recency",
+                "description": "Recency of purchase in the B2B Office and Corporate Gifts category"
+              },
+              "xdm:marketingRecencyOfPurchase": {
+                "type": "number",
+                "title": "B2B Marketing Recency of Purchase",
+                "description": "Recency of purchase in the B2B Business Marketing category"
+              },
+              "xdm:mroQuintile": {
+                "type": "number",
+                "title": "B2B MRO Quintile",
+                "description": "Average dollars that were spent on the B2B MRO category bucketed into 5 quintile groupings"
+              },
+              "xdm:mroRecencyOfPurchase": {
+                "type": "number",
+                "title": "B2B MRO Recency of Purchase",
+                "description": "Recency of purchase in the B2B MRO category"
+              },
+              "xdm:officeAndCorporateGiftsQuintile": {
+                "type": "number",
+                "title": "B2B Office and Corporate Gifts Quintile",
+                "description": "Average dollars that were spent on the B2B Office and Corporate Gifts category bucketed into 5 quintile groupings"
+              },
+              "xdm:publicationsRecencyOfPurchase": {
+                "type": "number",
+                "title": "B2B Publications Recency of Purchase",
+                "description": "Recency of purchase in the B2B Office and Corporate Gifts category"
+              },
+              "xdm:trainingAndPublicationsQuintile": {
+                "type": "number",
+                "title": "B2B Training and Publications Quintile",
+                "description": "Average dollars that were spent on the B2B Training and Publications category bucketed into 5 quintile groupings"
+              }
+            },
+            "xdm:beautyAndSpa": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Beauty and Spa Quintile",
+                "description": "Average dollars that were spent on the Beauty and Spa category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Beauty and Spa Recency of Purchase",
+                "description": "Recency of purchase in the Beauty and Spa category"
+              }
+            },
+            "xdm:beverages": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Beverages Quintile",
+                "description": "Average dollars that were spent on the Beverages category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Beverages Recency of Purchase",
+                "description": "Recency of purchase in the Beverages category"
+              }
+            },
+            "xdm:books": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Books Quintile",
+                "description": "Average dollars that were spent on the Books category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Books Recency of Purchase",
+                "description": "Recency of purchase in the Books category"
+              }
+            },
+            "xdm:channelPreferenceRatio": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:catalog": {
+                "type": "number",
+                "title": "Channel Preference Ratio - Catalog",
+                "description": "Provides a measure of the preferred purchase channel of the household. Ratio of the transactions within a specific channel compared to overall transactions bucketed into 5 quintile groupings."
+              },
+              "xdm:online": {
+                "type": "number",
+                "title": "Channel Preference Ratio - Online",
+                "description": "Provides a measure of the preferred purchase channel of the household. Ratio of the transactions within a specific channel compared to overall transactions bucketed into 5 quintile groupings."
+              },
+              "xdm:retail": {
+                "type": "number",
+                "title": "Channel Preference Ratio - Retail",
+                "description": "Provides a measure of the preferred purchase channel of the household. Ratio of the transactions within a specific channel compared to overall transactions bucketed into 5 quintile groupings."
+              }
+            },
+            "xdm:children": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Children's Quintile",
+                "description": "Average dollars that were spent on the Childrens category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Children's Recency of Purchase",
+                "description": "Recency of purchase in the Childrens category"
+              }
+            },
+            "xdm:none": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:numberOfDollarsOnReturns": {
+                "type": "number",
+                "title": "Number of Dollars on Returns",
+                "description": "Total dollars associated with product returns across all persons in the household within the last 24 months"
+              },
+              "xdm:numberOfOne-ShotOrders": {
+                "type": "number",
+                "title": "Number of One-Shot Orders",
+                "description": "Number of one-shot product orders across all persons in the household within the last 24 months"
+              },
+              "xdm:numberOfReturns": {
+                "type": "number",
+                "title": "Number of Returns",
+                "description": "Number of returns made across all persons in the household within the last 24 months"
+              },
+              "xdm:numberOfReturnsInTheLastYear": {
+                "type": "number",
+                "title": "Number of Returns in the Last Year",
+                "description": "Number of returns made in the last year across all persons in the household within the last 24 months"
+              }
+            },
+            "xdm:collectibles": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Collectibles Quintile",
+                "description": "Average dollars that were spent on the Collectibles category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Collectibles Recency of Purchase",
+                "description": "Recency of purchase in the Childrens category"
+              }
+            },
+            "xdm:environmentAndAnimal": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:donationRecency": {
+                "type": "number",
+                "title": "Environment and Animal Donation Recency",
+                "description": "Recency of donation in the Environmental and Animal category"
+              },
+              "xdm:environmentalAndAnimalDonorQuintile": {
+                "type": "number",
+                "title": "Environmental and Animal Donor Quintile",
+                "description": "Average dollar donations that were spent on the Environmental and Animal category bucketed into 5 quintile groupings"
+              }
+            },
+            "xdm:fashion": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:accessoriesAndBeautyQuintile": {
+                "type": "number",
+                "title": "Fashion Accessories and Beauty Quintile",
+                "description": "Average dollars that were spent on the Fashion Accessories and Beauty category bucketed into 5 quintile groupings"
+              },
+              "xdm:andBeautyRecencyOfPurchase": {
+                "type": "number",
+                "title": "Fashion and Beauty Recency of Purchase",
+                "description": "Recency of purchase in the Fashion Accessories and Beauty category"
+              }
+            },
+            "xdm:femaleAndMaleApparel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:purchaseRecency": {
+                "type": "number",
+                "title": "Female and Male Apparel Purchase Recency",
+                "description": "Recency of purchase in the Female and Male Apparel category"
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Female and Male Apparel Quintile",
+                "description": "Average dollars that were spent on the Fashion Accessories and Beauty category bucketed into 5 quintile groupings"
+              }
+            },
+            "xdm:gardenAndBackyard": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Garden and Backyard Quintile",
+                "description": "Average dollars that were spent on the Garden and Backyard category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Garden and Backyard Recency of Purchase",
+                "description": "Recency of purchase in the Garden and Backyard category"
+              }
+            },
+            "xdm:generalGifts": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "General Gifts Quintile",
+                "description": "Average dollars that were spent on the General Gifts category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "General Gifts Recency of Purchase",
+                "description": "Recency of purchase in the General Gifts category"
+              }
+            },
+            "xdm:healthVitaminsAndSupplements": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Health/Vitamins & Supplements Quintile",
+                "description": "Average dollars that were spent on the Health/Wellness/Vitamins & Supplements category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Health/Vitamins & Supplements Recency",
+                "description": "Recency of purchase in the Health/Wellness/Vitamins & Supplements category"
+              }
+            },
+            "xdm:highTicketFemaleApparel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "High Ticket Female Apparel Recency",
+                "description": "Recency of purchase in the High Ticket Female Apparel/Accessories category"
+              },
+              "xdm:accQuintile": {
+                "type": "number",
+                "title": "High Ticket Female Apparel/Acc. Quintile",
+                "description": "Average dollars that were spent on the High Ticket Female Apparel/Accessories category bucketed into 5 quintile groupings 12 month average spend is $150+."
+              }
+            },
+            "xdm:highTicketHomeDecor": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "High Ticket Home Decor Quintile",
+                "description": "Average dollars that were spent on the High Ticket Home Décor category bucketed into 5 quintile groupings. 12 month average spend is $175+"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "High Ticket Home Decor Recency",
+                "description": "Recency of purchase in the High Ticket Home Décor category"
+              }
+            },
+            "xdm:householdPurchaseChannel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:internet": {
+                "type": "string",
+                "title": "Household Purchase Channel - Internet",
+                "description": "Indicates that at least one individual within the household has made a purchase via the Internet within the last 24 months"
+              },
+              "xdm:mailOrder": {
+                "type": "string",
+                "title": "Household Purchase Channel - Mail Order",
+                "description": "Indicates that at least one individual within the household has made a purchase via the mail order within the last 24 months"
+              },
+              "xdm:sweepstakes": {
+                "type": "string",
+                "title": "Household Purchase Channel - Sweepstakes",
+                "description": "Indicates that at least one individual within the household has made a purchase via sweepstakes within the last 24 months"
+              },
+              "xdm:telemarket": {
+                "type": "string",
+                "title": "Household Purchase Channel - Telemarket",
+                "description": "Indicates that at least one individual within the household has made a purchase via telemarketing within the last 24 months"
+              }
+            },
+            "xdm:intimateApparelAndUnderwear": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Intimate Apparel & Underwear Quintile",
+                "description": "Average dollars that were spent on the Intimate Apparel and Undergarments category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Intimate Apparel & Underwear Recency",
+                "description": "Recency of purchase in the Intimate Apparel and Undergarments category"
+              }
+            },
+            "xdm:lowTicketFemaleApparelAcc": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Low Ticket Female Apparel/Acc. Quintile",
+                "description": "Average dollars that were spent on the Low Ticket Female Apparel/Accessories category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Low Ticket Female Apparel/Acc. Recency",
+                "description": "Recency of purchase in the Low Ticket Female Apparel/Accessories category"
+              }
+            },
+            "xdm:lowToMidTicketHomeDecor": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Low to Mid Ticket Home Decor Quintile",
+                "description": "Average dollars that were spent on the Low to Mid Ticket Home Décor category bucketed into 5 quintile groupings. 12 month average spend less than is $175."
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Low to Mid Ticket Home Decor Recency",
+                "description": "Recency of purchase in the Low to Mid Ticket Home Décor category"
+              }
+            },
+            "xdm:lowTicketMaleApparel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Low-Ticket Male Apparel Quintile",
+                "description": "Average dollars that were spent on the Low-Ticket Male Apparel category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Low-Ticket Male Apparel Recency",
+                "description": "Recency of purchase in the Low-Ticket Male Apparel category"
+              }
+            },
+            "xdm:mailOrder": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:buyer": {
+                "type": "string",
+                "title": "Mail Order Buyer",
+                "description": "Household buys through mail order"
+              },
+              "xdm:responderInsurance": {
+                "type": "string",
+                "title": "Mail Order Responder - Insurance",
+                "description": "Household buys insurance through mail order"
+              }
+            },
+            "xdm:maleApparel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Male Apparel Quintile",
+                "description": "Average dollars that were spent on the Fashion Accessories and Beauty category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Male Apparel Recency of Purchase",
+                "description": "Recency of purchase in the Male Apparel category"
+              }
+            },
+            "xdm:midAndHighTicketMaleApparel": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Mid & High Ticket Male Apparel Quintile",
+                "description": "Average dollars that were spent on the Mid and High Ticket Male Apparel category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Mid & High Ticket Male Apparel Recency",
+                "description": "Recency of purchase in the Mid and High Ticket Male Apparel category"
+              }
+            },
+            "xdm:midTicketFemaleApparelAcc": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Mid Ticket Female Apparel/Acc. Quintile",
+                "description": "Average dollars that were spent on the Mid Ticket Female Apparel/Accessories category bucketed into 5 quintile groupings. 12 month average spend is $79-$149."
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Mid Ticket Female Apparel/Acc.Recency",
+                "description": "Recency of purchase in the Mid Ticket Female Apparel/Accessories category"
+              }
+            },
+            "xdm:modernContemporaryDecorAndgifts": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Modern/Contemporary Decor&Gifts Quintile",
+                "description": "Average dollars that were spent on the Modern/Contemporary Décor and Gifts category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Modern/Contemporary Decor&Gifts Recency",
+                "description": "Recency of purchase in the Modern/Contemporary Décor and Gifts category"
+              }
+            },
+            "xdm:mt": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:amazonPrimeCustomers": {
+                "type": "number",
+                "title": "MT - Amazon Prime Customers",
+                "description": "Amazon Prime members who have shopped on Amazon 4+ times in the last 12 months"
+              },
+              "xdm:bargainShoppers": {
+                "type": "number",
+                "title": "MT - Bargain Shoppers",
+                "description": "Epsilon's Bargain Shoppers model ranks consumers based upon their likelihood to shop on sale or use coupons.  "
+              },
+              "xdm:brandLoyalists": {
+                "type": "number",
+                "title": "MT - Brand Loyalists",
+                "description": "Develop shopping list that includes specific brand preferences (Chobani vs. yogurt) and focus on brands vs. price"
+              },
+              "xdm:convenienceCook": {
+                "type": "number",
+                "title": "MT - Convenience Cook",
+                "description": "Cooks focused on deliver easier to prepare and faster meals"
+              },
+              "xdm:everydayLowPriceShoppers": {
+                "type": "number",
+                "title": "MT - Everyday Low Price Shoppers",
+                "description": "Greater likelihood to shop at or favor everyday low price format (example: Walmart)"
+              },
+              "xdm:experimentalCooks": {
+                "type": "number",
+                "title": "MT - Experimental Cooks",
+                "description": "Cooks that like to explore new recipes and meal ideas"
+              },
+              "xdm:groceryStoreAppUsers": {
+                "type": "number",
+                "title": "MT - Grocery Store App Users",
+                "description": "Epsilon's Grocery Store App Users model ranks consumers based upon their likelihood to use grocery apps when they shop. Model employs TSP data."
+              },
+              "xdm:groceryStoreFrequenters": {
+                "type": "number",
+                "title": "MT - Grocery Store Frequenters",
+                "description": "Epsilon's Grocery Store Frequenters model ranks consumers based upon their likelihood to shop frequently at grocery stores. Model employs TSP data."
+              },
+              "xdm:heavyCouponUsers": {
+                "type": "number",
+                "title": "MT - Heavy Coupon Users",
+                "description": "Increased likelihood to be active coupon clippers and redeemers"
+              },
+              "xdm:high-EndShoppers": {
+                "type": "number",
+                "title": "MT - High-end Shoppers",
+                "description": "Epsilon's High-end Shopper model  ranks consumers based upon their likelihood to shop in high-end stores (specialty or department) such as Coach or Nordstorms.  "
+              },
+              "xdm:impulsePurchasers": {
+                "type": "number",
+                "title": "MT - Impulse Purchasers",
+                "description": "Increased likelihood shoppers will purchase off list items during in-store shopping"
+              },
+              "xdm:incentiveSeekers": {
+                "type": "number",
+                "title": "MT - Incentive Seekers",
+                "description": "Shoppers actively seeking price incentives (e.g. coupons) or researching what is on sale"
+              },
+              "xdm:masterCook": {
+                "type": "number",
+                "title": "MT - Master Cook",
+                "description": "Skilled cooks that enjoy the experience of cooking"
+              },
+              "xdm:mealPlanners": {
+                "type": "number",
+                "title": "MT - Meal Planners",
+                "description": "Shoppers who develop weekly meal plans and shopping list to match their meal plans"
+              },
+              "xdm:mensBigAndTallApparelCustomers": {
+                "type": "number",
+                "title": "MT - Mens Big and Tall Apparel Customers",
+                "description": "Epsilon's Men's Big and Tall model ranks consumers based upon their likelihood be Men's Big and Tall households "
+              },
+              "xdm:mobileShoppingListUsers": {
+                "type": "number",
+                "title": "MT - Mobile Shopping List Users",
+                "description": "Greater likelihood to make a shopping list on their mobile phone"
+              },
+              "xdm:multi-RetailerShoppers": {
+                "type": "number",
+                "title": "MT - Multi-Retailer Shoppers",
+                "description": "Increased likelihood of going to multiple retailers to execute their shopping list and  fulfil shopping trip needs"
+              },
+              "xdm:one-StopShoppers": {
+                "type": "number",
+                "title": "MT - One-Stop Shoppers",
+                "description": "Primarily shop at one retailer for each shopping trip"
+              },
+              "xdm:onlineHomeDeliveryCustomers": {
+                "type": "number",
+                "title": "MT - Online - Home Delivery Customers",
+                "description": "Shopped for groceries online and had them delivered to their home in the last 12 months"
+              },
+              "xdm:onlinePickUpCustomers": {
+                "type": "number",
+                "title": "MT - Online - Pick Up Customers",
+                "description": "Shopped for groceries online and picked them up at the store in the last 12 months"
+              },
+              "xdm:onlinePetFoodBuyers": {
+                "type": "number",
+                "title": "MT - Online Pet Food Buyers",
+                "description": "Increased likelihood to purchase or interested in purchasing pet food online"
+              },
+              "xdm:pandemicDecreasedSpenders": {
+                "type": "number",
+                "title": "MT - Pandemic - Decreased Spenders",
+                "description": "Epsilon's Pandemic - Decreased Spenders model which ranks consumers based upon their likelihood to have decreased spending during the pandemic.  Model employs TSP data."
+              },
+              "xdm:pandemicLuxurySpenders": {
+                "type": "number",
+                "title": "MT - Pandemic - Luxury Spenders",
+                "description": "Epsilon's Pandemic - Luxury Spenders model which ranks consumers based upon their likelihood to be luxury spenders during the pandemic.  Model employs TSP data."
+              },
+              "xdm:pandemicRiskTolerantConsumers": {
+                "type": "number",
+                "title": "MT - Pandemic - Risk Tolerant Consumers",
+                "description": "Epsilon's Pandemic - Risk Tolerant Consumers model which ranks consumers based upon their likelihood to be risk tolerant during the pandemic.  Model employs TSP data."
+              },
+              "xdm:paperShoppingListUsers": {
+                "type": "number",
+                "title": "MT - Paper Shopping List Users",
+                "description": "Shoppers who make and use paper list "
+              },
+              "xdm:petOwners": {
+                "type": "number",
+                "title": "MT - Pet Owners",
+                "description": "Epsilon's Pet Owner model which ranks consumers based upon their likelihood to  own a pet.  Model employs TSP data"
+              },
+              "xdm:petsAreFamily": {
+                "type": "number",
+                "title": "MT - Pets Are Family",
+                "description": "Greater likelihood pet is treated as family member (in photos, birthday celebrations, goes to spa)"
+              },
+              "xdm:planToGetFitnessMembership": {
+                "type": "number",
+                "title": "MT - Plan to get Fitness Membership",
+                "description": "Epsilon's Fitness Membership model  ranks consumers based upon their likelihood to plan to get a membership in the  next 12 months.  "
+              },
+              "xdm:pre-ShopPlanners": {
+                "type": "number",
+                "title": "MT - Pre-Shop Planners",
+                "description": "Greater likelihood shoppers are spending time research and planning trips prior to going to the store "
+              },
+              "xdm:priceMatchers": {
+                "type": "number",
+                "title": "MT - Price Matchers",
+                "description": "Shoppers that tend to match prices across retailers to where to shop and what to buy"
+              },
+              "xdm:quickShopAtWalmartOrTarget": {
+                "type": "number",
+                "title": "MT - Quick Shop at Walmart or Target",
+                "description": "Shoppers that complete quick stop in trips at Walmart or Target"
+              },
+              "xdm:realIngredientCook": {
+                "type": "number",
+                "title": "MT - Real Ingredient Cook",
+                "description": "Cook ingredients that take additional preparation work (buy lettuce vs. bagged salad)"
+              },
+              "xdm:retailTexters": {
+                "type": "number",
+                "title": "MT - Retail Texters",
+                "description": "Epsilon's Retail Texter model  ranks consumers based upon their likelihood to open text messages from retailers.  "
+              },
+              "xdm:retailerCircularReaders": {
+                "type": "number",
+                "title": "MT - Retailer Circular Readers",
+                "description": "Shoppers who have an increased likelihood to research trips by reviewing newspaper or digital circulars"
+              },
+              "xdm:retailerEmailSubscribers": {
+                "type": "number",
+                "title": "MT - Retailer Email Subscribers",
+                "description": "Greater likelihood to subscribe to retailer emails"
+              },
+              "xdm:stock-UpAtWalmart": {
+                "type": "number",
+                "title": "MT - Stock-Up at Walmart",
+                "description": "Shopper that complete larger dollar sales trips at Walmart stores"
+              },
+              "xdm:stock-UpShoppers": {
+                "type": "number",
+                "title": "MT - Stock-Up Shoppers",
+                "description": "Increase likelihood to complete larger shopping trips to fill-up on items and stock their pantries"
+              },
+              "xdm:subscrOrAutoShipClothAndAcc": {
+                "type": "number",
+                "title": "MT - Subscr or Auto Ship - Cloth & Acc",
+                "description": "Epsilon's Subscription or Auto Shipment-Clothing and Accessories model ranks consumers based upon their likelihood to be subscribers."
+              },
+              "xdm:subscrOrAutoShipFoodOrBev": {
+                "type": "number",
+                "title": "MT - Subscr or Auto Ship - Food or Bev",
+                "description": "Epsilon's Subscription or Auto Shipment-Food or Beverage model ranks consumers based upon their likelihood to be subscribers."
+              },
+              "xdm:subscrOrAutoShipHholdProduct": {
+                "type": "number",
+                "title": "MT - Subscr or Auto Ship - Hhold Product",
+                "description": "Epsilon's Subscription or Auto Shipment-Household Product model ranks consumers based upon their likelihood to be subscribers."
+              },
+              "xdm:subscrOrAutoShipPersonalCare": {
+                "type": "number",
+                "title": "MT - Subscr or Auto Ship - Personal Care",
+                "description": "Epsilon's Subscription or Auto Shipment-Personal Care model ranks consumers based upon their likelihood to be subscribers."
+              },
+              "xdm:subscrOrAutoShipPetProducts": {
+                "type": "number",
+                "title": "MT - Subscr or Auto Ship - Pet Products",
+                "description": "Epsilon's Subscription or Auto Shipment-Pet Products model ranks consumers based upon their likelihood to be subscribers."
+              },
+              "xdm:targetCartwheelUsers": {
+                "type": "number",
+                "title": "MT - Target Cartwheel Users",
+                "description": "Shoppers that report using the Target Cartwheel App"
+              },
+              "xdm:targetEnthusiast": {
+                "type": "number",
+                "title": "MT - Target Enthusiast",
+                "description": "Greater likelihood shoppers are loyal and supporters of target"
+              },
+              "xdm:veterinarianInfluencedPetOwners": {
+                "type": "number",
+                "title": "MT - Veterinarian Influenced Pet Owners",
+                "description": "Pet food owner is more likely to follow veterinarian recommendations for pet food"
+              },
+              "xdm:walmartEnthusiast": {
+                "type": "number",
+                "title": "MT - Walmart Enthusiast",
+                "description": "Greater likelihood shoppers are loyal and supporters of Walmart"
+              },
+              "xdm:walmartSavingCatcherUsers": {
+                "type": "number",
+                "title": "MT - Walmart Saving Catcher Users",
+                "description": "Shoppers that report using the Walmart Savings Catcher App"
+              },
+              "xdm:webAndInstoreViewerOnlineBuyer": {
+                "type": "number",
+                "title": "MT - Web and Instore Viewer/Online Buyer",
+                "description": "Epsilon's Web and Brick & Mortar Viewer/Online Purchaser model  ranks consumers based upon their likelihood to first surf the web and look at products in stores and then make purchases in online.  "
+              },
+              "xdm:webSurferInstoreBuyer": {
+                "type": "number",
+                "title": "MT - Web Surfer/Instore Buyer",
+                "description": "Epsilon's Web Surfer/Brick & Mortar Purchaser model  ranks consumers based upon their likelihood to first surf the web then make purchases in stores.  "
+              },
+              "xdm:what'SOnSaleShoppers": {
+                "type": "number",
+                "title": "MT - What's On Sale Shoppers",
+                "description": "Greater likelihood shoppers plan what to buy based on what is on sale and will not purchase products unless on-sale"
+              },
+              "xdm:womensPlusSizeApparelCustomers": {
+                "type": "number",
+                "title": "MT - Womens Plus Size Apparel Customers",
+                "description": "Epsilon's Women's Plus Size model ranks consumers based upon their likelihood be women's plus size households "
+              }
+            },
+            "xdm:paymentMethod": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:cash": {
+                "type": "string",
+                "title": "Payment Method - Cash",
+                "description": "Indicates that an individual in the household has made a purchase using a credit card or cash card"
+              },
+              "xdm:creditCard": {
+                "type": "string",
+                "title": "Payment Method - Credit Card",
+                "description": "Indicates that an individual in the household has made a purchase using a credit card or cash card"
+              }
+            },
+            "xdm:publishingKitchenAndHome": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Publishing Kitchen & Home Quintile",
+                "description": "Average dollars that were spent on the Publishing Kitchen and Home category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Publishing Kitchen & Home Recency",
+                "description": "Recency of purchase in the Publishing Kitchen and Home category"
+              },
+              "xdm:purchaseDateRange": {
+                "type": "number",
+                "title": "Purchase Date Range",
+                "description": "Number of months last purchase was made"
+              }
+            },
+            "xdm:seasonality": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:fallRatioQuintile": {
+                "type": "number",
+                "title": "Seasonality - Fall Ratio Quintile",
+                "description": "The proportion of all purchases occurring during the time period of September 1-November 30 divided by the total # of purchases over all months bucketed into 5 quintile groupings"
+              },
+              "xdm:springRatioQuintile": {
+                "type": "number",
+                "title": "Seasonality - Spring Ratio Quintile",
+                "description": "The proportion of all purchases occurring during the time period of March 1-May 30 divided by the total # of purchases over all months bucketed into 5 quintile groupings"
+              },
+              "xdm:summerRatioQuintile": {
+                "type": "number",
+                "title": "Seasonality - Summer Ratio Quintile",
+                "description": "The proportion of all purchases occurring during the time period of June 1-August 31 divided by the total # of purchases over all months bucketed into 5 quintile groupings"
+              },
+              "xdm:winterRatioQuintile": {
+                "type": "number",
+                "title": "Seasonality - Winter Ratio Quintile",
+                "description": "The proportion of all purchases occurring during the time period of December 1-February 28(29) divided by the total # of purchases over all months bucketed into 5 quintile groupings"
+              }
+            },
+            "xdm:seniorProducts": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Senior Products Quintile",
+                "description": "Average dollars that were spent on the Senior Products category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Senior Products Recency of Purchase",
+                "description": "Recency of purchase in the Senior Products category"
+              }
+            },
+            "xdm:shoes": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Shoes Quintile",
+                "description": "Average dollars that were spent on the Shoes category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Shoes Recency of Purchase",
+                "description": "Recency of purchase in the Shoes category"
+              }
+            },
+            "xdm:specialtyFoodsAndGifts": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Specialty Foods and Gifts Quintile",
+                "description": "Average dollars that were spent on the Special Foods and Gifts category bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Specialty Foods and Gifts Recency",
+                "description": "Recency of purchase in the Special Foods and Gifts category"
+              }
+            },
+            "xdm:sportsAndOutdoor": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Sports and Outdoor Quintile",
+                "description": "Average dollars that were spent on the sports and outdoor category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Sports and Outdoor Recency of Purchase",
+                "description": "Recency of purchase in the Sports and Outdoor Category"
+              }
+            },
+            "xdm:sportsMerchandiseAndActivewear": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Sports Merchandise & Activewear Quintile",
+                "description": "Average dollars that were spent on the Sports Merchandise and Activewear bucketed into 5 quintile groupings"
+              },
+              "xdm:recency": {
+                "type": "number",
+                "title": "Sports Merchandise & Activewear Recency",
+                "description": "Recency of purchase in the Sports Merchandise and Activewear category"
+              }
+            },
+            "xdm:toolsAndElectronics": {
+              "type": "object",
+              "properties": {
+                "title": "",
+                "description": ""
+              },
+              "xdm:quintile": {
+                "type": "number",
+                "title": "Tools & Electronics Quintile",
+                "description": "Average dollars that were spent on the Tools & Electronics category bucketed into 5 quintile groupings"
+              },
+              "xdm:recencyOfPurchase": {
+                "type": "number",
+                "title": "Tools & Electronics Recency of Purchase",
+                "description": "Recency of purchase in the Tools & Electronics category"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/epsilon-retail"
+    }
+  ],
+  "meta:status": "experimental"
+}
+

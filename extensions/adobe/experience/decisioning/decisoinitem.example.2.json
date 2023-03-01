@@ -1,11 +1,13 @@
 {
-  "identityMap": {
+  "https://ns.adobe.com/experience/decisioning/decisionitem/itemConstraints": {
+    "identityMap": {
       "Offer": [
         {
           "id": "offer-1001",
           "primary": false
         }
       ]
+    }
   },
   "https://ns.adobe.com/experience/decisioning/decisionitem/itemConstraints": {
     "https://ns.adobe.com/experience/decisioning/profileConstraintType": "eligibilityRule",

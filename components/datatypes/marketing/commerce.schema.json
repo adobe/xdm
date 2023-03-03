@@ -119,6 +119,26 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product has been purchased instantly, potentially skipping the cart or checkout.",
           "meta:descriptionId": "commerce##xdm:instantPurchase##description##9211"
+        },
+        "xdm:requisitionListOpens": {
+          "title": "Requisition List Opens",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Initializations of a new Requisition List."
+        },
+        "xdm:requisitionListAdds": {
+          "title": "Requisition List Adds",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Addition of a product(s) to a requisition list."
+        },
+        "xdm:requisitionListRemovals": {
+          "title": "Requisition List Removals",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Removal of a product(s) from a requisition product list."
+        },
+        "xdm:requisitionList": {
+          "title": "Requisition List",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
+          "description": "The properties of requisition list created by customer."
         }
       }
     }

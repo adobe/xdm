@@ -78,6 +78,12 @@
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
+      "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details"
+    },
+    {
       "$ref": "#/definitions/decisionitem"
     }
   ],

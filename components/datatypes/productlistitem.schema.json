@@ -95,8 +95,8 @@
           "meta:titleId": "productlistitem##xdm:discountAmount##title##25051",
           "meta:descriptionId": "productlistitem##xdm:discountAmount##description##67611"
         },
-        "xdm:categoryData": {
-          "title": "Category data",
+        "xdm:productCategories": {
+          "title": "Product categories",
           "type": "array",
           "description": "List of category data this product falls under",
           "items": {

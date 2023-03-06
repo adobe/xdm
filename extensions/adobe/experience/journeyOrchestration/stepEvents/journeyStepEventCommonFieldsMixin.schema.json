@@ -404,6 +404,26 @@
               "title": "Experience ID",
               "type": "string",
               "description": "Journey Orchestration Experience Id"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/inDryRun": {
+              "title": "In Dry Run",
+              "type": "boolean",
+              "description": "Journey Orchestration Dry Run"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportJobID": {
+              "title": "Export Job ID",
+              "type": "string",
+              "description": "Read Segment Export Job ID"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportSegmentID": {
+              "title": "Export Segment ID",
+              "type": "string",
+              "description": "Read Segment Export Segment ID"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportTopicName": {
+              "title": "Export Topic Name",
+              "type": "string",
+              "description": "Read Segment Export Topic Name"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

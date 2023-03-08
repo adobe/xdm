@@ -90,9 +90,9 @@
             "type": "string"
           }
         },
-        "workfront:AccessorsEmpIds": {
-          "title": "Accessors Emp Ids",
-          "description": "Accessors Emp Ids",
+        "workfront:AccessorEmployeeIds": {
+          "title": "Accessor Employee Ids",
+          "description": "Accessor Employee Ids",
           "type": "array",
           "items": {
             "type": "string",

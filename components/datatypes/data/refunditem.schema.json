@@ -1,0 +1,69 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/data/refunditem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Refund Item",
+  "type": "object",
+  "description": "A refund associated with an order that defines the type of refund, the amount and the associated currency.",
+  "definitions": {
+    "refunditem": {
+      "properties": {
+        "xdm:transactionID": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "The unique transaction identifier for this refund item."
+        },
+        "xdm:refundAmount": {
+          "title": "Refund Amount",
+          "type": "number",
+          "description": "The value of the refund."
+        },
+        "xdm:refundReason": {
+          "title": "Refund Reason",
+          "type": "string",
+          "description": "Reason why a refund was issued. Enumerated.",
+          "default": "other",
+          "meta:enum": {
+            "return": "Return",
+            "price_adjustment": "Price Adjustment"
+          }
+        },
+        "xdm:refundPaymentType": {
+          "title": "Refund Payment Type",
+          "type": "string",
+          "description": "The method of payment for this order. Enumerated, custom values allowed.",
+          "default": "other",
+          "meta:enum": {
+            "cash": "Cash",
+            "credit_card": "Credit Card",
+            "debit_card": "Debit Card",
+            "gift_card": "Gift Card",
+            "check": "Check",
+            "paypal": "PayPal",
+            "wire_transfer": "Wire Transfer",
+            "credit_card_reference": "Credit Card Reference Transaction",
+            "other": "Other"
+          }
+        },
+        "xdm:currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code used for this refund item."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/refunditem"
+    }
+  ],
+  "meta:status": "experimental"
+}

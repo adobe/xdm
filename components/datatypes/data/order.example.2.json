@@ -1,0 +1,13 @@
+{
+  "xdm:purchaseID": "a8g784hjq1mnp3",
+  "xdm:purchaseOrderNumber": "123456",
+  "xdm:refunds": [
+    {
+      "xdm:transactionID": "transactid-a111",
+      "xdm:refundAmmount": 899.99,
+      "xdm:refundReason": "price_adjustment",
+      "xdm:refundPaymentType": "credit_card",
+      "xdm:currencyCode": "USD"
+    }
+  ]
+}

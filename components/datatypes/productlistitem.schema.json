@@ -98,9 +98,7 @@
         "xdm:refundAmount": {
           "title": "Refund Amount",
           "type": "number",
-          "description": "Amount refunded for item, if any.",
-          "meta:titleId": "productlistitem##xdm:discountAmount##title##25051",
-          "meta:descriptionId": "productlistitem##xdm:discountAmount##description##67611"
+          "description": "Amount refunded for item, if any."
         }
       },
       "required": ["xdm:SKU"]

@@ -271,19 +271,11 @@ An optional unique resource locator to obtain the asset from a content delivery 
 * type: `string`
 * defined in this schema
 
-### xdm:deliveryURL Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
 ### xdm:deliveryURL Example
 
-```json
+```
 "https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg"
+"https://cdn.adobe.io/content/projectx/fragment/prod/static/{{imageName}}"
 ```
 
 
@@ -296,18 +288,10 @@ An optional unique resource locator for user interactions. This URL is used to r
 * type: `string`
 * defined in this schema
 
-### xdm:linkURL Type
-
-
-`string`
-* format: `uri-reference` – URI Reference (according to [RFC3986](https://tools.ietf.org/html/rfc3986))
-
-
-
-
 ### xdm:linkURL Example
 
-```json
+```
 "https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
+"https://cdn.adobe.io/tracker?code={{code}}&redirect={{redirectPath}}"
 ```
 

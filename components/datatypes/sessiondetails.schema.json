@@ -311,6 +311,23 @@
           "title": "Media Session Server Timeout",
           "type": "number",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
+        },
+        "xdm:pev3": {
+          "title": "Pev3",
+          "type": "string",
+          "description": "The type of the media stream used for reporting.",
+          "enum": ["video", "videoAd", "audio", "audioAd"],
+          "meta:enum": {
+            "video": "Video",
+            "videoAd": "Video Ad",
+            "audio": "Audio",
+            "audioAd": "Audio Ad"
+          }
+        },
+        "xdm:pccr": {
+          "title": "Pccr",
+          "type": "boolean",
+          "description": "Indicates that a redirect occurred."
         }
       },
       "required": [

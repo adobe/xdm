@@ -58,11 +58,15 @@
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##title##17241",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##description##9381"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/url": {
+          "title": "Tracker URL",
+          "type": "string",
+          "description": "The URL clicked by the user."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType": {
           "title": "URL Tracking Type",
           "type": "string",
           "description": "The tracking type of the URL. It may be `subscription`, or a user-defined category.",
-          "meta:enum": {},
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##title##9711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##description##86741"
         },

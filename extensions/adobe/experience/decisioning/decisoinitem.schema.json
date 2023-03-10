@@ -34,11 +34,6 @@
             "type": "string"
           }
         },
-        "https://ns.adobe.com/experience/decisioning/decisionitem/itemIdentityMap": {
-          "$ref": "https://ns.adobe.com/xdm/context/identitymap",
-          "title": "Non person identity of the decision item.",
-          "description": "Non person identity of the decision item. It is required for ingestion in to UPS."
-        },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemTags": {
           "title": "Decision Item Tags",
           "type": "array",
@@ -57,7 +52,7 @@
           "type": "integer",
           "description": "Priority of a decision item, based on which decision items could be ranked"
         },
-        "https://ns.adobe.com/experience/decisioning/decisionitem/itemCatalogId": {
+        "https://ns.adobe.com/experience/decisioning/decisionitem/itemCatalogID": {
           "title": "Decision Item CatalogId",
           "type": "string",
           "description": "Each decision item belong to a catalog. CatalogId is used to relate to the catalog. Collections are derived based on select queries and catalogId helps to avoid joins with DecisionCatalog table during query execution in hub and especially the edges."
@@ -76,12 +71,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/identitymap"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details"
-    },
-    {
-      "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details"
     },
     {
       "$ref": "#/definitions/decisionitem"

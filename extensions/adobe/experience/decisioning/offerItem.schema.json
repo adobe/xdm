@@ -17,7 +17,7 @@
   "definitions": {
     "offeritem": {
       "properties": {
-        "xdm:lifecycleStatus": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": {
           "title": "life cycle status",
           "type": "string",
           "description": "Status associated with offer life cycle.",
@@ -27,20 +27,20 @@
             "archived": "Archived"
           }
         },
-        "xdm:frequencyCappingConstraints": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": {
           "type": "array",
           "items": {
             "type": "object",
             "title": "Frequency capping constraint",
             "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
             "properties": {
-              "xdm:limit": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/limit": {
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",
                 "type": "integer",
                 "minimum": 1
               },
-              "xdm:scope": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/scope": {
                 "title": "scope",
                 "description": "Scope of the capping",
                 "type": "string",
@@ -50,7 +50,7 @@
                   "profile": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
                 }
               },
-              "xdm:events": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/events": {
                 "title": "Events",
                 "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click.",
                 "type": "array",
@@ -67,23 +67,23 @@
                 "minItems": 1,
                 "default": ["decisioning"]
               },
-              "xdm:customQuery": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/customQuery": {
                 "title": "Custom PQL query",
                 "description": "Custom PQL query to match events.",
                 "type": "string"
               },
-              "xdm:repeat": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/repeat": {
                 "title": "Repeat",
                 "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating.",
                 "type": "object",
                 "properties": {
-                  "xdm:enabled": {
+                  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/enabled": {
                     "title": "Enabled",
                     "description": "If set to true ECS will created new counter rules with updated time window.",
                     "type": "boolean",
                     "default": false
                   },
-                  "xdm:unit": {
+                  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unit": {
                     "title": "Unit",
                     "description": "Unit to comply with.  It will be day/week/month.",
                     "type": "string",
@@ -95,7 +95,7 @@
                     },
                     "default": "day"
                   },
-                  "xdm:unitCount": {
+                  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unitCount": {
                     "title": "Unit Count",
                     "description": "Unit count number.",
                     "type": "integer",
@@ -104,8 +104,7 @@
                   }
                 }
               }
-            },
-            "required": ["xdm:limit", "xdm:scope"]
+            }
           }
         }
       }

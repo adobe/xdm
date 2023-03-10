@@ -1,14 +1,14 @@
 {
-  "xdm:lifecycleStatus": "draft",
-  "xdm:frequencyCappingConstraints": [
+  "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": "draft",
+  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": [
     {
-      "xdm:limit": 10,
-      "xdm:scope": "profile",
-      "xdm:events": ["decisioning"],
-      "xdm:repeat": {
-        "xdm:enabled": true,
-        "xdm:unit": "week",
-        "xdm:unitCount": 2
+      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/limit": 10,
+      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/scope": "profile",
+      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/events": ["decisioning"],
+      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/repeat": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/enabled": true,
+        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unit": "week",
+        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unitCount": 2
       }
     }
   ]

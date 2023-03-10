@@ -13,73 +13,73 @@
   "definitions": {
     "classification": {
       "properties": {
-        "xdm:activityName": {
+        "https://ns.adobe.com/experience/target/classification/activityName": {
           "title": "Activity Name",
           "type": "string",
           "description": "The name of the Target activity."
         },
-        "xdm:experienceName": {
+        "https://ns.adobe.com/experience/target/classification/experienceName": {
           "title": "Experience Name",
           "type": "string",
           "description": "The name of the Target experience."
         },
-        "xdm:activityExperience": {
+        "https://ns.adobe.com/experience/target/classification/activityExperience": {
           "title": "Activity Experience",
           "type": "string",
           "description": "Target Activity name concatenated with experience name."
         },
-        "xdm:thirdId": {
+        "https://ns.adobe.com/experience/target/classification/thirdId": {
           "title": "Third Id",
           "type": "string",
           "description": "The third id of the classification record."
         },
-        "xdm:activityId": {
+        "https://ns.adobe.com/experience/target/classification/activityId": {
           "title": "Activity Id",
           "type": "string",
           "description": "The identity of Target activity."
         },
-        "xdm:experienceId": {
+        "https://ns.adobe.com/experience/target/classification/experienceId": {
           "title": "Experience Id",
           "type": "string",
           "description": "The identity of Target experience."
         },
-        "xdm:analyticsReporting": {
+        "https://ns.adobe.com/experience/target/classification/analyticsReporting": {
           "title": "Analytics Reporting",
           "type": "string",
           "description": "The reporting type associated with the Target activity."
         },
-        "xdm:activeDates": {
+        "https://ns.adobe.com/experience/target/classification/activeDates": {
           "title": "Active Dates",
           "type": "string",
           "description": "The date of Target activity activation."
         },
-        "xdm:controlExperience": {
+        "https://ns.adobe.com/experience/target/classification/controlExperience": {
           "title": "Control Experience",
           "type": "string",
           "description": "The experience set as control experience in the Target activity."
         },
-        "xdm:algorithmId": {
+        "https://ns.adobe.com/experience/target/classification/algorithmId": {
           "title": "Algorithm Id",
           "type": "string",
           "description": "The identity of the algorithm used in the Target activity."
         },
-        "xdm:controlvsTargeted": {
+        "https://ns.adobe.com/experience/target/classification/controlvsTargeted": {
           "title": "Control vs Targeted",
           "type": "string",
           "description": "The traffic allocation type for the Target activity."
         },
-        "xdm:trafficTypeId": {
+        "https://ns.adobe.com/experience/target/classification/trafficTypeId": {
           "title": "Traffic Type Id",
           "type": "string",
           "description": "The identity of the traffic type associated with Target activity."
         }
       },
       "required": [
-        "xdm:activityName",
-        "xdm:activityId",
-        "xdm:experienceName",
-        "xdm:experienceId",
-        "xdm:activityExperience"
+        "https://ns.adobe.com/experience/target/classification/activityName",
+        "https://ns.adobe.com/experience/target/classification/activityId",
+        "https://ns.adobe.com/experience/target/classification/experienceName",
+        "https://ns.adobe.com/experience/target/classification/experienceId",
+        "https://ns.adobe.com/experience/target/classification/activityExperience"
       ]
     }
   },

@@ -81,7 +81,7 @@
           "type": "string",
           "description": "The employeeID involved in the CREATE event"
         },
-        "workfront:recFull": {
+        "workfront:recordFull": {
           "title": "Full Record",
           "description": "Full Record in the form of key/value pair",
           "type": "object",

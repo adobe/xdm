@@ -14,15 +14,15 @@
   "definitions": {
     "categorydata": {
       "properties": {
-        "xdm:ID": {
+        "xdm:categoryID": {
           "title": "Category identifier.",
           "type": "string"
         },
-        "xdm:name": {
+        "xdm:categoryName": {
           "title": "Category name",
           "type": "string"
         },
-        "xdm:path": {
+        "xdm:categoryPath": {
           "title": "Category path",
           "type": "string"
         }

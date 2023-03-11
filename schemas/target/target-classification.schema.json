@@ -5,92 +5,94 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/experience/target/classification",
+  "$id": "https://ns.adobe.com/xdm/schemas/target-classification",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Target Classification Fields",
-  "type": "object",
   "description": "A set of meta-data fields that will classify Target activities and experiences.",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "definitions": {
-    "classification": {
+    "target": {
       "properties": {
-        "https://ns.adobe.com/experience/target/classification/activityName": {
+        "xdm:activityName": {
           "title": "Activity Name",
           "type": "string",
           "description": "The name of the Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/experienceName": {
+        "xdm:experienceName": {
           "title": "Experience Name",
           "type": "string",
           "description": "The name of the Target experience."
         },
-        "https://ns.adobe.com/experience/target/classification/activityExperience": {
+        "xdm:activityExperience": {
           "title": "Activity Experience",
           "type": "string",
           "description": "Target Activity name concatenated with experience name."
         },
-        "https://ns.adobe.com/experience/target/classification/thirdId": {
+        "xdm:thirdId": {
           "title": "Third Id",
           "type": "string",
           "description": "The third id of the classification record."
         },
-        "https://ns.adobe.com/experience/target/classification/activityId": {
+        "xdm:activityId": {
           "title": "Activity Id",
           "type": "string",
           "description": "The identity of Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/experienceId": {
+        "xdm:experienceId": {
           "title": "Experience Id",
           "type": "string",
           "description": "The identity of Target experience."
         },
-        "https://ns.adobe.com/experience/target/classification/analyticsReporting": {
+        "xdm:analyticsReporting": {
           "title": "Analytics Reporting",
           "type": "string",
           "description": "The reporting type associated with the Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/activeDates": {
+        "xdm:activeDates": {
           "title": "Active Dates",
           "type": "string",
           "description": "The date of Target activity activation."
         },
-        "https://ns.adobe.com/experience/target/classification/controlExperience": {
+        "xdm:controlExperience": {
           "title": "Control Experience",
           "type": "string",
           "description": "The experience set as control experience in the Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/algorithmId": {
+        "xdm:algorithmId": {
           "title": "Algorithm Id",
           "type": "string",
           "description": "The identity of the algorithm used in the Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/controlvsTargeted": {
+        "xdm:controlvsTargeted": {
           "title": "Control vs Targeted",
           "type": "string",
           "description": "The traffic allocation type for the Target activity."
         },
-        "https://ns.adobe.com/experience/target/classification/trafficTypeId": {
+        "xdm:trafficTypeId": {
           "title": "Traffic Type Id",
           "type": "string",
           "description": "The identity of the traffic type associated with Target activity."
         }
       },
       "required": [
-        "https://ns.adobe.com/experience/target/classification/activityName",
-        "https://ns.adobe.com/experience/target/classification/activityId",
-        "https://ns.adobe.com/experience/target/classification/experienceName",
-        "https://ns.adobe.com/experience/target/classification/experienceId",
-        "https://ns.adobe.com/experience/target/classification/activityExperience"
+        "xdm:activityName",
+        "xdm:activityId",
+        "xdm:experienceName",
+        "xdm:experienceId",
+        "xdm:activityExperience"
       ]
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/classification"
+      "$ref": "https://ns.adobe.com/xdm/data/record"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/data/record"
+      "$ref": "#/definitions/target"
     }
   ],
-  "meta:status": "experimental",
-  "meta:extends": ["https://ns.adobe.com/xdm/data/record"]
+  "meta:status": "experimental"
 }

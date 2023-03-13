@@ -1,9 +1,10 @@
 {
-  "@id": "123450:1:1",
+  "@id": "14e0bd42-2a48-4f40-a3d0-5e089da31235",
+  "xdm:key": "123450:1:1",
   "xdm:activityName": "My Activity B",
-  "xdm:activityId": "123450",
+  "xdm:activityID": "123450",
   "xdm:experienceName": "My Experience 1",
-  "xdm:experienceId": "1",
+  "xdm:experienceID": "1",
   "xdm:activityExperience": "My Activity B > My Experience 1",
-  "xdm:trafficTypeId": "1"
+  "xdm:trafficTypeID": "1"
 }

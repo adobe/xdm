@@ -28,6 +28,7 @@
           "type": "string",
           "description": "Reason why a refund was issued. Enumerated.",
           "default": "other",
+          "enum": ["return", "price_adjustment"],
           "meta:enum": {
             "return": "Return",
             "price_adjustment": "Price Adjustment"
@@ -38,6 +39,17 @@
           "type": "string",
           "description": "The method of payment for this order. Enumerated, custom values allowed.",
           "default": "other",
+          "enum": [
+            "cash", 
+            "credit_card", 
+            "debit_card", 
+            "gift_card", 
+            "check", 
+            "paypal", 
+            "wire_transfer", 
+            "credit_card_reference", 
+            "other"
+          ],
           "meta:enum": {
             "cash": "Cash",
             "credit_card": "Credit Card",

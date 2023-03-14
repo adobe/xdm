@@ -40,14 +40,14 @@
           "description": "The method of payment for this order. Enumerated, custom values allowed.",
           "default": "other",
           "enum": [
-            "cash", 
-            "credit_card", 
-            "debit_card", 
-            "gift_card", 
-            "check", 
-            "paypal", 
-            "wire_transfer", 
-            "credit_card_reference", 
+            "cash",
+            "credit_card",
+            "debit_card",
+            "gift_card",
+            "check",
+            "paypal",
+            "wire_transfer",
+            "credit_card_reference",
             "other"
           ],
           "meta:enum": {

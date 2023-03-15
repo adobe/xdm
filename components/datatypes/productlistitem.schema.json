@@ -99,6 +99,13 @@
           "title": "Refund Amount",
           "type": "number",
           "description": "Amount refunded for item, if any."
+        "xdm:productCategories": {
+          "title": "Product categories",
+          "type": "array",
+          "description": "List of category data this product falls under",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
+          }
         }
       },
       "required": ["xdm:SKU"]

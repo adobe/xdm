@@ -28,6 +28,11 @@
           "title": "Plan Name",
           "type": "string",
           "description": "Name of the plan."
+        },
+        "xdm:planName2": {
+          "title": "Plan Name",
+          "type": "string",
+          "description": "Name of the plan."
         }
       }
     }

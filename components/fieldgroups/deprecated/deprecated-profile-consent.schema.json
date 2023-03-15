@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/mixins/profile-consent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Privacy/Marketing Preferences (Consent)",
+  "title": "Privacy/Marketing Preferences (Consent)-deprecated",
   "description": "This schema captures privacy, personalization and marketing preferences (consents).",
   "type": "object",
   "meta:extensible": true,

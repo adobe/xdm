@@ -80,6 +80,24 @@
           "title": "Created By ID",
           "type": "string",
           "description": "The employeeID involved in the CREATE event"
+        },
+        "workfront:recordFull": {
+          "title": "Full Record",
+          "description": "Full Record in the form of key/value pair",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "workfront:accessorEmployeeIDs": {
+          "title": "Accessor Employee Ids",
+          "description": "Accessor Employee Ids",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "employeeID as a alphanumeric string"
+          }
         }
       }
     }

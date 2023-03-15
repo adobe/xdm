@@ -99,6 +99,7 @@
           "title": "Refund Amount",
           "type": "number",
           "description": "Amount refunded for item, if any."
+        },
         "xdm:productCategories": {
           "title": "Product categories",
           "type": "array",

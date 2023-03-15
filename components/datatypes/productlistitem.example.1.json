@@ -11,5 +11,12 @@
       "xdm:attribute": "finish",
       "xdm:value": "brushed"
     }
+  ],
+  "xdm:productCategories": [
+    {
+      "xdm:categoryID": "1",
+      "xdm:categoryName": "Travel Accessories",
+      "xdm:categoryPathath": "home/luggage_travel/travel_accessories"
+    }
   ]
 }

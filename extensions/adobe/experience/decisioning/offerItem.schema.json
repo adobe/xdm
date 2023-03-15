@@ -118,5 +118,7 @@
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
   ],
-  "required": ["https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus"]
+  "required": [
+    "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus"
+  ]
 }

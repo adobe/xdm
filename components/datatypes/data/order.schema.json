@@ -37,6 +37,14 @@
           "meta:titleId": "order##xdm:payments##title##70501",
           "meta:descriptionId": "order##xdm:payments##description##67541"
         },
+        "xdm:refunds": {
+          "title": "Refunds List",
+          "type": "array",
+          "description": "The list of refunds for this order.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/data/refunditem"
+          }
+        },
         "xdm:currencyCode": {
           "title": "Currency",
           "type": "string",

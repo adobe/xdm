@@ -19,6 +19,11 @@
   "definitions": {
     "decisionitem": {
       "properties": {
+        "https://ns.adobe.com/experience/decisioning/decisionitem/itemID": {
+          "title": "Decision Item Identtifier",
+          "type": "string",
+          "description": "Identtifier of the decision item"
+        },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemName": {
           "title": "Decision Item Name",
           "type": "string",

@@ -103,10 +103,12 @@
                     "default": 1
                   }
                 }
-              }
+              },
+              "required": ["xdm:limit","xdm:scope"]
             }
           }
-        }
+        },
+        "required": ["xdm:lifecycleStatus"]
       }
     }
   },
@@ -117,6 +119,5 @@
     {
       "$ref": "https://ns.adobe.com/xdm/data/record"
     }
-  ],
-  "required": ["xdm:lifecycleStatus"]
+  ]
 }

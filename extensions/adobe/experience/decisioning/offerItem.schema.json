@@ -103,13 +103,18 @@
                     "default": 1
                   }
                 }
-              },
-              "required": ["xdm:limit", "xdm:scope"]
-            }
+              }
+            },
+            "required": [
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/limit",
+              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/scope"
+            ]
           }
-        },
-        "required": ["xdm:lifecycleStatus"]
-      }
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus"
+      ]
     }
   },
   "allOf": [

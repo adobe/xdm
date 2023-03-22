@@ -37,8 +37,8 @@
               "format": "date-time"
             },
             "xdm:window": {
-              "title": "Source External ID",
-              "description": "External source unique identifier at the source.",
+              "title": "Window",
+              "description": "Window.",
               "type": "object",
               "properties": {
                 "xdm:start": {

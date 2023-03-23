@@ -14,7 +14,7 @@
   "meta:tags": {
     "industry": ["all"]
   },
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile", "https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Demographic information such as name, gender, and birth date of an individual.",
   "definitions": {
     "profile-person-details": {

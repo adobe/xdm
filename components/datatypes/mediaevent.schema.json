@@ -17,7 +17,7 @@
       "properties": {
         "xdm:mediaCollection": {
           "title": "Media Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetailsCollection",
           "description": "Media details information related to the experience event."
         },
         "xdm:mediaEventTimestamp": {

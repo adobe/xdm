@@ -5,13 +5,13 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsCollection",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media details information",
+  "title": "Media details information - collection",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Media details information.",
+  "description": "Media details information that is collected by Media Analytics solution from SDKs and clients implementing VA Edge API.",
   "definitions": {
     "mediaDetails": {
       "properties": {
@@ -28,22 +28,22 @@
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsCollection",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {
           "title": "Advertising Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsCollection",
           "description": "Advertising details information related to the experience event."
         },
         "xdm:advertisingPodDetails": {
           "title": "Advertising Pod Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetailsCollection",
           "description": "Advertising pod details information related to the experience event."
         },
         "xdm:chapterDetails": {
           "title": "Chapter Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsCollection",
           "description": "Chapter details information related to the experience event."
         },
         "xdm:errorDetails": {

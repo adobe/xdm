@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsCollection",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Media details information",
   "type": "object",
@@ -43,7 +43,7 @@
         },
         "xdm:chapterDetails": {
           "title": "Chapter Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsCollection",
           "description": "Chapter details information related to the experience event."
         },
         "xdm:errorDetails": {

@@ -2,7 +2,6 @@
   "xdm:mediaCollection": {
     "xdm:playhead": 831,
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
@@ -17,23 +16,20 @@
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:offset": 123,
-      "xdm:ID": "123"
+      "xdm:offset": 123
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
       "xdm:offset": 50,
-      "xdm:index": 2,
-      "xdm:isStarted": false,
-      "xdm:isCompleted": false,
-      "xdm:timePlayed": 70
+      "xdm:index": 2
     },
     "xdm:errorDetails": {
       "xdm:name": "errorID",
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:droppedFrames": 40,
+      "xdm:bitrate": 145
     },
     "xdm:statesStart": [
       {
@@ -51,25 +47,32 @@
   },
   "xdm:mediaReporting": {
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
+      "xdm:ID": "21f1ea1f641019ec092f1d5c6fff18d13510ec51eb9f44f5323c5e8946d48ba9",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
-      "xdm:channel": "channel"
+      "xdm:channel": "channel",
+      "xdm:isCompleted": true,
+      "xdm:hasProgress25": true,
+      "xdm:totalTimePlayed": 90,
+      "xdm:adCount": 2,
+      "xdm:chapterCount": 3
     },
     "xdm:advertisingDetails": {
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:podPosition": 1,
-      "xdm:playerName": "playerName"
+      "xdm:playerName": "playerName",
+      "xdm:isStarted": true,
+      "xdm:isCompleted": true
     },
     "xdm:advertisingPodDetails": {
-      "xdm:index": 2,
-      "xdm:offset": 123,
-      "xdm:ID": "123"
+      "xdm:ID": "128d00f6b286bc797c5eaf6944b2c06_2",
+      "xdm:offset": 123
     },
     "xdm:chapterDetails": {
+      "xdm:ID": "53454323421_2",
       "xdm:length": 100,
       "xdm:offset": 50,
       "xdm:index": 2,
@@ -78,14 +81,24 @@
       "xdm:timePlayed": 70
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrateAverageBucket": 100
+      "xdm:droppedFrames": 40,
+      "xdm:bitrateAverageBucket": 100,
+      "xdm:bitrateAverage": 145.0,
+      "xdm:bitrateChangeCount": 1,
+      "xdm:timeToStart": 1234
     },
     "xdm:states": [
       {
-        "xdm:name": "pictureInPicture",
-        "xdm:set": true,
+        "xdm:name": "mute",
+        "xdm:isSet": true,
         "xdm:count": 2,
-        "xdm:time": 100
+        "xdm:time": 5
+      },
+      {
+        "xdm:name": "pictureInPicture",
+        "xdm:isSet": true,
+        "xdm:count": 1,
+        "xdm:time": 10
       }
     ]
   },
@@ -96,7 +109,6 @@
       "xdm:mediaCollection": {
         "xdm:playhead": 0,
         "xdm:sessionDetails": {
-          "xdm:ID": "1482236761294786918253",
           "xdm:name": "123456789",
           "xdm:length": 100,
           "xdm:contentType": "VOD",
@@ -104,7 +116,8 @@
           "xdm:channel": "channel"
         },
         "xdm:qoeDataDetails": {
-          "xdm:bitrate": 100
+          "xdm:droppedFrames": 40,
+          "xdm:bitrate": 145
         }
       }
     },
@@ -167,8 +180,7 @@
       "xdm:mediaCollection": {
         "xdm:advertisingPodDetails": {
           "xdm:index": 2,
-          "xdm:offset": 123,
-          "xdm:ID": "123"
+          "xdm:offset": 123
         },
         "xdm:playhead": 30
       }

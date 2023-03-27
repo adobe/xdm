@@ -5,9 +5,9 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsReporting",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media details information",
+  "title": "Media details information - reporting",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
@@ -28,55 +28,34 @@
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsReporting",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {
           "title": "Advertising Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsReporting",
           "description": "Advertising details information related to the experience event."
         },
         "xdm:advertisingPodDetails": {
           "title": "Advertising Pod Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetailsReporting",
           "description": "Advertising pod details information related to the experience event."
         },
         "xdm:chapterDetails": {
           "title": "Chapter Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsReporting",
           "description": "Chapter details information related to the experience event."
-        },
-        "xdm:errorDetails": {
-          "title": "Error Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-          "description": "Error details information related to the experience event."
         },
         "xdm:qoeDataDetails": {
           "title": "Qoe Data Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetailsReporting",
           "description": "Qoe data details information related to the experience event."
-        },
-        "xdm:statesStart": {
-          "title": "List Of States Start",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states start."
-        },
-        "xdm:statesEnd": {
-          "title": "List Of States End",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states end."
         },
         "xdm:states": {
           "title": "List Of States",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateDataReporting"
           },
           "description": "The list of states."
         },

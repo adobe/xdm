@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsReporting",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media details information",
+  "title": "Media details information - reporting",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
@@ -28,7 +28,7 @@
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsReporting",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {

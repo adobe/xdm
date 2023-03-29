@@ -33,12 +33,12 @@
         },
         "xdm:advertisingDetails": {
           "title": "Advertising Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsCollection",
           "description": "Advertising details information related to the experience event."
         },
         "xdm:advertisingPodDetails": {
           "title": "Advertising Pod Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetailsCollection",
           "description": "Advertising pod details information related to the experience event."
         },
         "xdm:chapterDetails": {

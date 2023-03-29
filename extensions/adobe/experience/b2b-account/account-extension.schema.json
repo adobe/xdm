@@ -16,8 +16,7 @@
   "meta:extends": ["https://ns.adobe.com/xdm/context/profile-segmentation"],
   "definitions": {
     "unified-account-union": {
-      "properties": {
-      }
+      "properties": {}
     }
   },
   "allOf": [

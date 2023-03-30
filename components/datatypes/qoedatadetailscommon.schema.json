@@ -1,0 +1,42 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/qoeDataDetailsCommon",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Qoe Data details information - common",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "description": "Qoe Data details information that is present in both collection and reporting datatypes.",
+  "definitions": {
+    "qoeDataDetails": {
+      "properties": {
+        "xdm:droppedFrames": {
+          "title": "Dropped Frames",
+          "type": "integer",
+          "description": "The number of frames dropped during playback of the main content."
+        },
+        "xdm:framesPerSecond": {
+          "title": "Frames Per Second",
+          "type": "integer",
+          "description": "The current value of the stream frame-rate (in frames per second). The field is mapped to the fps field on the close call and can be accessed through processing rules."
+        },
+        "xdm:timeToStart": {
+          "title": "Time To Start",
+          "type": "integer",
+          "description": "Describes the duration (in seconds) passed between video load and start."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/qoeDataDetails"
+    }
+  ]
+}

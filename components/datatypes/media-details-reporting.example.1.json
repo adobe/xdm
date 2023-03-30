@@ -44,25 +44,18 @@
     "xdm:bitrateAverage": 145.0,
     "xdm:bitrateChangeCount": 1
   },
-  "xdm:statesStart": [
-    {
-      "xdm:name": "mute"
-    },
-    {
-      "xdm:name": "pictureInPicture"
-    }
-  ],
-  "xdm:statesEnd": [
-    {
-      "xdm:name": "fullScreen"
-    }
-  ],
   "xdm:states": [
     {
       "xdm:name": "mute",
       "xdm:isSet": true,
       "xdm:count": 2,
       "xdm:time": 5
+    },
+    {
+      "xdm:name": "pictureInPicture",
+      "xdm:isSet": true,
+      "xdm:count": 1,
+      "xdm:time": 10
     }
   ],
   "xdm:customMetadata": [

@@ -24,9 +24,7 @@ The information in this schema is semantically compatible with the information i
 ```json
 {
   "xdm:URL": "https://www.some-adserver.com",
-  "xdm:type": "external",
-  "xdm:linkName": "Some Adserver",
-  "xdm:linkRegion": "NAV"
+  "xdm:type": "external"
 }
 ```
 
@@ -36,8 +34,6 @@ The information in this schema is semantically compatible with the information i
 |----------|------|----------|------------|
 | [xdm:URL](#xdmurl) | `string` | Optional | Web referrer (this schema) |
 | [xdm:type](#xdmtype) | `enum` | Optional | Web referrer (this schema) |
-| [xdm:linkName](#xdmlinkname) | `string` | Optional | Web referrer (this schema) |
-| [xdm:linkRegion](#xdmlinkregion) | `string` | Optional | Web referrer (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:URL
@@ -84,49 +80,5 @@ The value of this property **must** be equal to one of the [known values below](
 | `unknown` | Unknown |
 | `news` | Usenet newsgroup |
 | `usenet` |  |
-
-
-## xdm:linkName
-### linkName
-
-The name of the HTML element that was clicked on the previous page.
-
-`xdm:linkName`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:linkName Type
-
-
-`string`
-
-
-
-
-
-## xdm:linkRegion
-### linkRegion
-
-The region of the HTML element that was clicked on the previous page.
-
-`xdm:linkRegion`
-* is optional
-* type: `string`
-* defined in this schema
-
-### xdm:linkRegion Type
-
-
-`string`
-
-
-
-
-
-
-
-
-
 
 

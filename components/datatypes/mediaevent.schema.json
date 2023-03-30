@@ -11,6 +11,7 @@
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
+  "meta:extents": "https://ns.adobe.com/xdm/data/time-series",
   "description": "Media event information.",
   "definitions": {
     "mediaEvent": {
@@ -19,37 +20,6 @@
           "title": "Media Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetailsCollection",
           "description": "Media details information related to the experience event."
-        },
-        "xdm:mediaEventTimestamp": {
-          "title": "Media Timestamp",
-          "type": "string",
-          "format": "date-time",
-          "description": "The time when an event or observation occurred."
-        },
-        "xdm:mediaEventType": {
-          "title": "Media Event Type",
-          "type": "string",
-          "description": "The media event type.",
-          "meta:enum": {
-            "media.ping": "Media ping",
-            "media.sessionStart": "Media sessionStart",
-            "media.play": "Media play",
-            "media.bufferStart": "Media bufferStart",
-            "media.pauseStart": "Media pauseStart",
-            "media.chapterStart": "Media chapterStart",
-            "media.chapterSkip": "Media chapterSkip",
-            "media.chapterComplete": "Media chapterComplete",
-            "media.adStart": "Media adStart",
-            "media.adSkip": "Media adSkip",
-            "media.adComplete": "Media adComplete",
-            "media.adBreakStart": "Media adBreakStart",
-            "media.adBreakComplete": "Media adBreakComplete",
-            "media.bitrateChange": "Media bitrateChange",
-            "media.error": "Media error",
-            "media.sessionComplete": "Media sessionComplete",
-            "media.sessionEnd": "Media sessionEnd",
-            "media.statesUpdate": "Media statesUpdate"
-          }
         }
       }
     }
@@ -57,6 +27,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/mediaEvent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/time-series"
     }
   ]
 }

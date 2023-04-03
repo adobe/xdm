@@ -60,7 +60,7 @@
           "title": "List Of States Start",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateDataCollection"
           },
           "description": "The list of states start."
         },
@@ -68,17 +68,9 @@
           "title": "List Of States End",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateDataCollection"
           },
           "description": "The list of states end."
-        },
-        "xdm:states": {
-          "title": "List Of States",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states."
         },
         "xdm:customMetadata": {
           "title": "The Custom Metadata",

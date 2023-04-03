@@ -51,27 +51,11 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetailsReporting",
           "description": "Qoe data details information related to the experience event."
         },
-        "xdm:statesStart": {
-          "title": "List Of States Start",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states start."
-        },
-        "xdm:statesEnd": {
-          "title": "List Of States End",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states end."
-        },
         "xdm:states": {
           "title": "List Of States",
           "type": "array",
           "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
+            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateDataReporting"
           },
           "description": "The list of states."
         },

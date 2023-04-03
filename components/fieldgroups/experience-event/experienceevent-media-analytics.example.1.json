@@ -89,10 +89,16 @@
     },
     "xdm:states": [
       {
-        "xdm:name": "pictureInPicture",
-        "xdm:set": true,
+        "xdm:name": "mute",
+        "xdm:isSet": true,
         "xdm:count": 2,
-        "xdm:time": 100
+        "xdm:time": 5
+      },
+      {
+        "xdm:name": "pictureInPicture",
+        "xdm:isSet": true,
+        "xdm:count": 1,
+        "xdm:time": 10
       }
     ]
   },

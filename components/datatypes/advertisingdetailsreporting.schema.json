@@ -1,0 +1,45 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsReporting",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Advertising details information - reporting",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "meta:extends": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsCollection",
+  "description": "Advertising details information that is processed and reported by Media Analytics solution.",
+  "definitions": {
+    "advertisingDetails": {
+      "properties": {
+        "xdm:isCompleted": {
+          "title": "Ad Completed",
+          "type": "boolean",
+          "description": "Ad is completed."
+        },
+        "xdm:isStarted": {
+          "title": "Ad Started",
+          "type": "boolean",
+          "description": "Ad is started."
+        },
+        "xdm:timePlayed": {
+          "title": "Ad Time Played",
+          "type": "integer",
+          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/advertisingDetails"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsCollection#/definitions/advertisingDetails"
+    }
+  ]
+}

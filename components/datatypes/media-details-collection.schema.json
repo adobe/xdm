@@ -33,7 +33,7 @@
         },
         "xdm:advertisingDetails": {
           "title": "Advertising Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetailsCollection",
           "description": "Advertising details information related to the experience event."
         },
         "xdm:advertisingPodDetails": {

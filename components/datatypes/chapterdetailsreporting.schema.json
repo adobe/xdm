@@ -5,36 +5,17 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+  "$id": "https://ns.adobe.com/xdm/datatypes/chapterDetailsReporting",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Chapter details information",
+  "title": "Chapter details information - reporting",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Chapter details information.",
+  "meta:extends": "https://ns.adobe.com/xdm/datatypes/chapterDetailsCollection",
+  "description": "Chapter details information that is processed and reported by Media Analytics solution.",
   "definitions": {
     "chapterDetails": {
       "properties": {
-        "xdm:friendlyName": {
-          "title": "Chapter Name",
-          "type": "string",
-          "description": "The name of the chapter and/or segment."
-        },
-        "xdm:length": {
-          "title": "Chapter Length Or Duration",
-          "type": "integer",
-          "description": "The length of the chapter, in seconds."
-        },
-        "xdm:offset": {
-          "title": "Chapter Offset",
-          "type": "integer",
-          "description": "The offset of the chapter inside the content (in seconds) from the start."
-        },
-        "xdm:index": {
-          "title": "Chapter Position",
-          "type": "integer",
-          "description": "The position (index, integer) of the chapter inside the content."
-        },
         "xdm:ID": {
           "title": "Chapter ID",
           "type": "string",
@@ -57,9 +38,7 @@
         }
       },
       "required": [
-        "xdm:length",
-        "xdm:offset",
-        "xdm:index",
+        "xdm:ID",
         "xdm:isStarted",
         "xdm:isCompleted",
         "xdm:timePlayed"
@@ -69,6 +48,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/chapterDetails"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsCollection#/definitions/chapterDetails"
     }
   ]
 }

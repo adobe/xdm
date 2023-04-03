@@ -22,10 +22,7 @@
     "xdm:chapterDetails": {
       "xdm:length": 100,
       "xdm:offset": 50,
-      "xdm:index": 2,
-      "xdm:isStarted": false,
-      "xdm:isCompleted": false,
-      "xdm:timePlayed": 70
+      "xdm:index": 2
     },
     "xdm:errorDetails": {
       "xdm:name": "errorID",
@@ -74,6 +71,7 @@
       "xdm:ID": "123"
     },
     "xdm:chapterDetails": {
+      "xdm:ID": "53454323421_2",
       "xdm:length": 100,
       "xdm:offset": 50,
       "xdm:index": 2,

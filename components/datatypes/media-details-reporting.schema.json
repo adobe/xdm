@@ -38,7 +38,7 @@
         },
         "xdm:chapterDetails": {
           "title": "Chapter Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsReporting",
           "description": "Chapter details information related to the experience event."
         },
         "xdm:errorDetails": {

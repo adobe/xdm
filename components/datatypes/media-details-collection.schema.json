@@ -7,11 +7,11 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsCollection",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media details information",
+  "title": "Media details information - collection",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
-  "description": "Media details information.",
+  "description": "Media details information that is collected by Media Analytics solution from SDKs and clients implementing VA Edge API.",
   "definitions": {
     "mediaDetails": {
       "properties": {
@@ -28,7 +28,7 @@
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsCollection",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {

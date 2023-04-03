@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/datatypes/mediaDetailsReporting",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Media details information",
+  "title": "Media details information - reporting",
   "type": "object",
   "meta:status": "experimental",
   "meta:extensible": true,
@@ -21,14 +21,9 @@
           "minimum": 0,
           "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
         },
-        "xdm:sessionID": {
-          "title": "Media Session ID",
-          "type": "string",
-          "description": "Identifies an instance of a content stream unique to an individual playback."
-        },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsReporting",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {

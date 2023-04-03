@@ -41,11 +41,6 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetailsReporting",
           "description": "Chapter details information related to the experience event."
         },
-        "xdm:errorDetails": {
-          "title": "Error Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-          "description": "Error details information related to the experience event."
-        },
         "xdm:qoeDataDetails": {
           "title": "Qoe Data Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetailsReporting",

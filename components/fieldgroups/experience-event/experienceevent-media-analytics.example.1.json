@@ -104,8 +104,8 @@
   },
   "xdm:mediaDownloadedEvents": [
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:52:25+00:00",
-      "xdm:mediaEventType": "media.sessionStart",
+      "xdm:timestamp": "2017-09-26T15:52:25+00:00",
+      "xdm:eventType": "media.sessionStart",
       "xdm:mediaCollection": {
         "xdm:playhead": 0,
         "xdm:sessionID": "21f1ea1f641019ec092f1d5c6fff18d13510ec51eb9f44f5323c5e8946d48ba9",
@@ -123,8 +123,8 @@
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:53:25+00:00",
-      "xdm:mediaEventType": "media.play",
+      "xdm:timestamp": "2017-09-26T15:53:25+00:00",
+      "xdm:eventType": "media.play",
       "xdm:mediaCollection": {
         "xdm:playhead": 5,
         "xdm:qoeDataDetails": {
@@ -133,8 +133,8 @@
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:54:25+00:00",
-      "xdm:mediaEventType": "media.chapterStart",
+      "xdm:timestamp": "2017-09-26T15:54:25+00:00",
+      "xdm:eventType": "media.chapterStart",
       "xdm:mediaCollection": {
         "xdm:playhead": 10,
         "xdm:chapterDetails": {
@@ -149,22 +149,22 @@
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:55:25+00:00",
-      "xdm:mediaEventType": "media.ping",
+      "xdm:timestamp": "2017-09-26T15:55:25+00:00",
+      "xdm:eventType": "media.ping",
       "xdm:mediaCollection": {
         "xdm:playhead": 15
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:56:25+00:00",
-      "xdm:mediaEventType": "media.chapterComplete",
+      "xdm:timestamp": "2017-09-26T15:56:25+00:00",
+      "xdm:eventType": "media.chapterComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 20
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:57:25+00:00",
-      "xdm:mediaEventType": "media.adStart",
+      "xdm:timestamp": "2017-09-26T15:57:25+00:00",
+      "xdm:eventType": "media.adStart",
       "xdm:mediaCollection": {
         "xdm:advertisingDetails": {
           "xdm:name": "123456789",
@@ -176,8 +176,8 @@
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:58:25+00:00",
-      "xdm:mediaEventType": "media.adBreakStart",
+      "xdm:timestamp": "2017-09-26T15:58:25+00:00",
+      "xdm:eventType": "media.adBreakStart",
       "xdm:mediaCollection": {
         "xdm:advertisingPodDetails": {
           "xdm:index": 2,
@@ -187,22 +187,22 @@
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:59:25+00:00",
-      "xdm:mediaEventType": "media.adBreakComplete",
+      "xdm:timestamp": "2017-09-26T15:59:25+00:00",
+      "xdm:eventType": "media.adBreakComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 35
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T16:00:25+00:00",
-      "xdm:mediaEventType": "media.adComplete",
+      "xdm:timestamp": "2017-09-26T16:00:25+00:00",
+      "xdm:eventType": "media.adComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 40
       }
     },
     {
-      "xdm:mediaEventTimestamp": "2017-09-26T16:01:25+00:00",
-      "xdm:mediaEventType": "media.sessionComplete",
+      "xdm:timestamp": "2017-09-26T16:01:25+00:00",
+      "xdm:eventType": "media.sessionComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 45
       }

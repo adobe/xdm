@@ -31,7 +31,8 @@
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:droppedFrames": 40,
+      "xdm:bitrate": 145
     },
     "xdm:statesStart": [
       {

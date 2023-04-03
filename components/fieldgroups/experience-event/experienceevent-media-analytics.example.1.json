@@ -28,7 +28,8 @@
       "xdm:source": "player"
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrate": 100
+      "xdm:droppedFrames": 40,
+      "xdm:bitrate": 145
     },
     "xdm:statesStart": [
       {
@@ -80,7 +81,11 @@
       "xdm:timePlayed": 70
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrateAverageBucket": 100
+      "xdm:droppedFrames": 40,
+      "xdm:bitrateAverageBucket": 100,
+      "xdm:bitrateAverage": 145.0,
+      "xdm:bitrateChangeCount": 1,
+      "xdm:timeToStart": 1234
     },
     "xdm:states": [
       {
@@ -106,7 +111,8 @@
           "xdm:channel": "channel"
         },
         "xdm:qoeDataDetails": {
-          "xdm:bitrate": 100
+          "xdm:droppedFrames": 40,
+          "xdm:bitrate": 145
         }
       }
     },

@@ -15,6 +15,11 @@
   "definitions": {
     "mediaDetails": {
       "properties": {
+        "xdm:sessionID": {
+          "title": "Media Session ID",
+          "type": "string",
+          "description": "Identifies an instance of a content stream unique to an individual playback."
+        },
         "xdm:sessionDetails": {
           "title": "Session Details",
           "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetailsReporting",
@@ -56,7 +61,8 @@
           },
           "description": "The list of custom metadata."
         }
-      }
+      },
+      "required": ["xdm:sessionID"]
     }
   },
   "allOf": [

@@ -16,11 +16,6 @@
   "definitions": {
     "sessionDetails": {
       "properties": {
-        "xdm:ID": {
-          "title": "Media Session ID",
-          "type": "string",
-          "description": "This identifies an instance of a content stream unique to an individual playback."
-        },
         "xdm:isFederated": {
           "title": "Federated Data",
           "type": "boolean",
@@ -148,8 +143,7 @@
           "type": "boolean",
           "description": "Indicates that a redirect occurred."
         }
-      },
-      "required": ["xdm:ID"]
+      }
     }
   },
   "allOf": [

@@ -34,7 +34,7 @@
             "title": "Frequency capping constraint",
             "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
             "properties": {
-              "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/limit": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/limit": {
                 "title": "Limit",
                 "description": "How many times an option can be proposed.",
                 "type": "integer",

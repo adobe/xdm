@@ -2,15 +2,15 @@
   "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": "draft",
   "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": [
     {
-      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/limit": 10,
-      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/scope": "profile",
-      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/events": [
+      "https://ns.adobe.com/experience/decisioning/offeritem/limit": 10,
+      "https://ns.adobe.com/experience/decisioning/offeritem/scope": "profile",
+      "https://ns.adobe.com/experience/decisioning/offeritem/events": [
         "decisioning"
       ],
-      "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/repeat": {
-        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/enabled": true,
-        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unit": "week",
-        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints/unitCount": 2
+      "https://ns.adobe.com/experience/decisioning/offeritem/repeat": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/enabled": true,
+        "https://ns.adobe.com/experience/decisioning/offeritem/unit": "week",
+        "https://ns.adobe.com/experience/decisioning/offeritem/unitCount": 2
       }
     }
   ]

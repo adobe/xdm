@@ -20,22 +20,22 @@
     "decisionitem": {
       "properties": {
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemID": {
-          "title": "Decision Item Identtifier",
+          "title": "Item ID",
           "type": "string",
           "description": "Identtifier of the decision item"
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemName": {
-          "title": "Decision Item Name",
+          "title": "Item Name",
           "type": "string",
           "description": "Name of a decision item"
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemDescription": {
-          "title": "Decision Item Description",
+          "title": "Item Description",
           "type": "string",
           "description": "Description of a decision item"
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemLabels": {
-          "title": "Decision Item Labels",
+          "title": "Item Labels",
           "type": "array",
           "description": "OLAC labels for decision item.",
           "items": {
@@ -43,7 +43,7 @@
           }
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemTags": {
-          "title": "Decision Item Tags",
+          "title": "Item Tags",
           "type": "array",
           "description": "An array of Unified TagIds associated with the decision item.",
           "items": {
@@ -52,22 +52,22 @@
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemConstraints": {
           "$ref": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
-          "title": "Decision Item Constraints",
+          "title": "Item Constraints",
           "description": "Constraints define the policies that ensure a particular decision Item qualifies, is relevant and is suitable for a particular profile. Such policy rules determine the eligibility, applicability and suitability of the option. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema."
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemPriority": {
-          "title": "Decision Item Priority",
+          "title": "Item Priority",
           "type": "integer",
           "description": "Priority of a decision item, based on which decision items could be ranked"
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemCatalogID": {
-          "title": "Decision Item CatalogId",
+          "title": "Item CatalogId",
           "type": "string",
           "description": "Each decision item belong to a catalog. CatalogId is used to relate to the catalog. Collections are derived based on select queries and catalogId helps to avoid joins with DecisionCatalog table during query execution in hub and especially the edges."
         },
         "https://ns.adobe.com/experience/decisioning/decisionitem/itemCalendarConstraints": {
           "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details",
-          "title": "Decision Item Calendar Constraints",
+          "title": "Item Calendar Constraints",
           "description": "Defines the date range during which this decision item is eligible. This constraint may not be strictly enforced always."
         }
       }
@@ -76,9 +76,6 @@
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     },
     {
       "$ref": "#/definitions/decisionitem"

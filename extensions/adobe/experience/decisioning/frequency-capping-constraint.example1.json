@@ -4,7 +4,12 @@
       "xdm:count": 10,
       "xdm:scope": "profile",
       "xdm:entity": "offer",
-      "xdm:events": ["decisioning"]
+      "xdm:events": ["decisioning"],
+      "xdm:repeat": {
+        "xdm:enabled": true,
+        "xdm:unit": "week",
+        "xdm:unitCount": 2
+      }
     }
   ]
 }

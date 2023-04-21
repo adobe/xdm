@@ -37,6 +37,14 @@
           "meta:titleId": "order##xdm:payments##title##70501",
           "meta:descriptionId": "order##xdm:payments##description##67541"
         },
+        "xdm:refunds": {
+          "title": "Refunds List",
+          "type": "array",
+          "description": "The list of refunds for this order.",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/data/refunditem"
+          }
+        },
         "xdm:currencyCode": {
           "title": "Currency",
           "type": "string",
@@ -46,12 +54,55 @@
           "meta:titleId": "order##xdm:currencyCode##title##81771",
           "meta:descriptionId": "order##xdm:currencyCode##description##51121"
         },
+        "xdm:taxAmount": {
+          "title": "Tax Amount",
+          "type": "number",
+          "description": "The tax amount paid by the buyer as part of the final payment.",
+          "meta:titleId": "order##xdm:taxAmount##title##81954",
+          "meta:descriptionId": "order##xdm:taxAmount##description##51205"
+        },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",
           "description": "The total price of this order after all discounts and taxes have been applied.",
           "meta:titleId": "order##xdm:priceTotal##title##86151",
           "meta:descriptionId": "order##xdm:priceTotal##description##47781"
+        },
+        "xdm:orderType": {
+          "title": "Order Type",
+          "type": "string",
+          "description": "The type order that has been placed.",
+          "enum": ["checkout", "instant_purchase"],
+          "meta:enum": {
+            "checkout": "checkout",
+            "instant_purchase": "Instant Purchase"
+          },
+          "meta:titleId": "order##xdm:orderType##title##56861",
+          "meta:descriptionId": "order##xdm:orderType##description##62731"
+        },
+        "xdm:lastUpdatedDate": {
+          "title": "Last Updated Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when a particular order record is last updated in the commerce system.",
+          "meta:titleId": "order##xdm:lastUpdatedDate##title##86152",
+          "meta:descriptionId": "order##xdm:lastUpdatedDate##description##47783"
+        },
+        "xdm:createdDate": {
+          "title": "Created Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time/date when a new order is created in the commerce system.",
+          "meta:titleId": "order##xdm:createdDate##title##86153",
+          "meta:descriptionId": "order##xdm:createdDate##description##47783"
+        },
+        "xdm:cancelDate": {
+          "title": "Cancel Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date/time when an order cancellation is initiated by the shopper.",
+          "meta:titleId": "order##xdm:cancelDate##title##86156",
+          "meta:descriptionId": "order##xdm:cancelDate##description##47786"
         }
       }
     }

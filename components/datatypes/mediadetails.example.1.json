@@ -1,0 +1,70 @@
+{
+  "xdm:playhead": 831,
+  "xdm:sessionDetails": {
+    "xdm:ID": "1482236761294786918253",
+    "xdm:name": "123456789",
+    "xdm:length": 100,
+    "xdm:contentType": "VOD",
+    "xdm:playerName": "playerName",
+    "xdm:channel": "channel"
+  },
+  "xdm:advertisingDetails": {
+    "xdm:name": "123456789",
+    "xdm:length": 100,
+    "xdm:podPosition": 1,
+    "xdm:playerName": "playerName",
+    "xdm:isCompleted": false,
+    "xdm:isStarted": false
+  },
+  "xdm:advertisingPodDetails": {
+    "xdm:index": 2,
+    "xdm:offset": 123,
+    "xdm:ID": "123"
+  },
+  "xdm:chapterDetails": {
+    "xdm:length": 100,
+    "xdm:offset": 50,
+    "xdm:index": 2,
+    "xdm:isStarted": false,
+    "xdm:isCompleted": false,
+    "xdm:timePlayed": 70
+  },
+  "xdm:errorDetails": {
+    "xdm:name": "errorID",
+    "xdm:source": "player"
+  },
+  "xdm:qoeDataDetails": {
+    "xdm:bitrate": 100
+  },
+  "xdm:statesStart": [
+    {
+      "xdm:name": "mute"
+    },
+    {
+      "xdm:name": "pictureInPicture"
+    }
+  ],
+  "xdm:statesEnd": [
+    {
+      "xdm:name": "fullScreen"
+    }
+  ],
+  "xdm:states": [
+    {
+      "xdm:name": "mute",
+      "xdm:isSet": true,
+      "xdm:count": 2,
+      "xdm:time": 5
+    }
+  ],
+  "xdm:customMetadata": [
+    {
+      "xdm:name": "customName",
+      "xdm:value": "test1"
+    },
+    {
+      "xdm:name": "test2",
+      "xdm:value": "customValue"
+    }
+  ]
+}

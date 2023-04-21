@@ -1,5 +1,5 @@
 
-# Work Program Attributes Schema
+# Workfront Program Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/program
@@ -11,7 +11,7 @@ Program related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/program.schema.json](adobe/experience/workfront/program.schema.json) |
 
-## Work Program Attributes Example
+## Workfront Program Attributes Example
 ```json
 {
   "workfront:program": {
@@ -21,11 +21,11 @@ Program related fields
 }
 ```
 
-# Work Program Attributes Properties
+# Workfront Program Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:program](#workfrontprogram) | `object` | Optional | Work Program Attributes (this schema) |
+| [workfront:program](#workfrontprogram) | `object` | Optional | Workfront Program Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:program

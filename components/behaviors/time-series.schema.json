@@ -67,7 +67,9 @@
             "commerce.backofficeShipmentCompleted": "Commerce Backoffice Shipment Completed",
             "decisioning.propositionDisplay": "Decisioning Proposition Display",
             "decisioning.propositionInteract": "Decisioning Proposition Interact",
-            "decisioning.propositionDeliver": "Decisioning Proposition Deliver",
+            "decisioning.propositionSend": "Decisioning Proposition Send",
+            "decisioning.propositionDismiss": "Decisioning Proposition Dismiss",
+            "decisioning.propositionTrigger": "Decisioning Proposition Trigger",
             "delivery.feedback": "Delivery Feedback",
             "message.feedback": "Message Feedback",
             "message.tracking": "Message Tracking",
@@ -116,8 +118,15 @@
             "media.error": "Media error",
             "media.sessionComplete": "Media sessionComplete",
             "media.sessionEnd": "Media sessionEnd",
-            "media.stateStart": "Media stateStart",
-            "media.stateEnd": "Media stateEnd"
+            "media.statesUpdate": "Media statesUpdate",
+            "media.downloaded": "Media downloaded content",
+            "media.reporting.sessionStart": "Media reporting sessionStart",
+            "media.reporting.sessionClose": "Media reporting sessionClose",
+            "media.reporting.adStart": "Media reporting adStart",
+            "media.reporting.adClose": "Media reporting adClose",
+            "media.reporting.chapterClose": "Media reporting chapterClose",
+            "location.entry": "Location entry",
+            "location.exit": "Location exit"
           },
           "meta:titleId": "time-series##xdm:eventType##title##79221",
           "meta:descriptionId": "time-series##xdm:eventType##description##27681"

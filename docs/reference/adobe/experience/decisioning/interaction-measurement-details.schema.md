@@ -86,10 +86,10 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:mapping Known Values
 | Value | Description |
 |-------|-------------|
-| `direct` |  |
-| `eventTypeValue` |  |
-| `fieldValue` |  |
-| `predicate` |  |
+| `direct` | Direct |
+| `eventTypeValue` | Event Type Value |
+| `fieldValue` | Field Value |
+| `predicate` | Predicate |
 
 
 

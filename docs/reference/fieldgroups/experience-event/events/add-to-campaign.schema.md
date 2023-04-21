@@ -9,7 +9,7 @@ Use to add a person to the specific campaign.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/add-to-campaign.schema.json](fieldgroups/experience-event/events/add-to-campaign.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/add-to-campaign.schema.json](fieldgroups/experience-event/events/add-to-campaign.schema.json) |
 
 ## Add To Campaign Example
 ```json
@@ -64,19 +64,26 @@ Unknown type `object`.
     "xdm:campaignKey": {
       "title": "Campaign Key",
       "description": "Unique composite identifier of the campaign.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "add-to-campaign##xdm:campaignKey##title##39421",
+      "meta:descriptionId": "add-to-campaign##xdm:campaignKey##description##67731"
     },
     "xdm:streamKey": {
       "title": "Stream Key",
       "description": "Unique composite identifier of the stream.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "add-to-campaign##xdm:streamKey##title##73241",
+      "meta:descriptionId": "add-to-campaign##xdm:streamKey##description##39201"
     },
     "xdm:streamName": {
       "title": "Stream Name",
       "type": "string",
-      "description": "Name of the stream."
+      "description": "Name of the stream.",
+      "meta:titleId": "add-to-campaign##xdm:streamName##title##99131",
+      "meta:descriptionId": "add-to-campaign##xdm:streamName##description##27331"
     }
   },
+  "meta:titleId": "add-to-campaign##xdm:addToCampaign##title##26721",
   "simpletype": "`object`"
 }
 ```

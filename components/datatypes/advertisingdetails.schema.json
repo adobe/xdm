@@ -1,0 +1,105 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Advertising details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Advertising details information.",
+  "definitions": {
+    "advertisingDetails": {
+      "properties": {
+        "xdm:friendlyName": {
+          "title": "Ad Name",
+          "type": "string",
+          "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar."
+        },
+        "xdm:name": {
+          "title": "Ad ID",
+          "type": "string",
+          "pattern": "^.{1,}$",
+          "description": "ID of the ad. Any integer and/or letter combination."
+        },
+        "xdm:length": {
+          "title": "Ad Length Or Duration",
+          "type": "integer",
+          "description": "Length of video ad in seconds."
+        },
+        "xdm:podPosition": {
+          "title": "Ad In Pod Position (Ad Start)",
+          "type": "integer",
+          "minimum": 0,
+          "description": "The index of the ad inside the parent ad start, for example, the first ad has index 0 and the second ad has index 1."
+        },
+        "xdm:playerName": {
+          "title": "Ad Player Name",
+          "type": "string",
+          "description": "The name of the player responsible for rendering the ad."
+        },
+        "xdm:advertiser": {
+          "title": "Ad Advertiser",
+          "type": "string",
+          "description": "Company/Brand whose product is featured in the ad."
+        },
+        "xdm:campaignID": {
+          "title": "Ad Campaign",
+          "type": "string",
+          "description": "ID of the ad campaign."
+        },
+        "xdm:creativeID": {
+          "title": "Ad Creative ID",
+          "type": "string",
+          "description": "ID of the ad creative."
+        },
+        "xdm:siteID": {
+          "title": "Ad Site ID",
+          "type": "string",
+          "description": "ID of the ad site."
+        },
+        "xdm:creativeURL": {
+          "title": "Ad Creative URL",
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the ad creative."
+        },
+        "xdm:placementID": {
+          "title": "Ad Placement ID",
+          "type": "string",
+          "description": "Placement ID of the ad."
+        },
+        "xdm:isCompleted": {
+          "title": "Ad Completed",
+          "type": "boolean",
+          "description": "Ad is completed."
+        },
+        "xdm:isStarted": {
+          "title": "Ad Started",
+          "type": "boolean",
+          "description": "Ad is started."
+        },
+        "xdm:timePlayed": {
+          "title": "Ad Time Played",
+          "type": "integer",
+          "description": "The total amount of time, in seconds, spent watching the ad (i.e., the number of seconds played)."
+        }
+      },
+      "required": [
+        "xdm:name",
+        "xdm:length",
+        "xdm:podPosition",
+        "xdm:playerName"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/advertisingDetails"
+    }
+  ]
+}

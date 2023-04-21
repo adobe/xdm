@@ -240,9 +240,9 @@ The value of this property **must** be equal to one of the [known values below](
 ### adcloud:conversionType Known Values
 | Value | Description |
 |-------|-------------|
-| `Feed` |  |
-| `Pixel` |  |
-| `Cross Device` |  |
+| `Feed` | Feed |
+| `Pixel` | Pixel |
+| `Cross Device` | Cross Device |
 
 
 
@@ -291,13 +291,12 @@ The value of this property **must** be equal to one of the [known values below](
 | `Product Group` | Product Group |
 | `Content` | Content |
 | `SiteCpc` | SiteCpc |
-| `Sitecpm` | SiteCpm |
+| `SiteCpm` | SiteCpm |
 | `Category` | Category |
 | `Search` | Search |
 | `Adgroup` | Adgroup |
 | `Dynamic Ad Target` | Dynamic Ad Target |
 | `Unknown` | Unknown |
-| `SiteCpm` |  |
 
 
 
@@ -559,7 +558,9 @@ The primary event type for this time-series record.
 | `commerce.saveForLaters` | Commerce Save For Laters |
 | `decisioning.propositionDisplay` | Decisioning Proposition Display |
 | `decisioning.propositionInteract` | Decisioning Proposition Interact |
-| `decisioning.propositionDeliver` | Decisioning Proposition Deliver |
+| `decisioning.propositionSend` | Decisioning Proposition Send |
+| `decisioning.propositionDismiss` | Decisioning Proposition Dismiss |
+| `decisioning.propositionTrigger` | Decisioning Proposition Trigger |
 | `delivery.feedback` | Delivery Feedback |
 | `message.feedback` | Message Feedback |
 | `message.tracking` | Message Tracking |
@@ -608,8 +609,10 @@ The primary event type for this time-series record.
 | `media.error` | Media error |
 | `media.sessionComplete` | Media sessionComplete |
 | `media.sessionEnd` | Media sessionEnd |
-| `media.stateStart` | Media stateStart |
-| `media.stateEnd` | Media stateEnd |
+| `media.statesUpdate` | Media statesUpdate |
+| `media.downloaded` | Media downloaded content |
+| `location.entry` | Location entry |
+| `location.exit` | Location exit |
 
 
 

@@ -9,7 +9,7 @@ Use to capture details when the lead score of a person changes.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/scorechanged.schema.json](fieldgroups/experience-event/events/scorechanged.schema.json) |
 
 ## Score Changed Example
 ```json
@@ -71,7 +71,9 @@ Unknown type `object`.
     "xdm:scoreAttributeKey": {
       "title": "Score Attribute Key",
       "description": "Unique key of the lead score attribute.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+      "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971"
     },
     "xdm:scoreAttributeName": {
       "title": "Score Attribute Name",

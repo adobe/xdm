@@ -30,7 +30,7 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/versionID": {
               "title": "Version ID",
-              "description": "Identifier of the journey version. This id represents the identity of a journey.",
+              "description": "Identifier of the journey version. This id represents the identity of a journey. It's the last part of the journey's URL",
               "type": "string"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/name": {

@@ -1,0 +1,58 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/currency-conversion-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Currency Conversion Rate Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/conversion"],
+  "description": "Currency Conversion details field group.",
+  "definitions": {
+    "currency-conversion-details": {
+      "properties": {
+        "xdm:sourceISOCode": {
+          "title": "Source ISO Code",
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "description": "Currency ISO code, the source currency."
+        },
+        "xdm:targetISOCode": {
+          "title": "Target ISO Code",
+          "type": "string",
+          "pattern": "^[A-Z]{3}$",
+          "description": "Currency ISO code, the target currency."
+        },
+        "xdm:startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date",
+          "description": "Start date of the conversion rate. This date is inclusive."
+        },
+        "xdm:endDate": {
+          "title": "End Date",
+          "type": "string",
+          "format": "date",
+          "description": "End date of the conversion rate. This date is exclusive."
+        },
+        "xdm:conversionRate": {
+          "title": "Conversion Rate",
+          "type": "number",
+          "description": "Rate used to convert the source currency to the target currency."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/currency-conversion-details"
+    }
+  ],
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-10-18"
+}

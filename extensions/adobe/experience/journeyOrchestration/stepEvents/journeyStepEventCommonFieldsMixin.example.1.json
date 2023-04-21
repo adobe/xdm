@@ -9,5 +9,13 @@
   "https://ns.adobe.com/experience/journeyOrchestration/stepStatus": "endStep",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyID": "fc0b645e-b3e3-4441-99e1-faf3f9c7064f",
   "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
-  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2"
+  "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName": "Step_Event_test_2",
+  "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp": "2021-07-27T18:28:04.351808Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/originalTimestamp": "2021-07-27T18:28:04Z",
+  "https://ns.adobe.com/experience/journeyOrchestration/experienceID": "f8e03cb0-7c31-4aba-a4a3-c72a0fb353c4",
+  "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": "realized",
+  "https://ns.adobe.com/experience/journeyOrchestration/inDryRun": true,
+  "https://ns.adobe.com/experience/journeyOrchestration/exportJobID": "533852",
+  "https://ns.adobe.com/experience/journeyOrchestration/exportSegmentID": "97fb1324-8491-434c-9835-8c8a1cd64ee6",
+  "https://ns.adobe.com/experience/journeyOrchestration/exportTopicName": "dx_voyager_stage_segmenttrigger_topicpool_segment_export_2"
 }

@@ -127,10 +127,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
-| `initiated` |  |
-| `in progress` |  |
-| `approved` |  |
-| `declined` |  |
+| `initiated` | Initiated |
+| `in progress` | In Progress |
+| `approved` | Approved |
+| `declined` | Declined |
 
 
 

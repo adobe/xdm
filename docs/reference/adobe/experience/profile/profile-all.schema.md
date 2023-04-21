@@ -15,7 +15,7 @@ Adobe Unified Profile Service required fields for the Profile Union.
 * Adobe Unified Profile Service Profile Union Extension `https://ns.adobe.com/experience/profile/profile-all`
   * [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md) `https://ns.adobe.com/xdm/data/record-timeseries-events`
   * [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md) `https://ns.adobe.com/xdm/context/identitymap`
-  * [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
+  * [Segment Membership Details](../../../fieldgroups/shared/segmentation.schema.md) `https://ns.adobe.com/xdm/context/profile-segmentation`
   * [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md) `https://ns.adobe.com/xdm/context/profile-privacy`
 
 
@@ -102,8 +102,8 @@ Adobe Unified Profile Service required fields for the Profile Union.
 | [xdm:identityMap](#xdmidentitymap) | `object` | Optional | [IdentityMap](../../../fieldgroups/shared/identitymap.schema.md#xdmidentitymap) |
 | [xdm:identityPrivacyInfo](#xdmidentityprivacyinfo) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmidentityprivacyinfo) |
 | [xdm:optOutConsentLevel](#xdmoptoutconsentlevel) | `object` | Optional | [IAB TCF 2.0 Consent Details](../../../fieldgroups/profile/profile-privacy.schema.md#xdmoptoutconsentlevel) |
-| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership) |
-| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments) |
+| [xdm:segmentMembership](#xdmsegmentmembership) | `object` | Optional | [Segment Membership Details](../../../fieldgroups/shared/segmentation.schema.md#xdmsegmentmembership) |
+| [xdm:segments](#xdmsegments) | Segment membership | Optional | [Segment Membership Details](../../../fieldgroups/shared/segmentation.schema.md#xdmsegments) |
 | [xdm:timeSeriesEvents](#xdmtimeseriesevents) | Time-series Schema | Optional | [Time-series Extension for Record Data](../../../datatypes/data/record-timeseries-events.schema.md#xdmtimeseriesevents) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
@@ -376,7 +376,7 @@ Timestamp of the received opt-out signal.
 `xdm:segmentMembership`
 * is optional
 * type: `object`
-* defined in [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegmentmembership)
+* defined in [Segment Membership Details](../../../fieldgroups/shared/segmentation.schema.md#xdmsegmentmembership)
 
 ### xdm:segmentMembership Type
 
@@ -399,7 +399,7 @@ Timestamp of the received opt-out signal.
 * is optional
 * type: Segment membership
 
-* defined in [Segment Membership Details](../../../fieldgroups/profile/profile-segmentation.schema.md#xdmsegments)
+* defined in [Segment Membership Details](../../../fieldgroups/shared/segmentation.schema.md#xdmsegments)
 
 ### xdm:segments Type
 

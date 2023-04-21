@@ -1,5 +1,5 @@
 
-# Work Task Attributes Schema
+# Workfront Opperational Task Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/optask
@@ -11,7 +11,7 @@ Operational Task related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/opTask.schema.json](adobe/experience/workfront/opTask.schema.json) |
 
-## Work Task Attributes Example
+## Workfront Opperational Task Attributes Example
 ```json
 {
   "workfront:opTask": {
@@ -21,11 +21,11 @@ Operational Task related fields
 }
 ```
 
-# Work Task Attributes Properties
+# Workfront Opperational Task Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:opTask](#workfrontoptask) | `object` | Optional | Work Task Attributes (this schema) |
+| [workfront:opTask](#workfrontoptask) | `object` | Optional | Workfront Opperational Task Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:opTask
@@ -45,7 +45,7 @@ Operational Task related fields
 | Property | Type | Required |
 |----------|------|----------|
 | `workfront:actualCompletionTimestamp`| string | Optional |
-| `workfront:actualDurMinutes`| number | Optional |
+| `workfront:actualDurationMinutes`| number | Optional |
 | `workfront:actualStartTimestamp`| string | Optional |
 | `workfront:assignedToEmployeeID`| string | Optional |
 | `workfront:condition`| string | Optional |
@@ -84,15 +84,15 @@ Operational Task related fields
 
 
 
-#### workfront:actualDurMinutes
+#### workfront:actualDurationMinutes
 ##### OpTask Actual Duration Minutes
 
 
-`workfront:actualDurMinutes`
+`workfront:actualDurationMinutes`
 * is optional
 * type: `number`
 
-##### workfront:actualDurMinutes Type
+##### workfront:actualDurationMinutes Type
 
 
 `number`

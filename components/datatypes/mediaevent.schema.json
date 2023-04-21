@@ -1,0 +1,62 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/mediaEvent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media event information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Media event information.",
+  "definitions": {
+    "mediaEvent": {
+      "properties": {
+        "xdm:mediaCollection": {
+          "title": "Media Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+          "description": "Media details information related to the experience event."
+        },
+        "xdm:mediaEventTimestamp": {
+          "title": "Media Timestamp",
+          "type": "string",
+          "format": "date-time",
+          "description": "The time when an event or observation occurred."
+        },
+        "xdm:mediaEventType": {
+          "title": "Media Event Type",
+          "type": "string",
+          "description": "The media event type.",
+          "meta:enum": {
+            "media.ping": "Media ping",
+            "media.sessionStart": "Media sessionStart",
+            "media.play": "Media play",
+            "media.bufferStart": "Media bufferStart",
+            "media.pauseStart": "Media pauseStart",
+            "media.chapterStart": "Media chapterStart",
+            "media.chapterSkip": "Media chapterSkip",
+            "media.chapterComplete": "Media chapterComplete",
+            "media.adStart": "Media adStart",
+            "media.adSkip": "Media adSkip",
+            "media.adComplete": "Media adComplete",
+            "media.adBreakStart": "Media adBreakStart",
+            "media.adBreakComplete": "Media adBreakComplete",
+            "media.bitrateChange": "Media bitrateChange",
+            "media.error": "Media error",
+            "media.sessionComplete": "Media sessionComplete",
+            "media.sessionEnd": "Media sessionEnd",
+            "media.statesUpdate": "Media statesUpdate"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/mediaEvent"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/offeritem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Offer Item",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "meta:status": "experimental",
+  "description": "Class which represents an Offer",
+  "definitions": {
+    "offeritem": {
+      "properties": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": {
+          "title": "life cycle status",
+          "type": "string",
+          "description": "Status associated with offer life cycle.",
+          "meta:enum": {
+            "draft": "Draft",
+            "approved": "Approved",
+            "archived": "Archived"
+          }
+        },
+        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Frequency capping constraint",
+            "description": "Frequency capping constraint define additional rules based on prior offer proposition, either across all audiences or for a particular profile identity.",
+            "properties": {
+              "https://ns.adobe.com/experience/decisioning/offeritem/limit": {
+                "title": "Limit",
+                "description": "How many times an option can be proposed.",
+                "type": "integer",
+                "minimum": 1
+              },
+              "https://ns.adobe.com/experience/decisioning/offeritem/scope": {
+                "title": "scope",
+                "description": "Scope of the capping",
+                "type": "string",
+                "enum": ["global", "profile"],
+                "meta:enum": {
+                  "global": "Global cap is a constraint on how many times an option can be proposed in totality.",
+                  "profile": "Profile cap is a constraint on how many times an option can be proposed to a certain profile."
+                }
+              },
+              "https://ns.adobe.com/experience/decisioning/offeritem/events": {
+                "title": "Events",
+                "description": "Events of the capping to comply with. Since most of the events don't support offerId level counting, we will start with only support decisioning event, and will extend to support custom event in future phases. Other events to be supported in the future : web-display, web-click, message-delivery, message-open, message-click.",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["decisioning", "custom", "click", "impression"],
+                  "meta:enum": {
+                    "decisioning": "Decisioning",
+                    "custom": "Custom",
+                    "click": "Offer Click",
+                    "impression": "Offer Impression"
+                  }
+                },
+                "minItems": 1,
+                "default": ["decisioning"]
+              },
+              "https://ns.adobe.com/experience/decisioning/offeritem/customQuery": {
+                "title": "Custom PQL query",
+                "description": "Custom PQL query to match events.",
+                "type": "string"
+              },
+              "https://ns.adobe.com/experience/decisioning/offeritem/repeat": {
+                "title": "Repeat",
+                "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating.",
+                "type": "object",
+                "properties": {
+                  "https://ns.adobe.com/experience/decisioning/offeritem/enabled": {
+                    "title": "Enabled",
+                    "description": "If set to true ECS will created new counter rules with updated time window.",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "https://ns.adobe.com/experience/decisioning/offeritem/unit": {
+                    "title": "Unit",
+                    "description": "Unit to comply with.  It will be day/week/month.",
+                    "type": "string",
+                    "enum": ["day", "week", "month"],
+                    "meta:enum": {
+                      "day": "To comply with Day.",
+                      "week": "To comply with Week.",
+                      "month": "To comply with Month."
+                    },
+                    "default": "day"
+                  },
+                  "https://ns.adobe.com/experience/decisioning/offeritem/unitCount": {
+                    "title": "Unit Count",
+                    "description": "Unit count number.",
+                    "type": "integer",
+                    "minimum": 1,
+                    "default": 1
+                  }
+                }
+              }
+            },
+            "required": [
+              "https://ns.adobe.com/experience/decisioning/offeritem/limit",
+              "https://ns.adobe.com/experience/decisioning/offeritem/scope"
+            ]
+          }
+        }
+      },
+      "required": [
+        "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/offeritem"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ]
+}

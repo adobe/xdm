@@ -9,7 +9,7 @@ Use for tracking the details of a person's visit to a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/visit-webpage.schema.json](fieldgroups/experience-event/events/visit-webpage.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/visit-webpage.schema.json](fieldgroups/experience-event/events/visit-webpage.schema.json) |
 
 ## Visit Web Page Example
 ```json
@@ -231,7 +231,9 @@ Unknown type `object`.
     "xdm:webPageKey": {
       "title": "Web Page Key",
       "description": "Unique key of the web page.",
-      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+      "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+      "meta:titleId": "visit-webpage##xdm:webPageKey##title##45241",
+      "meta:descriptionId": "visit-webpage##xdm:webPageKey##description##13131"
     },
     "xdm:name": {
       "title": "Name",

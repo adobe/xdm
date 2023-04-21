@@ -1,0 +1,273 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/profile-healthcare-member",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Healthcare Member Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "healthcare_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Healthcare member details of a person that has or will receive a service or care, such as contact information, primary care physician, and plan information.",
+    "definitions": {
+        "member-details": {
+            "properties": {
+                "xdm:memberDetails": {
+                    "title": "Member",
+                    "description": "Information about the member.",
+                    "type": "object",
+                    "properties": {
+                        "xdm:dateAgeCollected": {
+                            "title": "Date Age Collected",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "The date the patient age was collected."
+                        },
+                        "xdm:primaryCarePhysicians": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:providerID": {
+                                        "title": "Provider ID",
+                                        "type": "string",
+                                        "description": "Unique identifier of the physician."
+                                    },
+                                    "xdm:firstName": {
+                                        "title": "First Name",
+                                        "type": "string",
+                                        "description": "Primary care physician's first name."
+                                    },
+                                    "xdm:lastName": {
+                                        "title": "Last Name",
+                                        "type": "string",
+                                        "description": "Primary care physician's last name."
+                                    },
+                                    "xdm:healthNetworkAffiliation": {
+                                        "title": "Health Network Affiliation",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "description": "Name of the health network to which the Primary Care Provider is affiliated."
+                                    },
+                                    "xdm:startDate": {
+                                        "title": "Start Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date on which the primary care provider began care for the member."
+                                    },
+                                    "xdm:endDate": {
+                                        "title": "End Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date on which the PCP ended care for the member."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:preferredAvailability": {
+                            "title": "Preferred Availability",
+                            "type": "string",
+                            "description": "Patient's preferred day and time availability for an appointment."
+                        },
+                        "xdm:prescriptions": {
+                            "title": "Prescriptions",
+                            "description": "Prescription information including ID, start date, and active flag.",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:ID": {
+                                        "title": "Prescription ID",
+                                        "type": "string",
+                                        "description": "Unique identifier for the prescription."
+                                    },
+                                    "xdm:name": {
+                                        "title": "Prescription Name",
+                                        "type": "string",
+                                        "description": "Name of the prescription."
+                                    },
+                                    "xdm:numberOfRefills": {
+                                        "title": "Number Of Refills",
+                                        "type": "integer",
+                                        "description": "Number of refills prescribed by the provider for this prescription."
+                                    },
+                                    "xdm:refillLocation": {
+                                        "title": "Prescription Refill Location",
+                                        "$ref": "https://ns.adobe.com/xdm/common/address",
+                                        "description": "Address at which the prescription will be filled."
+                                    },
+                                    "xdm:refillType": {
+                                        "title": "Refill Type",
+                                        "type": "string",
+                                        "meta:enum": {
+                                            "Retail Pharmacy": "Retail Pharmacy",
+                                            "Mail Order": "Mail Order"
+                                        },
+                                        "description": "Type of prescription refill."
+                                    },
+                                    "xdm:startDate": {
+                                        "title": "Prescription Start Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date on which the patient began taking the prescription."
+                                    },
+                                    "xdm:endDate": {
+                                        "title": "Prescription End Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date on which the patient stops taking the prescription."
+                                    },
+                                    "xdm:isCurrent": {
+                                        "title": "Is Current",
+                                        "type": "boolean",
+                                        "description": "Indicates whether the prescription is current or past."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:specialists": {
+                            "title": "Specialist",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:firstName": {
+                                        "title": "first Name",
+                                        "type": "string",
+                                        "description": "First name of the specialist provider."
+                                    },
+                                    "xdm:lastName": {
+                                        "title": "last Name",
+                                        "type": "string",
+                                        "description": "Last name of the specialist provider."
+                                    },
+                                    "xdm:specialty": {
+                                        "title": "Specialty",
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc)."
+                                    },
+                                    "xdm:providerID": {
+                                        "title": "Provider ID",
+                                        "type": "string",
+                                        "description": "Unique identifier of the specialist."
+                                    }
+                                }
+                            }
+                        },
+                        "xdm:healthConcerns": {
+                            "title": "Health Concerns",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Array list of all health concerns"
+                        },
+                        "xdm:isDeceased": {
+                            "title": "Deceased Indicator",
+                            "type": "boolean",
+                            "description": "Boolean flag indicating if the member is deceased."
+                        },
+                        "xdm:deceasedDate": {
+                            "title": "Deceased Date",
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Deceased date if the patient is deceased."
+                        },
+                        "xdm:plans": {
+                            "title": "Enrolled Plans",
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "xdm:planID": {
+                                        "title": "Plan Identifier",
+                                        "type": "string",
+                                        "description": "Unique identifier for the plan enrolled in by the member."
+                                    },
+                                    "xdm:coverageStartDate": {
+                                        "title": "Coverage Start Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Coverage start date."
+                                    },
+                                    "xdm:coverageEndDate": {
+                                        "title": "Coverage End Date",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Coverage end date."
+                                    },
+                                    "xdm:isActive": {
+                                        "title": "Is Active",
+                                        "type": "boolean",
+                                        "description": "Boolean flag indicates whether the plan is active."
+                                    },
+                                    "xdm:isDependent": {
+                                        "title": "Is Dependent",
+                                        "type": "boolean",
+                                        "description": "Indicates whether this member is a dependent."
+                                    },
+                                    "xdm:primaryMemberID": {
+                                        "title": "Primary Member ID",
+                                        "type": "string",
+                                        "description": "Unique identifier of the primary subscriber if the member is a dependent."
+                                    },
+                                    "xdm:beneficiaryRelationship": {
+                                        "title": "Beneficiary Relationship",
+                                        "type": "string",
+                                        "meta:enum": {
+                                            "self": "Self",
+                                            "spouse": "Spouse",
+                                            "child": "Child",
+                                            "parent": "Parent"
+                                        },
+                                        "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc)."
+                                    },
+                                    "xdm:billingAccountID": {
+                                        "title": "Billing Account ID",
+                                        "type": "string",
+                                        "description": "Unique identifier of the billing account."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/member-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+        }
+    ],
+    "meta:status": "stable",
+    "examples": [
+        {}
+    ]
+}

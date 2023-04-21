@@ -11,12 +11,25 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent",
+    "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent"
+  ],
   "description": "Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "definitions": {
     "decisioning-experienceevent-all": {
       "type": "object",
       "properties": {
+        "https://ns.adobe.com/experience/decisioning/propositionEventType": {
+          "title": "Proposition Event",
+          "description": "A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-event-type"
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionAction": {
+          "title": "Proposition Action",
+          "description": "The specific element that was interacted with which caused the proposition event to be triggered.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/proposition-action"
+        },
         "https://ns.adobe.com/experience/decisioning/propositions": {
           "title": "Involved Propositions",
           "type": "array",

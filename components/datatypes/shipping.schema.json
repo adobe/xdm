@@ -22,6 +22,39 @@
           "title": "Shipping Amount",
           "type": "number",
           "description": "The amount the customer had to pay for shipping."
+        },
+        "xdm:shippingDestination": {
+          "title": "Shipping Destination",
+          "type": "string",
+          "description": "The ship-to  destination specified by the user. It could be home, store etc.",
+          "enum": ["home", "store"],
+          "meta:enum": {
+            "home": "Home",
+            "store": "Store"
+          }
+        },
+        "xdm:shipDate": {
+          "title": "Ship Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date when one or more items from an order is shipped. ",
+          "meta:titleId": "order##xdm:shipDate##title##86154",
+          "meta:descriptionId": "order##xdm:shipDate##description##47784"
+        },
+        "xdm:address": {
+          "title": "Shipping Address",
+          "description": "Shipping Address.",
+          "$ref": "https://ns.adobe.com/xdm/common/address"
+        },
+        "xdm:trackingNumber": {
+          "title": "Tracking Number",
+          "type": "number",
+          "description": "The tracking number provided by the shipping carrier for a order item shipment."
+        },
+        "xdm:trackingURL": {
+          "title": "Tracking URL",
+          "type": "string",
+          "description": "The URL to track the shipping status of an order item."
         }
       }
     }
@@ -31,6 +64,5 @@
       "$ref": "#/definitions/shipping"
     }
   ],
-  "meta:status": "experimental",
-  "meta:createdDate": "2022-03-02"
+  "meta:status": "experimental"
 }

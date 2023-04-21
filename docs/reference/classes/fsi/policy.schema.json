@@ -70,7 +70,13 @@
                     ],
                     "description": "Type of insurance policy, such as home, automobile, renter, or boat.",
                     "meta:titleId": "policy##xdm:type##title##19481",
-                    "meta:descriptionId": "policy##xdm:type##description##29041"
+                    "meta:descriptionId": "policy##xdm:type##description##29041",
+                    "meta:enum": {
+                        "home": "Home",
+                        "automobile": "Automobile",
+                        "renter": "Renter",
+                        "boat": "Boat"
+                    }
                 },
                 "xdm:assignedBeneficiary": {
                     "title": "Assigned Beneficiaries",

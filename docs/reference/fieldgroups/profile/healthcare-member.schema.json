@@ -1,0 +1,411 @@
+{
+    "meta:license": [
+        "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "$id": "https://ns.adobe.com/xdm/mixins/healthcare-member",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Member Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:tags": {
+        "industry": [
+            "healthcare_services"
+        ]
+    },
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
+    "definitions": {
+        "member-details": {
+            "properties": {
+                "xdm:member": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:ID": {
+                            "Title": "Member ID",
+                            "type": "string",
+                            "description": "Unique Identifier of the patient/member."
+                        },
+                        "xdm:name": {
+                            "Title": "Member Name",
+                            "description": "Member's full name.",
+                            "$ref": "https://ns.adobe.com/xdm/context/person-name"
+                        },
+                        "xdm:memberAddress": {
+                            "type": "object",
+                            "properties": {
+                                "xdm:addressType": {
+                                    "Title": "Member Address type",
+                                    "type": "string",
+                                    "enum": [
+                                        "Home",
+                                        "Work",
+                                        "Mailing",
+                                        "Other"
+                                    ],
+                                    "meta:enum": {
+                                        "Home": "Home Address",
+                                        "Work": "Work Address",
+                                        "Mailing": "Mailing Address",
+                                        "Other": "Other Address"
+                                    }
+                                },
+                                "xdm:address": {
+                                    "Title": "Member Address",
+                                    "$ref": "https://ns.adobe.com/xdm/common/address"
+                                },
+                                "xdm:effectiveStartDate": {
+                                    "Title": "Effective Start Date",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "description": "Address start date."
+                                },
+                                "xdm:efectiveEndDate": {
+                                    "Title": "Effective End Date",
+                                    "type": "string",
+                                    "format": "date-time",
+                                    "description": "Address end date."
+                                }
+                            },
+                            "xdm:phoneNumber": {
+                                "Title": "Phone Number",
+                                "description": "Member's phone number.",
+                                "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+                            },
+                            "xdm:memberDetails": {
+                                "Title": "Member Details",
+                                "description": "Member's additional details.",
+                                "type": "object",
+                                "properties": {
+                                    "xdm:birthDate": {
+                                        "title": "Birth date(YYYY-MM-DD)",
+                                        "type": "string",
+                                        "format": "date",
+                                        "description": "The full date a person was born."
+                                    },
+                                    "xdm:gender": {
+                                        "title": "Gender",
+                                        "type": "string",
+                                        "enum": [
+                                            "male",
+                                            "female",
+                                            "not_specified",
+                                            "non_specific"
+                                        ],
+                                        "meta:enum": {
+                                            "male": "Male",
+                                            "female": "Female",
+                                            "not_specified": "Not Specified",
+                                            "non_specific": "Non-specific"
+                                        },
+                                        "description": "Gender identity of the person.\n",
+                                        "default": "not_specified"
+                                    },
+                                    "xdm:maritalStatus": {
+                                        "title": "Marital Status",
+                                        "type": "string",
+                                        "enum": [
+                                            "married",
+                                            "single",
+                                            "divorced",
+                                            "widowed",
+                                            "not_specified"
+                                        ],
+                                        "meta:enum": {
+                                            "married": "Married",
+                                            "single": "Single",
+                                            "divorced": "Divorced",
+                                            "widowed": "Widowed",
+                                            "not_specified": "Not Specified"
+                                        },
+                                        "description": "Describes a person's relationship with a significant other.",
+                                        "default": "not_specified"
+                                    },
+                                    "xdm:nationality": {
+                                        "title": "Nationality",
+                                        "type": "string",
+                                        "pattern": "^[A-Z]{2}$",
+                                        "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code."
+                                    },
+                                    "xdm:dateAgeCollected": {
+                                        "Title": "Date Age Collected",
+                                        "type": "string",
+                                        "format": "date-time",
+                                        "description": "Date when date of birth information collected."
+                                    },
+                                    "xdm:multipleBirth": {
+                                        "type": "object",
+                                        "properties": {
+                                            "xdm:isMultipleBirth ": {
+                                                "Title": "Is Multiple Birth",
+                                                "type": "boolean",
+                                                "description": "Boolean flag to indicate if the member had a multiple birth."
+                                            },
+                                            "xdm:multipleBirthNumber": {
+                                                "Title": "Multiple Birth Number",
+                                                "type": "integer",
+                                                "description": "Number of babies born if multiple birth is true."
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "xdm:emailAddress": {
+                                "Title": "Email Address",
+                                "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+                            },
+                            "xdm:memberOrganization": {
+                                "Title": "Member Organization",
+                                "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-account-organization"
+                            }
+                        }
+                    }
+                },
+                "xdm:primaryCarePhysician ": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "xdm:ID ": {
+                                "Title": "ID",
+                                "type": "string",
+                                "description": "Primary Care Physician unique identifier."
+                            },
+                            "xdm:name": {
+                                "Title": "Primary Care Physician Name",
+                                "type": "string",
+                                "description": "Primary Care Physician Name."
+                            },
+                            "xdm:startDate": {
+                                "Title": "Start Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Primary Care Physician start date."
+                            },
+                            "xdm:endDate": {
+                                "Title": "End Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Primary Care Physician end date."
+                            }
+                        }
+                    }
+                },
+                "xdm:emergencyContact": {
+                    "type": "object",
+                    "properties": {
+                        "xdm:name": {
+                            "Title": "Emergency Contact Name",
+                            "type": "string",
+                            "description": "Emergency contact name."
+                        },
+                        "xdm:contactPhone": {
+                            "Title": "Emergency Contact Phone",
+                            "type": "string",
+                            "description": "Emergency contact phone number."
+                        }
+                    }
+                },
+                "xdm:prefferedAvaiability": {
+                    "Title": "Preffered Availability",
+                    "type": "string",
+                    "description": "Patient prefered day and time avaiability for an appointment."
+                },
+                "xdm:Medication": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "xdm:medicationID": {
+                                "Title": "Medication Id",
+                                "type": "string",
+                                "description": "Medication unique identifier."
+                            },
+                            "xdm:medicationDate": {
+                                "Title": "Medication Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Medication Date."
+                            },
+                            "xdm:isCurrent": {
+                                "Title": "Is Current",
+                                "type": "boolean",
+                                "description": "Boolean flag indicates if this medication is current or previous."
+                            }
+                        }
+                    }
+                },
+                "xdm:dependent": {
+                    "Title": "Dependent",
+                    "type": "integer",
+                    "description": "number issued to each beneficiary."
+                },
+                "xdm:beneficiaryRelationship": {
+                    "Title": "Beneficiary Relationship",
+                    "type": "string",
+                    "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc)."
+                },
+                "xdm:primaryMemeberID": {
+                    "Title": "Primary Member ID",
+                    "type": "string",
+                    "description": "Unique Identifier of the primary subscriber if the member is dependent."
+                },
+                "xdm:billingAccountID": {
+                    "Title": "Billing Account ID",
+                    "type": "string",
+                    "description": "Unique Identifier of the billing account."
+                },
+                "xdm:specialist": {
+                    "Title": "Specialist",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "xdm:name": {
+                                "Title": "Name",
+                                "type": "string",
+                                "description": "Name of the specialist."
+                            },
+                            "xdm:diagnosis": {
+                                "Title": "Diagnosis",
+                                "type": "string",
+                                "description": "Specialization diagnosis."
+                            },
+                            "xdm:providerID": {
+                                "Title": "Providerid",
+                                "type": "string",
+                                "description": "Provider unique identifier."
+                            }
+                        }
+                    }
+                },
+                "xdm:isLead": {
+                    "Title": "Is Lead",
+                    "type": "boolean",
+                    "description": "Boolean flag indicates if this member is a lead."
+                },
+                "xdm:isOpportunity": {
+                    "Title": "Is Opportunity",
+                    "type": "boolean",
+                    "description": "Boolean flag indicates if this this member is a opportunity."
+                },
+                "xdm:plan": {
+                    "Title": "Member Plan",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "xdm:ID": {
+                                "Title": "ID",
+                                "type": "string",
+                                "description": "Plan ID unique identifier."
+                            },
+                            "xdm:coverageType": {
+                                "Title": "Coverage Type",
+                                "type": "string",
+                                "enum": [
+                                    "Medical",
+                                    "Dental",
+                                    "Vision",
+                                    "Accident"
+                                ],
+                                "meta:enum": {
+                                    "Medical": "Medical",
+                                    "Dental": "Dental",
+                                    "Vision": "Vision",
+                                    "Accident": "Accident"
+                                },
+                                "description": "Member plan coverage type."
+                            },
+                            "xdm:payerID": {
+                                "Title": "Payer ID",
+                                "type": "string",
+                                "description": "Payer unique identifier."
+                            },
+                            "xdm:contractID": {
+                                "Title": "Contract ID",
+                                "type": "string",
+                                "description": "Unique identifier of the contract that is signed by the member."
+                            },
+                            "xdm:ownerID": {
+                                "Title": "Owner ID",
+                                "type": "string",
+                                "description": "Unique identifier of the Owner of the policy which could be owned by an individual , group or an organization."
+                            },
+                            "xdm:isActive": {
+                                "Title": "Is Active",
+                                "type": "boolean",
+                                "description": "Boolean flag indicates whether the plan is active."
+                            },
+                            "xdm:network": {
+                                "Title": "Network",
+                                "type": "string",
+                                "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term."
+                            },
+                            "xdm:affiliation": {
+                                "Title": "Affiliation",
+                                "type": "string",
+                                "description": "An affiliation to a government service, such as the army or navy.."
+                            },
+                            "xdm:coverageStartDate": {
+                                "Title": "Coverage Start Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Coverage start date."
+                            },
+                            "xdm:coverageEndDate": {
+                                "Title": "Coverage End Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "Coverage end date."
+                            },
+                            "xdm:lastVerification": {
+                                "Title": "Last Verification Date",
+                                "type": "string",
+                                "format": "date-time",
+                                "description": "The date on which this plan was last verified."
+                            },
+                            "xdm:planType": {
+                                "Title": "Plan Type",
+                                "type": "string",
+                                "enum": [
+                                    "primary",
+                                    "secondary",
+                                    "tertiary"
+                                ],
+                                "meta:enum": {
+                                    "primary": "primary",
+                                    "secondary": "secondary",
+                                    "tertiary": "tertiary"
+                                },
+                                "description": "This indicates if the plan is primary,secondary or tertiary plan."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/member-details"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:createdDate": "2022-05-18",
+    "examples": [
+        {}
+    ]
+}

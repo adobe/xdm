@@ -105,10 +105,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:financialAccountType Known Values
 | Value | Description |
 |-------|-------------|
-| `checking` |  |
-| `savings` |  |
-| `retirement` |  |
-| `investment` |  |
+| `checking` | Checking |
+| `savings` | Savings |
+| `retirement` | Retirement |
+| `investment` | Investment |
 
 
 

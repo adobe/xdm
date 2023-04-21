@@ -263,10 +263,10 @@ The value of this property **must** be equal to one of the [known values below](
 ### xdm:type Known Values
 | Value | Description |
 |-------|-------------|
-| `home` |  |
-| `automobile` |  |
-| `renter` |  |
-| `boat` |  |
+| `home` | Home |
+| `automobile` | Automobile |
+| `renter` | Renter |
+| `boat` | Boat |
 
 
 

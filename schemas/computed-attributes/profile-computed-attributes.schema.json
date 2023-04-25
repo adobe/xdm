@@ -1,0 +1,66 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/schemas/computed-attributes",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Computed Attributes System Schema",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:service": true,
+  "description": "This is a system read only schema used by Profile to added computed attributes. This should never be enabled for profile.",
+  "definitions": {
+    "computed-attributes": {
+      "properties": {
+        "xdm:datasetID": {
+          "title": "Dataset ID",
+          "description": "Dataset ID.",
+          "type": "string"
+        },
+        "xdm:fragmentID": {
+          "title": "Fragment ID",
+          "description": "Fragment ID.",
+          "type": "string"
+        },
+        "xdm:lastUpdatedAt": {
+          "title": "Last Updated At",
+          "description": "Last updated at..",
+          "type": "string",
+          "format": "date-time"
+        },
+        "xdm:window": {
+          "title": "Window",
+          "description": "Window.",
+          "type": "object",
+          "properties": {
+            "xdm:start": {
+              "title": "Start Date Time",
+              "description": "Start date time.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "xdm:end": {
+              "title": "End Date Time",
+              "description": "End date time.",
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/computed-attributes"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/profile"
+    }
+  ],
+  "meta:status": "stable"
+}

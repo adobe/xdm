@@ -2,15 +2,15 @@
   "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": "draft",
   "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": [
     {
-      "https://ns.adobe.com/experience/decisioning/offeritem/limit": 10,
-      "https://ns.adobe.com/experience/decisioning/offeritem/scope": "profile",
-      "https://ns.adobe.com/experience/decisioning/offeritem/events": [
+      "xdm:limit": 10,
+      "xdm:scope": "profile",
+      "xdm:events": [
         "decisioning"
       ],
-      "https://ns.adobe.com/experience/decisioning/offeritem/repeat": {
-        "https://ns.adobe.com/experience/decisioning/offeritem/enabled": true,
-        "https://ns.adobe.com/experience/decisioning/offeritem/unit": "week",
-        "https://ns.adobe.com/experience/decisioning/offeritem/unitCount": 2
+      "xdm:repeat": {
+        "xdm:enabled": true,
+        "xdm:unit": "week",
+        "xdm:unitCount": 2
       }
     }
   ]

@@ -4,9 +4,7 @@
     {
       "xdm:limit": 10,
       "xdm:scope": "profile",
-      "xdm:events": [
-        "decisioning"
-      ],
+      "xdm:events": ["decisioning"],
       "xdm:repeat": {
         "xdm:enabled": true,
         "xdm:unit": "week",

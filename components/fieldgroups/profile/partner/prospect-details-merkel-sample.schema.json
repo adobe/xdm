@@ -1,0 +1,176 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkel-sample",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Merkel Prospect Details(Sample)",
+  "type": "object",
+  "meta:tags": {
+    "partnerProspect": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/prospect-profile"],
+  "description": "Prospect Profile extensions by Merkel. This is a sample FG.",
+  "definitions": {
+    "merkel-profile-sample": {
+      "properties": {
+        "xdm:merkel": {
+          "type": "object",
+          "properties": {
+            "xdm:ageRangeInHousehold": {
+              "type": "integer",
+              "title": "ageRangeInHousehold",
+              "description": "ageRangeInHousehold"
+            },
+            "xdm:apparelAccessories": {
+              "type": "integer",
+              "title": "apparelAccessories",
+              "description": "apparelAccessories"
+            },
+            "xdm:bicycling": {
+              "type": "integer",
+              "title": "bicycling",
+              "description": "bicycling"
+            },
+            "xdm:cableTv": {
+              "type": "integer",
+              "title": "cableTv",
+              "description": "cableTv"
+            },
+            "xdm:domestics": {
+              "type": "integer",
+              "title": "domestics",
+              "description": "domestics"
+            },
+            "xdm:electronics": {
+              "type": "integer",
+              "title": "electronics",
+              "description": "electronics"
+            },
+            "xdm:foodAndBeverage": {
+              "type": "integer",
+              "title": "foodAndBeverage",
+              "description": "foodAndBeverage"
+            },
+            "xdm:footwear": {
+              "type": "integer",
+              "title": "footwear",
+              "description": "footwear"
+            },
+            "xdm:healthFoods": {
+              "type": "integer",
+              "title": "healthFoods",
+              "description": "healthFoods"
+            },
+            "xdm:hiking": {
+              "type": "integer",
+              "title": "hiking",
+              "description": "hiking"
+            },
+            "xdm:householdID": {
+              "type": "string",
+              "title": "householdId",
+              "description": "householdId"
+            },
+            "xdm:individualID": {
+              "type": "string",
+              "title": "individualId",
+              "description": "individualId"
+            },
+            "xdm:inferredCardHolder": {
+              "type": "integer",
+              "title": "inferredCardHolder",
+              "description": "inferredCardHolder"
+            },
+            "xdm:inferredPremiumCardholder": {
+              "type": "integer",
+              "title": "inferredPremiumCardholder",
+              "description": "inferredPremiumCardholder"
+            },
+            "xdm:matchLevelFlag": {
+              "type": "integer",
+              "title": "matchLevelFlag",
+              "description": "matchLevelFlag"
+            },
+            "xdm:buyerRating": {
+              "type": "integer",
+              "title": "BuyerRating",
+              "description": "BuyerRating"
+            },
+            "xdm:donorRating": {
+              "type": "integer",
+              "title": "DonorRating",
+              "description": "DonorRating"
+            },
+            "xdm:investmentRating": {
+              "type": "integer",
+              "title": "InvestmentRating",
+              "description": "InvestmentRating"
+            },
+            "xdm:responderRating": {
+              "type": "integer",
+              "title": "ResponderRating",
+              "description": "ResponderRating"
+            },
+            "xdm:spendingVelocity": {
+              "type": "integer",
+              "title": "SpendingVelocity",
+              "description": "SpendingVelocity"
+            },
+            "xdm:spendingVolume": {
+              "type": "integer",
+              "title": "SpendingVolume",
+              "description": "SpendingVolume"
+            },
+            "xdm:recordID": {
+              "type": "string",
+              "title": "recordId",
+              "description": "recordId"
+            },
+            "xdm:residenceID": {
+              "type": "string",
+              "title": "residenceId",
+              "description": "residenceId"
+            },
+            "xdm:sailing": {
+              "type": "integer",
+              "title": "sailing",
+              "description": "sailing"
+            },
+            "xdm:seasonalHolidayProducts": {
+              "type": "integer",
+              "title": "seasonalHolidayProducts",
+              "description": "seasonalHolidayProducts"
+            },
+            "xdm:skiing": {
+              "type": "integer",
+              "title": "skiing",
+              "description": "skiing"
+            },
+            "xdm:tennis": {
+              "type": "integer",
+              "title": "tennis",
+              "description": "tennis"
+            },
+            "xdm:tvShoppers": {
+              "type": "integer",
+              "title": "tvShoppers",
+              "description": "tvShoppers"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/merkel-profile-sample"
+    }
+  ],
+  "meta:status": "experimental"
+}

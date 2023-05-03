@@ -10,6 +10,9 @@
   "title": "Merkel Prospect Details(Sample)",
   "type": "object",
   "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:tags": {
     "partnerProspect": true
   },
   "meta:extensible": true,

@@ -15,6 +15,9 @@
   "meta:tags": {
     "industry": ["all"]
   },
+  "meta:tags": {
+    "partnerProspect": true
+  },
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Use this class to bring in prospect profiles sourced from data vendors top of the funnel customer acquisition use-cases.",
   "definitions": {

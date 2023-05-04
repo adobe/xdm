@@ -15,14 +15,17 @@
   "meta:tags": {
     "industry": ["all"]
   },
+  "meta:tags": {
+    "partnerProspect": true
+  },
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
-  "description": "An XDM Individual Prospect Profile. Use this class to bring in partner provided IDs.",
+  "description": "Use this class to bring in prospect profiles sourced from data vendors top of the funnel customer acquisition use-cases.",
   "definitions": {
     "prospect": {
       "properties": {
         "xdm:partnerID": {
           "title": "Partner ID",
-          "description": "Unique identifier of Partner Profile fragment.",
+          "description": "Typically a unique pseudonymous identifier which identifies an individual prospect.",
           "type": "string"
         }
       }

@@ -13,7 +13,7 @@
   "meta:extensible": true,
   "description": "Session details information.",
   "definitions": {
-    "sessionDetails": {
+    "sessionDetailsCommon": {
       "properties": {
         "xdm:ID": {
           "title": "Media Session ID",
@@ -323,11 +323,6 @@
             "audio": "Audio",
             "audioAd": "Audio Ad"
           }
-        },
-        "xdm:pccr": {
-          "title": "Pccr",
-          "type": "boolean",
-          "description": "Indicates that a redirect occurred."
         }
       },
       "required": [
@@ -338,11 +333,23 @@
         "xdm:playerName",
         "xdm:channel"
       ]
+    },
+    "sessionDetailsReporting": {
+      "properties": {
+        "xdm:pccr": {
+          "title": "Pccr",
+          "type": "boolean",
+          "description": "Indicates that a redirect occurred."
+        }
+      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/sessionDetails"
+      "$ref": "#/definitions/sessionDetailsCommon"
+    },
+    {
+      "$ref": "#/definitions/sessionDetailsReporting"
     }
   ]
 }

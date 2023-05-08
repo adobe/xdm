@@ -56,7 +56,8 @@
       "xdm:length": 100,
       "xdm:contentType": "VOD",
       "xdm:playerName": "playerName",
-      "xdm:channel": "channel"
+      "xdm:channel": "channel",
+      "xdm:pccr": true
     },
     "xdm:advertisingDetails": {
       "xdm:name": "123456789",

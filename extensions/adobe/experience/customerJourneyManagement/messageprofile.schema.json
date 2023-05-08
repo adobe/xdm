@@ -103,12 +103,12 @@
         "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMailFileName": {
           "title": "Direct Mail FileName",
           "type": "string",
-          "description": "Direct Mail FileName",
+          "description": "Direct Mail FileName"
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMaildestinationId": {
           "title": "Direct Mail Destination Id",
           "type": "string",
-          "description": "Direct Mail Destination Id",
+          "description": "Direct Mail Destination Id"
         }
       }
     }

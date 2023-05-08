@@ -1,0 +1,12 @@
+{
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
+    "@id": "https://ns.adobe.com/xdm/channels/directMail"
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant": "A",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized": true,
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
+  "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/routingDestination": "sftp",
+  "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMailFileName": "directmailfile.csv",
+  "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMaildestinationId": "3125763098621389789237981237"
+}

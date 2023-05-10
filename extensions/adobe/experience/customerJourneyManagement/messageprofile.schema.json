@@ -90,26 +90,6 @@
             "vibes": "Vibes sms Provider "
           }
         },
-        "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/routingDestination": {
-          "title": "Routing Destination",
-          "type": "string",
-          "description": "Routing Destination for Direct mail Channel , e.g. S3 or SFTP or Azue blob",
-          "meta:enum": {
-            "s3": "S3 routing Destination",
-            "sftp": "SFTP Routing Destination",
-            "azure": "Azure Routing Destination "
-          }
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMailFileName": {
-          "title": "Direct Mail FileName",
-          "type": "string",
-          "description": "Direct Mail FileName"
-        },
-        "https://ns.adobe.com/experience/customerJourneyManagement/directMailChannelContext/directMaildestinationID": {
-          "title": "Direct Mail Destination Id",
-          "type": "string",
-          "description": "Direct Mail Destination Id"
-        }
       }
     }
   },

@@ -45,5 +45,11 @@
       "NewsLetter",
       "Morning"
     ]
-  }
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMail": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/routingDestination": "SFTP",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMailFileName": "Direct Mail Campaign fileName ",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMaildestinationID": "0879238rf-51ff-a8ff6756308b"
+
+  },
 }

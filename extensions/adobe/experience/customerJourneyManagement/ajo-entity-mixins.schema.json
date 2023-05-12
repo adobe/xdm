@@ -210,27 +210,27 @@
           }
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMail": {
-              "title": "Direct Mail Channel Specific Fields",
-              "type": "object",
-              "description": "Direct Mail Channel Specific Fields.",
-              "properties": {
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/routingDestination": {
-                  "title": "Direct Mail Routing Destination",
-                  "type": "string",
-                  "description": "Direct Mail Routing Destination, non-personalized"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMailFileName": {
-                  "title": "Direct Mail FileName",
-                  "type": "string",
-                  "description": "Direct Mail FileName"
-                },
-                "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMaildestinationID": {
-                  "title": "Direct Mail Routing Destination ID",
-                  "type": "string",
-                  "description": "Direct Mail Routing Destination ID"
-                }
-              }
-         }
+          "title": "Direct Mail Channel Specific Fields",
+          "type": "object",
+          "description": "Direct Mail Channel Specific Fields.",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/routingDestination": {
+              "title": "Direct Mail Routing Destination",
+              "type": "string",
+              "description": "Direct Mail Routing Destination, non-personalized"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMailFileName": {
+              "title": "Direct Mail FileName",
+              "type": "string",
+              "description": "Direct Mail FileName"
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMaildestinationID": {
+              "title": "Direct Mail Routing Destination ID",
+              "type": "string",
+              "description": "Direct Mail Routing Destination ID"
+            }
+          }
+        }
       }
     }
   },

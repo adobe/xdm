@@ -36,8 +36,8 @@
           }
         },
         "xdm:targetDatasetID": {
-          "title": "Target Dataset ID specified by the user to apply hygiene operations",
-          "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+          "title": "ID(s) of the dataset(s) to which the hygiene operations apply",
+          "description": "May be \"ALL\", but only if operationType = \"deleteIdentity\". Otherwise, a comma-separated list of datasetID's is required.",
           "type": "string",
           "meta:titleId": "aep-hygiene-ops##xdm:targetDatasetID##title##10841",
           "meta:descriptionId": "aep-hygiene-ops##xdm:targetDatasetID##description##86781"
@@ -48,6 +48,20 @@
           "type": "string",
           "meta:titleId": "aep-hygiene-ops##xdm:workorderID##title##7131",
           "meta:descriptionId": "aep-hygiene-ops##xdm:workorderID##description##50431"
+        },
+        "xdm:targetProducts": {
+          "title": "Products that should process this request.",
+          "description": "Array of products to which these requests apply. If this field is absent, all products should process these requests.",
+          "type": "array",
+          "items": {
+            "title": "Product Name",
+            "description": "A product name, such as \"datalake\", \"identity\", or \"profile\".",
+            "type": "string",
+            "meta:titleId": "TBD",
+            "meta:descriptionId": "TBD"
+          },
+          "meta:titleId": "TBD",
+          "meta:descriptionId": "TBD"
         },
         "xdm:operation": {
           "title": "Payload of the hygiene op request",

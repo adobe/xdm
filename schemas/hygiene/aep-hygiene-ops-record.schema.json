@@ -56,12 +56,8 @@
           "items": {
             "title": "Product Name",
             "description": "A product name, such as \"datalake\", \"identity\", or \"profile\".",
-            "type": "string",
-            "meta:titleId": "TBD",
-            "meta:descriptionId": "TBD"
-          },
-          "meta:titleId": "TBD",
-          "meta:descriptionId": "TBD"
+            "type": "string"
+          }
         },
         "xdm:operation": {
           "title": "Payload of the hygiene op request",

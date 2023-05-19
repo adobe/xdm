@@ -14,15 +14,20 @@
   "definitions": {
     "asset": {
       "properties": {
-        "xdm:sourceURL": {
-          "title": "sourceURL",
+        "xdm:repository": {
+          "title": "repository",
           "type": "string",
-          "description": "source URL of the asset. eg) URL of an image asset http://cdn.com/myimage.png"
+          "description": "repository of the asset.",
+          "enum": ["aem", "web"],
+          "meta:enum": {
+            "aem": "AEM",
+            "web": "Web"
+          }
         },
         "xdm:type": {
           "title": "type",
           "type": "string",
-          "description": "type of the asset. eg) Image, HTML, Json",
+          "description": "type of the asset.",
           "enum": ["image", "html", "json"],
           "meta:enum": {
             "image": "Image",
@@ -30,12 +35,18 @@
             "json": "Json"
           }
         },
+        "xdm:sourceURL": {
+          "title": "sourceURL",
+          "type": "string",
+          "description": "source URL of the asset. eg) URL of an image asset http://cdn.com/myimage.png"
+        },
         "xdm:destinationURL": {
           "title": "destinationURL",
           "type": "string",
           "description": "certain assets like images can have a destination, when clicked upon. eg) http://ecommerce.com/product"
         }
-      }
+      },
+      "required": ["xdm:repository", "xdm:sourceURL"]
     }
   },
   "allOf": [

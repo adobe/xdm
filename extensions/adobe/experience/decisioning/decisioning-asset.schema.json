@@ -45,14 +45,10 @@
           "type": "string",
           "description": "certain assets like images can have a destination, when clicked upon. eg) http://ecommerce.com/product"
         }
-      },
-      "required": ["xdm:repository", "xdm:sourceURL"]
+      }
     }
   },
   "allOf": [
-    {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-    },
     {
       "$ref": "#/definitions/asset"
     }

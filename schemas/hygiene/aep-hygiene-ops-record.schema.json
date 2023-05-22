@@ -49,13 +49,13 @@
           "meta:titleId": "aep-hygiene-ops##xdm:workorderID##title##7131",
           "meta:descriptionId": "aep-hygiene-ops##xdm:workorderID##description##50431"
         },
-        "xdm:targetProducts": {
-          "title": "Products that should process this request.",
-          "description": "Array of products to which these requests apply. If this field is absent, all products should process these requests.",
+        "xdm:targetServices": {
+          "title": "Services that should process this request.",
+          "description": "Array of service names indicating to whom these requests apply. If this field is absent, all services should process these requests.",
           "type": "array",
           "items": {
-            "title": "Product Name",
-            "description": "A product name, such as \"datalake\", \"identity\", or \"profile\".",
+            "title": "Service Name",
+            "description": "A service name, such as \"datalake\", \"identity\", or \"profile\".",
             "type": "string"
           }
         },

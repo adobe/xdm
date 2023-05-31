@@ -1,0 +1,17 @@
+{
+  "xdm:pointOfInterest": {
+    "xdm:poiName": "San Francisco airport",
+    "xdm:poiMetadata": {
+      "xdm:list": [
+        {
+          "xdm:key": "category",
+          "xdm:value": "airport"
+        },
+        {
+          "xdm:key": "city",
+          "xdm:value": "San Francisco"
+        }
+      ]
+    }
+  }
+}

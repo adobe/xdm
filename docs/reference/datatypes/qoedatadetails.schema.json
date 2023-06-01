@@ -17,7 +17,7 @@
             "properties": {
                 "xdm:bitrateAverageBucket": {
                     "title": "Average Bitrate Bucket",
-                    "type": "integer",
+                    "type": "string",
                     "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session."
                 },
                 "xdm:bitrate": {
@@ -144,7 +144,7 @@
     ],
     "examples": [
         {
-            "xdm:bitrateAverageBucket": 100
+            "xdm:bitrateAverageBucket": "800-899"
         }
     ]
 }

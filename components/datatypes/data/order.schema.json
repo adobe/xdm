@@ -61,6 +61,11 @@
           "meta:titleId": "order##xdm:taxAmount##title##81954",
           "meta:descriptionId": "order##xdm:taxAmount##description##51205"
         },
+        "xdm:discountAmount": {
+          "title": "Discount Amount",
+          "type": "number",
+          "description": "The difference between the regular price and the special price - applied to the entire order, rather than to individual products."
+        },
         "xdm:priceTotal": {
           "title": "Price Total",
           "type": "number",

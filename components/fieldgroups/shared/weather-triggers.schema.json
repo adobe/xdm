@@ -13,7 +13,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/xdm/classes/weather"
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "title": "Weather Triggers",
   "type": "object",
   "description": "Weather Triggers",

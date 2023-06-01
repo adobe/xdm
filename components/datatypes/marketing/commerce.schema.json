@@ -14,6 +14,11 @@
   "definitions": {
     "commerce": {
       "properties": {
+        "xdm:commerceScope": {
+          "title": "Scope",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/commercescope",
+          "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.)"
+        },
         "xdm:order": {
           "title": "Order",
           "$ref": "https://ns.adobe.com/xdm/data/order",

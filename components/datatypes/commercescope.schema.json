@@ -13,25 +13,25 @@
   "definitions": {
     "commerceScope": {
       "properties": {
-        "xdm:environment": {
+        "xdm:environmentID": {
           "title": "Environment ID",
           "type": "string",
-          "description": "The environment ID"
+          "description": "The environment ID. A 32-digit alphanumeric ID separated by hyphens"
         },
-        "xdm:website": {
+        "xdm:websiteCode": {
           "title": "Website Code",
           "type": "string",
-          "description": "The website code. Many websites may exist in an environment"
+          "description": "The unique website code. Many websites may exist in an environment"
         },
-        "xdm:store": {
+        "xdm:storeCode": {
           "title": "Store Code",
           "type": "string",
-          "description": "The store code. Many stores may exist per website"
+          "description": "The unique store code. Many stores may exist per website"
         },
-        "xdm:storeView": {
+        "xdm:storeViewCode": {
           "title": "Store View Code",
           "type": "string",
-          "description": "The store view code. Many store views may exist per store"
+          "description": "The unique store view code. Many store views may exist per store"
         }
       }
     }

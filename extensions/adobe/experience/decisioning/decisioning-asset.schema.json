@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/decisioning-asset",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decisioning Asset",
+  "description": "Decisioning assets are references to assets, which would be used to render the decisionItems. eg) HTML, Image, Json",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "asset": {
+      "properties": {
+        "xdm:repository": {
+          "title": "repository",
+          "type": "string",
+          "description": "repository of the asset.",
+          "enum": ["aem", "web"],
+          "meta:enum": {
+            "aem": "AEM",
+            "web": "Web"
+          }
+        },
+        "xdm:type": {
+          "title": "type",
+          "type": "string",
+          "description": "type of the asset.",
+          "meta:enum": {
+            "image": "Image",
+            "html": "HTML",
+            "json": "Json",
+            "text": "Text"
+          }
+        },
+        "xdm:sourceURL": {
+          "title": "sourceURL",
+          "type": "string",
+          "description": "source URL of the asset. eg) URL of an image asset http://cdn.com/myimage.png"
+        },
+        "xdm:destinationURL": {
+          "title": "destinationURL",
+          "type": "string",
+          "description": "certain assets like images can have a destination, when clicked upon. eg) http://ecommerce.com/product"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/asset"
+    }
+  ],
+  "meta:status": "experimental"
+}

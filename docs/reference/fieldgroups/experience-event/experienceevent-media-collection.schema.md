@@ -53,7 +53,7 @@ Track interactions with media collection.
       "xdm:errorSource": "player"
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrateAverageBucket": 100
+      "xdm:bitrateAverageBucket": "800-899"
     },
     "xdm:statesStart": [
       {

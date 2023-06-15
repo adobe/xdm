@@ -139,12 +139,7 @@
           "title": "Requisition List",
           "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
           "description": "The properties of requisition list created by customer."
-        },
-        "xdm:commerceScope": {
-          "title": "Scope",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/commercescope",
-          "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.)."
-        },
+        }
       }
     }
   },

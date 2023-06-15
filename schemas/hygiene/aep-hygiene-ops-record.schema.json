@@ -36,8 +36,8 @@
           }
         },
         "xdm:targetDatasetID": {
-          "title": "Target Dataset ID specified by the user to apply hygiene operations",
-          "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+          "title": "ID(s) of the dataset(s) to which the hygiene operations apply",
+          "description": "May be \"ALL\", but only if operationType = \"deleteIdentity\". Otherwise, a comma-separated list of datasetID's is required.",
           "type": "string",
           "meta:titleId": "aep-hygiene-ops##xdm:targetDatasetID##title##10841",
           "meta:descriptionId": "aep-hygiene-ops##xdm:targetDatasetID##description##86781"
@@ -48,6 +48,16 @@
           "type": "string",
           "meta:titleId": "aep-hygiene-ops##xdm:workorderID##title##7131",
           "meta:descriptionId": "aep-hygiene-ops##xdm:workorderID##description##50431"
+        },
+        "xdm:targetServices": {
+          "title": "Services that should process this request.",
+          "description": "Array of service names indicating to whom these requests apply. If this field is absent, all services should process these requests.",
+          "type": "array",
+          "items": {
+            "title": "Service Name",
+            "description": "A service name, such as \"datalake\", \"identity\", or \"profile\".",
+            "type": "string"
+          }
         },
         "xdm:operation": {
           "title": "Payload of the hygiene op request",

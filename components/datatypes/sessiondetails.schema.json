@@ -312,6 +312,11 @@
           "type": "number",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
         },
+        "xdm:cdn": {
+          "title": "Content Delivery Network",
+          "type": "string",
+          "description": "The content delivery network of the content played."
+        },
         "xdm:pev3": {
           "title": "Pev3",
           "type": "string",

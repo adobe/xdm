@@ -60,6 +60,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/profile"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
     }
   ],
   "meta:status": "stable"

@@ -13,7 +13,7 @@
     "https://ns.adobe.com/xdm/context/experienceevent",
     "https://ns.adobe.com/xdm/classes/weather"
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "title": "Forecasted Weather",
   "type": "object",
   "description": "Forecasted weather conditions for a postal code.",

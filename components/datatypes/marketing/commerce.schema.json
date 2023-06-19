@@ -115,6 +115,10 @@
           "description": "Shipping details for one or more products.",
           "meta:descriptionId": "commerce##xdm:shipping##description##26111"
         },
+        "xdm:billing": {
+          "$ref": "https://ns.adobe.com/xdm/datatypes/billing",
+          "description": "Billing details for one or more payments."
+        },
         "xdm:instantPurchase": {
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "A product has been purchased instantly, potentially skipping the cart or checkout.",

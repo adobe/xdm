@@ -11,9 +11,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/prospect-profile"
-  ],
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/classes/prospect-profile"],
   "description": "Prospect Profile extensions by Merkle. This is for the Core industry",
   "definitions": {
     "merkle-core": {
@@ -36,7 +34,7 @@
                     },
                     "xdm:birthdate": {
                       "type": "string",
-					  "format": "date-time"
+                      "format": "date-time",
                       "title": "MS073-Birthdate",
                       "description": "Month and year of birth for individual."
                     },

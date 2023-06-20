@@ -12,7 +12,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": [
-    "https://ns.adobe.com/xdm/classes/prospect-profile"
+    "https://ns.adobe.com/xdm/context/prospect-profile"
   ],
   "description": "Prospect Profile extensions by Merkle. This is for the corelogic industry",
   "definitions": {

@@ -144,9 +144,10 @@
                                 "inHome",
                                 "iot",
                                 "social",
+                                "directMail",
                                 "other",
                                 "none",
-                                "unknown"
+                                "unknown",
                             ],
                             "meta:enum": {
                                 "email": "email",
@@ -159,6 +160,7 @@
                                 "inHome": "In-home Messages",
                                 "iot": "IoT Messages",
                                 "social": "Social Media",
+                                "directMail": "Direct Mail",
                                 "other": "Other",
                                 "none": "No Preferred Channel",
                                 "unknown": "Unknown"
@@ -182,6 +184,11 @@
                         "xdm:sms": {
                             "title": "Receive SMS",
                             "description": "User agrees to receive text messages",
+                            "$ref": "#/definitions/marketing-fields"
+                        },
+                        "xdm:directMail": {
+                            "title": "Receive Direct Mail",
+                            "description": "User agrees to receive direct mail",
                             "$ref": "#/definitions/marketing-fields"
                         }
                     }

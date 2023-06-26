@@ -240,7 +240,10 @@
               "description": "Direct Mail Routing Destination ID"
             }
           }
-        },
+        }
+      }
+    }
+  },  
   "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"

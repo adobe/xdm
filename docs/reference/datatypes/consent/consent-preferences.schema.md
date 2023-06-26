@@ -221,6 +221,7 @@ Sharing of user's data with 2nd or 3rd parties is permitted
 | [xdm:push](#xdmpush) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:reason](#xdmreason) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
 | [xdm:sms](#xdmsms) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
+| [xdm:sms](#xdmdirectMail) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/idSpecific-marketing` |
 | [xdm:subscriptions](#xdmsubscriptions) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
 | [xdm:time](#xdmtime) | `string` | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/metadata` |
 | [xdm:val](#xdmval) | reference | `https://ns.adobe.com/xdm/datatypes/consents-and-preferences#/definitions/marketing-with-subscriptions` |
@@ -379,6 +380,28 @@ User permits receiving postal mail
 
 
 
+
+
+
+## xdm:directMail
+### Receive Direct Mail
+
+User permits receiving Direct Mail
+
+`xdm:directMail`
+* is optional
+* type: reference
+* defined in this schema
+
+### xdm:directMail Type
+
+
+* []() – `#/definitions/marketing-field`
+
+
+
+
+
 ## xdm:preferred
 ### Preferred Channel
 
@@ -404,6 +427,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `inHome` | In-home Messages |
 | `iot` | IoT Messages |
 | `social` | Social Media |
+| `directMail` | Direct Mail |
 | `other` | Other |
 | `none` | No Preferred Channel |
 | `unknown` | Unknown |

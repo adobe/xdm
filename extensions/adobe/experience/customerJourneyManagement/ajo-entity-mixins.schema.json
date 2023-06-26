@@ -219,11 +219,6 @@
               "type": "string",
               "description": "Direct Mail Routing Destination, non-personalized"
             },
-            "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMailFileName": {
-              "title": "Direct Mail FileName",
-              "type": "string",
-              "description": "Direct Mail FileName"
-            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMaildestinationID": {
               "title": "Direct Mail Routing Destination ID",
               "type": "string",

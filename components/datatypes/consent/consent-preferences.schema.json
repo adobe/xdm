@@ -315,9 +315,7 @@
         "xdm:directMail": {
           "title": "Receive Direct Mail",
           "description": "User agrees to receive Direct Mail",
-          "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##14821",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##10841"
+          "$ref": "#/definitions/marketing-field"
         }
       },
       "meta:titleId": "consents-and-preferences##base-marketing##title##34441",
@@ -398,9 +396,7 @@
         "xdm:directMail": {
           "title": "Receive Direct Mail",
           "description": "User agrees to receive Direct Mail",
-          "$ref": "#/definitions/marketing-with-subscriptions",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##68521",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##45961"
+          "$ref": "#/definitions/marketing-with-subscriptions"
         },
         "xdm:call": {
           "title": "Receive calls",
@@ -455,9 +451,7 @@
         "xdm:directMail": {
           "title": "Receive Direct Mail",
           "description": "User agrees to receive Direct Mail",
-          "$ref": "#/definitions/marketing-field",
-          "meta:titleId": "consents-and-preferences##xdm:sms##title##12131",
-          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##16821"
+          "$ref": "#/definitions/marketing-field"
         }
       },
       "meta:titleId": "consents-and-preferences##idSpecific-marketing##title##57411",

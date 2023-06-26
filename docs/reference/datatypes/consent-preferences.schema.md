@@ -160,7 +160,7 @@ User's Direct Marketing Preferences
 | `xdm:preferred`| string | Optional |
 | `xdm:push`|  | Optional |
 | `xdm:sms`|  | Optional |
-
+| `xdm:directMail`|  | Optional |
 
 
 #### xdm:any
@@ -227,6 +227,7 @@ The value of this property **must** be equal to one of the [known values below](
 | `inHome` | In-home Messages |
 | `iot` | IoT Messages |
 | `social` | Social Media |
+| `directMail` | Direct Mail |
 | `other` | Other |
 | `none` | No Preferred Channel |
 | `unknown` | Unknown |
@@ -272,6 +273,22 @@ User agrees to receive text messages
 
 
 
+
+
+
+#### xdm:directMail
+##### Receive Direct Mail
+
+User permits receiving Direct Mail
+
+`xdm:directMail`
+* is optional
+* type: reference
+
+##### xdm:directMail Type
+
+
+* []() – `#/definitions/marketing-fields`
 
 
 

@@ -46,8 +46,11 @@
       "Morning"
     ]
   },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/timestamp": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/lastModifiedAt": "2023-05-25T15:52:25+00:00"
+  },  
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMail": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/routingDestination": "SFTP",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/directMaildestinationID": "0879238rf-51ff-a8ff6756308b"
-  }
+  }  
 }

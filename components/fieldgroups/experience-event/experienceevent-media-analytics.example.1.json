@@ -2,7 +2,6 @@
   "xdm:mediaCollection": {
     "xdm:playhead": 831,
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
@@ -17,16 +16,12 @@
     },
     "xdm:advertisingPodDetails": {
       "xdm:index": 2,
-      "xdm:offset": 123,
-      "xdm:ID": "123"
+      "xdm:offset": 123
     },
     "xdm:chapterDetails": {
       "xdm:length": 100,
       "xdm:offset": 50,
-      "xdm:index": 2,
-      "xdm:isStarted": false,
-      "xdm:isCompleted": false,
-      "xdm:timePlayed": 70
+      "xdm:index": 2
     },
     "xdm:errorDetails": {
       "xdm:name": "errorID",
@@ -51,7 +46,6 @@
   },
   "xdm:mediaReporting": {
     "xdm:sessionDetails": {
-      "xdm:ID": "1482236761294786918253",
       "xdm:name": "123456789",
       "xdm:length": 100,
       "xdm:contentType": "VOD",
@@ -79,7 +73,7 @@
       "xdm:timePlayed": 70
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrateAverageBucket": 100
+      "xdm:bitrateAverageBucket": "800-899"
     },
     "xdm:states": [
       {
@@ -97,7 +91,6 @@
       "xdm:mediaCollection": {
         "xdm:playhead": 0,
         "xdm:sessionDetails": {
-          "xdm:ID": "1482236761294786918253",
           "xdm:name": "123456789",
           "xdm:length": 100,
           "xdm:contentType": "VOD",
@@ -128,10 +121,7 @@
           "xdm:friendlyName": "friendlyName",
           "xdm:length": 100,
           "xdm:offset": 50,
-          "xdm:index": 2,
-          "xdm:isStarted": false,
-          "xdm:isCompleted": false,
-          "xdm:timePlayed": 70
+          "xdm:index": 2
         }
       }
     },
@@ -168,8 +158,7 @@
       "xdm:mediaCollection": {
         "xdm:advertisingPodDetails": {
           "xdm:index": 2,
-          "xdm:offset": 123,
-          "xdm:ID": "123"
+          "xdm:offset": 123
         },
         "xdm:playhead": 30
       }

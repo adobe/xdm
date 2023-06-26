@@ -438,7 +438,7 @@
                     "description": "User permits receiving postal mail",
                     "$ref": "#/definitions/marketing-field"
                 },
-                "xdm:sms": {
+                "xdm:directMail": {
                     "title": "Receive Direct Mail",
                     "description": "User agrees to receive text messages",
                     "$ref": "#/definitions/marketing-with-subscriptions",

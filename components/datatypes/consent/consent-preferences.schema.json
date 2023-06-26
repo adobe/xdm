@@ -247,6 +247,7 @@
             "inHome": "In-home Messages",
             "iot": "IoT Messages",
             "social": "Social Media",
+            "directMail": "Direct Mail",
             "other": "Other",
             "none": "No Preferred Channel",
             "unknown": "Unknown"
@@ -309,6 +310,13 @@
           "$ref": "#/definitions/marketing-field",
           "meta:titleId": "consents-and-preferences##xdm:sms##title##14821",
           "meta:descriptionId": "consents-and-preferences##xdm:sms##description##10841"
+        },
+        "xdm:directMail": {
+          "title": "Receive Direct Mail",
+          "description": "User agrees to receive Direct Mail",
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##14821",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##10841"
         }
       },
       "meta:titleId": "consents-and-preferences##base-marketing##title##34441",
@@ -334,6 +342,7 @@
             "inHome",
             "iot",
             "social",
+            "directMail",
             "other",
             "none",
             "unknown"
@@ -349,6 +358,7 @@
             "inHome": "In-home Messages",
             "iot": "IoT Messages",
             "social": "Social Media",
+            "directMail": "Direct Mail",
             "other": "Other",
             "none": "No Preferred Channel",
             "unknown": "Unknown"
@@ -380,6 +390,13 @@
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
+          "$ref": "#/definitions/marketing-with-subscriptions",
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##68521",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##45961"
+        },
+        "xdm:directMail": {
+          "title": "Receive Direct Mail",
+          "description": "User agrees to receive Direct Mail",
           "$ref": "#/definitions/marketing-with-subscriptions",
           "meta:titleId": "consents-and-preferences##xdm:sms##title##68521",
           "meta:descriptionId": "consents-and-preferences##xdm:sms##description##45961"
@@ -430,6 +447,13 @@
         "xdm:sms": {
           "title": "Receive SMS",
           "description": "User agrees to receive text messages",
+          "$ref": "#/definitions/marketing-field",
+          "meta:titleId": "consents-and-preferences##xdm:sms##title##12131",
+          "meta:descriptionId": "consents-and-preferences##xdm:sms##description##16821"
+        },
+        "xdm:directMail": {
+          "title": "Receive Direct Mail",
+          "description": "User agrees to receive Direct Mail",
           "$ref": "#/definitions/marketing-field",
           "meta:titleId": "consents-and-preferences##xdm:sms##title##12131",
           "meta:descriptionId": "consents-and-preferences##xdm:sms##description##16821"

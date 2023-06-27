@@ -13,7 +13,8 @@
   "meta:abstract": true,
   "meta:intendedToExtend": [
     "https://ns.adobe.com/xdm/context/profile",
-    "https://ns.adobe.com/xdm/context/account"
+    "https://ns.adobe.com/xdm/context/account",
+    "https://ns.adobe.com/xdm/context/prospect-profile"
   ],
   "description": "Segment membership information such as including which segments the individual belongs to, the last qualification time, and when the membership is valid until.",
   "definitions": {

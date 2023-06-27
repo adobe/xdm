@@ -23,6 +23,13 @@
           "type": "number",
           "description": "The amount the customer had to pay for shipping."
         },
+        "xdm:currencyCode": {
+          "title": "Currency code",
+          "type": "string",
+          "examples": ["USD", "EUR"],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 alphabetic currency code used for pricing the product."
+        },
         "xdm:shippingDestination": {
           "title": "Shipping Destination",
           "type": "string",
@@ -64,5 +71,5 @@
       "$ref": "#/definitions/shipping"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

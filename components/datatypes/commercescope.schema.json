@@ -1,0 +1,46 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/commercescope",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Commerce Scope",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.).",
+  "definitions": {
+    "commerce-scope": {
+      "properties": {
+        "xdm:environmentID": {
+          "title": "Environment ID",
+          "type": "string",
+          "description": "The environment ID. A 32-digit alphanumeric ID separated by hyphens."
+        },
+        "xdm:websiteCode": {
+          "title": "Website Code",
+          "type": "string",
+          "description": "The unique website code. Many websites may exist in an environment."
+        },
+        "xdm:storeCode": {
+          "title": "Store Code",
+          "type": "string",
+          "description": "The unique store code. Many stores may exist per website."
+        },
+        "xdm:storeViewCode": {
+          "title": "Store View Code",
+          "type": "string",
+          "description": "The unique store view code. Many store views may exist per store."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/commerce-scope"
+    }
+  ],
+  "meta:status": "experimental"
+}

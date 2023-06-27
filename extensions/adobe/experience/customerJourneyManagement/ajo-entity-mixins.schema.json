@@ -204,8 +204,23 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": {
               "title": "Tags",
               "type": "array",
-              "items": { "type": "string" },
+              "items": {
+                "type": "string"
+              },
               "description": "Array of Tags used in AJO entity"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/timestamp": {
+          "title": "AJO Timestamp Entity",
+          "type": "object",
+          "description": "AJO Timestamp Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/lastModifiedAt": {
+              "title": "Last Modification Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "Time at which message was last modified"
             }
           }
         }

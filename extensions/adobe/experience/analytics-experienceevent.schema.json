@@ -63,7 +63,8 @@
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-marketing"
     },
     {
-      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media"
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-media",
+      "meta:status": "deprecated"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-profile-stitch"

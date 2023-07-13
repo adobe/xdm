@@ -333,6 +333,18 @@
           "title": "Pccr",
           "type": "boolean",
           "description": "Indicates that a redirect occurred."
+        },
+        "xdm:pe": {
+          "title": "Pe",
+          "type": "string",
+          "description": "The media reporting event type.",
+          "meta:enum": {
+            "ms_s": "Session Start",
+            "ms_c": "Session Close",
+            "msa_s": "Ad Start",
+            "msa_c": "Ad Close",
+            "ms_x": "Chapter Close"
+          }
         }
       },
       "required": [

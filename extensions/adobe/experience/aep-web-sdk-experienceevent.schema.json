@@ -18,6 +18,7 @@
     "https://ns.adobe.com/experience/experienceevent-edgeregion",
     "https://ns.adobe.com/xdm/context/experienceevent-environment-details",
     "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "https://ns.adobe.com/xdm/context/experienceevent-segment-list",
     "https://ns.adobe.com/experience/decisioning/proposition-interaction"
   ],
   "definitions": {
@@ -37,6 +38,9 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-environment-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-segments-list"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/context/experienceevent-web"

@@ -69,6 +69,11 @@
           "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##99731",
           "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##75691"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": {
+          "title": "Domain",
+          "type": "string",
+          "description": "Domain of the recipient's email address."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform": {
           "title": "Push Platform",
           "type": "string",

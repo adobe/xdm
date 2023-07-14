@@ -16,7 +16,7 @@
   "definitions": {
     "experienceevent-segment-list": {
       "properties": {
-        "xdm:selectSegmentsList": {
+        "xdm:segmentList": {
           "title": "Segment list",
           "type": "array",
           "description": "Segments list",

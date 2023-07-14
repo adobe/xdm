@@ -99,6 +99,11 @@
               "type": "string",
               "description": "Is not frozen and might remain same between different versions of message publication."
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantName": {
+              "title": "Channel's variant Name",
+              "type": "string",
+              "description": "Represents the channel variant name"
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
               "title": "The channel for which this row corresponds.",
               "$ref": "https://ns.adobe.com/xdm/channels/channel",

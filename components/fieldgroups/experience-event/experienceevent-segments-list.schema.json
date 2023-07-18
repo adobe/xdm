@@ -41,7 +41,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "#/definitions/experienceevent-segment-list"
     }
   ],
   "meta:status": "experimental",

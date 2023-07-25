@@ -19,7 +19,7 @@
         "xdm:segmentList": {
           "title": "Segment list",
           "type": "array",
-          "description": "Segments list",
+          "description": "Segment list",
           "items": {
             "type": "object",
             "properties": {

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],  
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "title": "Context Data",
   "type": "object",
   "description": "A free form field where Analytics context data will be captured.",

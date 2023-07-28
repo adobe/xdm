@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/context/experienceevent-segments-list",
+  "$id": "https://ns.adobe.com/xdm/context/experienceevent-segment-list",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Enriched Event Segment Details",
   "type": "object",
@@ -19,7 +19,7 @@
         "xdm:segmentList": {
           "title": "Segment list",
           "type": "array",
-          "description": "Segments list",
+          "description": "Segment list",
           "items": {
             "type": "object",
             "properties": {
@@ -41,7 +41,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+      "$ref": "#/definitions/experienceevent-segment-list"
     }
   ],
   "meta:status": "experimental",

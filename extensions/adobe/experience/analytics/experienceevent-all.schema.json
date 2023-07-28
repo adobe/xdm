@@ -10103,6 +10103,16 @@
             }
           },
           "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/analytics/environment##title##11761"
+        },
+        "https://ns.adobe.com/experience/analytics/contextData": {
+          "title": "Context Data",
+		  "description": "Adobe analytics context data.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "Context Value."
+          }
         }
       }
     }

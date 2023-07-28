@@ -10106,7 +10106,7 @@
         },
         "https://ns.adobe.com/experience/analytics/contextData": {
           "title": "Context Data",
-		  "description": "Adobe analytics context data.",
+          "description": "Adobe analytics context data.",
           "type": "object",
           "meta:xdmType": "map",
           "additionalProperties": {

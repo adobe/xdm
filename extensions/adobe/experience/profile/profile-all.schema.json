@@ -108,6 +108,92 @@
               }
             }
           }
+        },
+        "https://ns.adobe.com/experience/profile/consentPoliciesResultMap": {
+          "title": "consent policies map with additional metadata",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "title": "consent policy id map",
+            "description": "map of validated fields for a consent policy",
+            "type": "object",
+            "properties": {
+              "identityLevelConsents": {
+                "title": "identity level consents",
+                "description": "map containing status and timestamps for consent policies defined for each identity",
+                "type": "object",
+                "meta:xdmType": "map",
+                "additionalProperties": {
+                  "title": "consented identities per namespace",
+                  "description": "List of identities for each namespace in each consent policy",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "identity": {
+                        "title": "identity",
+                        "description": "identity for which policy metadata is being defined",
+                        "type": "string",
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:identity"
+                      },
+                      "status": {
+                        "title": "string",
+                        "description": "current status for a given consent policy",
+                        "type": "string",
+                        "enum": [
+                          "realized",
+                          "exited"
+                        ],
+                        "meta:enum": {
+                          "realized": "Realized",
+                          "exited": "Exited"
+                        },
+                        "meta:xdmType": "string",
+                        "meta:xdmField": "xdm:status"
+                      },
+                      "ts": {
+                        "title": "timestamp",
+                        "description": "date time when the profile entered or exited consent policy",
+                        "type": "string",
+                        "format": "date-time",
+                        "meta:xdmType": "date-time",
+                        "meta:xdmField": "xdm:ts"
+                      }
+                    },
+                    "meta:xdmType": "object"
+                  },
+                  "meta:xdmType": "array"
+                },
+                "meta:xdmField": "xdm:identityLevelConsents"
+              },
+              "status": {
+                "title": "string",
+                "description": "current status for a given consent policy",
+                "type": "string",
+                "enum": [
+                  "realized",
+                  "exited"
+                ],
+                "meta:enum": {
+                  "realized": "Realized",
+                  "exited": "Exited"
+                },
+                "meta:xdmType": "string",
+                "meta:xdmField": "xdm:status"
+              },
+              "ts": {
+                "title": "timestamp",
+                "description": "date time when the profile entered or exited consent policy",
+                "type": "string",
+                "format": "date-time",
+                "meta:xdmType": "date-time",
+                "meta:xdmField": "xdm:ts"
+              }
+            },
+            "meta:xdmType": "object"
+          },
+          "meta:xdmField": "xdm:consentPoliciesResultMap"
         }
       }
     }

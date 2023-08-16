@@ -26,9 +26,6 @@
     },
     {
       "$ref": "https://ns.adobe.com/xdm/mixins/profile-consentResults"
-    },
-    {
-      "$ref": "https://ns.adobe.com/xdm/mixins/profile-consentResults-v2"
     }
   ],
   "meta:immutableTags": ["union"],

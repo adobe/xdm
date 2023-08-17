@@ -206,9 +206,8 @@
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##description##40971"
             },
             "https://ns.adobe.com/experience/journeyOrchestration/processingTime": {
-              "meta:status": "deprecated",
               "title": "processingTime",
-              "description": "(Deprecated) Time(ms) taken to complete the processing of this step.",
+              "description": "Time(ms) taken to complete the processing of this step.",
               "type": "integer",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"

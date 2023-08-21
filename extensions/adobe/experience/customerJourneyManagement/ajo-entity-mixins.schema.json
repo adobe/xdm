@@ -47,6 +47,11 @@
               "title": "Campaign Action ID",
               "type": "string",
               "description": "Action ID of the Campaign that triggered this message execution."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": {
+              "title": "Campaign Identity Namespace",
+              "type": "string",
+              "description": "AJO Campaign Identity Namespace."
             }
           }
         },

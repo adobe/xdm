@@ -212,6 +212,14 @@
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMs": {
+              "title": "processingTimeMs",
+              "description": "Time(ms) taken to complete the processing of this step.",
+              "type": "integer",
+              "meta:xdmType": "long",
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceType": {
               "title": "instanceType",
               "description": "Specifies if the journey instance corresponds Unitary(a single profile) or Batch(a journey instance executes a batch of profiles, E.g: Read Segment Journey).",

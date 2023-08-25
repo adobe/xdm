@@ -18,5 +18,11 @@
       "xdm:categoryName": "Travel Accessories",
       "xdm:categoryPathath": "home/luggage_travel/travel_accessories"
     }
+  ],
+  "xdm:orderItemCustomAttributes": [
+    {
+      "xdm:key": "Warehouse Location Shipped From",
+      "xdm:value": "Houston"
+    }
   ]
 }

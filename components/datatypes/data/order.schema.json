@@ -108,6 +108,14 @@
           "description": "The date/time when an order cancellation is initiated by the shopper.",
           "meta:titleId": "order##xdm:cancelDate##title##86156",
           "meta:descriptionId": "order##xdm:cancelDate##description##47786"
+        },
+        "xdm:orderCustomAttributes": {
+          "title": "Order Custom Attributes",
+          "type": "array",
+          "description": "Custom attributes at the order level (for back-office events)",
+          "items": {
+            "ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+          }
         }
       }
     }

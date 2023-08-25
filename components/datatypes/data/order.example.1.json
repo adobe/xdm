@@ -22,5 +22,11 @@
   "xdm:orderType": "checkout",
   "xdm:lastUpdatedDate": "2022-10-22T09:02:15.541Z",
   "xdm:createdDate": "2022-10-22T09:02:15.541Z",
-  "xdm:cancelDate": "2022-10-23T09:02:15.541Z"
+  "xdm:cancelDate": "2022-10-23T09:02:15.541Z",
+  "xdm:orderCustomAttributes": [
+    {
+      "xdm:key": "Source Channel",
+      "xdm:value": "Ad click"
+    }
+  ]
 }

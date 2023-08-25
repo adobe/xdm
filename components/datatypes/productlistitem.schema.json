@@ -107,6 +107,14 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
           }
+        },
+        "xdm:orderItemCustomAttributes": {
+          "title": "Order Item Custom Attributes",
+          "type": "array",
+          "description": "Custom attributes at the item level (for back-office events)",
+          "items": {
+            "ref": "https://ns.adobe.com/xdm/datatypes/keyvalue"
+          }
         }
       },
       "required": ["xdm:SKU"]

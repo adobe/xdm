@@ -18,6 +18,11 @@
           "type": "string",
           "description": "Status of returned item (e.g. Pending, Approved)."
         },
+        "xdm:returnReason": {
+          "title": "Return Reason",
+          "type": "string",
+          "description": "Reason why return is requested for item."
+        },
         "xdm:returnQuantityRequested": {
           "title": "Return Quantity Requested",
           "type": "integer",

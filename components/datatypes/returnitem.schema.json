@@ -35,22 +35,22 @@
         },
         "xdm:returnQuantityRequested": {
           "title": "Return Quantity Requested",
-          "type": "string",
+          "type": "integer",
           "description": "Number of this item that the shopper requested to return."
         },
         "xdm:returnQuanitityAuthorized": {
           "title": "Return Quantity Authorized",
-          "type": "string",
+          "type": "integer",
           "description": "Number of this item authorized to be returned."
         },
         "xdm:returnQuantityReceived": {
           "title": "Return Quantity Received",
-          "type": "string",
+          "type": "integer",
           "description": "Number of returned items received."
         },
         "xdm:returnQuantityApproved": {
           "title": "Return Quantity Approved",
-          "type": "string",
+          "type": "integer",
           "description": "Number of this item with return fully complete and approved."
         }
       }

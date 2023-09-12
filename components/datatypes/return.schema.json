@@ -22,6 +22,11 @@
           "title": "Return Status",
           "type": "string",
           "description": "The current status of the RMA (e.g. Pending, Closed)."
+        },
+        "xdm:purchaseID": {
+          "title": "Order Purchase ID",
+          "type": "string",
+          "description": "The unique identifier of the order/purchase that the RMA pertains to."
         }
       }
     }

@@ -109,6 +109,11 @@
               "type": "string",
               "description": "Represents the channel variant name"
             },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/isMultiVariant": {
+              "title": "flag for multi-variant",
+              "type": "boolean",
+              "description": "flag to identity if variant is multi-variant (multi lingual) or not."
+            },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
               "title": "The channel for which this row corresponds.",
               "$ref": "https://ns.adobe.com/xdm/channels/channel",

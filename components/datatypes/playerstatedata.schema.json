@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Player state data information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Player state data information.",
   "definitions": {

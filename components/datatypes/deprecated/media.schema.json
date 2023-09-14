@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Media information",
   "type": "object",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:extensible": true,
   "description": "Media context information for content related interactions.",
   "definitions": {

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Session details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Session details information.",
   "definitions": {
@@ -312,6 +312,11 @@
           "type": "number",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
         },
+        "xdm:cdn": {
+          "title": "Content Delivery Network",
+          "type": "string",
+          "description": "The content delivery network of the content played."
+        },
         "xdm:pev3": {
           "title": "Pev3",
           "type": "string",
@@ -331,7 +336,6 @@
         }
       },
       "required": [
-        "xdm:ID",
         "xdm:name",
         "xdm:length",
         "xdm:contentType",

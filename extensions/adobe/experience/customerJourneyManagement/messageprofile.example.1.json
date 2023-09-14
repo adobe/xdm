@@ -1,5 +1,5 @@
 {
-  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf94",
+  "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID": "4218b775-bef3-46b2-aee2-7caae052cf95",
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel": {
     "@id": "https://ns.adobe.com/xdm/channels/email"
   },
@@ -8,5 +8,6 @@
   "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution": false,
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address": "user@domain.com",
   "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace": "Email",
-  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92"
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP": "52.247.77.92",
+  "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/domain": "domain.com"
 }

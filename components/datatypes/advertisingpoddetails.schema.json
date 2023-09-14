@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Advertising Pod details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Advertising Pod details information.",
   "definitions": {
@@ -36,7 +36,7 @@
           "description": "The offset of the ad break inside the content, in seconds."
         }
       },
-      "required": ["xdm:index", "xdm:offset", "xdm:ID"]
+      "required": ["xdm:offset"]
     }
   },
   "allOf": [

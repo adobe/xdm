@@ -47,6 +47,11 @@
               "title": "Campaign Action ID",
               "type": "string",
               "description": "Action ID of the Campaign that triggered this message execution."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": {
+              "title": "Campaign Identity Namespace",
+              "type": "string",
+              "description": "AJO Campaign Identity Namespace."
             }
           }
         },
@@ -98,6 +103,11 @@
               "title": "Channel's variant ID",
               "type": "string",
               "description": "Is not frozen and might remain same between different versions of message publication."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantName": {
+              "title": "Channel's variant Name",
+              "type": "string",
+              "description": "Represents the channel variant name"
             },
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
               "title": "The channel for which this row corresponds.",
@@ -204,8 +214,23 @@
             "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": {
               "title": "Tags",
               "type": "array",
-              "items": { "type": "string" },
+              "items": {
+                "type": "string"
+              },
               "description": "Array of Tags used in AJO entity"
+            }
+          }
+        },
+        "https://ns.adobe.com/experience/customerJourneyManagement/entities/timestamp": {
+          "title": "AJO Timestamp Entity",
+          "type": "object",
+          "description": "AJO Timestamp Entity Specific Fields",
+          "properties": {
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/lastModifiedAt": {
+              "title": "Last Modification Timestamp",
+              "type": "string",
+              "format": "date-time",
+              "description": "Time at which message was last modified"
             }
           }
         }

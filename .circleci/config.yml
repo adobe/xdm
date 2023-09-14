@@ -29,7 +29,6 @@ jobs:
             - v1-dependencies-
 
       - run: rm -rf node_modules
-      - run: rm package-lock.json
       - run: npm install
 
       - save_cache:
@@ -65,7 +64,6 @@ jobs:
             - v1-dependencies-
 
       - run: rm -rf node_modules
-      - run: rm package-lock.json
       - run: npm install
 
       - save_cache:
@@ -105,6 +103,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: rm -rf node_modules
       - run: npm install
 
       - save_cache:

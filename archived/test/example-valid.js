@@ -20,7 +20,7 @@ const invalids = $.find("schemas").filter(name => {
 let allSchemas = {};
 const validator = new Ajv({
   "allErrors": true,
-  "ignoreKeywordsWithRef": true //we need to change this to "fail" for cleaner schemas
+  "extendRefs": true //we need to change this to "fail" for cleaner schemas
 });
 
 describe("Loading of schemas", () => {
@@ -28,7 +28,7 @@ describe("Loading of schemas", () => {
 
   const ajv = new Ajv({
     "allErrors": true,
-    "ignoreKeywordsWithRef": true //we need to change this to "fail" for cleaner schemas
+    "extendRefs": true //we need to change this to "fail" for cleaner schemas
   });
   
   ajv

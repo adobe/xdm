@@ -58,7 +58,10 @@
         "xdm:currencyCode": {
           "title": "Currency code",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
           "meta:titleId": "productlistitem##xdm:currencyCode##title##77931",
@@ -107,9 +110,16 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
           }
+        },
+        "xdm:returnItem": {
+          "title": "Return Item",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/returnitem",
+          "description": "RMA (Return Merchandise Authorization) information for this item."
         }
       },
-      "required": ["xdm:SKU"]
+      "required": [
+        "xdm:SKU"
+      ]
     },
     "selectedOption": {
       "title": "Selected option",
@@ -131,7 +141,10 @@
           "meta:descriptionId": "productlistitem##xdm:value##description##27191"
         }
       },
-      "required": ["xdm:attribute", "xdm:value"],
+      "required": [
+        "xdm:attribute",
+        "xdm:value"
+      ],
       "meta:titleId": "productlistitem##selectedOption##title##81511",
       "meta:descriptionId": "productlistitem##selectedOption##description##771"
     }

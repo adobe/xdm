@@ -45,10 +45,18 @@
             "$ref": "https://ns.adobe.com/xdm/data/refunditem"
           }
         },
+        "xdm:returns": {
+          "title": "Return Info",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/return",
+          "description": "The RMA (Return Merchandise Authorization) issued."
+        },
         "xdm:currencyCode": {
           "title": "Currency",
           "type": "string",
-          "examples": ["USD", "EUR"],
+          "examples": [
+            "USD",
+            "EUR"
+          ],
           "pattern": "^[A-Z]{3}$",
           "description": "The ISO 4217 currency code used for the order totals.",
           "meta:titleId": "order##xdm:currencyCode##title##81771",
@@ -77,7 +85,10 @@
           "title": "Order Type",
           "type": "string",
           "description": "The type order that has been placed.",
-          "enum": ["checkout", "instant_purchase"],
+          "enum": [
+            "checkout",
+            "instant_purchase"
+          ],
           "meta:enum": {
             "checkout": "checkout",
             "instant_purchase": "Instant Purchase"

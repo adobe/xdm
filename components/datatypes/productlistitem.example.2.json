@@ -1,0 +1,29 @@
+{
+  "xdm:SKU": "1002352692",
+  "xdm:product": "https://commerce.adobe.io/entities/product/product-203766910",
+  "@id": "https://commerce.adobe.io/entities/item/item-12345678",
+  "xdm:name": "24-Watt 8-Light Chrome Integrated LED Bath Light",
+  "xdm:selectedOptions": [
+    {
+      "xdm:attribute": "finish",
+      "xdm:value": "brushed"
+    }
+  ],
+  "xdm:productCategories": [
+    {
+      "xdm:categoryID": "1",
+      "xdm:categoryName": "Travel Accessories",
+      "xdm:categoryPath": "home/luggage_travel/travel_accessories"
+    }
+  ],
+  "xdm:returnItem": {
+    "xdm:returnStatus": "Rejected",
+    "xdm:returnReason": "Other: item damaged",
+    "xdm:returnItemCondition": "Damaged",
+    "xdm:returnResolution": "Exchange",
+    "xdm:returnQuantityRequested": 1,
+    "xdm:returnQuanitityAuthorized": 1,
+    "xdm:returnQuantityReceived": 1,
+    "xdm:returnQuantityApproved": 0
+  }
+}

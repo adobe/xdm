@@ -9,7 +9,7 @@ jobs:
   lint-json:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: cimg/node:20.6.1
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -28,6 +28,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: rm -rf ./node_modules
       - run: npm install
 
       - save_cache:
@@ -43,7 +44,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: cimg/node:20.6.1
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -61,7 +62,7 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
+      - run: rm -rf ./node_modules
       - run: npm install
 
       - save_cache:
@@ -87,7 +88,7 @@ jobs:
 
   generate-docs:
     docker:
-      - image: circleci/node:7.10
+      - image: cimg/node:20.6.1
 
     working_directory: ~/repo
 
@@ -100,7 +101,7 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
+      - run: rm -rf ./node_modules
       - run: npm install
 
       - save_cache:

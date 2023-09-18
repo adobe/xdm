@@ -107,6 +107,11 @@
           "items": {
             "$ref": "https://ns.adobe.com/xdm/datatypes/categorydata"
           }
+        },
+        "xdm:returnItem": {
+          "title": "Return Item",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/returnitem",
+          "description": "RMA (Return Merchandise Authorization) information for this item."
         }
       },
       "required": ["xdm:SKU"]

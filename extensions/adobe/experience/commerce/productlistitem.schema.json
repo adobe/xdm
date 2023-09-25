@@ -1,0 +1,47 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/content/productlistitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product list item",
+  "type": "object",
+  "description": "The product list item represents a product selected by a customer with specific options, pricing, usage context for a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.",
+  "definitions": {
+    "productlistitem": {
+      "properties": {
+        "xdm:productCustomAttributes": {
+          "title": "Product-Level Custom Attributes (back-office)",
+          "type": "object",
+          "description": "Custom attributes created at the product/item level, for back-office Adobe Commerce events",
+          "properties": {
+            "xdm:internalID": {
+              "title": "Internal ID",
+              "type": "string",
+              "description": "An ID from a non-Commerce system, used internally by the merchant. Usually hashed for security."
+            },
+            "xdm:inventorySource": {
+              "title": "Inventory Source",
+              "type": "string",
+              "description": "Source location that inventory was sent from."
+            },
+            "xdm:sourceChannel": {
+              "title": "Source Channel",
+              "type": "string",
+              "description": "Channel that an order originated from (e.g. web, ad click)."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/productlistitem"
+    }
+  ],
+  "meta:status": "experimental"
+}

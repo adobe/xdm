@@ -38,7 +38,7 @@
           "type": "integer",
           "description": "Number of this item that the shopper requested to return."
         },
-        "xdm:returnQuanitityAuthorized": {
+        "xdm:returnQuantityAuthorized": {
           "title": "Return Quantity Authorized",
           "type": "integer",
           "description": "Number of this item authorized to be returned."

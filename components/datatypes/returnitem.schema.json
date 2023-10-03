@@ -43,6 +43,12 @@
           "type": "integer",
           "description": "Number of this item authorized to be returned."
         },
+        "xdm:returnQuanitityAuthorized": {
+          "meta:status": "deprecated",
+          "title": "Return Quantity Authorized",
+          "type": "integer",
+          "description": "Number of this item authorized to be returned."
+        },
         "xdm:returnQuantityReceived": {
           "title": "Return Quantity Received",
           "type": "integer",

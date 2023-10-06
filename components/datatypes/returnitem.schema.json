@@ -38,7 +38,13 @@
           "type": "integer",
           "description": "Number of this item that the shopper requested to return."
         },
+        "xdm:returnQuantityAuthorized": {
+          "title": "Return Quantity Authorized",
+          "type": "integer",
+          "description": "Number of this item authorized to be returned."
+        },
         "xdm:returnQuanitityAuthorized": {
+          "meta:status": "deprecated",
           "title": "Return Quantity Authorized",
           "type": "integer",
           "description": "Number of this item authorized to be returned."
@@ -61,5 +67,5 @@
       "$ref": "#/definitions/returnitem"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

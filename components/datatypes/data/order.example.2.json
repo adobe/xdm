@@ -11,10 +11,10 @@
     },
     {
       "xdm:transactionID": "transactid-a112",
-      "xdm:refundAmmount": 0.01,
+      "xdm:refundAmmount": 50.50,
       "xdm:refundPaymentType": "credit_card",
       "xdm:currencyCode": "USD"
     }
   ],
-  "xdm:refundTotal": 900.00
+  "xdm:refundTotal": 949.49
 }

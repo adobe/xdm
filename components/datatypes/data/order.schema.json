@@ -113,6 +113,11 @@
           "description": "The date/time when an order cancellation is initiated by the shopper.",
           "meta:titleId": "order##xdm:cancelDate##title##86156",
           "meta:descriptionId": "order##xdm:cancelDate##description##47786"
+        },
+        "xdm:refundTotal": {
+          "title": "Total Amount Refunded",
+          "type": "number",
+          "description": "The total amount provided in this refund on the order, combining all refunded items and after any discounts etc. have been applied."
         }
       }
     }

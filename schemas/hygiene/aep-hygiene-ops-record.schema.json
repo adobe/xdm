@@ -27,7 +27,12 @@
           "title": "Name of the hygiene operation to be applied by downstream consumers",
           "description": "Name of the hygiene operation to be applied by downstream consumers.",
           "type": "string",
-          "enum": ["deleteIdentity", "updateField", "privacyDelete", "privacyAccess"],
+          "enum": [
+            "deleteIdentity",
+            "updateField",
+            "privacyDelete",
+            "privacyAccess"
+          ],
           "meta:titleId": "aep-hygiene-ops##xdm:action##title##96551",
           "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821",
           "meta:enum": {

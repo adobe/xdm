@@ -40,7 +40,7 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/experienceevent-botdetection"
+      "$ref": "#/definitions/experienceevent-bot-detection"
     }
   ],
   "meta:status": "stable"

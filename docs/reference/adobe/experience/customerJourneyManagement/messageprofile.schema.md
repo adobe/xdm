@@ -47,6 +47,7 @@ Message Profile details for the Adobe CJM ExperienceEvent.
 | [https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant](#httpsnsadobecomexperiencecustomerjourneymanagementmessageprofilevariant) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform](#httpsnsadobecomexperiencecustomerjourneymanagementpushchannelcontextplatform) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | [https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider](#httpsnsadobecomexperiencecustomerjourneymanagementsmschannelcontextsmsprovider) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
+| [https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType](#httpsnsadobecomexperiencecustomerjourneymanagementsmschannelcontextmessageType) | `string` | Optional | Adobe CJM ExperienceEvent - Message Profile Details (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address
@@ -236,7 +237,7 @@ Push provider service, e.g. apns or fcm
 ## https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider
 ### SMS Provider
 
-SMS provider , e.g. sinch or twilio
+SMS provider , e.g. sinch, infobip or twilio
 
 `https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider`
 * is optional
@@ -250,12 +251,49 @@ SMS provider , e.g. sinch or twilio
 
 
 
-### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider Known Values
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType Known Values
 | Value | Description |
 |-------|-------------|
-| `sinch` | Sinch sms provider |
-| `twilio` | Twilio sms provider |
-| `vibes` | Vibes sms Provider  |
+| `inbound` | Inbound received for the profile |
+| `inboundReply` | Replied with custom message for inbound |
+| `send` | sms send |
+
+## https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType
+### SMS messageType
+
+SMS provider, e.g. inbound, inboundReply or send
+
+`https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType Type
+
+
+`string`
+
+
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage Known Values
+
+## https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage
+### SMS inbound Message
+
+SMS inbound reply, e.g. stop, start, subscribe, etc.
+
+`https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage`
+* is optional
+* type: `string`
+* defined in this schema
+
+### https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage Type
+
+
+`string`
+
+
+
 
 
 

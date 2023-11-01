@@ -17,16 +17,16 @@
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
   "description": "Track interactions with media.",
   "definitions": {
-    "experienceevent-mediaAnalytics-a": {
+    "experienceevent-mediaAnalytics": {
       "properties": {
         "xdm:mediaCollection": {
           "title": "Media Collection Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails#/definitions/mediaDetailsCollection",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
           "description": "Media Collection related fields."
         },
         "xdm:mediaReporting": {
           "title": "Media Reporting Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails#/definitions/mediaDetailsReporting-a",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
           "description": "Media Reporting related fields."
         },
         "xdm:mediaDownloadedEvents": {
@@ -38,24 +38,12 @@
           "description": "The list of media collection downloaded content events."
         }
       }
-    },
-    "experienceevent-mediaAnalytics-b": {
-      "properties": {
-        "xdm:mediaReporting": {
-          "title": "Media Reporting Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails#/definitions/mediaDetailsReporting-b",
-          "description": "Media Reporting related fields."
-        }
-      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/experienceevent-mediaAnalytics-a"
-    },
-    {
-      "$ref": "#/definitions/experienceevent-mediaAnalytics-b"
+      "$ref": "#/definitions/experienceevent-mediaAnalytics"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

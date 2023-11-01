@@ -5,73 +5,70 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkel-sample",
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-partner-sample",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Merkel Prospect Details(Sample)",
+  "title": "Partner Prospect Details(Sample)",
   "type": "object",
-  "meta:tags": {
-    "industry": ["all"]
-  },
   "meta:tags": {
     "partnerProspect": true
   },
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/prospect-profile"],
-  "description": "Prospect Profile extensions by Merkel. This is a sample FG.",
+  "description": "Prospect Profile extensions by Partner. This is a sample FG.",
   "definitions": {
-    "merkel-profile-sample": {
+    "partner-profile": {
       "properties": {
-        "xdm:merkel": {
+        "xdm:partner": {
           "type": "object",
           "properties": {
             "xdm:ageRangeInHousehold": {
-              "type": "integer",
+              "type": "string",
               "title": "ageRangeInHousehold",
               "description": "ageRangeInHousehold"
             },
             "xdm:apparelAccessories": {
-              "type": "integer",
+              "type": "string",
               "title": "apparelAccessories",
               "description": "apparelAccessories"
             },
             "xdm:bicycling": {
-              "type": "integer",
+              "type": "string",
               "title": "bicycling",
               "description": "bicycling"
             },
             "xdm:cableTv": {
-              "type": "integer",
+              "type": "string",
               "title": "cableTv",
               "description": "cableTv"
             },
             "xdm:domestics": {
-              "type": "integer",
+              "type": "string",
               "title": "domestics",
               "description": "domestics"
             },
             "xdm:electronics": {
-              "type": "integer",
+              "type": "string",
               "title": "electronics",
               "description": "electronics"
             },
             "xdm:foodAndBeverage": {
-              "type": "integer",
+              "type": "string",
               "title": "foodAndBeverage",
               "description": "foodAndBeverage"
             },
             "xdm:footwear": {
-              "type": "integer",
+              "type": "string",
               "title": "footwear",
               "description": "footwear"
             },
             "xdm:healthFoods": {
-              "type": "integer",
+              "type": "string",
               "title": "healthFoods",
               "description": "healthFoods"
             },
             "xdm:hiking": {
-              "type": "integer",
+              "type": "string",
               "title": "hiking",
               "description": "hiking"
             },
@@ -86,47 +83,47 @@
               "description": "individualId"
             },
             "xdm:inferredCardHolder": {
-              "type": "integer",
+              "type": "string",
               "title": "inferredCardHolder",
               "description": "inferredCardHolder"
             },
             "xdm:inferredPremiumCardholder": {
-              "type": "integer",
+              "type": "string",
               "title": "inferredPremiumCardholder",
               "description": "inferredPremiumCardholder"
             },
             "xdm:matchLevelFlag": {
-              "type": "integer",
+              "type": "string",
               "title": "matchLevelFlag",
               "description": "matchLevelFlag"
             },
             "xdm:buyerRating": {
-              "type": "integer",
+              "type": "string",
               "title": "BuyerRating",
               "description": "BuyerRating"
             },
             "xdm:donorRating": {
-              "type": "integer",
+              "type": "string",
               "title": "DonorRating",
               "description": "DonorRating"
             },
             "xdm:investmentRating": {
-              "type": "integer",
+              "type": "string",
               "title": "InvestmentRating",
               "description": "InvestmentRating"
             },
             "xdm:responderRating": {
-              "type": "integer",
+              "type": "string",
               "title": "ResponderRating",
               "description": "ResponderRating"
             },
             "xdm:spendingVelocity": {
-              "type": "integer",
+              "type": "string",
               "title": "SpendingVelocity",
               "description": "SpendingVelocity"
             },
             "xdm:spendingVolume": {
-              "type": "integer",
+              "type": "string",
               "title": "SpendingVolume",
               "description": "SpendingVolume"
             },
@@ -141,27 +138,27 @@
               "description": "residenceId"
             },
             "xdm:sailing": {
-              "type": "integer",
+              "type": "string",
               "title": "sailing",
               "description": "sailing"
             },
             "xdm:seasonalHolidayProducts": {
-              "type": "integer",
+              "type": "string",
               "title": "seasonalHolidayProducts",
               "description": "seasonalHolidayProducts"
             },
             "xdm:skiing": {
-              "type": "integer",
+              "type": "string",
               "title": "skiing",
               "description": "skiing"
             },
             "xdm:tennis": {
-              "type": "integer",
+              "type": "string",
               "title": "tennis",
               "description": "tennis"
             },
             "xdm:tvShoppers": {
-              "type": "integer",
+              "type": "string",
               "title": "tvShoppers",
               "description": "tvShoppers"
             }
@@ -172,8 +169,8 @@
   },
   "allOf": [
     {
-      "$ref": "#/definitions/merkel-profile-sample"
+      "$ref": "#/definitions/partner-profile"
     }
   ],
-  "meta:status": "experimental"
+  "meta:status": "stable"
 }

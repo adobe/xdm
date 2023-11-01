@@ -98,7 +98,7 @@ Track interactions with media.
       "xdm:timePlayed": 70
     },
     "xdm:qoeDataDetails": {
-      "xdm:bitrateAverageBucket": 100
+      "xdm:bitrateAverageBucket": "800-899"
     },
     "xdm:states": [
       {

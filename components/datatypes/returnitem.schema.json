@@ -1,0 +1,71 @@
+{
+  "meta:license": [
+    "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/datatypes/returnitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Return Item",
+  "type": "object",
+  "description": "The item's information within the RMA (Return Merchandise Authorization).",
+  "definitions": {
+    "returnitem": {
+      "properties": {
+        "xdm:returnStatus": {
+          "title": "Return Status",
+          "type": "string",
+          "description": "Status of returned item (e.g. Pending, Approved)."
+        },
+        "xdm:returnReason": {
+          "title": "Return Reason",
+          "type": "string",
+          "description": "Reason why return is requested for item."
+        },
+        "xdm:returnItemCondition": {
+          "title": "Return Item Condition",
+          "type": "string",
+          "description": "Condition of item that return is requested for."
+        },
+        "xdm:returnResolution": {
+          "title": "Return Resolution",
+          "type": "string",
+          "description": "Requested resolution of item return (e.g. Refund, Exchange)"
+        },
+        "xdm:returnQuantityRequested": {
+          "title": "Return Quantity Requested",
+          "type": "integer",
+          "description": "Number of this item that the shopper requested to return."
+        },
+        "xdm:returnQuantityAuthorized": {
+          "title": "Return Quantity Authorized",
+          "type": "integer",
+          "description": "Number of this item authorized to be returned."
+        },
+        "xdm:returnQuanitityAuthorized": {
+          "meta:status": "deprecated",
+          "title": "Return Quantity Authorized",
+          "type": "integer",
+          "description": "Number of this item authorized to be returned."
+        },
+        "xdm:returnQuantityReceived": {
+          "title": "Return Quantity Received",
+          "type": "integer",
+          "description": "Number of returned items received."
+        },
+        "xdm:returnQuantityApproved": {
+          "title": "Return Quantity Approved",
+          "type": "integer",
+          "description": "Number of this item with return fully complete and approved."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/returnitem"
+    }
+  ],
+  "meta:status": "stable"
+}

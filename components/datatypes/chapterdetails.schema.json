@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Chapter details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Chapter details information.",
   "definitions": {
@@ -56,14 +56,7 @@
           "description": "The time spent on the chapter, in seconds."
         }
       },
-      "required": [
-        "xdm:length",
-        "xdm:offset",
-        "xdm:index",
-        "xdm:isStarted",
-        "xdm:isCompleted",
-        "xdm:timePlayed"
-      ]
+      "required": ["xdm:length", "xdm:offset", "xdm:index"]
     }
   },
   "allOf": [

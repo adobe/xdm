@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Qoe Data details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Qoe Data details information.",
   "definitions": {
@@ -17,7 +17,7 @@
       "properties": {
         "xdm:bitrateAverageBucket": {
           "title": "Average Bitrate Bucket",
-          "type": "integer",
+          "type": "string",
           "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session."
         },
         "xdm:bitrate": {

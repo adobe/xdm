@@ -25,5 +25,11 @@
   "xdm:shipping": {
     "xdm:shippingAmount": 20.0,
     "xdm:shippingMethod": "standard ground"
+  },
+  "xdm:commerceScope": {
+    "xdm:environment": "27a15179-5545-4d23-e654-1b4ac0b42bd3",
+    "xdm:website": "base",
+    "xdm:store": "main_website_store",
+    "xdm:storeView": "default"
   }
 }

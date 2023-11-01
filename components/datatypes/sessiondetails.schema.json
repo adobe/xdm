@@ -9,11 +9,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Session details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Session details information.",
   "definitions": {
-    "sessionDetailsCommon": {
+    "sessionDetails": {
       "properties": {
         "xdm:ID": {
           "title": "Media Session ID",
@@ -312,6 +312,11 @@
           "type": "number",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
         },
+        "xdm:cdn": {
+          "title": "Content Delivery Network",
+          "type": "string",
+          "description": "The content delivery network of the content played."
+        },
         "xdm:pev3": {
           "title": "Pev3",
           "type": "string",
@@ -323,33 +328,25 @@
             "audio": "Audio",
             "audioAd": "Audio Ad"
           }
+        },
+        "xdm:pccr": {
+          "title": "Pccr",
+          "type": "boolean",
+          "description": "Indicates that a redirect occurred."
         }
       },
       "required": [
-        "xdm:ID",
         "xdm:name",
         "xdm:length",
         "xdm:contentType",
         "xdm:playerName",
         "xdm:channel"
       ]
-    },
-    "sessionDetailsReporting": {
-      "properties": {
-        "xdm:pccr": {
-          "title": "Pccr",
-          "type": "boolean",
-          "description": "Indicates that a redirect occurred."
-        }
-      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/sessionDetailsCommon"
-    },
-    {
-      "$ref": "#/definitions/sessionDetailsReporting"
+      "$ref": "#/definitions/sessionDetails"
     }
   ]
 }

@@ -4,7 +4,8 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignVersionID": "f08f3a02-b390-4e24-af16-7fe4a93a05fe",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Marketing Campaign",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": "Used for sending email/push messages",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": "ECID"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {
@@ -17,6 +18,8 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/baseMessageID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/messagePublicationID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantID": "04832ee5-51ff-4706-af8a-a8ff6756308b",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/variantName": "test-email",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/isMultiVariant": false,
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/channel": {
       "@id": "https://ns.adobe.com/xdm/channels/email"
     },
@@ -45,5 +48,8 @@
       "NewsLetter",
       "Morning"
     ]
+  },
+  "https://ns.adobe.com/experience/customerJourneyManagement/entities/timestamp": {
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/lastModifiedAt": "2023-05-25T15:52:25+00:00"
   }
 }

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Media event information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Media event information.",
   "definitions": {
@@ -17,7 +17,7 @@
       "properties": {
         "xdm:mediaCollection": {
           "title": "Media Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails#/definitions/mediaDetailsCollection",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
           "description": "Media details information related to the experience event."
         },
         "xdm:mediaEventTimestamp": {

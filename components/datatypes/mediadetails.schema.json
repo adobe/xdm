@@ -9,11 +9,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Media details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Media details information.",
   "definitions": {
-    "mediaDetailsCollection": {
+    "mediaDetails": {
       "properties": {
         "xdm:playhead": {
           "title": "Playhead",
@@ -28,7 +28,7 @@
         },
         "xdm:sessionDetails": {
           "title": "Session Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails#/definitions/sessionDetailsCommon",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails",
           "description": "Session details information related to the experience event."
         },
         "xdm:advertisingDetails": {
@@ -89,101 +89,11 @@
           "description": "The list of custom metadata."
         }
       }
-    },
-    "mediaDetailsReporting-a": {
-      "properties": {
-        "xdm:playhead": {
-          "title": "Playhead",
-          "type": "integer",
-          "minimum": 0,
-          "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
-        },
-        "xdm:sessionID": {
-          "title": "Media Session ID",
-          "type": "string",
-          "description": "Identifies an instance of a content stream unique to an individual playback."
-        },
-        "xdm:sessionDetails": {
-          "title": "Session Details",
-          "description": "Session details information related to the experience event.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails#/definitions/sessionDetailsCommon"
-        },
-        "xdm:advertisingDetails": {
-          "title": "Advertising Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
-          "description": "Advertising details information related to the experience event."
-        },
-        "xdm:advertisingPodDetails": {
-          "title": "Advertising Pod Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
-          "description": "Advertising pod details information related to the experience event."
-        },
-        "xdm:chapterDetails": {
-          "title": "Chapter Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
-          "description": "Chapter details information related to the experience event."
-        },
-        "xdm:errorDetails": {
-          "title": "Error Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/errorDetails",
-          "description": "Error details information related to the experience event."
-        },
-        "xdm:qoeDataDetails": {
-          "title": "Qoe Data Details",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",
-          "description": "Qoe data details information related to the experience event."
-        },
-        "xdm:statesStart": {
-          "title": "List Of States Start",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states start."
-        },
-        "xdm:statesEnd": {
-          "title": "List Of States End",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states end."
-        },
-        "xdm:states": {
-          "title": "List Of States",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/playerStateData"
-          },
-          "description": "The list of states."
-        },
-        "xdm:customMetadata": {
-          "title": "The Custom Metadata",
-          "type": "array",
-          "items": {
-            "$ref": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails"
-          },
-          "description": "The list of custom metadata."
-        }
-      }
-    },
-    "mediaDetailsReporting-b": {
-      "xdm:sessionDetails": {
-        "title": "Session Details",
-        "description": "Session details information related to the experience event.",
-        "$ref": "https://ns.adobe.com/xdm/datatypes/sessionDetails#/definitions/sessionDetailsReporting"
-      }
     }
   },
   "allOf": [
     {
-      "$ref": "#/definitions/mediaDetailsCollection"
-    },
-    {
-      "$ref": "#/definitions/mediaDetailsReporting-a"
-    },
-    {
-      "$ref": "#/definitions/mediaDetailsReporting-b"
+      "$ref": "#/definitions/mediaDetails"
     }
   ]
 }

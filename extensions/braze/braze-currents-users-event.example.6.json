@@ -17,7 +17,7 @@
     "braze:dispatchId": "12345qwert",
     "braze:sendId": "f123456789abcdef01234567",
     "braze:email": {
-      "braze:sendingIp": "206.252.203.38",
+      "braze:userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36",
       "braze:ipPool": "braze_transactional",
       "braze:esp": "SparkPost",
       "braze:fromDomain": "some.com"

@@ -19,8 +19,10 @@
     "braze:email": {
       "braze:sendingIp": "206.252.203.38",
       "braze:ipPool": "braze_transactional",
+      "braze:bounceReason": "550 Access denied...598eb32e3f2e5f5f1e7ecf3f379fef13be5e072a975fc74f7a731ec773ea9eca6fe3232b9b8f4ebf3b374a3ecf3f...",
       "braze:esp": "SparkPost",
-      "braze:fromDomain": "some.com"
+      "braze:fromDomain": "some.com",
+      "braze:isDrop": true
     }
   }
 }

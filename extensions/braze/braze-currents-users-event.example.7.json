@@ -17,10 +17,7 @@
     "braze:dispatchId": "12345qwert",
     "braze:sendId": "f123456789abcdef01234567",
     "braze:email": {
-      "braze:sendingIp": "206.252.203.38",
-      "braze:ipPool": "braze_transactional",
-      "braze:esp": "SparkPost",
-      "braze:fromDomain": "some.com"
+      "braze:ipPool": "braze_transactional"
     }
   }
 }

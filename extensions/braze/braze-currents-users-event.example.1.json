@@ -1,17 +1,25 @@
 {
   "braze:id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "braze:userId": "0123456789abcdef01234567",
-  "braze:externalUserId": "user_id",
   "braze:time": 1477502783,
   "braze:timezone": "America/Chicago",
   "braze:appId": "01234567-89ab-cdef-0123-456789abcdef",
-  "braze:platform": "ios",
-  "braze:osVersion": "iOS 10.3.1",
-  "braze:deviceModel": "iPhone 7 Plus",
-  "braze:deviceId": "fedcba87-6543-210f-fedc-ba9876543210",
-  "braze:name": "custom event name",
-  "braze:properties": "{\"string_property\":\"a\",\"number_property\":1,\"list_property\":[\"a\",\"b\"]}",
-  "braze:adId": "3456789abcde-f012-3456-789a-bcdef0121234",
-  "braze:adIdType": "google_ad_id",
-  "braze:adTrackingEnabled": true
+  "braze:user": {
+    "braze:userId": "0123456789abcdef01234567",
+    "braze:externalUserId": "user_id"
+  },
+  "braze:device": {
+    "braze:platform": "ios",
+    "braze:osVersion": "iOS 10.3.1",
+    "braze:deviceModel": "iPhone 7 Plus",
+    "braze:deviceId": "fedcba87-6543-210f-fedc-ba9876543210"
+  },
+  "braze:customEvent": {
+    "braze:name": "custom event name",
+    "braze:properties": "{\"string_property\":\"a\",\"number_property\":1,\"list_property\":[\"a\",\"b\"]}"
+  },
+  "braze:adTracking": {
+    "braze:adId": "3456789abcde-f012-3456-789a-bcdef0121234",
+    "braze:adIdType": "google_ad_id",
+    "braze:adTrackingEnabled": true
+  }
 }

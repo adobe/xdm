@@ -144,6 +144,11 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
           "description": "The properties of requisition list created by customer."
         },
+        "xdm:commerce.requisitionListDeletes": {
+          "title": "Delete Requisition List",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
+          "description": "Removal of requisition list."
+        },
         "xdm:commerceScope": {
           "title": "Scope",
           "$ref": "https://ns.adobe.com/xdm/datatypes/commercescope",

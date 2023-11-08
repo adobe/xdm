@@ -14,35 +14,57 @@ Qoe Data details information.
 ## Qoe Data details information Example
 ```json
 {
-  "xdm:bitrateAverageBucket": 100
+  "xdm:bitrateAverageBucket": "800-899"
 }
 ```
 
 # Qoe Data details information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:bitrateAverage](#xdmbitrateaverage) | `number` | Optional | Qoe Data details information (this schema) |
-| [xdm:bitrateAverageBucket](#xdmbitrateaveragebucket) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:bitrateChangeCount](#xdmbitratechangecount) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:bufferCount](#xdmbuffercount) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:bufferTime](#xdmbuffertime) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:droppedFrameCount](#xdmdroppedframecount) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:errorCount](#xdmerrorcount) | `integer` | Optional | Qoe Data details information (this schema) |
+| Property | Type       | Required | Defined by |
+|----------|------------|----------|------------|
+| [xdm:bitrate](#xdmbitrate) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:bitrateAverage](#xdmbitrateaverage) | `number`   | Optional | Qoe Data details information (this schema) |
+| [xdm:bitrateAverageBucket](#xdmbitrateaveragebucket) | `string`   | Optional | Qoe Data details information (this schema) |
+| [xdm:bitrateChangeCount](#xdmbitratechangecount) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:bufferCount](#xdmbuffercount) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:bufferTime](#xdmbuffertime) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:droppedFrameCount](#xdmdroppedframecount) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:droppedFrames](#xdmdroppedframes) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:errorCount](#xdmerrorcount) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:externalErrors](#xdmexternalerrors) | `string[]` | Optional | Qoe Data details information (this schema) |
-| [xdm:framesPerSecond](#xdmframespersecond) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:hasBitrateChangeImpactedStreams](#xdmhasbitratechangeimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
-| [xdm:hasBufferImpactedStreams](#xdmhasbufferimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
-| [xdm:hasDroppedFrameImpactedStreams](#xdmhasdroppedframeimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
-| [xdm:hasErrorImpactedStreams](#xdmhaserrorimpactedstreams) | `boolean` | Optional | Qoe Data details information (this schema) |
-| [xdm:hasStall](#xdmhasstall) | `boolean` | Optional | Qoe Data details information (this schema) |
-| [xdm:isDroppedBeforeStart](#xdmisdroppedbeforestart) | `boolean` | Optional | Qoe Data details information (this schema) |
+| [xdm:framesPerSecond](#xdmframespersecond) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:hasBitrateChangeImpactedStreams](#xdmhasbitratechangeimpactedstreams) | `boolean`  | Optional | Qoe Data details information (this schema) |
+| [xdm:hasBufferImpactedStreams](#xdmhasbufferimpactedstreams) | `boolean`  | Optional | Qoe Data details information (this schema) |
+| [xdm:hasDroppedFrameImpactedStreams](#xdmhasdroppedframeimpactedstreams) | `boolean`  | Optional | Qoe Data details information (this schema) |
+| [xdm:hasErrorImpactedStreams](#xdmhaserrorimpactedstreams) | `boolean`  | Optional | Qoe Data details information (this schema) |
+| [xdm:hasStallImpactedStreams](#xdmhasstallimpactedstreams) | `boolean`  | Optional | Qoe Data details information (this schema) |
+| [xdm:isDroppedBeforeStart](#xdmisdroppedbeforestart) | `boolean`  | Optional | Qoe Data details information (this schema) |
 | [xdm:mediaSdkErrors](#xdmmediasdkerrors) | `string[]` | Optional | Qoe Data details information (this schema) |
 | [xdm:playerSdkErrors](#xdmplayersdkerrors) | `string[]` | Optional | Qoe Data details information (this schema) |
-| [xdm:stallCount](#xdmstallcount) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:stallTime](#xdmstalltime) | `integer` | Optional | Qoe Data details information (this schema) |
-| [xdm:timeToStart](#xdmtimetostart) | `integer` | Optional | Qoe Data details information (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| [xdm:stallCount](#xdmstallcount) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:stallTime](#xdmstalltime) | `integer`  | Optional | Qoe Data details information (this schema) |
+| [xdm:timeToStart](#xdmtimetostart) | `integer`  | Optional | Qoe Data details information (this schema) |
+| `*` | any        | Additional | this schema *allows* additional properties |
+
+## xdm:bitrate
+### Bitrate
+
+The bitrate value (in kbps).
+
+`xdm:bitrate`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:bitrate Type
+
+
+`integer`
+
+
+
+
+
 
 ## xdm:bitrateAverage
 ### Average Bitrate
@@ -71,13 +93,13 @@ The average bitrate (in kbps). The value is predefined buckets at 100kbps interv
 
 `xdm:bitrateAverageBucket`
 * is optional
-* type: `integer`
+* type: `string`
 * defined in this schema
 
 ### xdm:bitrateAverageBucket Type
 
 
-`integer`
+`string`
 
 
 
@@ -145,7 +167,7 @@ The total amount of time, in seconds, spent buffering. This value is computed as
 
 
 ## xdm:droppedFrameCount
-### Dropped Frames
+### Dropped Frames Reporting
 
 The number of frames dropped during playback of the main content.
 
@@ -155,6 +177,26 @@ The number of frames dropped during playback of the main content.
 * defined in this schema
 
 ### xdm:droppedFrameCount Type
+
+
+`integer`
+
+
+
+
+
+
+## xdm:droppedFrames
+### Dropped Frames Collection
+
+The number of frames dropped during playback of the main content.
+
+`xdm:droppedFrames`
+* is optional
+* type: `integer`
+* defined in this schema
+
+### xdm:droppedFrames Type
 
 
 `integer`
@@ -307,17 +349,17 @@ The number of streams in which an error event occurred (i.e., trackError was cal
 
 
 
-## xdm:hasStall
+## xdm:hasStallImpactedStreams
 ### Stalling Impacted Streams
 
 The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback.
 
-`xdm:hasStall`
+`xdm:hasStallImpactedStreams`
 * is optional
 * type: `boolean`
 * defined in this schema
 
-### xdm:hasStall Type
+### xdm:hasStallImpactedStreams Type
 
 
 `boolean`

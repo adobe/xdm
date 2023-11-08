@@ -1,0 +1,49 @@
+{
+  "xdm:mediaEventTimestamp": "2017-09-26T15:52:25+00:00",
+  "xdm:mediaEventType": "media.sessionStart",
+  "xdm:mediaCollection": {
+    "xdm:playhead": 831,
+    "xdm:sessionDetails": {
+      "xdm:name": "123456789",
+      "xdm:length": 100,
+      "xdm:contentType": "VOD",
+      "xdm:playerName": "playerName",
+      "xdm:channel": "channel"
+    },
+    "xdm:advertisingDetails": {
+      "xdm:name": "123456789",
+      "xdm:length": 100,
+      "xdm:podPosition": 1,
+      "xdm:playerName": "playerName"
+    },
+    "xdm:advertisingPodDetails": {
+      "xdm:index": 2,
+      "xdm:offset": 123
+    },
+    "xdm:chapterDetails": {
+      "xdm:length": 100,
+      "xdm:offset": 50,
+      "xdm:index": 2
+    },
+    "xdm:errorDetails": {
+      "xdm:name": "errorID",
+      "xdm:source": "player"
+    },
+    "xdm:qoeDataDetails": {
+      "xdm:bitrate": 100
+    },
+    "xdm:statesStart": [
+      {
+        "xdm:name": "mute"
+      },
+      {
+        "xdm:name": "pictureInPicture"
+      }
+    ],
+    "xdm:statesEnd": [
+      {
+        "xdm:name": "fullscreen"
+      }
+    ]
+  }
+}

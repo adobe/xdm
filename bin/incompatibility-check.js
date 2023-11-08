@@ -53,6 +53,10 @@ const ignoredForOpenObjectValidation =
     "../components/datatypes/extensible.schema.json",
     "../components/datatypes/external/repo/common.schema.json"
     ];
+const ignoredForDuplicateKeyValidation =
+    ["xdm:poidetail",
+        "xdm:poiid"
+    ];
 
 shell.rm("-rf", masterCopyLoc); //start
 if (shell.exec('git clone https://github.com/adobe/xdm.git ' + masterCopyLoc).code !== 0) {
@@ -239,13 +243,20 @@ function isPropertyChanged(differences, brokenProperty) {
 
 
 function isDuplicatedKey(differences, brokenProperty, schema) {
+    for (var i in schema) {
+        if (schema[i] !== null && typeof(schema[i]) == "object") {
+            //going one step down in the object tree!!
+            isDuplicatedKey(differences, brokenProperty, schema[i])
+        }
+    }
+
     var isDupChecked = false;
     var res, dupField;
     for (var i in differences) {
         if (differences[i].kind == "N") {
             if (isDupChecked !== true) {
                 isDupChecked = true;
-                preProcess(schema);
+                //preProcess(schema);
                 res = jsonValidator.validate(JSON.stringify(schema).toLowerCase(), false);
                 if ((res != undefined) && (res.indexOf("Syntax error: duplicated keys") != -1)) {
                     dupField = res.substr(res.split("\"", 1).join("\"").length+1, res.split("\"", 2).join("\"").length-res.split("\"", 1).join("\"").length-1);
@@ -311,8 +322,39 @@ function validate(o, file) {
             }
         }
 
+        if (file.indexOf("../schemas/descriptors/") == -1) {//enum validation
+            if (o[i] && o[i].hasOwnProperty('enum') && o[i].hasOwnProperty('meta:enum')) {
+                var enumSet = new Set();
+                var metaEnumSet = new Set();
+
+                for (let j in o[i]["enum"]) {
+                    enumSet.add(o[i]["enum"][j])
+                }
+
+                for (let k in o[i]["meta:enum"]) {
+                    metaEnumSet.add(k)
+                }
+
+                const eqSet = (xs, ys) =>
+                    xs.size === ys.size && [...xs].every((x) => ys.has(x));
+
+                if (!eqSet(enumSet, metaEnumSet)) {
+                    errLogs.push(file + " validation error!!! Mismatch between enum and meta:enum for property " + i + "\n");
+                }
+            } else if (o[i] && o[i].hasOwnProperty('enum') && !o[i].hasOwnProperty('meta:enum')) {
+                errLogs.push(file + " validation error!!! Missing meta:enum for property " + i + "\n");
+            }
+        }
 
         if (o[i] !== null && typeof(o[i]) == "object") {
+            res = jsonValidator.validate(JSON.stringify(o[i]).toLowerCase(), false);//validate duplicated lowercase key
+            if ((res != undefined) && (res.indexOf("Syntax error: duplicated keys") != -1)) {
+                dupField = res.substr(res.split("\"", 1).join("\"").length+1, res.split("\"", 2).join("\"").length-res.split("\"", 1).join("\"").length-1);
+                if (ignoredForDuplicateKeyValidation.indexOf(dupField) == -1) {
+                    errLogs.push(file + " validation error!!! field with lowercase " + dupField + " has duplicated lowercase field at same level already!\n");
+                }
+            }
+
             //going one step down in the object tree!!
             validate(o[i], file);
         }

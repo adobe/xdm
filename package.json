@@ -55,5 +55,8 @@
     "shelljs": "^0.8.5",
     "shx": "^0.3.2",
     "winston": "^2.4.3"
+  },
+  "dependencies": {
+    "commander": "^4.1.1"
   }
 }

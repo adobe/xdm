@@ -15,13 +15,13 @@
     "definitions": {
         "errorDetails": {
             "properties": {
-                "xdm:errorID": {
+                "xdm:ID": {
                     "title": "Error ID",
                     "type": "string",
                     "pattern": "^.{1,}$",
                     "description": "The error ID."
                 },
-                "xdm:errorSource": {
+                "xdm:source": {
                     "title": "Error Source",
                     "type": "string",
                     "description": "The error source.",
@@ -36,8 +36,8 @@
                 }
             },
             "required": [
-                "xdm:errorID",
-                "xdm:errorSource"
+                "xdm:ID",
+                "xdm:source"
             ]
         }
     },
@@ -48,8 +48,8 @@
     ],
     "examples": [
         {
-            "xdm:errorID": "errorID",
-            "xdm:errorSource": "player"
+            "xdm:ID": "errorID",
+            "xdm:source": "player"
         }
     ]
 }

@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Player state data information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Player state data information.",
   "definitions": {
@@ -18,8 +18,14 @@
         "xdm:name": {
           "title": "Player State Name",
           "type": "string",
-          "pattern": "^[a-zA-Z0-9_.]{1,64}$",
-          "description": "The name of the player state."
+          "description": "The name of the player state.",
+          "meta:enum": {
+            "fullscreen": "Full Screen",
+            "mute": "Mute",
+            "closedCaptioning": "Closed Captioning",
+            "pictureInPicture": "Picture In Picture",
+            "inFocus": "In Focus"
+          }
         },
         "xdm:isSet": {
           "title": "Player State Set",

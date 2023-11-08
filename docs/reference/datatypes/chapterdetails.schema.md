@@ -27,7 +27,7 @@ Chapter details information.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:chapterID](#xdmchapterid) | `string` | Optional | Chapter details information (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Chapter details information (this schema) |
 | [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Chapter details information (this schema) |
 | [xdm:index](#xdmindex) | `integer` | Optional | Chapter details information (this schema) |
 | [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Chapter details information (this schema) |
@@ -37,17 +37,17 @@ Chapter details information.
 | [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional | Chapter details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:chapterID
+## xdm:ID
 ### Chapter ID
 
 The auto-generated ID of the chapter.
 
-`xdm:chapterID`
+`xdm:ID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:chapterID Type
+### xdm:ID Type
 
 
 `string`

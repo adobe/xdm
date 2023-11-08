@@ -1,0 +1,254 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkle-corelogic",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Merkle Prospect Details(corelogic)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/prospect-profile"
+  ],
+  "description": "Prospect Profile extensions by Merkle. This is for the corelogic industry",
+  "definitions": {
+    "merkle-corelogic": {
+      "properties": {
+        "xdm:merkle": {
+          "type": "object",
+          "title": "Merkle Properties",
+          "description": "Merkle roperties.",
+          "properties": {
+            "xdm:homeValue": {
+              "type": "object",
+              "properties": {
+                "xdm:mortgageAssumptionAmountFromDeed": {
+                  "type": "number",
+                  "title": "FD020-MortgageAssumptionAmountfromDeed",
+                  "description": "Assumption amount related to existing mortgage"
+                },
+                "xdm:totalValueCalculated": {
+                  "type": "number",
+                  "title": "FT008-TotalValueCalculated",
+                  "description": "The Land and Improvement Value closest to current market value used for assessment by county or local taxing authorities  (in single dollar units)."
+                },
+                "xdm:totalValueCalculatedInd": {
+                  "type": "string",
+                  "title": "FT011-TotalValueCalculatedInd",
+                  "description": "The indicator of the type of values used to seed the TOTAL VALUE CALCULATED field."
+                },
+                "xdm:assdTotalValue": {
+                  "type": "number",
+                  "title": "FT014-AssdTotalValue",
+                  "description": "The Assessed Total Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:assdLandValue": {
+                  "type": "number",
+                  "title": "FT015-AssdLandValue",
+                  "description": "The Assessed Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:assdImprovementValue": {
+                  "type": "number",
+                  "title": "FT016-AssdImprovementValue",
+                  "description": "The Assessed Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:marketTotalValue": {
+                  "type": "number",
+                  "title": "FT017-MarketTotalValue",
+                  "description": "The Total Market Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:marketLandValue": {
+                  "type": "number",
+                  "title": "FT018-MarketLandValue",
+                  "description": "The Market Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:marketImprovementValue": {
+                  "type": "number",
+                  "title": "FT019-MarketImprovementValue",
+                  "description": "The Market Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:apprTotalValue": {
+                  "type": "number",
+                  "title": "FT020-ApprTotalValue",
+                  "description": "The Appraised Total Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:apprLandValue": {
+                  "type": "number",
+                  "title": "FT021-ApprLandValue",
+                  "description": "The Appraised Land Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:apprImprovementValue": {
+                  "type": "number",
+                  "title": "FT022-ApprImprovementValue",
+                  "description": "The Appraised Improvement Value as provided by the county or local taxing/assessment authority (in single dollar units)."
+                },
+                "xdm:taxYear": {
+                  "type": "integer",
+                  "title": "FT024-TaxYear",
+                  "description": "The tax or assessment year for which the taxes were billed."
+                }
+              }
+            },
+            "xdm:lender": {
+              "type": "object",
+              "properties": {
+                "xdm:lenderLastName": {
+                  "type": "string",
+                  "title": "FD006-LenderLastName",
+                  "description": "Name of Lender as recorded on original document"
+                },
+                "xdm:lenderFirstName": {
+                  "type": "string",
+                  "title": "FD007-LenderFirstName",
+                  "description": "May be first name if lender is private party"
+                },
+                "xdm:lenderAddress": {
+                  "type": "string",
+                  "title": "FD008-LenderAddress",
+                  "description": "Number and street of Lender as recorded on Deed document"
+                },
+                "xdm:lenderCity": {
+                  "type": "string",
+                  "title": "FD009-LenderCity",
+                  "description": "City location of Lender"
+                },
+                "xdm:lenderState": {
+                  "type": "string",
+                  "title": "FD010-LenderState",
+                  "description": "State location of Lender standardized as two letter USPS abbreviation"
+                },
+                "xdm:lenderZIP": {
+                  "type": "string",
+                  "title": "FD011-LenderZIP",
+                  "description": "5-digit USPS AIP code location of Lender"
+                },
+                "xdm:lenderZIP4": {
+                  "type": "string",
+                  "title": "FD012-LenderZIP4",
+                  "description": "Last 4 digits of 9-digit USPS ZIP code location of Lender"
+                },
+                "xdm:sellerCarryBack": {
+                  "type": "string",
+                  "title": "FD029-SellerCarryBack",
+                  "description": "Indicator showing Seller carried mortgage"
+                }
+              }
+            },
+            "xdm:mortgage": {
+              "type": "object",
+              "properties": {
+                "xdm:addChangeField": {
+                  "type": "string",
+                  "title": "FD036-Add/ChangeField",
+                  "description": "Indicator showing if record is a new record or changed older record"
+                },
+                "xdm:mortgageIntRate": {
+                  "type": "number",
+                  "title": "FD049-MortgageIntRate",
+                  "description": "Interest rate on mortgage (with 3 decimals)"
+                },
+                "xdm:ownerCorporateIndicator": {
+                  "type": "string",
+                  "title": "FT005-OwnerCorporateIndicator",
+                  "description": "The Name of the property owner has been recognized as a corporation or business"
+                },
+                "xdm:mortgageDueDate": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "FT036-MortgageDueDate",
+                  "description": "The date the mortgage amount becomes due."
+                },
+                "xdm:mortgageAssumptionAmountFromTaxAssessor": {
+                  "type": "number",
+                  "title": "FT037-MortgageAssumptionAmountfromTaxAssessor",
+                  "description": "The assumption amount related to an existing mortgage (in single dollar units)."
+                },
+                "xdm:priorSalesDeedCategoryType": {
+                  "type": "string",
+                  "title": "FT043-PriorSalesDeedCategoryType",
+                  "description": "The type of deed used to record the prior sales transaction"
+                },
+                "xdm:priorSaleDate": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "FT044-PriorSaleDate",
+                  "description": "The date the sales transaction was legally completed"
+                },
+                "xdm:priorSalePrice": {
+                  "type": "number",
+                  "title": "FT045-PriorSalePrice",
+                  "description": "Price of the sale as depicted on the recorded sales transaction (in single dollar units)."
+                },
+                "xdm:priorSaleCode": {
+                  "type": "string",
+                  "title": "FT046-PriorSaleCode",
+                  "description": "This field indicates the type of financial consideration"
+                },
+                "xdm:priorMortgageAmount": {
+                  "type": "number",
+                  "title": "FT047-PriorMortgageAmount",
+                  "description": "The amount associated with the mortgage of the prior sale (in single dollar units)."
+                }
+              }
+            },
+            "xdm:propertyCharacteristics": {
+              "type": "object",
+              "properties": {
+                "xdm:residentialModelIndicator": {
+                  "type": "string",
+                  "title": "FD014-ResidentialModelIndicator",
+                  "description": "Indicator of residential property based on zip code and value"
+                },
+                "xdm:numberOfBuildings": {
+                  "type": "integer",
+                  "title": "FT004-NumberofBuildings",
+                  "description": "Total number of buildings on the parcel (with no implied decimals)"
+                },
+                "xdm:buildingLdgImpvCode": {
+                  "type": "string",
+                  "title": "FT056-BuildingldgImpvCode",
+                  "description": "The primary improvement type"
+                },
+                "xdm:condition": {
+                  "type": "string",
+                  "title": "FT057-Condition",
+                  "description": "The physical condition of the premises improvement"
+                },
+                "xdm:garage": {
+                  "type": "string",
+                  "title": "FT060-Garage",
+                  "description": "Type of garage or carport present"
+                },
+                "xdm:mobileHomeInd": {
+                  "type": "string",
+                  "title": "FT061-MobileHomeInd",
+                  "description": "The indicator of Mobile Home's presence on the parcel."
+                },
+                "xdm:parkingSpaces": {
+                  "type": "integer",
+                  "title": "FT062-ParkingSpaces",
+                  "description": "The total number of Parking Spaces or Car Capacity associated with the Garage or Parking type."
+                },
+                "xdm:style": {
+                  "type": "string",
+                  "title": "FT065-Style",
+                  "description": "Type of building style"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/merkle-corelogic"
+    }
+  ],
+  "meta:status": "stable"
+}

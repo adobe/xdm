@@ -91,7 +91,18 @@
                         "twilio": "Twilio sms provider",
                         "vibes": "Vibes sms Provider "
                     }
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/messageType": {
+                    "title": "SMS messageType",
+                    "type": "string",
+                    "description": "SMS provider, e.g. inbound, inboundReply or send"
+                },
+                "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/inboundMessage": {
+                    "title": "SMS inbound Message",
+                    "type": "string",
+                    "description": "SMS inbound reply, e.g. stop, start, subscribe, etc.",
                 }
+                
             }
         }
     },

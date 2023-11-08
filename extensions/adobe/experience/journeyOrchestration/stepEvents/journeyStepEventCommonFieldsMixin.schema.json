@@ -45,6 +45,11 @@
               "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
               "type": "string"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/isReadSegmentTriggerStartEvent": {
+              "title": "isReadSegmentTriggerStartEvent",
+              "description": "If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.",
+              "type": "boolean"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
               "title": "origSegmentQualificationStatus",
               "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
@@ -204,6 +209,14 @@
               "title": "processingTime",
               "description": "Time(ms) taken to complete the processing of this step.",
               "type": "integer",
+              "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMs": {
+              "title": "processingTimeMs",
+              "description": "Time(ms) taken to complete the processing of this step.",
+              "type": "integer",
+              "meta:xdmType": "long",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"
             },
@@ -399,6 +412,26 @@
               "title": "Experience ID",
               "type": "string",
               "description": "Journey Orchestration Experience Id"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/inDryRun": {
+              "title": "In Dry Run",
+              "type": "boolean",
+              "description": "Journey Orchestration Dry Run"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportJobID": {
+              "title": "Export Job ID",
+              "type": "string",
+              "description": "Read Segment Export Job ID"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportSegmentID": {
+              "title": "Export Segment ID",
+              "type": "string",
+              "description": "Read Segment Export Segment ID"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exportTopicName": {
+              "title": "Export Topic Name",
+              "type": "string",
+              "description": "Read Segment Export Topic Name"
             }
           },
           "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##31091"

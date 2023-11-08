@@ -1,0 +1,131 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/prospect-details-merkle-core",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Merkle Prospect Details(Core)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/prospect-profile"],
+  "description": "Prospect Profile extensions by Merkle. This is for the Core industry",
+  "definitions": {
+    "merkle-core": {
+      "properties": {
+        "xdm:merkle": {
+          "type": "object",
+          "title": "Merkle Properties",
+          "description": "Merkle roperties.",
+          "properties": {
+            "xdm:demographics": {
+              "type": "object",
+              "properties": {
+                "xdm:age": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:ageRangeInHousehold": {
+                      "type": "integer",
+                      "title": "AU004-Age Range In Household",
+                      "description": "The age range between the oldest and youngest persons in the household (with 0 meaning either 0 range, or not enough information to determine (i.e. missing age or 1 person Household)).  Ranges from 0-99."
+                    },
+                    "xdm:birthdate": {
+                      "type": "string",
+                      "format": "date-time",
+                      "title": "MS073-Birthdate",
+                      "description": "Month and year of birth for individual."
+                    },
+                    "xdm:age": {
+                      "type": "integer",
+                      "title": "MS074-Age",
+                      "description": "Age of individual."
+                    },
+                    "xdm:inferredAge": {
+                      "type": "integer",
+                      "title": "MS080-Inferred Age",
+                      "description": "Estimates the age of the individual using both individual and area level data. Present only when exact age is not present."
+                    }
+                  }
+                },
+                "xdm:education": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:edication": {
+                      "type": "string",
+                      "title": "MS112-Education",
+                      "description": "Educational attainment of individual."
+                    },
+                    "xdm:inferredEducation": {
+                      "type": "string",
+                      "title": "MS127-Inferred Education",
+                      "description": "Estimates educational attainment of individual"
+                    }
+                  }
+                },
+                "xdm:gender": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:gender": {
+                      "type": "string",
+                      "title": "MS195-Gender",
+                      "description": "Gender of individual."
+                    }
+                  }
+                },
+                "xdm:householdComposition": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:individualCount": {
+                      "type": "integer",
+                      "title": "MS518-Individual Count",
+                      "description": "Number of individual adults in household"
+                    },
+                    "xdm:numberOfPersonsLivingInUnit": {
+                      "type": "integer",
+                      "title": "MS947-Number of Persons In Living Unit",
+                      "description": "Indicates the number of persons including children in the household.  Ranges from 0-9."
+                    }
+                  }
+                },
+                "xdm:maritalStatus": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:maritalStatus": {
+                      "type": "string",
+                      "title": "MS139-Marital Status",
+                      "description": "Marital status for individual."
+                    },
+                    "xdm:inferredMaritalStatus": {
+                      "type": "string",
+                      "title": "MS186-Inferred Marital Status",
+                      "description": "Estimates marital status of individual"
+                    }
+                  }
+                },
+                "xdm:occupation": {
+                  "type": "object",
+                  "properties": {
+                    "xdm:occupation": {
+                      "type": "string",
+                      "title": "MS113-Occupation",
+                      "description": "Occupation of individual."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/merkle-core"
+    }
+  ],
+  "meta:status": "stable"
+}

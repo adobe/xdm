@@ -17,8 +17,13 @@
             "properties": {
                 "xdm:bitrateAverageBucket": {
                     "title": "Average Bitrate Bucket",
-                    "type": "integer",
+                    "type": "string",
                     "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session."
+                },
+                "xdm:bitrate": {
+                    "title": "Bitrate",
+                    "type": "integer",
+                    "description": "The bitrate value (in kbps)."
                 },
                 "xdm:bitrateAverage": {
                     "title": "Average Bitrate",
@@ -41,7 +46,12 @@
                     "description": "The number of streams in which frames were dropped. This metric is set to true only if at least one frame was dropped during a playback session."
                 },
                 "xdm:droppedFrameCount": {
-                    "title": "Dropped Frames",
+                    "title": "Dropped Frames Reporting",
+                    "type": "integer",
+                    "description": "The number of frames dropped during playback of the main content."
+                },
+                "xdm:droppedFrames": {
+                    "title": "Dropped Frames Collection",
                     "type": "integer",
                     "description": "The number of frames dropped during playback of the main content."
                 },
@@ -85,7 +95,7 @@
                     "type": "integer",
                     "description": "The number of errors that occurred (Integer). This value is computed as a sum of all error events that occurred during a playback session."
                 },
-                "xdm:hasStall": {
+                "xdm:hasStallImpactedStreams": {
                     "title": "Stalling Impacted Streams",
                     "type": "boolean",
                     "description": "The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback."
@@ -134,7 +144,7 @@
     ],
     "examples": [
         {
-            "xdm:bitrateAverageBucket": 100
+            "xdm:bitrateAverageBucket": "800-899"
         }
     ]
 }

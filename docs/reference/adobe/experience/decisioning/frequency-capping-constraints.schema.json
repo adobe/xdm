@@ -89,7 +89,10 @@
                                     "type": "string",
                                     "enum": [
                                         "decisioning"
-                                    ]
+                                    ],
+                                    "meta:enum": {
+                                        "decisioning": "Decisioning"
+                                    }
                                 },
                                 "minItems": 1,
                                 "default": [

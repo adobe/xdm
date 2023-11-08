@@ -22,6 +22,12 @@ Profile constraints define the policies that ensure a particular decision option
 
 ```json
 {
+  "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
+}
+```
+
+```json
+{
   "https://ns.adobe.com/experience/decisioning/profileConstraintType": "anySegments",
   "https://ns.adobe.com/experience/decisioning/segmentIdentities": [
     {
@@ -37,12 +43,6 @@ Profile constraints define the policies that ensure a particular decision option
       }
     }
   ]
-}
-```
-
-```json
-{
-  "https://ns.adobe.com/experience/decisioning/profileConstraintType": "none"
 }
 ```
 
@@ -116,11 +116,9 @@ The value of this property **must** be equal to one of the [known values below](
 |-------|-------------|
 | `none` |  |
 | `eligibilityRule` | The profile constraint is expressed as a single rule that must evaluate to true before the constrained action is allowed |
-| `Any Segments` | The profile constraint is expressed as one or more segments and the profile must be a member of at least one of them before the constrained action is allowed |
-| `All Segments` | The profile constraint is expressed as one or more segments and the profile must be a member of all of them before the constrained action is allowed |
+| `anySegments` | The profile constraint is expressed as one or more segments and the profile must be a member of at least one of them before the constrained action is allowed |
+| `allSegments` | The profile constraint is expressed as one or more segments and the profile must be a member of all of them before the constrained action is allowed |
 | `rules` | The profile constraint is expressed as a number of different rules, e.g. eligibility, applicability, suitability, which all must evaluate to true before the constrained action is allowed |
-| `anySegments` |  |
-| `allSegments` |  |
 
 
 

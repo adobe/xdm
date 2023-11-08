@@ -9,7 +9,7 @@ Use to capture details when a person clicks a link on a web page.
 
 | [Abstract](../../../../abstract.md) | [Extensible](../../../../extensions.md) | [Status](../../../../status.md) | [Identifiable](../../../../id.md) | [Custom Properties](../../../../extensions.md) | [Additional Properties](../../../../extensions.md) | Defined In |
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [fieldgroups/experience-event/events/linkclicks.schema.json](fieldgroups/experience-event/events/linkclicks.schema.json) |
+| Can be instantiated | Yes | Stable | No | Forbidden | Permitted | [fieldgroups/experience-event/events/linkclicks.schema.json](fieldgroups/experience-event/events/linkclicks.schema.json) |
 
 ## Link Clicks Example
 ```json

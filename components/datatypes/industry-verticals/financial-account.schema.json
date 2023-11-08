@@ -25,6 +25,7 @@
           "title": "Financial Account ID",
           "type": "string",
           "description": "Current account balance for a single user account.",
+          "meta:status": "deprecated",
           "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
           "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511"
         },
@@ -41,7 +42,13 @@
           "enum": ["checking", "savings", "retirement", "investment"],
           "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
           "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
-          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951"
+          "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951",
+          "meta:enum": {
+            "checking": "Checking",
+            "savings": "Savings",
+            "retirement": "Retirement",
+            "investment": "Investment"
+          }
         }
       }
     }

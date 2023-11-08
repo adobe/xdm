@@ -1,0 +1,49 @@
+{
+  "meta:license": [
+    "Copyright 2022 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "MediaAnalytics Interaction Details ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": ["all"]
+  },
+  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/experienceevent"],
+  "description": "Track interactions with media.",
+  "definitions": {
+    "experienceevent-mediaAnalytics": {
+      "properties": {
+        "xdm:mediaCollection": {
+          "title": "Media Collection Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+          "description": "Media Collection related fields."
+        },
+        "xdm:mediaReporting": {
+          "title": "Media Reporting Details",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+          "description": "Media Reporting related fields."
+        },
+        "xdm:mediaDownloadedEvents": {
+          "title": "List Of Media Collection Downloaded Content Events",
+          "type": "array",
+          "items": {
+            "$ref": "https://ns.adobe.com/xdm/datatypes/mediaEvent"
+          },
+          "description": "The list of media collection downloaded content events."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/experienceevent-mediaAnalytics"
+    }
+  ],
+  "meta:status": "stable"
+}

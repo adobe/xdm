@@ -65,7 +65,6 @@ Unknown type `object`.
       "title": "Campaign ID",
       "type": "string",
       "description": "Unique identifier of the Campaign.",
-      "meta:status": "experimental",
       "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##82611",
       "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##92571"
     },

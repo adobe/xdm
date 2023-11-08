@@ -1,5 +1,5 @@
 
-# Work Portfolio Attributes Schema
+# Workfront Portfolio Attributes Schema
 
 ```
 https://ns.adobe.com/experience/workfront/portfolio
@@ -11,7 +11,7 @@ Portfolio related fields
 |-------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------|------------------------------------------------|----------------------------------------------------|------------|
 | Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [adobe/experience/workfront/portfolio.schema.json](adobe/experience/workfront/portfolio.schema.json) |
 
-## Work Portfolio Attributes Example
+## Workfront Portfolio Attributes Example
 ```json
 {
   "workfront:portfolio": {
@@ -20,11 +20,11 @@ Portfolio related fields
 }
 ```
 
-# Work Portfolio Attributes Properties
+# Workfront Portfolio Attributes Properties
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [workfront:portfolio](#workfrontportfolio) | `object` | Optional | Work Portfolio Attributes (this schema) |
+| [workfront:portfolio](#workfrontportfolio) | `object` | Optional | Workfront Portfolio Attributes (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## workfront:portfolio

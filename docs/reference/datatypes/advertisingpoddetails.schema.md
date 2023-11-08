@@ -15,8 +15,8 @@ Advertising Pod details information.
 ```json
 {
   "xdm:index": 2,
-  "xdm:second": 123,
-  "xdm:adBreakID": "123"
+  "xdm:offset": 123,
+  "xdm:ID": "123"
 }
 ```
 
@@ -24,23 +24,23 @@ Advertising Pod details information.
 
 | Property | Type | Required | Defined by |
 |----------|------|----------|------------|
-| [xdm:adBreakID](#xdmadbreakid) | `string` | Optional | Advertising Pod details information (this schema) |
+| [xdm:ID](#xdmid) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Advertising Pod details information (this schema) |
 | [xdm:index](#xdmindex) | `integer` | Optional | Advertising Pod details information (this schema) |
-| [xdm:second](#xdmsecond) | `integer` | Optional | Advertising Pod details information (this schema) |
+| [xdm:offset](#xdmoffset) | `integer` | Optional | Advertising Pod details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
-## xdm:adBreakID
+## xdm:ID
 ### Ad Break ID
 
 The ID of the ad break.
 
-`xdm:adBreakID`
+`xdm:ID`
 * is optional
 * type: `string`
 * defined in this schema
 
-### xdm:adBreakID Type
+### xdm:ID Type
 
 
 `string`
@@ -90,17 +90,17 @@ The index of the ad inside the parent ad break start, for example, the first ad 
 
 
 
-## xdm:second
-### Pod Second
+## xdm:offset
+### Pod Offset
 
 The offset of the ad break inside the content, in seconds.
 
-`xdm:second`
+`xdm:offset`
 * is optional
 * type: `integer`
 * defined in this schema
 
-### xdm:second Type
+### xdm:offset Type
 
 
 `integer`

@@ -1,0 +1,104 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/schemas/target-classification",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Target Classification Fields",
+  "description": "A set of meta-data fields that will classify Target activities and experiences.",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "definitions": {
+    "targetClassification": {
+      "properties": {
+        "xdm:key": {
+          "title": "Key",
+          "type": "string",
+          "description": "The unique identity of activityId:experienceId:trafficTypeId:algorithmId"
+        },
+        "xdm:activityName": {
+          "title": "Activity Name",
+          "type": "string",
+          "description": "The name of the Target activity."
+        },
+        "xdm:experienceName": {
+          "title": "Experience Name",
+          "type": "string",
+          "description": "The name of the Target experience."
+        },
+        "xdm:activityExperience": {
+          "title": "Activity Experience",
+          "type": "string",
+          "description": "Target Activity name concatenated with experience name."
+        },
+        "xdm:thirdID": {
+          "title": "Third ID",
+          "type": "string",
+          "description": "The third ID of the classification record."
+        },
+        "xdm:activityID": {
+          "title": "Activity ID",
+          "type": "string",
+          "description": "The identity of Target activity."
+        },
+        "xdm:experienceID": {
+          "title": "Experience ID",
+          "type": "string",
+          "description": "The identity of Target experience."
+        },
+        "xdm:analyticsReporting": {
+          "title": "Analytics Reporting",
+          "type": "string",
+          "description": "The reporting type associated with the Target activity."
+        },
+        "xdm:activeDates": {
+          "title": "Active Dates",
+          "type": "string",
+          "description": "The date of Target activity activation."
+        },
+        "xdm:controlExperience": {
+          "title": "Control Experience",
+          "type": "string",
+          "description": "The experience set as control experience in the Target activity."
+        },
+        "xdm:algorithmID": {
+          "title": "Algorithm ID",
+          "type": "string",
+          "description": "The identity of the algorithm used in the Target activity."
+        },
+        "xdm:controlVsTargeted": {
+          "title": "Control VS Targeted",
+          "type": "string",
+          "description": "The traffic allocation type for the Target activity."
+        },
+        "xdm:trafficTypeID": {
+          "title": "Traffic Type ID",
+          "type": "string",
+          "description": "The identity of the traffic type associated with Target activity."
+        }
+      },
+      "required": [
+        "xdm:key",
+        "xdm:activityName",
+        "xdm:activityID",
+        "xdm:experienceName",
+        "xdm:experienceID",
+        "xdm:activityExperience"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/targetClassification"
+    }
+  ],
+  "meta:status": "stable"
+}

@@ -155,10 +155,10 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:status Known Values
 | Value | Description |
 |-------|-------------|
-| `initiated` |  |
-| `in progress` |  |
-| `approved` |  |
-| `declined` |  |
+| `initiated` | Initiated |
+| `in progress` | In Progress |
+| `approved` | Approved |
+| `declined` | Declined |
 
 
 
@@ -199,16 +199,16 @@ The value of this property **must** be equal to one of the [known values below](
 ##### xdm:type Known Values
 | Value | Description |
 |-------|-------------|
-| `homeowners` |  |
-| `automobile` |  |
-| `renters` |  |
-| `third party automobile` |  |
-| `third party home` |  |
-| `life` |  |
-| `health` |  |
-| `dental` |  |
-| `flood` |  |
-| `earthquake` |  |
+| `homeowners` | Homeowners |
+| `automobile` | Automobile |
+| `renters` | Renters |
+| `third party automobile` | Third Party Automobile |
+| `third party home` | Third Party Home |
+| `life` | Life |
+| `health` | Health |
+| `dental` | Dental |
+| `flood` | Flood |
+| `earthquake` | Earthquake |
 
 
 

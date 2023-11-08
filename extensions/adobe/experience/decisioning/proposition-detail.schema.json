@@ -50,6 +50,11 @@
           "meta:titleId": "proposition-detail##xdm:selections##title##87871",
           "meta:descriptionId": "proposition-detail##xdm:selections##description##34631"
         },
+        "xdm:selectionStrategy": {
+          "title": "Selection Strategy",
+          "description": "Selection Strategy Details.",
+          "$ref": "https://ns.adobe.com/experience/decisioning/strategy-detail"
+        },
         "xdm:fallback": {
           "title": "Fallback Option Snapshot",
           "description": "Snapshot of the fixed fallback option that was selected because no available option satisfied all constraints. The object contains at least the xdm:id property value which is the identifier of the fallback action. Note that the intention is that either the selections or the fallback property is required. In the future, this will be deprecated in favor of scopeDetails.activity.fallback.",

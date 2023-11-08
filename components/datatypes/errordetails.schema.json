@@ -9,19 +9,19 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Error details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Error details information.",
   "definitions": {
     "errorDetails": {
       "properties": {
-        "xdm:errorID": {
+        "xdm:name": {
           "title": "Error ID",
           "type": "string",
           "pattern": "^.{1,}$",
           "description": "The error ID."
         },
-        "xdm:errorSource": {
+        "xdm:source": {
           "title": "Error Source",
           "type": "string",
           "description": "The error source.",
@@ -32,7 +32,7 @@
           }
         }
       },
-      "required": ["xdm:errorID", "xdm:errorSource"]
+      "required": ["xdm:name", "xdm:source"]
     }
   },
   "allOf": [

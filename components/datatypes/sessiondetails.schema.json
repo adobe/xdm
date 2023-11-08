@@ -9,19 +9,19 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Session details information",
   "type": "object",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:extensible": true,
   "description": "Session details information.",
   "definitions": {
     "sessionDetails": {
       "properties": {
         "xdm:ID": {
-          "title": "Reporting Media Session ID",
+          "title": "Media Session ID",
           "type": "string",
           "description": "This identifies an instance of a content stream unique to an individual playback."
         },
         "xdm:name": {
-          "title": "Series ID",
+          "title": "Content ID",
           "type": "string",
           "pattern": "^.{1,}$",
           "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
@@ -74,14 +74,12 @@
         },
         "xdm:season": {
           "title": "Season Number",
-          "type": "integer",
-          "minimum": 0,
+          "type": "string",
           "description": "The season number the show belongs to. Season Series is required only if the show is part of a series."
         },
         "xdm:episode": {
           "title": "Episode Number",
-          "type": "integer",
-          "minimum": 0,
+          "type": "string",
           "description": "The number of the episode."
         },
         "xdm:assetID": {
@@ -134,9 +132,9 @@
           "type": "string",
           "description": "MVPD provided via Adobe authentication."
         },
-        "xdm:isAuthenticated": {
+        "xdm:authorized": {
           "title": "Media Authorized",
-          "type": "boolean",
+          "type": "string",
           "description": "The user has been authorized via Adobe authentication."
         },
         "xdm:dayPart": {
@@ -313,10 +311,31 @@
           "title": "Media Session Server Timeout",
           "type": "number",
           "description": "Indicates the amount of time, in seconds, that passed between the user's last known interaction and the moment the session was closed."
+        },
+        "xdm:cdn": {
+          "title": "Content Delivery Network",
+          "type": "string",
+          "description": "The content delivery network of the content played."
+        },
+        "xdm:pev3": {
+          "title": "Pev3",
+          "type": "string",
+          "description": "The type of the media stream used for reporting.",
+          "enum": ["video", "videoAd", "audio", "audioAd"],
+          "meta:enum": {
+            "video": "Video",
+            "videoAd": "Video Ad",
+            "audio": "Audio",
+            "audioAd": "Audio Ad"
+          }
+        },
+        "xdm:pccr": {
+          "title": "Pccr",
+          "type": "boolean",
+          "description": "Indicates that a redirect occurred."
         }
       },
       "required": [
-        "xdm:ID",
         "xdm:name",
         "xdm:length",
         "xdm:contentType",

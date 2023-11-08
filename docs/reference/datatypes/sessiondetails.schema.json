@@ -16,12 +16,12 @@
         "sessionDetails": {
             "properties": {
                 "xdm:ID": {
-                    "title": "Reporting Media Session ID",
+                    "title": "Media Session ID",
                     "type": "string",
                     "description": "This identifies an instance of a content stream unique to an individual playback."
                 },
                 "xdm:name": {
-                    "title": "Series ID",
+                    "title": "Content ID",
                     "type": "string",
                     "pattern": "^.{1,}$",
                     "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs."
@@ -134,7 +134,7 @@
                     "type": "string",
                     "description": "MVPD provided via Adobe authentication."
                 },
-                "xdm:isAuthenticated": {
+                "xdm:isAuthorized": {
                     "title": "Media Authorized",
                     "type": "boolean",
                     "description": "The user has been authorized via Adobe authentication."

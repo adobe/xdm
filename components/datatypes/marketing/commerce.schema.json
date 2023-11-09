@@ -129,7 +129,7 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Initializations of a new Requisition List."
         },
-        "xdm:commerce.requisitionListDeletes": {
+        "xdm:requisitionListDeletes": {
           "title": "Delete Requisition List",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Removal of requisition list."

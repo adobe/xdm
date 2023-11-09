@@ -10117,7 +10117,7 @@
         "https://ns.adobe.com/experience/analytics/version": {
           "title": "Version Data",
           "type": "integer",
-          "description": "Adobe Analytics Version field for tracking out of order processing",
+          "description": "Adobe Analytics Version field",
           "minimum": 1,
           "maximum": 9223372036854770000
         }

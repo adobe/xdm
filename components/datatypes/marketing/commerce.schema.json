@@ -129,6 +129,11 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "Initializations of a new Requisition List."
         },
+        "xdm:commerce.requisitionListDeletes": {
+          "title": "Delete Requisition List",
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "Removal of requisition list."
+        },
         "xdm:requisitionListAdds": {
           "title": "Requisition List Adds",
           "$ref": "https://ns.adobe.com/xdm/data/measure",
@@ -143,11 +148,6 @@
           "title": "Requisition List",
           "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
           "description": "The properties of requisition list created by customer."
-        },
-        "xdm:commerce.requisitionListDeletes": {
-          "title": "Delete Requisition List",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/requisitionlist",
-          "description": "Removal of requisition list."
         },
         "xdm:commerceScope": {
           "title": "Scope",

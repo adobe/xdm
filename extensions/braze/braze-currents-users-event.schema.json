@@ -17,81 +17,64 @@
   "definitions": {
     "currents-users-event": {
       "properties": {
-        "braze:id": {
-          "title": "id",
-          "type": "string",
-          "description": "globally unique id for this event",
-          "isRequired": true
-        },
         "braze:appId": {
-          "title": "app_id",
+          "title": "App ID",
           "type": "string",
-          "description": "API ID of the app this action occurred on",
-          "isRequired": false
-        },
-        "braze:time": {
-          "title": "time",
-          "type": "integer",
-          "description": "unix timestamp at which the user performed the event",
-          "isRequired": true
+          "description": "API ID of the app this action occurred on"
         },
         "braze:timezone": {
-          "title": "timezone",
+          "title": "Timezone",
           "type": "string",
-          "description": "timezone of the user",
-          "isRequired": false
+          "description": "timezone of the user"
         },
         "braze:user": {
           "title": "User",
           "type": "object",
           "properties": {
             "braze:userId": {
-              "title": "user_id",
+              "title": "User ID",
               "type": "string",
               "description": "BSON id of the user that performed the event",
               "isRequired": true
             },
             "braze:externalUserId": {
-              "title": "external_user_id",
+              "title": "External User ID",
               "type": "string",
-              "description": "external user id of the user",
-              "isRequired": false
+              "description": "external user id of the user"
             },
             "braze:emailAddress": {
-              "title": "email_address",
+              "title": "Email Address",
               "type": "string",
-              "description": "email address of the user",
-              "isRequired": false
+              "description": "email address of the user"
             }
-          }
+          },
+          "required": [
+            "braze:userId"
+          ]
         },
         "braze:device": {
           "title": "Device",
           "type": "object",
           "properties": {
             "braze:platform": {
-              "title": "platform",
+              "title": "Platform",
               "type": "string",
-              "description": "platform of the device",
-              "isRequired": false
+              "description": "platform of the device"
             },
             "braze:osVersion": {
-              "title": "os_version",
+              "title": "OS Version",
               "type": "string",
-              "description": "version of the operating system of the device",
-              "isRequired": false
+              "description": "version of the operating system of the device"
             },
             "braze:deviceModel": {
-              "title": "device_model",
+              "title": "Device Model",
               "type": "string",
-              "description": "model of the device",
-              "isRequired": false
+              "description": "model of the device"
             },
             "braze:deviceId": {
-              "title": "device_id",
+              "title": "Device ID",
               "type": "string",
-              "description": "id of the device on which the custom event occurred",
-              "isRequired": false
+              "description": "id of the device on which the custom event occurred"
             }
           }
         },
@@ -100,16 +83,14 @@
           "type": "object",
           "properties": {
             "braze:name": {
-              "title": "name",
+              "title": "Name",
               "type": "string",
-              "description": "name of the custom event",
-              "isRequired": false
+              "description": "name of the custom event"
             },
             "braze:properties": {
-              "title": "properties",
+              "title": "Properties",
               "type": "string",
-              "description": "custom properties of the event stored as a JSON encoded string",
-              "isRequired": false
+              "description": "custom properties of the event stored as a JSON encoded string"
             }
           }
         },
@@ -118,28 +99,24 @@
           "type": "object",
           "properties": {
             "braze:campaignId": {
-              "title": "campaign_id",
+              "title": "Campaign ID",
               "type": "string",
-              "description": "API ID of the campaign this email belongs to",
-              "isRequired": false
+              "description": "API ID of the campaign this email belongs to"
             },
             "braze:campaignName": {
-              "title": "campaign_name",
+              "title": "Campaign Name",
               "type": "string",
-              "description": "name of the campaign",
-              "isRequired": false
+              "description": "name of the campaign"
             },
             "braze:messageVariationId": {
-              "title": "message_variation_id",
+              "title": "Message Variation ID",
               "type": "string",
-              "description": "API ID of the message variation this user received",
-              "isRequired": false
+              "description": "API ID of the message variation this user received"
             },
             "braze:messageVariationName": {
-              "title": "message_variation_name",
+              "title": "Message Variation Name",
               "type": "string",
-              "description": "name of the message variation",
-              "isRequired": false
+              "description": "name of the message variation"
             }
           }
         },
@@ -148,40 +125,34 @@
           "type": "object",
           "properties": {
             "braze:canvasId": {
-              "title": "canvas_id",
+              "title": "Canvas ID",
               "type": "string",
-              "description": "API ID of the canvas this email belongs to",
-              "isRequired": false
+              "description": "API ID of the canvas this email belongs to"
             },
             "braze:canvasName": {
-              "title": "canvas_name",
+              "title": "Canvas Name",
               "type": "string",
-              "description": "name of the canvas",
-              "isRequired": false
+              "description": "name of the canvas"
             },
             "braze:canvasVariationId": {
-              "title": "canvas_variation_id",
+              "title": "Canvas Variation ID",
               "type": "string",
-              "description": "API ID of the canvas variation this user received",
-              "isRequired": false
+              "description": "API ID of the canvas variation this user received"
             },
             "braze:canvasVariationName": {
-              "title": "canvas_variation_name",
+              "title": "Canvas Variation Name",
               "type": "string",
-              "description": "Name of the canvas variation this user received",
-              "isRequired": false
+              "description": "Name of the canvas variation this user received"
             },
             "braze:canvasStepId": {
-              "title": "canvas_step_id",
+              "title": "Canvas Step ID",
               "type": "string",
-              "description": "API ID of the canvas step this email belongs to",
-              "isRequired": false
+              "description": "API ID of the canvas step this email belongs to"
             },
             "braze:canvasStepName": {
-              "title": "canvas_step_name",
+              "title": "Canvas Step Name",
               "type": "string",
-              "description": "Name of the canvas step",
-              "isRequired": false
+              "description": "Name of the canvas step"
             }
           }
         },
@@ -190,99 +161,92 @@
           "type": "object",
           "properties": {
             "braze:dispatchId": {
-              "title": "dispatch_id",
+              "title": "Dispatch ID",
               "type": "string",
-              "description": "ID of the dispatch this message belongs to",
-              "isRequired": false
+              "description": "ID of the dispatch this message belongs to"
             },
             "braze:sendId": {
-              "title": "send_id",
+              "title": "Send ID",
               "type": "string",
-              "description": "message send ID this message belongs to",
-              "isRequired": false
+              "description": "message send ID this message belongs to"
             },
             "braze:email": {
               "title": "Email",
               "type": "object",
               "properties": {
                 "braze:sendingIp": {
-                  "title": "sending_ip",
+                  "title": "Sending IP",
                   "type": "string",
-                  "description": "IP address from which the email send was made",
-                  "isRequired": false
+                  "description": "IP address from which the email send was made"
                 },
                 "braze:ipPool": {
-                  "title": "ip_pool",
+                  "title": "IP Pool",
                   "type": "string",
-                  "description": "IP Pool from which the email send was made",
-                  "isRequired": false
+                  "description": "IP Pool from which the email send was made"
                 },
                 "braze:esp": {
-                  "title": "esp",
+                  "title": "ESP",
                   "type": "string",
                   "description": "ESP related to the event (Sparkpost or Sendgrid)",
-                  "isRequired": false,
                   "enum": [
                     "SparkPost",
                     "SendGrid"
-                  ]
+                  ],
+                  "meta:enum": {
+                    "SparkPost": "SparkPost",
+                    "SendGrid": "SendGrid"
+                  }
                 },
                 "braze:fromDomain": {
-                  "title": "from_domain",
+                  "title": "From Domain",
                   "type": "string",
-                  "description": "sending domain for the email",
-                  "isRequired": false
+                  "description": "sending domain for the email"
                 },
                 "braze:userAgent": {
-                  "title": "user_agent",
+                  "title": "User Agent",
                   "type": "string",
-                  "description": "user agent on which the click occurred",
-                  "isRequired": false
+                  "description": "user agent on which the click occurred"
                 },
                 "braze:machineOpen": {
-                  "title": "machine_open",
+                  "title": "Machine Open",
                   "type": "string",
                   "description": "Populated to 'true' if the open event is triggered without user engagement, e.g. by an Apple device with Mail Privacy Protection enabled. Value may change over time to provide more granularity.",
-                  "isRequired": false,
                   "enum": [
                     "true"
-                  ]
+                  ],
+                  "meta:enum": {
+                    "true": "true"
+                  }
                 },
                 "braze:isAmp": {
-                  "title": "is_amp",
+                  "title": "Is AMP",
                   "type": "boolean",
-                  "description": "indicates that this is an AMP event",
-                  "isRequired": false
+                  "description": "indicates that this is an AMP event"
                 },
                 "braze:url": {
-                  "title": "url",
+                  "title": "URL",
                   "type": "string",
-                  "description": "URL that the user clicked on",
-                  "isRequired": false
+                  "description": "URL that the user clicked on"
                 },
                 "braze:linkId": {
-                  "title": "link_id",
+                  "title": "Link ID",
                   "type": "string",
-                  "description": "unique ID for the link which was clicked, as created by Braze",
-                  "isRequired": false
+                  "description": "unique ID for the link which was clicked, as created by Braze"
                 },
                 "braze:linkAlias": {
-                  "title": "link_alias",
+                  "title": "Link Alias",
                   "type": "string",
-                  "description": "alias associated with this link ID",
-                  "isRequired": false
+                  "description": "alias associated with this link ID"
                 },
                 "braze:bounceReason": {
-                  "title": "bounce_reason",
+                  "title": "Bounce Reason",
                   "type": "string",
-                  "description": "The SMTP reason code and user friendly message received for this bounce event",
-                  "isRequired": false
+                  "description": "The SMTP reason code and user friendly message received for this bounce event"
                 },
                 "braze:isDrop": {
-                  "title": "is_drop",
+                  "title": "Is Drop",
                   "type": "boolean",
-                  "description": "indicates that this event counts as a drop event",
-                  "isRequired": false
+                  "description": "indicates that this event counts as a drop event"
                 }
               }
             }
@@ -293,28 +257,31 @@
           "type": "object",
           "properties": {
             "braze:adId": {
-              "title": "ad_id",
+              "title": "Ad ID",
               "type": "string",
-              "description": "Advertising identifier",
-              "isRequired": false
+              "description": "Advertising identifier"
             },
             "braze:adIdType": {
-              "title": "ad_id_type",
+              "title": "Ad ID Type",
               "type": "string",
               "description": "One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id'",
-              "isRequired": false,
               "enum": [
                 "ios_idfa",
                 "google_ad_id",
                 "windows_ad_id",
                 "roku_ad_id"
-              ]
+              ],
+              "meta:enum": {
+                "ios_idfa": "iOS ID for advertisers",
+                "google_ad_id": "Google Ad ID",
+                "windows_ad_id": "Windows Advertiser ID",
+                "roku_ad_id": "Roku Ad ID"
+              }
             },
             "braze:adTrackingEnabled": {
-              "title": "ad_tracking_enabled",
+              "title": "Ad Tracking Enabled",
               "type": "boolean",
-              "description": "Whether advertising tracking is enabled for the device",
-              "isRequired": false
+              "description": "Whether advertising tracking is enabled for the device"
             }
           }
         }
@@ -325,6 +292,10 @@
     {
       "$ref": "#/definitions/currents-users-event"
     }
+  ],
+  "required": [
+    "@id",
+    "timestamp"
   ],
   "meta:status": "experimental"
 }

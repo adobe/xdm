@@ -10114,12 +10114,19 @@
             "description": "Context Value."
           }
         },
-        "https://ns.adobe.com/experience/analytics/version": {
-          "title": "Version Data",
-          "type": "integer",
-          "description": "Adobe Analytics Version field",
-          "minimum": 1,
-          "maximum": 9223372036854770000
+        "https://ns.adobe.com/experience/analytics/internal": {
+          "title": "Internal Data",
+          "type": "object",
+          "description": "Adobe Analytics fields for internal processing",
+          "properties": {
+            "xdm:recordVersion": {
+              "title": "Version Data",
+              "type": "integer",
+              "description": "Adobe Analytics internal event record version. This value will change when records are updated.  An example of this is a GDPR request.",
+              "minimum": 1,
+              "maximum": 9223372036854770000
+            }
+          }
         }
       }
     }

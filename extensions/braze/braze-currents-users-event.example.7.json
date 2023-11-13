@@ -1,23 +1,21 @@
 {
-  "braze:id": "a1234567-89ab-cdef-0123-456789abcdef",
-  "braze:time": 1477502783,
   "braze:timezone": "America/Chicago",
   "braze:user": {
-    "braze:userId": "0123456789abcdef01234567",
-    "braze:externalUserId": "user_id",
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id",
     "braze:emailAddress": "test@test.com"
   },
   "braze:campaign": {
-    "braze:campaignId": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
     "braze:campaignName": "Test Campaign",
-    "braze:messageVariationId": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
     "braze:messageVariationName": "Test Message Variation"
   },
   "braze:messaging": {
-    "braze:dispatchId": "12345qwert",
-    "braze:sendId": "f123456789abcdef01234567",
+    "braze:dispatchID": "12345qwert",
+    "braze:sendID": "f123456789abcdef01234567",
     "braze:email": {
-      "braze:ipPool": "braze_transactional"
+      "braze:IPPool": "braze_transactional"
     }
   }
 }

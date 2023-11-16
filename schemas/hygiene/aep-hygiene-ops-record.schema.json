@@ -163,7 +163,7 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "xdm:datasetId": {
+                            "xdm:datasetID": {
                               "title": "Dataset ID",
                               "description": "The ID of a dataset",
                               "type": "string"
@@ -193,7 +193,7 @@
                                 }
                               }
                             },
-                            "xdm:sandboxId": {
+                            "xdm:sandboxID": {
                               "title": "Sandbox ID",
                               "description": "ID of the sandbox containing these datasets",
                               "type": "string"
@@ -267,7 +267,7 @@
                         "items": {
                           "type": "object",
                           "properties": {
-                            "xdm:datasetId": {
+                            "xdm:datasetID": {
                               "title": "Dataset ID",
                               "description": "The ID of a dataset",
                               "type": "string"
@@ -297,7 +297,7 @@
                                 }
                               }
                             },
-                            "xdm:sandboxId": {
+                            "xdm:sandboxID": {
                               "title": "Sandbox ID",
                               "description": "ID of the sandbox containing these datasets",
                               "type": "string"

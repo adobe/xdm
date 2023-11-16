@@ -292,9 +292,5 @@
       "$ref": "#/definitions/currents-users-event"
     }
   ],
-  "required": [
-    "@id",
-    "timestamp"
-  ],
   "meta:status": "experimental"
 }

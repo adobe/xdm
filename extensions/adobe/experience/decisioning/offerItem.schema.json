@@ -30,7 +30,8 @@
         "https://ns.adobe.com/experience/decisioning/offeritem/fCapConstraintsLastIndex": {
           "type": "integer",
           "title": "Frequency Capping Constraints Last Index",
-          "description": "Last index of the capping object."
+          "description": "Last index of the capping object. This field is hidden on UI.",
+          "meta:status": "hidden"
         },
         "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": {
           "type": "array",

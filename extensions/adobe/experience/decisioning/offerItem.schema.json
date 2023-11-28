@@ -27,7 +27,7 @@
             "archived": "Archived"
           }
         },
-        "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraintsLastIndex": {
+        "https://ns.adobe.com/experience/decisioning/offeritem/fCapConstraintsLastIndex": {
           "type": "integer",
           "title": "Frequency Capping Constraints Last Index",
           "description": "Last index of the capping object."
@@ -42,7 +42,7 @@
               "xdm:index": {
                 "title": "Index",
                 "type": "integer",
-                "description": "Index of the capping object, this is used as suffix for counter id when we have multi capping objects"
+                "description": "Index of the capping object, this is used as suffix for counter id when we have multi capping objects.  Index starts from 1"
               },
               "xdm:limit": {
                 "title": "Limit",

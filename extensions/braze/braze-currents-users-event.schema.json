@@ -1,0 +1,296 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.braze.com/currents/users-event",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Braze Currents Users Event",
+  "description": "Braze Currents users event payload",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/experienceevent"
+  ],
+  "definitions": {
+    "currents-users-event": {
+      "properties": {
+        "braze:appID": {
+          "title": "App ID",
+          "type": "string",
+          "description": "API ID of the app this action occurred on."
+        },
+        "braze:timezone": {
+          "title": "Timezone",
+          "type": "string",
+          "description": "Timezone of the user."
+        },
+        "braze:user": {
+          "title": "User",
+          "type": "object",
+          "properties": {
+            "braze:userID": {
+              "title": "User ID",
+              "type": "string",
+              "description": "BSON id of the user that performed the event."
+            },
+            "braze:externalUserID": {
+              "title": "External User ID",
+              "type": "string",
+              "description": "External user id of the user."
+            },
+            "braze:emailAddress": {
+              "title": "Email Address",
+              "type": "string",
+              "description": "Email address of the user."
+            }
+          },
+          "required": [
+            "braze:userID"
+          ]
+        },
+        "braze:device": {
+          "title": "Device",
+          "type": "object",
+          "properties": {
+            "braze:platform": {
+              "title": "Platform",
+              "type": "string",
+              "description": "Platform of the device."
+            },
+            "braze:OSVersion": {
+              "title": "OS Version",
+              "type": "string",
+              "description": "Version of the operating system of the device."
+            },
+            "braze:deviceModel": {
+              "title": "Device Model",
+              "type": "string",
+              "description": "Model of the device."
+            },
+            "braze:deviceID": {
+              "title": "Device ID",
+              "type": "string",
+              "description": "Id of the device on which the custom event occurred."
+            }
+          }
+        },
+        "braze:customEvent": {
+          "title": "Custom Event",
+          "type": "object",
+          "properties": {
+            "braze:name": {
+              "title": "Name",
+              "type": "string",
+              "description": "Name of the custom event."
+            },
+            "braze:properties": {
+              "title": "Properties",
+              "type": "string",
+              "description": "Custom properties of the event stored as a JSON encoded string."
+            }
+          }
+        },
+        "braze:campaign": {
+          "title": "Campaign",
+          "type": "object",
+          "properties": {
+            "braze:campaignID": {
+              "title": "Campaign ID",
+              "type": "string",
+              "description": "API ID of the campaign this email belongs to."
+            },
+            "braze:campaignName": {
+              "title": "Campaign Name",
+              "type": "string",
+              "description": "Name of the campaign."
+            },
+            "braze:messageVariationID": {
+              "title": "Message Variation ID",
+              "type": "string",
+              "description": "API ID of the message variation this user received."
+            },
+            "braze:messageVariationName": {
+              "title": "Message Variation Name",
+              "type": "string",
+              "description": "Name of the message variation."
+            }
+          }
+        },
+        "braze:canvas": {
+          "title": "Canvas",
+          "type": "object",
+          "properties": {
+            "braze:canvasID": {
+              "title": "Canvas ID",
+              "type": "string",
+              "description": "API ID of the canvas this email belongs to."
+            },
+            "braze:canvasName": {
+              "title": "Canvas Name",
+              "type": "string",
+              "description": "Name of the canvas."
+            },
+            "braze:canvasVariationID": {
+              "title": "Canvas Variation ID",
+              "type": "string",
+              "description": "API ID of the canvas variation this user received."
+            },
+            "braze:canvasVariationName": {
+              "title": "Canvas Variation Name",
+              "type": "string",
+              "description": "Name of the canvas variation this user received."
+            },
+            "braze:canvasStepID": {
+              "title": "Canvas Step ID",
+              "type": "string",
+              "description": "API ID of the canvas step this email belongs to."
+            },
+            "braze:canvasStepName": {
+              "title": "Canvas Step Name",
+              "type": "string",
+              "description": "Name of the canvas step."
+            }
+          }
+        },
+        "braze:messaging": {
+          "title": "Messaging",
+          "type": "object",
+          "properties": {
+            "braze:dispatchID": {
+              "title": "Dispatch ID",
+              "type": "string",
+              "description": "ID of the dispatch this message belongs to."
+            },
+            "braze:sendID": {
+              "title": "Send ID",
+              "type": "string",
+              "description": "Message send ID this message belongs to."
+            },
+            "braze:email": {
+              "title": "Email",
+              "type": "object",
+              "properties": {
+                "braze:sendingIP": {
+                  "title": "Sending IP",
+                  "type": "string",
+                  "description": "IP address from which the email send was made."
+                },
+                "braze:IPPool": {
+                  "title": "IP Pool",
+                  "type": "string",
+                  "description": "IP Pool from which the email send was made."
+                },
+                "braze:ESP": {
+                  "title": "ESP",
+                  "type": "string",
+                  "description": "ESP related to the event (Sparkpost or Sendgrid).",
+                  "enum": [
+                    "SparkPost",
+                    "SendGrid"
+                  ],
+                  "meta:enum": {
+                    "SparkPost": "SparkPost",
+                    "SendGrid": "SendGrid"
+                  }
+                },
+                "braze:fromDomain": {
+                  "title": "From Domain",
+                  "type": "string",
+                  "description": "Sending domain for the email."
+                },
+                "braze:userAgent": {
+                  "title": "User Agent",
+                  "type": "string",
+                  "description": "User agent on which the click occurred."
+                },
+                "braze:machineOpen": {
+                  "title": "Machine Open",
+                  "type": "string",
+                  "description": "Populated to 'true' if the open event is triggered without user engagement, e.g. by an Apple device with Mail Privacy Protection enabled. Value may change over time to provide more granularity.",
+                  "enum": [
+                    "true"
+                  ],
+                  "meta:enum": {
+                    "true": "true"
+                  }
+                },
+                "braze:isAMP": {
+                  "title": "Is AMP",
+                  "type": "boolean",
+                  "description": "Indicates that this is an AMP event."
+                },
+                "braze:URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "description": "URL that the user clicked on."
+                },
+                "braze:linkID": {
+                  "title": "Link ID",
+                  "type": "string",
+                  "description": "Unique ID for the link which was clicked, as created by Braze."
+                },
+                "braze:linkAlias": {
+                  "title": "Link Alias",
+                  "type": "string",
+                  "description": "Alias associated with this link ID."
+                },
+                "braze:bounceReason": {
+                  "title": "Bounce Reason",
+                  "type": "string",
+                  "description": "The SMTP reason code and user friendly message received for this bounce event."
+                },
+                "braze:isDrop": {
+                  "title": "Is Drop",
+                  "type": "boolean",
+                  "description": "Indicates that this event counts as a drop event."
+                }
+              }
+            }
+          }
+        },
+        "braze:adTracking": {
+          "title": "Ad Tracking",
+          "type": "object",
+          "properties": {
+            "braze:adID": {
+              "title": "Ad ID",
+              "type": "string",
+              "description": "Advertising identifier."
+            },
+            "braze:adIDType": {
+              "title": "Ad ID Type",
+              "type": "string",
+              "description": "One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id'.",
+              "enum": [
+                "ios_idfa",
+                "google_ad_id",
+                "windows_ad_id",
+                "roku_ad_id"
+              ],
+              "meta:enum": {
+                "ios_idfa": "iOS ID for advertisers",
+                "google_ad_id": "Google Ad ID",
+                "windows_ad_id": "Windows Advertiser ID",
+                "roku_ad_id": "Roku Ad ID"
+              }
+            },
+            "braze:adTrackingEnabled": {
+              "title": "Ad Tracking Enabled",
+              "type": "boolean",
+              "description": "Whether advertising tracking is enabled for the device."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/currents-users-event"
+    }
+  ],
+  "meta:status": "experimental"
+}

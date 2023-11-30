@@ -1,0 +1,28 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id",
+    "braze:emailAddress": "test@test.com"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:messaging": {
+    "braze:dispatchID": "12345qwert",
+    "braze:sendID": "f123456789abcdef01234567",
+    "braze:email": {
+      "braze:sendingIP": "206.252.203.38",
+      "braze:IPPool": "braze_transactional",
+      "braze:bounceReason": "550 Access denied...598eb32e3f2e5f5f1e7ecf3f379fef13be5e072a975fc74f7a731ec773ea9eca6fe3232b9b8f4ebf3b374a3ecf3f...",
+      "braze:ESP": "SparkPost",
+      "braze:fromDomain": "some.com",
+      "braze:isDrop": true
+    }
+  }
+}

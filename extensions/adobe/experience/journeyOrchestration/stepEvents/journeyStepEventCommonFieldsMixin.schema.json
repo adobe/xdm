@@ -218,7 +218,9 @@
               "type": "integer",
               "meta:xdmType": "long",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
-              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591"
+              "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591",
+              "maximum": 9223372036854775807,
+              "minimum": -9223372036854775808
             },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceType": {
               "title": "instanceType",

@@ -19,13 +19,16 @@
   "definitions": {
     "marketo-engage-person-details": {
       "properties": {
-        "xdm:marketoEngage": {
+        "xdm:b2b": {
           "type": "object",
-          "properties": {
-            "xdm:cookieIDs": {
-              "title": "Cookie IDs",
-              "description": "Comma separated Marketo Engage cookie IDs.",
-              "type": "string"
+          "xdm:marketoEngage": {
+            "type": "object",
+            "properties": {
+              "xdm:cookieIDs": {
+                "title": "Cookie IDs",
+                "description": "Comma separated Marketo Engage cookie IDs.",
+                "type": "string"
+              }
             }
           }
         }

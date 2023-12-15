@@ -21,13 +21,15 @@
       "properties": {
         "xdm:b2b": {
           "type": "object",
-          "xdm:marketoEngage": {
-            "type": "object",
-            "properties": {
-              "xdm:cookieIDs": {
-                "title": "Cookie IDs",
-                "description": "Comma separated Marketo Engage cookie IDs.",
-                "type": "string"
+          "properties": {
+            "xdm:marketoEngage": {
+              "type": "object",
+              "properties": {
+                "xdm:cookieIDs": {
+                  "title": "Cookie IDs",
+                  "description": "Comma separated Marketo Engage cookie IDs.",
+                  "type": "string"
+                }
               }
             }
           }

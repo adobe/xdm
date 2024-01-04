@@ -1,8 +1,8 @@
 {
-  "xdm:content": {
+  "xdm:experienceContent": {
     "xdm:contentEventType": "view",
-    "xdm:contentExperience": {
-      "xdm:ID": "https://domain.com:2023-01-01"
+    "xdm:experience": {
+      "xdm:experienceID": "https://domain.com:2023-01-01"
     },
     "xdm:assets": {
       "xdm:assetIDs": [

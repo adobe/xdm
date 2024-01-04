@@ -21,7 +21,7 @@
           "type": "object",
           "description": "Information content.",
           "properties": {
-            "xdm:eventType": {
+            "xdm:contentEventType": {
               "title": "Content Event Type",
               "type": "string",
               "meta:enum": {
@@ -30,12 +30,12 @@
               },
               "description": "The primary content event type."
             },
-            "xdm:experience": {
+            "xdm:contentExperience": {
               "title": "Content Experience",
               "description": "Content experience tracking",
               "type": "object",
               "properties": {
-                "xdm:id": {
+                "xdm:ID": {
                   "title": "Content Experience ID",
                   "type": "string",
                   "description": "Content experience identifier."
@@ -47,7 +47,7 @@
               "description": "Content assets tracking",
               "type": "object",
               "properties": {
-                "xdm:ids": {
+                "xdm:assetIDs": {
                   "title": "Content Assets IDs",
                   "type": "array",
                   "description": "Content assets identifiers.",

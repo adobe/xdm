@@ -1,11 +1,11 @@
 {
   "xdm:content": {
-    "xdm:eventType": "view",
-    "xdm:experience": {
-      "xdm:id": "https://domain.com:2023-01-01"
+    "xdm:contentEventType": "view",
+    "xdm:contentExperience": {
+      "xdm:ID": "https://domain.com:2023-01-01"
     },
     "xdm:assets": {
-      "xdm:ids": [
+      "xdm:assetIDs": [
         "https://domain.com/media/asset1.jpg",
         "https://domain.com/media/asset2.png"
       ]

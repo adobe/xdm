@@ -42,19 +42,12 @@
                 }
               }
             },
-            "xdm:assets": {
-              "title": "Content Assets",
-              "description": "Content assets tracking",
-              "type": "object",
-              "properties": {
-                "xdm:assetIDs": {
-                  "title": "Content Assets IDs",
-                  "type": "array",
-                  "description": "Content assets identifiers.",
-                  "items": {
-                    "type": "string"
-                  }
-                }
+            "xdm:assetsIDs": {
+              "title": "Content Assets IDs",
+              "type": "array",
+              "description": "Content assets identifiers.",
+              "items": {
+                "type": "string"
               }
             }
           }

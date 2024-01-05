@@ -1,0 +1,12 @@
+{
+  "xdm:experienceContent": {
+    "xdm:contentEventType": "view",
+    "xdm:experience": {
+      "xdm:experienceID": "https://domain.com:2023-01-01"
+    },
+    "xdm:assetsIDs": [
+      "https://domain.com/media/asset1.jpg",
+      "https://domain.com/media/asset2.png"
+    ]
+  }
+}

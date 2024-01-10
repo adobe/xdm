@@ -124,7 +124,8 @@
                   "$ref": "#/definitions/speed"
                 },
                 "xdm:sunsetTime": {
-                  "type": "integer",
+                  "type": "string",
+                  "format": "date-time",
                   "description": "Sunset time in UTC.",
                   "title": "Sunset Time"
                 }

@@ -58,7 +58,7 @@
                       "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreClick": {
-                      "title": "Send Time Score to Optimize Click",
+                      "title": "Send Time Score to Optimize Click (deprecated)",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer clicking on an email's link if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -67,10 +67,11 @@
                         "type": "integer",
                         "minimum": -128,
                         "maximum": 127
-                      }
+                      },
+                      "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreOpen": {
-                      "title": "Send Time Score to Optimize Open",
+                      "title": "Send Time Score to Optimize Open (deprecated)",
                       "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer opening an email if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -79,7 +80,18 @@
                         "type": "integer",
                         "minimum": -128,
                         "maximum": 127
-                      }
+                      },
+                      "meta:status": "deprecated"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/sendTimeRankOpen": {
+                      "title": "Send Time Score Rank to Optimize Open",
+                      "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer opening an email if it's sent at that hour.",
+                      "type": "string"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/sendTimeRankClick": {
+                      "title": "Send Time Score Rank to Optimize Click",
+                      "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer clicking an email if it's sent at that hour.",
+                      "type": "string"
                     }
                   },
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/emailSendTimeOptimization##title##23221",
@@ -104,7 +116,7 @@
                       "meta:status": "deprecated"
                     },
                     "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreOpen": {
-                      "title": "Send Time Score to Optimize Open",
+                      "title": "Send Time Score to Optimize Open (deprecated)",
                       "description": "Score are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer opening a push notification if it's sent at that hour.",
                       "type": "array",
                       "minItems": 168,
@@ -113,7 +125,13 @@
                         "type": "integer",
                         "minimum": -128,
                         "maximum": 127
-                      }
+                      },
+                      "meta:status": "deprecated"
+                    },
+                    "https://ns.adobe.com/experience/intelligentServices/sendTimeRankOpen": {
+                      "title": "Send Time Score Rank to Optimize Open",
+                      "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23 (168 length string), representing the order of the inclination of a customer opening a push notification if it's sent at that hour.",
+                      "type": "string"
                     }
                   },
                   "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/pushSendTimeOptimization##title##50251",

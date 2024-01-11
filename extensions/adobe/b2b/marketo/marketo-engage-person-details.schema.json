@@ -5,7 +5,7 @@
     "you may not use this file except in compliance with the License. You may obtain a copy",
     "of the License at https://creativecommons.org/licenses/by/4.0/"
   ],
-  "$id": "https://ns.adobe.com/xdm/mixins/marketo-engage-person-details",
+  "$id": "https://ns.adobe.com/b2b/marketo/marketo-engage-person-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Marketo Engage Person Details",
   "type": "object",
@@ -14,20 +14,17 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/xdm/context/profile"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/xdm/context/profile"
+  ],
   "description": "This field group is used to capture Marketo Engage cookie IDs for the B2B Persons.",
   "definitions": {
     "marketo-engage-person-details": {
       "properties": {
-        "xdm:b2b": {
-          "type": "object",
-          "properties": {
-            "marketo:cookieIDs": {
-              "title": "Cookie IDs",
-              "description": "Comma separated Marketo Engage cookie IDs.",
-              "type": "string"
-            }
-          }
+        "marketo:cookieIDs": {
+          "title": "Cookie IDs",
+          "description": "Comma separated Marketo Engage cookie IDs.",
+          "type": "string"
         }
       }
     }

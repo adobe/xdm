@@ -1,0 +1,193 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/content-experience",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Content Experience",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Content experience.",
+  "definitions": {
+    "content-experience": {
+      "properties": {
+        "xdm:experienceID": {
+          "title": "Experience ID",
+          "type": "string",
+          "description": "Unique identifier of the content experience."
+        },
+        "xdm:experienceChannel": {
+          "title": "Experience Channel",
+          "type": "string",
+          "description": "Experience channel such as web, mobile or email."
+        }
+      }
+    },
+    "content-experience-featurization": {
+      "properties": {
+        "xdm:contentFeaturization": {
+          "title": "Content Featurization",
+          "description": "Content featurization.",
+          "type": "object",
+          "properties": {
+            "xdm:keywords": {
+              "title": "Experience Keywords",
+              "type": "array",
+              "description": "Experience keywords.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:namedEntities": {
+              "title": "Experience Named Entities",
+              "type": "array",
+              "description": "Experience named entities.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:persuasionStrategies": {
+              "title": "Experience Persuasion Strategies",
+              "type": "array",
+              "description": "Experience persuasion strategies.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:emotions": {
+              "title": "Experience Emotions",
+              "type": "array",
+              "description": "Experience emotions.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:visualContentDensity": {
+              "title": "Experience Visual Content Density",
+              "type": "string",
+              "description": "Experience visual content density such as low, medium or high."
+            },
+            "xdm:visualAttentionSpread": {
+              "title": "Experience Visual Attention Spread",
+              "type": "string",
+              "description": "Experience visual attention spread such as low, medium or high."
+            },
+            "xdm:wordsCount": {
+              "title": "Experience Words Count",
+              "type": "integer",
+              "description": "Experience words Count."
+            },
+            "xdm:sentencesCount": {
+              "title": "Experience Sentences Count",
+              "type": "integer",
+              "description": "Experience Sentences Count."
+            },
+            "xdm:hashTagsCount": {
+              "title": "Experience Hash Tags Count",
+              "type": "integer",
+              "description": "Experience hash tags count."
+            },
+            "xdm:emojisCount": {
+              "title": "Experience Emojis Count",
+              "type": "integer",
+              "description": "Experience emojis count."
+            },
+            "xdm:textQuotesCount": {
+              "title": "Experience Text Quotes Count",
+              "type": "integer",
+              "description": "Experience text quotes count."
+            },
+            "xdm:wordsCountPerSentence": {
+              "title": "Experience Words Count Per Sentence",
+              "type": "number",
+              "description": "Experience words count per sentence."
+            },
+            "xdm:stopWordsRatio": {
+              "title": "Experience Stop Words Ratio",
+              "type": "number",
+              "description": "Experience stop words ratio."
+            },
+            "xdm:readability": {
+              "title": "Experience Keywords",
+              "type": "string",
+              "description": "Experience readability."
+            },
+            "xdm:mobilePageSpeedScore": {
+              "title": "Experience Mobile Page Speed Score",
+              "type": "integer",
+              "description": "Experience mobile page speed overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileSEOScore": {
+              "title": "Experience Mobile SEO Score",
+              "type": "integer",
+              "description": "Experience mobile seo overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileAccessibilityScore": {
+              "title": "Experience Mobile Accessibility Score",
+              "type": "integer",
+              "description": "Experience mobile accessibility overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:mobileBestPracticesScore": {
+              "title": "Experience Mobile Best Practices Score",
+              "type": "integer",
+              "description": "Experience mobile best practices overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopPageSpeedScore": {
+              "title": "Experience Desktop Page Speed Score",
+              "type": "integer",
+              "description": "Experience desktop page speed overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopSEOScore": {
+              "title": "Experience Desktop SEO Score",
+              "type": "integer",
+              "description": "Experience desktop seo overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopAccessibilityScore": {
+              "title": "Experience Desktop Accessibility Score",
+              "type": "integer",
+              "description": "Experience desktop accessibility overall score.",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "xdm:desktopBestPracticesScore": {
+              "title": "Experience Desktop Best Practices Score",
+              "type": "integer",
+              "description": "Experience desktop best practices overall score.",
+              "minimum": 0,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/content-experience"
+    },
+    {
+      "$ref": "#/definitions/content-experience-featurization"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "meta:status": "experimental"
+}

@@ -1,0 +1,149 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/classes/content-asset",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Content Asset",
+  "type": "object",
+  "meta:extensible": false,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "Content asset such as image or video.",
+  "definitions": {
+    "content-asset": {
+      "properties": {
+        "xdm:assetIdentityID": {
+          "title": "Asset Identity ID",
+          "type": "string",
+          "description": "Unique identifier of the asset perception."
+        },
+        "xdm:assetID": {
+          "title": "Asset ID",
+          "type": "string",
+          "description": "Unique identifier of the asset."
+        },
+        "xdm:assetName": {
+          "title": "Asset Name",
+          "type": "string",
+          "description": "Asset name."
+        },
+        "xdm:assetDescription": {
+          "title": "Asset Description",
+          "type": "string",
+          "description": "Asset description."
+        },
+        "xdm:assetType": {
+          "title": "Asset Type",
+          "type": "string",
+          "description": "Asset type such as image or video."
+        }
+      }
+    },
+    "content-asset-featurization": {
+      "properties": {
+        "xdm:contentFeaturization": {
+          "title": "Content Featurization",
+          "description": "Content featurization.",
+          "type": "object",
+          "properties": {
+            "xdm:orientation": {
+              "title": "Asset Orientation",
+              "type": "string",
+              "description": "Asset orientation such as landscape, portrait or square."
+            },
+            "xdm:foregroundColors": {
+              "title": "Asset Foreground Colors",
+              "type": "array",
+              "description": "Asset foreground colors.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:backgroundColors": {
+              "title": "Asset Background Colors",
+              "type": "array",
+              "description": "Asset background colors.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:overallColors": {
+              "title": "Asset Overall Colors",
+              "type": "array",
+              "description": "Asset overall colors.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:tags": {
+              "title": "Asset Tags",
+              "type": "array",
+              "description": "Asset tags.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:scenes": {
+              "title": "Asset Scenes",
+              "type": "array",
+              "description": "Asset scenes.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:emotions": {
+              "title": "Asset Emotions",
+              "type": "array",
+              "description": "Asset emotions.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:peopleCategories": {
+              "title": "Asset People Categories",
+              "type": "array",
+              "description": "Asset people Categories.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:persuasionStrategies": {
+              "title": "Asset Persuasion Strategies",
+              "type": "array",
+              "description": "Asset persuasion strategies.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:visualContentDensity": {
+              "title": "Asset Visual Content Density",
+              "type": "string",
+              "description": "Asset visual content density such as low, medium or high."
+            },
+            "xdm:visualAttentionSpread": {
+              "title": "Asset Visual Attention Spread",
+              "type": "string",
+              "description": "Asset visual attention spread such as low, medium or high."
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/content-asset"
+    },
+    {
+      "$ref": "#/definitions/content-asset-featurization"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    }
+  ],
+  "meta:status": "experimental"
+}

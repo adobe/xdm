@@ -1,0 +1,22 @@
+{
+  "xdm:assetIdentityID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
+  "xdm:assetID": "https://domain/media_random_id.jpeg",
+  "xdm:assetName": "jump.png",
+  "xdm:assetDescription": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
+  "xdm:assetType": "image",
+  "xdm:contentFeaturization": {
+    "properties": {
+      "xdm:orientation": "landscape",
+      "xdm:foregroundColors": ["Dark_Green"],
+      "xdm:backgroundColors": ["Orange"],
+      "xdm:overallColors": ["Brown"],
+      "xdm:tags": ["water", "rock", "travel", "adventure", "hike"],
+      "xdm:scenes": ["sky", "barn", "theme park"],
+      "xdm:emotions": ["Sad"],
+      "xdm:peopleCategories": ["person"],
+      "xdm:persuasionStrategies": ["social impact"],
+      "xdm:visualContentDensity": "high",
+      "xdm:visualAttentionSpread": "medium"
+    }
+  }
+}

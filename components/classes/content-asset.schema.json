@@ -16,8 +16,8 @@
   "definitions": {
     "content-asset": {
       "properties": {
-        "xdm:assetIdentityID": {
-          "title": "Asset Identity ID",
+        "xdm:assetPerceptionID": {
+          "title": "Asset Perception ID",
           "type": "string",
           "description": "Unique identifier of the asset perception."
         },

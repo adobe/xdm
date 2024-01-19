@@ -72,11 +72,6 @@
               "type": "string",
               "description": "Experience visual content density such as low, medium or high."
             },
-            "xdm:visualAttentionSpread": {
-              "title": "Experience Visual Attention Spread",
-              "type": "string",
-              "description": "Experience visual attention spread such as low, medium or high."
-            },
             "xdm:wordsCount": {
               "title": "Experience Words Count",
               "type": "integer",

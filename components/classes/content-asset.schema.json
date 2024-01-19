@@ -100,6 +100,14 @@
                 "type": "string"
               }
             },
+            "xdm:photographyStyles": {
+              "title": "Asset Photography Styles",
+              "type": "array",
+              "description": "Asset photography styles.",
+              "items": {
+                "type": "string"
+              }
+            },
             "xdm:emotions": {
               "title": "Asset Emotions",
               "type": "array",

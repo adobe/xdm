@@ -140,6 +140,14 @@
                 "type": "string"
               }
             },
+            "xdm:products": {
+              "title": "Asset Products",
+              "type": "array",
+              "description": "Asset products.",
+              "items": {
+                "type": "string"
+              }
+            },
             "xdm:peopleCategories": {
               "title": "Asset People Categories",
               "type": "array",

@@ -154,10 +154,10 @@
           "$ref": "https://ns.adobe.com/xdm/datatypes/commercescope",
           "description": "Commerce scope identifiers of where an event occurred (store view, store, website etc.)."
         },
-        "xdm:channel": {
-          "title": "Channel Info",
-          "$ref": "https://ns.adobe.com/xdm/channels/channel",
-          "description": "Info on the modes through which a shopper is provided content and interacts with the store."
+        "xdm:commerceChannel": {
+          "title": "Commerce Channel",
+          "type": "string",
+          "description": "Mode through which a shopper is provided content and interacts with the store."
         }
       }
     }

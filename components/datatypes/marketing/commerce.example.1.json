@@ -32,8 +32,5 @@
     "xdm:store": "main_website_store",
     "xdm:storeView": "default"
   },
-  "xdm:channel": {
-    "@id": "https://ns.adobe.com/xdm/channels/web",
-    "@type": "https://ns.adobe.com/xdm/channel-types/web"
-  }
+  "xdm:commerceChannel": "web"
 }

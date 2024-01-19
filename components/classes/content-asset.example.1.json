@@ -17,7 +17,9 @@
       "xdm:peopleCategories": ["person"],
       "xdm:persuasionStrategies": ["social impact"],
       "xdm:visualContentDensity": "high",
-      "xdm:visualAttentionSpread": "medium"
+      "xdm:visualAttentionSpread": "medium",
+      "xdm:cameraPositions": [""],
+      "xdm:cameraProximities": [""]
     }
   }
 }

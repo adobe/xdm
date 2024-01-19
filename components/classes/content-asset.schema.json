@@ -108,6 +108,22 @@
                 "type": "string"
               }
             },
+            "xdm:cameraPositions": {
+              "title": "Asset Camera Positions",
+              "type": "array",
+              "description": "Asset camera positions.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:cameraProximities": {
+              "title": "Asset Camera Proximities",
+              "type": "array",
+              "description": "Asset camera proximities.",
+              "items": {
+                "type": "string"
+              }
+            },
             "xdm:emotions": {
               "title": "Asset Emotions",
               "type": "array",

@@ -70,7 +70,12 @@
             "xdm:visualContentDensity": {
               "title": "Experience Visual Content Density",
               "type": "string",
-              "description": "Experience visual content density such as low, medium or high."
+              "description": "Experience visual content density such as low, medium or high.",
+              "meta:enum": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              }
             },
             "xdm:wordsCount": {
               "title": "Experience Words Count",

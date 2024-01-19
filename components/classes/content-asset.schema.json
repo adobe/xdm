@@ -127,12 +127,22 @@
             "xdm:visualContentDensity": {
               "title": "Asset Visual Content Density",
               "type": "string",
-              "description": "Asset visual content density such as low, medium or high."
+              "description": "Asset visual content density such as low, medium or high.",
+              "meta:enum": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              }
             },
             "xdm:visualAttentionSpread": {
               "title": "Asset Visual Attention Spread",
               "type": "string",
-              "description": "Asset visual attention spread such as low, medium or high."
+              "description": "Asset visual attention spread such as low, medium or high.",
+              "meta:enum": {
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              }
             }
           }
         }

@@ -53,7 +53,12 @@
             "xdm:orientation": {
               "title": "Asset Orientation",
               "type": "string",
-              "description": "Asset orientation such as landscape, portrait or square."
+              "description": "Asset orientation such as landscape, portrait or square.",
+              "meta:enum": {
+                "landscape": "Landscape",
+                "portrait": "Portrait",
+                "square": "Square"
+              }
             },
             "xdm:foregroundColors": {
               "title": "Asset Foreground Colors",

@@ -132,6 +132,14 @@
                 "type": "string"
               }
             },
+            "xdm:domain": {
+              "title": "Asset Domain",
+              "type": "array",
+              "description": "Asset domain.",
+              "items": {
+                "type": "string"
+              }
+            },
             "xdm:peopleCategories": {
               "title": "Asset People Categories",
               "type": "array",

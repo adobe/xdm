@@ -21,7 +21,9 @@
       "xdm:cameraPositions": [""],
       "xdm:cameraProximities": [""],
       "xdm:domain": ["How to tutorials"],
-      "xdm:products": ["Adobe Photoshop"]
+      "xdm:products": ["Adobe Photoshop"],
+      "xdm:audioTypes": ["music", "speech"],
+      "xdm:audioGenre": "rock"
     }
   }
 }

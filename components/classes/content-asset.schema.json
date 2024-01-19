@@ -183,6 +183,19 @@
                 "medium": "Medium",
                 "high": "High"
               }
+            },
+            "xdm:audioTypes": {
+              "title": "Asset Audio Types",
+              "type": "array",
+              "description": "Asset audio types.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "xdm:audioGenre": {
+              "title": "Asset Audio genre",
+              "type": "string",
+              "description": "Asset Audio genre."
             }
           }
         }

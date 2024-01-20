@@ -8,5 +8,10 @@
       "https://domain.com/media/asset1.jpg",
       "https://domain.com/media/asset2.png"
     ]
+  },
+  "xdm:implementationDetails": {
+    "xdm:name": "https://ns.adobe.com/experience/alloy/reactor",
+    "xdm:version": "2.19.2+2.21.4",
+    "xdm:environment": "browser"
   }
 }

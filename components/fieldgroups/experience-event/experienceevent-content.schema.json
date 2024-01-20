@@ -58,6 +58,9 @@
   "allOf": [
     {
       "$ref": "#/definitions/experienceevent-content"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details"
     }
   ],
   "meta:status": "experimental"

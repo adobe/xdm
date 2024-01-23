@@ -60,6 +60,16 @@
                 "square": "Square"
               }
             },
+            "xdm:overallTone": {
+              "title": "Asset Overall Tone",
+              "type": "string",
+              "description": "Asset overall tone.",
+              "meta:enum": {
+                "warm": "Warm",
+                "cool": "Cool",
+                "neutral": "Neutral"
+              }
+            },
             "xdm:foregroundColors": {
               "title": "Asset Foreground Colors",
               "type": "array",

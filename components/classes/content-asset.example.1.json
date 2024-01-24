@@ -5,7 +5,6 @@
   "xdm:assetDescription": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
   "xdm:assetType": "image",
   "xdm:contentFeaturization": {
-    "properties": {
       "xdm:orientation": "landscape",
       "xdm:overallTone": "warm",
       "xdm:foregroundColors": ["Dark_Green"],
@@ -25,6 +24,5 @@
       "xdm:products": ["Adobe Photoshop"],
       "xdm:audioTypes": ["music", "speech"],
       "xdm:audioGenre": "rock"
-    }
   }
 }

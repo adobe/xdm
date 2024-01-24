@@ -80,37 +80,44 @@
             "xdm:wordsCount": {
               "title": "Experience Words Count",
               "type": "integer",
-              "description": "Experience words Count."
+              "description": "Experience words Count.",
+              "minimum": 0
             },
             "xdm:sentencesCount": {
               "title": "Experience Sentences Count",
               "type": "integer",
-              "description": "Experience Sentences Count."
+              "description": "Experience Sentences Count.",
+              "minimum": 0
             },
             "xdm:hashTagsCount": {
               "title": "Experience Hash Tags Count",
               "type": "integer",
-              "description": "Experience hash tags count."
+              "description": "Experience hash tags count.",
+              "minimum": 0
             },
             "xdm:emojisCount": {
               "title": "Experience Emojis Count",
               "type": "integer",
-              "description": "Experience emojis count."
+              "description": "Experience emojis count.",
+              "minimum": 0
             },
             "xdm:textQuotesCount": {
               "title": "Experience Text Quotes Count",
               "type": "integer",
-              "description": "Experience text quotes count."
+              "description": "Experience text quotes count.",
+              "minimum": 0
             },
             "xdm:wordsCountPerSentence": {
               "title": "Experience Words Count Per Sentence",
               "type": "number",
-              "description": "Experience words count per sentence."
+              "description": "Experience words count per sentence.",
+              "minimum": 0
             },
             "xdm:stopWordsRatio": {
               "title": "Experience Stop Words Ratio",
               "type": "number",
-              "description": "Experience stop words ratio."
+              "description": "Experience stop words ratio.",
+              "minimum": 0
             },
             "xdm:readability": {
               "title": "Experience Keywords",

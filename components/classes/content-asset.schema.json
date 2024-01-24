@@ -9,7 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Content Asset",
   "type": "object",
-  "meta:extensible": false,
+  "meta:extensible": true,
   "meta:abstract": true,
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "Content asset such as image or video.",

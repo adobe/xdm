@@ -89,23 +89,17 @@
         "xdm:selectionId": {
           "title": "Decision Option Selection Id",
           "type": "string",
-          "description": "Option selection Id. The selectionId of which the item was derived from.",
-          "meta:titleId": "option-detail##xdm:selectionId##title",
-          "meta:descriptionId": "option-detail##xdm:selectionId##description"
+          "description": "Option selection Id. The selectionId of which the item was derived from."
         },
         "xdm:selectionType": {
           "title": "Decision Option Selection Type",
           "type": "string",
-          "description": "Option selection type. The selection type of which the item was derived from.",
-          "meta:titleId": "option-detail##xdm:selectionType##title",
-          "meta:descriptionId": "option-detail##xdm:selectionType##description"
+          "description": "Option selection type. The selection type of which the item was derived from."
         },        
         "xdm:trackingToken": {
           "title": "Decision Option Tracking Token",
           "type": "string",
-          "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from.",
-          "meta:titleId": "option-detail##xdm:trackingToken##title",
-          "meta:descriptionId": "option-detail##xdm:trackingToken##description"
+          "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from."
         }
       }
     }

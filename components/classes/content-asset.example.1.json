@@ -1,0 +1,28 @@
+{
+  "xdm:assetPerceptionID": "1c93aa01-f183-a3f1-bda6-a9c96e66afea",
+  "xdm:assetID": "https://domain/media_random_id.jpeg",
+  "xdm:assetName": "jump.png",
+  "xdm:assetDescription": "A man is performing a mid-air jump on a skateboard at an indoor skate park",
+  "xdm:assetType": "image",
+  "xdm:contentFeaturization": {
+    "xdm:orientation": "landscape",
+    "xdm:overallTone": "warm",
+    "xdm:foregroundColors": ["Dark_Green"],
+    "xdm:backgroundColors": ["Orange"],
+    "xdm:overallColors": ["Brown"],
+    "xdm:tags": ["water", "rock", "travel", "adventure", "hike"],
+    "xdm:scenes": ["sky", "barn", "theme park"],
+    "xdm:photographyStyles": ["product photography"],
+    "xdm:emotions": ["Sad"],
+    "xdm:peopleCategories": ["person"],
+    "xdm:persuasionStrategies": ["social impact"],
+    "xdm:visualContentDensity": "high",
+    "xdm:visualAttentionSpread": "medium",
+    "xdm:cameraPosition": "low angle shot",
+    "xdm:cameraProximity": "closeup shot",
+    "xdm:domain": ["How to tutorials"],
+    "xdm:products": ["Adobe Photoshop"],
+    "xdm:audioTypes": ["music", "speech"],
+    "xdm:audioGenre": "rock"
+  }
+}

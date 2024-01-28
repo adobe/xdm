@@ -28,7 +28,8 @@
                 "view": "View",
                 "click": "Click"
               },
-              "description": "The primary content event type."
+              "description": "The primary content event type.",
+              "meta:status": "deprecated"
             },
             "xdm:experience": {
               "title": "Content Experience",

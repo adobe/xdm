@@ -40,6 +40,11 @@
           "title": "Asset Type",
           "type": "string",
           "description": "Asset type such as image or video."
+        },
+        "xdm:assetThumbnailURL": {
+          "title": "Asset thumbnail URL",
+          "type": "string",
+          "description": "Asset thumbnail url."
         }
       }
     },

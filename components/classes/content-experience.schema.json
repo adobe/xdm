@@ -25,6 +25,11 @@
           "title": "Experience Channel",
           "type": "string",
           "description": "Experience channel such as web, mobile or email."
+        },
+        "xdm:experienceThumbnailURL": {
+          "title": "Experience thumbnail URL",
+          "type": "string",
+          "description": "Experience thumbnail url."
         }
       }
     },

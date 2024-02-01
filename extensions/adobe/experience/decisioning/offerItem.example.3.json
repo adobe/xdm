@@ -1,0 +1,57 @@
+{
+  "https://ns.adobe.com/experience/decisioning/offeritem/lifecycleStatus": "draft",
+  "https://ns.adobe.com/experience/decisioning/offeritem/frequencyCappingConstraints": [
+    {
+      "xdm:index": 1,
+      "xdm:limit": 10,
+      "xdm:scope": "profile",
+      "xdm:events": [
+        "custom"
+      ],
+      "xdm:repeat": {
+        "xdm:enabled": true,
+        "xdm:unit": "week",
+        "xdm:unitCount": 2
+      },
+      "xdm:customQuery": "application.id.equals(\"10\", false)",
+      "xdm:humanReadable": "application id equals \"10\"",
+      "xdm:segmentModel": {
+        "isValid": true,
+        "profileAttributesContainer": {
+          "itemType": "segmentContainer",
+          "logicalOperator": "and",
+          "exclude": false,
+          "items": [
+            {
+              "originalLocation": [
+
+              ],
+              "isPlaceholder": false,
+              "comparisonType": "equals",
+              "itemType": "segmentRule",
+              "isCaseSensitive": false,
+              "component": {
+                "__entity__": true,
+                "id": "profile.application.id",
+                "type": "n"
+              },
+              "value": [
+                "10"
+              ]
+            }
+          ]
+        },
+        "itemType": "segmentDefinition",
+        "xEventAttributesContainer": {
+          "itemType": "eventTypeCardContainer",
+          "logicalOperator": "then",
+          "exclude": false,
+          "items": [
+
+          ]
+        },
+        "logicalOperator": "and"
+      }
+    }
+  ]
+}

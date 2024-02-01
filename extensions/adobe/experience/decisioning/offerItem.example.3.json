@@ -5,9 +5,7 @@
       "xdm:index": 1,
       "xdm:limit": 10,
       "xdm:scope": "profile",
-      "xdm:events": [
-        "custom"
-      ],
+      "xdm:events": ["custom"],
       "xdm:repeat": {
         "xdm:enabled": true,
         "xdm:unit": "week",
@@ -23,9 +21,7 @@
           "exclude": false,
           "items": [
             {
-              "originalLocation": [
-
-              ],
+              "originalLocation": [],
               "isPlaceholder": false,
               "comparisonType": "equals",
               "itemType": "segmentRule",
@@ -35,9 +31,7 @@
                 "id": "profile.application.id",
                 "type": "n"
               },
-              "value": [
-                "10"
-              ]
+              "value": ["10"]
             }
           ]
         },
@@ -46,9 +40,7 @@
           "itemType": "eventTypeCardContainer",
           "logicalOperator": "then",
           "exclude": false,
-          "items": [
-
-          ]
+          "items": []
         },
         "logicalOperator": "and"
       }

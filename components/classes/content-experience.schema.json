@@ -28,6 +28,7 @@
         },
         "xdm:experienceThumbnailURL": {
           "title": "Experience thumbnail URL",
+          "format": "uri",
           "type": "string",
           "description": "Experience thumbnail url."
         }

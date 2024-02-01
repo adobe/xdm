@@ -43,6 +43,7 @@
         },
         "xdm:assetThumbnailURL": {
           "title": "Asset thumbnail URL",
+          "format": "uri",
           "type": "string",
           "description": "Asset thumbnail url."
         }

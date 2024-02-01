@@ -86,10 +86,10 @@
           "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
           "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##18831"
         },
-        "xdm:selectionId": {
-          "title": "Decision Option Selection Id",
+        "xdm:selectionID": {
+          "title": "Decision Option Selection ID",
           "type": "string",
-          "description": "Option selection Id. The selectionId of which the item was derived from."
+          "description": "Option selection ID. The selectionID of which the item was derived from."
         },
         "xdm:selectionType": {
           "title": "Decision Option Selection Type",

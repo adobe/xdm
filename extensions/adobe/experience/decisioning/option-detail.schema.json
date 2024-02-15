@@ -1,165 +1,165 @@
 {
-    "meta:license":
-    [
-        "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
-        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-        "you may not use this file except in compliance with the License. You may obtain a copy",
-        "of the License at https://creativecommons.org/licenses/by/4.0/"
-    ],
-    "$id": "https://ns.adobe.com/experience/decisioning/option-detail",
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "title": "Decision Option Details",
-    "type": "object",
-    "meta:extensible": true,
-    "meta:abstract": true,
-    "description": "Detail about the entity that represents one of the possible selections or choices for a decision. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
-    "definitions": {
-        "option-detail-datatype": {
-            "properties": {
+  "meta:license":
+  [
+    "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/option-detail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Option Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Detail about the entity that represents one of the possible selections or choices for a decision. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
+  "definitions": {
+    "option-detail-datatype": {
+      "properties": {
+        "xdm:id": {
+          "title": "Decision Option Identifier",
+          "type": "string",
+          "format": "uri-reference",
+          "description": "A unique identifier for the decision option.",
+          "meta:titleId": "option-detail##xdm:id##title##68821",
+          "meta:descriptionId": "option-detail##xdm:id##description##53071"
+        },
+        "repo:etag": {
+          "title": "Decision Option ETag",
+          "type": "string",
+          "description": "The revision that the decision option object was at when the snapshot was taken.",
+          "meta:titleId": "option-detail##repo:etag##title##97431",
+          "meta:descriptionId": "option-detail##repo:etag##description##15621"
+        },
+        "xdm:name": {
+          "type": "string",
+          "title": "Decision Option Name",
+          "description": "Option name. The name is displayed in various user interfaces.",
+          "meta:titleId": "option-detail##xdm:name##title##93871",
+          "meta:descriptionId": "option-detail##xdm:name##description##27891"
+        },
+        "xdm:tags": {
+          "type": "array",
+          "title": "Decision Option Tags",
+          "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
+          "items": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag",
+            "meta:descriptionId": "option-detail##items##description##24431"
+          },
+          "meta:titleId": "option-detail##xdm:tags##title##22421",
+          "meta:descriptionId": "option-detail##xdm:tags##description##14311"
+        },
+        "xdm:characteristics": {
+          "title": "Decision Option Characteristics",
+          "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
+          "type": "object",
+          "meta:xdmType": "map",
+          "additionalProperties": {
+            "type": "string",
+            "description": "Value of the property.",
+            "meta:descriptionId": "option-detail##additionalProperties##description##32721"
+          },
+          "meta:titleId": "option-detail##xdm:characteristics##title##49581",
+          "meta:descriptionId": "option-detail##xdm:characteristics##description##4131"
+        },
+        "xdm:score": {
+          "title": "Decision Option Score",
+          "description": "Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.",
+          "type": "number",
+          "minimum": 0,
+          "meta:titleId": "option-detail##xdm:score##title##67651",
+          "meta:descriptionId": "option-detail##xdm:score##description##18371"
+        },
+        "xdm:optionContent": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details",
+          "title": "Option Content",
+          "description": "Additional properties or attributes related to offer content"
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The total number a particular option was proposed so far across all profiles.",
+          "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsTotal##description##33661"
+        },
+        "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
+          "$ref": "https://ns.adobe.com/xdm/data/measure",
+          "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
+          "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##18831"
+        },
+        "xdm:selectionDetail": {
+          "title": "Selection Detail",
+          "description": "The detail of the selection of which the item was proposed.",
+          "type": "object",
+          "properties": {
+            "xdm:strategyID": {
+              "title": "Decision Option Strategy ID",
+              "type": "string",
+              "description": "Option selection ID. The selection identifier of which the item was derived from."
+            },
+            "xdm:type": {
+              "title": "Decision Option Type",
+              "type": "string",
+              "description": "Option type. The type of which the item was derived from."
+            },
+            "xdm:strategyName": {
+              "title": "Decision Option Strategy Name",
+              "type": "string",
+              "description": "Option strategy name. The strategy name of which the item was derived from."
+            },
+            "xdm:version": {
+              "title": "Decision Option Version",
+              "type": "string",
+              "description": "Option version. The version of which the item was derived from."
+            },
+            "xdm:rankingDetail": {
+              "title": "Ranking Detail",
+              "description": "The detail of the ranking information of which the item was proposed.",
+              "type": "object",
+              "properties": {
                 "xdm:id": {
-                    "title": "Decision Option Identifier",
-                    "type": "string",
-                    "format": "uri-reference",
-                    "description": "A unique identifier for the decision option.",
-                    "meta:titleId": "option-detail##xdm:id##title##68821",
-                    "meta:descriptionId": "option-detail##xdm:id##description##53071"
+                  "title": "Ranking Option ID",
+                  "type": "string",
+                  "description": "Option ID. The ranking identifier of which the item was derived from."
                 },
-                "repo:etag": {
-                    "title": "Decision Option ETag",
-                    "type": "string",
-                    "description": "The revision that the decision option object was at when the snapshot was taken.",
-                    "meta:titleId": "option-detail##repo:etag##title##97431",
-                    "meta:descriptionId": "option-detail##repo:etag##description##15621"
+                "xdm:type": {
+                  "title": "Ranking Option Type",
+                  "type": "string",
+                  "description": "Option Type. The ranking type of which the item was derived from."
                 },
-                "xdm:name": {
-                    "type": "string",
-                    "title": "Decision Option Name",
-                    "description": "Option name. The name is displayed in various user interfaces.",
-                    "meta:titleId": "option-detail##xdm:name##title##93871",
-                    "meta:descriptionId": "option-detail##xdm:name##description##27891"
-                },
-                "xdm:tags": {
-                    "type": "array",
-                    "title": "Decision Option Tags",
-                    "description": "The set of tags associated with this option. The tags are used indicate catetoegies (dimensions) that the option belonged to at the time the proposition was made.",
-                    "items": {
-                        "type": "string",
-                        "format": "uri-reference",
-                        "description": "An identifier of a Tag object. The value is the @id of the Tag that is referenced. See Tag schema https://ns.adobe.com/experience/decisioning/tag",
-                        "meta:descriptionId": "option-detail##items##description##24431"
-                    },
-                    "meta:titleId": "option-detail##xdm:tags##title##22421",
-                    "meta:descriptionId": "option-detail##xdm:tags##description##14311"
-                },
-                "xdm:characteristics": {
-                    "title": "Decision Option Characteristics",
-                    "description": "Additional properties or attributes belonging to this particular decision option. Different instances can have different characteristics (keys in the map). The characteristics are name value pairs used to distinguish one decision option from others. Characteristics are used as values in content that represents this decision option and as features to analyze and optimize the performance of an option. When every instance has the same attribute or property, that aspect should be modeled as an extension schema that derives from decision option detail.",
-                    "type": "object",
-                    "meta:xdmType": "map",
-                    "additionalProperties": {
-                        "type": "string",
-                        "description": "Value of the property.",
-                        "meta:descriptionId": "option-detail##additionalProperties##description##32721"
-                    },
-                    "meta:titleId": "option-detail##xdm:characteristics##title##49581",
-                    "meta:descriptionId": "option-detail##xdm:characteristics##description##4131"
-                },
-                "xdm:score": {
-                    "title": "Decision Option Score",
-                    "description": "Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.",
-                    "type": "number",
-                    "minimum": 0,
-                    "meta:titleId": "option-detail##xdm:score##title##67651",
-                    "meta:descriptionId": "option-detail##xdm:score##description##18371"
-                },
-                "xdm:optionContent": {
-                    "$ref": "https://ns.adobe.com/experience/decisioning/content-component-details",
-                    "title": "Option Content",
-                    "description": "Additional properties or attributes related to offer content"
-                },
-                "https://ns.adobe.com/experience/decisioning/propositionsTotal": {
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "The total number a particular option was proposed so far across all profiles.",
-                    "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsTotal##description##33661"
-                },
-                "https://ns.adobe.com/experience/decisioning/propositionsProfile": {
-                    "$ref": "https://ns.adobe.com/xdm/data/measure",
-                    "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
-                    "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##18831"
-                },
-                "xdm:selectionDetail": {
-                    "title": "Selection Detail",
-                    "description": "The detail of the selection of which the item was proposed.",
-                    "type": "object",
-                    "properties": {
-                        "xdm:strategyID": {
-                            "title": "Selection Strategy ID",
-                            "type": "string",
-                            "description": "Selection Strategy ID. The strategy identifier of which the item was derived from."
-                        },
-                        "xdm:strategyName": {
-                            "title": "Selection Strategy Name",
-                            "type": "string",
-                            "description": "Selection strategy name. The strategy name of which the item was derived from."
-                        },
-                        "xdm:type": {
-                            "title": "Selection Type",
-                            "type": "string",
-                            "description": "Selection type. The type of which the item was derived from."
-                        },
-                        "xdm:version": {
-                            "title": "Selection Version",
-                            "type": "string",
-                            "description": "Selection version. The version of which the item was derived from."
-                        },
-                        "xdm:rankingDetail": {
-                            "title": "Ranking Detail",
-                            "description": "The detail of the ranking of which the item was proposed.",
-                            "type": "object",
-                            "properties": {
-                                "xdm:id": {
-                                    "title": "Ranking ID",
-                                    "type": "string",
-                                    "description": "Ranking ID. The ranking identifier of which the item was derived from."
-                                },
-                                "xdm:type": {
-                                    "title": "Ranking Type",
-                                    "type": "string",
-                                    "description": "Ranking Type. The ranking type of which the item was derived from."
-                                },
-                                "xdm:algorithmID": {
-                                    "title": "Ranking algorithm ID",
-                                    "type": "string",
-                                    "description": "Ranking algorithm ID. The algorithm identifier of which the item was derived from."
-                                }
-                            }
-                        }
-                    }
-                },
-                "xdm:trackingToken": {
-                    "title": "Decision Option Tracking Token",
-                    "type": "string",
-                    "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from."
+                "xdm:algorithmID": {
+                  "title": "Ranking Option algorithm ID",
+                  "type": "string",
+                  "description": "Option algorithm ID. The algorithm identifier of which the item was derived from."
                 }
+              }
             }
+          }
+        },
+        "xdm:trackingToken": {
+          "title": "Decision Option Tracking Token",
+          "type": "string",
+          "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from."
         }
+      }
+    }
+  },
+  "allOf":
+  [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
-    "allOf":
-    [
-        {
-            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
-        },
-        {
-            "$ref": "#/definitions/option-detail-datatype"
-        },
-        {
-            "required":
-            [
-                "xdm:id"
-            ]
-        }
-    ],
-    "meta:status": "stable",
-    "meta:titleId": "option-detail##title##87831",
-    "meta:descriptionId": "option-detail##description##41091"
+    {
+      "$ref": "#/definitions/option-detail-datatype"
+    },
+    {
+      "required":
+      [
+        "xdm:id"
+      ]
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "option-detail##title##87831",
+  "meta:descriptionId": "option-detail##description##41091"
 }

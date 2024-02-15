@@ -34,6 +34,11 @@
           },
           "meta:titleId": "descriptorTimeSeriesGranularity##xdm:granularity##title##56551",
           "meta:descriptionId": "descriptorTimeSeriesGranularity##xdm:granularity##description##79851"
+        },
+        "xdm:ianaTimezone": {
+          "title": "Iana Timezone",
+          "type": "string",
+          "description": "Timezone of the time-series / summary data as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones. The default is UTC."
         }
       },
       "required": ["xdm:granularity"]
@@ -47,7 +52,7 @@
       "$ref": "#/definitions/descriptorTimeSeriesGranularity"
     }
   ],
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-03-28",
   "meta:titleId": "descriptorTimeSeriesGranularity##title##26941",
   "meta:descriptionId": "descriptorTimeSeriesGranularity##description##51361"

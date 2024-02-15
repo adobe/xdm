@@ -1,6 +1,16 @@
 {
   "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
-  "xdm:selectionID": "xcore:fb30c2f0a6a98e030dd107f2c531c5fe374ce410bb96b02b:184a0fc14872e39c",
-  "xdm:selectionType": "manual",
+  "xdm:score": 101,
+  "xdm:selectionDetail": {
+    "xdm:strategyID": "xcore:selection-strategy:1863a7b4254b8778",
+    "xdm:type": "selectionStrategy",
+    "xdm:strategyName": "sample strategy name",
+    "xdm:selectionVersion": "sample selection version",
+    "xdm:rankingDetail": {
+    	"xdm:id":"xcore:ranking-function:17bb67e976902620",
+    	"xdm:type":"rankingFormula",
+    	"xdm:algorithmID":""
+    }
+  },
   "xdm:trackingToken": "Tracking Token Value"
 }

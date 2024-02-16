@@ -52,6 +52,11 @@
               "title": "Campaign Identity Namespace",
               "type": "string",
               "description": "AJO Campaign Identity Namespace."
+            },
+            "https://ns.adobe.com/experience/customerJourneyManagement/entities/isIpWarmUpCampaign": {
+              "title": "flag for ipWarmUp campaign",
+              "type": "boolean",
+              "description": "Field to identify if campaign is warmup campaign "
             }
           }
         },

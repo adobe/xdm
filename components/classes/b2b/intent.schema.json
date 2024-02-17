@@ -1,0 +1,79 @@
+{
+  "meta:license": [
+    "Copyright 2020 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/xdm/context/intent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Intent",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "XDM Business Intent is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business intent. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "definitions": {
+    "intent": {
+      "properties": {
+        "xdm:intentID": {
+          "title": "Intent ID",
+          "description": "Adobe generated unique identifier for the record.",
+          "type": "string"
+        },
+        "xdm:sourceSystemType": {
+          "title": "Source System Type",
+          "description": "Adobe identifier for the partner.",
+          "enum": ["BO", "ZI", "DE", "LS"],
+          "meta:enum": {
+            "BO": "Bombora",
+            "ZI": "Zoominfo",
+            "DE": "Demandbase",
+            "LS": "Leadspace"
+          }
+        },
+        "xdm:domain": {
+          "title": "Domain",
+          "description": "Account Domain."
+        },
+        "xdm:topic": {
+          "title": "Topic",
+          "description": "Name of the topic.",
+          "type": "string"
+        },
+        "xdm:accountID": {
+          "title": "Account ID",
+          "description": "Account ID in third party system.",
+          "type": "string"
+        },
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite identifier of the account this intent is associated with.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "#/definitions/intent"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/external-source-system-audit-details"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/mixins/record-status"
+    }
+  ],
+  "meta:status": "experimental"
+}

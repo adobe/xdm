@@ -5,8 +5,7 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Marketing Campaign",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": "Used for sending email/push messages",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": "ECID",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/isIpWarmUpCampaign": true
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": "ECID"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {

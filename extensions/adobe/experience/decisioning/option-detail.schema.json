@@ -1,5 +1,5 @@
 {
-  "meta:license":[
+  "meta:license": [
     "Copyright 2019 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
@@ -99,7 +99,7 @@
       }
     }
   },
-  "allOf":[
+  "allOf": [
     {
       "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
     },
@@ -107,7 +107,7 @@
       "$ref": "#/definitions/option-detail-datatype"
     },
     {
-      "required":["xdm:id"]
+      "required": ["xdm:id"]
     }
   ],
   "meta:status": "stable",

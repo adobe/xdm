@@ -1,6 +1,5 @@
 {
-  "meta:license":
-  [
+  "meta:license": [
     "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
     "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
     "you may not use this file except in compliance with the License. You may obtain a copy",
@@ -9,7 +8,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/selection-detail",
   "meta:extensible": true,
-  "meta:intendedToExtend": ["https://ns.adobe.com/experience/decisioning/item-selection"],
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/item-selection"
+  ],
   "type": "object",
   "title": "Selection Detail",
   "description": "Detail about the selection that represents one of the possible selections or choices for a decision.",
@@ -40,8 +41,7 @@
       }
     }
   },
-  "allOf":
-  [
+  "allOf": [
     {
       "$ref": "#/definitions/selection-detail"
     }

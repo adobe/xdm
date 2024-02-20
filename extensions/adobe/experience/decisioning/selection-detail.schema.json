@@ -11,7 +11,7 @@
   "meta:extensible": true,
   "type": "object",
   "title": "Selection Detail",
-  "description": "Detail about the entity that represents one of the possible selections or choices for a decision.",
+  "description": "Detail about the selection that represents one of the possible selections or choices for a decision.",
   "definitions": {
     "selection-detail": {
       "type": "object",

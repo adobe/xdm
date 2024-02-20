@@ -14,12 +14,12 @@
   "definitions": {
     "item-selection": {
       "properties": {
-        "xdm:selection-detail": {
+        "xdm:selectionDetail": {
           "$ref": "https://ns.adobe.com/experience/decisioning/selection-detail",
           "title": "Selection Detail",
           "description": "Selection detail of a decisioning item."
         },
-        "xdm:ranking-detail": {
+        "xdm:rankingDetail": {
           "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details",
           "title": "Ranking Detail",
           "description": "Ranking detail of a decisioning item."

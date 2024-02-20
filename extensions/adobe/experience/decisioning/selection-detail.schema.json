@@ -9,6 +9,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://ns.adobe.com/experience/decisioning/selection-detail",
   "meta:extensible": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/experience/decisioning/item-selection"],
   "type": "object",
   "title": "Selection Detail",
   "description": "Detail about the selection that represents one of the possible selections or choices for a decision.",

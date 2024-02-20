@@ -87,54 +87,9 @@
           "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
           "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##18831"
         },
-        "xdm:selectionDetail": {
-          "title": "Selection Detail",
-          "description": "The detail of the selection of which the item was proposed.",
-          "type": "object",
-          "properties": {
-            "xdm:strategyID": {
-              "title": "Decision Option Strategy ID",
-              "type": "string",
-              "description": "Option selection ID. The selection identifier of which the item was derived from."
-            },
-            "xdm:type": {
-              "title": "Decision Option Type",
-              "type": "string",
-              "description": "Option type. The type of which the item was derived from."
-            },
-            "xdm:strategyName": {
-              "title": "Decision Option Strategy Name",
-              "type": "string",
-              "description": "Option strategy name. The strategy name of which the item was derived from."
-            },
-            "xdm:version": {
-              "title": "Decision Option Version",
-              "type": "string",
-              "description": "Option version. The version of which the item was derived from."
-            },
-            "xdm:rankingDetail": {
-              "title": "Ranking Detail",
-              "description": "The detail of the ranking information of which the item was proposed.",
-              "type": "object",
-              "properties": {
-                "xdm:id": {
-                  "title": "Ranking Option ID",
-                  "type": "string",
-                  "description": "Option ID. The ranking identifier of which the item was derived from."
-                },
-                "xdm:type": {
-                  "title": "Ranking Option Type",
-                  "type": "string",
-                  "description": "Option Type. The ranking type of which the item was derived from."
-                },
-                "xdm:algorithmID": {
-                  "title": "Ranking Option algorithm ID",
-                  "type": "string",
-                  "description": "Option algorithm ID. The algorithm identifier of which the item was derived from."
-                }
-              }
-            }
-          }
+        "https://ns.adobe.com/experience/decisioning/item-selection": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/item-selection",
+          "description": "The detail of an item selection of which the item was proposed."
         },
         "xdm:trackingToken": {
           "title": "Decision Option Tracking Token",

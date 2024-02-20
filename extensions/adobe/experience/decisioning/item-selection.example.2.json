@@ -1,0 +1,14 @@
+{
+  "xdm:selection-detail": {
+    "xdm:strategyID": "xcore:selection-strategy:185c87454fb2e35a",
+    "xdm:strategyName": "most popular category",
+    "xdm:type": "selectionStrategy",
+    "xdm:version": "xcore:selection-strategy:185c87454fb2e35a_1"
+  },
+  "xdm:ranking-detail": {
+    "xdm:strategyID": "4ajr78banuUg4Og6or3LFa",
+    "xdm:algorithmID": "1",
+    "xdm:step": "rankingAIModel",
+    "xdm:trafficType": "random"
+  }
+}

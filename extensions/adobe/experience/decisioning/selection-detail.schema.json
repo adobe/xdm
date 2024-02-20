@@ -31,7 +31,12 @@
         "xdm:type": {
           "title": "Selection Type",
           "type": "string",
-          "description": "Selection type. The type of selection of which the item was derived from."
+          "description": "Selection type. The type of selection of which the item was derived from.",
+          "meta:enum": {
+            "selectionStrategy": "Selection Strategy",
+            "fallback": "Fallback Item",
+            "manual": "Manual Item"
+          }          
         },
         "xdm:version": {
           "title": "Selection Version",

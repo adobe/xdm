@@ -94,36 +94,6 @@
           "title": "Domain Origin",
           "description": "Origin country of the Domain.",
           "type": "string"
-        },
-        "xdm:companyHasOtherTopicConsumption": {
-          "title": "Company Has Other Topic Consumption",
-          "description": "Boolean indicator for intent shown by the same company in other topics .",
-          "type": "boolean"
-        },
-        "xdm:recommendedContacts": {
-          "title": "Recommended Contacts",
-          "description": "Key contacts showing intent.",
-          "type": "string",
-          "items": {
-            "type": "object",
-            "properties": {
-              "xdm:contactName": {
-                "title": "Contact Name",
-                "description": "Account person relationship unique identifier at the source.",
-                "$ref": "https://ns.adobe.com/xdm/context/person-name"
-              },
-              "xdm:jobTitle": {
-                "title": "Job Title",
-                "description": "Job Title of Contact.",
-                "type": "string"
-              },
-              "xdm:jobFunction": {
-                "title": "Job Function",
-                "description": "Job Function of Contact.",
-                "type": "string"
-              }
-            }
-          }
         }
       }
     }

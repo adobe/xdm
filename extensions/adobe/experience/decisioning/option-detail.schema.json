@@ -91,6 +91,18 @@
           "title": "Item Selection",
           "description": "The detail of an item selection of which the item was proposed."
         },
+        "xdm:selectionID": {
+          "meta:status": "deprecated",
+          "title": "Decision Option Selection ID",
+          "type": "string",
+          "description": "Option selection ID. The selectionID of which the item was derived from."
+        },
+        "xdm:selectionType": {
+          "meta:status": "deprecated",
+          "title": "Decision Option Selection Type",
+          "type": "string",
+          "description": "Option selection type. The selection type of which the item was derived from."
+        },        
         "xdm:trackingToken": {
           "title": "Decision Option Tracking Token",
           "type": "string",

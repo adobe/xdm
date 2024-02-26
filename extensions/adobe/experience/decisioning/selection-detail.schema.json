@@ -1,0 +1,57 @@
+{
+  "meta:license": [
+    "Copyright 2021 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://ns.adobe.com/experience/decisioning/selection-detail",
+  "meta:extensible": true,
+  "meta:intendedToExtend": [
+    "https://ns.adobe.com/experience/decisioning/item-selection"
+  ],
+  "type": "object",
+  "title": "Selection Detail",
+  "description": "Detail about the selection that represents one of the possible selections or choices for a decision.",
+  "definitions": {
+    "selection-detail": {
+      "type": "object",
+      "properties": {
+        "xdm:strategyID": {
+          "title": "Decision Option Strategy ID",
+          "type": "string",
+          "description": "Strategy ID. The strategy identifier of which the item was derived from."
+        },
+        "xdm:strategyName": {
+          "title": "Strategy Name",
+          "type": "string",
+          "description": "Strategy name. The strategy name of which the item was derived from."
+        },
+        "xdm:selectionType": {
+          "title": "Selection Type",
+          "type": "string",
+          "description": "Selection type. The type of selection of which the item was derived from.",
+          "meta:enum": {
+            "selectionStrategy": "Selection Strategy",
+            "fallback": "Fallback Item",
+            "manual": "Manual Item"
+          }
+        },
+        "xdm:version": {
+          "title": "Selection Version",
+          "type": "string",
+          "description": "Selection version. The version of which the item was derived from."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/selection-detail"
+    }
+  ],
+  "meta:status": "stable",
+  "meta:titleId": "selection-detail##title##28091",
+  "meta:descriptionId": "selection-detail##description##90741"
+}

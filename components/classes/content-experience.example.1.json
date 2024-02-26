@@ -3,6 +3,7 @@
   "xdm:experienceChannel": "web",
   "xdm:experienceThumbnailURL": "https://domain/thumbnail.jpeg",
   "xdm:contentFeaturization": {
+    "xdm:version": "v1",
     "xdm:keywords": ["night", "sweet dreams"],
     "xdm:namedEntities": ["Adobe Express"],
     "xdm:persuasionStrategies": ["social impact"],

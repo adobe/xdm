@@ -5,8 +5,8 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/name": "Marketing Campaign",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/description": "Used for sending email/push messages",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/campaignActionID": "93rc3315-f2ca-42c0-85d2-6d3e83802b18",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": "ECID",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/isIpWarmUpCampaign": true
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/isIpWarmUpCampaign": true,
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/identityNamespace": "ECID"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/channelDetails": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/email": {
@@ -42,7 +42,8 @@
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNameAndVersion": "Email 100Kb Message (1b)",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeID": "e56d5d93-3b11-4efd-ab9f-5a9338c0a953",
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeName": "My Journey Audience",
-    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger"
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyNodeType": "segmentTrigger",
+    "https://ns.adobe.com/experience/customerJourneyManagement/entities/journeyProfileNamespace": "ECID"
   },
   "https://ns.adobe.com/experience/customerJourneyManagement/entities/tags": {
     "https://ns.adobe.com/experience/customerJourneyManagement/entities/values": [

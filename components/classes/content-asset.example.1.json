@@ -6,6 +6,7 @@
   "xdm:assetType": "image",
   "xdm:assetThumbnailURL": "https://domain/thumbnail.jpeg",
   "xdm:contentFeaturization": {
+    "xdm:version": "v1",
     "xdm:orientation": "landscape",
     "xdm:overallTone": "warm",
     "xdm:foregroundColors": ["Dark_Green"],

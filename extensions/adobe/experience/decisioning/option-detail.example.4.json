@@ -5,12 +5,12 @@
     "xdm:selectionDetail": {
       "xdm:strategyID": "xcore:selection-strategy:1863a7b4254b8778",
       "xdm:strategyName": "sample strategy name",
-      "xdm:type": "selectionStrategy",
+      "xdm:selectionType": "selectionStrategy",
       "xdm:version": "xcore:selection-strategy:1863a7b4254b8778_1"
     },
     "xdm:rankingDetail": {
       "xdm:id": "xcore:ranking-function:17bb67e976902620",
-      "xdm:type": "rankingFormula"
+      "xdm:trafficType": "rankingFormula"
     }
   }
 }

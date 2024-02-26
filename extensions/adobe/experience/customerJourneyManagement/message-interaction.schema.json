@@ -41,6 +41,16 @@
           "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
           "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/unsubscriptionLevel": {
+          "title": "The scope level at which the un-subscription will be performed for the given user",
+          "type": "string",
+          "description": "un-subscription scope level customer configured",
+          "enum": ["identity", "channel"],
+          "meta:enum": {
+            "identity": "The un-subscription will be done at user identity level",
+            "channel": "The un-subscription will be done at channel level "
+          }
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType": {
           "title": "The entity in whose context this event is published",
           "type": "string",

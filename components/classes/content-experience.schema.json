@@ -41,6 +41,11 @@
           "description": "Content featurization.",
           "type": "object",
           "properties": {
+            "xdm:version": {
+              "title": "Experience Featurization Version",
+              "type": "string",
+              "description": "Experience featurization version."
+            },
             "xdm:keywords": {
               "title": "Experience Keywords",
               "type": "array",

@@ -69,6 +69,11 @@
           "$ref": "https://ns.adobe.com/experience/decisioning/calendar-constraint-details",
           "title": "Item Calendar Constraints",
           "description": "Defines the date range during which this decision item is eligible. This constraint may not be strictly enforced always."
+        },
+        "xdm:_trackingToken": {
+          "title": "Tracking Token",
+          "type": "string",
+          "description": "A placeholder attribute to be added to the message to indicate the item interaction will be tracked. The value is meant to be populated by the AJO and customer should not populate with any value."
         }
       }
     }

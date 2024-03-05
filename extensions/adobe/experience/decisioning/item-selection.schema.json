@@ -1,0 +1,39 @@
+{
+  "meta:license": [
+    "Copyright 2023 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/decisioning/item-selection",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Item Selection Detail",
+  "description": "A selection detail of an item result from a decisioning.",
+  "type": "object",
+  "meta:extensible": true,
+  "definitions": {
+    "item-selection": {
+      "properties": {
+        "xdm:selectionDetail": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/selection-detail",
+          "title": "Selection Detail",
+          "description": "Selection detail of a decisioning item."
+        },
+        "xdm:rankingDetail": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/strategy-details",
+          "title": "Ranking Detail",
+          "description": "Ranking detail of a decisioning item."
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/item-selection"
+    }
+  ],
+  "meta:status": "stable"
+}

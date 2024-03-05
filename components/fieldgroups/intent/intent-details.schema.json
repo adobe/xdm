@@ -19,6 +19,37 @@
   "definitions": {
     "intent-details": {
       "properties": {
+        "xdm:sourceSystemType": {
+          "title": "Source System Type",
+          "description": "Adobe identifier for the partner.",
+          "enum": ["BO", "ZI", "DE", "LS"],
+          "meta:enum": {
+            "BO": "Bombora",
+            "ZI": "Zoominfo",
+            "DE": "Demandbase",
+            "LS": "Leadspace"
+          }
+        },
+        "xdm:domain": {
+          "title": "Domain",
+          "description": "Account Domain.",
+          "type": "string"
+        },
+        "xdm:topicName": {
+          "title": "Topic Name",
+          "description": "Name of the topic.",
+          "type": "string"
+        },
+        "xdm:thirdPartyAccountID": {
+          "title": "Third Party Account ID",
+          "description": "Account ID in third party system.",
+          "type": "string"
+        },
+        "xdm:accountKey": {
+          "title": "Account Key",
+          "description": "Unique composite identifier of the account this intent is associated with.",
+          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
+        },
         "xdm:topicID": {
           "title": "Topic ID",
           "description": "Unique ID for Topic.",
@@ -27,7 +58,6 @@
         "xdm:categoryName": {
           "title": "Category Name",
           "description": "Name of the Category, Keyword set to which topic belongs.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source",
           "type": "string"
         },
         "xdm:keywordSetId": {
@@ -58,12 +88,7 @@
             "type": "string"
           }
         },
-        "xdm:isDeleted": {
-          "title": "Deleted Flag",
-          "description": "Flag indicating if the record is deleted.",
-          "type": "boolean"
-        },
-        "xdm:recordeDate": {
+        "xdm:recordedDate": {
           "title": "Recorded Date",
           "description": "Record generation date.",
           "type": "string",

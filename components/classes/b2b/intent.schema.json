@@ -7,7 +7,7 @@
   ],
   "$id": "https://ns.adobe.com/xdm/context/intent",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "XDM Business Intent",
+  "title": "XDM Business Account Intent",
   "type": "object",
   "meta:tags": {
     "b2bSchema": true
@@ -24,36 +24,6 @@
           "title": "Intent ID",
           "description": "Adobe generated unique identifier for the record.",
           "type": "string"
-        },
-        "xdm:sourceSystemType": {
-          "title": "Source System Type",
-          "description": "Adobe identifier for the partner.",
-          "enum": ["BO", "ZI", "DE", "LS"],
-          "meta:enum": {
-            "BO": "Bombora",
-            "ZI": "Zoominfo",
-            "DE": "Demandbase",
-            "LS": "Leadspace"
-          }
-        },
-        "xdm:domain": {
-          "title": "Domain",
-          "description": "Account Domain."
-        },
-        "xdm:topic": {
-          "title": "Topic",
-          "description": "Name of the topic.",
-          "type": "string"
-        },
-        "xdm:accountID": {
-          "title": "Account ID",
-          "description": "Account ID in third party system.",
-          "type": "string"
-        },
-        "xdm:accountKey": {
-          "title": "Account Key",
-          "description": "Unique composite identifier of the account this intent is associated with.",
-          "$ref": "https://ns.adobe.com/xdm/datatypes/b2b-source"
         }
       }
     }

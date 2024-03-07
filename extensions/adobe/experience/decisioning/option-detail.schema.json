@@ -104,6 +104,7 @@
           "description": "Option selection type. The selection type of which the item was derived from."
         },
         "xdm:trackingToken": {
+          "meta:status": "deprecated",
           "title": "Decision Option Tracking Token",
           "type": "string",
           "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from."

@@ -65,20 +65,20 @@
           "description": "Unique ID of the keyword set.",
           "type": "string"
         },
-        "xdm:scoreString": {
-          "title": "Score String",
+        "xdm:intentStrength": {
+          "title": "Intent Strength",
           "description": "Intent Score (High, Med, Low).",
           "type": "string"
         },
-        "xdm:scoreNumber": {
-          "title": "Score Number",
+        "xdm:score": {
+          "title": "Score",
           "description": "Intent Score numeric.",
-          "type": "number"
+          "type": "integer"
         },
         "xdm:scoreDelta": {
           "title": "Score Delta",
           "description": "Delta score from previous week.",
-          "type": "string"
+          "type": "integer"
         },
         "xdm:topSignalLocations": {
           "title": "Top Signal Locations",

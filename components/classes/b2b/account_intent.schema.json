@@ -20,8 +20,8 @@
   "definitions": {
     "intent": {
       "properties": {
-        "xdm:intentID": {
-          "title": "Intent ID",
+        "xdm:accountIntentID": {
+          "title": "Account Intent ID",
           "description": "Adobe generated unique identifier for the record.",
           "type": "string"
         }

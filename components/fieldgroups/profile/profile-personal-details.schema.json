@@ -57,6 +57,16 @@
           "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
           "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951"
         },
+        "xdm:shippingAddressPhone": {
+          "title": "Shipping Address Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Phone number associated with shipping address."
+        },
+        "xdm:billingAddressPhone": {
+          "title": "Billing Address Phone",
+          "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+          "description": "Phone number associated with billing address."
+        },
         "xdm:shippingAddress": {
           "title": "Shipping Address",
           "$ref": "https://ns.adobe.com/xdm/common/address",

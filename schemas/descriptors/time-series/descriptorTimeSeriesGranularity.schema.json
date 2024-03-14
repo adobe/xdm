@@ -18,6 +18,10 @@
   "definitions": {
     "descriptorTimeSeriesGranularity": {
       "properties": {
+        "@type": {
+          "type": "string",
+          "const": "xdm:descriptorTimeSeriesGranularity"
+        },
         "xdm:granularity": {
           "title": "Granularity",
           "description": "Granularity of the time-series / summary data.  The schema's `xdm:timestamp` field is the first timestamp in a period of this granularity.",

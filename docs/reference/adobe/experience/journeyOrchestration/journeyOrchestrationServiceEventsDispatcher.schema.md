@@ -138,7 +138,7 @@ The projection id of the segment being used in journey
 #### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID
 ##### Segment ID
 
-The segment id of the segment being used in segment qualification journey
+The segment id of the incoming experience event
 
 `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID`
 * is optional

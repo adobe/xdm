@@ -46,7 +46,7 @@
                         "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": {
                             "title": "Segment ID",
                             "type": "string",
-                            "description": "The segment id of the segment being used in segment qualification journey"
+                            "description": "The segment id of the incoming experience event"
                         }
                     }
                 }

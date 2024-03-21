@@ -1,12 +1,18 @@
 {
   "xdm:experienceContent": {
-    "xdm:contentEventType": "view",
     "xdm:experience": {
-      "xdm:experienceID": "https://domain.com:2023-01-01"
+      "xdm:experienceID": "https://domain.com:2023-01-01",
+      "xdm:experienceSource": "https://domain.com"
     },
-    "xdm:assetsIDs": [
-      "https://domain.com/media/asset1.jpg",
-      "https://domain.com/media/asset2.png"
+    "xdm:assets": [
+      {
+        "xdm:assetID": "https://domain.com/media/asset1.jpg",
+        "xdm:assetSource": "https://domain.com/media/asset1.jpg"
+      },
+      {
+        "xdm:assetID": "3f39e981-b857-4a2b-9e88-dd1aae5a954a",
+        "xdm:assetSource": "s3://bucket/path/to/object"
+      }
     ]
   },
   "xdm:implementationDetails": {

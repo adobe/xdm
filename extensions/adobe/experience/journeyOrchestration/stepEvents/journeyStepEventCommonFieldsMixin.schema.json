@@ -224,11 +224,19 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMs": {
               "title": "processingTimeMs",
-              "description": "Time(ms) taken to complete the processing of this step.",
+              "description": "(Deprecated) Time(ms) taken to complete the processing of this step.",
+              "meta:status": "deprecated",
               "type": "integer",
               "meta:xdmType": "long",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",
               "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591",
+              "maximum": 9223372036854775807,
+              "minimum": -9223372036854775808
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMsNew": {
+              "title": "processingTimeMsNew",
+              "description": "Time(ms) taken to complete the processing of this step.",
+              "type": "integer",
               "maximum": 9223372036854775807,
               "minimum": -9223372036854775808
             },

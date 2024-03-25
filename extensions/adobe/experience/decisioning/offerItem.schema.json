@@ -83,6 +83,16 @@
                 "description": "Custom PQL query to match events.",
                 "type": "string"
               },
+              "xdm:humanReadable": {
+                "title": "Human readable custom PQL query",
+                "description": "Human readable custom PQL query.",
+                "type": "string"
+              },
+              "xdm:segmentModel": {
+                "title": "Segment model of custom PQL query",
+                "description": "Segment model of custom PQL query.",
+                "type": "object"
+              },
               "xdm:repeat": {
                 "title": "Repeat",
                 "description": "When true, new counter rule with updated time window will be created. Configure a capping to be repeated (e.g., max times every 1 week). ECS will support repeating config in the rules, scan rules daily, and create a new rule with new expiry when the rule is due for repeating.",

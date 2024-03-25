@@ -1,0 +1,29 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "braze:appGroupID": "abcdef000001000000000000-api",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "my-external-user-id"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:messaging": {
+    "braze:action": "Subscribed",
+    "braze:messageBody": "START I love your brand!!!",
+    "braze:mediaUrls": [
+      "https://api.twilio.com/2010-04-01/Accounts/ACdf8fed53dc700560ed78aac5e1eeec77/Messages/MM5b988d85d68d6565f4ecea9702a2436e/Media/MEa25d638a12f1a7daf21851dcbcf9b39b"
+    ],
+    "braze:phoneNumber": {
+      "braze:userPhoneNumber": "+12125551212",
+      "braze:inboundPhoneNumber": "+12122223333"
+    }
+  },
+  "braze:subscription": {
+    "braze:subscriptionGroupID": "11234567-89ab-cdef-0123-456789abcdef-api"
+  }
+}

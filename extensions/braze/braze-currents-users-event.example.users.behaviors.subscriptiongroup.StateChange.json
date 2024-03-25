@@ -1,0 +1,35 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id",
+    "braze:emailAddress": "test@test.com",
+    "braze:phoneNumber": "+16462345678"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:canvas": {
+    "braze:canvasID": "21234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasVariationID": "31234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasStepID": "41234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasVariationName": "Test Canvas Variation Name",
+    "braze:canvasStepName": "Test Canvas Step Name",
+    "braze:canvasName": "Test Canvas"
+  },
+  "braze:messaging": {
+    "braze:sendID": "f123456789abcdef01234567"
+  },
+  "braze:subscription": {
+    "braze:subscriptionGroupID": "41234567-89ab-cdef-0123-456789abcdef",
+    "braze:subscriptionStatus": "Subscribed",
+    "braze:channel": "email",
+    "braze:stateChangeSource": "r"
+  }
+}

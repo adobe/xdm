@@ -1,0 +1,44 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:device": {
+    "braze:platform": "android",
+    "braze:OSVersion": "Android (Lollipop)",
+    "braze:deviceModel": "Alba 10\"",
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:canvas": {
+    "braze:canvasID": "21234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasName": "Test Canvas",
+    "braze:canvasVariationID": "31234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasStepID": "41234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasVariationName": "Test Canvas Variation Name",
+    "braze:canvasStepName": "Test Canvas Step Name",
+    "braze:canvasStepMessageVariationID": "d1234567-89ab-cdef-0123-456789abcdef"
+  },
+  "braze:messaging": {
+    "braze:sendID": "f123456789abcdef01234567",
+    "braze:dispatchID": "01234567-89ab-cdef-0123-456789abcdef",
+    "braze:pushNotification": {
+      "braze:buttonActionType": "URI",
+      "braze:buttonString": "button_string_value"
+    }
+  },
+  "braze:adTracking": {
+    "braze:adID": "a1234567-89ab-cdef-0123-456789abcdef",
+    "braze:adIDType": "google_ad_id",
+    "braze:adTrackingEnabled": true
+  }
+}

@@ -233,13 +233,6 @@
               "maximum": 9223372036854775807,
               "minimum": -9223372036854775808
             },
-            "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMsNew": {
-              "title": "processingTimeMsNew",
-              "description": "Time(ms) taken to complete the processing of this step.",
-              "type": "integer",
-              "maximum": 9223372036854775807,
-              "minimum": -9223372036854775808
-            },
             "https://ns.adobe.com/experience/journeyOrchestration/instanceType": {
               "title": "instanceType",
               "description": "Specifies if the journey instance corresponds Unitary(a single profile) or Batch(a journey instance executes a batch of profiles, E.g: Read Segment Journey).",

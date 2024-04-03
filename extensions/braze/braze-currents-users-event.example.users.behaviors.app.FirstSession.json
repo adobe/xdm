@@ -1,0 +1,23 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id",
+    "braze:language": null,
+    "braze:country": null,
+    "braze:gender": "F"
+  },
+  "braze:device": {
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210",
+    "braze:SDKVersion": null,
+    "braze:platform": "ios",
+    "braze:OSVersion": "iOS 10.3.1",
+    "braze:deviceModel": "iPhone 7 Plus"
+  },
+  "braze:session": {
+    "braze:sessionID": "b1234567-89ab-cdef-0123-456789abcdef"
+  }
+}

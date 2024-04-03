@@ -20,12 +20,22 @@
         "braze:appID": {
           "title": "App ID",
           "type": "string",
-          "description": "API ID of the app this action occurred on."
+          "description": "API ID of the app on which this event occurred."
         },
         "braze:timezone": {
           "title": "Timezone",
           "type": "string",
           "description": "Timezone of the user."
+        },
+        "braze:appGroupID": {
+          "title": "App Group ID",
+          "type": "string",
+          "description": "API ID of the app group this user belongs to."
+        },
+        "braze:source": {
+          "title": "Source",
+          "type": "string",
+          "description": "The source of the attribution."
         },
         "braze:user": {
           "title": "User",
@@ -34,22 +44,53 @@
             "braze:userID": {
               "title": "User ID",
               "type": "string",
-              "description": "BSON id of the user that performed the event."
+              "description": "BSON ID of the user that performed this event."
             },
             "braze:externalUserID": {
               "title": "External User ID",
               "type": "string",
-              "description": "External user id of the user."
+              "description": "[PII] External user ID of the user."
             },
             "braze:emailAddress": {
               "title": "Email Address",
               "type": "string",
-              "description": "Email address of the user."
+              "description": "[PII] Email address of the user."
+            },
+            "braze:language": {
+              "title": "Language",
+              "type": "string",
+              "description": "[PII] Language of the user."
+            },
+            "braze:country": {
+              "title": "Country",
+              "type": "string",
+              "description": "[PII] Country of the user."
+            },
+            "braze:gender": {
+              "title": "Gender",
+              "type": "string",
+              "description": "[PII] Gender of the user.",
+              "enum": [
+                "F",
+                "M",
+                "N",
+                "O",
+                "P"
+              ],
+              "meta:enum": {
+                "F": "Female",
+                "M": "Male",
+                "N": "Not applicable",
+                "O": "Other",
+                "P": "Prefer not to say"
+              }
+            },
+            "braze:phoneNumber": {
+              "title": "Phone Number",
+              "type": "string",
+              "description": "[PII] Phone number of the user in e164 format."
             }
-          },
-          "required": [
-            "braze:userID"
-          ]
+          }
         },
         "braze:device": {
           "title": "Device",
@@ -70,10 +111,40 @@
               "type": "string",
               "description": "Model of the device."
             },
+            "braze:deviceClass": {
+              "title": "Device Class",
+              "type": "string",
+              "description": "Device class extracted from user_agent (mobile, desktop, tablet, etc...)."
+            },
+            "braze:deviceOS": {
+              "title": "Device OS",
+              "type": "string",
+              "description": "Device operating system extracted from user_agent."
+            },
             "braze:deviceID": {
               "title": "Device ID",
               "type": "string",
-              "description": "Id of the device on which the custom event occurred."
+              "description": "ID of the device on which the event occurred."
+            },
+            "braze:SDKVersion": {
+              "title": "SDK Version",
+              "type": "string",
+              "description": "Version of the Braze SDK in use during the event."
+            },
+            "braze:browser": {
+              "title": "Browser",
+              "type": "string",
+              "description": "Device browser - extracted from user_agent - on which the open occurred."
+            },
+            "braze:carrier": {
+              "title": "Carrier",
+              "type": "string",
+              "description": "Carrier of the device."
+            },
+            "braze:resolution": {
+              "title": "Resolution",
+              "type": "string",
+              "description": "Resolution of the device."
             }
           }
         },
@@ -89,7 +160,7 @@
             "braze:properties": {
               "title": "Properties",
               "type": "string",
-              "description": "Custom properties of the event stored as a JSON encoded string."
+              "description": "Custom properties stored as a JSON encoded string."
             }
           }
         },
@@ -100,7 +171,7 @@
             "braze:campaignID": {
               "title": "Campaign ID",
               "type": "string",
-              "description": "API ID of the campaign this email belongs to."
+              "description": "API ID of the campaign this event belongs to."
             },
             "braze:campaignName": {
               "title": "Campaign Name",
@@ -126,7 +197,12 @@
             "braze:canvasID": {
               "title": "Canvas ID",
               "type": "string",
-              "description": "API ID of the canvas this email belongs to."
+              "description": "API ID of the canvas this event belongs to."
+            },
+            "braze:canvasStepMessageVariationID": {
+              "title": "Canvas Step Message Variation ID",
+              "type": "string",
+              "description": "API ID of the canvas step message variation this user received."
             },
             "braze:canvasName": {
               "title": "Canvas Name",
@@ -136,7 +212,7 @@
             "braze:canvasVariationID": {
               "title": "Canvas Variation ID",
               "type": "string",
-              "description": "API ID of the canvas variation this user received."
+              "description": "API ID of the canvas variation this event belongs to."
             },
             "braze:canvasVariationName": {
               "title": "Canvas Variation Name",
@@ -146,12 +222,38 @@
             "braze:canvasStepID": {
               "title": "Canvas Step ID",
               "type": "string",
-              "description": "API ID of the canvas step this email belongs to."
+              "description": "API ID of the canvas step this event belongs to."
             },
             "braze:canvasStepName": {
               "title": "Canvas Step Name",
               "type": "string",
               "description": "Name of the canvas step."
+            },
+            "braze:experiment": {
+              "title": "Experiment",
+              "type": "object",
+              "properties": {
+                "braze:experimentStepID": {
+                  "title": "Experiment Step ID",
+                  "type": "string",
+                  "description": "API ID of the experiment step this event belongs to."
+                },
+                "braze:experimentSplitID": {
+                  "title": "Experiment Split ID",
+                  "type": "string",
+                  "description": "API ID of the experiment split the user enrolled in."
+                },
+                "braze:experimentSplitName": {
+                  "title": "Experiment Split Name",
+                  "type": "string",
+                  "description": "Name of the experiment split."
+                },
+                "braze:inControlGroup": {
+                  "title": "In Control Group",
+                  "type": "boolean",
+                  "description": "Whether the user was enrolled in the control group."
+                }
+              }
             }
           }
         },
@@ -159,15 +261,118 @@
           "title": "Messaging",
           "type": "object",
           "properties": {
+            "braze:sendID": {
+              "title": "Send ID",
+              "type": "string",
+              "description": "Message send ID this message belongs to."
+            },
             "braze:dispatchID": {
               "title": "Dispatch ID",
               "type": "string",
               "description": "ID of the dispatch this message belongs to."
             },
-            "braze:sendID": {
-              "title": "Send ID",
+            "braze:messageBody": {
+              "title": "Message Body",
               "type": "string",
-              "description": "Message send ID this message belongs to."
+              "description": "Typed response from the user."
+            },
+            "braze:messageExtras": {
+              "title": "Message Extras",
+              "type": "string",
+              "description": "[PII] A JSON string of the tagged key-value pairs during liquid rendering."
+            },
+            "braze:mediaUrls": {
+              "title": "Media Urls",
+              "type": "array",
+              "description": "Media URLs from the user.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "braze:action": {
+              "title": "Action",
+              "type": "string",
+              "description": "Action taken in response to this message. (e.g. Subscribed, Unsubscribed or None).",
+              "enum": [
+                "Subscribed",
+                "Unsubscribed",
+                "None",
+                "Help",
+                "Pending Double Opt-In"
+              ],
+              "meta:enum": {
+                "Subscribed": "Subscribed",
+                "Unsubscribed": "Unsubscribed",
+                "None": "None",
+                "Help": "Help",
+                "Pending Double Opt-In": "Pending Double Opt-In"
+              }
+            },
+            "braze:abortLog": {
+              "title": "Abort Log",
+              "type": "string",
+              "description": "[PII] Log message describing abort details (max: 128 chars)."
+            },
+            "braze:abortType": {
+              "title": "Abort Type",
+              "type": "string",
+              "description": "Type of abort, one of: \"liquid_abort_message\", \"quiet_hours\", \"rate_limit\".",
+              "enum": [
+                "liquid_abort_message",
+                "quiet_hours",
+                "sms_no_sending_numbers",
+                "users_cti_marked_as_deleted",
+                "blocked_recipient_country",
+                "exhausted_cc_retries",
+                "whats_app_fatal_provider_error",
+                "template_parse_error"
+              ],
+              "meta:enum": {
+                "liquid_abort_message": "Liquid Abort Message",
+                "quiet_hours": "Quiet Hours",
+                "sms_no_sending_numbers": "SMS No Sending Numbers",
+                "users_cti_marked_as_deleted": "Users CTI Marked as Deleted",
+                "blocked_recipient_country": "Blocked Recipient Country",
+                "exhausted_cc_retries": "Exhausted CC Retries",
+                "whats_app_fatal_provider_error": "WhatsApp Fatal Provider Error",
+                "template_parse_error": "Template Parse Error"
+              }
+            },
+            "braze:cardID": {
+              "title": "Card ID",
+              "type": "string",
+              "description": "API ID of the card."
+            },
+            "braze:contentCardID": {
+              "title": "Content Card ID",
+              "type": "string",
+              "description": "ID of the card that generated this event."
+            },
+            "braze:phoneNumber": {
+              "title": "Phone Number",
+              "type": "object",
+              "properties": {
+                "braze:fromPhoneNumber": {
+                  "title": "From Phone Number",
+                  "type": "string",
+                  "description": "Phone number used to send."
+                },
+                "braze:toPhoneNumber": {
+                  "title": "To Phone Number",
+                  "type": "string",
+                  "description": "[PII] Phone number of the user receiving the message."
+                },
+                "braze:inboundPhoneNumber": {
+                  "title": "Inbound Phone Number",
+                  "type": "string",
+                  "description": "The inbound number that the message was sent to."
+                },
+                "braze:userPhoneNumber": {
+                  "title": "User Phone Number",
+                  "type": "string",
+                  "description": "[PII] The user's phone number from which the message was received."
+                }
+              }
             },
             "braze:email": {
               "title": "Email",
@@ -181,7 +386,7 @@
                 "braze:IPPool": {
                   "title": "IP Pool",
                   "type": "string",
-                  "description": "IP Pool from which the email send was made."
+                  "description": "IP pool from which the email send was made."
                 },
                 "braze:ESP": {
                   "title": "ESP",
@@ -204,7 +409,7 @@
                 "braze:userAgent": {
                   "title": "User Agent",
                   "type": "string",
-                  "description": "User agent on which the click occurred."
+                  "description": "User agent on which the spam report occurred."
                 },
                 "braze:machineOpen": {
                   "title": "Machine Open",
@@ -240,14 +445,127 @@
                 "braze:bounceReason": {
                   "title": "Bounce Reason",
                   "type": "string",
-                  "description": "The SMTP reason code and user friendly message received for this bounce event."
+                  "description": "[PII] The SMTP reason code and user friendly message received for this bounce event."
                 },
                 "braze:isDrop": {
                   "title": "Is Drop",
                   "type": "boolean",
                   "description": "Indicates that this event counts as a drop event."
+                },
+                "braze:mailboxProvider": {
+                  "title": "Mailbox Provider",
+                  "type": "string",
+                  "description": "Mailbox provider value returned by the ESP for this event."
                 }
               }
+            },
+            "braze:sms": {
+              "title": "SMS",
+              "type": "object",
+              "properties": {
+                "braze:category": {
+                  "title": "Category",
+                  "type": "string",
+                  "description": "Keyword category name, only populated for auto-reply messages: 'opt-in', 'opt-out', 'help', or custom value."
+                },
+                "braze:shortURL": {
+                  "title": "Short URL",
+                  "type": "string",
+                  "description": "Shortened URL that was clicked."
+                }
+              }
+            },
+            "braze:whatsapp": {
+              "title": "WhatsApp",
+              "type": "object",
+              "properties": {
+                "braze:quickReplyText": {
+                  "title": "Quick Reply Text",
+                  "type": "string",
+                  "description": "Text of button pressed by the user."
+                }
+              }
+            },
+            "braze:pushNotification": {
+              "title": "Push Notification",
+              "type": "object",
+              "properties": {
+                "braze:buttonString": {
+                  "title": "Button String",
+                  "type": "string",
+                  "description": "Identifier (button_string) of the push notification button clicked. null if not from a button click."
+                },
+                "braze:buttonActionType": {
+                  "title": "Button Action Type",
+                  "type": "string",
+                  "description": "Action type of the push notification button. one of [uri, deep_link, none, close]. null if not from a button click.",
+                  "enum": [
+                    "URI",
+                    "DEEP_LINK",
+                    "NONE",
+                    "CLOSE"
+                  ],
+                  "meta:enum": {
+                    "URI": "URI",
+                    "DEEP_LINK": "Deep Link",
+                    "NONE": "None",
+                    "CLOSE": "Close"
+                  }
+                }
+              }
+            },
+            "braze:in-appMessage": {
+              "title": "In-App Message",
+              "type": "object",
+              "properties": {
+                "braze:version": {
+                  "title": "Version",
+                  "type": "string",
+                  "description": "Which version of in app message, legacy or triggered."
+                },
+                "braze:buttonID": {
+                  "title": "Button ID",
+                  "type": "string",
+                  "description": "ID of the button clicked, if this click represents a click on a button."
+                }
+              }
+            },
+            "braze:error": {
+              "title": "Error",
+              "type": "object",
+              "properties": {
+                "braze:error": {
+                  "title": "Error",
+                  "type": "string",
+                  "description": "Error name."
+                },
+                "braze:providerErrorCode": {
+                  "title": "Provider Error Code",
+                  "type": "string",
+                  "description": "Error code from WhatsApp."
+                },
+                "braze:providerErrorTitle": {
+                  "title": "Provider Error Title",
+                  "type": "string",
+                  "description": "Description of failure from WhatsApp."
+                }
+              }
+            }
+          }
+        },
+        "braze:session": {
+          "title": "Session",
+          "type": "object",
+          "properties": {
+            "braze:duration": {
+              "title": "Duration",
+              "type": "number",
+              "description": "Duration of the session, in seconds."
+            },
+            "braze:sessionID": {
+              "title": "Session ID",
+              "type": "string",
+              "description": "UUID of the session."
             }
           }
         },
@@ -258,12 +576,12 @@
             "braze:adID": {
               "title": "Ad ID",
               "type": "string",
-              "description": "Advertising identifier."
+              "description": "[PII] Advertising identifier."
             },
             "braze:adIDType": {
               "title": "Ad ID Type",
               "type": "string",
-              "description": "One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', OR 'roku_ad_id'.",
+              "description": "One of 'ios_idfa', 'google_ad_id', 'windows_ad_id', or 'roku_ad_id'.",
               "enum": [
                 "ios_idfa",
                 "google_ad_id",
@@ -281,6 +599,112 @@
               "title": "Ad Tracking Enabled",
               "type": "boolean",
               "description": "Whether advertising tracking is enabled for the device."
+            }
+          }
+        },
+        "braze:purchase": {
+          "title": "Purchase",
+          "type": "object",
+          "properties": {
+            "braze:productID": {
+              "title": "Product ID",
+              "type": "string",
+              "description": "ID of the product purchased."
+            },
+            "braze:price": {
+              "title": "Price",
+              "type": "number",
+              "description": "Price of the purchase."
+            },
+            "braze:currency": {
+              "title": "Currency",
+              "type": "string",
+              "description": "Currency of the purchase."
+            }
+          }
+        },
+        "braze:subscription": {
+          "title": "Subscription",
+          "type": "object",
+          "properties": {
+            "braze:subscriptionGroupID": {
+              "title": "Subscription Group ID",
+              "type": "string",
+              "description": "Subscription group API ID."
+            },
+            "braze:subscriptionStatus": {
+              "title": "Subscription Status",
+              "type": "string",
+              "description": "Subscription status: 'Subscribed' or 'Unsubscribed'.",
+              "enum": [
+                "Subscribed",
+                "Unsubscribed",
+                "Pending Double Opt-In",
+                "Opted In"
+              ],
+              "meta:enum": {
+                "Subscribed": "Subscribed",
+                "Unsubscribed": "Unsubscribed",
+                "Pending Double Opt-In": "Pending Double Opt-In",
+                "Opted In": "Opted In"
+              }
+            },
+            "braze:channel": {
+              "title": "Channel",
+              "type": "string",
+              "description": "Channel this event belongs to."
+            },
+            "braze:stateChangeSource": {
+              "title": "State Change Source",
+              "type": "string",
+              "description": "Source of the state change, e.g: REST API, SDK, Dashboard, etc."
+            }
+          }
+        },
+        "braze:location": {
+          "title": "Location",
+          "type": "object",
+          "properties": {
+            "braze:latitude": {
+              "title": "Latitude",
+              "type": "number",
+              "description": "[PII] Latitude of recorded location."
+            },
+            "braze:longitude": {
+              "title": "Longitude",
+              "type": "number",
+              "description": "[PII] Longitude of recorded location."
+            },
+            "braze:altitude": {
+              "title": "Altitude",
+              "type": "number",
+              "description": "[PII] Altitude of recorded location."
+            },
+            "braze:llAccuracy": {
+              "title": "Ll Accuracy",
+              "type": "number",
+              "description": "Latitude/longitude accuracy of recorded location."
+            },
+            "braze:altAccuracy": {
+              "title": "Alt Accuracy",
+              "type": "number",
+              "description": "Altitude accuracy of recorded location."
+            }
+          }
+        },
+        "braze:conversion": {
+          "title": "Conversion",
+          "type": "object",
+          "properties": {
+            "braze:conversionBehavior": {
+              "title": "Conversion Behavior",
+              "type": "string",
+              "description": "JSON-encoded string describing the conversion behavior."
+            },
+            "braze:conversionBehaviorIndex": {
+              "title": "Conversion Behavior Index",
+              "type": "integer",
+              "description": "Index of the conversion behavior."
             }
           }
         }

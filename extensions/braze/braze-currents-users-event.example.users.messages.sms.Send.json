@@ -1,0 +1,28 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:messaging": {
+    "braze:dispatchID": "12345qwert",
+    "braze:messageExtras": "{\"abc\":\"test\"}",
+    "braze:sms": {
+      "braze:category": "Opt-in"
+    },
+    "braze:phoneNumber": {
+      "braze:toPhoneNumber": "+16462345678"
+    }
+  },
+  "braze:subscription": {
+    "braze:subscriptionGroupID": "41234567-89ab-cdef-0123-456789abcdef"
+  }
+}

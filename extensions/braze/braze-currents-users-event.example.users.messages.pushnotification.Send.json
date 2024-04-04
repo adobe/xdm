@@ -1,0 +1,30 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:device": {
+    "braze:platform": "ios",
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:messaging": {
+    "braze:sendID": "f123456789abcdef01234567",
+    "braze:dispatchID": "01234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageExtras": "{\"abc\":\"test\"}"
+  },
+  "braze:adTracking": {
+    "braze:adID": "aedcba87-6543-210f-fedc-ba9876543210",
+    "braze:adIDType": "ios_idfa",
+    "braze:adTrackingEnabled": true
+  }
+}

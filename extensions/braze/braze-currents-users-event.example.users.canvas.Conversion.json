@@ -1,0 +1,21 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:canvas": {
+    "braze:canvasID": "21234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasName": "Test Canvas",
+    "braze:canvasVariationID": "31234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasStepID": "41234567-89ab-cdef-0123-456789abcdef",
+    "braze:canvasVariationName": "Test Canvas Variation Name",
+    "braze:canvasStepName": "Test Canvas Step Name"
+  },
+  "braze:conversion": {
+    "braze:conversionBehaviorIndex": 1,
+    "braze:conversionBehavior": "{\"type\":\"Performs Custom Events\",\"window\":3600,\"custom_event_name\":\"Test Custom Event\"}"
+  }
+}

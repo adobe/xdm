@@ -224,7 +224,8 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMs": {
               "title": "processingTimeMs",
-              "description": "Time(ms) taken to complete the processing of this step.",
+              "description": "(Deprecated) Time(ms) taken to complete the processing of this step.",
+              "meta:status": "deprecated",
               "type": "integer",
               "meta:xdmType": "long",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",

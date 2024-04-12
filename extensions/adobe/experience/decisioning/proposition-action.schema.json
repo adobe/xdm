@@ -26,6 +26,14 @@
           "title": "label",
           "description": "The customer generated display name of the element with which the end-user interacted.",
           "type": "string"
+        },
+        "xdm:tokens": {
+          "title": "tokens",
+          "type": "array",
+          "description": "Application-generated metadata associated with the element with which the end-user interacted.",
+          "items": {
+            "type": "string"
+          }
         }
       }
     }

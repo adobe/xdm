@@ -1,0 +1,36 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "braze:appGroupID": "abcdef000001000000000000-api",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:timezone": "America/Chicago",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "my-external-user-id"
+  },
+  "braze:device": {
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+  },
+  "braze:campaign": {
+    "braze:campaignID": "11234567-89ab-cdef-0123-456789abcdef",
+    "braze:campaignName": "Test Campaign",
+    "braze:messageVariationID": "c1234567-89ab-cdef-0123-456789abcdef",
+    "braze:messageVariationName": "Test Message Variation"
+  },
+  "braze:messaging": {
+    "braze:action": "Subscribed",
+    "braze:messageBody": "START I love your brand!!!",
+    "braze:mediaUrls": [
+      "https://www.example.com/media"
+    ],
+    "braze:whatsapp": {
+      "braze:quickReplyText": "Yes!"
+    },
+    "braze:phoneNumber": {
+      "braze:userPhoneNumber": "+12125551212",
+      "braze:inboundPhoneNumber": "+12122223333"
+    }
+  },
+  "braze:subscription": {
+    "braze:subscriptionGroupID": "11234567-89ab-cdef-0123-456789abcdef-api"
+  }
+}

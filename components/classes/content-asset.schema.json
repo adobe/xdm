@@ -40,6 +40,12 @@
           "title": "Asset Type",
           "type": "string",
           "description": "Asset type such as image or video."
+        },
+        "xdm:assetThumbnailURL": {
+          "title": "Asset thumbnail URL",
+          "format": "uri",
+          "type": "string",
+          "description": "Asset thumbnail url."
         }
       }
     },
@@ -50,6 +56,11 @@
           "description": "Content featurization.",
           "type": "object",
           "properties": {
+            "xdm:version": {
+              "title": "Asset Featurization Version",
+              "type": "string",
+              "description": "Asset featurization version."
+            },
             "xdm:orientation": {
               "title": "Asset Orientation",
               "type": "string",

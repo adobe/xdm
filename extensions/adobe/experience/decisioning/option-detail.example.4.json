@@ -1,0 +1,16 @@
+{
+  "xdm:id": "xcore:personalized-offer:e91ee850a0bb7d9",
+  "xdm:score": 101,
+  "xdm:itemSelection": {
+    "xdm:selectionDetail": {
+      "xdm:strategyID": "xcore:selection-strategy:1863a7b4254b8778",
+      "xdm:strategyName": "sample strategy name",
+      "xdm:selectionType": "selectionStrategy",
+      "xdm:version": "xcore:selection-strategy:1863a7b4254b8778_1"
+    },
+    "xdm:rankingDetail": {
+      "xdm:id": "xcore:ranking-function:17bb67e976902620",
+      "xdm:trafficType": "rankingFormula"
+    }
+  }
+}

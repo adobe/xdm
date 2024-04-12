@@ -18,7 +18,8 @@ This event is in relation with journey and dispatcher service event fields
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID": "f3485959-0a9e-4004-82d9-f11bd6c4585b",
     "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType": "error",
-    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL"
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode": "ERROR_SERVICE_INTERNAL",
+    "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": "f3485959-0a9e-4004-82d9-f11bd6c4585b"
   }
 }
 ```
@@ -50,6 +51,7 @@ This event is in relation with journey and dispatcher service event fields
 | `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType`| string | Optional |
 | `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID`| string | Optional |
+| `https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID`| string | Optional |
 
 
 
@@ -129,6 +131,24 @@ The projection id of the segment being used in journey
 
 
 `string`
+
+
+
+
+#### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID
+##### Segment ID
+
+The segment id of the incoming experience event
+
+`https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID`
+* is optional
+* type: `string`
+
+##### https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID Type
+
+
+`string`
+
 
 
 

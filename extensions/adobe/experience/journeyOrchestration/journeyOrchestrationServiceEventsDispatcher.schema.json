@@ -42,6 +42,11 @@
               "title": "Event Code",
               "type": "string",
               "description": "The error code indicating the reason for corresponding eventType"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentID": {
+              "title": "Segment ID",
+              "type": "string",
+              "description": "The segment id of the incoming experience event"
             }
           }
         }

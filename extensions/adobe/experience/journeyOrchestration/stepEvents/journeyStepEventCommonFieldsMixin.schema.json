@@ -50,6 +50,16 @@
               "description": "If the journey is a read segment journey, the current step event indicates that the the segment export process has been initiated.",
               "type": "boolean"
             },
+            "https://ns.adobe.com/experience/journeyOrchestration/exitCriteriaID": {
+              "title": "exitCriteriaID",
+              "description": "ID of exit criteria",
+              "type": "string"
+            },
+            "https://ns.adobe.com/experience/journeyOrchestration/exitCriteriaName": {
+              "title": "exitCriteriaName",
+              "description": "Name of exit criteria",
+              "type": "string"
+            },
             "https://ns.adobe.com/experience/journeyOrchestration/origSegmentQualificationStatus": {
               "title": "origSegmentQualificationStatus",
               "description": "Indicates original Segment Qualification Status. Possible values can be: existing, realized, exited",
@@ -214,7 +224,8 @@
             },
             "https://ns.adobe.com/experience/journeyOrchestration/processingTimeMs": {
               "title": "processingTimeMs",
-              "description": "Time(ms) taken to complete the processing of this step.",
+              "description": "(Deprecated) Time(ms) taken to complete the processing of this step.",
+              "meta:status": "deprecated",
               "type": "integer",
               "meta:xdmType": "long",
               "meta:titleId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##title##30461",

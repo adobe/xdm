@@ -85,6 +85,29 @@
           "$ref": "https://ns.adobe.com/xdm/data/measure",
           "description": "The number of times a particular option was proposed so far to a particular profile. When this metric is present the record or time-series entity must include an IdentityMap the profile.",
           "meta:descriptionId": "option-detail##https://ns.adobe.com/experience/decisioning/propositionsProfile##description##18831"
+        },
+        "xdm:itemSelection": {
+          "$ref": "https://ns.adobe.com/experience/decisioning/item-selection",
+          "title": "Item Selection",
+          "description": "The detail of an item selection of which the item was proposed."
+        },
+        "xdm:selectionID": {
+          "meta:status": "deprecated",
+          "title": "Decision Option Selection ID",
+          "type": "string",
+          "description": "Option selection ID. The selectionID of which the item was derived from."
+        },
+        "xdm:selectionType": {
+          "meta:status": "deprecated",
+          "title": "Decision Option Selection Type",
+          "type": "string",
+          "description": "Option selection type. The selection type of which the item was derived from."
+        },
+        "xdm:trackingToken": {
+          "meta:status": "deprecated",
+          "title": "Decision Option Tracking Token",
+          "type": "string",
+          "description": "Option tracking token. The unique token pertains to the event of which the item event was derived from."
         }
       }
     }

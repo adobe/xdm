@@ -25,6 +25,12 @@
           "title": "Experience Channel",
           "type": "string",
           "description": "Experience channel such as web, mobile or email."
+        },
+        "xdm:experienceThumbnailURL": {
+          "title": "Experience thumbnail URL",
+          "format": "uri",
+          "type": "string",
+          "description": "Experience thumbnail url."
         }
       }
     },
@@ -35,6 +41,11 @@
           "description": "Content featurization.",
           "type": "object",
           "properties": {
+            "xdm:version": {
+              "title": "Experience Featurization Version",
+              "type": "string",
+              "description": "Experience featurization version."
+            },
             "xdm:keywords": {
               "title": "Experience Keywords",
               "type": "array",
@@ -120,7 +131,7 @@
               "minimum": 0
             },
             "xdm:readability": {
-              "title": "Experience Keywords",
+              "title": "Experience Readability",
               "type": "string",
               "description": "Experience readability."
             },

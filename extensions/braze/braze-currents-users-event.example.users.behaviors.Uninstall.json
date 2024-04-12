@@ -1,0 +1,12 @@
+{
+  "@id": "a1234567-89ab-cdef-0123-456789abcdef",
+  "timestamp": "2016-10-26T17:26:23+00:00",
+  "braze:appID": "01234567-89ab-cdef-0123-456789abcdef",
+  "braze:user": {
+    "braze:userID": "0123456789abcdef01234567",
+    "braze:externalUserID": "user_id"
+  },
+  "braze:device": {
+    "braze:deviceID": "fedcba87-6543-210f-fedc-ba9876543210"
+  }
+}

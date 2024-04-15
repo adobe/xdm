@@ -48,6 +48,11 @@
           "meta:titleId": "b2b-account-organization##xdm:website##title##11071",
           "meta:descriptionId": "b2b-account-organization##xdm:website##description##76291"
         },
+        "xdm:domain": {
+          "title": "Website Domain",
+          "type": "string",
+          "description": "The domain of the organization's website."
+        },
         "xdm:marketSegment": {
           "title": "Market segment",
           "type": "string",

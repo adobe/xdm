@@ -28,7 +28,10 @@
               "xdm:index": {
                 "title": "Index",
                 "description": "Index of the capping object, this is used as suffix for counter id when we have multi capping objects. Index starts from 1 and default value is 0.",
-                "type": "integer"
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 10
               },
               "xdm:limit": {
                 "title": "Limit",

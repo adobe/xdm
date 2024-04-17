@@ -37,6 +37,14 @@
           "meta:titleId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##title##22201",
           "meta:descriptionId": "messageexecution##https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messagePublicationID##description##26451"
         },
+        "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/fragmentPublicationIDs": {
+          "title": "Fragment Publication IDs",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "The Fragment Publication ID of parent fragment IDs of a MessageExecution originating this message."
+        },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
           "title": "JourneyVersion ID",
           "type": "string",

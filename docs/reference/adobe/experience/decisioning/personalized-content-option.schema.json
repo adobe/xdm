@@ -26,17 +26,7 @@
     "description": "Personalized decision options form the set of choices for any decision actvity. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.",
     "definitions": {
         "personalized-content-option": {
-            "properties": {
-                "xdm:fCapConstraintsLastIndex": {
-                    "type": "integer",
-                    "title": "Frequency Capping Constraints Last Index",
-                    "description": "Last index of the capping object. This field is hidden on UI.",
-                    "default": 0,
-                    "minimum": 0,
-                    "maximum": 10,
-                    "meta:status": "hidden"
-                }
-            }
+            "properties": {}
         }
     },
     "allOf": [

@@ -24,7 +24,7 @@
           "description": "Last index of the capping object. This field is hidden on UI.",
           "default": 0,
           "minimum": 0,
-          "maximum": 10,
+          "maximum": 2147483647,
           "meta:status": "hidden"
         },
         "xdm:frequencyCappingConstraints": {

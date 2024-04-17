@@ -40,7 +40,7 @@
                 "type": "integer",
                 "default": 0,
                 "minimum": 0,
-                "maximum": 10
+                "maximum": 2147483647
               },
               "xdm:limit": {
                 "title": "Limit",

@@ -43,7 +43,7 @@
           "items": {
             "type": "string"
           },
-          "description": "The Fragment Publication ID of parent fragment IDs of a MessageExecution originating this message.",
+          "description": "The Fragment Publication ID of parent fragment IDs of a MessageExecution originating this message."
         },
         "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyVersionID": {
           "title": "JourneyVersion ID",

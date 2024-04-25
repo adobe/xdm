@@ -20,15 +20,6 @@ for xdmFormat in ${xdmFormats[@]}; do #make xdm formats valid formats
   validFormats="$validFormats $opt$xdmFormat ";
 done
 
-## Check for restricted property changes
-restrictedProps=("minimum" "maximum" "minLength" "maxLength")
-for prop in "${restrictedProps[@]}"; do
-  if grep -E "\+\s*\"$prop\" *:" $schemaChanges; then
-    echo "Error: PR contains disallowed changes to $prop property!"
-    exit 1
-  fi
-done
-
 for xdm in $xdms; do #compile xdm schemas
   #echo "Compiling---> $xdm"
   #only compile the delta

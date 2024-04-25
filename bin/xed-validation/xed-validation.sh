@@ -40,6 +40,7 @@ node tag4xed.js -i tempxed -j xed
 
 (echo "++++++++++Search changed schemas..... ++++++++++"; sleep 1)
 diff -rq tempmaster/bin/xed-validation/xed xed/ | sed -E "s/: /\\//g" > schemaChanges.log
+
 diff -r tempmaster/bin/xed-validation/xed xed/ > detailedSchemaChanges.log
 
 echo "++++++++++Start checking for restricted property changes..... ++++++++++"

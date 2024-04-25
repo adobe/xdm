@@ -3,6 +3,8 @@
 cleanup () { #cleanup temp files
   (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json industries.json schemaChanges.log tempmaster xedError.log detailedSchemaChanges.log) #cleanup temp folders
 }
+# Ensure necessary scripts are executable
+chmod +x check_properties.sh
 
 git clone https://github.com/adobe/xdm.git tempmaster
 (cd tempmaster/bin/xed-validation; pwd; cp ../../../xed-master-gen.sh ../../../cleaninput.sh ../../../schemaLocGen.js .; ./xed-master-gen.sh) #get master branch xed

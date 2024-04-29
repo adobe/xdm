@@ -4,7 +4,7 @@ cleanup () { #cleanup temp files
   (rm -rf tempinput xdm xdm-extensions tempxed tags.json schemaLoc.json industries.json schemaChanges.log tempmaster xedError.log detailedSchemaChanges.log) #cleanup temp folders
 }
 # Ensure necessary scripts are executable
-chmod +x check_properties.sh
+chmod +x check_properties.js
 
 git clone https://github.com/adobe/xdm.git tempmaster
 (cd tempmaster/bin/xed-validation; pwd; cp ../../../xed-master-gen.sh ../../../cleaninput.sh ../../../schemaLocGen.js .; ./xed-master-gen.sh) #get master branch xed
@@ -46,7 +46,7 @@ diff -rq tempmaster/bin/xed-validation/xed xed/ | sed -E "s/: /\\//g" > schemaCh
 diff -r tempmaster/bin/xed-validation/xed xed/ > detailedSchemaChanges.log
 
 echo "++++++++++Start checking for restricted property changes..... ++++++++++"
-./check_properties.sh detailedSchemaChanges.log
+node check_properties.js detailedSchemaChanges.log
 if [ $? -ne 0 ]; then
   echo "Error detected in property changes."
   exit 1

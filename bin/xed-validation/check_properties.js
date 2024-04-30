@@ -31,15 +31,13 @@ function checkForChanges(data, prop) {
         } else if (line.startsWith('>') && line.includes(`"${prop}":`)) {
             currentValue = extractValue(line); // Store the new value from the addition line
 
-            // Check if the current addition follows a deletion
             if (foundDeletion && previousValue !== currentValue) {
-                console.error(`Error: PR contains disallowed changes to ${prop} property (modification)!`);
+                console.error(`Error: PR contains disallowed changes to ${prop} property in the diff section!`);
                 errorFound = true;
                 foundDeletion = false;
                 previousValue = null;
                 currentValue = null;
             } else if (foundDeletion && previousValue === currentValue) {
-                // If the value has not changed, reset flags and do not report an error
                 foundDeletion = false;
                 previousValue = null;
                 currentValue = null;
@@ -47,13 +45,31 @@ function checkForChanges(data, prop) {
         }
     });
 
-    // Handle any lingering deletions after the last line processed
     if (foundDeletion && previousValue !== null) {
-        console.error(`Error: PR contains disallowed changes to ${prop} property (deletion)!`);
+        console.error(`Error: PR contains disallowed changes to ${prop} property!`);
         errorFound = true;
     }
 
     return errorFound;
+}
+
+function processDiffLog(data) {
+    const fileSections = data.split(/diff -r \S+ \S+\n/).slice(1);
+    let anyErrorFound = false;
+
+    fileSections.forEach(section => {
+        restrictedProps.forEach(prop => {
+            if (checkForChanges(section, prop)) {
+                anyErrorFound = true;
+            }
+        });
+    });
+
+    if (!anyErrorFound) {
+        console.log("No disallowed changes detected.");
+    } else {
+        process.exit(1); // Exit with error status if changes were detected
+    }
 }
 
 // Read the diff log file and process it
@@ -62,17 +78,5 @@ fs.readFile(schemaChangesLog, 'utf8', (err, data) => {
         console.error("Failed to read the schema changes log file:", err);
         process.exit(1);
     }
-
-    let anyErrorFound = false;
-    restrictedProps.forEach(prop => {
-        if (checkForChanges(data, prop)) {
-            anyErrorFound = true;
-        }
-    });
-
-    if (!anyErrorFound) {
-        console.log("No disallowed changes detected.");
-    } else {
-        process.exit(1);
-    }
+    processDiffLog(data);
 });

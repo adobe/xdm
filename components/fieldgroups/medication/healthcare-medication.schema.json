@@ -68,7 +68,35 @@
               "title": "Drug Quantity",
               "type": "number",
               "description": "Amount of drug in the package."
-            },
+	            },
+	             "xdm:drugcodes": {
+	              "title": "drugcodes",
+	              "description": "Codes that identify this medication Binding.",
+	              "type": "array",
+	              "items": {
+	                "type": "string"}
+	            },
+	            "xdm:batch": {
+	              "title": "batch",
+	               "type": "object",
+	              "description": "Details about packaged medications.",
+	              "definitions": {
+	               "batch": {
+	               		"properties": {
+                 		 "xdm:lotNumber": {
+                    		"title": "lotNummber",
+                    		"type": "string",
+                    		"description": "Identifier assigned to batch."
+                  },
+                  "xdm:expirationDate": {
+                    "title": "expirationDate",
+                    "type": "datetTime",
+                    "description": "When batch will expire."
+                 	 	}
+	               	 }
+	                }
+	               }
+	            },
             "xdm:ingredients": {
               "title": "ingredients",
               "description": "Ingredients present in the medication",
@@ -87,7 +115,6 @@
                     "type": "boolean",
                     "description": "Indicates if this ingredient is active in the medication."
                   }
-                }
               }
             }
           }

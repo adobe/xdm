@@ -11,14 +11,14 @@
   "type": "object",
   "meta:status": "stable",
   "meta:extensible": true,
-  "description": "Media details information.",
+  "description": "Media details information change in desc",
   "definitions": {
     "mediaDetails": {
       "properties": {
         "xdm:playhead": {
           "title": "Playhead",
           "type": "integer",
-          "minimum": 10,
+          "minimum": 0,
           "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length."
         },
         "xdm:sessionID": {

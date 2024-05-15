@@ -1,0 +1,45 @@
+"$schema":"http://json-schema.org/draft-06/schema#",
+"$id":"https://ns.adobe.com/xdm/datatypes/coding",
+"title":"Coding",
+"type":"object",
+"description":"A reference to a code defined by a terminology system",
+"definitions":{
+   "coding":{
+      "properties":{
+         "xdm:system":{
+            "title":"System",
+            "description":"The namespace for the identifier value",
+            "type":"string",
+            "format":"uri"
+         },
+         "xdm:version":{
+            "title":"Version",
+            "description":"Version of the system",
+            "type":"string"
+         },
+         "xdm:code":{
+            "title":"Code",
+            "description":"Symbol in syntax defined by the system",
+            "type":"string"
+         },
+         "xdm:display":{
+            "title":"Display",
+            "description":"Representation defined by the system",
+            "type":"string"
+         },
+         "xdm:isuserselected":{
+            "title":"Is Selected by User",
+            "description":"If this coding was chosen directly by the user",
+            "type":"boolean",
+            "default":false
+         }
+      }
+   }
+},
+"allOf":[
+   {
+      "$ref":"#/definitions/coding"
+   }
+],
+"meta:status":"experimental"
+}

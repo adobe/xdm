@@ -1,31 +1,32 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://ns.adobe.com/xdm/datatypes/period",
-  "title": "Period",
-  "type": "object",
-  "description": "A time period defined by a start and end date/time",
-  "definitions": {
-    "period": {
-      "properties": {
-        "xdm:start": {
-          "title": "Start Date/Time",
-          "description": "Period Sart Date and Time",
-          "type": "string",
-          "format":"date-time"
-        },
-        "xdm:end": {
-          "title": "End Date/Time",
-          "description": "Period End Date and Time",
-          "type": "string",
-          "format":"date-time"
-        }
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/datatypes/period",
+   "title":"Period",
+   "type":"object",
+   "description":"A time period defined by a start and end date/time",
+   "definitions":{
+      "period":{
+         "properties":{
+            "xdm:start":{
+               "title":"Start Date/Time",
+               "description":"Period Sart Date and Time",
+               "type":"string",
+               "format":"date-time"
+            },
+            "xdm:end":{
+               "title":"End Date/Time",
+               "description":"Period End Date and Time",
+               "type":"string",
+               "format":"date-time"
+            }
+         }
       }
-    }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/period"
-    }
-  ],
-  "meta:status": "experimental"
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/period"
+      }
+   ],
+   "meta:status":"experimental"
 }
+

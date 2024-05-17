@@ -1,0 +1,40 @@
+{
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/datatypes/annotation",
+   "title":"Annotation",
+   "type":"object",
+   "description":"Text node with attribution",
+   "definitions":{
+      "annotation":{
+         "properties":{
+            "xdm:authorreference":{
+               "title":"Author Reference",
+               "description":"Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Organization)",
+               "$ref":"https://ns.adobe.com/xdm/datatypes/reference"
+            },
+            "xdm:author":{
+               "title":"Author",
+               "description":"Individual responsible for the annotation",
+               "type":"string"
+            },
+            "xdm:time":{
+               "title":"Time",
+               "description":"When the annotation was made",
+               "type":"string",
+               "format":"date-time"
+            },
+            "xdm:text":{
+               "title":"Text",
+               "description":"The annotation - text content",
+               "type":"string"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/annotation"
+      }
+   ],
+   "meta:status":"experimental"
+}

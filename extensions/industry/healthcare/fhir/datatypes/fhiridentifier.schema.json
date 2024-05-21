@@ -5,7 +5,7 @@
    "type":"object",
    "description":"An identifier intended for computation",
    "definitions":{
-      "fhiridentifier":{
+      "identifier":{
          "properties":{
             "xdm:use":{
                "title":"Use",

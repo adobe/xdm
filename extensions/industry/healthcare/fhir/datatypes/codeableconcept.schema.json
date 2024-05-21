@@ -5,7 +5,7 @@
    "type":"object",
    "description":"A reference from one resource to another",
    "definitions":{
-      "codeableconcept":{
+      "codeableConcept":{
          "properties":{
             "xdm:coding":{
                "title":"Coding",

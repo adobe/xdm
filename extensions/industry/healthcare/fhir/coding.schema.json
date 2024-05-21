@@ -1,6 +1,6 @@
 {
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/datatypes/coding",
+   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/coding",
    "title":"Coding",
    "type":"object",
    "description":"A reference to a code defined by a terminology system",

@@ -1,6 +1,6 @@
 {
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/contactpoint",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint",
    "title":"Contact Point",
    "type":"object",
    "description":"A contact detail for the person",
@@ -30,14 +30,14 @@
             "xdm:period":{
                "title":"Period",
                "description":"Time period when the contact point was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
             }
          }
       }
    },
    "allOf":[
       {
-         "$ref":"#/definitions/contactpoint"
+         "$ref":"#/definitions/contactPoint"
       }
    ],
    "meta:status":"experimental"

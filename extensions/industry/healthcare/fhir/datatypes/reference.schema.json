@@ -1,6 +1,6 @@
 {
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/fhirreference",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference",
    "title":"Reference",
    "type":"object",
    "description":"A reference from one resource to another",
@@ -21,7 +21,7 @@
             "xdm:identifier":{
                "title":"Identifier",
                "description":"Logical reference, when literal reference is not known",
-               "$ref":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/fhiridentifier"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
             }
          },
          "xdm:display":{
@@ -33,7 +33,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/fhirreference"
+         "$ref":"#/definitions/reference"
       }
    ],
    "meta:status":"experimental"

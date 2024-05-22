@@ -1,6 +1,6 @@
 {
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/period",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period",
    "title":"Period",
    "type":"object",
    "description":"A time period defined by a start and end date/time",

@@ -1,6 +1,6 @@
 {
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/codeableconcept",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept",
    "title":"Codeable Concept",
    "type":"object",
    "description":"A reference from one resource to another",
@@ -10,7 +10,7 @@
             "xdm:coding":{
                "title":"Coding",
                "description":"Code defined by a terminology system",
-               "$ref":"https://ns.adobe.com/xdm/extensions/industry/healthcare/fhir/datatypes/coding"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/coding"
             },
             "xdm:text":{
                "title":"Text",
@@ -22,7 +22,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/codeableconcept"
+         "$ref":"#/definitions/codeableConcept"
       }
    ],
    "meta:status":"experimental"

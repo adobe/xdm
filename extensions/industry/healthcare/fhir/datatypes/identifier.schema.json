@@ -1,0 +1,51 @@
+{
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier",
+   "title":"FHIR Identifier",
+   "type":"object",
+   "description":"An identifier intended for computation",
+   "definitions":{
+      "identifier":{
+         "properties":{
+            "xdm:use":{
+               "title":"Use",
+               "description":"Elements defined in Ancestors",
+               "type":"string"
+            },
+            "xdm:type":{
+               "title":"Type",
+               "description":"Description of identifier",
+               "type":"string",
+               "format":"date-time"
+            },
+            "xdm:system":{
+               "title":"System",
+               "description":"The namespace for the identifier value",
+               "type":"string",
+               "format":"uri"
+            },
+            "xdm:value":{
+               "title":"Value",
+               "description":"The value that is unique",
+               "type":"string"
+            },
+            "xdm:assigner":{
+               "title":"Assigner",
+               "description":"Organization that issued id",
+               "type":"string"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when id is/was valid for use",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/identifier"
+      }
+   ],
+   "meta:status":"experimental"
+}

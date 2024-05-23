@@ -34,7 +34,7 @@
                "description":"Representation defined by the system",
                "type":"string"
             },
-            "xdm:isuserselected":{
+            "xdm:isuUerSelected":{
                "title":"Is Selected by User",
                "description":"If this coding was chosen directly by the user",
                "type":"boolean",

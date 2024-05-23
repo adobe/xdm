@@ -87,8 +87,8 @@
                },
                "xdm:photo":{
                   "title":"Patient Photo",
-                  "type":"object",
                   "description":"Pateint's photogragh"
+         // ,"$ref": "#/definitions/image-or-link-or-array-of-image-or-link"
                },
                "xdm:patientContact":{
                   "title":"Patient Contacts",

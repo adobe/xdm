@@ -16,16 +16,13 @@
    },
    "meta:extensible":true,
    "meta:abstract":true,
-   "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/classes/patient"
-   ],
    "meta:extends":[
       "https://ns.adobe.com/xdm/context/profile-person-details"
    ],
    "meta:sensitive-data":true,
    "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.",
    "definitions":{
-      "patientdetail":{
+      "patientDetail":{
          "properties":{
             "properties":{
                "xdm:identifier":{
@@ -87,8 +84,8 @@
                },
                "xdm:photo":{
                   "title":"Patient Photo",
-                  "description":"Pateint's photogragh"
-         // ,"$ref": "#/definitions/image-or-link-or-array-of-image-or-link"
+                  "description":"Pateint's photogragh",
+                  "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
                },
                "xdm:patientContact":{
                   "title":"Patient Contacts",
@@ -178,7 +175,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/patientdetail"
+         "$ref":"#/definitions/patientDetail"
       }
    ],
    "meta:status":"experimental"

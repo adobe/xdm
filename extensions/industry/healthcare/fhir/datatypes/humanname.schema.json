@@ -1,0 +1,60 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname",
+   "title":"Name",
+   "type":"object",
+   "description":"Name of a human or other living entity - parts and usage",
+   "definitions":{
+      "name":{
+         "properties":{
+            "xdm:use":{
+               "title":"Use",
+               "type":"string",
+               "description":"usual | official | temp | nickname | anonymous | old | maiden"
+            },
+            "xdm:text":{
+               "title":"Text",
+               "type":"string",
+               "description":"Text representation of the full name"
+            },
+            "xdm:family":{
+               "title":"Family",
+               "type":"string",
+               "description":"Family name (often called 'Surname')"
+            },
+            "xdm:given":{
+               "title":"Given",
+               "type":"string",
+               "description":"Given names (not always 'first'). Includes middle names"
+            },
+            "xdm:prefix":{
+               "title":"Prefix",
+               "type":"string",
+               "description":"Parts that come before the name"
+            },
+            "xdm:suffix":{
+               "title":"Prefix",
+               "type":"string",
+               "description":"Parts that come after the name"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when name was/is in use.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/humanName"
+      }
+   ],
+   "meta:status":"experimental"
+}

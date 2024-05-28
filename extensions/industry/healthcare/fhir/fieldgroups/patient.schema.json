@@ -1,182 +1,203 @@
-{
-   "meta:license":[
-      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
-      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
-      "you may not use this file except in compliance with the License. You may obtain a copy",
-      "of the License at https://creativecommons.org/licenses/by/4.0/"
-   ],
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/fieldgroup/patientdetail",
-   "$schema":"http://json-schema.org/draft-06/schema#",
-   "title":"Patient",
-   "type":"object",
-   "meta:tags":{
-      "industry":[
-         "healthcare_services"
-      ]
-   },
-   "meta:extensible":true,
-   "meta:abstract":true,
-   "meta:intendedToExtend":[
-      "https://ns.adobe.com/xdm/context/profile-person-details"
-   ],
-   "meta:sensitive-data":true,
-   "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.",
-   "definitions":{
-      "patientDetail":{
+"meta:license":[
+   "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+   "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+   "you may not use this file except in compliance with the License. You may obtain a copy",
+   "of the License at https://creativecommons.org/licenses/by/4.0/"
+],
+"$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/fieldgroup/patientdetail",
+"$schema":"http://json-schema.org/draft-06/schema#",
+"title":"Patient",
+"type":"object",
+"meta:tags":{
+   "industry":[
+      "healthcare_services"
+   ]
+},
+"meta:extensible":true,
+"meta:abstract":true,
+"meta:intendedToExtend":[
+   "https://ns.adobe.com/xdm/context/profile"
+],
+"meta:sensitive-data":true,
+"description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.",
+"definitions":{
+   "patientDetail":{
+      "properties":{
          "properties":{
-            "properties":{
-               "xdm:identifier":{
-                  "title":"Identifier",
-                  "description":"An identifier for this patient.",
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
-               },
-               "xdm:isActive":{
-                  "title":"Is Active",
-                  "type":"boolean",
-                  "description":"Indicates whether the  patient's record is in active use."
-               },
-               "xdm:person":{
-                  "title":"Person",
-                  "description":"Person details",
-                  "$ref":"https://ns.adobe.com/xdm/context/person"
-               },
-               "xdm:telecom":{
-                  "title":"Telecommunication Details",
-                  "description":"A contact detail for the individual.",
-                  "type":"array",
-                  "items":{
-                     "type":"object",
-                     "additionalProperties":false,
-                     "properties":{
-                        "xdm:contactPoint":{
-                           "title":"Contact Point",
-                           "description":"A contact detail for the person.",
-                           "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
-                        }
+            "xdm:identifier":{
+               "title":"Identifier",
+               "description":"An identifier for this patient.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+            },
+            "xdm:isActive":{
+               "title":"Is Active",
+               "type":"boolean",
+               "description":"Indicates whether the  patient's record is in active use."
+            },
+            "xdm:name":{
+               "title":"Name",
+               "description":"A name associated with the patient",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname"
+            },
+            "xdm:telecom":{
+               "title":"Contact Details",
+               "description":"A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "additionalProperties":false,
+                  "properties":{
+                     "xdm:contactPoint":{
+                        "title":"Contact Point",
+                        "description":"A contact detail for the person.",
+                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
                      }
                   }
-               },
-               "xdm:isDeceased":{
-                  "title":"Deceased Indicator",
-                  "type":"boolean",
-                  "description":"Boolean flag indicating if the patient is deceased."
-               },
-               "xdm:deceasedDateTime":{
-                  "title":"Deceased Date Time",
-                  "type":"string",
-                  "format":"date-time",
-                  "description":"Date Time if the patient is deceased."
-               },
-               "xdm:address":{
-                  "title":"Address",
-                  "description":"Patient's Address.",
-                  "$ref":"https://ns.adobe.com/xdm/common/address"
-               },
-               "xdm:isPartOfMultipleBirth":{
-                  "title":"Is Part Of multipleBirth",
-                  "type":"boolean",
-                  "description":"Boolean flag indicating if the patient is part of a multiple birth"
-               },
-               "xdm:MultipleBirthInteger":{
-                  "title":"Birth Number",
-                  "type":"integer",
-                  "description":"Birth number in the sequence."
-               },
-               "xdm:photo":{
-                  "title":"Patient Photo",
-                  "description":"Pateint's photogragh",
-                  "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
-               },
-               "xdm:patientContact":{
-                  "title":"Patient Contacts",
-                  "description":"A contact party (e.g. guardian, partner, friend) for the patient",
-                  "type":"array",
-                  "items":{
-                     "type":"object",
-                     "additionalProperties":false,
-                     "properties":{
-                        "xdm:relationship":{
-                           "title":"Relationship",
-                           "description":"The kind of relationship.",
-                           "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
-                        },
-                        "xdm:contactPerson":{
-                           "title":"Contact Person",
-                           "description":"Contact Person details",
-                           "$ref":"https://ns.adobe.com/xdm/context/person"
-                        },
-                        "xdm:type":{
-                           "title":"Type",
-                           "description":"The type of link between this patient resource and another patient resource.",
-                           "type":"string"
-                        },
-                        "xdm:contactAddress":{
-                           "title":"Contact Address",
-                           "description":"Patient's Contct Address.",
-                           "$ref":"https://ns.adobe.com/xdm/common/address"
-                        },
-                        "xdm:contactOrganization":{
-                           "title":"Contact Organization",
-                           "description":"Organization that is associated with the contact.",
-                           "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
-                        },
-                        "xdm:contactPeriod":{
-                           "title":"Contact Period",
-                           "description":"Time period when the contact point was/is in use.",
-                           "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
-                        }
+               }
+            },
+            "xdm:gender":{
+               "title":"Gender",
+               "description":"male | female | other | unknown.",
+               "type":"string",
+               "enum":[
+                  "male",
+                  "female",
+                  "other",
+                  "unknown"
+               ]
+            },
+            "xdm:birthdate":{
+               "title":"Birth Date",
+               "type":"string",
+               "format":"date",
+               "description":"The date of birth for the individual"
+            },
+            "xdm:isDeceased":{
+               "title":"Deceased Indicator",
+               "type":"boolean",
+               "description":"Boolean flag indicating if the patient is deceased."
+            },
+            "xdm:deceasedDateTime":{
+               "title":"Deceased Date Time",
+               "type":"string",
+               "format":"date-time",
+               "description":"Date Time if the patient is deceased."
+            },
+            "xdm:address":{
+               "title":"Address",
+               "description":"Patient's Address.",
+               "$ref":"https://ns.adobe.com/xdm/common/address"
+            },
+            "xdm:maritalStatus":{
+               "title":"Marital Status",
+               "description":"Martitial status codes",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+            },
+            "xdm:isMultipleBirth":{
+               "title":"Is Part Of multipleBirth",
+               "type":"boolean",
+               "description":"Boolean flag indicating if the patient is part of a multiple birth"
+            },
+            "xdm:MultipleBirthInteger":{
+               "title":"Birth Number",
+               "type":"integer",
+               "description":"Birth number in the sequence."
+            },
+            "xdm:photo":{
+               "title":"Patient Photo",
+               "description":"Pateint's photogragh",
+               "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
+            },
+            "xdm:patientContact":{
+               "title":"Patient Contacts",
+               "description":"A contact party (e.g. guardian, partner, friend) for the patient",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "additionalProperties":false,
+                  "properties":{
+                     "xdm:relationship":{
+                        "title":"Relationship",
+                        "description":"The kind of relationship.",
+                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+                     },
+                     "xdm:contactPerson":{
+                        "title":"Contact Person",
+                        "description":"Contact Person details",
+                        "$ref":"https://ns.adobe.com/xdm/context/person"
+                     },
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"The type of link between this patient resource and another patient resource.",
+                        "type":"string"
+                     },
+                     "xdm:contactAddress":{
+                        "title":"Contact Address",
+                        "description":"Patient's Contct Address.",
+                        "$ref":"https://ns.adobe.com/xdm/common/address"
+                     },
+                     "xdm:contactOrganization":{
+                        "title":"Contact Organization",
+                        "description":"Organization that is associated with the contact.",
+                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+                     },
+                     "xdm:contactPeriod":{
+                        "title":"Contact Period",
+                        "description":"Time period when the contact point was/is in use.",
+                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
                      }
                   }
-               },
-               "xdm:language":{
-                  "title":"Language",
-                  "description":"A language which may be used to communicate with the patient about his or her health",
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
-               },
-               "xdm:isPreferredLanguage":{
-                  "title":"Preferred Language",
-                  "type":"boolean",
-                  "description":"Language preference indicator"
-               },
-               "xdm:generalPractioner":{
-                  "title":"General Practioner",
-                  "description":"Patient's nominated primary care provider.",
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
-               },
-               "xdm:managingOrganization":{
-                  "title":"Managing Organization",
-                  "description":"Organization that is the custodian of the patient record.",
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
-               },
-               "xdm:link":{
-                  "title":"Patient Link Details",
-                  "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
-                  "type":"array",
-                  "items":{
-                     "type":"object",
-                     "additionalProperties":false,
-                     "properties":{
-                        "xdm:other":{
-                           "title":"Other",
-                           "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
-                           "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
-                        },
-                        "xdm:type":{
-                           "title":"Type",
-                           "description":"The type of link between this patient resource and another patient resource.",
-                           "type":"string"
-                        }
+               }
+            },
+            "xdm:language":{
+               "title":"Language",
+               "description":"A language which may be used to communicate with the patient about his or her health",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
+            },
+            "xdm:isPreferredLanguage":{
+               "title":"Preferred Language",
+               "type":"boolean",
+               "description":"Language preference indicator"
+            },
+            "xdm:generalPractioner":{
+               "title":"General Practioner",
+               "description":"Patient's nominated primary care provider.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+            },
+            "xdm:managingOrganization":{
+               "title":"Managing Organization",
+               "description":"Organization that is the custodian of the patient record.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+            },
+            "xdm:link":{
+               "title":"Patient Link Details",
+               "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
+               "type":"array",
+               "items":{
+                  "type":"object",
+                  "additionalProperties":false,
+                  "properties":{
+                     "xdm:other":{
+                        "title":"Other",
+                        "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
+                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+                     },
+                     "xdm:type":{
+                        "title":"Type",
+                        "description":"The type of link between this patient resource and another patient resource.",
+                        "type":"string"
                      }
                   }
                }
             }
          }
       }
-   },
-   "allOf":[
-      {
-         "$ref":"#/definitions/patientDetail"
-      }
-   ],
-   "meta:status":"experimental"
+   }
+},
+"allOf":[
+   {
+      "$ref":"#/definitions/patientDetail"
+   }
+],
+"meta:status":"experimental"
 }

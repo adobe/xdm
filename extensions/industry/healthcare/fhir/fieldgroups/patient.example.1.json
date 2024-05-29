@@ -10,7 +10,7 @@
     "system" : "urn:oid:1.2.36.146.595.217.0.1",
     "value" : "12345",
     "period" : {
-      "start" : "2001-05-06"
+      "start" : "2011-05-06"
     },
     "assigner" : {
       "display" : "Acme Healthcare"
@@ -67,7 +67,7 @@
       "valueDateTime" : "1974-12-25T14:35:45-05:00"
     }]
   },
-  "deceasedBoolean" : false,
+  "isDeceased" : false,
   "address" : [{
     "use" : "home",
     "type" : "both",
@@ -78,7 +78,7 @@
     "state" : "Vic",
     "postalCode" : "3999",
     "period" : {
-      "start" : "1974-12-25"
+      "start" : "1978-12-25"
     }
   }],
   "contact" : [{

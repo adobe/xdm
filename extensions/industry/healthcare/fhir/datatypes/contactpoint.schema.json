@@ -1,0 +1,50 @@
+{
+      "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint",
+   "title":"Contact Point",
+   "type":"object",
+   "description":"A contact detail for the person",
+   "definitions":{
+      "contactPoint":{
+         "properties":{
+            "xdm:system":{
+               "title":"System",
+               "type":"string",
+               "description":"phone | fax | email | pager | url | sms | other."
+            },
+            "xdm:value":{
+               "title":"Value",
+               "type":"string",
+               "description":"The actual contact point details."
+            },
+            "xdm:use":{
+               "title":"Use",
+               "type":"string",
+               "description":"home | work | temp | old | mobile - purpose of this contact point"
+            },
+            "xdm:rank":{
+               "title":"Rank",
+               "type":"integer",
+               "description":"Specify preferred order of use (1 = highest)"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when the contact point was/is in use.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/contactPoint"
+      }
+   ],
+   "meta:status":"experimental"
+}

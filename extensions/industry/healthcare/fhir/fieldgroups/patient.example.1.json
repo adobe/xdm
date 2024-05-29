@@ -16,7 +16,7 @@
       "display" : "Acme Healthcare"
     }
   }],
-  "active" : true,
+  "isActive" : true,
   "name" : [{
     "use" : "official",
     "family" : "Chalmers",
@@ -61,12 +61,6 @@
   }],
   "gender" : "male",
   "birthDate" : "1974-12-25",
-  "_birthDate" : {
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
-      "valueDateTime" : "1974-12-25T14:35:45-05:00"
-    }]
-  },
   "isDeceased" : false,
   "address" : [{
     "use" : "home",

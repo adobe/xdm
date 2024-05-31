@@ -15,13 +15,36 @@
          "properties":{
             "xdm:use":{
                "title":"Use",
+               "description":"home | work | temp | old | billing - purpose of this address",
                "type":"string",
-               "description":"home | work | temp | old | billing - purpose of this address"
+               "enum":[
+                  "home",
+                  "work",
+                  "temp",
+                  "old",
+                  "billing"
+               ],
+               "meta:enum":{
+                  "work":"Work",
+                  "temp":"Temp",
+                  "old":"Old",
+                  "billing":"Billing"
+               }
             },
             "xdm:type":{
                "title":"Type",
+               "description":"postal | physical | both",
                "type":"string",
-               "description":"postal | physical | both"
+               "enum":[
+                  "postal",
+                  "physical",
+                  "both"
+               ],
+               "meta:enum":{
+                  "postal":"postalCode",
+                  "physical":"Physical",
+                  "both":"Both"
+               }
             },
             "xdm:text":{
                "title":"Text",

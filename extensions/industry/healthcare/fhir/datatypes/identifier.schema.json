@@ -1,5 +1,5 @@
 {
-      "meta:license":[
+   "meta:license":[
       "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
       "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
       "you may not use this file except in compliance with the License. You may obtain a copy",
@@ -15,14 +15,27 @@
          "properties":{
             "xdm:use":{
                "title":"Use",
-               "description":"Elements defined in Ancestors",
-               "type":"string"
+               "description":"usual | official | temp | secondary | old (If known)",
+               "type":"string",
+               "enum":[
+                  "usual",
+                  "official",
+                  "temp",
+                  "secondary",
+                  "old"
+               ],
+               "meta:enum":{
+                  "usual":"Usual",
+                  "official":"Official",
+                  "temp":"Temporary",
+                  "secondary":"Secondary",
+                  "old":"Old"
+               }
             },
             "xdm:type":{
                "title":"Type",
                "description":"Description of identifier",
-               "type":"string",
-               "format":"date-time"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept"
             },
             "xdm:system":{
                "title":"System",
@@ -38,7 +51,7 @@
             "xdm:assigner":{
                "title":"Assigner",
                "description":"Organization that issued id",
-               "type":"string"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
             },
             "xdm:period":{
                "title":"Period",

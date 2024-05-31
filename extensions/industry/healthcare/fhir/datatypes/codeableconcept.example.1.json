@@ -1,15 +1,6 @@
 {
-   "coding":[
-      {
-         "system":"http://snomed.info/sct",
-         "code":"260385009",
-         "display":"Negative"
-      },
-      {
-         "system":"https://acme.lab/resultcodes",
-         "code":"NEG",
-         "display":"Negative"
-      }
-   ],
+   "system":"https://acme.lab/resultcodes",
+   "code":"NEG",
+   "display":"Negative",
    "text":"Negative for Chlamydia Trachomatis rRNA"
 }

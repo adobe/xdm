@@ -1,5 +1,5 @@
 {
-      "meta:license":[
+   "meta:license":[
       "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
       "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
       "you may not use this file except in compliance with the License. You may obtain a copy",
@@ -28,12 +28,12 @@
                "title":"Identifier",
                "description":"Logical reference, when literal reference is not known",
                "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+            },
+            "xdm:display":{
+               "title":"Display",
+               "description":"Text alternative for the resource",
+               "type":"string"
             }
-         },
-         "xdm:display":{
-            "title":"Display",
-            "description":"Text alternative for the resource",
-            "type":"string"
          }
       }
    },
@@ -44,3 +44,4 @@
    ],
    "meta:status":"experimental"
 }
+

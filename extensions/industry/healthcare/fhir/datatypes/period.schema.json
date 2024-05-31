@@ -9,7 +9,7 @@
    "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period",
    "title":"Period",
    "type":"object",
-   "description":"A time period defined by a start and end date/time",
+   "description":"A time period defined by a start and end date/time.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "period":{
          "properties":{

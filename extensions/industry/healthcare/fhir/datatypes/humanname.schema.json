@@ -30,18 +30,27 @@
             },
             "xdm:given":{
                "title":"Given",
-               "type":"string",
-               "description":"Given names (not always 'first'). Includes middle names"
+               "description":"Given names (not always 'first'). Includes middle names",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
             },
             "xdm:prefix":{
                "title":"Prefix",
-               "type":"string",
-               "description":"Parts that come before the name"
+               "description":"Parts that come before the name",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
             },
             "xdm:suffix":{
                "title":"Prefix",
-               "type":"string",
-               "description":"Parts that come after the name"
+               "description":"Parts that come after the name",
+               "type":"array",
+               "items":{
+                  "type":"string"
+               }
             },
             "xdm:period":{
                "title":"Period",
@@ -53,8 +62,9 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/humanName"
+         "$ref":"#/definitions/name"
       }
    ],
    "meta:status":"experimental"
 }
+

@@ -25,6 +25,7 @@
                   "billing"
                ],
                "meta:enum":{
+                  "home":"Home",
                   "work":"Work",
                   "temp":"Temp",
                   "old":"Old",
@@ -96,3 +97,4 @@
    ],
    "meta:status":"experimental"
 }
+

@@ -15,8 +15,26 @@
          "properties":{
             "xdm:use":{
                "title":"Use",
+               "description":"usual | official | temp | nickname | anonymous | old | maiden",
                "type":"string",
-               "description":"usual | official | temp | nickname | anonymous | old | maiden"
+               "enum":[
+                  "usual",
+                  "official",
+                  "temp",
+                  "nickname",
+                  "anonymous",
+                  "old",
+                  "maiden"
+               ],
+               "meta:enum":{
+                  "usual":"Usual",
+                  "official":"Official",
+                  "temp":"Temp",
+                  "nickname":"Nickname",
+                  "anonymous":"Anonymous",
+                  "old":"old",
+                  "maiden":"Maiden"
+               }
             },
             "xdm:text":{
                "title":"Text",
@@ -67,4 +85,5 @@
    ],
    "meta:status":"experimental"
 }
+
 

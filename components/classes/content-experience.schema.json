@@ -16,6 +16,11 @@
   "definitions": {
     "content-experience": {
       "properties": {
+        "xdm:version": {
+          "title": "Asset Version",
+          "type": "string",
+          "description": "Asset version."
+        },
         "xdm:experienceID": {
           "title": "Experience ID",
           "type": "string",

@@ -22,7 +22,10 @@
             "xdm:identifier":{
                "title":"Identifier",
                "description":"An identifier for this patient.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+               }
             },
             "xdm:active":{
                "title":"Is Active",
@@ -32,22 +35,17 @@
             "xdm:name":{
                "title":"Name",
                "description":"A name associated with the patient",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname"
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname"
+               }
             },
             "xdm:telecom":{
                "title":"Contact Details",
                "description":"A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.",
                "type":"array",
                "items":{
-                  "type":"object",
-                  "additionalProperties":false,
-                  "properties":{
-                     "xdm:contactPoint":{
-                        "title":"Contact Point",
-                        "description":"A contact detail for the person.",
-                        "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
-                     }
-                  }
+                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint"
                }
             },
             "xdm:gender":{
@@ -81,7 +79,10 @@
             "xdm:address":{
                "title":"Address",
                "description":"Patient's Address.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address"
+               "type":"array",
+               "items":{
+                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address"
+               }
             },
             "xdm:maritalStatus":{
                "title":"Marital Status",
@@ -101,7 +102,10 @@
             "xdm:photo":{
                "title":"Patient Photo",
                "description":"Pateint's photogragh",
-               "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
+               }
             },
             "xdm:contact":{
                "title":"Patient Contacts",
@@ -231,4 +235,5 @@
    ],
    "meta:status":"experimental"
 }
+
 

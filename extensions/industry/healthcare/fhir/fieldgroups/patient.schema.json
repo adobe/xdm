@@ -15,7 +15,7 @@
       ]
    },
    "meta:sensitive-data":true,
-   "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.",
+   "description":"Demographics and other administrative details about an individual or animal receiving care or other health-related services.(Based on HL7 FHIR Release 5 specifications)",
    "definitions":{
       "patient":{
          "properties":{
@@ -104,14 +104,6 @@
                "title":"Birth Number",
                "type":"integer",
                "description":"Birth number in the sequence."
-            },
-            "xdm:photo":{
-               "title":"Patient Photo",
-               "description":"Pateint's photogragh",
-               "type":"array",
-               "items":{
-                  "$ref":"#/definitions/image-or-link-or-array-of-image-or-link"
-               }
             },
             "xdm:contact":{
                "title":"Patient Contacts",

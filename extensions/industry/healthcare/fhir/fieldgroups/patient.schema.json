@@ -57,7 +57,14 @@
                   "female",
                   "other",
                   "unknown"
-               ]
+               ],
+               "meta:enum":{
+                  "male":"Male",
+                  "female":"Female",
+                  "other":"Other",
+                  "old":"Old",
+                  "unknown":"Unknown"
+               }
             },
             "xdm:birthDate":{
                "title":"Birth Date",
@@ -155,7 +162,14 @@
                            "female",
                            "other",
                            "unknown"
-                        ]
+                        ],
+                        "meta:enum":{
+                           "male":"Male",
+                           "female":"Female",
+                           "other":"Other",
+                           "old":"Old",
+                           "unknown":"Unknown"
+                        }
                      },
                      "xdm:organization":{
                         "title":"Contact Organization",
@@ -235,5 +249,6 @@
    ],
    "meta:status":"experimental"
 }
+
 
 

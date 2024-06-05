@@ -155,19 +155,7 @@
                      "xdm:gender":{
                         "title":"Contact Gender",
                         "description":"male | female | other | unknown.",
-                        "type":"string",
-                        "enum":[
-                           "male",
-                           "female",
-                           "other",
-                           "unknown"
-                        ],
-                        "meta:enum":{
-                           "male":"Male",
-                           "female":"Female",
-                           "other":"Other",
-                           "unknown":"Unknown"
-                        }
+                        "$ref": "#/definitions/patient/gender"
                      },
                      "xdm:organization":{
                         "title":"Contact Organization",

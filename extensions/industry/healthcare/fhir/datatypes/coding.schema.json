@@ -1,0 +1,52 @@
+{
+      "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/coding",
+   "title":"Coding",
+   "type":"object",
+   "description":"A reference to a code defined by a terminology system.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "coding":{
+         "properties":{
+            "xdm:system":{
+               "title":"System",
+               "description":"The namespace for the identifier value",
+               "type":"string",
+               "format":"uri"
+            },
+            "xdm:version":{
+               "title":"Version",
+               "description":"Version of the system",
+               "type":"string"
+            },
+            "xdm:code":{
+               "title":"Code",
+               "description":"Symbol in syntax defined by the system",
+               "type":"string"
+            },
+            "xdm:display":{
+               "title":"Display",
+               "description":"Representation defined by the system",
+               "type":"string"
+            },
+            "xdm:userSelected":{
+               "title":"Is Selected by User",
+               "description":"If this coding was chosen directly by the user",
+               "type":"boolean",
+               "default":false
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/coding"
+      }
+   ],
+   "meta:status":"experimental"
+}

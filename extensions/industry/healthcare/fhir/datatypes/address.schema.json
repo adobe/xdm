@@ -1,0 +1,100 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address",
+   "title":"Address",
+   "type":"object",
+   "description":"An address expressed using postal conventions (as opposed to GPS or other location definition formats).(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "address":{
+         "properties":{
+            "xdm:use":{
+               "title":"Use",
+               "description":"home | work | temp | old | billing - purpose of this address",
+               "type":"string",
+               "enum":[
+                  "home",
+                  "work",
+                  "temp",
+                  "old",
+                  "billing"
+               ],
+               "meta:enum":{
+                  "home":"Home",
+                  "work":"Work",
+                  "temp":"Temp",
+                  "old":"Old",
+                  "billing":"Billing"
+               }
+            },
+            "xdm:type":{
+               "title":"Type",
+               "description":"postal | physical | both",
+               "type":"string",
+               "enum":[
+                  "postal",
+                  "physical",
+                  "both"
+               ],
+               "meta:enum":{
+                  "postal":"PostalCode",
+                  "physical":"Physical",
+                  "both":"Both"
+               }
+            },
+            "xdm:text":{
+               "title":"Text",
+               "type":"string",
+               "description":"Text representation of the Address"
+            },
+            "xdm:line":{
+               "title":"Line",
+               "type":"string",
+               "description":"Street name, number, direction & P.O. Box etc."
+            },
+            "xdm:city":{
+               "title":"City",
+               "type":"string",
+               "description":"Name of city, town etc."
+            },
+            "xdm:district":{
+               "title":"District",
+               "type":"string",
+               "description":"District name (aka county)"
+            },
+            "xdm:state":{
+               "title":"State",
+               "type":"string",
+               "description":"Sub-unit of country (abbreviations ok)"
+            },
+            "xdm:postalCode":{
+               "title":"Postal Code",
+               "type":"string",
+               "description":"Postal code for area"
+            },
+            "xdm:country":{
+               "title":"Country",
+               "type":"string",
+               "description":"Country (e.g. may be ISO 3166 2 or 3 letter code)"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"Time period when address was/is in use.",
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/address"
+      }
+   ],
+   "meta:status":"experimental"
+}
+

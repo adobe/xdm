@@ -16,6 +16,11 @@
   "definitions": {
     "content-asset": {
       "properties": {
+        "xdm:version": {
+          "title": "Asset Version",
+          "type": "string",
+          "description": "Asset version."
+        },
         "xdm:assetPerceptionID": {
           "title": "Asset Perception ID",
           "type": "string",

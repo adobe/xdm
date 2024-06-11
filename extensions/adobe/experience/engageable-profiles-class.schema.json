@@ -9,9 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Engageable Profiles Class",
   "type": "object",
-  "auditable": true,
-  "meta:extensible": true,
-  "meta:abstract": true,
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "meta:status": "hidden",
   "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
   "description": "A Record based Engageable class for creating Engageable Profiles schemas",
   "definitions": {
@@ -34,6 +34,5 @@
       "$ref": "#/definitions/engageableProfiles"
     }
   ],
-  "meta:status": "stable",
   "examples": [{}]
 }

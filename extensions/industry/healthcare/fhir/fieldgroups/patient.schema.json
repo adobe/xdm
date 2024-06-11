@@ -227,19 +227,14 @@
    },
    "allOf":[
       {
-         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context",
-         "type":"object",
-         "meta:xdmType":"object"
+         "$ref":"https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
       },
       {
-         "$ref":"#/definitions/patient",
-         "type":"object",
-         "meta:xdmType":"object"
+         "$ref":"#/definitions/patient"
       }
    ],
    "meta:status":"experimental"
 }
-
 
 
 

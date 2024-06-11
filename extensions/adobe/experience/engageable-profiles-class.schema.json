@@ -1,0 +1,39 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/customerJourneyManagement/EngageableProfiles",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Engageable Profiles Class",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:extends": ["https://ns.adobe.com/xdm/data/record"],
+  "description": "A Record based Engageable class for creating Engageable Profiles schemas",
+  "definitions": {
+    "engageableProfiles": {
+      "properties": {}
+    }
+  },
+  "required": [
+    "xdm:identityMap",
+    "https://ns.adobe.com/experience/engageableProfiles/engagement/latestTimestamp"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/data/record"
+    },
+    {
+      "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+    },
+    {
+      "$ref": "#/definitions/engageableProfiles"
+    }
+  ],
+  "meta:status": "stable",
+  "examples": [{}]
+}

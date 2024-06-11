@@ -13,10 +13,10 @@
    "definitions":{
       "annotation":{
          "properties":{
-            "xdm:authoRreference":{
+            "xdm:authorReference":{
                "title":"Author Reference",
                "description":"Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Organization)",
-               "$ref":"https://ns.adobe.com/xdm/datatypes/reference"
+               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
             },
             "xdm:authorString":{
                "title":"Author",

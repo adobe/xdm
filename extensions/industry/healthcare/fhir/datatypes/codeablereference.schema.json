@@ -28,7 +28,7 @@
    },
    "allOf":[
       {
-         "$ref":"#/definitions/codeablereference"
+         "$ref":"#/definitions/codeableReference"
       }
    ],
    "meta:status":"experimental"

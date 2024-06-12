@@ -1,0 +1,55 @@
+{
+  "meta:license": [
+    "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+    "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+    "you may not use this file except in compliance with the License. You may obtain a copy",
+    "of the License at https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "$id": "https://ns.adobe.com/experience/engageableProfile",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Engageable Profile Fields",
+  "description": "A set of meta-data fields related to engageable profile.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:intendedToExtend": ["https://ns.adobe.com/experience"],
+  "definitions": {
+    "entities": {
+      "properties": {
+        "https://ns.adobe.com/experience/entities/engagement": {
+          "title": "Engagement Fields",
+          "type": "object",
+          "description": "Fields defined for engagement",
+          "properties": {
+            "https://ns.adobe.com/experience/entities/engagement/solution": {
+              "title": "Solution",
+              "type": "object",
+              "description": "Object to store solution/product name and solution related fields for engageable profile.",
+              "properties": {
+                "https://ns.adobe.com/experience/entities/engagement/solution/name": {
+                  "title": "Solution Name",
+                  "type": "string",
+                  "description": "Name of product/solution for engageable profile record."
+                }
+              },
+              "https://ns.adobe.com/experience/entities/engagement/latestTimestamp": {
+                "title": "Latest Timestamp",
+                "type": "string",
+                "description": "Latest Timestamp of engageable profile record. Latest time of engagement."
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+    },
+    {
+      "$ref": "#/definitions/entities"
+    }
+  ],
+  "meta:status": "hidden"
+}

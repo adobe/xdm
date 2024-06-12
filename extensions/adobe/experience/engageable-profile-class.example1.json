@@ -11,9 +11,11 @@
       }
     ]
   },
-  "https://ns.adobe.com/experience/engageableProfiles": {
+  "https://ns.adobe.com/experience/engageableProfile": {
     "xdm:engagement": {
-      "xdm:solution": "ajo",
+      "xdm:solution": {
+        "xdm:name": "ajo"
+      },
       "xdm:latestTimestamp": "2023-05-25T15:52:25+00:00"
     }
   }

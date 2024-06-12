@@ -51,7 +51,7 @@
             "xdm:assigner":{
                "title":"Assigner",
                "description":"Organization that issued id",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference"
+               "type":"string"
             },
             "xdm:period":{
                "title":"Period",

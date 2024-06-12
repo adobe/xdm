@@ -1,1 +1,20 @@
-{}
+{
+  "xdm:identityMap": {
+    "https://data.adobe.io/entities/namespace/4": [
+      {
+        "xdm:id": "92312748749128"
+      }
+    ],
+    "https://data.adobe.io/entities/namespace/10": [
+      {
+        "xdm:id": "2394509340-30453470347"
+      }
+    ]
+  },
+  "https://ns.adobe.com/experience/engageableProfiles": {
+    "xdm:engagement": {
+      "xdm:solution": "ajo",
+      "xdm:latestTimestamp": "2023-05-25T15:52:25+00:00"
+    }
+  }
+}

@@ -6,20 +6,20 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period",
+   "$id":"https://ns.fhir.org/datatypes/period",
    "title":"Period",
    "type":"object",
    "description":"A time period defined by a start and end date/time.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "period":{
          "properties":{
-            "xdm:start":{
+            "fhir:start":{
                "title":"Start Date/Time",
                "description":"Period Sart Date and Time",
                "type":"string",
                "format":"date-time"
             },
-            "xdm:end":{
+            "fhir:end":{
                "title":"End Date/Time",
                "description":"Period End Date and Time",
                "type":"string",

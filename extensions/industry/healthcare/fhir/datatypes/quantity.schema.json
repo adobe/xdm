@@ -6,19 +6,19 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/quantity",
+   "$id":"https://ns.fhir.org/datatypes/quantity",
    "title":"FHIR Quantity",
    "type":"object",
    "description":"A measured or measurable amount.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "quantity":{
          "properties":{
-            "xdm:value":{
+            "fhir:value":{
                "title":"Value",
                "description":"Numerical Value",
                "type":"number"
             },
-            "xdm:comparator":{
+            "fhir:comparator":{
                "title":"Comparator",
                "description":"< | <= | >= | > | ad ",
                "type":"string",
@@ -39,18 +39,18 @@
                   "ad":"Ad"
                }
             },
-            "xdm:unit":{
+            "fhir:unit":{
                "title":"Unit",
                "description":"Unit representation",
                "type":"string"
             },
-            "xdm:system":{
+            "fhir:system":{
                "title":"System",
                "description":"System that defines coded unit form",
                "type":"string",
                "format":"uri"
             },
-            "xdm:code":{
+            "fhir:code":{
                "title":"Code",
                "description":"Coded form of the unit",
                "type":"string"

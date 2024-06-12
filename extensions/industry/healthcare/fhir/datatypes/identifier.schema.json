@@ -7,7 +7,7 @@
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
    "$id":"https://ns.fhir.org/datatypes/identifier",
-   "title":"FHIR Identifier",
+   "title":"Identifier",
    "type":"object",
    "description":"An identifier intended for computation.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{

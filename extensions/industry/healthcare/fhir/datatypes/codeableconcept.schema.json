@@ -6,22 +6,22 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/codeableconcept",
+   "$id":"https://ns.fhir.org/datatypes/codeableconcept",
    "title":"Codeable Concept",
    "type":"object",
    "description":"A reference from one resource to another.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "codeableConcept":{
          "properties":{
-            "xdm:coding":{
+            "fhir:coding":{
                "title":"Coding",
                "description":"Code defined by a terminology system",
                "type":"array",
                "items":{
-                  "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/coding"
+                  "$ref":"https://ns.fhir.org/datatypes/coding"
                }
             },
-            "xdm:text":{
+            "fhir:text":{
                "title":"Text",
                "description":"Plain text representation of the concept",
                "type":"string"

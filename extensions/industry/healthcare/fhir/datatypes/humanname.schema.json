@@ -6,14 +6,14 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/humanname",
-   "title":"Name",
+   "$id":"https://ns.fhir.org/datatypes/humanname",
+   "title":"Human Name",
    "type":"object",
    "description":"Name of a human or other living entity - parts and usage.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
-      "name":{
+      "humanName":{
          "properties":{
-            "xdm:use":{
+            "fhir:use":{
                "title":"Use",
                "description":"usual | official | temp | nickname | anonymous | old | maiden",
                "type":"string",
@@ -36,17 +36,17 @@
                   "maiden":"Maiden"
                }
             },
-            "xdm:text":{
+            "fhir:text":{
                "title":"Text",
                "type":"string",
                "description":"Text representation of the full name"
             },
-            "xdm:family":{
+            "fhir:family":{
                "title":"Family",
                "type":"string",
                "description":"Family name (often called 'Surname')"
             },
-            "xdm:given":{
+            "fhir:given":{
                "title":"Given",
                "description":"Given names (not always 'first'). Includes middle names",
                "type":"array",
@@ -54,7 +54,7 @@
                   "type":"string"
                }
             },
-            "xdm:prefix":{
+            "fhir:prefix":{
                "title":"Prefix",
                "description":"Parts that come before the name",
                "type":"array",
@@ -62,7 +62,7 @@
                   "type":"string"
                }
             },
-            "xdm:suffix":{
+            "fhir:suffix":{
                "title":"Prefix",
                "description":"Parts that come after the name",
                "type":"array",
@@ -70,20 +70,18 @@
                   "type":"string"
                }
             },
-            "xdm:period":{
+            "fhir:period":{
                "title":"Period",
                "description":"Time period when name was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }
    },
    "allOf":[
       {
-         "$ref":"#/definitions/name"
+         "$ref":"#/definitions/humanName"
       }
    ],
    "meta:status":"experimental"
 }
-
-

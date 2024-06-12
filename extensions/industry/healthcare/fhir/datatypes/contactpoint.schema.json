@@ -6,14 +6,14 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/contactpoint",
+   "$id":"https://ns.fhir.org/datatypes/contactpoint",
    "title":"Contact Point",
    "type":"object",
    "description":"A contact detail for the person.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "contactPoint":{
          "properties":{
-            "xdm:system":{
+            "fhir:system":{
                "title":"System",
                "description":"phone | fax | email | pager | url | sms | other.",
                "type":"string",
@@ -36,12 +36,12 @@
                   "other":"Other"
                }
             },
-            "xdm:value":{
+            "fhir:value":{
                "title":"Value",
                "type":"string",
                "description":"The actual contact point details."
             },
-            "xdm:use":{
+            "fhir:use":{
                "title":"Use",
                "description":"home | work | temp | old | mobile - purpose of this contact point",
                "type":"string",
@@ -60,17 +60,17 @@
                   "mobile":"Mobile"
                }
             },
-            "xdm:rank":{
+            "fhir:rank":{
                "title":"Rank",
                "type":"integer",
                "minimum":1,
                "maximum":2147483647,
                "description":"Specify preferred order of use (1 = highest)"
             },
-            "xdm:period":{
+            "fhir:period":{
                "title":"Period",
                "description":"Time period when the contact point was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }

@@ -6,14 +6,14 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/address",
+   "$id":"https://ns.fhir.org/datatypes/address",
    "title":"Address",
    "type":"object",
    "description":"An address expressed using postal conventions (as opposed to GPS or other location definition formats).(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "address":{
          "properties":{
-            "xdm:use":{
+            "fhir:use":{
                "title":"Use",
                "description":"home | work | temp | old | billing - purpose of this address",
                "type":"string",
@@ -32,7 +32,7 @@
                   "billing":"Billing"
                }
             },
-            "xdm:type":{
+            "fhir:type":{
                "title":"Type",
                "description":"postal | physical | both",
                "type":"string",
@@ -47,45 +47,45 @@
                   "both":"Both"
                }
             },
-            "xdm:text":{
+            "fhir:text":{
                "title":"Text",
                "type":"string",
                "description":"Text representation of the Address"
             },
-            "xdm:line":{
+            "fhir:line":{
                "title":"Line",
                "type":"string",
                "description":"Street name, number, direction & P.O. Box etc."
             },
-            "xdm:city":{
+            "fhir:city":{
                "title":"City",
                "type":"string",
                "description":"Name of city, town etc."
             },
-            "xdm:district":{
+            "fhir:district":{
                "title":"District",
                "type":"string",
                "description":"District name (aka county)"
             },
-            "xdm:state":{
+            "fhir:state":{
                "title":"State",
                "type":"string",
                "description":"Sub-unit of country (abbreviations ok)"
             },
-            "xdm:postalCode":{
+            "fhir:postalCode":{
                "title":"Postal Code",
                "type":"string",
                "description":"Postal code for area"
             },
-            "xdm:country":{
+            "fhir:country":{
                "title":"Country",
                "type":"string",
                "description":"Country (e.g. may be ISO 3166 2 or 3 letter code)"
             },
-            "xdm:period":{
+            "fhir:period":{
                "title":"Period",
                "description":"Time period when address was/is in use.",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/period"
+               "$ref":"https://ns.fhir.org/datatypes/period"
             }
          }
       }

@@ -6,30 +6,30 @@
       "of the License at https://creativecommons.org/licenses/by/4.0/"
    ],
    "$schema":"http://json-schema.org/draft-06/schema#",
-   "$id":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/reference",
+   "$id":"https://ns.fhir.org/datatypes/reference",
    "title":"Reference",
    "type":"object",
    "description":"A reference from one resource to another.(This datatype is created as per HL7 FHIR Release 5 specifications)",
    "definitions":{
       "reference":{
          "properties":{
-            "xdm:reference":{
+            "fhir:reference":{
                "title":"Reference",
                "description":"Literal reference, Relative, internal or absolute URL",
                "type":"string"
             },
-            "xdm:type":{
+            "fhir:type":{
                "title":"Type",
                "description":"Type the reference refers to ",
                "type":"string",
                "format":"uri"
             },
-            "xdm:identifier":{
+            "fhir:identifier":{
                "title":"Identifier",
                "description":"Logical reference, when literal reference is not known",
-               "$ref":"https://ns.adobe.com/xdm/industry/healthcare/fhir/datatypes/identifier"
+               "$ref":"https://ns.fhir.org/datatypes/identifier"
             },
-            "xdm:display":{
+            "fhir:display":{
                "title":"Display",
                "description":"Text alternative for the resource",
                "type":"string"

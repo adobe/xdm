@@ -118,17 +118,17 @@
                   "type":"object",
                   "additionalProperties":false,
                   "properties":{
-                     "fhir:relationship":{
+                     "xdm:relationship":{
                         "title":"Relationship",
                         "description":"The kind of relationship.",
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
-                     "fhir:name":{
+                     "xdm:name":{
                         "title":"Contact Name",
                         "description":"Contact Person Name",
                         "$ref":"https://ns.fhir.org/datatypes/humanname"
                      },
-                     "fhir:telecom":{
+                     "xdm:telecom":{
                         "title":"Contact Details",
                         "description":"A contact detail for the person",
                         "type":"array",
@@ -136,7 +136,7 @@
                            "type":"object",
                            "additionalProperties":false,
                            "properties":{
-                              "fhir:contactPoint":{
+                              "xdm:contactPoint":{
                                  "title":"Contact Point",
                                  "description":"A contact detail for the person.",
                                  "$ref":"https://ns.fhir.org/datatypes/contactpoint"
@@ -144,22 +144,22 @@
                            }
                         }
                      },
-                     "fhir:address":{
+                     "xdm:address":{
                         "title":"Contact Address",
                         "description":"Patient's Contact Address.",
                         "$ref":"https://ns.fhir.org/datatypes/address"
                      },
-                     "fhir:gender":{
+                     "xdm:gender":{
                         "title":"Contact Gender",
                         "description":"male | female | other | unknown.",
                         "$ref":"#/definitions/patient/properties/fhir:gender"
                      },
-                     "fhir:organization":{
+                     "xdm:organization":{
                         "title":"Contact Organization",
                         "description":"Organization that is associated with the contact.",
                         "$ref":"https://ns.fhir.org/datatypes/reference"
                      },
-                     "fhir:period":{
+                     "xdm:period":{
                         "title":"Contact Period",
                         "description":"Time period when the contact point was/is in use.",
                         "$ref":"https://ns.fhir.org/datatypes/period"
@@ -175,12 +175,12 @@
                   "type":"object",
                   "additionalProperties":false,
                   "properties":{
-                     "fhir:language":{
+                     "xdm:language":{
                         "title":"Language",
                         "description":"The language which can be used to communicate with the person about his or her health.",
                         "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
                      },
-                     "fhir:preferred":{
+                     "xdm:preferred":{
                         "title":"Is Preferred Language",
                         "type":"boolean",
                         "description":"Language preference indicator"
@@ -209,12 +209,12 @@
                   "type":"object",
                   "additionalProperties":false,
                   "properties":{
-                     "fhir:other":{
+                     "xdm:other":{
                         "title":"Other",
                         "description":"Link to a Patient or RelatedPerson resource that concerns the same actual individual.",
                         "$ref":"https://ns.fhir.org/datatypes/reference"
                      },
-                     "fhir:type":{
+                     "xdm:type":{
                         "title":"Type",
                         "description":"The type of link between this patient resource and another patient resource.",
                         "type":"string"
@@ -235,11 +235,3 @@
    ],
    "meta:status":"experimental"
 }
-
-
-
-
-
-
-
-

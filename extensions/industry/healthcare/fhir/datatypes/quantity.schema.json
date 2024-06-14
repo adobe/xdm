@@ -13,12 +13,12 @@
    "definitions":{
       "quantity":{
          "properties":{
-            "fhir:value":{
+            "xdm:value":{
                "title":"Value",
                "description":"Numerical Value",
                "type":"number"
             },
-            "fhir:comparator":{
+            "xdm:comparator":{
                "title":"Comparator",
                "description":"< | <= | >= | > | ad ",
                "type":"string",
@@ -39,18 +39,18 @@
                   "ad":"Ad"
                }
             },
-            "fhir:unit":{
+            "xdm:unit":{
                "title":"Unit",
                "description":"Unit representation",
                "type":"string"
             },
-            "fhir:system":{
+            "xdm:system":{
                "title":"System",
                "description":"System that defines coded unit form",
                "type":"string",
                "format":"uri"
             },
-            "fhir:code":{
+            "xdm:code":{
                "title":"Code",
                "description":"Coded form of the unit",
                "type":"string"

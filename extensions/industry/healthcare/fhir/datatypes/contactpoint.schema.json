@@ -13,7 +13,7 @@
    "definitions":{
       "contactPoint":{
          "properties":{
-            "fhir:system":{
+            "xdm:system":{
                "title":"System",
                "description":"phone | fax | email | pager | url | sms | other.",
                "type":"string",
@@ -36,12 +36,12 @@
                   "other":"Other"
                }
             },
-            "fhir:value":{
+            "xdm:value":{
                "title":"Value",
                "type":"string",
                "description":"The actual contact point details."
             },
-            "fhir:use":{
+            "xdm:use":{
                "title":"Use",
                "description":"home | work | temp | old | mobile - purpose of this contact point",
                "type":"string",
@@ -60,14 +60,14 @@
                   "mobile":"Mobile"
                }
             },
-            "fhir:rank":{
+            "xdm:rank":{
                "title":"Rank",
                "type":"integer",
                "minimum":1,
                "maximum":2147483647,
                "description":"Specify preferred order of use (1 = highest)"
             },
-            "fhir:period":{
+            "xdm:period":{
                "title":"Period",
                "description":"Time period when the contact point was/is in use.",
                "$ref":"https://ns.fhir.org/datatypes/period"

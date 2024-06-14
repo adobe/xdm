@@ -13,23 +13,23 @@
    "definitions":{
       "annotation":{
          "properties":{
-            "fhir:authorReference":{
+            "xdm:authorReference":{
                "title":"Author Reference",
                "description":"Reference(Practitioner | PractitionerRole | Patient | RelatedPerson | Organization)",
                "$ref":"https://ns.fhir.org/datatypes/reference"
             },
-            "fhir:authorString":{
+            "xdm:authorString":{
                "title":"Author",
                "description":"Individual responsible for the annotation",
                "type":"string"
             },
-            "fhir:time":{
+            "xdm:time":{
                "title":"Time",
                "description":"When the annotation was made",
                "type":"string",
                "format":"date-time"
             },
-            "fhir:text":{
+            "xdm:text":{
                "title":"Text",
                "description":"The annotation - text content",
                "type":"string"

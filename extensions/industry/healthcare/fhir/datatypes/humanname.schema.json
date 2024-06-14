@@ -13,7 +13,7 @@
    "definitions":{
       "humanName":{
          "properties":{
-            "fhir:use":{
+            "xdm:use":{
                "title":"Use",
                "description":"usual | official | temp | nickname | anonymous | old | maiden",
                "type":"string",
@@ -36,17 +36,17 @@
                   "maiden":"Maiden"
                }
             },
-            "fhir:text":{
+            "xdm:text":{
                "title":"Text",
                "type":"string",
                "description":"Text representation of the full name"
             },
-            "fhir:family":{
+            "xdm:family":{
                "title":"Family",
                "type":"string",
                "description":"Family name (often called 'Surname')"
             },
-            "fhir:given":{
+            "xdm:given":{
                "title":"Given",
                "description":"Given names (not always 'first'). Includes middle names",
                "type":"array",
@@ -54,7 +54,7 @@
                   "type":"string"
                }
             },
-            "fhir:prefix":{
+            "xdm:prefix":{
                "title":"Prefix",
                "description":"Parts that come before the name",
                "type":"array",
@@ -62,7 +62,7 @@
                   "type":"string"
                }
             },
-            "fhir:suffix":{
+            "xdm:suffix":{
                "title":"Prefix",
                "description":"Parts that come after the name",
                "type":"array",
@@ -70,7 +70,7 @@
                   "type":"string"
                }
             },
-            "fhir:period":{
+            "xdm:period":{
                "title":"Period",
                "description":"Time period when name was/is in use.",
                "$ref":"https://ns.fhir.org/datatypes/period"

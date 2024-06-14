@@ -13,7 +13,7 @@
    "definitions":{
       "codeableConcept":{
          "properties":{
-            "fhir:coding":{
+            "xdm:coding":{
                "title":"Coding",
                "description":"Code defined by a terminology system",
                "type":"array",
@@ -21,7 +21,7 @@
                   "$ref":"https://ns.fhir.org/datatypes/coding"
                }
             },
-            "fhir:text":{
+            "xdm:text":{
                "title":"Text",
                "description":"Plain text representation of the concept",
                "type":"string"

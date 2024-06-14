@@ -13,23 +13,23 @@
    "definitions":{
       "reference":{
          "properties":{
-            "fhir:reference":{
+            "xdm:reference":{
                "title":"Reference",
                "description":"Literal reference, Relative, internal or absolute URL",
                "type":"string"
             },
-            "fhir:type":{
+            "xdm:type":{
                "title":"Type",
                "description":"Type the reference refers to ",
                "type":"string",
                "format":"uri"
             },
-            "fhir:identifier":{
+            "xdm:identifier":{
                "title":"Identifier",
                "description":"Logical reference, when literal reference is not known",
                "$ref":"https://ns.fhir.org/datatypes/identifier"
             },
-            "fhir:display":{
+            "xdm:display":{
                "title":"Display",
                "description":"Text alternative for the resource",
                "type":"string"

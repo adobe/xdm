@@ -13,7 +13,7 @@
    "definitions":{
       "identifier":{
          "properties":{
-            "fhir:use":{
+            "xdm:use":{
                "title":"Use",
                "description":"usual | official | temp | secondary | old (If known)",
                "type":"string",
@@ -32,28 +32,28 @@
                   "old":"Old"
                }
             },
-            "fhir:type":{
+            "xdm:type":{
                "title":"Type",
                "description":"Description of identifier",
                "$ref":"https://ns.fhir.org/datatypes/codeableconcept"
             },
-            "fhir:system":{
+            "xdm:system":{
                "title":"System",
                "description":"The namespace for the identifier value",
                "type":"string",
                "format":"uri"
             },
-            "fhir:value":{
+            "xdm:value":{
                "title":"Value",
                "description":"The value that is unique",
                "type":"string"
             },
-            "fhir:assigner":{
+            "xdm:assigner":{
                "title":"Assigner",
                "description":"Organization that issued id",
                "type":"string"
             },
-            "fhir:period":{
+            "xdm:period":{
                "title":"Period",
                "description":"Time period when id is/was valid for use",
                "$ref":"https://ns.fhir.org/datatypes/period"

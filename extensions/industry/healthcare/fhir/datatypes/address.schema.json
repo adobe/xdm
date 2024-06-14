@@ -13,7 +13,7 @@
    "definitions":{
       "address":{
          "properties":{
-            "fhir:use":{
+            "xdm:use":{
                "title":"Use",
                "description":"home | work | temp | old | billing - purpose of this address",
                "type":"string",
@@ -32,7 +32,7 @@
                   "billing":"Billing"
                }
             },
-            "fhir:type":{
+            "xdm:type":{
                "title":"Type",
                "description":"postal | physical | both",
                "type":"string",
@@ -47,42 +47,42 @@
                   "both":"Both"
                }
             },
-            "fhir:text":{
+            "xdm:text":{
                "title":"Text",
                "type":"string",
                "description":"Text representation of the Address"
             },
-            "fhir:line":{
+            "xdm:line":{
                "title":"Line",
                "type":"string",
                "description":"Street name, number, direction & P.O. Box etc."
             },
-            "fhir:city":{
+            "xdm:city":{
                "title":"City",
                "type":"string",
                "description":"Name of city, town etc."
             },
-            "fhir:district":{
+            "xdm:district":{
                "title":"District",
                "type":"string",
                "description":"District name (aka county)"
             },
-            "fhir:state":{
+            "xdm:state":{
                "title":"State",
                "type":"string",
                "description":"Sub-unit of country (abbreviations ok)"
             },
-            "fhir:postalCode":{
+            "xdm:postalCode":{
                "title":"Postal Code",
                "type":"string",
                "description":"Postal code for area"
             },
-            "fhir:country":{
+            "xdm:country":{
                "title":"Country",
                "type":"string",
                "description":"Country (e.g. may be ISO 3166 2 or 3 letter code)"
             },
-            "fhir:period":{
+            "xdm:period":{
                "title":"Period",
                "description":"Time period when address was/is in use.",
                "$ref":"https://ns.fhir.org/datatypes/period"

@@ -13,28 +13,28 @@
    "definitions":{
       "coding":{
          "properties":{
-            "fhir:system":{
+            "xdm:system":{
                "title":"System",
                "description":"The namespace for the identifier value",
                "type":"string",
                "format":"uri"
             },
-            "fhir:version":{
+            "xdm:version":{
                "title":"Version",
                "description":"Version of the system",
                "type":"string"
             },
-            "fhir:code":{
+            "xdm:code":{
                "title":"Code",
                "description":"Symbol in syntax defined by the system",
                "type":"string"
             },
-            "fhir:display":{
+            "xdm:display":{
                "title":"Display",
                "description":"Representation defined by the system",
                "type":"string"
             },
-            "fhir:userSelected":{
+            "xdm:userSelected":{
                "title":"Is Selected by User",
                "description":"If this coding was chosen directly by the user",
                "type":"boolean",

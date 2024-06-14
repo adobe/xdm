@@ -13,13 +13,13 @@
    "definitions":{
       "period":{
          "properties":{
-            "fhir:start":{
+            "xdm:start":{
                "title":"Start Date/Time",
                "description":"Period Sart Date and Time",
                "type":"string",
                "format":"date-time"
             },
-            "fhir:end":{
+            "xdm:end":{
                "title":"End Date/Time",
                "description":"Period End Date and Time",
                "type":"string",

@@ -8,13 +8,12 @@ https://ns.adobe.com/xdm/datatypes/sessionDetails
 Session details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/sessiondetails.schema.json](datatypes/sessiondetails.schema.json) |
+|-------------------------------|-----------------------------------|------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable  | No | Forbidden | Permitted | [datatypes/sessiondetails.schema.json](datatypes/sessiondetails.schema.json) |
 
 ## Session details information Example
 ```json
 {
-  "xdm:ID": "1482236761294786918253",
   "xdm:name": "123456789",
   "xdm:length": 100,
   "xdm:contentType": "VOD",
@@ -25,65 +24,68 @@ Session details information.
 
 # Session details information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:ID](#xdmid) | `string` | Optional | Session details information (this schema) |
-| [xdm:adCount](#xdmadcount) | `integer` | Optional | Session details information (this schema) |
-| [xdm:adLoad](#xdmadload) | `string` | Optional | Session details information (this schema) |
-| [xdm:album](#xdmalbum) | `string` | Optional | Session details information (this schema) |
-| [xdm:appVersion](#xdmappversion) | `string` | Optional | Session details information (this schema) |
-| [xdm:artist](#xdmartist) | `string` | Optional | Session details information (this schema) |
-| [xdm:assetID](#xdmassetid) | `string` | Optional | Session details information (this schema) |
-| [xdm:author](#xdmauthor) | `string` | Optional | Session details information (this schema) |
-| [xdm:averageMinuteAudience](#xdmaverageminuteaudience) | `number` | Optional | Session details information (this schema) |
-| [xdm:channel](#xdmchannel) | `string` | Optional | Session details information (this schema) |
-| [xdm:chapterCount](#xdmchaptercount) | `integer` | Optional | Session details information (this schema) |
-| [xdm:contentType](#xdmcontenttype) | `string` | Optional | Session details information (this schema) |
-| [xdm:dayPart](#xdmdaypart) | `string` | Optional | Session details information (this schema) |
-| [xdm:episode](#xdmepisode) | `integer` | Optional | Session details information (this schema) |
-| [xdm:estimatedStreams](#xdmestimatedstreams) | `number` | Optional | Session details information (this schema) |
-| [xdm:feed](#xdmfeed) | `string` | Optional | Session details information (this schema) |
-| [xdm:firstAirDate](#xdmfirstairdate) | `string` | Optional | Session details information (this schema) |
-| [xdm:firstDigitalDate](#xdmfirstdigitaldate) | `string` | Optional | Session details information (this schema) |
-| [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Session details information (this schema) |
-| [xdm:genre](#xdmgenre) | `string` | Optional | Session details information (this schema) |
-| [xdm:hasPauseImpactedStreams](#xdmhaspauseimpactedstreams) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasProgress10](#xdmhasprogress10) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasProgress25](#xdmhasprogress25) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasProgress50](#xdmhasprogress50) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasProgress75](#xdmhasprogress75) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasProgress95](#xdmhasprogress95) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasResume](#xdmhasresume) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:hasSegmentView](#xdmhassegmentview) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isAuthorized](#xdmisauthorized) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isDownloaded](#xdmisdownloaded) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isFederated](#xdmisfederated) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isPlayed](#xdmisplayed) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:isViewed](#xdmisviewed) | `boolean` | Optional | Session details information (this schema) |
-| [xdm:label](#xdmlabel) | `string` | Optional | Session details information (this schema) |
-| [xdm:length](#xdmlength) | `integer` | Optional | Session details information (this schema) |
-| [xdm:mvpd](#xdmmvpd) | `string` | Optional | Session details information (this schema) |
-| [xdm:name](#xdmname) | `string` | Optional | Session details information (this schema) |
-| [xdm:network](#xdmnetwork) | `string` | Optional | Session details information (this schema) |
-| [xdm:originator](#xdmoriginator) | `string` | Optional | Session details information (this schema) |
-| [xdm:pauseCount](#xdmpausecount) | `integer` | Optional | Session details information (this schema) |
-| [xdm:pauseTime](#xdmpausetime) | `integer` | Optional | Session details information (this schema) |
-| [xdm:playerName](#xdmplayername) | `string` | Optional | Session details information (this schema) |
-| [xdm:publisher](#xdmpublisher) | `string` | Optional | Session details information (this schema) |
-| [xdm:rating](#xdmrating) | `string` | Optional | Session details information (this schema) |
-| [xdm:season](#xdmseason) | `integer` | Optional | Session details information (this schema) |
-| [xdm:secondsSinceLastCall](#xdmsecondssincelastcall) | `number` | Optional | Session details information (this schema) |
-| [xdm:segment](#xdmsegment) | `string` | Optional | Session details information (this schema) |
-| [xdm:show](#xdmshow) | `string` | Optional | Session details information (this schema) |
-| [xdm:showType](#xdmshowtype) | `string` | Optional | Session details information (this schema) |
-| [xdm:station](#xdmstation) | `string` | Optional | Session details information (this schema) |
-| [xdm:streamFormat](#xdmstreamformat) | `string` | Optional | Session details information (this schema) |
-| [xdm:streamType](#xdmstreamtype) | `enum` | Optional | Session details information (this schema) |
-| [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional | Session details information (this schema) |
-| [xdm:totalTimePlayed](#xdmtotaltimeplayed) | `integer` | Optional | Session details information (this schema) |
-| [xdm:uniqueTimePlayed](#xdmuniquetimeplayed) | `integer` | Optional | Session details information (this schema) |
-| `*` | any | Additional | this schema *allows* additional properties |
+| Property                                                   | Type      | Required   | Defined by |
+|------------------------------------------------------------|-----------|------------|------------|
+| [xdm:ID](#xdmid)                                           | `string`  | Optional   | Session details information (this schema) |
+| [xdm:adCount](#xdmadcount)                                 | `integer` | Optional   | Session details information (this schema) |
+| [xdm:adLoad](#xdmadload)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:album](#xdmalbum)                                     | `string`  | Optional   | Session details information (this schema) |
+| [xdm:appVersion](#xdmappversion)                           | `string`  | Optional   | Session details information (this schema) |
+| [xdm:artist](#xdmartist)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:assetID](#xdmassetid)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:author](#xdmauthor)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:averageMinuteAudience](#xdmaverageminuteaudience)     | `number`  | Optional   | Session details information (this schema) |
+| [xdm:channel](#xdmchannel)                                 | `string`  | Required   | Session details information (this schema) |
+| [xdm:chapterCount](#xdmchaptercount)                       | `integer` | Optional   | Session details information (this schema) |
+| [xdm:contentType](#xdmcontenttype)                         | `string`  | Required   | Session details information (this schema) |
+| [xdm:dayPart](#xdmdaypart)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:episode](#xdmepisode)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:estimatedStreams](#xdmestimatedstreams)               | `number`  | Optional   | Session details information (this schema) |
+| [xdm:feed](#xdmfeed)                                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:firstAirDate](#xdmfirstairdate)                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:firstDigitalDate](#xdmfirstdigitaldate)               | `string`  | Optional   | Session details information (this schema) |
+| [xdm:friendlyName](#xdmfriendlyname)                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:genre](#xdmgenre)                                     | `string`  | Optional   | Session details information (this schema) |
+| [xdm:hasPauseImpactedStreams](#xdmhaspauseimpactedstreams) | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasProgress10](#xdmhasprogress10)                     | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasProgress25](#xdmhasprogress25)                     | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasProgress50](#xdmhasprogress50)                     | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasProgress75](#xdmhasprogress75)                     | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasProgress95](#xdmhasprogress95)                     | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasResume](#xdmhasresume)                             | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:hasSegmentView](#xdmhassegmentview)                   | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:authorized](#xdmauthorized)                           | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:isCompleted](#xdmiscompleted)                         | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:isDownloaded](#xdmisdownloaded)                       | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:isFederated](#xdmisfederated)                         | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:isPlayed](#xdmisplayed)                               | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:isViewed](#xdmisviewed)                               | `boolean` | Optional   | Session details information (this schema) |
+| [xdm:label](#xdmlabel)                                     | `string`  | Optional   | Session details information (this schema) |
+| [xdm:length](#xdmlength)                                   | `integer` | Required   | Session details information (this schema) |
+| [xdm:mvpd](#xdmmvpd)                                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:name](#xdmname)                                       | `string`  | Required   | Session details information (this schema) |
+| [xdm:network](#xdmnetwork)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:originator](#xdmoriginator)                           | `string`  | Optional   | Session details information (this schema) |
+| [xdm:pauseCount](#xdmpausecount)                           | `integer` | Optional   | Session details information (this schema) |
+| [xdm:pauseTime](#xdmpausetime)                             | `integer` | Optional   | Session details information (this schema) |
+| [xdm:playerName](#xdmplayername)                           | `string`  | Required   | Session details information (this schema) |
+| [xdm:publisher](#xdmpublisher)                             | `string`  | Optional   | Session details information (this schema) |
+| [xdm:rating](#xdmrating)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:season](#xdmseason)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:secondsSinceLastCall](#xdmsecondssincelastcall)       | `number`  | Optional   | Session details information (this schema) |
+| [xdm:segment](#xdmsegment)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:show](#xdmshow)                                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:showType](#xdmshowtype)                               | `string`  | Optional   | Session details information (this schema) |
+| [xdm:station](#xdmstation)                                 | `string`  | Optional   | Session details information (this schema) |
+| [xdm:streamFormat](#xdmstreamformat)                       | `string`  | Optional   | Session details information (this schema) |
+| [xdm:streamType](#xdmstreamtype)                           | `enum`    | Optional   | Session details information (this schema) |
+| [xdm:timePlayed](#xdmtimeplayed)                           | `integer` | Optional   | Session details information (this schema) |
+| [xdm:totalTimePlayed](#xdmtotaltimeplayed)                 | `integer` | Optional   | Session details information (this schema) |
+| [xdm:uniqueTimePlayed](#xdmuniquetimeplayed)               | `integer` | Optional   | Session details information (this schema) |
+| [xdm:cdn](#xdmcdn)                                         | `string`  | Optional   | Session details information (this schema) |
+| [xdm:pev3](#xdmshowtype)                                   | `string`  | Optional   | Session details information (this schema) |
+| [xdm:pccr](#xdmstation)                                    | `string`  | Optional   | Session details information (this schema) |
+| `*`                                                        | any       | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
 ### Media Session ID
@@ -271,7 +273,7 @@ Describes the average content time spent for a specific media item - i.e. the to
 Distribution channel from where the content was played.
 
 `xdm:channel`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 
@@ -311,7 +313,7 @@ The number of chapters started during the playback.
 The type of the stream delivery. Available values per Stream Type: Audio: “song”, “podcast”, “audiobook”, “radio”;  Video: “VoD”, “Live”, “Linear”, “UGC”, “DVoD”. Customers can provide custom values for this parameter.
 
 `xdm:contentType`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 
@@ -365,14 +367,13 @@ The number of the episode.
 
 `xdm:episode`
 * is optional
-* type: `integer`
+* type: `string`
 * defined in this schema
 
 ### xdm:episode Type
 
 
-`integer`
-* minimum value: `0`
+`string`
 
 
 
@@ -651,20 +652,20 @@ Indicates when at least one frame, not necessarily the first has been viewed.
 
 
 
-## xdm:isAuthorized
+## xdm:authorized
 ### Media Authorized
 
 The user has been authorized via Adobe authentication.
 
-`xdm:isAuthorized`
+`xdm:authorized`
 * is optional
-* type: `boolean`
+* type: `string`
 * defined in this schema
 
-### xdm:isAuthorized Type
+### xdm:authorized Type
 
 
-`boolean`
+`string`
 
 
 
@@ -791,7 +792,7 @@ Name of the record label.
 Clip Length/Runtime - This is the maximum length (or duration) of the content being consumed (in seconds).
 
 `xdm:length`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 
@@ -831,7 +832,7 @@ MVPD provided via Adobe authentication.
 Content ID of the content, which can be used to tie back to other industry / CMS IDs.
 
 `xdm:name`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 
@@ -938,7 +939,7 @@ Describes the duration in seconds in which playback was paused by the user.
 Name of the content player.
 
 `xdm:playerName`
-* is optional
+* is required
 * type: `string`
 * defined in this schema
 
@@ -999,14 +1000,13 @@ The season number the show belongs to. Season Series is required only if the sho
 
 `xdm:season`
 * is optional
-* type: `integer`
+* type: `string`
 * defined in this schema
 
 ### xdm:season Type
 
 
-`integer`
-* minimum value: `0`
+`string`
 
 
 
@@ -1211,5 +1211,58 @@ Describes the sum of the unique intervals seen by a user on a timed media asset 
 
 
 
+## xdm:cdn
+### Content Delivery Network
+
+The content delivery network of the content played.
+
+`xdm:cdn`
+* is optional
+* type: `string`
+* defined in this schema
+
+### xdm:cdn Type
 
 
+`string`
+
+
+
+## xdm:pev3
+### Pev3
+
+The type of the media stream used for reporting.
+
+`xdm:pev3`
+* is optional
+* type: `enum`
+* defined in this schema
+
+The value of this property **must** be equal to one of the [known values below](#xdmpev3-known-values).
+
+### xdm:pev3 Known Values
+| Value     | Description |
+|-----------|-------------|
+| `video`   | Video       |
+| `videoAd` | Video Ad    |
+| `audio`   | Audio       |
+| `audio`   | Audio Ad    |
+
+
+
+
+
+## xdm:pccr
+### Pccr
+
+Indicates that a redirect occurred.
+
+`xdm:pccr`
+* is optional
+* type: `boolean`
+* defined in this schema
+
+### xdm:pccr Type
+
+
+`boolean`

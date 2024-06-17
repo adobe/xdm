@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/chapterDetails
 Chapter details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/chapterdetails.schema.json](datatypes/chapterdetails.schema.json) |
+|-------------------------------|-----------------------------------|----------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable   | No | Forbidden | Permitted | [datatypes/chapterdetails.schema.json](datatypes/chapterdetails.schema.json) |
 
 ## Chapter details information Example
 ```json
@@ -25,16 +25,16 @@ Chapter details information.
 
 # Chapter details information Properties
 
-| Property | Type | Required | Defined by |
-|----------|------|----------|------------|
-| [xdm:ID](#xdmid) | `string` | Optional | Chapter details information (this schema) |
-| [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional | Chapter details information (this schema) |
-| [xdm:index](#xdmindex) | `integer` | Optional | Chapter details information (this schema) |
-| [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional | Chapter details information (this schema) |
-| [xdm:isStarted](#xdmisstarted) | `boolean` | Optional | Chapter details information (this schema) |
-| [xdm:length](#xdmlength) | `integer` | Optional | Chapter details information (this schema) |
-| [xdm:offset](#xdmoffset) | `integer` | Optional | Chapter details information (this schema) |
-| [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional | Chapter details information (this schema) |
+| Property | Type | Required   | Defined by |
+|----------|------|------------|------------|
+| [xdm:ID](#xdmid) | `string` | Optional   | Chapter details information (this schema) |
+| [xdm:friendlyName](#xdmfriendlyname) | `string` | Optional   | Chapter details information (this schema) |
+| [xdm:index](#xdmindex) | `integer` | Required   | Chapter details information (this schema) |
+| [xdm:isCompleted](#xdmiscompleted) | `boolean` | Optional   | Chapter details information (this schema) |
+| [xdm:isStarted](#xdmisstarted) | `boolean` | Optional   | Chapter details information (this schema) |
+| [xdm:length](#xdmlength) | `integer` | Required   | Chapter details information (this schema) |
+| [xdm:offset](#xdmoffset) | `integer` | Required   | Chapter details information (this schema) |
+| [xdm:timePlayed](#xdmtimeplayed) | `integer` | Optional   | Chapter details information (this schema) |
 | `*` | any | Additional | this schema *allows* additional properties |
 
 ## xdm:ID
@@ -83,7 +83,7 @@ The name of the chapter and/or segment.
 The position (index, integer) of the chapter inside the content.
 
 `xdm:index`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 
@@ -141,7 +141,7 @@ Chapter is started.
 The length of the chapter, in seconds.
 
 `xdm:length`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 
@@ -161,7 +161,7 @@ The length of the chapter, in seconds.
 The offset of the chapter inside the content (in seconds) from the start.
 
 `xdm:offset`
-* is optional
+* is required
 * type: `integer`
 * defined in this schema
 

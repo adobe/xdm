@@ -9,13 +9,13 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Error details information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:extensible": true,
     "description": "Error details information.",
     "definitions": {
         "errorDetails": {
             "properties": {
-                "xdm:ID": {
+                "xdm:name": {
                     "title": "Error ID",
                     "type": "string",
                     "pattern": "^.{1,}$",
@@ -25,20 +25,14 @@
                     "title": "Error Source",
                     "type": "string",
                     "description": "The error source.",
-                    "enum": [
-                        "player",
-                        "external"
-                    ],
+                    "enum": ["player", "external"],
                     "meta:enum": {
                         "player": "Player source.",
                         "external": "External source."
                     }
                 }
             },
-            "required": [
-                "xdm:ID",
-                "xdm:source"
-            ]
+            "required": ["xdm:name", "xdm:source"]
         }
     },
     "allOf": [
@@ -48,7 +42,7 @@
     ],
     "examples": [
         {
-            "xdm:ID": "errorID",
+            "xdm:name": "errorID",
             "xdm:source": "player"
         }
     ]

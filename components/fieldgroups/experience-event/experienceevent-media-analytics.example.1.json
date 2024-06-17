@@ -141,6 +141,17 @@
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T15:57:25+00:00",
+      "xdm:mediaEventType": "media.adBreakStart",
+      "xdm:mediaCollection": {
+        "xdm:advertisingPodDetails": {
+          "xdm:index": 2,
+          "xdm:offset": 123
+        },
+        "xdm:playhead": 25
+      }
+    },
+    {
+      "xdm:mediaEventTimestamp": "2017-09-26T15:58:25+00:00",
       "xdm:mediaEventType": "media.adStart",
       "xdm:mediaCollection": {
         "xdm:advertisingDetails": {
@@ -149,30 +160,19 @@
           "xdm:podPosition": 1,
           "xdm:playerName": "playerName"
         },
-        "xdm:playhead": 25
-      }
-    },
-    {
-      "xdm:mediaEventTimestamp": "2017-09-26T15:58:25+00:00",
-      "xdm:mediaEventType": "media.adBreakStart",
-      "xdm:mediaCollection": {
-        "xdm:advertisingPodDetails": {
-          "xdm:index": 2,
-          "xdm:offset": 123
-        },
         "xdm:playhead": 30
       }
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T15:59:25+00:00",
-      "xdm:mediaEventType": "media.adBreakComplete",
+      "xdm:mediaEventType": "media.adComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 35
       }
     },
     {
       "xdm:mediaEventTimestamp": "2017-09-26T16:00:25+00:00",
-      "xdm:mediaEventType": "media.adComplete",
+      "xdm:mediaEventType": "media.adBreakComplete",
       "xdm:mediaCollection": {
         "xdm:playhead": 40
       }

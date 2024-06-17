@@ -8,8 +8,8 @@ https://ns.adobe.com/xdm/datatypes/qoeDataDetails
 Qoe Data details information.
 
 | [Abstract](../../abstract.md) | [Extensible](../../extensions.md) | [Status](../../status.md) | [Identifiable](../../id.md) | [Custom Properties](../../extensions.md) | [Additional Properties](../../extensions.md) | Defined In |
-|-------------------------------|-----------------------------------|---------------------------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
-| Can be instantiated | Yes | Experimental | No | Forbidden | Permitted | [datatypes/qoedatadetails.schema.json](datatypes/qoedatadetails.schema.json) |
+|-------------------------------|-----------------------------------|---------|-----------------------------|------------------------------------------|----------------------------------------------|------------|
+| Can be instantiated | Yes | Stable  | No | Forbidden | Permitted | [datatypes/qoedatadetails.schema.json](datatypes/qoedatadetails.schema.json) |
 
 ## Qoe Data details information Example
 ```json
@@ -28,7 +28,6 @@ Qoe Data details information.
 | [xdm:bitrateChangeCount](#xdmbitratechangecount) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:bufferCount](#xdmbuffercount) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:bufferTime](#xdmbuffertime) | `integer`  | Optional | Qoe Data details information (this schema) |
-| [xdm:droppedFrameCount](#xdmdroppedframecount) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:droppedFrames](#xdmdroppedframes) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:errorCount](#xdmerrorcount) | `integer`  | Optional | Qoe Data details information (this schema) |
 | [xdm:externalErrors](#xdmexternalerrors) | `string[]` | Optional | Qoe Data details information (this schema) |
@@ -165,29 +164,8 @@ The total amount of time, in seconds, spent buffering. This value is computed as
 
 
 
-
-## xdm:droppedFrameCount
-### Dropped Frames Reporting
-
-The number of frames dropped during playback of the main content.
-
-`xdm:droppedFrameCount`
-* is optional
-* type: `integer`
-* defined in this schema
-
-### xdm:droppedFrameCount Type
-
-
-`integer`
-
-
-
-
-
-
 ## xdm:droppedFrames
-### Dropped Frames Collection
+### Dropped Frames
 
 The number of frames dropped during playback of the main content.
 

@@ -9,7 +9,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Media details information",
     "type": "object",
-    "meta:status": "experimental",
+    "meta:status": "stable",
     "meta:extensible": true,
     "description": "Media details information.",
     "definitions": {
@@ -100,7 +100,6 @@
         {
             "xdm:playhead": 831,
             "xdm:sessionDetails": {
-                "xdm:ID": "1482236761294786918253",
                 "xdm:name": "123456789",
                 "xdm:length": 100,
                 "xdm:contentType": "VOD",
@@ -108,28 +107,22 @@
                 "xdm:channel": "channel"
             },
             "xdm:advertisingDetails": {
-                "xdm:ID": "123456789",
+                "xdm:name": "123456789",
                 "xdm:length": 100,
                 "xdm:podPosition": 1,
-                "xdm:playerName": "playerName",
-                "xdm:isCompleted": false,
-                "xdm:isStarted": false
+                "xdm:playerName": "playerName"
             },
             "xdm:advertisingPodDetails": {
                 "xdm:index": 2,
-                "xdm:offset": 123,
-                "xdm:ID": "123"
+                "xdm:offset": 123
             },
             "xdm:chapterDetails": {
                 "xdm:length": 100,
                 "xdm:offset": 50,
-                "xdm:index": 2,
-                "xdm:isStarted": false,
-                "xdm:isCompleted": false,
-                "xdm:timePlayed": 70
+                "xdm:index": 2
             },
             "xdm:errorDetails": {
-                "xdm:ID": "errorID",
+                "xdm:name": "errorID",
                 "xdm:source": "player"
             },
             "xdm:qoeDataDetails": {

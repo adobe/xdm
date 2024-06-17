@@ -1,0 +1,168 @@
+{
+   "meta:license":[
+      "Copyright 2024 Adobe Systems Incorporated. All rights reserved.",
+      "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "$schema":"http://json-schema.org/draft-06/schema#",
+   "$id":"https://ns.fhir.org/datatypes/repeat",
+   "title":"Repeat",
+   "type":"object",
+   "description":"A set of rules that describe when the event is scheduled.(This datatype is created as per HL7 FHIR Release 5 specifications)",
+   "definitions":{
+      "repeat":{
+         "properties":{
+            "xdm:boundsdDuration":{
+               "title":"Bound Duration",
+               "description":"Duration Limit",
+               "type":"string"
+            },
+            "xdm:boundsRange":{
+               "title":"Bound Range",
+               "description":"Range Limit",
+               "$ref":"https://ns.fhir.org/datatypes/range"
+            },
+            "xdm:boundsPeriod":{
+               "title":"Bound Period",
+               "description":"Start and End Times",
+               "$ref":"https://ns.fhir.org/datatypes/period"
+            },
+            "xdm:count":{
+               "title":"count",
+               "description":"Number of times to repeat",
+               "type":"integer"
+            },
+            "xdm:countMax":{
+               "title":"Maximum Count",
+               "description":"Maximum number of times to repeat",
+               "type":"integer"
+            },
+            "xdm:duration":{
+               "title":"Duration",
+               "description":"How long when it happens",
+               "type":"number"
+            },
+            "xdm:durationMax":{
+               "title":"Maximum Duration",
+               "description":"How long when it happens (Max)",
+               "type":"number"
+            },
+            "xdm:durationUnit":{
+               "title":"Duration Unit",
+               "description":"s | min | h | d | wk | mo | a - unit of time (UCUM)",
+               "type":"string",
+               "enum":[
+                  "s",
+                  "min",
+                  "h",
+                  "d",
+                  "wk",
+                  "mo",
+                  "a"
+               ],
+               "meta:enum":{
+                  "s":"Seconds",
+                  "min":"Minute",
+                  "h":"Hourly",
+                  "d":"Daily",
+                  "wk":"Weekly",
+                  "mo":"Monthly",
+                  "a":"Annual"
+               }
+            },
+            "xdm:frequency":{
+               "title":"Frequency",
+               "description":"Indicates the number of repetitions that should occur within a period. I.e. Event occurs frequency times per period",
+               "type":"number"
+            },
+            "xdm:frequencyMax":{
+               "title":"Maximum Frequency",
+               "description":"Event occurs up to frequencyMax times per period",
+               "type":"number"
+            },
+            "xdm:period":{
+               "title":"Period",
+               "description":"The duration to which the frequency applies. I.e. Event occurs frequency times per period",
+               "type":"number"
+            },
+            "xdm:periodMax":{
+               "title":"Maximum Period",
+               "description":"Upper limit of period (3-4 hours)",
+               "type":"number"
+            },
+            "xdm:periodUnit":{
+               "title":"Period Unit",
+               "description":"s | min | h | d | wk | mo | a - unit of time (UCUM)",
+               "type":"string",
+               "enum":[
+                  "s",
+                  "min",
+                  "h",
+                  "d",
+                  "wk",
+                  "mo",
+                  "a"
+               ],
+               "meta:enum":{
+                  "s":"Seconds",
+                  "min":"Minute",
+                  "h":"Hourly",
+                  "d":"Daily",
+                  "wk":"Weekly",
+                  "mo":"Monthly",
+                  "a":"Annual"
+               }
+            },
+            "xdm:dayOfWeek":{
+               "title":"Day Of Week",
+               "description":"mon | tue | wed | thu | fri | sat | sun",
+               "type":"string",
+               "enum":[
+                  "mon",
+                  "tue",
+                  "wed",
+                  "thu",
+                  "fri",
+                  "sat",
+                  "sun"
+               ],
+               "meta:enum":{
+                  "mon":"Monday",
+                  "tue":"Tuesday",
+                  "wed":"Wednesday",
+                  "thu":"Thursday",
+                  "fri":"Friday",
+                  "sat":"Saturday",
+                  "sun":"Sunday"
+               }
+            },
+            "xdm:timeOfDay":{
+               "title":"Time Of Day",
+               "description":"Time of day for action",
+               "type":"string",
+               "format":"time"
+            },
+            "xdm:when":{
+               "title":"When",
+               "description":"Code for time period of occurrence",
+               "type":"string"
+            },
+            "xdm:offset":{
+               "title":"Offset",
+               "description":"Minutes from event (before or after)",
+               "type":"integer"
+            }
+         }
+      }
+   },
+   "allOf":[
+      {
+         "$ref":"#/definitions/repeat"
+      }
+   ],
+   "meta:status":"experimental"
+}
+
+
+

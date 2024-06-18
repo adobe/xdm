@@ -74,12 +74,12 @@
             "xdm:frequency":{
                "title":"Frequency",
                "description":"Indicates the number of repetitions that should occur within a period. I.e. Event occurs frequency times per period",
-               "type":"number"
+               "type":"integer"
             },
             "xdm:frequencyMax":{
                "title":"Maximum Frequency",
                "description":"Event occurs up to frequencyMax times per period",
-               "type":"number"
+               "type":"integer"
             },
             "xdm:period":{
                "title":"Period",
